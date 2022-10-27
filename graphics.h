@@ -49,6 +49,7 @@ namespace Graphics {
 	SDL_Texture* itsmars_Inventory;
 	SDL_Texture* cursor_0;
 	SDL_Texture* icon_axe1;
+    SDL_Texture* weapons_icons;
 	SDL_Texture* default_icon;
 	SDL_Texture* emptyBagIcon;
 
@@ -58,6 +59,7 @@ namespace Graphics {
 	SDL_Texture* itemBorderCommon;
 	SDL_Texture* itemBorderMagic;
 	SDL_Texture* itemBorderRare;
+    SDL_Texture* itemBorderEite;
 	SDL_Texture* armorSpriteSheet;
 
 	SDL_Texture* tooltipBackground;
@@ -146,9 +148,10 @@ namespace Graphics {
 		fireball_0 = createTexture("sprites/spells/fireball_0.png");
 		fireball_explosion_0 = createTexture("sprites/spells/fireball_explosion_0.png");
 
+        weapons_icons = createTexture("sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
 		longsword_default = createTexture("sprites/items/long_sword/w_longsword.png");
 		icon_axe1 = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_axe1.png");
-		longsword_default_icon = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_sword_long4.png");
+		//longsword_default_icon = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_sword_long4.png");
 		itsmars_Inventory = createTexture("sprites/UI/itsmars_Inventory.png");
 		cursor_0 = createTexture("sprites/UI/cursor.png");
 
@@ -159,9 +162,10 @@ namespace Graphics {
 		emptyEquippedIcon = createTexture("sprites/UI/icon_borders/bagsSot.png");
 		equipSlotBorder = createTexture("sprites/UI/icon_borders/81x81_EquipSlotBorder.png");
 
-		//itemBorderCommon = createTexture("sprites/UI/icon_borders/commonBorderIcon.png");
-		//itemBorderMagic = createTexture("sprites/UI/icon_borders/magicBorderIcon.png");
-		//itemBorderRare = createTexture("sprites/UI/icon_borders/rareBorderIcon.png");
+		itemBorderCommon = createTexture("sprites/UI/icon_borders/frame-0-grey.png");
+		itemBorderMagic = createTexture("sprites/UI/icon_borders/frame-0-blue.png");
+		itemBorderRare = createTexture("sprites/UI/icon_borders/frame-0-orange.png");
+        itemBorderEite = createTexture("sprites/UI/icon_borders/frame-0-red.png");
 
 		armorSpriteSheet = createTexture("sprites/items/flare_armor_transparent.png");
 

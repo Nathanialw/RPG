@@ -29,10 +29,16 @@ namespace Item_Component {
 
 	enum class Weapon_Type {
 		sword,
+        axe,
 		mace,
-		axe
+        spear
 	};
 
+    enum class Weapon_Material {
+        copper,
+        bronze,
+        iron,
+    };
 
 	struct Ground_Item {
 		SDL_FRect box;

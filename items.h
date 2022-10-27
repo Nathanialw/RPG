@@ -33,10 +33,12 @@ namespace Items {
 		std::map<Item_Type, int>itemTypes;
 		std::map<Armor_Type, int>armorTypes;
 		std::map<Weapon_Type, int>weaponTypes;
+        std::map<Weapon_Material, int>weaponMaterials;
 
-		std::map<Item_Component::Armor_Type, std::string>ArmorTypeName;
+        std::map<Item_Component::Weapon_Material, std::string>weaponMaterialName;
+        std::map<Item_Component::Weapon_Type, std::string>weaponTypeName;
+        std::map<Item_Component::Armor_Type, std::string>ArmorTypeName;
 		std::map<Item_Component::Item_Type, std::string>ItemTypeName;
-
 
 		std::vector<int>bag;
 		int mousePickUp;
@@ -47,16 +49,20 @@ namespace Items {
 	int i = 0;
 
 	Item_Component::Weapon_Type Generate_Weapon_Type() {
-		int randType = rand() % 1 + 1;
+		int randType = rand() % 4 + 1;
 
 		switch (randType) {
 		case 1: return { Item_Component::Weapon_Type::sword };
+        case 2: return { Item_Component::Weapon_Type::mace };
+        case 3: return { Item_Component::Weapon_Type::axe };
+        case 4: return { Item_Component::Weapon_Type::spear };
 		}
 		Utilities::Log("Generate_Weapon_Type() fallthrough error");
+        //defult return if it finds nothing
 		return Weapon_Type::sword;
 	}
 
-	Item_Type Generate_Item_Type() {
+    Item_Component::Item_Type Generate_Item_Type() {
 		int randType = rand() % 5 + 1;
 
 		switch (randType) {
@@ -67,10 +73,24 @@ namespace Items {
 		case 5: return { Item_Type::boots };
 		}
 		Utilities::Log("Generate_Item_Type() fallthrough error");
+        //defult return if it finds nothing
 		return Item_Type::helm;
 	}
 
-	Armor_Type Generate_Armor_Type() {
+    Item_Component::Weapon_Material Generate_Weapon_Material() {
+        int randType = rand() % 4 + 1;
+
+        switch (randType) {
+            case 1: return { Weapon_Material::copper };
+            case 2: return { Weapon_Material::bronze };
+            case 3: return { Weapon_Material::iron };
+        }
+        Utilities::Log("Generate_Weapon_Material() fallthrough error");
+        //defult return if it finds nothing
+        return Weapon_Material::copper;
+    }
+
+    Item_Component::Armor_Type Generate_Armor_Type() {
 		int randType = rand() % 5 + 1;
 
 		switch (randType) {
@@ -81,38 +101,44 @@ namespace Items {
 		case 5: return { Armor_Type::plate };
 		}
 		Utilities::Log("Generate_Armor_Type() fallthrough error");
+        //defult return if it finds nothing
 		return Armor_Type::cloth;
 	}
 
-	//entt::entity Create_Weapon(entt::entity& item, Rarity &rarity) {
-	//	auto itemType = Generate_Item_Type();
-	//	auto weaponType = Generate_Weapon_Type();
-	//
-	//	World::zone.emplace<Item_Type>(item, weaponType);
-	//	World::zone.emplace<Rarity>(item, rarity);
-	//
-	//	int column = itemTypes[itemType];
-	//	int row = weaponTypes[weaponType];
-	//	int size = 64;
-	//
-	//	SDL_Rect sprite = { row * size  ,column * size  ,size  ,size };
-	//
-	//	World::zone.emplace<animation>(item, Graphics::longsword_default); /// need to load hetexture	 only once and pass the pointer into this function
-	//	World::zone.get<animation>(item).sheet = {
-	//		{ sprite , 0, 64, 0, 0, 0.0f, 16.0f}
-	//	};
-	//
-	//	auto& icon = World::zone.emplace<Icon>(item, Graphics::emptyBagIcon, Graphics::longsword_default_icon, rarityBorder[rarity], Graphics::bagSlotBorder);
-	//	icon.clipSprite = sprite;
-	//	icon.clipIcon = { 0, 0, 64, 64 };
-	//	icon.renderRectSize = { 64, 64 };
-	//	icon.renderPositionOffset = { icon.renderRectSize.x / 2, icon.renderRectSize.y / 2 };
-	//	return item;
-	//
-	//
-	//	World::zone.emplace<Weapon_Damage>(item, 1, 10);
-	//	return item;
-	//}
+
+	std::string Create_Weapon(entt::entity& item, Rarity &rarity) {
+		auto material = Generate_Weapon_Material();
+		auto weaponType = Generate_Weapon_Type();
+
+        std::string materialType = weaponMaterialName[material];
+        std::string weapon = weaponTypeName[weaponType];
+        std::string weaponName = materialType  + " " + weapon;
+
+		World::zone.emplace<Item_Type>(item, Item_Type::weapon);
+		World::zone.emplace<Rarity>(item, rarity);
+
+        //get from spritesheet
+		int column = weaponMaterials[material];
+		int row = weaponTypes[weaponType];
+		int size = 32;
+
+
+		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
+        //sprite sheet graphic pointer
+		World::zone.emplace<animation>(item, Graphics::weapons_icons ); /// need to load hetexture	 only once and pass the pointer into this function
+		World::zone.get<animation>(item).sheet = {
+			{ sprite , 0, 32, 0, 0, 0.0f, 16.0f}
+		};
+
+		auto& icon = World::zone.emplace<Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+		icon.clipSprite = sprite;
+		icon.clipIcon = {0,0,256,256};
+		icon.renderRectSize = { 64.0f, 64.0f };
+		icon.renderPositionOffset = { icon.renderRectSize.x / 2, icon.renderRectSize.y / 2 };
+
+		World::zone.emplace<Weapon_Damage>(item, 1, 10);
+		return weaponName;
+	}
 
 	std::string Create_Armor(entt::entity& item, Rarity& rarity) {
 		auto itemType = Generate_Item_Type();
@@ -138,8 +164,8 @@ namespace Items {
 
 		auto& icon = World::zone.emplace<Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
 		icon.clipSprite = sprite;
-		icon.clipIcon = { 0, 0, 64, 64 };
-		icon.renderRectSize = { 64, 64 };
+		icon.clipIcon = {0,0,256,256};
+		icon.renderRectSize = { 64.0f, 64.0f };
 		icon.renderPositionOffset = { icon.renderRectSize.x / 2, icon.renderRectSize.y / 2 };
 
 
@@ -235,6 +261,18 @@ namespace Items {
 		return itemStats;
 	}
 
+    std::string Choose_Item (entt::entity item, Rarity rarity) {
+        int itemDrop = rand() % 10 + 1;
+        if (itemDrop < 10) {
+            return Create_Armor(item, rarity);
+        }
+        else {
+            return Create_Weapon(item, rarity);
+        }
+        std::cout << "Choose_Item() fallthrough error, failed to select and item type, returned default" << std::endl;
+        return Create_Armor(item, rarity);
+    }
+
 	void Create_And_Drop_Item(Position& position) {
 
 		Rarity rarity = Generate_Item_Rarity();
@@ -243,7 +281,7 @@ namespace Items {
 
 		auto item = World::zone.create();
 
-		std::string itemName = Create_Armor(item, rarity);
+        std::string itemName = Choose_Item(item, rarity);
 
 		//	int item = rand() % 100 + 1;
 		//	if (item <= 10) { Create_Item(item, position, rarity, "sword", Item_Type::weapon, Weapon_Type::sword, Graphics::longsword_default, Graphics::longsword_default_icon, itemStats); }
@@ -413,17 +451,17 @@ namespace Items {
 
 	void Init_Item_Data() {
 		rarityColor = {
-			{Rarity::common, { 255, 255, 255, 255 }},
+			{Rarity::common, { 255, 255, 255, 200 }},
 			{Rarity::magic, { 51, 153, 255, 255 }},
-			{Rarity::rare, { 255, 255, 0, 255 }},
-			{Rarity::unique, { 255, 128, 0, 255 }},
+			{Rarity::rare, { 255, 128, 0, 255 }},
+			{Rarity::unique, { 255, 20, 20, 255 }},
 		};
 
 		rarityBorder = {
-			{Rarity::common, NULL},
+			{Rarity::common, Graphics::itemBorderCommon},
 			{Rarity::magic, Graphics::itemBorderMagic},
 			{Rarity::rare, Graphics::itemBorderRare},
-			{Rarity::unique, Graphics::itemBorderCommon},
+			{Rarity::unique, Graphics::itemBorderEite},
 		};
 
 		itemTypes = {
@@ -448,8 +486,17 @@ namespace Items {
 		};
 
 		weaponTypes = {
-			{Weapon_Type::sword, 0}
+			{Weapon_Type::sword, 0},
+            {Weapon_Type::axe, 1},
+            {Weapon_Type::mace, 2},
+            {Weapon_Type::spear, 3}
 		};
+
+        weaponMaterials = {
+            {Weapon_Material::copper, 0},
+            {Weapon_Material::bronze, 1},
+            {Weapon_Material::iron, 2},
+        };
 
 		ArmorTypeName = {
 			{Item_Component::Armor_Type::cloth, "cloth"},
@@ -466,6 +513,19 @@ namespace Items {
 			{Item_Component::Item_Type::legs, "legs"},
 			{Item_Component::Item_Type::boots, "boots"},
 		};
+
+        weaponMaterialName = {
+            {Item_Component::Weapon_Material::copper, "copper"},
+            {Item_Component::Weapon_Material::bronze, "bronze"},
+            {Item_Component::Weapon_Material::iron, "iron"},
+        };
+
+        weaponTypeName = {
+                {Item_Component::Weapon_Type::sword, "sword"},
+                {Item_Component::Weapon_Type::axe, "axe"},
+                {Item_Component::Weapon_Type::mace, "mace"},
+                {Item_Component::Weapon_Type::spear, "spear"}
+        };
 
 
 		baseStatData = {
