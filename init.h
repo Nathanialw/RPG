@@ -16,5 +16,6 @@ namespace Init {
 		SDL_SetRelativeMouseMode(SDL_TRUE);
 
 		Graphics::running = true;
+
 	}
 }

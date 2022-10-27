@@ -36,6 +36,7 @@ namespace Item_Component {
 
 	struct Ground_Item {
 		SDL_FRect box;
+        SDL_FRect ground_name;
 	};
 
 	struct Name {

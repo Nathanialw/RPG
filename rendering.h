@@ -588,6 +588,7 @@ namespace Rendering {
 			//Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
 
 			Items::Show_Ground_Items(zone, camera);
+            Items::Name_On_Mouseover(zone, camera);
 			UI::Render_UI(zone, Graphics::renderer, camera);
 			Character_Stats::Render_Character_Stats(zone, camera);
 			Interface::Run_Interface(zone, camera);

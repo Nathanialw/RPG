@@ -1,42 +1,4 @@
-/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/snap/clion/209/bin/ninja/linux/ninja -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-gcc -G Ninja -S /home/nathanial/Workspace/RPG_game -B /home/nathanial/Workspace/RPG_game/cmake-build-release
--- The C compiler identification is GNU 11.3.0
--- The CXX compiler identification is GNU 10.0.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - failed
--- Check for working CXX compiler: /usr/bin/x86_64-w64-mingw32-gcc
--- Check for working CXX compiler: /usr/bin/x86_64-w64-mingw32-gcc - broken
-CMake Error at /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake:62 (message):
-  The C++ compiler
-
-    "/usr/bin/x86_64-w64-mingw32-gcc"
-
-  is not able to compile a simple test program.
-
-  It fails with the following output:
-
-    Change Dir: /home/nathanial/Workspace/RPG_game/cmake-build-release/CMakeFiles/CMakeTmp
-    
-    Run Build Command(s):/snap/clion/209/bin/ninja/linux/ninja cmTC_4542f && [1/2] Building CXX object CMakeFiles/cmTC_4542f.dir/testCXXCompiler.cxx.o
-    [2/2] Linking CXX executable cmTC_4542f
-    FAILED: cmTC_4542f 
-    : && /usr/bin/x86_64-w64-mingw32-gcc  -rdynamic CMakeFiles/cmTC_4542f.dir/testCXXCompiler.cxx.o -o cmTC_4542f   && :
-    x86_64-w64-mingw32-gcc: error: unrecognized command-line option ‘-rdynamic’
-    ninja: build stopped: subcommand failed.
-    
-    
-
-  
-
-  CMake will not be able to correctly generate this project.
-Call Stack (most recent call first):
-  CMakeLists.txt:2 (project)
-
-
--- Configuring incomplete, errors occurred!
-See also "/home/nathanial/Workspace/RPG_game/cmake-build-release/CMakeFiles/CMakeOutput.log".
-See also "/home/nathanial/Workspace/RPG_game/cmake-build-release/CMakeFiles/CMakeError.log".
+/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/snap/clion/209/bin/ninja/linux/ninja -G Ninja -S /home/nathanial/Workspace/RPG_game -B /home/nathanial/Workspace/RPG_game/cmake-build-release
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nathanial/Workspace/RPG_game/cmake-build-release

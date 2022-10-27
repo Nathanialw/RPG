@@ -370,6 +370,9 @@ namespace UI {
 					64.0f * scale,
 					64.0f * scale);
 
+
+
+
 				//adds to rendering with the main animation loop
 				zone.emplace<Direction>(item_ID, Direction::W);
 				// to remove from rendering on mouse
@@ -415,7 +418,7 @@ namespace UI {
 					zone.remove<Ground_Item>(itemData.item_ID);
 					//removes for main rendering loop
 					zone.remove<Direction>(itemData.item_ID);
-					zone.emplace<Inventory>(itemData.item_ID);
+					zone.emplace_or_replace<Inventory>(itemData.item_ID);
 					//prevents we insertion to quad tree
 					zone.remove<Radius>(itemData.item_ID);
 					return true;
@@ -496,12 +499,11 @@ namespace UI {
 					v.magnitude.y = 0.0f;
 					act.action = idle;
 
-					//pickup Item
-					Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, isItemCurrentlyHeld);
-
-					World::zone.remove<Item_Pickup>(entity);
-					World::zone.remove<Moving>(entity);
+                    World::zone.remove<Moving>(entity);
 				}
+                //pickup Item
+                Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, isItemCurrentlyHeld);
+				World::zone.remove<Item_Pickup>(entity);
 			}
 		}
 	}

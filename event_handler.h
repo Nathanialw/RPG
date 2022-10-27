@@ -69,8 +69,8 @@ namespace Event_Handler {
 					{
 					case SDLK_1: AI::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "'fireball'"); break;
 					case SDLK_2: Death_Spells::Summon_Skeleton(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "'skeleton'");  break;
-					case SDLK_3: break;
-					case SDLK_4: break;
+					case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
+					case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;
 					case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
 					case SDLK_6: Interface::gridDepth++; break;
 					case SDLK_7: Interface::gridDepth--; break;
@@ -128,7 +128,24 @@ namespace Event_Handler {
 						return;
 					}
 				}
-				if (Input_Control::Check_For_Mouse_Target(zone, player_ID, playerPosition, meleeRange)) {
+                if (Items::showGroundItems) {
+                    auto view = zone.view<Ground_Item, Position, Rarity, Name, Renderable>();
+                    for (auto item_ID: view) {
+                        //get the item ID the mouse is over nad plug it into the move to pick up function
+                        auto Item_Name_Box = view.get<Ground_Item>(item_ID).ground_name;
+                        //only if the mouse intersects with the item box
+                        if (Mouse::bRect_inside_Cursor(Item_Name_Box)) {
+                            Input_Control::Move_To_Item_From_Name(zone, player_ID, playerPosition,
+                                                                  item_ID);
+                            return;
+                        }
+                        else {
+                            Mouse::bRight_Mouse_Pressed = true; //held down for constant moving
+                        }
+                    }
+                    Mouse::bRight_Mouse_Pressed = true; //held down for constant moving
+                }
+				else if (Input_Control::Check_For_Mouse_Target(zone, player_ID, playerPosition, meleeRange)) {
 					//Mouse::bRight_Mouse_Pressed_Attacking = true; //held down for constant attacking
 				}
 				else {

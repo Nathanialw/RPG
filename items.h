@@ -163,7 +163,8 @@ namespace Items {
 			((position2.x - offset.x) / 4.0f), //half the width and height
 			((position2.y - offset.y) / 4.0f),	//half the width and height
 			(64.0f / 4.0f) * scale,
-			(64.0f / 4.0f) * scale);
+			(64.0f / 4.0f) * scale), 0,0,0,0;
+
 	}
 
 
@@ -272,42 +273,46 @@ namespace Items {
 	}
 
 	void Item_Collision(entt::registry& zone) {
-		//auto view = zone.view<Ground_Item, Position, Name>();
-		//for (auto item1 : view) {
-		//	auto& itemPosition1 = view.get<Position>(item1);
-		//	auto& name1 = view.get<Name>(item1).name;
-		//	auto& groundItem1 = view.get<Ground_Item>(item1).box;
-		//	SDL_Rect textBox1 = {};
-		//	textBox1.w = name1.length() * 5;
-		//	textBox1.h = 10;
-		//
-		//	textBox1.x = itemPosition1.x - (textBox1.w / 2.0f);
-		//	textBox1.y = itemPosition1.y - 10;
-		//	for (auto item2 : view) {
-		//		if (item1 != item2) {
-		//			auto& itemPosition2 = view.get<Position>(item2);
-		//			auto& name2 = view.get<Name>(item2).name;
-		//			auto& groundItem2 = view.get<Ground_Item>(item2).box;
-		//			SDL_Rect textBox2 = {};
-		//			textBox2.w = name2.length() * 5;
-		//			textBox2.h = 10;
-		//
-		//			textBox2.x = itemPosition2.x - (textBox2.w / 2.0f);
-		//			textBox2.y = itemPosition2.y - 10;
-		//			SDL_Point rectPosition = Utilities::Check_Collision_Rects(textBox1, textBox2);
-		//			itemPosition1.x += rectPosition.x;
-		//			itemPosition1.y += rectPosition.y;
-		//			groundItem1.x += rectPosition.x;
-		//			groundItem1.y += rectPosition.y;
-		//
-		//
-		//			itemPosition2.x -= rectPosition.x;
-		//			itemPosition2.y -= rectPosition.y;
-		//			groundItem2.x -= rectPosition.x;
-		//			groundItem2.y -= rectPosition.y;
-		//		}
-		//	}
-		//}
+
+        ///What we actually need to do is create a quad tree with each cell the size of one item and only one item per cell
+        /// when an item it dropped it falls it queries the tree into the nearest vacant cell
+
+		auto view = zone.view<Ground_Item, Position, Name, Renderable>();
+		for (auto item1 : view) {
+			auto& itemPosition1 = view.get<Position>(item1);
+			auto& name1 = view.get<Name>(item1).name;
+			auto& groundItem1 = view.get<Ground_Item>(item1).box;
+			SDL_Rect textBox1 = {};
+			textBox1.w = name1.length() * 5;
+			textBox1.h = 10;
+
+			textBox1.x = itemPosition1.x - (textBox1.w / 2.0f);
+			textBox1.y = itemPosition1.y - 10;
+			for (auto item2 : view) {
+				if (item1 != item2) {
+					auto& itemPosition2 = view.get<Position>(item2);
+					auto& name2 = view.get<Name>(item2).name;
+					auto& groundItem2 = view.get<Ground_Item>(item2).box;
+					SDL_Rect textBox2 = {};
+					textBox2.w = name2.length() * 5;
+					textBox2.h = 10;
+
+					textBox2.x = itemPosition2.x - (textBox2.w / 2.0f);
+					textBox2.y = itemPosition2.y - 10;
+					SDL_Point rectPosition = Utilities::Check_Collision_Rects(textBox1, textBox2);
+					itemPosition1.x += rectPosition.x;
+					itemPosition1.y += rectPosition.y;
+					groundItem1.x += rectPosition.x;
+					groundItem1.y += rectPosition.y;
+
+
+					itemPosition2.x -= rectPosition.x;
+					itemPosition2.y -= rectPosition.y;
+					groundItem2.x -= rectPosition.x;
+					groundItem2.y -= rectPosition.y;
+				}
+			}
+		}
 	}
 
 
@@ -337,6 +342,7 @@ namespace Items {
 				auto& rarity = view.get<Rarity>(item);
 				auto& name = view.get<Name>(item).name;
 
+                auto& highlightBox = view.get<Ground_Item>(item).ground_name;
 				SDL_FRect textBox = {};
 
 				Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(name, rarityColor[rarity]);
@@ -352,7 +358,8 @@ namespace Items {
 				SDL_Rect textBoxBackground = Utilities::SDL_FRect_To_SDL_Rect(textBox);
 				textBoxBackground.x -= 5;
 				textBoxBackground.w += 10;
-				auto highlightBox = Utilities::SDL_Rect_To_SDL_FRect(textBoxBackground);
+
+				highlightBox = Utilities::SDL_Rect_To_SDL_FRect(textBoxBackground);
 				Hightlight_Item_Under_Cursor(highlightBox);
 				SDL_RenderFillRect(Graphics::renderer, &textBoxBackground);
 				SDL_RenderCopyF(Graphics::renderer, itemTextBox.pTexture, &itemTextBox.k, &textBox);
@@ -363,6 +370,46 @@ namespace Items {
 		//run rect collsion to break up the item names
 
 	}
+
+    void Name_On_Mouseover (entt::registry& zone, Camera& camera) {
+        auto view = zone.view<Ground_Item, Position, Rarity, Name, Renderable>();
+
+        for (auto item : view) {
+            auto &box = view.get<Ground_Item>(item);
+            if (Mouse::FRect_inside_Cursor(box.box)) {
+                //****//search quad tree instead
+                ///need position for render location
+                /// need an offset based on rect size for the text box and item position
+                ///
+                ///need name for string
+                /// need rarity for colour
+                auto &itemPosition = view.get<Position>(item);
+                auto &rarity = view.get<Rarity>(item);
+                auto &name = view.get<Name>(item).name;
+
+                SDL_FRect textBox = {};
+
+                Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(name, rarityColor[rarity]);
+
+                textBox.w = name.length() * 5.0f;
+                textBox.h = 10.0f;
+
+                textBox.x = itemPosition.x - (textBox.w / 2.0f);
+                textBox.y = itemPosition.y - 10.0f;
+
+                textBox.x -= camera.screen.x;
+                textBox.y -= camera.screen.y;
+                SDL_Rect textBoxBackground = Utilities::SDL_FRect_To_SDL_Rect(textBox);
+                textBoxBackground.x -= 5;
+                textBoxBackground.w += 10;
+
+                box.ground_name = Utilities::SDL_Rect_To_SDL_FRect(textBoxBackground);
+                SDL_RenderFillRect(Graphics::renderer, &textBoxBackground);
+                SDL_RenderCopyF(Graphics::renderer, itemTextBox.pTexture, &itemTextBox.k, &textBox);
+                SDL_DestroyTexture(itemTextBox.pTexture);
+            }
+        }
+    }
 
 	void Init_Item_Data() {
 		rarityColor = {

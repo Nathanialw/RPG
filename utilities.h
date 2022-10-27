@@ -118,7 +118,7 @@ namespace Utilities {
 			returnRect.y = (yOverlap / 2);
 			return returnRect;
 		}
-		Log("Check_Collision_Rects() fallthrough error");
+		//Log("Check_Collision_Rects() fallthrough error");
 		return { 0, 0 };
 	}
 

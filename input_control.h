@@ -6,6 +6,7 @@
 #include "player_control.h"
 #include "ui.h"
 
+
 namespace Input_Control {
 
 	struct Entity_Data {
@@ -20,11 +21,17 @@ namespace Input_Control {
 
 		for (const auto& object : treeObjects.search(mouseRect)) {
 			//prevents plater from reutrning themself from the quadtree
-			//should probably make the player entity ID a constant saved somewhere, it may not always be 1
-			if ((int)object->item.entity_ID == 1) { 
-				continue; 
-			};
-			return { true, object->item.entity_ID };
+			//should probably make the player entity ID a constant saved somewhere, instead of grabbing it from a view every time
+            auto view = zone.view<Component::Input>();
+            for (auto player : view) {
+                if (object->item.entity_ID == player) {
+                    continue;
+                }
+                else{
+                    return { true, object->item.entity_ID };
+                }
+            }
+
 		}
 		return { false };
 	}
@@ -36,6 +43,38 @@ namespace Input_Control {
 		zone.emplace_or_replace<Component::Moving>(entity);
 	}
 
+    bool testasd(entt::entity &player, entt::entity &target) {
+        if (player == target) {
+            return true;
+        }
+        return false;
+    };
+
+    bool Move_To_Item_From_Name(entt::registry& zone, entt::entity& player_ID, Position& playerPosition, entt::entity item_ID){
+
+        auto& radius = zone.get<Radius>(player_ID).fRadius;
+        SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
+
+        Component::Entity_Type& type = zone.get<Component::Entity_Type>(item_ID);
+        Position& targetPosition = zone.get<Position>(item_ID);
+        Radius& targetRadius = zone.get<Radius>(item_ID);
+        SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
+
+
+        if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
+            //pick up Item
+            Item_Pickup itemData = { item_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
+            UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
+            zone.remove<Moving>(player_ID);
+            return true;
+        }
+        else {
+            //Move to Item then pick it up
+            Pick_Up_Item_Order(zone, player_ID, item_ID, targetPosition.x, targetPosition.y);
+            return true;
+        }
+    }
+
 
 	bool Check_For_Mouse_Target(entt::registry& zone, entt::entity& player_ID, Position& playerPosition, Melee_Range& meleeRange) {
 
@@ -43,49 +82,61 @@ namespace Input_Control {
 			return true;
 		}
 
-		Entity_Data targetData = Entity_vs_Mouse_Collision(zone, Dynamic_Quad_Tree::treeObjects);
+        Entity_Data targetData = Entity_vs_Mouse_Collision(zone, Dynamic_Quad_Tree::treeObjects);
+
 		if (targetData.b == true) {
 			zone.remove<Item_Pickup>(player_ID);
 			zone.remove<Moving>(player_ID);
-			
+
 			Component::Entity_Type& type = zone.get<Component::Entity_Type>(targetData.entity_ID);
 			Position& targetPosition = zone.get<Position>(targetData.entity_ID);
 			Radius& targetRadius = zone.get<Radius>(targetData.entity_ID);
 
 			switch (type) {
-			case Component::Entity_Type::unit:
 
-				if (AI::Player_In_Melee_Range(zone, playerPosition, meleeRange, targetPosition, targetRadius)) {
-					zone.remove<Moving>(player_ID);
-					AI::Melee_Attack(zone, player_ID, targetData.entity_ID, targetPosition);
-					return true;
-				}
-				else {
-					Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetPosition, targetRadius);
-					return true;
-				}
+                case Component::Entity_Type::unit:
+                    if (player_ID != targetData.entity_ID) {
+                        if (AI::Player_In_Melee_Range(zone, playerPosition, meleeRange, targetPosition, targetRadius)) {
+                            zone.remove<Moving>(player_ID);
+                            AI::Melee_Attack(zone, player_ID, targetData.entity_ID, targetPosition);
+                          //  std::cout << "moving to target" << std::endl;
+                            return true;
+                        } else {
+                            Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetPosition,
+                                                         targetRadius);
+                          //  std::cout << "attacking" << std::endl;
+                            return true;
+                        }
 
-			case Component::Entity_Type::item:
-				auto& radius = zone.get<Radius>(player_ID).fRadius;
-				SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
-				SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
+                    }
+                    else {
+                      //  std::cout << "no target, 1 is targetting player: " << testasd(player_ID, targetData.entity_ID) << std::endl;
+                    }
 
-				//if player is next to the item
-				if (Utilities::bFRect_Intersect(itemRect, unitRect)) {
-					//pick up Item
-					Item_Pickup itemData = { targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
-					UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
-					zone.remove<Moving>(player_ID);
-					return true;
-				}
-				else {
-					//Move to Item then pick it up
-					Pick_Up_Item_Order(zone, player_ID, targetData.entity_ID, targetPosition.x, targetPosition.y);
-					return true;
-				}
+
+
+                case Component::Entity_Type::item:
+                    auto& radius = zone.get<Radius>(player_ID).fRadius;
+                    SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
+                    SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
+
+                    //if player is next to the item
+                    if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
+                        std::cout << "inside item" << std::endl;
+                        //pick up Item
+                        Item_Pickup itemData = { targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
+                        UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
+                        zone.remove<Moving>(player_ID);
+                        return true;
+                    }
+                    else {
+                        //Move to Item then pick it up
+                        Pick_Up_Item_Order(zone, player_ID, targetData.entity_ID, targetPosition.x, targetPosition.y);
+                        return true;
+                    }
 			}
 		}
 		return false;
 	}
-	
+
 }
