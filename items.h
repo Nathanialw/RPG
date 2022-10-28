@@ -174,13 +174,14 @@ namespace Items {
 		icon.renderRectSize = { 64.0f, 64.0f };
 		icon.renderPositionOffset = { icon.renderRectSize.x / 2, icon.renderRectSize.y / 2 };
 
-
 		return itemName;
 	}
 
 
 	void Create_Item(entt::entity &item, Position& position, const std::string &name, Item_Stats &itemStats) {
-		float scale = 0.5f;
+		float scale = 0.25f;
+        float rectSide = 64.0f;
+
 		World::zone.emplace<Scale>(item, scale);
 		World::zone.emplace<Actions>(item, isStatic);
 		World::zone.emplace<Direction>(item, Direction::W);
@@ -188,14 +189,14 @@ namespace Items {
 		World::zone.emplace<Component::Entity_Type>(item, Entity_Type::item);
 		auto &stats = World::zone.emplace<Item_Stats>(item);
 		stats = itemStats;
-		auto& offset = World::zone.emplace<Sprite_Offset>(item, 16.0f * scale, 16.0f * scale).offset;
+		auto& offset = World::zone.emplace<Sprite_Offset>(item, rectSide/2.0f * scale, rectSide/2.0f * scale).offset;
 		auto& position2 = World::zone.emplace<Position>(item, position.x, position.y);
-		World::zone.emplace<Radius>(item, 16.0f * scale);
+		World::zone.emplace<Radius>(item, offset.x);
 		World::zone.emplace<Ground_Item>(item,
-			((position2.x - offset.x) / 4.0f), //half the width and height
-			((position2.y - offset.y) / 4.0f),	//half the width and height
-			(64.0f / 4.0f) * scale,
-			(64.0f / 4.0f) * scale,0.0f,0.0f,0.0f,0.0f);
+			((position2.x - offset.x) * scale), //half the width and height
+			((position2.y - offset.y) * scale),	//half the width and height
+			(rectSide * scale) * scale,
+			(rectSide * scale) * scale,0.0f,0.0f,0.0f,0.0f);
 
 	}
 

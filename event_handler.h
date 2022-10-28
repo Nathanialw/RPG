@@ -101,21 +101,19 @@ namespace Event_Handler {
 		if (event.key.type == SDL_MOUSEBUTTONDOWN) {
 			if (event.button.button == SDL_BUTTON_LEFT) {
 				//check if cursor is in the bag UI
-				if (UI::bToggleCharacterUI) {
-					if (Mouse::bRect_inside_Cursor(UI::Character_UI)){
-						UI::Bag_UI::Interact_With_Bag(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera);
-						if (UI::Equipment_UI::Interact_With_Equipment(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera) == true) {
-							//updates character stats
-							zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
-						}
-					}
-					else {
-						UI::Drop_Item_If_On_Mouse(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
+				if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
+                    UI::Bag_UI::Interact_With_Bag(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera);
+                    if (UI::Equipment_UI::Interact_With_Equipment(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera) == true) {
+                        //updates character stats
+                        zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
 					}
 				}
-				if (Mouse::bRect_inside_Cursor(UI::Character_UI) == false) {
-					User_Mouse_Input::Selection_Box(zone); //if units are currently selected
-				}
+                else {
+                    UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
+                }
+				//if (Mouse::bRect_inside_Cursor(UI::Character_UI) == false) {
+				//	User_Mouse_Input::Selection_Box(zone); //if units are currently selected
+				//}
 			}
 
 			if (event.button.button == SDL_BUTTON_RIGHT) {
@@ -128,12 +126,17 @@ namespace Event_Handler {
 						return;
 					}
 				}
-				if (Input_Control::Check_For_Mouse_Target(zone, player_ID, playerPosition, meleeRange)) {
-					//Mouse::bRight_Mouse_Pressed_Attacking = true; //held down for constant attacking
-				}
-				else {
-					Mouse::bRight_Mouse_Pressed = true; //held down for constant moving
-				}
+                if (Mouse::itemCurrentlyHeld == false) {
+                    if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition,
+                                                              meleeRange)) {
+                        //Mouse::bRight_Mouse_Pressed_Attacking = true; //held down for constant attacking
+                    } else {
+                        Mouse::bRight_Mouse_Pressed = true; //held down for constant moving
+                    }
+                }
+                else {
+                    UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
+                }
 			}
 		}
 

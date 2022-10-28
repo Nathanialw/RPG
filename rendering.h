@@ -322,7 +322,7 @@ namespace Rendering {
 		float originY = 0.0f;
 
 
-		SDL_Rect tileSpriteRect = { 0, 0, (float)map.getTileSize().x , (float)map.getTileSize().y };
+		SDL_Rect tileSpriteRect = { 0, 0, (int)map.getTileSize().x , (int)map.getTileSize().y };
 		SDL_FRect renderPosition = { 0.0f, 0.0f, (float)map.getTileSize().x, (float)map.getTileSize().y };
 
 		auto& numOfTiles = map.getTileCount();
@@ -598,8 +598,18 @@ namespace Rendering {
 			UI_Resources::Render_Health(zone, camera);
 			Render_Mouse_Item(zone, camera);
 
+
 			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
-			SDL_RenderPresent(Graphics::renderer);
+            if (Items::showGroundItems == true) {                //****//search quad tree instead
+                auto view = zone.view<Ground_Item, Renderable>();
+                for (auto item : view) {
+                    auto &box =zone.get<Ground_Item>(item);
+                    SDL_RenderDrawRectF(Graphics::renderer, &box.box);
+                }
+            }
+
+
+            SDL_RenderPresent(Graphics::renderer);
 		}
 	}
 }

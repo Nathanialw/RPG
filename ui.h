@@ -28,7 +28,7 @@ namespace UI {
 			UI_bagSlots.at(slotNum) = item;
 			mouseHasItem = false;
 			zone.remove<On_Mouse>(item);
-			zone.emplace<Inventory>(item);
+			zone.emplace_or_replace<Inventory>(item);
 		}
 
 		void Remove_Item_From_Bag(entt::registry& zone, entt::entity& item, bool& mouseHasItem, int& slotNum) {
@@ -264,7 +264,6 @@ namespace UI {
 			/*could be injected instead*/
 
 			if (Mouse_Inside_Equipment_Screen(zone, camera, mousePoint)) {
-
 				//check with item type with a search of where the mouse and and the rects of the equip slots
 				if (mouseHasItem) {
 					auto& itemType = zone.get<Item_Type>(item);
@@ -354,34 +353,34 @@ namespace UI {
 	}
 
 
-	void Drop_Item_If_On_Mouse(entt::registry& zone, entt::entity& item_ID, bool& isItemCurrentlyHeld) {
-		if (isItemCurrentlyHeld == true) {
-			auto view = zone.view<Input, Position>();
-			for (auto entity : view) {
-				auto& entityPosition = view.get<Position>(entity);
-				auto& scale = zone.get<Scale>(item_ID).scale;
-				auto& itemPosition = zone.get<Position>(item_ID);
+	void Drop_Item_If_On_Mouse(entt::registry& zone, Camera &camera, entt::entity& item_ID, bool& isItemCurrentlyHeld) {
+        if (isItemCurrentlyHeld == true) {
+            auto view = zone.view<Input, Position>();
+            for (auto entity: view) {
+                auto &entityPosition = view.get<Position>(entity);
+                auto &scale = zone.get<Scale>(item_ID).scale;
+                auto &itemPosition = zone.get<Position>(item_ID);
+                auto& offset = zone.get<Sprite_Offset>(item_ID).offset;
+                itemPosition = entityPosition;
 
-				itemPosition = entityPosition;
-
-				zone.emplace<Ground_Item>(item_ID,
-					itemPosition.x - (32.0f * scale),
-					itemPosition.y - (32.0f * scale),
-					64.0f * scale,
-					64.0f * scale);
-
-
+                zone.emplace<Ground_Item>(item_ID,
+                                          itemPosition.x - (offset.x),
+                                          itemPosition.y - (offset.y),
+                                          offset.x * 2.0f,
+                                          offset.y * 2.0f);
 
 
-				//adds to rendering with the main animation loop
-				zone.emplace<Direction>(item_ID, Direction::W);
-				// to remove from rendering on mouse
-				zone.remove<On_Mouse>(item_ID);
-				//allows insertion into quad Trees
-				zone.emplace<Radius>(item_ID, zone.get<Sprite_Offset>(item_ID).offset.x * scale);
-			}
-			isItemCurrentlyHeld = false;
-		}
+
+
+                //adds to rendering with the main animation loop
+                zone.emplace<Direction>(item_ID, Direction::W);
+                // to remove from rendering on mouse
+                zone.remove<On_Mouse>(item_ID);
+                //allows insertion into quad Trees
+                zone.emplace<Radius>(item_ID, offset.x);
+            }
+        }
+        isItemCurrentlyHeld = false;
 	}
 
 	void Pick_Up_Item_To_Mouse(entt::registry& zone, entt::entity& item_ID, bool& isItemCurrentlyHeld) {
@@ -395,7 +394,12 @@ namespace UI {
 			Mouse::mouseItem = item_ID;
 			Mouse::itemCurrentlyHeld = true;
 
-			//prevents we insertion to quad tree
+			//removes from quad tree
+            auto &radius = zone.get<Radius>(item_ID);
+            auto &position = zone.get<Position>(item_ID);
+            SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius.fRadius, position.x, position.y);
+            zone.emplace<Remove_From_Object_Tree>(item_ID, rect);
+            //prevents auto reinsertion into quad tree
 			zone.remove<Radius>(item_ID);
 		}
 	}
@@ -403,7 +407,6 @@ namespace UI {
 	bool Pick_Up_Item_To_Mouse_Or_Bag(entt::registry& zone, Item_Pickup &itemData, bool& isItemCurrentlyHeld) {
 		// check if mouse is inside item box				
 		SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(itemData.radius, itemData.x, itemData.y);
-		zone.emplace<Remove_From_Object_Tree>(itemData.item_ID, rect);
 
 		if (bToggleCharacterUI) { //bag is closed
 			Pick_Up_Item_To_Mouse(zone, itemData.item_ID, isItemCurrentlyHeld);
@@ -414,6 +417,7 @@ namespace UI {
 			for (int i = 0; i < Bag_UI::UI_bagSlots.size(); i++) {
 				if (Bag_UI::UI_bagSlots[i] == Bag_UI::emptyBagSlot) {
 					Bag_UI::UI_bagSlots[i] = itemData.item_ID;
+                    zone.emplace<Remove_From_Object_Tree>(itemData.item_ID, rect);
 					//removed pickup box from ground
 					zone.remove<Ground_Item>(itemData.item_ID);
 					//removes for main rendering loop
