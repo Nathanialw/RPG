@@ -106,7 +106,7 @@ namespace Event_Handler {
 						UI::Bag_UI::Interact_With_Bag(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera);
 						if (UI::Equipment_UI::Interact_With_Equipment(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera) == true) {
 							//updates character stats
-							zone.emplace<Item_Component::Item_Equip>(player_ID);
+							zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
 						}
 					}
 					else {
@@ -122,30 +122,13 @@ namespace Event_Handler {
 				if (UI::bToggleCharacterUI) {
 					if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
 						if (UI::Swap_Item_In_Bag_For_Equipped(zone, Mouse::screenMousePoint, camera)) {
-							zone.emplace<Item_Component::Item_Equip>(player_ID);
+							zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
 							return;
 						}
 						return;
 					}
 				}
-                if (Items::showGroundItems) {
-                    auto view = zone.view<Ground_Item, Position, Rarity, Name, Renderable>();
-                    for (auto item_ID: view) {
-                        //get the item ID the mouse is over nad plug it into the move to pick up function
-                        auto Item_Name_Box = view.get<Ground_Item>(item_ID).ground_name;
-                        //only if the mouse intersects with the item box
-                        if (Mouse::bRect_inside_Cursor(Item_Name_Box)) {
-                            Input_Control::Move_To_Item_From_Name(zone, player_ID, playerPosition,
-                                                                  item_ID);
-                            return;
-                        }
-                        else {
-                            Mouse::bRight_Mouse_Pressed = true; //held down for constant moving
-                        }
-                    }
-                    Mouse::bRight_Mouse_Pressed = true; //held down for constant moving
-                }
-				else if (Input_Control::Check_For_Mouse_Target(zone, player_ID, playerPosition, meleeRange)) {
+				if (Input_Control::Check_For_Mouse_Target(zone, player_ID, playerPosition, meleeRange)) {
 					//Mouse::bRight_Mouse_Pressed_Attacking = true; //held down for constant attacking
 				}
 				else {

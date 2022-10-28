@@ -78,7 +78,7 @@ namespace Items {
 	}
 
     Item_Component::Weapon_Material Generate_Weapon_Material() {
-        int randType = rand() % 4 + 1;
+        int randType = rand() % 3 + 1;
 
         switch (randType) {
             case 1: return { Weapon_Material::copper };
@@ -141,8 +141,14 @@ namespace Items {
 	}
 
 	std::string Create_Armor(entt::entity& item, Rarity& rarity) {
-		auto itemType = Generate_Item_Type();
-		auto armorType = Generate_Armor_Type();
+		Item_Type itemType = Generate_Item_Type();
+		Armor_Type armorType = Generate_Armor_Type();
+
+        ///just  a little fix since I have no cloth helm icon
+        if (itemType == Item_Type::helm && armorType == Armor_Type::cloth) {
+            armorType = Armor_Type::leather;
+        };
+        //////
 
 		std::string type = ItemTypeName[itemType];
 		std::string armor = ArmorTypeName[armorType];
@@ -173,7 +179,7 @@ namespace Items {
 	}
 
 
-	void Create_Item(entt::entity &item, Position& position, Rarity &rarity, const std::string &name, Item_Stats &itemStats) {
+	void Create_Item(entt::entity &item, Position& position, const std::string &name, Item_Stats &itemStats) {
 		float scale = 0.5f;
 		World::zone.emplace<Scale>(item, scale);
 		World::zone.emplace<Actions>(item, isStatic);
@@ -189,7 +195,7 @@ namespace Items {
 			((position2.x - offset.x) / 4.0f), //half the width and height
 			((position2.y - offset.y) / 4.0f),	//half the width and height
 			(64.0f / 4.0f) * scale,
-			(64.0f / 4.0f) * scale), 0,0,0,0;
+			(64.0f / 4.0f) * scale,0.0f,0.0f,0.0f,0.0f);
 
 	}
 
@@ -279,16 +285,16 @@ namespace Items {
 
 		Item_Stats itemStats = Generate_Item_Stats(rarity);
 
-		auto item = World::zone.create();
+		auto item_uID = World::zone.create();
 
-        std::string itemName = Choose_Item(item, rarity);
+        std::string itemName = Choose_Item(item_uID, rarity);
 
 		//	int item = rand() % 100 + 1;
 		//	if (item <= 10) { Create_Item(item, position, rarity, "sword", Item_Type::weapon, Weapon_Type::sword, Graphics::longsword_default, Graphics::longsword_default_icon, itemStats); }
 		//	else if (item <= 12) { Create_Item(item, position, rarity, "padded armour", Item_Type::chest, Armor_Type::cloth, Graphics::armorSpriteSheet, Graphics::armorSpriteSheet, itemStats); }
 
 
-		Create_Item(item, position, rarity, itemName, itemStats);
+		Create_Item(item_uID, position, itemName, itemStats);
 
 	}
 
