@@ -92,6 +92,23 @@ namespace Graphics {
 		return text_data;																//return SDL_Texture *texture
 	};
 
+    SDL_FRect Create_Text_Background (Component::Camera &camera,  std::string &text, Component::Position &position) {
+        SDL_FRect textBox = {};
+        textBox.w = text.length() * 5.0f;
+        textBox.h = 10.0f;
+
+        textBox.x = position.x - (textBox.w / 2.0f);
+        textBox.y = position.y - 10.0f;
+
+        textBox.x -= camera.screen.x;
+        textBox.y -= camera.screen.y;
+        SDL_Rect textBoxBackground = Utilities::SDL_FRect_To_SDL_Rect(textBox);
+        textBoxBackground.x -= 5;
+        textBoxBackground.w += 10;
+
+        return Utilities::SDL_Rect_To_SDL_FRect(textBoxBackground);
+    }
+
 	void Create_Font() {
 		font = TTF_OpenFont("fonts/Chomsky.otf", 30);
 	}

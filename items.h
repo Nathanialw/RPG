@@ -373,7 +373,6 @@ namespace Items {
 
 	void Show_Ground_Items(entt::registry& zone, Camera& camera) {
 		if (showGroundItems == true) {
-
 		 	//****//search quad tree instead
 			auto view = zone.view<Ground_Item, Position, Rarity, Name, Renderable>();
 
@@ -390,30 +389,18 @@ namespace Items {
                 auto& highlightBox = view.get<Ground_Item>(item).ground_name;
 				SDL_FRect textBox = {};
 
+                //create text
 				Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(name, rarityColor[rarity]);
+                //create background
+                SDL_FRect highlightBox = Graphics::Create_Text_Background(camera, name, itemPosition);
 
-				textBox.w = name.length() * 5.0f;
-				textBox.h = 10.0f;
-
-				textBox.x = itemPosition.x - (textBox.w / 2.0f);
-				textBox.y = itemPosition.y - 10.0f;
-
-				textBox.x -= camera.screen.x;
-				textBox.y -= camera.screen.y;
-				SDL_Rect textBoxBackground = Utilities::SDL_FRect_To_SDL_Rect(textBox);
-				textBoxBackground.x -= 5;
-				textBoxBackground.w += 10;
-
-				highlightBox = Utilities::SDL_Rect_To_SDL_FRect(textBoxBackground);
 				Hightlight_Item_Under_Cursor(highlightBox);
 				SDL_RenderFillRect(Graphics::renderer, &textBoxBackground);
 				SDL_RenderCopyF(Graphics::renderer, itemTextBox.pTexture, &itemTextBox.k, &textBox);
 				SDL_DestroyTexture(itemTextBox.pTexture);
 			}
 		}
-
 		//run rect collsion to break up the item names
-
 	}
 
     void Name_On_Mouseover (entt::registry& zone, Camera& camera) {
@@ -432,23 +419,11 @@ namespace Items {
                 auto &rarity = view.get<Rarity>(item);
                 auto &name = view.get<Name>(item).name;
 
-                SDL_FRect textBox = {};
+                //create text
+				Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(name, rarityColor[rarity]);
+                //create background
+                SDL_FRect highlightBox = Graphics::Create_Text_Background(camera, name, itemPosition);
 
-                Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(name, rarityColor[rarity]);
-
-                textBox.w = name.length() * 5.0f;
-                textBox.h = 10.0f;
-
-                textBox.x = itemPosition.x - (textBox.w / 2.0f);
-                textBox.y = itemPosition.y - 10.0f;
-
-                textBox.x -= camera.screen.x;
-                textBox.y -= camera.screen.y;
-                SDL_Rect textBoxBackground = Utilities::SDL_FRect_To_SDL_Rect(textBox);
-                textBoxBackground.x -= 5;
-                textBoxBackground.w += 10;
-
-                box.ground_name = Utilities::SDL_Rect_To_SDL_FRect(textBoxBackground);
                 SDL_RenderFillRect(Graphics::renderer, &textBoxBackground);
                 SDL_RenderCopyF(Graphics::renderer, itemTextBox.pTexture, &itemTextBox.k, &textBox);
                 SDL_DestroyTexture(itemTextBox.pTexture);

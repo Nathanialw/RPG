@@ -427,12 +427,15 @@ namespace UI {
 					zone.remove<Radius>(itemData.item_ID);
 					return true;
 				}
-				//either pick it up with the mouse using this function or have an overburdened function instead
 			}
+            //set overburdened message here here
+            //cane use a nameplate to write it out above sprites head
+            std::cout << "I am overburdened" << std::endl;
+            return false;
 		}
 
 		std::cout << "Pick_Up_Item_To_Mouse_Or_Bag() passthrough error" << std::endl;
-		return false;
+        return false;
 	}
 
 
