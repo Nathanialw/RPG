@@ -1,25 +1,21 @@
-#pragma once
+#pragma  once
 #include "entt.hpp"
 #include "components.h"
 #include "graphics.h"
 #include "timer.h"
-
+#include <vector>
 
 
 namespace Damage_Text {
 
-
 	std::vector<Component::Scrolling_Damage_Text> damageTextQueue;
 
 	void Add_To_Scrolling_Damage(entt::registry& zone, entt::entity& entity, entt::entity& target, int& damage) {
-		if (zone.any_of<Input>(entity)) {
-			SDL_FPoint positionRect = { zone.get<Position>(target).x, zone.get<Position>(target).y - 60.0f };
-			damageTextQueue.emplace_back(positionRect, std::to_string(damage), 1000);
-		}
+        SDL_FPoint positionRect = { zone.get<Position>(target).x, zone.get<Position>(target).y - 60.0f };
+
+        Component::Scrolling_Damage_Text text ={ positionRect, std::to_string(damage), 1000};
+        damageTextQueue.emplace_back(text);
 	}
-
-
-
 
 	void Show_Damage(entt::registry& zone, Component::Camera& camera) {
 
