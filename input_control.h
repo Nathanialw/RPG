@@ -8,30 +8,6 @@
 
 namespace Input_Control {
 
-	struct Entity_Data {
-		bool b = false;
-		entt::entity entity_ID;
-	};
-
-	Entity_Data Entity_vs_Mouse_Collision(entt::registry& zone, Dynamic_Quad_Tree::DynamicQuadTreeContainer<Dynamic_Quad_Tree::someObjectWithArea> &treeObjects) {
-
-		SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorSize, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
-
-		for (const auto& object : treeObjects.search(mouseRect)) {
-			//prevents player from returning themselves from the quadtree
-			//should probably make the player entity ID a constant saved somewhere, instead of grabbing it from a view every time
-            auto view = zone.view<Component::Input>();
-            for (auto player : view) {
-                if (object->item.entity_ID == player) {
-                    continue;
-                }
-                else{
-                    return { true, object->item.entity_ID };
-                }
-            }
-		}
-		return { false };
-	}
 
 	//need to make a move to item then pick it up routine for these components
 	void Pick_Up_Item_Order(entt::registry& zone, entt::entity& entity, entt::entity& Item_ID, float& x, float& y) {
@@ -93,7 +69,8 @@ namespace Input_Control {
             }
         }
 
-        Entity_Data targetData = Entity_vs_Mouse_Collision(zone, Dynamic_Quad_Tree::treeObjects);
+        SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorSize, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+        Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);
 
 		if (targetData.b == true) {
 			zone.remove<Item_Pickup>(player_ID);

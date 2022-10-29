@@ -96,9 +96,11 @@ namespace Weapons {
 					auto& meleeDamage = view.get<Melee_Damage>(entity);
 					Damage damageRange = { meleeDamage.minDamage, meleeDamage.maxDamage };
 					int damage = Combat_Control::Calculate_Damage(damageRange);
-					
-					Damage_Text::Add_To_Scrolling_Damage(zone, entity, target, damage);
 
+
+                    if (zone.any_of<Input>(entity) ) {
+                        Damage_Text::Add_To_Scrolling_Damage(zone, entity, target, damage);
+                    }
 					//std::cout << damage << std::endl;
 
 					auto& struck = zone.get_or_emplace<Struck>(target);
