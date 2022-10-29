@@ -5,7 +5,6 @@
 
 namespace Item_Component {
 
-
 	enum class Item_Type {
 		helm,
 		neck,
@@ -91,7 +90,5 @@ namespace Item_Component {
 
 		};
 	};
-
-
 }
 

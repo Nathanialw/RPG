@@ -67,7 +67,7 @@ namespace Event_Handler {
 				if (act.action != attack) {
 					switch (event.key.keysym.sym)
 					{
-					case SDLK_1: AI::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "'fireball'"); break;
+					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "'fireball'"); break;
 					case SDLK_2: Death_Spells::Summon_Skeleton(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "'skeleton'");  break;
 					case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
 					case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;

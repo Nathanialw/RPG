@@ -1,8 +1,9 @@
 #pragma once
 #include "timer.h"
-#include "ai_control.h"
+#include "entity_control.h"
 #include "components.h"
 #include "utilities.h"
+
 //#include "include/box2d/box2d.h"
 
 
@@ -22,7 +23,7 @@ namespace Movement {
 			auto view = zone.view<Input>();
 			for (auto player : view) {
 				if (Mouse::bRight_Mouse_Pressed) {
-					AI::Move_Order(zone, player, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+					Entity_Control::Move_Order(zone, player, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
 				}
 			}
 		}

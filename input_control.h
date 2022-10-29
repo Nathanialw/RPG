@@ -5,6 +5,7 @@
 #include "dynamic_quad_tree.h"
 #include "player_control.h"
 #include "ui.h"
+#include "entity_control.h"
 
 namespace Input_Control {
 
@@ -84,9 +85,9 @@ namespace Input_Control {
                 case Component::Entity_Type::unit:
 
                 if (player_ID != targetData.entity_ID) {
-                    if (AI::Player_In_Melee_Range(zone, playerPosition, meleeRange, targetPosition, targetRadius)) {
+                    if (Entity_Control::Target_In_Melee_Range(zone, playerPosition, meleeRange, targetPosition, targetRadius)) {
                         zone.remove<Moving>(player_ID);
-                        AI::Melee_Attack(zone, player_ID, targetData.entity_ID, targetPosition);
+                        Entity_Control::Melee_Attack(zone, player_ID, targetData.entity_ID, targetPosition);
                       //  std::cout << "moving to target" << std::endl;
                         return true;
                     } else {
