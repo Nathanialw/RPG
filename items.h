@@ -386,18 +386,16 @@ namespace Items {
 				auto& rarity = view.get<Rarity>(item);
 				auto& name = view.get<Name>(item).name;
 
+                Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, rarityColor[rarity], name,  itemPosition);
+
                 auto& highlightBox = view.get<Ground_Item>(item).ground_name;
-				SDL_FRect textBox = {};
 
-                //create text
-				Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(name, rarityColor[rarity]);
-                //create background
-                SDL_FRect highlightBox = Graphics::Create_Text_Background(camera, name, itemPosition);
-
+                highlightBox = Utilities::SDL_Rect_To_SDL_FRect(itemTextBox.textBoxBackground);
 				Hightlight_Item_Under_Cursor(highlightBox);
-				SDL_RenderFillRect(Graphics::renderer, &textBoxBackground);
-				SDL_RenderCopyF(Graphics::renderer, itemTextBox.pTexture, &itemTextBox.k, &textBox);
-				SDL_DestroyTexture(itemTextBox.pTexture);
+
+                SDL_RenderFillRect(Graphics::renderer, &itemTextBox.textBoxBackground);
+				SDL_RenderCopyF(Graphics::renderer, itemTextBox.textdata.pTexture, &itemTextBox.textdata.k, &itemTextBox.highlightBox);
+				SDL_DestroyTexture(itemTextBox.textdata.pTexture);
 			}
 		}
 		//run rect collsion to break up the item names
@@ -419,14 +417,14 @@ namespace Items {
                 auto &rarity = view.get<Rarity>(item);
                 auto &name = view.get<Name>(item).name;
 
-                //create text
-				Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(name, rarityColor[rarity]);
-                //create background
-                SDL_FRect highlightBox = Graphics::Create_Text_Background(camera, name, itemPosition);
+                Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, rarityColor[rarity], name,  itemPosition);
 
-                SDL_RenderFillRect(Graphics::renderer, &textBoxBackground);
-                SDL_RenderCopyF(Graphics::renderer, itemTextBox.pTexture, &itemTextBox.k, &textBox);
-                SDL_DestroyTexture(itemTextBox.pTexture);
+                auto& highlightBox = view.get<Ground_Item>(item).ground_name;
+                highlightBox = Utilities::SDL_Rect_To_SDL_FRect(itemTextBox.textBoxBackground);
+
+                SDL_RenderFillRect(Graphics::renderer, &itemTextBox.textBoxBackground);
+                SDL_RenderCopyF(Graphics::renderer, itemTextBox.textdata.pTexture, &itemTextBox.textdata.k, &itemTextBox.highlightBox);
+                SDL_DestroyTexture(itemTextBox.textdata.pTexture);
             }
         }
     }

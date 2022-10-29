@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/RPG_game.dir/main.cpp.o CMakeFiles/RPG_game.dir/sqlite3.c.o CMakeFiles/RPG_game.dir/tinyxml2.cpp.o -o RPG_game  -Wl,-rpath,/home/nathanial/Workspace/RPG_game/lib -lSDL2 -lSDL2_image -lSDL2_ttf ../lib/libbox2d.a ../lib/libtmxlite.so 

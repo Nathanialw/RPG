@@ -23,6 +23,13 @@ namespace Graphics {
 			SDL_Texture* pTexture;
 			SDL_Rect k;
 		};
+
+        struct Text_Box_Data {
+            SDL_Rect textBoxBackground;
+            SDL_FRect highlightBox;
+            Surface_Data textdata;
+        };
+
 	}
 
 	SDL_Renderer* renderer;
@@ -92,7 +99,7 @@ namespace Graphics {
 		return text_data;																//return SDL_Texture *texture
 	};
 
-    SDL_FRect Create_Text_Background (Component::Camera &camera,  std::string &text, Component::Position &position) {
+    Text_Box_Data Create_Text_Background (Component::Camera &camera, SDL_Color textColor, std::string &text, Component::Position &position) {
         SDL_FRect textBox = {};
         textBox.w = text.length() * 5.0f;
         textBox.h = 10.0f;
@@ -106,7 +113,16 @@ namespace Graphics {
         textBoxBackground.x -= 5;
         textBoxBackground.w += 10;
 
-        return Utilities::SDL_Rect_To_SDL_FRect(textBoxBackground);
+        Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(text, textColor);
+
+        Text_Box_Data textBoxData = {
+            textBoxBackground,
+            textBox,
+            itemTextBox
+        };
+
+        return textBoxData;
+
     }
 
 	void Create_Font() {
