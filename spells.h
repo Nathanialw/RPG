@@ -240,8 +240,8 @@ namespace Spells {
                 Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_QuadTree_Collision(World::zone,
                                                                                                             spellRect);
 
-                //prevent spell from hitting itself or it's caster
-                if (targetData.b == true && caster_ID != targetData.entity_ID && targetData.entity_ID != entity) {
+                //prevent spell from hitting itself or it's caster or a ground item
+                if (targetData.b == true && caster_ID != targetData.entity_ID && targetData.entity_ID != entity && World::zone.any_of<Ground_Item>(targetData.entity_ID) == false) {
                     alive = false;
                     Spell_Hit(entity, targetData.entity_ID);
                     World::zone.remove<Linear_Move>(entity);

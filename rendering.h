@@ -585,7 +585,7 @@ namespace Rendering {
 			Dynamic_Quad_Tree::Emplace_Objects_In_Quad_Tree(World::zone);
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
 			Dynamic_Quad_Tree::Remove_From_Tree(zone);
-			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
+			//Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
 
 			Items::Show_Ground_Items(zone, camera);
             Items::Name_On_Mouseover(zone, camera);
@@ -595,8 +595,10 @@ namespace Rendering {
 			Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
 			Tooltip::Show_Item_Tooltip(zone, mouse, camera);
 			Damage_Text::Show_Damage(zone, camera);
-			UI_Resources::Render_Health(zone, camera);
-			Render_Mouse_Item(zone, camera);
+
+            UI_Resources::Render_Resources(zone, camera);
+
+            Render_Mouse_Item(zone, camera);
 
 
 			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);

@@ -1,3 +1,0 @@
-/home/nathanial/Workspace/RPG_game/cmake-build-release/CMakeFiles/RPG_game.dir
-/home/nathanial/Workspace/RPG_game/cmake-build-release/CMakeFiles/edit_cache.dir
-/home/nathanial/Workspace/RPG_game/cmake-build-release/CMakeFiles/rebuild_cache.dir
