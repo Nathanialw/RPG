@@ -369,13 +369,48 @@ namespace Dynamic_Quad_Tree {
 				screenRect.y -= camera.screen.y;
 				SDL_RenderDrawRectF(Graphics::renderer, &screenRect);
 			}
-			std::cout << "nodes: " << nodes << std::endl;
+			//std::cout << "nodes: " << nodes << std::endl;
 		}
 		//std::cout << "objects on screen: " << i << std::endl;
 	}
 
 
+    struct Entity_Data {
+        bool b = false;
+        entt::entity entity_ID;
+    };
 
+
+    Entity_Data Entity_vs_Mouse_Collision(entt::registry& zone, SDL_FRect &entityRect) {
+        for (const auto& object : treeObjects.search(entityRect)) {
+            //prevents player from returning themselves from the quadtree
+            //should probably make the player entity ID a constant saved somewhere, instead of grabbing it from a view every time
+            auto view = zone.view<Component::Input>();
+            for (auto player : view) {
+                if (object->item.entity_ID == player) {
+                    continue;
+                }
+                else{
+                    return { true, object->item.entity_ID };
+                }
+            }
+        }
+        return { false };
+    }
+
+
+    Entity_Data Entity_vs_QuadTree_Collision(entt::registry& zone, SDL_FRect &entityRect) {
+        for (const auto& object : treeObjects.search(entityRect)) {
+
+            if (Utilities::bFRect_Intersect(entityRect, object->item.rect)) {
+                return { true, object->item.entity_ID };
+            }
+            else {
+                continue;
+            }
+        }
+        return { false };
+    }
 
 
 

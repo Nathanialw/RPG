@@ -1,6 +1,7 @@
 #pragma once
 #include "movement.h"
 #include "collision.h"
+#include "combat_control.h"
 
 namespace Spells {
 
@@ -68,8 +69,7 @@ namespace Spells {
 		World::zone.emplace<Velocity>(entity, 0.f, 0.0f, 0.0f, 0.0f, data.speed);
 		World::zone.emplace<Mass>(entity, data.mass * scale);
 		World::zone.emplace<Entity_Type>(entity, Entity_Type::spell);
-		World::zone.emplace<Damage>(entity, 1, 100);
-
+		World::zone.emplace<Damage>(entity, 1, 10);
 		//Scenes::scene.emplace<Spell_Range>(spell, 1000.0f);
 		World::zone.emplace<Caster_ID>(entity, caster_ID);
 
@@ -78,7 +78,10 @@ namespace Spells {
 		World::zone.emplace<Casted>(entity);
 		World::zone.emplace<Renderable>(entity);
 		World::zone.emplace<Direction>(entity, direction); //match Direction of the caster
-		World::zone.emplace<Alive>(entity, true);		
+		World::zone.emplace<Alive>(entity, true);
+
+        World::zone.emplace<Caster>(entity, caster_ID);
+
 
 		bool yes = true;
 		Collision::Create_Dynamic_Body(World::zone, entity, spelldir.x, spelldir.y, data.radius, data.mass, yes);
@@ -200,11 +203,63 @@ namespace Spells {
 		}
 	}
 
+    void Spell_Hit (entt::entity spell_ID, entt::entity struck_ID) {
+        Damage damageRange = World::zone.get<Damage>(spell_ID);
+        //std::cout << damageRange.minDamage << ", " << damageRange.maxDamage << std::endl;
+        int damage = Combat_Control::Calculate_Damage(damageRange);
+
+        entt::entity player;
+        auto view = World::zone.view<Input>();
+        for (auto input : view) {
+            player = input;
+        }
+
+        if (World::zone.get<Caster>(spell_ID).caster == player) {
+            Damage_Text::Add_To_Scrolling_Damage(World::zone, spell_ID, struck_ID, damage);
+
+        }
+
+        //std::cout << damage << std::endl;
+
+
+        auto& struck = World::zone.get_or_emplace<Struck>(struck_ID);
+        struck.struck += damage;
+    }
+
+
+    void Check_Spell_Collide () {
+        auto view = World::zone.view<Spell, Radius, Position, Alive, Caster>();
+        for (auto entity: view) {
+            auto &alive = view.get<Alive>(entity).bIsAlive;
+            if (alive) {
+                auto &radius = view.get<Radius>(entity).fRadius;
+                auto &position = view.get<Position>(entity);
+                auto &caster_ID = World::zone.get<Caster>(entity).caster;
+
+                SDL_FRect spellRect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
+                Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_QuadTree_Collision(World::zone,
+                                                                                                            spellRect);
+
+                //prevent spell from hitting itself or it's caster
+                if (targetData.b == true && caster_ID != targetData.entity_ID && targetData.entity_ID != entity) {
+                    alive = false;
+                    Spell_Hit(entity, targetData.entity_ID);
+                    World::zone.remove<Linear_Move>(entity);
+                    World::zone.remove<Mouse_Move>(entity);
+                }
+            }
+        }
+    }
+
 	void Update_Spells() {
-		
-		Destroy_NonMoving_Spells();
+        Destroy_NonMoving_Spells();
 		Clear_Collided_Spells();
 		Casting_Updater();
+        Check_Spell_Collide();
 		add_spells_to_scene();
 	}
+
+
 }
+
+

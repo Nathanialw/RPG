@@ -29,7 +29,6 @@ namespace Graphics {
             SDL_FRect highlightBox;
             Surface_Data textdata;
         };
-
 	}
 
 	SDL_Renderer* renderer;
@@ -120,9 +119,7 @@ namespace Graphics {
             textBox,
             itemTextBox
         };
-
         return textBoxData;
-
     }
 
 	void Create_Font() {

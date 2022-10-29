@@ -269,6 +269,10 @@ namespace Component {
 
 	};
 
+    struct Caster {
+        entt::entity caster;
+    };
+
 	struct Spellbook {
 
 	};
