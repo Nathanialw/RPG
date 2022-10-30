@@ -591,13 +591,15 @@ namespace Rendering {
             Items::Name_On_Mouseover(zone, camera);
 			UI::Render_UI(zone, Graphics::renderer, camera);
 			Character_Stats::Render_Character_Stats(zone, camera);
-			Interface::Run_Interface(zone, camera);
-			Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
-			Tooltip::Show_Item_Tooltip(zone, mouse, camera);
+            Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
 			Damage_Text::Show_Damage(zone, camera);
-
             UI_Resources::Render_Resources(zone, camera);
-
+            UI_Spellbook::Draw_Spellbook();
+            Menu::Render();
+            //Mouse
+            Interface::Run_Interface(zone, camera);
+            //on top of mouse
+            Tooltip::Show_Item_Tooltip(zone, mouse, camera);
             Render_Mouse_Item(zone, camera);
 
 

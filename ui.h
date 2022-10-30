@@ -1,6 +1,8 @@
 #pragma once
 #include "components.h"
 #include "camera.h"
+#include "menu.h"
+#include "spellbook.h"
 
 namespace UI {
 	

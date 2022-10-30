@@ -67,6 +67,7 @@ namespace Graphics {
 	SDL_Texture* itemBorderRare;
     SDL_Texture* itemBorderEite;
 	SDL_Texture* armorSpriteSheet;
+    SDL_Texture* spellbook;
 
 	SDL_Texture* tooltipBackground;
 	SDL_Texture* cow;
@@ -183,7 +184,7 @@ namespace Graphics {
 		icon_axe1 = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_axe1.png");
 		//longsword_default_icon = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_sword_long4.png");
 		itsmars_Inventory = createTexture("sprites/UI/itsmars_Inventory.png");
-		cursor_0 = createTexture("sprites/UI/cursor.png");
+		cursor_0 = createTexture("sprites/UI/cursors/cursor.png");
 
 
 		emptyBagIcon = createTexture("sprites/UI/icon_borders/bagsSot.png"); // currently NULL
@@ -201,7 +202,7 @@ namespace Graphics {
 
 		tooltipBackground = createTexture("sprites/UI/tooltips/tooltipBackground2.png");
 		cow = createTexture("sprites/units/animals/no_death_animation/cow/walk_sheet_192x192_8x8_alpha.png");
-
+        spellbook = createTexture("sprites/UI/spellbook/spellbook.png");
 
 		default_icon = createTexture("sprites/default.jpg");
 		defaultIcon = Create_Icon_Entity(zone, default_icon, Graphics::bagSlotBorder);

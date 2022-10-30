@@ -11,6 +11,7 @@
 #include "ai_control.h"
 #include "input_control.h"
 
+
 namespace Event_Handler {
 
 	/*I will make a component that will be pased to this funtion tree so the functions can do work on the position value of an entity "<velocity> <player_controllable>" */
@@ -77,10 +78,10 @@ namespace Event_Handler {
 					case SDLK_8: Rendering::RenderCullMode(World::zone); break;
 					case SDLK_9: AI::Turn_On();  break;
 					case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
-					case SDLK_ESCAPE: Graphics::closeContext();  break;
+                    case SDLK_ESCAPE: Menu::Toggle(); break;
 					case SDLK_PLUS: break;
 					case SDLK_MINUS: break;
-					case SDLK_p: Timer::Pause_Control();  break;
+                    case SDLK_p: UI_Spellbook::Toggle();  break;
 					case SDLK_i: UI::Bag_UI::Toggle_Bag();  break;
 					case SDLK_LALT: Items::showGroundItems = true;  break;
 					case SDLK_RALT: Items::showGroundItems = true;  break;

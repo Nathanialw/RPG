@@ -30,6 +30,7 @@ int main(int argc, char* argv[]) {
 	Maps::Create_Map();
 	Character_Stats::Init_UI(World::zone);
 	Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
+    UI_Spellbook::init();
 
 	while (Graphics::running == true) {
 
