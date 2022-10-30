@@ -29,7 +29,16 @@ namespace Entity_Loader {
 	}
 
 	void init_db() {
-		sqlite3_open("data.db", &db);
+        const char * db_filepath = "db/data.db";
+		int error = sqlite3_open(db_filepath, &db);
+        if(error){
+            //if error then display error and close connection
+            std::cout << "DB Open Error: " << sqlite3_errmsg(db) << std::endl;
+            sqlite3_close(db);
+        }
+        else {
+            std::cout << "Opened Database Successfully!" << std::endl;
+        }
 	}
 
 	Data parse_data(std::string name) {// needs to search for  a specific row that I can input in the arguments
