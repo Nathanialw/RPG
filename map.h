@@ -161,7 +161,7 @@ namespace Maps {
             }
             else {
                 zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
-                zone.emplace<Component::Sight_Range>(entity, position.x - (data.sight_radius / 2.0f), position.y - (data.sight_radius / 2.0f), data.sight_radius, data.sight_radius);
+                zone.emplace<Component::Sight_Range>(entity, data.sight_radius, position.x - (data.sight_radius / 2.0f), position.y - (data.sight_radius / 2.0f), data.sight_radius, data.sight_radius);
             }
         }
 

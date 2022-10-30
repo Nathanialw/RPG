@@ -42,13 +42,13 @@ int main(int argc, char* argv[]) {
 		//std::cout << "Player_Input = Good" << std::endl;
 		AI::Update_AI(World::zone);
 
-		//std::cout << "AI = Good" << std::endl;
-		Weapons::Update_Attacks(World::zone);
-
 		//std::cout << "Update_Attacks = Good" << std::endl;
 		Spells::Update_Spells();
 
-		//std::cout << "Update_Spells = Good" << std::endl;
+        //std::cout << "AI = Good" << std::endl;
+        Combat_Control::Update_Attacks(World::zone);
+
+        //std::cout << "Update_Spells = Good" << std::endl;
 		Movement::Update_Entity_Positions(World::zone);
 
 	//	Unit_Position::Update_Formation_Positions(World::zone);

@@ -362,8 +362,13 @@ namespace Component {
 	//AI
 
 	struct Sight_Range {
+        float range;
 		SDL_FRect sightBox;
 	};
+
+    struct Alert {
+        float sightRange;
+    };
 
 	struct Bag {
 		std::vector<entt::entity> bag;

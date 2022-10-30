@@ -5,16 +5,12 @@
 #include "ai_components.h"
 #include "entity_control.h"
 
-
 namespace AI {
     bool b_AI = true;
 
 	//check for targets periodically
 	//use the target x,y to move towards it
 	//if target is in range, melee attack
-
-
-
 	void Attack_Move(entt::registry &zone, entt::entity &entity_ID, entt::entity& target_ID, Position &entityPosition, Melee_Range &meleeRange, Position &targetPosition, Radius &targetRadius) { // maybe change to move and attack?
 		if (World::zone.any_of<Attacking>(entity_ID) == true) {
 			return;
@@ -72,12 +68,12 @@ namespace AI {
 	}
 
 	void Update_Sight_Box(entt::registry &zone) {
+        //could add Component::Moving so it only updates when the entity moves
 		auto view = zone.view<Component::Sight_Range, Component::Position, Component::Alive>();
 		for (auto entity : view) {
-			auto& sight = view.get<Component::Sight_Range>(entity).sightBox;
-			auto& x = view.get<Component::Position>(entity).x;
-			auto& y = view.get<Component::Position>(entity).y;
-			sight = { x - 250.0f, y - 250.0f, 500.0f, 500.0f };
+			auto& sight = view.get<Component::Sight_Range>(entity);
+			auto& position = view.get<Component::Position>(entity);
+			sight.sightBox = { position.x - (sight.range/2.0f), position.y - (sight.range/2.0f), sight.range, sight.range };
 		}
 	}
 
@@ -101,7 +97,6 @@ namespace AI {
                 Check_For_Targets(zone);
             }
 		}
-
 		Update_Combat(zone);
 	}
 }
