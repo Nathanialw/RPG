@@ -23,6 +23,8 @@ namespace Entity_Loader {
 			float x_offset_sprite = 0.0f;
 			float y_offset_sprite = 0.0f;
 			int body_type = 0;
+            int sprite_width = 128;
+            int sprite_height = 128;
 			std::string entity_class = "monster";
 		};
 
@@ -47,7 +49,7 @@ namespace Entity_Loader {
 		sqlite3_stmt* stmt;
 		char buf[300];
 
-		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, x_offset_sprite, y_offset_sprite, body_type FROM unit_data WHERE name = ";
+		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, x_offset_sprite, y_offset_sprite, body_type, sprite_width, sprite_height FROM unit_data WHERE name = ";
 
 		strcpy(buf, jj);
 		strcat(buf, name.c_str());
@@ -68,6 +70,8 @@ namespace Entity_Loader {
 			values.x_offset_sprite = (float)sqlite3_column_double(stmt, 10);
 			values.y_offset_sprite = (float)sqlite3_column_double(stmt, 11);
 			values.body_type = sqlite3_column_int(stmt, 12);
+            values.sprite_width = sqlite3_column_int(stmt, 13);
+            values.sprite_height = sqlite3_column_int(stmt, 14);
 		}
 
 		return values;

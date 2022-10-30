@@ -26,7 +26,6 @@ namespace Maps {
     int template_ID = 0;
     std::map<std::string, int> savedTemplate_IDs;
 
-
     // read name of the template object (it is already unique)
     // assign it an auto incrementented int
     // check if the object has already been assigned an int ID
@@ -44,7 +43,6 @@ namespace Maps {
         }
         std::cout << "failed to assign template key for: " << name << std::endl;
     }
-
 
     int Get_Existing_Template_ID (std::string &name, std::string &entity_class) {
         if (savedTemplate_IDs.count(name) == 0) {
@@ -65,9 +63,6 @@ namespace Maps {
         }
         std::cout << "failed to assign template key for: " << name << std::endl;
     }
-
-
-
 
     void Create_Entity(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, bool is_random, std::string &filepath) {
         auto entity = zone.create();
@@ -103,8 +98,6 @@ namespace Maps {
             data = Entity_Loader::parse_data(name);
         }
 
-
-
         // translates isometric position to world position
         float tileWidth = 128;
         float tileHeight = 64;
@@ -123,26 +116,42 @@ namespace Maps {
         zone.emplace<Component::Mass>(entity, data.mass);
         zone.emplace<Component::Alive>(entity, true);
         zone.emplace<Component::Sprite_Offset>(entity, data.x_offset_sprite, data.y_offset_sprite);
-        zone.emplace<Component::animation>(entity, Graphics::unitTextures[unit_ID]); /// need to load the texture nly once and pass the pointer intothis function
+        zone.emplace<Component::animation>(entity, Graphics::unitTextures[unit_ID]); /// need to load the texture only once and pass the pointer into that function
 
         //dynamic entities
         if (data.body_type == 1) {
             bool yes = true;
 
             Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, data.radius, data.mass, yes);
+            zone.emplace<Component::Actions>(entity, Component::idle);
+            auto &frame = zone.get<Component::Actions>(entity).frameCount = { {0, 0}, { 4, 0}, {7, 0}, {4, 0}, {4,0}, {2,0}, {5,0}, {4,0} };
 
+            int width0 = frame[0].NumFrames * data.sprite_width;
+            int width1 = frame[1].NumFrames * data.sprite_width;
+            int width2 = (frame[2].NumFrames + 1) * data.sprite_width;
+            int width3 = frame[3].NumFrames * data.sprite_width;
+            int width4 = frame[4].NumFrames * data.sprite_width;
+            int width5 = frame[5].NumFrames * data.sprite_width;
+            int width6 = (frame[6].NumFrames + 1) * data.sprite_width;
+            int width7 = frame[7].NumFrames * data.sprite_width;
+
+            int start0 = width0;
+            int start1 = start0 + width1;
+            int start2 = start1 + width2;
+            int start3 = start2 + width3;
+            int start4 = start3 + width4;
+            int start5 = start4 + width5;
+            int start6 = start5 + width6;
             zone.get<Component::animation>(entity).sheet = { //populate the vector
                 { NULL },
-                { {0   , 0, 128, 128}, 0,    512,  1, 0, 75.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms}
-                { {512,  0, 128, 128}, 512,  1024, 0, 0, 75.0f, 0.0f},//walk
-                { {1536, 0, 128, 128}, 1536, 512,  0, 0, 75.0f, 0.0f},//atack
-                { {2048, 0, 128, 128}, 2048, 512,  0, 0, 75.0f, 0.0f},//cast
-                { {2560, 0, 128, 128}, 2560, 256,  0, 0, 75.0f, 0.0f},//block
-                { {2816, 0, 128, 128}, 2816, 768,  0, 0, 75.0f, 0.0f}, //reverse to summon
-                { {3584, 0, 128, 128}, 3584, 512,  1, 0, 75.0f, 0.0f},//ranged
+                { {start0, 0, data.sprite_width, data.sprite_height}, start0, width1,  1, 0, 75.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms}
+                { {start1, 0, data.sprite_width, data.sprite_height}, start1, width2,  0, 0, 75.0f, 0.0f},//walk
+                { {start2, 0, data.sprite_width, data.sprite_height}, start2, width3,  0, 0, 75.0f, 0.0f},//atack
+                { {start3, 0, data.sprite_width, data.sprite_height}, start3, width4,  0, 0, 75.0f, 0.0f},//cast
+                { {start4, 0, data.sprite_width, data.sprite_height}, start4, width5,  0, 0, 75.0f, 0.0f},//block
+                { {start5, 0, data.sprite_width, data.sprite_height}, start5, width6,  0, 0, 75.0f, 0.0f}, //reverse to summon
+                { {start6, 0, data.sprite_width, data.sprite_height}, start6, width7,  1, 0, 75.0f, 0.0f},//ranged
             };
-            zone.emplace<Component::Actions>(entity, Component::idle);
-            zone.get<Component::Actions>(entity).frameCount = { {0, 0}, { 4, 0}, {7, 0}, {4, 0}, {4,0}, {2,0}, {5,0}, {4,0} };
 
             zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);
             zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0);
@@ -169,22 +178,14 @@ namespace Maps {
         else if (data.body_type == 0) {
             Collision::Create_Static_Body(zone, entity, position.x, position.y, data.radius);
             zone.get<Component::animation>(entity).sheet = {  //populate the vector
-                {{ 0, 0, 631, 723}, 0, 631, 0, 0, 16.0f, 0.0f }
+                {{ 0, 0, data.sprite_width, data.sprite_height}, 0, data.sprite_width, 0, 0, 16.0f, 0.0f }
             };
             zone.emplace<Actions>(entity, isStatic);
             zone.get<Actions>(entity).frameCount = { { 0, 0} };
 
             zone.emplace<Component::Entity_Type>(entity, Entity_Type::foliage);
-
         }
-
-
     }
-
-
-
-
-
 
     // read the map data and import it into the data structures
     void Create_Map() {
@@ -230,14 +231,9 @@ namespace Maps {
                         std::string entity_class = object.getClass();
 
                         bool is_random = false;
-
-
                         for (auto i : object.getProperties()) {
                             is_random = i.getBoolValue();
                         }
-
-
-
                         //if it is random it needs to grab a name from a unit that was already loaded into graphics or default to a default unit name
                         //get an array of all the potential names, check each on against teh std::map of graphics, keep all the ones already there and pick a random one
                         //if (is_random == false ) {}

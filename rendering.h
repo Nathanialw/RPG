@@ -177,8 +177,8 @@ namespace Rendering {
 			SDL_SetTextureAlphaMod(anim.pTexture, alpha);
 
 			Graphics::Render_FRect(anim.pTexture, &anim.clipSprite, &anim.renderPosition);
-			if (showSpriteBox) {
-				//SDL_RenderDrawRect(Graphics::renderer, &anim.renderPosition);
+			if (1) {
+				SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
 			}
 
 		}

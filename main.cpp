@@ -16,6 +16,7 @@
 #include "character_stats.h"
 #include "map.h"
 #include "texture_packer.h"
+#include "sounds.h"
 
 int main(int argc, char* argv[]) {
 
@@ -25,6 +26,7 @@ int main(int argc, char* argv[]) {
 	Collision::init_Collison();
 	Init::init();
 	Graphics::createGraphicsContext(World::zone);
+    Sounds::init ();
 	Init_Zone(World::zone);
 	update_scene(); //tries to add new environment objects and terrain the the world grid every frame
 	Maps::Create_Map();
