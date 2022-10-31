@@ -110,19 +110,18 @@ namespace Maps {
         auto& position = zone.emplace<Component::Position>(entity, x, y);
         auto& scale = zone.emplace<Component::Scale>(entity, data.scale);
 
-        zone.emplace<Component::Radius>(entity, data.radius);
+        auto &radius = zone.emplace<Component::Radius>(entity, data.radius * data.scale);
         zone.emplace<Component::Direction>(entity, Component::Direction::N);
         zone.emplace<Component::handle>(entity, name);
         zone.emplace<Component::Mass>(entity, data.mass);
         zone.emplace<Component::Alive>(entity, true);
-        zone.emplace<Component::Sprite_Offset>(entity, data.x_offset_sprite, data.y_offset_sprite);
+        zone.emplace<Component::Sprite_Offset>(entity, data.x_offset_sprite * data.scale, data.y_offset_sprite * data.scale);
         zone.emplace<Component::animation>(entity, Graphics::unitTextures[unit_ID]); /// need to load the texture only once and pass the pointer into that function
 
         //dynamic entities
         if (data.body_type == 1) {
             bool yes = true;
-
-            Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, data.radius, data.mass, yes);
+            Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius, data.mass, yes);
             zone.emplace<Component::Actions>(entity, Component::idle);
             auto &frame = zone.get<Component::Actions>(entity).frameCount = { {0, 0}, { 4, 0}, {7, 0}, {4, 0}, {4,0}, {2,0}, {5,0}, {4,0} };
 

@@ -127,7 +127,7 @@ namespace Rendering {
 	}
 
 
-	SDL_FRect Scale_Sprite_for_Render(SDL_Rect& clippedSprite, const float& scale) {
+	SDL_FRect Scale_Sprite_for_Render(SDL_Rect& clippedSprite, float& scale) {
 		SDL_FRect fScaledImage = Utilities::SDL_Rect_To_SDL_FRect(clippedSprite);
 		fScaledImage = {
 			fScaledImage.x - (fScaledImage.w * scale),
@@ -158,6 +158,9 @@ namespace Rendering {
 			auto& spriteOffset = view1.get<Sprite_Offset>(entity).offset;
 			//only fire this at 60 frames/sec
 			anim.sheet[act.action].currentFrameTime += Timer::timeStep;
+//            if (anim.renderPosition.w == 96) {
+//                Utilities::Log("yeah");
+//            }
 			if (anim.sheet[act.action].currentFrameTime >= anim.sheet[act.action].timeBetweenFrames) {
 				anim.sheet[act.action].currentFrameTime = 0;
 				xClipPos = Frame_Update(anim.sheet[act.action], d, act);//get action and direction state sprite draw from
@@ -175,6 +178,8 @@ namespace Rendering {
 			}
 			//fade rendering objects at bottom of screen
 			SDL_SetTextureAlphaMod(anim.pTexture, alpha);
+
+            //SDL_FRect renderRect = Scale_Sprite_for_Render(, scale);
 
 			Graphics::Render_FRect(anim.pTexture, &anim.clipSprite, &anim.renderPosition);
 			if (1) {

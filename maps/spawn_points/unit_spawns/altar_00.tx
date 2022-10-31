@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../sprite_sheets/ground_objects/Altar.tsx"/>
+ <object name="'tree_01_00'" gid="1" width="160" height="160"/>
+</template>
