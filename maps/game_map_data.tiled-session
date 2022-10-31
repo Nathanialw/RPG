@@ -197,13 +197,16 @@
             "scaleInEditor": 1
         },
         "sprite_sheets/units/skeleton_00.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "sprite_sheets/units/skeleton_mage_00.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "sprite_sheets/units/skeleton_occultist_00.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "sprite_sheets/units/troll_00.tsx": {
             "scaleInDock": 1,
@@ -237,7 +240,7 @@
         }
     },
     "last.externalTilesetPath": "/home/nathanial/Workspace/RPG_game/maps/sprite_sheets/ground_objects",
-    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/monsters/orcs",
+    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/demons",
     "last.objectTemplatePath": "/home/nathanial/Workspace/RPG_game/maps/spawn_points/unit_spawns",
     "map.height": 1024,
     "map.layerDataFormat": null,
@@ -249,6 +252,10 @@
     "project": "game_map_data.tiled-project",
     "property.type": "int",
     "recentFiles": [
+        "sprite_sheets/units/skeleton_occultist_00.tsx",
+        "sprite_sheets/units/skeleton_mage_00.tsx",
+        "sprite_sheets/units/skeleton_00.tsx",
+        "sprite_sheets/units/armoured_skeleton_00.tsx",
         "sprite_sheets/units/orc_heavy_01.tsx",
         "sprite_sheets/units/orc_elite_00.tsx",
         "sprite_sheets/units/orc_archer_00.tsx",
@@ -256,16 +263,12 @@
         "sprite_sheets/units/Bow_Hobgoblin_00.tsx",
         "untitled3.tmx",
         "sprite_sheets/units/zombie_00.tsx",
-        "sprite_sheets/units/troll_00.tsx",
-        "sprite_sheets/units/goblin_spearman_00.tsx",
-        "sprite_sheets/ground_tiles/KQzUCJ9y_4x.tsx",
-        "sprite_sheets/ground_objects/Altar.tsx",
-        "sprite_sheets/units/armoured_skeleton_00.tsx"
+        "sprite_sheets/units/troll_00.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
-        "height": 128,
-        "width": 128
+        "height": 400,
+        "width": 400
     },
     "tileset.type": 0
 }

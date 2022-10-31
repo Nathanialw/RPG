@@ -64,6 +64,18 @@ namespace Maps {
         std::cout << "failed to assign template key for: " << name << std::endl;
     }
 
+    bool idlerev  = false;
+    bool walkrev  = false;
+    bool attrev   = false;
+    bool castrev  = false;
+    bool blockrev = false;
+    bool rangedrev = false;
+    bool deathrev = false;
+
+    void check (Entity_Loader::Data data) {
+
+    }
+
     void Create_Entity(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, bool is_random, std::string &filepath) {
         auto entity = zone.create();
         Entity_Loader::Data data;
@@ -123,7 +135,47 @@ namespace Maps {
             bool yes = true;
             Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius, data.mass, yes);
             zone.emplace<Component::Actions>(entity, Component::idle);
-            auto &frame = zone.get<Component::Actions>(entity).frameCount = { {0, 0}, { 4, 0}, {7, 0}, {4, 0}, {4,0}, {2,0}, {5,0}, {4,0} };
+
+            if (data.idle_frames > 100) {
+                data.idle_frames -= 100;
+                idlerev = true;
+            }
+
+            if (data.walk_frames > 100) {
+                data.walk_frames -= 100;
+                walkrev = true;
+            }
+            if (data.attack_frames > 100) {
+                data.attack_frames -= 100;
+                attrev = true;
+            }
+            if (data.cast_frames > 100) {
+                data.cast_frames -= 100;
+                castrev = true;
+            }
+            if (data.block_frames > 100) {
+                data.block_frames -= 100;
+                blockrev = true;
+            }
+            if (data.death_frames > 100) {
+                data.death_frames -= 100;
+                deathrev = true;
+            }
+            if (data.ranged_frames > 100) {
+                data.ranged_frames -= 100;
+                rangedrev = true;
+            }
+            
+            auto &frame = zone.get<Component::Actions>(entity).frameCount = {
+                {0,0},
+                {data.idle_frames,0},
+                {data.walk_frames,0},
+                {data.attack_frames,0},
+                {data.cast_frames,0},
+                {data.block_frames,0},
+                {data.death_frames,0},
+                {data.ranged_frames,0}
+            };
 
             int width0 = frame[0].NumFrames * data.sprite_width;
             int width1 = frame[1].NumFrames * data.sprite_width;
@@ -143,13 +195,13 @@ namespace Maps {
             int start6 = start5 + width6;
             zone.get<Component::animation>(entity).sheet = { //populate the vector
                 { NULL },
-                { {start0, 0, data.sprite_width, data.sprite_height}, start0, width1,  1, 0, 75.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms}
-                { {start1, 0, data.sprite_width, data.sprite_height}, start1, width2,  0, 0, 75.0f, 0.0f},//walk
-                { {start2, 0, data.sprite_width, data.sprite_height}, start2, width3,  0, 0, 75.0f, 0.0f},//atack
-                { {start3, 0, data.sprite_width, data.sprite_height}, start3, width4,  0, 0, 75.0f, 0.0f},//cast
-                { {start4, 0, data.sprite_width, data.sprite_height}, start4, width5,  0, 0, 75.0f, 0.0f},//block
-                { {start5, 0, data.sprite_width, data.sprite_height}, start5, width6,  0, 0, 75.0f, 0.0f}, //reverse to summon
-                { {start6, 0, data.sprite_width, data.sprite_height}, start6, width7,  1, 0, 75.0f, 0.0f},//ranged
+                { {start0, 0, data.sprite_width, data.sprite_height}, start0, width1,  idlerev , 0, 100.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms}
+                { {start1, 0, data.sprite_width, data.sprite_height}, start1, width2,  walkrev , 0, 100.0f, 0.0f},//walk
+                { {start2, 0, data.sprite_width, data.sprite_height}, start2, width3,  attrev  , 0, 100.0f, 0.0f},//atack
+                { {start3, 0, data.sprite_width, data.sprite_height}, start3, width4,  castrev , 0, 100.0f, 0.0f},//cast
+                { {start4, 0, data.sprite_width, data.sprite_height}, start4, width5,  blockrev, 0, 100.0f, 0.0f},//block
+                { {start5, 0, data.sprite_width, data.sprite_height}, start5, width6,  deathrev, 0, 100.0f, 0.0f},//death/reverse to summon
+                { {start6, 0, data.sprite_width, data.sprite_height}, start6, width7,  rangedrev, 0, 100.0f, 0.0f},//ranged
             };
 
             zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);

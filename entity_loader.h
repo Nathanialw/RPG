@@ -8,8 +8,7 @@ namespace Entity_Loader {
 	namespace {
 		sqlite3* db;
 
-
-		struct Data {
+        struct Data {
 			float radius = 0.0f;
 			float speed = 0.0f;
 			float mass = 0.0f;
@@ -25,6 +24,13 @@ namespace Entity_Loader {
 			int body_type = 0;
             int sprite_width = 128;
             int sprite_height = 128;
+            int idle_frames = 0;
+            int walk_frames = 0;
+            int attack_frames = 0;
+            int block_frames = 0;
+            int cast_frames = 0;
+            int death_frames = 0;
+            int ranged_frames = 0;
 			std::string entity_class = "monster";
 		};
 
@@ -47,9 +53,9 @@ namespace Entity_Loader {
 		//check if the name exists??
 		Data values;
 		sqlite3_stmt* stmt;
-		char buf[300];
+		char buf[400];
 
-		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, x_offset_sprite, y_offset_sprite, body_type, sprite_width, sprite_height FROM unit_data WHERE name = ";
+		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, x_offset_sprite, y_offset_sprite, body_type, sprite_width, sprite_height, idle_frames, walk_frames, attack_frames, cast_frames, block_frames, death_frames, ranged_frames FROM unit_data WHERE name = ";
 
 		strcpy(buf, jj);
 		strcat(buf, name.c_str());
@@ -72,6 +78,13 @@ namespace Entity_Loader {
 			values.body_type = sqlite3_column_int(stmt, 12);
             values.sprite_width = sqlite3_column_int(stmt, 13);
             values.sprite_height = sqlite3_column_int(stmt, 14);
+            values.idle_frames = sqlite3_column_int(stmt, 15);
+            values.walk_frames = sqlite3_column_int(stmt, 16);
+            values.attack_frames = sqlite3_column_int(stmt, 17);
+            values.block_frames = sqlite3_column_int(stmt, 18);
+            values.cast_frames = sqlite3_column_int(stmt, 19);
+            values.death_frames = sqlite3_column_int(stmt, 20);
+            values.ranged_frames = sqlite3_column_int(stmt, 21);
 		}
 
 		return values;

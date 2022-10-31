@@ -55,17 +55,10 @@ namespace Rendering {
 	}
 
 	SDL_Rect Frame_Update(spriteframes& spritesheet, Direction& direction, Actions& act) {
-
 		SDL_Rect frame = spritesheet.clip;
-
 		int direcitonIndex = Original_Direction_Enum(direction);
 		if (act.action != isStatic) {
-
-
-
-
 			frame.y = frame.h * direcitonIndex; //check which directioon is facing then change clip.y to sprite height x direction enum
-
 			if (frame.x > spritesheet.frameStart + spritesheet.sheetWidth - frame.w) {
 				frame.x = spritesheet.frameStart;
 			}
@@ -81,7 +74,6 @@ namespace Rendering {
 						return frame;
 					}
 				}
-
 				if (spritesheet.bReversable) {
 					if (spritesheet.bReversing == true) {
 						frame.x += (frame.w * act.frameCount[act.action].currentFrame);
@@ -98,7 +90,6 @@ namespace Rendering {
 					return frame;
 					}
 				}
-
 				if (!spritesheet.bReversable) {
 					frame.x += (frame.w * act.frameCount[act.action].currentFrame);
 					//std::cout << "forward :" << x.x << std::endl;
@@ -183,7 +174,7 @@ namespace Rendering {
 
 			Graphics::Render_FRect(anim.pTexture, &anim.clipSprite, &anim.renderPosition);
 			if (1) {
-				SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
+				//SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
 			}
 
 		}
