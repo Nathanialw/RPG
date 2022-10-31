@@ -233,14 +233,20 @@ namespace Maps {
                         for (auto i : object.getProperties()) {
                             is_random = i.getBoolValue();
                         }
+
+
+
                         //if it is random it needs to grab a name from a unit that was already loaded into graphics or default to a default unit name
                         //get an array of all the potential names, check each on against teh std::map of graphics, keep all the ones already there and pick a random one
                         //if (is_random == false ) {}
                         std::string texture = object.getTilesetName();
+
                         auto &ff = map.getTemplateTilesets();
                         texture = ff.at(texture).getImagePath();
                         texture.erase(0, 5);
-
+                        if (texture == "") {
+                            Utilities::Log("asds");
+                        }
                         Create_Entity(World::zone, position.x, position.y, name, entity_class, is_random, texture);
                     };
                     //}

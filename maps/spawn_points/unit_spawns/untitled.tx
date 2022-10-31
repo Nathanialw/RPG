@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<template>
- <tileset firstgid="1" source="../../sprite_sheets/ground_objects/Infernus.tsx"/>
- <object gid="447" width="160" height="160"/>
-</template>
