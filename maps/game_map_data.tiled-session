@@ -5,26 +5,26 @@
     },
     "activeFile": "untitled3.tmx",
     "expandedProjectPaths": [
-        "sprites/environment",
-        "maps/sprite_sheets",
-        "sprite_sheets/ground_objects",
+        "maps/sprites/environment",
+        "maps/spawn_points",
+        "maps/sprites/units/animals",
         "maps/spawn_points/unit_spawns",
+        "maps/sprite_sheets/ground_tiles",
+        "sprite_sheets/units",
+        "spawn_points/unit_spawns",
+        "maps/sprite_sheets",
+        "spawn_points",
+        "maps/sprite_sheets/units",
+        "maps/sprites/units/animals/no_death_animation",
         ".",
+        "maps/sprites/units/animals/no_death_animation/cow",
+        "sprites/environment",
         "sprite_sheets",
-        "packages/sqlite3_c_plus_plus.1.0.3/build",
         "sprites/environment/path_tiles/Large 256x128",
         "maps",
-        "maps/sprites/environment",
-        "maps/sprites/units/animals/no_death_animation/cow",
-        "maps/sprite_sheets/ground_tiles",
-        "spawn_points/unit_spawns",
-        "sprite_sheets/ground_tiles",
-        "maps/sprites/units/animals",
-        "sprite_sheets/units",
-        "maps/sprite_sheets/units",
-        "maps/spawn_points",
-        "spawn_points",
-        "maps/sprites/units/animals/no_death_animation"
+        "packages/sqlite3_c_plus_plus.1.0.3/build",
+        "sprite_sheets/ground_objects",
+        "sprite_sheets/ground_tiles"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -169,6 +169,7 @@
             "scaleInEditor": 0.12
         },
         "sprite_sheets/units/Bow_Hobgoblin_00.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/armoured_skeleton_00.tsx": {
@@ -179,6 +180,14 @@
         "sprite_sheets/units/cow_00.tsx": {
             "scaleInDock": 1
         },
+        "sprite_sheets/units/demon.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "sprite_sheets/units/ghoul_00.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "sprite_sheets/units/goblin_spearman_00.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -188,13 +197,19 @@
             "scaleInEditor": 1
         },
         "sprite_sheets/units/orc_archer_00.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/orc_elite_00.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/orc_heavy_01.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "sprite_sheets/units/orc_regular_00.tsx": {
+            "scaleInDock": 1
         },
         "sprite_sheets/units/skeleton_00.tsx": {
             "scaleInDock": 1,
@@ -234,24 +249,28 @@
             "scale": 0.33,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 24889.393939393936,
-                "y": 19416.666666666664
+                "x": 25239.393939393936,
+                "y": 18962.121212121212
             }
         }
     },
     "last.externalTilesetPath": "/home/nathanial/Workspace/RPG_game/maps/sprite_sheets/ground_objects",
-    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/demons",
+    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/undead/zombie",
     "last.objectTemplatePath": "/home/nathanial/Workspace/RPG_game/maps/spawn_points/unit_spawns",
     "map.height": 1024,
     "map.layerDataFormat": null,
     "map.orientation": null,
     "map.width": 1024,
     "openFiles": [
-        "untitled3.tmx"
+        "untitled3.tmx",
+        "sprite_sheets/units/ghoul_00.tsx"
     ],
     "project": "game_map_data.tiled-project",
     "property.type": "int",
     "recentFiles": [
+        "sprite_sheets/units/ghoul_00.tsx",
+        "untitled3.tmx",
+        "sprite_sheets/units/demon.tsx",
         "sprite_sheets/units/skeleton_occultist_00.tsx",
         "sprite_sheets/units/skeleton_mage_00.tsx",
         "sprite_sheets/units/skeleton_00.tsx",
@@ -260,15 +279,12 @@
         "sprite_sheets/units/orc_elite_00.tsx",
         "sprite_sheets/units/orc_archer_00.tsx",
         "sprite_sheets/units/grey_werebear_00.tsx",
-        "sprite_sheets/units/Bow_Hobgoblin_00.tsx",
-        "untitled3.tmx",
-        "sprite_sheets/units/zombie_00.tsx",
-        "sprite_sheets/units/troll_00.tsx"
+        "sprite_sheets/units/Bow_Hobgoblin_00.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
-        "height": 400,
-        "width": 400
+        "height": 160,
+        "width": 160
     },
     "tileset.type": 0
 }

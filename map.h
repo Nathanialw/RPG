@@ -10,7 +10,7 @@
 #include "entity_loader.h"
 #include "collision.h"
 #include "sprite_sheets.h"
-
+#include "sprite_sheets.h"
 //cell 100x100 pixels (change pixels to a meters??)
 //map 100 cells x 100 cells
 
@@ -64,18 +64,6 @@ namespace Maps {
         std::cout << "failed to assign template key for: " << name << std::endl;
     }
 
-    bool idlerev  = false;
-    bool walkrev  = false;
-    bool attrev   = false;
-    bool castrev  = false;
-    bool blockrev = false;
-    bool rangedrev = false;
-    bool deathrev = false;
-
-    void check (Entity_Loader::Data data) {
-
-    }
-
     void Create_Entity(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, bool is_random, std::string &filepath) {
         auto entity = zone.create();
         Entity_Loader::Data data;
@@ -109,6 +97,13 @@ namespace Maps {
             Graphics::Create_Game_Object(unit_ID, filepath.c_str());
             data = Entity_Loader::parse_data(name);
         }
+        if (name == "'player'") {
+
+            Utilities::Log("yeah");
+        }
+        std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
+        //std::cout << "name: " << name << ", sheet name:" << sheetname << std::endl;
+        Sprite_Sheet::sheetData sheetData = Sprite_Sheet::Assign (sheetname);
 
         // translates isometric position to world position
         float tileWidth = 128;
@@ -127,83 +122,58 @@ namespace Maps {
         zone.emplace<Component::handle>(entity, name);
         zone.emplace<Component::Mass>(entity, data.mass);
         zone.emplace<Component::Alive>(entity, true);
-        zone.emplace<Component::Sprite_Offset>(entity, data.x_offset_sprite * data.scale, data.y_offset_sprite * data.scale);
+        zone.emplace<Component::Sprite_Offset>(entity, sheetData.x_offset * data.scale, sheetData.y_offset * data.scale);
         zone.emplace<Component::animation>(entity, Graphics::unitTextures[unit_ID]); /// need to load the texture only once and pass the pointer into that function
 
         //dynamic entities
         if (data.body_type == 1) {
             bool yes = true;
             Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius, data.mass, yes);
-            zone.emplace<Component::Actions>(entity, Component::idle);
+            std::vector<Component::Frame_Data> frameVector = {
+                {sheetData.isStatic.numFrames ,0},
+                {sheetData.idle.numFrames ,0},
+                {sheetData.walk.numFrames ,0},
+                {sheetData.run.numFrames ,0},
+                {sheetData.attack.numFrames ,0},
+                {sheetData.attack2.numFrames ,0},
+                {sheetData.cast.numFrames ,0},
+                {sheetData.struck.numFrames ,0},
+                {sheetData.block.numFrames ,0},
+                {sheetData.evade.numFrames ,0},
+                {sheetData.stunned.numFrames ,0},
+                {sheetData.dead.numFrames ,0},
+                {sheetData.low_hp.numFrames ,0},
+                {sheetData.resting.numFrames ,0},
+                {sheetData.ranged.numFrames ,0},
+                {sheetData.cheer.numFrames ,0},
+                {sheetData.behavior.numFrames ,0},
+                {sheetData.summoned.numFrames ,0}
+            };;
 
-            if (data.idle_frames > 100) {
-                data.idle_frames -= 100;
-                idlerev = true;
-            }
+            zone.emplace<Component::Actions>(entity, Component::idle, frameVector);
 
-            if (data.walk_frames > 100) {
-                data.walk_frames -= 100;
-                walkrev = true;
-            }
-            if (data.attack_frames > 100) {
-                data.attack_frames -= 100;
-                attrev = true;
-            }
-            if (data.cast_frames > 100) {
-                data.cast_frames -= 100;
-                castrev = true;
-            }
-            if (data.block_frames > 100) {
-                data.block_frames -= 100;
-                blockrev = true;
-            }
-            if (data.death_frames > 100) {
-                data.death_frames -= 100;
-                deathrev = true;
-            }
-            if (data.ranged_frames > 100) {
-                data.ranged_frames -= 100;
-                rangedrev = true;
-            }
-            
-            auto &frame = zone.get<Component::Actions>(entity).frameCount = {
-                {0,0},
-                {data.idle_frames,0},
-                {data.walk_frames,0},
-                {data.attack_frames,0},
-                {data.cast_frames,0},
-                {data.block_frames,0},
-                {data.death_frames,0},
-                {data.ranged_frames,0}
-            };
+            //std::cout << frame.size() << std::endl;
 
-            int width0 = frame[0].NumFrames * data.sprite_width;
-            int width1 = frame[1].NumFrames * data.sprite_width;
-            int width2 = (frame[2].NumFrames + 1) * data.sprite_width;
-            int width3 = frame[3].NumFrames * data.sprite_width;
-            int width4 = frame[4].NumFrames * data.sprite_width;
-            int width5 = frame[5].NumFrames * data.sprite_width;
-            int width6 = (frame[6].NumFrames + 1) * data.sprite_width;
-            int width7 = frame[7].NumFrames * data.sprite_width;
-
-            int start0 = width0;
-            int start1 = start0 + width1;
-            int start2 = start1 + width2;
-            int start3 = start2 + width3;
-            int start4 = start3 + width4;
-            int start5 = start4 + width5;
-            int start6 = start5 + width6;
             zone.get<Component::animation>(entity).sheet = { //populate the vector
-                { NULL },
-                { {start0, 0, data.sprite_width, data.sprite_height}, start0, width1,  idlerev , 0, 100.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms}
-                { {start1, 0, data.sprite_width, data.sprite_height}, start1, width2,  walkrev , 0, 100.0f, 0.0f},//walk
-                { {start2, 0, data.sprite_width, data.sprite_height}, start2, width3,  attrev  , 0, 100.0f, 0.0f},//atack
-                { {start3, 0, data.sprite_width, data.sprite_height}, start3, width4,  castrev , 0, 100.0f, 0.0f},//cast
-                { {start4, 0, data.sprite_width, data.sprite_height}, start4, width5,  blockrev, 0, 100.0f, 0.0f},//block
-                { {start5, 0, data.sprite_width, data.sprite_height}, start5, width6,  deathrev, 0, 100.0f, 0.0f},//death/reverse to summon
-                { {start6, 0, data.sprite_width, data.sprite_height}, start6, width7,  rangedrev, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.isStatic.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.isStatic.firstFrame * sheetData.w, sheetData.isStatic.numFrames * sheetData.w,  sheetData.isStatic.reverses, 0, 100.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms} },
+                { {sheetData.idle.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.idle.firstFrame * sheetData.w, sheetData.idle.numFrames * sheetData.w,  sheetData.idle.reverses, 0, 100.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms}
+                { {sheetData.walk.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.walk.firstFrame * sheetData.w, sheetData.walk.numFrames * sheetData.w,  sheetData.walk.reverses, 0, 100.0f, 0.0f},//walk
+                { {sheetData.run.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.run.firstFrame * sheetData.w, sheetData.run.numFrames * sheetData.w,  sheetData.run.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.attack.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.attack.firstFrame * sheetData.w, sheetData.attack.numFrames * sheetData.w,  sheetData.attack.reverses, 0, 100.0f, 0.0f},//atack
+                { {sheetData.attack2.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.attack2.firstFrame * sheetData.w, sheetData.attack2.numFrames * sheetData.w,  sheetData.attack2.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.cast.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.cast.firstFrame * sheetData.w, sheetData.cast.numFrames * sheetData.w,  sheetData.cast.reverses, 0, 100.0f, 0.0f},//cast
+                { {sheetData.struck.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.struck.firstFrame * sheetData.w, sheetData.struck.numFrames * sheetData.w,  sheetData.struck.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.block.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.block.firstFrame * sheetData.w, sheetData.block.numFrames * sheetData.w, sheetData.block.reverses, 0, 100.0f, 0.0f},//block
+                { {sheetData.evade.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.evade.firstFrame * sheetData.w, sheetData.evade.numFrames * sheetData.w,  sheetData.evade.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.stunned.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.stunned.firstFrame * sheetData.w, sheetData.stunned.numFrames * sheetData.w,  sheetData.stunned.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.dead.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.dead.firstFrame * sheetData.w, sheetData.dead.numFrames * sheetData.w,  sheetData.dead.reverses, 0, 100.0f, 0.0f},//death/reverse to summon
+                { {sheetData.low_hp.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.low_hp.firstFrame * sheetData.w, sheetData.low_hp.numFrames * sheetData.w,  sheetData.low_hp.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.resting.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.resting.firstFrame * sheetData.w, sheetData.resting.numFrames * sheetData.w,  sheetData.resting.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.ranged.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.ranged.firstFrame * sheetData.w, sheetData.ranged.numFrames * sheetData.w,  sheetData.ranged.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.cheer.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.cheer.firstFrame * sheetData.w, sheetData.cheer.numFrames * sheetData.w,  sheetData.cheer.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.behavior.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.behavior.firstFrame * sheetData.w, sheetData.behavior.numFrames * sheetData.w,  sheetData.behavior.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.summoned.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.summoned.firstFrame * sheetData.w, sheetData.summoned.numFrames * sheetData.w,  sheetData.summoned.reverses, 0, 100.0f, 0.0f},//ranged
             };
-
             zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);
             zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0);
             zone.emplace<Component::Velocity>(entity, 0.f, 0.0f, 0.f, 0.0f, data.speed);
@@ -229,7 +199,7 @@ namespace Maps {
         else if (data.body_type == 0) {
             Collision::Create_Static_Body(zone, entity, position.x, position.y, data.radius);
             zone.get<Component::animation>(entity).sheet = {  //populate the vector
-                {{ 0, 0, data.sprite_width, data.sprite_height}, 0, data.sprite_width, 0, 0, 16.0f, 0.0f }
+                {{ 0, 0, sheetData.h, sheetData.h}, 0, sheetData.w, 0, 0, 16.0f, 0.0f }
             };
             zone.emplace<Actions>(entity, isStatic);
             zone.get<Actions>(entity).frameCount = { { 0, 0} };
@@ -285,9 +255,6 @@ namespace Maps {
                         for (auto i : object.getProperties()) {
                             is_random = i.getBoolValue();
                         }
-
-
-
                         //if it is random it needs to grab a name from a unit that was already loaded into graphics or default to a default unit name
                         //get an array of all the potential names, check each on against teh std::map of graphics, keep all the ones already there and pick a random one
                         //if (is_random == false ) {}

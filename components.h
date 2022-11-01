@@ -92,13 +92,21 @@ namespace Component {
 		isStatic,
 		idle,
 		walk,
+        run,
 		attack,
+        attack2,
 		cast,
 		struck,
+        block,
+        evade,
+        stunned,
 		dead,
+        low_hp,
+        resting,
 		ranged,
 		cheer,
-		summon
+        behavior,
+		summoned
 	};
 
 

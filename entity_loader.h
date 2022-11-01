@@ -1,12 +1,13 @@
 #pragma once
 #include <iostream>
 #include <SDL2/SDL.h>
-#include "sqlite3.h"
+#include "db.h"
 #include <string.h>
+#include "stdio.h"
 
 namespace Entity_Loader {
 	namespace {
-		sqlite3* db;
+
 
         struct Data {
 			float radius = 0.0f;
@@ -19,30 +20,20 @@ namespace Entity_Loader {
 			int attack_speed = 0;
 			float sight_radius = 0.0f;
 			float scale = 0.0f;
-			float x_offset_sprite = 0.0f;
-			float y_offset_sprite = 0.0f;
-			int body_type = 0;
-            int sprite_width = 128;
-            int sprite_height = 128;
-            int idle_frames = 0;
-            int walk_frames = 0;
-            int attack_frames = 0;
-            int block_frames = 0;
-            int cast_frames = 0;
-            int death_frames = 0;
-            int ranged_frames = 0;
+			int body_type = 2;
 			std::string entity_class = "monster";
+            std::string sheet = "none";
 		};
 
 	}
 
 	void init_db() {
         const char * db_filepath = "db/data.db";
-		int error = sqlite3_open(db_filepath, &db);
+		int error = sqlite3_open(db_filepath, &db::db);
         if(error){
             //if error then display error and close connection
-            std::cout << "DB Open Error: " << sqlite3_errmsg(db) << std::endl;
-            sqlite3_close(db);
+            std::cout << "DB Open Error: " << sqlite3_errmsg(db::db) << std::endl;
+            sqlite3_close(db::db);
         }
         else {
             std::cout << "Opened Database Successfully!" << std::endl;
@@ -54,13 +45,14 @@ namespace Entity_Loader {
 		Data values;
 		sqlite3_stmt* stmt;
 		char buf[400];
+        const unsigned char* spriteSheet;
 
-		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, x_offset_sprite, y_offset_sprite, body_type, sprite_width, sprite_height, idle_frames, walk_frames, attack_frames, cast_frames, block_frames, death_frames, ranged_frames FROM unit_data WHERE name = ";
+		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type FROM unit_data WHERE name = ";
 
 		strcpy(buf, jj);
 		strcat(buf, name.c_str());
 
-		sqlite3_prepare_v2(db, buf, -1, &stmt, 0);
+		sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
 
 		while (sqlite3_step(stmt) != SQLITE_DONE) {
 			values.radius = (float)sqlite3_column_double(stmt, 0); //0 only increments up when calling more than one column
@@ -73,20 +65,9 @@ namespace Entity_Loader {
 			values.attack_speed = sqlite3_column_int(stmt, 7);
 			values.sight_radius = (float)sqlite3_column_double(stmt, 8);
 			values.scale = (float)sqlite3_column_double(stmt, 9);
-			values.x_offset_sprite = (float)sqlite3_column_double(stmt, 10);
-			values.y_offset_sprite = (float)sqlite3_column_double(stmt, 11);
-			values.body_type = sqlite3_column_int(stmt, 12);
-            values.sprite_width = sqlite3_column_int(stmt, 13);
-            values.sprite_height = sqlite3_column_int(stmt, 14);
-            values.idle_frames = sqlite3_column_int(stmt, 15);
-            values.walk_frames = sqlite3_column_int(stmt, 16);
-            values.attack_frames = sqlite3_column_int(stmt, 17);
-            values.block_frames = sqlite3_column_int(stmt, 18);
-            values.cast_frames = sqlite3_column_int(stmt, 19);
-            values.death_frames = sqlite3_column_int(stmt, 20);
-            values.ranged_frames = sqlite3_column_int(stmt, 21);
+			values.body_type = sqlite3_column_int(stmt, 10);
+            std::cout << "data: " << name << std::endl;
 		}
-
 		return values;
 	}
 
@@ -107,7 +88,7 @@ namespace Entity_Loader {
 		strcpy(buf, jj);
 		strcat(buf, entity_class.c_str());
 
-		sqlite3_prepare_v2(db, buf, -1, &stmt, 0);
+		sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
 
 
 		while (sqlite3_step(stmt) != SQLITE_DONE) {
@@ -116,6 +97,7 @@ namespace Entity_Loader {
             const char * s = (const char *)name;
             std::string retname = std::string(reinterpret_cast< const char *> (s));
             db_name.push_back(retname);
+            std::cout << "class: " << name << std::endl;
 		}
 
         int i = rand() % ( db_name.size() ) + 1;
@@ -128,4 +110,44 @@ namespace Entity_Loader {
 
     	return output_name;
 	}
+
+    ////
+    /// std::string entity_class MUST BE SINGLE QUOTES WRAPPED IN DOUBLE QUOTES OR ELSE IT THROWS A MEMORY READ EXCEPTION
+    ///
+    ///
+    std::string Get_Sprite_Sheet(const std::string name) {// needs to search for  a specific row that I can input in the arguments
+        //check if the name exists??
+        std::vector<std::string> db_name;
+        const unsigned char* sheet;
+
+        sqlite3_stmt* stmt;
+        char buf[300];
+
+        const char* jj = "SELECT sprite_sheet FROM unit_data WHERE name = ";
+
+        strcpy(buf, jj);
+        strcat(buf, name.c_str());
+
+        sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+
+
+        while (sqlite3_step(stmt) != SQLITE_DONE) {
+            sheet = sqlite3_column_text(stmt, 0);
+
+            const char * s = (const char *)sheet;
+            std::string retname = std::string(reinterpret_cast< const char *> (s));
+            db_name.push_back(retname);
+            std::cout << "Get sheet: " << name << std::endl;
+        }
+
+        int i = rand() % ( db_name.size() ) + 1;
+
+        std::string output_name = db_name.at(i-1);
+
+        //append the ' ' onto the teh first and last character of the string
+        output_name = "'" + output_name + "'";
+
+
+        return output_name;
+    }
 }
