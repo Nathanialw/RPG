@@ -255,7 +255,7 @@ namespace Interface {
 		Show_Grid(Map::terrain);
 		//Display_Military_Groups();
 		//Display_Unit_Formations(camera);
-		//Debug_System::Framerate(camera);
+		Debug_System::Framerate(camera);
 		//Unit_Arrive_UI();
 		//Display_Selected();
 		Display_Mouse();

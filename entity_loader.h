@@ -6,26 +6,21 @@
 #include "stdio.h"
 
 namespace Entity_Loader {
-	namespace {
-
-
-        struct Data {
-			float radius = 0.0f;
-			float speed = 0.0f;
-			float mass = 0.0f;
-			int health = 0;
-			int damage_min = 0;
-			int damage_max = 0;
-			float melee_range = 0;
-			int attack_speed = 0;
-			float sight_radius = 0.0f;
-			float scale = 0.0f;
-			int body_type = 2;
-			std::string entity_class = "monster";
-            std::string sheet = "none";
-		};
-
-	}
+    struct Data {
+        float radius = 0.0f;
+        float speed = 0.0f;
+        float mass = 0.0f;
+        int health = 0;
+        int damage_min = 0;
+        int damage_max = 0;
+        float melee_range = 0;
+        int attack_speed = 0;
+        float sight_radius = 0.0f;
+        float scale = 0.0f;
+        int body_type = 2;
+        std::string entity_class = "monster";
+        std::string sheet = "none";
+    };
 
 	void init_db() {
         const char * db_filepath = "db/data.db";
@@ -45,15 +40,10 @@ namespace Entity_Loader {
 		Data values;
 		sqlite3_stmt* stmt;
 		char buf[400];
-        const unsigned char* spriteSheet;
-
 		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type FROM unit_data WHERE name = ";
-
 		strcpy(buf, jj);
 		strcat(buf, name.c_str());
-
 		sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
-
 		while (sqlite3_step(stmt) != SQLITE_DONE) {
 			values.radius = (float)sqlite3_column_double(stmt, 0); //0 only increments up when calling more than one column
 			values.speed = (float)sqlite3_column_double(stmt, 1); //0 only increments up when calling more than one column
@@ -66,7 +56,7 @@ namespace Entity_Loader {
 			values.sight_radius = (float)sqlite3_column_double(stmt, 8);
 			values.scale = (float)sqlite3_column_double(stmt, 9);
 			values.body_type = sqlite3_column_int(stmt, 10);
-            std::cout << "data: " << name << std::endl;
+            //std::cout << "data: " << name << std::endl;
 		}
 		return values;
 	}
@@ -79,35 +69,24 @@ namespace Entity_Loader {
 		//check if the name exists??
 		std::vector<std::string> db_name;
         const unsigned char* name;
-
 		sqlite3_stmt* stmt;
 		char buf[300];
-
 		const char* jj = "SELECT name FROM unit_data WHERE entity_class = ";
-
 		strcpy(buf, jj);
 		strcat(buf, entity_class.c_str());
-
 		sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
-
-
 		while (sqlite3_step(stmt) != SQLITE_DONE) {
             name = sqlite3_column_text(stmt, 0);
-
             const char * s = (const char *)name;
             std::string retname = std::string(reinterpret_cast< const char *> (s));
             db_name.push_back(retname);
-            std::cout << "class: " << name << std::endl;
+            //std::cout << "class: " << name << std::endl;
 		}
-
+        //get random index for name
         int i = rand() % ( db_name.size() ) + 1;
-
         std::string output_name = db_name.at(i-1);
-
         //append the ' ' onto the teh first and last character of the string
         output_name = "'" + output_name + "'";
-
-
     	return output_name;
 	}
 
@@ -119,35 +98,20 @@ namespace Entity_Loader {
         //check if the name exists??
         std::vector<std::string> db_name;
         const unsigned char* sheet;
-
         sqlite3_stmt* stmt;
         char buf[300];
-
         const char* jj = "SELECT sprite_sheet FROM unit_data WHERE name = ";
-
         strcpy(buf, jj);
         strcat(buf, name.c_str());
-
         sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
-
-
+        std::string retname;
         while (sqlite3_step(stmt) != SQLITE_DONE) {
             sheet = sqlite3_column_text(stmt, 0);
-
             const char * s = (const char *)sheet;
-            std::string retname = std::string(reinterpret_cast< const char *> (s));
-            db_name.push_back(retname);
-            std::cout << "Get sheet: " << name << std::endl;
+            retname = std::string(reinterpret_cast< const char *> (s));
         }
-
-        int i = rand() % ( db_name.size() ) + 1;
-
-        std::string output_name = db_name.at(i-1);
-
         //append the ' ' onto the teh first and last character of the string
-        output_name = "'" + output_name + "'";
-
-
+        std::string output_name = "'" + retname + "'";
         return output_name;
     }
 }

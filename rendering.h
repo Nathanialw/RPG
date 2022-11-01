@@ -1,7 +1,6 @@
 #pragma once
 #include <SDL2/SDL.h>
 #include <vector>
-
 #include "graphics.h"
 #include "timer.h"
 #include "interface.h"
@@ -21,7 +20,6 @@
 #include "player_control.h"
 
 namespace Rendering {
-
 	namespace {
 		bool showSpriteBox = false;
 		bool renderType = true;
@@ -29,13 +27,10 @@ namespace Rendering {
 		float fRenderable = 0.0f;
 	}
 
-
 	struct tileData {
 		SDL_Texture* texture;
 		SDL_Rect tileSpriteRect;
 	};
-
-
 
 	void sort_Positions(entt::registry &zone) {
 		zone.sort<Renderable>([](const auto& lhs, const auto& rhs) { return lhs.y < rhs.y; }); //sorts position least to
@@ -58,10 +53,18 @@ namespace Rendering {
 		SDL_Rect frame = spritesheet.clip;
 		int direcitonIndex = Original_Direction_Enum(direction);
 		if (act.action != isStatic) {
-			frame.y = frame.h * direcitonIndex; //check which directioon is facing then change clip.y to sprite height x direction enum
-			if (frame.x > spritesheet.frameStart + spritesheet.sheetWidth - frame.w) {
-				frame.x = spritesheet.frameStart;
-			}
+            //overflow reset
+            if (frame.x > spritesheet.frameStart + spritesheet.sheetWidth - frame.w) {
+                frame.x = spritesheet.frameStart;
+            }
+            //check which directioon is facing then change clip.y to sprite height x direction enum
+			frame.y = frame.h * direcitonIndex;
+            //render first frame
+            if (act.frameCount[act.action].currentFrame == 0) {
+                frame.x = spritesheet.frameStart;
+                act.frameCount[act.action].currentFrame++;
+                return frame;
+            }
 			if (act.action != dead) {
 				if (act.action == struck) {
 					if (act.frameCount[act.action].currentFrame > act.frameCount[act.action].NumFrames) {
@@ -107,7 +110,6 @@ namespace Rendering {
 				}
 			}
 		}
-
 		if (act.action == dead) {
 			if (act.frameCount[act.action].currentFrame < act.frameCount[act.action].NumFrames) {
 				act.frameCount[act.action].currentFrame++;
@@ -116,6 +118,70 @@ namespace Rendering {
 		}
 		return frame;
 	}
+
+    SDL_Rect Frame_Update2(spriteframes& spritesheet, Direction& direction, Actions& act) {
+        SDL_Rect frame = spritesheet.clip;
+        int direcitonIndex = Original_Direction_Enum(direction);
+        int currentFrame = act.frameCount[act.action].currentFrame;
+        //need to define in db
+        int fullFheetWidth = 0;
+        frame.x = ((frame.w * currentFrame) + (direcitonIndex * currentFrame));
+        frame.y = (currentFrame % fullFheetWidth);
+        //render first frame
+        if (currentFrame == 0) {
+            act.frameCount[act.action].currentFrame++;
+            return frame;
+        }
+        if (act.action != isStatic) {
+            //get the first frame of the action state
+            //add increment * direction
+            //frame.y = frame.h * direcitonIndex; //check which directioon is facing then change clip.y to sprite height x direction enum
+            if (frame.x > spritesheet.frameStart + spritesheet.sheetWidth - frame.w) {
+                frame.x = spritesheet.frameStart;
+            }
+            if (act.action != dead) {
+                if (act.action == struck) {
+                    if (act.frameCount[act.action].currentFrame > act.frameCount[act.action].NumFrames) {
+                        act.frameCount[act.action].currentFrame = 0;
+                        act.action = idle;
+                        return frame;
+                    } else {
+                        act.frameCount[act.action].currentFrame++;
+                        return frame;
+                    }
+                }
+                if (spritesheet.bReversable) {
+                    if (spritesheet.bReversing == true) {
+                        frame.x += (frame.w * act.frameCount[act.action].currentFrame);
+                        //std::cout << "forward :" << x.x << std::endl;
+                        if (frame.x >= spritesheet.frameStart + spritesheet.sheetWidth -
+                                       frame.w) { spritesheet.bReversing = false; };
+                        act.frameCount[act.action].currentFrame++;
+                        return frame;
+                    } else if (spritesheet.bReversing == false) {
+                        frame.x = (frame.x + (frame.w * act.frameCount[act.action].currentFrame)) - frame.w;
+                        //std::cout << "reversing :" << x.x << std::endl;
+                        if (frame.x <= spritesheet.frameStart) { spritesheet.bReversing = true; };
+                        act.frameCount[act.action].currentFrame--;
+                        return frame;
+                    }
+                }
+                if (!spritesheet.bReversable) {
+                    //std::cout << "forward :" << x.x << std::endl;
+                    if (frame.x > spritesheet.frameStart + spritesheet.sheetWidth - frame.w) {
+                        frame.x = spritesheet.frameStart;
+                    }
+                    if (act.frameCount[act.action].currentFrame >= act.frameCount[act.action].NumFrames) {
+                        act.frameCount[act.action].currentFrame = 0;
+                        return frame;
+                    } else {
+                        act.frameCount[act.action].currentFrame++;
+                        return frame;
+                    }
+                }
+            }
+        }
+    }
 
 
 	SDL_FRect Scale_Sprite_for_Render(SDL_Rect& clippedSprite, float& scale) {
@@ -131,12 +197,10 @@ namespace Rendering {
 	}
 
 	void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
-
 		SDL_Rect xClipPos;
 		float sx;
 		float sy;
 		auto view1 = zone.view<Renderable, Position, animation, Actions, Direction, Sprite_Offset, Scale, Entity_Type>();
-
 		for (auto entity : view1) {
 			auto& alpha = view1.get<Renderable>(entity).alpha;
 			auto& d = view1.get<Direction>(entity);
@@ -160,7 +224,6 @@ namespace Rendering {
 			}
 			sx = x.x - camera.screen.x;
 			sy = y.y - camera.screen.y;
-
 			anim.renderPosition.x = (sx - spriteOffset.x);
 			anim.renderPosition.y = (sy - spriteOffset.y);
 			if (type == Entity_Type::item){
@@ -169,14 +232,11 @@ namespace Rendering {
 			}
 			//fade rendering objects at bottom of screen
 			SDL_SetTextureAlphaMod(anim.pTexture, alpha);
-
             //SDL_FRect renderRect = Scale_Sprite_for_Render(, scale);
-
 			Graphics::Render_FRect(anim.pTexture, &anim.clipSprite, &anim.renderPosition);
 			if (1) {
 				//SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
 			}
-
 		}
 	}
 
@@ -192,10 +252,8 @@ namespace Rendering {
 		int width = 128;
 		int height = 128;
 		SDL_Rect rect = { row, column, width, height };
-
 		//increment X
 		frame.frameX++;
-
 		return rect;
 	}
 
@@ -204,7 +262,6 @@ namespace Rendering {
 		float sx;
 		float sy;
 		auto view = zone.view<Explosion, Position, Frame_Delay, Texture, Sprite_Frames>();
-
 		for (auto spell : view) {
 			auto& anim = view.get<Explosion>(spell);
 			auto& x = view.get<Position>(spell);
@@ -212,7 +269,6 @@ namespace Rendering {
 			auto& texture = view.get<Texture>(spell);
 			auto& frames = view.get<Sprite_Frames>(spell);
 			auto& delay = view.get<Frame_Delay>(spell);
-
 			delay.currentFrameTime += Timer::timeStep;
 			if (delay.currentFrameTime >= delay.timeBetweenFrames) {
 				if (frames.currentFrame <= frames.maxFrames) { // if there are still frames remaining
@@ -228,13 +284,10 @@ namespace Rendering {
 				}
 				delay.currentFrameTime = 0;
 			}
-
 			sx = x.x - camera.screen.x - anim.offsetToAlignWithFireball.x;
 			sy = y.y - camera.screen.y - anim.offsetToAlignWithFireball.y;
 			anim.renderPosition.x = sx - anim.positionOffset.x;
 			anim.renderPosition.y = sy - anim.positionOffset.y;
-
-
 			SDL_RenderCopyF(Graphics::renderer, texture.pTexture, &texture.clippedSpriteFrame, &anim.renderPosition);
 			if (showSpriteBox) {
 				SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
@@ -249,7 +302,6 @@ namespace Rendering {
 			SDL_Texture *texture = view.get<Texture>(lion).pTexture;
 			const Action_State &actionState = view.get<Action_State>(lion);
 			const Direction &direction = view.get<Direction>(lion);
-
 			Sprite_Sheet_Data* clippedSprite = view.get<Sprite_Vector>(lion).sheet;
 			Frame *frameDataArray = view.get<Sprite_Vector>(lion).states;
 			int &currentFrame = view.get<Sprite_Vector>(lion).currentFrame;
@@ -257,17 +309,12 @@ namespace Rendering {
 			int& frameTimeCount= view.get<Sprite_Vector>(lion).FrameTimeCount;
 			SDL_Rect& clip = view.get<Sprite_Vector>(lion).clip;
 			SDL_FRect& render = view.get<Sprite_Vector>(lion).render;
-
 			frameTimeCount += Timer::timeStep;
 			if (frameTimeCount >= frameTime) {
 				frameTimeCount = 0;
-
 				Frame frameData = frameDataArray[actionState];
-
 				int startFrame = frameData.startFrame + (frameData.numFrames * (int)direction);
 				int endFrame = startFrame + frameData.numFrames;
-
-
 				if (currentFrame < startFrame) {
 					currentFrame = startFrame;
 				}
@@ -281,17 +328,12 @@ namespace Rendering {
 				}
 			}
 			auto& sprite = clippedSprite[currentFrame - 1];
-
 			clip = sprite.clip;
 			SDL_FRect offset = Utilities::SDL_Rect_To_SDL_FRect(sprite.offset);
 			render = { position.x + offset.x, position.y + offset.y, (float)clip.w, (float)clip.h };
-
 			render.x -= camera.screen.x;
 			render.y -= camera.screen.y;
-
 			SDL_RenderCopyF(Graphics::renderer, texture, &clip, &render);
-
-
 			SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 0, 255);
 			SDL_RenderDrawRectF(Graphics::renderer, &render);
 			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 255);
@@ -306,83 +348,55 @@ namespace Rendering {
 			x -= sheetWidth;
 			y++;
 		}
-
 		tileSpriteRect.x = tileSpriteRect.w * x;
 		tileSpriteRect.y = tileSpriteRect.h * y;
-
 		return tileSpriteRect;
 	}
 
 	void Render_Map(entt::registry &zone, tmx::Map& map, Camera& camera) {
 		float originX = 0.0f;
 		float originY = 0.0f;
-
-
 		SDL_Rect tileSpriteRect = { 0, 0, (int)map.getTileSize().x , (int)map.getTileSize().y };
 		SDL_FRect renderPosition = { 0.0f, 0.0f, (float)map.getTileSize().x, (float)map.getTileSize().y };
-
 		auto& numOfTiles = map.getTileCount();
 		auto& layers = map.getLayers();
-
-
 		const auto tileWidth = (float)map.getTileSize().x;
 		const auto tileHeight = (float)map.getTileSize().y;
-
 		int newX = (int)camera.screen.x;
 		int newY = (int)camera.screen.y;
-
-
-
 		int X = (newX / tileWidth) + (newY / tileHeight) - (camera.screen.w / 2 / (tileWidth / 2));
 		int Y = (newY / tileHeight) - (newX / tileWidth) - (camera.screen.h / 2 / (tileHeight / 2));
-
-
 		//int X = (newX / tileWidth) + (newY / tileHeight) - (camera.screen.h / 2 / (tileHeight / 2));
 		//int Y = (newY / tileHeight) - (newX / tileWidth) - (camera.screen.w / 2 / (tileWidth / 2));
-
-
 		//int X = ((newX + newY) / tileWidth) - (camera.screen.w / 2 / (tileWidth / 2));
 		//int Y = ((newY - newX) / tileHeight) - (camera.screen.h / 2 / (tileHeight / 2));
 		//int X = (newY + newX) / tileWidth / 2 - camera.screen.w / 2 / (tileWidth /2);
 		//int Y = (newY - newX) / tileWidth / 2 - camera.screen.h / 2 / (tileHeight/2);
-
-
-
 		//of the sidways rect encompassing the screen
 		int width = X + (camera.screen.w / tileWidth * 4);
 		int height = Y + (camera.screen.h / tileHeight * 3);
 		//int width = X + ((camera.screen.w + camera.screen.h) / tileWidth / 2);
 		//int height = Y + ((camera.screen.h + camera.screen.w) / tileHeight / 2);
-
-
-
 		int h = 0;
 		int g = 0;
 		//int o = 0;
 		auto &tilesets = Maps::map.getTilesets();
 		int p = Maps::map.getTilesets().size() - 1;
-
 		for (int i = 0; i < layers.size(); i++) {
-
 			if (layers[i]->getType() == tmx::Layer::Type::Tile) {
 				const auto& tiles = layers[i]->getLayerAs<tmx::TileLayer>().getTiles();
-
 				for (int x = X; x < width; x++) {
 					if (x < 0) { x = 0; }
-
 					for (int y = Y; y < height; y++) {
 						//h++;
 						if (y < 0) { y = 0; }
 						if (x >= numOfTiles.x) { break; }
 						if (y >= numOfTiles.y) { break; }
-
 						renderPosition.x = originX + (x * tileWidth / 2.0f) - (y * tileWidth / 2.0f);
 						renderPosition.y = originY + (x * tileHeight / 2.0f) + (y * tileHeight / 2.0f);
 						renderPosition.x -= camera.screen.x;;
 						renderPosition.y -= camera.screen.y;;
-
 						int k = (numOfTiles.x * y) + x;
-
 						if (tiles[k].ID != 0) {
 							auto id = tiles[k].ID;
 							for (int tilesetCount = p; tilesetCount >= 0; --tilesetCount) {
@@ -429,28 +443,20 @@ namespace Rendering {
 		//Utilities::Log(o);
 		//Utilities::Log(" ");
 		//Utilities::Log(" ");
-
 	}
 
-
 	void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {
-
 		SDL_FRect DisplayRect = {};
-
 		auto view = zone.view<Position, Icon, On_Mouse>();
-
 		for (auto item : view) {
 			const auto& icon = view.get<Icon>(item);
 			const auto& x = view.get<Position>(item).x;
 			const auto& y = view.get<Position>(item).y;
-
 			DisplayRect.x = (x - camera.screen.x) - (icon.renderPositionOffset.x / camera.scale.x);
 			DisplayRect.y = (y - camera.screen.y) - (icon.renderPositionOffset.y / camera.scale.y);
 			DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
 			DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
-
 			//std::cout << "x: " << DisplayRect.x << " y: " << DisplayRect.y << " w: " << DisplayRect.w << " h: " << DisplayRect.h << std::endl;
-
 			SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &DisplayRect);
 			SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, &icon.clipSprite, &DisplayRect);
 			if (showSpriteBox) {
@@ -458,8 +464,6 @@ namespace Rendering {
 			}
 		}
 	}
-
-
 
 	void RenderCullMode(entt::registry& zone) {
 		if (renderType == true) {
@@ -481,29 +485,24 @@ namespace Rendering {
 			float edgeBuffer = renderEdge - screenEdge;
 			float y = edgeBuffer / x;
 			int alpha = 255 - ( 255 / (int)y );
-
 			return alpha;
 		}
 	}
 
 	void Add_Remove_Renderable_Component(entt::registry &zone, Component::Camera &camera) {
 		int j = 0;
-
 		SDL_FRect renderRect = {
 			camera.screen.x - (camera.screen.w / 2.0f),
 			camera.screen.y - (camera.screen.h / 2.0f),
 			camera.screen.w * 2.0f,
 			camera.screen.h * 2.0f };
-
 		auto objectsView = zone.view<Position>(entt::exclude<Inventory>);
 		float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
 		float bottomOfRenderRect = renderRect.y + renderRect.h;
-
 		for (auto entity : objectsView) {
 			auto& x = objectsView.get<Position>(entity).x;
 			auto& y = objectsView.get<Position>(entity).y;
 			SDL_FPoint point = {x, y};
-
 			if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
 				int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, y);
 				zone.emplace_or_replace<Renderable>(entity, y, alpha);
@@ -543,11 +542,9 @@ namespace Rendering {
 
 	void Update_Camera_And_Mouse(entt::registry& zone) {
 		auto focus_view = zone.view<Camera, Position>();
-
 		for (auto player : focus_view) {
 			auto& camera = focus_view.get<Camera>(player);
 			auto& position = focus_view.get<Position>(player);
-
 			Camera_Control::Update_Camera_Follow(camera, position, Graphics::resolution);
 			Update_Cursor(camera);
 		}
@@ -566,23 +563,18 @@ namespace Rendering {
 		Character_Stats::Update_Unit_Stats(zone);
 		UI::Move_To_Item_Routine(zone, Mouse::itemCurrentlyHeld);
 		Player_Control::Move_To_Atack_Routine(zone);
-
-
 		auto camera_view = zone.view<Camera>();
 		for (auto entity : camera_view) {
 			auto& camera = camera_view.get<Camera>(entity);
-
 			SDL_RenderClear(Graphics::renderer);
 			Add_Remove_Renderable_Component(zone, camera);
 			sort_Positions(zone);
 			Render_Map(zone, Maps::map, camera);
-
 			Dynamic_Quad_Tree::Update_Quad_Tree_Positions(World::zone);
 			Dynamic_Quad_Tree::Emplace_Objects_In_Quad_Tree(World::zone);
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
 			Dynamic_Quad_Tree::Remove_From_Tree(zone);
 			//Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
-
 			Items::Show_Ground_Items(zone, camera);
             Items::Name_On_Mouseover(zone, camera);
 			UI::Render_UI(zone, Graphics::renderer, camera);
@@ -597,8 +589,6 @@ namespace Rendering {
             //on top of mouse
             Tooltip::Show_Item_Tooltip(zone, mouse, camera);
             Render_Mouse_Item(zone, camera);
-
-
 			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
             if (Items::showGroundItems == true) {                //****//search quad tree instead
                 auto view = zone.view<Ground_Item, Renderable>();
@@ -607,8 +597,6 @@ namespace Rendering {
                     SDL_RenderDrawRectF(Graphics::renderer, &box.box);
                 }
             }
-
-
             SDL_RenderPresent(Graphics::renderer);
 		}
 	}

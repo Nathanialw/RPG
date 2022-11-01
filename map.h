@@ -105,6 +105,7 @@ namespace Maps {
         //std::cout << "name: " << name << ", sheet name:" << sheetname << std::endl;
         Sprite_Sheet::sheetData sheetData = Sprite_Sheet::Assign (sheetname);
 
+
         // translates isometric position to world position
         float tileWidth = 128;
         float tileHeight = 64;
@@ -155,24 +156,24 @@ namespace Maps {
             //std::cout << frame.size() << std::endl;
 
             zone.get<Component::animation>(entity).sheet = { //populate the vector
-                { {sheetData.isStatic.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.isStatic.firstFrame * sheetData.w, sheetData.isStatic.numFrames * sheetData.w,  sheetData.isStatic.reverses, 0, 100.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms} },
-                { {sheetData.idle.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.idle.firstFrame * sheetData.w, sheetData.idle.numFrames * sheetData.w,  sheetData.idle.reverses, 0, 100.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms}
-                { {sheetData.walk.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.walk.firstFrame * sheetData.w, sheetData.walk.numFrames * sheetData.w,  sheetData.walk.reverses, 0, 100.0f, 0.0f},//walk
-                { {sheetData.run.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.run.firstFrame * sheetData.w, sheetData.run.numFrames * sheetData.w,  sheetData.run.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.attack.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.attack.firstFrame * sheetData.w, sheetData.attack.numFrames * sheetData.w,  sheetData.attack.reverses, 0, 100.0f, 0.0f},//atack
-                { {sheetData.attack2.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.attack2.firstFrame * sheetData.w, sheetData.attack2.numFrames * sheetData.w,  sheetData.attack2.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.cast.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.cast.firstFrame * sheetData.w, sheetData.cast.numFrames * sheetData.w,  sheetData.cast.reverses, 0, 100.0f, 0.0f},//cast
-                { {sheetData.struck.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.struck.firstFrame * sheetData.w, sheetData.struck.numFrames * sheetData.w,  sheetData.struck.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.block.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.block.firstFrame * sheetData.w, sheetData.block.numFrames * sheetData.w, sheetData.block.reverses, 0, 100.0f, 0.0f},//block
-                { {sheetData.evade.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.evade.firstFrame * sheetData.w, sheetData.evade.numFrames * sheetData.w,  sheetData.evade.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.stunned.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.stunned.firstFrame * sheetData.w, sheetData.stunned.numFrames * sheetData.w,  sheetData.stunned.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.dead.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.dead.firstFrame * sheetData.w, sheetData.dead.numFrames * sheetData.w,  sheetData.dead.reverses, 0, 100.0f, 0.0f},//death/reverse to summon
-                { {sheetData.low_hp.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.low_hp.firstFrame * sheetData.w, sheetData.low_hp.numFrames * sheetData.w,  sheetData.low_hp.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.resting.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.resting.firstFrame * sheetData.w, sheetData.resting.numFrames * sheetData.w,  sheetData.resting.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.ranged.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.ranged.firstFrame * sheetData.w, sheetData.ranged.numFrames * sheetData.w,  sheetData.ranged.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.cheer.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.cheer.firstFrame * sheetData.w, sheetData.cheer.numFrames * sheetData.w,  sheetData.cheer.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.behavior.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.behavior.firstFrame * sheetData.w, sheetData.behavior.numFrames * sheetData.w,  sheetData.behavior.reverses, 0, 100.0f, 0.0f},//ranged
-                { {sheetData.summoned.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.summoned.firstFrame * sheetData.w, sheetData.summoned.numFrames * sheetData.w,  sheetData.summoned.reverses, 0, 100.0f, 0.0f},//ranged
+                { {sheetData.isStatic.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.isStatic.firstFrame * sheetData.w, sheetData.isStatic.numFrames * sheetData.w,  sheetData.isStatic.reverses, 0, 75.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms} },
+                { {sheetData.idle.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.idle.firstFrame * sheetData.w, sheetData.idle.numFrames * sheetData.w,  sheetData.idle.reverses, 0, 75.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms}
+                { {sheetData.walk.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.walk.firstFrame * sheetData.w, sheetData.walk.numFrames * sheetData.w,  sheetData.walk.reverses, 0, 75.0f, 0.0f},//walk
+                { {sheetData.run.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.run.firstFrame * sheetData.w, sheetData.run.numFrames * sheetData.w,  sheetData.run.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.attack.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.attack.firstFrame * sheetData.w, sheetData.attack.numFrames * sheetData.w,  sheetData.attack.reverses, 0, 75.0f, 0.0f},//atack
+                { {sheetData.attack2.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.attack2.firstFrame * sheetData.w, sheetData.attack2.numFrames * sheetData.w,  sheetData.attack2.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.cast.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.cast.firstFrame * sheetData.w, sheetData.cast.numFrames * sheetData.w,  sheetData.cast.reverses, 0, 75.0f, 0.0f},//cast
+                { {sheetData.struck.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.struck.firstFrame * sheetData.w, sheetData.struck.numFrames * sheetData.w,  sheetData.struck.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.block.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.block.firstFrame * sheetData.w, sheetData.block.numFrames * sheetData.w, sheetData.block.reverses, 0, 75.0f, 0.0f},//block
+                { {sheetData.evade.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.evade.firstFrame * sheetData.w, sheetData.evade.numFrames * sheetData.w,  sheetData.evade.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.stunned.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.stunned.firstFrame * sheetData.w, sheetData.stunned.numFrames * sheetData.w,  sheetData.stunned.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.dead.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.dead.firstFrame * sheetData.w, sheetData.dead.numFrames * sheetData.w,  sheetData.dead.reverses, 0, 75.0f, 0.0f},//death/reverse to summon
+                { {sheetData.low_hp.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.low_hp.firstFrame * sheetData.w, sheetData.low_hp.numFrames * sheetData.w,  sheetData.low_hp.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.resting.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.resting.firstFrame * sheetData.w, sheetData.resting.numFrames * sheetData.w,  sheetData.resting.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.ranged.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.ranged.firstFrame * sheetData.w, sheetData.ranged.numFrames * sheetData.w,  sheetData.ranged.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.cheer.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.cheer.firstFrame * sheetData.w, sheetData.cheer.numFrames * sheetData.w,  sheetData.cheer.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.behavior.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.behavior.firstFrame * sheetData.w, sheetData.behavior.numFrames * sheetData.w,  sheetData.behavior.reverses, 0, 75.0f, 0.0f},//ranged
+                { {sheetData.summoned.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.summoned.firstFrame * sheetData.w, sheetData.summoned.numFrames * sheetData.w,  sheetData.summoned.reverses, 0, 75.0f, 0.0f},//ranged
             };
             zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);
             zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0);

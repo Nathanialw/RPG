@@ -79,7 +79,7 @@ namespace Event_Handler {
 					case SDLK_9: AI::Turn_On();  break;
 					case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
                     case SDLK_ESCAPE: Menu::Toggle(); break;
-					case SDLK_PLUS: break;
+					case SDLK_PLUS:  break;
 					case SDLK_MINUS: break;
                     case SDLK_p: UI_Spellbook::Toggle();  break;
 					case SDLK_i: UI::Bag_UI::Toggle_Bag();  break;

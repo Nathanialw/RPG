@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="5" nextobjectid="1461">
+<map version="1.9" tiledversion="1.9.2" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="5" nextobjectid="1467">
  <tileset firstgid="1" source="sprite_sheets/units/skeleton_00.tsx"/>
  <tileset firstgid="257" source="sprite_sheets/units/skeleton_occultist_00.tsx"/>
  <tileset firstgid="481" source="sprite_sheets/units/skeleton_mage_00.tsx"/>
@@ -1170,28 +1170,27 @@
   <object id="1396" template="spawn_points/unit_spawns/zombie_00.tx" x="23954.4" y="23451.6"/>
   <object id="1399" template="spawn_points/unit_spawns/zombie_00.tx" x="19784.7" y="19681.9"/>
   <object id="1405" template="spawn_points/unit_spawns/random_skeleton.tx" x="18395.4" y="18719.8"/>
-  <object id="1406" template="spawn_points/unit_spawns/random_skeleton.tx" x="18377.2" y="18834.9"/>
-  <object id="1407" template="spawn_points/unit_spawns/random_skeleton.tx" x="18412" y="18927.4"/>
-  <object id="1408" template="spawn_points/unit_spawns/random_skeleton.tx" x="18540.8" y="18938"/>
-  <object id="1409" template="spawn_points/unit_spawns/random_skeleton.tx" x="18524.1" y="19039.5"/>
-  <object id="1410" template="spawn_points/unit_spawns/random_skeleton.tx" x="18348.3" y="19057.7"/>
-  <object id="1411" template="spawn_points/unit_spawns/random_skeleton.tx" x="18533.2" y="19121.4"/>
-  <object id="1412" template="spawn_points/unit_spawns/random_skeleton.tx" x="18490.8" y="19200.1"/>
-  <object id="1413" template="spawn_points/unit_spawns/warrior_axe_00.tx" x="19101.4" y="19025.9"/>
-  <object id="1417" template="spawn_points/unit_spawns/goblin_spearman.tx" x="19822.6" y="19165.3"/>
-  <object id="1419" template="spawn_points/unit_spawns/goblin_spearman.tx" x="19777.2" y="18792.5"/>
-  <object id="1420" template="spawn_points/unit_spawns/goblin_spearman.tx" x="19796.8" y="18942.6"/>
-  <object id="1426" template="spawn_points/unit_spawns/troll.tx" x="18844" y="17892"/>
-  <object id="1448" template="spawn_points/unit_spawns/bow_hobgoblin_00.tx" x="19527.5" y="18964.1"/>
-  <object id="1450" template="spawn_points/unit_spawns/bow_hobgoblin_00.tx" x="19460.5" y="18666.8"/>
-  <object id="1451" template="spawn_points/unit_spawns/grey_werebear.tx" x="18889.6" y="18032.3"/>
-  <object id="1452" template="spawn_points/unit_spawns/grey_werebear.tx" x="19062" y="17992.5"/>
-  <object id="1453" template="spawn_points/unit_spawns/orc_archer_00.tx" x="19159.3" y="18144.4"/>
+  <object id="1406" template="spawn_points/unit_spawns/random_skeleton.tx" x="17977.2" y="18483.4"/>
+  <object id="1407" template="spawn_points/unit_spawns/random_skeleton.tx" x="18013" y="18545.6"/>
+  <object id="1408" template="spawn_points/unit_spawns/random_skeleton.tx" x="18527.2" y="19145.6"/>
+  <object id="1409" template="spawn_points/unit_spawns/random_skeleton.tx" x="18510.5" y="19247.1"/>
+  <object id="1410" template="spawn_points/unit_spawns/random_skeleton.tx" x="18169.5" y="19224.4"/>
+  <object id="1411" template="spawn_points/unit_spawns/random_skeleton.tx" x="17916.5" y="18829"/>
+  <object id="1412" template="spawn_points/unit_spawns/random_skeleton.tx" x="18312" y="19366.8"/>
+  <object id="1417" template="spawn_points/unit_spawns/goblin_spearman.tx" x="20093.8" y="18754.7"/>
+  <object id="1419" template="spawn_points/unit_spawns/goblin_spearman.tx" x="19707.5" y="18522.8"/>
+  <object id="1420" template="spawn_points/unit_spawns/goblin_spearman.tx" x="19727.1" y="18672.9"/>
+  <object id="1426" template="spawn_points/unit_spawns/troll.tx" x="18794" y="17748.1"/>
+  <object id="1448" template="spawn_points/unit_spawns/bow_hobgoblin_00.tx" x="19798.7" y="18553.5"/>
+  <object id="1450" template="spawn_points/unit_spawns/bow_hobgoblin_00.tx" x="19731.7" y="18256.2"/>
+  <object id="1451" template="spawn_points/unit_spawns/grey_werebear.tx" x="19083.5" y="18008.1"/>
+  <object id="1452" template="spawn_points/unit_spawns/grey_werebear.tx" x="18942.3" y="17706.1"/>
+  <object id="1453" template="spawn_points/unit_spawns/orc_archer_00.tx" x="19072.9" y="17697.4"/>
   <object id="1454" template="spawn_points/unit_spawns/orc_elite_00.tx" x="18892.7" y="18126.2"/>
-  <object id="1455" template="spawn_points/unit_spawns/orc_heavy_01.tx" x="18632.1" y="17902"/>
-  <object id="1457" template="spawn_points/unit_spawns/orc_heavy_01.tx" x="18693.8" y="18245.6"/>
+  <object id="1455" template="spawn_points/unit_spawns/orc_heavy_01.tx" x="18613.9" y="17805"/>
   <object id="1458" template="spawn_points/unit_spawns/orc_heavy_01.tx" x="18578.7" y="17669.8"/>
-  <object id="1459" template="spawn_points/unit_spawns/demon.tx" x="19154.4" y="18712.2"/>
-  <object id="1460" template="spawn_points/unit_spawns/ghoul_00.tx" x="18945" y="18784.7"/>
+  <object id="1462" template="spawn_points/unit_spawns/skeleton_00.tx" x="19119.6" y="18322.8"/>
+  <object id="1465" template="spawn_points/unit_spawns/orc_archer_00.tx" name="'player'" x="19331.7" y="18874.4"/>
+  <object id="1466" template="spawn_points/unit_spawns/troll.tx" x="19018.1" y="18763.8"/>
  </objectgroup>
 </map>
