@@ -8,38 +8,23 @@
 #include "camera.h"
 #include "mouse_control.h"
 
-
-// item
-
-// item equip
-
-//item bag
-
-//item drop
-
-using namespace Component;
 using namespace Item_Component;
 
 namespace Items {
-
 	namespace {
 		std::map<Rarity, SDL_Color>rarityColor;
 		std::map<Rarity, SDL_Texture*>rarityBorder;
-
 		std::map<Item_Component::Stat, int>baseStatData;
 		std::map<Item_Component::Stat, int>statData;
 		std::map<Item_Component::Stat, std::string>statName;
-
 		std::map<Item_Type, int>itemTypes;
 		std::map<Armor_Type, int>armorTypes;
 		std::map<Weapon_Type, int>weaponTypes;
         std::map<Weapon_Material, int>weaponMaterials;
-
         std::map<Item_Component::Weapon_Material, std::string>weaponMaterialName;
         std::map<Item_Component::Weapon_Type, std::string>weaponTypeName;
         std::map<Item_Component::Armor_Type, std::string>ArmorTypeName;
 		std::map<Item_Component::Item_Type, std::string>ItemTypeName;
-
 		std::vector<int>bag;
 		int mousePickUp;
 		bool showGroundItems = false;
@@ -50,7 +35,6 @@ namespace Items {
 
 	Item_Component::Weapon_Type Generate_Weapon_Type() {
 		int randType = rand() % 4 + 1;
-
 		switch (randType) {
 		case 1: return { Item_Component::Weapon_Type::sword };
         case 2: return { Item_Component::Weapon_Type::mace };
@@ -125,12 +109,11 @@ namespace Items {
 
 		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
         //sprite sheet graphic pointer
-		World::zone.emplace<animation>(item, Graphics::weapons_icons ); /// need to load hetexture	 only once and pass the pointer into this function
-		World::zone.get<animation>(item).sheet = {
-			{ sprite , 0, 32, 0, 0, 0.0f, 16.0f}
+		World::zone.emplace<Component::animation>(item, Graphics::weapons_icons ); /// need to load hetexture	 only once and pass the pointer into this function
+		World::zone.get<Component::animation>(item).sheet = {
+			{ sprite , 0, 32, 0, 0, 75, 0}
 		};
-
-		auto& icon = World::zone.emplace<Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
 		icon.clipSprite = sprite;
 		icon.clipIcon = {0,0,256,256};
 		icon.renderRectSize = { 64.0f, 64.0f };
@@ -143,68 +126,56 @@ namespace Items {
 	std::string Create_Armor(entt::entity& item, Rarity& rarity) {
 		Item_Type itemType = Generate_Item_Type();
 		Armor_Type armorType = Generate_Armor_Type();
-
         ///just  a little fix since I have no cloth helm icon
         if (itemType == Item_Type::helm && armorType == Armor_Type::cloth) {
             armorType = Armor_Type::leather;
         };
         //////
-
 		std::string type = ItemTypeName[itemType];
 		std::string armor = ArmorTypeName[armorType];
 		std::string itemName = armor + " " + type;
-
 		World::zone.emplace<Item_Type>(item, itemType);
 		World::zone.emplace<Rarity>(item, rarity);
-
 		int column = itemTypes[itemType];
 		int row = armorTypes[armorType];
 		int size = 64;
-
 		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
-
-		World::zone.emplace<animation>(item, Graphics::armorSpriteSheet); /// need to load hetexture	 only once and pass the pointer into this function
-		World::zone.get<animation>(item).sheet = {
-			{ sprite , 0, 64, 0, 0, 0.0f, 16.0f}
+		World::zone.emplace<Component::animation>(item, Graphics::armorSpriteSheet); /// need to load hetexture	 only once and pass the pointer into this function
+		World::zone.get<Component::animation>(item).sheet = {
+			{ sprite , 0, 64, 0, 0, 75, 0}
 		};
-
-		auto& icon = World::zone.emplace<Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
+		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
 		icon.clipSprite = sprite;
 		icon.clipIcon = {0,0,256,256};
 		icon.renderRectSize = { 64.0f, 64.0f };
 		icon.renderPositionOffset = { icon.renderRectSize.x / 2, icon.renderRectSize.y / 2 };
-
 		return itemName;
 	}
 
-
-	void Create_Item(entt::entity &item, Position& position, const std::string &name, Item_Stats &itemStats) {
+	void Create_Item(entt::entity &item, Component::Position& position, const std::string &name, Item_Stats &itemStats) {
 		float scale = 0.25f;
         float rectSide = 64.0f;
-
-		World::zone.emplace<Scale>(item, scale);
-		World::zone.emplace<Actions>(item, isStatic);
-		World::zone.emplace<Direction>(item, Direction::W);
+		World::zone.emplace<Component::Scale>(item, scale);
+		World::zone.emplace<Component::Actions>(item, Component::isStatic);
+		World::zone.emplace<Component::Direction>(item, Component::Direction::W);
 		World::zone.emplace<Name>(item, name);
-		World::zone.emplace<Component::Entity_Type>(item, Entity_Type::item);
+		World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
 		auto &stats = World::zone.emplace<Item_Stats>(item);
 		stats = itemStats;
-		auto& offset = World::zone.emplace<Sprite_Offset>(item, rectSide/2.0f * scale, rectSide/2.0f * scale).offset;
-		auto& position2 = World::zone.emplace<Position>(item, position.x, position.y);
-		World::zone.emplace<Radius>(item, offset.x);
+		auto& offset = World::zone.emplace<Component::Sprite_Offset>(item, rectSide/2.0f * scale, rectSide/2.0f * scale).offset;
+		auto& position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
+		World::zone.emplace<Component::Radius>(item, offset.x);
 		World::zone.emplace<Ground_Item>(item,
 			((position2.x - offset.x) * scale), //half the width and height
 			((position2.y - offset.y) * scale),	//half the width and height
 			(rectSide * scale) * scale,
 			(rectSide * scale) * scale,0.0f,0.0f,0.0f,0.0f);
-
 	}
 
 
 	statValue Get_Random_Stat() {
 		int randStat = rand() % 6 + 1;
 		int randStatValue = rand() % 5 + 1;
-
 		switch (randStat) {
 		case 1: return { Stat::health, randStatValue };
 		case 2: return { Stat::damage, randStatValue };
@@ -219,7 +190,6 @@ namespace Items {
 
 	Rarity Generate_Item_Rarity() {
 		int i = rand() % 100 + 1;
-
 		if (i >= 35) {
 			return Rarity::common;
 		}
@@ -237,11 +207,9 @@ namespace Items {
 	}
 
 	Item_Stats Generate_Item_Stats(Rarity& rarity) {
-
 		Item_Stats itemStats;
 		int numMods = 0;
 		statValue randomStat;
-
 		if (rarity == Rarity::common) {
 			numMods = rand() % 2 + 1;
 		}
@@ -280,32 +248,20 @@ namespace Items {
         return Create_Armor(item, rarity);
     }
 
-	void Create_And_Drop_Item(Position& position) {
-
-		Rarity rarity = Generate_Item_Rarity();
-
+	void Create_And_Drop_Item(Component::Position& position) {
+        Rarity rarity = Generate_Item_Rarity();
 		Item_Stats itemStats = Generate_Item_Stats(rarity);
-
 		auto item_uID = World::zone.create();
-
         std::string itemName = Choose_Item(item_uID, rarity);
-
 		//	int item = rand() % 100 + 1;
 		//	if (item <= 10) { Create_Item(item, position, rarity, "sword", Item_Type::weapon, Weapon_Type::sword, Graphics::longsword_default, Graphics::longsword_default_icon, itemStats); }
 		//	else if (item <= 12) { Create_Item(item, position, rarity, "padded armour", Item_Type::chest, Armor_Type::cloth, Graphics::armorSpriteSheet, Graphics::armorSpriteSheet, itemStats); }
-
-
 		Create_Item(item_uID, position, itemName, itemStats);
-
 	}
-
-
-
 
 	//mouse click
 	//walk over to item
 	//when arrived at item pick it up into mouse array
-
 	void Hightlight_Item_Under_Cursor(SDL_FRect& itemRect) {
 		if (Mouse::bRect_inside_Cursor(itemRect)) { //if cursor in inside item text box
 			//then change the background color of that box to another shade
@@ -318,30 +274,26 @@ namespace Items {
 	}
 
 	void Item_Collision(entt::registry& zone) {
-
         ///What we actually need to do is create a quad tree with each cell the size of one item and only one item per cell
         /// when an item it dropped it falls it queries the tree into the nearest vacant cell
-
-		auto view = zone.view<Ground_Item, Position, Name, Renderable>();
+		auto view = zone.view<Ground_Item, Component::Position, Name, Component::Renderable>();
 		for (auto item1 : view) {
-			auto& itemPosition1 = view.get<Position>(item1);
+			auto& itemPosition1 = view.get<Component::Position>(item1);
 			auto& name1 = view.get<Name>(item1).name;
 			auto& groundItem1 = view.get<Ground_Item>(item1).box;
 			SDL_Rect textBox1 = {};
 			textBox1.w = name1.length() * 5;
 			textBox1.h = 10;
-
 			textBox1.x = itemPosition1.x - (textBox1.w / 2.0f);
 			textBox1.y = itemPosition1.y - 10;
 			for (auto item2 : view) {
 				if (item1 != item2) {
-					auto& itemPosition2 = view.get<Position>(item2);
+					auto& itemPosition2 = view.get<Component::Position>(item2);
 					auto& name2 = view.get<Name>(item2).name;
 					auto& groundItem2 = view.get<Ground_Item>(item2).box;
 					SDL_Rect textBox2 = {};
 					textBox2.w = name2.length() * 5;
 					textBox2.h = 10;
-
 					textBox2.x = itemPosition2.x - (textBox2.w / 2.0f);
 					textBox2.y = itemPosition2.y - 10;
 					SDL_Point rectPosition = Utilities::Check_Collision_Rects(textBox1, textBox2);
@@ -349,8 +301,6 @@ namespace Items {
 					itemPosition1.y += rectPosition.y;
 					groundItem1.x += rectPosition.x;
 					groundItem1.y += rectPosition.y;
-
-
 					itemPosition2.x -= rectPosition.x;
 					itemPosition2.y -= rectPosition.y;
 					groundItem2.x -= rectPosition.x;
@@ -360,39 +310,33 @@ namespace Items {
 		}
 	}
 
-
 	void Update_Mouse_Slot_Position(entt::registry &zone, entt::entity &item, bool &isItemCurrentlyHeld, float &mouseX, float &mouseY) {
 		//set item in mouse array position to mouse x, y every frame
 		if (isItemCurrentlyHeld == true) {
-			Position& position = zone.get<Position>(item);
+            Component::Position& position = zone.get<Component::Position>(item);
 			position.x = mouseX;
 			position.y = mouseY;
 		}
 		Item_Collision(zone);
 	}
 
-	void Show_Ground_Items(entt::registry& zone, Camera& camera) {
+	void Show_Ground_Items(entt::registry& zone, Component::Camera& camera) {
 		if (showGroundItems == true) {
 		 	//****//search quad tree instead
-			auto view = zone.view<Ground_Item, Position, Rarity, Name, Renderable>();
-
+			auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();
 			for (auto item : view) {
 				///need position for render location
 				/// need an offset based on rect size for the text box and item position
 				///
 				///need name for string
 				/// need rarity for colour
-				auto& itemPosition = view.get<Position>(item);
+				auto& itemPosition = view.get<Component::Position>(item);
 				auto& rarity = view.get<Rarity>(item);
 				auto& name = view.get<Name>(item).name;
-
                 Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, rarityColor[rarity], name,  itemPosition);
-
                 auto& highlightBox = view.get<Ground_Item>(item).ground_name;
-
                 highlightBox = Utilities::SDL_Rect_To_SDL_FRect(itemTextBox.textBoxBackground);
 				Hightlight_Item_Under_Cursor(highlightBox);
-
                 SDL_RenderFillRect(Graphics::renderer, &itemTextBox.textBoxBackground);
 				SDL_RenderCopyF(Graphics::renderer, itemTextBox.textdata.pTexture, &itemTextBox.textdata.k, &itemTextBox.highlightBox);
 				SDL_DestroyTexture(itemTextBox.textdata.pTexture);
@@ -401,9 +345,8 @@ namespace Items {
 		//run rect collsion to break up the item names
 	}
 
-    void Name_On_Mouseover (entt::registry& zone, Camera& camera) {
-        auto view = zone.view<Ground_Item, Position, Rarity, Name, Renderable>();
-
+    void Name_On_Mouseover (entt::registry& zone, Component::Camera& camera) {
+        auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();
         for (auto item : view) {
             auto &box = view.get<Ground_Item>(item);
             if (Mouse::FRect_inside_Cursor(box.box)) {
@@ -413,15 +356,12 @@ namespace Items {
                 ///
                 ///need name for string
                 /// need rarity for colour
-                auto &itemPosition = view.get<Position>(item);
+                auto &itemPosition = view.get<Component::Position>(item);
                 auto &rarity = view.get<Rarity>(item);
                 auto &name = view.get<Name>(item).name;
-
                 Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, rarityColor[rarity], name,  itemPosition);
-
                 auto& highlightBox = view.get<Ground_Item>(item).ground_name;
                 highlightBox = Utilities::SDL_Rect_To_SDL_FRect(itemTextBox.textBoxBackground);
-
                 SDL_RenderFillRect(Graphics::renderer, &itemTextBox.textBoxBackground);
                 SDL_RenderCopyF(Graphics::renderer, itemTextBox.textdata.pTexture, &itemTextBox.textdata.k, &itemTextBox.highlightBox);
                 SDL_DestroyTexture(itemTextBox.textdata.pTexture);
@@ -477,7 +417,6 @@ namespace Items {
             {Weapon_Material::bronze, 1},
             {Weapon_Material::iron, 2},
         };
-
 		ArmorTypeName = {
 			{Item_Component::Armor_Type::cloth, "cloth"},
 			{Item_Component::Armor_Type::padded, "padded"},
@@ -485,7 +424,6 @@ namespace Items {
 			{Item_Component::Armor_Type::mail, "mail"},
 			{Item_Component::Armor_Type::plate, "plate"}
 		};
-
 		ItemTypeName = {
 			{Item_Component::Item_Type::helm, "helmet"},
 			{Item_Component::Item_Type::chest, "chestpiece"},
@@ -499,15 +437,12 @@ namespace Items {
             {Item_Component::Weapon_Material::bronze, "bronze"},
             {Item_Component::Weapon_Material::iron, "iron"},
         };
-
         weaponTypeName = {
                 {Item_Component::Weapon_Type::sword, "sword"},
                 {Item_Component::Weapon_Type::axe, "axe"},
                 {Item_Component::Weapon_Type::mace, "mace"},
                 {Item_Component::Weapon_Type::spear, "spear"}
         };
-
-
 		baseStatData = {
 			{Item_Component::Stat::health, 100},
 			{Item_Component::Stat::damage, 2},
@@ -516,10 +451,7 @@ namespace Items {
 			{Item_Component::Stat::piety, 10},
 			{Item_Component::Stat::attackSpeed, 500},
 		};
-
-
 		statData = baseStatData;
-
 		statName = {
 			{Item_Component::Stat::health, "Health"},
 			{Item_Component::Stat::damage, "Damage"},
@@ -529,8 +461,4 @@ namespace Items {
 			{Item_Component::Stat::attackSpeed, "Attack Speed"},
 		};
 	}
-
-
-
-
 }

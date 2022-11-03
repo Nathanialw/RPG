@@ -8,6 +8,7 @@ namespace Mouse {
 		float Mouse_Selection_Box_x;
 		float Mouse_Selection_Box_y;
 	}
+
 	bool bRight_Mouse_Pressed = false;
 	bool bLeft_Mouse_Pressed = false;
 	float iXMouse;
@@ -22,8 +23,6 @@ namespace Mouse {
 
 	entt::entity mouseItem;
 	bool itemCurrentlyHeld = false;
-
-	
 
 	bool FRect_inside_Cursor(SDL_FRect &rect) {
 		SDL_FRect cursor = { iXWorld_Mouse, iYWorld_Mouse, cursorSize, cursorSize };
@@ -54,9 +53,5 @@ namespace Mouse {
 			return true;
 		}
 		return false;
-		
 	};
-
-
-	
 }

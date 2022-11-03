@@ -26,13 +26,13 @@ namespace Death_Spells {
 		zone.emplace<Component::animation>(skeleton0, Graphics::unitTextures[unitID]); /// need to load the texture nly once and pass the pointer intothis function
 		zone.get<Component::animation>(skeleton0).sheet = { //populate the vector
 			{ NULL },
-			{ {0   , 0, 128, 128}, 0,    512,  1, 0, 75.0f, 0.0f},//idle array[numframes] = { 2ms, 4ms, 2ms}
-			{ {512,  0, 128, 128}, 512,  1024, 0, 0, 75.0f, 0.0f},//walk
-			{ {1536, 0, 128, 128}, 1536, 512,  0, 0, 75.0f, 0.0f},//atack
-			{ {2048, 0, 128, 128}, 2048, 512,  0, 0, 75.0f, 0.0f},//cast
-			{ {2560, 0, 128, 128}, 2560, 256,  0, 0, 75.0f, 0.0f},//block
-			{ {2816, 0, 128, 128}, 2816, 768,  0, 0, 75.0f, 0.0f}, //reverse to summon
-			{ {3584, 0, 128, 128}, 3584, 512,  1, 0, 75.0f, 0.0f},//ranged
+			{ {0   , 0, 128, 128}, 0,    512,  1, 0, 75, 0},//idle array[numframes] = { 2ms, 4ms, 2ms}
+			{ {512,  0, 128, 128}, 512,  1024, 0, 0, 75, 0},//walk
+			{ {1536, 0, 128, 128}, 1536, 512,  0, 0, 75, 0},//atack
+			{ {2048, 0, 128, 128}, 2048, 512,  0, 0, 75, 0},//cast
+			{ {2560, 0, 128, 128}, 2560, 256,  0, 0, 75, 0},//block
+			{ {2816, 0, 128, 128}, 2816, 768,  0, 0, 75, 0}, //reverse to summon
+			{ {3584, 0, 128, 128}, 3584, 512,  1, 0, 75, 0},//ranged
 		};
 		zone.emplace<Component::Sprite_Offset>(skeleton0, 60.0f, 95.0f );
 		auto &scale = zone.emplace<Component::Scale>(skeleton0, 1.0f);

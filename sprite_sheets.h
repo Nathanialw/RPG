@@ -48,6 +48,9 @@ namespace Sprite_Sheet {
         int h = 0;
         float x_offset = 0;
         float y_offset = 0;
+        int sheet_width = 0;
+        int64_t time_between_frames = 0;
+        std::string sheet_type = "flare";
         Frame_Data isStatic = {0,0,0,0};
         Frame_Data idle = {0,0,0,0};
         Frame_Data walk = {0,0,0,0};
@@ -69,13 +72,14 @@ namespace Sprite_Sheet {
     };
 
     sheetData Get_Spritesheet_Data_From_db(std::string sheet) {// needs to search for  a specific row that I can input in the arguments
+        std::string sheet_name = db::Append_Quotes(sheet);
         //check if the name exists??
         sheetData values;
         sqlite3_stmt* stmt;
         char buf[650];
         const char* ii = "SELECT static_start, static_num_frames, static_reverses, idle_start, idle_num_frames, idle_reverses, walk_start, walk_num_frames, walk_reverses, run_start, run_num_frames, run_reverses, attack_start, attack_num_frames, attack_reverses, attack_2_start, attack_2_num_frames, attack_2_reverses, cast_start, cast_num_frames, cast_reverses, struck_start, struck_num_frames, struck_reverses, block_start, block_num_frames, block_reverses, evade_start, evade_num_frames, evade_reverses, stunned_start, stunned_num_frames, stunned_reverses, dead_start, dead_num_frames, dead_reverses FROM sprite_sheet WHERE sprite_sheet = ";
         strcpy(buf, ii);
-        strcat(buf, sheet.c_str());
+        strcat(buf, sheet_name.c_str());
         sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
         while (sqlite3_step(stmt) != SQLITE_DONE) {
             values.isStatic.firstFrame = sqlite3_column_int(stmt, 0);
@@ -130,7 +134,7 @@ namespace Sprite_Sheet {
         char buf2[500];
         const char* jj = "SELECT low_hp_start, low_hp_num_frames, low_hp_reverses, resting_start, resting_num_frames, resting_reverses, ranged_start, ranged_num_frames, ranged_reverses, cheer_start, cheer_num_frames, cheer_reverses, behavior_start, behavior_num_frames, behavior_reverses, summoned_start, summoned_num_frames, summoned_reverses FROM sprite_sheet WHERE sprite_sheet = ";
         strcpy(buf2, jj);
-        strcat(buf2, sheet.c_str());
+        strcat(buf2, sheet_name.c_str());
         sqlite3_prepare_v2(db::db, buf2, -1, &stmt2, 0);
         while (sqlite3_step(stmt2) != SQLITE_DONE) {
             values.low_hp.firstFrame = sqlite3_column_int(stmt, 37);
@@ -183,19 +187,25 @@ namespace Sprite_Sheet {
         return &frameData;
     };
 
-
     void Get_Spritesheet_Layout_From_db(std::string &sheet, sheetData &data) {// needs to search for  a specific row that I can input in the arguments
+        std::string sheet_name = db::Append_Quotes(sheet);
         sqlite3_stmt* stmt;
-        char buf[100];
-        const char* ii = "SELECT w, h, x_offset, y_offset FROM sprite_layout WHERE sprite_sheet = ";
+        const unsigned char* sheetType;
+        char buf[200];
+        const char* ii = "SELECT sprite_width, sprite_height, x_offset, y_offset, sheet_width, sheet_type, time_between_frames FROM sprite_layout WHERE sprite_sheet = ";
         strcpy(buf, ii);
-        strcat(buf, sheet.c_str());
+        strcat(buf, sheet_name.c_str());
         sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
         while (sqlite3_step(stmt) != SQLITE_DONE) {
             data.w = sqlite3_column_int(stmt, 0);
             data.h = sqlite3_column_int(stmt, 1);
             data.x_offset = (float)sqlite3_column_double(stmt, 2);
             data.y_offset = (float)sqlite3_column_double(stmt, 3);
+            data.sheet_width = sqlite3_column_int(stmt, 4);
+            sheetType = sqlite3_column_text(stmt, 5);
+            data.time_between_frames = sqlite3_column_int(stmt, 6);
+            const char * s = (const char *)sheetType;
+            data.sheet_type = std::string(reinterpret_cast< const char *> (s));
         }
     }
 

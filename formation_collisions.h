@@ -2,8 +2,6 @@
 #include "entt.hpp"
 #include "components.h"
 
-using namespace Component;
-
 namespace Formation_Collision {
 	
 	int iActual_Resolves = 0;
@@ -84,28 +82,28 @@ namespace Formation_Collision {
 		}
 	}
 
-	void Add_Or_Update_Collidee(entt::registry& zone, entt::entity& entity, Position& position, float& potentialX, float& potentialY, Entity_Interaction& type) {
-		if (zone.any_of<Collided>(entity)) {
-			auto& interaction = zone.get<Collided>(entity);
+	void Add_Or_Update_Collidee(entt::registry& zone, entt::entity& entity, Component::Position& position, float& potentialX, float& potentialY, Component::Entity_Interaction& type) {
+		if (zone.any_of<Component::Collided>(entity)) {
+			auto& interaction = zone.get<Component::Collided>(entity);
 			interaction.x += potentialX; // * normalized mass
 			interaction.y += potentialY;
 			interaction.InteractionList.emplace_back(type);
 		}
 		else {
-			auto& interaction = zone.emplace<Collided>(entity);
+			auto& interaction = zone.emplace<Component::Collided>(entity);
 			interaction = { position.x += potentialX, position.y += potentialY };
 			interaction.InteractionList.emplace_back(type);
 		}
 	}
-	void Add_Or_Update_Collider(entt::registry& zone, entt::entity& entity, Position& position, float& potentialX, float& potentialY, Entity_Interaction& type) {
-		if (zone.any_of<Collided>(entity)) {
-			auto& interaction = zone.get<Collided>(entity);
+	void Add_Or_Update_Collider(entt::registry& zone, entt::entity& entity, Component::Position& position, float& potentialX, float& potentialY, Component::Entity_Interaction& type) {
+		if (zone.any_of<Component::Collided>(entity)) {
+			auto& interaction = zone.get<Component::Collided>(entity);
 			interaction.x -= potentialX; // * normalized mass
 			interaction.y -= potentialY;
 			interaction.InteractionList.emplace_back(type);
 		}
 		else {
-			auto& interaction = zone.emplace<Collided>(entity);
+			auto& interaction = zone.emplace<Component::Collided>(entity);
 			interaction = { position.x -= potentialX, position.y -= potentialY };
 			interaction.InteractionList.emplace_back(type);
 		}
@@ -130,15 +128,15 @@ namespace Formation_Collision {
 					float fNomalizedMassA = (soldier1.mass / fTotalmass);
 					float fNomalizedMassB = (soldier2.mass / fTotalmass);
 
-					
 
-					Entity_Interaction interaction1 = {  soldier1.unit_ID, Entity_Type::unit };
-					Position position = { soldier2.x, soldier2.y };
+
+                    Component::Entity_Interaction interaction1 = {  soldier1.unit_ID, Component::Entity_Type::unit };
+					Component::Position position = { soldier2.x, soldier2.y };
 					float resolverX = (resolver.x * fNomalizedMassA);
 					float resolverY = (resolver.y * fNomalizedMassA);
 					Add_Or_Update_Collider(zone, soldier2.unit_ID, position, resolverX, resolverY, interaction1);
 
-					Entity_Interaction interaction2 = { soldier2.unit_ID, Entity_Type::unit };
+                    Component::Entity_Interaction interaction2 = { soldier2.unit_ID, Component::Entity_Type::unit };
 					position = { soldier1.x, soldier1.y };
 					resolverX = (resolver.x * fNomalizedMassB); // * normalized mass
 					resolverY = (resolver.y * fNomalizedMassB);
@@ -274,7 +272,7 @@ namespace Formation_Collision {
 		}
 	}
 
-	void Entity_Unit_Intersect(entt::registry& zone, Test::Soldier_Data& soldier, Test::Soldier_Data &entity, Entity_Type &type) {
+	void Entity_Unit_Intersect(entt::registry& zone, Test::Soldier_Data& soldier, Test::Soldier_Data &entity, Component::Entity_Type &type) {
 		if (soldier.bAlive == true && entity.bAlive == true) {
 			if (soldier.unit_ID != entity.unit_ID) {
 
@@ -297,14 +295,14 @@ namespace Formation_Collision {
 						std::cout << "weapon" << std::endl;
 					}
 
-					Entity_Interaction interaction1 = { soldier.unit_ID, Entity_Type::unit };
-					Position position = { entity.x, entity.y };
+                    Component::Entity_Interaction interaction1 = { soldier.unit_ID, Component::Entity_Type::unit };
+					Component::Position position = { entity.x, entity.y };
 					float resolverX = (resolver.x * fNomalizedMassA);
 					float resolverY = (resolver.y * fNomalizedMassA);
 					Add_Or_Update_Collider(zone, entity.unit_ID, position, resolverX, resolverY, interaction1);
 
 
-					Entity_Interaction interaction2 = { entity.unit_ID, type };
+                    Component::Entity_Interaction interaction2 = { entity.unit_ID, type };
 					position = { soldier.x, soldier.y };
 					resolverX = (resolver.x * fNomalizedMassB); // * normalized mass
 					resolverY = (resolver.y * fNomalizedMassB);
@@ -326,17 +324,17 @@ namespace Formation_Collision {
 		Test::Unit_Formation_Data platoonData;
 		Test::Unit_Formation_Data squadData;
 		
-		auto view = zone.view<Radius, Position, Mass, Alive, Entity_Type>(entt::exclude<Component::Assigned_To_Formation>);
+		auto view = zone.view<Component::Radius, Component::Position, Component::Mass, Component::Alive, Component::Entity_Type>(entt::exclude<Component::Assigned_To_Formation>);
 		auto army_view = zone.view<Test::Army, Test::Unit_Formation_Data>();
 		auto soldiers_view = zone.view<Test::Soldiers_Assigned_List>();
 		
 		
 		for (auto entity_ID : view) {
-			auto& radius = view.get<Radius>(entity_ID).fRadius;
-			auto& position = view.get<Position>(entity_ID);
-			auto& mass = view.get<Mass>(entity_ID).fKilos;
-			auto& alive = view.get<Alive>(entity_ID).bIsAlive;
-			auto& type = view.get<Entity_Type>(entity_ID);
+			auto& radius = view.get<Component::Radius>(entity_ID).fRadius;
+			auto& position = view.get<Component::Position>(entity_ID);
+			auto& mass = view.get<Component::Mass>(entity_ID).fKilos;
+			auto& alive = view.get<Component::Alive>(entity_ID).bIsAlive;
+			auto& type = view.get<Component::Entity_Type>(entity_ID);
 			SDL_FRect entityColliderRect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
 
 			for (auto armies : army_view) {
@@ -446,8 +444,8 @@ namespace Formation_Collision {
 	//														for (int m = 0; m < map.nodes[i].nodes[j].nodes[k].cells[l].entities.size(); m++) {
 	//															auto& radius = zone.get<Radius>(map.nodes[i].nodes[j].nodes[k].cells[l].entities.at(m));
 	//															auto& mass = zone.get<Mass>(map.nodes[i].nodes[j].nodes[k].cells[l].entities.at(m));
-	//															auto& x = zone.get<Position>(map.nodes[i].nodes[j].nodes[k].cells[l].entities.at(m));
-	//															auto& y = zone.get<Position>(map.nodes[i].nodes[j].nodes[k].cells[l].entities.at(m));
+	//															auto& x = zone.get<Component::Position>(map.nodes[i].nodes[j].nodes[k].cells[l].entities.at(m));
+	//															auto& y = zone.get<Component::Position>(map.nodes[i].nodes[j].nodes[k].cells[l].entities.at(m));
 	//															for (int e = 0; e < squad.iSub_Units.size(); e++) {
 	//																float fx = squad.fPX.at(e) - x.x;
 	//																float fy = squad.fPY.at(e) - y.y;

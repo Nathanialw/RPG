@@ -33,156 +33,121 @@ namespace Rendering {
 	};
 
 	void sort_Positions(entt::registry &zone) {
-		zone.sort<Renderable>([](const auto& lhs, const auto& rhs) { return lhs.y < rhs.y; }); //sorts position least to
+		zone.sort<Component::Renderable>([](const auto& lhs, const auto& rhs) { return lhs.y < rhs.y; }); //sorts position least to
 	}
 
-	int Original_Direction_Enum(Direction &direction) {
-		switch (direction) {
-		case Direction::N: return 2;
-		case Direction::S: return 6;
-		case Direction::E: return 4;
-		case Direction::W: return 0;
-		case Direction::NW: return 1;
-		case Direction::NE: return 3;
-		case Direction::SW: return 7;
-		case Direction::SE: return 5;
-		}
-	}
-
-	SDL_Rect Frame_Update(spriteframes& spritesheet, Direction& direction, Actions& act) {
-		SDL_Rect frame = spritesheet.clip;
-		int direcitonIndex = Original_Direction_Enum(direction);
-		if (act.action != isStatic) {
-            //overflow reset
-            if (frame.x > spritesheet.frameStart + spritesheet.sheetWidth - frame.w) {
-                frame.x = spritesheet.frameStart;
-            }
-            //check which directioon is facing then change clip.y to sprite height x direction enum
-			frame.y = frame.h * direcitonIndex;
-            //render first frame
-            if (act.frameCount[act.action].currentFrame == 0) {
-                frame.x = spritesheet.frameStart;
-                act.frameCount[act.action].currentFrame++;
-                return frame;
-            }
-			if (act.action != dead) {
-				if (act.action == struck) {
-					if (act.frameCount[act.action].currentFrame > act.frameCount[act.action].NumFrames) {
-						act.frameCount[act.action].currentFrame = 0;
-						act.action = idle;
-						return frame;
-					}
-					else {
-						act.frameCount[act.action].currentFrame++;
-						return frame;
-					}
-				}
-				if (spritesheet.bReversable) {
-					if (spritesheet.bReversing == true) {
-						frame.x += (frame.w * act.frameCount[act.action].currentFrame);
-						//std::cout << "forward :" << x.x << std::endl;
-						if (frame.x >= spritesheet.frameStart + spritesheet.sheetWidth - frame.w) { spritesheet.bReversing = false; };
-							act.frameCount[act.action].currentFrame++;
-							return frame;
-						}
-					else if (spritesheet.bReversing == false) {
-					frame.x = (frame.x + (frame.w * act.frameCount[act.action].currentFrame)) - frame.w;
-					//std::cout << "reversing :" << x.x << std::endl;
-					if (frame.x <= spritesheet.frameStart) { spritesheet.bReversing = true; };
-					act.frameCount[act.action].currentFrame--;
-					return frame;
-					}
-				}
-				if (!spritesheet.bReversable) {
-					frame.x += (frame.w * act.frameCount[act.action].currentFrame);
-					//std::cout << "forward :" << x.x << std::endl;
-					if (frame.x > spritesheet.frameStart + spritesheet.sheetWidth - frame.w) {
-						frame.x = spritesheet.frameStart;
-					}
-					if (act.frameCount[act.action].currentFrame >= act.frameCount[act.action].NumFrames) {
-						act.frameCount[act.action].currentFrame = 0;
-						return frame;
-					}
-					else {
-						act.frameCount[act.action].currentFrame++;
-						return frame;
-					}
-				}
-			}
-		}
-		if (act.action == dead) {
-			if (act.frameCount[act.action].currentFrame < act.frameCount[act.action].NumFrames) {
-				act.frameCount[act.action].currentFrame++;
-			}
-			frame.x += (frame.w * act.frameCount[act.action].currentFrame);
-		}
-		return frame;
-	}
-
-    SDL_Rect Frame_Update2(spriteframes& spritesheet, Direction& direction, Actions& act) {
-        SDL_Rect frame = spritesheet.clip;
-        int direcitonIndex = Original_Direction_Enum(direction);
-        int currentFrame = act.frameCount[act.action].currentFrame;
-        //need to define in db
-        int fullFheetWidth = 0;
-        frame.x = ((frame.w * currentFrame) + (direcitonIndex * currentFrame));
-        frame.y = (currentFrame % fullFheetWidth);
-        //render first frame
-        if (currentFrame == 0) {
-            act.frameCount[act.action].currentFrame++;
-            return frame;
-        }
-        if (act.action != isStatic) {
-            //get the first frame of the action state
-            //add increment * direction
-            //frame.y = frame.h * direcitonIndex; //check which directioon is facing then change clip.y to sprite height x direction enum
-            if (frame.x > spritesheet.frameStart + spritesheet.sheetWidth - frame.w) {
-                frame.x = spritesheet.frameStart;
-            }
-            if (act.action != dead) {
-                if (act.action == struck) {
-                    if (act.frameCount[act.action].currentFrame > act.frameCount[act.action].NumFrames) {
-                        act.frameCount[act.action].currentFrame = 0;
-                        act.action = idle;
-                        return frame;
-                    } else {
-                        act.frameCount[act.action].currentFrame++;
-                        return frame;
-                    }
-                }
-                if (spritesheet.bReversable) {
-                    if (spritesheet.bReversing == true) {
-                        frame.x += (frame.w * act.frameCount[act.action].currentFrame);
-                        //std::cout << "forward :" << x.x << std::endl;
-                        if (frame.x >= spritesheet.frameStart + spritesheet.sheetWidth -
-                                       frame.w) { spritesheet.bReversing = false; };
-                        act.frameCount[act.action].currentFrame++;
-                        return frame;
-                    } else if (spritesheet.bReversing == false) {
-                        frame.x = (frame.x + (frame.w * act.frameCount[act.action].currentFrame)) - frame.w;
-                        //std::cout << "reversing :" << x.x << std::endl;
-                        if (frame.x <= spritesheet.frameStart) { spritesheet.bReversing = true; };
-                        act.frameCount[act.action].currentFrame--;
-                        return frame;
-                    }
-                }
-                if (!spritesheet.bReversable) {
-                    //std::cout << "forward :" << x.x << std::endl;
-                    if (frame.x > spritesheet.frameStart + spritesheet.sheetWidth - frame.w) {
-                        frame.x = spritesheet.frameStart;
-                    }
-                    if (act.frameCount[act.action].currentFrame >= act.frameCount[act.action].NumFrames) {
-                        act.frameCount[act.action].currentFrame = 0;
-                        return frame;
-                    } else {
-                        act.frameCount[act.action].currentFrame++;
-                        return frame;
-                    }
-                }
-            }
+    int PVG_Direction_Enum(Component::Direction &direction) {
+        switch (direction) {
+            case Component::Direction::N: return 3;
+            case Component::Direction::S: return 0;
+            case Component::Direction::E: return 2;
+            case Component::Direction::W: return 1;
+            case Component::Direction::NW: return 5;
+            case Component::Direction::NE: return 7;
+            case Component::Direction::SW: return 4;
+            case Component::Direction::SE: return 6;
         }
     }
 
+    SDL_Rect Update_Frame_PVG(SDL_Rect &frame, Component::Frame_Data &frameData, Component::Direction &direction, Component::spriteframes &sheet) {
+        int spritesPerLine = sheet.sheetWidth/sheet.clip.w;
+            ///the x index in absolute terms
+        int x_index = sheet.frameStart + ((PVG_Direction_Enum(direction) * frameData.NumFrames) + frameData.currentFrame);
+            ///the x index in relative terms
+        int x_rel_index = x_index % spritesPerLine;
+            ///the x index in pixel terms
+        frame.x = x_rel_index * sheet.clip.w;
+            ///after dividing away the x index, add the remainder
+        int y_index = x_index / spritesPerLine;
+            ///the y index in pixel terms
+        frame.y = y_index * sheet.clip.w;
+        return frame;
+    }
+
+    int Original_Direction_Enum(Component::Direction &direction) {
+        switch (direction) {
+            case Component::Direction::N: return 2;
+            case Component::Direction::S: return 6;
+            case Component::Direction::E: return 4;
+            case Component::Direction::W: return 0;
+            case Component::Direction::NW: return 1;
+            case Component::Direction::NE: return 3;
+            case Component::Direction::SW: return 7;
+            case Component::Direction::SE: return 5;
+        }
+    }
+
+    SDL_Rect Update_Frame_Flare (SDL_Rect &frame, Component::Frame_Data &frameData, Component::Direction& direction, Component::spriteframes& spritesheet) {
+        frame.x = (spritesheet.frameStart + frameData.currentFrame) * frame.w;
+        frame.y = frame.h * Original_Direction_Enum(direction);
+        return frame;
+    }
+
+    SDL_Rect Get_Spritesheet_Type(SDL_Rect &frame, Component::animation& animation, Component::Direction& direction, Component::Actions& act) {
+        if (animation.type == "flare"){
+            frame = Update_Frame_Flare(frame, act.frameCount[act.action], direction, animation.sheet[act.action]);
+        }
+        else if (animation.type == "pvg"){
+            frame = Update_Frame_PVG(frame, act.frameCount[act.action], direction, animation.sheet[act.action]);
+        }
+        else {
+            //Utilities::Log("Error! Frame_Update() could not find animation type!");
+                ///maybe have a special return value to make this more obvious
+            frame = Update_Frame_Flare(frame, act.frameCount[act.action], direction, animation.sheet[act.action]);
+            return frame;
+        }
+        return frame;
+    }
+
+    bool Death_Sequence (Component::Actions& act) {
+        if (act.action == Component::dead) {
+            if (act.frameCount[act.action].currentFrame < act.frameCount[act.action].NumFrames - 1) {
+                act.frameCount[act.action].currentFrame++;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    SDL_Rect Update_Frame(Component::animation &animation, Component::Direction& direction, Component::Actions& act) {
+        SDL_Rect frame = animation.sheet[act.action].clip;
+        if (act.action != Component::isStatic) {            ;
+            Component::spriteframes &spritesheet = animation.sheet[act.action];
+            auto &action = act.frameCount[act.action];
+            if (act.action == Component::attack) {
+                Utilities::Log(action.currentFrame);
+            }
+            frame = Get_Spritesheet_Type(frame, animation, direction, act);
+            if (Death_Sequence(act)) {
+                return frame;
+            }
+                ///render first frame before increment
+            if (action.currentFrame == 0) {
+                action.currentFrame++;
+                spritesheet.bReversing = false;
+                return frame;
+            }
+            if (spritesheet.bReversing == false) {
+                act.frameCount[act.action].currentFrame++;
+            }
+            if (spritesheet.bReversable) {
+                if (spritesheet.bReversing == true) {
+                    action.currentFrame--;
+                }
+                    /// -1 becausee of the zero index
+                if (action.currentFrame >= action.NumFrames - 1){
+                    spritesheet.bReversing = true;
+                }
+            }
+            else if (action.currentFrame >= action.NumFrames) {
+                act.frameCount[act.action].currentFrame = 0;
+                if (act.action != Component::walk) {
+                    act.action = Component::idle;
+                }
+            }
+        }
+        return frame;
+    }
 
 	SDL_FRect Scale_Sprite_for_Render(SDL_Rect& clippedSprite, float& scale) {
 		SDL_FRect fScaledImage = Utilities::SDL_Rect_To_SDL_FRect(clippedSprite);
@@ -192,47 +157,36 @@ namespace Rendering {
 			fScaledImage.w * scale,
 			fScaledImage.h * scale
 		};
-
 		return fScaledImage;
 	}
 
-	void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
-		SDL_Rect xClipPos;
-		float sx;
-		float sy;
-		auto view1 = zone.view<Renderable, Position, animation, Actions, Direction, Sprite_Offset, Scale, Entity_Type>();
+    void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
+		auto view1 = zone.view<Component::Renderable, Component::Position, Component::animation, Component::Actions, Component::Direction, Component::Sprite_Offset, Component::Scale, Component::Entity_Type>();
 		for (auto entity : view1) {
-			auto& alpha = view1.get<Renderable>(entity).alpha;
-			auto& d = view1.get<Direction>(entity);
-			auto& scale = view1.get<Scale>(entity).scale;
-			auto& anim = view1.get<animation>(entity);
-			auto& x = view1.get<Position>(entity);
-			auto& y = view1.get<Position>(entity);
-			auto& act = view1.get<Actions>(entity);
-			auto& type = view1.get<Entity_Type>(entity);
-			auto& spriteOffset = view1.get<Sprite_Offset>(entity).offset;
-			//only fire this at 60 frames/sec
-			anim.sheet[act.action].currentFrameTime += Timer::timeStep;
-//            if (anim.renderPosition.w == 96) {
-//                Utilities::Log("yeah");
-//            }
-			if (anim.sheet[act.action].currentFrameTime >= anim.sheet[act.action].timeBetweenFrames) {
-				anim.sheet[act.action].currentFrameTime = 0;
-				xClipPos = Frame_Update(anim.sheet[act.action], d, act);//get action and direction state sprite draw from
-				anim.renderPosition = Scale_Sprite_for_Render(xClipPos, scale);										//save sprite for vector
-				anim.clipSprite = xClipPos;											//save position for renderer
+			auto& alpha = view1.get<Component::Renderable>(entity).alpha;
+			auto& direction = view1.get<Component::Direction>(entity);
+			auto& scale = view1.get<Component::Scale>(entity).scale;
+			auto& anim = view1.get<Component::animation>(entity);
+			auto& position = view1.get<Component::Position>(entity);
+			auto& action = view1.get<Component::Actions>(entity);
+			auto& type = view1.get<Component::Entity_Type>(entity);
+			auto& spriteOffset = view1.get<Component::Sprite_Offset>(entity).offset;
+			    ///only fire this at 60 frames/sec
+            anim.sheet[action.action].currentFrameTime += Timer::timeStep;
+            if (anim.sheet[action.action].currentFrameTime >= anim.sheet[action.action].timeBetweenFrames) {
+                anim.sheet[action.action].currentFrameTime = 0;
+                anim.clipSprite  = Update_Frame(anim, direction, action);
+                anim.renderPosition = Scale_Sprite_for_Render(anim.clipSprite , scale);
 			}
-			sx = x.x - camera.screen.x;
-			sy = y.y - camera.screen.y;
-			anim.renderPosition.x = (sx - spriteOffset.x);
-			anim.renderPosition.y = (sy - spriteOffset.y);
-			if (type == Entity_Type::item){
+			anim.renderPosition.x = (position.x - camera.screen.x - spriteOffset.x);
+			anim.renderPosition.y = (position.y - camera.screen.y - spriteOffset.y);
+
+			if (type == Component::Entity_Type::item){
 				anim.renderPosition.w = (spriteOffset.x * 2.0f);
 				anim.renderPosition.h = (spriteOffset.y * 2.0f);
 			}
-			//fade rendering objects at bottom of screen
+			    ///fade rendering objects at bottom of screen
 			SDL_SetTextureAlphaMod(anim.pTexture, alpha);
-            //SDL_FRect renderRect = Scale_Sprite_for_Render(, scale);
 			Graphics::Render_FRect(anim.pTexture, &anim.clipSprite, &anim.renderPosition);
 			if (1) {
 				//SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
@@ -240,7 +194,7 @@ namespace Rendering {
 		}
 	}
 
-	SDL_Rect Explosion_Frame_Update(Sprite_Frames &frame, SDL_Rect frameToUpdateClipOf) {
+	SDL_Rect Explosion_Frame_Update(Component::Sprite_Frames &frame, SDL_Rect frameToUpdateClipOf) {
 		//reset X to zero and increment Y
 		if (frame.frameX >= 8) {
 			frame.frameX = 0;
@@ -261,14 +215,14 @@ namespace Rendering {
 		SDL_Rect xClipPos;
 		float sx;
 		float sy;
-		auto view = zone.view<Explosion, Position, Frame_Delay, Texture, Sprite_Frames>();
+		auto view = zone.view<Component::Explosion, Component::Position, Component::Frame_Delay, Component::Texture, Component::Sprite_Frames>();
 		for (auto spell : view) {
-			auto& anim = view.get<Explosion>(spell);
-			auto& x = view.get<Position>(spell);
-			auto& y = view.get<Position>(spell);
-			auto& texture = view.get<Texture>(spell);
-			auto& frames = view.get<Sprite_Frames>(spell);
-			auto& delay = view.get<Frame_Delay>(spell);
+			auto& anim = view.get<Component::Explosion>(spell);
+			auto& x = view.get<Component::Position>(spell);
+			auto& y = view.get<Component::Position>(spell);
+			auto& texture = view.get<Component::Texture>(spell);
+			auto& frames = view.get<Component::Sprite_Frames>(spell);
+			auto& delay = view.get<Component::Frame_Delay>(spell);
 			delay.currentFrameTime += Timer::timeStep;
 			if (delay.currentFrameTime >= delay.timeBetweenFrames) {
 				if (frames.currentFrame <= frames.maxFrames) { // if there are still frames remaining
@@ -295,35 +249,35 @@ namespace Rendering {
 		}
 	}
 
-	void Texture_Packer_Render(entt::registry &zone, Camera& camera) {
-		auto view = zone.view<Position, Texture, Sprite_Vector, Direction, Action_State>();
+	void Texture_Packer_Render(entt::registry &zone, Component::Camera& camera) {
+		auto view = zone.view<Component::Position, Component::Texture, Component::Sprite_Vector, Component::Direction, Component::Action_State>();
 		for (auto lion : view) {
-			auto &position = view.get<Position>(lion);
-			SDL_Texture *texture = view.get<Texture>(lion).pTexture;
-			const Action_State &actionState = view.get<Action_State>(lion);
-			const Direction &direction = view.get<Direction>(lion);
-			Sprite_Sheet_Data* clippedSprite = view.get<Sprite_Vector>(lion).sheet;
-			Frame *frameDataArray = view.get<Sprite_Vector>(lion).states;
-			int &currentFrame = view.get<Sprite_Vector>(lion).currentFrame;
-			const int& frameTime= view.get<Sprite_Vector>(lion).frameTime;
-			int& frameTimeCount= view.get<Sprite_Vector>(lion).FrameTimeCount;
-			SDL_Rect& clip = view.get<Sprite_Vector>(lion).clip;
-			SDL_FRect& render = view.get<Sprite_Vector>(lion).render;
+			auto &position = view.get<Component::Position>(lion);
+			SDL_Texture *texture = view.get<Component::Texture>(lion).pTexture;
+			const Component::Action_State &actionState = view.get<Component::Action_State>(lion);
+			const Component::Direction &direction = view.get<Component::Direction>(lion);
+            Component::Sprite_Sheet_Data* clippedSprite = view.get<Component::Sprite_Vector>(lion).sheet;
+            Component::Frame *frameDataArray = view.get<Component::Sprite_Vector>(lion).states;
+			int &currentFrame = view.get<Component::Sprite_Vector>(lion).currentFrame;
+			const int& frameTime= view.get<Component::Sprite_Vector>(lion).frameTime;
+			int& frameTimeCount= view.get<Component::Sprite_Vector>(lion).FrameTimeCount;
+			SDL_Rect& clip = view.get<Component::Sprite_Vector>(lion).clip;
+			SDL_FRect& render = view.get<Component::Sprite_Vector>(lion).render;
 			frameTimeCount += Timer::timeStep;
 			if (frameTimeCount >= frameTime) {
 				frameTimeCount = 0;
-				Frame frameData = frameDataArray[actionState];
+                Component::Frame frameData = frameDataArray[actionState];
 				int startFrame = frameData.startFrame + (frameData.numFrames * (int)direction);
 				int endFrame = startFrame + frameData.numFrames;
 				if (currentFrame < startFrame) {
 					currentFrame = startFrame;
 				}
-				if (actionState != Action_State::dead) {
+				if (actionState != Component::Action_State::dead) {
 					if (currentFrame >= endFrame) {
 						currentFrame = startFrame;
 					}
 				}
-				if (actionState != Action_State::dead && currentFrame != endFrame) {
+				if (actionState != Component::Action_State::dead && currentFrame != endFrame) {
 					currentFrame++;
 				}
 			}
@@ -353,7 +307,7 @@ namespace Rendering {
 		return tileSpriteRect;
 	}
 
-	void Render_Map(entt::registry &zone, tmx::Map& map, Camera& camera) {
+	void Render_Map(entt::registry &zone, tmx::Map& map, Component::Camera& camera) {
 		float originX = 0.0f;
 		float originY = 0.0f;
 		SDL_Rect tileSpriteRect = { 0, 0, (int)map.getTileSize().x , (int)map.getTileSize().y };
@@ -447,11 +401,11 @@ namespace Rendering {
 
 	void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {
 		SDL_FRect DisplayRect = {};
-		auto view = zone.view<Position, Icon, On_Mouse>();
+		auto view = zone.view<Component::Position, Component::Icon, Component::On_Mouse>();
 		for (auto item : view) {
-			const auto& icon = view.get<Icon>(item);
-			const auto& x = view.get<Position>(item).x;
-			const auto& y = view.get<Position>(item).y;
+			const auto& icon = view.get<Component::Icon>(item);
+			const auto& x = view.get<Component::Position>(item).x;
+			const auto& y = view.get<Component::Position>(item).y;
 			DisplayRect.x = (x - camera.screen.x) - (icon.renderPositionOffset.x / camera.scale.x);
 			DisplayRect.y = (y - camera.screen.y) - (icon.renderPositionOffset.y / camera.scale.y);
 			DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
@@ -468,11 +422,11 @@ namespace Rendering {
 	void RenderCullMode(entt::registry& zone) {
 		if (renderType == true) {
 			renderType = false;
-			zone.clear<Renderable>();
+			zone.clear<Component::Renderable>();
 			}
 		else {
 			renderType = true;
-			zone.clear<Renderable>();
+			zone.clear<Component::Renderable>();
 		}
 	}
 
@@ -496,20 +450,19 @@ namespace Rendering {
 			camera.screen.y - (camera.screen.h / 2.0f),
 			camera.screen.w * 2.0f,
 			camera.screen.h * 2.0f };
-		auto objectsView = zone.view<Position>(entt::exclude<Inventory>);
+		auto objectsView = zone.view<Component::Position>(entt::exclude<Component::Inventory>);
 		float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
 		float bottomOfRenderRect = renderRect.y + renderRect.h;
 		for (auto entity : objectsView) {
-			auto& x = objectsView.get<Position>(entity).x;
-			auto& y = objectsView.get<Position>(entity).y;
-			SDL_FPoint point = {x, y};
+			auto& position = objectsView.get<Component::Position>(entity);
+			SDL_FPoint point = {position.x, position.y};
 			if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
-				int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, y);
-				zone.emplace_or_replace<Renderable>(entity, y, alpha);
+				int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
+				zone.emplace_or_replace<Component::Renderable>(entity, position.y, alpha);
 				j++;
 			}
 			else {
-				zone.remove<Renderable>(entity);
+				zone.remove<Component::Renderable>(entity);
 			}
 		}
 	}
@@ -541,17 +494,17 @@ namespace Rendering {
 	}
 
 	void Update_Camera_And_Mouse(entt::registry& zone) {
-		auto focus_view = zone.view<Camera, Position>();
+		auto focus_view = zone.view<Component::Camera, Component::Position>();
 		for (auto player : focus_view) {
-			auto& camera = focus_view.get<Camera>(player);
-			auto& position = focus_view.get<Position>(player);
+			auto& camera = focus_view.get<Component::Camera>(player);
+			auto& position = focus_view.get<Component::Position>(player);
 			Camera_Control::Update_Camera_Follow(camera, position, Graphics::resolution);
 			Update_Cursor(camera);
 		}
 	}
 
 	void Remove_Entities_From_Registry(entt::registry& zone) {
-		auto view = zone.view<Destroyed>(entt::exclude<Component::In_Object_Tree>);
+		auto view = zone.view<Component::Destroyed>(entt::exclude<Component::In_Object_Tree>);
 		for (auto entity : view) {
 			zone.destroy(entity);
 		}
@@ -560,12 +513,12 @@ namespace Rendering {
 	void Rendering(entt::registry& zone) {
 		Update_Camera_And_Mouse(zone);
 		SDL_FPoint mouse = { Mouse::iXMouse, Mouse::iYMouse };
-		Character_Stats::Update_Unit_Stats(zone);
 		UI::Move_To_Item_Routine(zone, Mouse::itemCurrentlyHeld);
 		Player_Control::Move_To_Atack_Routine(zone);
-		auto camera_view = zone.view<Camera>();
+		Character_Stats::Update_Unit_Stats(zone);
+		auto camera_view = zone.view<Component::Camera>();
 		for (auto entity : camera_view) {
-			auto& camera = camera_view.get<Camera>(entity);
+			auto& camera = camera_view.get<Component::Camera>(entity);
 			SDL_RenderClear(Graphics::renderer);
 			Add_Remove_Renderable_Component(zone, camera);
 			sort_Positions(zone);
@@ -591,13 +544,14 @@ namespace Rendering {
             Render_Mouse_Item(zone, camera);
 			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
             if (Items::showGroundItems == true) {                //****//search quad tree instead
-                auto view = zone.view<Ground_Item, Renderable>();
+                auto view = zone.view<Ground_Item, Component::Renderable>();
                 for (auto item : view) {
                     auto &box =zone.get<Ground_Item>(item);
                     SDL_RenderDrawRectF(Graphics::renderer, &box.box);
                 }
             }
             SDL_RenderPresent(Graphics::renderer);
+
 		}
 	}
 }

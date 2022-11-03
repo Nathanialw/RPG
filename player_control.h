@@ -29,27 +29,25 @@ namespace Player_Control {
 	}
 
 	void Mouse_Move_Arrived_Attack_Target(entt::registry& zone) {
-		auto view = zone.view<Component::Position, Component::Velocity, Component::Actions, Player_Component::Attack_Move, Component::Moving, Component::Melee_Range>();
+		auto view = zone.view<Component::Position, Player_Component::Attack_Move, Component::Moving, Component::Melee_Range>();
 		for (auto entity : view) {
-			auto& act = view.get<Component::Actions>(entity);
-			auto& v = view.get<Component::Velocity>(entity);
 			auto& position = view.get<Component::Position>(entity);
 			auto& target = view.get<Player_Component::Attack_Move>(entity);
             //check if the target is in attack range
             auto& meleeRange = view.get<Component::Melee_Range>(entity);
-            Position targetPosition = {target.x, target.y};
-            Radius targetRadius;
+            Component::Position targetPosition = {target.x, target.y};
+            Component::Radius targetRadius;
             targetRadius.fRadius = target.hitRadius;
 			if (Entity_Control::Target_In_Melee_Range(zone, position, meleeRange, targetPosition, targetRadius)) {
                 //attack target
-                Position targetPosition = { target.x, target.y };
+                Component::Position targetPosition = { target.x, target.y };
                 Entity_Control::Melee_Attack(zone, entity, target.ID, targetPosition);
                 zone.remove<Player_Component::Attack_Move>(entity);
                 zone.remove<Component::Moving>(entity);
 			}
             else {
                 //Update target position to move to
-                auto &targetPosition = zone.get<Position>(target.ID);
+                auto &targetPosition = zone.get<Component::Position>(target.ID);
                 target.x = targetPosition.x;
                 target.y = targetPosition.y;
             }

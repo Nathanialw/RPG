@@ -29,14 +29,14 @@ namespace Texture_Packer {
 			pSpriteElement = pSpriteElement->NextSiblingElement("sprite");			
 		}
 		
-		Sprite_Sheet::maleLionActionIndex[(int)Action_State::attack] = { 0, 9 };
-		Sprite_Sheet::maleLionActionIndex[(int)Action_State::struck] = { 71, 9 };
-		Sprite_Sheet::maleLionActionIndex[(int)Action_State::cast] = { 143, 7 };//roaring 143
+		Sprite_Sheet::maleLionActionIndex[(int)Component::Action_State::attack] = { 0, 9 };
+		Sprite_Sheet::maleLionActionIndex[(int)Component::Action_State::struck] = { 71, 9 };
+		Sprite_Sheet::maleLionActionIndex[(int)Component::Action_State::cast] = { 143, 7 };//roaring 143
 		//running 199
 		//sit 271
-		Sprite_Sheet::maleLionActionIndex[(int)Action_State::idle] = { 279, 1 };//stop 279 //idle has no directions?
-		Sprite_Sheet::maleLionActionIndex[(int)Action_State::dead] = { 287, 11 };//die 287
-		Sprite_Sheet::maleLionActionIndex[(int)Action_State::walk] = { 375, 8 };//walk 375
+		Sprite_Sheet::maleLionActionIndex[(int)Component::Action_State::idle] = { 279, 1 };//stop 279 //idle has no directions?
+		Sprite_Sheet::maleLionActionIndex[(int)Component::Action_State::dead] = { 287, 11 };//die 287
+		Sprite_Sheet::maleLionActionIndex[(int)Component::Action_State::walk] = { 375, 8 };//walk 375
 
 
 

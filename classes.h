@@ -1,7 +1,8 @@
 #include <vector>
 #include "base_structs.h"
 #include "utilities.h"
-
+#include "SDL2/SDL.h"
+#include "entt.hpp"
 
 namespace Map {
 

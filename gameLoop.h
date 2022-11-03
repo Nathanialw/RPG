@@ -8,7 +8,7 @@ namespace GameLoop {
 
 	void gameLoop() {
 		while (1) {
-			Graphics::createTexture();
+
 		}
 	}
 

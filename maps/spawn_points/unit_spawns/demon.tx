@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template>
  <tileset firstgid="1" source="../../sprite_sheets/units/demon.tsx"/>
- <object name="'demon'" gid="1" width="400" height="400"/>
+ <object name="demon" gid="1" width="400" height="400"/>
 </template>

@@ -19,21 +19,21 @@ namespace Event_Handler {
 	const Uint8* state = SDL_GetKeyboardState(NULL);
 	SDL_Event event;
 
-	void Movement_Input(entt::registry& zone, Velocity& vel, Actions& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
+	void Movement_Input(entt::registry& zone, Component::Velocity& vel, Component::Actions& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
 		if (event.key.repeat == 0) {
 			if (event.type == SDL_KEYDOWN) {
-				if (act.action == idle || act.action == walk) {
+				if (act.action == Component::idle || act.action == Component::walk) {
 					if (event.type == SDL_KEYDOWN) {
-						auto& position = zone.get<Position>(entity);
+						auto& position = zone.get<Component::Position>(entity);
 						switch (event.key.keysym.sym) {
-						case SDLK_e:  zone.emplace_or_replace<Moving>(entity); vel.magnitude.y -= vel.speed; act.action = walk; break;
-						case SDLK_d:  zone.emplace_or_replace<Moving>(entity); vel.magnitude.y += vel.speed; act.action = walk; break;
-						case SDLK_s:  zone.emplace_or_replace<Moving>(entity); vel.magnitude.x -= vel.speed; act.action = walk; break;
-						case SDLK_f:  zone.emplace_or_replace<Moving>(entity); vel.magnitude.x += vel.speed; act.action = walk; break;
-						case SDLK_w:  zone.emplace_or_replace<Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x -= vel.speed; act.action = walk; break;
-						case SDLK_r:  zone.emplace_or_replace<Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x += vel.speed; act.action = walk; break;
-						case SDLK_v:  zone.emplace_or_replace<Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x += vel.speed; act.action = walk; break;
-						case SDLK_x:  zone.emplace_or_replace<Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x -= vel.speed; act.action = walk; break;
+						case SDLK_e:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; act.action = Component::walk; break;
+						case SDLK_d:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; act.action = Component::walk; break;
+						case SDLK_s:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x -= vel.speed; act.action = Component::walk; break;
+						case SDLK_f:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x += vel.speed; act.action = Component::walk; break;
+						case SDLK_w:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x -= vel.speed; act.action = Component::walk; break;
+						case SDLK_r:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x += vel.speed; act.action = Component::walk; break;
+						case SDLK_v:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x += vel.speed; act.action = Component::walk; break;
+						case SDLK_x:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x -= vel.speed; act.action = Component::walk; break;
 						}
 					}
 				}
@@ -41,31 +41,31 @@ namespace Event_Handler {
 			if (event.type == SDL_KEYUP) {
 				switch (event.key.keysym.sym)
 				{
-				case SDLK_e: zone.emplace_or_replace<Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; break;
-				case SDLK_d: zone.emplace_or_replace<Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; break;
-				case SDLK_s: zone.emplace_or_replace<Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed; break;
-				case SDLK_f: zone.emplace_or_replace<Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed; break;
-				case SDLK_w: zone.emplace_or_replace<Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
-				case SDLK_r: zone.emplace_or_replace<Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
-				case SDLK_v: zone.emplace_or_replace<Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
-				case SDLK_x: zone.emplace_or_replace<Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
+				case SDLK_e: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; break;
+				case SDLK_d: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; break;
+				case SDLK_s: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed; break;
+				case SDLK_f: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed; break;
+				case SDLK_w: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
+				case SDLK_r: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
+				case SDLK_v: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
+				case SDLK_x: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
 				}
 			}
-			if (act.action == attack) {
+			if (act.action == Component::attack) {
 				vel.magnitude.x = 0.0f;
 				vel.magnitude.y = 0.0f;
 			}
-			else if  ((vel.magnitude.x == 0.0f) && (vel.magnitude.y == 0.0f) && zone.any_of<Moving>(entity)) {
-				zone.remove<Moving>(entity);
-				act.action = idle;
+			else if  ((vel.magnitude.x == 0.0f) && (vel.magnitude.y == 0.0f) && zone.any_of<Component::Moving>(entity)) {
+				zone.remove<Component::Moving>(entity);
+				act.action = Component::idle;
 			}
 		}
 	};
 
-	void Interface_Input(entt::registry& zone, Velocity& vel, Actions& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
+	void Interface_Input(entt::registry& zone, Component::Velocity& vel, Component::Actions& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
 		if (event.key.repeat == 0) {
 			if (event.type == SDL_KEYDOWN) {
-				if (act.action != attack) {
+				if (act.action != Component::attack) {
 					switch (event.key.keysym.sym)
 					{
 					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "'fireball'"); break;
@@ -75,7 +75,7 @@ namespace Event_Handler {
 					case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
 					case SDLK_6: Interface::gridDepth++; break;
 					case SDLK_7: Interface::gridDepth--; break;
-					case SDLK_8: Rendering::RenderCullMode(World::zone); break;
+					case SDLK_8: ; break;
 					case SDLK_9: AI::Turn_On();  break;
 					case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
                     case SDLK_ESCAPE: Menu::Toggle(); break;
@@ -98,7 +98,7 @@ namespace Event_Handler {
 		}
 	};
 
-	void Mouse_Input(entt::registry &zone, entt::entity &player_ID, Position &playerPosition, Melee_Range &meleeRange, Camera &camera) {
+	void Mouse_Input(entt::registry &zone, entt::entity &player_ID, Component::Position &playerPosition, Component::Melee_Range &meleeRange, Component::Camera &camera) {
 		if (event.key.type == SDL_MOUSEBUTTONDOWN) {
 			if (event.button.button == SDL_BUTTON_LEFT) {
 				//check if cursor is in the bag UI
@@ -154,13 +154,13 @@ namespace Event_Handler {
 
 	void Update_User_Input(entt::registry &zone) {
 		while (SDL_PollEvent(&event) != 0) {
-			auto view = zone.view<Velocity, Actions, Position, Melee_Range, Input, Camera>();
+			auto view = zone.view<Component::Velocity, Component::Actions, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
 			for (auto player_ID : view) {
-				auto& playerPosition = view.get<Position>(player_ID);
-				auto& meleeRange = view.get<Melee_Range>(player_ID);
-				auto& playerVelocity = view.get<Velocity>(player_ID);
-				auto& playerAction = view.get<Actions>(player_ID);
-				auto& camera = view.get<Camera>(player_ID);
+				auto& playerPosition = view.get<Component::Position>(player_ID);
+				auto& meleeRange = view.get<Component::Melee_Range>(player_ID);
+				auto& playerVelocity = view.get<Component::Velocity>(player_ID);
+				auto& playerAction = view.get<Component::Actions>(player_ID);
+				auto& camera = view.get<Component::Camera>(player_ID);
 
 				if (event.key.type == SDL_MOUSEWHEEL) {
 					Interface::Update_Zoom(event);

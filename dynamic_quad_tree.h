@@ -286,7 +286,7 @@ namespace Dynamic_Quad_Tree {
 			object.entity_ID = entity;
 			object.rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
 
-			zone.emplace<In_Object_Tree>(entity, true);
+			zone.emplace<Component::In_Object_Tree>(entity, true);
 			treeObjects.insert(object, object.rect);
 		}
 	}
@@ -294,7 +294,7 @@ namespace Dynamic_Quad_Tree {
 
 
 	void Emplace_Objects_In_Quad_Tree(entt::registry& zone) {
-		auto view = zone.view<Component::Position, Component::Radius>(entt::exclude<In_Object_Tree>);
+		auto view = zone.view<Component::Position, Component::Radius>(entt::exclude<Component::In_Object_Tree>);
 		for (auto entity : view) {
 			auto& position = view.get<Component::Position>(entity);
 			auto& radius = view.get<Component::Radius>(entity).fRadius;
@@ -303,7 +303,7 @@ namespace Dynamic_Quad_Tree {
 			object.entity_ID = entity;
 			object.rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
 
-			zone.emplace<In_Object_Tree>(entity, true);
+			zone.emplace<Component::In_Object_Tree>(entity, true);
 			treeObjects.insert(object, object.rect);
 		}
 	}

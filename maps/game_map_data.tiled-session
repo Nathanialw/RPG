@@ -5,26 +5,26 @@
     },
     "activeFile": "untitled3.tmx",
     "expandedProjectPaths": [
-        "maps/sprites/environment",
-        "maps/spawn_points",
-        "maps/sprites/units/animals",
-        "maps/spawn_points/unit_spawns",
-        "maps/sprite_sheets/ground_tiles",
         "sprite_sheets/units",
-        "spawn_points/unit_spawns",
-        "maps/sprite_sheets",
-        "spawn_points",
-        "maps/sprite_sheets/units",
-        "maps/sprites/units/animals/no_death_animation",
-        ".",
-        "maps/sprites/units/animals/no_death_animation/cow",
-        "sprites/environment",
-        "sprite_sheets",
         "sprites/environment/path_tiles/Large 256x128",
         "maps",
         "packages/sqlite3_c_plus_plus.1.0.3/build",
+        "spawn_points/unit_spawns",
         "sprite_sheets/ground_objects",
-        "sprite_sheets/ground_tiles"
+        "maps/spawn_points",
+        "maps/sprites/environment",
+        "maps/sprite_sheets/ground_tiles",
+        "sprite_sheets/ground_tiles",
+        "sprites/environment",
+        "maps/spawn_points/unit_spawns",
+        "spawn_points",
+        "maps/sprites/units/animals",
+        "maps/sprite_sheets",
+        "maps/sprites/units/animals/no_death_animation",
+        "sprite_sheets",
+        ".",
+        "maps/sprites/units/animals/no_death_animation/cow",
+        "maps/sprite_sheets/units"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -189,12 +189,15 @@
             "scaleInEditor": 1
         },
         "sprite_sheets/units/goblin_high_shaman_00.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/goblin_high_shaman_01.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/goblin_shaman_00.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/goblin_spearman_00.tsx": {
@@ -202,12 +205,15 @@
             "scaleInEditor": 1
         },
         "sprite_sheets/units/goblin_spearman_01.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/goblin_spearman_02.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/goblin_spearman_03.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/grey_werebear_00.tsx": {
@@ -215,6 +221,7 @@
             "scaleInEditor": 1
         },
         "sprite_sheets/units/minotaur_00.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/minotaur_alpha.tsx": {
@@ -237,6 +244,7 @@
             "scaleInDock": 1
         },
         "sprite_sheets/units/rock_golem_00.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/skeleton_00.tsx": {
@@ -259,9 +267,15 @@
             "scaleInDock": 1
         },
         "sprite_sheets/units/werewolf_00.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "sprite_sheets/units/wolf_00.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/wolf_riders.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/zombie_00.tsx": {
@@ -279,46 +293,61 @@
                 "y": 14790.5
             }
         },
-        "untitled3.tmx": {
-            "scale": 0.33,
+        "untitled2.tmx": {
+            "scale": 0.12,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 25239.393939393936,
-                "y": 18962.121212121212
+                "x": 24508.333333333336,
+                "y": 12329.166666666668
+            }
+        },
+        "untitled3 (copy).tmx": {
+            "scale": 0.02166748046875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 24552.923943661975,
+                "y": 12299.538028169016
+            }
+        },
+        "untitled3.tmx": {
+            "scale": 0.25,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 29494,
+                "y": 11378
             }
         }
     },
     "last.externalTilesetPath": "/home/nathanial/Workspace/RPG_game/maps/sprite_sheets/ground_objects",
-    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/monsters/golems",
+    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/animals/wolf",
     "last.objectTemplatePath": "/home/nathanial/Workspace/RPG_game/maps/spawn_points/unit_spawns",
     "map.height": 1024,
     "map.layerDataFormat": null,
     "map.orientation": null,
     "map.width": 1024,
     "openFiles": [
-        "untitled3.tmx",
-        "sprite_sheets/units/ghoul_00.tsx"
+        "untitled3.tmx"
     ],
     "project": "game_map_data.tiled-project",
     "property.type": "int",
     "recentFiles": [
+        "untitled3.tmx",
+        "untitled3 (copy).tmx",
+        "untitled2.tmx",
+        "sprite_sheets/units/wolf_00.tsx",
+        "sprite_sheets/units/ghoul_00.tsx",
         "sprite_sheets/units/rock_golem_00.tsx",
         "sprite_sheets/units/werewolf_00.tsx",
         "sprite_sheets/units/grey_werebear_00.tsx",
         "sprite_sheets/units/minotaur_00.tsx",
         "sprite_sheets/units/minotaur_alpha.tsx",
         "sprite_sheets/units/goblin_spearman_03.tsx",
-        "sprite_sheets/units/goblin_spearman_02.tsx",
-        "sprite_sheets/units/goblin_spearman_01.tsx",
-        "sprite_sheets/units/goblin_high_shaman_01.tsx",
-        "sprite_sheets/units/goblin_high_shaman_00.tsx",
-        "sprite_sheets/units/goblin_shaman_00.tsx",
-        "sprite_sheets/units/wolf_riders.tsx"
+        "sprite_sheets/units/goblin_spearman_02.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
-        "height": 128,
-        "width": 128
+        "height": 200,
+        "width": 200
     },
     "tileset.type": 0
 }

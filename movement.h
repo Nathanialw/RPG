@@ -4,10 +4,6 @@
 #include "components.h"
 #include "utilities.h"
 
-//#include "include/box2d/box2d.h"
-
-
-
 namespace Movement {
 
 	namespace {
@@ -16,11 +12,9 @@ namespace Movement {
 		int64_t linearMovePoll = 0;
 	}
 
-
-
 	void Mouse_Moving(entt::registry &zone) { // maybe change to move and attack?
 		if (zone.empty<Component::Selected>()) {
-			auto view = zone.view<Input>();
+			auto view = zone.view<Component::Input>();
 			for (auto player : view) {
 				if (Mouse::bRight_Mouse_Pressed) {
 					Entity_Control::Move_Order(zone, player, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
@@ -28,10 +22,6 @@ namespace Movement {
 			}
 		}
 	}
-
-
-
-
 
 	void Update_Position() {
 		auto view = World::zone.view<Component::Position, Component::Velocity, Component::Moving, Component::Body>();
@@ -71,38 +61,38 @@ namespace Movement {
 		}
 	};
 
-	Direction Set_Direction(float angleInRadians) {
+    Component::Direction Set_Direction(float angleInRadians) {
 
-		if      (angleInRadians > 2.74889    || angleInRadians <= (-2.74889)) { return Direction::N; }
-		else if (angleInRadians > 1.96349    && angleInRadians <= (2.74889))  { return Direction::NE; }
-		else if (angleInRadians > 1.17809 	 && angleInRadians <= (1.96349))  { return Direction::E; }
-		else if (angleInRadians > 0.39269	 && angleInRadians <= (1.17809))  { return Direction::SE; }
-		else if (angleInRadians > (-0.39269) && angleInRadians <= (0.39269))  { return Direction::S; }
-		else if (angleInRadians > (-1.17811) && angleInRadians <= (-0.39269)) { return Direction::SW; }
-		else if (angleInRadians > (-1.96351) && angleInRadians <= (-1.17811)) { return Direction::W; }
-		else if (angleInRadians > (-2.74889) && angleInRadians <= (-1.96351)) { return Direction::NW; }
+		if      (angleInRadians > 2.74889    || angleInRadians <= (-2.74889)) { return Component::Direction::N; }
+		else if (angleInRadians > 1.96349    && angleInRadians <= (2.74889))  { return Component::Direction::NE; }
+		else if (angleInRadians > 1.17809 	 && angleInRadians <= (1.96349))  { return Component::Direction::E; }
+		else if (angleInRadians > 0.39269	 && angleInRadians <= (1.17809))  { return Component::Direction::SE; }
+		else if (angleInRadians > (-0.39269) && angleInRadians <= (0.39269))  { return Component::Direction::S; }
+		else if (angleInRadians > (-1.17811) && angleInRadians <= (-0.39269)) { return Component::Direction::SW; }
+		else if (angleInRadians > (-1.96351) && angleInRadians <= (-1.17811)) { return Component::Direction::W; }
+		else if (angleInRadians > (-2.74889) && angleInRadians <= (-1.96351)) { return Component::Direction::NW; }
 
 		Utilities::Log("Set_Direction() fallthrough error");
-		return Direction::N;
+		return Component::Direction::N;
 	}
 
-	Direction Look_At_Target(float& positionX, float& positionY, float& targetX, float& targetY, float& angleInRadians) {
+    Component::Direction Look_At_Target(float& positionX, float& positionY, float& targetX, float& targetY, float& angleInRadians) {
 		angleInRadians = Utilities::Get_Direction_Point(positionX, positionY, targetX, targetY);
 		return Set_Direction(angleInRadians);
 	}
 
 	void Update_Direction() {
-		auto view = World::zone.view<Direction, Actions, Velocity, Moving>();
+		auto view = World::zone.view<Component::Direction, Component::Actions, Component::Velocity, Component::Moving>();
 		for (auto entity : view) {
-			auto& vel = view.get<Velocity>(entity);
-			auto& b = view.get<Direction>(entity);
-			auto& c = view.get<Actions>(entity);
+			auto& vel = view.get<Component::Velocity>(entity);
+			auto& b = view.get<Component::Direction>(entity);
+			auto& c = view.get<Component::Actions>(entity);
 
 			b = Set_Direction(vel.angle);
 
-			if (c.action == walk) {
+			if (c.action == Component::walk) {
 				if (vel.magnitude.x == 0 && vel.magnitude.y == 0) {
-					c.action = idle;
+					c.action = Component::idle;
 				};
 			}
 		}
@@ -124,75 +114,70 @@ namespace Movement {
 	}
 
 	void Mouse_Move_Arrived() {
-		auto view = World::zone.view<Position, Velocity, Actions, Mouse_Move, Body>();
+		auto view = World::zone.view<Component::Position, Component::Velocity, Component::Actions, Component::Mouse_Move, Component::Body>();
 		for (auto entity : view) {
-			auto& act = view.get<Actions>(entity);
-			auto& v = view.get<Velocity>(entity);
-			const auto& x = view.get<Position>(entity);
-			const auto& y = view.get<Position>(entity);
-			const auto& mov = view.get<Mouse_Move>(entity);
+			auto& act = view.get<Component::Actions>(entity);
+			auto& v = view.get<Component::Velocity>(entity);
+			const auto& x = view.get<Component::Position>(entity);
+			const auto& y = view.get<Component::Position>(entity);
+			const auto& mov = view.get<Component::Mouse_Move>(entity);
 
 			if (Check_If_Arrived(x.x, y.y, mov.fX_Destination, mov.fY_Destination)) {
-				if (act.action == walk) {
+				if (act.action == Component::walk) {
 					v.magnitude.x = 0.0f;
 					v.magnitude.y = 0.0f;
-					act.action = idle;
+					act.action = Component::idle;
 
 
-					World::zone.remove<Mouse_Move>(entity);
-					World::zone.remove<Moving>(entity);
+					World::zone.remove<Component::Mouse_Move>(entity);
+					World::zone.remove<Component::Moving>(entity);
 				}
 			}
 		}
 	}
 
-
 	void Mouse_Move_To() { //calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
 		Player_Move_Poll += Timer::timeStep;
 		if (Player_Move_Poll >= 200) {
 			Player_Move_Poll = 0;
-			auto view = World::zone.view<Position, Velocity, Mouse_Move, Actions, Moving, Body>();
+			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Mouse_Move, Component::Actions, Component::Moving, Component::Body>();
 			for (auto entity : view) {
-				const auto& x = view.get<Position>(entity);
-				const auto& y = view.get<Position>(entity);
-				auto& act = view.get<Actions>(entity);
-				auto& v = view.get<Velocity>(entity);
-				auto& mov = view.get<Mouse_Move>(entity);
-				act.action = walk;
-				v.magnitude.x = v.speed * (mov.fX_Destination - x.x);
-				v.magnitude.y = v.speed * (mov.fY_Destination - y.y);
+				const auto& position = view.get<Component::Position>(entity);
+				auto& act = view.get<Component::Actions>(entity);
+				auto& v = view.get<Component::Velocity>(entity);
+				auto& mov = view.get<Component::Mouse_Move>(entity);
+				act.action = Component::walk;
+				v.magnitude.x = v.speed * (mov.fX_Destination - position.x);
+				v.magnitude.y = v.speed * (mov.fY_Destination - position.y);
 				auto& pBody = view.get<Component::Body>(entity).body;
 			//	pBody->ApplyAngularImpulse(5.1f, true);
 			}
 		}
 	}
 
-
-
 	void Linear_Move_To() {
 		linearMovePoll += Timer::timeStep;
 		if (linearMovePoll >= 50) {
-			auto view = World::zone.view<Velocity, Actions, Moving, Linear_Move, Spell_Range>();
+			auto view = World::zone.view<Component::Velocity, Component::Actions, Component::Moving, Component::Linear_Move, Component::Spell_Range>();
 			for (auto entity : view) {
-				auto& act = view.get<Actions>(entity);
-				auto& v = view.get<Velocity>(entity);
-				auto& mov = view.get<Linear_Move>(entity);
-				auto& range = view.get<Spell_Range>(entity);
+				auto& act = view.get<Component::Actions>(entity);
+				auto& v = view.get<Component::Velocity>(entity);
+				auto& mov = view.get<Component::Linear_Move>(entity);
+				auto& range = view.get<Component::Spell_Range>(entity);
 
 				if (range.fRange <= 1500) {
-					act.action = walk;
+					act.action = Component::walk;
 					v.magnitude.x = v.speed * (mov.fX_Direction - range.fSourceX);
 					v.magnitude.y = v.speed * (mov.fY_Direction - range.fSourceY);
 					range.fRange += linearMovePoll;
 				}
 				else {
-					World::zone.remove<Linear_Move>(entity);
+					World::zone.remove<Component::Linear_Move>(entity);
 				}
 			}
 			linearMovePoll = 0;
 		}
 	}
-
 
 	void Update_Entity_Positions(entt::registry  &zone) {
 		//Mouse_Attack_Move(); //runs every frame to see if mouse is down, if it is it moves you to the new location

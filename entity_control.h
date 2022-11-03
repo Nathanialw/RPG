@@ -25,19 +25,19 @@ namespace Entity_Control {
 //    }
 
     void Spell_Attack(entt::registry& zone, entt::entity& entity, float& targetX, float& targetY, const char* name) {
-        if (zone.any_of<Casting>(entity) == false) { //locks out casting until cast animation has finished
+        if (zone.any_of<Component::Casting>(entity) == false) { //locks out casting until cast animation has finished
             zone.emplace_or_replace<Component::Cast>(entity, targetX, targetY);
             zone.emplace_or_replace<Component::Spell_Name>(entity, name);
         }
     }
 
-    void Melee_Attack(entt::registry& zone, entt::entity& entity_ID, entt::entity& target_ID, Position &targetPosition) {
+    void Melee_Attack(entt::registry& zone, entt::entity& entity_ID, entt::entity& target_ID, Component::Position &targetPosition) {
         if (zone.any_of<Component::Attacking>(entity_ID) == false) { //locks out attacking until attack animation has finished
             zone.emplace_or_replace<Component::Attack>(entity_ID, target_ID, targetPosition.x, targetPosition.y);
         }
     }
 
-    bool Target_In_Melee_Range(entt::registry& zone, Position &entityPosition, Melee_Range &meleeRange, Position &targetPosition, Radius &targetRadius) {
+    bool Target_In_Melee_Range(entt::registry& zone, Component::Position &entityPosition, Component::Melee_Range &meleeRange, Component::Position &targetPosition, Component::Radius &targetRadius) {
         float length = entityPosition.x - targetPosition.x;
         float width = entityPosition.y - targetPosition.y;
 

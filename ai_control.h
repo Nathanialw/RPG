@@ -11,8 +11,8 @@ namespace AI {
 	//check for targets periodically
 	//use the target x,y to move towards it
 	//if target is in range, melee attack
-	void Attack_Move(entt::registry &zone, entt::entity &entity_ID, entt::entity& target_ID, Position &entityPosition, Melee_Range &meleeRange, Position &targetPosition, Radius &targetRadius) { // maybe change to move and attack?
-		if (World::zone.any_of<Attacking>(entity_ID) == true) {
+	void Attack_Move(entt::registry &zone, entt::entity &entity_ID, entt::entity& target_ID, Component::Position &entityPosition, Component::Melee_Range &meleeRange, Component::Position &targetPosition, Component::Radius &targetRadius) { // maybe change to move and attack?
+		if (World::zone.any_of<Component::Attacking>(entity_ID) == true) {
 			return;
 		}
 		if (World::zone.any_of<Component::Attacking>(entity_ID) == false) {
@@ -20,12 +20,12 @@ namespace AI {
 			//if it is in range, run Melee_Attack()
             //else pass that point as an update to the move order
 			if (Entity_Control::Target_In_Melee_Range(zone, entityPosition, meleeRange, targetPosition, targetRadius)) { //check if center of attack rect is in the target
-                auto &action = zone.get<Actions>(entity_ID).action;
-                if (action != attack) {
-                    action = idle;
+                auto &action = zone.get<Component::Actions>(entity_ID).action;
+                if (action != Component::attack && action != Component::struck) {
+                    action = Component::idle;
                 }
-                zone.remove<Mouse_Move>(entity_ID);
-                zone.remove<Moving>(entity_ID);
+                zone.remove<Component::Mouse_Move>(entity_ID);
+                zone.remove<Component::Moving>(entity_ID);
                 Entity_Control::Melee_Attack(zone, entity_ID, target_ID, targetPosition);
 			}
 			else {

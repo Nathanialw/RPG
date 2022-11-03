@@ -17,11 +17,11 @@ namespace UI_Resources {
     //it is the only resources that naturally replenishes
 
 	void Display_Health(entt::registry &zone, Component::Camera &camera) {
-		auto view = zone.view<Input, Health>();
+		auto view = zone.view<Component::Input, Component::Health>();
 		for (auto player : view) {
 
-			auto& current = view.get<Health>(player).currentHealth;
-			auto& max = view.get<Health>(player).maxHealth;
+			auto& current = view.get<Component::Health>(player).currentHealth;
+			auto& max = view.get<Component::Health>(player).maxHealth;
             std::string currentHealth = std::to_string(current);
             std::string maxHealth = std::to_string(max);
 
@@ -49,10 +49,10 @@ namespace UI_Resources {
 	}
 
 	void Display_Mana(entt::registry &zone, Component::Camera &camera) {
-        auto view = zone.view<Input, Health>();
+        auto view = zone.view<Component::Input, Component::Health>();
         for (auto player : view) {
-            auto& current = view.get<Health>(player).currentHealth;
-            auto& max = view.get<Health>(player).maxHealth;
+            auto& current = view.get<Component::Health>(player).currentHealth;
+            auto& max = view.get<Component::Health>(player).maxHealth;
             std::string currentHealth = std::to_string(current);
             std::string maxHealth = std::to_string(max);
 
@@ -84,10 +84,10 @@ namespace UI_Resources {
        //shows Faith resource / demon resource,
        // piety increases faith decreases the demon resource and vice versa
        // faith used to heal and damage undead and demons, demon resource for demon magic and summoning
-        auto view = zone.view<Input, Health>();
+        auto view = zone.view<Component::Input, Component::Health>();
         for (auto player : view) {
-            auto& current = view.get<Health>(player).currentHealth;
-            auto& max = view.get<Health>(player).maxHealth;
+            auto& current = view.get<Component::Health>(player).currentHealth;
+            auto& max = view.get<Component::Health>(player).maxHealth;
             std::string currentHealth = std::to_string(current);
             std::string maxHealth = std::to_string(max);
 
@@ -118,10 +118,10 @@ namespace UI_Resources {
         //high stamina increases your speed and damage
         //as it reduces your become weaker
         //it is the only resources that naturally replenishes
-        auto view = zone.view<Input, Health>();
+        auto view = zone.view<Component::Input, Component::Health>();
         for (auto player : view) {
-            auto& current = view.get<Health>(player).currentHealth;
-            auto& max = view.get<Health>(player).maxHealth;
+            auto& current = view.get<Component::Health>(player).currentHealth;
+            auto& max = view.get<Component::Health>(player).maxHealth;
             std::string currentHealth = std::to_string(current);
             std::string maxHealth = std::to_string(max);
 
@@ -148,7 +148,7 @@ namespace UI_Resources {
         }
     }
 
-    void Render_Resources (entt::registry &zone, Camera &camera) {
+    void Render_Resources (entt::registry &zone, Component::Camera &camera) {
         Display_Health(zone, camera);
         Display_Mana(zone, camera);
         Display_Faith(zone, camera);

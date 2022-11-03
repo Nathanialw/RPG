@@ -10,15 +10,12 @@ namespace UI {
 	SDL_FRect defaultScreenPosition = { 100.0f, 100.0f, 554.0f, 1080.0f };
 	SDL_FRect Character_UI = {};
 	bool bToggleCharacterUI = false;
-	
-	
+
 	namespace Bag_UI {
 		namespace {
 			entt::entity emptyBagSlot;
-
 			DataTypes::f2d bagoffset = { 32.0f, 544.0f };
 			DataTypes::f2d numOfSlots = { 8.0f, 4.0f };
-
 			int iTotalSlots = (int)numOfSlots.x * (int)numOfSlots.y;
 			float iBagSlotPixelSize = 64.0f;
 			SDL_FRect bagRect = { defaultScreenPosition.x + bagoffset.x, defaultScreenPosition.y + bagoffset.y, numOfSlots.x * iBagSlotPixelSize, numOfSlots.y * iBagSlotPixelSize };
@@ -29,29 +26,27 @@ namespace UI {
 		void Place_Item_In_Bag(entt::registry& zone, entt::entity& item, bool& mouseHasItem, int& slotNum) {
 			UI_bagSlots.at(slotNum) = item;
 			mouseHasItem = false;
-			zone.remove<On_Mouse>(item);
-			zone.emplace_or_replace<Inventory>(item);
+			zone.remove<Component::On_Mouse>(item);
+			zone.emplace_or_replace<Component::Inventory>(item);
 		}
 
 		void Remove_Item_From_Bag(entt::registry& zone, entt::entity& item, bool& mouseHasItem, int& slotNum) {
 			item = UI_bagSlots.at(slotNum);
 			UI_bagSlots.at(slotNum) = emptyBagSlot;
-			zone.emplace<On_Mouse>(item);
-			zone.remove<Inventory>(item);
+			zone.emplace<Component::On_Mouse>(item);
+			zone.remove<Component::Inventory>(item);
 			mouseHasItem = true;
 		}
 
 		void Bag_Item_And_Swap_With_Mouse(entt::registry& zone, entt::entity& item, int& slotNum) {
 			entt::entity itemInSlot = UI_bagSlots[slotNum];
 			UI_bagSlots[slotNum] = item;
-			zone.remove<On_Mouse>(item);
-			zone.emplace<Inventory>(item);
+			zone.remove<Component::On_Mouse>(item);
+			zone.emplace<Component::Inventory>(item);
 			item = itemInSlot;
-			zone.emplace<On_Mouse>(item);
-			zone.remove<Inventory>(item);
+			zone.emplace<Component::On_Mouse>(item);
+			zone.remove<Component::Inventory>(item);
 		}
-
-
 
 		void Create_Bag_UI(entt::registry& zone) {
 			emptyBagSlot = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder);
@@ -70,21 +65,17 @@ namespace UI {
 		}
 
 		//check if the Mouse point is in the rect and which one
-		int Get_Bag_Slot(entt::registry& zone, SDL_FPoint& screenCursor, Camera& camera) {
-
+		int Get_Bag_Slot(entt::registry& zone, SDL_FPoint& screenCursor, Component::Camera& camera) {
 			SDL_FRect slotRect = {};
 			slotRect.w = iBagSlotPixelSize;
 			slotRect.h = iBagSlotPixelSize;
 			int i;
 			int j;
 			int slot = 0;
-
 			for (i = 0; i < numOfSlots.x; i++) {
 				slotRect.x = (i * iBagSlotPixelSize) + bagRect.x;
-
 				for (j = 0; j < numOfSlots.y; j++) {
 					slotRect.y = (j * iBagSlotPixelSize) + bagRect.y;
-
 					SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(zone, slotRect, camera);
 					if (Utilities::bPoint_RectIntersect(screenCursor, scaledSlot)) {
 						return slot;
@@ -104,27 +95,20 @@ namespace UI {
 			return 0;
 		}
 
-
-
 		//check if the Mouse point is in the rect and which one
-		void Render_Bag_Slot(entt::registry& zone, SDL_Renderer* renderer, Camera &camera) {
-
+		void Render_Bag_Slot(entt::registry& zone, SDL_Renderer* renderer, Component::Camera &camera) {
 			SDL_FRect slotRect = {};
 			slotRect.w = iBagSlotPixelSize;
 			slotRect.h = iBagSlotPixelSize;
 			float i;
 			float j;
 			int slot = 0;
-
 			for (i = 0; i < numOfSlots.x; i++) {
 				slotRect.x = (i * iBagSlotPixelSize) + bagRect.x;
-
 				for (j = 0; j < numOfSlots.y; j++) {
 					slotRect.y = (j * iBagSlotPixelSize) + bagRect.y;
-
-					auto& icon = zone.get<Icon>(UI_bagSlots.at(slot));
+					auto& icon = zone.get<Component::Icon>(UI_bagSlots.at(slot));
 					/*could be injected instead if it was a class object method*/SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(zone, slotRect, camera);
-					
 					SDL_SetTextureAlphaMod(icon.pTexture, 255);
 					SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
 					SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
@@ -135,8 +119,7 @@ namespace UI {
 						slot++;
 					}
 				}
-
-				auto& icon = zone.get<Icon>(UI_bagSlots.at(slot));
+				auto& icon = zone.get<Component::Icon>(UI_bagSlots.at(slot));
 				/*could be injected instead if it was a class object method*/SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(zone, slotRect, camera);
 				SDL_SetTextureAlphaMod(icon.pTexture, 255);
 				SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
@@ -150,11 +133,11 @@ namespace UI {
 			}
 		}
 
-		bool Is_Cursor_Inside_Bag_Area(entt::registry& zone, Camera& camera, SDL_FPoint &screenCursor) {
+		bool Is_Cursor_Inside_Bag_Area(entt::registry& zone, Component::Camera& camera, SDL_FPoint &screenCursor) {
 			return Utilities::bPoint_RectIntersect(screenCursor, screenBag);
 		}
 
-		void Interact_With_Bag(entt::registry& zone, entt::entity& item, SDL_FPoint& mousePoint, bool& mouseHasItem, Camera& camera) {
+		void Interact_With_Bag(entt::registry& zone, entt::entity& item, SDL_FPoint& mousePoint, bool& mouseHasItem, Component::Camera& camera) {
 			if (Mouse::bRect_inside_Cursor(Character_UI)) {
 				int slotNum = Get_Bag_Slot(zone, mousePoint, camera);
 
@@ -173,52 +156,37 @@ namespace UI {
 				}
 			}
 		}
-
 	}
-
-
-
-
-
-
 
 	namespace Equipment_UI {
 		namespace {
 			DataTypes::f2d equipmentOffsetColumn1 = {32.0f, 32.0f};
 			DataTypes::f2d equipmentOffsetColumn2 = {452.0f, 32.0f};
 			int verticalSpaceBetweenEquipSlots = 10;
-
 			DataTypes::i2d numOfSlots = {2, 5};
 			float iEquipmentSlotPixelSize = 81.0f;
 			// 452 in the x
 			// 10 between in the y
 			SDL_FRect screenEquipment = { defaultScreenPosition.x, defaultScreenPosition.y, 490.0f, 1080.0f };
-
 			entt::entity emptyEquipSlot;
-
 			std::map<Item_Type, entt::entity>equippedItems{
-				
 				{ Item_Type::helm, emptyEquipSlot },
 				{ Item_Type::neck, emptyEquipSlot },
 				{ Item_Type::shoulders, emptyEquipSlot },
 				{ Item_Type::chest, emptyEquipSlot },
 				{ Item_Type::weapon, emptyEquipSlot },
-				
 				{ Item_Type::gloves, emptyEquipSlot },
 				{ Item_Type::belt, emptyEquipSlot },
 				{ Item_Type::legs, emptyEquipSlot },
 				{ Item_Type::boots, emptyEquipSlot },
 				{ Item_Type::shield, emptyEquipSlot }
 			};
-			
 			std::map<Item_Type, SDL_FRect>equippedItemsRect{
-
 				{ Item_Type::helm, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize} },
 				{ Item_Type::neck, {defaultScreenPosition.x + equipmentOffsetColumn1.x , defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize)+10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 				{ Item_Type::shoulders, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::chest, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::weapon, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
-
 				{ Item_Type::gloves, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::belt, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize)+10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::legs, {defaultScreenPosition.x + equipmentOffsetColumn2.x,   defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
@@ -238,31 +206,31 @@ namespace UI {
 			item = equippedItems[itemType];
 			equippedItems[itemType] = emptyEquipSlot;
 			mouseHasItem = true;
-			zone.emplace<On_Mouse>(item);
-			zone.remove<Inventory>(item);
+			zone.emplace<Component::On_Mouse>(item);
+			zone.remove<Component::Inventory>(item);
 		}
 		void Equip_Item(entt::registry& zone, entt::entity& item, bool& mouseHasItem, Item_Type& itemType) {
 			equippedItems[itemType] = item;
 			mouseHasItem = false;
-			zone.remove<On_Mouse>(item);
-			zone.emplace<Inventory>(item);
+			zone.remove<Component::On_Mouse>(item);
+			zone.emplace<Component::Inventory>(item);
 		}
 		void Equip_Item_And_Swap_With_Mouse(entt::registry& zone, entt::entity& item, Item_Type& itemType) {
 			entt::entity itemInSlot = equippedItems[itemType];
 			equippedItems[itemType] = item;
-			zone.remove<On_Mouse>(item);
-			zone.emplace<Inventory>(item);
+			zone.remove<Component::On_Mouse>(item);
+			zone.emplace<Component::Inventory>(item);
 			item = itemInSlot;
-			zone.emplace<On_Mouse>(item);
-			zone.remove<Inventory>(item);
+			zone.emplace<Component::On_Mouse>(item);
+			zone.remove<Component::Inventory>(item);
 		}
 
-		bool Mouse_Inside_Equipment_Screen(entt::registry& zone, Camera& camera, SDL_FPoint& screenCursor) {
+		bool Mouse_Inside_Equipment_Screen(entt::registry& zone, Component::Camera& camera, SDL_FPoint& screenCursor) {
 			//SDL_Rect equipmentScreen = Camera_Control::Convert_Rect_To_Scale(zone, screenEquipment, camera);
 			return Utilities::bPoint_RectIntersect(screenCursor, screenEquipment);
 		}
 
-		bool Interact_With_Equipment(entt::registry& zone, entt::entity& item, SDL_FPoint& mousePoint, bool& mouseHasItem, Camera &camera) {
+		bool Interact_With_Equipment(entt::registry& zone, entt::entity& item, SDL_FPoint& mousePoint, bool& mouseHasItem, Component::Camera &camera) {
 			/*could be injected instead*/
 
 			if (Mouse_Inside_Equipment_Screen(zone, camera, mousePoint)) {
@@ -302,7 +270,7 @@ namespace UI {
 			return false;
 		}
 
-		entt::entity Get_Equip_Slot(entt::registry& zone, Camera& camera) {
+		entt::entity Get_Equip_Slot(entt::registry& zone, Component::Camera& camera) {
 			for (auto& item : equippedItemsRect) {
 				SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(zone, item.second, camera);
 				if (Mouse::bRect_inside_Cursor(scaledSlot)) {
@@ -312,9 +280,9 @@ namespace UI {
 			return emptyEquipSlot;
 		}
 
-		void Render_Equipment_Slot(entt::registry& zone, SDL_Renderer *renderer, Camera &camera) {
+		void Render_Equipment_Slot(entt::registry& zone, SDL_Renderer *renderer, Component::Camera &camera) {
 			for (auto &slot : equippedItems) {
-				auto &icon = zone.get<Icon>(slot.second);
+				auto &icon = zone.get<Component::Icon>(slot.second);
 				SDL_FRect slotRect = equippedItemsRect[slot.first];
 
 				SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(zone, slotRect, camera);
@@ -327,16 +295,13 @@ namespace UI {
 				SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
 			}			
 		}
-
-		
-		void Update_Equipment_Position(entt::registry& zone, Camera& camera) {
+		void Update_Equipment_Position(entt::registry& zone, Component::Camera& camera) {
 			SDL_FRect equipment = { defaultScreenPosition.x + 28, defaultScreenPosition.y + 28, 506, 450 };
 			screenEquipment = Camera_Control::Convert_FRect_To_Scale(zone, equipment, camera);
 		}
 	}
 
-
-	bool Swap_Item_In_Bag_For_Equipped(entt::registry& zone, SDL_FPoint& screenCursor, Camera &camera) {
+	bool Swap_Item_In_Bag_For_Equipped(entt::registry& zone, SDL_FPoint& screenCursor, Component::Camera &camera) {
 		int slotNum = Bag_UI::Get_Bag_Slot(zone, screenCursor, camera);
 		entt::entity itemInSlot = Bag_UI::UI_bagSlots[slotNum];
 		if (itemInSlot != Bag_UI::emptyBagSlot) {
@@ -354,32 +319,26 @@ namespace UI {
 		return false;
 	}
 
-
-	void Drop_Item_If_On_Mouse(entt::registry& zone, Camera &camera, entt::entity& item_ID, bool& isItemCurrentlyHeld) {
+	void Drop_Item_If_On_Mouse(entt::registry& zone, Component::Camera &camera, entt::entity& item_ID, bool& isItemCurrentlyHeld) {
         if (isItemCurrentlyHeld == true) {
-            auto view = zone.view<Input, Position>();
+            auto view = zone.view<Component::Input, Component::Position>();
             for (auto entity: view) {
-                auto &entityPosition = view.get<Position>(entity);
-                auto &scale = zone.get<Scale>(item_ID).scale;
-                auto &itemPosition = zone.get<Position>(item_ID);
-                auto& offset = zone.get<Sprite_Offset>(item_ID).offset;
+                auto &entityPosition = view.get<Component::Position>(entity);
+                auto &scale = zone.get<Component::Scale>(item_ID).scale;
+                auto &itemPosition = zone.get<Component::Position>(item_ID);
+                auto& offset = zone.get<Component::Sprite_Offset>(item_ID).offset;
                 itemPosition = entityPosition;
-
                 zone.emplace<Ground_Item>(item_ID,
                                           itemPosition.x - (offset.x),
                                           itemPosition.y - (offset.y),
                                           offset.x * 2.0f,
                                           offset.y * 2.0f);
-
-
-
-
                 //adds to rendering with the main animation loop
-                zone.emplace<Direction>(item_ID, Direction::W);
+                zone.emplace<Component::Direction>(item_ID, Component::Direction::W);
                 // to remove from rendering on mouse
-                zone.remove<On_Mouse>(item_ID);
+                zone.remove<Component::On_Mouse>(item_ID);
                 //allows insertion into quad Trees
-                zone.emplace<Radius>(item_ID, offset.x);
+                zone.emplace<Component::Radius>(item_ID, offset.x);
             }
         }
         isItemCurrentlyHeld = false;
@@ -390,23 +349,22 @@ namespace UI {
 			//removed pickup box from ground
 			zone.remove<Ground_Item>(item_ID);
 			//removes for main rendering loop
-			zone.remove<Direction>(item_ID);
+			zone.remove<Component::Direction>(item_ID);
 			//to render on mouse
-			zone.emplace<On_Mouse>(item_ID);
+			zone.emplace<Component::On_Mouse>(item_ID);
 			Mouse::mouseItem = item_ID;
 			Mouse::itemCurrentlyHeld = true;
-
 			//removes from quad tree
-            auto &radius = zone.get<Radius>(item_ID);
-            auto &position = zone.get<Position>(item_ID);
+            auto &radius = zone.get<Component::Radius>(item_ID);
+            auto &position = zone.get<Component::Position>(item_ID);
             SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius.fRadius, position.x, position.y);
-            zone.emplace<Remove_From_Object_Tree>(item_ID, rect);
+            zone.emplace<Component::Remove_From_Object_Tree>(item_ID, rect);
             //prevents auto reinsertion into quad tree
-			zone.remove<Radius>(item_ID);
+			zone.remove<Component::Radius>(item_ID);
 		}
 	}
 
-	bool Pick_Up_Item_To_Mouse_Or_Bag(entt::registry& zone, Item_Pickup &itemData, bool& isItemCurrentlyHeld) {
+	bool Pick_Up_Item_To_Mouse_Or_Bag(entt::registry& zone, Component::Item_Pickup &itemData, bool& isItemCurrentlyHeld) {
 		// check if mouse is inside item box				
 		SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(itemData.radius, itemData.x, itemData.y);
 
@@ -419,14 +377,14 @@ namespace UI {
 			for (int i = 0; i < Bag_UI::UI_bagSlots.size(); i++) {
 				if (Bag_UI::UI_bagSlots[i] == Bag_UI::emptyBagSlot) {
 					Bag_UI::UI_bagSlots[i] = itemData.item_ID;
-                    zone.emplace<Remove_From_Object_Tree>(itemData.item_ID, rect);
+                    zone.emplace<Component::Remove_From_Object_Tree>(itemData.item_ID, rect);
 					//removed pickup box from ground
 					zone.remove<Ground_Item>(itemData.item_ID);
 					//removes for main rendering loop
-					zone.remove<Direction>(itemData.item_ID);
-					zone.emplace_or_replace<Inventory>(itemData.item_ID);
+					zone.remove<Component::Direction>(itemData.item_ID);
+					zone.emplace_or_replace<Component::Inventory>(itemData.item_ID);
 					//prevents we insertion to quad tree
-					zone.remove<Radius>(itemData.item_ID);
+					zone.remove<Component::Radius>(itemData.item_ID);
 					return true;
 				}
 			}
@@ -435,30 +393,20 @@ namespace UI {
             std::cout << "I am overburdened" << std::endl;
             return false;
 		}
-
-		std::cout << "Pick_Up_Item_To_Mouse_Or_Bag() passthrough error" << std::endl;
-        return false;
 	}
 
-
-
-
-
-	void Render_UI(entt::registry& zone, SDL_Renderer* renderer, Camera &camera) {
+	void Render_UI(entt::registry& zone, SDL_Renderer* renderer, Component::Camera &camera) {
 		if (bToggleCharacterUI) {			
 			//render UI
 			Character_UI = Camera_Control::Convert_FRect_To_Scale(zone, defaultScreenPosition, camera);
 			Graphics::Render_FRect(Graphics::itsmars_Inventory, &charui, &Character_UI);
-
 			//reder equipment slots
 			Equipment_UI::Update_Equipment_Position(zone, camera);
 			Equipment_UI::Render_Equipment_Slot(zone, renderer, camera);
-			
 			//render Items in bag
 			Bag_UI::screenBag = Camera_Control::Convert_FRect_To_Scale(zone, Bag_UI::bagRect, camera);
 			Bag_UI::Render_Bag_Slot(zone, renderer, camera);
 		}
-		
 	}
 
 	bool Check_If_Arrived(const float& unitX, const float& unitY, const float& destinationX, const float& destinationY) {
@@ -480,14 +428,14 @@ namespace UI {
 		Player_Move_Poll += Timer::timeStep;
 		if (Player_Move_Poll >= 200) {
 			Player_Move_Poll = 0;
-			auto view = World::zone.view<Position, Velocity, Item_Pickup, Actions, Moving>();
+			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Item_Pickup, Component::Actions, Component::Moving>();
 			for (auto entity : view) {
-				const auto& x = view.get<Position>(entity);
-				const auto& y = view.get<Position>(entity);
-				auto& act = view.get<Actions>(entity);
-				auto& v = view.get<Velocity>(entity);
-				auto& mov = view.get<Item_Pickup>(entity);
-				act.action = walk;
+				const auto& x = view.get<Component::Position>(entity);
+				const auto& y = view.get<Component::Position>(entity);
+				auto& act = view.get<Component::Actions>(entity);
+				auto& v = view.get<Component::Velocity>(entity);
+				auto& mov = view.get<Component::Item_Pickup>(entity);
+				act.action = Component::walk;
 				v.magnitude.x = v.speed * (mov.x - x.x);
 				v.magnitude.y = v.speed * (mov.y - y.y);
 			}
@@ -495,28 +443,25 @@ namespace UI {
 	}
 
 	void Mouse_Move_Arrived_Pickup_Item(entt::registry &zone, bool & isItemCurrentlyHeld) {
-		auto view = World::zone.view<Position, Velocity, Actions, Item_Pickup>();
+		auto view = World::zone.view<Component::Position, Component::Velocity, Component::Actions, Component::Item_Pickup>();
 		for (auto entity : view) {
-			auto& act = view.get<Actions>(entity);
-			auto& v = view.get<Velocity>(entity);
-			const auto& x = view.get<Position>(entity);
-			const auto& y = view.get<Position>(entity);
-			auto& itemData = view.get<Item_Pickup>(entity);
-			if (Check_If_Arrived(x.x, y.y, itemData.x, itemData.y)) {
-				if (act.action == walk) {
+			auto& act = view.get<Component::Actions>(entity);
+			auto& v = view.get<Component::Velocity>(entity);
+			const auto& position = view.get<Component::Position>(entity);
+			auto& itemData = view.get<Component::Item_Pickup>(entity);
+			if (Check_If_Arrived(position.x, position.y, itemData.x, itemData.y)) {
+				if (act.action == Component::walk) {
 					v.magnitude.x = 0.0f;
 					v.magnitude.y = 0.0f;
-					act.action = idle;
-
-                    World::zone.remove<Moving>(entity);
+					act.action = Component::idle;
+                    World::zone.remove<Component::Moving>(entity);
 				}
                 //pickup Item
                 Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, isItemCurrentlyHeld);
-				World::zone.remove<Item_Pickup>(entity);
+				World::zone.remove<Component::Item_Pickup>(entity);
 			}
 		}
 	}
-
 
 	void Move_To_Item_Routine(entt::registry& zone, bool isItemCurrentlyHeld) {
 		Mouse_Move_To_Item();
@@ -529,9 +474,4 @@ namespace UI {
 		Bag_UI::Create_Bag_UI(zone);
 		Equipment_UI::Create_Equipment_UI(zone);
 	}
-
-
-
-
-
 }

@@ -12,7 +12,7 @@ namespace Equipment {
 		int iTotalSlots = numOfSlots.x * numOfSlots.y;
 		int iBagSlotPixelSize = 80;
 
-		SDL_Rect equipment = { defaultScreenPosition.x + bagoffset.x, defaultScreenPosition.y + bagoffset.y, numOfSlots.x * iBagSlotPixelSize, numOfSlots.y * iBagSlotPixelSize };
+		SDL_Rect equipment = { (int)(defaultScreenPosition.x + Bag_UI::bagoffset.x), (int)(defaultScreenPosition.y + Bag_UI::bagoffset.y), numOfSlots.x * iBagSlotPixelSize, numOfSlots.y * iBagSlotPixelSize };
 		SDL_Rect screenEquipment = { };
 
 		std::vector<entt::entity>UI_bagSlots(iTotalSlots);

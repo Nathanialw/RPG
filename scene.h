@@ -12,9 +12,6 @@
 #include "sprite_parser.h"
 #include "collision.h"
 
-
-using namespace Component;
-
 namespace Scene {
 
 	//create templates of a "type" of entity, like a skeleton
@@ -23,15 +20,15 @@ namespace Scene {
 
 	//adds Environment items to world grid
 	void add_unit_to_grid(Map::Node3& map) {
-		auto view = World::zone.view<Position, Radius, Environment>(entt::exclude<Assigned_To_Formation>);
+		auto view = World::zone.view<Component::Position, Component::Radius, Component::Environment>(entt::exclude<Component::Assigned_To_Formation>);
 		for (auto entity : view) {
-			auto& x = view.get<Position>(entity).x;
-			auto& y = view.get<Position>(entity).y;
-			auto& r = view.get<Radius>(entity).fRadius;
+			auto& x = view.get<Component::Position>(entity).x;
+			auto& y = view.get<Component::Position>(entity).y;
+			auto& r = view.get<Component::Radius>(entity).fRadius;
 			SDL_FRect rect = { x - r, y - r, r * 2.0f, r * 2.0f };
 
 			Map::Place_Rect_On_Grid(rect, Map::map, entity);
-			World::zone.emplace_or_replace<Assigned_To_Formation>(entity);
+			World::zone.emplace_or_replace<Component::Assigned_To_Formation>(entity);
 		}
 	}
 
@@ -50,13 +47,13 @@ namespace Scene {
 	//}
 
 	void Update_Army() {
-		auto company_view = World::zone.view<Company>();
+		auto company_view = World::zone.view<Component::Company>();
 		for (auto companies : company_view) {
-			auto& company = company_view.get<Company>(companies);
+			auto& company = company_view.get<Component::Company>(companies);
 			for (int c = 0; c < company.iSub_Units.size(); c++) {
-				auto& platoon = World::zone.get<Platoon>(company.iSub_Units[c]);
+				auto& platoon = World::zone.get<Component::Platoon>(company.iSub_Units[c]);
 				for (int p = 0; p < platoon.iSub_Units.size(); p++) {
-					auto& squad = World::zone.get<Squad>(platoon.iSub_Units[p]);
+					auto& squad = World::zone.get<Component::Squad>(platoon.iSub_Units[p]);
 					for (int i = 0; i < squad.iSub_Units.size(); i++) {
 						if (squad.bAlive.at(i) == false) {
 

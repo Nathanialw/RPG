@@ -151,6 +151,17 @@ namespace Component {
 		W
 	};
 
+    enum class PVG_Directions {
+        zero,
+        S,
+        W,
+        E,
+        N,
+        SW,
+        NW,
+        SE,
+        NE
+    };
 
 
 
@@ -164,12 +175,13 @@ namespace Component {
 		int sheetWidth;
 		bool bReversable;
 		bool bReversing;
-		float timeBetweenFrames;
-		float currentFrameTime;
+		int64_t timeBetweenFrames;
+        int64_t currentFrameTime;
 	};
 
 	struct animation {
 		SDL_Texture* pTexture;		//texture
+        std::string type;
 		SDL_Rect clipSprite;
 		SDL_FRect renderPosition;
 		std::vector<spriteframes>sheet;

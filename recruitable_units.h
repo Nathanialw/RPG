@@ -16,14 +16,14 @@ namespace Units {
 			World::zone.emplace<Component::animation>(archer, Graphics::archer_0); /// need to load the texture only onceand pass the pointer into this function
 			World::zone.get<Component::animation>(archer).sheet = { //populate the vector
 				{ NULL },
-				{ {0   , 0, 128, 128}, 0,    512,  1, 0, 75.0f, 75.0f },//idle
-				{ {512,  0, 128, 128}, 512,  1024, 0, 0, 75.0f, 75.0f },//walk
-				{ {1536, 0, 128, 128}, 1536, 512,  0, 0, 75.0f, 0.0f },//attack
+				{ {0   , 0, 128, 128}, 0,    512,  1, 0, 75, 0 },//idle
+				{ {512,  0, 128, 128}, 512,  1024, 0, 0, 75, 0 },//walk
+				{ {1536, 0, 128, 128}, 1536, 512,  0, 0, 75, 0 },//attack
 				
-				{ {2048, 0, 128, 128}, 2048, 256,  0, 0, 75.0f, 0.0f },//struck
-				{ {2304, 0, 128, 128}, 2560, 768,  0, 0, 75.0f, 0.0f }, //dead
-				{ {3072, 0, 128, 128}, 2816, 512,  0, 0, 75.0f, 0.0f }, //cheer
-				{ {3584, 0, 128, 128}, 3584, 512,  1, 0, 75.0f, 0.0f },//range
+				{ {2048, 0, 128, 128}, 2048, 256,  0, 0, 75, 0 },//struck
+				{ {2304, 0, 128, 128}, 2560, 768,  0, 0, 75, 0 }, //dead
+				{ {3072, 0, 128, 128}, 2816, 512,  0, 0, 75, 0 }, //cheer
+				{ {3584, 0, 128, 128}, 3584, 512,  1, 0, 75, 0 },//range
 			};
 			World::zone.emplace<Component::Sprite_Offset>(archer, 60.0f, 95.0f);
 
