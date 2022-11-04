@@ -38,7 +38,7 @@ namespace Event_Handler {
 					}
 				}
 			}
-			if (event.type == SDL_KEYUP) {
+			else if (event.type == SDL_KEYUP) {
 				switch (event.key.keysym.sym)
 				{
 				case SDLK_e: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; break;
@@ -117,7 +117,7 @@ namespace Event_Handler {
 				//}
 			}
 
-			if (event.button.button == SDL_BUTTON_RIGHT) {
+			else if (event.button.button == SDL_BUTTON_RIGHT) {
 				if (UI::bToggleCharacterUI) {
 					if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
 						if (UI::Swap_Item_In_Bag_For_Equipped(zone, Mouse::screenMousePoint, camera)) {
@@ -152,36 +152,35 @@ namespace Event_Handler {
 		}
 	}
 
+
 	void Update_User_Input(entt::registry &zone) {
-		while (SDL_PollEvent(&event) != 0) {
-			auto view = zone.view<Component::Velocity, Component::Actions, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
-			for (auto player_ID : view) {
-				auto& playerPosition = view.get<Component::Position>(player_ID);
-				auto& meleeRange = view.get<Component::Melee_Range>(player_ID);
-				auto& playerVelocity = view.get<Component::Velocity>(player_ID);
-				auto& playerAction = view.get<Component::Actions>(player_ID);
-				auto& camera = view.get<Component::Camera>(player_ID);
+        while (SDL_PollEvent(&event) != 0) {
+            auto view = zone.view<Component::Velocity, Component::Actions, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
+            for (auto player_ID: view) {
+                auto &playerPosition = view.get<Component::Position>(player_ID);
+                auto &meleeRange = view.get<Component::Melee_Range>(player_ID);
+                auto &playerVelocity = view.get<Component::Velocity>(player_ID);
+                auto &playerAction = view.get<Component::Actions>(player_ID);
+                auto &camera = view.get<Component::Camera>(player_ID);
 
 				if (event.key.type == SDL_MOUSEWHEEL) {
 					Interface::Update_Zoom(event);
 				}
-				if (event.key.type == SDL_MOUSEBUTTONDOWN || event.key.type == SDL_MOUSEBUTTONUP) {
-					Mouse_Input(zone, player_ID, playerPosition, meleeRange, camera);
-				}
-				if (event.key.type == SDL_KEYDOWN || event.key.type == SDL_KEYUP) {
-					Movement_Input(zone, playerVelocity, playerAction, player_ID);
-					Interface_Input(zone, playerVelocity, playerAction, player_ID);
-				}
-
-				//if (event.key.type == SDL_JOYAXISMOTION) { // it works!
-				//	if (event.jaxis. == 0) {
-					//Joystick::JoystickInput(event);
-					//std::cout << Joystick::JoystickInput(event) << std::endl;
-				//	if (event.jaxis.axis == 0) {
-					//	std::cout << event.jaxis.value << std::endl;
-				//	}
-			}
-		}
+                if (event.key.type == SDL_MOUSEBUTTONDOWN || event.key.type == SDL_MOUSEBUTTONUP) {
+                    Mouse_Input(zone, player_ID, playerPosition, meleeRange, camera);
+                } else if (event.key.type == SDL_KEYDOWN || event.key.type == SDL_KEYUP) {
+                    Movement_Input(zone, playerVelocity, playerAction, player_ID);
+                    Interface_Input(zone, playerVelocity, playerAction, player_ID);
+                }
+                //if (event.key.type == SDL_JOYAXISMOTION) { // it works!
+                //	if (event.jaxis. == 0) {
+                //Joystick::JoystickInput(event);
+                //std::cout << Joystick::JoystickInput(event) << std::endl;
+                //	if (event.jaxis.axis == 0) {
+                //	std::cout << event.jaxis.value << std::endl;
+                //	}
+            }
+        }
 	};
 
 	void Input_Handler(entt::registry& zone) {

@@ -220,12 +220,18 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "sprite_sheets/units/knight_plate_00.tsx": {
+            "scaleInEditor": 1
+        },
         "sprite_sheets/units/minotaur_00.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/minotaur_alpha.tsx": {
             "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "sprite_sheets/units/ogre_00.tsx": {
             "scaleInEditor": 1
         },
         "sprite_sheets/units/orc_archer_00.tsx": {
@@ -310,16 +316,16 @@
             }
         },
         "untitled3.tmx": {
-            "scale": 0.25,
+            "scale": 0.33,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 29494,
-                "y": 11378
+                "x": 24854.545454545456,
+                "y": 15519.696969696968
             }
         }
     },
     "last.externalTilesetPath": "/home/nathanial/Workspace/RPG_game/maps/sprite_sheets/ground_objects",
-    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/animals/wolf",
+    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/monsters/ogres",
     "last.objectTemplatePath": "/home/nathanial/Workspace/RPG_game/maps/spawn_points/unit_spawns",
     "map.height": 1024,
     "map.layerDataFormat": null,
@@ -331,6 +337,8 @@
     "project": "game_map_data.tiled-project",
     "property.type": "int",
     "recentFiles": [
+        "sprite_sheets/units/ogre_00.tsx",
+        "sprite_sheets/units/knight_plate_00.tsx",
         "untitled3.tmx",
         "untitled3 (copy).tmx",
         "untitled2.tmx",
@@ -340,14 +348,12 @@
         "sprite_sheets/units/werewolf_00.tsx",
         "sprite_sheets/units/grey_werebear_00.tsx",
         "sprite_sheets/units/minotaur_00.tsx",
-        "sprite_sheets/units/minotaur_alpha.tsx",
-        "sprite_sheets/units/goblin_spearman_03.tsx",
-        "sprite_sheets/units/goblin_spearman_02.tsx"
+        "sprite_sheets/units/minotaur_alpha.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
-        "height": 200,
-        "width": 200
+        "height": 300,
+        "width": 300
     },
     "tileset.type": 0
 }

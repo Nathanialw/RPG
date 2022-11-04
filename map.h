@@ -127,7 +127,8 @@ namespace Maps {
                 {sheetData.block.numFrames ,0},
                 {sheetData.evade.numFrames ,0},
                 {sheetData.stunned.numFrames ,0},
-                {sheetData.dead.numFrames ,0},
+                {sheetData.dying.numFrames ,0},
+                {sheetData.corpse.numFrames ,0},
                 {sheetData.low_hp.numFrames ,0},
                 {sheetData.resting.numFrames ,0},
                 {sheetData.ranged.numFrames ,0},
@@ -147,7 +148,8 @@ namespace Maps {
                 { {sheetData.block.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.block.firstFrame, sheetData.sheet_width, sheetData.block.reverses, 0, sheetData.time_between_frames, 0},//block
                 { {sheetData.evade.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.evade.firstFrame, sheetData.sheet_width,  sheetData.evade.reverses, 0, sheetData.time_between_frames, 0},//ranged
                 { {sheetData.stunned.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.stunned.firstFrame, sheetData.sheet_width,  sheetData.stunned.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                { {sheetData.dead.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.dead.firstFrame, sheetData.sheet_width,  sheetData.dead.reverses, 0, sheetData.time_between_frames, 0},//death/reverse to summon
+                { {sheetData.dying.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.dying.firstFrame, sheetData.sheet_width,  sheetData.dying.reverses, 0, sheetData.time_between_frames, 0},//death/reverse to summon
+                { {sheetData.corpse.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.corpse.firstFrame, sheetData.sheet_width,  sheetData.corpse.reverses, 0, sheetData.time_between_frames, 0},//death/reverse to summon
                 { {sheetData.low_hp.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.low_hp.firstFrame, sheetData.sheet_width,  sheetData.low_hp.reverses, 0, sheetData.time_between_frames, 0},//ranged
                 { {sheetData.resting.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.resting.firstFrame, sheetData.sheet_width,  sheetData.resting.reverses, 0, sheetData.time_between_frames, 0},//ranged
                 { {sheetData.ranged.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.ranged.firstFrame, sheetData.sheet_width,  sheetData.ranged.reverses, 0, sheetData.time_between_frames, 0},//ranged

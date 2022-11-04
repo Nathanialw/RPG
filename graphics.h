@@ -209,7 +209,7 @@ namespace Graphics {
 	}
 
 	void createGraphicsContext(entt::registry& zone) {
-		SDL_CreateWindowAndRenderer((int)resolution.w, (int)resolution.h, NULL, &window, &renderer);
+		SDL_CreateWindowAndRenderer((int)resolution.w, (int)resolution.h, SDL_RENDERER_PRESENTVSYNC, &window, &renderer);
 		SDL_SetHint(SDL_HINT_RENDER_BATCHING, "1");
 		Load_Textures(zone);
 	}
