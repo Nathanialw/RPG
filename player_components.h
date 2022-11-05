@@ -1,5 +1,5 @@
 #pragma once
-#include "entt.hpp"
+#include "entt/entt.hpp"
 
 namespace Player_Component {
     struct Attack_Move {

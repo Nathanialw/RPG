@@ -2,7 +2,7 @@
 #include "base_structs.h"
 #include "utilities.h"
 #include "SDL2/SDL.h"
-#include "entt.hpp"
+#include "entt/entt.hpp"
 
 namespace Map {
 

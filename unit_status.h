@@ -1,5 +1,5 @@
 #pragma once
-#include "entt.hpp"
+#include "entt/entt.hpp"
 #include "components.h"
 #include "combat_control.h"
 #include "tooltips.h"

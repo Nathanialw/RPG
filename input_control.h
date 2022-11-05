@@ -1,5 +1,5 @@
 #pragma once
-#include "entt.hpp"
+#include "entt/entt.hpp"
 #include "components.h"
 #include "mouse_control.h"
 #include "dynamic_quad_tree.h"

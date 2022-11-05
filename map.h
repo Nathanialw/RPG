@@ -5,7 +5,7 @@
 #include <tmxlite/ObjectGroup.hpp>
 #include <algorithm>
 #include <iostream>
-#include "entt.hpp"
+#include "entt/entt.hpp"
 #include "components.h"
 #include "entity_loader.h"
 #include "collision.h"

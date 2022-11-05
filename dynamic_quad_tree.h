@@ -1,7 +1,7 @@
 #pragma once
 #include <SDL2/SDL.h>
 #include "vector"
-#include "entt.hpp"
+#include "entt/entt.hpp"
 #include "utilities.h"
 #include "graphics.h"
 
