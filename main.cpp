@@ -20,7 +20,6 @@
 
 int main(int argc, char* argv[]) {
 
-	Texture_Packer::Parse_Doc();
 	srand((unsigned int)time(NULL));
 	//initialization
 	Collision::init_Collison();

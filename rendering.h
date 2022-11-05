@@ -250,48 +250,48 @@ namespace Rendering {
 	}
 
 	void Texture_Packer_Render(entt::registry &zone, Component::Camera& camera) {
-		auto view = zone.view<Component::Position, Component::Texture, Component::Sprite_Vector, Component::Direction, Component::Action_State>();
-		for (auto lion : view) {
-			auto &position = view.get<Component::Position>(lion);
-			SDL_Texture *texture = view.get<Component::Texture>(lion).pTexture;
-			const Component::Action_State &actionState = view.get<Component::Action_State>(lion);
-			const Component::Direction &direction = view.get<Component::Direction>(lion);
-            Component::Sprite_Sheet_Data* clippedSprite = view.get<Component::Sprite_Vector>(lion).sheet;
-            Component::Frame *frameDataArray = view.get<Component::Sprite_Vector>(lion).states;
-			int &currentFrame = view.get<Component::Sprite_Vector>(lion).currentFrame;
-			const int& frameTime= view.get<Component::Sprite_Vector>(lion).frameTime;
-			int& frameTimeCount= view.get<Component::Sprite_Vector>(lion).FrameTimeCount;
-			SDL_Rect& clip = view.get<Component::Sprite_Vector>(lion).clip;
-			SDL_FRect& render = view.get<Component::Sprite_Vector>(lion).render;
-			frameTimeCount += Timer::timeStep;
-			if (frameTimeCount >= frameTime) {
-				frameTimeCount = 0;
-                Component::Frame frameData = frameDataArray[actionState];
-				int startFrame = frameData.startFrame + (frameData.numFrames * (int)direction);
-				int endFrame = startFrame + frameData.numFrames;
-				if (currentFrame < startFrame) {
-					currentFrame = startFrame;
-				}
-				if (actionState != Component::Action_State::dead) {
-					if (currentFrame >= endFrame) {
-						currentFrame = startFrame;
-					}
-				}
-				if (actionState != Component::Action_State::dead && currentFrame != endFrame) {
-					currentFrame++;
-				}
-			}
-			auto& sprite = clippedSprite[currentFrame - 1];
-			clip = sprite.clip;
-			SDL_FRect offset = Utilities::SDL_Rect_To_SDL_FRect(sprite.offset);
-			render = { position.x + offset.x, position.y + offset.y, (float)clip.w, (float)clip.h };
-			render.x -= camera.screen.x;
-			render.y -= camera.screen.y;
-			SDL_RenderCopyF(Graphics::renderer, texture, &clip, &render);
-			SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 0, 255);
-			SDL_RenderDrawRectF(Graphics::renderer, &render);
-			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 255);
-		}
+//		auto view = zone.view<Component::Position, Component::Texture, Spritesheet_Structs::Sprite_Vector, Component::Direction, Component::Action_State>();
+//		for (auto lion : view) {
+//			auto &position = view.get<Component::Position>(lion);
+//			SDL_Texture *texture = view.get<Component::Texture>(lion).pTexture;
+//			const Component::Action_State &actionState = view.get<Component::Action_State>(lion);
+//			const Component::Direction &direction = view.get<Component::Direction>(lion);
+//            Spritesheet_Structs::Sprite_Sheet_Data* clippedSprite = view.get<Spritesheet_Structs::Sprite_Vector>(lion).sheet;
+//            Spritesheet_Structs::Frame *frameDataArray = view.get<Spritesheet_Structs::Sprite_Vector>(lion).states;
+//			int &currentFrame = view.get<Spritesheet_Structs::Sprite_Vector>(lion).currentFrame;
+//			const int& frameTime= view.get<Spritesheet_Structs::Sprite_Vector>(lion).frameTime;
+//			int& frameTimeCount= view.get<Spritesheet_Structs::Sprite_Vector>(lion).FrameTimeCount;
+//			SDL_Rect& clip = view.get<Spritesheet_Structs::Sprite_Vector>(lion).clip;
+//			SDL_FRect& render = view.get<Spritesheet_Structs::Sprite_Vector>(lion).render;
+//			frameTimeCount += Timer::timeStep;
+//			if (frameTimeCount >= frameTime) {
+//				frameTimeCount = 0;
+//                Spritesheet_Structs::Frame frameData = frameDataArray[actionState];
+//				int startFrame = frameData.startFrame + (frameData.numFrames * (int)direction);
+//				int endFrame = startFrame + frameData.numFrames;
+//				if (currentFrame < startFrame) {
+//					currentFrame = startFrame;
+//				}
+//				if (actionState != Component::Action_State::dead) {
+//					if (currentFrame >= endFrame) {
+//						currentFrame = startFrame;
+//					}
+//				}
+//				if (actionState != Component::Action_State::dead && currentFrame != endFrame) {
+//					currentFrame++;
+//				}
+//			}
+//			auto& sprite = clippedSprite[currentFrame - 1];
+//			clip = sprite.clip;
+//			SDL_FRect offset = Utilities::SDL_Rect_To_SDL_FRect(sprite.offset);
+//			render = { position.x + offset.x, position.y + offset.y, (float)clip.w, (float)clip.h };
+//			render.x -= camera.screen.x;
+//			render.y -= camera.screen.y;
+//			SDL_RenderCopyF(Graphics::renderer, texture, &clip, &render);
+//			SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 0, 255);
+//			SDL_RenderDrawRectF(Graphics::renderer, &render);
+//			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 255);
+//		}
 	}
 
 

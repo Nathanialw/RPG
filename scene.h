@@ -3,7 +3,7 @@
 #include <iostream>
 #include "components.h"
 #include "graphics.h"
-#include "entity_loader.h"
+#include "SQLite_unit_data.h"
 #include "death_spells.h"
 #include "world.h"
 #include "recruitable_units.h"

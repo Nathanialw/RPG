@@ -433,31 +433,9 @@ namespace Component {
 		entt::entity caster_ID;
 	};
 
-	struct Sprite_Sheet_Data {
-		std::string name;
-		SDL_Rect clip;
-		SDL_Rect offset;
-	};
-
-	struct Frame {
-		int startFrame;
-		int numFrames;
-	};
-
 	struct Srite_Direction {
 		Direction direction;
 		int numFrames;
-	};
-
-	struct Sprite_Vector {
-		Sprite_Sheet_Data* sheet;
-		Frame* states;
-		int currentFrame;
-
-		int frameTime;
-		int FrameTimeCount;
-		SDL_Rect clip;
-		SDL_FRect render;
 	};
 
 
