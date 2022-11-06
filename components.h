@@ -109,24 +109,16 @@ namespace Component {
 		summoned
 	};
 
-
-	struct Sheet_Data{
-
-
-	};
-
-	struct Store_State{
-		std::map<Action_State, Sheet_Data> state;
-	};
-
 	struct Frame_Data {
 		int NumFrames;
 		int currentFrame;
 	};
 
+
 	struct Actions {
 		Action_State action;
 		std::vector<Frame_Data>frameCount;
+        Action_State storedAction;
 	};
 
 	//enum class Direction {
@@ -166,7 +158,8 @@ namespace Component {
 
 
 	struct Sprite_Offset {
-		DataTypes::f2d offset;
+        float x;
+        float y;
 	};
 
 	struct spriteframes {
@@ -179,13 +172,48 @@ namespace Component {
         int64_t currentFrameTime;
 	};
 
-	struct animation {
-		SDL_Texture* pTexture;		//texture
-        std::string type;
-		SDL_Rect clipSprite;
-		SDL_FRect renderPosition;
-		std::vector<spriteframes>sheet;
-	};
+    struct Sprite_Sheet_Data {
+        SDL_Rect clip;
+        float x_offset;
+        float y_offset;
+    };
+
+    struct Frame_Data_Packer {
+        int startFrame = 9999;
+        int NumFrames = 0;
+        int reverses = 0;
+        uint64_t frameSpeed = 75;
+    };
+
+    struct Sheet_Data {
+        SDL_Texture* texture = NULL;
+        std::vector<Sprite_Sheet_Data> frameList;
+        /// start frame by action, number of frames per action.
+        std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData;
+        ///store the frame duration for each frame of each action
+        ///probably not worth it
+//        std::unordered_map<Component::Action_State, std::vector<int>> Frame_Speed_By_Action;
+    };
+
+    ///component for the unit
+    struct Sprite_Sheet_Info {
+            ///until I fix it
+		SDL_Texture* texture = NULL;		//texture
+        std::string type = "default";
+        SDL_Rect clipSprite = {0,0,0,0};
+        SDL_FRect renderPosition = {0,0,0,0};
+            ///variable for sprite type
+		std::vector<spriteframes>sheet = {};
+//        std::string* sheetData;
+        std::unordered_map<std::string, Sheet_Data>* sheetData;
+        std::string sheet_name = "default";
+            ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
+//        int index = 0;
+        uint64_t frameTime = 0;
+        int frameIndex = 0;
+        int reversing = 0;
+        int currentFrame = 0;
+    };
 
 	struct Renderable {
 		float y;

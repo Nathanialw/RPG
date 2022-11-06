@@ -46,8 +46,8 @@ namespace Spells {
 		Entity_Loader::Data data = Entity_Loader::parse_data(spellname);
 		DataTypes::f2d spelldir = Spell_Direction(pos, direction, scale);
 		//rendering data
-		World::zone.emplace<Component::animation>(entity, Graphics::fireball_0); /// need to load the texture /only /once and pass the pointer into this function
-		World::zone.get<Component::animation>(entity).sheet = { //populate the vector
+		World::zone.emplace<Component::Sprite_Sheet_Info>(entity, Graphics::fireball_0); /// need to load the texture /only /once and pass the pointer into this function
+		World::zone.get<Component::Sprite_Sheet_Info>(entity).sheet = { //populate the vector
 			{ NULL },
 			{ {0, 0, 64, 64 }, 0, 512, 0, 0, 16 }, //idle
 			{ {0, 0, 64, 64 }, 0, 512, 0, 0, 16 } //walk

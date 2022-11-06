@@ -326,7 +326,7 @@ namespace UI {
                 auto &entityPosition = view.get<Component::Position>(entity);
                 auto &scale = zone.get<Component::Scale>(item_ID).scale;
                 auto &itemPosition = zone.get<Component::Position>(item_ID);
-                auto& offset = zone.get<Component::Sprite_Offset>(item_ID).offset;
+                auto& offset = zone.get<Component::Sprite_Offset>(item_ID);
                 itemPosition = entityPosition;
                 zone.emplace<Ground_Item>(item_ID,
                                           itemPosition.x - (offset.x),

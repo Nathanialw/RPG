@@ -1,28 +1,27 @@
 #pragma once
 #include "tinyxml2.h"
 #include "spritesheet_structs.h"
+#include "components.h"
+#include <string>
 
 namespace Texture_Packer {
         ///on init we need to do it parse the SQLite db for all sprite sheets names "texture_packer" and use the result to preallocate all the nodes of the std::unordered_map
-    struct Sprite_Sheet_Data {
-        std::string name;
-        SDL_Rect clip;
-        int x_offset;
-        int y_offset;
-    };
 
-    struct Sheet_Data {
-        int width = 0;
-        int height = 0;
-        std::vector<Sprite_Sheet_Data> frameList;
-    };
 
-    std::unordered_map<std::string, Sheet_Data> Packer_Textures;
+    std::unordered_map<std::string, Component::Sheet_Data> Packer_Textures;
 
         ///component for the unit
-    struct Packer_Sheet_Data {
-        std::unordered_map<std::string, Sheet_Data>* sheetData;
-    };
+//    struct Packer_Sheet_Data {
+////        std::string* sheetData;
+//        std::unordered_map<std::string, Sheet_Data>* sheetData;
+//        std::string sheet_name = "default";
+//            ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
+////        int index = 0;
+//        uint64_t frameTime = 0;
+//        int frameIndex = 0;
+//        int reversing = 0;
+//        int currentFrame = 0;
+//    };
 
     std::string Get_Sprite_Sheet(std::string &sheetname) {// needs to search for  a specific row that I can input in the arguments
         std::string path;
@@ -45,8 +44,48 @@ namespace Texture_Packer {
         return path;
     }
 
+    void Calculate_Start_Frame (std::unordered_map<Component::Action_State, Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action, int &frameIndex) {
+            /// I know this is terrible but it does work.
+        if (actionFrameData[action].startFrame == 9999) {
+            actionFrameData[action].startFrame = frameIndex;
+        }
+    }
 
-    std::unordered_map<std::string, Sheet_Data>* TexturePacker_Import(std::string &name, std::string &xml_path) {
+    void Calculate_Num_Frames (std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action) {
+        if (frame.back() != '0') {
+            return;
+        }
+        else {
+            actionFrameData[action].NumFrames++;
+        }
+    }
+
+    void Get_Frame_Action_Data (std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+            ///just grab the first 3 letters of the string
+        std::string checkAction = frame.substr(0, 3);
+        Component::Action_State action;
+            /// compare the string in the xml with the values I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
+       if (checkAction == "Att"){
+           action = Component::Action_State::attack;
+       } else if (checkAction == "Blo") {
+           action = Component::Action_State::block;
+       } else if (checkAction == "Cas") {
+           action = Component::Action_State::cast;
+       } else if (checkAction == "Dea") {
+           action = Component::Action_State::dead;
+       } else if (checkAction == "Get") {
+           action = Component::Action_State::struck;
+       } else if (checkAction == "Idl") {
+           action = Component::Action_State::idle;
+       } else if (checkAction == "Run") {
+           action = Component::Action_State::walk;
+       }
+       Calculate_Start_Frame(actionFrameData, action, frameIndex);
+       Calculate_Num_Frames(frame, actionFrameData, action);
+    }
+
+
+    std::unordered_map<std::string, Component::Sheet_Data>* TexturePacker_Import(std::string &name, std::string &xml_path, SDL_Texture* texture) {
             ///check if the sheet data already exists
         if ( Packer_Textures[name].frameList.size() > 1) {
             return &Packer_Textures;
@@ -63,12 +102,18 @@ namespace Texture_Packer {
 
 		tinyxml2::XMLElement* pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
 
-        Sprite_Sheet_Data frame = {};
-        Sheet_Data spritesheet;
+        Component::Sprite_Sheet_Data frame = {};
+        Component::Sheet_Data spritesheet;
         spritesheet.frameList.reserve(200);
+        spritesheet.texture = texture;
+
+        int frameIndex = 0;
 
         if (pSpriteElement != NULL) {
-            frame.name = pSpriteElement->Attribute("n");
+                ///get frame data for each action
+            std::string n = pSpriteElement->Attribute("n");
+            Get_Frame_Action_Data(n, spritesheet.actionFrameData, frameIndex);
+                ///get sprite data
             frame.clip.x = pSpriteElement->IntAttribute("x");
             frame.clip.y = pSpriteElement->IntAttribute("y");
             frame.clip.w = pSpriteElement->IntAttribute("w");
@@ -77,16 +122,16 @@ namespace Texture_Packer {
             frame.y_offset = pSpriteElement->IntAttribute("oY");
             spritesheet.frameList.emplace_back(frame);
                 ///so we only grab this once
-            spritesheet.height = pSpriteElement->IntAttribute("oH");
-            spritesheet.width = pSpriteElement->IntAttribute("oW");
+            frameIndex++;
                 ///this grabs the next line
             pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
         }
-
-                ///get the rest of the xml
+            ///get the rest of the xml
         while (pSpriteElement != NULL) {
-			//assign value
-			frame.name = pSpriteElement->Attribute("n");
+                ///get frame data for each action
+            std::string n = pSpriteElement->Attribute("n");
+            Get_Frame_Action_Data(n, spritesheet.actionFrameData, frameIndex);
+                ///get sprite data
 			frame.clip.x = pSpriteElement->IntAttribute("x");
 			frame.clip.y = pSpriteElement->IntAttribute("y");
 			frame.clip.w = pSpriteElement->IntAttribute("w");
@@ -94,12 +139,13 @@ namespace Texture_Packer {
 			frame.x_offset = pSpriteElement->IntAttribute("oX");
 			frame.y_offset = pSpriteElement->IntAttribute("oY");
             spritesheet.frameList.emplace_back(frame);
+            frameIndex++;
                 ///this grabs the next line
-			pSpriteElement = pSpriteElement->NextSiblingElement("sprite");			
+			pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
 		}
 
         spritesheet.frameList.shrink_to_fit();
-        Packer_Textures[name]= spritesheet;
+        Packer_Textures[name] = spritesheet;
         return &Packer_Textures;
 	}
 }

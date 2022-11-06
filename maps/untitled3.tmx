@@ -505,13 +505,11 @@
   <object id="1975" template="spawn_points/unit_spawns/wolf_00.tx" x="10933" y="9899"/>
   <object id="1976" template="spawn_points/unit_spawns/wolf_00.tx" x="10679" y="9529"/>
   <object id="1977" template="spawn_points/unit_spawns/wolf_00.tx" x="10917" y="9535"/>
-  <object id="1982" template="spawn_points/unit_spawns/knight_00.tx" name="player" x="11224" y="11680"/>
   <object id="1983" template="spawn_points/unit_spawns/knight_00.tx" x="11192" y="10736"/>
   <object id="1991" template="spawn_points/unit_spawns/demon.tx" x="11105" y="11263"/>
   <object id="1992" template="spawn_points/unit_spawns/ogre_00.tx" x="11321" y="11163"/>
   <object id="1993" template="spawn_points/unit_spawns/ghoul_00.tx" x="11449" y="11319"/>
   <object id="1994" template="spawn_points/unit_spawns/minotaur_00.tx" x="11586" y="11490"/>
-  <object id="1998" template="spawn_points/unit_spawns/footman_00.tx" x="11001" y="11713"/>
-  <object id="1999" template="spawn_points/unit_spawns/footman_00.tx" name="footman_01" x="10861.5" y="11532.5"/>
+  <object id="1998" template="spawn_points/unit_spawns/footman_00.tx" name="player" x="11290.5" y="11763.5"/>
  </objectgroup>
 </map>

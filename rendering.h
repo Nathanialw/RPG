@@ -83,13 +83,16 @@ namespace Rendering {
         return frame;
     }
 
-    SDL_Rect Get_Spritesheet_Type(SDL_Rect &frame, Component::animation& animation, Component::Direction& direction, Component::Actions& act) {
+    SDL_Rect Get_Spritesheet_Type(SDL_Rect &frame, Component::Sprite_Sheet_Info &animation, Component::Direction& direction, Component::Actions& act) {
         if (animation.type == "flare"){
             frame = Update_Frame_Flare(frame, act.frameCount[act.action], direction, animation.sheet[act.action]);
         }
         else if (animation.type == "pvg"){
             frame = Update_Frame_PVG(frame, act.frameCount[act.action], direction, animation.sheet[act.action]);
         }
+//        else if (animation.type == "RPG_Tools") {
+////            Frame_Increment(sheetData, action, direction);
+//        }
         else {
             //Utilities::Log("Error! Frame_Update() could not find animation type!");
                 ///maybe have a special return value to make this more obvious
@@ -109,7 +112,7 @@ namespace Rendering {
         return false;
     }
 
-    SDL_Rect Update_Frame(Component::animation &animation, Component::Direction& direction, Component::Actions& act) {
+    SDL_Rect Update_Frame(Component::Sprite_Sheet_Info &animation, Component::Direction& direction, Component::Actions& act) {
         SDL_Rect frame = animation.sheet[act.action].clip;
         if (act.action != Component::isStatic) {            ;
             Component::spriteframes &spritesheet = animation.sheet[act.action];
@@ -160,37 +163,100 @@ namespace Rendering {
 		return fScaledImage;
 	}
 
-    void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
-		auto view1 = zone.view<Component::Renderable, Component::Position, Component::animation, Component::Actions, Component::Direction, Component::Sprite_Offset, Component::Scale, Component::Entity_Type>();
-		for (auto entity : view1) {
-			auto& alpha = view1.get<Component::Renderable>(entity).alpha;
-			auto& direction = view1.get<Component::Direction>(entity);
-			auto& scale = view1.get<Component::Scale>(entity).scale;
-			auto& anim = view1.get<Component::animation>(entity);
-			auto& position = view1.get<Component::Position>(entity);
-			auto& action = view1.get<Component::Actions>(entity);
-			auto& type = view1.get<Component::Entity_Type>(entity);
-			auto& spriteOffset = view1.get<Component::Sprite_Offset>(entity).offset;
-			    ///only fire this at 60 frames/sec
-            anim.sheet[action.action].currentFrameTime += Timer::timeStep;
-            if (anim.sheet[action.action].currentFrameTime >= anim.sheet[action.action].timeBetweenFrames) {
-                anim.sheet[action.action].currentFrameTime = 0;
-                anim.clipSprite  = Update_Frame(anim, direction, action);
-                anim.renderPosition = Scale_Sprite_for_Render(anim.clipSprite , scale);
-			}
-			anim.renderPosition.x = (position.x - camera.screen.x - spriteOffset.x);
-			anim.renderPosition.y = (position.y - camera.screen.y - spriteOffset.y);
 
-			if (type == Component::Entity_Type::item){
-				anim.renderPosition.w = (spriteOffset.x * 2.0f);
-				anim.renderPosition.h = (spriteOffset.y * 2.0f);
-			}
-			    ///fade rendering objects at bottom of screen
-			SDL_SetTextureAlphaMod(anim.pTexture, alpha);
-			Graphics::Render_FRect(anim.pTexture, &anim.clipSprite, &anim.renderPosition);
-			if (1) {
-				//SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
-			}
+    SDL_Rect Frame_Increment(Component::Sprite_Sheet_Info &sheetData, Component::Actions &action, Component::Direction &direction) {
+        sheetData.frameTime += Timer::timeStep;
+        if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.action].frameSpeed) {
+            ///reset frame count if over
+            sheetData.frameTime = 0;
+            int &currentFrame = action.frameCount[action.action].currentFrame;
+            int &startFrame = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.action].startFrame;
+            int &numFrames = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.action].NumFrames;
+            sheetData.frameIndex = startFrame + (numFrames * PVG_Direction_Enum(direction)) + currentFrame;
+            ///calculate reversing
+            if (sheetData.reversing) {
+                if (currentFrame <= 1) {
+                    sheetData.reversing = 0;
+                }
+                currentFrame--;
+            }
+            else {
+                currentFrame++;
+            }
+            if (currentFrame >= numFrames) {
+                currentFrame = 0;
+                if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.action].reverses) {
+                    sheetData.reversing = 1;
+                }
+                else {
+                    action.frameCount[action.action].currentFrame = 0;
+                    if (action.action != Component::walk) {
+                        action.action = Component::idle;
+                    }
+                }
+            }
+        }
+    }
+
+    SDL_FRect Position_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
+        clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].clip;
+        renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
+        renderRect.x = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].x_offset - offset.x + position.x - camera.screen.x;
+        renderRect.y = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].y_offset - offset.y + position.y - camera.screen.y;
+        return renderRect;
+    }
+
+//    void Texture_Packer_Render(entt::registry &zone, Component::Camera& camera) {
+//        auto view = zone.view<Component::Renderable, Component::Position, Texture_Packer::Packer_Sheet_Data, Component::Direction, Component::Actions, Component::Sprite_Offset, Component::Scale>();
+//        for (auto entity : view) {
+//            auto [renderable, position, sheetData, direction, action, offset, scale] = view.get(entity);
+//            SDL_Rect clipRect;
+//            SDL_FRect renderRect;
+//
+//            Frame_Increment(sheetData, action, direction);
+//            renderRect = Position_For_Render(sheetData, position, camera, scale, offset, clipRect, renderRect);
+//            SDL_SetTextureAlphaMod(sheetData.sheetData->at(sheetData.sheet_name).texture, renderable.alpha);
+//
+//            Graphics::Render_FRect(sheetData.sheetData->at(sheetData.sheet_name).texture, &clipRect, &renderRect);
+//        }
+//    }
+
+
+    void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
+		auto view1 = zone.view<Component::Renderable, Component::Position, Component::Sprite_Sheet_Info, Component::Actions, Component::Direction, Component::Sprite_Offset, Component::Scale, Component::Entity_Type>();
+		for (auto entity : view1) {
+            auto [renderable, position, sheetData, action, direction, spriteOffset, scale, type] = view1.get(entity);
+            SDL_Rect clipRect;
+            SDL_FRect renderRect;
+            SDL_Texture* texture;
+			    ///only fire this at 60 frames/sec
+			if (sheetData.type != "RPG_Tools") {
+                sheetData.sheet[action.action].currentFrameTime += Timer::timeStep;
+                if (sheetData.sheet[action.action].currentFrameTime >= sheetData.sheet[action.action].timeBetweenFrames) {
+                    sheetData.sheet[action.action].currentFrameTime = 0;
+                    sheetData.clipSprite = Update_Frame(sheetData, direction, action);
+                    sheetData.renderPosition = Scale_Sprite_for_Render(sheetData.clipSprite, scale.scale);
+                }
+                sheetData.renderPosition.x = (position.x - camera.screen.x - spriteOffset.x);
+                sheetData.renderPosition.y = (position.y - camera.screen.y - spriteOffset.y);
+
+                if (type == Component::Entity_Type::item){
+                    sheetData.renderPosition.w = (spriteOffset.x * 2.0f);
+                    sheetData.renderPosition.h = (spriteOffset.y * 2.0f);
+                }
+                    ///fade rendering objects at bottom of screen
+                clipRect = sheetData.clipSprite;
+                renderRect = sheetData.renderPosition;
+                SDL_SetTextureAlphaMod(sheetData.texture, renderable.alpha);
+                texture = sheetData.texture;
+            }
+            else {
+                Frame_Increment(sheetData, action, direction);
+                renderRect = Position_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+                texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
+            }
+            SDL_SetTextureAlphaMod(texture, renderable.alpha);
+			Graphics::Render_FRect(texture, &clipRect, &renderRect);
 		}
 	}
 
@@ -247,51 +313,6 @@ namespace Rendering {
 				SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
 			}
 		}
-	}
-
-	void Texture_Packer_Render(entt::registry &zone, Component::Camera& camera) {
-//		auto view = zone.view<Component::Position, Component::Texture, Spritesheet_Structs::Sprite_Vector, Component::Direction, Component::Action_State>();
-//		for (auto lion : view) {
-//			auto &position = view.get<Component::Position>(lion);
-//			SDL_Texture *texture = view.get<Component::Texture>(lion).pTexture;
-//			const Component::Action_State &actionState = view.get<Component::Action_State>(lion);
-//			const Component::Direction &direction = view.get<Component::Direction>(lion);
-//            Spritesheet_Structs::Sprite_Sheet_Data* clippedSprite = view.get<Spritesheet_Structs::Sprite_Vector>(lion).sheet;
-//            Spritesheet_Structs::Frame *frameDataArray = view.get<Spritesheet_Structs::Sprite_Vector>(lion).states;
-//			int &currentFrame = view.get<Spritesheet_Structs::Sprite_Vector>(lion).currentFrame;
-//			const int& frameTime= view.get<Spritesheet_Structs::Sprite_Vector>(lion).frameTime;
-//			int& frameTimeCount= view.get<Spritesheet_Structs::Sprite_Vector>(lion).FrameTimeCount;
-//			SDL_Rect& clip = view.get<Spritesheet_Structs::Sprite_Vector>(lion).clip;
-//			SDL_FRect& render = view.get<Spritesheet_Structs::Sprite_Vector>(lion).render;
-//			frameTimeCount += Timer::timeStep;
-//			if (frameTimeCount >= frameTime) {
-//				frameTimeCount = 0;
-//                Spritesheet_Structs::Frame frameData = frameDataArray[actionState];
-//				int startFrame = frameData.startFrame + (frameData.numFrames * (int)direction);
-//				int endFrame = startFrame + frameData.numFrames;
-//				if (currentFrame < startFrame) {
-//					currentFrame = startFrame;
-//				}
-//				if (actionState != Component::Action_State::dead) {
-//					if (currentFrame >= endFrame) {
-//						currentFrame = startFrame;
-//					}
-//				}
-//				if (actionState != Component::Action_State::dead && currentFrame != endFrame) {
-//					currentFrame++;
-//				}
-//			}
-//			auto& sprite = clippedSprite[currentFrame - 1];
-//			clip = sprite.clip;
-//			SDL_FRect offset = Utilities::SDL_Rect_To_SDL_FRect(sprite.offset);
-//			render = { position.x + offset.x, position.y + offset.y, (float)clip.w, (float)clip.h };
-//			render.x -= camera.screen.x;
-//			render.y -= camera.screen.y;
-//			SDL_RenderCopyF(Graphics::renderer, texture, &clip, &render);
-//			SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 0, 255);
-//			SDL_RenderDrawRectF(Graphics::renderer, &render);
-//			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 255);
-//		}
 	}
 
 
@@ -368,35 +389,17 @@ namespace Rendering {
 								}
 							}
 						}
-						//check the rendering order
-						//auto text = Graphics::Load_Text_Texture(std::to_string(k), {255, 155, 155, 255});
-						//Graphics::Render_FRect(text.pTexture, &text.k, &renderPosition);
-						//SDL_DestroyTexture(text.pTexture);
 					}
 					g++;
 				}
 				if (i == 1) {
 					Animation_Frame(zone, camera);
-					Texture_Packer_Render(zone, camera);
+//					Texture_Packer_Render(zone, camera);
 					Render_Explosions(zone, camera);
 				}
 			}
 		}
 		int ks = h + g;
-		//h = h / g;
-		//system("CLS");
-		//Utilities::Log("x: ");
-		//Utilities::Log(X);
-		//Utilities::Log(g);
-		//Utilities::Log(" ");
-		//Utilities::Log("y: ");
-		//Utilities::Log(Y);
-		//Utilities::Log(h);
-		//Utilities::Log(" ");
-		//Utilities::Log(h);
-		//Utilities::Log(o);
-		//Utilities::Log(" ");
-		//Utilities::Log(" ");
 	}
 
 	void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {

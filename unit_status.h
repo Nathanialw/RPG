@@ -91,7 +91,7 @@ namespace Unit_Status {
 				view.get<Component::Actions>(entity).frameCount[view.get<Component::Actions>(entity).action].currentFrame = 0;
 				auto& position = view.get<Component::Position>(entity);
 				auto& radius = view.get<Component::Radius>(entity).fRadius;
-				auto& offset = view.get<Component::Sprite_Offset>(entity).offset;
+				auto& offset = view.get<Component::Sprite_Offset>(entity);
 				auto& body = view.get<Component::Body>(entity).body;
 				auto& inTree = view.get<Component::In_Object_Tree>(entity).inTree;
 				Items::Create_And_Drop_Item(position);

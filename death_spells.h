@@ -23,8 +23,8 @@ namespace Death_Spells {
 		Entity_Loader::Data data = Entity_Loader::parse_data(name);
 
 		auto skeleton0 = zone.create();
-		zone.emplace<Component::animation>(skeleton0, Graphics::unitTextures[unitID]); /// need to load the texture nly once and pass the pointer intothis function
-		zone.get<Component::animation>(skeleton0).sheet = { //populate the vector
+		zone.emplace<Component::Sprite_Sheet_Info>(skeleton0, Graphics::unitTextures[unitID]); /// need to load the texture nly once and pass the pointer intothis function
+		zone.get<Component::Sprite_Sheet_Info>(skeleton0).sheet = { //populate the vector
 			{ NULL },
 			{ {0   , 0, 128, 128}, 0,    512,  1, 0, 75, 0},//idle array[numframes] = { 2ms, 4ms, 2ms}
 			{ {512,  0, 128, 128}, 512,  1024, 0, 0, 75, 0},//walk

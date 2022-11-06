@@ -109,8 +109,8 @@ namespace Items {
 
 		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
         //sprite sheet graphic pointer
-		World::zone.emplace<Component::animation>(item, Graphics::weapons_icons ); /// need to load hetexture	 only once and pass the pointer into this function
-		World::zone.get<Component::animation>(item).sheet = {
+		World::zone.emplace<Component::Sprite_Sheet_Info>(item, Graphics::weapons_icons ); /// need to load hetexture	 only once and pass the pointer into this function
+		World::zone.get<Component::Sprite_Sheet_Info>(item).sheet = {
 			{ sprite , 0, 32, 0, 0, 75, 0}
 		};
 		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
@@ -140,8 +140,8 @@ namespace Items {
 		int row = armorTypes[armorType];
 		int size = 64;
 		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
-		World::zone.emplace<Component::animation>(item, Graphics::armorSpriteSheet); /// need to load hetexture	 only once and pass the pointer into this function
-		World::zone.get<Component::animation>(item).sheet = {
+		World::zone.emplace<Component::Sprite_Sheet_Info>(item, Graphics::armorSpriteSheet); /// need to load hetexture	 only once and pass the pointer into this function
+		World::zone.get<Component::Sprite_Sheet_Info>(item).sheet = {
 			{ sprite , 0, 64, 0, 0, 75, 0}
 		};
 		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
@@ -162,7 +162,7 @@ namespace Items {
 		World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
 		auto &stats = World::zone.emplace<Item_Stats>(item);
 		stats = itemStats;
-		auto& offset = World::zone.emplace<Component::Sprite_Offset>(item, rectSide/2.0f * scale, rectSide/2.0f * scale).offset;
+		auto& offset = World::zone.emplace<Component::Sprite_Offset>(item, rectSide/2.0f * scale, rectSide/2.0f * scale);
 		auto& position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
 		World::zone.emplace<Component::Radius>(item, offset.x);
 		World::zone.emplace<Ground_Item>(item,

@@ -94,7 +94,7 @@ namespace Maps {
 
         Spritesheet_Structs::sheetData sheetData;
         std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
-        std::unordered_map<std::string, Texture_Packer::Sheet_Data> *packerframeData = Sprite_Sheet::Get_From_Sheet_Data(name, sheetname, sheetData);
+        std::unordered_map<std::string, Component::Sheet_Data> *packerframeData = Sprite_Sheet::Get_From_Sheet_Data(name, sheetname, sheetData, Graphics::unitTextures[unit_ID]);
 
         // translates isometric position to world position
         float tileWidth = 128;
@@ -112,11 +112,15 @@ namespace Maps {
         zone.emplace<Component::Mass>(entity, data.mass);
         zone.emplace<Component::Alive>(entity, true);
         if (packerframeData) {
-            zone.emplace<Texture_Packer::Packer_Sheet_Data>(entity, packerframeData);
+           auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
+           sprite.sheetData = packerframeData;
+           sprite.sheet_name = name;
+           sprite.type = "RPG_Tools";
+           zone.emplace<Component::Sprite_Offset>(entity, 75.0f * data.scale, 100.0f * data.scale);
         }
         else {
             zone.emplace<Component::Sprite_Offset>(entity, sheetData.x_offset * data.scale, sheetData.y_offset * data.scale);
-            zone.emplace<Component::animation>(entity, Graphics::unitTextures[unit_ID], sheetData.sheet_type); /// need to load the texture only once and pass the pointer into that function
+            zone.emplace<Component::Sprite_Sheet_Info>(entity, Graphics::unitTextures[unit_ID], sheetData.sheet_type); /// need to load the texture only once and pass the pointer into that function
         }
         //dynamic entities
         if (data.body_type == 1) {
@@ -144,7 +148,7 @@ namespace Maps {
                 {sheetData.summoned.numFrames ,0}
             };
             if (!packerframeData) {
-                zone.get<Component::animation>(entity).sheet = { //populate the vector
+                zone.get<Component::Sprite_Sheet_Info>(entity).sheet = { //populate the vector
                     { {sheetData.isStatic.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.isStatic.firstFrame, sheetData.sheet_width,  sheetData.isStatic.reverses, 0, sheetData.time_between_frames, 0},//idle array[numframes] = { 2ms, 4ms, 2ms} },
                     { {sheetData.idle.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.idle.firstFrame, sheetData.sheet_width,  sheetData.idle.reverses, 0, sheetData.time_between_frames, 0},//idle array[numframes] = { 2ms, 4ms, 2ms}
                     { {sheetData.walk.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.walk.firstFrame, sheetData.sheet_width,  sheetData.walk.reverses, 0, sheetData.time_between_frames, 0},//walk
@@ -188,8 +192,8 @@ namespace Maps {
         //static entities
         else if (data.body_type == 0) {
             Collision::Create_Static_Body(zone, entity, position.x, position.y, data.radius);
-            zone.get<Component::animation>(entity).sheet = {  //populate the vector
-                    {{ 0, 0, sheetData.h, sheetData.h}, 0, sheetData.w, 0, 0, sheetData.time_between_frames, 0 }
+            zone.get<Component::Sprite_Sheet_Info>(entity).sheet = {  //populate the vector
+                    {{ 0, 0, sheetData.w, sheetData.h}, 0, sheetData.w, 0, 0, sheetData.time_between_frames, 0 }
             };
             zone.emplace<Component::Actions>(entity, Component::isStatic);
             zone.get<Component::Actions>(entity).frameCount = { { 0, 0} };

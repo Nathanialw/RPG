@@ -7,9 +7,9 @@ namespace Sprite_Parser {
 
 
 
-	void Store_State_Frame_Start_Y(Component::Action_State &action, Component::Store_State &storage, int &y) {
-		//storage.state[action] = y;
-	}
+//	void Store_State_Frame_Start_Y(Component::Action_State &action, Component::Store_State &storage, int &y) {
+//		//storage.state[action] = y;
+//	}
 
 
 	SDL_Rect Update_Sprite_Sheet(int actionState, int direction) {

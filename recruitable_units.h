@@ -13,8 +13,8 @@ namespace Units {
 	for (auto j = 0; j < x; ++j) {
 		for (auto i = 0; i < y; ++i) {
 			auto archer = World::zone.create();			//creates a unique handle for an entity
-			World::zone.emplace<Component::animation>(archer, Graphics::archer_0); /// need to load the texture only onceand pass the pointer into this function
-			World::zone.get<Component::animation>(archer).sheet = { //populate the vector
+			World::zone.emplace<Component::Sprite_Sheet_Info>(archer, Graphics::archer_0); /// need to load the texture only onceand pass the pointer into this function
+			World::zone.get<Component::Sprite_Sheet_Info>(archer).sheet = { //populate the vector
 				{ NULL },
 				{ {0   , 0, 128, 128}, 0,    512,  1, 0, 75, 0 },//idle
 				{ {512,  0, 128, 128}, 512,  1024, 0, 0, 75, 0 },//walk
