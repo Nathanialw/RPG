@@ -372,6 +372,9 @@ namespace Rendering {
 						renderPosition.x -= camera.screen.x;;
 						renderPosition.y -= camera.screen.y;;
 						int k = (numOfTiles.x * y) + x;
+                        if (k > 100000) {
+                            Utilities::Log("asdas");
+                        }
 						if (tiles[k].ID != 0) {
 							auto id = tiles[k].ID;
 							for (int tilesetCount = p; tilesetCount >= 0; --tilesetCount) {

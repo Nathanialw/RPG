@@ -44,7 +44,7 @@ namespace Texture_Packer {
         return path;
     }
 
-    void Calculate_Start_Frame (std::unordered_map<Component::Action_State, Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action, int &frameIndex) {
+    void Calculate_Start_Frame (std::unordered_map<Component::Action_State, Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action, int &frameIndex,  Spritesheet_Structs::sheetData &sheetData) {
             /// I know this is terrible but it does work.
         if (actionFrameData[action].startFrame == 9999) {
             actionFrameData[action].startFrame = frameIndex;
@@ -60,32 +60,39 @@ namespace Texture_Packer {
         }
     }
 
-    void Get_Frame_Action_Data (std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+    void Get_Frame_Action_Data (std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex, Spritesheet_Structs::sheetData &sheetData) {
             ///just grab the first 3 letters of the string
         std::string checkAction = frame.substr(0, 3);
         Component::Action_State action;
             /// compare the string in the xml with the values I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
        if (checkAction == "Att"){
            action = Component::Action_State::attack;
+//           sheetData.attack.numFrames++;
        } else if (checkAction == "Blo") {
            action = Component::Action_State::block;
+           sheetData.block.numFrames++;
        } else if (checkAction == "Cas") {
            action = Component::Action_State::cast;
+           sheetData.cast.numFrames++;
        } else if (checkAction == "Dea") {
            action = Component::Action_State::dead;
+           sheetData.dying.numFrames++;
        } else if (checkAction == "Get") {
            action = Component::Action_State::struck;
+           sheetData.struck.numFrames++;
        } else if (checkAction == "Idl") {
            action = Component::Action_State::idle;
+           sheetData.idle.numFrames++;
        } else if (checkAction == "Run") {
            action = Component::Action_State::walk;
+           sheetData.walk.numFrames++;
        }
-       Calculate_Start_Frame(actionFrameData, action, frameIndex);
+       Calculate_Start_Frame(actionFrameData, action, frameIndex, sheetData);
        Calculate_Num_Frames(frame, actionFrameData, action);
     }
 
 
-    std::unordered_map<std::string, Component::Sheet_Data>* TexturePacker_Import(std::string &name, std::string &xml_path, SDL_Texture* texture) {
+    std::unordered_map<std::string, Component::Sheet_Data>* TexturePacker_Import(std::string &name, std::string &xml_path, SDL_Texture* texture, Spritesheet_Structs::sheetData &sheetData) {
             ///check if the sheet data already exists
         if ( Packer_Textures[name].frameList.size() > 1) {
             return &Packer_Textures;
@@ -112,7 +119,7 @@ namespace Texture_Packer {
         if (pSpriteElement != NULL) {
                 ///get frame data for each action
             std::string n = pSpriteElement->Attribute("n");
-            Get_Frame_Action_Data(n, spritesheet.actionFrameData, frameIndex);
+            Get_Frame_Action_Data(n, spritesheet.actionFrameData, frameIndex, sheetData);
                 ///get sprite data
             frame.clip.x = pSpriteElement->IntAttribute("x");
             frame.clip.y = pSpriteElement->IntAttribute("y");
@@ -130,7 +137,7 @@ namespace Texture_Packer {
         while (pSpriteElement != NULL) {
                 ///get frame data for each action
             std::string n = pSpriteElement->Attribute("n");
-            Get_Frame_Action_Data(n, spritesheet.actionFrameData, frameIndex);
+            Get_Frame_Action_Data(n, spritesheet.actionFrameData, frameIndex, sheetData);
                 ///get sprite data
 			frame.clip.x = pSpriteElement->IntAttribute("x");
 			frame.clip.y = pSpriteElement->IntAttribute("y");

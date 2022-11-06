@@ -11,7 +11,7 @@ namespace Sprite_Sheet {
         }
         else {
                 ///run texture packer
-            return Texture_Packer::TexturePacker_Import(name, spritesheet, texture);
+            return Texture_Packer::TexturePacker_Import(name, spritesheet, texture, sheetData);
         }
         return 0;
     }
