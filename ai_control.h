@@ -20,7 +20,7 @@ namespace AI {
 			//if it is in range, run Melee_Attack()
             //else pass that point as an update to the move order
 			if (Entity_Control::Target_In_Melee_Range(zone, entityPosition, meleeRange, targetPosition, targetRadius)) { //check if center of attack rect is in the target
-                auto &action = zone.get<Component::Actions>(entity_ID).action;
+                auto &action = zone.get<Component::Action>(entity_ID).state;
                 if (action != Component::attack && action != Component::struck) {
                     action = Component::idle;
                 }

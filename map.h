@@ -87,14 +87,28 @@ namespace Maps {
             //scale.scale = rand_scale;
         }
         else {
+            if (name == "player") {
+                Utilities::Log("player");
+            }
             unit_ID = Check_For_Template_ID(name);
             Graphics::Create_Game_Object(unit_ID, filepath.c_str());
             data = Entity_Loader::parse_data(name);
         }
 
-        Spritesheet_Structs::sheetData sheetData;
+        SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
         std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
-        std::unordered_map<std::string, Component::Sheet_Data> *packerframeData = Sprite_Sheet::Get_From_Sheet_Data(name, sheetname, sheetData, Graphics::unitTextures[unit_ID]);
+        std::unordered_map<std::string, Component::Sheet_Data_Flare>* flareSheetData = NULL;
+        std::unordered_map<std::string, Component::Sheet_Data> *packerframeData = NULL;
+
+        if (sheetname == "texture_packer") {
+            ///run texture packer
+            packerframeData = Texture_Packer::TexturePacker_Import(name, sheetname, Graphics::unitTextures[unit_ID]);
+        }
+        else {
+                ///get sheet data for new pointer to map
+            SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
+            flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
+        }
 
         // translates isometric position to world position
         float tileWidth = 128;
@@ -119,58 +133,18 @@ namespace Maps {
            zone.emplace<Component::Sprite_Offset>(entity, 75.0f * data.scale, 100.0f * data.scale);
         }
         else {
-            zone.emplace<Component::Sprite_Offset>(entity, sheetData.x_offset * data.scale, sheetData.y_offset * data.scale);
-            zone.emplace<Component::Sprite_Sheet_Info>(entity, Graphics::unitTextures[unit_ID], sheetData.sheet_type); /// need to load the texture only once and pass the pointer into that function
+            auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
+            sprite.flareSpritesheet = flareSheetData;
+            sprite.sheet_name = name;
+            sprite.type = sheetDataFlare.sheet_type;
+            zone.emplace<Component::Sprite_Offset>(entity, sheetDataFlare.x_offset * data.scale, sheetDataFlare.y_offset * data.scale);
         }
+
         //dynamic entities
         if (data.body_type == 1) {
             bool yes = true;
             Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius, data.mass, yes);
-            std::vector<Component::Frame_Data> frameVector = {
-                {sheetData.isStatic.numFrames ,0},
-                {sheetData.idle.numFrames ,0},
-                {sheetData.walk.numFrames ,0},
-                {sheetData.run.numFrames ,0},
-                {sheetData.attack.numFrames ,0},
-                {sheetData.attack2.numFrames ,0},
-                {sheetData.cast.numFrames ,0},
-                {sheetData.struck.numFrames ,0},
-                {sheetData.block.numFrames ,0},
-                {sheetData.evade.numFrames ,0},
-                {sheetData.stunned.numFrames ,0},
-                {sheetData.dying.numFrames ,0},
-                {sheetData.corpse.numFrames ,0},
-                {sheetData.low_hp.numFrames ,0},
-                {sheetData.resting.numFrames ,0},
-                {sheetData.ranged.numFrames ,0},
-                {sheetData.cheer.numFrames ,0},
-                {sheetData.behavior.numFrames ,0},
-                {sheetData.summoned.numFrames ,0}
-            };
-            if (!packerframeData) {
-                zone.get<Component::Sprite_Sheet_Info>(entity).sheet = { //populate the vector
-                    { {sheetData.isStatic.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.isStatic.firstFrame, sheetData.sheet_width,  sheetData.isStatic.reverses, 0, sheetData.time_between_frames, 0},//idle array[numframes] = { 2ms, 4ms, 2ms} },
-                    { {sheetData.idle.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.idle.firstFrame, sheetData.sheet_width,  sheetData.idle.reverses, 0, sheetData.time_between_frames, 0},//idle array[numframes] = { 2ms, 4ms, 2ms}
-                    { {sheetData.walk.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.walk.firstFrame, sheetData.sheet_width,  sheetData.walk.reverses, 0, sheetData.time_between_frames, 0},//walk
-                    { {sheetData.run.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.run.firstFrame, sheetData.sheet_width,  sheetData.run.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.attack.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.attack.firstFrame, sheetData.sheet_width,  sheetData.attack.reverses, 0, sheetData.time_between_frames, 0},//atack
-                    { {sheetData.attack2.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.attack2.firstFrame, sheetData.sheet_width,  sheetData.attack2.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.cast.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.cast.firstFrame, sheetData.sheet_width,  sheetData.cast.reverses, 0, sheetData.time_between_frames, 0},//cast
-                    { {sheetData.struck.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.struck.firstFrame, sheetData.sheet_width,  sheetData.struck.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.block.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.block.firstFrame, sheetData.sheet_width, sheetData.block.reverses, 0, sheetData.time_between_frames, 0},//block
-                    { {sheetData.evade.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.evade.firstFrame, sheetData.sheet_width,  sheetData.evade.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.stunned.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.stunned.firstFrame, sheetData.sheet_width,  sheetData.stunned.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.dying.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.dying.firstFrame, sheetData.sheet_width,  sheetData.dying.reverses, 0, sheetData.time_between_frames, 0},//death/reverse to summon
-                    { {sheetData.corpse.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.corpse.firstFrame, sheetData.sheet_width,  sheetData.corpse.reverses, 0, sheetData.time_between_frames, 0},//death/reverse to summon
-                    { {sheetData.low_hp.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.low_hp.firstFrame, sheetData.sheet_width,  sheetData.low_hp.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.resting.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.resting.firstFrame, sheetData.sheet_width,  sheetData.resting.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.ranged.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.ranged.firstFrame, sheetData.sheet_width,  sheetData.ranged.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.cheer.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.cheer.firstFrame, sheetData.sheet_width,  sheetData.cheer.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.behavior.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.behavior.firstFrame, sheetData.sheet_width,  sheetData.behavior.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                    { {sheetData.summoned.firstFrame * sheetData.w, 0, sheetData.w, sheetData.h}, sheetData.summoned.firstFrame, sheetData.sheet_width,  sheetData.summoned.reverses, 0, sheetData.time_between_frames, 0},//ranged
-                };
-            }
-            zone.emplace<Component::Actions>(entity, Component::idle, frameVector);
+            zone.emplace<Component::Action>(entity, Component::idle);
             zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);
             zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0);
             zone.emplace<Component::Velocity>(entity, 0.f, 0.0f, 0.f, 0.0f, data.speed);
@@ -192,14 +166,11 @@ namespace Maps {
         //static entities
         else if (data.body_type == 0) {
             Collision::Create_Static_Body(zone, entity, position.x, position.y, data.radius);
-            zone.get<Component::Sprite_Sheet_Info>(entity).sheet = {  //populate the vector
-                    {{ 0, 0, sheetData.w, sheetData.h}, 0, sheetData.w, 0, 0, sheetData.time_between_frames, 0 }
-            };
-            zone.emplace<Component::Actions>(entity, Component::isStatic);
-            zone.get<Component::Actions>(entity).frameCount = { { 0, 0} };
+            zone.emplace<Component::Action>(entity, Component::isStatic);
             zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
         }
     }
+
 
     // read the map data and import it into the data structures
     void Create_Map() {
@@ -258,5 +229,5 @@ namespace Maps {
         else {
             std::cout << "Failed loading map" << std::endl;
         }
-    }
+    };
 }

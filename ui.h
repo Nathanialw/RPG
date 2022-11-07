@@ -428,34 +428,39 @@ namespace UI {
 		Player_Move_Poll += Timer::timeStep;
 		if (Player_Move_Poll >= 200) {
 			Player_Move_Poll = 0;
-			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Item_Pickup, Component::Actions, Component::Moving>();
+			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Item_Pickup, Component::Action, Component::Moving>();
 			for (auto entity : view) {
 				const auto& x = view.get<Component::Position>(entity);
 				const auto& y = view.get<Component::Position>(entity);
-				auto& act = view.get<Component::Actions>(entity);
+				auto& act = view.get<Component::Action>(entity);
 				auto& v = view.get<Component::Velocity>(entity);
 				auto& mov = view.get<Component::Item_Pickup>(entity);
-				act.action = Component::walk;
+				act.state = Component::walk;
 				v.magnitude.x = v.speed * (mov.x - x.x);
 				v.magnitude.y = v.speed * (mov.y - y.y);
+
 			}
 		}
 	}
 
 	void Mouse_Move_Arrived_Pickup_Item(entt::registry &zone, bool & isItemCurrentlyHeld) {
-		auto view = World::zone.view<Component::Position, Component::Velocity, Component::Actions, Component::Item_Pickup>();
+		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Position, Component::Velocity, Component::Action, Component::Item_Pickup>();
 		for (auto entity : view) {
-			auto& act = view.get<Component::Actions>(entity);
+			auto& action = view.get<Component::Action>(entity);
 			auto& v = view.get<Component::Velocity>(entity);
 			const auto& position = view.get<Component::Position>(entity);
 			auto& itemData = view.get<Component::Item_Pickup>(entity);
+			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
 			if (Check_If_Arrived(position.x, position.y, itemData.x, itemData.y)) {
-				if (act.action == Component::walk) {
+				if (action.state == Component::walk) {
 					v.magnitude.x = 0.0f;
 					v.magnitude.y = 0.0f;
-					act.action = Component::idle;
+					action.state = Component::idle;
+                    sheetData.currentFrame = 0;
                     World::zone.remove<Component::Moving>(entity);
 				}
+
+
                 //pickup Item
                 Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, isItemCurrentlyHeld);
 				World::zone.remove<Component::Item_Pickup>(entity);

@@ -46,17 +46,17 @@ namespace Spells {
 		Entity_Loader::Data data = Entity_Loader::parse_data(spellname);
 		DataTypes::f2d spelldir = Spell_Direction(pos, direction, scale);
 		//rendering data
-		World::zone.emplace<Component::Sprite_Sheet_Info>(entity, Graphics::fireball_0); /// need to load the texture /only /once and pass the pointer into this function
-		World::zone.get<Component::Sprite_Sheet_Info>(entity).sheet = { //populate the vector
-			{ NULL },
-			{ {0, 0, 64, 64 }, 0, 512, 0, 0, 16 }, //idle
-			{ {0, 0, 64, 64 }, 0, 512, 0, 0, 16 } //walk
-		};
+//		World::zone.emplace<Component::Sprite_Sheet_Info>(entity, Graphics::fireball_0); /// need to load the texture /only /once and pass the pointer into this function
+//		World::zone.get<Component::Sprite_Sheet_Info>(entity).sheet = { //populate the vector
+//			{ NULL },
+//			{ {0, 0, 64, 64 }, 0, 512, 0, 0, 16 }, //idle
+//			{ {0, 0, 64, 64 }, 0, 512, 0, 0, 16 } //walk
+//		};
 		World::zone.emplace<Component::Sprite_Offset>(entity, 32.0f * scale, 32.0f * scale);
 		World::zone.emplace<Component::Scale>(entity, scale);
 
-		World::zone.emplace<Component::Actions>(entity, Component::walk);
-		World::zone.get<Component::Actions>(entity).frameCount = { {0, 0}, {0, 0}, {8, 0} };
+		World::zone.emplace<Component::Action>(entity, Component::walk);
+//		World::zone.get<Component::Action>(entity).frameCount = {{0, 0}, {0, 0}, {8, 0} };
 		//positon data
 		World::zone.emplace<Component::Position>(entity, spelldir.x, spelldir.y);
 		//spell data
@@ -88,11 +88,11 @@ namespace Spells {
 	}
 
 	void cast_fireball() {
-		auto view = World::zone.view<Component::Direction, Component::Actions, Component::Position, Component::Cast, Component::Spell_Name, Component::Velocity>();
+		auto view = World::zone.view<Component::Direction, Component::Action, Component::Position, Component::Cast, Component::Spell_Name, Component::Velocity>();
 		for (auto entity : view) {
-			auto& act = view.get<Component::Actions>(entity);
-			act.action = Component::cast;
-			act.frameCount[act.action].currentFrame = 0;
+			auto& act = view.get<Component::Action>(entity);
+			act.state = Component::cast;
+//			act.frameCount[act.state].currentFrame = 0;
 			auto& target = view.get<Component::Cast>(entity);
 			auto& direction = view.get<Component::Direction>(entity);
 			auto& x = view.get<Component::Position>(entity).x;
@@ -165,15 +165,15 @@ namespace Spells {
 	}
 	
 	void Casting_Updater() {
-		auto view = World::zone.view<Component::Casting, Component::Actions>();
+		auto view = World::zone.view<Component::Casting, Component::Action>();
 		for (auto entity : view) {
-			auto& act = view.get<Component::Actions>(entity);
-			//std::cout << act.frameCount[act.action].currentFrame << "/" << act.frameCount[act.action].NumFrames <<std::endl;
-			if (act.action != Component::dead) {
-				if (act.frameCount[act.action].currentFrame >= act.frameCount[act.action].NumFrames - 1) {
-					act.action = Component::idle;
-					World::zone.remove<Component::Casting>(entity);
-				}
+			auto& act = view.get<Component::Action>(entity);
+			//std::cout << act.frameCount[act.state].currentFrame << "/" << act.frameCount[act.state].NumFrames <<std::endl;
+			if (act.state != Component::dead) {
+//				if (act.frameCount[act.state].currentFrame >= act.frameCount[act.state].NumFrames - 1) {
+//					act.state = Component::idle;
+//					World::zone.remove<Component::Casting>(entity);
+//				}
 			}
 		}
 	}

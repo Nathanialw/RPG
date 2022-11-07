@@ -13,22 +13,22 @@ namespace Units {
 	for (auto j = 0; j < x; ++j) {
 		for (auto i = 0; i < y; ++i) {
 			auto archer = World::zone.create();			//creates a unique handle for an entity
-			World::zone.emplace<Component::Sprite_Sheet_Info>(archer, Graphics::archer_0); /// need to load the texture only onceand pass the pointer into this function
-			World::zone.get<Component::Sprite_Sheet_Info>(archer).sheet = { //populate the vector
-				{ NULL },
-				{ {0   , 0, 128, 128}, 0,    512,  1, 0, 75, 0 },//idle
-				{ {512,  0, 128, 128}, 512,  1024, 0, 0, 75, 0 },//walk
-				{ {1536, 0, 128, 128}, 1536, 512,  0, 0, 75, 0 },//attack
-				
-				{ {2048, 0, 128, 128}, 2048, 256,  0, 0, 75, 0 },//struck
-				{ {2304, 0, 128, 128}, 2560, 768,  0, 0, 75, 0 }, //dead
-				{ {3072, 0, 128, 128}, 2816, 512,  0, 0, 75, 0 }, //cheer
-				{ {3584, 0, 128, 128}, 3584, 512,  1, 0, 75, 0 },//range
-			};
+//			World::zone.emplace<Component::Sprite_Sheet_Info>(archer, Graphics::archer_0); /// need to load the texture only onceand pass the pointer into this function
+//			World::zone.get<Component::Sprite_Sheet_Info>(archer).sheet = { //populate the vector
+//				{ NULL },
+//				{ {0   , 0, 128, 128}, 0,    512,  1, 0, 75, 0 },//idle
+//				{ {512,  0, 128, 128}, 512,  1024, 0, 0, 75, 0 },//walk
+//				{ {1536, 0, 128, 128}, 1536, 512,  0, 0, 75, 0 },//attack
+//
+//				{ {2048, 0, 128, 128}, 2048, 256,  0, 0, 75, 0 },//struck
+//				{ {2304, 0, 128, 128}, 2560, 768,  0, 0, 75, 0 }, //dead
+//				{ {3072, 0, 128, 128}, 2816, 512,  0, 0, 75, 0 }, //cheer
+//				{ {3584, 0, 128, 128}, 3584, 512,  1, 0, 75, 0 },//range
+//			};
 			World::zone.emplace<Component::Sprite_Offset>(archer, 60.0f, 95.0f);
 
-			World::zone.emplace<Component::Actions>(archer, Component::idle);
-			World::zone.get<Component::Actions>(archer).frameCount = { {0, 0}, { 4, 0}, {8, 0}, {4, 0}, {0, 0}, {2,0}, {5,0}, {4,0}, {4,0} };
+			World::zone.emplace<Component::Action>(archer, Component::idle);
+//			World::zone.get<Component::Action>(archer).frameCount = {{0, 0}, {4, 0}, {8, 0}, {4, 0}, {0, 0}, {2, 0}, {5, 0}, {4, 0}, {4, 0} };
 
 			World::zone.emplace<Component::Position>(archer, 400.0f, 500.0f);
 

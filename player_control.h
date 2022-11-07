@@ -7,6 +7,7 @@
 namespace Player_Control {
 	void Attack_Order(entt::registry& zone, entt::entity& entity, entt::entity &target_ID,  Component::Position &targetPosition, Component::Radius &targetRadius) {
 		zone.emplace_or_replace<Component::Moving>(entity);
+		zone.remove<Component::Mouse_Move>(entity);
 		zone.emplace_or_replace<Player_Component::Attack_Move>(entity, target_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius);
 	}
 
@@ -15,13 +16,13 @@ namespace Player_Control {
 		Player_Move_Poll += Timer::timeStep;
 		if (Player_Move_Poll >= 200) {
 			Player_Move_Poll = 0;
-			auto view = zone.view<Component::Position, Component::Velocity, Component::Actions, Component::Moving, Player_Component::Attack_Move>();
+			auto view = zone.view<Component::Position, Component::Velocity, Component::Action, Component::Moving, Player_Component::Attack_Move>();
 			for (auto entity : view) {
 				const auto& position = view.get<Component::Position>(entity);
-				auto& act = view.get<Component::Actions>(entity);
+				auto& action = view.get<Component::Action>(entity);
 				auto& v = view.get<Component::Velocity>(entity);
 				auto& moveTo = view.get<Player_Component::Attack_Move>(entity);
-				act.action = Component::walk;
+				action.state = Component::walk;
 				v.magnitude.x = v.speed * (moveTo.x - position.x);
 				v.magnitude.y = v.speed * (moveTo.y - position.y);
 			}

@@ -82,17 +82,17 @@ namespace Movement {
 	}
 
 	void Update_Direction() {
-		auto view = World::zone.view<Component::Direction, Component::Actions, Component::Velocity, Component::Moving>();
+		auto view = World::zone.view<Component::Direction, Component::Action, Component::Velocity, Component::Moving>();
 		for (auto entity : view) {
 			auto& vel = view.get<Component::Velocity>(entity);
 			auto& b = view.get<Component::Direction>(entity);
-			auto& c = view.get<Component::Actions>(entity);
+			auto& c = view.get<Component::Action>(entity);
 
 			b = Set_Direction(vel.angle);
 
-			if (c.action == Component::walk) {
+			if (c.state == Component::walk) {
 				if (vel.magnitude.x == 0 && vel.magnitude.y == 0) {
-					c.action = Component::idle;
+					c.state = Component::idle;
 				};
 			}
 		}
@@ -114,20 +114,21 @@ namespace Movement {
 	}
 
 	void Mouse_Move_Arrived() {
-		auto view = World::zone.view<Component::Position, Component::Velocity, Component::Actions, Component::Mouse_Move, Component::Body>();
+		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Position, Component::Velocity, Component::Action, Component::Mouse_Move, Component::Body>();
 		for (auto entity : view) {
-			auto& act = view.get<Component::Actions>(entity);
+			auto& act = view.get<Component::Action>(entity);
 			auto& v = view.get<Component::Velocity>(entity);
 			const auto& x = view.get<Component::Position>(entity);
 			const auto& y = view.get<Component::Position>(entity);
 			const auto& mov = view.get<Component::Mouse_Move>(entity);
+			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
 
 			if (Check_If_Arrived(x.x, y.y, mov.fX_Destination, mov.fY_Destination)) {
-				if (act.action == Component::walk) {
+				if (act.state == Component::walk) {
 					v.magnitude.x = 0.0f;
 					v.magnitude.y = 0.0f;
-					act.action = Component::idle;
-
+					act.state = Component::idle;
+                    sheetData.currentFrame = 0;
 
 					World::zone.remove<Component::Mouse_Move>(entity);
 					World::zone.remove<Component::Moving>(entity);
@@ -138,15 +139,15 @@ namespace Movement {
 
 	void Mouse_Move_To() { //calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
 		Player_Move_Poll += Timer::timeStep;
-		if (Player_Move_Poll >= 200) {
+		if (Player_Move_Poll >= 0) {
 			Player_Move_Poll = 0;
-			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Mouse_Move, Component::Actions, Component::Moving, Component::Body>();
+			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Mouse_Move, Component::Action, Component::Moving, Component::Body>();
 			for (auto entity : view) {
 				const auto& position = view.get<Component::Position>(entity);
-				auto& act = view.get<Component::Actions>(entity);
+				auto& act = view.get<Component::Action>(entity);
 				auto& v = view.get<Component::Velocity>(entity);
 				auto& mov = view.get<Component::Mouse_Move>(entity);
-				act.action = Component::walk;
+				act.state = Component::walk;
 				v.magnitude.x = v.speed * (mov.fX_Destination - position.x);
 				v.magnitude.y = v.speed * (mov.fY_Destination - position.y);
 				auto& pBody = view.get<Component::Body>(entity).body;
@@ -158,15 +159,15 @@ namespace Movement {
 	void Linear_Move_To() {
 		linearMovePoll += Timer::timeStep;
 		if (linearMovePoll >= 50) {
-			auto view = World::zone.view<Component::Velocity, Component::Actions, Component::Moving, Component::Linear_Move, Component::Spell_Range>();
+			auto view = World::zone.view<Component::Velocity, Component::Action, Component::Moving, Component::Linear_Move, Component::Spell_Range>();
 			for (auto entity : view) {
-				auto& act = view.get<Component::Actions>(entity);
+				auto& act = view.get<Component::Action>(entity);
 				auto& v = view.get<Component::Velocity>(entity);
 				auto& mov = view.get<Component::Linear_Move>(entity);
 				auto& range = view.get<Component::Spell_Range>(entity);
 
 				if (range.fRange <= 1500) {
-					act.action = Component::walk;
+					act.state = Component::walk;
 					v.magnitude.x = v.speed * (mov.fX_Direction - range.fSourceX);
 					v.magnitude.y = v.speed * (mov.fY_Direction - range.fSourceY);
 					range.fRange += linearMovePoll;

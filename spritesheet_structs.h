@@ -20,6 +20,12 @@ namespace Spritesheet_Structs {
         int numFrames;
     };
 
+    struct Frame_Data_Packer {
+        int startFrame = 9999;
+        int NumFrames = 0;
+        int reverses = 0;
+        int frameSpeed = 75;
+    };
 
 
     struct spriteSheet {
@@ -75,6 +81,9 @@ namespace Spritesheet_Structs {
         Frame_Data behavior = {0, 0, 0, 0};
         Frame_Data summoned = {0, 0, 0, 0};
     };
+
+
+
 
     std::string Get_Sprite_Sheet(std::string &name) {// needs to search for  a specific row that I can input in the arguments
         //check if the name exists??

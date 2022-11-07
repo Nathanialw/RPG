@@ -11,8 +11,6 @@
 
 namespace Component {
 
-
-
 	struct ObjectID {
 		int id;
 	};
@@ -64,18 +62,15 @@ namespace Component {
 		bool bIsAlive;
 	};
 
-
 	//Position
 	struct Position {
 		float x;
 		float y;
 	};
 
-
 	struct Radius {
 		float fRadius;
 	};
-
 
 	struct Velocity {
 		float dX, dY;
@@ -91,6 +86,8 @@ namespace Component {
 	enum Action_State {
 		isStatic,
 		idle,
+		idle2,
+		idle6,
 		walk,
         run,
 		attack,
@@ -100,37 +97,27 @@ namespace Component {
         block,
         evade,
         stunned,
+        idle_low_hp,
+        idle_low_hp2,
 		dead,
-        low_hp,
+		dead2,
+		dead3,
+		dead4,
+		dead5,
+		dead6,
         resting,
 		ranged,
 		cheer,
         behavior,
-		summoned
+		summoned,
+        kneel,
+        pray_kneeled,
+        pray_standing,
+        in_combat,
+        in_combat2,
+        use_item
+
 	};
-
-	struct Frame_Data {
-		int NumFrames;
-		int currentFrame;
-	};
-
-
-	struct Actions {
-		Action_State action;
-		std::vector<Frame_Data>frameCount;
-        Action_State storedAction;
-	};
-
-	//enum class Direction {
-	//	W,
-	//	NW,
-	//	N,
-	//	NE,
-	//	E,
-	//	SE,
-	//	S,
-	//	SW
-	//};
 
 	enum class Direction {
 		E,
@@ -143,33 +130,9 @@ namespace Component {
 		W
 	};
 
-    enum class PVG_Directions {
-        zero,
-        S,
-        W,
-        E,
-        N,
-        SW,
-        NW,
-        SE,
-        NE
-    };
-
-
-
 	struct Sprite_Offset {
         float x;
         float y;
-	};
-
-	struct spriteframes {
-		SDL_Rect clip;
-		int frameStart;
-		int sheetWidth;
-		bool bReversable;
-		bool bReversing;
-		int64_t timeBetweenFrames;
-        int64_t currentFrameTime;
 	};
 
     struct Sprite_Sheet_Data {
@@ -182,37 +145,73 @@ namespace Component {
         int startFrame = 9999;
         int NumFrames = 0;
         int reverses = 0;
-        uint64_t frameSpeed = 75;
+        int frameSpeed = 75;
     };
 
     struct Sheet_Data {
         SDL_Texture* texture = NULL;
         std::vector<Sprite_Sheet_Data> frameList;
-        /// start frame by action, number of frames per action.
+        /// start frame by state, number of frames per state.
         std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData;
-        ///store the frame duration for each frame of each action
-        ///probably not worth it
+        ///store the frame duration for each frame of each state, probably not worth it
 //        std::unordered_map<Component::Action_State, std::vector<int>> Frame_Speed_By_Action;
+    };
+
+    struct Sheet_Data_Flare {
+        SDL_Texture* texture = NULL;		//texture
+        int sheetWidth = 0;
+        int spriteWidth = 0;
+        int spriteHeight = 0;
+//        Frame_Data_Packer actionFrameDataArray[17];
+//        std::vector<Frame_Data_Packer> actionFrameDataVector[20];
+        std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData;
+    };
+
+    struct Action {
+        Action_State state;
     };
 
     ///component for the unit
     struct Sprite_Sheet_Info {
-            ///until I fix it
-		SDL_Texture* texture = NULL;		//texture
         std::string type = "default";
-        SDL_Rect clipSprite = {0,0,0,0};
-        SDL_FRect renderPosition = {0,0,0,0};
-            ///variable for sprite type
-		std::vector<spriteframes>sheet = {};
-//        std::string* sheetData;
-        std::unordered_map<std::string, Sheet_Data>* sheetData;
+        std::unordered_map<std::string, Sheet_Data_Flare>* flareSpritesheet = NULL;
+        std::unordered_map<std::string, Sheet_Data>* sheetData = NULL;
         std::string sheet_name = "default";
             ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
+//        std::string* sheetData;
 //        int index = 0;
         uint64_t frameTime = 0;
         int frameIndex = 0;
         int reversing = 0;
         int currentFrame = 0;
+        bool finalFrame = 0;
+    };
+
+    struct t_Stored_Frame_Data {
+        uint64_t frameTime = 0;
+        int frameIndex = 0;
+        int reversing = 0;
+        int currentFrame = 0;
+    };
+
+    struct t_Sheet_Data {
+        Frame_Data_Packer actionFrameData[17];
+        int sheetWidth = 0;
+        int spriteWidth = 0;
+        int spriteHeight = 0;
+    };
+
+    struct asd { ;
+        t_Sheet_Data t_SheetDataArray[1000];
+    };
+
+    struct t_Rendering_Data {
+        SDL_Rect clipRect = {0,0,0,0};
+        SDL_FRect renderRect = {0,0,0,0};
+    };
+
+    struct t_Texture {
+        SDL_Texture *texture = NULL;
     };
 
 	struct Renderable {
@@ -422,7 +421,6 @@ namespace Component {
 		std::vector<entt::entity> bag;
 	};
 
-
 	struct Icon {
 		SDL_Texture* pBackground;
 		SDL_Texture* pTexture;
@@ -449,7 +447,6 @@ namespace Component {
 		float radius;
 	};
 
-
 	struct Scrolling_Damage_Text {
 		SDL_FPoint position;
 		std::string damageText;
@@ -465,8 +462,6 @@ namespace Component {
 		Direction direction;
 		int numFrames;
 	};
-
-
 }
 
 
@@ -483,7 +478,6 @@ namespace Component_Camera { //unused yet
 	struct Screen {
 		SDL_FRect screen;
 	};
-
 }
 
 

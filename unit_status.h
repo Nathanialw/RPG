@@ -63,8 +63,8 @@ namespace Unit_Status {
 //		for (auto entity : view) {
 //			auto& damage = view.get<Component::Struck>(entity).struck;
 //			auto& health = view.get<Component::Health>(entity).currentHealth;
-//			auto& action = view.get<Component::Action_State>(entity);
-//			action = Component::struck;
+//			auto& state = view.get<Component::Action_State>(entity);
+//			state = Component::struck;
 //			//std::cout << "health = " << health << std::endl;
 //			health -= damage;
 //	        damage -= damage;
@@ -83,26 +83,26 @@ namespace Unit_Status {
 	}
 
 	void isDead(entt::registry& zone) {
-		auto view = zone.view<Component::Actions, Component::Health, Component::Position, Component::Radius, Component::Sprite_Offset, Component::Body, Component::In_Object_Tree>(entt::exclude<Component::Spell>);
+		auto view = zone.view<Component::Sprite_Sheet_Info, Component::Action, Component::Health, Component::Position, Component::Radius, Component::Sprite_Offset, Component::Body, Component::In_Object_Tree>(entt::exclude<Component::Spell>);
 		for (auto entity : view) {
 			auto& health = view.get<Component::Health>(entity);
 			if (health.currentHealth <= 0) {
-				view.get<Component::Actions>(entity).action = Component::dead;
-				view.get<Component::Actions>(entity).frameCount[view.get<Component::Actions>(entity).action].currentFrame = 0;
+				view.get<Component::Action>(entity).state = Component::dead;
+				view.get<Component::Sprite_Sheet_Info>(entity).currentFrame = 0;
 				auto& position = view.get<Component::Position>(entity);
 				auto& radius = view.get<Component::Radius>(entity).fRadius;
 				auto& offset = view.get<Component::Sprite_Offset>(entity);
 				auto& body = view.get<Component::Body>(entity).body;
 				auto& inTree = view.get<Component::In_Object_Tree>(entity).inTree;
 				Items::Create_And_Drop_Item(position);
-				//sets the sprite to render so that it is always rendered behind living sprites
+				    ///sets the sprite to render so that it is always rendered behind living sprites
 				position.x -= offset.x;
 				position.y -= offset.y;
 				offset.x = 0.0f;
 				offset.y = 0.0f;
 				Collision::world->DestroyBody(body);
 				World::zone.remove<Component::Body>(entity);
-				//set to remove from quad tree on update
+				    ///set to remove from quad tree on update
 				SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
 				zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);
 				zone.get<Component::Alive>(entity).bIsAlive = false;

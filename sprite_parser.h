@@ -7,8 +7,8 @@ namespace Sprite_Parser {
 
 
 
-//	void Store_State_Frame_Start_Y(Component::Action_State &action, Component::Store_State &storage, int &y) {
-//		//storage.state[action] = y;
+//	void Store_State_Frame_Start_Y(Component::Action_State &state, Component::Store_State &storage, int &y) {
+//		//storage.state[state] = y;
 //	}
 
 

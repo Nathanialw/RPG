@@ -7,10 +7,11 @@
 #include "entity_control.h"
 
 namespace Input_Control {
-	//need to make a move to item then pick it up routine for these components
+	    /// cand probaby merge the routine with Component::Item_Pickup and the normal mouse move, they are almost the same
 	void Pick_Up_Item_Order(entt::registry& zone, entt::entity& entity, entt::entity& Item_ID, float& x, float& y) {
 		zone.emplace_or_replace<Component::Item_Pickup>(entity, Item_ID, x, y);
 		zone.emplace_or_replace<Component::Moving>(entity);
+        zone.remove<Component::Mouse_Move>(entity);
 	}
 
     bool testasd(entt::entity &player, entt::entity &target) {
@@ -32,6 +33,7 @@ namespace Input_Control {
             Component::Item_Pickup itemData = { item_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
             UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
             zone.remove<Component::Moving>(player_ID);
+
             zone.remove<Component::Item_Pickup>(player_ID);
             return true;
         }
@@ -46,6 +48,11 @@ namespace Input_Control {
         if (World::zone.any_of<Component::Attacking>(player_ID) == true) {
 			return true;
 		}
+
+        zone.remove<Component::Item_Pickup>(player_ID);
+        zone.remove<Component::Moving>(player_ID);
+        zone.remove<Player_Component::Attack_Move>(player_ID);
+
         if (showGroundItems) {
             auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();
             for (auto item_ID: view) {
@@ -62,8 +69,8 @@ namespace Input_Control {
         SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorSize, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
         Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);
 		if (targetData.b == true) {
-			zone.remove<Component::Item_Pickup>(player_ID);
-			zone.remove<Component::Moving>(player_ID);
+                ///reset target data
+
 			Component::Entity_Type& type = zone.get<Component::Entity_Type>(targetData.entity_ID);
             Component::Position& targetPosition = zone.get<Component::Position>(targetData.entity_ID);
             Component::Radius& targetRadius = zone.get<Component::Radius>(targetData.entity_ID);

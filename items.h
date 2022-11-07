@@ -109,10 +109,10 @@ namespace Items {
 
 		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
         //sprite sheet graphic pointer
-		World::zone.emplace<Component::Sprite_Sheet_Info>(item, Graphics::weapons_icons ); /// need to load hetexture	 only once and pass the pointer into this function
-		World::zone.get<Component::Sprite_Sheet_Info>(item).sheet = {
-			{ sprite , 0, 32, 0, 0, 75, 0}
-		};
+//		World::zone.emplace<Component::Sprite_Sheet_Info>(item, Graphics::weapons_icons ); /// need to load hetexture	 only once and pass the pointer into this function
+//		World::zone.get<Component::Sprite_Sheet_Info>(item).sheet = {
+//			{ sprite , 0, 32, 0, 0, 75, 0}
+//		};
 		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
 		icon.clipSprite = sprite;
 		icon.clipIcon = {0,0,256,256};
@@ -140,10 +140,10 @@ namespace Items {
 		int row = armorTypes[armorType];
 		int size = 64;
 		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
-		World::zone.emplace<Component::Sprite_Sheet_Info>(item, Graphics::armorSpriteSheet); /// need to load hetexture	 only once and pass the pointer into this function
-		World::zone.get<Component::Sprite_Sheet_Info>(item).sheet = {
-			{ sprite , 0, 64, 0, 0, 75, 0}
-		};
+//		World::zone.emplace<Component::Sprite_Sheet_Info>(item, Graphics::armorSpriteSheet); /// need to load hetexture	 only once and pass the pointer into this function
+//		World::zone.get<Component::Sprite_Sheet_Info>(item).sheet = {
+//			{ sprite , 0, 64, 0, 0, 75, 0}
+//		};
 		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
 		icon.clipSprite = sprite;
 		icon.clipIcon = {0,0,256,256};
@@ -156,7 +156,7 @@ namespace Items {
 		float scale = 0.25f;
         float rectSide = 64.0f;
 		World::zone.emplace<Component::Scale>(item, scale);
-		World::zone.emplace<Component::Actions>(item, Component::isStatic);
+		World::zone.emplace<Component::Action>(item, Component::isStatic);
 		World::zone.emplace<Component::Direction>(item, Component::Direction::W);
 		World::zone.emplace<Name>(item, name);
 		World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);

@@ -2608,7 +2608,7 @@ SQLITE_API sqlite3_int64 sqlite3_total_changes64(sqlite3*);
 **
 ** ^This function causes any pending database operation to abort and
 ** return at its earliest opportunity. This routine is typically
-** called in response to a user action such as pressing "Cancel"
+** called in response to a user state such as pressing "Cancel"
 ** or Ctrl-C where the user wants a long query operation to halt
 ** immediately.
 **
@@ -3032,8 +3032,8 @@ SQLITE_API void sqlite3_randomness(int N, void *P);
 ** points during the compilation process, as logic is being created
 ** to perform various actions, the authorizer callback is invoked to
 ** see if those actions are allowed.  ^The authorizer callback should
-** return [SQLITE_OK] to allow the action, [SQLITE_IGNORE] to disallow the
-** specific action but allow the SQL statement to continue to be
+** return [SQLITE_OK] to allow the state, [SQLITE_IGNORE] to disallow the
+** specific state but allow the SQL statement to continue to be
 ** compiled, or [SQLITE_DENY] to cause the entire SQL statement to be
 ** rejected with an error.  ^If the authorizer callback returns
 ** any value other than [SQLITE_IGNORE], [SQLITE_OK], or [SQLITE_DENY]
@@ -3048,14 +3048,14 @@ SQLITE_API void sqlite3_randomness(int N, void *P);
 **
 ** ^The first parameter to the authorizer callback is a copy of the third
 ** parameter to the sqlite3_set_authorizer() interface. ^The second parameter
-** to the callback is an integer [SQLITE_COPY | action code] that specifies
-** the particular action to be authorized. ^The third through sixth parameters
+** to the callback is an integer [SQLITE_COPY | state code] that specifies
+** the particular state to be authorized. ^The third through sixth parameters
 ** to the callback are either NULL pointers or zero-terminated strings
-** that contain additional details about the action to be authorized.
+** that contain additional details about the state to be authorized.
 ** Applications must always be prepared to encounter a NULL pointer in any
 ** of the third through the sixth parameters of the authorization callback.
 **
-** ^If the action code is [SQLITE_READ]
+** ^If the state code is [SQLITE_READ]
 ** and the callback returns [SQLITE_IGNORE] then the
 ** [prepared statement] statement is constructed to substitute
 ** a NULL value in place of the table column that would have
@@ -3066,7 +3066,7 @@ SQLITE_API void sqlite3_randomness(int N, void *P);
 ** extracted from that table (for example in a query like
 ** "SELECT count(*) FROM tab") then the [SQLITE_READ] authorizer callback
 ** is invoked once for that table with a column name that is an empty string.
-** ^If the action code is [SQLITE_DELETE] and the callback returns
+** ^If the state code is [SQLITE_DELETE] and the callback returns
 ** [SQLITE_IGNORE] then the [DELETE] operation proceeds but the
 ** [truncate optimization] is disabled and all rows are deleted individually.
 **
@@ -3118,7 +3118,7 @@ SQLITE_API int sqlite3_set_authorizer(
 **
 ** The [sqlite3_set_authorizer | authorizer callback function] must
 ** return either [SQLITE_OK] or one of these two constants in order
-** to signal SQLite whether or not the action is permitted.  See the
+** to signal SQLite whether or not the state is permitted.  See the
 ** [sqlite3_set_authorizer | authorizer documentation] for additional
 ** information.
 **
@@ -3134,10 +3134,10 @@ SQLITE_API int sqlite3_set_authorizer(
 ** The [sqlite3_set_authorizer()] interface registers a callback function
 ** that is invoked to authorize certain SQL statement actions.  The
 ** second parameter to the callback is an integer code that specifies
-** what action is being authorized.  These are the integer action codes that
+** what state is being authorized.  These are the integer state codes that
 ** the authorizer callback may be passed.
 **
-** These action code values signify what kind of operation is to be
+** These state code values signify what kind of operation is to be
 ** authorized.  The 3rd and 4th parameters to the authorization
 ** callback function will be parameters or NULL depending on which of these
 ** codes is used as the second parameter.  ^(The 5th parameter to the
@@ -8615,7 +8615,7 @@ struct sqlite3_pcache_page {
 ** implementation must return a pointer to the page buffer with its content
 ** intact.  If the requested page is not already in the cache, then the
 ** cache implementation should use the value of the createFlag
-** parameter to help it determined what action to take:
+** parameter to help it determined what state to take:
 **
 ** <table border=1 width=85% align=center>
 ** <tr><th> createFlag <th> Behavior when page is not already in cache
@@ -8997,7 +8997,7 @@ SQLITE_API int sqlite3_backup_pagecount(sqlite3_backup *p);
 **
 ** Assuming that after registering for an unlock-notify callback a
 ** database waits for the callback to be issued before taking any further
-** action (a reasonable assumption), then using this API may cause the
+** state (a reasonable assumption), then using this API may cause the
 ** application to deadlock. For example, if connection X is waiting for
 ** connection Y's transaction to be concluded, and similarly connection
 ** Y is waiting on connection X's transaction, then neither connection
@@ -10334,7 +10334,7 @@ SQLITE_API int sqlite3session_enable(sqlite3_session *pSession, int bEnable);
 ** <ul>
 **   <li> The session object "indirect" flag is set when the change is
 **        made, or
-**   <li> The change is made by an SQL trigger or foreign key action
+**   <li> The change is made by an SQL trigger or foreign key state
 **        instead of directly as a result of a users SQL statement.
 ** </ul>
 **
@@ -11507,7 +11507,7 @@ SQLITE_API int sqlite3changeset_apply_v2(
 **
 ** <dl>
 ** <dt>SQLITE_CHANGESET_OMIT<dd>
-**   If a conflict handler returns this value no special action is taken. The
+**   If a conflict handler returns this value no special state is taken. The
 **   change that caused the conflict is not applied. The session module
 **   continues to the next change in the changeset.
 **

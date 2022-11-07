@@ -154,7 +154,7 @@ namespace Graphics {
 		if (unitTextures[unitID] == NULL) {
 			Load_Texture(unitID, filepath);
 			if (unitTextures[unitID] == NULL) {
-				std::cout << "failed to load from file: " << filepath << std::endl;
+				std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
 			}
 			else {
 			//	std::cout << "loaded from file: " << filepath << std::endl;

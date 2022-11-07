@@ -49,19 +49,18 @@ namespace Rendering {
         }
     }
 
-    SDL_Rect Update_Frame_PVG(SDL_Rect &frame, Component::Frame_Data &frameData, Component::Direction &direction, Component::spriteframes &sheet) {
-        int spritesPerLine = sheet.sheetWidth/sheet.clip.w;
+    void Update_Frame_PVG(SDL_Rect &clipRect, Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
+        int spritesPerLine = sheetData.flareSpritesheet->at(sheetData.sheet_name).sheetWidth / sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth;
             ///the x index in absolute terms
-        int x_index = sheet.frameStart + ((PVG_Direction_Enum(direction) * frameData.NumFrames) + frameData.currentFrame);
+        int x_index = sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + ((PVG_Direction_Enum(direction) * sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) + sheetData.currentFrame);
             ///the x index in relative terms
         int x_rel_index = x_index % spritesPerLine;
             ///the x index in pixel terms
-        frame.x = x_rel_index * sheet.clip.w;
+        clipRect.x = x_rel_index * sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth;
             ///after dividing away the x index, add the remainder
         int y_index = x_index / spritesPerLine;
             ///the y index in pixel terms
-        frame.y = y_index * sheet.clip.w;
-        return frame;
+        clipRect.y = y_index * sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth;
     }
 
     int Original_Direction_Enum(Component::Direction &direction) {
@@ -77,124 +76,138 @@ namespace Rendering {
         }
     }
 
-    SDL_Rect Update_Frame_Flare (SDL_Rect &frame, Component::Frame_Data &frameData, Component::Direction& direction, Component::spriteframes& spritesheet) {
-        frame.x = (spritesheet.frameStart + frameData.currentFrame) * frame.w;
-        frame.y = frame.h * Original_Direction_Enum(direction);
-        return frame;
+    SDL_FRect Scale_Sprite_for_Render(SDL_Rect& clippedSprite, float& scale) {
+        SDL_FRect fScaledImage = Utilities::SDL_Rect_To_SDL_FRect(clippedSprite);
+        fScaledImage = {
+                fScaledImage.x - (fScaledImage.w * scale),
+                fScaledImage.y - (fScaledImage.h * scale),
+                fScaledImage.w * scale,
+                fScaledImage.h * scale
+        };
+        return fScaledImage;
     }
 
-    SDL_Rect Get_Spritesheet_Type(SDL_Rect &frame, Component::Sprite_Sheet_Info &animation, Component::Direction& direction, Component::Actions& act) {
-        if (animation.type == "flare"){
-            frame = Update_Frame_Flare(frame, act.frameCount[act.action], direction, animation.sheet[act.action]);
+    void Frame_Increment(Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
+        sheetData.frameTime += Timer::timeStep;
+        if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
+            if (sheetData.finalFrame) {
+                if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack) {
+                    action.state = Component::idle;
+                }
+                else if (action.state == Component::struck || action.state == Component::attack) {
+                    action.state = Component::idle;
+                }
+                sheetData.finalFrame = false;
+            }
+                ///reset frame count if over
+            sheetData.frameTime = 0;
+            int &currentFrame = sheetData.currentFrame;
+            sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
+                ///calculate reversing
+            if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
+                sheetData.reversing = 0;
+            }
+            if (sheetData.reversing) {
+                currentFrame--;
+                if (currentFrame < 1) {
+                    sheetData.reversing = 0;
+                }
+            }
+            else if (!sheetData.reversing) {
+                currentFrame++;
+            }
+                /// -1 because of the zero index
+            if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
+                if (currentFrame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames - 1) {
+                    sheetData.reversing = 1;
+                }
+            }
+            else if (currentFrame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
+                sheetData.finalFrame = true;
+                sheetData.currentFrame = 0;
+
+            }
+//            if (sheetData.currentFrame == sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
+//                Utilities::Log(sheetData.currentFrame);
+//            }
         }
-        else if (animation.type == "pvg"){
-            frame = Update_Frame_PVG(frame, act.frameCount[act.action], direction, animation.sheet[act.action]);
+    }
+
+    void Update_Frame_Flare (SDL_Rect &frame, int &currentFrame, int &startFrame, Component::Direction& direction) {
+        frame.x = (startFrame + currentFrame) * frame.w;
+        frame.y = frame.h * Original_Direction_Enum(direction);
+    }
+
+    void Get_Spritesheet_Type(SDL_Rect &clipRect, Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
+            /// get the height and width
+        clipRect = {0, 0, sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth, sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteHeight};
+
+        if (sheetData.type == "flare"){
+            Update_Frame_Flare(clipRect, sheetData.currentFrame, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].startFrame, direction);
+        }
+        else if (sheetData.type == "pvg"){
+            Update_Frame_PVG(clipRect, sheetData, action, direction);
         }
 //        else if (animation.type == "RPG_Tools") {
-////            Frame_Increment(sheetData, action, direction);
+////            Frame_Increment(sheetData, state, direction);
 //        }
-        else {
-            //Utilities::Log("Error! Frame_Update() could not find animation type!");
-                ///maybe have a special return value to make this more obvious
-            frame = Update_Frame_Flare(frame, act.frameCount[act.action], direction, animation.sheet[act.action]);
-            return frame;
-        }
-        return frame;
     }
 
-    bool Death_Sequence (Component::Actions& act) {
-        if (act.action == Component::dead) {
-            if (act.frameCount[act.action].currentFrame < act.frameCount[act.action].NumFrames - 1) {
-                act.frameCount[act.action].currentFrame++;
+    bool Death_Sequence (Component::Action& action, int &currentFrame, int &numFrames) {
+        if (action.state == Component::dead) {
+            if (currentFrame < numFrames - 1) {
+                currentFrame++;
             }
             return true;
         }
         return false;
     }
 
-    SDL_Rect Update_Frame(Component::Sprite_Sheet_Info &animation, Component::Direction& direction, Component::Actions& act) {
-        SDL_Rect frame = animation.sheet[act.action].clip;
-        if (act.action != Component::isStatic) {            ;
-            Component::spriteframes &spritesheet = animation.sheet[act.action];
-            auto &action = act.frameCount[act.action];
-            if (act.action == Component::attack) {
-                Utilities::Log(action.currentFrame);
+    void Update_Frame(Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
+        if (action.state != Component::isStatic) {
+                /// reset at the start so it can loop through the logic once to trigger end of state actions
+            if (sheetData.finalFrame) {
+                if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack) {
+                    action.state = Component::idle;
+                }
+                else if (action.state == Component::struck || action.state == Component::attack) {
+                    action.state = Component::idle;
+                }
+                sheetData.finalFrame = false;
             }
-            frame = Get_Spritesheet_Type(frame, animation, direction, act);
-            if (Death_Sequence(act)) {
-                return frame;
+
+            if (Death_Sequence(action, sheetData.currentFrame, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
+                return;
             }
                 ///render first frame before increment
-            if (action.currentFrame == 0) {
-                action.currentFrame++;
-                spritesheet.bReversing = false;
-                return frame;
+            if (sheetData.currentFrame == 0) {
+                sheetData.currentFrame++;
+                sheetData.reversing = false;
+                return;
             }
-            if (spritesheet.bReversing == false) {
-                act.frameCount[act.action].currentFrame++;
+            if (sheetData.reversing == false) {
+                sheetData.currentFrame++;
+            } else if (sheetData.reversing == true) {
+                sheetData.currentFrame--;
             }
-            if (spritesheet.bReversable) {
-                if (spritesheet.bReversing == true) {
-                    action.currentFrame--;
+            if (sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
+                    /// -1 because of the zero index
+                if (sheetData.currentFrame >= sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames - 1) {
+                    sheetData.reversing = true;
                 }
-                    /// -1 becausee of the zero index
-                if (action.currentFrame >= action.NumFrames - 1){
-                    spritesheet.bReversing = true;
-                }
+            } else if (sheetData.currentFrame >= sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
+//                Utilities::Log(sheetData.currentFrame);
+                sheetData.finalFrame = true;
+                sheetData.currentFrame = 0;
             }
-            else if (action.currentFrame >= action.NumFrames) {
-                act.frameCount[act.action].currentFrame = 0;
-                if (act.action != Component::walk) {
-                    act.action = Component::idle;
-                }
-            }
-        }
-        return frame;
-    }
+//
+//             if currentframe = numframe
+//                  reset to zero
+//                  //increment logic
+//             if currentframe = numframe
+//                  send the numframe - 1 to the renderer, keep curent frame stored for 1 frame
+//
 
-	SDL_FRect Scale_Sprite_for_Render(SDL_Rect& clippedSprite, float& scale) {
-		SDL_FRect fScaledImage = Utilities::SDL_Rect_To_SDL_FRect(clippedSprite);
-		fScaledImage = {
-			fScaledImage.x - (fScaledImage.w * scale),
-			fScaledImage.y - (fScaledImage.h * scale),
-			fScaledImage.w * scale,
-			fScaledImage.h * scale
-		};
-		return fScaledImage;
-	}
-
-
-    SDL_Rect Frame_Increment(Component::Sprite_Sheet_Info &sheetData, Component::Actions &action, Component::Direction &direction) {
-        sheetData.frameTime += Timer::timeStep;
-        if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.action].frameSpeed) {
-            ///reset frame count if over
-            sheetData.frameTime = 0;
-            int &currentFrame = action.frameCount[action.action].currentFrame;
-            int &startFrame = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.action].startFrame;
-            int &numFrames = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.action].NumFrames;
-            sheetData.frameIndex = startFrame + (numFrames * PVG_Direction_Enum(direction)) + currentFrame;
-            ///calculate reversing
-            if (sheetData.reversing) {
-                if (currentFrame <= 1) {
-                    sheetData.reversing = 0;
-                }
-                currentFrame--;
-            }
-            else {
-                currentFrame++;
-            }
-            if (currentFrame >= numFrames) {
-                currentFrame = 0;
-                if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.action].reverses) {
-                    sheetData.reversing = 1;
-                }
-                else {
-                    action.frameCount[action.action].currentFrame = 0;
-                    if (action.action != Component::walk) {
-                        action.action = Component::idle;
-                    }
-                }
-            }
         }
     }
 
@@ -206,73 +219,112 @@ namespace Rendering {
         return renderRect;
     }
 
-//    void Texture_Packer_Render(entt::registry &zone, Component::Camera& camera) {
-//        auto view = zone.view<Component::Renderable, Component::Position, Texture_Packer::Packer_Sheet_Data, Component::Direction, Component::Actions, Component::Sprite_Offset, Component::Scale>();
-//        for (auto entity : view) {
-//            auto [renderable, position, sheetData, direction, action, offset, scale] = view.get(entity);
-//            SDL_Rect clipRect;
-//            SDL_FRect renderRect;
-//
-//            Frame_Increment(sheetData, action, direction);
-//            renderRect = Position_For_Render(sheetData, position, camera, scale, offset, clipRect, renderRect);
-//            SDL_SetTextureAlphaMod(sheetData.sheetData->at(sheetData.sheet_name).texture, renderable.alpha);
-//
-//            Graphics::Render_FRect(sheetData.sheetData->at(sheetData.sheet_name).texture, &clipRect, &renderRect);
-//        }
-//    }
-
-
     void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
-		auto view1 = zone.view<Component::Renderable, Component::Position, Component::Sprite_Sheet_Info, Component::Actions, Component::Direction, Component::Sprite_Offset, Component::Scale, Component::Entity_Type>();
+		auto view1 = zone.view<Component::Renderable, Component::Position, Component::Sprite_Sheet_Info, Component::Action, Component::Direction, Component::Sprite_Offset, Component::Scale, Component::Entity_Type>();
 		for (auto entity : view1) {
             auto [renderable, position, sheetData, action, direction, spriteOffset, scale, type] = view1.get(entity);
             SDL_Rect clipRect;
             SDL_FRect renderRect;
             SDL_Texture* texture;
-			    ///only fire this at 60 frames/sec
-			if (sheetData.type != "RPG_Tools") {
-                sheetData.sheet[action.action].currentFrameTime += Timer::timeStep;
-                if (sheetData.sheet[action.action].currentFrameTime >= sheetData.sheet[action.action].timeBetweenFrames) {
-                    sheetData.sheet[action.action].currentFrameTime = 0;
-                    sheetData.clipSprite = Update_Frame(sheetData, direction, action);
-                    sheetData.renderPosition = Scale_Sprite_for_Render(sheetData.clipSprite, scale.scale);
+			    /// only fire this at 60 frames/sec
+			if (sheetData.flareSpritesheet) {
+                sheetData.frameTime += Timer::timeStep;
+                if (sheetData.frameTime >= sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
+                    sheetData.frameTime = 0;
+                        /// get the next frame
+                    Update_Frame(sheetData, direction, action);
                 }
-                sheetData.renderPosition.x = (position.x - camera.screen.x - spriteOffset.x);
-                sheetData.renderPosition.y = (position.y - camera.screen.y - spriteOffset.y);
+                    /// get/update the clip rect
+                Get_Spritesheet_Type(clipRect, sheetData, direction, action);
+                    /// set the render rect size and position
+                renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
+                renderRect.x = (position.x - camera.screen.x - spriteOffset.x);
+                renderRect.y = (position.y - camera.screen.y - spriteOffset.y);
 
                 if (type == Component::Entity_Type::item){
-                    sheetData.renderPosition.w = (spriteOffset.x * 2.0f);
-                    sheetData.renderPosition.h = (spriteOffset.y * 2.0f);
+                    renderRect.w = (spriteOffset.x * 2.0f);
+                    renderRect.h = (spriteOffset.y * 2.0f);
                 }
                     ///fade rendering objects at bottom of screen
-                clipRect = sheetData.clipSprite;
-                renderRect = sheetData.renderPosition;
-                SDL_SetTextureAlphaMod(sheetData.texture, renderable.alpha);
-                texture = sheetData.texture;
+                texture = sheetData.flareSpritesheet->at(sheetData.sheet_name).texture;
             }
-            else {
+            else if (sheetData.sheetData) {
                 Frame_Increment(sheetData, action, direction);
                 renderRect = Position_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
                 texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
+            }
+            else {
+                Utilities::Log("Animation_Frame() fallthrough error: both pointers null");
+                return;
             }
             SDL_SetTextureAlphaMod(texture, renderable.alpha);
 			Graphics::Render_FRect(texture, &clipRect, &renderRect);
 		}
 	}
 
+    void t_Get_Next_Frame_Index(Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
+        sheetData.frameTime += Timer::timeStep;
+        if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
+            ///reset frame count if over
+            sheetData.frameTime = 0;
+            int &currentFrame = sheetData.currentFrame;
+            sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
+            ///calculate reversing
+            if (sheetData.reversing) {
+                if (currentFrame <= 1) {
+                    sheetData.reversing = 0;
+                }
+                currentFrame--;
+            }
+            else {
+                currentFrame++;
+            }
+            if (currentFrame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
+                currentFrame = 0;
+                if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
+                    sheetData.reversing = 1;
+                }
+                else {
+                    sheetData.currentFrame = 0;
+                    if (action.state != Component::walk) {
+                        action.state = Component::idle;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /// Render without chasing pointers
+    void t_Render(entt::registry& zone) {
+        auto view1 = zone.view<Component::Renderable, Component::t_Texture, Component::t_Rendering_Data>();
+        for (auto entity : view1) {
+            auto [renderable, texture, renderingData] = view1.get(entity);
+            SDL_SetTextureAlphaMod(texture.texture, renderable.alpha);
+            Graphics::Render_FRect(texture.texture, &renderingData.clipRect, &renderingData.renderRect);
+        }
+    };
+
+    void Render_Sequence (entt::registry& zone) {
+//        t_Get_Next_Frame_Index();
+//        t_Get_Next_Frame_Data();
+        t_Render(zone);
+    }
+
 	SDL_Rect Explosion_Frame_Update(Component::Sprite_Frames &frame, SDL_Rect frameToUpdateClipOf) {
-		//reset X to zero and increment Y
+		    /// reset X to zero and increment Y
 		if (frame.frameX >= 8) {
 			frame.frameX = 0;
 			frame.frameY++;
 		}
-		// set Output Rect values
+		    /// set Output Rect values
 		int row = frame.frameX * 128;
 		int column = frame.frameY * 128;
 		int width = 128;
 		int height = 128;
 		SDL_Rect rect = { row, column, width, height };
-		//increment X
+		    ///increment X
 		frame.frameX++;
 		return rect;
 	}
@@ -292,14 +344,14 @@ namespace Rendering {
 			delay.currentFrameTime += Timer::timeStep;
 			if (delay.currentFrameTime >= delay.timeBetweenFrames) {
 				if (frames.currentFrame <= frames.maxFrames) { // if there are still frames remaining
-				//only fire this at 60 frames/sec
-					xClipPos = Explosion_Frame_Update(frames, texture.clippedSpriteFrame);		//get action and direction state sprite draw from
+				    /// only fire this at 60 frames/sec
+					xClipPos = Explosion_Frame_Update(frames, texture.clippedSpriteFrame);		//get state and direction state sprite draw from
 					anim.renderPosition = Utilities::SDL_Rect_To_SDL_FRect(xClipPos);		//save sprite for vector
 					texture.clippedSpriteFrame = xClipPos;									//save position for renderer
 					frames.currentFrame++;
 				}
 				else {
-					//remove explosion from scene and free the entity
+					    /// remove explosion from scene and free the entity
 					zone.destroy(spell);
 				}
 				delay.currentFrameTime = 0;
@@ -372,9 +424,6 @@ namespace Rendering {
 						renderPosition.x -= camera.screen.x;;
 						renderPosition.y -= camera.screen.y;;
 						int k = (numOfTiles.x * y) + x;
-                        if (k > 100000) {
-                            Utilities::Log("asdas");
-                        }
 						if (tiles[k].ID != 0) {
 							auto id = tiles[k].ID;
 							for (int tilesetCount = p; tilesetCount >= 0; --tilesetCount) {

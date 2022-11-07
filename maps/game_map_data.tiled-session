@@ -5,121 +5,13 @@
     },
     "activeFile": "untitled3.tmx",
     "expandedProjectPaths": [
-        "sprite_sheets/units",
-        "sprites/environment/path_tiles/Large 256x128",
-        "maps",
-        "packages/sqlite3_c_plus_plus.1.0.3/build",
-        "spawn_points/unit_spawns",
-        "sprite_sheets/ground_objects",
-        "maps/spawn_points",
-        "maps/sprites/environment",
-        "maps/sprite_sheets/ground_tiles",
-        "sprite_sheets/ground_tiles",
-        "sprites/environment",
-        "maps/spawn_points/unit_spawns",
-        "spawn_points",
-        "maps/sprites/units/animals",
-        "maps/sprite_sheets",
-        "maps/sprites/units/animals/no_death_animation",
-        "sprite_sheets",
         ".",
-        "maps/sprites/units/animals/no_death_animation/cow",
-        "maps/sprite_sheets/units"
+        "spawn_points/unit_spawns",
+        "sprite_sheets",
+        "spawn_points",
+        "sprite_sheets/units"
     ],
-    "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
-        "maps/armoured_skeleton_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/grassland_tiles_x2.tsx": {
-            "dynamicWrapping": false,
-            "scaleInDock": 0.5
-        },
-        "maps/skeleton_00.tsx": {
-            "dynamicWrapping": true,
-            "scaleInDock": 1
-        },
-        "maps/skeleton_mage_00.tsx": {
-            "dynamicWrapping": true,
-            "scaleInDock": 1
-        },
-        "maps/skeleton_occultist_00.tsx": {
-            "scaleInDock": 1
-        },
-        "maps/spawn_points/unit_spawns/armored_skeleton_00.tsx": {
-            "scaleInDock": 1
-        },
-        "maps/spawn_points/unit_spawns/armored_skeleton_spawn.tsx": {
-            "scaleInDock": 1
-        },
-        "maps/spawn_points/unit_spawns/armoured_skeleton_00.tsx": {
-            "dynamicWrapping": false,
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/spawn_points/unit_spawns/player_spawn.tsx": {
-            "dynamicWrapping": true,
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/spawn_points/unit_spawns/skeleton_00.tsx": {
-            "dynamicWrapping": false,
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/spawn_points/unit_spawns/skeleton_mage_00.tsx": {
-            "dynamicWrapping": false,
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/spawn_points/unit_spawns/skeleton_occultist_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/spawn_points/unit_spawns/warrior_axe.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/spawn_points/warrior_axe.tsx": {
-            "scaleInDock": 1
-        },
-        "maps/sprite_sheets/ground_tiles/grassland_tiles_x2.tsx": {
-            "scaleInDock": 0.33,
-            "scaleInEditor": 0.33
-        },
-        "maps/sprite_sheets/units/armoured_skeleton_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/sprite_sheets/units/lion_male.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/sprite_sheets/units/skeleton_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/sprite_sheets/units/skeleton_mage_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/sprite_sheets/units/skeleton_occultist_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/sprite_sheets/units/warrior_axe.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/untitled3.tmx": {
-            "scale": 2,
-            "selectedLayer": 0,
-            "viewCenter": {
-                "x": 25172.5,
-                "y": 668.5
-            }
-        },
         "sprite_sheets/environment/trees/tree_01_00.tsx": {
             "scaleInDock": 1
         },
@@ -144,216 +36,174 @@
         "sprite_sheets/environment/trees/tree_01_07.tsx": {
             "scaleInDock": 1
         },
-        "sprite_sheets/ground_objects/Altar.tsx": {
-            "dynamicWrapping": false,
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
         "sprite_sheets/ground_objects/Infernus.tsx": {
-            "dynamicWrapping": false,
-            "scaleInDock": 1,
-            "scaleInEditor": 0.5
-        },
-        "sprite_sheets/ground_tiles/KQzUCJ9y_4x.tsx": {
-            "dynamicWrapping": false,
-            "scaleInDock": 1,
-            "scaleInEditor": 0.5
-        },
-        "sprite_sheets/ground_tiles/grassland_tiles_x2.tsx": {
-            "dynamicWrapping": false,
             "scaleInDock": 1
         },
-        "sprite_sheets/ground_tiles/infernium.tsx": {
-            "dynamicWrapping": true,
-            "scaleInDock": 0.06,
-            "scaleInEditor": 0.12
+        "sprite_sheets/ground_tiles/grassland_tiles_x2.tsx": {
+            "scaleInDock": 1
         },
         "sprite_sheets/units/Bow_Hobgoblin_00.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/armoured_skeleton_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/cow_00.tsx": {
             "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
-        "sprite_sheets/units/cow_00.tsx": {
-            "scaleInDock": 1
-        },
         "sprite_sheets/units/demon.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "sprite_sheets/units/demon_footman_00.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "sprite_sheets/units/footman.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "sprite_sheets/units/footman_00.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/ghoul_00.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/goblin_high_shaman_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/goblin_high_shaman_01.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/goblin_shaman_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/goblin_spearman_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/goblin_spearman_01.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/goblin_spearman_02.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/goblin_spearman_03.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/units/grey_werebear_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/knight_plate_00.tsx": {
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/minotaur_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "sprite_sheets/units/minotaur_alpha.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/ogre_00.tsx": {
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/orc_archer_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/orc_elite_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/orc_heavy_01.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/orc_regular_00.tsx": {
             "scaleInDock": 1
         },
         "sprite_sheets/units/rock_golem_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/skeleton_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/skeleton_mage_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/skeleton_occultist_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/troll_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/warrior_axe.tsx": {
             "scaleInDock": 1
         },
         "sprite_sheets/units/werewolf_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/wolf_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/wolf_riders.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "sprite_sheets/units/zombie_00.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "untitled1.tmx": {
-            "expandedObjectLayers": [
-                4
-            ],
-            "scale": 1,
-            "selectedLayer": 3,
+            "scale": 1.5,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 22100.5,
-                "y": 14790.5
-            }
-        },
-        "untitled2.tmx": {
-            "scale": 0.12,
-            "selectedLayer": 3,
-            "viewCenter": {
-                "x": 24508.333333333336,
-                "y": 12329.166666666668
+                "x": 26438.666666666664,
+                "y": 23214
             }
         },
         "untitled3 (copy).tmx": {
-            "scale": 0.02166748046875,
-            "selectedLayer": 0,
+            "scale": 1,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 24552.923943661975,
-                "y": 12299.538028169016
+                "x": 23698,
+                "y": 11229.5
             }
         },
         "untitled3.tmx": {
-            "scale": 0.33,
+            "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 24854.545454545456,
-                "y": 15519.696969696968
+                "x": 23736.666666666664,
+                "y": 11317.166666666666
             }
         }
     },
-    "last.externalTilesetPath": "/home/nathanial/Workspace/RPG_game/maps/sprite_sheets/ground_objects",
-    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/monsters/ogres",
+    "last.externalTilesetPath": "/home/nathanial/Workspace/RPG_game/maps/sprite_sheets/units",
+    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/demons",
     "last.objectTemplatePath": "/home/nathanial/Workspace/RPG_game/maps/spawn_points/unit_spawns",
-    "map.height": 1024,
-    "map.layerDataFormat": null,
-    "map.orientation": null,
-    "map.width": 1024,
     "openFiles": [
         "untitled3.tmx"
     ],
-    "project": "game_map_data.tiled-project",
-    "property.type": "int",
+    "project": "",
     "recentFiles": [
-        "sprite_sheets/units/ogre_00.tsx",
-        "sprite_sheets/units/knight_plate_00.tsx",
+        "sprite_sheets/units/demon.tsx",
+        "sprite_sheets/units/goblin_spearman_03.tsx",
+        "sprite_sheets/units/Bow_Hobgoblin_00.tsx",
+        "sprite_sheets/units/cow_00.tsx",
+        "sprite_sheets/units/footman_00.tsx",
+        "sprite_sheets/units/ghoul_00.tsx",
+        "sprite_sheets/units/footman.tsx",
         "untitled3.tmx",
         "untitled3 (copy).tmx",
-        "untitled2.tmx",
-        "sprite_sheets/units/wolf_00.tsx",
-        "sprite_sheets/units/ghoul_00.tsx",
-        "sprite_sheets/units/rock_golem_00.tsx",
-        "sprite_sheets/units/werewolf_00.tsx",
-        "sprite_sheets/units/grey_werebear_00.tsx",
-        "sprite_sheets/units/minotaur_00.tsx",
-        "sprite_sheets/units/minotaur_alpha.tsx"
+        "sprite_sheets/units/demon_footman_00.tsx",
+        "untitled1.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
-        "height": 300,
-        "width": 300
-    },
-    "tileset.type": 0
+        "height": 101,
+        "width": 32
+    }
 }
