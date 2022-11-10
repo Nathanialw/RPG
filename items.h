@@ -7,7 +7,9 @@
 #include "utilities.h"
 #include "camera.h"
 #include "mouse_control.h"
+#include "texture_packer_item.h"
 
+#include "SQLite_spritesheets.h"
 using namespace Item_Component;
 
 namespace Items {
@@ -36,10 +38,13 @@ namespace Items {
 	Item_Component::Weapon_Type Generate_Weapon_Type() {
 		int randType = rand() % 4 + 1;
 		switch (randType) {
-		case 1: return { Item_Component::Weapon_Type::sword };
-        case 2: return { Item_Component::Weapon_Type::mace };
-        case 3: return { Item_Component::Weapon_Type::axe };
-        case 4: return { Item_Component::Weapon_Type::spear };
+            case 1: return { Item_Component::Weapon_Type::sword };
+
+            case 2: return { Item_Component::Weapon_Type::mace };
+
+            case 3: return { Item_Component::Weapon_Type::axe };
+
+            case 4: return { Item_Component::Weapon_Type::spear };
 		}
 		Utilities::Log("Generate_Weapon_Type() fallthrough error");
         //defult return if it finds nothing
@@ -50,11 +55,15 @@ namespace Items {
 		int randType = rand() % 5 + 1;
 
 		switch (randType) {
-		case 1: return { Item_Type::helm };
-		case 2: return { Item_Type::chest };
-		case 3: return { Item_Type::gloves };
-		case 4: return { Item_Type::legs };
-		case 5: return { Item_Type::boots };
+            case 1: return { Item_Type::helm };
+
+            case 2: return { Item_Type::chest };
+
+            case 3: return { Item_Type::gloves };
+
+            case 4: return { Item_Type::legs };
+
+            case 5: return { Item_Type::boots };
 		}
 		Utilities::Log("Generate_Item_Type() fallthrough error");
         //defult return if it finds nothing
@@ -66,7 +75,9 @@ namespace Items {
 
         switch (randType) {
             case 1: return { Weapon_Material::copper };
+
             case 2: return { Weapon_Material::bronze };
+
             case 3: return { Weapon_Material::iron };
         }
         Utilities::Log("Generate_Weapon_Material() fallthrough error");
@@ -78,17 +89,20 @@ namespace Items {
 		int randType = rand() % 5 + 1;
 
 		switch (randType) {
-		case 1: return { Armor_Type::cloth };
-		case 2: return { Armor_Type::padded };
-		case 3: return { Armor_Type::leather };
-		case 4: return { Armor_Type::mail };
-		case 5: return { Armor_Type::plate };
+            case 1: return { Armor_Type::cloth };
+
+            case 2: return { Armor_Type::padded };
+
+            case 3: return { Armor_Type::leather };
+
+            case 4: return { Armor_Type::mail };
+
+            case 5: return { Armor_Type::plate };
 		}
 		Utilities::Log("Generate_Armor_Type() fallthrough error");
         //defult return if it finds nothing
 		return Armor_Type::cloth;
 	}
-
 
 	std::string Create_Weapon(entt::entity& item, Rarity &rarity) {
 		auto material = Generate_Weapon_Material();
@@ -101,18 +115,37 @@ namespace Items {
 		World::zone.emplace<Item_Type>(item, Item_Type::weapon);
 		World::zone.emplace<Rarity>(item, rarity);
 
+            ///create the weapon from the db
+            ///add to std::map
+            ///save the string of the name
+            ///provide lookup string when the player picks it up
+
+        std::unordered_map<std::string, Component::Sheet_Data>* equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(weaponName);
+
         //get from spritesheet
 		int column = weaponMaterials[material];
 		int row = weaponTypes[weaponType];
 		int size = 32;
 
-
 		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
-        //sprite sheet graphic pointer
-//		World::zone.emplace<Component::Sprite_Sheet_Info>(item, Graphics::weapons_icons ); /// need to load hetexture	 only once and pass the pointer into this function
-//		World::zone.get<Component::Sprite_Sheet_Info>(item).sheet = {
-//			{ sprite , 0, 32, 0, 0, 75, 0}
-//		};
+
+        if (SQLite_Spritesheets::Flare_Spritesheets["weapon"].texture == NULL) {
+            SQLite_Spritesheets::Flare_Spritesheets["weapon"].texture = Graphics::weapons_icons;
+            SQLite_Spritesheets::Flare_Spritesheets["weapon"].sheetWidth = 128;
+            SQLite_Spritesheets::Flare_Spritesheets["weapon"].spriteWidth = 32;
+            SQLite_Spritesheets::Flare_Spritesheets["weapon"].spriteHeight = 32;
+            SQLite_Spritesheets::Flare_Spritesheets["weapon"].actionFrameData[Component::isStatic] = {0, 0, 0, 100};
+        }
+
+		auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
+        sheetData.sheetDataWeapon = equippedSheetData;
+        sheetData.currentFrame = row;
+        sheetData.frameIndex = column;
+        sheetData.type = "item";
+        sheetData.sheet_name = "weapon";
+        sheetData.weapon_name = weaponName;
+        sheetData.flareSpritesheet = &SQLite_Spritesheets::Flare_Spritesheets;
+
 		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
 		icon.clipSprite = sprite;
 		icon.clipIcon = {0,0,256,256};
@@ -126,11 +159,11 @@ namespace Items {
 	std::string Create_Armor(entt::entity& item, Rarity& rarity) {
 		Item_Type itemType = Generate_Item_Type();
 		Armor_Type armorType = Generate_Armor_Type();
-        ///just  a little fix since I have no cloth helm icon
+            ///just  a little fix since I have no cloth helm icon
         if (itemType == Item_Type::helm && armorType == Armor_Type::cloth) {
             armorType = Armor_Type::leather;
         };
-        //////
+            //////
 		std::string type = ItemTypeName[itemType];
 		std::string armor = ArmorTypeName[armorType];
 		std::string itemName = armor + " " + type;
@@ -139,11 +172,29 @@ namespace Items {
 		int column = itemTypes[itemType];
 		int row = armorTypes[armorType];
 		int size = 64;
-		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
-//		World::zone.emplace<Component::Sprite_Sheet_Info>(item, Graphics::armorSpriteSheet); /// need to load hetexture	 only once and pass the pointer into this function
-//		World::zone.get<Component::Sprite_Sheet_Info>(item).sheet = {
-//			{ sprite , 0, 64, 0, 0, 75, 0}
-//		};
+		SDL_Rect sprite = { column * size, row * size, size, size };
+
+        if (SQLite_Spritesheets::Flare_Spritesheets["armor"].texture == NULL) {
+            SQLite_Spritesheets::Flare_Spritesheets["armor"].texture = Graphics::armorSpriteSheet;
+            SQLite_Spritesheets::Flare_Spritesheets["armor"].sheetWidth = 256;
+            SQLite_Spritesheets::Flare_Spritesheets["armor"].spriteWidth = 64;
+            SQLite_Spritesheets::Flare_Spritesheets["armor"].spriteHeight = 64;
+            SQLite_Spritesheets::Flare_Spritesheets["armor"].actionFrameData[Component::isStatic] = {0, 0, 0, 100};
+        }
+
+        auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
+        sheetData.currentFrame = row;
+        sheetData.frameIndex = column;
+        sheetData.type = "item";
+        sheetData.sheet_name = "armor";
+        sheetData.flareSpritesheet = &SQLite_Spritesheets::Flare_Spritesheets;
+            /// need to load the texture only once and pass the pointer into this function
+        // index, index * (index / width)
+
+//        Component::Frame_Data_Packer isStatic;
+//        std::unordered_map<std::string, SQLite_Spritesheets::Sheet_Data_Flare>* flareSpritesheet = NULL;
+//		World::zone.emplace<Component::Sprite_Sheet_Info>(item, flareSpritesheet);
+
 		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
 		icon.clipSprite = sprite;
 		icon.clipIcon = {0,0,256,256};
@@ -174,35 +225,51 @@ namespace Items {
 
 
 	statValue Get_Random_Stat() {
+
 		int randStat = rand() % 6 + 1;
+
 		int randStatValue = rand() % 5 + 1;
+
 		switch (randStat) {
-		case 1: return { Stat::health, randStatValue };
-		case 2: return { Stat::damage, randStatValue };
-		case 3: return { Stat::spellDamage, randStatValue };
-		case 4: return { Stat::armor, randStatValue };
-		case 5: return { Stat::piety, randStatValue };
-		case 6: return { Stat::attackSpeed, randStatValue };
+            case 1: return { Stat::health, randStatValue };
+
+            case 2: return { Stat::damage, randStatValue };
+
+            case 3: return { Stat::spellDamage, randStatValue };
+
+            case 4: return { Stat::armor, randStatValue };
+
+            case 5: return { Stat::piety, randStatValue };
+
+            case 6: return { Stat::attackSpeed, randStatValue };
 		}
+
 		Utilities::Log("Get_Random_Stat() fallthrough error");
-		return  {Stat::health, randStatValue};
+
+        return  {Stat::health, randStatValue};
 	}
 
 	Rarity Generate_Item_Rarity() {
+
 		int i = rand() % 100 + 1;
+
 		if (i >= 35) {
 			return Rarity::common;
 		}
-		else if (i >= 15) {
+
+        else if (i >= 15) {
 			return Rarity::magic;
 		}
-		else if (i >= 5) {
+
+        else if (i >= 5) {
 			return Rarity::rare;
 		}
-		else if (i >= 0) {
+
+        else if (i >= 0) {
 			return Rarity::unique;
 		}
-		Utilities::Log("Generate_Item_Rarity() fallthrough error");
+
+        Utilities::Log("Generate_Item_Rarity() fallthrough error");
 		return  Rarity::common;
 	}
 
@@ -370,6 +437,7 @@ namespace Items {
     }
 
 	void Init_Item_Data() {
+
 		rarityColor = {
 			{Rarity::common, { 255, 255, 255, 200 }},
 			{Rarity::magic, { 51, 153, 255, 255 }},
@@ -417,6 +485,7 @@ namespace Items {
             {Weapon_Material::bronze, 1},
             {Weapon_Material::iron, 2},
         };
+
 		ArmorTypeName = {
 			{Item_Component::Armor_Type::cloth, "cloth"},
 			{Item_Component::Armor_Type::padded, "padded"},
@@ -424,6 +493,7 @@ namespace Items {
 			{Item_Component::Armor_Type::mail, "mail"},
 			{Item_Component::Armor_Type::plate, "plate"}
 		};
+
 		ItemTypeName = {
 			{Item_Component::Item_Type::helm, "helmet"},
 			{Item_Component::Item_Type::chest, "chestpiece"},
@@ -437,12 +507,14 @@ namespace Items {
             {Item_Component::Weapon_Material::bronze, "bronze"},
             {Item_Component::Weapon_Material::iron, "iron"},
         };
+
         weaponTypeName = {
                 {Item_Component::Weapon_Type::sword, "sword"},
                 {Item_Component::Weapon_Type::axe, "axe"},
                 {Item_Component::Weapon_Type::mace, "mace"},
                 {Item_Component::Weapon_Type::spear, "spear"}
         };
+
 		baseStatData = {
 			{Item_Component::Stat::health, 100},
 			{Item_Component::Stat::damage, 2},
@@ -451,7 +523,9 @@ namespace Items {
 			{Item_Component::Stat::piety, 10},
 			{Item_Component::Stat::attackSpeed, 500},
 		};
+
 		statData = baseStatData;
+
 		statName = {
 			{Item_Component::Stat::health, "Health"},
 			{Item_Component::Stat::damage, "Damage"},

@@ -3,13 +3,13 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "untitled3.tmx",
+    "activeFile": "sprite_sheets/units/human_female.tsx",
     "expandedProjectPaths": [
-        ".",
-        "spawn_points/unit_spawns",
         "sprite_sheets",
+        ".",
         "spawn_points",
-        "sprite_sheets/units"
+        "sprite_sheets/units",
+        "spawn_points/unit_spawns"
     ],
     "fileStates": {
         "sprite_sheets/environment/trees/tree_01_00.tsx": {
@@ -40,6 +40,7 @@
             "scaleInDock": 1
         },
         "sprite_sheets/ground_tiles/grassland_tiles_x2.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1
         },
         "sprite_sheets/units/Bow_Hobgoblin_00.tsx": {
@@ -47,7 +48,9 @@
             "scaleInEditor": 1
         },
         "sprite_sheets/units/armoured_skeleton_00.tsx": {
-            "scaleInDock": 1
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "sprite_sheets/units/cow_00.tsx": {
             "dynamicWrapping": false,
@@ -105,6 +108,10 @@
         "sprite_sheets/units/grey_werebear_00.tsx": {
             "scaleInDock": 1
         },
+        "sprite_sheets/units/human_female.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "sprite_sheets/units/knight_plate_00.tsx": {
             "scaleInDock": 1
         },
@@ -147,6 +154,9 @@
         "sprite_sheets/units/werewolf_00.tsx": {
             "scaleInDock": 1
         },
+        "sprite_sheets/units/white_woman_00.tsx": {
+            "scaleInEditor": 1
+        },
         "sprite_sheets/units/wolf_00.tsx": {
             "scaleInDock": 1
         },
@@ -173,37 +183,39 @@
             }
         },
         "untitled3.tmx": {
-            "scale": 3,
+            "scale": 0.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 23736.666666666664,
-                "y": 11317.166666666666
+                "x": 22382,
+                "y": 9777
             }
         }
     },
     "last.externalTilesetPath": "/home/nathanial/Workspace/RPG_game/maps/sprite_sheets/units",
-    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/demons",
+    "last.imagePath": "/home/nathanial/Workspace/RPG_game/sprites/units/humans/FemalePeasants",
     "last.objectTemplatePath": "/home/nathanial/Workspace/RPG_game/maps/spawn_points/unit_spawns",
     "openFiles": [
-        "untitled3.tmx"
+        "untitled3.tmx",
+        "sprite_sheets/units/human_female.tsx"
     ],
     "project": "",
     "recentFiles": [
+        "sprite_sheets/units/white_woman_00.tsx",
+        "sprite_sheets/units/human_female.tsx",
+        "untitled3.tmx",
+        "sprite_sheets/units/demon_footman_00.tsx",
+        "sprite_sheets/units/armoured_skeleton_00.tsx",
         "sprite_sheets/units/demon.tsx",
         "sprite_sheets/units/goblin_spearman_03.tsx",
         "sprite_sheets/units/Bow_Hobgoblin_00.tsx",
         "sprite_sheets/units/cow_00.tsx",
         "sprite_sheets/units/footman_00.tsx",
         "sprite_sheets/units/ghoul_00.tsx",
-        "sprite_sheets/units/footman.tsx",
-        "untitled3.tmx",
-        "untitled3 (copy).tmx",
-        "sprite_sheets/units/demon_footman_00.tsx",
-        "untitled1.tmx"
+        "sprite_sheets/units/footman.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
-        "height": 101,
-        "width": 32
+        "height": 64,
+        "width": 64
     }
 }

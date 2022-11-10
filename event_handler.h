@@ -128,8 +128,7 @@ namespace Event_Handler {
 					}
 				}
                 if (Mouse::itemCurrentlyHeld == false) {
-                    if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition,
-                                                              meleeRange)) {
+                    if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition, meleeRange)) {
                         //Mouse::bRight_Mouse_Pressed_Attacking = true; //held down for constant attacking
                     } else {
                         Mouse::bRight_Mouse_Pressed = true; //held down for constant moving

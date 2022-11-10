@@ -83,89 +83,48 @@ namespace Unit_Status {
 	}
 
 	void isDead(entt::registry& zone) {
-		auto view = zone.view<Component::Sprite_Sheet_Info, Component::Action, Component::Health, Component::Position, Component::Radius, Component::Sprite_Offset, Component::Body, Component::In_Object_Tree>(entt::exclude<Component::Spell>);
-		for (auto entity : view) {
-			auto& health = view.get<Component::Health>(entity);
-			if (health.currentHealth <= 0) {
-				view.get<Component::Action>(entity).state = Component::dead;
-				view.get<Component::Sprite_Sheet_Info>(entity).currentFrame = 0;
-				auto& position = view.get<Component::Position>(entity);
-				auto& radius = view.get<Component::Radius>(entity).fRadius;
-				auto& offset = view.get<Component::Sprite_Offset>(entity);
-				auto& body = view.get<Component::Body>(entity).body;
-				auto& inTree = view.get<Component::In_Object_Tree>(entity).inTree;
-				Items::Create_And_Drop_Item(position);
-				    ///sets the sprite to render so that it is always rendered behind living sprites
-				position.x -= offset.x;
-				position.y -= offset.y;
-				offset.x = 0.0f;
-				offset.y = 0.0f;
-				Collision::world->DestroyBody(body);
-				World::zone.remove<Component::Body>(entity);
-				    ///set to remove from quad tree on update
-				SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
-				zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);
-				zone.get<Component::Alive>(entity).bIsAlive = false;
-				zone.remove<Component::Commandable>(entity);
-				zone.remove<Component::Selected>(entity);
-				zone.remove<Component::Moving>(entity);
-				zone.remove<Component::Mouse_Move>(entity);
-				zone.remove<Component::Velocity>(entity);
-				zone.remove<Component::Spellbook>(entity);
-				zone.remove<Component::Mass>(entity);
-				zone.remove<Component::Sight_Range>(entity);
-				zone.remove<Component::Health>(entity);
-				zone.remove<Component::Radius>(entity);
-				if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
-					auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);
-					auto &soldier_list = zone.get<Test::Soldiers_Assigned_List>(soldier.iUnit_Assigned_To);
-					soldier_list.unitData[soldier.iIndex].bAlive = false;
-					zone.remove<Component::Assigned_To_Formation>(entity);
-				}
-			}
-		}
-//
-            /// texture packer version
-//		auto view2 = zone.view<Component::Action_State, Component::Health, Component::Position, Component::Radius, Component::Sprite_Offset, Component::Body, Component::In_Object_Tree, Component::Sprite_Vector>(entt::exclude<Component::Spell>);
-//		for (auto entity : view2) {
-//			auto& health = view2.get<Component::Health>(entity);
-//			if (health.currentHealth <= 0) {
-//				auto& state = view2.get<Component::Action_State>(entity);
-//				state = Component::Action_State::dead;
-//				int& currentFrame = view2.get<Component::Sprite_Vector>(entity).currentFrame;
-//				currentFrame = 0;
-//				auto& position = view2.get<Component::Position>(entity);
-//				auto& sprite = view2.get<Component::Sprite_Vector>(entity);
-//				auto& radius = view2.get<Component::Radius>(entity).fRadius;
-//				auto& offset = view2.get<Component::Sprite_Offset>(entity).offset;
-//				auto& body = view2.get<Component::Body>(entity).body;
-//				auto& inTree = view2.get<Component::In_Object_Tree>(entity).inTree;
-//				sprite.currentFrame = 0;
-//				Items::Create_And_Drop_Item(position);
-//				//sets the sprite to render so that it is always rendered behind living sprites
-//				position.x -= offset.x;
-//				position.y -= offset.y;
-//				offset.x = 0.0f;
-//				offset.y = 0.0f;
-//				Collision::world->DestroyBody(body);
-//				World::zone.remove<Component::Body>(entity);
-//				//set to remove from quad tree on update
-//				SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
-//				zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);
-//				zone.get<Component::Alive>(entity).bIsAlive = false;
-//				zone.remove<Component::Commandable>(entity);
-//				zone.remove<Component::Selected>(entity);
-//				zone.remove<Component::Moving>(entity);
-//				zone.remove<Component::Mouse_Move>(entity);
-//				zone.remove<Component::Velocity>(entity);
-//				zone.remove<Component::Spellbook>(entity);
-//				zone.remove<Component::Mass>(entity);
-//				zone.remove<Component::Sight_Range>(entity);
-//				zone.remove<Component::Health>(entity);
-//				zone.remove<Component::Radius>(entity);
-//			}
-//		}
-	}
+        auto view = zone.view<Component::Sprite_Sheet_Info, Component::Action, Component::Health, Component::Position, Component::Radius, Component::Sprite_Offset, Component::Body, Component::In_Object_Tree>(entt::exclude<Component::Spell>);
+        for (auto entity: view) {
+            auto &health = view.get<Component::Health>(entity);
+            if (health.currentHealth <= 0) {
+                view.get<Component::Action>(entity).state = Component::dead;
+                view.get<Component::Sprite_Sheet_Info>(entity).currentFrame = 0;
+                auto &position = view.get<Component::Position>(entity);
+                auto &radius = view.get<Component::Radius>(entity).fRadius;
+                auto &offset = view.get<Component::Sprite_Offset>(entity);
+                auto &body = view.get<Component::Body>(entity).body;
+                auto &inTree = view.get<Component::In_Object_Tree>(entity).inTree;
+                Items::Create_And_Drop_Item(position);
+                ///sets the sprite to render so that it is always rendered behind living sprites
+                position.x -= offset.x;
+                position.y -= offset.y;
+                offset.x = 0.0f;
+                offset.y = 0.0f;
+                Collision::world->DestroyBody(body);
+                World::zone.remove<Component::Body>(entity);
+                ///set to remove from quad tree on update
+                SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
+                zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);
+                zone.get<Component::Alive>(entity).bIsAlive = false;
+                zone.remove<Component::Commandable>(entity);
+                zone.remove<Component::Selected>(entity);
+                zone.remove<Component::Moving>(entity);
+                zone.remove<Component::Mouse_Move>(entity);
+                zone.remove<Component::Velocity>(entity);
+                zone.remove<Component::Spellbook>(entity);
+                zone.remove<Component::Mass>(entity);
+                zone.remove<Component::Sight_Range>(entity);
+                zone.remove<Component::Health>(entity);
+                zone.remove<Component::Radius>(entity);
+                if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
+                    auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);
+                    auto &soldier_list = zone.get<Test::Soldiers_Assigned_List>(soldier.iUnit_Assigned_To);
+                    soldier_list.unitData[soldier.iIndex].bAlive = false;
+                    zone.remove<Component::Assigned_To_Formation>(entity);
+                }
+            }
+        }
+    }
 
 	void Update_Unit_Status(entt::registry &zone) {
 		Update_Collided_Unit(zone);

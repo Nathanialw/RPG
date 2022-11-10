@@ -183,12 +183,12 @@ namespace UI {
 			};
 			std::map<Item_Type, SDL_FRect>equippedItemsRect{
 				{ Item_Type::helm, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize} },
-				{ Item_Type::neck, {defaultScreenPosition.x + equipmentOffsetColumn1.x , defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize)+10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+				{ Item_Type::neck, {defaultScreenPosition.x + equipmentOffsetColumn1.x , defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 				{ Item_Type::shoulders, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::chest, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::weapon, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::gloves, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
-				{ Item_Type::belt, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize)+10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
+				{ Item_Type::belt, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::legs, {defaultScreenPosition.x + equipmentOffsetColumn2.x,   defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::boots, {defaultScreenPosition.x + equipmentOffsetColumn2.x,  defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::shield, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  }
@@ -209,12 +209,14 @@ namespace UI {
 			zone.emplace<Component::On_Mouse>(item);
 			zone.remove<Component::Inventory>(item);
 		}
+
 		void Equip_Item(entt::registry& zone, entt::entity& item, bool& mouseHasItem, Item_Type& itemType) {
 			equippedItems[itemType] = item;
 			mouseHasItem = false;
 			zone.remove<Component::On_Mouse>(item);
 			zone.emplace<Component::Inventory>(item);
 		}
+
 		void Equip_Item_And_Swap_With_Mouse(entt::registry& zone, entt::entity& item, Item_Type& itemType) {
 			entt::entity itemInSlot = equippedItems[itemType];
 			equippedItems[itemType] = item;
@@ -234,12 +236,10 @@ namespace UI {
 			/*could be injected instead*/
 
 			if (Mouse_Inside_Equipment_Screen(zone, camera, mousePoint)) {
-				//check with item type with a search of where the mouse and and the rects of the equip slots
+				//check which item type with a search of where the mouse and the rects of the equip slots
 				if (mouseHasItem) {
 					auto& itemType = zone.get<Item_Type>(item);
-					/*
-					////////////////
-					*/
+
 					SDL_FRect slotRect = equippedItemsRect[itemType];
 					SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(zone, slotRect, camera);
 

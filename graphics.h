@@ -34,6 +34,7 @@ namespace Graphics {
 	SDL_Renderer* renderer;
 
 	const int numberOfTextures = 100;
+    int texture_ID = 0;
 	std::array<SDL_Texture*, numberOfTextures> unitTextures;
 
 	//where the actual texture is stored
@@ -68,6 +69,7 @@ namespace Graphics {
     SDL_Texture* itemBorderEite;
 	SDL_Texture* armorSpriteSheet;
     SDL_Texture* spellbook;
+    SDL_Texture* female_weapons;
 
 	SDL_Texture* tooltipBackground;
 	SDL_Texture* cow;
@@ -165,8 +167,9 @@ namespace Graphics {
             //unitTextures[unitID];
 		}
 		//to render it jsut needs access to the texture array and the unitID
-
 	}
+
+
 
 	void Load_Textures(entt::registry& zone) {
 		Create_Font();
@@ -203,6 +206,7 @@ namespace Graphics {
 		tooltipBackground = createTexture("sprites/UI/tooltips/tooltipBackground2.png");
 		cow = createTexture("sprites/units/animals/no_death_animation/cow/walk_sheet_192x192_8x8_alpha.png");
         spellbook = createTexture("sprites/UI/spellbook/spellbook.png");
+        female_weapons = createTexture("sprites/items/weapons/Female_Swords.png");
 
 		default_icon = createTexture("sprites/default.jpg");
 		defaultIcon = Create_Icon_Entity(zone, default_icon, Graphics::bagSlotBorder);

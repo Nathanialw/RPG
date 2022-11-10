@@ -83,15 +83,91 @@ namespace Component {
 		std::vector<DataTypes::i2d>walls;
 	};
 
+    /// place 2-h and bow animations in a separate array
+    /// if I have a bow equipped it links a different array but the state value remains the same
+
+    /// need to have a check somewhere to see whether I am in 1h, 2h or bow mode and pick the correct array
+    /// maybe save a piece of state within another component already used that denotes the current weapon state, use that to index which array to read from
+
+    enum Weapon_State {
+        unarmed,
+        _1hand,
+        _2hand,
+        bow,
+        xbow
+    };
+
+//    enum t_Action_State {
+//        isStatic,
+//        idle,
+//        idle,
+//        idle1,
+//        idle2,
+//        idle3,
+//        /// Idle_4 is unarmed
+//        idle4,
+//        ///these two align with th first 2 idles
+//        fidget,
+//        fidget2,
+//        ///this fidget is unarmed and aligns with idle4
+//        fidget3,
+//        ///unarmed
+//        talking1,
+//        talking2,
+//        walk,
+//        run,
+//        attack,
+//        attack2,
+//        attack3,
+//        attack4,
+//        idle2H,
+//        idleCritical1,
+//        idleCritical2,
+//        ///weapon only visible with a staff - can cast with a staff shield but cannot attack
+//        cast,
+//        struck,
+//        block,
+//        evade,
+//        stunned,
+//        idle_low_hp,
+//        idle_low_hp2,
+//        dead,
+//        dead2,
+//        dead3,
+//        dead4,
+//        dead5,
+//        dead6,
+//        resting,
+//        cheer,
+//        behavior,
+//        summoned,
+//        kneel,
+//        pray_kneeled,
+//        pray_standing,
+//        in_combat,
+//        in_combat2,
+//        climb,
+//        use_item,
+//        crouch
+//    };
+
 	enum Action_State {
 		isStatic,
 		idle,
 		idle2,
 		idle6,
 		walk,
+        walkBow,
         run,
 		attack,
         attack2,
+        attack2H_1,
+        attack2H_2,
+        idle2H,
+        idleCritical1,
+        idleCritical2,
+        run2H,
+        walk2H,
 		cast,
 		struck,
         block,
@@ -107,6 +183,8 @@ namespace Component {
 		dead6,
         resting,
 		ranged,
+        ranged_bow1,
+        idleBow,
 		cheer,
         behavior,
 		summoned,
@@ -115,7 +193,9 @@ namespace Component {
         pray_standing,
         in_combat,
         in_combat2,
-        use_item
+        climb,
+        use_item,
+        crouch
 
 	};
 
@@ -148,6 +228,22 @@ namespace Component {
         int frameSpeed = 75;
     };
 
+    ////////////////////////////////////////////////////////////////////////////////////
+    /// These are not components but components have pointers to them
+
+
+    struct Weapon_Sheet_Data {
+        SDL_Texture* texture = NULL;
+        std::vector<Sprite_Sheet_Data> frameList;
+        /// start frame by state, number of frames per state.
+        std::unordered_map<Component::Weapon_State, Frame_Data_Packer> actionFrameData;
+        ///store the frame duration for each frame of each state, probably not worth it
+//        std::unordered_map<Component::Action_State, std::vector<int>> Frame_Speed_By_Action;
+    };
+    ////////////////////////////////////////////////////////////////////////////////////
+
+        /// one per item, but they can point to the same texture
+
     struct Sheet_Data {
         SDL_Texture* texture = NULL;
         std::vector<Sprite_Sheet_Data> frameList;
@@ -167,16 +263,46 @@ namespace Component {
         std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData;
     };
 
+    ////////////////////////////////////////////////////////////////////////////////////
+
+        ///only exists once and I look it up
+    struct Item_Render_Data {
+        SDL_Texture* texture  = NULL;
+            /// actual clip data of each sprite
+        std::vector<Sprite_Sheet_Data> frameList;
+            /// frame start and num frames calced from XML
+        std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData[2500];
+    };
+
+    //////////////////////////////////////////////////////////////////////////////////
+
+    struct Equipped_Items {
+            ///get the string from the item name and look up the texture from the data
+        std::unordered_map<std::string, Item_Render_Data> equippedItems;
+    };
+
     struct Action {
         Action_State state;
     };
 
-    ///component for the unit
+        ///component for the unit
     struct Sprite_Sheet_Info {
         std::string type = "default";
+
         std::unordered_map<std::string, Sheet_Data_Flare>* flareSpritesheet = NULL;
         std::unordered_map<std::string, Sheet_Data>* sheetData = NULL;
         std::string sheet_name = "default";
+        std::unordered_map<std::string, Sheet_Data>* sheetDataWeapon = NULL;
+        std::string weapon_name = "unarmed";
+        int weaponFrameIndex = 0;
+        int chestpieceFrameIndex = 0;
+        int legplateFrameIndex = 0;
+        int helmFrameIndex = 0;
+        int hairFrameIndex = 0;
+        int backFrameIndex = 0;
+        int beardFrameIndex = 0;
+        int bodysuit = 0;
+        int offhand = 0;
             ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
 //        std::string* sheetData;
 //        int index = 0;

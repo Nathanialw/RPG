@@ -87,9 +87,6 @@ namespace Maps {
             //scale.scale = rand_scale;
         }
         else {
-            if (name == "player") {
-                Utilities::Log("player");
-            }
             unit_ID = Check_For_Template_ID(name);
             Graphics::Create_Game_Object(unit_ID, filepath.c_str());
             data = Entity_Loader::parse_data(name);
@@ -117,11 +114,14 @@ namespace Maps {
         float numTilesY =  y / tileHeight;
         x = 64.0f + x - (numTilesY * tileWidth / 2.0f);
         y = -37.0f + (numTilesX * tileHeight) + (y / 2.0f);
+        y = -37.0f + (numTilesX * tileHeight) + (y / 2.0f);
         //Add shared components
         auto& position = zone.emplace<Component::Position>(entity, x, y);
         auto& scale = zone.emplace<Component::Scale>(entity, data.scale);
         auto &radius = zone.emplace<Component::Radius>(entity, data.radius * data.scale);
-        zone.emplace<Component::Direction>(entity, Component::Direction::N);
+
+            /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
+        zone.emplace<Component::Direction>(entity, Component::Direction::W);
         zone.emplace<Component::handle>(entity, name);
         zone.emplace<Component::Mass>(entity, data.mass);
         zone.emplace<Component::Alive>(entity, true);
@@ -130,7 +130,8 @@ namespace Maps {
            sprite.sheetData = packerframeData;
            sprite.sheet_name = name;
            sprite.type = "RPG_Tools";
-           zone.emplace<Component::Sprite_Offset>(entity, 75.0f * data.scale, 100.0f * data.scale);
+           auto offset = Texture_Packer::Get_Sprite_Offets_From_db(sheetname);
+           zone.emplace<Component::Sprite_Offset>(entity, offset.x * data.scale, offset.y * data.scale);
         }
         else {
             auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);

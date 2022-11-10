@@ -50,7 +50,7 @@ namespace Combat_Control {
                 auto &sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
                     ///Flare sprites
                 if (sheetData.flareSpritesheet) {
-                    Utilities::Log(sheetData.currentFrame);
+//                    Utilities::Log(sheetData.currentFrame);
                     if (sheetData.finalFrame) {
                         //executes a point and click attack
                         auto &target_ID = view.get<Component::Attacking>(entity).target_ID;

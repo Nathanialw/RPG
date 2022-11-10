@@ -17,8 +17,6 @@ namespace Character_Stats {
 		statsSheetOffsetRect.h
 	};
 
-
-
 	Graphics::Surface_Data Create_Text_Box(std::string& string, SDL_Color& rarity, SDL_Rect& textBox) {
 		Graphics::Surface_Data text = Graphics::Load_Text_Texture(string, rarity);
 		text.k = textBox;
@@ -26,33 +24,49 @@ namespace Character_Stats {
 	}
 
 	//update all stats
-	//cycle through each equip sloth and add the stats to the base stats
+	//cycle through each equip slot and adds the stats to the base stats
 	int Update_Stat(int characterStat, int itemStat) {
 		return itemStat + characterStat;
 	}
 
 	//run when equipping or unequipping an item
 	void Update_Unit_Stats(entt::registry& zone) { //run funtion on item equip or unequip
-		auto view = zone.view<Item_Component::Item_Equip, Component::Melee_Damage, Component::Health, Component::Attack_Speed>();
+		auto view = zone.view<Component::Sprite_Sheet_Info, Item_Component::Item_Equip, Component::Melee_Damage, Component::Health, Component::Attack_Speed>();
 		for (auto entity : view) {
 			auto& damage = view.get<Component::Melee_Damage>(entity);
 			auto& health = view.get<Component::Health>(entity);
 			auto& attackSpeed = view.get<Component::Attack_Speed>(entity);
+			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
 
-			//set charcter stats to base values
+			//set character stats to base values
 			for (auto &stat : Items::statData) {
 				stat.second = Items::baseStatData[stat.first];
 			}
 
-			//add equipment stats to charcter stats
+			//add equipment stats to character stats
 			for (auto &item : UI::Equipment_UI::equippedItems) {
 				if (item.second != UI::Equipment_UI::emptyEquipSlot) {
 					auto& stats = zone.get<Item_Stats>(item.second).stats;
 					for (auto& stat : stats) {
 						Items::statData[stat.first] += stat.second;
 					}
+                    /// add weapon sprite data to character rendering component
+                    /// remove if nothing equipped
+                    if (item.first == Item_Component::Item_Type::weapon) {
+                        auto &weaponSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
+                        if (weaponSheet.sheetDataWeapon) {
+                            sheetData.sheetDataWeapon = weaponSheet.sheetDataWeapon;
+                            sheetData.weapon_name = weaponSheet.weapon_name;
+                        }
+                    }
 				}
-			}
+                if (item.first == Item_Component::Item_Type::weapon) {
+                    if (item.second == UI::Equipment_UI::emptyEquipSlot) {
+                        sheetData.sheetDataWeapon = NULL;
+                        sheetData.weapon_name = "unarmed";
+                    }
+                }
+            }
 
 			//update components from updated character stat data
 			for (auto& stat : Items::statData) {
@@ -66,7 +80,6 @@ namespace Character_Stats {
 			zone.remove<Item_Component::Item_Equip>(entity);
 		}
 	}
-
 
 	SDL_FRect Get_And_Scale_StatBox(entt::registry& zone, Component::Camera& camera) {
 		SDL_FRect statsBox = { UI::defaultScreenPosition.x + statsSheetOffsetRect.x, UI::defaultScreenPosition.y + statsSheetOffsetRect.y, statsSheetOffsetRect.w, statsSheetOffsetRect.h };
@@ -145,7 +158,6 @@ namespace Character_Stats {
 
 		}
 	}
-
 
 	void Init_UI(entt::registry& zone) {
 		Items::Init_Item_Data();
