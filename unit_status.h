@@ -89,6 +89,7 @@ namespace Unit_Status {
             if (health.currentHealth <= 0) {
                 view.get<Component::Action>(entity).state = Component::dead;
                 view.get<Component::Sprite_Sheet_Info>(entity).currentFrame = 0;
+//                view.get<Component::Sprite_Sheet_Info>(entity).finalFrame = Component::normalFrame;
                 auto &position = view.get<Component::Position>(entity);
                 auto &radius = view.get<Component::Radius>(entity).fRadius;
                 auto &offset = view.get<Component::Sprite_Offset>(entity);

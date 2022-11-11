@@ -22,7 +22,7 @@ namespace Combat_Control {
             auto &act = view.get<Component::Action>(entity);
                 ///ensures it attacks at the end of the last frame of the attack
                 /// if current attackSpeed >= attackSpeed value then subtract the attackSpeed value from the current attackSpeed counter
-            if (act.state != Component::attack && act.state != Component::struck && attackSpeed.counter <= 0) {
+            if (act.state != Component::attack && act.state != Component::struck && act.state != Component::block && attackSpeed.counter <= 0) {
                 zone.emplace_or_replace<Component::In_Combat>(entity, true);
                 auto &direction = view.get<Component::Direction>(entity);
                 auto &angle = view.get<Component::Velocity>(entity).angle;
@@ -35,6 +35,9 @@ namespace Combat_Control {
                 act.state = Component::attack;
                 sheetData.currentFrame = 0;
                 zone.emplace_or_replace<Component::Attacking>(entity, target.target_ID);
+                zone.remove<Component::Attack>(entity);
+            }
+            else {
                 zone.remove<Component::Attack>(entity);
             }
         }
@@ -51,7 +54,7 @@ namespace Combat_Control {
                     ///Flare sprites
                 if (sheetData.flareSpritesheet) {
 //                    Utilities::Log(sheetData.currentFrame);
-                    if (sheetData.finalFrame) {
+                    if (sheetData.finalFrame == Component::finalFrame) {
                         //executes a point and click attack
                         auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
                         auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
@@ -73,7 +76,7 @@ namespace Combat_Control {
                 }
                 else if (sheetData.sheetData) {
                         /// RPG_tools sprites
-                    if (sheetData.finalFrame) {
+                    if (sheetData.finalFrame == Component::finalFrame) {
                         //executes a point and click attack
                         auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
                         auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
@@ -186,14 +189,14 @@ namespace Combat_Control {
                 zone.remove<Component::Struck>(entity);
             }
             if (sheetData.flareSpritesheet) {
-                if (sheetData.finalFrame) {
+                if (sheetData.finalFrame  == Component::finalFrame) {
                         ///should not return to idle, should go into an "idle-combat" mode
 //                    action.state = Component::idle;
                     zone.remove<Component::Struck>(entity);
                 }
             }
             else if (sheetData.sheetData) {
-                if (sheetData.finalFrame) {
+                if (sheetData.finalFrame == Component::finalFrame) {
                         ///should not return to idle, should go into an "idle-combat" mode
 //                    action.state = Component::idle;
                     zone.remove<Component::Struck>(entity);

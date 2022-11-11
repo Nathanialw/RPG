@@ -200,8 +200,8 @@
     ],
     "project": "",
     "recentFiles": [
-        "sprite_sheets/units/white_woman_00.tsx",
         "sprite_sheets/units/human_female.tsx",
+        "sprite_sheets/units/white_woman_00.tsx",
         "untitled3.tmx",
         "sprite_sheets/units/demon_footman_00.tsx",
         "sprite_sheets/units/armoured_skeleton_00.tsx",

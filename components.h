@@ -285,7 +285,14 @@ namespace Component {
         Action_State state;
     };
 
-        ///component for the unit
+    enum Frame {
+        firstFrame,
+        normalFrame,
+        finalFrame
+    };
+
+
+    ///component for the unit
     struct Sprite_Sheet_Info {
         std::string type = "default";
 
@@ -310,7 +317,7 @@ namespace Component {
         int frameIndex = 0;
         int reversing = 0;
         int currentFrame = 0;
-        bool finalFrame = 0;
+        Frame finalFrame = normalFrame;
     };
 
     struct t_Stored_Frame_Data {
@@ -605,5 +612,4 @@ namespace Component_Camera { //unused yet
 		SDL_FRect screen;
 	};
 }
-
 

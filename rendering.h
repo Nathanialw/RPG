@@ -89,15 +89,18 @@ namespace Rendering {
 
     void Frame_Increment(Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
         sheetData.frameTime += Timer::timeStep;
+        if (sheetData.finalFrame == Component::finalFrame) {
+            sheetData.finalFrame = Component::firstFrame;
+        }
         if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
-            if (sheetData.finalFrame) {
+            if (sheetData.finalFrame == Component::firstFrame) {
                 if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack) {
                     action.state = Component::idle;
                 }
                 else if (action.state == Component::struck || action.state == Component::attack) {
                     action.state = Component::idle;
                 }
-                sheetData.finalFrame = false;
+                sheetData.finalFrame = Component::normalFrame;
             }
                 ///reset frame count if over
             sheetData.frameTime = 0;
@@ -127,7 +130,7 @@ namespace Rendering {
             }
             else if (currentFrame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
                 if (action.state != Component::walk && action.state != Component::run) {
-                    sheetData.finalFrame = true;
+                    sheetData.finalFrame = Component::finalFrame;
                 }
                 sheetData.currentFrame = 0;
 
@@ -170,24 +173,28 @@ namespace Rendering {
         return false;
     }
 
+
     void Update_Frame(Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
 
         sheetData.frameTime += Timer::timeStep;
+        if (sheetData.finalFrame == Component::finalFrame) {
+            sheetData.finalFrame = Component::firstFrame;
+        }
 
         if (sheetData.frameTime >= sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
             sheetData.frameTime = 0;
 
             if (action.state != Component::isStatic) {
                 /// reset at the start so it had a chance loop through the logic once to trigger end of state actions
-                if (sheetData.finalFrame) {
+                if (sheetData.finalFrame == Component::firstFrame) {
 
-                    if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack) {
+                    if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::dead) {
                         action.state = Component::idle;
                     } else if (action.state == Component::struck || action.state == Component::attack) {
                         action.state = Component::idle;
                     }
 
-                    sheetData.finalFrame = false;
+                    sheetData.finalFrame = Component::normalFrame;
                 }
 
                 if (Death_Sequence(action, sheetData.currentFrame, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
@@ -214,7 +221,7 @@ namespace Rendering {
                 } else if (sheetData.currentFrame >= sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
 
                     if (action.state != Component::walk && action.state != Component::run) {
-                        sheetData.finalFrame = true;
+                        sheetData.finalFrame = Component::finalFrame;
                     }
 
                     sheetData.currentFrame = 0;
@@ -226,16 +233,16 @@ namespace Rendering {
     SDL_FRect Position_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
         clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].clip;
         renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
-        renderRect.x = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].x_offset - offset.x + position.x - camera.screen.x + 20.0;
-        renderRect.y = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].y_offset - offset.y + position.y - camera.screen.y + 20.0;
+        renderRect.x = ((sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
+        renderRect.y = ((sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
         return renderRect;
     }
 
     SDL_FRect Position_Weapon_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
         clipRect = sheetData.sheetDataWeapon->at(sheetData.weapon_name).frameList[sheetData.weaponFrameIndex ].clip;
         renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
-        renderRect.x = sheetData.sheetDataWeapon->at(sheetData.weapon_name).frameList[sheetData.weaponFrameIndex ].x_offset - offset.x + position.x - camera.screen.x + 20.0;
-        renderRect.y = sheetData.sheetDataWeapon->at(sheetData.weapon_name).frameList[sheetData.weaponFrameIndex ].y_offset - offset.y + position.y - camera.screen.y + 20.0;
+        renderRect.x = ((sheetData.sheetDataWeapon->at(sheetData.weapon_name).frameList[sheetData.weaponFrameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
+        renderRect.y = ((sheetData.sheetDataWeapon->at(sheetData.weapon_name).frameList[sheetData.weaponFrameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
         return renderRect;
     }
 
@@ -612,7 +619,7 @@ namespace Rendering {
 			Dynamic_Quad_Tree::Emplace_Objects_In_Quad_Tree(World::zone);
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
 			Dynamic_Quad_Tree::Remove_From_Tree(zone);
-			//Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
+			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
 			Items::Show_Ground_Items(zone, camera);
             Items::Name_On_Mouseover(zone, camera);
 			UI::Render_UI(zone, Graphics::renderer, camera);

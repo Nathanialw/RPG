@@ -131,14 +131,14 @@ namespace Maps {
            sprite.sheet_name = name;
            sprite.type = "RPG_Tools";
            auto offset = Texture_Packer::Get_Sprite_Offets_From_db(sheetname);
-           zone.emplace<Component::Sprite_Offset>(entity, offset.x * data.scale, offset.y * data.scale);
+           zone.emplace<Component::Sprite_Offset>(entity, offset.x, offset.y);
         }
         else {
             auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
             sprite.flareSpritesheet = flareSheetData;
             sprite.sheet_name = name;
             sprite.type = sheetDataFlare.sheet_type;
-            zone.emplace<Component::Sprite_Offset>(entity, sheetDataFlare.x_offset * data.scale, sheetDataFlare.y_offset * data.scale);
+            zone.emplace<Component::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
         }
 
         //dynamic entities
