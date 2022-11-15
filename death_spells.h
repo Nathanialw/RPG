@@ -3,6 +3,8 @@
 #include "components.h"
 #include "SQLite_unit_data.h"
 #include "collision.h"
+#include "texture_packer.h"
+#include "map.h"
 
 namespace Death_Spells {
 
@@ -11,34 +13,33 @@ namespace Death_Spells {
 	*/
 	void Summon_Skeleton(entt::registry &zone, float x, float y, std::string name) {
 
-		int unitID = 1;
-		const char* filepath = "sprites/units/skeleton/skeleton_mage_00.png";
-
-		Graphics::Create_Game_Object(unitID, filepath);
-
 		int i = rand() % 10 + 1;
 		int j = rand() % 10 + 1;
 		int k = rand() % 10 + 1;
 		int l = rand() % 10 + 1;
+
 		Entity_Loader::Data data = Entity_Loader::parse_data(name);
 
 		auto skeleton0 = zone.create();
-//		zone.emplace<Component::Sprite_Sheet_Info>(skeleton0, Graphics::unitTextures[unitID]); /// need to load the texture nly once and pass the pointer intothis function
-//		zone.get<Component::Sprite_Sheet_Info>(skeleton0).sheet = { //populate the vector
-//			{ NULL },
-//			{ {0   , 0, 128, 128}, 0,    512,  1, 0, 75, 0},//idle array[numframes] = { 2ms, 4ms, 2ms}
-//			{ {512,  0, 128, 128}, 512,  1024, 0, 0, 75, 0},//walk
-//			{ {1536, 0, 128, 128}, 1536, 512,  0, 0, 75, 0},//atack
-//			{ {2048, 0, 128, 128}, 2048, 512,  0, 0, 75, 0},//cast
-//			{ {2560, 0, 128, 128}, 2560, 256,  0, 0, 75, 0},//block
-//			{ {2816, 0, 128, 128}, 2816, 768,  0, 0, 75, 0}, //reverse to summon
-//			{ {3584, 0, 128, 128}, 3584, 512,  1, 0, 75, 0},//ranged
-//		};
-		zone.emplace<Component::Sprite_Offset>(skeleton0, 60.0f, 95.0f );
-		auto &scale = zone.emplace<Component::Scale>(skeleton0, 1.0f);
+
+        int unit_ID = Maps::Check_For_Template_ID(name);
+
+        SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
+        std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
+        std::unordered_map<std::string, Component::Sheet_Data_Flare>* flareSheetData = NULL;
+
+        SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
+        flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
+
+        auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(skeleton0);
+        sprite.flareSpritesheet = flareSheetData;
+        sprite.sheet_name = name;
+        sprite.type = sheetDataFlare.sheet_type;
+        zone.emplace<Component::Sprite_Offset>(skeleton0, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+
+        auto &scale = zone.emplace<Component::Scale>(skeleton0, 1.0f);
 
 		zone.emplace<Component::Action>(skeleton0, Component::idle);
-//		zone.get<Component::Action>(skeleton0).frameCount = {{0, 0}, {4, 0}, {7, 0}, {4, 0}, {4, 0}, {2, 0}, {5, 0}, {4, 0} };
 
 		auto& position = zone.emplace<Component::Position>(skeleton0, x+i-j-k+l, y+j-i-k+l);
 		zone.emplace<Component::Radius>(skeleton0, data.radius);

@@ -59,11 +59,50 @@ namespace Character_Stats {
                             sheetData.weapon_name = weaponSheet.weapon_name;
                         }
                     }
+                    if (item.first == Item_Component::Item_Type::legs) {
+                        auto &legsSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
+                        if (legsSheet.sheetDataLegs) {
+                            sheetData.sheetDataLegs = legsSheet.sheetDataLegs;
+                            sheetData.legs_name = legsSheet.legs_name;
+                        }
+                    }
+                    if (item.first == Item_Component::Item_Type::chest) {
+                        auto &chestSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
+                        if (chestSheet.sheetDataChestpiece) {
+                            sheetData.sheetDataChestpiece = chestSheet.sheetDataChestpiece;
+                            sheetData.chest_name = chestSheet.chest_name;
+                        }
+                    }
+                    if (item.first == Item_Component::Item_Type::helm) {
+                        auto &helmSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
+                        if (helmSheet.sheetDataHelm) {
+                            sheetData.sheetDataHelm = helmSheet.sheetDataHelm;
+                            sheetData.helm_name = helmSheet.helm_name;
+                        }
+                    }
 				}
                 if (item.first == Item_Component::Item_Type::weapon) {
                     if (item.second == UI::Equipment_UI::emptyEquipSlot) {
                         sheetData.sheetDataWeapon = NULL;
                         sheetData.weapon_name = "unarmed";
+                    }
+                }
+                if (item.first == Item_Component::Item_Type::legs) {
+                    if (item.second == UI::Equipment_UI::emptyEquipSlot) {
+                        sheetData.sheetDataLegs = NULL;
+                        sheetData.legs_name = "unarmed";
+                    }
+                }
+                if (item.first == Item_Component::Item_Type::chest) {
+                    if (item.second == UI::Equipment_UI::emptyEquipSlot) {
+                        sheetData.sheetDataChestpiece = NULL;
+                        sheetData.chest_name = "unarmed";
+                    }
+                }
+                if (item.first == Item_Component::Item_Type::helm) {
+                    if (item.second == UI::Equipment_UI::emptyEquipSlot) {
+                        sheetData.sheetDataHelm = NULL;
+                        sheetData.helm_name = "unarmed";
                     }
                 }
             }

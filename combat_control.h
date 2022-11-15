@@ -191,14 +191,12 @@ namespace Combat_Control {
             if (sheetData.flareSpritesheet) {
                 if (sheetData.finalFrame  == Component::finalFrame) {
                         ///should not return to idle, should go into an "idle-combat" mode
-//                    action.state = Component::idle;
                     zone.remove<Component::Struck>(entity);
                 }
             }
             else if (sheetData.sheetData) {
                 if (sheetData.finalFrame == Component::finalFrame) {
                         ///should not return to idle, should go into an "idle-combat" mode
-//                    action.state = Component::idle;
                     zone.remove<Component::Struck>(entity);
                 }
             }

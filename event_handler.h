@@ -68,8 +68,8 @@ namespace Event_Handler {
 				if (act.state != Component::attack) {
 					switch (event.key.keysym.sym)
 					{
-					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "'fireball'"); break;
-					case SDLK_2: Death_Spells::Summon_Skeleton(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "'skeleton'");  break;
+					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
+					case SDLK_2: Death_Spells::Summon_Skeleton(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "skeleton");  break;
 					case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
 					case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;
 					case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
@@ -112,9 +112,9 @@ namespace Event_Handler {
                 else {
                     UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
                 }
-				//if (Mouse::bRect_inside_Cursor(UI::Character_UI) == false) {
-				//	User_Mouse_Input::Selection_Box(zone); //if units are currently selected
-				//}
+				if (Mouse::bRect_inside_Cursor(UI::Character_UI) == false) {
+					User_Mouse_Input::Selection_Box(zone); //if units are currently selected
+				}
 			}
 
 			else if (event.button.button == SDL_BUTTON_RIGHT) {
@@ -142,7 +142,7 @@ namespace Event_Handler {
 
 		if (event.key.type == SDL_MOUSEBUTTONUP) {
 			if (event.button.button == SDL_BUTTON_LEFT) {
-			//	User_Mouse_Input::Select_Units(World::zone);
+				User_Mouse_Input::Select_Units(World::zone);
 			}
 			if (event.button.button == SDL_BUTTON_RIGHT) {
 				Mouse::bRight_Mouse_Pressed = false;

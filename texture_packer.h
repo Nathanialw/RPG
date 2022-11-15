@@ -100,6 +100,9 @@ namespace Texture_Packer {
        } else if (checkAction == "Dead2") {
            action = Component::Action_State::dead;
            actionFrameData[action].frameSpeed = i;
+       } else if (checkAction == "Casting") {
+           action = Component::Action_State::cast;
+           actionFrameData[action].frameSpeed = i;
        } else {
            return;
        }

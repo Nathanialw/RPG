@@ -291,7 +291,6 @@ namespace Component {
         finalFrame
     };
 
-
     ///component for the unit
     struct Sprite_Sheet_Info {
         std::string type = "default";
@@ -299,16 +298,41 @@ namespace Component {
         std::unordered_map<std::string, Sheet_Data_Flare>* flareSpritesheet = NULL;
         std::unordered_map<std::string, Sheet_Data>* sheetData = NULL;
         std::string sheet_name = "default";
+
         std::unordered_map<std::string, Sheet_Data>* sheetDataWeapon = NULL;
         std::string weapon_name = "unarmed";
         int weaponFrameIndex = 0;
+
+        std::unordered_map<std::string, Sheet_Data>* sheetDataChestpiece = NULL;
+        std::string chest_name = "unarmed";
         int chestpieceFrameIndex = 0;
+
+        std::unordered_map<std::string, Sheet_Data>* sheetDataLegs = NULL;
+        std::string legs_name = "unarmed";
         int legplateFrameIndex = 0;
+
+        std::unordered_map<std::string, Sheet_Data>* sheetDataHelm = NULL;
+        std::string helm_name = "unarmed";
         int helmFrameIndex = 0;
+
+        std::unordered_map<std::string, Sheet_Data>* sheetDataHair = NULL;
+        std::string hair_name = "unarmed";
         int hairFrameIndex = 0;
+
+        std::unordered_map<std::string, Sheet_Data>* sheetDataBack = NULL;
+        std::string back_name = "unarmed";
         int backFrameIndex = 0;
+
+        std::unordered_map<std::string, Sheet_Data>* sheetDataBeard = NULL;
+        std::string beard_name = "unarmed";
         int beardFrameIndex = 0;
+
+        std::unordered_map<std::string, Sheet_Data>* sheetDataBodysuit = NULL;
+        std::string bodysuit_name = "unarmed";
         int bodysuit = 0;
+
+        std::unordered_map<std::string, Sheet_Data>* sheetDataOffhand = NULL;
+        std::string offhand_name = "unarmed";
         int offhand = 0;
             ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
 //        std::string* sheetData;

@@ -94,10 +94,10 @@ namespace Rendering {
         }
         if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
             if (sheetData.finalFrame == Component::firstFrame) {
-                if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack) {
+                if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::cast) {
                     action.state = Component::idle;
                 }
-                else if (action.state == Component::struck || action.state == Component::attack) {
+                else if (action.state == Component::struck || action.state == Component::attack || action.state == Component::cast) {
                     action.state = Component::idle;
                 }
                 sheetData.finalFrame = Component::normalFrame;
@@ -108,6 +108,15 @@ namespace Rendering {
             sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
             if (sheetData.sheetDataWeapon) {
                 sheetData.weaponFrameIndex = sheetData.sheetDataWeapon->at(sheetData.weapon_name).actionFrameData[action.state].startFrame + (sheetData.sheetDataWeapon->at(sheetData.weapon_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
+            }
+            if (sheetData.sheetDataHelm) {
+                sheetData.helmFrameIndex = sheetData.sheetDataHelm->at(sheetData.helm_name).actionFrameData[action.state].startFrame + (sheetData.sheetDataHelm->at(sheetData.helm_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
+            }
+            if (sheetData.sheetDataChestpiece) {
+                sheetData.chestpieceFrameIndex = sheetData.sheetDataChestpiece->at(sheetData.chest_name).actionFrameData[action.state].startFrame + (sheetData.sheetDataChestpiece->at(sheetData.chest_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
+            }
+            if (sheetData.sheetDataLegs) {
+                sheetData.legplateFrameIndex = sheetData.sheetDataLegs->at(sheetData.legs_name).actionFrameData[action.state].startFrame + (sheetData.sheetDataLegs->at(sheetData.legs_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
             }
                 ///calculate reversing
             if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
@@ -246,6 +255,30 @@ namespace Rendering {
         return renderRect;
     }
 
+    SDL_FRect Position_Helm_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
+        clipRect = sheetData.sheetDataHelm->at(sheetData.helm_name).frameList[sheetData.helmFrameIndex ].clip;
+        renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
+        renderRect.x = ((sheetData.sheetDataHelm->at(sheetData.helm_name).frameList[sheetData.helmFrameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
+        renderRect.y = ((sheetData.sheetDataHelm->at(sheetData.helm_name).frameList[sheetData.helmFrameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
+        return renderRect;
+    }
+
+    SDL_FRect Position_Chest_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
+        clipRect = sheetData.sheetDataChestpiece->at(sheetData.chest_name).frameList[sheetData.chestpieceFrameIndex ].clip;
+        renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
+        renderRect.x = ((sheetData.sheetDataChestpiece->at(sheetData.chest_name).frameList[sheetData.chestpieceFrameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
+        renderRect.y = ((sheetData.sheetDataChestpiece->at(sheetData.chest_name).frameList[sheetData.chestpieceFrameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
+        return renderRect;
+    }
+
+    SDL_FRect Position_Legs_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
+        clipRect = sheetData.sheetDataLegs->at(sheetData.legs_name).frameList[sheetData.legplateFrameIndex ].clip;
+        renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
+        renderRect.x = ((sheetData.sheetDataLegs->at(sheetData.legs_name).frameList[sheetData.legplateFrameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
+        renderRect.y = ((sheetData.sheetDataLegs->at(sheetData.legs_name).frameList[sheetData.legplateFrameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
+        return renderRect;
+    }
+
     void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
 
         auto view1 = zone.view<Component::Renderable, Component::Position, Component::Sprite_Sheet_Info, Component::Action, Component::Direction, Component::Sprite_Offset, Component::Scale, Component::Entity_Type>();
@@ -284,12 +317,67 @@ namespace Rendering {
                 Graphics::Render_FRect(texture, &clipRect, &renderRect);
 
 //                Frame_Increment(sheetData, action, direction);
+                if (sheetData.sheetDataLegs) {
+                    renderRect = Position_Legs_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+                    texture = sheetData.sheetDataLegs->at(sheetData.legs_name).texture;
+                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
+                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
+                }
+
+                if (sheetData.sheetDataChestpiece) {
+                    renderRect = Position_Chest_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+                    texture = sheetData.sheetDataChestpiece->at(sheetData.chest_name).texture;
+                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
+                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
+                }
+
+                if (sheetData.sheetDataHelm) {
+                    renderRect = Position_Helm_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+                    texture = sheetData.sheetDataHelm->at(sheetData.helm_name).texture;
+                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
+                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
+                }
+
                 if (sheetData.sheetDataWeapon) {
                     renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
                     texture = sheetData.sheetDataWeapon->at(sheetData.weapon_name).texture;
                     SDL_SetTextureAlphaMod(texture, renderable.alpha);
                     Graphics::Render_FRect(texture, &clipRect, &renderRect);
                 }
+//                if (sheetData.sheetDataHair) {
+//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+//                    texture = sheetData.sheetDataHair->at(sheetData.hair_name).texture;
+//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
+//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
+//                }
+//
+//                if (sheetData.sheetDataBack) {
+//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+//                    texture = sheetData.sheetDataBack->at(sheetData.back_name).texture;
+//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
+//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
+//                }
+//
+//                if (sheetData.sheetDataBeard) {
+//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+//                    texture = sheetData.sheetDataBeard->at(sheetData.beard_name).texture;
+//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
+//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
+//                }
+//
+//                if (sheetData.sheetDataBodysuit) {
+//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+//                    texture = sheetData.sheetDataBodysuit->at(sheetData.bodysuit_name).texture;
+//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
+//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
+//                }
+//
+//                if (sheetData.sheetDataOffhand) {
+//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+//                    texture = sheetData.sheetDataOffhand->at(sheetData.offhand_name).texture;
+//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
+//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
+//                }
             }
 
             else {
@@ -619,7 +707,7 @@ namespace Rendering {
 			Dynamic_Quad_Tree::Emplace_Objects_In_Quad_Tree(World::zone);
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
 			Dynamic_Quad_Tree::Remove_From_Tree(zone);
-			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
+//			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
 			Items::Show_Ground_Items(zone, camera);
             Items::Name_On_Mouseover(zone, camera);
 			UI::Render_UI(zone, Graphics::renderer, camera);

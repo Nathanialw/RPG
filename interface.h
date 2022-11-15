@@ -112,16 +112,15 @@ namespace Interface {
 		for (auto focus : view1) {
 			auto& camera = view1.get<Component::Camera>(focus);
 			for (auto entity : view) {
-				auto& x = view.get<Component::Position>(entity).x;
-				auto& y = view.get<Component::Position>(entity).y;
-				auto& d = view.get<Component::Radius>(entity).fRadius;
+				auto& position = view.get<Component::Position>(entity);
+				auto& radius = view.get<Component::Radius>(entity);
 				SDL_SetRenderDrawColor(Graphics::renderer, 55, 255, 55, 255);
-				SDL_FRect p = { x - d, y - d, d * 2, d * 2 };
+				SDL_FRect p = { position.x - radius.fRadius, position.y - radius.fRadius, radius.fRadius * 2, radius.fRadius * 2 };
 				SDL_FRect s = Camera_Control::Convert_Rect_To_Screen_Coods(World::zone, p, camera);
 
 
 				SDL_RenderDrawRectF(Graphics::renderer, &s);
-				//Debug_System::Entity_Data_Debug(x, y, x, y);
+				Debug_System::Entity_Data_Debug(position.x, position.y, position.x, position.y);
 			}
 		}
 	}
@@ -257,9 +256,9 @@ namespace Interface {
 		//Display_Unit_Formations(camera);
 		Debug_System::Framerate(camera);
 		//Unit_Arrive_UI();
-		//Display_Selected();
+		Display_Selected();
 		Display_Mouse();
-		//Display_Selection_Box();
+		Display_Selection_Box();
 		//Show_Attacks();
 
 	}

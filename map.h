@@ -10,6 +10,7 @@
 #include "SQLite_unit_data.h"
 #include "collision.h"
 #include "sprite_sheets.h"
+#include "world.h"
 
 //cell 100x100 pixels (change pixels to a meters??)
 //map 100 cells x 100 cells

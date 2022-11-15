@@ -45,29 +45,37 @@ namespace Spells {
 		float scale = 1.0f;
 		Entity_Loader::Data data = Entity_Loader::parse_data(spellname);
 		DataTypes::f2d spelldir = Spell_Direction(pos, direction, scale);
-		//rendering data
-//		World::zone.emplace<Component::Sprite_Sheet_Info>(entity, Graphics::fireball_0); /// need to load the texture /only /once and pass the pointer into this function
-//		World::zone.get<Component::Sprite_Sheet_Info>(entity).sheet = { //populate the vector
-//			{ NULL },
-//			{ {0, 0, 64, 64 }, 0, 512, 0, 0, 16 }, //idle
-//			{ {0, 0, 64, 64 }, 0, 512, 0, 0, 16 } //walk
-//		};
-		World::zone.emplace<Component::Sprite_Offset>(entity, 32.0f * scale, 32.0f * scale);
+
+        std::string name = (std::string)spellname;
+        int unit_ID = Maps::Check_For_Template_ID(name);
+
+        SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
+        std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
+        std::unordered_map<std::string, Component::Sheet_Data_Flare>* flareSheetData = NULL;
+
+        SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
+        flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
+
+        auto &sprite = World::zone.emplace<Component::Sprite_Sheet_Info>(entity);
+        sprite.flareSpritesheet = flareSheetData;
+        sprite.sheet_name = name;
+        sprite.type = sheetDataFlare.sheet_type;
+        World::zone.emplace<Component::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+
 		World::zone.emplace<Component::Scale>(entity, scale);
 
 		World::zone.emplace<Component::Action>(entity, Component::walk);
-//		World::zone.get<Component::Action>(entity).frameCount = {{0, 0}, {0, 0}, {8, 0} };
-		//positon data
+		    ///positon data
 		World::zone.emplace<Component::Position>(entity, spelldir.x, spelldir.y);
-		//spell data
+		    ///spell data
 		World::zone.emplace<Component::Radius>(entity, data.radius * scale);
 		World::zone.emplace<Component::Velocity>(entity, 0.f, 0.0f, 0.0f, 0.0f, data.speed);
 		World::zone.emplace<Component::Mass>(entity, data.mass * scale);
 		World::zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::spell);
 		World::zone.emplace<Component::Damage>(entity, 1, 10);
-		//Scenes::scene.emplace<Spell_Range>(spell, 1000.0f);
+        //Scenes::scene.emplace<Spell_Range>(spell, 1000.0f);
 		World::zone.emplace<Component::Caster_ID>(entity, caster_ID);
-		//default data
+		    ///default data
 		World::zone.emplace<Component::Spell>(entity);
 		World::zone.emplace<Component::Casted>(entity);
 		World::zone.emplace<Component::Renderable>(entity);
@@ -78,7 +86,6 @@ namespace Spells {
 		Collision::Create_Dynamic_Body(World::zone, entity, spelldir.x, spelldir.y, data.radius, data.mass, yes);
 		Spell_Linear_Target(entity, targetX, targetY, spelldir.x, spelldir.y);
 		//Spell_Move_Target(spell, targetX, targetY);
-		//std::cout << "casted " << scene.get<handle>(spell).sName << std::endl;
 	}
 
 	void create_fireball(entt::entity & caster_ID, float& x, float& y, Component::Direction& direction, const char* spellname, float& targetX, float& targetY) {
@@ -88,23 +95,27 @@ namespace Spells {
 	}
 
 	void cast_fireball() {
-		auto view = World::zone.view<Component::Direction, Component::Action, Component::Position, Component::Cast, Component::Spell_Name, Component::Velocity>();
+		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Direction, Component::Action, Component::Position, Component::Cast, Component::Spell_Name, Component::Velocity>();
 		for (auto entity : view) {
-			auto& act = view.get<Component::Action>(entity);
-			act.state = Component::cast;
-//			act.frameCount[act.state].currentFrame = 0;
+			auto& action = view.get<Component::Action>(entity);
 			auto& target = view.get<Component::Cast>(entity);
 			auto& direction = view.get<Component::Direction>(entity);
-			auto& x = view.get<Component::Position>(entity).x;
-			auto& y = view.get<Component::Position>(entity).y;
+			auto& position = view.get<Component::Position>(entity);
 			auto& angle = view.get<Component::Velocity>(entity).angle;
 			auto& name = view.get<Component::Spell_Name>(entity).spell;
-			//look at target
-			direction = Movement::Look_At_Target(x, y, target.targetX, target.targetY, angle);
-			//cast Fireball
-			create_fireball(entity, x, y, direction, name, target.targetX, target.targetY);		
-			//set into casting mode
-			World::zone.emplace_or_replace<Component::Casting>(entity);
+			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+
+            action.state = Component::cast;
+            sheetData.finalFrame = Component::normalFrame;
+            sheetData.frameTime = 0;
+			sheetData.currentFrame = 0;
+			World::zone.remove<Component::Moving>(entity);
+
+			    ///look at target
+			direction = Movement::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
+			    ///cast Fireball
+			create_fireball(entity, position.x, position.y, direction, name, target.targetX, target.targetY);
+			    ///set into casting mode
 			World::zone.remove<Component::Cast>(entity);
 		}
 	}
@@ -129,14 +140,12 @@ namespace Spells {
 			auto& radius = view.get<Component::Radius>(entity).fRadius;
 			auto& body = view.get<Component::Body>(entity);
 			auto& inTree = view.get<Component::In_Object_Tree>(entity).inTree;
-			//create explosion
+			    ///create explosion
 			Create_Explosion(position.x, position.y);
-			//destroy box2d body
+			    ///destroy box2d body
 			Collision::world->DestroyBody(body.body);
 			World::zone.remove<Component::Body>(entity);
-			//Collision::world->DestroyBody(body.rigidBody);
-			// 
-			//set to remove from quad tree on update
+			    ///set to remove from quad tree on update
 			SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
 			World::zone.emplace<Component::Remove_From_Object_Tree>(entity, rect); //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
 			World::zone.emplace<Component::Destroyed>(entity, rect); //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
@@ -151,13 +160,13 @@ namespace Spells {
 				auto& radius = view.get<Component::Radius>(entity).fRadius;
 				auto& body = view.get<Component::Body>(entity);
 				auto& inTree = view.get<Component::In_Object_Tree>(entity).inTree;
-				//create explosion
+				    ///create explosion
 				Create_Explosion(position.x, position.y);
-				//destroy box2d body
+				    ///destroy box2d body
 				Collision::world->DestroyBody(body.body);
 				World::zone.remove<Component::Body>(entity);
 				SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
-				//set to remove from quad tree on update
+				    ///set to remove from quad tree on update
 				World::zone.emplace<Component::Remove_From_Object_Tree>(entity, rect); //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
 				World::zone.emplace<Component::Destroyed>(entity, rect); //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
 			}
@@ -165,22 +174,19 @@ namespace Spells {
 	}
 	
 	void Casting_Updater() {
-		auto view = World::zone.view<Component::Casting, Component::Action>();
+		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Casting, Component::Action>();
 		for (auto entity : view) {
-			auto& act = view.get<Component::Action>(entity);
-			//std::cout << act.frameCount[act.state].currentFrame << "/" << act.frameCount[act.state].NumFrames <<std::endl;
-			if (act.state != Component::dead) {
-//				if (act.frameCount[act.state].currentFrame >= act.frameCount[act.state].NumFrames - 1) {
-//					act.state = Component::idle;
-//					World::zone.remove<Component::Casting>(entity);
-//				}
-			}
+			auto& action = view.get<Component::Action>(entity);
+			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+            if (sheetData.finalFrame == Component::finalFrame) {
+                World::zone.remove<Component::Casting>(entity);
+            }
 		}
 	}
 
     void Spell_Hit (entt::entity spell_ID, entt::entity struck_ID) {
         Component::Damage damageRange = World::zone.get<Component::Damage>(spell_ID);
-        //std::cout << damageRange.minDamage << ", " << damageRange.maxDamage << std::endl;
+
         int damage = Combat_Control::Calculate_Damage(damageRange);
         entt::entity player;
         auto view = World::zone.view<Component::Input>();
@@ -190,7 +196,6 @@ namespace Spells {
         if (World::zone.get<Component::Caster>(spell_ID).caster == player) {
             Damage_Text::Add_To_Scrolling_Damage(World::zone, spell_ID, struck_ID, damage);
         }
-        //std::cout << damage << std::endl;
         auto& struck = World::zone.get_or_emplace<Component::Struck>(struck_ID);
         struck.struck += damage;
     }
@@ -205,10 +210,9 @@ namespace Spells {
                 auto &caster_ID = World::zone.get<Component::Caster>(entity).caster;
 
                 SDL_FRect spellRect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
-                Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_QuadTree_Collision(World::zone,
-                                                                                                            spellRect);
+                Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_QuadTree_Collision(World::zone, spellRect);
 
-                //prevent spell from hitting itself or it's caster or a ground item
+                    ///prevent spell from hitting itself or it's caster or a ground item
                 if (targetData.b == true && caster_ID != targetData.entity_ID && targetData.entity_ID != entity && World::zone.any_of<Ground_Item>(targetData.entity_ID) == false) {
                     alive = false;
                     Spell_Hit(entity, targetData.entity_ID);
@@ -222,9 +226,9 @@ namespace Spells {
 	void Update_Spells() {
         Destroy_NonMoving_Spells();
 		Clear_Collided_Spells();
-		Casting_Updater();
         Check_Spell_Collide();
 		add_spells_to_scene();
+		Casting_Updater();
 	}
 }
 

@@ -156,6 +156,24 @@ namespace Items {
 		return weaponName;
 	}
 
+    void armor_texture(Item_Type &itemType, Component::Sprite_Sheet_Info &sheetData, std::unordered_map<std::string, Component::Sheet_Data>* equippedSheetData, int &row, int &column, std::string &itemName) {
+
+        switch (itemType) {
+            case Item_Component::Item_Type::legs:
+                sheetData.sheetDataLegs = equippedSheetData;
+                sheetData.legs_name = itemName;
+                break;
+            case Item_Component::Item_Type::chest:
+                sheetData.sheetDataChestpiece = equippedSheetData;
+                sheetData.chest_name = itemName;
+                break;
+            case Item_Component::Item_Type::helm:
+                sheetData.sheetDataHelm = equippedSheetData;
+                sheetData.helm_name = itemName;
+                break;
+        }
+    }
+
 	std::string Create_Armor(entt::entity& item, Rarity& rarity) {
 		Item_Type itemType = Generate_Item_Type();
 		Armor_Type armorType = Generate_Armor_Type();
@@ -174,6 +192,13 @@ namespace Items {
 		int size = 64;
 		SDL_Rect sprite = { column * size, row * size, size, size };
 
+        auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
+
+        if (itemType == Item_Component::Item_Type::legs || itemType == Item_Component::Item_Type::chest || itemType == Item_Component::Item_Type::helm) {
+            std::unordered_map<std::string, Component::Sheet_Data>* equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(itemName);
+            armor_texture(itemType, sheetData, equippedSheetData, row, column, itemName);
+        }
+
         if (SQLite_Spritesheets::Flare_Spritesheets["armor"].texture == NULL) {
             SQLite_Spritesheets::Flare_Spritesheets["armor"].texture = Graphics::armorSpriteSheet;
             SQLite_Spritesheets::Flare_Spritesheets["armor"].sheetWidth = 256;
@@ -182,18 +207,11 @@ namespace Items {
             SQLite_Spritesheets::Flare_Spritesheets["armor"].actionFrameData[Component::isStatic] = {0, 0, 0, 100};
         }
 
-        auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
         sheetData.currentFrame = row;
         sheetData.frameIndex = column;
         sheetData.type = "item";
         sheetData.sheet_name = "armor";
         sheetData.flareSpritesheet = &SQLite_Spritesheets::Flare_Spritesheets;
-            /// need to load the texture only once and pass the pointer into this function
-        // index, index * (index / width)
-
-//        Component::Frame_Data_Packer isStatic;
-//        std::unordered_map<std::string, SQLite_Spritesheets::Sheet_Data_Flare>* flareSpritesheet = NULL;
-//		World::zone.emplace<Component::Sprite_Sheet_Info>(item, flareSpritesheet);
 
 		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
 		icon.clipSprite = sprite;
@@ -222,7 +240,6 @@ namespace Items {
 			(rectSide * scale) * scale,
 			(rectSide * scale) * scale,0.0f,0.0f,0.0f,0.0f);
 	}
-
 
 	statValue Get_Random_Stat() {
 
