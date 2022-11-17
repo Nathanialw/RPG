@@ -54,12 +54,12 @@ namespace Component {
 	};
 
 	struct Health {
-		int  currentHealth;
-		int maxHealth;
+		int currentHealth = 0;
+		int maxHealth = 0;
 	};
 
 	struct Alive {
-		bool bIsAlive;
+		bool bIsAlive = true;
 	};
 
 	//Position
@@ -69,7 +69,7 @@ namespace Component {
 	};
 
 	struct Radius {
-		float fRadius;
+		float fRadius = 0.0f;
 	};
 
 	struct Velocity {
@@ -394,7 +394,7 @@ namespace Component {
 	};
 
 	struct Mass {
-		float fKilos;
+		float fKilos = 0.0f;
 	};
 
 	struct Commanded_Move {

@@ -24,8 +24,8 @@ namespace Interface {
 				x.x *= 1.1f;
 				x.y *= 1.1f;
                 if (x.y > 5.0f) {
-                    x.x = 5.0f;
-                    x.y = 5.0f;
+//                    x.x = 5.0f;
+//                    x.y = 5.0f;
                 }
 				SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
 			}
@@ -33,8 +33,8 @@ namespace Interface {
 				x.x *= 0.9f;
 				x.y *= 0.9f;
                 if (x.y < 2.0f) {
-                    x.x = 2.0f;
-                    x.y = 2.0f;
+//                    x.x = 2.0f;
+//                    x.y = 2.0f;
                 }
 				SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
 			}
@@ -251,7 +251,7 @@ namespace Interface {
 
 	void Run_Interface(entt::registry &zone, Component::Camera &camera) {
 
-		Show_Grid(Map::terrain);
+//		Show_Grid(Map::terrain);
 		//Display_Military_Groups();
 		//Display_Unit_Formations(camera);
 		Debug_System::Framerate(camera);

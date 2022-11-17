@@ -65,10 +65,65 @@ namespace Maps {
         std::cout << "failed to assign template key for: " << name << std::endl;
     }
 
-    void Create_Entity(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, bool is_random, std::string &filepath) {
+    bool Polygon_Building(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs) {
+            /// if it is a building
+        if (entity_class == "polygon_building" || entity_class == "rect_building" || entity_class == "round_building") {
+            auto entity = zone.create();
+            int unit_ID = Check_For_Template_ID(name);
+            Graphics::Create_Game_Object(unit_ID, filepath.c_str());
+
+            SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
+            std::string layout = Entity_Loader::Get_Building_Sprite_layout(name);
+            std::unordered_map<std::string, Component::Sheet_Data_Flare>* flareSheetData = NULL;
+            std::unordered_map<std::string, Component::Sheet_Data> *packerframeData = NULL;
+
+            ///get sheet data for new pointer to map
+            SQLite_Spritesheets::Get_Flare_Building_From_DB(name, layout, sheetDataFlare);
+            flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
+
+            //Add shared components
+            auto& position = zone.emplace<Component::Position>(entity, x, y);
+            auto& scale = zone.emplace<Component::Scale>(entity, 1.0f);
+            auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
+
+            /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
+            zone.emplace<Component::Direction>(entity, Component::Direction::W);
+            zone.emplace<Component::handle>(entity, name);
+            zone.emplace<Component::Mass>(entity, 100.0f);
+            zone.emplace<Component::Alive>(entity, true);
+
+            auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
+            sprite.flareSpritesheet = flareSheetData;
+            sprite.sheet_name = name;
+            sprite.type = sheetDataFlare.sheet_type;
+            zone.emplace<Component::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+
+            if (entity_class == "polygon_building") {
+                Collision::Create_Static_Body_Polygon(zone, entity, position.x, position.y, pointVecs);
+                zone.emplace<Component::Action>(entity, Component::isStatic);
+                zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
+            }
+            else if (entity_class == "rect_building") {
+                Collision::Create_Static_Body_Rect(zone, entity, position.x, position.y, aabb);
+                zone.emplace<Component::Action>(entity, Component::isStatic);
+                zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
+            }
+            else if (entity_class == "round_building") {
+                float rad = 185.0f;
+                Collision::Create_Static_Body(zone, entity, position.x, position.y, rad);
+                zone.emplace<Component::Action>(entity, Component::isStatic);
+                zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
+            }
+            return true;
+        }
+        return false;
+    }
+
+    void Create_Entity(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, bool is_random, std::string &filepath, Collision::aabb aabb, std::vector<std::vector<tmx::Vector2<float>>> pointVecs) {
         auto entity = zone.create();
         Entity_Loader::Data data;
         int unit_ID = 0;
+
         //get the entity_class from the template in the tiled map
         //get the is_random from the template in the tiled map
         //if it is random, grab a random entry of the same class from the DB table, including the key name
@@ -108,14 +163,6 @@ namespace Maps {
             flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
         }
 
-        // translates isometric position to world position
-        float tileWidth = 128;
-        float tileHeight = 64;
-        float numTilesX =  x / tileWidth;
-        float numTilesY =  y / tileHeight;
-        x = 64.0f + x - (numTilesY * tileWidth / 2.0f);
-        y = -37.0f + (numTilesX * tileHeight) + (y / 2.0f);
-        y = -37.0f + (numTilesX * tileHeight) + (y / 2.0f);
         //Add shared components
         auto& position = zone.emplace<Component::Position>(entity, x, y);
         auto& scale = zone.emplace<Component::Scale>(entity, data.scale);
@@ -166,13 +213,13 @@ namespace Maps {
             }
         }
         //static entities
+        //if it is an aabb building
         else if (data.body_type == 0) {
             Collision::Create_Static_Body(zone, entity, position.x, position.y, data.radius);
             zone.emplace<Component::Action>(entity, Component::isStatic);
             zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
         }
     }
-
 
     // read the map data and import it into the data structures
     void Create_Map() {
@@ -183,6 +230,7 @@ namespace Maps {
                 filePathString.erase(0, 5);
                 const char* filePathChar = filePathString.c_str();
                 Graphics::pTexture[name] = Graphics::createTexture(filePathChar);
+               // Utilities::Log("aadsad");
             }
             std::cout << "Loaded Map version: " << map.getVersion().upper << ", " << map.getVersion().lower << std::endl;
             if (map.isInfinite()) {
@@ -215,18 +263,60 @@ namespace Maps {
                         //if it is random it needs to grab a name from a unit that was already loaded into graphics or default to a default unit name
                         //get an array of all the potential names, check each on against teh std::map of graphics, keep all the ones already there and pick a random one
                         //if (is_random == false ) {}
-                        std::string texture = object.getTilesetName();
+                        std::string key = object.getTilesetName();
                         auto &ff = map.getTemplateTilesets();
-                        texture = ff.at(texture).getImagePath();
-                        texture.erase(0, 5);
+
+                        if (object.getName() == "Medieval_Expansion_Castle1_7") {
+//                            Utilities::Log("asds");
+                        }
+
+                        //gets the collision box/boxes for a building
+                        std::vector<tmx::Object> collision_boxes;
+                        Collision::aabb aabb;
+                        std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
+                        for (auto s :ff.at(key).getTiles()){
+                            collision_boxes = s.objectGroup.getObjects();
+                            float sizeX = s.imageSize.x;
+                            float sizeY = s.imageSize.y;
+
+                            for (auto rects : collision_boxes) {
+                                aabb.hx = rects.getAABB().width / 2.0f;
+                                aabb.hy = rects.getAABB().height / 2.0f;
+                                if (rects.getPoints().size() > 0) {
+                                    float x = rects.getAABB().left;
+                                    float y = rects.getAABB().top;
+                                    if (rects.getPoints().size() > 0) {
+                                        std::vector<tmx::Vector2<float>> pointVec = rects.getPoints();
+                                        for (int i = 0; i < pointVec.size(); i++) {
+                                            pointVec[i].x = pointVec[i].x - ((sizeX / 2.0f) - x);
+                                            pointVec[i].y = pointVec[i].y - (sizeY - y);
+                                        }
+                                        pointVecs.emplace_back(pointVec);
+                                    }
+                                }
+                            }
+                        }
+
+                        std::string texture = ff.at(key).getImagePath();
                         if (texture == "") {
                             Utilities::Log("asds");
                         }
-                        Create_Entity(World::zone, position.x, position.y, name, entity_class, is_random, texture);
+                        texture.erase(0, 5);
+
+                        // translates isometric position to world position
+                        float tileWidth = 128;
+                        float tileHeight = 64;
+                        float numTilesX =  position.x / tileWidth;
+                        float numTilesY =  position.y / tileHeight;
+                        float x = 64.0f + position.x - (numTilesY * tileWidth / 2.0f);
+                        float y = (numTilesX * tileHeight) + (position.y / 2.0f);
+
+                        if (!Polygon_Building(World::zone, x, y, name, entity_class, texture, aabb, pointVecs)) {
+                            Create_Entity(World::zone, x, y, name, entity_class, is_random, texture, aabb, pointVecs);
+                        }
                     };
                 }
             }
-
         }
         else {
             std::cout << "Failed loading map" << std::endl;

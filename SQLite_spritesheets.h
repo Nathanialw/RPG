@@ -208,4 +208,29 @@ namespace SQLite_Spritesheets {
             return &Flare_Spritesheets;
         }
     }
+
+    Sheet_Data_Flare Get_Flare_Spritesheet_Building_Data_From_db(std::string sheet) {// needs to search for  a specific row that I can input in the arguments
+        std::string sheet_name = db::Append_Quotes(sheet);
+        //check if the name exists??
+        Sheet_Data_Flare values;
+        sqlite3_stmt *stmt;
+        char buf[750];
+        const char *ii = "SELECT static_start, static_num_frames, static_reverses FROM sprite_sheet WHERE sprite_sheet = ";
+        strcpy(buf, ii);
+        strcat(buf, sheet_name.c_str());
+        sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+        while (sqlite3_step(stmt) != SQLITE_DONE) {
+            values.isStatic.startFrame = sqlite3_column_int(stmt, 0);
+            values.isStatic.NumFrames = sqlite3_column_int(stmt, 1);
+            values.isStatic.reverses = sqlite3_column_int(stmt, 2);
+            return values;
+        }
+    }
+
+    Sheet_Data_Flare Get_Flare_Building_From_DB(std::string &name, std::string &sheet, Sheet_Data_Flare &sheetData) {
+        sheetData = Get_Flare_Spritesheet_Building_Data_From_db(sheet);
+        Get_Flare_Spritesheet_Layout_From_db(name, sheetData);
+        return sheetData;
+    }
+
 }

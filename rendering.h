@@ -707,7 +707,7 @@ namespace Rendering {
 			Dynamic_Quad_Tree::Emplace_Objects_In_Quad_Tree(World::zone);
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
 			Dynamic_Quad_Tree::Remove_From_Tree(zone);
-//			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
+			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
 			Items::Show_Ground_Items(zone, camera);
             Items::Name_On_Mouseover(zone, camera);
 			UI::Render_UI(zone, Graphics::renderer, camera);

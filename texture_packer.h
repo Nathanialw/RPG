@@ -73,7 +73,7 @@ namespace Texture_Packer {
        if (checkAction == "1-H Attack 1") {
            action = Component::Action_State::attack;
            actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Attack One Handed Overhead") {
+       } else if (checkAction == "Attack Two Hand Swing") {
            action = Component::Action_State::attack;
            actionFrameData[action].frameSpeed = i;
        } else if (checkAction == "1-H Idle") {
@@ -85,7 +85,7 @@ namespace Texture_Packer {
        } else if (checkAction == "1-H Walk") {
            action = Component::Action_State::walk;
            actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Walk") {
+       } else if (checkAction == "Run") {
            action = Component::Action_State::walk;
            actionFrameData[action].frameSpeed = i;
        } else if (checkAction == "Get Hit 1") {

@@ -108,7 +108,25 @@ namespace Entity_Loader {
             const char * s = (const char *)sheet;
             unit_name = std::string(reinterpret_cast< const char *> (s));
         }
-
         return unit_name;
+    }
+
+    std::string Get_Building_Sprite_layout(std::string &name) {// needs to search for  a specific row that I can input in the arguments
+        //check if the name exists??
+        std::string unit_name = db::Append_Quotes(name);
+        std::string sprite_layout;
+        const unsigned char* sheet;
+        sqlite3_stmt* stmt;
+        char buf[300];
+        const char* jj = "SELECT sprite_layout FROM buildings WHERE name = ";
+        strcpy(buf, jj);
+        strcat(buf, unit_name.c_str());
+        sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+        while (sqlite3_step(stmt) != SQLITE_DONE) {
+            sheet = sqlite3_column_text(stmt, 0);
+            const char * s = (const char *)sheet;
+            sprite_layout = std::string(reinterpret_cast< const char *> (s));
+        }
+        return sprite_layout;
     }
 }

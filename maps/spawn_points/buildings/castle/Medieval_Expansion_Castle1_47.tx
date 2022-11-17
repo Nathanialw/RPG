@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx"/>
+ <object name="Medieval_Expansion_Castle1_47" type="round_building" gid="1" width="930" height="1426"/>
+</template>

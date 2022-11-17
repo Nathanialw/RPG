@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx"/>
+ <object name="Medieval_Expansion_House_9" type="polygon_building" gid="1" width="832" height="706"/>
+</template>

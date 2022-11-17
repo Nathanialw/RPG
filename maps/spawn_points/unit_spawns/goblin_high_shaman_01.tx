@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template>
  <tileset firstgid="1" source="../../sprite_sheets/units/goblin_high_shaman_01.tsx"/>
- <object name="goblin_high_shaman_01" gid="1" width="128" height="128"/>
+ <object name="goblin_high_shaman_01" type="unit" gid="1" width="128" height="128"/>
 </template>

@@ -8,7 +8,7 @@ link_directories(lib)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(RPG_game main.cpp sqlite3.c tinyxml2.cpp SQLite_spritesheets.h spritesheet_structs.h texture_packer_item.h)
+add_executable(RPG_game main.cpp sqlite3.c tinyxml2.cpp)
 
 target_link_libraries(RPG_game -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer libbox2d.a libtmxlite.so)
 include_directories(include)
