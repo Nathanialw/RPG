@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../sprite_sheets/units/townsfolk/Medieval_Townfolk_Child_1.tsx"/>
+ <object name="Medieval_Townfolk_Female_Bard" class="unit" gid="1421" width="53" height="93"/>
+</template>

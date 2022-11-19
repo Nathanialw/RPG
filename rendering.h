@@ -135,6 +135,16 @@ namespace Rendering {
         return fScaledImage;
     }
 
+    bool Death_Sequence (Component::Action& action, int &currentFrame, int &numFrames) {
+        if (action.state == Component::dead) {
+            if (currentFrame < numFrames - 1) {
+                currentFrame++;
+            }
+            return true;
+        }
+        return false;
+    }
+
     void Frame_Increment(Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
         sheetData.frameTime += Timer::timeStep;
         if (sheetData.finalFrame == Component::finalFrame) {
@@ -150,6 +160,7 @@ namespace Rendering {
                 }
                 sheetData.finalFrame = Component::normalFrame;
             }
+
                 ///reset frame count if over
             sheetData.frameTime = 0;
             int &currentFrame = sheetData.currentFrame;
@@ -166,6 +177,11 @@ namespace Rendering {
             if (sheetData.sheetDataLegs) {
                 sheetData.legplateFrameIndex = sheetData.sheetDataLegs->at(sheetData.legs_name).actionFrameData[action.state].startFrame + (sheetData.sheetDataLegs->at(sheetData.legs_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
             }
+
+            if (Death_Sequence(action, sheetData.currentFrame, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
+                return;
+            }
+
                 ///calculate reversing
             if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
                 sheetData.reversing = 0;
@@ -219,17 +235,6 @@ namespace Rendering {
             Update_Item_Frame(clipRect, sheetData.currentFrame, sheetData.frameIndex);
         }
     }
-
-    bool Death_Sequence (Component::Action& action, int &currentFrame, int &numFrames) {
-        if (action.state == Component::dead) {
-            if (currentFrame < numFrames - 1) {
-                currentFrame++;
-            }
-            return true;
-        }
-        return false;
-    }
-
 
     void Update_Frame(Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
 
