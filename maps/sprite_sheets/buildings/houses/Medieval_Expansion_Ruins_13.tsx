@@ -12,6 +12,12 @@
    <object id="4" x="242" y="204">
     <polygon points="0,0 103.333,-79.3333 23.3333,14.6667"/>
    </object>
+   <object id="5" x="52" y="314">
+    <point/>
+   </object>
+   <object id="6" x="541" y="244">
+    <point/>
+   </object>
   </objectgroup>
  </tile>
 </tileset>

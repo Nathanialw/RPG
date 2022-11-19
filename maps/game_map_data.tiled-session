@@ -3,17 +3,25 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "untitled3.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
         ".",
         "sprite_sheets/environment",
-        "spawn_points/buildings",
+        "spawn_points/clutter/trees",
         "spawn_points",
         "sprite_sheets/ground_tiles",
-        "spawn_points/unit_spawns",
+        "spawn_points/clutter",
         "spawn_points/buildings/castle",
+        "spawn_points/buildings/houses",
+        "sprite_sheets/buildings/houses",
+        "spawn_points/buildings",
         "sprite_sheets",
-        "sprite_sheets/castle"
+        "sprite_sheets/environment/trees",
+        "sprite_sheets/environment/trees/broken_trees",
+        "sprite_sheets/castle",
+        "spawn_points/clutter/trees/broken_trees",
+        "spawn_points/unit_spawns",
+        "sprite_sheets/buildings"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -26,9 +34,11 @@
             }
         },
         "sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/castle/Medieval_Expansion_Castle1_1.tsx": {
@@ -38,6 +48,7 @@
         },
         "sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx": {
             "dynamicWrapping": false,
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/castle/Medieval_Expansion_Castle1_56.tsx": {
@@ -51,6 +62,7 @@
             "scaleInEditor": 1
         },
         "sprite_sheets/environment/trees/broken_trees/BrokenTree22_5.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "sprite_sheets/environment/trees/tree_01_00.tsx": {
@@ -99,7 +111,8 @@
         },
         "sprite_sheets/ground_tiles/grassland_tiles_x2.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "sprite_sheets/ground_tiles/ground.tsx": {
             "dynamicWrapping": false,
@@ -256,11 +269,11 @@
             }
         },
         "untitled3.tmx": {
-            "scale": 0.33,
+            "scale": 0.0625,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 24643.939393939392,
-                "y": 14887.878787878788
+                "x": 34848,
+                "y": 13216
             }
         }
     },
@@ -274,24 +287,22 @@
     "map.tileWidth": 128,
     "map.width": 8,
     "openFiles": [
-        "untitled3.tmx",
-        "sprite_sheets/castle/Medieval_Expansion_Castle1_7.tsx"
     ],
     "project": "",
     "property.type": "bool",
     "recentFiles": [
+        "sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx",
+        "untitled3.tmx",
+        "sprite_sheets/ground_tiles/grassland_tiles_x2.tsx",
+        "sprite_sheets/ground_tiles/Medieval_Expansion_GroundDecals_1.tsx",
         "sprite_sheets/environment/trees/broken_trees/BrokenTree22_5.tsx",
         "sprite_sheets/environment/trees/tree_01_05.tsx",
-        "sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx",
         "sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx",
-        "untitled3.tmx",
         "sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx",
         "sprite_sheets/castle/Medieval_Expansion_Castle1_56.tsx",
         "sprite_sheets/castle/Medieval_Expansion_Castle1_7.tsx",
         "sprite_sheets/castle/Medieval_Expansion_Castle1_1.tsx",
-        "rule1.tmx",
-        "sprite_sheets/ground_tiles/Medieval_Expansion_GroundDecals_1.tsx",
-        "sprite_sheets/ground_tiles/Medieval_Expansion_GroundDecals_3.tsx"
+        "rule1.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

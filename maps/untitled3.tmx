@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.0" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="2148">
+<map version="1.9" tiledversion="1.9.2" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="2156">
  <tileset firstgid="1" source="sprite_sheets/units/skeleton_00.tsx"/>
  <tileset firstgid="257" source="sprite_sheets/units/skeleton_occultist_00.tsx"/>
  <tileset firstgid="481" source="sprite_sheets/units/skeleton_mage_00.tsx"/>
@@ -298,7 +298,7 @@
   <object id="1745" template="spawn_points/unit_spawns/tree_01_01.tx" x="21904" y="19248"/>
   <object id="1746" template="spawn_points/unit_spawns/tree_01_01.tx" x="20352" y="13056"/>
   <object id="1747" template="spawn_points/unit_spawns/tree_01_01.tx" x="12016" y="2960"/>
-  <object id="1748" template="spawn_points/unit_spawns/tree_01_01.tx" x="4136" y="9304"/>
+  <object id="1748" template="spawn_points/unit_spawns/tree_01_01.tx" x="4508" y="8748"/>
   <object id="1749" template="spawn_points/unit_spawns/tree_01_01.tx" x="1472" y="13632"/>
   <object id="1750" template="spawn_points/unit_spawns/tree_01_02.tx" x="10240" y="21632"/>
   <object id="1751" template="spawn_points/unit_spawns/tree_01_02.tx" x="14976" y="22016"/>
@@ -541,9 +541,9 @@
   <object id="2024" template="spawn_points/unit_spawns/goblin_wolf_rider.tx" x="8185" y="12319"/>
   <object id="2025" template="spawn_points/unit_spawns/goblin_wolf_rider.tx" x="8118" y="12246"/>
   <object id="2026" template="spawn_points/unit_spawns/goblin_wolf_rider.tx" x="7978" y="12142"/>
-  <object id="2051" template="spawn_points/unit_spawns/white_woman_00.tx" name="player" x="14362.4" y="14378.3"/>
+  <object id="2051" template="spawn_points/unit_spawns/white_woman_00.tx" name="player" x="9542.67" y="11507.2"/>
   <object id="2079" template="spawn_points/buildings/castle/Medieval_Expansion_Castle1_47.tx" x="13416.7" y="14308.6"/>
-  <object id="2100" template="spawn_points/buildings/castle/Medieval_Expansion_Castle1_56.tx" x="7503.25" y="2502.75"/>
+  <object id="2100" template="spawn_points/buildings/castle/Medieval_Expansion_Castle1_56.tx" x="5537.25" y="10388.8"/>
   <object id="2101" template="spawn_points/buildings/castle/Medieval_Expansion_Castle1_7.tx" x="14829" y="13815"/>
   <object id="2102" template="spawn_points/buildings/castle/Medieval_Expansion_Castle1_7.tx" x="14829" y="13815"/>
   <object id="2104" template="spawn_points/buildings/houses/Medieval_Expansion_House_9.tx" x="14663.5" y="15506.2"/>

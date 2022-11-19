@@ -276,15 +276,15 @@ namespace Dynamic_Quad_Tree {
 
 		treeObjects.resize(zoneSize);
 
-		auto view = zone.view<Component::Position, Component::Radius>();
+		auto view = zone.view<Component::Position, Component::Interaction_Rect>();
 
 		for (auto entity : view) {
 			auto& position = view.get<Component::Position>(entity);
-			auto& radius = view.get<Component::Radius>(entity).fRadius;
+			auto& interactRect = view.get<Component::Interaction_Rect>(entity);
 
 			someObjectWithArea object{};
 			object.entity_ID = entity;
-			object.rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
+            object.rect = { position.x - interactRect.r, position.y - interactRect.h, interactRect.r * 2.0f, interactRect.h };
 
 			zone.emplace<Component::In_Object_Tree>(entity, true);
 			treeObjects.insert(object, object.rect);
@@ -294,14 +294,15 @@ namespace Dynamic_Quad_Tree {
 
 
 	void Emplace_Objects_In_Quad_Tree(entt::registry& zone) {
-		auto view = zone.view<Component::Position, Component::Radius>(entt::exclude<Component::In_Object_Tree>);
+		auto view = zone.view<Component::Position, Component::Interaction_Rect>(entt::exclude<Component::In_Object_Tree>);
 		for (auto entity : view) {
 			auto& position = view.get<Component::Position>(entity);
-			auto& radius = view.get<Component::Radius>(entity).fRadius;
+			auto& interactRect = view.get<Component::Interaction_Rect>(entity);
 
 			someObjectWithArea object{};
 			object.entity_ID = entity;
-			object.rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
+            object.rect = { position.x - interactRect.r, position.y - interactRect.h, interactRect.r * 2.0f, interactRect.h };
+
 
 			zone.emplace<Component::In_Object_Tree>(entity, true);
 			treeObjects.insert(object, object.rect);
@@ -323,7 +324,7 @@ namespace Dynamic_Quad_Tree {
 			//	std::cout << i << std::endl;
 			zone.remove<Component::Remove_From_Object_Tree>(entity);
 			zone.remove<Component::In_Object_Tree>(entity);
-			zone.remove<Component::Radius>(entity);
+			zone.remove<Component::Interaction_Rect>(entity);
 		}
 	}
 
@@ -338,14 +339,16 @@ namespace Dynamic_Quad_Tree {
 			/* only does a quad search for those that moved*/
 
 	void Update_Quad_Tree_Positions(entt::registry& zone) {
-		auto view = zone.view<Component::Position>();
+		auto view = zone.view<Component::Position, Component::Interaction_Rect>();
 
 		for (std::_List_iterator object_it = treeObjects.begin(); object_it != treeObjects.end(); ++object_it) {
 			auto& entity = object_it->item;
 
 			auto& position = view.get<Component::Position>(entity.entity_ID);
-			auto radius = entity.rect.w / 2.0f;
-			entity.rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
+
+            auto& interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
+            entity.rect = { position.x - interactRect.r, position.y - interactRect.h, interactRect.r * 2.0f, interactRect.h };
+
 
 			treeObjects.relocate(object_it, entity.rect);
 		}

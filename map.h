@@ -65,7 +65,27 @@ namespace Maps {
         std::cout << "failed to assign template key for: " << name << std::endl;
     }
 
-    bool Polygon_Building(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs) {
+    void Set_Collision_Box (entt::registry &zone, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+        if (entity_class == "polygon_building") {
+            Collision::Create_Static_Body_Polygon(zone, entity, position.x, position.y, pointVecs);
+            zone.emplace<Component::Action>(entity, Component::isStatic);
+            zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
+            zone.emplace<Component::Line_Segment>(entity, line);
+        }
+        else if (entity_class == "rect_building") {
+            Collision::Create_Static_Body_Rect(zone, entity, position.x, position.y, aabb);
+            zone.emplace<Component::Action>(entity, Component::isStatic);
+            zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
+        }
+        else if (entity_class == "round_building") {
+            float rad = 185.0f;
+            Collision::Create_Static_Body(zone, entity, position.x, position.y, rad);
+            zone.emplace<Component::Action>(entity, Component::isStatic);
+            zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
+        }
+    }
+
+    bool Polygon_Building(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
             /// if it is a building
         if (entity_class == "polygon_building" || entity_class == "rect_building" || entity_class == "round_building") {
             auto entity = zone.create();
@@ -98,22 +118,7 @@ namespace Maps {
             sprite.type = sheetDataFlare.sheet_type;
             zone.emplace<Component::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
-            if (entity_class == "polygon_building") {
-                Collision::Create_Static_Body_Polygon(zone, entity, position.x, position.y, pointVecs);
-                zone.emplace<Component::Action>(entity, Component::isStatic);
-                zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
-            }
-            else if (entity_class == "rect_building") {
-                Collision::Create_Static_Body_Rect(zone, entity, position.x, position.y, aabb);
-                zone.emplace<Component::Action>(entity, Component::isStatic);
-                zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
-            }
-            else if (entity_class == "round_building") {
-                float rad = 185.0f;
-                Collision::Create_Static_Body(zone, entity, position.x, position.y, rad);
-                zone.emplace<Component::Action>(entity, Component::isStatic);
-                zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
-            }
+            Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line);
             return true;
         }
         return false;
@@ -167,6 +172,7 @@ namespace Maps {
         auto& position = zone.emplace<Component::Position>(entity, x, y);
         auto& scale = zone.emplace<Component::Scale>(entity, data.scale);
         auto &radius = zone.emplace<Component::Radius>(entity, data.radius * data.scale);
+        zone.emplace<Component::Interaction_Rect>(entity, data.interact_r, data.interact_h);
 
             /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
         zone.emplace<Component::Direction>(entity, Component::Direction::W);
@@ -230,25 +236,77 @@ namespace Maps {
                 filePathString.erase(0, 5);
                 const char* filePathChar = filePathString.c_str();
                 Graphics::pTexture[name] = Graphics::createTexture(filePathChar);
-               // Utilities::Log("aadsad");
+
             }
             std::cout << "Loaded Map version: " << map.getVersion().upper << ", " << map.getVersion().lower << std::endl;
-            if (map.isInfinite()) {
-                std::cout << "Map is infinite.\n";
-            }
+
             const auto& layers = map.getLayers();
             std::cout << "Map has " << layers.size() << " layers" << std::endl;
+
             for (const auto& layer : layers) {
-                if (layer->getType() == tmx::Layer::Type::Tile) {
-                    const auto& tiles = layer->getLayerAs<tmx::TileLayer>().getTiles();
-                    if (tiles.empty()) {
-                        std::cout << "Layer has missing tile data\n";
-                    }
-                    else {
-                        std::cout << "Layer has " << tiles.size() << " tiles.\n";
-                    }
+                if (layer->getName() == "ground") {
+
                 }
-                if (layer->getType() == tmx::Layer::Type::Object) {
+                else if (layer->getName() == "widgets") {
+//                    for (auto &j : layer->getLayerAs<tmx::TileLayer>().getTiles()) {
+//                        j.ID
+//                        auto tileobject = layer->getLayerAs<tmx::Tileset>().getTile(j.ID).;
+////                        for (auto tileobject : j.objectGroup.getObjects()) {
+//
+//
+//                            auto &position = tileobject.getPosition();
+//                            std::string name = tileobject.getName();
+//                            std::string entity_class = tileobject.getClass();
+//                            std::string key = tileobject.getTilesetName();
+//
+//                            auto &ff = map.getTemplateTilesets();
+//
+//                            //gets the collision box/boxes for a building
+//                            std::vector<tmx::Object> collision_boxes;
+//                            Collision::aabb aabb;
+//                            std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
+//                            for (auto s: ff.at(key).getTiles()) {
+//                                collision_boxes = s.objectGroup.getObjects();
+//                                float sizeX = s.imageSize.x;
+//                                float sizeY = s.imageSize.y;
+//
+//                                for (auto rects: collision_boxes) {
+//                                    aabb.hx = rects.getAABB().width / 2.0f;
+//                                    aabb.hy = rects.getAABB().height / 2.0f;
+//                                    if (rects.getPoints().size() > 0) {
+//                                        float x = rects.getAABB().left;
+//                                        float y = rects.getAABB().top;
+//                                        if (rects.getPoints().size() > 0) {
+//                                            std::vector<tmx::Vector2<float>> pointVec = rects.getPoints();
+//                                            for (int i = 0; i < pointVec.size(); i++) {
+//                                                pointVec[i].x = pointVec[i].x - ((sizeX / 2.0f) - x);
+//                                                pointVec[i].y = pointVec[i].y - (sizeY - y);
+//                                            }
+//                                            pointVecs.emplace_back(pointVec);
+//                                        }
+//                                    }
+//                                }
+//
+//                                // translates isometric position to world position
+//                                float tileWidth = 128;
+//                                float tileHeight = 64;
+//                                float numTilesX = position.x / tileWidth;
+//                                float numTilesY = position.y / tileHeight;
+//                                float x = 64.0f + position.x - (numTilesY * tileWidth / 2.0f);
+//                                float y = (numTilesX * tileHeight) + (position.y / 2.0f);
+//
+//                                auto tile_object = World::zone.create();
+//                                auto c_position = World::zone.emplace<Component::Position>(tile_object, x, y);
+//
+//                                Set_Collision_Box(World::zone, tile_object, entity_class, c_position, aabb, pointVecs);
+////                            }
+//                        }
+//                    }
+                }
+                else if (layer->getName() == "taller_widgets1") {
+
+                }
+                else if (layer->getName() == "unit_spawns") {
                     //layer->getLayerAs<tmx::ObjectLayer>();
                     //for (auto object : ) {
                     //layer->getLayerAs<tmx::ObjectGroup>().
@@ -260,48 +318,6 @@ namespace Maps {
                         for (auto i : object.getProperties()) {
                             is_random = i.getBoolValue();
                         }
-                        //if it is random it needs to grab a name from a unit that was already loaded into graphics or default to a default unit name
-                        //get an array of all the potential names, check each on against teh std::map of graphics, keep all the ones already there and pick a random one
-                        //if (is_random == false ) {}
-                        std::string key = object.getTilesetName();
-                        auto &ff = map.getTemplateTilesets();
-
-                        if (object.getName() == "Medieval_Expansion_Castle1_7") {
-//                            Utilities::Log("asds");
-                        }
-
-                        //gets the collision box/boxes for a building
-                        std::vector<tmx::Object> collision_boxes;
-                        Collision::aabb aabb;
-                        std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
-                        for (auto s :ff.at(key).getTiles()){
-                            collision_boxes = s.objectGroup.getObjects();
-                            float sizeX = s.imageSize.x;
-                            float sizeY = s.imageSize.y;
-
-                            for (auto rects : collision_boxes) {
-                                aabb.hx = rects.getAABB().width / 2.0f;
-                                aabb.hy = rects.getAABB().height / 2.0f;
-                                if (rects.getPoints().size() > 0) {
-                                    float x = rects.getAABB().left;
-                                    float y = rects.getAABB().top;
-                                    if (rects.getPoints().size() > 0) {
-                                        std::vector<tmx::Vector2<float>> pointVec = rects.getPoints();
-                                        for (int i = 0; i < pointVec.size(); i++) {
-                                            pointVec[i].x = pointVec[i].x - ((sizeX / 2.0f) - x);
-                                            pointVec[i].y = pointVec[i].y - (sizeY - y);
-                                        }
-                                        pointVecs.emplace_back(pointVec);
-                                    }
-                                }
-                            }
-                        }
-
-                        std::string texture = ff.at(key).getImagePath();
-                        if (texture == "") {
-                            Utilities::Log("asds");
-                        }
-                        texture.erase(0, 5);
 
                         // translates isometric position to world position
                         float tileWidth = 128;
@@ -310,8 +326,54 @@ namespace Maps {
                         float numTilesY =  position.y / tileHeight;
                         float x = 64.0f + position.x - (numTilesY * tileWidth / 2.0f);
                         float y = (numTilesX * tileHeight) + (position.y / 2.0f);
+                        //if it is random it needs to grab a name from a unit that was already loaded into graphics or default to a default unit name
+                        //get an array of all the potential names, check each on against teh std::map of graphics, keep all the ones already there and pick a random one
+                        //if (is_random == false ) {}
+                        std::string key = object.getTilesetName();
+                        auto &ff = map.getTemplateTilesets();
 
-                        if (!Polygon_Building(World::zone, x, y, name, entity_class, texture, aabb, pointVecs)) {
+                        //gets the collision box/boxes for a building
+                        std::vector<tmx::Object> collision_boxes;
+                        Collision::aabb aabb;
+                        std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
+                        Component::Line_Segment line;
+
+                        for (auto s :ff.at(key).getTiles()){
+                            collision_boxes = s.objectGroup.getObjects();
+                            float sizeX = s.imageSize.x;
+                            float sizeY = s.imageSize.y;
+
+                            int j = 0;
+                            for (auto rects : collision_boxes) {
+                                aabb.hx = rects.getAABB().width / 2.0f;
+                                aabb.hy = rects.getAABB().height / 2.0f;
+                                float aabbx = rects.getAABB().left;
+                                float aabby = rects.getAABB().top;
+                                if (rects.getShape() == tmx::Object::Shape::Point) {
+                                    line.p[j].x = x - ((sizeX / 2.0f) - aabbx);
+                                    line.p[j].y = y - (sizeY - aabby);
+                                    j++;
+                                }
+                                else if (rects.getPoints().size() > 0) {
+                                    std::vector<tmx::Vector2<float>> pointVec = rects.getPoints();
+                                    for (int i = 0; i < pointVec.size(); i++) {
+                                        pointVec[i].x = pointVec[i].x - ((sizeX / 2.0f) - aabbx);
+                                        pointVec[i].y = pointVec[i].y - (sizeY - aabby);
+                                    }
+                                    pointVecs.emplace_back(pointVec);
+                                }
+                            }
+                        }
+                        if (ff.at(key).getName() == "Medieval_Expansion_Ruins_13") {
+                            Utilities::Log("asd");
+                        }
+
+                        std::string texture = ff.at(key).getImagePath();
+                        texture.erase(0, 5);
+
+
+
+                        if (!Polygon_Building(World::zone, x, y, name, entity_class, texture, aabb, pointVecs, line)) {
                             Create_Entity(World::zone, x, y, name, entity_class, is_random, texture, aabb, pointVecs);
                         }
                     };

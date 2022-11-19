@@ -29,6 +29,10 @@ namespace Component {
 		SDL_FRect rect;
 	};
 
+    struct Interaction_Rect {
+        float r;
+        float h;
+    };
 
 	struct Body {
 		b2Body* body;
@@ -371,9 +375,16 @@ namespace Component {
         SDL_Texture *texture = NULL;
     };
 
+	struct Line_Segment {
+		Position p[2];
+
+//		Position p1 = {0.0f, 0.0f};
+//		Position p2 = {0.0f, 0.0f};
+	};
+
 	struct Renderable {
-		float y;
-		int alpha;
+		float y = 0.0f; //point
+		int alpha = 0;
 	};
 
 	struct Scale {

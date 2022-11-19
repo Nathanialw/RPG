@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.8" tiledversion="1.8.0" name="Medieval_Expansion_Castle1_56" tilewidth="2551" tileheight="2438" tilecount="1" columns="1">
+<tileset version="1.9" tiledversion="1.9.2" name="Medieval_Expansion_Castle1_56" tilewidth="2551" tileheight="2438" tilecount="1" columns="1">
  <image source="../../../sprites/buildings/Medieval_Expansion/Medieval_Expansion_Castle1/Medieval_Expansion_Castle1_56.png" width="2551" height="2438"/>
  <tile id="0">
   <objectgroup draworder="index" id="2">
@@ -11,6 +11,12 @@
    </object>
    <object id="4" x="227.833" y="1367.5">
     <polygon points="0,0 194.667,128.167 312.667,66 135.333,-66.6667"/>
+   </object>
+   <object id="5" x="2182" y="2144.75">
+    <point/>
+   </object>
+   <object id="6" x="111.25" y="1424.5">
+    <point/>
    </object>
   </objectgroup>
  </tile>

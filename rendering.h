@@ -33,8 +33,56 @@ namespace Rendering {
 	};
 
 	void sort_Positions(entt::registry &zone) {
-		zone.sort<Component::Renderable>([](const auto& lhs, const auto& rhs) { return lhs.y < rhs.y; }); //sorts position least to
+            // test whether a point lays on a line segment, positive is above and negative is below
+        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
+        auto points = zone.view<Component::Position, Component::Renderable>();
+
+        for (auto building : line_segments) {
+            //test each renderable entity, if it is above the line
+            auto [line, renderable] = line_segments.get(building);
+            for (auto entity : points) {
+                auto [position, rend] = points.get(entity);
+
+                //f(x) = k * x + b
+                //slope is k
+                float slope = (line.p[0].y - line.p[1].y) / (line.p[0].x - line.p[1].x);
+                //y_offset is b
+                int y_offset = line.p[1].y / (slope * line.p[1].x);
+                //check whether the y position is above or below the line
+                float y = (slope * position.x) + y_offset;
+                if (position.y + y > position.y) {
+                    //the entity is above the line
+
+                    //check the collsion box, if they collide place the low y position entity, behind the higher y position, else do nothing
+                    renderable.y = position.y - 1;
+                }
+                else {
+                    //the entity is below the line
+                    renderable.y = position.y + 1;
+                }
+
+                //set renderable.y to tested renderable.y + 1 for above and renderable.y - 1 for below then let the sort algo do its job
+            }
+        }
+        // sort the component to render before entities below and after entities above
+
+        //sorts point positions least to great
+		zone.sort<Component::Renderable>([](const auto& lhs, const auto& rhs) { return lhs.y < rhs.y; });
 	}
+
+    void RenderLine (entt::registry &zone, Component::Camera &camera) {
+        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
+        for (auto building : line_segments) {
+            auto [line, renderable] = line_segments.get(building);
+            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_NONE);
+            SDL_SetRenderDrawColor(Graphics::renderer, 255,0,0,255);
+            float x1 = line.p[0].x - (camera.screen.x);
+            float y1 = line.p[0].y - (camera.screen.y);
+            float x2 = line.p[1].x - (camera.screen.x);
+            float y2 = line.p[1].y - (camera.screen.y);
+            SDL_RenderDrawLineF(Graphics::renderer, x1, y1, x2, y2);
+        }
+    }
 
     int PVG_Direction_Enum(Component::Direction &direction) {
         switch (direction) {
@@ -626,10 +674,10 @@ namespace Rendering {
 	void Add_Remove_Renderable_Component(entt::registry &zone, Component::Camera &camera) {
 		int j = 0;
 		SDL_FRect renderRect = {
-			camera.screen.x - (camera.screen.w / 2.0f),
-			camera.screen.y - (camera.screen.h / 2.0f),
-			camera.screen.w * 2.0f,
-			camera.screen.h * 2.0f };
+			camera.screen.x - (camera.screen.w / 4.0f),
+			camera.screen.y - (camera.screen.h / 4.0f),
+			camera.screen.w * 4.0f,
+			camera.screen.h * 4.0f };
 		auto objectsView = zone.view<Component::Position>(entt::exclude<Component::Inventory>);
 		float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
 		float bottomOfRenderRect = renderRect.y + renderRect.h;
@@ -638,8 +686,12 @@ namespace Rendering {
 			SDL_FPoint point = {position.x, position.y};
 			if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
 				int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
-				zone.emplace_or_replace<Component::Renderable>(entity, position.y, alpha);
-				j++;
+				auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
+                renderable.alpha = alpha;
+                if (zone.all_of<Component::Line_Segment>(entity) == false) {
+                    renderable.y = position.y;
+                }
+                j++;
 			}
 			else {
 				zone.remove<Component::Renderable>(entity);
@@ -655,7 +707,7 @@ namespace Rendering {
 //				Add_Remove_Renderable_Component(zone, camera);
 			}
 			else {
-			//	Vector_Renderable(Map::terrain);
+//	            Vector_Renderable(Map::terrain);
 			}
 		}
 	};
@@ -703,6 +755,7 @@ namespace Rendering {
 			Add_Remove_Renderable_Component(zone, camera);
 			sort_Positions(zone);
 			Render_Map(zone, Maps::map, camera);
+            RenderLine(zone, camera);
 			Dynamic_Quad_Tree::Update_Quad_Tree_Positions(World::zone);
 			Dynamic_Quad_Tree::Emplace_Objects_In_Quad_Tree(World::zone);
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
