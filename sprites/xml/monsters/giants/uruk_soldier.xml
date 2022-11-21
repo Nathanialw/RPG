@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="1940" height="2004" scale="1" format="RGBA8888">
+  <sprite n="Uruk_Soldier_Attack 1_01_ 0" x="1042" y="1383" w="72" h="111" pX="0.5" pY="0.5" oX="83" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_02_ 0" x="672" y="395" w="69" h="128" pX="0.5" pY="0.5" oX="83" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_03_ 0" x="979" y="1170" w="114" h="100" pX="0.5" pY="0.5" oX="31" oY="94" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_04_ 1" x="232" y="1614" w="74" h="106" pX="0.5" pY="0.5" oX="69" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_05_ 1" x="1582" y="741" w="76" h="106" pX="0.5" pY="0.5" oX="81" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_06_ 1" x="0" y="308" w="110" h="146" pX="0.5" pY="0.5" oX="26" oY="19" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_07_ 2" x="794" y="0" w="74" h="126" pX="0.5" pY="0.5" oX="70" oY="35" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_08_ 2" x="547" y="1040" w="80" h="116" pX="0.5" pY="0.5" oX="56" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_09_ 2" x="784" y="1134" w="114" h="111" pX="0.5" pY="0.5" oX="70" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_10_ 3" x="931" y="123" w="72" h="122" pX="0.5" pY="0.5" oX="64" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_11_ 3" x="84" y="1505" w="66" h="109" pX="0.5" pY="0.5" oX="67" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_12_ 3" x="212" y="0" w="92" h="147" pX="0.5" pY="0.5" oX="73" oY="19" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_13_ 4" x="1857" y="754" w="83" h="92" pX="0.5" pY="0.5" oX="68" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_14_ 4" x="1751" y="1793" w="97" h="96" pX="0.5" pY="0.5" oX="68" oY="58" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_15_ 4" x="373" y="0" w="122" h="143" pX="0.5" pY="0.5" oX="25" oY="22" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_16_ 5" x="1114" y="1383" w="76" h="110" pX="0.5" pY="0.5" oX="58" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_17_ 5" x="1249" y="1032" w="69" h="113" pX="0.5" pY="0.5" oX="72" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_18_ 5" x="110" y="300" w="78" h="145" pX="0.5" pY="0.5" oX="55" oY="21" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_19_ 6" x="253" y="1053" w="81" h="117" pX="0.5" pY="0.5" oX="70" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_20_ 6" x="446" y="283" w="71" h="139" pX="0.5" pY="0.5" oX="64" oY="26" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_21_ 6" x="777" y="899" w="67" h="119" pX="0.5" pY="0.5" oX="85" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_22_ 7" x="441" y="921" w="77" h="120" pX="0.5" pY="0.5" oX="62" oY="27" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_23_ 7" x="1288" y="1801" w="89" h="95" pX="0.5" pY="0.5" oX="49" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 1_24_ 7" x="916" y="858" w="121" h="112" pX="0.5" pY="0.5" oX="59" oY="36" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_01_ 0" x="1189" y="1258" w="71" h="112" pX="0.5" pY="0.5" oX="83" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_02_ 0" x="83" y="151" w="75" h="149" pX="0.5" pY="0.5" oX="57" oY="13" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_03_ 0" x="1520" y="635" w="61" h="106" pX="0.5" pY="0.5" oX="83" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_04_ 1" x="1519" y="1191" w="74" h="106" pX="0.5" pY="0.5" oX="76" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_05_ 1" x="512" y="796" w="109" h="124" pX="0.5" pY="0.5" oX="77" oY="21" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_06_ 1" x="375" y="429" w="138" h="82" pX="0.5" pY="0.5" oX="15" oY="68" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_07_ 2" x="621" y="795" w="73" h="124" pX="0.5" pY="0.5" oX="57" oY="35" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_08_ 2" x="1149" y="698" w="102" h="116" pX="0.5" pY="0.5" oX="21" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_09_ 2" x="227" y="522" w="136" h="96" pX="0.5" pY="0.5" oX="48" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_10_ 3" x="888" y="367" w="72" h="122" pX="0.5" pY="0.5" oX="57" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_11_ 3" x="1251" y="0" w="75" h="114" pX="0.5" pY="0.5" oX="83" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_12_ 3" x="158" y="150" w="53" h="140" pX="0.5" pY="0.5" oX="72" oY="29" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_13_ 4" x="1857" y="662" w="83" h="92" pX="0.5" pY="0.5" oX="68" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_14_ 4" x="212" y="147" w="85" h="147" pX="0.5" pY="0.5" oX="68" oY="7" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_15_ 4" x="1410" y="105" w="110" h="102" pX="0.5" pY="0.5" oX="31" oY="90" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_16_ 5" x="1275" y="915" w="76" h="112" pX="0.5" pY="0.5" oX="58" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_17_ 5" x="1037" y="856" w="90" h="118" pX="0.5" pY="0.5" oX="89" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_18_ 5" x="568" y="407" w="104" h="130" pX="0.5" pY="0.5" oX="29" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_19_ 6" x="994" y="489" w="81" h="117" pX="0.5" pY="0.5" oX="77" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_20_ 6" x="0" y="540" w="91" h="139" pX="0.5" pY="0.5" oX="28" oY="25" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_21_ 6" x="1190" y="1370" w="100" h="110" pX="0.5" pY="0.5" oX="74" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_22_ 7" x="1081" y="345" w="76" h="118" pX="0.5" pY="0.5" oX="62" oY="29" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_23_ 7" x="1005" y="737" w="76" h="119" pX="0.5" pY="0.5" oX="63" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Attack 2_24_ 7" x="931" y="0" w="109" h="123" pX="0.5" pY="0.5" oX="66" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_01_ 0" x="1857" y="1606" w="60" h="81" pX="0.5" pY="0.5" oX="72" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_02_ 0" x="127" y="1922" w="60" h="80" pX="0.5" pY="0.5" oX="72" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_03_ 0" x="67" y="1923" w="60" h="80" pX="0.5" pY="0.5" oX="72" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_04_ 1" x="1856" y="182" w="67" h="81" pX="0.5" pY="0.5" oX="63" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_05_ 1" x="0" y="1923" w="67" h="81" pX="0.5" pY="0.5" oX="63" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_06_ 1" x="1848" y="1776" w="67" h="81" pX="0.5" pY="0.5" oX="63" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_07_ 2" x="1857" y="1443" w="68" h="82" pX="0.5" pY="0.5" oX="77" oY="66" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_08_ 2" x="1857" y="1278" w="68" h="83" pX="0.5" pY="0.5" oX="77" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_09_ 2" x="1857" y="1195" w="67" h="83" pX="0.5" pY="0.5" oX="78" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_10_ 3" x="1857" y="1110" w="62" h="85" pX="0.5" pY="0.5" oX="75" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_11_ 3" x="1857" y="1025" w="62" h="85" pX="0.5" pY="0.5" oX="75" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_12_ 3" x="281" y="436" w="62" h="85" pX="0.5" pY="0.5" oX="75" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_13_ 4" x="1858" y="94" w="61" h="88" pX="0.5" pY="0.5" oX="70" oY="72" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_14_ 4" x="1788" y="204" w="61" h="88" pX="0.5" pY="0.5" oX="70" oY="72" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_15_ 4" x="740" y="1823" w="61" h="88" pX="0.5" pY="0.5" oX="70" oY="72" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_16_ 5" x="1117" y="1906" w="72" h="77" pX="0.5" pY="0.5" oX="58" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_17_ 5" x="1045" y="1906" w="72" h="78" pX="0.5" pY="0.5" oX="58" oY="63" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_18_ 5" x="1848" y="1857" w="72" h="78" pX="0.5" pY="0.5" oX="58" oY="63" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_19_ 6" x="896" y="1906" w="71" h="78" pX="0.5" pY="0.5" oX="71" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_20_ 6" x="825" y="1906" w="71" h="78" pX="0.5" pY="0.5" oX="71" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_21_ 6" x="598" y="1920" w="71" h="78" pX="0.5" pY="0.5" oX="71" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_22_ 7" x="472" y="1920" w="63" h="79" pX="0.5" pY="0.5" oX="72" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_23_ 7" x="535" y="1920" w="63" h="79" pX="0.5" pY="0.5" oX="72" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Behavior_24_ 7" x="409" y="1921" w="63" h="79" pX="0.5" pY="0.5" oX="72" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_01_ 0" x="1511" y="763" w="71" h="107" pX="0.5" pY="0.5" oX="77" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_02_ 0" x="1582" y="635" w="66" h="106" pX="0.5" pY="0.5" oX="80" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_03_ 0" x="1658" y="740" w="84" h="104" pX="0.5" pY="0.5" oX="83" oY="63" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_04_ 1" x="1423" y="763" w="88" h="109" pX="0.5" pY="0.5" oX="46" oY="58" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_05_ 1" x="1112" y="1494" w="76" h="107" pX="0.5" pY="0.5" oX="58" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_06_ 1" x="1687" y="1397" w="65" h="104" pX="0.5" pY="0.5" oX="70" oY="63" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_07_ 2" x="1244" y="1600" w="91" h="105" pX="0.5" pY="0.5" oX="70" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_08_ 2" x="1412" y="444" w="80" h="109" pX="0.5" pY="0.5" oX="70" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_09_ 2" x="1081" y="109" w="65" h="118" pX="0.5" pY="0.5" oX="70" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_10_ 3" x="609" y="265" w="73" h="130" pX="0.5" pY="0.5" oX="70" oY="29" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_11_ 3" x="844" y="897" w="68" h="120" pX="0.5" pY="0.5" oX="71" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_12_ 3" x="1105" y="1707" w="80" h="103" pX="0.5" pY="0.5" oX="54" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_13_ 4" x="1190" y="1805" w="82" h="94" pX="0.5" pY="0.5" oX="70" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_14_ 4" x="1112" y="1810" w="78" h="96" pX="0.5" pY="0.5" oX="74" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_15_ 4" x="1857" y="938" w="82" h="87" pX="0.5" pY="0.5" oX="74" oY="68" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_16_ 5" x="948" y="245" w="79" h="122" pX="0.5" pY="0.5" oX="52" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_17_ 5" x="1326" y="1368" w="84" h="111" pX="0.5" pY="0.5" oX="47" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_18_ 5" x="306" y="1614" w="68" h="106" pX="0.5" pY="0.5" oX="64" oY="59" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_19_ 6" x="1326" y="112" w="81" h="112" pX="0.5" pY="0.5" oX="74" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_20_ 6" x="0" y="1394" w="87" h="111" pX="0.5" pY="0.5" oX="73" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_21_ 6" x="1081" y="463" w="71" h="118" pX="0.5" pY="0.5" oX="72" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_22_ 7" x="479" y="1719" w="88" h="104" pX="0.5" pY="0.5" oX="61" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_23_ 7" x="1392" y="1024" w="82" h="110" pX="0.5" pY="0.5" oX="61" oY="35" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Block_24_ 7" x="1673" y="1770" w="78" h="97" pX="0.5" pY="0.5" oX="61" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_01_ 0" x="1597" y="1670" w="76" h="102" pX="0.5" pY="0.5" oX="66" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_02_ 0" x="1740" y="1074" w="76" h="101" pX="0.5" pY="0.5" oX="66" oY="79" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_03_ 0" x="1725" y="844" w="77" h="100" pX="0.5" pY="0.5" oX="65" oY="80" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_04_ 1" x="1748" y="944" w="98" h="100" pX="0.5" pY="0.5" oX="32" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_05_ 1" x="567" y="1819" w="98" h="98" pX="0.5" pY="0.5" oX="32" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_06_ 1" x="438" y="1824" w="97" h="96" pX="0.5" pY="0.5" oX="33" oY="71" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_07_ 2" x="1185" y="1707" w="103" h="98" pX="0.5" pY="0.5" oX="70" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_08_ 2" x="1288" y="1705" w="103" h="96" pX="0.5" pY="0.5" oX="70" oY="63" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_09_ 2" x="1755" y="1596" w="102" h="96" pX="0.5" pY="0.5" oX="70" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_10_ 3" x="1157" y="232" w="81" h="116" pX="0.5" pY="0.5" oX="71" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_11_ 3" x="1157" y="348" w="81" h="115" pX="0.5" pY="0.5" oX="71" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_12_ 3" x="898" y="1170" w="81" h="114" pX="0.5" pY="0.5" oX="71" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_13_ 4" x="1846" y="494" w="94" h="86" pX="0.5" pY="0.5" oX="57" oY="79" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_14_ 4" x="1847" y="1692" w="93" h="84" pX="0.5" pY="0.5" oX="58" oY="81" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_15_ 4" x="1846" y="580" w="93" h="82" pX="0.5" pY="0.5" oX="58" oY="83" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_16_ 5" x="1251" y="689" w="74" h="113" pX="0.5" pY="0.5" oX="53" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_17_ 5" x="1318" y="1027" w="74" h="112" pX="0.5" pY="0.5" oX="54" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_18_ 5" x="1325" y="677" w="74" h="111" pX="0.5" pY="0.5" oX="54" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_19_ 6" x="0" y="1824" w="75" h="99" pX="0.5" pY="0.5" oX="77" oY="66" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_20_ 6" x="665" y="1823" w="75" h="97" pX="0.5" pY="0.5" oX="77" oY="68" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_21_ 6" x="1597" y="1772" w="74" h="96" pX="0.5" pY="0.5" oX="77" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_22_ 7" x="75" y="1824" w="99" h="92" pX="0.5" pY="0.5" oX="61" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_23_ 7" x="817" y="1805" w="99" h="91" pX="0.5" pY="0.5" oX="61" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Critical HP_24_ 7" x="921" y="1791" w="99" h="90" pX="0.5" pY="0.5" oX="61" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Dead_01_ 0" x="225" y="1286" w="112" h="103" pX="0.5" pY="0.5" oX="44" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Dead_02_ 1" x="141" y="445" w="140" h="77" pX="0.5" pY="0.5" oX="35" oY="82" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Dead_03_ 2" x="0" y="454" w="141" h="86" pX="0.5" pY="0.5" oX="28" oY="79" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Dead_04_ 3" x="113" y="1286" w="112" h="106" pX="0.5" pY="0.5" oX="44" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Dead_05_ 4" x="437" y="1285" w="111" h="86" pX="0.5" pY="0.5" oX="60" oY="74" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Dead_06_ 5" x="1021" y="1082" w="116" h="88" pX="0.5" pY="0.5" oX="63" oY="91" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Dead_07_ 6" x="905" y="1082" w="116" h="84" pX="0.5" pY="0.5" oX="22" oY="68" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Dead_08_ 7" x="851" y="1395" w="111" h="86" pX="0.5" pY="0.5" oX="26" oY="88" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_01_ 0" x="1041" y="1494" w="71" h="107" pX="0.5" pY="0.5" oX="77" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_02_ 0" x="1603" y="1565" w="84" h="104" pX="0.5" pY="0.5" oX="68" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_03_ 0" x="1752" y="1692" w="95" h="101" pX="0.5" pY="0.5" oX="56" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_04_ 1" x="1423" y="872" w="88" h="109" pX="0.5" pY="0.5" oX="46" oY="58" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_05_ 1" x="345" y="1269" w="92" h="112" pX="0.5" pY="0.5" oX="56" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_06_ 1" x="682" y="265" w="95" h="126" pX="0.5" pY="0.5" oX="78" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_07_ 2" x="1512" y="1565" w="91" h="105" pX="0.5" pY="0.5" oX="70" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_08_ 2" x="1742" y="734" w="92" h="100" pX="0.5" pY="0.5" oX="60" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_09_ 2" x="0" y="1720" w="103" h="104" pX="0.5" pY="0.5" oX="27" oY="59" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_10_ 3" x="794" y="126" w="73" h="126" pX="0.5" pY="0.5" oX="70" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_11_ 3" x="135" y="808" w="85" h="125" pX="0.5" pY="0.5" oX="67" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_12_ 3" x="278" y="294" w="97" h="142" pX="0.5" pY="0.5" oX="67" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_13_ 4" x="1858" y="0" w="82" h="94" pX="0.5" pY="0.5" oX="70" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_14_ 4" x="1751" y="1175" w="87" h="101" pX="0.5" pY="0.5" oX="69" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_15_ 4" x="1412" y="207" w="103" h="109" pX="0.5" pY="0.5" oX="65" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_16_ 5" x="843" y="508" w="79" h="122" pX="0.5" pY="0.5" oX="52" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_17_ 5" x="500" y="511" w="68" h="132" pX="0.5" pY="0.5" oX="75" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_18_ 5" x="375" y="288" w="68" h="141" pX="0.5" pY="0.5" oX="92" oY="28" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_19_ 6" x="1238" y="342" w="81" h="112" pX="0.5" pY="0.5" oX="74" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_20_ 6" x="1687" y="1501" w="68" h="104" pX="0.5" pY="0.5" oX="64" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_21_ 6" x="1511" y="870" w="66" h="107" pX="0.5" pY="0.5" oX="45" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_22_ 7" x="1663" y="1189" w="88" h="105" pX="0.5" pY="0.5" oX="61" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_23_ 7" x="962" y="1601" w="91" h="106" pX="0.5" pY="0.5" oX="61" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Evade_24_ 7" x="567" y="1285" w="107" h="110" pX="0.5" pY="0.5" oX="50" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_01_ 0" x="970" y="1383" w="72" h="111" pX="0.5" pY="0.5" oX="83" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_02_ 0" x="1574" y="528" w="81" h="107" pX="0.5" pY="0.5" oX="80" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_03_ 0" x="877" y="1481" w="85" h="107" pX="0.5" pY="0.5" oX="78" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_04_ 1" x="752" y="1613" w="74" h="106" pX="0.5" pY="0.5" oX="69" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_05_ 1" x="334" y="1041" w="81" h="116" pX="0.5" pY="0.5" oX="70" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_06_ 1" x="760" y="517" w="83" h="126" pX="0.5" pY="0.5" oX="75" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_07_ 2" x="0" y="935" w="74" h="121" pX="0.5" pY="0.5" oX="70" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_08_ 2" x="867" y="245" w="81" h="122" pX="0.5" pY="0.5" oX="62" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_09_ 2" x="1063" y="227" w="85" h="118" pX="0.5" pY="0.5" oX="55" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_10_ 3" x="922" y="489" w="72" h="121" pX="0.5" pY="0.5" oX="64" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_11_ 3" x="110" y="678" w="81" h="130" pX="0.5" pY="0.5" oX="59" oY="29" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_12_ 3" x="523" y="274" w="86" h="133" pX="0.5" pY="0.5" oX="58" oY="25" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_13_ 4" x="1857" y="846" w="83" h="92" pX="0.5" pY="0.5" oX="68" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_14_ 4" x="1577" y="870" w="80" h="107" pX="0.5" pY="0.5" oX="77" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_15_ 4" x="0" y="1056" w="93" h="117" pX="0.5" pY="0.5" oX="74" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_16_ 5" x="567" y="1395" w="76" h="110" pX="0.5" pY="0.5" oX="58" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_17_ 5" x="684" y="649" w="69" h="126" pX="0.5" pY="0.5" oX="70" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_18_ 5" x="495" y="0" w="65" h="140" pX="0.5" pY="0.5" oX="83" oY="25" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_19_ 6" x="93" y="1056" w="81" h="117" pX="0.5" pY="0.5" oX="70" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_20_ 6" x="897" y="1284" w="73" h="111" pX="0.5" pY="0.5" oX="67" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_21_ 6" x="1125" y="1258" w="64" h="112" pX="0.5" pY="0.5" oX="61" oY="36" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_22_ 7" x="1155" y="579" w="78" h="116" pX="0.5" pY="0.5" oX="61" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_23_ 7" x="694" y="775" w="83" h="124" pX="0.5" pY="0.5" oX="56" oY="29" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Get Hit_24_ 7" x="603" y="134" w="92" h="131" pX="0.5" pY="0.5" oX="48" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_01_ 0" x="0" y="1505" w="84" h="109" pX="0.5" pY="0.5" oX="70" oY="58" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_02_ 0" x="666" y="1613" w="86" h="106" pX="0.5" pY="0.5" oX="69" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_03_ 0" x="392" y="1720" w="87" h="104" pX="0.5" pY="0.5" oX="68" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_04_ 1" x="475" y="1383" w="92" h="111" pX="0.5" pY="0.5" oX="42" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_05_ 1" x="324" y="1505" w="93" h="109" pX="0.5" pY="0.5" oX="39" oY="58" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_06_ 1" x="1515" y="207" w="93" h="107" pX="0.5" pY="0.5" oX="38" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_07_ 2" x="1660" y="0" w="96" h="105" pX="0.5" pY="0.5" oX="70" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_08_ 2" x="204" y="1720" w="98" h="104" pX="0.5" pY="0.5" oX="70" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_09_ 2" x="1756" y="102" w="100" h="102" pX="0.5" pY="0.5" oX="70" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_10_ 3" x="262" y="667" w="87" h="129" pX="0.5" pY="0.5" oX="51" oY="30" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_11_ 3" x="695" y="131" w="88" h="128" pX="0.5" pY="0.5" oX="50" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_12_ 3" x="777" y="259" w="90" h="126" pX="0.5" pY="0.5" oX="49" oY="32" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_13_ 4" x="1020" y="1810" w="92" h="96" pX="0.5" pY="0.5" oX="60" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_14_ 4" x="1486" y="1773" w="94" h="94" pX="0.5" pY="0.5" oX="58" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_15_ 4" x="1391" y="1770" w="95" h="93" pX="0.5" pY="0.5" oX="56" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_16_ 5" x="91" y="540" w="68" h="138" pX="0.5" pY="0.5" oX="65" oY="27" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_17_ 5" x="159" y="522" w="68" h="137" pX="0.5" pY="0.5" oX="64" oY="28" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_18_ 5" x="363" y="511" w="68" h="136" pX="0.5" pY="0.5" oX="63" oY="29" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_19_ 6" x="979" y="1270" w="71" h="113" pX="0.5" pY="0.5" oX="73" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_20_ 6" x="1380" y="1139" w="70" h="110" pX="0.5" pY="0.5" oX="74" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_21_ 6" x="596" y="1505" w="70" h="108" pX="0.5" pY="0.5" oX="75" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_22_ 7" x="1412" y="1562" w="100" h="105" pX="0.5" pY="0.5" oX="61" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_23_ 7" x="1756" y="0" w="102" h="102" pX="0.5" pY="0.5" oX="61" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Idle_24_ 7" x="1608" y="1296" w="104" h="101" pX="0.5" pY="0.5" oX="61" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_01_ 0" x="1857" y="1525" w="69" h="81" pX="0.5" pY="0.5" oX="71" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_02_ 0" x="1853" y="263" w="70" h="81" pX="0.5" pY="0.5" oX="70" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_03_ 0" x="1857" y="1361" w="70" h="82" pX="0.5" pY="0.5" oX="70" oY="68" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_04_ 1" x="187" y="1922" w="74" h="79" pX="0.5" pY="0.5" oX="56" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_05_ 1" x="335" y="1922" w="74" h="79" pX="0.5" pY="0.5" oX="56" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_06_ 1" x="261" y="1922" w="74" h="79" pX="0.5" pY="0.5" oX="56" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_07_ 2" x="1263" y="1930" w="74" h="73" pX="0.5" pY="0.5" oX="74" oY="86" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_08_ 2" x="1189" y="1930" w="74" h="73" pX="0.5" pY="0.5" oX="74" oY="86" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_09_ 2" x="1337" y="1930" w="74" h="72" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_10_ 3" x="1377" y="1863" w="73" h="66" pX="0.5" pY="0.5" oX="75" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_11_ 3" x="1466" y="1868" w="73" h="66" pX="0.5" pY="0.5" oX="75" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_12_ 3" x="1466" y="1935" w="73" h="66" pX="0.5" pY="0.5" oX="75" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_13_ 4" x="1802" y="834" w="55" h="81" pX="0.5" pY="0.5" oX="74" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_14_ 4" x="1853" y="344" w="55" h="81" pX="0.5" pY="0.5" oX="74" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_15_ 4" x="513" y="422" w="55" h="82" pX="0.5" pY="0.5" oX="74" oY="75" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_16_ 5" x="1853" y="425" w="78" h="67" pX="0.5" pY="0.5" oX="71" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_17_ 5" x="669" y="1930" w="78" h="67" pX="0.5" pY="0.5" oX="71" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_18_ 5" x="747" y="1930" w="78" h="67" pX="0.5" pY="0.5" oX="71" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_19_ 6" x="967" y="1930" w="78" h="64" pX="0.5" pY="0.5" oX="67" oY="83" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_20_ 6" x="1671" y="1867" w="79" h="63" pX="0.5" pY="0.5" oX="67" oY="84" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_21_ 6" x="1608" y="1501" w="79" h="63" pX="0.5" pY="0.5" oX="67" oY="84" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_22_ 7" x="1411" y="1930" w="55" h="73" pX="0.5" pY="0.5" oX="75" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_23_ 7" x="1027" y="345" w="54" h="73" pX="0.5" pY="0.5" oX="76" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Rest_24_ 7" x="1520" y="532" w="54" h="72" pX="0.5" pY="0.5" oX="76" oY="79" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_01_ 0" x="811" y="1494" w="66" h="108" pX="0.5" pY="0.5" oX="69" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_02_ 0" x="1449" y="316" w="71" h="109" pX="0.5" pY="0.5" oX="68" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_03_ 0" x="1702" y="309" w="70" h="102" pX="0.5" pY="0.5" oX="70" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_04_ 0" x="1657" y="847" w="68" h="104" pX="0.5" pY="0.5" oX="71" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_05_ 0" x="735" y="1505" w="76" h="108" pX="0.5" pY="0.5" oX="70" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_06_ 0" x="1593" y="1191" w="70" h="105" pX="0.5" pY="0.5" oX="68" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_07_ 0" x="74" y="935" w="71" h="121" pX="0.5" pY="0.5" oX="63" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_08_ 0" x="1320" y="224" w="74" h="111" pX="0.5" pY="0.5" oX="59" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_09_ 1" x="163" y="1392" w="111" h="96" pX="0.5" pY="0.5" oX="59" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_10_ 1" x="1643" y="977" w="105" h="97" pX="0.5" pY="0.5" oX="49" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_11_ 1" x="1410" y="1249" w="109" h="103" pX="0.5" pY="0.5" oX="55" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_12_ 1" x="784" y="1245" w="113" h="106" pX="0.5" pY="0.5" oX="62" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_13_ 1" x="364" y="1383" w="111" h="106" pX="0.5" pY="0.5" oX="68" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_14_ 1" x="321" y="894" w="120" h="108" pX="0.5" pY="0.5" oX="46" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_15_ 1" x="417" y="1505" w="97" h="108" pX="0.5" pY="0.5" oX="42" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_16_ 1" x="1137" y="1148" w="114" h="103" pX="0.5" pY="0.5" oX="59" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_17_ 2" x="0" y="1288" w="113" h="106" pX="0.5" pY="0.5" oX="34" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_18_ 2" x="1410" y="1352" w="109" h="107" pX="0.5" pY="0.5" oX="49" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_19_ 2" x="912" y="970" w="117" h="103" pX="0.5" pY="0.5" oX="37" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_20_ 2" x="916" y="630" w="121" h="107" pX="0.5" pY="0.5" oX="26" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_21_ 2" x="1029" y="974" w="117" h="108" pX="0.5" pY="0.5" oX="23" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_22_ 2" x="321" y="796" w="125" h="98" pX="0.5" pY="0.5" oX="37" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_23_ 2" x="1608" y="204" w="102" h="105" pX="0.5" pY="0.5" oX="62" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_24_ 2" x="1040" y="0" w="119" h="109" pX="0.5" pY="0.5" oX="28" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_25_ 3" x="560" y="0" w="66" h="134" pX="0.5" pY="0.5" oX="72" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_26_ 3" x="191" y="667" w="71" h="129" pX="0.5" pY="0.5" oX="69" oY="35" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_27_ 3" x="69" y="0" w="69" h="151" pX="0.5" pY="0.5" oX="68" oY="28" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_28_ 3" x="0" y="0" w="69" h="159" pX="0.5" pY="0.5" oX="68" oY="27" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_29_ 3" x="138" y="0" w="74" h="150" pX="0.5" pY="0.5" oX="63" oY="35" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_30_ 3" x="304" y="0" w="69" h="146" pX="0.5" pY="0.5" oX="70" oY="26" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_31_ 3" x="518" y="920" w="69" h="120" pX="0.5" pY="0.5" oX="74" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_32_ 3" x="297" y="147" w="72" h="146" pX="0.5" pY="0.5" oX="75" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_33_ 4" x="1755" y="1498" w="102" h="98" pX="0.5" pY="0.5" oX="61" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_34_ 4" x="1752" y="1396" w="79" h="102" pX="0.5" pY="0.5" oX="71" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_35_ 4" x="0" y="1614" w="73" h="106" pX="0.5" pY="0.5" oX="76" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_36_ 4" x="1583" y="0" w="77" h="107" pX="0.5" pY="0.5" oX="77" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_37_ 4" x="1326" y="0" w="84" h="112" pX="0.5" pY="0.5" oX="75" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_38_ 4" x="73" y="1614" w="82" h="106" pX="0.5" pY="0.5" oX="72" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_39_ 4" x="877" y="1588" w="85" h="106" pX="0.5" pY="0.5" oX="53" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_40_ 4" x="1410" y="0" w="110" h="105" pX="0.5" pY="0.5" oX="55" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_41_ 5" x="65" y="809" w="70" h="126" pX="0.5" pY="0.5" oX="80" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_42_ 5" x="1157" y="116" w="79" h="116" pX="0.5" pY="0.5" oX="64" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_43_ 5" x="220" y="796" w="101" h="125" pX="0.5" pY="0.5" oX="55" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_44_ 5" x="568" y="537" w="107" h="130" pX="0.5" pY="0.5" oX="57" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_45_ 5" x="0" y="679" w="110" h="130" pX="0.5" pY="0.5" oX="55" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_46_ 5" x="424" y="667" w="94" h="129" pX="0.5" pY="0.5" oX="59" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_47_ 5" x="844" y="775" w="72" h="122" pX="0.5" pY="0.5" oX="70" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_48_ 5" x="431" y="511" w="69" h="135" pX="0.5" pY="0.5" oX="83" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_49_ 6" x="1351" y="914" w="72" h="110" pX="0.5" pY="0.5" oX="68" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_50_ 6" x="1673" y="1669" w="79" h="101" pX="0.5" pY="0.5" oX="77" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_51_ 6" x="1410" y="663" w="109" h="100" pX="0.5" pY="0.5" oX="57" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_52_ 6" x="345" y="1170" w="115" h="99" pX="0.5" pY="0.5" oX="50" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_53_ 6" x="1127" y="815" w="116" h="103" pX="0.5" pY="0.5" oX="50" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_54_ 6" x="255" y="1824" w="98" h="98" pX="0.5" pY="0.5" oX="64" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_55_ 6" x="474" y="1041" w="73" h="116" pX="0.5" pY="0.5" oX="76" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_56_ 6" x="683" y="1038" w="74" h="116" pX="0.5" pY="0.5" oX="64" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_57_ 7" x="1146" y="1033" w="103" h="115" pX="0.5" pY="0.5" oX="54" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_58_ 7" x="1238" y="229" w="82" h="113" pX="0.5" pY="0.5" oX="67" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_59_ 7" x="369" y="146" w="77" h="142" pX="0.5" pY="0.5" oX="66" oY="32" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_60_ 7" x="0" y="159" w="83" h="149" pX="0.5" pY="0.5" oX="61" oY="28" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_61_ 7" x="188" y="294" w="90" h="145" pX="0.5" pY="0.5" oX="56" oY="29" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_62_ 7" x="518" y="667" w="97" h="128" pX="0.5" pY="0.5" oX="63" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_63_ 7" x="274" y="1389" w="90" h="111" pX="0.5" pY="0.5" oX="75" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Run_64_ 7" x="753" y="649" w="115" h="126" pX="0.5" pY="0.5" oX="49" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_01_ 0" x="242" y="1505" w="82" h="109" pX="0.5" pY="0.5" oX="68" oY="58" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_02_ 0" x="1326" y="1257" w="79" h="111" pX="0.5" pY="0.5" oX="66" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_03_ 0" x="634" y="1170" w="76" h="115" pX="0.5" pY="0.5" oX="66" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_04_ 1" x="254" y="1170" w="91" h="115" pX="0.5" pY="0.5" oX="42" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_05_ 1" x="916" y="737" w="89" h="121" pX="0.5" pY="0.5" oX="44" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_06_ 1" x="626" y="0" w="84" h="131" pX="0.5" pY="0.5" oX="48" oY="36" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_07_ 2" x="1053" y="1601" w="96" h="106" pX="0.5" pY="0.5" oX="70" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_08_ 2" x="1149" y="1601" w="95" h="106" pX="0.5" pY="0.5" oX="70" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_09_ 2" x="1518" y="1459" w="90" h="106" pX="0.5" pY="0.5" oX="70" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_10_ 3" x="675" y="523" w="85" h="126" pX="0.5" pY="0.5" oX="62" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_11_ 3" x="741" y="391" w="84" h="126" pX="0.5" pY="0.5" oX="64" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_12_ 3" x="710" y="0" w="84" h="128" pX="0.5" pY="0.5" oX="64" oY="30" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_13_ 4" x="1712" y="1294" w="97" h="102" pX="0.5" pY="0.5" oX="48" oY="59" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_14_ 4" x="103" y="1720" w="101" h="104" pX="0.5" pY="0.5" oX="44" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_15_ 4" x="1410" y="1459" w="108" h="103" pX="0.5" pY="0.5" oX="37" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_16_ 5" x="349" y="667" w="75" h="129" pX="0.5" pY="0.5" oX="59" oY="36" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_17_ 5" x="523" y="140" w="80" h="134" pX="0.5" pY="0.5" oX="55" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_18_ 5" x="446" y="143" w="77" h="140" pX="0.5" pY="0.5" oX="59" oY="24" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_19_ 6" x="710" y="1170" w="74" h="114" pX="0.5" pY="0.5" oX="72" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_20_ 6" x="554" y="1170" w="80" h="115" pX="0.5" pY="0.5" oX="71" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_21_ 6" x="174" y="1054" w="79" h="117" pX="0.5" pY="0.5" oX="71" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_22_ 7" x="560" y="1613" w="106" h="102" pX="0.5" pY="0.5" oX="61" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_23_ 7" x="1410" y="564" w="110" h="99" pX="0.5" pY="0.5" oX="61" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Use Skill_24_ 7" x="75" y="1173" w="115" h="111" pX="0.5" pY="0.5" oX="62" oY="32" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_01_ 0" x="666" y="1505" w="69" h="108" pX="0.5" pY="0.5" oX="66" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_02_ 0" x="190" y="1171" w="64" h="115" pX="0.5" pY="0.5" oX="72" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_03_ 0" x="825" y="385" w="63" h="123" pX="0.5" pY="0.5" oX="73" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_04_ 0" x="415" y="1041" w="59" h="116" pX="0.5" pY="0.5" oX="76" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_05_ 0" x="844" y="1017" w="61" h="116" pX="0.5" pY="0.5" oX="75" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_06_ 0" x="1345" y="454" w="67" h="110" pX="0.5" pY="0.5" oX="67" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_07_ 0" x="1657" y="413" w="68" h="104" pX="0.5" pY="0.5" oX="63" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_08_ 0" x="781" y="1383" w="70" h="111" pX="0.5" pY="0.5" oX="62" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_09_ 1" x="1510" y="1670" w="87" h="103" pX="0.5" pY="0.5" oX="65" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_10_ 1" x="468" y="1613" w="92" h="106" pX="0.5" pY="0.5" oX="58" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_11_ 1" x="302" y="1720" w="90" h="104" pX="0.5" pY="0.5" oX="49" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_12_ 1" x="1638" y="1084" w="102" h="105" pX="0.5" pY="0.5" oX="45" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_13_ 1" x="374" y="1614" w="94" h="106" pX="0.5" pY="0.5" oX="54" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_14_ 1" x="962" y="1494" w="79" h="107" pX="0.5" pY="0.5" oX="67" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_15_ 1" x="1383" y="335" w="66" h="109" pX="0.5" pY="0.5" oX="76" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_16_ 1" x="665" y="1719" w="72" h="104" pX="0.5" pY="0.5" oX="72" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_17_ 2" x="1547" y="1084" w="91" h="107" pX="0.5" pY="0.5" oX="49" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_18_ 2" x="1547" y="977" w="96" h="107" pX="0.5" pY="0.5" oX="51" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_19_ 2" x="150" y="1505" w="92" h="109" pX="0.5" pY="0.5" oX="64" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_20_ 2" x="1520" y="314" w="102" h="107" pX="0.5" pY="0.5" oX="58" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_21_ 2" x="567" y="1715" w="98" h="104" pX="0.5" pY="0.5" oX="53" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_22_ 2" x="514" y="1505" w="82" h="108" pX="0.5" pY="0.5" oX="55" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_23_ 2" x="1251" y="1145" w="66" h="113" pX="0.5" pY="0.5" oX="63" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_24_ 2" x="87" y="1394" w="76" h="111" pX="0.5" pY="0.5" oX="56" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_25_ 3" x="615" y="667" w="69" h="128" pX="0.5" pY="0.5" oX="69" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_26_ 3" x="446" y="796" w="66" h="125" pX="0.5" pY="0.5" oX="68" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_27_ 3" x="1152" y="463" w="63" h="116" pX="0.5" pY="0.5" oX="69" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_28_ 3" x="868" y="0" w="63" h="124" pX="0.5" pY="0.5" oX="69" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_29_ 3" x="0" y="809" w="65" h="126" pX="0.5" pY="0.5" oX="68" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_30_ 3" x="960" y="367" w="67" h="122" pX="0.5" pY="0.5" oX="70" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_31_ 3" x="1212" y="918" w="63" h="114" pX="0.5" pY="0.5" oX="77" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_32_ 3" x="777" y="775" w="67" h="124" pX="0.5" pY="0.5" oX="75" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_33_ 4" x="1728" y="633" w="89" h="101" pX="0.5" pY="0.5" oX="56" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_34_ 4" x="353" y="1824" w="85" h="97" pX="0.5" pY="0.5" oX="61" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_35_ 4" x="1412" y="1667" w="98" h="103" pX="0.5" pY="0.5" oX="56" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_36_ 4" x="1318" y="802" w="92" h="112" pX="0.5" pY="0.5" oX="66" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_37_ 4" x="1322" y="566" w="87" h="111" pX="0.5" pY="0.5" oX="65" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_38_ 4" x="1492" y="425" w="82" h="107" pX="0.5" pY="0.5" oX="59" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_39_ 4" x="1335" y="1577" w="77" h="105" pX="0.5" pY="0.5" oX="63" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_40_ 4" x="1024" y="1707" w="81" h="103" pX="0.5" pY="0.5" oX="59" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_41_ 5" x="145" y="933" w="57" h="121" pX="0.5" pY="0.5" oX="90" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_42_ 5" x="868" y="124" w="57" h="121" pX="0.5" pY="0.5" oX="86" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_43_ 5" x="1317" y="1145" w="63" h="112" pX="0.5" pY="0.5" oX="78" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_44_ 5" x="0" y="1173" w="75" h="115" pX="0.5" pY="0.5" oX="64" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_45_ 5" x="1215" y="463" w="66" h="113" pX="0.5" pY="0.5" oX="77" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_46_ 5" x="1281" y="454" w="64" h="112" pX="0.5" pY="0.5" oX="83" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_47_ 5" x="1050" y="1270" w="75" h="113" pX="0.5" pY="0.5" oX="76" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_48_ 5" x="1081" y="698" w="68" h="117" pX="0.5" pY="0.5" oX="81" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_49_ 6" x="587" y="920" w="59" h="119" pX="0.5" pY="0.5" oX="72" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_50_ 6" x="627" y="1039" w="56" h="116" pX="0.5" pY="0.5" oX="76" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_51_ 6" x="1003" y="123" w="60" h="119" pX="0.5" pY="0.5" oX="81" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_52_ 6" x="1188" y="1493" w="78" h="107" pX="0.5" pY="0.5" oX="78" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_53_ 6" x="710" y="1284" w="71" h="111" pX="0.5" pY="0.5" oX="70" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_54_ 6" x="713" y="899" w="64" h="119" pX="0.5" pY="0.5" oX="71" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_55_ 6" x="1081" y="581" w="74" h="117" pX="0.5" pY="0.5" oX="68" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_56_ 6" x="646" y="919" w="67" h="119" pX="0.5" pY="0.5" oX="70" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_57_ 7" x="1159" y="0" w="92" h="116" pX="0.5" pY="0.5" oX="69" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_58_ 7" x="1233" y="576" w="89" h="113" pX="0.5" pY="0.5" oX="68" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_59_ 7" x="643" y="1395" w="99" h="110" pX="0.5" pY="0.5" oX="63" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_60_ 7" x="460" y="1170" w="94" h="115" pX="0.5" pY="0.5" oX="59" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_61_ 7" x="202" y="933" w="89" h="120" pX="0.5" pY="0.5" oX="65" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_62_ 7" x="757" y="1018" w="79" h="116" pX="0.5" pY="0.5" oX="80" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_63_ 7" x="1474" y="981" w="73" h="107" pX="0.5" pY="0.5" oX="81" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Walk_64_ 7" x="1236" y="116" w="84" h="113" pX="0.5" pY="0.5" oX="75" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_01_ 0" x="1772" y="306" w="77" h="101" pX="0.5" pY="0.5" oX="66" oY="73" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_02_ 0" x="1733" y="494" w="79" h="99" pX="0.5" pY="0.5" oX="64" oY="74" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_03_ 0" x="174" y="1824" w="81" h="98" pX="0.5" pY="0.5" oX="62" oY="75" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_04_ 1" x="1710" y="204" w="78" h="102" pX="0.5" pY="0.5" oX="51" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_05_ 1" x="1608" y="1397" w="77" h="104" pX="0.5" pY="0.5" oX="52" oY="63" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_06_ 1" x="155" y="1614" w="77" h="106" pX="0.5" pY="0.5" oX="52" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_07_ 2" x="737" y="1719" w="80" h="104" pX="0.5" pY="0.5" oX="71" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_08_ 2" x="1648" y="635" w="80" h="105" pX="0.5" pY="0.5" oX="71" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_09_ 2" x="1622" y="309" w="80" h="104" pX="0.5" pY="0.5" oX="71" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_10_ 3" x="1655" y="528" w="78" h="105" pX="0.5" pY="0.5" oX="70" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_11_ 3" x="1519" y="1297" w="81" h="106" pX="0.5" pY="0.5" oX="70" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_12_ 3" x="1574" y="421" w="83" h="107" pX="0.5" pY="0.5" oX="70" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_13_ 4" x="1751" y="411" w="102" h="83" pX="0.5" pY="0.5" oX="49" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_14_ 4" x="921" y="1707" w="103" h="84" pX="0.5" pY="0.5" oX="48" oY="75" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_15_ 4" x="817" y="1719" w="104" h="86" pX="0.5" pY="0.5" oX="47" oY="74" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_16_ 5" x="1520" y="0" w="63" h="107" pX="0.5" pY="0.5" oX="71" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_17_ 5" x="1450" y="1134" w="63" h="110" pX="0.5" pY="0.5" oX="71" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_18_ 5" x="1319" y="342" w="64" h="112" pX="0.5" pY="0.5" oX="71" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_19_ 6" x="1146" y="918" w="66" h="115" pX="0.5" pY="0.5" oX="71" oY="63" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_20_ 6" x="1251" y="802" w="66" h="113" pX="0.5" pY="0.5" oX="70" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_21_ 6" x="1260" y="1258" w="66" h="112" pX="0.5" pY="0.5" oX="70" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_22_ 7" x="1625" y="107" w="104" h="97" pX="0.5" pY="0.5" oX="62" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_23_ 7" x="1520" y="107" w="105" h="97" pX="0.5" pY="0.5" oX="62" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Soldier_Woozy_24_ 7" x="1290" y="1479" w="107" h="98" pX="0.5" pY="0.5" oX="62" oY="50" oW="200" oH="200"/>
+</TextureAtlas>

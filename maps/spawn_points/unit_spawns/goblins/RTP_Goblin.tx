@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../sprite_sheets/units/goblins/goblin_basic.tsx"/>
+ <object name="RTP_Goblin" class="unit" gid="141" width="53" height="78"/>
+</template>

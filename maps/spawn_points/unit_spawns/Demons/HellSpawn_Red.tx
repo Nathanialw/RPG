@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../sprite_sheets/units/Demons/HellSpawn_Gray_Red.tsx"/>
+ <object name="HellSpawn_Red" class="unit" gid="2" width="148" height="89"/>
+</template>

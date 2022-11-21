@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../../sprite_sheets/units/animals/hostile/wolves/RTP_GrayWolf.tsx"/>
+ <object name="RTP_GrayWolf" class="unit" gid="1" width="97" height="97"/>
+</template>

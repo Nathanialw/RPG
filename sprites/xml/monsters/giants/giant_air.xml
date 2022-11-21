@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="4094" height="2735" scale="1" format="RGBA8888">
+  <sprite n="Giant_Air_Attack 1_01_ 0" x="871" y="295" w="168" h="173" pX="0.5" pY="0.5" oX="67" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_02_ 0" x="2551" y="2292" w="150" h="243" pX="0.5" pY="0.5" oX="125" oY="37" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_03_ 0" x="2287" y="0" w="246" h="149" pX="0.5" pY="0.5" oX="4" oY="144" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_04_ 1" x="1387" y="658" w="138" h="186" pX="0.5" pY="0.5" oX="128" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_05_ 1" x="3942" y="503" w="126" h="185" pX="0.5" pY="0.5" oX="150" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_06_ 1" x="3354" y="2308" w="150" h="251" pX="0.5" pY="0.5" oX="118" oY="27" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_07_ 2" x="2041" y="1241" w="147" h="198" pX="0.5" pY="0.5" oX="87" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_08_ 2" x="2153" y="2286" w="117" h="239" pX="0.5" pY="0.5" oX="87" oY="43" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_09_ 2" x="986" y="2260" w="166" h="233" pX="0.5" pY="0.5" oX="86" oY="117" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_10_ 3" x="1984" y="1847" w="164" h="212" pX="0.5" pY="0.5" oX="126" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_11_ 3" x="2660" y="1053" w="147" h="195" pX="0.5" pY="0.5" oX="84" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_12_ 3" x="248" y="2239" w="255" h="231" pX="0.5" pY="0.5" oX="95" oY="67" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_13_ 4" x="1496" y="845" w="164" h="189" pX="0.5" pY="0.5" oX="90" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_14_ 4" x="2379" y="1646" w="134" h="207" pX="0.5" pY="0.5" oX="182" oY="77" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_15_ 4" x="1033" y="1620" w="179" h="206" pX="0.5" pY="0.5" oX="71" oY="77" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_16_ 5" x="1238" y="840" w="133" h="189" pX="0.5" pY="0.5" oX="118" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_17_ 5" x="3241" y="318" w="132" h="177" pX="0.5" pY="0.5" oX="119" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_18_ 5" x="931" y="1826" w="202" h="211" pX="0.5" pY="0.5" oX="89" oY="67" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_19_ 6" x="3133" y="1655" w="134" h="208" pX="0.5" pY="0.5" oX="99" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_20_ 6" x="3933" y="1878" w="138" h="214" pX="0.5" pY="0.5" oX="99" oY="37" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_21_ 6" x="912" y="2037" w="147" h="217" pX="0.5" pY="0.5" oX="100" oY="131" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_22_ 7" x="1212" y="1625" w="159" h="206" pX="0.5" pY="0.5" oX="116" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_23_ 7" x="1282" y="2043" w="118" h="219" pX="0.5" pY="0.5" oX="72" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 1_24_ 7" x="2158" y="1643" w="221" h="206" pX="0.5" pY="0.5" oX="108" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_01_ 0" x="1129" y="297" w="168" h="173" pX="0.5" pY="0.5" oX="67" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_02_ 0" x="3504" y="2308" w="121" h="252" pX="0.5" pY="0.5" oX="101" oY="29" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_03_ 0" x="2882" y="2075" w="128" h="224" pX="0.5" pY="0.5" oX="130" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_04_ 1" x="0" y="632" w="138" h="185" pX="0.5" pY="0.5" oX="142" oY="114" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_05_ 1" x="855" y="2254" w="131" h="232" pX="0.5" pY="0.5" oX="155" oY="67" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_06_ 1" x="2262" y="314" w="217" h="176" pX="0.5" pY="0.5" oX="59" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_07_ 2" x="2188" y="1243" w="146" h="198" pX="0.5" pY="0.5" oX="69" oY="127" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_08_ 2" x="1896" y="2279" w="133" h="237" pX="0.5" pY="0.5" oX="72" oY="66" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_09_ 2" x="169" y="460" w="222" h="178" pX="0.5" pY="0.5" oX="72" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_10_ 3" x="2538" y="1855" w="164" h="213" pX="0.5" pY="0.5" oX="126" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_11_ 3" x="1371" y="1626" w="133" h="206" pX="0.5" pY="0.5" oX="132" oY="111" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_12_ 3" x="1507" y="2271" w="119" h="236" pX="0.5" pY="0.5" oX="103" oY="81" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_13_ 4" x="1784" y="853" w="164" h="189" pX="0.5" pY="0.5" oX="74" oY="112" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_14_ 4" x="3234" y="2305" w="120" h="248" pX="0.5" pY="0.5" oX="144" oY="53" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_15_ 4" x="2434" y="1246" w="197" h="198" pX="0.5" pY="0.5" oX="61" oY="136" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_16_ 5" x="3242" y="680" w="133" h="188" pX="0.5" pY="0.5" oX="118" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_17_ 5" x="1744" y="1042" w="163" h="194" pX="0.5" pY="0.5" oX="118" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_18_ 5" x="3704" y="1066" w="187" h="196" pX="0.5" pY="0.5" oX="64" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_19_ 6" x="3267" y="1657" w="133" h="208" pX="0.5" pY="0.5" oX="80" oY="114" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_20_ 6" x="1133" y="1831" w="148" h="211" pX="0.5" pY="0.5" oX="64" oY="51" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_21_ 6" x="0" y="2013" w="207" h="215" pX="0.5" pY="0.5" oX="85" oY="115" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_22_ 7" x="2975" y="1655" w="158" h="207" pX="0.5" pY="0.5" oX="136" oY="109" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_23_ 7" x="503" y="2241" w="108" h="231" pX="0.5" pY="0.5" oX="120" oY="85" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Attack 2_24_ 7" x="3010" y="2076" w="168" h="225" pX="0.5" pY="0.5" oX="116" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_01_ 0" x="271" y="288" w="168" h="172" pX="0.5" pY="0.5" oX="67" oY="129" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_02_ 0" x="3924" y="154" w="169" h="171" pX="0.5" pY="0.5" oX="67" oY="130" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_03_ 0" x="0" y="282" w="169" h="171" pX="0.5" pY="0.5" oX="67" oY="131" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_04_ 1" x="138" y="638" w="144" h="185" pX="0.5" pY="0.5" oX="103" oY="114" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_05_ 1" x="3183" y="495" w="143" h="184" pX="0.5" pY="0.5" oX="104" oY="115" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_06_ 1" x="2256" y="490" w="143" h="183" pX="0.5" pY="0.5" oX="104" oY="116" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_07_ 2" x="2631" y="1248" w="147" h="198" pX="0.5" pY="0.5" oX="103" oY="127" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_08_ 2" x="2778" y="1249" w="146" h="198" pX="0.5" pY="0.5" oX="103" oY="128" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_09_ 2" x="804" y="1216" w="146" h="197" pX="0.5" pY="0.5" oX="103" oY="129" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_10_ 3" x="2965" y="1862" w="164" h="213" pX="0.5" pY="0.5" oX="126" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_11_ 3" x="3368" y="1867" w="165" h="213" pX="0.5" pY="0.5" oX="125" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_12_ 3" x="1281" y="1832" w="165" h="211" pX="0.5" pY="0.5" oX="125" oY="109" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_13_ 4" x="2195" y="860" w="165" h="189" pX="0.5" pY="0.5" oX="60" oY="121" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_14_ 4" x="3508" y="683" w="164" h="188" pX="0.5" pY="0.5" oX="61" oY="122" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_15_ 4" x="2602" y="676" w="163" h="187" pX="0.5" pY="0.5" oX="62" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_16_ 5" x="3375" y="680" w="133" h="188" pX="0.5" pY="0.5" oX="118" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_17_ 5" x="3784" y="687" w="133" h="188" pX="0.5" pY="0.5" oX="118" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_18_ 5" x="3917" y="688" w="131" h="188" pX="0.5" pY="0.5" oX="119" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_19_ 6" x="3106" y="1451" w="134" h="204" pX="0.5" pY="0.5" oX="99" oY="128" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_20_ 6" x="1253" y="1423" w="134" h="202" pX="0.5" pY="0.5" oX="99" oY="130" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_21_ 6" x="372" y="1406" w="134" h="201" pX="0.5" pY="0.5" oX="100" oY="131" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_22_ 7" x="1996" y="1641" w="162" h="206" pX="0.5" pY="0.5" oX="136" oY="117" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_23_ 7" x="445" y="1609" w="161" h="205" pX="0.5" pY="0.5" oX="136" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Behavior_24_ 7" x="3817" y="1463" w="159" h="204" pX="0.5" pY="0.5" oX="136" oY="119" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_01_ 0" x="950" y="1217" w="175" h="197" pX="0.5" pY="0.5" oX="45" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_02_ 0" x="508" y="2025" w="176" h="216" pX="0.5" pY="0.5" oX="43" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_03_ 0" x="2612" y="2069" w="162" h="223" pX="0.5" pY="0.5" oX="55" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_04_ 1" x="2029" y="2282" w="124" h="238" pX="0.5" pY="0.5" oX="120" oY="53" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_05_ 1" x="611" y="2245" w="131" h="231" pX="0.5" pY="0.5" oX="120" oY="60" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_06_ 1" x="2702" y="1856" w="133" h="213" pX="0.5" pY="0.5" oX="120" oY="78" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_07_ 2" x="1623" y="1040" w="121" h="194" pX="0.5" pY="0.5" oX="114" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_08_ 2" x="3953" y="1263" w="119" h="200" pX="0.5" pY="0.5" oX="114" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_09_ 2" x="3976" y="1463" w="118" h="206" pX="0.5" pY="0.5" oX="109" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_10_ 3" x="125" y="1600" w="171" h="204" pX="0.5" pY="0.5" oX="142" oY="109" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_11_ 3" x="1125" y="1222" w="175" h="197" pX="0.5" pY="0.5" oX="143" oY="116" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_12_ 3" x="2689" y="863" w="168" h="190" pX="0.5" pY="0.5" oX="144" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_13_ 4" x="1264" y="2262" w="136" h="234" pX="0.5" pY="0.5" oX="77" oY="72" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_14_ 4" x="2701" y="2295" w="119" h="245" pX="0.5" pY="0.5" oX="101" oY="61" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_15_ 4" x="1152" y="2261" w="112" h="234" pX="0.5" pY="0.5" oX="112" oY="72" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_16_ 5" x="3178" y="2078" w="153" h="225" pX="0.5" pY="0.5" oX="123" oY="71" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_17_ 5" x="3400" y="1659" w="169" h="208" pX="0.5" pY="0.5" oX="123" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_18_ 5" x="3891" y="876" w="186" h="191" pX="0.5" pY="0.5" oX="123" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_19_ 6" x="282" y="640" w="145" h="185" pX="0.5" pY="0.5" oX="82" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_20_ 6" x="2479" y="315" w="153" h="176" pX="0.5" pY="0.5" oX="71" oY="115" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_21_ 6" x="580" y="465" w="182" h="181" pX="0.5" pY="0.5" oX="42" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_22_ 7" x="1907" y="1043" w="142" h="194" pX="0.5" pY="0.5" oX="137" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_23_ 7" x="1000" y="835" w="117" h="189" pX="0.5" pY="0.5" oX="137" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Block_24_ 7" x="3590" y="1062" w="114" h="196" pX="0.5" pY="0.5" oX="136" oY="129" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_01_ 0" x="1426" y="141" w="99" h="160" pX="0.5" pY="0.5" oX="122" oY="128" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_02_ 0" x="941" y="138" w="98" h="157" pX="0.5" pY="0.5" oX="123" oY="130" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_03_ 0" x="3952" y="0" w="97" h="154" pX="0.5" pY="0.5" oX="124" oY="132" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_04_ 1" x="1039" y="139" w="110" h="157" pX="0.5" pY="0.5" oX="129" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_05_ 1" x="295" y="133" w="107" h="155" pX="0.5" pY="0.5" oX="132" oY="128" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_06_ 1" x="0" y="128" w="105" h="154" pX="0.5" pY="0.5" oX="134" oY="129" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_07_ 2" x="3570" y="0" w="103" h="153" pX="0.5" pY="0.5" oX="120" oY="132" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_08_ 2" x="3470" y="0" w="100" h="152" pX="0.5" pY="0.5" oX="120" oY="133" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_09_ 2" x="2970" y="0" w="99" h="151" pX="0.5" pY="0.5" oX="120" oY="134" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_10_ 3" x="3542" y="153" w="99" h="168" pX="0.5" pY="0.5" oX="141" oY="125" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_11_ 3" x="2814" y="150" w="99" h="167" pX="0.5" pY="0.5" oX="141" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_12_ 3" x="3129" y="151" w="98" h="167" pX="0.5" pY="0.5" oX="141" oY="127" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_13_ 4" x="3069" y="0" w="97" h="151" pX="0.5" pY="0.5" oX="136" oY="122" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_14_ 4" x="2630" y="0" w="97" h="150" pX="0.5" pY="0.5" oX="136" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_15_ 4" x="2533" y="0" w="97" h="149" pX="0.5" pY="0.5" oX="136" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_16_ 5" x="1783" y="146" w="100" h="163" pX="0.5" pY="0.5" oX="131" oY="119" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_17_ 5" x="1883" y="146" w="101" h="163" pX="0.5" pY="0.5" oX="130" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_18_ 5" x="1984" y="147" w="102" h="163" pX="0.5" pY="0.5" oX="129" oY="121" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_19_ 6" x="1834" y="0" w="94" h="146" pX="0.5" pY="0.5" oX="128" oY="129" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_20_ 6" x="1740" y="0" w="94" h="143" pX="0.5" pY="0.5" oX="128" oY="131" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_21_ 6" x="1645" y="0" w="95" h="142" pX="0.5" pY="0.5" oX="128" oY="132" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_22_ 7" x="105" y="128" w="95" h="154" pX="0.5" pY="0.5" oX="135" oY="121" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_23_ 7" x="200" y="133" w="95" h="154" pX="0.5" pY="0.5" oX="135" oY="122" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Critical HP_24_ 7" x="3673" y="0" w="95" h="153" pX="0.5" pY="0.5" oX="135" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Dead_01_ 0" x="1398" y="302" w="177" h="174" pX="0.5" pY="0.5" oX="114" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Dead_02_ 1" x="617" y="0" w="230" h="137" pX="0.5" pY="0.5" oX="72" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Dead_03_ 2" x="0" y="0" w="231" h="128" pX="0.5" pY="0.5" oX="48" oY="137" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Dead_04_ 3" x="2275" y="149" w="177" h="165" pX="0.5" pY="0.5" oX="59" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Dead_05_ 4" x="1233" y="0" w="206" h="140" pX="0.5" pY="0.5" oX="81" oY="129" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Dead_06_ 5" x="3166" y="0" w="184" h="151" pX="0.5" pY="0.5" oX="58" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Dead_07_ 6" x="3768" y="0" w="184" h="153" pX="0.5" pY="0.5" oX="108" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Dead_08_ 7" x="1439" y="0" w="206" h="141" pX="0.5" pY="0.5" oX="62" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_01_ 0" x="2835" y="1859" w="130" h="213" pX="0.5" pY="0.5" oX="105" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_02_ 0" x="2987" y="1451" w="119" h="203" pX="0.5" pY="0.5" oX="116" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_03_ 0" x="112" y="823" w="159" h="188" pX="0.5" pY="0.5" oX="82" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_04_ 1" x="1849" y="1844" w="135" h="212" pX="0.5" pY="0.5" oX="84" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_05_ 1" x="1300" y="1226" w="142" h="197" pX="0.5" pY="0.5" oX="90" oY="112" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_06_ 1" x="1397" y="476" w="130" h="182" pX="0.5" pY="0.5" oX="105" oY="125" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_07_ 2" x="2069" y="857" w="126" h="190" pX="0.5" pY="0.5" oX="146" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_08_ 2" x="3619" y="871" w="147" h="191" pX="0.5" pY="0.5" oX="123" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_09_ 2" x="0" y="2228" w="137" h="229" pX="0.5" pY="0.5" oX="118" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_10_ 3" x="2399" y="491" w="139" h="183" pX="0.5" pY="0.5" oX="115" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_11_ 3" x="2924" y="1251" w="126" h="198" pX="0.5" pY="0.5" oX="118" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_12_ 3" x="506" y="1408" w="156" h="201" pX="0.5" pY="0.5" oX="121" oY="106" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_13_ 4" x="1387" y="1424" w="130" h="202" pX="0.5" pY="0.5" oX="94" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_14_ 4" x="3050" y="1253" w="152" h="198" pX="0.5" pY="0.5" oX="76" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_15_ 4" x="1038" y="1024" w="164" h="193" pX="0.5" pY="0.5" oX="76" oY="114" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_16_ 5" x="1517" y="1431" w="127" h="202" pX="0.5" pY="0.5" oX="111" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_17_ 5" x="3766" y="875" w="125" h="191" pX="0.5" pY="0.5" oX="120" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_18_ 5" x="1525" y="659" w="149" h="186" pX="0.5" pY="0.5" oX="112" oY="121" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_19_ 6" x="3691" y="1460" w="126" h="205" pX="0.5" pY="0.5" oX="125" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_20_ 6" x="1400" y="2050" w="124" h="219" pX="0.5" pY="0.5" oX="118" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_21_ 6" x="3636" y="2087" w="148" h="227" pX="0.5" pY="0.5" oX="100" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_22_ 7" x="427" y="640" w="133" h="185" pX="0.5" pY="0.5" oX="130" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_23_ 7" x="2188" y="1049" w="153" h="194" pX="0.5" pY="0.5" oX="131" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Evade_24_ 7" x="935" y="1414" w="171" h="201" pX="0.5" pY="0.5" oX="112" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_01_ 0" x="207" y="2020" w="144" h="215" pX="0.5" pY="0.5" oX="91" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_02_ 0" x="2148" y="1849" w="134" h="212" pX="0.5" pY="0.5" oX="127" oY="71" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_03_ 0" x="3784" y="2090" w="142" h="228" pX="0.5" pY="0.5" oX="135" oY="58" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_04_ 1" x="2282" y="1853" w="148" h="212" pX="0.5" pY="0.5" oX="71" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_05_ 1" x="3202" y="1253" w="162" h="198" pX="0.5" pY="0.5" oX="91" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_06_ 1" x="2117" y="2061" w="141" h="221" pX="0.5" pY="0.5" oX="130" oY="81" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_07_ 2" x="3891" y="1067" w="140" h="196" pX="0.5" pY="0.5" oX="146" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_08_ 2" x="2360" y="860" w="164" h="189" pX="0.5" pY="0.5" oX="114" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_09_ 2" x="2407" y="2290" w="144" h="241" pX="0.5" pY="0.5" oX="93" oY="50" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_10_ 3" x="2538" y="491" w="155" h="183" pX="0.5" pY="0.5" oX="115" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_11_ 3" x="113" y="2465" w="134" h="257" pX="0.5" pY="0.5" oX="103" oY="48" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_12_ 3" x="3878" y="2320" w="147" h="254" pX="0.5" pY="0.5" oX="84" oY="60" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_13_ 4" x="2001" y="1439" w="178" h="202" pX="0.5" pY="0.5" oX="47" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_14_ 4" x="2049" y="1047" w="139" h="194" pX="0.5" pY="0.5" oX="114" oY="80" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_15_ 4" x="0" y="1202" w="179" h="196" pX="0.5" pY="0.5" oX="120" oY="74" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_16_ 5" x="1446" y="1839" w="114" h="211" pX="0.5" pY="0.5" oX="118" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_17_ 5" x="3006" y="2301" w="130" h="247" pX="0.5" pY="0.5" oX="115" oY="65" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_18_ 5" x="3136" y="2303" w="98" h="247" pX="0.5" pY="0.5" oX="154" oY="71" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_19_ 6" x="137" y="2235" w="111" h="230" pX="0.5" pY="0.5" oX="131" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_20_ 6" x="3814" y="1667" w="133" h="209" pX="0.5" pY="0.5" oX="121" oY="79" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_21_ 6" x="1626" y="2272" w="106" h="236" pX="0.5" pY="0.5" oX="116" oY="58" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_22_ 7" x="560" y="646" w="181" h="185" pX="0.5" pY="0.5" oX="130" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_23_ 7" x="2258" y="2065" w="145" h="221" pX="0.5" pY="0.5" oX="110" oY="64" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Get Hit_24_ 7" x="2820" y="2299" w="186" h="246" pX="0.5" pY="0.5" oX="62" oY="51" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_01_ 0" x="1524" y="2052" w="113" h="219" pX="0.5" pY="0.5" oX="122" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_02_ 0" x="1637" y="2053" w="114" h="219" pX="0.5" pY="0.5" oX="121" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_03_ 0" x="1059" y="2042" w="113" h="218" pX="0.5" pY="0.5" oX="121" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_04_ 1" x="2807" y="1054" w="147" h="195" pX="0.5" pY="0.5" oX="78" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_05_ 1" x="2954" y="1056" w="148" h="195" pX="0.5" pY="0.5" oX="77" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_06_ 1" x="3102" y="1058" w="147" h="195" pX="0.5" pY="0.5" oX="77" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_07_ 2" x="1674" y="665" w="141" h="186" pX="0.5" pY="0.5" oX="138" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_08_ 2" x="1815" y="667" w="140" h="186" pX="0.5" pY="0.5" oX="139" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_09_ 2" x="1955" y="668" w="140" h="186" pX="0.5" pY="0.5" oX="139" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_10_ 3" x="858" y="648" w="113" h="187" pX="0.5" pY="0.5" oX="125" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_11_ 3" x="3672" y="683" w="112" h="188" pX="0.5" pY="0.5" oX="126" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_12_ 3" x="0" y="817" w="112" h="188" pX="0.5" pY="0.5" oX="126" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_13_ 4" x="3690" y="1665" w="124" h="209" pX="0.5" pY="0.5" oX="114" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_14_ 4" x="3947" y="1669" w="125" h="209" pX="0.5" pY="0.5" oX="113" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_15_ 4" x="0" y="1803" w="124" h="209" pX="0.5" pY="0.5" oX="113" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_16_ 5" x="1442" y="1227" w="126" h="197" pX="0.5" pY="0.5" oX="93" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_17_ 5" x="179" y="1204" w="126" h="196" pX="0.5" pY="0.5" oX="93" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_18_ 5" x="305" y="1204" w="126" h="196" pX="0.5" pY="0.5" oX="93" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_19_ 6" x="96" y="1011" w="117" h="191" pX="0.5" pY="0.5" oX="149" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_20_ 6" x="577" y="1020" w="117" h="192" pX="0.5" pY="0.5" oX="149" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_21_ 6" x="213" y="1013" w="117" h="191" pX="0.5" pY="0.5" oX="149" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_22_ 7" x="271" y="825" w="120" h="188" pX="0.5" pY="0.5" oX="125" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_23_ 7" x="391" y="825" w="121" h="188" pX="0.5" pY="0.5" oX="125" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Idle_24_ 7" x="512" y="831" w="121" h="188" pX="0.5" pY="0.5" oX="125" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_01_ 0" x="2540" y="149" w="89" h="166" pX="0.5" pY="0.5" oX="134" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_02_ 0" x="2186" y="148" w="89" h="165" pX="0.5" pY="0.5" oX="134" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_03_ 0" x="2452" y="149" w="88" h="165" pX="0.5" pY="0.5" oX="134" oY="125" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_04_ 1" x="231" y="0" w="129" h="133" pX="0.5" pY="0.5" oX="109" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_05_ 1" x="360" y="0" w="129" h="133" pX="0.5" pY="0.5" oX="109" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_06_ 1" x="489" y="0" w="128" h="133" pX="0.5" pY="0.5" oX="110" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_07_ 2" x="1104" y="0" w="129" h="139" pX="0.5" pY="0.5" oX="139" oY="122" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_08_ 2" x="847" y="0" w="129" h="138" pX="0.5" pY="0.5" oX="139" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_09_ 2" x="976" y="0" w="128" h="138" pX="0.5" pY="0.5" oX="139" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_10_ 3" x="1344" y="140" w="82" h="160" pX="0.5" pY="0.5" oX="151" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_11_ 3" x="1525" y="141" w="82" h="161" pX="0.5" pY="0.5" oX="151" oY="86" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_12_ 3" x="1607" y="142" w="82" h="161" pX="0.5" pY="0.5" oX="151" oY="86" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_13_ 4" x="2727" y="0" w="122" h="150" pX="0.5" pY="0.5" oX="114" oY="109" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_14_ 4" x="2849" y="0" w="121" h="150" pX="0.5" pY="0.5" oX="115" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_15_ 4" x="3350" y="0" w="120" h="151" pX="0.5" pY="0.5" oX="116" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_16_ 5" x="512" y="133" w="104" h="156" pX="0.5" pY="0.5" oX="131" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_17_ 5" x="616" y="137" w="105" h="156" pX="0.5" pY="0.5" oX="130" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_18_ 5" x="1149" y="140" w="105" h="157" pX="0.5" pY="0.5" oX="130" oY="86" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_19_ 6" x="721" y="137" w="110" h="156" pX="0.5" pY="0.5" oX="130" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_20_ 6" x="831" y="138" w="110" h="156" pX="0.5" pY="0.5" oX="130" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_21_ 6" x="402" y="133" w="110" h="155" pX="0.5" pY="0.5" oX="130" oY="127" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_22_ 7" x="2167" y="0" w="120" h="148" pX="0.5" pY="0.5" oX="142" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_23_ 7" x="2047" y="0" w="120" h="147" pX="0.5" pY="0.5" oX="142" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Rest_24_ 7" x="1928" y="0" w="119" h="146" pX="0.5" pY="0.5" oX="142" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_01_ 0" x="3364" y="1254" w="110" h="199" pX="0.5" pY="0.5" oX="118" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_02_ 0" x="1872" y="1637" w="124" h="207" pX="0.5" pY="0.5" oX="118" oY="111" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_03_ 0" x="0" y="1398" w="125" h="200" pX="0.5" pY="0.5" oX="117" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_04_ 0" x="330" y="1013" w="130" h="191" pX="0.5" pY="0.5" oX="122" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_05_ 0" x="792" y="1413" w="143" h="201" pX="0.5" pY="0.5" oX="125" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_06_ 0" x="1568" y="1234" w="133" h="197" pX="0.5" pY="0.5" oX="115" oY="109" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_07_ 0" x="0" y="1598" w="125" h="205" pX="0.5" pY="0.5" oX="117" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_08_ 0" x="2095" y="671" w="121" h="186" pX="0.5" pY="0.5" oX="116" oY="111" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_09_ 1" x="2632" y="315" w="145" h="176" pX="0.5" pY="0.5" oX="105" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_10_ 1" x="1575" y="304" w="179" h="174" pX="0.5" pY="0.5" oX="65" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_11_ 1" x="3622" y="321" w="168" h="178" pX="0.5" pY="0.5" oX="65" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_12_ 1" x="0" y="453" w="169" h="179" pX="0.5" pY="0.5" oX="72" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_13_ 1" x="971" y="469" w="155" h="181" pX="0.5" pY="0.5" oX="90" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_14_ 1" x="3905" y="325" w="169" h="178" pX="0.5" pY="0.5" oX="69" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_15_ 1" x="1126" y="470" w="136" h="181" pX="0.5" pY="0.5" oX="81" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_16_ 1" x="3373" y="319" w="163" h="177" pX="0.5" pY="0.5" oX="103" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_17_ 2" x="853" y="835" w="147" h="188" pX="0.5" pY="0.5" oX="108" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_18_ 2" x="1707" y="483" w="174" h="182" pX="0.5" pY="0.5" oX="122" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_19_ 2" x="2777" y="317" w="190" h="176" pX="0.5" pY="0.5" oX="101" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_20_ 2" x="3326" y="496" w="187" h="184" pX="0.5" pY="0.5" oX="90" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_21_ 2" x="391" y="461" w="189" h="179" pX="0.5" pY="0.5" oX="93" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_22_ 2" x="1527" y="478" w="180" h="181" pX="0.5" pY="0.5" oX="107" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_23_ 2" x="723" y="833" w="130" h="188" pX="0.5" pY="0.5" oX="134" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_24_ 2" x="1560" y="1841" w="166" h="211" pX="0.5" pY="0.5" oX="92" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_25_ 3" x="742" y="2247" w="113" h="231" pX="0.5" pY="0.5" oX="135" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_26_ 3" x="3814" y="1876" w="119" h="214" pX="0.5" pY="0.5" oX="127" oY="86" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_27_ 3" x="0" y="2457" w="113" h="256" pX="0.5" pY="0.5" oX="130" oY="60" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_28_ 3" x="345" y="2470" w="118" h="265" pX="0.5" pY="0.5" oX="121" oY="52" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_29_ 3" x="3625" y="2314" w="131" h="252" pX="0.5" pY="0.5" oX="103" oY="64" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_30_ 3" x="3756" y="2318" w="122" h="253" pX="0.5" pY="0.5" oX="122" oY="59" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_31_ 3" x="1504" y="1633" w="104" h="206" pX="0.5" pY="0.5" oX="131" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_32_ 3" x="1400" y="2269" w="107" h="234" pX="0.5" pY="0.5" oX="130" oY="82" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_33_ 4" x="2693" y="493" w="171" h="183" pX="0.5" pY="0.5" oX="77" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_34_ 4" x="2765" y="676" w="143" h="187" pX="0.5" pY="0.5" oX="90" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_35_ 4" x="1644" y="1433" w="124" h="202" pX="0.5" pY="0.5" oX="106" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_36_ 4" x="662" y="1409" w="130" h="201" pX="0.5" pY="0.5" oX="108" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_37_ 4" x="125" y="1400" w="130" h="200" pX="0.5" pY="0.5" oX="107" oY="106" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_38_ 4" x="606" y="1610" w="138" h="205" pX="0.5" pY="0.5" oX="102" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_39_ 4" x="1754" y="309" w="139" h="174" pX="0.5" pY="0.5" oX="77" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_40_ 4" x="439" y="289" w="161" h="172" pX="0.5" pY="0.5" oX="92" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_41_ 5" x="795" y="2030" w="117" h="217" pX="0.5" pY="0.5" oX="125" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_42_ 5" x="3240" y="1451" w="114" h="204" pX="0.5" pY="0.5" oX="117" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_43_ 5" x="351" y="2023" w="157" h="216" pX="0.5" pY="0.5" oX="74" oY="86" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_44_ 5" x="3642" y="1874" w="172" h="213" pX="0.5" pY="0.5" oX="67" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_45_ 5" x="744" y="1614" w="168" h="205" pX="0.5" pY="0.5" oX="76" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_46_ 5" x="1202" y="1029" w="167" h="193" pX="0.5" pY="0.5" oX="73" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_47_ 5" x="3354" y="1453" w="116" h="204" pX="0.5" pY="0.5" oX="115" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_48_ 5" x="3331" y="2080" w="133" h="225" pX="0.5" pY="0.5" oX="111" oY="86" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_49_ 6" x="2857" y="1651" w="118" h="208" pX="0.5" pY="0.5" oX="120" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_50_ 6" x="3828" y="1263" w="125" h="199" pX="0.5" pY="0.5" oX="132" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_51_ 6" x="1893" y="310" w="177" h="175" pX="0.5" pY="0.5" oX="116" oY="106" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_52_ 6" x="2857" y="864" w="186" h="190" pX="0.5" pY="0.5" oX="107" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_53_ 6" x="844" y="1024" w="194" h="192" pX="0.5" pY="0.5" oX="105" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_54_ 6" x="2524" y="863" w="165" h="189" pX="0.5" pY="0.5" oX="117" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_55_ 6" x="512" y="1815" w="108" h="210" pX="0.5" pY="0.5" oX="134" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_56_ 6" x="1768" y="1434" w="127" h="202" pX="0.5" pY="0.5" oX="121" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_57_ 7" x="694" y="1021" w="150" h="192" pX="0.5" pY="0.5" oX="114" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_58_ 7" x="3043" y="866" w="137" h="190" pX="0.5" pY="0.5" oX="127" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_59_ 7" x="3129" y="1863" w="134" h="213" pX="0.5" pY="0.5" oX="129" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_60_ 7" x="1962" y="2059" w="155" h="220" pX="0.5" pY="0.5" oX="121" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_61_ 7" x="2270" y="2287" w="137" h="239" pX="0.5" pY="0.5" oX="123" oY="71" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_62_ 7" x="124" y="1804" w="151" h="209" pX="0.5" pY="0.5" oX="124" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_63_ 7" x="2341" y="1049" w="113" h="194" pX="0.5" pY="0.5" oX="142" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Run_64_ 7" x="1608" y="1635" w="151" h="206" pX="0.5" pY="0.5" oX="109" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_01_ 0" x="1484" y="1034" w="139" h="193" pX="0.5" pY="0.5" oX="91" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_02_ 0" x="1262" y="474" w="135" h="181" pX="0.5" pY="0.5" oX="94" oY="125" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_03_ 0" x="1895" y="1435" w="106" h="202" pX="0.5" pY="0.5" oX="104" oY="136" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_04_ 1" x="2908" y="677" w="108" h="187" pX="0.5" pY="0.5" oX="132" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_05_ 1" x="741" y="648" w="117" h="185" pX="0.5" pY="0.5" oX="116" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_06_ 1" x="762" y="468" w="209" h="180" pX="0.5" pY="0.5" oX="11" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_07_ 2" x="3263" y="1865" w="105" h="213" pX="0.5" pY="0.5" oX="120" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_08_ 2" x="1701" y="1236" w="117" h="197" pX="0.5" pY="0.5" oX="124" oY="114" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_09_ 2" x="2913" y="151" w="216" h="166" pX="0.5" pY="0.5" oX="128" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_10_ 3" x="3249" y="1058" w="133" h="195" pX="0.5" pY="0.5" oX="132" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_11_ 3" x="275" y="1811" w="127" h="209" pX="0.5" pY="0.5" oX="135" oY="80" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_12_ 3" x="247" y="2470" w="98" h="262" pX="0.5" pY="0.5" oX="153" oY="26" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_13_ 4" x="1818" y="1237" w="119" h="197" pX="0.5" pY="0.5" oX="98" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_14_ 4" x="3016" y="677" w="102" h="187" pX="0.5" pY="0.5" oX="111" oY="112" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_15_ 4" x="1881" y="485" w="161" h="182" pX="0.5" pY="0.5" oX="56" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_16_ 5" x="1371" y="844" w="125" h="189" pX="0.5" pY="0.5" oX="122" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_17_ 5" x="2179" y="1441" w="120" h="202" pX="0.5" pY="0.5" oX="114" oY="81" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_18_ 5" x="3464" y="2083" w="172" h="225" pX="0.5" pY="0.5" oX="60" oY="55" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_19_ 6" x="431" y="1210" w="130" h="196" pX="0.5" pY="0.5" oX="107" oY="106" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_20_ 6" x="3227" y="151" w="124" h="167" pX="0.5" pY="0.5" oX="119" oY="125" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_21_ 6" x="2629" y="150" w="185" h="165" pX="0.5" pY="0.5" oX="117" oY="145" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_22_ 7" x="2454" y="1052" w="111" h="194" pX="0.5" pY="0.5" oX="148" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_23_ 7" x="2299" y="1441" w="98" h="202" pX="0.5" pY="0.5" oX="151" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Use Skill_24_ 7" x="1732" y="2277" w="164" h="235" pX="0.5" pY="0.5" oX="148" oY="63" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_01_ 0" x="620" y="1815" w="109" h="210" pX="0.5" pY="0.5" oX="126" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_02_ 0" x="1172" y="2043" w="110" h="218" pX="0.5" pY="0.5" oX="128" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_03_ 0" x="3926" y="2092" w="113" h="228" pX="0.5" pY="0.5" oX="129" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_04_ 0" x="2774" y="2072" w="108" h="223" pX="0.5" pY="0.5" oX="126" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_05_ 0" x="2506" y="2068" w="106" h="222" pX="0.5" pY="0.5" oX="128" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_06_ 0" x="1726" y="1842" w="123" h="211" pX="0.5" pY="0.5" oX="109" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_07_ 0" x="729" y="1819" w="102" h="210" pX="0.5" pY="0.5" oX="129" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_08_ 0" x="3569" y="1662" w="121" h="208" pX="0.5" pY="0.5" oX="111" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_09_ 1" x="3513" y="499" w="126" h="184" pX="0.5" pY="0.5" oX="116" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_10_ 1" x="3118" y="679" w="124" h="187" pX="0.5" pY="0.5" oX="116" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_11_ 1" x="2216" y="673" w="121" h="186" pX="0.5" pY="0.5" oX="99" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_12_ 1" x="971" y="650" w="146" h="185" pX="0.5" pY="0.5" oX="74" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_13_ 1" x="1117" y="651" w="135" h="185" pX="0.5" pY="0.5" oX="98" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_14_ 1" x="2864" y="493" w="107" h="183" pX="0.5" pY="0.5" oX="124" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_15_ 1" x="2971" y="494" w="111" h="183" pX="0.5" pY="0.5" oX="118" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_16_ 1" x="3790" y="323" w="115" h="179" pX="0.5" pY="0.5" oX="113" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_17_ 2" x="1369" y="1033" w="115" h="193" pX="0.5" pY="0.5" oX="116" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_18_ 2" x="3789" y="503" w="153" h="184" pX="0.5" pY="0.5" oX="113" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_19_ 2" x="2337" y="674" w="150" h="186" pX="0.5" pY="0.5" oX="131" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_20_ 2" x="2128" y="489" w="128" h="182" pX="0.5" pY="0.5" oX="140" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_21_ 2" x="3639" y="499" w="150" h="184" pX="0.5" pY="0.5" oX="118" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_22_ 2" x="2397" y="1444" w="116" h="202" pX="0.5" pY="0.5" oX="120" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_23_ 2" x="3589" y="1258" w="113" h="200" pX="0.5" pY="0.5" oX="125" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_24_ 2" x="3470" y="1455" w="118" h="204" pX="0.5" pY="0.5" oX="121" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_25_ 3" x="684" y="2029" w="111" h="216" pX="0.5" pY="0.5" oX="123" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_26_ 3" x="3533" y="1870" w="109" h="213" pX="0.5" pY="0.5" oX="123" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_27_ 3" x="2513" y="1444" w="105" h="202" pX="0.5" pY="0.5" oX="130" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_28_ 3" x="1937" y="1237" w="104" h="198" pX="0.5" pY="0.5" oX="130" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_29_ 3" x="2430" y="1854" w="108" h="212" pX="0.5" pY="0.5" oX="131" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_30_ 3" x="2513" y="1646" w="105" h="208" pX="0.5" pY="0.5" oX="130" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_31_ 3" x="3382" y="1059" w="103" h="195" pX="0.5" pY="0.5" oX="130" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_32_ 3" x="402" y="1814" w="110" h="209" pX="0.5" pY="0.5" oX="129" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_33_ 4" x="460" y="1019" w="117" h="191" pX="0.5" pY="0.5" oX="107" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_34_ 4" x="1252" y="655" w="135" h="185" pX="0.5" pY="0.5" oX="90" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_35_ 4" x="2618" y="1446" w="146" h="202" pX="0.5" pY="0.5" oX="84" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_36_ 4" x="296" y="1607" w="149" h="204" pX="0.5" pY="0.5" oX="87" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_37_ 4" x="1106" y="1419" w="147" h="201" pX="0.5" pY="0.5" oX="84" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_38_ 4" x="1117" y="836" w="121" h="188" pX="0.5" pY="0.5" oX="105" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_39_ 4" x="2487" y="674" w="115" h="186" pX="0.5" pY="0.5" oX="107" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_40_ 4" x="1660" y="851" w="124" h="189" pX="0.5" pY="0.5" oX="100" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_41_ 5" x="2764" y="1447" w="111" h="202" pX="0.5" pY="0.5" oX="125" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_42_ 5" x="3588" y="1458" w="103" h="204" pX="0.5" pY="0.5" oX="128" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_43_ 5" x="2565" y="1052" w="95" h="194" pX="0.5" pY="0.5" oX="133" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_44_ 5" x="3180" y="868" w="104" h="190" pX="0.5" pY="0.5" oX="122" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_45_ 5" x="2334" y="1243" w="100" h="198" pX="0.5" pY="0.5" oX="128" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_46_ 5" x="3485" y="1061" w="105" h="195" pX="0.5" pY="0.5" oX="127" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_47_ 5" x="3284" y="868" w="117" h="190" pX="0.5" pY="0.5" oX="118" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_48_ 5" x="561" y="1212" w="122" h="196" pX="0.5" pY="0.5" oX="119" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_49_ 6" x="1751" y="2056" w="107" h="219" pX="0.5" pY="0.5" oX="123" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_50_ 6" x="831" y="1820" w="100" h="210" pX="0.5" pY="0.5" oX="128" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_51_ 6" x="1858" y="2056" w="104" h="221" pX="0.5" pY="0.5" oX="142" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_52_ 6" x="2618" y="1648" w="122" h="207" pX="0.5" pY="0.5" oX="142" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_53_ 6" x="2403" y="2066" w="103" h="221" pX="0.5" pY="0.5" oX="134" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_54_ 6" x="1759" y="1636" w="113" h="206" pX="0.5" pY="0.5" oX="120" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_55_ 6" x="2740" y="1649" w="117" h="207" pX="0.5" pY="0.5" oX="124" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_56_ 6" x="912" y="1615" w="121" h="205" pX="0.5" pY="0.5" oX="120" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_57_ 7" x="2875" y="1449" w="112" h="202" pX="0.5" pY="0.5" oX="130" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_58_ 7" x="3702" y="1262" w="126" h="198" pX="0.5" pY="0.5" oX="127" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_59_ 7" x="3496" y="871" w="123" h="190" pX="0.5" pY="0.5" oX="131" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_60_ 7" x="1948" y="854" w="121" h="189" pX="0.5" pY="0.5" oX="125" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_61_ 7" x="255" y="1400" w="117" h="200" pX="0.5" pY="0.5" oX="132" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_62_ 7" x="683" y="1213" w="121" h="196" pX="0.5" pY="0.5" oX="135" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_63_ 7" x="3401" y="868" w="95" h="191" pX="0.5" pY="0.5" oX="141" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Walk_64_ 7" x="3474" y="1256" w="115" h="199" pX="0.5" pY="0.5" oX="140" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_01_ 0" x="3641" y="153" w="89" h="168" pX="0.5" pY="0.5" oX="131" oY="129" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_02_ 0" x="1039" y="296" w="90" h="173" pX="0.5" pY="0.5" oX="135" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_03_ 0" x="3831" y="153" w="93" h="170" pX="0.5" pY="0.5" oX="137" oY="129" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_04_ 1" x="0" y="1005" w="96" h="191" pX="0.5" pY="0.5" oX="109" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_05_ 1" x="3082" y="494" w="101" h="183" pX="0.5" pY="0.5" oX="105" oY="111" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_06_ 1" x="2163" y="313" w="99" h="176" pX="0.5" pY="0.5" oX="106" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_07_ 2" x="1254" y="140" w="90" h="157" pX="0.5" pY="0.5" oX="155" oY="119" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_08_ 2" x="1689" y="143" w="94" h="161" pX="0.5" pY="0.5" oX="155" oY="111" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_09_ 2" x="3351" y="151" w="93" h="167" pX="0.5" pY="0.5" oX="155" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_10_ 3" x="2967" y="317" w="98" h="176" pX="0.5" pY="0.5" oX="132" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_11_ 3" x="2070" y="311" w="93" h="175" pX="0.5" pY="0.5" oX="132" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_12_ 3" x="3065" y="318" w="92" h="176" pX="0.5" pY="0.5" oX="130" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_13_ 4" x="1297" y="300" w="101" h="174" pX="0.5" pY="0.5" oX="108" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_14_ 4" x="169" y="287" w="102" h="172" pX="0.5" pY="0.5" oX="111" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_15_ 4" x="3730" y="153" w="101" h="168" pX="0.5" pY="0.5" oX="121" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_16_ 5" x="633" y="831" w="90" h="189" pX="0.5" pY="0.5" oX="133" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_17_ 5" x="2042" y="486" w="86" h="182" pX="0.5" pY="0.5" oX="133" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_18_ 5" x="3536" y="321" w="86" h="177" pX="0.5" pY="0.5" oX="129" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_19_ 6" x="600" y="293" w="89" h="172" pX="0.5" pY="0.5" oX="136" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_20_ 6" x="3157" y="318" w="84" h="176" pX="0.5" pY="0.5" oX="140" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_21_ 6" x="689" y="293" w="87" h="172" pX="0.5" pY="0.5" oX="143" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_22_ 7" x="2086" y="148" w="100" h="163" pX="0.5" pY="0.5" oX="147" oY="106" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_23_ 7" x="3444" y="152" w="98" h="167" pX="0.5" pY="0.5" oX="146" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Air_Woozy_24_ 7" x="776" y="294" w="95" h="172" pX="0.5" pY="0.5" oX="138" oY="94" oW="350" oH="350"/>
+</TextureAtlas>

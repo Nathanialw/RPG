@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="6144" height="5190" scale="1" format="RGBA8888">
+  <sprite n="Daemon_PitLord_Attack 1_01_ 0" x="441" y="953" w="332" h="256" pX="0.5" pY="0.5" oX="73" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_02_ 0" x="803" y="2001" w="301" h="271" pX="0.5" pY="0.5" oX="64" oY="44" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_03_ 0" x="0" y="3698" w="220" h="299" pX="0.5" pY="0.5" oX="139" oY="98" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_04_ 1" x="5287" y="2330" w="214" h="282" pX="0.5" pY="0.5" oX="162" oY="99" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_05_ 1" x="1566" y="3721" w="199" h="308" pX="0.5" pY="0.5" oX="214" oY="62" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_06_ 1" x="1104" y="2012" w="273" h="271" pX="0.5" pY="0.5" oX="63" oY="79" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_07_ 2" x="2915" y="3745" w="212" h="312" pX="0.5" pY="0.5" oX="97" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_08_ 2" x="297" y="4323" w="204" h="355" pX="0.5" pY="0.5" oX="60" oY="49" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_09_ 2" x="2691" y="1752" w="273" h="269" pX="0.5" pY="0.5" oX="133" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_10_ 3" x="4802" y="1248" w="330" h="262" pX="0.5" pY="0.5" oX="71" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_11_ 3" x="1190" y="1745" w="296" h="267" pX="0.5" pY="0.5" oX="111" oY="134" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_12_ 3" x="678" y="3417" w="221" h="296" pX="0.5" pY="0.5" oX="121" oY="65" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_13_ 4" x="2327" y="224" w="269" h="243" pX="0.5" pY="0.5" oX="155" oY="94" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_14_ 4" x="2964" y="1756" w="283" h="268" pX="0.5" pY="0.5" oX="144" oY="69" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_15_ 4" x="4613" y="3777" w="275" h="313" pX="0.5" pY="0.5" oX="91" oY="66" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_16_ 5" x="1973" y="3137" w="235" h="292" pX="0.5" pY="0.5" oX="168" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_17_ 5" x="4299" y="4081" w="247" h="337" pX="0.5" pY="0.5" oX="184" oY="82" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_18_ 5" x="2016" y="2286" w="266" h="279" pX="0.5" pY="0.5" oX="91" oY="73" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_19_ 6" x="899" y="3418" w="235" h="296" pX="0.5" pY="0.5" oX="70" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_20_ 6" x="5897" y="3807" w="240" h="320" pX="0.5" pY="0.5" oX="45" oY="17" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_21_ 6" x="0" y="4000" w="261" h="321" pX="0.5" pY="0.5" oX="122" oY="58" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_22_ 7" x="1715" y="2845" w="264" h="289" pX="0.5" pY="0.5" oX="54" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_23_ 7" x="5784" y="2924" w="290" h="290" pX="0.5" pY="0.5" oX="44" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 1_24_ 7" x="4581" y="988" w="269" h="258" pX="0.5" pY="0.5" oX="115" oY="81" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_01_ 0" x="1305" y="957" w="332" h="256" pX="0.5" pY="0.5" oX="73" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_02_ 0" x="1064" y="2283" w="423" h="276" pX="0.5" pY="0.5" oX="13" oY="39" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_03_ 0" x="4777" y="239" w="314" h="244" pX="0.5" pY="0.5" oX="83" oY="169" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_04_ 1" x="5501" y="2330" w="214" h="282" pX="0.5" pY="0.5" oX="162" oY="99" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_05_ 1" x="3402" y="4771" w="268" h="383" pX="0.5" pY="0.5" oX="182" oY="22" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_06_ 1" x="261" y="4002" w="249" h="321" pX="0.5" pY="0.5" oX="76" oY="47" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_07_ 2" x="3127" y="3748" w="212" h="312" pX="0.5" pY="0.5" oX="97" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_08_ 2" x="5011" y="4442" w="263" h="370" pX="0.5" pY="0.5" oX="29" oY="48" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_09_ 2" x="843" y="4018" w="260" h="325" pX="0.5" pY="0.5" oX="143" oY="45" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_10_ 3" x="5132" y="1249" w="330" h="262" pX="0.5" pY="0.5" oX="71" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_11_ 3" x="4134" y="1503" w="410" h="265" pX="0.5" pY="0.5" oX="40" oY="145" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_12_ 3" x="1973" y="3728" w="314" h="310" pX="0.5" pY="0.5" oX="81" oY="48" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_13_ 4" x="2596" y="224" w="269" h="243" pX="0.5" pY="0.5" oX="155" oY="94" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_14_ 4" x="2404" y="4046" w="286" h="332" pX="0.5" pY="0.5" oX="127" oY="25" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_15_ 4" x="5482" y="1785" w="285" h="270" pX="0.5" pY="0.5" oX="59" oY="115" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_16_ 5" x="2492" y="3145" w="235" h="292" pX="0.5" pY="0.5" oX="168" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_17_ 5" x="1407" y="4355" w="244" h="358" pX="0.5" pY="0.5" oX="171" oY="83" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_18_ 5" x="0" y="4323" w="297" h="349" pX="0.5" pY="0.5" oX="48" oY="13" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_19_ 6" x="1134" y="3419" w="235" h="296" pX="0.5" pY="0.5" oX="70" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_20_ 6" x="1444" y="4029" w="279" h="326" pX="0.5" pY="0.5" oX="44" oY="22" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_21_ 6" x="2086" y="2014" w="303" h="272" pX="0.5" pY="0.5" oX="130" oY="117" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_22_ 7" x="2242" y="2852" w="264" h="289" pX="0.5" pY="0.5" oX="54" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_23_ 7" x="4798" y="3479" w="304" h="298" pX="0.5" pY="0.5" oX="0" oY="144" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Attack 2_24_ 7" x="3017" y="4060" w="290" h="335" pX="0.5" pY="0.5" oX="132" oY="15" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_01_ 0" x="1033" y="1211" w="180" h="260" pX="0.5" pY="0.5" oX="144" oY="74" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_02_ 0" x="0" y="942" w="175" h="261" pX="0.5" pY="0.5" oX="147" oY="73" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_03_ 0" x="0" y="1203" w="175" h="261" pX="0.5" pY="0.5" oX="147" oY="73" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_04_ 1" x="4044" y="0" w="209" h="235" pX="0.5" pY="0.5" oX="153" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_05_ 1" x="4253" y="0" w="212" h="235" pX="0.5" pY="0.5" oX="152" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_06_ 1" x="4465" y="0" w="213" h="235" pX="0.5" pY="0.5" oX="151" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_07_ 2" x="3838" y="0" w="206" h="233" pX="0.5" pY="0.5" oX="117" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_08_ 2" x="3424" y="0" w="207" h="231" pX="0.5" pY="0.5" oX="117" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_09_ 2" x="3631" y="0" w="207" h="231" pX="0.5" pY="0.5" oX="117" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_10_ 3" x="5709" y="240" w="179" h="246" pX="0.5" pY="0.5" oX="145" oY="123" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_11_ 3" x="206" y="449" w="175" h="247" pX="0.5" pY="0.5" oX="147" oY="122" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_12_ 3" x="1733" y="462" w="175" h="248" pX="0.5" pY="0.5" oX="147" oY="122" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_13_ 4" x="3926" y="1499" w="208" h="265" pX="0.5" pY="0.5" oX="141" oY="87" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_14_ 4" x="4544" y="1509" w="208" h="265" pX="0.5" pY="0.5" oX="142" oY="87" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_15_ 4" x="321" y="1730" w="208" h="266" pX="0.5" pY="0.5" oX="142" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_16_ 5" x="5408" y="735" w="207" h="256" pX="0.5" pY="0.5" oX="142" oY="120" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_17_ 5" x="5615" y="738" w="208" h="256" pX="0.5" pY="0.5" oX="142" oY="120" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_18_ 5" x="1637" y="965" w="208" h="258" pX="0.5" pY="0.5" oX="142" oY="119" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_19_ 6" x="1881" y="713" w="210" h="254" pX="0.5" pY="0.5" oX="119" oY="96" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_20_ 6" x="2744" y="716" w="210" h="254" pX="0.5" pY="0.5" oX="119" oY="96" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_21_ 6" x="2954" y="717" w="211" h="255" pX="0.5" pY="0.5" oX="118" oY="95" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_22_ 7" x="4685" y="733" w="210" h="255" pX="0.5" pY="0.5" oX="119" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_23_ 7" x="4895" y="735" w="210" h="255" pX="0.5" pY="0.5" oX="119" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Behavior_24_ 7" x="5823" y="743" w="211" h="256" pX="0.5" pY="0.5" oX="118" oY="120" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_01_ 0" x="1845" y="967" w="332" h="256" pX="0.5" pY="0.5" oX="73" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_02_ 0" x="3165" y="723" w="295" h="253" pX="0.5" pY="0.5" oX="111" oY="79" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_03_ 0" x="5204" y="0" w="239" h="240" pX="0.5" pY="0.5" oX="123" oY="75" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_04_ 1" x="5715" y="2330" w="214" h="282" pX="0.5" pY="0.5" oX="162" oY="99" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_05_ 1" x="3896" y="3462" w="240" h="297" pX="0.5" pY="0.5" oX="155" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_06_ 1" x="0" y="2263" w="239" h="276" pX="0.5" pY="0.5" oX="173" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_07_ 2" x="3339" y="3757" w="212" h="312" pX="0.5" pY="0.5" oX="97" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_08_ 2" x="5767" y="1785" w="231" h="270" pX="0.5" pY="0.5" oX="77" oY="107" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_09_ 2" x="3460" y="725" w="237" h="254" pX="0.5" pY="0.5" oX="62" oY="105" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_10_ 3" x="5714" y="1258" w="330" h="262" pX="0.5" pY="0.5" oX="71" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_11_ 3" x="5718" y="999" w="291" h="259" pX="0.5" pY="0.5" oX="66" oY="130" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_12_ 3" x="5623" y="486" w="242" h="252" pX="0.5" pY="0.5" oX="107" oY="147" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_13_ 4" x="2865" y="224" w="269" h="243" pX="0.5" pY="0.5" oX="155" oY="94" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_14_ 4" x="4549" y="1246" w="253" h="263" pX="0.5" pY="0.5" oX="161" oY="89" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_15_ 4" x="1486" y="1745" w="238" h="267" pX="0.5" pY="0.5" oX="188" oY="85" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_16_ 5" x="2727" y="3147" w="235" h="292" pX="0.5" pY="0.5" oX="168" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_17_ 5" x="4215" y="2316" w="273" h="281" pX="0.5" pY="0.5" oX="132" oY="122" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_18_ 5" x="1979" y="2565" w="263" h="283" pX="0.5" pY="0.5" oX="153" oY="127" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_19_ 6" x="1369" y="3419" w="235" h="296" pX="0.5" pY="0.5" oX="70" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_20_ 6" x="1213" y="1213" w="271" h="260" pX="0.5" pY="0.5" oX="68" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_21_ 6" x="5443" y="0" w="258" h="240" pX="0.5" pY="0.5" oX="56" oY="82" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_22_ 7" x="2506" y="2856" w="264" h="289" pX="0.5" pY="0.5" oX="54" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_23_ 7" x="2899" y="2296" w="253" h="279" pX="0.5" pY="0.5" oX="60" oY="120" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Block_24_ 7" x="1724" y="1745" w="239" h="267" pX="0.5" pY="0.5" oX="47" oY="140" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_01_ 0" x="5701" y="0" w="229" h="240" pX="0.5" pY="0.5" oX="146" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_02_ 0" x="509" y="214" w="230" h="241" pX="0.5" pY="0.5" oX="146" oY="120" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_03_ 0" x="1589" y="216" w="231" h="242" pX="0.5" pY="0.5" oX="145" oY="119" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_04_ 1" x="3134" y="225" w="258" h="243" pX="0.5" pY="0.5" oX="119" oY="149" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_05_ 1" x="0" y="202" w="258" h="240" pX="0.5" pY="0.5" oX="119" oY="152" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_06_ 1" x="4678" y="0" w="259" h="238" pX="0.5" pY="0.5" oX="118" oY="154" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_07_ 2" x="1908" y="465" w="257" h="248" pX="0.5" pY="0.5" oX="97" oY="109" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_08_ 2" x="2475" y="467" w="257" h="249" pX="0.5" pY="0.5" oX="97" oY="108" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_09_ 2" x="3900" y="478" w="257" h="250" pX="0.5" pY="0.5" oX="97" oY="107" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_10_ 3" x="2732" y="467" w="229" h="249" pX="0.5" pY="0.5" oX="93" oY="124" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_11_ 3" x="2961" y="468" w="229" h="249" pX="0.5" pY="0.5" oX="93" oY="123" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_12_ 3" x="3361" y="474" w="229" h="249" pX="0.5" pY="0.5" oX="93" oY="123" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_13_ 4" x="948" y="0" w="255" h="215" pX="0.5" pY="0.5" oX="128" oY="158" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_14_ 4" x="1478" y="0" w="254" h="216" pX="0.5" pY="0.5" oX="129" oY="157" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_15_ 4" x="1732" y="0" w="253" h="216" pX="0.5" pY="0.5" oX="130" oY="157" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_16_ 5" x="1377" y="2012" w="249" h="271" pX="0.5" pY="0.5" oX="105" oY="131" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_17_ 5" x="0" y="1993" w="249" h="270" pX="0.5" pY="0.5" oX="105" oY="132" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_18_ 5" x="3247" y="1762" w="249" h="269" pX="0.5" pY="0.5" oX="104" oY="133" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_19_ 6" x="258" y="209" w="251" h="240" pX="0.5" pY="0.5" oX="117" oY="131" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_20_ 6" x="739" y="215" w="251" h="241" pX="0.5" pY="0.5" oX="117" oY="130" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_21_ 6" x="1820" y="220" w="251" h="242" pX="0.5" pY="0.5" oX="117" oY="129" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_22_ 7" x="4752" y="1510" w="253" h="265" pX="0.5" pY="0.5" oX="83" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_23_ 7" x="5462" y="1252" w="252" h="264" pX="0.5" pY="0.5" oX="83" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Critical HP_24_ 7" x="5005" y="1511" w="251" h="265" pX="0.5" pY="0.5" oX="83" oY="101" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Dead_01_ 0" x="296" y="0" w="358" h="209" pX="0.5" pY="0.5" oX="54" oY="190" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Dead_02_ 1" x="3496" y="1763" w="306" h="269" pX="0.5" pY="0.5" oX="94" oY="170" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Dead_03_ 2" x="4953" y="484" w="309" h="251" pX="0.5" pY="0.5" oX="62" oY="177" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Dead_04_ 3" x="5262" y="484" w="361" h="251" pX="0.5" pY="0.5" oX="49" oY="186" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Dead_05_ 4" x="0" y="0" w="296" h="202" pX="0.5" pY="0.5" oX="99" oY="189" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Dead_06_ 5" x="1985" y="0" w="281" h="220" pX="0.5" pY="0.5" oX="110" oY="209" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Dead_07_ 6" x="1203" y="0" w="275" h="215" pX="0.5" pY="0.5" oX="72" oY="192" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Dead_08_ 7" x="654" y="0" w="294" h="214" pX="0.5" pY="0.5" oX="70" oY="205" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_01_ 0" x="2177" y="968" w="332" h="256" pX="0.5" pY="0.5" oX="73" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_02_ 0" x="784" y="456" w="308" h="246" pX="0.5" pY="0.5" oX="136" oY="75" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_03_ 0" x="1626" y="2012" w="248" h="271" pX="0.5" pY="0.5" oX="164" oY="72" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_04_ 1" x="5929" y="2353" w="214" h="282" pX="0.5" pY="0.5" oX="162" oY="99" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_05_ 1" x="4136" y="3466" w="226" h="297" pX="0.5" pY="0.5" oX="179" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_06_ 1" x="5256" y="1516" w="315" h="265" pX="0.5" pY="0.5" oX="132" oY="144" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_07_ 2" x="3551" y="3757" w="212" h="312" pX="0.5" pY="0.5" oX="97" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_08_ 2" x="5901" y="2635" w="225" h="289" pX="0.5" pY="0.5" oX="68" oY="58" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_09_ 2" x="179" y="700" w="317" h="251" pX="0.5" pY="0.5" oX="26" oY="76" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_10_ 3" x="0" y="1466" w="330" h="262" pX="0.5" pY="0.5" oX="71" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_11_ 3" x="3152" y="2303" w="297" h="280" pX="0.5" pY="0.5" oX="32" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_12_ 3" x="427" y="3701" w="246" h="301" pX="0.5" pY="0.5" oX="60" oY="125" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_13_ 4" x="3392" y="231" w="269" h="243" pX="0.5" pY="0.5" oX="155" oY="94" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_14_ 4" x="2688" y="2292" w="211" h="281" pX="0.5" pY="0.5" oX="186" oY="93" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_15_ 4" x="3817" y="2876" w="206" h="293" pX="0.5" pY="0.5" oX="199" oY="109" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_16_ 5" x="2962" y="3156" w="235" h="292" pX="0.5" pY="0.5" oX="168" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_17_ 5" x="529" y="1730" w="330" h="266" pX="0.5" pY="0.5" oX="85" oY="133" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_18_ 5" x="1484" y="1223" w="321" h="260" pX="0.5" pY="0.5" oX="49" oY="147" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_19_ 6" x="1604" y="3425" w="235" h="296" pX="0.5" pY="0.5" oX="70" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_20_ 6" x="1092" y="457" w="331" h="246" pX="0.5" pY="0.5" oX="58" oY="71" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_21_ 6" x="3697" y="728" w="327" h="254" pX="0.5" pY="0.5" oX="100" oY="53" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_22_ 7" x="2770" y="2858" w="264" h="289" pX="0.5" pY="0.5" oX="54" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_23_ 7" x="1765" y="3725" w="208" h="308" pX="0.5" pY="0.5" oX="73" oY="92" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Evade_24_ 7" x="220" y="3701" w="207" h="299" pX="0.5" pY="0.5" oX="66" oY="74" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_01_ 0" x="2509" y="970" w="332" h="256" pX="0.5" pY="0.5" oX="73" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_02_ 0" x="859" y="1735" w="331" h="266" pX="0.5" pY="0.5" oX="70" oY="67" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_03_ 0" x="2749" y="1228" w="319" h="261" pX="0.5" pY="0.5" oX="71" oY="54" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_04_ 1" x="0" y="2539" w="214" h="282" pX="0.5" pY="0.5" oX="162" oY="99" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_05_ 1" x="3819" y="2591" w="204" h="285" pX="0.5" pY="0.5" oX="169" oY="97" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_06_ 1" x="2389" y="2019" w="222" h="272" pX="0.5" pY="0.5" oX="186" oY="111" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_07_ 2" x="3763" y="3759" w="212" h="312" pX="0.5" pY="0.5" oX="97" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_08_ 2" x="1361" y="3715" w="205" h="306" pX="0.5" pY="0.5" oX="99" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_09_ 2" x="1756" y="2562" w="223" h="283" pX="0.5" pY="0.5" oX="66" oY="112" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_10_ 3" x="330" y="1468" w="330" h="262" pX="0.5" pY="0.5" oX="71" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_11_ 3" x="990" y="215" w="330" h="241" pX="0.5" pY="0.5" oX="74" oY="142" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_12_ 3" x="2551" y="0" w="318" h="224" pX="0.5" pY="0.5" oX="82" oY="171" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_13_ 4" x="3661" y="233" w="269" h="243" pX="0.5" pY="0.5" oX="155" oY="94" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_14_ 4" x="5105" y="735" w="303" h="255" pX="0.5" pY="0.5" oX="138" oY="83" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_15_ 4" x="660" y="1468" w="309" h="262" pX="0.5" pY="0.5" oX="141" oY="75" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_16_ 5" x="3197" y="3157" w="235" h="292" pX="0.5" pY="0.5" oX="168" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_17_ 5" x="967" y="3127" w="264" h="291" pX="0.5" pY="0.5" oX="156" oY="119" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_18_ 5" x="4488" y="2319" w="292" h="281" pX="0.5" pY="0.5" oX="153" oY="153" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_19_ 6" x="1839" y="3429" w="235" h="296" pX="0.5" pY="0.5" oX="70" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_20_ 6" x="2074" y="3432" w="262" h="296" pX="0.5" pY="0.5" oX="54" oY="59" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_21_ 6" x="503" y="2266" w="295" h="276" pX="0.5" pY="0.5" oX="28" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_22_ 7" x="3034" y="2867" w="264" h="289" pX="0.5" pY="0.5" oX="54" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_23_ 7" x="3924" y="2311" w="291" h="280" pX="0.5" pY="0.5" oX="36" oY="124" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Get Hit_24_ 7" x="1487" y="2283" w="315" h="276" pX="0.5" pY="0.5" oX="12" oY="149" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_01_ 0" x="3120" y="976" w="332" h="256" pX="0.5" pY="0.5" oX="73" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_02_ 0" x="4024" y="728" w="331" h="254" pX="0.5" pY="0.5" oX="74" oY="88" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_03_ 0" x="1041" y="703" w="329" h="252" pX="0.5" pY="0.5" oX="75" oY="90" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_04_ 1" x="214" y="2541" w="214" h="282" pX="0.5" pY="0.5" oX="162" oY="99" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_05_ 1" x="3710" y="2306" w="214" h="281" pX="0.5" pY="0.5" oX="163" oY="100" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_06_ 1" x="1802" y="2284" w="214" h="278" pX="0.5" pY="0.5" oX="164" oY="101" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_07_ 2" x="3975" y="3763" w="212" h="312" pX="0.5" pY="0.5" oX="97" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_08_ 2" x="4187" y="3764" w="214" h="312" pX="0.5" pY="0.5" oX="95" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_09_ 2" x="2287" y="3733" w="215" h="311" pX="0.5" pY="0.5" oX="94" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_10_ 3" x="969" y="1473" w="330" h="262" pX="0.5" pY="0.5" oX="71" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_11_ 3" x="2644" y="1489" w="328" h="263" pX="0.5" pY="0.5" oX="72" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_12_ 3" x="2972" y="1493" w="326" h="263" pX="0.5" pY="0.5" oX="73" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_13_ 4" x="3930" y="235" w="269" h="243" pX="0.5" pY="0.5" oX="155" oY="94" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_14_ 4" x="1320" y="216" w="269" h="241" pX="0.5" pY="0.5" oX="155" oY="96" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_15_ 4" x="4937" y="0" w="267" h="239" pX="0.5" pY="0.5" oX="156" oY="98" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_16_ 5" x="3432" y="3160" w="235" h="292" pX="0.5" pY="0.5" oX="168" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_17_ 5" x="1231" y="3128" w="235" h="291" pX="0.5" pY="0.5" oX="169" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_18_ 5" x="0" y="3109" w="235" h="290" pX="0.5" pY="0.5" oX="170" oY="104" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_19_ 6" x="2336" y="3437" w="235" h="296" pX="0.5" pY="0.5" oX="70" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_20_ 6" x="2571" y="3439" w="236" h="296" pX="0.5" pY="0.5" oX="69" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_21_ 6" x="2807" y="3448" w="236" h="296" pX="0.5" pY="0.5" oX="69" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_22_ 7" x="3298" y="2868" w="264" h="289" pX="0.5" pY="0.5" oX="54" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_23_ 7" x="4023" y="2881" w="264" h="289" pX="0.5" pY="0.5" oX="54" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Idle_24_ 7" x="4287" y="2885" w="265" h="289" pX="0.5" pY="0.5" oX="54" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_01_ 0" x="4850" y="990" w="308" h="258" pX="0.5" pY="0.5" oX="77" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_02_ 0" x="5158" y="991" w="308" h="258" pX="0.5" pY="0.5" oX="77" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_03_ 0" x="4272" y="985" w="309" h="257" pX="0.5" pY="0.5" oX="77" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_04_ 1" x="175" y="951" w="266" h="256" pX="0.5" pY="0.5" oX="136" oY="149" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_05_ 1" x="773" y="953" w="266" h="256" pX="0.5" pY="0.5" oX="136" oY="149" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_06_ 1" x="1039" y="955" w="266" h="256" pX="0.5" pY="0.5" oX="136" oY="149" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_07_ 2" x="1979" y="2848" w="263" h="289" pX="0.5" pY="0.5" oX="71" oY="115" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_08_ 2" x="4552" y="2885" w="263" h="289" pX="0.5" pY="0.5" oX="71" oY="115" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_09_ 2" x="235" y="3113" w="262" h="290" pX="0.5" pY="0.5" oX="71" oY="114" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_10_ 3" x="4199" y="235" w="309" h="243" pX="0.5" pY="0.5" oX="81" oY="147" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_11_ 3" x="5091" y="240" w="308" h="244" pX="0.5" pY="0.5" oX="81" oY="146" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_12_ 3" x="5399" y="240" w="310" h="244" pX="0.5" pY="0.5" oX="80" oY="146" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_13_ 4" x="5743" y="3214" w="271" h="295" pX="0.5" pY="0.5" oX="126" oY="114" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_14_ 4" x="5197" y="3187" w="272" h="294" pX="0.5" pY="0.5" oX="126" oY="115" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_15_ 4" x="5469" y="3187" w="274" h="294" pX="0.5" pY="0.5" oX="125" oY="115" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_16_ 5" x="1805" y="1223" w="315" h="260" pX="0.5" pY="0.5" oX="78" oY="147" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_17_ 5" x="2120" y="1224" w="315" h="260" pX="0.5" pY="0.5" oX="78" oY="147" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_18_ 5" x="2435" y="1226" w="314" h="260" pX="0.5" pY="0.5" oX="78" oY="147" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_19_ 6" x="1423" y="458" w="310" h="247" pX="0.5" pY="0.5" oX="77" oY="124" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_20_ 6" x="2165" y="467" w="310" h="248" pX="0.5" pY="0.5" oX="77" oY="123" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_21_ 6" x="3590" y="476" w="310" h="249" pX="0.5" pY="0.5" oX="77" oY="122" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_22_ 7" x="3802" y="1764" w="269" h="269" pX="0.5" pY="0.5" oX="71" oY="128" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_23_ 7" x="4071" y="1768" w="271" h="269" pX="0.5" pY="0.5" oX="70" oY="128" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Rest_24_ 7" x="4342" y="1774" w="273" h="269" pX="0.5" pY="0.5" oX="69" oY="128" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_01_ 0" x="3505" y="3461" w="391" h="296" pX="0.5" pY="0.5" oX="59" oY="75" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_02_ 0" x="5501" y="2612" w="400" h="286" pX="0.5" pY="0.5" oX="49" oY="76" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_03_ 0" x="381" y="456" w="403" h="244" pX="0.5" pY="0.5" oX="46" oY="90" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_04_ 0" x="4252" y="2044" w="402" h="272" pX="0.5" pY="0.5" oX="41" oY="84" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_05_ 0" x="5102" y="3481" w="402" h="297" pX="0.5" pY="0.5" oX="35" oY="82" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_06_ 0" x="2282" y="2292" w="406" h="277" pX="0.5" pY="0.5" oX="40" oY="88" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_07_ 0" x="1299" y="1483" w="405" h="262" pX="0.5" pY="0.5" oX="45" oY="84" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_08_ 0" x="0" y="2823" w="399" h="286" pX="0.5" pY="0.5" oX="51" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_09_ 1" x="4241" y="4792" w="269" h="392" pX="0.5" pY="0.5" oX="119" oY="5" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_10_ 1" x="2602" y="4748" w="239" h="382" pX="0.5" pY="0.5" oX="146" oY="4" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_11_ 1" x="5274" y="4442" w="229" h="378" pX="0.5" pY="0.5" oX="166" oY="7" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_12_ 1" x="540" y="4689" w="276" h="375" pX="0.5" pY="0.5" oX="125" oY="10" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_13_ 1" x="5503" y="4472" w="298" h="370" pX="0.5" pY="0.5" oX="108" oY="13" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_14_ 1" x="0" y="4672" w="282" h="372" pX="0.5" pY="0.5" oX="122" oY="12" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_15_ 1" x="816" y="4699" w="260" h="376" pX="0.5" pY="0.5" oX="140" oY="12" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_16_ 1" x="3146" y="4768" w="256" h="381" pX="0.5" pY="0.5" oX="136" oY="10" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_17_ 2" x="3805" y="4412" w="278" h="366" pX="0.5" pY="0.5" oX="71" oY="17" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_18_ 2" x="1076" y="4701" w="254" h="376" pX="0.5" pY="0.5" oX="73" oY="13" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_19_ 2" x="2135" y="4737" w="221" h="380" pX="0.5" pY="0.5" oX="86" oY="3" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_20_ 2" x="1330" y="4713" w="252" h="378" pX="0.5" pY="0.5" oX="90" oY="2" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_21_ 2" x="4083" y="4418" w="282" h="366" pX="0.5" pY="0.5" oX="78" oY="16" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_22_ 2" x="282" y="4689" w="258" h="373" pX="0.5" pY="0.5" oX="87" oY="6" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_23_ 2" x="1582" y="4719" w="245" h="378" pX="0.5" pY="0.5" oX="82" oY="5" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_24_ 2" x="2356" y="4748" w="246" h="380" pX="0.5" pY="0.5" oX="84" oY="6" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_25_ 3" x="4654" y="2045" w="400" h="274" pX="0.5" pY="0.5" oX="25" oY="101" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_26_ 3" x="5054" y="2050" w="399" h="274" pX="0.5" pY="0.5" oX="35" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_27_ 3" x="5571" y="1520" w="403" h="265" pX="0.5" pY="0.5" oX="35" oY="109" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_28_ 3" x="908" y="2841" w="400" h="286" pX="0.5" pY="0.5" oX="41" oY="109" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_29_ 3" x="1704" y="1483" w="400" h="262" pX="0.5" pY="0.5" oX="48" oY="108" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_30_ 3" x="4023" y="2597" w="407" h="284" pX="0.5" pY="0.5" oX="38" oY="104" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_31_ 3" x="1308" y="2841" w="407" h="287" pX="0.5" pY="0.5" oX="31" oY="108" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_32_ 3" x="3524" y="1499" w="402" h="264" pX="0.5" pY="0.5" oX="30" oY="112" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_33_ 4" x="2065" y="4044" w="339" h="331" pX="0.5" pY="0.5" oX="111" oY="14" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_34_ 4" x="1103" y="4021" w="341" h="325" pX="0.5" pY="0.5" oX="100" oY="19" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_35_ 4" x="4872" y="4092" w="322" h="337" pX="0.5" pY="0.5" oX="114" oY="5" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_36_ 4" x="5521" y="4126" w="316" h="346" pX="0.5" pY="0.5" oX="116" oY="1" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_37_ 4" x="3170" y="4404" w="319" h="364" pX="0.5" pY="0.5" oX="113" oY="0" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_38_ 4" x="1972" y="4375" w="324" h="357" pX="0.5" pY="0.5" oX="108" oY="5" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_39_ 4" x="2690" y="4057" w="327" h="331" pX="0.5" pY="0.5" oX="110" oY="5" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_40_ 4" x="3307" y="4069" w="334" h="335" pX="0.5" pY="0.5" oX="114" oY="10" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_41_ 5" x="4510" y="4796" w="282" h="394" pX="0.5" pY="0.5" oX="142" oY="18" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_42_ 5" x="3958" y="4784" w="283" h="391" pX="0.5" pY="0.5" oX="140" oY="17" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_43_ 5" x="1827" y="4732" w="308" h="378" pX="0.5" pY="0.5" oX="122" oY="27" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_44_ 5" x="2847" y="4395" w="323" h="363" pX="0.5" pY="0.5" oX="109" oY="36" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_45_ 5" x="1651" y="4363" w="321" h="356" pX="0.5" pY="0.5" oX="112" oY="38" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_46_ 5" x="4686" y="4429" w="325" h="367" pX="0.5" pY="0.5" oX="105" oY="31" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_47_ 5" x="2841" y="4758" w="305" h="380" pX="0.5" pY="0.5" oX="126" oY="27" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_48_ 5" x="3670" y="4778" w="288" h="385" pX="0.5" pY="0.5" oX="140" oY="26" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_49_ 6" x="2577" y="4388" w="270" h="360" pX="0.5" pY="0.5" oX="56" oY="0" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_50_ 6" x="2296" y="4378" w="281" h="359" pX="0.5" pY="0.5" oX="56" oY="0" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_51_ 6" x="5837" y="4127" w="306" h="347" pX="0.5" pY="0.5" oX="49" oY="2" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_52_ 6" x="3972" y="4076" w="327" h="336" pX="0.5" pY="0.5" oX="46" oY="16" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_53_ 6" x="4546" y="4090" w="326" h="336" pX="0.5" pY="0.5" oX="45" oY="15" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_54_ 6" x="3641" y="4071" w="331" h="335" pX="0.5" pY="0.5" oX="48" oY="15" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_55_ 6" x="829" y="4346" w="300" h="353" pX="0.5" pY="0.5" oX="48" oY="0" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_56_ 6" x="1129" y="4346" w="278" h="355" pX="0.5" pY="0.5" oX="51" oY="0" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_57_ 7" x="4888" y="3778" w="346" h="314" pX="0.5" pY="0.5" oX="27" oY="74" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_58_ 7" x="1723" y="4038" w="342" h="325" pX="0.5" pY="0.5" oX="41" oY="64" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_59_ 7" x="501" y="4340" w="328" h="349" pX="0.5" pY="0.5" oX="42" oY="47" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_60_ 7" x="3489" y="4406" w="316" h="365" pX="0.5" pY="0.5" oX="46" oY="36" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_61_ 7" x="5801" y="4474" w="314" h="371" pX="0.5" pY="0.5" oX="48" oY="31" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_62_ 7" x="4365" y="4426" w="321" h="366" pX="0.5" pY="0.5" oX="47" oY="32" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_63_ 7" x="5194" y="4097" w="327" h="345" pX="0.5" pY="0.5" oX="40" oY="51" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Run_64_ 7" x="510" y="4016" w="333" h="324" pX="0.5" pY="0.5" oX="37" oY="69" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_01_ 0" x="3682" y="982" w="332" h="256" pX="0.5" pY="0.5" oX="73" oY="86" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_02_ 0" x="3068" y="1232" w="281" h="261" pX="0.5" pY="0.5" oX="100" oY="72" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_03_ 0" x="2434" y="1486" w="210" h="264" pX="0.5" pY="0.5" oX="130" oY="69" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_04_ 1" x="428" y="2542" w="214" h="282" pX="0.5" pY="0.5" oX="162" oY="99" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_05_ 1" x="1874" y="2013" w="212" h="271" pX="0.5" pY="0.5" oX="155" oY="108" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_06_ 1" x="5888" y="245" w="211" h="246" pX="0.5" pY="0.5" oX="153" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_07_ 2" x="4401" y="3769" w="212" h="312" pX="0.5" pY="0.5" oX="97" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_08_ 2" x="1963" y="1746" w="212" h="267" pX="0.5" pY="0.5" oX="106" oY="110" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_09_ 2" x="0" y="442" w="206" h="246" pX="0.5" pY="0.5" oX="117" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_10_ 3" x="2104" y="1484" w="330" h="262" pX="0.5" pY="0.5" oX="71" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_11_ 3" x="2841" y="972" w="279" h="256" pX="0.5" pY="0.5" oX="92" oY="122" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_12_ 3" x="4157" y="478" w="209" h="250" pX="0.5" pY="0.5" oX="130" oY="119" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_13_ 4" x="4508" y="238" w="269" h="243" pX="0.5" pY="0.5" oX="155" oY="94" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_14_ 4" x="5865" y="491" w="242" h="252" pX="0.5" pY="0.5" oX="153" oY="85" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_15_ 4" x="3190" y="468" w="171" h="253" pX="0.5" pY="0.5" oX="174" oY="83" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_16_ 5" x="3667" y="3169" w="235" h="292" pX="0.5" pY="0.5" oX="168" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_17_ 5" x="5453" y="2055" w="215" h="275" pX="0.5" pY="0.5" oX="165" oY="114" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_18_ 5" x="1701" y="710" w="180" h="255" pX="0.5" pY="0.5" oX="162" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_19_ 6" x="3043" y="3449" w="235" h="296" pX="0.5" pY="0.5" oX="70" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_20_ 6" x="496" y="700" w="216" h="253" pX="0.5" pY="0.5" oX="92" oY="88" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_21_ 6" x="5930" y="0" w="188" h="245" pX="0.5" pY="0.5" oX="125" oY="92" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_22_ 7" x="4815" y="2890" w="264" h="289" pX="0.5" pY="0.5" oX="54" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_23_ 7" x="2175" y="1746" w="236" h="268" pX="0.5" pY="0.5" oX="78" oY="117" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Use Skill_24_ 7" x="0" y="688" w="179" h="254" pX="0.5" pY="0.5" oX="125" oY="117" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_01_ 0" x="2242" y="2569" w="317" h="283" pX="0.5" pY="0.5" oX="60" oY="84" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_02_ 0" x="3349" y="1237" w="327" h="261" pX="0.5" pY="0.5" oX="67" oY="87" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_03_ 0" x="712" y="702" w="329" h="251" pX="0.5" pY="0.5" oX="77" oY="82" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_04_ 0" x="642" y="2548" w="326" h="282" pX="0.5" pY="0.5" oX="90" oY="80" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_05_ 0" x="4430" y="2600" w="317" h="285" pX="0.5" pY="0.5" oX="104" oY="84" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_06_ 0" x="4615" y="1775" w="327" h="269" pX="0.5" pY="0.5" oX="90" oY="85" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_07_ 0" x="4366" y="481" w="330" h="250" pX="0.5" pY="0.5" oX="78" oY="83" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_08_ 0" x="2611" y="2021" w="326" h="271" pX="0.5" pY="0.5" oX="68" oY="81" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_09_ 1" x="5449" y="3779" w="243" h="318" pX="0.5" pY="0.5" oX="138" oY="48" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_10_ 1" x="5692" y="3807" w="205" h="319" pX="0.5" pY="0.5" oX="165" oY="56" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_11_ 1" x="2502" y="3735" w="206" h="311" pX="0.5" pY="0.5" oX="162" oY="74" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_12_ 1" x="5504" y="3481" w="235" h="298" pX="0.5" pY="0.5" oX="139" oY="93" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_13_ 1" x="399" y="2824" w="238" h="289" pX="0.5" pY="0.5" oX="140" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_14_ 1" x="673" y="3713" w="214" h="303" pX="0.5" pY="0.5" oX="160" oY="87" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_15_ 1" x="2708" y="3744" w="207" h="311" pX="0.5" pY="0.5" oX="162" oY="74" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_16_ 1" x="5234" y="3778" w="215" h="316" pX="0.5" pY="0.5" oX="154" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_17_ 2" x="887" y="3714" w="231" h="304" pX="0.5" pY="0.5" oX="95" oY="78" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_18_ 2" x="5941" y="2055" w="203" h="298" pX="0.5" pY="0.5" oX="104" oY="81" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_19_ 2" x="0" y="3399" w="205" h="295" pX="0.5" pY="0.5" oX="105" oY="79" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_20_ 2" x="3278" y="3452" w="227" h="296" pX="0.5" pY="0.5" oX="100" oY="73" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_21_ 2" x="4362" y="3467" w="230" h="297" pX="0.5" pY="0.5" oX="93" oY="62" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_22_ 2" x="5739" y="3509" w="213" h="298" pX="0.5" pY="0.5" oX="98" oY="69" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_23_ 2" x="4592" y="3472" w="206" h="297" pX="0.5" pY="0.5" oX="104" oY="77" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_24_ 2" x="205" y="3403" w="206" h="295" pX="0.5" pY="0.5" oX="105" oY="84" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_25_ 3" x="0" y="1728" w="321" h="265" pX="0.5" pY="0.5" oX="98" oY="112" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_26_ 3" x="3676" y="1238" w="328" h="261" pX="0.5" pY="0.5" oX="83" oY="112" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_27_ 3" x="1370" y="705" w="331" h="252" pX="0.5" pY="0.5" oX="69" oY="122" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_28_ 3" x="2091" y="715" w="325" h="252" pX="0.5" pY="0.5" oX="60" oY="129" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_29_ 3" x="4233" y="1242" w="316" h="261" pX="0.5" pY="0.5" oX="55" oY="124" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_30_ 3" x="436" y="1209" w="326" h="259" pX="0.5" pY="0.5" oX="60" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_31_ 3" x="4355" y="731" w="330" h="254" pX="0.5" pY="0.5" oX="69" oY="121" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_32_ 3" x="2416" y="716" w="328" h="252" pX="0.5" pY="0.5" oX="80" oY="120" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_33_ 4" x="2208" y="3141" w="284" h="291" pX="0.5" pY="0.5" oX="150" oY="53" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_34_ 4" x="798" y="2272" w="266" h="276" pX="0.5" pY="0.5" oX="165" oY="54" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_35_ 4" x="2559" y="2573" w="266" h="283" pX="0.5" pY="0.5" oX="161" oY="58" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_36_ 4" x="3902" y="3170" w="266" h="292" pX="0.5" pY="0.5" oX="153" oY="64" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_37_ 4" x="4402" y="3174" w="247" h="293" pX="0.5" pY="0.5" oX="158" oY="66" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_38_ 4" x="4649" y="3179" w="261" h="293" pX="0.5" pY="0.5" oX="155" oY="60" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_39_ 4" x="968" y="2559" w="270" h="282" pX="0.5" pY="0.5" oX="156" oY="57" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_40_ 4" x="5668" y="2055" w="273" h="275" pX="0.5" pY="0.5" oX="159" oY="55" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_41_ 5" x="1118" y="3715" w="243" h="305" pX="0.5" pY="0.5" oX="168" oY="102" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_42_ 5" x="1466" y="3128" w="245" h="291" pX="0.5" pY="0.5" oX="169" oY="110" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_43_ 5" x="3075" y="2583" w="252" h="284" pX="0.5" pY="0.5" oX="170" oY="115" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_44_ 5" x="2937" y="2024" w="276" h="272" pX="0.5" pY="0.5" oX="149" oY="120" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_45_ 5" x="249" y="1996" w="284" h="270" pX="0.5" pY="0.5" oX="138" oY="119" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_46_ 5" x="239" y="2266" w="264" h="275" pX="0.5" pY="0.5" oX="158" oY="116" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_47_ 5" x="3327" y="2584" w="252" h="284" pX="0.5" pY="0.5" oX="171" oY="114" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_48_ 5" x="497" y="3116" w="250" h="290" pX="0.5" pY="0.5" oX="169" oY="114" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_49_ 6" x="4168" y="3174" w="234" h="292" pX="0.5" pY="0.5" oX="70" oY="65" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_50_ 6" x="4747" y="2600" w="240" h="285" pX="0.5" pY="0.5" oX="65" oY="63" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_51_ 6" x="3213" y="2031" w="246" h="272" pX="0.5" pY="0.5" oX="56" oY="68" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_52_ 6" x="4942" y="1776" w="265" h="269" pX="0.5" pY="0.5" oX="52" oY="71" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_53_ 6" x="3969" y="2037" w="283" h="274" pX="0.5" pY="0.5" oX="54" oY="73" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_54_ 6" x="3459" y="2032" w="263" h="272" pX="0.5" pY="0.5" oX="54" oY="68" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_55_ 6" x="3722" y="2033" w="247" h="273" pX="0.5" pY="0.5" oX="56" oY="67" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_56_ 6" x="4780" y="2319" w="244" h="281" pX="0.5" pY="0.5" oX="59" oY="68" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_57_ 7" x="4910" y="3186" w="287" h="293" pX="0.5" pY="0.5" oX="42" oY="99" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_58_ 7" x="411" y="3406" w="267" h="295" pX="0.5" pY="0.5" oX="46" oY="97" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_59_ 7" x="3562" y="2871" w="255" h="289" pX="0.5" pY="0.5" oX="51" oY="106" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_60_ 7" x="1238" y="2559" w="254" h="282" pX="0.5" pY="0.5" oX="59" oY="114" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_61_ 7" x="3579" y="2587" w="240" h="284" pX="0.5" pY="0.5" oX="73" oY="110" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_62_ 7" x="2825" y="2575" w="250" h="283" pX="0.5" pY="0.5" oX="62" oY="109" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_63_ 7" x="5079" y="2897" w="259" h="289" pX="0.5" pY="0.5" oX="52" oY="105" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Walk_64_ 7" x="1711" y="3134" w="262" h="291" pX="0.5" pY="0.5" oX="45" oY="104" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_01_ 0" x="3149" y="0" w="275" h="225" pX="0.5" pY="0.5" oX="129" oY="117" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_02_ 0" x="2869" y="0" w="280" h="224" pX="0.5" pY="0.5" oX="126" oY="118" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_03_ 0" x="2266" y="0" w="285" h="223" pX="0.5" pY="0.5" oX="123" oY="119" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_04_ 1" x="5338" y="2898" w="224" h="289" pX="0.5" pY="0.5" oX="152" oY="107" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_05_ 1" x="5562" y="2898" w="222" h="289" pX="0.5" pY="0.5" oX="152" oY="108" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_06_ 1" x="747" y="3127" w="220" h="290" pX="0.5" pY="0.5" oX="152" oY="108" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_07_ 2" x="3452" y="979" w="230" h="258" pX="0.5" pY="0.5" oX="97" oY="109" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_08_ 2" x="4004" y="1238" w="229" h="261" pX="0.5" pY="0.5" oX="98" oY="108" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_09_ 2" x="3298" y="1498" w="226" h="264" pX="0.5" pY="0.5" oX="101" oY="107" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_10_ 3" x="533" y="1996" w="270" h="270" pX="0.5" pY="0.5" oX="69" oY="106" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_11_ 3" x="5207" y="1781" w="275" h="269" pX="0.5" pY="0.5" oX="67" oY="105" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_12_ 3" x="2411" y="1752" w="280" h="267" pX="0.5" pY="0.5" oX="65" oY="105" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_13_ 4" x="2071" y="223" w="256" h="242" pX="0.5" pY="0.5" oX="145" oY="113" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_14_ 4" x="4696" y="483" w="257" h="250" pX="0.5" pY="0.5" oX="145" oY="110" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_15_ 4" x="4014" y="982" w="258" h="256" pX="0.5" pY="0.5" oX="145" oY="108" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_16_ 5" x="4987" y="2605" w="252" h="285" pX="0.5" pY="0.5" oX="126" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_17_ 5" x="5239" y="2612" w="262" h="285" pX="0.5" pY="0.5" oX="119" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_18_ 5" x="637" y="2830" w="271" h="286" pX="0.5" pY="0.5" oX="113" oY="103" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_19_ 6" x="5466" y="994" w="252" h="258" pX="0.5" pY="0.5" oX="94" oY="101" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_20_ 6" x="175" y="1207" w="261" h="259" pX="0.5" pY="0.5" oX="91" oY="100" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_21_ 6" x="762" y="1209" w="271" h="259" pX="0.5" pY="0.5" oX="88" oY="100" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_22_ 7" x="3449" y="2304" w="261" h="280" pX="0.5" pY="0.5" oX="74" oY="100" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_23_ 7" x="5024" y="2324" w="263" h="281" pX="0.5" pY="0.5" oX="73" oY="101" oW="450" oH="450"/>
+  <sprite n="Daemon_PitLord_Woozy_24_ 7" x="1492" y="2559" w="264" h="282" pX="0.5" pY="0.5" oX="72" oY="102" oW="450" oH="450"/>
+</TextureAtlas>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="6144" height="4006" scale="1" format="RGBA8888">
+  <sprite n="Daemon_Infernal_Attack 1_01_ 0" x="538" y="174" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_02_ 0" x="5360" y="1528" w="266" h="241" pX="0.5" pY="0.5" oX="57" oY="39" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_03_ 0" x="2336" y="2495" w="194" h="262" pX="0.5" pY="0.5" oX="124" oY="87" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_04_ 1" x="5286" y="1769" w="178" h="249" pX="0.5" pY="0.5" oX="155" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_05_ 1" x="2501" y="2758" w="174" h="273" pX="0.5" pY="0.5" oX="193" oY="55" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_06_ 1" x="5626" y="1533" w="237" h="241" pX="0.5" pY="0.5" oX="61" oY="70" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_07_ 2" x="3842" y="2781" w="184" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_08_ 2" x="837" y="3290" w="178" h="316" pX="0.5" pY="0.5" oX="53" oY="43" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_09_ 2" x="790" y="1249" w="241" h="235" pX="0.5" pY="0.5" oX="119" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_10_ 3" x="0" y="1238" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_11_ 3" x="906" y="1487" w="262" h="238" pX="0.5" pY="0.5" oX="99" oY="119" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_12_ 3" x="2530" y="2496" w="193" h="262" pX="0.5" pY="0.5" oX="108" oY="58" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_13_ 4" x="1653" y="382" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_14_ 4" x="1031" y="1252" w="251" h="235" pX="0.5" pY="0.5" oX="128" oY="64" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_15_ 4" x="4394" y="2787" w="241" h="278" pX="0.5" pY="0.5" oX="81" oY="59" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_16_ 5" x="4477" y="2265" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_17_ 5" x="4446" y="3067" w="218" h="299" pX="0.5" pY="0.5" oX="164" oY="73" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_18_ 5" x="2524" y="1504" w="234" h="239" pX="0.5" pY="0.5" oX="81" oY="72" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_19_ 6" x="4229" y="2521" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_20_ 6" x="175" y="2989" w="213" h="283" pX="0.5" pY="0.5" oX="40" oY="16" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_21_ 6" x="608" y="3003" w="231" h="285" pX="0.5" pY="0.5" oX="109" oY="52" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_22_ 7" x="4977" y="2016" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_23_ 7" x="2686" y="2239" w="256" h="257" pX="0.5" pY="0.5" oX="39" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 1_24_ 7" x="1071" y="1023" w="239" h="229" pX="0.5" pY="0.5" oX="102" oY="72" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_01_ 0" x="832" y="177" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_02_ 0" x="2502" y="1743" w="375" h="245" pX="0.5" pY="0.5" oX="11" oY="35" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_03_ 0" x="3563" y="192" w="275" h="201" pX="0.5" pY="0.5" oX="74" oY="150" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_04_ 1" x="5464" y="1774" w="178" h="249" pX="0.5" pY="0.5" oX="155" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_05_ 1" x="1996" y="3637" w="206" h="340" pX="0.5" pY="0.5" oX="194" oY="19" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_06_ 1" x="388" y="2991" w="220" h="284" pX="0.5" pY="0.5" oX="68" oY="42" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_07_ 2" x="4026" y="2781" w="184" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_08_ 2" x="4430" y="3366" w="194" h="327" pX="0.5" pY="0.5" oX="26" oY="43" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_09_ 2" x="839" y="3003" w="223" h="287" pX="0.5" pY="0.5" oX="127" oY="40" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_10_ 3" x="292" y="1241" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_11_ 3" x="0" y="1010" w="364" h="228" pX="0.5" pY="0.5" oX="36" oY="137" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_12_ 3" x="2855" y="2762" w="275" h="275" pX="0.5" pY="0.5" oX="72" oY="43" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_13_ 4" x="1890" y="383" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_14_ 4" x="3073" y="3041" w="253" h="294" pX="0.5" pY="0.5" oX="113" oY="22" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_15_ 4" x="3965" y="1520" w="251" h="240" pX="0.5" pY="0.5" oX="53" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_16_ 5" x="4685" y="2267" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_17_ 5" x="1261" y="3301" w="216" h="317" pX="0.5" pY="0.5" oX="152" oY="74" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_18_ 5" x="290" y="3275" w="263" h="311" pX="0.5" pY="0.5" oX="42" oY="11" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_19_ 6" x="4436" y="2524" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_20_ 6" x="1654" y="3013" w="246" h="289" pX="0.5" pY="0.5" oX="39" oY="19" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_21_ 6" x="1310" y="1028" w="267" h="229" pX="0.5" pY="0.5" oX="116" oY="104" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_22_ 7" x="5211" y="2018" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_23_ 7" x="3339" y="2504" w="269" h="262" pX="0.5" pY="0.5" oX="0" oY="130" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Attack 2_24_ 7" x="3627" y="3059" w="257" h="298" pX="0.5" pY="0.5" oX="117" oY="13" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_01_ 0" x="3204" y="0" w="160" h="192" pX="0.5" pY="0.5" oX="128" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_02_ 0" x="3364" y="0" w="156" h="192" pX="0.5" pY="0.5" oX="130" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_03_ 0" x="2544" y="0" w="155" h="191" pX="0.5" pY="0.5" oX="131" oY="101" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_04_ 1" x="606" y="372" w="165" h="208" pX="0.5" pY="0.5" oX="146" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_05_ 1" x="771" y="375" w="166" h="208" pX="0.5" pY="0.5" oX="146" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_06_ 1" x="937" y="375" w="167" h="208" pX="0.5" pY="0.5" oX="146" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_07_ 2" x="435" y="372" w="171" h="207" pX="0.5" pY="0.5" oX="106" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_08_ 2" x="5388" y="196" w="172" h="205" pX="0.5" pY="0.5" oX="105" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_09_ 2" x="5560" y="196" w="172" h="205" pX="0.5" pY="0.5" oX="105" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_10_ 3" x="5015" y="611" w="160" h="219" pX="0.5" pY="0.5" oX="128" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_11_ 3" x="5175" y="614" w="156" h="219" pX="0.5" pY="0.5" oX="130" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_12_ 3" x="1972" y="592" w="155" h="220" pX="0.5" pY="0.5" oX="131" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_13_ 4" x="4224" y="608" w="184" h="217" pX="0.5" pY="0.5" oX="126" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_14_ 4" x="4408" y="611" w="185" h="217" pX="0.5" pY="0.5" oX="126" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_15_ 4" x="3762" y="604" w="186" h="216" pX="0.5" pY="0.5" oX="126" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_16_ 5" x="4002" y="820" w="185" h="227" pX="0.5" pY="0.5" oX="126" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_17_ 5" x="4955" y="830" w="185" h="228" pX="0.5" pY="0.5" oX="126" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_18_ 5" x="5656" y="833" w="186" h="228" pX="0.5" pY="0.5" oX="126" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_19_ 6" x="2127" y="597" w="186" h="215" pX="0.5" pY="0.5" oX="106" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_20_ 6" x="5921" y="402" w="186" h="214" pX="0.5" pY="0.5" oX="106" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_21_ 6" x="5273" y="401" w="186" h="213" pX="0.5" pY="0.5" oX="105" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_22_ 7" x="3011" y="815" w="185" h="226" pX="0.5" pY="0.5" oX="106" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_23_ 7" x="4187" y="825" w="186" h="227" pX="0.5" pY="0.5" oX="106" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Behavior_24_ 7" x="4373" y="828" w="187" h="227" pX="0.5" pY="0.5" oX="105" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_01_ 0" x="1126" y="179" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_02_ 0" x="2699" y="0" w="261" h="191" pX="0.5" pY="0.5" oX="99" oY="98" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_03_ 0" x="3520" y="0" w="213" h="192" pX="0.5" pY="0.5" oX="109" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_04_ 1" x="5642" y="1774" w="178" h="249" pX="0.5" pY="0.5" oX="155" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_05_ 1" x="1609" y="1493" w="188" h="239" pX="0.5" pY="0.5" oX="162" oY="115" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_06_ 1" x="4288" y="396" w="195" h="212" pX="0.5" pY="0.5" oX="169" oY="124" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_07_ 2" x="4210" y="2784" w="184" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_08_ 2" x="4107" y="1284" w="189" h="236" pX="0.5" pY="0.5" oX="69" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_09_ 2" x="4387" y="0" w="199" h="195" pX="0.5" pY="0.5" oX="55" oY="124" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_10_ 3" x="1282" y="1257" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_11_ 3" x="2277" y="1037" w="258" h="230" pX="0.5" pY="0.5" oX="59" oY="116" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_12_ 3" x="1471" y="805" w="215" h="223" pX="0.5" pY="0.5" oX="95" oY="131" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_13_ 4" x="2127" y="388" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_14_ 4" x="3487" y="817" w="224" h="226" pX="0.5" pY="0.5" oX="143" oY="86" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_15_ 4" x="584" y="1244" w="206" h="233" pX="0.5" pY="0.5" oX="172" oY="79" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_16_ 5" x="4893" y="2271" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_17_ 5" x="1579" y="1979" w="241" h="250" pX="0.5" pY="0.5" oX="118" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_18_ 5" x="2758" y="1504" w="234" h="239" pX="0.5" pY="0.5" oX="136" oY="125" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_19_ 6" x="4643" y="2526" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_20_ 6" x="2313" y="598" w="241" h="215" pX="0.5" pY="0.5" oX="60" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_21_ 6" x="5732" y="196" w="229" h="205" pX="0.5" pY="0.5" oX="50" oY="82" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_22_ 7" x="5796" y="2023" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_23_ 7" x="4832" y="1765" w="224" h="248" pX="0.5" pY="0.5" oX="53" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Block_24_ 7" x="0" y="1471" w="210" h="237" pX="0.5" pY="0.5" oX="42" oY="124" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_01_ 0" x="4483" y="399" w="204" h="212" pX="0.5" pY="0.5" oX="129" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_02_ 0" x="0" y="573" w="205" h="214" pX="0.5" pY="0.5" oX="129" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_03_ 0" x="2554" y="599" w="205" h="215" pX="0.5" pY="0.5" oX="129" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_04_ 1" x="2759" y="599" w="229" h="215" pX="0.5" pY="0.5" oX="106" oY="133" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_05_ 1" x="5459" y="401" w="229" h="213" pX="0.5" pY="0.5" oX="105" oY="135" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_06_ 1" x="3823" y="393" w="229" h="211" pX="0.5" pY="0.5" oX="105" oY="137" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_07_ 2" x="0" y="0" w="227" h="171" pX="0.5" pY="0.5" oX="86" oY="146" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_08_ 2" x="227" y="0" w="228" h="171" pX="0.5" pY="0.5" oX="86" oY="146" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_09_ 2" x="455" y="0" w="228" h="172" pX="0.5" pY="0.5" oX="86" oY="145" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_10_ 3" x="4636" y="195" w="203" h="204" pX="0.5" pY="0.5" oX="83" oY="126" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_11_ 3" x="4839" y="195" w="203" h="204" pX="0.5" pY="0.5" oX="83" oY="126" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_12_ 3" x="5042" y="195" w="204" h="204" pX="0.5" pY="0.5" oX="82" oY="126" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_13_ 4" x="3733" y="0" w="218" h="192" pX="0.5" pY="0.5" oX="122" oY="140" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_14_ 4" x="3951" y="0" w="218" h="192" pX="0.5" pY="0.5" oX="122" oY="140" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_15_ 4" x="4169" y="0" w="218" h="193" pX="0.5" pY="0.5" oX="122" oY="139" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_16_ 5" x="5863" y="1533" w="222" h="241" pX="0.5" pY="0.5" oX="93" oY="116" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_17_ 5" x="4216" y="1521" w="221" h="240" pX="0.5" pY="0.5" oX="93" oY="117" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_18_ 5" x="2992" y="1504" w="220" h="239" pX="0.5" pY="0.5" oX="93" oY="118" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_19_ 6" x="205" y="575" w="223" h="214" pX="0.5" pY="0.5" oX="104" oY="116" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_20_ 6" x="1008" y="585" w="223" h="214" pX="0.5" pY="0.5" oX="104" oY="116" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_21_ 6" x="2988" y="600" w="223" h="215" pX="0.5" pY="0.5" oX="104" oY="115" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_22_ 7" x="3838" y="192" w="216" h="201" pX="0.5" pY="0.5" oX="74" oY="125" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_23_ 7" x="3347" y="192" w="216" h="200" pX="0.5" pY="0.5" oX="74" oY="125" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Critical HP_24_ 7" x="2008" y="184" w="216" h="199" pX="0.5" pY="0.5" oX="74" oY="125" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Dead_01_ 0" x="1777" y="0" w="318" h="184" pX="0.5" pY="0.5" oX="48" oY="169" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Dead_02_ 1" x="1168" y="1490" w="271" h="238" pX="0.5" pY="0.5" oX="84" oY="152" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Dead_03_ 2" x="1686" y="806" w="274" h="223" pX="0.5" pY="0.5" oX="56" oY="158" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Dead_04_ 3" x="1960" y="812" w="320" h="222" pX="0.5" pY="0.5" oX="44" oY="166" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Dead_05_ 4" x="1220" y="0" w="263" h="179" pX="0.5" pY="0.5" oX="88" oY="168" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Dead_06_ 5" x="4586" y="0" w="250" h="195" pX="0.5" pY="0.5" oX="98" oY="186" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Dead_07_ 6" x="2960" y="0" w="244" h="191" pX="0.5" pY="0.5" oX="64" oY="171" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Dead_08_ 7" x="2282" y="0" w="262" h="190" pX="0.5" pY="0.5" oX="62" oY="182" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_01_ 0" x="1420" y="181" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_02_ 0" x="4836" y="0" w="262" h="195" pX="0.5" pY="0.5" oX="132" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_03_ 0" x="5211" y="1292" w="208" h="236" pX="0.5" pY="0.5" oX="158" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_04_ 1" x="5820" y="1774" w="178" h="249" pX="0.5" pY="0.5" oX="155" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_05_ 1" x="2723" y="2496" w="196" h="262" pX="0.5" pY="0.5" oX="164" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_06_ 1" x="4296" y="1286" w="278" h="235" pX="0.5" pY="0.5" oX="118" oY="128" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_07_ 2" x="4635" y="2789" w="184" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_08_ 2" x="4041" y="1761" w="194" h="247" pX="0.5" pY="0.5" oX="61" oY="51" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_09_ 2" x="0" y="368" w="280" h="205" pX="0.5" pY="0.5" oX="23" oY="78" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_10_ 3" x="1807" y="1263" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_11_ 3" x="530" y="1964" w="260" h="249" pX="0.5" pY="0.5" oX="29" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_12_ 3" x="1359" y="2745" w="210" h="268" pX="0.5" pY="0.5" oX="53" oY="111" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_13_ 4" x="2364" y="389" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_14_ 4" x="4660" y="1763" w="172" h="248" pX="0.5" pY="0.5" oX="181" oY="83" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_15_ 4" x="3695" y="1996" w="159" h="259" pX="0.5" pY="0.5" oX="201" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_16_ 5" x="5101" y="2273" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_17_ 5" x="5772" y="1297" w="292" h="236" pX="0.5" pY="0.5" oX="76" oY="118" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_18_ 5" x="3570" y="1045" w="284" h="231" pX="0.5" pY="0.5" oX="44" oY="130" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_19_ 6" x="4850" y="2530" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_20_ 6" x="1483" y="0" w="294" h="181" pX="0.5" pY="0.5" oX="52" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_21_ 6" x="683" y="0" w="289" h="174" pX="0.5" pY="0.5" oX="91" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_22_ 7" x="706" y="2218" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_23_ 7" x="2675" y="2758" w="180" h="273" pX="0.5" pY="0.5" oX="65" oY="82" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Evade_24_ 7" x="448" y="2727" w="167" h="264" pX="0.5" pY="0.5" oX="58" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_01_ 0" x="1714" y="184" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_02_ 0" x="4054" y="193" w="292" h="201" pX="0.5" pY="0.5" oX="62" oY="95" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_03_ 0" x="1231" y="587" w="282" h="214" pX="0.5" pY="0.5" oX="63" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_04_ 1" x="174" y="1952" w="178" h="249" pX="0.5" pY="0.5" oX="155" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_05_ 1" x="1181" y="1972" w="166" h="252" pX="0.5" pY="0.5" oX="166" oY="86" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_06_ 1" x="0" y="1708" w="174" h="241" pX="0.5" pY="0.5" oX="188" oY="99" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_07_ 2" x="4819" y="2793" w="184" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_08_ 2" x="2126" y="2750" w="163" h="271" pX="0.5" pY="0.5" oX="88" oY="77" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_09_ 2" x="0" y="1949" w="174" h="250" pX="0.5" pY="0.5" oX="59" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_10_ 3" x="2099" y="1267" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_11_ 3" x="428" y="580" w="292" h="213" pX="0.5" pY="0.5" oX="66" oY="127" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_12_ 3" x="5390" y="0" w="282" h="196" pX="0.5" pY="0.5" oX="73" oY="155" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_13_ 4" x="2601" y="390" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_14_ 4" x="4593" y="611" w="255" h="218" pX="0.5" pY="0.5" oX="137" oY="82" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_15_ 4" x="3854" y="1047" w="261" h="231" pX="0.5" pY="0.5" oX="139" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_16_ 5" x="5309" y="2277" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_17_ 5" x="2942" y="2243" w="233" h="257" pX="0.5" pY="0.5" oX="139" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_18_ 5" x="4437" y="1523" w="259" h="240" pX="0.5" pY="0.5" oX="136" oY="145" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_19_ 6" x="5057" y="2532" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_20_ 6" x="5264" y="2536" w="233" h="263" pX="0.5" pY="0.5" oX="48" oY="53" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_21_ 6" x="3212" y="1508" w="262" h="239" pX="0.5" pY="0.5" oX="25" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_22_ 7" x="940" y="2221" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_23_ 7" x="4416" y="1763" w="244" h="247" pX="0.5" pY="0.5" oX="32" oY="111" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Get Hit_24_ 7" x="851" y="1725" w="272" h="244" pX="0.5" pY="0.5" oX="10" oY="133" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_01_ 0" x="2224" y="190" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_02_ 0" x="2812" y="191" w="291" h="199" pX="0.5" pY="0.5" oX="66" oY="105" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_03_ 0" x="4346" y="195" w="290" h="201" pX="0.5" pY="0.5" oX="66" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_04_ 1" x="352" y="1959" w="178" h="249" pX="0.5" pY="0.5" oX="155" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_05_ 1" x="4235" y="1761" w="181" h="247" pX="0.5" pY="0.5" oX="154" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_06_ 1" x="3859" y="1760" w="182" h="246" pX="0.5" pY="0.5" oX="154" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_07_ 2" x="5003" y="2795" w="184" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_08_ 2" x="3657" y="2780" w="185" h="277" pX="0.5" pY="0.5" oX="85" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_09_ 2" x="3471" y="2775" w="186" h="276" pX="0.5" pY="0.5" oX="84" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_10_ 3" x="2391" y="1268" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_11_ 3" x="2683" y="1271" w="290" h="233" pX="0.5" pY="0.5" oX="64" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_12_ 3" x="3818" y="1278" w="289" h="234" pX="0.5" pY="0.5" oX="65" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_13_ 4" x="2838" y="390" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_14_ 4" x="3075" y="391" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_15_ 4" x="4052" y="394" w="236" h="210" pX="0.5" pY="0.5" oX="139" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_16_ 5" x="5517" y="2277" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_17_ 5" x="5725" y="2278" w="208" h="259" pX="0.5" pY="0.5" oX="150" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_18_ 5" x="3610" y="2255" w="208" h="258" pX="0.5" pY="0.5" oX="151" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_19_ 6" x="5497" y="2536" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_20_ 6" x="5704" y="2537" w="206" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_21_ 6" x="5910" y="2537" w="208" h="263" pX="0.5" pY="0.5" oX="61" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_22_ 7" x="1174" y="2225" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_23_ 7" x="1408" y="2229" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Idle_24_ 7" x="1642" y="2233" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_01_ 0" x="2535" y="1038" w="273" h="230" pX="0.5" pY="0.5" oX="69" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_02_ 0" x="1577" y="1029" w="273" h="229" pX="0.5" pY="0.5" oX="69" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_03_ 0" x="5842" y="837" w="273" h="228" pX="0.5" pY="0.5" oX="69" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_04_ 1" x="364" y="1013" w="236" h="228" pX="0.5" pY="0.5" oX="121" oY="132" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_05_ 1" x="600" y="1016" w="235" h="228" pX="0.5" pY="0.5" oX="121" oY="132" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_06_ 1" x="835" y="1021" w="236" h="228" pX="0.5" pY="0.5" oX="121" oY="132" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_07_ 2" x="4687" y="399" w="233" h="212" pX="0.5" pY="0.5" oX="63" oY="147" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_08_ 2" x="5688" y="401" w="233" h="213" pX="0.5" pY="0.5" oX="63" oY="146" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_09_ 2" x="1513" y="591" w="233" h="214" pX="0.5" pY="0.5" oX="63" oY="145" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_10_ 3" x="1104" y="377" w="274" h="208" pX="0.5" pY="0.5" oX="72" oY="138" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_11_ 3" x="3549" y="393" w="274" h="209" pX="0.5" pY="0.5" oX="72" oY="138" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_12_ 3" x="1378" y="379" w="275" h="208" pX="0.5" pY="0.5" oX="71" oY="138" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_13_ 4" x="0" y="2714" w="241" h="263" pX="0.5" pY="0.5" oX="112" oY="101" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_14_ 4" x="2919" y="2500" w="242" h="262" pX="0.5" pY="0.5" oX="112" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_15_ 4" x="1360" y="2484" w="243" h="261" pX="0.5" pY="0.5" oX="111" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_16_ 5" x="4668" y="1056" w="281" h="232" pX="0.5" pY="0.5" oX="69" oY="130" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_17_ 5" x="5237" y="1060" w="279" h="232" pX="0.5" pY="0.5" oX="70" oY="130" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_18_ 5" x="5516" y="1061" w="278" h="232" pX="0.5" pY="0.5" oX="70" oY="130" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_19_ 6" x="3948" y="604" w="276" h="216" pX="0.5" pY="0.5" oX="68" oY="114" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_20_ 6" x="3211" y="601" w="276" h="215" pX="0.5" pY="0.5" oX="68" oY="115" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_21_ 6" x="3487" y="602" w="275" h="215" pX="0.5" pY="0.5" oX="69" oY="115" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_22_ 7" x="991" y="799" w="239" h="222" pX="0.5" pY="0.5" oX="63" oY="131" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_23_ 7" x="1230" y="801" w="241" h="222" pX="0.5" pY="0.5" oX="62" oY="131" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Rest_24_ 7" x="5864" y="616" w="242" h="221" pX="0.5" pY="0.5" oX="62" oY="132" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_01_ 0" x="824" y="2740" w="348" h="263" pX="0.5" pY="0.5" oX="52" oY="67" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_02_ 0" x="5445" y="2023" w="351" h="254" pX="0.5" pY="0.5" oX="43" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_03_ 0" x="4920" y="399" w="353" h="212" pX="0.5" pY="0.5" oX="41" oY="80" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_04_ 0" x="4317" y="1055" w="351" h="231" pX="0.5" pY="0.5" oX="37" oY="75" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_05_ 0" x="1569" y="2749" w="352" h="264" pX="0.5" pY="0.5" oX="31" oY="73" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_06_ 0" x="3111" y="1747" w="358" h="245" pX="0.5" pY="0.5" oX="36" oY="79" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_07_ 0" x="5331" y="614" w="360" h="219" pX="0.5" pY="0.5" oX="40" oY="75" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_08_ 0" x="351" y="2213" w="355" h="254" pX="0.5" pY="0.5" oX="45" oY="69" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_09_ 1" x="2707" y="3653" w="237" h="346" pX="0.5" pY="0.5" oX="106" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_10_ 1" x="1298" y="3619" w="211" h="337" pX="0.5" pY="0.5" oX="130" oY="4" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_11_ 1" x="0" y="3581" w="199" h="333" pX="0.5" pY="0.5" oX="152" oY="6" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_12_ 1" x="5549" y="3384" w="225" h="332" pX="0.5" pY="0.5" oX="131" oY="9" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_13_ 1" x="4166" y="3363" w="264" h="326" pX="0.5" pY="0.5" oX="96" oY="12" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_14_ 1" x="5774" y="3388" w="232" h="332" pX="0.5" pY="0.5" oX="126" oY="10" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_15_ 1" x="5116" y="3381" w="208" h="331" pX="0.5" pY="0.5" oX="147" oY="11" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_16_ 1" x="470" y="3603" w="226" h="335" pX="0.5" pY="0.5" oX="121" oY="9" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_17_ 2" x="2249" y="3317" w="247" h="324" pX="0.5" pY="0.5" oX="63" oY="15" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_18_ 2" x="5324" y="3384" w="225" h="331" pX="0.5" pY="0.5" oX="65" oY="12" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_19_ 2" x="904" y="3611" w="195" h="336" pX="0.5" pY="0.5" oX="77" oY="3" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_20_ 2" x="696" y="3606" w="208" h="335" pX="0.5" pY="0.5" oX="80" oY="2" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_21_ 2" x="2781" y="3330" w="251" h="323" pX="0.5" pY="0.5" oX="69" oY="14" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_22_ 2" x="4624" y="3370" w="216" h="330" pX="0.5" pY="0.5" oX="77" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_23_ 2" x="1099" y="3618" w="199" h="336" pX="0.5" pY="0.5" oX="73" oY="4" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_24_ 2" x="1509" y="3619" w="218" h="337" pX="0.5" pY="0.5" oX="75" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_25_ 3" x="1365" y="1732" w="352" h="244" pX="0.5" pY="0.5" oX="22" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_26_ 3" x="1952" y="1739" w="352" h="244" pX="0.5" pY="0.5" oX="31" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_27_ 3" x="4574" y="1288" w="354" h="235" pX="0.5" pY="0.5" oX="31" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_28_ 3" x="0" y="2201" w="351" h="254" pX="0.5" pY="0.5" oX="37" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_29_ 3" x="2973" y="1271" w="352" h="233" pX="0.5" pY="0.5" oX="43" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_30_ 3" x="2491" y="1988" w="357" h="251" pX="0.5" pY="0.5" oX="34" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_31_ 3" x="1876" y="2233" w="360" h="255" pX="0.5" pY="0.5" oX="28" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_32_ 3" x="5419" y="1293" w="353" h="235" pX="0.5" pY="0.5" oX="27" oY="99" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_33_ 4" x="3326" y="3051" w="301" h="295" pX="0.5" pY="0.5" oX="99" oY="12" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_34_ 4" x="1355" y="3013" w="299" h="288" pX="0.5" pY="0.5" oX="89" oY="17" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_35_ 4" x="4664" y="3071" w="284" h="299" pX="0.5" pY="0.5" oX="102" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_36_ 4" x="5789" y="3081" w="279" h="307" pX="0.5" pY="0.5" oX="104" oY="1" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_37_ 4" x="3032" y="3335" w="283" h="323" pX="0.5" pY="0.5" oX="100" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_38_ 4" x="1477" y="3302" w="287" h="317" pX="0.5" pY="0.5" oX="96" oY="4" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_39_ 4" x="2784" y="3037" w="289" h="293" pX="0.5" pY="0.5" oX="98" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_40_ 4" x="3884" y="3059" w="293" h="298" pX="0.5" pY="0.5" oX="101" oY="9" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_41_ 5" x="2944" y="3658" w="250" h="348" pX="0.5" pY="0.5" oX="126" oY="17" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_42_ 5" x="2456" y="3643" w="251" h="345" pX="0.5" pY="0.5" oX="124" oY="16" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_43_ 5" x="199" y="3586" w="271" h="334" pX="0.5" pY="0.5" oX="109" oY="24" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_44_ 5" x="2496" y="3322" w="285" h="321" pX="0.5" pY="0.5" oX="97" oY="32" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_45_ 5" x="553" y="3288" w="284" h="315" pX="0.5" pY="0.5" oX="100" oY="34" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_46_ 5" x="3878" y="3357" w="288" h="325" pX="0.5" pY="0.5" oX="94" oY="28" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_47_ 5" x="1727" y="3629" w="269" h="337" pX="0.5" pY="0.5" oX="112" oY="24" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_48_ 5" x="2202" y="3641" w="254" h="342" pX="0.5" pY="0.5" oX="124" oY="23" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_49_ 6" x="2011" y="3317" w="238" h="320" pX="0.5" pY="0.5" oX="50" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_50_ 6" x="1764" y="3310" w="247" h="319" pX="0.5" pY="0.5" oX="50" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_51_ 6" x="4177" y="3065" w="269" h="298" pX="0.5" pY="0.5" oX="44" oY="2" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_52_ 6" x="2496" y="3031" w="288" h="291" pX="0.5" pY="0.5" oX="41" oY="15" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_53_ 6" x="4948" y="3077" w="288" h="299" pX="0.5" pY="0.5" oX="40" oY="13" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_54_ 6" x="1900" y="3021" w="292" h="289" pX="0.5" pY="0.5" oX="42" oY="14" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_55_ 6" x="5236" y="3077" w="265" h="304" pX="0.5" pY="0.5" oX="43" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_56_ 6" x="1015" y="3296" w="246" h="315" pX="0.5" pY="0.5" oX="45" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_57_ 7" x="5187" y="2799" w="305" h="278" pX="0.5" pY="0.5" oX="24" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_58_ 7" x="2192" y="3028" w="304" h="289" pX="0.5" pY="0.5" oX="36" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_59_ 7" x="0" y="3272" w="290" h="309" pX="0.5" pY="0.5" oX="37" oY="42" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_60_ 7" x="3315" y="3346" w="280" h="323" pX="0.5" pY="0.5" oX="41" oY="32" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_61_ 7" x="4840" y="3376" w="276" h="330" pX="0.5" pY="0.5" oX="43" oY="27" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_62_ 7" x="3595" y="3357" w="283" h="323" pX="0.5" pY="0.5" oX="42" oY="29" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_63_ 7" x="5501" y="3079" w="288" h="305" pX="0.5" pY="0.5" oX="36" oY="45" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Run_64_ 7" x="1062" y="3008" w="293" h="288" pX="0.5" pY="0.5" oX="33" oY="61" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_01_ 0" x="2518" y="191" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_02_ 0" x="972" y="0" w="248" h="177" pX="0.5" pY="0.5" oX="89" oY="114" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_03_ 0" x="2095" y="0" w="187" h="184" pX="0.5" pY="0.5" oX="115" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_04_ 1" x="790" y="1969" w="178" h="249" pX="0.5" pY="0.5" oX="155" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_05_ 1" x="4696" y="1523" w="170" h="240" pX="0.5" pY="0.5" oX="156" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_06_ 1" x="4848" y="611" w="167" h="218" pX="0.5" pY="0.5" oX="146" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_07_ 2" x="5492" y="2799" w="184" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_08_ 2" x="1439" y="1493" w="170" h="238" pX="0.5" pY="0.5" oX="94" oY="98" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_09_ 2" x="5691" y="614" w="173" h="219" pX="0.5" pY="0.5" oX="104" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_10_ 3" x="3526" y="1276" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_11_ 3" x="4560" y="829" w="247" h="226" pX="0.5" pY="0.5" oX="82" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_12_ 3" x="0" y="787" w="186" h="222" pX="0.5" pY="0.5" oX="115" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_13_ 4" x="3312" y="392" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_14_ 4" x="5672" y="0" w="200" h="196" pX="0.5" pY="0.5" oX="151" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_15_ 4" x="5246" y="195" w="142" h="204" pX="0.5" pY="0.5" oX="162" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_16_ 5" x="5933" y="2278" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_17_ 5" x="418" y="1714" w="182" h="245" pX="0.5" pY="0.5" oX="155" oY="101" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_18_ 5" x="4807" y="829" w="148" h="227" pX="0.5" pY="0.5" oX="156" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_19_ 6" x="241" y="2726" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_20_ 6" x="5961" y="196" w="183" h="206" pX="0.5" pY="0.5" oX="82" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_21_ 6" x="280" y="369" w="155" h="206" pX="0.5" pY="0.5" oX="112" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_22_ 7" x="2236" y="2234" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_23_ 7" x="1797" y="1496" w="200" h="238" pX="0.5" pY="0.5" oX="69" oY="104" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Use Skill_24_ 7" x="2860" y="815" w="151" h="225" pX="0.5" pY="0.5" oX="112" oY="104" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_01_ 0" x="4866" y="1525" w="281" h="240" pX="0.5" pY="0.5" oX="53" oY="87" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_02_ 0" x="720" y="583" w="288" h="213" pX="0.5" pY="0.5" oX="60" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_03_ 0" x="0" y="171" w="289" h="197" pX="0.5" pY="0.5" oX="69" oY="99" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_04_ 0" x="5140" y="833" w="288" h="226" pX="0.5" pY="0.5" oX="80" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_05_ 0" x="1997" y="1500" w="282" h="238" pX="0.5" pY="0.5" oX="92" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_06_ 0" x="414" y="793" w="289" h="220" pX="0.5" pY="0.5" oX="80" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_07_ 0" x="5098" y="0" w="292" h="195" pX="0.5" pY="0.5" oX="69" oY="99" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_08_ 0" x="703" y="796" w="288" h="220" pX="0.5" pY="0.5" oX="61" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_09_ 1" x="5867" y="2800" w="215" h="281" pX="0.5" pY="0.5" oX="123" oY="43" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_10_ 1" x="0" y="2977" w="175" h="282" pX="0.5" pY="0.5" oX="154" oY="50" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_11_ 1" x="3130" y="2763" w="170" h="275" pX="0.5" pY="0.5" oX="158" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_12_ 1" x="615" y="2733" w="209" h="264" pX="0.5" pY="0.5" oX="124" oY="82" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_13_ 1" x="3818" y="2260" w="211" h="258" pX="0.5" pY="0.5" oX="125" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_14_ 1" x="1172" y="2740" w="187" h="268" pX="0.5" pY="0.5" oX="145" oY="77" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_15_ 1" x="3300" y="2766" w="171" h="275" pX="0.5" pY="0.5" oX="157" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_16_ 1" x="5676" y="2800" w="191" h="279" pX="0.5" pY="0.5" oX="137" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_17_ 2" x="1921" y="2749" w="205" h="269" pX="0.5" pY="0.5" oX="85" oY="69" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_18_ 2" x="3161" y="2501" w="178" h="262" pX="0.5" pY="0.5" oX="93" oY="72" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_19_ 2" x="1603" y="2488" w="173" h="261" pX="0.5" pY="0.5" oX="94" oY="70" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_20_ 2" x="1776" y="2488" w="201" h="261" pX="0.5" pY="0.5" oX="89" oY="65" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_21_ 2" x="3608" y="2513" w="204" h="262" pX="0.5" pY="0.5" oX="83" oY="55" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_22_ 2" x="3812" y="2518" w="181" h="262" pX="0.5" pY="0.5" oX="87" oY="62" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_23_ 2" x="1977" y="2488" w="175" h="261" pX="0.5" pY="0.5" oX="93" oY="69" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_24_ 2" x="2152" y="2489" w="184" h="261" pX="0.5" pY="0.5" oX="93" oY="75" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_25_ 3" x="4928" y="1290" w="283" h="235" pX="0.5" pY="0.5" oX="87" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_26_ 3" x="4949" y="1059" w="288" h="231" pX="0.5" pY="0.5" oX="74" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_27_ 3" x="2280" y="814" w="291" h="223" pX="0.5" pY="0.5" oX="62" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_28_ 3" x="2571" y="814" w="289" h="224" pX="0.5" pY="0.5" oX="53" oY="114" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_29_ 3" x="5794" y="1065" w="280" h="232" pX="0.5" pY="0.5" oX="49" oY="110" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_30_ 3" x="2808" y="1041" w="289" h="230" pX="0.5" pY="0.5" oX="53" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_31_ 3" x="3196" y="816" w="291" h="225" pX="0.5" pY="0.5" oX="61" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_32_ 3" x="3711" y="820" w="291" h="225" pX="0.5" pY="0.5" oX="71" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_33_ 4" x="0" y="2455" w="252" h="259" pX="0.5" pY="0.5" oX="133" oY="47" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_34_ 4" x="1717" y="1734" w="235" h="245" pX="0.5" pY="0.5" oX="147" oY="48" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_35_ 4" x="3854" y="2008" w="218" h="252" pX="0.5" pY="0.5" oX="160" oY="51" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_36_ 4" x="471" y="2467" w="221" h="260" pX="0.5" pY="0.5" oX="151" oY="57" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_37_ 4" x="692" y="2473" w="210" h="260" pX="0.5" pY="0.5" oX="149" oY="59" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_38_ 4" x="252" y="2467" w="219" h="259" pX="0.5" pY="0.5" oX="151" oY="54" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_39_ 4" x="1820" y="1983" w="223" h="250" pX="0.5" pY="0.5" oX="155" oY="51" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_40_ 4" x="1123" y="1728" w="242" h="244" pX="0.5" pY="0.5" oX="141" oY="49" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_41_ 5" x="2289" y="2757" w="212" h="271" pX="0.5" pY="0.5" oX="151" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_42_ 5" x="4029" y="2261" w="215" h="258" pX="0.5" pY="0.5" oX="152" oY="98" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_43_ 5" x="2848" y="1988" w="218" h="251" pX="0.5" pY="0.5" oX="155" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_44_ 5" x="174" y="1711" w="244" h="241" pX="0.5" pY="0.5" oX="132" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_45_ 5" x="3474" y="1509" w="251" h="239" pX="0.5" pY="0.5" oX="123" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_46_ 5" x="2877" y="1743" w="234" h="245" pX="0.5" pY="0.5" oX="140" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_47_ 5" x="3066" y="1992" w="213" h="251" pX="0.5" pY="0.5" oX="160" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_48_ 5" x="3175" y="2244" w="218" h="257" pX="0.5" pY="0.5" oX="153" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_49_ 6" x="902" y="2476" w="206" h="260" pX="0.5" pY="0.5" oX="62" oY="58" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_50_ 6" x="4072" y="2008" w="208" h="253" pX="0.5" pY="0.5" oX="58" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_51_ 6" x="5147" y="1528" w="213" h="240" pX="0.5" pY="0.5" oX="50" oY="60" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_52_ 6" x="210" y="1474" w="236" h="237" pX="0.5" pY="0.5" oX="46" oY="63" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_53_ 6" x="600" y="1721" w="251" h="243" pX="0.5" pY="0.5" oX="48" oY="65" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_54_ 6" x="1574" y="1258" w="233" h="235" pX="0.5" pY="0.5" oX="48" oY="61" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_55_ 6" x="446" y="1477" w="211" h="237" pX="0.5" pY="0.5" oX="50" oY="59" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_56_ 6" x="968" y="1972" w="213" h="249" pX="0.5" pY="0.5" oX="53" oY="61" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_57_ 7" x="1108" y="2480" w="252" h="260" pX="0.5" pY="0.5" oX="38" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_58_ 7" x="3993" y="2519" w="236" h="262" pX="0.5" pY="0.5" oX="41" oY="86" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_59_ 7" x="2470" y="2239" w="216" h="256" pX="0.5" pY="0.5" oX="45" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_60_ 7" x="2043" y="1983" w="215" h="250" pX="0.5" pY="0.5" oX="52" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_61_ 7" x="3279" y="1993" w="204" h="251" pX="0.5" pY="0.5" oX="65" oY="98" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_62_ 7" x="3483" y="1996" w="212" h="251" pX="0.5" pY="0.5" oX="55" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_63_ 7" x="3393" y="2247" w="217" h="257" pX="0.5" pY="0.5" oX="46" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Walk_64_ 7" x="4244" y="2263" w="233" h="258" pX="0.5" pY="0.5" oX="40" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_01_ 0" x="3103" y="192" w="244" h="199" pX="0.5" pY="0.5" oX="115" oY="105" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_02_ 0" x="289" y="172" w="249" h="197" pX="0.5" pY="0.5" oX="112" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_03_ 0" x="5872" y="0" w="253" h="196" pX="0.5" pY="0.5" oX="109" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_04_ 1" x="2304" y="1739" w="198" h="245" pX="0.5" pY="0.5" oX="135" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_05_ 1" x="3469" y="1748" w="196" h="245" pX="0.5" pY="0.5" oX="135" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_06_ 1" x="3665" y="1751" w="194" h="245" pX="0.5" pY="0.5" oX="135" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_07_ 2" x="1850" y="1034" w="204" h="229" pX="0.5" pY="0.5" oX="86" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_08_ 2" x="4115" y="1052" w="202" h="232" pX="0.5" pY="0.5" oX="88" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_09_ 2" x="3325" y="1273" w="201" h="235" pX="0.5" pY="0.5" oX="89" oY="95" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_10_ 3" x="3725" y="1512" w="240" h="239" pX="0.5" pY="0.5" oX="61" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_11_ 3" x="2279" y="1501" w="245" h="238" pX="0.5" pY="0.5" oX="59" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_12_ 3" x="657" y="1484" w="249" h="237" pX="0.5" pY="0.5" oX="58" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_13_ 4" x="1746" y="592" w="226" h="214" pX="0.5" pY="0.5" oX="129" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_14_ 4" x="186" y="789" w="228" h="221" pX="0.5" pY="0.5" oX="129" oY="98" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_15_ 4" x="5428" y="833" w="228" h="227" pX="0.5" pY="0.5" oX="129" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_16_ 5" x="4280" y="2010" w="224" h="253" pX="0.5" pY="0.5" oX="112" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_17_ 5" x="4504" y="2011" w="233" h="254" pX="0.5" pY="0.5" oX="106" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_18_ 5" x="4737" y="2013" w="240" h="254" pX="0.5" pY="0.5" oX="101" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_19_ 6" x="2054" y="1034" w="223" h="229" pX="0.5" pY="0.5" oX="84" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_20_ 6" x="3097" y="1041" w="232" h="230" pX="0.5" pY="0.5" oX="81" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_21_ 6" x="3329" y="1043" w="241" h="230" pX="0.5" pY="0.5" oX="78" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_22_ 7" x="5056" y="1768" w="230" h="248" pX="0.5" pY="0.5" oX="66" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_23_ 7" x="1347" y="1976" w="232" h="249" pX="0.5" pY="0.5" oX="65" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Infernal_Woozy_24_ 7" x="2258" y="1984" w="233" h="250" pX="0.5" pY="0.5" oX="65" oY="90" oW="400" oH="400"/>
+</TextureAtlas>

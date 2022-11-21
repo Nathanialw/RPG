@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="3097" height="3076" scale="1" format="RGBA8888">
+  <sprite n="Wyvern_Gray_Attack 1_01_ 0" x="105" y="2524" w="99" h="153" pX="0.5" pY="0.5" oX="81" oY="73" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_02_ 0" x="2273" y="691" w="131" h="163" pX="0.5" pY="0.5" oX="65" oY="48" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_03_ 0" x="2302" y="167" w="100" h="164" pX="0.5" pY="0.5" oX="88" oY="88" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_04_ 1" x="1743" y="898" w="203" h="103" pX="0.5" pY="0.5" oX="35" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_05_ 1" x="1612" y="1749" w="192" h="121" pX="0.5" pY="0.5" oX="64" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_06_ 1" x="207" y="1546" w="205" h="138" pX="0.5" pY="0.5" oX="15" oY="62" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_07_ 2" x="1743" y="665" w="205" h="105" pX="0.5" pY="0.5" oX="21" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_08_ 2" x="1236" y="1872" w="192" h="114" pX="0.5" pY="0.5" oX="3" oY="94" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_09_ 2" x="1512" y="1476" w="206" h="143" pX="0.5" pY="0.5" oX="37" oY="62" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_10_ 3" x="1929" y="2053" w="99" h="178" pX="0.5" pY="0.5" oX="78" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_11_ 3" x="2564" y="2208" w="131" h="150" pX="0.5" pY="0.5" oX="63" oY="101" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_12_ 3" x="448" y="2247" w="102" h="163" pX="0.5" pY="0.5" oX="74" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_13_ 4" x="2862" y="445" w="138" h="117" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_14_ 4" x="2862" y="1716" w="134" h="127" pX="0.5" pY="0.5" oX="80" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_15_ 4" x="2274" y="331" w="129" h="163" pX="0.5" pY="0.5" oX="50" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_16_ 5" x="2570" y="270" w="152" h="135" pX="0.5" pY="0.5" oX="63" oY="79" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_17_ 5" x="1867" y="2401" w="144" h="122" pX="0.5" pY="0.5" oX="85" oY="98" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_18_ 5" x="2406" y="0" w="164" h="139" pX="0.5" pY="0.5" oX="33" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_19_ 6" x="155" y="2417" w="155" h="107" pX="0.5" pY="0.5" oX="43" oY="101" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_20_ 6" x="676" y="2823" w="144" h="126" pX="0.5" pY="0.5" oX="30" oY="75" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_21_ 6" x="2240" y="1458" w="164" h="149" pX="0.5" pY="0.5" oX="61" oY="72" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_22_ 7" x="2722" y="0" w="140" h="146" pX="0.5" pY="0.5" oX="61" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_23_ 7" x="2149" y="2810" w="133" h="134" pX="0.5" pY="0.5" oX="46" oY="101" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 1_24_ 7" x="419" y="2825" w="130" h="143" pX="0.5" pY="0.5" oX="78" oY="72" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_01_ 0" x="1347" y="2524" w="99" h="153" pX="0.5" pY="0.5" oX="81" oY="73" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_02_ 0" x="1230" y="2233" w="148" h="171" pX="0.5" pY="0.5" oX="46" oY="18" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_03_ 0" x="101" y="1877" w="168" h="196" pX="0.5" pY="0.5" oX="43" oY="60" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_04_ 1" x="1740" y="1158" w="202" h="103" pX="0.5" pY="0.5" oX="35" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_05_ 1" x="1032" y="2064" w="180" h="155" pX="0.5" pY="0.5" oX="74" oY="47" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_06_ 1" x="1752" y="187" w="205" h="163" pX="0.5" pY="0.5" oX="17" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_07_ 2" x="1743" y="560" w="205" h="105" pX="0.5" pY="0.5" oX="21" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_08_ 2" x="1749" y="2053" w="180" h="153" pX="0.5" pY="0.5" oX="12" oY="60" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_09_ 2" x="1742" y="1001" w="203" h="157" pX="0.5" pY="0.5" oX="35" oY="82" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_10_ 3" x="2141" y="1516" w="99" h="178" pX="0.5" pY="0.5" oX="78" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_11_ 3" x="1081" y="2233" w="149" h="172" pX="0.5" pY="0.5" oX="68" oY="65" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_12_ 3" x="1920" y="2231" w="167" h="170" pX="0.5" pY="0.5" oX="51" oY="31" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_13_ 4" x="2862" y="234" w="138" h="117" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_14_ 4" x="2404" y="560" w="160" h="149" pX="0.5" pY="0.5" oX="62" oY="43" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_15_ 4" x="2378" y="2068" w="156" h="154" pX="0.5" pY="0.5" oX="47" oY="82" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_16_ 5" x="2570" y="135" w="152" h="135" pX="0.5" pY="0.5" oX="63" oY="79" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_17_ 5" x="2486" y="854" w="135" h="151" pX="0.5" pY="0.5" oX="85" oY="62" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_18_ 5" x="2566" y="1142" w="144" h="150" pX="0.5" pY="0.5" oX="43" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_19_ 6" x="2254" y="2222" w="155" h="107" pX="0.5" pY="0.5" oX="43" oY="101" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_20_ 6" x="2246" y="1976" w="132" h="161" pX="0.5" pY="0.5" oX="45" oY="40" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_21_ 6" x="2379" y="1156" w="140" h="162" pX="0.5" pY="0.5" oX="80" oY="78" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_22_ 7" x="2722" y="1434" w="140" h="146" pX="0.5" pY="0.5" oX="61" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_23_ 7" x="2388" y="1013" w="158" h="141" pX="0.5" pY="0.5" oX="46" oY="64" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Attack 2_24_ 7" x="2566" y="1005" w="151" h="137" pX="0.5" pY="0.5" oX="62" oY="77" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_01_ 0" x="2993" y="1547" w="104" h="104" pX="0.5" pY="0.5" oX="86" oY="114" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_02_ 0" x="2993" y="1443" w="104" h="104" pX="0.5" pY="0.5" oX="86" oY="114" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_03_ 0" x="2993" y="1338" w="104" h="105" pX="0.5" pY="0.5" oX="86" oY="113" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_04_ 1" x="2254" y="2137" w="120" h="84" pX="0.5" pY="0.5" oX="69" oY="131" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_05_ 1" x="2775" y="2972" w="120" h="85" pX="0.5" pY="0.5" oX="69" oY="131" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_06_ 1" x="2655" y="2972" w="120" h="85" pX="0.5" pY="0.5" oX="69" oY="131" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_07_ 2" x="245" y="2969" w="118" h="77" pX="0.5" pY="0.5" oX="69" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_08_ 2" x="963" y="2965" w="119" h="77" pX="0.5" pY="0.5" oX="68" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_09_ 2" x="126" y="2970" w="119" h="77" pX="0.5" pY="0.5" oX="68" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_10_ 3" x="2992" y="1938" w="105" h="94" pX="0.5" pY="0.5" oX="66" oY="117" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_11_ 3" x="2992" y="2443" w="105" h="95" pX="0.5" pY="0.5" oX="66" oY="117" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_12_ 3" x="2992" y="1843" w="105" h="95" pX="0.5" pY="0.5" oX="66" oY="117" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_13_ 4" x="3000" y="552" w="94" h="107" pX="0.5" pY="0.5" oX="86" oY="118" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_14_ 4" x="2998" y="909" w="94" h="107" pX="0.5" pY="0.5" oX="86" oY="118" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_15_ 4" x="3000" y="444" w="94" h="108" pX="0.5" pY="0.5" oX="86" oY="117" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_16_ 5" x="2859" y="2884" w="126" h="88" pX="0.5" pY="0.5" oX="59" oY="120" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_17_ 5" x="2859" y="2796" w="127" h="88" pX="0.5" pY="0.5" oX="59" oY="120" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_18_ 5" x="2564" y="619" w="127" h="88" pX="0.5" pY="0.5" oX="59" oY="120" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_19_ 6" x="2100" y="3000" w="125" h="75" pX="0.5" pY="0.5" oX="72" oY="125" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_20_ 6" x="2282" y="2925" w="125" h="75" pX="0.5" pY="0.5" oX="72" oY="125" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_21_ 6" x="1873" y="2927" w="126" h="76" pX="0.5" pY="0.5" oX="71" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_22_ 7" x="2992" y="2538" w="95" h="86" pX="0.5" pY="0.5" oX="76" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_23_ 7" x="2996" y="1737" w="95" h="86" pX="0.5" pY="0.5" oX="76" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Behavior_24_ 7" x="2996" y="1651" w="95" h="86" pX="0.5" pY="0.5" oX="76" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_01_ 0" x="1006" y="2524" w="99" h="153" pX="0.5" pY="0.5" oX="81" oY="73" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_02_ 0" x="1864" y="2676" w="82" h="134" pX="0.5" pY="0.5" oX="90" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_03_ 0" x="474" y="2968" w="72" h="107" pX="0.5" pY="0.5" oX="93" oY="74" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_04_ 1" x="1740" y="1261" w="202" h="103" pX="0.5" pY="0.5" oX="35" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_05_ 1" x="554" y="2231" w="174" h="108" pX="0.5" pY="0.5" oX="62" oY="91" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_06_ 1" x="1592" y="2943" w="116" h="111" pX="0.5" pY="0.5" oX="113" oY="88" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_07_ 2" x="1306" y="1586" w="205" h="105" pX="0.5" pY="0.5" oX="21" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_08_ 2" x="1046" y="1741" w="177" h="110" pX="0.5" pY="0.5" oX="23" oY="93" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_09_ 2" x="549" y="2953" w="117" h="100" pX="0.5" pY="0.5" oX="29" oY="99" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_10_ 3" x="2148" y="180" w="99" h="178" pX="0.5" pY="0.5" oX="78" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_11_ 3" x="2135" y="1797" w="80" h="179" pX="0.5" pY="0.5" oX="90" oY="62" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_12_ 3" x="1919" y="1612" w="71" h="137" pX="0.5" pY="0.5" oX="93" oY="101" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_13_ 4" x="2862" y="562" w="138" h="117" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_14_ 4" x="1247" y="2823" w="141" h="105" pX="0.5" pY="0.5" oX="72" oY="88" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_15_ 4" x="1476" y="2896" w="116" h="113" pX="0.5" pY="0.5" oX="104" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_16_ 5" x="2570" y="0" w="152" h="135" pX="0.5" pY="0.5" oX="63" oY="79" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_17_ 5" x="2382" y="1756" w="117" h="156" pX="0.5" pY="0.5" oX="86" oY="69" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_18_ 5" x="2621" y="846" w="94" h="136" pX="0.5" pY="0.5" oX="104" oY="95" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_19_ 6" x="310" y="2417" w="155" h="107" pX="0.5" pY="0.5" oX="43" oY="101" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_20_ 6" x="1355" y="2943" w="121" h="113" pX="0.5" pY="0.5" oX="57" oY="87" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_21_ 6" x="3000" y="226" w="93" h="109" pX="0.5" pY="0.5" oX="61" oY="84" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_22_ 7" x="2722" y="1726" w="140" h="146" pX="0.5" pY="0.5" oX="61" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_23_ 7" x="2695" y="1872" w="146" h="141" pX="0.5" pY="0.5" oX="45" oY="74" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Block_24_ 7" x="791" y="2966" w="114" h="109" pX="0.5" pY="0.5" oX="38" oY="104" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_01_ 0" x="327" y="2248" w="116" h="169" pX="0.5" pY="0.5" oX="74" oY="65" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_02_ 0" x="2147" y="358" w="127" h="170" pX="0.5" pY="0.5" oX="69" oY="64" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_03_ 0" x="2137" y="705" w="136" h="170" pX="0.5" pY="0.5" oX="65" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_04_ 1" x="1306" y="1476" w="206" h="110" pX="0.5" pY="0.5" oX="35" oY="96" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_05_ 1" x="1533" y="1356" w="207" h="120" pX="0.5" pY="0.5" oX="35" oY="88" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_06_ 1" x="1534" y="908" w="208" h="129" pX="0.5" pY="0.5" oX="35" oY="81" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_07_ 2" x="0" y="1543" w="207" h="103" pX="0.5" pY="0.5" oX="15" oY="99" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_08_ 2" x="1533" y="1037" w="208" h="112" pX="0.5" pY="0.5" oX="14" oY="91" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_09_ 2" x="845" y="1508" w="210" h="120" pX="0.5" pY="0.5" oX="13" oY="84" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_10_ 3" x="2270" y="991" w="118" h="165" pX="0.5" pY="0.5" oX="69" oY="90" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_11_ 3" x="2278" y="0" w="128" h="167" pX="0.5" pY="0.5" oX="64" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_12_ 3" x="2133" y="992" w="137" h="168" pX="0.5" pY="0.5" oX="59" oY="88" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_13_ 4" x="2695" y="2303" w="144" h="134" pX="0.5" pY="0.5" oX="60" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_14_ 4" x="2563" y="709" w="149" h="137" pX="0.5" pY="0.5" oX="60" oY="77" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_15_ 4" x="853" y="2524" w="153" h="142" pX="0.5" pY="0.5" oX="60" oY="72" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_16_ 5" x="1378" y="2285" w="169" h="112" pX="0.5" pY="0.5" oX="64" oY="107" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_17_ 5" x="2135" y="875" w="167" h="116" pX="0.5" pY="0.5" oX="64" oY="106" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_18_ 5" x="2405" y="279" w="164" h="120" pX="0.5" pY="0.5" oX="64" oY="105" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_19_ 6" x="1547" y="2285" w="168" h="128" pX="0.5" pY="0.5" oX="25" oY="88" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_20_ 6" x="2215" y="1694" w="167" h="135" pX="0.5" pY="0.5" oX="27" oY="81" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_21_ 6" x="2406" y="139" w="164" h="140" pX="0.5" pY="0.5" oX="30" oY="76" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_22_ 7" x="1592" y="2788" w="143" h="130" pX="0.5" pY="0.5" oX="54" oY="110" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_23_ 7" x="1988" y="2675" w="148" h="129" pX="0.5" pY="0.5" oX="49" oY="109" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Critical HP_24_ 7" x="1598" y="2524" w="152" h="128" pX="0.5" pY="0.5" oX="46" oY="108" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Dead_01_ 0" x="1113" y="2405" w="88" h="117" pX="0.5" pY="0.5" oX="86" oY="108" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Dead_02_ 1" x="269" y="2002" w="155" h="63" pX="0.5" pY="0.5" oX="55" oY="136" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Dead_03_ 2" x="464" y="1986" w="155" h="78" pX="0.5" pY="0.5" oX="47" oY="125" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Dead_04_ 3" x="2302" y="854" w="86" h="120" pX="0.5" pY="0.5" oX="84" oY="108" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Dead_05_ 4" x="2407" y="2972" w="124" h="98" pX="0.5" pY="0.5" oX="80" oY="126" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Dead_06_ 5" x="2861" y="2133" w="128" h="106" pX="0.5" pY="0.5" oX="58" oY="118" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Dead_07_ 6" x="2861" y="2697" w="129" h="99" pX="0.5" pY="0.5" oX="70" oY="112" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Dead_08_ 7" x="2531" y="2972" w="124" h="98" pX="0.5" pY="0.5" oX="52" oY="116" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_01_ 0" x="754" y="2524" w="99" h="153" pX="0.5" pY="0.5" oX="81" oY="73" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_02_ 0" x="1993" y="1160" w="120" h="187" pX="0.5" pY="0.5" oX="62" oY="27" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_03_ 0" x="1419" y="2114" w="170" h="171" pX="0.5" pY="0.5" oX="35" oY="17" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_04_ 1" x="617" y="1638" w="202" h="103" pX="0.5" pY="0.5" oX="35" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_05_ 1" x="1511" y="1619" w="204" h="126" pX="0.5" pY="0.5" oX="45" oY="76" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_06_ 1" x="2072" y="528" w="179" h="177" pX="0.5" pY="0.5" oX="76" oY="31" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_07_ 2" x="1744" y="350" w="205" h="105" pX="0.5" pY="0.5" oX="21" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_08_ 2" x="396" y="1733" w="196" h="128" pX="0.5" pY="0.5" oX="22" oY="82" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_09_ 2" x="554" y="2066" w="180" h="165" pX="0.5" pY="0.5" oX="8" oY="53" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_10_ 3" x="2147" y="1976" w="99" h="178" pX="0.5" pY="0.5" oX="78" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_11_ 3" x="911" y="391" w="119" h="200" pX="0.5" pY="0.5" oX="77" oY="55" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_12_ 3" x="1749" y="2206" w="171" h="173" pX="0.5" pY="0.5" oX="57" oY="62" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_13_ 4" x="2862" y="0" w="138" h="117" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_14_ 4" x="2240" y="1318" w="165" h="140" pX="0.5" pY="0.5" oX="69" oY="57" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_15_ 4" x="2087" y="2165" w="167" h="157" pX="0.5" pY="0.5" oX="57" oY="42" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_16_ 5" x="1446" y="2524" w="152" h="135" pX="0.5" pY="0.5" oX="63" oY="79" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_17_ 5" x="2404" y="399" w="160" h="161" pX="0.5" pY="0.5" oX="69" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_18_ 5" x="2404" y="1462" w="150" h="160" pX="0.5" pY="0.5" oX="69" oY="52" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_19_ 6" x="810" y="2413" w="155" h="107" pX="0.5" pY="0.5" oX="43" oY="101" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_20_ 6" x="2405" y="1318" w="161" h="144" pX="0.5" pY="0.5" oX="33" oY="53" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_21_ 6" x="2251" y="528" w="146" h="163" pX="0.5" pY="0.5" oX="46" oY="40" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_22_ 7" x="2582" y="2672" w="140" h="146" pX="0.5" pY="0.5" oX="61" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_23_ 7" x="2212" y="1160" w="167" h="158" pX="0.5" pY="0.5" oX="27" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Evade_24_ 7" x="2215" y="1829" w="165" h="147" pX="0.5" pY="0.5" oX="41" oY="62" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_01_ 0" x="1248" y="2524" w="99" h="153" pX="0.5" pY="0.5" oX="81" oY="73" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_02_ 0" x="1222" y="2677" w="128" h="146" pX="0.5" pY="0.5" oX="62" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_03_ 0" x="2136" y="2676" w="146" h="134" pX="0.5" pY="0.5" oX="58" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_04_ 1" x="819" y="1638" w="202" h="103" pX="0.5" pY="0.5" oX="35" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_05_ 1" x="1957" y="250" w="190" h="123" pX="0.5" pY="0.5" oX="47" oY="84" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_06_ 1" x="0" y="2257" w="176" h="158" pX="0.5" pY="0.5" oX="64" oY="52" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_07_ 2" x="1744" y="455" w="205" h="105" pX="0.5" pY="0.5" oX="21" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_08_ 2" x="853" y="1741" w="193" h="109" pX="0.5" pY="0.5" oX="22" oY="97" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_09_ 2" x="1419" y="1991" w="181" h="123" pX="0.5" pY="0.5" oX="19" oY="82" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_10_ 3" x="2113" y="1160" w="99" h="178" pX="0.5" pY="0.5" oX="78" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_11_ 3" x="2148" y="0" w="130" h="180" pX="0.5" pY="0.5" oX="68" oY="61" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_12_ 3" x="1600" y="2053" w="149" h="180" pX="0.5" pY="0.5" oX="56" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_13_ 4" x="2862" y="117" w="138" h="117" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_14_ 4" x="2859" y="800" w="136" h="109" pX="0.5" pY="0.5" oX="62" oY="83" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_15_ 4" x="2011" y="2810" w="138" h="136" pX="0.5" pY="0.5" oX="67" oY="45" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_16_ 5" x="2290" y="2524" w="152" h="135" pX="0.5" pY="0.5" oX="63" oY="79" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_17_ 5" x="2722" y="2724" w="137" h="142" pX="0.5" pY="0.5" oX="78" oY="71" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_18_ 5" x="548" y="2677" w="128" h="147" pX="0.5" pY="0.5" oX="92" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_19_ 6" x="655" y="2413" w="155" h="107" pX="0.5" pY="0.5" oX="43" oY="101" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_20_ 6" x="2425" y="2821" w="141" h="109" pX="0.5" pY="0.5" oX="43" oY="94" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_21_ 6" x="2862" y="1338" w="131" h="117" pX="0.5" pY="0.5" oX="39" oY="81" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_22_ 7" x="2722" y="292" w="140" h="146" pX="0.5" pY="0.5" oX="61" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_23_ 7" x="2722" y="2013" w="139" h="145" pX="0.5" pY="0.5" oX="61" oY="82" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Get Hit_24_ 7" x="2710" y="1142" w="141" h="146" pX="0.5" pY="0.5" oX="55" oY="84" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_01_ 0" x="2841" y="1872" w="100" h="137" pX="0.5" pY="0.5" oX="81" oY="83" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_02_ 0" x="2846" y="1580" w="106" h="136" pX="0.5" pY="0.5" oX="78" oY="84" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_03_ 0" x="2835" y="2437" w="111" h="136" pX="0.5" pY="0.5" oX="76" oY="85" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_04_ 1" x="682" y="234" w="190" h="117" pX="0.5" pY="0.5" oX="38" oY="85" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_05_ 1" x="1804" y="1749" w="189" h="117" pX="0.5" pY="0.5" oX="38" oY="86" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_06_ 1" x="1947" y="875" w="188" h="117" pX="0.5" pY="0.5" oX="38" oY="87" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_07_ 2" x="849" y="1872" w="194" h="120" pX="0.5" pY="0.5" oX="30" oY="85" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_08_ 2" x="493" y="354" w="193" h="120" pX="0.5" pY="0.5" oX="31" oY="85" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_09_ 2" x="1428" y="1872" w="192" h="119" pX="0.5" pY="0.5" oX="32" oY="86" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_10_ 3" x="0" y="2074" w="99" h="183" pX="0.5" pY="0.5" oX="78" oY="55" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_11_ 3" x="448" y="2066" w="106" h="181" pX="0.5" pY="0.5" oX="75" oY="56" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_12_ 3" x="734" y="2066" w="111" h="180" pX="0.5" pY="0.5" oX="72" oY="57" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_13_ 4" x="2862" y="909" w="136" h="103" pX="0.5" pY="0.5" oX="59" oY="95" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_14_ 4" x="2862" y="1132" w="134" h="103" pX="0.5" pY="0.5" oX="59" oY="96" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_15_ 4" x="2862" y="1235" w="133" h="103" pX="0.5" pY="0.5" oX="59" oY="96" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_16_ 5" x="968" y="2677" w="136" h="147" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_17_ 5" x="2722" y="2158" w="136" h="145" pX="0.5" pY="0.5" oX="69" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_18_ 5" x="143" y="2825" w="135" h="144" pX="0.5" pY="0.5" oX="69" oY="69" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_19_ 6" x="1522" y="2413" w="141" h="109" pX="0.5" pY="0.5" oX="53" oY="96" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_20_ 6" x="2579" y="2818" w="141" h="109" pX="0.5" pY="0.5" oX="53" oY="96" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_21_ 6" x="1230" y="2404" w="141" h="110" pX="0.5" pY="0.5" oX="53" oY="96" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_22_ 7" x="2442" y="2524" w="140" h="151" pX="0.5" pY="0.5" oX="63" oY="72" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_23_ 7" x="2534" y="2058" w="138" h="150" pX="0.5" pY="0.5" oX="65" oY="73" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Idle_24_ 7" x="2566" y="1365" w="137" h="149" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_01_ 0" x="2985" y="2903" w="109" h="107" pX="0.5" pY="0.5" oX="55" oY="108" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_02_ 0" x="2986" y="2796" w="111" h="107" pX="0.5" pY="0.5" oX="54" oY="108" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_03_ 0" x="363" y="2969" w="111" h="107" pX="0.5" pY="0.5" oX="54" oY="108" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_04_ 1" x="2720" y="2866" w="139" h="76" pX="0.5" pY="0.5" oX="67" oY="120" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_05_ 1" x="2717" y="1057" w="139" h="76" pX="0.5" pY="0.5" oX="67" oY="120" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_06_ 1" x="2240" y="1607" w="139" h="76" pX="0.5" pY="0.5" oX="67" oY="120" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_07_ 2" x="2539" y="1663" w="138" h="93" pX="0.5" pY="0.5" oX="51" oY="132" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_08_ 2" x="1388" y="2802" w="138" h="94" pX="0.5" pY="0.5" oX="51" oY="131" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_09_ 2" x="2862" y="351" w="138" h="94" pX="0.5" pY="0.5" oX="51" oY="131" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_10_ 3" x="2963" y="2341" w="108" h="102" pX="0.5" pY="0.5" oX="93" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_11_ 3" x="2989" y="2133" w="108" h="102" pX="0.5" pY="0.5" oX="93" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_12_ 3" x="2963" y="2239" w="109" h="102" pX="0.5" pY="0.5" oX="93" oY="124" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_13_ 4" x="2997" y="1016" w="80" h="106" pX="0.5" pY="0.5" oX="97" oY="111" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_14_ 4" x="2996" y="1228" w="80" h="106" pX="0.5" pY="0.5" oX="97" oY="111" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_15_ 4" x="2997" y="1122" w="80" h="106" pX="0.5" pY="0.5" oX="97" oY="111" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_16_ 5" x="1212" y="2153" w="151" h="77" pX="0.5" pY="0.5" oX="64" oY="135" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_17_ 5" x="845" y="2151" w="151" h="77" pX="0.5" pY="0.5" oX="64" oY="135" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_18_ 5" x="1119" y="963" w="150" h="77" pX="0.5" pY="0.5" oX="64" oY="135" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_19_ 6" x="675" y="1112" w="151" h="73" pX="0.5" pY="0.5" oX="41" oY="120" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_20_ 6" x="2566" y="546" w="151" h="73" pX="0.5" pY="0.5" oX="41" oY="120" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_21_ 6" x="2566" y="1292" w="150" h="73" pX="0.5" pY="0.5" oX="42" oY="120" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_22_ 7" x="2641" y="1756" w="80" h="110" pX="0.5" pY="0.5" oX="80" oY="125" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_23_ 7" x="2999" y="679" w="80" h="109" pX="0.5" pY="0.5" oX="80" oY="125" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Rest_24_ 7" x="465" y="2410" w="80" h="109" pX="0.5" pY="0.5" oX="80" oY="125" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_01_ 0" x="1946" y="992" w="187" h="168" pX="0.5" pY="0.5" oX="40" oY="62" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_02_ 0" x="656" y="745" w="227" h="163" pX="0.5" pY="0.5" oX="19" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_03_ 0" x="440" y="197" w="242" h="157" pX="0.5" pY="0.5" oX="10" oY="71" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_04_ 0" x="188" y="0" w="252" h="151" pX="0.5" pY="0.5" oX="4" oY="76" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_05_ 0" x="1535" y="388" w="209" h="145" pX="0.5" pY="0.5" oX="24" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_06_ 0" x="188" y="151" w="252" h="151" pX="0.5" pY="0.5" oX="4" oY="76" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_07_ 0" x="251" y="354" w="242" h="157" pX="0.5" pY="0.5" oX="10" oY="71" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_08_ 0" x="872" y="0" w="228" h="163" pX="0.5" pY="0.5" oX="19" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_09_ 1" x="441" y="1186" w="220" h="188" pX="0.5" pY="0.5" oX="34" oY="6" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_10_ 1" x="1086" y="401" w="222" h="217" pX="0.5" pY="0.5" oX="33" oY="1" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_11_ 1" x="0" y="1151" w="221" h="213" pX="0.5" pY="0.5" oX="33" oY="19" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_12_ 1" x="1101" y="1248" w="219" h="202" pX="0.5" pY="0.5" oX="32" oY="45" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_13_ 1" x="1320" y="754" w="214" h="164" pX="0.5" pY="0.5" oX="32" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_14_ 1" x="1101" y="1046" w="219" h="202" pX="0.5" pY="0.5" oX="32" oY="45" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_15_ 1" x="898" y="833" w="221" h="213" pX="0.5" pY="0.5" oX="33" oY="19" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_16_ 1" x="1086" y="618" w="222" h="215" pX="0.5" pY="0.5" oX="33" oY="3" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_17_ 2" x="1100" y="0" w="223" h="198" pX="0.5" pY="0.5" oX="3" oY="1" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_18_ 2" x="686" y="391" w="225" h="216" pX="0.5" pY="0.5" oX="2" oY="2" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_19_ 2" x="225" y="947" w="225" h="213" pX="0.5" pY="0.5" oX="3" oY="19" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_20_ 2" x="1092" y="198" w="223" h="203" pX="0.5" pY="0.5" oX="6" oY="44" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_21_ 2" x="1323" y="0" w="219" h="175" pX="0.5" pY="0.5" oX="11" oY="69" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_22_ 2" x="675" y="908" w="223" h="204" pX="0.5" pY="0.5" oX="6" oY="43" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_23_ 2" x="450" y="973" w="225" h="213" pX="0.5" pY="0.5" oX="3" oY="19" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_24_ 2" x="0" y="935" w="225" h="216" pX="0.5" pY="0.5" oX="2" oY="2" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_25_ 3" x="0" y="0" w="188" h="256" pX="0.5" pY="0.5" oX="40" oY="0" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_26_ 3" x="228" y="714" w="227" h="233" pX="0.5" pY="0.5" oX="19" oY="23" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_27_ 3" x="241" y="511" w="241" h="203" pX="0.5" pY="0.5" oX="11" oY="53" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_28_ 3" x="440" y="0" w="251" h="197" pX="0.5" pY="0.5" oX="5" oY="59" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_29_ 3" x="1530" y="189" w="209" h="199" pX="0.5" pY="0.5" oX="24" oY="54" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_30_ 3" x="0" y="302" w="251" h="197" pX="0.5" pY="0.5" oX="5" oY="59" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_31_ 3" x="0" y="499" w="241" h="203" pX="0.5" pY="0.5" oX="11" oY="53" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_32_ 3" x="0" y="702" w="228" h="233" pX="0.5" pY="0.5" oX="19" oY="23" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_33_ 4" x="659" y="1872" w="190" h="194" pX="0.5" pY="0.5" oX="33" oY="17" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_34_ 4" x="635" y="1388" w="210" h="188" pX="0.5" pY="0.5" oX="12" oY="32" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_35_ 4" x="881" y="1329" w="213" h="179" pX="0.5" pY="0.5" oX="8" oY="57" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_36_ 4" x="424" y="1374" w="211" h="177" pX="0.5" pY="0.5" oX="8" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_37_ 4" x="1948" y="717" w="189" h="158" pX="0.5" pY="0.5" oX="26" oY="84" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_38_ 4" x="213" y="1368" w="211" h="178" pX="0.5" pY="0.5" oX="8" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_39_ 4" x="0" y="1364" w="213" h="179" pX="0.5" pY="0.5" oX="8" oY="57" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_40_ 4" x="1542" y="0" w="210" h="189" pX="0.5" pY="0.5" oX="12" oY="32" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_41_ 5" x="691" y="0" w="181" h="234" pX="0.5" pY="0.5" oX="33" oY="0" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_42_ 5" x="883" y="607" w="203" h="223" pX="0.5" pY="0.5" oX="12" oY="12" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_43_ 5" x="1533" y="1149" w="207" h="207" pX="0.5" pY="0.5" oX="7" oY="27" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_44_ 5" x="412" y="1551" w="205" h="182" pX="0.5" pY="0.5" oX="7" oY="51" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_45_ 5" x="849" y="1992" w="183" h="159" pX="0.5" pY="0.5" oX="26" oY="72" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_46_ 5" x="1752" y="0" w="205" h="187" pX="0.5" pY="0.5" oX="7" oY="46" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_47_ 5" x="1323" y="175" w="207" h="218" pX="0.5" pY="0.5" oX="7" oY="16" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_48_ 5" x="482" y="511" w="204" h="234" pX="0.5" pY="0.5" oX="11" oY="1" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_49_ 6" x="1043" y="1872" w="193" h="192" pX="0.5" pY="0.5" oX="44" oY="17" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_50_ 6" x="1320" y="918" w="213" h="188" pX="0.5" pY="0.5" oX="43" oY="32" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_51_ 6" x="1320" y="1291" w="213" h="185" pX="0.5" pY="0.5" oX="43" oY="49" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_52_ 6" x="1535" y="533" w="208" h="187" pX="0.5" pY="0.5" oX="45" oY="58" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_53_ 6" x="1236" y="1986" w="183" h="167" pX="0.5" pY="0.5" oX="48" oY="75" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_54_ 6" x="1535" y="720" w="208" h="188" pX="0.5" pY="0.5" oX="45" oY="57" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_55_ 6" x="1320" y="1106" w="213" h="185" pX="0.5" pY="0.5" oX="43" oY="49" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_56_ 6" x="1094" y="1450" w="212" h="188" pX="0.5" pY="0.5" oX="43" oY="33" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_57_ 7" x="455" y="745" w="201" h="228" pX="0.5" pY="0.5" oX="35" oY="0" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_58_ 7" x="881" y="1112" w="220" h="217" pX="0.5" pY="0.5" oX="35" oY="12" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_59_ 7" x="661" y="1186" w="220" h="202" pX="0.5" pY="0.5" oX="36" oY="27" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_60_ 7" x="1320" y="393" w="215" h="178" pX="0.5" pY="0.5" oX="38" oY="51" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_61_ 7" x="1949" y="373" w="189" h="155" pX="0.5" pY="0.5" oX="42" oY="71" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_62_ 7" x="1320" y="571" w="215" h="183" pX="0.5" pY="0.5" oX="38" oY="46" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_63_ 7" x="221" y="1160" w="220" h="208" pX="0.5" pY="0.5" oX="36" oY="21" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Run_64_ 7" x="872" y="163" w="220" h="228" pX="0.5" pY="0.5" oX="35" oY="1" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_01_ 0" x="557" y="2524" w="99" h="153" pX="0.5" pY="0.5" oX="81" oY="73" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_02_ 0" x="1999" y="2946" w="101" h="125" pX="0.5" pY="0.5" oX="77" oY="81" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_03_ 0" x="2839" y="2303" w="124" h="132" pX="0.5" pY="0.5" oX="62" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_04_ 1" x="1021" y="1638" w="202" h="103" pX="0.5" pY="0.5" oX="35" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_05_ 1" x="1941" y="1364" w="185" h="117" pX="0.5" pY="0.5" oX="55" oY="81" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_06_ 1" x="1598" y="2652" w="148" h="136" pX="0.5" pY="0.5" oX="75" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_07_ 2" x="0" y="1646" w="205" h="105" pX="0.5" pY="0.5" oX="21" oY="100" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_08_ 2" x="1957" y="0" w="191" h="125" pX="0.5" pY="0.5" oX="17" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_09_ 2" x="2382" y="1622" w="157" h="134" pX="0.5" pY="0.5" oX="33" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_10_ 3" x="2141" y="1338" w="99" h="178" pX="0.5" pY="0.5" oX="78" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_11_ 3" x="0" y="1877" w="101" h="197" pX="0.5" pY="0.5" oX="81" oY="50" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_12_ 3" x="1949" y="528" w="123" h="189" pX="0.5" pY="0.5" oX="77" oY="50" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_13_ 4" x="1873" y="2810" w="138" h="117" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_14_ 4" x="965" y="2413" w="148" h="111" pX="0.5" pY="0.5" oX="74" oY="88" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_15_ 4" x="2722" y="1288" w="138" h="146" pX="0.5" pY="0.5" oX="72" oY="59" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_16_ 5" x="1715" y="2379" w="152" h="135" pX="0.5" pY="0.5" oX="63" oY="79" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_17_ 5" x="962" y="2233" w="119" h="173" pX="0.5" pY="0.5" oX="76" oY="61" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_18_ 5" x="845" y="2233" w="117" h="174" pX="0.5" pY="0.5" oX="71" oY="56" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_19_ 6" x="0" y="2417" w="155" h="107" pX="0.5" pY="0.5" oX="43" oY="101" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_20_ 6" x="0" y="2970" w="126" h="106" pX="0.5" pY="0.5" oX="62" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_21_ 6" x="549" y="2824" w="117" h="129" pX="0.5" pY="0.5" oX="73" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_22_ 7" x="2722" y="146" w="140" h="146" pX="0.5" pY="0.5" oX="61" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_23_ 7" x="2087" y="2370" w="155" h="152" pX="0.5" pY="0.5" oX="35" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Use Skill_24_ 7" x="2522" y="1907" w="143" h="151" pX="0.5" pY="0.5" oX="46" oY="59" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_01_ 0" x="2527" y="2370" w="109" h="151" pX="0.5" pY="0.5" oX="80" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_02_ 0" x="1746" y="2676" w="118" h="146" pX="0.5" pY="0.5" oX="74" oY="76" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_03_ 0" x="426" y="2677" w="122" h="147" pX="0.5" pY="0.5" oX="72" oY="77" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_04_ 0" x="1104" y="2677" w="118" h="146" pX="0.5" pY="0.5" oX="74" oY="78" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_05_ 0" x="446" y="2524" w="111" h="153" pX="0.5" pY="0.5" oX="77" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_06_ 0" x="550" y="2339" w="105" h="155" pX="0.5" pY="0.5" oX="80" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_07_ 0" x="2582" y="2521" w="111" h="151" pX="0.5" pY="0.5" oX="77" oY="72" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_08_ 0" x="0" y="2524" w="105" h="154" pX="0.5" pY="0.5" oX="80" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_09_ 1" x="1917" y="1484" w="186" h="128" pX="0.5" pY="0.5" oX="36" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_10_ 1" x="1957" y="125" w="191" h="125" pX="0.5" pY="0.5" oX="35" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_11_ 1" x="1223" y="1691" w="195" h="125" pX="0.5" pY="0.5" oX="35" oY="69" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_12_ 1" x="1418" y="1745" w="194" h="127" pX="0.5" pY="0.5" oX="35" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_13_ 1" x="1119" y="833" w="201" h="130" pX="0.5" pY="0.5" oX="34" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_14_ 1" x="1740" y="1364" w="201" h="120" pX="0.5" pY="0.5" oX="34" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_15_ 1" x="464" y="1861" w="195" h="125" pX="0.5" pY="0.5" oX="34" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_16_ 1" x="659" y="1741" w="194" h="128" pX="0.5" pY="0.5" oX="34" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_17_ 2" x="1620" y="1870" w="191" h="124" pX="0.5" pY="0.5" oX="36" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_18_ 2" x="269" y="1876" w="195" h="126" pX="0.5" pY="0.5" oX="32" oY="65" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_19_ 2" x="1718" y="1484" w="199" h="126" pX="0.5" pY="0.5" oX="28" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_20_ 2" x="198" y="1751" w="198" h="125" pX="0.5" pY="0.5" oX="29" oY="66" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_21_ 2" x="1715" y="1619" w="204" h="130" pX="0.5" pY="0.5" oX="24" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_22_ 2" x="1743" y="770" w="204" h="128" pX="0.5" pY="0.5" oX="24" oY="65" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_23_ 2" x="0" y="1751" w="198" h="126" pX="0.5" pY="0.5" oX="30" oY="65" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_24_ 2" x="686" y="607" w="197" h="127" pX="0.5" pY="0.5" oX="31" oY="65" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_25_ 3" x="99" y="2074" w="110" h="183" pX="0.5" pY="0.5" oX="74" oY="50" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_26_ 3" x="2029" y="1982" w="118" h="183" pX="0.5" pY="0.5" oX="71" oY="52" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_27_ 3" x="327" y="2066" w="121" h="182" pX="0.5" pY="0.5" oX="69" oY="56" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_28_ 3" x="209" y="2073" w="118" h="182" pX="0.5" pY="0.5" oX="71" oY="56" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_29_ 3" x="1811" y="1866" w="112" h="187" pX="0.5" pY="0.5" oX="75" oY="52" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_30_ 3" x="1923" y="1866" w="106" h="187" pX="0.5" pY="0.5" oX="78" oY="52" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_31_ 3" x="2029" y="1612" w="112" h="185" pX="0.5" pY="0.5" oX="75" oY="52" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_32_ 3" x="2029" y="1797" w="106" h="185" pX="0.5" pY="0.5" oX="78" oY="51" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_33_ 4" x="2437" y="2675" w="142" h="146" pX="0.5" pY="0.5" oX="62" oY="56" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_34_ 4" x="820" y="2824" w="143" h="142" pX="0.5" pY="0.5" oX="62" oY="61" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_35_ 4" x="963" y="2824" w="142" h="141" pX="0.5" pY="0.5" oX="63" oY="64" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_36_ 4" x="1446" y="2659" w="146" h="143" pX="0.5" pY="0.5" oX="64" oY="63" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_37_ 4" x="2409" y="2222" w="155" h="148" pX="0.5" pY="0.5" oX="64" oY="57" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_38_ 4" x="141" y="2677" w="143" h="148" pX="0.5" pY="0.5" oX="61" oY="56" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_39_ 4" x="2717" y="765" w="142" h="146" pX="0.5" pY="0.5" oX="62" oY="59" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_40_ 4" x="2717" y="438" w="141" h="146" pX="0.5" pY="0.5" oX="61" oY="57" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_41_ 5" x="2722" y="2581" w="139" h="143" pX="0.5" pY="0.5" oX="63" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_42_ 5" x="278" y="2825" w="141" h="144" pX="0.5" pY="0.5" oX="62" oY="69" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_43_ 5" x="284" y="2677" w="142" h="148" pX="0.5" pY="0.5" oX="60" oY="72" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_44_ 5" x="1105" y="2524" w="143" h="153" pX="0.5" pY="0.5" oX="59" oY="73" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_45_ 5" x="2380" y="1912" w="142" h="156" pX="0.5" pY="0.5" oX="59" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_46_ 5" x="676" y="2677" w="147" h="146" pX="0.5" pY="0.5" oX="61" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_47_ 5" x="2702" y="1580" w="144" h="146" pX="0.5" pY="0.5" oX="61" oY="69" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_48_ 5" x="2290" y="2659" w="147" h="141" pX="0.5" pY="0.5" oX="62" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_49_ 6" x="823" y="2677" w="145" h="147" pX="0.5" pY="0.5" oX="55" oY="56" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_50_ 6" x="2712" y="619" w="146" h="146" pX="0.5" pY="0.5" oX="55" oY="57" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_51_ 6" x="0" y="2826" w="143" h="144" pX="0.5" pY="0.5" oX="59" oY="60" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_52_ 6" x="2693" y="2437" w="142" h="144" pX="0.5" pY="0.5" oX="61" oY="59" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_53_ 6" x="0" y="2678" w="141" h="148" pX="0.5" pY="0.5" oX="62" oY="54" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_54_ 6" x="2140" y="2524" w="150" h="152" pX="0.5" pY="0.5" oX="51" oY="53" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_55_ 6" x="2554" y="1514" w="148" h="149" pX="0.5" pY="0.5" oX="54" oY="55" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_56_ 6" x="1988" y="2524" w="152" h="151" pX="0.5" pY="0.5" oX="49" oY="53" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_57_ 7" x="2384" y="2370" w="143" h="154" pX="0.5" pY="0.5" oX="58" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_58_ 7" x="1845" y="2524" w="143" h="152" pX="0.5" pY="0.5" oX="57" oY="68" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_59_ 7" x="2717" y="911" w="145" h="146" pX="0.5" pY="0.5" oX="54" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_60_ 7" x="2566" y="405" w="151" h="141" pX="0.5" pY="0.5" oX="47" oY="70" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_61_ 7" x="2404" y="709" w="159" h="145" pX="0.5" pY="0.5" oX="40" oY="67" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_62_ 7" x="301" y="2524" w="145" h="153" pX="0.5" pY="0.5" oX="56" oY="69" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_63_ 7" x="2499" y="1756" w="142" h="151" pX="0.5" pY="0.5" oX="59" oY="69" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Walk_64_ 7" x="2242" y="2329" w="142" h="155" pX="0.5" pY="0.5" oX="60" oY="69" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_01_ 0" x="1708" y="2943" w="97" h="113" pX="0.5" pY="0.5" oX="84" oY="83" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_02_ 0" x="3000" y="0" w="97" h="113" pX="0.5" pY="0.5" oX="84" oY="83" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_03_ 0" x="3000" y="113" w="97" h="113" pX="0.5" pY="0.5" oX="84" oY="83" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_04_ 1" x="2862" y="1012" w="135" h="120" pX="0.5" pY="0.5" oX="102" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_05_ 1" x="2862" y="679" w="137" h="121" pX="0.5" pY="0.5" oX="101" oY="79" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_06_ 1" x="1735" y="2822" w="138" h="121" pX="0.5" pY="0.5" oX="101" oY="79" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_07_ 2" x="1105" y="2823" w="142" h="125" pX="0.5" pY="0.5" oX="20" oY="77" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_08_ 2" x="2282" y="2800" w="143" h="125" pX="0.5" pY="0.5" oX="19" oY="77" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_09_ 2" x="1378" y="2397" w="144" h="125" pX="0.5" pY="0.5" oX="18" oY="77" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_10_ 3" x="2388" y="854" w="98" h="159" pX="0.5" pY="0.5" oX="82" oY="88" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_11_ 3" x="728" y="2246" w="98" h="161" pX="0.5" pY="0.5" oX="82" oY="87" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_12_ 3" x="209" y="2255" w="98" h="162" pX="0.5" pY="0.5" oX="82" oY="87" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_13_ 4" x="2995" y="800" w="95" h="109" pX="0.5" pY="0.5" oX="93" oY="86" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_14_ 4" x="1350" y="2677" w="96" h="109" pX="0.5" pY="0.5" oX="93" oY="86" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_15_ 4" x="3000" y="335" w="97" h="109" pX="0.5" pY="0.5" oX="93" oY="86" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_16_ 5" x="1105" y="2948" w="125" h="123" pX="0.5" pY="0.5" oX="104" oY="90" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_17_ 5" x="666" y="2949" w="125" h="124" pX="0.5" pY="0.5" oX="104" oY="90" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_18_ 5" x="1230" y="2948" w="125" h="125" pX="0.5" pY="0.5" oX="104" oY="90" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_19_ 6" x="2861" y="2573" w="131" h="124" pX="0.5" pY="0.5" oX="28" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_20_ 6" x="2862" y="1455" w="131" h="124" pX="0.5" pY="0.5" oX="28" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_21_ 6" x="2861" y="2009" w="131" h="124" pX="0.5" pY="0.5" oX="28" oY="80" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_22_ 7" x="1750" y="2524" w="95" h="152" pX="0.5" pY="0.5" oX="69" oY="89" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_23_ 7" x="204" y="2524" w="97" h="153" pX="0.5" pY="0.5" oX="67" oY="88" oW="256" oH="256"/>
+  <sprite n="Wyvern_Gray_Woozy_24_ 7" x="656" y="2524" w="98" h="153" pX="0.5" pY="0.5" oX="66" oY="88" oW="256" oH="256"/>
+</TextureAtlas>

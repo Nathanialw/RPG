@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="2768" height="2668" scale="1" format="RGBA8888">
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_01_ 0" x="2444" y="2216" w="127" h="130" pX="0.5" pY="0.5" oX="64" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_02_ 0" x="2530" y="0" w="135" h="131" pX="0.5" pY="0.5" oX="58" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_03_ 0" x="2425" y="2349" w="131" h="129" pX="0.5" pY="0.5" oX="60" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_04_ 1" x="1732" y="574" w="171" h="108" pX="0.5" pY="0.5" oX="54" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_05_ 1" x="705" y="1500" w="173" h="110" pX="0.5" pY="0.5" oX="54" oY="91" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_06_ 1" x="1732" y="1343" w="169" h="112" pX="0.5" pY="0.5" oX="46" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_07_ 2" x="1732" y="848" w="171" h="106" pX="0.5" pY="0.5" oX="31" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_08_ 2" x="1044" y="1694" w="172" h="114" pX="0.5" pY="0.5" oX="30" oY="90" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_09_ 2" x="685" y="1854" w="167" h="113" pX="0.5" pY="0.5" oX="42" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_10_ 3" x="2525" y="265" w="127" h="135" pX="0.5" pY="0.5" oX="65" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_11_ 3" x="2525" y="131" w="135" h="134" pX="0.5" pY="0.5" oX="63" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_12_ 3" x="2494" y="1973" w="131" h="128" pX="0.5" pY="0.5" oX="65" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_13_ 4" x="1186" y="408" w="182" h="136" pX="0.5" pY="0.5" oX="51" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_14_ 4" x="181" y="1210" w="181" h="136" pX="0.5" pY="0.5" oX="52" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_15_ 4" x="355" y="1556" w="173" h="132" pX="0.5" pY="0.5" oX="51" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_16_ 5" x="1342" y="899" w="176" h="147" pX="0.5" pY="0.5" oX="59" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_17_ 5" x="1558" y="220" w="175" h="144" pX="0.5" pY="0.5" oX="59" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_18_ 5" x="939" y="1187" w="180" h="149" pX="0.5" pY="0.5" oX="57" oY="74" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_19_ 6" x="1358" y="648" w="176" h="141" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_20_ 6" x="0" y="1561" w="174" h="140" pX="0.5" pY="0.5" oX="23" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_21_ 6" x="1160" y="967" w="182" h="132" pX="0.5" pY="0.5" oX="20" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_22_ 7" x="1198" y="131" w="182" h="142" pX="0.5" pY="0.5" oX="23" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_23_ 7" x="0" y="1210" w="181" h="139" pX="0.5" pY="0.5" oX="23" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 1_24_ 7" x="0" y="1701" w="172" h="155" pX="0.5" pY="0.5" oX="32" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_01_ 0" x="2444" y="2216" w="127" h="130" pX="0.5" pY="0.5" oX="64" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_02_ 0" x="1141" y="2250" w="146" h="131" pX="0.5" pY="0.5" oX="56" oY="77" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_03_ 0" x="2350" y="468" w="139" h="94" pX="0.5" pY="0.5" oX="57" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_04_ 1" x="1732" y="574" w="171" h="108" pX="0.5" pY="0.5" oX="54" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_05_ 1" x="1732" y="1224" w="169" h="119" pX="0.5" pY="0.5" oX="43" oY="77" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_06_ 1" x="2521" y="670" w="134" h="129" pX="0.5" pY="0.5" oX="79" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_07_ 2" x="1732" y="848" w="171" h="106" pX="0.5" pY="0.5" oX="31" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_08_ 2" x="1732" y="1106" w="169" h="118" pX="0.5" pY="0.5" oX="44" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_09_ 2" x="2383" y="562" w="138" h="129" pX="0.5" pY="0.5" oX="43" oY="75" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_10_ 3" x="2525" y="265" w="127" h="135" pX="0.5" pY="0.5" oX="65" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_11_ 3" x="125" y="2267" w="145" h="146" pX="0.5" pY="0.5" oX="55" oY="60" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_12_ 3" x="2224" y="1726" w="139" h="148" pX="0.5" pY="0.5" oX="60" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_13_ 4" x="1186" y="408" w="182" h="136" pX="0.5" pY="0.5" oX="51" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_14_ 4" x="398" y="453" w="197" h="149" pX="0.5" pY="0.5" oX="32" oY="63" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_15_ 4" x="1222" y="1553" w="168" h="128" pX="0.5" pY="0.5" oX="63" oY="73" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_16_ 5" x="1342" y="899" w="176" h="147" pX="0.5" pY="0.5" oX="59" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_17_ 5" x="392" y="760" w="194" h="163" pX="0.5" pY="0.5" oX="36" oY="57" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_18_ 5" x="1119" y="1256" w="179" h="158" pX="0.5" pY="0.5" oX="53" oY="74" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_19_ 6" x="1358" y="648" w="176" h="141" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_20_ 6" x="586" y="862" w="194" h="154" pX="0.5" pY="0.5" oX="26" oY="65" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_21_ 6" x="973" y="1016" w="183" h="127" pX="0.5" pY="0.5" oX="24" oY="75" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_22_ 7" x="1198" y="131" w="182" h="142" pX="0.5" pY="0.5" oX="23" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_23_ 7" x="0" y="576" w="197" h="163" pX="0.5" pY="0.5" oX="27" oY="55" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Attack 2_24_ 7" x="1732" y="682" w="171" h="166" pX="0.5" pY="0.5" oX="25" oY="64" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_01_ 0" x="1062" y="2536" w="128" h="107" pX="0.5" pY="0.5" oX="64" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_02_ 0" x="1336" y="2522" w="128" h="107" pX="0.5" pY="0.5" oX="64" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_03_ 0" x="260" y="2551" w="128" h="108" pX="0.5" pY="0.5" oX="64" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_04_ 1" x="1860" y="2547" w="127" h="113" pX="0.5" pY="0.5" oX="94" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_05_ 1" x="1464" y="2549" w="127" h="114" pX="0.5" pY="0.5" oX="94" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_06_ 1" x="1987" y="2547" w="126" h="115" pX="0.5" pY="0.5" oX="95" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_07_ 2" x="2494" y="2101" w="131" h="115" pX="0.5" pY="0.5" oX="35" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_08_ 2" x="0" y="2552" w="130" h="116" pX="0.5" pY="0.5" oX="35" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_09_ 2" x="130" y="2551" w="130" h="117" pX="0.5" pY="0.5" oX="35" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_10_ 3" x="2358" y="1404" w="129" h="138" pX="0.5" pY="0.5" oX="64" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_11_ 3" x="2349" y="1127" w="129" h="139" pX="0.5" pY="0.5" oX="64" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_12_ 3" x="2347" y="1577" w="129" h="139" pX="0.5" pY="0.5" oX="64" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_13_ 4" x="1900" y="1583" w="164" h="131" pX="0.5" pY="0.5" oX="70" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_14_ 4" x="1900" y="1714" w="164" h="131" pX="0.5" pY="0.5" oX="70" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_15_ 4" x="1900" y="1845" w="164" h="131" pX="0.5" pY="0.5" oX="70" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_16_ 5" x="1560" y="1831" w="168" h="146" pX="0.5" pY="0.5" oX="67" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_17_ 5" x="1216" y="1806" w="168" h="147" pX="0.5" pY="0.5" oX="67" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_18_ 5" x="1732" y="1827" w="168" h="148" pX="0.5" pY="0.5" oX="67" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_19_ 6" x="1732" y="1699" w="168" h="128" pX="0.5" pY="0.5" oX="21" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_20_ 6" x="1732" y="1570" w="168" h="129" pX="0.5" pY="0.5" oX="21" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_21_ 6" x="340" y="1854" w="168" h="130" pX="0.5" pY="0.5" oX="21" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_22_ 7" x="0" y="1995" w="164" h="143" pX="0.5" pY="0.5" oX="22" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_23_ 7" x="168" y="1994" w="164" h="144" pX="0.5" pY="0.5" oX="22" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Behavior_24_ 7" x="1901" y="1302" w="164" h="145" pX="0.5" pY="0.5" oX="22" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_01_ 0" x="2444" y="2216" w="127" h="130" pX="0.5" pY="0.5" oX="64" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_02_ 0" x="527" y="2541" w="128" h="127" pX="0.5" pY="0.5" oX="63" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_03_ 0" x="655" y="2540" w="128" h="111" pX="0.5" pY="0.5" oX="63" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_04_ 1" x="1732" y="574" w="171" h="108" pX="0.5" pY="0.5" oX="54" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_05_ 1" x="1560" y="0" w="175" h="109" pX="0.5" pY="0.5" oX="49" oY="93" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_06_ 1" x="2069" y="713" w="161" h="108" pX="0.5" pY="0.5" oX="60" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_07_ 2" x="1732" y="848" w="171" h="106" pX="0.5" pY="0.5" oX="31" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_08_ 2" x="1544" y="585" w="175" h="106" pX="0.5" pY="0.5" oX="32" oY="93" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_09_ 2" x="1474" y="1300" w="165" h="105" pX="0.5" pY="0.5" oX="35" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_10_ 3" x="2525" y="265" w="127" h="135" pX="0.5" pY="0.5" oX="65" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_11_ 3" x="270" y="2265" w="128" h="143" pX="0.5" pY="0.5" oX="65" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_12_ 3" x="2225" y="1277" w="128" h="150" pX="0.5" pY="0.5" oX="65" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_13_ 4" x="1186" y="408" w="182" h="136" pX="0.5" pY="0.5" oX="51" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_14_ 4" x="1117" y="1414" w="175" h="132" pX="0.5" pY="0.5" oX="59" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_15_ 4" x="159" y="2138" w="158" h="109" pX="0.5" pY="0.5" oX="75" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_16_ 5" x="1342" y="899" w="176" h="147" pX="0.5" pY="0.5" oX="59" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_17_ 5" x="1381" y="0" w="179" h="149" pX="0.5" pY="0.5" oX="57" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_18_ 5" x="825" y="2109" w="158" h="146" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_19_ 6" x="1358" y="648" w="176" h="141" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_20_ 6" x="1380" y="149" w="178" h="131" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_21_ 6" x="2065" y="1498" w="160" h="117" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_22_ 7" x="1198" y="131" w="182" h="142" pX="0.5" pY="0.5" oX="23" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_23_ 7" x="1298" y="1405" w="175" h="148" pX="0.5" pY="0.5" oX="22" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Block_24_ 7" x="2064" y="1891" w="159" h="147" pX="0.5" pY="0.5" oX="22" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_01_ 0" x="2501" y="1311" w="130" h="132" pX="0.5" pY="0.5" oX="62" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_02_ 0" x="2501" y="1179" w="130" h="132" pX="0.5" pY="0.5" oX="62" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_03_ 0" x="2476" y="1574" w="130" h="132" pX="0.5" pY="0.5" oX="62" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_04_ 1" x="1518" y="926" w="174" h="111" pX="0.5" pY="0.5" oX="55" oY="93" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_05_ 1" x="1560" y="109" w="175" h="111" pX="0.5" pY="0.5" oX="55" oY="93" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_06_ 1" x="1553" y="364" w="175" h="111" pX="0.5" pY="0.5" oX="55" oY="93" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_07_ 2" x="1531" y="816" w="174" h="110" pX="0.5" pY="0.5" oX="27" oY="95" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_08_ 2" x="892" y="1446" w="175" h="110" pX="0.5" pY="0.5" oX="26" oY="95" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_09_ 2" x="0" y="1451" w="175" h="110" pX="0.5" pY="0.5" oX="26" oY="95" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_10_ 3" x="2383" y="800" w="130" h="138" pX="0.5" pY="0.5" oX="64" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_11_ 3" x="2363" y="1840" w="130" h="138" pX="0.5" pY="0.5" oX="64" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_12_ 3" x="0" y="2414" w="130" h="138" pX="0.5" pY="0.5" oX="64" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_13_ 4" x="398" y="302" w="199" h="151" pX="0.5" pY="0.5" oX="38" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_14_ 4" x="406" y="151" w="199" h="151" pX="0.5" pY="0.5" oX="38" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_15_ 4" x="414" y="0" w="199" h="151" pX="0.5" pY="0.5" oX="38" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_16_ 5" x="394" y="602" w="195" h="158" pX="0.5" pY="0.5" oX="44" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_17_ 5" x="197" y="726" w="195" h="159" pX="0.5" pY="0.5" oX="44" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_18_ 5" x="589" y="704" w="195" h="158" pX="0.5" pY="0.5" oX="44" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_19_ 6" x="810" y="151" w="195" h="152" pX="0.5" pY="0.5" oX="17" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_20_ 6" x="802" y="303" w="195" h="152" pX="0.5" pY="0.5" oX="17" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_21_ 6" x="810" y="0" w="195" h="151" pX="0.5" pY="0.5" oX="17" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_22_ 7" x="0" y="313" w="199" h="154" pX="0.5" pY="0.5" oX="19" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_23_ 7" x="207" y="112" w="199" h="154" pX="0.5" pY="0.5" oX="19" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Critical HP_24_ 7" x="199" y="313" w="199" h="154" pX="0.5" pY="0.5" oX="19" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Dead_01_ 0" x="2298" y="2494" w="112" h="100" pX="0.5" pY="0.5" oX="69" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Dead_02_ 1" x="2660" y="216" w="105" h="87" pX="0.5" pY="0.5" oX="73" oY="93" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Dead_03_ 2" x="2660" y="303" w="104" h="91" pX="0.5" pY="0.5" oX="79" oY="95" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Dead_04_ 3" x="1190" y="2538" w="110" h="85" pX="0.5" pY="0.5" oX="75" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Dead_05_ 4" x="398" y="2408" w="114" h="106" pX="0.5" pY="0.5" oX="64" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Dead_06_ 5" x="2410" y="2578" w="112" h="87" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Dead_07_ 6" x="2425" y="2478" w="112" h="100" pX="0.5" pY="0.5" oX="83" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Dead_08_ 7" x="2014" y="2455" w="114" h="90" pX="0.5" pY="0.5" oX="77" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_01_ 0" x="2444" y="2216" w="127" h="130" pX="0.5" pY="0.5" oX="64" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_02_ 0" x="1744" y="2411" w="136" h="127" pX="0.5" pY="0.5" oX="60" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_03_ 0" x="1473" y="2412" w="134" h="137" pX="0.5" pY="0.5" oX="61" oY="51" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_04_ 1" x="1732" y="574" w="171" h="108" pX="0.5" pY="0.5" oX="54" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_05_ 1" x="666" y="1967" w="163" h="119" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_06_ 1" x="1297" y="2138" w="154" h="129" pX="0.5" pY="0.5" oX="72" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_07_ 2" x="1732" y="848" w="171" h="106" pX="0.5" pY="0.5" oX="31" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_08_ 2" x="1019" y="1923" w="163" h="118" pX="0.5" pY="0.5" oX="33" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_09_ 2" x="2230" y="724" w="153" h="130" pX="0.5" pY="0.5" oX="33" oY="74" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_10_ 3" x="2525" y="265" w="127" h="135" pX="0.5" pY="0.5" oX="65" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_11_ 3" x="928" y="2259" w="136" h="141" pX="0.5" pY="0.5" oX="60" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_12_ 3" x="1880" y="2411" w="134" h="136" pX="0.5" pY="0.5" oX="61" oY="81" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_13_ 4" x="1186" y="408" w="182" h="136" pX="0.5" pY="0.5" oX="51" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_14_ 4" x="194" y="1040" w="185" h="125" pX="0.5" pY="0.5" oX="51" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_15_ 4" x="362" y="1305" w="179" h="126" pX="0.5" pY="0.5" oX="54" oY="57" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_16_ 5" x="1342" y="899" w="176" h="147" pX="0.5" pY="0.5" oX="59" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_17_ 5" x="1473" y="1532" w="172" h="162" pX="0.5" pY="0.5" oX="67" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_18_ 5" x="508" y="1967" w="158" h="163" pX="0.5" pY="0.5" oX="77" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_19_ 6" x="1358" y="648" w="176" h="141" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_20_ 6" x="346" y="1688" w="172" h="138" pX="0.5" pY="0.5" oX="18" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_21_ 6" x="2070" y="278" w="161" h="150" pX="0.5" pY="0.5" oX="21" oY="51" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_22_ 7" x="1198" y="131" w="182" h="142" pX="0.5" pY="0.5" oX="23" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_23_ 7" x="391" y="1024" w="186" h="157" pX="0.5" pY="0.5" oX="20" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Evade_24_ 7" x="758" y="1187" w="181" h="160" pX="0.5" pY="0.5" oX="23" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_01_ 0" x="2444" y="2216" w="127" h="130" pX="0.5" pY="0.5" oX="64" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_02_ 0" x="2521" y="799" w="133" h="114" pX="0.5" pY="0.5" oX="58" oY="81" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_03_ 0" x="786" y="2396" w="138" h="100" pX="0.5" pY="0.5" oX="53" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_04_ 1" x="1732" y="574" w="171" h="108" pX="0.5" pY="0.5" oX="54" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_05_ 1" x="2231" y="296" w="155" h="118" pX="0.5" pY="0.5" oX="64" oY="82" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_06_ 1" x="2493" y="1840" w="135" h="133" pX="0.5" pY="0.5" oX="83" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_07_ 2" x="1732" y="848" w="171" h="106" pX="0.5" pY="0.5" oX="31" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_08_ 2" x="1141" y="2138" w="156" h="112" pX="0.5" pY="0.5" oX="37" oY="90" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_09_ 2" x="2363" y="1716" w="138" h="124" pX="0.5" pY="0.5" oX="38" oY="82" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_10_ 3" x="2525" y="265" w="127" h="135" pX="0.5" pY="0.5" oX="65" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_11_ 3" x="2390" y="96" w="134" h="139" pX="0.5" pY="0.5" oX="65" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_12_ 3" x="786" y="2259" w="142" h="137" pX="0.5" pY="0.5" oX="65" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_13_ 4" x="1186" y="408" w="182" h="136" pX="0.5" pY="0.5" oX="51" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_14_ 4" x="1534" y="691" w="174" h="125" pX="0.5" pY="0.5" oX="59" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_15_ 4" x="1904" y="392" w="166" h="117" pX="0.5" pY="0.5" oX="67" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_16_ 5" x="1342" y="899" w="176" h="147" pX="0.5" pY="0.5" oX="59" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_17_ 5" x="1388" y="1694" w="172" h="157" pX="0.5" pY="0.5" oX="64" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_18_ 5" x="1345" y="1977" w="163" h="161" pX="0.5" pY="0.5" oX="74" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_19_ 6" x="1358" y="648" w="176" h="141" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_20_ 6" x="1473" y="1405" w="174" h="127" pX="0.5" pY="0.5" oX="19" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_21_ 6" x="1019" y="1808" w="167" h="115" pX="0.5" pY="0.5" oX="18" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_22_ 7" x="1198" y="131" w="182" h="142" pX="0.5" pY="0.5" oX="23" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_23_ 7" x="717" y="1347" w="175" h="153" pX="0.5" pY="0.5" oX="23" oY="81" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Get Hit_24_ 7" x="1732" y="954" w="170" h="152" pX="0.5" pY="0.5" oX="23" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_01_ 0" x="915" y="2538" w="126" h="129" pX="0.5" pY="0.5" oX="65" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_02_ 0" x="2444" y="2216" w="127" h="130" pX="0.5" pY="0.5" oX="64" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_03_ 0" x="1607" y="2538" w="127" h="129" pX="0.5" pY="0.5" oX="64" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_04_ 1" x="1733" y="359" w="171" h="109" pX="0.5" pY="0.5" oX="54" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_05_ 1" x="1732" y="574" w="171" h="108" pX="0.5" pY="0.5" oX="54" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_06_ 1" x="1733" y="251" w="171" h="108" pX="0.5" pY="0.5" oX="54" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_07_ 2" x="1732" y="468" w="171" h="106" pX="0.5" pY="0.5" oX="31" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_08_ 2" x="1732" y="848" w="171" h="106" pX="0.5" pY="0.5" oX="31" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_09_ 2" x="1735" y="145" w="171" h="106" pX="0.5" pY="0.5" oX="31" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_10_ 3" x="2172" y="2359" w="126" h="136" pX="0.5" pY="0.5" oX="65" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_11_ 3" x="2525" y="265" w="127" h="135" pX="0.5" pY="0.5" oX="65" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_12_ 3" x="2525" y="400" w="127" h="135" pX="0.5" pY="0.5" oX="65" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_13_ 4" x="1173" y="689" w="182" h="136" pX="0.5" pY="0.5" oX="51" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_14_ 4" x="1186" y="408" w="182" h="136" pX="0.5" pY="0.5" oX="51" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_15_ 4" x="1194" y="273" w="182" h="135" pX="0.5" pY="0.5" oX="51" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_16_ 5" x="1298" y="1256" w="176" h="149" pX="0.5" pY="0.5" oX="59" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_17_ 5" x="1342" y="899" w="176" h="147" pX="0.5" pY="0.5" oX="59" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_18_ 5" x="1342" y="1046" w="176" h="147" pX="0.5" pY="0.5" oX="59" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_19_ 6" x="1368" y="507" w="176" h="141" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_20_ 6" x="1358" y="648" w="176" h="141" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_21_ 6" x="541" y="1305" w="176" h="141" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_22_ 7" x="1176" y="544" w="182" h="145" pX="0.5" pY="0.5" oX="23" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_23_ 7" x="1198" y="131" w="182" h="142" pX="0.5" pY="0.5" oX="23" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Idle_24_ 7" x="1160" y="825" w="182" h="142" pX="0.5" pY="0.5" oX="23" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_01_ 0" x="2665" y="108" w="103" h="108" pX="0.5" pY="0.5" oX="77" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_02_ 0" x="2113" y="2545" w="103" h="108" pX="0.5" pY="0.5" oX="77" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_03_ 0" x="2665" y="0" w="103" h="108" pX="0.5" pY="0.5" oX="76" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_04_ 1" x="180" y="1349" w="140" h="94" pX="0.5" pY="0.5" oX="55" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_05_ 1" x="992" y="2041" w="140" h="95" pX="0.5" pY="0.5" oX="56" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_06_ 1" x="2034" y="2249" w="140" h="96" pX="0.5" pY="0.5" oX="56" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_07_ 2" x="2174" y="2264" w="140" h="95" pX="0.5" pY="0.5" oX="61" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_08_ 2" x="2174" y="2169" w="140" h="95" pX="0.5" pY="0.5" oX="60" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_09_ 2" x="2390" y="0" w="140" h="96" pX="0.5" pY="0.5" oX="60" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_10_ 3" x="2556" y="2469" w="104" h="122" pX="0.5" pY="0.5" oX="76" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_11_ 3" x="2556" y="2346" w="103" h="123" pX="0.5" pY="0.5" oX="77" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_12_ 3" x="2116" y="2038" w="103" h="123" pX="0.5" pY="0.5" oX="77" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_13_ 4" x="1336" y="2413" w="137" h="109" pX="0.5" pY="0.5" oX="60" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_14_ 4" x="2383" y="691" w="138" h="109" pX="0.5" pY="0.5" oX="60" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_15_ 4" x="1607" y="2412" w="137" h="109" pX="0.5" pY="0.5" oX="61" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_16_ 5" x="130" y="2413" w="138" h="122" pX="0.5" pY="0.5" oX="59" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_17_ 5" x="2386" y="235" w="139" h="123" pX="0.5" pY="0.5" oX="59" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_18_ 5" x="2356" y="1978" w="138" h="124" pX="0.5" pY="0.5" oX="60" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_19_ 6" x="2356" y="2102" w="138" h="109" pX="0.5" pY="0.5" oX="59" oY="81" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_20_ 6" x="2034" y="2345" w="138" h="110" pX="0.5" pY="0.5" oX="59" oY="81" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_21_ 6" x="2386" y="358" w="139" h="110" pX="0.5" pY="0.5" oX="58" oY="81" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_22_ 7" x="1062" y="2413" w="137" h="123" pX="0.5" pY="0.5" oX="59" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_23_ 7" x="924" y="2413" w="138" h="124" pX="0.5" pY="0.5" oX="58" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Rest_24_ 7" x="1199" y="2413" w="137" h="125" pX="0.5" pY="0.5" oX="58" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_01_ 0" x="1287" y="2267" w="121" h="146" pX="0.5" pY="0.5" oX="60" oY="77" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_02_ 0" x="1782" y="2267" w="128" h="144" pX="0.5" pY="0.5" oX="59" oY="74" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_03_ 0" x="523" y="2404" w="130" h="137" pX="0.5" pY="0.5" oX="61" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_04_ 0" x="655" y="2259" w="131" h="143" pX="0.5" pY="0.5" oX="61" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_05_ 0" x="2227" y="1127" w="122" h="150" pX="0.5" pY="0.5" oX="63" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_06_ 0" x="2225" y="1577" w="122" h="149" pX="0.5" pY="0.5" oX="68" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_07_ 0" x="1408" y="2267" w="126" h="145" pX="0.5" pY="0.5" oX="64" oY="66" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_08_ 0" x="1656" y="2267" w="126" h="144" pX="0.5" pY="0.5" oX="62" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_09_ 1" x="784" y="760" w="189" h="100" pX="0.5" pY="0.5" oX="31" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_10_ 1" x="175" y="1557" w="173" h="110" pX="0.5" pY="0.5" oX="42" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_11_ 1" x="852" y="1854" w="167" h="122" pX="0.5" pY="0.5" oX="47" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_12_ 1" x="997" y="372" w="189" h="120" pX="0.5" pY="0.5" oX="39" oY="75" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_13_ 1" x="208" y="0" w="206" h="112" pX="0.5" pY="0.5" oX="33" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_14_ 1" x="1005" y="150" w="189" h="111" pX="0.5" pY="0.5" oX="39" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_15_ 1" x="1050" y="1556" w="172" h="112" pX="0.5" pY="0.5" oX="44" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_16_ 1" x="0" y="1349" w="180" h="102" pX="0.5" pY="0.5" oX="37" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_17_ 2" x="1005" y="261" w="189" h="111" pX="0.5" pY="0.5" oX="36" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_18_ 2" x="878" y="1556" w="172" h="111" pX="0.5" pY="0.5" oX="42" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_19_ 2" x="1384" y="1851" w="168" h="106" pX="0.5" pY="0.5" oX="42" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_20_ 2" x="391" y="923" w="189" h="101" pX="0.5" pY="0.5" oX="28" oY="91" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_21_ 2" x="0" y="104" w="207" h="97" pX="0.5" pY="0.5" oX="17" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_22_ 2" x="198" y="467" w="188" h="102" pX="0.5" pY="0.5" oX="29" oY="91" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_23_ 2" x="528" y="1557" w="172" h="111" pX="0.5" pY="0.5" oX="41" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_24_ 2" x="362" y="1181" w="181" h="109" pX="0.5" pY="0.5" oX="39" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_25_ 3" x="2379" y="986" w="119" h="138" pX="0.5" pY="0.5" oX="77" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_26_ 3" x="1734" y="2538" w="126" h="128" pX="0.5" pY="0.5" oX="72" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_27_ 3" x="2521" y="535" w="132" h="135" pX="0.5" pY="0.5" oX="67" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_28_ 3" x="2223" y="2022" w="133" h="147" pX="0.5" pY="0.5" oX="65" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_29_ 3" x="2230" y="569" w="125" h="155" pX="0.5" pY="0.5" oX="71" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_30_ 3" x="1910" y="2267" w="124" h="143" pX="0.5" pY="0.5" oX="66" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_31_ 3" x="2298" y="2359" w="127" h="135" pX="0.5" pY="0.5" oX="66" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_32_ 3" x="2353" y="1266" w="125" h="138" pX="0.5" pY="0.5" oX="69" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_33_ 4" x="2067" y="1092" w="160" h="138" pX="0.5" pY="0.5" oX="55" oY="63" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_34_ 4" x="2070" y="428" w="161" h="139" pX="0.5" pY="0.5" oX="60" oY="57" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_35_ 4" x="1735" y="0" w="171" h="145" pX="0.5" pY="0.5" oX="56" oY="53" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_36_ 4" x="872" y="1667" w="172" h="141" pX="0.5" pY="0.5" oX="60" oY="60" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_37_ 4" x="1560" y="1694" w="172" h="137" pX="0.5" pY="0.5" oX="65" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_38_ 4" x="1903" y="640" w="166" h="136" pX="0.5" pY="0.5" oX="64" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_39_ 4" x="1728" y="1975" w="164" h="134" pX="0.5" pY="0.5" oX="59" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_40_ 4" x="829" y="1977" w="163" h="132" pX="0.5" pY="0.5" oX="57" oY="65" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_41_ 5" x="1518" y="1173" w="174" h="127" pX="0.5" pY="0.5" oX="62" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_42_ 5" x="2068" y="960" w="160" h="132" pX="0.5" pY="0.5" oX="72" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_43_ 5" x="1906" y="0" w="166" h="137" pX="0.5" pY="0.5" oX="60" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_44_ 5" x="1902" y="1021" w="165" h="143" pX="0.5" pY="0.5" oX="57" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_45_ 5" x="2069" y="567" w="161" h="146" pX="0.5" pY="0.5" oX="55" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_46_ 5" x="2072" y="140" w="162" h="138" pX="0.5" pY="0.5" oX="57" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_47_ 5" x="2065" y="1367" w="160" h="131" pX="0.5" pY="0.5" oX="60" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_48_ 5" x="491" y="2130" w="159" h="131" pX="0.5" pY="0.5" oX="69" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_49_ 6" x="1518" y="1037" w="174" h="136" pX="0.5" pY="0.5" oX="20" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_50_ 6" x="332" y="2130" w="159" h="135" pX="0.5" pY="0.5" oX="25" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_51_ 6" x="1903" y="509" w="166" h="131" pX="0.5" pY="0.5" oX="31" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_52_ 6" x="1892" y="1976" w="163" h="131" pX="0.5" pY="0.5" oX="37" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_53_ 6" x="0" y="2138" w="159" h="129" pX="0.5" pY="0.5" oX="43" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_54_ 6" x="2064" y="1755" w="159" h="136" pX="0.5" pY="0.5" oX="40" oY="62" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_55_ 6" x="2064" y="1615" w="160" h="140" pX="0.5" pY="0.5" oX="36" oY="59" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_56_ 6" x="1667" y="2111" w="159" h="138" pX="0.5" pY="0.5" oX="28" oY="64" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_57_ 7" x="666" y="2086" w="159" h="143" pX="0.5" pY="0.5" oX="41" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_58_ 7" x="2068" y="821" w="161" h="139" pX="0.5" pY="0.5" oX="35" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_59_ 7" x="700" y="1610" w="172" h="134" pX="0.5" pY="0.5" oX="30" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_60_ 7" x="528" y="1668" w="172" h="130" pX="0.5" pY="0.5" oX="24" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_61_ 7" x="174" y="1667" w="172" h="123" pX="0.5" pY="0.5" oX="19" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_62_ 7" x="1904" y="262" w="166" h="130" pX="0.5" pY="0.5" oX="26" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_63_ 7" x="332" y="1994" w="164" h="134" pX="0.5" pY="0.5" oX="34" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Run_64_ 7" x="1901" y="1164" w="164" h="138" pX="0.5" pY="0.5" oX="36" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_01_ 0" x="2444" y="2216" w="127" h="130" pX="0.5" pY="0.5" oX="64" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_02_ 0" x="2513" y="913" w="133" h="133" pX="0.5" pY="0.5" oX="62" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_03_ 0" x="398" y="2541" w="129" h="125" pX="0.5" pY="0.5" oX="63" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_04_ 1" x="1732" y="574" w="171" h="108" pX="0.5" pY="0.5" oX="54" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_05_ 1" x="700" y="1744" w="172" h="110" pX="0.5" pY="0.5" oX="53" oY="91" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_06_ 1" x="1903" y="903" w="165" h="118" pX="0.5" pY="0.5" oX="54" oY="82" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_07_ 2" x="1732" y="848" w="171" h="106" pX="0.5" pY="0.5" oX="31" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_08_ 2" x="1216" y="1694" w="172" h="112" pX="0.5" pY="0.5" oX="31" oY="91" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_09_ 2" x="1732" y="1455" w="169" h="115" pX="0.5" pY="0.5" oX="37" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_10_ 3" x="2525" y="265" w="127" h="135" pX="0.5" pY="0.5" oX="65" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_11_ 3" x="523" y="2261" w="132" h="143" pX="0.5" pY="0.5" oX="62" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_12_ 3" x="2234" y="140" w="129" h="156" pX="0.5" pY="0.5" oX="64" oY="64" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_13_ 4" x="1186" y="408" w="182" h="136" pX="0.5" pY="0.5" oX="51" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_14_ 4" x="986" y="645" w="187" h="143" pX="0.5" pY="0.5" oX="47" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_15_ 4" x="1198" y="0" w="183" h="131" pX="0.5" pY="0.5" oX="48" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_16_ 5" x="1342" y="899" w="176" h="147" pX="0.5" pY="0.5" oX="59" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_17_ 5" x="1156" y="1099" w="180" h="157" pX="0.5" pY="0.5" oX="55" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_18_ 5" x="767" y="1017" w="183" h="170" pX="0.5" pY="0.5" oX="49" oY="61" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_19_ 6" x="1358" y="648" w="176" h="141" pX="0.5" pY="0.5" oX="21" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_20_ 6" x="577" y="1157" w="181" h="148" pX="0.5" pY="0.5" oX="21" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_21_ 6" x="580" y="1016" w="187" h="141" pX="0.5" pY="0.5" oX="24" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_22_ 7" x="1198" y="131" w="182" h="142" pX="0.5" pY="0.5" oX="23" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_23_ 7" x="988" y="492" w="188" h="153" pX="0.5" pY="0.5" oX="21" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Use Skill_24_ 7" x="0" y="1041" w="187" h="169" pX="0.5" pY="0.5" oX="25" oY="60" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_01_ 0" x="1287" y="2267" w="121" h="146" pX="0.5" pY="0.5" oX="60" oY="77" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_02_ 0" x="2223" y="1874" w="133" h="148" pX="0.5" pY="0.5" oX="58" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_03_ 0" x="523" y="2404" w="130" h="137" pX="0.5" pY="0.5" oX="61" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_04_ 0" x="2225" y="1427" w="133" h="150" pX="0.5" pY="0.5" oX="61" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_05_ 0" x="2227" y="1127" w="122" h="150" pX="0.5" pY="0.5" oX="63" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_06_ 0" x="2231" y="414" w="119" h="155" pX="0.5" pY="0.5" oX="70" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_07_ 0" x="1408" y="2267" w="126" h="145" pX="0.5" pY="0.5" oX="64" oY="66" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_08_ 0" x="0" y="2267" w="125" h="147" pX="0.5" pY="0.5" oX="63" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_09_ 1" x="784" y="760" w="189" h="100" pX="0.5" pY="0.5" oX="31" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_10_ 1" x="939" y="1336" w="178" h="110" pX="0.5" pY="0.5" oX="39" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_11_ 1" x="852" y="1854" w="167" h="122" pX="0.5" pY="0.5" oX="47" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_12_ 1" x="0" y="201" w="207" h="112" pX="0.5" pY="0.5" oX="29" oY="82" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_13_ 1" x="208" y="0" w="206" h="112" pX="0.5" pY="0.5" oX="33" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_14_ 1" x="0" y="467" w="198" h="109" pX="0.5" pY="0.5" oX="32" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_15_ 1" x="1050" y="1556" w="172" h="112" pX="0.5" pY="0.5" oX="44" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_16_ 1" x="973" y="788" w="187" h="111" pX="0.5" pY="0.5" oX="44" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_17_ 2" x="1005" y="261" w="189" h="111" pX="0.5" pY="0.5" oX="36" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_18_ 2" x="1376" y="280" w="177" h="116" pX="0.5" pY="0.5" oX="40" oY="82" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_19_ 2" x="1384" y="1851" w="168" h="106" pX="0.5" pY="0.5" oX="42" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_20_ 2" x="0" y="0" w="208" h="104" pX="0.5" pY="0.5" oX="20" oY="90" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_21_ 2" x="0" y="104" w="207" h="97" pX="0.5" pY="0.5" oX="17" oY="94" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_22_ 2" x="613" y="150" w="197" h="99" pX="0.5" pY="0.5" oX="27" oY="90" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_23_ 2" x="528" y="1557" w="172" h="111" pX="0.5" pY="0.5" oX="41" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_24_ 2" x="973" y="899" w="187" h="117" pX="0.5" pY="0.5" oX="25" oY="82" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_25_ 3" x="2379" y="986" w="119" h="138" pX="0.5" pY="0.5" oX="77" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_26_ 3" x="2501" y="1443" w="132" h="131" pX="0.5" pY="0.5" oX="68" oY="82" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_27_ 3" x="2521" y="535" w="132" h="135" pX="0.5" pY="0.5" oX="67" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_28_ 3" x="1826" y="2109" w="134" h="158" pX="0.5" pY="0.5" oX="64" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_29_ 3" x="2230" y="569" w="125" h="155" pX="0.5" pY="0.5" oX="71" oY="76" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_30_ 3" x="1534" y="2267" w="122" h="145" pX="0.5" pY="0.5" oX="67" oY="78" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_31_ 3" x="2298" y="2359" w="127" h="135" pX="0.5" pY="0.5" oX="66" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_32_ 3" x="398" y="2265" w="125" h="143" pX="0.5" pY="0.5" oX="68" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_33_ 4" x="2067" y="1092" w="160" h="138" pX="0.5" pY="0.5" oX="55" oY="63" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_34_ 4" x="1960" y="2107" w="156" h="142" pX="0.5" pY="0.5" oX="59" oY="55" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_35_ 4" x="1735" y="0" w="171" h="145" pX="0.5" pY="0.5" oX="56" oY="53" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_36_ 4" x="1901" y="1447" w="164" h="136" pX="0.5" pY="0.5" oX="65" oY="69" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_37_ 4" x="1560" y="1694" w="172" h="137" pX="0.5" pY="0.5" oX="65" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_38_ 4" x="172" y="1854" w="168" h="140" pX="0.5" pY="0.5" oX="63" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_39_ 4" x="1728" y="1975" w="164" h="134" pX="0.5" pY="0.5" oX="59" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_40_ 4" x="2229" y="854" w="151" h="132" pX="0.5" pY="0.5" oX="63" oY="65" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_41_ 5" x="1518" y="1173" w="174" h="127" pX="0.5" pY="0.5" oX="62" oY="88" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_42_ 5" x="1182" y="1977" w="163" h="128" pX="0.5" pY="0.5" oX="71" oY="86" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_43_ 5" x="1906" y="0" w="166" h="137" pX="0.5" pY="0.5" oX="60" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_44_ 5" x="0" y="1856" w="168" h="139" pX="0.5" pY="0.5" oX="50" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_45_ 5" x="2069" y="567" w="161" h="146" pX="0.5" pY="0.5" oX="55" oY="83" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_46_ 5" x="2072" y="0" w="162" h="140" pX="0.5" pY="0.5" oX="56" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_47_ 5" x="2065" y="1367" w="160" h="131" pX="0.5" pY="0.5" oX="60" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_48_ 5" x="983" y="2138" w="158" h="121" pX="0.5" pY="0.5" oX="71" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_49_ 6" x="1518" y="1037" w="174" h="136" pX="0.5" pY="0.5" oX="20" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_50_ 6" x="1508" y="1977" w="162" h="134" pX="0.5" pY="0.5" oX="23" oY="71" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_51_ 6" x="1903" y="509" w="166" h="131" pX="0.5" pY="0.5" oX="31" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_52_ 6" x="1906" y="137" w="166" h="125" pX="0.5" pY="0.5" oX="41" oY="70" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_53_ 6" x="0" y="2138" w="159" h="129" pX="0.5" pY="0.5" oX="43" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_54_ 6" x="2065" y="1230" w="160" h="137" pX="0.5" pY="0.5" oX="40" oY="65" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_55_ 6" x="2064" y="1615" w="160" h="140" pX="0.5" pY="0.5" oX="36" oY="59" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_56_ 6" x="1508" y="2111" w="159" h="144" pX="0.5" pY="0.5" oX="27" oY="60" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_57_ 7" x="666" y="2086" w="159" h="143" pX="0.5" pY="0.5" oX="41" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_58_ 7" x="2234" y="0" w="156" h="140" pX="0.5" pY="0.5" oX="41" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_59_ 7" x="700" y="1610" w="172" h="134" pX="0.5" pY="0.5" oX="30" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_60_ 7" x="1903" y="776" w="165" h="127" pX="0.5" pY="0.5" oX="27" oY="82" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_61_ 7" x="174" y="1667" w="172" h="123" pX="0.5" pY="0.5" oX="19" oY="87" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_62_ 7" x="518" y="1798" w="167" h="125" pX="0.5" pY="0.5" oX="26" oY="90" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_63_ 7" x="332" y="1994" w="164" h="134" pX="0.5" pY="0.5" oX="34" oY="85" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Walk_64_ 7" x="2228" y="986" w="151" h="141" pX="0.5" pY="0.5" oX="42" oY="84" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_01_ 0" x="2501" y="1046" w="130" h="133" pX="0.5" pY="0.5" oX="62" oY="77" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_02_ 0" x="2501" y="1706" w="130" h="131" pX="0.5" pY="0.5" oX="62" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_03_ 0" x="785" y="2538" w="130" h="130" pX="0.5" pY="0.5" oX="62" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_04_ 1" x="1376" y="396" w="177" h="111" pX="0.5" pY="0.5" oX="55" oY="93" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_05_ 1" x="180" y="1446" w="175" h="111" pX="0.5" pY="0.5" oX="55" oY="93" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_06_ 1" x="530" y="1446" w="175" h="111" pX="0.5" pY="0.5" oX="54" oY="93" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_07_ 2" x="1355" y="789" w="176" h="110" pX="0.5" pY="0.5" oX="25" oY="95" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_08_ 2" x="1553" y="475" w="175" h="110" pX="0.5" pY="0.5" oX="26" oY="95" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_09_ 2" x="355" y="1446" w="175" h="110" pX="0.5" pY="0.5" oX="27" oY="95" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_10_ 3" x="2314" y="2211" w="130" h="138" pX="0.5" pY="0.5" oX="64" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_11_ 3" x="268" y="2413" w="130" h="138" pX="0.5" pY="0.5" oX="64" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_12_ 3" x="655" y="2402" w="130" h="138" pX="0.5" pY="0.5" oX="64" oY="89" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_13_ 4" x="597" y="401" w="197" h="151" pX="0.5" pY="0.5" oX="38" oY="67" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_14_ 4" x="613" y="0" w="197" h="150" pX="0.5" pY="0.5" oX="38" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_15_ 4" x="197" y="576" w="197" h="150" pX="0.5" pY="0.5" oX="38" oY="68" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_16_ 5" x="792" y="605" w="194" h="155" pX="0.5" pY="0.5" oX="44" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_17_ 5" x="197" y="885" w="194" h="155" pX="0.5" pY="0.5" oX="44" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_18_ 5" x="780" y="862" w="193" h="155" pX="0.5" pY="0.5" oX="44" oY="79" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_19_ 6" x="0" y="891" w="194" h="150" pX="0.5" pY="0.5" oX="18" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_20_ 6" x="794" y="455" w="194" h="150" pX="0.5" pY="0.5" oX="18" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_21_ 6" x="1005" y="0" w="193" h="150" pX="0.5" pY="0.5" oX="19" oY="72" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_22_ 7" x="595" y="552" w="197" h="152" pX="0.5" pY="0.5" oX="21" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_23_ 7" x="0" y="739" w="197" h="152" pX="0.5" pY="0.5" oX="21" oY="80" oW="256" oH="256"/>
+  <sprite n="GiantSpider_BlueSpotted_Woozy_24_ 7" x="605" y="249" w="197" h="152" pX="0.5" pY="0.5" oX="21" oY="80" oW="256" oH="256"/>
+</TextureAtlas>

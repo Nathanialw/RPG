@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="1122" height="1133" scale="1" format="RGBA8888">
+  <sprite n="Wolf_Black_Attack 1_01_ 0" x="786" y="289" w="21" h="71" pX="0.5" pY="0.5" oX="59" oY="34" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_02_ 0" x="517" y="268" w="21" h="84" pX="0.5" pY="0.5" oX="59" oY="16" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_03_ 0" x="602" y="419" w="22" h="78" pX="0.5" pY="0.5" oX="58" oY="36" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_04_ 1" x="465" y="49" w="86" h="46" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_05_ 1" x="42" y="317" w="91" h="36" pX="0.5" pY="0.5" oX="35" oY="52" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_06_ 1" x="190" y="86" w="93" h="46" pX="0.5" pY="0.5" oX="11" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_07_ 2" x="196" y="451" w="87" h="45" pX="0.5" pY="0.5" oX="28" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_08_ 2" x="42" y="361" w="90" h="39" pX="0.5" pY="0.5" oX="14" oY="50" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_09_ 2" x="192" y="40" w="93" h="46" pX="0.5" pY="0.5" oX="35" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_10_ 3" x="481" y="398" w="21" h="83" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_11_ 3" x="684" y="482" w="21" h="72" pX="0.5" pY="0.5" oX="59" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_12_ 3" x="283" y="412" w="22" h="87" pX="0.5" pY="0.5" oX="59" oY="12" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_13_ 4" x="559" y="952" w="65" h="58" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_14_ 4" x="879" y="342" w="68" h="68" pX="0.5" pY="0.5" oX="45" oY="29" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_15_ 4" x="244" y="799" w="69" h="59" pX="0.5" pY="0.5" oX="27" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_16_ 5" x="751" y="217" w="60" h="72" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_17_ 5" x="939" y="913" w="64" h="56" pX="0.5" pY="0.5" oX="44" oY="47" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_18_ 5" x="771" y="483" w="67" h="70" pX="0.5" pY="0.5" oX="27" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_19_ 6" x="1003" y="346" w="61" h="57" pX="0.5" pY="0.5" oX="42" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_20_ 6" x="782" y="818" w="63" h="69" pX="0.5" pY="0.5" oX="32" oY="25" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_21_ 6" x="880" y="619" w="68" h="61" pX="0.5" pY="0.5" oX="46" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_22_ 7" x="863" y="483" w="66" h="68" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_23_ 7" x="883" y="171" w="68" h="53" pX="0.5" pY="0.5" oX="27" oY="47" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 1_24_ 7" x="644" y="336" w="70" h="73" pX="0.5" pY="0.5" oX="44" oY="22" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_01_ 0" x="786" y="289" w="21" h="71" pX="0.5" pY="0.5" oX="59" oY="34" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_02_ 0" x="141" y="133" w="22" h="81" pX="0.5" pY="0.5" oX="58" oY="19" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_03_ 0" x="214" y="683" w="23" h="74" pX="0.5" pY="0.5" oX="59" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_04_ 1" x="465" y="49" w="86" h="46" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_05_ 1" x="47" y="176" w="93" h="38" pX="0.5" pY="0.5" oX="35" oY="52" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_06_ 1" x="0" y="443" w="88" h="57" pX="0.5" pY="0.5" oX="15" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_07_ 2" x="196" y="451" w="87" h="45" pX="0.5" pY="0.5" oX="28" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_08_ 2" x="92" y="214" w="92" h="39" pX="0.5" pY="0.5" oX="12" oY="51" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_09_ 2" x="284" y="361" w="89" h="51" pX="0.5" pY="0.5" oX="36" oY="33" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_10_ 3" x="481" y="398" w="21" h="83" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_11_ 3" x="299" y="602" w="21" h="77" pX="0.5" pY="0.5" oX="59" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_12_ 3" x="0" y="124" w="26" h="95" pX="0.5" pY="0.5" oX="56" oY="5" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_13_ 4" x="559" y="952" w="65" h="58" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_14_ 4" x="375" y="829" w="69" h="67" pX="0.5" pY="0.5" oX="44" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_15_ 4" x="714" y="295" w="72" h="54" pX="0.5" pY="0.5" oX="27" oY="47" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_16_ 5" x="751" y="217" w="60" h="72" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_17_ 5" x="873" y="741" w="67" h="63" pX="0.5" pY="0.5" oX="44" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_18_ 5" x="481" y="184" w="62" h="84" pX="0.5" pY="0.5" oX="29" oY="16" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_19_ 6" x="1003" y="346" w="61" h="57" pX="0.5" pY="0.5" oX="42" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_20_ 6" x="873" y="867" w="66" h="64" pX="0.5" pY="0.5" oX="29" oY="30" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_21_ 6" x="462" y="959" w="63" h="63" pX="0.5" pY="0.5" oX="48" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_22_ 7" x="863" y="483" w="66" h="68" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_23_ 7" x="873" y="680" w="68" h="61" pX="0.5" pY="0.5" oX="27" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Attack 2_24_ 7" x="551" y="0" w="73" h="81" pX="0.5" pY="0.5" oX="40" oY="15" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_01_ 0" x="970" y="407" w="22" h="61" pX="0.5" pY="0.5" oX="59" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_02_ 0" x="952" y="66" w="22" h="61" pX="0.5" pY="0.5" oX="59" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_03_ 0" x="974" y="66" w="22" h="61" pX="0.5" pY="0.5" oX="59" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_04_ 1" x="0" y="545" w="83" h="27" pX="0.5" pY="0.5" oX="35" oY="64" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_05_ 1" x="433" y="492" w="83" h="27" pX="0.5" pY="0.5" oX="35" oY="64" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_06_ 1" x="84" y="500" w="83" h="27" pX="0.5" pY="0.5" oX="35" oY="64" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_07_ 2" x="165" y="544" w="82" h="25" pX="0.5" pY="0.5" oX="20" oY="64" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_08_ 2" x="83" y="545" w="82" h="25" pX="0.5" pY="0.5" oX="20" oY="64" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_09_ 2" x="280" y="499" w="83" h="25" pX="0.5" pY="0.5" oX="19" oY="64" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_10_ 3" x="951" y="127" w="23" h="61" pX="0.5" pY="0.5" oX="56" oY="56" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_11_ 3" x="948" y="408" w="22" h="61" pX="0.5" pY="0.5" oX="57" oY="56" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_12_ 3" x="968" y="346" w="22" h="61" pX="0.5" pY="0.5" oX="57" oY="56" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_13_ 4" x="781" y="710" w="69" h="48" pX="0.5" pY="0.5" oX="42" oY="53" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_14_ 4" x="798" y="662" w="69" h="48" pX="0.5" pY="0.5" oX="42" oY="53" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_15_ 4" x="778" y="770" w="69" h="48" pX="0.5" pY="0.5" oX="42" oY="53" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_16_ 5" x="1065" y="276" w="56" h="53" pX="0.5" pY="0.5" oX="44" oY="59" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_17_ 5" x="1065" y="223" w="56" h="53" pX="0.5" pY="0.5" oX="44" oY="59" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_18_ 5" x="1064" y="329" w="56" h="53" pX="0.5" pY="0.5" oX="44" oY="59" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_19_ 6" x="1064" y="686" w="55" h="51" pX="0.5" pY="0.5" oX="38" oY="51" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_20_ 6" x="1064" y="382" w="55" h="51" pX="0.5" pY="0.5" oX="38" oY="51" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_21_ 6" x="1064" y="433" w="55" h="51" pX="0.5" pY="0.5" oX="38" oY="51" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_22_ 7" x="885" y="0" w="69" h="44" pX="0.5" pY="0.5" oX="26" oY="59" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_23_ 7" x="579" y="818" w="69" h="44" pX="0.5" pY="0.5" oX="26" oY="59" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Behavior_24_ 7" x="648" y="818" w="69" h="44" pX="0.5" pY="0.5" oX="26" oY="59" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_01_ 0" x="786" y="289" w="21" h="71" pX="0.5" pY="0.5" oX="59" oY="34" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_02_ 0" x="799" y="145" w="22" h="71" pX="0.5" pY="0.5" oX="58" oY="33" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_03_ 0" x="859" y="592" w="21" h="69" pX="0.5" pY="0.5" oX="58" oY="31" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_04_ 1" x="465" y="49" w="86" h="46" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_05_ 1" x="543" y="222" w="81" h="39" pX="0.5" pY="0.5" oX="31" oY="52" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_06_ 1" x="492" y="660" w="75" h="34" pX="0.5" pY="0.5" oX="39" oY="56" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_07_ 2" x="196" y="451" w="87" h="45" pX="0.5" pY="0.5" oX="28" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_08_ 2" x="280" y="524" w="80" h="38" pX="0.5" pY="0.5" oX="28" oY="52" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_09_ 2" x="492" y="627" w="75" h="33" pX="0.5" pY="0.5" oX="25" oY="56" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_10_ 3" x="481" y="398" w="21" h="83" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_11_ 3" x="381" y="498" w="21" h="75" pX="0.5" pY="0.5" oX="59" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_12_ 3" x="525" y="953" w="21" h="63" pX="0.5" pY="0.5" oX="59" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_13_ 4" x="559" y="952" w="65" h="58" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_14_ 4" x="1003" y="284" w="61" h="62" pX="0.5" pY="0.5" oX="42" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_15_ 4" x="1003" y="866" w="59" h="60" pX="0.5" pY="0.5" oX="45" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_16_ 5" x="751" y="217" w="60" h="72" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_17_ 5" x="381" y="959" w="58" h="64" pX="0.5" pY="0.5" oX="41" oY="37" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_18_ 5" x="753" y="1023" w="57" h="53" pX="0.5" pY="0.5" oX="44" oY="49" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_19_ 6" x="1003" y="346" w="61" h="57" pX="0.5" pY="0.5" oX="42" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_20_ 6" x="695" y="1006" w="58" h="58" pX="0.5" pY="0.5" oX="41" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_21_ 6" x="1064" y="630" w="56" h="56" pX="0.5" pY="0.5" oX="39" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_22_ 7" x="863" y="483" w="66" h="68" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_23_ 7" x="941" y="680" w="62" h="61" pX="0.5" pY="0.5" oX="36" oY="37" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Block_24_ 7" x="994" y="969" w="60" h="51" pX="0.5" pY="0.5" oX="35" oY="49" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_01_ 0" x="380" y="758" w="22" h="71" pX="0.5" pY="0.5" oX="59" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_02_ 0" x="337" y="758" w="22" h="71" pX="0.5" pY="0.5" oX="59" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_03_ 0" x="315" y="758" w="22" h="71" pX="0.5" pY="0.5" oX="59" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_04_ 1" x="523" y="398" w="79" h="36" pX="0.5" pY="0.5" oX="31" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_05_ 1" x="516" y="481" w="79" h="36" pX="0.5" pY="0.5" oX="31" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_06_ 1" x="195" y="317" w="80" h="36" pX="0.5" pY="0.5" oX="31" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_07_ 2" x="0" y="572" w="78" h="35" pX="0.5" pY="0.5" oX="29" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_08_ 2" x="78" y="572" w="78" h="35" pX="0.5" pY="0.5" oX="29" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_09_ 2" x="513" y="519" w="79" h="35" pX="0.5" pY="0.5" oX="28" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_10_ 3" x="204" y="830" w="23" h="69" pX="0.5" pY="0.5" oX="57" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_11_ 3" x="850" y="710" w="23" h="69" pX="0.5" pY="0.5" oX="57" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_12_ 3" x="877" y="273" w="23" h="69" pX="0.5" pY="0.5" oX="57" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_13_ 4" x="934" y="1020" w="59" h="59" pX="0.5" pY="0.5" oX="42" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_14_ 4" x="993" y="1020" w="59" h="59" pX="0.5" pY="0.5" oX="42" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_15_ 4" x="1003" y="635" w="61" h="59" pX="0.5" pY="0.5" oX="41" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_16_ 5" x="525" y="1016" w="56" h="58" pX="0.5" pY="0.5" oX="41" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_17_ 5" x="638" y="1016" w="57" h="58" pX="0.5" pY="0.5" oX="41" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_18_ 5" x="581" y="1016" w="57" h="58" pX="0.5" pY="0.5" oX="41" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_19_ 6" x="1052" y="1020" w="55" h="57" pX="0.5" pY="0.5" oX="42" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_20_ 6" x="1066" y="0" w="56" h="57" pX="0.5" pY="0.5" oX="41" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_21_ 6" x="810" y="1022" w="56" h="57" pX="0.5" pY="0.5" oX="41" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_22_ 7" x="120" y="1023" w="59" h="56" pX="0.5" pY="0.5" oX="38" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_23_ 7" x="1003" y="810" w="60" h="56" pX="0.5" pY="0.5" oX="37" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Critical HP_24_ 7" x="60" y="1023" w="60" h="56" pX="0.5" pY="0.5" oX="37" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Dead_01_ 0" x="787" y="1079" w="52" h="52" pX="0.5" pY="0.5" oX="38" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Dead_02_ 1" x="798" y="553" w="70" h="39" pX="0.5" pY="0.5" oX="34" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Dead_03_ 2" x="707" y="770" w="71" h="41" pX="0.5" pY="0.5" oX="33" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Dead_04_ 3" x="1064" y="792" w="52" h="55" pX="0.5" pY="0.5" oX="48" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Dead_05_ 4" x="695" y="1064" w="53" h="49" pX="0.5" pY="0.5" oX="39" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Dead_06_ 5" x="709" y="731" w="71" h="39" pX="0.5" pY="0.5" oX="32" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Dead_07_ 6" x="244" y="758" w="71" h="41" pX="0.5" pY="0.5" oX="34" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Dead_08_ 7" x="1063" y="574" w="52" h="56" pX="0.5" pY="0.5" oX="46" oY="33" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_01_ 0" x="786" y="289" w="21" h="71" pX="0.5" pY="0.5" oX="59" oY="34" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_02_ 0" x="838" y="483" w="25" h="69" pX="0.5" pY="0.5" oX="59" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_03_ 0" x="845" y="846" w="28" h="67" pX="0.5" pY="0.5" oX="59" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_04_ 1" x="465" y="49" w="86" h="46" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_05_ 1" x="156" y="570" w="78" h="36" pX="0.5" pY="0.5" oX="30" oY="54" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_06_ 1" x="714" y="349" w="72" h="33" pX="0.5" pY="0.5" oX="36" oY="58" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_07_ 2" x="196" y="451" w="87" h="45" pX="0.5" pY="0.5" oX="28" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_08_ 2" x="523" y="434" w="79" h="42" pX="0.5" pY="0.5" oX="31" oY="48" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_09_ 2" x="814" y="68" w="71" h="41" pX="0.5" pY="0.5" oX="32" oY="48" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_10_ 3" x="481" y="398" w="21" h="83" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_11_ 3" x="645" y="409" w="23" h="73" pX="0.5" pY="0.5" oX="56" oY="33" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_12_ 3" x="624" y="953" w="26" h="63" pX="0.5" pY="0.5" oX="53" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_13_ 4" x="559" y="952" w="65" h="58" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_14_ 4" x="0" y="1023" w="60" h="56" pX="0.5" pY="0.5" oX="43" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_15_ 4" x="106" y="1079" w="53" h="54" pX="0.5" pY="0.5" oX="50" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_16_ 5" x="751" y="217" w="60" h="72" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_17_ 5" x="947" y="224" w="56" h="63" pX="0.5" pY="0.5" oX="38" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_18_ 5" x="1064" y="484" w="52" h="54" pX="0.5" pY="0.5" oX="40" oY="49" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_19_ 6" x="1003" y="346" w="61" h="57" pX="0.5" pY="0.5" oX="42" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_20_ 6" x="866" y="1023" w="57" h="56" pX="0.5" pY="0.5" oX="45" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_21_ 6" x="1063" y="847" w="52" h="54" pX="0.5" pY="0.5" oX="47" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_22_ 7" x="863" y="483" w="66" h="68" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_23_ 7" x="1003" y="574" w="60" h="61" pX="0.5" pY="0.5" oX="36" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Evade_24_ 7" x="1054" y="954" w="54" h="54" pX="0.5" pY="0.5" oX="35" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_01_ 0" x="786" y="289" w="21" h="71" pX="0.5" pY="0.5" oX="59" oY="34" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_02_ 0" x="776" y="626" w="22" h="71" pX="0.5" pY="0.5" oX="58" oY="34" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_03_ 0" x="581" y="330" w="21" h="66" pX="0.5" pY="0.5" oX="58" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_04_ 1" x="465" y="49" w="86" h="46" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_05_ 1" x="543" y="184" w="81" h="38" pX="0.5" pY="0.5" oX="30" oY="53" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_06_ 1" x="709" y="698" w="72" h="33" pX="0.5" pY="0.5" oX="38" oY="56" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_07_ 2" x="196" y="451" w="87" h="45" pX="0.5" pY="0.5" oX="28" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_08_ 2" x="433" y="519" w="80" h="37" pX="0.5" pY="0.5" oX="28" oY="53" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_09_ 2" x="450" y="694" w="73" h="33" pX="0.5" pY="0.5" oX="28" oY="56" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_10_ 3" x="481" y="398" w="21" h="83" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_11_ 3" x="405" y="612" w="21" h="75" pX="0.5" pY="0.5" oX="59" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_12_ 3" x="947" y="346" w="21" h="62" pX="0.5" pY="0.5" oX="59" oY="46" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_13_ 4" x="559" y="952" w="65" h="58" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_14_ 4" x="1003" y="464" w="61" h="61" pX="0.5" pY="0.5" oX="41" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_15_ 4" x="1065" y="60" w="57" h="56" pX="0.5" pY="0.5" oX="44" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_16_ 5" x="751" y="217" w="60" h="72" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_17_ 5" x="260" y="959" w="57" h="64" pX="0.5" pY="0.5" oX="41" oY="37" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_18_ 5" x="52" y="1079" w="54" h="52" pX="0.5" pY="0.5" oX="44" oY="50" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_19_ 6" x="1003" y="346" w="61" h="57" pX="0.5" pY="0.5" oX="42" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_20_ 6" x="179" y="1023" w="58" h="56" pX="0.5" pY="0.5" oX="41" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_21_ 6" x="1064" y="737" w="54" h="55" pX="0.5" pY="0.5" oX="41" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_22_ 7" x="863" y="483" w="66" h="68" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_23_ 7" x="1003" y="403" w="61" h="61" pX="0.5" pY="0.5" oX="37" oY="37" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Get Hit_24_ 7" x="431" y="1023" w="58" h="50" pX="0.5" pY="0.5" oX="37" oY="50" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_01_ 0" x="786" y="289" w="21" h="71" pX="0.5" pY="0.5" oX="59" oY="34" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_02_ 0" x="359" y="758" w="21" h="71" pX="0.5" pY="0.5" oX="59" oY="34" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_03_ 0" x="688" y="149" w="21" h="73" pX="0.5" pY="0.5" oX="59" oY="33" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_04_ 1" x="465" y="49" w="86" h="46" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_05_ 1" x="196" y="406" w="87" h="45" pX="0.5" pY="0.5" oX="25" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_06_ 1" x="376" y="0" w="89" h="45" pX="0.5" pY="0.5" oX="25" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_07_ 2" x="196" y="451" w="87" h="45" pX="0.5" pY="0.5" oX="28" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_08_ 2" x="366" y="266" w="88" h="45" pX="0.5" pY="0.5" oX="27" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_09_ 2" x="283" y="135" w="90" h="45" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_10_ 3" x="481" y="398" w="21" h="83" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_11_ 3" x="454" y="268" w="21" h="84" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_12_ 3" x="412" y="453" w="21" h="83" pX="0.5" pY="0.5" oX="59" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_13_ 4" x="559" y="952" w="65" h="58" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_14_ 4" x="135" y="900" w="66" h="59" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_15_ 4" x="0" y="900" w="67" h="59" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_16_ 5" x="751" y="217" w="60" h="72" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_17_ 5" x="751" y="382" w="61" h="71" pX="0.5" pY="0.5" oX="37" oY="29" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_18_ 5" x="402" y="758" w="63" h="71" pX="0.5" pY="0.5" oX="37" oY="29" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_19_ 6" x="1003" y="346" w="61" h="57" pX="0.5" pY="0.5" oX="42" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_20_ 6" x="1003" y="227" w="62" h="57" pX="0.5" pY="0.5" oX="41" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_21_ 6" x="676" y="949" w="63" h="57" pX="0.5" pY="0.5" oX="40" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_22_ 7" x="882" y="410" w="66" h="68" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_23_ 7" x="137" y="831" w="67" h="69" pX="0.5" pY="0.5" oX="36" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Idle_24_ 7" x="812" y="343" w="67" h="70" pX="0.5" pY="0.5" oX="36" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_01_ 0" x="938" y="1079" w="24" h="49" pX="0.5" pY="0.5" oX="57" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_02_ 0" x="974" y="127" w="25" h="49" pX="0.5" pY="0.5" oX="56" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_03_ 0" x="201" y="900" w="25" h="49" pX="0.5" pY="0.5" oX="56" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_04_ 1" x="373" y="1023" w="58" h="55" pX="0.5" pY="0.5" oX="53" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_05_ 1" x="237" y="1023" w="58" h="55" pX="0.5" pY="0.5" oX="53" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_06_ 1" x="1065" y="116" w="57" h="55" pX="0.5" pY="0.5" oX="53" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_07_ 2" x="802" y="971" w="61" h="51" pX="0.5" pY="0.5" oX="27" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_08_ 2" x="900" y="291" w="61" h="51" pX="0.5" pY="0.5" oX="27" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_09_ 2" x="934" y="969" w="60" h="51" pX="0.5" pY="0.5" oX="28" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_10_ 3" x="329" y="679" w="24" h="74" pX="0.5" pY="0.5" oX="58" oY="36" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_11_ 3" x="353" y="679" w="24" h="74" pX="0.5" pY="0.5" oX="58" oY="36" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_12_ 3" x="305" y="679" w="24" h="74" pX="0.5" pY="0.5" oX="58" oY="36" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_13_ 4" x="198" y="1079" w="39" h="53" pX="0.5" pY="0.5" oX="57" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_14_ 4" x="748" y="1079" w="39" h="53" pX="0.5" pY="0.5" oX="57" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_15_ 4" x="159" y="1079" w="39" h="53" pX="0.5" pY="0.5" oX="56" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_16_ 5" x="625" y="887" w="48" h="66" pX="0.5" pY="0.5" oX="56" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_17_ 5" x="954" y="0" w="49" h="66" pX="0.5" pY="0.5" oX="56" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_18_ 5" x="510" y="887" w="49" h="66" pX="0.5" pY="0.5" oX="56" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_19_ 6" x="42" y="261" w="49" h="50" pX="0.5" pY="0.5" oX="34" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_20_ 6" x="839" y="1079" w="49" h="50" pX="0.5" pY="0.5" oX="34" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_21_ 6" x="888" y="1079" w="50" h="49" pX="0.5" pY="0.5" oX="33" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_22_ 7" x="900" y="224" w="43" h="67" pX="0.5" pY="0.5" oX="41" oY="37" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_23_ 7" x="885" y="44" w="43" h="68" pX="0.5" pY="0.5" oX="42" oY="37" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Rest_24_ 7" x="559" y="261" w="43" h="69" pX="0.5" pY="0.5" oX="42" oY="36" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_01_ 0" x="21" y="353" w="21" h="90" pX="0.5" pY="0.5" oX="59" oY="15" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_02_ 0" x="374" y="132" w="21" h="89" pX="0.5" pY="0.5" oX="59" oY="15" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_03_ 0" x="0" y="353" w="21" h="90" pX="0.5" pY="0.5" oX="59" oY="15" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_04_ 0" x="496" y="268" w="21" h="84" pX="0.5" pY="0.5" oX="59" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_05_ 0" x="602" y="261" w="21" h="79" pX="0.5" pY="0.5" oX="59" oY="31" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_06_ 0" x="305" y="412" w="21" h="86" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_07_ 0" x="0" y="261" w="21" h="92" pX="0.5" pY="0.5" oX="59" oY="14" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_08_ 0" x="26" y="124" w="21" h="94" pX="0.5" pY="0.5" oX="59" oY="12" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_09_ 1" x="285" y="44" w="91" h="46" pX="0.5" pY="0.5" oX="27" oY="46" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_10_ 1" x="0" y="219" w="92" h="42" pX="0.5" pY="0.5" oX="26" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_11_ 1" x="285" y="0" w="91" h="44" pX="0.5" pY="0.5" oX="26" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_12_ 1" x="47" y="133" w="94" h="43" pX="0.5" pY="0.5" oX="25" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_13_ 1" x="192" y="0" w="93" h="40" pX="0.5" pY="0.5" oX="25" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_14_ 1" x="0" y="42" w="97" h="39" pX="0.5" pY="0.5" oX="24" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_15_ 1" x="97" y="0" w="95" h="42" pX="0.5" pY="0.5" oX="24" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_16_ 1" x="184" y="179" w="92" h="48" pX="0.5" pY="0.5" oX="25" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_17_ 2" x="42" y="400" w="90" h="41" pX="0.5" pY="0.5" oX="23" oY="46" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_18_ 2" x="275" y="314" w="90" h="47" pX="0.5" pY="0.5" oX="24" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_19_ 2" x="376" y="45" w="89" h="42" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_20_ 2" x="97" y="42" w="95" h="43" pX="0.5" pY="0.5" oX="21" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_21_ 2" x="0" y="81" w="96" h="43" pX="0.5" pY="0.5" oX="20" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_22_ 2" x="0" y="0" w="97" h="42" pX="0.5" pY="0.5" oX="19" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_23_ 2" x="92" y="253" w="92" h="43" pX="0.5" pY="0.5" oX="23" oY="45" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_24_ 2" x="276" y="225" w="90" h="42" pX="0.5" pY="0.5" oX="25" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_25_ 3" x="624" y="411" w="21" h="73" pX="0.5" pY="0.5" oX="59" oY="30" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_26_ 3" x="623" y="336" w="21" h="75" pX="0.5" pY="0.5" oX="59" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_27_ 3" x="201" y="606" w="21" h="77" pX="0.5" pY="0.5" oX="59" oY="25" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_28_ 3" x="395" y="132" w="21" h="86" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_29_ 3" x="132" y="353" w="21" h="90" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_30_ 3" x="153" y="412" w="22" h="88" pX="0.5" pY="0.5" oX="59" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_31_ 3" x="538" y="268" w="21" h="80" pX="0.5" pY="0.5" oX="59" oY="27" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_32_ 3" x="602" y="340" w="21" h="79" pX="0.5" pY="0.5" oX="59" oY="26" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_33_ 4" x="684" y="409" w="67" h="73" pX="0.5" pY="0.5" oX="38" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_34_ 4" x="735" y="73" w="67" h="72" pX="0.5" pY="0.5" oX="38" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_35_ 4" x="711" y="554" w="67" h="72" pX="0.5" pY="0.5" oX="38" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_36_ 4" x="636" y="737" w="71" h="66" pX="0.5" pY="0.5" oX="35" oY="33" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_37_ 4" x="377" y="694" w="73" h="64" pX="0.5" pY="0.5" oX="35" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_38_ 4" x="636" y="666" w="73" h="71" pX="0.5" pY="0.5" oX="37" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_39_ 4" x="551" y="81" w="69" h="78" pX="0.5" pY="0.5" oX="37" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_40_ 4" x="133" y="607" w="68" h="77" pX="0.5" pY="0.5" oX="37" oY="21" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_41_ 5" x="68" y="899" w="67" h="60" pX="0.5" pY="0.5" oX="38" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_42_ 5" x="375" y="896" w="67" h="62" pX="0.5" pY="0.5" oX="38" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_43_ 5" x="929" y="478" w="66" h="64" pX="0.5" pY="0.5" oX="38" oY="30" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_44_ 5" x="145" y="684" w="69" h="75" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_45_ 5" x="0" y="607" w="68" h="77" pX="0.5" pY="0.5" oX="35" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_46_ 5" x="74" y="684" w="71" h="75" pX="0.5" pY="0.5" oX="36" oY="29" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_47_ 5" x="812" y="413" w="70" h="70" pX="0.5" pY="0.5" oX="37" oY="31" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_48_ 5" x="880" y="551" w="68" h="68" pX="0.5" pY="0.5" oX="37" oY="31" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_49_ 6" x="688" y="0" w="65" h="73" pX="0.5" pY="0.5" oX="36" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_50_ 6" x="705" y="482" w="66" h="72" pX="0.5" pY="0.5" oX="36" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_51_ 6" x="68" y="607" w="65" h="77" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_52_ 6" x="68" y="831" w="69" h="68" pX="0.5" pY="0.5" oX="34" oY="33" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_53_ 6" x="559" y="887" w="66" h="65" pX="0.5" pY="0.5" oX="37" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_54_ 6" x="814" y="0" w="71" h="68" pX="0.5" pY="0.5" oX="32" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_55_ 6" x="568" y="591" w="71" h="75" pX="0.5" pY="0.5" oX="32" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_56_ 6" x="426" y="591" w="66" h="76" pX="0.5" pY="0.5" oX="37" oY="21" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_57_ 7" x="673" y="887" w="66" h="62" pX="0.5" pY="0.5" oX="36" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_58_ 7" x="739" y="887" w="66" h="62" pX="0.5" pY="0.5" oX="36" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_59_ 7" x="0" y="959" w="65" h="64" pX="0.5" pY="0.5" oX="37" oY="30" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_60_ 7" x="174" y="759" w="70" h="71" pX="0.5" pY="0.5" oX="34" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_61_ 7" x="639" y="571" w="72" h="73" pX="0.5" pY="0.5" oX="31" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_62_ 7" x="0" y="684" w="74" h="75" pX="0.5" pY="0.5" oX="30" oY="29" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_63_ 7" x="0" y="831" w="68" h="69" pX="0.5" pY="0.5" oX="35" oY="31" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Run_64_ 7" x="444" y="829" w="66" h="69" pX="0.5" pY="0.5" oX="37" oY="31" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_01_ 0" x="786" y="289" w="21" h="71" pX="0.5" pY="0.5" oX="59" oY="34" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_02_ 0" x="405" y="536" w="21" h="76" pX="0.5" pY="0.5" oX="59" oY="25" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_03_ 0" x="360" y="524" w="21" h="78" pX="0.5" pY="0.5" oX="59" oY="21" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_04_ 1" x="465" y="49" w="86" h="46" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_05_ 1" x="190" y="132" w="93" h="47" pX="0.5" pY="0.5" oX="27" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_06_ 1" x="196" y="496" w="84" h="48" pX="0.5" pY="0.5" oX="34" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_07_ 2" x="196" y="451" w="87" h="45" pX="0.5" pY="0.5" oX="28" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_08_ 2" x="96" y="85" w="94" h="48" pX="0.5" pY="0.5" oX="20" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_09_ 2" x="465" y="0" w="86" h="49" pX="0.5" pY="0.5" oX="22" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_10_ 3" x="481" y="398" w="21" h="83" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_11_ 3" x="21" y="261" w="21" h="92" pX="0.5" pY="0.5" oX="59" oY="18" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_12_ 3" x="174" y="317" w="21" h="89" pX="0.5" pY="0.5" oX="59" oY="18" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_13_ 4" x="559" y="952" w="65" h="58" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_14_ 4" x="873" y="804" w="67" h="63" pX="0.5" pY="0.5" oX="39" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_15_ 4" x="798" y="592" w="61" h="70" pX="0.5" pY="0.5" oX="43" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_16_ 5" x="751" y="217" w="60" h="72" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_17_ 5" x="237" y="679" w="68" h="74" pX="0.5" pY="0.5" oX="38" oY="26" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_18_ 5" x="735" y="145" w="64" h="72" pX="0.5" pY="0.5" oX="43" oY="25" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_19_ 6" x="1003" y="346" w="61" h="57" pX="0.5" pY="0.5" oX="42" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_20_ 6" x="510" y="818" w="69" h="60" pX="0.5" pY="0.5" oX="34" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_21_ 6" x="195" y="959" w="65" h="64" pX="0.5" pY="0.5" oX="34" oY="31" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_22_ 7" x="863" y="483" w="66" h="68" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_23_ 7" x="616" y="497" w="68" h="74" pX="0.5" pY="0.5" oX="34" oY="26" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Use Skill_24_ 7" x="624" y="76" w="62" h="74" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_01_ 0" x="416" y="132" w="21" h="86" pX="0.5" pY="0.5" oX="59" oY="19" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_02_ 0" x="153" y="759" w="21" h="71" pX="0.5" pY="0.5" oX="59" oY="33" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_03_ 0" x="714" y="146" w="21" h="73" pX="0.5" pY="0.5" oX="59" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_04_ 0" x="595" y="497" w="21" h="75" pX="0.5" pY="0.5" oX="59" oY="31" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_05_ 0" x="320" y="602" w="21" h="77" pX="0.5" pY="0.5" oX="59" oY="29" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_06_ 0" x="686" y="76" w="21" h="73" pX="0.5" pY="0.5" oX="59" oY="31" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_07_ 0" x="68" y="759" w="21" h="72" pX="0.5" pY="0.5" oX="59" oY="32" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_08_ 0" x="714" y="73" w="21" h="73" pX="0.5" pY="0.5" oX="59" oY="33" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_09_ 1" x="0" y="500" w="84" h="45" pX="0.5" pY="0.5" oX="25" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_10_ 1" x="462" y="139" w="85" h="45" pX="0.5" pY="0.5" oX="25" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_11_ 1" x="366" y="221" w="88" h="45" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_12_ 1" x="365" y="314" w="89" h="47" pX="0.5" pY="0.5" oX="25" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_13_ 1" x="276" y="267" w="90" h="47" pX="0.5" pY="0.5" oX="26" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_14_ 1" x="195" y="361" w="89" h="45" pX="0.5" pY="0.5" oX="25" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_15_ 1" x="376" y="87" w="89" h="45" pX="0.5" pY="0.5" oX="25" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_16_ 1" x="465" y="95" w="85" h="44" pX="0.5" pY="0.5" oX="25" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_17_ 2" x="462" y="352" w="84" h="46" pX="0.5" pY="0.5" oX="31" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_18_ 2" x="326" y="453" w="86" h="45" pX="0.5" pY="0.5" oX="29" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_19_ 2" x="184" y="273" w="91" h="44" pX="0.5" pY="0.5" oX="24" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_20_ 2" x="373" y="361" w="89" h="46" pX="0.5" pY="0.5" oX="26" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_21_ 2" x="283" y="90" w="91" h="45" pX="0.5" pY="0.5" oX="24" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_22_ 2" x="276" y="180" w="90" h="45" pX="0.5" pY="0.5" oX="26" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_23_ 2" x="184" y="227" w="92" h="46" pX="0.5" pY="0.5" oX="24" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_24_ 2" x="373" y="407" w="87" h="46" pX="0.5" pY="0.5" oX="29" oY="43" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_25_ 3" x="163" y="133" w="21" h="81" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_26_ 3" x="460" y="407" w="21" h="85" pX="0.5" pY="0.5" oX="59" oY="24" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_27_ 3" x="153" y="296" w="21" h="89" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_28_ 3" x="475" y="268" w="21" h="84" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_29_ 3" x="437" y="132" w="21" h="85" pX="0.5" pY="0.5" oX="59" oY="22" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_30_ 3" x="458" y="184" w="21" h="84" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_31_ 3" x="175" y="412" w="21" h="88" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_32_ 3" x="502" y="398" w="21" h="83" pX="0.5" pY="0.5" oX="59" oY="23" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_33_ 4" x="1003" y="749" w="61" h="61" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_34_ 4" x="940" y="741" w="63" h="61" pX="0.5" pY="0.5" oX="37" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_35_ 4" x="883" y="112" w="68" h="59" pX="0.5" pY="0.5" oX="37" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_36_ 4" x="88" y="443" w="65" h="57" pX="0.5" pY="0.5" oX="37" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_37_ 4" x="130" y="959" w="65" h="60" pX="0.5" pY="0.5" oX="38" oY="37" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_38_ 4" x="805" y="913" w="65" h="58" pX="0.5" pY="0.5" oX="37" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_39_ 4" x="1003" y="0" w="63" h="60" pX="0.5" pY="0.5" oX="37" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_40_ 4" x="1003" y="60" w="62" h="62" pX="0.5" pY="0.5" oX="37" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_41_ 5" x="753" y="0" w="61" h="72" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_42_ 5" x="624" y="150" w="63" h="74" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_43_ 5" x="341" y="602" w="64" h="77" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_44_ 5" x="623" y="261" w="65" h="75" pX="0.5" pY="0.5" oX="37" oY="27" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_45_ 5" x="812" y="273" w="65" h="70" pX="0.5" pY="0.5" oX="38" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_46_ 5" x="717" y="818" w="65" h="69" pX="0.5" pY="0.5" oX="37" oY="29" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_47_ 5" x="0" y="759" w="68" h="72" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_48_ 5" x="821" y="109" w="62" h="70" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_49_ 6" x="1003" y="171" w="62" h="56" pX="0.5" pY="0.5" oX="41" oY="40" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_50_ 6" x="739" y="949" w="63" h="57" pX="0.5" pY="0.5" oX="40" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_51_ 6" x="317" y="959" w="64" h="58" pX="0.5" pY="0.5" oX="39" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_52_ 6" x="65" y="959" w="65" h="62" pX="0.5" pY="0.5" oX="38" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_53_ 6" x="227" y="858" w="66" h="64" pX="0.5" pY="0.5" oX="37" oY="37" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_54_ 6" x="442" y="898" w="65" h="61" pX="0.5" pY="0.5" oX="38" oY="38" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_55_ 6" x="812" y="216" w="70" h="57" pX="0.5" pY="0.5" oX="33" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_56_ 6" x="293" y="898" w="64" h="57" pX="0.5" pY="0.5" oX="39" oY="39" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_57_ 7" x="313" y="829" w="62" h="69" pX="0.5" pY="0.5" oX="41" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_58_ 7" x="89" y="759" w="64" h="72" pX="0.5" pY="0.5" oX="39" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_59_ 7" x="567" y="666" w="69" h="73" pX="0.5" pY="0.5" oX="34" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_60_ 7" x="531" y="739" w="65" h="71" pX="0.5" pY="0.5" oX="38" oY="27" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_61_ 7" x="465" y="739" w="66" h="71" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_62_ 7" x="711" y="626" w="65" h="72" pX="0.5" pY="0.5" oX="38" oY="29" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_63_ 7" x="624" y="0" w="64" h="76" pX="0.5" pY="0.5" oX="39" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Walk_64_ 7" x="688" y="222" w="63" h="73" pX="0.5" pY="0.5" oX="40" oY="28" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_01_ 0" x="559" y="330" w="22" h="68" pX="0.5" pY="0.5" oX="58" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_02_ 0" x="929" y="44" w="23" h="68" pX="0.5" pY="0.5" oX="59" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_03_ 0" x="847" y="779" w="26" h="67" pX="0.5" pY="0.5" oX="59" oY="35" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_04_ 1" x="426" y="556" w="76" h="35" pX="0.5" pY="0.5" oX="34" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_05_ 1" x="492" y="591" w="76" h="36" pX="0.5" pY="0.5" oX="34" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_06_ 1" x="513" y="554" w="77" h="37" pX="0.5" pY="0.5" oX="34" oY="54" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_07_ 2" x="247" y="562" w="77" h="35" pX="0.5" pY="0.5" oX="28" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_08_ 2" x="222" y="606" w="77" h="34" pX="0.5" pY="0.5" oX="28" oY="55" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_09_ 2" x="222" y="640" w="77" h="36" pX="0.5" pY="0.5" oX="28" oY="54" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_10_ 3" x="439" y="959" w="23" h="63" pX="0.5" pY="0.5" oX="58" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_11_ 3" x="596" y="739" w="24" h="63" pX="0.5" pY="0.5" oX="56" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_12_ 3" x="650" y="953" w="26" h="63" pX="0.5" pY="0.5" oX="54" oY="44" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_13_ 4" x="940" y="802" w="63" h="58" pX="0.5" pY="0.5" oX="39" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_14_ 4" x="317" y="1017" w="56" h="59" pX="0.5" pY="0.5" oX="44" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_15_ 4" x="948" y="542" w="53" h="60" pX="0.5" pY="0.5" oX="47" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_16_ 5" x="1062" y="901" w="54" h="53" pX="0.5" pY="0.5" oX="43" oY="48" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_17_ 5" x="1003" y="525" w="61" h="49" pX="0.5" pY="0.5" oX="38" oY="51" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_18_ 5" x="939" y="867" w="64" h="46" pX="0.5" pY="0.5" oX="36" oY="53" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_19_ 6" x="948" y="602" w="54" h="58" pX="0.5" pY="0.5" oX="42" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_20_ 6" x="1003" y="694" w="61" h="55" pX="0.5" pY="0.5" oX="40" oY="41" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_21_ 6" x="870" y="969" w="64" h="54" pX="0.5" pY="0.5" oX="39" oY="42" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_22_ 7" x="1003" y="122" w="62" h="49" pX="0.5" pY="0.5" oX="37" oY="50" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_23_ 7" x="1065" y="171" w="56" h="52" pX="0.5" pY="0.5" oX="38" oY="47" oW="128" oH="128"/>
+  <sprite n="Wolf_Black_Woozy_24_ 7" x="0" y="1079" w="52" h="54" pX="0.5" pY="0.5" oX="39" oY="45" oW="128" oH="128"/>
+</TextureAtlas>

@@ -174,17 +174,17 @@ namespace Graphics {
 	void Load_Textures(entt::registry& zone) {
 		Create_Font();
 
-		skeleton_1 = createTexture("sprites/units/skeleton/skeleton_00.png");
-		skeleton_0 = createTexture("sprites/units/skeleton/armoured_skeleton_00.png");
+//		skeleton_1 = createTexture("sprites/units/skeleton/skeleton_00.png");
+//		skeleton_0 = createTexture("sprites/units/skeleton/armoured_skeleton_00.png");
 
-		archer_0 = createTexture("sprites/units/archer/archer_00.png");
+//		archer_0 = createTexture("sprites/units/archer/archer_00.png");
 
-		fireball_0 = createTexture("sprites/spells/fireball_0.png");
+//		fireball_0 = createTexture("sprites/spells/fireball_0.png");
 		fireball_explosion_0 = createTexture("sprites/spells/fireball_explosion_0.png");
 
         weapons_icons = createTexture("sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
-		longsword_default = createTexture("sprites/items/long_sword/w_longsword.png");
-		icon_axe1 = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_axe1.png");
+//		longsword_default = createTexture("sprites/items/long_sword/w_longsword.png");
+//		icon_axe1 = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_axe1.png");
 		//longsword_default_icon = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_sword_long4.png");
 		itsmars_Inventory = createTexture("sprites/UI/itsmars_Inventory.png");
 		cursor_0 = createTexture("sprites/UI/cursors/cursor.png");
@@ -204,7 +204,7 @@ namespace Graphics {
 		armorSpriteSheet = createTexture("sprites/items/flare_armor_transparent.png");
 
 		tooltipBackground = createTexture("sprites/UI/tooltips/tooltipBackground2.png");
-		cow = createTexture("sprites/units/animals/no_death_animation/cow/walk_sheet_192x192_8x8_alpha.png");
+//		cow = createTexture("sprites/units/animals/no_death_animation/cow/walk_sheet_192x192_8x8_alpha.png");
         spellbook = createTexture("sprites/UI/spellbook/spellbook.png");
         female_weapons = createTexture("sprites/items/weapons/Female_Swords.png");
 

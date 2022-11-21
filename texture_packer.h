@@ -85,7 +85,13 @@ namespace Texture_Packer {
        } else if (checkAction == "Attack Two Hand Swing") {
            action = Component::Action_State::attack;
            actionFrameData[action].frameSpeed = i;
+       } else if (checkAction == "Attack 1") {
+           action = Component::Action_State::attack;
+           actionFrameData[action].frameSpeed = i;
        } else if (checkAction == "1-H Idle") {
+           action = Component::Action_State::idle;
+           actionFrameData[action].frameSpeed = i;
+       } else if (checkAction == "Idle") {
            action = Component::Action_State::idle;
            actionFrameData[action].frameSpeed = i;
        } else if (checkAction == "Idle1") {
@@ -98,6 +104,9 @@ namespace Texture_Packer {
            action = Component::Action_State::walk;
            actionFrameData[action].frameSpeed = i;
        } else if (checkAction == "walking") {
+           action = Component::Action_State::walk;
+           actionFrameData[action].frameSpeed = i;
+       } else if (checkAction == "Walking") {
            action = Component::Action_State::walk;
            actionFrameData[action].frameSpeed = i;
        } else if (checkAction == "Run") {
@@ -113,6 +122,12 @@ namespace Texture_Packer {
            action = Component::Action_State::struck;
            actionFrameData[action].frameSpeed = i;
        } else if (checkAction == "Down 1") {
+           action = Component::Action_State::dead;
+           actionFrameData[action].frameSpeed = i;
+       } else if (checkAction == "Dead") {
+           action = Component::Action_State::dead;
+           actionFrameData[action].frameSpeed = i;
+       } else if (checkAction == "Dead To Down") {
            action = Component::Action_State::dead;
            actionFrameData[action].frameSpeed = i;
        } else if (checkAction == "Dead2") {

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="4090" height="2877" scale="1" format="RGBA8888">
+  <sprite n="Giant_Fire_Attack 1_01_ 0" x="729" y="301" w="171" h="178" pX="0.5" pY="0.5" oX="66" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_02_ 0" x="3764" y="2610" w="154" h="267" pX="0.5" pY="0.5" oX="123" oY="18" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_03_ 0" x="1672" y="152" w="252" h="166" pX="0.5" pY="0.5" oX="0" oY="140" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_04_ 1" x="1943" y="691" w="162" h="192" pX="0.5" pY="0.5" oX="107" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_05_ 1" x="2105" y="692" w="151" h="192" pX="0.5" pY="0.5" oX="144" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_06_ 1" x="2444" y="2584" w="164" h="257" pX="0.5" pY="0.5" oX="106" oY="23" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_07_ 2" x="3335" y="1295" w="169" h="205" pX="0.5" pY="0.5" oX="86" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_08_ 2" x="1321" y="2559" w="133" h="248" pX="0.5" pY="0.5" oX="77" oY="38" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_09_ 2" x="2445" y="2350" w="172" h="234" pX="0.5" pY="0.5" oX="85" oY="116" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_10_ 3" x="3276" y="1920" w="167" h="219" pX="0.5" pY="0.5" oX="124" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_11_ 3" x="3401" y="1093" w="149" h="202" pX="0.5" pY="0.5" oX="83" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_12_ 3" x="3524" y="2372" w="256" h="236" pX="0.5" pY="0.5" oX="94" oY="63" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_13_ 4" x="1585" y="876" w="174" h="195" pX="0.5" pY="0.5" oX="82" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_14_ 4" x="618" y="2085" w="145" h="221" pX="0.5" pY="0.5" oX="179" oY="66" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_15_ 4" x="2467" y="1910" w="197" h="218" pX="0.5" pY="0.5" oX="56" oY="69" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_16_ 5" x="2105" y="1281" w="138" h="204" pX="0.5" pY="0.5" oX="115" oY="74" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_17_ 5" x="2813" y="326" w="138" h="183" pX="0.5" pY="0.5" oX="115" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_18_ 5" x="1870" y="1903" w="214" h="214" pX="0.5" pY="0.5" oX="88" oY="66" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_19_ 6" x="909" y="1664" w="138" h="211" pX="0.5" pY="0.5" oX="97" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_20_ 6" x="1112" y="2097" w="142" h="221" pX="0.5" pY="0.5" oX="97" oY="34" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_21_ 6" x="3784" y="1926" w="148" h="220" pX="0.5" pY="0.5" oX="99" oY="130" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_22_ 7" x="3009" y="1704" w="169" h="213" pX="0.5" pY="0.5" oX="115" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_23_ 7" x="394" y="2304" w="124" h="228" pX="0.5" pY="0.5" oX="69" oY="77" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 1_24_ 7" x="2664" y="1701" w="227" h="212" pX="0.5" pY="0.5" oX="106" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_01_ 0" x="900" y="303" w="171" h="178" pX="0.5" pY="0.5" oX="66" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_02_ 0" x="2752" y="2594" w="141" h="258" pX="0.5" pY="0.5" oX="99" oY="27" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_03_ 0" x="1747" y="2338" w="134" h="231" pX="0.5" pY="0.5" oX="125" oY="119" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_04_ 1" x="339" y="660" w="162" h="191" pX="0.5" pY="0.5" oX="121" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_05_ 1" x="2019" y="2345" w="134" h="233" pX="0.5" pY="0.5" oX="154" oY="68" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_06_ 1" x="1635" y="318" w="237" h="181" pX="0.5" pY="0.5" oX="41" oY="119" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_07_ 2" x="3504" y="1297" w="170" h="205" pX="0.5" pY="0.5" oX="67" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_08_ 2" x="1589" y="2567" w="137" h="253" pX="0.5" pY="0.5" oX="69" oY="55" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_09_ 2" x="360" y="475" w="239" h="185" pX="0.5" pY="0.5" oX="70" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_10_ 3" x="0" y="2072" w="168" h="220" pX="0.5" pY="0.5" oX="124" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_11_ 3" x="895" y="1875" w="139" h="216" pX="0.5" pY="0.5" oX="128" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_12_ 3" x="2321" y="2582" w="123" h="257" pX="0.5" pY="0.5" oX="102" oY="64" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_13_ 4" x="1759" y="880" w="175" h="195" pX="0.5" pY="0.5" oX="65" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_14_ 4" x="2004" y="2578" w="129" h="256" pX="0.5" pY="0.5" oX="144" oY="48" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_15_ 4" x="2685" y="1494" w="210" h="207" pX="0.5" pY="0.5" oX="50" oY="137" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_16_ 5" x="2243" y="1284" w="138" h="204" pX="0.5" pY="0.5" oX="115" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_17_ 5" x="1128" y="1060" w="171" h="200" pX="0.5" pY="0.5" oX="114" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_18_ 5" x="3550" y="1095" w="211" h="202" pX="0.5" pY="0.5" oX="44" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_19_ 6" x="1950" y="1691" w="139" h="212" pX="0.5" pY="0.5" oX="77" oY="115" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_20_ 6" x="2664" y="1913" w="156" h="218" pX="0.5" pY="0.5" oX="60" oY="49" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_21_ 6" x="1254" y="2104" w="233" h="221" pX="0.5" pY="0.5" oX="81" oY="114" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_22_ 7" x="1034" y="1879" w="167" h="214" pX="0.5" pY="0.5" oX="135" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_23_ 7" x="236" y="2528" w="119" h="241" pX="0.5" pY="0.5" oX="110" oY="79" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Attack 2_24_ 7" x="2617" y="2354" w="169" h="234" pX="0.5" pY="0.5" oX="115" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_01_ 0" x="1177" y="306" w="171" h="178" pX="0.5" pY="0.5" oX="66" oY="128" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_02_ 0" x="365" y="299" w="172" h="176" pX="0.5" pY="0.5" oX="66" oY="131" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_03_ 0" x="193" y="299" w="172" h="175" pX="0.5" pY="0.5" oX="66" oY="132" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_04_ 1" x="501" y="664" w="169" h="191" pX="0.5" pY="0.5" oX="81" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_05_ 1" x="2938" y="510" w="169" h="190" pX="0.5" pY="0.5" oX="81" oY="111" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_06_ 1" x="2391" y="506" w="169" h="189" pX="0.5" pY="0.5" oX="81" oY="112" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_07_ 2" x="3674" y="1299" w="169" h="205" pX="0.5" pY="0.5" oX="102" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_08_ 2" x="400" y="1249" w="169" h="203" pX="0.5" pY="0.5" oX="102" oY="125" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_09_ 2" x="569" y="1251" w="169" h="203" pX="0.5" pY="0.5" oX="102" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_10_ 3" x="168" y="2075" w="168" h="220" pX="0.5" pY="0.5" oX="124" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_11_ 3" x="336" y="2081" w="167" h="220" pX="0.5" pY="0.5" oX="124" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_12_ 3" x="2820" y="1914" w="168" h="218" pX="0.5" pY="0.5" oX="123" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_13_ 4" x="1934" y="884" w="175" h="195" pX="0.5" pY="0.5" oX="52" oY="119" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_14_ 4" x="2992" y="700" w="174" h="193" pX="0.5" pY="0.5" oX="53" oY="121" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_15_ 4" x="670" y="666" w="173" h="191" pX="0.5" pY="0.5" oX="54" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_16_ 5" x="2381" y="1286" w="138" h="204" pX="0.5" pY="0.5" oX="115" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_17_ 5" x="3761" y="1097" w="139" h="202" pX="0.5" pY="0.5" oX="115" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_18_ 5" x="659" y="1051" w="139" h="200" pX="0.5" pY="0.5" oX="115" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_19_ 6" x="1714" y="1478" w="138" h="207" pX="0.5" pY="0.5" oX="97" oY="129" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_20_ 6" x="916" y="1458" w="138" h="206" pX="0.5" pY="0.5" oX="97" oY="130" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_21_ 6" x="3843" y="1299" w="138" h="205" pX="0.5" pY="0.5" oX="97" oY="131" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_22_ 7" x="1323" y="1890" w="173" h="214" pX="0.5" pY="0.5" oX="135" oY="112" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_23_ 7" x="3595" y="1713" w="172" h="213" pX="0.5" pY="0.5" oX="135" oY="113" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Behavior_24_ 7" x="3303" y="1708" w="170" h="212" pX="0.5" pY="0.5" oX="135" oY="114" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_01_ 0" x="738" y="1253" w="182" h="203" pX="0.5" pY="0.5" oX="39" oY="109" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_02_ 0" x="518" y="2306" w="182" h="228" pX="0.5" pY="0.5" oX="38" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_03_ 0" x="521" y="2534" w="169" h="239" pX="0.5" pY="0.5" oX="49" oY="72" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_04_ 1" x="917" y="2547" w="133" h="243" pX="0.5" pY="0.5" oX="115" oY="50" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_05_ 1" x="3387" y="2368" w="137" h="238" pX="0.5" pY="0.5" oX="116" oY="55" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_06_ 1" x="3633" y="2145" w="138" h="226" pX="0.5" pY="0.5" oX="116" oY="67" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_07_ 2" x="0" y="1236" w="125" h="203" pX="0.5" pY="0.5" oX="111" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_08_ 2" x="1975" y="1483" w="126" h="208" pX="0.5" pY="0.5" oX="108" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_09_ 2" x="3178" y="1706" w="125" h="213" pX="0.5" pY="0.5" oX="106" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_10_ 3" x="2622" y="2131" w="180" h="223" pX="0.5" pY="0.5" oX="140" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_11_ 3" x="1054" y="1463" w="185" h="206" pX="0.5" pY="0.5" oX="140" oY="111" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_12_ 3" x="3777" y="899" w="178" h="198" pX="0.5" pY="0.5" oX="140" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_13_ 4" x="3239" y="2364" w="148" h="237" pX="0.5" pY="0.5" oX="69" oY="72" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_14_ 4" x="1726" y="2569" w="135" h="254" pX="0.5" pY="0.5" oX="89" oY="55" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_15_ 4" x="1193" y="2555" w="128" h="244" pX="0.5" pY="0.5" oX="97" oY="65" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_16_ 5" x="2786" y="2359" w="155" h="235" pX="0.5" pY="0.5" oX="121" oY="63" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_17_ 5" x="2265" y="2350" w="180" h="232" pX="0.5" pY="0.5" oX="121" oY="66" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_18_ 5" x="2519" y="1288" w="194" h="204" pX="0.5" pY="0.5" oX="121" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_19_ 6" x="126" y="1042" w="146" h="198" pX="0.5" pY="0.5" oX="83" oY="116" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_20_ 6" x="1965" y="503" w="165" h="188" pX="0.5" pY="0.5" oX="61" oY="111" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_21_ 6" x="3246" y="511" w="188" h="190" pX="0.5" pY="0.5" oX="38" oY="106" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_22_ 7" x="247" y="1244" w="153" h="203" pX="0.5" pY="0.5" oX="134" oY="113" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_23_ 7" x="1299" y="1061" w="129" h="200" pX="0.5" pY="0.5" oX="133" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Block_24_ 7" x="1852" y="1482" w="123" h="207" pX="0.5" pY="0.5" oX="133" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_01_ 0" x="816" y="140" w="103" h="161" pX="0.5" pY="0.5" oX="119" oY="132" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_02_ 0" x="0" y="135" w="102" h="158" pX="0.5" pY="0.5" oX="120" oY="133" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_03_ 0" x="2017" y="0" w="102" h="154" pX="0.5" pY="0.5" oX="120" oY="135" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_04_ 1" x="198" y="139" w="110" h="159" pX="0.5" pY="0.5" oX="126" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_05_ 1" x="3614" y="0" w="107" h="157" pX="0.5" pY="0.5" oX="129" oY="128" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_06_ 1" x="2530" y="0" w="104" h="155" pX="0.5" pY="0.5" oX="132" oY="130" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_07_ 2" x="2119" y="0" w="102" h="154" pX="0.5" pY="0.5" oX="123" oY="131" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_08_ 2" x="2221" y="0" w="100" h="154" pX="0.5" pY="0.5" oX="123" oY="132" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_09_ 2" x="1707" y="0" w="101" h="152" pX="0.5" pY="0.5" oX="123" oY="133" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_10_ 3" x="3809" y="157" w="103" h="174" pX="0.5" pY="0.5" oX="140" oY="121" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_11_ 3" x="3707" y="157" w="102" h="173" pX="0.5" pY="0.5" oX="140" oY="122" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_12_ 3" x="3285" y="156" w="101" h="172" pX="0.5" pY="0.5" oX="140" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_13_ 4" x="919" y="142" w="102" h="161" pX="0.5" pY="0.5" oX="129" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_14_ 4" x="308" y="140" w="102" h="159" pX="0.5" pY="0.5" oX="129" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_15_ 4" x="410" y="140" w="101" h="159" pX="0.5" pY="0.5" oX="130" oY="127" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_16_ 5" x="2708" y="156" w="113" h="170" pX="0.5" pY="0.5" oX="115" oY="115" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_17_ 5" x="2413" y="154" w="113" h="169" pX="0.5" pY="0.5" oX="115" oY="116" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_18_ 5" x="2090" y="154" w="113" h="168" pX="0.5" pY="0.5" oX="115" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_19_ 6" x="1602" y="0" w="105" h="148" pX="0.5" pY="0.5" oX="130" oY="130" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_20_ 6" x="1344" y="0" w="106" h="144" pX="0.5" pY="0.5" oX="130" oY="132" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_21_ 6" x="934" y="0" w="106" h="142" pX="0.5" pY="0.5" oX="130" oY="133" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_22_ 7" x="719" y="140" w="97" h="160" pX="0.5" pY="0.5" oX="137" oY="117" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_23_ 7" x="511" y="140" w="96" h="159" pX="0.5" pY="0.5" oX="137" oY="118" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Critical HP_24_ 7" x="102" y="135" w="96" h="158" pX="0.5" pY="0.5" oX="137" oY="119" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Dead_01_ 0" x="3747" y="331" w="182" h="184" pX="0.5" pY="0.5" oX="111" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Dead_02_ 1" x="391" y="0" w="237" h="140" pX="0.5" pY="0.5" oX="68" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Dead_03_ 2" x="0" y="0" w="238" h="135" pX="0.5" pY="0.5" oX="45" oY="131" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Dead_04_ 3" x="2526" y="155" w="182" h="169" pX="0.5" pY="0.5" oX="57" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Dead_05_ 4" x="1808" y="0" w="209" h="152" pX="0.5" pY="0.5" oX="79" oY="121" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Dead_06_ 5" x="3721" y="0" w="194" h="157" pX="0.5" pY="0.5" oX="53" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Dead_07_ 6" x="2763" y="0" w="194" h="156" pX="0.5" pY="0.5" oX="104" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Dead_08_ 7" x="2321" y="0" w="209" h="154" pX="0.5" pY="0.5" oX="61" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_01_ 0" x="2053" y="2123" w="136" h="222" pX="0.5" pY="0.5" oX="103" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_02_ 0" x="3473" y="1710" w="122" h="214" pX="0.5" pY="0.5" oX="114" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_03_ 0" x="2380" y="887" w="168" h="196" pX="0.5" pY="0.5" oX="75" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_04_ 1" x="1487" y="2108" w="147" h="221" pX="0.5" pY="0.5" oX="73" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_05_ 1" x="3311" y="1500" w="165" h="208" pX="0.5" pY="0.5" oX="73" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_06_ 1" x="2560" y="507" w="136" h="190" pX="0.5" pY="0.5" oX="103" oY="119" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_07_ 2" x="0" y="844" w="141" h="194" pX="0.5" pY="0.5" oX="143" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_08_ 2" x="2303" y="1083" w="166" h="201" pX="0.5" pY="0.5" oX="121" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_09_ 2" x="3780" y="2372" w="141" h="238" pX="0.5" pY="0.5" oX="115" oY="79" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_10_ 3" x="2793" y="509" w="145" h="190" pX="0.5" pY="0.5" oX="111" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_11_ 3" x="1239" y="1464" w="132" h="206" pX="0.5" pY="0.5" oX="115" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_12_ 3" x="3715" y="1504" w="167" h="209" pX="0.5" pY="0.5" oX="117" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_13_ 4" x="1218" y="1670" w="135" h="211" pX="0.5" pY="0.5" oX="91" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_14_ 4" x="2362" y="1490" w="153" h="207" pX="0.5" pY="0.5" oX="74" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_15_ 4" x="1573" y="1071" w="173" h="200" pX="0.5" pY="0.5" oX="69" oY="111" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_16_ 5" x="384" y="1657" w="138" h="210" pX="0.5" pY="0.5" oX="103" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_17_ 5" x="272" y="1045" w="130" h="199" pX="0.5" pY="0.5" oX="119" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_18_ 5" x="3166" y="701" w="151" h="193" pX="0.5" pY="0.5" oX="111" oY="116" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_19_ 6" x="3767" y="1713" w="133" h="213" pX="0.5" pY="0.5" oX="121" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_20_ 6" x="3276" y="2139" w="128" h="225" pX="0.5" pY="0.5" oX="115" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_21_ 6" x="2941" y="2361" w="149" h="236" pX="0.5" pY="0.5" oX="100" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_22_ 7" x="3107" y="510" w="139" h="190" pX="0.5" pY="0.5" oX="127" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_23_ 7" x="2469" y="1085" w="158" h="201" pX="0.5" pY="0.5" oX="129" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Evade_24_ 7" x="2713" y="1289" w="179" h="204" pX="0.5" pY="0.5" oX="110" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_01_ 0" x="2307" y="2127" w="151" h="223" pX="0.5" pY="0.5" oX="88" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_02_ 0" x="1751" y="2117" w="141" h="221" pX="0.5" pY="0.5" oX="122" oY="67" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_03_ 0" x="3090" y="2362" w="149" h="236" pX="0.5" pY="0.5" oX="130" oY="54" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_04_ 1" x="1892" y="2117" w="161" h="221" pX="0.5" pY="0.5" oX="57" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_05_ 1" x="2515" y="1492" w="170" h="207" pX="0.5" pY="0.5" oX="84" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_06_ 1" x="123" y="2295" w="142" h="227" pX="0.5" pY="0.5" oX="132" oY="76" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_07_ 2" x="2627" y="1087" w="158" h="201" pX="0.5" pY="0.5" oX="145" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_08_ 2" x="1047" y="1669" w="171" h="210" pX="0.5" pY="0.5" oX="115" oY="80" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_09_ 2" x="2608" y="2588" w="144" h="257" pX="0.5" pY="0.5" oX="91" oY="36" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_10_ 3" x="2388" y="695" w="162" h="192" pX="0.5" pY="0.5" oX="111" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_11_ 3" x="3522" y="2608" w="138" h="265" pX="0.5" pY="0.5" oX="102" oY="42" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_12_ 3" x="3371" y="2606" w="151" h="264" pX="0.5" pY="0.5" oX="83" oY="51" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_13_ 4" x="2467" y="1699" w="197" h="211" pX="0.5" pY="0.5" oX="30" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_14_ 4" x="920" y="1255" w="150" h="203" pX="0.5" pY="0.5" oX="105" oY="76" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_15_ 4" x="1070" y="1260" w="184" h="203" pX="0.5" pY="0.5" oX="118" oY="70" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_16_ 5" x="1515" y="2329" w="119" h="231" pX="0.5" pY="0.5" oX="117" oY="72" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_17_ 5" x="1454" y="2560" w="135" h="251" pX="0.5" pY="0.5" oX="110" oY="64" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_18_ 5" x="2893" y="2597" w="104" h="258" pX="0.5" pY="0.5" oX="149" oY="61" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_19_ 6" x="120" y="2522" w="116" h="240" pX="0.5" pY="0.5" oX="127" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_20_ 6" x="2327" y="1909" w="140" h="218" pX="0.5" pY="0.5" oX="121" oY="75" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_21_ 6" x="2997" y="2598" w="110" h="260" pX="0.5" pY="0.5" oX="117" oY="37" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_22_ 7" x="3434" y="513" w="202" h="190" pX="0.5" pY="0.5" oX="127" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_23_ 7" x="3921" y="2372" w="154" h="238" pX="0.5" pY="0.5" oX="109" oY="49" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Get Hit_24_ 7" x="2133" y="2582" w="188" h="254" pX="0.5" pY="0.5" oX="61" oY="45" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_01_ 0" x="2189" y="2124" w="118" h="224" pX="0.5" pY="0.5" oX="118" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_02_ 0" x="2802" y="2132" w="118" h="224" pX="0.5" pY="0.5" oX="118" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_03_ 0" x="2920" y="2135" w="118" h="224" pX="0.5" pY="0.5" oX="118" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_04_ 1" x="1254" y="1261" w="156" h="203" pX="0.5" pY="0.5" oX="70" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_05_ 1" x="1410" y="1270" w="156" h="203" pX="0.5" pY="0.5" oX="70" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_06_ 1" x="1566" y="1271" w="157" h="203" pX="0.5" pY="0.5" oX="69" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_07_ 2" x="141" y="848" w="150" h="194" pX="0.5" pY="0.5" oX="137" oY="86" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_08_ 2" x="3433" y="703" w="149" h="193" pX="0.5" pY="0.5" oX="138" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_09_ 2" x="2695" y="699" w="150" h="192" pX="0.5" pY="0.5" oX="138" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_10_ 3" x="543" y="855" w="117" h="195" pX="0.5" pY="0.5" oX="124" oY="78" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_11_ 3" x="974" y="860" w="116" h="195" pX="0.5" pY="0.5" oX="125" oY="78" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_12_ 3" x="1090" y="861" w="116" h="195" pX="0.5" pY="0.5" oX="125" oY="78" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_13_ 4" x="265" y="2301" w="129" h="227" pX="0.5" pY="0.5" oX="111" oY="86" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_14_ 4" x="3771" y="2146" w="130" h="226" pX="0.5" pY="0.5" oX="110" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_15_ 4" x="3901" y="2146" w="130" h="226" pX="0.5" pY="0.5" oX="110" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_16_ 5" x="2892" y="1290" w="152" h="204" pX="0.5" pY="0.5" oX="71" oY="80" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_17_ 5" x="3183" y="1294" w="152" h="204" pX="0.5" pY="0.5" oX="71" oY="80" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_18_ 5" x="245" y="1447" w="152" h="205" pX="0.5" pY="0.5" oX="71" oY="79" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_19_ 6" x="1428" y="1070" w="145" h="200" pX="0.5" pY="0.5" oX="140" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_20_ 6" x="1746" y="1075" w="145" h="200" pX="0.5" pY="0.5" oX="140" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_21_ 6" x="1891" y="1079" w="145" h="200" pX="0.5" pY="0.5" oX="140" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_22_ 7" x="1206" y="865" w="125" h="195" pX="0.5" pY="0.5" oX="124" oY="82" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_23_ 7" x="291" y="851" w="126" h="194" pX="0.5" pY="0.5" oX="124" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Idle_24_ 7" x="417" y="855" w="126" h="194" pX="0.5" pY="0.5" oX="124" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_01_ 0" x="3006" y="156" w="93" h="171" pX="0.5" pY="0.5" oX="131" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_02_ 0" x="2821" y="156" w="93" h="170" pX="0.5" pY="0.5" oX="131" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_03_ 0" x="2914" y="156" w="92" h="170" pX="0.5" pY="0.5" oX="131" oY="127" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_04_ 1" x="628" y="0" w="153" h="140" pX="0.5" pY="0.5" oX="87" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_05_ 1" x="781" y="0" w="153" h="140" pX="0.5" pY="0.5" oX="87" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_06_ 1" x="238" y="0" w="153" h="139" pX="0.5" pY="0.5" oX="87" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_07_ 2" x="1450" y="0" w="152" h="145" pX="0.5" pY="0.5" oX="137" oY="119" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_08_ 2" x="1192" y="0" w="152" h="143" pX="0.5" pY="0.5" oX="137" oY="121" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_09_ 2" x="1040" y="0" w="152" h="142" pX="0.5" pY="0.5" oX="137" oY="122" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_10_ 3" x="1588" y="148" w="84" h="167" pX="0.5" pY="0.5" oX="152" oY="82" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_11_ 3" x="1924" y="152" w="83" h="167" pX="0.5" pY="0.5" oX="153" oY="82" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_12_ 3" x="2007" y="154" w="83" h="167" pX="0.5" pY="0.5" oX="153" oY="82" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_13_ 4" x="2957" y="0" w="133" h="156" pX="0.5" pY="0.5" oX="105" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_14_ 4" x="3090" y="0" w="132" h="156" pX="0.5" pY="0.5" oX="106" oY="109" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_15_ 4" x="3222" y="0" w="131" h="156" pX="0.5" pY="0.5" oX="107" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_16_ 5" x="1236" y="144" w="117" h="162" pX="0.5" pY="0.5" oX="122" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_17_ 5" x="1353" y="145" w="118" h="163" pX="0.5" pY="0.5" oX="121" oY="82" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_18_ 5" x="1471" y="145" w="117" h="163" pX="0.5" pY="0.5" oX="121" oY="82" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_19_ 6" x="1021" y="142" w="111" h="161" pX="0.5" pY="0.5" oX="130" oY="124" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_20_ 6" x="607" y="140" w="112" h="159" pX="0.5" pY="0.5" oX="130" oY="126" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_21_ 6" x="3915" y="0" w="112" h="157" pX="0.5" pY="0.5" oX="130" oY="128" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_22_ 7" x="3353" y="0" w="131" h="156" pX="0.5" pY="0.5" oX="140" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_23_ 7" x="3484" y="0" w="130" h="156" pX="0.5" pY="0.5" oX="140" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Rest_24_ 7" x="2634" y="0" w="129" h="155" pX="0.5" pY="0.5" oX="140" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_01_ 0" x="2089" y="1693" w="115" h="212" pX="0.5" pY="0.5" oX="114" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_02_ 0" x="766" y="1873" w="129" h="215" pX="0.5" pY="0.5" oX="115" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_03_ 0" x="2101" y="1485" w="136" h="208" pX="0.5" pY="0.5" oX="113" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_04_ 0" x="516" y="1050" w="143" h="199" pX="0.5" pY="0.5" oX="118" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_05_ 0" x="3021" y="1496" w="157" h="208" pX="0.5" pY="0.5" oX="121" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_06_ 0" x="3044" y="1292" w="139" h="204" pX="0.5" pY="0.5" oX="112" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_07_ 0" x="231" y="1861" w="129" h="214" pX="0.5" pY="0.5" oX="115" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_08_ 0" x="125" y="1240" w="122" h="203" pX="0.5" pY="0.5" oX="116" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_09_ 1" x="2151" y="322" w="166" h="182" pX="0.5" pY="0.5" oX="87" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_10_ 1" x="1348" y="308" w="187" h="180" pX="0.5" pY="0.5" oX="62" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_11_ 1" x="0" y="470" w="174" h="184" pX="0.5" pY="0.5" oX="62" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_12_ 1" x="599" y="479" w="175" h="185" pX="0.5" pY="0.5" oX="69" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_13_ 1" x="3636" y="515" w="164" h="190" pX="0.5" pY="0.5" oX="84" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_14_ 1" x="2951" y="327" w="175" h="183" pX="0.5" pY="0.5" oX="65" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_15_ 1" x="843" y="669" w="153" h="191" pX="0.5" pY="0.5" oX="67" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_16_ 1" x="174" y="474" w="186" h="184" pX="0.5" pY="0.5" oX="83" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_17_ 2" x="2036" y="1080" w="150" h="200" pX="0.5" pY="0.5" oX="106" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_18_ 2" x="774" y="481" w="181" h="185" pX="0.5" pY="0.5" oX="119" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_19_ 2" x="2317" y="323" w="196" h="182" pX="0.5" pY="0.5" oX="99" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_20_ 2" x="144" y="658" w="195" h="190" pX="0.5" pY="0.5" oX="87" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_21_ 2" x="955" y="483" w="200" h="186" pX="0.5" pY="0.5" oX="91" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_22_ 2" x="1155" y="484" w="188" h="186" pX="0.5" pY="0.5" oX="105" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_23_ 2" x="1459" y="683" w="141" h="192" pX="0.5" pY="0.5" oX="131" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_24_ 2" x="763" y="2091" w="170" h="220" pX="0.5" pY="0.5" oX="90" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_25_ 3" x="801" y="2541" w="116" h="242" pX="0.5" pY="0.5" oX="134" oY="81" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_26_ 3" x="3038" y="2137" w="124" h="224" pX="0.5" pY="0.5" oX="125" oY="80" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_27_ 3" x="3107" y="2598" w="127" h="261" pX="0.5" pY="0.5" oX="120" oY="57" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_28_ 3" x="3918" y="2610" w="132" h="267" pX="0.5" pY="0.5" oX="111" oY="52" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_29_ 3" x="1861" y="2570" w="143" h="255" pX="0.5" pY="0.5" oX="95" oY="63" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_30_ 3" x="3234" y="2601" w="137" h="260" pX="0.5" pY="0.5" oX="111" oY="56" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_31_ 3" x="0" y="1853" w="108" h="214" pX="0.5" pY="0.5" oX="130" oY="79" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_32_ 3" x="690" y="2539" w="111" h="241" pX="0.5" pY="0.5" oX="129" oY="77" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_33_ 4" x="3913" y="516" w="177" h="190" pX="0.5" pY="0.5" oX="74" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_34_ 4" x="3427" y="896" w="148" h="197" pX="0.5" pY="0.5" oX="89" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_35_ 4" x="522" y="1659" w="130" h="210" pX="0.5" pY="0.5" oX="101" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_36_ 4" x="652" y="1661" w="138" h="210" pX="0.5" pY="0.5" oX="102" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_37_ 4" x="3882" y="1504" w="136" h="209" pX="0.5" pY="0.5" oX="103" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_38_ 4" x="360" y="1867" w="146" h="214" pX="0.5" pY="0.5" oX="96" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_39_ 4" x="660" y="857" w="145" h="194" pX="0.5" pY="0.5" oX="72" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_40_ 4" x="1975" y="322" w="176" h="181" pX="0.5" pY="0.5" oX="80" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_41_ 5" x="3404" y="2143" w="122" h="225" pX="0.5" pY="0.5" oX="124" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_42_ 5" x="790" y="1662" w="119" h="211" pX="0.5" pY="0.5" oX="116" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_43_ 5" x="2458" y="2128" w="164" h="222" pX="0.5" pY="0.5" oX="69" oY="82" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_44_ 5" x="933" y="2093" w="179" h="220" pX="0.5" pY="0.5" oX="62" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_45_ 5" x="1353" y="1680" w="175" h="210" pX="0.5" pY="0.5" oX="72" oY="86" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_46_ 5" x="798" y="1054" w="174" h="199" pX="0.5" pY="0.5" oX="69" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_47_ 5" x="1528" y="1682" w="128" h="211" pX="0.5" pY="0.5" oX="107" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_48_ 5" x="1881" y="2338" w="138" h="232" pX="0.5" pY="0.5" oX="110" oY="82" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_49_ 6" x="1201" y="1881" w="122" h="216" pX="0.5" pY="0.5" oX="118" oY="105" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_50_ 6" x="397" y="1452" w="141" h="205" pX="0.5" pY="0.5" oX="128" oY="106" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_51_ 6" x="3254" y="328" w="187" h="183" pX="0.5" pY="0.5" oX="114" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_52_ 6" x="3582" y="705" w="196" h="193" pX="0.5" pY="0.5" oX="104" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_53_ 6" x="3575" y="898" w="202" h="197" pX="0.5" pY="0.5" oX="102" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_54_ 6" x="2109" y="885" w="173" h="195" pX="0.5" pY="0.5" oX="113" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_55_ 6" x="108" y="1857" w="123" h="215" pX="0.5" pY="0.5" oX="130" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_56_ 6" x="506" y="1869" w="134" h="214" pX="0.5" pY="0.5" oX="117" oY="103" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_57_ 7" x="972" y="1056" w="156" h="199" pX="0.5" pY="0.5" oX="111" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_58_ 7" x="2548" y="889" w="143" h="196" pX="0.5" pY="0.5" oX="123" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_59_ 7" x="3932" y="1926" w="140" h="220" pX="0.5" pY="0.5" oX="127" oY="85" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_60_ 7" x="700" y="2311" w="159" h="228" pX="0.5" pY="0.5" oX="119" oY="83" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_61_ 7" x="1050" y="2555" w="143" h="243" pX="0.5" pY="0.5" oX="121" oY="70" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_62_ 7" x="2988" y="1917" w="153" h="218" pX="0.5" pY="0.5" oX="123" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_63_ 7" x="3068" y="1090" w="116" h="202" pX="0.5" pY="0.5" oX="140" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Run_64_ 7" x="1656" y="1685" w="161" h="211" pX="0.5" pY="0.5" oX="107" oY="84" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_01_ 0" x="3900" y="1097" w="145" h="202" pX="0.5" pY="0.5" oX="87" oY="104" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_02_ 0" x="1820" y="501" w="145" h="188" pX="0.5" pY="0.5" oX="86" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_03_ 0" x="801" y="1456" w="115" h="206" pX="0.5" pY="0.5" oX="94" oY="133" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_04_ 1" x="3317" y="701" w="116" h="194" pX="0.5" pY="0.5" oX="126" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_05_ 1" x="3778" y="705" w="120" h="193" pX="0.5" pY="0.5" oX="115" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_06_ 1" x="1608" y="499" w="212" h="186" pX="0.5" pY="0.5" oX="9" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_07_ 2" x="3443" y="1924" w="111" h="219" pX="0.5" pY="0.5" oX="117" oY="99" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_08_ 2" x="2237" y="1488" w="125" h="208" pX="0.5" pY="0.5" oX="122" oY="110" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_09_ 2" x="3386" y="156" w="219" h="172" pX="0.5" pY="0.5" oX="127" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_10_ 3" x="2785" y="1088" w="137" h="201" pX="0.5" pY="0.5" oX="131" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_11_ 3" x="3141" y="1919" w="135" h="218" pX="0.5" pY="0.5" oX="133" oY="74" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_12_ 3" x="3660" y="2608" w="104" h="266" pX="0.5" pY="0.5" oX="155" oY="25" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_13_ 4" x="538" y="1454" w="134" h="205" pX="0.5" pY="0.5" oX="80" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_14_ 4" x="1331" y="866" w="119" h="195" pX="0.5" pY="0.5" oX="95" oY="108" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_15_ 4" x="2130" y="504" w="162" h="188" pX="0.5" pY="0.5" oX="55" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_16_ 5" x="2691" y="891" w="133" h="196" pX="0.5" pY="0.5" oX="121" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_17_ 5" x="2895" y="1494" w="126" h="208" pX="0.5" pY="0.5" oX="113" oY="77" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_18_ 5" x="859" y="2313" w="172" h="228" pX="0.5" pY="0.5" oX="59" oY="54" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_19_ 6" x="1817" y="1689" w="133" h="211" pX="0.5" pY="0.5" oX="105" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_20_ 6" x="3126" y="327" w="128" h="183" pX="0.5" pY="0.5" oX="116" oY="120" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_21_ 6" x="3099" y="156" w="186" h="171" pX="0.5" pY="0.5" oX="117" oY="140" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_22_ 7" x="1723" y="1275" w="129" h="203" pX="0.5" pY="0.5" oX="145" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_23_ 7" x="0" y="1644" w="115" h="209" pX="0.5" pY="0.5" oX="149" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Use Skill_24_ 7" x="355" y="2534" w="166" h="238" pX="0.5" pY="0.5" oX="147" oY="61" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_01_ 0" x="3162" y="2137" w="114" h="225" pX="0.5" pY="0.5" oX="123" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_02_ 0" x="1155" y="2325" w="117" h="230" pX="0.5" pY="0.5" oX="123" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_03_ 0" x="0" y="2518" w="120" h="239" pX="0.5" pY="0.5" oX="124" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_04_ 0" x="1634" y="2335" w="113" h="232" pX="0.5" pY="0.5" oX="123" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_05_ 0" x="2153" y="2348" w="112" h="233" pX="0.5" pY="0.5" oX="124" oY="98" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_06_ 0" x="0" y="2292" w="123" h="226" pX="0.5" pY="0.5" oX="111" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_07_ 0" x="3526" y="2145" w="107" h="225" pX="0.5" pY="0.5" oX="125" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_08_ 0" x="2206" y="1907" w="121" h="217" pX="0.5" pY="0.5" oX="113" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_09_ 1" x="0" y="654" w="144" h="190" pX="0.5" pY="0.5" oX="100" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_10_ 1" x="3898" y="706" w="139" h="193" pX="0.5" pY="0.5" oX="104" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_11_ 1" x="2256" y="693" w="132" h="192" pX="0.5" pY="0.5" oX="90" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_12_ 1" x="2845" y="700" w="147" h="192" pX="0.5" pY="0.5" oX="72" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_13_ 1" x="2550" y="697" w="145" h="192" pX="0.5" pY="0.5" oX="90" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_14_ 1" x="996" y="669" w="122" h="191" pX="0.5" pY="0.5" oX="111" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_15_ 1" x="1118" y="670" w="118" h="191" pX="0.5" pY="0.5" oX="113" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_16_ 1" x="1343" y="488" w="122" h="187" pX="0.5" pY="0.5" oX="108" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_17_ 2" x="3955" y="899" w="131" h="198" pX="0.5" pY="0.5" oX="114" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_18_ 2" x="1600" y="685" w="173" h="191" pX="0.5" pY="0.5" oX="111" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_19_ 2" x="805" y="860" w="169" h="194" pX="0.5" pY="0.5" oX="129" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_20_ 2" x="1465" y="496" w="143" h="187" pX="0.5" pY="0.5" oX="137" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_21_ 2" x="1773" y="689" w="170" h="191" pX="0.5" pY="0.5" oX="116" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_22_ 2" x="3178" y="1498" w="133" h="208" pX="0.5" pY="0.5" oX="118" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_23_ 2" x="1371" y="1473" w="115" h="206" pX="0.5" pY="0.5" oX="124" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_24_ 2" x="3476" y="1502" w="123" h="208" pX="0.5" pY="0.5" oX="121" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_25_ 3" x="1634" y="2112" w="117" h="223" pX="0.5" pY="0.5" oX="121" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_26_ 3" x="503" y="2083" w="115" h="221" pX="0.5" pY="0.5" oX="121" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_27_ 3" x="1604" y="1474" w="110" h="208" pX="0.5" pY="0.5" oX="129" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_28_ 3" x="3981" y="1299" w="109" h="205" pX="0.5" pY="0.5" oX="129" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_29_ 3" x="3554" y="1926" w="111" h="219" pX="0.5" pY="0.5" oX="129" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_30_ 3" x="1650" y="1896" w="111" h="216" pX="0.5" pY="0.5" oX="129" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_31_ 3" x="3184" y="1091" w="107" h="202" pX="0.5" pY="0.5" oX="129" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_32_ 3" x="1761" y="1900" w="109" h="216" pX="0.5" pY="0.5" oX="128" oY="88" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_33_ 4" x="0" y="1038" w="126" h="198" pX="0.5" pY="0.5" oX="100" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_34_ 4" x="2922" y="1089" w="146" h="201" pX="0.5" pY="0.5" oX="81" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_35_ 4" x="1496" y="1893" w="154" h="215" pX="0.5" pY="0.5" oX="78" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_36_ 4" x="2204" y="1696" w="155" h="211" pX="0.5" pY="0.5" oX="82" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_37_ 4" x="231" y="1652" w="153" h="209" pX="0.5" pY="0.5" oX="80" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_38_ 4" x="2824" y="892" w="128" h="196" pX="0.5" pY="0.5" oX="99" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_39_ 4" x="1333" y="675" w="126" h="191" pX="0.5" pY="0.5" oX="97" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_40_ 4" x="1450" y="875" w="135" h="195" pX="0.5" pY="0.5" oX="90" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_41_ 5" x="3599" y="1504" w="116" h="208" pX="0.5" pY="0.5" oX="124" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_42_ 5" x="2359" y="1697" w="108" h="212" pX="0.5" pY="0.5" oX="127" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_43_ 5" x="402" y="1049" w="114" h="199" pX="0.5" pY="0.5" oX="115" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_44_ 5" x="2186" y="1081" w="117" h="200" pX="0.5" pY="0.5" oX="111" oY="87" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_45_ 5" x="0" y="1439" w="115" h="205" pX="0.5" pY="0.5" oX="117" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_46_ 5" x="3291" y="1092" w="110" h="202" pX="0.5" pY="0.5" oX="126" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_47_ 5" x="2952" y="893" w="122" h="196" pX="0.5" pY="0.5" oX="117" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_48_ 5" x="1852" y="1279" w="125" h="203" pX="0.5" pY="0.5" oX="118" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_49_ 6" x="1272" y="2325" w="114" h="230" pX="0.5" pY="0.5" oX="118" oY="97" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_50_ 6" x="3665" y="1926" w="119" h="219" pX="0.5" pY="0.5" oX="126" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_51_ 6" x="1386" y="2329" w="129" h="230" pX="0.5" pY="0.5" oX="135" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_52_ 6" x="3900" y="1713" w="144" h="213" pX="0.5" pY="0.5" oX="135" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_53_ 6" x="1031" y="2318" w="124" h="229" pX="0.5" pY="0.5" oX="128" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_54_ 6" x="2891" y="1702" w="118" h="212" pX="0.5" pY="0.5" oX="117" oY="94" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_55_ 6" x="2084" y="1907" w="122" h="216" pX="0.5" pY="0.5" oX="121" oY="95" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_56_ 6" x="640" y="1871" w="126" h="214" pX="0.5" pY="0.5" oX="117" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_57_ 7" x="115" y="1648" w="116" h="209" pX="0.5" pY="0.5" oX="127" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_58_ 7" x="115" y="1443" w="130" h="205" pX="0.5" pY="0.5" oX="124" oY="93" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_59_ 7" x="3305" y="895" w="122" h="197" pX="0.5" pY="0.5" oX="131" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_60_ 7" x="3074" y="894" w="122" h="196" pX="0.5" pY="0.5" oX="124" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_61_ 7" x="1486" y="1474" w="118" h="206" pX="0.5" pY="0.5" oX="131" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_62_ 7" x="1977" y="1280" w="128" h="203" pX="0.5" pY="0.5" oX="133" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_63_ 7" x="2282" y="885" w="98" h="196" pX="0.5" pY="0.5" oX="140" oY="92" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Walk_64_ 7" x="672" y="1456" w="129" h="205" pX="0.5" pY="0.5" oX="135" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_01_ 0" x="3441" y="328" w="96" h="184" pX="0.5" pY="0.5" oX="125" oY="127" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_02_ 0" x="2696" y="508" w="97" h="190" pX="0.5" pY="0.5" oX="129" oY="122" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_03_ 0" x="3929" y="331" w="101" h="185" pX="0.5" pY="0.5" oX="130" oY="125" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_04_ 1" x="3196" y="894" w="109" h="197" pX="0.5" pY="0.5" oX="94" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_05_ 1" x="3800" y="515" w="113" h="190" pX="0.5" pY="0.5" oX="91" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_06_ 1" x="3537" y="329" w="106" h="184" pX="0.5" pY="0.5" oX="96" oY="113" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_07_ 2" x="1132" y="143" w="104" h="161" pX="0.5" pY="0.5" oX="154" oY="117" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_08_ 2" x="2203" y="154" w="104" h="168" pX="0.5" pY="0.5" oX="158" oY="107" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_09_ 2" x="3912" y="157" w="99" h="174" pX="0.5" pY="0.5" oX="158" oY="101" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_10_ 3" x="1872" y="319" w="103" h="182" pX="0.5" pY="0.5" oX="129" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_11_ 3" x="1535" y="315" w="100" h="181" pX="0.5" pY="0.5" oX="129" oY="91" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_12_ 3" x="2513" y="324" w="98" h="182" pX="0.5" pY="0.5" oX="129" oY="90" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_13_ 4" x="2707" y="326" w="106" h="182" pX="0.5" pY="0.5" oX="104" oY="115" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_14_ 4" x="1071" y="304" w="106" h="179" pX="0.5" pY="0.5" oX="108" oY="117" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_15_ 4" x="0" y="293" w="100" h="174" pX="0.5" pY="0.5" oX="123" oY="123" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_16_ 5" x="1236" y="670" w="97" h="195" pX="0.5" pY="0.5" oX="128" oY="89" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_17_ 5" x="2292" y="505" w="99" h="188" pX="0.5" pY="0.5" oX="122" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_18_ 5" x="3643" y="330" w="104" h="184" pX="0.5" pY="0.5" oX="113" oY="100" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_19_ 6" x="100" y="293" w="93" h="177" pX="0.5" pY="0.5" oX="133" oY="127" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_20_ 6" x="2611" y="324" w="96" h="183" pX="0.5" pY="0.5" oX="137" oY="117" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_21_ 6" x="537" y="299" w="99" h="176" pX="0.5" pY="0.5" oX="142" oY="115" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_22_ 7" x="2307" y="154" w="106" h="168" pX="0.5" pY="0.5" oX="143" oY="102" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_23_ 7" x="3605" y="157" w="102" h="172" pX="0.5" pY="0.5" oX="143" oY="96" oW="350" oH="350"/>
+  <sprite n="Giant_Fire_Woozy_24_ 7" x="636" y="300" w="93" h="177" pX="0.5" pY="0.5" oX="137" oY="91" oW="350" oH="350"/>
+</TextureAtlas>

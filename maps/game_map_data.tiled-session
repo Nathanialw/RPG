@@ -3,28 +3,532 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/untitled3.tmx",
     "expandedProjectPaths": [
-        ".",
-        "sprite_sheets/environment",
-        "spawn_points/clutter/trees",
-        "spawn_points",
-        "sprite_sheets/ground_tiles",
-        "spawn_points/clutter",
-        "spawn_points/buildings/castle",
-        "spawn_points/buildings/houses",
         "sprite_sheets/buildings/houses",
-        "spawn_points/buildings",
-        "sprite_sheets",
+        "sprite_sheets/ground_tiles",
+        ".",
         "sprite_sheets/environment/trees",
         "sprite_sheets/environment/trees/broken_trees",
+        "sprite_sheets/environment",
+        "spawn_points/clutter",
+        "spawn_points/buildings/houses",
+        "spawn_points/buildings/castle",
+        "spawn_points/clutter/trees",
+        "spawn_points/buildings",
+        "sprite_sheets",
         "sprite_sheets/castle",
+        "spawn_points",
         "spawn_points/clutter/trees/broken_trees",
         "spawn_points/unit_spawns",
         "sprite_sheets/buildings"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/castle/Medieval_Expansion_Castle1_56.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/castle/Medieval_Expansion_Castle1_7.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/environment/trees/broken_trees/BrokenTree22_5.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/environment/trees/tree_01_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/environment/trees/tree_01_01.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/environment/trees/tree_01_02.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/environment/trees/tree_01_03.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/environment/trees/tree_01_04.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/environment/trees/tree_01_05.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/environment/trees/tree_01_06.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/environment/trees/tree_01_07.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/ground_tiles/Medieval_Expansion_GroundDecals_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/ground_tiles/grassland_tiles_x2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Bow_Hobgoblin_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/Daemon_Bone.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/Daemon_Hounds.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/Daemon_Howler.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/Daemon_InfernalGreater.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/Daemon_InfernalWingless.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/Daemon_PitLord.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/HellChicken.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/HellSpawn_Black_Brown.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/HellSpawn_Gray_Red.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/HellWarden.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/Demons/Male_DaemonKnight.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/spiders/GiantSpider_Black.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/spiders/GiantSpider_BlueSpotted.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/spiders/GiantSpider_Poison.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/spiders/GiantSpider_Striped.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/spiders/RTP_GiantSpider.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/wolves/RTP_GrayWolf.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/wolves/Wolf_Arctic.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/wolves/Wolf_Black.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/wolves/Wolf_Dire.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/animals/hostile/wolves/Wolf_Timber.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/armoured_skeleton_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/cow_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/demon.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/demon_footman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/dwarves/slaves_dwarf_0.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/ghoul_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblin_high_shaman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblin_high_shaman_01.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblin_shaman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblin_spearman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblin_spearman_01.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblin_spearman_02.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblin_spearman_03.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblins/goblin_bases_1-6.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblins/goblin_bases_7-12.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/goblins/goblin_basic.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/grey_werebear_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/knight_plate_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/minotaur_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/monsters/dragons/red_dragon.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/monsters/dragons/wyvern_gray.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/monsters/giants/giant_air.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/monsters/giants/giant_fire.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/monsters/giants/uruk_crusher.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/monsters/giants/uruk_soldier.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/monsters/ogres/RTP_Ogre.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/monsters/trolls/Troll.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/ogre_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/orc_archer_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/orc_elite_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/orc_heavy_01.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/orc_regular_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/rock_golem_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/skeleton_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/skeleton_mage_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/skeleton_occultist_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/townsfolk/Medieval_Townfolk_Child_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/townsfolk/Medieval_Townfolk_Female_Merchant.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/troll_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/warrior_axe.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/werewolf_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/white_woman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/wolf_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/wolf_riders.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/sprite_sheets/units/zombie_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/untitled3 (copy).tmx": {
+            "scale": 0.33,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 24575.757575757576,
+                "y": 12251.515151515152
+            }
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/untitled3.tmx": {
+            "scale": 0.04364013671875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 24564.542657342656,
+                "y": 12236.44195804196
+            }
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/castle/Medieval_Expansion_Castle1_56.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/castle/Medieval_Expansion_Castle1_7.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/environment/trees/broken_trees/BrokenTree22_5.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/environment/trees/tree_01_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/environment/trees/tree_01_01.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/environment/trees/tree_01_02.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/environment/trees/tree_01_03.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/environment/trees/tree_01_04.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/environment/trees/tree_01_05.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/environment/trees/tree_01_06.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/environment/trees/tree_01_07.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/ground_tiles/Medieval_Expansion_GroundDecals_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/ground_tiles/grassland_tiles_x2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Bow_Hobgoblin_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/Daemon_Bone.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/Daemon_Hounds.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/Daemon_Howler.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/Daemon_InfernalGreater.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/Daemon_InfernalWingless.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/Daemon_PitLord.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/HellChicken.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/HellSpawn_Black_Brown.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/HellSpawn_Gray_Red.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/HellWarden.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/Demons/Male_DaemonKnight.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/spiders/GiantSpider_Black.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/spiders/GiantSpider_BlueSpotted.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/spiders/GiantSpider_Poison.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/spiders/GiantSpider_Striped.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/spiders/RTP_GiantSpider.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/wolves/RTP_GrayWolf.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/wolves/Wolf_Arctic.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/wolves/Wolf_Black.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/wolves/Wolf_Dire.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/animals/hostile/wolves/Wolf_Timber.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/armoured_skeleton_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/cow_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/dwarves/slaves_dwarf_0.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblin_high_shaman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblin_high_shaman_01.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblin_shaman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblin_spearman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblin_spearman_01.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblin_spearman_02.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblin_spearman_03.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblins/goblin_bases_1-6.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblins/goblin_bases_7-12.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/goblins/goblin_basic.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/grey_werebear_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/minotaur_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/monsters/dragons/red_dragon.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/monsters/dragons/wyvern_gray.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/monsters/giants/giant_air.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/monsters/giants/giant_fire.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/monsters/giants/uruk_crusher.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/monsters/giants/uruk_soldier.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/monsters/ogres/RTP_Ogre.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/monsters/trolls/Troll.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/orc_archer_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/orc_elite_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/orc_heavy_01.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/orc_regular_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/rock_golem_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/skeleton_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/skeleton_mage_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/skeleton_occultist_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/townsfolk/Medieval_Townfolk_Child_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/townsfolk/Medieval_Townfolk_Female_Merchant.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/troll_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/warrior_axe.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/werewolf_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/white_woman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/wolf_riders.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/sprite_sheets/units/zombie_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/untitled3.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 24575.333333333332,
+                "y": 12256
+            }
+        },
         "rule1.tmx": {
             "scale": 1.5,
             "selectedLayer": 1,
@@ -131,6 +635,69 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "sprite_sheets/units/Demons/Daemon_Bone.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_Hounds.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_Howler.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_InfernalGreater.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_InfernalWingless.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_PitLord.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/HellChicken.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/HellSpawn_Black_Brown.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/HellSpawn_Gray_Red.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/HellWarden.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Male_DaemonKnight.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/GiantSpider_Black.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/GiantSpider_BlueSpotted.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/GiantSpider_Poison.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/GiantSpider_Striped.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/RTP_GiantSpider.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/RTP_GrayWolf.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/Wolf_Arctic.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/Wolf_Black.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/Wolf_Dire.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/Wolf_Timber.tsx": {
+            "scaleInDock": 1
+        },
         "sprite_sheets/units/armoured_skeleton_00.tsx": {
             "dynamicWrapping": false,
             "scaleInDock": 1,
@@ -150,6 +717,9 @@
             "dynamicWrapping": true,
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "sprite_sheets/units/dwarves/slaves_dwarf_0.tsx": {
+            "scaleInDock": 1
         },
         "sprite_sheets/units/footman.tsx": {
             "dynamicWrapping": false,
@@ -189,6 +759,15 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "sprite_sheets/units/goblins/goblin_bases_1-6.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/goblins/goblin_bases_7-12.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/goblins/goblin_basic.tsx": {
+            "scaleInDock": 1
+        },
         "sprite_sheets/units/grey_werebear_00.tsx": {
             "scaleInDock": 1
         },
@@ -201,6 +780,34 @@
             "scaleInDock": 1
         },
         "sprite_sheets/units/minotaur_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/Troll.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "sprite_sheets/units/monsters/dragons/red_dragon.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/dragons/wyvern_gray.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/giants/giant_air.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/giants/giant_fire.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/giants/uruk_crusher.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/giants/uruk_soldier.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/ogres/RTP_Ogre.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/trolls/Troll.tsx": {
             "scaleInDock": 1
         },
         "sprite_sheets/units/ogre_00.tsx": {
@@ -228,6 +835,12 @@
             "scaleInDock": 1
         },
         "sprite_sheets/units/skeleton_occultist_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/townsfolk/Medieval_Townfolk_Child_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/townsfolk/Medieval_Townfolk_Female_Merchant.tsx": {
             "scaleInDock": 1
         },
         "sprite_sheets/units/troll_00.tsx": {
@@ -270,7 +883,7 @@
         },
         "untitled3.tmx": {
             "scale": 0.0625,
-            "selectedLayer": 3,
+            "selectedLayer": 0,
             "viewCenter": {
                 "x": 34848,
                 "y": 13216
@@ -287,22 +900,24 @@
     "map.tileWidth": 128,
     "map.width": 8,
     "openFiles": [
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/untitled3.tmx",
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/untitled3.tmx"
     ],
     "project": "",
     "property.type": "bool",
     "recentFiles": [
-        "sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx",
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/untitled3.tmx",
         "untitled3.tmx",
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/untitled3.tmx",
+        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/untitled3 (copy).tmx",
+        "sprite_sheets/units/monsters/Troll.tsx",
+        "sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx",
         "sprite_sheets/ground_tiles/grassland_tiles_x2.tsx",
         "sprite_sheets/ground_tiles/Medieval_Expansion_GroundDecals_1.tsx",
         "sprite_sheets/environment/trees/broken_trees/BrokenTree22_5.tsx",
         "sprite_sheets/environment/trees/tree_01_05.tsx",
         "sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx",
-        "sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx",
-        "sprite_sheets/castle/Medieval_Expansion_Castle1_56.tsx",
-        "sprite_sheets/castle/Medieval_Expansion_Castle1_7.tsx",
-        "sprite_sheets/castle/Medieval_Expansion_Castle1_1.tsx",
-        "rule1.tmx"
+        "sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

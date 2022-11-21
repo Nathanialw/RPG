@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="1979" height="2048" scale="1" format="RGBA8888">
+  <sprite n="Uruk_Crusher_Attack 1_01_ 0" x="942" y="1543" w="72" h="112" pX="0.5" pY="0.5" oX="83" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_02_ 0" x="441" y="580" w="69" h="129" pX="0.5" pY="0.5" oX="83" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_03_ 0" x="1155" y="1432" w="115" h="98" pX="0.5" pY="0.5" oX="36" oY="94" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_04_ 1" x="174" y="1426" w="72" h="117" pX="0.5" pY="0.5" oX="71" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_05_ 1" x="417" y="1299" w="76" h="118" pX="0.5" pY="0.5" oX="81" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_06_ 1" x="0" y="311" w="108" h="145" pX="0.5" pY="0.5" oX="28" oY="20" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_07_ 2" x="731" y="930" w="72" h="124" pX="0.5" pY="0.5" oX="70" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_08_ 2" x="1524" y="232" w="80" h="115" pX="0.5" pY="0.5" oX="56" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_09_ 2" x="1338" y="1197" w="113" h="117" pX="0.5" pY="0.5" oX="70" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_10_ 3" x="887" y="871" w="73" h="123" pX="0.5" pY="0.5" oX="64" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_11_ 3" x="622" y="1543" w="66" h="113" pX="0.5" pY="0.5" oX="67" oY="58" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_12_ 3" x="208" y="0" w="93" h="148" pX="0.5" pY="0.5" oX="69" oY="18" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_13_ 4" x="1017" y="1867" w="83" h="97" pX="0.5" pY="0.5" oX="68" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_14_ 4" x="715" y="1869" w="90" h="98" pX="0.5" pY="0.5" oX="68" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_15_ 4" x="324" y="441" w="121" h="139" pX="0.5" pY="0.5" oX="26" oY="27" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_16_ 5" x="71" y="1308" w="71" h="118" pX="0.5" pY="0.5" oX="63" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_17_ 5" x="234" y="1065" w="66" h="122" pX="0.5" pY="0.5" oX="75" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_18_ 5" x="208" y="148" w="85" h="147" pX="0.5" pY="0.5" oX="44" oY="19" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_19_ 6" x="1082" y="992" w="76" h="121" pX="0.5" pY="0.5" oX="70" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_20_ 6" x="597" y="139" w="69" h="134" pX="0.5" pY="0.5" oX="63" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_21_ 6" x="97" y="1543" w="76" h="114" pX="0.5" pY="0.5" oX="85" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_22_ 7" x="1222" y="1315" w="78" h="116" pX="0.5" pY="0.5" oX="61" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_23_ 7" x="1818" y="103" w="89" h="101" pX="0.5" pY="0.5" oX="49" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 1_24_ 7" x="234" y="1306" w="118" h="114" pX="0.5" pY="0.5" oX="59" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_01_ 0" x="1583" y="347" w="71" h="112" pX="0.5" pY="0.5" oX="83" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_02_ 0" x="108" y="303" w="85" h="145" pX="0.5" pY="0.5" oX="52" oY="17" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_03_ 0" x="1744" y="1359" w="65" h="106" pX="0.5" pY="0.5" oX="83" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_04_ 1" x="1354" y="1079" w="73" h="117" pX="0.5" pY="0.5" oX="77" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_05_ 1" x="0" y="679" w="102" h="133" pX="0.5" pY="0.5" oX="77" oY="15" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_06_ 1" x="0" y="596" w="137" h="83" pX="0.5" pY="0.5" oX="16" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_07_ 2" x="300" y="1060" w="72" h="122" pX="0.5" pY="0.5" oX="57" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_08_ 2" x="559" y="1417" w="95" h="116" pX="0.5" pY="0.5" oX="28" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_09_ 2" x="598" y="0" w="136" h="100" pX="0.5" pY="0.5" oX="48" oY="58" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_10_ 3" x="963" y="126" w="73" h="123" pX="0.5" pY="0.5" oX="57" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_11_ 3" x="1531" y="1049" w="85" h="114" pX="0.5" pY="0.5" oX="78" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_12_ 3" x="497" y="301" w="55" h="139" pX="0.5" pY="0.5" oX="71" oY="30" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_13_ 4" x="450" y="1870" w="83" h="97" pX="0.5" pY="0.5" oX="68" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_14_ 4" x="301" y="0" w="86" h="147" pX="0.5" pY="0.5" oX="68" oY="7" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_15_ 4" x="1625" y="695" w="111" h="99" pX="0.5" pY="0.5" oX="30" oY="90" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_16_ 5" x="1184" y="240" w="71" h="120" pX="0.5" pY="0.5" oX="63" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_17_ 5" x="1367" y="472" w="93" h="117" pX="0.5" pY="0.5" oX="89" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_18_ 5" x="692" y="541" w="102" h="129" pX="0.5" pY="0.5" oX="31" oY="32" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_19_ 6" x="803" y="1019" w="77" h="121" pX="0.5" pY="0.5" oX="76" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_20_ 6" x="231" y="441" w="93" h="139" pX="0.5" pY="0.5" oX="27" oY="25" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_21_ 6" x="1604" y="231" w="100" h="111" pX="0.5" pY="0.5" oX="74" oY="75" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_22_ 7" x="238" y="1543" w="77" h="114" pX="0.5" pY="0.5" oX="61" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_23_ 7" x="880" y="1115" w="77" h="119" pX="0.5" pY="0.5" oX="62" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Attack 2_24_ 7" x="0" y="940" w="112" h="126" pX="0.5" pY="0.5" oX="66" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_01_ 0" x="1767" y="1961" w="61" h="79" pX="0.5" pY="0.5" oX="70" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_02_ 0" x="1828" y="1887" w="61" h="79" pX="0.5" pY="0.5" oX="70" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_03_ 0" x="1044" y="1464" w="62" h="79" pX="0.5" pY="0.5" oX="69" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_04_ 1" x="72" y="1967" w="72" h="80" pX="0.5" pY="0.5" oX="58" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_05_ 1" x="144" y="1967" w="73" h="80" pX="0.5" pY="0.5" oX="57" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_06_ 1" x="1889" y="1854" w="73" h="81" pX="0.5" pY="0.5" oX="57" oY="59" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_07_ 2" x="0" y="1967" w="72" h="81" pX="0.5" pY="0.5" oX="77" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_08_ 2" x="1907" y="747" w="72" h="81" pX="0.5" pY="0.5" oX="77" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_09_ 2" x="1908" y="1272" w="71" h="81" pX="0.5" pY="0.5" oX="78" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_10_ 3" x="1680" y="1467" w="64" h="90" pX="0.5" pY="0.5" oX="77" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_11_ 3" x="1607" y="1163" w="64" h="90" pX="0.5" pY="0.5" oX="77" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_12_ 3" x="1359" y="1876" w="64" h="90" pX="0.5" pY="0.5" oX="77" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_13_ 4" x="1909" y="498" w="67" h="83" pX="0.5" pY="0.5" oX="64" oY="73" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_14_ 4" x="1909" y="664" w="67" h="83" pX="0.5" pY="0.5" oX="64" oY="73" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_15_ 4" x="1909" y="581" w="67" h="83" pX="0.5" pY="0.5" oX="64" oY="73" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_16_ 5" x="1907" y="828" w="72" h="81" pX="0.5" pY="0.5" oX="58" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_17_ 5" x="1902" y="1773" w="72" h="81" pX="0.5" pY="0.5" oX="58" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_18_ 5" x="1907" y="1002" w="72" h="82" pX="0.5" pY="0.5" oX="58" oY="59" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_19_ 6" x="1908" y="1430" w="71" h="77" pX="0.5" pY="0.5" oX="71" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_20_ 6" x="1908" y="1353" w="71" h="77" pX="0.5" pY="0.5" oX="71" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_21_ 6" x="1908" y="1507" w="71" h="77" pX="0.5" pY="0.5" oX="71" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_22_ 7" x="1491" y="1876" w="68" h="88" pX="0.5" pY="0.5" oX="72" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_23_ 7" x="1423" y="1876" w="68" h="88" pX="0.5" pY="0.5" oX="72" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Behavior_24_ 7" x="1638" y="1876" w="68" h="88" pX="0.5" pY="0.5" oX="72" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_01_ 0" x="1102" y="1655" w="72" h="108" pX="0.5" pY="0.5" oX="76" oY="59" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_02_ 0" x="1744" y="1465" w="66" h="106" pX="0.5" pY="0.5" oX="80" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_03_ 0" x="1736" y="651" w="77" h="103" pX="0.5" pY="0.5" oX="83" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_04_ 1" x="545" y="1179" w="84" h="119" pX="0.5" pY="0.5" oX="50" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_05_ 1" x="1463" y="0" w="75" h="116" pX="0.5" pY="0.5" oX="59" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_06_ 1" x="1678" y="1142" w="64" h="111" pX="0.5" pY="0.5" oX="70" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_07_ 2" x="955" y="1337" w="87" h="116" pX="0.5" pY="0.5" oX="70" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_08_ 2" x="1425" y="353" w="79" h="115" pX="0.5" pY="0.5" oX="70" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_09_ 2" x="755" y="1414" w="63" h="116" pX="0.5" pY="0.5" oX="70" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_10_ 3" x="805" y="129" w="73" h="129" pX="0.5" pY="0.5" oX="70" oY="30" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_11_ 3" x="0" y="1066" w="68" h="122" pX="0.5" pY="0.5" oX="71" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_12_ 3" x="1743" y="112" w="75" h="107" pX="0.5" pY="0.5" oX="60" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_13_ 4" x="1818" y="204" w="82" h="101" pX="0.5" pY="0.5" oX="70" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_14_ 4" x="372" y="1870" w="78" h="97" pX="0.5" pY="0.5" oX="74" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_15_ 4" x="1559" y="1876" w="79" h="88" pX="0.5" pY="0.5" oX="74" oY="66" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_16_ 5" x="158" y="812" w="71" h="128" pX="0.5" pY="0.5" oX="60" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_17_ 5" x="0" y="1188" w="77" h="120" pX="0.5" pY="0.5" oX="54" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_18_ 5" x="1056" y="1232" w="66" h="116" pX="0.5" pY="0.5" oX="66" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_19_ 6" x="758" y="1282" w="76" h="118" pX="0.5" pY="0.5" oX="73" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_20_ 6" x="1373" y="823" w="81" h="117" pX="0.5" pY="0.5" oX="73" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_21_ 6" x="1278" y="591" w="69" h="118" pX="0.5" pY="0.5" oX="72" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_22_ 7" x="349" y="1765" w="88" h="105" pX="0.5" pY="0.5" oX="61" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_23_ 7" x="436" y="1656" w="81" h="109" pX="0.5" pY="0.5" oX="61" oY="36" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Block_24_ 7" x="1816" y="1311" w="78" h="100" pX="0.5" pY="0.5" oX="61" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_01_ 0" x="1183" y="1866" w="83" h="97" pX="0.5" pY="0.5" oX="68" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_02_ 0" x="1816" y="1610" w="83" h="96" pX="0.5" pY="0.5" oX="68" oY="79" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_03_ 0" x="1723" y="1782" w="82" h="94" pX="0.5" pY="0.5" oX="68" oY="81" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_04_ 1" x="1816" y="620" w="93" h="101" pX="0.5" pY="0.5" oX="37" oY="66" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_05_ 1" x="1816" y="1511" w="92" h="99" pX="0.5" pY="0.5" oX="38" oY="68" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_06_ 1" x="623" y="1869" w="92" h="98" pX="0.5" pY="0.5" oX="38" oY="69" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_07_ 2" x="858" y="1763" w="98" h="105" pX="0.5" pY="0.5" oX="70" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_08_ 2" x="1114" y="1763" w="98" h="103" pX="0.5" pY="0.5" oX="70" oY="56" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_09_ 2" x="1810" y="1006" w="97" h="102" pX="0.5" pY="0.5" oX="70" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_10_ 3" x="493" y="1299" w="81" h="118" pX="0.5" pY="0.5" oX="68" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_11_ 3" x="246" y="1420" w="81" h="117" pX="0.5" pY="0.5" oX="68" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_12_ 3" x="391" y="1419" w="81" h="116" pX="0.5" pY="0.5" oX="68" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_13_ 4" x="1266" y="1876" w="93" h="82" pX="0.5" pY="0.5" oX="58" oY="79" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_14_ 4" x="1816" y="922" w="93" h="80" pX="0.5" pY="0.5" oX="58" oY="81" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_15_ 4" x="951" y="1464" w="93" h="79" pX="0.5" pY="0.5" oX="58" oY="82" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_16_ 5" x="1184" y="720" w="72" h="120" pX="0.5" pY="0.5" oX="55" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_17_ 5" x="330" y="1182" w="72" h="119" pX="0.5" pY="0.5" oX="56" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_18_ 5" x="1278" y="119" w="71" h="118" pX="0.5" pY="0.5" oX="57" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_19_ 6" x="858" y="1868" w="73" h="99" pX="0.5" pY="0.5" oX="77" oY="66" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_20_ 6" x="1736" y="1006" w="72" h="98" pX="0.5" pY="0.5" oX="77" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_21_ 6" x="299" y="1870" w="73" h="97" pX="0.5" pY="0.5" oX="76" oY="68" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_22_ 7" x="0" y="1870" w="100" h="97" pX="0.5" pY="0.5" oX="61" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_23_ 7" x="100" y="1870" w="100" h="96" pX="0.5" pY="0.5" oX="61" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Critical HP_24_ 7" x="200" y="1870" w="99" h="94" pX="0.5" pY="0.5" oX="61" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Dead_01_ 0" x="1625" y="923" w="109" h="111" pX="0.5" pY="0.5" oX="47" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Dead_02_ 1" x="387" y="83" w="144" h="77" pX="0.5" pY="0.5" oX="35" oY="82" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Dead_03_ 2" x="387" y="0" w="145" h="83" pX="0.5" pY="0.5" oX="24" oY="79" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Dead_04_ 3" x="1636" y="0" w="109" h="112" pX="0.5" pY="0.5" oX="44" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Dead_05_ 4" x="1385" y="1430" w="115" h="102" pX="0.5" pY="0.5" oX="60" oY="58" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Dead_06_ 5" x="441" y="709" w="122" h="97" pX="0.5" pY="0.5" oX="63" oY="91" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Dead_07_ 6" x="163" y="587" w="120" h="88" pX="0.5" pY="0.5" oX="18" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Dead_08_ 7" x="288" y="711" w="115" h="88" pX="0.5" pY="0.5" oX="22" oY="88" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_01_ 0" x="922" y="1655" w="72" h="108" pX="0.5" pY="0.5" oX="76" oY="59" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_02_ 0" x="1448" y="1743" w="84" h="103" pX="0.5" pY="0.5" oX="68" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_03_ 0" x="1813" y="1411" w="95" h="100" pX="0.5" pY="0.5" oX="56" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_04_ 1" x="1158" y="1080" w="84" h="119" pX="0.5" pY="0.5" oX="50" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_05_ 1" x="890" y="252" w="85" h="124" pX="0.5" pY="0.5" oX="63" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_06_ 1" x="587" y="675" w="88" h="131" pX="0.5" pY="0.5" oX="85" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_07_ 2" x="472" y="1417" w="87" h="116" pX="0.5" pY="0.5" oX="70" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_08_ 2" x="1654" y="342" w="85" h="111" pX="0.5" pY="0.5" oX="61" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_09_ 2" x="0" y="1543" w="97" h="114" pX="0.5" pY="0.5" oX="27" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_10_ 3" x="890" y="126" w="73" h="126" pX="0.5" pY="0.5" oX="70" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_11_ 3" x="890" y="500" w="84" h="124" pX="0.5" pY="0.5" oX="67" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_12_ 3" x="67" y="456" w="96" h="140" pX="0.5" pY="0.5" oX="67" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_13_ 4" x="1816" y="1210" w="82" h="101" pX="0.5" pY="0.5" oX="70" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_14_ 4" x="349" y="1656" w="87" h="109" pX="0.5" pY="0.5" oX="69" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_15_ 4" x="957" y="1219" w="99" h="118" pX="0.5" pY="0.5" oX="69" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_16_ 5" x="87" y="812" w="71" h="128" pX="0.5" pY="0.5" oX="60" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_17_ 5" x="666" y="100" w="68" h="134" pX="0.5" pY="0.5" oX="75" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_18_ 5" x="163" y="448" w="68" h="139" pX="0.5" pY="0.5" oX="92" oY="30" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_19_ 6" x="1255" y="355" w="76" h="118" pX="0.5" pY="0.5" oX="73" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_20_ 6" x="1678" y="1359" w="66" h="108" pX="0.5" pY="0.5" oX="64" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_21_ 6" x="104" y="1657" w="66" h="110" pX="0.5" pY="0.5" oX="45" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_22_ 7" x="1725" y="1571" w="88" h="106" pX="0.5" pY="0.5" oX="61" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_23_ 7" x="1725" y="1677" w="91" h="105" pX="0.5" pY="0.5" oX="61" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Evade_24_ 7" x="1421" y="237" w="103" h="116" pX="0.5" pY="0.5" oX="50" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_01_ 0" x="1158" y="1543" w="72" h="112" pX="0.5" pY="0.5" oX="83" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_02_ 0" x="315" y="1543" w="82" h="113" pX="0.5" pY="0.5" oX="79" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_03_ 0" x="1525" y="468" w="90" h="115" pX="0.5" pY="0.5" oX="73" oY="27" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_04_ 1" x="101" y="1426" w="73" h="117" pX="0.5" pY="0.5" oX="70" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_05_ 1" x="372" y="1058" w="77" h="122" pX="0.5" pY="0.5" oX="74" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_06_ 1" x="800" y="258" w="78" h="129" pX="0.5" pY="0.5" oX="80" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_07_ 2" x="1184" y="960" w="72" h="120" pX="0.5" pY="0.5" oX="70" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_08_ 2" x="1056" y="1113" w="78" h="119" pX="0.5" pY="0.5" oX="62" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_09_ 2" x="1276" y="473" w="81" h="118" pX="0.5" pY="0.5" oX="55" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_10_ 3" x="68" y="1066" w="73" h="122" pX="0.5" pY="0.5" oX="64" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_11_ 3" x="804" y="643" w="83" h="127" pX="0.5" pY="0.5" oX="59" oY="32" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_12_ 3" x="229" y="808" w="89" h="127" pX="0.5" pY="0.5" oX="58" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_13_ 4" x="1100" y="1867" w="83" h="97" pX="0.5" pY="0.5" oX="68" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_14_ 4" x="1605" y="583" w="80" h="112" pX="0.5" pY="0.5" oX="77" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_15_ 4" x="141" y="1065" w="93" h="122" pX="0.5" pY="0.5" oX="74" oY="32" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_16_ 5" x="0" y="1308" w="71" h="118" pX="0.5" pY="0.5" oX="63" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_17_ 5" x="362" y="160" w="64" h="131" pX="0.5" pY="0.5" oX="76" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_18_ 5" x="428" y="301" w="69" h="140" pX="0.5" pY="0.5" oX="83" oY="25" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_19_ 6" x="1082" y="0" w="76" h="121" pX="0.5" pY="0.5" oX="70" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_20_ 6" x="978" y="0" w="67" h="123" pX="0.5" pY="0.5" oX="67" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_21_ 6" x="1055" y="743" w="68" h="121" pX="0.5" pY="0.5" oX="57" oY="27" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_22_ 7" x="459" y="1543" w="78" h="113" pX="0.5" pY="0.5" oX="61" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_23_ 7" x="769" y="1163" w="81" h="119" pX="0.5" pY="0.5" oX="56" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Get Hit_24_ 7" x="881" y="376" w="92" h="124" pX="0.5" pY="0.5" oX="48" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_01_ 0" x="265" y="1657" w="84" h="110" pX="0.5" pY="0.5" oX="70" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_02_ 0" x="1532" y="1624" w="86" h="107" pX="0.5" pY="0.5" oX="69" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_03_ 0" x="772" y="1764" w="86" h="105" pX="0.5" pY="0.5" oX="69" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_04_ 1" x="1073" y="351" w="86" h="121" pX="0.5" pY="0.5" oX="48" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_05_ 1" x="243" y="1187" w="87" h="119" pX="0.5" pY="0.5" oX="46" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_06_ 1" x="1373" y="0" w="87" h="117" pX="0.5" pY="0.5" oX="44" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_07_ 2" x="1373" y="706" w="90" h="117" pX="0.5" pY="0.5" oX="70" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_08_ 2" x="1439" y="117" w="92" h="115" pX="0.5" pY="0.5" oX="70" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_09_ 2" x="1531" y="935" w="94" h="114" pX="0.5" pY="0.5" oX="70" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_10_ 3" x="805" y="0" w="85" h="129" pX="0.5" pY="0.5" oX="51" oY="30" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_11_ 3" x="0" y="812" w="87" h="128" pX="0.5" pY="0.5" oX="50" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_12_ 3" x="890" y="0" w="88" h="126" pX="0.5" pY="0.5" oX="49" oY="32" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_13_ 4" x="1818" y="0" w="91" h="103" pX="0.5" pY="0.5" oX="61" oY="55" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_14_ 4" x="1816" y="518" w="93" h="102" pX="0.5" pY="0.5" oX="59" oY="57" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_15_ 4" x="1813" y="721" w="94" h="101" pX="0.5" pY="0.5" oX="57" oY="59" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_16_ 5" x="0" y="456" w="67" h="140" pX="0.5" pY="0.5" oX="66" oY="25" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_17_ 5" x="532" y="0" w="66" h="139" pX="0.5" pY="0.5" oX="66" oY="26" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_18_ 5" x="445" y="441" w="66" h="139" pX="0.5" pY="0.5" oX="65" oY="26" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_19_ 6" x="629" y="1177" w="66" h="119" pX="0.5" pY="0.5" oX="73" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_20_ 6" x="1356" y="237" w="65" h="117" pX="0.5" pY="0.5" oX="74" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_21_ 6" x="1155" y="1317" w="64" h="115" pX="0.5" pY="0.5" oX="75" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_22_ 7" x="437" y="1765" w="100" h="105" pX="0.5" pY="0.5" oX="61" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_23_ 7" x="1801" y="1108" w="102" h="102" pX="0.5" pY="0.5" oX="61" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Idle_24_ 7" x="1212" y="1757" w="103" h="100" pX="0.5" pY="0.5" oX="61" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_01_ 0" x="1909" y="415" w="69" h="83" pX="0.5" pY="0.5" oX="71" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_02_ 0" x="1909" y="0" w="70" h="83" pX="0.5" pY="0.5" oX="70" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_03_ 0" x="1909" y="332" w="70" h="83" pX="0.5" pY="0.5" oX="70" oY="67" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_04_ 1" x="1903" y="1108" w="76" h="82" pX="0.5" pY="0.5" oX="54" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_05_ 1" x="1903" y="1190" w="76" h="82" pX="0.5" pY="0.5" oX="54" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_06_ 1" x="1902" y="1610" w="76" h="82" pX="0.5" pY="0.5" oX="54" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_07_ 2" x="1902" y="1692" w="75" h="81" pX="0.5" pY="0.5" oX="74" oY="78" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_08_ 2" x="217" y="1967" w="75" h="80" pX="0.5" pY="0.5" oX="74" oY="79" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_09_ 2" x="292" y="1967" w="75" h="79" pX="0.5" pY="0.5" oX="74" oY="80" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_10_ 3" x="821" y="1967" w="73" h="74" pX="0.5" pY="0.5" oX="75" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_11_ 3" x="748" y="1967" w="73" h="74" pX="0.5" pY="0.5" oX="75" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_12_ 3" x="675" y="1967" w="73" h="74" pX="0.5" pY="0.5" oX="75" oY="61" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_13_ 4" x="1909" y="166" w="62" h="83" pX="0.5" pY="0.5" oX="66" oY="74" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_14_ 4" x="1909" y="249" w="62" h="83" pX="0.5" pY="0.5" oX="66" oY="74" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_15_ 4" x="1909" y="83" w="62" h="83" pX="0.5" pY="0.5" oX="66" oY="74" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_16_ 5" x="367" y="1967" w="77" h="72" pX="0.5" pY="0.5" oX="72" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_17_ 5" x="444" y="1967" w="77" h="72" pX="0.5" pY="0.5" oX="72" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_18_ 5" x="521" y="1967" w="77" h="72" pX="0.5" pY="0.5" oX="72" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_19_ 6" x="1889" y="1935" w="78" h="69" pX="0.5" pY="0.5" oX="67" oY="82" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_20_ 6" x="598" y="1967" w="77" h="68" pX="0.5" pY="0.5" oX="67" oY="83" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_21_ 6" x="1615" y="1808" w="77" h="68" pX="0.5" pY="0.5" oX="67" oY="83" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_22_ 7" x="1706" y="1876" w="61" h="86" pX="0.5" pY="0.5" oX="76" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_23_ 7" x="1828" y="1802" w="61" h="85" pX="0.5" pY="0.5" oX="76" oY="66" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Rest_24_ 7" x="1767" y="1876" w="61" h="85" pX="0.5" pY="0.5" oX="76" oY="66" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_01_ 0" x="1737" y="453" w="66" h="106" pX="0.5" pY="0.5" oX="69" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_02_ 0" x="617" y="1656" w="72" h="108" pX="0.5" pY="0.5" oX="67" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_03_ 0" x="1817" y="331" w="70" h="102" pX="0.5" pY="0.5" oX="70" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_04_ 0" x="537" y="1764" w="68" h="105" pX="0.5" pY="0.5" oX="70" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_05_ 0" x="852" y="1655" w="70" h="108" pX="0.5" pY="0.5" oX="70" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_06_ 0" x="1044" y="1763" w="70" h="104" pX="0.5" pY="0.5" oX="68" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_07_ 0" x="1184" y="360" w="71" h="120" pX="0.5" pY="0.5" oX="63" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_08_ 0" x="1014" y="1543" w="76" h="112" pX="0.5" pY="0.5" oX="59" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_09_ 1" x="1625" y="1034" w="111" h="108" pX="0.5" pY="0.5" oX="59" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_10_ 1" x="517" y="1656" w="100" h="108" pX="0.5" pY="0.5" oX="54" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_11_ 1" x="1500" y="1172" w="107" h="114" pX="0.5" pY="0.5" oX="57" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_12_ 1" x="1042" y="1348" w="113" h="116" pX="0.5" pY="0.5" oX="62" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_13_ 1" x="1338" y="1314" w="113" h="116" pX="0.5" pY="0.5" oX="66" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_14_ 1" x="1256" y="960" w="117" h="119" pX="0.5" pY="0.5" oX="49" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_15_ 1" x="1242" y="1197" w="96" h="118" pX="0.5" pY="0.5" oX="43" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_16_ 1" x="1500" y="1286" w="114" h="112" pX="0.5" pY="0.5" oX="59" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_17_ 2" x="646" y="1296" w="112" h="118" pX="0.5" pY="0.5" oX="34" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_18_ 2" x="850" y="1234" w="105" h="118" pX="0.5" pY="0.5" oX="49" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_19_ 2" x="1270" y="1431" w="115" h="112" pX="0.5" pY="0.5" oX="37" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_20_ 2" x="665" y="1056" w="121" h="107" pX="0.5" pY="0.5" oX="26" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_21_ 2" x="1036" y="123" w="121" h="107" pX="0.5" pY="0.5" oX="23" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_22_ 2" x="960" y="993" w="122" h="107" pX="0.5" pY="0.5" oX="37" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_23_ 2" x="654" y="1414" w="101" h="116" pX="0.5" pY="0.5" oX="62" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_24_ 2" x="1159" y="0" w="119" h="120" pX="0.5" pY="0.5" oX="28" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_25_ 3" x="531" y="139" w="66" h="138" pX="0.5" pY="0.5" oX="72" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_26_ 3" x="734" y="0" w="71" h="130" pX="0.5" pY="0.5" oX="69" oY="34" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_27_ 3" x="139" y="0" w="69" h="153" pX="0.5" pY="0.5" oX="68" oY="26" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_28_ 3" x="0" y="0" w="70" h="161" pX="0.5" pY="0.5" oX="68" oY="25" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_29_ 3" x="70" y="0" w="69" h="154" pX="0.5" pY="0.5" oX="69" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_30_ 3" x="293" y="148" w="69" h="147" pX="0.5" pY="0.5" oX="70" oY="25" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_31_ 3" x="268" y="935" w="69" h="125" pX="0.5" pY="0.5" oX="74" oY="36" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_32_ 3" x="0" y="161" w="72" h="150" pX="0.5" pY="0.5" oX="75" oY="35" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_33_ 4" x="210" y="1767" w="104" h="101" pX="0.5" pY="0.5" oX="59" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_34_ 4" x="1532" y="1731" w="83" h="104" pX="0.5" pY="0.5" oX="67" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_35_ 4" x="1745" y="0" w="73" h="107" pX="0.5" pY="0.5" oX="76" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_36_ 4" x="1534" y="698" w="78" h="114" pX="0.5" pY="0.5" oX="76" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_37_ 4" x="1256" y="720" w="85" h="119" pX="0.5" pY="0.5" oX="74" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_38_ 4" x="1654" y="112" w="89" h="112" pX="0.5" pY="0.5" oX="65" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_39_ 4" x="689" y="1656" w="88" h="108" pX="0.5" pY="0.5" oX="50" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_40_ 4" x="1614" y="1253" w="110" h="106" pX="0.5" pY="0.5" oX="55" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_41_ 5" x="102" y="679" w="71" h="133" pX="0.5" pY="0.5" oX="79" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_42_ 5" x="887" y="994" w="73" h="121" pX="0.5" pY="0.5" oX="70" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_43_ 5" x="704" y="407" w="94" h="130" pX="0.5" pY="0.5" oX="62" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_44_ 5" x="591" y="541" w="101" h="134" pX="0.5" pY="0.5" oX="63" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_45_ 5" x="629" y="273" w="104" h="134" pX="0.5" pY="0.5" oX="61" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_46_ 5" x="288" y="580" w="87" h="131" pX="0.5" pY="0.5" oX="66" oY="32" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_47_ 5" x="318" y="806" w="70" h="127" pX="0.5" pY="0.5" oX="72" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_48_ 5" x="360" y="295" w="68" h="143" pX="0.5" pY="0.5" oX="82" oY="35" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_49_ 6" x="1532" y="583" w="73" h="115" pX="0.5" pY="0.5" oX="68" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_50_ 6" x="1742" y="901" w="74" h="105" pX="0.5" pY="0.5" oX="77" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_51_ 6" x="1315" y="1757" w="103" h="103" pX="0.5" pY="0.5" oX="57" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_52_ 6" x="1230" y="1654" w="110" h="101" pX="0.5" pY="0.5" oX="50" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_53_ 6" x="1415" y="1532" w="112" h="104" pX="0.5" pY="0.5" oX="50" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_54_ 6" x="1816" y="822" w="91" h="100" pX="0.5" pY="0.5" oX="64" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_55_ 6" x="1050" y="622" w="71" h="121" pX="0.5" pY="0.5" oX="76" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_56_ 6" x="695" y="1163" w="74" h="119" pX="0.5" pY="0.5" oX="64" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_57_ 7" x="950" y="748" w="105" h="123" pX="0.5" pY="0.5" oX="54" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_58_ 7" x="512" y="1058" w="87" h="121" pX="0.5" pY="0.5" oX="67" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_59_ 7" x="283" y="295" w="77" h="143" pX="0.5" pY="0.5" oX="66" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_60_ 7" x="72" y="154" w="83" h="149" pX="0.5" pY="0.5" oX="61" oY="28" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_61_ 7" x="193" y="295" w="90" h="145" pX="0.5" pY="0.5" oX="56" oY="29" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_62_ 7" x="450" y="806" w="101" h="127" pX="0.5" pY="0.5" oX="63" oY="35" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_63_ 7" x="1184" y="600" w="94" h="120" pX="0.5" pY="0.5" oX="75" oY="37" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Run_64_ 7" x="173" y="675" w="115" h="133" pX="0.5" pY="0.5" oX="49" oY="36" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_01_ 0" x="688" y="1543" w="82" h="113" pX="0.5" pY="0.5" oX="68" oY="54" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_02_ 0" x="1531" y="116" w="79" h="115" pX="0.5" pY="0.5" oX="66" oY="52" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_03_ 0" x="464" y="1180" w="81" h="119" pX="0.5" pY="0.5" oX="61" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_04_ 1" x="803" y="896" w="84" h="123" pX="0.5" pY="0.5" oX="49" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_05_ 1" x="626" y="806" w="82" h="126" pX="0.5" pY="0.5" oX="51" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_06_ 1" x="552" y="277" w="77" h="134" pX="0.5" pY="0.5" oX="55" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_07_ 2" x="1349" y="119" w="90" h="118" pX="0.5" pY="0.5" oX="70" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_08_ 2" x="1134" y="1199" w="88" h="118" pX="0.5" pY="0.5" oX="70" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_09_ 2" x="1184" y="840" w="83" h="120" pX="0.5" pY="0.5" oX="70" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_10_ 3" x="708" y="804" w="83" h="126" pX="0.5" pY="0.5" oX="62" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_11_ 3" x="804" y="770" w="83" h="126" pX="0.5" pY="0.5" oX="64" oY="33" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_12_ 3" x="798" y="387" w="83" h="128" pX="0.5" pY="0.5" oX="64" oY="30" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_13_ 4" x="170" y="1657" w="95" h="110" pX="0.5" pY="0.5" oX="50" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_14_ 4" x="1579" y="1398" w="99" h="112" pX="0.5" pY="0.5" oX="46" oY="49" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_15_ 4" x="0" y="1657" w="104" h="110" pX="0.5" pY="0.5" oX="41" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_16_ 5" x="629" y="407" w="75" h="134" pX="0.5" pY="0.5" oX="59" oY="31" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_17_ 5" x="511" y="440" w="80" h="137" pX="0.5" pY="0.5" oX="55" oY="28" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_18_ 5" x="428" y="160" w="77" h="141" pX="0.5" pY="0.5" oX="59" oY="23" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_19_ 6" x="1110" y="864" w="74" h="120" pX="0.5" pY="0.5" oX="72" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_20_ 6" x="1030" y="871" w="80" h="121" pX="0.5" pY="0.5" oX="71" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_21_ 6" x="890" y="624" w="79" h="124" pX="0.5" pY="0.5" oX="71" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_22_ 7" x="106" y="1767" w="104" h="102" pX="0.5" pY="0.5" oX="61" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_23_ 7" x="994" y="1655" w="108" h="104" pX="0.5" pY="0.5" oX="61" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Use Skill_24_ 7" x="1230" y="1543" w="112" h="111" pX="0.5" pY="0.5" oX="62" oY="32" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_01_ 0" x="777" y="1655" w="75" h="108" pX="0.5" pY="0.5" oX="60" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_02_ 0" x="1460" y="468" w="65" h="115" pX="0.5" pY="0.5" oX="71" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_03_ 0" x="887" y="748" w="63" h="123" pX="0.5" pY="0.5" oX="73" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_04_ 0" x="1123" y="712" w="59" h="114" pX="0.5" pY="0.5" oX="76" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_05_ 0" x="397" y="1543" w="62" h="113" pX="0.5" pY="0.5" oX="74" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_06_ 0" x="1605" y="1510" w="75" h="110" pX="0.5" pY="0.5" oX="59" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_07_ 0" x="1724" y="1253" w="77" h="106" pX="0.5" pY="0.5" oX="56" oY="44" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_08_ 0" x="1527" y="1512" w="78" h="112" pX="0.5" pY="0.5" oX="56" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_09_ 1" x="1522" y="820" w="86" h="115" pX="0.5" pY="0.5" oX="66" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_10_ 1" x="142" y="1308" w="92" h="118" pX="0.5" pY="0.5" oX="58" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_11_ 1" x="1373" y="940" w="90" h="117" pX="0.5" pY="0.5" oX="49" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_12_ 1" x="1256" y="1079" w="98" h="118" pX="0.5" pY="0.5" oX="49" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_13_ 1" x="1331" y="355" w="94" h="117" pX="0.5" pY="0.5" oX="54" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_14_ 1" x="1278" y="237" w="78" h="118" pX="0.5" pY="0.5" oX="68" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_15_ 1" x="402" y="1180" w="62" h="119" pX="0.5" pY="0.5" oX="76" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_16_ 1" x="1463" y="705" w="71" h="115" pX="0.5" pY="0.5" oX="73" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_17_ 2" x="1067" y="230" w="90" h="121" pX="0.5" pY="0.5" oX="49" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_18_ 2" x="1278" y="0" w="95" h="119" pX="0.5" pY="0.5" oX="51" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_19_ 2" x="1184" y="480" w="92" h="120" pX="0.5" pY="0.5" oX="64" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_20_ 2" x="1267" y="839" w="100" h="118" pX="0.5" pY="0.5" oX="58" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_21_ 2" x="1538" y="0" w="98" h="115" pX="0.5" pY="0.5" oX="53" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_22_ 2" x="969" y="624" w="81" h="123" pX="0.5" pY="0.5" oX="55" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_23_ 2" x="388" y="806" w="62" h="127" pX="0.5" pY="0.5" oX="67" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_24_ 2" x="193" y="940" w="75" h="125" pX="0.5" pY="0.5" oX="56" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_25_ 3" x="511" y="577" w="76" h="132" pX="0.5" pY="0.5" oX="69" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_26_ 3" x="734" y="130" w="66" h="129" pX="0.5" pY="0.5" oX="68" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_27_ 3" x="599" y="1057" w="65" h="120" pX="0.5" pY="0.5" oX="69" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_28_ 3" x="337" y="933" w="65" h="125" pX="0.5" pY="0.5" oX="69" oY="36" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_29_ 3" x="375" y="580" w="66" h="130" pX="0.5" pY="0.5" oX="68" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_30_ 3" x="551" y="806" w="75" h="126" pX="0.5" pY="0.5" oX="70" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_31_ 3" x="574" y="1298" w="72" h="118" pX="0.5" pY="0.5" oX="76" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_32_ 3" x="730" y="670" w="74" h="128" pX="0.5" pY="0.5" oX="75" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_33_ 4" x="682" y="1764" w="90" h="105" pX="0.5" pY="0.5" oX="55" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_34_ 4" x="956" y="1763" w="88" h="104" pX="0.5" pY="0.5" oX="58" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_35_ 4" x="1687" y="794" w="100" h="107" pX="0.5" pY="0.5" oX="54" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_36_ 4" x="960" y="1100" w="96" h="119" pX="0.5" pY="0.5" oX="62" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_37_ 4" x="1367" y="589" w="91" h="117" pX="0.5" pY="0.5" oX="61" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_38_ 4" x="537" y="1543" w="85" h="113" pX="0.5" pY="0.5" oX="57" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_39_ 4" x="1608" y="812" w="79" h="111" pX="0.5" pY="0.5" oX="62" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_40_ 4" x="1448" y="1636" w="84" h="107" pX="0.5" pY="0.5" oX="57" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_41_ 5" x="733" y="259" w="62" h="128" pX="0.5" pY="0.5" oX="85" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_42_ 5" x="675" y="675" w="55" h="129" pX="0.5" pY="0.5" oX="88" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_43_ 5" x="1121" y="592" w="62" h="120" pX="0.5" pY="0.5" oX="80" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_44_ 5" x="960" y="871" w="70" h="122" pX="0.5" pY="0.5" oX="70" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_45_ 5" x="1121" y="472" w="63" h="120" pX="0.5" pY="0.5" oX="80" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_46_ 5" x="327" y="1420" w="64" h="117" pX="0.5" pY="0.5" oX="83" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_47_ 5" x="169" y="1187" w="74" h="119" pX="0.5" pY="0.5" oX="76" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_48_ 5" x="597" y="932" w="68" h="125" pX="0.5" pY="0.5" oX="81" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_49_ 6" x="449" y="1058" w="63" h="122" pX="0.5" pY="0.5" oX="73" oY="42" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_50_ 6" x="975" y="249" w="57" h="122" pX="0.5" pY="0.5" oX="76" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_51_ 6" x="539" y="933" w="58" h="125" pX="0.5" pY="0.5" oX="80" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_52_ 6" x="1342" y="1543" w="73" h="112" pX="0.5" pY="0.5" oX="78" oY="41" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_53_ 6" x="1454" y="823" w="68" h="116" pX="0.5" pY="0.5" oX="70" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_54_ 6" x="476" y="933" w="63" h="125" pX="0.5" pY="0.5" oX="72" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_55_ 6" x="402" y="933" w="74" h="125" pX="0.5" pY="0.5" oX="68" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_56_ 6" x="665" y="932" w="66" h="124" pX="0.5" pY="0.5" oX="71" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_57_ 7" x="973" y="376" w="94" h="123" pX="0.5" pY="0.5" oX="69" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_58_ 7" x="77" y="1188" w="92" h="120" pX="0.5" pY="0.5" oX="68" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_59_ 7" x="0" y="1426" w="101" h="117" pX="0.5" pY="0.5" oX="63" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_60_ 7" x="974" y="499" w="99" h="123" pX="0.5" pY="0.5" oX="59" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_61_ 7" x="798" y="515" w="92" h="128" pX="0.5" pY="0.5" oX="65" oY="38" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_62_ 7" x="112" y="940" w="81" h="125" pX="0.5" pY="0.5" oX="80" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_63_ 7" x="1458" y="589" w="74" h="116" pX="0.5" pY="0.5" oX="81" oY="40" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Walk_64_ 7" x="1184" y="120" w="85" h="120" pX="0.5" pY="0.5" oX="75" oY="39" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_01_ 0" x="931" y="1868" w="86" h="99" pX="0.5" pY="0.5" oX="63" oY="74" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_02_ 0" x="537" y="1869" w="86" h="98" pX="0.5" pY="0.5" oX="61" oY="75" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_03_ 0" x="1816" y="1706" w="86" h="96" pX="0.5" pY="0.5" oX="59" oY="76" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_04_ 1" x="1739" y="331" w="78" h="103" pX="0.5" pY="0.5" oX="51" oY="64" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_05_ 1" x="605" y="1764" w="77" h="105" pX="0.5" pY="0.5" oX="52" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_06_ 1" x="1742" y="224" w="76" h="107" pX="0.5" pY="0.5" oX="53" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_07_ 2" x="1451" y="1057" w="80" h="115" pX="0.5" pY="0.5" oX="71" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_08_ 2" x="1504" y="353" w="79" h="115" pX="0.5" pY="0.5" oX="71" oY="51" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_09_ 2" x="1500" y="1398" w="79" h="114" pX="0.5" pY="0.5" oX="71" oY="53" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_10_ 3" x="1654" y="453" w="83" h="111" pX="0.5" pY="0.5" oX="70" oY="47" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_11_ 3" x="770" y="1543" w="85" h="112" pX="0.5" pY="0.5" oX="70" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_12_ 3" x="855" y="1543" w="87" h="112" pX="0.5" pY="0.5" oX="70" oY="45" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_13_ 4" x="1803" y="434" w="103" h="84" pX="0.5" pY="0.5" oX="48" oY="75" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_14_ 4" x="1618" y="1723" w="105" h="85" pX="0.5" pY="0.5" oX="46" oY="74" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_15_ 4" x="1685" y="564" w="106" h="87" pX="0.5" pY="0.5" oX="45" oY="73" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_16_ 5" x="173" y="1543" w="65" h="114" pX="0.5" pY="0.5" oX="66" oY="50" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_17_ 5" x="818" y="1400" w="65" h="116" pX="0.5" pY="0.5" oX="67" oY="48" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_18_ 5" x="352" y="1301" w="65" h="118" pX="0.5" pY="0.5" oX="67" oY="46" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_19_ 6" x="883" y="1352" w="68" h="116" pX="0.5" pY="0.5" oX="73" oY="60" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_20_ 6" x="1463" y="939" w="68" h="115" pX="0.5" pY="0.5" oX="72" oY="62" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_21_ 6" x="1090" y="1543" w="68" h="112" pX="0.5" pY="0.5" oX="72" oY="65" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_22_ 7" x="0" y="1767" w="106" h="103" pX="0.5" pY="0.5" oX="62" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_23_ 7" x="1618" y="1620" w="107" h="103" pX="0.5" pY="0.5" oX="62" oY="43" oW="200" oH="200"/>
+  <sprite n="Uruk_Crusher_Woozy_24_ 7" x="1340" y="1655" w="108" h="102" pX="0.5" pY="0.5" oX="62" oY="44" oW="200" oH="200"/>
+</TextureAtlas>

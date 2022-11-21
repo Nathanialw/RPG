@@ -152,7 +152,10 @@ namespace Rendering {
         }
         if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
             if (sheetData.finalFrame == Component::firstFrame) {
-                if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::cast) {
+                if (action.state == Component::dead) {
+
+                }
+                else if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::cast) {
                     action.state = Component::idle;
                 }
                 else if (action.state == Component::struck || action.state == Component::attack || action.state == Component::cast) {
@@ -760,12 +763,14 @@ namespace Rendering {
 			Add_Remove_Renderable_Component(zone, camera);
 			sort_Positions(zone);
 			Render_Map(zone, Maps::map, camera);
-            RenderLine(zone, camera);
 			Dynamic_Quad_Tree::Update_Quad_Tree_Positions(World::zone);
 			Dynamic_Quad_Tree::Emplace_Objects_In_Quad_Tree(World::zone);
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
 			Dynamic_Quad_Tree::Remove_From_Tree(zone);
+            // draw rects
 			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
+//            RenderLine(zone, camera);
+            //
 			Items::Show_Ground_Items(zone, camera);
             Items::Name_On_Mouseover(zone, camera);
 			UI::Render_UI(zone, Graphics::renderer, camera);

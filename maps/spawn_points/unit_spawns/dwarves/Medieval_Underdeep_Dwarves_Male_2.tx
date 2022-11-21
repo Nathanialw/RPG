@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../sprite_sheets/units/dwarves/slaves_dwarf_0.tsx"/>
+ <object name="Medieval_Underdeep_Dwarves_Male_2" class="unit" gid="1185" width="40" height="65"/>
+</template>

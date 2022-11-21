@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="1526" height="1557" scale="1" format="RGBA8888">
+  <sprite n="RTP_GrayWolf_Attack 1_01_ 0" x="1468" y="1297" w="28" h="85" pX="0.5" pY="0.5" oX="66" oY="32" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_02_ 0" x="28" y="1406" w="28" h="91" pX="0.5" pY="0.5" oX="66" oY="25" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_03_ 0" x="89" y="807" w="28" h="74" pX="0.5" pY="0.5" oX="66" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_04_ 1" x="80" y="1007" w="104" h="60" pX="0.5" pY="0.5" oX="25" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_05_ 1" x="887" y="1307" w="107" h="45" pX="0.5" pY="0.5" oX="37" oY="59" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_06_ 1" x="352" y="749" w="115" h="61" pX="0.5" pY="0.5" oX="6" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_07_ 2" x="837" y="0" w="104" h="63" pX="0.5" pY="0.5" oX="32" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_08_ 2" x="1268" y="560" w="107" h="47" pX="0.5" pY="0.5" oX="17" oY="59" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_09_ 2" x="319" y="810" w="110" h="63" pX="0.5" pY="0.5" oX="40" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_10_ 3" x="874" y="1443" w="28" h="94" pX="0.5" pY="0.5" oX="67" oY="20" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_11_ 3" x="170" y="1474" w="28" h="78" pX="0.5" pY="0.5" oX="67" oY="47" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_12_ 3" x="1446" y="0" w="28" h="107" pX="0.5" pY="0.5" oX="67" oY="7" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_13_ 4" x="540" y="1081" w="78" h="77" pX="0.5" pY="0.5" oX="40" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_14_ 4" x="957" y="944" w="80" h="79" pX="0.5" pY="0.5" oX="49" oY="36" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_15_ 4" x="854" y="1140" w="85" h="66" pX="0.5" pY="0.5" oX="27" oY="51" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_16_ 5" x="168" y="473" w="75" h="84" pX="0.5" pY="0.5" oX="40" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_17_ 5" x="1372" y="1258" w="75" h="62" pX="0.5" pY="0.5" oX="49" oY="54" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_18_ 5" x="518" y="252" w="81" h="91" pX="0.5" pY="0.5" oX="27" oY="19" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_19_ 6" x="769" y="1205" w="74" h="72" pX="0.5" pY="0.5" oX="47" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_20_ 6" x="618" y="1157" w="75" h="75" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_21_ 6" x="317" y="955" w="81" h="64" pX="0.5" pY="0.5" oX="53" oY="51" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_22_ 7" x="467" y="755" w="78" h="89" pX="0.5" pY="0.5" oX="43" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_23_ 7" x="1145" y="1271" w="80" h="65" pX="0.5" pY="0.5" oX="32" oY="54" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 1_24_ 7" x="283" y="0" w="85" h="97" pX="0.5" pY="0.5" oX="49" oY="18" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_01_ 0" x="1471" y="835" w="28" h="85" pX="0.5" pY="0.5" oX="66" oY="32" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_02_ 0" x="1328" y="1418" w="28" h="99" pX="0.5" pY="0.5" oX="66" oY="20" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_03_ 0" x="1464" y="373" w="28" h="83" pX="0.5" pY="0.5" oX="67" oY="32" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_04_ 1" x="941" y="0" w="104" h="61" pX="0.5" pY="0.5" oX="25" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_05_ 1" x="939" y="1152" w="112" h="50" pX="0.5" pY="0.5" oX="38" oY="55" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_06_ 1" x="427" y="381" w="113" h="68" pX="0.5" pY="0.5" oX="15" oY="33" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_07_ 2" x="89" y="883" w="104" h="63" pX="0.5" pY="0.5" oX="32" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_08_ 2" x="584" y="1029" w="117" h="52" pX="0.5" pY="0.5" oX="6" oY="55" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_09_ 2" x="287" y="559" w="113" h="64" pX="0.5" pY="0.5" oX="33" oY="35" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_10_ 3" x="73" y="1375" w="28" h="92" pX="0.5" pY="0.5" oX="67" oY="22" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_11_ 3" x="101" y="1375" w="28" h="91" pX="0.5" pY="0.5" oX="67" oY="35" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_12_ 3" x="1440" y="1320" w="28" h="123" pX="0.5" pY="0.5" oX="66" oY="1" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_13_ 4" x="1062" y="1020" w="78" h="77" pX="0.5" pY="0.5" oX="40" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_14_ 4" x="630" y="332" w="86" h="83" pX="0.5" pY="0.5" oX="50" oY="35" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_15_ 4" x="1282" y="1089" w="90" h="54" pX="0.5" pY="0.5" oX="32" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_16_ 5" x="1041" y="555" w="75" h="83" pX="0.5" pY="0.5" oX="40" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_17_ 5" x="772" y="1136" w="82" h="69" pX="0.5" pY="0.5" oX="49" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_18_ 5" x="0" y="199" w="77" h="105" pX="0.5" pY="0.5" oX="32" oY="13" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_19_ 6" x="1201" y="213" w="74" h="72" pX="0.5" pY="0.5" oX="47" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_20_ 6" x="701" y="1010" w="82" h="76" pX="0.5" pY="0.5" oX="30" oY="33" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_21_ 6" x="1224" y="439" w="77" h="70" pX="0.5" pY="0.5" oX="52" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_22_ 7" x="702" y="810" w="78" h="88" pX="0.5" pY="0.5" oX="43" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_23_ 7" x="897" y="867" w="86" h="77" pX="0.5" pY="0.5" oX="25" oY="43" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Attack 2_24_ 7" x="0" y="96" w="90" h="103" pX="0.5" pY="0.5" oX="39" oY="14" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_01_ 0" x="323" y="1337" w="37" h="77" pX="0.5" pY="0.5" oX="61" oY="60" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_02_ 0" x="932" y="237" w="37" h="77" pX="0.5" pY="0.5" oX="61" oY="60" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_03_ 0" x="360" y="1337" w="37" h="77" pX="0.5" pY="0.5" oX="61" oY="60" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_04_ 1" x="1285" y="1375" w="94" h="43" pX="0.5" pY="0.5" oX="22" oY="65" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_05_ 1" x="410" y="1335" w="94" h="43" pX="0.5" pY="0.5" oX="22" oY="65" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_06_ 1" x="1173" y="1397" w="94" h="43" pX="0.5" pY="0.5" oX="22" oY="65" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_07_ 2" x="1375" y="548" w="95" h="36" pX="0.5" pY="0.5" oX="44" oY="74" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_08_ 2" x="174" y="1340" w="95" h="36" pX="0.5" pY="0.5" oX="44" oY="74" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_09_ 2" x="670" y="1382" w="95" h="36" pX="0.5" pY="0.5" oX="44" oY="74" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_10_ 3" x="949" y="1420" w="37" h="72" pX="0.5" pY="0.5" oX="63" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_11_ 3" x="783" y="1428" w="37" h="72" pX="0.5" pY="0.5" oX="63" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_12_ 3" x="726" y="164" w="37" h="72" pX="0.5" pY="0.5" oX="63" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_13_ 4" x="1372" y="0" w="74" h="61" pX="0.5" pY="0.5" oX="33" oY="65" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_14_ 4" x="1359" y="892" w="74" h="61" pX="0.5" pY="0.5" oX="33" oY="65" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_15_ 4" x="1351" y="167" w="74" h="61" pX="0.5" pY="0.5" oX="33" oY="65" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_16_ 5" x="1301" y="673" w="74" h="66" pX="0.5" pY="0.5" oX="38" oY="49" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_17_ 5" x="1301" y="414" w="74" h="66" pX="0.5" pY="0.5" oX="38" oY="49" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_18_ 5" x="1301" y="826" w="74" h="66" pX="0.5" pY="0.5" oX="38" oY="49" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_19_ 6" x="1362" y="953" w="74" h="61" pX="0.5" pY="0.5" oX="49" oY="67" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_20_ 6" x="1364" y="1014" w="74" h="61" pX="0.5" pY="0.5" oX="49" oY="67" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_21_ 6" x="1372" y="1075" w="74" h="61" pX="0.5" pY="0.5" oX="49" oY="67" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_22_ 7" x="0" y="1346" w="73" h="60" pX="0.5" pY="0.5" oX="54" oY="58" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_23_ 7" x="1358" y="293" w="74" h="60" pX="0.5" pY="0.5" oX="54" oY="58" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Behavior_24_ 7" x="1372" y="1136" w="74" h="60" pX="0.5" pY="0.5" oX="54" oY="58" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_01_ 0" x="1470" y="626" w="27" h="85" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_02_ 0" x="1144" y="1422" w="29" h="90" pX="0.5" pY="0.5" oX="66" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_03_ 0" x="902" y="1443" w="28" h="94" pX="0.5" pY="0.5" oX="66" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_04_ 1" x="852" y="1005" w="105" h="60" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_05_ 1" x="784" y="1277" w="103" h="50" pX="0.5" pY="0.5" oX="32" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_06_ 1" x="1306" y="121" w="100" h="46" pX="0.5" pY="0.5" oX="41" oY="59" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_07_ 2" x="193" y="921" w="105" h="61" pX="0.5" pY="0.5" oX="32" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_08_ 2" x="1042" y="1227" w="103" h="51" pX="0.5" pY="0.5" oX="26" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_09_ 2" x="784" y="1327" w="100" h="47" pX="0.5" pY="0.5" oX="20" oY="59" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_10_ 3" x="350" y="1414" w="27" h="93" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_11_ 3" x="56" y="1467" w="29" h="87" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_12_ 3" x="1473" y="182" w="28" h="78" pX="0.5" pY="0.5" oX="67" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_13_ 4" x="0" y="1040" w="79" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_14_ 4" x="1057" y="305" w="78" h="79" pX="0.5" pY="0.5" oX="45" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_15_ 4" x="318" y="873" w="81" h="82" pX="0.5" pY="0.5" oX="47" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_16_ 5" x="777" y="924" w="75" h="86" pX="0.5" pY="0.5" oX="40" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_17_ 5" x="1051" y="1153" w="74" h="74" pX="0.5" pY="0.5" oX="44" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_18_ 5" x="1231" y="121" w="75" h="65" pX="0.5" pY="0.5" oX="47" oY="50" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_19_ 6" x="1151" y="866" w="75" h="73" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_20_ 6" x="517" y="1158" w="74" h="76" pX="0.5" pY="0.5" oX="43" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_21_ 6" x="1146" y="789" w="75" h="77" pX="0.5" pY="0.5" oX="39" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_22_ 7" x="725" y="327" w="79" h="89" pX="0.5" pY="0.5" oX="42" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_23_ 7" x="994" y="142" w="78" h="80" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Block_24_ 7" x="151" y="1153" w="80" h="69" pX="0.5" pY="0.5" oX="33" oY="51" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_01_ 0" x="694" y="1418" w="29" h="92" pX="0.5" pY="0.5" oX="67" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_02_ 0" x="723" y="1418" w="29" h="92" pX="0.5" pY="0.5" oX="67" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_03_ 0" x="845" y="1443" w="29" h="91" pX="0.5" pY="0.5" oX="67" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_04_ 1" x="939" y="1202" w="103" h="52" pX="0.5" pY="0.5" oX="32" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_05_ 1" x="481" y="1234" w="102" h="52" pX="0.5" pY="0.5" oX="32" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_06_ 1" x="77" y="1222" w="101" h="52" pX="0.5" pY="0.5" oX="32" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_07_ 2" x="583" y="1285" w="103" h="50" pX="0.5" pY="0.5" oX="26" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_08_ 2" x="308" y="1287" w="102" h="50" pX="0.5" pY="0.5" oX="27" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_09_ 2" x="176" y="1290" w="101" h="50" pX="0.5" pY="0.5" oX="28" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_10_ 3" x="377" y="1479" w="29" h="76" pX="0.5" pY="0.5" oX="65" oY="43" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_11_ 3" x="198" y="1474" w="29" h="75" pX="0.5" pY="0.5" oX="65" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_12_ 3" x="227" y="1474" w="29" h="75" pX="0.5" pY="0.5" oX="65" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_13_ 4" x="916" y="488" w="79" h="82" pX="0.5" pY="0.5" oX="45" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_14_ 4" x="994" y="61" w="78" h="81" pX="0.5" pY="0.5" oX="45" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_15_ 4" x="0" y="304" w="77" h="81" pX="0.5" pY="0.5" oX="45" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_16_ 5" x="1297" y="1263" w="75" h="66" pX="0.5" pY="0.5" oX="45" oY="47" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_17_ 5" x="1292" y="1197" w="75" h="66" pX="0.5" pY="0.5" oX="45" oY="47" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_18_ 5" x="1297" y="607" w="75" h="66" pX="0.5" pY="0.5" oX="45" oY="47" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_19_ 6" x="1135" y="291" w="75" h="77" pX="0.5" pY="0.5" oX="41" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_20_ 6" x="1115" y="939" w="75" h="77" pX="0.5" pY="0.5" oX="41" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_21_ 6" x="1126" y="214" w="75" h="77" pX="0.5" pY="0.5" oX="41" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_22_ 7" x="243" y="1151" w="79" h="70" pX="0.5" pY="0.5" oX="37" oY="47" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_23_ 7" x="403" y="1167" w="78" h="70" pX="0.5" pY="0.5" oX="38" oY="47" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Critical HP_24_ 7" x="1200" y="1143" w="77" h="70" pX="0.5" pY="0.5" oX="39" oY="47" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_01_ 0" x="1387" y="1439" w="29" h="94" pX="0.5" pY="0.5" oX="64" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_02_ 0" x="1036" y="1420" w="29" h="91" pX="0.5" pY="0.5" oX="64" oY="30" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_03_ 0" x="889" y="63" w="29" h="86" pX="0.5" pY="0.5" oX="64" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_04_ 1" x="867" y="1083" w="102" h="57" pX="0.5" pY="0.5" oX="29" oY="49" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_05_ 1" x="1261" y="967" w="101" h="49" pX="0.5" pY="0.5" oX="35" oY="57" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_06_ 1" x="971" y="1376" w="98" h="44" pX="0.5" pY="0.5" oX="43" oY="62" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_07_ 2" x="1045" y="0" w="102" h="60" pX="0.5" pY="0.5" oX="30" oY="49" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_08_ 2" x="591" y="1232" w="101" h="53" pX="0.5" pY="0.5" oX="25" oY="57" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_09_ 2" x="76" y="1327" w="98" h="48" pX="0.5" pY="0.5" oX="20" oY="62" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_10_ 3" x="1441" y="1443" w="29" h="93" pX="0.5" pY="0.5" oX="68" oY="30" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_11_ 3" x="114" y="1469" w="29" h="83" pX="0.5" pY="0.5" oX="68" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_12_ 3" x="1470" y="1476" w="29" h="78" pX="0.5" pY="0.5" oX="68" oY="51" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_13_ 4" x="966" y="393" w="78" h="82" pX="0.5" pY="0.5" oX="42" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_14_ 4" x="1037" y="941" w="78" h="79" pX="0.5" pY="0.5" oX="45" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_15_ 4" x="693" y="1164" w="76" h="74" pX="0.5" pY="0.5" oX="51" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_16_ 5" x="1147" y="619" w="74" h="77" pX="0.5" pY="0.5" oX="45" oY="34" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_17_ 5" x="1221" y="615" w="76" h="72" pX="0.5" pY="0.5" oX="47" oY="43" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_18_ 5" x="1296" y="759" w="76" h="67" pX="0.5" pY="0.5" oX="51" oY="53" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_19_ 6" x="1215" y="1016" w="74" h="73" pX="0.5" pY="0.5" oX="42" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_20_ 6" x="1225" y="687" w="76" h="72" pX="0.5" pY="0.5" oX="38" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_21_ 6" x="843" y="1206" w="76" h="70" pX="0.5" pY="0.5" oX="34" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_22_ 7" x="725" y="416" w="78" h="90" pX="0.5" pY="0.5" oX="41" oY="33" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_23_ 7" x="973" y="237" w="78" h="81" pX="0.5" pY="0.5" oX="38" oY="42" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Dead To Down_24_ 7" x="1203" y="368" w="76" h="71" pX="0.5" pY="0.5" oX="34" oY="53" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_1_01_ 0" x="519" y="1286" w="57" h="66" pX="0.5" pY="0.5" oX="42" oY="64" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_1_02_ 1" x="585" y="1372" w="85" h="42" pX="0.5" pY="0.5" oX="34" oY="69" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_1_03_ 2" x="686" y="1333" w="85" h="49" pX="0.5" pY="0.5" oX="42" oY="75" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_1_04_ 3" x="1375" y="410" w="57" h="66" pX="0.5" pY="0.5" oX="60" oY="55" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_1_05_ 4" x="1375" y="673" w="69" h="66" pX="0.5" pY="0.5" oX="43" oY="63" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_1_06_ 5" x="884" y="1352" w="87" h="50" pX="0.5" pY="0.5" oX="35" oY="66" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_1_07_ 6" x="1279" y="356" w="87" h="58" pX="0.5" pY="0.5" oX="39" oY="67" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_1_08_ 7" x="1367" y="480" w="70" h="68" pX="0.5" pY="0.5" oX="49" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_2_01_ 0" x="1379" y="1375" w="61" h="64" pX="0.5" pY="0.5" oX="54" oY="64" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_2_02_ 1" x="1204" y="1343" w="81" h="54" pX="0.5" pY="0.5" oX="35" oY="68" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_2_03_ 2" x="504" y="1372" w="81" h="45" pX="0.5" pY="0.5" oX="45" oY="72" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_2_04_ 3" x="243" y="1082" w="63" h="64" pX="0.5" pY="0.5" oX="47" oY="57" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_2_05_ 4" x="540" y="514" w="93" h="53" pX="0.5" pY="0.5" oX="31" oY="69" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_2_06_ 5" x="1190" y="939" w="71" h="77" pX="0.5" pY="0.5" oX="41" oY="51" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_2_07_ 6" x="1372" y="607" w="71" h="66" pX="0.5" pY="0.5" oX="49" oY="65" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_2_08_ 7" x="1277" y="1143" w="94" h="54" pX="0.5" pY="0.5" oX="37" oY="63" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_3_01_ 0" x="1427" y="187" w="46" h="73" pX="0.5" pY="0.5" oX="59" oY="51" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_3_02_ 1" x="848" y="1402" w="101" h="41" pX="0.5" pY="0.5" oX="42" oY="75" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_3_03_ 2" x="576" y="1335" w="101" h="37" pX="0.5" pY="0.5" oX="18" oY="75" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_3_04_ 3" x="277" y="1337" w="46" h="79" pX="0.5" pY="0.5" oX="56" oY="62" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_3_05_ 4" x="692" y="1277" w="92" h="56" pX="0.5" pY="0.5" oX="39" oY="61" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_3_06_ 5" x="1358" y="228" w="69" h="65" pX="0.5" pY="0.5" oX="51" oY="67" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_3_07_ 6" x="1375" y="807" w="68" h="66" pX="0.5" pY="0.5" oX="41" oY="60" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_3_08_ 7" x="1200" y="1213" w="92" h="58" pX="0.5" pY="0.5" oX="30" oY="67" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_4_01_ 0" x="1015" y="790" w="45" h="76" pX="0.5" pY="0.5" oX="67" oY="51" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_4_02_ 1" x="1325" y="68" w="104" h="44" pX="0.5" pY="0.5" oX="39" oY="75" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_4_03_ 2" x="1069" y="1381" w="104" h="41" pX="0.5" pY="0.5" oX="18" oY="66" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_4_04_ 3" x="1425" y="112" w="45" h="75" pX="0.5" pY="0.5" oX="49" oY="66" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_4_05_ 4" x="1275" y="186" w="76" h="64" pX="0.5" pY="0.5" oX="55" oY="61" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_4_06_ 5" x="771" y="1374" w="77" h="54" pX="0.5" pY="0.5" oX="43" oY="78" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_4_07_ 6" x="1366" y="353" w="77" h="57" pX="0.5" pY="0.5" oX="41" oY="60" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Down_4_08_ 7" x="0" y="1283" w="76" h="63" pX="0.5" pY="0.5" oX="30" oY="62" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_01_ 0" x="1470" y="626" w="27" h="85" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_02_ 0" x="1356" y="1439" w="31" h="88" pX="0.5" pY="0.5" oX="67" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_03_ 0" x="1436" y="873" w="35" h="86" pX="0.5" pY="0.5" oX="67" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_04_ 1" x="852" y="1005" w="105" h="60" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_05_ 1" x="414" y="1286" w="105" h="49" pX="0.5" pY="0.5" oX="29" oY="58" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_06_ 1" x="1297" y="1329" w="102" h="46" pX="0.5" pY="0.5" oX="37" oY="63" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_07_ 2" x="193" y="921" w="105" h="61" pX="0.5" pY="0.5" oX="32" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_08_ 2" x="969" y="1097" w="105" h="55" pX="0.5" pY="0.5" oX="27" oY="51" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_09_ 2" x="1074" y="1097" w="102" h="56" pX="0.5" pY="0.5" oX="22" oY="50" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_10_ 3" x="476" y="1378" w="27" h="93" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_11_ 3" x="752" y="1428" w="31" h="86" pX="0.5" pY="0.5" oX="63" oY="32" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_12_ 3" x="1267" y="1418" w="35" h="80" pX="0.5" pY="0.5" oX="59" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_13_ 4" x="0" y="1040" w="79" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_14_ 4" x="618" y="1081" w="79" h="76" pX="0.5" pY="0.5" oX="46" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_15_ 4" x="231" y="1221" w="77" h="69" pX="0.5" pY="0.5" oX="55" oY="41" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_16_ 5" x="777" y="924" w="75" h="86" pX="0.5" pY="0.5" oX="40" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_17_ 5" x="697" y="1086" w="75" h="78" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_18_ 5" x="1225" y="1271" w="72" h="72" pX="0.5" pY="0.5" oX="43" oY="52" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_19_ 6" x="1151" y="866" w="75" h="73" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_20_ 6" x="1150" y="696" w="75" h="75" pX="0.5" pY="0.5" oX="46" oY="36" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_21_ 6" x="0" y="1117" w="72" h="77" pX="0.5" pY="0.5" oX="46" oY="32" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_22_ 7" x="725" y="327" w="79" h="89" pX="0.5" pY="0.5" oX="42" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_23_ 7" x="995" y="475" w="79" h="80" pX="0.5" pY="0.5" oX="35" oY="34" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Evade_24_ 7" x="0" y="1214" w="77" h="69" pX="0.5" pY="0.5" oX="29" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_01_ 0" x="1470" y="626" w="27" h="85" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_02_ 0" x="1115" y="1422" w="29" h="90" pX="0.5" pY="0.5" oX="66" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_03_ 0" x="0" y="1406" w="28" h="92" pX="0.5" pY="0.5" oX="66" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_04_ 1" x="852" y="1005" w="105" h="60" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_05_ 1" x="308" y="1237" w="106" h="50" pX="0.5" pY="0.5" oX="29" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_06_ 1" x="994" y="1331" w="105" h="45" pX="0.5" pY="0.5" oX="36" oY="60" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_07_ 2" x="193" y="921" w="105" h="61" pX="0.5" pY="0.5" oX="32" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_08_ 2" x="1176" y="1092" w="106" h="51" pX="0.5" pY="0.5" oX="26" oY="56" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_09_ 2" x="1099" y="1336" w="105" h="45" pX="0.5" pY="0.5" oX="20" oY="60" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_10_ 3" x="350" y="1414" w="27" h="93" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_11_ 3" x="85" y="1467" w="29" h="84" pX="0.5" pY="0.5" oX="66" oY="33" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_12_ 3" x="1495" y="1382" w="28" h="73" pX="0.5" pY="0.5" oX="67" oY="49" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_13_ 4" x="0" y="1040" w="79" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_14_ 4" x="399" y="939" w="80" h="80" pX="0.5" pY="0.5" oX="43" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_15_ 4" x="995" y="711" w="80" h="79" pX="0.5" pY="0.5" oX="48" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_16_ 5" x="777" y="924" w="75" h="86" pX="0.5" pY="0.5" oX="40" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_17_ 5" x="1140" y="1016" w="75" h="76" pX="0.5" pY="0.5" oX="43" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_18_ 5" x="1285" y="250" w="73" h="66" pX="0.5" pY="0.5" oX="48" oY="52" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_19_ 6" x="1151" y="866" w="75" h="73" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_20_ 6" x="1128" y="384" w="75" h="77" pX="0.5" pY="0.5" oX="43" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_21_ 6" x="1195" y="540" w="73" h="75" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_22_ 7" x="725" y="327" w="79" h="89" pX="0.5" pY="0.5" oX="42" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_23_ 7" x="0" y="962" w="80" h="78" pX="0.5" pY="0.5" oX="38" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Get Hit_24_ 7" x="1151" y="146" w="80" h="67" pX="0.5" pY="0.5" oX="33" oY="52" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_01_ 0" x="637" y="1414" w="29" h="96" pX="0.5" pY="0.5" oX="65" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_02_ 0" x="666" y="1418" w="28" h="96" pX="0.5" pY="0.5" oX="65" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_03_ 0" x="1443" y="739" w="31" h="96" pX="0.5" pY="0.5" oX="65" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_04_ 1" x="1268" y="509" w="99" h="51" pX="0.5" pY="0.5" oX="31" oY="54" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_05_ 1" x="1261" y="916" w="98" h="51" pX="0.5" pY="0.5" oX="32" oY="54" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_06_ 1" x="1226" y="70" w="99" h="51" pX="0.5" pY="0.5" oX="31" oY="54" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_07_ 2" x="77" y="1274" w="99" h="53" pX="0.5" pY="0.5" oX="31" oY="54" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_08_ 2" x="1018" y="1278" w="98" h="53" pX="0.5" pY="0.5" oX="31" oY="54" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_09_ 2" x="919" y="1254" w="99" h="53" pX="0.5" pY="0.5" oX="31" oY="54" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_10_ 3" x="448" y="1471" w="29" h="76" pX="0.5" pY="0.5" oX="67" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_11_ 3" x="1499" y="1455" w="27" h="75" pX="0.5" pY="0.5" oX="68" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_12_ 3" x="1470" y="107" w="31" h="75" pX="0.5" pY="0.5" oX="65" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_13_ 4" x="763" y="164" w="81" h="83" pX="0.5" pY="0.5" oX="39" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_14_ 4" x="887" y="405" w="79" h="83" pX="0.5" pY="0.5" oX="41" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_15_ 4" x="1051" y="222" w="75" h="83" pX="0.5" pY="0.5" oX="45" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_16_ 5" x="1299" y="0" w="73" h="68" pX="0.5" pY="0.5" oX="42" oY="42" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_17_ 5" x="1289" y="1016" w="75" h="65" pX="0.5" pY="0.5" oX="40" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_18_ 5" x="1367" y="1197" w="77" h="61" pX="0.5" pY="0.5" oX="38" oY="49" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_19_ 6" x="1151" y="461" w="73" h="79" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_20_ 6" x="1075" y="710" w="75" h="79" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_21_ 6" x="1074" y="467" w="77" h="79" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_22_ 7" x="322" y="1167" w="81" h="68" pX="0.5" pY="0.5" oX="41" oY="47" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_23_ 7" x="72" y="1144" w="79" h="70" pX="0.5" pY="0.5" oX="41" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle Fidget_24_ 7" x="1210" y="285" w="75" h="71" pX="0.5" pY="0.5" oX="41" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_01_ 0" x="1470" y="626" w="27" h="85" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_02_ 0" x="1470" y="541" w="27" h="85" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_03_ 0" x="1470" y="260" w="27" h="85" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_04_ 0" x="1472" y="1051" w="28" h="85" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_05_ 0" x="1464" y="456" w="27" h="85" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_06_ 1" x="852" y="1005" w="105" h="60" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_07_ 1" x="596" y="969" w="105" h="60" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_08_ 1" x="957" y="1023" w="105" h="60" pX="0.5" pY="0.5" oX="25" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_09_ 1" x="479" y="1009" w="105" h="60" pX="0.5" pY="0.5" oX="25" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_10_ 1" x="317" y="1019" w="104" h="60" pX="0.5" pY="0.5" oX="25" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_11_ 2" x="193" y="921" w="105" h="61" pX="0.5" pY="0.5" oX="32" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_12_ 2" x="911" y="805" w="104" h="61" pX="0.5" pY="0.5" oX="32" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_13_ 2" x="499" y="894" w="105" h="61" pX="0.5" pY="0.5" oX="31" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_14_ 2" x="852" y="944" w="105" h="61" pX="0.5" pY="0.5" oX="31" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_15_ 2" x="84" y="946" w="105" h="61" pX="0.5" pY="0.5" oX="31" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_16_ 3" x="350" y="1414" w="27" h="93" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_17_ 3" x="422" y="1378" w="27" h="93" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_18_ 3" x="323" y="1414" w="27" h="93" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_19_ 3" x="1173" y="1440" w="28" h="93" pX="0.5" pY="0.5" oX="67" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_20_ 3" x="449" y="1378" w="27" h="93" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_21_ 4" x="0" y="1040" w="79" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_22_ 4" x="1072" y="137" w="79" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_23_ 4" x="1072" y="60" w="79" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_24_ 4" x="1067" y="790" w="79" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_25_ 4" x="79" y="1067" w="79" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_26_ 5" x="777" y="924" w="75" h="86" pX="0.5" pY="0.5" oX="40" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_27_ 5" x="702" y="898" w="75" h="86" pX="0.5" pY="0.5" oX="40" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_28_ 5" x="84" y="386" w="75" h="87" pX="0.5" pY="0.5" oX="40" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_29_ 5" x="919" y="63" w="75" h="87" pX="0.5" pY="0.5" oX="40" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_30_ 5" x="919" y="150" w="75" h="87" pX="0.5" pY="0.5" oX="40" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_31_ 6" x="1151" y="866" w="75" h="73" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_32_ 6" x="1151" y="73" w="75" h="73" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_33_ 6" x="1125" y="1153" w="75" h="73" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_34_ 6" x="1151" y="0" w="75" h="73" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_35_ 6" x="1221" y="771" w="75" h="73" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_36_ 7" x="725" y="327" w="79" h="89" pX="0.5" pY="0.5" oX="42" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_37_ 7" x="710" y="575" w="79" h="89" pX="0.5" pY="0.5" oX="42" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_38_ 7" x="718" y="664" w="79" h="89" pX="0.5" pY="0.5" oX="42" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_39_ 7" x="684" y="238" w="79" h="89" pX="0.5" pY="0.5" oX="42" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Idle_40_ 7" x="726" y="75" w="79" h="89" pX="0.5" pY="0.5" oX="42" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_01_ 0" x="1474" y="711" w="25" h="90" pX="0.5" pY="0.5" oX="68" oY="13" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_02_ 0" x="529" y="1417" w="26" h="96" pX="0.5" pY="0.5" oX="67" oY="15" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_03_ 0" x="1201" y="1440" w="25" h="104" pX="0.5" pY="0.5" oX="68" oY="19" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_04_ 0" x="206" y="1376" w="25" h="98" pX="0.5" pY="0.5" oX="68" oY="22" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_05_ 0" x="555" y="1417" w="25" h="99" pX="0.5" pY="0.5" oX="68" oY="23" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_06_ 0" x="1226" y="1440" w="26" h="100" pX="0.5" pY="0.5" oX="68" oY="20" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_07_ 0" x="611" y="1414" w="26" h="109" pX="0.5" pY="0.5" oX="67" oY="15" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_08_ 0" x="1065" y="1422" w="25" h="105" pX="0.5" pY="0.5" oX="68" oY="14" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_09_ 1" x="237" y="684" w="116" h="61" pX="0.5" pY="0.5" oX="26" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_10_ 1" x="201" y="864" w="117" h="57" pX="0.5" pY="0.5" oX="26" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_11_ 1" x="400" y="567" w="118" h="61" pX="0.5" pY="0.5" oX="26" oY="43" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_12_ 1" x="577" y="742" w="123" h="57" pX="0.5" pY="0.5" oX="22" oY="41" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_13_ 1" x="189" y="982" w="128" h="50" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_14_ 1" x="390" y="1120" w="127" h="47" pX="0.5" pY="0.5" oX="23" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_15_ 1" x="184" y="1032" w="122" h="50" pX="0.5" pY="0.5" oX="23" oY="48" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_16_ 1" x="0" y="627" w="119" h="60" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_17_ 2" x="780" y="867" w="117" h="57" pX="0.5" pY="0.5" oX="18" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_18_ 2" x="440" y="187" w="117" h="65" pX="0.5" pY="0.5" oX="18" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_19_ 2" x="479" y="955" w="117" h="54" pX="0.5" pY="0.5" oX="17" oY="43" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_20_ 2" x="417" y="507" w="123" h="60" pX="0.5" pY="0.5" oX="16" oY="41" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_21_ 2" x="427" y="449" w="128" h="58" pX="0.5" pY="0.5" oX="12" oY="43" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_22_ 2" x="590" y="687" w="128" h="55" pX="0.5" pY="0.5" oX="10" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_23_ 2" x="700" y="753" w="122" h="57" pX="0.5" pY="0.5" oX="16" oY="48" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_24_ 2" x="421" y="1069" w="119" h="51" pX="0.5" pY="0.5" oX="18" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_25_ 3" x="231" y="1376" w="25" h="96" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_26_ 3" x="422" y="1471" w="26" h="86" pX="0.5" pY="0.5" oX="68" oY="22" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_27_ 3" x="1474" y="0" w="25" h="92" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_28_ 3" x="1438" y="959" w="26" h="114" pX="0.5" pY="0.5" oX="67" oY="17" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_29_ 3" x="1444" y="584" w="26" h="114" pX="0.5" pY="0.5" oX="67" oY="19" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_30_ 3" x="1446" y="1073" w="26" h="113" pX="0.5" pY="0.5" oX="67" oY="19" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_31_ 3" x="129" y="1375" w="27" h="94" pX="0.5" pY="0.5" oX="67" oY="24" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_32_ 3" x="181" y="1376" w="25" h="98" pX="0.5" pY="0.5" oX="68" oY="22" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_33_ 4" x="797" y="652" w="84" h="81" pX="0.5" pY="0.5" oX="41" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_34_ 4" x="618" y="892" w="84" h="77" pX="0.5" pY="0.5" oX="41" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_35_ 4" x="804" y="326" w="85" h="79" pX="0.5" pY="0.5" oX="41" oY="32" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_36_ 4" x="634" y="415" w="91" h="78" pX="0.5" pY="0.5" oX="35" oY="36" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_37_ 4" x="547" y="0" w="97" h="76" pX="0.5" pY="0.5" oX="35" oY="36" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_38_ 4" x="626" y="76" w="93" h="77" pX="0.5" pY="0.5" oX="39" oY="34" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_39_ 4" x="276" y="97" w="89" h="90" pX="0.5" pY="0.5" oX="39" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_40_ 4" x="432" y="282" w="86" h="89" pX="0.5" pY="0.5" oX="39" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_41_ 5" x="873" y="571" w="84" h="78" pX="0.5" pY="0.5" oX="41" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_42_ 5" x="805" y="69" w="84" h="80" pX="0.5" pY="0.5" oX="41" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_43_ 5" x="557" y="162" w="85" h="86" pX="0.5" pY="0.5" oX="41" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_44_ 5" x="90" y="192" w="85" h="98" pX="0.5" pY="0.5" oX="41" oY="24" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_45_ 5" x="90" y="96" w="93" h="96" pX="0.5" pY="0.5" oX="35" oY="24" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_46_ 5" x="97" y="0" w="95" h="93" pX="0.5" pY="0.5" oX="36" oY="25" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_47_ 5" x="540" y="343" w="90" h="80" pX="0.5" pY="0.5" oX="39" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_48_ 5" x="245" y="471" w="86" h="87" pX="0.5" pY="0.5" oX="39" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_49_ 6" x="1067" y="867" w="84" h="72" pX="0.5" pY="0.5" oX="36" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_50_ 6" x="642" y="153" w="84" h="85" pX="0.5" pY="0.5" oX="36" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_51_ 6" x="599" y="248" w="85" h="84" pX="0.5" pY="0.5" oX="35" oY="33" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_52_ 6" x="158" y="1082" w="85" h="71" pX="0.5" pY="0.5" oX="35" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_53_ 6" x="644" y="0" w="95" h="75" pX="0.5" pY="0.5" oX="32" oY="37" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_54_ 6" x="452" y="0" w="95" h="80" pX="0.5" pY="0.5" oX="30" oY="35" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_55_ 6" x="536" y="80" w="90" h="82" pX="0.5" pY="0.5" oX="32" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_56_ 6" x="636" y="493" w="86" h="82" pX="0.5" pY="0.5" oX="36" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_57_ 7" x="117" y="800" w="84" h="83" pX="0.5" pY="0.5" oX="36" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_58_ 7" x="957" y="570" w="84" h="76" pX="0.5" pY="0.5" oX="36" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_59_ 7" x="763" y="247" w="85" h="79" pX="0.5" pY="0.5" oX="35" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_60_ 7" x="192" y="0" w="91" h="93" pX="0.5" pY="0.5" oX="35" oY="24" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_61_ 7" x="0" y="0" w="97" h="96" pX="0.5" pY="0.5" oX="29" oY="23" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_62_ 7" x="183" y="93" w="93" h="94" pX="0.5" pY="0.5" oX="29" oY="25" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_63_ 7" x="822" y="733" w="89" h="75" pX="0.5" pY="0.5" oX="33" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Running_64_ 7" x="331" y="473" w="86" h="86" pX="0.5" pY="0.5" oX="36" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_01_ 0" x="1470" y="626" w="27" h="85" pX="0.5" pY="0.5" oX="66" oY="31" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_02_ 0" x="477" y="1471" w="26" h="83" pX="0.5" pY="0.5" oX="67" oY="32" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_03_ 0" x="143" y="1474" w="27" h="81" pX="0.5" pY="0.5" oX="66" oY="32" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_04_ 1" x="852" y="1005" w="105" h="60" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_05_ 1" x="722" y="506" w="105" h="65" pX="0.5" pY="0.5" oX="34" oY="42" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_06_ 1" x="965" y="646" w="98" h="65" pX="0.5" pY="0.5" oX="52" oY="41" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_07_ 2" x="193" y="921" w="105" h="61" pX="0.5" pY="0.5" oX="32" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_08_ 2" x="472" y="688" w="105" h="67" pX="0.5" pY="0.5" oX="22" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_09_ 2" x="739" y="0" w="98" h="69" pX="0.5" pY="0.5" oX="11" oY="38" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_10_ 3" x="350" y="1414" w="27" h="93" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_11_ 3" x="1302" y="1418" w="26" h="107" pX="0.5" pY="0.5" oX="68" oY="18" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_12_ 3" x="1443" y="260" w="27" h="113" pX="0.5" pY="0.5" oX="68" oY="23" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_13_ 4" x="0" y="1040" w="79" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_14_ 4" x="1116" y="546" w="79" h="73" pX="0.5" pY="0.5" oX="47" oY="42" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_15_ 4" x="1226" y="0" w="73" h="70" pX="0.5" pY="0.5" oX="60" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_16_ 5" x="777" y="924" w="75" h="86" pX="0.5" pY="0.5" oX="40" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_17_ 5" x="844" y="149" w="75" h="88" pX="0.5" pY="0.5" oX="46" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_18_ 5" x="429" y="844" w="70" h="95" pX="0.5" pY="0.5" oX="58" oY="29" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_19_ 6" x="1151" y="866" w="75" h="73" pX="0.5" pY="0.5" oX="46" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_20_ 6" x="1226" y="844" w="75" h="72" pX="0.5" pY="0.5" oX="40" oY="41" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_21_ 6" x="1372" y="739" w="70" h="68" pX="0.5" pY="0.5" oX="33" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_22_ 7" x="725" y="327" w="79" h="89" pX="0.5" pY="0.5" oX="42" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_23_ 7" x="555" y="423" w="79" h="91" pX="0.5" pY="0.5" oX="35" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Use Skill_24_ 7" x="545" y="799" w="73" h="95" pX="0.5" pY="0.5" oX="28" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_01_ 0" x="156" y="1376" w="25" h="98" pX="0.5" pY="0.5" oX="68" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_02_ 0" x="256" y="1416" w="25" h="96" pX="0.5" pY="0.5" oX="68" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_03_ 0" x="1473" y="1136" w="26" h="91" pX="0.5" pY="0.5" oX="67" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_04_ 0" x="281" y="1416" w="25" h="96" pX="0.5" pY="0.5" oX="68" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_05_ 0" x="397" y="1378" w="25" h="101" pX="0.5" pY="0.5" oX="68" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_06_ 0" x="1470" y="1382" w="25" h="94" pX="0.5" pY="0.5" oX="68" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_07_ 0" x="1464" y="959" w="26" h="92" pX="0.5" pY="0.5" oX="67" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_08_ 0" x="503" y="1417" w="26" h="96" pX="0.5" pY="0.5" oX="67" oY="28" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_09_ 1" x="355" y="628" w="117" h="61" pX="0.5" pY="0.5" oX="25" oY="43" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_10_ 1" x="472" y="628" w="118" h="60" pX="0.5" pY="0.5" oX="24" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_11_ 1" x="168" y="558" w="119" h="61" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_12_ 1" x="518" y="567" w="118" h="61" pX="0.5" pY="0.5" oX="24" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_13_ 1" x="238" y="623" w="117" h="61" pX="0.5" pY="0.5" oX="25" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_14_ 1" x="201" y="805" w="118" h="59" pX="0.5" pY="0.5" oX="24" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_15_ 1" x="590" y="628" w="120" h="59" pX="0.5" pY="0.5" oX="24" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_16_ 1" x="119" y="680" w="118" h="60" pX="0.5" pY="0.5" oX="24" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_17_ 2" x="0" y="747" w="117" h="60" pX="0.5" pY="0.5" oX="19" oY="43" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_18_ 2" x="120" y="619" w="118" h="61" pX="0.5" pY="0.5" oX="19" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_19_ 2" x="780" y="810" w="119" h="57" pX="0.5" pY="0.5" oX="18" oY="46" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_20_ 2" x="118" y="740" w="117" h="60" pX="0.5" pY="0.5" oX="19" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_21_ 2" x="353" y="689" w="117" h="60" pX="0.5" pY="0.5" oX="19" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_22_ 2" x="0" y="687" w="118" h="60" pX="0.5" pY="0.5" oX="19" oY="45" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_23_ 2" x="0" y="567" w="120" h="60" pX="0.5" pY="0.5" oX="17" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_24_ 2" x="235" y="745" w="117" h="60" pX="0.5" pY="0.5" oX="20" oY="44" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_25_ 3" x="820" y="1428" w="25" h="106" pX="0.5" pY="0.5" oX="68" oY="20" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_26_ 3" x="1416" y="1443" w="25" h="108" pX="0.5" pY="0.5" oX="68" oY="22" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_27_ 3" x="1437" y="410" w="27" h="115" pX="0.5" pY="0.5" oX="67" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_28_ 3" x="585" y="1414" w="26" h="109" pX="0.5" pY="0.5" oX="67" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_29_ 3" x="1090" y="1422" w="25" h="105" pX="0.5" pY="0.5" oX="68" oY="20" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_30_ 3" x="1011" y="1420" w="25" h="106" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_31_ 3" x="1447" y="1186" w="26" h="111" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_32_ 3" x="986" y="1420" w="25" h="106" pX="0.5" pY="0.5" oX="68" oY="21" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_33_ 4" x="618" y="810" w="84" h="82" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_34_ 4" x="803" y="416" w="84" h="81" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_35_ 4" x="0" y="807" w="89" h="78" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_36_ 4" x="1063" y="638" w="84" h="72" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_37_ 4" x="0" y="885" w="84" h="77" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_38_ 4" x="306" y="1079" w="84" h="72" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_39_ 4" x="881" y="649" w="84" h="78" pX="0.5" pY="0.5" oX="40" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_40_ 4" x="911" y="727" w="84" h="78" pX="0.5" pY="0.5" oX="40" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_41_ 5" x="77" y="290" w="84" h="96" pX="0.5" pY="0.5" oX="40" oY="25" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_42_ 5" x="348" y="286" w="84" h="95" pX="0.5" pY="0.5" oX="40" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_43_ 5" x="272" y="187" w="84" h="99" pX="0.5" pY="0.5" oX="40" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_44_ 5" x="175" y="282" w="84" h="98" pX="0.5" pY="0.5" oX="40" oY="25" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_45_ 5" x="0" y="478" w="84" h="89" pX="0.5" pY="0.5" oX="40" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_46_ 5" x="84" y="473" w="84" h="89" pX="0.5" pY="0.5" oX="40" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_47_ 5" x="259" y="286" w="89" h="91" pX="0.5" pY="0.5" oX="40" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_48_ 5" x="161" y="380" w="84" h="93" pX="0.5" pY="0.5" oX="40" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_49_ 6" x="973" y="318" w="84" h="75" pX="0.5" pY="0.5" oX="37" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_50_ 6" x="1044" y="393" w="84" h="74" pX="0.5" pY="0.5" oX="37" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_51_ 6" x="983" y="866" w="84" h="75" pX="0.5" pY="0.5" oX="37" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_52_ 6" x="889" y="315" w="84" h="78" pX="0.5" pY="0.5" oX="37" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_53_ 6" x="789" y="571" w="84" h="81" pX="0.5" pY="0.5" oX="37" oY="39" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_54_ 6" x="848" y="237" w="84" h="78" pX="0.5" pY="0.5" oX="37" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_55_ 6" x="827" y="497" w="89" h="74" pX="0.5" pY="0.5" oX="32" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_56_ 6" x="783" y="1065" w="84" h="71" pX="0.5" pY="0.5" oX="37" oY="40" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_57_ 7" x="452" y="80" w="84" h="90" pX="0.5" pY="0.5" oX="37" oY="25" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_58_ 7" x="343" y="381" w="84" h="92" pX="0.5" pY="0.5" oX="37" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_59_ 7" x="183" y="187" w="89" h="95" pX="0.5" pY="0.5" oX="32" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_60_ 7" x="0" y="386" w="84" h="92" pX="0.5" pY="0.5" oX="37" oY="25" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_61_ 7" x="368" y="94" w="84" h="93" pX="0.5" pY="0.5" oX="37" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_62_ 7" x="259" y="377" w="84" h="94" pX="0.5" pY="0.5" oX="37" oY="27" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_63_ 7" x="356" y="187" w="84" h="95" pX="0.5" pY="0.5" oX="37" oY="26" oW="150" oH="150"/>
+  <sprite n="RTP_GrayWolf_Walking_64_ 7" x="368" y="0" w="84" h="94" pX="0.5" pY="0.5" oX="37" oY="26" oW="150" oH="150"/>
+</TextureAtlas>

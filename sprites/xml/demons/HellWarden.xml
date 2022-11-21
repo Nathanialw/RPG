@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="2949" height="2965" scale="1" format="RGBA8888">
+  <sprite n="HellWarden_Attack 1_01_ 0" x="2289" y="803" w="109" h="160" pX="0.5" pY="0.5" oX="105" oY="60" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_02_ 0" x="544" y="428" w="91" h="206" pX="0.5" pY="0.5" oX="105" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_03_ 0" x="2546" y="312" w="153" h="139" pX="0.5" pY="0.5" oX="34" oY="117" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_04_ 1" x="635" y="2548" w="98" h="155" pX="0.5" pY="0.5" oX="86" oY="64" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_05_ 1" x="733" y="2548" w="137" h="155" pX="0.5" pY="0.5" oX="97" oY="67" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_06_ 1" x="0" y="454" w="165" h="210" pX="0.5" pY="0.5" oX="10" oY="6" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_07_ 2" x="437" y="657" w="100" h="200" pX="0.5" pY="0.5" oX="88" oY="9" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_08_ 2" x="163" y="2380" w="138" h="158" pX="0.5" pY="0.5" oX="42" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_09_ 2" x="992" y="194" w="149" h="193" pX="0.5" pY="0.5" oX="90" oY="61" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_10_ 3" x="803" y="1626" w="99" h="175" pX="0.5" pY="0.5" oX="75" oY="32" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_11_ 3" x="2479" y="953" w="90" h="154" pX="0.5" pY="0.5" oX="82" oY="67" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_12_ 3" x="276" y="657" w="161" h="200" pX="0.5" pY="0.5" oX="89" oY="15" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_13_ 4" x="2813" y="1601" w="111" h="137" pX="0.5" pY="0.5" oX="83" oY="66" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_14_ 4" x="150" y="2704" w="151" h="152" pX="0.5" pY="0.5" oX="83" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_15_ 4" x="560" y="0" w="185" h="207" pX="0.5" pY="0.5" oX="7" oY="7" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_16_ 5" x="2156" y="963" w="101" h="160" pX="0.5" pY="0.5" oX="70" oY="55" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_17_ 5" x="459" y="1972" w="103" h="164" pX="0.5" pY="0.5" oX="80" oY="61" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_18_ 5" x="0" y="664" w="136" h="203" pX="0.5" pY="0.5" oX="58" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_19_ 6" x="1114" y="769" w="112" h="190" pX="0.5" pY="0.5" oX="90" oY="25" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_20_ 6" x="442" y="428" w="102" h="206" pX="0.5" pY="0.5" oX="82" oY="8" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_21_ 6" x="2048" y="168" w="106" h="167" pX="0.5" pY="0.5" oX="104" oY="89" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_22_ 7" x="1426" y="559" w="105" h="179" pX="0.5" pY="0.5" oX="76" oY="9" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_23_ 7" x="2657" y="1676" w="137" h="140" pX="0.5" pY="0.5" oX="44" oY="55" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 1_24_ 7" x="1315" y="1297" w="182" h="168" pX="0.5" pY="0.5" oX="72" oY="23" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_01_ 0" x="2140" y="2010" w="109" h="160" pX="0.5" pY="0.5" oX="105" oY="60" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_02_ 0" x="438" y="216" w="110" h="212" pX="0.5" pY="0.5" oX="59" oY="7" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_03_ 0" x="2685" y="2270" w="82" h="134" pX="0.5" pY="0.5" oX="105" oY="122" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_04_ 1" x="1115" y="2548" w="99" h="155" pX="0.5" pY="0.5" oX="94" oY="64" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_05_ 1" x="1000" y="1801" w="159" h="169" pX="0.5" pY="0.5" oX="93" oY="22" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_06_ 1" x="115" y="867" w="197" h="110" pX="0.5" pY="0.5" oX="0" oY="87" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_07_ 2" x="741" y="207" w="100" h="199" pX="0.5" pY="0.5" oX="71" oY="7" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_08_ 2" x="2140" y="1848" w="154" h="162" pX="0.5" pY="0.5" oX="10" oY="54" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_09_ 2" x="428" y="857" w="196" h="134" pX="0.5" pY="0.5" oX="60" oY="71" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_10_ 3" x="1222" y="1625" w="98" h="174" pX="0.5" pY="0.5" oX="67" oY="32" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_11_ 3" x="473" y="1627" w="111" h="175" pX="0.5" pY="0.5" oX="101" oY="66" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_12_ 3" x="165" y="454" w="72" h="208" pX="0.5" pY="0.5" oX="87" oY="10" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_13_ 4" x="2813" y="1464" w="111" h="137" pX="0.5" pY="0.5" oX="83" oY="66" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_14_ 4" x="652" y="607" w="113" h="199" pX="0.5" pY="0.5" oX="84" oY="3" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_15_ 4" x="773" y="2395" w="157" h="140" pX="0.5" pY="0.5" oX="26" oY="116" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_16_ 5" x="723" y="2233" w="101" h="162" pX="0.5" pY="0.5" oX="70" oY="55" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_17_ 5" x="1774" y="0" w="137" h="172" pX="0.5" pY="0.5" oX="109" oY="34" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_18_ 5" x="1180" y="0" w="160" h="190" pX="0.5" pY="0.5" oX="11" oY="19" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_19_ 6" x="1133" y="387" w="112" h="190" pX="0.5" pY="0.5" oX="99" oY="25" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_20_ 6" x="1333" y="757" w="144" h="184" pX="0.5" pY="0.5" oX="12" oY="30" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_21_ 6" x="2272" y="163" w="153" h="160" pX="0.5" pY="0.5" oX="94" oY="96" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_22_ 7" x="698" y="1626" w="105" h="175" pX="0.5" pY="0.5" oX="76" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_23_ 7" x="1356" y="185" w="101" h="184" pX="0.5" pY="0.5" oX="80" oY="68" oW="256" oH="256"/>
+  <sprite n="HellWarden_Attack 2_24_ 7" x="1340" y="0" w="163" h="185" pX="0.5" pY="0.5" oX="81" oY="18" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_01_ 0" x="2424" y="1119" w="130" h="104" pX="0.5" pY="0.5" oX="76" oY="101" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_02_ 0" x="2813" y="2010" w="130" h="104" pX="0.5" pY="0.5" oX="76" oY="101" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_03_ 0" x="828" y="2112" w="130" h="104" pX="0.5" pY="0.5" oX="76" oY="101" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_04_ 1" x="2794" y="441" w="98" h="137" pX="0.5" pY="0.5" oX="69" oY="71" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_05_ 1" x="2813" y="1738" w="98" h="137" pX="0.5" pY="0.5" oX="69" oY="71" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_06_ 1" x="2697" y="451" w="97" h="138" pX="0.5" pY="0.5" oX="69" oY="70" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_07_ 2" x="1549" y="2843" w="97" h="122" pX="0.5" pY="0.5" oX="99" oY="82" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_08_ 2" x="1743" y="2843" w="97" h="121" pX="0.5" pY="0.5" oX="99" oY="82" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_09_ 2" x="1646" y="2843" w="97" h="121" pX="0.5" pY="0.5" oX="99" oY="82" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_10_ 3" x="2702" y="2593" w="129" h="124" pX="0.5" pY="0.5" oX="59" oY="63" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_11_ 3" x="2702" y="2469" w="129" h="124" pX="0.5" pY="0.5" oX="59" oY="63" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_12_ 3" x="2697" y="2717" w="129" h="124" pX="0.5" pY="0.5" oX="59" oY="63" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_13_ 4" x="2812" y="1240" w="89" h="131" pX="0.5" pY="0.5" oX="78" oY="94" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_14_ 4" x="2769" y="1109" w="88" h="131" pX="0.5" pY="0.5" oX="78" oY="94" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_15_ 4" x="2812" y="846" w="88" h="132" pX="0.5" pY="0.5" oX="78" oY="93" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_16_ 5" x="1279" y="2852" w="127" h="113" pX="0.5" pY="0.5" oX="39" oY="68" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_17_ 5" x="1406" y="2844" w="126" h="113" pX="0.5" pY="0.5" oX="40" oY="68" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_18_ 5" x="1152" y="2852" w="127" h="113" pX="0.5" pY="0.5" oX="39" oY="68" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_19_ 6" x="254" y="2856" w="127" h="108" pX="0.5" pY="0.5" oX="90" oY="101" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_20_ 6" x="127" y="2857" w="127" h="108" pX="0.5" pY="0.5" oX="90" oY="101" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_21_ 6" x="0" y="2857" w="127" h="108" pX="0.5" pY="0.5" oX="90" oY="101" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_22_ 7" x="827" y="2853" w="93" h="112" pX="0.5" pY="0.5" oX="93" oY="82" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_23_ 7" x="734" y="2853" w="93" h="112" pX="0.5" pY="0.5" oX="93" oY="81" oW="256" oH="256"/>
+  <sprite n="HellWarden_Behavior_24_ 7" x="2857" y="1109" w="92" h="112" pX="0.5" pY="0.5" oX="93" oY="81" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_01_ 0" x="2352" y="2328" w="102" h="156" pX="0.5" pY="0.5" oX="90" oY="64" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_02_ 0" x="2568" y="2300" w="117" h="153" pX="0.5" pY="0.5" oX="101" oY="67" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_03_ 0" x="2569" y="154" w="133" h="150" pX="0.5" pY="0.5" oX="105" oY="70" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_04_ 1" x="2408" y="2147" w="121" h="156" pX="0.5" pY="0.5" oX="50" oY="63" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_05_ 1" x="415" y="2704" w="98" h="152" pX="0.5" pY="0.5" oX="72" oY="67" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_06_ 1" x="2166" y="2641" w="94" h="144" pX="0.5" pY="0.5" oX="78" oY="75" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_07_ 2" x="329" y="2064" w="130" h="164" pX="0.5" pY="0.5" oX="89" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_08_ 2" x="814" y="1445" w="107" h="181" pX="0.5" pY="0.5" oX="89" oY="25" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_09_ 2" x="0" y="1445" w="95" h="182" pX="0.5" pY="0.5" oX="89" oY="24" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_10_ 3" x="624" y="833" w="104" h="195" pX="0.5" pY="0.5" oX="85" oY="10" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_11_ 3" x="1661" y="174" w="112" h="174" pX="0.5" pY="0.5" oX="67" oY="31" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_12_ 3" x="2371" y="2612" w="125" h="148" pX="0.5" pY="0.5" oX="46" oY="57" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_13_ 4" x="2706" y="0" w="109" h="146" pX="0.5" pY="0.5" oX="88" oY="68" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_14_ 4" x="2706" y="146" w="109" h="145" pX="0.5" pY="0.5" oX="89" oY="71" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_15_ 4" x="2668" y="1249" w="144" h="123" pX="0.5" pY="0.5" oX="92" oY="80" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_16_ 5" x="1768" y="1206" w="125" h="171" pX="0.5" pY="0.5" oX="42" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_17_ 5" x="597" y="2233" w="126" h="162" pX="0.5" pY="0.5" oX="41" oY="53" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_18_ 5" x="2388" y="963" w="91" h="156" pX="0.5" pY="0.5" oX="78" oY="59" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_19_ 6" x="1600" y="1963" w="132" h="164" pX="0.5" pY="0.5" oX="95" oY="51" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_20_ 6" x="329" y="2233" w="134" h="162" pX="0.5" pY="0.5" oX="94" oY="53" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_21_ 6" x="911" y="963" w="93" h="191" pX="0.5" pY="0.5" oX="93" oY="24" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_22_ 7" x="1900" y="1035" w="122" h="168" pX="0.5" pY="0.5" oX="76" oY="17" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_23_ 7" x="1652" y="521" w="117" h="173" pX="0.5" pY="0.5" oX="76" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Block_24_ 7" x="2815" y="0" w="134" h="139" pX="0.5" pY="0.5" oX="47" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_01_ 0" x="1430" y="2695" w="119" h="149" pX="0.5" pY="0.5" oX="72" oY="97" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_02_ 0" x="1931" y="2641" w="118" h="147" pX="0.5" pY="0.5" oX="72" oY="98" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_03_ 0" x="2049" y="2641" w="117" h="146" pX="0.5" pY="0.5" oX="72" oY="99" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_04_ 1" x="885" y="2703" w="151" h="134" pX="0.5" pY="0.5" oX="16" oY="85" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_05_ 1" x="2535" y="1544" w="150" h="132" pX="0.5" pY="0.5" oX="17" oY="87" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_06_ 1" x="1281" y="2703" w="149" h="129" pX="0.5" pY="0.5" oX="18" oY="90" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_07_ 2" x="0" y="2397" w="159" h="152" pX="0.5" pY="0.5" oX="89" oY="61" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_08_ 2" x="301" y="2395" w="158" h="150" pX="0.5" pY="0.5" oX="89" oY="63" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_09_ 2" x="616" y="2395" w="157" h="149" pX="0.5" pY="0.5" oX="89" oY="65" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_10_ 3" x="351" y="1627" w="122" h="175" pX="0.5" pY="0.5" oX="85" oY="29" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_11_ 3" x="1441" y="1625" w="121" h="174" pX="0.5" pY="0.5" oX="85" oY="30" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_12_ 3" x="1320" y="1625" w="121" h="174" pX="0.5" pY="0.5" oX="85" oY="31" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_13_ 4" x="2813" y="1875" w="126" h="135" pX="0.5" pY="0.5" oX="71" oY="101" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_14_ 4" x="2812" y="713" w="126" h="133" pX="0.5" pY="0.5" oX="71" oY="103" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_15_ 4" x="2767" y="2338" w="126" h="131" pX="0.5" pY="0.5" oX="71" oY="105" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_16_ 5" x="2562" y="2458" w="140" h="153" pX="0.5" pY="0.5" oX="29" oY="61" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_17_ 5" x="2558" y="451" w="139" h="152" pX="0.5" pY="0.5" oX="30" oY="62" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_18_ 5" x="2517" y="1830" w="138" h="152" pX="0.5" pY="0.5" oX="31" oY="62" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_19_ 6" x="2668" y="1372" w="142" h="141" pX="0.5" pY="0.5" oX="93" oY="74" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_20_ 6" x="2662" y="603" w="141" h="139" pX="0.5" pY="0.5" oX="93" oY="76" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_21_ 6" x="2662" y="742" w="140" h="138" pX="0.5" pY="0.5" oX="92" oY="77" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_22_ 7" x="2558" y="1982" w="133" h="148" pX="0.5" pY="0.5" oX="76" oY="38" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_23_ 7" x="1656" y="2695" w="132" h="148" pX="0.5" pY="0.5" oX="76" oY="39" oW="256" oH="256"/>
+  <sprite n="HellWarden_Critical HP_24_ 7" x="2569" y="1101" w="132" h="148" pX="0.5" pY="0.5" oX="76" oY="40" oW="256" oH="256"/>
+  <sprite n="HellWarden_Dead_01_ 0" x="2131" y="656" w="163" h="147" pX="0.5" pY="0.5" oX="41" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Dead_02_ 1" x="745" y="0" w="199" h="108" pX="0.5" pY="0.5" oX="40" oY="98" oW="256" oH="256"/>
+  <sprite n="HellWarden_Dead_03_ 2" x="744" y="406" w="198" h="127" pX="0.5" pY="0.5" oX="23" oY="98" oW="256" oH="256"/>
+  <sprite n="HellWarden_Dead_04_ 3" x="0" y="2241" w="163" h="156" pX="0.5" pY="0.5" oX="52" oY="77" oW="256" oH="256"/>
+  <sprite n="HellWarden_Dead_05_ 4" x="930" y="2395" w="155" h="126" pX="0.5" pY="0.5" oX="74" oY="82" oW="256" oH="256"/>
+  <sprite n="HellWarden_Dead_06_ 5" x="1159" y="1800" w="169" h="122" pX="0.5" pY="0.5" oX="75" oY="113" oW="256" oH="256"/>
+  <sprite n="HellWarden_Dead_07_ 6" x="0" y="1975" w="168" h="113" pX="0.5" pY="0.5" oX="14" oY="83" oW="256" oH="256"/>
+  <sprite n="HellWarden_Dead_08_ 7" x="2380" y="1547" w="155" h="130" pX="0.5" pY="0.5" oX="23" oY="107" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_01_ 0" x="2414" y="1391" w="102" h="156" pX="0.5" pY="0.5" oX="90" oY="64" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_02_ 0" x="2506" y="796" w="119" h="153" pX="0.5" pY="0.5" oX="77" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_03_ 0" x="1485" y="2541" w="128" h="154" pX="0.5" pY="0.5" oX="67" oY="31" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_04_ 1" x="0" y="2549" w="121" h="156" pX="0.5" pY="0.5" oX="50" oY="63" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_05_ 1" x="824" y="2233" w="132" h="162" pX="0.5" pY="0.5" oX="57" oY="57" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_06_ 1" x="0" y="1627" w="143" h="177" pX="0.5" pY="0.5" oX="80" oY="36" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_07_ 2" x="1250" y="2068" w="130" h="164" pX="0.5" pY="0.5" oX="89" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_08_ 2" x="1214" y="2548" w="136" h="155" pX="0.5" pY="0.5" oX="77" oY="53" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_09_ 2" x="1473" y="2383" w="157" h="158" pX="0.5" pY="0.5" oX="33" oY="58" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_10_ 3" x="1226" y="957" w="106" h="189" pX="0.5" pY="0.5" oX="85" oY="16" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_11_ 3" x="992" y="771" w="122" h="192" pX="0.5" pY="0.5" oX="84" oY="17" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_12_ 3" x="97" y="232" w="128" h="222" pX="0.5" pY="0.5" oX="85" oY="22" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_13_ 4" x="2261" y="2639" w="109" h="146" pX="0.5" pY="0.5" oX="88" oY="68" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_14_ 4" x="1036" y="2703" w="116" h="150" pX="0.5" pY="0.5" oX="86" oY="54" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_15_ 4" x="2154" y="1359" w="140" h="161" pX="0.5" pY="0.5" oX="78" oY="38" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_16_ 5" x="123" y="1804" w="125" h="171" pX="0.5" pY="0.5" oX="42" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_17_ 5" x="608" y="1028" w="112" h="191" pX="0.5" pY="0.5" oX="72" oY="23" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_18_ 5" x="345" y="449" w="97" h="208" pX="0.5" pY="0.5" oX="114" oY="10" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_19_ 6" x="1903" y="1999" w="132" h="164" pX="0.5" pY="0.5" oX="95" oY="51" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_20_ 6" x="1876" y="2487" w="117" h="154" pX="0.5" pY="0.5" oX="80" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_21_ 6" x="2112" y="2330" w="99" h="157" pX="0.5" pY="0.5" oX="51" oY="34" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_22_ 7" x="1652" y="694" w="121" h="172" pX="0.5" pY="0.5" oX="76" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_23_ 7" x="1498" y="1271" w="122" h="177" pX="0.5" pY="0.5" oX="76" oY="20" oW="256" oH="256"/>
+  <sprite n="HellWarden_Evade_24_ 7" x="1498" y="738" w="147" h="178" pX="0.5" pY="0.5" oX="62" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_01_ 0" x="2156" y="1123" w="109" h="160" pX="0.5" pY="0.5" oX="105" oY="60" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_02_ 0" x="2295" y="0" w="107" h="159" pX="0.5" pY="0.5" oX="101" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_03_ 0" x="2294" y="1839" w="113" h="158" pX="0.5" pY="0.5" oX="97" oY="30" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_04_ 1" x="535" y="2549" w="100" h="155" pX="0.5" pY="0.5" oX="84" oY="64" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_05_ 1" x="1661" y="1793" w="108" h="170" pX="0.5" pY="0.5" oX="87" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_06_ 1" x="1330" y="375" w="113" h="184" pX="0.5" pY="0.5" oX="92" oY="35" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_07_ 2" x="125" y="1053" w="103" h="192" pX="0.5" pY="0.5" oX="88" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_08_ 2" x="944" y="0" w="109" h="194" pX="0.5" pY="0.5" oX="79" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_09_ 2" x="573" y="1445" w="113" h="182" pX="0.5" pY="0.5" oX="70" oY="26" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_10_ 3" x="1562" y="1625" w="99" h="173" pX="0.5" pY="0.5" oX="75" oY="32" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_11_ 3" x="98" y="1256" w="105" h="187" pX="0.5" pY="0.5" oX="74" oY="18" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_12_ 3" x="992" y="579" w="117" h="192" pX="0.5" pY="0.5" oX="73" oY="12" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_13_ 4" x="2699" y="304" w="111" h="137" pX="0.5" pY="0.5" oX="83" oY="66" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_14_ 4" x="2399" y="640" w="110" h="156" pX="0.5" pY="0.5" oX="93" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_15_ 4" x="0" y="1804" w="123" h="171" pX="0.5" pY="0.5" oX="92" oY="32" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_16_ 5" x="1266" y="2232" w="101" h="160" pX="0.5" pY="0.5" oX="70" oY="55" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_17_ 5" x="1013" y="1445" w="98" h="180" pX="0.5" pY="0.5" oX="86" oY="35" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_18_ 5" x="646" y="407" w="98" h="200" pX="0.5" pY="0.5" oX="105" oY="14" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_19_ 6" x="1109" y="579" w="112" h="190" pX="0.5" pY="0.5" oX="90" oY="25" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_20_ 6" x="902" y="1626" w="101" h="175" pX="0.5" pY="0.5" oX="86" oY="28" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_21_ 6" x="2260" y="1680" w="100" h="159" pX="0.5" pY="0.5" oX="66" oY="34" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_22_ 7" x="1773" y="1613" w="105" h="171" pX="0.5" pY="0.5" oX="76" oY="17" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_23_ 7" x="535" y="1219" w="119" h="185" pX="0.5" pY="0.5" oX="70" oY="12" oW="256" oH="256"/>
+  <sprite n="HellWarden_Get Hit_24_ 7" x="765" y="533" w="123" h="198" pX="0.5" pY="0.5" oX="59" oY="11" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_01_ 0" x="2294" y="482" w="119" h="158" pX="0.5" pY="0.5" oX="80" oY="62" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_02_ 0" x="993" y="2548" w="122" h="155" pX="0.5" pY="0.5" oX="79" oY="65" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_03_ 0" x="870" y="2548" w="123" h="155" pX="0.5" pY="0.5" oX="78" oY="68" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_04_ 1" x="2156" y="803" w="133" h="160" pX="0.5" pY="0.5" oX="38" oY="59" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_05_ 1" x="1843" y="2330" w="135" h="157" pX="0.5" pY="0.5" oX="34" oY="62" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_06_ 1" x="1613" y="2541" w="136" h="154" pX="0.5" pY="0.5" oX="31" oY="64" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_07_ 2" x="2425" y="0" w="143" h="156" pX="0.5" pY="0.5" oX="89" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_08_ 2" x="2360" y="1679" w="146" h="156" pX="0.5" pY="0.5" oX="89" oY="52" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_09_ 2" x="385" y="2549" w="150" h="155" pX="0.5" pY="0.5" oX="89" oY="54" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_10_ 3" x="765" y="731" w="126" h="194" pX="0.5" pY="0.5" oX="63" oY="10" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_11_ 3" x="1053" y="0" w="127" h="193" pX="0.5" pY="0.5" oX="62" oY="11" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_12_ 3" x="356" y="1053" w="129" h="192" pX="0.5" pY="0.5" oX="61" oY="12" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_13_ 4" x="2691" y="1975" w="122" h="141" pX="0.5" pY="0.5" oX="75" oY="64" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_14_ 4" x="2685" y="1513" w="124" h="139" pX="0.5" pY="0.5" oX="73" oY="67" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_15_ 4" x="2815" y="139" w="126" h="137" pX="0.5" pY="0.5" oX="71" oY="70" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_16_ 5" x="537" y="634" w="115" h="199" pX="0.5" pY="0.5" oX="56" oY="15" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_17_ 5" x="0" y="867" w="115" h="197" pX="0.5" pY="0.5" oX="55" oY="17" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_18_ 5" x="312" y="857" w="116" h="196" pX="0.5" pY="0.5" oX="53" oY="18" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_19_ 6" x="1984" y="684" w="119" h="166" pX="0.5" pY="0.5" oX="93" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_20_ 6" x="2155" y="331" w="119" h="163" pX="0.5" pY="0.5" oX="94" oY="52" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_21_ 6" x="2053" y="2170" w="120" h="160" pX="0.5" pY="0.5" oX="95" oY="55" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_22_ 7" x="1003" y="1625" w="133" h="175" pX="0.5" pY="0.5" oX="76" oY="9" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_23_ 7" x="1774" y="172" w="136" h="172" pX="0.5" pY="0.5" oX="76" oY="12" oW="256" oH="256"/>
+  <sprite n="HellWarden_Idle_24_ 7" x="1773" y="1784" w="138" h="170" pX="0.5" pY="0.5" oX="76" oY="14" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_01_ 0" x="2706" y="880" w="98" h="132" pX="0.5" pY="0.5" oX="86" oY="81" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_02_ 0" x="2812" y="978" w="98" h="131" pX="0.5" pY="0.5" oX="86" oY="82" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_03_ 0" x="2810" y="2207" w="98" h="131" pX="0.5" pY="0.5" oX="86" oY="82" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_04_ 1" x="2294" y="1394" w="120" h="118" pX="0.5" pY="0.5" oX="45" oY="72" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_05_ 1" x="2826" y="2835" w="120" h="118" pX="0.5" pY="0.5" oX="45" oY="72" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_06_ 1" x="2826" y="2717" w="121" h="118" pX="0.5" pY="0.5" oX="44" oY="72" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_07_ 2" x="2831" y="2469" w="118" h="103" pX="0.5" pY="0.5" oX="96" oY="106" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_08_ 2" x="728" y="925" w="119" h="103" pX="0.5" pY="0.5" oX="96" oY="106" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_09_ 2" x="1630" y="2422" w="119" h="102" pX="0.5" pY="0.5" oX="96" oY="107" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_10_ 3" x="920" y="2853" w="99" h="99" pX="0.5" pY="0.5" oX="92" oY="74" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_11_ 3" x="700" y="2133" w="100" h="99" pX="0.5" pY="0.5" oX="92" oY="74" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_12_ 3" x="587" y="2856" w="100" h="99" pX="0.5" pY="0.5" oX="92" oY="74" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_13_ 4" x="2701" y="1101" w="68" h="142" pX="0.5" pY="0.5" oX="93" oY="87" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_14_ 4" x="2569" y="1249" w="68" h="142" pX="0.5" pY="0.5" oX="93" oY="87" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_15_ 4" x="2173" y="2170" w="68" h="141" pX="0.5" pY="0.5" oX="93" oY="88" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_16_ 5" x="562" y="2135" w="138" h="98" pX="0.5" pY="0.5" oX="54" oY="70" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_17_ 5" x="995" y="1970" w="138" h="98" pX="0.5" pY="0.5" oX="54" oY="70" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_18_ 5" x="1380" y="2132" w="138" h="99" pX="0.5" pY="0.5" oX="54" oY="69" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_19_ 6" x="2810" y="1372" w="138" h="92" pX="0.5" pY="0.5" oX="84" oY="98" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_20_ 6" x="1527" y="2291" w="138" h="91" pX="0.5" pY="0.5" oX="84" oY="99" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_21_ 6" x="2810" y="2116" w="138" h="91" pX="0.5" pY="0.5" oX="84" oY="99" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_22_ 7" x="381" y="2856" w="68" h="106" pX="0.5" pY="0.5" oX="101" oY="91" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_23_ 7" x="449" y="2856" w="69" h="106" pX="0.5" pY="0.5" oX="101" oY="91" oW="256" oH="256"/>
+  <sprite n="HellWarden_Rest_24_ 7" x="518" y="2856" w="69" h="106" pX="0.5" pY="0.5" oX="101" oY="91" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_01_ 0" x="263" y="1627" w="88" h="176" pX="0.5" pY="0.5" oX="86" oY="55" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_02_ 0" x="2058" y="850" w="98" h="166" pX="0.5" pY="0.5" oX="81" oY="53" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_03_ 0" x="1549" y="2695" w="107" h="148" pX="0.5" pY="0.5" oX="89" oY="51" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_04_ 0" x="301" y="2704" w="114" h="152" pX="0.5" pY="0.5" oX="89" oY="52" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_05_ 0" x="121" y="2549" w="125" h="155" pX="0.5" pY="0.5" oX="89" oY="55" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_06_ 0" x="1085" y="2395" w="91" h="152" pX="0.5" pY="0.5" oX="86" oY="56" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_07_ 0" x="891" y="727" w="101" h="194" pX="0.5" pY="0.5" oX="71" oY="52" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_08_ 0" x="1539" y="363" w="101" h="177" pX="0.5" pY="0.5" oX="71" oY="55" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_09_ 1" x="878" y="1303" w="185" h="142" pX="0.5" pY="0.5" oX="38" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_10_ 1" x="165" y="2237" w="162" h="143" pX="0.5" pY="0.5" oX="40" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_11_ 1" x="0" y="2705" w="150" h="152" pX="0.5" pY="0.5" oX="62" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_12_ 1" x="2408" y="1991" w="150" h="156" pX="0.5" pY="0.5" oX="78" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_13_ 1" x="2529" y="2147" w="150" h="153" pX="0.5" pY="0.5" oX="84" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_14_ 1" x="1274" y="1465" w="173" h="158" pX="0.5" pY="0.5" oX="45" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_15_ 1" x="2249" y="2010" w="159" h="159" pX="0.5" pY="0.5" oX="20" oY="45" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_16_ 1" x="911" y="1154" w="186" h="148" pX="0.5" pY="0.5" oX="38" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_17_ 2" x="1127" y="1148" w="188" h="155" pX="0.5" pY="0.5" oX="37" oY="52" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_18_ 2" x="1818" y="1377" w="169" h="154" pX="0.5" pY="0.5" oX="58" oY="51" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_19_ 2" x="568" y="1802" w="164" h="170" pX="0.5" pY="0.5" oX="45" oY="27" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_20_ 2" x="1111" y="1303" w="163" h="180" pX="0.5" pY="0.5" oX="30" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_21_ 2" x="1503" y="0" w="158" h="180" pX="0.5" pY="0.5" oX="25" oY="11" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_22_ 2" x="1315" y="1146" w="183" h="151" pX="0.5" pY="0.5" oX="42" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_23_ 2" x="830" y="1958" w="165" h="154" pX="0.5" pY="0.5" oX="79" oY="54" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_24_ 2" x="720" y="1028" w="191" h="158" pX="0.5" pY="0.5" oX="33" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_25_ 3" x="1221" y="577" w="87" h="190" pX="0.5" pY="0.5" oX="91" oY="39" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_26_ 3" x="646" y="207" w="95" h="200" pX="0.5" pY="0.5" oX="87" oY="15" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_27_ 3" x="228" y="0" w="103" h="225" pX="0.5" pY="0.5" oX="74" oY="7" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_28_ 3" x="0" y="0" w="109" h="232" pX="0.5" pY="0.5" oX="68" oY="10" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_29_ 3" x="438" y="0" w="122" h="216" pX="0.5" pY="0.5" oX="55" oY="26" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_30_ 3" x="0" y="232" w="97" h="222" pX="0.5" pY="0.5" oX="83" oY="3" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_31_ 3" x="732" y="1801" w="98" h="170" pX="0.5" pY="0.5" oX="94" oY="38" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_32_ 3" x="548" y="216" w="98" h="205" pX="0.5" pY="0.5" oX="96" oY="36" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_33_ 4" x="2516" y="1391" w="152" h="153" pX="0.5" pY="0.5" oX="60" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_34_ 4" x="2035" y="1999" w="105" h="164" pX="0.5" pY="0.5" oX="90" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_35_ 4" x="732" y="1971" w="96" h="162" pX="0.5" pY="0.5" oX="96" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_36_ 4" x="1367" y="2383" w="106" h="158" pX="0.5" pY="0.5" oX="92" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_37_ 4" x="2154" y="1520" w="118" h="160" pX="0.5" pY="0.5" oX="89" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_38_ 4" x="2407" y="1835" w="110" h="156" pX="0.5" pY="0.5" oX="91" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_39_ 4" x="143" y="1627" w="120" h="176" pX="0.5" pY="0.5" oX="58" oY="45" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_40_ 4" x="1367" y="2232" w="160" h="151" pX="0.5" pY="0.5" oX="55" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_41_ 5" x="95" y="1445" w="122" h="182" pX="0.5" pY="0.5" oX="78" oY="39" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_42_ 5" x="1328" y="1799" w="136" h="169" pX="0.5" pY="0.5" oX="49" oY="40" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_43_ 5" x="1498" y="916" w="154" h="178" pX="0.5" pY="0.5" oX="48" oY="37" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_44_ 5" x="203" y="1245" w="157" h="186" pX="0.5" pY="0.5" oX="57" oY="36" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_45_ 5" x="720" y="1186" w="158" h="186" pX="0.5" pY="0.5" oX="57" oY="37" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_46_ 5" x="992" y="387" w="141" h="192" pX="0.5" pY="0.5" oX="57" oY="22" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_47_ 5" x="1595" y="1094" w="137" h="174" pX="0.5" pY="0.5" oX="53" oY="37" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_48_ 5" x="841" y="194" w="126" h="194" pX="0.5" pY="0.5" oX="84" oY="38" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_49_ 6" x="2009" y="511" w="122" h="166" pX="0.5" pY="0.5" oX="80" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_50_ 6" x="2655" y="1830" w="139" h="145" pX="0.5" pY="0.5" oX="95" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_51_ 6" x="1159" y="1922" w="167" h="146" pX="0.5" pY="0.5" oX="72" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_52_ 6" x="248" y="1803" w="171" h="149" pX="0.5" pY="0.5" oX="61" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_53_ 6" x="830" y="1801" w="170" h="157" pX="0.5" pY="0.5" oX="61" oY="40" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_54_ 6" x="734" y="2703" w="151" h="139" pX="0.5" pY="0.5" oX="79" oY="52" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_55_ 6" x="1464" y="1799" w="136" h="169" pX="0.5" pY="0.5" oX="90" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_56_ 6" x="1774" y="344" w="126" h="172" pX="0.5" pY="0.5" oX="71" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_57_ 7" x="1893" y="1206" w="155" h="168" pX="0.5" pY="0.5" oX="65" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_58_ 7" x="1332" y="957" w="111" h="183" pX="0.5" pY="0.5" oX="83" oY="21" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_59_ 7" x="331" y="0" w="107" h="222" pX="0.5" pY="0.5" oX="83" oY="4" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_60_ 7" x="109" y="0" w="119" h="227" pX="0.5" pY="0.5" oX="76" oY="4" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_61_ 7" x="225" y="227" w="124" h="222" pX="0.5" pY="0.5" oX="69" oY="5" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_62_ 7" x="136" y="664" w="140" h="203" pX="0.5" pY="0.5" oX="75" oY="7" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_63_ 7" x="956" y="2233" w="127" h="162" pX="0.5" pY="0.5" oX="95" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Run_64_ 7" x="217" y="1445" w="165" h="182" pX="0.5" pY="0.5" oX="60" oY="38" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_01_ 0" x="2146" y="1684" w="114" h="161" pX="0.5" pY="0.5" oX="80" oY="59" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_02_ 0" x="2038" y="1684" w="108" h="164" pX="0.5" pY="0.5" oX="81" oY="56" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_03_ 0" x="2048" y="335" w="107" h="167" pX="0.5" pY="0.5" oX="81" oY="52" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_04_ 1" x="1769" y="1954" w="134" h="164" pX="0.5" pY="0.5" oX="36" oY="55" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_05_ 1" x="1768" y="1035" w="132" h="171" pX="0.5" pY="0.5" oX="37" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_06_ 1" x="228" y="1053" w="128" h="192" pX="0.5" pY="0.5" oX="41" oY="27" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_07_ 2" x="2425" y="156" w="144" h="156" pX="0.5" pY="0.5" oX="89" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_08_ 2" x="2413" y="482" w="145" h="156" pX="0.5" pY="0.5" oX="89" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_09_ 2" x="246" y="2549" w="139" h="155" pX="0.5" pY="0.5" oX="89" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_10_ 3" x="1141" y="193" w="125" h="190" pX="0.5" pY="0.5" oX="76" oY="15" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_11_ 3" x="0" y="1064" w="125" h="192" pX="0.5" pY="0.5" oX="76" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_12_ 3" x="1004" y="963" w="123" h="191" pX="0.5" pY="0.5" oX="76" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_13_ 4" x="1152" y="2703" w="129" h="149" pX="0.5" pY="0.5" oX="60" oY="60" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_14_ 4" x="2569" y="949" w="137" h="152" pX="0.5" pY="0.5" oX="52" oY="57" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_15_ 4" x="2509" y="638" w="153" h="153" pX="0.5" pY="0.5" oX="36" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_16_ 5" x="686" y="1445" w="128" h="181" pX="0.5" pY="0.5" oX="46" oY="34" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_17_ 5" x="485" y="991" w="123" h="191" pX="0.5" pY="0.5" oX="53" oY="24" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_18_ 5" x="237" y="449" w="108" h="208" pX="0.5" pY="0.5" oX="70" oY="6" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_19_ 6" x="1910" y="172" w="111" h="167" pX="0.5" pY="0.5" oX="92" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_20_ 6" x="1878" y="693" w="106" h="168" pX="0.5" pY="0.5" oX="90" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_21_ 6" x="1773" y="693" w="105" h="171" pX="0.5" pY="0.5" oX="90" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_22_ 7" x="1674" y="1441" w="144" h="172" pX="0.5" pY="0.5" oX="75" oY="13" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_23_ 7" x="1906" y="861" w="152" h="167" pX="0.5" pY="0.5" oX="75" oY="18" oW="256" oH="256"/>
+  <sprite n="HellWarden_Use Skill_24_ 7" x="1987" y="1374" w="167" h="153" pX="0.5" pY="0.5" oX="76" oY="33" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_01_ 0" x="921" y="1445" w="92" h="180" pX="0.5" pY="0.5" oX="83" oY="51" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_02_ 0" x="1245" y="383" w="85" h="190" pX="0.5" pY="0.5" oX="91" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_03_ 0" x="349" y="222" w="84" h="199" pX="0.5" pY="0.5" oX="92" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_04_ 0" x="495" y="1445" w="78" h="182" pX="0.5" pY="0.5" oX="97" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_05_ 0" x="453" y="1245" w="82" h="186" pX="0.5" pY="0.5" oX="94" oY="51" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_06_ 0" x="1266" y="190" w="90" h="185" pX="0.5" pY="0.5" oX="84" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_07_ 0" x="1443" y="369" w="96" h="178" pX="0.5" pY="0.5" oX="74" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_08_ 0" x="1498" y="1094" w="97" h="177" pX="0.5" pY="0.5" oX="74" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_09_ 1" x="2506" y="1677" w="151" h="153" pX="0.5" pY="0.5" oX="45" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_10_ 1" x="1685" y="2267" w="158" h="155" pX="0.5" pY="0.5" oX="35" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_11_ 1" x="459" y="2395" w="157" h="154" pX="0.5" pY="0.5" oX="24" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_12_ 1" x="2131" y="502" w="163" h="154" pX="0.5" pY="0.5" oX="28" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_13_ 1" x="1179" y="2393" w="159" h="155" pX="0.5" pY="0.5" oX="31" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_14_ 1" x="2274" y="323" w="141" h="159" pX="0.5" pY="0.5" oX="49" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_15_ 1" x="2257" y="963" w="131" h="160" pX="0.5" pY="0.5" oX="68" oY="45" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_16_ 1" x="2569" y="0" w="137" h="154" pX="0.5" pY="0.5" oX="57" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_17_ 2" x="2414" y="1235" w="155" h="156" pX="0.5" pY="0.5" oX="61" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_18_ 2" x="1893" y="2163" w="160" h="159" pX="0.5" pY="0.5" oX="65" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_19_ 2" x="1527" y="2131" w="158" h="160" pX="0.5" pY="0.5" oX="80" oY="47" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_20_ 2" x="1987" y="1527" w="167" h="157" pX="0.5" pY="0.5" oX="71" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_21_ 2" x="0" y="2088" w="165" h="153" pX="0.5" pY="0.5" oX="66" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_22_ 2" x="2211" y="2328" w="141" h="157" pX="0.5" pY="0.5" oX="70" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_23_ 2" x="1911" y="1684" w="127" h="166" pX="0.5" pY="0.5" oX="64" oY="52" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_24_ 2" x="1380" y="1968" w="134" h="164" pX="0.5" pY="0.5" oX="69" oY="50" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_25_ 3" x="1531" y="547" w="91" h="178" pX="0.5" pY="0.5" oX="87" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_26_ 3" x="1136" y="1625" w="86" h="175" pX="0.5" pY="0.5" oX="86" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_27_ 3" x="1514" y="1968" w="84" h="163" pX="0.5" pY="0.5" oX="87" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_28_ 3" x="888" y="533" w="81" h="194" pX="0.5" pY="0.5" oX="88" oY="14" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_29_ 3" x="1497" y="1448" w="85" h="177" pX="0.5" pY="0.5" oX="86" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_30_ 3" x="1818" y="864" w="88" h="171" pX="0.5" pY="0.5" oX="89" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_31_ 3" x="1179" y="2233" w="87" h="160" pX="0.5" pY="0.5" oX="98" oY="45" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_32_ 3" x="1582" y="1448" w="92" h="173" pX="0.5" pY="0.5" oX="95" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_33_ 4" x="1788" y="2641" w="143" h="147" pX="0.5" pY="0.5" oX="43" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_34_ 4" x="463" y="2233" w="134" h="162" pX="0.5" pY="0.5" oX="55" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_35_ 4" x="419" y="1802" w="149" h="170" pX="0.5" pY="0.5" oX="51" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_36_ 4" x="995" y="2068" w="132" h="165" pX="0.5" pY="0.5" oX="73" oY="45" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_37_ 4" x="2022" y="1028" w="134" h="166" pX="0.5" pY="0.5" oX="64" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_38_ 4" x="1978" y="2330" w="134" h="157" pX="0.5" pY="0.5" oX="47" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_39_ 4" x="1749" y="2487" w="127" h="154" pX="0.5" pY="0.5" oX="53" oY="39" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_40_ 4" x="2562" y="2611" w="135" h="148" pX="0.5" pY="0.5" oX="45" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_41_ 5" x="1674" y="1268" w="94" h="173" pX="0.5" pY="0.5" oX="105" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_42_ 5" x="584" y="1627" w="114" h="175" pX="0.5" pY="0.5" oX="80" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_43_ 5" x="2154" y="168" w="118" h="163" pX="0.5" pY="0.5" oX="67" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_44_ 5" x="1900" y="344" w="127" h="167" pX="0.5" pY="0.5" oX="51" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_45_ 5" x="1127" y="2068" w="123" h="165" pX="0.5" pY="0.5" oX="65" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_46_ 5" x="1083" y="2233" w="96" h="162" pX="0.5" pY="0.5" oX="105" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_47_ 5" x="2048" y="1194" w="108" h="165" pX="0.5" pY="0.5" oX="96" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_48_ 5" x="1911" y="0" w="99" h="169" pX="0.5" pY="0.5" oX="102" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_49_ 6" x="360" y="1245" w="93" h="186" pX="0.5" pY="0.5" oX="81" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_50_ 6" x="382" y="1445" w="113" h="182" pX="0.5" pY="0.5" oX="85" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_51_ 6" x="1308" y="573" w="118" h="184" pX="0.5" pY="0.5" oX="94" oY="40" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_52_ 6" x="2415" y="323" w="131" h="156" pX="0.5" pY="0.5" oX="100" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_53_ 6" x="1652" y="866" w="125" h="169" pX="0.5" pY="0.5" oX="89" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_54_ 6" x="1127" y="959" w="96" h="189" pX="0.5" pY="0.5" oX="79" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_55_ 6" x="1226" y="767" w="107" h="190" pX="0.5" pY="0.5" oX="77" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_56_ 6" x="0" y="1256" w="98" h="189" pX="0.5" pY="0.5" oX="79" oY="45" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_57_ 7" x="2010" y="0" w="147" h="168" pX="0.5" pY="0.5" oX="88" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_58_ 7" x="2157" y="0" w="138" h="163" pX="0.5" pY="0.5" oX="85" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_59_ 7" x="2249" y="2169" w="150" h="159" pX="0.5" pY="0.5" oX="79" oY="43" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_60_ 7" x="1457" y="185" w="137" h="178" pX="0.5" pY="0.5" oX="74" oY="30" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_61_ 7" x="1640" y="348" w="134" h="173" pX="0.5" pY="0.5" oX="81" oY="41" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_62_ 7" x="1881" y="516" w="128" h="168" pX="0.5" pY="0.5" oX="102" oY="44" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_63_ 7" x="2294" y="1235" w="120" h="159" pX="0.5" pY="0.5" oX="103" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Walk_64_ 7" x="562" y="1972" w="137" h="163" pX="0.5" pY="0.5" oX="95" oY="42" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_01_ 0" x="2294" y="640" w="105" h="157" pX="0.5" pY="0.5" oX="84" oY="95" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_02_ 0" x="2454" y="2458" w="108" h="154" pX="0.5" pY="0.5" oX="81" oY="97" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_03_ 0" x="622" y="2704" w="112" h="152" pX="0.5" pY="0.5" oX="77" oY="98" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_04_ 1" x="2812" y="578" w="133" h="135" pX="0.5" pY="0.5" oX="33" oY="84" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_05_ 1" x="2815" y="276" w="132" h="137" pX="0.5" pY="0.5" oX="34" oY="82" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_06_ 1" x="2679" y="2130" w="131" h="140" pX="0.5" pY="0.5" oX="35" oY="79" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_07_ 2" x="1350" y="2541" w="135" h="154" pX="0.5" pY="0.5" oX="90" oY="60" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_08_ 2" x="1993" y="2487" w="134" h="154" pX="0.5" pY="0.5" oX="90" oY="63" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_09_ 2" x="2127" y="2487" w="134" h="154" pX="0.5" pY="0.5" oX="90" oY="65" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_10_ 3" x="513" y="2704" w="109" h="152" pX="0.5" pY="0.5" oX="84" oY="51" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_11_ 3" x="2261" y="2485" w="110" h="154" pX="0.5" pY="0.5" oX="84" oY="49" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_12_ 3" x="2454" y="2303" w="114" h="155" pX="0.5" pY="0.5" oX="84" oY="48" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_13_ 4" x="2265" y="1123" w="159" h="112" pX="0.5" pY="0.5" oX="38" oY="97" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_14_ 4" x="1111" y="1483" w="162" h="110" pX="0.5" pY="0.5" oX="35" oY="96" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_15_ 4" x="248" y="1952" w="165" h="112" pX="0.5" pY="0.5" oX="32" oY="95" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_16_ 5" x="1878" y="1531" w="109" h="153" pX="0.5" pY="0.5" oX="75" oY="60" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_17_ 5" x="2398" y="797" w="108" h="156" pX="0.5" pY="0.5" oX="76" oY="57" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_18_ 5" x="2272" y="1520" w="108" h="159" pX="0.5" pY="0.5" oX="76" oY="54" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_19_ 6" x="1661" y="0" w="113" h="174" pX="0.5" pY="0.5" oX="79" oY="75" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_20_ 6" x="1769" y="521" w="112" h="172" pX="0.5" pY="0.5" oX="79" oY="78" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_21_ 6" x="1661" y="1621" w="112" h="172" pX="0.5" pY="0.5" oX="79" oY="80" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_22_ 7" x="1732" y="2118" w="161" h="149" pX="0.5" pY="0.5" oX="76" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_23_ 7" x="165" y="2088" w="164" h="149" pX="0.5" pY="0.5" oX="76" oY="46" oW="256" oH="256"/>
+  <sprite n="HellWarden_Woozy_24_ 7" x="1911" y="1850" w="166" h="149" pX="0.5" pY="0.5" oX="76" oY="46" oW="256" oH="256"/>
+</TextureAtlas>

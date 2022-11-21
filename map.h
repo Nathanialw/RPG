@@ -185,14 +185,14 @@ namespace Maps {
            sprite.sheet_name = name;
            sprite.type = "RPG_Tools";
            auto offset = Texture_Packer::Get_Sprite_Offets_From_db(sheetname);
-           zone.emplace<Component::Sprite_Offset>(entity, offset.x, offset.y);
+           zone.emplace<Component::Sprite_Offset>(entity, data.x_offset, data.y_offset);
         }
         else {
             auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
             sprite.flareSpritesheet = flareSheetData;
             sprite.sheet_name = name;
             sprite.type = sheetDataFlare.sheet_type;
-            zone.emplace<Component::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+            zone.emplace<Component::Sprite_Offset>(entity, data.x_offset, data.y_offset);
         }
 
         //dynamic entities
@@ -232,11 +232,18 @@ namespace Maps {
         if (map.load("maps/untitled3.tmx")){
             for (auto &spriteSheet : map.getTilesets()) {
                 std::string name = spriteSheet.getName();
-                std::string filePathString = spriteSheet.getImagePath();
-                filePathString.erase(0, 5);
-                const char* filePathChar = filePathString.c_str();
-                Graphics::pTexture[name] = Graphics::createTexture(filePathChar);
 
+                //need to feed in the name of the ground tileset for the map so it only loads what we need, can't figure out how to get the tileset from a tile in the tile layer
+                if (name == "grassland_tiles_x2") {
+                    std::string filePathString = spriteSheet.getImagePath();
+                    filePathString.erase(0, 5);
+                    const char *filePathChar = filePathString.c_str();
+                    Graphics::pTexture[name] = Graphics::createTexture(filePathChar);
+                    std::cout << "loaded: " << name << std::endl;
+                }
+                else {
+                    std::cout << "not loaded: " << name << std::endl;
+                }
             }
             std::cout << "Loaded Map version: " << map.getVersion().upper << ", " << map.getVersion().lower << std::endl;
 
@@ -244,7 +251,7 @@ namespace Maps {
             std::cout << "Map has " << layers.size() << " layers" << std::endl;
 
             for (const auto& layer : layers) {
-                if (layer->getName() == "ground") {
+                if (layer->getName() == "grassland_tiles_x2.tsx") {
 
                 }
                 else if (layer->getName() == "widgets") {
@@ -329,8 +336,8 @@ namespace Maps {
                         //if it is random it needs to grab a name from a unit that was already loaded into graphics or default to a default unit name
                         //get an array of all the potential names, check each on against teh std::map of graphics, keep all the ones already there and pick a random one
                         //if (is_random == false ) {}
-                        std::string key = object.getTilesetName();
-                        auto &ff = map.getTemplateTilesets();
+                        std::string tilesetName = object.getTilesetName();
+                        auto &templateTilesets = map.getTemplateTilesets();
 
                         //gets the collision box/boxes for a building
                         std::vector<tmx::Object> collision_boxes;
@@ -338,7 +345,7 @@ namespace Maps {
                         std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
                         Component::Line_Segment line;
 
-                        for (auto s :ff.at(key).getTiles()){
+                        for (auto s :templateTilesets.at(tilesetName).getTiles()){
                             collision_boxes = s.objectGroup.getObjects();
                             float sizeX = s.imageSize.x;
                             float sizeY = s.imageSize.y;
@@ -364,11 +371,11 @@ namespace Maps {
                                 }
                             }
                         }
-                        if (ff.at(key).getName() == "Medieval_Expansion_Ruins_13") {
+                        if (templateTilesets.at(tilesetName).getName() == "Medieval_Expansion_Ruins_13") {
                             Utilities::Log("asd");
                         }
 
-                        std::string texture = ff.at(key).getImagePath();
+                        std::string texture = templateTilesets.at(tilesetName).getImagePath();
                         texture.erase(0, 5);
 
 

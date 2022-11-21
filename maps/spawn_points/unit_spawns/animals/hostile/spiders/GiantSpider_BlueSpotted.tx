@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../../sprite_sheets/units/animals/hostile/spiders/GiantSpider_BlueSpotted.tsx"/>
+ <object name="GiantSpider_BlueSpotted" class="unit" gid="55" width="128" height="64"/>
+</template>

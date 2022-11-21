@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="1500" height="1471" scale="1" format="RGBA8888">
+  <sprite n="RTP_Goblin_Attack 1_01_ 0" x="1226" y="508" w="68" h="72" pX="0.5" pY="0.5" oX="37" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_02_ 0" x="286" y="354" w="41" h="102" pX="0.5" pY="0.5" oX="57" oY="25" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_03_ 0" x="663" y="76" w="57" h="91" pX="0.5" pY="0.5" oX="71" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_04_ 1" x="1174" y="0" w="56" h="74" pX="0.5" pY="0.5" oX="69" oY="52" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_05_ 1" x="0" y="624" w="61" h="93" pX="0.5" pY="0.5" oX="78" oY="32" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_06_ 1" x="510" y="267" w="99" h="61" pX="0.5" pY="0.5" oX="21" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_07_ 2" x="1352" y="137" w="56" h="68" pX="0.5" pY="0.5" oX="49" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_08_ 2" x="74" y="792" w="60" h="86" pX="0.5" pY="0.5" oX="35" oY="43" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_09_ 2" x="510" y="505" w="97" h="74" pX="0.5" pY="0.5" oX="54" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_10_ 3" x="895" y="0" w="68" h="81" pX="0.5" pY="0.5" oX="69" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_11_ 3" x="710" y="599" w="41" h="89" pX="0.5" pY="0.5" oX="76" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_12_ 3" x="755" y="418" w="57" h="86" pX="0.5" pY="0.5" oX="46" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_13_ 4" x="650" y="1191" w="64" h="74" pX="0.5" pY="0.5" oX="48" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_14_ 4" x="0" y="369" w="52" h="107" pX="0.5" pY="0.5" oX="61" oY="19" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_15_ 4" x="420" y="713" w="86" h="66" pX="0.5" pY="0.5" oX="31" oY="73" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_16_ 5" x="1065" y="547" w="48" h="77" pX="0.5" pY="0.5" oX="72" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_17_ 5" x="648" y="660" w="62" h="89" pX="0.5" pY="0.5" oX="78" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_18_ 5" x="576" y="1191" w="74" h="74" pX="0.5" pY="0.5" oX="41" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_19_ 6" x="1295" y="428" w="49" h="67" pX="0.5" pY="0.5" oX="53" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_20_ 6" x="546" y="328" w="62" h="95" pX="0.5" pY="0.5" oX="33" oY="32" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_21_ 6" x="0" y="792" w="74" h="86" pX="0.5" pY="0.5" oX="59" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_22_ 7" x="1034" y="237" w="64" h="77" pX="0.5" pY="0.5" oX="62" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_23_ 7" x="755" y="176" w="53" h="88" pX="0.5" pY="0.5" oX="60" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 1_24_ 7" x="334" y="713" w="86" h="78" pX="0.5" pY="0.5" oX="57" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_01_ 0" x="1218" y="882" w="46" h="73" pX="0.5" pY="0.5" oX="62" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_02_ 0" x="552" y="671" w="46" h="89" pX="0.5" pY="0.5" oX="67" oY="32" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_03_ 0" x="244" y="714" w="90" h="55" pX="0.5" pY="0.5" oX="13" oY="73" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_04_ 1" x="0" y="1337" w="60" h="71" pX="0.5" pY="0.5" oX="67" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_05_ 1" x="445" y="1337" w="48" h="70" pX="0.5" pY="0.5" oX="79" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_06_ 1" x="661" y="167" w="91" h="83" pX="0.5" pY="0.5" oX="31" oY="43" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_07_ 2" x="219" y="1337" w="60" h="70" pX="0.5" pY="0.5" oX="47" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_08_ 2" x="614" y="0" w="49" h="93" pX="0.5" pY="0.5" oX="46" oY="37" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_09_ 2" x="661" y="938" w="79" h="72" pX="0.5" pY="0.5" oX="52" oY="71" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_10_ 3" x="292" y="129" w="46" h="102" pX="0.5" pY="0.5" oX="66" oY="45" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_11_ 3" x="506" y="711" w="44" h="84" pX="0.5" pY="0.5" oX="63" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_12_ 3" x="427" y="427" w="83" h="99" pX="0.5" pY="0.5" oX="71" oY="45" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_13_ 4" x="644" y="1040" w="52" h="76" pX="0.5" pY="0.5" oX="64" oY="48" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_14_ 4" x="981" y="627" w="49" h="78" pX="0.5" pY="0.5" oX="77" oY="45" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_15_ 4" x="621" y="341" w="91" h="78" pX="0.5" pY="0.5" oX="20" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_16_ 5" x="431" y="621" w="48" h="92" pX="0.5" pY="0.5" oX="75" oY="47" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_17_ 5" x="333" y="1118" w="51" h="75" pX="0.5" pY="0.5" oX="73" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_18_ 5" x="235" y="164" w="57" h="114" pX="0.5" pY="0.5" oX="65" oY="23" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_19_ 6" x="1225" y="586" w="47" h="71" pX="0.5" pY="0.5" oX="51" oY="52" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_20_ 6" x="609" y="168" w="52" h="93" pX="0.5" pY="0.5" oX="50" oY="28" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_21_ 6" x="1170" y="216" w="60" h="74" pX="0.5" pY="0.5" oX="49" oY="75" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_22_ 7" x="456" y="526" w="52" h="93" pX="0.5" pY="0.5" oX="58" oY="51" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_23_ 7" x="598" y="671" w="50" h="89" pX="0.5" pY="0.5" oX="47" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Attack 2_24_ 7" x="510" y="427" w="98" h="78" pX="0.5" pY="0.5" oX="62" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_01_ 0" x="1457" y="101" w="39" h="49" pX="0.5" pY="0.5" oX="68" oY="85" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_02_ 0" x="1446" y="1225" w="39" h="51" pX="0.5" pY="0.5" oX="68" oY="83" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_03_ 0" x="1407" y="1225" w="39" h="53" pX="0.5" pY="0.5" oX="68" oY="82" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_04_ 1" x="1406" y="1278" w="44" h="53" pX="0.5" pY="0.5" oX="66" oY="80" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_05_ 1" x="1407" y="1171" w="47" h="54" pX="0.5" pY="0.5" oX="63" oY="79" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_06_ 1" x="1408" y="116" w="45" h="55" pX="0.5" pY="0.5" oX="65" oY="78" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_07_ 2" x="178" y="740" w="44" h="51" pX="0.5" pY="0.5" oX="64" oY="81" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_08_ 2" x="194" y="539" w="46" h="52" pX="0.5" pY="0.5" oX="64" oY="80" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_09_ 2" x="1407" y="1117" w="45" h="54" pX="0.5" pY="0.5" oX="64" oY="79" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_10_ 3" x="1384" y="1351" w="39" h="54" pX="0.5" pY="0.5" oX="67" oY="76" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_11_ 3" x="1413" y="924" w="39" h="54" pX="0.5" pY="0.5" oX="67" oY="76" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_12_ 3" x="1413" y="61" w="39" h="55" pX="0.5" pY="0.5" oX="67" oY="75" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_13_ 4" x="292" y="231" w="42" h="47" pX="0.5" pY="0.5" oX="66" oY="84" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_14_ 4" x="443" y="381" w="41" h="46" pX="0.5" pY="0.5" oX="67" oY="83" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_15_ 4" x="1457" y="51" w="39" h="50" pX="0.5" pY="0.5" oX="69" oY="82" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_16_ 5" x="1413" y="539" w="38" h="54" pX="0.5" pY="0.5" oX="70" oY="78" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_17_ 5" x="1413" y="365" w="39" h="54" pX="0.5" pY="0.5" oX="69" oY="78" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_18_ 5" x="1413" y="978" w="39" h="54" pX="0.5" pY="0.5" oX="69" oY="78" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_19_ 6" x="1350" y="822" w="38" h="49" pX="0.5" pY="0.5" oX="66" oY="84" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_20_ 6" x="1457" y="150" w="39" h="49" pX="0.5" pY="0.5" oX="66" oY="83" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_21_ 6" x="1452" y="1117" w="39" h="50" pX="0.5" pY="0.5" oX="66" oY="82" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_22_ 7" x="1413" y="311" w="41" h="54" pX="0.5" pY="0.5" oX="66" oY="79" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_23_ 7" x="1402" y="814" w="41" h="55" pX="0.5" pY="0.5" oX="66" oY="78" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Behavior_24_ 7" x="1413" y="869" w="39" h="55" pX="0.5" pY="0.5" oX="66" oY="78" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_01_ 0" x="240" y="961" w="80" h="70" pX="0.5" pY="0.5" oX="21" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_02_ 0" x="740" y="938" w="79" h="72" pX="0.5" pY="0.5" oX="18" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_03_ 0" x="886" y="318" w="73" h="79" pX="0.5" pY="0.5" oX="19" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_04_ 1" x="751" y="852" w="61" h="82" pX="0.5" pY="0.5" oX="51" oY="35" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_05_ 1" x="710" y="688" w="63" h="86" pX="0.5" pY="0.5" oX="50" oY="31" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_06_ 1" x="552" y="579" w="69" h="92" pX="0.5" pY="0.5" oX="63" oY="25" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_07_ 2" x="1352" y="0" w="61" h="69" pX="0.5" pY="0.5" oX="61" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_08_ 2" x="1347" y="690" w="64" h="67" pX="0.5" pY="0.5" oX="60" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_09_ 2" x="1339" y="1163" w="68" h="64" pX="0.5" pY="0.5" oX="42" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_10_ 3" x="812" y="734" w="80" h="82" pX="0.5" pY="0.5" oX="72" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_11_ 3" x="0" y="961" w="79" h="80" pX="0.5" pY="0.5" oX="77" oY="52" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_12_ 3" x="571" y="1040" w="73" h="76" pX="0.5" pY="0.5" oX="82" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_13_ 4" x="1224" y="732" w="68" h="71" pX="0.5" pY="0.5" oX="32" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_14_ 4" x="583" y="760" w="59" h="83" pX="0.5" pY="0.5" oX="42" oY="42" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_15_ 4" x="446" y="153" w="56" h="99" pX="0.5" pY="0.5" oX="49" oY="25" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_16_ 5" x="895" y="239" w="68" h="79" pX="0.5" pY="0.5" oX="58" oY="43" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_17_ 5" x="1035" y="63" w="74" h="77" pX="0.5" pY="0.5" oX="66" oY="47" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_18_ 5" x="812" y="0" w="83" h="74" pX="0.5" pY="0.5" oX="72" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_19_ 6" x="1339" y="1099" w="68" h="64" pX="0.5" pY="0.5" oX="48" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_20_ 6" x="146" y="1193" w="73" h="64" pX="0.5" pY="0.5" oX="34" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_21_ 6" x="812" y="587" w="83" h="65" pX="0.5" pY="0.5" oX="19" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_22_ 7" x="1105" y="140" w="68" h="76" pX="0.5" pY="0.5" oX="74" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_23_ 7" x="1171" y="956" w="59" h="74" pX="0.5" pY="0.5" oX="73" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Block_24_ 7" x="1292" y="732" w="55" h="71" pX="0.5" pY="0.5" oX="69" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_01_ 0" x="1338" y="1412" w="59" h="58" pX="0.5" pY="0.5" oX="53" oY="75" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_02_ 0" x="1397" y="623" w="60" h="58" pX="0.5" pY="0.5" oX="52" oY="75" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_03_ 0" x="1397" y="205" w="60" h="58" pX="0.5" pY="0.5" oX="52" oY="75" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_04_ 1" x="1030" y="703" w="66" h="77" pX="0.5" pY="0.5" oX="36" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_05_ 1" x="1030" y="626" w="66" h="77" pX="0.5" pY="0.5" oX="36" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_06_ 1" x="1105" y="216" w="65" h="76" pX="0.5" pY="0.5" oX="37" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_07_ 2" x="975" y="1333" w="66" h="69" pX="0.5" pY="0.5" oX="72" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_08_ 2" x="1347" y="429" w="65" h="68" pX="0.5" pY="0.5" oX="72" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_09_ 2" x="1348" y="993" w="65" h="68" pX="0.5" pY="0.5" oX="72" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_10_ 3" x="692" y="774" w="59" h="83" pX="0.5" pY="0.5" oX="62" oY="48" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_11_ 3" x="61" y="879" w="59" h="82" pX="0.5" pY="0.5" oX="62" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_12_ 3" x="0" y="879" w="61" h="82" pX="0.5" pY="0.5" oX="61" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_13_ 4" x="905" y="1319" w="70" h="69" pX="0.5" pY="0.5" oX="28" oY="69" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_14_ 4" x="1254" y="1246" w="71" h="69" pX="0.5" pY="0.5" oX="27" oY="69" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_15_ 4" x="1279" y="803" w="71" h="68" pX="0.5" pY="0.5" oX="27" oY="70" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_16_ 5" x="841" y="242" w="45" h="83" pX="0.5" pY="0.5" oX="58" oY="45" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_17_ 5" x="841" y="325" w="45" h="82" pX="0.5" pY="0.5" oX="58" oY="46" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_18_ 5" x="466" y="879" w="46" h="81" pX="0.5" pY="0.5" oX="58" oY="47" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_19_ 6" x="1411" y="681" w="46" h="60" pX="0.5" pY="0.5" oX="70" oY="72" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_20_ 6" x="1338" y="1351" w="46" h="61" pX="0.5" pY="0.5" oX="70" oY="72" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_21_ 6" x="382" y="1407" w="45" h="62" pX="0.5" pY="0.5" oX="70" oY="72" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_22_ 7" x="70" y="1041" w="70" h="77" pX="0.5" pY="0.5" oX="76" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_23_ 7" x="0" y="1041" w="70" h="77" pX="0.5" pY="0.5" oX="76" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Critical HP_24_ 7" x="1035" y="140" w="70" h="77" pX="0.5" pY="0.5" oX="76" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_01_ 0" x="614" y="93" w="43" h="75" pX="0.5" pY="0.5" oX="64" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_02_ 0" x="569" y="1337" w="50" h="70" pX="0.5" pY="0.5" oX="63" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_03_ 0" x="345" y="526" w="71" h="95" pX="0.5" pY="0.5" oX="50" oY="44" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_04_ 1" x="619" y="1337" w="65" h="69" pX="0.5" pY="0.5" oX="46" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_05_ 1" x="1344" y="942" w="69" h="51" pX="0.5" pY="0.5" oX="58" oY="81" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_06_ 1" x="338" y="216" w="108" h="66" pX="0.5" pY="0.5" oX="54" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_07_ 2" x="0" y="1408" w="66" h="63" pX="0.5" pY="0.5" oX="62" oY="68" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_08_ 2" x="253" y="470" w="70" h="55" pX="0.5" pY="0.5" oX="46" oY="70" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_09_ 2" x="356" y="90" w="108" h="63" pX="0.5" pY="0.5" oX="12" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_10_ 3" x="1397" y="1405" w="43" h="52" pX="0.5" pY="0.5" oX="67" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_11_ 3" x="464" y="101" w="50" h="52" pX="0.5" pY="0.5" oX="61" oY="86" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_12_ 3" x="905" y="1262" w="71" h="57" pX="0.5" pY="0.5" oX="53" oY="89" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_13_ 4" x="981" y="315" w="60" h="78" pX="0.5" pY="0.5" oX="47" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_14_ 4" x="1350" y="556" w="63" h="67" pX="0.5" pY="0.5" oX="57" oY="70" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_15_ 4" x="343" y="621" w="88" h="92" pX="0.5" pY="0.5" oX="53" oY="47" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_16_ 5" x="549" y="1407" w="57" h="61" pX="0.5" pY="0.5" oX="57" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_17_ 5" x="1161" y="1030" w="69" h="49" pX="0.5" pY="0.5" oX="53" oY="85" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_18_ 5" x="97" y="539" w="97" h="52" pX="0.5" pY="0.5" oX="52" oY="87" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_19_ 6" x="1104" y="1008" w="57" h="75" pX="0.5" pY="0.5" oX="60" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_20_ 6" x="499" y="1310" w="70" h="64" pX="0.5" pY="0.5" oX="51" oY="71" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_21_ 6" x="0" y="539" w="97" h="85" pX="0.5" pY="0.5" oX="25" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_22_ 7" x="1397" y="263" w="60" h="48" pX="0.5" pY="0.5" oX="67" oY="74" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_23_ 7" x="487" y="1407" w="62" h="58" pX="0.5" pY="0.5" oX="54" oY="76" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Dead To Down_24_ 7" x="90" y="740" w="88" h="51" pX="0.5" pY="0.5" oX="33" oY="88" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_1_01_ 0" x="154" y="667" w="90" h="73" pX="0.5" pY="0.5" oX="25" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_1_02_ 1" x="153" y="471" w="100" h="68" pX="0.5" pY="0.5" oX="36" oY="52" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_1_03_ 2" x="0" y="476" w="101" h="63" pX="0.5" pY="0.5" oX="37" oY="78" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_1_04_ 3" x="0" y="717" w="90" h="75" pX="0.5" pY="0.5" oX="59" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_1_05_ 4" x="514" y="0" w="100" h="84" pX="0.5" pY="0.5" oX="36" oY="44" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_1_06_ 5" x="0" y="219" w="116" h="79" pX="0.5" pY="0.5" oX="45" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_1_07_ 6" x="118" y="164" w="117" h="70" pX="0.5" pY="0.5" oX="12" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_1_08_ 7" x="514" y="84" w="100" h="84" pX="0.5" pY="0.5" oX="38" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_2_01_ 0" x="0" y="0" w="121" h="70" pX="0.5" pY="0.5" oX="13" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_2_02_ 1" x="712" y="341" w="87" h="77" pX="0.5" pY="0.5" oX="66" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_2_03_ 2" x="510" y="168" w="87" h="99" pX="0.5" pY="0.5" oX="21" oY="71" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_2_04_ 3" x="0" y="70" w="121" h="69" pX="0.5" pY="0.5" oX="40" oY="85" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_2_05_ 4" x="812" y="171" w="83" h="71" pX="0.5" pY="0.5" oX="59" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_2_06_ 5" x="338" y="153" w="108" h="63" pX="0.5" pY="0.5" oX="60" oY="83" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_2_07_ 6" x="116" y="234" w="112" h="64" pX="0.5" pY="0.5" oX="2" oY="68" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_2_08_ 7" x="503" y="795" w="80" h="84" pX="0.5" pY="0.5" oX="32" oY="85" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_3_01_ 0" x="183" y="791" w="86" h="74" pX="0.5" pY="0.5" oX="48" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_3_02_ 1" x="240" y="67" w="116" h="62" pX="0.5" pY="0.5" oX="37" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_3_03_ 2" x="121" y="0" w="119" h="74" pX="0.5" pY="0.5" oX="18" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_3_04_ 3" x="200" y="368" w="86" h="102" pX="0.5" pY="0.5" oX="40" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_3_05_ 4" x="663" y="0" w="92" h="76" pX="0.5" pY="0.5" oX="45" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_3_06_ 5" x="228" y="278" w="110" h="76" pX="0.5" pY="0.5" oX="41" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_3_07_ 6" x="112" y="298" w="110" h="70" pX="0.5" pY="0.5" oX="23" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_3_08_ 7" x="253" y="526" w="92" h="95" pX="0.5" pY="0.5" oX="36" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_4_01_ 0" x="0" y="139" w="118" h="80" pX="0.5" pY="0.5" oX="25" oY="44" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_4_02_ 1" x="327" y="427" w="100" h="86" pX="0.5" pY="0.5" oX="62" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_4_03_ 2" x="356" y="0" w="110" h="90" pX="0.5" pY="0.5" oX="2" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_4_04_ 3" x="121" y="74" w="119" h="90" pX="0.5" pY="0.5" oX="31" oY="80" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_4_05_ 4" x="621" y="570" w="89" h="90" pX="0.5" pY="0.5" oX="68" oY="36" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_4_06_ 5" x="0" y="298" w="112" h="71" pX="0.5" pY="0.5" oX="54" oY="86" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_4_07_ 6" x="240" y="0" w="116" h="67" pX="0.5" pY="0.5" oX="3" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Down_4_08_ 7" x="661" y="250" w="89" h="91" pX="0.5" pY="0.5" oX="16" oY="75" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_01_ 0" x="132" y="1407" w="66" h="61" pX="0.5" pY="0.5" oX="53" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_02_ 0" x="502" y="1116" w="75" h="63" pX="0.5" pY="0.5" oX="47" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_03_ 0" x="183" y="865" w="82" h="67" pX="0.5" pY="0.5" oX="43" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_04_ 1" x="1171" y="882" w="47" h="74" pX="0.5" pY="0.5" oX="67" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_05_ 1" x="852" y="1264" w="53" h="72" pX="0.5" pY="0.5" oX="69" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_06_ 1" x="1294" y="290" w="58" h="70" pX="0.5" pY="0.5" oX="71" oY="68" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_07_ 2" x="0" y="1263" w="47" h="72" pX="0.5" pY="0.5" oX="60" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_08_ 2" x="0" y="1118" w="53" h="75" pX="0.5" pY="0.5" oX="51" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_09_ 2" x="1171" y="808" w="57" h="74" pX="0.5" pY="0.5" oX="45" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_10_ 3" x="1282" y="1028" w="66" h="71" pX="0.5" pY="0.5" oX="55" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_11_ 3" x="897" y="1100" w="75" h="69" pX="0.5" pY="0.5" oX="52" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_12_ 3" x="550" y="879" w="81" h="70" pX="0.5" pY="0.5" oX="49" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_13_ 4" x="1348" y="871" w="65" h="68" pX="0.5" pY="0.5" oX="49" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_14_ 4" x="1275" y="1101" w="61" h="71" pX="0.5" pY="0.5" oX="56" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_15_ 4" x="840" y="1191" w="53" h="73" pX="0.5" pY="0.5" oX="66" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_16_ 5" x="1172" y="734" w="52" h="74" pX="0.5" pY="0.5" oX="65" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_17_ 5" x="1274" y="219" w="57" h="71" pX="0.5" pY="0.5" oX="64" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_18_ 5" x="1169" y="1317" w="67" h="69" pX="0.5" pY="0.5" oX="62" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_19_ 6" x="1047" y="1262" w="53" h="71" pX="0.5" pY="0.5" oX="56" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_20_ 6" x="684" y="1405" w="58" h="66" pX="0.5" pY="0.5" oX="52" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_21_ 6" x="1338" y="497" w="67" h="59" pX="0.5" pY="0.5" oX="45" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_22_ 7" x="1230" y="1174" w="64" h="72" pX="0.5" pY="0.5" oX="60" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_23_ 7" x="219" y="1265" w="61" h="72" pX="0.5" pY="0.5" oX="57" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Evade_24_ 7" x="1172" y="586" w="53" h="74" pX="0.5" pY="0.5" oX="55" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_01_ 0" x="1034" y="470" w="76" h="77" pX="0.5" pY="0.5" oX="28" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_02_ 0" x="812" y="816" w="82" h="80" pX="0.5" pY="0.5" oX="23" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_03_ 0" x="479" y="619" w="73" h="92" pX="0.5" pY="0.5" oX="35" oY="46" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_04_ 1" x="839" y="74" w="55" h="83" pX="0.5" pY="0.5" oX="47" oY="46" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_05_ 1" x="755" y="0" w="57" h="88" pX="0.5" pY="0.5" oX="48" oY="41" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_06_ 1" x="326" y="795" w="82" h="84" pX="0.5" pY="0.5" oX="52" oY="43" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_07_ 2" x="1025" y="780" w="55" h="77" pX="0.5" pY="0.5" oX="72" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_08_ 2" x="514" y="1040" w="57" h="76" pX="0.5" pY="0.5" oX="69" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_09_ 2" x="750" y="264" w="83" h="77" pX="0.5" pY="0.5" oX="39" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_10_ 3" x="1018" y="934" w="77" h="77" pX="0.5" pY="0.5" oX="69" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_11_ 3" x="265" y="879" w="82" h="78" pX="0.5" pY="0.5" oX="68" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_12_ 3" x="385" y="961" w="73" h="80" pX="0.5" pY="0.5" oX="66" oY="48" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_13_ 4" x="631" y="857" w="63" h="81" pX="0.5" pY="0.5" oX="32" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_14_ 4" x="448" y="795" w="55" h="84" pX="0.5" pY="0.5" oX="42" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_15_ 4" x="52" y="369" w="37" h="106" pX="0.5" pY="0.5" oX="68" oY="30" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_16_ 5" x="280" y="1265" w="61" h="72" pX="0.5" pY="0.5" oX="56" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_17_ 5" x="819" y="896" w="79" h="69" pX="0.5" pY="0.5" oX="54" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_18_ 5" x="338" y="282" w="105" h="66" pX="0.5" pY="0.5" oX="52" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_19_ 6" x="779" y="1191" w="61" h="73" pX="0.5" pY="0.5" oX="57" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_20_ 6" x="898" y="888" w="78" h="74" pX="0.5" pY="0.5" oX="41" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_21_ 6" x="338" y="348" w="105" h="79" pX="0.5" pY="0.5" oX="17" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_22_ 7" x="226" y="1118" w="63" h="75" pX="0.5" pY="0.5" oX="79" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_23_ 7" x="384" y="1041" w="54" h="76" pX="0.5" pY="0.5" oX="77" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Get Hit_24_ 7" x="773" y="684" w="37" h="85" pX="0.5" pY="0.5" oX="69" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_01_ 0" x="1100" y="1262" w="51" h="71" pX="0.5" pY="0.5" oX="63" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_02_ 0" x="1228" y="803" w="51" h="71" pX="0.5" pY="0.5" oX="63" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_03_ 0" x="1151" y="1246" w="51" h="71" pX="0.5" pY="0.5" oX="63" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_04_ 1" x="187" y="961" w="53" h="80" pX="0.5" pY="0.5" oX="47" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_05_ 1" x="981" y="471" w="53" h="78" pX="0.5" pY="0.5" oX="47" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_06_ 1" x="981" y="237" w="53" h="78" pX="0.5" pY="0.5" oX="47" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_07_ 2" x="1104" y="1083" w="52" h="74" pX="0.5" pY="0.5" oX="74" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_08_ 2" x="1172" y="660" w="52" h="74" pX="0.5" pY="0.5" oX="74" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_09_ 2" x="801" y="1040" w="53" h="76" pX="0.5" pY="0.5" oX="74" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_10_ 3" x="1202" y="1246" w="52" h="71" pX="0.5" pY="0.5" oX="59" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_11_ 3" x="395" y="1265" w="52" h="72" pX="0.5" pY="0.5" oX="59" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_12_ 3" x="447" y="1265" w="52" h="72" pX="0.5" pY="0.5" oX="59" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_13_ 4" x="140" y="1041" w="64" h="77" pX="0.5" pY="0.5" oX="45" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_14_ 4" x="1110" y="459" w="64" h="76" pX="0.5" pY="0.5" oX="45" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_15_ 4" x="162" y="1118" w="64" h="75" pX="0.5" pY="0.5" oX="45" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_16_ 5" x="458" y="960" w="44" h="79" pX="0.5" pY="0.5" oX="66" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_17_ 5" x="981" y="705" w="44" h="78" pX="0.5" pY="0.5" oX="66" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_18_ 5" x="289" y="1118" w="44" h="75" pX="0.5" pY="0.5" oX="66" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_19_ 6" x="47" y="1263" w="44" h="72" pX="0.5" pY="0.5" oX="64" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_20_ 6" x="893" y="1189" w="44" h="73" pX="0.5" pY="0.5" oX="64" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_21_ 6" x="972" y="1115" w="44" h="74" pX="0.5" pY="0.5" oX="64" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_22_ 7" x="714" y="1191" w="65" h="73" pX="0.5" pY="0.5" oX="64" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_23_ 7" x="437" y="1117" w="65" h="75" pX="0.5" pY="0.5" oX="64" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle Fidget_24_ 7" x="204" y="1041" w="65" h="77" pX="0.5" pY="0.5" oX="64" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_01_ 0" x="1094" y="1402" w="51" h="65" pX="0.5" pY="0.5" oX="63" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_02_ 0" x="1043" y="1402" w="51" h="65" pX="0.5" pY="0.5" oX="63" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_03_ 0" x="619" y="1406" w="52" h="65" pX="0.5" pY="0.5" oX="63" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_04_ 0" x="871" y="1405" w="52" h="66" pX="0.5" pY="0.5" oX="63" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_05_ 0" x="1350" y="757" w="52" h="65" pX="0.5" pY="0.5" oX="63" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_06_ 1" x="888" y="652" w="52" h="79" pX="0.5" pY="0.5" oX="48" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_07_ 1" x="894" y="81" w="52" h="79" pX="0.5" pY="0.5" oX="48" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_08_ 1" x="555" y="949" w="53" h="79" pX="0.5" pY="0.5" oX="48" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_09_ 1" x="608" y="949" w="53" h="79" pX="0.5" pY="0.5" oX="48" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_10_ 1" x="502" y="960" w="53" h="79" pX="0.5" pY="0.5" oX="48" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_11_ 2" x="630" y="1116" w="52" h="75" pX="0.5" pY="0.5" oX="74" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_12_ 2" x="384" y="1117" w="53" h="75" pX="0.5" pY="0.5" oX="73" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_13_ 2" x="53" y="1118" w="53" h="75" pX="0.5" pY="0.5" oX="73" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_14_ 2" x="1118" y="292" w="53" h="75" pX="0.5" pY="0.5" oX="73" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_15_ 2" x="577" y="1116" w="53" h="75" pX="0.5" pY="0.5" oX="73" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_16_ 3" x="1174" y="74" w="52" h="74" pX="0.5" pY="0.5" oX="59" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_17_ 3" x="1174" y="290" w="52" h="74" pX="0.5" pY="0.5" oX="59" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_18_ 3" x="1174" y="364" w="52" h="74" pX="0.5" pY="0.5" oX="59" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_19_ 3" x="1174" y="438" w="52" h="74" pX="0.5" pY="0.5" oX="59" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_20_ 3" x="1174" y="512" w="52" h="74" pX="0.5" pY="0.5" oX="59" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_21_ 4" x="937" y="1189" w="64" h="73" pX="0.5" pY="0.5" oX="45" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_22_ 4" x="1001" y="1189" w="65" h="73" pX="0.5" pY="0.5" oX="45" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_23_ 4" x="1066" y="1189" w="65" h="73" pX="0.5" pY="0.5" oX="45" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_24_ 4" x="1230" y="0" w="65" h="73" pX="0.5" pY="0.5" oX="45" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_25_ 4" x="1230" y="955" w="65" h="73" pX="0.5" pY="0.5" oX="45" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_26_ 5" x="981" y="549" w="44" h="78" pX="0.5" pY="0.5" oX="66" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_27_ 5" x="981" y="393" w="44" h="78" pX="0.5" pY="0.5" oX="66" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_28_ 5" x="990" y="60" w="44" h="78" pX="0.5" pY="0.5" oX="66" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_29_ 5" x="937" y="731" w="44" h="78" pX="0.5" pY="0.5" oX="66" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_30_ 5" x="946" y="81" w="44" h="78" pX="0.5" pY="0.5" oX="66" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_31_ 6" x="1294" y="508" w="44" h="71" pX="0.5" pY="0.5" oX="64" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_32_ 6" x="1230" y="219" w="44" h="71" pX="0.5" pY="0.5" oX="64" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_33_ 6" x="1294" y="1172" w="45" h="71" pX="0.5" pY="0.5" oX="63" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_34_ 6" x="1272" y="580" w="45" h="71" pX="0.5" pY="0.5" oX="63" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_35_ 6" x="1295" y="71" w="44" h="71" pX="0.5" pY="0.5" oX="64" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_36_ 7" x="974" y="1039" w="65" h="76" pX="0.5" pY="0.5" oX="64" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_37_ 7" x="1039" y="1011" w="65" h="76" pX="0.5" pY="0.5" oX="64" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_38_ 7" x="1080" y="780" w="65" h="76" pX="0.5" pY="0.5" oX="64" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_39_ 7" x="682" y="1116" w="65" h="75" pX="0.5" pY="0.5" oX="64" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Idle_40_ 7" x="1104" y="856" w="65" h="76" pX="0.5" pY="0.5" oX="64" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_01_ 0" x="1457" y="0" w="43" h="51" pX="0.5" pY="0.5" oX="61" oY="70" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_02_ 0" x="1235" y="1386" w="47" h="61" pX="0.5" pY="0.5" oX="58" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_03_ 0" x="1350" y="623" w="47" h="67" pX="0.5" pY="0.5" oX="58" oY="69" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_04_ 0" x="1412" y="484" w="45" h="55" pX="0.5" pY="0.5" oX="62" oY="72" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_05_ 0" x="335" y="1407" w="47" h="62" pX="0.5" pY="0.5" oX="63" oY="68" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_06_ 0" x="1352" y="205" w="45" h="67" pX="0.5" pY="0.5" oX="64" oY="69" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_07_ 0" x="290" y="1407" w="45" h="63" pX="0.5" pY="0.5" oX="65" oY="70" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_08_ 0" x="1412" y="429" w="45" h="55" pX="0.5" pY="0.5" oX="62" oY="72" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_09_ 1" x="60" y="1337" w="64" h="70" pX="0.5" pY="0.5" oX="44" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_10_ 1" x="1224" y="660" w="71" h="72" pX="0.5" pY="0.5" oX="46" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_11_ 1" x="963" y="0" w="78" h="60" pX="0.5" pY="0.5" oX="44" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_12_ 1" x="499" y="1249" w="73" h="61" pX="0.5" pY="0.5" oX="38" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_13_ 1" x="1228" y="363" w="66" h="73" pX="0.5" pY="0.5" oX="50" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_14_ 1" x="1096" y="686" w="76" h="69" pX="0.5" pY="0.5" oX="45" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_15_ 1" x="1041" y="314" w="77" h="69" pX="0.5" pY="0.5" oX="38" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_16_ 1" x="1236" y="1317" w="68" h="69" pX="0.5" pY="0.5" oX="41" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_17_ 2" x="979" y="1402" w="64" h="65" pX="0.5" pY="0.5" oX="66" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_18_ 2" x="976" y="1262" w="71" h="71" pX="0.5" pY="0.5" oX="57" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_19_ 2" x="897" y="965" w="78" h="69" pX="0.5" pY="0.5" oX="52" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_20_ 2" x="292" y="1193" w="73" h="69" pX="0.5" pY="0.5" oX="63" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_21_ 2" x="895" y="160" w="67" h="79" pX="0.5" pY="0.5" oX="57" oY="52" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_22_ 2" x="1096" y="624" w="76" h="62" pX="0.5" pY="0.5" oX="53" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_23_ 2" x="1041" y="0" w="77" h="63" pX="0.5" pY="0.5" oX="59" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_24_ 2" x="684" y="1337" w="69" h="60" pX="0.5" pY="0.5" oX="64" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_25_ 3" x="648" y="749" w="44" h="84" pX="0.5" pY="0.5" oX="69" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_26_ 3" x="755" y="88" w="46" h="88" pX="0.5" pY="0.5" oX="69" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_27_ 3" x="749" y="509" w="47" h="88" pX="0.5" pY="0.5" oX="69" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_28_ 3" x="796" y="504" w="45" h="83" pX="0.5" pY="0.5" oX="67" oY="47" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_29_ 3" x="153" y="368" w="47" h="103" pX="0.5" pY="0.5" oX="64" oY="36" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_30_ 3" x="501" y="328" w="45" h="99" pX="0.5" pY="0.5" oX="65" oY="36" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_31_ 3" x="710" y="419" w="45" h="90" pX="0.5" pY="0.5" oX="64" oY="41" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_32_ 3" x="892" y="731" w="45" h="79" pX="0.5" pY="0.5" oX="67" oY="51" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_33_ 4" x="66" y="1407" w="66" h="60" pX="0.5" pY="0.5" oX="39" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_34_ 4" x="1156" y="1083" w="74" h="60" pX="0.5" pY="0.5" oX="39" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_35_ 4" x="897" y="1034" w="77" h="66" pX="0.5" pY="0.5" oX="38" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_36_ 4" x="1339" y="1227" w="67" h="58" pX="0.5" pY="0.5" oX="40" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_37_ 4" x="1295" y="360" w="49" h="68" pX="0.5" pY="0.5" oX="57" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_38_ 4" x="1295" y="942" w="49" h="71" pX="0.5" pY="0.5" oX="58" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_39_ 4" x="1352" y="69" w="56" h="68" pX="0.5" pY="0.5" oX="50" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_40_ 4" x="427" y="1407" w="60" h="62" pX="0.5" pY="0.5" oX="42" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_41_ 5" x="841" y="407" w="50" h="82" pX="0.5" pY="0.5" oX="58" oY="51" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_42_ 5" x="296" y="621" w="47" h="92" pX="0.5" pY="0.5" oX="62" oY="45" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_43_ 5" x="134" y="791" w="49" h="86" pX="0.5" pY="0.5" oX="63" oY="45" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_44_ 5" x="757" y="1040" w="44" h="76" pX="0.5" pY="0.5" oX="63" oY="48" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_45_ 5" x="751" y="597" w="58" h="87" pX="0.5" pY="0.5" oX="58" oY="44" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_46_ 5" x="895" y="553" w="67" h="77" pX="0.5" pY="0.5" oX="51" oY="48" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_47_ 5" x="696" y="1040" w="61" h="76" pX="0.5" pY="0.5" oX="54" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_48_ 5" x="330" y="1041" w="54" h="77" pX="0.5" pY="0.5" oX="57" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_49_ 6" x="1407" y="1061" w="50" h="56" pX="0.5" pY="0.5" oX="66" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_50_ 6" x="742" y="1405" w="47" h="66" pX="0.5" pY="0.5" oX="65" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_51_ 6" x="334" y="1337" w="49" h="70" pX="0.5" pY="0.5" oX="62" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_52_ 6" x="1413" y="0" w="44" h="61" pX="0.5" pY="0.5" oX="67" oY="69" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_53_ 6" x="1282" y="1386" w="56" h="61" pX="0.5" pY="0.5" oX="58" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_54_ 6" x="1325" y="1285" w="67" h="66" pX="0.5" pY="0.5" oX="56" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_55_ 6" x="1109" y="76" w="61" h="64" pX="0.5" pY="0.5" oX="59" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_56_ 6" x="1402" y="757" w="54" h="57" pX="0.5" pY="0.5" oX="63" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_57_ 7" x="747" y="1116" w="67" h="75" pX="0.5" pY="0.5" oX="68" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_58_ 7" x="962" y="159" w="73" h="78" pX="0.5" pY="0.5" oX="61" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_59_ 7" x="819" y="965" w="78" h="75" pX="0.5" pY="0.5" oX="58" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_60_ 7" x="1104" y="932" w="67" h="76" pX="0.5" pY="0.5" oX="67" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_61_ 7" x="466" y="0" w="48" h="101" pX="0.5" pY="0.5" oX="68" oY="39" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_62_ 7" x="247" y="621" w="49" h="93" pX="0.5" pY="0.5" oX="67" oY="39" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_63_ 7" x="894" y="810" w="56" h="78" pX="0.5" pY="0.5" oX="68" oY="52" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Running_64_ 7" x="439" y="1192" w="60" h="73" pX="0.5" pY="0.5" oX="72" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_01_ 0" x="1018" y="857" w="77" h="77" pX="0.5" pY="0.5" oX="26" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_02_ 0" x="438" y="1041" w="76" h="75" pX="0.5" pY="0.5" oX="30" oY="64" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_03_ 0" x="1041" y="1333" w="64" h="69" pX="0.5" pY="0.5" oX="38" oY="71" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_04_ 1" x="269" y="791" w="57" h="85" pX="0.5" pY="0.5" oX="46" oY="44" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_05_ 1" x="269" y="1041" w="61" h="77" pX="0.5" pY="0.5" oX="41" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_06_ 1" x="154" y="591" w="93" h="76" pX="0.5" pY="0.5" oX="14" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_07_ 2" x="1118" y="0" w="56" h="76" pX="0.5" pY="0.5" oX="71" oY="57" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_08_ 2" x="950" y="809" w="61" h="78" pX="0.5" pY="0.5" oX="72" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_09_ 2" x="61" y="624" w="93" h="85" pX="0.5" pY="0.5" oX="67" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_10_ 3" x="895" y="475" w="77" h="78" pX="0.5" pY="0.5" oX="71" oY="49" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_11_ 3" x="812" y="652" w="76" h="82" pX="0.5" pY="0.5" oX="68" oY="42" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_12_ 3" x="89" y="369" w="64" h="104" pX="0.5" pY="0.5" oX="72" oY="18" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_13_ 4" x="347" y="879" w="55" h="82" pX="0.5" pY="0.5" oX="39" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_14_ 4" x="841" y="489" w="54" h="81" pX="0.5" pY="0.5" oX="42" oY="58" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_15_ 4" x="1113" y="535" w="58" h="75" pX="0.5" pY="0.5" oX="38" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_16_ 5" x="1347" y="360" w="66" h="69" pX="0.5" pY="0.5" oX="59" oY="52" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_17_ 5" x="73" y="1193" w="73" h="70" pX="0.5" pY="0.5" oX="51" oY="51" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_18_ 5" x="608" y="419" w="90" h="85" pX="0.5" pY="0.5" oX="30" oY="34" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_19_ 6" x="1228" y="290" w="66" h="73" pX="0.5" pY="0.5" oX="49" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_20_ 6" x="146" y="1257" w="73" h="72" pX="0.5" pY="0.5" oX="50" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_21_ 6" x="607" y="505" w="90" h="65" pX="0.5" pY="0.5" oX="54" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_22_ 7" x="106" y="1118" w="56" h="75" pX="0.5" pY="0.5" oX="79" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_23_ 7" x="134" y="961" w="53" h="80" pX="0.5" pY="0.5" oX="78" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Use Skill_24_ 7" x="443" y="282" w="58" h="99" pX="0.5" pY="0.5" oX="78" oY="30" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_01_ 0" x="1132" y="367" w="39" h="68" pX="0.5" pY="0.5" oX="68" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_02_ 0" x="1295" y="651" w="38" h="67" pX="0.5" pY="0.5" oX="70" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_03_ 0" x="833" y="1405" w="38" h="66" pX="0.5" pY="0.5" oX="70" oY="68" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_04_ 0" x="942" y="397" w="39" h="69" pX="0.5" pY="0.5" oX="67" oY="66" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_05_ 0" x="1352" y="272" w="40" h="67" pX="0.5" pY="0.5" oX="66" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_06_ 0" x="1194" y="1386" w="41" h="65" pX="0.5" pY="0.5" oX="64" oY="67" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_07_ 0" x="198" y="1407" w="40" h="64" pX="0.5" pY="0.5" oX="65" oY="68" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_08_ 0" x="976" y="887" w="39" h="69" pX="0.5" pY="0.5" oX="66" oY="65" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_09_ 1" x="384" y="1192" w="55" h="73" pX="0.5" pY="0.5" oX="41" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_10_ 1" x="700" y="1265" w="49" h="72" pX="0.5" pY="0.5" oX="53" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_11_ 1" x="1279" y="146" w="49" h="71" pX="0.5" pY="0.5" oX="55" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_12_ 1" x="341" y="1265" w="54" h="72" pX="0.5" pY="0.5" oX="52" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_13_ 1" x="636" y="1265" w="64" h="72" pX="0.5" pY="0.5" oX="35" oY="54" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_14_ 1" x="1226" y="436" w="69" h="72" pX="0.5" pY="0.5" oX="28" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_15_ 1" x="0" y="1193" w="73" h="70" pX="0.5" pY="0.5" oX="29" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_16_ 1" x="1156" y="1143" w="74" h="72" pX="0.5" pY="0.5" oX="30" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_17_ 2" x="798" y="1264" w="54" h="72" pX="0.5" pY="0.5" oX="78" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_18_ 2" x="749" y="1264" w="49" h="72" pX="0.5" pY="0.5" oX="71" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_19_ 2" x="753" y="1336" w="50" h="69" pX="0.5" pY="0.5" oX="69" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_20_ 2" x="1295" y="0" w="55" h="71" pX="0.5" pY="0.5" oX="67" oY="56" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_21_ 2" x="572" y="1265" w="64" h="72" pX="0.5" pY="0.5" oX="75" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_22_ 2" x="1279" y="871" w="69" h="71" pX="0.5" pY="0.5" oX="77" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_23_ 2" x="502" y="1179" w="74" h="70" pX="0.5" pY="0.5" oX="71" oY="55" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_24_ 2" x="219" y="1193" w="73" h="71" pX="0.5" pY="0.5" oX="70" oY="53" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_25_ 3" x="1025" y="549" w="40" h="77" pX="0.5" pY="0.5" oX="66" oY="46" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_26_ 3" x="512" y="879" w="38" h="81" pX="0.5" pY="0.5" oX="66" oY="46" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_27_ 3" x="801" y="88" w="38" h="83" pX="0.5" pY="0.5" oX="66" oY="47" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_28_ 3" x="773" y="769" w="39" h="83" pX="0.5" pY="0.5" oX="67" oY="47" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_29_ 3" x="799" y="341" w="40" h="77" pX="0.5" pY="0.5" oX="68" oY="47" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_30_ 3" x="408" y="795" w="40" h="84" pX="0.5" pY="0.5" oX="69" oY="42" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_31_ 3" x="416" y="526" w="40" h="95" pX="0.5" pY="0.5" oX="69" oY="33" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_32_ 3" x="710" y="509" w="39" h="90" pX="0.5" pY="0.5" oX="68" oY="39" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_33_ 4" x="170" y="1329" w="49" h="70" pX="0.5" pY="0.5" oX="50" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_34_ 4" x="101" y="473" w="40" h="66" pX="0.5" pY="0.5" oX="60" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_35_ 4" x="789" y="1405" w="44" h="66" pX="0.5" pY="0.5" oX="60" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_36_ 4" x="803" y="1336" w="43" h="69" pX="0.5" pY="0.5" oX="63" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_37_ 4" x="923" y="1402" w="56" h="66" pX="0.5" pY="0.5" oX="45" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_38_ 4" x="383" y="1337" w="62" h="70" pX="0.5" pY="0.5" oX="41" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_39_ 4" x="1105" y="1333" w="64" h="69" pX="0.5" pY="0.5" oX="42" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_40_ 4" x="1230" y="73" w="65" h="73" pX="0.5" pY="0.5" oX="39" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_41_ 5" x="854" y="1040" w="43" h="76" pX="0.5" pY="0.5" oX="59" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_42_ 5" x="891" y="397" w="51" h="78" pX="0.5" pY="0.5" oX="57" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_43_ 5" x="79" y="961" w="55" h="80" pX="0.5" pY="0.5" oX="54" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_44_ 5" x="609" y="261" w="51" h="80" pX="0.5" pY="0.5" oX="56" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_45_ 5" x="1087" y="383" w="45" h="76" pX="0.5" pY="0.5" oX="55" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_46_ 5" x="1230" y="146" w="49" h="73" pX="0.5" pY="0.5" oX="50" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_47_ 5" x="694" y="857" w="52" h="81" pX="0.5" pY="0.5" oX="49" oY="43" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_48_ 5" x="120" y="879" w="47" h="82" pX="0.5" pY="0.5" oX="55" oY="45" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_49_ 6" x="1173" y="148" w="44" h="68" pX="0.5" pY="0.5" oX="71" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_50_ 6" x="91" y="1263" w="51" h="72" pX="0.5" pY="0.5" oX="66" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_51_ 6" x="279" y="1337" w="55" h="70" pX="0.5" pY="0.5" oX="65" oY="63" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_52_ 6" x="1230" y="1028" w="52" h="73" pX="0.5" pY="0.5" oX="66" oY="61" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_53_ 6" x="124" y="1337" w="46" h="70" pX="0.5" pY="0.5" oX="73" oY="60" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_54_ 6" x="1145" y="1402" w="49" h="65" pX="0.5" pY="0.5" oX="75" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_55_ 6" x="238" y="1407" w="52" h="64" pX="0.5" pY="0.5" oX="73" oY="62" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_56_ 6" x="846" y="1336" w="48" h="69" pX="0.5" pY="0.5" oX="71" oY="59" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_57_ 7" x="814" y="1116" w="50" h="75" pX="0.5" pY="0.5" oX="74" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_58_ 7" x="940" y="630" w="40" h="72" pX="0.5" pY="0.5" oX="73" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_59_ 7" x="1230" y="1101" w="45" h="73" pX="0.5" pY="0.5" oX="69" oY="51" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_60_ 7" x="975" y="962" w="43" h="77" pX="0.5" pY="0.5" oX="68" oY="51" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_61_ 7" x="1016" y="1115" w="56" h="74" pX="0.5" pY="0.5" oX="73" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_62_ 7" x="1025" y="393" w="62" h="77" pX="0.5" pY="0.5" oX="71" oY="50" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_63_ 7" x="402" y="879" w="64" h="81" pX="0.5" pY="0.5" oX="68" oY="47" oW="170" oH="170"/>
+  <sprite n="RTP_Goblin_Walking_64_ 7" x="320" y="961" w="65" h="80" pX="0.5" pY="0.5" oX="70" oY="49" oW="170" oH="170"/>
+</TextureAtlas>

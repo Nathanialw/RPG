@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="6042" height="4005" scale="1" format="RGBA8888">
+  <sprite n="Daemon_Bone_Attack 1_01_ 0" x="4942" y="189" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_02_ 0" x="4705" y="1507" w="266" h="241" pX="0.5" pY="0.5" oX="57" oY="39" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_03_ 0" x="375" y="2185" w="194" h="256" pX="0.5" pY="0.5" oX="124" oY="87" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_04_ 1" x="402" y="1936" w="179" h="249" pX="0.5" pY="0.5" oX="154" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_05_ 1" x="4134" y="2762" w="173" h="273" pX="0.5" pY="0.5" oX="192" oY="55" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_06_ 1" x="5445" y="1511" w="224" h="241" pX="0.5" pY="0.5" oX="70" oY="70" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_07_ 2" x="5435" y="2798" w="185" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_08_ 2" x="2220" y="3281" w="178" h="316" pX="0.5" pY="0.5" oX="54" oY="43" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_09_ 2" x="2759" y="1246" w="225" h="235" pX="0.5" pY="0.5" oX="127" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_10_ 3" x="5209" y="1043" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_11_ 3" x="2984" y="1248" w="262" h="235" pX="0.5" pY="0.5" oX="99" oY="119" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_12_ 3" x="4971" y="1510" w="193" h="241" pX="0.5" pY="0.5" oX="108" oY="58" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_13_ 4" x="4814" y="387" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_14_ 4" x="3479" y="1253" w="251" h="235" pX="0.5" pY="0.5" oX="128" oY="64" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_15_ 4" x="4307" y="2764" w="236" h="273" pX="0.5" pY="0.5" oX="86" oY="59" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_16_ 5" x="233" y="2441" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_17_ 5" x="4984" y="3048" w="213" h="299" pX="0.5" pY="0.5" oX="166" oY="73" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_18_ 5" x="3098" y="1484" w="229" h="239" pX="0.5" pY="0.5" oX="86" oY="72" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_19_ 6" x="0" y="2693" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_20_ 6" x="1847" y="2984" w="206" h="283" pX="0.5" pY="0.5" oX="40" oY="16" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_21_ 6" x="1233" y="2975" w="226" h="281" pX="0.5" pY="0.5" oX="109" oY="52" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_22_ 7" x="1910" y="2207" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_23_ 7" x="4232" y="2244" w="256" h="257" pX="0.5" pY="0.5" oX="39" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 1_24_ 7" x="216" y="993" w="234" h="229" pX="0.5" pY="0.5" oX="102" oY="72" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_01_ 0" x="5236" y="190" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_02_ 0" x="3581" y="1731" w="375" h="245" pX="0.5" pY="0.5" oX="11" oY="35" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_03_ 0" x="3310" y="380" w="275" h="201" pX="0.5" pY="0.5" oX="74" oY="150" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_04_ 1" x="581" y="1938" w="179" h="249" pX="0.5" pY="0.5" oX="154" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_05_ 1" x="3432" y="3630" w="206" h="340" pX="0.5" pY="0.5" oX="194" oY="19" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_06_ 1" x="2053" y="2986" w="201" h="284" pX="0.5" pY="0.5" oX="68" oY="42" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_07_ 2" x="5620" y="2798" w="185" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_08_ 2" x="4489" y="3330" w="194" h="327" pX="0.5" pY="0.5" oX="26" oY="43" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_09_ 2" x="2254" y="2994" w="203" h="287" pX="0.5" pY="0.5" oX="147" oY="40" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_10_ 3" x="5501" y="1043" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_11_ 3" x="450" y="994" w="364" h="229" pX="0.5" pY="0.5" oX="36" oY="136" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_12_ 3" x="2799" y="2473" w="275" h="260" pX="0.5" pY="0.5" oX="72" oY="43" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_13_ 4" x="5228" y="388" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_14_ 4" x="3846" y="3023" w="253" h="294" pX="0.5" pY="0.5" oX="113" oY="22" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_15_ 4" x="4454" y="1507" w="251" h="240" pX="0.5" pY="0.5" oX="53" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_16_ 5" x="441" y="2441" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_17_ 5" x="2682" y="3286" w="216" h="317" pX="0.5" pY="0.5" oX="152" oY="74" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_18_ 5" x="2457" y="2997" w="263" h="288" pX="0.5" pY="0.5" oX="42" oY="11" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_19_ 6" x="207" y="2700" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_20_ 6" x="2720" y="2997" w="246" h="289" pX="0.5" pY="0.5" oX="39" oY="19" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_21_ 6" x="814" y="996" w="267" h="229" pX="0.5" pY="0.5" oX="116" oY="104" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_22_ 7" x="2144" y="2208" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_23_ 7" x="4746" y="2508" w="269" h="262" pX="0.5" pY="0.5" oX="0" oY="130" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Attack 2_24_ 7" x="0" y="3241" w="257" h="299" pX="0.5" pY="0.5" oX="117" oY="13" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_01_ 0" x="5719" y="191" w="296" h="198" pX="0.5" pY="0.5" oX="63" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_02_ 0" x="0" y="356" w="284" h="198" pX="0.5" pY="0.5" oX="69" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_03_ 0" x="461" y="365" w="274" h="198" pX="0.5" pY="0.5" oX="74" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_04_ 1" x="3532" y="2482" w="153" h="261" pX="0.5" pY="0.5" oX="152" oY="83" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_05_ 1" x="5848" y="2024" w="154" h="254" pX="0.5" pY="0.5" oX="152" oY="87" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_06_ 1" x="5887" y="1276" w="155" h="250" pX="0.5" pY="0.5" oX="151" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_07_ 2" x="3685" y="2487" w="159" h="261" pX="0.5" pY="0.5" oX="112" oY="83" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_08_ 2" x="0" y="2180" w="161" h="254" pX="0.5" pY="0.5" oX="111" oY="87" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_09_ 2" x="5879" y="1526" w="161" h="250" pX="0.5" pY="0.5" oX="111" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_10_ 3" x="1380" y="567" w="294" h="211" pX="0.5" pY="0.5" oX="64" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_11_ 3" x="1867" y="572" w="285" h="211" pX="0.5" pY="0.5" oX="69" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_12_ 3" x="2152" y="574" w="274" h="212" pX="0.5" pY="0.5" oX="74" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_13_ 4" x="398" y="772" w="239" h="221" pX="0.5" pY="0.5" oX="103" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_14_ 4" x="3494" y="797" w="244" h="224" pX="0.5" pY="0.5" oX="98" oY="95" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_15_ 4" x="4778" y="814" w="248" h="226" pX="0.5" pY="0.5" oX="94" oY="95" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_16_ 5" x="735" y="1695" w="239" h="243" pX="0.5" pY="0.5" oX="103" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_17_ 5" x="1476" y="1706" w="244" h="244" pX="0.5" pY="0.5" oX="98" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_18_ 5" x="1720" y="1709" w="248" h="244" pX="0.5" pY="0.5" oX="94" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_19_ 6" x="637" y="773" w="242" h="221" pX="0.5" pY="0.5" oX="75" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_20_ 6" x="1852" y="783" w="247" h="223" pX="0.5" pY="0.5" oX="75" oY="95" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_21_ 6" x="5026" y="816" w="251" h="226" pX="0.5" pY="0.5" oX="75" oY="95" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_22_ 7" x="0" y="1691" w="243" h="241" pX="0.5" pY="0.5" oX="75" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_23_ 7" x="487" y="1694" w="248" h="242" pX="0.5" pY="0.5" oX="75" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Behavior_24_ 7" x="974" y="1697" w="251" h="243" pX="0.5" pY="0.5" oX="75" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_01_ 0" x="735" y="366" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_02_ 0" x="5737" y="0" w="261" h="191" pX="0.5" pY="0.5" oX="99" oY="98" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_03_ 0" x="685" y="173" w="213" h="192" pX="0.5" pY="0.5" oX="109" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_04_ 1" x="760" y="1938" w="179" h="249" pX="0.5" pY="0.5" oX="154" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_05_ 1" x="3327" y="1488" w="189" h="239" pX="0.5" pY="0.5" oX="161" oY="115" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_06_ 1" x="237" y="558" w="196" h="211" pX="0.5" pY="0.5" oX="168" oY="125" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_07_ 2" x="5805" y="2798" w="185" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_08_ 2" x="451" y="1456" w="189" h="236" pX="0.5" pY="0.5" oX="69" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_09_ 2" x="1337" y="174" w="200" h="195" pX="0.5" pY="0.5" oX="55" oY="124" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_10_ 3" x="184" y="1223" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_11_ 3" x="1724" y="1006" w="258" h="230" pX="0.5" pY="0.5" oX="59" oY="116" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_12_ 3" x="2419" y="790" w="215" h="223" pX="0.5" pY="0.5" oX="95" oY="131" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_13_ 4" x="5465" y="388" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_14_ 4" x="5277" y="817" w="224" h="226" pX="0.5" pY="0.5" oX="143" oY="86" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_15_ 4" x="5003" y="1042" w="206" h="233" pX="0.5" pY="0.5" oX="172" oY="79" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_16_ 5" x="649" y="2441" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_17_ 5" x="2526" y="1964" w="241" h="250" pX="0.5" pY="0.5" oX="118" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_18_ 5" x="3729" y="1492" w="234" h="239" pX="0.5" pY="0.5" oX="136" oY="125" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_19_ 6" x="414" y="2700" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_20_ 6" x="3971" y="587" w="241" h="215" pX="0.5" pY="0.5" oX="60" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_21_ 6" x="4231" y="384" w="229" h="205" pX="0.5" pY="0.5" oX="50" oY="82" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_22_ 7" x="2378" y="2214" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_23_ 7" x="5729" y="1776" w="224" h="248" pX="0.5" pY="0.5" oX="53" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Block_24_ 7" x="840" y="1458" w="210" h="237" pX="0.5" pY="0.5" oX="42" oY="124" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_01_ 0" x="1674" y="567" w="193" h="212" pX="0.5" pY="0.5" oX="144" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_02_ 0" x="2426" y="576" w="193" h="213" pX="0.5" pY="0.5" oX="144" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_03_ 0" x="3778" y="587" w="193" h="214" pX="0.5" pY="0.5" oX="144" oY="101" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_04_ 1" x="1121" y="174" w="216" h="194" pX="0.5" pY="0.5" oX="119" oY="159" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_05_ 1" x="0" y="165" w="218" h="191" pX="0.5" pY="0.5" oX="118" oY="162" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_06_ 1" x="5034" y="0" w="218" h="189" pX="0.5" pY="0.5" oX="118" oY="164" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_07_ 2" x="627" y="0" w="217" h="173" pX="0.5" pY="0.5" oX="84" oY="141" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_08_ 2" x="844" y="0" w="218" h="173" pX="0.5" pY="0.5" oX="84" oY="141" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_09_ 2" x="1062" y="0" w="217" h="174" pX="0.5" pY="0.5" oX="85" oY="140" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_10_ 3" x="5530" y="190" w="189" h="198" pX="0.5" pY="0.5" oX="79" oY="132" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_11_ 3" x="2885" y="182" w="189" h="197" pX="0.5" pY="0.5" oX="79" oY="133" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_12_ 3" x="3811" y="186" w="189" h="197" pX="0.5" pY="0.5" oX="79" oY="133" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_13_ 4" x="3076" y="0" w="220" h="184" pX="0.5" pY="0.5" oX="122" oY="138" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_14_ 4" x="3614" y="0" w="220" h="185" pX="0.5" pY="0.5" oX="122" oY="137" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_15_ 4" x="3834" y="0" w="221" h="186" pX="0.5" pY="0.5" oX="122" oY="136" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_16_ 5" x="1683" y="779" w="169" h="225" pX="0.5" pY="0.5" oX="120" oY="134" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_17_ 5" x="3738" y="801" w="169" h="225" pX="0.5" pY="0.5" oX="120" oY="135" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_18_ 5" x="228" y="769" w="170" h="223" pX="0.5" pY="0.5" oX="119" oY="137" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_19_ 6" x="4779" y="596" w="171" h="218" pX="0.5" pY="0.5" oX="130" oY="112" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_20_ 6" x="5205" y="597" w="171" h="219" pX="0.5" pY="0.5" oX="130" oY="111" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_21_ 6" x="5376" y="597" w="171" h="220" pX="0.5" pY="0.5" oX="130" oY="110" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_22_ 7" x="1279" y="0" w="218" h="174" pX="0.5" pY="0.5" oX="72" oY="140" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_23_ 7" x="1497" y="0" w="219" h="174" pX="0.5" pY="0.5" oX="71" oY="140" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Critical HP_24_ 7" x="1716" y="0" w="219" h="174" pX="0.5" pY="0.5" oX="71" oY="140" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Dead_01_ 0" x="3296" y="0" w="318" h="184" pX="0.5" pY="0.5" oX="48" oY="169" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Dead_02_ 1" x="2089" y="1476" w="271" h="238" pX="0.5" pY="0.5" oX="84" oY="152" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Dead_03_ 2" x="2634" y="790" w="274" h="223" pX="0.5" pY="0.5" oX="56" oY="158" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Dead_04_ 3" x="2099" y="786" w="320" h="222" pX="0.5" pY="0.5" oX="44" oY="166" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Dead_05_ 4" x="2224" y="0" w="263" h="179" pX="0.5" pY="0.5" oX="88" oY="168" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Dead_06_ 5" x="1537" y="174" w="250" h="195" pX="0.5" pY="0.5" oX="98" oY="186" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Dead_07_ 6" x="218" y="165" w="244" h="191" pX="0.5" pY="0.5" oX="64" oY="171" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Dead_08_ 7" x="5252" y="0" w="262" h="190" pX="0.5" pY="0.5" oX="62" oY="182" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_01_ 0" x="1029" y="368" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_02_ 0" x="1787" y="174" w="262" h="195" pX="0.5" pY="0.5" oX="132" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_03_ 0" x="640" y="1458" w="200" h="236" pX="0.5" pY="0.5" oX="166" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_04_ 1" x="939" y="1940" w="179" h="249" pX="0.5" pY="0.5" oX="154" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_05_ 1" x="5015" y="2509" w="195" h="262" pX="0.5" pY="0.5" oX="165" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_06_ 1" x="3730" y="1257" w="278" h="235" pX="0.5" pY="0.5" oX="118" oY="128" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_07_ 2" x="0" y="2956" w="185" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_08_ 2" x="5110" y="1751" w="193" h="247" pX="0.5" pY="0.5" oX="61" oY="51" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_09_ 2" x="2449" y="377" w="280" h="199" pX="0.5" pY="0.5" oX="23" oY="78" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_10_ 3" x="476" y="1223" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_11_ 3" x="1118" y="1946" w="260" h="249" pX="0.5" pY="0.5" oX="29" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_12_ 3" x="3002" y="2737" w="201" h="268" pX="0.5" pY="0.5" oX="53" oY="111" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_13_ 4" x="5702" y="389" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_14_ 4" x="0" y="1932" w="172" h="248" pX="0.5" pY="0.5" oX="181" oY="83" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_15_ 4" x="4488" y="2244" w="161" h="259" pX="0.5" pY="0.5" oX="199" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_16_ 5" x="857" y="2447" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_17_ 5" x="1050" y="1461" w="292" h="236" pX="0.5" pY="0.5" oX="76" oY="118" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_18_ 5" x="2744" y="1015" w="284" h="231" pX="0.5" pY="0.5" oX="44" oY="130" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_19_ 6" x="621" y="2700" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_20_ 6" x="2487" y="0" w="294" h="181" pX="0.5" pY="0.5" oX="52" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_21_ 6" x="1935" y="0" w="289" h="174" pX="0.5" pY="0.5" oX="91" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_22_ 7" x="2612" y="2216" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_23_ 7" x="4543" y="2768" w="180" h="273" pX="0.5" pY="0.5" oX="65" oY="82" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Evade_24_ 7" x="3844" y="2487" w="167" h="264" pX="0.5" pY="0.5" oX="58" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_01_ 0" x="1323" y="369" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_02_ 0" x="3585" y="383" w="292" h="201" pX="0.5" pY="0.5" oX="62" oY="95" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_03_ 0" x="4212" y="592" w="282" h="214" pX="0.5" pY="0.5" oX="63" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_04_ 1" x="1378" y="1950" w="179" h="249" pX="0.5" pY="0.5" oX="154" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_05_ 1" x="4285" y="1992" w="164" h="252" pX="0.5" pY="0.5" oX="166" oY="86" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_06_ 1" x="0" y="1443" w="168" h="241" pX="0.5" pY="0.5" oX="194" oY="99" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_07_ 2" x="185" y="2963" w="185" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_08_ 2" x="3759" y="2751" w="163" h="271" pX="0.5" pY="0.5" oX="88" oY="77" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_09_ 2" x="2360" y="1958" w="166" h="250" pX="0.5" pY="0.5" oX="59" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_10_ 3" x="768" y="1225" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_11_ 3" x="2972" y="579" w="292" h="213" pX="0.5" pY="0.5" oX="66" oY="127" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_12_ 3" x="3327" y="184" w="282" h="196" pX="0.5" pY="0.5" oX="73" oY="155" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_13_ 4" x="0" y="554" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_14_ 4" x="4950" y="596" w="255" h="218" pX="0.5" pY="0.5" oX="137" oY="82" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_15_ 4" x="3028" y="1017" w="251" h="231" pX="0.5" pY="0.5" oX="149" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_16_ 5" x="1065" y="2449" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_17_ 5" x="4649" y="2250" w="234" h="257" pX="0.5" pY="0.5" oX="138" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_18_ 5" x="3481" y="1021" w="252" h="232" pX="0.5" pY="0.5" oX="143" oY="153" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_19_ 6" x="828" y="2706" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_20_ 6" x="1035" y="2708" w="233" h="263" pX="0.5" pY="0.5" oX="48" oY="53" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_21_ 6" x="4008" y="1262" w="254" h="235" pX="0.5" pY="0.5" oX="25" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_22_ 7" x="2846" y="2218" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_23_ 7" x="5303" y="1752" w="244" h="247" pX="0.5" pY="0.5" oX="32" oY="111" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Get Hit_24_ 7" x="1342" y="1466" w="262" h="237" pX="0.5" pY="0.5" oX="10" oY="140" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_01_ 0" x="1617" y="369" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_02_ 0" x="2729" y="379" w="291" h="199" pX="0.5" pY="0.5" oX="66" oY="105" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_03_ 0" x="3020" y="379" w="290" h="200" pX="0.5" pY="0.5" oX="66" oY="104" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_04_ 1" x="1557" y="1953" w="179" h="249" pX="0.5" pY="0.5" oX="154" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_05_ 1" x="5547" y="1752" w="182" h="247" pX="0.5" pY="0.5" oX="153" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_06_ 1" x="4704" y="1748" w="183" h="246" pX="0.5" pY="0.5" oX="153" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_07_ 2" x="370" y="2963" w="185" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_08_ 2" x="5249" y="2797" w="186" h="277" pX="0.5" pY="0.5" oX="85" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_09_ 2" x="5062" y="2772" w="187" h="276" pX="0.5" pY="0.5" oX="84" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_10_ 3" x="1060" y="1228" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_11_ 3" x="1352" y="1233" w="290" h="233" pX="0.5" pY="0.5" oX="64" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_12_ 3" x="1934" y="1238" w="289" h="234" pX="0.5" pY="0.5" oX="65" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_13_ 4" x="433" y="563" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_14_ 4" x="670" y="564" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_15_ 4" x="1144" y="567" w="236" h="210" pX="0.5" pY="0.5" oX="139" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_16_ 5" x="1273" y="2453" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_17_ 5" x="1481" y="2456" w="208" h="259" pX="0.5" pY="0.5" oX="150" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_18_ 5" x="5318" y="2252" w="208" h="258" pX="0.5" pY="0.5" oX="151" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_19_ 6" x="1268" y="2712" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_20_ 6" x="1475" y="2715" w="206" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_21_ 6" x="1681" y="2715" w="208" h="263" pX="0.5" pY="0.5" oX="61" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_22_ 7" x="3080" y="2222" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_23_ 7" x="3314" y="2227" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Idle_24_ 7" x="3548" y="2227" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_01_ 0" x="4460" y="384" w="177" h="208" pX="0.5" pY="0.5" oX="146" oY="112" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_02_ 0" x="4637" y="384" w="177" h="208" pX="0.5" pY="0.5" oX="147" oY="112" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_03_ 0" x="5051" y="387" w="177" h="209" pX="0.5" pY="0.5" oX="147" oY="111" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_04_ 1" x="0" y="0" w="209" h="165" pX="0.5" pY="0.5" oX="137" oY="159" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_05_ 1" x="209" y="0" w="209" h="165" pX="0.5" pY="0.5" oX="137" oY="159" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_06_ 1" x="418" y="0" w="209" h="165" pX="0.5" pY="0.5" oX="137" oY="159" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_07_ 2" x="3609" y="185" w="202" h="196" pX="0.5" pY="0.5" oX="73" oY="113" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_08_ 2" x="4000" y="187" w="202" h="197" pX="0.5" pY="0.5" oX="73" oY="112" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_09_ 2" x="4202" y="187" w="202" h="197" pX="0.5" pY="0.5" oX="73" oY="112" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_10_ 3" x="284" y="356" w="177" h="202" pX="0.5" pY="0.5" oX="95" oY="145" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_11_ 3" x="3877" y="384" w="177" h="203" pX="0.5" pY="0.5" oX="95" oY="144" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_12_ 3" x="4054" y="384" w="177" h="203" pX="0.5" pY="0.5" oX="95" oY="144" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_13_ 4" x="4055" y="0" w="231" h="187" pX="0.5" pY="0.5" oX="122" oY="122" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_14_ 4" x="4286" y="0" w="231" h="187" pX="0.5" pY="0.5" oX="122" oY="122" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_15_ 4" x="4517" y="0" w="231" h="187" pX="0.5" pY="0.5" oX="122" oY="122" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_16_ 5" x="2049" y="179" w="182" h="195" pX="0.5" pY="0.5" oX="148" oY="149" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_17_ 5" x="2231" y="179" w="181" h="195" pX="0.5" pY="0.5" oX="148" oY="149" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_18_ 5" x="2412" y="181" w="181" h="195" pX="0.5" pY="0.5" oX="148" oY="149" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_19_ 6" x="5793" y="1043" w="184" h="233" pX="0.5" pY="0.5" oX="89" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_20_ 6" x="0" y="1210" w="184" h="233" pX="0.5" pY="0.5" oX="89" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_21_ 6" x="2575" y="1246" w="184" h="234" pX="0.5" pY="0.5" oX="89" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_22_ 7" x="5514" y="0" w="223" h="190" pX="0.5" pY="0.5" oX="67" oY="142" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_23_ 7" x="462" y="173" w="223" h="191" pX="0.5" pY="0.5" oX="67" oY="141" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Rest_24_ 7" x="898" y="174" w="223" h="192" pX="0.5" pY="0.5" oX="67" oY="140" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_01_ 0" x="2302" y="2731" w="348" h="263" pX="0.5" pY="0.5" oX="52" oY="67" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_02_ 0" x="569" y="2187" w="351" h="254" pX="0.5" pY="0.5" oX="43" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_03_ 0" x="2619" y="578" w="353" h="212" pX="0.5" pY="0.5" oX="41" oY="80" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_04_ 0" x="3733" y="1026" w="351" h="231" pX="0.5" pY="0.5" oX="37" oY="75" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_05_ 0" x="2650" y="2733" w="352" h="264" pX="0.5" pY="0.5" oX="31" oY="73" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_06_ 0" x="4346" y="1747" w="358" h="245" pX="0.5" pY="0.5" oX="36" oY="79" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_07_ 0" x="5547" y="598" w="360" h="219" pX="0.5" pY="0.5" oX="40" oY="75" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_08_ 0" x="1555" y="2202" w="355" h="254" pX="0.5" pY="0.5" oX="45" oY="69" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_09_ 1" x="4143" y="3653" w="237" h="346" pX="0.5" pY="0.5" oX="106" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_10_ 1" x="2733" y="3615" w="212" h="337" pX="0.5" pY="0.5" oX="129" oY="4" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_11_ 1" x="1432" y="3564" w="199" h="333" pX="0.5" pY="0.5" oX="152" oY="6" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_12_ 1" x="974" y="3560" w="225" h="332" pX="0.5" pY="0.5" oX="131" oY="9" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_13_ 1" x="0" y="3540" w="264" h="326" pX="0.5" pY="0.5" oX="96" oY="12" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_14_ 1" x="1199" y="3564" w="233" h="332" pX="0.5" pY="0.5" oX="125" oY="10" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_15_ 1" x="540" y="3547" w="208" h="331" pX="0.5" pY="0.5" oX="147" oY="11" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_16_ 1" x="1902" y="3579" w="226" h="335" pX="0.5" pY="0.5" oX="121" oY="9" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_17_ 2" x="5463" y="3374" w="247" h="324" pX="0.5" pY="0.5" oX="63" oY="15" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_18_ 2" x="748" y="3548" w="226" h="331" pX="0.5" pY="0.5" oX="65" oY="12" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_19_ 2" x="2337" y="3600" w="196" h="336" pX="0.5" pY="0.5" oX="77" oY="3" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_20_ 2" x="2128" y="3597" w="209" h="335" pX="0.5" pY="0.5" oX="80" oY="2" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_21_ 2" x="3955" y="3326" w="251" h="323" pX="0.5" pY="0.5" oX="69" oY="14" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_22_ 2" x="4963" y="3347" w="217" h="330" pX="0.5" pY="0.5" oX="77" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_23_ 2" x="2533" y="3603" w="200" h="336" pX="0.5" pY="0.5" oX="73" oY="4" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_24_ 2" x="2945" y="3615" w="218" h="337" pX="0.5" pY="0.5" oX="75" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_25_ 3" x="1968" y="1714" w="352" h="244" pX="0.5" pY="0.5" oX="22" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_26_ 3" x="3229" y="1728" w="352" h="244" pX="0.5" pY="0.5" oX="31" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_27_ 3" x="4262" y="1265" w="354" h="235" pX="0.5" pY="0.5" oX="31" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_28_ 3" x="4372" y="1033" w="351" h="232" pX="0.5" pY="0.5" oX="37" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_29_ 3" x="2223" y="1243" w="352" h="233" pX="0.5" pY="0.5" oX="43" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_30_ 3" x="4616" y="1272" w="357" h="235" pX="0.5" pY="0.5" oX="34" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_31_ 3" x="5174" y="1276" w="360" h="235" pX="0.5" pY="0.5" oX="28" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_32_ 3" x="5534" y="1276" w="353" h="235" pX="0.5" pY="0.5" oX="27" oY="99" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_33_ 4" x="5197" y="3076" w="301" h="295" pX="0.5" pY="0.5" oX="99" oY="12" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_34_ 4" x="2966" y="3010" w="299" h="288" pX="0.5" pY="0.5" oX="89" oY="17" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_35_ 4" x="257" y="3241" w="284" h="299" pX="0.5" pY="0.5" oX="102" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_36_ 4" x="1651" y="3267" w="279" h="307" pX="0.5" pY="0.5" oX="104" oY="1" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_37_ 4" x="4206" y="3330" w="283" h="323" pX="0.5" pY="0.5" oX="100" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_38_ 4" x="2898" y="3298" w="287" h="317" pX="0.5" pY="0.5" oX="96" oY="4" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_39_ 4" x="4695" y="3046" w="289" h="294" pX="0.5" pY="0.5" oX="98" oY="5" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_40_ 4" x="5498" y="3076" w="293" h="298" pX="0.5" pY="0.5" oX="101" oY="9" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_41_ 5" x="4380" y="3657" w="250" h="348" pX="0.5" pY="0.5" oX="126" oY="17" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_42_ 5" x="3892" y="3649" w="251" h="345" pX="0.5" pY="0.5" oX="124" oY="16" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_43_ 5" x="1631" y="3574" w="271" h="334" pX="0.5" pY="0.5" oX="109" oY="24" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_44_ 5" x="3670" y="3317" w="285" h="321" pX="0.5" pY="0.5" oX="97" oY="32" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_45_ 5" x="2398" y="3285" w="284" h="315" pX="0.5" pY="0.5" oX="100" oY="34" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_46_ 5" x="5710" y="3391" w="288" h="325" pX="0.5" pY="0.5" oX="94" oY="28" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_47_ 5" x="3163" y="3621" w="269" h="337" pX="0.5" pY="0.5" oX="112" oY="24" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_48_ 5" x="3638" y="3638" w="254" h="342" pX="0.5" pY="0.5" oX="124" oY="23" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_49_ 6" x="3432" y="3310" w="238" h="320" pX="0.5" pY="0.5" oX="50" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_50_ 6" x="3185" y="3302" w="247" h="319" pX="0.5" pY="0.5" oX="50" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_51_ 6" x="541" y="3248" w="269" h="299" pX="0.5" pY="0.5" oX="44" oY="2" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_52_ 6" x="3265" y="3011" w="288" h="291" pX="0.5" pY="0.5" oX="41" oY="15" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_53_ 6" x="810" y="3249" w="288" h="299" pX="0.5" pY="0.5" oX="40" oY="13" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_54_ 6" x="4099" y="3037" w="292" h="289" pX="0.5" pY="0.5" oX="42" oY="14" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_55_ 6" x="1098" y="3256" w="265" h="304" pX="0.5" pY="0.5" oX="43" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_56_ 6" x="5791" y="3076" w="246" h="315" pX="0.5" pY="0.5" oX="45" oY="0" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_57_ 7" x="928" y="2971" w="305" h="278" pX="0.5" pY="0.5" oX="24" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_58_ 7" x="4391" y="3041" w="304" h="289" pX="0.5" pY="0.5" oX="36" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_59_ 7" x="1930" y="3270" w="290" h="309" pX="0.5" pY="0.5" oX="37" oY="42" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_60_ 7" x="4683" y="3340" w="280" h="323" pX="0.5" pY="0.5" oX="41" oY="32" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_61_ 7" x="264" y="3540" w="276" h="330" pX="0.5" pY="0.5" oX="43" oY="27" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_62_ 7" x="5180" y="3371" w="283" h="323" pX="0.5" pY="0.5" oX="42" oY="29" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_63_ 7" x="1363" y="3259" w="288" h="305" pX="0.5" pY="0.5" oX="36" oY="45" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Run_64_ 7" x="3553" y="3022" w="293" h="288" pX="0.5" pY="0.5" oX="33" oY="61" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_01_ 0" x="1911" y="374" w="294" h="198" pX="0.5" pY="0.5" oX="65" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_02_ 0" x="2781" y="0" w="295" h="182" pX="0.5" pY="0.5" oX="62" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_03_ 0" x="4748" y="0" w="286" h="187" pX="0.5" pY="0.5" oX="67" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_04_ 1" x="1736" y="1953" w="179" h="249" pX="0.5" pY="0.5" oX="154" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_05_ 1" x="920" y="2189" w="162" h="258" pX="0.5" pY="0.5" oX="158" oY="81" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_06_ 1" x="4667" y="1994" w="157" h="253" pX="0.5" pY="0.5" oX="152" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_07_ 2" x="555" y="2963" w="185" h="278" pX="0.5" pY="0.5" oX="86" oY="68" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_08_ 2" x="3203" y="2742" w="164" h="268" pX="0.5" pY="0.5" oX="99" oY="77" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_09_ 2" x="4824" y="1997" w="164" h="253" pX="0.5" pY="0.5" oX="108" oY="87" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_10_ 3" x="1642" y="1236" w="292" h="233" pX="0.5" pY="0.5" oX="63" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_11_ 3" x="2908" y="792" w="295" h="223" pX="0.5" pY="0.5" oX="64" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_12_ 3" x="4494" y="592" w="285" h="216" pX="0.5" pY="0.5" oX="67" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_13_ 4" x="907" y="566" w="237" h="209" pX="0.5" pY="0.5" oX="139" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_14_ 4" x="879" y="775" w="227" h="221" pX="0.5" pY="0.5" oX="151" oY="78" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_15_ 4" x="0" y="983" w="216" h="227" pX="0.5" pY="0.5" oX="161" oY="71" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_16_ 5" x="1689" y="2456" w="208" h="259" pX="0.5" pY="0.5" oX="149" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_17_ 5" x="4988" y="1998" w="211" h="253" pX="0.5" pY="0.5" oX="155" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_18_ 5" x="161" y="2181" w="214" h="254" pX="0.5" pY="0.5" oX="162" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_19_ 6" x="1889" y="2721" w="207" h="263" pX="0.5" pY="0.5" oX="62" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_20_ 6" x="5669" y="1511" w="210" h="241" pX="0.5" pY="0.5" oX="55" oY="62" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_21_ 6" x="1081" y="998" w="216" h="229" pX="0.5" pY="0.5" oX="45" oY="71" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_22_ 7" x="3782" y="2232" w="234" h="255" pX="0.5" pY="0.5" oX="48" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_23_ 7" x="4887" y="1751" w="223" h="246" pX="0.5" pY="0.5" oX="46" oY="104" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Use Skill_24_ 7" x="5199" y="1999" w="217" h="253" pX="0.5" pY="0.5" oX="46" oY="104" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_01_ 0" x="5164" y="1511" w="281" h="240" pX="0.5" pY="0.5" oX="53" oY="87" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_02_ 0" x="3264" y="581" w="288" h="213" pX="0.5" pY="0.5" oX="60" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_03_ 0" x="4404" y="187" w="289" h="197" pX="0.5" pY="0.5" oX="69" oY="99" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_04_ 0" x="5501" y="817" w="288" h="226" pX="0.5" pY="0.5" oX="80" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_05_ 0" x="2571" y="1481" w="282" h="238" pX="0.5" pY="0.5" oX="92" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_06_ 0" x="1106" y="778" w="289" h="220" pX="0.5" pY="0.5" oX="80" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_07_ 0" x="2593" y="182" w="292" h="195" pX="0.5" pY="0.5" oX="69" oY="99" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_08_ 0" x="1395" y="779" w="288" h="220" pX="0.5" pY="0.5" oX="61" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_09_ 1" x="1459" y="2978" w="215" h="281" pX="0.5" pY="0.5" oX="123" oY="43" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_10_ 1" x="1674" y="2978" w="173" h="282" pX="0.5" pY="0.5" oX="153" oY="50" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_11_ 1" x="4723" y="2770" w="169" h="275" pX="0.5" pY="0.5" oX="156" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_12_ 1" x="2096" y="2722" w="206" h="264" pX="0.5" pY="0.5" oX="124" oY="82" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_13_ 1" x="5526" y="2277" w="210" h="258" pX="0.5" pY="0.5" oX="125" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_14_ 1" x="3367" y="2743" w="187" h="268" pX="0.5" pY="0.5" oX="145" oY="77" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_15_ 1" x="4892" y="2771" w="170" h="275" pX="0.5" pY="0.5" oX="156" oY="66" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_16_ 1" x="740" y="2969" w="188" h="279" pX="0.5" pY="0.5" oX="137" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_17_ 2" x="3554" y="2748" w="205" h="269" pX="0.5" pY="0.5" oX="85" oY="69" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_18_ 2" x="5210" y="2510" w="179" h="262" pX="0.5" pY="0.5" oX="93" oY="72" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_19_ 2" x="4011" y="2491" w="174" h="261" pX="0.5" pY="0.5" oX="94" oY="70" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_20_ 2" x="4185" y="2501" w="201" h="261" pX="0.5" pY="0.5" oX="89" oY="65" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_21_ 2" x="5389" y="2535" w="204" h="262" pX="0.5" pY="0.5" oX="83" oY="55" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_22_ 2" x="5593" y="2536" w="182" h="262" pX="0.5" pY="0.5" oX="87" oY="62" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_23_ 2" x="4386" y="2503" w="176" h="261" pX="0.5" pY="0.5" oX="93" oY="69" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_24_ 2" x="4562" y="2507" w="184" h="261" pX="0.5" pY="0.5" oX="93" oY="75" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_25_ 3" x="168" y="1456" w="283" h="235" pX="0.5" pY="0.5" oX="87" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_26_ 3" x="4084" y="1031" w="288" h="231" pX="0.5" pY="0.5" oX="74" oY="100" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_27_ 3" x="3203" y="794" w="291" h="223" pX="0.5" pY="0.5" oX="62" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_28_ 3" x="3907" y="802" w="289" h="224" pX="0.5" pY="0.5" oX="53" oY="114" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_29_ 3" x="4723" y="1040" w="280" h="232" pX="0.5" pY="0.5" oX="49" oY="110" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_30_ 3" x="1982" y="1008" w="289" h="230" pX="0.5" pY="0.5" oX="53" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_31_ 3" x="4196" y="806" w="291" h="225" pX="0.5" pY="0.5" oX="61" oY="108" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_32_ 3" x="4487" y="808" w="291" h="225" pX="0.5" pY="0.5" oX="71" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_33_ 4" x="2116" y="2463" w="252" h="259" pX="0.5" pY="0.5" oX="133" oY="47" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_34_ 4" x="2562" y="1719" w="235" h="245" pX="0.5" pY="0.5" oX="147" oY="48" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_35_ 4" x="4449" y="1992" w="218" h="252" pX="0.5" pY="0.5" oX="160" oY="51" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_36_ 4" x="2368" y="2469" w="221" h="260" pX="0.5" pY="0.5" oX="151" oY="57" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_37_ 4" x="2589" y="2471" w="210" h="260" pX="0.5" pY="0.5" oX="149" oY="59" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_38_ 4" x="1897" y="2462" w="219" h="259" pX="0.5" pY="0.5" oX="151" oY="54" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_39_ 4" x="2767" y="1966" w="223" h="250" pX="0.5" pY="0.5" oX="155" oY="51" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_40_ 4" x="2320" y="1714" w="242" h="244" pX="0.5" pY="0.5" oX="141" oY="49" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_41_ 5" x="3922" y="2752" w="212" h="271" pX="0.5" pY="0.5" oX="151" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_42_ 5" x="5736" y="2278" w="215" h="258" pX="0.5" pY="0.5" oX="152" oY="98" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_43_ 5" x="3438" y="1976" w="218" h="251" pX="0.5" pY="0.5" oX="155" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_44_ 5" x="243" y="1692" w="244" h="241" pX="0.5" pY="0.5" oX="132" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_45_ 5" x="3963" y="1497" w="251" h="239" pX="0.5" pY="0.5" oX="123" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_46_ 5" x="2797" y="1721" w="234" h="245" pX="0.5" pY="0.5" oX="140" oY="103" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_47_ 5" x="3656" y="1976" w="213" h="251" pX="0.5" pY="0.5" oX="160" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_48_ 5" x="4883" y="2251" w="218" h="257" pX="0.5" pY="0.5" oX="153" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_49_ 6" x="3074" y="2477" w="206" h="260" pX="0.5" pY="0.5" oX="62" oY="58" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_50_ 6" x="5416" y="1999" w="208" h="253" pX="0.5" pY="0.5" oX="58" oY="56" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_51_ 6" x="3516" y="1488" w="213" h="240" pX="0.5" pY="0.5" oX="50" oY="60" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_52_ 6" x="1604" y="1469" w="236" h="237" pX="0.5" pY="0.5" oX="46" oY="63" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_53_ 6" x="1225" y="1703" w="251" h="243" pX="0.5" pY="0.5" oX="48" oY="65" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_54_ 6" x="3246" y="1249" w="233" h="235" pX="0.5" pY="0.5" oX="48" oY="61" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_55_ 6" x="2360" y="1476" w="211" h="238" pX="0.5" pY="0.5" oX="50" oY="59" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_56_ 6" x="1915" y="1958" w="213" h="249" pX="0.5" pY="0.5" oX="53" oY="61" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_57_ 7" x="3280" y="2482" w="252" h="260" pX="0.5" pY="0.5" oX="38" oY="88" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_58_ 7" x="5775" y="2536" w="236" h="262" pX="0.5" pY="0.5" oX="41" oY="86" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_59_ 7" x="4016" y="2235" w="216" h="256" pX="0.5" pY="0.5" oX="45" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_60_ 7" x="2990" y="1968" w="215" h="250" pX="0.5" pY="0.5" oX="52" oY="102" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_61_ 7" x="3869" y="1981" w="204" h="251" pX="0.5" pY="0.5" oX="65" oY="98" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_62_ 7" x="4073" y="1984" w="212" h="251" pX="0.5" pY="0.5" oX="55" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_63_ 7" x="5101" y="2252" w="217" h="257" pX="0.5" pY="0.5" oX="46" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Walk_64_ 7" x="0" y="2435" w="233" h="258" pX="0.5" pY="0.5" oX="40" oY="92" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_01_ 0" x="2205" y="376" w="244" h="198" pX="0.5" pY="0.5" oX="115" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_02_ 0" x="4693" y="187" w="249" h="197" pX="0.5" pY="0.5" oX="112" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_03_ 0" x="3074" y="184" w="253" h="195" pX="0.5" pY="0.5" oX="109" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_04_ 1" x="3031" y="1723" w="198" h="245" pX="0.5" pY="0.5" oX="135" oY="106" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_05_ 1" x="3956" y="1736" w="196" h="245" pX="0.5" pY="0.5" oX="135" oY="107" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_06_ 1" x="4152" y="1739" w="194" h="245" pX="0.5" pY="0.5" oX="135" oY="109" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_07_ 2" x="1297" y="999" w="204" h="229" pX="0.5" pY="0.5" oX="86" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_08_ 2" x="3279" y="1017" w="202" h="232" pX="0.5" pY="0.5" oX="88" oY="96" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_09_ 2" x="4973" y="1275" w="201" h="235" pX="0.5" pY="0.5" oX="89" oY="95" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_10_ 3" x="4214" y="1500" w="240" h="239" pX="0.5" pY="0.5" oX="61" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_11_ 3" x="2853" y="1483" w="245" h="238" pX="0.5" pY="0.5" oX="59" oY="94" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_12_ 3" x="1840" y="1472" w="249" h="237" pX="0.5" pY="0.5" oX="58" oY="93" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_13_ 4" x="3552" y="584" w="226" h="213" pX="0.5" pY="0.5" oX="129" oY="101" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_14_ 4" x="0" y="763" w="228" h="220" pX="0.5" pY="0.5" oX="129" oY="99" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_15_ 4" x="5789" y="817" w="228" h="226" pX="0.5" pY="0.5" oX="129" oY="97" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_16_ 5" x="5624" y="2024" w="224" h="253" pX="0.5" pY="0.5" oX="112" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_17_ 5" x="1082" y="2195" w="233" h="254" pX="0.5" pY="0.5" oX="106" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_18_ 5" x="1315" y="2199" w="240" h="254" pX="0.5" pY="0.5" oX="101" oY="91" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_19_ 6" x="1501" y="1004" w="223" h="229" pX="0.5" pY="0.5" oX="84" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_20_ 6" x="2271" y="1013" w="232" h="230" pX="0.5" pY="0.5" oX="81" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_21_ 6" x="2503" y="1013" w="241" h="230" pX="0.5" pY="0.5" oX="78" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_22_ 7" x="172" y="1933" w="230" h="248" pX="0.5" pY="0.5" oX="66" oY="89" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_23_ 7" x="2128" y="1958" w="232" h="249" pX="0.5" pY="0.5" oX="65" oY="90" oW="400" oH="400"/>
+  <sprite n="Daemon_Bone_Woozy_24_ 7" x="3205" y="1972" w="233" h="250" pX="0.5" pY="0.5" oX="65" oY="90" oW="400" oH="400"/>
+</TextureAtlas>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../sprite_sheets/units/Demons/Daemon_Infernum.tsx"/>
+ <object name="Daemon_Infernum" class="unit" gid="1" width="223" height="169"/>
+</template>

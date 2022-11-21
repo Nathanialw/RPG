@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="6136" height="3058" scale="1" format="RGBA8888">
+  <sprite n="Daemon_Howler_Attack 1_01_ 0" x="3431" y="164" w="257" h="173" pX="0.5" pY="0.5" oX="57" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_02_ 0" x="5753" y="1132" w="233" h="211" pX="0.5" pY="0.5" oX="50" oY="34" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_03_ 0" x="284" y="1720" w="168" h="224" pX="0.5" pY="0.5" oX="109" oY="76" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_04_ 1" x="5886" y="1350" w="158" h="219" pX="0.5" pY="0.5" oX="133" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_05_ 1" x="0" y="2168" w="155" h="239" pX="0.5" pY="0.5" oX="166" oY="48" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_06_ 1" x="4141" y="1121" w="197" h="210" pX="0.5" pY="0.5" oX="61" oY="61" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_07_ 2" x="621" y="2177" w="162" h="242" pX="0.5" pY="0.5" oX="75" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_08_ 2" x="2164" y="2447" w="158" h="276" pX="0.5" pY="0.5" oX="47" oY="38" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_09_ 2" x="203" y="1074" w="196" h="208" pX="0.5" pY="0.5" oX="111" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_10_ 3" x="410" y="879" w="256" h="204" pX="0.5" pY="0.5" oX="55" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_11_ 3" x="1761" y="1102" w="229" h="208" pX="0.5" pY="0.5" oX="87" oY="104" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_12_ 3" x="4338" y="1121" w="169" h="210" pX="0.5" pY="0.5" oX="94" oY="51" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_13_ 4" x="3401" y="337" w="208" h="182" pX="0.5" pY="0.5" oX="120" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_14_ 4" x="1775" y="897" w="220" h="205" pX="0.5" pY="0.5" oX="112" oY="56" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_15_ 4" x="5783" y="2020" w="208" h="238" pX="0.5" pY="0.5" oX="75" oY="52" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_16_ 5" x="4039" y="1769" w="183" h="228" pX="0.5" pY="0.5" oX="130" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_17_ 5" x="256" y="2414" w="189" h="262" pX="0.5" pY="0.5" oX="145" oY="64" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_18_ 5" x="4691" y="1125" w="202" h="210" pX="0.5" pY="0.5" oX="75" oY="63" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_19_ 6" x="1137" y="1955" w="181" h="230" pX="0.5" pY="0.5" oX="54" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_20_ 6" x="2549" y="2212" w="180" h="247" pX="0.5" pY="0.5" oX="35" oY="14" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_21_ 6" x="2351" y="2204" w="198" h="246" pX="0.5" pY="0.5" oX="95" oY="45" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_22_ 7" x="4462" y="1550" w="205" h="223" pX="0.5" pY="0.5" oX="42" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_23_ 7" x="2044" y="1747" w="224" h="225" pX="0.5" pY="0.5" oX="34" oY="94" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 1_24_ 7" x="2199" y="700" w="205" h="200" pX="0.5" pY="0.5" oX="89" oY="63" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_01_ 0" x="3688" y="164" w="257" h="173" pX="0.5" pY="0.5" oX="57" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_02_ 0" x="2446" y="1313" w="328" h="215" pX="0.5" pY="0.5" oX="10" oY="30" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_03_ 0" x="1828" y="327" w="241" h="176" pX="0.5" pY="0.5" oX="65" oY="131" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_04_ 1" x="0" y="1490" w="158" h="219" pX="0.5" pY="0.5" oX="133" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_05_ 1" x="2573" y="2740" w="182" h="297" pX="0.5" pY="0.5" oX="168" oY="17" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_06_ 1" x="3071" y="2218" w="175" h="249" pX="0.5" pY="0.5" oX="60" oY="37" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_07_ 2" x="783" y="2177" w="162" h="242" pX="0.5" pY="0.5" oX="75" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_08_ 2" x="5323" y="2506" w="171" h="286" pX="0.5" pY="0.5" oX="22" oY="37" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_09_ 2" x="3246" y="2221" w="177" h="251" pX="0.5" pY="0.5" oX="129" oY="35" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_10_ 3" x="666" y="881" w="256" h="204" pX="0.5" pY="0.5" oX="55" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_11_ 3" x="2404" y="701" w="319" h="200" pX="0.5" pY="0.5" oX="31" oY="119" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_12_ 3" x="3417" y="1764" w="240" h="227" pX="0.5" pY="0.5" oX="63" oY="38" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_13_ 4" x="3609" y="337" w="208" h="182" pX="0.5" pY="0.5" oX="120" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_14_ 4" x="5379" y="2248" w="221" h="258" pX="0.5" pY="0.5" oX="99" oY="19" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_15_ 4" x="5080" y="1127" w="220" h="210" pX="0.5" pY="0.5" oX="46" oY="89" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_16_ 5" x="4222" y="1771" w="183" h="228" pX="0.5" pY="0.5" oX="130" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_17_ 5" x="2322" y="2450" w="188" h="277" pX="0.5" pY="0.5" oX="133" oY="65" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_18_ 5" x="3423" y="2221" w="229" h="251" pX="0.5" pY="0.5" oX="37" oY="10" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_19_ 6" x="1463" y="1962" w="181" h="230" pX="0.5" pY="0.5" oX="54" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_20_ 6" x="3652" y="2224" w="215" h="252" pX="0.5" pY="0.5" oX="34" oY="17" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_21_ 6" x="2723" y="701" w="235" h="200" pX="0.5" pY="0.5" oX="101" oY="91" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_22_ 7" x="4667" y="1551" w="205" h="223" pX="0.5" pY="0.5" oX="42" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_23_ 7" x="721" y="1948" w="235" h="229" pX="0.5" pY="0.5" oX="0" oY="114" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Attack 2_24_ 7" x="5156" y="2245" w="223" h="257" pX="0.5" pY="0.5" oX="103" oY="12" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_01_ 0" x="433" y="321" w="259" h="174" pX="0.5" pY="0.5" oX="55" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_02_ 0" x="692" y="322" w="249" h="174" pX="0.5" pY="0.5" oX="60" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_03_ 0" x="941" y="323" w="240" h="174" pX="0.5" pY="0.5" oX="65" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_04_ 1" x="1145" y="1726" w="134" h="228" pX="0.5" pY="0.5" oX="134" oY="73" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_05_ 1" x="4326" y="1548" w="136" h="223" pX="0.5" pY="0.5" oX="133" oY="76" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_06_ 1" x="2943" y="1321" w="136" h="219" pX="0.5" pY="0.5" oX="133" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_07_ 2" x="144" y="1713" w="140" h="227" pX="0.5" pY="0.5" oX="97" oY="73" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_08_ 2" x="4872" y="1553" w="140" h="223" pX="0.5" pY="0.5" oX="97" oY="76" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_09_ 2" x="158" y="1494" w="140" h="219" pX="0.5" pY="0.5" oX="97" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_10_ 3" x="3552" y="0" w="258" h="164" pX="0.5" pY="0.5" oX="56" oY="117" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_11_ 3" x="5059" y="0" w="249" h="165" pX="0.5" pY="0.5" oX="60" oY="116" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_12_ 3" x="5308" y="0" w="240" h="165" pX="0.5" pY="0.5" oX="65" oY="116" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_13_ 4" x="3836" y="519" w="209" h="194" pX="0.5" pY="0.5" oX="90" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_14_ 4" x="4795" y="520" w="213" h="196" pX="0.5" pY="0.5" oX="86" oY="83" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_15_ 4" x="1179" y="686" w="217" h="198" pX="0.5" pY="0.5" oX="82" oY="83" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_16_ 5" x="1990" y="1105" w="209" h="208" pX="0.5" pY="0.5" oX="90" oY="98" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_17_ 5" x="161" y="1282" w="214" h="212" pX="0.5" pY="0.5" oX="85" oY="94" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_18_ 5" x="1334" y="1298" w="217" h="214" pX="0.5" pY="0.5" oX="82" oY="92" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_19_ 6" x="3025" y="514" w="211" h="193" pX="0.5" pY="0.5" oX="66" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_20_ 6" x="4392" y="519" w="215" h="195" pX="0.5" pY="0.5" oX="66" oY="83" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_21_ 6" x="1396" y="686" w="219" h="198" pX="0.5" pY="0.5" oX="66" oY="83" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_22_ 7" x="3081" y="1116" w="211" h="209" pX="0.5" pY="0.5" oX="66" oY="97" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_23_ 7" x="375" y="1289" w="217" h="212" pX="0.5" pY="0.5" oX="66" oY="94" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Behavior_24_ 7" x="1755" y="1310" w="219" h="214" pX="0.5" pY="0.5" oX="66" oY="92" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_01_ 0" x="3945" y="164" w="257" h="173" pX="0.5" pY="0.5" oX="57" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_02_ 0" x="443" y="153" w="229" h="168" pX="0.5" pY="0.5" oX="86" oY="85" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_03_ 0" x="5936" y="0" w="185" h="168" pX="0.5" pY="0.5" oX="96" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_04_ 1" x="298" y="1501" w="158" h="219" pX="0.5" pY="0.5" oX="133" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_05_ 1" x="1446" y="1088" w="166" h="210" pX="0.5" pY="0.5" oX="141" oY="100" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_06_ 1" x="5586" y="339" w="171" h="186" pX="0.5" pY="0.5" oX="148" oY="108" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_07_ 2" x="945" y="2178" w="162" h="242" pX="0.5" pY="0.5" oX="75" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_08_ 2" x="4525" y="916" w="166" h="206" pX="0.5" pY="0.5" oX="60" oY="87" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_09_ 2" x="1111" y="153" w="174" h="170" pX="0.5" pY="0.5" oX="48" oY="109" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_10_ 3" x="922" y="882" w="256" h="204" pX="0.5" pY="0.5" oX="55" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_11_ 3" x="3154" y="711" w="225" h="201" pX="0.5" pY="0.5" oX="52" oY="101" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_12_ 3" x="4607" y="519" w="188" h="195" pX="0.5" pY="0.5" oX="83" oY="115" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_13_ 4" x="3817" y="337" w="208" h="182" pX="0.5" pY="0.5" oX="120" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_14_ 4" x="1815" y="698" w="196" h="199" pX="0.5" pY="0.5" oX="125" oY="75" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_15_ 4" x="1178" y="884" w="180" h="204" pX="0.5" pY="0.5" oX="151" oY="69" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_16_ 5" x="4405" y="1773" w="183" h="228" pX="0.5" pY="0.5" oX="130" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_17_ 5" x="5243" y="1341" w="212" h="218" pX="0.5" pY="0.5" oX="103" oY="95" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_18_ 5" x="3292" y="1117" w="205" h="209" pX="0.5" pY="0.5" oX="119" oY="110" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_19_ 6" x="1644" y="1968" w="181" h="230" pX="0.5" pY="0.5" oX="54" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_20_ 6" x="1297" y="498" w="211" h="188" pX="0.5" pY="0.5" oX="53" oY="81" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_21_ 6" x="3044" y="335" w="201" h="179" pX="0.5" pY="0.5" oX="43" oY="72" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_22_ 7" x="5012" y="1554" w="205" h="223" pX="0.5" pY="0.5" oX="42" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_23_ 7" x="4131" y="1331" w="197" h="216" pX="0.5" pY="0.5" oX="46" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Block_24_ 7" x="5953" y="925" w="183" h="207" pX="0.5" pY="0.5" oX="37" oY="109" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_01_ 0" x="0" y="485" w="172" h="186" pX="0.5" pY="0.5" oX="124" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_02_ 0" x="425" y="495" w="172" h="187" pX="0.5" pY="0.5" oX="124" oY="89" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_03_ 0" x="1508" y="498" w="172" h="188" pX="0.5" pY="0.5" oX="124" oY="88" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_04_ 1" x="1285" y="154" w="190" h="170" pX="0.5" pY="0.5" oX="104" oY="139" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_05_ 1" x="672" y="153" w="189" h="168" pX="0.5" pY="0.5" oX="104" oY="141" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_06_ 1" x="5744" y="0" w="192" h="166" pX="0.5" pY="0.5" oX="103" oY="143" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_07_ 2" x="1378" y="0" w="190" h="154" pX="0.5" pY="0.5" oX="74" oY="123" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_08_ 2" x="1568" y="0" w="190" h="154" pX="0.5" pY="0.5" oX="74" oY="123" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_09_ 2" x="1758" y="0" w="190" h="154" pX="0.5" pY="0.5" oX="74" oY="123" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_10_ 3" x="4202" y="164" w="168" h="173" pX="0.5" pY="0.5" oX="69" oY="116" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_11_ 3" x="3045" y="163" w="169" h="172" pX="0.5" pY="0.5" oX="68" oY="116" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_12_ 3" x="2168" y="160" w="169" h="171" pX="0.5" pY="0.5" oX="68" oY="117" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_13_ 4" x="2692" y="0" w="194" h="161" pX="0.5" pY="0.5" oX="106" oY="120" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_14_ 4" x="3164" y="0" w="194" h="163" pX="0.5" pY="0.5" oX="106" oY="119" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_15_ 4" x="3358" y="0" w="194" h="163" pX="0.5" pY="0.5" oX="106" oY="119" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_16_ 5" x="5395" y="522" w="148" h="197" pX="0.5" pY="0.5" oX="105" oY="117" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_17_ 5" x="5247" y="521" w="148" h="196" pX="0.5" pY="0.5" oX="105" oY="118" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_18_ 5" x="4045" y="519" w="149" h="194" pX="0.5" pY="0.5" oX="104" oY="120" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_19_ 6" x="1938" y="507" w="149" h="191" pX="0.5" pY="0.5" oX="114" oY="98" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_20_ 6" x="2087" y="507" w="149" h="192" pX="0.5" pY="0.5" oX="114" oY="97" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_21_ 6" x="3236" y="518" w="150" h="193" pX="0.5" pY="0.5" oX="113" oY="96" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_22_ 7" x="552" y="0" w="191" h="153" pX="0.5" pY="0.5" oX="63" oY="122" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_23_ 7" x="743" y="0" w="192" h="153" pX="0.5" pY="0.5" oX="62" oY="122" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Critical HP_24_ 7" x="935" y="0" w="192" h="153" pX="0.5" pY="0.5" oX="62" oY="122" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Dead_01_ 0" x="2886" y="0" w="278" h="161" pX="0.5" pY="0.5" oX="42" oY="148" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Dead_02_ 1" x="2199" y="1105" w="237" h="208" pX="0.5" pY="0.5" oX="74" oY="133" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Dead_03_ 2" x="5008" y="521" w="239" h="195" pX="0.5" pY="0.5" oX="49" oY="138" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Dead_04_ 3" x="5543" y="526" w="281" h="196" pX="0.5" pY="0.5" oX="38" oY="144" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Dead_05_ 4" x="1948" y="0" w="230" h="157" pX="0.5" pY="0.5" oX="77" oY="147" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Dead_06_ 5" x="1475" y="154" w="219" h="170" pX="0.5" pY="0.5" oX="85" oY="163" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Dead_07_ 6" x="228" y="145" w="215" h="167" pX="0.5" pY="0.5" oX="56" oY="150" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Dead_08_ 7" x="0" y="145" w="228" h="166" pX="0.5" pY="0.5" oX="55" oY="160" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_01_ 0" x="4370" y="164" w="257" h="173" pX="0.5" pY="0.5" oX="57" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_02_ 0" x="2337" y="160" w="231" h="171" pX="0.5" pY="0.5" oX="115" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_03_ 0" x="4691" y="919" w="175" h="206" pX="0.5" pY="0.5" oX="145" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_04_ 1" x="456" y="1504" w="158" h="219" pX="0.5" pY="0.5" oX="133" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_05_ 1" x="3792" y="1993" w="170" h="231" pX="0.5" pY="0.5" oX="145" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_06_ 1" x="4866" y="919" w="244" h="206" pX="0.5" pY="0.5" oX="103" oY="112" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_07_ 2" x="1107" y="2185" w="162" h="242" pX="0.5" pY="0.5" oX="75" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_08_ 2" x="2774" y="1321" w="169" h="215" pX="0.5" pY="0.5" oX="53" oY="45" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_09_ 2" x="4627" y="164" w="245" h="173" pX="0.5" pY="0.5" oX="20" oY="69" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_10_ 3" x="1358" y="884" w="256" h="204" pX="0.5" pY="0.5" oX="55" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_11_ 3" x="5455" y="1341" w="228" h="218" pX="0.5" pY="0.5" oX="25" oY="94" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_12_ 3" x="4778" y="2005" w="176" h="234" pX="0.5" pY="0.5" oX="46" oY="97" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_13_ 4" x="4025" y="337" w="208" h="182" pX="0.5" pY="0.5" oX="120" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_14_ 4" x="5986" y="1132" w="150" h="218" pX="0.5" pY="0.5" oX="159" oY="72" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_15_ 4" x="4588" y="1774" w="140" h="228" pX="0.5" pY="0.5" oX="175" oY="84" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_16_ 5" x="4728" y="1776" w="183" h="228" pX="0.5" pY="0.5" oX="130" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_17_ 5" x="646" y="1085" w="256" h="207" pX="0.5" pY="0.5" oX="67" oY="103" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_18_ 5" x="4023" y="713" w="249" h="202" pX="0.5" pY="0.5" oX="38" oY="114" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_19_ 6" x="1825" y="1971" w="181" h="230" pX="0.5" pY="0.5" oX="54" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_20_ 6" x="2178" y="0" w="256" h="160" pX="0.5" pY="0.5" oX="45" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_21_ 6" x="1127" y="0" w="251" h="153" pX="0.5" pY="0.5" oX="80" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_22_ 7" x="5217" y="1559" w="205" h="223" pX="0.5" pY="0.5" oX="42" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_23_ 7" x="5628" y="2012" w="155" h="238" pX="0.5" pY="0.5" oX="57" oY="72" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Evade_24_ 7" x="1318" y="1955" w="145" h="230" pX="0.5" pY="0.5" oX="51" oY="58" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_01_ 0" x="5049" y="165" w="257" h="173" pX="0.5" pY="0.5" oX="57" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_02_ 0" x="2069" y="331" w="257" h="176" pX="0.5" pY="0.5" oX="54" oY="83" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_03_ 0" x="597" y="496" w="247" h="187" pX="0.5" pY="0.5" oX="55" oY="58" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_04_ 1" x="614" y="1504" w="158" h="219" pX="0.5" pY="0.5" oX="133" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_05_ 1" x="2603" y="1528" w="146" h="221" pX="0.5" pY="0.5" oX="145" oY="75" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_06_ 1" x="1612" y="1095" w="149" h="210" pX="0.5" pY="0.5" oX="168" oY="87" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_07_ 2" x="1269" y="2185" w="162" h="242" pX="0.5" pY="0.5" oX="75" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_08_ 2" x="5991" y="2020" w="145" h="238" pX="0.5" pY="0.5" oX="77" oY="67" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_09_ 2" x="4896" y="1335" w="145" h="218" pX="0.5" pY="0.5" oX="52" oY="88" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_10_ 3" x="2156" y="901" w="256" h="204" pX="0.5" pY="0.5" oX="55" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_11_ 3" x="844" y="497" w="256" h="187" pX="0.5" pY="0.5" oX="57" oY="111" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_12_ 3" x="5306" y="165" w="247" h="173" pX="0.5" pY="0.5" oX="64" oY="134" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_13_ 4" x="4233" y="337" w="208" h="182" pX="0.5" pY="0.5" oX="120" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_14_ 4" x="2236" y="508" w="222" h="192" pX="0.5" pY="0.5" oX="119" oY="71" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_15_ 4" x="4272" y="714" w="220" h="202" pX="0.5" pY="0.5" oX="130" oY="59" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_16_ 5" x="4911" y="1777" w="183" h="228" pX="0.5" pY="0.5" oX="130" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_17_ 5" x="2268" y="1748" w="204" h="225" pX="0.5" pY="0.5" oX="122" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_18_ 5" x="4702" y="716" w="220" h="203" pX="0.5" pY="0.5" oX="125" oY="134" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_19_ 6" x="2006" y="1972" w="181" h="230" pX="0.5" pY="0.5" oX="54" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_20_ 6" x="3962" y="1997" w="204" h="231" pX="0.5" pY="0.5" oX="42" oY="46" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_21_ 6" x="5110" y="921" w="222" h="206" pX="0.5" pY="0.5" oX="22" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_22_ 7" x="5422" y="1559" w="205" h="223" pX="0.5" pY="0.5" oX="42" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_23_ 7" x="4682" y="1335" w="214" h="216" pX="0.5" pY="0.5" oX="28" oY="97" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Get Hit_24_ 7" x="902" y="1086" w="229" h="207" pX="0.5" pY="0.5" oX="9" oY="123" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_01_ 0" x="5553" y="166" w="257" h="173" pX="0.5" pY="0.5" oX="57" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_02_ 0" x="1181" y="324" w="256" h="174" pX="0.5" pY="0.5" oX="57" oY="92" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_03_ 0" x="2326" y="332" w="254" h="176" pX="0.5" pY="0.5" oX="58" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_04_ 1" x="772" y="1506" w="158" h="219" pX="0.5" pY="0.5" oX="133" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_05_ 1" x="4328" y="1331" w="159" h="217" pX="0.5" pY="0.5" oX="133" oY="78" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_06_ 1" x="3079" y="1325" w="161" h="215" pX="0.5" pY="0.5" oX="133" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_07_ 2" x="1431" y="2192" w="162" h="242" pX="0.5" pY="0.5" oX="75" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_08_ 2" x="1593" y="2198" w="163" h="242" pX="0.5" pY="0.5" oX="74" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_09_ 2" x="456" y="2175" w="165" h="241" pX="0.5" pY="0.5" oX="73" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_10_ 3" x="2412" y="901" w="256" h="204" pX="0.5" pY="0.5" oX="55" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_11_ 3" x="2668" y="901" w="255" h="204" pX="0.5" pY="0.5" oX="56" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_12_ 3" x="3962" y="915" w="253" h="205" pX="0.5" pY="0.5" oX="57" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_13_ 4" x="4441" y="337" w="208" h="182" pX="0.5" pY="0.5" oX="120" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_14_ 4" x="5013" y="338" w="208" h="183" pX="0.5" pY="0.5" oX="120" oY="78" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_15_ 4" x="5221" y="338" w="209" h="183" pX="0.5" pY="0.5" oX="120" oY="78" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_16_ 5" x="5094" y="1782" w="183" h="228" pX="0.5" pY="0.5" oX="130" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_17_ 5" x="2844" y="1761" w="182" h="226" pX="0.5" pY="0.5" oX="131" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_18_ 5" x="2472" y="1749" w="181" h="225" pX="0.5" pY="0.5" oX="132" oY="81" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_19_ 6" x="2187" y="1973" w="181" h="230" pX="0.5" pY="0.5" oX="54" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_20_ 6" x="2368" y="1974" w="181" h="230" pX="0.5" pY="0.5" oX="54" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_21_ 6" x="2549" y="1982" w="181" h="230" pX="0.5" pY="0.5" oX="54" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_22_ 7" x="5627" y="1561" w="205" h="223" pX="0.5" pY="0.5" oX="42" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_23_ 7" x="1463" y="1738" w="204" h="224" pX="0.5" pY="0.5" oX="42" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Idle_24_ 7" x="5832" y="1569" w="205" h="223" pX="0.5" pY="0.5" oX="42" oY="81" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_01_ 0" x="3245" y="335" w="156" h="183" pX="0.5" pY="0.5" oX="128" oY="97" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_02_ 0" x="4857" y="337" w="156" h="183" pX="0.5" pY="0.5" oX="128" oY="97" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_03_ 0" x="5430" y="339" w="156" h="183" pX="0.5" pY="0.5" oX="128" oY="97" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_04_ 1" x="0" y="0" w="184" h="145" pX="0.5" pY="0.5" oX="119" oY="139" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_05_ 1" x="184" y="0" w="184" h="145" pX="0.5" pY="0.5" oX="119" oY="139" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_06_ 1" x="368" y="0" w="184" h="145" pX="0.5" pY="0.5" oX="119" oY="139" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_07_ 2" x="4872" y="164" w="177" h="173" pX="0.5" pY="0.5" oX="64" oY="99" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_08_ 2" x="0" y="311" w="177" h="174" pX="0.5" pY="0.5" oX="64" oY="98" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_09_ 2" x="1437" y="324" w="177" h="174" pX="0.5" pY="0.5" oX="64" oY="98" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_10_ 3" x="2580" y="332" w="154" h="177" pX="0.5" pY="0.5" oX="84" oY="127" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_11_ 3" x="2734" y="332" w="155" h="177" pX="0.5" pY="0.5" oX="83" oY="127" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_12_ 3" x="2889" y="332" w="155" h="177" pX="0.5" pY="0.5" oX="83" oY="127" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_13_ 4" x="3810" y="0" w="203" h="164" pX="0.5" pY="0.5" oX="106" oY="107" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_14_ 4" x="4013" y="0" w="203" h="164" pX="0.5" pY="0.5" oX="106" oY="107" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_15_ 4" x="4216" y="0" w="203" h="164" pX="0.5" pY="0.5" oX="106" oY="107" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_16_ 5" x="1694" y="154" w="158" h="170" pX="0.5" pY="0.5" oX="129" oY="131" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_17_ 5" x="1852" y="157" w="158" h="170" pX="0.5" pY="0.5" oX="129" oY="131" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_18_ 5" x="2010" y="157" w="158" h="170" pX="0.5" pY="0.5" oX="129" oY="131" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_19_ 6" x="5230" y="717" w="161" h="204" pX="0.5" pY="0.5" oX="78" oY="85" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_20_ 6" x="1614" y="891" w="161" h="204" pX="0.5" pY="0.5" oX="78" oY="85" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_21_ 6" x="1995" y="898" w="161" h="205" pX="0.5" pY="0.5" oX="78" oY="84" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_22_ 7" x="4419" y="0" w="195" h="164" pX="0.5" pY="0.5" oX="59" oY="126" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_23_ 7" x="4614" y="0" w="195" h="164" pX="0.5" pY="0.5" oX="59" oY="126" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Rest_24_ 7" x="5548" y="0" w="196" h="165" pX="0.5" pY="0.5" oX="58" oY="125" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_01_ 0" x="4166" y="2001" w="304" h="231" pX="0.5" pY="0.5" oX="46" oY="58" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_02_ 0" x="452" y="1723" w="306" h="223" pX="0.5" pY="0.5" oX="38" oY="59" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_03_ 0" x="5757" y="341" w="309" h="185" pX="0.5" pY="0.5" oX="36" oY="70" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_04_ 0" x="3345" y="913" w="308" h="204" pX="0.5" pY="0.5" oX="32" oY="65" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_05_ 0" x="4470" y="2004" w="308" h="231" pX="0.5" pY="0.5" oX="27" oY="64" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_06_ 0" x="3445" y="1327" w="313" h="215" pX="0.5" pY="0.5" oX="31" oY="69" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_07_ 0" x="2458" y="509" w="314" h="192" pX="0.5" pY="0.5" oX="35" oY="65" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_08_ 0" x="3417" y="1542" w="311" h="222" pX="0.5" pY="0.5" oX="39" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_09_ 1" x="2755" y="2740" w="208" h="303" pX="0.5" pY="0.5" oX="92" oY="4" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_10_ 1" x="2024" y="2723" w="186" h="295" pX="0.5" pY="0.5" oX="113" oY="3" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_11_ 1" x="819" y="2690" w="176" h="292" pX="0.5" pY="0.5" oX="131" oY="5" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_12_ 1" x="244" y="2676" w="196" h="291" pX="0.5" pY="0.5" oX="115" oY="8" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_13_ 1" x="5494" y="2515" w="230" h="286" pX="0.5" pY="0.5" oX="85" oY="10" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_14_ 1" x="5914" y="2516" w="203" h="289" pX="0.5" pY="0.5" oX="110" oY="9" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_15_ 1" x="440" y="2680" w="182" h="291" pX="0.5" pY="0.5" oX="129" oY="9" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_16_ 1" x="1177" y="2693" w="198" h="294" pX="0.5" pY="0.5" oX="106" oY="8" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_17_ 2" x="3650" y="2476" w="217" h="284" pX="0.5" pY="0.5" oX="55" oY="13" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_18_ 2" x="622" y="2681" w="197" h="291" pX="0.5" pY="0.5" oX="57" oY="10" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_19_ 2" x="2210" y="2727" w="173" h="295" pX="0.5" pY="0.5" oX="67" oY="3" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_20_ 2" x="995" y="2690" w="182" h="293" pX="0.5" pY="0.5" oX="70" oY="1" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_21_ 2" x="4360" y="2488" w="218" h="283" pX="0.5" pY="0.5" oX="61" oY="12" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_22_ 2" x="5724" y="2516" w="190" h="288" pX="0.5" pY="0.5" oX="67" oY="5" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_23_ 2" x="1613" y="2712" w="176" h="294" pX="0.5" pY="0.5" oX="64" oY="4" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_24_ 2" x="2383" y="2736" w="190" h="296" pX="0.5" pY="0.5" oX="66" oY="4" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_25_ 3" x="1974" y="1313" w="311" h="214" pX="0.5" pY="0.5" oX="19" oY="78" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_26_ 3" x="808" y="1293" w="307" h="213" pX="0.5" pY="0.5" oX="27" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_27_ 3" x="5332" y="925" w="310" h="206" pX="0.5" pY="0.5" oX="27" oY="85" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_28_ 3" x="4922" y="716" w="308" h="203" pX="0.5" pY="0.5" oX="32" oY="85" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_29_ 3" x="3653" y="914" w="309" h="204" pX="0.5" pY="0.5" oX="37" oY="84" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_30_ 3" x="5642" y="925" w="311" h="206" pX="0.5" pY="0.5" oX="30" oY="81" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_31_ 3" x="1131" y="1088" w="315" h="206" pX="0.5" pY="0.5" oX="24" oY="84" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_32_ 3" x="4215" y="916" w="310" h="205" pX="0.5" pY="0.5" oX="23" oY="87" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_33_ 4" x="5853" y="2258" w="263" h="258" pX="0.5" pY="0.5" oX="87" oY="11" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_34_ 4" x="3867" y="2228" w="263" h="252" pX="0.5" pY="0.5" oX="78" oY="15" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_35_ 4" x="682" y="2419" w="249" h="262" pX="0.5" pY="0.5" oX="89" oY="4" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_36_ 4" x="1667" y="2443" w="244" h="269" pX="0.5" pY="0.5" oX="91" oY="1" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_37_ 4" x="4578" y="2493" w="248" h="283" pX="0.5" pY="0.5" oX="88" oY="0" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_38_ 4" x="2973" y="2467" w="251" h="278" pX="0.5" pY="0.5" oX="84" oY="4" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_39_ 4" x="5600" y="2258" w="253" h="257" pX="0.5" pY="0.5" oX="86" oY="4" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_40_ 4" x="0" y="2412" w="256" h="260" pX="0.5" pY="0.5" oX="89" oY="8" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_41_ 5" x="3403" y="2753" w="217" h="305" pX="0.5" pY="0.5" oX="111" oY="15" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_42_ 5" x="3185" y="2752" w="218" h="303" pX="0.5" pY="0.5" oX="109" oY="14" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_43_ 5" x="1375" y="2708" w="238" h="293" pX="0.5" pY="0.5" oX="95" oY="21" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_44_ 5" x="3867" y="2480" w="250" h="281" pX="0.5" pY="0.5" oX="85" oY="28" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_45_ 5" x="2725" y="2465" w="248" h="275" pX="0.5" pY="0.5" oX="87" oY="30" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_46_ 5" x="5072" y="2502" w="251" h="285" pX="0.5" pY="0.5" oX="82" oY="24" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_47_ 5" x="1789" y="2715" w="235" h="294" pX="0.5" pY="0.5" oX="98" oY="21" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_48_ 5" x="2963" y="2745" w="222" h="299" pX="0.5" pY="0.5" oX="109" oY="20" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_49_ 6" x="3440" y="2472" w="210" h="281" pX="0.5" pY="0.5" oX="43" oY="0" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_50_ 6" x="3224" y="2472" w="216" h="280" pX="0.5" pY="0.5" oX="44" oY="0" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_51_ 6" x="445" y="2419" w="237" h="261" pX="0.5" pY="0.5" oX="38" oY="2" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_52_ 6" x="4904" y="2245" w="252" h="255" pX="0.5" pY="0.5" oX="36" oY="13" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_53_ 6" x="931" y="2427" w="251" h="263" pX="0.5" pY="0.5" oX="35" oY="11" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_54_ 6" x="4650" y="2239" w="254" h="254" pX="0.5" pY="0.5" oX="37" oY="12" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_55_ 6" x="1182" y="2427" w="232" h="266" pX="0.5" pY="0.5" oX="38" oY="0" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_56_ 6" x="2510" y="2459" w="215" h="277" pX="0.5" pY="0.5" oX="40" oY="0" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_57_ 7" x="1918" y="2202" w="266" h="243" pX="0.5" pY="0.5" oX="21" oY="58" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_58_ 7" x="4130" y="2232" w="264" h="253" pX="0.5" pY="0.5" oX="32" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_59_ 7" x="1911" y="2445" w="253" h="270" pX="0.5" pY="0.5" oX="32" oY="37" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_60_ 7" x="4117" y="2485" w="243" h="282" pX="0.5" pY="0.5" oX="36" oY="28" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_61_ 7" x="0" y="2672" w="244" h="289" pX="0.5" pY="0.5" oX="37" oY="24" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_62_ 7" x="4826" y="2500" w="246" h="284" pX="0.5" pY="0.5" oX="37" oY="25" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_63_ 7" x="1414" y="2440" w="253" h="268" pX="0.5" pY="0.5" oX="31" oY="39" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Run_64_ 7" x="4394" y="2235" w="256" h="253" pX="0.5" pY="0.5" oX="29" oY="53" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_01_ 0" x="5810" y="168" w="257" h="173" pX="0.5" pY="0.5" oX="57" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_02_ 0" x="2434" y="0" w="258" h="160" pX="0.5" pY="0.5" oX="54" oY="95" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_03_ 0" x="4809" y="0" w="250" h="164" pX="0.5" pY="0.5" oX="59" oY="81" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_04_ 1" x="930" y="1506" w="158" h="219" pX="0.5" pY="0.5" oX="133" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_05_ 1" x="0" y="1709" w="144" h="226" pX="0.5" pY="0.5" oX="138" oY="71" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_06_ 1" x="3083" y="1540" w="138" h="222" pX="0.5" pY="0.5" oX="134" oY="76" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_07_ 2" x="1756" y="2201" w="162" h="242" pX="0.5" pY="0.5" oX="75" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_08_ 2" x="4954" y="2010" w="144" h="235" pX="0.5" pY="0.5" oX="86" oY="67" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_09_ 2" x="2749" y="1536" w="143" h="221" pX="0.5" pY="0.5" oX="94" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_10_ 3" x="3089" y="912" w="256" h="204" pX="0.5" pY="0.5" oX="55" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_11_ 3" x="1680" y="503" w="258" h="190" pX="0.5" pY="0.5" oX="56" oY="100" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_12_ 3" x="861" y="153" w="250" h="169" pX="0.5" pY="0.5" oX="59" oY="114" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_13_ 4" x="4649" y="337" w="208" h="182" pX="0.5" pY="0.5" oX="120" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_14_ 4" x="4194" y="519" w="198" h="194" pX="0.5" pY="0.5" oX="132" oY="68" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_15_ 4" x="2011" y="699" w="188" h="199" pX="0.5" pY="0.5" oX="141" oY="62" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_16_ 5" x="5277" y="1782" w="183" h="228" pX="0.5" pY="0.5" oX="130" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_17_ 5" x="3728" y="1542" w="185" h="222" pX="0.5" pY="0.5" oX="135" oY="87" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_18_ 5" x="5391" y="722" w="187" h="203" pX="0.5" pY="0.5" oX="142" oY="109" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_19_ 6" x="2730" y="1987" w="181" h="230" pX="0.5" pY="0.5" oX="54" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_20_ 6" x="4507" y="1122" w="184" h="212" pX="0.5" pY="0.5" oX="48" oY="54" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_21_ 6" x="3379" y="712" w="189" h="201" pX="0.5" pY="0.5" oX="40" oY="62" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_22_ 7" x="758" y="1725" w="205" h="223" pX="0.5" pY="0.5" oX="42" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_23_ 7" x="4487" y="1334" w="195" h="216" pX="0.5" pY="0.5" oX="40" oY="91" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Use Skill_24_ 7" x="5578" y="722" w="189" h="203" pX="0.5" pY="0.5" oX="40" oY="109" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_01_ 0" x="5300" y="1131" w="244" h="210" pX="0.5" pY="0.5" oX="47" oY="76" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_02_ 0" x="172" y="485" w="253" h="186" pX="0.5" pY="0.5" oX="52" oY="84" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_03_ 0" x="177" y="312" w="256" h="173" pX="0.5" pY="0.5" oX="60" oY="87" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_04_ 0" x="671" y="684" w="253" h="197" pX="0.5" pY="0.5" oX="70" oY="84" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_05_ 0" x="2436" y="1105" w="247" h="208" pX="0.5" pY="0.5" oX="81" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_06_ 0" x="3386" y="519" w="252" h="193" pX="0.5" pY="0.5" oX="70" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_07_ 0" x="2568" y="161" w="255" h="171" pX="0.5" pY="0.5" oX="61" oY="86" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_08_ 0" x="2772" y="509" w="253" h="192" pX="0.5" pY="0.5" oX="53" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_09_ 1" x="2883" y="2218" w="188" h="247" pX="0.5" pY="0.5" oX="108" oY="37" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_10_ 1" x="2729" y="2217" w="154" h="247" pX="0.5" pY="0.5" oX="134" oY="44" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_11_ 1" x="155" y="2172" w="150" h="240" pX="0.5" pY="0.5" oX="136" oY="58" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_12_ 1" x="2911" y="1988" w="182" h="230" pX="0.5" pY="0.5" oX="109" oY="72" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_13_ 1" x="1279" y="1731" w="184" h="224" pX="0.5" pY="0.5" oX="110" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_14_ 1" x="5098" y="2010" w="163" h="235" pX="0.5" pY="0.5" oX="128" oY="67" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_15_ 1" x="305" y="2174" w="151" h="240" pX="0.5" pY="0.5" oX="136" oY="58" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_16_ 1" x="2184" y="2203" w="167" h="244" pX="0.5" pY="0.5" oX="120" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_17_ 2" x="5261" y="2010" w="180" h="235" pX="0.5" pY="0.5" oX="74" oY="61" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_18_ 2" x="3093" y="1988" w="156" h="230" pX="0.5" pY="0.5" oX="81" oY="63" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_19_ 2" x="5460" y="1782" w="152" h="229" pX="0.5" pY="0.5" oX="82" oY="61" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_20_ 2" x="5612" y="1784" w="176" h="228" pX="0.5" pY="0.5" oX="78" oY="57" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_21_ 2" x="3408" y="1991" w="178" h="230" pX="0.5" pY="0.5" oX="73" oY="48" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_22_ 2" x="3249" y="1988" w="159" h="230" pX="0.5" pY="0.5" oX="76" oY="54" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_23_ 2" x="567" y="1946" w="154" h="229" pX="0.5" pY="0.5" oX="81" oY="60" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_24_ 2" x="3657" y="1764" w="161" h="227" pX="0.5" pY="0.5" oX="81" oY="66" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_25_ 3" x="399" y="1083" w="247" h="206" pX="0.5" pY="0.5" oX="76" oY="87" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_26_ 3" x="5767" y="722" w="254" h="203" pX="0.5" pY="0.5" oX="64" oY="87" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_27_ 3" x="5824" y="526" w="255" h="196" pX="0.5" pY="0.5" oX="54" oY="95" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_28_ 3" x="0" y="671" w="251" h="196" pX="0.5" pY="0.5" oX="47" oY="100" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_29_ 3" x="0" y="867" w="244" h="203" pX="0.5" pY="0.5" oX="43" oY="96" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_30_ 3" x="3568" y="712" w="252" h="201" pX="0.5" pY="0.5" oX="47" oY="94" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_31_ 3" x="924" y="685" w="255" h="197" pX="0.5" pY="0.5" oX="53" oY="94" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_32_ 3" x="417" y="683" w="254" h="196" pX="0.5" pY="0.5" oX="63" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_33_ 4" x="5788" y="1792" w="219" h="228" pX="0.5" pY="0.5" oX="117" oY="41" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_34_ 4" x="3240" y="1326" w="205" h="215" pX="0.5" pY="0.5" oX="128" oY="42" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_35_ 4" x="2892" y="1540" w="191" h="221" pX="0.5" pY="0.5" oX="140" oY="45" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_36_ 4" x="0" y="1940" w="193" h="228" pX="0.5" pY="0.5" oX="132" oY="50" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_37_ 4" x="193" y="1944" w="183" h="228" pX="0.5" pY="0.5" oX="131" oY="52" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_38_ 4" x="376" y="1946" w="191" h="228" pX="0.5" pY="0.5" oX="132" oY="47" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_39_ 4" x="1673" y="1524" w="194" h="220" pX="0.5" pY="0.5" oX="136" oY="44" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_40_ 4" x="3918" y="1329" w="213" h="215" pX="0.5" pY="0.5" oX="122" oY="43" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_41_ 5" x="5441" y="2012" w="187" h="236" pX="0.5" pY="0.5" oX="131" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_42_ 5" x="3026" y="1762" w="186" h="226" pX="0.5" pY="0.5" oX="133" oY="85" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_43_ 5" x="1088" y="1507" w="192" h="219" pX="0.5" pY="0.5" oX="135" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_44_ 5" x="592" y="1292" w="216" h="212" pX="0.5" pY="0.5" oX="114" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_45_ 5" x="3497" y="1118" w="219" h="209" pX="0.5" pY="0.5" oX="108" oY="93" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_46_ 5" x="1551" y="1305" w="204" h="214" pX="0.5" pY="0.5" oX="123" oY="90" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_47_ 5" x="1867" y="1527" w="186" h="220" pX="0.5" pY="0.5" oX="140" oY="89" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_48_ 5" x="2653" y="1757" w="191" h="225" pX="0.5" pY="0.5" oX="133" oY="89" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_49_ 6" x="956" y="1949" w="181" h="229" pX="0.5" pY="0.5" oX="54" oY="50" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_50_ 6" x="963" y="1726" w="182" h="223" pX="0.5" pY="0.5" oX="51" oY="49" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_51_ 6" x="4893" y="1125" w="187" h="210" pX="0.5" pY="0.5" oX="43" oY="53" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_52_ 6" x="3716" y="1118" w="208" h="209" pX="0.5" pY="0.5" oX="40" oY="55" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_53_ 6" x="1115" y="1294" w="219" h="213" pX="0.5" pY="0.5" oX="42" oY="57" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_54_ 6" x="0" y="1070" w="203" h="206" pX="0.5" pY="0.5" oX="42" oY="53" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_55_ 6" x="2897" y="1112" w="184" h="209" pX="0.5" pY="0.5" oX="44" oY="52" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_56_ 6" x="2053" y="1527" w="186" h="220" pX="0.5" pY="0.5" oX="46" oY="53" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_57_ 7" x="3818" y="1766" w="221" h="227" pX="0.5" pY="0.5" oX="33" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_58_ 7" x="3586" y="1991" w="206" h="230" pX="0.5" pY="0.5" oX="36" oY="75" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_59_ 7" x="1667" y="1744" w="187" h="224" pX="0.5" pY="0.5" oX="39" oY="83" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_60_ 7" x="1280" y="1512" w="188" h="219" pX="0.5" pY="0.5" oX="46" oY="89" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_61_ 7" x="2239" y="1527" w="178" h="220" pX="0.5" pY="0.5" oX="57" oY="86" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_62_ 7" x="2417" y="1528" w="186" h="220" pX="0.5" pY="0.5" oX="48" oY="85" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_63_ 7" x="1854" y="1747" w="190" h="224" pX="0.5" pY="0.5" oX="40" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Walk_64_ 7" x="3212" y="1762" w="205" h="226" pX="0.5" pY="0.5" oX="35" oY="81" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_01_ 0" x="1614" y="324" w="214" h="174" pX="0.5" pY="0.5" oX="100" oY="92" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_02_ 0" x="3214" y="163" w="217" h="172" pX="0.5" pY="0.5" oX="98" oY="94" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_03_ 0" x="2823" y="161" w="222" h="171" pX="0.5" pY="0.5" oX="95" oY="95" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_04_ 1" x="3758" y="1327" w="160" h="215" pX="0.5" pY="0.5" oX="131" oY="92" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_05_ 1" x="0" y="1276" w="161" h="214" pX="0.5" pY="0.5" oX="129" oY="94" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_06_ 1" x="2285" y="1313" w="161" h="214" pX="0.5" pY="0.5" oX="127" oY="95" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_07_ 2" x="251" y="671" w="166" h="200" pX="0.5" pY="0.5" oX="75" oY="85" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_08_ 2" x="244" y="871" w="166" h="203" pX="0.5" pY="0.5" oX="77" oY="84" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_09_ 2" x="2923" y="907" w="166" h="205" pX="0.5" pY="0.5" oX="78" oY="83" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_10_ 3" x="5544" y="1131" w="209" h="210" pX="0.5" pY="0.5" oX="54" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_11_ 3" x="2683" y="1105" w="214" h="208" pX="0.5" pY="0.5" oX="52" oY="82" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_12_ 3" x="3924" y="1120" w="217" h="209" pX="0.5" pY="0.5" oX="51" oY="81" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_13_ 4" x="1100" y="498" w="197" h="187" pX="0.5" pY="0.5" oX="113" oY="88" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_14_ 4" x="3638" y="519" w="198" h="193" pX="0.5" pY="0.5" oX="113" oY="86" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_15_ 4" x="1615" y="693" w="200" h="198" pX="0.5" pY="0.5" oX="112" oY="84" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_16_ 5" x="3221" y="1541" w="196" h="221" pX="0.5" pY="0.5" oX="98" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_17_ 5" x="3913" y="1544" w="203" h="222" pX="0.5" pY="0.5" oX="93" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_18_ 5" x="4116" y="1547" w="210" h="222" pX="0.5" pY="0.5" oX="88" oY="80" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_19_ 6" x="2958" y="707" w="196" h="200" pX="0.5" pY="0.5" oX="73" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_20_ 6" x="3820" y="713" w="203" h="201" pX="0.5" pY="0.5" oX="71" oY="78" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_21_ 6" x="4492" y="714" w="210" h="202" pX="0.5" pY="0.5" oX="69" oY="77" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_22_ 7" x="5041" y="1337" w="202" h="217" pX="0.5" pY="0.5" oX="58" oY="78" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_23_ 7" x="5683" y="1343" w="203" h="218" pX="0.5" pY="0.5" oX="57" oY="79" oW="350" oH="350"/>
+  <sprite n="Daemon_Howler_Woozy_24_ 7" x="1468" y="1519" w="205" h="219" pX="0.5" pY="0.5" oX="56" oY="79" oW="350" oH="350"/>
+</TextureAtlas>
