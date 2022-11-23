@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../sprite_sheets/environment/trees/tree_01_00.tsx"/>
+ <object name="random_tree" class="tree_01_00" gid="1" width="631" height="723">
+  <properties>
+   <property name="is_random" type="bool" value="true"/>
+  </properties>
+ </object>
+</template>

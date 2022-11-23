@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<template>
- <tileset firstgid="1" source="../../sprite_sheets/units/human_female.tsx"/>
- <object name="human_female" type="unit" gid="1" width="10" height="50"/>
-</template>
