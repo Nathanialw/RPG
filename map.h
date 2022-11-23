@@ -234,16 +234,16 @@ namespace Maps {
                 std::string name = spriteSheet.getName();
 
                 //need to feed in the name of the ground tileset for the map so it only loads what we need, can't figure out how to get the tileset from a tile in the tile layer
-                if (name == "grassland_tiles_x2") {
-                    std::string filePathString = spriteSheet.getImagePath();
-                    filePathString.erase(0, 5);
-                    const char *filePathChar = filePathString.c_str();
-                    Graphics::pTexture[name] = Graphics::createTexture(filePathChar);
-                    std::cout << "loaded: " << name << std::endl;
-                }
-                else {
-                    std::cout << "not loaded: " << name << std::endl;
-                }
+//                if (name == "grassland_tiles_x2") {
+//                    std::string filePathString = spriteSheet.getImagePath();
+//                    filePathString.erase(0, 5);
+//                    const char *filePathChar = filePathString.c_str();
+//                    Graphics::pTexture[name] = Graphics::createTexture(filePathChar);
+//                    std::cout << "loaded: " << name << std::endl;
+//                }
+//                else {
+//                    std::cout << "not loaded: " << name << std::endl;
+//                }
             }
             std::cout << "Loaded Map version: " << map.getVersion().upper << ", " << map.getVersion().lower << std::endl;
 
@@ -251,8 +251,32 @@ namespace Maps {
             std::cout << "Map has " << layers.size() << " layers" << std::endl;
 
             for (const auto& layer : layers) {
-                if (layer->getName() == "grassland_tiles_x2.tsx") {
-
+                if (layer->getName() == "ground") {
+                    // get gid of each tile
+                    for (auto tile : layer->getLayerAs<tmx::TileLayer>().getTiles()) {
+                        // get tilesets of map
+                        for (auto tileset : map.getTilesets()){
+                            //match tileGID to texture GID
+                            if (tileset.getFirstGID() <= tile.ID ) {
+                                int num = tile.ID - tileset.getFirstGID();
+                                if ( num <= 0) {
+                                    //save texture
+                                    std::string name = tileset.getName();
+                                    if (!Graphics::pTexture[name]) {
+                                        std::string filePathString = tileset.getImagePath();
+                                        filePathString.erase(0, 5);
+                                        const char *filePathChar = filePathString.c_str();
+                                        Graphics::pTexture[name] = Graphics::createTexture(filePathChar);
+                                        std::cout << "loaded: " << name << std::endl;
+                                    }
+                                    break;
+                                }
+                            }
+                            else {
+                                break;
+                            }
+                        }
+                    }
                 }
                 else if (layer->getName() == "widgets") {
 //                    for (auto &j : layer->getLayerAs<tmx::TileLayer>().getTiles()) {

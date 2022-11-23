@@ -3,25 +3,25 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/untitled3.tmx",
+    "activeFile": "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/untitled3.tmx",
     "expandedProjectPaths": [
-        "sprite_sheets/buildings/houses",
-        "sprite_sheets/ground_tiles",
-        ".",
-        "sprite_sheets/environment/trees",
-        "sprite_sheets/environment/trees/broken_trees",
-        "sprite_sheets/environment",
+        "sprite_sheets/castle",
         "spawn_points/clutter",
         "spawn_points/buildings/houses",
-        "spawn_points/buildings/castle",
-        "spawn_points/clutter/trees",
-        "spawn_points/buildings",
-        "sprite_sheets",
-        "sprite_sheets/castle",
-        "spawn_points",
-        "spawn_points/clutter/trees/broken_trees",
+        "sprite_sheets/environment/trees/broken_trees",
+        "sprite_sheets/environment",
+        "sprite_sheets/buildings",
+        "sprite_sheets/ground_tiles",
         "spawn_points/unit_spawns",
-        "sprite_sheets/buildings"
+        "spawn_points/clutter/trees/broken_trees",
+        "spawn_points/buildings/castle",
+        "sprite_sheets/environment/trees",
+        "spawn_points",
+        "spawn_points/clutter/trees",
+        "sprite_sheets",
+        ".",
+        "sprite_sheets/buildings/houses",
+        "spawn_points/buildings"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -900,8 +900,7 @@
     "map.tileWidth": 128,
     "map.width": 8,
     "openFiles": [
-        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/untitled3.tmx",
-        "/home/nathanial/Workspace/RPG_game/cmake-build-debug/maps/untitled3.tmx"
+        "/home/nathanial/Workspace/RPG_game/cmake-build-release/maps/untitled3.tmx"
     ],
     "project": "",
     "property.type": "bool",
