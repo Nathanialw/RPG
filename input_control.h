@@ -14,13 +14,6 @@ namespace Input_Control {
         zone.remove<Component::Mouse_Move>(entity);
 	}
 
-    bool testasd(entt::entity &player, entt::entity &target) {
-        if (player == target) {
-            return true;
-        }
-        return false;
-    };
-
     bool Move_To_Item_From_Name(entt::registry& zone, entt::entity& player_ID, Component::Position& playerPosition, entt::entity item_ID){
         auto& radius = zone.get<Component::Radius>(player_ID).fRadius;
         SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);

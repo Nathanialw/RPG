@@ -4,6 +4,7 @@
 #include "components.h"
 #include <string>
 #include "graphics.h"
+#include "SQLite_item_data.h"
 
 namespace Texture_Packer_Item {
     ///on init we need to do it parse the SQLite db for all sprite sheets names "texture_packer" and use the result to preallocate all the nodes of the std::unordered_map
@@ -12,32 +13,64 @@ namespace Texture_Packer_Item {
     std::unordered_map<std::string, SDL_Texture*> Item_Textures;
 
     struct Data {
-        std::string sprite_data;
-        std::string xml_path;
-        std::string texture_path;
+        std::string item_name = "";
+        std::string sprite_data = "";
+        std::string xml_path = "";
+        std::string texture_path = "";
     };
 
-    Data Get_Sprite_Sheet(std::string item_name) {// needs to search for  a specific row that I can input in the arguments
+    Data Get_Sprite_Sheet(std::string &slot) {// needs to search for  a specific row that I can input in the arguments
+        std::string item_name;
+        //get a random entry from item vector
+        if (slot == "helm") {
+            item_name = SQLite_Item_Data::helm[rand() % SQLite_Item_Data::helm.size()];
+        }
+        else if (slot == "chest") {
+            item_name = SQLite_Item_Data::chest[rand() % SQLite_Item_Data::chest.size()];
+        }
+        else if (slot == "legs") {
+            item_name = SQLite_Item_Data::legs[rand() % SQLite_Item_Data::legs.size()];
+        }
+        else if (slot == "axe") {
+            item_name = SQLite_Item_Data::axe[rand() % SQLite_Item_Data::axe.size()];
+        }
+        else if (slot == "sword") {
+            item_name = SQLite_Item_Data::sword[rand() % SQLite_Item_Data::sword.size()];
+        }
+        else if (slot == "mace") {
+            item_name = SQLite_Item_Data::mace[rand() % SQLite_Item_Data::mace.size()];
+        }
+        else if (slot == "polearm") {
+            item_name = SQLite_Item_Data::polearm[rand() % SQLite_Item_Data::polearm.size()];
+        }
+        else {
+            Data data;
+            return data;
+        }
+
+
+
         Data data;
+        data.item_name = item_name;
         std::string path;
             ///check if the name exists??
         std::string sheet_name = db::Append_Quotes(item_name);
-        std::string tempItemType;
-
-        const unsigned char* item_type;
-        sqlite3_stmt* stmt;
-        char buf[100];
-        const char* jj = "SELECT sprite_data FROM weapon_data WHERE name = ";
-        strcpy(buf, jj);
-        strcat(buf, sheet_name.c_str());
-        sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
-        while (sqlite3_step(stmt) != SQLITE_DONE) {
-            item_type = sqlite3_column_text(stmt, 0);
-            const char * s = (const char *)item_type;
-            tempItemType = std::string(reinterpret_cast< const char *> (s));
-        }
-        data.sprite_data = tempItemType;
-        tempItemType = db::Append_Quotes(tempItemType);
+//        std::string tempItemType;
+//
+//        const unsigned char* item_type;
+//        sqlite3_stmt* stmt;
+//        char buf[100];
+//        const char* jj = "SELECT sprite_data FROM weapon_data WHERE name = ";
+//        strcpy(buf, jj);
+//        strcat(buf, sheet_name.c_str());
+//        sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+//        while (sqlite3_step(stmt) != SQLITE_DONE) {
+//            item_type = sqlite3_column_text(stmt, 0);
+//            const char * s = (const char *)item_type;
+//            tempItemType = std::string(reinterpret_cast< const char *> (s));
+//        }
+//        data.sprite_data = tempItemType;
+//        tempItemType = db::Append_Quotes(tempItemType);
 
         const unsigned char* xml_path;
         const unsigned char* tex_path;
@@ -46,7 +79,7 @@ namespace Texture_Packer_Item {
         char buf2[100];
         const char* jj2 = "SELECT xml_path, texture_path FROM weapon_types WHERE type = ";
         strcpy(buf2, jj2);
-        strcat(buf2, tempItemType.c_str());
+        strcat(buf2, sheet_name.c_str());
         sqlite3_prepare_v2(db::db, buf2, -1, &stmt2, 0);
         while (sqlite3_step(stmt2) != SQLITE_DONE) {
             xml_path = sqlite3_column_text(stmt2, 0);
@@ -162,24 +195,24 @@ namespace Texture_Packer_Item {
         //to render it jsut needs access to the texture array and the unitID
     }
 
-        /// ie "Sword"
-    std::unordered_map<std::string, Component::Sheet_Data>* TexturePacker_Import_Item(std::string &itemName) {
-        ///check if the sheet data already exists
-//
-//        if (Packer_Textures_Items.at(itemName).texture == Item_Textures[itemName]) {
-//            return &Packer_Textures_Items;
-//        }
+    struct Item_Data_And_Index {
+        std::unordered_map<std::string, Component::Sheet_Data>* itemData;
+        std::string index;
+    };
 
-            /// becomes true when the correct row is found and turns false when it ends, then we will immediately break from the loop
-        bool foundRow = false;
+        /// ie "Sword"
+    Item_Data_And_Index TexturePacker_Import_Item(std::string &itemType) {
 
             ///get path from db
-        Data dbData = Get_Sprite_Sheet(itemName);
+        Data dbData = Get_Sprite_Sheet(itemType);
         tinyxml2::XMLDocument spriteSheetData;
+        if (dbData.xml_path == "") {
+            return {NULL, ""};
+        }
         const char* path = dbData.xml_path.c_str();
         if (path == NULL){
             Utilities::Log("TexturePacker_Import_Item() failed, empty xml_path");
-            return NULL;
+            return {NULL, ""};
         }
 
         spriteSheetData.LoadFile(path);
@@ -190,8 +223,8 @@ namespace Texture_Packer_Item {
         Component::Sheet_Data spritesheet;
         spritesheet.frameList.reserve(200);
         const char* tex = dbData.texture_path.c_str();
-        Get_Item_Texture(itemName, tex);
-        spritesheet.texture = Item_Textures[itemName];
+        Get_Item_Texture(dbData.item_name, tex);
+        spritesheet.texture = Item_Textures[dbData.item_name];
 
         int frameIndex = 0;
         bool check = true;
@@ -200,20 +233,7 @@ namespace Texture_Packer_Item {
                 ///get frame data for each state
             std::string n = pSpriteElement->Attribute("n");
 
-            Get_Frame_Action_Data(check, dbData.sprite_data, n, spritesheet.actionFrameData, frameIndex);
-//
-//            if (!Get_Frame_Action_Data(check, dbData.sprite_data, n, spritesheet.actionFrameData, frameIndex) && !foundRow) {
-//                pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
-////                continue;
-//            }
-//
-//            else if (!Get_Frame_Action_Data(check, dbData.sprite_data, n, spritesheet.actionFrameData, frameIndex) && foundRow) {
-//                break;
-//            }
-//
-//            else {
-//               foundRow = true;
-//            }
+            Get_Frame_Action_Data(check, dbData.item_name, n, spritesheet.actionFrameData, frameIndex);
 
                 ///get sprite data
             frame.clip.x = pSpriteElement->IntAttribute("x");
@@ -230,7 +250,10 @@ namespace Texture_Packer_Item {
 
         spritesheet.frameList.shrink_to_fit();
 
-        Packer_Textures_Items[itemName] = spritesheet;
-        return &Packer_Textures_Items;
+        Packer_Textures_Items[dbData.item_name] = spritesheet;
+        Item_Data_And_Index values;
+        values.itemData = &Packer_Textures_Items;
+        values.index = dbData.item_name;
+        return values;
     }
 }

@@ -22,15 +22,13 @@
 namespace Rendering {
 	namespace {
 		bool showSpriteBox = false;
-		bool renderType = true;
 		bool debug = false;
-		float fRenderable = 0.0f;
 	}
 
-	struct tileData {
-		SDL_Texture* texture;
-		SDL_Rect tileSpriteRect;
-	};
+//	struct tileData {
+//		SDL_Texture* texture;
+//		SDL_Rect tileSpriteRect;
+//	};
 
 	void sort_Positions(entt::registry &zone) {
             // test whether a point lays on a line segment, positive is above and negative is below
@@ -70,19 +68,19 @@ namespace Rendering {
 		zone.sort<Component::Renderable>([](const auto& lhs, const auto& rhs) { return lhs.y < rhs.y; });
 	}
 
-    void RenderLine (entt::registry &zone, Component::Camera &camera) {
-        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
-        for (auto building : line_segments) {
-            auto [line, renderable] = line_segments.get(building);
-            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_NONE);
-            SDL_SetRenderDrawColor(Graphics::renderer, 255,0,0,255);
-            float x1 = line.p[0].x - (camera.screen.x);
-            float y1 = line.p[0].y - (camera.screen.y);
-            float x2 = line.p[1].x - (camera.screen.x);
-            float y2 = line.p[1].y - (camera.screen.y);
-            SDL_RenderDrawLineF(Graphics::renderer, x1, y1, x2, y2);
-        }
-    }
+//    void RenderLine (entt::registry &zone, Component::Camera &camera) {
+//        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
+//        for (auto building : line_segments) {
+//            auto [line, renderable] = line_segments.get(building);
+//            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_NONE);
+//            SDL_SetRenderDrawColor(Graphics::renderer, 255,0,0,255);
+//            float x1 = line.p[0].x - (camera.screen.x);
+//            float y1 = line.p[0].y - (camera.screen.y);
+//            float x2 = line.p[1].x - (camera.screen.x);
+//            float y2 = line.p[1].y - (camera.screen.y);
+//            SDL_RenderDrawLineF(Graphics::renderer, x1, y1, x2, y2);
+//        }
+//    }
 
     int PVG_Direction_Enum(Component::Direction &direction) {
         switch (direction) {
@@ -443,55 +441,55 @@ namespace Rendering {
 		}
 	}
 
-    void t_Get_Next_Frame_Index(Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
-        sheetData.frameTime += Timer::timeStep;
-        if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
-            ///reset frame count if over
-            sheetData.frameTime = 0;
-            int &currentFrame = sheetData.currentFrame;
-            sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
-            ///calculate reversing
-            if (sheetData.reversing) {
-                if (currentFrame <= 1) {
-                    sheetData.reversing = 0;
-                }
-                currentFrame--;
-            }
-            else {
-                currentFrame++;
-            }
-            if (currentFrame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
-                currentFrame = 0;
-                if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
-                    sheetData.reversing = 1;
-                }
-                else {
-                    sheetData.currentFrame = 0;
-                    if (action.state != Component::walk) {
-                        action.state = Component::idle;
-                    }
-                }
-            }
-        }
-    }
+//    void t_Get_Next_Frame_Index(Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
+//        sheetData.frameTime += Timer::timeStep;
+//        if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
+//            ///reset frame count if over
+//            sheetData.frameTime = 0;
+//            int &currentFrame = sheetData.currentFrame;
+//            sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
+//            ///calculate reversing
+//            if (sheetData.reversing) {
+//                if (currentFrame <= 1) {
+//                    sheetData.reversing = 0;
+//                }
+//                currentFrame--;
+//            }
+//            else {
+//                currentFrame++;
+//            }
+//            if (currentFrame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
+//                currentFrame = 0;
+//                if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
+//                    sheetData.reversing = 1;
+//                }
+//                else {
+//                    sheetData.currentFrame = 0;
+//                    if (action.state != Component::walk) {
+//                        action.state = Component::idle;
+//                    }
+//                }
+//            }
+//        }
+//    }
 
     /// Render without chasing pointers
-    void t_Render(entt::registry& zone) {
-        auto view1 = zone.view<Component::Renderable, Component::t_Texture, Component::t_Rendering_Data>();
-        for (auto entity : view1) {
-            auto [renderable, texture, renderingData] = view1.get(entity);
-            SDL_SetTextureAlphaMod(texture.texture, renderable.alpha);
-            Graphics::Render_FRect(texture.texture, &renderingData.clipRect, &renderingData.renderRect);
-        }
-    };
+//    void t_Render(entt::registry& zone) {
+//        auto view1 = zone.view<Component::Renderable, Component::t_Texture, Component::t_Rendering_Data>();
+//        for (auto entity : view1) {
+//            auto [renderable, texture, renderingData] = view1.get(entity);
+//            SDL_SetTextureAlphaMod(texture.texture, renderable.alpha);
+//            Graphics::Render_FRect(texture.texture, &renderingData.clipRect, &renderingData.renderRect);
+//        }
+//    };
 
-    void Render_Sequence (entt::registry& zone) {
+//    void Render_Sequence (entt::registry& zone) {
 //        t_Get_Next_Frame_Index();
 //        t_Get_Next_Frame_Data();
-        t_Render(zone);
-    }
+//        t_Render(zone);
+//    }
 
-	SDL_Rect Explosion_Frame_Update(Component::Sprite_Frames &frame, SDL_Rect frameToUpdateClipOf) {
+	SDL_Rect Explosion_Frame_Update(Component::Sprite_Frames &frame) {
 		    /// reset X to zero and increment Y
 		if (frame.frameX >= 8) {
 			frame.frameX = 0;
@@ -524,7 +522,7 @@ namespace Rendering {
 			if (delay.currentFrameTime >= delay.timeBetweenFrames) {
 				if (frames.currentFrame <= frames.maxFrames) { // if there are still frames remaining
 				    /// only fire this at 60 frames/sec
-					xClipPos = Explosion_Frame_Update(frames, texture.clippedSpriteFrame);		//get state and direction state sprite draw from
+					xClipPos = Explosion_Frame_Update(frames);		//get state and direction state sprite draw from
 					anim.renderPosition = Utilities::SDL_Rect_To_SDL_FRect(xClipPos);		//save sprite for vector
 					texture.clippedSpriteFrame = xClipPos;									//save position for renderer
 					frames.currentFrame++;
@@ -582,7 +580,7 @@ namespace Rendering {
 		int height = Y + (camera.screen.h / tileHeight * 3);
 		//int width = X + ((camera.screen.w + camera.screen.h) / tileWidth / 2);
 		//int height = Y + ((camera.screen.h + camera.screen.w) / tileHeight / 2);
-		int h = 0;
+//		int h = 0;
 		int g = 0;
 		//int o = 0;
 		auto &tilesets = Maps::map.getTilesets();
@@ -614,8 +612,8 @@ namespace Rendering {
 								if (tileset->getFirstGID() - 1 <= id) {
 									id -= tilesets[tilesetCount].getFirstGID() - 1;
 									std::string name = tileset->getName();
-									int width = tileset->getColumnCount();
-									SDL_Rect data = getTexture(id, width, tileSpriteRect);
+									int tileCount = tileset->getColumnCount();
+									SDL_Rect data = getTexture(id, tileCount, tileSpriteRect);
 									if (Graphics::pTexture[name] != NULL) {
 										Graphics::Render_FRect(Graphics::pTexture[name], &data, &renderPosition);
 									}
@@ -632,7 +630,7 @@ namespace Rendering {
                 }
 			}
 		}
-		int ks = h + g;
+//		int ks = h + g;
 	}
 
 	void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {
@@ -655,16 +653,16 @@ namespace Rendering {
 		}
 	}
 
-	void RenderCullMode(entt::registry& zone) {
-		if (renderType == true) {
-			renderType = false;
-			zone.clear<Component::Renderable>();
-			}
-		else {
-			renderType = true;
-			zone.clear<Component::Renderable>();
-		}
-	}
+//	void RenderCullMode(entt::registry& zone) {
+//		if (renderType == true) {
+//			renderType = false;
+//			zone.clear<Component::Renderable>();
+//			}
+//		else {
+//			renderType = true;
+//			zone.clear<Component::Renderable>();
+//		}
+//	}
 
 	int Set_Render_Position_Alpha(float& screenEdge, float& renderEdge, float& yPosition) {
 		if (yPosition <= screenEdge) {
@@ -707,18 +705,18 @@ namespace Rendering {
 		}
 	}
 
-	void Check_Renderable(entt::registry &zone) { //doesn't need to happen every frame
-		fRenderable += Timer::timeStep;
-		if (fRenderable >= 0) {
-			fRenderable = 0;
-			if (renderType) {
-//				Add_Remove_Renderable_Component(zone, camera);
-			}
-			else {
-//	            Vector_Renderable(Map::terrain);
-			}
-		}
-	};
+//	void Check_Renderable(entt::registry &zone) { //doesn't need to happen every frame
+//		fRenderable += Timer::timeStep;
+//		if (fRenderable >= 0) {
+//			fRenderable = 0;
+//			if (renderType) {
+////				Add_Remove_Renderable_Component(zone, camera);
+//			}
+//			else {
+////	            Vector_Renderable(Map::terrain);
+//			}
+//		}
+//	};
 
 	void Update_Cursor(Component::Camera& camera) {
 		int mx, my;
@@ -763,8 +761,8 @@ namespace Rendering {
 			Add_Remove_Renderable_Component(zone, camera);
 			sort_Positions(zone);
 			Render_Map(zone, Maps::map, camera);
-			Dynamic_Quad_Tree::Update_Quad_Tree_Positions(World::zone);
 			Dynamic_Quad_Tree::Emplace_Objects_In_Quad_Tree(World::zone);
+			Dynamic_Quad_Tree::Update_Quad_Tree_Positions(World::zone);
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
 			Dynamic_Quad_Tree::Remove_From_Tree(zone);
             // draw rects

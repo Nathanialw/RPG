@@ -130,6 +130,7 @@ namespace Collision {
 		body->CreateFixture(&bodyFixture);
 	}
 
+    /// only really works for static collisions
 	void Update_Collision(entt::registry& zone) {
 
 		auto view = zone.view<Component::Position, Component::Body>();
@@ -138,12 +139,11 @@ namespace Collision {
 		world->Step(timeStep, velocityIterations, positionIterations);
 
 		while (body != NULL) {
-
 			auto entity_ID = (entt::entity)body->GetUserData().entity_ID;
 			auto &pBody = view.get<Component::Body>(entity_ID).body;
-			b2Vec2 newPosition = body->GetPosition();
-
 			auto &position = view.get<Component::Position>(entity_ID);
+
+			b2Vec2 newPosition = body->GetPosition();
 			position.x = newPosition.x;
 			position.y = newPosition.y;
 

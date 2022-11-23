@@ -253,13 +253,30 @@ namespace Maps {
             for (const auto& layer : layers) {
                 if (layer->getName() == "ground") {
                     // get gid of each tile
+                    std::vector<int> GIDs;
                     for (auto tile : layer->getLayerAs<tmx::TileLayer>().getTiles()) {
-                        // get tilesets of map
-                        for (auto tileset : map.getTilesets()){
+                        if (GIDs.empty()) {
+                            GIDs.emplace_back(tile.ID);
+                        }
+                        bool found = false;
+                        for (auto i : GIDs) {
+                            if (i == tile.ID) {
+                                found = true;
+                                break;
+                            }
+                        }
+                        if (found == false) {
+                            GIDs.emplace_back(tile.ID);
+                        }
+                    }
+
+                    // get tilesets of mapx
+                    for (auto i : GIDs) {
+                        for (auto tileset: map.getTilesets()) {
                             //match tileGID to texture GID
-                            if (tileset.getFirstGID() <= tile.ID ) {
-                                int num = tile.ID - tileset.getFirstGID();
-                                if ( num <= 0) {
+                            if (tileset.getFirstGID() <= i) {
+                                int num = i - tileset.getFirstGID();
+                                if (num <= 0) {
                                     //save texture
                                     std::string name = tileset.getName();
                                     if (!Graphics::pTexture[name]) {
@@ -271,8 +288,7 @@ namespace Maps {
                                     }
                                     break;
                                 }
-                            }
-                            else {
+                            } else {
                                 break;
                             }
                         }

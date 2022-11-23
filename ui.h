@@ -162,8 +162,6 @@ namespace UI {
 		namespace {
 			DataTypes::f2d equipmentOffsetColumn1 = {32.0f, 32.0f};
 			DataTypes::f2d equipmentOffsetColumn2 = {452.0f, 32.0f};
-			int verticalSpaceBetweenEquipSlots = 10;
-			DataTypes::i2d numOfSlots = {2, 5};
 			float iEquipmentSlotPixelSize = 81.0f;
 			// 452 in the x
 			// 10 between in the y
@@ -334,11 +332,11 @@ namespace UI {
                                           offset.x * 2.0f,
                                           offset.y * 2.0f);
                 //adds to rendering with the main animation loop
-                zone.emplace<Component::Direction>(item_ID, Component::Direction::W);
+                zone.emplace_or_replace<Component::Direction>(item_ID, Component::Direction::W);
                 // to remove from rendering on mouse
                 zone.remove<Component::On_Mouse>(item_ID);
                 //allows insertion into quad Trees
-                zone.emplace<Component::Radius>(item_ID, offset.x);
+                zone.emplace_or_replace<Component::Interaction_Rect>(item_ID, offset.x, (offset.x * 2.0f));
             }
         }
         isItemCurrentlyHeld = false;
@@ -355,12 +353,12 @@ namespace UI {
 			Mouse::mouseItem = item_ID;
 			Mouse::itemCurrentlyHeld = true;
 			//removes from quad tree
-            auto &radius = zone.get<Component::Radius>(item_ID);
+            auto &interactionRect = zone.get<Component::Interaction_Rect>(item_ID);
             auto &position = zone.get<Component::Position>(item_ID);
-            SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius.fRadius, position.x, position.y);
+            SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(interactionRect.r, position.x, position.y);
             zone.emplace<Component::Remove_From_Object_Tree>(item_ID, rect);
             //prevents auto reinsertion into quad tree
-			zone.remove<Component::Radius>(item_ID);
+//			zone.remove<Component::Interaction_Rect>(item_ID);
 		}
 	}
 
@@ -384,7 +382,7 @@ namespace UI {
 					zone.remove<Component::Direction>(itemData.item_ID);
 					zone.emplace_or_replace<Component::Inventory>(itemData.item_ID);
 					//prevents we insertion to quad tree
-					zone.remove<Component::Radius>(itemData.item_ID);
+//                    zone.remove<Component::Interaction_Rect>(itemData.item_ID);
 					return true;
 				}
 			}
@@ -474,9 +472,9 @@ namespace UI {
 	}
 
 	//run at game start to init bag vector
-	void Init_UI(entt::registry& zone) {
-		Items::Init_Item_Data();
-		Bag_UI::Create_Bag_UI(zone);
-		Equipment_UI::Create_Equipment_UI(zone);
-	}
+//	void Init_UI(entt::registry& zone) {
+//		Items::Init_Item_Data();
+//		Bag_UI::Create_Bag_UI(zone);
+//		Equipment_UI::Create_Equipment_UI(zone);
+//	}
 }

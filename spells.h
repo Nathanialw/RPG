@@ -2,6 +2,8 @@
 #include "movement.h"
 #include "collision.h"
 #include "combat_control.h"
+#include "SQLite_spell_data.h"
+#include "map.h"
 
 namespace Spells {
 
@@ -47,7 +49,9 @@ namespace Spells {
 		DataTypes::f2d spelldir = Spell_Direction(pos, direction, scale);
 
         std::string name = (std::string)spellname;
+
         int unit_ID = Maps::Check_For_Template_ID(name);
+        Graphics::Create_Game_Object(unit_ID, SQLite_Spell_Data::Spell_Loader(name).path.c_str());
 
         SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
         std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
@@ -73,10 +77,11 @@ namespace Spells {
 		World::zone.emplace<Component::Mass>(entity, data.mass * scale);
 		World::zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::spell);
 		World::zone.emplace<Component::Damage>(entity, 1, 10);
-        //Scenes::scene.emplace<Spell_Range>(spell, 1000.0f);
+//        World::zone.emplace<Spell_Range>(spell, 1000.0f);
 		World::zone.emplace<Component::Caster_ID>(entity, caster_ID);
 		    ///default data
 		World::zone.emplace<Component::Spell>(entity);
+		World::zone.emplace<Component::Interaction_Rect>(entity, (data.radius * 1.1f), ((data.radius * 1.1f) * 2.0f));
 		World::zone.emplace<Component::Casted>(entity);
 		World::zone.emplace<Component::Renderable>(entity);
 		World::zone.emplace<Component::Direction>(entity, direction); //match Direction of the caster
