@@ -223,8 +223,8 @@ namespace Texture_Packer_Item {
         Component::Sheet_Data spritesheet;
         spritesheet.frameList.reserve(200);
         const char* tex = dbData.texture_path.c_str();
-        Get_Item_Texture(dbData.item_name, tex);
-        spritesheet.texture = Item_Textures[dbData.item_name];
+        Get_Item_Texture(dbData.texture_path, tex);
+        spritesheet.texture = Item_Textures[dbData.texture_path];
 
         int frameIndex = 0;
         bool check = true;
@@ -250,10 +250,10 @@ namespace Texture_Packer_Item {
 
         spritesheet.frameList.shrink_to_fit();
 
-        Packer_Textures_Items[dbData.item_name] = spritesheet;
+        Packer_Textures_Items[dbData.texture_path] = spritesheet;
         Item_Data_And_Index values;
         values.itemData = &Packer_Textures_Items;
-        values.index = dbData.item_name;
+        values.index = dbData.texture_path;
         return values;
     }
 }

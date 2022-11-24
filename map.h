@@ -124,7 +124,7 @@ namespace Maps {
         return false;
     }
 
-    void Create_Entity(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, bool is_random, std::string &filepath, Collision::aabb aabb, std::vector<std::vector<tmx::Vector2<float>>> pointVecs) {
+    void Create_Entity(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, bool is_random, std::string &filepath, Collision::aabb aabb, std::vector<std::vector<tmx::Vector2<float>>> pointVecs, bool &player) {
         auto entity = zone.create();
         Entity_Loader::Data data;
         int unit_ID = 0;
@@ -208,7 +208,9 @@ namespace Maps {
             zone.emplace<Component::Soldier>(entity);
             zone.emplace<Component::Commandable>(entity);
             zone.emplace<Component::Spellbook>(entity);
-            if (name == "player") {
+
+
+            if (player) {
                 zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::player);
                 zone.emplace<Component::Input>(entity);
                 zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, Graphics::resolution.w, Graphics::resolution.h, 2.0f, 2.0f);
@@ -361,10 +363,7 @@ namespace Maps {
                         auto &position = object.getPosition();
                         std::string name = object.getName();
                         std::string entity_class = object.getClass();
-                        bool is_random = false;
-                        for (auto i : object.getProperties()) {
-                            is_random = i.getBoolValue();
-                        }
+
 
                         // translates isometric position to world position
                         float tileWidth = 128;
@@ -415,13 +414,24 @@ namespace Maps {
                             Utilities::Log("asd");
                         }
 
+                        bool player = false;
+                        bool is_random = false;
+                        for (auto property : object.getProperties()) {
+                            if (property.getName() == "player"){
+                                player = property.getBoolValue();
+                            }
+                            if (property.getName() == "is_random"){
+                                is_random = property.getBoolValue();
+                            }
+                        }
+
                         std::string texture = templateTilesets.at(tilesetName).getImagePath();
                         texture.erase(0, 5);
 
 
 
                         if (!Polygon_Building(World::zone, x, y, name, entity_class, texture, aabb, pointVecs, line)) {
-                            Create_Entity(World::zone, x, y, name, entity_class, is_random, texture, aabb, pointVecs);
+                            Create_Entity(World::zone, x, y, name, entity_class, is_random, texture, aabb, pointVecs, player);
                         }
                     };
                 }
