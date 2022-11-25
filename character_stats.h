@@ -5,7 +5,6 @@
 #include "items.h"
 #include "ui.h"
 
-
 namespace Character_Stats {
 
 	SDL_FRect statsSheetOffsetRect = { 160.0f, 64.0f, 240.0f, 384.0f };
@@ -136,30 +135,32 @@ namespace Character_Stats {
 			float charWidth =  (10.0f / camera.scale.x);
 
 			for (auto& stat : Items::statData) {
-				Graphics::Surface_Data statNameData = Graphics::Load_Text_Texture(Items::statName[stat.first], black);
+//				Graphics::Surface_Data statNameData = Graphics::Load_Text_Texture(Items::statName[stat.first], black);
 
 				SDL_FRect statNameRect = statBox;
 				statNameRect.y = statBox.y + currentRow;
-				statNameRect.h = charHeight;
-				statNameRect.w = Items::statName[stat.first].size() * charWidth;
+//				statNameRect.h = charHeight;
+//				statNameRect.w = Items::statName[stat.first].size() * charWidth;
 
-				Graphics::Render_FRect(statNameData.pTexture, &statNameData.k, &statNameRect);
-				SDL_DestroyTexture(statNameData.pTexture);
-				//SDL_RenderDrawRect(Graphics::renderer, &rowRect);
-
+                FC_Draw(Graphics::fcFont, Graphics::renderer, statNameRect.x, statNameRect.y, Items::statName[stat.first].c_str());
+//				Graphics::Render_FRect(statNameData.pTexture, &statNameData.k, &statNameRect);
+//				SDL_DestroyTexture(statNameData.pTexture);
+//				//SDL_RenderDrawRect(Graphics::renderer, &rowRect);
+//
 				std::string statValue = std::to_string(stat.second);
-				Graphics::Surface_Data statValueData = Graphics::Load_Text_Texture(statValue, black);
-
+//				Graphics::Surface_Data statValueData = Graphics::Load_Text_Texture(statValue, black);
+//
 				SDL_FRect statValueRect = (statBox);
 				statValueRect.y = statBox.y + currentRow;
-				statValueRect.h = charHeight;
-				statValueRect.w = statValue.size() * charWidth;
 				statValueRect.x = statBox.x + statBox.w - statValueRect.w;
-
-
-				Graphics::Render_FRect(statValueData.pTexture, &statValueData.k, &statValueRect);
-				SDL_DestroyTexture(statValueData.pTexture);
-				currentRow += charHeight;
+//				statValueRect.h = charHeight;
+//				statValueRect.w = statValue.size() * charWidth;
+//
+//
+//				Graphics::Render_FRect(statValueData.pTexture, &statValueData.k, &statValueRect);
+//				SDL_DestroyTexture(statValueData.pTexture);
+//				currentRow += charHeight;
+                FC_Draw(Graphics::fcFont, Graphics::renderer, statValueRect.x, statValueRect.y, statValue.c_str());
 			}
 		}
 	}

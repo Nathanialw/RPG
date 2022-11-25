@@ -6,7 +6,7 @@
 #include <SDL2/SDL_ttf.h>
 #include "components.h"
 #include "camera.h"
-
+#include "SDL_FontCache.h"
 
 namespace Graphics {
 
@@ -16,6 +16,7 @@ namespace Graphics {
         SDL_Window* window;
         SDL_FRect Screen;
         TTF_Font* font;
+        FC_Font* fcFont = FC_CreateFont();
 
         entt::entity defaultIcon;
 
@@ -129,6 +130,7 @@ namespace Graphics {
     }
 
     void Create_Font() {
+        FC_LoadFont(fcFont, Graphics::renderer, "fonts/FreeSans.ttf", 20, FC_MakeColor(0,0,0,255), TTF_STYLE_NORMAL);
         font = TTF_OpenFont("fonts/Chomsky.otf", 30);
     }
 
