@@ -203,7 +203,7 @@ namespace Maps {
             zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);
             zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0);
             zone.emplace<Component::Velocity>(entity, 0.f, 0.0f, 0.f, 0.0f, data.speed);
-            zone.emplace<Component::Health>(entity, data.health);
+            auto &health = zone.emplace<Component::Health>(entity, data.health);
             zone.emplace<Component::Melee_Range>(entity, (data.radius + data.melee_range));
             zone.emplace<Component::Soldier>(entity);
             zone.emplace<Component::Commandable>(entity);
@@ -211,6 +211,7 @@ namespace Maps {
 
 
             if (player) {
+                health.currentHealth = 200;
                 zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::player);
                 zone.emplace<Component::Input>(entity);
                 zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, Graphics::resolution.w, Graphics::resolution.h, 2.0f, 2.0f);

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="4094" height="6556" scale="1" format="RGBA8888">
+  <sprite n="Mrolach_Behavior_06_ 1" x="0" y="0" w="214" h="207" pX="0.5" pY="0.5" oX="122" oY="143" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_04_ 1" x="214" y="0" w="213" h="208" pX="0.5" pY="0.5" oX="122" oY="142" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_05_ 1" x="427" y="0" w="214" h="208" pX="0.5" pY="0.5" oX="122" oY="142" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_22_ 7" x="641" y="0" w="212" h="211" pX="0.5" pY="0.5" oX="175" oY="135" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_23_ 7" x="853" y="0" w="212" h="211" pX="0.5" pY="0.5" oX="175" oY="135" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_24_ 7" x="1065" y="0" w="211" h="211" pX="0.5" pY="0.5" oX="176" oY="135" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_11_ 3" x="1276" y="0" w="168" h="219" pX="0.5" pY="0.5" oX="176" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_12_ 3" x="1444" y="0" w="167" h="219" pX="0.5" pY="0.5" oX="177" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_10_ 3" x="1611" y="0" w="168" h="220" pX="0.5" pY="0.5" oX="176" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Dead_06_ 5" x="1779" y="0" w="287" h="222" pX="0.5" pY="0.5" oX="57" oY="84" oW="512" oH="512"/>
+  <sprite n="Mrolach_Dead_03_ 2" x="2066" y="0" w="327" h="223" pX="0.5" pY="0.5" oX="63" oY="108" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_17_ 5" x="2393" y="0" w="205" h="224" pX="0.5" pY="0.5" oX="131" oY="123" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_18_ 5" x="2598" y="0" w="204" h="224" pX="0.5" pY="0.5" oX="131" oY="123" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_16_ 5" x="2802" y="0" w="205" h="225" pX="0.5" pY="0.5" oX="131" oY="122" oW="512" oH="512"/>
+  <sprite n="Mrolach_Dead_02_ 1" x="3007" y="0" w="327" h="228" pX="0.5" pY="0.5" oX="122" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Dead_08_ 7" x="3334" y="0" w="296" h="228" pX="0.5" pY="0.5" oX="127" oY="56" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_07_ 2" x="3630" y="0" w="231" h="235" pX="0.5" pY="0.5" oX="201" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_08_ 2" x="3861" y="0" w="231" h="235" pX="0.5" pY="0.5" oX="201" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_09_ 2" x="0" y="207" w="211" h="236" pX="0.5" pY="0.5" oX="193" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_09_ 2" x="211" y="208" w="231" h="235" pX="0.5" pY="0.5" oX="201" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_07_ 2" x="442" y="211" w="211" h="237" pX="0.5" pY="0.5" oX="193" oY="115" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_08_ 2" x="653" y="211" w="211" h="237" pX="0.5" pY="0.5" oX="193" oY="115" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_05_ 1" x="864" y="211" w="219" h="238" pX="0.5" pY="0.5" oX="93" oY="134" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_06_ 1" x="1083" y="219" w="219" h="238" pX="0.5" pY="0.5" oX="93" oY="134" oW="512" oH="512"/>
+  <sprite n="Mrolach_Dead_04_ 3" x="1302" y="219" w="234" h="239" pX="0.5" pY="0.5" oX="127" oY="67" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_04_ 1" x="1536" y="220" w="219" h="239" pX="0.5" pY="0.5" oX="93" oY="133" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_51_ 6" x="1755" y="222" w="253" h="239" pX="0.5" pY="0.5" oX="132" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Dead_05_ 4" x="2008" y="223" w="296" h="241" pX="0.5" pY="0.5" oX="92" oY="131" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_03_ 0" x="2304" y="224" w="288" h="245" pX="0.5" pY="0.5" oX="81" oY="165" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_20_ 6" x="2592" y="225" w="228" h="253" pX="0.5" pY="0.5" oX="143" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_17_ 2" x="2820" y="228" w="251" h="254" pX="0.5" pY="0.5" oX="126" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_34_ 4" x="3071" y="228" w="267" h="255" pX="0.5" pY="0.5" oX="148" oY="118" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_57_ 7" x="3338" y="228" w="235" h="255" pX="0.5" pY="0.5" oX="132" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_35_ 4" x="3573" y="235" w="213" h="256" pX="0.5" pY="0.5" oX="178" oY="115" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_52_ 6" x="3786" y="235" w="259" h="257" pX="0.5" pY="0.5" oX="122" oY="117" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_07_ 2" x="0" y="443" w="203" h="257" pX="0.5" pY="0.5" oX="172" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_05_ 1" x="203" y="443" w="232" h="262" pX="0.5" pY="0.5" oX="178" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_09_ 2" x="435" y="448" w="294" h="260" pX="0.5" pY="0.5" oX="170" oY="145" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_19_ 6" x="729" y="449" w="251" h="261" pX="0.5" pY="0.5" oX="130" oY="122" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_22_ 7" x="980" y="457" w="223" h="262" pX="0.5" pY="0.5" oX="180" oY="114" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_23_ 7" x="1203" y="458" w="223" h="262" pX="0.5" pY="0.5" oX="180" oY="114" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_04_ 1" x="1426" y="459" w="223" h="263" pX="0.5" pY="0.5" oX="169" oY="105" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_09_ 2" x="1649" y="461" w="221" h="263" pX="0.5" pY="0.5" oX="149" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_24_ 7" x="1870" y="464" w="223" h="263" pX="0.5" pY="0.5" oX="180" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_18_ 5" x="2093" y="464" w="202" h="265" pX="0.5" pY="0.5" oX="128" oY="114" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_04_ 1" x="2295" y="469" w="225" h="264" pX="0.5" pY="0.5" oX="158" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_13_ 4" x="2520" y="478" w="228" h="264" pX="0.5" pY="0.5" oX="152" oY="130" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_14_ 4" x="2748" y="482" w="227" h="264" pX="0.5" pY="0.5" oX="152" oY="130" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_15_ 4" x="2975" y="483" w="227" h="264" pX="0.5" pY="0.5" oX="152" oY="130" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_07_ 2" x="3202" y="483" w="218" h="264" pX="0.5" pY="0.5" oX="148" oY="115" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_11_ 3" x="3420" y="483" w="140" h="270" pX="0.5" pY="0.5" oX="190" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_08_ 2" x="3560" y="491" w="218" h="264" pX="0.5" pY="0.5" oX="149" oY="115" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_19_ 6" x="3778" y="492" w="239" h="265" pX="0.5" pY="0.5" oX="132" oY="158" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_17_ 5" x="0" y="700" w="202" h="266" pX="0.5" pY="0.5" oX="128" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_08_ 2" x="202" y="705" w="212" h="266" pX="0.5" pY="0.5" oX="171" oY="114" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_12_ 1" x="414" y="708" w="272" h="265" pX="0.5" pY="0.5" oX="140" oY="108" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_06_ 1" x="686" y="710" w="275" h="267" pX="0.5" pY="0.5" oX="105" oY="106" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_13_ 1" x="961" y="720" w="297" h="265" pX="0.5" pY="0.5" oX="96" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_17_ 2" x="1258" y="722" w="306" h="266" pX="0.5" pY="0.5" oX="94" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_16_ 5" x="1564" y="724" w="202" h="267" pX="0.5" pY="0.5" oX="128" oY="112" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_33_ 4" x="1766" y="727" w="270" h="267" pX="0.5" pY="0.5" oX="132" oY="118" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_39_ 4" x="2036" y="729" w="252" h="267" pX="0.5" pY="0.5" oX="127" oY="124" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_12_ 3" x="2288" y="733" w="140" h="270" pX="0.5" pY="0.5" oX="190" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_16_ 1" x="2428" y="742" w="275" h="268" pX="0.5" pY="0.5" oX="149" oY="112" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_40_ 4" x="2703" y="746" w="263" h="268" pX="0.5" pY="0.5" oX="145" oY="123" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_19_ 6" x="2966" y="747" w="249" h="269" pX="0.5" pY="0.5" oX="131" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_50_ 6" x="3215" y="747" w="190" h="270" pX="0.5" pY="0.5" oX="162" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_14_ 1" x="3405" y="755" w="263" h="269" pX="0.5" pY="0.5" oX="139" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_12_ 1" x="3668" y="757" w="278" h="269" pX="0.5" pY="0.5" oX="108" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_10_ 3" x="3946" y="757" w="140" h="272" pX="0.5" pY="0.5" oX="190" oY="125" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_23_ 7" x="0" y="971" w="237" h="270" pX="0.5" pY="0.5" oX="135" oY="131" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_21_ 6" x="237" y="973" w="255" h="270" pX="0.5" pY="0.5" oX="150" oY="160" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_11_ 1" x="492" y="977" w="237" h="271" pX="0.5" pY="0.5" oX="135" oY="106" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_09_ 2" x="729" y="977" w="213" h="271" pX="0.5" pY="0.5" oX="171" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_10_ 1" x="942" y="985" w="249" h="271" pX="0.5" pY="0.5" oX="157" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_05_ 1" x="1191" y="988" w="227" h="272" pX="0.5" pY="0.5" oX="165" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_20_ 6" x="1418" y="991" w="229" h="272" pX="0.5" pY="0.5" oX="125" oY="149" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_20_ 2" x="1647" y="994" w="273" h="273" pX="0.5" pY="0.5" oX="95" oY="103" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_54_ 6" x="1920" y="996" w="252" h="273" pX="0.5" pY="0.5" oX="119" oY="118" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_56_ 6" x="2172" y="1003" w="216" h="273" pX="0.5" pY="0.5" oX="160" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_13_ 1" x="2388" y="1010" w="266" h="273" pX="0.5" pY="0.5" oX="143" oY="112" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_16_ 1" x="2654" y="1014" w="310" h="273" pX="0.5" pY="0.5" oX="107" oY="112" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_24_ 2" x="2964" y="1017" w="313" h="273" pX="0.5" pY="0.5" oX="101" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_21_ 6" x="3277" y="1024" w="275" h="274" pX="0.5" pY="0.5" oX="114" oY="144" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_23_ 2" x="3552" y="1026" w="266" h="275" pX="0.5" pY="0.5" oX="118" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_22_ 2" x="3818" y="1029" w="250" h="276" pX="0.5" pY="0.5" oX="107" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_54_ 6" x="0" y="1241" w="180" h="276" pX="0.5" pY="0.5" oX="174" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_20_ 2" x="180" y="1243" w="282" h="275" pX="0.5" pY="0.5" oX="129" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_09_ 1" x="462" y="1248" w="288" h="276" pX="0.5" pY="0.5" oX="142" oY="112" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_03_ 0" x="750" y="1248" w="162" h="278" pX="0.5" pY="0.5" oX="195" oY="96" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_40_ 4" x="912" y="1256" w="250" h="276" pX="0.5" pY="0.5" oX="110" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_07_ 2" x="1162" y="1260" w="243" h="277" pX="0.5" pY="0.5" oX="146" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_14_ 4" x="1405" y="1263" w="212" h="277" pX="0.5" pY="0.5" oX="122" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_21_ 2" x="1617" y="1267" w="284" h="276" pX="0.5" pY="0.5" oX="109" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_07_ 2" x="1901" y="1269" w="247" h="277" pX="0.5" pY="0.5" oX="146" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_15_ 4" x="2148" y="1276" w="212" h="277" pX="0.5" pY="0.5" oX="122" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_09_ 1" x="2360" y="1283" w="245" h="277" pX="0.5" pY="0.5" oX="135" oY="108" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_19_ 2" x="2605" y="1287" w="281" h="277" pX="0.5" pY="0.5" oX="108" oY="105" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_15_ 4" x="2886" y="1290" w="267" h="277" pX="0.5" pY="0.5" oX="106" oY="128" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_11_ 1" x="3153" y="1298" w="259" h="277" pX="0.5" pY="0.5" oX="145" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_14_ 1" x="3412" y="1301" w="244" h="277" pX="0.5" pY="0.5" oX="168" oY="112" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_15_ 1" x="3656" y="1305" w="218" h="277" pX="0.5" pY="0.5" oX="172" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_13_ 4" x="3874" y="1305" w="212" h="278" pX="0.5" pY="0.5" oX="122" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_18_ 2" x="0" y="1518" w="269" h="277" pX="0.5" pY="0.5" oX="122" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_20_ 6" x="269" y="1518" w="191" h="281" pX="0.5" pY="0.5" oX="162" oY="138" oW="512" oH="512"/>
+  <sprite n="Mrolach_Dead_01_ 0" x="460" y="1524" w="233" h="278" pX="0.5" pY="0.5" oX="155" oY="95" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_08_ 2" x="693" y="1526" w="219" h="281" pX="0.5" pY="0.5" oX="137" oY="107" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_34_ 4" x="912" y="1532" w="237" h="279" pX="0.5" pY="0.5" oX="133" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_11_ 3" x="1149" y="1537" w="228" h="280" pX="0.5" pY="0.5" oX="153" oY="129" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_03_ 0" x="1377" y="1540" w="230" h="281" pX="0.5" pY="0.5" oX="150" oY="155" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_10_ 1" x="1607" y="1543" w="281" h="279" pX="0.5" pY="0.5" oX="128" oY="107" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_23_ 2" x="1888" y="1546" w="233" h="281" pX="0.5" pY="0.5" oX="125" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_13_ 4" x="2121" y="1553" w="217" h="282" pX="0.5" pY="0.5" oX="145" oY="135" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_24_ 2" x="2338" y="1560" w="264" h="280" pX="0.5" pY="0.5" oX="106" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_07_ 2" x="2602" y="1564" w="227" h="282" pX="0.5" pY="0.5" oX="146" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_19_ 2" x="2829" y="1567" w="292" h="280" pX="0.5" pY="0.5" oX="114" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_15_ 1" x="3121" y="1575" w="282" h="282" pX="0.5" pY="0.5" oX="126" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_36_ 4" x="3403" y="1578" w="188" h="282" pX="0.5" pY="0.5" oX="181" oY="117" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_35_ 4" x="3591" y="1582" w="221" h="282" pX="0.5" pY="0.5" oX="129" oY="108" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_18_ 5" x="3812" y="1583" w="193" h="282" pX="0.5" pY="0.5" oX="134" oY="106" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_22_ 7" x="0" y="1795" w="181" h="282" pX="0.5" pY="0.5" oX="195" oY="114" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_08_ 2" x="181" y="1799" w="228" h="283" pX="0.5" pY="0.5" oX="146" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_21_ 6" x="409" y="1802" w="202" h="283" pX="0.5" pY="0.5" oX="183" oY="118" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_15_ 4" x="611" y="1807" w="293" h="283" pX="0.5" pY="0.5" oX="87" oY="128" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_07_ 0" x="904" y="1811" w="173" h="283" pX="0.5" pY="0.5" oX="186" oY="122" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_19_ 6" x="1077" y="1817" w="193" h="283" pX="0.5" pY="0.5" oX="189" oY="136" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_01_ 0" x="1270" y="1821" w="173" h="284" pX="0.5" pY="0.5" oX="179" oY="128" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_02_ 0" x="1443" y="1822" w="171" h="284" pX="0.5" pY="0.5" oX="180" oY="128" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_03_ 0" x="1614" y="1822" w="172" h="284" pX="0.5" pY="0.5" oX="179" oY="128" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_14_ 4" x="1786" y="1827" w="199" h="284" pX="0.5" pY="0.5" oX="154" oY="131" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_02_ 0" x="1985" y="1827" w="133" h="289" pX="0.5" pY="0.5" oX="198" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_21_ 6" x="2118" y="1835" w="210" h="284" pX="0.5" pY="0.5" oX="174" oY="132" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_09_ 2" x="2328" y="1840" w="229" h="284" pX="0.5" pY="0.5" oX="146" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_20_ 6" x="2557" y="1846" w="202" h="284" pX="0.5" pY="0.5" oX="183" oY="117" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_55_ 6" x="2759" y="1847" w="224" h="284" pX="0.5" pY="0.5" oX="131" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_03_ 0" x="2983" y="1847" w="133" h="289" pX="0.5" pY="0.5" oX="198" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_64_ 7" x="3116" y="1857" w="263" h="284" pX="0.5" pY="0.5" oX="113" oY="95" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_19_ 6" x="3379" y="1860" w="189" h="284" pX="0.5" pY="0.5" oX="176" oY="122" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_20_ 6" x="3568" y="1864" w="210" h="285" pX="0.5" pY="0.5" oX="174" oY="131" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_19_ 6" x="3778" y="1865" w="202" h="285" pX="0.5" pY="0.5" oX="183" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_08_ 0" x="0" y="2077" w="168" h="286" pX="0.5" pY="0.5" oX="184" oY="106" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_15_ 4" x="168" y="2082" w="188" h="286" pX="0.5" pY="0.5" oX="155" oY="126" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_03_ 0" x="356" y="2085" w="201" h="286" pX="0.5" pY="0.5" oX="184" oY="132" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_19_ 6" x="557" y="2090" w="209" h="286" pX="0.5" pY="0.5" oX="174" oY="130" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_09_ 2" x="766" y="2094" w="226" h="286" pX="0.5" pY="0.5" oX="145" oY="89" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_19_ 6" x="992" y="2100" w="232" h="286" pX="0.5" pY="0.5" oX="128" oY="134" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_02_ 0" x="1224" y="2105" w="201" h="287" pX="0.5" pY="0.5" oX="184" oY="131" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_20_ 6" x="1425" y="2106" w="230" h="286" pX="0.5" pY="0.5" oX="130" oY="134" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_21_ 6" x="1655" y="2111" w="229" h="286" pX="0.5" pY="0.5" oX="131" oY="134" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_04_ 0" x="1884" y="2116" w="161" h="287" pX="0.5" pY="0.5" oX="199" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_01_ 0" x="2045" y="2119" w="239" h="287" pX="0.5" pY="0.5" oX="122" oY="119" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_01_ 0" x="2284" y="2124" w="239" h="287" pX="0.5" pY="0.5" oX="122" oY="119" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_18_ 2" x="2523" y="2131" w="287" h="286" pX="0.5" pY="0.5" oX="116" oY="108" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_02_ 0" x="2810" y="2131" w="163" h="288" pX="0.5" pY="0.5" oX="194" oY="107" oW="512" oH="512"/>
+  <sprite n="Mrolach_Resting_01_ 0" x="2973" y="2136" w="132" h="290" pX="0.5" pY="0.5" oX="199" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_08_ 2" x="3105" y="2141" w="267" h="287" pX="0.5" pY="0.5" oX="118" oY="102" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_13_ 4" x="3372" y="2144" w="193" h="290" pX="0.5" pY="0.5" oX="137" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_08_ 2" x="3565" y="2149" w="197" h="287" pX="0.5" pY="0.5" oX="186" oY="130" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_01_ 0" x="3762" y="2150" w="239" h="287" pX="0.5" pY="0.5" oX="109" oY="136" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_02_ 0" x="0" y="2368" w="240" h="287" pX="0.5" pY="0.5" oX="108" oY="136" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_03_ 0" x="240" y="2371" w="241" h="287" pX="0.5" pY="0.5" oX="107" oY="136" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_58_ 7" x="481" y="2376" w="214" h="287" pX="0.5" pY="0.5" oX="158" oY="103" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_01_ 0" x="695" y="2380" w="200" h="288" pX="0.5" pY="0.5" oX="184" oY="129" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_22_ 2" x="895" y="2386" w="235" h="288" pX="0.5" pY="0.5" oX="140" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_22_ 7" x="1130" y="2392" w="237" h="288" pX="0.5" pY="0.5" oX="143" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_11_ 3" x="1367" y="2392" w="248" h="290" pX="0.5" pY="0.5" oX="138" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_08_ 2" x="1615" y="2397" w="230" h="290" pX="0.5" pY="0.5" oX="104" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_14_ 4" x="1845" y="2403" w="194" h="290" pX="0.5" pY="0.5" oX="136" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_15_ 4" x="2039" y="2406" w="195" h="290" pX="0.5" pY="0.5" oX="135" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_03_ 0" x="2234" y="2411" w="249" h="291" pX="0.5" pY="0.5" oX="126" oY="140" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_09_ 2" x="2483" y="2417" w="298" h="291" pX="0.5" pY="0.5" oX="135" oY="117" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_01_ 0" x="2781" y="2419" w="180" h="292" pX="0.5" pY="0.5" oX="187" oY="132" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_21_ 6" x="2961" y="2428" w="282" h="291" pX="0.5" pY="0.5" oX="106" oY="123" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_06_ 1" x="3243" y="2434" w="219" h="291" pX="0.5" pY="0.5" oX="125" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_16_ 5" x="3462" y="2436" w="210" h="291" pX="0.5" pY="0.5" oX="130" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_17_ 5" x="3672" y="2437" w="209" h="291" pX="0.5" pY="0.5" oX="130" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_16_ 5" x="3881" y="2437" w="212" h="291" pX="0.5" pY="0.5" oX="137" oY="99" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_61_ 7" x="0" y="2655" w="232" h="291" pX="0.5" pY="0.5" oX="122" oY="101" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_62_ 7" x="232" y="2658" w="247" h="291" pX="0.5" pY="0.5" oX="125" oY="102" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_01_ 0" x="479" y="2663" w="193" h="292" pX="0.5" pY="0.5" oX="155" oY="151" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_18_ 5" x="672" y="2668" w="209" h="292" pX="0.5" pY="0.5" oX="130" oY="103" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_33_ 4" x="881" y="2674" w="219" h="292" pX="0.5" pY="0.5" oX="152" oY="112" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_52_ 6" x="1100" y="2680" w="221" h="292" pX="0.5" pY="0.5" oX="184" oY="112" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_45_ 5" x="1321" y="2682" w="270" h="292" pX="0.5" pY="0.5" oX="128" oY="95" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_17_ 5" x="1591" y="2687" w="193" h="292" pX="0.5" pY="0.5" oX="133" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_13_ 4" x="1784" y="2693" w="254" h="293" pX="0.5" pY="0.5" oX="145" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_20_ 6" x="2038" y="2696" w="196" h="293" pX="0.5" pY="0.5" oX="192" oY="98" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_17_ 5" x="2234" y="2702" w="238" h="293" pX="0.5" pY="0.5" oX="142" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_13_ 4" x="2472" y="2708" w="252" h="293" pX="0.5" pY="0.5" oX="117" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_17_ 5" x="2724" y="2711" w="226" h="293" pX="0.5" pY="0.5" oX="145" oY="115" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_01_ 0" x="2950" y="2719" w="200" h="293" pX="0.5" pY="0.5" oX="182" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_06_ 1" x="3150" y="2725" w="225" h="293" pX="0.5" pY="0.5" oX="143" oY="112" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_23_ 7" x="3375" y="2727" w="282" h="293" pX="0.5" pY="0.5" oX="111" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_01_ 0" x="3657" y="2728" w="244" h="293" pX="0.5" pY="0.5" oX="138" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_53_ 6" x="3901" y="2728" w="189" h="293" pX="0.5" pY="0.5" oX="179" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_03_ 0" x="0" y="2946" w="157" h="293" pX="0.5" pY="0.5" oX="204" oY="131" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_21_ 2" x="157" y="2949" w="306" h="293" pX="0.5" pY="0.5" oX="117" oY="103" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_20_ 6" x="463" y="2955" w="194" h="293" pX="0.5" pY="0.5" oX="186" oY="128" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_39_ 4" x="657" y="2960" w="202" h="294" pX="0.5" pY="0.5" oX="153" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_46_ 5" x="859" y="2966" w="237" h="293" pX="0.5" pY="0.5" oX="150" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_60_ 7" x="1096" y="2972" w="210" h="294" pX="0.5" pY="0.5" oX="146" oY="99" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_21_ 6" x="1306" y="2974" w="194" h="294" pX="0.5" pY="0.5" oX="185" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_19_ 6" x="1500" y="2979" w="197" h="295" pX="0.5" pY="0.5" oX="198" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_20_ 6" x="1697" y="2986" w="197" h="295" pX="0.5" pY="0.5" oX="198" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Behavior_21_ 6" x="1894" y="2989" w="197" h="295" pX="0.5" pY="0.5" oX="198" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_22_ 7" x="2091" y="2995" w="174" h="295" pX="0.5" pY="0.5" oX="189" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_07_ 2" x="2265" y="2995" w="200" h="295" pX="0.5" pY="0.5" oX="180" oY="120" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_22_ 7" x="2465" y="3001" w="246" h="295" pX="0.5" pY="0.5" oX="189" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_02_ 0" x="2711" y="3004" w="166" h="296" pX="0.5" pY="0.5" oX="197" oY="128" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_22_ 7" x="2877" y="3012" w="265" h="296" pX="0.5" pY="0.5" oX="123" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_06_ 1" x="3142" y="3018" w="203" h="296" pX="0.5" pY="0.5" oX="138" oY="125" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_12_ 3" x="3345" y="3020" w="312" h="296" pX="0.5" pY="0.5" oX="130" oY="78" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_22_ 7" x="3657" y="3021" w="262" h="296" pX="0.5" pY="0.5" oX="143" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_23_ 7" x="3919" y="3021" w="173" h="296" pX="0.5" pY="0.5" oX="199" oY="102" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_07_ 0" x="0" y="3239" w="147" h="298" pX="0.5" pY="0.5" oX="188" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_07_ 2" x="147" y="3242" w="226" h="297" pX="0.5" pY="0.5" oX="132" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_20_ 6" x="373" y="3248" w="237" h="297" pX="0.5" pY="0.5" oX="133" oY="70" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_07_ 2" x="610" y="3254" w="226" h="297" pX="0.5" pY="0.5" oX="119" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_15_ 4" x="836" y="3259" w="184" h="297" pX="0.5" pY="0.5" oX="155" oY="134" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_22_ 7" x="1020" y="3266" w="182" h="297" pX="0.5" pY="0.5" oX="175" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_23_ 7" x="1202" y="3268" w="181" h="297" pX="0.5" pY="0.5" oX="176" oY="103" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_24_ 7" x="1383" y="3274" w="182" h="297" pX="0.5" pY="0.5" oX="176" oY="103" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_58_ 7" x="1565" y="3281" w="238" h="297" pX="0.5" pY="0.5" oX="130" oY="102" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_23_ 7" x="1803" y="3284" w="209" h="298" pX="0.5" pY="0.5" oX="99" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_07_ 2" x="2012" y="3290" w="221" h="298" pX="0.5" pY="0.5" oX="174" oY="128" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_14_ 4" x="2233" y="3290" w="184" h="298" pX="0.5" pY="0.5" oX="155" oY="133" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_22_ 7" x="2417" y="3296" w="202" h="298" pX="0.5" pY="0.5" oX="182" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_02_ 0" x="2619" y="3300" w="236" h="299" pX="0.5" pY="0.5" oX="132" oY="103" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_53_ 6" x="2855" y="3308" w="274" h="298" pX="0.5" pY="0.5" oX="117" oY="115" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_13_ 4" x="3129" y="3314" w="184" h="299" pX="0.5" pY="0.5" oX="155" oY="132" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_21_ 6" x="3313" y="3316" w="233" h="299" pX="0.5" pY="0.5" oX="120" oY="119" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_23_ 7" x="3546" y="3317" w="203" h="299" pX="0.5" pY="0.5" oX="182" oY="108" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_24_ 7" x="3749" y="3317" w="204" h="299" pX="0.5" pY="0.5" oX="182" oY="108" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_05_ 0" x="3953" y="3317" w="141" h="315" pX="0.5" pY="0.5" oX="197" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_06_ 0" x="0" y="3539" w="173" h="299" pX="0.5" pY="0.5" oX="166" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_15_ 4" x="173" y="3539" w="184" h="299" pX="0.5" pY="0.5" oX="147" oY="135" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_14_ 4" x="357" y="3545" w="226" h="300" pX="0.5" pY="0.5" oX="152" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_02_ 0" x="583" y="3551" w="194" h="300" pX="0.5" pY="0.5" oX="148" oY="141" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_16_ 5" x="777" y="3556" w="194" h="300" pX="0.5" pY="0.5" oX="130" oY="92" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_04_ 1" x="971" y="3563" w="224" h="301" pX="0.5" pY="0.5" oX="142" oY="106" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_49_ 6" x="1195" y="3565" w="171" h="302" pX="0.5" pY="0.5" oX="182" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_43_ 5" x="1366" y="3571" w="193" h="302" pX="0.5" pY="0.5" oX="190" oY="95" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_05_ 1" x="1559" y="3578" w="226" h="301" pX="0.5" pY="0.5" oX="141" oY="106" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_19_ 6" x="1785" y="3582" w="210" h="302" pX="0.5" pY="0.5" oX="165" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Dead_07_ 6" x="1995" y="3588" w="281" h="302" pX="0.5" pY="0.5" oX="172" oY="84" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_19_ 6" x="2276" y="3594" w="210" h="302" pX="0.5" pY="0.5" oX="165" oY="116" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_06_ 1" x="2486" y="3599" w="226" h="302" pX="0.5" pY="0.5" oX="141" oY="105" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_16_ 5" x="2712" y="3606" w="208" h="302" pX="0.5" pY="0.5" oX="152" oY="93" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_17_ 5" x="2920" y="3606" w="207" h="302" pX="0.5" pY="0.5" oX="153" oY="93" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_03_ 0" x="3127" y="3613" w="146" h="303" pX="0.5" pY="0.5" oX="195" oY="108" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_18_ 5" x="3273" y="3615" w="207" h="302" pX="0.5" pY="0.5" oX="153" oY="92" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_44_ 5" x="3480" y="3616" w="254" h="302" pX="0.5" pY="0.5" oX="150" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_05_ 1" x="3734" y="3616" w="218" h="303" pX="0.5" pY="0.5" oX="124" oY="102" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_04_ 0" x="3952" y="3632" w="141" h="325" pX="0.5" pY="0.5" oX="196" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_14_ 4" x="0" y="3838" w="222" h="302" pX="0.5" pY="0.5" oX="156" oY="114" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_10_ 3" x="222" y="3845" w="242" h="303" pX="0.5" pY="0.5" oX="161" oY="94" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_10_ 3" x="464" y="3851" w="242" h="303" pX="0.5" pY="0.5" oX="161" oY="94" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_02_ 0" x="706" y="3856" w="226" h="303" pX="0.5" pY="0.5" oX="143" oY="138" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_41_ 5" x="932" y="3864" w="226" h="303" pX="0.5" pY="0.5" oX="175" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_21_ 6" x="1158" y="3867" w="205" h="304" pX="0.5" pY="0.5" oX="175" oY="92" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_55_ 6" x="1363" y="3873" w="187" h="304" pX="0.5" pY="0.5" oX="161" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_51_ 6" x="1550" y="3879" w="211" h="303" pX="0.5" pY="0.5" oX="136" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_05_ 1" x="1761" y="3884" w="202" h="305" pX="0.5" pY="0.5" oX="139" oY="117" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_15_ 4" x="1963" y="3890" w="295" h="305" pX="0.5" pY="0.5" oX="121" oY="102" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_14_ 4" x="2258" y="3896" w="164" h="305" pX="0.5" pY="0.5" oX="149" oY="130" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_24_ 7" x="2422" y="3901" w="171" h="305" pX="0.5" pY="0.5" oX="195" oY="93" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_24_ 7" x="2593" y="3908" w="320" h="303" pX="0.5" pY="0.5" oX="108" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_63_ 7" x="2913" y="3908" w="192" h="306" pX="0.5" pY="0.5" oX="160" oY="103" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_38_ 4" x="3105" y="3917" w="239" h="306" pX="0.5" pY="0.5" oX="156" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_49_ 6" x="3344" y="3918" w="221" h="306" pX="0.5" pY="0.5" oX="120" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_12_ 3" x="3565" y="3919" w="245" h="307" pX="0.5" pY="0.5" oX="143" oY="71" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_03_ 0" x="3810" y="3957" w="193" h="307" pX="0.5" pY="0.5" oX="142" oY="131" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_08_ 2" x="0" y="4140" w="218" h="307" pX="0.5" pY="0.5" oX="171" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_47_ 5" x="218" y="4148" w="235" h="307" pX="0.5" pY="0.5" oX="152" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_48_ 5" x="453" y="4154" w="215" h="307" pX="0.5" pY="0.5" oX="176" oY="96" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_50_ 6" x="668" y="4159" w="182" h="308" pX="0.5" pY="0.5" oX="156" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_04_ 1" x="850" y="4167" w="211" h="309" pX="0.5" pY="0.5" oX="155" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_05_ 1" x="1061" y="4171" w="212" h="309" pX="0.5" pY="0.5" oX="154" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_06_ 1" x="1273" y="4177" w="211" h="309" pX="0.5" pY="0.5" oX="154" oY="121" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_16_ 5" x="1484" y="4182" w="212" h="309" pX="0.5" pY="0.5" oX="137" oY="81" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_38_ 4" x="1696" y="4189" w="188" h="309" pX="0.5" pY="0.5" oX="174" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_11_ 3" x="1884" y="4195" w="233" h="309" pX="0.5" pY="0.5" oX="147" oY="87" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_02_ 0" x="2117" y="4201" w="145" h="309" pX="0.5" pY="0.5" oX="195" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_13_ 4" x="2262" y="4206" w="172" h="309" pX="0.5" pY="0.5" oX="145" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_02_ 0" x="2434" y="4211" w="180" h="310" pX="0.5" pY="0.5" oX="190" oY="105" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_10_ 3" x="2614" y="4211" w="221" h="310" pX="0.5" pY="0.5" oX="155" oY="89" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_06_ 1" x="2835" y="4214" w="219" h="311" pX="0.5" pY="0.5" oX="149" oY="66" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_16_ 5" x="3054" y="4223" w="250" h="311" pX="0.5" pY="0.5" oX="132" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_16_ 5" x="3304" y="4224" w="250" h="311" pX="0.5" pY="0.5" oX="132" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_23_ 7" x="3554" y="4226" w="237" h="311" pX="0.5" pY="0.5" oX="142" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_15_ 4" x="3791" y="4264" w="283" h="311" pX="0.5" pY="0.5" oX="135" oY="123" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_04_ 1" x="0" y="4447" w="216" h="312" pX="0.5" pY="0.5" oX="123" oY="98" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_09_ 2" x="216" y="4455" w="223" h="312" pX="0.5" pY="0.5" oX="151" oY="127" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_37_ 4" x="439" y="4461" w="220" h="313" pX="0.5" pY="0.5" oX="142" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_47_ 5" x="659" y="4467" w="182" h="316" pX="0.5" pY="0.5" oX="172" oY="94" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_14_ 4" x="841" y="4476" w="219" h="314" pX="0.5" pY="0.5" oX="214" oY="85" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_04_ 1" x="1060" y="4480" w="200" h="314" pX="0.5" pY="0.5" oX="133" oY="102" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_59_ 7" x="1260" y="4486" w="199" h="315" pX="0.5" pY="0.5" oX="168" oY="100" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_03_ 0" x="1459" y="4491" w="227" h="315" pX="0.5" pY="0.5" oX="166" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_13_ 4" x="1686" y="4498" w="176" h="317" pX="0.5" pY="0.5" oX="150" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_15_ 4" x="1862" y="4504" w="246" h="315" pX="0.5" pY="0.5" oX="172" oY="76" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_24_ 7" x="2108" y="4515" w="286" h="311" pX="0.5" pY="0.5" oX="107" oY="96" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_37_ 4" x="2394" y="4521" w="260" h="314" pX="0.5" pY="0.5" oX="135" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_01_ 0" x="2654" y="4521" w="152" h="318" pX="0.5" pY="0.5" oX="185" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_13_ 4" x="2806" y="4525" w="228" h="315" pX="0.5" pY="0.5" oX="143" oY="107" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_13_ 4" x="3034" y="4534" w="233" h="317" pX="0.5" pY="0.5" oX="93" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_56_ 6" x="3267" y="4535" w="217" h="317" pX="0.5" pY="0.5" oX="127" oY="110" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_04_ 1" x="3484" y="4537" w="196" h="317" pX="0.5" pY="0.5" oX="145" oY="107" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_14_ 4" x="3680" y="4575" w="200" h="318" pX="0.5" pY="0.5" oX="167" oY="85" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_08_ 0" x="3880" y="4575" w="171" h="318" pX="0.5" pY="0.5" oX="165" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_10_ 3" x="0" y="4759" w="197" h="318" pX="0.5" pY="0.5" oX="146" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_11_ 3" x="197" y="4767" w="184" h="318" pX="0.5" pY="0.5" oX="150" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Woozy_12_ 3" x="381" y="4774" w="175" h="318" pX="0.5" pY="0.5" oX="152" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_59_ 7" x="556" y="4783" w="227" h="319" pX="0.5" pY="0.5" oX="128" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_57_ 7" x="783" y="4790" w="210" h="319" pX="0.5" pY="0.5" oX="149" oY="101" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_05_ 1" x="993" y="4794" w="258" h="320" pX="0.5" pY="0.5" oX="146" oY="113" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_06_ 1" x="1251" y="4801" w="193" h="321" pX="0.5" pY="0.5" oX="192" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_01_ 0" x="1444" y="4806" w="212" h="320" pX="0.5" pY="0.5" oX="146" oY="114" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_42_ 5" x="1656" y="4815" w="187" h="321" pX="0.5" pY="0.5" oX="186" oY="95" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_10_ 3" x="1843" y="4819" w="213" h="321" pX="0.5" pY="0.5" oX="129" oY="93" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_18_ 5" x="2056" y="4826" w="276" h="321" pX="0.5" pY="0.5" oX="124" oY="77" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_04_ 1" x="2332" y="4835" w="230" h="321" pX="0.5" pY="0.5" oX="137" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_04_ 1" x="2562" y="4839" w="231" h="321" pX="0.5" pY="0.5" oX="136" oY="111" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_11_ 3" x="2793" y="4840" w="213" h="322" pX="0.5" pY="0.5" oX="129" oY="92" oW="512" oH="512"/>
+  <sprite n="Mrolach_Critical HP_12_ 3" x="3006" y="4851" w="213" h="322" pX="0.5" pY="0.5" oX="129" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_20_ 6" x="3219" y="4852" w="208" h="322" pX="0.5" pY="0.5" oX="134" oY="89" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_46_ 5" x="3427" y="4854" w="187" h="322" pX="0.5" pY="0.5" oX="158" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_36_ 4" x="3614" y="4893" w="237" h="323" pX="0.5" pY="0.5" oX="132" oY="109" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_18_ 5" x="3851" y="4893" w="231" h="324" pX="0.5" pY="0.5" oX="161" oY="82" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_25_ 3" x="0" y="5077" w="162" h="324" pX="0.5" pY="0.5" oX="176" oY="86" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_18_ 5" x="162" y="5085" w="209" h="324" pX="0.5" pY="0.5" oX="191" oY="99" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_06_ 0" x="371" y="5092" w="181" h="325" pX="0.5" pY="0.5" oX="188" oY="86" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_05_ 1" x="552" y="5102" w="199" h="324" pX="0.5" pY="0.5" oX="129" oY="99" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_05_ 1" x="751" y="5109" w="200" h="325" pX="0.5" pY="0.5" oX="179" oY="104" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_64_ 7" x="951" y="5114" w="253" h="323" pX="0.5" pY="0.5" oX="157" oY="100" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_10_ 3" x="1204" y="5122" w="212" h="326" pX="0.5" pY="0.5" oX="131" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_01_ 0" x="1416" y="5126" w="159" h="327" pX="0.5" pY="0.5" oX="191" oY="92" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_10_ 3" x="1575" y="5136" w="260" h="326" pX="0.5" pY="0.5" oX="131" oY="91" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_18_ 5" x="1835" y="5140" w="219" h="328" pX="0.5" pY="0.5" oX="134" oY="97" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_14_ 4" x="2054" y="5147" w="272" h="327" pX="0.5" pY="0.5" oX="139" oY="119" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_02_ 0" x="2326" y="5156" w="190" h="328" pX="0.5" pY="0.5" oX="189" oY="75" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_24_ 7" x="2516" y="5162" w="306" h="326" pX="0.5" pY="0.5" oX="134" oY="95" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_26_ 3" x="2822" y="5162" w="156" h="329" pX="0.5" pY="0.5" oX="179" oY="85" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_44_ 5" x="2978" y="5173" w="217" h="328" pX="0.5" pY="0.5" oX="114" oY="92" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_08_ 2" x="3195" y="5174" w="226" h="329" pX="0.5" pY="0.5" oX="125" oY="84" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_27_ 3" x="3421" y="5176" w="164" h="337" pX="0.5" pY="0.5" oX="172" oY="65" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_45_ 5" x="3585" y="5216" w="194" h="329" pX="0.5" pY="0.5" oX="144" oY="98" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_12_ 3" x="3779" y="5217" w="207" h="330" pX="0.5" pY="0.5" oX="142" oY="96" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_63_ 7" x="0" y="5409" w="214" h="330" pX="0.5" pY="0.5" oX="147" oY="95" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_31_ 3" x="214" y="5409" w="148" h="339" pX="0.5" pY="0.5" oX="189" oY="81" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_32_ 3" x="362" y="5417" w="171" h="337" pX="0.5" pY="0.5" oX="166" oY="82" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_60_ 7" x="533" y="5426" w="214" h="335" pX="0.5" pY="0.5" oX="150" oY="93" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_06_ 1" x="747" y="5437" w="286" h="331" pX="0.5" pY="0.5" oX="53" oY="95" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_10_ 3" x="1033" y="5448" w="248" h="333" pX="0.5" pY="0.5" oX="165" oY="88" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_11_ 3" x="1281" y="5453" w="249" h="333" pX="0.5" pY="0.5" oX="165" oY="88" oW="512" oH="512"/>
+  <sprite n="Mrolach_Idle_12_ 3" x="1530" y="5462" w="250" h="333" pX="0.5" pY="0.5" oX="165" oY="88" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_09_ 2" x="1780" y="5468" w="199" h="336" pX="0.5" pY="0.5" oX="133" oY="65" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_43_ 5" x="1979" y="5474" w="244" h="337" pX="0.5" pY="0.5" oX="153" oY="88" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_16_ 5" x="2223" y="5484" w="189" h="337" pX="0.5" pY="0.5" oX="149" oY="88" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_16_ 5" x="2412" y="5488" w="221" h="338" pX="0.5" pY="0.5" oX="160" oY="81" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_41_ 5" x="2633" y="5488" w="173" h="340" pX="0.5" pY="0.5" oX="166" oY="89" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_05_ 0" x="2806" y="5491" w="162" h="345" pX="0.5" pY="0.5" oX="198" oY="101" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_62_ 7" x="2968" y="5501" w="200" h="338" pX="0.5" pY="0.5" oX="166" oY="93" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_03_ 0" x="3168" y="5503" w="212" h="341" pX="0.5" pY="0.5" oX="168" oY="59" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_42_ 5" x="3380" y="5513" w="187" h="343" pX="0.5" pY="0.5" oX="172" oY="90" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 2_18_ 5" x="3567" y="5547" w="281" h="339" pX="0.5" pY="0.5" oX="127" oY="61" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_17_ 5" x="3848" y="5547" w="207" h="341" pX="0.5" pY="0.5" oX="174" oY="72" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_17_ 5" x="0" y="5739" w="209" h="342" pX="0.5" pY="0.5" oX="127" oY="96" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_28_ 3" x="209" y="5748" w="153" h="345" pX="0.5" pY="0.5" oX="186" oY="87" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_27_ 3" x="362" y="5754" w="154" h="346" pX="0.5" pY="0.5" oX="182" oY="84" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_17_ 5" x="516" y="5761" w="191" h="343" pX="0.5" pY="0.5" oX="158" oY="83" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_09_ 2" x="707" y="5768" w="219" h="344" pX="0.5" pY="0.5" oX="169" oY="86" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_11_ 3" x="926" y="5781" w="193" h="344" pX="0.5" pY="0.5" oX="145" oY="89" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_30_ 3" x="1119" y="5781" w="148" h="347" pX="0.5" pY="0.5" oX="186" oY="85" oW="512" oH="512"/>
+  <sprite n="Mrolach_Evade_12_ 3" x="1267" y="5786" w="228" h="344" pX="0.5" pY="0.5" oX="133" oY="86" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_24_ 7" x="1495" y="5795" w="277" h="346" pX="0.5" pY="0.5" oX="148" oY="79" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_10_ 3" x="1772" y="5804" w="191" h="348" pX="0.5" pY="0.5" oX="166" oY="62" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_18_ 5" x="1963" y="5811" w="242" h="347" pX="0.5" pY="0.5" oX="116" oY="71" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_26_ 3" x="2205" y="5821" w="166" h="348" pX="0.5" pY="0.5" oX="174" oY="83" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_21_ 6" x="2371" y="5826" w="207" h="349" pX="0.5" pY="0.5" oX="117" oY="64" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_23_ 7" x="2578" y="5828" w="190" h="349" pX="0.5" pY="0.5" oX="156" oY="76" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_29_ 3" x="2768" y="5836" w="154" h="349" pX="0.5" pY="0.5" oX="190" oY="87" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_31_ 3" x="2922" y="5839" w="152" h="349" pX="0.5" pY="0.5" oX="185" oY="85" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_12_ 3" x="3074" y="5844" w="192" h="350" pX="0.5" pY="0.5" oX="178" oY="59" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_29_ 3" x="3266" y="5856" w="152" h="351" pX="0.5" pY="0.5" oX="181" oY="72" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_48_ 5" x="3418" y="5886" w="223" h="353" pX="0.5" pY="0.5" oX="141" oY="88" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_25_ 3" x="3641" y="5886" w="157" h="355" pX="0.5" pY="0.5" oX="177" oY="86" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_17_ 5" x="3798" y="5888" w="227" h="354" pX="0.5" pY="0.5" oX="160" oY="59" oW="512" oH="512"/>
+  <sprite n="Mrolach_Walk_32_ 3" x="0" y="6081" w="165" h="357" pX="0.5" pY="0.5" oX="180" oY="85" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_28_ 3" x="165" y="6093" w="151" h="362" pX="0.5" pY="0.5" oX="184" oY="60" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_11_ 3" x="316" y="6100" w="198" h="362" pX="0.5" pY="0.5" oX="135" oY="62" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_11_ 3" x="514" y="6104" w="192" h="364" pX="0.5" pY="0.5" oX="172" oY="46" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_61_ 7" x="706" y="6112" w="217" h="366" pX="0.5" pY="0.5" oX="160" oY="73" oW="512" oH="512"/>
+  <sprite n="Mrolach_Get Hit_24_ 7" x="923" y="6128" w="240" h="359" pX="0.5" pY="0.5" oX="105" oY="78" oW="512" oH="512"/>
+  <sprite n="Mrolach_Attack 1_02_ 0" x="1163" y="6130" w="266" h="360" pX="0.5" pY="0.5" oX="127" oY="44" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_22_ 7" x="1429" y="6141" w="228" h="362" pX="0.5" pY="0.5" oX="153" oY="79" oW="512" oH="512"/>
+  <sprite n="Mrolach_Use Skill_12_ 3" x="1657" y="6152" w="235" h="368" pX="0.5" pY="0.5" oX="137" oY="39" oW="512" oH="512"/>
+  <sprite n="Mrolach_Run_30_ 3" x="1892" y="6158" w="186" h="369" pX="0.5" pY="0.5" oX="162" oY="64" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_23_ 7" x="2078" y="6169" w="207" h="372" pX="0.5" pY="0.5" oX="161" oY="71" oW="512" oH="512"/>
+  <sprite n="Mrolach_Block_24_ 7" x="2285" y="6175" w="189" h="381" pX="0.5" pY="0.5" oX="170" oY="63" oW="512" oH="512"/>
+</TextureAtlas>

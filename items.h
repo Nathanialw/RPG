@@ -471,7 +471,8 @@ namespace Items {
 
 	void Init_Item_Data() {
 
-        SQLite_Item_Data::Load_Item_Names("classes_female");
+        SQLite_Item_Data::Load_Item_Names("RTP_male");
+        SQLite_Item_Data::Load_Item_Names("RTP_female");
 
 		rarityColor = {
 			{Rarity::common, { 255, 255, 255, 200 }},

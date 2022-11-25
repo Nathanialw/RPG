@@ -3,4 +3,4 @@ cmake-build-release
 bin
 sprites/PVG_guides
 cmake-build-relwithdebinfo
-
+RPG_game

@@ -17,12 +17,13 @@ namespace Texture_Packer_Item {
         std::string sprite_data = "";
         std::string xml_path = "";
         std::string texture_path = "";
+        std::string unit_type = "";
     };
 
     Data Get_Sprite_Sheet(std::string &slot) {// needs to search for  a specific row that I can input in the arguments
         std::string item_name;
         //get a random entry from item vector
-        if (slot == "helm") {
+        if (slot == "helm" && SQLite_Item_Data::helm.size() != 0) {
             item_name = SQLite_Item_Data::helm[rand() % SQLite_Item_Data::helm.size()];
         }
         else if (slot == "chest") {
@@ -53,31 +54,16 @@ namespace Texture_Packer_Item {
         Data data;
         data.item_name = item_name;
         std::string path;
-            ///check if the name exists??
+
         std::string sheet_name = db::Append_Quotes(item_name);
-//        std::string tempItemType;
-//
-//        const unsigned char* item_type;
-//        sqlite3_stmt* stmt;
-//        char buf[100];
-//        const char* jj = "SELECT sprite_data FROM weapon_data WHERE name = ";
-//        strcpy(buf, jj);
-//        strcat(buf, sheet_name.c_str());
-//        sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
-//        while (sqlite3_step(stmt) != SQLITE_DONE) {
-//            item_type = sqlite3_column_text(stmt, 0);
-//            const char * s = (const char *)item_type;
-//            tempItemType = std::string(reinterpret_cast< const char *> (s));
-//        }
-//        data.sprite_data = tempItemType;
-//        tempItemType = db::Append_Quotes(tempItemType);
 
         const unsigned char* xml_path;
         const unsigned char* tex_path;
+        const unsigned char* unit_type;
         std::string texture_path;
         sqlite3_stmt* stmt2;
-        char buf2[100];
-        const char* jj2 = "SELECT xml_path, texture_path FROM weapon_types WHERE type = ";
+        char buf2[200];
+        const char* jj2 = "SELECT xml_path, texture_path, unit_type FROM weapon_types WHERE type = ";
         strcpy(buf2, jj2);
         strcat(buf2, sheet_name.c_str());
         sqlite3_prepare_v2(db::db, buf2, -1, &stmt2, 0);
@@ -88,6 +74,9 @@ namespace Texture_Packer_Item {
             tex_path = sqlite3_column_text(stmt2, 1);
             const char * d = (const char *)tex_path;
             texture_path = std::string(reinterpret_cast< const char *> (d));
+            unit_type = sqlite3_column_text(stmt2, 2);
+            const char * e = (const char *)unit_type;
+            data.unit_type = std::string(reinterpret_cast< const char *> (e));
         }
         data.xml_path = path;
         data.texture_path = texture_path;
@@ -113,7 +102,7 @@ namespace Texture_Packer_Item {
 
     int i = 75;
 
-    bool Get_Frame_Action_Data (bool &check, std::string key, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+    bool Get_Frame_Action_Data (std::string unitType, bool &check, std::string key, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
         std::string keyCheck = key;
         std::string frameCopy = frame;
             /// presupposes that the top of the list is "itemName_00_1-H Attack 1_01_ 0" with 19 ending chars
@@ -134,43 +123,65 @@ namespace Texture_Packer_Item {
 
         Component::Action_State action;
             /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
-        if (checkAction == "1-H Attack 1") {
-            action = Component::Action_State::attack;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "Attack Two Hand Swing") {
-            action = Component::Action_State::attack;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "1-H Idle") {
-            action = Component::Action_State::idle;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "Idle1") {
-            action = Component::Action_State::idle;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "1-H Walk") {
-            action = Component::Action_State::walk;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "Run") {
-            action = Component::Action_State::walk;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "Get Hit 1") {
-            action = Component::Action_State::struck;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "Get Hit") {
-            action = Component::Action_State::struck;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "Down 1") {
-            action = Component::Action_State::dead;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "Dead2") {
-            action = Component::Action_State::dead;
-            actionFrameData[action].frameSpeed = i;
-        } else if (checkAction == "Casting") {
-            action = Component::Action_State::cast;
-            actionFrameData[action].frameSpeed = i;
-        } else {
-            return false;
+        if (unitType == "RTP_female" || unitType ==  "RTP_male") {
+            if (checkAction == "2-H Attack 1") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "2-H Idle") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "2-H Walk") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Get Hit 1") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead-Down Backward") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Casting") {
+                action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            }
         }
-
+        else {
+            if (checkAction == "1-H Attack 1") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Attack Two Hand Swing") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "1-H Idle") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle1") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "1-H Walk") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Run") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Get Hit 1") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Get Hit") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Down 1") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead2") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Casting") {
+                action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else {
+                return false;
+            }
+        }
         Calculate_Start_Frame(actionFrameData, action, frameIndex);
         Calculate_Num_Frames(frame, actionFrameData, action);
         return true;
@@ -210,6 +221,7 @@ namespace Texture_Packer_Item {
             return {NULL, ""};
         }
         const char* path = dbData.xml_path.c_str();
+        Utilities::Log(path);
         if (path == NULL){
             Utilities::Log("TexturePacker_Import_Item() failed, empty xml_path");
             return {NULL, ""};
@@ -223,8 +235,8 @@ namespace Texture_Packer_Item {
         Component::Sheet_Data spritesheet;
         spritesheet.frameList.reserve(200);
         const char* tex = dbData.texture_path.c_str();
-        Get_Item_Texture(dbData.texture_path, tex);
-        spritesheet.texture = Item_Textures[dbData.texture_path];
+        Get_Item_Texture(dbData.item_name, tex);
+        spritesheet.texture = Item_Textures[dbData.item_name];
 
         int frameIndex = 0;
         bool check = true;
@@ -233,7 +245,7 @@ namespace Texture_Packer_Item {
                 ///get frame data for each state
             std::string n = pSpriteElement->Attribute("n");
 
-            Get_Frame_Action_Data(check, dbData.item_name, n, spritesheet.actionFrameData, frameIndex);
+            Get_Frame_Action_Data(dbData.unit_type, check, dbData.item_name, n, spritesheet.actionFrameData, frameIndex);
 
                 ///get sprite data
             frame.clip.x = pSpriteElement->IntAttribute("x");
@@ -250,10 +262,10 @@ namespace Texture_Packer_Item {
 
         spritesheet.frameList.shrink_to_fit();
 
-        Packer_Textures_Items[dbData.texture_path] = spritesheet;
+        Packer_Textures_Items[dbData.item_name] = spritesheet;
         Item_Data_And_Index values;
         values.itemData = &Packer_Textures_Items;
-        values.index = dbData.texture_path;
+        values.index = dbData.item_name;
         return values;
     }
 }

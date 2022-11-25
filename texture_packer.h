@@ -9,24 +9,33 @@ namespace Texture_Packer {
 
     std::unordered_map<std::string, Component::Sheet_Data> Packer_Textures;
 
-    std::string Get_Sprite_Sheet(std::string sheetname) {// needs to search for  a specific row that I can input in the arguments
+    struct Type_Data{
+        std::string type;
         std::string path;
+    };
+
+    Type_Data Get_Sprite_Sheet(std::string sheetname) {// needs to search for  a specific row that I can input in the arguments
+        Type_Data typeData;
             ///check if the name exists??
         std::string sheet_name = db::Append_Quotes(sheetname);
 
         const unsigned char* sheet;
+        const unsigned char* type;
         sqlite3_stmt* stmt;
-        char buf[300];
-        const char* jj = "SELECT xml_path FROM unit_data WHERE name = ";
+        char buf[400];
+        const char* jj = "SELECT xml_path, unit_type FROM unit_data WHERE name = ";
         strcpy(buf, jj);
         strcat(buf, sheet_name.c_str());
         sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
         while (sqlite3_step(stmt) != SQLITE_DONE) {
             sheet = sqlite3_column_text(stmt, 0);
             const char * s = (const char *)sheet;
-            path = std::string(reinterpret_cast< const char *> (s));
+            typeData.path = std::string(reinterpret_cast< const char *> (s));
+            type = sqlite3_column_text(stmt, 1);
+            s = (const char *)type;
+            typeData.type = std::string(reinterpret_cast< const char *> (s));
         }
-        return path;
+        return typeData;
     }
 
     Component::Sprite_Offset Get_Sprite_Offets_From_db(std::string &sheet) {// needs to search for  a specific row that I can input in the arguments
@@ -34,7 +43,7 @@ namespace Texture_Packer {
         Component::Sprite_Offset offset = {};
         sqlite3_stmt *stmt;
         const unsigned char *sheetType;
-        char buf[200];
+        char buf[300];
         const char *ii = "SELECT x_offset, y_offset FROM sprite_layout WHERE sprite_sheet = ";
         strcpy(buf, ii);
         strcat(buf, sheet_name.c_str());
@@ -63,7 +72,7 @@ namespace Texture_Packer {
     }
     int i = 75;
 
-    void Get_Frame_Action_Data (std::string &name, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+    void Get_Frame_Action_Data (std::string unitType, std::string &name, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
 
             /// get the
         std::string keyCheck = name;
@@ -79,70 +88,92 @@ namespace Texture_Packer {
         Component::Action_State action;
             /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
 
-       if (checkAction == "1-H Attack 1") {
-           action = Component::Action_State::attack;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Attack Two Hand Swing") {
-           action = Component::Action_State::attack;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Attack 1") {
-           action = Component::Action_State::attack;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "1-H Idle") {
-           action = Component::Action_State::idle;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Idle") {
-           action = Component::Action_State::idle;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Idle1") {
-           action = Component::Action_State::idle;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "idle1") {
-           action = Component::Action_State::idle;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "1-H Walk") {
-           action = Component::Action_State::walk;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "walking") {
-           action = Component::Action_State::walk;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Walking") {
-           action = Component::Action_State::walk;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Run") {
-           action = Component::Action_State::walk;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Get Hit 1") {
-           action = Component::Action_State::struck;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Get Hit") {
-           action = Component::Action_State::struck;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "collapse") {
-           action = Component::Action_State::struck;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Down 1") {
-           action = Component::Action_State::dead;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Dead") {
-           action = Component::Action_State::dead;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Dead To Down") {
-           action = Component::Action_State::dead;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Dead2") {
-           action = Component::Action_State::dead;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "ko") {
-           action = Component::Action_State::dead;
-           actionFrameData[action].frameSpeed = i;
-       } else if (checkAction == "Casting") {
-           action = Component::Action_State::cast;
-           actionFrameData[action].frameSpeed = i;
-       } else {
-           return;
-       }
-
+        if (unitType == "RTP_female" || unitType ==  "RTP_male") {
+            if (checkAction == "2-H Attack 1") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "2-H Idle") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "2-H Walk") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Get Hit 1") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead-Down Backward") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Casting") {
+                action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            }
+        }
+        else {
+            if (checkAction == "1-H Attack 1") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Attack Two Hand Swing") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Attack 1") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "1-H Idle") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle1") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "idle1") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "1-H Walk") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "walking") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Walking") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Run") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Get Hit 1") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Get Hit") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "collapse") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Down 1") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead To Down") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead2") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "ko") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Casting") {
+                action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else {
+                return;
+            }
+        }
        Calculate_Start_Frame(actionFrameData, action, frameIndex);
        Calculate_Num_Frames(frame, actionFrameData, action);
     }
@@ -156,16 +187,23 @@ namespace Texture_Packer {
         }
 
             ///get path from db
-        std::string str = Get_Sprite_Sheet(name);
+        Type_Data typeData = Get_Sprite_Sheet(name);
 		tinyxml2::XMLDocument spriteSheetData;
-		const char* path = str.c_str();
+		const char* path = typeData.path.c_str();
         if (path == NULL){
             Utilities::Log("TexturePacker_Import() failed, empty xml_path");
             return NULL;
         }
-		spriteSheetData.LoadFile(path);
-
-		tinyxml2::XMLElement* pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
+        Utilities::Log(path);
+        spriteSheetData.LoadFile(path);
+        tinyxml2::XMLElement *pSpriteElement;
+        if (1) {
+            pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
+        }
+        else {
+            std::cout << "load from xml failed: " << path << std::endl;
+            return NULL;
+        };
 
         Component::Sprite_Sheet_Data frame = {};
         Component::Sheet_Data spritesheet;
@@ -177,7 +215,7 @@ namespace Texture_Packer {
         if (pSpriteElement != NULL) {
                 ///get frame data for each state
             std::string n = pSpriteElement->Attribute("n");
-            Get_Frame_Action_Data(name, n, spritesheet.actionFrameData, frameIndex);
+            Get_Frame_Action_Data(typeData.type, name, n, spritesheet.actionFrameData, frameIndex);
                 ///get sprite data
             frame.clip.x = pSpriteElement->IntAttribute("x");
             frame.clip.y = pSpriteElement->IntAttribute("y");
@@ -195,7 +233,7 @@ namespace Texture_Packer {
         while (pSpriteElement != NULL) {
                 ///get frame data for each state
             std::string n = pSpriteElement->Attribute("n");
-            Get_Frame_Action_Data(name, n, spritesheet.actionFrameData, frameIndex);
+            Get_Frame_Action_Data(typeData.type, name, n, spritesheet.actionFrameData, frameIndex);
                 ///get sprite data
 			frame.clip.x = pSpriteElement->IntAttribute("x");
 			frame.clip.y = pSpriteElement->IntAttribute("y");

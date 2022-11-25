@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="texture.png" width="1342" height="1314" scale="1" format="RGBA8888">
+  <sprite n="Ghoul/Ghoul_Dead_08_ 7.png" x="0" y="0" w="126" h="70" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Dead_05_ 4.png" x="0" y="70" w="119" h="99" pX="0.5" pY="0.5" oX="21" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_12_ 3.png" x="126" y="0" w="55" h="115" pX="0.5" pY="0.5" oX="51" oY="18" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_25_ 3.png" x="0" y="169" w="44" h="110" pX="0.5" pY="0.5" oX="65" oY="38" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_12_ 3.png" x="44" y="169" w="60" h="109" pX="0.5" pY="0.5" oX="41" oY="24" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Dead_01_ 0.png" x="181" y="0" w="109" h="85" pX="0.5" pY="0.5" oX="23" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_32_ 3.png" x="104" y="169" w="43" h="108" pX="0.5" pY="0.5" oX="63" oY="36" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_29_ 3.png" x="147" y="115" w="42" h="108" pX="0.5" pY="0.5" oX="60" oY="37" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_28_ 3.png" x="189" y="85" w="45" h="108" pX="0.5" pY="0.5" oX="61" oY="37" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_27_ 3.png" x="234" y="85" w="48" h="108" pX="0.5" pY="0.5" oX="60" oY="37" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Dead_04_ 3.png" x="0" y="279" w="107" h="81" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_18_ 5.png" x="147" y="223" w="50" h="106" pX="0.5" pY="0.5" oX="48" oY="31" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_30_ 3.png" x="197" y="193" w="52" h="106" pX="0.5" pY="0.5" oX="56" oY="38" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_02_ 0.png" x="290" y="0" w="48" h="106" pX="0.5" pY="0.5" oX="62" oY="31" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_24_ 7.png" x="249" y="193" w="73" h="106" pX="0.5" pY="0.5" oX="72" oY="29" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Dead_03_ 2.png" x="338" y="0" w="105" h="69" pX="0.5" pY="0.5" oX="30" oY="62" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_48_ 5.png" x="338" y="69" w="62" h="105" pX="0.5" pY="0.5" oX="47" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_03_ 0.png" x="322" y="174" w="59" h="103" pX="0.5" pY="0.5" oX="66" oY="41" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_41_ 5.png" x="381" y="174" w="50" h="103" pX="0.5" pY="0.5" oX="57" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_61_ 7.png" x="0" y="360" w="60" h="103" pX="0.5" pY="0.5" oX="58" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_21_ 6.png" x="60" y="360" w="48" h="102" pX="0.5" pY="0.5" oX="70" oY="41" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_26_ 3.png" x="108" y="329" w="49" h="102" pX="0.5" pY="0.5" oX="60" oY="38" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_25_ 3.png" x="400" y="69" w="43" h="102" pX="0.5" pY="0.5" oX="60" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_60_ 7.png" x="157" y="329" w="65" h="102" pX="0.5" pY="0.5" oX="57" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_26_ 3.png" x="222" y="299" w="43" h="101" pX="0.5" pY="0.5" oX="60" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_02_ 0.png" x="265" y="299" w="56" h="100" pX="0.5" pY="0.5" oX="55" oY="35" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Dead_02_ 1.png" x="322" y="277" w="100" h="73" pX="0.5" pY="0.5" oX="27" oY="67" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_29_ 3.png" x="321" y="350" w="40" h="100" pX="0.5" pY="0.5" oX="61" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_20_ 6.png" x="361" y="350" w="41" h="100" pX="0.5" pY="0.5" oX="57" oY="37" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_14_ 4.png" x="443" y="0" w="53" h="100" pX="0.5" pY="0.5" oX="60" oY="30" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_62_ 7.png" x="431" y="171" w="63" h="99" pX="0.5" pY="0.5" oX="59" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_43_ 5.png" x="431" y="270" w="55" h="99" pX="0.5" pY="0.5" oX="52" oY="39" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_05_ 1.png" x="0" y="463" w="51" h="99" pX="0.5" pY="0.5" oX="60" oY="37" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_30_ 3.png" x="51" y="463" w="41" h="99" pX="0.5" pY="0.5" oX="62" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_32_ 3.png" x="92" y="462" w="41" h="99" pX="0.5" pY="0.5" oX="62" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_18_ 5.png" x="133" y="450" w="72" h="99" pX="0.5" pY="0.5" oX="24" oY="29" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_17_ 5.png" x="265" y="399" w="45" h="98" pX="0.5" pY="0.5" oX="67" oY="39" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_11_ 3.png" x="310" y="450" w="44" h="98" pX="0.5" pY="0.5" oX="57" oY="37" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_44_ 5.png" x="354" y="450" w="62" h="98" pX="0.5" pY="0.5" oX="48" oY="39" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_59_ 7.png" x="205" y="431" w="60" h="98" pX="0.5" pY="0.5" oX="59" oY="41" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_12_ 3.png" x="416" y="369" w="43" h="98" pX="0.5" pY="0.5" oX="55" oY="37" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_42_ 5.png" x="496" y="0" w="42" h="97" pX="0.5" pY="0.5" oX="60" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_24_ 7.png" x="459" y="369" w="65" h="97" pX="0.5" pY="0.5" oX="56" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_10_ 3.png" x="494" y="100" w="44" h="97" pX="0.5" pY="0.5" oX="57" oY="38" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_31_ 3.png" x="486" y="270" w="41" h="97" pX="0.5" pY="0.5" oX="64" oY="37" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_04_ 1.png" x="538" y="0" w="53" h="97" pX="0.5" pY="0.5" oX="41" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_12_ 3.png" x="538" y="97" w="44" h="97" pX="0.5" pY="0.5" oX="57" oY="38" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_04_ 1.png" x="538" y="194" w="49" h="97" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_09_ 2.png" x="416" y="467" w="96" h="82" pX="0.5" pY="0.5" oX="64" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_27_ 3.png" x="512" y="466" w="42" h="96" pX="0.5" pY="0.5" oX="61" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_42_ 5.png" x="524" y="367" w="49" h="96" pX="0.5" pY="0.5" oX="52" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_24_ 7.png" x="0" y="562" w="72" h="95" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_10_ 3.png" x="72" y="562" w="39" h="95" pX="0.5" pY="0.5" oX="60" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Dead_07_ 6.png" x="111" y="562" w="87" h="95" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Dead_06_ 5.png" x="205" y="529" w="95" h="76" pX="0.5" pY="0.5" oX="23" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_16_ 5.png" x="300" y="562" w="47" h="94" pX="0.5" pY="0.5" oX="53" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_20_ 6.png" x="347" y="562" w="53" h="94" pX="0.5" pY="0.5" oX="54" oY="38" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_12_ 3.png" x="400" y="562" w="62" h="94" pX="0.5" pY="0.5" oX="52" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_02_ 0.png" x="462" y="562" w="51" h="94" pX="0.5" pY="0.5" oX="62" oY="45" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_16_ 5.png" x="513" y="562" w="55" h="94" pX="0.5" pY="0.5" oX="48" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_11_ 3.png" x="591" y="0" w="63" h="94" pX="0.5" pY="0.5" oX="51" oY="45" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_20_ 6.png" x="582" y="97" w="51" h="94" pX="0.5" pY="0.5" oX="70" oY="45" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_41_ 5.png" x="554" y="463" w="43" h="94" pX="0.5" pY="0.5" oX="59" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_28_ 3.png" x="568" y="557" w="42" h="94" pX="0.5" pY="0.5" oX="60" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_45_ 5.png" x="587" y="191" w="66" h="94" pX="0.5" pY="0.5" oX="47" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_47_ 5.png" x="597" y="285" w="50" h="94" pX="0.5" pY="0.5" oX="50" oY="41" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_61_ 7.png" x="610" y="379" w="42" h="93" pX="0.5" pY="0.5" oX="62" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_21_ 6.png" x="654" y="0" w="60" h="93" pX="0.5" pY="0.5" oX="55" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_57_ 7.png" x="647" y="285" w="44" h="93" pX="0.5" pY="0.5" oX="57" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_31_ 3.png" x="633" y="94" w="40" h="93" pX="0.5" pY="0.5" oX="62" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_23_ 7.png" x="653" y="187" w="56" h="93" pX="0.5" pY="0.5" oX="60" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_64_ 7.png" x="610" y="472" w="63" h="93" pX="0.5" pY="0.5" oX="49" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_05_ 1.png" x="652" y="378" w="59" h="93" pX="0.5" pY="0.5" oX="38" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_64_ 7.png" x="610" y="565" w="46" h="92" pX="0.5" pY="0.5" oX="62" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_63_ 7.png" x="656" y="565" w="47" h="92" pX="0.5" pY="0.5" oX="64" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_62_ 7.png" x="673" y="93" w="38" h="92" pX="0.5" pY="0.5" oX="63" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_09_ 2.png" x="0" y="657" w="65" h="92" pX="0.5" pY="0.5" oX="64" oY="41" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_43_ 5.png" x="65" y="657" w="34" h="91" pX="0.5" pY="0.5" oX="63" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_05_ 1.png" x="99" y="657" w="62" h="91" pX="0.5" pY="0.5" oX="43" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_14_ 4.png" x="161" y="657" w="59" h="91" pX="0.5" pY="0.5" oX="54" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_06_ 1.png" x="220" y="657" w="91" h="78" pX="0.5" pY="0.5" oX="5" oY="58" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_45_ 5.png" x="311" y="657" w="46" h="91" pX="0.5" pY="0.5" oX="55" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_16_ 5.png" x="357" y="657" w="39" h="91" pX="0.5" pY="0.5" oX="58" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_17_ 5.png" x="396" y="657" w="52" h="91" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_58_ 7.png" x="448" y="657" w="46" h="91" pX="0.5" pY="0.5" oX="55" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_24_ 7.png" x="494" y="657" w="47" h="91" pX="0.5" pY="0.5" oX="66" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_23_ 7.png" x="541" y="657" w="47" h="91" pX="0.5" pY="0.5" oX="66" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_22_ 7.png" x="588" y="657" w="47" h="91" pX="0.5" pY="0.5" oX="66" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_48_ 5.png" x="635" y="657" w="48" h="91" pX="0.5" pY="0.5" oX="55" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_13_ 4.png" x="714" y="0" w="49" h="90" pX="0.5" pY="0.5" oX="51" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_09_ 2.png" x="673" y="471" w="90" h="67" pX="0.5" pY="0.5" oX="63" oY="63" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_46_ 5.png" x="683" y="657" w="43" h="90" pX="0.5" pY="0.5" oX="58" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_13_ 4.png" x="714" y="90" w="48" h="90" pX="0.5" pY="0.5" oX="52" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_11_ 3.png" x="711" y="180" w="51" h="90" pX="0.5" pY="0.5" oX="55" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_03_ 0.png" x="691" y="280" w="41" h="90" pX="0.5" pY="0.5" oX="67" oY="70" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_47_ 5.png" x="711" y="370" w="47" h="89" pX="0.5" pY="0.5" oX="55" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_17_ 5.png" x="703" y="538" w="55" h="89" pX="0.5" pY="0.5" oX="42" oY="41" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_18_ 5.png" x="0" y="749" w="55" h="89" pX="0.5" pY="0.5" oX="42" oY="41" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_09_ 2.png" x="55" y="749" w="71" h="89" pX="0.5" pY="0.5" oX="50" oY="40" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_36_ 4.png" x="126" y="748" w="47" h="89" pX="0.5" pY="0.5" oX="57" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_56_ 6.png" x="173" y="748" w="47" h="89" pX="0.5" pY="0.5" oX="62" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_60_ 7.png" x="220" y="748" w="44" h="89" pX="0.5" pY="0.5" oX="60" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_37_ 4.png" x="264" y="748" w="44" h="89" pX="0.5" pY="0.5" oX="58" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_22_ 7.png" x="732" y="270" w="30" h="89" pX="0.5" pY="0.5" oX="68" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_17_ 5.png" x="308" y="748" w="60" h="89" pX="0.5" pY="0.5" oX="48" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_15_ 4.png" x="368" y="748" w="68" h="89" pX="0.5" pY="0.5" oX="45" oY="44" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_05_ 0.png" x="436" y="748" w="40" h="89" pX="0.5" pY="0.5" oX="64" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_16_ 5.png" x="476" y="748" w="55" h="89" pX="0.5" pY="0.5" oX="42" oY="41" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_06_ 1.png" x="531" y="748" w="63" h="89" pX="0.5" pY="0.5" oX="39" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_08_ 0.png" x="594" y="748" w="41" h="89" pX="0.5" pY="0.5" oX="62" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_08_ 2.png" x="635" y="748" w="67" h="88" pX="0.5" pY="0.5" oX="55" oY="44" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_10_ 3.png" x="702" y="747" w="44" h="88" pX="0.5" pY="0.5" oX="59" oY="45" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_06_ 1.png" x="763" y="0" w="88" h="71" pX="0.5" pY="0.5" oX="10" oY="66" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_16_ 5.png" x="758" y="359" w="34" h="88" pX="0.5" pY="0.5" oX="70" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_04_ 0.png" x="792" y="71" w="43" h="88" pX="0.5" pY="0.5" oX="62" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_14_ 4.png" x="792" y="159" w="52" h="88" pX="0.5" pY="0.5" oX="48" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_14_ 4.png" x="762" y="247" w="61" h="88" pX="0.5" pY="0.5" oX="43" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_16_ 5.png" x="792" y="335" w="34" h="88" pX="0.5" pY="0.5" oX="70" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_59_ 7.png" x="792" y="423" w="41" h="88" pX="0.5" pY="0.5" oX="64" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_03_ 0.png" x="763" y="511" w="57" h="88" pX="0.5" pY="0.5" oX="51" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_44_ 5.png" x="726" y="627" w="43" h="88" pX="0.5" pY="0.5" oX="54" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_10_ 3.png" x="746" y="715" w="44" h="88" pX="0.5" pY="0.5" oX="59" oY="45" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_17_ 5.png" x="790" y="599" w="34" h="88" pX="0.5" pY="0.5" oX="70" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_10_ 3.png" x="790" y="687" w="36" h="88" pX="0.5" pY="0.5" oX="65" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_01_ 0.png" x="0" y="838" w="41" h="88" pX="0.5" pY="0.5" oX="61" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_08_ 2.png" x="41" y="838" w="57" h="87" pX="0.5" pY="0.5" oX="51" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_63_ 7.png" x="282" y="106" w="34" h="87" pX="0.5" pY="0.5" oX="68" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_58_ 7.png" x="98" y="838" w="58" h="87" pX="0.5" pY="0.5" oX="55" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_46_ 5.png" x="156" y="837" w="62" h="87" pX="0.5" pY="0.5" oX="49" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_11_ 3.png" x="218" y="837" w="43" h="87" pX="0.5" pY="0.5" oX="60" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_06_ 1.png" x="261" y="837" w="68" h="87" pX="0.5" pY="0.5" oX="43" oY="56" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_12_ 3.png" x="329" y="837" w="41" h="87" pX="0.5" pY="0.5" oX="61" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_49_ 6.png" x="370" y="837" w="44" h="87" pX="0.5" pY="0.5" oX="59" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_18_ 5.png" x="414" y="837" w="32" h="87" pX="0.5" pY="0.5" oX="71" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_18_ 5.png" x="446" y="837" w="72" h="87" pX="0.5" pY="0.5" oX="25" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_11_ 3.png" x="518" y="837" w="51" h="87" pX="0.5" pY="0.5" oX="52" oY="45" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_10_ 3.png" x="790" y="775" w="60" h="86" pX="0.5" pY="0.5" oX="50" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_11_ 3.png" x="569" y="837" w="36" h="86" pX="0.5" pY="0.5" oX="67" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_22_ 7.png" x="605" y="837" w="54" h="86" pX="0.5" pY="0.5" oX="60" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_02_ 0.png" x="659" y="836" w="59" h="86" pX="0.5" pY="0.5" oX="50" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_01_ 0.png" x="746" y="803" w="39" h="86" pX="0.5" pY="0.5" oX="63" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_07_ 2.png" x="851" y="0" w="38" h="86" pX="0.5" pY="0.5" oX="65" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_57_ 7.png" x="820" y="511" w="68" h="86" pX="0.5" pY="0.5" oX="50" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_08_ 2.png" x="823" y="247" w="58" h="86" pX="0.5" pY="0.5" oX="66" oY="45" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_05_ 0.png" x="824" y="597" w="50" h="86" pX="0.5" pY="0.5" oX="61" oY="56" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_10_ 3.png" x="833" y="333" w="56" h="86" pX="0.5" pY="0.5" oX="50" oY="42" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_18_ 5.png" x="833" y="419" w="56" h="86" pX="0.5" pY="0.5" oX="49" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_50_ 6.png" x="844" y="86" w="43" h="86" pX="0.5" pY="0.5" oX="59" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_20_ 6.png" x="826" y="683" w="58" h="86" pX="0.5" pY="0.5" oX="58" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_17_ 5.png" x="874" y="597" w="45" h="86" pX="0.5" pY="0.5" oX="56" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_22_ 7.png" x="881" y="172" w="52" h="86" pX="0.5" pY="0.5" oX="60" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_07_ 0.png" x="887" y="86" w="39" h="86" pX="0.5" pY="0.5" oX="63" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_21_ 2.png" x="0" y="926" w="85" h="81" pX="0.5" pY="0.5" oX="43" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_15_ 4.png" x="659" y="922" w="60" h="85" pX="0.5" pY="0.5" oX="44" oY="55" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_06_ 1.png" x="850" y="769" w="56" h="85" pX="0.5" pY="0.5" oX="42" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_02_ 0.png" x="889" y="0" w="41" h="85" pX="0.5" pY="0.5" oX="62" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_07_ 2.png" x="569" y="923" w="52" h="84" pX="0.5" pY="0.5" oX="72" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_01_ 0.png" x="850" y="854" w="57" h="84" pX="0.5" pY="0.5" oX="53" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_04_ 1.png" x="884" y="683" w="42" h="84" pX="0.5" pY="0.5" oX="57" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_04_ 1.png" x="785" y="861" w="56" h="84" pX="0.5" pY="0.5" oX="42" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_05_ 1.png" x="719" y="889" w="55" h="84" pX="0.5" pY="0.5" oX="43" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_19_ 6.png" x="888" y="505" w="46" h="84" pX="0.5" pY="0.5" oX="58" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_07_ 2.png" x="934" y="0" w="47" h="84" pX="0.5" pY="0.5" oX="72" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_08_ 2.png" x="926" y="85" w="42" h="84" pX="0.5" pY="0.5" oX="58" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_22_ 7.png" x="906" y="767" w="44" h="84" pX="0.5" pY="0.5" oX="59" oY="45" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_21_ 6.png" x="573" y="379" w="34" h="84" pX="0.5" pY="0.5" oX="63" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_04_ 1.png" x="621" y="923" w="34" h="84" pX="0.5" pY="0.5" oX="66" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_10_ 3.png" x="934" y="169" w="38" h="84" pX="0.5" pY="0.5" oX="64" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_11_ 3.png" x="919" y="589" w="36" h="84" pX="0.5" pY="0.5" oX="64" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_12_ 3.png" x="934" y="253" w="39" h="84" pX="0.5" pY="0.5" oX="60" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_06_ 1.png" x="926" y="673" w="34" h="84" pX="0.5" pY="0.5" oX="66" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_04_ 1.png" x="889" y="258" w="34" h="84" pX="0.5" pY="0.5" oX="66" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_19_ 2.png" x="934" y="337" w="46" h="84" pX="0.5" pY="0.5" oX="59" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_05_ 1.png" x="889" y="421" w="34" h="84" pX="0.5" pY="0.5" oX="66" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_16_ 5.png" x="156" y="924" w="38" h="83" pX="0.5" pY="0.5" oX="60" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_23_ 2.png" x="194" y="924" w="62" h="83" pX="0.5" pY="0.5" oX="60" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_18_ 2.png" x="256" y="924" w="54" h="83" pX="0.5" pY="0.5" oX="51" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_13_ 4.png" x="310" y="924" w="33" h="83" pX="0.5" pY="0.5" oX="65" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_23_ 7.png" x="343" y="924" w="55" h="83" pX="0.5" pY="0.5" oX="55" oY="55" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_23_ 7.png" x="398" y="924" w="43" h="83" pX="0.5" pY="0.5" oX="65" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_24_ 7.png" x="441" y="924" w="42" h="83" pX="0.5" pY="0.5" oX="65" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_15_ 1.png" x="934" y="421" w="47" h="83" pX="0.5" pY="0.5" oX="48" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_03_ 0.png" x="483" y="924" w="38" h="83" pX="0.5" pY="0.5" oX="64" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_14_ 1.png" x="521" y="924" w="45" h="83" pX="0.5" pY="0.5" oX="61" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_11_ 1.png" x="934" y="504" w="37" h="83" pX="0.5" pY="0.5" oX="64" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_12_ 1.png" x="907" y="851" w="46" h="83" pX="0.5" pY="0.5" oX="51" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_13_ 1.png" x="981" y="0" w="54" h="83" pX="0.5" pY="0.5" oX="53" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_09_ 2.png" x="968" y="84" w="37" h="83" pX="0.5" pY="0.5" oX="62" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_37_ 4.png" x="955" y="587" w="58" h="83" pX="0.5" pY="0.5" oX="48" oY="54" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_33_ 4.png" x="971" y="504" w="45" h="83" pX="0.5" pY="0.5" oX="59" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_23_ 2.png" x="972" y="167" w="51" h="83" pX="0.5" pY="0.5" oX="65" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_38_ 4.png" x="973" y="250" w="31" h="83" pX="0.5" pY="0.5" oX="67" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_24_ 2.png" x="85" y="925" w="55" h="82" pX="0.5" pY="0.5" oX="56" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_22_ 2.png" x="981" y="333" w="51" h="82" pX="0.5" pY="0.5" oX="54" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_17_ 5.png" x="981" y="415" w="39" h="82" pX="0.5" pY="0.5" oX="58" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_40_ 4.png" x="950" y="757" w="45" h="82" pX="0.5" pY="0.5" oX="53" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_51_ 6.png" x="960" y="670" w="35" h="82" pX="0.5" pY="0.5" oX="66" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_20_ 6.png" x="995" y="670" w="35" h="82" pX="0.5" pY="0.5" oX="62" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_08_ 2.png" x="995" y="752" w="38" h="82" pX="0.5" pY="0.5" oX="62" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_22_ 7.png" x="953" y="839" w="46" h="82" pX="0.5" pY="0.5" oX="55" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_23_ 7.png" x="953" y="921" w="43" h="82" pX="0.5" pY="0.5" oX="56" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_24_ 7.png" x="0" y="1007" w="41" h="82" pX="0.5" pY="0.5" oX="57" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_01_ 0.png" x="907" y="934" w="46" h="82" pX="0.5" pY="0.5" oX="54" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_53_ 6.png" x="41" y="1007" w="72" h="82" pX="0.5" pY="0.5" oX="46" oY="54" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_55_ 6.png" x="113" y="1007" w="46" h="82" pX="0.5" pY="0.5" oX="63" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_22_ 7.png" x="159" y="1007" w="46" h="82" pX="0.5" pY="0.5" oX="55" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Evade_19_ 6.png" x="205" y="1007" w="55" h="82" pX="0.5" pY="0.5" oX="62" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_23_ 7.png" x="260" y="1007" w="25" h="82" pX="0.5" pY="0.5" oX="69" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_22_ 7.png" x="285" y="1007" w="43" h="82" pX="0.5" pY="0.5" oX="66" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_19_ 6.png" x="328" y="1007" w="48" h="82" pX="0.5" pY="0.5" oX="65" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_12_ 3.png" x="376" y="1007" w="35" h="82" pX="0.5" pY="0.5" oX="68" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_22_ 7.png" x="411" y="1007" w="26" h="82" pX="0.5" pY="0.5" oX="69" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_24_ 2.png" x="953" y="1003" w="82" h="79" pX="0.5" pY="0.5" oX="42" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_17_ 2.png" x="437" y="1007" w="71" h="82" pX="0.5" pY="0.5" oX="49" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_17_ 2.png" x="508" y="1007" w="56" h="82" pX="0.5" pY="0.5" oX="52" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_53_ 6.png" x="564" y="1007" w="45" h="82" pX="0.5" pY="0.5" oX="59" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_08_ 2.png" x="609" y="1007" w="59" h="81" pX="0.5" pY="0.5" oX="62" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_07_ 2.png" x="668" y="1007" w="60" h="81" pX="0.5" pY="0.5" oX="62" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_19_ 6.png" x="999" y="834" w="35" h="81" pX="0.5" pY="0.5" oX="62" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_18_ 5.png" x="841" y="938" w="42" h="81" pX="0.5" pY="0.5" oX="59" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_19_ 6.png" x="996" y="921" w="35" h="81" pX="0.5" pY="0.5" oX="62" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_03_ 0.png" x="774" y="945" w="55" h="81" pX="0.5" pY="0.5" oX="60" oY="79" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_52_ 6.png" x="728" y="973" w="39" h="81" pX="0.5" pY="0.5" oX="67" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_02_ 0.png" x="1035" y="0" w="39" h="81" pX="0.5" pY="0.5" oX="64" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_24_ 7.png" x="1004" y="250" w="26" h="81" pX="0.5" pY="0.5" oX="68" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_52_ 6.png" x="1005" y="83" w="67" h="81" pX="0.5" pY="0.5" oX="47" oY="54" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_49_ 6.png" x="1023" y="164" w="50" h="81" pX="0.5" pY="0.5" oX="58" oY="56" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_04_ 0.png" x="1013" y="587" w="52" h="81" pX="0.5" pY="0.5" oX="59" oY="56" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_11_ 3.png" x="762" y="90" w="30" h="81" pX="0.5" pY="0.5" oX="64" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_07_ 2.png" x="1035" y="668" w="39" h="81" pX="0.5" pY="0.5" oX="62" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_01_ 0.png" x="1020" y="415" w="52" h="81" pX="0.5" pY="0.5" oX="58" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_10_ 3.png" x="1033" y="749" w="31" h="81" pX="0.5" pY="0.5" oX="64" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_09_ 1.png" x="1074" y="0" w="69" h="81" pX="0.5" pY="0.5" oX="45" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_21_ 2.png" x="1072" y="81" w="54" h="81" pX="0.5" pY="0.5" oX="53" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_16_ 1.png" x="1031" y="915" w="54" h="81" pX="0.5" pY="0.5" oX="50" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_12_ 1.png" x="1072" y="245" w="71" h="81" pX="0.5" pY="0.5" oX="40" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_13_ 1.png" x="1034" y="830" w="72" h="81" pX="0.5" pY="0.5" oX="40" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_07_ 2.png" x="1064" y="749" w="39" h="81" pX="0.5" pY="0.5" oX="62" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_15_ 1.png" x="1085" y="911" w="57" h="81" pX="0.5" pY="0.5" oX="43" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_06_ 0.png" x="1030" y="245" w="41" h="81" pX="0.5" pY="0.5" oX="62" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_20_ 2.png" x="1073" y="162" w="45" h="81" pX="0.5" pY="0.5" oX="64" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_18_ 5.png" x="1103" y="326" w="40" h="81" pX="0.5" pY="0.5" oX="57" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_09_ 2.png" x="1032" y="326" w="60" h="81" pX="0.5" pY="0.5" oX="62" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_10_ 1.png" x="1085" y="992" w="51" h="80" pX="0.5" pY="0.5" oX="60" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_20_ 2.png" x="1065" y="496" w="77" h="80" pX="0.5" pY="0.5" oX="41" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_04_ 1.png" x="1103" y="576" w="39" h="80" pX="0.5" pY="0.5" oX="59" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_12_ 3.png" x="1106" y="656" w="33" h="80" pX="0.5" pY="0.5" oX="62" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_16_ 1.png" x="0" y="1089" w="80" h="80" pX="0.5" pY="0.5" oX="42" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_14_ 1.png" x="80" y="1089" w="68" h="80" pX="0.5" pY="0.5" oX="42" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_11_ 1.png" x="148" y="1089" w="63" h="80" pX="0.5" pY="0.5" oX="44" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_39_ 4.png" x="211" y="1089" w="39" h="80" pX="0.5" pY="0.5" oX="57" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_34_ 4.png" x="250" y="1089" w="44" h="80" pX="0.5" pY="0.5" oX="61" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_01_ 0.png" x="294" y="1089" w="39" h="80" pX="0.5" pY="0.5" oX="64" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_06_ 0.png" x="333" y="1089" w="58" h="80" pX="0.5" pY="0.5" oX="55" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_05_ 1.png" x="391" y="1089" w="47" h="80" pX="0.5" pY="0.5" oX="52" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_09_ 1.png" x="438" y="1089" w="56" h="80" pX="0.5" pY="0.5" oX="55" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_33_ 4.png" x="494" y="1089" w="69" h="80" pX="0.5" pY="0.5" oX="47" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_15_ 4.png" x="563" y="1089" w="48" h="80" pX="0.5" pY="0.5" oX="52" oY="56" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_14_ 4.png" x="611" y="1088" w="43" h="80" pX="0.5" pY="0.5" oX="64" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_15_ 4.png" x="654" y="1088" w="42" h="80" pX="0.5" pY="0.5" oX="64" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_01_ 0.png" x="1103" y="736" w="39" h="80" pX="0.5" pY="0.5" oX="64" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_36_ 4.png" x="696" y="1088" w="59" h="79" pX="0.5" pY="0.5" oX="49" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_22_ 2.png" x="755" y="1082" w="75" h="79" pX="0.5" pY="0.5" oX="49" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_21_ 6.png" x="830" y="1082" w="79" h="77" pX="0.5" pY="0.5" oX="64" oY="72" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_07_ 2.png" x="1016" y="497" w="48" h="79" pX="0.5" pY="0.5" oX="61" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Rest_13_ 4.png" x="889" y="342" w="43" h="79" pX="0.5" pY="0.5" oX="64" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_15_ 4.png" x="909" y="1082" w="75" h="79" pX="0.5" pY="0.5" oX="31" oY="71" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_19_ 6.png" x="984" y="1082" w="41" h="79" pX="0.5" pY="0.5" oX="68" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_10_ 1.png" x="1072" y="407" w="65" h="79" pX="0.5" pY="0.5" oX="48" oY="46" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_38_ 4.png" x="1025" y="1082" w="61" h="79" pX="0.5" pY="0.5" oX="46" oY="55" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_13_ 4.png" x="1035" y="996" w="43" h="79" pX="0.5" pY="0.5" oX="64" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_23_ 7.png" x="1065" y="576" w="38" h="79" pX="0.5" pY="0.5" oX="65" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_24_ 7.png" x="1086" y="1072" w="38" h="79" pX="0.5" pY="0.5" oX="65" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_03_ 0.png" x="1143" y="0" w="43" h="79" pX="0.5" pY="0.5" oX="63" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_14_ 4.png" x="1137" y="407" w="48" h="79" pX="0.5" pY="0.5" oX="52" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_13_ 4.png" x="1136" y="992" w="48" h="79" pX="0.5" pY="0.5" oX="52" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Get Hit_23_ 7.png" x="1118" y="162" w="65" h="79" pX="0.5" pY="0.5" oX="58" oY="45" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_54_ 6.png" x="1106" y="816" w="64" h="79" pX="0.5" pY="0.5" oX="51" oY="54" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_03_ 0.png" x="1126" y="81" w="54" h="78" pX="0.5" pY="0.5" oX="56" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_16_ 5.png" x="1139" y="656" w="39" h="78" pX="0.5" pY="0.5" oX="59" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_19_ 2.png" x="0" y="1169" w="73" h="78" pX="0.5" pY="0.5" oX="46" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_24_ 7.png" x="73" y="1169" w="74" h="78" pX="0.5" pY="0.5" oX="58" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_18_ 2.png" x="147" y="1169" w="59" h="78" pX="0.5" pY="0.5" oX="56" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_21_ 6.png" x="206" y="1169" w="70" h="78" pX="0.5" pY="0.5" oX="68" oY="68" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_35_ 4.png" x="276" y="1169" w="57" h="78" pX="0.5" pY="0.5" oX="47" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_01_ 0.png" x="333" y="1169" w="37" h="78" pX="0.5" pY="0.5" oX="66" oY="61" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_16_ 5.png" x="1143" y="241" w="43" h="78" pX="0.5" pY="0.5" oX="59" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_55_ 6.png" x="370" y="1169" w="51" h="77" pX="0.5" pY="0.5" oX="61" oY="54" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_07_ 0.png" x="421" y="1169" w="52" h="77" pX="0.5" pY="0.5" oX="56" oY="58" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_05_ 1.png" x="473" y="1169" w="60" h="77" pX="0.5" pY="0.5" oX="57" oY="54" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_23_ 7.png" x="533" y="1169" w="55" h="77" pX="0.5" pY="0.5" oX="52" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_01_ 0.png" x="1143" y="319" w="42" h="77" pX="0.5" pY="0.5" oX="66" oY="60" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_08_ 2.png" x="1142" y="895" w="44" h="77" pX="0.5" pY="0.5" oX="66" oY="56" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_03_ 0.png" x="588" y="1169" w="42" h="77" pX="0.5" pY="0.5" oX="66" oY="60" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_35_ 4.png" x="1142" y="486" w="44" h="77" pX="0.5" pY="0.5" oX="57" oY="50" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_34_ 4.png" x="1124" y="1072" w="61" h="77" pX="0.5" pY="0.5" oX="49" oY="54" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_51_ 6.png" x="1124" y="1149" w="61" h="77" pX="0.5" pY="0.5" oX="52" oY="55" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Walk_54_ 6.png" x="527" y="291" w="46" h="76" pX="0.5" pY="0.5" oX="60" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_56_ 6.png" x="630" y="1168" w="58" h="76" pX="0.5" pY="0.5" oX="57" oY="55" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_04_ 1.png" x="762" y="171" w="30" h="76" pX="0.5" pY="0.5" oX="62" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_39_ 4.png" x="688" y="1168" w="45" h="76" pX="0.5" pY="0.5" oX="52" oY="55" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_18_ 5.png" x="1142" y="734" w="41" h="76" pX="0.5" pY="0.5" oX="57" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_50_ 6.png" x="733" y="1167" w="48" h="76" pX="0.5" pY="0.5" oX="64" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_17_ 5.png" x="1142" y="563" w="41" h="76" pX="0.5" pY="0.5" oX="57" oY="49" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_02_ 0.png" x="781" y="1161" w="42" h="76" pX="0.5" pY="0.5" oX="66" oY="61" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_02_ 0.png" x="1086" y="1151" w="35" h="76" pX="0.5" pY="0.5" oX="63" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_20_ 6.png" x="823" y="1161" w="41" h="76" pX="0.5" pY="0.5" oX="65" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_05_ 1.png" x="844" y="172" w="31" h="75" pX="0.5" pY="0.5" oX="61" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_08_ 0.png" x="864" y="1161" w="47" h="75" pX="0.5" pY="0.5" oX="58" oY="58" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_11_ 3.png" x="911" y="1161" w="57" h="75" pX="0.5" pY="0.5" oX="54" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_06_ 1.png" x="1074" y="656" w="31" h="75" pX="0.5" pY="0.5" oX="61" oY="53" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_07_ 2.png" x="968" y="1161" w="30" h="74" pX="0.5" pY="0.5" oX="68" oY="56" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_40_ 4.png" x="998" y="1161" w="65" h="74" pX="0.5" pY="0.5" oX="52" oY="55" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_06_ 1.png" x="1186" y="0" w="42" h="74" pX="0.5" pY="0.5" oX="59" oY="58" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Run_02_ 0.png" x="1170" y="810" w="52" h="74" pX="0.5" pY="0.5" oX="56" oY="58" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_19_ 6.png" x="1228" y="0" w="58" h="74" pX="0.5" pY="0.5" oX="64" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_20_ 6.png" x="1222" y="74" w="58" h="74" pX="0.5" pY="0.5" oX="64" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_14_ 4.png" x="1183" y="79" w="38" h="74" pX="0.5" pY="0.5" oX="60" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Use Skill_21_ 6.png" x="1222" y="148" w="57" h="74" pX="0.5" pY="0.5" oX="64" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_09_ 2.png" x="1222" y="222" w="48" h="73" pX="0.5" pY="0.5" oX="67" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_15_ 4.png" x="494" y="197" w="26" h="73" pX="0.5" pY="0.5" oX="66" oY="58" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_14_ 4.png" x="1186" y="153" w="25" h="73" pX="0.5" pY="0.5" oX="66" oY="58" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_15_ 4.png" x="1178" y="639" w="67" h="73" pX="0.5" pY="0.5" oX="21" oY="73" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_09_ 2.png" x="1183" y="563" w="31" h="73" pX="0.5" pY="0.5" oX="68" oY="56" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_08_ 2.png" x="1186" y="226" w="30" h="73" pX="0.5" pY="0.5" oX="68" oY="56" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_08_ 2.png" x="1222" y="712" w="48" h="73" pX="0.5" pY="0.5" oX="67" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_13_ 4.png" x="1183" y="712" w="26" h="72" pX="0.5" pY="0.5" oX="65" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_04_ 1.png" x="1222" y="785" w="46" h="72" pX="0.5" pY="0.5" oX="52" oY="61" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_07_ 2.png" x="1222" y="857" w="48" h="72" pX="0.5" pY="0.5" oX="67" oY="60" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_09_ 2.png" x="1216" y="295" w="44" h="72" pX="0.5" pY="0.5" oX="64" oY="60" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_05_ 1.png" x="1214" y="367" w="47" h="72" pX="0.5" pY="0.5" oX="51" oY="61" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 2_13_ 4.png" x="1245" y="439" w="40" h="72" pX="0.5" pY="0.5" oX="61" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_06_ 1.png" x="443" y="100" w="47" h="71" pX="0.5" pY="0.5" oX="51" oY="62" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_01_ 0.png" x="1214" y="439" w="31" h="70" pX="0.5" pY="0.5" oX="65" oY="61" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_03_ 0.png" x="1186" y="884" w="33" h="70" pX="0.5" pY="0.5" oX="65" oY="60" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_13_ 4.png" x="1245" y="511" w="40" h="69" pX="0.5" pY="0.5" oX="57" oY="63" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_02_ 0.png" x="1214" y="509" w="31" h="69" pX="0.5" pY="0.5" oX="66" oY="61" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_03_ 0.png" x="1245" y="580" w="34" h="69" pX="0.5" pY="0.5" oX="63" oY="64" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_20_ 6.png" x="1219" y="929" w="43" h="69" pX="0.5" pY="0.5" oX="65" oY="62" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Attack 1_17_ 5.png" x="1184" y="998" w="54" h="69" pX="0.5" pY="0.5" oX="58" oY="58" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_21_ 6.png" x="1238" y="998" w="45" h="69" pX="0.5" pY="0.5" oX="65" oY="62" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_19_ 6.png" x="1185" y="1067" w="42" h="68" pX="0.5" pY="0.5" oX="65" oY="63" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_21_ 6.png" x="1227" y="1067" w="43" h="68" pX="0.5" pY="0.5" oX="65" oY="66" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_15_ 4.png" x="1185" y="1135" w="39" h="68" pX="0.5" pY="0.5" oX="59" oY="64" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_14_ 4.png" x="1224" y="1135" w="39" h="68" pX="0.5" pY="0.5" oX="58" oY="64" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_02_ 0.png" x="0" y="1247" w="37" h="67" pX="0.5" pY="0.5" oX="60" oY="73" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_01_ 0.png" x="37" y="1247" w="38" h="67" pX="0.5" pY="0.5" oX="59" oY="73" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Block_15_ 4.png" x="75" y="1247" w="36" h="67" pX="0.5" pY="0.5" oX="62" oY="63" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_03_ 0.png" x="111" y="1247" w="37" h="67" pX="0.5" pY="0.5" oX="60" oY="73" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_19_ 6.png" x="883" y="1016" w="39" h="66" pX="0.5" pY="0.5" oX="62" oY="60" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_03_ 0.png" x="148" y="1247" w="38" h="66" pX="0.5" pY="0.5" oX="66" oY="64" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_05_ 1.png" x="198" y="605" w="66" h="38" pX="0.5" pY="0.5" oX="22" oY="62" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_04_ 1.png" x="767" y="1026" w="66" h="38" pX="0.5" pY="0.5" oX="22" oY="62" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_21_ 6.png" x="186" y="1247" w="41" h="66" pX="0.5" pY="0.5" oX="62" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_06_ 1.png" x="227" y="1247" w="65" h="39" pX="0.5" pY="0.5" oX="23" oY="61" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Woozy_20_ 6.png" x="292" y="1247" w="40" h="65" pX="0.5" pY="0.5" oX="62" oY="60" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_08_ 2.png" x="332" y="1247" w="65" h="51" pX="0.5" pY="0.5" oX="73" oY="64" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_07_ 2.png" x="397" y="1246" w="65" h="51" pX="0.5" pY="0.5" oX="73" oY="65" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_02_ 0.png" x="462" y="1246" w="39" h="65" pX="0.5" pY="0.5" oX="64" oY="65" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Idle_01_ 0.png" x="501" y="1246" w="40" h="65" pX="0.5" pY="0.5" oX="62" oY="65" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_21_ 6.png" x="541" y="1246" w="58" h="64" pX="0.5" pY="0.5" oX="71" oY="71" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_19_ 6.png" x="599" y="1246" w="61" h="64" pX="0.5" pY="0.5" oX="71" oY="72" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_20_ 6.png" x="660" y="1244" w="60" h="64" pX="0.5" pY="0.5" oX="71" oY="72" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_09_ 2.png" x="720" y="1244" w="64" h="49" pX="0.5" pY="0.5" oX="73" oY="64" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_13_ 4.png" x="784" y="1237" w="52" h="63" pX="0.5" pY="0.5" oX="37" oY="81" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_16_ 5.png" x="836" y="1237" w="63" h="46" pX="0.5" pY="0.5" oX="28" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_04_ 1.png" x="899" y="1236" w="62" h="43" pX="0.5" pY="0.5" oX="27" oY="74" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_06_ 1.png" x="961" y="1236" w="62" h="42" pX="0.5" pY="0.5" oX="27" oY="73" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_13_ 4.png" x="1023" y="1235" w="57" h="62" pX="0.5" pY="0.5" oX="31" oY="70" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_17_ 5.png" x="1185" y="1203" w="62" h="46" pX="0.5" pY="0.5" oX="29" oY="48" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_14_ 4.png" x="1080" y="1249" w="56" h="62" pX="0.5" pY="0.5" oX="32" oY="70" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_05_ 1.png" x="1136" y="1249" w="62" h="42" pX="0.5" pY="0.5" oX="27" oY="73" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_09_ 2.png" x="1198" y="1249" w="61" h="49" pX="0.5" pY="0.5" oX="73" oY="78" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_19_ 6.png" x="833" y="1019" w="45" h="61" pX="0.5" pY="0.5" oX="68" oY="85" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_15_ 4.png" x="1286" y="0" w="56" h="61" pX="0.5" pY="0.5" oX="32" oY="70" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_08_ 2.png" x="1280" y="74" w="60" h="49" pX="0.5" pY="0.5" oX="73" oY="78" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_07_ 2.png" x="1280" y="123" w="60" h="52" pX="0.5" pY="0.5" oX="73" oY="78" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_18_ 5.png" x="1279" y="580" w="60" h="47" pX="0.5" pY="0.5" oX="31" oY="47" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_14_ 4.png" x="1245" y="649" w="52" h="59" pX="0.5" pY="0.5" oX="37" oY="81" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_15_ 4.png" x="1285" y="175" w="53" h="57" pX="0.5" pY="0.5" oX="36" oY="81" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_20_ 6.png" x="1297" y="627" w="45" h="57" pX="0.5" pY="0.5" oX="68" oY="84" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_21_ 6.png" x="1297" y="684" w="44" h="56" pX="0.5" pY="0.5" oX="69" oY="84" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_22_ 7.png" x="1285" y="232" w="56" h="48" pX="0.5" pY="0.5" oX="73" oY="52" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_23_ 7.png" x="1285" y="280" w="56" h="49" pX="0.5" pY="0.5" oX="73" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_01_ 0.png" x="1285" y="329" w="49" h="56" pX="0.5" pY="0.5" oX="46" oY="85" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_24_ 7.png" x="1285" y="385" w="55" h="49" pX="0.5" pY="0.5" oX="73" oY="51" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_02_ 0.png" x="1285" y="434" w="49" h="54" pX="0.5" pY="0.5" oX="46" oY="84" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_03_ 0.png" x="1285" y="488" w="49" h="52" pX="0.5" pY="0.5" oX="46" oY="84" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_24_ 7.png" x="1283" y="740" w="52" h="48" pX="0.5" pY="0.5" oX="72" oY="67" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_10_ 3.png" x="1283" y="788" w="49" h="51" pX="0.5" pY="0.5" oX="63" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_11_ 3.png" x="1283" y="839" w="49" h="51" pX="0.5" pY="0.5" oX="63" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_12_ 3.png" x="107" y="277" w="35" h="51" pX="0.5" pY="0.5" oX="65" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_23_ 7.png" x="1283" y="890" w="51" h="47" pX="0.5" pY="0.5" oX="72" oY="68" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_11_ 3.png" x="264" y="605" w="35" h="51" pX="0.5" pY="0.5" oX="65" oY="43" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_12_ 3.png" x="1262" y="937" w="49" h="51" pX="0.5" pY="0.5" oX="63" oY="57" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_22_ 7.png" x="1283" y="988" w="51" h="47" pX="0.5" pY="0.5" oX="72" oY="68" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Critical HP_10_ 3.png" x="1283" y="1035" w="36" h="50" pX="0.5" pY="0.5" oX="65" oY="44" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_17_ 5.png" x="1270" y="1085" w="46" h="49" pX="0.5" pY="0.5" oX="46" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_18_ 5.png" x="1270" y="1134" w="46" h="49" pX="0.5" pY="0.5" oX="46" oY="59" oW="160" oH="160"/>
+  <sprite n="Ghoul/Ghoul_Behavior_16_ 5.png" x="1263" y="1183" w="47" h="48" pX="0.5" pY="0.5" oX="45" oY="60" oW="160" oH="160"/>
+</TextureAtlas>
