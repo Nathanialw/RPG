@@ -30,12 +30,13 @@ namespace Character_Stats {
 
 	//run when equipping or unequipping an item
 	void Update_Unit_Stats(entt::registry& zone) { //run funtion on item equip or unequip
-		auto view = zone.view<Component::Sprite_Sheet_Info, Item_Component::Item_Equip, Component::Melee_Damage, Component::Health, Component::Attack_Speed>();
+		auto view = zone.view<Component::Sprite_Sheet_Info, Item_Component::Item_Equip, Component::Melee_Damage, Component::Health, Component::Attack_Speed, Item_Component::Equipment>();
 		for (auto entity : view) {
 			auto& damage = view.get<Component::Melee_Damage>(entity);
 			auto& health = view.get<Component::Health>(entity);
 			auto& attackSpeed = view.get<Component::Attack_Speed>(entity);
 			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+			auto& equipment = view.get<Item_Component::Equipment>(entity);
 
 			//set character stats to base values
 			for (auto &stat : Items::statData) {
@@ -45,10 +46,10 @@ namespace Character_Stats {
 			//add equipment stats to character stats
 
             //iterate through each equiq slot
-			for (auto &item : UI::Equipment_UI::equippedItems) {
+			for (auto &item : equipment.equippedItems) {
 
                 //check if slot is occupied, add stats if it is
-                if (item.second != UI::Equipment_UI::emptyEquipSlot) {
+                if (item.second != Item_Component::emptyEquipSlot) {
                     auto &stats = zone.get<Item_Stats>(item.second).stats;
                     for (auto &stat: stats) {
                         Items::statData[stat.first] += stat.second;
@@ -61,7 +62,7 @@ namespace Character_Stats {
                         sheetData.equipmentSheets[(int)item.first].name = weaponSheet.sheet_name;
                     }
                 }
-                else if (item.second == UI::Equipment_UI::emptyEquipSlot) {
+                else if (item.second == Item_Component::emptyEquipSlot) {
                     sheetData.equipmentSheets[(int)item.first].ItemSheetData = NULL;
                     sheetData.equipmentSheets[(int)item.first].name = "empty";
                 }
@@ -127,11 +128,12 @@ namespace Character_Stats {
 	}
 
 	void Init_Player_Stats(entt::registry& zone) { //run funtion on item equip or unequip
-		auto view = zone.view<Component::Input, Component::Melee_Damage, Component::Health, Component::Attack_Speed>();
+		auto view = zone.view<Component::Input, Component::Melee_Damage, Component::Health, Component::Attack_Speed, Item_Component::Equipment>();
 		for (auto entity : view) {
 			auto& damage = view.get<Component::Melee_Damage>(entity);
 			auto& health = view.get<Component::Health>(entity);
 			auto& attackSpeed = view.get<Component::Attack_Speed>(entity);
+			auto& equipment = view.get<Item_Component::Equipment>(entity);
 
 			//set charcter stats to base values
 			for (auto& stat : Items::statData) {
@@ -139,8 +141,8 @@ namespace Character_Stats {
 			}
 
 			//add equipment stats to charcter stats
-			for (auto& item : UI::Equipment_UI::equippedItems) {
-				if (item.second != UI::Equipment_UI::emptyEquipSlot) {
+			for (auto& item : equipment.equippedItems) {
+				if (item.second != Item_Component::emptyEquipSlot) {
 					auto& stats = zone.get<Item_Stats>(item.second).stats;
 					for (auto& stat : stats) {
 						Items::statData[stat.first] += stat.second;
@@ -160,10 +162,28 @@ namespace Character_Stats {
 		}
 	}
 
+    void Equip_Units (entt::registry &zone) {
+        auto view = zone.view<Item_Component::Equipment, Component::Position>();
+        for (auto unit : view) {
+            auto &equipment = view.get<Item_Component::Equipment>(unit);
+            auto &position = view.get<Component::Position>(unit);
+
+            //create a weapon Component::Position& position, Component::Direction &direction
+            equipment.equippedItems[Item_Type::weapon] = Items::Create_And_Equip_Weapon(position);
+            //create a chest
+            equipment.equippedItems[Item_Type::legs] = Items::Create_And_Equip_Armor(position, Item_Type::legs);
+            //create a leggings
+            equipment.equippedItems[Item_Type::chest] = Items::Create_And_Equip_Armor(position, Item_Type::chest);
+
+            zone.emplace<Item_Component::Item_Equip>(unit);
+        }
+    }
+
 	void Init_UI(entt::registry& zone) {
 		Items::Init_Item_Data();
 		UI::Bag_UI::Create_Bag_UI(zone);
 		UI::Equipment_UI::Create_Equipment_UI(zone);
+        Equip_Units(zone);
 		Init_Player_Stats(zone);
 	}
 }

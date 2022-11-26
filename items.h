@@ -189,6 +189,45 @@ namespace Items {
 		return equippedSheetData.index;
 	}
 
+    std::string Create_Specific_Armor(entt::entity& item, Rarity& rarity, Item_Type itemType) {
+        Armor_Type armorType = Generate_Armor_Type();
+
+        std::string type = ItemTypeName[itemType];
+        std::string armor = ArmorTypeName[armorType];
+        std::string itemName = armor + " " + type;
+        World::zone.emplace<Item_Type>(item, itemType);
+        World::zone.emplace<Rarity>(item, rarity);
+        int column = itemTypes[itemType];
+        int row = armorTypes[armorType];
+        int size = 64;
+        SDL_Rect sprite = { column * size, row * size, size, size };
+
+        auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
+
+        Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
+        if (itemType == Item_Component::Item_Type::legs || itemType == Item_Component::Item_Type::chest || itemType == Item_Component::Item_Type::helm) {
+            equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type);
+            if (equippedSheetData.itemData == NULL) {
+                return "none";
+            }
+            armor_texture(itemType, sheetData, equippedSheetData.itemData, equippedSheetData.index);
+        }
+        else {
+            return "none";
+        }
+
+        sheetData.sheet_name = equippedSheetData.index;
+        sheetData.type = "RPG_Tools";
+        sheetData.sheetData = equippedSheetData.itemData;
+
+        auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
+        icon.clipSprite = sprite;
+        icon.clipIcon = {0,0,256,256};
+        icon.renderRectSize = { 64.0f, 64.0f };
+        icon.renderPositionOffset = { icon.renderRectSize.x / 2, icon.renderRectSize.y / 2 };
+        return equippedSheetData.index;
+    }
+
 	void Create_Item(entt::entity &item, Component::Position& position, const std::string &name, Item_Stats &itemStats, Component::Direction &direction) {
 		float scale = 0.7f;
 
@@ -310,6 +349,36 @@ namespace Items {
 		//	else if (item <= 12) { Create_Item(item, position, rarity, "padded armour", Item_Type::chest, Armor_Type::cloth, Graphics::armorSpriteSheet, Graphics::armorSpriteSheet, itemStats); }
 		Create_Item(item_uID, position, itemName, itemStats, direction);
 	}
+
+    void Create_Item1(entt::entity &item, Component::Position& position, const std::string &name, Item_Stats &itemStats) {
+        float scale = 0.7f;
+        World::zone.emplace<Component::Scale>(item, scale);
+        World::zone.emplace<Component::Action>(item, Component::dead);
+        World::zone.emplace<Name>(item, name);
+        World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
+        auto &stats = World::zone.emplace<Item_Stats>(item);
+        stats = itemStats;
+        auto& offset = World::zone.emplace<Component::Sprite_Offset>(item, 90.0f, 130.0f);
+        auto& position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
+    }
+
+    entt::entity Create_And_Equip_Weapon(Component::Position& position) {
+        Rarity rarity = Generate_Item_Rarity();
+        Item_Stats itemStats = Generate_Item_Stats(rarity);
+        auto item_uID = World::zone.create();
+        std::string itemName = Create_Weapon(item_uID, rarity);
+        Create_Item1(item_uID, position, itemName, itemStats);
+        return item_uID;
+    }
+
+    entt::entity Create_And_Equip_Armor(Component::Position& position, Item_Component::Item_Type itemType) {
+        Rarity rarity = Generate_Item_Rarity();
+        Item_Stats itemStats = Generate_Item_Stats(rarity);
+        auto item_uID = World::zone.create();
+        std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType);
+        Create_Item1(item_uID, position, itemName, itemStats);
+        return item_uID;
+    }
 
 	//mouse click
 	//walk over to item

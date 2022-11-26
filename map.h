@@ -11,6 +11,7 @@
 #include "collision.h"
 #include "sprite_sheets.h"
 #include "world.h"
+#include "item_components.h"
 
 //cell 100x100 pixels (change pixels to a meters??)
 //map 100 cells x 100 cells
@@ -179,6 +180,14 @@ namespace Maps {
         zone.emplace<Component::handle>(entity, name);
         zone.emplace<Component::Mass>(entity, data.mass);
         zone.emplace<Component::Alive>(entity, true);
+
+
+
+        //if RTP_pieces type
+        if (data.unit_type == "RTP_male" || data.unit_type == "RTP_female") {
+            auto equipment = zone.emplace<Item_Component::Equipment>(entity);
+        }
+
         if (packerframeData) {
            auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
            sprite.sheetData = packerframeData;

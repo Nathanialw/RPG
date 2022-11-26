@@ -322,6 +322,7 @@ namespace Component {
         Frame finalFrame = normalFrame;
     };
 
+
     struct t_Stored_Frame_Data {
         uint64_t frameTime = 0;
         int frameIndex = 0;

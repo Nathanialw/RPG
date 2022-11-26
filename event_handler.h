@@ -104,7 +104,7 @@ namespace Event_Handler {
 				//check if cursor is in the bag UI
 				if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
                     UI::Bag_UI::Interact_With_Bag(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera);
-                    if (UI::Equipment_UI::Interact_With_Equipment(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera) == true) {
+                    if (UI::Equipment_UI::Interact_With_Equipment(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera, player_ID) == true) {
                         //updates character stats
                         zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
 					}
@@ -120,7 +120,7 @@ namespace Event_Handler {
 			else if (event.button.button == SDL_BUTTON_RIGHT) {
 				if (UI::bToggleCharacterUI) {
 					if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-						if (UI::Swap_Item_In_Bag_For_Equipped(zone, Mouse::screenMousePoint, camera)) {
+						if (UI::Swap_Item_In_Bag_For_Equipped(zone, Mouse::screenMousePoint, camera, player_ID)) {
 							zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
 							return;
 						}

@@ -18,7 +18,25 @@ namespace Item_Component {
 		shield
 	};
 
-	enum class Armor_Type {
+    entt::entity emptyEquipSlot;
+
+    struct Equipment {
+        std::map<Item_Type, entt::entity>equippedItems{
+                { Item_Type::helm, emptyEquipSlot },
+                { Item_Type::neck, emptyEquipSlot },
+                { Item_Type::shoulders, emptyEquipSlot },
+                { Item_Type::chest, emptyEquipSlot },
+                { Item_Type::weapon, emptyEquipSlot },
+                { Item_Type::gloves, emptyEquipSlot },
+                { Item_Type::belt, emptyEquipSlot },
+                { Item_Type::legs, emptyEquipSlot },
+                { Item_Type::boots, emptyEquipSlot },
+                { Item_Type::shield, emptyEquipSlot }
+        };
+    };
+
+
+    enum class Armor_Type {
 		cloth,
 		padded,
 		leather,

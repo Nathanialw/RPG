@@ -61,7 +61,8 @@ namespace Tooltip {
 
 		if (UI::bToggleCharacterUI == true) {
 			if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-				entt::entity item = UI::Equipment_UI::emptyEquipSlot;
+
+				entt::entity item = Item_Component::emptyEquipSlot;
 				if (UI::Bag_UI::Is_Cursor_Inside_Bag_Area(zone, camera, mousePoint) == true) { //if mouse is over the bag area
 					int mouseoverSlot = UI::Bag_UI::Get_Bag_Slot(zone, mousePoint, camera);
 					item = UI::Bag_UI::UI_bagSlots[mouseoverSlot];
@@ -69,7 +70,7 @@ namespace Tooltip {
 				else if (UI::Equipment_UI::Mouse_Inside_Equipment_Screen(zone, camera, mousePoint)) { // if mouse is over the equip area
 					item = UI::Equipment_UI::Get_Equip_Slot(zone, camera);
 				}
-				if (item != UI::Bag_UI::emptyBagSlot && item != UI::Equipment_UI::emptyEquipSlot) {
+				if (item != UI::Bag_UI::emptyBagSlot && item != Item_Component::emptyEquipSlot) {
 
 					auto& name = zone.get<Item_Component::Name>(item).name;
 					auto& stats = zone.get<Item_Component::Item_Stats>(item).stats;
