@@ -6,15 +6,15 @@
 namespace Item_Component {
 
 	enum class Item_Type {
-		helm,
 		neck,
 		shoulders,
-		chest,
-		weapon,
 		gloves,
 		belt,
-		legs,
 		boots,
+		legs,
+		chest,
+		helm,
+		weapon,
 		shield
 	};
 
@@ -40,8 +40,8 @@ namespace Item_Component {
     };
 
 	struct Ground_Item {
-		SDL_FRect box;
-        SDL_FRect ground_name;
+		SDL_FRect box = {};
+        SDL_FRect ground_name = {};
 	};
 
 	struct Name {

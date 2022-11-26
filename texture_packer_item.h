@@ -221,7 +221,6 @@ namespace Texture_Packer_Item {
             return {NULL, ""};
         }
         const char* path = dbData.xml_path.c_str();
-        Utilities::Log(path);
         if (path == NULL){
             Utilities::Log("TexturePacker_Import_Item() failed, empty xml_path");
             return {NULL, ""};

@@ -83,19 +83,23 @@ namespace Unit_Status {
 	}
 
 	void isDead(entt::registry& zone) {
-        auto view = zone.view<Component::Sprite_Sheet_Info, Component::Action, Component::Health, Component::Position, Component::Radius, Component::Sprite_Offset, Component::Body, Component::In_Object_Tree>(entt::exclude<Component::Spell>);
+        auto view = zone.view<Component::Sprite_Sheet_Info, Component::Action, Component::Health, Component::Position, Component::Radius, Component::Sprite_Offset, Component::Body, Component::In_Object_Tree, Component::Direction>(entt::exclude<Component::Spell>);
         for (auto entity: view) {
             auto &health = view.get<Component::Health>(entity);
             if (health.currentHealth <= 0) {
                 view.get<Component::Action>(entity).state = Component::dead;
-                view.get<Component::Sprite_Sheet_Info>(entity).currentFrame = 0;
+                auto &sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+                sheetData.currentFrame = 0;
 //                view.get<Component::Sprite_Sheet_Info>(entity).finalFrame = Component::normalFrame;
                 auto &position = view.get<Component::Position>(entity);
                 auto &radius = view.get<Component::Radius>(entity).fRadius;
                 auto &offset = view.get<Component::Sprite_Offset>(entity);
                 auto &body = view.get<Component::Body>(entity).body;
                 auto &inTree = view.get<Component::In_Object_Tree>(entity).inTree;
-                Items::Create_And_Drop_Item(position);
+                auto &direction = view.get<Component::Direction>(entity);
+
+                //drop random item on death
+                Items::Create_And_Drop_Item(position, direction);
                 ///sets the sprite to render so that it is always rendered behind living sprites
                 position.x -= offset.x;
                 position.y -= offset.y;
@@ -117,6 +121,8 @@ namespace Unit_Status {
                 zone.remove<Component::Sight_Range>(entity);
                 zone.remove<Component::Health>(entity);
                 zone.remove<Component::Radius>(entity);
+
+
                 if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
                     auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);
                     auto &soldier_list = zone.get<Test::Soldiers_Assigned_List>(soldier.iUnit_Assigned_To);

@@ -235,18 +235,6 @@ namespace Maps {
         if (map.load("maps/untitled3.tmx")){
             for (auto &spriteSheet : map.getTilesets()) {
                 std::string name = spriteSheet.getName();
-
-                //need to feed in the name of the ground tileset for the map so it only loads what we need, can't figure out how to get the tileset from a tile in the tile layer
-//                if (name == "grassland_tiles_x2") {
-//                    std::string filePathString = spriteSheet.getImagePath();
-//                    filePathString.erase(0, 5);
-//                    const char *filePathChar = filePathString.c_str();
-//                    Graphics::pTexture[name] = Graphics::createTexture(filePathChar);
-//                    std::cout << "loaded: " << name << std::endl;
-//                }
-//                else {
-//                    std::cout << "not loaded: " << name << std::endl;
-//                }
             }
             std::cout << "Loaded Map version: " << map.getVersion().upper << ", " << map.getVersion().lower << std::endl;
 
@@ -298,60 +286,6 @@ namespace Maps {
                     }
                 }
                 else if (layer->getName() == "widgets") {
-//                    for (auto &j : layer->getLayerAs<tmx::TileLayer>().getTiles()) {
-//                        j.ID
-//                        auto tileobject = layer->getLayerAs<tmx::Tileset>().getTile(j.ID).;
-////                        for (auto tileobject : j.objectGroup.getObjects()) {
-//
-//
-//                            auto &position = tileobject.getPosition();
-//                            std::string name = tileobject.getName();
-//                            std::string entity_class = tileobject.getClass();
-//                            std::string key = tileobject.getTilesetName();
-//
-//                            auto &ff = map.getTemplateTilesets();
-//
-//                            //gets the collision box/boxes for a building
-//                            std::vector<tmx::Object> collision_boxes;
-//                            Collision::aabb aabb;
-//                            std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
-//                            for (auto s: ff.at(key).getTiles()) {
-//                                collision_boxes = s.objectGroup.getObjects();
-//                                float sizeX = s.imageSize.x;
-//                                float sizeY = s.imageSize.y;
-//
-//                                for (auto rects: collision_boxes) {
-//                                    aabb.hx = rects.getAABB().width / 2.0f;
-//                                    aabb.hy = rects.getAABB().height / 2.0f;
-//                                    if (rects.getPoints().size() > 0) {
-//                                        float x = rects.getAABB().left;
-//                                        float y = rects.getAABB().top;
-//                                        if (rects.getPoints().size() > 0) {
-//                                            std::vector<tmx::Vector2<float>> pointVec = rects.getPoints();
-//                                            for (int i = 0; i < pointVec.size(); i++) {
-//                                                pointVec[i].x = pointVec[i].x - ((sizeX / 2.0f) - x);
-//                                                pointVec[i].y = pointVec[i].y - (sizeY - y);
-//                                            }
-//                                            pointVecs.emplace_back(pointVec);
-//                                        }
-//                                    }
-//                                }
-//
-//                                // translates isometric position to world position
-//                                float tileWidth = 128;
-//                                float tileHeight = 64;
-//                                float numTilesX = position.x / tileWidth;
-//                                float numTilesY = position.y / tileHeight;
-//                                float x = 64.0f + position.x - (numTilesY * tileWidth / 2.0f);
-//                                float y = (numTilesX * tileHeight) + (position.y / 2.0f);
-//
-//                                auto tile_object = World::zone.create();
-//                                auto c_position = World::zone.emplace<Component::Position>(tile_object, x, y);
-//
-//                                Set_Collision_Box(World::zone, tile_object, entity_class, c_position, aabb, pointVecs);
-////                            }
-//                        }
-//                    }
                 }
                 else if (layer->getName() == "taller_widgets1") {
 

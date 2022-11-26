@@ -133,17 +133,38 @@ namespace Rendering {
         return fScaledImage;
     }
 
-    bool Death_Sequence (Component::Action& action, int &currentFrame, int &numFrames) {
+    bool Death_Sequence (Component::Direction &direction, entt::entity entity, Component::Scale &scale, Component::Sprite_Sheet_Info &sheetData, Component::Action& action, int &currentFrame, int &numFrames) {
         if (action.state == Component::dead) {
             if (currentFrame < numFrames - 1) {
                 currentFrame++;
+                // and if it is an item
+                if (currentFrame == numFrames - 1) {
+                    if (sheetData.sheetData) {
+                        auto type = World::zone.get<Component::Entity_Type>(entity);
+                        if (type == Component::Entity_Type::item) {
+                            auto offset = World::zone.get<Component::Sprite_Offset>(entity);
+                            auto &position = World::zone.get<Component::Position>(entity);
+
+                            SDL_Rect clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].clip;
+                            SDL_FRect renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
+                            renderRect.x = ((sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].x_offset) * scale.scale) + position.x - offset.x;
+                            renderRect.y = ((sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].y_offset) * scale.scale) + position.y - offset.y;
+
+                            World::zone.emplace<Component::Interaction_Rect>(entity, (renderRect.w / 2.0f), renderRect.h);
+                            World::zone.emplace_or_replace<Ground_Item>(entity, Utilities::Get_FRect_From_Point_Radius(renderRect.w, position.x, position.y));
+                            //needs radius to be able to be picked up
+                            World::zone.emplace<Component::Radius>(entity, offset.x);
+                        }
+                    }
+
+                }
             }
             return true;
         }
         return false;
     }
 
-    void Frame_Increment(Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
+    void Frame_Increment(entt::entity &entity, Component::Scale &scale, Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
         sheetData.frameTime += Timer::timeStep;
         if (sheetData.finalFrame == Component::finalFrame) {
             sheetData.finalFrame = Component::firstFrame;
@@ -166,20 +187,14 @@ namespace Rendering {
             sheetData.frameTime = 0;
             int &currentFrame = sheetData.currentFrame;
             sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
-            if (sheetData.sheetDataWeapon) {
-                sheetData.weaponFrameIndex = sheetData.sheetDataWeapon->at(sheetData.weapon_name).actionFrameData[action.state].startFrame + (sheetData.sheetDataWeapon->at(sheetData.weapon_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
-            }
-            if (sheetData.sheetDataHelm) {
-                sheetData.helmFrameIndex = sheetData.sheetDataHelm->at(sheetData.helm_name).actionFrameData[action.state].startFrame + (sheetData.sheetDataHelm->at(sheetData.helm_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
-            }
-            if (sheetData.sheetDataChestpiece) {
-                sheetData.chestpieceFrameIndex = sheetData.sheetDataChestpiece->at(sheetData.chest_name).actionFrameData[action.state].startFrame + (sheetData.sheetDataChestpiece->at(sheetData.chest_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
-            }
-            if (sheetData.sheetDataLegs) {
-                sheetData.legplateFrameIndex = sheetData.sheetDataLegs->at(sheetData.legs_name).actionFrameData[action.state].startFrame + (sheetData.sheetDataLegs->at(sheetData.legs_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
+
+            for (auto &item : sheetData.equipmentSheets) {
+                if (item.ItemSheetData) {
+                    item.FrameIndex = item.ItemSheetData->at(item.name).actionFrameData[action.state].startFrame + (item.ItemSheetData->at(item.name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
+                }
             }
 
-            if (Death_Sequence(action, sheetData.currentFrame, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
+            if (Death_Sequence(direction, entity, scale, sheetData, action, sheetData.currentFrame, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
                 return;
             }
 
@@ -237,7 +252,7 @@ namespace Rendering {
         }
     }
 
-    void Update_Frame(Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
+    void Update_Frame(entt::entity entity, Component::Scale scale, Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
 
         sheetData.frameTime += Timer::timeStep;
         if (sheetData.finalFrame == Component::finalFrame) {
@@ -260,7 +275,7 @@ namespace Rendering {
                     sheetData.finalFrame = Component::normalFrame;
                 }
 
-                if (Death_Sequence(action, sheetData.currentFrame, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
+                if (Death_Sequence(direction, entity, scale, sheetData, action, sheetData.currentFrame, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
                     return;
                 }
                 ///render first frame before increment
@@ -293,45 +308,15 @@ namespace Rendering {
         }
     }
 
-    SDL_FRect Position_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
-        clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].clip;
+    SDL_FRect Position_For_Render(std::unordered_map<std::string, Component::Sheet_Data>*sheetData, std::string &name, int &frameIndex, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
+        clipRect = sheetData->at(name).frameList[frameIndex].clip;
         renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
-        renderRect.x = ((sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
-        renderRect.y = ((sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
+        renderRect.x = sheetData->at(name).frameList[frameIndex].x_offset * scale.scale - offset.x + position.x - camera.screen.x + 20.0f;
+        renderRect.y = sheetData->at(name).frameList[frameIndex].y_offset * scale.scale - offset.y + position.y - camera.screen.y + 20.0f;
         return renderRect;
     }
 
-    SDL_FRect Position_Weapon_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
-        clipRect = sheetData.sheetDataWeapon->at(sheetData.weapon_name).frameList[sheetData.weaponFrameIndex ].clip;
-        renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
-        renderRect.x = ((sheetData.sheetDataWeapon->at(sheetData.weapon_name).frameList[sheetData.weaponFrameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
-        renderRect.y = ((sheetData.sheetDataWeapon->at(sheetData.weapon_name).frameList[sheetData.weaponFrameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
-        return renderRect;
-    }
 
-    SDL_FRect Position_Helm_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
-        clipRect = sheetData.sheetDataHelm->at(sheetData.helm_name).frameList[sheetData.helmFrameIndex ].clip;
-        renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
-        renderRect.x = ((sheetData.sheetDataHelm->at(sheetData.helm_name).frameList[sheetData.helmFrameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
-        renderRect.y = ((sheetData.sheetDataHelm->at(sheetData.helm_name).frameList[sheetData.helmFrameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
-        return renderRect;
-    }
-
-    SDL_FRect Position_Chest_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
-        clipRect = sheetData.sheetDataChestpiece->at(sheetData.chest_name).frameList[sheetData.chestpieceFrameIndex ].clip;
-        renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
-        renderRect.x = ((sheetData.sheetDataChestpiece->at(sheetData.chest_name).frameList[sheetData.chestpieceFrameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
-        renderRect.y = ((sheetData.sheetDataChestpiece->at(sheetData.chest_name).frameList[sheetData.chestpieceFrameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
-        return renderRect;
-    }
-
-    SDL_FRect Position_Legs_For_Render(Component::Sprite_Sheet_Info &sheetData, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
-        clipRect = sheetData.sheetDataLegs->at(sheetData.legs_name).frameList[sheetData.legplateFrameIndex ].clip;
-        renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
-        renderRect.x = ((sheetData.sheetDataLegs->at(sheetData.legs_name).frameList[sheetData.legplateFrameIndex].x_offset) * scale.scale) - offset.x + position.x - camera.screen.x + 20.0f;
-        renderRect.y = ((sheetData.sheetDataLegs->at(sheetData.legs_name).frameList[sheetData.legplateFrameIndex].y_offset) * scale.scale) - offset.y + position.y - camera.screen.y + 20.0f;
-        return renderRect;
-    }
 
     void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
 
@@ -345,7 +330,7 @@ namespace Rendering {
 
             if (sheetData.flareSpritesheet) {
                     /// get the next frame
-                Update_Frame(sheetData, direction, action);
+                Update_Frame(entity, scale, sheetData, direction, action);
                     /// get/update the clip rect
                 Get_Spritesheet_Type(clipRect, sheetData, direction, action);
                     /// set the render rect size and position
@@ -364,74 +349,20 @@ namespace Rendering {
             }
 
             else if (sheetData.sheetData) {
-                Frame_Increment(sheetData, action, direction);
-                renderRect = Position_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
+                Frame_Increment(entity, scale, sheetData, action, direction);
+                renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect);
                 texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
                 SDL_SetTextureAlphaMod(texture, renderable.alpha);
                 Graphics::Render_FRect(texture, &clipRect, &renderRect);
 
-//                Frame_Increment(sheetData, action, direction);
-                if (sheetData.sheetDataLegs) {
-                    renderRect = Position_Legs_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
-                    texture = sheetData.sheetDataLegs->at(sheetData.legs_name).texture;
-                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
-                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
+                for (auto item : sheetData.equipmentSheets) {
+                    if (item.ItemSheetData) {
+                        renderRect = Position_For_Render(item.ItemSheetData, item.name, item.FrameIndex, position, camera, scale, spriteOffset, clipRect, renderRect);
+                        texture = item.ItemSheetData->at(item.name).texture;
+                        SDL_SetTextureAlphaMod(texture, renderable.alpha);
+                        Graphics::Render_FRect(texture, &clipRect, &renderRect);
+                    }
                 }
-
-                if (sheetData.sheetDataChestpiece) {
-                    renderRect = Position_Chest_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
-                    texture = sheetData.sheetDataChestpiece->at(sheetData.chest_name).texture;
-                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
-                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
-                }
-
-                if (sheetData.sheetDataHelm) {
-                    renderRect = Position_Helm_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
-                    texture = sheetData.sheetDataHelm->at(sheetData.helm_name).texture;
-                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
-                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
-                }
-
-                if (sheetData.sheetDataWeapon) {
-                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
-                    texture = sheetData.sheetDataWeapon->at(sheetData.weapon_name).texture;
-                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
-                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
-                }
-//                if (sheetData.sheetDataHair) {
-//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
-//                    texture = sheetData.sheetDataHair->at(sheetData.hair_name).texture;
-//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
-//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
-//                }
-//
-//                if (sheetData.sheetDataBack) {
-//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
-//                    texture = sheetData.sheetDataBack->at(sheetData.back_name).texture;
-//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
-//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
-//                }
-//
-//                if (sheetData.sheetDataBeard) {
-//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
-//                    texture = sheetData.sheetDataBeard->at(sheetData.beard_name).texture;
-//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
-//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
-//                }
-//
-//                if (sheetData.sheetDataBodysuit) {
-//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
-//                    texture = sheetData.sheetDataBodysuit->at(sheetData.bodysuit_name).texture;
-//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
-//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
-//                }
-//
-//                if (sheetData.sheetDataOffhand) {
-//                    renderRect = Position_Weapon_For_Render(sheetData, position, camera, scale, spriteOffset, clipRect, renderRect);
-//                    texture = sheetData.sheetDataOffhand->at(sheetData.offhand_name).texture;
-//                    SDL_SetTextureAlphaMod(texture, renderable.alpha);
-//                    Graphics::Render_FRect(texture, &clipRect, &renderRect);
-//                }
             }
 
             else {
@@ -751,8 +682,6 @@ namespace Rendering {
 	void Rendering(entt::registry& zone) {
 		Update_Camera_And_Mouse(zone);
 		SDL_FPoint mouse = { Mouse::iXMouse, Mouse::iYMouse };
-		UI::Move_To_Item_Routine(zone, Mouse::itemCurrentlyHeld);
-		Player_Control::Move_To_Atack_Routine(zone);
 		Character_Stats::Update_Unit_Stats(zone);
 		auto camera_view = zone.view<Component::Camera>();
 		for (auto entity : camera_view) {
@@ -766,7 +695,7 @@ namespace Rendering {
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
 			Dynamic_Quad_Tree::Remove_From_Tree(zone);
             // draw rects
-			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
+//			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
 //            RenderLine(zone, camera);
             //
 			Items::Show_Ground_Items(zone, camera);

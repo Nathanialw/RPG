@@ -43,66 +43,27 @@ namespace Character_Stats {
 			}
 
 			//add equipment stats to character stats
+
+            //iterate through each equiq slot
 			for (auto &item : UI::Equipment_UI::equippedItems) {
-				if (item.second != UI::Equipment_UI::emptyEquipSlot) {
-					auto& stats = zone.get<Item_Stats>(item.second).stats;
-					for (auto& stat : stats) {
-						Items::statData[stat.first] += stat.second;
-					}
-                    /// add weapon sprite data to character rendering component
-                    /// remove if nothing equipped
-                    if (item.first == Item_Component::Item_Type::weapon) {
-                        auto &weaponSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
-                        if (weaponSheet.sheetDataWeapon) {
-                            sheetData.sheetDataWeapon = weaponSheet.sheetDataWeapon;
-                            sheetData.weapon_name = weaponSheet.weapon_name;
-                        }
+
+                //check if slot is occupied, add stats if it is
+                if (item.second != UI::Equipment_UI::emptyEquipSlot) {
+                    auto &stats = zone.get<Item_Stats>(item.second).stats;
+                    for (auto &stat: stats) {
+                        Items::statData[stat.first] += stat.second;
                     }
-                    if (item.first == Item_Component::Item_Type::legs) {
-                        auto &legsSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
-                        if (legsSheet.sheetDataLegs) {
-                            sheetData.sheetDataLegs = legsSheet.sheetDataLegs;
-                            sheetData.legs_name = legsSheet.legs_name;
-                        }
-                    }
-                    if (item.first == Item_Component::Item_Type::chest) {
-                        auto &chestSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
-                        if (chestSheet.sheetDataChestpiece) {
-                            sheetData.sheetDataChestpiece = chestSheet.sheetDataChestpiece;
-                            sheetData.chest_name = chestSheet.chest_name;
-                        }
-                    }
-                    if (item.first == Item_Component::Item_Type::helm) {
-                        auto &helmSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
-                        if (helmSheet.sheetDataHelm) {
-                            sheetData.sheetDataHelm = helmSheet.sheetDataHelm;
-                            sheetData.helm_name = helmSheet.helm_name;
-                        }
-                    }
-				}
-                if (item.first == Item_Component::Item_Type::weapon) {
-                    if (item.second == UI::Equipment_UI::emptyEquipSlot) {
-                        sheetData.sheetDataWeapon = NULL;
-                        sheetData.weapon_name = "unarmed";
+
+                    //get the item at the item type index
+                    auto &weaponSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
+                    if (weaponSheet.sheetData) {
+                        sheetData.equipmentSheets[(int)item.first].ItemSheetData = weaponSheet.sheetData;
+                        sheetData.equipmentSheets[(int)item.first].name = weaponSheet.sheet_name;
                     }
                 }
-                if (item.first == Item_Component::Item_Type::legs) {
-                    if (item.second == UI::Equipment_UI::emptyEquipSlot) {
-                        sheetData.sheetDataLegs = NULL;
-                        sheetData.legs_name = "unarmed";
-                    }
-                }
-                if (item.first == Item_Component::Item_Type::chest) {
-                    if (item.second == UI::Equipment_UI::emptyEquipSlot) {
-                        sheetData.sheetDataChestpiece = NULL;
-                        sheetData.chest_name = "unarmed";
-                    }
-                }
-                if (item.first == Item_Component::Item_Type::helm) {
-                    if (item.second == UI::Equipment_UI::emptyEquipSlot) {
-                        sheetData.sheetDataHelm = NULL;
-                        sheetData.helm_name = "unarmed";
-                    }
+                else if (item.second == UI::Equipment_UI::emptyEquipSlot) {
+                    sheetData.equipmentSheets[(int)item.first].ItemSheetData = NULL;
+                    sheetData.equipmentSheets[(int)item.first].name = "empty";
                 }
             }
 

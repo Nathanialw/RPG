@@ -194,16 +194,9 @@ namespace Texture_Packer {
             Utilities::Log("TexturePacker_Import() failed, empty xml_path");
             return NULL;
         }
-        Utilities::Log(path);
         spriteSheetData.LoadFile(path);
         tinyxml2::XMLElement *pSpriteElement;
-        if (1) {
-            pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
-        }
-        else {
-            std::cout << "load from xml failed: " << path << std::endl;
-            return NULL;
-        };
+        pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
 
         Component::Sprite_Sheet_Data frame = {};
         Component::Sheet_Data spritesheet;

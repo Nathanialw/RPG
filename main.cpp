@@ -41,6 +41,9 @@ int main(int argc, char* argv[]) {
 
 		Event_Handler::Update_User_Input(World::zone);
 
+        UI::Move_To_Item_Routine(World::zone, Mouse::itemCurrentlyHeld);
+        Player_Control::Move_To_Atack_Routine(World::zone);
+
 		//std::cout << "Player_Input = Good" << std::endl;
 		AI::Update_AI(World::zone);
 
