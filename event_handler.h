@@ -10,7 +10,7 @@
 #include "weapons.h"
 #include "ai_control.h"
 #include "input_control.h"
-
+#include "skills.h"
 
 namespace Event_Handler {
 
@@ -75,7 +75,7 @@ namespace Event_Handler {
 					case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
 					case SDLK_6: Interface::gridDepth++; break;
 					case SDLK_7: Interface::gridDepth--; break;
-					case SDLK_8: ; break;
+					case SDLK_8: Skills::Feign_Death(zone, entity); break;
 					case SDLK_9: AI::Turn_On();  break;
 					case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
                     case SDLK_ESCAPE: Menu::Toggle(); break;

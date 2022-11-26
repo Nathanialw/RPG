@@ -353,7 +353,7 @@ namespace Items {
     void Create_Item1(entt::entity &item, Component::Position& position, const std::string &name, Item_Stats &itemStats) {
         float scale = 0.7f;
         World::zone.emplace<Component::Scale>(item, scale);
-        World::zone.emplace<Component::Action>(item, Component::dead);
+        World::zone.emplace<Component::Action>(item, Component::isStatic);
         World::zone.emplace<Name>(item, name);
         World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
         auto &stats = World::zone.emplace<Item_Stats>(item);

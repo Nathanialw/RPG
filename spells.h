@@ -17,7 +17,6 @@ namespace Spells {
 		World::zone.emplace<Component::Moving>(entity);
 		World::zone.emplace<Component::Linear_Move>(entity, x, y);
 		World::zone.emplace<Component::Spell_Range>(entity, sourceX, sourceY, 0.0f);
-		World::zone.remove<Component::Casted>(entity);
 	}
 
 	void Spell_Stack_Spells(float& x, float& y) { //sends spell to where the mouse is
@@ -82,7 +81,6 @@ namespace Spells {
 		    ///default data
 		World::zone.emplace<Component::Spell>(entity);
 		World::zone.emplace<Component::Interaction_Rect>(entity, (data.radius * 1.1f), ((data.radius * 1.1f) * 2.0f));
-		World::zone.emplace<Component::Casted>(entity);
 		World::zone.emplace<Component::Renderable>(entity);
 		World::zone.emplace<Component::Direction>(entity, direction); //match Direction of the caster
 		World::zone.emplace<Component::Alive>(entity, true);
@@ -99,34 +97,48 @@ namespace Spells {
 		create_spell(caster_ID, fireball, pos, direction, spellname, targetX, targetY);
 	}
 
-	void cast_fireball() {
-		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Direction, Component::Action, Component::Position, Component::Cast, Component::Spell_Name, Component::Velocity>();
+	void cast_fireball(const char *name) {
+		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Direction, Component::Action, Component::Position, Component::Casting, Component::Velocity>();
 		for (auto entity : view) {
-			auto& action = view.get<Component::Action>(entity);
-			auto& target = view.get<Component::Cast>(entity);
-			auto& direction = view.get<Component::Direction>(entity);
-			auto& position = view.get<Component::Position>(entity);
-			auto& angle = view.get<Component::Velocity>(entity).angle;
-			auto& name = view.get<Component::Spell_Name>(entity).spell;
-			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
 
-            action.state = Component::cast;
-            sheetData.finalFrame = Component::normalFrame;
-            sheetData.frameTime = 0;
-			sheetData.currentFrame = 0;
-			World::zone.remove<Component::Moving>(entity);
+            auto& casting = view.get<Component::Casting>(entity);
+            auto &position = view.get<Component::Position>(entity);
+            auto &velocity = view.get<Component::Velocity>(entity);
+            auto &direction = view.get<Component::Direction>(entity);
 
-			    ///look at target
-			direction = Movement::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
-			    ///cast Fireball
-			create_fireball(entity, position.x, position.y, direction, name, target.targetX, target.targetY);
-			    ///set into casting mode
-			World::zone.remove<Component::Cast>(entity);
+            ///look at target but only once
+            if (casting.counter >= casting.castTime) {
+                direction = Movement::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle);
+            }
+//            Utilities::Log((int)direction);
+            casting.counter -= Timer::timeStep;
+            if (casting.counter <= 0) {
+                auto &target = World::zone.emplace_or_replace<Component::Cast>(entity, casting.x, casting.y);
+			    auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+                auto &action = view.get<Component::Action>(entity);
+
+                ///set into casting mode
+                if (action.state == Component::casting) {
+                    sheetData.finalFrame = Component::normalFrame;
+                    sheetData.frameTime = 0;
+                    sheetData.currentFrame = 0;
+                }
+                action.state = Component::cast;
+
+                ///cast Fireball
+                if (sheetData.finalFrame == Component::finalFrame) {
+                    create_fireball(entity, position.x, position.y, direction, name, target.targetX, target.targetY);
+                    World::zone.remove<Component::Casting>(entity);
+                }
+            }
+            else if (World::zone.any_of<Component::Moving>(entity)) {
+                World::zone.remove<Component::Casting>(entity);
+            }
 		}
 	}
 
 	void add_spells_to_scene() {
-		cast_fireball();
+		cast_fireball("fireball");
 	}
 
 	void Create_Explosion(float& x, float y) { //creates the explosion for fireballs
@@ -179,12 +191,12 @@ namespace Spells {
 	}
 	
 	void Casting_Updater() {
-		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Casting, Component::Action>();
+		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Cast, Component::Action>();
 		for (auto entity : view) {
 			auto& action = view.get<Component::Action>(entity);
 			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
             if (sheetData.finalFrame == Component::finalFrame) {
-                World::zone.remove<Component::Casting>(entity);
+                World::zone.remove<Component::Cast>(entity);
             }
 		}
 	}

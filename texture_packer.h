@@ -56,20 +56,20 @@ namespace Texture_Packer {
     }
 
     void Calculate_Start_Frame (std::unordered_map<Component::Action_State, Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action, int &frameIndex) {
-            /// I know this is terrible but it does work.
         if (actionFrameData[action].startFrame == 9999) {
             actionFrameData[action].startFrame = frameIndex;
         }
     }
 
     void Calculate_Num_Frames (std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action) {
-        if (frame.back() != '0') {
+        if (frame.back() != '1') {
             return;
         }
         else {
             actionFrameData[action].NumFrames++;
         }
     }
+
     int i = 75;
 
     void Get_Frame_Action_Data (std::string unitType, std::string &name, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
@@ -87,26 +87,32 @@ namespace Texture_Packer {
         std::string checkAction = frameCopy.erase(frameCopy.length()-6);
         Component::Action_State action;
             /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
-
-        if (unitType == "RTP_female" || unitType ==  "RTP_male") {
-            if (checkAction == "2-H Attack 1") {
+        if (unitType == "RTP_female" || unitType == "RTP_male") {
+            if (checkAction == "1-H Attack 3") {
                 action = Component::Action_State::attack;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "2-H Idle") {
                 action = Component::Action_State::idle;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "2-H Walk") {
+            } else if (checkAction == "2-H Run") {
                 action = Component::Action_State::walk;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "Get Hit 1") {
+            } else if (checkAction == "Get Hit 2") {
                 action = Component::Action_State::struck;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Dead-Down Backward") {
                 action = Component::Action_State::dead;
                 actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Get Hit 1") {
+                action = Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = 150;
+                actionFrameData[action].reverses = 1;
             } else if (checkAction == "Casting") {
                 action = Component::Action_State::cast;
                 actionFrameData[action].frameSpeed = i;
+            }
+            else {
+                return;
             }
         }
         else {
@@ -167,6 +173,9 @@ namespace Texture_Packer {
             } else if (checkAction == "ko") {
                 action = Component::Action_State::dead;
                 actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Cast Idle") {
+                action = Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Casting") {
                 action = Component::Action_State::cast;
                 actionFrameData[action].frameSpeed = i;
@@ -174,8 +183,13 @@ namespace Texture_Packer {
                 return;
             }
         }
-       Calculate_Start_Frame(actionFrameData, action, frameIndex);
-       Calculate_Num_Frames(frame, actionFrameData, action);
+        //only run when the number changes
+
+        Calculate_Start_Frame(actionFrameData, action, frameIndex);
+
+//        Utilities::Log("----");
+//        Utilities::Log(frame);
+        Calculate_Num_Frames(frame, actionFrameData, action);
     }
 
     std::unordered_map<std::string, Component::Sheet_Data>* TexturePacker_Import(std::string &name, std::string &xml_path, SDL_Texture* texture) {

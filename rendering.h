@@ -93,6 +93,8 @@ namespace Rendering {
             case Component::Direction::SW: return 4;
             case Component::Direction::SE: return 6;
         }
+        Utilities::Log("PVG_Direction_Enum passthrough error");
+        return 0;
     }
 
     void Update_Frame_PVG(SDL_Rect &clipRect, Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
@@ -174,7 +176,7 @@ namespace Rendering {
                 if (action.state == Component::dead) {
 
                 }
-                else if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::cast) {
+                else if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::cast && action.state != Component::casting) {
                     action.state = Component::idle;
                 }
                 else if (action.state == Component::struck || action.state == Component::attack || action.state == Component::cast) {
@@ -363,6 +365,8 @@ namespace Rendering {
                         Graphics::Render_FRect(texture, &clipRect, &renderRect);
                     }
                 }
+//                std::cout << "currentFrame: " << sheetData.frameIndex<< ", start frame frame: " << sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(action.state).startFrame << ", num frames: " << sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(action.state).NumFrames << std::endl;
+//                std::cout << "direction: " << (int)direction << std::endl;
             }
 
             else {
@@ -371,54 +375,6 @@ namespace Rendering {
             }
 		}
 	}
-
-//    void t_Get_Next_Frame_Index(Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
-//        sheetData.frameTime += Timer::timeStep;
-//        if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
-//            ///reset frame count if over
-//            sheetData.frameTime = 0;
-//            int &currentFrame = sheetData.currentFrame;
-//            sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
-//            ///calculate reversing
-//            if (sheetData.reversing) {
-//                if (currentFrame <= 1) {
-//                    sheetData.reversing = 0;
-//                }
-//                currentFrame--;
-//            }
-//            else {
-//                currentFrame++;
-//            }
-//            if (currentFrame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
-//                currentFrame = 0;
-//                if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
-//                    sheetData.reversing = 1;
-//                }
-//                else {
-//                    sheetData.currentFrame = 0;
-//                    if (action.state != Component::walk) {
-//                        action.state = Component::idle;
-//                    }
-//                }
-//            }
-//        }
-//    }
-
-    /// Render without chasing pointers
-//    void t_Render(entt::registry& zone) {
-//        auto view1 = zone.view<Component::Renderable, Component::t_Texture, Component::t_Rendering_Data>();
-//        for (auto entity : view1) {
-//            auto [renderable, texture, renderingData] = view1.get(entity);
-//            SDL_SetTextureAlphaMod(texture.texture, renderable.alpha);
-//            Graphics::Render_FRect(texture.texture, &renderingData.clipRect, &renderingData.renderRect);
-//        }
-//    };
-
-//    void Render_Sequence (entt::registry& zone) {
-//        t_Get_Next_Frame_Index();
-//        t_Get_Next_Frame_Data();
-//        t_Render(zone);
-//    }
 
 	SDL_Rect Explosion_Frame_Update(Component::Sprite_Frames &frame) {
 		    /// reset X to zero and increment Y

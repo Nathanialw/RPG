@@ -172,6 +172,7 @@ namespace Component {
         idleCritical2,
         run2H,
         walk2H,
+        casting,
 		cast,
 		struck,
         block,
@@ -448,6 +449,10 @@ namespace Component {
 	};
 
 	struct Casting {
+        int castTime = 2000;
+        int counter = 2000;
+        float x = 0.0f;
+        float y = 0.0f;
 	};
 
 	struct Cast {

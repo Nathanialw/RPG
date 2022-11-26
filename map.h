@@ -284,7 +284,7 @@ namespace Maps {
                                         filePathString.erase(0, 5);
                                         const char *filePathChar = filePathString.c_str();
                                         Graphics::pTexture[name] = Graphics::createTexture(filePathChar);
-                                        std::cout << "loaded: " << name << std::endl;
+//                                        std::cout << "loaded: " << name << std::endl;
                                     }
                                     break;
                                 }
@@ -353,9 +353,6 @@ namespace Maps {
                                     pointVecs.emplace_back(pointVec);
                                 }
                             }
-                        }
-                        if (templateTilesets.at(tilesetName).getName() == "Medieval_Expansion_Ruins_13") {
-                            Utilities::Log("asd");
                         }
 
                         bool player = false;

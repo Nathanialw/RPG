@@ -341,7 +341,8 @@ namespace UI {
                 // to remove from rendering on mouse
                 zone.remove<Component::On_Mouse>(item_ID);
                 //allows insertion into quad Trees
-                zone.emplace_or_replace<Component::Interaction_Rect>(item_ID, offset.x, (offset.x * 2.0f));
+                World::zone.get<Component::Action>(item_ID).state = Component::dead;
+                World::zone.get<Component::Sprite_Sheet_Info>(item_ID).currentFrame = 0;
             }
         }
         isItemCurrentlyHeld = false;
@@ -353,6 +354,7 @@ namespace UI {
 			zone.remove<Ground_Item>(item_ID);
 			//removes for main rendering loop
 			zone.remove<Component::Direction>(item_ID);
+			zone.remove<Component::Radius>(item_ID);
 			//to render on mouse
 			zone.emplace<Component::On_Mouse>(item_ID);
 			Mouse::mouseItem = item_ID;
@@ -385,9 +387,8 @@ namespace UI {
 					zone.remove<Ground_Item>(itemData.item_ID);
 					//removes for main rendering loop
 					zone.remove<Component::Direction>(itemData.item_ID);
+					zone.remove<Component::Radius>(itemData.item_ID);
 					zone.emplace_or_replace<Component::Inventory>(itemData.item_ID);
-					//prevents we insertion to quad tree
-//                    zone.remove<Component::Interaction_Rect>(itemData.item_ID);
 					return true;
 				}
 			}
