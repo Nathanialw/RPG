@@ -23,7 +23,7 @@ namespace Texture_Packer {
         const unsigned char* type;
         sqlite3_stmt* stmt;
         char buf[400];
-        const char* jj = "SELECT xml_path, unit_type FROM unit_data WHERE name = ";
+        const char* jj = "SELECT xml_path, equip_type FROM unit_data WHERE name = ";
         strcpy(buf, jj);
         strcat(buf, sheet_name.c_str());
         sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -103,17 +103,20 @@ namespace Texture_Packer {
             } else if (checkAction == "Dead-Down Forward") {
                 action = Component::Action_State::dying;
                 actionFrameData[action].frameSpeed = 100;
-            } else if (checkAction == "Get Hit 1") {
+            } else if (checkAction == "Praying") {
                 action = Component::Action_State::casting;
                 actionFrameData[action].frameSpeed = 150;
-                actionFrameData[action].reverses = 1;
+                actionFrameData[action].reverses = 0;
             } else if (checkAction == "Casting") {
                 action = Component::Action_State::cast;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Down 2") {
                 action = Component::Action_State::dead;
                 actionFrameData[action].frameSpeed = i;
-            }
+            } else if (checkAction == "Talking 2") {
+                action = Component::Action_State::talk;
+                actionFrameData[action].frameSpeed = i;
+        }
             else {
                 return;
             }
@@ -143,6 +146,9 @@ namespace Texture_Packer {
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Dead") {
                 action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Hand Casual") {
+                action = Component::Action_State::talk;
                 actionFrameData[action].frameSpeed = i;
             }
             else {

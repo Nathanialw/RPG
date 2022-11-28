@@ -95,7 +95,7 @@ namespace SQLite_Item_Data {
 
         sqlite3_stmt *stmt;
         char buf[400];
-        const char *jj = "SELECT slot, type, unit_type FROM weapon_types";
+        const char *jj = "SELECT slot, type, equip_type FROM weapon_types";
         strcpy(buf, jj);
 //        strcat(buf, unit_name.c_str());
         sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -113,8 +113,8 @@ namespace SQLite_Item_Data {
             std::string item_name = std::string(reinterpret_cast< const char *> (s));
 
             // get the RTP_male, classes_female etc strings
-            auto unitType = sqlite3_column_text(stmt, 2); //0 only increments up when calling more than one column
-            const char *d = (const char *) unitType;
+            auto equip_type = sqlite3_column_text(stmt, 2); //0 only increments up when calling more than one column
+            const char *d = (const char *) equip_type;
             std::string vec = std::string(reinterpret_cast< const char *> (d));
 //            std::unordered_map<std::string, std::unordered_map<Item_Component::Item_Type, std::vector<std::string>>>Items;
 

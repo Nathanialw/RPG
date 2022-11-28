@@ -12,6 +12,7 @@
 #include "sprite_sheets.h"
 #include "world.h"
 #include "item_components.h"
+#include "social_control.h"
 
 //cell 100x100 pixels (change pixels to a meters??)
 //map 100 cells x 100 cells
@@ -129,7 +130,6 @@ namespace Maps {
         auto entity = zone.create();
         Entity_Loader::Data data;
         int unit_ID = 0;
-
         //get the entity_class from the template in the tiled map
         //get the is_random from the template in the tiled map
         //if it is random, grab a random entry of the same class from the DB table, including the key name
@@ -182,7 +182,6 @@ namespace Maps {
         zone.emplace<Component::Alive>(entity, true);
 
 
-
         //if RTP_pieces type
 
         if (packerframeData) {
@@ -203,8 +202,16 @@ namespace Maps {
 
         //dynamic entities
         if (data.body_type == 1) {
-            if (data.unit_type != "none") {
-                zone.emplace<Item_Component::Equipment>(entity, data.unit_type);
+            auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
+            zone.emplace<Social_Component::Race>(entity, raceData[0]);
+            auto &relationships = zone.emplace<Social_Component::Relationships>(entity);
+            for (int i = 0; i < raceData.size(); i++) {
+                relationships.races[i] = raceData[i+1];
+            }
+
+
+            if (data.equip_type != "none") {
+                zone.emplace<Item_Component::Equipment>(entity, data.equip_type);
             }
 
             bool yes = true;
@@ -222,7 +229,7 @@ namespace Maps {
 
             if (player) {
                 health.currentHealth = 200;
-                zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::player);
+                zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
                 zone.emplace<Component::Input>(entity);
                 zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, Graphics::resolution.w, Graphics::resolution.h, 2.0f, 2.0f);
             }

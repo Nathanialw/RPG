@@ -35,7 +35,12 @@ namespace Player_Control {
                     v.magnitude.y = v.speed * (moveTo.y - position.y);
                 }
                 else {
-                    Entity_Control::Melee_Attack(zone, entity, target.ID, targetPosition);
+                    if (Social_Control::Check_Relationship(zone, entity, target.ID)) {
+                        Entity_Control::Melee_Attack(zone, entity, target.ID, targetPosition);
+                    }
+                    else {
+                        Social_Control::Interact(zone, entity, target.ID);
+                    }
                     zone.remove<Player_Component::Attack_Move>(entity);
                     zone.remove<Component::Moving>(entity);
                 }
@@ -56,7 +61,12 @@ namespace Player_Control {
 			if (Entity_Control::Target_In_Melee_Range(zone, position, meleeRange, targetPosition, targetRadius)) {
                 //attack target
                 Component::Position targetPosition = { target.x, target.y };
-                Entity_Control::Melee_Attack(zone, entity, target.ID, targetPosition);
+                if (Social_Control::Check_Relationship(zone, entity, target.ID)) {
+                    Entity_Control::Melee_Attack(zone, entity, target.ID, targetPosition);
+                }
+                else {
+                    Social_Control::Interact(zone, entity, target.ID);
+                }
                 zone.remove<Player_Component::Attack_Move>(entity);
                 zone.remove<Component::Moving>(entity);
 			}

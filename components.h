@@ -100,60 +100,6 @@ namespace Component {
         xbow
     };
 
-//    enum t_Action_State {
-//        isStatic,
-//        idle,
-//        idle,
-//        idle1,
-//        idle2,
-//        idle3,
-//        /// Idle_4 is unarmed
-//        idle4,
-//        ///these two align with th first 2 idles
-//        fidget,
-//        fidget2,
-//        ///this fidget is unarmed and aligns with idle4
-//        fidget3,
-//        ///unarmed
-//        talking1,
-//        talking2,
-//        walk,
-//        run,
-//        attack,
-//        attack2,
-//        attack3,
-//        attack4,
-//        idle2H,
-//        idleCritical1,
-//        idleCritical2,
-//        ///weapon only visible with a staff - can cast with a staff shield but cannot attack
-//        cast,
-//        struck,
-//        block,
-//        evade,
-//        stunned,
-//        idle_low_hp,
-//        idle_low_hp2,
-//        dying,
-//        dead2,
-//        dead3,
-//        dead4,
-//        dead5,
-//        dead6,
-//        resting,
-//        cheer,
-//        behavior,
-//        summoned,
-//        kneel,
-//        pray_kneeled,
-//        pray_standing,
-//        in_combat,
-//        in_combat2,
-//        climb,
-//        use_item,
-//        crouch
-//    };
-
 	enum Action_State {
 		isStatic,
 		idle,
@@ -169,6 +115,7 @@ namespace Component {
         idle2H,
         idleCritical1,
         idleCritical2,
+        talk,
         run2H,
         walk2H,
         casting,
@@ -391,7 +338,6 @@ namespace Component {
 	};
 
 	enum class Entity_Type {
-		player,
 		unit,
 		foliage,
 		spell,

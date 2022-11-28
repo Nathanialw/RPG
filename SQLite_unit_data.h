@@ -22,9 +22,10 @@ namespace Entity_Loader {
         float interact_h = 10.0f;
         float x_offset = 0.0f;
         float y_offset = 0.0f;
-        std::string unit_type = "none";
+        std::string equip_type = "none";
         std::string entity_class = "monster";
         std::string sheet = "none";
+        std::string race = "rogue";
     };
 
 	void init_db() {
@@ -46,7 +47,7 @@ namespace Entity_Loader {
 		Data values;
 		sqlite3_stmt* stmt;
 		char buf[400];
-		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, unit_type FROM unit_data WHERE name = ";
+		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, equip_type, race FROM unit_data WHERE name = ";
 		strcpy(buf, jj);
 		strcat(buf, unit_name.c_str());
 		sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -68,11 +69,67 @@ namespace Entity_Loader {
 			values.y_offset = sqlite3_column_double(stmt, 14);
 			auto name = sqlite3_column_text(stmt, 15);
             const char * s = (const char *)name;
-            values.unit_type = std::string(reinterpret_cast< const char *> (s));
+            values.equip_type = std::string(reinterpret_cast< const char *> (s));
+            auto race = sqlite3_column_text(stmt, 16);
+            const char * g = (const char *)race;
+            values.race = std::string(reinterpret_cast< const char *> (g));
             //std::cout << "data: " << name << std::endl;
 		}
 		return values;
 	}
+
+
+    std::vector<int> Get_Race_Relationsips(std::string race) {// needs to search for  a specific row that I can input in the arguments
+        std::vector<int> raceData;
+        //check if the name exists??
+        std::string raceInput = db::Append_Quotes(race);
+
+        sqlite3_stmt* stmt;
+        char buf[300];
+        const char* jj = "SELECT race_enum, rogue, human, fleshbeast, goblin, beast, demon, elf, zombie, skeleton, orc, dwarf, monster, eldritch, drow, nature FROM race_relationships WHERE race = ";
+        strcpy(buf, jj);
+        strcat(buf, raceInput.c_str());
+        sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+        while (sqlite3_step(stmt) != SQLITE_DONE) {
+            int raceID = sqlite3_column_int(stmt, 0);
+            raceData.emplace_back(raceID);
+            int rogue = sqlite3_column_int(stmt, 1);
+            raceData.emplace_back(rogue);
+            int human = sqlite3_column_int(stmt, 2);
+            raceData.emplace_back(human);
+            int fleshbeast = sqlite3_column_int(stmt, 3);
+            raceData.emplace_back(fleshbeast);
+            int goblin = sqlite3_column_int(stmt, 4);
+            raceData.emplace_back(goblin);
+            int beast = sqlite3_column_int(stmt, 5);
+            raceData.emplace_back(beast);
+            int demon = sqlite3_column_int(stmt, 6);
+            raceData.emplace_back(demon);
+            int elf = sqlite3_column_int(stmt, 7);
+            raceData.emplace_back(elf);
+            int zombie = sqlite3_column_int(stmt, 8);
+            raceData.emplace_back(zombie);
+            int skeleton = sqlite3_column_int(stmt, 9);
+            raceData.emplace_back(skeleton);
+            int orc = sqlite3_column_int(stmt, 10);
+            raceData.emplace_back(orc);
+            int dwarf = sqlite3_column_int(stmt, 11);
+            raceData.emplace_back(dwarf);
+            int monster = sqlite3_column_int(stmt, 12);
+            raceData.emplace_back(monster);
+            int eldtritch = sqlite3_column_int(stmt, 13);
+            raceData.emplace_back(eldtritch);
+            int drow = sqlite3_column_int(stmt, 14);
+            raceData.emplace_back(drow);
+            int nature = sqlite3_column_int(stmt, 15);
+            raceData.emplace_back(nature);
+        }
+
+        raceData.shrink_to_fit();
+
+        return raceData;
+    }
+
 
     ////
     /// std::string entity_class MUST BE SINGLE QUOTES WRAPPED IN DOUBLE QUOTES OR ELSE IT THROWS A MEMORY READ EXCEPTION

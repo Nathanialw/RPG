@@ -38,24 +38,31 @@ namespace AI {
 	void Check_For_Targets(entt::registry& zone) {
 		auto units = zone.view<Component::Sight_Range, Component::Alive, Component::Position, Component::Melee_Range>();
         //currently specifically looks for a player as a target using input component
-        auto targets = zone.view<Component::Position, Component::Radius, Component::Input>();
 		for (auto unit_ID : units) {
 			auto &sightBox = units.get<Component::Sight_Range>(unit_ID).sightBox;
 			auto& meleeRange = units.get<Component::Melee_Range>(unit_ID);
 			auto& unitPosition = units.get<Component::Position>(unit_ID);
-			for (auto target_ID : targets) {
-				auto& targetPosition = targets.get<Component::Position>(target_ID);
-				auto& targetRadius = targets.get<Component::Radius>(target_ID);
-				SDL_FPoint targetPoint = { targetPosition.x, targetPosition.y };
-				if (Utilities::bFPoint_FRectIntersect(targetPoint, sightBox)) {
-					zone.emplace_or_replace<Component::In_Combat>(unit_ID);
-					zone.emplace_or_replace<Component::In_Combat>(target_ID);
-					Attack_Move(zone, unit_ID, target_ID, unitPosition, meleeRange, targetPosition, targetRadius);
-				}
-				else {
-					zone.remove<Component::In_Combat>(unit_ID);
-				}
-			}
+
+            std::vector<entt::entity> entityData = Dynamic_Quad_Tree::Get_Nearby_Entities(zone, sightBox);
+
+            for (auto target : entityData) {
+                auto type = zone.get<Component::Entity_Type>(target);
+                if (type == Component::Entity_Type::unit) {
+                    if (Social_Control::Check_Relationship(zone, unit_ID, target)) {
+                        auto &targetPosition = zone.get<Component::Position>(target);
+                        auto &targetRadius = zone.get<Component::Radius>(target);
+                        SDL_FPoint targetPoint = {targetPosition.x, targetPosition.y};
+                        if (Utilities::bFPoint_FRectIntersect(targetPoint, sightBox)) {
+                            zone.emplace_or_replace<Component::In_Combat>(unit_ID);
+                            zone.emplace_or_replace<Component::In_Combat>(target);
+                            Attack_Move(zone, unit_ID, target, unitPosition, meleeRange, targetPosition, targetRadius);
+                        } else {
+                            zone.remove<Component::In_Combat>(unit_ID);
+                        }
+                        break;
+                    }
+                }
+            }
 		}
 	}
 

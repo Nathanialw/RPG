@@ -17,7 +17,7 @@ namespace Texture_Packer_Item {
         std::string sprite_data = "";
         std::string xml_path = "";
         std::string texture_path = "";
-        std::string unit_type = "";
+        std::string equip_type = "";
     };
 
     Data Get_Sprite_Sheet(std::string &slot, std::string &equip_type) {// needs to search for  a specific row that I can input in the arguments
@@ -42,11 +42,11 @@ namespace Texture_Packer_Item {
 
         const unsigned char* xml_path;
         const unsigned char* tex_path;
-        const unsigned char* unit_type;
+        const unsigned char* equip_typ;
         std::string texture_path;
         sqlite3_stmt* stmt2;
         char buf2[200];
-        const char* jj2 = "SELECT xml_path, texture_path, unit_type FROM weapon_types WHERE type = ";
+        const char* jj2 = "SELECT xml_path, texture_path, equip_type FROM weapon_types WHERE type = ";
         strcpy(buf2, jj2);
         strcat(buf2, sheet_name.c_str());
         sqlite3_prepare_v2(db::db, buf2, -1, &stmt2, 0);
@@ -57,9 +57,9 @@ namespace Texture_Packer_Item {
             tex_path = sqlite3_column_text(stmt2, 1);
             const char * d = (const char *)tex_path;
             texture_path = std::string(reinterpret_cast< const char *> (d));
-            unit_type = sqlite3_column_text(stmt2, 2);
-            const char * e = (const char *)unit_type;
-            data.unit_type = std::string(reinterpret_cast< const char *> (e));
+            equip_typ = sqlite3_column_text(stmt2, 2);
+            const char * e = (const char *)equip_typ;
+            data.equip_type = std::string(reinterpret_cast< const char *> (e));
         }
         data.xml_path = path;
         data.texture_path = texture_path;
@@ -123,15 +123,18 @@ namespace Texture_Packer_Item {
             } else if (checkAction == "Dead-Down Forward") {
                 action = Component::Action_State::dying;
                 actionFrameData[action].frameSpeed = 100;
-            } else if (checkAction == "Get Hit 1") {
+            } else if (checkAction == "Praying") {
                 action = Component::Action_State::casting;
                 actionFrameData[action].frameSpeed = 150;
-                actionFrameData[action].reverses = 1;
+                actionFrameData[action].reverses = 0;
             } else if (checkAction == "Casting") {
                 action = Component::Action_State::cast;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Down 2") {
                 action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Talking 2") {
+                action = Component::Action_State::talk;
                 actionFrameData[action].frameSpeed = i;
             }
             else {
@@ -163,6 +166,9 @@ namespace Texture_Packer_Item {
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Dead") {
                 action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Hand Casual") {
+                action = Component::Action_State::talk;
                 actionFrameData[action].frameSpeed = i;
             }
             else {
@@ -284,7 +290,7 @@ namespace Texture_Packer_Item {
                 ///get frame data for each state
             std::string n = pSpriteElement->Attribute("n");
 
-            Get_Frame_Action_Data(dbData.unit_type, check, dbData.item_name, n, spritesheet.actionFrameData, frameIndex);
+            Get_Frame_Action_Data(dbData.equip_type, check, dbData.item_name, n, spritesheet.actionFrameData, frameIndex);
 
                 ///get sprite data
             frame.clip.x = pSpriteElement->IntAttribute("x");

@@ -23,6 +23,7 @@ namespace Movement {
 		}
 	}
 
+
 	void Update_Position() {
 		auto view = World::zone.view<Component::Position, Component::Velocity, Component::Moving, Component::Body>();
 		Update_Position_Poll += Timer::timeStep;
@@ -186,7 +187,7 @@ namespace Movement {
 		Linear_Move_To();
 		Mouse_Move_To();
 		Mouse_Move_Arrived();
-		Update_Direction();
+        Update_Direction();
 		Update_Position();
 	}
 }

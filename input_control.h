@@ -5,6 +5,7 @@
 #include "dynamic_quad_tree.h"
 #include "player_control.h"
 #include "entity_control.h"
+#include "social_control.h"
 
 namespace Input_Control {
 	    /// cand probaby merge the routine with Component::Pickup_Item and the normal mouse move, they are almost the same
@@ -75,8 +76,8 @@ namespace Input_Control {
 			switch (type) {
                 case Component::Entity_Type::unit:
                 if (player_ID != targetData.entity_ID) {
-                     Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetPosition,targetRadius);
-                     return true;
+                    Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetPosition, targetRadius);
+                    return true;
                 }
                 else {
                   //  std::cout << "no target, 1 is targetting player: " << testasd(player_ID, targetData.entity_ID) << std::endl;

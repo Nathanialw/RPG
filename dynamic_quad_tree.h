@@ -414,6 +414,19 @@ namespace Dynamic_Quad_Tree {
         return { false };
     }
 
+    std::vector<entt::entity> Get_Nearby_Entities(entt::registry& zone, SDL_FRect &entityRect) {
+        std::vector<entt::entity> entityData;
+
+        for (const auto& object : treeObjects.search(entityRect)) {
+            entityData.emplace_back(object->item.entity_ID);
+        }
+
+        entityData.shrink_to_fit();
+
+        return entityData;
+    }
+
+
 
     Entity_Data Entity_vs_QuadTree_Collision(entt::registry& zone, SDL_FRect &entityRect) {
         for (const auto& object : treeObjects.search(entityRect)) {
