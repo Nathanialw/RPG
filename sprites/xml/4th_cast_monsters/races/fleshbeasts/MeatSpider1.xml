@@ -15,444 +15,444 @@ oW => original width
 oH => original height
 r => 'y' if sprite is rotated-->
 <TextureAtlas imagePath="texture.png" width="4096" height="2694" scale="1" format="RGBA8888">
-  <sprite n="MeatSpider1_Down_2_02_ 1" x="0" y="0" w="139" h="83" pX="0.5" pY="0.5" oX="58" oY="88" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_4_03_ 2" x="139" y="0" w="138" h="88" pX="0.5" pY="0.5" oX="44" oY="71" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_1_04_ 3" x="277" y="0" w="121" h="89" pX="0.5" pY="0.5" oX="67" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_4_02_ 1" x="398" y="0" w="138" h="90" pX="0.5" pY="0.5" oX="68" oY="75" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_1_06_ 5" x="536" y="0" w="122" h="92" pX="0.5" pY="0.5" oX="51" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_01_ 0" x="658" y="0" w="151" h="93" pX="0.5" pY="0.5" oX="43" oY="55" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_2_03_ 2" x="809" y="0" w="139" h="93" pX="0.5" pY="0.5" oX="53" oY="69" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_03_ 0" x="948" y="0" w="151" h="93" pX="0.5" pY="0.5" oX="43" oY="55" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_06_ 1" x="1099" y="0" w="140" h="96" pX="0.5" pY="0.5" oX="69" oY="72" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_1_02_ 1" x="1239" y="0" w="113" h="96" pX="0.5" pY="0.5" oX="65" oY="72" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_09_ 2" x="1352" y="0" w="140" h="98" pX="0.5" pY="0.5" oX="41" oY="68" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_1_03_ 2" x="1492" y="0" w="113" h="99" pX="0.5" pY="0.5" oX="71" oY="74" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_1_08_ 7" x="1605" y="0" w="125" h="99" pX="0.5" pY="0.5" oX="69" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_03_ 0" x="1730" y="0" w="152" h="101" pX="0.5" pY="0.5" oX="47" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_3_03_ 2" x="1882" y="0" w="137" h="101" pX="0.5" pY="0.5" oX="45" oY="68" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_3_02_ 1" x="2019" y="0" w="137" h="105" pX="0.5" pY="0.5" oX="68" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_16_ 1" x="2156" y="0" w="196" h="105" pX="0.5" pY="0.5" oX="26" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_2_05_ 4" x="2352" y="0" w="143" h="106" pX="0.5" pY="0.5" oX="63" oY="69" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_03_ 0" x="2495" y="0" w="139" h="106" pX="0.5" pY="0.5" oX="55" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_21_ 2" x="2634" y="0" w="225" h="106" pX="0.5" pY="0.5" oX="4" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_21_ 2" x="2859" y="0" w="225" h="106" pX="0.5" pY="0.5" oX="4" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_20_ 2" x="3084" y="0" w="204" h="107" pX="0.5" pY="0.5" oX="17" oY="70" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_03_ 0" x="3288" y="0" w="105" h="108" pX="0.5" pY="0.5" oX="72" oY="52" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_4_06_ 5" x="3393" y="0" w="140" h="108" pX="0.5" pY="0.5" oX="64" oY="70" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_22_ 2" x="3533" y="0" w="215" h="108" pX="0.5" pY="0.5" oX="15" oY="69" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_02_ 0" x="3748" y="0" w="124" h="109" pX="0.5" pY="0.5" oX="59" oY="51" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_1_01_ 0" x="3872" y="0" w="121" h="109" pX="0.5" pY="0.5" oX="61" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_4_04_ 3" x="3993" y="0" w="100" h="112" pX="0.5" pY="0.5" oX="72" oY="71" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_4_05_ 4" x="0" y="83" w="135" h="109" pX="0.5" pY="0.5" oX="67" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_4_07_ 6" x="135" y="88" w="140" h="109" pX="0.5" pY="0.5" oX="46" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_1_07_ 6" x="275" y="89" w="122" h="110" pX="0.5" pY="0.5" oX="76" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_2_06_ 5" x="397" y="90" w="130" h="112" pX="0.5" pY="0.5" oX="63" oY="72" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_09_ 1" x="527" y="93" w="206" h="110" pX="0.5" pY="0.5" oX="19" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_09_ 1" x="733" y="93" w="206" h="110" pX="0.5" pY="0.5" oX="19" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_03_ 0" x="939" y="93" w="140" h="114" pX="0.5" pY="0.5" oX="54" oY="57" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_22_ 2" x="1079" y="96" w="205" h="111" pX="0.5" pY="0.5" oX="17" oY="70" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_19_ 2" x="1284" y="98" w="181" h="112" pX="0.5" pY="0.5" oX="32" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_20_ 2" x="1465" y="99" w="225" h="111" pX="0.5" pY="0.5" oX="8" oY="68" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_19_ 2" x="1690" y="101" w="181" h="112" pX="0.5" pY="0.5" oX="32" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_4_01_ 0" x="1871" y="101" w="100" h="114" pX="0.5" pY="0.5" oX="78" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_4_08_ 7" x="1971" y="105" w="135" h="114" pX="0.5" pY="0.5" oX="48" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_09_ 2" x="2106" y="105" w="176" h="115" pX="0.5" pY="0.5" oX="23" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_07_ 2" x="2282" y="106" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_07_ 2" x="2468" y="106" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_07_ 2" x="2654" y="106" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_08_ 2" x="2840" y="106" w="191" h="116" pX="0.5" pY="0.5" oX="20" oY="72" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_15_ 4" x="3031" y="107" w="173" h="116" pX="0.5" pY="0.5" oX="67" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_08_ 2" x="3204" y="108" w="137" h="116" pX="0.5" pY="0.5" oX="35" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_15_ 4" x="3341" y="108" w="142" h="116" pX="0.5" pY="0.5" oX="66" oY="50" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_07_ 2" x="3483" y="108" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_07_ 2" x="3669" y="109" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_1_05_ 4" x="3855" y="109" w="124" h="117" pX="0.5" pY="0.5" oX="55" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_3_01_ 0" x="3979" y="112" w="117" h="120" pX="0.5" pY="0.5" oX="72" oY="54" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_11_ 2" x="0" y="197" w="185" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_12_ 2" x="185" y="199" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_01_ 0" x="371" y="202" w="140" h="117" pX="0.5" pY="0.5" oX="55" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_13_ 2" x="511" y="203" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_14_ 2" x="697" y="203" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_15_ 2" x="883" y="207" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_07_ 2" x="1069" y="207" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_02_ 0" x="1255" y="210" w="141" h="117" pX="0.5" pY="0.5" oX="54" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_3_05_ 4" x="1396" y="210" w="143" h="117" pX="0.5" pY="0.5" oX="66" oY="54" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_03_ 0" x="1539" y="210" w="140" h="118" pX="0.5" pY="0.5" oX="55" oY="44" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_3_06_ 5" x="1679" y="213" w="156" h="117" pX="0.5" pY="0.5" oX="56" oY="70" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_18_ 2" x="1835" y="219" w="188" h="117" pX="0.5" pY="0.5" oX="31" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_02_ 0" x="2023" y="220" w="145" h="118" pX="0.5" pY="0.5" oX="48" oY="59" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_07_ 2" x="2168" y="222" w="186" h="118" pX="0.5" pY="0.5" oX="20" oY="71" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_09_ 1" x="2354" y="222" w="186" h="118" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_10_ 1" x="2540" y="222" w="186" h="118" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_24_ 2" x="2726" y="222" w="196" h="118" pX="0.5" pY="0.5" oX="28" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_10_ 1" x="2922" y="223" w="193" h="118" pX="0.5" pY="0.5" oX="28" oY="54" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_14_ 1" x="3115" y="224" w="215" h="118" pX="0.5" pY="0.5" oX="20" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_01_ 0" x="937" y="962" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_02_ 0" x="2666" y="986" w="147" h="143" pX="0.5" pY="0.5" oX="49" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_03_ 0" x="2700" y="845" w="143" h="141" pX="0.5" pY="0.5" oX="51" oY="61" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Attack 1_04_ 1" x="3330" y="224" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_04_ 1" x="3516" y="225" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_04_ 1" x="3702" y="226" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_06_ 1" x="3888" y="232" w="176" h="119" pX="0.5" pY="0.5" oX="50" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_15_ 4" x="0" y="313" w="181" h="119" pX="0.5" pY="0.5" oX="58" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_04_ 1" x="181" y="315" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_04_ 1" x="367" y="319" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_15_ 4" x="553" y="319" w="198" h="119" pX="0.5" pY="0.5" oX="42" oY="38" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_2_07_ 6" x="751" y="319" w="130" h="122" pX="0.5" pY="0.5" oX="57" oY="52" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_06_ 1" x="881" y="323" w="185" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_07_ 1" x="1066" y="323" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_08_ 1" x="1252" y="327" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_04_ 1" x="1438" y="328" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_05_ 1" x="1624" y="330" w="190" h="120" pX="0.5" pY="0.5" oX="39" oY="72" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_07_ 2" x="1814" y="336" w="190" h="120" pX="0.5" pY="0.5" oX="15" oY="74" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_08_ 2" x="2004" y="340" w="191" h="120" pX="0.5" pY="0.5" oX="14" oY="74" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_09_ 2" x="2195" y="340" w="191" h="120" pX="0.5" pY="0.5" oX="14" oY="74" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_13_ 4" x="2386" y="340" w="179" h="120" pX="0.5" pY="0.5" oX="58" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_21_ 6" x="2565" y="340" w="178" h="120" pX="0.5" pY="0.5" oX="6" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_04_ 1" x="2743" y="341" w="185" h="120" pX="0.5" pY="0.5" oX="45" oY="71" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_23_ 2" x="2928" y="341" w="187" h="120" pX="0.5" pY="0.5" oX="30" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_10_ 1" x="3115" y="342" w="188" h="120" pX="0.5" pY="0.5" oX="31" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_16_ 1" x="3303" y="343" w="204" h="120" pX="0.5" pY="0.5" oX="33" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_23_ 2" x="3507" y="344" w="187" h="120" pX="0.5" pY="0.5" oX="30" oY="62" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Attack 1_05_ 1" x="3694" y="345" w="187" h="121" pX="0.5" pY="0.5" oX="45" oY="70" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_06_ 1" x="3881" y="351" w="191" h="121" pX="0.5" pY="0.5" oX="45" oY="72" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_05_ 1" x="0" y="432" w="137" h="122" pX="0.5" pY="0.5" oX="78" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_08_ 2" x="137" y="434" w="195" h="121" pX="0.5" pY="0.5" oX="20" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_14_ 1" x="332" y="438" w="205" h="121" pX="0.5" pY="0.5" oX="28" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_17_ 2" x="537" y="438" w="206" h="121" pX="0.5" pY="0.5" oX="25" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_05_ 1" x="743" y="442" w="188" h="121" pX="0.5" pY="0.5" oX="43" oY="70" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_17_ 2" x="931" y="442" w="206" h="121" pX="0.5" pY="0.5" oX="25" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_2_04_ 3" x="1137" y="442" w="97" h="124" pX="0.5" pY="0.5" oX="78" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_04_ 1" x="1234" y="446" w="190" h="122" pX="0.5" pY="0.5" oX="45" oY="72" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_05_ 1" x="1424" y="447" w="191" h="122" pX="0.5" pY="0.5" oX="45" oY="72" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_21_ 6" x="1615" y="450" w="146" h="122" pX="0.5" pY="0.5" oX="42" oY="51" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_3_07_ 6" x="1761" y="456" w="156" h="122" pX="0.5" pY="0.5" oX="38" oY="51" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_08_ 2" x="1917" y="460" w="169" h="122" pX="0.5" pY="0.5" oX="26" oY="69" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_15_ 1" x="2086" y="460" w="187" h="122" pX="0.5" pY="0.5" oX="33" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_08_ 2" x="2273" y="460" w="188" h="122" pX="0.5" pY="0.5" oX="19" oY="70" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_15_ 1" x="2461" y="460" w="187" h="122" pX="0.5" pY="0.5" oX="33" oY="62" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Attack 1_06_ 1" x="2648" y="461" w="183" h="123" pX="0.5" pY="0.5" oX="36" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_19_ 6" x="2831" y="461" w="178" h="123" pX="0.5" pY="0.5" oX="6" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_20_ 6" x="3009" y="462" w="158" h="123" pX="0.5" pY="0.5" oX="28" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_2_08_ 7" x="3167" y="463" w="141" h="123" pX="0.5" pY="0.5" oX="45" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_21_ 6" x="3308" y="463" w="185" h="123" pX="0.5" pY="0.5" oX="9" oY="41" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_09_ 2" x="3493" y="464" w="182" h="124" pX="0.5" pY="0.5" oX="32" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_21_ 6" x="3675" y="466" w="172" h="124" pX="0.5" pY="0.5" oX="8" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_13_ 1" x="3847" y="472" w="225" h="123" pX="0.5" pY="0.5" oX="21" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_12_ 1" x="0" y="555" w="225" h="123" pX="0.5" pY="0.5" oX="17" oY="60" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_12_ 3" x="225" y="555" w="105" h="126" pX="0.5" pY="0.5" oX="73" oY="69" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_13_ 1" x="330" y="559" w="225" h="123" pX="0.5" pY="0.5" oX="21" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_14_ 4" x="555" y="559" w="163" h="124" pX="0.5" pY="0.5" oX="55" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_07_ 2" x="2282" y="106" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Attack 1_08_ 2" x="718" y="563" w="188" h="125" pX="0.5" pY="0.5" oX="18" oY="69" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_09_ 2" x="3493" y="464" w="182" h="124" pX="0.5" pY="0.5" oX="32" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_11_ 3" x="3353" y="1135" w="147" h="146" pX="0.5" pY="0.5" oX="54" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_12_ 3" x="516" y="816" w="143" h="138" pX="0.5" pY="0.5" oX="56" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_13_ 4" x="2158" y="1268" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_14_ 4" x="2905" y="1425" w="197" h="149" pX="0.5" pY="0.5" oX="42" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_15_ 4" x="3870" y="1003" w="189" h="144" pX="0.5" pY="0.5" oX="41" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_16_ 5" x="480" y="2003" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_17_ 5" x="2195" y="1875" w="191" h="158" pX="0.5" pY="0.5" oX="49" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_18_ 5" x="2853" y="2043" w="194" h="162" pX="0.5" pY="0.5" oX="48" oY="52" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_19_ 6" x="3775" y="1592" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_20_ 6" x="2281" y="1568" w="191" h="153" pX="0.5" pY="0.5" oX="10" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_21_ 6" x="138" y="1090" w="194" h="144" pX="0.5" pY="0.5" oX="8" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_22_ 7" x="3161" y="1732" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_23_ 7" x="1622" y="1560" w="197" h="152" pX="0.5" pY="0.5" oX="11" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 1_24_ 7" x="464" y="2164" w="187" h="163" pX="0.5" pY="0.5" oX="21" oY="49" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_01_ 0" x="1075" y="963" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_02_ 0" x="2813" y="988" w="159" h="143" pX="0.5" pY="0.5" oX="46" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_03_ 0" x="1730" y="0" w="152" h="101" pX="0.5" pY="0.5" oX="47" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_04_ 1" x="3516" y="225" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_05_ 1" x="3420" y="588" w="185" h="129" pX="0.5" pY="0.5" oX="32" oY="55" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_06_ 1" x="2177" y="841" w="145" h="140" pX="0.5" pY="0.5" oX="72" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_07_ 2" x="2468" y="106" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_08_ 2" x="3032" y="586" w="184" h="128" pX="0.5" pY="0.5" oX="33" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_09_ 2" x="1023" y="823" w="145" h="139" pX="0.5" pY="0.5" oX="33" oY="53" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_10_ 3" x="0" y="1232" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_11_ 3" x="3130" y="1888" w="159" h="159" pX="0.5" pY="0.5" oX="45" oY="36" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_12_ 3" x="671" y="2005" w="153" h="161" pX="0.5" pY="0.5" oX="50" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_13_ 4" x="2357" y="1272" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_14_ 4" x="3047" y="2047" w="214" h="162" pX="0.5" pY="0.5" oX="21" oY="40" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_15_ 4" x="3197" y="848" w="183" h="141" pX="0.5" pY="0.5" oX="54" oY="50" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_16_ 5" x="824" y="2006" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_17_ 5" x="3199" y="2382" w="211" h="177" pX="0.5" pY="0.5" oX="25" oY="34" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_18_ 5" x="1420" y="2352" w="194" h="172" pX="0.5" pY="0.5" oX="44" oY="52" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_19_ 6" x="0" y="1679" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_20_ 6" x="3021" y="2209" w="211" h="168" pX="0.5" pY="0.5" oX="14" oY="42" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_21_ 6" x="2322" y="841" w="194" h="140" pX="0.5" pY="0.5" oX="12" oY="52" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_22_ 7" x="3360" y="1737" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_23_ 7" x="3410" y="2392" w="214" h="178" pX="0.5" pY="0.5" oX="15" oY="31" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Attack 2_24_ 7" x="3763" y="2398" w="183" h="181" pX="0.5" pY="0.5" oX="13" oY="41" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_01_ 0" x="371" y="202" w="140" h="117" pX="0.5" pY="0.5" oX="55" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_02_ 0" x="1255" y="210" w="141" h="117" pX="0.5" pY="0.5" oX="54" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_03_ 0" x="1539" y="210" w="140" h="118" pX="0.5" pY="0.5" oX="55" oY="44" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Behavior_04_ 1" x="906" y="563" w="140" h="125" pX="0.5" pY="0.5" oX="87" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_3_04_ 3" x="1046" y="566" w="117" h="125" pX="0.5" pY="0.5" oX="61" oY="72" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_05_ 1" x="1163" y="568" w="196" h="125" pX="0.5" pY="0.5" oX="34" oY="68" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_09_ 2" x="1359" y="569" w="191" h="125" pX="0.5" pY="0.5" oX="20" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_48_ 5" x="1550" y="572" w="172" h="125" pX="0.5" pY="0.5" oX="63" oY="68" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Behavior_05_ 1" x="1722" y="578" w="140" h="126" pX="0.5" pY="0.5" oX="87" oY="66" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Behavior_06_ 1" x="1862" y="582" w="139" h="126" pX="0.5" pY="0.5" oX="88" oY="66" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Behavior_07_ 2" x="2001" y="582" w="140" h="126" pX="0.5" pY="0.5" oX="23" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_2_01_ 0" x="2141" y="582" w="97" h="126" pX="0.5" pY="0.5" oX="75" oY="49" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_09_ 2" x="2238" y="582" w="179" h="126" pX="0.5" pY="0.5" oX="26" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_18_ 2" x="2417" y="582" w="193" h="126" pX="0.5" pY="0.5" oX="29" oY="60" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Behavior_08_ 2" x="2610" y="584" w="140" h="127" pX="0.5" pY="0.5" oX="23" oY="62" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Behavior_09_ 2" x="2750" y="584" w="139" h="127" pX="0.5" pY="0.5" oX="23" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_24_ 7" x="2889" y="585" w="143" h="127" pX="0.5" pY="0.5" oX="41" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_08_ 2" x="3032" y="586" w="184" h="128" pX="0.5" pY="0.5" oX="33" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_24_ 2" x="3216" y="586" w="204" h="128" pX="0.5" pY="0.5" oX="13" oY="60" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_05_ 1" x="3420" y="588" w="185" h="129" pX="0.5" pY="0.5" oX="32" oY="55" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_18_ 5" x="3605" y="590" w="146" h="129" pX="0.5" pY="0.5" oX="62" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_05_ 1" x="3751" y="595" w="170" h="129" pX="0.5" pY="0.5" oX="55" oY="60" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_02_ 0" x="3921" y="595" w="139" h="131" pX="0.5" pY="0.5" oX="55" oY="52" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_20_ 6" x="0" y="678" w="188" h="129" pX="0.5" pY="0.5" oX="7" oY="49" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_12_ 1" x="188" y="682" w="204" h="129" pX="0.5" pY="0.5" oX="29" oY="53" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_06_ 1" x="392" y="683" w="179" h="129" pX="0.5" pY="0.5" oX="45" oY="60" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_02_ 0" x="571" y="683" w="139" h="133" pX="0.5" pY="0.5" oX="55" oY="57" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_05_ 1" x="710" y="688" w="177" h="130" pX="0.5" pY="0.5" oX="51" oY="68" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Down_3_08_ 7" x="887" y="688" w="143" h="133" pX="0.5" pY="0.5" oX="41" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_08_ 2" x="1030" y="693" w="177" h="130" pX="0.5" pY="0.5" oX="22" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_14_ 4" x="1207" y="694" w="201" h="131" pX="0.5" pY="0.5" oX="41" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_06_ 1" x="1408" y="697" w="191" h="131" pX="0.5" pY="0.5" oX="39" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_15_ 4" x="1599" y="704" w="195" h="132" pX="0.5" pY="0.5" oX="44" oY="33" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_14_ 4" x="1794" y="708" w="205" h="132" pX="0.5" pY="0.5" oX="35" oY="42" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_14_ 4" x="1999" y="708" w="190" h="133" pX="0.5" pY="0.5" oX="49" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_11_ 1" x="2189" y="708" w="181" h="133" pX="0.5" pY="0.5" oX="37" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_11_ 1" x="2370" y="708" w="181" h="133" pX="0.5" pY="0.5" oX="37" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_07_ 2" x="2551" y="711" w="145" h="134" pX="0.5" pY="0.5" oX="30" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_47_ 5" x="2696" y="711" w="175" h="134" pX="0.5" pY="0.5" oX="50" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_02_ 0" x="2871" y="712" w="148" h="135" pX="0.5" pY="0.5" oX="51" oY="49" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_61_ 7" x="3019" y="714" w="186" h="134" pX="0.5" pY="0.5" oX="7" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_47_ 5" x="3205" y="714" w="175" h="134" pX="0.5" pY="0.5" oX="50" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_61_ 7" x="3380" y="717" w="186" h="134" pX="0.5" pY="0.5" oX="7" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_09_ 2" x="3566" y="719" w="148" h="135" pX="0.5" pY="0.5" oX="27" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_11_ 3" x="3714" y="724" w="124" h="136" pX="0.5" pY="0.5" oX="67" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_52_ 6" x="3838" y="726" w="180" h="136" pX="0.5" pY="0.5" oX="30" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_03_ 0" x="0" y="807" w="140" h="137" pX="0.5" pY="0.5" oX="54" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_20_ 6" x="140" y="811" w="194" h="137" pX="0.5" pY="0.5" oX="8" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_62_ 7" x="334" y="812" w="182" h="137" pX="0.5" pY="0.5" oX="14" oY="68" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_12_ 3" x="516" y="816" w="143" h="138" pX="0.5" pY="0.5" oX="56" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_59_ 7" x="659" y="818" w="186" h="138" pX="0.5" pY="0.5" oX="18" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_42_ 5" x="845" y="821" w="178" h="138" pX="0.5" pY="0.5" oX="62" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_09_ 2" x="1023" y="823" w="145" h="139" pX="0.5" pY="0.5" oX="33" oY="53" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_60_ 7" x="1168" y="825" w="187" h="138" pX="0.5" pY="0.5" oX="12" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_59_ 7" x="1355" y="828" w="186" h="138" pX="0.5" pY="0.5" oX="18" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_03_ 0" x="1541" y="836" w="147" h="139" pX="0.5" pY="0.5" oX="51" oY="27" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_26_ 3" x="1688" y="840" w="138" h="139" pX="0.5" pY="0.5" oX="63" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_48_ 5" x="1826" y="840" w="173" h="139" pX="0.5" pY="0.5" oX="61" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_60_ 7" x="1999" y="841" w="178" h="139" pX="0.5" pY="0.5" oX="16" oY="60" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_06_ 1" x="2177" y="841" w="145" h="140" pX="0.5" pY="0.5" oX="72" oY="54" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_21_ 6" x="2322" y="841" w="194" h="140" pX="0.5" pY="0.5" oX="12" oY="52" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_19_ 6" x="2516" y="845" w="184" h="140" pX="0.5" pY="0.5" oX="8" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_03_ 0" x="2700" y="845" w="143" h="141" pX="0.5" pY="0.5" oX="51" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_06_ 1" x="2843" y="847" w="165" h="141" pX="0.5" pY="0.5" oX="63" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_41_ 5" x="3008" y="848" w="189" h="140" pX="0.5" pY="0.5" oX="53" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_15_ 4" x="3197" y="848" w="183" h="141" pX="0.5" pY="0.5" oX="54" oY="50" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_20_ 6" x="3380" y="851" w="184" h="141" pX="0.5" pY="0.5" oX="8" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_01_ 0" x="3564" y="854" w="138" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_41_ 5" x="3702" y="862" w="189" h="140" pX="0.5" pY="0.5" oX="53" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_01_ 0" x="3891" y="862" w="138" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_02_ 0" x="0" y="944" w="138" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_04_ 0" x="138" y="948" w="137" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_05_ 0" x="275" y="949" w="138" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_53_ 6" x="413" y="954" w="173" h="141" pX="0.5" pY="0.5" oX="32" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_36_ 4" x="586" y="956" w="178" h="141" pX="0.5" pY="0.5" oX="56" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_53_ 6" x="764" y="959" w="173" h="141" pX="0.5" pY="0.5" oX="32" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_01_ 0" x="937" y="962" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_01_ 0" x="1075" y="963" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_01_ 0" x="1213" y="963" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_21_ 6" x="1351" y="966" w="184" h="142" pX="0.5" pY="0.5" oX="8" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_01_ 0" x="1535" y="975" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_14_ 4" x="1673" y="979" w="191" h="142" pX="0.5" pY="0.5" oX="49" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_23_ 7" x="1864" y="980" w="163" h="142" pX="0.5" pY="0.5" oX="32" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_03_ 0" x="2027" y="980" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_52_ 6" x="2165" y="981" w="177" h="142" pX="0.5" pY="0.5" oX="26" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_26_ 3" x="2342" y="981" w="143" h="142" pX="0.5" pY="0.5" oX="59" oY="60" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_62_ 7" x="2485" y="985" w="181" h="142" pX="0.5" pY="0.5" oX="14" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_02_ 0" x="2666" y="986" w="147" h="143" pX="0.5" pY="0.5" oX="49" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_02_ 0" x="2813" y="988" w="159" h="143" pX="0.5" pY="0.5" oX="46" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_10_ 3" x="627" y="1391" w="140" h="151" pX="0.5" pY="0.5" oX="55" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_11_ 3" x="1819" y="1561" w="140" h="152" pX="0.5" pY="0.5" oX="55" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_12_ 3" x="1959" y="1564" w="140" h="152" pX="0.5" pY="0.5" oX="55" oY="61" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Behavior_13_ 4" x="2972" y="988" w="178" h="143" pX="0.5" pY="0.5" oX="62" oY="45" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Behavior_14_ 4" x="3150" y="989" w="178" h="143" pX="0.5" pY="0.5" oX="62" oY="45" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Behavior_15_ 4" x="3328" y="992" w="178" h="143" pX="0.5" pY="0.5" oX="62" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_09_ 2" x="3506" y="995" w="165" h="143" pX="0.5" pY="0.5" oX="22" oY="51" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_15_ 4" x="3671" y="1002" w="199" h="143" pX="0.5" pY="0.5" oX="38" oY="50" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_15_ 4" x="3870" y="1003" w="189" h="144" pX="0.5" pY="0.5" oX="41" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_21_ 6" x="138" y="1090" w="194" h="144" pX="0.5" pY="0.5" oX="8" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_16_ 5" x="3769" y="1902" w="184" h="160" pX="0.5" pY="0.5" oX="58" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_17_ 5" x="1015" y="2011" w="184" h="161" pX="0.5" pY="0.5" oX="58" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_18_ 5" x="1199" y="2019" w="184" h="161" pX="0.5" pY="0.5" oX="58" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_19_ 6" x="2516" y="845" w="184" h="140" pX="0.5" pY="0.5" oX="8" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_20_ 6" x="3380" y="851" w="184" h="141" pX="0.5" pY="0.5" oX="8" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_21_ 6" x="1351" y="966" w="184" h="142" pX="0.5" pY="0.5" oX="8" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_22_ 7" x="1267" y="1707" w="178" h="155" pX="0.5" pY="0.5" oX="10" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_23_ 7" x="1257" y="1862" w="178" h="157" pX="0.5" pY="0.5" oX="10" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Behavior_24_ 7" x="3289" y="1893" w="178" h="159" pX="0.5" pY="0.5" oX="10" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_01_ 0" x="1213" y="963" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_02_ 0" x="571" y="683" w="139" h="133" pX="0.5" pY="0.5" oX="55" oY="57" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_03_ 0" x="939" y="93" w="140" h="114" pX="0.5" pY="0.5" oX="54" oY="57" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_04_ 1" x="3702" y="226" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_05_ 1" x="1624" y="330" w="190" h="120" pX="0.5" pY="0.5" oX="39" oY="72" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_06_ 1" x="3888" y="232" w="176" h="119" pX="0.5" pY="0.5" oX="50" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_07_ 2" x="2654" y="106" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_08_ 2" x="2840" y="106" w="191" h="116" pX="0.5" pY="0.5" oX="20" oY="72" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_09_ 2" x="2106" y="105" w="176" h="115" pX="0.5" pY="0.5" oX="23" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_11_ 3" x="1126" y="1698" w="141" h="156" pX="0.5" pY="0.5" oX="55" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_12_ 3" x="3598" y="2061" w="140" h="163" pX="0.5" pY="0.5" oX="56" oY="50" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_13_ 4" x="2742" y="1276" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_14_ 4" x="1673" y="979" w="191" h="142" pX="0.5" pY="0.5" oX="49" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_15_ 4" x="3031" y="107" w="173" h="116" pX="0.5" pY="0.5" oX="67" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_16_ 5" x="1383" y="2023" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_17_ 5" x="3261" y="2052" w="194" h="162" pX="0.5" pY="0.5" oX="48" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_18_ 5" x="3467" y="1897" w="172" h="159" pX="0.5" pY="0.5" oX="70" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_19_ 6" x="191" y="1683" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Block_20_ 6" x="332" y="1095" w="194" h="144" pX="0.5" pY="0.5" oX="8" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_39_ 4" x="526" y="1097" w="177" h="144" pX="0.5" pY="0.5" oX="50" oY="44" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_40_ 4" x="703" y="1100" w="178" h="144" pX="0.5" pY="0.5" oX="47" oY="42" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_51_ 6" x="881" y="1104" w="180" h="144" pX="0.5" pY="0.5" oX="19" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_39_ 4" x="1061" y="1105" w="177" h="144" pX="0.5" pY="0.5" oX="50" oY="44" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_40_ 4" x="1238" y="1108" w="164" h="144" pX="0.5" pY="0.5" oX="54" oY="42" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_25_ 3" x="1402" y="1108" w="130" h="149" pX="0.5" pY="0.5" oX="69" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_27_ 3" x="1532" y="1117" w="140" h="145" pX="0.5" pY="0.5" oX="58" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_51_ 6" x="1672" y="1121" w="180" h="144" pX="0.5" pY="0.5" oX="19" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_58_ 7" x="1852" y="1122" w="171" h="144" pX="0.5" pY="0.5" oX="30" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_21_ 6" x="3675" y="466" w="172" h="124" pX="0.5" pY="0.5" oX="8" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_22_ 7" x="3360" y="1737" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_23_ 7" x="1574" y="2024" w="191" h="161" pX="0.5" pY="0.5" oX="10" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Block_24_ 7" x="136" y="1993" w="172" h="160" pX="0.5" pY="0.5" oX="10" oY="64" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Critical HP_01_ 0" x="2023" y="1122" w="142" h="145" pX="0.5" pY="0.5" oX="53" oY="55" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Critical HP_02_ 0" x="2165" y="1123" w="142" h="145" pX="0.5" pY="0.5" oX="53" oY="55" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Critical HP_03_ 0" x="2307" y="1123" w="142" h="145" pX="0.5" pY="0.5" oX="53" oY="55" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_04_ 1" x="1234" y="446" w="190" h="122" pX="0.5" pY="0.5" oX="45" oY="72" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_05_ 1" x="1424" y="447" w="191" h="122" pX="0.5" pY="0.5" oX="45" oY="72" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_06_ 1" x="3881" y="351" w="191" h="121" pX="0.5" pY="0.5" oX="45" oY="72" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_07_ 2" x="1814" y="336" w="190" h="120" pX="0.5" pY="0.5" oX="15" oY="74" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_08_ 2" x="2004" y="340" w="191" h="120" pX="0.5" pY="0.5" oX="14" oY="74" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_09_ 2" x="2195" y="340" w="191" h="120" pX="0.5" pY="0.5" oX="14" oY="74" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_10_ 3" x="2208" y="1416" w="142" h="151" pX="0.5" pY="0.5" oX="55" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_11_ 3" x="1363" y="1406" w="142" h="150" pX="0.5" pY="0.5" oX="55" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_12_ 3" x="1505" y="1410" w="142" h="150" pX="0.5" pY="0.5" oX="55" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_13_ 4" x="976" y="2172" w="217" h="164" pX="0.5" pY="0.5" oX="27" oY="44" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_14_ 4" x="1372" y="2185" w="217" h="164" pX="0.5" pY="0.5" oX="27" oY="44" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_15_ 4" x="1589" y="2188" w="216" h="164" pX="0.5" pY="0.5" oX="27" oY="44" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_16_ 5" x="2014" y="2359" w="213" h="174" pX="0.5" pY="0.5" oX="33" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_17_ 5" x="2227" y="2361" w="213" h="174" pX="0.5" pY="0.5" oX="33" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_18_ 5" x="1801" y="2357" w="213" h="173" pX="0.5" pY="0.5" oX="33" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_19_ 6" x="1805" y="2192" w="213" h="165" pX="0.5" pY="0.5" oX="4" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_20_ 6" x="2018" y="2194" w="213" h="165" pX="0.5" pY="0.5" oX="4" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_21_ 6" x="2231" y="2196" w="213" h="165" pX="0.5" pY="0.5" oX="4" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_22_ 7" x="3232" y="2214" w="217" h="168" pX="0.5" pY="0.5" oX="6" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_23_ 7" x="3589" y="2224" w="217" h="168" pX="0.5" pY="0.5" oX="6" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Critical HP_24_ 7" x="3806" y="2230" w="217" h="168" pX="0.5" pY="0.5" oX="6" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_01_ 0" x="658" y="0" w="151" h="93" pX="0.5" pY="0.5" oX="43" oY="55" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_02_ 0" x="3748" y="0" w="124" h="109" pX="0.5" pY="0.5" oX="59" oY="51" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_03_ 0" x="3288" y="0" w="105" h="108" pX="0.5" pY="0.5" oX="72" oY="52" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Dead To Down_04_ 1" x="2449" y="1127" w="145" h="145" pX="0.5" pY="0.5" oX="75" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_05_ 1" x="0" y="432" w="137" h="122" pX="0.5" pY="0.5" oX="78" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_06_ 1" x="1099" y="0" w="140" h="96" pX="0.5" pY="0.5" oX="69" oY="72" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_07_ 2" x="2551" y="711" w="145" h="134" pX="0.5" pY="0.5" oX="30" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_08_ 2" x="3204" y="108" w="137" h="116" pX="0.5" pY="0.5" oX="35" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_09_ 2" x="1352" y="0" w="140" h="98" pX="0.5" pY="0.5" oX="41" oY="68" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Dead To Down_10_ 3" x="2594" y="1129" w="151" h="145" pX="0.5" pY="0.5" oX="56" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_06_ 1" x="2745" y="1131" w="148" h="145" pX="0.5" pY="0.5" oX="75" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_42_ 5" x="2893" y="1131" w="175" h="145" pX="0.5" pY="0.5" oX="63" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_02_ 0" x="3068" y="1132" w="145" h="145" pX="0.5" pY="0.5" oX="53" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_27_ 3" x="3213" y="1135" w="140" h="145" pX="0.5" pY="0.5" oX="58" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_11_ 3" x="3353" y="1135" w="147" h="146" pX="0.5" pY="0.5" oX="54" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_11_ 3" x="3714" y="724" w="124" h="136" pX="0.5" pY="0.5" oX="67" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_12_ 3" x="225" y="555" w="105" h="126" pX="0.5" pY="0.5" oX="73" oY="69" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_13_ 4" x="2386" y="340" w="179" h="120" pX="0.5" pY="0.5" oX="58" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_14_ 4" x="555" y="559" w="163" h="124" pX="0.5" pY="0.5" oX="55" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_15_ 4" x="3341" y="108" w="142" h="116" pX="0.5" pY="0.5" oX="66" oY="50" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_16_ 5" x="335" y="2327" w="178" h="169" pX="0.5" pY="0.5" oX="66" oY="50" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Dead To Down_17_ 5" x="3500" y="1138" w="158" h="146" pX="0.5" pY="0.5" oX="64" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_18_ 5" x="3605" y="590" w="146" h="129" pX="0.5" pY="0.5" oX="62" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_19_ 6" x="2831" y="461" w="178" h="123" pX="0.5" pY="0.5" oX="6" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_20_ 6" x="3009" y="462" w="158" h="123" pX="0.5" pY="0.5" oX="28" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_21_ 6" x="1615" y="450" w="146" h="122" pX="0.5" pY="0.5" oX="42" oY="51" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_22_ 7" x="1193" y="2180" w="179" h="165" pX="0.5" pY="0.5" oX="13" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_23_ 7" x="1864" y="980" w="163" h="142" pX="0.5" pY="0.5" oX="32" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Dead To Down_24_ 7" x="2889" y="585" w="143" h="127" pX="0.5" pY="0.5" oX="41" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_1_01_ 0" x="3872" y="0" w="121" h="109" pX="0.5" pY="0.5" oX="61" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_1_02_ 1" x="1239" y="0" w="113" h="96" pX="0.5" pY="0.5" oX="65" oY="72" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_1_03_ 2" x="1492" y="0" w="113" h="99" pX="0.5" pY="0.5" oX="71" oY="74" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_1_04_ 3" x="277" y="0" w="121" h="89" pX="0.5" pY="0.5" oX="67" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_1_05_ 4" x="3855" y="109" w="124" h="117" pX="0.5" pY="0.5" oX="55" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_1_06_ 5" x="536" y="0" w="122" h="92" pX="0.5" pY="0.5" oX="51" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_1_07_ 6" x="275" y="89" w="122" h="110" pX="0.5" pY="0.5" oX="76" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_1_08_ 7" x="1605" y="0" w="125" h="99" pX="0.5" pY="0.5" oX="69" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_2_01_ 0" x="2141" y="582" w="97" h="126" pX="0.5" pY="0.5" oX="75" oY="49" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_2_02_ 1" x="0" y="0" w="139" h="83" pX="0.5" pY="0.5" oX="58" oY="88" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_2_03_ 2" x="809" y="0" w="139" h="93" pX="0.5" pY="0.5" oX="53" oY="69" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_2_04_ 3" x="1137" y="442" w="97" h="124" pX="0.5" pY="0.5" oX="78" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_2_05_ 4" x="2352" y="0" w="143" h="106" pX="0.5" pY="0.5" oX="63" oY="69" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_2_06_ 5" x="397" y="90" w="130" h="112" pX="0.5" pY="0.5" oX="63" oY="72" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_2_07_ 6" x="751" y="319" w="130" h="122" pX="0.5" pY="0.5" oX="57" oY="52" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_2_08_ 7" x="3167" y="463" w="141" h="123" pX="0.5" pY="0.5" oX="45" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_3_01_ 0" x="3979" y="112" w="117" h="120" pX="0.5" pY="0.5" oX="72" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_3_02_ 1" x="2019" y="0" w="137" h="105" pX="0.5" pY="0.5" oX="68" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_3_03_ 2" x="1882" y="0" w="137" h="101" pX="0.5" pY="0.5" oX="45" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_3_04_ 3" x="1046" y="566" w="117" h="125" pX="0.5" pY="0.5" oX="61" oY="72" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_3_05_ 4" x="1396" y="210" w="143" h="117" pX="0.5" pY="0.5" oX="66" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_3_06_ 5" x="1679" y="213" w="156" h="117" pX="0.5" pY="0.5" oX="56" oY="70" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_3_07_ 6" x="1761" y="456" w="156" h="122" pX="0.5" pY="0.5" oX="38" oY="51" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_3_08_ 7" x="887" y="688" w="143" h="133" pX="0.5" pY="0.5" oX="41" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_4_01_ 0" x="1871" y="101" w="100" h="114" pX="0.5" pY="0.5" oX="78" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_4_02_ 1" x="398" y="0" w="138" h="90" pX="0.5" pY="0.5" oX="68" oY="75" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_4_03_ 2" x="139" y="0" w="138" h="88" pX="0.5" pY="0.5" oX="44" oY="71" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_4_04_ 3" x="3993" y="0" w="100" h="112" pX="0.5" pY="0.5" oX="72" oY="71" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_4_05_ 4" x="0" y="83" w="135" h="109" pX="0.5" pY="0.5" oX="67" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_4_06_ 5" x="3393" y="0" w="140" h="108" pX="0.5" pY="0.5" oX="64" oY="70" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_4_07_ 6" x="135" y="88" w="140" h="109" pX="0.5" pY="0.5" oX="46" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Down_4_08_ 7" x="1971" y="105" w="135" h="114" pX="0.5" pY="0.5" oX="48" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_01_ 0" x="1535" y="975" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_02_ 0" x="2871" y="712" w="148" h="135" pX="0.5" pY="0.5" oX="51" oY="49" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_03_ 0" x="1541" y="836" w="147" h="139" pX="0.5" pY="0.5" oX="51" oY="27" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_04_ 1" x="181" y="315" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_05_ 1" x="710" y="688" w="177" h="130" pX="0.5" pY="0.5" oX="51" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_06_ 1" x="2843" y="847" w="165" h="141" pX="0.5" pY="0.5" oX="63" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_07_ 2" x="3483" y="108" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_08_ 2" x="1030" y="693" w="177" h="130" pX="0.5" pY="0.5" oX="22" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_09_ 2" x="3506" y="995" w="165" h="143" pX="0.5" pY="0.5" oX="22" oY="51" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_11_ 3" x="3428" y="1583" w="148" h="154" pX="0.5" pY="0.5" oX="51" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_12_ 3" x="3339" y="1281" w="147" h="149" pX="0.5" pY="0.5" oX="52" oY="59" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_13_ 4" x="2941" y="1277" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_14_ 4" x="1207" y="694" w="201" h="131" pX="0.5" pY="0.5" oX="41" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_15_ 4" x="1599" y="704" w="195" h="132" pX="0.5" pY="0.5" oX="44" oY="33" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_16_ 5" x="1383" y="2023" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_17_ 5" x="1614" y="2352" w="187" h="177" pX="0.5" pY="0.5" oX="58" oY="53" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_18_ 5" x="2440" y="2365" w="172" h="178" pX="0.5" pY="0.5" oX="69" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_19_ 6" x="382" y="1689" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Evade_20_ 6" x="3658" y="1145" w="187" h="146" pX="0.5" pY="0.5" oX="5" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_46_ 5" x="3845" y="1147" w="173" h="146" pX="0.5" pY="0.5" oX="48" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_10_ 3" x="0" y="1232" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_63_ 7" x="138" y="1234" w="177" h="146" pX="0.5" pY="0.5" oX="23" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_63_ 7" x="315" y="1239" w="177" h="146" pX="0.5" pY="0.5" oX="23" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_21_ 6" x="308" y="1999" w="172" h="160" pX="0.5" pY="0.5" oX="9" oY="26" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_22_ 7" x="3559" y="1741" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_23_ 7" x="835" y="2336" w="201" h="171" pX="0.5" pY="0.5" oX="8" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Evade_24_ 7" x="2612" y="2369" w="195" h="175" pX="0.5" pY="0.5" oX="11" oY="49" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_01_ 0" x="937" y="962" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_02_ 0" x="2023" y="220" w="145" h="118" pX="0.5" pY="0.5" oX="48" oY="59" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_03_ 0" x="948" y="0" w="151" h="93" pX="0.5" pY="0.5" oX="43" oY="55" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_04_ 1" x="367" y="319" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_05_ 1" x="3751" y="595" w="170" h="129" pX="0.5" pY="0.5" oX="55" oY="60" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_06_ 1" x="2745" y="1131" w="148" h="145" pX="0.5" pY="0.5" oX="75" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_07_ 2" x="3669" y="109" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_08_ 2" x="1917" y="460" w="169" h="122" pX="0.5" pY="0.5" oX="26" oY="69" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_09_ 2" x="3566" y="719" w="148" h="135" pX="0.5" pY="0.5" oX="27" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_11_ 3" x="3950" y="1441" w="145" h="151" pX="0.5" pY="0.5" oX="56" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_12_ 3" x="3450" y="1433" w="151" h="150" pX="0.5" pY="0.5" oX="56" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_13_ 4" x="2941" y="1277" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_14_ 4" x="1999" y="708" w="190" h="133" pX="0.5" pY="0.5" oX="49" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_15_ 4" x="0" y="313" w="181" h="119" pX="0.5" pY="0.5" oX="58" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_16_ 5" x="1898" y="2031" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_17_ 5" x="1036" y="2345" w="188" h="171" pX="0.5" pY="0.5" oX="55" oY="53" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_18_ 5" x="657" y="2330" w="178" h="174" pX="0.5" pY="0.5" oX="66" oY="50" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_19_ 6" x="573" y="1693" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_20_ 6" x="0" y="678" w="188" h="129" pX="0.5" pY="0.5" oX="7" oY="49" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_21_ 6" x="2565" y="340" w="178" h="120" pX="0.5" pY="0.5" oX="6" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_22_ 7" x="3758" y="1746" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_23_ 7" x="2626" y="2202" w="190" h="167" pX="0.5" pY="0.5" oX="11" oY="59" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Get Hit_24_ 7" x="2444" y="2199" w="182" h="166" pX="0.5" pY="0.5" oX="10" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_01_ 0" x="3564" y="854" w="138" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_02_ 0" x="3921" y="595" w="139" h="131" pX="0.5" pY="0.5" oX="55" oY="52" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_03_ 0" x="2495" y="0" w="139" h="106" pX="0.5" pY="0.5" oX="55" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_04_ 1" x="2743" y="341" w="185" h="120" pX="0.5" pY="0.5" oX="45" oY="71" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_05_ 1" x="1163" y="568" w="196" h="125" pX="0.5" pY="0.5" oX="34" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_06_ 1" x="1408" y="697" w="191" h="131" pX="0.5" pY="0.5" oX="39" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_07_ 2" x="2168" y="222" w="186" h="118" pX="0.5" pY="0.5" oX="20" oY="71" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_08_ 2" x="137" y="434" w="195" h="121" pX="0.5" pY="0.5" oX="20" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_09_ 2" x="1359" y="569" w="191" h="125" pX="0.5" pY="0.5" oX="20" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_10_ 3" x="3486" y="1284" w="138" h="149" pX="0.5" pY="0.5" oX="56" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_11_ 3" x="3953" y="1907" w="139" h="160" pX="0.5" pY="0.5" oX="56" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_12_ 3" x="3624" y="2392" w="139" h="185" pX="0.5" pY="0.5" oX="56" oY="29" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_13_ 4" x="3140" y="1280" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_14_ 4" x="1794" y="708" w="205" h="132" pX="0.5" pY="0.5" oX="35" oY="42" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_15_ 4" x="553" y="319" w="198" h="119" pX="0.5" pY="0.5" oX="42" oY="38" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_16_ 5" x="3738" y="2062" w="191" h="162" pX="0.5" pY="0.5" oX="50" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_17_ 5" x="2807" y="2372" w="194" h="175" pX="0.5" pY="0.5" oX="48" oY="50" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_18_ 5" x="398" y="2500" w="185" h="194" pX="0.5" pY="0.5" oX="56" oY="31" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_19_ 6" x="764" y="1695" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_20_ 6" x="140" y="811" w="194" h="137" pX="0.5" pY="0.5" oX="8" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_21_ 6" x="3308" y="463" w="185" h="123" pX="0.5" pY="0.5" oX="9" oY="41" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_22_ 7" x="2386" y="1877" w="199" h="158" pX="0.5" pY="0.5" oX="10" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_23_ 7" x="130" y="2321" w="205" h="168" pX="0.5" pY="0.5" oX="10" oY="55" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle Fidget_24_ 7" x="3001" y="2377" w="198" h="175" pX="0.5" pY="0.5" oX="10" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_01_ 0" x="3891" y="862" w="138" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_02_ 0" x="0" y="944" w="138" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_03_ 0" x="2027" y="980" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_04_ 0" x="138" y="948" w="137" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_05_ 0" x="275" y="949" w="138" h="141" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_06_ 1" x="881" y="323" w="185" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_07_ 1" x="1066" y="323" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_08_ 1" x="1252" y="327" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_09_ 1" x="2354" y="222" w="186" h="118" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_10_ 1" x="2540" y="222" w="186" h="118" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_11_ 2" x="0" y="197" w="185" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_12_ 2" x="185" y="199" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_13_ 2" x="511" y="203" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_14_ 2" x="697" y="203" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_15_ 2" x="883" y="207" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_16_ 3" x="0" y="1379" w="138" h="149" pX="0.5" pY="0.5" oX="56" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_17_ 3" x="906" y="1248" w="138" h="148" pX="0.5" pY="0.5" oX="56" oY="66" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_18_ 3" x="492" y="1241" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_19_ 3" x="630" y="1244" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_20_ 3" x="768" y="1248" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_17_ 3" x="906" y="1248" w="138" h="148" pX="0.5" pY="0.5" oX="56" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_38_ 4" x="1044" y="1249" w="181" h="147" pX="0.5" pY="0.5" oX="55" oY="44" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_50_ 6" x="1225" y="1252" w="175" h="147" pX="0.5" pY="0.5" oX="12" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_25_ 3" x="1400" y="1257" w="130" h="149" pX="0.5" pY="0.5" oX="69" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_31_ 3" x="1530" y="1262" w="138" h="148" pX="0.5" pY="0.5" oX="57" oY="57" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_58_ 7" x="1668" y="1265" w="175" h="147" pX="0.5" pY="0.5" oX="24" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_50_ 6" x="1843" y="1266" w="177" h="147" pX="0.5" pY="0.5" oX="11" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_31_ 3" x="2020" y="1267" w="138" h="148" pX="0.5" pY="0.5" oX="57" oY="57" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_13_ 4" x="2158" y="1268" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_13_ 4" x="2357" y="1272" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_37_ 4" x="2556" y="1274" w="186" h="148" pX="0.5" pY="0.5" oX="57" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_13_ 4" x="2742" y="1276" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_13_ 4" x="2941" y="1277" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_13_ 4" x="3140" y="1280" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_12_ 3" x="3339" y="1281" w="147" h="149" pX="0.5" pY="0.5" oX="52" oY="59" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_10_ 3" x="3486" y="1284" w="138" h="149" pX="0.5" pY="0.5" oX="56" oY="65" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_21_ 4" x="3624" y="1291" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_22_ 4" x="3823" y="1293" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_16_ 3" x="0" y="1379" w="138" h="149" pX="0.5" pY="0.5" oX="56" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_54_ 6" x="138" y="1380" w="173" h="148" pX="0.5" pY="0.5" oX="29" oY="39" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_43_ 5" x="311" y="1385" w="180" h="148" pX="0.5" pY="0.5" oX="51" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_32_ 3" x="491" y="1388" w="136" h="150" pX="0.5" pY="0.5" oX="61" oY="55" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_10_ 3" x="627" y="1391" w="140" h="151" pX="0.5" pY="0.5" oX="55" oY="62" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_23_ 4" x="767" y="1396" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_24_ 4" x="966" y="1396" w="198" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_25_ 4" x="1164" y="1399" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_11_ 3" x="1363" y="1406" w="142" h="150" pX="0.5" pY="0.5" oX="55" oY="68" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_12_ 3" x="1505" y="1410" w="142" h="150" pX="0.5" pY="0.5" oX="55" oY="68" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_49_ 6" x="1647" y="1412" w="189" h="148" pX="0.5" pY="0.5" oX="8" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_56_ 6" x="1836" y="1413" w="173" h="148" pX="0.5" pY="0.5" oX="16" oY="40" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_13_ 4" x="2009" y="1416" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_10_ 3" x="2208" y="1416" w="142" h="151" pX="0.5" pY="0.5" oX="55" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_37_ 4" x="2350" y="1420" w="186" h="148" pX="0.5" pY="0.5" oX="57" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_43_ 5" x="2536" y="1422" w="180" h="148" pX="0.5" pY="0.5" oX="51" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_49_ 6" x="2716" y="1424" w="189" h="148" pX="0.5" pY="0.5" oX="8" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_14_ 4" x="2905" y="1425" w="197" h="149" pX="0.5" pY="0.5" oX="42" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_55_ 6" x="3102" y="1428" w="175" h="149" pX="0.5" pY="0.5" oX="25" oY="35" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_46_ 5" x="3277" y="1430" w="173" h="149" pX="0.5" pY="0.5" oX="47" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_12_ 3" x="3450" y="1433" w="151" h="150" pX="0.5" pY="0.5" oX="56" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_55_ 6" x="3601" y="1439" w="175" h="149" pX="0.5" pY="0.5" oX="25" oY="35" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_33_ 4" x="3776" y="1441" w="174" h="150" pX="0.5" pY="0.5" oX="46" oY="40" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_11_ 3" x="3950" y="1441" w="145" h="151" pX="0.5" pY="0.5" oX="56" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_64_ 7" x="0" y="1528" w="178" h="150" pX="0.5" pY="0.5" oX="25" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_30_ 3" x="178" y="1528" w="133" h="151" pX="0.5" pY="0.5" oX="58" oY="55" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_33_ 4" x="311" y="1533" w="174" h="150" pX="0.5" pY="0.5" oX="46" oY="40" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_03_ 0" x="485" y="1538" w="140" h="151" pX="0.5" pY="0.5" oX="52" oY="49" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_04_ 0" x="625" y="1542" w="142" h="151" pX="0.5" pY="0.5" oX="52" oY="49" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_34_ 4" x="767" y="1544" w="175" h="151" pX="0.5" pY="0.5" oX="51" oY="34" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_36_ 4" x="942" y="1544" w="187" h="151" pX="0.5" pY="0.5" oX="51" oY="36" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_03_ 0" x="1129" y="1547" w="140" h="151" pX="0.5" pY="0.5" oX="52" oY="49" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_44_ 5" x="1269" y="1556" w="180" h="151" pX="0.5" pY="0.5" oX="40" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_54_ 6" x="1449" y="1560" w="173" h="151" pX="0.5" pY="0.5" oX="30" oY="41" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_23_ 7" x="1622" y="1560" w="197" h="152" pX="0.5" pY="0.5" oX="11" oY="68" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_11_ 3" x="1819" y="1561" w="140" h="152" pX="0.5" pY="0.5" oX="55" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_12_ 3" x="1959" y="1564" w="140" h="152" pX="0.5" pY="0.5" oX="55" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_38_ 4" x="2099" y="1567" w="182" h="152" pX="0.5" pY="0.5" oX="54" oY="44" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_20_ 6" x="2281" y="1568" w="191" h="153" pX="0.5" pY="0.5" oX="10" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_08_ 0" x="2472" y="1570" w="136" h="153" pX="0.5" pY="0.5" oX="53" oY="50" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_44_ 5" x="2608" y="1572" w="177" h="153" pX="0.5" pY="0.5" oX="47" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_57_ 7" x="2785" y="1574" w="174" h="153" pX="0.5" pY="0.5" oX="30" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_30_ 3" x="2959" y="1574" w="131" h="154" pX="0.5" pY="0.5" oX="58" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_57_ 7" x="3090" y="1577" w="174" h="153" pX="0.5" pY="0.5" oX="30" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_64_ 7" x="3264" y="1579" w="164" h="153" pX="0.5" pY="0.5" oX="32" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_11_ 3" x="3428" y="1583" w="148" h="154" pX="0.5" pY="0.5" oX="51" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_21_ 6" x="3576" y="1588" w="199" h="153" pX="0.5" pY="0.5" oX="12" oY="50" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_19_ 6" x="3775" y="1592" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_01_ 0" x="3966" y="1592" w="130" h="159" pX="0.5" pY="0.5" oX="51" oY="55" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_19_ 6" x="0" y="1679" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_19_ 6" x="191" y="1683" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_19_ 6" x="382" y="1689" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_19_ 6" x="573" y="1693" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_19_ 6" x="764" y="1695" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_34_ 4" x="955" y="1695" w="171" h="155" pX="0.5" pY="0.5" oX="49" oY="31" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_11_ 3" x="1126" y="1698" w="141" h="156" pX="0.5" pY="0.5" oX="55" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_22_ 7" x="1267" y="1707" w="178" h="155" pX="0.5" pY="0.5" oX="10" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_26_ 5" x="651" y="2167" w="191" h="163" pX="0.5" pY="0.5" oX="50" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_27_ 5" x="2089" y="2033" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_28_ 5" x="2280" y="2035" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_29_ 5" x="2471" y="2038" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_30_ 5" x="2662" y="2041" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_31_ 6" x="1445" y="1712" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_32_ 6" x="1636" y="1713" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_33_ 6" x="1827" y="1716" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_34_ 6" x="2018" y="1719" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_35_ 6" x="2209" y="1721" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_19_ 6" x="2400" y="1723" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_35_ 4" x="2591" y="1725" w="186" h="155" pX="0.5" pY="0.5" oX="46" oY="28" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_39_ 7" x="2777" y="1728" w="198" h="155" pX="0.5" pY="0.5" oX="11" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_35_ 4" x="2975" y="1730" w="186" h="155" pX="0.5" pY="0.5" oX="46" oY="28" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_22_ 7" x="3161" y="1732" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_22_ 7" x="3360" y="1737" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_22_ 7" x="3559" y="1741" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_22_ 7" x="3758" y="1746" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_32_ 3" x="3957" y="1751" w="136" h="156" pX="0.5" pY="0.5" oX="60" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_11_ 3" x="0" y="1833" w="145" h="156" pX="0.5" pY="0.5" oX="52" oY="57" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_38_ 7" x="145" y="1837" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_40_ 7" x="344" y="1843" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_14_ 4" x="543" y="1847" w="205" h="156" pX="0.5" pY="0.5" oX="36" oY="45" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_22_ 7" x="748" y="1849" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_56_ 6" x="947" y="1850" w="172" h="156" pX="0.5" pY="0.5" oX="15" oY="37" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_02_ 0" x="1119" y="1854" w="138" h="157" pX="0.5" pY="0.5" oX="49" oY="51" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_23_ 7" x="1257" y="1862" w="178" h="157" pX="0.5" pY="0.5" oX="10" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_37_ 7" x="1435" y="1866" w="199" h="157" pX="0.5" pY="0.5" oX="10" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_07_ 0" x="1634" y="1867" w="138" h="157" pX="0.5" pY="0.5" oX="55" oY="43" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_04_ 0" x="1772" y="1870" w="143" h="157" pX="0.5" pY="0.5" oX="52" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_07_ 0" x="1915" y="1873" w="138" h="157" pX="0.5" pY="0.5" oX="55" oY="43" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_28_ 3" x="2053" y="1873" w="142" h="158" pX="0.5" pY="0.5" oX="56" oY="54" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_17_ 5" x="2195" y="1875" w="191" h="158" pX="0.5" pY="0.5" oX="49" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_22_ 7" x="2386" y="1877" w="199" h="158" pX="0.5" pY="0.5" oX="10" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_45_ 5" x="2585" y="1880" w="173" h="158" pX="0.5" pY="0.5" oX="45" oY="61" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Idle_36_ 7" x="2758" y="1883" w="199" h="158" pX="0.5" pY="0.5" oX="10" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_45_ 5" x="2957" y="1885" w="173" h="158" pX="0.5" pY="0.5" oX="45" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_11_ 3" x="3130" y="1888" w="159" h="159" pX="0.5" pY="0.5" oX="45" oY="36" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_24_ 7" x="3289" y="1893" w="178" h="159" pX="0.5" pY="0.5" oX="10" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_18_ 5" x="3467" y="1897" w="172" h="159" pX="0.5" pY="0.5" oX="70" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_01_ 0" x="3639" y="1902" w="130" h="159" pX="0.5" pY="0.5" oX="51" oY="55" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_16_ 5" x="3769" y="1902" w="184" h="160" pX="0.5" pY="0.5" oX="58" oY="65" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_11_ 3" x="3953" y="1907" w="139" h="160" pX="0.5" pY="0.5" oX="56" oY="54" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_08_ 0" x="0" y="1989" w="136" h="160" pX="0.5" pY="0.5" oX="54" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_24_ 7" x="136" y="1993" w="172" h="160" pX="0.5" pY="0.5" oX="10" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_21_ 6" x="308" y="1999" w="172" h="160" pX="0.5" pY="0.5" oX="9" oY="26" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_16_ 5" x="480" y="2003" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_12_ 3" x="671" y="2005" w="153" h="161" pX="0.5" pY="0.5" oX="50" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_16_ 5" x="824" y="2006" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_17_ 5" x="1015" y="2011" w="184" h="161" pX="0.5" pY="0.5" oX="58" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Behavior_18_ 5" x="1199" y="2019" w="184" h="161" pX="0.5" pY="0.5" oX="58" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_16_ 5" x="1383" y="2023" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_23_ 7" x="1574" y="2024" w="191" h="161" pX="0.5" pY="0.5" oX="10" oY="61" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Running_06_ 0" x="1765" y="2027" w="133" h="161" pX="0.5" pY="0.5" oX="59" oY="44" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_16_ 5" x="1898" y="2031" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_27_ 5" x="2089" y="2033" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_28_ 5" x="2280" y="2035" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_29_ 5" x="2471" y="2038" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_30_ 5" x="2662" y="2041" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_18_ 5" x="2853" y="2043" w="194" h="162" pX="0.5" pY="0.5" oX="48" oY="52" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_14_ 4" x="3047" y="2047" w="214" h="162" pX="0.5" pY="0.5" oX="21" oY="40" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_17_ 5" x="3261" y="2052" w="194" h="162" pX="0.5" pY="0.5" oX="48" oY="63" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_02_ 0" x="3455" y="2056" w="143" h="162" pX="0.5" pY="0.5" oX="48" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_12_ 3" x="3598" y="2061" w="140" h="163" pX="0.5" pY="0.5" oX="56" oY="50" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_16_ 5" x="3738" y="2062" w="191" h="162" pX="0.5" pY="0.5" oX="50" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_37_ 7" x="1435" y="1866" w="199" h="157" pX="0.5" pY="0.5" oX="10" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_38_ 7" x="145" y="1837" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_39_ 7" x="2777" y="1728" w="198" h="155" pX="0.5" pY="0.5" oX="11" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Idle_40_ 7" x="344" y="1843" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_01_ 0" x="3966" y="1592" w="130" h="159" pX="0.5" pY="0.5" oX="51" oY="55" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_02_ 0" x="1119" y="1854" w="138" h="157" pX="0.5" pY="0.5" oX="49" oY="51" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_03_ 0" x="485" y="1538" w="140" h="151" pX="0.5" pY="0.5" oX="52" oY="49" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_04_ 0" x="625" y="1542" w="142" h="151" pX="0.5" pY="0.5" oX="52" oY="49" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Running_05_ 0" x="3929" y="2067" w="134" h="163" pX="0.5" pY="0.5" oX="54" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_05_ 0" x="0" y="2149" w="134" h="163" pX="0.5" pY="0.5" oX="54" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_06_ 0" x="1765" y="2027" w="133" h="161" pX="0.5" pY="0.5" oX="59" oY="44" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_07_ 0" x="1634" y="1867" w="138" h="157" pX="0.5" pY="0.5" oX="55" oY="43" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_08_ 0" x="2472" y="1570" w="136" h="153" pX="0.5" pY="0.5" oX="53" oY="50" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_09_ 1" x="527" y="93" w="206" h="110" pX="0.5" pY="0.5" oX="19" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_10_ 1" x="3115" y="342" w="188" h="120" pX="0.5" pY="0.5" oX="31" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_11_ 1" x="2189" y="708" w="181" h="133" pX="0.5" pY="0.5" oX="37" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_12_ 1" x="188" y="682" w="204" h="129" pX="0.5" pY="0.5" oX="29" oY="53" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_13_ 1" x="3847" y="472" w="225" h="123" pX="0.5" pY="0.5" oX="21" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_14_ 1" x="332" y="438" w="205" h="121" pX="0.5" pY="0.5" oX="28" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_15_ 1" x="2086" y="460" w="187" h="122" pX="0.5" pY="0.5" oX="33" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_16_ 1" x="2156" y="0" w="196" h="105" pX="0.5" pY="0.5" oX="26" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_17_ 2" x="537" y="438" w="206" h="121" pX="0.5" pY="0.5" oX="25" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_18_ 2" x="1835" y="219" w="188" h="117" pX="0.5" pY="0.5" oX="31" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_19_ 2" x="1284" y="98" w="181" h="112" pX="0.5" pY="0.5" oX="32" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_20_ 2" x="3084" y="0" w="204" h="107" pX="0.5" pY="0.5" oX="17" oY="70" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_21_ 2" x="2634" y="0" w="225" h="106" pX="0.5" pY="0.5" oX="4" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_22_ 2" x="1079" y="96" w="205" h="111" pX="0.5" pY="0.5" oX="17" oY="70" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_23_ 2" x="2928" y="341" w="187" h="120" pX="0.5" pY="0.5" oX="30" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_24_ 2" x="2726" y="222" w="196" h="118" pX="0.5" pY="0.5" oX="28" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_25_ 3" x="1402" y="1108" w="130" h="149" pX="0.5" pY="0.5" oX="69" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_26_ 3" x="1688" y="840" w="138" h="139" pX="0.5" pY="0.5" oX="63" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_27_ 3" x="1532" y="1117" w="140" h="145" pX="0.5" pY="0.5" oX="58" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_28_ 3" x="2053" y="1873" w="142" h="158" pX="0.5" pY="0.5" oX="56" oY="54" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Running_29_ 3" x="134" y="2153" w="134" h="167" pX="0.5" pY="0.5" oX="62" oY="54" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_20_ 6" x="268" y="2159" w="196" h="162" pX="0.5" pY="0.5" oX="9" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 1_24_ 7" x="464" y="2164" w="187" h="163" pX="0.5" pY="0.5" oX="21" oY="49" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle_26_ 5" x="651" y="2167" w="191" h="163" pX="0.5" pY="0.5" oX="50" oY="62" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_29_ 3" x="842" y="2167" w="134" h="167" pX="0.5" pY="0.5" oX="62" oY="54" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_13_ 4" x="976" y="2172" w="217" h="164" pX="0.5" pY="0.5" oX="27" oY="44" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_22_ 7" x="1193" y="2180" w="179" h="165" pX="0.5" pY="0.5" oX="13" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_14_ 4" x="1372" y="2185" w="217" h="164" pX="0.5" pY="0.5" oX="27" oY="44" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_15_ 4" x="1589" y="2188" w="216" h="164" pX="0.5" pY="0.5" oX="27" oY="44" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_19_ 6" x="1805" y="2192" w="213" h="165" pX="0.5" pY="0.5" oX="4" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_20_ 6" x="2018" y="2194" w="213" h="165" pX="0.5" pY="0.5" oX="4" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_21_ 6" x="2231" y="2196" w="213" h="165" pX="0.5" pY="0.5" oX="4" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_24_ 7" x="2444" y="2199" w="182" h="166" pX="0.5" pY="0.5" oX="10" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_23_ 7" x="2626" y="2202" w="190" h="167" pX="0.5" pY="0.5" oX="11" oY="59" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_23_ 7" x="2816" y="2205" w="205" h="167" pX="0.5" pY="0.5" oX="9" oY="53" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_20_ 6" x="3021" y="2209" w="211" h="168" pX="0.5" pY="0.5" oX="14" oY="42" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_22_ 7" x="3232" y="2214" w="217" h="168" pX="0.5" pY="0.5" oX="6" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_12_ 3" x="3449" y="2218" w="140" h="169" pX="0.5" pY="0.5" oX="56" oY="41" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_23_ 7" x="3589" y="2224" w="217" h="168" pX="0.5" pY="0.5" oX="6" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_24_ 7" x="3806" y="2230" w="217" h="168" pX="0.5" pY="0.5" oX="6" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_06_ 0" x="0" y="2312" w="130" h="169" pX="0.5" pY="0.5" oX="62" oY="46" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_23_ 7" x="130" y="2321" w="205" h="168" pX="0.5" pY="0.5" oX="10" oY="55" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Dead To Down_16_ 5" x="335" y="2327" w="178" h="169" pX="0.5" pY="0.5" oX="66" oY="50" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Walking_28_ 3" x="513" y="2330" w="144" h="170" pX="0.5" pY="0.5" oX="55" oY="48" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_18_ 5" x="657" y="2330" w="178" h="174" pX="0.5" pY="0.5" oX="66" oY="50" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_23_ 7" x="835" y="2336" w="201" h="171" pX="0.5" pY="0.5" oX="8" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_17_ 5" x="1036" y="2345" w="188" h="171" pX="0.5" pY="0.5" oX="55" oY="53" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_17_ 5" x="1224" y="2349" w="196" h="171" pX="0.5" pY="0.5" oX="45" oY="53" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_18_ 5" x="1420" y="2352" w="194" h="172" pX="0.5" pY="0.5" oX="44" oY="52" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_17_ 5" x="1614" y="2352" w="187" h="177" pX="0.5" pY="0.5" oX="58" oY="53" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_18_ 5" x="1801" y="2357" w="213" h="173" pX="0.5" pY="0.5" oX="33" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_16_ 5" x="2014" y="2359" w="213" h="174" pX="0.5" pY="0.5" oX="33" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Critical HP_17_ 5" x="2227" y="2361" w="213" h="174" pX="0.5" pY="0.5" oX="33" oY="56" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_18_ 5" x="2440" y="2365" w="172" h="178" pX="0.5" pY="0.5" oX="69" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_24_ 7" x="2612" y="2369" w="195" h="175" pX="0.5" pY="0.5" oX="11" oY="49" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_17_ 5" x="2807" y="2372" w="194" h="175" pX="0.5" pY="0.5" oX="48" oY="50" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_24_ 7" x="3001" y="2377" w="198" h="175" pX="0.5" pY="0.5" oX="10" oY="47" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_17_ 5" x="3199" y="2382" w="211" h="177" pX="0.5" pY="0.5" oX="25" oY="34" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_23_ 7" x="3410" y="2392" w="214" h="178" pX="0.5" pY="0.5" oX="15" oY="31" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_12_ 3" x="3624" y="2392" w="139" h="185" pX="0.5" pY="0.5" oX="56" oY="29" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Attack 2_24_ 7" x="3763" y="2398" w="183" h="181" pX="0.5" pY="0.5" oX="13" oY="41" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_24_ 7" x="0" y="2489" w="199" h="184" pX="0.5" pY="0.5" oX="13" oY="37" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_18_ 5" x="199" y="2496" w="199" h="186" pX="0.5" pY="0.5" oX="39" oY="37" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Idle Fidget_18_ 5" x="398" y="2500" w="185" h="194" pX="0.5" pY="0.5" oX="56" oY="31" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_01_ 0" x="937" y="962" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Use Skill_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_30_ 3" x="178" y="1528" w="133" h="151" pX="0.5" pY="0.5" oX="58" oY="55" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_31_ 3" x="1530" y="1262" w="138" h="148" pX="0.5" pY="0.5" oX="57" oY="57" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_32_ 3" x="491" y="1388" w="136" h="150" pX="0.5" pY="0.5" oX="61" oY="55" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_33_ 4" x="3776" y="1441" w="174" h="150" pX="0.5" pY="0.5" oX="46" oY="40" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_34_ 4" x="767" y="1544" w="175" h="151" pX="0.5" pY="0.5" oX="51" oY="34" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_35_ 4" x="2591" y="1725" w="186" h="155" pX="0.5" pY="0.5" oX="46" oY="28" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_36_ 4" x="942" y="1544" w="187" h="151" pX="0.5" pY="0.5" oX="51" oY="36" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_37_ 4" x="2556" y="1274" w="186" h="148" pX="0.5" pY="0.5" oX="57" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_38_ 4" x="1044" y="1249" w="181" h="147" pX="0.5" pY="0.5" oX="55" oY="44" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_39_ 4" x="526" y="1097" w="177" h="144" pX="0.5" pY="0.5" oX="50" oY="44" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_40_ 4" x="703" y="1100" w="178" h="144" pX="0.5" pY="0.5" oX="47" oY="42" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_41_ 5" x="3008" y="848" w="189" h="140" pX="0.5" pY="0.5" oX="53" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_42_ 5" x="2893" y="1131" w="175" h="145" pX="0.5" pY="0.5" oX="63" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_43_ 5" x="311" y="1385" w="180" h="148" pX="0.5" pY="0.5" oX="51" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_44_ 5" x="2608" y="1572" w="177" h="153" pX="0.5" pY="0.5" oX="47" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_45_ 5" x="2585" y="1880" w="173" h="158" pX="0.5" pY="0.5" oX="45" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_46_ 5" x="3845" y="1147" w="173" h="146" pX="0.5" pY="0.5" oX="48" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_47_ 5" x="2696" y="711" w="175" h="134" pX="0.5" pY="0.5" oX="50" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_48_ 5" x="1826" y="840" w="173" h="139" pX="0.5" pY="0.5" oX="61" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_49_ 6" x="1647" y="1412" w="189" h="148" pX="0.5" pY="0.5" oX="8" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_50_ 6" x="1225" y="1252" w="175" h="147" pX="0.5" pY="0.5" oX="12" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_51_ 6" x="881" y="1104" w="180" h="144" pX="0.5" pY="0.5" oX="19" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_52_ 6" x="2165" y="981" w="177" h="142" pX="0.5" pY="0.5" oX="26" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_53_ 6" x="413" y="954" w="173" h="141" pX="0.5" pY="0.5" oX="32" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_54_ 6" x="138" y="1380" w="173" h="148" pX="0.5" pY="0.5" oX="29" oY="39" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_55_ 6" x="3102" y="1428" w="175" h="149" pX="0.5" pY="0.5" oX="25" oY="35" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_56_ 6" x="1836" y="1413" w="173" h="148" pX="0.5" pY="0.5" oX="16" oY="40" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_57_ 7" x="2785" y="1574" w="174" h="153" pX="0.5" pY="0.5" oX="30" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_58_ 7" x="1668" y="1265" w="175" h="147" pX="0.5" pY="0.5" oX="24" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_59_ 7" x="659" y="818" w="186" h="138" pX="0.5" pY="0.5" oX="18" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_60_ 7" x="1168" y="825" w="187" h="138" pX="0.5" pY="0.5" oX="12" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_61_ 7" x="3019" y="714" w="186" h="134" pX="0.5" pY="0.5" oX="7" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_62_ 7" x="2485" y="985" w="181" h="142" pX="0.5" pY="0.5" oX="14" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_63_ 7" x="138" y="1234" w="177" h="146" pX="0.5" pY="0.5" oX="23" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Running_64_ 7" x="0" y="1528" w="178" h="150" pX="0.5" pY="0.5" oX="25" oY="64" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Use Skill_01_ 0" x="1075" y="963" w="138" h="142" pX="0.5" pY="0.5" oX="56" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_02_ 0" x="3068" y="1132" w="145" h="145" pX="0.5" pY="0.5" oX="53" oY="58" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_03_ 0" x="0" y="807" w="140" h="137" pX="0.5" pY="0.5" oX="54" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_04_ 1" x="1438" y="328" w="186" h="119" pX="0.5" pY="0.5" oX="45" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_05_ 1" x="743" y="442" w="188" h="121" pX="0.5" pY="0.5" oX="43" oY="70" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_06_ 1" x="392" y="683" w="179" h="129" pX="0.5" pY="0.5" oX="45" oY="60" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_07_ 2" x="1069" y="207" w="186" h="116" pX="0.5" pY="0.5" oX="20" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_08_ 2" x="2273" y="460" w="188" h="122" pX="0.5" pY="0.5" oX="19" oY="70" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_09_ 2" x="2238" y="582" w="179" h="126" pX="0.5" pY="0.5" oX="26" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_10_ 3" x="0" y="1085" w="138" h="147" pX="0.5" pY="0.5" oX="56" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_11_ 3" x="0" y="1833" w="145" h="156" pX="0.5" pY="0.5" oX="52" oY="57" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_12_ 3" x="3449" y="2218" w="140" h="169" pX="0.5" pY="0.5" oX="56" oY="41" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_13_ 4" x="2009" y="1416" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_14_ 4" x="543" y="1847" w="205" h="156" pX="0.5" pY="0.5" oX="36" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_15_ 4" x="3671" y="1002" w="199" h="143" pX="0.5" pY="0.5" oX="38" oY="50" oW="250" oH="250"/>
   <sprite n="MeatSpider1_Use Skill_16_ 5" x="824" y="2006" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Block_22_ 7" x="3360" y="1737" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Evade_16_ 5" x="1383" y="2023" w="191" h="161" pX="0.5" pY="0.5" oX="50" oY="64" oW="250" oH="250"/>
-  <sprite n="MeatSpider1_Get Hit_13_ 4" x="2941" y="1277" w="199" h="148" pX="0.5" pY="0.5" oX="41" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_17_ 5" x="1224" y="2349" w="196" h="171" pX="0.5" pY="0.5" oX="45" oY="53" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_18_ 5" x="199" y="2496" w="199" h="186" pX="0.5" pY="0.5" oX="39" oY="37" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_19_ 6" x="2400" y="1723" w="191" h="154" pX="0.5" pY="0.5" oX="9" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_20_ 6" x="268" y="2159" w="196" h="162" pX="0.5" pY="0.5" oX="9" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_21_ 6" x="3576" y="1588" w="199" h="153" pX="0.5" pY="0.5" oX="12" oY="50" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_22_ 7" x="748" y="1849" w="199" h="156" pX="0.5" pY="0.5" oX="10" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_23_ 7" x="2816" y="2205" w="205" h="167" pX="0.5" pY="0.5" oX="9" oY="53" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Use Skill_24_ 7" x="0" y="2489" w="199" h="184" pX="0.5" pY="0.5" oX="13" oY="37" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_01_ 0" x="3639" y="1902" w="130" h="159" pX="0.5" pY="0.5" oX="51" oY="55" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_02_ 0" x="3455" y="2056" w="143" h="162" pX="0.5" pY="0.5" oX="48" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_03_ 0" x="1129" y="1547" w="140" h="151" pX="0.5" pY="0.5" oX="52" oY="49" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_04_ 0" x="1772" y="1870" w="143" h="157" pX="0.5" pY="0.5" oX="52" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_05_ 0" x="0" y="2149" w="134" h="163" pX="0.5" pY="0.5" oX="54" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_06_ 0" x="0" y="2312" w="130" h="169" pX="0.5" pY="0.5" oX="62" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_07_ 0" x="1915" y="1873" w="138" h="157" pX="0.5" pY="0.5" oX="55" oY="43" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_08_ 0" x="0" y="1989" w="136" h="160" pX="0.5" pY="0.5" oX="54" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_09_ 1" x="733" y="93" w="206" h="110" pX="0.5" pY="0.5" oX="19" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_10_ 1" x="2922" y="223" w="193" h="118" pX="0.5" pY="0.5" oX="28" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_11_ 1" x="2370" y="708" w="181" h="133" pX="0.5" pY="0.5" oX="37" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_12_ 1" x="0" y="555" w="225" h="123" pX="0.5" pY="0.5" oX="17" oY="60" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_13_ 1" x="330" y="559" w="225" h="123" pX="0.5" pY="0.5" oX="21" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_14_ 1" x="3115" y="224" w="215" h="118" pX="0.5" pY="0.5" oX="20" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_15_ 1" x="2461" y="460" w="187" h="122" pX="0.5" pY="0.5" oX="33" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_16_ 1" x="3303" y="343" w="204" h="120" pX="0.5" pY="0.5" oX="33" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_17_ 2" x="931" y="442" w="206" h="121" pX="0.5" pY="0.5" oX="25" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_18_ 2" x="2417" y="582" w="193" h="126" pX="0.5" pY="0.5" oX="29" oY="60" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_19_ 2" x="1690" y="101" w="181" h="112" pX="0.5" pY="0.5" oX="32" oY="67" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_20_ 2" x="1465" y="99" w="225" h="111" pX="0.5" pY="0.5" oX="8" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_21_ 2" x="2859" y="0" w="225" h="106" pX="0.5" pY="0.5" oX="4" oY="73" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_22_ 2" x="3533" y="0" w="215" h="108" pX="0.5" pY="0.5" oX="15" oY="69" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_23_ 2" x="3507" y="344" w="187" h="120" pX="0.5" pY="0.5" oX="30" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_24_ 2" x="3216" y="586" w="204" h="128" pX="0.5" pY="0.5" oX="13" oY="60" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_25_ 3" x="1400" y="1257" w="130" h="149" pX="0.5" pY="0.5" oX="69" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_26_ 3" x="2342" y="981" w="143" h="142" pX="0.5" pY="0.5" oX="59" oY="60" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_27_ 3" x="3213" y="1135" w="140" h="145" pX="0.5" pY="0.5" oX="58" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_28_ 3" x="513" y="2330" w="144" h="170" pX="0.5" pY="0.5" oX="55" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_29_ 3" x="842" y="2167" w="134" h="167" pX="0.5" pY="0.5" oX="62" oY="54" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_30_ 3" x="2959" y="1574" w="131" h="154" pX="0.5" pY="0.5" oX="58" oY="56" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_31_ 3" x="2020" y="1267" w="138" h="148" pX="0.5" pY="0.5" oX="57" oY="57" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_32_ 3" x="3957" y="1751" w="136" h="156" pX="0.5" pY="0.5" oX="60" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_33_ 4" x="311" y="1533" w="174" h="150" pX="0.5" pY="0.5" oX="46" oY="40" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_34_ 4" x="955" y="1695" w="171" h="155" pX="0.5" pY="0.5" oX="49" oY="31" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_35_ 4" x="2975" y="1730" w="186" h="155" pX="0.5" pY="0.5" oX="46" oY="28" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_36_ 4" x="586" y="956" w="178" h="141" pX="0.5" pY="0.5" oX="56" oY="46" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_37_ 4" x="2350" y="1420" w="186" h="148" pX="0.5" pY="0.5" oX="57" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_38_ 4" x="2099" y="1567" w="182" h="152" pX="0.5" pY="0.5" oX="54" oY="44" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_39_ 4" x="1061" y="1105" w="177" h="144" pX="0.5" pY="0.5" oX="50" oY="44" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_40_ 4" x="1238" y="1108" w="164" h="144" pX="0.5" pY="0.5" oX="54" oY="42" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_41_ 5" x="3702" y="862" w="189" h="140" pX="0.5" pY="0.5" oX="53" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_42_ 5" x="845" y="821" w="178" h="138" pX="0.5" pY="0.5" oX="62" oY="65" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_43_ 5" x="2536" y="1422" w="180" h="148" pX="0.5" pY="0.5" oX="51" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_44_ 5" x="1269" y="1556" w="180" h="151" pX="0.5" pY="0.5" oX="40" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_45_ 5" x="2957" y="1885" w="173" h="158" pX="0.5" pY="0.5" oX="45" oY="61" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_46_ 5" x="3277" y="1430" w="173" h="149" pX="0.5" pY="0.5" oX="47" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_47_ 5" x="3205" y="714" w="175" h="134" pX="0.5" pY="0.5" oX="50" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_48_ 5" x="1550" y="572" w="172" h="125" pX="0.5" pY="0.5" oX="63" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_49_ 6" x="2716" y="1424" w="189" h="148" pX="0.5" pY="0.5" oX="8" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_50_ 6" x="1843" y="1266" w="177" h="147" pX="0.5" pY="0.5" oX="11" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_51_ 6" x="1672" y="1121" w="180" h="144" pX="0.5" pY="0.5" oX="19" oY="47" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_52_ 6" x="3838" y="726" w="180" h="136" pX="0.5" pY="0.5" oX="30" oY="48" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_53_ 6" x="764" y="959" w="173" h="141" pX="0.5" pY="0.5" oX="32" oY="45" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_54_ 6" x="1449" y="1560" w="173" h="151" pX="0.5" pY="0.5" oX="30" oY="41" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_55_ 6" x="3601" y="1439" w="175" h="149" pX="0.5" pY="0.5" oX="25" oY="35" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_56_ 6" x="947" y="1850" w="172" h="156" pX="0.5" pY="0.5" oX="15" oY="37" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_57_ 7" x="3090" y="1577" w="174" h="153" pX="0.5" pY="0.5" oX="30" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_58_ 7" x="1852" y="1122" w="171" h="144" pX="0.5" pY="0.5" oX="30" oY="63" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_59_ 7" x="1355" y="828" w="186" h="138" pX="0.5" pY="0.5" oX="18" oY="62" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_60_ 7" x="1999" y="841" w="178" h="139" pX="0.5" pY="0.5" oX="16" oY="60" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_61_ 7" x="3380" y="717" w="186" h="134" pX="0.5" pY="0.5" oX="7" oY="66" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_62_ 7" x="334" y="812" w="182" h="137" pX="0.5" pY="0.5" oX="14" oY="68" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_63_ 7" x="315" y="1239" w="177" h="146" pX="0.5" pY="0.5" oX="23" oY="64" oW="250" oH="250"/>
+  <sprite n="MeatSpider1_Walking_64_ 7" x="3264" y="1579" w="164" h="153" pX="0.5" pY="0.5" oX="32" oY="63" oW="250" oH="250"/>
 </TextureAtlas>

@@ -42,7 +42,7 @@ http://opengameart.org/content/low-poly-plants
 
 tree_dead/dead_trees.blend
 Artist: p0ss (CC-BY 3.0)
-http://opengameart.org/content/3-dead-trees
+http://opengameart.org/content/3-dying-trees
 
 tree_two/two_trees.blend
 Artist: Zuendholz (CC0)

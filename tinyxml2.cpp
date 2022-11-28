@@ -2440,7 +2440,7 @@ XMLError XMLDocument::Parse( const char* xml, size_t nBytes )
     if ( Error() ) {
         // clean up now essentially dangling memory.
         // and the parse fail can put objects in the
-        // pools that are dead and inaccessible.
+        // pools that are dying and inaccessible.
         DeleteChildren();
         _elementPool.Clear();
         _attributePool.Clear();

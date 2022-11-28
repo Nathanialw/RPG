@@ -18,6 +18,7 @@
 #include "world_grid.h"
 #include "dynamic_quad_tree.h"
 #include "player_control.h"
+#include "death_control.h"
 
 namespace Rendering {
 	namespace {
@@ -124,48 +125,6 @@ namespace Rendering {
         }
     }
 
-    SDL_FRect Scale_Sprite_for_Render(SDL_Rect& clippedSprite, float& scale) {
-        SDL_FRect fScaledImage = Utilities::SDL_Rect_To_SDL_FRect(clippedSprite);
-        fScaledImage = {
-                fScaledImage.x - (fScaledImage.w * scale),
-                fScaledImage.y - (fScaledImage.h * scale),
-                fScaledImage.w * scale,
-                fScaledImage.h * scale
-        };
-        return fScaledImage;
-    }
-
-    bool Death_Sequence (Component::Direction &direction, entt::entity entity, Component::Scale &scale, Component::Sprite_Sheet_Info &sheetData, Component::Action& action, int &currentFrame, int &numFrames) {
-        if (action.state == Component::dead) {
-            if (currentFrame < numFrames - 1) {
-                currentFrame++;
-                // and if it is an item
-                if (currentFrame == numFrames - 1) {
-                    if (sheetData.sheetData) {
-                        auto type = World::zone.get<Component::Entity_Type>(entity);
-                        if (type == Component::Entity_Type::item) {
-                            auto offset = World::zone.get<Component::Sprite_Offset>(entity);
-                            auto &position = World::zone.get<Component::Position>(entity);
-
-                            SDL_Rect clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].clip;
-                            SDL_FRect renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
-                            renderRect.x = ((sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].x_offset) * scale.scale) + position.x - offset.x;
-                            renderRect.y = ((sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].y_offset) * scale.scale) + position.y - offset.y;
-
-                            World::zone.emplace<Component::Interaction_Rect>(entity, (renderRect.w / 2.0f), renderRect.h);
-                            World::zone.emplace_or_replace<Ground_Item>(entity, Utilities::Get_FRect_From_Point_Radius(renderRect.w, position.x, position.y));
-                            //needs radius to be able to be picked up
-                            World::zone.emplace<Component::Radius>(entity, offset.x);
-                        }
-                    }
-
-                }
-            }
-            return true;
-        }
-        return false;
-    }
-
     void Frame_Increment(entt::entity &entity, Component::Scale &scale, Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
         sheetData.frameTime += Timer::timeStep;
         if (sheetData.finalFrame == Component::finalFrame) {
@@ -173,7 +132,7 @@ namespace Rendering {
         }
         if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
             if (sheetData.finalFrame == Component::firstFrame) {
-                if (action.state == Component::dead) {
+                if (action.state == Component::dying || action.state == Component::dead) {
 
                 }
                 else if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::cast && action.state != Component::casting) {
@@ -196,7 +155,7 @@ namespace Rendering {
                 }
             }
 
-            if (Death_Sequence(direction, entity, scale, sheetData, action, sheetData.currentFrame, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
+            if (Death_Control::Death_Sequence(direction, entity, scale, sheetData, action, sheetData.currentFrame, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
                 return;
             }
 
@@ -268,7 +227,7 @@ namespace Rendering {
                 /// reset at the start so it had a chance loop through the logic once to trigger end of state actions
                 if (sheetData.finalFrame == Component::firstFrame) {
 
-                    if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::dead) {
+                    if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::dying && action.state != Component::dead) {
                         action.state = Component::idle;
                     } else if (action.state == Component::struck || action.state == Component::attack) {
                         action.state = Component::idle;
@@ -277,7 +236,7 @@ namespace Rendering {
                     sheetData.finalFrame = Component::normalFrame;
                 }
 
-                if (Death_Sequence(direction, entity, scale, sheetData, action, sheetData.currentFrame, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
+                if (Death_Control::Death_Sequence(direction, entity, scale, sheetData, action, sheetData.currentFrame, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
                     return;
                 }
                 ///render first frame before increment
@@ -310,11 +269,14 @@ namespace Rendering {
         }
     }
 
-    SDL_FRect Position_For_Render(std::unordered_map<std::string, Component::Sheet_Data>*sheetData, std::string &name, int &frameIndex, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect) {
+    SDL_FRect Position_For_Render(std::unordered_map<std::string, Component::Sheet_Data>*sheetData, std::string &name, int &frameIndex, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect, Component::Interaction_Rect &interactionRect) {
         clipRect = sheetData->at(name).frameList[frameIndex].clip;
-        renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
-        renderRect.x = sheetData->at(name).frameList[frameIndex].x_offset * scale.scale - offset.x + position.x - camera.screen.x + 20.0f;
-        renderRect.y = sheetData->at(name).frameList[frameIndex].y_offset * scale.scale - offset.y + position.y - camera.screen.y + 20.0f;
+        renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
+        renderRect.x = sheetData->at(name).frameList[frameIndex].x_offset * scale.scale - offset.x + position.x + 20.0f;
+        renderRect.y = sheetData->at(name).frameList[frameIndex].y_offset * scale.scale - offset.y + position.y + 20.0f;
+        interactionRect.rect = renderRect;
+        renderRect.x -= camera.screen.x;
+        renderRect.y -= camera.screen.y;
         return renderRect;
     }
 
@@ -336,7 +298,7 @@ namespace Rendering {
                     /// get/update the clip rect
                 Get_Spritesheet_Type(clipRect, sheetData, direction, action);
                     /// set the render rect size and position
-                renderRect = Scale_Sprite_for_Render(clipRect, scale.scale);
+                renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
                 renderRect.x = (position.x - camera.screen.x - spriteOffset.x);
                 renderRect.y = (position.y - camera.screen.y - spriteOffset.y);
 
@@ -352,14 +314,28 @@ namespace Rendering {
 
             else if (sheetData.sheetData) {
                 Frame_Increment(entity, scale, sheetData, action, direction);
-                renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect);
+                if (zone.any_of<Component::Interaction_Rect>(entity)) {
+                    auto &interactionRect = zone.get<Component::Interaction_Rect>(entity);
+                    renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
+                }
+                else {
+                    Component::Interaction_Rect interactionRect = {};
+                    renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
+                }
                 texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
                 SDL_SetTextureAlphaMod(texture, renderable.alpha);
                 Graphics::Render_FRect(texture, &clipRect, &renderRect);
 
                 for (auto item : sheetData.equipmentSheets) {
                     if (item.ItemSheetData) {
-                        renderRect = Position_For_Render(item.ItemSheetData, item.name, item.FrameIndex, position, camera, scale, spriteOffset, clipRect, renderRect);
+                        if (zone.any_of<Component::Interaction_Rect>(item.itemID)) {
+                            auto &itemInteractionRect = zone.get<Component::Interaction_Rect>(item.itemID);
+                            renderRect = Position_For_Render(item.ItemSheetData, item.name, item.FrameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, itemInteractionRect);
+                        }
+                        else {
+                            Component::Interaction_Rect itemInteractionRect = {};
+                            renderRect = Position_For_Render(item.ItemSheetData, item.name, item.FrameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, itemInteractionRect);
+                        }
                         texture = item.ItemSheetData->at(item.name).texture;
                         SDL_SetTextureAlphaMod(texture, renderable.alpha);
                         Graphics::Render_FRect(texture, &clipRect, &renderRect);
@@ -646,12 +622,8 @@ namespace Rendering {
 			Add_Remove_Renderable_Component(zone, camera);
 			sort_Positions(zone);
 			Render_Map(zone, Maps::map, camera);
-			Dynamic_Quad_Tree::Emplace_Objects_In_Quad_Tree(World::zone);
-			Dynamic_Quad_Tree::Update_Quad_Tree_Positions(World::zone);
 			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
-			Dynamic_Quad_Tree::Remove_From_Tree(zone);
-            // draw rects
-//			Dynamic_Quad_Tree::Draw_Tree_Object_Rects(zone);
+
 //            RenderLine(zone, camera);
             //
 			Items::Show_Ground_Items(zone, camera);
@@ -676,7 +648,10 @@ namespace Rendering {
                     SDL_RenderDrawRectF(Graphics::renderer, &box.box);
                 }
             }
-            SDL_RenderPresent(Graphics::renderer);
 		}
 	}
+
+    void Present() {
+        SDL_RenderPresent(Graphics::renderer);
+    }
 }

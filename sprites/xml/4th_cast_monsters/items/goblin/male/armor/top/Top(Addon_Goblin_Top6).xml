@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Top(Addon_Goblin_Top6).png" width="711" height="701" scale="1" format="RGBA8888">
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_01_ 0" x="543" y="587" w="23" h="37" pX="0.5" pY="0.5" oX="88" oY="73" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_02_ 0" x="453" y="161" w="25" h="40" pX="0.5" pY="0.5" oX="90" oY="66" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_03_ 0" x="631" y="664" w="24" h="32" pX="0.5" pY="0.5" oX="89" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_04_ 1" x="530" y="39" w="27" h="39" pX="0.5" pY="0.5" oX="106" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_05_ 1" x="481" y="321" w="24" h="39" pX="0.5" pY="0.5" oX="115" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_06_ 1" x="430" y="321" w="27" h="40" pX="0.5" pY="0.5" oX="94" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_07_ 2" x="483" y="79" w="26" h="39" pX="0.5" pY="0.5" oX="72" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_08_ 2" x="610" y="0" w="25" h="37" pX="0.5" pY="0.5" oX="65" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_09_ 2" x="104" y="52" w="28" h="47" pX="0.5" pY="0.5" oX="83" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_10_ 3" x="356" y="205" w="25" h="41" pX="0.5" pY="0.5" oX="90" oY="88" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_11_ 3" x="457" y="241" w="24" h="40" pX="0.5" pY="0.5" oX="89" oY="94" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_12_ 3" x="174" y="88" w="26" h="44" pX="0.5" pY="0.5" oX="90" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_13_ 4" x="430" y="161" w="23" h="40" pX="0.5" pY="0.5" oX="100" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_14_ 4" x="110" y="0" w="24" h="51" pX="0.5" pY="0.5" oX="106" oY="59" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_15_ 4" x="27" y="591" w="29" h="37" pX="0.5" pY="0.5" oX="86" oY="87" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_16_ 5" x="472" y="434" w="23" h="39" pX="0.5" pY="0.5" oX="100" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_17_ 5" x="561" y="463" w="23" h="38" pX="0.5" pY="0.5" oX="105" oY="91" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_18_ 5" x="174" y="0" w="26" h="44" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_19_ 6" x="610" y="533" w="22" h="36" pX="0.5" pY="0.5" oX="81" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_20_ 6" x="410" y="553" w="23" h="38" pX="0.5" pY="0.5" oX="75" oY="70" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_21_ 6" x="90" y="201" w="25" h="43" pX="0.5" pY="0.5" oX="88" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_22_ 7" x="505" y="472" w="26" h="39" pX="0.5" pY="0.5" oX="81" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_23_ 7" x="284" y="410" w="24" h="40" pX="0.5" pY="0.5" oX="74" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 1_24_ 7" x="26" y="210" w="29" h="43" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_01_ 0" x="509" y="156" w="24" h="39" pX="0.5" pY="0.5" oX="89" oY="64" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_02_ 0" x="509" y="195" w="22" h="39" pX="0.5" pY="0.5" oX="91" oY="60" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_03_ 0" x="496" y="662" w="25" h="31" pX="0.5" pY="0.5" oX="86" oY="87" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_04_ 1" x="457" y="281" w="26" h="40" pX="0.5" pY="0.5" oX="112" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_05_ 1" x="457" y="321" w="24" h="40" pX="0.5" pY="0.5" oX="117" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_06_ 1" x="200" y="88" w="30" h="44" pX="0.5" pY="0.5" oX="91" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_07_ 2" x="25" y="514" w="26" h="39" pX="0.5" pY="0.5" oX="66" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_08_ 2" x="531" y="195" w="26" h="39" pX="0.5" pY="0.5" oX="62" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_09_ 2" x="239" y="628" w="29" h="36" pX="0.5" pY="0.5" oX="83" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_10_ 3" x="432" y="81" w="27" h="40" pX="0.5" pY="0.5" oX="90" oY="95" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_11_ 3" x="0" y="166" w="25" h="45" pX="0.5" pY="0.5" oX="90" oY="91" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_12_ 3" x="249" y="236" w="25" h="42" pX="0.5" pY="0.5" oX="93" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_13_ 4" x="432" y="201" w="22" h="40" pX="0.5" pY="0.5" oX="107" oY="67" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_14_ 4" x="152" y="176" w="23" h="43" pX="0.5" pY="0.5" oX="109" oY="63" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_15_ 4" x="491" y="626" w="26" h="36" pX="0.5" pY="0.5" oX="90" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_16_ 5" x="505" y="550" w="23" h="38" pX="0.5" pY="0.5" oX="107" oY="91" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_17_ 5" x="211" y="553" w="23" h="38" pX="0.5" pY="0.5" oX="109" oY="92" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_18_ 5" x="233" y="131" w="27" h="43" pX="0.5" pY="0.5" oX="93" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_19_ 6" x="635" y="105" w="21" h="35" pX="0.5" pY="0.5" oX="76" oY="70" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_20_ 6" x="477" y="551" w="26" h="38" pX="0.5" pY="0.5" oX="71" oY="66" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_21_ 6" x="422" y="664" w="25" h="31" pX="0.5" pY="0.5" oX="85" oY="90" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_22_ 7" x="0" y="410" w="26" h="40" pX="0.5" pY="0.5" oX="74" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_23_ 7" x="75" y="514" w="24" h="39" pX="0.5" pY="0.5" oX="71" oY="91" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Attack 2_24_ 7" x="0" y="254" w="27" h="42" pX="0.5" pY="0.5" oX="88" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_01_ 0" x="175" y="261" w="20" h="24" pX="0.5" pY="0.5" oX="91" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_02_ 0" x="154" y="92" w="20" h="24" pX="0.5" pY="0.5" oX="91" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_03_ 0" x="110" y="384" w="21" h="25" pX="0.5" pY="0.5" oX="91" oY="96" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_04_ 1" x="79" y="628" w="31" h="36" pX="0.5" pY="0.5" oX="95" oY="98" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_05_ 1" x="580" y="113" w="29" h="37" pX="0.5" pY="0.5" oX="97" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_06_ 1" x="560" y="231" w="29" h="37" pX="0.5" pY="0.5" oX="97" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_07_ 2" x="657" y="0" w="31" h="35" pX="0.5" pY="0.5" oX="78" oY="98" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_08_ 2" x="602" y="641" w="29" h="32" pX="0.5" pY="0.5" oX="78" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_09_ 2" x="655" y="664" w="29" h="32" pX="0.5" pY="0.5" oX="78" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_10_ 3" x="200" y="0" w="23" h="44" pX="0.5" pY="0.5" oX="90" oY="95" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_11_ 3" x="104" y="99" w="23" h="45" pX="0.5" pY="0.5" oX="90" oY="95" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_12_ 3" x="203" y="175" w="23" h="43" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_13_ 4" x="391" y="673" w="31" h="28" pX="0.5" pY="0.5" oX="92" oY="98" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_14_ 4" x="521" y="661" w="30" h="29" pX="0.5" pY="0.5" oX="93" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_15_ 4" x="565" y="643" w="30" h="30" pX="0.5" pY="0.5" oX="93" oY="96" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_16_ 5" x="47" y="164" w="30" h="44" pX="0.5" pY="0.5" oX="93" oY="94" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_17_ 5" x="230" y="88" w="29" h="43" pX="0.5" pY="0.5" oX="94" oY="95" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_18_ 5" x="58" y="293" w="29" h="42" pX="0.5" pY="0.5" oX="94" oY="96" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_19_ 6" x="56" y="384" w="30" h="25" pX="0.5" pY="0.5" oX="81" oY="99" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_20_ 6" x="189" y="384" w="29" h="26" pX="0.5" pY="0.5" oX="81" oY="98" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_21_ 6" x="683" y="35" w="28" h="25" pX="0.5" pY="0.5" oX="81" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_22_ 7" x="77" y="157" w="32" h="44" pX="0.5" pY="0.5" oX="81" oY="94" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_23_ 7" x="27" y="253" w="31" h="42" pX="0.5" pY="0.5" oX="81" oY="95" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Behavior_24_ 7" x="203" y="132" w="30" h="43" pX="0.5" pY="0.5" oX="81" oY="95" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_01_ 0" x="0" y="628" w="27" h="36" pX="0.5" pY="0.5" oX="82" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_02_ 0" x="604" y="424" w="24" h="37" pX="0.5" pY="0.5" oX="83" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_03_ 0" x="663" y="597" w="23" h="34" pX="0.5" pY="0.5" oX="85" oY="72" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_04_ 1" x="430" y="281" w="27" h="40" pX="0.5" pY="0.5" oX="90" oY="69" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_05_ 1" x="356" y="246" w="27" h="41" pX="0.5" pY="0.5" oX="94" oY="69" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_06_ 1" x="331" y="415" w="25" h="40" pX="0.5" pY="0.5" oX="98" oY="70" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_07_ 2" x="610" y="461" w="25" h="36" pX="0.5" pY="0.5" oX="88" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_08_ 2" x="632" y="533" w="24" h="35" pX="0.5" pY="0.5" oX="86" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_09_ 2" x="44" y="664" w="24" h="33" pX="0.5" pY="0.5" oX="81" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_10_ 3" x="56" y="343" w="27" h="41" pX="0.5" pY="0.5" oX="95" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_11_ 3" x="83" y="343" w="27" h="41" pX="0.5" pY="0.5" oX="95" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_12_ 3" x="0" y="211" w="26" h="43" pX="0.5" pY="0.5" oX="96" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_13_ 4" x="534" y="78" w="25" h="39" pX="0.5" pY="0.5" oX="87" oY="70" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_14_ 4" x="458" y="474" w="26" h="39" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_15_ 4" x="191" y="474" w="25" h="40" pX="0.5" pY="0.5" oX="92" oY="68" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_16_ 5" x="132" y="92" w="22" h="45" pX="0.5" pY="0.5" oX="96" oY="67" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_17_ 5" x="406" y="326" w="24" h="40" pX="0.5" pY="0.5" oX="97" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_18_ 5" x="127" y="137" w="25" h="44" pX="0.5" pY="0.5" oX="100" oY="73" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_19_ 6" x="22" y="664" w="22" h="33" pX="0.5" pY="0.5" oX="86" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_20_ 6" x="486" y="360" w="23" h="34" pX="0.5" pY="0.5" oX="83" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_21_ 6" x="656" y="465" w="26" h="34" pX="0.5" pY="0.5" oX="78" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_22_ 7" x="134" y="410" w="29" h="40" pX="0.5" pY="0.5" oX="91" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_23_ 7" x="163" y="374" w="26" h="40" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Block_24_ 7" x="483" y="196" w="26" h="39" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_01_ 0" x="163" y="664" w="23" h="32" pX="0.5" pY="0.5" oX="90" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_02_ 0" x="140" y="664" w="23" h="32" pX="0.5" pY="0.5" oX="90" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_03_ 0" x="368" y="664" w="23" h="32" pX="0.5" pY="0.5" oX="90" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_04_ 1" x="503" y="39" w="27" h="39" pX="0.5" pY="0.5" oX="85" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_05_ 1" x="495" y="433" w="27" h="39" pX="0.5" pY="0.5" oX="85" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_06_ 1" x="505" y="313" w="27" h="39" pX="0.5" pY="0.5" oX="85" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_07_ 2" x="583" y="574" w="27" h="37" pX="0.5" pY="0.5" oX="92" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_08_ 2" x="657" y="140" w="27" h="35" pX="0.5" pY="0.5" oX="92" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_09_ 2" x="348" y="628" w="27" h="36" pX="0.5" pY="0.5" oX="92" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_10_ 3" x="174" y="44" w="22" h="44" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_11_ 3" x="25" y="166" w="22" h="44" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_12_ 3" x="154" y="132" w="22" h="44" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_13_ 4" x="27" y="628" w="26" h="36" pX="0.5" pY="0.5" oX="86" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_14_ 4" x="53" y="628" w="26" h="36" pX="0.5" pY="0.5" oX="86" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_15_ 4" x="438" y="628" w="27" h="36" pX="0.5" pY="0.5" oX="85" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_16_ 5" x="87" y="293" w="27" h="42" pX="0.5" pY="0.5" oX="86" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_17_ 5" x="139" y="291" w="28" h="42" pX="0.5" pY="0.5" oX="86" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_18_ 5" x="167" y="291" w="28" h="42" pX="0.5" pY="0.5" oX="86" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_19_ 6" x="68" y="664" w="25" h="33" pX="0.5" pY="0.5" oX="92" oY="87" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_20_ 6" x="93" y="664" w="25" h="33" pX="0.5" pY="0.5" oX="92" oY="87" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_21_ 6" x="186" y="664" w="27" h="32" pX="0.5" pY="0.5" oX="91" oY="88" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_22_ 7" x="295" y="293" w="28" h="41" pX="0.5" pY="0.5" oX="92" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_23_ 7" x="331" y="0" w="28" h="41" pX="0.5" pY="0.5" oX="92" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Critical HP_24_ 7" x="331" y="41" w="28" h="41" pX="0.5" pY="0.5" oX="92" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_01_ 0" x="307" y="84" w="22" h="41" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_02_ 0" x="307" y="168" w="23" h="41" pX="0.5" pY="0.5" oX="89" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_03_ 0" x="283" y="42" w="22" h="42" pX="0.5" pY="0.5" oX="91" oY="90" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_04_ 1" x="327" y="252" w="29" h="41" pX="0.5" pY="0.5" oX="98" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_05_ 1" x="184" y="628" w="34" h="36" pX="0.5" pY="0.5" oX="109" oY="105" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_06_ 1" x="99" y="474" w="40" h="37" pX="0.5" pY="0.5" oX="107" oY="105" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_07_ 2" x="132" y="628" w="31" h="36" pX="0.5" pY="0.5" oX="76" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_08_ 2" x="566" y="611" w="36" h="32" pX="0.5" pY="0.5" oX="60" oY="108" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_09_ 2" x="0" y="335" w="41" h="34" pX="0.5" pY="0.5" oX="57" oY="109" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_10_ 3" x="688" y="0" w="23" h="30" pX="0.5" pY="0.5" oX="91" oY="101" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_11_ 3" x="86" y="384" w="24" h="26" pX="0.5" pY="0.5" oX="92" oY="130" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_12_ 3" x="261" y="664" w="21" h="32" pX="0.5" pY="0.5" oX="92" oY="127" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_13_ 4" x="312" y="474" w="28" h="40" pX="0.5" pY="0.5" oX="95" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_14_ 4" x="530" y="511" w="31" h="38" pX="0.5" pY="0.5" oX="103" oY="94" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_15_ 4" x="55" y="208" w="35" h="43" pX="0.5" pY="0.5" oX="101" oY="92" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_16_ 5" x="657" y="499" w="29" h="34" pX="0.5" pY="0.5" oX="97" oY="96" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_17_ 5" x="632" y="568" w="34" h="29" pX="0.5" pY="0.5" oX="104" oY="122" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_18_ 5" x="635" y="175" w="35" h="31" pX="0.5" pY="0.5" oX="100" oY="121" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_19_ 6" x="283" y="514" w="31" h="39" pX="0.5" pY="0.5" oX="79" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_20_ 6" x="0" y="553" w="33" h="38" pX="0.5" pY="0.5" oX="66" oY="94" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_21_ 6" x="50" y="410" w="40" h="35" pX="0.5" pY="0.5" oX="64" oY="100" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_22_ 7" x="656" y="533" w="29" h="34" pX="0.5" pY="0.5" oX="81" oY="96" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_23_ 7" x="632" y="597" w="31" h="34" pX="0.5" pY="0.5" oX="70" oY="119" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Dead To Down_24_ 7" x="281" y="553" w="33" h="38" pX="0.5" pY="0.5" oX="72" oY="116" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_1_01_ 0" x="175" y="176" w="28" h="43" pX="0.5" pY="0.5" oX="92" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_1_02_ 1" x="134" y="46" w="40" h="46" pX="0.5" pY="0.5" oX="92" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_1_03_ 2" x="239" y="43" w="43" h="25" pX="0.5" pY="0.5" oX="70" oY="98" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_1_04_ 3" x="48" y="0" w="24" h="57" pX="0.5" pY="0.5" oX="92" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_1_05_ 4" x="559" y="268" w="37" h="31" pX="0.5" pY="0.5" oX="91" oY="92" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_1_06_ 5" x="376" y="591" w="37" h="36" pX="0.5" pY="0.5" oX="90" oY="90" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_1_07_ 6" x="314" y="553" w="38" h="34" pX="0.5" pY="0.5" oX="76" oY="88" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_1_08_ 7" x="352" y="553" w="35" h="38" pX="0.5" pY="0.5" oX="79" oY="94" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_2_01_ 0" x="509" y="78" w="25" h="39" pX="0.5" pY="0.5" oX="90" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_2_02_ 1" x="63" y="109" w="41" h="48" pX="0.5" pY="0.5" oX="115" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_2_03_ 2" x="134" y="0" w="40" h="46" pX="0.5" pY="0.5" oX="49" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_2_04_ 3" x="0" y="62" w="23" h="55" pX="0.5" pY="0.5" oX="92" oY="106" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_2_05_ 4" x="635" y="331" w="35" h="32" pX="0.5" pY="0.5" oX="107" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_2_06_ 5" x="543" y="429" w="38" h="34" pX="0.5" pY="0.5" oX="106" oY="118" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_2_07_ 6" x="50" y="445" w="40" h="28" pX="0.5" pY="0.5" oX="57" oY="93" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_2_08_ 7" x="60" y="57" w="39" h="52" pX="0.5" pY="0.5" oX="63" oY="104" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_3_01_ 0" x="163" y="414" w="21" h="40" pX="0.5" pY="0.5" oX="92" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_3_02_ 1" x="133" y="266" w="42" h="25" pX="0.5" pY="0.5" oX="92" oY="98" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_3_03_ 2" x="0" y="296" w="42" h="39" pX="0.5" pY="0.5" oX="71" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_3_04_ 3" x="25" y="0" w="23" h="60" pX="0.5" pY="0.5" oX="91" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_3_05_ 4" x="23" y="62" w="37" h="54" pX="0.5" pY="0.5" oX="91" oY="69" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_3_06_ 5" x="312" y="622" w="36" h="34" pX="0.5" pY="0.5" oX="89" oY="98" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_3_07_ 6" x="196" y="44" w="43" h="44" pX="0.5" pY="0.5" oX="76" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_3_08_ 7" x="223" y="0" w="41" h="43" pX="0.5" pY="0.5" oX="77" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_4_01_ 0" x="288" y="591" w="24" h="37" pX="0.5" pY="0.5" oX="91" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_4_02_ 1" x="446" y="361" w="40" h="33" pX="0.5" pY="0.5" oX="109" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_4_03_ 2" x="300" y="334" w="41" h="35" pX="0.5" pY="0.5" oX="54" oY="97" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_4_04_ 3" x="226" y="259" w="21" h="42" pX="0.5" pY="0.5" oX="92" oY="113" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_4_05_ 4" x="0" y="117" w="36" h="49" pX="0.5" pY="0.5" oX="104" oY="72" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_4_06_ 5" x="314" y="587" w="37" h="35" pX="0.5" pY="0.5" oX="102" oY="113" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_4_07_ 6" x="376" y="627" w="36" h="33" pX="0.5" pY="0.5" oX="65" oY="88" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Down_4_08_ 7" x="72" y="0" w="38" h="52" pX="0.5" pY="0.5" oX="67" oY="96" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_01_ 0" x="635" y="499" w="22" h="34" pX="0.5" pY="0.5" oX="93" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_02_ 0" x="304" y="664" w="22" h="32" pX="0.5" pY="0.5" oX="94" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_03_ 0" x="213" y="664" w="23" h="32" pX="0.5" pY="0.5" oX="95" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_04_ 1" x="380" y="287" w="26" h="41" pX="0.5" pY="0.5" oX="96" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_05_ 1" x="115" y="181" w="28" h="43" pX="0.5" pY="0.5" oX="98" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_06_ 1" x="274" y="236" w="28" h="42" pX="0.5" pY="0.5" oX="99" oY="88" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_07_ 2" x="283" y="168" w="24" h="42" pX="0.5" pY="0.5" oX="84" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_08_ 2" x="74" y="474" w="25" h="40" pX="0.5" pY="0.5" oX="81" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_09_ 2" x="483" y="118" w="26" h="39" pX="0.5" pY="0.5" oX="77" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_10_ 3" x="481" y="40" w="22" h="39" pX="0.5" pY="0.5" oX="89" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_11_ 3" x="247" y="278" w="24" h="42" pX="0.5" pY="0.5" oX="87" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_12_ 3" x="271" y="278" w="24" h="42" pX="0.5" pY="0.5" oX="85" oY="89" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_13_ 4" x="561" y="501" w="23" h="38" pX="0.5" pY="0.5" oX="96" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_14_ 4" x="581" y="424" w="23" h="38" pX="0.5" pY="0.5" oX="99" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_15_ 4" x="583" y="386" w="26" h="38" pX="0.5" pY="0.5" oX="101" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_16_ 5" x="287" y="474" w="25" h="40" pX="0.5" pY="0.5" oX="92" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_17_ 5" x="305" y="42" w="26" h="42" pX="0.5" pY="0.5" oX="92" oY="88" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_18_ 5" x="302" y="210" w="27" h="42" pX="0.5" pY="0.5" oX="92" oY="91" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_19_ 6" x="632" y="296" w="25" h="35" pX="0.5" pY="0.5" oX="87" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_20_ 6" x="657" y="206" w="25" h="34" pX="0.5" pY="0.5" oX="86" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_21_ 6" x="236" y="664" w="25" h="32" pX="0.5" pY="0.5" oX="85" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_22_ 7" x="58" y="251" w="26" h="42" pX="0.5" pY="0.5" oX="84" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_23_ 7" x="233" y="174" w="26" h="43" pX="0.5" pY="0.5" oX="80" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Evade_24_ 7" x="176" y="132" w="27" h="44" pX="0.5" pY="0.5" oX="77" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_01_ 0" x="396" y="369" w="24" h="41" pX="0.5" pY="0.5" oX="86" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_02_ 0" x="484" y="394" w="25" h="39" pX="0.5" pY="0.5" oX="86" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_03_ 0" x="383" y="82" w="26" h="41" pX="0.5" pY="0.5" oX="87" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_04_ 1" x="584" y="537" w="26" h="37" pX="0.5" pY="0.5" oX="87" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_05_ 1" x="589" y="224" w="27" h="36" pX="0.5" pY="0.5" oX="88" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_06_ 1" x="628" y="408" w="27" h="34" pX="0.5" pY="0.5" oX="92" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_07_ 2" x="370" y="369" w="26" h="41" pX="0.5" pY="0.5" oX="92" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_08_ 2" x="446" y="394" w="27" h="40" pX="0.5" pY="0.5" oX="90" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_09_ 2" x="481" y="157" w="28" h="39" pX="0.5" pY="0.5" oX="85" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_10_ 3" x="657" y="70" w="25" h="35" pX="0.5" pY="0.5" oX="93" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_11_ 3" x="657" y="105" w="26" h="35" pX="0.5" pY="0.5" oX="92" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_12_ 3" x="470" y="663" w="26" h="31" pX="0.5" pY="0.5" oX="91" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_13_ 4" x="283" y="84" w="24" h="42" pX="0.5" pY="0.5" oX="86" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_14_ 4" x="381" y="205" w="25" h="41" pX="0.5" pY="0.5" oX="87" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_15_ 4" x="0" y="591" w="27" h="37" pX="0.5" pY="0.5" oX="90" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_16_ 5" x="632" y="631" w="22" h="33" pX="0.5" pY="0.5" oX="91" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_17_ 5" x="447" y="664" w="23" h="31" pX="0.5" pY="0.5" oX="92" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_18_ 5" x="666" y="567" w="21" h="30" pX="0.5" pY="0.5" oX="95" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_19_ 6" x="459" y="80" w="24" h="40" pX="0.5" pY="0.5" oX="91" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_20_ 6" x="348" y="334" w="22" h="41" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_21_ 6" x="409" y="82" w="22" h="40" pX="0.5" pY="0.5" oX="87" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_22_ 7" x="483" y="274" w="25" h="39" pX="0.5" pY="0.5" oX="94" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_23_ 7" x="114" y="291" w="25" h="42" pX="0.5" pY="0.5" oX="92" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Get Hit_24_ 7" x="36" y="116" w="27" h="48" pX="0.5" pY="0.5" oX="87" oY="71" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_01_ 0" x="557" y="117" w="23" h="38" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_02_ 0" x="455" y="552" w="22" h="38" pX="0.5" pY="0.5" oX="91" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_03_ 0" x="433" y="552" w="22" h="38" pX="0.5" pY="0.5" oX="91" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_04_ 1" x="203" y="218" w="23" h="42" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_05_ 1" x="226" y="217" w="23" h="42" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_06_ 1" x="84" y="251" w="23" h="42" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_07_ 2" x="394" y="410" w="23" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_08_ 2" x="236" y="410" w="23" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_09_ 2" x="509" y="391" w="23" h="39" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_10_ 3" x="654" y="631" w="22" h="33" pX="0.5" pY="0.5" oX="91" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_11_ 3" x="282" y="664" w="22" h="32" pX="0.5" pY="0.5" oX="91" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_12_ 3" x="0" y="664" w="22" h="33" pX="0.5" pY="0.5" oX="91" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_13_ 4" x="259" y="194" w="24" h="42" pX="0.5" pY="0.5" oX="91" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_14_ 4" x="247" y="320" w="25" h="41" pX="0.5" pY="0.5" oX="90" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_15_ 4" x="505" y="511" w="25" h="39" pX="0.5" pY="0.5" oX="90" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_16_ 5" x="609" y="110" w="26" h="36" pX="0.5" pY="0.5" oX="90" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_17_ 5" x="584" y="187" w="25" h="37" pX="0.5" pY="0.5" oX="91" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_18_ 5" x="584" y="462" w="26" h="38" pX="0.5" pY="0.5" oX="91" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_19_ 6" x="234" y="553" w="26" h="38" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_20_ 6" x="534" y="310" w="26" h="38" pX="0.5" pY="0.5" oX="88" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_21_ 6" x="126" y="514" w="25" h="39" pX="0.5" pY="0.5" oX="88" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_22_ 7" x="108" y="591" w="25" h="37" pX="0.5" pY="0.5" oX="88" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_23_ 7" x="609" y="372" w="26" h="36" pX="0.5" pY="0.5" oX="88" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle Fidget_24_ 7" x="657" y="35" w="26" h="35" pX="0.5" pY="0.5" oX="88" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_01_ 0" x="610" y="296" w="22" h="36" pX="0.5" pY="0.5" oX="91" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_02_ 0" x="610" y="569" w="22" h="36" pX="0.5" pY="0.5" oX="91" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_03_ 0" x="610" y="605" w="22" h="36" pX="0.5" pY="0.5" oX="91" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_04_ 0" x="610" y="74" w="23" h="36" pX="0.5" pY="0.5" oX="90" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_05_ 0" x="110" y="628" w="22" h="36" pX="0.5" pY="0.5" oX="91" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_06_ 1" x="260" y="110" w="23" h="42" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_07_ 1" x="260" y="68" w="23" h="42" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_08_ 1" x="306" y="126" w="23" h="42" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_09_ 1" x="287" y="0" w="24" h="42" pX="0.5" pY="0.5" oX="91" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_10_ 1" x="283" y="126" w="23" h="42" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_11_ 2" x="407" y="286" w="23" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_12_ 2" x="407" y="246" w="23" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_13_ 2" x="340" y="474" w="23" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_14_ 2" x="264" y="474" w="23" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_15_ 2" x="241" y="474" w="23" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_16_ 3" x="635" y="140" w="22" h="35" pX="0.5" pY="0.5" oX="91" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_17_ 3" x="290" y="628" w="22" h="35" pX="0.5" pY="0.5" oX="91" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_18_ 3" x="635" y="0" w="22" h="35" pX="0.5" pY="0.5" oX="91" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_19_ 3" x="635" y="35" w="22" h="35" pX="0.5" pY="0.5" oX="91" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_20_ 3" x="635" y="70" w="22" h="35" pX="0.5" pY="0.5" oX="91" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_21_ 4" x="216" y="474" w="25" h="40" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_22_ 4" x="165" y="474" w="26" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_23_ 4" x="139" y="474" w="26" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_24_ 4" x="48" y="474" w="26" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_25_ 4" x="455" y="40" w="26" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_26_ 5" x="257" y="514" w="26" h="39" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_27_ 5" x="230" y="514" w="27" h="39" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_28_ 5" x="178" y="514" w="27" h="39" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_29_ 5" x="151" y="514" w="27" h="39" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_30_ 5" x="99" y="514" w="27" h="39" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_31_ 6" x="534" y="348" w="24" h="38" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_32_ 6" x="533" y="117" w="24" h="38" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_33_ 6" x="533" y="155" w="25" h="38" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_34_ 6" x="55" y="553" w="25" h="38" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_35_ 6" x="80" y="553" w="25" h="38" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_36_ 7" x="105" y="553" w="26" h="38" pX="0.5" pY="0.5" oX="88" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_37_ 7" x="131" y="553" w="26" h="38" pX="0.5" pY="0.5" oX="88" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_38_ 7" x="530" y="549" w="27" h="38" pX="0.5" pY="0.5" oX="88" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_39_ 7" x="157" y="553" w="27" h="38" pX="0.5" pY="0.5" oX="88" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Idle_40_ 7" x="184" y="553" w="27" h="38" pX="0.5" pY="0.5" oX="88" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_01_ 0" x="656" y="253" w="22" h="34" pX="0.5" pY="0.5" oX="90" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_02_ 0" x="268" y="628" w="22" h="36" pX="0.5" pY="0.5" oX="90" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_03_ 0" x="656" y="431" w="21" h="34" pX="0.5" pY="0.5" oX="89" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_04_ 0" x="635" y="442" w="21" h="33" pX="0.5" pY="0.5" oX="89" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_05_ 0" x="543" y="624" w="22" h="36" pX="0.5" pY="0.5" oX="89" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_06_ 0" x="634" y="218" w="23" h="35" pX="0.5" pY="0.5" oX="90" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_07_ 0" x="635" y="363" w="21" h="34" pX="0.5" pY="0.5" oX="90" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_08_ 0" x="118" y="664" w="22" h="33" pX="0.5" pY="0.5" oX="90" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_09_ 1" x="454" y="201" w="24" h="40" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_10_ 1" x="302" y="252" w="25" h="41" pX="0.5" pY="0.5" oX="88" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_11_ 1" x="405" y="41" w="25" h="41" pX="0.5" pY="0.5" oX="88" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_12_ 1" x="405" y="164" w="25" h="41" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_13_ 1" x="383" y="246" w="24" h="41" pX="0.5" pY="0.5" oX="88" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_14_ 1" x="387" y="553" w="23" h="38" pX="0.5" pY="0.5" oX="88" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_15_ 1" x="508" y="274" w="24" h="39" pX="0.5" pY="0.5" oX="89" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_16_ 1" x="381" y="41" w="24" h="41" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_17_ 2" x="430" y="41" w="25" h="40" pX="0.5" pY="0.5" oX="91" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_18_ 2" x="359" y="0" w="24" h="41" pX="0.5" pY="0.5" oX="93" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_19_ 2" x="308" y="410" w="23" h="40" pX="0.5" pY="0.5" oX="93" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_20_ 2" x="508" y="0" w="25" h="39" pX="0.5" pY="0.5" oX="90" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_21_ 2" x="321" y="369" w="27" h="41" pX="0.5" pY="0.5" oX="91" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_22_ 2" x="259" y="410" w="25" h="40" pX="0.5" pY="0.5" oX="91" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_23_ 2" x="370" y="410" w="24" h="40" pX="0.5" pY="0.5" oX="91" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_24_ 2" x="210" y="410" w="26" h="40" pX="0.5" pY="0.5" oX="90" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_25_ 3" x="348" y="375" w="22" h="40" pX="0.5" pY="0.5" oX="92" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_26_ 3" x="189" y="410" w="21" h="40" pX="0.5" pY="0.5" oX="92" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_27_ 3" x="113" y="410" w="21" h="40" pX="0.5" pY="0.5" oX="93" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_28_ 3" x="300" y="369" w="21" h="41" pX="0.5" pY="0.5" oX="94" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_29_ 3" x="484" y="473" w="21" h="39" pX="0.5" pY="0.5" oX="94" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_30_ 3" x="410" y="474" w="21" h="39" pX="0.5" pY="0.5" oX="93" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_31_ 3" x="26" y="410" w="24" h="40" pX="0.5" pY="0.5" oX="92" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_32_ 3" x="486" y="0" w="22" h="39" pX="0.5" pY="0.5" oX="92" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_33_ 4" x="210" y="591" w="27" h="37" pX="0.5" pY="0.5" oX="87" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_34_ 4" x="559" y="38" w="25" h="38" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_35_ 4" x="237" y="591" w="26" h="37" pX="0.5" pY="0.5" oX="86" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_36_ 4" x="263" y="591" w="25" h="37" pX="0.5" pY="0.5" oX="87" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_37_ 4" x="557" y="386" w="26" h="38" pX="0.5" pY="0.5" oX="85" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_38_ 4" x="584" y="0" w="26" h="38" pX="0.5" pY="0.5" oX="86" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_39_ 4" x="465" y="590" w="26" h="37" pX="0.5" pY="0.5" oX="87" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_40_ 4" x="609" y="182" w="26" h="36" pX="0.5" pY="0.5" oX="87" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_41_ 5" x="162" y="333" w="27" h="41" pX="0.5" pY="0.5" oX="90" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_42_ 5" x="431" y="474" w="27" h="39" pX="0.5" pY="0.5" oX="89" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_43_ 5" x="135" y="343" w="27" h="41" pX="0.5" pY="0.5" oX="90" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_44_ 5" x="273" y="361" w="27" h="41" pX="0.5" pY="0.5" oX="90" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_45_ 5" x="246" y="361" w="27" h="41" pX="0.5" pY="0.5" oX="89" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_46_ 5" x="218" y="342" w="28" h="41" pX="0.5" pY="0.5" oX="88" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_47_ 5" x="28" y="369" w="28" h="41" pX="0.5" pY="0.5" oX="88" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_48_ 5" x="0" y="369" w="28" h="41" pX="0.5" pY="0.5" oX="89" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_49_ 6" x="610" y="37" w="25" h="37" pX="0.5" pY="0.5" oX="89" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_50_ 6" x="584" y="38" w="26" h="38" pX="0.5" pY="0.5" oX="90" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_51_ 6" x="557" y="549" w="26" h="38" pX="0.5" pY="0.5" oX="89" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_52_ 6" x="610" y="497" w="25" h="36" pX="0.5" pY="0.5" oX="88" oY="86" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_53_ 6" x="158" y="591" w="26" h="37" pX="0.5" pY="0.5" oX="89" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_54_ 6" x="133" y="591" w="25" h="37" pX="0.5" pY="0.5" oX="90" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_55_ 6" x="610" y="260" w="24" h="36" pX="0.5" pY="0.5" oX="90" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_56_ 6" x="351" y="591" w="25" h="37" pX="0.5" pY="0.5" oX="89" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_57_ 7" x="350" y="293" w="30" h="41" pX="0.5" pY="0.5" oX="90" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_58_ 7" x="433" y="0" w="29" h="40" pX="0.5" pY="0.5" oX="91" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_59_ 7" x="417" y="410" w="29" h="40" pX="0.5" pY="0.5" oX="91" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_60_ 7" x="356" y="123" w="26" h="41" pX="0.5" pY="0.5" oX="91" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_61_ 7" x="24" y="450" w="24" h="40" pX="0.5" pY="0.5" oX="93" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_62_ 7" x="0" y="474" w="24" h="40" pX="0.5" pY="0.5" oX="92" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_63_ 7" x="330" y="164" w="26" h="41" pX="0.5" pY="0.5" oX="91" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Running_64_ 7" x="220" y="301" w="27" h="41" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_01_ 0" x="559" y="0" w="25" h="38" pX="0.5" pY="0.5" oX="86" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_02_ 0" x="483" y="235" w="24" h="39" pX="0.5" pY="0.5" oX="89" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_03_ 0" x="507" y="235" w="25" h="39" pX="0.5" pY="0.5" oX="91" oY="87" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_04_ 1" x="609" y="146" w="26" h="36" pX="0.5" pY="0.5" oX="86" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_05_ 1" x="584" y="299" w="26" h="37" pX="0.5" pY="0.5" oX="84" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_06_ 1" x="584" y="150" w="25" h="37" pX="0.5" pY="0.5" oX="77" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_07_ 2" x="323" y="293" w="27" h="41" pX="0.5" pY="0.5" oX="92" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_08_ 2" x="407" y="0" w="26" h="41" pX="0.5" pY="0.5" oX="95" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_09_ 2" x="432" y="241" w="25" h="40" pX="0.5" pY="0.5" oX="102" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_10_ 3" x="412" y="628" w="26" h="36" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_11_ 3" x="559" y="76" w="25" h="37" pX="0.5" pY="0.5" oX="90" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_12_ 3" x="0" y="0" w="25" h="62" pX="0.5" pY="0.5" oX="88" oY="44" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_13_ 4" x="406" y="123" w="24" h="41" pX="0.5" pY="0.5" oX="86" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_14_ 4" x="383" y="0" w="24" h="41" pX="0.5" pY="0.5" oX="86" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_15_ 4" x="509" y="352" w="25" h="39" pX="0.5" pY="0.5" oX="82" oY="85" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_16_ 5" x="347" y="664" w="21" h="32" pX="0.5" pY="0.5" oX="91" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_17_ 5" x="326" y="656" w="21" h="32" pX="0.5" pY="0.5" oX="88" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_18_ 5" x="584" y="76" w="25" h="37" pX="0.5" pY="0.5" oX="79" oY="73" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_19_ 6" x="383" y="164" w="22" h="41" pX="0.5" pY="0.5" oX="91" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_20_ 6" x="420" y="366" w="22" h="40" pX="0.5" pY="0.5" oX="94" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_21_ 6" x="509" y="117" w="24" h="39" pX="0.5" pY="0.5" oX="100" oY="84" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_22_ 7" x="0" y="514" w="25" h="39" pX="0.5" pY="0.5" oX="94" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_23_ 7" x="51" y="514" w="24" h="39" pX="0.5" pY="0.5" oX="94" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Use Skill_24_ 7" x="382" y="123" w="24" h="41" pX="0.5" pY="0.5" oX="98" oY="68" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_01_ 0" x="163" y="628" w="21" h="36" pX="0.5" pY="0.5" oX="92" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_02_ 0" x="634" y="253" w="22" h="35" pX="0.5" pY="0.5" oX="91" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_03_ 0" x="656" y="397" w="22" h="34" pX="0.5" pY="0.5" oX="91" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_04_ 0" x="218" y="628" w="21" h="36" pX="0.5" pY="0.5" oX="90" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_05_ 0" x="517" y="625" w="22" h="36" pX="0.5" pY="0.5" oX="90" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_06_ 0" x="656" y="363" w="23" h="34" pX="0.5" pY="0.5" oX="90" oY="82" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_07_ 0" x="657" y="287" w="23" h="34" pX="0.5" pY="0.5" oX="91" oY="83" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_08_ 0" x="465" y="627" w="23" h="36" pX="0.5" pY="0.5" oX="92" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_09_ 1" x="359" y="41" w="22" h="41" pX="0.5" pY="0.5" oX="89" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_10_ 1" x="264" y="0" w="23" h="42" pX="0.5" pY="0.5" oX="89" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_11_ 1" x="110" y="343" w="25" h="41" pX="0.5" pY="0.5" oX="88" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_12_ 1" x="272" y="320" w="23" h="41" pX="0.5" pY="0.5" oX="89" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_13_ 1" x="560" y="299" w="23" h="37" pX="0.5" pY="0.5" oX="89" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_14_ 1" x="462" y="0" w="24" h="40" pX="0.5" pY="0.5" oX="88" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_15_ 1" x="456" y="121" w="24" h="40" pX="0.5" pY="0.5" oX="88" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_16_ 1" x="195" y="302" w="23" h="41" pX="0.5" pY="0.5" oX="88" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_17_ 2" x="338" y="514" w="23" h="39" pX="0.5" pY="0.5" oX="92" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_18_ 2" x="532" y="391" w="25" h="38" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_19_ 2" x="361" y="514" w="26" h="39" pX="0.5" pY="0.5" oX="92" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_20_ 2" x="387" y="514" w="25" h="39" pX="0.5" pY="0.5" oX="92" oY="77" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_21_ 2" x="455" y="513" w="22" h="39" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_22_ 2" x="90" y="410" w="23" h="40" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_23_ 2" x="533" y="0" w="24" h="39" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_24_ 2" x="388" y="474" w="22" h="39" pX="0.5" pY="0.5" oX="93" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_25_ 3" x="522" y="430" w="21" h="38" pX="0.5" pY="0.5" oX="91" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_26_ 3" x="434" y="513" w="21" h="39" pX="0.5" pY="0.5" oX="91" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_27_ 3" x="412" y="513" w="22" h="39" pX="0.5" pY="0.5" oX="91" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_28_ 3" x="260" y="553" w="21" h="38" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_29_ 3" x="531" y="468" w="22" h="38" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_30_ 3" x="314" y="514" w="24" h="39" pX="0.5" pY="0.5" oX="92" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_31_ 3" x="484" y="512" w="21" h="39" pX="0.5" pY="0.5" oX="91" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_32_ 3" x="33" y="553" w="22" h="38" pX="0.5" pY="0.5" oX="90" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_33_ 4" x="205" y="514" w="25" h="39" pX="0.5" pY="0.5" oX="88" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_34_ 4" x="517" y="588" w="26" h="37" pX="0.5" pY="0.5" oX="87" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_35_ 4" x="491" y="589" w="26" h="37" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_36_ 4" x="439" y="590" w="26" h="37" pX="0.5" pY="0.5" oX="87" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_37_ 4" x="534" y="234" w="25" h="38" pX="0.5" pY="0.5" oX="88" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_38_ 4" x="184" y="591" w="26" h="37" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_39_ 4" x="413" y="591" w="26" h="37" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_40_ 4" x="534" y="272" w="25" h="38" pX="0.5" pY="0.5" oX="88" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_41_ 5" x="330" y="123" w="26" h="41" pX="0.5" pY="0.5" oX="89" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_42_ 5" x="158" y="219" w="26" h="42" pX="0.5" pY="0.5" oX="89" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_43_ 5" x="107" y="244" w="26" h="42" pX="0.5" pY="0.5" oX="89" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_44_ 5" x="380" y="328" w="26" h="41" pX="0.5" pY="0.5" oX="90" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_45_ 5" x="363" y="474" w="25" h="40" pX="0.5" pY="0.5" oX="90" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_46_ 5" x="356" y="164" w="27" h="41" pX="0.5" pY="0.5" oX="87" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_47_ 5" x="357" y="82" w="26" h="41" pX="0.5" pY="0.5" oX="87" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_48_ 5" x="329" y="209" w="26" h="41" pX="0.5" pY="0.5" oX="87" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_49_ 6" x="82" y="591" w="26" h="37" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_50_ 6" x="56" y="591" w="26" h="37" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_51_ 6" x="584" y="336" w="25" h="37" pX="0.5" pY="0.5" oX="91" oY="81" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_52_ 6" x="558" y="155" w="26" h="38" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_53_ 6" x="557" y="193" w="27" h="38" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_54_ 6" x="584" y="500" w="26" h="37" pX="0.5" pY="0.5" oX="90" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_55_ 6" x="609" y="336" w="26" h="36" pX="0.5" pY="0.5" oX="91" oY="80" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_56_ 6" x="558" y="348" w="26" h="38" pX="0.5" pY="0.5" oX="91" oY="78" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_57_ 7" x="446" y="434" w="26" h="40" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_58_ 7" x="331" y="82" w="26" h="41" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_59_ 7" x="406" y="205" w="26" h="41" pX="0.5" pY="0.5" oX="91" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_60_ 7" x="189" y="343" w="26" h="41" pX="0.5" pY="0.5" oX="91" oY="75" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_61_ 7" x="260" y="152" w="23" h="42" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_62_ 7" x="195" y="260" w="25" h="42" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_63_ 7" x="133" y="224" w="25" h="42" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Top(Addon_Goblin_Top6)_Walking_64_ 7" x="432" y="121" w="24" h="40" pX="0.5" pY="0.5" oX="90" oY="74" oW="200" oH="200"/>
+</TextureAtlas>

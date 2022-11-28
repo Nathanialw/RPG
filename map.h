@@ -173,7 +173,7 @@ namespace Maps {
         auto& position = zone.emplace<Component::Position>(entity, x, y);
         auto& scale = zone.emplace<Component::Scale>(entity, data.scale);
         auto &radius = zone.emplace<Component::Radius>(entity, data.radius * data.scale);
-        zone.emplace<Component::Interaction_Rect>(entity, data.interact_r, data.interact_h);
+        zone.emplace<Component::Interaction_Rect>(entity, (x - data.interact_r), (y - data.interact_h / 2.0f), (data.interact_r * 2.0f), data.interact_h);
 
             /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
         zone.emplace<Component::Direction>(entity, Component::Direction::W);
@@ -184,9 +184,6 @@ namespace Maps {
 
 
         //if RTP_pieces type
-        if (data.unit_type == "RTP_male" || data.unit_type == "RTP_female") {
-            auto equipment = zone.emplace<Item_Component::Equipment>(entity);
-        }
 
         if (packerframeData) {
            auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
@@ -206,6 +203,10 @@ namespace Maps {
 
         //dynamic entities
         if (data.body_type == 1) {
+            if (data.unit_type != "none") {
+                zone.emplace<Item_Component::Equipment>(entity, data.unit_type);
+            }
+
             bool yes = true;
             Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius, data.mass, yes);
             zone.emplace<Component::Action>(entity, Component::idle);

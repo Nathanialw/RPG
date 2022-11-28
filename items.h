@@ -101,15 +101,16 @@ namespace Items {
         sheetData.equipmentSheets[(int)itemType].name = itemName;
     }
 
-	std::string Create_Weapon(entt::entity& item, Rarity &rarity) {
+	std::string Create_Weapon(entt::entity& item, Rarity &rarity, std::string &equip_type) {
 		auto material = Generate_Weapon_Material();
 		auto weaponType = Generate_Weapon_Type();
 
         std::string materialType = weaponMaterialName[material];
         std::string weapon = weaponTypeName[weaponType];
         std::string weaponName = materialType  + " " + weapon;
+        std::string slot = "mainhand";
 
-		auto &type = World::zone.emplace<Item_Type>(item, Item_Type::weapon);
+		auto &type = World::zone.emplace<Item_Type>(item, Item_Type::mainhand);
 		World::zone.emplace<Rarity>(item, rarity);
 
             ///create the weapon from the db
@@ -117,7 +118,7 @@ namespace Items {
             ///save the string of the name
             ///provide lookup string when the player picks it up
 
-       auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(weapon);
+       auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type);
 
         if (equippedSheetData.itemData == NULL) {
             return "none";
@@ -149,47 +150,47 @@ namespace Items {
 
 
 
-	std::string Create_Armor(entt::entity& item, Rarity& rarity) {
-		Item_Type itemType = Generate_Item_Type();
-		Armor_Type armorType = Generate_Armor_Type();
+//	std::string Create_Armor(entt::entity& item, Rarity& rarity) {
+//		Item_Type itemType = Generate_Item_Type();
+//		Armor_Type armorType = Generate_Armor_Type();
+//
+//		std::string type = ItemTypeName[itemType];
+//		std::string armor = ArmorTypeName[armorType];
+//		std::string itemName = armor + " " + type;
+//		World::zone.emplace<Item_Type>(item, itemType);
+//		World::zone.emplace<Rarity>(item, rarity);
+//		int column = itemTypes[itemType];
+//		int row = armorTypes[armorType];
+//		int size = 64;
+//		SDL_Rect sprite = { column * size, row * size, size, size };
+//
+//        auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
+//
+//        Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
+//        if (itemType == Item_Component::Item_Type::legs || itemType == Item_Component::Item_Type::chest || itemType == Item_Component::Item_Type::helm) {
+//            equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type);
+//            if (equippedSheetData.itemData == NULL) {
+//                return "none";
+//            }
+//            armor_texture(itemType, sheetData, equippedSheetData.itemData, equippedSheetData.index);
+//        }
+//        else {
+//            return "none";
+//        }
+//
+//        sheetData.sheet_name = equippedSheetData.index;
+//        sheetData.type = "RPG_Tools";
+//        sheetData.sheetData = equippedSheetData.itemData;
+//
+//		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
+//		icon.clipSprite = sprite;
+//		icon.clipIcon = {0,0,256,256};
+//		icon.renderRectSize = { 64.0f, 64.0f };
+//		icon.renderPositionOffset = { icon.renderRectSize.x / 2, icon.renderRectSize.y / 2 };
+//		return equippedSheetData.index;
+//	}
 
-		std::string type = ItemTypeName[itemType];
-		std::string armor = ArmorTypeName[armorType];
-		std::string itemName = armor + " " + type;
-		World::zone.emplace<Item_Type>(item, itemType);
-		World::zone.emplace<Rarity>(item, rarity);
-		int column = itemTypes[itemType];
-		int row = armorTypes[armorType];
-		int size = 64;
-		SDL_Rect sprite = { column * size, row * size, size, size };
-
-        auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
-
-        Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
-        if (itemType == Item_Component::Item_Type::legs || itemType == Item_Component::Item_Type::chest || itemType == Item_Component::Item_Type::helm) {
-            equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type);
-            if (equippedSheetData.itemData == NULL) {
-                return "none";
-            }
-            armor_texture(itemType, sheetData, equippedSheetData.itemData, equippedSheetData.index);
-        }
-        else {
-            return "none";
-        }
-
-        sheetData.sheet_name = equippedSheetData.index;
-        sheetData.type = "RPG_Tools";
-        sheetData.sheetData = equippedSheetData.itemData;
-
-		auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
-		icon.clipSprite = sprite;
-		icon.clipIcon = {0,0,256,256};
-		icon.renderRectSize = { 64.0f, 64.0f };
-		icon.renderPositionOffset = { icon.renderRectSize.x / 2, icon.renderRectSize.y / 2 };
-		return equippedSheetData.index;
-	}
-
-    std::string Create_Specific_Armor(entt::entity& item, Rarity& rarity, Item_Type itemType) {
+    std::string Create_Specific_Armor(entt::entity& item, Rarity& rarity, Item_Type itemType, std::string &equip_type) {
         Armor_Type armorType = Generate_Armor_Type();
 
         std::string type = ItemTypeName[itemType];
@@ -205,16 +206,16 @@ namespace Items {
         auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
 
         Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
-        if (itemType == Item_Component::Item_Type::legs || itemType == Item_Component::Item_Type::chest || itemType == Item_Component::Item_Type::helm) {
-            equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type);
-            if (equippedSheetData.itemData == NULL) {
-                return "none";
-            }
-            armor_texture(itemType, sheetData, equippedSheetData.itemData, equippedSheetData.index);
-        }
-        else {
+//        if (itemType == Item_Component::Item_Type::legs || itemType == Item_Component::Item_Type::chest || itemType == Item_Component::Item_Type::helm || itemType == Item_Component::Item_Type::hair || itemType == Item_Component::Item_Type::kilt) {
+        equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type, equip_type);
+        if (equippedSheetData.itemData == NULL) {
             return "none";
         }
+        armor_texture(itemType, sheetData, equippedSheetData.itemData, equippedSheetData.index);
+//        }
+//        else {
+//            return "none";
+//        }
 
         sheetData.sheet_name = equippedSheetData.index;
         sheetData.type = "RPG_Tools";
@@ -232,7 +233,7 @@ namespace Items {
 		float scale = 0.7f;
 
 		World::zone.emplace<Component::Scale>(item, scale);
-		World::zone.emplace<Component::Action>(item, Component::dead);
+		World::zone.emplace<Component::Action>(item, Component::dying);
 		World::zone.emplace<Component::Direction>(item, direction);
 		World::zone.emplace<Name>(item, name);
 		World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
@@ -324,10 +325,10 @@ namespace Items {
     std::string Choose_Item (entt::entity item, Rarity rarity) {
         int itemDrop = rand() % 10 + 1;
         if (itemDrop < 10) {
-            return Create_Armor(item, rarity);
+//            return Create_Armor(item, rarity);
         }
         else {
-            return Create_Weapon(item, rarity);
+//            return Create_Weapon(item, rarity);
         }
 //        std::cout << "Choose_Item() fallthrough error, failed to select and item type, returned default" << std::endl;
 //        return Create_Armor(item, rarity);
@@ -358,26 +359,33 @@ namespace Items {
         World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
         auto &stats = World::zone.emplace<Item_Stats>(item);
         stats = itemStats;
-        auto& offset = World::zone.emplace<Component::Sprite_Offset>(item, 90.0f, 130.0f);
+        auto& offset = World::zone.emplace<Component::Sprite_Offset>(item, 100.0f, 100.0f);
         auto& position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
     }
 
-    entt::entity Create_And_Equip_Weapon(Component::Position& position) {
+    entt::entity Create_And_Equip_Weapon(Component::Position& position, std::string &equip_type) {
         Rarity rarity = Generate_Item_Rarity();
         Item_Stats itemStats = Generate_Item_Stats(rarity);
         auto item_uID = World::zone.create();
-        std::string itemName = Create_Weapon(item_uID, rarity);
+        std::string itemName = Create_Weapon(item_uID, rarity, equip_type);
         Create_Item1(item_uID, position, itemName, itemStats);
         return item_uID;
     }
 
-    entt::entity Create_And_Equip_Armor(Component::Position& position, Item_Component::Item_Type itemType) {
+    entt::entity Create_And_Equip_Armor(Component::Position& position, Item_Component::Item_Type itemType, std::string &equip_type) {
         Rarity rarity = Generate_Item_Rarity();
         Item_Stats itemStats = Generate_Item_Stats(rarity);
         auto item_uID = World::zone.create();
-        std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType);
-        Create_Item1(item_uID, position, itemName, itemStats);
-        return item_uID;
+        std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType, equip_type);
+        if (itemName == "none") {
+            World::zone.destroy(item_uID);
+            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
+            return Item_Component::emptyEquipSlot;
+        }
+        else {
+            Create_Item1(item_uID, position, itemName, itemStats);
+            return item_uID;
+        }
     }
 
 	//mouse click
@@ -401,7 +409,7 @@ namespace Items {
 		for (auto item1 : view) {
 			auto& itemPosition1 = view.get<Component::Position>(item1);
 			auto& name1 = view.get<Name>(item1).name;
-			auto& groundItem1 = view.get<Ground_Item>(item1).box;
+			auto& groundItem1 = view.get<Ground_Item>(item1);
 			SDL_Rect textBox1 = {};
 			textBox1.w = name1.length() * 5;
 			textBox1.h = 10;
@@ -411,21 +419,17 @@ namespace Items {
 				if (item1 != item2) {
 					auto& itemPosition2 = view.get<Component::Position>(item2);
 					auto& name2 = view.get<Name>(item2).name;
-					auto& groundItem2 = view.get<Ground_Item>(item2).box;
+					auto& groundItem2 = view.get<Ground_Item>(item2);
 					SDL_Rect textBox2 = {};
 					textBox2.w = name2.length() * 5;
 					textBox2.h = 10;
 					textBox2.x = itemPosition2.x - (textBox2.w / 2.0f);
 					textBox2.y = itemPosition2.y - 10;
 					SDL_Point rectPosition = Utilities::Check_Collision_Rects(textBox1, textBox2);
-					itemPosition1.x += rectPosition.x;
-					itemPosition1.y += rectPosition.y;
-					groundItem1.x += rectPosition.x;
-					groundItem1.y += rectPosition.y;
-					itemPosition2.x -= rectPosition.x;
-					itemPosition2.y -= rectPosition.y;
-					groundItem2.x -= rectPosition.x;
-					groundItem2.y -= rectPosition.y;
+					groundItem1.ground_name.x += rectPosition.x;
+					groundItem1.ground_name.y += rectPosition.y;
+					groundItem2.ground_name.x -= rectPosition.x;
+					groundItem2.ground_name.y -= rectPosition.y;
 				}
 			}
 		}
@@ -438,7 +442,7 @@ namespace Items {
 			position.x = mouseX;
 			position.y = mouseY;
 		}
-		Item_Collision(zone);
+//		Item_Collision(zone);
 	}
 
 	void Show_Ground_Items(entt::registry& zone, Component::Camera& camera) {
@@ -492,8 +496,7 @@ namespace Items {
 
 	void Init_Item_Data() {
 
-        SQLite_Item_Data::Load_Item_Names("RTP_male");
-        SQLite_Item_Data::Load_Item_Names("RTP_female");
+        SQLite_Item_Data::Load_Item_Names();
 
 		rarityColor = {
 			{Rarity::common, { 255, 255, 255, 200 }},
@@ -520,6 +523,8 @@ namespace Items {
 			//{Item_Type::weapon, 4},
 			//{Item_Type::belt, 6},
 			//{Item_Type::shield, 9}
+			{Item_Type::hair, 5},
+			{Item_Type::kilt, 6}
 		};
 
 		armorTypes = {
@@ -557,6 +562,8 @@ namespace Items {
 			{Item_Component::Item_Type::gloves, "gloves"},
 			{Item_Component::Item_Type::legs, "legs"},
 			{Item_Component::Item_Type::boots, "boots"},
+			{Item_Component::Item_Type::hair, "hair"},
+			{Item_Component::Item_Type::kilt, "kilt"},
 		};
 
         weaponMaterialName = {

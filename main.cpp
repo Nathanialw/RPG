@@ -42,6 +42,7 @@ int main(int argc, char* argv[]) {
 		Event_Handler::Update_User_Input(World::zone);
 
         UI::Move_To_Item_Routine(World::zone, Mouse::itemCurrentlyHeld);
+        Death_Control::Dead_Entity_Routine (World::zone);
         Player_Control::Move_To_Atack_Routine(World::zone);
 
 		//std::cout << "Player_Input = Good" << std::endl;
@@ -69,7 +70,10 @@ int main(int argc, char* argv[]) {
 
 		//std::cout << "Update_Unit_Status = Good" << std::endl;
 		Rendering::Rendering(World::zone);
+        Dynamic_Quad_Tree::Update_Tree_Routine(World::zone);
 
+
+        Rendering::Present();
 		//std::cout << "Rendering = Good" << std::endl;
 		Timer::Calculate_Timestep();
 		Timer::Calculate_FPS();

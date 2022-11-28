@@ -4,6 +4,7 @@
 #include "combat_control.h"
 #include "tooltips.h"
 #include "graphics.h"
+#include "death_control.h"
 //#include "include/box2d/box2d.h"
 
 
@@ -47,7 +48,7 @@ namespace Unit_Status {
 			//std::cout << "health = " << health << std::endl;
 			health -= damage;
 			damage -= damage;
-			//if the soldier is in the assignment vector it will be set as dead if it dies
+			//if the soldier is in the assignment vector it will be set as dying if it dies
 			if (health <= 0) {
 				if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
 					auto& assignment = zone.get<Component::Assigned_To_Formation>(entity);
@@ -68,7 +69,7 @@ namespace Unit_Status {
 //			//std::cout << "health = " << health << std::endl;
 //			health -= damage;
 //	        damage -= damage;
-//			//if the soldier is in the assignment vector it will be set as dead if it dies
+//			//if the soldier is in the assignment vector it will be set as dying if it dies
 //			if (health <= 0) {
 //				if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
 //					auto& assignment = zone.get<Component::Assigned_To_Formation>(entity);
@@ -82,60 +83,11 @@ namespace Unit_Status {
 //		}
 	}
 
-	void isDead(entt::registry& zone) {
-        auto view = zone.view<Component::Sprite_Sheet_Info, Component::Action, Component::Health, Component::Position, Component::Radius, Component::Sprite_Offset, Component::Body, Component::In_Object_Tree, Component::Direction>(entt::exclude<Component::Spell>);
-        for (auto entity: view) {
-            auto &health = view.get<Component::Health>(entity);
-            if (health.currentHealth <= 0) {
-                view.get<Component::Action>(entity).state = Component::dead;
-                auto &sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
-                sheetData.currentFrame = 0;
-//                view.get<Component::Sprite_Sheet_Info>(entity).finalFrame = Component::normalFrame;
-                auto &position = view.get<Component::Position>(entity);
-                auto &radius = view.get<Component::Radius>(entity).fRadius;
-                auto &offset = view.get<Component::Sprite_Offset>(entity);
-                auto &body = view.get<Component::Body>(entity).body;
-                auto &inTree = view.get<Component::In_Object_Tree>(entity).inTree;
-                auto &direction = view.get<Component::Direction>(entity);
-
-                //drop random item on death
-                Items::Create_And_Drop_Item(position, direction);
-                ///sets the sprite to render so that it is always rendered behind living sprites
-                position.x -= offset.x;
-                position.y -= offset.y;
-                offset.x = 0.0f;
-                offset.y = 0.0f;
-                Collision::world->DestroyBody(body);
-                World::zone.remove<Component::Body>(entity);
-                ///set to remove from quad tree on update
-                SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
-                zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);
-                zone.get<Component::Alive>(entity).bIsAlive = false;
-                zone.remove<Component::Commandable>(entity);
-                zone.remove<Component::Selected>(entity);
-                zone.remove<Component::Moving>(entity);
-                zone.remove<Component::Mouse_Move>(entity);
-                zone.remove<Component::Velocity>(entity);
-                zone.remove<Component::Spellbook>(entity);
-                zone.remove<Component::Mass>(entity);
-                zone.remove<Component::Sight_Range>(entity);
-                zone.remove<Component::Health>(entity);
-                zone.remove<Component::Radius>(entity);
-
-
-                if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
-                    auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);
-                    auto &soldier_list = zone.get<Test::Soldiers_Assigned_List>(soldier.iUnit_Assigned_To);
-                    soldier_list.unitData[soldier.iIndex].bAlive = false;
-                    zone.remove<Component::Assigned_To_Formation>(entity);
-                }
-            }
-        }
-    }
-
 	void Update_Unit_Status(entt::registry &zone) {
+        Items::Item_Collision(zone);
 		Update_Collided_Unit(zone);
 		Update_Health(zone);
-		isDead(zone);
+		Death_Control::isDead(zone);
+        Death_Control::Dead_Entity_Routine(zone);
 	}
 }

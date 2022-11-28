@@ -6,32 +6,62 @@
 namespace Item_Component {
 
 	enum class Item_Type {
-		neck,
+        amulet,
+        legs,
+        belt,
+        boots,
+        kilt,
+        hair,
+        clothes,
+        chest,
+        gloves,
+        ring,
+        face,
+        helm,
+        crown,
+        hood,
+        shins,
+        back,
 		shoulders,
-		gloves,
-		belt,
-		boots,
-		legs,
-		chest,
-		helm,
-		weapon,
-		shield
+        dirt,
+        ranged,
+        mainhand,
+        offhand
 	};
+
+    struct Item_Pickup {
+
+    };
+
+    struct Equip_Items_Type{
+    };
 
     entt::entity emptyEquipSlot;
 
     struct Equipment {
+        std::string type = "none";
         std::map<Item_Type, entt::entity>equippedItems{
-                { Item_Type::helm, emptyEquipSlot },
-                { Item_Type::neck, emptyEquipSlot },
-                { Item_Type::shoulders, emptyEquipSlot },
-                { Item_Type::chest, emptyEquipSlot },
-                { Item_Type::weapon, emptyEquipSlot },
-                { Item_Type::gloves, emptyEquipSlot },
-                { Item_Type::belt, emptyEquipSlot },
-                { Item_Type::legs, emptyEquipSlot },
-                { Item_Type::boots, emptyEquipSlot },
-                { Item_Type::shield, emptyEquipSlot }
+            { Item_Type::amulet, emptyEquipSlot },
+            { Item_Type::back, emptyEquipSlot },
+            { Item_Type::face, emptyEquipSlot },
+            { Item_Type::belt, emptyEquipSlot },
+            { Item_Type::boots, emptyEquipSlot },
+            { Item_Type::ranged, emptyEquipSlot },
+            { Item_Type::crown, emptyEquipSlot },
+            { Item_Type::dirt, emptyEquipSlot },
+            { Item_Type::hair, emptyEquipSlot },
+            { Item_Type::helm, emptyEquipSlot },
+            { Item_Type::hood, emptyEquipSlot },
+            { Item_Type::legs, emptyEquipSlot },
+            { Item_Type::kilt, emptyEquipSlot },
+            { Item_Type::gloves, emptyEquipSlot },
+            { Item_Type::clothes, emptyEquipSlot },
+            { Item_Type::chest, emptyEquipSlot },
+            { Item_Type::ring, emptyEquipSlot },
+            { Item_Type::shins, emptyEquipSlot },
+            { Item_Type::shoulders, emptyEquipSlot },
+            { Item_Type::offhand, emptyEquipSlot },
+            { Item_Type::mainhand, emptyEquipSlot },
         };
     };
 
@@ -61,6 +91,10 @@ namespace Item_Component {
 		SDL_FRect box = {};
         SDL_FRect ground_name = {};
 	};
+
+    struct Update_Ground_Item {
+
+    };
 
 	struct Name {
 		std::string name;

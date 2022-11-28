@@ -106,6 +106,7 @@ namespace Graphics {
     };
 
     Text_Box_Data Create_Text_Background (Component::Camera &camera, SDL_Color textColor, std::string &text, Component::Position &position) {
+//        float yPosition = position.y - 20.0f;
         SDL_FRect textBox = {};
         textBox.w = text.length() * 5.0f;
         textBox.h = 10.0f;

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Weapons(Addon_Goblin_Staff1).png" width="1015" height="1007" scale="1" format="RGBA8888">
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_01_ 0" x="817" y="922" w="54" h="21" pX="0.5" pY="0.5" oX="41" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_02_ 0" x="949" y="572" w="42" h="25" pX="0.5" pY="0.5" oX="64" oY="32" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_03_ 0" x="889" y="832" w="22" h="61" pX="0.5" pY="0.5" oX="88" oY="119" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_04_ 1" x="835" y="256" w="57" h="61" pX="0.5" pY="0.5" oX="90" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_05_ 1" x="338" y="924" w="48" h="22" pX="0.5" pY="0.5" oX="115" oY="48" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_06_ 1" x="55" y="276" w="78" h="11" pX="0.5" pY="0.5" oX="24" oY="112" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_07_ 2" x="892" y="115" w="62" h="45" pX="0.5" pY="0.5" oX="57" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_08_ 2" x="611" y="0" w="48" h="72" pX="0.5" pY="0.5" oX="41" oY="49" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_09_ 2" x="200" y="57" w="85" h="19" pX="0.5" pY="0.5" oX="93" oY="112" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_10_ 3" x="730" y="454" w="64" h="60" pX="0.5" pY="0.5" oX="98" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_11_ 3" x="569" y="0" w="42" h="74" pX="0.5" pY="0.5" oX="98" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_12_ 3" x="716" y="581" w="14" h="23" pX="0.5" pY="0.5" oX="102" oY="58" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_13_ 4" x="335" y="0" w="81" h="25" pX="0.5" pY="0.5" oX="52" oY="75" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_14_ 4" x="609" y="363" w="12" h="17" pX="0.5" pY="0.5" oX="108" oY="37" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_15_ 4" x="771" y="514" w="64" h="39" pX="0.5" pY="0.5" oX="37" oY="119" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_16_ 5" x="495" y="396" w="17" h="75" pX="0.5" pY="0.5" oX="124" oY="64" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_17_ 5" x="128" y="871" w="61" h="47" pX="0.5" pY="0.5" oX="107" oY="58" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_18_ 5" x="189" y="912" w="50" h="42" pX="0.5" pY="0.5" oX="47" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_19_ 6" x="277" y="822" w="24" h="43" pX="0.5" pY="0.5" oX="63" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_20_ 6" x="826" y="874" w="62" h="48" pX="0.5" pY="0.5" oX="35" oY="38" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_21_ 6" x="892" y="572" w="57" h="52" pX="0.5" pY="0.5" oX="100" oY="118" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_22_ 7" x="115" y="300" w="81" h="24" pX="0.5" pY="0.5" oX="71" oY="113" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_23_ 7" x="0" y="200" w="15" h="85" pX="0.5" pY="0.5" oX="84" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 1_24_ 7" x="701" y="827" w="63" h="46" pX="0.5" pY="0.5" oX="104" oY="75" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_01_ 0" x="586" y="955" w="38" h="47" pX="0.5" pY="0.5" oX="71" oY="66" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_02_ 0" x="386" y="506" w="38" h="74" pX="0.5" pY="0.5" oX="94" oY="36" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_03_ 0" x="834" y="620" w="53" h="57" pX="0.5" pY="0.5" oX="19" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_04_ 1" x="954" y="160" w="35" h="35" pX="0.5" pY="0.5" oX="76" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_05_ 1" x="426" y="668" w="70" h="19" pX="0.5" pY="0.5" oX="78" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_06_ 1" x="99" y="200" w="84" h="19" pX="0.5" pY="0.5" oX="34" oY="55" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_07_ 2" x="525" y="235" w="35" h="75" pX="0.5" pY="0.5" oX="93" oY="64" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_08_ 2" x="646" y="548" w="70" h="57" pX="0.5" pY="0.5" oX="56" oY="42" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_09_ 2" x="628" y="369" w="70" h="54" pX="0.5" pY="0.5" oX="87" oY="109" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_10_ 3" x="560" y="235" w="38" h="73" pX="0.5" pY="0.5" oX="95" oY="50" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_11_ 3" x="243" y="728" w="34" h="27" pX="0.5" pY="0.5" oX="74" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_12_ 3" x="578" y="681" w="34" h="68" pX="0.5" pY="0.5" oX="139" oY="51" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_13_ 4" x="400" y="709" w="20" h="27" pX="0.5" pY="0.5" oX="79" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_14_ 4" x="213" y="679" w="69" h="49" pX="0.5" pY="0.5" oX="82" oY="55" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_15_ 4" x="183" y="269" w="81" h="31" pX="0.5" pY="0.5" oX="24" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_16_ 5" x="991" y="0" w="24" h="32" pX="0.5" pY="0.5" oX="86" oY="52" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_17_ 5" x="628" y="423" w="33" h="26" pX="0.5" pY="0.5" oX="87" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_18_ 5" x="730" y="0" w="45" h="67" pX="0.5" pY="0.5" oX="98" oY="28" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_19_ 6" x="911" y="426" w="43" h="59" pX="0.5" pY="0.5" oX="75" oY="70" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_20_ 6" x="522" y="120" w="29" h="75" pX="0.5" pY="0.5" oX="86" oY="33" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_21_ 6" x="730" y="581" w="36" h="64" pX="0.5" pY="0.5" oX="68" oY="109" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_22_ 7" x="17" y="276" w="19" h="82" pX="0.5" pY="0.5" oX="105" oY="54" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_23_ 7" x="661" y="423" w="69" h="23" pX="0.5" pY="0.5" oX="53" oY="65" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Attack 2_24_ 7" x="0" y="953" w="56" h="54" pX="0.5" pY="0.5" oX="128" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_01_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_02_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_03_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_04_ 1" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_05_ 1" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_06_ 1" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_07_ 2" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_08_ 2" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_09_ 2" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_10_ 3" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_11_ 3" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_12_ 3" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_13_ 4" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_14_ 4" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_15_ 4" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_16_ 5" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_17_ 5" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_18_ 5" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_19_ 6" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_20_ 6" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_21_ 6" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_22_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_23_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Behavior_24_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_01_ 0" x="79" y="416" w="65" h="12" pX="0.5" pY="0.5" oX="26" oY="98" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_02_ 0" x="224" y="625" w="62" h="12" pX="0.5" pY="0.5" oX="23" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_03_ 0" x="307" y="461" w="75" h="13" pX="0.5" pY="0.5" oX="24" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_04_ 1" x="609" y="292" w="41" h="71" pX="0.5" pY="0.5" oX="81" oY="40" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_05_ 1" x="569" y="147" w="38" h="73" pX="0.5" pY="0.5" oX="96" oY="36" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_06_ 1" x="457" y="154" w="33" h="76" pX="0.5" pY="0.5" oX="118" oY="29" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_07_ 2" x="835" y="563" w="51" h="57" pX="0.5" pY="0.5" oX="82" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_08_ 2" x="518" y="955" w="39" h="48" pX="0.5" pY="0.5" oX="70" oY="103" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_09_ 2" x="950" y="485" w="41" h="44" pX="0.5" pY="0.5" oX="53" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_10_ 3" x="271" y="573" w="73" h="52" pX="0.5" pY="0.5" oX="105" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_11_ 3" x="490" y="310" w="75" h="49" pX="0.5" pY="0.5" oX="106" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_12_ 3" x="382" y="461" w="76" h="45" pX="0.5" pY="0.5" oX="104" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_13_ 4" x="493" y="0" w="76" h="40" pX="0.5" pY="0.5" oX="37" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_14_ 4" x="424" y="520" w="74" h="44" pX="0.5" pY="0.5" oX="47" oY="51" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_15_ 4" x="284" y="637" w="71" h="51" pX="0.5" pY="0.5" oX="63" oY="31" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_16_ 5" x="462" y="396" w="33" h="75" pX="0.5" pY="0.5" oX="116" oY="46" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_17_ 5" x="569" y="74" w="38" h="73" pX="0.5" pY="0.5" oX="126" oY="52" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_18_ 5" x="609" y="144" w="44" h="72" pX="0.5" pY="0.5" oX="136" oY="57" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_19_ 6" x="954" y="407" w="32" h="39" pX="0.5" pY="0.5" oX="55" oY="103" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_20_ 6" x="949" y="669" w="38" h="34" pX="0.5" pY="0.5" oX="40" oY="98" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_21_ 6" x="949" y="638" w="41" h="31" pX="0.5" pY="0.5" oX="24" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_22_ 7" x="0" y="474" w="76" h="28" pX="0.5" pY="0.5" oX="91" oY="104" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_23_ 7" x="458" y="490" w="74" h="30" pX="0.5" pY="0.5" oX="83" oY="109" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Block_24_ 7" x="142" y="644" w="71" h="46" pX="0.5" pY="0.5" oX="70" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_01_ 0" x="652" y="955" w="32" h="43" pX="0.5" pY="0.5" oX="60" oY="100" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_02_ 0" x="955" y="597" w="33" h="41" pX="0.5" pY="0.5" oX="59" oY="103" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_03_ 0" x="955" y="784" w="34" h="39" pX="0.5" pY="0.5" oX="58" oY="106" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_04_ 1" x="355" y="637" w="71" h="49" pX="0.5" pY="0.5" oX="42" oY="70" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_05_ 1" x="0" y="644" w="71" h="46" pX="0.5" pY="0.5" oX="43" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_06_ 1" x="344" y="588" w="72" h="45" pX="0.5" pY="0.5" oX="43" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_07_ 2" x="607" y="470" w="70" h="28" pX="0.5" pY="0.5" oX="91" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_08_ 2" x="659" y="0" w="71" h="23" pX="0.5" pY="0.5" oX="90" oY="113" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_09_ 2" x="73" y="589" w="73" h="23" pX="0.5" pY="0.5" oX="88" oY="113" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_10_ 3" x="343" y="321" w="33" h="79" pX="0.5" pY="0.5" oX="111" oY="54" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_11_ 3" x="416" y="0" w="34" h="78" pX="0.5" pY="0.5" oX="111" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_12_ 3" x="416" y="320" w="34" h="77" pX="0.5" pY="0.5" oX="111" oY="58" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_13_ 4" x="115" y="287" w="60" h="13" pX="0.5" pY="0.5" oX="33" oY="103" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_14_ 4" x="62" y="912" w="61" h="12" pX="0.5" pY="0.5" oX="32" oY="104" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_15_ 4" x="638" y="814" w="62" h="11" pX="0.5" pY="0.5" oX="32" oY="105" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_16_ 5" x="457" y="0" w="36" h="77" pX="0.5" pY="0.5" oX="82" oY="49" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_17_ 5" x="453" y="309" w="37" h="76" pX="0.5" pY="0.5" oX="82" oY="50" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_18_ 5" x="453" y="233" w="38" h="76" pX="0.5" pY="0.5" oX="82" oY="51" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_19_ 6" x="392" y="955" w="40" h="50" pX="0.5" pY="0.5" oX="86" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_20_ 6" x="351" y="955" w="41" h="50" pX="0.5" pY="0.5" oX="85" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_21_ 6" x="275" y="955" w="43" h="51" pX="0.5" pY="0.5" oX="84" oY="103" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_22_ 7" x="657" y="266" w="70" h="57" pX="0.5" pY="0.5" oX="101" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_23_ 7" x="657" y="210" w="70" h="56" pX="0.5" pY="0.5" oX="101" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Critical HP_24_ 7" x="568" y="627" w="71" h="54" pX="0.5" pY="0.5" oX="100" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_01_ 0" x="950" y="529" w="24" h="41" pX="0.5" pY="0.5" oX="79" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_02_ 0" x="353" y="821" w="63" h="52" pX="0.5" pY="0.5" oX="72" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_03_ 0" x="737" y="961" w="47" h="46" pX="0.5" pY="0.5" oX="56" oY="54" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_04_ 1" x="73" y="612" w="72" h="32" pX="0.5" pY="0.5" oX="53" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_05_ 1" x="953" y="261" w="25" h="21" pX="0.5" pY="0.5" oX="91" oY="106" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_06_ 1" x="334" y="709" w="66" h="56" pX="0.5" pY="0.5" oX="114" oY="67" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_07_ 2" x="574" y="549" w="72" h="43" pX="0.5" pY="0.5" oX="79" oY="104" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_08_ 2" x="285" y="0" w="23" h="84" pX="0.5" pY="0.5" oX="89" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_09_ 2" x="271" y="514" w="74" h="42" pX="0.5" pY="0.5" oX="17" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_10_ 3" x="0" y="285" w="17" h="83" pX="0.5" pY="0.5" oX="108" oY="66" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_11_ 3" x="774" y="418" w="63" h="36" pX="0.5" pY="0.5" oX="69" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_12_ 3" x="56" y="945" w="48" h="55" pX="0.5" pY="0.5" oX="100" oY="114" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_13_ 4" x="834" y="768" w="35" h="13" pX="0.5" pY="0.5" oX="52" oY="110" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_14_ 4" x="478" y="872" w="61" h="40" pX="0.5" pY="0.5" oX="74" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_15_ 4" x="336" y="73" w="80" h="19" pX="0.5" pY="0.5" oX="79" oY="64" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_16_ 5" x="461" y="756" w="57" h="65" pX="0.5" pY="0.5" oX="75" oY="69" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_17_ 5" x="79" y="368" w="35" h="25" pX="0.5" pY="0.5" oX="82" oY="104" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_18_ 5" x="856" y="436" w="30" h="59" pX="0.5" pY="0.5" oX="140" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_19_ 6" x="892" y="544" w="58" h="28" pX="0.5" pY="0.5" oX="72" oY="111" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_20_ 6" x="396" y="242" w="36" h="78" pX="0.5" pY="0.5" oX="86" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_21_ 6" x="245" y="955" w="30" h="51" pX="0.5" pY="0.5" oX="34" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_22_ 7" x="424" y="564" w="51" h="73" pX="0.5" pY="0.5" oX="99" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_23_ 7" x="775" y="0" w="62" h="64" pX="0.5" pY="0.5" oX="67" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Dead To Down_24_ 7" x="115" y="324" w="81" h="40" pX="0.5" pY="0.5" oX="43" oY="117" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_1_01_ 0" x="892" y="760" w="45" h="56" pX="0.5" pY="0.5" oX="35" oY="67" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_1_02_ 1" x="426" y="637" w="71" h="31" pX="0.5" pY="0.5" oX="87" oY="64" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_1_03_ 2" x="497" y="637" w="71" h="51" pX="0.5" pY="0.5" oX="46" oY="112" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_1_04_ 3" x="911" y="816" w="43" h="51" pX="0.5" pY="0.5" oX="127" oY="100" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_1_05_ 4" x="366" y="765" w="30" h="56" pX="0.5" pY="0.5" oX="71" oY="52" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_1_06_ 5" x="154" y="447" w="77" h="27" pX="0.5" pY="0.5" oX="102" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_1_07_ 6" x="575" y="814" w="63" h="56" pX="0.5" pY="0.5" oX="23" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_1_08_ 7" x="727" y="72" w="31" h="66" pX="0.5" pY="0.5" oX="103" oY="108" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_2_01_ 0" x="834" y="677" w="56" h="57" pX="0.5" pY="0.5" oX="21" oY="75" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_2_02_ 1" x="685" y="912" w="54" h="24" pX="0.5" pY="0.5" oX="107" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_2_03_ 2" x="15" y="224" w="84" h="51" pX="0.5" pY="0.5" oX="37" oY="126" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_2_04_ 3" x="773" y="129" w="51" h="64" pX="0.5" pY="0.5" oX="128" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_2_05_ 4" x="758" y="67" w="13" h="56" pX="0.5" pY="0.5" oX="73" oY="55" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_2_06_ 5" x="659" y="681" w="45" h="67" pX="0.5" pY="0.5" oX="135" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_2_07_ 6" x="835" y="505" w="54" h="58" pX="0.5" pY="0.5" oX="20" oY="105" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_2_08_ 7" x="533" y="471" w="74" h="32" pX="0.5" pY="0.5" oX="87" oY="150" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_3_01_ 0" x="704" y="741" w="66" h="24" pX="0.5" pY="0.5" oX="40" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_3_02_ 1" x="612" y="681" w="47" h="68" pX="0.5" pY="0.5" oX="125" oY="66" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_3_03_ 2" x="892" y="704" w="55" h="56" pX="0.5" pY="0.5" oX="27" oY="108" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_3_04_ 3" x="774" y="351" w="63" h="50" pX="0.5" pY="0.5" oX="97" oY="125" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_3_05_ 4" x="115" y="364" w="79" h="21" pX="0.5" pY="0.5" oX="82" oY="65" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_3_06_ 5" x="327" y="285" w="16" h="80" pX="0.5" pY="0.5" oX="145" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_3_07_ 6" x="727" y="261" w="29" h="62" pX="0.5" pY="0.5" oX="40" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_3_08_ 7" x="196" y="348" w="80" h="19" pX="0.5" pY="0.5" oX="48" oY="143" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_4_01_ 0" x="416" y="155" w="12" h="65" pX="0.5" pY="0.5" oX="51" oY="39" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_4_02_ 1" x="345" y="514" w="41" h="74" pX="0.5" pY="0.5" oX="141" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_4_03_ 2" x="892" y="282" w="60" h="55" pX="0.5" pY="0.5" oX="17" oY="123" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_4_04_ 3" x="154" y="416" w="77" h="31" pX="0.5" pY="0.5" oX="95" oY="149" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_4_05_ 4" x="630" y="910" w="55" h="45" pX="0.5" pY="0.5" oX="91" oY="42" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_4_06_ 5" x="416" y="78" w="12" h="77" pX="0.5" pY="0.5" oX="166" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_4_07_ 6" x="681" y="140" w="25" h="69" pX="0.5" pY="0.5" oX="17" oY="67" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Down_4_08_ 7" x="0" y="428" w="77" h="46" pX="0.5" pY="0.5" oX="40" oY="125" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_01_ 0" x="492" y="688" w="39" h="68" pX="0.5" pY="0.5" oX="59" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_02_ 0" x="837" y="0" w="56" h="63" pX="0.5" pY="0.5" oX="52" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_03_ 0" x="424" y="687" w="68" h="53" pX="0.5" pY="0.5" oX="49" oY="70" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_04_ 1" x="376" y="399" w="77" h="16" pX="0.5" pY="0.5" oX="70" oY="94" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_05_ 1" x="578" y="749" w="67" h="19" pX="0.5" pY="0.5" oX="85" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_06_ 1" x="676" y="515" w="40" h="31" pX="0.5" pY="0.5" oX="113" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_07_ 2" x="77" y="428" w="77" h="44" pX="0.5" pY="0.5" oX="56" oY="113" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_08_ 2" x="0" y="770" w="66" h="57" pX="0.5" pY="0.5" oX="52" oY="105" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_09_ 2" x="282" y="688" w="52" h="69" pX="0.5" pY="0.5" oX="50" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_10_ 3" x="865" y="943" w="38" h="45" pX="0.5" pY="0.5" oX="106" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_11_ 3" x="834" y="734" w="56" h="34" pX="0.5" pY="0.5" oX="96" oY="111" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_12_ 3" x="355" y="686" w="69" h="23" pX="0.5" pY="0.5" oX="86" oY="122" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_13_ 4" x="231" y="416" w="77" h="39" pX="0.5" pY="0.5" oX="54" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_14_ 4" x="335" y="25" w="81" h="29" pX="0.5" pY="0.5" oX="60" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_15_ 4" x="194" y="367" w="79" h="16" pX="0.5" pY="0.5" oX="70" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_16_ 5" x="954" y="823" w="28" h="36" pX="0.5" pY="0.5" oX="111" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_17_ 5" x="756" y="261" w="15" h="42" pX="0.5" pY="0.5" oX="121" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_18_ 5" x="955" y="745" w="27" h="39" pX="0.5" pY="0.5" oX="125" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_19_ 6" x="531" y="688" w="47" h="68" pX="0.5" pY="0.5" oX="65" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_20_ 6" x="539" y="396" w="23" h="75" pX="0.5" pY="0.5" oX="68" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_21_ 6" x="512" y="396" w="27" h="75" pX="0.5" pY="0.5" oX="52" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_22_ 7" x="308" y="415" w="77" h="34" pX="0.5" pY="0.5" oX="73" oY="105" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_23_ 7" x="196" y="300" w="81" h="48" pX="0.5" pY="0.5" oX="63" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Evade_24_ 7" x="0" y="368" w="79" h="60" pX="0.5" pY="0.5" oX="55" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_01_ 0" x="478" y="912" w="58" h="12" pX="0.5" pY="0.5" oX="33" oY="108" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_02_ 0" x="774" y="401" w="63" h="17" pX="0.5" pY="0.5" oX="29" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_03_ 0" x="158" y="955" w="51" h="47" pX="0.5" pY="0.5" oX="42" oY="52" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_04_ 1" x="611" y="72" w="39" h="72" pX="0.5" pY="0.5" oX="76" oY="50" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_05_ 1" x="432" y="78" w="22" h="78" pX="0.5" pY="0.5" oX="95" oY="44" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_06_ 1" x="376" y="321" w="40" h="78" pX="0.5" pY="0.5" oX="118" oY="46" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_07_ 2" x="903" y="923" w="40" h="44" pX="0.5" pY="0.5" oX="88" oY="110" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_08_ 2" x="624" y="955" w="28" h="47" pX="0.5" pY="0.5" oX="86" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_09_ 2" x="823" y="988" w="41" h="18" pX="0.5" pY="0.5" oX="45" oY="117" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_10_ 3" x="0" y="590" w="73" h="52" pX="0.5" pY="0.5" oX="98" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_11_ 3" x="385" y="415" w="77" h="41" pX="0.5" pY="0.5" oX="98" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_12_ 3" x="646" y="605" w="63" h="21" pX="0.5" pY="0.5" oX="99" oY="115" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_13_ 4" x="306" y="474" w="76" h="40" pX="0.5" pY="0.5" oX="37" oY="75" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_14_ 4" x="179" y="768" w="65" h="57" pX="0.5" pY="0.5" oX="49" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_15_ 4" x="55" y="287" w="26" h="81" pX="0.5" pY="0.5" oX="91" oY="34" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_16_ 5" x="490" y="120" w="32" h="75" pX="0.5" pY="0.5" oX="107" oY="52" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_17_ 5" x="525" y="549" w="49" h="72" pX="0.5" pY="0.5" oX="108" oY="57" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_18_ 5" x="140" y="690" w="69" h="53" pX="0.5" pY="0.5" oX="112" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_19_ 6" x="955" y="0" w="30" h="43" pX="0.5" pY="0.5" oX="65" oY="105" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_20_ 6" x="386" y="924" w="48" h="27" pX="0.5" pY="0.5" oX="46" oY="110" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_21_ 6" x="0" y="690" w="69" h="24" pX="0.5" pY="0.5" oX="22" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_22_ 7" x="231" y="455" w="76" h="19" pX="0.5" pY="0.5" oX="90" oY="111" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_23_ 7" x="179" y="743" w="64" h="22" pX="0.5" pY="0.5" oX="90" oY="119" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Get Hit_24_ 7" x="316" y="365" w="27" h="49" pX="0.5" pY="0.5" oX="86" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_01_ 0" x="254" y="822" w="23" h="62" pX="0.5" pY="0.5" oX="74" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_02_ 0" x="739" y="912" w="23" h="49" pX="0.5" pY="0.5" oX="74" oY="106" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_03_ 0" x="698" y="369" w="22" h="49" pX="0.5" pY="0.5" oX="75" oY="106" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_04_ 1" x="200" y="194" w="84" h="12" pX="0.5" pY="0.5" oX="51" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_05_ 1" x="200" y="182" w="84" h="12" pX="0.5" pY="0.5" oX="51" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_06_ 1" x="200" y="170" w="85" h="12" pX="0.5" pY="0.5" oX="50" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_07_ 2" x="200" y="132" w="85" h="19" pX="0.5" pY="0.5" oX="68" oY="122" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_08_ 2" x="200" y="0" w="85" h="19" pX="0.5" pY="0.5" oX="68" oY="122" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_09_ 2" x="183" y="206" w="84" h="19" pX="0.5" pY="0.5" oX="69" oY="122" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_10_ 3" x="870" y="377" w="17" h="59" pX="0.5" pY="0.5" oX="112" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_11_ 3" x="911" y="485" w="17" h="59" pX="0.5" pY="0.5" oX="112" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_12_ 3" x="854" y="377" w="16" h="59" pX="0.5" pY="0.5" oX="112" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_13_ 4" x="771" y="553" w="64" h="45" pX="0.5" pY="0.5" oX="50" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_14_ 4" x="224" y="588" w="47" h="33" pX="0.5" pY="0.5" oX="50" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_15_ 4" x="567" y="912" w="47" h="34" pX="0.5" pY="0.5" oX="50" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_16_ 5" x="892" y="179" w="62" h="42" pX="0.5" pY="0.5" oX="76" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_17_ 5" x="191" y="870" w="62" h="42" pX="0.5" pY="0.5" oX="76" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_18_ 5" x="638" y="827" w="63" h="41" pX="0.5" pY="0.5" oX="75" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_19_ 6" x="339" y="873" w="62" h="51" pX="0.5" pY="0.5" oX="65" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_20_ 6" x="416" y="872" w="62" h="52" pX="0.5" pY="0.5" oX="66" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_21_ 6" x="829" y="781" w="63" h="51" pX="0.5" pY="0.5" oX="65" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_22_ 7" x="771" y="261" w="64" h="45" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_23_ 7" x="771" y="306" w="64" h="45" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle Fidget_24_ 7" x="128" y="825" w="63" h="46" pX="0.5" pY="0.5" oX="90" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_01_ 0" x="837" y="63" w="22" h="63" pX="0.5" pY="0.5" oX="75" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_02_ 0" x="552" y="756" w="23" h="64" pX="0.5" pY="0.5" oX="74" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_03_ 0" x="775" y="193" w="23" h="64" pX="0.5" pY="0.5" oX="74" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_04_ 0" x="821" y="193" w="23" h="63" pX="0.5" pY="0.5" oX="74" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_05_ 0" x="798" y="193" w="23" h="64" pX="0.5" pY="0.5" oX="74" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_06_ 1" x="200" y="120" w="85" h="12" pX="0.5" pY="0.5" oX="51" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_07_ 1" x="200" y="109" w="85" h="11" pX="0.5" pY="0.5" oX="51" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_08_ 1" x="200" y="98" w="85" h="11" pX="0.5" pY="0.5" oX="51" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_09_ 1" x="200" y="87" w="85" h="11" pX="0.5" pY="0.5" oX="51" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_10_ 1" x="200" y="76" w="85" h="11" pX="0.5" pY="0.5" oX="51" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_11_ 2" x="200" y="38" w="85" h="19" pX="0.5" pY="0.5" oX="68" oY="122" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_12_ 2" x="200" y="19" w="85" h="19" pX="0.5" pY="0.5" oX="68" oY="122" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_13_ 2" x="99" y="219" w="84" h="18" pX="0.5" pY="0.5" oX="68" oY="123" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_14_ 2" x="99" y="237" w="84" h="18" pX="0.5" pY="0.5" oX="68" oY="123" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_15_ 2" x="200" y="151" w="85" h="19" pX="0.5" pY="0.5" oX="68" oY="122" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_16_ 3" x="837" y="377" w="17" h="59" pX="0.5" pY="0.5" oX="112" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_17_ 3" x="892" y="426" w="17" h="59" pX="0.5" pY="0.5" oX="112" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_18_ 3" x="889" y="485" w="17" h="58" pX="0.5" pY="0.5" oX="113" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_19_ 3" x="873" y="190" w="17" h="59" pX="0.5" pY="0.5" oX="113" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_20_ 3" x="928" y="485" w="16" h="58" pX="0.5" pY="0.5" oX="113" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_21_ 4" x="770" y="598" w="64" h="45" pX="0.5" pY="0.5" oX="50" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_22_ 4" x="770" y="643" w="64" h="46" pX="0.5" pY="0.5" oX="50" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_23_ 4" x="770" y="689" w="64" h="46" pX="0.5" pY="0.5" oX="50" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_24_ 4" x="770" y="735" w="64" h="46" pX="0.5" pY="0.5" oX="50" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_25_ 4" x="765" y="781" w="64" h="46" pX="0.5" pY="0.5" oX="50" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_26_ 5" x="568" y="870" w="62" h="42" pX="0.5" pY="0.5" oX="76" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_27_ 5" x="764" y="827" w="63" h="42" pX="0.5" pY="0.5" oX="76" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_28_ 5" x="764" y="869" w="62" h="42" pX="0.5" pY="0.5" oX="77" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_29_ 5" x="827" y="832" w="62" h="42" pX="0.5" pY="0.5" oX="77" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_30_ 5" x="638" y="868" w="62" h="42" pX="0.5" pY="0.5" oX="77" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_31_ 6" x="0" y="873" w="62" h="51" pX="0.5" pY="0.5" oX="65" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_32_ 6" x="794" y="454" w="62" h="51" pX="0.5" pY="0.5" oX="65" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_33_ 6" x="416" y="821" w="62" h="51" pX="0.5" pY="0.5" oX="65" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_34_ 6" x="277" y="873" w="62" h="51" pX="0.5" pY="0.5" oX="65" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_35_ 6" x="478" y="821" w="62" h="51" pX="0.5" pY="0.5" oX="65" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_36_ 7" x="191" y="825" w="63" h="45" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_37_ 7" x="64" y="827" w="64" h="45" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_38_ 7" x="0" y="827" w="64" h="46" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_39_ 7" x="302" y="765" w="64" h="44" pX="0.5" pY="0.5" oX="90" oY="98" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Idle_40_ 7" x="575" y="768" w="64" h="45" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_01_ 0" x="967" y="703" w="24" h="38" pX="0.5" pY="0.5" oX="69" oY="98" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_02_ 0" x="954" y="123" w="21" h="37" pX="0.5" pY="0.5" oX="68" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_03_ 0" x="253" y="884" w="22" h="39" pX="0.5" pY="0.5" oX="67" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_04_ 0" x="343" y="285" w="20" h="36" pX="0.5" pY="0.5" oX="77" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_05_ 0" x="540" y="821" w="28" h="62" pX="0.5" pY="0.5" oX="84" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_06_ 0" x="481" y="955" w="37" h="49" pX="0.5" pY="0.5" oX="81" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_07_ 0" x="947" y="967" w="38" h="40" pX="0.5" pY="0.5" oX="76" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_08_ 0" x="955" y="43" w="22" h="41" pX="0.5" pY="0.5" oX="78" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_09_ 1" x="158" y="385" w="79" h="31" pX="0.5" pY="0.5" oX="49" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_10_ 1" x="154" y="474" w="76" h="34" pX="0.5" pY="0.5" oX="52" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_11_ 1" x="151" y="543" w="74" h="37" pX="0.5" pY="0.5" oX="50" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_12_ 1" x="657" y="72" w="70" h="33" pX="0.5" pY="0.5" oX="45" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_13_ 1" x="498" y="520" w="18" h="43" pX="0.5" pY="0.5" oX="69" oY="66" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_14_ 1" x="954" y="859" w="34" h="32" pX="0.5" pY="0.5" oX="54" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_15_ 1" x="239" y="924" w="50" h="21" pX="0.5" pY="0.5" oX="44" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_16_ 1" x="336" y="92" w="80" h="21" pX="0.5" pY="0.5" oX="46" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_17_ 2" x="336" y="182" w="79" h="33" pX="0.5" pY="0.5" oX="76" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_18_ 2" x="493" y="40" w="76" h="35" pX="0.5" pY="0.5" oX="76" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_19_ 2" x="154" y="508" w="74" h="35" pX="0.5" pY="0.5" oX="80" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_20_ 2" x="650" y="323" w="70" h="46" pX="0.5" pY="0.5" oX="89" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_21_ 2" x="551" y="120" w="18" h="75" pX="0.5" pY="0.5" oX="117" oY="57" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_22_ 2" x="491" y="235" w="34" h="75" pX="0.5" pY="0.5" oX="116" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_23_ 2" x="824" y="129" w="63" h="61" pX="0.5" pY="0.5" oX="97" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_24_ 2" x="285" y="251" w="80" h="34" pX="0.5" pY="0.5" oX="78" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_25_ 3" x="308" y="0" w="17" h="78" pX="0.5" pY="0.5" oX="117" oY="58" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_26_ 3" x="309" y="285" w="18" h="80" pX="0.5" pY="0.5" oX="118" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_27_ 3" x="36" y="276" w="19" h="82" pX="0.5" pY="0.5" oX="118" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_28_ 3" x="285" y="84" w="17" h="84" pX="0.5" pY="0.5" oX="109" oY="50" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_29_ 3" x="844" y="190" w="29" h="61" pX="0.5" pY="0.5" oX="91" oY="41" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_30_ 3" x="620" y="216" w="37" h="71" pX="0.5" pY="0.5" oX="86" oY="41" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_31_ 3" x="304" y="165" w="32" h="81" pX="0.5" pY="0.5" oX="95" oY="45" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_32_ 3" x="432" y="233" w="17" h="76" pX="0.5" pY="0.5" oX="109" oY="61" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_33_ 4" x="289" y="924" w="49" h="16" pX="0.5" pY="0.5" oX="44" oY="98" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_34_ 4" x="525" y="621" w="43" h="14" pX="0.5" pY="0.5" oX="44" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_35_ 4" x="432" y="992" w="49" h="12" pX="0.5" pY="0.5" oX="43" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_36_ 4" x="286" y="625" w="50" h="12" pX="0.5" pY="0.5" oX="45" oY="104" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_37_ 4" x="539" y="883" w="28" h="48" pX="0.5" pY="0.5" oX="70" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_38_ 4" x="947" y="704" w="20" h="41" pX="0.5" pY="0.5" oX="73" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_39_ 4" x="145" y="629" w="33" h="15" pX="0.5" pY="0.5" oX="57" oY="103" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_40_ 4" x="434" y="931" w="46" h="22" pX="0.5" pY="0.5" oX="47" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_41_ 5" x="645" y="749" w="55" h="65" pX="0.5" pY="0.5" oX="78" oY="57" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_42_ 5" x="69" y="757" w="55" h="66" pX="0.5" pY="0.5" oX="81" oY="51" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_43_ 5" x="677" y="446" w="53" h="69" pX="0.5" pY="0.5" oX="80" oY="50" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_44_ 5" x="124" y="757" w="55" h="66" pX="0.5" pY="0.5" oX="72" oY="54" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_45_ 5" x="937" y="760" w="18" h="48" pX="0.5" pY="0.5" oX="76" oY="49" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_46_ 5" x="954" y="446" w="32" h="37" pX="0.5" pY="0.5" oX="61" oY="54" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_47_ 5" x="893" y="58" w="62" h="57" pX="0.5" pY="0.5" oX="61" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_48_ 5" x="893" y="0" w="62" h="58" pX="0.5" pY="0.5" oX="72" oY="64" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_49_ 6" x="892" y="624" w="57" h="40" pX="0.5" pY="0.5" oX="70" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_50_ 6" x="892" y="664" w="57" h="40" pX="0.5" pY="0.5" oX="68" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_51_ 6" x="104" y="955" w="54" h="42" pX="0.5" pY="0.5" oX="70" oY="94" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_52_ 6" x="762" y="911" w="55" h="34" pX="0.5" pY="0.5" oX="77" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_53_ 6" x="598" y="220" w="22" h="72" pX="0.5" pY="0.5" oX="106" oY="69" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_54_ 6" x="837" y="317" w="45" h="60" pX="0.5" pY="0.5" oX="98" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_55_ 6" x="62" y="873" w="62" h="34" pX="0.5" pY="0.5" oX="81" oY="100" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_56_ 6" x="700" y="873" w="62" h="39" pX="0.5" pY="0.5" oX="70" oY="105" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_57_ 7" x="773" y="67" w="64" h="62" pX="0.5" pY="0.5" oX="96" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_58_ 7" x="400" y="756" w="61" h="65" pX="0.5" pY="0.5" oX="98" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_59_ 7" x="709" y="674" w="60" h="67" pX="0.5" pY="0.5" oX="101" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_60_ 7" x="475" y="564" w="50" h="73" pX="0.5" pY="0.5" oX="108" oY="69" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_61_ 7" x="653" y="140" w="28" h="70" pX="0.5" pY="0.5" oX="106" oY="46" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_62_ 7" x="267" y="206" w="18" h="81" pX="0.5" pY="0.5" oX="113" oY="44" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_63_ 7" x="302" y="84" w="33" h="81" pX="0.5" pY="0.5" oX="114" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Running_64_ 7" x="244" y="757" w="58" h="65" pX="0.5" pY="0.5" oX="99" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_01_ 0" x="308" y="449" w="77" h="12" pX="0.5" pY="0.5" oX="31" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_02_ 0" x="79" y="400" w="79" h="16" pX="0.5" pY="0.5" oX="34" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_03_ 0" x="639" y="627" w="70" h="54" pX="0.5" pY="0.5" oX="43" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_04_ 1" x="123" y="515" w="28" h="74" pX="0.5" pY="0.5" oX="87" oY="49" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_05_ 1" x="518" y="756" w="34" h="65" pX="0.5" pY="0.5" oX="86" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_06_ 1" x="730" y="645" w="31" h="29" pX="0.5" pY="0.5" oX="97" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_07_ 2" x="557" y="955" w="29" h="48" pX="0.5" pY="0.5" oX="89" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_08_ 2" x="209" y="955" w="36" h="51" pX="0.5" pY="0.5" oX="84" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_09_ 2" x="77" y="515" w="46" h="74" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_10_ 3" x="77" y="472" w="77" h="43" pX="0.5" pY="0.5" oX="96" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_11_ 3" x="336" y="113" w="80" h="37" pX="0.5" pY="0.5" oX="90" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_12_ 3" x="71" y="644" w="71" h="26" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_13_ 4" x="659" y="23" w="70" h="49" pX="0.5" pY="0.5" oX="44" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_14_ 4" x="490" y="359" w="75" h="37" pX="0.5" pY="0.5" oX="47" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_15_ 4" x="271" y="556" w="74" h="17" pX="0.5" pY="0.5" oX="54" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_16_ 5" x="565" y="308" w="44" h="72" pX="0.5" pY="0.5" oX="105" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_17_ 5" x="730" y="389" w="44" h="65" pX="0.5" pY="0.5" oX="104" oY="65" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_18_ 5" x="947" y="891" w="33" h="31" pX="0.5" pY="0.5" oX="110" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_19_ 6" x="951" y="376" w="40" h="31" pX="0.5" pY="0.5" oX="55" oY="112" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_20_ 6" x="823" y="943" w="42" h="45" pX="0.5" pY="0.5" oX="56" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_21_ 6" x="454" y="77" w="32" h="77" pX="0.5" pY="0.5" oX="61" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_22_ 7" x="71" y="670" w="71" h="19" pX="0.5" pY="0.5" oX="89" oY="119" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_23_ 7" x="230" y="474" w="76" h="27" pX="0.5" pY="0.5" oX="81" oY="116" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Use Skill_24_ 7" x="532" y="503" w="74" h="46" pX="0.5" pY="0.5" oX="76" oY="106" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_01_ 0" x="859" y="63" w="31" h="63" pX="0.5" pY="0.5" oX="81" oY="94" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_02_ 0" x="0" y="515" w="28" h="75" pX="0.5" pY="0.5" oX="83" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_03_ 0" x="432" y="156" w="25" h="77" pX="0.5" pY="0.5" oX="85" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_04_ 0" x="562" y="396" w="29" h="73" pX="0.5" pY="0.5" oX="79" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_05_ 0" x="318" y="955" w="33" h="50" pX="0.5" pY="0.5" oX="78" oY="103" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_06_ 0" x="784" y="945" w="39" h="46" pX="0.5" pY="0.5" oX="76" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_07_ 0" x="952" y="282" w="39" h="39" pX="0.5" pY="0.5" oX="76" oY="94" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_08_ 0" x="955" y="84" w="25" h="39" pX="0.5" pY="0.5" oX="82" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_09_ 1" x="15" y="206" w="84" h="18" pX="0.5" pY="0.5" oX="45" oY="98" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_10_ 1" x="336" y="150" w="80" h="32" pX="0.5" pY="0.5" oX="57" oY="94" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_11_ 1" x="237" y="383" w="79" h="31" pX="0.5" pY="0.5" oX="60" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_12_ 1" x="491" y="195" w="75" h="40" pX="0.5" pY="0.5" oX="57" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_13_ 1" x="183" y="257" w="81" h="12" pX="0.5" pY="0.5" oX="40" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_14_ 1" x="400" y="740" w="59" h="16" pX="0.5" pY="0.5" oX="35" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_15_ 1" x="892" y="397" w="59" h="29" pX="0.5" pY="0.5" oX="36" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_16_ 1" x="0" y="924" w="56" h="29" pX="0.5" pY="0.5" oX="38" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_17_ 2" x="99" y="255" w="84" h="21" pX="0.5" pY="0.5" oX="75" oY="109" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_18_ 2" x="336" y="54" w="80" h="19" pX="0.5" pY="0.5" oX="67" oY="116" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_19_ 2" x="336" y="215" w="79" h="27" pX="0.5" pY="0.5" oX="65" oY="113" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_20_ 2" x="458" y="471" w="75" h="19" pX="0.5" pY="0.5" oX="72" oY="111" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_21_ 2" x="183" y="225" w="82" h="32" pX="0.5" pY="0.5" oX="82" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_22_ 2" x="151" y="580" w="73" h="49" pX="0.5" pY="0.5" oX="96" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_23_ 2" x="892" y="221" w="61" h="61" pX="0.5" pY="0.5" oX="106" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_24_ 2" x="71" y="689" w="69" h="48" pX="0.5" pY="0.5" oX="97" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_25_ 3" x="977" y="43" w="14" h="41" pX="0.5" pY="0.5" oX="109" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_26_ 3" x="174" y="918" w="13" h="34" pX="0.5" pY="0.5" oX="108" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_27_ 3" x="325" y="0" w="10" h="35" pX="0.5" pY="0.5" oX="109" oY="98" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_28_ 3" x="953" y="221" w="38" h="40" pX="0.5" pY="0.5" oX="90" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_29_ 3" x="709" y="605" w="21" h="69" pX="0.5" pY="0.5" oX="105" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_30_ 3" x="365" y="242" w="31" h="79" pX="0.5" pY="0.5" oX="97" oY="46" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_31_ 3" x="277" y="287" w="32" h="81" pX="0.5" pY="0.5" oX="96" oY="38" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_32_ 3" x="285" y="168" w="19" h="83" pX="0.5" pY="0.5" oX="103" oY="43" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_33_ 4" x="951" y="337" w="40" h="39" pX="0.5" pY="0.5" oX="55" oY="103" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_34_ 4" x="727" y="195" w="48" h="66" pX="0.5" pY="0.5" oX="67" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_35_ 4" x="720" y="323" w="51" h="66" pX="0.5" pY="0.5" oX="67" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_36_ 4" x="591" y="380" w="37" h="70" pX="0.5" pY="0.5" oX="70" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_37_ 4" x="903" y="967" w="44" h="35" pX="0.5" pY="0.5" oX="50" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_38_ 4" x="480" y="931" w="43" h="24" pX="0.5" pY="0.5" oX="47" oY="104" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_39_ 4" x="424" y="506" w="34" h="12" pX="0.5" pY="0.5" oX="49" oY="107" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_40_ 4" x="28" y="576" w="49" h="11" pX="0.5" pY="0.5" oX="44" oY="109" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_41_ 5" x="574" y="592" w="72" h="35" pX="0.5" pY="0.5" oX="63" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_42_ 5" x="591" y="450" w="70" h="20" pX="0.5" pY="0.5" oX="69" oY="98" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_43_ 5" x="892" y="160" w="62" h="19" pX="0.5" pY="0.5" oX="77" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_44_ 5" x="230" y="501" w="76" h="13" pX="0.5" pY="0.5" oX="65" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_45_ 5" x="606" y="503" w="70" h="45" pX="0.5" pY="0.5" oX="61" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_46_ 5" x="706" y="140" w="67" h="55" pX="0.5" pY="0.5" oX="56" oY="57" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_47_ 5" x="892" y="337" w="59" h="60" pX="0.5" pY="0.5" oX="57" oY="48" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_48_ 5" x="716" y="515" w="55" h="66" pX="0.5" pY="0.5" oX="63" oY="51" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_49_ 6" x="213" y="637" w="71" h="42" pX="0.5" pY="0.5" oX="69" oY="109" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_50_ 6" x="0" y="714" w="69" h="56" pX="0.5" pY="0.5" oX="65" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_51_ 6" x="700" y="765" w="65" h="60" pX="0.5" pY="0.5" oX="65" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_52_ 6" x="493" y="75" w="76" h="45" pX="0.5" pY="0.5" oX="63" oY="105" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_53_ 6" x="657" y="105" w="70" h="35" pX="0.5" pY="0.5" oX="73" oY="112" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_54_ 6" x="69" y="737" w="68" h="19" pX="0.5" pY="0.5" oX="80" oY="118" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_55_ 6" x="888" y="893" w="59" h="30" pX="0.5" pY="0.5" oX="88" oY="108" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_56_ 6" x="56" y="924" w="55" h="20" pX="0.5" pY="0.5" oX="86" oY="113" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_57_ 7" x="685" y="945" w="52" h="53" pX="0.5" pY="0.5" oX="96" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_58_ 7" x="432" y="955" w="49" h="37" pX="0.5" pY="0.5" oX="88" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_59_ 7" x="123" y="918" w="51" h="32" pX="0.5" pY="0.5" oX="86" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_60_ 7" x="943" y="923" w="36" h="44" pX="0.5" pY="0.5" oX="97" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_61_ 7" x="302" y="809" w="51" h="63" pX="0.5" pY="0.5" oX="103" oY="75" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_62_ 7" x="228" y="514" w="43" h="74" pX="0.5" pY="0.5" oX="114" oY="61" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_63_ 7" x="81" y="287" w="34" h="81" pX="0.5" pY="0.5" oX="121" oY="51" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Goblin_Staff1)_Walking_64_ 7" x="28" y="502" w="49" h="74" pX="0.5" pY="0.5" oX="110" oY="60" oW="200" oH="200"/>
+</TextureAtlas>

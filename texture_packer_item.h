@@ -20,36 +20,19 @@ namespace Texture_Packer_Item {
         std::string unit_type = "";
     };
 
-    Data Get_Sprite_Sheet(std::string &slot) {// needs to search for  a specific row that I can input in the arguments
+    Data Get_Sprite_Sheet(std::string &slot, std::string &equip_type) {// needs to search for  a specific row that I can input in the arguments
         std::string item_name;
         //get a random entry from item vector
-        if (slot == "helm" && SQLite_Item_Data::helm.size() != 0) {
-            item_name = SQLite_Item_Data::helm[rand() % SQLite_Item_Data::helm.size()];
-        }
-        else if (slot == "chest") {
-            item_name = SQLite_Item_Data::chest[rand() % SQLite_Item_Data::chest.size()];
-        }
-        else if (slot == "legs") {
-            item_name = SQLite_Item_Data::legs[rand() % SQLite_Item_Data::legs.size()];
-        }
-        else if (slot == "axe") {
-            item_name = SQLite_Item_Data::axe[rand() % SQLite_Item_Data::axe.size()];
-        }
-        else if (slot == "sword") {
-            item_name = SQLite_Item_Data::sword[rand() % SQLite_Item_Data::sword.size()];
-        }
-        else if (slot == "mace") {
-            item_name = SQLite_Item_Data::mace[rand() % SQLite_Item_Data::mace.size()];
-        }
-        else if (slot == "polearm") {
-            item_name = SQLite_Item_Data::polearm[rand() % SQLite_Item_Data::polearm.size()];
+        //need to know the UNIT_TYPE to get and the SLOT and that returns a vector of strings of the items
+
+        if (SQLite_Item_Data::Items.at(equip_type).contains(SQLite_Item_Data::Get_Item_Type(slot)) && SQLite_Item_Data::Items.at(equip_type).at(SQLite_Item_Data::Get_Item_Type(slot)).size() != 0) {
+            item_name = SQLite_Item_Data::Items.at(equip_type).at(SQLite_Item_Data::Get_Item_Type(slot))[rand() % SQLite_Item_Data::Items.at(equip_type).at(SQLite_Item_Data::Get_Item_Type(slot)).size()];
         }
         else {
+            Utilities::Log("Get_Sprite_Sheet(std::string &slot) item not found for the given unit_type and slot");
             Data data;
             return data;
         }
-
-
 
         Data data;
         data.item_name = item_name;
@@ -100,7 +83,7 @@ namespace Texture_Packer_Item {
         }
     }
 
-    int i = 75;
+    int i = 120;
 
     bool Get_Frame_Action_Data (std::string unitType, bool &check, std::string key, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
         std::string keyCheck = key;
@@ -124,28 +107,62 @@ namespace Texture_Packer_Item {
 //        std::cout << checkAction << std::endl;
         Component::Action_State action;
             /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
-        if (unitType == "RTP_female" || unitType ==  "RTP_male") {
+        if (unitType == "RTP_female" || unitType == "RTP_male") {
             if (checkAction == "1-H Attack 3") {
                 action = Component::Action_State::attack;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "2-H Idle") {
+            } else if (checkAction == "Idle 2") {
                 action = Component::Action_State::idle;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "2-H Run") {
+            } else if (checkAction == "Running") {
                 action = Component::Action_State::walk;
-                actionFrameData[action].frameSpeed = i;
+                actionFrameData[action].frameSpeed = 75;
             } else if (checkAction == "Get Hit 2") {
                 action = Component::Action_State::struck;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "Dead-Down Backward") {
-                action = Component::Action_State::dead;
-                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead-Down Forward") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = 100;
             } else if (checkAction == "Get Hit 1") {
                 action = Component::Action_State::casting;
                 actionFrameData[action].frameSpeed = 150;
                 actionFrameData[action].reverses = 1;
             } else if (checkAction == "Casting") {
                 action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Down 2") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            }
+            else {
+                return false;
+            }
+        }
+        else if (unitType == "classes_male" || unitType == "classes_female") {
+            if (checkAction == "Attack Two Hand Swing") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle3") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Run") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = 75;
+            } else if (checkAction == "Get Hit") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Critical Health Idle 1") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = 100;
+            } else if (checkAction == "Casting Idle") {
+                action = Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = 150;
+                actionFrameData[action].reverses = 1;
+            } else if (checkAction == "Casting") {
+                action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead") {
+                action = Component::Action_State::dead;
                 actionFrameData[action].frameSpeed = i;
             }
             else {
@@ -156,10 +173,13 @@ namespace Texture_Packer_Item {
             if (checkAction == "1-H Attack 1") {
                 action = Component::Action_State::attack;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "Attack Two Hand Swing") {
+            } else if (checkAction == "Attack 1") {
                 action = Component::Action_State::attack;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "1-H Idle") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle") {
                 action = Component::Action_State::idle;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Idle1") {
@@ -171,6 +191,9 @@ namespace Texture_Packer_Item {
             } else if (checkAction == "Run") {
                 action = Component::Action_State::walk;
                 actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Running") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = 75;
             } else if (checkAction == "Get Hit 1") {
                 action = Component::Action_State::struck;
                 actionFrameData[action].frameSpeed = i;
@@ -178,12 +201,21 @@ namespace Texture_Packer_Item {
                 action = Component::Action_State::struck;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Down 1") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Down_1") {
                 action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead To Down") {
+                action = Component::Action_State::dying;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Dead2") {
-                action = Component::Action_State::dead;
+                action = Component::Action_State::dying;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Casting") {
+                action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Use Skill") {
                 action = Component::Action_State::cast;
                 actionFrameData[action].frameSpeed = i;
             } else {
@@ -220,10 +252,10 @@ namespace Texture_Packer_Item {
     };
 
         /// ie "Sword"
-    Item_Data_And_Index TexturePacker_Import_Item(std::string &itemType) {
+    Item_Data_And_Index TexturePacker_Import_Item(std::string &itemType, std::string &equip_type) {
 
             ///get path from db
-        Data dbData = Get_Sprite_Sheet(itemType);
+        Data dbData = Get_Sprite_Sheet(itemType, equip_type);
         tinyxml2::XMLDocument spriteSheetData;
         if (dbData.xml_path == "") {
             return {NULL, ""};

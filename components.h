@@ -30,8 +30,7 @@ namespace Component {
 	};
 
     struct Interaction_Rect {
-        float r;
-        float h;
+        SDL_FRect rect;
     };
 
 	struct Body {
@@ -135,7 +134,7 @@ namespace Component {
 //        stunned,
 //        idle_low_hp,
 //        idle_low_hp2,
-//        dead,
+//        dying,
 //        dead2,
 //        dead3,
 //        dead4,
@@ -180,6 +179,7 @@ namespace Component {
         stunned,
         idle_low_hp,
         idle_low_hp2,
+		dying,
 		dead,
 		dead2,
 		dead3,
@@ -232,20 +232,6 @@ namespace Component {
         int reverses = 0;
         int frameSpeed = 75;
     };
-
-    ////////////////////////////////////////////////////////////////////////////////////
-    /// These are not components but components have pointers to them
-
-
-    struct Weapon_Sheet_Data {
-        SDL_Texture* texture = NULL;
-        std::vector<Sprite_Sheet_Data> frameList;
-        /// start frame by state, number of frames per state.
-        std::unordered_map<Component::Weapon_State, Frame_Data_Packer> actionFrameData;
-        ///store the frame duration for each frame of each state, probably not worth it
-//        std::unordered_map<Component::Action_State, std::vector<int>> Frame_Speed_By_Action;
-    };
-    ////////////////////////////////////////////////////////////////////////////////////
 
         /// one per item, but they can point to the same texture
 
@@ -301,6 +287,7 @@ namespace Component {
         //name is the index into the map that stores the data
         std::string name = "empty";
         int FrameIndex = 0;
+        entt::entity itemID;
     };
 
     ///component for the unit
@@ -323,6 +310,9 @@ namespace Component {
         Frame finalFrame = normalFrame;
     };
 
+    struct Drop_Equipment {
+
+    };
 
     struct t_Stored_Frame_Data {
         uint64_t frameTime = 0;
@@ -588,7 +578,7 @@ namespace Component {
 
 	};
 
-	struct Item_Pickup {
+	struct Pickup_Item {
 		entt::entity item_ID;
 		float x;
 		float y;

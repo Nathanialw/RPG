@@ -271,6 +271,7 @@ namespace Dynamic_Quad_Tree {
 	//will be attached to the map later
 	SDL_FRect zoneSize = { 0.0f, 0.0f, 10000.0f, 10000.0f };
 	DynamicQuadTreeContainer<someObjectWithArea>treeObjects;
+    float offset = 40.0f;
 
 	void Fill_Quad_Tree(entt::registry& zone) {
 
@@ -278,13 +279,14 @@ namespace Dynamic_Quad_Tree {
 
 		auto view = zone.view<Component::Position, Component::Interaction_Rect>();
 
-		for (auto entity : view) {
-			auto& position = view.get<Component::Position>(entity);
-			auto& interactRect = view.get<Component::Interaction_Rect>(entity);
+        for (auto entity : view) {
+            auto& position = view.get<Component::Position>(entity);
+            auto& interactRect = view.get<Component::Interaction_Rect>(entity);
 
-			someObjectWithArea object{};
-			object.entity_ID = entity;
-            object.rect = { position.x - interactRect.r, position.y - interactRect.h, interactRect.r * 2.0f, interactRect.h };
+            someObjectWithArea object{};
+            object.entity_ID = entity;
+
+            object.rect = interactRect.rect;
 
 			zone.emplace<Component::In_Object_Tree>(entity, true);
 			treeObjects.insert(object, object.rect);
@@ -294,17 +296,16 @@ namespace Dynamic_Quad_Tree {
 
 
 	void Emplace_Objects_In_Quad_Tree(entt::registry& zone) {
-		auto view = zone.view<Component::Position, Component::Interaction_Rect, Component::Sprite_Offset>(entt::exclude<Component::In_Object_Tree>);
+		auto view = zone.view<Component::Position, Component::Interaction_Rect>(entt::exclude<Component::In_Object_Tree>);
 		for (auto entity : view) {
 			auto& position = view.get<Component::Position>(entity);
 			auto& interactRect = view.get<Component::Interaction_Rect>(entity);
-			auto& offset = view.get<Component::Sprite_Offset>(entity);
 
 			someObjectWithArea object{};
 			object.entity_ID = entity;
-            object.rect = { position.x - interactRect.r, position.y - interactRect.h, interactRect.r * 2.0f, interactRect.h };
 
-//            object.rect = { position.x - interactRect.r - offset.x, position.y - interactRect.h - offset.y, interactRect.r * 2.0f, interactRect.h };
+            object.rect = interactRect.rect;
+
 
 			zone.emplace<Component::In_Object_Tree>(entity, true);
 			treeObjects.insert(object, object.rect);
@@ -323,10 +324,10 @@ namespace Dynamic_Quad_Tree {
  					treeObjects.remove(object);
 				}
 			}
+            zone.remove<Component::Remove_From_Object_Tree>(entity);
+            zone.remove<Component::In_Object_Tree>(entity);
+            zone.remove<Component::Interaction_Rect>(entity);
 			//	std::cout << i << std::endl;
-			zone.remove<Component::Remove_From_Object_Tree>(entity);
-			zone.remove<Component::In_Object_Tree>(entity);
-			zone.remove<Component::Interaction_Rect>(entity);
 		}
 	}
 
@@ -341,17 +342,19 @@ namespace Dynamic_Quad_Tree {
 			/* only does a quad search for those that moved*/
 
 	void Update_Quad_Tree_Positions(entt::registry& zone) {
-		auto view = zone.view<Component::Position, Component::Sprite_Offset, Component::Interaction_Rect>();
+		auto view = zone.view<Component::Position, Component::Interaction_Rect, Component::Sprite_Offset>();
 
 		for (std::_List_iterator object_it = treeObjects.begin(); object_it != treeObjects.end(); ++object_it) {
 			auto& entity = object_it->item;
 
 			auto& position = view.get<Component::Position>(entity.entity_ID);
-			auto& offset = view.get<Component::Sprite_Offset>(entity.entity_ID);
             auto& interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
 
-            entity.rect = { position.x - interactRect.r, position.y - interactRect.h, interactRect.r * 2.0f, interactRect.h };
-//            entity.rect = { position.x - interactRect.r - offset.x, position.y - interactRect.h - offset.y, interactRect.r * 2.0f, interactRect.h };
+            float y = position.y;
+            float x = position.x;
+
+            //need to have an actual rect with an offset of the position and a rect the size of the entity
+            entity.rect = interactRect.rect;
 
 			treeObjects.relocate(object_it, entity.rect);
 		}
@@ -360,6 +363,7 @@ namespace Dynamic_Quad_Tree {
 
 
 	void Draw_Tree_Object_Rects(entt::registry& zone) {
+		auto view2 = zone.view<Component::Position, Component::Interaction_Rect>();
 		int i = 0;
 		auto view = zone.view<Component::Camera>();
 		for (auto entity : view) {
@@ -373,11 +377,17 @@ namespace Dynamic_Quad_Tree {
 				SDL_FRect screenRect = object->item.rect;
 				screenRect.x -= camera.screen.x;
 				screenRect.y -= camera.screen.y;
+                SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 255, 255);
 				SDL_RenderDrawRectF(Graphics::renderer, &screenRect);
+//                SDL_FRect interactRect = view2.get<Component::Interaction_Rect>(object->item.entity_ID).rect;
+//                interactRect.x -= camera.screen.x;
+//                interactRect.y -= camera.screen.y;
+//                SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 0, 255);
+//				SDL_RenderDrawRectF(Graphics::renderer, &interactRect);
 			}
 			//std::cout << "nodes: " << nodes << std::endl;
 		}
-		//std::cout << "objects on screen: " << i << std::endl;
+		std::cout << "objects on screen: " << i << std::endl;
 	}
 
 
@@ -418,7 +428,13 @@ namespace Dynamic_Quad_Tree {
         return { false };
     }
 
-
+    void Update_Tree_Routine (entt::registry &zone) {
+        Emplace_Objects_In_Quad_Tree(zone);
+        Update_Quad_Tree_Positions(zone);
+//        Draw_Tree_Object_Rects(zone);
+        Remove_From_Tree(zone);
+        // draw rects
+    }
 
 
 }

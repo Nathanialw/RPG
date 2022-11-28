@@ -189,7 +189,7 @@ namespace SQLite_Spritesheets {
             Flare_Spritesheets[name].actionFrameData[Component::run] = data.run;
             Flare_Spritesheets[name].actionFrameData[Component::idle] = data.idle;
             Flare_Spritesheets[name].actionFrameData[Component::struck] = data.struck;
-            Flare_Spritesheets[name].actionFrameData[Component::dead] = data.dying;
+            Flare_Spritesheets[name].actionFrameData[Component::dying] = data.dying;
             Flare_Spritesheets[name].actionFrameData[Component::cast] = data.cast;
             Flare_Spritesheets[name].actionFrameData[Component::attack2] = data.attack2;
             Flare_Spritesheets[name].actionFrameData[Component::behavior] = data.behavior;

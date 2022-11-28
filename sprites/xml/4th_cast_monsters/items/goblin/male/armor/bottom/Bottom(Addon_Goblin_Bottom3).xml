@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Bottom(Addon_Goblin_Bottom3).png" width="664" height="677" scale="1" format="RGBA8888">
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_01_ 0" x="350" y="307" w="25" h="36" pX="0.5" pY="0.5" oX="87" oY="92" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_02_ 0" x="22" y="320" w="25" h="37" pX="0.5" pY="0.5" oX="88" oY="88" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_03_ 0" x="621" y="588" w="27" h="29" pX="0.5" pY="0.5" oX="87" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_04_ 1" x="113" y="320" w="33" h="37" pX="0.5" pY="0.5" oX="103" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_05_ 1" x="350" y="379" w="36" h="29" pX="0.5" pY="0.5" oX="107" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_06_ 1" x="364" y="235" w="36" h="27" pX="0.5" pY="0.5" oX="93" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_07_ 2" x="537" y="233" w="33" h="31" pX="0.5" pY="0.5" oX="68" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_08_ 2" x="113" y="357" w="37" h="29" pX="0.5" pY="0.5" oX="60" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_09_ 2" x="225" y="388" w="36" h="33" pX="0.5" pY="0.5" oX="75" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_10_ 3" x="488" y="0" w="25" h="35" pX="0.5" pY="0.5" oX="91" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_11_ 3" x="512" y="239" w="25" h="34" pX="0.5" pY="0.5" oX="91" oY="117" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_12_ 3" x="396" y="102" w="27" h="36" pX="0.5" pY="0.5" oX="90" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_13_ 4" x="90" y="357" w="23" h="37" pX="0.5" pY="0.5" oX="99" oY="93" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_14_ 4" x="64" y="357" w="26" h="37" pX="0.5" pY="0.5" oX="101" oY="91" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_15_ 4" x="263" y="620" w="21" h="30" pX="0.5" pY="0.5" oX="94" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_16_ 5" x="428" y="471" w="35" h="30" pX="0.5" pY="0.5" oX="96" oY="110" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_17_ 5" x="393" y="471" w="35" h="29" pX="0.5" pY="0.5" oX="100" oY="114" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_18_ 5" x="399" y="0" w="36" h="30" pX="0.5" pY="0.5" oX="86" oY="107" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_19_ 6" x="538" y="502" w="33" h="31" pX="0.5" pY="0.5" oX="75" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_20_ 6" x="393" y="437" w="35" h="34" pX="0.5" pY="0.5" oX="69" oY="91" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_21_ 6" x="336" y="210" w="37" h="25" pX="0.5" pY="0.5" oX="81" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_22_ 7" x="572" y="198" w="23" h="32" pX="0.5" pY="0.5" oX="82" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_23_ 7" x="332" y="555" w="26" h="32" pX="0.5" pY="0.5" oX="77" oY="114" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 1_24_ 7" x="329" y="270" w="21" h="37" pX="0.5" pY="0.5" oX="89" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_01_ 0" x="114" y="430" w="26" h="36" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_02_ 0" x="150" y="357" w="27" h="36" pX="0.5" pY="0.5" oX="87" oY="83" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_03_ 0" x="184" y="620" w="25" h="30" pX="0.5" pY="0.5" oX="85" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_04_ 1" x="573" y="405" w="30" h="32" pX="0.5" pY="0.5" oX="108" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_05_ 1" x="310" y="522" w="29" h="33" pX="0.5" pY="0.5" oX="111" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_06_ 1" x="336" y="109" w="37" h="31" pX="0.5" pY="0.5" oX="93" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_07_ 2" x="0" y="620" w="31" h="30" pX="0.5" pY="0.5" oX="65" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_08_ 2" x="603" y="258" w="28" h="31" pX="0.5" pY="0.5" oX="64" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_09_ 2" x="64" y="251" w="39" h="30" pX="0.5" pY="0.5" oX="73" oY="107" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_10_ 3" x="547" y="405" w="26" h="33" pX="0.5" pY="0.5" oX="91" oY="119" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_11_ 3" x="546" y="132" w="27" h="33" pX="0.5" pY="0.5" oX="90" oY="120" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_12_ 3" x="325" y="315" w="25" h="37" pX="0.5" pY="0.5" oX="94" oY="112" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_13_ 4" x="547" y="471" w="19" h="31" pX="0.5" pY="0.5" oX="107" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_14_ 4" x="375" y="298" w="19" h="36" pX="0.5" pY="0.5" oX="111" oY="88" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_15_ 4" x="294" y="459" w="26" h="35" pX="0.5" pY="0.5" oX="93" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_16_ 5" x="259" y="471" w="35" h="29" pX="0.5" pY="0.5" oX="101" oY="114" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_17_ 5" x="513" y="0" w="34" h="29" pX="0.5" pY="0.5" oX="103" oY="115" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_18_ 5" x="336" y="77" w="37" h="32" pX="0.5" pY="0.5" oX="93" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_19_ 6" x="259" y="440" w="35" h="31" pX="0.5" pY="0.5" oX="68" oY="91" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_20_ 6" x="470" y="502" w="34" h="30" pX="0.5" pY="0.5" oX="67" oY="89" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_21_ 6" x="292" y="270" w="37" h="22" pX="0.5" pY="0.5" oX="74" oY="109" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_22_ 7" x="189" y="393" w="21" h="36" pX="0.5" pY="0.5" oX="76" oY="112" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_23_ 7" x="201" y="464" w="20" h="35" pX="0.5" pY="0.5" oX="73" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Attack 2_24_ 7" x="142" y="43" w="27" h="43" pX="0.5" pY="0.5" oX="84" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_01_ 0" x="262" y="30" w="38" h="15" pX="0.5" pY="0.5" oX="82" oY="110" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_02_ 0" x="213" y="268" w="38" h="14" pX="0.5" pY="0.5" oX="82" oY="112" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_03_ 0" x="25" y="211" w="38" h="15" pX="0.5" pY="0.5" oX="82" oY="111" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_04_ 1" x="542" y="650" w="26" h="25" pX="0.5" pY="0.5" oX="99" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_05_ 1" x="157" y="650" w="25" h="25" pX="0.5" pY="0.5" oX="99" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_06_ 1" x="231" y="650" w="25" h="24" pX="0.5" pY="0.5" oX="99" oY="114" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_07_ 2" x="206" y="650" w="25" h="25" pX="0.5" pY="0.5" oX="79" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_08_ 2" x="182" y="650" w="24" h="25" pX="0.5" pY="0.5" oX="79" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_09_ 2" x="615" y="647" w="24" h="26" pX="0.5" pY="0.5" oX="80" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_10_ 3" x="298" y="164" w="38" h="24" pX="0.5" pY="0.5" oX="84" oY="117" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_11_ 3" x="298" y="188" w="38" h="23" pX="0.5" pY="0.5" oX="84" oY="118" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_12_ 3" x="148" y="246" w="38" h="24" pX="0.5" pY="0.5" oX="84" oY="117" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_13_ 4" x="142" y="129" w="26" h="25" pX="0.5" pY="0.5" oX="97" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_14_ 4" x="52" y="650" w="27" h="25" pX="0.5" pY="0.5" oX="95" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_15_ 4" x="515" y="624" w="29" h="24" pX="0.5" pY="0.5" oX="93" oY="109" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_16_ 5" x="571" y="504" w="32" h="28" pX="0.5" pY="0.5" oX="90" oY="112" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_17_ 5" x="571" y="532" w="32" h="27" pX="0.5" pY="0.5" oX="90" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_18_ 5" x="0" y="593" w="32" h="27" pX="0.5" pY="0.5" oX="90" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_19_ 6" x="106" y="650" w="26" h="25" pX="0.5" pY="0.5" oX="81" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_20_ 6" x="568" y="650" w="26" h="24" pX="0.5" pY="0.5" oX="82" oY="109" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_21_ 6" x="515" y="648" w="27" h="24" pX="0.5" pY="0.5" oX="82" oY="109" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_22_ 7" x="358" y="489" w="34" h="26" pX="0.5" pY="0.5" oX="81" oY="114" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_23_ 7" x="261" y="385" w="36" h="25" pX="0.5" pY="0.5" oX="81" oY="115" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Behavior_24_ 7" x="476" y="336" w="34" h="25" pX="0.5" pY="0.5" oX="82" oY="115" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_01_ 0" x="375" y="36" w="24" h="36" pX="0.5" pY="0.5" oX="83" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_02_ 0" x="535" y="273" w="24" h="33" pX="0.5" pY="0.5" oX="82" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_03_ 0" x="0" y="212" w="25" h="39" pX="0.5" pY="0.5" oX="81" oY="90" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_04_ 1" x="103" y="279" w="38" h="29" pX="0.5" pY="0.5" oX="84" oY="94" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_05_ 1" x="146" y="329" w="37" h="28" pX="0.5" pY="0.5" oX="86" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_06_ 1" x="196" y="124" w="39" h="25" pX="0.5" pY="0.5" oX="88" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_07_ 2" x="300" y="33" w="38" h="31" pX="0.5" pY="0.5" oX="82" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_08_ 2" x="397" y="138" w="36" h="31" pX="0.5" pY="0.5" oX="82" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_09_ 2" x="298" y="102" w="38" h="30" pX="0.5" pY="0.5" oX="77" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_10_ 3" x="278" y="315" w="25" h="37" pX="0.5" pY="0.5" oX="96" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_11_ 3" x="253" y="315" w="25" h="37" pX="0.5" pY="0.5" oX="97" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_12_ 3" x="452" y="330" w="24" h="35" pX="0.5" pY="0.5" oX="98" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_13_ 4" x="210" y="320" w="24" h="37" pX="0.5" pY="0.5" oX="87" oY="91" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_14_ 4" x="183" y="320" w="27" h="37" pX="0.5" pY="0.5" oX="86" oY="91" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_15_ 4" x="394" y="331" w="29" h="36" pX="0.5" pY="0.5" oX="87" oY="90" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_16_ 5" x="213" y="238" w="38" h="30" pX="0.5" pY="0.5" oX="88" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_17_ 5" x="262" y="0" w="38" h="30" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_18_ 5" x="146" y="300" w="37" h="29" pX="0.5" pY="0.5" oX="94" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_19_ 6" x="260" y="45" w="38" h="29" pX="0.5" pY="0.5" oX="78" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_20_ 6" x="260" y="74" w="38" h="30" pX="0.5" pY="0.5" oX="76" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_21_ 6" x="260" y="104" w="38" h="32" pX="0.5" pY="0.5" oX="72" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_22_ 7" x="169" y="84" w="25" h="41" pX="0.5" pY="0.5" oX="93" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_23_ 7" x="64" y="212" w="27" h="39" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Block_24_ 7" x="324" y="352" w="26" h="36" pX="0.5" pY="0.5" oX="91" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_01_ 0" x="458" y="590" w="32" h="30" pX="0.5" pY="0.5" oX="86" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_02_ 0" x="186" y="590" w="32" h="30" pX="0.5" pY="0.5" oX="86" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_03_ 0" x="32" y="591" w="32" h="29" pX="0.5" pY="0.5" oX="86" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_04_ 1" x="224" y="282" w="25" h="38" pX="0.5" pY="0.5" oX="87" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_05_ 1" x="233" y="189" w="26" h="38" pX="0.5" pY="0.5" oX="86" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_06_ 1" x="88" y="320" w="25" h="37" pX="0.5" pY="0.5" oX="86" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_07_ 2" x="461" y="70" w="27" h="35" pX="0.5" pY="0.5" oX="92" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_08_ 2" x="461" y="35" w="27" h="35" pX="0.5" pY="0.5" oX="92" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_09_ 2" x="168" y="429" w="26" h="35" pX="0.5" pY="0.5" oX="92" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_10_ 3" x="259" y="588" w="32" h="32" pX="0.5" pY="0.5" oX="86" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_11_ 3" x="291" y="588" w="32" h="31" pX="0.5" pY="0.5" oX="86" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_12_ 3" x="323" y="588" w="32" h="31" pX="0.5" pY="0.5" oX="86" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_13_ 4" x="132" y="568" w="20" h="32" pX="0.5" pY="0.5" oX="89" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_14_ 4" x="575" y="64" w="20" h="32" pX="0.5" pY="0.5" oX="89" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_15_ 4" x="224" y="555" w="20" h="33" pX="0.5" pY="0.5" oX="89" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_16_ 5" x="0" y="281" w="34" h="38" pX="0.5" pY="0.5" oX="82" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_17_ 5" x="34" y="281" w="34" h="38" pX="0.5" pY="0.5" oX="82" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_18_ 5" x="68" y="281" w="34" h="38" pX="0.5" pY="0.5" oX="82" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_19_ 6" x="513" y="451" w="34" h="28" pX="0.5" pY="0.5" oX="88" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_20_ 6" x="513" y="424" w="34" h="27" pX="0.5" pY="0.5" oX="88" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_21_ 6" x="463" y="471" w="34" h="27" pX="0.5" pY="0.5" oX="88" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_22_ 7" x="47" y="320" w="22" h="37" pX="0.5" pY="0.5" oX="93" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_23_ 7" x="0" y="320" w="22" h="37" pX="0.5" pY="0.5" oX="93" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Critical HP_24_ 7" x="303" y="315" w="22" h="37" pX="0.5" pY="0.5" oX="93" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_01_ 0" x="425" y="35" w="35" h="31" pX="0.5" pY="0.5" oX="82" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_02_ 0" x="0" y="430" w="32" h="36" pX="0.5" pY="0.5" oX="87" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_03_ 0" x="0" y="169" w="30" h="42" pX="0.5" pY="0.5" oX="87" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_04_ 1" x="571" y="471" w="32" h="33" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_05_ 1" x="292" y="292" w="37" h="23" pX="0.5" pY="0.5" oX="87" oY="117" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_06_ 1" x="58" y="440" w="36" h="22" pX="0.5" pY="0.5" oX="83" oY="118" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_07_ 2" x="291" y="619" w="27" h="31" pX="0.5" pY="0.5" oX="90" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_08_ 2" x="292" y="211" w="38" h="30" pX="0.5" pY="0.5" oX="81" oY="111" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_09_ 2" x="289" y="241" w="38" h="29" pX="0.5" pY="0.5" oX="85" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_10_ 3" x="124" y="515" w="34" h="20" pX="0.5" pY="0.5" oX="87" oY="109" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_11_ 3" x="590" y="588" w="31" h="29" pX="0.5" pY="0.5" oX="85" oY="117" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_12_ 3" x="603" y="531" w="31" h="26" pX="0.5" pY="0.5" oX="86" oY="116" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_13_ 4" x="430" y="366" w="33" h="35" pX="0.5" pY="0.5" oX="82" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_14_ 4" x="298" y="132" w="38" h="32" pX="0.5" pY="0.5" oX="86" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_15_ 4" x="129" y="155" w="39" h="41" pX="0.5" pY="0.5" oX="82" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_16_ 5" x="392" y="500" w="34" h="22" pX="0.5" pY="0.5" oX="82" oY="107" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_17_ 5" x="430" y="295" w="35" h="35" pX="0.5" pY="0.5" oX="84" oY="112" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_18_ 5" x="298" y="64" w="38" h="38" pX="0.5" pY="0.5" oX="81" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_19_ 6" x="0" y="394" w="35" h="36" pX="0.5" pY="0.5" oX="87" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_20_ 6" x="260" y="167" w="38" h="31" pX="0.5" pY="0.5" oX="82" oY="111" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_21_ 6" x="260" y="136" w="38" h="31" pX="0.5" pY="0.5" oX="84" oY="115" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_22_ 7" x="513" y="479" w="34" h="23" pX="0.5" pY="0.5" oX="88" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_23_ 7" x="202" y="0" w="34" h="40" pX="0.5" pY="0.5" oX="85" oY="107" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Dead To Down_24_ 7" x="110" y="246" w="38" h="33" pX="0.5" pY="0.5" oX="84" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_1_01_ 0" x="67" y="0" w="39" h="56" pX="0.5" pY="0.5" oX="82" oY="80" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_1_02_ 1" x="513" y="395" w="34" h="29" pX="0.5" pY="0.5" oX="70" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_1_03_ 2" x="510" y="309" w="34" h="29" pX="0.5" pY="0.5" oX="100" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_1_04_ 3" x="324" y="424" w="35" h="34" pX="0.5" pY="0.5" oX="88" oY="79" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_1_05_ 4" x="62" y="110" w="42" h="46" pX="0.5" pY="0.5" oX="68" oY="87" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_1_06_ 5" x="224" y="421" w="35" h="35" pX="0.5" pY="0.5" oX="74" oY="83" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_1_07_ 6" x="297" y="388" w="36" h="36" pX="0.5" pY="0.5" oX="94" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_1_08_ 7" x="87" y="156" w="42" h="34" pX="0.5" pY="0.5" oX="94" oY="84" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_2_01_ 0" x="106" y="52" w="32" h="49" pX="0.5" pY="0.5" oX="89" oY="82" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_2_02_ 1" x="23" y="121" w="39" h="47" pX="0.5" pY="0.5" oX="92" oY="87" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_2_03_ 2" x="338" y="55" w="37" h="22" pX="0.5" pY="0.5" oX="76" oY="110" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_2_04_ 3" x="488" y="275" w="28" h="34" pX="0.5" pY="0.5" oX="87" oY="107" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_2_05_ 4" x="142" y="0" w="37" h="43" pX="0.5" pY="0.5" oX="90" oY="90" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_2_06_ 5" x="327" y="241" w="37" h="29" pX="0.5" pY="0.5" oX="89" oY="111" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_2_07_ 6" x="104" y="109" w="38" h="46" pX="0.5" pY="0.5" oX="77" oY="87" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_2_08_ 7" x="386" y="196" w="36" h="36" pX="0.5" pY="0.5" oX="78" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_3_01_ 0" x="186" y="282" w="38" h="38" pX="0.5" pY="0.5" oX="88" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_3_02_ 1" x="476" y="312" w="34" h="24" pX="0.5" pY="0.5" oX="70" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_3_03_ 2" x="397" y="262" w="36" h="33" pX="0.5" pY="0.5" oX="100" oY="91" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_3_04_ 3" x="336" y="140" w="33" h="37" pX="0.5" pY="0.5" oX="83" oY="76" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_3_05_ 4" x="31" y="0" w="36" h="61" pX="0.5" pY="0.5" oX="74" oY="71" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_3_06_ 5" x="148" y="270" w="38" h="30" pX="0.5" pY="0.5" oX="71" oY="88" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_3_07_ 6" x="67" y="56" w="39" h="53" pX="0.5" pY="0.5" oX="94" oY="80" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_3_08_ 7" x="394" y="367" w="36" h="35" pX="0.5" pY="0.5" oX="95" oY="83" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_4_01_ 0" x="106" y="0" w="36" h="52" pX="0.5" pY="0.5" oX="87" oY="77" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_4_02_ 1" x="504" y="502" w="34" h="32" pX="0.5" pY="0.5" oX="88" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_4_03_ 2" x="310" y="494" w="34" h="24" pX="0.5" pY="0.5" oX="82" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_4_04_ 3" x="600" y="32" w="32" h="30" pX="0.5" pY="0.5" oX="85" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_4_05_ 4" x="0" y="0" w="31" h="69" pX="0.5" pY="0.5" oX="91" oY="64" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_4_06_ 5" x="194" y="205" w="39" h="33" pX="0.5" pY="0.5" oX="83" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_4_07_ 6" x="0" y="69" w="40" h="52" pX="0.5" pY="0.5" oX="81" oY="71" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Down_4_08_ 7" x="195" y="41" w="31" h="40" pX="0.5" pY="0.5" oX="82" oY="94" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_01_ 0" x="425" y="563" w="33" h="29" pX="0.5" pY="0.5" oX="86" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_02_ 0" x="66" y="563" w="33" h="30" pX="0.5" pY="0.5" oX="86" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_03_ 0" x="600" y="62" w="32" h="30" pX="0.5" pY="0.5" oX="87" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_04_ 1" x="169" y="43" w="26" h="41" pX="0.5" pY="0.5" oX="95" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_05_ 1" x="547" y="438" w="26" h="33" pX="0.5" pY="0.5" oX="96" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_06_ 1" x="603" y="227" w="29" h="31" pX="0.5" pY="0.5" oX="97" oY="109" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_07_ 2" x="575" y="96" w="22" h="31" pX="0.5" pY="0.5" oX="87" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_08_ 2" x="603" y="469" w="27" h="31" pX="0.5" pY="0.5" oX="81" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_09_ 2" x="244" y="555" w="30" h="33" pX="0.5" pY="0.5" oX="77" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_10_ 3" x="570" y="231" w="33" h="22" pX="0.5" pY="0.5" oX="84" oY="110" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_11_ 3" x="131" y="600" w="32" h="20" pX="0.5" pY="0.5" oX="85" oY="114" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_12_ 3" x="570" y="253" w="33" h="18" pX="0.5" pY="0.5" oX="84" oY="117" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_13_ 4" x="399" y="66" w="29" h="36" pX="0.5" pY="0.5" oX="90" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_14_ 4" x="516" y="97" w="29" h="34" pX="0.5" pY="0.5" oX="92" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_15_ 4" x="194" y="429" w="30" h="35" pX="0.5" pY="0.5" oX="95" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_16_ 5" x="634" y="210" w="29" h="29" pX="0.5" pY="0.5" oX="87" oY="109" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_17_ 5" x="368" y="623" w="30" h="27" pX="0.5" pY="0.5" oX="88" oY="112" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_18_ 5" x="64" y="593" w="31" h="27" pX="0.5" pY="0.5" oX="89" oY="113" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_19_ 6" x="603" y="196" w="31" h="31" pX="0.5" pY="0.5" oX="87" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_20_ 6" x="461" y="210" w="34" h="31" pX="0.5" pY="0.5" oX="85" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_21_ 6" x="603" y="395" w="31" h="31" pX="0.5" pY="0.5" oX="84" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_22_ 7" x="603" y="500" w="29" h="31" pX="0.5" pY="0.5" oX="85" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_23_ 7" x="634" y="26" w="30" h="29" pX="0.5" pY="0.5" oX="81" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Evade_24_ 7" x="380" y="592" w="31" h="28" pX="0.5" pY="0.5" oX="78" oY="110" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_01_ 0" x="435" y="0" w="30" h="35" pX="0.5" pY="0.5" oX="83" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_02_ 0" x="160" y="393" w="29" h="36" pX="0.5" pY="0.5" oX="84" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_03_ 0" x="132" y="393" w="28" h="36" pX="0.5" pY="0.5" oX="84" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_04_ 1" x="168" y="166" w="26" h="41" pX="0.5" pY="0.5" oX="83" oY="93" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_05_ 1" x="30" y="168" w="29" h="42" pX="0.5" pY="0.5" oX="83" oY="92" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_06_ 1" x="484" y="400" w="28" h="34" pX="0.5" pY="0.5" oX="85" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_07_ 2" x="546" y="198" w="26" h="33" pX="0.5" pY="0.5" oX="95" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_08_ 2" x="423" y="102" w="26" h="35" pX="0.5" pY="0.5" oX="94" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_09_ 2" x="423" y="331" w="29" h="35" pX="0.5" pY="0.5" oX="90" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_10_ 3" x="274" y="555" w="29" h="33" pX="0.5" pY="0.5" oX="91" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_11_ 3" x="303" y="555" w="29" h="33" pX="0.5" pY="0.5" oX="91" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_12_ 3" x="564" y="165" w="28" h="33" pX="0.5" pY="0.5" oX="92" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_13_ 4" x="110" y="212" w="18" h="34" pX="0.5" pY="0.5" oX="87" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_14_ 4" x="486" y="361" w="18" h="34" pX="0.5" pY="0.5" oX="88" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_15_ 4" x="359" y="408" w="18" h="35" pX="0.5" pY="0.5" oX="90" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_16_ 5" x="524" y="563" w="33" h="30" pX="0.5" pY="0.5" oX="83" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_17_ 5" x="557" y="563" w="33" h="29" pX="0.5" pY="0.5" oX="84" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_18_ 5" x="158" y="534" w="33" h="29" pX="0.5" pY="0.5" oX="86" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_19_ 6" x="470" y="532" w="33" h="30" pX="0.5" pY="0.5" oX="88" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_20_ 6" x="191" y="534" w="33" h="29" pX="0.5" pY="0.5" oX="87" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_21_ 6" x="359" y="543" w="33" h="30" pX="0.5" pY="0.5" oX="85" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_22_ 7" x="516" y="273" w="19" h="33" pX="0.5" pY="0.5" oX="98" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_23_ 7" x="600" y="0" w="16" h="32" pX="0.5" pY="0.5" oX="100" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Get Hit_24_ 7" x="597" y="92" w="19" h="31" pX="0.5" pY="0.5" oX="95" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_01_ 0" x="99" y="535" w="33" h="28" pX="0.5" pY="0.5" oX="86" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_02_ 0" x="359" y="515" w="33" h="28" pX="0.5" pY="0.5" oX="86" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_03_ 0" x="392" y="535" w="33" h="28" pX="0.5" pY="0.5" oX="86" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_04_ 1" x="194" y="238" w="19" h="39" pX="0.5" pY="0.5" oX="94" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_05_ 1" x="177" y="357" w="19" h="36" pX="0.5" pY="0.5" oX="94" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_06_ 1" x="245" y="39" w="15" h="31" pX="0.5" pY="0.5" oX="94" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_07_ 2" x="146" y="620" w="15" h="30" pX="0.5" pY="0.5" oX="95" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_08_ 2" x="416" y="402" w="14" h="30" pX="0.5" pY="0.5" oX="96" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_09_ 2" x="69" y="320" w="19" h="37" pX="0.5" pY="0.5" oX="91" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_10_ 3" x="503" y="534" w="33" h="28" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_11_ 3" x="0" y="563" w="33" h="28" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_12_ 3" x="392" y="563" w="33" h="28" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_13_ 4" x="204" y="500" w="28" h="34" pX="0.5" pY="0.5" oX="88" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_14_ 4" x="232" y="500" w="28" h="34" pX="0.5" pY="0.5" oX="88" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_15_ 4" x="282" y="500" w="28" h="34" pX="0.5" pY="0.5" oX="88" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_16_ 5" x="428" y="66" w="28" h="35" pX="0.5" pY="0.5" oX="88" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_17_ 5" x="433" y="137" w="28" h="35" pX="0.5" pY="0.5" oX="88" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_18_ 5" x="433" y="172" w="28" h="35" pX="0.5" pY="0.5" oX="88" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_19_ 6" x="547" y="372" w="28" h="33" pX="0.5" pY="0.5" oX="89" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_20_ 6" x="516" y="29" w="28" h="34" pX="0.5" pY="0.5" oX="89" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_21_ 6" x="516" y="63" w="28" h="34" pX="0.5" pY="0.5" oX="89" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_22_ 7" x="433" y="207" w="28" h="35" pX="0.5" pY="0.5" oX="87" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_23_ 7" x="433" y="242" w="27" h="35" pX="0.5" pY="0.5" oX="87" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle Fidget_24_ 7" x="430" y="401" w="26" h="35" pX="0.5" pY="0.5" oX="87" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_01_ 0" x="425" y="535" w="33" h="28" pX="0.5" pY="0.5" oX="86" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_02_ 0" x="153" y="563" w="33" h="28" pX="0.5" pY="0.5" oX="86" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_03_ 0" x="458" y="563" w="33" h="27" pX="0.5" pY="0.5" oX="86" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_04_ 0" x="186" y="563" w="33" h="27" pX="0.5" pY="0.5" oX="86" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_05_ 0" x="491" y="563" w="33" h="27" pX="0.5" pY="0.5" oX="86" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_06_ 1" x="241" y="118" w="19" h="39" pX="0.5" pY="0.5" oX="94" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_07_ 1" x="241" y="79" w="19" h="39" pX="0.5" pY="0.5" oX="94" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_08_ 1" x="226" y="40" w="19" h="39" pX="0.5" pY="0.5" oX="94" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_09_ 1" x="222" y="81" w="19" h="39" pX="0.5" pY="0.5" oX="94" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_10_ 1" x="91" y="212" w="19" h="39" pX="0.5" pY="0.5" oX="94" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_11_ 2" x="270" y="236" w="19" h="38" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_12_ 2" x="270" y="198" w="19" h="38" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_13_ 2" x="251" y="227" w="19" h="38" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_14_ 2" x="234" y="320" w="19" h="37" pX="0.5" pY="0.5" oX="91" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_15_ 2" x="251" y="265" w="19" h="38" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_16_ 3" x="559" y="271" w="33" h="28" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_17_ 3" x="400" y="232" w="33" h="28" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_18_ 3" x="0" y="535" w="33" h="28" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_19_ 3" x="33" y="535" w="33" h="28" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_20_ 3" x="66" y="535" w="33" h="28" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_21_ 4" x="460" y="242" w="28" h="35" pX="0.5" pY="0.5" oX="88" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_22_ 4" x="456" y="401" w="28" h="35" pX="0.5" pY="0.5" oX="88" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_23_ 4" x="140" y="429" w="28" h="35" pX="0.5" pY="0.5" oX="88" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_24_ 4" x="0" y="501" w="28" h="34" pX="0.5" pY="0.5" oX="88" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_25_ 4" x="28" y="501" w="28" h="34" pX="0.5" pY="0.5" oX="88" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_26_ 5" x="369" y="140" w="28" h="36" pX="0.5" pY="0.5" oX="88" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_27_ 5" x="84" y="394" w="27" h="36" pX="0.5" pY="0.5" oX="88" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_28_ 5" x="57" y="394" w="27" h="36" pX="0.5" pY="0.5" oX="88" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_29_ 5" x="461" y="175" w="27" h="35" pX="0.5" pY="0.5" oX="88" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_30_ 5" x="297" y="352" w="27" h="36" pX="0.5" pY="0.5" oX="88" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_31_ 6" x="547" y="0" w="28" h="33" pX="0.5" pY="0.5" oX="89" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_32_ 6" x="547" y="33" w="28" h="33" pX="0.5" pY="0.5" oX="89" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_33_ 6" x="546" y="66" w="29" h="33" pX="0.5" pY="0.5" oX="89" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_34_ 6" x="600" y="331" w="29" h="32" pX="0.5" pY="0.5" oX="89" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_35_ 6" x="546" y="99" w="29" h="33" pX="0.5" pY="0.5" oX="89" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_36_ 7" x="0" y="466" w="26" h="35" pX="0.5" pY="0.5" oX="87" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_37_ 7" x="26" y="466" w="26" h="35" pX="0.5" pY="0.5" oX="87" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_38_ 7" x="52" y="466" w="26" h="35" pX="0.5" pY="0.5" oX="87" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_39_ 7" x="78" y="466" w="27" h="35" pX="0.5" pY="0.5" oX="87" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Idle_40_ 7" x="105" y="466" w="26" h="35" pX="0.5" pY="0.5" oX="87" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_01_ 0" x="639" y="646" w="25" h="27" pX="0.5" pY="0.5" oX="88" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_02_ 0" x="634" y="466" w="26" h="28" pX="0.5" pY="0.5" oX="88" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_03_ 0" x="158" y="500" w="26" h="34" pX="0.5" pY="0.5" oX="87" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_04_ 0" x="79" y="650" w="27" h="26" pX="0.5" pY="0.5" oX="86" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_05_ 0" x="634" y="152" w="26" h="29" pX="0.5" pY="0.5" oX="87" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_06_ 0" x="488" y="241" w="24" h="34" pX="0.5" pY="0.5" oX="89" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_07_ 0" x="411" y="592" w="25" h="31" pX="0.5" pY="0.5" oX="88" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_08_ 0" x="25" y="650" w="27" h="27" pX="0.5" pY="0.5" oX="87" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_09_ 1" x="173" y="464" w="28" h="35" pX="0.5" pY="0.5" oX="89" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_10_ 1" x="221" y="157" w="39" h="32" pX="0.5" pY="0.5" oX="85" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_11_ 1" x="225" y="357" w="36" h="31" pX="0.5" pY="0.5" oX="86" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_12_ 1" x="219" y="588" w="18" h="32" pX="0.5" pY="0.5" oX="94" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_13_ 1" x="261" y="410" w="36" h="30" pX="0.5" pY="0.5" oX="86" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_14_ 1" x="224" y="456" w="35" h="32" pX="0.5" pY="0.5" oX="85" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_15_ 1" x="634" y="522" w="25" h="27" pX="0.5" pY="0.5" oX="90" oY="107" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_16_ 1" x="375" y="334" w="19" h="36" pX="0.5" pY="0.5" oX="93" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_17_ 2" x="224" y="534" w="28" h="21" pX="0.5" pY="0.5" oX="87" oY="110" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_18_ 2" x="300" y="0" w="38" h="33" pX="0.5" pY="0.5" oX="80" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_19_ 2" x="261" y="352" w="36" h="33" pX="0.5" pY="0.5" oX="82" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_20_ 2" x="340" y="458" w="18" h="35" pX="0.5" pY="0.5" oX="92" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_21_ 2" x="336" y="177" w="37" h="33" pX="0.5" pY="0.5" oX="81" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_22_ 2" x="358" y="458" w="35" h="31" pX="0.5" pY="0.5" oX="84" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_23_ 2" x="575" y="331" w="25" h="32" pX="0.5" pY="0.5" oX="89" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_24_ 2" x="571" y="299" w="18" h="32" pX="0.5" pY="0.5" oX="92" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_25_ 3" x="495" y="137" w="26" h="34" pX="0.5" pY="0.5" oX="90" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_26_ 3" x="0" y="357" w="27" h="37" pX="0.5" pY="0.5" oX="90" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_27_ 3" x="575" y="0" w="25" h="32" pX="0.5" pY="0.5" oX="91" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_28_ 3" x="626" y="438" w="26" h="28" pX="0.5" pY="0.5" oX="91" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_29_ 3" x="399" y="30" w="26" h="36" pX="0.5" pY="0.5" oX="91" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_30_ 3" x="121" y="620" w="25" h="30" pX="0.5" pY="0.5" oX="91" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_31_ 3" x="32" y="430" w="26" h="36" pX="0.5" pY="0.5" oX="91" oY="94" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_32_ 3" x="634" y="296" w="26" h="29" pX="0.5" pY="0.5" oX="90" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_33_ 4" x="99" y="592" w="32" h="25" pX="0.5" pY="0.5" oX="85" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_34_ 4" x="87" y="190" w="41" h="22" pX="0.5" pY="0.5" oX="82" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_35_ 4" x="27" y="357" w="37" h="27" pX="0.5" pY="0.5" oX="83" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_36_ 4" x="634" y="382" w="25" h="28" pX="0.5" pY="0.5" oX="87" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_37_ 4" x="0" y="251" w="20" h="30" pX="0.5" pY="0.5" oX="91" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_38_ 4" x="451" y="436" w="20" h="35" pX="0.5" pY="0.5" oX="91" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_39_ 4" x="428" y="436" w="23" h="35" pX="0.5" pY="0.5" oX="90" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_40_ 4" x="634" y="410" w="25" h="28" pX="0.5" pY="0.5" oX="88" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_41_ 5" x="142" y="86" w="23" h="43" pX="0.5" pY="0.5" oX="93" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_42_ 5" x="0" y="121" w="23" h="48" pX="0.5" pY="0.5" oX="92" oY="90" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_43_ 5" x="179" y="0" w="23" h="41" pX="0.5" pY="0.5" oX="93" oY="93" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_44_ 5" x="132" y="650" w="25" h="26" pX="0.5" pY="0.5" oX="91" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_45_ 5" x="25" y="249" w="39" h="31" pX="0.5" pY="0.5" oX="85" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_46_ 5" x="397" y="169" w="36" h="27" pX="0.5" pY="0.5" oX="85" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_47_ 5" x="616" y="92" w="30" h="31" pX="0.5" pY="0.5" oX="88" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_48_ 5" x="167" y="207" w="27" h="39" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_49_ 6" x="632" y="55" w="20" h="29" pX="0.5" pY="0.5" oX="90" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_50_ 6" x="522" y="593" w="23" h="31" pX="0.5" pY="0.5" oX="89" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_51_ 6" x="463" y="365" w="23" h="35" pX="0.5" pY="0.5" oX="88" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_52_ 6" x="615" y="617" w="24" h="30" pX="0.5" pY="0.5" oX="89" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_53_ 6" x="25" y="227" w="39" h="22" pX="0.5" pY="0.5" oX="80" oY="106" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_54_ 6" x="338" y="27" w="37" h="28" pX="0.5" pY="0.5" oX="82" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_55_ 6" x="634" y="0" w="30" h="26" pX="0.5" pY="0.5" oX="86" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_56_ 6" x="639" y="617" w="24" h="29" pX="0.5" pY="0.5" oX="90" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_57_ 7" x="589" y="299" w="31" h="32" pX="0.5" pY="0.5" oX="87" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_58_ 7" x="128" y="196" w="39" h="31" pX="0.5" pY="0.5" oX="81" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_59_ 7" x="338" y="0" w="37" h="27" pX="0.5" pY="0.5" oX="84" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_60_ 7" x="547" y="306" w="24" h="33" pX="0.5" pY="0.5" oX="92" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_61_ 7" x="270" y="274" w="22" h="38" pX="0.5" pY="0.5" oX="92" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_62_ 7" x="94" y="430" w="20" h="36" pX="0.5" pY="0.5" oX="93" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_63_ 7" x="449" y="501" w="21" h="34" pX="0.5" pY="0.5" oX="92" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Running_64_ 7" x="0" y="650" w="25" h="27" pX="0.5" pY="0.5" oX="91" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_01_ 0" x="196" y="357" w="29" h="36" pX="0.5" pY="0.5" oX="83" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_02_ 0" x="386" y="402" w="30" h="35" pX="0.5" pY="0.5" oX="84" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_03_ 0" x="547" y="339" w="28" h="33" pX="0.5" pY="0.5" oX="87" oY="108" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_04_ 1" x="168" y="125" w="28" h="41" pX="0.5" pY="0.5" oX="82" oY="92" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_05_ 1" x="236" y="0" w="26" h="39" pX="0.5" pY="0.5" oX="82" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_06_ 1" x="297" y="424" w="27" h="35" pX="0.5" pY="0.5" oX="77" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_07_ 2" x="56" y="501" w="27" h="34" pX="0.5" pY="0.5" oX="95" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_08_ 2" x="488" y="35" w="25" h="34" pX="0.5" pY="0.5" oX="97" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_09_ 2" x="589" y="617" w="26" h="31" pX="0.5" pY="0.5" oX="100" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_10_ 3" x="484" y="434" w="28" h="34" pX="0.5" pY="0.5" oX="92" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_11_ 3" x="598" y="437" w="28" h="32" pX="0.5" pY="0.5" oX="90" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_12_ 3" x="461" y="105" w="27" h="35" pX="0.5" pY="0.5" oX="88" oY="91" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_13_ 4" x="497" y="468" w="16" h="34" pX="0.5" pY="0.5" oX="88" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_14_ 4" x="83" y="501" w="20" h="34" pX="0.5" pY="0.5" oX="86" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_15_ 4" x="40" y="61" w="23" h="49" pX="0.5" pY="0.5" oX="83" oY="92" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_16_ 5" x="99" y="563" w="33" h="29" pX="0.5" pY="0.5" oX="84" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_17_ 5" x="538" y="533" w="33" h="30" pX="0.5" pY="0.5" oX="81" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_18_ 5" x="603" y="363" w="31" h="32" pX="0.5" pY="0.5" oX="78" oY="93" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_19_ 6" x="33" y="563" w="33" h="28" pX="0.5" pY="0.5" oX="87" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_20_ 6" x="557" y="592" w="32" h="28" pX="0.5" pY="0.5" oX="90" oY="105" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_21_ 6" x="490" y="593" w="32" h="27" pX="0.5" pY="0.5" oX="94" oY="107" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_22_ 7" x="210" y="393" w="14" h="32" pX="0.5" pY="0.5" oX="102" oY="104" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_23_ 7" x="616" y="0" w="18" h="32" pX="0.5" pY="0.5" oX="100" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Use Skill_24_ 7" x="333" y="388" w="17" h="34" pX="0.5" pY="0.5" oX="104" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_01_ 0" x="634" y="354" w="25" h="28" pX="0.5" pY="0.5" oX="90" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_02_ 0" x="592" y="164" w="24" h="32" pX="0.5" pY="0.5" oX="90" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_03_ 0" x="488" y="69" w="25" h="34" pX="0.5" pY="0.5" oX="90" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_04_ 0" x="573" y="132" w="25" h="32" pX="0.5" pY="0.5" oX="89" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_05_ 0" x="58" y="620" w="25" h="30" pX="0.5" pY="0.5" oX="88" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_06_ 0" x="575" y="363" w="26" h="32" pX="0.5" pY="0.5" oX="89" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_07_ 0" x="495" y="171" w="26" h="34" pX="0.5" pY="0.5" oX="89" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_08_ 0" x="355" y="587" w="25" h="32" pX="0.5" pY="0.5" oX="91" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_09_ 1" x="375" y="72" w="21" h="36" pX="0.5" pY="0.5" oX="87" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_10_ 1" x="465" y="0" w="23" h="35" pX="0.5" pY="0.5" oX="88" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_11_ 1" x="194" y="166" w="27" h="39" pX="0.5" pY="0.5" oX="87" oY="94" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_12_ 1" x="495" y="205" w="24" h="34" pX="0.5" pY="0.5" oX="89" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_13_ 1" x="545" y="165" w="19" h="33" pX="0.5" pY="0.5" oX="90" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_14_ 1" x="35" y="394" w="22" h="36" pX="0.5" pY="0.5" oX="87" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_15_ 1" x="375" y="0" w="24" h="36" pX="0.5" pY="0.5" oX="88" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_16_ 1" x="111" y="394" w="21" h="36" pX="0.5" pY="0.5" oX="89" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_17_ 2" x="237" y="588" w="22" h="32" pX="0.5" pY="0.5" oX="95" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_18_ 2" x="465" y="277" w="23" h="35" pX="0.5" pY="0.5" oX="94" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_19_ 2" x="461" y="140" w="27" h="35" pX="0.5" pY="0.5" oX="90" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_20_ 2" x="426" y="501" w="23" h="34" pX="0.5" pY="0.5" oX="91" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_21_ 2" x="103" y="501" w="21" h="34" pX="0.5" pY="0.5" oX="95" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_22_ 2" x="131" y="466" w="22" h="35" pX="0.5" pY="0.5" oX="94" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_23_ 2" x="350" y="343" w="25" h="36" pX="0.5" pY="0.5" oX="91" oY="95" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_24_ 2" x="339" y="522" w="20" h="33" pX="0.5" pY="0.5" oX="94" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_25_ 3" x="436" y="620" w="26" h="30" pX="0.5" pY="0.5" oX="88" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_26_ 3" x="575" y="32" w="25" h="32" pX="0.5" pY="0.5" oX="89" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_27_ 3" x="488" y="103" w="25" h="34" pX="0.5" pY="0.5" oX="89" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_28_ 3" x="573" y="437" w="25" h="32" pX="0.5" pY="0.5" oX="90" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_29_ 3" x="462" y="620" w="27" h="30" pX="0.5" pY="0.5" oX="90" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_30_ 3" x="194" y="84" w="28" h="40" pX="0.5" pY="0.5" oX="90" oY="91" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_31_ 3" x="59" y="168" w="28" h="42" pX="0.5" pY="0.5" oX="90" oY="90" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_32_ 3" x="397" y="295" w="27" h="36" pX="0.5" pY="0.5" oX="89" oY="92" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_33_ 4" x="598" y="123" w="26" h="31" pX="0.5" pY="0.5" oX="85" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_34_ 4" x="634" y="181" w="28" h="29" pX="0.5" pY="0.5" oX="85" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_35_ 4" x="634" y="123" w="30" h="29" pX="0.5" pY="0.5" oX="86" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_36_ 4" x="634" y="239" w="29" h="28" pX="0.5" pY="0.5" oX="86" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_37_ 4" x="603" y="557" w="21" h="31" pX="0.5" pY="0.5" oX="87" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_38_ 4" x="184" y="500" w="20" h="34" pX="0.5" pY="0.5" oX="90" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_39_ 4" x="153" y="464" w="20" h="35" pX="0.5" pY="0.5" oX="91" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_40_ 4" x="260" y="500" w="22" h="34" pX="0.5" pY="0.5" oX="90" oY="101" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_41_ 5" x="373" y="262" w="24" h="36" pX="0.5" pY="0.5" oX="88" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_42_ 5" x="504" y="361" w="21" h="34" pX="0.5" pY="0.5" oX="90" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_43_ 5" x="320" y="459" w="20" h="35" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_44_ 5" x="350" y="270" w="23" h="37" pX="0.5" pY="0.5" oX="91" oY="96" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_45_ 5" x="489" y="620" w="26" h="30" pX="0.5" pY="0.5" oX="87" oY="97" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_46_ 5" x="236" y="620" w="27" h="30" pX="0.5" pY="0.5" oX="86" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_47_ 5" x="340" y="619" w="28" h="31" pX="0.5" pY="0.5" oX="86" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_48_ 5" x="95" y="617" w="26" h="31" pX="0.5" pY="0.5" oX="86" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_49_ 6" x="163" y="591" w="21" h="31" pX="0.5" pY="0.5" oX="95" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_50_ 6" x="525" y="131" w="20" h="34" pX="0.5" pY="0.5" oX="93" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_51_ 6" x="525" y="199" w="21" h="34" pX="0.5" pY="0.5" oX="92" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_52_ 6" x="132" y="535" w="21" h="33" pX="0.5" pY="0.5" oX="92" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_53_ 6" x="624" y="557" w="22" h="29" pX="0.5" pY="0.5" oX="95" oY="102" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_54_ 6" x="209" y="620" w="27" h="30" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_55_ 6" x="398" y="623" w="28" h="27" pX="0.5" pY="0.5" oX="90" oY="103" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_56_ 6" x="634" y="325" w="26" h="29" pX="0.5" pY="0.5" oX="92" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_57_ 7" x="634" y="494" w="26" h="28" pX="0.5" pY="0.5" oX="93" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_58_ 7" x="31" y="620" w="27" h="30" pX="0.5" pY="0.5" oX="91" oY="98" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_59_ 7" x="545" y="620" w="30" h="30" pX="0.5" pY="0.5" oX="88" oY="99" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_60_ 7" x="634" y="267" w="28" h="29" pX="0.5" pY="0.5" oX="89" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_61_ 7" x="318" y="619" w="22" h="31" pX="0.5" pY="0.5" oX="94" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_62_ 7" x="525" y="338" w="21" h="33" pX="0.5" pY="0.5" oX="93" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_63_ 7" x="525" y="165" w="20" h="34" pX="0.5" pY="0.5" oX="93" oY="100" oW="200" oH="200"/>
+  <sprite n="Bottom(Addon_Goblin_Bottom3)_Walking_64_ 7" x="373" y="108" w="22" h="32" pX="0.5" pY="0.5" oX="92" oY="98" oW="200" oH="200"/>
+</TextureAtlas>

@@ -151,38 +151,39 @@ namespace Spells {
 	}
 
 	void Destroy_NonMoving_Spells() {
-		auto view = World::zone.view<Component::Spell, Component::Body, Component::Position, Component::Radius, Component::In_Object_Tree>(entt::exclude<Component::Mouse_Move, Component::Linear_Move, Component::Explosion>);
+		auto view = World::zone.view<Component::Spell, Component::Body, Component::Position, Component::Radius, Component::Interaction_Rect, Component::In_Object_Tree>(entt::exclude<Component::Mouse_Move, Component::Linear_Move, Component::Explosion>);
 		for (auto entity : view) {
 			auto& position = view.get<Component::Position>(entity);
 			auto& radius = view.get<Component::Radius>(entity).fRadius;
 			auto& body = view.get<Component::Body>(entity);
 			auto& inTree = view.get<Component::In_Object_Tree>(entity).inTree;
+			auto& rect = view.get<Component::Interaction_Rect>(entity).rect;
 			    ///create explosion
 			Create_Explosion(position.x, position.y);
 			    ///destroy box2d body
 			Collision::world->DestroyBody(body.body);
 			World::zone.remove<Component::Body>(entity);
 			    ///set to remove from quad tree on update
-			SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
+
 			World::zone.emplace<Component::Remove_From_Object_Tree>(entity, rect); //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
 			World::zone.emplace<Component::Destroyed>(entity, rect); //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
 		}
 	}
 
 	void Clear_Collided_Spells() {
-		auto view = World::zone.view<Component::Spell, Component::Position, Component::Alive, Component::Body, Component::Radius, Component::In_Object_Tree>(entt::exclude<Component::Mouse_Move, Component::Linear_Move, Component::Explosion>);
+		auto view = World::zone.view<Component::Spell, Component::Position, Component::Alive, Component::Body, Component::Radius, Component::Interaction_Rect, Component::In_Object_Tree>(entt::exclude<Component::Mouse_Move, Component::Linear_Move, Component::Explosion>);
 		for (auto entity : view) {
 			if (view.get<Component::Alive>(entity).bIsAlive == false) {
 				auto& position = view.get<Component::Position>(entity);
 				auto& radius = view.get<Component::Radius>(entity).fRadius;
 				auto& body = view.get<Component::Body>(entity);
 				auto& inTree = view.get<Component::In_Object_Tree>(entity).inTree;
+                auto& rect = view.get<Component::Interaction_Rect>(entity).rect;
 				    ///create explosion
 				Create_Explosion(position.x, position.y);
 				    ///destroy box2d body
 				Collision::world->DestroyBody(body.body);
 				World::zone.remove<Component::Body>(entity);
-				SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
 				    ///set to remove from quad tree on update
 				World::zone.emplace<Component::Remove_From_Object_Tree>(entity, rect); //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
 				World::zone.emplace<Component::Destroyed>(entity, rect); //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()

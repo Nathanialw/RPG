@@ -70,7 +70,7 @@ namespace Texture_Packer {
         }
     }
 
-    int i = 75;
+    int i = 120;
 
     void Get_Frame_Action_Data (std::string unitType, std::string &name, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
 
@@ -91,24 +91,58 @@ namespace Texture_Packer {
             if (checkAction == "1-H Attack 3") {
                 action = Component::Action_State::attack;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "2-H Idle") {
+            } else if (checkAction == "Idle 2") {
                 action = Component::Action_State::idle;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "2-H Run") {
+            } else if (checkAction == "Running") {
                 action = Component::Action_State::walk;
-                actionFrameData[action].frameSpeed = i;
+                actionFrameData[action].frameSpeed = 75;
             } else if (checkAction == "Get Hit 2") {
                 action = Component::Action_State::struck;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "Dead-Down Backward") {
-                action = Component::Action_State::dead;
-                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead-Down Forward") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = 100;
             } else if (checkAction == "Get Hit 1") {
                 action = Component::Action_State::casting;
                 actionFrameData[action].frameSpeed = 150;
                 actionFrameData[action].reverses = 1;
             } else if (checkAction == "Casting") {
                 action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Down 2") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            }
+            else {
+                return;
+            }
+        }
+        else if (unitType == "classes_male" || unitType == "classes_female") {
+            if (checkAction == "Attack Two Hand Swing") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle3") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Run") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = 75;
+            } else if (checkAction == "Get Hit") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Critical Health Idle 1") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = 100;
+            } else if (checkAction == "Casting Idle") {
+                action = Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = 150;
+                actionFrameData[action].reverses = 1;
+            } else if (checkAction == "Casting") {
+                action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead") {
+                action = Component::Action_State::dead;
                 actionFrameData[action].frameSpeed = i;
             }
             else {
@@ -143,35 +177,50 @@ namespace Texture_Packer {
             } else if (checkAction == "walking") {
                 action = Component::Action_State::walk;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "Walking") {
-                action = Component::Action_State::walk;
-                actionFrameData[action].frameSpeed = i;
+//            } else if (checkAction == "Walking") {
+//                action = Component::Action_State::walk;
+//                actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Run") {
                 action = Component::Action_State::walk;
                 actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Running") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = 75;
             } else if (checkAction == "Get Hit 1") {
                 action = Component::Action_State::struck;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Get Hit") {
                 action = Component::Action_State::struck;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "collapse") {
+            } else if (checkAction == "dead") {
                 action = Component::Action_State::struck;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "Down 1") {
+            } else if (checkAction == "collapse") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "ko") {
                 action = Component::Action_State::dead;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Dead") {
                 action = Component::Action_State::dead;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "Dead To Down") {
-                action = Component::Action_State::dead;
-                actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Dead2") {
                 action = Component::Action_State::dead;
                 actionFrameData[action].frameSpeed = i;
-            } else if (checkAction == "ko") {
+            } else if (checkAction == "Down_1") {
                 action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead To Down") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead2") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Woozy") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "ko") {
+                action = Component::Action_State::dying;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Cast Idle") {
                 action = Component::Action_State::casting;

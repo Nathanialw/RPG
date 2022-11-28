@@ -16,427 +16,6 @@ oH => original height
 r => 'y' if sprite is rotated-->
 <TextureAtlas imagePath="texture.png" width="815" height="844" scale="1" format="RGBA8888">
   <sprite n="Weapons(Addon_Female_Axe1_Female)_1-H Attack 1_01_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_19_ 2" x="200" y="0" w="65" h="41" pX="0.5" pY="0.5" oX="65" oY="78" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_20_ 6" x="200" y="41" w="64" h="31" pX="0.5" pY="0.5" oX="92" oY="99" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_10_ 1" x="200" y="72" w="64" h="25" pX="0.5" pY="0.5" oX="70" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_09_ 1" x="200" y="97" w="64" h="23" pX="0.5" pY="0.5" oX="61" oY="76" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_30_ 3" x="200" y="120" w="13" h="64" pX="0.5" pY="0.5" oX="112" oY="45" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_32_ 3" x="213" y="120" w="10" h="64" pX="0.5" pY="0.5" oX="113" oY="45" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_15_ 1" x="0" y="200" w="64" h="25" pX="0.5" pY="0.5" oX="88" oY="84" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_28_ 3" x="223" y="120" w="15" h="64" pX="0.5" pY="0.5" oX="113" oY="52" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_18_ 2" x="200" y="184" w="64" h="40" pX="0.5" pY="0.5" oX="65" oY="75" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_08_ 1" x="64" y="200" w="64" h="24" pX="0.5" pY="0.5" oX="60" oY="66" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_25_ 3" x="238" y="120" w="16" h="63" pX="0.5" pY="0.5" oX="103" oY="71" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_23_ 2" x="128" y="200" w="63" h="20" pX="0.5" pY="0.5" oX="53" oY="95" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_22_ 2" x="0" y="225" w="63" h="26" pX="0.5" pY="0.5" oX="49" oY="92" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_17_ 2" x="128" y="220" w="63" h="16" pX="0.5" pY="0.5" oX="80" oY="99" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_19_ 2" x="64" y="224" w="63" h="17" pX="0.5" pY="0.5" oX="56" oY="100" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_38_ 7" x="0" y="251" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_14_ 1" x="191" y="224" w="63" h="25" pX="0.5" pY="0.5" oX="92" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_12_ 1" x="127" y="236" w="63" h="25" pX="0.5" pY="0.5" oX="91" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_11_ 1" x="63" y="241" w="63" h="25" pX="0.5" pY="0.5" oX="85" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_13_ 2" x="190" y="249" w="63" h="27" pX="0.5" pY="0.5" oX="81" oY="96" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_22_ 7" x="22" y="251" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_19_ 2" x="126" y="261" w="63" h="20" pX="0.5" pY="0.5" oX="69" oY="101" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_18_ 2" x="189" y="276" w="63" h="15" pX="0.5" pY="0.5" oX="71" oY="102" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_17_ 2" x="44" y="266" w="63" h="35" pX="0.5" pY="0.5" oX="75" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_40_ 7" x="265" y="0" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_36_ 7" x="254" y="120" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_37_ 7" x="264" y="183" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_20_ 2" x="107" y="281" w="63" h="26" pX="0.5" pY="0.5" oX="50" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_06_ 1" x="287" y="0" w="62" h="31" pX="0.5" pY="0.5" oX="57" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_13_ 1" x="287" y="31" w="62" h="24" pX="0.5" pY="0.5" oX="55" oY="70" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_18_ 2" x="287" y="55" w="62" h="21" pX="0.5" pY="0.5" oX="64" oY="99" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_16_ 1" x="286" y="76" w="62" h="26" pX="0.5" pY="0.5" oX="81" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_12_ 1" x="286" y="102" w="62" h="27" pX="0.5" pY="0.5" oX="68" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_07_ 1" x="286" y="129" w="62" h="25" pX="0.5" pY="0.5" oX="73" oY="77" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_12_ 2" x="286" y="154" w="62" h="27" pX="0.5" pY="0.5" oX="70" oY="99" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_19_ 6" x="286" y="181" w="62" h="48" pX="0.5" pY="0.5" oX="67" oY="97" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_20_ 2" x="286" y="229" w="62" h="28" pX="0.5" pY="0.5" oX="75" oY="88" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_11_ 1" x="252" y="276" w="62" h="25" pX="0.5" pY="0.5" oX="73" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_63_ 7" x="0" y="314" w="15" h="62" pX="0.5" pY="0.5" oX="119" oY="57" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_13_ 2" x="44" y="301" w="62" h="26" pX="0.5" pY="0.5" oX="74" oY="96" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_10_ 1" x="170" y="291" w="62" h="25" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_09_ 1" x="106" y="307" w="62" h="25" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_08_ 2" x="15" y="332" w="62" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_07_ 1" x="77" y="332" w="62" h="25" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_06_ 1" x="139" y="332" w="62" h="25" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_35_ 6" x="201" y="316" w="62" h="46" pX="0.5" pY="0.5" oX="71" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_23_ 7" x="263" y="301" w="17" h="62" pX="0.5" pY="0.5" oX="100" oY="54" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_24_ 7" x="280" y="301" w="17" h="62" pX="0.5" pY="0.5" oX="100" oY="54" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_11_ 2" x="349" y="0" w="62" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_09_ 1" x="15" y="355" w="62" h="21" pX="0.5" pY="0.5" oX="67" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_24_ 2" x="349" y="23" w="62" h="22" pX="0.5" pY="0.5" oX="61" oY="98" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_39_ 7" x="297" y="301" w="22" h="62" pX="0.5" pY="0.5" oX="95" oY="54" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_31_ 3" x="349" y="45" w="14" h="62" pX="0.5" pY="0.5" oX="110" oY="41" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_21_ 2" x="348" y="107" w="62" h="24" pX="0.5" pY="0.5" oX="87" oY="95" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_11_ 2" x="77" y="362" w="62" h="14" pX="0.5" pY="0.5" oX="85" oY="102" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_10_ 1" x="348" y="131" w="62" h="21" pX="0.5" pY="0.5" oX="77" oY="56" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_18_ 5" x="348" y="152" w="61" h="29" pX="0.5" pY="0.5" oX="120" oY="65" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_05_ 1" x="348" y="181" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_06_ 1" x="348" y="207" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_07_ 1" x="348" y="233" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_08_ 1" x="314" y="259" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_09_ 1" x="319" y="285" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_10_ 1" x="319" y="311" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_12_ 2" x="319" y="337" w="61" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_08_ 1" x="0" y="376" w="61" h="25" pX="0.5" pY="0.5" oX="69" oY="71" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_13_ 2" x="139" y="357" w="61" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_32_ 3" x="363" y="45" w="17" h="61" pX="0.5" pY="0.5" oX="113" oY="56" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_11_ 2" x="200" y="362" w="61" h="26" pX="0.5" pY="0.5" oX="75" oY="96" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_12_ 2" x="261" y="363" w="61" h="26" pX="0.5" pY="0.5" oX="75" oY="96" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_14_ 2" x="61" y="376" w="61" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_14_ 2" x="322" y="360" w="61" h="26" pX="0.5" pY="0.5" oX="75" oY="96" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_15_ 2" x="0" y="401" w="61" h="26" pX="0.5" pY="0.5" oX="75" oY="96" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_15_ 2" x="61" y="399" w="61" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_18_ 3" x="380" y="45" w="12" h="61" pX="0.5" pY="0.5" oX="107" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_19_ 3" x="392" y="45" w="13" h="61" pX="0.5" pY="0.5" oX="107" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_13_ 1" x="122" y="389" w="61" h="25" pX="0.5" pY="0.5" oX="99" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_21_ 2" x="183" y="389" w="61" h="33" pX="0.5" pY="0.5" oX="45" oY="90" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_11_ 1" x="244" y="389" w="61" h="24" pX="0.5" pY="0.5" oX="78" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_26_ 3" x="383" y="259" w="15" h="61" pX="0.5" pY="0.5" oX="106" oY="76" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_31_ 3" x="383" y="320" w="28" h="60" pX="0.5" pY="0.5" oX="101" oY="47" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_07_ 2" x="305" y="389" w="60" h="22" pX="0.5" pY="0.5" oX="78" oY="90" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_05_ 0" x="411" y="0" w="14" h="60" pX="0.5" pY="0.5" oX="82" oY="53" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_14_ 2" x="425" y="0" w="32" h="60" pX="0.5" pY="0.5" oX="124" oY="58" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_17_ 3" x="398" y="259" w="12" h="60" pX="0.5" pY="0.5" oX="107" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_16_ 3" x="411" y="60" w="12" h="60" pX="0.5" pY="0.5" oX="107" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_62_ 7" x="423" y="60" w="14" h="60" pX="0.5" pY="0.5" oX="118" oY="47" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_20_ 3" x="437" y="60" w="12" h="60" pX="0.5" pY="0.5" oX="107" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_25_ 3" x="276" y="63" w="9" h="60" pX="0.5" pY="0.5" oX="121" oY="58" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_12_ 3" x="411" y="120" w="21" h="60" pX="0.5" pY="0.5" oX="111" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_11_ 3" x="432" y="120" w="21" h="60" pX="0.5" pY="0.5" oX="111" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_10_ 3" x="409" y="180" w="21" h="60" pX="0.5" pY="0.5" oX="111" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_11_ 3" x="430" y="180" w="12" h="60" pX="0.5" pY="0.5" oX="107" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_24_ 2" x="365" y="386" w="59" h="41" pX="0.5" pY="0.5" oX="84" oY="84" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_20_ 3" x="424" y="240" w="20" h="59" pX="0.5" pY="0.5" oX="118" oY="49" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_22_ 2" x="424" y="299" w="20" h="59" pX="0.5" pY="0.5" oX="119" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_39_ 7" x="424" y="358" w="24" h="59" pX="0.5" pY="0.5" oX="126" oY="39" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_10_ 1" x="0" y="427" w="59" h="22" pX="0.5" pY="0.5" oX="53" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_15_ 2" x="122" y="414" w="59" h="35" pX="0.5" pY="0.5" oX="92" oY="90" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_29_ 3" x="442" y="180" w="12" h="59" pX="0.5" pY="0.5" oX="112" oY="56" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_04_ 1" x="305" y="411" w="59" h="37" pX="0.5" pY="0.5" oX="67" oY="66" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_16_ 1" x="59" y="427" w="59" h="22" pX="0.5" pY="0.5" oX="61" oY="67" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_15_ 4" x="181" y="422" w="59" h="27" pX="0.5" pY="0.5" oX="24" oY="67" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_16_ 3" x="0" y="449" w="18" h="59" pX="0.5" pY="0.5" oX="110" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_63_ 7" x="18" y="449" w="26" h="59" pX="0.5" pY="0.5" oX="121" oY="56" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_60_ 7" x="44" y="449" w="31" h="58" pX="0.5" pY="0.5" oX="112" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_22_ 4" x="244" y="413" w="58" h="36" pX="0.5" pY="0.5" oX="62" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_03_ 0" x="410" y="240" w="14" h="58" pX="0.5" pY="0.5" oX="81" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_32_ 3" x="75" y="449" w="17" h="58" pX="0.5" pY="0.5" oX="102" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_18_ 5" x="92" y="449" w="58" h="41" pX="0.5" pY="0.5" oX="69" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_21_ 2" x="150" y="449" w="21" h="57" pX="0.5" pY="0.5" oX="112" oY="58" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_56_ 6" x="171" y="449" w="57" h="40" pX="0.5" pY="0.5" oX="71" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_48_ 5" x="228" y="449" w="36" h="57" pX="0.5" pY="0.5" oX="76" oY="45" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_21_ 6" x="264" y="449" w="57" h="24" pX="0.5" pY="0.5" oX="78" oY="90" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_24_ 7" x="321" y="448" w="27" h="57" pX="0.5" pY="0.5" oX="104" oY="66" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_37_ 7" x="264" y="473" w="57" h="22" pX="0.5" pY="0.5" oX="85" oY="101" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_11_ 2" x="424" y="417" w="30" h="57" pX="0.5" pY="0.5" oX="100" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_12_ 2" x="348" y="448" w="30" h="57" pX="0.5" pY="0.5" oX="100" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_10_ 3" x="378" y="427" w="23" h="57" pX="0.5" pY="0.5" oX="105" oY="65" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_53_ 6" x="457" y="0" w="27" h="57" pX="0.5" pY="0.5" oX="100" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_15_ 2" x="453" y="60" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_30_ 5" x="401" y="474" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_40_ 7" x="448" y="239" w="32" h="56" pX="0.5" pY="0.5" oX="118" oY="67" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_02_ 0" x="411" y="298" w="13" h="56" pX="0.5" pY="0.5" oX="84" oY="74" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_09_ 2" x="484" y="0" w="56" h="36" pX="0.5" pY="0.5" oX="87" oY="84" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_29_ 5" x="484" y="36" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_07_ 2" x="444" y="295" w="30" h="56" pX="0.5" pY="0.5" oX="100" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_08_ 2" x="453" y="116" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_09_ 2" x="448" y="351" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_28_ 5" x="484" y="62" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_27_ 5" x="484" y="88" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_16_ 5" x="484" y="114" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_17_ 5" x="484" y="140" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_18_ 5" x="484" y="166" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_19_ 6" x="480" y="192" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_20_ 6" x="480" y="226" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_26_ 5" x="480" y="260" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_05_ 0" x="474" y="295" w="29" h="56" pX="0.5" pY="0.5" oX="84" oY="67" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_35_ 6" x="479" y="351" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_32_ 6" x="479" y="385" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_13_ 2" x="503" y="286" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_17_ 2" x="454" y="419" w="56" h="29" pX="0.5" pY="0.5" oX="73" oY="94" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_14_ 2" x="457" y="448" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_62_ 7" x="488" y="448" w="34" h="56" pX="0.5" pY="0.5" oX="114" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_39_ 7" x="0" y="508" w="56" h="34" pX="0.5" pY="0.5" oX="88" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_38_ 7" x="56" y="508" w="56" h="34" pX="0.5" pY="0.5" oX="88" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_37_ 7" x="112" y="508" w="56" h="34" pX="0.5" pY="0.5" oX="88" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_31_ 6" x="168" y="508" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_64_ 7" x="540" y="0" w="33" h="56" pX="0.5" pY="0.5" oX="108" oY="71" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_18_ 3" x="264" y="63" w="11" h="56" pX="0.5" pY="0.5" oX="120" oY="61" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_06_ 0" x="378" y="484" w="15" h="55" pX="0.5" pY="0.5" oX="85" oY="61" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_33_ 6" x="224" y="506" w="55" h="36" pX="0.5" pY="0.5" oX="69" oY="95" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_59_ 7" x="457" y="504" w="55" h="38" pX="0.5" pY="0.5" oX="87" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_36_ 7" x="393" y="508" w="55" h="34" pX="0.5" pY="0.5" oX="89" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_06_ 1" x="510" y="419" w="55" h="25" pX="0.5" pY="0.5" oX="62" oY="78" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_40_ 7" x="279" y="505" w="55" h="34" pX="0.5" pY="0.5" oX="89" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_35_ 4" x="512" y="504" w="55" h="26" pX="0.5" pY="0.5" oX="62" oY="65" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_21_ 6" x="0" y="542" w="55" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_34_ 6" x="573" y="0" w="55" h="54" pX="0.5" pY="0.5" oX="90" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_26_ 3" x="522" y="444" w="17" h="55" pX="0.5" pY="0.5" oX="119" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_25_ 3" x="276" y="123" w="10" h="55" pX="0.5" pY="0.5" oX="111" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_34_ 6" x="55" y="542" w="55" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_52_ 6" x="279" y="539" w="55" h="37" pX="0.5" pY="0.5" oX="53" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_33_ 6" x="573" y="54" w="55" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_44_ 5" x="334" y="539" w="54" h="29" pX="0.5" pY="0.5" oX="82" oY="74" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_04_ 0" x="454" y="172" w="22" h="54" pX="0.5" pY="0.5" oX="80" oY="77" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_22_ 2" x="567" y="88" w="54" h="36" pX="0.5" pY="0.5" oX="101" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_04_ 0" x="539" y="444" w="18" h="54" pX="0.5" pY="0.5" oX="83" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_43_ 5" x="512" y="530" w="54" h="40" pX="0.5" pY="0.5" oX="92" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_27_ 3" x="557" y="444" w="14" h="54" pX="0.5" pY="0.5" oX="105" oY="84" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_22_ 7" x="571" y="124" w="54" h="37" pX="0.5" pY="0.5" oX="88" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_52_ 6" x="110" y="542" w="54" h="34" pX="0.5" pY="0.5" oX="68" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_13_ 4" x="571" y="161" w="54" h="26" pX="0.5" pY="0.5" oX="63" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_27_ 3" x="540" y="56" w="19" h="54" pX="0.5" pY="0.5" oX="116" oY="65" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_09_ 1" x="571" y="187" w="54" h="30" pX="0.5" pY="0.5" oX="75" oY="76" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_29_ 5" x="571" y="217" w="54" h="21" pX="0.5" pY="0.5" oX="60" oY="39" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_57_ 7" x="534" y="286" w="37" h="54" pX="0.5" pY="0.5" oX="89" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_18_ 3" x="536" y="238" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_19_ 3" x="571" y="285" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_44_ 5" x="388" y="542" w="53" h="30" pX="0.5" pY="0.5" oX="99" oY="88" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_64_ 7" x="571" y="332" w="37" h="53" pX="0.5" pY="0.5" oX="112" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_20_ 3" x="571" y="385" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_51_ 6" x="571" y="432" w="53" h="38" pX="0.5" pY="0.5" oX="59" oY="77" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_48_ 5" x="566" y="530" w="53" h="44" pX="0.5" pY="0.5" oX="88" oY="79" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_16_ 5" x="535" y="340" w="33" h="53" pX="0.5" pY="0.5" oX="90" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_58_ 7" x="571" y="470" w="53" h="39" pX="0.5" pY="0.5" oX="89" oY="78" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_12_ 3" x="540" y="124" w="28" h="53" pX="0.5" pY="0.5" oX="95" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_16_ 3" x="0" y="576" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_56_ 6" x="334" y="568" w="53" h="26" pX="0.5" pY="0.5" oX="63" oY="89" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_10_ 3" x="53" y="576" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_34_ 4" x="106" y="594" w="53" h="25" pX="0.5" pY="0.5" oX="62" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_11_ 3" x="159" y="576" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_30_ 5" x="212" y="576" w="53" h="42" pX="0.5" pY="0.5" oX="81" oY="47" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_04_ 0" x="265" y="576" w="53" h="36" pX="0.5" pY="0.5" oX="62" oY="76" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_12_ 3" x="387" y="574" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_26_ 5" x="441" y="570" w="42" h="53" pX="0.5" pY="0.5" oX="80" oY="56" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_17_ 3" x="483" y="574" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_16_ 3" x="608" y="332" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_17_ 3" x="536" y="570" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_18_ 3" x="540" y="177" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_20_ 3" x="0" y="623" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_19_ 3" x="19" y="623" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_02_ 0" x="38" y="623" w="24" h="52" pX="0.5" pY="0.5" oX="71" oY="78" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_01_ 0" x="106" y="619" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_04_ 0" x="483" y="621" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_42_ 5" x="158" y="623" w="47" h="52" pX="0.5" pY="0.5" oX="90" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_46_ 5" x="535" y="623" w="45" h="52" pX="0.5" pY="0.5" oX="73" oY="47" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_44_ 5" x="62" y="623" w="43" h="52" pX="0.5" pY="0.5" oX="81" oY="51" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_54_ 6" x="555" y="574" w="52" h="39" pX="0.5" pY="0.5" oX="54" oY="79" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_05_ 0" x="105" y="641" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_55_ 6" x="205" y="623" w="52" h="37" pX="0.5" pY="0.5" oX="57" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_03_ 0" x="205" y="660" w="52" h="16" pX="0.5" pY="0.5" oX="82" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_02_ 0" x="441" y="542" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_01_ 0" x="257" y="643" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_03_ 0" x="257" y="621" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_02_ 0" x="309" y="643" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_20_ 2" x="318" y="594" w="51" h="39" pX="0.5" pY="0.5" oX="94" oY="88" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_54_ 6" x="369" y="623" w="34" h="51" pX="0.5" pY="0.5" oX="101" oY="75" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_48_ 5" x="403" y="623" w="51" h="46" pX="0.5" pY="0.5" oX="82" oY="55" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_24_ 4" x="454" y="643" w="51" h="25" pX="0.5" pY="0.5" oX="61" oY="84" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_21_ 4" x="164" y="542" w="51" h="26" pX="0.5" pY="0.5" oX="61" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_47_ 5" x="628" y="0" w="51" h="35" pX="0.5" pY="0.5" oX="96" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_23_ 4" x="628" y="35" w="51" h="25" pX="0.5" pY="0.5" oX="61" oY="84" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_29_ 5" x="628" y="60" w="47" h="51" pX="0.5" pY="0.5" oX="79" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_23_ 2" x="627" y="111" w="42" h="51" pX="0.5" pY="0.5" oX="103" oY="75" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_22_ 4" x="627" y="162" w="51" h="26" pX="0.5" pY="0.5" oX="61" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_61_ 7" x="580" y="613" w="22" h="51" pX="0.5" pY="0.5" oX="113" oY="47" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_25_ 4" x="627" y="188" w="51" h="26" pX="0.5" pY="0.5" oX="61" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_06_ 0" x="602" y="613" w="37" h="51" pX="0.5" pY="0.5" oX="82" oY="71" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_36_ 7" x="627" y="214" w="50" h="42" pX="0.5" pY="0.5" oX="97" oY="78" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_38_ 7" x="627" y="256" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_09_ 2" x="624" y="306" w="50" h="24" pX="0.5" pY="0.5" oX="66" oY="113" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_61_ 7" x="627" y="330" w="41" h="50" pX="0.5" pY="0.5" oX="104" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_37_ 7" x="627" y="380" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_36_ 7" x="624" y="430" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_59_ 7" x="624" y="480" w="50" h="24" pX="0.5" pY="0.5" oX="86" oY="95" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_07_ 2" x="624" y="504" w="50" h="24" pX="0.5" pY="0.5" oX="66" oY="113" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_31_ 3" x="665" y="430" w="14" h="50" pX="0.5" pY="0.5" oX="105" oY="88" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_23_ 7" x="619" y="528" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_57_ 7" x="0" y="676" w="43" h="50" pX="0.5" pY="0.5" oX="100" oY="75" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_17_ 5" x="43" y="676" w="48" h="50" pX="0.5" pY="0.5" oX="78" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_53_ 6" x="91" y="676" w="42" h="50" pX="0.5" pY="0.5" oX="55" oY="69" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_36_ 4" x="133" y="676" w="38" h="50" pX="0.5" pY="0.5" oX="70" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_24_ 2" x="215" y="542" w="50" h="34" pX="0.5" pY="0.5" oX="103" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_08_ 2" x="607" y="578" w="50" h="24" pX="0.5" pY="0.5" oX="66" oY="113" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_30_ 5" x="171" y="676" w="49" h="50" pX="0.5" pY="0.5" oX="78" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_30_ 3" x="220" y="676" w="31" h="50" pX="0.5" pY="0.5" oX="91" oY="44" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_40_ 7" x="251" y="676" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_28_ 5" x="292" y="675" w="49" h="50" pX="0.5" pY="0.5" oX="78" oY="59" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_35_ 4" x="341" y="675" w="50" h="46" pX="0.5" pY="0.5" oX="69" oY="74" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_07_ 0" x="391" y="675" w="17" h="50" pX="0.5" pY="0.5" oX="86" oY="67" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_26_ 5" x="408" y="675" w="49" h="49" pX="0.5" pY="0.5" oX="78" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_14_ 4" x="457" y="675" w="26" h="49" pX="0.5" pY="0.5" oX="121" oY="56" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_39_ 7" x="483" y="675" w="42" h="49" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_16_ 5" x="525" y="675" w="32" h="49" pX="0.5" pY="0.5" oX="41" oY="69" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_61_ 7" x="253" y="257" w="49" h="19" pX="0.5" pY="0.5" oX="68" oY="110" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_36_ 4" x="639" y="602" w="40" h="49" pX="0.5" pY="0.5" oX="87" oY="64" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_37_ 4" x="557" y="675" w="49" h="49" pX="0.5" pY="0.5" oX="88" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_49_ 6" x="606" y="664" w="49" h="35" pX="0.5" pY="0.5" oX="65" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_27_ 5" x="679" y="0" w="49" h="49" pX="0.5" pY="0.5" oX="78" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_43_ 5" x="668" y="256" w="35" h="49" pX="0.5" pY="0.5" oX="105" oY="55" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_31_ 6" x="679" y="49" w="48" h="37" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_33_ 6" x="679" y="305" w="48" h="39" pX="0.5" pY="0.5" oX="78" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_64_ 7" x="669" y="111" w="40" h="48" pX="0.5" pY="0.5" oX="82" oY="88" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_20_ 6" x="679" y="344" w="48" h="37" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_35_ 6" x="679" y="381" w="48" h="38" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_45_ 5" x="679" y="419" w="48" h="48" pX="0.5" pY="0.5" oX="78" oY="56" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_41_ 5" x="679" y="467" w="48" h="43" pX="0.5" pY="0.5" oX="81" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_49_ 6" x="679" y="510" w="48" h="38" pX="0.5" pY="0.5" oX="76" oY="90" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_47_ 5" x="679" y="548" w="48" h="44" pX="0.5" pY="0.5" oX="72" oY="50" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_55_ 6" x="677" y="214" w="48" h="41" pX="0.5" pY="0.5" oX="85" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_32_ 6" x="679" y="592" w="48" h="38" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_53_ 6" x="679" y="630" w="48" h="41" pX="0.5" pY="0.5" oX="79" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_19_ 3" x="678" y="159" w="47" h="45" pX="0.5" pY="0.5" oX="95" oY="29" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_49_ 6" x="675" y="86" w="47" h="24" pX="0.5" pY="0.5" oX="72" oY="89" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_38_ 4" x="655" y="671" w="45" h="47" pX="0.5" pY="0.5" oX="85" oY="65" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_51_ 6" x="0" y="726" w="42" h="47" pX="0.5" pY="0.5" oX="71" oY="84" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_58_ 7" x="606" y="699" w="47" h="29" pX="0.5" pY="0.5" oX="88" oY="90" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_42_ 5" x="341" y="721" w="47" h="24" pX="0.5" pY="0.5" oX="87" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_58_ 7" x="42" y="726" w="43" h="47" pX="0.5" pY="0.5" oX="83" oY="88" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_42_ 5" x="589" y="238" w="38" h="47" pX="0.5" pY="0.5" oX="104" oY="51" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_41_ 5" x="85" y="726" w="44" h="47" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_34_ 4" x="129" y="726" w="47" h="47" pX="0.5" pY="0.5" oX="69" oY="73" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_10_ 1" x="292" y="725" w="47" h="26" pX="0.5" pY="0.5" oX="79" oY="76" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_34_ 6" x="388" y="728" w="47" h="38" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_57_ 7" x="435" y="728" w="46" h="42" pX="0.5" pY="0.5" oX="96" oY="79" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_50_ 6" x="481" y="728" w="46" h="42" pX="0.5" pY="0.5" oX="71" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_54_ 6" x="339" y="745" w="46" h="27" pX="0.5" pY="0.5" oX="86" oY="95" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_37_ 4" x="401" y="427" w="22" h="46" pX="0.5" pY="0.5" oX="70" oY="63" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_52_ 6" x="527" y="728" w="46" h="44" pX="0.5" pY="0.5" oX="80" oY="76" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_28_ 5" x="176" y="726" w="46" h="46" pX="0.5" pY="0.5" oX="89" oY="55" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_50_ 6" x="573" y="728" w="46" h="29" pX="0.5" pY="0.5" oX="68" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_14_ 1" x="619" y="728" w="46" h="28" pX="0.5" pY="0.5" oX="49" oY="64" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_01_ 0" x="222" y="726" w="14" h="45" pX="0.5" pY="0.5" oX="83" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_46_ 5" x="573" y="757" w="45" h="15" pX="0.5" pY="0.5" oX="105" oY="105" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_32_ 6" x="236" y="726" w="41" h="45" pX="0.5" pY="0.5" oX="72" oY="89" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_04_ 0" x="660" y="528" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_02_ 0" x="709" y="110" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_03_ 0" x="703" y="255" w="20" h="45" pX="0.5" pY="0.5" oX="85" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_38_ 7" x="665" y="718" w="44" h="45" pX="0.5" pY="0.5" oX="104" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_03_ 0" x="709" y="671" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_05_ 0" x="709" y="716" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_23_ 2" x="728" y="0" w="45" h="44" pX="0.5" pY="0.5" oX="110" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_01_ 0" x="723" y="255" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_15_ 1" x="728" y="44" w="45" h="36" pX="0.5" pY="0.5" oX="49" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_30_ 3" x="277" y="726" w="13" h="44" pX="0.5" pY="0.5" oX="106" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_03_ 0" x="742" y="80" w="18" h="44" pX="0.5" pY="0.5" oX="70" oY="66" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_08_ 0" x="742" y="124" w="22" h="44" pX="0.5" pY="0.5" oX="86" oY="74" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_17_ 3" x="742" y="168" w="24" h="44" pX="0.5" pY="0.5" oX="109" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_28_ 3" x="725" y="155" w="17" h="44" pX="0.5" pY="0.5" oX="105" oY="92" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_17_ 5" x="742" y="212" w="25" h="44" pX="0.5" pY="0.5" oX="58" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_62_ 7" x="334" y="505" w="44" h="33" pX="0.5" pY="0.5" oX="74" oY="101" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_59_ 7" x="728" y="300" w="41" h="44" pX="0.5" pY="0.5" oX="79" oY="92" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_33_ 4" x="728" y="344" w="44" h="28" pX="0.5" pY="0.5" oX="61" oY="71" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_39_ 4" x="728" y="372" w="44" h="43" pX="0.5" pY="0.5" oX="84" oY="70" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_23_ 4" x="728" y="415" w="44" h="33" pX="0.5" pY="0.5" oX="56" oY="78" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_26_ 5" x="728" y="448" w="34" h="43" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_30_ 5" x="728" y="491" w="34" h="43" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_28_ 5" x="728" y="534" w="33" h="43" pX="0.5" pY="0.5" oX="95" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_63_ 7" x="728" y="577" w="43" h="39" pX="0.5" pY="0.5" oX="77" oY="96" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_29_ 5" x="728" y="616" w="34" h="43" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_43_ 5" x="728" y="659" w="43" h="26" pX="0.5" pY="0.5" oX="91" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_26_ 3" x="668" y="330" w="11" h="43" pX="0.5" pY="0.5" oX="110" oY="76" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_02_ 0" x="742" y="256" w="20" h="43" pX="0.5" pY="0.5" oX="84" oY="74" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_02_ 0" x="725" y="199" w="17" h="43" pX="0.5" pY="0.5" oX="69" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_27_ 5" x="728" y="685" w="34" h="43" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_50_ 6" x="728" y="728" w="42" h="38" pX="0.5" pY="0.5" oX="62" oY="79" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_16_ 1" x="773" y="0" w="42" h="36" pX="0.5" pY="0.5" oX="52" oY="60" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_31_ 6" x="773" y="36" w="42" h="42" pX="0.5" pY="0.5" oX="82" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_01_ 0" x="761" y="534" w="22" h="42" pX="0.5" pY="0.5" oX="86" oY="74" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_27_ 5" x="762" y="616" w="30" h="42" pX="0.5" pY="0.5" oX="102" oY="72" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_03_ 0" x="668" y="373" w="11" h="42" pX="0.5" pY="0.5" oX="73" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_07_ 0" x="762" y="685" w="21" h="42" pX="0.5" pY="0.5" oX="80" oY="79" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_06_ 0" x="760" y="80" w="20" h="41" pX="0.5" pY="0.5" oX="80" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_60_ 7" x="772" y="121" w="41" h="36" pX="0.5" pY="0.5" oX="77" oY="99" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_51_ 6" x="771" y="576" w="39" h="40" pX="0.5" pY="0.5" oX="64" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_33_ 6" x="762" y="256" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_31_ 6" x="772" y="296" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_21_ 6" x="772" y="336" w="40" h="40" pX="0.5" pY="0.5" oX="81" oY="28" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_34_ 6" x="772" y="376" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_29_ 3" x="780" y="78" w="25" h="40" pX="0.5" pY="0.5" oX="95" oY="44" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_55_ 6" x="772" y="416" w="40" h="28" pX="0.5" pY="0.5" oX="93" oY="96" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_32_ 6" x="772" y="444" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_08_ 0" x="728" y="80" w="14" h="40" pX="0.5" pY="0.5" oX="82" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_35_ 6" x="770" y="727" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_01_ 0" x="559" y="177" w="12" h="39" pX="0.5" pY="0.5" oX="75" oY="77" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_27_ 3" x="801" y="157" w="13" h="39" pX="0.5" pY="0.5" oX="110" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_03_ 0" x="792" y="616" w="18" h="39" pX="0.5" pY="0.5" oX="85" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_13_ 4" x="767" y="157" w="33" h="39" pX="0.5" pY="0.5" oX="131" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_05_ 0" x="792" y="655" w="18" h="39" pX="0.5" pY="0.5" oX="85" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_04_ 0" x="762" y="484" w="20" h="39" pX="0.5" pY="0.5" oX="77" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_04_ 0" x="782" y="484" w="17" h="39" pX="0.5" pY="0.5" oX="85" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_05_ 0" x="799" y="484" w="16" h="38" pX="0.5" pY="0.5" oX="81" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_01_ 0" x="783" y="523" w="18" h="38" pX="0.5" pY="0.5" oX="85" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_02_ 0" x="767" y="196" w="18" h="38" pX="0.5" pY="0.5" oX="85" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_28_ 3" x="785" y="196" w="15" h="38" pX="0.5" pY="0.5" oX="109" oY="79" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_02_ 0" x="0" y="773" w="18" h="38" pX="0.5" pY="0.5" oX="85" oY="86" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_60_ 7" x="18" y="773" w="38" h="37" pX="0.5" pY="0.5" oX="96" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_56_ 6" x="56" y="773" w="36" h="38" pX="0.5" pY="0.5" oX="92" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_45_ 5" x="619" y="756" w="38" h="25" pX="0.5" pY="0.5" oX="112" oY="94" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_19_ 6" x="92" y="773" w="37" h="34" pX="0.5" pY="0.5" oX="82" oY="90" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_21_ 4" x="129" y="781" w="37" h="27" pX="0.5" pY="0.5" oX="57" oY="88" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_33_ 4" x="166" y="781" w="37" h="27" pX="0.5" pY="0.5" oX="78" oY="84" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_34_ 4" x="203" y="781" w="37" h="27" pX="0.5" pY="0.5" oX="78" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_13_ 1" x="240" y="772" w="21" h="37" pX="0.5" pY="0.5" oX="72" oY="55" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_24_ 4" x="261" y="772" w="24" h="36" pX="0.5" pY="0.5" oX="56" oY="66" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_40_ 4" x="535" y="393" w="36" h="25" pX="0.5" pY="0.5" oX="56" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_01_ 0" x="709" y="761" w="19" h="36" pX="0.5" pY="0.5" oX="77" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_40_ 4" x="728" y="766" w="36" h="32" pX="0.5" pY="0.5" oX="82" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_07_ 0" x="285" y="772" w="32" h="35" pX="0.5" pY="0.5" oX="76" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_02_ 0" x="317" y="751" w="21" h="34" pX="0.5" pY="0.5" oX="73" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_12_ 1" x="317" y="785" w="34" h="24" pX="0.5" pY="0.5" oX="59" oY="62" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_03_ 0" x="351" y="772" w="33" h="34" pX="0.5" pY="0.5" oX="82" oY="90" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_05_ 0" x="384" y="772" w="27" h="34" pX="0.5" pY="0.5" oX="67" oY="92" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_29_ 3" x="265" y="542" w="14" h="34" pX="0.5" pY="0.5" oX="108" oY="101" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_38_ 4" x="411" y="781" w="34" h="26" pX="0.5" pY="0.5" oX="56" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_03_ 0" x="445" y="772" w="21" h="34" pX="0.5" pY="0.5" oX="73" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_01_ 0" x="466" y="772" w="21" h="34" pX="0.5" pY="0.5" oX="73" oY="82" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_35_ 4" x="487" y="770" w="34" h="32" pX="0.5" pY="0.5" oX="84" oY="81" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_38_ 4" x="521" y="772" w="16" h="34" pX="0.5" pY="0.5" oX="73" oY="74" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_14_ 1" x="537" y="772" w="20" h="34" pX="0.5" pY="0.5" oX="65" oY="61" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_24_ 4" x="783" y="694" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_22_ 4" x="557" y="772" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_23_ 4" x="584" y="772" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_15_ 4" x="764" y="767" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_14_ 4" x="657" y="763" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_13_ 4" x="0" y="811" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_25_ 4" x="27" y="811" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_15_ 1" x="487" y="802" w="33" h="23" pX="0.5" pY="0.5" oX="59" oY="64" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_21_ 4" x="54" y="811" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_08_ 0" x="505" y="643" w="23" h="31" pX="0.5" pY="0.5" oX="74" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_09_ 1" x="171" y="489" w="31" h="19" pX="0.5" pY="0.5" oX="49" oY="57" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_25_ 4" x="285" y="807" w="31" h="31" pX="0.5" pY="0.5" oX="55" oY="77" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_36_ 4" x="92" y="807" w="31" h="26" pX="0.5" pY="0.5" oX="62" oY="79" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_05_ 1" x="316" y="809" w="30" h="29" pX="0.5" pY="0.5" oX="89" oY="77" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_06_ 1" x="123" y="809" w="30" h="29" pX="0.5" pY="0.5" oX="89" oY="77" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_37_ 4" x="346" y="809" w="30" h="26" pX="0.5" pY="0.5" oX="60" oY="89" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_04_ 1" x="376" y="806" w="30" h="29" pX="0.5" pY="0.5" oX="89" oY="77" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_47_ 5" x="153" y="809" w="27" h="30" pX="0.5" pY="0.5" oX="71" oY="44" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_33_ 4" x="180" y="809" w="29" h="27" pX="0.5" pY="0.5" oX="63" oY="91" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_01_ 0" x="369" y="594" w="17" h="29" pX="0.5" pY="0.5" oX="76" oY="93" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_45_ 5" x="209" y="808" w="27" h="28" pX="0.5" pY="0.5" oX="77" oY="50" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_46_ 5" x="684" y="763" w="25" h="27" pX="0.5" pY="0.5" oX="69" oY="50" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_05_ 1" x="791" y="767" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_23_ 4" x="236" y="809" w="27" h="27" pX="0.5" pY="0.5" oX="67" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_14_ 4" x="406" y="807" w="27" h="26" pX="0.5" pY="0.5" oX="67" oY="88" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_24_ 4" x="433" y="807" w="27" h="26" pX="0.5" pY="0.5" oX="67" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_25_ 4" x="460" y="806" w="27" h="27" pX="0.5" pY="0.5" oX="67" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_06_ 1" x="791" y="794" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_15_ 4" x="771" y="658" w="20" h="27" pX="0.5" pY="0.5" oX="74" oY="92" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_22_ 4" x="520" y="806" w="27" h="27" pX="0.5" pY="0.5" oX="67" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_04_ 1" x="684" y="790" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_10_ 1" x="547" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_21_ 4" x="570" y="817" w="27" h="26" pX="0.5" pY="0.5" oX="67" oY="88" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_06_ 1" x="597" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_07_ 1" x="620" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_08_ 1" x="643" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_09_ 1" x="666" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_40_ 4" x="689" y="817" w="27" h="25" pX="0.5" pY="0.5" oX="64" oY="83" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_41_ 5" x="611" y="781" w="24" h="26" pX="0.5" pY="0.5" oX="85" oY="69" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_39_ 4" x="800" y="196" w="15" h="26" pX="0.5" pY="0.5" oX="71" oY="80" oW="200" oH="200"/>
-  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_39_ 4" x="716" y="800" w="26" h="25" pX="0.5" pY="0.5" oX="58" oY="81" oW="200" oH="200"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_1-H Attack 1_02_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_1-H Attack 1_03_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_1-H Attack 1_04_ 1" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
@@ -1156,6 +735,27 @@ r => 'y' if sprite is rotated-->
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Critical Idle 2_22_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Critical Idle 2_23_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Critical Idle 2_24_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_01_ 0" x="466" y="772" w="21" h="34" pX="0.5" pY="0.5" oX="73" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_02_ 0" x="317" y="751" w="21" h="34" pX="0.5" pY="0.5" oX="73" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_03_ 0" x="445" y="772" w="21" h="34" pX="0.5" pY="0.5" oX="73" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_04_ 1" x="376" y="806" w="30" h="29" pX="0.5" pY="0.5" oX="89" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_05_ 1" x="316" y="809" w="30" h="29" pX="0.5" pY="0.5" oX="89" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_06_ 1" x="123" y="809" w="30" h="29" pX="0.5" pY="0.5" oX="89" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_07_ 2" x="624" y="504" w="50" h="24" pX="0.5" pY="0.5" oX="66" oY="113" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_08_ 2" x="607" y="578" w="50" h="24" pX="0.5" pY="0.5" oX="66" oY="113" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_09_ 2" x="624" y="306" w="50" h="24" pX="0.5" pY="0.5" oX="66" oY="113" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_10_ 3" x="409" y="180" w="21" h="60" pX="0.5" pY="0.5" oX="111" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_11_ 3" x="432" y="120" w="21" h="60" pX="0.5" pY="0.5" oX="111" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_12_ 3" x="411" y="120" w="21" h="60" pX="0.5" pY="0.5" oX="111" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_13_ 4" x="767" y="157" w="33" h="39" pX="0.5" pY="0.5" oX="131" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_14_ 4" x="457" y="675" w="26" h="49" pX="0.5" pY="0.5" oX="121" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_15_ 4" x="181" y="422" w="59" h="27" pX="0.5" pY="0.5" oX="24" oY="67" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_16_ 5" x="525" y="675" w="32" h="49" pX="0.5" pY="0.5" oX="41" oY="69" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_17_ 5" x="742" y="212" w="25" h="44" pX="0.5" pY="0.5" oX="58" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_18_ 5" x="348" y="152" w="61" h="29" pX="0.5" pY="0.5" oX="120" oY="65" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_19_ 6" x="286" y="181" w="62" h="48" pX="0.5" pY="0.5" oX="67" oY="97" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_20_ 6" x="200" y="41" w="64" h="31" pX="0.5" pY="0.5" oX="92" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_21_ 6" x="772" y="336" w="40" h="40" pX="0.5" pY="0.5" oX="81" oY="28" oW="200" oH="200"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_22_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_23_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Crouch_24_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
@@ -1559,6 +1159,86 @@ r => 'y' if sprite is rotated-->
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Get Hit 2_22_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Get Hit 2_23_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Get Hit 2_24_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_01_ 0" x="106" y="619" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_02_ 0" x="309" y="643" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_03_ 0" x="257" y="621" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_04_ 0" x="483" y="621" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_05_ 0" x="105" y="641" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_06_ 1" x="597" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_07_ 1" x="620" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_08_ 1" x="643" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_09_ 1" x="666" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_10_ 1" x="547" y="817" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_11_ 2" x="424" y="417" w="30" h="57" pX="0.5" pY="0.5" oX="100" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_12_ 2" x="348" y="448" w="30" h="57" pX="0.5" pY="0.5" oX="100" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_13_ 2" x="503" y="286" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_14_ 2" x="457" y="448" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_15_ 2" x="453" y="60" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_16_ 3" x="0" y="576" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_17_ 3" x="483" y="574" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_18_ 3" x="536" y="238" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_19_ 3" x="571" y="285" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_20_ 3" x="571" y="385" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_21_ 4" x="54" y="811" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_22_ 4" x="557" y="772" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_23_ 4" x="584" y="772" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_24_ 4" x="783" y="694" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_25_ 4" x="27" y="811" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_26_ 5" x="480" y="260" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_27_ 5" x="484" y="88" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_28_ 5" x="484" y="62" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_29_ 5" x="484" y="36" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_30_ 5" x="401" y="474" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_31_ 6" x="168" y="508" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_32_ 6" x="479" y="385" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_33_ 6" x="573" y="54" w="55" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_34_ 6" x="55" y="542" w="55" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_35_ 6" x="479" y="351" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_36_ 7" x="254" y="120" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_37_ 7" x="264" y="183" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_38_ 7" x="0" y="251" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_39_ 7" x="297" y="301" w="22" h="62" pX="0.5" pY="0.5" oX="95" oY="54" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 2_40_ 7" x="265" y="0" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_01_ 0" x="723" y="255" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_02_ 0" x="709" y="110" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_03_ 0" x="709" y="671" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_04_ 0" x="660" y="528" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_05_ 0" x="709" y="716" w="19" h="45" pX="0.5" pY="0.5" oX="76" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_06_ 1" x="139" y="332" w="62" h="25" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_07_ 1" x="77" y="332" w="62" h="25" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_08_ 1" x="0" y="376" w="61" h="25" pX="0.5" pY="0.5" oX="69" oY="71" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_09_ 1" x="106" y="307" w="62" h="25" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_10_ 1" x="170" y="291" w="62" h="25" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_11_ 2" x="200" y="362" w="61" h="26" pX="0.5" pY="0.5" oX="75" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_12_ 2" x="261" y="363" w="61" h="26" pX="0.5" pY="0.5" oX="75" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_13_ 2" x="44" y="301" w="62" h="26" pX="0.5" pY="0.5" oX="74" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_14_ 2" x="322" y="360" w="61" h="26" pX="0.5" pY="0.5" oX="75" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_15_ 2" x="0" y="401" w="61" h="26" pX="0.5" pY="0.5" oX="75" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_16_ 3" x="608" y="332" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_17_ 3" x="536" y="570" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_18_ 3" x="540" y="177" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_19_ 3" x="19" y="623" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_20_ 3" x="0" y="623" w="19" h="53" pX="0.5" pY="0.5" oX="109" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_21_ 4" x="164" y="542" w="51" h="26" pX="0.5" pY="0.5" oX="61" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_22_ 4" x="627" y="162" w="51" h="26" pX="0.5" pY="0.5" oX="61" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_23_ 4" x="628" y="35" w="51" h="25" pX="0.5" pY="0.5" oX="61" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_24_ 4" x="454" y="643" w="51" h="25" pX="0.5" pY="0.5" oX="61" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_25_ 4" x="627" y="188" w="51" h="26" pX="0.5" pY="0.5" oX="61" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_26_ 5" x="728" y="448" w="34" h="43" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_27_ 5" x="728" y="685" w="34" h="43" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_28_ 5" x="728" y="534" w="33" h="43" pX="0.5" pY="0.5" oX="95" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_29_ 5" x="728" y="616" w="34" h="43" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_30_ 5" x="728" y="491" w="34" h="43" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_31_ 6" x="772" y="296" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_32_ 6" x="772" y="444" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_33_ 6" x="762" y="256" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_34_ 6" x="772" y="376" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_35_ 6" x="770" y="727" w="39" h="40" pX="0.5" pY="0.5" oX="76" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_36_ 7" x="393" y="508" w="55" h="34" pX="0.5" pY="0.5" oX="89" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_37_ 7" x="112" y="508" w="56" h="34" pX="0.5" pY="0.5" oX="88" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_38_ 7" x="56" y="508" w="56" h="34" pX="0.5" pY="0.5" oX="88" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_39_ 7" x="0" y="508" w="56" h="34" pX="0.5" pY="0.5" oX="88" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 3_40_ 7" x="279" y="505" w="55" h="34" pX="0.5" pY="0.5" oX="89" oY="86" oW="200" oH="200"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 4_01_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 4_02_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 4_03_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
@@ -1599,6 +1279,54 @@ r => 'y' if sprite is rotated-->
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 4_38_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 4_39_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle 4_40_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_01_ 0" x="369" y="594" w="17" h="29" pX="0.5" pY="0.5" oX="76" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_02_ 0" x="0" y="773" w="18" h="38" pX="0.5" pY="0.5" oX="85" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_03_ 0" x="351" y="772" w="33" h="34" pX="0.5" pY="0.5" oX="82" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_04_ 1" x="305" y="411" w="59" h="37" pX="0.5" pY="0.5" oX="67" oY="66" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_05_ 1" x="348" y="181" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_06_ 1" x="510" y="419" w="55" h="25" pX="0.5" pY="0.5" oX="62" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_07_ 2" x="305" y="389" w="60" h="22" pX="0.5" pY="0.5" oX="78" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_08_ 2" x="15" y="332" w="62" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_09_ 2" x="484" y="0" w="56" h="36" pX="0.5" pY="0.5" oX="87" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_10_ 3" x="378" y="427" w="23" h="57" pX="0.5" pY="0.5" oX="105" oY="65" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_11_ 3" x="430" y="180" w="12" h="60" pX="0.5" pY="0.5" oX="107" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_12_ 3" x="540" y="124" w="28" h="53" pX="0.5" pY="0.5" oX="95" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_13_ 4" x="571" y="161" w="54" h="26" pX="0.5" pY="0.5" oX="63" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_14_ 4" x="406" y="807" w="27" h="26" pX="0.5" pY="0.5" oX="67" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_15_ 4" x="771" y="658" w="20" h="27" pX="0.5" pY="0.5" oX="74" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_16_ 5" x="535" y="340" w="33" h="53" pX="0.5" pY="0.5" oX="90" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_17_ 5" x="43" y="676" w="48" h="50" pX="0.5" pY="0.5" oX="78" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_18_ 5" x="92" y="449" w="58" h="41" pX="0.5" pY="0.5" oX="69" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_19_ 6" x="92" y="773" w="37" h="34" pX="0.5" pY="0.5" oX="82" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_20_ 6" x="679" y="344" w="48" h="37" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_21_ 6" x="264" y="449" w="57" h="24" pX="0.5" pY="0.5" oX="78" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_22_ 7" x="571" y="124" w="54" h="37" pX="0.5" pY="0.5" oX="88" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_23_ 7" x="619" y="528" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 1_24_ 7" x="321" y="448" w="27" h="57" pX="0.5" pY="0.5" oX="104" oY="66" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_01_ 0" x="257" y="643" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_02_ 0" x="441" y="542" w="52" h="22" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_03_ 0" x="205" y="660" w="52" h="16" pX="0.5" pY="0.5" oX="82" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_04_ 1" x="684" y="790" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_05_ 1" x="791" y="767" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_06_ 1" x="791" y="794" w="23" h="27" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_07_ 2" x="444" y="295" w="30" h="56" pX="0.5" pY="0.5" oX="100" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_08_ 2" x="453" y="116" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_09_ 2" x="448" y="351" w="31" h="56" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_10_ 3" x="53" y="576" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_11_ 3" x="159" y="576" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_12_ 3" x="387" y="574" w="53" h="47" pX="0.5" pY="0.5" oX="70" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_13_ 4" x="0" y="811" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_14_ 4" x="657" y="763" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_15_ 4" x="764" y="767" w="27" h="33" pX="0.5" pY="0.5" oX="87" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_16_ 5" x="484" y="114" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_17_ 5" x="484" y="140" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_18_ 5" x="484" y="166" w="56" h="26" pX="0.5" pY="0.5" oX="62" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_19_ 6" x="480" y="192" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_20_ 6" x="480" y="226" w="56" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_21_ 6" x="0" y="542" w="55" h="34" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_22_ 7" x="22" y="251" w="22" h="63" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_23_ 7" x="263" y="301" w="17" h="62" pX="0.5" pY="0.5" oX="100" oY="54" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 2_24_ 7" x="280" y="301" w="17" h="62" pX="0.5" pY="0.5" oX="100" oY="54" oW="200" oH="200"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 3_01_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 3_02_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 3_03_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
@@ -1623,6 +1351,46 @@ r => 'y' if sprite is rotated-->
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 3_22_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 3_23_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle Fidget 3_24_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_01_ 0" x="783" y="523" w="18" h="38" pX="0.5" pY="0.5" oX="85" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_02_ 0" x="767" y="196" w="18" h="38" pX="0.5" pY="0.5" oX="85" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_03_ 0" x="792" y="616" w="18" h="39" pX="0.5" pY="0.5" oX="85" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_04_ 0" x="782" y="484" w="17" h="39" pX="0.5" pY="0.5" oX="85" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_05_ 0" x="792" y="655" w="18" h="39" pX="0.5" pY="0.5" oX="85" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_06_ 1" x="348" y="207" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_07_ 1" x="348" y="233" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_08_ 1" x="314" y="259" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_09_ 1" x="319" y="285" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_10_ 1" x="319" y="311" w="61" h="26" pX="0.5" pY="0.5" oX="62" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_11_ 2" x="349" y="0" w="62" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_12_ 2" x="319" y="337" w="61" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_13_ 2" x="139" y="357" w="61" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_14_ 2" x="61" y="376" w="61" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_15_ 2" x="61" y="399" w="61" h="23" pX="0.5" pY="0.5" oX="81" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_16_ 3" x="411" y="60" w="12" h="60" pX="0.5" pY="0.5" oX="107" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_17_ 3" x="398" y="259" w="12" h="60" pX="0.5" pY="0.5" oX="107" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_18_ 3" x="380" y="45" w="12" h="61" pX="0.5" pY="0.5" oX="107" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_19_ 3" x="392" y="45" w="13" h="61" pX="0.5" pY="0.5" oX="107" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_20_ 3" x="437" y="60" w="12" h="60" pX="0.5" pY="0.5" oX="107" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_21_ 4" x="570" y="817" w="27" h="26" pX="0.5" pY="0.5" oX="67" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_22_ 4" x="520" y="806" w="27" h="27" pX="0.5" pY="0.5" oX="67" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_23_ 4" x="236" y="809" w="27" h="27" pX="0.5" pY="0.5" oX="67" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_24_ 4" x="433" y="807" w="27" h="26" pX="0.5" pY="0.5" oX="67" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_25_ 4" x="460" y="806" w="27" h="27" pX="0.5" pY="0.5" oX="67" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_26_ 5" x="408" y="675" w="49" h="49" pX="0.5" pY="0.5" oX="78" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_27_ 5" x="679" y="0" w="49" h="49" pX="0.5" pY="0.5" oX="78" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_28_ 5" x="292" y="675" w="49" h="50" pX="0.5" pY="0.5" oX="78" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_29_ 5" x="628" y="60" w="47" h="51" pX="0.5" pY="0.5" oX="79" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_30_ 5" x="171" y="676" w="49" h="50" pX="0.5" pY="0.5" oX="78" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_31_ 6" x="679" y="49" w="48" h="37" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_32_ 6" x="679" y="592" w="48" h="38" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_33_ 6" x="679" y="305" w="48" h="39" pX="0.5" pY="0.5" oX="78" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_34_ 6" x="388" y="728" w="47" h="38" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_35_ 6" x="679" y="381" w="48" h="38" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_36_ 7" x="624" y="430" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_37_ 7" x="627" y="380" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_38_ 7" x="627" y="256" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_39_ 7" x="483" y="675" w="42" h="49" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Idle_40_ 7" x="251" y="676" w="41" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Interact_01_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Interact_02_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Interact_03_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
@@ -1663,6 +1431,46 @@ r => 'y' if sprite is rotated-->
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Interact_38_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Interact_39_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Interact_40_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_01_ 0" x="709" y="761" w="19" h="36" pX="0.5" pY="0.5" oX="77" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_02_ 0" x="38" y="623" w="24" h="52" pX="0.5" pY="0.5" oX="71" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_03_ 0" x="668" y="373" w="11" h="42" pX="0.5" pY="0.5" oX="73" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_04_ 0" x="265" y="576" w="53" h="36" pX="0.5" pY="0.5" oX="62" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_05_ 0" x="384" y="772" w="27" h="34" pX="0.5" pY="0.5" oX="67" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_06_ 1" x="287" y="0" w="62" h="31" pX="0.5" pY="0.5" oX="57" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_07_ 1" x="286" y="129" w="62" h="25" pX="0.5" pY="0.5" oX="73" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_08_ 1" x="64" y="200" w="64" h="24" pX="0.5" pY="0.5" oX="60" oY="66" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_09_ 1" x="171" y="489" w="31" h="19" pX="0.5" pY="0.5" oX="49" oY="57" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_10_ 1" x="0" y="427" w="59" h="22" pX="0.5" pY="0.5" oX="53" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_11_ 2" x="77" y="362" w="62" h="14" pX="0.5" pY="0.5" oX="85" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_12_ 2" x="286" y="154" w="62" h="27" pX="0.5" pY="0.5" oX="70" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_13_ 2" x="190" y="249" w="63" h="27" pX="0.5" pY="0.5" oX="81" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_14_ 2" x="425" y="0" w="32" h="60" pX="0.5" pY="0.5" oX="124" oY="58" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_15_ 2" x="122" y="414" w="59" h="35" pX="0.5" pY="0.5" oX="92" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_16_ 3" x="0" y="449" w="18" h="59" pX="0.5" pY="0.5" oX="110" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_17_ 3" x="742" y="168" w="24" h="44" pX="0.5" pY="0.5" oX="109" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_18_ 3" x="264" y="63" w="11" h="56" pX="0.5" pY="0.5" oX="120" oY="61" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_19_ 3" x="678" y="159" w="47" h="45" pX="0.5" pY="0.5" oX="95" oY="29" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_20_ 3" x="424" y="240" w="20" h="59" pX="0.5" pY="0.5" oX="118" oY="49" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_21_ 4" x="129" y="781" w="37" h="27" pX="0.5" pY="0.5" oX="57" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_22_ 4" x="244" y="413" w="58" h="36" pX="0.5" pY="0.5" oX="62" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_23_ 4" x="728" y="415" w="44" h="33" pX="0.5" pY="0.5" oX="56" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_24_ 4" x="261" y="772" w="24" h="36" pX="0.5" pY="0.5" oX="56" oY="66" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_25_ 4" x="285" y="807" w="31" h="31" pX="0.5" pY="0.5" oX="55" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_26_ 5" x="441" y="570" w="42" h="53" pX="0.5" pY="0.5" oX="80" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_27_ 5" x="762" y="616" w="30" h="42" pX="0.5" pY="0.5" oX="102" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_28_ 5" x="176" y="726" w="46" h="46" pX="0.5" pY="0.5" oX="89" oY="55" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_29_ 5" x="571" y="217" w="54" h="21" pX="0.5" pY="0.5" oX="60" oY="39" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_30_ 5" x="212" y="576" w="53" h="42" pX="0.5" pY="0.5" oX="81" oY="47" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_31_ 6" x="773" y="36" w="42" h="42" pX="0.5" pY="0.5" oX="82" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_32_ 6" x="236" y="726" w="41" h="45" pX="0.5" pY="0.5" oX="72" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_33_ 6" x="224" y="506" w="55" h="36" pX="0.5" pY="0.5" oX="69" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_34_ 6" x="573" y="0" w="55" h="54" pX="0.5" pY="0.5" oX="90" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_35_ 6" x="201" y="316" w="62" h="46" pX="0.5" pY="0.5" oX="71" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_36_ 7" x="627" y="214" w="50" h="42" pX="0.5" pY="0.5" oX="97" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_37_ 7" x="264" y="473" w="57" h="22" pX="0.5" pY="0.5" oX="85" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_38_ 7" x="665" y="718" w="44" h="45" pX="0.5" pY="0.5" oX="104" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_39_ 7" x="424" y="358" w="24" h="59" pX="0.5" pY="0.5" oX="126" oY="39" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Jump_40_ 7" x="448" y="239" w="32" h="56" pX="0.5" pY="0.5" oX="118" oY="67" oW="200" oH="200"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_MG-Rifle-Xbow Attack 1_01_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_MG-Rifle-Xbow Attack 1_02_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_MG-Rifle-Xbow Attack 1_03_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
@@ -2079,6 +1887,70 @@ r => 'y' if sprite is rotated-->
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Riding 3_06_ 5" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Riding 3_07_ 6" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Riding 3_08_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_01_ 0" x="559" y="177" w="12" h="39" pX="0.5" pY="0.5" oX="75" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_02_ 0" x="725" y="199" w="17" h="43" pX="0.5" pY="0.5" oX="69" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_03_ 0" x="742" y="80" w="18" h="44" pX="0.5" pY="0.5" oX="70" oY="66" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_04_ 0" x="762" y="484" w="20" h="39" pX="0.5" pY="0.5" oX="77" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_05_ 0" x="474" y="295" w="29" h="56" pX="0.5" pY="0.5" oX="84" oY="67" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_06_ 0" x="602" y="613" w="37" h="51" pX="0.5" pY="0.5" oX="82" oY="71" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_07_ 0" x="285" y="772" w="32" h="35" pX="0.5" pY="0.5" oX="76" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_08_ 0" x="505" y="643" w="23" h="31" pX="0.5" pY="0.5" oX="74" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_09_ 1" x="15" y="355" w="62" h="21" pX="0.5" pY="0.5" oX="67" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_10_ 1" x="348" y="131" w="62" h="21" pX="0.5" pY="0.5" oX="77" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_11_ 1" x="244" y="389" w="61" h="24" pX="0.5" pY="0.5" oX="78" oY="59" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_12_ 1" x="317" y="785" w="34" h="24" pX="0.5" pY="0.5" oX="59" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_13_ 1" x="240" y="772" w="21" h="37" pX="0.5" pY="0.5" oX="72" oY="55" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_14_ 1" x="537" y="772" w="20" h="34" pX="0.5" pY="0.5" oX="65" oY="61" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_15_ 1" x="487" y="802" w="33" h="23" pX="0.5" pY="0.5" oX="59" oY="64" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_16_ 1" x="59" y="427" w="59" h="22" pX="0.5" pY="0.5" oX="61" oY="67" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_17_ 2" x="44" y="266" w="63" h="35" pX="0.5" pY="0.5" oX="75" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_18_ 2" x="200" y="184" w="64" h="40" pX="0.5" pY="0.5" oX="65" oY="75" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_19_ 2" x="200" y="0" w="65" h="41" pX="0.5" pY="0.5" oX="65" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_20_ 2" x="318" y="594" w="51" h="39" pX="0.5" pY="0.5" oX="94" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_21_ 2" x="150" y="449" w="21" h="57" pX="0.5" pY="0.5" oX="112" oY="58" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_22_ 2" x="424" y="299" w="20" h="59" pX="0.5" pY="0.5" oX="119" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_23_ 2" x="627" y="111" w="42" h="51" pX="0.5" pY="0.5" oX="103" oY="75" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_24_ 2" x="365" y="386" w="59" h="41" pX="0.5" pY="0.5" oX="84" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_25_ 3" x="276" y="63" w="9" h="60" pX="0.5" pY="0.5" oX="121" oY="58" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_26_ 3" x="522" y="444" w="17" h="55" pX="0.5" pY="0.5" oX="119" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_27_ 3" x="540" y="56" w="19" h="54" pX="0.5" pY="0.5" oX="116" oY="65" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_28_ 3" x="223" y="120" w="15" h="64" pX="0.5" pY="0.5" oX="113" oY="52" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_29_ 3" x="780" y="78" w="25" h="40" pX="0.5" pY="0.5" oX="95" oY="44" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_30_ 3" x="220" y="676" w="31" h="50" pX="0.5" pY="0.5" oX="91" oY="44" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_31_ 3" x="383" y="320" w="28" h="60" pX="0.5" pY="0.5" oX="101" oY="47" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_32_ 3" x="363" y="45" w="17" h="61" pX="0.5" pY="0.5" oX="113" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_33_ 4" x="728" y="344" w="44" h="28" pX="0.5" pY="0.5" oX="61" oY="71" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_34_ 4" x="106" y="594" w="53" h="25" pX="0.5" pY="0.5" oX="62" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_35_ 4" x="512" y="504" w="55" h="26" pX="0.5" pY="0.5" oX="62" oY="65" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_36_ 4" x="92" y="807" w="31" h="26" pX="0.5" pY="0.5" oX="62" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_37_ 4" x="401" y="427" w="22" h="46" pX="0.5" pY="0.5" oX="70" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_38_ 4" x="521" y="772" w="16" h="34" pX="0.5" pY="0.5" oX="73" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_39_ 4" x="800" y="196" w="15" h="26" pX="0.5" pY="0.5" oX="71" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_40_ 4" x="689" y="817" w="27" h="25" pX="0.5" pY="0.5" oX="64" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_41_ 5" x="85" y="726" w="44" h="47" pX="0.5" pY="0.5" oX="95" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_42_ 5" x="589" y="238" w="38" h="47" pX="0.5" pY="0.5" oX="104" oY="51" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_43_ 5" x="668" y="256" w="35" h="49" pX="0.5" pY="0.5" oX="105" oY="55" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_44_ 5" x="62" y="623" w="43" h="52" pX="0.5" pY="0.5" oX="81" oY="51" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_45_ 5" x="209" y="808" w="27" h="28" pX="0.5" pY="0.5" oX="77" oY="50" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_46_ 5" x="684" y="763" w="25" h="27" pX="0.5" pY="0.5" oX="69" oY="50" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_47_ 5" x="679" y="548" w="48" h="44" pX="0.5" pY="0.5" oX="72" oY="50" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_48_ 5" x="403" y="623" w="51" h="46" pX="0.5" pY="0.5" oX="82" oY="55" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_49_ 6" x="606" y="664" w="49" h="35" pX="0.5" pY="0.5" oX="65" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_50_ 6" x="728" y="728" w="42" h="38" pX="0.5" pY="0.5" oX="62" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_51_ 6" x="771" y="576" w="39" h="40" pX="0.5" pY="0.5" oX="64" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_52_ 6" x="527" y="728" w="46" h="44" pX="0.5" pY="0.5" oX="80" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_53_ 6" x="457" y="0" w="27" h="57" pX="0.5" pY="0.5" oX="100" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_54_ 6" x="369" y="623" w="34" h="51" pX="0.5" pY="0.5" oX="101" oY="75" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_55_ 6" x="677" y="214" w="48" h="41" pX="0.5" pY="0.5" oX="85" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_56_ 6" x="171" y="449" w="57" h="40" pX="0.5" pY="0.5" oX="71" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_57_ 7" x="0" y="676" w="43" h="50" pX="0.5" pY="0.5" oX="100" oY="75" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_58_ 7" x="571" y="470" w="53" h="39" pX="0.5" pY="0.5" oX="89" oY="78" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_59_ 7" x="457" y="504" w="55" h="38" pX="0.5" pY="0.5" oX="87" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_60_ 7" x="44" y="449" w="31" h="58" pX="0.5" pY="0.5" oX="112" oY="68" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_61_ 7" x="580" y="613" w="22" h="51" pX="0.5" pY="0.5" oX="113" oY="47" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_62_ 7" x="423" y="60" w="14" h="60" pX="0.5" pY="0.5" oX="118" oY="47" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_63_ 7" x="0" y="314" w="15" h="62" pX="0.5" pY="0.5" oX="119" oY="57" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Running_64_ 7" x="540" y="0" w="33" h="56" pX="0.5" pY="0.5" oX="108" oY="71" oW="200" oH="200"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Sitting_01_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Sitting_02_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Sitting_03_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
@@ -2103,6 +1975,70 @@ r => 'y' if sprite is rotated-->
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Sitting_22_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Sitting_23_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Sitting_24_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_01_ 0" x="761" y="534" w="22" h="42" pX="0.5" pY="0.5" oX="86" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_02_ 0" x="742" y="256" w="20" h="43" pX="0.5" pY="0.5" oX="84" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_03_ 0" x="703" y="255" w="20" h="45" pX="0.5" pY="0.5" oX="85" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_04_ 0" x="539" y="444" w="18" h="54" pX="0.5" pY="0.5" oX="83" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_05_ 0" x="411" y="0" w="14" h="60" pX="0.5" pY="0.5" oX="82" oY="53" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_06_ 0" x="378" y="484" w="15" h="55" pX="0.5" pY="0.5" oX="85" oY="61" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_07_ 0" x="391" y="675" w="17" h="50" pX="0.5" pY="0.5" oX="86" oY="67" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_08_ 0" x="742" y="124" w="22" h="44" pX="0.5" pY="0.5" oX="86" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_09_ 1" x="571" y="187" w="54" h="30" pX="0.5" pY="0.5" oX="75" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_10_ 1" x="292" y="725" w="47" h="26" pX="0.5" pY="0.5" oX="79" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_11_ 1" x="63" y="241" w="63" h="25" pX="0.5" pY="0.5" oX="85" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_12_ 1" x="127" y="236" w="63" h="25" pX="0.5" pY="0.5" oX="91" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_13_ 1" x="122" y="389" w="61" h="25" pX="0.5" pY="0.5" oX="99" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_14_ 1" x="191" y="224" w="63" h="25" pX="0.5" pY="0.5" oX="92" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_15_ 1" x="0" y="200" w="64" h="25" pX="0.5" pY="0.5" oX="88" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_16_ 1" x="286" y="76" w="62" h="26" pX="0.5" pY="0.5" oX="81" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_17_ 2" x="454" y="419" w="56" h="29" pX="0.5" pY="0.5" oX="73" oY="94" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_18_ 2" x="287" y="55" w="62" h="21" pX="0.5" pY="0.5" oX="64" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_19_ 2" x="64" y="224" w="63" h="17" pX="0.5" pY="0.5" oX="56" oY="100" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_20_ 2" x="107" y="281" w="63" h="26" pX="0.5" pY="0.5" oX="50" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_21_ 2" x="183" y="389" w="61" h="33" pX="0.5" pY="0.5" oX="45" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_22_ 2" x="0" y="225" w="63" h="26" pX="0.5" pY="0.5" oX="49" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_23_ 2" x="128" y="200" w="63" h="20" pX="0.5" pY="0.5" oX="53" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_24_ 2" x="349" y="23" w="62" h="22" pX="0.5" pY="0.5" oX="61" oY="98" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_25_ 3" x="238" y="120" w="16" h="63" pX="0.5" pY="0.5" oX="103" oY="71" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_26_ 3" x="383" y="259" w="15" h="61" pX="0.5" pY="0.5" oX="106" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_27_ 3" x="557" y="444" w="14" h="54" pX="0.5" pY="0.5" oX="105" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_28_ 3" x="725" y="155" w="17" h="44" pX="0.5" pY="0.5" oX="105" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_29_ 3" x="265" y="542" w="14" h="34" pX="0.5" pY="0.5" oX="108" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_30_ 3" x="277" y="726" w="13" h="44" pX="0.5" pY="0.5" oX="106" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_31_ 3" x="665" y="430" w="14" h="50" pX="0.5" pY="0.5" oX="105" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_32_ 3" x="75" y="449" w="17" h="58" pX="0.5" pY="0.5" oX="102" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_33_ 4" x="166" y="781" w="37" h="27" pX="0.5" pY="0.5" oX="78" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_34_ 4" x="203" y="781" w="37" h="27" pX="0.5" pY="0.5" oX="78" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_35_ 4" x="487" y="770" w="34" h="32" pX="0.5" pY="0.5" oX="84" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_36_ 4" x="639" y="602" w="40" h="49" pX="0.5" pY="0.5" oX="87" oY="64" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_37_ 4" x="557" y="675" w="49" h="49" pX="0.5" pY="0.5" oX="88" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_38_ 4" x="655" y="671" w="45" h="47" pX="0.5" pY="0.5" oX="85" oY="65" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_39_ 4" x="728" y="372" w="44" h="43" pX="0.5" pY="0.5" oX="84" oY="70" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_40_ 4" x="728" y="766" w="36" h="32" pX="0.5" pY="0.5" oX="82" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_41_ 5" x="611" y="781" w="24" h="26" pX="0.5" pY="0.5" oX="85" oY="69" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_42_ 5" x="158" y="623" w="47" h="52" pX="0.5" pY="0.5" oX="90" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_43_ 5" x="512" y="530" w="54" h="40" pX="0.5" pY="0.5" oX="92" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_44_ 5" x="388" y="542" w="53" h="30" pX="0.5" pY="0.5" oX="99" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_45_ 5" x="619" y="756" w="38" h="25" pX="0.5" pY="0.5" oX="112" oY="94" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_46_ 5" x="573" y="757" w="45" h="15" pX="0.5" pY="0.5" oX="105" oY="105" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_47_ 5" x="628" y="0" w="51" h="35" pX="0.5" pY="0.5" oX="96" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_48_ 5" x="566" y="530" w="53" h="44" pX="0.5" pY="0.5" oX="88" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_49_ 6" x="675" y="86" w="47" h="24" pX="0.5" pY="0.5" oX="72" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_50_ 6" x="573" y="728" w="46" h="29" pX="0.5" pY="0.5" oX="68" oY="87" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_51_ 6" x="571" y="432" w="53" h="38" pX="0.5" pY="0.5" oX="59" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_52_ 6" x="279" y="539" w="55" h="37" pX="0.5" pY="0.5" oX="53" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_53_ 6" x="91" y="676" w="42" h="50" pX="0.5" pY="0.5" oX="55" oY="69" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_54_ 6" x="555" y="574" w="52" h="39" pX="0.5" pY="0.5" oX="54" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_55_ 6" x="205" y="623" w="52" h="37" pX="0.5" pY="0.5" oX="57" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_56_ 6" x="334" y="568" w="53" h="26" pX="0.5" pY="0.5" oX="63" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_57_ 7" x="534" y="286" w="37" h="54" pX="0.5" pY="0.5" oX="89" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_58_ 7" x="42" y="726" w="43" h="47" pX="0.5" pY="0.5" oX="83" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_59_ 7" x="728" y="300" w="41" h="44" pX="0.5" pY="0.5" oX="79" oY="92" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_60_ 7" x="772" y="121" w="41" h="36" pX="0.5" pY="0.5" oX="77" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_61_ 7" x="253" y="257" w="49" h="19" pX="0.5" pY="0.5" oX="68" oY="110" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_62_ 7" x="334" y="505" w="44" h="33" pX="0.5" pY="0.5" oX="74" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_63_ 7" x="728" y="577" w="43" h="39" pX="0.5" pY="0.5" oX="77" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Sneaking_64_ 7" x="669" y="111" w="40" h="48" pX="0.5" pY="0.5" oX="82" oY="88" oW="200" oH="200"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Talking 1_01_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Talking 1_02_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Talking 1_03_ 0" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
@@ -2335,4 +2271,68 @@ r => 'y' if sprite is rotated-->
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Use Item_22_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Use Item_23_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
   <sprite n="Weapons(Addon_Female_Axe1_Female)_Use Item_24_ 7" x="0" y="0" w="200" h="200" pX="0.5" pY="0.5"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_01_ 0" x="222" y="726" w="14" h="45" pX="0.5" pY="0.5" oX="83" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_02_ 0" x="411" y="298" w="13" h="56" pX="0.5" pY="0.5" oX="84" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_03_ 0" x="410" y="240" w="14" h="58" pX="0.5" pY="0.5" oX="81" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_04_ 0" x="454" y="172" w="22" h="54" pX="0.5" pY="0.5" oX="80" oY="77" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_05_ 0" x="799" y="484" w="16" h="38" pX="0.5" pY="0.5" oX="81" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_06_ 0" x="760" y="80" w="20" h="41" pX="0.5" pY="0.5" oX="80" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_07_ 0" x="762" y="685" w="21" h="42" pX="0.5" pY="0.5" oX="80" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_08_ 0" x="728" y="80" w="14" h="40" pX="0.5" pY="0.5" oX="82" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_09_ 1" x="200" y="97" w="64" h="23" pX="0.5" pY="0.5" oX="61" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_10_ 1" x="200" y="72" w="64" h="25" pX="0.5" pY="0.5" oX="70" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_11_ 1" x="252" y="276" w="62" h="25" pX="0.5" pY="0.5" oX="73" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_12_ 1" x="286" y="102" w="62" h="27" pX="0.5" pY="0.5" oX="68" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_13_ 1" x="287" y="31" w="62" h="24" pX="0.5" pY="0.5" oX="55" oY="70" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_14_ 1" x="619" y="728" w="46" h="28" pX="0.5" pY="0.5" oX="49" oY="64" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_15_ 1" x="728" y="44" w="45" h="36" pX="0.5" pY="0.5" oX="49" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_16_ 1" x="773" y="0" w="42" h="36" pX="0.5" pY="0.5" oX="52" oY="60" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_17_ 2" x="128" y="220" w="63" h="16" pX="0.5" pY="0.5" oX="80" oY="99" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_18_ 2" x="189" y="276" w="63" h="15" pX="0.5" pY="0.5" oX="71" oY="102" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_19_ 2" x="126" y="261" w="63" h="20" pX="0.5" pY="0.5" oX="69" oY="101" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_20_ 2" x="286" y="229" w="62" h="28" pX="0.5" pY="0.5" oX="75" oY="88" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_21_ 2" x="348" y="107" w="62" h="24" pX="0.5" pY="0.5" oX="87" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_22_ 2" x="567" y="88" w="54" h="36" pX="0.5" pY="0.5" oX="101" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_23_ 2" x="728" y="0" w="45" h="44" pX="0.5" pY="0.5" oX="110" oY="80" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_24_ 2" x="215" y="542" w="50" h="34" pX="0.5" pY="0.5" oX="103" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_25_ 3" x="276" y="123" w="10" h="55" pX="0.5" pY="0.5" oX="111" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_26_ 3" x="668" y="330" w="11" h="43" pX="0.5" pY="0.5" oX="110" oY="76" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_27_ 3" x="801" y="157" w="13" h="39" pX="0.5" pY="0.5" oX="110" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_28_ 3" x="785" y="196" w="15" h="38" pX="0.5" pY="0.5" oX="109" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_29_ 3" x="442" y="180" w="12" h="59" pX="0.5" pY="0.5" oX="112" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_30_ 3" x="200" y="120" w="13" h="64" pX="0.5" pY="0.5" oX="112" oY="45" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_31_ 3" x="349" y="45" w="14" h="62" pX="0.5" pY="0.5" oX="110" oY="41" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_32_ 3" x="213" y="120" w="10" h="64" pX="0.5" pY="0.5" oX="113" oY="45" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_33_ 4" x="180" y="809" w="29" h="27" pX="0.5" pY="0.5" oX="63" oY="91" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_34_ 4" x="129" y="726" w="47" h="47" pX="0.5" pY="0.5" oX="69" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_35_ 4" x="341" y="675" w="50" h="46" pX="0.5" pY="0.5" oX="69" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_36_ 4" x="133" y="676" w="38" h="50" pX="0.5" pY="0.5" oX="70" oY="73" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_37_ 4" x="346" y="809" w="30" h="26" pX="0.5" pY="0.5" oX="60" oY="89" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_38_ 4" x="411" y="781" w="34" h="26" pX="0.5" pY="0.5" oX="56" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_39_ 4" x="716" y="800" w="26" h="25" pX="0.5" pY="0.5" oX="58" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_40_ 4" x="535" y="393" w="36" h="25" pX="0.5" pY="0.5" oX="56" oY="81" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_41_ 5" x="679" y="467" w="48" h="43" pX="0.5" pY="0.5" oX="81" oY="63" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_42_ 5" x="341" y="721" w="47" h="24" pX="0.5" pY="0.5" oX="87" oY="83" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_43_ 5" x="728" y="659" w="43" h="26" pX="0.5" pY="0.5" oX="91" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_44_ 5" x="334" y="539" w="54" h="29" pX="0.5" pY="0.5" oX="82" oY="74" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_45_ 5" x="679" y="419" w="48" h="48" pX="0.5" pY="0.5" oX="78" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_46_ 5" x="535" y="623" w="45" h="52" pX="0.5" pY="0.5" oX="73" oY="47" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_47_ 5" x="153" y="809" w="27" h="30" pX="0.5" pY="0.5" oX="71" oY="44" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_48_ 5" x="228" y="449" w="36" h="57" pX="0.5" pY="0.5" oX="76" oY="45" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_49_ 6" x="679" y="510" w="48" h="38" pX="0.5" pY="0.5" oX="76" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_50_ 6" x="481" y="728" w="46" h="42" pX="0.5" pY="0.5" oX="71" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_51_ 6" x="0" y="726" w="42" h="47" pX="0.5" pY="0.5" oX="71" oY="84" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_52_ 6" x="110" y="542" w="54" h="34" pX="0.5" pY="0.5" oX="68" oY="93" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_53_ 6" x="679" y="630" w="48" h="41" pX="0.5" pY="0.5" oX="79" oY="86" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_54_ 6" x="339" y="745" w="46" h="27" pX="0.5" pY="0.5" oX="86" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_55_ 6" x="772" y="416" w="40" h="28" pX="0.5" pY="0.5" oX="93" oY="96" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_56_ 6" x="56" y="773" w="36" h="38" pX="0.5" pY="0.5" oX="92" oY="82" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_57_ 7" x="435" y="728" w="46" h="42" pX="0.5" pY="0.5" oX="96" oY="79" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_58_ 7" x="606" y="699" w="47" h="29" pX="0.5" pY="0.5" oX="88" oY="90" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_59_ 7" x="624" y="480" w="50" h="24" pX="0.5" pY="0.5" oX="86" oY="95" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_60_ 7" x="18" y="773" w="38" h="37" pX="0.5" pY="0.5" oX="96" oY="85" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_61_ 7" x="627" y="330" w="41" h="50" pX="0.5" pY="0.5" oX="104" oY="72" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_62_ 7" x="488" y="448" w="34" h="56" pX="0.5" pY="0.5" oX="114" oY="62" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_63_ 7" x="18" y="449" w="26" h="59" pX="0.5" pY="0.5" oX="121" oY="56" oW="200" oH="200"/>
+  <sprite n="Weapons(Addon_Female_Axe1_Female)_Walking_64_ 7" x="571" y="332" w="37" h="53" pX="0.5" pY="0.5" oX="112" oY="63" oW="200" oH="200"/>
 </TextureAtlas>

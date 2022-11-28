@@ -100,7 +100,15 @@ namespace Utilities {
 		return rect;
 	}
 
-	
+	SDL_FRect Centre_Rect_On_Position(SDL_FRect &frect, float &x, float &y){
+        SDL_FRect rect;
+        rect.x = x - (frect.w / 2.0f);
+        rect.y = y - (frect.h / 2.0f);
+        rect.w = frect.w;
+        rect.h = frect.h;
+
+        return rect;
+    }
 
 	SDL_Point Check_Collision_Rects(SDL_Rect &rect1, SDL_Rect &rect2) {
 		
@@ -140,4 +148,16 @@ namespace Utilities {
 		//}
 		//return false;
 	}
+
+
+    SDL_FRect Scale_Rect(SDL_Rect& clippedSprite, float& scale) {
+        SDL_FRect fScaledImage = SDL_Rect_To_SDL_FRect(clippedSprite);
+        fScaledImage = {
+                fScaledImage.x - (fScaledImage.w * scale),
+                fScaledImage.y - (fScaledImage.h * scale),
+                fScaledImage.w * scale,
+                fScaledImage.h * scale
+        };
+        return fScaledImage;
+    }
 }

@@ -42988,7 +42988,7 @@ public:
             break;
         }
 
-        // if it's dead, it must be notified and removed immediately
+        // if it's dying, it must be notified and removed immediately
         switch(current) {
         case state::SUCCEEDED:
             next(std::integral_constant<state, state::SUCCEEDED>{});
@@ -43337,7 +43337,7 @@ public:
             break;
         }
 
-        // if it's dead, it must be notified and removed immediately
+        // if it's dying, it must be notified and removed immediately
         switch(current) {
         case state::SUCCEEDED:
             next(std::integral_constant<state, state::SUCCEEDED>{});

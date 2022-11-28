@@ -7,9 +7,9 @@
 #include "entity_control.h"
 
 namespace Input_Control {
-	    /// cand probaby merge the routine with Component::Item_Pickup and the normal mouse move, they are almost the same
+	    /// cand probaby merge the routine with Component::Pickup_Item and the normal mouse move, they are almost the same
 	void Pick_Up_Item_Order(entt::registry& zone, entt::entity& entity, entt::entity& Item_ID, float& x, float& y) {
-		zone.emplace_or_replace<Component::Item_Pickup>(entity, Item_ID, x, y);
+		zone.emplace_or_replace<Component::Pickup_Item>(entity, Item_ID, x, y);
 		zone.emplace_or_replace<Component::Moving>(entity);
         zone.remove<Component::Mouse_Move>(entity);
 	}
@@ -26,14 +26,14 @@ namespace Input_Control {
 
         if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
                 ///pick up Item
-            Component::Item_Pickup itemData = { item_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
+            Component::Pickup_Item itemData = {item_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
             UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
 
             auto &action = zone.get<Component::Action>(player_ID);
             action.state = Component::idle;
 
             zone.remove<Component::Moving>(player_ID);
-            zone.remove<Component::Item_Pickup>(player_ID);
+            zone.remove<Component::Pickup_Item>(player_ID);
             return true;
         }
         else {
@@ -48,7 +48,7 @@ namespace Input_Control {
 			return true;
 		}
 
-        zone.remove<Component::Item_Pickup>(player_ID);
+        zone.remove<Component::Pickup_Item>(player_ID);
         zone.remove<Component::Moving>(player_ID);
         zone.remove<Player_Component::Attack_Move>(player_ID);
 
@@ -90,7 +90,7 @@ namespace Input_Control {
                         ///if player is next to the item
                     if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
                             ///pick up Item
-                        Component::Item_Pickup itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y,targetRadius.fRadius};
+                        Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
                         UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
                             ///stop movement
                         auto &action = zone.get<Component::Action>(player_ID);

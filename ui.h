@@ -169,15 +169,16 @@ namespace UI {
 
 			std::map<Item_Type, SDL_FRect>equippedItemsRect{
 				{ Item_Type::helm, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize} },
-				{ Item_Type::neck, {defaultScreenPosition.x + equipmentOffsetColumn1.x , defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+				{ Item_Type::amulet, {defaultScreenPosition.x + equipmentOffsetColumn1.x , defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 				{ Item_Type::shoulders, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::chest, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
-				{ Item_Type::weapon, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
+				{ Item_Type::mainhand, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::gloves, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::belt, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::legs, {defaultScreenPosition.x + equipmentOffsetColumn2.x,   defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
 				{ Item_Type::boots, {defaultScreenPosition.x + equipmentOffsetColumn2.x,  defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
-				{ Item_Type::shield, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  }
+				{ Item_Type::offhand, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  },
+				{ Item_Type::hair, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 800.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}  }
 			};
 		}
 
@@ -327,26 +328,33 @@ namespace UI {
             auto view = zone.view<Component::Input, Component::Position>();
             for (auto entity: view) {
                 auto &entityPosition = view.get<Component::Position>(entity);
-                auto &scale = zone.get<Component::Scale>(item_ID).scale;
+
                 auto &itemPosition = zone.get<Component::Position>(item_ID);
-                auto& offset = zone.get<Component::Sprite_Offset>(item_ID);
                 itemPosition = entityPosition;
-                zone.emplace<Ground_Item>(item_ID,
-                                          itemPosition.x - (offset.x),
-                                          itemPosition.y - (offset.y),
-                                          offset.x * 2.0f,
-                                          offset.y * 2.0f);
-                //adds to rendering with the main animation loop
-                zone.emplace_or_replace<Component::Direction>(item_ID, Component::Direction::W);
-                // to remove from rendering on mouse
+
+                auto &sheetData = zone.get<Component::Sprite_Sheet_Info>(item_ID);
+                auto direction = zone.emplace_or_replace<Component::Direction>(item_ID, (Component::Direction)(rand() % 7 + 1));
+                auto &clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList.at(sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(Component::dead).startFrame + (int)direction);
+
                 zone.remove<Component::On_Mouse>(item_ID);
-                //allows insertion into quad Trees
-                World::zone.get<Component::Action>(item_ID).state = Component::dead;
+                SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect.clip);
+                SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
+
+                World::zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
+                World::zone.emplace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, clipRect.clip.w, clipRect.clip.h);
+
+                World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
+
+                World::zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
+                World::zone.get<Component::Action>(item_ID).state = Component::dying;
                 World::zone.get<Component::Sprite_Sheet_Info>(item_ID).currentFrame = 0;
             }
         }
         isItemCurrentlyHeld = false;
 	}
+
+
+
 
 	void Pick_Up_Item_To_Mouse(entt::registry& zone, entt::entity& item_ID, bool& isItemCurrentlyHeld) {
 		if (isItemCurrentlyHeld == false) {
@@ -360,21 +368,20 @@ namespace UI {
 			Mouse::mouseItem = item_ID;
 			Mouse::itemCurrentlyHeld = true;
 			//removes from quad tree
-            auto &interactionRect = zone.get<Component::Interaction_Rect>(item_ID);
+            auto &interactionRect = zone.get<Component::Interaction_Rect>(item_ID).rect;
             auto &position = zone.get<Component::Position>(item_ID);
-            SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(interactionRect.r, position.x, position.y);
-            zone.emplace<Component::Remove_From_Object_Tree>(item_ID, rect);
+            zone.emplace<Component::Remove_From_Object_Tree>(item_ID, interactionRect);
             //prevents auto reinsertion into quad tree
-//			zone.remove<Component::Interaction_Rect>(item_ID);
 		}
 	}
 
-	bool Pick_Up_Item_To_Mouse_Or_Bag(entt::registry& zone, Component::Item_Pickup &itemData, bool& isItemCurrentlyHeld) {
-		// check if mouse is inside item box				
+	bool Pick_Up_Item_To_Mouse_Or_Bag(entt::registry& zone, Component::Pickup_Item &itemData, bool& isItemCurrentlyHeld) {
+		// check if mouse is inside item box
 		SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(itemData.radius, itemData.x, itemData.y);
 
 		if (bToggleCharacterUI) { //bag is closed
 			Pick_Up_Item_To_Mouse(zone, itemData.item_ID, isItemCurrentlyHeld);
+            zone.emplace<Item_Component::Item_Pickup>(itemData.item_ID);
 			return true;
 		}
 		else {
@@ -382,6 +389,8 @@ namespace UI {
 			for (int i = 0; i < Bag_UI::UI_bagSlots.size(); i++) {
 				if (Bag_UI::UI_bagSlots[i] == Bag_UI::emptyBagSlot) {
 					Bag_UI::UI_bagSlots[i] = itemData.item_ID;
+                    auto &rect = zone.get<Component::Interaction_Rect>(itemData.item_ID).rect;
+                    zone.emplace<Item_Component::Item_Pickup>(itemData.item_ID);
                     zone.emplace<Component::Remove_From_Object_Tree>(itemData.item_ID, rect);
 					//removed pickup box from ground
 					zone.remove<Ground_Item>(itemData.item_ID);
@@ -437,13 +446,13 @@ namespace UI {
 		Player_Move_Poll += Timer::timeStep;
 		if (Player_Move_Poll >= 200) {
 			Player_Move_Poll = 0;
-			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Item_Pickup, Component::Action, Component::Moving>();
+			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Component::Action, Component::Moving>();
 			for (auto entity : view) {
 				const auto& x = view.get<Component::Position>(entity);
 				const auto& y = view.get<Component::Position>(entity);
 				auto& act = view.get<Component::Action>(entity);
 				auto& v = view.get<Component::Velocity>(entity);
-				auto& mov = view.get<Component::Item_Pickup>(entity);
+				auto& mov = view.get<Component::Pickup_Item>(entity);
 				act.state = Component::walk;
 				v.magnitude.x = v.speed * (mov.x - x.x);
 				v.magnitude.y = v.speed * (mov.y - y.y);
@@ -453,12 +462,12 @@ namespace UI {
 	}
 
 	void Mouse_Move_Arrived_Pickup_Item(entt::registry &zone, bool & isItemCurrentlyHeld) {
-		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Position, Component::Velocity, Component::Action, Component::Item_Pickup>();
+		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Position, Component::Velocity, Component::Action, Component::Pickup_Item>();
 		for (auto entity : view) {
 			auto& action = view.get<Component::Action>(entity);
 			auto& v = view.get<Component::Velocity>(entity);
 			const auto& position = view.get<Component::Position>(entity);
-			auto& itemData = view.get<Component::Item_Pickup>(entity);
+			auto& itemData = view.get<Component::Pickup_Item>(entity);
 			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
 			if (Check_If_Arrived(position.x, position.y, itemData.x, itemData.y)) {
 				if (action.state == Component::walk) {
@@ -469,10 +478,9 @@ namespace UI {
                     World::zone.remove<Component::Moving>(entity);
 				}
 
-
                 //pickup Item
                 Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, isItemCurrentlyHeld);
-				World::zone.remove<Component::Item_Pickup>(entity);
+				World::zone.remove<Component::Pickup_Item>(entity);
 			}
 		}
 	}

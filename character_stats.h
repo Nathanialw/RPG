@@ -60,11 +60,13 @@ namespace Character_Stats {
                     if (weaponSheet.sheetData) {
                         sheetData.equipmentSheets[(int)item.first].ItemSheetData = weaponSheet.sheetData;
                         sheetData.equipmentSheets[(int)item.first].name = weaponSheet.sheet_name;
+                        sheetData.equipmentSheets[(int)item.first].itemID = item.second;
                     }
                 }
                 else if (item.second == Item_Component::emptyEquipSlot) {
                     sheetData.equipmentSheets[(int)item.first].ItemSheetData = NULL;
                     sheetData.equipmentSheets[(int)item.first].name = "empty";
+                    sheetData.equipmentSheets[(int)item.first].itemID = emptyEquipSlot;
                 }
             }
 
@@ -169,11 +171,15 @@ namespace Character_Stats {
             auto &position = view.get<Component::Position>(unit);
 
             //create a weapon Component::Position& position, Component::Direction &direction
-            equipment.equippedItems[Item_Type::weapon] = Items::Create_And_Equip_Weapon(position);
+            equipment.equippedItems[Item_Type::mainhand] = Items::Create_And_Equip_Weapon(position, equipment.type);
             //create a chest
-            equipment.equippedItems[Item_Type::legs] = Items::Create_And_Equip_Armor(position, Item_Type::legs);
+            equipment.equippedItems[Item_Type::legs] = Items::Create_And_Equip_Armor(position, Item_Type::legs, equipment.type);
             //create a leggings
-            equipment.equippedItems[Item_Type::chest] = Items::Create_And_Equip_Armor(position, Item_Type::chest);
+            equipment.equippedItems[Item_Type::chest] = Items::Create_And_Equip_Armor(position, Item_Type::chest, equipment.type);
+            //create hair
+            equipment.equippedItems[Item_Type::hair] = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type);
+            //create kilt
+//            equipment.equippedItems[Item_Type::clothes] = Items::Create_And_Equip_Armor(position, Item_Type::clothes, equipment.type);
 
             zone.emplace<Item_Component::Item_Equip>(unit);
         }

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Head(Addon_Goblin_Head3).png" width="531" height="523" scale="1" format="RGBA8888">
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_01_ 0" x="103" y="239" w="26" h="20" pX="0.5" pY="0.5" oX="85" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_02_ 0" x="319" y="432" w="25" h="20" pX="0.5" pY="0.5" oX="86" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_03_ 0" x="183" y="73" w="27" h="23" pX="0.5" pY="0.5" oX="87" oY="89" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_04_ 1" x="96" y="476" w="24" h="22" pX="0.5" pY="0.5" oX="98" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_05_ 1" x="488" y="432" w="23" h="22" pX="0.5" pY="0.5" oX="109" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_06_ 1" x="392" y="414" w="24" h="23" pX="0.5" pY="0.5" oX="80" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_07_ 2" x="508" y="477" w="23" h="23" pX="0.5" pY="0.5" oX="82" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_08_ 2" x="495" y="410" w="23" h="22" pX="0.5" pY="0.5" oX="72" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_09_ 2" x="481" y="273" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_10_ 3" x="185" y="0" w="25" h="27" pX="0.5" pY="0.5" oX="93" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_11_ 3" x="210" y="27" w="25" h="27" pX="0.5" pY="0.5" oX="93" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_12_ 3" x="175" y="289" w="26" h="22" pX="0.5" pY="0.5" oX="91" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_13_ 4" x="483" y="115" w="24" h="23" pX="0.5" pY="0.5" oX="91" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_14_ 4" x="129" y="30" w="26" h="31" pX="0.5" pY="0.5" oX="98" oY="55" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_15_ 4" x="358" y="163" w="25" h="23" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_16_ 5" x="168" y="499" w="24" h="24" pX="0.5" pY="0.5" oX="96" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_17_ 5" x="296" y="382" w="24" h="25" pX="0.5" pY="0.5" oX="104" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_18_ 5" x="24" y="243" w="24" h="26" pX="0.5" pY="0.5" oX="82" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_19_ 6" x="435" y="0" w="24" h="22" pX="0.5" pY="0.5" oX="83" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_20_ 6" x="416" y="412" w="24" h="22" pX="0.5" pY="0.5" oX="76" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_21_ 6" x="76" y="83" w="24" h="36" pX="0.5" pY="0.5" oX="98" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_22_ 7" x="204" y="118" w="24" h="27" pX="0.5" pY="0.5" oX="89" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_23_ 7" x="83" y="134" w="24" h="27" pX="0.5" pY="0.5" oX="82" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 1_24_ 7" x="486" y="500" w="23" h="23" pX="0.5" pY="0.5" oX="102" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_01_ 0" x="255" y="174" w="26" h="19" pX="0.5" pY="0.5" oX="86" oY="63" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_02_ 0" x="125" y="386" w="25" h="19" pX="0.5" pY="0.5" oX="87" oY="58" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_03_ 0" x="25" y="409" w="25" h="21" pX="0.5" pY="0.5" oX="82" oY="87" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_04_ 1" x="75" y="431" w="25" h="23" pX="0.5" pY="0.5" oX="105" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_05_ 1" x="269" y="432" w="25" h="22" pX="0.5" pY="0.5" oX="111" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_06_ 1" x="175" y="431" w="25" h="23" pX="0.5" pY="0.5" oX="79" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_07_ 2" x="342" y="476" w="24" h="22" pX="0.5" pY="0.5" oX="74" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_08_ 2" x="25" y="339" w="25" h="22" pX="0.5" pY="0.5" oX="68" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_09_ 2" x="73" y="289" w="26" h="22" pX="0.5" pY="0.5" oX="99" oY="85" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_10_ 3" x="149" y="289" w="26" h="26" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_11_ 3" x="130" y="161" w="25" h="27" pX="0.5" pY="0.5" oX="92" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_12_ 3" x="276" y="332" w="25" h="24" pX="0.5" pY="0.5" oX="97" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_13_ 4" x="462" y="477" w="24" h="23" pX="0.5" pY="0.5" oX="99" oY="63" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_14_ 4" x="216" y="499" w="24" h="22" pX="0.5" pY="0.5" oX="103" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_15_ 4" x="507" y="23" w="23" h="23" pX="0.5" pY="0.5" oX="78" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_16_ 5" x="362" y="0" w="24" h="25" pX="0.5" pY="0.5" oX="104" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_17_ 5" x="0" y="243" w="24" h="26" pX="0.5" pY="0.5" oX="107" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_18_ 5" x="459" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="89" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_19_ 6" x="168" y="454" w="24" h="21" pX="0.5" pY="0.5" oX="76" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_20_ 6" x="192" y="478" w="24" h="21" pX="0.5" pY="0.5" oX="73" oY="63" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_21_ 6" x="216" y="478" w="24" h="21" pX="0.5" pY="0.5" oX="91" oY="90" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_22_ 7" x="358" y="302" w="25" h="25" pX="0.5" pY="0.5" oX="80" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_23_ 7" x="53" y="161" w="26" h="28" pX="0.5" pY="0.5" oX="77" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Attack 2_24_ 7" x="247" y="382" w="24" h="25" pX="0.5" pY="0.5" oX="102" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_01_ 0" x="271" y="382" w="25" h="25" pX="0.5" pY="0.5" oX="89" oY="102" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_02_ 0" x="195" y="385" w="25" h="24" pX="0.5" pY="0.5" oX="89" oY="100" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_03_ 0" x="462" y="454" w="24" h="23" pX="0.5" pY="0.5" oX="90" oY="98" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_04_ 1" x="183" y="29" w="27" h="22" pX="0.5" pY="0.5" oX="76" oY="95" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_05_ 1" x="0" y="269" w="26" h="23" pX="0.5" pY="0.5" oX="78" oY="94" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_06_ 1" x="26" y="269" w="26" h="23" pX="0.5" pY="0.5" oX="80" oY="93" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_07_ 2" x="183" y="51" w="27" h="22" pX="0.5" pY="0.5" oX="101" oY="95" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_08_ 2" x="286" y="86" w="26" h="23" pX="0.5" pY="0.5" oX="100" oY="94" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_09_ 2" x="278" y="193" w="26" h="22" pX="0.5" pY="0.5" oX="98" oY="94" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_10_ 3" x="155" y="227" w="24" h="15" pX="0.5" pY="0.5" oX="90" oY="89" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_11_ 3" x="435" y="44" w="24" h="18" pX="0.5" pY="0.5" oX="90" oY="86" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_12_ 3" x="433" y="168" w="24" h="20" pX="0.5" pY="0.5" oX="90" oY="85" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_13_ 4" x="433" y="188" w="24" h="24" pX="0.5" pY="0.5" oX="82" oY="100" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_14_ 4" x="433" y="212" w="24" h="23" pX="0.5" pY="0.5" oX="83" oY="98" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_15_ 4" x="425" y="367" w="24" h="22" pX="0.5" pY="0.5" oX="85" oY="97" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_16_ 5" x="200" y="431" w="25" h="20" pX="0.5" pY="0.5" oX="81" oY="92" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_17_ 5" x="0" y="454" w="24" h="22" pX="0.5" pY="0.5" oX="83" oY="90" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_18_ 5" x="24" y="454" w="24" h="22" pX="0.5" pY="0.5" oX="84" oY="89" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_19_ 6" x="319" y="452" w="24" h="24" pX="0.5" pY="0.5" oX="98" oY="100" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_20_ 6" x="120" y="454" w="24" h="22" pX="0.5" pY="0.5" oX="97" oY="99" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_21_ 6" x="507" y="46" w="23" h="22" pX="0.5" pY="0.5" oX="96" oY="97" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_22_ 7" x="507" y="136" w="23" h="20" pX="0.5" pY="0.5" oX="99" oY="92" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_23_ 7" x="459" y="94" w="24" h="22" pX="0.5" pY="0.5" oX="97" oY="90" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Behavior_24_ 7" x="507" y="114" w="23" h="22" pX="0.5" pY="0.5" oX="96" oY="89" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_01_ 0" x="333" y="302" w="25" h="21" pX="0.5" pY="0.5" oX="78" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_02_ 0" x="0" y="340" w="25" h="21" pX="0.5" pY="0.5" oX="77" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_03_ 0" x="100" y="189" w="25" h="27" pX="0.5" pY="0.5" oX="76" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_04_ 1" x="125" y="337" w="25" h="24" pX="0.5" pY="0.5" oX="81" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_05_ 1" x="390" y="474" w="24" h="23" pX="0.5" pY="0.5" oX="85" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_06_ 1" x="414" y="461" w="24" h="22" pX="0.5" pY="0.5" oX="90" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_07_ 2" x="480" y="250" w="24" h="23" pX="0.5" pY="0.5" oX="98" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_08_ 2" x="483" y="22" w="24" h="23" pX="0.5" pY="0.5" oX="95" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_09_ 2" x="483" y="91" w="24" h="24" pX="0.5" pY="0.5" oX="90" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_10_ 3" x="99" y="289" w="25" h="26" pX="0.5" pY="0.5" oX="101" oY="58" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_11_ 3" x="124" y="289" w="25" h="26" pX="0.5" pY="0.5" oX="102" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_12_ 3" x="210" y="0" w="25" h="27" pX="0.5" pY="0.5" oX="103" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_13_ 4" x="150" y="340" w="25" h="21" pX="0.5" pY="0.5" oX="76" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_14_ 4" x="251" y="332" w="25" h="22" pX="0.5" pY="0.5" oX="77" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_15_ 4" x="205" y="96" w="27" h="22" pX="0.5" pY="0.5" oX="79" oY="65" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_16_ 5" x="301" y="332" w="24" h="25" pX="0.5" pY="0.5" oX="93" oY="54" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_17_ 5" x="325" y="332" w="25" h="25" pX="0.5" pY="0.5" oX="96" oY="56" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_18_ 5" x="251" y="354" w="25" h="25" pX="0.5" pY="0.5" oX="101" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_19_ 6" x="276" y="356" w="25" h="23" pX="0.5" pY="0.5" oX="86" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_20_ 6" x="435" y="22" w="24" h="22" pX="0.5" pY="0.5" oX="83" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_21_ 6" x="435" y="99" w="24" h="23" pX="0.5" pY="0.5" oX="78" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_22_ 7" x="357" y="138" w="25" h="25" pX="0.5" pY="0.5" oX="103" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_23_ 7" x="424" y="343" w="24" h="24" pX="0.5" pY="0.5" oX="102" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Block_24_ 7" x="305" y="241" w="26" h="24" pX="0.5" pY="0.5" oX="99" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_01_ 0" x="0" y="318" w="26" h="21" pX="0.5" pY="0.5" oX="86" oY="89" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_02_ 0" x="26" y="318" w="26" h="21" pX="0.5" pY="0.5" oX="86" oY="89" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_03_ 0" x="125" y="315" w="26" h="22" pX="0.5" pY="0.5" oX="86" oY="89" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_04_ 1" x="274" y="306" w="26" h="23" pX="0.5" pY="0.5" oX="70" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_05_ 1" x="150" y="198" w="26" h="23" pX="0.5" pY="0.5" oX="70" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_06_ 1" x="103" y="216" w="26" h="23" pX="0.5" pY="0.5" oX="70" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_07_ 2" x="204" y="199" w="26" h="23" pX="0.5" pY="0.5" oX="108" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_08_ 2" x="176" y="204" w="26" h="23" pX="0.5" pY="0.5" oX="108" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_09_ 2" x="235" y="0" w="26" h="23" pX="0.5" pY="0.5" oX="108" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_10_ 3" x="344" y="377" w="25" h="24" pX="0.5" pY="0.5" oX="92" oY="58" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_11_ 3" x="381" y="277" w="25" h="25" pX="0.5" pY="0.5" oX="92" oY="58" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_12_ 3" x="383" y="302" w="25" h="25" pX="0.5" pY="0.5" oX="92" oY="58" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_13_ 4" x="457" y="296" w="24" h="22" pX="0.5" pY="0.5" oX="75" oY="84" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_14_ 4" x="457" y="318" w="24" h="22" pX="0.5" pY="0.5" oX="75" oY="84" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_15_ 4" x="0" y="476" w="24" h="23" pX="0.5" pY="0.5" oX="75" oY="84" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_16_ 5" x="383" y="197" w="24" h="25" pX="0.5" pY="0.5" oX="79" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_17_ 5" x="228" y="118" w="24" h="26" pX="0.5" pY="0.5" oX="79" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_18_ 5" x="369" y="389" w="24" h="25" pX="0.5" pY="0.5" oX="79" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_19_ 6" x="72" y="476" w="24" h="23" pX="0.5" pY="0.5" oX="101" oY="86" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_20_ 6" x="318" y="476" w="24" h="22" pX="0.5" pY="0.5" oX="101" oY="87" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_21_ 6" x="240" y="476" w="24" h="22" pX="0.5" pY="0.5" oX="101" oY="87" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_22_ 7" x="410" y="75" w="24" h="25" pX="0.5" pY="0.5" oX="105" oY="65" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_23_ 7" x="411" y="100" w="24" h="25" pX="0.5" pY="0.5" oX="105" oY="65" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Critical HP_24_ 7" x="400" y="343" w="24" h="25" pX="0.5" pY="0.5" oX="105" oY="65" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_01_ 0" x="393" y="391" w="25" h="19" pX="0.5" pY="0.5" oX="85" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_02_ 0" x="440" y="415" w="24" h="19" pX="0.5" pY="0.5" oX="86" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_03_ 0" x="245" y="429" w="24" h="25" pX="0.5" pY="0.5" oX="86" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_04_ 1" x="232" y="94" w="26" h="23" pX="0.5" pY="0.5" oX="99" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_05_ 1" x="483" y="45" w="24" h="23" pX="0.5" pY="0.5" oX="120" oY="96" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_06_ 1" x="507" y="91" w="23" h="23" pX="0.5" pY="0.5" oX="136" oY="110" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_07_ 2" x="228" y="222" w="26" h="21" pX="0.5" pY="0.5" oX="79" oY="83" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_08_ 2" x="294" y="429" w="25" h="24" pX="0.5" pY="0.5" oX="60" oY="97" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_09_ 2" x="472" y="340" w="23" h="24" pX="0.5" pY="0.5" oX="45" oY="112" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_10_ 3" x="160" y="0" w="25" h="29" pX="0.5" pY="0.5" oX="94" oY="82" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_11_ 3" x="29" y="50" w="24" h="43" pX="0.5" pY="0.5" oX="94" oY="101" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_12_ 3" x="0" y="0" w="27" h="54" pX="0.5" pY="0.5" oX="94" oY="107" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_13_ 4" x="333" y="232" w="25" h="20" pX="0.5" pY="0.5" oX="94" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_14_ 4" x="481" y="319" w="24" h="21" pX="0.5" pY="0.5" oX="111" oY="84" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_15_ 4" x="486" y="454" w="22" h="24" pX="0.5" pY="0.5" oX="122" oY="85" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_16_ 5" x="129" y="243" w="24" h="26" pX="0.5" pY="0.5" oX="99" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_17_ 5" x="333" y="277" w="24" h="25" pX="0.5" pY="0.5" oX="113" oY="110" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_18_ 5" x="25" y="100" w="23" h="37" pX="0.5" pY="0.5" oX="124" oY="118" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_19_ 6" x="507" y="68" w="23" h="23" pX="0.5" pY="0.5" oX="81" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_20_ 6" x="481" y="229" w="24" h="21" pX="0.5" pY="0.5" oX="67" oY="86" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_21_ 6" x="73" y="263" w="22" h="26" pX="0.5" pY="0.5" oX="57" oY="87" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_22_ 7" x="177" y="263" w="24" h="26" pX="0.5" pY="0.5" oX="85" oY="83" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_23_ 7" x="58" y="129" w="25" h="29" pX="0.5" pY="0.5" oX="69" oY="109" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Dead To Down_24_ 7" x="105" y="34" w="23" h="34" pX="0.5" pY="0.5" oX="60" oY="121" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_1_01_ 0" x="200" y="409" w="20" h="18" pX="0.5" pY="0.5" oX="95" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_1_02_ 1" x="199" y="338" w="25" h="22" pX="0.5" pY="0.5" oX="123" oY="100" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_1_03_ 2" x="226" y="332" w="25" h="24" pX="0.5" pY="0.5" oX="56" oY="96" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_1_04_ 3" x="0" y="54" w="29" h="46" pX="0.5" pY="0.5" oX="88" oY="98" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_1_05_ 4" x="284" y="109" w="26" h="22" pX="0.5" pY="0.5" oX="116" oY="82" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_1_06_ 5" x="27" y="0" w="27" h="50" pX="0.5" pY="0.5" oX="114" oY="91" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_1_07_ 6" x="52" y="318" w="21" h="21" pX="0.5" pY="0.5" oX="70" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_1_08_ 7" x="281" y="157" w="26" h="25" pX="0.5" pY="0.5" oX="62" oY="109" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_2_01_ 0" x="507" y="156" w="23" h="20" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_2_02_ 1" x="0" y="140" w="29" h="21" pX="0.5" pY="0.5" oX="144" oY="108" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_2_03_ 2" x="29" y="137" w="29" h="23" pX="0.5" pY="0.5" oX="31" oY="113" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_2_04_ 3" x="104" y="68" w="24" h="34" pX="0.5" pY="0.5" oX="92" oY="137" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_2_05_ 4" x="433" y="323" w="24" h="20" pX="0.5" pY="0.5" oX="128" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_2_06_ 5" x="54" y="0" w="23" h="49" pX="0.5" pY="0.5" oX="133" oY="107" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_2_07_ 6" x="507" y="0" w="23" h="23" pX="0.5" pY="0.5" oX="48" oY="83" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_2_08_ 7" x="105" y="0" w="24" h="34" pX="0.5" pY="0.5" oX="52" oY="127" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_3_01_ 0" x="225" y="431" w="20" h="19" pX="0.5" pY="0.5" oX="89" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_3_02_ 1" x="48" y="93" w="28" h="36" pX="0.5" pY="0.5" oX="123" oY="84" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_3_03_ 2" x="77" y="0" w="28" h="42" pX="0.5" pY="0.5" oX="56" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_3_04_ 3" x="54" y="49" w="22" h="42" pX="0.5" pY="0.5" oX="95" oY="102" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_3_05_ 4" x="150" y="386" w="20" h="22" pX="0.5" pY="0.5" oX="113" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_3_06_ 5" x="128" y="61" w="29" h="23" pX="0.5" pY="0.5" oX="116" oY="111" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_3_07_ 6" x="248" y="303" w="26" h="22" pX="0.5" pY="0.5" oX="62" oY="82" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_3_08_ 7" x="100" y="102" w="20" h="32" pX="0.5" pY="0.5" oX="70" oY="109" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_4_01_ 0" x="438" y="504" w="23" h="19" pX="0.5" pY="0.5" oX="94" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_4_02_ 1" x="77" y="42" w="27" h="41" pX="0.5" pY="0.5" oX="138" oY="92" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_4_03_ 2" x="129" y="0" w="31" h="30" pX="0.5" pY="0.5" oX="38" oY="95" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_4_04_ 3" x="120" y="102" w="24" h="31" pX="0.5" pY="0.5" oX="87" oY="132" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_4_05_ 4" x="103" y="161" w="27" h="22" pX="0.5" pY="0.5" oX="128" oY="86" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_4_06_ 5" x="79" y="161" w="24" h="28" pX="0.5" pY="0.5" oX="124" oY="129" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_4_07_ 6" x="226" y="312" w="22" h="19" pX="0.5" pY="0.5" oX="58" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Down_4_08_ 7" x="0" y="161" w="27" h="28" pX="0.5" pY="0.5" oX="49" oY="121" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_01_ 0" x="386" y="0" w="25" h="20" pX="0.5" pY="0.5" oX="90" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_02_ 0" x="202" y="222" w="26" h="21" pX="0.5" pY="0.5" oX="90" oY="82" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_03_ 0" x="235" y="23" w="26" h="25" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_04_ 1" x="129" y="221" w="26" h="22" pX="0.5" pY="0.5" oX="83" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_05_ 1" x="375" y="346" w="25" h="23" pX="0.5" pY="0.5" oX="85" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_06_ 1" x="75" y="408" w="25" h="23" pX="0.5" pY="0.5" oX="86" oY="82" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_07_ 2" x="235" y="48" w="26" h="22" pX="0.5" pY="0.5" oX="95" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_08_ 2" x="150" y="408" w="25" h="23" pX="0.5" pY="0.5" oX="94" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_09_ 2" x="483" y="138" w="24" h="22" pX="0.5" pY="0.5" oX="93" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_10_ 3" x="344" y="401" w="25" h="25" pX="0.5" pY="0.5" oX="89" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_11_ 3" x="220" y="407" w="25" h="24" pX="0.5" pY="0.5" oX="88" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_12_ 3" x="234" y="70" w="26" h="24" pX="0.5" pY="0.5" oX="88" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_13_ 4" x="481" y="184" w="24" h="22" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_14_ 4" x="471" y="410" w="24" h="22" pX="0.5" pY="0.5" oX="89" oY="82" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_15_ 4" x="464" y="432" w="24" h="22" pX="0.5" pY="0.5" oX="90" oY="84" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_16_ 5" x="411" y="0" w="24" h="25" pX="0.5" pY="0.5" oX="85" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_17_ 5" x="0" y="499" w="23" h="24" pX="0.5" pY="0.5" oX="86" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_18_ 5" x="23" y="499" w="23" h="24" pX="0.5" pY="0.5" oX="87" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_19_ 6" x="508" y="454" w="23" h="23" pX="0.5" pY="0.5" oX="95" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_20_ 6" x="264" y="499" w="24" h="23" pX="0.5" pY="0.5" oX="94" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_21_ 6" x="70" y="499" w="24" h="23" pX="0.5" pY="0.5" oX="93" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_22_ 7" x="411" y="50" w="24" h="25" pX="0.5" pY="0.5" oX="93" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_23_ 7" x="230" y="144" w="24" h="26" pX="0.5" pY="0.5" oX="91" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Evade_24_ 7" x="231" y="170" w="24" h="26" pX="0.5" pY="0.5" oX="90" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_01_ 0" x="409" y="144" w="25" h="18" pX="0.5" pY="0.5" oX="86" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_02_ 0" x="175" y="409" w="25" h="19" pX="0.5" pY="0.5" oX="87" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_03_ 0" x="245" y="407" w="25" h="22" pX="0.5" pY="0.5" oX="90" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_04_ 1" x="270" y="407" w="25" h="22" pX="0.5" pY="0.5" oX="85" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_05_ 1" x="336" y="498" w="24" h="23" pX="0.5" pY="0.5" oX="89" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_06_ 1" x="406" y="272" w="21" h="25" pX="0.5" pY="0.5" oX="98" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_07_ 2" x="336" y="0" w="26" h="23" pX="0.5" pY="0.5" oX="93" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_08_ 2" x="434" y="75" w="24" h="24" pX="0.5" pY="0.5" oX="91" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_09_ 2" x="231" y="196" w="21" h="26" pX="0.5" pY="0.5" oX="85" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_10_ 3" x="155" y="30" w="26" h="29" pX="0.5" pY="0.5" oX="92" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_11_ 3" x="145" y="88" w="25" h="28" pX="0.5" pY="0.5" oX="92" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_12_ 3" x="320" y="407" w="24" h="25" pX="0.5" pY="0.5" oX="89" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_13_ 4" x="150" y="431" w="25" h="23" pX="0.5" pY="0.5" oX="85" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_14_ 4" x="435" y="122" w="24" h="23" pX="0.5" pY="0.5" oX="88" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_15_ 4" x="52" y="269" w="21" h="22" pX="0.5" pY="0.5" oX="96" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_16_ 5" x="180" y="96" w="24" h="27" pX="0.5" pY="0.5" oX="89" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_17_ 5" x="180" y="123" w="24" h="27" pX="0.5" pY="0.5" oX="92" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_18_ 5" x="344" y="426" w="24" h="25" pX="0.5" pY="0.5" oX="96" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_19_ 6" x="433" y="280" w="24" h="22" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_20_ 6" x="433" y="302" w="24" h="21" pX="0.5" pY="0.5" oX="88" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_21_ 6" x="360" y="498" w="24" h="24" pX="0.5" pY="0.5" oX="84" oY="65" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_22_ 7" x="48" y="243" w="25" h="26" pX="0.5" pY="0.5" oX="94" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_23_ 7" x="153" y="243" w="24" h="26" pX="0.5" pY="0.5" oX="92" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Get Hit_24_ 7" x="312" y="0" w="23" h="25" pX="0.5" pY="0.5" oX="86" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_01_ 0" x="336" y="23" w="25" h="22" pX="0.5" pY="0.5" oX="88" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_02_ 0" x="336" y="45" w="25" h="20" pX="0.5" pY="0.5" oX="88" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_03_ 0" x="336" y="65" w="25" h="23" pX="0.5" pY="0.5" oX="88" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_04_ 1" x="343" y="452" w="23" h="24" pX="0.5" pY="0.5" oX="89" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_05_ 1" x="508" y="363" w="22" h="23" pX="0.5" pY="0.5" oX="90" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_06_ 1" x="495" y="340" w="22" h="23" pX="0.5" pY="0.5" oX="90" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_07_ 2" x="508" y="273" w="23" h="23" pX="0.5" pY="0.5" oX="91" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_08_ 2" x="459" y="0" w="22" h="24" pX="0.5" pY="0.5" oX="92" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_09_ 2" x="459" y="24" w="23" h="24" pX="0.5" pY="0.5" oX="92" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_10_ 3" x="312" y="75" w="24" h="25" pX="0.5" pY="0.5" oX="91" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_11_ 3" x="336" y="113" w="25" h="25" pX="0.5" pY="0.5" oX="91" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_12_ 3" x="333" y="138" w="24" h="25" pX="0.5" pY="0.5" oX="92" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_13_ 4" x="457" y="250" w="23" h="24" pX="0.5" pY="0.5" oX="88" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_14_ 4" x="504" y="250" w="23" h="23" pX="0.5" pY="0.5" oX="89" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_15_ 4" x="333" y="163" w="25" h="21" pX="0.5" pY="0.5" oX="89" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_16_ 5" x="333" y="184" w="25" h="24" pX="0.5" pY="0.5" oX="91" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_17_ 5" x="449" y="367" w="24" h="24" pX="0.5" pY="0.5" oX="91" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_18_ 5" x="449" y="391" w="22" h="24" pX="0.5" pY="0.5" oX="91" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_19_ 6" x="306" y="222" w="25" h="19" pX="0.5" pY="0.5" oX="88" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_20_ 6" x="24" y="476" w="24" h="23" pX="0.5" pY="0.5" oX="89" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_21_ 6" x="272" y="454" w="22" h="24" pX="0.5" pY="0.5" oX="91" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_22_ 7" x="497" y="386" w="23" h="23" pX="0.5" pY="0.5" oX="93" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_23_ 7" x="168" y="475" w="24" h="24" pX="0.5" pY="0.5" oX="91" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle Fidget_24_ 7" x="333" y="208" w="25" h="24" pX="0.5" pY="0.5" oX="90" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_01_ 0" x="73" y="243" w="26" h="20" pX="0.5" pY="0.5" oX="87" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_02_ 0" x="177" y="243" w="26" h="20" pX="0.5" pY="0.5" oX="87" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_03_ 0" x="203" y="243" w="26" h="20" pX="0.5" pY="0.5" oX="87" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_04_ 0" x="229" y="243" w="26" h="20" pX="0.5" pY="0.5" oX="87" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_05_ 0" x="261" y="0" w="26" h="20" pX="0.5" pY="0.5" oX="87" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_06_ 1" x="261" y="20" w="26" h="22" pX="0.5" pY="0.5" oX="82" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_07_ 1" x="261" y="42" w="26" h="22" pX="0.5" pY="0.5" oX="82" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_08_ 1" x="261" y="64" w="26" h="22" pX="0.5" pY="0.5" oX="82" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_09_ 1" x="260" y="86" w="26" h="22" pX="0.5" pY="0.5" oX="82" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_10_ 1" x="258" y="108" w="26" h="22" pX="0.5" pY="0.5" oX="82" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_11_ 2" x="252" y="196" w="26" h="22" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_12_ 2" x="254" y="218" w="26" h="22" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_13_ 2" x="255" y="130" w="26" h="22" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_14_ 2" x="255" y="240" w="26" h="22" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_15_ 2" x="255" y="152" w="26" h="22" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_16_ 3" x="180" y="150" w="25" h="27" pX="0.5" pY="0.5" oX="91" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_17_ 3" x="155" y="171" w="25" h="27" pX="0.5" pY="0.5" oX="91" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_18_ 3" x="0" y="189" w="25" h="27" pX="0.5" pY="0.5" oX="91" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_19_ 3" x="25" y="189" w="25" h="27" pX="0.5" pY="0.5" oX="91" oY="63" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_20_ 3" x="50" y="189" w="25" h="27" pX="0.5" pY="0.5" oX="91" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_21_ 4" x="224" y="356" w="25" h="22" pX="0.5" pY="0.5" oX="83" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_22_ 4" x="481" y="297" w="24" h="22" pX="0.5" pY="0.5" oX="84" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_23_ 4" x="481" y="206" w="24" h="23" pX="0.5" pY="0.5" oX="84" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_24_ 4" x="473" y="364" w="24" h="23" pX="0.5" pY="0.5" oX="84" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_25_ 4" x="473" y="387" w="24" h="23" pX="0.5" pY="0.5" oX="84" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_26_ 5" x="75" y="358" w="24" h="25" pX="0.5" pY="0.5" oX="86" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_27_ 5" x="175" y="358" w="24" h="25" pX="0.5" pY="0.5" oX="86" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_28_ 5" x="0" y="361" w="24" h="25" pX="0.5" pY="0.5" oX="86" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_29_ 5" x="99" y="361" w="24" h="25" pX="0.5" pY="0.5" oX="86" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_30_ 5" x="24" y="361" w="24" h="25" pX="0.5" pY="0.5" oX="86" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_31_ 6" x="96" y="498" w="24" h="22" pX="0.5" pY="0.5" oX="94" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_32_ 6" x="144" y="498" w="24" h="22" pX="0.5" pY="0.5" oX="94" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_33_ 6" x="240" y="498" w="24" h="22" pX="0.5" pY="0.5" oX="94" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_34_ 6" x="120" y="499" w="24" h="22" pX="0.5" pY="0.5" oX="93" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_35_ 6" x="46" y="499" w="24" h="22" pX="0.5" pY="0.5" oX="94" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_36_ 7" x="123" y="361" w="24" h="25" pX="0.5" pY="0.5" oX="96" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_37_ 7" x="48" y="361" w="24" h="25" pX="0.5" pY="0.5" oX="96" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_38_ 7" x="147" y="361" w="24" h="25" pX="0.5" pY="0.5" oX="96" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_39_ 7" x="199" y="360" w="24" h="25" pX="0.5" pY="0.5" oX="96" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Idle_40_ 7" x="301" y="357" w="24" h="25" pX="0.5" pY="0.5" oX="96" oY="66" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_01_ 0" x="325" y="357" w="25" h="20" pX="0.5" pY="0.5" oX="89" oY="83" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_02_ 0" x="95" y="269" w="26" h="20" pX="0.5" pY="0.5" oX="88" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_03_ 0" x="121" y="269" w="26" h="20" pX="0.5" pY="0.5" oX="86" oY="83" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_04_ 0" x="147" y="269" w="26" h="20" pX="0.5" pY="0.5" oX="85" oY="85" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_05_ 0" x="255" y="262" w="26" h="19" pX="0.5" pY="0.5" oX="86" oY="82" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_06_ 0" x="361" y="50" w="25" h="19" pX="0.5" pY="0.5" oX="89" oY="83" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_07_ 0" x="361" y="69" w="25" h="19" pX="0.5" pY="0.5" oX="89" oY="83" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_08_ 0" x="361" y="88" w="25" h="19" pX="0.5" pY="0.5" oX="89" oY="85" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_09_ 1" x="361" y="107" w="25" h="23" pX="0.5" pY="0.5" oX="78" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_10_ 1" x="201" y="263" w="26" h="23" pX="0.5" pY="0.5" oX="79" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_11_ 1" x="227" y="263" w="26" h="23" pX="0.5" pY="0.5" oX="78" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_12_ 1" x="358" y="186" w="25" h="23" pX="0.5" pY="0.5" oX="77" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_13_ 1" x="358" y="209" w="25" h="23" pX="0.5" pY="0.5" oX="79" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_14_ 1" x="358" y="232" w="25" h="23" pX="0.5" pY="0.5" oX="78" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_15_ 1" x="350" y="327" w="25" h="23" pX="0.5" pY="0.5" oX="78" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_16_ 1" x="434" y="145" w="24" h="23" pX="0.5" pY="0.5" oX="78" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_17_ 2" x="358" y="255" w="25" h="22" pX="0.5" pY="0.5" oX="101" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_18_ 2" x="350" y="350" w="25" h="22" pX="0.5" pY="0.5" oX="100" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_19_ 2" x="0" y="386" w="25" h="23" pX="0.5" pY="0.5" oX="101" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_20_ 2" x="433" y="235" w="24" h="23" pX="0.5" pY="0.5" oX="102" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_21_ 2" x="25" y="386" w="25" h="23" pX="0.5" pY="0.5" oX="100" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_22_ 2" x="50" y="386" w="25" h="23" pX="0.5" pY="0.5" oX="101" oY="72" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_23_ 2" x="75" y="386" w="25" h="22" pX="0.5" pY="0.5" oX="101" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_24_ 2" x="100" y="386" w="25" h="22" pX="0.5" pY="0.5" oX="101" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_25_ 3" x="287" y="0" w="25" h="26" pX="0.5" pY="0.5" oX="90" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_26_ 3" x="75" y="189" w="25" h="27" pX="0.5" pY="0.5" oX="90" oY="58" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_27_ 3" x="287" y="26" w="25" h="26" pX="0.5" pY="0.5" oX="92" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_28_ 3" x="287" y="52" w="25" h="26" pX="0.5" pY="0.5" oX="93" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_29_ 3" x="145" y="116" w="26" h="28" pX="0.5" pY="0.5" oX="92" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_30_ 3" x="125" y="188" w="25" h="27" pX="0.5" pY="0.5" oX="90" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_31_ 3" x="281" y="131" w="25" h="26" pX="0.5" pY="0.5" oX="90" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_32_ 3" x="281" y="215" w="25" h="26" pX="0.5" pY="0.5" oX="90" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_33_ 4" x="294" y="453" w="24" h="23" pX="0.5" pY="0.5" oX="81" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_34_ 4" x="200" y="451" w="24" h="23" pX="0.5" pY="0.5" oX="82" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_35_ 4" x="384" y="497" w="23" h="23" pX="0.5" pY="0.5" oX="80" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_36_ 4" x="72" y="454" w="24" h="22" pX="0.5" pY="0.5" oX="79" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_37_ 4" x="224" y="454" w="24" h="22" pX="0.5" pY="0.5" oX="81" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_38_ 4" x="96" y="454" w="24" h="22" pX="0.5" pY="0.5" oX="82" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_39_ 4" x="248" y="454" w="24" h="22" pX="0.5" pY="0.5" oX="82" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_40_ 4" x="390" y="451" w="24" h="23" pX="0.5" pY="0.5" oX="81" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_41_ 5" x="414" y="437" w="24" h="24" pX="0.5" pY="0.5" oX="83" oY="63" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_42_ 5" x="180" y="177" w="24" h="27" pX="0.5" pY="0.5" oX="84" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_43_ 5" x="281" y="241" w="24" h="26" pX="0.5" pY="0.5" oX="85" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_44_ 5" x="448" y="343" w="24" h="24" pX="0.5" pY="0.5" oX="85" oY="63" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_45_ 5" x="385" y="25" w="25" h="25" pX="0.5" pY="0.5" oX="84" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_46_ 5" x="0" y="292" w="25" h="26" pX="0.5" pY="0.5" oX="82" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_47_ 5" x="386" y="50" w="24" h="25" pX="0.5" pY="0.5" oX="83" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_48_ 5" x="386" y="75" w="24" h="25" pX="0.5" pY="0.5" oX="83" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_49_ 6" x="459" y="72" w="24" h="22" pX="0.5" pY="0.5" oX="97" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_50_ 6" x="386" y="100" w="25" h="22" pX="0.5" pY="0.5" oX="95" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_51_ 6" x="459" y="116" w="24" h="22" pX="0.5" pY="0.5" oX="95" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_52_ 6" x="459" y="138" w="24" h="22" pX="0.5" pY="0.5" oX="95" oY="84" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_53_ 6" x="458" y="160" w="24" h="23" pX="0.5" pY="0.5" oX="95" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_54_ 6" x="457" y="183" w="24" h="22" pX="0.5" pY="0.5" oX="97" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_55_ 6" x="457" y="205" w="24" h="23" pX="0.5" pY="0.5" oX="97" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_56_ 6" x="457" y="228" w="24" h="22" pX="0.5" pY="0.5" oX="97" oY="82" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_57_ 7" x="386" y="122" w="23" h="25" pX="0.5" pY="0.5" oX="99" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_58_ 7" x="25" y="292" w="24" h="26" pX="0.5" pY="0.5" oX="98" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_59_ 7" x="383" y="147" w="24" h="25" pX="0.5" pY="0.5" oX="100" oY="65" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_60_ 7" x="383" y="172" w="24" h="25" pX="0.5" pY="0.5" oX="101" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_61_ 7" x="49" y="292" w="24" h="26" pX="0.5" pY="0.5" oX="99" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_62_ 7" x="383" y="222" w="24" h="25" pX="0.5" pY="0.5" oX="98" oY="63" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_63_ 7" x="438" y="434" w="24" h="24" pX="0.5" pY="0.5" oX="98" oY="63" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Running_64_ 7" x="383" y="247" w="24" h="25" pX="0.5" pY="0.5" oX="99" oY="65" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_01_ 0" x="375" y="327" w="25" h="19" pX="0.5" pY="0.5" oX="86" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_02_ 0" x="281" y="267" w="26" h="18" pX="0.5" pY="0.5" oX="88" oY="78" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_03_ 0" x="375" y="369" w="25" h="20" pX="0.5" pY="0.5" oX="91" oY="86" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_04_ 1" x="0" y="409" w="25" h="22" pX="0.5" pY="0.5" oX="85" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_05_ 1" x="253" y="281" w="26" h="22" pX="0.5" pY="0.5" oX="81" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_06_ 1" x="279" y="285" w="26" h="21" pX="0.5" pY="0.5" oX="68" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_07_ 2" x="100" y="409" w="25" h="22" pX="0.5" pY="0.5" oX="94" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_08_ 2" x="50" y="409" w="25" h="22" pX="0.5" pY="0.5" oX="97" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_09_ 2" x="125" y="408" w="25" h="23" pX="0.5" pY="0.5" oX="110" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_10_ 3" x="157" y="59" w="26" h="29" pX="0.5" pY="0.5" oX="92" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_11_ 3" x="27" y="161" w="26" h="28" pX="0.5" pY="0.5" oX="90" oY="58" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_12_ 3" x="0" y="100" w="25" h="40" pX="0.5" pY="0.5" oX="88" oY="36" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_13_ 4" x="120" y="476" w="24" h="23" pX="0.5" pY="0.5" oX="85" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_14_ 4" x="144" y="476" w="24" h="22" pX="0.5" pY="0.5" oX="84" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_15_ 4" x="366" y="474" w="24" h="23" pX="0.5" pY="0.5" oX="76" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_16_ 5" x="210" y="54" w="24" h="27" pX="0.5" pY="0.5" oX="89" oY="62" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_17_ 5" x="120" y="133" w="25" h="28" pX="0.5" pY="0.5" oX="85" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_18_ 5" x="201" y="286" w="23" h="26" pX="0.5" pY="0.5" oX="75" oY="56" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_19_ 6" x="438" y="458" w="24" h="23" pX="0.5" pY="0.5" oX="91" oY="73" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_20_ 6" x="264" y="478" w="24" h="21" pX="0.5" pY="0.5" oX="94" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_21_ 6" x="483" y="0" w="24" h="22" pX="0.5" pY="0.5" oX="105" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_22_ 7" x="224" y="286" w="24" h="26" pX="0.5" pY="0.5" oX="95" oY="64" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_23_ 7" x="306" y="131" w="24" h="26" pX="0.5" pY="0.5" oX="96" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Use Skill_24_ 7" x="205" y="145" w="25" h="27" pX="0.5" pY="0.5" oX="103" oY="54" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_01_ 0" x="409" y="125" w="25" h="19" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_02_ 0" x="310" y="109" w="26" h="19" pX="0.5" pY="0.5" oX="88" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_03_ 0" x="307" y="157" w="26" h="19" pX="0.5" pY="0.5" oX="88" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_04_ 0" x="408" y="162" w="25" h="19" pX="0.5" pY="0.5" oX="88" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_05_ 0" x="408" y="181" w="25" h="18" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_06_ 0" x="307" y="265" w="26" h="19" pX="0.5" pY="0.5" oX="89" oY="80" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_07_ 0" x="408" y="199" w="25" h="19" pX="0.5" pY="0.5" oX="90" oY="81" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_08_ 0" x="408" y="218" w="25" h="19" pX="0.5" pY="0.5" oX="91" oY="79" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_09_ 1" x="307" y="176" w="26" h="23" pX="0.5" pY="0.5" oX="78" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_10_ 1" x="295" y="407" w="25" h="22" pX="0.5" pY="0.5" oX="78" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_11_ 1" x="408" y="237" w="25" h="23" pX="0.5" pY="0.5" oX="77" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_12_ 1" x="307" y="284" w="26" h="22" pX="0.5" pY="0.5" oX="78" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_13_ 1" x="408" y="297" w="25" h="23" pX="0.5" pY="0.5" oX="79" oY="68" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_14_ 1" x="408" y="320" w="25" h="23" pX="0.5" pY="0.5" oX="77" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_15_ 1" x="306" y="199" w="26" h="23" pX="0.5" pY="0.5" oX="76" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_16_ 1" x="400" y="368" w="25" h="23" pX="0.5" pY="0.5" oX="79" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_17_ 2" x="73" y="311" w="26" h="22" pX="0.5" pY="0.5" oX="100" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_18_ 2" x="25" y="430" w="25" h="23" pX="0.5" pY="0.5" oX="101" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_19_ 2" x="175" y="311" w="26" h="22" pX="0.5" pY="0.5" oX="101" oY="71" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_20_ 2" x="0" y="431" w="25" h="22" pX="0.5" pY="0.5" oX="100" oY="70" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_21_ 2" x="50" y="431" w="25" h="22" pX="0.5" pY="0.5" oX="100" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_22_ 2" x="99" y="315" w="26" h="23" pX="0.5" pY="0.5" oX="101" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_23_ 2" x="100" y="431" w="25" h="23" pX="0.5" pY="0.5" oX="102" oY="69" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_24_ 2" x="125" y="431" w="25" h="23" pX="0.5" pY="0.5" oX="100" oY="67" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_25_ 3" x="205" y="172" w="26" h="27" pX="0.5" pY="0.5" oX="89" oY="56" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_26_ 3" x="0" y="216" w="25" h="27" pX="0.5" pY="0.5" oX="90" oY="56" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_27_ 3" x="25" y="216" w="26" h="27" pX="0.5" pY="0.5" oX="90" oY="56" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_28_ 3" x="51" y="216" w="26" h="27" pX="0.5" pY="0.5" oX="90" oY="57" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_29_ 3" x="201" y="312" w="25" h="26" pX="0.5" pY="0.5" oX="90" oY="57" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_30_ 3" x="77" y="216" w="26" h="27" pX="0.5" pY="0.5" oX="89" oY="56" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_31_ 3" x="300" y="306" w="26" h="26" pX="0.5" pY="0.5" oX="88" oY="56" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_32_ 3" x="155" y="144" w="25" h="27" pX="0.5" pY="0.5" oX="88" oY="56" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_33_ 4" x="414" y="483" w="24" h="22" pX="0.5" pY="0.5" oX="82" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_34_ 4" x="462" y="500" w="24" h="23" pX="0.5" pY="0.5" oX="82" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_35_ 4" x="288" y="498" w="24" h="22" pX="0.5" pY="0.5" oX="81" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_36_ 4" x="312" y="498" w="24" h="22" pX="0.5" pY="0.5" oX="82" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_37_ 4" x="99" y="338" w="25" h="22" pX="0.5" pY="0.5" oX="82" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_38_ 4" x="366" y="451" w="24" h="23" pX="0.5" pY="0.5" oX="82" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_39_ 4" x="48" y="476" w="24" h="23" pX="0.5" pY="0.5" oX="82" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_40_ 4" x="457" y="274" w="24" h="22" pX="0.5" pY="0.5" oX="84" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_41_ 5" x="336" y="88" w="25" h="25" pX="0.5" pY="0.5" oX="82" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_42_ 5" x="312" y="50" w="24" h="25" pX="0.5" pY="0.5" oX="82" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_43_ 5" x="312" y="25" w="24" h="25" pX="0.5" pY="0.5" oX="82" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_44_ 5" x="368" y="426" w="24" h="25" pX="0.5" pY="0.5" oX="83" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_45_ 5" x="411" y="25" w="24" h="25" pX="0.5" pY="0.5" oX="83" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_46_ 5" x="320" y="382" w="24" h="25" pX="0.5" pY="0.5" oX="82" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_47_ 5" x="223" y="382" w="24" h="25" pX="0.5" pY="0.5" oX="81" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_48_ 5" x="361" y="25" w="24" h="25" pX="0.5" pY="0.5" oX="82" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_49_ 6" x="144" y="454" w="24" h="22" pX="0.5" pY="0.5" oX="97" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_50_ 6" x="48" y="454" w="24" h="22" pX="0.5" pY="0.5" oX="97" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_51_ 6" x="425" y="389" w="24" h="23" pX="0.5" pY="0.5" oX="98" oY="77" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_52_ 6" x="433" y="258" w="24" h="22" pX="0.5" pY="0.5" oX="96" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_53_ 6" x="50" y="339" w="25" h="22" pX="0.5" pY="0.5" oX="96" oY="75" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_54_ 6" x="438" y="481" w="24" h="23" pX="0.5" pY="0.5" oX="98" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_55_ 6" x="483" y="68" w="24" h="23" pX="0.5" pY="0.5" oX="99" oY="76" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_56_ 6" x="294" y="476" w="24" h="22" pX="0.5" pY="0.5" oX="98" oY="74" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_57_ 7" x="333" y="252" w="25" h="25" pX="0.5" pY="0.5" oX="97" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_58_ 7" x="151" y="315" w="24" h="25" pX="0.5" pY="0.5" oX="98" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_59_ 7" x="357" y="277" w="24" h="25" pX="0.5" pY="0.5" oX="99" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_60_ 7" x="171" y="383" w="24" h="25" pX="0.5" pY="0.5" oX="98" oY="61" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_61_ 7" x="482" y="160" w="24" h="24" pX="0.5" pY="0.5" oX="97" oY="60" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_62_ 7" x="75" y="333" w="24" h="25" pX="0.5" pY="0.5" oX="98" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_63_ 7" x="175" y="333" w="24" h="25" pX="0.5" pY="0.5" oX="98" oY="59" oW="200" oH="200"/>
+  <sprite n="Head(Addon_Goblin_Head3)_Walking_64_ 7" x="192" y="499" w="24" h="24" pX="0.5" pY="0.5" oX="96" oY="59" oW="200" oH="200"/>
+</TextureAtlas>

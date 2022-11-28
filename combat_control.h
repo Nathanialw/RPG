@@ -185,7 +185,7 @@ namespace Combat_Control {
         for (auto entity : view) {
             auto &action = view.get<Component::Action>(entity);
             auto &sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
-            if (action.state == Component::dead) {
+            if (action.state == Component::dying) {
                 zone.remove<Component::Struck>(entity);
             }
             if (sheetData.flareSpritesheet) {
