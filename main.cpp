@@ -54,12 +54,14 @@ int main(int argc, char* argv[]) {
         //std::cout << "AI = Good" << std::endl;
         Combat_Control::Update_Attacks(World::zone);
 
+
         //std::cout << "Update_Spells = Good" << std::endl;
 		Movement::Update_Entity_Positions(World::zone);
 
-	//	Unit_Position::Update_Formation_Positions(World::zone);
 		//std::cout << "Movement_Handler = Good" << std::endl;
-		Collision::Update_Collision(World::zone);
+		Collision::Collision_Routine(World::zone);
+
+	//	Unit_Position::Update_Formation_Positions(World::zone);
 
 		//std::cout << "Update_Formation_Rects = Good" << std::endl;
 

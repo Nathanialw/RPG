@@ -85,6 +85,7 @@ namespace Death_Control {
                 zone.remove<Component::Sight_Range>(entity);
                 zone.remove<Component::Health>(entity);
                 zone.remove<Component::Radius>(entity);
+                zone.remove<Collision_Component::Dynamic_Collider>(entity);
 
 
                 if (zone.any_of<Component::Assigned_To_Formation>(entity)) {

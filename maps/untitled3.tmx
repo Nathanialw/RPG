@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="3003">
+<map version="1.9" tiledversion="1.9.2" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="3005">
  <tileset firstgid="1" source="sprite_sheets/units/flare/skeleton_00.tsx"/>
  <tileset firstgid="257" source="sprite_sheets/units/flare/skeleton_occultist_00.tsx"/>
  <tileset firstgid="481" source="sprite_sheets/units/flare/skeleton_mage_00.tsx"/>
@@ -778,7 +778,11 @@
   <object id="2973" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Black.tx" x="11651" y="11501"/>
   <object id="2974" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Dire.tx" x="11462" y="11590"/>
   <object id="2975" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="11226" y="11734"/>
-  <object id="2987" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base1.tx" x="22527.2" y="21757.7"/>
+  <object id="2987" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base1.tx" x="22288.2" y="22046.7">
+   <properties>
+    <property name="player" type="bool" value="true"/>
+   </properties>
+  </object>
   <object id="2988" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base1.tx" x="23107.5" y="21959.2"/>
   <object id="2989" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base10.tx" x="23233.2" y="22166.8"/>
   <object id="2990" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base11.tx" x="23339.3" y="22327.4"/>
@@ -791,10 +795,5 @@
   <object id="2997" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base6.tx" x="23646.8" y="22486.5"/>
   <object id="2998" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base8.tx" x="23449.9" y="22477.4"/>
   <object id="2999" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base9.tx" x="23519.6" y="22668.3"/>
-  <object id="3002" template="spawn_points/unit_spawns/1st_cast/humans/male/Addon_Male_Base1.tx" x="22016.2" y="22140.9">
-   <properties>
-    <property name="player" type="bool" value="true"/>
-   </properties>
-  </object>
  </objectgroup>
 </map>

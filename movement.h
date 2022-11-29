@@ -23,7 +23,7 @@ namespace Movement {
 		}
 	}
 
-
+    const float timeStep = 1.0f / 60.0f;
 	void Update_Position() {
 		auto view = World::zone.view<Component::Position, Component::Velocity, Component::Moving, Component::Body>();
 		Update_Position_Poll += Timer::timeStep;
@@ -31,31 +31,26 @@ namespace Movement {
 		//std::cout << Update_Position_Poll << std::endl;
 		if (Update_Position_Poll >= 0) {
 			for (auto entity : view) {
-				auto& vel = view.get<Component::Velocity>(entity);
-				auto& pX = view.get<Component::Position>(entity);
-				auto& pY = view.get<Component::Position>(entity);
+				auto& velocity = view.get<Component::Velocity>(entity);
+				auto& position = view.get<Component::Position>(entity);
 
-				if (vel.magnitude.x != 0 || vel.magnitude.y != 0) {
-					if (fabs(vel.magnitude.x) < 0.01) { vel.magnitude.x = 0; }; //clamp rounding errors
-					if (fabs(vel.magnitude.y) < 0.01) { vel.magnitude.y = 0; };
-					vel.angle = atan2f(vel.magnitude.x, vel.magnitude.y);
-					angleY = atan2f(vel.magnitude.y, vel.magnitude.x);
-					float velocityX = sinf(vel.angle) * vel.speed;
-					float velocityY = sinf(angleY) * vel.speed;
-					vel.dX = velocityX;
-					vel.dY = velocityY;
-					pX.x += velocityX * Update_Position_Poll;
-					pY.y += velocityY * Update_Position_Poll;
+				if (velocity.magnitude.x != 0 || velocity.magnitude.y != 0) {
+					if (fabs(velocity.magnitude.x) < 0.01) { velocity.magnitude.x = 0; }; //clamp rounding errors
+					if (fabs(velocity.magnitude.y) < 0.01) { velocity.magnitude.y = 0; };
+                    velocity.angle = atan2f(velocity.magnitude.x, velocity.magnitude.y);
+					angleY = atan2f(velocity.magnitude.y, velocity.magnitude.x);
+					float velocityX = sinf(velocity.angle) * velocity.speed;
+					float velocityY = sinf(angleY) * velocity.speed;
+                    velocity.dX = velocityX;
+                    velocity.dY = velocityY;
 
 					auto& pBody = view.get<Component::Body>(entity).body;
-					auto& position = pBody->GetPosition();
 
-					b2Vec2 impulse = { 0.0f , 0.0f };
-					impulse.x = velocityX * Update_Position_Poll * 65.0f;
-					impulse.y = velocityY * Update_Position_Poll * 65.0f;
+                    velocity.dX += velocityX * (float)Update_Position_Poll * 1750000.0f;
+                    velocity.dY += velocityY * (float)Update_Position_Poll * 1750000.0f;
 
-					pBody->SetLinearVelocity(impulse);
-					//pBody->ApplyLinearImpulse(impulse, pBody->GetPosition(), true);
+					b2Vec2 impulse = { velocity.dX , velocity.dY };
+                    pBody->ApplyForce(impulse, pBody->GetWorldCenter(), true);
 				}
 			}
 			Update_Position_Poll = 0;

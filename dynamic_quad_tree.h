@@ -387,7 +387,7 @@ namespace Dynamic_Quad_Tree {
 			}
 			//std::cout << "nodes: " << nodes << std::endl;
 		}
-		std::cout << "objects on screen: " << i << std::endl;
+//		std::cout << "objects on screen: " << i << std::endl;
 	}
 
 

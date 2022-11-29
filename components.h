@@ -546,7 +546,12 @@ namespace Component {
 		Direction direction;
 		int numFrames;
 	};
+
+    struct Followers {
+        std::vector<entt::entity> followers;
+    };
 }
+
 
 
 namespace Component_Camera { //unused yet
