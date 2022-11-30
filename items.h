@@ -448,14 +448,16 @@ namespace Items {
 	void Show_Ground_Items(entt::registry& zone, Component::Camera& camera) {
 		if (showGroundItems == true) {
 		 	//****//search quad tree instead
-			auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();
+			auto view = zone.view<Ground_Item, Component::Interaction_Rect, Rarity, Name, Component::Renderable>();
 			for (auto item : view) {
 				///need position for render location
 				/// need an offset based on rect size for the text box and item position
 				///
 				///need name for string
 				/// need rarity for colour
-				auto& itemPosition = view.get<Component::Position>(item);
+                auto &interactionRect = view.get<Component::Interaction_Rect>(item);
+                Component::Position itemPosition = {interactionRect.rect.x + (interactionRect.rect.w / 2.0f), interactionRect.rect.y};
+
 				auto& rarity = view.get<Rarity>(item);
 				auto& name = view.get<Name>(item).name;
                 Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, rarityColor[rarity], name,  itemPosition);
@@ -471,7 +473,7 @@ namespace Items {
 	}
 
     void Name_On_Mouseover (entt::registry& zone, Component::Camera& camera) {
-        auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();
+        auto view = zone.view<Ground_Item, Component::Interaction_Rect, Rarity, Name, Component::Renderable>();
         for (auto item : view) {
             auto &box = view.get<Ground_Item>(item);
             if (Mouse::FRect_inside_Cursor(box.box)) {
@@ -481,12 +483,13 @@ namespace Items {
                 ///
                 ///need name for string
                 /// need rarity for colour
-                auto &itemPosition = view.get<Component::Position>(item);
+                auto &interactionRect = view.get<Component::Interaction_Rect>(item);
+                Component::Position itemPosition = {interactionRect.rect.x + (interactionRect.rect.w / 2.0f), interactionRect.rect.y};
+
                 auto &rarity = view.get<Rarity>(item);
                 auto &name = view.get<Name>(item).name;
-                Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, rarityColor[rarity], name,  itemPosition);
-                auto& highlightBox = view.get<Ground_Item>(item).ground_name;
-                highlightBox = Utilities::SDL_Rect_To_SDL_FRect(itemTextBox.textBoxBackground);
+                Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, rarityColor[rarity], name, itemPosition);
+
                 SDL_RenderFillRect(Graphics::renderer, &itemTextBox.textBoxBackground);
                 SDL_RenderCopyF(Graphics::renderer, itemTextBox.textdata.pTexture, &itemTextBox.textdata.k, &itemTextBox.highlightBox);
                 SDL_DestroyTexture(itemTextBox.textdata.pTexture);
@@ -494,7 +497,40 @@ namespace Items {
         }
     }
 
-	void Init_Item_Data() {
+
+    void Unit_Name_On_Mouseover (entt::registry& zone, Component::Camera& camera) {
+        auto view = zone.view<Component::Unit, Component::Name, Component::Interaction_Rect, Component::Renderable>();
+        for (auto item : view) {
+            auto &interactionRect = view.get<Component::Interaction_Rect>(item);
+            if (Mouse::FRect_inside_Cursor(interactionRect.rect)) {
+                //****//search quad tree instead
+                ///need position for render location
+                /// need an offset based on rect size for the text box and item position
+                ///
+                ///need name for string
+                /// need rarity for colour
+                Component::Position itemPosition = {interactionRect.rect.x + (interactionRect.rect.w / 2.0f), interactionRect.rect.y};
+
+                auto &name = view.get<Component::Name>(item);
+                std::string full_name;
+                if (name.nickname == "") {
+                    full_name = name.first + " " + name.last;
+                }
+                else {
+                    full_name = name.nickname;
+                }
+                Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, rarityColor[Item_Component::Rarity::common], full_name, itemPosition);
+//                auto& highlightBox = view.get<Ground_Item>(item).ground_name;
+//                highlightBox = Utilities::SDL_Rect_To_SDL_FRect(itemTextBox.textBoxBackground);
+                SDL_RenderFillRect(Graphics::renderer, &itemTextBox.textBoxBackground);
+                SDL_RenderCopyF(Graphics::renderer, itemTextBox.textdata.pTexture, &itemTextBox.textdata.k, &itemTextBox.highlightBox);
+                SDL_DestroyTexture(itemTextBox.textdata.pTexture);
+            }
+        }
+    }
+
+
+    void Init_Item_Data() {
 
         SQLite_Item_Data::Load_Item_Names();
 

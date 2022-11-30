@@ -12,7 +12,7 @@ namespace Units {
 	void Create_Archer(float x, float y)  {
 	for (auto j = 0; j < x; ++j) {
 		for (auto i = 0; i < y; ++i) {
-			auto archer = World::zone.create();			//creates a unique handle for an entity
+			auto archer = World::zone.create();			//creates a unique name for an entity
 //			World::zone.emplace<Component::Sprite_Sheet_Info>(archer, Graphics::archer_0); /// need to load the texture only onceand pass the pointer into this function
 //			World::zone.get<Component::Sprite_Sheet_Info>(archer).sheet = { //populate the vector
 //				{ NULL },
@@ -36,7 +36,7 @@ namespace Units {
 			World::zone.emplace<Component::Velocity>(archer, 0.f, 0.0f, 0.f, 0.0f, 0.175f);
 								  
 			World::zone.emplace<Component::Direction>(archer, Component::Direction::SE);
-			World::zone.emplace<Component::handle>(archer, "archer");
+			World::zone.emplace<Component::Name>(archer, "archer");
 			World::zone.emplace<Component::Mass>(archer, 200.0f);
 								  
 			World::zone.emplace<Component::Health>(archer, 5);

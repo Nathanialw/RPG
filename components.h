@@ -33,13 +33,19 @@ namespace Component {
         SDL_FRect rect;
     };
 
+    struct Unit {
+
+    };
+
 	struct Body {
 		b2Body* body;
 		b2Body* rigidBody;
 	};
 
-	struct handle {
-		std::string sName;
+	struct Name {
+		std::string first;
+		std::string last;
+		std::string nickname;
 	};
 
 	struct Cell_Assigned {

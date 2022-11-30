@@ -462,7 +462,7 @@ private:
 /**
 	Implements the interface to the "Visitor pattern" (see the Accept() method.)
 	If you call the Accept() method, it requires being passed a XMLVisitor
-	class to handle callbacks. For nodes that contain other nodes (Document, Element)
+	class to name callbacks. For nodes that contain other nodes (Document, Element)
 	you will get called with a VisitEnter/VisitExit pair. Nodes that are always leafs
 	are simply called with Visit().
 
@@ -2044,7 +2044,7 @@ inline NodeType* XMLDocument::CreateUnlinkedNode( MemPoolT<PoolElementSize>& poo
 
 	It is also safe to copy handles - internally they are nothing more than node pointers.
 	@verbatim
-	XMLHandle handleCopy = handle;
+	XMLHandle handleCopy = name;
 	@endverbatim
 
 	See also XMLConstHandle, which is the same as XMLHandle, but operates on const objects.
@@ -2052,10 +2052,10 @@ inline NodeType* XMLDocument::CreateUnlinkedNode( MemPoolT<PoolElementSize>& poo
 class TINYXML2_LIB XMLHandle
 {
 public:
-    /// Create a handle from any node (at any depth of the tree.) This can be a null pointer.
+    /// Create a name from any node (at any depth of the tree.) This can be a null pointer.
     explicit XMLHandle( XMLNode* node ) : _node( node ) {
     }
-    /// Create a handle from a node.
+    /// Create a name from a node.
     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
     }
     /// Copy constructor
@@ -2067,35 +2067,35 @@ public:
         return *this;
     }
 
-    /// Get the first child of this handle.
+    /// Get the first child of this name.
     XMLHandle FirstChild() 													{
         return XMLHandle( _node ? _node->FirstChild() : 0 );
     }
-    /// Get the first child element of this handle.
+    /// Get the first child element of this name.
     XMLHandle FirstChildElement( const char* name = 0 )						{
         return XMLHandle( _node ? _node->FirstChildElement( name ) : 0 );
     }
-    /// Get the last child of this handle.
+    /// Get the last child of this name.
     XMLHandle LastChild()													{
         return XMLHandle( _node ? _node->LastChild() : 0 );
     }
-    /// Get the last child element of this handle.
+    /// Get the last child element of this name.
     XMLHandle LastChildElement( const char* name = 0 )						{
         return XMLHandle( _node ? _node->LastChildElement( name ) : 0 );
     }
-    /// Get the previous sibling of this handle.
+    /// Get the previous sibling of this name.
     XMLHandle PreviousSibling()												{
         return XMLHandle( _node ? _node->PreviousSibling() : 0 );
     }
-    /// Get the previous sibling element of this handle.
+    /// Get the previous sibling element of this name.
     XMLHandle PreviousSiblingElement( const char* name = 0 )				{
         return XMLHandle( _node ? _node->PreviousSiblingElement( name ) : 0 );
     }
-    /// Get the next sibling of this handle.
+    /// Get the next sibling of this name.
     XMLHandle NextSibling()													{
         return XMLHandle( _node ? _node->NextSibling() : 0 );
     }
-    /// Get the next sibling element of this handle.
+    /// Get the next sibling element of this name.
     XMLHandle NextSiblingElement( const char* name = 0 )					{
         return XMLHandle( _node ? _node->NextSiblingElement( name ) : 0 );
     }

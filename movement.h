@@ -41,13 +41,13 @@ namespace Movement {
 					angleY = atan2f(velocity.magnitude.y, velocity.magnitude.x);
 					float velocityX = sinf(velocity.angle) * velocity.speed;
 					float velocityY = sinf(angleY) * velocity.speed;
-                    velocity.dX = velocityX;
-                    velocity.dY = velocityY;
+//                    velocity.dX = velocityX;
+//                    velocity.dY = velocityY;
 
 					auto& pBody = view.get<Component::Body>(entity).body;
 
-                    velocity.dX += velocityX * (float)Update_Position_Poll * 1750000.0f;
-                    velocity.dY += velocityY * (float)Update_Position_Poll * 1750000.0f;
+                    velocity.dX = velocityX * (float)Update_Position_Poll * 5000000.0f;
+                    velocity.dY = velocityY * (float)Update_Position_Poll * 5000000.0f;
 
 					b2Vec2 impulse = { velocity.dX , velocity.dY };
                     pBody->ApplyForce(impulse, pBody->GetWorldCenter(), true);

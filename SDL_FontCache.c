@@ -358,7 +358,7 @@ static void FC_MapFree(FC_Map* map)
     free(map);
 }
 
-// Note: Does not handle duplicates in any special way.
+// Note: Does not name duplicates in any special way.
 static FC_GlyphData* FC_MapInsert(FC_Map* map, Uint32 codepoint, FC_GlyphData glyph)
 {
     Uint32 index;
@@ -1653,7 +1653,7 @@ Uint8 FC_GetGlyphData(FC_Font* font, FC_GlyphData* result, Uint32 codepoint)
             }
         }
 
-        // Render onto the cache texture
+        // Render_Menu onto the cache texture
         FC_AddGlyphToCache(font, surf);
 
         SDL_FreeSurface(surf);
@@ -2564,7 +2564,7 @@ FC_Rect FC_GetCharacterOffset(FC_Font* font, Uint16 position_index, int column_w
             --position_index;
             if(position_index == 0)
             {
-                // FIXME: Doesn't handle box-wrapped newlines correctly
+                // FIXME: Doesn't name box-wrapped newlines correctly
                 line = (char*)U8_next(line);
                 line[0] = '\0';
                 result.x = FC_GetWidth(font, "%s", iter->value);

@@ -223,8 +223,8 @@ namespace SQLite_Spritesheets {
             values.isStatic.startFrame = sqlite3_column_int(stmt, 0);
             values.isStatic.NumFrames = sqlite3_column_int(stmt, 1);
             values.isStatic.reverses = sqlite3_column_int(stmt, 2);
-            return values;
         }
+        return values;
     }
 
     Sheet_Data_Flare Get_Flare_Building_From_DB(std::string &name, std::string &sheet, Sheet_Data_Flare &sheetData) {

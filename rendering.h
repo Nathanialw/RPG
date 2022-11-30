@@ -272,8 +272,8 @@ namespace Rendering {
     SDL_FRect Position_For_Render(std::unordered_map<std::string, Component::Sheet_Data>*sheetData, std::string &name, int &frameIndex, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect, Component::Interaction_Rect &interactionRect) {
         clipRect = sheetData->at(name).frameList[frameIndex].clip;
         renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
-        renderRect.x = sheetData->at(name).frameList[frameIndex].x_offset * scale.scale - offset.x + position.x + 20.0f;
-        renderRect.y = sheetData->at(name).frameList[frameIndex].y_offset * scale.scale - offset.y + position.y + 20.0f;
+        renderRect.x = sheetData->at(name).frameList[frameIndex].x_offset * scale.scale - offset.x + position.x;
+        renderRect.y = sheetData->at(name).frameList[frameIndex].y_offset * scale.scale - offset.y + position.y;
         interactionRect.rect = renderRect;
         renderRect.x -= camera.screen.x;
         renderRect.y -= camera.screen.y;
@@ -419,81 +419,93 @@ namespace Rendering {
 		return tileSpriteRect;
 	}
 
-	void Render_Map(entt::registry &zone, tmx::Map& map, Component::Camera& camera) {
-		float originX = 0.0f;
-		float originY = 0.0f;
-		SDL_Rect tileSpriteRect = { 0, 0, (int)map.getTileSize().x , (int)map.getTileSize().y };
-		SDL_FRect renderPosition = { 0.0f, 0.0f, (float)map.getTileSize().x, (float)map.getTileSize().y };
-		auto& numOfTiles = map.getTileCount();
-		auto& layers = map.getLayers();
-		const auto tileWidth = (float)map.getTileSize().x;
-		const auto tileHeight = (float)map.getTileSize().y;
-		int newX = (int)camera.screen.x;
-		int newY = (int)camera.screen.y;
-		int X = (newX / tileWidth) + (newY / tileHeight) - (camera.screen.w / 2 / (tileWidth / 2));
-		int Y = (newY / tileHeight) - (newX / tileWidth) - (camera.screen.h / 2 / (tileHeight / 2));
-		//int X = (newX / tileWidth) + (newY / tileHeight) - (camera.screen.h / 2 / (tileHeight / 2));
-		//int Y = (newY / tileHeight) - (newX / tileWidth) - (camera.screen.w / 2 / (tileWidth / 2));
-		//int X = ((newX + newY) / tileWidth) - (camera.screen.w / 2 / (tileWidth / 2));
-		//int Y = ((newY - newX) / tileHeight) - (camera.screen.h / 2 / (tileHeight / 2));
-		//int X = (newY + newX) / tileWidth / 2 - camera.screen.w / 2 / (tileWidth /2);
-		//int Y = (newY - newX) / tileWidth / 2 - camera.screen.h / 2 / (tileHeight/2);
-		//of the sidways rect encompassing the screen
-		int width = X + (camera.screen.w / tileWidth * 4);
-		int height = Y + (camera.screen.h / tileHeight * 3);
-		//int width = X + ((camera.screen.w + camera.screen.h) / tileWidth / 2);
-		//int height = Y + ((camera.screen.h + camera.screen.w) / tileHeight / 2);
-//		int h = 0;
-		int g = 0;
-		//int o = 0;
-		auto &tilesets = Maps::map.getTilesets();
-		int p = Maps::map.getTilesets().size() - 1;
-		for (int i = 0; i < layers.size(); i++) {
-			if (layers[i]->getType() == tmx::Layer::Type::Tile) {
-				const auto& tiles = layers[i]->getLayerAs<tmx::TileLayer>().getTiles();
-                if (i == 2) {
-                        /// renders all objects just above the 2nd layer but below the 3rd in tiled
-                    Animation_Frame(zone, camera);
-                    Render_Explosions(zone, camera);
-                }
-				for (int x = X; x < width; x++) {
-					if (x < 0) { x = 0; }
-					for (int y = Y; y < height; y++) {
-						//h++;
-						if (y < 0) { y = 0; }
-						if (x >= numOfTiles.x) { break; }
-						if (y >= numOfTiles.y) { break; }
-						renderPosition.x = originX + (x * tileWidth / 2.0f) - (y * tileWidth / 2.0f);
-						renderPosition.y = originY + (x * tileHeight / 2.0f) + (y * tileHeight / 2.0f);
-						renderPosition.x -= camera.screen.x;;
-						renderPosition.y -= camera.screen.y;;
-						int k = (numOfTiles.x * y) + x;
-						if (tiles[k].ID != 0) {
-							auto id = tiles[k].ID;
-							for (int tilesetCount = p; tilesetCount >= 0; --tilesetCount) {
-								const tmx::Tileset *tileset = &tilesets[tilesetCount];
-								if (tileset->getFirstGID() - 1 <= id) {
-									id -= tilesets[tilesetCount].getFirstGID() - 1;
-									std::string name = tileset->getName();
-									int tileCount = tileset->getColumnCount();
-									SDL_Rect data = getTexture(id, tileCount, tileSpriteRect);
-									if (Graphics::pTexture[name] != NULL) {
-										Graphics::Render_FRect(Graphics::pTexture[name], &data, &renderPosition);
-									}
-									//h++;
-									break;
-								}
-							}
-						}
-					}
-					g++;
-				}
-                if (i == 1) {
+    const float frameRate = 1000/120;
+    float currentFrame = 0;
 
+	void Render_Map(entt::registry &zone, tmx::Map& map, Component::Camera& camera) {
+
+            //render at 30 fps
+//        currentFrame += (float)Timer::timeStep;
+//        while (currentFrame > frameRate) {
+//            currentFrame -= frameRate;
+//            Utilities::Log("frame");
+//            Utilities::Log(currentFrame);
+            SDL_RenderClear(Graphics::renderer);
+            float originX = 0.0f;
+            float originY = 0.0f;
+            SDL_Rect tileSpriteRect = {0, 0, (int) map.getTileSize().x, (int) map.getTileSize().y};
+            SDL_FRect renderPosition = {0.0f, 0.0f, (float) map.getTileSize().x, (float) map.getTileSize().y};
+            auto &numOfTiles = map.getTileCount();
+            auto &layers = map.getLayers();
+            const auto tileWidth = (float) map.getTileSize().x;
+            const auto tileHeight = (float) map.getTileSize().y;
+            int newX = (int) camera.screen.x;
+            int newY = (int) camera.screen.y;
+            int X = (newX / tileWidth) + (newY / tileHeight) - (camera.screen.w / 2 / (tileWidth / 2));
+            int Y = (newY / tileHeight) - (newX / tileWidth) - (camera.screen.h / 2 / (tileHeight / 2));
+            //int X = (newX / tileWidth) + (newY / tileHeight) - (camera.screen.h / 2 / (tileHeight / 2));
+            //int Y = (newY / tileHeight) - (newX / tileWidth) - (camera.screen.w / 2 / (tileWidth / 2));
+            //int X = ((newX + newY) / tileWidth) - (camera.screen.w / 2 / (tileWidth / 2));
+            //int Y = ((newY - newX) / tileHeight) - (camera.screen.h / 2 / (tileHeight / 2));
+            //int X = (newY + newX) / tileWidth / 2 - camera.screen.w / 2 / (tileWidth /2);
+            //int Y = (newY - newX) / tileWidth / 2 - camera.screen.h / 2 / (tileHeight/2);
+            //of the sidways rect encompassing the screen
+            int width = X + (camera.screen.w / tileWidth * 4);
+            int height = Y + (camera.screen.h / tileHeight * 3);
+            //int width = X + ((camera.screen.w + camera.screen.h) / tileWidth / 2);
+            //int height = Y + ((camera.screen.h + camera.screen.w) / tileHeight / 2);
+//		int h = 0;
+            int g = 0;
+            //int o = 0;
+            auto &tilesets = Maps::map.getTilesets();
+            int p = Maps::map.getTilesets().size() - 1;
+            for (int i = 0; i < layers.size(); i++) {
+                if (layers[i]->getType() == tmx::Layer::Type::Tile) {
+                    const auto &tiles = layers[i]->getLayerAs<tmx::TileLayer>().getTiles();
+                    if (i == 2) {
+                        /// renders all objects just above the 2nd layer but below the 3rd in tiled
+                        Animation_Frame(zone, camera);
+                        Render_Explosions(zone, camera);
+                    }
+                    for (int x = X; x < width; x++) {
+                        if (x < 0) { x = 0; }
+                        for (int y = Y; y < height; y++) {
+                            //h++;
+                            if (y < 0) { y = 0; }
+                            if (x >= numOfTiles.x) { break; }
+                            if (y >= numOfTiles.y) { break; }
+                            renderPosition.x = originX + (x * tileWidth / 2.0f) - (y * tileWidth / 2.0f);
+                            renderPosition.y = originY + (x * tileHeight / 2.0f) + (y * tileHeight / 2.0f);
+                            renderPosition.x -= camera.screen.x;;
+                            renderPosition.y -= camera.screen.y;;
+                            int k = (numOfTiles.x * y) + x;
+                            if (tiles[k].ID != 0) {
+                                auto id = tiles[k].ID;
+                                for (int tilesetCount = p; tilesetCount >= 0; --tilesetCount) {
+                                    const tmx::Tileset *tileset = &tilesets[tilesetCount];
+                                    if (tileset->getFirstGID() - 1 <= id) {
+                                        id -= tilesets[tilesetCount].getFirstGID() - 1;
+                                        std::string name = tileset->getName();
+                                        int tileCount = tileset->getColumnCount();
+                                        SDL_Rect data = getTexture(id, tileCount, tileSpriteRect);
+                                        if (Graphics::pTexture[name] != NULL) {
+                                            Graphics::Render_FRect(Graphics::pTexture[name], &data, &renderPosition);
+                                        }
+                                        //h++;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        g++;
+                    }
+                    if (i == 1) {
+
+                    }
                 }
-			}
-		}
+            }
 //		int ks = h + g;
+//        }
 	}
 
 	void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {
@@ -515,17 +527,6 @@ namespace Rendering {
 			}
 		}
 	}
-
-//	void RenderCullMode(entt::registry& zone) {
-//		if (renderType == true) {
-//			renderType = false;
-//			zone.clear<Component::Renderable>();
-//			}
-//		else {
-//			renderType = true;
-//			zone.clear<Component::Renderable>();
-//		}
-//	}
 
 	int Set_Render_Position_Alpha(float& screenEdge, float& renderEdge, float& yPosition) {
 		if (yPosition <= screenEdge) {
@@ -568,19 +569,6 @@ namespace Rendering {
 		}
 	}
 
-//	void Check_Renderable(entt::registry &zone) { //doesn't need to happen every frame
-//		fRenderable += Timer::timeStep;
-//		if (fRenderable >= 0) {
-//			fRenderable = 0;
-//			if (renderType) {
-////				Add_Remove_Renderable_Component(zone, camera);
-//			}
-//			else {
-////	            Vector_Renderable(Map::terrain);
-//			}
-//		}
-//	};
-
 	void Update_Cursor(Component::Camera& camera) {
 		int mx, my;
 		SDL_GetMouseState(&mx, &my);
@@ -618,7 +606,7 @@ namespace Rendering {
 		auto camera_view = zone.view<Component::Camera>();
 		for (auto entity : camera_view) {
 			auto& camera = camera_view.get<Component::Camera>(entity);
-			SDL_RenderClear(Graphics::renderer);
+//			SDL_RenderClear(Graphics::renderer);
 			Add_Remove_Renderable_Component(zone, camera);
 			sort_Positions(zone);
 			Render_Map(zone, Maps::map, camera);
@@ -627,6 +615,7 @@ namespace Rendering {
 //            RenderLine(zone, camera);
             //
 			Items::Show_Ground_Items(zone, camera);
+            Items::Unit_Name_On_Mouseover(zone, camera);
             Items::Name_On_Mouseover(zone, camera);
 			UI::Render_UI(zone, Graphics::renderer, camera);
 			Character_Stats::Render_Character_Stats(zone, camera);
@@ -634,7 +623,7 @@ namespace Rendering {
 			Damage_Text::Show_Damage(zone, camera);
             UI_Resources::Render_Resources(zone, camera);
             UI_Spellbook::Draw_Spellbook();
-            Menu::Render();
+            Menu::Render_Menu();
             //Mouse
             Interface::Run_Interface(zone, camera);
             //on top of mouse

@@ -1,6 +1,7 @@
 #include "timer.h"
 #include "graphics.h"
 #include "SDL2/SDL.h"
+#include "SDL_FontCache.h"
 
 namespace Menu {
     bool toggleMenu = false;
@@ -12,6 +13,8 @@ namespace Menu {
     }
 
     void Menu_List () {
+
+
 
      //   SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 200);
       //  SDL_FRect rect = {Graphics::resolution.x ,0, 200, 600};
@@ -29,7 +32,7 @@ namespace Menu {
         }
     }
 
-    void Render() {
+    void Render_Menu() {
         if (toggleMenu) {
             Overlay();
             Menu_List();

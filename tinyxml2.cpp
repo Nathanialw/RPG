@@ -1135,7 +1135,7 @@ char* XMLNode::ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr )
             }
 
             // Handle an end tag returned to this level.
-            // And handle a bunch of annoying errors.
+            // And name a bunch of annoying errors.
             bool mismatch = false;
             if ( endTag.Empty() ) {
                 if ( ele->ClosingType() == XMLElement::OPEN ) {
@@ -2364,7 +2364,7 @@ XMLError XMLDocument::LoadFile( FILE* fp )
     // We'll do the comparison as an unsigned long long, because that's guaranteed to be at
     // least 8 bytes, even on a 32-bit platform.
     if ( filelength >= static_cast<unsigned long long>(maxSizeT) ) {
-        // Cannot handle files which won't fit in buffer together with null terminator
+        // Cannot name files which won't fit in buffer together with null terminator
         SetError( XML_ERROR_FILE_READ_ERROR, 0, 0 );
         return _errorID;
     }

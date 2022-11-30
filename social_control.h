@@ -11,7 +11,6 @@ namespace Social_Component {
         int races[14];
         std::unordered_map<entt::entity, int> connections;
     };
-
 }
 
 namespace  Social_Control {
@@ -43,7 +42,6 @@ namespace  Social_Control {
 
         Utilities::Log("talking to a friend!");
     }
-
 
 
 }

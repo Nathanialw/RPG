@@ -46,7 +46,7 @@ namespace Death_Spells {
 		zone.emplace<Component::Velocity>(skeleton0, 0.f, 0.0f, 0.f, 0.0f, data.speed);
 
 		zone.emplace<Component::Direction>(skeleton0, Component::Direction::SE);
-		zone.emplace<Component::handle>(skeleton0, name);
+		zone.emplace<Component::Name>(skeleton0, name);
 		zone.emplace<Component::Mass>(skeleton0, data.mass);
 		
 		zone.emplace<Component::Alive>(skeleton0, true);

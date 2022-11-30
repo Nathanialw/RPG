@@ -10711,7 +10711,7 @@ private:
 
 #endif
 
-// #include "entity/handle.hpp"
+// #include "entity/name.hpp"
 #ifndef ENTT_ENTITY_HANDLE_HPP
 #define ENTT_ENTITY_HANDLE_HPP
 
@@ -20431,16 +20431,16 @@ namespace entt {
 
 
 /**
- * @brief Non-owning handle to an entity.
+ * @brief Non-owning name to an entity.
  *
  * Tiny wrapper around a registry and an entity.
  *
  * @tparam Entity A valid entity type (see entt_traits for more details).
- * @tparam Type Types to which to restrict the scope of a handle.
+ * @tparam Type Types to which to restrict the scope of a name.
  */
 template<typename Entity, typename... Type>
 struct basic_handle {
-    /*! @brief Type of registry accepted by the handle. */
+    /*! @brief Type of registry accepted by the name. */
     using registry_type = constness_as_t<basic_registry<std::remove_const_t<Entity>>, Entity>;
     /*! @brief Underlying entity identifier. */
     using entity_type = typename registry_type::entity_type;
@@ -20449,13 +20449,13 @@ struct basic_handle {
     /*! @brief Unsigned integer type. */
     using size_type = typename registry_type::size_type;
 
-    /*! @brief Constructs an invalid handle. */
+    /*! @brief Constructs an invalid name. */
     basic_handle() ENTT_NOEXCEPT
         : reg{}, entt{null}
     {}
 
     /**
-     * @brief Constructs a handle from a given registry and entity.
+     * @brief Constructs a name from a given registry and entity.
      * @param ref An instance of the registry class.
      * @param value An entity identifier.
      */
@@ -20465,7 +20465,7 @@ struct basic_handle {
 
     /**
      * @brief Compares two handles.
-     * @tparam Args Template parameters of the handle with which to compare.
+     * @tparam Args Template parameters of the name with which to compare.
      * @param other Handle with which to compare.
      * @return True if both handles refer to the same registry and the same
      * entity, false otherwise.
@@ -20476,10 +20476,10 @@ struct basic_handle {
     }
 
     /**
-     * @brief Constructs a const handle from a non-const one.
+     * @brief Constructs a const name from a non-const one.
      * @tparam Other A valid entity type (see entt_traits for more details).
-     * @tparam Args Scope of the handle to construct.
-     * @return A const handle referring to the same registry and the same
+     * @tparam Args Scope of the name to construct.
+     * @return A const name referring to the same registry and the same
      * entity.
      */
     template<typename Other, typename... Args>
@@ -20494,7 +20494,7 @@ struct basic_handle {
     }
 
     /**
-     * @brief Converts a handle to its underlying entity.
+     * @brief Converts a name to its underlying entity.
      * @return An entity identifier.
      */
     [[nodiscard]] operator entity_type() const ENTT_NOEXCEPT {
@@ -20502,16 +20502,16 @@ struct basic_handle {
     }
 
     /**
-     * @brief Checks if a handle refers to non-null registry pointer and entity.
-     * @return True if the handle refers to non-null registry and entity, false otherwise.
+     * @brief Checks if a name refers to non-null registry pointer and entity.
+     * @return True if the name refers to non-null registry and entity, false otherwise.
      */
     [[nodiscard]] explicit operator bool() const ENTT_NOEXCEPT {
         return reg && reg->valid(entt);
     }
 
     /**
-     * @brief Checks if a handle refers to a valid entity or not.
-     * @return True if the handle refers to a valid entity, false otherwise.
+     * @brief Checks if a name refers to a valid entity or not.
+     * @return True if the name refers to a valid entity, false otherwise.
      */
     [[nodiscard]] bool valid() const {
         return reg->valid(entt);
@@ -20526,15 +20526,15 @@ struct basic_handle {
     }
 
     /**
-     * @brief Returns the entity associated with a handle.
-     * @return The entity associated with the handle.
+     * @brief Returns the entity associated with a name.
+     * @return The entity associated with the name.
      */
     [[nodiscard]] entity_type entity() const ENTT_NOEXCEPT {
         return entt;
     }
 
     /**
-     * @brief Destroys the entity associated with a handle.
+     * @brief Destroys the entity associated with a name.
      * @sa basic_registry::destroy
      */
     void destroy() {
@@ -20542,7 +20542,7 @@ struct basic_handle {
     }
 
     /**
-     * @brief Destroys the entity associated with a handle.
+     * @brief Destroys the entity associated with a name.
      * @sa basic_registry::destroy
      * @param version A desired version upon destruction.
      */
@@ -20551,7 +20551,7 @@ struct basic_handle {
     }
 
     /**
-     * @brief Assigns the given component to a handle.
+     * @brief Assigns the given component to a name.
      * @sa basic_registry::emplace
      * @tparam Component Type of component to create.
      * @tparam Args Types of arguments to use to construct the component.
@@ -20565,7 +20565,7 @@ struct basic_handle {
     }
 
     /**
-     * @brief Assigns or replaces the given component for a handle.
+     * @brief Assigns or replaces the given component for a name.
      * @sa basic_registry::emplace_or_replace
      * @tparam Component Type of component to assign or replace.
      * @tparam Args Types of arguments to use to construct the component.
@@ -20579,7 +20579,7 @@ struct basic_handle {
     }
 
     /**
-     * @brief Patches the given component for a handle.
+     * @brief Patches the given component for a name.
      * @sa basic_registry::patch
      * @tparam Component Type of component to patch.
      * @tparam Func Types of the function objects to invoke.
@@ -20593,7 +20593,7 @@ struct basic_handle {
     }
 
     /**
-     * @brief Replaces the given component for a handle.
+     * @brief Replaces the given component for a name.
      * @sa basic_registry::replace
      * @tparam Component Type of component to replace.
      * @tparam Args Types of arguments to use to construct the component.
@@ -20607,7 +20607,7 @@ struct basic_handle {
     }
 
     /**
-     * @brief Removes the given components from a handle.
+     * @brief Removes the given components from a name.
      * @sa basic_registry::remove
      * @tparam Component Types of components to remove.
      * @return The number of components actually removed.
@@ -20619,7 +20619,7 @@ struct basic_handle {
     }
 
     /**
-     * @brief Erases the given components from a handle.
+     * @brief Erases the given components from a name.
      * @sa basic_registry::erase
      * @tparam Component Types of components to erase.
      */
@@ -20637,7 +20637,7 @@ struct basic_handle {
     }
 
     /**
-     * @brief Removes all the components from a handle and makes it orphaned.
+     * @brief Removes all the components from a name and makes it orphaned.
      * @sa basic_registry::remove_all
      */
     [[deprecated("No longer supported")]]
@@ -20647,10 +20647,10 @@ struct basic_handle {
     }
 
     /**
-     * @brief Checks if a handle has all the given components.
+     * @brief Checks if a name has all the given components.
      * @sa basic_registry::all_of
      * @tparam Component Components for which to perform the check.
-     * @return True if the handle has all the components, false otherwise.
+     * @return True if the name has all the components, false otherwise.
      */
     template<typename... Component>
     [[nodiscard]] decltype(auto) all_of() const {
@@ -20658,10 +20658,10 @@ struct basic_handle {
     }
 
     /**
-     * @brief Checks if a handle has at least one of the given components.
+     * @brief Checks if a name has at least one of the given components.
      * @sa basic_registry::any_of
      * @tparam Component Components for which to perform the check.
-     * @return True if the handle has at least one of the given components,
+     * @return True if the name has at least one of the given components,
      * false otherwise.
      */
     template<typename... Component>
@@ -20670,10 +20670,10 @@ struct basic_handle {
     }
 
     /**
-     * @brief Returns references to the given components for a handle.
+     * @brief Returns references to the given components for a name.
      * @sa basic_registry::get
      * @tparam Component Types of components to get.
-     * @return References to the components owned by the handle.
+     * @return References to the components owned by the name.
      */
     template<typename... Component>
     [[nodiscard]] decltype(auto) get() const {
@@ -20682,12 +20682,12 @@ struct basic_handle {
     }
 
     /**
-     * @brief Returns a reference to the given component for a handle.
+     * @brief Returns a reference to the given component for a name.
      * @sa basic_registry::get_or_emplace
      * @tparam Component Type of component to get.
      * @tparam Args Types of arguments to use to construct the component.
      * @param args Parameters to use to initialize the component.
-     * @return Reference to the component owned by the handle.
+     * @return Reference to the component owned by the name.
      */
     template<typename Component, typename... Args>
     [[nodiscard]] decltype(auto) get_or_emplace(Args &&... args) const {
@@ -20696,10 +20696,10 @@ struct basic_handle {
     }
 
     /**
-     * @brief Returns pointers to the given components for a handle.
+     * @brief Returns pointers to the given components for a name.
      * @sa basic_registry::try_get
      * @tparam Component Types of components to get.
-     * @return Pointers to the components owned by the handle.
+     * @return Pointers to the components owned by the name.
      */
     template<typename... Component>
     [[nodiscard]] auto try_get() const {
@@ -20708,15 +20708,15 @@ struct basic_handle {
     }
 
     /**
-     * @brief Checks if a handle has components assigned.
-     * @return True if the handle has no components assigned, false otherwise.
+     * @brief Checks if a name has components assigned.
+     * @return True if the name has no components assigned, false otherwise.
      */
     [[nodiscard]] bool orphan() const {
         return reg->orphan(entt);
     }
 
     /**
-     * @brief Visits a handle and returns the types for its components.
+     * @brief Visits a name and returns the types for its components.
      * @sa basic_registry::visit
      * @tparam Func Type of the function object to invoke.
      * @param func A valid function object.
@@ -20736,8 +20736,8 @@ private:
  * @brief Compares two handles.
  * @tparam Type A valid entity type (see entt_traits for more details).
  * @tparam Other A valid entity type (see entt_traits for more details).
- * @param lhs A valid handle.
- * @param rhs A valid handle.
+ * @param lhs A valid name.
+ * @param rhs A valid name.
  * @return False if both handles refer to the same registry and the same
  * entity, true otherwise.
  */
@@ -33315,7 +33315,7 @@ meta_any forward_as_meta(Type &&value) {
 /**
  * @brief Opaque pointers to instances of any type.
  *
- * A handle doesn't perform copies and isn't responsible for the contained
+ * A name doesn't perform copies and isn't responsible for the contained
  * object. It doesn't prolong the lifetime of the pointed instance.<br/>
  * Handles are used to generate references to actual objects when needed.
  */
@@ -33332,20 +33332,20 @@ struct meta_handle {
 
     /**
      * @brief Default copy assignment operator, deleted on purpose.
-     * @return This meta handle.
+     * @return This meta name.
      */
     meta_handle & operator=(const meta_handle &) = delete;
 
     /**
      * @brief Default move assignment operator.
-     * @return This meta handle.
+     * @return This meta name.
      */
     meta_handle & operator=(meta_handle &&) = default;
 
     /**
-     * @brief Creates a handle that points to an unmanaged object.
-     * @tparam Type Type of object to use to initialize the handle.
-     * @param value An instance of an object to use to initialize the handle.
+     * @brief Creates a name that points to an unmanaged object.
+     * @tparam Type Type of object to use to initialize the name.
+     * @param value An instance of an object to use to initialize the name.
      */
     template<typename Type, typename = std::enable_if_t<!std::is_same_v<std::decay_t<Type>, meta_handle>>>
     meta_handle(Type &value) ENTT_NOEXCEPT
@@ -33359,8 +33359,8 @@ struct meta_handle {
     }
 
     /**
-     * @brief Returns false if a handle is invalid, true otherwise.
-     * @return False if the handle is invalid, true otherwise.
+     * @brief Returns false if a name is invalid, true otherwise.
+     * @return False if the name is invalid, true otherwise.
      */
     [[nodiscard]] explicit operator bool() const ENTT_NOEXCEPT {
         return static_cast<bool>(any);
@@ -36506,7 +36506,7 @@ meta_any forward_as_meta(Type &&value) {
 /**
  * @brief Opaque pointers to instances of any type.
  *
- * A handle doesn't perform copies and isn't responsible for the contained
+ * A name doesn't perform copies and isn't responsible for the contained
  * object. It doesn't prolong the lifetime of the pointed instance.<br/>
  * Handles are used to generate references to actual objects when needed.
  */
@@ -36523,20 +36523,20 @@ struct meta_handle {
 
     /**
      * @brief Default copy assignment operator, deleted on purpose.
-     * @return This meta handle.
+     * @return This meta name.
      */
     meta_handle & operator=(const meta_handle &) = delete;
 
     /**
      * @brief Default move assignment operator.
-     * @return This meta handle.
+     * @return This meta name.
      */
     meta_handle & operator=(meta_handle &&) = default;
 
     /**
-     * @brief Creates a handle that points to an unmanaged object.
-     * @tparam Type Type of object to use to initialize the handle.
-     * @param value An instance of an object to use to initialize the handle.
+     * @brief Creates a name that points to an unmanaged object.
+     * @tparam Type Type of object to use to initialize the name.
+     * @param value An instance of an object to use to initialize the name.
      */
     template<typename Type, typename = std::enable_if_t<!std::is_same_v<std::decay_t<Type>, meta_handle>>>
     meta_handle(Type &value) ENTT_NOEXCEPT
@@ -36550,8 +36550,8 @@ struct meta_handle {
     }
 
     /**
-     * @brief Returns false if a handle is invalid, true otherwise.
-     * @return False if the handle is invalid, true otherwise.
+     * @brief Returns false if a name is invalid, true otherwise.
+     * @return False if the name is invalid, true otherwise.
      */
     [[nodiscard]] explicit operator bool() const ENTT_NOEXCEPT {
         return static_cast<bool>(any);
@@ -43925,7 +43925,7 @@ using any = basic_any<>;
 
 #endif
 
-// #include "handle.hpp"
+// #include "name.hpp"
 #ifndef ENTT_RESOURCE_HANDLE_HPP
 #define ENTT_RESOURCE_HANDLE_HPP
 
@@ -43966,16 +43966,16 @@ namespace entt {
 
 
 /**
- * @brief Shared resource handle.
+ * @brief Shared resource name.
  *
- * A shared resource handle is a small class that wraps a resource and keeps it
+ * A shared resource name is a small class that wraps a resource and keeps it
  * alive even if it's deleted from the cache. It can be either copied or
- * moved. A handle shares a reference to the same resource with all the other
+ * moved. A name shares a reference to the same resource with all the other
  * handles constructed for the same identifier.<br/>
  * As a rule of thumb, resources should never be copied nor moved. Handles are
  * the way to go to keep references to them.
  *
- * @tparam Resource Type of resource managed by a handle.
+ * @tparam Resource Type of resource managed by a name.
  */
 template<typename Resource>
 class resource_handle {
@@ -43988,7 +43988,7 @@ public:
     resource_handle() ENTT_NOEXCEPT = default;
 
     /**
-     * @brief Creates a handle from a shared pointer, namely a resource.
+     * @brief Creates a name from a shared pointer, namely a resource.
      * @param res A pointer to a properly initialized resource.
      */
     resource_handle(std::shared_ptr<Resource> res) ENTT_NOEXCEPT
@@ -44008,9 +44008,9 @@ public:
     resource_handle(resource_handle<Resource> &&other) ENTT_NOEXCEPT = default;
 
     /**
-     * @brief Copy constructs a handle which shares ownership of the resource.
-     * @tparam Other Type of resource managed by the received handle.
-     * @param other The handle to copy from.
+     * @brief Copy constructs a name which shares ownership of the resource.
+     * @tparam Other Type of resource managed by the received name.
+     * @param other The name to copy from.
      */
     template<typename Other, typename = std::enable_if_t<!std::is_same_v<Other, Resource> && std::is_base_of_v<Resource, Other>>>
     resource_handle(const resource_handle<Other> &other) ENTT_NOEXCEPT
@@ -44018,9 +44018,9 @@ public:
     {}
 
     /**
-     * @brief Move constructs a handle which takes ownership of the resource.
-     * @tparam Other Type of resource managed by the received handle.
-     * @param other The handle to move from.
+     * @brief Move constructs a name which takes ownership of the resource.
+     * @tparam Other Type of resource managed by the received name.
+     * @param other The name to move from.
      */
     template<typename Other, typename = std::enable_if_t<!std::is_same_v<Other, Resource> && std::is_base_of_v<Resource, Other>>>
     resource_handle(resource_handle<Other> &&other) ENTT_NOEXCEPT
@@ -44030,22 +44030,22 @@ public:
     /**
      * @brief Copy assignment operator.
      * @param other The instance to copy from.
-     * @return This resource handle.
+     * @return This resource name.
      */
     resource_handle & operator=(const resource_handle<Resource> &other) ENTT_NOEXCEPT = default;
 
     /**
      * @brief Move assignment operator.
      * @param other The instance to move from.
-     * @return This resource handle.
+     * @return This resource name.
      */
     resource_handle & operator=(resource_handle<Resource> &&other) ENTT_NOEXCEPT = default;
 
     /**
-     * @brief Copy assignment operator from foreign handle.
-     * @tparam Other Type of resource managed by the received handle.
-     * @param other The handle to copy from.
-     * @return This resource handle.
+     * @brief Copy assignment operator from foreign name.
+     * @tparam Other Type of resource managed by the received name.
+     * @param other The name to copy from.
+     * @return This resource name.
      */
     template<typename Other>
     std::enable_if_t<!std::is_same_v<Other, Resource> && std::is_base_of_v<Resource, Other>, resource_handle &>
@@ -44055,10 +44055,10 @@ public:
     }
 
     /**
-     * @brief Move assignment operator from foreign handle.
-     * @tparam Other Type of resource managed by the received handle.
-     * @param other The handle to move from.
-     * @return This resource handle.
+     * @brief Move assignment operator from foreign name.
+     * @tparam Other Type of resource managed by the received name.
+     * @param other The name to move from.
+     * @return This resource name.
      */
     template<typename Other>
     std::enable_if_t<!std::is_same_v<Other, Resource> && std::is_base_of_v<Resource, Other>, resource_handle &>
@@ -44071,7 +44071,7 @@ public:
      * @brief Gets a reference to the managed resource.
      *
      * @warning
-     * The behavior is undefined if the handle doesn't contain a resource.
+     * The behavior is undefined if the name doesn't contain a resource.
      *
      * @return A reference to the managed resource.
      */
@@ -44109,9 +44109,9 @@ public:
      * @brief Gets a pointer to the managed resource.
      *
      * @warning
-     * The behavior is undefined if the handle doesn't contain a resource.
+     * The behavior is undefined if the name doesn't contain a resource.
      *
-     * @return A pointer to the managed resource or `nullptr` if the handle
+     * @return A pointer to the managed resource or `nullptr` if the name
      * contains no resource at all.
      */
     [[nodiscard]] const Resource * operator->() const ENTT_NOEXCEPT {
@@ -44124,8 +44124,8 @@ public:
     }
 
     /**
-     * @brief Returns true if a handle contains a resource, false otherwise.
-     * @return True if the handle contains a resource, false otherwise.
+     * @brief Returns true if a name contains a resource, false otherwise.
+     * @return True if the name contains a resource, false otherwise.
      */
     [[nodiscard]] explicit operator bool() const ENTT_NOEXCEPT {
         return static_cast<bool>(resource);
@@ -44148,7 +44148,7 @@ private:
 
 // #include "fwd.hpp"
 
-// #include "handle.hpp"
+// #include "name.hpp"
 
 
 
@@ -44161,7 +44161,7 @@ namespace entt {
  * Resource loaders must inherit from this class and stay true to the CRTP
  * idiom. Moreover, a resource loader must expose a public, const member
  * function named `load` that accepts a variable number of arguments and returns
- * a handle to the resource just created.<br/>
+ * a name to the resource just created.<br/>
  * As an example:
  *
  * @code{.cpp}
@@ -44264,7 +44264,7 @@ struct resource_cache {
      * @brief Clears a cache and discards all its resources.
      *
      * Handles are not invalidated and the memory used by a resource isn't
-     * freed as long as at least a handle keeps the resource itself alive.
+     * freed as long as at least a name keeps the resource itself alive.
      */
     void clear() ENTT_NOEXCEPT {
         resources.clear();
@@ -44283,14 +44283,14 @@ struct resource_cache {
      * nothing and the arguments are simply discarded.
      *
      * @warning
-     * If the resource cannot be loaded correctly, the returned handle will be
+     * If the resource cannot be loaded correctly, the returned name will be
      * invalid and any use of it will result in undefined behavior.
      *
      * @tparam Loader Type of loader to use to load the resource if required.
      * @tparam Args Types of arguments to use to load the resource if required.
      * @param id Unique resource identifier.
      * @param args Arguments to use to load the resource if required.
-     * @return A handle for the given resource.
+     * @return A name for the given resource.
      */
     template<typename Loader, typename... Args>
     resource_handle<Resource> load(const id_type id, Args &&... args) {
@@ -44319,14 +44319,14 @@ struct resource_cache {
      * properly the requested resource.
      *
      * @warning
-     * If the resource cannot be loaded correctly, the returned handle will be
+     * If the resource cannot be loaded correctly, the returned name will be
      * invalid and any use of it will result in undefined behavior.
      *
      * @tparam Loader Type of loader to use to load the resource.
      * @tparam Args Types of arguments to use to load the resource.
      * @param id Unique resource identifier.
      * @param args Arguments to use to load the resource.
-     * @return A handle for the given resource.
+     * @return A name for the given resource.
      */
     template<typename Loader, typename... Args>
     resource_handle<Resource> reload(const id_type id, Args &&... args) {
@@ -44334,16 +44334,16 @@ struct resource_cache {
     }
 
     /**
-     * @brief Creates a temporary handle for a resource.
+     * @brief Creates a temporary name for a resource.
      *
      * Arguments are forwarded directly to the loader in order to construct
-     * properly the requested resource. The handle isn't stored aside and the
+     * properly the requested resource. The name isn't stored aside and the
      * cache isn't in charge of the lifetime of the resource itself.
      *
      * @tparam Loader Type of loader to use to load the resource.
      * @tparam Args Types of arguments to use to load the resource.
      * @param args Arguments to use to load the resource.
-     * @return A handle for the given resource.
+     * @return A name for the given resource.
      */
     template<typename Loader, typename... Args>
     [[nodiscard]] resource_handle<Resource> temp(Args &&... args) const {
@@ -44351,17 +44351,17 @@ struct resource_cache {
     }
 
     /**
-     * @brief Creates a handle for a given resource identifier.
+     * @brief Creates a name for a given resource identifier.
      *
-     * A resource handle can be in a either valid or invalid state. In other
-     * terms, a resource handle is properly initialized with a resource if the
-     * cache contains the resource itself. Otherwise the returned handle is
+     * A resource name can be in a either valid or invalid state. In other
+     * terms, a resource name is properly initialized with a resource if the
+     * cache contains the resource itself. Otherwise the returned name is
      * uninitialized and accessing it results in undefined behavior.
      *
      * @sa resource_handle
      *
      * @param id Unique resource identifier.
-     * @return A handle for the given resource.
+     * @return A name for the given resource.
      */
     [[nodiscard]] resource_handle<Resource> handle(const id_type id) const {
         if(auto it = resources.find(id); it != resources.cend()) {
@@ -44384,7 +44384,7 @@ struct resource_cache {
      * @brief Discards the resource that corresponds to a given identifier.
      *
      * Handles are not invalidated and the memory used by the resource isn't
-     * freed as long as at least a handle keeps the resource itself alive.
+     * freed as long as at least a name keeps the resource itself alive.
      *
      * @param id Unique resource identifier.
      */
@@ -44398,7 +44398,7 @@ struct resource_cache {
      * @brief Iterates all resources.
      *
      * The function object is invoked for each element. It is provided with
-     * either the resource identifier, the resource handle or both of them.<br/>
+     * either the resource identifier, the resource name or both of them.<br/>
      * The signature of the function must be equivalent to one of the following
      * forms:
      *
@@ -44439,7 +44439,7 @@ private:
 
 #endif
 
-// #include "resource/handle.hpp"
+// #include "resource/name.hpp"
 #ifndef ENTT_RESOURCE_HANDLE_HPP
 #define ENTT_RESOURCE_HANDLE_HPP
 
@@ -44457,16 +44457,16 @@ namespace entt {
 
 
 /**
- * @brief Shared resource handle.
+ * @brief Shared resource name.
  *
- * A shared resource handle is a small class that wraps a resource and keeps it
+ * A shared resource name is a small class that wraps a resource and keeps it
  * alive even if it's deleted from the cache. It can be either copied or
- * moved. A handle shares a reference to the same resource with all the other
+ * moved. A name shares a reference to the same resource with all the other
  * handles constructed for the same identifier.<br/>
  * As a rule of thumb, resources should never be copied nor moved. Handles are
  * the way to go to keep references to them.
  *
- * @tparam Resource Type of resource managed by a handle.
+ * @tparam Resource Type of resource managed by a name.
  */
 template<typename Resource>
 class resource_handle {
@@ -44479,7 +44479,7 @@ public:
     resource_handle() ENTT_NOEXCEPT = default;
 
     /**
-     * @brief Creates a handle from a shared pointer, namely a resource.
+     * @brief Creates a name from a shared pointer, namely a resource.
      * @param res A pointer to a properly initialized resource.
      */
     resource_handle(std::shared_ptr<Resource> res) ENTT_NOEXCEPT
@@ -44499,9 +44499,9 @@ public:
     resource_handle(resource_handle<Resource> &&other) ENTT_NOEXCEPT = default;
 
     /**
-     * @brief Copy constructs a handle which shares ownership of the resource.
-     * @tparam Other Type of resource managed by the received handle.
-     * @param other The handle to copy from.
+     * @brief Copy constructs a name which shares ownership of the resource.
+     * @tparam Other Type of resource managed by the received name.
+     * @param other The name to copy from.
      */
     template<typename Other, typename = std::enable_if_t<!std::is_same_v<Other, Resource> && std::is_base_of_v<Resource, Other>>>
     resource_handle(const resource_handle<Other> &other) ENTT_NOEXCEPT
@@ -44509,9 +44509,9 @@ public:
     {}
 
     /**
-     * @brief Move constructs a handle which takes ownership of the resource.
-     * @tparam Other Type of resource managed by the received handle.
-     * @param other The handle to move from.
+     * @brief Move constructs a name which takes ownership of the resource.
+     * @tparam Other Type of resource managed by the received name.
+     * @param other The name to move from.
      */
     template<typename Other, typename = std::enable_if_t<!std::is_same_v<Other, Resource> && std::is_base_of_v<Resource, Other>>>
     resource_handle(resource_handle<Other> &&other) ENTT_NOEXCEPT
@@ -44521,22 +44521,22 @@ public:
     /**
      * @brief Copy assignment operator.
      * @param other The instance to copy from.
-     * @return This resource handle.
+     * @return This resource name.
      */
     resource_handle & operator=(const resource_handle<Resource> &other) ENTT_NOEXCEPT = default;
 
     /**
      * @brief Move assignment operator.
      * @param other The instance to move from.
-     * @return This resource handle.
+     * @return This resource name.
      */
     resource_handle & operator=(resource_handle<Resource> &&other) ENTT_NOEXCEPT = default;
 
     /**
-     * @brief Copy assignment operator from foreign handle.
-     * @tparam Other Type of resource managed by the received handle.
-     * @param other The handle to copy from.
-     * @return This resource handle.
+     * @brief Copy assignment operator from foreign name.
+     * @tparam Other Type of resource managed by the received name.
+     * @param other The name to copy from.
+     * @return This resource name.
      */
     template<typename Other>
     std::enable_if_t<!std::is_same_v<Other, Resource> && std::is_base_of_v<Resource, Other>, resource_handle &>
@@ -44546,10 +44546,10 @@ public:
     }
 
     /**
-     * @brief Move assignment operator from foreign handle.
-     * @tparam Other Type of resource managed by the received handle.
-     * @param other The handle to move from.
-     * @return This resource handle.
+     * @brief Move assignment operator from foreign name.
+     * @tparam Other Type of resource managed by the received name.
+     * @param other The name to move from.
+     * @return This resource name.
      */
     template<typename Other>
     std::enable_if_t<!std::is_same_v<Other, Resource> && std::is_base_of_v<Resource, Other>, resource_handle &>
@@ -44562,7 +44562,7 @@ public:
      * @brief Gets a reference to the managed resource.
      *
      * @warning
-     * The behavior is undefined if the handle doesn't contain a resource.
+     * The behavior is undefined if the name doesn't contain a resource.
      *
      * @return A reference to the managed resource.
      */
@@ -44600,9 +44600,9 @@ public:
      * @brief Gets a pointer to the managed resource.
      *
      * @warning
-     * The behavior is undefined if the handle doesn't contain a resource.
+     * The behavior is undefined if the name doesn't contain a resource.
      *
-     * @return A pointer to the managed resource or `nullptr` if the handle
+     * @return A pointer to the managed resource or `nullptr` if the name
      * contains no resource at all.
      */
     [[nodiscard]] const Resource * operator->() const ENTT_NOEXCEPT {
@@ -44615,8 +44615,8 @@ public:
     }
 
     /**
-     * @brief Returns true if a handle contains a resource, false otherwise.
-     * @return True if the handle contains a resource, false otherwise.
+     * @brief Returns true if a name contains a resource, false otherwise.
+     * @return True if the name contains a resource, false otherwise.
      */
     [[nodiscard]] explicit operator bool() const ENTT_NOEXCEPT {
         return static_cast<bool>(resource);
@@ -44639,7 +44639,7 @@ private:
 
 // #include "fwd.hpp"
 
-// #include "handle.hpp"
+// #include "name.hpp"
 
 
 
@@ -44652,7 +44652,7 @@ namespace entt {
  * Resource loaders must inherit from this class and stay true to the CRTP
  * idiom. Moreover, a resource loader must expose a public, const member
  * function named `load` that accepts a variable number of arguments and returns
- * a handle to the resource just created.<br/>
+ * a name to the resource just created.<br/>
  * As an example:
  *
  * @code{.cpp}

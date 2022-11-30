@@ -144,7 +144,7 @@ Uint8 FC_LoadFont_RW(FC_Font* font, SDL_Renderer* renderer, SDL_RWops* file_rwop
 #endif
 
 #ifndef FC_USE_SDL_GPU
-// note: handle SDL event types SDL_RENDER_TARGETS_RESET(>= SDL 2.0.2) and SDL_RENDER_DEVICE_RESET(>= SDL 2.0.4)
+// note: name SDL event types SDL_RENDER_TARGETS_RESET(>= SDL 2.0.2) and SDL_RENDER_DEVICE_RESET(>= SDL 2.0.4)
 void FC_ResetFontFromRendererReset(FC_Font* font, SDL_Renderer* renderer, Uint32 evType);
 #endif
 

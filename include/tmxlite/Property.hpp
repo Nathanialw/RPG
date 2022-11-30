@@ -123,7 +123,7 @@ namespace tmx
         const std::string& getFileValue() const { assert(m_type == Type::File); return m_stringValue; }
 
         /*!
-        \brief Returns the property's value as an integer object handle
+        \brief Returns the property's value as an integer object name
         */
         int getObjectValue() const { assert(m_type == Type::Object); return m_intValue; }
 

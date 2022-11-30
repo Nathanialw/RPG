@@ -13,6 +13,7 @@
 #include "world.h"
 #include "item_components.h"
 #include "social_control.h"
+#include "character_data.h"
 
 //cell 100x100 pixels (change pixels to a meters??)
 //map 100 cells x 100 cells
@@ -110,7 +111,7 @@ namespace Maps {
 
             /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
             zone.emplace<Component::Direction>(entity, Component::Direction::W);
-            zone.emplace<Component::handle>(entity, name);
+            zone.emplace<Component::Name>(entity, name);
             zone.emplace<Component::Mass>(entity, 100.0f);
             zone.emplace<Component::Alive>(entity, true);
 
@@ -175,31 +176,32 @@ namespace Maps {
         auto &radius = zone.emplace<Component::Radius>(entity, (data.radius * data.scale));
         zone.emplace<Component::Interaction_Rect>(entity, (x - data.interact_r) * data.scale, (y - data.interact_h / 2.0f) * data.scale, (data.interact_r * 2.0f) * data.scale, data.interact_h * data.scale);
 
-
-        zone.emplace<Component::handle>(entity, name);
         zone.emplace<Component::Mass>(entity, data.mass * data.scale);
         zone.emplace<Component::Alive>(entity, true);
+        zone.emplace<Component::Unit>(entity);
+        zone.emplace<Component::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
+
+        auto &full_name = zone.emplace<Component::Name>(entity);
+        Character_Data::Get_Name(full_name);
+
+        auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
 
         //if RTP_pieces type
         if (packerframeData) {
-           auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
            sprite.sheetData = packerframeData;
            sprite.sheet_name = name;
            sprite.type = "RPG_Tools";
-           auto offset = Texture_Packer::Get_Sprite_Offets_From_db(sheetname);
-           zone.emplace<Component::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
         }
         else {
-            auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
             sprite.flareSpritesheet = flareSheetData;
             sprite.sheet_name = name;
             sprite.type = sheetDataFlare.sheet_type;
-            zone.emplace<Component::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
         }
 
         //dynamic entities
         if (data.body_type == 1) {
             zone.emplace<Component::Direction>(entity, Component::Direction::S);
+
             auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
             zone.emplace<Social_Component::Race>(entity, raceData[0]);
             auto &relationships = zone.emplace<Social_Component::Relationships>(entity);

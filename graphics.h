@@ -43,6 +43,7 @@ namespace Graphics {
 
     std::array<SDL_Texture*, numberOfTextures> spellTextures;
     std::array<SDL_Texture*, numberOfTextures> environmentTextures;
+    std::array<SDL_Texture*, numberOfTextures> UITextures;
 //    std::map<std::string, SDL_Texture*> itemTextures;
 
 
@@ -119,6 +120,8 @@ namespace Graphics {
         SDL_Rect textBoxBackground = Utilities::SDL_FRect_To_SDL_Rect(textBox);
         textBoxBackground.x -= 5;
         textBoxBackground.w += 10;
+
+
 
         Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(text, textColor);
 
