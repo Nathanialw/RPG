@@ -49,11 +49,11 @@ namespace Input_Control {
 			return true;
 		}
 
-        zone.remove<Component::Pickup_Item>(player_ID);
-        zone.remove<Component::Moving>(player_ID);
-        zone.remove<Player_Component::Attack_Move>(player_ID);
 
         if (showGroundItems) {
+            zone.remove<Component::Pickup_Item>(player_ID);
+            zone.remove<Component::Moving>(player_ID);
+            zone.remove<Player_Component::Attack_Move>(player_ID);
             auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();
             for (auto item_ID: view) {
                     ///get the item ID the mouse is over nad plug it into the move to pick up function
@@ -69,6 +69,9 @@ namespace Input_Control {
         SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorSize, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
         Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);
 		if (targetData.b == true) {
+            zone.remove<Component::Pickup_Item>(player_ID);
+            zone.remove<Component::Moving>(player_ID);
+            zone.remove<Player_Component::Attack_Move>(player_ID);
                 ///reset target data
 			Component::Entity_Type& type = zone.get<Component::Entity_Type>(targetData.entity_ID);
             Component::Position& targetPosition = zone.get<Component::Position>(targetData.entity_ID);

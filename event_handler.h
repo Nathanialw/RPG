@@ -128,10 +128,13 @@ namespace Event_Handler {
 					}
 				}
                 if (Mouse::itemCurrentlyHeld == false) {
-                    if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition, meleeRange)) {
+                    User_Mouse_Input::Update_Move_Command_Box();
+                    if (zone.empty<Component::Selected>()) {
+                        Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition, meleeRange);
                         //Mouse::bRight_Mouse_Pressed_Attacking = true; //held down for constant attacking
-                    } else {
-                        Mouse::bRight_Mouse_Pressed = true; //held down for constant moving
+                    }
+                    else {
+//                        Mouse::bRight_Mouse_Pressed = true; //held down for constant moving
                     }
                 }
                 else {
@@ -145,8 +148,8 @@ namespace Event_Handler {
 				User_Mouse_Input::Select_Units(World::zone);
 			}
 			if (event.button.button == SDL_BUTTON_RIGHT) {
+                User_Mouse_Input::Command_Unit_Move(zone);
 				Mouse::bRight_Mouse_Pressed = false;
-				User_Mouse_Input::Command_Unit(World::zone);
 			}
 		}
 	}

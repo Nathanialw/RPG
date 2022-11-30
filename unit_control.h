@@ -113,12 +113,10 @@ namespace User_Mouse_Input {
 
 	bool Select_Soldier(entt::registry& zone) {
 		bool bSelected = false;
-		auto soldier_view = zone.view<Component::Position, Component::Radius, Component::Soldier, Component::Commandable>();
+		auto soldier_view = zone.view<Component::Soldier, Component::Commandable, Component::Interaction_Rect>();
 		for (auto soldiers : soldier_view) {
-			auto& x = soldier_view.get<Component::Position>(soldiers);
-			auto& y = soldier_view.get<Component::Position>(soldiers);
-			auto& r = soldier_view.get<Component::Radius>(soldiers);
-			if (Mouse::Mouse_Selection_Box({ x.x - r.fRadius, y.y - r.fRadius, r.fRadius * 2, r.fRadius * 2 })) {
+			auto& interaction = soldier_view.get<Component::Interaction_Rect>(soldiers);
+			if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_Cursor(interaction.rect)) {
 				zone.emplace_or_replace<Component::Selected>(soldiers);
 				bSelected = true;					
 			}
@@ -156,10 +154,52 @@ namespace User_Mouse_Input {
 
 	}
 
+    void Update_Move_Command_Box () {
+        Mouse::bRight_Mouse_Pressed = true;
+        Mouse::Mouse_Selection_Box_x = Mouse::iXWorld_Mouse;
+        Mouse::Mouse_Selection_Box_y = Mouse::iYWorld_Mouse;
+        Mouse::Mouse_Selection_Box_x_Display = Mouse::iXMouse;
+        Mouse::Mouse_Selection_Box_y_Display = Mouse::iYMouse;
+    }
 
-	void Command_Unit(entt::registry& zone) {
+		//take in an entity and set the units to save it and follow and attack it.
+	bool Command_Unit_Attack(entt::registry& zone, entt::entity) {
 		if (!zone.empty<Component::Selected>()) {
-			if (abs((Mouse::Mouse_Selection_Box_x - Mouse::iXWorld_Mouse)) > 50.0f) {
+			if (abs(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x) > 40.0f || abs(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y) > 40.0f) {
+				auto view = zone.view<Component::Selected, Component::Soldier, Component::Commandable>();
+				float x = 0.0f;
+				float y = Mouse::Mouse_Selection_Box_y;
+				int i = 0;
+				float spacing = 0;
+				float z = abs((Mouse::Mouse_Selection_Box_x - Mouse::iXWorld_Mouse) / (50.0f));// z is the # of units that can fit along x
+				for (auto entity : view) {
+
+					x = Mouse::Mouse_Selection_Box_x + spacing;
+					if (i == z) {
+						spacing = 0.0f;
+						x = Mouse::Mouse_Selection_Box_x + spacing;
+						y = y + 50.0f;
+						i = 0;
+					}
+					i++;
+					spacing = spacing + 50.0f; //spacing shoudl be stored in "battalion" component
+
+					zone.emplace_or_replace<Component::Moving>(entity);
+					zone.emplace_or_replace<Component::Mouse_Move>(entity, x, y);
+				}
+			}
+			else { //moves all the units onto a single point, I want to have the spread out in some kind of formation
+				Order_Move(zone);
+			}
+			Mouse::bRight_Mouse_Pressed = false;
+			return true;
+		}
+		return false;
+	}
+
+	bool Command_Unit_Move(entt::registry& zone) {
+		if (!zone.empty<Component::Selected>()) {
+			if (abs(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x) > 40.0f || abs(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y) > 40.0f) {
 				auto view = zone.view<Component::Selected, Component::Soldier, Component::Commandable>();
 				float x = 0.0f;
 				float y = Mouse::Mouse_Selection_Box_y;
@@ -186,11 +226,13 @@ namespace User_Mouse_Input {
 				Order_Move(zone);
 			}
 			Mouse::bRight_Mouse_Pressed = false;
+			return true;
 		}
+		return false;
 	}
 
 
-	void Command_Squad(entt::registry& zone) {
+	bool Command_Squad(entt::registry& zone) {
 		if (!zone.empty<Component::Selected>()) {
 			if (abs((Mouse::Mouse_Selection_Box_x - Mouse::iXWorld_Mouse)) > 50.0f) {
 				auto view = zone.view<Component::Selected, Component::Squad>();
@@ -228,6 +270,10 @@ namespace User_Mouse_Input {
 				}
 			}
 			Mouse::bRight_Mouse_Pressed = false;
+			return true;
+		}
+		else {
+			return false;
 		}
 	}
 
