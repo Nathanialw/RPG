@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../../sprite_sheets/units/2nd_cast/human/male/Male_Berserker.tsx"/>
+ <object name="Male_Berserker" class="unit" gid="1" width="40" height="113"/>
+</template>

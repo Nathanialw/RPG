@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Dog_4.png" width="1076" height="1083" scale="1" format="RGBA8888">
+  <sprite n="Dog_4_Attack 1_01_ 0" x="294" y="810" w="21" h="60" pX="0.5" pY="0.5" oX="55" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_02_ 0" x="769" y="324" w="20" h="63" pX="0.5" pY="0.5" oX="55" oY="29" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_03_ 0" x="842" y="869" w="22" h="57" pX="0.5" pY="0.5" oX="55" oY="45" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_04_ 1" x="502" y="577" w="70" h="45" pX="0.5" pY="0.5" oX="25" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_05_ 1" x="0" y="543" w="69" h="33" pX="0.5" pY="0.5" oX="36" oY="50" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_06_ 1" x="627" y="382" w="68" h="45" pX="0.5" pY="0.5" oX="14" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_07_ 2" x="378" y="344" w="72" h="46" pX="0.5" pY="0.5" oX="36" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_08_ 2" x="140" y="589" w="70" h="35" pX="0.5" pY="0.5" oX="26" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_09_ 2" x="219" y="469" w="71" h="46" pX="0.5" pY="0.5" oX="48" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_10_ 3" x="242" y="328" w="21" h="74" pX="0.5" pY="0.5" oX="55" oY="17" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_11_ 3" x="521" y="74" w="20" h="66" pX="0.5" pY="0.5" oX="55" oY="31" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_12_ 3" x="238" y="42" w="21" h="82" pX="0.5" pY="0.5" oX="55" oY="6" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_13_ 4" x="1024" y="104" w="52" h="52" pX="0.5" pY="0.5" oX="36" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_14_ 4" x="973" y="325" w="51" h="54" pX="0.5" pY="0.5" oX="43" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_15_ 4" x="623" y="1031" w="50" h="45" pX="0.5" pY="0.5" oX="28" oY="48" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_16_ 5" x="806" y="519" w="51" h="61" pX="0.5" pY="0.5" oX="36" oY="25" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_17_ 5" x="965" y="271" w="52" h="54" pX="0.5" pY="0.5" oX="42" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_18_ 5" x="572" y="603" w="55" h="69" pX="0.5" pY="0.5" oX="27" oY="16" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_19_ 6" x="410" y="926" w="55" h="49" pX="0.5" pY="0.5" oX="42" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_20_ 6" x="1022" y="379" w="52" h="52" pX="0.5" pY="0.5" oX="37" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_21_ 6" x="58" y="876" w="58" h="46" pX="0.5" pY="0.5" oX="48" oY="48" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_22_ 7" x="747" y="463" w="53" h="66" pX="0.5" pY="0.5" oX="43" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_23_ 7" x="485" y="861" w="51" h="58" pX="0.5" pY="0.5" oX="37" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 1_24_ 7" x="369" y="270" w="51" h="74" pX="0.5" pY="0.5" oX="53" oY="15" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_01_ 0" x="857" y="519" w="21" h="59" pX="0.5" pY="0.5" oX="55" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_02_ 0" x="748" y="331" w="21" h="66" pX="0.5" pY="0.5" oX="54" oY="28" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_03_ 0" x="842" y="810" w="22" h="59" pX="0.5" pY="0.5" oX="55" oY="47" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_04_ 1" x="70" y="557" w="70" h="46" pX="0.5" pY="0.5" oX="25" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_05_ 1" x="69" y="517" w="71" h="40" pX="0.5" pY="0.5" oX="35" oY="45" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_06_ 1" x="263" y="48" w="78" h="53" pX="0.5" pY="0.5" oX="14" oY="31" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_07_ 2" x="69" y="471" w="71" h="46" pX="0.5" pY="0.5" oX="36" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_08_ 2" x="290" y="470" w="71" h="39" pX="0.5" pY="0.5" oX="26" oY="45" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_09_ 2" x="266" y="0" w="79" h="48" pX="0.5" pY="0.5" oX="38" oY="31" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_10_ 3" x="352" y="120" w="21" h="75" pX="0.5" pY="0.5" oX="55" oY="16" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_11_ 3" x="615" y="71" w="21" h="69" pX="0.5" pY="0.5" oX="55" oY="29" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_12_ 3" x="0" y="42" w="24" h="91" pX="0.5" pY="0.5" oX="53" oY="3" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_13_ 4" x="1024" y="755" w="51" h="52" pX="0.5" pY="0.5" oX="37" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_14_ 4" x="920" y="548" w="52" h="57" pX="0.5" pY="0.5" oX="43" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_15_ 4" x="385" y="671" w="67" h="49" pX="0.5" pY="0.5" oX="25" oY="46" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_16_ 5" x="810" y="310" w="51" h="62" pX="0.5" pY="0.5" oX="36" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_17_ 5" x="788" y="926" w="52" h="55" pX="0.5" pY="0.5" oX="42" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_18_ 5" x="0" y="258" w="57" h="82" pX="0.5" pY="0.5" oX="27" oY="12" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_19_ 6" x="733" y="929" w="55" h="49" pX="0.5" pY="0.5" oX="42" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_20_ 6" x="919" y="325" w="54" h="51" pX="0.5" pY="0.5" oX="35" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_21_ 6" x="861" y="0" w="59" h="52" pX="0.5" pY="0.5" oX="45" oY="46" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_22_ 7" x="695" y="331" w="53" h="66" pX="0.5" pY="0.5" oX="43" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_23_ 7" x="130" y="810" w="53" h="62" pX="0.5" pY="0.5" oX="36" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Attack 2_24_ 7" x="263" y="144" w="68" h="78" pX="0.5" pY="0.5" oX="38" oY="12" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_01_ 0" x="221" y="810" w="21" h="60" pX="0.5" pY="0.5" oX="55" oY="41" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_02_ 0" x="440" y="802" w="21" h="59" pX="0.5" pY="0.5" oX="55" oY="42" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_03_ 0" x="810" y="372" w="21" h="59" pX="0.5" pY="0.5" oX="55" oY="42" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_04_ 1" x="627" y="46" w="69" h="25" pX="0.5" pY="0.5" oX="34" oY="61" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_05_ 1" x="627" y="173" w="69" h="25" pX="0.5" pY="0.5" oX="34" oY="61" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_06_ 1" x="454" y="668" w="69" h="25" pX="0.5" pY="0.5" oX="34" oY="61" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_07_ 2" x="222" y="402" w="69" h="24" pX="0.5" pY="0.5" oX="26" oY="61" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_08_ 2" x="0" y="662" w="69" h="24" pX="0.5" pY="0.5" oX="26" oY="61" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_09_ 2" x="69" y="649" w="69" h="24" pX="0.5" pY="0.5" oX="26" oY="61" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_10_ 3" x="999" y="969" w="21" h="52" pX="0.5" pY="0.5" oX="53" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_11_ 3" x="1055" y="483" w="21" h="52" pX="0.5" pY="0.5" oX="53" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_12_ 3" x="1055" y="431" w="21" h="52" pX="0.5" pY="0.5" oX="53" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_13_ 4" x="106" y="975" w="53" h="47" pX="0.5" pY="0.5" oX="40" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_14_ 4" x="733" y="978" w="53" h="47" pX="0.5" pY="0.5" oX="40" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_15_ 4" x="355" y="978" w="53" h="47" pX="0.5" pY="0.5" oX="40" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_16_ 5" x="1022" y="535" w="50" h="42" pX="0.5" pY="0.5" oX="42" oY="52" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_17_ 5" x="1023" y="207" w="50" h="42" pX="0.5" pY="0.5" oX="42" oY="52" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_18_ 5" x="1024" y="956" w="50" h="42" pX="0.5" pY="0.5" oX="42" oY="52" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_19_ 6" x="99" y="1033" w="50" h="48" pX="0.5" pY="0.5" oX="37" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_20_ 6" x="1022" y="577" w="50" h="48" pX="0.5" pY="0.5" oX="37" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_21_ 6" x="1022" y="625" w="50" h="48" pX="0.5" pY="0.5" oX="37" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_22_ 7" x="972" y="865" w="52" h="42" pX="0.5" pY="0.5" oX="37" oY="52" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_23_ 7" x="920" y="57" w="52" h="42" pX="0.5" pY="0.5" oX="37" oY="52" oW="120" oH="120"/>
+  <sprite n="Dog_4_Behavior_24_ 7" x="513" y="693" w="52" h="42" pX="0.5" pY="0.5" oX="37" oY="52" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_01_ 0" x="831" y="372" w="22" h="59" pX="0.5" pY="0.5" oX="55" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_02_ 0" x="768" y="132" w="21" h="64" pX="0.5" pY="0.5" oX="55" oY="32" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_03_ 0" x="789" y="393" w="21" h="64" pX="0.5" pY="0.5" oX="54" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_04_ 1" x="385" y="625" w="69" h="46" pX="0.5" pY="0.5" oX="26" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_05_ 1" x="450" y="238" w="71" h="43" pX="0.5" pY="0.5" oX="28" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_06_ 1" x="361" y="508" w="71" h="35" pX="0.5" pY="0.5" oX="32" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_07_ 2" x="441" y="281" w="71" h="46" pX="0.5" pY="0.5" oX="36" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_08_ 2" x="363" y="428" w="72" h="41" pX="0.5" pY="0.5" oX="32" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_09_ 2" x="449" y="390" w="71" h="36" pX="0.5" pY="0.5" oX="28" oY="48" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_10_ 3" x="327" y="308" w="21" h="75" pX="0.5" pY="0.5" oX="55" oY="16" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_11_ 3" x="560" y="463" w="20" h="70" pX="0.5" pY="0.5" oX="55" oY="23" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_12_ 3" x="769" y="196" w="20" h="64" pX="0.5" pY="0.5" oX="55" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_13_ 4" x="972" y="160" w="51" h="52" pX="0.5" pY="0.5" oX="37" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_14_ 4" x="250" y="926" w="51" h="56" pX="0.5" pY="0.5" oX="39" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_15_ 4" x="627" y="926" w="52" h="55" pX="0.5" pY="0.5" oX="41" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_16_ 5" x="810" y="248" w="51" h="62" pX="0.5" pY="0.5" oX="36" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_17_ 5" x="753" y="870" w="52" h="56" pX="0.5" pY="0.5" oX="38" oY="31" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_18_ 5" x="623" y="981" w="53" h="50" pX="0.5" pY="0.5" oX="40" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_19_ 6" x="840" y="929" w="54" h="49" pX="0.5" pY="0.5" oX="42" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_20_ 6" x="517" y="981" w="53" h="52" pX="0.5" pY="0.5" oX="41" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_21_ 6" x="212" y="982" w="53" h="51" pX="0.5" pY="0.5" oX="38" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_22_ 7" x="565" y="672" w="52" h="67" pX="0.5" pY="0.5" oX="44" oY="23" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_23_ 7" x="0" y="814" w="52" h="62" pX="0.5" pY="0.5" oX="41" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Block_24_ 7" x="972" y="0" w="52" h="55" pX="0.5" pY="0.5" oX="38" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_01_ 0" x="575" y="739" w="21" h="63" pX="0.5" pY="0.5" oX="55" oY="32" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_02_ 0" x="694" y="595" w="21" h="63" pX="0.5" pY="0.5" oX="55" oY="32" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_03_ 0" x="621" y="739" w="21" h="62" pX="0.5" pY="0.5" oX="55" oY="32" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_04_ 1" x="547" y="215" w="70" h="39" pX="0.5" pY="0.5" oX="29" oY="47" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_05_ 1" x="520" y="373" w="70" h="39" pX="0.5" pY="0.5" oX="29" oY="47" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_06_ 1" x="542" y="254" w="70" h="39" pX="0.5" pY="0.5" oX="29" oY="47" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_07_ 2" x="361" y="470" w="71" h="38" pX="0.5" pY="0.5" oX="32" oY="46" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_08_ 2" x="489" y="0" w="71" h="37" pX="0.5" pY="0.5" oX="32" oY="47" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_09_ 2" x="489" y="37" w="71" h="37" pX="0.5" pY="0.5" oX="32" oY="47" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_10_ 3" x="252" y="625" w="22" h="69" pX="0.5" pY="0.5" oX="53" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_11_ 3" x="230" y="625" w="22" h="69" pX="0.5" pY="0.5" oX="53" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_12_ 3" x="139" y="625" w="22" h="69" pX="0.5" pY="0.5" oX="53" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_13_ 4" x="300" y="870" w="51" h="56" pX="0.5" pY="0.5" oX="39" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_14_ 4" x="917" y="605" w="51" h="56" pX="0.5" pY="0.5" oX="39" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_15_ 4" x="917" y="661" w="51" h="56" pX="0.5" pY="0.5" oX="39" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_16_ 5" x="919" y="157" w="53" h="57" pX="0.5" pY="0.5" oX="38" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_17_ 5" x="919" y="100" w="53" h="57" pX="0.5" pY="0.5" oX="38" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_18_ 5" x="919" y="214" w="53" h="57" pX="0.5" pY="0.5" oX="38" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_19_ 6" x="355" y="926" w="55" h="52" pX="0.5" pY="0.5" oX="39" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_20_ 6" x="572" y="929" w="55" h="52" pX="0.5" pY="0.5" oX="39" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_21_ 6" x="517" y="929" w="55" h="52" pX="0.5" pY="0.5" oX="39" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_22_ 7" x="242" y="810" w="52" h="60" pX="0.5" pY="0.5" oX="41" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_23_ 7" x="790" y="810" w="52" h="60" pX="0.5" pY="0.5" oX="41" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Critical HP_24_ 7" x="336" y="810" w="52" h="60" pX="0.5" pY="0.5" oX="41" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Dead_01_ 0" x="916" y="915" w="55" h="47" pX="0.5" pY="0.5" oX="35" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Dead_02_ 1" x="512" y="791" w="61" h="40" pX="0.5" pY="0.5" oX="31" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Dead_03_ 2" x="452" y="693" w="61" h="44" pX="0.5" pY="0.5" oX="37" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Dead_04_ 3" x="410" y="975" w="54" h="43" pX="0.5" pY="0.5" oX="39" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Dead_05_ 4" x="0" y="1033" w="49" h="50" pX="0.5" pY="0.5" oX="36" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Dead_06_ 5" x="577" y="427" w="68" h="36" pX="0.5" pY="0.5" oX="26" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Dead_07_ 6" x="196" y="126" w="67" h="39" pX="0.5" pY="0.5" oX="35" oY="41" oW="120" oH="120"/>
+  <sprite n="Dog_4_Dead_08_ 7" x="704" y="875" w="48" h="50" pX="0.5" pY="0.5" oX="44" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_01_ 0" x="878" y="494" w="21" h="58" pX="0.5" pY="0.5" oX="55" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_02_ 0" x="596" y="739" w="25" h="62" pX="0.5" pY="0.5" oX="55" oY="32" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_03_ 0" x="805" y="580" w="28" h="62" pX="0.5" pY="0.5" oX="55" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_04_ 1" x="70" y="603" w="69" h="46" pX="0.5" pY="0.5" oX="26" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_05_ 1" x="153" y="326" w="68" h="42" pX="0.5" pY="0.5" oX="31" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_06_ 1" x="521" y="333" w="67" h="38" pX="0.5" pY="0.5" oX="36" oY="47" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_07_ 2" x="0" y="578" w="70" h="47" pX="0.5" pY="0.5" oX="36" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_08_ 2" x="429" y="120" w="71" h="47" pX="0.5" pY="0.5" oX="31" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_09_ 2" x="161" y="625" w="69" h="47" pX="0.5" pY="0.5" oX="28" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_10_ 3" x="341" y="221" w="21" h="75" pX="0.5" pY="0.5" oX="55" oY="16" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_11_ 3" x="305" y="308" w="22" h="75" pX="0.5" pY="0.5" oX="52" oY="19" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_12_ 3" x="404" y="120" w="25" h="73" pX="0.5" pY="0.5" oX="49" oY="23" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_13_ 4" x="1024" y="0" w="51" h="52" pX="0.5" pY="0.5" oX="37" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_14_ 4" x="972" y="379" w="50" h="52" pX="0.5" pY="0.5" oX="43" oY="41" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_15_ 4" x="49" y="1033" w="50" h="50" pX="0.5" pY="0.5" oX="48" oY="41" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_16_ 5" x="810" y="186" w="51" h="62" pX="0.5" pY="0.5" oX="36" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_17_ 5" x="385" y="739" w="51" h="63" pX="0.5" pY="0.5" oX="37" oY="28" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_18_ 5" x="810" y="124" w="51" h="62" pX="0.5" pY="0.5" oX="37" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_19_ 6" x="968" y="605" w="54" h="49" pX="0.5" pY="0.5" oX="42" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_20_ 6" x="265" y="982" w="53" h="51" pX="0.5" pY="0.5" oX="43" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_21_ 6" x="972" y="431" w="52" h="52" pX="0.5" pY="0.5" oX="43" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_22_ 7" x="69" y="673" w="52" h="67" pX="0.5" pY="0.5" oX="44" oY="23" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_23_ 7" x="716" y="397" w="52" h="66" pX="0.5" pY="0.5" oX="38" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Evade_24_ 7" x="696" y="133" w="51" h="65" pX="0.5" pY="0.5" oX="34" oY="25" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_01_ 0" x="899" y="494" w="21" h="58" pX="0.5" pY="0.5" oX="55" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_02_ 0" x="789" y="329" w="21" h="64" pX="0.5" pY="0.5" oX="55" oY="32" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_03_ 0" x="768" y="397" w="21" h="66" pX="0.5" pY="0.5" oX="54" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_04_ 1" x="627" y="0" w="69" h="46" pX="0.5" pY="0.5" oX="26" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_05_ 1" x="219" y="428" w="72" h="41" pX="0.5" pY="0.5" oX="27" oY="45" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_06_ 1" x="432" y="558" w="70" h="32" pX="0.5" pY="0.5" oX="32" oY="51" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_07_ 2" x="210" y="578" w="70" h="47" pX="0.5" pY="0.5" oX="36" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_08_ 2" x="147" y="428" w="72" h="40" pX="0.5" pY="0.5" oX="32" oY="44" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_09_ 2" x="627" y="140" w="69" h="33" pX="0.5" pY="0.5" oX="29" oY="51" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_10_ 3" x="348" y="296" w="21" h="75" pX="0.5" pY="0.5" oX="55" oY="16" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_11_ 3" x="695" y="397" w="21" h="66" pX="0.5" pY="0.5" oX="55" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_12_ 3" x="749" y="198" w="20" h="55" pX="0.5" pY="0.5" oX="55" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_13_ 4" x="972" y="212" w="51" h="52" pX="0.5" pY="0.5" oX="37" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_14_ 4" x="920" y="0" w="52" h="57" pX="0.5" pY="0.5" oX="38" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_15_ 4" x="972" y="55" w="51" h="54" pX="0.5" pY="0.5" oX="41" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_16_ 5" x="810" y="62" w="51" h="62" pX="0.5" pY="0.5" oX="36" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_17_ 5" x="971" y="915" w="53" h="54" pX="0.5" pY="0.5" oX="37" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_18_ 5" x="1024" y="859" w="51" h="47" pX="0.5" pY="0.5" oX="41" oY="44" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_19_ 6" x="968" y="654" w="54" h="49" pX="0.5" pY="0.5" oX="42" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_20_ 6" x="840" y="978" w="53" h="53" pX="0.5" pY="0.5" oX="41" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_21_ 6" x="972" y="535" w="50" h="52" pX="0.5" pY="0.5" oX="39" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_22_ 7" x="617" y="672" w="52" h="67" pX="0.5" pY="0.5" oX="44" oY="23" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_23_ 7" x="388" y="802" w="52" h="59" pX="0.5" pY="0.5" oX="41" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Get Hit_24_ 7" x="1024" y="156" w="50" h="51" pX="0.5" pY="0.5" oX="39" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_01_ 0" x="836" y="641" w="21" h="60" pX="0.5" pY="0.5" oX="55" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_02_ 0" x="815" y="642" w="21" h="60" pX="0.5" pY="0.5" oX="55" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_03_ 0" x="315" y="810" w="21" h="60" pX="0.5" pY="0.5" oX="55" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_04_ 1" x="432" y="469" w="71" h="45" pX="0.5" pY="0.5" oX="24" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_05_ 1" x="425" y="193" w="71" h="45" pX="0.5" pY="0.5" oX="24" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_06_ 1" x="427" y="75" w="71" h="45" pX="0.5" pY="0.5" oX="24" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_07_ 2" x="147" y="468" w="72" h="45" pX="0.5" pY="0.5" oX="36" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_08_ 2" x="75" y="426" w="72" h="45" pX="0.5" pY="0.5" oX="36" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_09_ 2" x="305" y="383" w="73" h="45" pX="0.5" pY="0.5" oX="36" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_10_ 3" x="383" y="194" w="21" h="73" pX="0.5" pY="0.5" oX="55" oY="18" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_11_ 3" x="420" y="266" w="21" h="72" pX="0.5" pY="0.5" oX="55" oY="19" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_12_ 3" x="404" y="193" w="21" h="73" pX="0.5" pY="0.5" oX="55" oY="19" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_13_ 4" x="570" y="981" w="53" h="52" pX="0.5" pY="0.5" oX="35" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_14_ 4" x="786" y="981" w="53" h="52" pX="0.5" pY="0.5" oX="35" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_15_ 4" x="464" y="981" w="53" h="52" pX="0.5" pY="0.5" oX="35" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_16_ 5" x="864" y="578" w="53" h="59" pX="0.5" pY="0.5" oX="34" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_17_ 5" x="432" y="861" w="53" h="58" pX="0.5" pY="0.5" oX="34" oY="28" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_18_ 5" x="864" y="700" w="53" h="58" pX="0.5" pY="0.5" oX="34" oY="28" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_19_ 6" x="593" y="875" w="56" h="50" pX="0.5" pY="0.5" oX="42" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_20_ 6" x="916" y="865" w="56" h="50" pX="0.5" pY="0.5" oX="42" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_21_ 6" x="916" y="815" w="56" h="50" pX="0.5" pY="0.5" oX="42" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_22_ 7" x="806" y="457" w="55" h="62" pX="0.5" pY="0.5" oX="43" oY="28" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_23_ 7" x="268" y="741" w="54" h="63" pX="0.5" pY="0.5" oX="43" oY="28" oW="120" oH="120"/>
+  <sprite n="Dog_4_Idle_24_ 7" x="322" y="694" w="53" h="63" pX="0.5" pY="0.5" oX="44" oY="28" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_01_ 0" x="894" y="929" w="22" h="49" pX="0.5" pY="0.5" oX="54" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_02_ 0" x="703" y="1033" w="22" h="49" pX="0.5" pY="0.5" oX="54" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_03_ 0" x="179" y="1033" w="22" h="49" pX="0.5" pY="0.5" oX="54" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_04_ 1" x="801" y="1033" w="36" h="48" pX="0.5" pY="0.5" oX="52" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_05_ 1" x="326" y="1033" w="36" h="48" pX="0.5" pY="0.5" oX="52" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_06_ 1" x="765" y="1033" w="36" h="48" pX="0.5" pY="0.5" oX="52" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_07_ 2" x="286" y="1033" w="40" h="48" pX="0.5" pY="0.5" oX="40" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_08_ 2" x="246" y="1033" w="40" h="48" pX="0.5" pY="0.5" oX="40" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_09_ 2" x="725" y="1033" w="40" h="48" pX="0.5" pY="0.5" oX="40" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_10_ 3" x="199" y="720" w="23" h="63" pX="0.5" pY="0.5" oX="54" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_11_ 3" x="222" y="741" w="23" h="63" pX="0.5" pY="0.5" oX="54" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_12_ 3" x="245" y="741" w="23" h="63" pX="0.5" pY="0.5" oX="54" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_13_ 4" x="673" y="1033" w="30" h="50" pX="0.5" pY="0.5" oX="54" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_14_ 4" x="149" y="1033" w="30" h="50" pX="0.5" pY="0.5" oX="54" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_15_ 4" x="318" y="982" w="30" h="50" pX="0.5" pY="0.5" oX="54" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_16_ 5" x="351" y="870" w="33" h="56" pX="0.5" pY="0.5" oX="52" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_17_ 5" x="195" y="926" w="33" h="56" pX="0.5" pY="0.5" oX="52" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_18_ 5" x="162" y="926" w="33" h="56" pX="0.5" pY="0.5" oX="52" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_19_ 6" x="1024" y="316" w="34" h="52" pX="0.5" pY="0.5" oX="45" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_20_ 6" x="1017" y="264" w="34" h="52" pX="0.5" pY="0.5" oX="45" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_21_ 6" x="1021" y="703" w="34" h="52" pX="0.5" pY="0.5" oX="45" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_22_ 7" x="878" y="268" w="30" h="58" pX="0.5" pY="0.5" oX="45" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_23_ 7" x="878" y="210" w="30" h="58" pX="0.5" pY="0.5" oX="45" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Rest_24_ 7" x="878" y="436" w="30" h="58" pX="0.5" pY="0.5" oX="45" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_01_ 0" x="521" y="238" w="21" h="71" pX="0.5" pY="0.5" oX="55" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_02_ 0" x="544" y="622" w="21" h="69" pX="0.5" pY="0.5" oX="55" oY="31" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_03_ 0" x="789" y="198" w="21" h="66" pX="0.5" pY="0.5" oX="55" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_04_ 0" x="636" y="71" w="21" h="68" pX="0.5" pY="0.5" oX="55" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_05_ 0" x="547" y="145" w="21" h="70" pX="0.5" pY="0.5" oX="55" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_06_ 0" x="331" y="144" w="21" h="77" pX="0.5" pY="0.5" oX="55" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_07_ 0" x="373" y="120" w="21" h="74" pX="0.5" pY="0.5" oX="55" oY="25" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_08_ 0" x="523" y="622" w="21" h="69" pX="0.5" pY="0.5" oX="55" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_09_ 1" x="211" y="515" w="71" h="42" pX="0.5" pY="0.5" oX="24" oY="45" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_10_ 1" x="361" y="543" w="71" h="35" pX="0.5" pY="0.5" oX="24" oY="46" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_11_ 1" x="435" y="427" w="71" h="39" pX="0.5" pY="0.5" oX="24" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_12_ 1" x="141" y="286" w="80" h="40" pX="0.5" pY="0.5" oX="23" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_13_ 1" x="92" y="39" w="88" h="40" pX="0.5" pY="0.5" oX="23" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_14_ 1" x="92" y="0" w="89" h="39" pX="0.5" pY="0.5" oX="24" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_15_ 1" x="0" y="175" w="87" h="40" pX="0.5" pY="0.5" oX="23" oY="41" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_16_ 1" x="263" y="266" w="78" h="42" pX="0.5" pY="0.5" oX="23" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_17_ 2" x="0" y="625" w="69" h="37" pX="0.5" pY="0.5" oX="37" oY="45" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_18_ 2" x="542" y="293" w="70" h="40" pX="0.5" pY="0.5" oX="37" oY="46" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_19_ 2" x="140" y="513" w="71" h="38" pX="0.5" pY="0.5" oX="36" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_20_ 2" x="173" y="209" w="82" h="41" pX="0.5" pY="0.5" oX="26" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_21_ 2" x="45" y="79" w="88" h="44" pX="0.5" pY="0.5" oX="19" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_22_ 2" x="0" y="0" w="92" h="42" pX="0.5" pY="0.5" oX="17" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_23_ 2" x="0" y="133" w="87" h="42" pX="0.5" pY="0.5" oX="21" oY="41" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_24_ 2" x="163" y="250" w="80" h="36" pX="0.5" pY="0.5" oX="29" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_25_ 3" x="52" y="814" w="21" h="62" pX="0.5" pY="0.5" oX="55" oY="32" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_26_ 3" x="461" y="802" w="21" h="59" pX="0.5" pY="0.5" oX="55" oY="29" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_27_ 3" x="747" y="133" w="21" h="65" pX="0.5" pY="0.5" oX="55" oY="25" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_28_ 3" x="196" y="42" w="21" h="84" pX="0.5" pY="0.5" oX="55" oY="19" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_29_ 3" x="24" y="42" w="21" h="89" pX="0.5" pY="0.5" oX="55" oY="17" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_30_ 3" x="133" y="79" w="21" h="87" pX="0.5" pY="0.5" oX="55" oY="18" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_31_ 3" x="99" y="258" w="21" h="80" pX="0.5" pY="0.5" oX="55" oY="21" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_32_ 3" x="284" y="308" w="21" h="76" pX="0.5" pY="0.5" oX="55" oY="23" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_33_ 4" x="920" y="491" w="52" h="57" pX="0.5" pY="0.5" oX="35" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_34_ 4" x="465" y="926" w="52" h="55" pX="0.5" pY="0.5" oX="35" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_35_ 4" x="676" y="981" w="53" h="51" pX="0.5" pY="0.5" oX="35" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_36_ 4" x="322" y="757" w="63" h="53" pX="0.5" pY="0.5" oX="32" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_37_ 4" x="627" y="258" w="68" h="56" pX="0.5" pY="0.5" oX="33" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_38_ 4" x="627" y="198" w="68" h="60" pX="0.5" pY="0.5" oX="35" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_39_ 4" x="59" y="750" w="63" h="64" pX="0.5" pY="0.5" oX="35" oY="31" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_40_ 4" x="188" y="870" w="57" h="56" pX="0.5" pY="0.5" oX="34" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_41_ 5" x="0" y="982" w="54" h="51" pX="0.5" pY="0.5" oX="35" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_42_ 5" x="972" y="109" w="52" h="51" pX="0.5" pY="0.5" oX="35" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_43_ 5" x="864" y="816" w="52" h="58" pX="0.5" pY="0.5" oX="35" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_44_ 5" x="282" y="544" w="55" h="70" pX="0.5" pY="0.5" oX="35" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_45_ 5" x="366" y="0" w="63" h="75" pX="0.5" pY="0.5" oX="33" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_46_ 5" x="560" y="0" w="67" h="71" pX="0.5" pY="0.5" oX="33" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_47_ 5" x="627" y="530" w="66" h="67" pX="0.5" pY="0.5" oX="35" oY="28" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_48_ 5" x="669" y="724" w="60" h="63" pX="0.5" pY="0.5" oX="34" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_49_ 6" x="861" y="378" w="54" h="58" pX="0.5" pY="0.5" oX="41" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_50_ 6" x="0" y="926" w="51" h="56" pX="0.5" pY="0.5" oX="45" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_51_ 6" x="920" y="434" w="52" h="57" pX="0.5" pY="0.5" oX="44" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_52_ 6" x="861" y="100" w="58" h="56" pX="0.5" pY="0.5" oX="39" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_53_ 6" x="733" y="711" w="63" h="57" pX="0.5" pY="0.5" oX="34" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_54_ 6" x="627" y="597" w="67" h="61" pX="0.5" pY="0.5" oX="30" oY="32" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_55_ 6" x="0" y="694" w="67" h="56" pX="0.5" pY="0.5" oX="30" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_56_ 6" x="729" y="768" w="61" h="55" pX="0.5" pY="0.5" oX="36" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_57_ 7" x="972" y="757" w="52" h="54" pX="0.5" pY="0.5" oX="43" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_58_ 7" x="972" y="483" w="52" h="52" pX="0.5" pY="0.5" oX="44" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_59_ 7" x="972" y="811" w="52" h="54" pX="0.5" pY="0.5" oX="44" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_60_ 7" x="669" y="658" w="64" h="66" pX="0.5" pY="0.5" oX="34" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_61_ 7" x="547" y="74" w="68" h="71" pX="0.5" pY="0.5" oX="29" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_62_ 7" x="0" y="471" w="69" h="72" pX="0.5" pY="0.5" oX="28" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_63_ 7" x="740" y="580" w="65" h="66" pX="0.5" pY="0.5" oX="32" oY="28" oW="120" oH="120"/>
+  <sprite n="Dog_4_Run_64_ 7" x="0" y="750" w="59" h="64" pX="0.5" pY="0.5" oX="38" oY="30" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_01_ 0" x="482" y="802" w="21" h="59" pX="0.5" pY="0.5" oX="55" oY="35" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_02_ 0" x="228" y="926" w="22" h="56" pX="0.5" pY="0.5" oX="55" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_03_ 0" x="805" y="870" w="21" h="54" pX="0.5" pY="0.5" oX="55" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_04_ 1" x="454" y="622" w="69" h="46" pX="0.5" pY="0.5" oX="26" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_05_ 1" x="228" y="694" w="65" h="47" pX="0.5" pY="0.5" oX="30" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_06_ 1" x="573" y="823" w="60" h="50" pX="0.5" pY="0.5" oX="35" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_07_ 2" x="450" y="327" w="71" h="46" pX="0.5" pY="0.5" oX="36" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_08_ 2" x="161" y="672" w="67" h="48" pX="0.5" pY="0.5" oX="36" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_09_ 2" x="796" y="708" w="62" h="51" pX="0.5" pY="0.5" oX="36" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_10_ 3" x="362" y="195" w="21" h="75" pX="0.5" pY="0.5" oX="55" oY="16" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_11_ 3" x="243" y="250" w="20" h="78" pX="0.5" pY="0.5" oX="55" oY="14" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_12_ 3" x="221" y="286" w="21" h="77" pX="0.5" pY="0.5" oX="55" oY="16" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_13_ 4" x="1024" y="52" w="51" h="52" pX="0.5" pY="0.5" oX="37" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_14_ 4" x="1024" y="906" w="48" h="50" pX="0.5" pY="0.5" oX="39" oY="42" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_15_ 4" x="201" y="1033" w="45" h="49" pX="0.5" pY="0.5" oX="42" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_16_ 5" x="810" y="0" w="51" h="62" pX="0.5" pY="0.5" oX="36" oY="24" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_17_ 5" x="698" y="463" w="49" h="66" pX="0.5" pY="0.5" oX="39" oY="21" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_18_ 5" x="693" y="529" w="47" h="66" pX="0.5" pY="0.5" oX="41" oY="21" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_19_ 6" x="649" y="875" w="55" h="49" pX="0.5" pY="0.5" oX="42" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_20_ 6" x="54" y="982" w="52" h="47" pX="0.5" pY="0.5" oX="42" oY="42" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_21_ 6" x="946" y="1019" w="49" h="46" pX="0.5" pY="0.5" oX="42" oY="43" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_22_ 7" x="696" y="0" w="53" h="67" pX="0.5" pY="0.5" oX="43" oY="23" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_23_ 7" x="496" y="167" w="51" h="71" pX="0.5" pY="0.5" oX="43" oY="20" oW="120" oH="120"/>
+  <sprite n="Dog_4_Use Skill_24_ 7" x="577" y="145" w="48" h="70" pX="0.5" pY="0.5" oX="43" oY="21" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_01_ 0" x="789" y="264" w="21" h="65" pX="0.5" pY="0.5" oX="55" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_02_ 0" x="749" y="260" w="21" h="64" pX="0.5" pY="0.5" oX="55" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_03_ 0" x="178" y="741" w="21" h="64" pX="0.5" pY="0.5" oX="55" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_04_ 0" x="590" y="333" w="21" h="66" pX="0.5" pY="0.5" oX="55" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_05_ 0" x="500" y="74" w="21" h="66" pX="0.5" pY="0.5" oX="55" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_06_ 0" x="491" y="739" w="21" h="63" pX="0.5" pY="0.5" oX="55" oY="33" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_07_ 0" x="794" y="646" w="21" h="62" pX="0.5" pY="0.5" oX="55" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_08_ 0" x="789" y="132" w="21" h="66" pX="0.5" pY="0.5" oX="55" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_09_ 1" x="291" y="428" w="72" h="42" pX="0.5" pY="0.5" oX="24" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_10_ 1" x="263" y="101" w="78" h="43" pX="0.5" pY="0.5" oX="24" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_11_ 1" x="173" y="165" w="83" h="44" pX="0.5" pY="0.5" oX="24" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_12_ 1" x="0" y="384" w="75" h="44" pX="0.5" pY="0.5" oX="24" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_13_ 1" x="432" y="514" w="71" h="44" pX="0.5" pY="0.5" oX="24" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_14_ 1" x="75" y="384" w="74" h="42" pX="0.5" pY="0.5" oX="24" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_15_ 1" x="0" y="215" w="83" h="43" pX="0.5" pY="0.5" oX="24" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_16_ 1" x="352" y="77" w="75" h="43" pX="0.5" pY="0.5" oX="24" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_17_ 2" x="0" y="428" w="73" h="43" pX="0.5" pY="0.5" oX="35" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_18_ 2" x="83" y="215" w="80" h="43" pX="0.5" pY="0.5" oX="28" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_19_ 2" x="181" y="0" w="85" h="42" pX="0.5" pY="0.5" oX="23" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_20_ 2" x="263" y="222" w="78" h="44" pX="0.5" pY="0.5" oX="30" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_21_ 2" x="149" y="382" w="73" h="42" pX="0.5" pY="0.5" oX="35" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_22_ 2" x="77" y="339" w="76" h="43" pX="0.5" pY="0.5" oX="32" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_23_ 2" x="87" y="166" w="86" h="44" pX="0.5" pY="0.5" oX="22" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_24_ 2" x="0" y="340" w="77" h="44" pX="0.5" pY="0.5" oX="31" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_25_ 3" x="345" y="0" w="21" h="77" pX="0.5" pY="0.5" oX="55" oY="20" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_26_ 3" x="217" y="42" w="21" h="82" pX="0.5" pY="0.5" oX="55" oY="20" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_27_ 3" x="154" y="79" w="21" h="86" pX="0.5" pY="0.5" oX="55" oY="19" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_28_ 3" x="57" y="258" w="21" h="81" pX="0.5" pY="0.5" oX="55" oY="19" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_29_ 3" x="263" y="308" w="21" h="76" pX="0.5" pY="0.5" oX="55" oY="20" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_30_ 3" x="120" y="258" w="21" h="80" pX="0.5" pY="0.5" oX="55" oY="19" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_31_ 3" x="175" y="79" w="21" h="85" pX="0.5" pY="0.5" oX="55" oY="19" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_32_ 3" x="78" y="258" w="21" h="80" pX="0.5" pY="0.5" oX="55" oY="19" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_33_ 4" x="245" y="870" w="55" h="56" pX="0.5" pY="0.5" oX="35" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_34_ 4" x="861" y="156" w="58" h="54" pX="0.5" pY="0.5" oX="35" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_35_ 4" x="512" y="739" w="63" h="52" pX="0.5" pY="0.5" oX="35" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_36_ 4" x="536" y="875" w="57" h="50" pX="0.5" pY="0.5" oX="36" oY="40" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_37_ 4" x="893" y="978" w="53" h="52" pX="0.5" pY="0.5" oX="35" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_38_ 4" x="946" y="969" w="53" h="50" pX="0.5" pY="0.5" oX="35" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_39_ 4" x="908" y="271" w="57" h="54" pX="0.5" pY="0.5" oX="36" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_40_ 4" x="301" y="926" w="54" h="56" pX="0.5" pY="0.5" oX="35" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_41_ 5" x="696" y="67" w="53" h="66" pX="0.5" pY="0.5" oX="35" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_42_ 5" x="274" y="625" w="55" h="69" pX="0.5" pY="0.5" oX="35" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_43_ 5" x="503" y="466" w="57" h="71" pX="0.5" pY="0.5" oX="35" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_44_ 5" x="573" y="533" w="51" h="70" pX="0.5" pY="0.5" oX="36" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_45_ 5" x="436" y="739" w="55" h="63" pX="0.5" pY="0.5" oX="35" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_46_ 5" x="122" y="741" w="56" h="64" pX="0.5" pY="0.5" oX="35" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_47_ 5" x="627" y="314" w="63" h="68" pX="0.5" pY="0.5" oX="36" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_48_ 5" x="749" y="66" w="58" h="66" pX="0.5" pY="0.5" oX="35" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_49_ 6" x="159" y="982" w="53" h="51" pX="0.5" pY="0.5" oX="44" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_50_ 6" x="0" y="876" w="58" h="50" pX="0.5" pY="0.5" oX="39" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_51_ 6" x="693" y="823" w="60" h="52" pX="0.5" pY="0.5" oX="37" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_52_ 6" x="51" y="926" w="55" h="56" pX="0.5" pY="0.5" oX="42" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_53_ 6" x="915" y="378" w="57" h="56" pX="0.5" pY="0.5" oX="40" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_54_ 6" x="130" y="872" w="58" h="54" pX="0.5" pY="0.5" oX="39" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_55_ 6" x="740" y="529" w="66" h="51" pX="0.5" pY="0.5" oX="31" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_56_ 6" x="796" y="759" w="61" h="51" pX="0.5" pY="0.5" oX="36" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_57_ 7" x="73" y="814" w="57" h="62" pX="0.5" pY="0.5" oX="40" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_58_ 7" x="749" y="0" w="61" h="66" pX="0.5" pY="0.5" oX="36" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_59_ 7" x="580" y="463" w="66" h="67" pX="0.5" pY="0.5" oX="31" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_60_ 7" x="733" y="646" w="61" h="65" pX="0.5" pY="0.5" oX="36" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_61_ 7" x="695" y="265" w="54" h="66" pX="0.5" pY="0.5" oX="43" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_62_ 7" x="695" y="198" w="54" h="67" pX="0.5" pY="0.5" oX="43" oY="27" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_63_ 7" x="429" y="0" w="60" h="72" pX="0.5" pY="0.5" oX="37" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Walk_64_ 7" x="329" y="625" w="56" h="69" pX="0.5" pY="0.5" oX="41" oY="26" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_01_ 0" x="657" y="71" w="21" h="67" pX="0.5" pY="0.5" oX="54" oY="31" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_02_ 0" x="646" y="463" w="24" h="66" pX="0.5" pY="0.5" oX="55" oY="31" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_03_ 0" x="670" y="463" w="28" h="66" pX="0.5" pY="0.5" oX="54" oY="31" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_04_ 1" x="378" y="390" w="71" h="37" pX="0.5" pY="0.5" oX="28" oY="48" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_05_ 1" x="506" y="426" w="71" h="37" pX="0.5" pY="0.5" oX="28" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_06_ 1" x="337" y="590" w="70" h="35" pX="0.5" pY="0.5" oX="29" oY="50" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_07_ 2" x="290" y="509" w="71" h="35" pX="0.5" pY="0.5" oX="32" oY="49" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_08_ 2" x="140" y="551" w="70" h="38" pX="0.5" pY="0.5" oX="32" oY="46" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_09_ 2" x="503" y="537" w="70" h="40" pX="0.5" pY="0.5" oX="32" oY="44" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_10_ 3" x="199" y="783" w="22" h="62" pX="0.5" pY="0.5" oX="54" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_11_ 3" x="642" y="739" w="23" h="61" pX="0.5" pY="0.5" oX="52" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_12_ 3" x="833" y="580" w="26" h="61" pX="0.5" pY="0.5" oX="49" oY="34" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_13_ 4" x="679" y="926" w="54" h="55" pX="0.5" pY="0.5" oX="37" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_14_ 4" x="911" y="758" w="47" h="57" pX="0.5" pY="0.5" oX="42" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_15_ 4" x="388" y="861" w="44" h="58" pX="0.5" pY="0.5" oX="45" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_16_ 5" x="1024" y="807" w="50" h="52" pX="0.5" pY="0.5" oX="40" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_17_ 5" x="106" y="926" w="56" h="49" pX="0.5" pY="0.5" oX="35" oY="41" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_18_ 5" x="861" y="52" w="59" h="48" pX="0.5" pY="0.5" oX="32" oY="42" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_19_ 6" x="864" y="874" w="52" h="55" pX="0.5" pY="0.5" oX="39" oY="37" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_20_ 6" x="861" y="326" w="58" h="52" pX="0.5" pY="0.5" oX="38" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_21_ 6" x="633" y="823" w="60" h="52" pX="0.5" pY="0.5" oX="38" oY="38" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_22_ 7" x="968" y="703" w="53" h="54" pX="0.5" pY="0.5" oX="41" oY="39" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_23_ 7" x="864" y="758" w="47" h="58" pX="0.5" pY="0.5" oX="42" oY="36" oW="120" oH="120"/>
+  <sprite n="Dog_4_Woozy_24_ 7" x="857" y="641" w="43" h="59" pX="0.5" pY="0.5" oX="42" oY="35" oW="120" oH="120"/>
+</TextureAtlas>

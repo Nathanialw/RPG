@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="GreenCube1.png" width="4602" height="4472" scale="1" format="RGBA8888">
+  <sprite n="GreenCube1_Attack 1_01_ 0" x="3302" y="3547" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_02_ 0" x="3330" y="2424" w="186" h="222" pX="0.5" pY="0.5" oX="80" oY="32" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_03_ 0" x="3127" y="229" w="205" h="228" pX="0.5" pY="0.5" oX="71" oY="61" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_04_ 1" x="3730" y="2150" w="156" h="209" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_05_ 1" x="971" y="3428" w="190" h="216" pX="0.5" pY="0.5" oX="80" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_06_ 1" x="684" y="2750" w="235" h="210" pX="0.5" pY="0.5" oX="28" oY="68" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_07_ 2" x="3730" y="2777" w="156" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_08_ 2" x="3105" y="1974" w="190" h="227" pX="0.5" pY="0.5" oX="80" oY="33" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_09_ 2" x="919" y="2749" w="235" h="223" pX="0.5" pY="0.5" oX="87" oY="57" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_10_ 3" x="3727" y="657" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_11_ 3" x="3329" y="889" w="186" h="220" pX="0.5" pY="0.5" oX="84" oY="47" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_12_ 3" x="1029" y="3202" w="205" h="225" pX="0.5" pY="0.5" oX="74" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_13_ 4" x="0" y="1285" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_14_ 4" x="1477" y="967" w="212" h="248" pX="0.5" pY="0.5" oX="75" oY="27" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_15_ 4" x="2820" y="3290" w="215" h="212" pX="0.5" pY="0.5" oX="50" oY="62" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_16_ 5" x="1282" y="469" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_17_ 5" x="677" y="2029" w="210" h="244" pX="0.5" pY="0.5" oX="77" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_18_ 5" x="3295" y="1974" w="202" h="223" pX="0.5" pY="0.5" oX="50" oY="37" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_19_ 6" x="634" y="1033" w="211" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_20_ 6" x="1101" y="2028" w="210" h="243" pX="0.5" pY="0.5" oX="63" oY="33" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_21_ 6" x="3533" y="1736" w="201" h="211" pX="0.5" pY="0.5" oX="98" oY="65" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_22_ 7" x="845" y="1016" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_23_ 7" x="2465" y="0" w="212" h="239" pX="0.5" pY="0.5" oX="63" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 1_24_ 7" x="2237" y="3416" w="215" h="213" pX="0.5" pY="0.5" oX="85" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_01_ 0" x="3859" y="1298" w="178" h="207" pX="0.5" pY="0.5" oX="86" oY="65" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_02_ 0" x="2809" y="4250" w="168" h="194" pX="0.5" pY="0.5" oX="92" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_03_ 0" x="4211" y="3293" w="188" h="192" pX="0.5" pY="0.5" oX="77" oY="77" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_04_ 1" x="3935" y="4027" w="181" h="205" pX="0.5" pY="0.5" oX="83" oY="65" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_05_ 1" x="2667" y="1052" w="197" h="235" pX="0.5" pY="0.5" oX="115" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_06_ 1" x="470" y="2514" w="214" h="237" pX="0.5" pY="0.5" oX="22" oY="22" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_07_ 2" x="3885" y="1073" w="181" h="207" pX="0.5" pY="0.5" oX="86" oY="64" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_08_ 2" x="1777" y="2233" w="197" h="239" pX="0.5" pY="0.5" oX="38" oY="26" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_09_ 2" x="2012" y="490" w="214" h="243" pX="0.5" pY="0.5" oX="114" oY="15" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_10_ 3" x="330" y="4065" w="178" h="205" pX="0.5" pY="0.5" oX="86" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_11_ 3" x="4256" y="2693" w="168" h="189" pX="0.5" pY="0.5" oX="90" oY="94" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_12_ 3" x="2625" y="3294" w="188" h="214" pX="0.5" pY="0.5" oX="85" oY="33" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_13_ 4" x="880" y="2273" w="226" h="239" pX="0.5" pY="0.5" oX="63" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_14_ 4" x="2120" y="968" w="241" h="241" pX="0.5" pY="0.5" oX="81" oY="28" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_15_ 4" x="223" y="2030" w="244" h="238" pX="0.5" pY="0.5" oX="22" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_16_ 5" x="428" y="2274" w="226" h="240" pX="0.5" pY="0.5" oX="63" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_17_ 5" x="2207" y="1698" w="241" h="238" pX="0.5" pY="0.5" oX="81" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_18_ 5" x="659" y="264" w="234" h="252" pX="0.5" pY="0.5" oX="33" oY="17" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_19_ 6" x="1331" y="2253" w="226" h="239" pX="0.5" pY="0.5" oX="61" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_20_ 6" x="1966" y="1701" w="241" h="244" pX="0.5" pY="0.5" oX="28" oY="26" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_21_ 6" x="2414" y="2633" w="234" h="226" pX="0.5" pY="0.5" oX="83" oY="59" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_22_ 7" x="2207" y="1936" w="226" h="240" pX="0.5" pY="0.5" oX="61" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_23_ 7" x="2106" y="1214" w="241" h="242" pX="0.5" pY="0.5" oX="28" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Attack 2_24_ 7" x="448" y="0" w="244" h="264" pX="0.5" pY="0.5" oX="84" oY="5" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_01_ 0" x="1244" y="3643" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_02_ 0" x="1161" y="3427" w="203" h="216" pX="0.5" pY="0.5" oX="77" oY="47" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_03_ 0" x="1114" y="0" w="250" h="220" pX="0.5" pY="0.5" oX="61" oY="45" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_04_ 1" x="3730" y="2359" w="156" h="209" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_05_ 1" x="3323" y="3097" w="177" h="219" pX="0.5" pY="0.5" oX="80" oY="43" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_06_ 1" x="1657" y="3192" w="195" h="224" pX="0.5" pY="0.5" oX="65" oY="40" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_07_ 2" x="319" y="3856" w="156" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_08_ 2" x="599" y="3428" w="177" h="217" pX="0.5" pY="0.5" oX="93" oY="45" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_09_ 2" x="3309" y="1507" w="195" h="222" pX="0.5" pY="0.5" oX="90" oY="42" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_10_ 3" x="3734" y="1941" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_11_ 3" x="3326" y="1109" w="203" h="219" pX="0.5" pY="0.5" oX="70" oY="43" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_12_ 3" x="646" y="771" w="250" h="224" pX="0.5" pY="0.5" oX="39" oY="40" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_13_ 4" x="1364" y="0" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_14_ 4" x="1311" y="2010" w="214" h="243" pX="0.5" pY="0.5" oX="68" oY="39" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_15_ 4" x="1745" y="738" w="245" h="232" pX="0.5" pY="0.5" oX="39" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_16_ 5" x="1262" y="1266" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_17_ 5" x="1892" y="1215" w="214" h="245" pX="0.5" pY="0.5" oX="69" oY="37" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_18_ 5" x="1974" y="2426" w="218" h="236" pX="0.5" pY="0.5" oX="67" oY="47" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_19_ 6" x="212" y="1035" w="211" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_20_ 6" x="1752" y="1705" w="214" h="245" pX="0.5" pY="0.5" oX="67" oY="37" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_21_ 6" x="0" y="2274" w="217" h="240" pX="0.5" pY="0.5" oX="66" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_22_ 7" x="860" y="516" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_23_ 7" x="0" y="1783" w="214" h="247" pX="0.5" pY="0.5" oX="68" oY="35" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Behavior_24_ 7" x="1923" y="1460" w="245" h="241" pX="0.5" pY="0.5" oX="66" oY="42" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_01_ 0" x="3444" y="3908" w="156" h="203" pX="0.5" pY="0.5" oX="97" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_02_ 0" x="2651" y="4250" w="158" h="194" pX="0.5" pY="0.5" oX="96" oY="69" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_03_ 0" x="4426" y="175" w="164" h="176" pX="0.5" pY="0.5" oX="93" oY="91" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_04_ 1" x="173" y="4067" w="157" h="205" pX="0.5" pY="0.5" oX="96" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_05_ 1" x="3434" y="4111" w="162" h="196" pX="0.5" pY="0.5" oX="95" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_06_ 1" x="4251" y="1162" w="175" h="181" pX="0.5" pY="0.5" oX="90" oY="85" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_07_ 2" x="3775" y="4029" w="158" h="205" pX="0.5" pY="0.5" oX="96" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_08_ 2" x="4114" y="3493" w="162" h="197" pX="0.5" pY="0.5" oX="93" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_09_ 2" x="4251" y="2271" w="175" h="182" pX="0.5" pY="0.5" oX="85" oY="84" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_10_ 3" x="4115" y="408" w="156" h="201" pX="0.5" pY="0.5" oX="97" oY="60" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_11_ 3" x="4268" y="769" w="158" h="190" pX="0.5" pY="0.5" oX="96" oY="75" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_12_ 3" x="4426" y="736" w="164" h="167" pX="0.5" pY="0.5" oX="93" oY="105" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_13_ 4" x="2465" y="239" w="205" h="238" pX="0.5" pY="0.5" oX="73" oY="40" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_14_ 4" x="1535" y="3416" w="195" h="215" pX="0.5" pY="0.5" oX="80" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_15_ 4" x="4426" y="0" w="176" h="175" pX="0.5" pY="0.5" oX="93" oY="90" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_16_ 5" x="2361" y="968" w="205" h="238" pX="0.5" pY="0.5" oX="74" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_17_ 5" x="209" y="3429" w="195" h="217" pX="0.5" pY="0.5" oX="80" oY="60" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_18_ 5" x="4251" y="979" w="175" h="183" pX="0.5" pY="0.5" oX="93" oY="91" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_19_ 6" x="2465" y="477" w="206" h="238" pX="0.5" pY="0.5" oX="71" oY="40" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_20_ 6" x="776" y="3428" w="195" h="216" pX="0.5" pY="0.5" oX="75" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_21_ 6" x="4426" y="561" w="175" h="175" pX="0.5" pY="0.5" oX="82" oY="90" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_22_ 7" x="2461" y="726" w="205" h="238" pX="0.5" pY="0.5" oX="72" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_23_ 7" x="404" y="3428" w="195" h="217" pX="0.5" pY="0.5" oX="75" oY="60" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Block_24_ 7" x="4246" y="3093" w="176" h="182" pX="0.5" pY="0.5" oX="81" oY="92" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_01_ 0" x="1943" y="4049" w="178" h="203" pX="0.5" pY="0.5" oX="87" oY="68" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_02_ 0" x="4037" y="1280" w="181" h="202" pX="0.5" pY="0.5" oX="85" oY="70" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_03_ 0" x="4070" y="2693" w="186" h="202" pX="0.5" pY="0.5" oX="81" oY="71" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_04_ 1" x="2271" y="4049" w="182" h="203" pX="0.5" pY="0.5" oX="85" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_05_ 1" x="4066" y="979" w="185" h="202" pX="0.5" pY="0.5" oX="83" oY="69" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_06_ 1" x="1755" y="4049" w="188" h="203" pX="0.5" pY="0.5" oX="82" oY="70" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_07_ 2" x="508" y="4063" w="182" h="204" pX="0.5" pY="0.5" oX="83" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_08_ 2" x="1381" y="4061" w="184" h="204" pX="0.5" pY="0.5" oX="82" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_09_ 2" x="690" y="4063" w="188" h="204" pX="0.5" pY="0.5" oX="80" oY="68" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_10_ 3" x="377" y="4270" w="178" h="199" pX="0.5" pY="0.5" oX="85" oY="72" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_11_ 3" x="3933" y="4232" w="181" h="199" pX="0.5" pY="0.5" oX="84" oY="73" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_12_ 3" x="1792" y="4252" w="186" h="197" pX="0.5" pY="0.5" oX="83" oY="76" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_13_ 4" x="0" y="2972" w="220" h="230" pX="0.5" pY="0.5" oX="67" oY="54" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_14_ 4" x="3108" y="693" w="221" h="228" pX="0.5" pY="0.5" oX="67" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_15_ 4" x="3100" y="2882" w="223" h="227" pX="0.5" pY="0.5" oX="66" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_16_ 5" x="3108" y="465" w="220" h="228" pX="0.5" pY="0.5" oX="67" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_17_ 5" x="1234" y="3202" w="221" h="225" pX="0.5" pY="0.5" oX="67" oY="61" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_18_ 5" x="3329" y="667" w="222" h="222" pX="0.5" pY="0.5" oX="67" oY="65" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_19_ 6" x="426" y="2972" w="220" h="230" pX="0.5" pY="0.5" oX="63" oY="54" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_20_ 6" x="3055" y="1050" w="221" h="229" pX="0.5" pY="0.5" oX="62" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_21_ 6" x="3104" y="1279" w="222" h="228" pX="0.5" pY="0.5" oX="61" oY="57" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_22_ 7" x="2902" y="1516" w="220" h="231" pX="0.5" pY="0.5" oX="63" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_23_ 7" x="2062" y="2885" w="221" h="229" pX="0.5" pY="0.5" oX="62" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Critical HP_24_ 7" x="3105" y="1747" w="223" h="227" pX="0.5" pY="0.5" oX="61" oY="60" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_01_ 0" x="3600" y="4030" w="171" h="203" pX="0.5" pY="0.5" oX="90" oY="64" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_02_ 0" x="2643" y="4047" w="185" h="203" pX="0.5" pY="0.5" oX="83" oY="70" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_03_ 0" x="3030" y="3964" w="202" h="203" pX="0.5" pY="0.5" oX="75" oY="77" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_04_ 1" x="878" y="4062" w="173" h="204" pX="0.5" pY="0.5" oX="89" oY="63" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_05_ 1" x="2453" y="4049" w="190" h="203" pX="0.5" pY="0.5" oX="81" oY="70" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_06_ 1" x="3908" y="1674" w="207" h="204" pX="0.5" pY="0.5" oX="73" oY="77" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_07_ 2" x="0" y="4067" w="173" h="205" pX="0.5" pY="0.5" oX="88" oY="62" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_08_ 2" x="1565" y="4060" w="190" h="204" pX="0.5" pY="0.5" oX="79" oY="69" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_09_ 2" x="3893" y="2290" w="207" h="205" pX="0.5" pY="0.5" oX="70" oY="75" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_10_ 3" x="4103" y="3817" w="170" h="201" pX="0.5" pY="0.5" oX="89" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_11_ 3" x="555" y="4267" w="186" h="199" pX="0.5" pY="0.5" oX="81" oY="75" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_12_ 3" x="4066" y="781" w="202" h="198" pX="0.5" pY="0.5" oX="73" oY="83" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_13_ 4" x="2912" y="233" w="215" h="232" pX="0.5" pY="0.5" oX="69" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_14_ 4" x="0" y="3202" w="225" h="227" pX="0.5" pY="0.5" oX="65" oY="59" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_15_ 4" x="2667" y="1287" w="235" h="221" pX="0.5" pY="0.5" oX="61" oY="69" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_16_ 5" x="2891" y="2606" w="214" h="231" pX="0.5" pY="0.5" oX="70" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_17_ 5" x="225" y="3202" w="225" h="226" pX="0.5" pY="0.5" oX="65" oY="62" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_18_ 5" x="1324" y="249" w="235" h="219" pX="0.5" pY="0.5" oX="61" oY="73" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_19_ 6" x="2912" y="0" w="215" h="233" pX="0.5" pY="0.5" oX="66" oY="49" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_20_ 6" x="3105" y="2428" w="225" h="227" pX="0.5" pY="0.5" oX="60" oY="59" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_21_ 6" x="2677" y="185" w="235" h="223" pX="0.5" pY="0.5" oX="54" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_22_ 7" x="2192" y="2651" w="215" h="234" pX="0.5" pY="0.5" oX="66" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_23_ 7" x="1624" y="2962" w="225" h="230" pX="0.5" pY="0.5" oX="60" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Dead To Down_24_ 7" x="2671" y="593" w="235" h="224" pX="0.5" pY="0.5" oX="54" oY="68" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_1_01_ 0" x="191" y="4272" w="186" h="200" pX="0.5" pY="0.5" oX="82" oY="77" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_1_02_ 1" x="0" y="4272" w="191" h="200" pX="0.5" pY="0.5" oX="78" oY="75" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_1_03_ 2" x="4055" y="3093" w="191" h="200" pX="0.5" pY="0.5" oX="81" oY="75" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_1_04_ 3" x="2465" y="4252" w="186" h="194" pX="0.5" pY="0.5" oX="82" oY="81" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_1_05_ 4" x="3337" y="223" w="223" h="221" pX="0.5" pY="0.5" oX="66" oY="65" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_1_06_ 5" x="3337" y="0" w="223" h="223" pX="0.5" pY="0.5" oX="66" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_1_07_ 6" x="2256" y="3114" w="223" h="221" pX="0.5" pY="0.5" oX="61" oY="65" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_1_08_ 7" x="3332" y="444" w="223" h="223" pX="0.5" pY="0.5" oX="61" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_2_01_ 0" x="2828" y="3964" w="202" h="203" pX="0.5" pY="0.5" oX="75" oY="77" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_2_02_ 1" x="3909" y="0" w="207" h="204" pX="0.5" pY="0.5" oX="73" oY="77" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_2_03_ 2" x="3908" y="1878" w="207" h="205" pX="0.5" pY="0.5" oX="70" oY="75" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_2_04_ 3" x="4070" y="2495" w="202" h="198" pX="0.5" pY="0.5" oX="73" oY="83" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_2_05_ 4" x="235" y="2751" w="235" h="221" pX="0.5" pY="0.5" oX="61" oY="69" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_2_06_ 5" x="1154" y="2746" w="235" h="219" pX="0.5" pY="0.5" oX="61" oY="73" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_2_07_ 6" x="2656" y="2618" w="235" h="223" pX="0.5" pY="0.5" oX="54" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_2_08_ 7" x="2671" y="593" w="235" h="224" pX="0.5" pY="0.5" oX="54" oY="68" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_3_01_ 0" x="3232" y="3964" w="202" h="203" pX="0.5" pY="0.5" oX="75" oY="77" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_3_02_ 1" x="3909" y="204" w="207" h="204" pX="0.5" pY="0.5" oX="73" oY="77" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_3_03_ 2" x="3908" y="408" w="207" h="205" pX="0.5" pY="0.5" oX="70" oY="75" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_3_04_ 3" x="4057" y="2895" w="202" h="198" pX="0.5" pY="0.5" oX="73" oY="83" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_3_05_ 4" x="2667" y="1508" w="235" h="221" pX="0.5" pY="0.5" oX="61" oY="69" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_3_06_ 5" x="0" y="2751" w="235" h="219" pX="0.5" pY="0.5" oX="61" oY="73" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_3_07_ 6" x="2656" y="2395" w="235" h="223" pX="0.5" pY="0.5" oX="54" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_3_08_ 7" x="2667" y="1729" w="235" h="224" pX="0.5" pY="0.5" oX="54" oY="68" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_4_01_ 0" x="4066" y="613" w="202" h="168" pX="0.5" pY="0.5" oX="75" oY="113" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_4_02_ 1" x="3326" y="1328" w="207" h="169" pX="0.5" pY="0.5" oX="73" oY="112" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_4_03_ 2" x="3908" y="1505" w="207" h="169" pX="0.5" pY="0.5" oX="70" oY="111" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_4_04_ 3" x="2902" y="1978" w="202" h="164" pX="0.5" pY="0.5" oX="73" oY="118" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_4_05_ 4" x="2671" y="408" w="235" h="185" pX="0.5" pY="0.5" oX="61" oY="105" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_4_06_ 5" x="2677" y="0" w="235" h="185" pX="0.5" pY="0.5" oX="61" oY="108" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_4_07_ 6" x="1990" y="738" w="235" h="187" pX="0.5" pY="0.5" oX="54" oY="103" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Down_4_08_ 7" x="2667" y="1953" w="235" h="190" pX="0.5" pY="0.5" oX="54" oY="103" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_01_ 0" x="3292" y="3757" w="152" h="207" pX="0.5" pY="0.5" oX="98" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_02_ 0" x="4116" y="203" w="147" h="200" pX="0.5" pY="0.5" oX="101" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_03_ 0" x="2479" y="3088" w="139" h="191" pX="0.5" pY="0.5" oX="105" oY="57" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_04_ 1" x="4100" y="2290" w="151" h="202" pX="0.5" pY="0.5" oX="103" oY="54" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_05_ 1" x="4276" y="386" w="148" h="193" pX="0.5" pY="0.5" oX="109" oY="59" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_06_ 1" x="4276" y="4240" w="143" h="184" pX="0.5" pY="0.5" oX="114" oY="64" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_07_ 2" x="3891" y="3113" w="151" h="206" pX="0.5" pY="0.5" oX="96" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_08_ 2" x="1193" y="4266" w="148" h="199" pX="0.5" pY="0.5" oX="93" oY="53" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_09_ 2" x="4276" y="4054" w="143" h="186" pX="0.5" pY="0.5" oX="93" oY="62" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_10_ 3" x="741" y="4267" w="152" h="199" pX="0.5" pY="0.5" oX="100" oY="59" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_11_ 3" x="4276" y="3868" w="147" h="186" pX="0.5" pY="0.5" oX="102" oY="69" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_12_ 3" x="4424" y="386" w="139" h="175" pX="0.5" pY="0.5" oX="106" oY="79" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_13_ 4" x="1811" y="2728" w="192" h="234" pX="0.5" pY="0.5" oX="80" oY="38" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_14_ 4" x="3515" y="889" w="170" h="214" pX="0.5" pY="0.5" oX="92" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_15_ 4" x="1341" y="4266" w="151" h="198" pX="0.5" pY="0.5" oX="103" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_16_ 5" x="838" y="3202" w="191" h="226" pX="0.5" pY="0.5" oX="81" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_17_ 5" x="4042" y="3293" w="169" h="200" pX="0.5" pY="0.5" oX="93" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_18_ 5" x="4275" y="1343" w="150" h="176" pX="0.5" pY="0.5" oX="104" oY="84" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_19_ 6" x="2864" y="1052" w="191" h="233" pX="0.5" pY="0.5" oX="78" oY="39" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_20_ 6" x="3499" y="2646" w="169" h="212" pX="0.5" pY="0.5" oX="88" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_21_ 6" x="4276" y="3485" w="150" h="192" pX="0.5" pY="0.5" oX="96" oY="62" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_22_ 7" x="3105" y="2655" w="192" h="227" pX="0.5" pY="0.5" oX="78" oY="47" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_23_ 7" x="1211" y="4062" w="170" h="204" pX="0.5" pY="0.5" oX="88" oY="63" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Evade_24_ 7" x="4275" y="579" w="151" h="190" pX="0.5" pY="0.5" oX="96" oY="70" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_01_ 0" x="3228" y="3333" w="162" h="214" pX="0.5" pY="0.5" oX="93" oY="49" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_02_ 0" x="3122" y="1507" w="187" h="227" pX="0.5" pY="0.5" oX="77" oY="37" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_03_ 0" x="1271" y="1515" w="233" h="248" pX="0.5" pY="0.5" oX="49" oY="19" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_04_ 1" x="3533" y="1314" w="161" h="211" pX="0.5" pY="0.5" oX="95" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_05_ 1" x="3105" y="2201" w="173" h="227" pX="0.5" pY="0.5" oX="92" oY="37" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_06_ 1" x="904" y="0" w="210" h="250" pX="0.5" pY="0.5" oX="80" oY="18" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_07_ 2" x="1399" y="3642" w="161" h="210" pX="0.5" pY="0.5" oX="94" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_08_ 2" x="2003" y="2662" w="173" h="223" pX="0.5" pY="0.5" oX="85" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_09_ 2" x="467" y="2030" w="210" h="244" pX="0.5" pY="0.5" oX="60" oY="23" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_10_ 3" x="3480" y="2197" w="162" h="212" pX="0.5" pY="0.5" oX="95" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_11_ 3" x="2859" y="3066" w="187" h="224" pX="0.5" pY="0.5" oX="86" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_12_ 3" x="869" y="1781" w="233" h="247" pX="0.5" pY="0.5" oX="68" oY="22" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_13_ 4" x="1715" y="1460" w="208" h="245" pX="0.5" pY="0.5" oX="72" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_14_ 4" x="692" y="0" w="212" h="252" pX="0.5" pY="0.5" oX="71" oY="27" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_15_ 4" x="224" y="265" w="224" h="264" pX="0.5" pY="0.5" oX="70" oY="17" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_16_ 5" x="2016" y="0" w="207" h="244" pX="0.5" pY="0.5" oX="73" oY="36" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_17_ 5" x="904" y="250" w="210" h="250" pX="0.5" pY="0.5" oX="72" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_18_ 5" x="0" y="528" w="224" h="256" pX="0.5" pY="0.5" oX="64" oY="27" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_19_ 6" x="1689" y="970" w="207" h="245" pX="0.5" pY="0.5" oX="70" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_20_ 6" x="224" y="529" w="210" h="254" pX="0.5" pY="0.5" oX="68" oY="26" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_21_ 6" x="0" y="0" w="224" h="266" pX="0.5" pY="0.5" oX="62" oY="15" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_22_ 7" x="1684" y="1215" w="208" h="245" pX="0.5" pY="0.5" oX="70" oY="35" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_23_ 7" x="434" y="529" w="212" h="253" pX="0.5" pY="0.5" oX="67" oY="28" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Get Hit_24_ 7" x="224" y="0" w="224" h="265" pX="0.5" pY="0.5" oX="56" oY="18" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_01_ 0" x="3730" y="3195" w="161" h="209" pX="0.5" pY="0.5" oX="95" oY="54" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_02_ 0" x="3612" y="3613" w="173" h="209" pX="0.5" pY="0.5" oX="89" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_03_ 0" x="0" y="3858" w="163" h="209" pX="0.5" pY="0.5" oX="94" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_04_ 1" x="3612" y="3822" w="163" h="208" pX="0.5" pY="0.5" oX="93" oY="54" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_05_ 1" x="3734" y="428" w="174" h="209" pX="0.5" pY="0.5" oX="88" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_06_ 1" x="3694" y="1314" w="165" h="209" pX="0.5" pY="0.5" oX="92" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_07_ 2" x="2781" y="3712" w="163" h="208" pX="0.5" pY="0.5" oX="94" oY="54" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_08_ 2" x="3734" y="1732" w="174" h="209" pX="0.5" pY="0.5" oX="88" oY="58" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_09_ 2" x="2550" y="3839" w="165" h="208" pX="0.5" pY="0.5" oX="93" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_10_ 3" x="2389" y="3841" w="161" h="208" pX="0.5" pY="0.5" oX="94" oY="54" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_11_ 3" x="2216" y="3841" w="173" h="208" pX="0.5" pY="0.5" oX="88" oY="59" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_12_ 3" x="3730" y="2568" w="163" h="209" pX="0.5" pY="0.5" oX="93" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_13_ 4" x="1319" y="1763" w="216" h="247" pX="0.5" pY="0.5" oX="67" oY="35" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_14_ 4" x="2006" y="246" w="224" h="244" pX="0.5" pY="0.5" oX="64" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_15_ 4" x="1102" y="1763" w="217" h="247" pX="0.5" pY="0.5" oX="67" oY="36" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_16_ 5" x="654" y="1782" w="215" h="247" pX="0.5" pY="0.5" oX="68" oY="35" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_17_ 5" x="1896" y="970" w="224" h="244" pX="0.5" pY="0.5" oX="64" oY="42" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_18_ 5" x="1535" y="1744" w="217" h="246" pX="0.5" pY="0.5" oX="67" oY="37" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_19_ 6" x="214" y="1783" w="215" h="247" pX="0.5" pY="0.5" oX="67" oY="35" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_20_ 6" x="0" y="2030" w="223" h="244" pX="0.5" pY="0.5" oX="62" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_21_ 6" x="1528" y="496" w="217" h="247" pX="0.5" pY="0.5" oX="66" oY="36" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_22_ 7" x="1055" y="1515" w="216" h="248" pX="0.5" pY="0.5" oX="67" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_23_ 7" x="1792" y="0" w="224" h="246" pX="0.5" pY="0.5" oX="62" oY="40" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle Fidget_24_ 7" x="1575" y="0" w="217" h="248" pX="0.5" pY="0.5" oX="66" oY="35" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_01_ 0" x="1090" y="3644" w="154" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_02_ 0" x="936" y="3644" w="154" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_03_ 0" x="1244" y="3643" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_04_ 0" x="779" y="3644" w="157" h="210" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_05_ 0" x="624" y="3645" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_06_ 1" x="469" y="3645" w="155" h="210" pX="0.5" pY="0.5" oX="97" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_07_ 1" x="3659" y="3404" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_08_ 1" x="3730" y="2986" w="156" h="209" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_09_ 1" x="2059" y="3841" w="157" h="208" pX="0.5" pY="0.5" oX="96" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_10_ 1" x="163" y="3858" w="156" h="209" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_11_ 2" x="3457" y="3700" w="155" h="208" pX="0.5" pY="0.5" oX="98" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_12_ 2" x="3457" y="3491" w="155" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_13_ 2" x="3753" y="0" w="156" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_14_ 2" x="312" y="3646" w="157" h="210" pX="0.5" pY="0.5" oX="97" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_15_ 2" x="3753" y="209" w="155" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_16_ 3" x="1560" y="3631" w="154" h="210" pX="0.5" pY="0.5" oX="98" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_17_ 3" x="3730" y="1523" w="154" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_18_ 3" x="3685" y="880" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_19_ 3" x="155" y="3648" w="157" h="210" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_20_ 3" x="3730" y="1089" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_21_ 4" x="632" y="1284" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_22_ 4" x="422" y="1285" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_23_ 4" x="211" y="1285" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_24_ 4" x="210" y="1534" w="212" h="249" pX="0.5" pY="0.5" oX="69" oY="32" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_25_ 4" x="1575" y="248" w="211" h="248" pX="0.5" pY="0.5" oX="69" oY="32" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_26_ 5" x="1114" y="220" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_27_ 5" x="1107" y="750" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_28_ 5" x="633" y="1533" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_29_ 5" x="844" y="1532" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="32" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_30_ 5" x="1473" y="1248" w="211" h="248" pX="0.5" pY="0.5" oX="70" oY="32" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_31_ 6" x="0" y="1534" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_32_ 6" x="1056" y="1016" w="210" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_33_ 6" x="220" y="784" w="211" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_34_ 6" x="1266" y="999" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="32" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_35_ 6" x="1071" y="500" w="211" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_36_ 7" x="1052" y="1266" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_37_ 7" x="842" y="1283" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_38_ 7" x="423" y="1034" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_39_ 7" x="0" y="1035" w="212" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Idle_40_ 7" x="896" y="766" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_01_ 0" x="3752" y="4234" w="160" h="196" pX="0.5" pY="0.5" oX="95" oY="68" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_02_ 0" x="1642" y="4264" w="150" h="197" pX="0.5" pY="0.5" oX="100" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_03_ 0" x="1043" y="4266" w="150" h="199" pX="0.5" pY="0.5" oX="100" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_04_ 0" x="3035" y="3333" w="193" h="214" pX="0.5" pY="0.5" oX="78" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_05_ 0" x="2138" y="4252" w="160" h="196" pX="0.5" pY="0.5" oX="95" oY="68" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_06_ 0" x="4115" y="1682" w="150" h="197" pX="0.5" pY="0.5" oX="100" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_07_ 0" x="893" y="4266" w="150" h="199" pX="0.5" pY="0.5" oX="100" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_08_ 0" x="3560" y="214" w="193" h="214" pX="0.5" pY="0.5" oX="78" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_09_ 1" x="3785" y="3613" w="168" h="207" pX="0.5" pY="0.5" oX="87" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_10_ 1" x="2425" y="3629" w="163" h="210" pX="0.5" pY="0.5" oX="88" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_11_ 1" x="997" y="3854" w="166" h="208" pX="0.5" pY="0.5" oX="99" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_12_ 1" x="3533" y="1103" w="197" h="211" pX="0.5" pY="0.5" oX="74" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_13_ 1" x="3814" y="3404" w="168" h="207" pX="0.5" pY="0.5" oX="87" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_14_ 1" x="3139" y="3547" w="163" h="210" pX="0.5" pY="0.5" oX="88" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_15_ 1" x="634" y="3855" w="166" h="208" pX="0.5" pY="0.5" oX="99" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_16_ 1" x="3533" y="1525" w="197" h="211" pX="0.5" pY="0.5" oX="74" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_17_ 2" x="3840" y="866" w="168" h="207" pX="0.5" pY="0.5" oX="95" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_18_ 2" x="2976" y="3547" w="163" h="210" pX="0.5" pY="0.5" oX="99" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_19_ 2" x="1893" y="3841" w="166" h="208" pX="0.5" pY="0.5" oX="85" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_20_ 2" x="800" y="3854" w="197" h="208" pX="0.5" pY="0.5" oX="79" oY="70" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_21_ 2" x="3882" y="637" w="168" h="207" pX="0.5" pY="0.5" oX="95" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_22_ 2" x="2813" y="3502" w="163" h="210" pX="0.5" pY="0.5" oX="99" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_23_ 2" x="1163" y="3854" w="166" h="208" pX="0.5" pY="0.5" oX="85" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_24_ 2" x="1329" y="3853" w="197" h="208" pX="0.5" pY="0.5" oX="79" oY="70" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_25_ 3" x="4116" y="4018" w="160" h="200" pX="0.5" pY="0.5" oX="95" oY="63" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_26_ 3" x="4115" y="2075" w="150" h="196" pX="0.5" pY="0.5" oX="100" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_27_ 3" x="3127" y="4167" w="150" h="193" pX="0.5" pY="0.5" oX="100" oY="64" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_28_ 3" x="2232" y="3631" w="193" h="210" pX="0.5" pY="0.5" oX="79" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_29_ 3" x="4115" y="1482" w="160" h="200" pX="0.5" pY="0.5" oX="95" oY="63" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_30_ 3" x="4115" y="2075" w="150" h="196" pX="0.5" pY="0.5" oX="100" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_31_ 3" x="4276" y="193" w="150" h="193" pX="0.5" pY="0.5" oX="100" oY="64" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_32_ 3" x="1869" y="3631" w="193" h="210" pX="0.5" pY="0.5" oX="79" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_33_ 4" x="2448" y="1685" w="219" h="238" pX="0.5" pY="0.5" oX="63" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_34_ 4" x="1422" y="2962" w="202" h="230" pX="0.5" pY="0.5" oX="71" oY="30" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_35_ 4" x="3297" y="2655" w="202" h="223" pX="0.5" pY="0.5" oX="80" oY="36" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_36_ 4" x="1578" y="2492" w="235" h="236" pX="0.5" pY="0.5" oX="59" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_37_ 4" x="2347" y="1209" w="219" h="238" pX="0.5" pY="0.5" oX="63" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_38_ 4" x="848" y="2972" w="202" h="230" pX="0.5" pY="0.5" oX="71" oY="30" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_39_ 4" x="3278" y="2201" w="202" h="223" pX="0.5" pY="0.5" oX="80" oY="36" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_40_ 4" x="2421" y="2397" w="235" h="236" pX="0.5" pY="0.5" oX="59" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_41_ 5" x="2194" y="2415" w="220" h="236" pX="0.5" pY="0.5" oX="63" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_42_ 5" x="1852" y="3192" w="202" h="224" pX="0.5" pY="0.5" oX="71" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_43_ 5" x="646" y="2972" w="202" h="230" pX="0.5" pY="0.5" oX="80" oY="42" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_44_ 5" x="2230" y="242" w="235" h="242" pX="0.5" pY="0.5" oX="59" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_45_ 5" x="1358" y="2492" w="220" h="236" pX="0.5" pY="0.5" oX="63" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_46_ 5" x="2618" y="3070" w="202" h="224" pX="0.5" pY="0.5" oX="71" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_47_ 5" x="646" y="2972" w="202" h="230" pX="0.5" pY="0.5" oX="80" oY="42" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_48_ 5" x="1966" y="1945" w="235" h="242" pX="0.5" pY="0.5" oX="59" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_49_ 6" x="1557" y="2253" w="220" h="239" pX="0.5" pY="0.5" oX="67" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_50_ 6" x="2891" y="2375" w="202" h="231" pX="0.5" pY="0.5" oX="77" oY="30" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_51_ 6" x="3046" y="3109" w="202" h="224" pX="0.5" pY="0.5" oX="68" oY="36" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_52_ 6" x="235" y="2514" w="235" h="237" pX="0.5" pY="0.5" oX="56" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_53_ 6" x="2201" y="2176" w="220" h="239" pX="0.5" pY="0.5" oX="67" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_54_ 6" x="2902" y="1285" w="202" h="231" pX="0.5" pY="0.5" oX="77" oY="30" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_55_ 6" x="1455" y="3192" w="202" h="224" pX="0.5" pY="0.5" oX="68" oY="36" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_56_ 6" x="0" y="2514" w="235" h="237" pX="0.5" pY="0.5" oX="56" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_57_ 7" x="919" y="2512" w="219" h="237" pX="0.5" pY="0.5" oX="68" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_58_ 7" x="1528" y="743" w="202" h="224" pX="0.5" pY="0.5" oX="77" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_59_ 7" x="2902" y="1747" w="202" h="231" pX="0.5" pY="0.5" oX="68" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_60_ 7" x="2168" y="1456" w="235" h="242" pX="0.5" pY="0.5" oX="56" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_61_ 7" x="2448" y="1923" w="219" h="237" pX="0.5" pY="0.5" oX="68" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_62_ 7" x="2054" y="3192" w="202" h="224" pX="0.5" pY="0.5" oX="77" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_63_ 7" x="2906" y="465" w="202" h="231" pX="0.5" pY="0.5" oX="68" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Running_64_ 7" x="2226" y="726" w="235" h="242" pX="0.5" pY="0.5" oX="56" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_01_ 0" x="1813" y="2472" w="161" h="217" pX="0.5" pY="0.5" oX="98" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_02_ 0" x="0" y="3648" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_03_ 0" x="3497" y="1951" w="173" h="211" pX="0.5" pY="0.5" oX="80" oY="49" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_04_ 1" x="3775" y="3822" w="160" h="207" pX="0.5" pY="0.5" oX="95" oY="53" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_05_ 1" x="3500" y="3280" w="159" h="211" pX="0.5" pY="0.5" oX="93" oY="49" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_06_ 1" x="1255" y="2965" w="167" h="230" pX="0.5" pY="0.5" oX="86" oY="30" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_07_ 2" x="2077" y="3416" w="160" h="215" pX="0.5" pY="0.5" oX="95" oY="45" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_08_ 2" x="475" y="3855" w="159" h="208" pX="0.5" pY="0.5" oX="98" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_09_ 2" x="2298" y="4252" w="167" h="195" pX="0.5" pY="0.5" oX="97" oY="65" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_10_ 3" x="3953" y="3611" w="161" h="206" pX="0.5" pY="0.5" oX="91" oY="54" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_11_ 3" x="1714" y="3631" w="155" h="210" pX="0.5" pY="0.5" oX="97" oY="50" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_12_ 3" x="2452" y="3335" w="173" h="214" pX="0.5" pY="0.5" oX="97" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_13_ 4" x="1792" y="246" w="214" h="246" pX="0.5" pY="0.5" oX="69" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_14_ 4" x="1317" y="718" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_15_ 4" x="0" y="784" w="220" h="251" pX="0.5" pY="0.5" oX="60" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_16_ 5" x="217" y="2274" w="211" h="240" pX="0.5" pY="0.5" oX="70" oY="40" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_17_ 5" x="431" y="783" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="30" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_18_ 5" x="0" y="266" w="213" h="262" pX="0.5" pY="0.5" oX="70" oY="18" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_19_ 6" x="448" y="264" w="211" h="256" pX="0.5" pY="0.5" oX="69" oY="25" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_20_ 6" x="1504" y="1496" w="211" h="248" pX="0.5" pY="0.5" oX="69" oY="33" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_21_ 6" x="1849" y="2962" w="213" h="230" pX="0.5" pY="0.5" oX="67" oY="51" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_22_ 7" x="646" y="520" w="214" h="251" pX="0.5" pY="0.5" oX="67" oY="30" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_23_ 7" x="422" y="1534" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="32" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Use Skill_24_ 7" x="1739" y="1990" w="220" h="243" pX="0.5" pY="0.5" oX="70" oY="38" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_01_ 0" x="1978" y="4252" w="160" h="196" pX="0.5" pY="0.5" oX="95" oY="68" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_02_ 0" x="4115" y="1879" w="156" h="196" pX="0.5" pY="0.5" oX="97" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_03_ 0" x="4276" y="0" w="150" h="193" pX="0.5" pY="0.5" oX="100" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_04_ 0" x="2121" y="4049" w="150" h="203" pX="0.5" pY="0.5" oX="100" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_05_ 0" x="1492" y="4265" w="150" h="198" pX="0.5" pY="0.5" oX="100" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_06_ 0" x="2062" y="3631" w="170" h="210" pX="0.5" pY="0.5" oX="90" oY="45" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_07_ 0" x="3560" y="0" w="193" h="214" pX="0.5" pY="0.5" oX="78" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_08_ 0" x="3893" y="2495" w="177" h="206" pX="0.5" pY="0.5" oX="86" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_09_ 1" x="3124" y="3757" w="168" h="207" pX="0.5" pY="0.5" oX="87" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_10_ 1" x="3893" y="2701" w="164" h="206" pX="0.5" pY="0.5" oX="89" oY="43" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_11_ 1" x="1364" y="3427" w="171" h="215" pX="0.5" pY="0.5" oX="79" oY="15" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_12_ 1" x="1051" y="4062" w="160" h="204" pX="0.5" pY="0.5" oX="91" oY="24" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_13_ 1" x="3516" y="2409" w="170" h="212" pX="0.5" pY="0.5" oX="101" oY="27" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_14_ 1" x="1901" y="3416" w="176" h="215" pX="0.5" pY="0.5" oX="88" oY="45" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_15_ 1" x="3533" y="3069" w="197" h="211" pX="0.5" pY="0.5" oX="74" oY="66" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_16_ 1" x="2944" y="3757" w="180" h="207" pX="0.5" pY="0.5" oX="83" oY="63" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_17_ 2" x="3935" y="3820" w="168" h="207" pX="0.5" pY="0.5" oX="95" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_18_ 2" x="3891" y="2907" w="164" h="206" pX="0.5" pY="0.5" oX="97" oY="43" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_19_ 2" x="1730" y="3416" w="171" h="215" pX="0.5" pY="0.5" oX="100" oY="15" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_20_ 2" x="4116" y="0" w="160" h="203" pX="0.5" pY="0.5" oX="99" oY="25" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_21_ 2" x="3533" y="2858" w="171" h="211" pX="0.5" pY="0.5" oX="79" oY="28" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_22_ 2" x="3551" y="667" w="176" h="213" pX="0.5" pY="0.5" oX="86" oY="47" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_23_ 2" x="1696" y="3841" w="197" h="208" pX="0.5" pY="0.5" oX="79" oY="70" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_24_ 2" x="3935" y="2083" w="180" h="207" pX="0.5" pY="0.5" oX="87" oY="64" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_25_ 3" x="4116" y="4218" w="160" h="200" pX="0.5" pY="0.5" oX="95" oY="63" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_26_ 3" x="3596" y="4233" w="156" h="196" pX="0.5" pY="0.5" oX="97" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_27_ 3" x="3277" y="4167" w="150" h="193" pX="0.5" pY="0.5" oX="100" oY="21" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_28_ 3" x="2977" y="4167" w="150" h="194" pX="0.5" pY="0.5" oX="100" oY="27" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_29_ 3" x="4276" y="3677" w="150" h="191" pX="0.5" pY="0.5" oX="100" oY="53" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_30_ 3" x="1526" y="3852" w="170" h="208" pX="0.5" pY="0.5" oX="90" oY="56" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_31_ 3" x="2588" y="3549" w="193" h="210" pX="0.5" pY="0.5" oX="79" oY="67" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_32_ 3" x="3555" y="444" w="177" h="213" pX="0.5" pY="0.5" oX="87" oY="57" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_33_ 4" x="2448" y="1447" w="219" h="238" pX="0.5" pY="0.5" oX="63" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_34_ 4" x="1389" y="2728" w="211" h="234" pX="0.5" pY="0.5" oX="67" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_35_ 4" x="2891" y="2837" w="209" h="229" pX="0.5" pY="0.5" oX="63" oY="18" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_36_ 4" x="2866" y="2143" w="194" h="232" pX="0.5" pY="0.5" oX="79" oY="13" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_37_ 4" x="470" y="2751" w="206" h="221" pX="0.5" pY="0.5" oX="80" oY="20" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_38_ 4" x="2652" y="2160" w="214" h="235" pX="0.5" pY="0.5" oX="70" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_39_ 4" x="2421" y="2397" w="235" h="236" pX="0.5" pY="0.5" oX="59" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_40_ 4" x="654" y="2274" w="226" h="239" pX="0.5" pY="0.5" oX="63" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_41_ 5" x="1138" y="2510" w="220" h="236" pX="0.5" pY="0.5" oX="63" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_42_ 5" x="2407" y="2859" w="211" h="229" pX="0.5" pY="0.5" oX="67" oY="33" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_43_ 5" x="3323" y="2878" w="210" h="219" pX="0.5" pY="0.5" oX="63" oY="11" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_44_ 5" x="644" y="3202" w="194" h="226" pX="0.5" pY="0.5" oX="79" oY="11" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_45_ 5" x="1050" y="2972" w="205" h="230" pX="0.5" pY="0.5" oX="81" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_46_ 5" x="1525" y="2010" w="214" h="243" pX="0.5" pY="0.5" oX="71" oY="37" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_47_ 5" x="2230" y="0" w="235" h="242" pX="0.5" pY="0.5" oX="59" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_48_ 5" x="429" y="1783" w="225" h="247" pX="0.5" pY="0.5" oX="64" oY="41" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_49_ 6" x="1974" y="2187" w="220" h="239" pX="0.5" pY="0.5" oX="67" oY="44" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_50_ 6" x="1600" y="2728" w="211" h="234" pX="0.5" pY="0.5" oX="72" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_51_ 6" x="3127" y="0" w="210" h="229" pX="0.5" pY="0.5" oX="77" oY="18" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_52_ 6" x="2881" y="817" w="194" h="233" pX="0.5" pY="0.5" oX="77" oY="13" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_53_ 6" x="3328" y="1729" w="205" h="222" pX="0.5" pY="0.5" oX="64" oY="20" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_54_ 6" x="2667" y="817" w="214" h="235" pX="0.5" pY="0.5" oX="65" oY="34" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_55_ 6" x="684" y="2513" w="235" h="237" pX="0.5" pY="0.5" oX="56" oY="55" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_56_ 6" x="1106" y="2271" w="225" h="239" pX="0.5" pY="0.5" oX="61" oY="48" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_57_ 7" x="2433" y="2160" w="219" h="237" pX="0.5" pY="0.5" oX="68" oY="46" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_58_ 7" x="2648" y="2841" w="211" h="229" pX="0.5" pY="0.5" oX="72" oY="33" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_59_ 7" x="0" y="3429" w="209" h="219" pX="0.5" pY="0.5" oX="78" oY="11" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_60_ 7" x="450" y="3202" w="194" h="226" pX="0.5" pY="0.5" oX="77" oY="11" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_61_ 7" x="220" y="2972" w="206" h="230" pX="0.5" pY="0.5" oX="64" oY="29" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_62_ 7" x="887" y="2028" w="214" h="243" pX="0.5" pY="0.5" oX="66" oY="37" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_63_ 7" x="2230" y="484" w="235" h="242" pX="0.5" pY="0.5" oX="56" oY="52" oW="350" oH="350"/>
+  <sprite n="GreenCube1_Walking_64_ 7" x="1786" y="492" w="226" h="246" pX="0.5" pY="0.5" oX="61" oY="42" oW="350" oH="350"/>
+</TextureAtlas>

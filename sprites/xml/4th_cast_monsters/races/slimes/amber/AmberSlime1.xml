@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="AmberSlime1.png" width="1719" height="1789" scale="1" format="RGBA8888">
+  <sprite n="AmberSlime1_Attack 1_01_ 0" x="1450" y="1553" w="74" h="80" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_02_ 0" x="1643" y="386" w="76" h="59" pX="0.5" pY="0.5" oX="37" oY="23" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_03_ 0" x="1488" y="1307" w="77" h="82" pX="0.5" pY="0.5" oX="37" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_04_ 1" x="333" y="333" w="111" h="54" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_05_ 1" x="1488" y="545" w="83" h="68" pX="0.5" pY="0.5" oX="60" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_06_ 1" x="0" y="0" w="115" h="56" pX="0.5" pY="0.5" oX="1" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_07_ 2" x="222" y="493" w="111" h="54" pX="0.5" pY="0.5" oX="20" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_08_ 2" x="1488" y="683" w="83" h="56" pX="0.5" pY="0.5" oX="7" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_09_ 2" x="0" y="56" w="115" h="56" pX="0.5" pY="0.5" oX="34" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_10_ 3" x="499" y="1637" w="74" h="78" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_11_ 3" x="1643" y="749" w="76" h="74" pX="0.5" pY="0.5" oX="37" oY="46" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_12_ 3" x="1450" y="1471" w="77" h="82" pX="0.5" pY="0.5" oX="36" oY="24" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_13_ 4" x="882" y="470" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_14_ 4" x="1047" y="1479" w="90" h="64" pX="0.5" pY="0.5" oX="48" oY="30" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_15_ 4" x="1106" y="339" w="102" h="69" pX="0.5" pY="0.5" oX="13" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_16_ 5" x="1209" y="1286" w="93" h="75" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_17_ 5" x="1208" y="1361" w="91" h="79" pX="0.5" pY="0.5" oX="45" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_18_ 5" x="98" y="1176" w="97" h="73" pX="0.5" pY="0.5" oX="15" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_19_ 6" x="281" y="1325" w="93" h="79" pX="0.5" pY="0.5" oX="27" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_20_ 6" x="857" y="1404" w="91" h="63" pX="0.5" pY="0.5" oX="14" oY="26" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_21_ 6" x="389" y="1176" w="97" h="74" pX="0.5" pY="0.5" oX="38" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_22_ 7" x="785" y="49" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_23_ 7" x="765" y="1479" w="90" h="70" pX="0.5" pY="0.5" oX="12" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 1_24_ 7" x="1105" y="408" w="102" h="70" pX="0.5" pY="0.5" oX="35" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_01_ 0" x="1493" y="254" w="77" h="83" pX="0.5" pY="0.5" oX="36" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_02_ 0" x="184" y="1404" w="82" h="73" pX="0.5" pY="0.5" oX="33" oY="20" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_03_ 0" x="1565" y="1143" w="77" h="79" pX="0.5" pY="0.5" oX="36" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_04_ 1" x="0" y="601" w="110" h="59" pX="0.5" pY="0.5" oX="18" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_05_ 1" x="330" y="704" w="109" h="60" pX="0.5" pY="0.5" oX="37" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_06_ 1" x="774" y="518" w="108" h="59" pX="0.5" pY="0.5" oX="0" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_07_ 2" x="555" y="539" w="110" h="56" pX="0.5" pY="0.5" oX="22" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_08_ 2" x="220" y="706" w="109" h="60" pX="0.5" pY="0.5" oX="4" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_09_ 2" x="0" y="848" w="108" h="56" pX="0.5" pY="0.5" oX="42" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_10_ 3" x="1639" y="1443" w="77" h="76" pX="0.5" pY="0.5" oX="37" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_11_ 3" x="1488" y="822" w="82" h="83" pX="0.5" pY="0.5" oX="35" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_12_ 3" x="1086" y="1623" w="77" h="78" pX="0.5" pY="0.5" oX="37" oY="17" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_13_ 4" x="859" y="933" w="107" h="70" pX="0.5" pY="0.5" oX="21" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_14_ 4" x="292" y="1176" w="97" h="63" pX="0.5" pY="0.5" oX="39" oY="29" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_15_ 4" x="1108" y="65" w="104" h="65" pX="0.5" pY="0.5" oX="9" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_16_ 5" x="1021" y="1174" w="96" h="70" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_17_ 5" x="1207" y="459" w="94" h="76" pX="0.5" pY="0.5" oX="42" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_18_ 5" x="1307" y="0" w="94" h="73" pX="0.5" pY="0.5" oX="17" oY="25" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_19_ 6" x="733" y="1115" w="96" h="82" pX="0.5" pY="0.5" oX="24" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_20_ 6" x="292" y="1239" w="94" h="65" pX="0.5" pY="0.5" oX="14" oY="27" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_21_ 6" x="674" y="1246" w="94" h="78" pX="0.5" pY="0.5" oX="39" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_22_ 7" x="645" y="896" w="107" h="69" pX="0.5" pY="0.5" oX="22" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_23_ 7" x="636" y="1108" w="97" h="80" pX="0.5" pY="0.5" oX="14" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Attack 2_24_ 7" x="531" y="1040" w="105" h="72" pX="0.5" pY="0.5" oX="36" oY="28" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_01_ 0" x="1571" y="0" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_02_ 0" x="299" y="1557" w="74" h="80" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_03_ 0" x="373" y="1557" w="74" h="80" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_04_ 1" x="333" y="544" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_05_ 1" x="444" y="502" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_06_ 1" x="222" y="547" w="111" h="54" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_07_ 2" x="111" y="541" w="111" h="52" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_08_ 2" x="444" y="449" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_09_ 2" x="333" y="491" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_10_ 3" x="1570" y="239" w="73" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_11_ 3" x="1565" y="1222" w="73" h="79" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_12_ 3" x="1565" y="1301" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_13_ 4" x="880" y="671" w="108" h="66" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_14_ 4" x="882" y="604" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_15_ 4" x="882" y="537" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_16_ 5" x="467" y="1326" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_17_ 5" x="673" y="1324" w="93" h="76" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_18_ 5" x="0" y="1250" w="94" h="76" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_19_ 6" x="1400" y="297" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_20_ 6" x="0" y="1326" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_21_ 6" x="580" y="1246" w="94" h="78" pX="0.5" pY="0.5" oX="26" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_22_ 7" x="772" y="644" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_23_ 7" x="778" y="384" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Behavior_24_ 7" x="108" y="781" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_01_ 0" x="0" y="1718" w="73" h="71" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_02_ 0" x="1577" y="1632" w="74" h="58" pX="0.5" pY="0.5" oX="39" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_03_ 0" x="1042" y="1103" w="75" h="54" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_04_ 1" x="220" y="601" w="110" h="52" pX="0.5" pY="0.5" oX="20" oY="51" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_05_ 1" x="1094" y="787" w="100" h="57" pX="0.5" pY="0.5" oX="31" oY="46" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_06_ 1" x="486" y="1192" w="88" h="56" pX="0.5" pY="0.5" oX="45" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_07_ 2" x="220" y="653" w="110" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_08_ 2" x="1094" y="730" w="100" h="57" pX="0.5" pY="0.5" oX="19" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_09_ 2" x="446" y="1484" w="88" h="57" pX="0.5" pY="0.5" oX="17" oY="46" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_10_ 3" x="1377" y="1448" w="73" h="87" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_11_ 3" x="1117" y="1103" w="74" h="95" pX="0.5" pY="0.5" oX="37" oY="22" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_12_ 3" x="1211" y="1611" w="75" h="78" pX="0.5" pY="0.5" oX="37" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_13_ 4" x="859" y="871" w="107" h="62" pX="0.5" pY="0.5" oX="22" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_14_ 4" x="409" y="1114" w="94" h="62" pX="0.5" pY="0.5" oX="35" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_15_ 4" x="947" y="1480" w="89" h="62" pX="0.5" pY="0.5" oX="41" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_16_ 5" x="1396" y="1130" w="92" h="85" pX="0.5" pY="0.5" oX="31" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_17_ 5" x="1289" y="1447" w="88" h="89" pX="0.5" pY="0.5" oX="36" oY="27" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_18_ 5" x="649" y="1480" w="88" h="77" pX="0.5" pY="0.5" oX="37" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_19_ 6" x="1396" y="676" w="92" h="69" pX="0.5" pY="0.5" oX="27" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_20_ 6" x="358" y="1484" w="88" h="61" pX="0.5" pY="0.5" oX="26" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_21_ 6" x="628" y="1188" w="88" h="58" pX="0.5" pY="0.5" oX="25" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_22_ 7" x="0" y="904" w="107" h="74" pX="0.5" pY="0.5" oX="21" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_23_ 7" x="1212" y="155" w="95" h="82" pX="0.5" pY="0.5" oX="20" oY="30" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Block_24_ 7" x="180" y="1484" w="89" h="67" pX="0.5" pY="0.5" oX="20" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_01_ 0" x="1434" y="1633" w="74" h="78" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_02_ 0" x="1569" y="337" w="74" h="80" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_03_ 0" x="1377" y="1535" w="73" h="81" pX="0.5" pY="0.5" oX="40" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_04_ 1" x="329" y="764" w="108" h="54" pX="0.5" pY="0.5" oX="22" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_05_ 1" x="665" y="507" w="109" h="53" pX="0.5" pY="0.5" oX="21" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_06_ 1" x="0" y="660" w="110" h="53" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_07_ 2" x="673" y="265" w="109" h="54" pX="0.5" pY="0.5" oX="20" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_08_ 2" x="550" y="661" w="109" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_09_ 2" x="333" y="597" w="110" h="52" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_10_ 3" x="794" y="1629" w="74" h="78" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_11_ 3" x="941" y="1626" w="74" h="78" pX="0.5" pY="0.5" oX="37" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_12_ 3" x="1643" y="155" w="73" h="77" pX="0.5" pY="0.5" oX="37" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_13_ 4" x="990" y="661" w="106" h="66" pX="0.5" pY="0.5" oX="23" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_14_ 4" x="538" y="964" w="107" h="67" pX="0.5" pY="0.5" oX="22" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_15_ 4" x="0" y="978" w="107" h="67" pX="0.5" pY="0.5" oX="22" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_16_ 5" x="1396" y="1296" w="92" h="75" pX="0.5" pY="0.5" oX="32" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_17_ 5" x="0" y="1404" w="92" h="76" pX="0.5" pY="0.5" oX="31" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_18_ 5" x="92" y="1404" w="92" h="76" pX="0.5" pY="0.5" oX="31" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_19_ 6" x="467" y="1403" w="92" h="77" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_20_ 6" x="765" y="1402" w="92" h="77" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_21_ 6" x="1396" y="521" w="92" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_22_ 7" x="988" y="727" w="106" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_23_ 7" x="214" y="966" w="107" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Critical HP_24_ 7" x="429" y="965" w="107" h="66" pX="0.5" pY="0.5" oX="21" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_01_ 0" x="1015" y="1623" w="71" h="78" pX="0.5" pY="0.5" oX="41" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_02_ 0" x="430" y="1637" w="69" h="78" pX="0.5" pY="0.5" oX="43" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_03_ 0" x="1643" y="232" w="69" h="77" pX="0.5" pY="0.5" oX="44" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_04_ 1" x="664" y="609" w="108" h="52" pX="0.5" pY="0.5" oX="22" oY="51" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_05_ 1" x="659" y="661" w="109" h="51" pX="0.5" pY="0.5" oX="22" oY="52" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_06_ 1" x="675" y="158" w="109" h="49" pX="0.5" pY="0.5" oX="23" oY="54" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_07_ 2" x="218" y="766" w="108" h="52" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_08_ 2" x="665" y="560" w="109" h="49" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_09_ 2" x="785" y="0" w="108" h="49" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_10_ 3" x="1643" y="309" w="71" h="77" pX="0.5" pY="0.5" oX="38" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_11_ 3" x="1508" y="1633" w="69" h="78" pX="0.5" pY="0.5" oX="38" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_12_ 3" x="1643" y="78" w="69" h="77" pX="0.5" pY="0.5" oX="37" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_13_ 4" x="107" y="961" w="107" h="67" pX="0.5" pY="0.5" oX="24" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_14_ 4" x="784" y="184" w="108" h="67" pX="0.5" pY="0.5" oX="26" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_15_ 4" x="783" y="251" w="108" h="66" pX="0.5" pY="0.5" oX="28" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_16_ 5" x="1396" y="599" w="92" h="77" pX="0.5" pY="0.5" oX="32" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_17_ 5" x="1304" y="383" w="93" h="77" pX="0.5" pY="0.5" oX="32" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_18_ 5" x="1303" y="1000" w="93" h="76" pX="0.5" pY="0.5" oX="33" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_19_ 6" x="1396" y="976" w="92" h="77" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_20_ 6" x="1303" y="1155" w="93" h="77" pX="0.5" pY="0.5" oX="25" oY="34" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_21_ 6" x="1303" y="1232" w="93" h="77" pX="0.5" pY="0.5" oX="24" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_22_ 7" x="1001" y="189" w="107" h="67" pX="0.5" pY="0.5" oX="19" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_23_ 7" x="774" y="577" w="108" h="67" pX="0.5" pY="0.5" oX="16" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Dead To Down_24_ 7" x="998" y="388" w="107" h="66" pX="0.5" pY="0.5" oX="14" oY="46" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_1_01_ 0" x="1643" y="521" w="67" h="76" pX="0.5" pY="0.5" oX="46" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_1_02_ 1" x="108" y="848" w="107" h="47" pX="0.5" pY="0.5" oX="25" oY="56" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_1_03_ 2" x="540" y="848" w="107" h="48" pX="0.5" pY="0.5" oX="18" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_1_04_ 3" x="1642" y="1137" w="67" h="77" pX="0.5" pY="0.5" oX="37" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_1_05_ 4" x="324" y="885" w="107" h="66" pX="0.5" pY="0.5" oX="31" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_1_06_ 5" x="1396" y="823" w="92" h="76" pX="0.5" pY="0.5" oX="34" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_1_07_ 6" x="1396" y="899" w="92" h="77" pX="0.5" pY="0.5" oX="24" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_1_08_ 7" x="108" y="895" w="107" h="66" pX="0.5" pY="0.5" oX="12" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_2_01_ 0" x="0" y="1557" w="77" h="82" pX="0.5" pY="0.5" oX="37" oY="30" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_2_02_ 1" x="115" y="59" w="114" h="56" pX="0.5" pY="0.5" oX="25" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_2_03_ 2" x="115" y="115" w="114" h="56" pX="0.5" pY="0.5" oX="11" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_2_04_ 3" x="1488" y="1225" w="77" h="82" pX="0.5" pY="0.5" oX="36" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_2_05_ 4" x="91" y="1484" w="89" h="70" pX="0.5" pY="0.5" oX="42" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_2_06_ 5" x="1090" y="844" w="99" h="64" pX="0.5" pY="0.5" oX="29" oY="53" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_2_07_ 6" x="212" y="1112" w="99" h="64" pX="0.5" pY="0.5" oX="22" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_2_08_ 7" x="269" y="1484" w="89" h="70" pX="0.5" pY="0.5" oX="19" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_3_01_ 0" x="1643" y="899" w="68" h="75" pX="0.5" pY="0.5" oX="45" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_3_02_ 1" x="966" y="910" w="106" h="48" pX="0.5" pY="0.5" oX="26" oY="55" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_3_03_ 2" x="977" y="861" w="106" h="49" pX="0.5" pY="0.5" oX="18" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_3_04_ 3" x="1643" y="673" w="68" h="76" pX="0.5" pY="0.5" oX="37" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_3_05_ 4" x="453" y="119" w="111" h="64" pX="0.5" pY="0.5" oX="27" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_3_06_ 5" x="857" y="1467" w="90" h="79" pX="0.5" pY="0.5" oX="36" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_3_07_ 6" x="559" y="1404" w="90" h="80" pX="0.5" pY="0.5" oX="24" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_3_08_ 7" x="454" y="54" w="111" h="65" pX="0.5" pY="0.5" oX="12" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_4_01_ 0" x="0" y="1639" w="69" h="79" pX="0.5" pY="0.5" oX="43" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_4_02_ 1" x="0" y="550" w="110" h="50" pX="0.5" pY="0.5" oX="25" oY="53" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_4_03_ 2" x="0" y="282" w="110" h="49" pX="0.5" pY="0.5" oX="15" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_4_04_ 3" x="287" y="1638" w="69" h="79" pX="0.5" pY="0.5" oX="38" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_4_05_ 4" x="1000" y="256" w="107" h="66" pX="0.5" pY="0.5" oX="29" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_4_06_ 5" x="1395" y="1371" w="91" h="77" pX="0.5" pY="0.5" oX="36" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_4_07_ 6" x="0" y="1480" w="91" h="77" pX="0.5" pY="0.5" oX="23" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Down_4_08_ 7" x="994" y="454" w="107" h="66" pX="0.5" pY="0.5" oX="14" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_01_ 0" x="1598" y="1550" w="73" h="65" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_02_ 0" x="1639" y="1370" w="77" h="73" pX="0.5" pY="0.5" oX="37" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_03_ 0" x="266" y="1404" w="82" h="80" pX="0.5" pY="0.5" oX="34" oY="26" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_04_ 1" x="1001" y="0" w="107" h="56" pX="0.5" pY="0.5" oX="23" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_05_ 1" x="230" y="0" w="113" h="55" pX="0.5" pY="0.5" oX="23" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_06_ 1" x="115" y="0" w="115" h="59" pX="0.5" pY="0.5" oX="32" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_07_ 2" x="752" y="991" w="107" h="54" pX="0.5" pY="0.5" oX="20" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_08_ 2" x="113" y="171" w="113" h="57" pX="0.5" pY="0.5" oX="14" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_09_ 2" x="0" y="112" w="115" h="59" pX="0.5" pY="0.5" oX="3" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_10_ 3" x="1216" y="1440" w="73" h="90" pX="0.5" pY="0.5" oX="38" oY="25" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_11_ 3" x="1139" y="1448" w="77" h="91" pX="0.5" pY="0.5" oX="36" oY="29" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_12_ 3" x="1489" y="461" w="82" h="84" pX="0.5" pY="0.5" oX="34" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_13_ 4" x="321" y="1015" w="105" h="62" pX="0.5" pY="0.5" oX="24" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_14_ 4" x="311" y="1114" w="98" h="62" pX="0.5" pY="0.5" oX="32" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_15_ 4" x="1488" y="613" w="83" h="70" pX="0.5" pY="0.5" oX="49" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_16_ 5" x="1048" y="1391" w="91" h="88" pX="0.5" pY="0.5" oX="33" oY="26" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_17_ 5" x="531" y="1112" w="97" h="80" pX="0.5" pY="0.5" oX="30" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_18_ 5" x="0" y="1115" w="99" h="61" pX="0.5" pY="0.5" oX="33" oY="57" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_19_ 6" x="1299" y="1383" w="91" h="64" pX="0.5" pY="0.5" oX="26" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_20_ 6" x="195" y="1176" w="97" h="64" pX="0.5" pY="0.5" oX="23" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_21_ 6" x="99" y="1115" w="99" h="59" pX="0.5" pY="0.5" oX="18" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_22_ 7" x="212" y="1033" w="105" h="79" pX="0.5" pY="0.5" oX="21" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_23_ 7" x="845" y="1095" w="99" h="80" pX="0.5" pY="0.5" oX="20" oY="34" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Evade_24_ 7" x="1488" y="1071" w="83" h="72" pX="0.5" pY="0.5" oX="18" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_01_ 0" x="646" y="1637" w="72" h="78" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_02_ 0" x="868" y="1629" w="73" h="78" pX="0.5" pY="0.5" oX="39" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_03_ 0" x="1643" y="1049" w="74" h="70" pX="0.5" pY="0.5" oX="38" oY="28" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_04_ 1" x="555" y="379" w="110" h="52" pX="0.5" pY="0.5" oX="20" oY="51" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_05_ 1" x="555" y="431" w="110" h="56" pX="0.5" pY="0.5" oX="20" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_06_ 1" x="1097" y="532" w="101" h="61" pX="0.5" pY="0.5" oX="28" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_07_ 2" x="555" y="487" w="110" h="52" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_08_ 2" x="111" y="436" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="46" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_09_ 2" x="1101" y="478" w="101" h="54" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_10_ 3" x="348" y="1404" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_11_ 3" x="1570" y="739" w="73" h="80" pX="0.5" pY="0.5" oX="38" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_12_ 3" x="151" y="1557" w="74" h="81" pX="0.5" pY="0.5" oX="38" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_13_ 4" x="431" y="900" w="107" h="65" pX="0.5" pY="0.5" oX="22" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_14_ 4" x="1096" y="593" w="101" h="65" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_15_ 4" x="1211" y="237" w="95" h="68" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_16_ 5" x="1396" y="745" w="92" h="78" pX="0.5" pY="0.5" oX="31" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_17_ 5" x="925" y="1175" w="96" h="74" pX="0.5" pY="0.5" oX="31" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_18_ 5" x="0" y="1176" w="98" h="74" pX="0.5" pY="0.5" oX="34" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_19_ 6" x="1396" y="1053" w="92" h="77" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_20_ 6" x="829" y="1175" w="96" h="71" pX="0.5" pY="0.5" oX="23" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_21_ 6" x="944" y="1103" w="98" h="71" pX="0.5" pY="0.5" oX="18" oY="25" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_22_ 7" x="215" y="899" w="107" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_23_ 7" x="1096" y="658" w="100" h="72" pX="0.5" pY="0.5" oX="19" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Get Hit_24_ 7" x="1212" y="78" w="95" h="77" pX="0.5" pY="0.5" oX="18" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_01_ 0" x="1571" y="979" w="72" h="79" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_02_ 0" x="954" y="1543" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_03_ 0" x="1289" y="1536" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_04_ 1" x="333" y="387" w="111" h="52" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_05_ 1" x="113" y="280" w="112" h="52" pX="0.5" pY="0.5" oX="18" oY="51" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_06_ 1" x="0" y="391" w="111" h="52" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_07_ 2" x="111" y="384" w="111" h="52" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_08_ 2" x="113" y="228" w="112" h="52" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_09_ 2" x="337" y="263" w="111" h="52" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_10_ 3" x="882" y="1546" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_11_ 3" x="810" y="1549" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_12_ 3" x="738" y="1549" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_13_ 4" x="782" y="317" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_14_ 4" x="444" y="595" w="110" h="66" pX="0.5" pY="0.5" oX="20" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_15_ 4" x="665" y="441" w="109" h="66" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_16_ 5" x="1304" y="306" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_17_ 5" x="955" y="1401" w="92" h="79" pX="0.5" pY="0.5" oX="31" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_18_ 5" x="673" y="1402" w="92" h="78" pX="0.5" pY="0.5" oX="31" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_19_ 6" x="1307" y="228" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_20_ 6" x="1397" y="375" w="92" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_21_ 6" x="1307" y="150" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_22_ 7" x="0" y="781" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_23_ 7" x="554" y="595" w="110" h="66" pX="0.5" pY="0.5" oX="20" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle Fidget_24_ 7" x="669" y="375" w="109" h="66" pX="0.5" pY="0.5" oX="20" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_01_ 0" x="1571" y="979" w="72" h="79" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_02_ 0" x="1216" y="1530" w="73" h="81" pX="0.5" pY="0.5" oX="40" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_03_ 0" x="1137" y="1539" w="74" h="80" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_04_ 0" x="225" y="1557" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_05_ 0" x="447" y="1557" w="74" h="80" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_06_ 1" x="333" y="387" w="111" h="52" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_07_ 1" x="341" y="210" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_08_ 1" x="341" y="157" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_09_ 1" x="675" y="0" w="110" h="54" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_10_ 1" x="342" y="104" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_11_ 2" x="343" y="52" w="111" h="52" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_12_ 2" x="343" y="0" w="111" h="52" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_13_ 2" x="222" y="333" w="111" h="52" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_14_ 2" x="440" y="661" w="110" h="53" pX="0.5" pY="0.5" oX="21" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_15_ 2" x="111" y="332" w="111" h="52" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_16_ 3" x="1571" y="80" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_17_ 3" x="1571" y="657" w="72" h="79" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_18_ 3" x="356" y="1637" w="74" h="78" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_19_ 3" x="1286" y="1633" w="74" h="78" pX="0.5" pY="0.5" oX="37" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_20_ 3" x="1565" y="1380" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_21_ 4" x="893" y="67" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_22_ 4" x="876" y="737" w="108" h="66" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_23_ 4" x="545" y="781" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_24_ 4" x="774" y="451" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_25_ 4" x="886" y="403" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_26_ 5" x="1304" y="306" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_27_ 5" x="1303" y="537" w="93" h="76" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_28_ 5" x="1303" y="613" w="93" h="76" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_29_ 5" x="1115" y="1244" w="94" h="75" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_30_ 5" x="1303" y="767" w="93" h="76" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_31_ 6" x="1307" y="228" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_32_ 6" x="1303" y="843" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_33_ 6" x="1303" y="921" w="93" h="79" pX="0.5" pY="0.5" oX="27" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_34_ 6" x="1021" y="1244" w="94" h="79" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_35_ 6" x="1303" y="1076" w="93" h="79" pX="0.5" pY="0.5" oX="27" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_36_ 7" x="0" y="781" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_37_ 7" x="547" y="714" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_38_ 7" x="216" y="832" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_39_ 7" x="324" y="818" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Idle_40_ 7" x="432" y="832" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_01_ 0" x="1571" y="1058" w="72" h="79" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_02_ 0" x="1643" y="974" w="75" h="75" pX="0.5" pY="0.5" oX="38" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_03_ 0" x="1639" y="1299" w="77" h="71" pX="0.5" pY="0.5" oX="36" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_04_ 0" x="1643" y="597" w="75" h="76" pX="0.5" pY="0.5" oX="38" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_05_ 0" x="593" y="1557" w="73" h="80" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_06_ 0" x="718" y="1637" w="76" h="78" pX="0.5" pY="0.5" oX="37" oY="34" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_07_ 0" x="534" y="1484" w="80" h="73" pX="0.5" pY="0.5" oX="34" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_08_ 0" x="1643" y="0" w="76" h="78" pX="0.5" pY="0.5" oX="37" oY="34" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_09_ 1" x="333" y="439" w="111" h="52" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_10_ 1" x="222" y="438" w="111" h="55" pX="0.5" pY="0.5" oX="18" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_11_ 1" x="674" y="207" w="109" h="58" pX="0.5" pY="0.5" oX="19" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_12_ 1" x="0" y="443" w="111" h="55" pX="0.5" pY="0.5" oX="18" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_13_ 1" x="222" y="385" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_14_ 1" x="230" y="55" w="112" h="57" pX="0.5" pY="0.5" oX="17" oY="46" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_15_ 1" x="110" y="601" w="110" h="60" pX="0.5" pY="0.5" oX="19" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_16_ 1" x="0" y="226" w="113" h="56" pX="0.5" pY="0.5" oX="17" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_17_ 2" x="225" y="281" w="111" h="52" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_18_ 2" x="454" y="0" w="111" h="54" pX="0.5" pY="0.5" oX="21" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_19_ 2" x="109" y="713" w="109" h="56" pX="0.5" pY="0.5" oX="22" oY="45" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_20_ 2" x="452" y="183" w="111" h="54" pX="0.5" pY="0.5" oX="21" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_21_ 2" x="444" y="396" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_22_ 2" x="229" y="164" w="112" h="56" pX="0.5" pY="0.5" oX="21" oY="46" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_23_ 2" x="0" y="332" w="111" h="59" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_24_ 2" x="0" y="171" w="113" h="55" pX="0.5" pY="0.5" oX="20" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_25_ 3" x="1026" y="1543" w="73" h="80" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_26_ 3" x="1494" y="87" w="75" h="84" pX="0.5" pY="0.5" oX="37" oY="28" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_27_ 3" x="1494" y="0" w="77" h="87" pX="0.5" pY="0.5" oX="37" oY="23" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_28_ 3" x="1488" y="905" w="75" h="83" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_29_ 3" x="1524" y="1553" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_30_ 3" x="1493" y="171" w="76" h="83" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_31_ 3" x="1489" y="375" w="80" h="86" pX="0.5" pY="0.5" oX="36" oY="23" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_32_ 3" x="1488" y="739" w="76" h="83" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_33_ 4" x="890" y="336" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_34_ 4" x="538" y="900" w="107" h="64" pX="0.5" pY="0.5" oX="22" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_35_ 4" x="1107" y="274" w="103" h="65" pX="0.5" pY="0.5" oX="25" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_36_ 4" x="322" y="951" w="107" h="64" pX="0.5" pY="0.5" oX="22" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_37_ 4" x="761" y="781" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_38_ 4" x="636" y="1045" w="105" h="63" pX="0.5" pY="0.5" oX="23" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_39_ 4" x="1083" y="908" w="99" h="64" pX="0.5" pY="0.5" oX="27" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_40_ 4" x="859" y="1003" w="105" h="64" pX="0.5" pY="0.5" oX="23" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_41_ 5" x="1307" y="73" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_42_ 5" x="188" y="1324" w="93" h="80" pX="0.5" pY="0.5" oX="31" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_43_ 5" x="1396" y="1215" w="92" h="81" pX="0.5" pY="0.5" oX="34" oY="28" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_44_ 5" x="1210" y="305" w="94" h="80" pX="0.5" pY="0.5" oX="30" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_45_ 5" x="1303" y="460" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_46_ 5" x="1212" y="0" w="95" h="78" pX="0.5" pY="0.5" oX="30" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_47_ 5" x="580" y="1325" w="93" h="79" pX="0.5" pY="0.5" oX="33" oY="29" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_48_ 5" x="1191" y="981" w="94" h="78" pX="0.5" pY="0.5" oX="30" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_49_ 6" x="93" y="1326" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_50_ 6" x="1115" y="1319" w="93" h="72" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_51_ 6" x="1397" y="453" w="92" h="68" pX="0.5" pY="0.5" oX="24" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_52_ 6" x="1194" y="835" w="94" h="73" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_53_ 6" x="955" y="1323" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_54_ 6" x="1191" y="908" w="94" h="73" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_55_ 6" x="1401" y="0" w="93" h="67" pX="0.5" pY="0.5" oX="24" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_56_ 6" x="1197" y="608" w="94" h="73" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_57_ 7" x="893" y="0" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_58_ 7" x="752" y="917" w="107" h="74" pX="0.5" pY="0.5" oX="21" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_59_ 7" x="1108" y="196" w="103" h="78" pX="0.5" pY="0.5" oX="22" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_60_ 7" x="645" y="965" w="107" h="75" pX="0.5" pY="0.5" oX="21" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_61_ 7" x="893" y="134" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_62_ 7" x="426" y="1040" w="105" h="74" pX="0.5" pY="0.5" oX="22" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_63_ 7" x="1068" y="1024" w="100" h="79" pX="0.5" pY="0.5" oX="24" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Running_64_ 7" x="990" y="587" w="106" h="74" pX="0.5" pY="0.5" oX="22" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_01_ 0" x="77" y="1557" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_02_ 0" x="1486" y="1389" w="73" h="82" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_03_ 0" x="1488" y="988" w="73" h="83" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_04_ 1" x="565" y="55" w="110" h="54" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_05_ 1" x="565" y="109" w="110" h="55" pX="0.5" pY="0.5" oX="19" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_06_ 1" x="564" y="164" w="110" h="55" pX="0.5" pY="0.5" oX="18" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_07_ 2" x="563" y="219" w="110" h="53" pX="0.5" pY="0.5" oX="21" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_08_ 2" x="563" y="272" w="110" h="53" pX="0.5" pY="0.5" oX="21" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_09_ 2" x="559" y="325" w="110" h="54" pX="0.5" pY="0.5" oX="22" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_10_ 3" x="1360" y="1633" w="74" h="78" pX="0.5" pY="0.5" oX="37" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_11_ 3" x="1638" y="1222" w="73" h="77" pX="0.5" pY="0.5" oX="38" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_12_ 3" x="1643" y="823" w="73" h="76" pX="0.5" pY="0.5" oX="38" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_13_ 4" x="891" y="269" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_14_ 4" x="892" y="201" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_15_ 4" x="659" y="712" w="109" h="69" pX="0.5" pY="0.5" oX="20" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_16_ 5" x="1401" y="67" w="93" h="75" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_17_ 5" x="1302" y="1309" w="93" h="74" pX="0.5" pY="0.5" oX="31" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_18_ 5" x="1198" y="535" w="94" h="73" pX="0.5" pY="0.5" oX="31" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_19_ 6" x="1194" y="756" w="94" h="79" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_20_ 6" x="862" y="1323" w="93" h="81" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_21_ 6" x="195" y="1240" w="94" h="84" pX="0.5" pY="0.5" oX="25" oY="34" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_22_ 7" x="785" y="117" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_23_ 7" x="439" y="714" w="108" h="66" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Use Skill_24_ 7" x="0" y="714" w="109" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_01_ 0" x="1571" y="979" w="72" h="79" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_02_ 0" x="1571" y="819" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_03_ 0" x="1571" y="497" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_04_ 0" x="1571" y="899" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_05_ 0" x="573" y="1637" w="73" h="78" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_06_ 0" x="1643" y="445" w="73" h="76" pX="0.5" pY="0.5" oX="39" oY="34" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_07_ 0" x="1571" y="577" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_08_ 0" x="1571" y="417" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_09_ 1" x="452" y="237" w="111" h="52" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_10_ 1" x="448" y="289" w="111" h="53" pX="0.5" pY="0.5" oX="18" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_11_ 1" x="444" y="342" w="111" h="54" pX="0.5" pY="0.5" oX="17" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_12_ 1" x="565" y="0" w="110" h="55" pX="0.5" pY="0.5" oX="17" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_13_ 1" x="673" y="319" w="109" h="56" pX="0.5" pY="0.5" oX="17" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_14_ 1" x="768" y="711" w="108" h="56" pX="0.5" pY="0.5" oX="18" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_15_ 1" x="330" y="649" w="110" h="55" pX="0.5" pY="0.5" oX="17" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_16_ 1" x="225" y="228" w="112" h="53" pX="0.5" pY="0.5" oX="17" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_17_ 2" x="111" y="384" w="111" h="52" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_18_ 2" x="111" y="489" w="111" h="52" pX="0.5" pY="0.5" oX="21" oY="49" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_19_ 2" x="0" y="498" w="111" h="52" pX="0.5" pY="0.5" oX="22" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_20_ 2" x="110" y="661" w="110" h="52" pX="0.5" pY="0.5" oX="23" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_21_ 2" x="675" y="106" w="110" h="52" pX="0.5" pY="0.5" oX="23" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_22_ 2" x="437" y="780" w="108" h="52" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_23_ 2" x="675" y="54" w="110" h="52" pX="0.5" pY="0.5" oX="23" oY="47" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_24_ 2" x="229" y="112" w="112" h="52" pX="0.5" pY="0.5" oX="21" oY="48" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_25_ 3" x="666" y="1557" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_26_ 3" x="521" y="1557" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="34" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_27_ 3" x="69" y="1639" w="72" h="79" pX="0.5" pY="0.5" oX="38" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_28_ 3" x="141" y="1638" w="73" h="79" pX="0.5" pY="0.5" oX="38" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_29_ 3" x="214" y="1638" w="73" h="79" pX="0.5" pY="0.5" oX="38" oY="30" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_30_ 3" x="1488" y="1143" w="73" h="82" pX="0.5" pY="0.5" oX="38" oY="27" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_31_ 3" x="1570" y="160" w="73" h="79" pX="0.5" pY="0.5" oX="38" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_32_ 3" x="1527" y="1471" w="72" h="79" pX="0.5" pY="0.5" oX="38" oY="34" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_33_ 4" x="653" y="781" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_34_ 4" x="990" y="520" w="107" h="67" pX="0.5" pY="0.5" oX="22" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_35_ 4" x="999" y="322" w="107" h="66" pX="0.5" pY="0.5" oX="23" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_36_ 4" x="984" y="795" w="106" h="66" pX="0.5" pY="0.5" oX="24" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_37_ 4" x="1108" y="130" w="104" h="66" pX="0.5" pY="0.5" oX="26" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_38_ 4" x="1108" y="0" w="104" h="65" pX="0.5" pY="0.5" oX="26" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_39_ 4" x="966" y="958" w="106" h="66" pX="0.5" pY="0.5" oX="24" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_40_ 4" x="1001" y="123" w="107" h="66" pX="0.5" pY="0.5" oX="22" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_41_ 5" x="1304" y="306" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="38" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_42_ 5" x="766" y="1325" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_43_ 5" x="768" y="1249" w="94" h="76" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_44_ 5" x="1196" y="681" w="94" h="75" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_45_ 5" x="1208" y="385" w="94" h="74" pX="0.5" pY="0.5" oX="31" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_46_ 5" x="1191" y="1059" w="94" h="76" pX="0.5" pY="0.5" oX="32" oY="34" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_47_ 5" x="1191" y="1135" w="94" h="75" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_48_ 5" x="1400" y="220" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_49_ 6" x="1400" y="142" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_50_ 6" x="1303" y="689" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="36" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_51_ 6" x="486" y="1249" w="94" h="77" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_52_ 6" x="94" y="1250" w="94" h="76" pX="0.5" pY="0.5" oX="26" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_53_ 6" x="386" y="1250" w="94" h="75" pX="0.5" pY="0.5" oX="25" oY="32" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_54_ 6" x="862" y="1249" w="94" h="72" pX="0.5" pY="0.5" oX="24" oY="31" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_55_ 6" x="1209" y="1210" w="94" h="76" pX="0.5" pY="0.5" oX="26" oY="33" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_56_ 6" x="374" y="1326" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="35" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_57_ 7" x="0" y="781" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_58_ 7" x="1001" y="56" w="107" h="67" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_59_ 7" x="752" y="848" w="107" h="69" pX="0.5" pY="0.5" oX="20" oY="41" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_60_ 7" x="106" y="1045" w="106" h="70" pX="0.5" pY="0.5" oX="20" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_61_ 7" x="741" y="1045" w="104" h="70" pX="0.5" pY="0.5" oX="20" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_62_ 7" x="964" y="1024" w="104" h="71" pX="0.5" pY="0.5" oX="20" oY="39" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_63_ 7" x="0" y="1045" w="106" h="70" pX="0.5" pY="0.5" oX="20" oY="40" oW="150" oH="150"/>
+  <sprite n="AmberSlime1_Walking_64_ 7" x="869" y="803" w="108" h="68" pX="0.5" pY="0.5" oX="20" oY="42" oW="150" oH="150"/>
+</TextureAtlas>

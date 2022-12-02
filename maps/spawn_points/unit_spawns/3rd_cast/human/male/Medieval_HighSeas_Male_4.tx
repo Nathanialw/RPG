@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../../sprite_sheets/units/3rd_cast/human/male/Medieval_HighSeas_Male_4.tsx"/>
+ <object name="Medieval_HighSeas_Male_4" class="unit" gid="1" width="112" height="84"/>
+</template>

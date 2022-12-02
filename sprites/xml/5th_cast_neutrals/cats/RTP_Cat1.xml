@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="RTP_Cat1.png" width="964" height="936" scale="1" format="RGBA8888">
+  <sprite n="RTP_Cat1_Attack 1_01_ 0" x="207" y="836" w="15" h="51" pX="0.5" pY="0.5" oX="96" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_02_ 0" x="524" y="888" w="21" h="42" pX="0.5" pY="0.5" oX="94" oY="71" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_03_ 0" x="608" y="566" w="16" h="53" pX="0.5" pY="0.5" oX="95" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_04_ 1" x="345" y="57" w="73" h="27" pX="0.5" pY="0.5" oX="71" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_05_ 1" x="873" y="300" w="49" h="49" pX="0.5" pY="0.5" oX="88" oY="70" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_06_ 1" x="310" y="370" w="72" h="27" pX="0.5" pY="0.5" oX="63" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_07_ 2" x="418" y="36" w="72" h="27" pX="0.5" pY="0.5" oX="63" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_08_ 2" x="873" y="423" w="48" h="48" pX="0.5" pY="0.5" oX="70" oY="71" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_09_ 2" x="236" y="383" w="72" h="28" pX="0.5" pY="0.5" oX="72" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_10_ 3" x="322" y="524" w="15" h="62" pX="0.5" pY="0.5" oX="96" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_11_ 3" x="319" y="587" w="22" h="59" pX="0.5" pY="0.5" oX="91" oY="68" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_12_ 3" x="557" y="251" w="16" h="60" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_13_ 4" x="662" y="690" w="57" h="40" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_14_ 4" x="0" y="890" w="39" h="46" pX="0.5" pY="0.5" oX="93" oY="70" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_15_ 4" x="130" y="699" w="57" h="41" pX="0.5" pY="0.5" oX="72" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_16_ 5" x="817" y="624" w="52" h="51" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_17_ 5" x="716" y="730" w="38" h="56" pX="0.5" pY="0.5" oX="87" oY="69" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_18_ 5" x="0" y="840" w="52" h="50" pX="0.5" pY="0.5" oX="72" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_19_ 6" x="626" y="846" w="51" h="42" pX="0.5" pY="0.5" oX="77" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_20_ 6" x="886" y="824" w="37" h="43" pX="0.5" pY="0.5" oX="82" oY="70" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_21_ 6" x="237" y="840" w="51" h="45" pX="0.5" pY="0.5" oX="83" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_22_ 7" x="170" y="740" w="56" h="48" pX="0.5" pY="0.5" oX="72" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_23_ 7" x="542" y="118" w="40" h="56" pX="0.5" pY="0.5" oX="74" oY="68" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 1_24_ 7" x="57" y="741" w="57" h="47" pX="0.5" pY="0.5" oX="78" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_01_ 0" x="825" y="723" w="15" h="51" pX="0.5" pY="0.5" oX="96" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_02_ 0" x="938" y="557" w="21" h="27" pX="0.5" pY="0.5" oX="95" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_03_ 0" x="581" y="699" w="19" h="33" pX="0.5" pY="0.5" oX="95" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_04_ 1" x="345" y="57" w="73" h="27" pX="0.5" pY="0.5" oX="71" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_05_ 1" x="506" y="522" w="61" h="45" pX="0.5" pY="0.5" oX="79" oY="76" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_06_ 1" x="216" y="411" w="68" h="39" pX="0.5" pY="0.5" oX="75" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_07_ 2" x="238" y="356" w="72" h="27" pX="0.5" pY="0.5" oX="63" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_08_ 2" x="352" y="524" w="62" h="49" pX="0.5" pY="0.5" oX="66" oY="71" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_09_ 2" x="420" y="436" w="67" h="43" pX="0.5" pY="0.5" oX="64" oY="76" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_10_ 3" x="337" y="524" w="15" h="62" pX="0.5" pY="0.5" oX="96" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_11_ 3" x="0" y="107" w="20" h="78" pX="0.5" pY="0.5" oX="91" oY="64" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_12_ 3" x="349" y="144" w="19" h="72" pX="0.5" pY="0.5" oX="92" oY="69" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_13_ 4" x="290" y="699" w="57" h="40" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_14_ 4" x="873" y="189" w="50" h="33" pX="0.5" pY="0.5" oX="82" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_15_ 4" x="768" y="818" w="52" h="28" pX="0.5" pY="0.5" oX="82" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_16_ 5" x="817" y="624" w="52" h="51" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_17_ 5" x="411" y="230" w="43" h="70" pX="0.5" pY="0.5" oX="84" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_18_ 5" x="540" y="190" w="48" h="61" pX="0.5" pY="0.5" oX="81" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_19_ 6" x="626" y="846" w="51" h="42" pX="0.5" pY="0.5" oX="77" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_20_ 6" x="326" y="890" w="44" h="33" pX="0.5" pY="0.5" oX="79" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_21_ 6" x="97" y="157" w="49" h="25" pX="0.5" pY="0.5" oX="77" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_22_ 7" x="226" y="739" w="56" h="48" pX="0.5" pY="0.5" oX="72" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_23_ 7" x="491" y="0" w="51" h="64" pX="0.5" pY="0.5" oX="74" oY="69" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Attack 2_24_ 7" x="487" y="315" w="52" h="62" pX="0.5" pY="0.5" oX="72" oY="70" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_01_ 0" x="938" y="526" w="19" h="31" pX="0.5" pY="0.5" oX="93" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_02_ 0" x="919" y="893" w="19" h="31" pX="0.5" pY="0.5" oX="93" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_03_ 0" x="900" y="893" w="19" h="31" pX="0.5" pY="0.5" oX="93" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_04_ 1" x="719" y="690" w="42" h="32" pX="0.5" pY="0.5" oX="80" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_05_ 1" x="602" y="888" w="42" h="32" pX="0.5" pY="0.5" oX="80" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_06_ 1" x="120" y="887" w="42" h="31" pX="0.5" pY="0.5" oX="80" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_07_ 2" x="162" y="887" w="41" h="34" pX="0.5" pY="0.5" oX="85" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_08_ 2" x="923" y="0" w="41" h="34" pX="0.5" pY="0.5" oX="85" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_09_ 2" x="923" y="34" w="41" h="34" pX="0.5" pY="0.5" oX="85" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_10_ 3" x="840" y="723" w="18" h="51" pX="0.5" pY="0.5" oX="95" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_11_ 3" x="858" y="723" w="18" h="51" pX="0.5" pY="0.5" oX="95" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_12_ 3" x="156" y="836" w="18" h="51" pX="0.5" pY="0.5" oX="95" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_13_ 4" x="150" y="560" w="33" h="30" pX="0.5" pY="0.5" oX="84" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_14_ 4" x="923" y="496" w="32" h="30" pX="0.5" pY="0.5" oX="85" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_15_ 4" x="891" y="99" w="32" h="30" pX="0.5" pY="0.5" oX="85" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_16_ 5" x="722" y="889" w="38" h="43" pX="0.5" pY="0.5" oX="83" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_17_ 5" x="779" y="846" w="38" h="43" pX="0.5" pY="0.5" oX="83" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_18_ 5" x="760" y="889" w="38" h="43" pX="0.5" pY="0.5" oX="83" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_19_ 6" x="923" y="68" w="39" h="30" pX="0.5" pY="0.5" oX="85" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_20_ 6" x="923" y="98" w="39" h="30" pX="0.5" pY="0.5" oX="85" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_21_ 6" x="923" y="128" w="39" h="30" pX="0.5" pY="0.5" oX="85" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_22_ 7" x="890" y="699" w="32" h="47" pX="0.5" pY="0.5" oX="90" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_23_ 7" x="890" y="549" w="32" h="47" pX="0.5" pY="0.5" oX="90" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Behavior_24_ 7" x="563" y="376" w="32" h="47" pX="0.5" pY="0.5" oX="90" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_01_ 0" x="825" y="723" w="15" h="51" pX="0.5" pY="0.5" oX="96" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_02_ 0" x="525" y="190" w="15" h="62" pX="0.5" pY="0.5" oX="96" oY="68" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_03_ 0" x="381" y="459" w="16" h="64" pX="0.5" pY="0.5" oX="96" oY="64" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_04_ 1" x="345" y="57" w="73" h="27" pX="0.5" pY="0.5" oX="71" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_05_ 1" x="238" y="328" w="74" h="28" pX="0.5" pY="0.5" oX="75" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_06_ 1" x="411" y="300" w="69" h="29" pX="0.5" pY="0.5" oX="78" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_07_ 2" x="164" y="357" w="72" h="27" pX="0.5" pY="0.5" oX="63" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_08_ 2" x="345" y="0" w="74" h="28" pX="0.5" pY="0.5" oX="58" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_09_ 2" x="0" y="436" w="69" h="28" pX="0.5" pY="0.5" oX="59" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_10_ 3" x="322" y="524" w="15" h="62" pX="0.5" pY="0.5" oX="96" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_11_ 3" x="814" y="164" w="15" h="53" pX="0.5" pY="0.5" oX="96" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_12_ 3" x="508" y="887" w="16" h="45" pX="0.5" pY="0.5" oX="95" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_13_ 4" x="703" y="514" w="57" h="40" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_14_ 4" x="706" y="468" w="57" h="46" pX="0.5" pY="0.5" oX="81" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_15_ 4" x="819" y="352" w="53" h="51" pX="0.5" pY="0.5" oX="83" oY="73" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_16_ 5" x="359" y="836" w="52" h="51" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_17_ 5" x="817" y="494" w="53" h="42" pX="0.5" pY="0.5" oX="81" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_18_ 5" x="820" y="828" w="51" h="34" pX="0.5" pY="0.5" oX="83" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_19_ 6" x="728" y="846" w="51" h="42" pX="0.5" pY="0.5" oX="77" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_20_ 6" x="822" y="776" w="53" h="52" pX="0.5" pY="0.5" oX="72" oY="76" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_21_ 6" x="654" y="786" w="51" h="54" pX="0.5" pY="0.5" oX="73" oY="71" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_22_ 7" x="226" y="739" w="56" h="48" pX="0.5" pY="0.5" oX="72" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_23_ 7" x="702" y="388" w="57" h="40" pX="0.5" pY="0.5" oX="68" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Block_24_ 7" x="84" y="462" w="53" h="35" pX="0.5" pY="0.5" oX="70" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_01_ 0" x="349" y="459" w="16" h="65" pX="0.5" pY="0.5" oX="95" oY="64" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_02_ 0" x="397" y="459" w="16" h="63" pX="0.5" pY="0.5" oX="95" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_03_ 0" x="509" y="190" w="16" h="62" pX="0.5" pY="0.5" oX="95" oY="67" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_04_ 1" x="253" y="0" w="76" h="25" pX="0.5" pY="0.5" oX="74" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_05_ 1" x="152" y="235" w="76" h="25" pX="0.5" pY="0.5" oX="74" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_06_ 1" x="76" y="245" w="76" h="25" pX="0.5" pY="0.5" oX="74" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_07_ 2" x="0" y="82" w="78" h="25" pX="0.5" pY="0.5" oX="55" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_08_ 2" x="79" y="53" w="78" h="25" pX="0.5" pY="0.5" oX="55" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_09_ 2" x="0" y="27" w="79" h="25" pX="0.5" pY="0.5" oX="54" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_10_ 3" x="840" y="403" w="15" h="52" pX="0.5" pY="0.5" oX="96" oY="83" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_11_ 3" x="829" y="139" w="15" h="53" pX="0.5" pY="0.5" oX="96" oY="83" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_12_ 3" x="753" y="786" w="15" h="54" pX="0.5" pY="0.5" oX="96" oY="83" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_13_ 4" x="588" y="61" w="60" h="48" pX="0.5" pY="0.5" oX="81" oY="76" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_14_ 4" x="0" y="593" w="61" h="48" pX="0.5" pY="0.5" oX="80" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_15_ 4" x="413" y="588" w="60" h="47" pX="0.5" pY="0.5" oX="81" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_16_ 5" x="762" y="627" w="55" h="41" pX="0.5" pY="0.5" oX="80" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_17_ 5" x="763" y="307" w="56" h="41" pX="0.5" pY="0.5" oX="80" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_18_ 5" x="763" y="265" w="56" h="42" pX="0.5" pY="0.5" oX="80" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_19_ 6" x="762" y="524" w="55" h="53" pX="0.5" pY="0.5" oX="71" oY="72" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_20_ 6" x="0" y="788" w="55" h="52" pX="0.5" pY="0.5" oX="71" oY="73" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_21_ 6" x="762" y="577" w="55" h="50" pX="0.5" pY="0.5" oX="71" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_22_ 7" x="567" y="491" w="60" h="40" pX="0.5" pY="0.5" oX="66" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_23_ 7" x="61" y="593" w="61" h="39" pX="0.5" pY="0.5" oX="65" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Critical HP_24_ 7" x="122" y="593" w="61" h="39" pX="0.5" pY="0.5" oX="65" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_01_ 0" x="907" y="50" w="16" h="49" pX="0.5" pY="0.5" oX="95" oY="83" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_02_ 0" x="471" y="527" w="19" h="61" pX="0.5" pY="0.5" oX="96" oY="71" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_03_ 0" x="490" y="190" w="19" h="63" pX="0.5" pY="0.5" oX="96" oY="68" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_04_ 1" x="411" y="203" w="71" h="27" pX="0.5" pY="0.5" oX="73" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_05_ 1" x="144" y="411" w="72" h="25" pX="0.5" pY="0.5" oX="76" oY="95" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_06_ 1" x="137" y="436" w="67" h="23" pX="0.5" pY="0.5" oX="78" oY="96" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_07_ 2" x="411" y="176" w="71" h="27" pX="0.5" pY="0.5" oX="62" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_08_ 2" x="382" y="370" w="72" h="26" pX="0.5" pY="0.5" oX="59" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_09_ 2" x="284" y="428" w="68" h="31" pX="0.5" pY="0.5" oX="61" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_10_ 3" x="316" y="459" w="15" h="65" pX="0.5" pY="0.5" oX="96" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_11_ 3" x="844" y="139" w="19" h="53" pX="0.5" pY="0.5" oX="92" oY="83" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_12_ 3" x="374" y="788" w="20" h="44" pX="0.5" pY="0.5" oX="91" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_13_ 4" x="759" y="388" w="56" h="39" pX="0.5" pY="0.5" oX="80" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_14_ 4" x="55" y="641" w="60" h="42" pX="0.5" pY="0.5" oX="82" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_15_ 4" x="648" y="108" w="58" h="45" pX="0.5" pY="0.5" oX="83" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_16_ 5" x="763" y="164" w="51" h="56" pX="0.5" pY="0.5" oX="79" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_17_ 5" x="876" y="652" w="47" h="47" pX="0.5" pY="0.5" oX="82" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_18_ 5" x="414" y="890" w="44" h="37" pX="0.5" pY="0.5" oX="84" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_19_ 6" x="873" y="259" w="50" h="41" pX="0.5" pY="0.5" oX="77" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_20_ 6" x="705" y="786" w="48" h="54" pX="0.5" pY="0.5" oX="77" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_21_ 6" x="542" y="61" w="45" h="57" pX="0.5" pY="0.5" oX="78" oY="71" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_22_ 7" x="765" y="112" w="56" h="52" pX="0.5" pY="0.5" oX="71" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_23_ 7" x="259" y="587" w="60" h="39" pX="0.5" pY="0.5" oX="65" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Dead To Down_24_ 7" x="567" y="531" w="58" h="35" pX="0.5" pY="0.5" oX="66" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_1_01_ 0" x="923" y="405" w="35" h="32" pX="0.5" pY="0.5" oX="92" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_1_02_ 1" x="923" y="195" w="35" h="37" pX="0.5" pY="0.5" oX="87" oY="97" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_1_03_ 2" x="923" y="377" w="35" h="28" pX="0.5" pY="0.5" oX="84" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_1_04_ 3" x="662" y="664" w="36" h="26" pX="0.5" pY="0.5" oX="79" oY="100" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_1_05_ 4" x="644" y="888" w="31" h="42" pX="0.5" pY="0.5" oX="94" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_1_06_ 5" x="20" y="107" w="46" h="24" pX="0.5" pY="0.5" oX="76" oY="104" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_1_07_ 6" x="237" y="885" w="45" h="26" pX="0.5" pY="0.5" oX="85" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_1_08_ 7" x="203" y="887" w="31" h="32" pX="0.5" pY="0.5" oX="82" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_2_01_ 0" x="923" y="465" w="35" h="31" pX="0.5" pY="0.5" oX="79" oY="95" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_2_02_ 1" x="921" y="437" w="35" h="28" pX="0.5" pY="0.5" oX="87" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_2_03_ 2" x="923" y="305" w="35" h="36" pX="0.5" pY="0.5" oX="84" oY="98" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_2_04_ 3" x="886" y="867" w="36" h="26" pX="0.5" pY="0.5" oX="92" oY="100" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_2_05_ 4" x="411" y="862" w="46" h="26" pX="0.5" pY="0.5" oX="76" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_2_06_ 5" x="536" y="484" w="30" h="32" pX="0.5" pY="0.5" oX="95" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_2_07_ 6" x="890" y="769" w="30" h="42" pX="0.5" pY="0.5" oX="82" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_2_08_ 7" x="876" y="746" w="45" h="23" pX="0.5" pY="0.5" oX="85" oY="105" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_3_01_ 0" x="923" y="341" w="36" h="36" pX="0.5" pY="0.5" oX="82" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_3_02_ 1" x="187" y="699" w="46" h="23" pX="0.5" pY="0.5" oX="80" oY="99" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_3_03_ 2" x="876" y="516" w="47" h="33" pX="0.5" pY="0.5" oX="80" oY="97" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_3_04_ 3" x="923" y="158" w="36" h="37" pX="0.5" pY="0.5" oX="88" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_3_05_ 4" x="458" y="890" w="44" h="30" pX="0.5" pY="0.5" oX="81" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_3_06_ 5" x="858" y="896" w="42" h="34" pX="0.5" pY="0.5" oX="88" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_3_07_ 6" x="560" y="888" w="42" h="38" pX="0.5" pY="0.5" oX="76" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_3_08_ 7" x="370" y="890" w="44" h="33" pX="0.5" pY="0.5" oX="81" oY="100" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_4_01_ 0" x="923" y="269" w="36" h="36" pX="0.5" pY="0.5" oX="88" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_4_02_ 1" x="876" y="619" w="47" h="33" pX="0.5" pY="0.5" oX="80" oY="97" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_4_03_ 2" x="876" y="596" w="47" h="23" pX="0.5" pY="0.5" oX="80" oY="99" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_4_04_ 3" x="923" y="232" w="36" h="37" pX="0.5" pY="0.5" oX="82" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_4_05_ 4" x="816" y="896" w="42" h="38" pX="0.5" pY="0.5" oX="88" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_4_06_ 5" x="282" y="890" w="44" h="33" pX="0.5" pY="0.5" oX="81" oY="100" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_4_07_ 6" x="76" y="890" w="44" h="30" pX="0.5" pY="0.5" oX="81" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Down_4_08_ 7" x="817" y="862" w="43" h="34" pX="0.5" pY="0.5" oX="76" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_01_ 0" x="207" y="836" w="15" h="51" pX="0.5" pY="0.5" oX="96" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_02_ 0" x="288" y="835" w="16" h="51" pX="0.5" pY="0.5" oX="97" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_03_ 0" x="631" y="788" w="23" h="50" pX="0.5" pY="0.5" oX="94" oY="76" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_04_ 1" x="345" y="57" w="73" h="27" pX="0.5" pY="0.5" oX="71" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_05_ 1" x="338" y="281" w="73" h="26" pX="0.5" pY="0.5" oX="73" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_06_ 1" x="69" y="436" w="68" h="26" pX="0.5" pY="0.5" oX="78" oY="97" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_07_ 2" x="418" y="36" w="72" h="27" pX="0.5" pY="0.5" oX="63" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_08_ 2" x="345" y="28" w="73" h="29" pX="0.5" pY="0.5" oX="61" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_09_ 2" x="352" y="428" w="68" h="31" pX="0.5" pY="0.5" oX="60" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_10_ 3" x="337" y="524" w="15" h="62" pX="0.5" pY="0.5" oX="96" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_11_ 3" x="490" y="522" w="16" h="61" pX="0.5" pY="0.5" oX="94" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_12_ 3" x="282" y="780" w="23" h="55" pX="0.5" pY="0.5" oX="89" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_13_ 4" x="290" y="699" w="57" h="40" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_14_ 4" x="817" y="586" w="53" h="38" pX="0.5" pY="0.5" oX="81" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_15_ 4" x="876" y="471" w="47" h="45" pX="0.5" pY="0.5" oX="84" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_16_ 5" x="359" y="836" w="52" h="51" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_17_ 5" x="521" y="740" w="56" h="48" pX="0.5" pY="0.5" oX="78" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_18_ 5" x="163" y="290" w="61" h="37" pX="0.5" pY="0.5" oX="78" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_19_ 6" x="626" y="846" w="51" h="42" pX="0.5" pY="0.5" oX="77" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_20_ 6" x="55" y="788" w="55" h="44" pX="0.5" pY="0.5" oX="73" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_21_ 6" x="475" y="479" w="61" h="43" pX="0.5" pY="0.5" oX="67" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_22_ 7" x="170" y="740" w="56" h="48" pX="0.5" pY="0.5" oX="72" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_23_ 7" x="821" y="89" w="53" h="50" pX="0.5" pY="0.5" oX="73" oY="83" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Evade_24_ 7" x="876" y="0" w="47" h="50" pX="0.5" pY="0.5" oX="76" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_01_ 0" x="222" y="836" w="15" h="51" pX="0.5" pY="0.5" oX="96" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_02_ 0" x="58" y="683" w="15" h="58" pX="0.5" pY="0.5" oX="96" oY="70" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_03_ 0" x="891" y="50" w="16" h="49" pX="0.5" pY="0.5" oX="95" oY="72" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_04_ 1" x="344" y="84" w="73" h="27" pX="0.5" pY="0.5" oX="71" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_05_ 1" x="344" y="111" w="73" h="33" pX="0.5" pY="0.5" oX="73" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_06_ 1" x="137" y="459" w="66" h="39" pX="0.5" pY="0.5" oX="77" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_07_ 2" x="417" y="123" w="72" h="27" pX="0.5" pY="0.5" oX="63" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_08_ 2" x="312" y="337" w="73" h="33" pX="0.5" pY="0.5" oX="60" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_09_ 2" x="203" y="483" w="66" h="39" pX="0.5" pY="0.5" oX="64" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_10_ 3" x="337" y="524" w="15" h="62" pX="0.5" pY="0.5" oX="96" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_11_ 3" x="78" y="531" w="15" h="62" pX="0.5" pY="0.5" oX="96" oY="72" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_12_ 3" x="62" y="531" w="16" h="62" pX="0.5" pY="0.5" oX="96" oY="70" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_13_ 4" x="290" y="699" w="57" h="40" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_14_ 4" x="73" y="699" w="57" h="42" pX="0.5" pY="0.5" oX="79" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_15_ 4" x="677" y="846" w="51" h="38" pX="0.5" pY="0.5" oX="82" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_16_ 5" x="817" y="624" w="52" h="51" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_17_ 5" x="104" y="836" w="52" h="51" pX="0.5" pY="0.5" oX="81" oY="76" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_18_ 5" x="411" y="810" w="46" h="52" pX="0.5" pY="0.5" oX="85" oY="73" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_19_ 6" x="575" y="846" w="51" h="42" pX="0.5" pY="0.5" oX="77" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_20_ 6" x="817" y="675" w="52" h="48" pX="0.5" pY="0.5" oX="74" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_21_ 6" x="677" y="884" w="45" h="39" pX="0.5" pY="0.5" oX="76" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_22_ 7" x="226" y="739" w="56" h="48" pX="0.5" pY="0.5" oX="72" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_23_ 7" x="709" y="0" w="57" h="49" pX="0.5" pY="0.5" oX="71" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Get Hit_24_ 7" x="873" y="139" w="50" h="50" pX="0.5" pY="0.5" oX="74" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_01_ 0" x="473" y="588" w="15" h="59" pX="0.5" pY="0.5" oX="96" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_02_ 0" x="368" y="144" w="15" h="72" pX="0.5" pY="0.5" oX="96" oY="65" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_03_ 0" x="383" y="144" w="15" h="71" pX="0.5" pY="0.5" oX="96" oY="67" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_04_ 1" x="253" y="56" w="75" h="29" pX="0.5" pY="0.5" oX="71" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_05_ 1" x="411" y="150" w="72" h="26" pX="0.5" pY="0.5" oX="71" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_06_ 1" x="204" y="450" w="66" h="33" pX="0.5" pY="0.5" oX="70" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_07_ 2" x="0" y="216" w="76" h="29" pX="0.5" pY="0.5" oX="60" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_08_ 2" x="385" y="337" w="72" h="28" pX="0.5" pY="0.5" oX="63" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_09_ 2" x="84" y="498" w="66" h="33" pX="0.5" pY="0.5" oX="71" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_10_ 3" x="487" y="377" w="15" h="62" pX="0.5" pY="0.5" oX="96" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_11_ 3" x="359" y="788" w="15" h="48" pX="0.5" pY="0.5" oX="96" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_12_ 3" x="545" y="888" w="15" h="42" pX="0.5" pY="0.5" oX="96" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_13_ 4" x="233" y="647" w="59" h="44" pX="0.5" pY="0.5" oX="78" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_14_ 4" x="648" y="479" w="55" h="58" pX="0.5" pY="0.5" oX="78" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_15_ 4" x="595" y="371" w="50" h="60" pX="0.5" pY="0.5" oX="77" oY="73" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_16_ 5" x="305" y="788" w="54" h="52" pX="0.5" pY="0.5" oX="78" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_17_ 5" x="819" y="456" w="53" h="38" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_18_ 5" x="873" y="349" w="49" h="34" pX="0.5" pY="0.5" oX="78" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_19_ 6" x="817" y="536" w="53" h="50" pX="0.5" pY="0.5" oX="75" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_20_ 6" x="595" y="311" w="53" h="60" pX="0.5" pY="0.5" oX="75" oY="72" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_21_ 6" x="573" y="251" w="50" h="60" pX="0.5" pY="0.5" oX="79" oY="73" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_22_ 7" x="650" y="0" w="59" h="49" pX="0.5" pY="0.5" oX="70" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_23_ 7" x="763" y="427" w="56" h="41" pX="0.5" pY="0.5" oX="73" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle Fidget_24_ 7" x="873" y="222" w="50" h="37" pX="0.5" pY="0.5" oX="80" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_01_ 0" x="304" y="840" w="15" h="50" pX="0.5" pY="0.5" oX="96" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_02_ 0" x="871" y="828" w="15" h="50" pX="0.5" pY="0.5" oX="96" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_03_ 0" x="334" y="840" w="15" h="50" pX="0.5" pY="0.5" oX="96" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_04_ 0" x="874" y="89" w="17" h="50" pX="0.5" pY="0.5" oX="94" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_05_ 0" x="319" y="840" w="15" h="50" pX="0.5" pY="0.5" oX="96" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_06_ 1" x="380" y="397" w="72" h="31" pX="0.5" pY="0.5" oX="71" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_07_ 1" x="0" y="395" w="72" h="31" pX="0.5" pY="0.5" oX="71" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_08_ 1" x="308" y="397" w="72" h="31" pX="0.5" pY="0.5" oX="71" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_09_ 1" x="87" y="364" w="72" h="31" pX="0.5" pY="0.5" oX="71" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_10_ 1" x="15" y="358" w="72" h="31" pX="0.5" pY="0.5" oX="71" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_11_ 2" x="418" y="63" w="72" h="30" pX="0.5" pY="0.5" oX="64" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_12_ 2" x="338" y="307" w="73" h="30" pX="0.5" pY="0.5" oX="63" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_13_ 2" x="338" y="251" w="73" h="30" pX="0.5" pY="0.5" oX="63" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_14_ 2" x="417" y="93" w="72" h="30" pX="0.5" pY="0.5" oX="64" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_15_ 2" x="334" y="221" w="73" h="30" pX="0.5" pY="0.5" oX="63" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_16_ 3" x="69" y="462" w="15" h="66" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_17_ 3" x="54" y="464" w="15" h="66" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_18_ 3" x="285" y="459" w="15" h="66" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_19_ 3" x="300" y="459" w="16" h="65" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_20_ 3" x="270" y="459" w="15" h="66" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_21_ 4" x="0" y="701" w="58" h="40" pX="0.5" pY="0.5" oX="77" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_22_ 4" x="763" y="348" w="55" h="40" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_23_ 4" x="819" y="266" w="53" h="40" pX="0.5" pY="0.5" oX="77" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_24_ 4" x="873" y="383" w="49" h="40" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_25_ 4" x="768" y="778" w="54" h="40" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_26_ 5" x="654" y="607" w="51" h="57" pX="0.5" pY="0.5" oX="78" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_27_ 5" x="662" y="730" w="54" h="56" pX="0.5" pY="0.5" oX="78" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_28_ 5" x="703" y="554" w="57" h="53" pX="0.5" pY="0.5" oX="78" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_29_ 5" x="648" y="312" w="58" h="51" pX="0.5" pY="0.5" oX="78" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_30_ 5" x="762" y="668" w="55" h="55" pX="0.5" pY="0.5" oX="78" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_31_ 6" x="524" y="846" w="51" h="42" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_32_ 6" x="403" y="768" w="54" h="42" pX="0.5" pY="0.5" oX="75" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_33_ 6" x="706" y="262" w="57" h="42" pX="0.5" pY="0.5" oX="72" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_34_ 6" x="351" y="656" w="59" h="42" pX="0.5" pY="0.5" oX="70" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_35_ 6" x="822" y="0" w="54" h="42" pX="0.5" pY="0.5" oX="74" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_36_ 7" x="708" y="49" w="57" h="53" pX="0.5" pY="0.5" oX="72" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_37_ 7" x="754" y="723" w="55" h="55" pX="0.5" pY="0.5" oX="74" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_38_ 7" x="705" y="153" w="52" h="57" pX="0.5" pY="0.5" oX="77" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_39_ 7" x="605" y="627" w="49" h="58" pX="0.5" pY="0.5" oX="80" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Idle_40_ 7" x="763" y="468" w="54" h="56" pX="0.5" pY="0.5" oX="75" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_01_ 0" x="242" y="568" w="17" h="60" pX="0.5" pY="0.5" oX="95" oY="63" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_02_ 0" x="627" y="491" w="18" h="58" pX="0.5" pY="0.5" oX="94" oY="65" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_03_ 0" x="331" y="459" w="18" h="65" pX="0.5" pY="0.5" oX="94" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_04_ 0" x="303" y="253" w="19" h="75" pX="0.5" pY="0.5" oX="94" oY="61" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_05_ 0" x="158" y="0" w="19" h="77" pX="0.5" pY="0.5" oX="94" oY="58" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_06_ 0" x="472" y="230" w="18" h="68" pX="0.5" pY="0.5" oX="95" oY="63" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_07_ 0" x="454" y="230" w="18" h="69" pX="0.5" pY="0.5" oX="95" oY="56" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_08_ 0" x="469" y="329" w="18" h="68" pX="0.5" pY="0.5" oX="95" oY="57" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_09_ 1" x="228" y="211" w="75" h="32" pX="0.5" pY="0.5" oX="72" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_10_ 1" x="78" y="104" w="78" h="27" pX="0.5" pY="0.5" oX="72" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_11_ 1" x="20" y="157" w="77" h="26" pX="0.5" pY="0.5" oX="72" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_12_ 1" x="0" y="0" w="79" h="27" pX="0.5" pY="0.5" oX="69" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_13_ 1" x="419" y="0" w="72" h="36" pX="0.5" pY="0.5" oX="74" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_14_ 1" x="177" y="32" w="76" h="32" pX="0.5" pY="0.5" oX="72" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_15_ 1" x="152" y="168" w="76" h="36" pX="0.5" pY="0.5" oX="71" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_16_ 1" x="177" y="64" w="76" h="35" pX="0.5" pY="0.5" oX="71" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_17_ 2" x="253" y="25" w="75" h="31" pX="0.5" pY="0.5" oX="59" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_18_ 2" x="79" y="0" w="79" h="26" pX="0.5" pY="0.5" oX="56" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_19_ 2" x="79" y="78" w="78" h="26" pX="0.5" pY="0.5" oX="57" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_20_ 2" x="0" y="52" w="79" h="30" pX="0.5" pY="0.5" oX="59" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_21_ 2" x="72" y="395" w="72" h="33" pX="0.5" pY="0.5" oX="61" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_22_ 2" x="76" y="216" w="76" h="29" pX="0.5" pY="0.5" oX="58" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_23_ 2" x="152" y="204" w="76" h="31" pX="0.5" pY="0.5" oX="59" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_24_ 2" x="0" y="185" w="76" h="31" pX="0.5" pY="0.5" oX="60" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_25_ 3" x="189" y="836" w="18" h="51" pX="0.5" pY="0.5" oX="94" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_26_ 3" x="623" y="238" w="17" h="59" pX="0.5" pY="0.5" oX="95" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_27_ 3" x="502" y="423" w="18" h="56" pX="0.5" pY="0.5" oX="94" oY="76" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_28_ 3" x="469" y="647" w="18" h="52" pX="0.5" pY="0.5" oX="94" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_29_ 3" x="57" y="890" w="19" h="45" pX="0.5" pY="0.5" oX="93" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_30_ 3" x="855" y="403" w="18" h="51" pX="0.5" pY="0.5" oX="94" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_31_ 3" x="798" y="889" w="18" h="43" pX="0.5" pY="0.5" oX="94" oY="76" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_32_ 3" x="39" y="890" w="18" h="46" pX="0.5" pY="0.5" oX="94" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_33_ 4" x="347" y="738" w="56" h="50" pX="0.5" pY="0.5" oX="79" oY="71" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_34_ 4" x="648" y="265" w="58" h="47" pX="0.5" pY="0.5" oX="79" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_35_ 4" x="581" y="733" w="57" h="54" pX="0.5" pY="0.5" oX="79" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_36_ 4" x="536" y="423" w="56" h="61" pX="0.5" pY="0.5" oX="79" oY="69" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_37_ 4" x="0" y="464" w="54" h="67" pX="0.5" pY="0.5" oX="80" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_38_ 4" x="648" y="153" w="57" h="58" pX="0.5" pY="0.5" oX="79" oY="72" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_39_ 4" x="265" y="525" w="57" h="62" pX="0.5" pY="0.5" oX="78" oY="64" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_40_ 4" x="645" y="371" w="57" h="59" pX="0.5" pY="0.5" oX="78" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_41_ 5" x="763" y="220" w="56" h="45" pX="0.5" pY="0.5" oX="79" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_42_ 5" x="292" y="647" w="59" h="52" pX="0.5" pY="0.5" oX="78" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_43_ 5" x="648" y="430" w="58" h="49" pX="0.5" pY="0.5" oX="79" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_44_ 5" x="203" y="522" w="62" h="46" pX="0.5" pY="0.5" oX="73" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_45_ 5" x="706" y="304" w="57" h="40" pX="0.5" pY="0.5" oX="77" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_46_ 5" x="524" y="699" w="57" h="41" pX="0.5" pY="0.5" oX="79" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_47_ 5" x="467" y="699" w="57" h="38" pX="0.5" pY="0.5" oX="78" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_48_ 5" x="351" y="698" w="57" h="40" pX="0.5" pY="0.5" oX="78" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_49_ 6" x="410" y="681" w="57" h="49" pX="0.5" pY="0.5" oX="71" oY="72" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_50_ 6" x="351" y="610" w="59" h="46" pX="0.5" pY="0.5" oX="69" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_51_ 6" x="645" y="537" w="58" h="53" pX="0.5" pY="0.5" oX="70" oY="75" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_52_ 6" x="0" y="531" w="62" h="62" pX="0.5" pY="0.5" oX="71" oY="70" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_53_ 6" x="414" y="527" w="57" h="61" pX="0.5" pY="0.5" oX="72" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_54_ 6" x="706" y="210" w="57" h="52" pX="0.5" pY="0.5" oX="71" oY="72" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_55_ 6" x="766" y="0" w="56" h="56" pX="0.5" pY="0.5" oX="72" oY="64" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_56_ 6" x="648" y="211" w="58" h="54" pX="0.5" pY="0.5" oX="71" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_57_ 7" x="114" y="741" w="56" h="45" pX="0.5" pY="0.5" oX="72" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_58_ 7" x="174" y="647" w="59" h="52" pX="0.5" pY="0.5" oX="69" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_59_ 7" x="605" y="685" w="57" h="48" pX="0.5" pY="0.5" oX="70" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_60_ 7" x="705" y="607" w="57" h="45" pX="0.5" pY="0.5" oX="71" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_61_ 7" x="577" y="787" w="54" h="38" pX="0.5" pY="0.5" oX="73" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_62_ 7" x="708" y="102" w="57" h="38" pX="0.5" pY="0.5" oX="71" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_63_ 7" x="705" y="652" w="57" h="38" pX="0.5" pY="0.5" oX="72" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Running_64_ 7" x="408" y="730" w="57" h="38" pX="0.5" pY="0.5" oX="72" oY="79" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_01_ 0" x="825" y="723" w="15" h="51" pX="0.5" pY="0.5" oX="96" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_02_ 0" x="520" y="423" w="16" h="56" pX="0.5" pY="0.5" oX="95" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_03_ 0" x="365" y="459" w="16" h="65" pX="0.5" pY="0.5" oX="95" oY="64" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_04_ 1" x="345" y="57" w="73" h="27" pX="0.5" pY="0.5" oX="71" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_05_ 1" x="98" y="131" w="77" h="26" pX="0.5" pY="0.5" oX="72" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_06_ 1" x="0" y="245" w="76" h="25" pX="0.5" pY="0.5" oX="74" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_07_ 2" x="159" y="384" w="72" h="27" pX="0.5" pY="0.5" oX="63" oY="92" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_08_ 2" x="79" y="26" w="78" h="27" pX="0.5" pY="0.5" oX="57" oY="93" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_09_ 2" x="20" y="131" w="78" h="26" pX="0.5" pY="0.5" oX="55" oY="94" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_10_ 3" x="322" y="524" w="15" h="62" pX="0.5" pY="0.5" oX="96" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_11_ 3" x="542" y="251" w="15" h="60" pX="0.5" pY="0.5" oX="96" oY="80" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_12_ 3" x="625" y="549" w="15" h="53" pX="0.5" pY="0.5" oX="96" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_13_ 4" x="706" y="428" w="57" h="40" pX="0.5" pY="0.5" oX="78" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_14_ 4" x="588" y="109" w="60" h="39" pX="0.5" pY="0.5" oX="79" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_15_ 4" x="414" y="479" w="61" h="48" pX="0.5" pY="0.5" oX="80" oY="76" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_16_ 5" x="817" y="624" w="52" h="51" pX="0.5" pY="0.5" oX="78" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_17_ 5" x="114" y="786" w="55" h="49" pX="0.5" pY="0.5" oX="79" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_18_ 5" x="282" y="739" w="55" h="41" pX="0.5" pY="0.5" oX="80" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_19_ 6" x="626" y="846" w="51" h="42" pX="0.5" pY="0.5" oX="77" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_20_ 6" x="511" y="788" w="54" h="47" pX="0.5" pY="0.5" oX="73" oY="81" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_21_ 6" x="765" y="56" w="56" h="56" pX="0.5" pY="0.5" oX="71" oY="72" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_22_ 7" x="226" y="739" w="56" h="48" pX="0.5" pY="0.5" oX="72" oY="82" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_23_ 7" x="588" y="148" w="60" h="45" pX="0.5" pY="0.5" oX="68" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Use Skill_24_ 7" x="352" y="573" w="61" h="37" pX="0.5" pY="0.5" oX="66" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_01_ 0" x="328" y="74" w="16" h="74" pX="0.5" pY="0.5" oX="95" oY="59" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_02_ 0" x="322" y="252" w="16" h="73" pX="0.5" pY="0.5" oX="95" oY="58" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_03_ 0" x="334" y="148" w="15" h="73" pX="0.5" pY="0.5" oX="96" oY="58" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_04_ 0" x="0" y="290" w="15" h="75" pX="0.5" pY="0.5" oX="96" oY="58" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_05_ 0" x="319" y="178" w="15" h="74" pX="0.5" pY="0.5" oX="96" oY="58" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_06_ 0" x="454" y="365" w="15" h="71" pX="0.5" pY="0.5" oX="96" oY="58" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_07_ 0" x="303" y="178" w="16" h="75" pX="0.5" pY="0.5" oX="95" oY="58" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_08_ 0" x="329" y="0" w="16" h="74" pX="0.5" pY="0.5" oX="95" oY="59" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_09_ 1" x="228" y="243" w="75" h="36" pX="0.5" pY="0.5" oX="71" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_10_ 1" x="76" y="183" w="76" h="33" pX="0.5" pY="0.5" oX="71" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_11_ 1" x="177" y="0" w="76" h="32" pX="0.5" pY="0.5" oX="71" oY="88" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_12_ 1" x="164" y="328" w="74" h="29" pX="0.5" pY="0.5" oX="71" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_13_ 1" x="15" y="290" w="74" h="32" pX="0.5" pY="0.5" oX="71" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_14_ 1" x="228" y="178" w="75" h="33" pX="0.5" pY="0.5" oX="71" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_15_ 1" x="175" y="134" w="76" h="34" pX="0.5" pY="0.5" oX="71" oY="85" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_16_ 1" x="175" y="99" w="76" h="35" pX="0.5" pY="0.5" oX="71" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_17_ 2" x="251" y="150" w="75" h="28" pX="0.5" pY="0.5" oX="60" oY="91" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_18_ 2" x="152" y="260" w="75" h="30" pX="0.5" pY="0.5" oX="60" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_19_ 2" x="253" y="85" w="75" h="33" pX="0.5" pY="0.5" oX="60" oY="86" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_20_ 2" x="90" y="328" w="74" h="36" pX="0.5" pY="0.5" oX="61" oY="83" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_21_ 2" x="89" y="290" w="74" h="34" pX="0.5" pY="0.5" oX="61" oY="84" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_22_ 2" x="251" y="118" w="75" h="32" pX="0.5" pY="0.5" oX="60" oY="87" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_23_ 2" x="15" y="328" w="75" h="30" pX="0.5" pY="0.5" oX="60" oY="89" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_24_ 2" x="227" y="279" w="75" h="29" pX="0.5" pY="0.5" oX="60" oY="90" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_25_ 3" x="638" y="733" w="16" h="55" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_26_ 3" x="174" y="836" w="15" h="51" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_27_ 3" x="508" y="836" w="16" h="51" pX="0.5" pY="0.5" oX="95" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_28_ 3" x="157" y="77" w="16" h="54" pX="0.5" pY="0.5" oX="95" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_29_ 3" x="809" y="723" w="16" h="53" pX="0.5" pY="0.5" oX="95" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_30_ 3" x="870" y="549" w="15" h="46" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_31_ 3" x="875" y="774" w="15" h="50" pX="0.5" pY="0.5" oX="96" oY="73" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_32_ 3" x="825" y="403" w="15" h="53" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_33_ 4" x="490" y="127" w="52" h="63" pX="0.5" pY="0.5" oX="78" oY="65" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_34_ 4" x="595" y="0" w="55" h="60" pX="0.5" pY="0.5" oX="78" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_35_ 4" x="650" y="49" w="58" h="59" pX="0.5" pY="0.5" oX="78" oY="68" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_36_ 4" x="183" y="568" w="59" h="60" pX="0.5" pY="0.5" oX="78" oY="69" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_37_ 4" x="93" y="531" w="57" h="62" pX="0.5" pY="0.5" oX="78" oY="67" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_38_ 4" x="539" y="315" w="56" h="61" pX="0.5" pY="0.5" oX="78" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_39_ 4" x="542" y="0" w="53" h="61" pX="0.5" pY="0.5" oX="79" oY="65" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_40_ 4" x="490" y="253" w="52" h="62" pX="0.5" pY="0.5" oX="79" oY="65" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_41_ 5" x="502" y="377" w="61" h="46" pX="0.5" pY="0.5" oX="78" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_42_ 5" x="0" y="741" w="57" h="47" pX="0.5" pY="0.5" oX="79" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_43_ 5" x="169" y="788" w="55" h="48" pX="0.5" pY="0.5" oX="79" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_44_ 5" x="457" y="840" w="51" h="50" pX="0.5" pY="0.5" oX="79" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_45_ 5" x="457" y="788" w="54" h="48" pX="0.5" pY="0.5" oX="78" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_46_ 5" x="465" y="737" w="56" h="42" pX="0.5" pY="0.5" oX="78" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_47_ 5" x="115" y="647" w="59" h="42" pX="0.5" pY="0.5" oX="78" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_48_ 5" x="588" y="193" w="60" h="45" pX="0.5" pY="0.5" oX="78" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_49_ 6" x="490" y="583" w="60" h="57" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_50_ 6" x="550" y="567" w="58" h="60" pX="0.5" pY="0.5" oX="70" oY="68" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_51_ 6" x="0" y="641" w="55" h="60" pX="0.5" pY="0.5" oX="73" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_52_ 6" x="490" y="64" w="52" h="63" pX="0.5" pY="0.5" oX="76" oY="64" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_53_ 6" x="150" y="498" w="53" h="62" pX="0.5" pY="0.5" oX="75" oY="64" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_54_ 6" x="592" y="431" w="56" h="60" pX="0.5" pY="0.5" oX="72" oY="66" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_55_ 6" x="488" y="640" w="58" h="59" pX="0.5" pY="0.5" oX="70" oY="69" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_56_ 6" x="546" y="640" w="59" h="59" pX="0.5" pY="0.5" oX="69" oY="70" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_57_ 7" x="52" y="840" w="52" h="50" pX="0.5" pY="0.5" oX="76" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_58_ 7" x="822" y="42" w="54" h="47" pX="0.5" pY="0.5" oX="74" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_59_ 7" x="706" y="344" w="57" h="44" pX="0.5" pY="0.5" oX="71" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_60_ 7" x="410" y="635" w="59" h="46" pX="0.5" pY="0.5" oX="69" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_61_ 7" x="233" y="691" w="57" h="44" pX="0.5" pY="0.5" oX="71" oY="78" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_62_ 7" x="226" y="787" w="55" h="43" pX="0.5" pY="0.5" oX="73" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_63_ 7" x="819" y="306" w="53" h="46" pX="0.5" pY="0.5" oX="75" oY="77" oW="200" oH="200"/>
+  <sprite n="RTP_Cat1_Walking_64_ 7" x="819" y="217" w="53" h="49" pX="0.5" pY="0.5" oX="75" oY="77" oW="200" oH="200"/>
+</TextureAtlas>

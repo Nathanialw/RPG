@@ -368,6 +368,11 @@ namespace Items {
         Item_Stats itemStats = Generate_Item_Stats(rarity);
         auto item_uID = World::zone.create();
         std::string itemName = Create_Weapon(item_uID, rarity, equip_type);
+        if (itemName == "none") {
+            World::zone.destroy(item_uID);
+            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
+            return Item_Component::emptyEquipSlot;
+        }
         Create_Item1(item_uID, position, itemName, itemStats);
         return item_uID;
     }

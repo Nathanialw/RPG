@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../sprite_sheets/units/5th_cast/zombies/Zombie_3.tsx"/>
+ <object name="Zombie_3" class="unit" gid="30" width="37" height="67"/>
+</template>

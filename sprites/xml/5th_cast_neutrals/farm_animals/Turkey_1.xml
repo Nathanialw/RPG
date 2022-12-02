@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Turkey_1.png" width="1145" height="1114" scale="1" format="RGBA8888">
+  <sprite n="Turkey_1_Attack 1_01_ 0" x="753" y="586" w="53" h="60" pX="0.5" pY="0.5" oX="26" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_02_ 0" x="166" y="1002" w="56" h="56" pX="0.5" pY="0.5" oX="23" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_03_ 0" x="93" y="0" w="90" h="60" pX="0.5" pY="0.5" oX="2" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_04_ 1" x="1036" y="418" w="53" h="56" pX="0.5" pY="0.5" oX="21" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_05_ 1" x="798" y="825" w="49" h="59" pX="0.5" pY="0.5" oX="22" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_06_ 1" x="0" y="60" w="58" h="91" pX="0.5" pY="0.5" oX="1" oY="3" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_07_ 2" x="1092" y="216" w="53" h="54" pX="0.5" pY="0.5" oX="29" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_08_ 2" x="747" y="825" w="51" h="59" pX="0.5" pY="0.5" oX="30" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_09_ 2" x="407" y="207" w="55" h="69" pX="0.5" pY="0.5" oX="43" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_10_ 3" x="342" y="823" w="50" h="59" pX="0.5" pY="0.5" oX="24" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_11_ 3" x="251" y="835" w="55" h="59" pX="0.5" pY="0.5" oX="23" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_12_ 3" x="0" y="0" w="93" h="60" pX="0.5" pY="0.5" oX="7" oY="8" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_13_ 4" x="980" y="823" w="53" h="56" pX="0.5" pY="0.5" oX="29" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_14_ 4" x="640" y="494" w="50" h="61" pX="0.5" pY="0.5" oX="30" oY="20" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_15_ 4" x="58" y="60" w="66" h="80" pX="0.5" pY="0.5" oX="4" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_16_ 5" x="200" y="835" w="51" h="59" pX="0.5" pY="0.5" oX="29" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_17_ 5" x="877" y="804" w="51" h="58" pX="0.5" pY="0.5" oX="27" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_18_ 5" x="0" y="151" w="76" h="77" pX="0.5" pY="0.5" oX="4" oY="3" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_19_ 6" x="773" y="1054" w="52" h="55" pX="0.5" pY="0.5" oX="22" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_20_ 6" x="52" y="1002" w="50" h="56" pX="0.5" pY="0.5" oX="23" oY="20" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_21_ 6" x="0" y="394" w="71" h="70" pX="0.5" pY="0.5" oX="24" oY="20" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_22_ 7" x="857" y="883" w="53" h="57" pX="0.5" pY="0.5" oX="21" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_23_ 7" x="757" y="426" w="51" h="60" pX="0.5" pY="0.5" oX="22" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 1_24_ 7" x="119" y="464" w="67" h="68" pX="0.5" pY="0.5" oX="33" oY="9" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_01_ 0" x="570" y="778" w="53" h="60" pX="0.5" pY="0.5" oX="26" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_02_ 0" x="462" y="69" w="38" h="66" pX="0.5" pY="0.5" oX="33" oY="13" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_03_ 0" x="377" y="103" w="29" h="68" pX="0.5" pY="0.5" oX="36" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_04_ 1" x="1036" y="736" w="53" h="56" pX="0.5" pY="0.5" oX="21" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_05_ 1" x="517" y="0" w="68" h="42" pX="0.5" pY="0.5" oX="22" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_06_ 1" x="0" y="228" w="76" h="30" pX="0.5" pY="0.5" oX="0" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_07_ 2" x="963" y="1031" w="53" h="54" pX="0.5" pY="0.5" oX="29" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_08_ 2" x="507" y="73" w="67" h="44" pX="0.5" pY="0.5" oX="13" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_09_ 2" x="74" y="335" w="74" h="30" pX="0.5" pY="0.5" oX="26" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_10_ 3" x="638" y="792" w="50" h="59" pX="0.5" pY="0.5" oX="24" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_11_ 3" x="594" y="252" w="37" h="61" pX="0.5" pY="0.5" oX="32" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_12_ 3" x="180" y="532" w="29" h="64" pX="0.5" pY="0.5" oX="36" oY="14" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_13_ 4" x="1033" y="792" w="53" h="56" pX="0.5" pY="0.5" oX="29" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_14_ 4" x="979" y="605" w="57" h="57" pX="0.5" pY="0.5" oX="30" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_15_ 4" x="979" y="662" w="57" h="53" pX="0.5" pY="0.5" oX="14" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_16_ 5" x="557" y="838" w="51" h="59" pX="0.5" pY="0.5" oX="29" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_17_ 5" x="1033" y="848" w="55" h="56" pX="0.5" pY="0.5" oX="31" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_18_ 5" x="271" y="945" w="57" h="50" pX="0.5" pY="0.5" oX="14" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_19_ 6" x="106" y="1058" w="52" h="56" pX="0.5" pY="0.5" oX="22" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_20_ 6" x="385" y="942" w="55" h="57" pX="0.5" pY="0.5" oX="17" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_21_ 6" x="328" y="1040" w="56" h="53" pX="0.5" pY="0.5" oX="31" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_22_ 7" x="746" y="942" w="53" h="57" pX="0.5" pY="0.5" oX="21" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_23_ 7" x="979" y="203" w="57" h="54" pX="0.5" pY="0.5" oX="16" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Attack 2_24_ 7" x="1036" y="217" w="56" h="50" pX="0.5" pY="0.5" oX="31" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_01_ 0" x="505" y="374" w="22" h="61" pX="0.5" pY="0.5" oX="40" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_02_ 0" x="457" y="716" w="22" h="60" pX="0.5" pY="0.5" oX="40" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_03_ 0" x="479" y="716" w="22" h="60" pX="0.5" pY="0.5" oX="40" oY="26" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_04_ 1" x="297" y="276" w="72" h="31" pX="0.5" pY="0.5" oX="17" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_05_ 1" x="221" y="360" w="71" h="31" pX="0.5" pY="0.5" oX="19" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_06_ 1" x="369" y="276" w="69" h="31" pX="0.5" pY="0.5" oX="21" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_07_ 2" x="305" y="103" w="72" h="29" pX="0.5" pY="0.5" oX="12" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_08_ 2" x="71" y="394" w="70" h="29" pX="0.5" pY="0.5" oX="12" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_09_ 2" x="429" y="434" w="68" h="29" pX="0.5" pY="0.5" oX="11" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_10_ 3" x="240" y="720" w="22" h="56" pX="0.5" pY="0.5" oX="40" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_11_ 3" x="957" y="285" w="22" h="53" pX="0.5" pY="0.5" oX="40" oY="37" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_12_ 3" x="852" y="763" w="22" h="52" pX="0.5" pY="0.5" oX="40" oY="38" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_13_ 4" x="450" y="897" w="55" h="45" pX="0.5" pY="0.5" oX="25" oY="35" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_14_ 4" x="1016" y="1067" w="54" h="46" pX="0.5" pY="0.5" oX="26" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_15_ 4" x="505" y="897" w="53" h="45" pX="0.5" pY="0.5" oX="27" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_16_ 5" x="558" y="897" w="52" h="44" pX="0.5" pY="0.5" oX="28" oY="39" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_17_ 5" x="928" y="587" w="51" h="43" pX="0.5" pY="0.5" oX="29" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_18_ 5" x="1092" y="543" w="50" h="43" pX="0.5" pY="0.5" oX="30" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_19_ 6" x="1092" y="455" w="52" h="49" pX="0.5" pY="0.5" oX="21" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_20_ 6" x="928" y="630" w="51" h="49" pX="0.5" pY="0.5" oX="21" oY="33" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_21_ 6" x="1092" y="586" w="49" h="48" pX="0.5" pY="0.5" oX="21" oY="33" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_22_ 7" x="663" y="1070" w="55" h="43" pX="0.5" pY="0.5" oX="21" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_23_ 7" x="757" y="543" w="54" h="43" pX="0.5" pY="0.5" oX="21" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Behavior_24_ 7" x="1092" y="344" w="52" h="43" pX="0.5" pY="0.5" oX="21" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_01_ 0" x="457" y="778" w="53" h="60" pX="0.5" pY="0.5" oX="26" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_02_ 0" x="238" y="464" w="53" h="68" pX="0.5" pY="0.5" oX="26" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_03_ 0" x="354" y="190" w="53" h="71" pX="0.5" pY="0.5" oX="26" oY="13" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_04_ 1" x="854" y="997" w="53" h="56" pX="0.5" pY="0.5" oX="21" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_05_ 1" x="689" y="753" w="60" h="56" pX="0.5" pY="0.5" oX="18" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_06_ 1" x="696" y="57" w="61" h="55" pX="0.5" pY="0.5" oX="23" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_07_ 2" x="1019" y="1013" w="53" h="54" pX="0.5" pY="0.5" oX="29" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_08_ 2" x="497" y="942" w="57" h="54" pX="0.5" pY="0.5" oX="26" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_09_ 2" x="870" y="231" w="58" h="54" pX="0.5" pY="0.5" oX="20" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_10_ 3" x="507" y="838" w="50" h="59" pX="0.5" pY="0.5" oX="24" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_11_ 3" x="928" y="534" w="51" h="53" pX="0.5" pY="0.5" oX="23" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_12_ 3" x="1092" y="303" w="52" h="41" pX="0.5" pY="0.5" oX="23" oY="37" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_13_ 4" x="53" y="1058" w="53" h="56" pX="0.5" pY="0.5" oX="29" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_14_ 4" x="636" y="568" w="58" h="61" pX="0.5" pY="0.5" oX="27" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_15_ 4" x="527" y="441" w="58" h="64" pX="0.5" pY="0.5" oX="30" oY="15" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_16_ 5" x="456" y="838" w="51" h="59" pX="0.5" pY="0.5" oX="29" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_17_ 5" x="980" y="715" w="56" h="52" pX="0.5" pY="0.5" oX="27" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_18_ 5" x="494" y="1050" w="55" h="46" pX="0.5" pY="0.5" oX="30" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_19_ 6" x="1023" y="904" w="52" h="56" pX="0.5" pY="0.5" oX="22" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_20_ 6" x="751" y="706" w="55" h="60" pX="0.5" pY="0.5" oX="20" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_21_ 6" x="268" y="532" w="54" h="63" pX="0.5" pY="0.5" oX="17" oY="15" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_22_ 7" x="693" y="922" w="53" h="57" pX="0.5" pY="0.5" oX="21" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_23_ 7" x="799" y="936" w="57" h="50" pX="0.5" pY="0.5" oX="18" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Block_24_ 7" x="910" y="919" w="57" h="43" pX="0.5" pY="0.5" oX="14" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_01_ 0" x="81" y="838" w="30" h="59" pX="0.5" pY="0.5" oX="36" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_02_ 0" x="51" y="838" w="30" h="59" pX="0.5" pY="0.5" oX="36" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_03_ 0" x="287" y="657" w="30" h="59" pX="0.5" pY="0.5" oX="36" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_04_ 1" x="336" y="0" w="73" h="30" pX="0.5" pY="0.5" oX="16" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_05_ 1" x="224" y="300" w="73" h="30" pX="0.5" pY="0.5" oX="16" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_06_ 1" x="221" y="330" w="73" h="30" pX="0.5" pY="0.5" oX="16" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_07_ 2" x="151" y="300" w="73" h="30" pX="0.5" pY="0.5" oX="12" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_08_ 2" x="148" y="335" w="73" h="30" pX="0.5" pY="0.5" oX="12" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_09_ 2" x="294" y="330" w="73" h="30" pX="0.5" pY="0.5" oX="12" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_10_ 3" x="488" y="530" w="30" h="63" pX="0.5" pY="0.5" oX="35" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_11_ 3" x="564" y="304" w="30" h="63" pX="0.5" pY="0.5" oX="35" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_12_ 3" x="374" y="531" w="30" h="63" pX="0.5" pY="0.5" oX="35" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_13_ 4" x="979" y="155" w="57" h="48" pX="0.5" pY="0.5" oX="26" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_14_ 4" x="870" y="641" w="58" h="48" pX="0.5" pY="0.5" oX="26" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_15_ 4" x="817" y="318" w="58" h="48" pX="0.5" pY="0.5" oX="26" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_16_ 5" x="979" y="303" w="57" h="53" pX="0.5" pY="0.5" oX="26" oY="33" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_17_ 5" x="979" y="356" w="57" h="52" pX="0.5" pY="0.5" oX="26" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_18_ 5" x="979" y="408" w="57" h="52" pX="0.5" pY="0.5" oX="26" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_19_ 6" x="870" y="592" w="58" h="49" pX="0.5" pY="0.5" oX="18" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_20_ 6" x="870" y="543" w="58" h="49" pX="0.5" pY="0.5" oX="18" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_21_ 6" x="232" y="894" w="58" h="49" pX="0.5" pY="0.5" oX="18" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_22_ 7" x="799" y="884" w="58" h="52" pX="0.5" pY="0.5" oX="18" oY="33" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_23_ 7" x="290" y="894" w="58" h="51" pX="0.5" pY="0.5" oX="18" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Critical HP_24_ 7" x="392" y="856" w="58" h="52" pX="0.5" pY="0.5" oX="18" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Dead_01_ 0" x="594" y="313" w="31" h="53" pX="0.5" pY="0.5" oX="31" oY="36" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Dead_02_ 1" x="228" y="278" w="69" h="22" pX="0.5" pY="0.5" oX="19" oY="52" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Dead_03_ 2" x="429" y="406" w="69" h="28" pX="0.5" pY="0.5" oX="12" oY="52" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Dead_04_ 3" x="1114" y="712" w="31" h="49" pX="0.5" pY="0.5" oX="38" oY="44" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Dead_05_ 4" x="1092" y="504" w="52" h="39" pX="0.5" pY="0.5" oX="23" oY="42" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Dead_06_ 5" x="1092" y="634" w="49" h="36" pX="0.5" pY="0.5" oX="30" oY="48" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Dead_07_ 6" x="1092" y="670" w="49" h="42" pX="0.5" pY="0.5" oX="21" oY="45" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Dead_08_ 7" x="1092" y="420" w="52" h="35" pX="0.5" pY="0.5" oX="25" oY="51" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_01_ 0" x="757" y="366" w="53" h="60" pX="0.5" pY="0.5" oX="26" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_02_ 0" x="61" y="533" w="54" h="66" pX="0.5" pY="0.5" oX="27" oY="11" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_03_ 0" x="313" y="463" w="66" h="68" pX="0.5" pY="0.5" oX="33" oY="4" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_04_ 1" x="1036" y="586" w="53" h="56" pX="0.5" pY="0.5" oX="21" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_05_ 1" x="757" y="486" w="60" h="57" pX="0.5" pY="0.5" oX="23" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_06_ 1" x="287" y="203" w="67" h="73" pX="0.5" pY="0.5" oX="29" oY="15" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_07_ 2" x="1092" y="0" w="53" h="54" pX="0.5" pY="0.5" oX="29" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_08_ 2" x="811" y="543" w="59" h="57" pX="0.5" pY="0.5" oX="21" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_09_ 2" x="507" y="117" w="67" h="64" pX="0.5" pY="0.5" oX="8" oY="3" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_10_ 3" x="810" y="366" w="50" h="59" pX="0.5" pY="0.5" oX="24" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_11_ 3" x="53" y="778" w="54" h="60" pX="0.5" pY="0.5" oX="20" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_12_ 3" x="336" y="30" w="68" h="73" pX="0.5" pY="0.5" oX="4" oY="14" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_13_ 4" x="1036" y="530" w="53" h="56" pX="0.5" pY="0.5" oX="29" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_14_ 4" x="808" y="426" w="54" h="59" pX="0.5" pY="0.5" oX="35" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_15_ 4" x="507" y="243" w="66" h="61" pX="0.5" pY="0.5" oX="31" oY="15" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_16_ 5" x="813" y="200" w="51" h="59" pX="0.5" pY="0.5" oX="29" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_17_ 5" x="817" y="0" w="53" h="59" pX="0.5" pY="0.5" oX="26" oY="26" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_18_ 5" x="228" y="203" w="59" h="75" pX="0.5" pY="0.5" oX="23" oY="13" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_19_ 6" x="1036" y="474" w="52" h="56" pX="0.5" pY="0.5" oX="22" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_20_ 6" x="749" y="766" w="53" h="59" pX="0.5" pY="0.5" oX="24" oY="12" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_21_ 6" x="209" y="532" w="59" h="64" pX="0.5" pY="0.5" oX="22" oY="4" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_22_ 7" x="926" y="173" w="53" h="57" pX="0.5" pY="0.5" oX="21" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_23_ 7" x="916" y="343" w="52" h="57" pX="0.5" pY="0.5" oX="16" oY="20" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Evade_24_ 7" x="423" y="463" w="68" h="64" pX="0.5" pY="0.5" oX="6" oY="13" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_01_ 0" x="275" y="776" w="53" h="59" pX="0.5" pY="0.5" oX="26" oY="20" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_02_ 0" x="287" y="716" w="50" h="60" pX="0.5" pY="0.5" oX="28" oY="14" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_03_ 0" x="696" y="586" w="57" h="61" pX="0.5" pY="0.5" oX="25" oY="12" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_04_ 1" x="928" y="803" w="52" h="56" pX="0.5" pY="0.5" oX="21" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_05_ 1" x="718" y="1055" w="55" h="54" pX="0.5" pY="0.5" oX="29" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_06_ 1" x="214" y="1058" w="55" h="50" pX="0.5" pY="0.5" oX="38" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_07_ 2" x="1092" y="108" w="53" h="54" pX="0.5" pY="0.5" oX="29" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_08_ 2" x="269" y="1058" w="55" h="51" pX="0.5" pY="0.5" oX="20" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_09_ 2" x="638" y="884" w="55" h="58" pX="0.5" pY="0.5" oX="10" oY="20" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_10_ 3" x="224" y="776" w="51" h="59" pX="0.5" pY="0.5" oX="24" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_11_ 3" x="877" y="746" w="50" h="58" pX="0.5" pY="0.5" oX="24" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_12_ 3" x="757" y="200" w="56" h="60" pX="0.5" pY="0.5" oX="21" oY="26" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_13_ 4" x="384" y="1055" w="52" h="55" pX="0.5" pY="0.5" oX="29" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_14_ 4" x="928" y="57" w="49" h="57" pX="0.5" pY="0.5" oX="36" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_15_ 4" x="875" y="173" w="51" h="58" pX="0.5" pY="0.5" oX="38" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_16_ 5" x="862" y="424" w="50" h="58" pX="0.5" pY="0.5" oX="29" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_17_ 5" x="608" y="1055" w="55" h="54" pX="0.5" pY="0.5" oX="29" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_18_ 5" x="1036" y="165" w="56" h="52" pX="0.5" pY="0.5" oX="32" oY="33" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_19_ 6" x="928" y="230" w="51" h="55" pX="0.5" pY="0.5" oX="23" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_20_ 6" x="860" y="366" w="56" h="58" pX="0.5" pY="0.5" oX="19" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_21_ 6" x="870" y="689" w="58" h="57" pX="0.5" pY="0.5" oX="14" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_22_ 7" x="875" y="115" w="52" h="58" pX="0.5" pY="0.5" oX="22" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_23_ 7" x="694" y="185" w="48" h="61" pX="0.5" pY="0.5" oX="18" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Get Hit_24_ 7" x="692" y="124" w="50" h="61" pX="0.5" pY="0.5" oX="14" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_01_ 0" x="322" y="531" w="52" h="63" pX="0.5" pY="0.5" oX="26" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_02_ 0" x="585" y="429" w="52" h="62" pX="0.5" pY="0.5" oX="26" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_03_ 0" x="178" y="596" w="52" h="62" pX="0.5" pY="0.5" oX="26" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_04_ 1" x="1036" y="110" w="56" h="55" pX="0.5" pY="0.5" oX="20" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_05_ 1" x="1036" y="55" w="56" h="55" pX="0.5" pY="0.5" oX="20" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_06_ 1" x="1036" y="0" w="56" h="55" pX="0.5" pY="0.5" oX="20" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_07_ 2" x="912" y="424" w="57" h="55" pX="0.5" pY="0.5" oX="26" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_08_ 2" x="963" y="976" w="56" h="55" pX="0.5" pY="0.5" oX="27" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_09_ 2" x="496" y="996" w="56" h="54" pX="0.5" pY="0.5" oX="27" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_10_ 3" x="458" y="655" w="51" h="61" pX="0.5" pY="0.5" oX="24" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_11_ 3" x="640" y="124" w="52" h="61" pX="0.5" pY="0.5" oX="24" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_12_ 3" x="519" y="630" w="52" h="61" pX="0.5" pY="0.5" oX="24" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_13_ 4" x="909" y="962" w="54" h="56" pX="0.5" pY="0.5" oX="29" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_14_ 4" x="713" y="999" w="54" h="56" pX="0.5" pY="0.5" oX="29" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_15_ 4" x="799" y="986" w="55" h="56" pX="0.5" pY="0.5" oX="28" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_16_ 5" x="62" y="662" w="52" h="58" pX="0.5" pY="0.5" oX="29" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_17_ 5" x="746" y="884" w="53" h="58" pX="0.5" pY="0.5" oX="28" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_18_ 5" x="693" y="864" w="53" h="58" pX="0.5" pY="0.5" oX="28" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_19_ 6" x="660" y="999" w="53" h="56" pX="0.5" pY="0.5" oX="21" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_20_ 6" x="608" y="999" w="52" h="56" pX="0.5" pY="0.5" oX="22" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_21_ 6" x="276" y="995" w="52" h="56" pX="0.5" pY="0.5" oX="22" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_22_ 7" x="554" y="992" w="54" h="56" pX="0.5" pY="0.5" oX="20" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_23_ 7" x="384" y="999" w="54" h="56" pX="0.5" pY="0.5" oX="20" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Idle_24_ 7" x="222" y="1002" w="54" h="56" pX="0.5" pY="0.5" oX="20" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_01_ 0" x="668" y="942" w="22" h="42" pX="0.5" pY="0.5" oX="39" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_02_ 0" x="934" y="1070" w="22" h="42" pX="0.5" pY="0.5" oX="39" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_03_ 0" x="1092" y="712" w="22" h="42" pX="0.5" pY="0.5" oX="39" oY="40" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_04_ 1" x="507" y="212" w="67" h="31" pX="0.5" pY="0.5" oX="20" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_05_ 1" x="507" y="181" w="67" h="31" pX="0.5" pY="0.5" oX="20" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_06_ 1" x="517" y="42" w="67" h="31" pX="0.5" pY="0.5" oX="20" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_07_ 2" x="438" y="276" w="69" h="30" pX="0.5" pY="0.5" oX="13" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_08_ 2" x="436" y="375" w="69" h="31" pX="0.5" pY="0.5" oX="13" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_09_ 2" x="71" y="423" w="69" h="31" pX="0.5" pY="0.5" oX="13" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_10_ 3" x="401" y="463" w="22" h="68" pX="0.5" pY="0.5" oX="39" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_11_ 3" x="379" y="463" w="22" h="68" pX="0.5" pY="0.5" oX="39" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_12_ 3" x="291" y="463" w="22" h="68" pX="0.5" pY="0.5" oX="39" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_13_ 4" x="928" y="679" w="51" h="33" pX="0.5" pY="0.5" oX="29" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_14_ 4" x="1092" y="387" w="52" h="33" pX="0.5" pY="0.5" oX="28" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_15_ 4" x="1092" y="270" w="52" h="33" pX="0.5" pY="0.5" oX="28" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_16_ 5" x="928" y="0" w="51" h="57" pX="0.5" pY="0.5" oX="29" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_17_ 5" x="927" y="115" w="52" h="57" pX="0.5" pY="0.5" oX="28" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_18_ 5" x="927" y="746" w="52" h="57" pX="0.5" pY="0.5" oX="28" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_19_ 6" x="880" y="1070" w="54" h="33" pX="0.5" pY="0.5" oX="20" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_20_ 6" x="501" y="741" w="54" h="33" pX="0.5" pY="0.5" oX="20" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_21_ 6" x="377" y="908" w="54" h="33" pX="0.5" pY="0.5" oX="20" oY="43" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_22_ 7" x="910" y="862" w="54" h="57" pX="0.5" pY="0.5" oX="19" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_23_ 7" x="0" y="945" w="55" h="57" pX="0.5" pY="0.5" oX="19" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Rest_24_ 7" x="55" y="945" w="55" h="57" pX="0.5" pY="0.5" oX="19" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_01_ 0" x="167" y="776" w="57" h="59" pX="0.5" pY="0.5" oX="22" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_02_ 0" x="696" y="527" w="61" h="59" pX="0.5" pY="0.5" oX="20" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_03_ 0" x="115" y="533" w="65" h="59" pX="0.5" pY="0.5" oX="18" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_04_ 0" x="303" y="389" w="69" h="58" pX="0.5" pY="0.5" oX="16" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_05_ 0" x="423" y="527" w="65" h="59" pX="0.5" pY="0.5" oX="18" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_06_ 0" x="458" y="593" w="61" h="62" pX="0.5" pY="0.5" oX="20" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_07_ 0" x="637" y="189" w="57" h="62" pX="0.5" pY="0.5" oX="22" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_08_ 0" x="585" y="367" w="52" h="62" pX="0.5" pY="0.5" oX="24" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_09_ 1" x="152" y="253" w="76" h="47" pX="0.5" pY="0.5" oX="14" oY="36" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_10_ 1" x="153" y="150" w="76" h="50" pX="0.5" pY="0.5" oX="14" oY="35" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_11_ 1" x="229" y="150" w="76" h="53" pX="0.5" pY="0.5" oX="14" oY="33" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_12_ 1" x="0" y="305" w="74" h="57" pX="0.5" pY="0.5" oX="15" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_13_ 1" x="229" y="97" w="76" h="53" pX="0.5" pY="0.5" oX="14" oY="33" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_14_ 1" x="259" y="47" w="76" h="50" pX="0.5" pY="0.5" oX="14" oY="35" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_15_ 1" x="183" y="0" w="77" h="47" pX="0.5" pY="0.5" oX="13" oY="36" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_16_ 1" x="76" y="184" w="76" h="44" pX="0.5" pY="0.5" oX="14" oY="37" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_17_ 2" x="260" y="0" w="76" h="47" pX="0.5" pY="0.5" oX="12" oY="36" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_18_ 2" x="183" y="47" w="76" h="50" pX="0.5" pY="0.5" oX="12" oY="35" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_19_ 2" x="152" y="200" w="76" h="53" pX="0.5" pY="0.5" oX="12" oY="33" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_20_ 2" x="76" y="278" w="75" h="57" pX="0.5" pY="0.5" oX="12" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_21_ 2" x="153" y="97" w="76" h="53" pX="0.5" pY="0.5" oX="12" oY="33" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_22_ 2" x="76" y="228" w="76" h="50" pX="0.5" pY="0.5" oX="12" oY="35" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_23_ 2" x="0" y="258" w="76" h="47" pX="0.5" pY="0.5" oX="12" oY="36" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_24_ 2" x="76" y="140" w="77" h="44" pX="0.5" pY="0.5" oX="11" oY="37" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_25_ 3" x="372" y="376" w="57" h="69" pX="0.5" pY="0.5" oX="22" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_26_ 3" x="503" y="306" w="61" h="68" pX="0.5" pY="0.5" oX="20" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_27_ 3" x="438" y="306" w="65" h="69" pX="0.5" pY="0.5" oX="18" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_28_ 3" x="367" y="307" w="69" h="69" pX="0.5" pY="0.5" oX="16" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_29_ 3" x="0" y="464" w="65" h="69" pX="0.5" pY="0.5" oX="18" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_30_ 3" x="0" y="533" w="61" h="66" pX="0.5" pY="0.5" oX="20" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_31_ 3" x="527" y="374" w="57" h="67" pX="0.5" pY="0.5" oX="22" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_32_ 3" x="186" y="464" w="52" h="68" pX="0.5" pY="0.5" oX="24" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_33_ 4" x="811" y="659" w="59" h="47" pX="0.5" pY="0.5" oX="24" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_34_ 4" x="58" y="897" w="58" h="48" pX="0.5" pY="0.5" oX="25" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_35_ 4" x="116" y="894" w="58" h="49" pX="0.5" pY="0.5" oX="25" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_36_ 4" x="757" y="0" w="60" h="50" pX="0.5" pY="0.5" oX="23" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_37_ 4" x="174" y="894" w="58" h="49" pX="0.5" pY="0.5" oX="25" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_38_ 4" x="691" y="703" w="60" h="50" pX="0.5" pY="0.5" oX="24" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_39_ 4" x="631" y="686" w="60" h="50" pX="0.5" pY="0.5" oX="24" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_40_ 4" x="397" y="708" w="60" h="49" pX="0.5" pY="0.5" oX="24" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_41_ 5" x="817" y="485" w="58" h="58" pX="0.5" pY="0.5" oX="25" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_42_ 5" x="806" y="706" w="59" h="57" pX="0.5" pY="0.5" oX="24" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_43_ 5" x="870" y="0" w="58" h="58" pX="0.5" pY="0.5" oX="25" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_44_ 5" x="337" y="716" w="60" h="59" pX="0.5" pY="0.5" oX="23" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_45_ 5" x="870" y="58" w="58" h="57" pX="0.5" pY="0.5" oX="25" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_46_ 5" x="180" y="720" w="60" h="55" pX="0.5" pY="0.5" oX="24" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_47_ 5" x="120" y="720" w="60" h="55" pX="0.5" pY="0.5" oX="24" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_48_ 5" x="60" y="720" w="60" h="56" pX="0.5" pY="0.5" oX="24" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_49_ 6" x="569" y="731" w="60" h="47" pX="0.5" pY="0.5" oX="18" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_50_ 6" x="337" y="775" w="60" h="48" pX="0.5" pY="0.5" oX="18" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_51_ 6" x="397" y="807" w="59" h="49" pX="0.5" pY="0.5" oX="18" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_52_ 6" x="397" y="757" w="60" h="50" pX="0.5" pY="0.5" oX="18" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_53_ 6" x="757" y="317" w="60" h="49" pX="0.5" pY="0.5" oX="18" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_54_ 6" x="509" y="691" w="60" h="50" pX="0.5" pY="0.5" oX="18" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_55_ 6" x="571" y="681" w="60" h="50" pX="0.5" pY="0.5" oX="18" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_56_ 6" x="757" y="50" w="60" h="49" pX="0.5" pY="0.5" oX="18" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_57_ 7" x="0" y="720" w="60" h="58" pX="0.5" pY="0.5" oX="18" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_58_ 7" x="107" y="776" w="60" h="57" pX="0.5" pY="0.5" oX="18" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_59_ 7" x="111" y="835" w="59" h="58" pX="0.5" pY="0.5" oX="18" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_60_ 7" x="510" y="778" w="60" h="59" pX="0.5" pY="0.5" oX="18" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_61_ 7" x="757" y="260" w="60" h="57" pX="0.5" pY="0.5" oX="18" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_62_ 7" x="688" y="809" w="59" h="55" pX="0.5" pY="0.5" oX="18" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_63_ 7" x="757" y="99" w="60" h="55" pX="0.5" pY="0.5" oX="18" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Run_64_ 7" x="629" y="736" w="60" h="56" pX="0.5" pY="0.5" oX="18" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_01_ 0" x="0" y="778" w="53" h="60" pX="0.5" pY="0.5" oX="26" oY="19" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_02_ 0" x="306" y="835" w="36" h="59" pX="0.5" pY="0.5" oX="34" oY="15" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_03_ 0" x="1086" y="792" w="28" h="51" pX="0.5" pY="0.5" oX="36" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_04_ 1" x="0" y="1058" w="53" h="56" pX="0.5" pY="0.5" oX="21" oY="25" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_05_ 1" x="696" y="482" w="61" h="45" pX="0.5" pY="0.5" oX="28" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_06_ 1" x="0" y="897" w="58" h="48" pX="0.5" pY="0.5" oX="37" oY="26" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_07_ 2" x="1092" y="54" w="53" h="54" pX="0.5" pY="0.5" oX="29" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_08_ 2" x="0" y="662" w="62" h="44" pX="0.5" pY="0.5" oX="14" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_09_ 2" x="757" y="154" w="60" h="46" pX="0.5" pY="0.5" oX="7" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_10_ 3" x="802" y="766" w="50" h="59" pX="0.5" pY="0.5" oX="24" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_11_ 3" x="491" y="463" w="36" h="67" pX="0.5" pY="0.5" oX="32" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_12_ 3" x="124" y="60" w="29" h="73" pX="0.5" pY="0.5" oX="36" oY="20" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_13_ 4" x="980" y="767" w="53" h="56" pX="0.5" pY="0.5" oX="29" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_14_ 4" x="1092" y="162" w="52" h="54" pX="0.5" pY="0.5" oX="33" oY="20" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_15_ 4" x="1072" y="1013" w="47" h="45" pX="0.5" pY="0.5" oX="39" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_16_ 5" x="0" y="838" w="51" h="59" pX="0.5" pY="0.5" oX="29" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_17_ 5" x="230" y="596" w="49" h="62" pX="0.5" pY="0.5" oX="35" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_18_ 5" x="462" y="135" w="45" h="66" pX="0.5" pY="0.5" oX="40" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_19_ 6" x="0" y="1002" w="52" h="56" pX="0.5" pY="0.5" oX="22" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_20_ 6" x="928" y="479" w="51" h="55" pX="0.5" pY="0.5" oX="18" oY="20" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_21_ 6" x="1070" y="1067" w="46" h="47" pX="0.5" pY="0.5" oX="16" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_22_ 7" x="856" y="940" w="53" h="57" pX="0.5" pY="0.5" oX="21" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_23_ 7" x="757" y="646" w="54" h="60" pX="0.5" pY="0.5" oX="17" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Use Skill_24_ 7" x="178" y="658" w="50" h="62" pX="0.5" pY="0.5" oX="16" oY="24" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_01_ 0" x="407" y="69" w="54" h="69" pX="0.5" pY="0.5" oX="25" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_02_ 0" x="407" y="138" w="54" h="69" pX="0.5" pY="0.5" oX="25" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_03_ 0" x="249" y="391" w="54" h="70" pX="0.5" pY="0.5" oX="25" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_04_ 0" x="65" y="464" w="54" h="69" pX="0.5" pY="0.5" oX="25" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_05_ 0" x="195" y="394" w="54" h="70" pX="0.5" pY="0.5" oX="25" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_06_ 0" x="463" y="0" w="54" h="69" pX="0.5" pY="0.5" oX="25" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_07_ 0" x="409" y="0" w="54" h="69" pX="0.5" pY="0.5" oX="25" oY="18" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_08_ 0" x="141" y="394" w="54" h="70" pX="0.5" pY="0.5" oX="25" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_09_ 1" x="574" y="624" w="61" h="57" pX="0.5" pY="0.5" oX="14" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_10_ 1" x="635" y="629" w="61" h="57" pX="0.5" pY="0.5" oX="14" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_11_ 1" x="693" y="251" w="61" h="57" pX="0.5" pY="0.5" oX="14" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_12_ 1" x="696" y="0" w="61" h="57" pX="0.5" pY="0.5" oX="15" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_13_ 1" x="696" y="308" w="61" h="58" pX="0.5" pY="0.5" oX="14" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_14_ 1" x="696" y="366" w="61" h="58" pX="0.5" pY="0.5" oX="14" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_15_ 1" x="116" y="649" w="62" h="58" pX="0.5" pY="0.5" oX="13" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_16_ 1" x="696" y="424" w="61" h="58" pX="0.5" pY="0.5" oX="14" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_17_ 2" x="574" y="568" w="62" h="56" pX="0.5" pY="0.5" oX="26" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_18_ 2" x="334" y="594" w="62" h="56" pX="0.5" pY="0.5" oX="26" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_19_ 2" x="334" y="650" w="62" h="56" pX="0.5" pY="0.5" oX="26" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_20_ 2" x="696" y="647" w="61" h="56" pX="0.5" pY="0.5" oX="26" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_21_ 2" x="116" y="592" w="62" h="57" pX="0.5" pY="0.5" oX="26" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_22_ 2" x="631" y="251" w="62" h="57" pX="0.5" pY="0.5" oX="26" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_23_ 2" x="396" y="651" w="62" h="57" pX="0.5" pY="0.5" oX="26" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_24_ 2" x="396" y="594" w="62" h="57" pX="0.5" pY="0.5" oX="26" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_25_ 3" x="817" y="59" w="53" h="59" pX="0.5" pY="0.5" oX="23" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_26_ 3" x="875" y="482" w="53" h="58" pX="0.5" pY="0.5" oX="23" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_27_ 3" x="817" y="118" w="53" h="59" pX="0.5" pY="0.5" oX="23" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_28_ 3" x="817" y="259" w="53" h="59" pX="0.5" pY="0.5" oX="23" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_29_ 3" x="811" y="600" w="53" h="59" pX="0.5" pY="0.5" oX="23" oY="21" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_30_ 3" x="219" y="945" w="52" h="57" pX="0.5" pY="0.5" oX="23" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_31_ 3" x="167" y="945" w="52" h="57" pX="0.5" pY="0.5" oX="23" oY="23" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_32_ 3" x="875" y="285" w="53" h="58" pX="0.5" pY="0.5" oX="23" oY="22" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_33_ 4" x="228" y="658" w="59" h="62" pX="0.5" pY="0.5" oX="24" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_34_ 4" x="637" y="308" w="57" h="62" pX="0.5" pY="0.5" oX="25" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_35_ 4" x="637" y="370" w="57" h="62" pX="0.5" pY="0.5" oX="25" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_36_ 4" x="637" y="432" w="58" h="62" pX="0.5" pY="0.5" oX="25" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_37_ 4" x="583" y="505" w="57" h="63" pX="0.5" pY="0.5" oX="25" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_38_ 4" x="574" y="189" w="57" h="63" pX="0.5" pY="0.5" oX="24" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_39_ 4" x="0" y="599" w="58" h="63" pX="0.5" pY="0.5" oX="24" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_40_ 4" x="58" y="599" w="58" h="63" pX="0.5" pY="0.5" oX="24" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_41_ 5" x="552" y="1048" w="56" h="53" pX="0.5" pY="0.5" oX="25" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_42_ 5" x="907" y="1018" w="56" h="52" pX="0.5" pY="0.5" oX="24" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_43_ 5" x="438" y="1040" w="56" h="53" pX="0.5" pY="0.5" oX="25" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_44_ 5" x="158" y="1058" w="56" h="54" pX="0.5" pY="0.5" oX="25" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_45_ 5" x="1023" y="960" w="56" h="53" pX="0.5" pY="0.5" oX="25" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_46_ 5" x="1036" y="368" w="56" h="50" pX="0.5" pY="0.5" oX="24" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_47_ 5" x="1036" y="318" w="56" h="50" pX="0.5" pY="0.5" oX="24" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_48_ 5" x="1036" y="267" w="56" h="51" pX="0.5" pY="0.5" oX="24" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_49_ 6" x="640" y="62" w="56" h="62" pX="0.5" pY="0.5" oX="22" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_50_ 6" x="640" y="0" w="56" h="62" pX="0.5" pY="0.5" oX="22" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_51_ 6" x="585" y="126" w="55" h="63" pX="0.5" pY="0.5" oX="22" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_52_ 6" x="519" y="568" w="55" h="62" pX="0.5" pY="0.5" oX="22" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_53_ 6" x="527" y="505" w="56" h="63" pX="0.5" pY="0.5" oX="22" oY="16" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_54_ 6" x="585" y="63" w="55" h="63" pX="0.5" pY="0.5" oX="23" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_55_ 6" x="585" y="0" w="55" h="63" pX="0.5" pY="0.5" oX="23" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_56_ 6" x="279" y="595" w="55" h="62" pX="0.5" pY="0.5" oX="23" oY="17" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_57_ 7" x="979" y="103" w="57" h="52" pX="0.5" pY="0.5" oX="21" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_58_ 7" x="979" y="53" w="57" h="50" pX="0.5" pY="0.5" oX="21" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_59_ 7" x="967" y="879" w="56" h="51" pX="0.5" pY="0.5" oX="21" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_60_ 7" x="979" y="0" w="57" h="53" pX="0.5" pY="0.5" oX="20" oY="27" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_61_ 7" x="611" y="942" w="57" h="51" pX="0.5" pY="0.5" oX="21" oY="28" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_62_ 7" x="825" y="1053" w="55" h="49" pX="0.5" pY="0.5" oX="22" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_63_ 7" x="110" y="994" w="56" h="49" pX="0.5" pY="0.5" oX="22" oY="30" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Walk_64_ 7" x="554" y="942" w="57" h="50" pX="0.5" pY="0.5" oX="21" oY="29" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_01_ 0" x="348" y="882" w="29" h="55" pX="0.5" pY="0.5" oX="37" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_02_ 0" x="928" y="285" w="29" h="55" pX="0.5" pY="0.5" oX="37" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_03_ 0" x="767" y="999" w="29" h="55" pX="0.5" pY="0.5" oX="37" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_04_ 1" x="142" y="365" w="71" h="29" pX="0.5" pY="0.5" oX="17" oY="45" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_05_ 1" x="305" y="132" w="71" h="29" pX="0.5" pY="0.5" oX="17" oY="45" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_06_ 1" x="292" y="360" w="71" h="29" pX="0.5" pY="0.5" oX="17" oY="45" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_07_ 2" x="0" y="365" w="71" h="29" pX="0.5" pY="0.5" oX="13" oY="44" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_08_ 2" x="71" y="365" w="71" h="29" pX="0.5" pY="0.5" oX="13" oY="44" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_09_ 2" x="305" y="161" w="71" h="29" pX="0.5" pY="0.5" oX="13" oY="44" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_10_ 3" x="847" y="825" w="30" h="58" pX="0.5" pY="0.5" oX="35" oY="32" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_11_ 3" x="608" y="838" w="30" h="59" pX="0.5" pY="0.5" oX="35" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_12_ 3" x="170" y="835" w="30" h="59" pX="0.5" pY="0.5" oX="35" oY="31" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_13_ 4" x="979" y="509" w="57" h="47" pX="0.5" pY="0.5" oX="26" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_14_ 4" x="1036" y="689" w="56" h="47" pX="0.5" pY="0.5" oX="26" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_15_ 4" x="1036" y="642" w="56" h="47" pX="0.5" pY="0.5" oX="26" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_16_ 5" x="440" y="991" w="56" h="49" pX="0.5" pY="0.5" oX="26" oY="37" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_17_ 5" x="328" y="991" w="56" h="49" pX="0.5" pY="0.5" oX="26" oY="37" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_18_ 5" x="979" y="460" w="57" h="49" pX="0.5" pY="0.5" oX="25" oY="37" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_19_ 6" x="967" y="930" w="56" h="46" pX="0.5" pY="0.5" oX="19" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_20_ 6" x="979" y="257" w="57" h="46" pX="0.5" pY="0.5" oX="19" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_21_ 6" x="328" y="945" w="57" h="46" pX="0.5" pY="0.5" oX="19" oY="34" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_22_ 7" x="440" y="942" w="57" h="49" pX="0.5" pY="0.5" oX="18" oY="37" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_23_ 7" x="110" y="945" w="57" h="49" pX="0.5" pY="0.5" oX="18" oY="37" oW="100" oH="100"/>
+  <sprite n="Turkey_1_Woozy_24_ 7" x="979" y="556" w="57" h="49" pX="0.5" pY="0.5" oX="18" oY="37" oW="100" oH="100"/>
+</TextureAtlas>

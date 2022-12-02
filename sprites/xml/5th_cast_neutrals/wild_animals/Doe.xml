@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Doe.png" width="1265" height="1228" scale="1" format="RGBA8888">
+  <sprite n="Doe_Attack 1_01_ 0" x="230" y="94" w="26" h="70" pX="0.5" pY="0.5" oX="54" oY="29" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_02_ 0" x="94" y="193" w="26" h="66" pX="0.5" pY="0.5" oX="58" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_03_ 0" x="450" y="465" w="22" h="85" pX="0.5" pY="0.5" oX="58" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_04_ 1" x="450" y="550" w="84" h="49" pX="0.5" pY="0.5" oX="33" oY="46" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_05_ 1" x="929" y="629" w="74" h="68" pX="0.5" pY="0.5" oX="49" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_06_ 1" x="786" y="712" w="78" h="51" pX="0.5" pY="0.5" oX="13" oY="45" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_07_ 2" x="205" y="466" w="86" h="52" pX="0.5" pY="0.5" oX="22" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_08_ 2" x="796" y="893" w="75" h="72" pX="0.5" pY="0.5" oX="20" oY="18" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_09_ 2" x="385" y="844" w="78" h="49" pX="0.5" pY="0.5" oX="40" oY="33" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_10_ 3" x="231" y="0" w="25" h="94" pX="0.5" pY="0.5" oX="54" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_11_ 3" x="30" y="105" w="23" h="98" pX="0.5" pY="0.5" oX="56" oY="14" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_12_ 3" x="694" y="976" w="22" h="72" pX="0.5" pY="0.5" oX="54" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_13_ 4" x="1080" y="305" w="65" h="62" pX="0.5" pY="0.5" oX="32" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_14_ 4" x="1071" y="735" w="52" h="65" pX="0.5" pY="0.5" oX="44" oY="22" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_15_ 4" x="0" y="900" w="63" h="76" pX="0.5" pY="0.5" oX="21" oY="31" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_16_ 5" x="792" y="0" w="72" h="79" pX="0.5" pY="0.5" oX="42" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_17_ 5" x="461" y="0" w="58" h="87" pX="0.5" pY="0.5" oX="50" oY="14" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_18_ 5" x="743" y="1102" w="61" h="64" pX="0.5" pY="0.5" oX="18" oY="34" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_19_ 6" x="463" y="872" w="76" h="56" pX="0.5" pY="0.5" oX="26" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_20_ 6" x="804" y="1102" w="59" h="64" pX="0.5" pY="0.5" oX="38" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_21_ 6" x="871" y="893" w="60" h="74" pX="0.5" pY="0.5" oX="50" oY="31" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_22_ 7" x="321" y="465" w="68" h="87" pX="0.5" pY="0.5" oX="43" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_23_ 7" x="287" y="0" w="54" h="91" pX="0.5" pY="0.5" oX="45" oY="10" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 1_24_ 7" x="1150" y="0" w="63" h="60" pX="0.5" pY="0.5" oX="49" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_01_ 0" x="230" y="94" w="26" h="70" pX="0.5" pY="0.5" oX="54" oY="29" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_02_ 0" x="986" y="440" w="26" h="71" pX="0.5" pY="0.5" oX="54" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_03_ 0" x="986" y="367" w="26" h="73" pX="0.5" pY="0.5" oX="54" oY="30" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_04_ 1" x="568" y="170" w="84" h="49" pX="0.5" pY="0.5" oX="21" oY="46" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_05_ 1" x="864" y="57" w="77" h="49" pX="0.5" pY="0.5" oX="39" oY="46" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_06_ 1" x="562" y="401" w="83" h="45" pX="0.5" pY="0.5" oX="21" oY="50" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_07_ 2" x="87" y="469" w="87" h="52" pX="0.5" pY="0.5" oX="24" oY="47" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_08_ 2" x="578" y="736" w="79" h="52" pX="0.5" pY="0.5" oX="14" oY="47" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_09_ 2" x="0" y="552" w="85" h="48" pX="0.5" pY="0.5" oX="25" oY="51" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_10_ 3" x="231" y="0" w="25" h="94" pX="0.5" pY="0.5" oX="54" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_11_ 3" x="568" y="86" w="25" h="84" pX="0.5" pY="0.5" oX="54" oY="34" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_12_ 3" x="405" y="114" w="25" h="88" pX="0.5" pY="0.5" oX="54" oY="26" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_13_ 4" x="1037" y="490" w="65" h="62" pX="0.5" pY="0.5" oX="27" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_14_ 4" x="1079" y="1081" w="58" h="63" pX="0.5" pY="0.5" oX="40" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_15_ 4" x="1082" y="118" w="65" h="60" pX="0.5" pY="0.5" oX="26" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_16_ 5" x="714" y="722" w="72" h="79" pX="0.5" pY="0.5" oX="30" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_17_ 5" x="472" y="973" w="64" h="71" pX="0.5" pY="0.5" oX="42" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_18_ 5" x="941" y="0" w="72" h="75" pX="0.5" pY="0.5" oX="30" oY="31" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_19_ 6" x="463" y="872" w="76" h="56" pX="0.5" pY="0.5" oX="26" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_20_ 6" x="817" y="1015" w="67" h="57" pX="0.5" pY="0.5" oX="23" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_21_ 6" x="720" y="873" w="76" h="58" pX="0.5" pY="0.5" oX="26" oY="45" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_22_ 7" x="409" y="378" w="68" h="87" pX="0.5" pY="0.5" oX="37" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_23_ 7" x="785" y="159" w="61" h="78" pX="0.5" pY="0.5" oX="31" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Attack 2_24_ 7" x="657" y="0" w="68" h="82" pX="0.5" pY="0.5" oX="37" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_01_ 0" x="649" y="894" w="27" h="76" pX="0.5" pY="0.5" oX="51" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_02_ 0" x="676" y="894" w="27" h="76" pX="0.5" pY="0.5" oX="51" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_03_ 0" x="864" y="708" w="27" h="76" pX="0.5" pY="0.5" oX="51" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_04_ 1" x="445" y="928" w="73" h="45" pX="0.5" pY="0.5" oX="25" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_05_ 1" x="367" y="552" w="73" h="45" pX="0.5" pY="0.5" oX="25" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_06_ 1" x="703" y="931" w="74" h="45" pX="0.5" pY="0.5" oX="24" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_07_ 2" x="536" y="971" w="71" h="47" pX="0.5" pY="0.5" oX="34" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_08_ 2" x="622" y="970" w="72" h="47" pX="0.5" pY="0.5" oX="33" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_09_ 2" x="237" y="974" w="72" h="46" pX="0.5" pY="0.5" oX="33" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_10_ 3" x="1034" y="597" w="26" h="63" pX="0.5" pY="0.5" oX="52" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_11_ 3" x="1128" y="487" w="26" h="63" pX="0.5" pY="0.5" oX="52" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_12_ 3" x="1034" y="660" w="26" h="63" pX="0.5" pY="0.5" oX="52" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_13_ 4" x="189" y="1048" w="61" h="67" pX="0.5" pY="0.5" oX="30" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_14_ 4" x="250" y="1048" w="61" h="67" pX="0.5" pY="0.5" oX="30" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_15_ 4" x="372" y="1048" w="63" h="67" pX="0.5" pY="0.5" oX="29" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_16_ 5" x="1142" y="367" w="61" h="54" pX="0.5" pY="0.5" oX="30" oY="49" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_17_ 5" x="412" y="682" w="61" h="54" pX="0.5" pY="0.5" oX="30" oY="49" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_18_ 5" x="1149" y="550" w="62" h="55" pX="0.5" pY="0.5" oX="30" oY="48" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_19_ 6" x="558" y="1048" w="59" h="67" pX="0.5" pY="0.5" oX="40" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_20_ 6" x="617" y="1048" w="60" h="67" pX="0.5" pY="0.5" oX="40" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_21_ 6" x="1012" y="422" w="61" h="68" pX="0.5" pY="0.5" oX="39" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_22_ 7" x="120" y="1174" w="59" h="53" pX="0.5" pY="0.5" oX="40" oY="49" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_23_ 7" x="179" y="1174" w="59" h="53" pX="0.5" pY="0.5" oX="40" oY="49" oW="128" oH="128"/>
+  <sprite n="Doe_Behavior_24_ 7" x="1146" y="280" w="61" h="54" pX="0.5" pY="0.5" oX="39" oY="48" oW="128" oH="128"/>
+  <sprite n="Doe_Block_01_ 0" x="941" y="148" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Block_02_ 0" x="909" y="781" w="29" h="73" pX="0.5" pY="0.5" oX="52" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Block_03_ 0" x="881" y="784" w="28" h="73" pX="0.5" pY="0.5" oX="52" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Block_04_ 1" x="864" y="106" w="77" h="56" pX="0.5" pY="0.5" oX="20" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Block_05_ 1" x="385" y="791" w="76" h="51" pX="0.5" pY="0.5" oX="28" oY="48" oW="128" oH="128"/>
+  <sprite n="Doe_Block_06_ 1" x="289" y="552" w="78" h="42" pX="0.5" pY="0.5" oX="32" oY="56" oW="128" oH="128"/>
+  <sprite n="Doe_Block_07_ 2" x="463" y="815" w="78" h="57" pX="0.5" pY="0.5" oX="33" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Block_08_ 2" x="541" y="844" w="77" h="51" pX="0.5" pY="0.5" oX="27" oY="48" oW="128" oH="128"/>
+  <sprite n="Doe_Block_09_ 2" x="786" y="401" w="78" h="43" pX="0.5" pY="0.5" oX="21" oY="55" oW="128" oH="128"/>
+  <sprite n="Doe_Block_10_ 3" x="318" y="167" w="30" h="88" pX="0.5" pY="0.5" oX="51" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Block_11_ 3" x="623" y="84" w="29" h="81" pX="0.5" pY="0.5" oX="51" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Block_12_ 3" x="941" y="440" w="28" h="73" pX="0.5" pY="0.5" oX="51" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Block_13_ 4" x="857" y="1166" w="59" h="59" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Block_14_ 4" x="985" y="1112" w="63" h="61" pX="0.5" pY="0.5" oX="32" oY="35" oW="128" oH="128"/>
+  <sprite n="Doe_Block_15_ 4" x="1081" y="241" w="65" h="64" pX="0.5" pY="0.5" oX="35" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Block_16_ 5" x="593" y="219" w="59" h="83" pX="0.5" pY="0.5" oX="32" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Block_17_ 5" x="190" y="898" w="62" h="76" pX="0.5" pY="0.5" oX="33" oY="30" oW="128" oH="128"/>
+  <sprite n="Doe_Block_18_ 5" x="950" y="1046" w="65" h="66" pX="0.5" pY="0.5" oX="35" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Block_19_ 6" x="559" y="1115" w="61" h="59" pX="0.5" pY="0.5" oX="40" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Block_20_ 6" x="921" y="1112" w="64" h="61" pX="0.5" pY="0.5" oX="36" oY="35" oW="128" oH="128"/>
+  <sprite n="Doe_Block_21_ 6" x="1079" y="891" w="65" h="64" pX="0.5" pY="0.5" oX="31" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Block_22_ 7" x="656" y="816" w="64" h="78" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Block_23_ 7" x="379" y="969" w="63" h="72" pX="0.5" pY="0.5" oX="36" oY="30" oW="128" oH="128"/>
+  <sprite n="Doe_Block_24_ 7" x="1079" y="955" w="65" h="63" pX="0.5" pY="0.5" oX="31" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_01_ 0" x="1005" y="690" w="29" h="68" pX="0.5" pY="0.5" oX="52" oY="30" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_02_ 0" x="986" y="554" w="29" h="68" pX="0.5" pY="0.5" oX="52" oY="30" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_03_ 0" x="1003" y="959" w="29" h="68" pX="0.5" pY="0.5" oX="52" oY="30" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_04_ 1" x="864" y="388" w="77" h="56" pX="0.5" pY="0.5" oX="25" oY="43" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_05_ 1" x="864" y="444" w="77" h="55" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_06_ 1" x="864" y="499" w="77" h="55" pX="0.5" pY="0.5" oX="25" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_07_ 2" x="578" y="788" w="78" h="56" pX="0.5" pY="0.5" oX="27" oY="43" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_08_ 2" x="64" y="742" w="79" h="55" pX="0.5" pY="0.5" oX="27" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_09_ 2" x="382" y="736" w="79" h="55" pX="0.5" pY="0.5" oX="27" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_10_ 3" x="593" y="86" w="30" h="84" pX="0.5" pY="0.5" oX="51" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_11_ 3" x="155" y="599" w="30" h="84" pX="0.5" pY="0.5" oX="51" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_12_ 3" x="185" y="599" w="30" h="84" pX="0.5" pY="0.5" oX="51" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_13_ 4" x="1080" y="367" w="62" h="55" pX="0.5" pY="0.5" oX="34" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_14_ 4" x="1149" y="715" w="62" h="55" pX="0.5" pY="0.5" oX="34" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_15_ 4" x="1148" y="60" w="62" h="55" pX="0.5" pY="0.5" oX="34" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_16_ 5" x="719" y="322" w="59" h="80" pX="0.5" pY="0.5" oX="35" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_17_ 5" x="722" y="242" w="59" h="80" pX="0.5" pY="0.5" oX="35" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_18_ 5" x="726" y="402" w="60" h="80" pX="0.5" pY="0.5" oX="34" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_19_ 6" x="1149" y="770" w="62" h="55" pX="0.5" pY="0.5" oX="36" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_20_ 6" x="1149" y="605" w="62" h="55" pX="0.5" pY="0.5" oX="36" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_21_ 6" x="1149" y="660" w="62" h="55" pX="0.5" pY="0.5" oX="36" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_22_ 7" x="864" y="554" w="64" h="77" pX="0.5" pY="0.5" oX="34" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_23_ 7" x="864" y="631" w="65" h="77" pX="0.5" pY="0.5" oX="34" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Critical HP_24_ 7" x="379" y="893" w="66" h="76" pX="0.5" pY="0.5" oX="33" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Dead_01_ 0" x="1210" y="60" w="55" h="56" pX="0.5" pY="0.5" oX="39" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Dead_02_ 1" x="165" y="974" w="72" h="46" pX="0.5" pY="0.5" oX="33" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Dead_03_ 2" x="931" y="911" w="73" h="48" pX="0.5" pY="0.5" oX="23" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Dead_04_ 3" x="1135" y="825" w="54" h="61" pX="0.5" pY="0.5" oX="35" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Dead_05_ 4" x="863" y="1102" w="58" h="64" pX="0.5" pY="0.5" oX="47" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Dead_06_ 5" x="210" y="336" w="84" h="41" pX="0.5" pY="0.5" oX="23" oY="61" oW="128" oH="128"/>
+  <sprite n="Doe_Dead_07_ 6" x="477" y="401" w="85" h="46" pX="0.5" pY="0.5" oX="21" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Dead_08_ 7" x="1013" y="128" w="57" h="69" pX="0.5" pY="0.5" oX="24" oY="35" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_01_ 0" x="941" y="148" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_02_ 0" x="941" y="367" w="34" h="73" pX="0.5" pY="0.5" oX="57" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_03_ 0" x="941" y="75" w="42" h="73" pX="0.5" pY="0.5" oX="58" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_04_ 1" x="864" y="106" w="77" h="56" pX="0.5" pY="0.5" oX="20" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_05_ 1" x="786" y="539" w="78" h="48" pX="0.5" pY="0.5" oX="26" oY="51" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_06_ 1" x="864" y="225" w="77" h="46" pX="0.5" pY="0.5" oX="34" oY="62" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_07_ 2" x="463" y="815" w="78" h="57" pX="0.5" pY="0.5" oX="33" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_08_ 2" x="786" y="587" w="78" h="61" pX="0.5" pY="0.5" oX="27" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_09_ 2" x="864" y="162" w="77" h="63" pX="0.5" pY="0.5" oX="20" oY="33" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_10_ 3" x="318" y="167" w="30" h="88" pX="0.5" pY="0.5" oX="51" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_11_ 3" x="754" y="81" w="29" h="81" pX="0.5" pY="0.5" oX="42" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_12_ 3" x="657" y="736" w="38" h="78" pX="0.5" pY="0.5" oX="32" oY="33" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_13_ 4" x="857" y="1166" w="59" h="59" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_14_ 4" x="1154" y="483" w="55" h="61" pX="0.5" pY="0.5" oX="45" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_15_ 4" x="1144" y="886" w="54" h="61" pX="0.5" pY="0.5" oX="56" oY="39" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_16_ 5" x="593" y="219" w="59" h="83" pX="0.5" pY="0.5" oX="32" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_17_ 5" x="0" y="976" w="63" h="72" pX="0.5" pY="0.5" oX="28" oY="35" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_18_ 5" x="1070" y="826" w="65" h="65" pX="0.5" pY="0.5" oX="26" oY="48" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_19_ 6" x="559" y="1115" w="61" h="59" pX="0.5" pY="0.5" oX="40" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_20_ 6" x="186" y="1115" w="64" h="58" pX="0.5" pY="0.5" oX="40" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_21_ 6" x="677" y="1048" w="66" h="63" pX="0.5" pY="0.5" oX="40" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_22_ 7" x="656" y="816" w="64" h="78" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_23_ 7" x="461" y="736" w="58" h="79" pX="0.5" pY="0.5" oX="30" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Evade_24_ 7" x="798" y="816" w="53" h="77" pX="0.5" pY="0.5" oX="21" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_01_ 0" x="941" y="148" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_02_ 0" x="120" y="340" w="29" h="70" pX="0.5" pY="0.5" oX="54" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_03_ 0" x="339" y="972" w="29" h="68" pX="0.5" pY="0.5" oX="53" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_04_ 1" x="864" y="106" w="77" h="56" pX="0.5" pY="0.5" oX="20" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_05_ 1" x="81" y="683" w="81" h="58" pX="0.5" pY="0.5" oX="24" oY="39" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_06_ 1" x="864" y="271" w="77" h="60" pX="0.5" pY="0.5" oX="35" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_07_ 2" x="463" y="815" w="78" h="57" pX="0.5" pY="0.5" oX="33" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_08_ 2" x="556" y="614" w="82" h="61" pX="0.5" pY="0.5" oX="26" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_09_ 2" x="634" y="675" w="80" h="61" pX="0.5" pY="0.5" oX="19" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_10_ 3" x="318" y="167" w="30" h="88" pX="0.5" pY="0.5" oX="51" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_11_ 3" x="388" y="290" w="30" h="88" pX="0.5" pY="0.5" oX="50" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_12_ 3" x="227" y="164" w="29" h="92" pX="0.5" pY="0.5" oX="51" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_13_ 4" x="857" y="1166" w="59" h="59" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_14_ 4" x="1137" y="1126" w="56" h="58" pX="0.5" pY="0.5" oX="40" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_15_ 4" x="1213" y="0" w="52" h="58" pX="0.5" pY="0.5" oX="49" oY="33" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_16_ 5" x="593" y="219" w="59" h="83" pX="0.5" pY="0.5" oX="32" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_17_ 5" x="723" y="162" w="62" h="80" pX="0.5" pY="0.5" oX="34" oY="26" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_18_ 5" x="127" y="898" w="63" h="76" pX="0.5" pY="0.5" oX="39" oY="30" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_19_ 6" x="559" y="1115" w="61" h="59" pX="0.5" pY="0.5" oX="40" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_20_ 6" x="677" y="1111" w="64" h="57" pX="0.5" pY="0.5" oX="34" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_21_ 6" x="884" y="1046" w="66" h="56" pX="0.5" pY="0.5" oX="29" oY="33" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_22_ 7" x="656" y="816" w="64" h="78" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_23_ 7" x="928" y="554" w="58" h="75" pX="0.5" pY="0.5" oX="35" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Get Hit_24_ 7" x="668" y="164" w="54" h="82" pX="0.5" pY="0.5" oX="30" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_01_ 0" x="941" y="148" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_02_ 0" x="971" y="294" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_03_ 0" x="941" y="294" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_04_ 1" x="864" y="106" w="77" h="56" pX="0.5" pY="0.5" oX="20" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_05_ 1" x="864" y="331" w="77" h="57" pX="0.5" pY="0.5" oX="20" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_06_ 1" x="864" y="0" w="77" h="57" pX="0.5" pY="0.5" oX="20" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_07_ 2" x="463" y="815" w="78" h="57" pX="0.5" pY="0.5" oX="33" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_08_ 2" x="720" y="816" w="78" h="57" pX="0.5" pY="0.5" oX="33" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_09_ 2" x="785" y="482" w="79" h="57" pX="0.5" pY="0.5" oX="33" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_10_ 3" x="318" y="167" w="30" h="88" pX="0.5" pY="0.5" oX="51" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_11_ 3" x="291" y="378" w="30" h="88" pX="0.5" pY="0.5" oX="51" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_12_ 3" x="348" y="167" w="30" h="88" pX="0.5" pY="0.5" oX="51" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_13_ 4" x="857" y="1166" w="59" h="59" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_14_ 4" x="739" y="1168" w="59" h="59" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_15_ 4" x="798" y="1166" w="59" h="59" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_16_ 5" x="593" y="219" w="59" h="83" pX="0.5" pY="0.5" oX="32" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_17_ 5" x="272" y="599" w="59" h="83" pX="0.5" pY="0.5" oX="32" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_18_ 5" x="593" y="302" w="59" h="83" pX="0.5" pY="0.5" oX="32" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_19_ 6" x="559" y="1115" w="61" h="59" pX="0.5" pY="0.5" oX="40" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_20_ 6" x="437" y="1115" w="61" h="59" pX="0.5" pY="0.5" oX="40" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_21_ 6" x="376" y="1115" w="61" h="59" pX="0.5" pY="0.5" oX="40" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_22_ 7" x="193" y="818" w="64" h="78" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_23_ 7" x="129" y="820" w="64" h="78" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Idle_24_ 7" x="0" y="822" w="64" h="78" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_01_ 0" x="1211" y="508" w="51" h="46" pX="0.5" pY="0.5" oX="41" oY="53" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_02_ 0" x="1211" y="462" w="51" h="46" pX="0.5" pY="0.5" oX="41" oY="53" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_03_ 0" x="517" y="173" w="51" h="46" pX="0.5" pY="0.5" oX="41" oY="53" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_04_ 1" x="1207" y="226" w="58" h="46" pX="0.5" pY="0.5" oX="37" oY="52" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_05_ 1" x="1207" y="272" w="58" h="46" pX="0.5" pY="0.5" oX="37" oY="52" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_06_ 1" x="1204" y="825" w="58" h="46" pX="0.5" pY="0.5" oX="37" oY="52" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_07_ 2" x="321" y="423" w="58" h="42" pX="0.5" pY="0.5" oX="37" oY="56" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_08_ 2" x="1106" y="1184" w="58" h="42" pX="0.5" pY="0.5" oX="37" oY="56" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_09_ 2" x="1207" y="318" w="58" h="42" pX="0.5" pY="0.5" oX="37" oY="56" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_10_ 3" x="1211" y="411" w="52" h="51" pX="0.5" pY="0.5" oX="47" oY="48" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_11_ 3" x="620" y="1115" w="52" h="51" pX="0.5" pY="0.5" oX="47" oY="48" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_12_ 3" x="1211" y="360" w="52" h="51" pX="0.5" pY="0.5" oX="47" oY="48" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_13_ 4" x="1013" y="94" w="69" h="34" pX="0.5" pY="0.5" oX="26" oY="56" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_14_ 4" x="1012" y="260" w="69" h="34" pX="0.5" pY="0.5" oX="26" oY="56" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_15_ 4" x="786" y="444" w="69" h="35" pX="0.5" pY="0.5" oX="26" oY="55" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_16_ 5" x="479" y="1174" w="40" h="51" pX="0.5" pY="0.5" oX="52" oY="52" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_17_ 5" x="519" y="1174" w="40" h="51" pX="0.5" pY="0.5" oX="52" oY="52" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_18_ 5" x="559" y="1174" w="40" h="51" pX="0.5" pY="0.5" oX="52" oY="52" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_19_ 6" x="438" y="1174" w="41" h="54" pX="0.5" pY="0.5" oX="42" oY="47" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_20_ 6" x="397" y="1174" w="41" h="54" pX="0.5" pY="0.5" oX="42" oY="47" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_21_ 6" x="356" y="1174" w="41" h="54" pX="0.5" pY="0.5" oX="42" oY="47" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_22_ 7" x="969" y="511" w="68" h="43" pX="0.5" pY="0.5" oX="34" oY="52" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_23_ 7" x="1015" y="554" w="68" h="43" pX="0.5" pY="0.5" oX="34" oY="52" oW="128" oH="128"/>
+  <sprite n="Doe_Rest_24_ 7" x="888" y="1003" w="68" h="43" pX="0.5" pY="0.5" oX="34" oY="52" oW="128" oH="128"/>
+  <sprite n="Doe_Run_01_ 0" x="726" y="482" w="29" h="80" pX="0.5" pY="0.5" oX="52" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Run_02_ 0" x="697" y="408" w="29" h="80" pX="0.5" pY="0.5" oX="52" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Run_03_ 0" x="668" y="408" w="29" h="80" pX="0.5" pY="0.5" oX="52" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Run_04_ 0" x="592" y="895" w="30" h="76" pX="0.5" pY="0.5" oX="52" oY="26" oW="128" oH="128"/>
+  <sprite n="Doe_Run_05_ 0" x="851" y="816" w="30" h="77" pX="0.5" pY="0.5" oX="52" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Run_06_ 0" x="755" y="482" w="30" h="79" pX="0.5" pY="0.5" oX="52" oY="26" oW="128" oH="128"/>
+  <sprite n="Doe_Run_07_ 0" x="143" y="741" w="29" h="79" pX="0.5" pY="0.5" oX="52" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Run_08_ 0" x="725" y="81" w="29" h="81" pX="0.5" pY="0.5" oX="52" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Run_09_ 1" x="0" y="53" w="103" h="52" pX="0.5" pY="0.5" oX="15" oY="45" oW="128" oH="128"/>
+  <sprite n="Doe_Run_10_ 1" x="120" y="218" w="92" h="53" pX="0.5" pY="0.5" oX="15" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Run_11_ 1" x="0" y="498" w="87" h="54" pX="0.5" pY="0.5" oX="15" oY="43" oW="128" oH="128"/>
+  <sprite n="Doe_Run_12_ 1" x="0" y="353" w="88" h="57" pX="0.5" pY="0.5" oX="15" oY="39" oW="128" oH="128"/>
+  <sprite n="Doe_Run_13_ 1" x="64" y="410" w="88" h="59" pX="0.5" pY="0.5" oX="16" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Run_14_ 1" x="419" y="231" w="87" h="61" pX="0.5" pY="0.5" oX="15" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Run_15_ 1" x="430" y="174" w="87" h="57" pX="0.5" pY="0.5" oX="15" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Run_16_ 1" x="133" y="111" w="95" h="53" pX="0.5" pY="0.5" oX="15" oY="45" oW="128" oH="128"/>
+  <sprite n="Doe_Run_17_ 2" x="0" y="0" w="104" h="53" pX="0.5" pY="0.5" oX="12" oY="45" oW="128" oH="128"/>
+  <sprite n="Doe_Run_18_ 2" x="133" y="164" w="94" h="54" pX="0.5" pY="0.5" oX="22" oY="44" oW="128" oH="128"/>
+  <sprite n="Doe_Run_19_ 2" x="317" y="114" w="88" h="53" pX="0.5" pY="0.5" oX="29" oY="43" oW="128" oH="128"/>
+  <sprite n="Doe_Run_20_ 2" x="341" y="0" w="89" h="59" pX="0.5" pY="0.5" oX="28" oY="39" oW="128" oH="128"/>
+  <sprite n="Doe_Run_21_ 2" x="120" y="278" w="90" h="62" pX="0.5" pY="0.5" oX="27" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Run_22_ 2" x="300" y="273" w="88" h="63" pX="0.5" pY="0.5" oX="29" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Run_23_ 2" x="210" y="278" w="90" h="58" pX="0.5" pY="0.5" oX="27" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Run_24_ 2" x="134" y="0" w="97" h="52" pX="0.5" pY="0.5" oX="19" oY="46" oW="128" oH="128"/>
+  <sprite n="Doe_Run_25_ 3" x="0" y="105" w="30" h="98" pX="0.5" pY="0.5" oX="51" oY="22" oW="128" oH="128"/>
+  <sprite n="Doe_Run_26_ 3" x="53" y="105" w="30" h="94" pX="0.5" pY="0.5" oX="51" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Run_27_ 3" x="291" y="466" w="30" h="86" pX="0.5" pY="0.5" oX="51" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Run_28_ 3" x="389" y="465" w="31" h="87" pX="0.5" pY="0.5" oX="51" oY="18" oW="128" oH="128"/>
+  <sprite n="Doe_Run_29_ 3" x="388" y="202" w="31" h="88" pX="0.5" pY="0.5" oX="51" oY="17" oW="128" oH="128"/>
+  <sprite n="Doe_Run_30_ 3" x="256" y="186" w="31" h="92" pX="0.5" pY="0.5" oX="51" oY="16" oW="128" oH="128"/>
+  <sprite n="Doe_Run_31_ 3" x="256" y="93" w="30" h="93" pX="0.5" pY="0.5" oX="51" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Run_32_ 3" x="103" y="98" w="30" h="95" pX="0.5" pY="0.5" oX="51" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Run_33_ 4" x="93" y="976" w="72" h="65" pX="0.5" pY="0.5" oX="23" oY="35" oW="128" oH="128"/>
+  <sprite n="Doe_Run_34_ 4" x="122" y="1048" w="67" h="64" pX="0.5" pY="0.5" oX="24" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_35_ 4" x="1079" y="1018" w="65" h="63" pX="0.5" pY="0.5" oX="24" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_36_ 4" x="1071" y="612" w="65" h="60" pX="0.5" pY="0.5" oX="24" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Run_37_ 4" x="122" y="1112" w="64" h="61" pX="0.5" pY="0.5" oX="25" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_38_ 4" x="0" y="1048" w="63" h="67" pX="0.5" pY="0.5" oX="25" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_39_ 4" x="1015" y="1027" w="64" h="66" pX="0.5" pY="0.5" oX="24" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_40_ 4" x="1073" y="422" w="64" h="65" pX="0.5" pY="0.5" oX="24" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_41_ 5" x="519" y="0" w="80" h="86" pX="0.5" pY="0.5" oX="30" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Run_42_ 5" x="0" y="600" w="71" h="84" pX="0.5" pY="0.5" oX="30" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Run_43_ 5" x="652" y="246" w="67" h="81" pX="0.5" pY="0.5" oX="30" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Run_44_ 5" x="172" y="739" w="64" h="79" pX="0.5" pY="0.5" oX="31" oY="22" oW="128" oH="128"/>
+  <sprite n="Doe_Run_45_ 5" x="783" y="81" w="64" h="78" pX="0.5" pY="0.5" oX="31" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Run_46_ 5" x="781" y="242" w="63" h="79" pX="0.5" pY="0.5" oX="31" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Run_47_ 5" x="778" y="322" w="69" h="79" pX="0.5" pY="0.5" oX="30" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Run_48_ 5" x="593" y="446" w="75" h="82" pX="0.5" pY="0.5" oX="30" oY="26" oW="128" oH="128"/>
+  <sprite n="Doe_Run_49_ 6" x="87" y="521" w="84" h="64" pX="0.5" pY="0.5" oX="19" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_50_ 6" x="931" y="697" w="74" h="64" pX="0.5" pY="0.5" oX="28" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_51_ 6" x="1012" y="359" w="68" h="63" pX="0.5" pY="0.5" oX="33" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_52_ 6" x="1083" y="552" w="65" h="60" pX="0.5" pY="0.5" oX="36" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Run_53_ 6" x="1081" y="178" w="65" h="63" pX="0.5" pY="0.5" oX="36" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_54_ 6" x="1012" y="294" w="68" h="65" pX="0.5" pY="0.5" oX="34" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_55_ 6" x="745" y="976" w="72" h="64" pX="0.5" pY="0.5" oX="29" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_56_ 6" x="786" y="648" w="78" h="64" pX="0.5" pY="0.5" oX="24" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Run_57_ 7" x="216" y="378" w="75" h="88" pX="0.5" pY="0.5" oX="28" oY="26" oW="128" oH="128"/>
+  <sprite n="Doe_Run_58_ 7" x="498" y="87" w="70" h="86" pX="0.5" pY="0.5" oX="32" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Run_59_ 7" x="236" y="739" w="67" h="79" pX="0.5" pY="0.5" oX="35" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Run_60_ 7" x="314" y="896" w="65" h="76" pX="0.5" pY="0.5" oX="36" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Run_61_ 7" x="64" y="820" w="65" h="78" pX="0.5" pY="0.5" oX="36" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Run_62_ 7" x="152" y="378" w="64" h="88" pX="0.5" pY="0.5" oX="37" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Run_63_ 7" x="0" y="410" w="64" h="88" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Run_64_ 7" x="430" y="87" w="68" h="87" pX="0.5" pY="0.5" oX="34" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_01_ 0" x="941" y="148" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_02_ 0" x="983" y="75" w="30" h="73" pX="0.5" pY="0.5" oX="53" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_03_ 0" x="1003" y="622" w="29" h="68" pX="0.5" pY="0.5" oX="55" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_04_ 1" x="864" y="106" w="77" h="56" pX="0.5" pY="0.5" oX="20" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_05_ 1" x="243" y="682" w="80" h="57" pX="0.5" pY="0.5" oX="18" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_06_ 1" x="786" y="763" w="78" h="53" pX="0.5" pY="0.5" oX="21" oY="45" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_07_ 2" x="463" y="815" w="78" h="57" pX="0.5" pY="0.5" oX="33" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_08_ 2" x="0" y="684" w="81" h="58" pX="0.5" pY="0.5" oX="33" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_09_ 2" x="554" y="675" w="80" h="59" pX="0.5" pY="0.5" oX="32" oY="39" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_10_ 3" x="318" y="167" w="30" h="88" pX="0.5" pY="0.5" oX="51" oY="20" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_11_ 3" x="379" y="378" w="30" h="87" pX="0.5" pY="0.5" oX="50" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_12_ 3" x="93" y="260" w="27" h="92" pX="0.5" pY="0.5" oX="49" oY="16" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_13_ 4" x="857" y="1166" w="59" h="59" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_14_ 4" x="1147" y="169" w="61" h="57" pX="0.5" pY="0.5" oX="31" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_15_ 4" x="620" y="1168" w="60" h="56" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_16_ 5" x="593" y="219" w="59" h="83" pX="0.5" pY="0.5" oX="32" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_17_ 5" x="519" y="736" w="59" h="79" pX="0.5" pY="0.5" oX="33" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_18_ 5" x="215" y="599" w="57" h="83" pX="0.5" pY="0.5" oX="35" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_19_ 6" x="559" y="1115" w="61" h="59" pX="0.5" pY="0.5" oX="40" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_20_ 6" x="498" y="1115" w="61" h="59" pX="0.5" pY="0.5" oX="39" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_21_ 6" x="680" y="1168" w="59" h="57" pX="0.5" pY="0.5" oX="39" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_22_ 7" x="193" y="818" w="64" h="78" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_23_ 7" x="257" y="818" w="64" h="78" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Use Skill_24_ 7" x="321" y="815" w="64" h="78" pX="0.5" pY="0.5" oX="37" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_01_ 0" x="309" y="973" w="30" h="72" pX="0.5" pY="0.5" oX="51" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_02_ 0" x="971" y="221" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_03_ 0" x="716" y="976" w="29" h="72" pX="0.5" pY="0.5" oX="52" oY="29" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_04_ 0" x="442" y="973" w="30" h="71" pX="0.5" pY="0.5" oX="52" oY="29" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_05_ 0" x="941" y="221" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_06_ 0" x="971" y="148" w="30" h="73" pX="0.5" pY="0.5" oX="52" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_07_ 0" x="63" y="976" w="30" h="72" pX="0.5" pY="0.5" oX="53" oY="29" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_08_ 0" x="891" y="708" w="30" h="73" pX="0.5" pY="0.5" oX="53" oY="29" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_09_ 1" x="331" y="657" w="81" h="57" pX="0.5" pY="0.5" oX="20" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_10_ 1" x="0" y="203" w="94" h="57" pX="0.5" pY="0.5" oX="19" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_11_ 1" x="205" y="518" w="84" h="57" pX="0.5" pY="0.5" oX="19" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_12_ 1" x="331" y="599" w="83" h="58" pX="0.5" pY="0.5" oX="19" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_13_ 1" x="473" y="599" w="83" h="58" pX="0.5" pY="0.5" oX="18" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_14_ 1" x="418" y="292" w="87" h="59" pX="0.5" pY="0.5" oX="18" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_15_ 1" x="638" y="609" w="81" h="57" pX="0.5" pY="0.5" oX="18" oY="43" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_16_ 1" x="303" y="739" w="79" h="58" pX="0.5" pY="0.5" oX="19" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_17_ 2" x="71" y="600" w="84" h="58" pX="0.5" pY="0.5" oX="27" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_18_ 2" x="134" y="52" w="96" h="59" pX="0.5" pY="0.5" oX="16" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_19_ 2" x="506" y="231" w="86" h="58" pX="0.5" pY="0.5" oX="27" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_20_ 2" x="506" y="289" w="86" h="56" pX="0.5" pY="0.5" oX="27" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_21_ 2" x="505" y="345" w="85" h="56" pX="0.5" pY="0.5" oX="28" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_22_ 2" x="341" y="59" w="89" h="55" pX="0.5" pY="0.5" oX="24" oY="40" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_23_ 2" x="162" y="683" w="81" h="56" pX="0.5" pY="0.5" oX="32" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_24_ 2" x="473" y="657" w="81" h="56" pX="0.5" pY="0.5" oX="32" oY="41" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_25_ 3" x="0" y="260" w="31" h="93" pX="0.5" pY="0.5" oX="51" oY="19" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_26_ 3" x="104" y="0" w="30" h="98" pX="0.5" pY="0.5" oX="51" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_27_ 3" x="420" y="465" w="30" h="87" pX="0.5" pY="0.5" oX="51" oY="22" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_28_ 3" x="287" y="183" w="31" h="90" pX="0.5" pY="0.5" oX="51" oY="22" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_29_ 3" x="286" y="93" w="31" h="90" pX="0.5" pY="0.5" oX="50" oY="22" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_30_ 3" x="256" y="0" w="31" h="93" pX="0.5" pY="0.5" oX="50" oY="22" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_31_ 3" x="174" y="466" w="31" h="86" pX="0.5" pY="0.5" oX="49" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_32_ 3" x="430" y="0" w="31" h="87" pX="0.5" pY="0.5" oX="49" oY="21" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_33_ 4" x="0" y="1115" w="64" h="59" pX="0.5" pY="0.5" oX="32" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_34_ 4" x="938" y="761" w="73" h="62" pX="0.5" pY="0.5" oX="34" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_35_ 4" x="1083" y="58" w="65" h="60" pX="0.5" pY="0.5" oX="33" oY="33" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_36_ 4" x="64" y="1115" w="58" h="59" pX="0.5" pY="0.5" oX="33" oY="33" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_37_ 4" x="1048" y="1156" w="58" h="59" pX="0.5" pY="0.5" oX="33" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_38_ 4" x="1144" y="947" w="60" h="59" pX="0.5" pY="0.5" oX="33" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_39_ 4" x="1144" y="1006" w="59" h="60" pX="0.5" pY="0.5" oX="34" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_40_ 4" x="1144" y="1066" w="60" h="60" pX="0.5" pY="0.5" oX="34" oY="32" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_41_ 5" x="321" y="336" w="58" h="87" pX="0.5" pY="0.5" oX="33" oY="22" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_42_ 5" x="31" y="260" w="62" h="92" pX="0.5" pY="0.5" oX="34" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_43_ 5" x="719" y="562" w="60" h="80" pX="0.5" pY="0.5" oX="33" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_44_ 5" x="719" y="642" w="64" h="80" pX="0.5" pY="0.5" oX="33" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_45_ 5" x="0" y="742" w="64" h="80" pX="0.5" pY="0.5" oX="32" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_46_ 5" x="657" y="82" w="66" h="82" pX="0.5" pY="0.5" oX="32" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_47_ 5" x="652" y="327" w="63" h="81" pX="0.5" pY="0.5" oX="32" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_48_ 5" x="414" y="599" w="59" h="83" pX="0.5" pY="0.5" oX="32" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_49_ 6" x="314" y="1115" w="62" h="59" pX="0.5" pY="0.5" oX="39" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_50_ 6" x="1084" y="0" w="66" h="58" pX="0.5" pY="0.5" oX="33" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_51_ 6" x="250" y="1115" w="64" h="59" pX="0.5" pY="0.5" oX="35" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_52_ 6" x="745" y="1040" w="67" h="57" pX="0.5" pY="0.5" oX="31" oY="39" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_53_ 6" x="1004" y="893" w="67" h="58" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_54_ 6" x="1012" y="197" w="69" h="63" pX="0.5" pY="0.5" oX="30" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_55_ 6" x="1071" y="672" w="65" h="63" pX="0.5" pY="0.5" oX="36" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_56_ 6" x="1137" y="422" w="61" h="61" pX="0.5" pY="0.5" oX="40" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_57_ 7" x="633" y="528" w="68" h="81" pX="0.5" pY="0.5" oX="33" oY="23" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_58_ 7" x="556" y="531" w="77" h="83" pX="0.5" pY="0.5" oX="22" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_59_ 7" x="725" y="0" w="67" h="81" pX="0.5" pY="0.5" oX="32" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_60_ 7" x="599" y="0" w="58" h="84" pX="0.5" pY="0.5" oX="40" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_61_ 7" x="535" y="447" w="58" h="84" pX="0.5" pY="0.5" oX="40" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_62_ 7" x="472" y="465" w="63" h="85" pX="0.5" pY="0.5" oX="35" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_63_ 7" x="252" y="896" w="62" h="76" pX="0.5" pY="0.5" oX="37" oY="25" oW="128" oH="128"/>
+  <sprite n="Doe_Walk_64_ 7" x="63" y="900" w="64" h="76" pX="0.5" pY="0.5" oX="35" oY="24" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_01_ 0" x="622" y="894" w="27" h="76" pX="0.5" pY="0.5" oX="51" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_02_ 0" x="565" y="895" w="27" h="76" pX="0.5" pY="0.5" oX="52" oY="27" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_03_ 0" x="539" y="895" w="26" h="76" pX="0.5" pY="0.5" oX="54" oY="28" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_04_ 1" x="931" y="866" w="73" h="45" pX="0.5" pY="0.5" oX="25" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_05_ 1" x="931" y="959" w="72" h="44" pX="0.5" pY="0.5" oX="25" oY="55" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_06_ 1" x="938" y="823" w="73" h="43" pX="0.5" pY="0.5" oX="24" oY="56" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_07_ 2" x="1013" y="47" w="70" h="47" pX="0.5" pY="0.5" oX="34" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_08_ 2" x="1013" y="0" w="71" h="47" pX="0.5" pY="0.5" oX="34" oY="54" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_09_ 2" x="817" y="967" w="71" h="48" pX="0.5" pY="0.5" oX="34" oY="53" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_10_ 3" x="1102" y="487" w="26" h="63" pX="0.5" pY="0.5" oX="52" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_11_ 3" x="1123" y="735" w="26" h="63" pX="0.5" pY="0.5" oX="51" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_12_ 3" x="1048" y="1093" w="27" h="63" pX="0.5" pY="0.5" oX="49" oY="42" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_13_ 4" x="311" y="1048" w="61" h="67" pX="0.5" pY="0.5" oX="30" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_14_ 4" x="435" y="1048" w="62" h="67" pX="0.5" pY="0.5" oX="30" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_15_ 4" x="497" y="1048" w="61" h="67" pX="0.5" pY="0.5" oX="31" oY="38" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_16_ 5" x="60" y="1174" w="60" h="54" pX="0.5" pY="0.5" oX="31" oY="49" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_17_ 5" x="1146" y="226" w="61" h="54" pX="0.5" pY="0.5" oX="30" oY="49" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_18_ 5" x="1148" y="115" w="61" h="54" pX="0.5" pY="0.5" oX="29" oY="49" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_19_ 6" x="63" y="1048" w="59" h="67" pX="0.5" pY="0.5" oX="40" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_20_ 6" x="1011" y="826" w="59" h="67" pX="0.5" pY="0.5" oX="41" oY="37" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_21_ 6" x="1011" y="758" w="60" h="68" pX="0.5" pY="0.5" oX="41" oY="36" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_22_ 7" x="297" y="1174" w="59" h="53" pX="0.5" pY="0.5" oX="40" oY="49" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_23_ 7" x="0" y="1174" w="60" h="54" pX="0.5" pY="0.5" oX="39" oY="48" oW="128" oH="128"/>
+  <sprite n="Doe_Woozy_24_ 7" x="238" y="1174" w="59" h="54" pX="0.5" pY="0.5" oX="39" oY="48" oW="128" oH="128"/>
+</TextureAtlas>

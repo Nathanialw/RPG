@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="IridescentSlime1.png" width="1804" height="1747" scale="1" format="RGBA8888">
+  <sprite n="IridescentSlime1_Attack 1_01_ 0" x="74" y="1587" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_02_ 0" x="646" y="1435" w="77" h="59" pX="0.5" pY="0.5" oX="36" oY="23" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_03_ 0" x="259" y="1503" w="77" h="83" pX="0.5" pY="0.5" oX="37" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_04_ 1" x="222" y="381" w="111" h="54" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_05_ 1" x="92" y="1500" w="84" h="69" pX="0.5" pY="0.5" oX="59" oY="34" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_06_ 1" x="0" y="59" w="115" h="56" pX="0.5" pY="0.5" oX="1" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_07_ 2" x="0" y="454" w="111" h="54" pX="0.5" pY="0.5" oX="20" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_08_ 2" x="1220" y="1495" w="83" h="56" pX="0.5" pY="0.5" oX="7" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_09_ 2" x="115" y="0" w="115" h="56" pX="0.5" pY="0.5" oX="34" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_10_ 3" x="1646" y="705" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_11_ 3" x="1494" y="1660" w="77" h="74" pX="0.5" pY="0.5" oX="37" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_12_ 3" x="795" y="1498" w="77" h="82" pX="0.5" pY="0.5" oX="36" oY="24" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_13_ 4" x="0" y="793" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_14_ 4" x="952" y="1430" w="91" h="64" pX="0.5" pY="0.5" oX="48" oY="30" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_15_ 4" x="1111" y="339" w="102" h="69" pX="0.5" pY="0.5" oX="13" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_16_ 5" x="1198" y="660" w="94" h="77" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_17_ 5" x="1415" y="1266" w="91" h="79" pX="0.5" pY="0.5" oX="45" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_18_ 5" x="1055" y="1127" w="97" h="73" pX="0.5" pY="0.5" oX="15" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_19_ 6" x="1196" y="737" w="94" h="79" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_20_ 6" x="1231" y="1431" w="91" h="64" pX="0.5" pY="0.5" oX="14" oY="25" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_21_ 6" x="0" y="1206" w="97" h="74" pX="0.5" pY="0.5" oX="38" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_22_ 7" x="219" y="757" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_23_ 7" x="467" y="1432" w="90" h="71" pX="0.5" pY="0.5" oX="12" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 1_24_ 7" x="1108" y="408" w="102" h="70" pX="0.5" pY="0.5" oX="35" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_01_ 0" x="1507" y="1245" w="77" h="84" pX="0.5" pY="0.5" oX="36" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_02_ 0" x="1104" y="1498" w="82" h="73" pX="0.5" pY="0.5" oX="33" oY="20" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_03_ 0" x="222" y="1667" w="77" h="79" pX="0.5" pY="0.5" oX="36" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_04_ 1" x="0" y="667" w="110" h="59" pX="0.5" pY="0.5" oX="18" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_05_ 1" x="787" y="253" w="109" h="60" pX="0.5" pY="0.5" oX="37" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_06_ 1" x="656" y="754" w="108" h="59" pX="0.5" pY="0.5" oX="0" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_07_ 2" x="677" y="56" w="110" h="57" pX="0.5" pY="0.5" oX="22" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_08_ 2" x="677" y="113" w="110" h="60" pX="0.5" pY="0.5" oX="4" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_09_ 2" x="216" y="825" w="108" h="57" pX="0.5" pY="0.5" oX="42" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_10_ 3" x="1417" y="1665" w="77" h="76" pX="0.5" pY="0.5" oX="37" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_11_ 3" x="1507" y="1497" w="82" h="83" pX="0.5" pY="0.5" oX="35" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_12_ 3" x="597" y="1667" w="77" h="78" pX="0.5" pY="0.5" oX="37" oY="17" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_13_ 4" x="430" y="985" w="107" h="70" pX="0.5" pY="0.5" oX="21" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_14_ 4" x="100" y="1174" w="97" h="63" pX="0.5" pY="0.5" oX="39" oY="29" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_15_ 4" x="751" y="1043" w="106" h="66" pX="0.5" pY="0.5" oX="8" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_16_ 5" x="389" y="1205" w="96" h="72" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_17_ 5" x="1215" y="152" w="95" h="76" pX="0.5" pY="0.5" oX="42" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_18_ 5" x="1175" y="891" w="94" h="73" pX="0.5" pY="0.5" oX="17" oY="25" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_19_ 6" x="848" y="1150" w="96" h="83" pX="0.5" pY="0.5" oX="24" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_20_ 6" x="1152" y="1127" w="94" h="66" pX="0.5" pY="0.5" oX="14" oY="26" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_21_ 6" x="1175" y="1042" w="94" h="78" pX="0.5" pY="0.5" oX="39" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_22_ 7" x="644" y="985" w="107" h="69" pX="0.5" pY="0.5" oX="22" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_23_ 7" x="630" y="1121" w="97" h="80" pX="0.5" pY="0.5" oX="14" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Attack 2_24_ 7" x="968" y="976" w="106" h="72" pX="0.5" pY="0.5" oX="36" oY="28" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_01_ 0" x="884" y="1586" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_02_ 0" x="294" y="1586" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_03_ 0" x="660" y="1586" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_04_ 1" x="226" y="328" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_05_ 1" x="339" y="269" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_06_ 1" x="449" y="373" w="111" h="54" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_07_ 2" x="0" y="347" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_08_ 2" x="111" y="347" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_09_ 2" x="338" y="322" w="111" h="54" pX="0.5" pY="0.5" oX="20" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_10_ 3" x="299" y="1667" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_11_ 3" x="148" y="1667" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_12_ 3" x="74" y="1668" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_13_ 4" x="435" y="784" w="108" h="66" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_14_ 4" x="764" y="774" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_15_ 4" x="655" y="813" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_16_ 5" x="1290" y="771" w="93" h="78" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_17_ 5" x="1269" y="927" w="93" h="78" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_18_ 5" x="0" y="1280" w="94" h="77" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_19_ 6" x="762" y="1357" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_20_ 6" x="374" y="1356" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_21_ 6" x="389" y="1277" w="94" h="79" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_22_ 7" x="896" y="0" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_23_ 7" x="896" y="67" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Behavior_24_ 7" x="324" y="902" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_01_ 0" x="1730" y="157" w="74" h="71" pX="0.5" pY="0.5" oX="39" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_02_ 0" x="1730" y="1046" w="74" h="59" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_03_ 0" x="1729" y="1550" w="75" h="55" pX="0.5" pY="0.5" oX="38" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_04_ 1" x="677" y="173" w="110" h="52" pX="0.5" pY="0.5" oX="20" oY="51" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_05_ 1" x="1105" y="593" w="101" h="57" pX="0.5" pY="0.5" oX="30" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_06_ 1" x="275" y="1435" w="88" h="56" pX="0.5" pY="0.5" oX="45" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_07_ 2" x="0" y="614" w="110" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_08_ 2" x="1097" y="650" w="101" h="58" pX="0.5" pY="0.5" oX="19" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_09_ 2" x="1362" y="1024" w="88" h="58" pX="0.5" pY="0.5" oX="17" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_10_ 3" x="1507" y="905" w="74" h="88" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_11_ 3" x="727" y="1168" w="74" h="95" pX="0.5" pY="0.5" oX="37" oY="22" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_12_ 3" x="373" y="1667" w="75" h="78" pX="0.5" pY="0.5" oX="37" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_13_ 4" x="1004" y="120" w="107" h="63" pX="0.5" pY="0.5" oX="22" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_14_ 4" x="1213" y="373" w="95" h="62" pX="0.5" pY="0.5" oX="35" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_15_ 4" x="1043" y="1435" w="89" h="62" pX="0.5" pY="0.5" oX="41" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_16_ 5" x="1362" y="938" w="92" h="86" pX="0.5" pY="0.5" oX="31" oY="30" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_17_ 5" x="1486" y="645" w="89" h="90" pX="0.5" pY="0.5" oX="35" oY="26" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_18_ 5" x="1431" y="1082" w="88" h="77" pX="0.5" pY="0.5" oX="37" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_19_ 6" x="374" y="1434" w="92" h="69" pX="0.5" pY="0.5" oX="27" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_20_ 6" x="1132" y="1435" w="88" h="63" pX="0.5" pY="0.5" oX="26" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_21_ 6" x="1047" y="1280" w="88" h="58" pX="0.5" pY="0.5" oX="25" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_22_ 7" x="999" y="454" w="107" h="74" pX="0.5" pY="0.5" oX="21" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_23_ 7" x="944" y="1198" w="96" h="82" pX="0.5" pY="0.5" oX="20" oY="30" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Block_24_ 7" x="557" y="1435" w="89" h="68" pX="0.5" pY="0.5" oX="20" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_01_ 0" x="1652" y="1317" w="74" h="79" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_02_ 0" x="1587" y="388" w="74" h="80" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_03_ 0" x="368" y="1586" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_04_ 1" x="220" y="703" w="109" h="54" pX="0.5" pY="0.5" oX="21" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_05_ 1" x="555" y="557" w="110" h="53" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_06_ 1" x="333" y="592" w="110" h="53" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_07_ 2" x="329" y="712" w="109" h="54" pX="0.5" pY="0.5" oX="20" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_08_ 2" x="438" y="731" w="109" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_09_ 2" x="222" y="594" w="110" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_10_ 3" x="674" y="1667" w="74" h="78" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_11_ 3" x="748" y="1667" w="74" h="78" pX="0.5" pY="0.5" oX="37" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_12_ 3" x="822" y="1667" w="74" h="78" pX="0.5" pY="0.5" oX="37" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_13_ 4" x="643" y="1054" w="106" h="67" pX="0.5" pY="0.5" oX="23" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_14_ 4" x="537" y="984" w="107" h="67" pX="0.5" pY="0.5" oX="22" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_15_ 4" x="772" y="707" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_16_ 5" x="1403" y="316" w="93" h="76" pX="0.5" pY="0.5" oX="31" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_17_ 5" x="1497" y="78" w="92" h="76" pX="0.5" pY="0.5" oX="31" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_18_ 5" x="1497" y="154" w="92" h="76" pX="0.5" pY="0.5" oX="31" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_19_ 6" x="1324" y="1426" w="92" h="77" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_20_ 6" x="1497" y="230" w="92" h="79" pX="0.5" pY="0.5" oX="27" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_21_ 6" x="1497" y="309" w="92" h="79" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_22_ 7" x="988" y="745" w="106" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_23_ 7" x="216" y="950" w="107" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Critical HP_24_ 7" x="0" y="995" w="107" h="66" pX="0.5" pY="0.5" oX="21" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_01_ 0" x="1575" y="645" w="71" h="79" pX="0.5" pY="0.5" oX="41" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_02_ 0" x="1592" y="1048" w="70" h="79" pX="0.5" pY="0.5" oX="43" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_03_ 0" x="1662" y="79" w="69" h="78" pX="0.5" pY="0.5" oX="44" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_04_ 1" x="547" y="731" w="109" h="52" pX="0.5" pY="0.5" oX="22" oY="51" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_05_ 1" x="663" y="703" w="109" h="51" pX="0.5" pY="0.5" oX="22" oY="52" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_06_ 1" x="787" y="0" w="109" h="50" pX="0.5" pY="0.5" oX="23" oY="54" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_07_ 2" x="787" y="50" w="109" h="52" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_08_ 2" x="787" y="102" w="109" h="50" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_09_ 2" x="787" y="152" w="109" h="49" pX="0.5" pY="0.5" oX="18" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_10_ 3" x="1269" y="1666" w="71" h="78" pX="0.5" pY="0.5" oX="38" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_11_ 3" x="1660" y="968" w="71" h="78" pX="0.5" pY="0.5" oX="37" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_12_ 3" x="1662" y="1396" w="69" h="78" pX="0.5" pY="0.5" oX="37" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_13_ 4" x="896" y="135" w="108" h="67" pX="0.5" pY="0.5" oX="24" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_14_ 4" x="896" y="202" w="108" h="67" pX="0.5" pY="0.5" oX="26" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_15_ 4" x="896" y="269" w="108" h="66" pX="0.5" pY="0.5" oX="28" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_16_ 5" x="1324" y="1349" w="93" h="77" pX="0.5" pY="0.5" oX="32" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_17_ 5" x="1398" y="470" w="93" h="78" pX="0.5" pY="0.5" oX="32" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_18_ 5" x="1323" y="1188" w="93" h="78" pX="0.5" pY="0.5" oX="33" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_19_ 6" x="1401" y="392" w="93" h="78" pX="0.5" pY="0.5" oX="25" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_20_ 6" x="1322" y="1271" w="93" h="78" pX="0.5" pY="0.5" oX="25" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_21_ 6" x="1138" y="1357" w="93" h="78" pX="0.5" pY="0.5" oX="24" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_22_ 7" x="862" y="908" w="107" h="68" pX="0.5" pY="0.5" oX="19" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_23_ 7" x="871" y="841" w="108" h="67" pX="0.5" pY="0.5" oX="16" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Dead To Down_24_ 7" x="0" y="927" w="108" h="67" pX="0.5" pY="0.5" oX="14" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_1_01_ 0" x="1662" y="784" w="67" h="76" pX="0.5" pY="0.5" oX="46" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_1_02_ 1" x="647" y="936" w="107" h="49" pX="0.5" pY="0.5" oX="25" oY="55" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_1_03_ 2" x="861" y="976" w="107" h="48" pX="0.5" pY="0.5" oX="18" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_1_04_ 3" x="1662" y="1474" w="67" h="77" pX="0.5" pY="0.5" oX="37" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_1_05_ 4" x="540" y="918" w="107" h="66" pX="0.5" pY="0.5" oX="31" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_1_06_ 5" x="1383" y="783" w="92" h="76" pX="0.5" pY="0.5" oX="34" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_1_07_ 6" x="1394" y="625" w="92" h="77" pX="0.5" pY="0.5" oX="24" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_1_08_ 7" x="755" y="908" w="107" h="66" pX="0.5" pY="0.5" oX="12" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_2_01_ 0" x="487" y="1503" w="77" h="83" pX="0.5" pY="0.5" oX="37" oY="30" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_2_02_ 1" x="115" y="115" w="114" h="56" pX="0.5" pY="0.5" oX="25" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_2_03_ 2" x="0" y="115" w="115" h="56" pX="0.5" pY="0.5" oX="11" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_2_04_ 3" x="954" y="1498" w="77" h="82" pX="0.5" pY="0.5" oX="36" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_2_05_ 4" x="186" y="1430" w="89" h="71" pX="0.5" pY="0.5" oX="42" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_2_06_ 5" x="857" y="1086" w="99" h="64" pX="0.5" pY="0.5" oX="29" oY="53" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_2_07_ 6" x="426" y="1119" w="99" h="64" pX="0.5" pY="0.5" oX="22" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_2_08_ 7" x="1416" y="1161" w="89" h="71" pX="0.5" pY="0.5" oX="19" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_3_01_ 0" x="1662" y="157" w="68" h="76" pX="0.5" pY="0.5" oX="45" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_3_02_ 1" x="106" y="1061" w="106" h="49" pX="0.5" pY="0.5" oX="26" oY="55" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_3_03_ 2" x="537" y="1051" w="106" h="49" pX="0.5" pY="0.5" oX="18" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_3_04_ 3" x="1662" y="1046" w="68" h="76" pX="0.5" pY="0.5" oX="37" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_3_05_ 4" x="0" y="283" w="112" h="64" pX="0.5" pY="0.5" oX="26" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_3_06_ 5" x="1417" y="1345" w="90" h="80" pX="0.5" pY="0.5" oX="36" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_3_07_ 6" x="1477" y="735" w="90" h="80" pX="0.5" pY="0.5" oX="24" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_3_08_ 7" x="448" y="427" w="111" h="65" pX="0.5" pY="0.5" oX="12" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_4_01_ 0" x="1583" y="1329" w="69" h="80" pX="0.5" pY="0.5" oX="43" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_4_02_ 1" x="672" y="342" w="110" h="50" pX="0.5" pY="0.5" oX="25" oY="53" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_4_03_ 2" x="674" y="292" w="110" h="50" pX="0.5" pY="0.5" oX="15" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_4_04_ 3" x="1662" y="0" w="69" h="79" pX="0.5" pY="0.5" oX="38" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_4_05_ 4" x="1001" y="388" w="107" h="66" pX="0.5" pY="0.5" oX="29" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_4_06_ 5" x="1416" y="1426" w="91" h="77" pX="0.5" pY="0.5" oX="36" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_4_07_ 6" x="1496" y="388" w="91" h="78" pX="0.5" pY="0.5" oX="23" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Down_4_08_ 7" x="1004" y="247" w="107" h="66" pX="0.5" pY="0.5" oX="14" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_01_ 0" x="1729" y="626" w="75" h="65" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_02_ 0" x="896" y="1667" w="78" h="73" pX="0.5" pY="0.5" oX="36" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_03_ 0" x="872" y="1498" w="82" h="80" pX="0.5" pY="0.5" oX="34" oY="26" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_04_ 1" x="1004" y="0" w="107" h="56" pX="0.5" pY="0.5" oX="23" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_05_ 1" x="0" y="171" w="114" h="55" pX="0.5" pY="0.5" oX="22" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_06_ 1" x="0" y="0" w="115" h="59" pX="0.5" pY="0.5" oX="32" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_07_ 2" x="648" y="881" w="107" h="55" pX="0.5" pY="0.5" oX="20" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_08_ 2" x="0" y="226" w="114" h="57" pX="0.5" pY="0.5" oX="14" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_09_ 2" x="115" y="56" w="115" h="59" pX="0.5" pY="0.5" oX="3" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_10_ 3" x="1507" y="815" w="75" h="90" pX="0.5" pY="0.5" oX="37" oY="25" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_11_ 3" x="1507" y="466" w="77" h="91" pX="0.5" pY="0.5" oX="36" oY="29" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_12_ 3" x="1507" y="1413" w="82" h="84" pX="0.5" pY="0.5" oX="34" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_13_ 4" x="861" y="1024" w="106" h="62" pX="0.5" pY="0.5" oX="23" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_14_ 4" x="1085" y="813" w="100" h="62" pX="0.5" pY="0.5" oX="31" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_15_ 4" x="564" y="1503" w="83" h="70" pX="0.5" pY="0.5" oX="49" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_16_ 5" x="1487" y="557" w="91" h="88" pX="0.5" pY="0.5" oX="33" oY="26" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_17_ 5" x="305" y="1125" w="97" h="80" pX="0.5" pY="0.5" oX="30" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_18_ 5" x="531" y="1100" w="99" h="61" pX="0.5" pY="0.5" oX="33" oY="57" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_19_ 6" x="92" y="1435" w="91" h="65" pX="0.5" pY="0.5" oX="26" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_20_ 6" x="525" y="1161" w="97" h="64" pX="0.5" pY="0.5" oX="23" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_21_ 6" x="749" y="1109" w="99" h="59" pX="0.5" pY="0.5" oX="18" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_22_ 7" x="967" y="1048" w="105" h="79" pX="0.5" pY="0.5" oX="21" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_23_ 7" x="1075" y="887" w="100" h="80" pX="0.5" pY="0.5" oX="19" oY="34" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Evade_24_ 7" x="176" y="1503" w="83" h="73" pX="0.5" pY="0.5" oX="18" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_01_ 0" x="448" y="1667" w="73" h="78" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_02_ 0" x="1123" y="1666" w="73" h="78" pX="0.5" pY="0.5" oX="39" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_03_ 0" x="1571" y="1649" w="76" h="71" pX="0.5" pY="0.5" oX="37" oY="28" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_04_ 1" x="670" y="461" w="110" h="53" pX="0.5" pY="0.5" oX="20" oY="51" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_05_ 1" x="566" y="53" w="111" h="56" pX="0.5" pY="0.5" oX="19" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_06_ 1" x="1105" y="532" w="101" h="61" pX="0.5" pY="0.5" oX="28" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_07_ 2" x="553" y="610" w="110" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_08_ 2" x="566" y="162" w="111" h="54" pX="0.5" pY="0.5" oX="20" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_09_ 2" x="1106" y="478" w="101" h="54" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_10_ 3" x="1567" y="735" w="73" h="80" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_11_ 3" x="1467" y="1580" w="74" h="80" pX="0.5" pY="0.5" oX="38" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_12_ 3" x="734" y="1586" w="76" h="81" pX="0.5" pY="0.5" oX="37" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_13_ 4" x="107" y="995" w="107" h="66" pX="0.5" pY="0.5" oX="22" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_14_ 4" x="1095" y="708" w="101" h="65" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_15_ 4" x="1215" y="228" w="95" h="68" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_16_ 5" x="1497" y="0" w="92" h="78" pX="0.5" pY="0.5" oX="31" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_17_ 5" x="293" y="1205" w="96" h="74" pX="0.5" pY="0.5" oX="31" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_18_ 5" x="206" y="1127" w="99" h="74" pX="0.5" pY="0.5" oX="33" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_19_ 6" x="1395" y="548" w="92" h="77" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_20_ 6" x="197" y="1205" w="96" h="71" pX="0.5" pY="0.5" oX="23" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_21_ 6" x="956" y="1127" w="99" h="71" pX="0.5" pY="0.5" oX="18" oY="25" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_22_ 7" x="547" y="783" w="108" h="67" pX="0.5" pY="0.5" oX="20" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_23_ 7" x="1074" y="972" w="101" h="73" pX="0.5" pY="0.5" oX="19" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Get Hit_24_ 7" x="1214" y="296" w="95" h="77" pX="0.5" pY="0.5" oX="18" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_01_ 0" x="1177" y="1586" w="73" h="80" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_02_ 0" x="1250" y="1586" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_03_ 0" x="1322" y="1586" w="72" h="80" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_04_ 1" x="563" y="276" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_05_ 1" x="229" y="168" w="112" h="53" pX="0.5" pY="0.5" oX="18" oY="51" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_06_ 1" x="566" y="0" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_07_ 2" x="444" y="545" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_08_ 2" x="226" y="276" w="112" h="52" pX="0.5" pY="0.5" oX="20" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_09_ 2" x="0" y="561" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_10_ 3" x="958" y="1586" w="73" h="80" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_11_ 3" x="1589" y="80" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_12_ 3" x="1589" y="1409" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_13_ 4" x="108" y="861" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_14_ 4" x="332" y="645" w="110" h="67" pX="0.5" pY="0.5" oX="20" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_15_ 4" x="559" y="491" w="110" h="66" pX="0.5" pY="0.5" oX="20" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_16_ 5" x="1292" y="693" w="93" h="78" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_17_ 5" x="1372" y="859" w="92" h="79" pX="0.5" pY="0.5" oX="31" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_18_ 5" x="93" y="1357" w="93" h="78" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_19_ 6" x="1404" y="0" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_20_ 6" x="1339" y="1083" w="92" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_21_ 6" x="1404" y="238" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_22_ 7" x="784" y="313" w="109" h="67" pX="0.5" pY="0.5" oX="20" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_23_ 7" x="443" y="598" w="110" h="66" pX="0.5" pY="0.5" oX="20" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle Fidget_24_ 7" x="442" y="664" w="110" h="67" pX="0.5" pY="0.5" oX="20" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_01_ 0" x="1589" y="160" w="73" h="80" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_02_ 0" x="0" y="1587" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_03_ 0" x="810" y="1586" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_04_ 0" x="721" y="1498" w="74" h="82" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_05_ 0" x="148" y="1586" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_06_ 1" x="455" y="54" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_07_ 1" x="455" y="107" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_08_ 1" x="455" y="160" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_09_ 1" x="455" y="213" w="111" h="54" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_10_ 1" x="452" y="267" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_11_ 2" x="450" y="320" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_12_ 2" x="341" y="216" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_13_ 2" x="0" y="508" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_14_ 2" x="111" y="507" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_15_ 2" x="222" y="488" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_16_ 3" x="1589" y="815" w="73" h="80" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_17_ 3" x="0" y="1668" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_18_ 3" x="1587" y="1159" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_19_ 3" x="1587" y="1238" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_20_ 3" x="1584" y="468" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_21_ 4" x="893" y="335" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_22_ 4" x="891" y="402" w="108" h="66" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_23_ 4" x="890" y="468" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_24_ 4" x="327" y="766" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_25_ 4" x="880" y="737" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_26_ 5" x="1269" y="1005" w="93" h="78" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_27_ 5" x="0" y="1357" w="93" h="78" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_28_ 5" x="188" y="1353" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_29_ 5" x="953" y="1280" w="94" h="76" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_30_ 5" x="483" y="1355" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_31_ 6" x="576" y="1357" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_32_ 6" x="669" y="1357" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_33_ 6" x="859" y="1356" w="93" h="79" pX="0.5" pY="0.5" oX="27" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_34_ 6" x="1310" y="0" w="94" h="79" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_35_ 6" x="281" y="1356" w="93" h="79" pX="0.5" pY="0.5" oX="27" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_36_ 7" x="782" y="380" w="109" h="67" pX="0.5" pY="0.5" oX="20" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_37_ 7" x="108" y="928" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_38_ 7" x="432" y="916" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_39_ 7" x="216" y="882" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Idle_40_ 7" x="881" y="669" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_01_ 0" x="1589" y="1489" w="73" h="80" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_02_ 0" x="1729" y="691" w="75" h="75" pX="0.5" pY="0.5" oX="38" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_03_ 0" x="1340" y="1666" w="77" h="71" pX="0.5" pY="0.5" oX="36" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_04_ 0" x="1729" y="1474" w="75" h="76" pX="0.5" pY="0.5" oX="38" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_05_ 0" x="442" y="1586" w="74" h="81" pX="0.5" pY="0.5" oX="39" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_06_ 0" x="521" y="1667" w="76" h="78" pX="0.5" pY="0.5" oX="37" oY="34" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_07_ 0" x="1582" y="895" w="80" h="73" pX="0.5" pY="0.5" oX="34" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_08_ 0" x="1047" y="1666" w="76" h="78" pX="0.5" pY="0.5" oX="37" oY="34" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_09_ 1" x="559" y="438" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_10_ 1" x="227" y="221" w="112" h="55" pX="0.5" pY="0.5" oX="17" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_11_ 1" x="779" y="514" w="109" h="58" pX="0.5" pY="0.5" oX="19" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_12_ 1" x="560" y="382" w="111" h="56" pX="0.5" pY="0.5" oX="18" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_13_ 1" x="561" y="329" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_14_ 1" x="114" y="171" w="113" h="57" pX="0.5" pY="0.5" oX="17" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_15_ 1" x="566" y="216" w="111" h="60" pX="0.5" pY="0.5" oX="18" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_16_ 1" x="230" y="56" w="113" h="56" pX="0.5" pY="0.5" oX="17" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_17_ 2" x="566" y="109" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_18_ 2" x="114" y="228" w="112" h="54" pX="0.5" pY="0.5" oX="21" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_19_ 2" x="677" y="0" w="110" h="56" pX="0.5" pY="0.5" oX="21" oY="45" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_20_ 2" x="114" y="282" w="112" h="55" pX="0.5" pY="0.5" oX="21" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_21_ 2" x="111" y="560" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_22_ 2" x="230" y="112" w="113" h="56" pX="0.5" pY="0.5" oX="20" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_23_ 2" x="333" y="533" w="111" h="59" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_24_ 2" x="230" y="0" w="113" h="56" pX="0.5" pY="0.5" oX="20" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_25_ 3" x="1104" y="1586" w="73" h="80" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_26_ 3" x="0" y="1503" w="75" h="84" pX="0.5" pY="0.5" oX="37" oY="28" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_27_ 3" x="1454" y="993" w="77" h="87" pX="0.5" pY="0.5" oX="37" oY="23" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_28_ 3" x="412" y="1503" w="75" h="83" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_29_ 3" x="1584" y="547" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_30_ 3" x="336" y="1503" w="76" h="83" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_31_ 3" x="1507" y="1159" w="80" h="86" pX="0.5" pY="0.5" oX="36" oY="23" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_32_ 3" x="1507" y="1329" w="76" h="84" pX="0.5" pY="0.5" oX="37" oY="29" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_33_ 4" x="888" y="535" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_34_ 4" x="1004" y="56" w="107" h="64" pX="0.5" pY="0.5" oX="22" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_35_ 4" x="1111" y="273" w="103" h="66" pX="0.5" pY="0.5" oX="25" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_36_ 4" x="1004" y="183" w="107" h="64" pX="0.5" pY="0.5" oX="22" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_37_ 4" x="0" y="860" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_38_ 4" x="426" y="1055" w="105" h="64" pX="0.5" pY="0.5" oX="23" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_39_ 4" x="106" y="1110" w="100" h="64" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_40_ 4" x="969" y="908" w="106" h="64" pX="0.5" pY="0.5" oX="22" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_41_ 5" x="1308" y="386" w="93" h="78" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_42_ 5" x="1309" y="305" w="94" h="81" pX="0.5" pY="0.5" oX="30" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_43_ 5" x="1385" y="702" w="92" h="81" pX="0.5" pY="0.5" oX="34" oY="28" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_44_ 5" x="1040" y="1200" w="95" h="80" pX="0.5" pY="0.5" oX="30" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_45_ 5" x="1404" y="78" w="93" h="78" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_46_ 5" x="1206" y="582" w="95" h="78" pX="0.5" pY="0.5" oX="30" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_47_ 5" x="1231" y="1351" w="93" h="80" pX="0.5" pY="0.5" oX="33" oY="29" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_48_ 5" x="1310" y="79" w="94" h="78" pX="0.5" pY="0.5" oX="30" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_49_ 6" x="1045" y="1357" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_50_ 6" x="952" y="1357" w="93" h="73" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_51_ 6" x="0" y="1435" w="92" h="68" pX="0.5" pY="0.5" oX="24" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_52_ 6" x="1207" y="508" w="95" h="74" pX="0.5" pY="0.5" oX="25" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_53_ 6" x="1279" y="849" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_54_ 6" x="1135" y="1200" w="95" h="73" pX="0.5" pY="0.5" oX="25" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_55_ 6" x="1246" y="1120" w="93" h="68" pX="0.5" pY="0.5" oX="24" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_56_ 6" x="1210" y="435" w="95" h="73" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_57_ 7" x="781" y="447" w="109" h="67" pX="0.5" pY="0.5" oX="20" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_58_ 7" x="998" y="528" w="107" h="75" pX="0.5" pY="0.5" oX="21" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_59_ 7" x="1072" y="1048" w="103" h="79" pX="0.5" pY="0.5" oX="22" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_60_ 7" x="1004" y="313" w="107" h="75" pX="0.5" pY="0.5" oX="21" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_61_ 7" x="883" y="602" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_62_ 7" x="991" y="603" w="106" h="76" pX="0.5" pY="0.5" oX="22" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_63_ 7" x="0" y="1127" w="100" h="79" pX="0.5" pY="0.5" oX="24" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Running_64_ 7" x="979" y="813" w="106" h="74" pX="0.5" pY="0.5" oX="22" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_01_ 0" x="647" y="1498" w="74" h="82" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_02_ 0" x="1376" y="1503" w="73" h="82" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_03_ 0" x="1303" y="1503" w="73" h="83" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_04_ 1" x="455" y="0" w="111" h="54" pX="0.5" pY="0.5" oX="19" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_05_ 1" x="110" y="666" w="110" h="55" pX="0.5" pY="0.5" oX="19" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_06_ 1" x="221" y="647" w="110" h="56" pX="0.5" pY="0.5" oX="18" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_07_ 2" x="222" y="435" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_08_ 2" x="111" y="453" w="111" h="54" pX="0.5" pY="0.5" oX="21" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_09_ 2" x="669" y="514" w="110" h="54" pX="0.5" pY="0.5" oX="22" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_10_ 3" x="1646" y="626" w="74" h="79" pX="0.5" pY="0.5" oX="37" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_11_ 3" x="974" y="1666" w="73" h="78" pX="0.5" pY="0.5" oX="38" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_12_ 3" x="1647" y="1649" w="74" h="76" pX="0.5" pY="0.5" oX="38" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_13_ 4" x="108" y="793" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_14_ 4" x="665" y="568" w="109" h="68" pX="0.5" pY="0.5" oX="20" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_15_ 4" x="671" y="392" w="110" h="69" pX="0.5" pY="0.5" oX="20" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_16_ 5" x="282" y="1280" w="94" h="76" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_17_ 5" x="1305" y="464" w="93" h="74" pX="0.5" pY="0.5" oX="31" oY="38" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_18_ 5" x="188" y="1280" w="94" h="73" pX="0.5" pY="0.5" oX="31" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_19_ 6" x="671" y="1277" w="94" h="79" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_20_ 6" x="1404" y="156" w="93" h="82" pX="0.5" pY="0.5" oX="26" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_21_ 6" x="1135" y="1273" w="94" h="84" pX="0.5" pY="0.5" oX="25" oY="34" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_22_ 7" x="540" y="850" w="108" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_23_ 7" x="774" y="572" w="109" h="68" pX="0.5" pY="0.5" oX="21" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Use Skill_24_ 7" x="677" y="225" w="110" h="67" pX="0.5" pY="0.5" oX="20" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_01_ 0" x="1177" y="1586" w="73" h="80" pX="0.5" pY="0.5" oX="40" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_02_ 0" x="588" y="1586" w="72" h="81" pX="0.5" pY="0.5" oX="40" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_03_ 0" x="516" y="1586" w="72" h="81" pX="0.5" pY="0.5" oX="40" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_04_ 0" x="1394" y="1585" w="73" h="80" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_05_ 0" x="1196" y="1666" w="73" h="78" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_06_ 0" x="1731" y="0" w="73" h="76" pX="0.5" pY="0.5" oX="39" oY="34" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_07_ 0" x="1589" y="0" w="73" h="80" pX="0.5" pY="0.5" oX="39" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_08_ 0" x="222" y="1586" w="72" h="81" pX="0.5" pY="0.5" oX="40" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_09_ 1" x="563" y="276" w="111" h="53" pX="0.5" pY="0.5" oX="19" oY="51" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_10_ 1" x="111" y="400" w="111" h="53" pX="0.5" pY="0.5" oX="18" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_11_ 1" x="0" y="400" w="111" h="54" pX="0.5" pY="0.5" oX="17" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_12_ 1" x="343" y="161" w="112" h="55" pX="0.5" pY="0.5" oX="16" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_13_ 1" x="553" y="663" w="110" h="56" pX="0.5" pY="0.5" oX="17" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_14_ 1" x="110" y="721" w="109" h="57" pX="0.5" pY="0.5" oX="17" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_15_ 1" x="343" y="106" w="112" h="55" pX="0.5" pY="0.5" oX="16" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_16_ 1" x="343" y="53" w="112" h="53" pX="0.5" pY="0.5" oX="17" oY="50" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_17_ 2" x="337" y="376" w="111" h="53" pX="0.5" pY="0.5" oX="20" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_18_ 2" x="333" y="429" w="111" h="52" pX="0.5" pY="0.5" oX="21" oY="49" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_19_ 2" x="333" y="481" w="111" h="52" pX="0.5" pY="0.5" oX="22" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_20_ 2" x="444" y="492" w="111" h="53" pX="0.5" pY="0.5" oX="22" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_21_ 2" x="111" y="613" w="110" h="53" pX="0.5" pY="0.5" oX="23" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_22_ 2" x="787" y="201" w="109" h="52" pX="0.5" pY="0.5" oX="24" oY="46" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_23_ 2" x="222" y="541" w="111" h="53" pX="0.5" pY="0.5" oX="22" oY="47" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_24_ 2" x="343" y="0" w="112" h="53" pX="0.5" pY="0.5" oX="21" oY="48" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_25_ 3" x="1589" y="240" w="73" h="80" pX="0.5" pY="0.5" oX="37" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_26_ 3" x="1589" y="1569" w="72" h="80" pX="0.5" pY="0.5" oX="38" oY="34" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_27_ 3" x="1658" y="468" w="73" h="79" pX="0.5" pY="0.5" oX="38" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_28_ 3" x="1587" y="968" w="73" h="80" pX="0.5" pY="0.5" oX="38" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_29_ 3" x="1519" y="1080" w="73" h="79" pX="0.5" pY="0.5" oX="38" oY="30" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_30_ 3" x="1031" y="1498" w="73" h="82" pX="0.5" pY="0.5" oX="38" oY="27" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_31_ 3" x="1031" y="1586" w="73" h="80" pX="0.5" pY="0.5" oX="38" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_32_ 3" x="1658" y="547" w="72" h="79" pX="0.5" pY="0.5" oX="38" oY="34" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_33_ 4" x="763" y="841" w="108" h="67" pX="0.5" pY="0.5" oX="21" oY="42" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_34_ 4" x="663" y="636" w="109" h="67" pX="0.5" pY="0.5" oX="21" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_35_ 4" x="323" y="970" w="107" h="66" pX="0.5" pY="0.5" oX="23" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_36_ 4" x="989" y="679" w="106" h="66" pX="0.5" pY="0.5" oX="24" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_37_ 4" x="1111" y="207" w="104" h="66" pX="0.5" pY="0.5" oX="26" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_38_ 4" x="1111" y="141" w="104" h="66" pX="0.5" pY="0.5" oX="26" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_39_ 4" x="0" y="1061" w="106" h="66" pX="0.5" pY="0.5" oX="24" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_40_ 4" x="432" y="850" w="108" h="66" pX="0.5" pY="0.5" oX="22" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_41_ 5" x="1301" y="615" w="93" h="78" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_42_ 5" x="1302" y="538" w="93" h="77" pX="0.5" pY="0.5" oX="30" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_43_ 5" x="1215" y="76" w="95" h="76" pX="0.5" pY="0.5" oX="29" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_44_ 5" x="1215" y="0" w="95" h="76" pX="0.5" pY="0.5" oX="30" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_45_ 5" x="859" y="1280" w="94" h="74" pX="0.5" pY="0.5" oX="31" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_46_ 5" x="765" y="1280" w="94" h="77" pX="0.5" pY="0.5" oX="32" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_47_ 5" x="622" y="1201" w="95" h="76" pX="0.5" pY="0.5" oX="30" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_48_ 5" x="577" y="1280" w="94" h="77" pX="0.5" pY="0.5" oX="29" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_49_ 6" x="1230" y="1193" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="37" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_50_ 6" x="1229" y="1273" w="93" h="78" pX="0.5" pY="0.5" oX="27" oY="36" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_51_ 6" x="483" y="1277" w="94" h="78" pX="0.5" pY="0.5" oX="26" oY="34" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_52_ 6" x="94" y="1280" w="94" h="76" pX="0.5" pY="0.5" oX="26" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_53_ 6" x="1185" y="816" w="94" h="75" pX="0.5" pY="0.5" oX="25" oY="32" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_54_ 6" x="1310" y="233" w="94" h="72" pX="0.5" pY="0.5" oX="24" oY="31" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_55_ 6" x="1310" y="157" w="94" h="76" pX="0.5" pY="0.5" oX="26" oY="33" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_56_ 6" x="1175" y="964" w="94" h="78" pX="0.5" pY="0.5" oX="27" oY="35" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_57_ 7" x="0" y="726" w="109" h="67" pX="0.5" pY="0.5" oX="20" oY="44" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_58_ 7" x="772" y="640" w="109" h="67" pX="0.5" pY="0.5" oX="20" oY="43" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_59_ 7" x="754" y="974" w="107" h="69" pX="0.5" pY="0.5" oX="20" oY="41" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_60_ 7" x="214" y="1055" w="106" h="70" pX="0.5" pY="0.5" oX="20" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_61_ 7" x="1111" y="71" w="104" h="70" pX="0.5" pY="0.5" oX="20" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_62_ 7" x="1111" y="0" w="104" h="71" pX="0.5" pY="0.5" oX="20" oY="39" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_63_ 7" x="320" y="1055" w="106" h="70" pX="0.5" pY="0.5" oX="20" oY="40" oW="150" oH="150"/>
+  <sprite n="IridescentSlime1_Walking_64_ 7" x="324" y="834" w="108" h="68" pX="0.5" pY="0.5" oX="20" oY="42" oW="150" oH="150"/>
+</TextureAtlas>

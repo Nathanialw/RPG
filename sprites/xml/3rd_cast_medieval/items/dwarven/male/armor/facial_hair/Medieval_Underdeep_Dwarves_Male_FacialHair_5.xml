@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Medieval_Underdeep_Dwarves_Male_FacialHair_5.png" width="175" height="180" scale="1" format="RGBA8888">
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_02_ 0" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_15_ 4" x="128" y="0" w="12" h="6" pX="0.5" pY="0.5" oX="82" oY="57" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_03_ 0" x="128" y="6" w="9" h="11" pX="0.5" pY="0.5" oX="60" oY="64" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_05_ 0" x="128" y="17" w="7" h="11" pX="0.5" pY="0.5" oX="62" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_14_ 4" x="128" y="28" w="10" h="9" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_39_ 4" x="128" y="37" w="10" h="8" pX="0.5" pY="0.5" oX="57" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_34_ 4" x="128" y="45" w="8" h="10" pX="0.5" pY="0.5" oX="54" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_13_ 4" x="128" y="55" w="10" h="9" pX="0.5" pY="0.5" oX="55" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_54_ 6" x="128" y="64" w="10" h="7" pX="0.5" pY="0.5" oX="62" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_01_ 0" x="128" y="71" w="8" h="10" pX="0.5" pY="0.5" oX="61" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_20_ 6" x="128" y="81" w="10" h="8" pX="0.5" pY="0.5" oX="61" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_37_ 4" x="128" y="89" w="10" h="9" pX="0.5" pY="0.5" oX="57" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_13_ 4" x="128" y="98" w="10" h="9" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_13_ 4" x="128" y="107" w="10" h="9" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_19_ 6" x="128" y="116" w="10" h="8" pX="0.5" pY="0.5" oX="62" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead3_01_ 0" x="0" y="128" w="10" h="8" pX="0.5" pY="0.5" oX="98" oY="76" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_01_ 0" x="128" y="124" w="7" h="10" pX="0.5" pY="0.5" oX="74" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_20_ 6" x="10" y="128" w="10" h="8" pX="0.5" pY="0.5" oX="62" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_21_ 6" x="20" y="128" w="10" h="8" pX="0.5" pY="0.5" oX="62" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_14_ 4" x="0" y="136" w="6" h="9" pX="0.5" pY="0.5" oX="59" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_13_ 4" x="6" y="136" w="8" h="9" pX="0.5" pY="0.5" oX="85" oY="62" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_12_ 3" x="14" y="136" w="9" h="6" pX="0.5" pY="0.5" oX="57" oY="97" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_11_ 3" x="23" y="136" w="9" h="7" pX="0.5" pY="0.5" oX="57" oY="97" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_08_ 2" x="32" y="134" w="8" h="9" pX="0.5" pY="0.5" oX="89" oY="82" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_03_ 0" x="40" y="134" w="9" h="7" pX="0.5" pY="0.5" oX="60" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_07_ 2" x="49" y="134" w="8" h="9" pX="0.5" pY="0.5" oX="89" oY="82" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_02_ 0" x="57" y="134" w="9" h="7" pX="0.5" pY="0.5" oX="63" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_13_ 4" x="66" y="134" w="9" h="8" pX="0.5" pY="0.5" oX="79" oY="62" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_04_ 1" x="75" y="134" w="9" h="9" pX="0.5" pY="0.5" oX="87" oY="76" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead1_02_ 0" x="84" y="134" w="9" h="7" pX="0.5" pY="0.5" oX="96" oY="81" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead1_01_ 0" x="93" y="134" w="9" h="7" pX="0.5" pY="0.5" oX="96" oY="81" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance6_02_ 0" x="102" y="134" w="6" h="9" pX="0.5" pY="0.5" oX="81" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_15_ 4" x="108" y="134" w="9" h="7" pX="0.5" pY="0.5" oX="57" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_19_ 6" x="117" y="128" w="9" h="8" pX="0.5" pY="0.5" oX="62" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_40_ 4" x="117" y="136" w="9" h="9" pX="0.5" pY="0.5" oX="57" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_14_ 4" x="126" y="134" w="9" h="7" pX="0.5" pY="0.5" oX="58" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_13_ 4" x="140" y="0" w="8" h="9" pX="0.5" pY="0.5" oX="58" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_34_ 4" x="138" y="9" w="9" h="8" pX="0.5" pY="0.5" oX="57" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_21_ 6" x="138" y="17" w="9" h="8" pX="0.5" pY="0.5" oX="66" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_20_ 6" x="138" y="25" w="9" h="8" pX="0.5" pY="0.5" oX="66" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_15_ 4" x="138" y="33" w="9" h="8" pX="0.5" pY="0.5" oX="55" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_16_ 5" x="136" y="45" w="6" h="9" pX="0.5" pY="0.5" oX="74" oY="88" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_15_ 4" x="136" y="71" w="9" h="9" pX="0.5" pY="0.5" oX="59" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_14_ 4" x="138" y="54" w="9" h="8" pX="0.5" pY="0.5" oX="55" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_55_ 6" x="138" y="80" w="9" h="8" pX="0.5" pY="0.5" oX="62" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_20_ 6" x="138" y="62" w="9" h="7" pX="0.5" pY="0.5" oX="58" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_19_ 6" x="138" y="88" w="9" h="8" pX="0.5" pY="0.5" oX="62" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_56_ 6" x="138" y="96" w="9" h="7" pX="0.5" pY="0.5" oX="66" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_14_ 4" x="138" y="103" w="9" h="7" pX="0.5" pY="0.5" oX="55" oY="56" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_15_ 4" x="30" y="128" w="9" h="6" pX="0.5" pY="0.5" oX="51" oY="66" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_20_ 6" x="138" y="110" w="9" h="7" pX="0.5" pY="0.5" oX="66" oY="55" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_51_ 6" x="39" y="128" w="9" h="6" pX="0.5" pY="0.5" oX="65" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_40_ 4" x="138" y="117" w="9" h="7" pX="0.5" pY="0.5" oX="53" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_03_ 0" x="135" y="124" w="9" h="9" pX="0.5" pY="0.5" oX="60" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_09_ 2" x="135" y="133" w="9" h="8" pX="0.5" pY="0.5" oX="28" oY="78" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_14_ 4" x="48" y="128" w="9" h="6" pX="0.5" pY="0.5" oX="61" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_36_ 4" x="14" y="142" w="9" h="8" pX="0.5" pY="0.5" oX="57" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_38_ 4" x="40" y="141" w="9" h="7" pX="0.5" pY="0.5" oX="55" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_37_ 4" x="57" y="141" w="9" h="8" pX="0.5" pY="0.5" oX="55" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_38_ 4" x="108" y="141" w="9" h="9" pX="0.5" pY="0.5" oX="58" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_24_ 7" x="66" y="142" w="9" h="9" pX="0.5" pY="0.5" oX="41" oY="93" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_magic_03_ 0" x="0" y="145" w="9" h="8" pX="0.5" pY="0.5" oX="84" oY="39" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_03_ 0" x="49" y="143" w="8" h="9" pX="0.5" pY="0.5" oX="60" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_07_ 2" x="23" y="148" w="8" h="5" pX="0.5" pY="0.5" oX="38" oY="75" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_08_ 2" x="23" y="143" w="8" h="5" pX="0.5" pY="0.5" oX="37" oY="89" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_15_ 4" x="117" y="145" w="8" h="8" pX="0.5" pY="0.5" oX="80" oY="62" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_14_ 4" x="125" y="145" w="8" h="8" pX="0.5" pY="0.5" oX="80" oY="61" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_19_ 6" x="142" y="41" w="6" h="8" pX="0.5" pY="0.5" oX="69" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_51_ 6" x="75" y="143" w="7" h="8" pX="0.5" pY="0.5" oX="64" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_13_ 4" x="31" y="143" w="6" h="8" pX="0.5" pY="0.5" oX="59" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_36_ 4" x="82" y="143" w="7" h="8" pX="0.5" pY="0.5" oX="54" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_09_ 1" x="89" y="143" w="7" h="8" pX="0.5" pY="0.5" oX="56" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_56_ 6" x="57" y="128" w="8" h="6" pX="0.5" pY="0.5" oX="63" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_22_ 7" x="57" y="149" w="8" h="4" pX="0.5" pY="0.5" oX="36" oY="89" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_19_ 6" x="96" y="143" w="7" h="8" pX="0.5" pY="0.5" oX="60" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance6_03_ 0" x="133" y="141" w="8" h="7" pX="0.5" pY="0.5" oX="80" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_21_ 6" x="148" y="0" w="8" h="7" pX="0.5" pY="0.5" oX="58" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_03_ 0" x="148" y="7" w="8" h="7" pX="0.5" pY="0.5" oX="61" oY="50" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_02_ 0" x="148" y="14" w="8" h="7" pX="0.5" pY="0.5" oX="61" oY="50" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_09_ 2" x="148" y="21" w="8" h="8" pX="0.5" pY="0.5" oX="89" oY="82" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_01_ 0" x="65" y="128" w="8" h="6" pX="0.5" pY="0.5" oX="61" oY="50" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_35_ 4" x="148" y="29" w="6" h="8" pX="0.5" pY="0.5" oX="57" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_55_ 6" x="148" y="37" w="8" h="7" pX="0.5" pY="0.5" oX="66" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance5_01_ 0" x="73" y="128" w="8" h="6" pX="0.5" pY="0.5" oX="65" oY="59" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance4_03_ 0" x="148" y="44" w="8" h="8" pX="0.5" pY="0.5" oX="81" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_53_ 6" x="147" y="52" w="8" h="7" pX="0.5" pY="0.5" oX="66" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance2_02_ 0" x="147" y="59" w="7" h="8" pX="0.5" pY="0.5" oX="81" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_21_ 6" x="145" y="69" w="6" h="8" pX="0.5" pY="0.5" oX="68" oY="66" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_09_ 2" x="81" y="128" w="8" h="6" pX="0.5" pY="0.5" oX="74" oY="73" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical1_03_ 0" x="147" y="77" w="7" h="8" pX="0.5" pY="0.5" oX="76" oY="68" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead2_01_ 0" x="147" y="85" w="8" h="8" pX="0.5" pY="0.5" oX="82" oY="84" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_05_ 1" x="147" y="93" w="6" h="8" pX="0.5" pY="0.5" oX="74" oY="39" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_06_ 1" x="37" y="148" w="8" h="5" pX="0.5" pY="0.5" oX="88" oY="79" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_39_ 4" x="147" y="101" w="8" h="7" pX="0.5" pY="0.5" oX="54" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead2_03_ 0" x="147" y="108" w="8" h="8" pX="0.5" pY="0.5" oX="82" oY="84" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_12_ 3" x="147" y="116" w="6" h="8" pX="0.5" pY="0.5" oX="63" oY="94" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_33_ 4" x="144" y="124" w="8" h="8" pX="0.5" pY="0.5" oX="58" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_15_ 4" x="141" y="141" w="8" h="8" pX="0.5" pY="0.5" oX="59" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_53_ 6" x="144" y="132" w="8" h="8" pX="0.5" pY="0.5" oX="62" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_18_ 5" x="89" y="128" w="8" h="6" pX="0.5" pY="0.5" oX="84" oY="89" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance1_02_ 0" x="133" y="148" w="8" h="7" pX="0.5" pY="0.5" oX="81" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_21_ 6" x="45" y="152" w="7" h="8" pX="0.5" pY="0.5" oX="39" oY="56" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_52_ 6" x="0" y="153" w="8" h="7" pX="0.5" pY="0.5" oX="62" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_21_ 6" x="31" y="151" w="6" h="8" pX="0.5" pY="0.5" oX="64" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_33_ 4" x="52" y="153" w="8" h="7" pX="0.5" pY="0.5" oX="54" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_magic_02_ 0" x="8" y="153" w="8" h="7" pX="0.5" pY="0.5" oX="82" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_50_ 6" x="65" y="151" w="8" h="8" pX="0.5" pY="0.5" oX="62" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_01_ 0" x="37" y="153" w="8" h="7" pX="0.5" pY="0.5" oX="59" oY="50" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_10_ 1" x="149" y="140" w="7" h="8" pX="0.5" pY="0.5" oX="51" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_02_ 0" x="16" y="150" w="7" h="8" pX="0.5" pY="0.5" oX="61" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_05_ 0" x="97" y="128" w="8" h="6" pX="0.5" pY="0.5" oX="61" oY="50" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_08_ 0" x="73" y="153" w="8" h="7" pX="0.5" pY="0.5" oX="60" oY="50" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_09_ 2" x="149" y="148" w="7" h="6" pX="0.5" pY="0.5" oX="64" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_07_ 0" x="105" y="128" w="7" h="6" pX="0.5" pY="0.5" oX="61" oY="51" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_02_ 0" x="141" y="154" w="7" h="6" pX="0.5" pY="0.5" oX="60" oY="51" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_12_ 1" x="148" y="154" w="7" h="6" pX="0.5" pY="0.5" oX="52" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_01_ 0" x="23" y="153" w="7" h="7" pX="0.5" pY="0.5" oX="61" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_15_ 1" x="81" y="153" w="6" h="7" pX="0.5" pY="0.5" oX="51" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_16_ 1" x="60" y="153" w="4" h="7" pX="0.5" pY="0.5" oX="51" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_17_ 2" x="87" y="153" w="7" h="6" pX="0.5" pY="0.5" oX="70" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_21_ 2" x="94" y="153" w="6" h="7" pX="0.5" pY="0.5" oX="70" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_22_ 2" x="152" y="124" w="4" h="7" pX="0.5" pY="0.5" oX="73" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_23_ 2" x="100" y="153" w="4" h="7" pX="0.5" pY="0.5" oX="73" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_24_ 2" x="104" y="153" w="7" h="6" pX="0.5" pY="0.5" oX="71" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_magic_01_ 0" x="151" y="67" w="5" h="7" pX="0.5" pY="0.5" oX="82" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_23_ 7" x="111" y="153" w="7" h="7" pX="0.5" pY="0.5" oX="54" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_35_ 4" x="118" y="153" w="7" h="6" pX="0.5" pY="0.5" oX="55" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_20_ 6" x="125" y="153" w="7" h="7" pX="0.5" pY="0.5" oX="66" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_44_ 5" x="135" y="17" w="3" h="7" pX="0.5" pY="0.5" oX="58" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_08_ 2" x="156" y="0" w="6" h="7" pX="0.5" pY="0.5" oX="43" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_02_ 0" x="126" y="141" w="7" h="4" pX="0.5" pY="0.5" oX="61" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_42_ 5" x="154" y="29" w="4" h="7" pX="0.5" pY="0.5" oX="55" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_43_ 5" x="158" y="7" w="4" h="7" pX="0.5" pY="0.5" oX="55" oY="37" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_44_ 5" x="158" y="14" w="4" h="7" pX="0.5" pY="0.5" oX="54" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_47_ 5" x="153" y="93" w="3" h="7" pX="0.5" pY="0.5" oX="54" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_49_ 6" x="156" y="36" w="6" h="7" pX="0.5" pY="0.5" oX="67" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_50_ 6" x="156" y="21" w="6" h="7" pX="0.5" pY="0.5" oX="68" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_24_ 7" x="9" y="145" w="3" h="7" pX="0.5" pY="0.5" oX="76" oY="54" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_42_ 5" x="158" y="28" w="4" h="7" pX="0.5" pY="0.5" oX="58" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_17_ 5" x="153" y="116" w="3" h="7" pX="0.5" pY="0.5" oX="54" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_46_ 5" x="103" y="143" w="4" h="7" pX="0.5" pY="0.5" oX="57" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_09_ 2" x="155" y="52" w="7" h="7" pX="0.5" pY="0.5" oX="76" oY="65" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_61_ 7" x="154" y="59" w="3" h="7" pX="0.5" pY="0.5" oX="71" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_62_ 7" x="152" y="131" w="3" h="7" pX="0.5" pY="0.5" oX="71" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_63_ 7" x="156" y="43" w="3" h="7" pX="0.5" pY="0.5" oX="72" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_05_ 1" x="157" y="59" w="4" h="7" pX="0.5" pY="0.5" oX="52" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_47_ 5" x="156" y="66" w="4" h="7" pX="0.5" pY="0.5" oX="58" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_22_ 7" x="159" y="43" w="3" h="7" pX="0.5" pY="0.5" oX="67" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_04_ 1" x="156" y="73" w="6" h="7" pX="0.5" pY="0.5" oX="53" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_05_ 1" x="155" y="100" w="7" h="7" pX="0.5" pY="0.5" oX="52" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_06_ 1" x="155" y="131" w="7" h="7" pX="0.5" pY="0.5" oX="52" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_07_ 2" x="156" y="80" w="6" h="7" pX="0.5" pY="0.5" oX="70" oY="51" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_08_ 2" x="155" y="107" w="3" h="7" pX="0.5" pY="0.5" oX="74" oY="51" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_09_ 2" x="156" y="138" w="6" h="7" pX="0.5" pY="0.5" oX="71" oY="51" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_17_ 5" x="158" y="107" w="3" h="7" pX="0.5" pY="0.5" oX="59" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_16_ 5" x="156" y="87" w="3" h="7" pX="0.5" pY="0.5" oX="59" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_09_ 2" x="155" y="154" w="7" h="7" pX="0.5" pY="0.5" oX="66" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_08_ 2" x="30" y="159" w="7" h="7" pX="0.5" pY="0.5" oX="66" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_06_ 1" x="16" y="158" w="7" h="7" pX="0.5" pY="0.5" oX="62" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_05_ 1" x="87" y="159" w="7" h="7" pX="0.5" pY="0.5" oX="62" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_04_ 1" x="156" y="114" w="6" h="7" pX="0.5" pY="0.5" oX="63" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_02_ 0" x="104" y="159" w="7" h="6" pX="0.5" pY="0.5" oX="61" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_03_ 0" x="118" y="159" w="7" h="7" pX="0.5" pY="0.5" oX="61" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_04_ 1" x="156" y="145" w="6" h="7" pX="0.5" pY="0.5" oX="57" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_05_ 1" x="0" y="160" w="6" h="7" pX="0.5" pY="0.5" oX="56" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_06_ 1" x="23" y="160" w="7" h="7" pX="0.5" pY="0.5" oX="56" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_07_ 2" x="37" y="160" w="6" h="7" pX="0.5" pY="0.5" oX="66" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_08_ 2" x="94" y="160" w="7" h="7" pX="0.5" pY="0.5" oX="66" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_03_ 0" x="125" y="161" w="7" h="6" pX="0.5" pY="0.5" oX="61" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_01_ 0" x="111" y="160" w="7" h="7" pX="0.5" pY="0.5" oX="61" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_17_ 5" x="156" y="7" w="2" h="7" pX="0.5" pY="0.5" oX="59" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_16_ 5" x="6" y="160" w="4" h="7" pX="0.5" pY="0.5" oX="57" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_06_ 0" x="132" y="161" w="7" h="6" pX="0.5" pY="0.5" oX="62" oY="51" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_08_ 2" x="132" y="155" w="7" h="6" pX="0.5" pY="0.5" oX="64" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_06_ 1" x="139" y="161" w="7" h="6" pX="0.5" pY="0.5" oX="58" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_22_ 7" x="43" y="160" w="4" h="7" pX="0.5" pY="0.5" oX="68" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_24_ 7" x="159" y="87" w="3" h="7" pX="0.5" pY="0.5" oX="69" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_01_ 0" x="156" y="121" w="6" h="7" pX="0.5" pY="0.5" oX="66" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_05_ 1" x="146" y="160" w="7" h="7" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_03_ 0" x="10" y="160" w="6" h="7" pX="0.5" pY="0.5" oX="66" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_04_ 1" x="141" y="149" w="7" h="5" pX="0.5" pY="0.5" oX="39" oY="77" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_05_ 1" x="153" y="161" w="7" h="6" pX="0.5" pY="0.5" oX="39" oY="77" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_06_ 1" x="64" y="159" w="7" h="5" pX="0.5" pY="0.5" oX="38" oY="78" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_04_ 1" x="47" y="160" w="6" h="7" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_02_ 0" x="71" y="160" w="7" h="7" pX="0.5" pY="0.5" oX="61" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_01_ 0" x="53" y="160" w="7" h="7" pX="0.5" pY="0.5" oX="61" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_23_ 7" x="78" y="160" w="7" h="7" pX="0.5" pY="0.5" oX="51" oY="95" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_19_ 6" x="160" y="66" w="7" h="7" pX="0.5" pY="0.5" oX="55" oY="58" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_49_ 6" x="161" y="107" w="5" h="7" pX="0.5" pY="0.5" oX="66" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_11_ 3" x="60" y="160" w="4" h="7" pX="0.5" pY="0.5" oX="72" oY="88" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_10_ 3" x="161" y="59" w="6" h="7" pX="0.5" pY="0.5" oX="50" oY="95" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_18_ 5" x="162" y="73" w="6" h="7" pX="0.5" pY="0.5" oX="75" oY="94" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_20_ 6" x="162" y="114" w="6" h="7" pX="0.5" pY="0.5" oX="48" oY="58" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance1_01_ 0" x="162" y="0" w="4" h="7" pX="0.5" pY="0.5" oX="82" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_03_ 0" x="101" y="160" w="3" h="7" pX="0.5" pY="0.5" oX="73" oY="57" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance1_03_ 0" x="162" y="80" w="7" h="7" pX="0.5" pY="0.5" oX="82" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical6_02_ 0" x="162" y="121" w="7" h="7" pX="0.5" pY="0.5" oX="77" oY="60" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance3_01_ 0" x="156" y="94" w="7" h="6" pX="0.5" pY="0.5" oX="78" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance3_02_ 0" x="162" y="87" w="6" h="7" pX="0.5" pY="0.5" oX="78" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance3_03_ 0" x="162" y="7" w="7" h="7" pX="0.5" pY="0.5" oX="77" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance4_02_ 0" x="162" y="128" w="7" h="7" pX="0.5" pY="0.5" oX="82" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical6_01_ 0" x="162" y="100" w="6" h="7" pX="0.5" pY="0.5" oX="78" oY="60" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical5_03_ 0" x="162" y="14" w="7" h="7" pX="0.5" pY="0.5" oX="74" oY="65" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance5_02_ 0" x="160" y="161" w="7" h="6" pX="0.5" pY="0.5" oX="65" oY="59" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_41_ 5" x="166" y="0" w="3" h="7" pX="0.5" pY="0.5" oX="58" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance6_01_ 0" x="162" y="21" w="7" h="7" pX="0.5" pY="0.5" oX="81" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical5_02_ 0" x="162" y="135" w="5" h="7" pX="0.5" pY="0.5" oX="75" oY="64" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical5_01_ 0" x="162" y="28" w="7" h="7" pX="0.5" pY="0.5" oX="74" oY="65" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_03_ 0" x="162" y="142" w="7" h="6" pX="0.5" pY="0.5" oX="60" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical4_03_ 0" x="162" y="35" w="7" h="6" pX="0.5" pY="0.5" oX="74" oY="65" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_06_ 0" x="162" y="148" w="7" h="6" pX="0.5" pY="0.5" oX="62" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_07_ 0" x="162" y="41" w="7" h="6" pX="0.5" pY="0.5" oX="61" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical4_02_ 0" x="162" y="154" w="6" h="7" pX="0.5" pY="0.5" oX="74" oY="64" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_12_ 1" x="162" y="47" w="7" h="7" pX="0.5" pY="0.5" oX="56" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_13_ 1" x="30" y="166" w="7" h="7" pX="0.5" pY="0.5" oX="56" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_14_ 1" x="0" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="57" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_15_ 1" x="37" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="57" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_17_ 2" x="6" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="66" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_18_ 2" x="43" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="66" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_19_ 2" x="12" y="167" w="4" h="7" pX="0.5" pY="0.5" oX="68" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_20_ 2" x="118" y="166" w="7" h="7" pX="0.5" pY="0.5" oX="66" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_21_ 2" x="16" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="66" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_22_ 2" x="64" y="164" w="7" h="6" pX="0.5" pY="0.5" oX="65" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_24_ 2" x="104" y="165" w="7" h="7" pX="0.5" pY="0.5" oX="66" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical4_01_ 0" x="125" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="75" oY="65" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical2_02_ 0" x="22" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="78" oY="69" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical1_02_ 0" x="111" y="167" w="7" h="6" pX="0.5" pY="0.5" oX="76" oY="69" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical1_01_ 0" x="49" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="77" oY="68" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_57_ 7" x="71" y="167" w="4" h="7" pX="0.5" pY="0.5" oX="68" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_60_ 7" x="131" y="167" w="4" h="7" pX="0.5" pY="0.5" oX="68" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_04_ 1" x="55" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_14_ 1" x="75" y="167" w="7" h="7" pX="0.5" pY="0.5" oX="52" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_17_ 5" x="126" y="128" w="2" h="6" pX="0.5" pY="0.5" oX="58" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_18_ 5" x="112" y="128" w="3" h="6" pX="0.5" pY="0.5" oX="57" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_45_ 5" x="166" y="107" w="3" h="6" pX="0.5" pY="0.5" oX="57" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_16_ 5" x="163" y="94" w="3" h="6" pX="0.5" pY="0.5" oX="58" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_41_ 5" x="12" y="145" w="2" h="6" pX="0.5" pY="0.5" oX="56" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_62_ 7" x="135" y="167" w="4" h="6" pX="0.5" pY="0.5" oX="67" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_23_ 7" x="61" y="167" w="3" h="6" pX="0.5" pY="0.5" oX="68" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_61_ 7" x="166" y="94" w="3" h="6" pX="0.5" pY="0.5" oX="68" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_07_ 2" x="82" y="167" w="6" h="6" pX="0.5" pY="0.5" oX="65" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_45_ 5" x="139" y="167" w="4" h="6" pX="0.5" pY="0.5" oX="54" oY="39" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_43_ 5" x="88" y="167" w="4" h="6" pX="0.5" pY="0.5" oX="58" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_20_ 6" x="143" y="167" w="6" h="6" pX="0.5" pY="0.5" oX="69" oY="61" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_48_ 5" x="92" y="167" w="3" h="6" pX="0.5" pY="0.5" oX="54" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_07_ 2" x="149" y="167" w="6" h="6" pX="0.5" pY="0.5" oX="65" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_18_ 5" x="95" y="167" w="3" h="6" pX="0.5" pY="0.5" oX="59" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_08_ 2" x="162" y="54" w="6" h="5" pX="0.5" pY="0.5" oX="73" oY="57" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_22_ 7" x="155" y="167" w="4" h="6" pX="0.5" pY="0.5" oX="67" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_10_ 3" x="98" y="167" w="6" h="6" pX="0.5" pY="0.5" oX="57" oY="96" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_09_ 2" x="159" y="167" w="5" h="6" pX="0.5" pY="0.5" oX="52" oY="69" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_54_ 6" x="164" y="167" w="5" h="6" pX="0.5" pY="0.5" oX="69" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_23_ 7" x="167" y="161" w="6" h="6" pX="0.5" pY="0.5" oX="70" oY="51" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_attack1_03_ 0" x="169" y="0" w="6" h="6" pX="0.5" pY="0.5" oX="56" oY="57" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_57_ 7" x="167" y="135" w="4" h="6" pX="0.5" pY="0.5" oX="72" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_16_ 5" x="169" y="167" w="6" h="6" pX="0.5" pY="0.5" oX="75" oY="94" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_17_ 5" x="169" y="6" w="6" h="6" pX="0.5" pY="0.5" oX="75" oY="94" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_58_ 7" x="171" y="12" w="4" h="6" pX="0.5" pY="0.5" oX="72" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_19_ 6" x="168" y="87" w="5" h="6" pX="0.5" pY="0.5" oX="49" oY="59" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_59_ 7" x="168" y="100" w="3" h="6" pX="0.5" pY="0.5" oX="72" oY="39" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_21_ 6" x="169" y="141" w="6" h="6" pX="0.5" pY="0.5" oX="48" oY="59" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_22_ 7" x="142" y="49" w="6" h="3" pX="0.5" pY="0.5" oX="43" oY="91" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_23_ 7" x="103" y="150" w="6" h="3" pX="0.5" pY="0.5" oX="43" oY="91" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sleeping_24_ 7" x="169" y="18" w="6" h="5" pX="0.5" pY="0.5" oX="43" oY="92" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_60_ 7" x="171" y="93" w="4" h="6" pX="0.5" pY="0.5" oX="71" oY="38" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_24_ 7" x="168" y="154" w="3" h="6" pX="0.5" pY="0.5" oX="67" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_02_ 0" x="169" y="106" w="6" h="6" pX="0.5" pY="0.5" oX="60" oY="59" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance2_01_ 0" x="171" y="147" w="4" h="6" pX="0.5" pY="0.5" oX="81" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_16_ 5" x="171" y="99" w="3" h="6" pX="0.5" pY="0.5" oX="58" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance2_03_ 0" x="169" y="23" w="6" h="6" pX="0.5" pY="0.5" oX="81" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_64_ 7" x="171" y="112" w="4" h="6" pX="0.5" pY="0.5" oX="72" oY="39" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_04_ 0" x="169" y="29" w="6" h="6" pX="0.5" pY="0.5" oX="62" oY="50" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_63_ 7" x="171" y="153" w="4" h="6" pX="0.5" pY="0.5" oX="68" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance4_01_ 0" x="171" y="118" w="4" h="6" pX="0.5" pY="0.5" oX="82" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_06_ 1" x="169" y="35" w="6" h="6" pX="0.5" pY="0.5" oX="46" oY="64" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_08_ 2" x="169" y="124" w="6" h="6" pX="0.5" pY="0.5" oX="71" oY="51" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_18_ 5" x="154" y="74" w="2" h="6" pX="0.5" pY="0.5" oX="59" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_09_ 1" x="169" y="41" w="6" h="6" pX="0.5" pY="0.5" oX="52" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_59_ 7" x="171" y="130" w="4" h="6" pX="0.5" pY="0.5" oX="68" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_11_ 1" x="169" y="47" w="4" h="6" pX="0.5" pY="0.5" oX="52" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical6_03_ 0" x="169" y="53" w="6" h="6" pX="0.5" pY="0.5" oX="77" oY="61" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_13_ 1" x="169" y="59" w="4" h="6" pX="0.5" pY="0.5" oX="52" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_01_ 0" x="169" y="65" w="6" h="6" pX="0.5" pY="0.5" oX="61" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_02_ 0" x="169" y="71" w="6" h="5" pX="0.5" pY="0.5" oX="61" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_48_ 5" x="168" y="113" w="3" h="6" pX="0.5" pY="0.5" oX="57" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_04_ 0" x="169" y="76" w="6" h="5" pX="0.5" pY="0.5" oX="61" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_23_ 7" x="169" y="81" w="3" h="6" pX="0.5" pY="0.5" oX="67" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_16_ 5" x="0" y="174" w="4" h="6" pX="0.5" pY="0.5" oX="54" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_17_ 5" x="4" y="174" w="4" h="6" pX="0.5" pY="0.5" oX="54" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_08_ 0" x="64" y="170" w="6" h="5" pX="0.5" pY="0.5" oX="62" oY="48" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_18_ 5" x="8" y="174" w="4" h="6" pX="0.5" pY="0.5" oX="54" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_10_ 1" x="70" y="174" w="6" h="6" pX="0.5" pY="0.5" oX="57" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_11_ 1" x="12" y="174" w="6" h="6" pX="0.5" pY="0.5" oX="57" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_18_ 5" x="172" y="81" w="3" h="6" pX="0.5" pY="0.5" oX="53" oY="54" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_24_ 7" x="61" y="173" w="3" h="6" pX="0.5" pY="0.5" oX="67" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_18_ 2" x="76" y="174" w="6" h="6" pX="0.5" pY="0.5" oX="71" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_22_ 7" x="18" y="174" w="3" h="6" pX="0.5" pY="0.5" oX="71" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_16_ 1" x="82" y="174" w="4" h="6" pX="0.5" pY="0.5" oX="56" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_23_ 7" x="21" y="174" w="3" h="6" pX="0.5" pY="0.5" oX="71" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_24_ 7" x="86" y="174" w="3" h="6" pX="0.5" pY="0.5" oX="71" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_19_ 2" x="24" y="174" w="6" h="6" pX="0.5" pY="0.5" oX="71" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_20_ 2" x="89" y="174" w="6" h="6" pX="0.5" pY="0.5" oX="71" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_attack1_01_ 0" x="64" y="175" w="6" h="4" pX="0.5" pY="0.5" oX="75" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_23_ 7" x="156" y="14" w="2" h="6" pX="0.5" pY="0.5" oX="72" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_23_ 2" x="30" y="174" w="3" h="6" pX="0.5" pY="0.5" oX="69" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_20_ 6" x="95" y="174" w="4" h="6" pX="0.5" pY="0.5" oX="46" oY="69" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_21_ 6" x="84" y="141" w="6" h="2" pX="0.5" pY="0.5" oX="59" oY="61" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical2_01_ 0" x="33" y="174" w="6" h="6" pX="0.5" pY="0.5" oX="79" oY="69" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_58_ 7" x="99" y="174" w="3" h="6" pX="0.5" pY="0.5" oX="69" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_09_ 2" x="39" y="174" w="6" h="6" pX="0.5" pY="0.5" oX="66" oY="52" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_24_ 7" x="102" y="174" w="3" h="6" pX="0.5" pY="0.5" oX="52" oY="70" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_attack1_02_ 0" x="105" y="172" w="6" h="5" pX="0.5" pY="0.5" oX="85" oY="57" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_07_ 2" x="45" y="174" w="6" h="5" pX="0.5" pY="0.5" oX="66" oY="45" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical2_03_ 0" x="111" y="174" w="6" h="6" pX="0.5" pY="0.5" oX="78" oY="70" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_64_ 7" x="51" y="174" w="3" h="6" pX="0.5" pY="0.5" oX="69" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical3_02_ 0" x="117" y="174" w="5" h="5" pX="0.5" pY="0.5" oX="80" oY="69" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_52_ 6" x="54" y="174" w="5" h="5" pX="0.5" pY="0.5" oX="69" oY="49" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_46_ 5" x="37" y="143" w="3" h="5" pX="0.5" pY="0.5" oX="54" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_21_ 6" x="122" y="174" w="5" h="5" pX="0.5" pY="0.5" oX="67" oY="81" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_11_ 3" x="171" y="136" w="3" h="5" pX="0.5" pY="0.5" oX="63" oY="42" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical3_01_ 0" x="127" y="174" w="5" h="5" pX="0.5" pY="0.5" oX="81" oY="69" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_23_ 7" x="132" y="174" w="4" h="5" pX="0.5" pY="0.5" oX="66" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_stance5_03_ 0" x="136" y="173" w="5" h="5" pX="0.5" pY="0.5" oX="64" oY="60" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_12_ 3" x="141" y="173" w="3" h="5" pX="0.5" pY="0.5" oX="58" oY="80" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_critical3_03_ 0" x="144" y="173" w="5" h="5" pX="0.5" pY="0.5" oX="79" oY="69" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_24_ 7" x="138" y="41" w="3" h="4" pX="0.5" pY="0.5" oX="76" oY="70" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_11_ 3" x="147" y="9" w="1" h="4" pX="0.5" pY="0.5" oX="66" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_03_ 0" x="45" y="148" w="1" h="4" pX="0.5" pY="0.5" oX="61" oY="84" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_06_ 1" x="137" y="6" w="3" h="2" pX="0.5" pY="0.5" oX="51" oY="77" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_14_ 4" x="136" y="54" w="2" h="1" pX="0.5" pY="0.5" oX="61" oY="65" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_17_ 5" x="136" y="80" w="2" h="1" pX="0.5" pY="0.5" oX="53" oY="55" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_12_ 3" x="30" y="134" w="2" h="2" pX="0.5" pY="0.5" oX="66" oY="62" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_17_ 5" x="52" y="152" w="1" h="1" pX="0.5" pY="0.5" oX="91" oY="92" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_05_ 1" x="65" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="90" oY="84" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_17_ 5" x="144" y="140" w="1" h="1" pX="0.5" pY="0.5" oX="67" oY="47" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_18_ 5" x="154" y="36" w="1" h="1" pX="0.5" pY="0.5" oX="53" oY="69" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_05_ 1" x="9" y="152" w="1" h="1" pX="0.5" pY="0.5" oX="52" oY="61" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_11_ 3" x="156" y="28" w="1" h="1" pX="0.5" pY="0.5" oX="60" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_25_ 3" x="154" y="66" w="1" h="1" pX="0.5" pY="0.5" oX="60" oY="40" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_01_ 0" x="23" y="153" w="7" h="7" pX="0.5" pY="0.5" oX="61" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_01_ 0" x="23" y="153" w="7" h="7" pX="0.5" pY="0.5" oX="61" oY="46" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_10_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_collapse_15_ 4" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_02_ 0" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_06_ 1" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_14_ 4" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_15_ 4" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead_18_ 5" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_10_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_11_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_12_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_10_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_11_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle2_12_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_10_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_12_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_10_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_25_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_26_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_27_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_28_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_29_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_30_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_31_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_running_32_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_10_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_11_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting1_12_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_10_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_11_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_sitting2_12_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_26_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_27_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_28_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_29_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_30_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_31_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_walking_32_ 3" x="0" y="0" w="128" h="128" pX="0.5" pY="0.5"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_04_ 1" x="55" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_04_ 1" x="55" y="167" w="6" h="7" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_07_ 2" x="82" y="167" w="6" h="6" pX="0.5" pY="0.5" oX="65" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_07_ 2" x="82" y="167" w="6" h="6" pX="0.5" pY="0.5" oX="65" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_13_ 4" x="128" y="98" w="10" h="9" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_13_ 4" x="128" y="98" w="10" h="9" pX="0.5" pY="0.5" oX="58" oY="43" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_16_ 5" x="163" y="94" w="3" h="6" pX="0.5" pY="0.5" oX="58" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_16_ 5" x="163" y="94" w="3" h="6" pX="0.5" pY="0.5" oX="58" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_19_ 6" x="138" y="88" w="9" h="8" pX="0.5" pY="0.5" oX="62" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_19_ 6" x="138" y="88" w="9" h="8" pX="0.5" pY="0.5" oX="62" oY="44" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_idle1_22_ 7" x="155" y="167" w="4" h="6" pX="0.5" pY="0.5" oX="67" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_kneel_22_ 7" x="155" y="167" w="4" h="6" pX="0.5" pY="0.5" oX="67" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_ko_22_ 7" x="155" y="167" w="4" h="6" pX="0.5" pY="0.5" oX="67" oY="41" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead1_03_ 0" x="84" y="134" w="9" h="7" pX="0.5" pY="0.5" oX="96" oY="81" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead2_02_ 0" x="147" y="85" w="8" h="8" pX="0.5" pY="0.5" oX="82" oY="84" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead3_02_ 0" x="0" y="128" w="10" h="8" pX="0.5" pY="0.5" oX="98" oY="76" oW="128" oH="128"/>
+  <sprite n="Medieval_Underdeep_Dwarves_Male_FacialHair_5_dead3_03_ 0" x="0" y="128" w="10" h="8" pX="0.5" pY="0.5" oX="98" oY="76" oW="128" oH="128"/>
+</TextureAtlas>

@@ -14,7 +14,7 @@ oY => y-corner offset
 oW => original width
 oH => original height
 r => 'y' if sprite is rotated-->
-<TextureAtlas imagePath="meat_zombie.png" width="2695" height="2707" scale="1" format="RGBA8888">
+<TextureAtlas imagePath="Meat_Zombie.png" width="2695" height="2707" scale="1" format="RGBA8888">
   <sprite n="Meat_Zombie_Attack Bow_01_ 0" x="1326" y="182" w="40" h="90" pX="0.5" pY="0.5" oX="66" oY="56" oW="160" oH="160"/>
   <sprite n="Meat_Zombie_Attack Bow_02_ 0" x="983" y="86" w="29" h="94" pX="0.5" pY="0.5" oX="66" oY="51" oW="160" oH="160"/>
   <sprite n="Meat_Zombie_Attack Bow_03_ 0" x="1039" y="650" w="29" h="94" pX="0.5" pY="0.5" oX="66" oY="52" oW="160" oH="160"/>

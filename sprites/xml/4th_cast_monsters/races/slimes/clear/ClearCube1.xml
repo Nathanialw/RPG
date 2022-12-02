@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="ClearCube1.png" width="4500" height="4472" scale="1" format="RGBA8888">
+  <sprite n="ClearCube1_Attack 1_01_ 0" x="1241" y="3645" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_02_ 0" x="689" y="2749" w="186" h="222" pX="0.5" pY="0.5" oX="80" oY="32" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_03_ 0" x="3078" y="2236" w="205" h="228" pX="0.5" pY="0.5" oX="71" oY="61" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_04_ 1" x="3673" y="1881" w="156" h="209" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_05_ 1" x="1430" y="3426" w="190" h="216" pX="0.5" pY="0.5" oX="80" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_06_ 1" x="2666" y="2636" w="235" h="210" pX="0.5" pY="0.5" oX="28" oY="68" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_07_ 2" x="3673" y="0" w="156" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_08_ 2" x="3098" y="460" w="190" h="227" pX="0.5" pY="0.5" oX="80" oY="33" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_09_ 2" x="454" y="2749" w="235" h="223" pX="0.5" pY="0.5" oX="87" oY="57" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_10_ 3" x="3673" y="209" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_11_ 3" x="651" y="3430" w="186" h="220" pX="0.5" pY="0.5" oX="84" oY="47" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_12_ 3" x="2142" y="3081" w="205" h="225" pX="0.5" pY="0.5" oX="74" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_13_ 4" x="1263" y="1250" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_14_ 4" x="1272" y="1499" w="212" h="248" pX="0.5" pY="0.5" oX="75" oY="27" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_15_ 4" x="1823" y="3413" w="215" h="212" pX="0.5" pY="0.5" oX="50" oY="62" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_16_ 5" x="1345" y="249" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_17_ 5" x="1767" y="1741" w="210" h="244" pX="0.5" pY="0.5" oX="77" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_18_ 5" x="3299" y="672" w="202" h="223" pX="0.5" pY="0.5" oX="50" oY="37" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_19_ 6" x="210" y="1038" w="211" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_20_ 6" x="1977" y="1708" w="210" h="243" pX="0.5" pY="0.5" oX="63" oY="33" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_21_ 6" x="3340" y="3357" w="201" h="211" pX="0.5" pY="0.5" oX="98" oY="65" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_22_ 7" x="882" y="1015" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_23_ 7" x="1343" y="2249" w="212" h="239" pX="0.5" pY="0.5" oX="63" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 1_24_ 7" x="2233" y="3372" w="215" h="213" pX="0.5" pY="0.5" oX="85" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_01_ 0" x="1989" y="3837" w="178" h="207" pX="0.5" pY="0.5" oX="86" oY="65" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_02_ 0" x="2191" y="4273" w="168" h="194" pX="0.5" pY="0.5" oX="92" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_03_ 0" x="3107" y="4273" w="188" h="192" pX="0.5" pY="0.5" oX="77" oY="77" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_04_ 1" x="3992" y="2074" w="181" h="205" pX="0.5" pY="0.5" oX="83" oY="65" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_05_ 1" x="2666" y="2401" w="197" h="235" pX="0.5" pY="0.5" oX="115" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_06_ 1" x="2422" y="1705" w="214" h="237" pX="0.5" pY="0.5" oX="22" oY="22" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_07_ 2" x="2167" y="3837" w="181" h="207" pX="0.5" pY="0.5" oX="86" oY="64" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_08_ 2" x="1555" y="2234" w="197" h="239" pX="0.5" pY="0.5" oX="38" oY="26" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_09_ 2" x="0" y="2032" w="214" h="243" pX="0.5" pY="0.5" oX="114" oY="15" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_10_ 3" x="3994" y="375" w="178" h="205" pX="0.5" pY="0.5" oX="86" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_11_ 3" x="3904" y="4273" w="168" h="189" pX="0.5" pY="0.5" oX="90" oY="94" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_12_ 3" x="3482" y="1987" w="188" h="214" pX="0.5" pY="0.5" oX="85" oY="33" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_13_ 4" x="451" y="2274" w="226" h="239" pX="0.5" pY="0.5" oX="63" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_14_ 4" x="2204" y="1464" w="241" h="241" pX="0.5" pY="0.5" oX="81" oY="28" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_15_ 4" x="1960" y="1470" w="244" h="238" pX="0.5" pY="0.5" oX="22" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_16_ 5" x="2153" y="724" w="226" h="240" pX="0.5" pY="0.5" oX="63" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_17_ 5" x="2193" y="1226" w="241" h="238" pX="0.5" pY="0.5" oX="81" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_18_ 5" x="0" y="786" w="234" h="252" pX="0.5" pY="0.5" oX="33" oY="17" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_19_ 6" x="1117" y="2249" w="226" h="239" pX="0.5" pY="0.5" oX="61" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_20_ 6" x="1992" y="0" w="241" h="244" pX="0.5" pY="0.5" oX="28" oY="26" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_21_ 6" x="1937" y="2657" w="234" h="226" pX="0.5" pY="0.5" oX="83" oY="59" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_22_ 7" x="2194" y="964" w="226" h="240" pX="0.5" pY="0.5" oX="61" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_23_ 7" x="1076" y="2007" w="241" h="242" pX="0.5" pY="0.5" oX="28" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Attack 2_24_ 7" x="0" y="266" w="244" h="264" pX="0.5" pY="0.5" oX="84" oY="5" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_01_ 0" x="1550" y="3642" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_02_ 0" x="1620" y="3415" w="203" h="216" pX="0.5" pY="0.5" oX="77" oY="47" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_03_ 0" x="632" y="1021" w="250" h="220" pX="0.5" pY="0.5" oX="61" oY="45" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_04_ 1" x="3673" y="1463" w="156" h="209" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_05_ 1" x="2901" y="1312" w="177" h="219" pX="0.5" pY="0.5" oX="80" oY="43" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_06_ 1" x="2953" y="3148" w="195" h="224" pX="0.5" pY="0.5" oX="65" oY="40" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_07_ 2" x="3673" y="1254" w="156" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_08_ 2" x="2901" y="1531" w="177" h="217" pX="0.5" pY="0.5" oX="93" oY="45" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_09_ 2" x="235" y="2750" w="195" h="222" pX="0.5" pY="0.5" oX="90" oY="42" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_10_ 3" x="3673" y="1045" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_11_ 3" x="837" y="3430" w="203" h="219" pX="0.5" pY="0.5" oX="70" oY="43" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_12_ 3" x="884" y="0" w="250" h="224" pX="0.5" pY="0.5" oX="39" oY="40" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_13_ 4" x="0" y="1537" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_14_ 4" x="214" y="2032" w="214" h="243" pX="0.5" pY="0.5" oX="68" oY="39" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_15_ 4" x="440" y="1786" w="245" h="232" pX="0.5" pY="0.5" oX="39" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_16_ 5" x="0" y="1288" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_17_ 5" x="226" y="1786" w="214" h="245" pX="0.5" pY="0.5" oX="69" oY="37" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_18_ 5" x="894" y="2500" w="218" h="236" pX="0.5" pY="0.5" oX="67" oY="47" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_19_ 6" x="1090" y="502" w="211" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_20_ 6" x="1553" y="1742" w="214" h="245" pX="0.5" pY="0.5" oX="67" oY="37" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_21_ 6" x="2212" y="484" w="217" h="240" pX="0.5" pY="0.5" oX="66" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_22_ 7" x="421" y="1037" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_23_ 7" x="1484" y="1495" w="214" h="247" pX="0.5" pY="0.5" oX="68" oY="35" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Behavior_24_ 7" x="685" y="1762" w="245" h="241" pX="0.5" pY="0.5" oX="66" oY="42" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_01_ 0" x="190" y="4072" w="156" h="203" pX="0.5" pY="0.5" oX="97" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_02_ 0" x="2033" y="4242" w="158" h="194" pX="0.5" pY="0.5" oX="96" oY="69" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_03_ 0" x="4336" y="2479" w="164" h="176" pX="0.5" pY="0.5" oX="93" oY="91" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_04_ 1" x="3994" y="2279" w="157" h="205" pX="0.5" pY="0.5" oX="96" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_05_ 1" x="1092" y="4269" w="162" h="196" pX="0.5" pY="0.5" oX="95" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_06_ 1" x="4311" y="1526" w="175" h="181" pX="0.5" pY="0.5" oX="90" oY="85" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_07_ 2" x="3994" y="580" w="158" h="205" pX="0.5" pY="0.5" oX="96" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_08_ 2" x="150" y="4275" w="162" h="197" pX="0.5" pY="0.5" oX="93" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_09_ 2" x="4321" y="1344" w="175" h="182" pX="0.5" pY="0.5" oX="85" oY="84" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_10_ 3" x="4201" y="0" w="156" h="201" pX="0.5" pY="0.5" oX="97" oY="60" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_11_ 3" x="3746" y="4273" w="158" h="190" pX="0.5" pY="0.5" oX="96" oY="75" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_12_ 3" x="4336" y="3496" w="164" h="167" pX="0.5" pY="0.5" oX="93" oY="105" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_13_ 4" x="2468" y="238" w="205" h="238" pX="0.5" pY="0.5" oX="73" oY="40" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_14_ 4" x="2038" y="3412" w="195" h="215" pX="0.5" pY="0.5" oX="80" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_15_ 4" x="3098" y="687" w="176" h="175" pX="0.5" pY="0.5" oX="93" oY="90" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_16_ 5" x="1971" y="2193" w="205" h="238" pX="0.5" pY="0.5" oX="74" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_17_ 5" x="1040" y="3429" w="195" h="217" pX="0.5" pY="0.5" oX="80" oY="60" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_18_ 5" x="4321" y="979" w="175" h="183" pX="0.5" pY="0.5" oX="93" oY="91" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_19_ 6" x="2379" y="724" w="206" h="238" pX="0.5" pY="0.5" oX="71" oY="40" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_20_ 6" x="3287" y="2007" w="195" h="216" pX="0.5" pY="0.5" oX="75" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_21_ 6" x="4172" y="400" w="175" h="175" pX="0.5" pY="0.5" oX="82" oY="90" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_22_ 7" x="2468" y="0" w="205" h="238" pX="0.5" pY="0.5" oX="72" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_23_ 7" x="1235" y="3428" w="195" h="217" pX="0.5" pY="0.5" oX="75" oY="60" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Block_24_ 7" x="4321" y="1162" w="176" h="182" pX="0.5" pY="0.5" oX="81" oY="92" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_01_ 0" x="1402" y="4063" w="178" h="203" pX="0.5" pY="0.5" oX="87" oY="68" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_02_ 0" x="3144" y="4003" w="181" h="202" pX="0.5" pY="0.5" oX="85" oY="70" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_03_ 0" x="2528" y="4002" w="186" h="202" pX="0.5" pY="0.5" oX="81" oY="71" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_04_ 1" x="1580" y="4056" w="182" h="203" pX="0.5" pY="0.5" oX="85" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_05_ 1" x="2735" y="4000" w="185" h="202" pX="0.5" pY="0.5" oX="83" oY="69" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_06_ 1" x="506" y="4071" w="188" h="203" pX="0.5" pY="0.5" oX="82" oY="70" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_07_ 2" x="3994" y="2892" w="182" h="204" pX="0.5" pY="0.5" oX="83" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_08_ 2" x="3983" y="3504" w="184" h="204" pX="0.5" pY="0.5" oX="82" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_09_ 2" x="3999" y="3300" w="188" h="204" pX="0.5" pY="0.5" oX="80" oY="68" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_10_ 3" x="4172" y="201" w="178" h="199" pX="0.5" pY="0.5" oX="85" oY="72" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_11_ 3" x="4173" y="2062" w="181" h="199" pX="0.5" pY="0.5" oX="84" oY="73" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_12_ 3" x="4101" y="3911" w="186" h="197" pX="0.5" pY="0.5" oX="83" oY="76" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_13_ 4" x="1444" y="2959" w="220" h="230" pX="0.5" pY="0.5" oX="67" oY="54" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_14_ 4" x="3031" y="2920" w="221" h="228" pX="0.5" pY="0.5" oX="67" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_15_ 4" x="2908" y="233" w="223" h="227" pX="0.5" pY="0.5" oX="66" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_16_ 5" x="3078" y="2464" w="220" h="228" pX="0.5" pY="0.5" oX="67" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_17_ 5" x="1856" y="3187" w="221" h="225" pX="0.5" pY="0.5" oX="67" oY="61" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_18_ 5" x="223" y="3430" w="222" h="222" pX="0.5" pY="0.5" oX="67" oY="65" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_19_ 6" x="2586" y="2846" w="220" h="230" pX="0.5" pY="0.5" oX="63" oY="54" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_20_ 6" x="3078" y="1320" w="221" h="229" pX="0.5" pY="0.5" oX="62" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_21_ 6" x="3031" y="2692" w="222" h="228" pX="0.5" pY="0.5" oX="61" oY="57" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_22_ 7" x="820" y="2971" w="220" h="231" pX="0.5" pY="0.5" oX="63" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_23_ 7" x="3078" y="862" w="221" h="229" pX="0.5" pY="0.5" oX="62" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Critical HP_24_ 7" x="642" y="3203" w="223" h="227" pX="0.5" pY="0.5" oX="61" oY="60" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_01_ 0" x="896" y="4066" w="171" h="203" pX="0.5" pY="0.5" oX="90" oY="64" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_02_ 0" x="1067" y="4066" w="185" h="203" pX="0.5" pY="0.5" oX="83" oY="70" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_03_ 0" x="1782" y="4040" w="202" h="203" pX="0.5" pY="0.5" oX="75" oY="77" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_04_ 1" x="3989" y="3096" w="173" h="204" pX="0.5" pY="0.5" oX="89" oY="63" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_05_ 1" x="0" y="4072" w="190" h="203" pX="0.5" pY="0.5" oX="81" oY="70" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_06_ 1" x="2735" y="3796" w="207" h="204" pX="0.5" pY="0.5" oX="73" oY="77" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_07_ 2" x="3986" y="1869" w="173" h="205" pX="0.5" pY="0.5" oX="88" oY="62" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_08_ 2" x="3994" y="2688" w="190" h="204" pX="0.5" pY="0.5" oX="79" oY="69" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_09_ 2" x="2528" y="3797" w="207" h="205" pX="0.5" pY="0.5" oX="70" oY="75" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_10_ 3" x="3485" y="3981" w="170" h="201" pX="0.5" pY="0.5" oX="89" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_11_ 3" x="4171" y="780" w="186" h="199" pX="0.5" pY="0.5" oX="81" oY="75" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_12_ 3" x="1984" y="4044" w="202" h="198" pX="0.5" pY="0.5" oX="73" oY="83" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_13_ 4" x="2863" y="2401" w="215" h="232" pX="0.5" pY="0.5" oX="69" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_14_ 4" x="0" y="3203" w="225" h="227" pX="0.5" pY="0.5" oX="65" oY="59" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_15_ 4" x="2673" y="185" w="235" h="221" pX="0.5" pY="0.5" oX="61" oY="69" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_16_ 5" x="0" y="2972" w="214" h="231" pX="0.5" pY="0.5" oX="70" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_17_ 5" x="1052" y="3202" w="225" h="226" pX="0.5" pY="0.5" oX="65" oY="62" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_18_ 5" x="2669" y="853" w="235" h="219" pX="0.5" pY="0.5" oX="61" oY="73" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_19_ 6" x="2171" y="2618" w="215" h="233" pX="0.5" pY="0.5" oX="66" oY="49" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_20_ 6" x="225" y="3203" w="225" h="227" pX="0.5" pY="0.5" oX="60" oY="59" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_21_ 6" x="2666" y="1512" w="235" h="223" pX="0.5" pY="0.5" oX="54" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_22_ 7" x="1319" y="2725" w="215" h="234" pX="0.5" pY="0.5" oX="66" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_23_ 7" x="2806" y="2846" w="225" h="230" pX="0.5" pY="0.5" oX="60" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Dead To Down_24_ 7" x="2666" y="2177" w="235" h="224" pX="0.5" pY="0.5" oX="54" oY="68" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_1_01_ 0" x="4171" y="580" w="186" h="200" pX="0.5" pY="0.5" oX="82" oY="77" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_1_02_ 1" x="4151" y="2279" w="191" h="200" pX="0.5" pY="0.5" oX="78" oY="75" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_1_03_ 2" x="4162" y="3096" w="191" h="200" pX="0.5" pY="0.5" oX="81" oY="75" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_1_04_ 3" x="3894" y="4079" w="186" h="194" pX="0.5" pY="0.5" oX="82" oY="81" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_1_05_ 4" x="3253" y="2692" w="223" h="221" pX="0.5" pY="0.5" oX="66" oY="65" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_1_06_ 5" x="0" y="3430" w="223" h="223" pX="0.5" pY="0.5" oX="66" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_1_07_ 6" x="3252" y="3136" w="223" h="221" pX="0.5" pY="0.5" oX="61" oY="65" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_1_08_ 7" x="3253" y="2913" w="223" h="223" pX="0.5" pY="0.5" oX="61" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_2_01_ 0" x="3983" y="3708" w="202" h="203" pX="0.5" pY="0.5" oX="75" oY="77" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_2_02_ 1" x="1575" y="3852" w="207" h="204" pX="0.5" pY="0.5" oX="73" oY="77" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_2_03_ 2" x="1782" y="3835" w="207" h="205" pX="0.5" pY="0.5" oX="70" oY="75" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_2_04_ 3" x="2186" y="4044" w="202" h="198" pX="0.5" pY="0.5" oX="73" oY="83" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_2_05_ 4" x="0" y="2751" w="235" h="221" pX="0.5" pY="0.5" oX="61" oY="69" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_2_06_ 5" x="2666" y="1958" w="235" h="219" pX="0.5" pY="0.5" oX="61" oY="73" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_2_07_ 6" x="2666" y="1735" w="235" h="223" pX="0.5" pY="0.5" oX="54" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_2_08_ 7" x="2666" y="2177" w="235" h="224" pX="0.5" pY="0.5" oX="54" oY="68" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_3_01_ 0" x="694" y="4070" w="202" h="203" pX="0.5" pY="0.5" oX="75" oY="77" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_3_02_ 1" x="3485" y="3777" w="207" h="204" pX="0.5" pY="0.5" oX="73" oY="77" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_3_03_ 2" x="3692" y="3732" w="207" h="205" pX="0.5" pY="0.5" oX="70" oY="75" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_3_04_ 3" x="3692" y="3937" w="202" h="198" pX="0.5" pY="0.5" oX="73" oY="83" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_3_05_ 4" x="2666" y="1291" w="235" h="221" pX="0.5" pY="0.5" oX="61" oY="69" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_3_06_ 5" x="2669" y="1072" w="235" h="219" pX="0.5" pY="0.5" oX="61" oY="73" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_3_07_ 6" x="2669" y="630" w="235" h="223" pX="0.5" pY="0.5" oX="54" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_3_08_ 7" x="2673" y="406" w="235" h="224" pX="0.5" pY="0.5" oX="54" oY="68" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_4_01_ 0" x="3899" y="3911" w="202" h="168" pX="0.5" pY="0.5" oX="75" oY="113" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_4_02_ 1" x="2942" y="3796" w="207" h="169" pX="0.5" pY="0.5" oX="73" oY="112" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_4_03_ 2" x="3994" y="0" w="207" h="169" pX="0.5" pY="0.5" oX="70" oY="111" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_4_04_ 3" x="2942" y="3965" w="202" h="164" pX="0.5" pY="0.5" oX="73" oY="118" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_4_05_ 4" x="2673" y="0" w="235" h="185" pX="0.5" pY="0.5" oX="61" oY="105" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_4_06_ 5" x="1781" y="2472" w="235" h="185" pX="0.5" pY="0.5" oX="61" oY="108" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_4_07_ 6" x="1546" y="2488" w="235" h="187" pX="0.5" pY="0.5" oX="54" oY="103" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Down_4_08_ 7" x="2176" y="2428" w="235" h="190" pX="0.5" pY="0.5" oX="54" oY="103" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_01_ 0" x="3983" y="1045" w="152" h="206" pX="0.5" pY="0.5" oX="98" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_02_ 0" x="4158" y="1457" w="147" h="200" pX="0.5" pY="0.5" oX="101" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_03_ 0" x="2388" y="4004" w="139" h="191" pX="0.5" pY="0.5" oX="105" oY="57" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_04_ 1" x="3325" y="4003" w="151" h="202" pX="0.5" pY="0.5" oX="103" oY="54" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_05_ 1" x="2509" y="4273" w="148" h="193" pX="0.5" pY="0.5" oX="109" oY="59" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_06_ 1" x="4357" y="186" w="143" h="184" pX="0.5" pY="0.5" oX="114" oY="64" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_07_ 2" x="3984" y="1663" w="151" h="206" pX="0.5" pY="0.5" oX="96" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_08_ 2" x="4135" y="1039" w="148" h="199" pX="0.5" pY="0.5" oX="93" oY="53" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_09_ 2" x="4357" y="0" w="143" h="186" pX="0.5" pY="0.5" oX="93" oY="62" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_10_ 3" x="4159" y="1863" w="152" h="199" pX="0.5" pY="0.5" oX="100" oY="59" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_11_ 3" x="4072" y="4273" w="147" h="186" pX="0.5" pY="0.5" oX="102" oY="69" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_12_ 3" x="4357" y="546" w="139" h="175" pX="0.5" pY="0.5" oX="106" oY="79" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_13_ 4" x="1745" y="2675" w="192" h="234" pX="0.5" pY="0.5" oX="80" oY="38" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_14_ 4" x="3503" y="0" w="170" h="214" pX="0.5" pY="0.5" oX="92" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_15_ 4" x="4185" y="3704" w="151" h="198" pX="0.5" pY="0.5" oX="103" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_16_ 5" x="1665" y="3187" w="191" h="226" pX="0.5" pY="0.5" oX="81" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_17_ 5" x="4187" y="3296" w="169" h="200" pX="0.5" pY="0.5" oX="93" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_18_ 5" x="4350" y="370" w="150" h="176" pX="0.5" pY="0.5" oX="104" oY="84" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_19_ 6" x="2908" y="0" w="191" h="233" pX="0.5" pY="0.5" oX="78" oY="39" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_20_ 6" x="3503" y="214" w="169" h="212" pX="0.5" pY="0.5" oX="88" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_21_ 6" x="3295" y="4273" w="150" h="192" pX="0.5" pY="0.5" oX="96" oY="62" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_22_ 7" x="450" y="3203" w="192" h="227" pX="0.5" pY="0.5" oX="78" oY="47" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_23_ 7" x="3829" y="3300" w="170" h="204" pX="0.5" pY="0.5" oX="88" oY="63" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Evade_24_ 7" x="3595" y="4273" w="151" h="190" pX="0.5" pY="0.5" oX="96" oY="70" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_01_ 0" x="2619" y="3372" w="162" h="214" pX="0.5" pY="0.5" oX="93" oY="49" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_02_ 0" x="865" y="3202" w="187" h="227" pX="0.5" pY="0.5" oX="77" oY="37" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_03_ 0" x="1474" y="1247" w="233" h="248" pX="0.5" pY="0.5" oX="49" oY="19" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_04_ 1" x="368" y="3652" w="161" h="211" pX="0.5" pY="0.5" oX="95" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_05_ 1" x="2904" y="862" w="173" h="227" pX="0.5" pY="0.5" oX="92" oY="37" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_06_ 1" x="880" y="515" w="210" h="250" pX="0.5" pY="0.5" oX="80" oY="18" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_07_ 2" x="2016" y="3627" w="161" h="210" pX="0.5" pY="0.5" oX="94" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_08_ 2" x="2904" y="1089" w="173" h="223" pX="0.5" pY="0.5" oX="85" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_09_ 2" x="1943" y="494" w="210" h="244" pX="0.5" pY="0.5" oX="60" oY="23" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_10_ 3" x="3498" y="1768" w="162" h="212" pX="0.5" pY="0.5" oX="95" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_11_ 3" x="3283" y="2236" w="187" h="224" pX="0.5" pY="0.5" oX="86" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_12_ 3" x="1513" y="993" w="233" h="247" pX="0.5" pY="0.5" oX="68" oY="22" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_13_ 4" x="930" y="1762" w="208" h="245" pX="0.5" pY="0.5" oX="72" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_14_ 4" x="672" y="0" w="212" h="252" pX="0.5" pY="0.5" oX="71" oY="27" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_15_ 4" x="448" y="0" w="224" h="264" pX="0.5" pY="0.5" oX="70" oY="17" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_16_ 5" x="1946" y="738" w="207" h="244" pX="0.5" pY="0.5" oX="73" oY="36" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_17_ 5" x="0" y="1038" w="210" h="250" pX="0.5" pY="0.5" oX="72" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_18_ 5" x="0" y="530" w="224" h="256" pX="0.5" pY="0.5" oX="64" oY="27" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_19_ 6" x="1138" y="1762" w="207" h="245" pX="0.5" pY="0.5" oX="70" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_20_ 6" x="457" y="264" w="210" h="254" pX="0.5" pY="0.5" oX="68" oY="26" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_21_ 6" x="0" y="0" w="224" h="266" pX="0.5" pY="0.5" oX="62" oY="15" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_22_ 7" x="1345" y="1747" w="208" h="245" pX="0.5" pY="0.5" oX="70" oY="35" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_23_ 7" x="457" y="518" w="212" h="253" pX="0.5" pY="0.5" oX="67" oY="28" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Get Hit_24_ 7" x="224" y="0" w="224" h="265" pX="0.5" pY="0.5" oX="56" oY="18" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_01_ 0" x="3829" y="0" w="161" h="209" pX="0.5" pY="0.5" oX="95" oY="54" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_02_ 0" x="3652" y="2896" w="173" h="209" pX="0.5" pY="0.5" oX="89" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_03_ 0" x="3659" y="2201" w="163" h="209" pX="0.5" pY="0.5" oX="94" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_04_ 1" x="3829" y="1254" w="163" h="208" pX="0.5" pY="0.5" oX="93" oY="54" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_05_ 1" x="3635" y="3523" w="174" h="209" pX="0.5" pY="0.5" oX="88" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_06_ 1" x="3827" y="836" w="165" h="209" pX="0.5" pY="0.5" oX="92" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_07_ 2" x="394" y="3863" w="163" h="208" pX="0.5" pY="0.5" oX="94" oY="54" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_08_ 2" x="3809" y="3523" w="174" h="209" pX="0.5" pY="0.5" oX="88" oY="58" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_09_ 2" x="3829" y="2834" w="165" h="208" pX="0.5" pY="0.5" oX="93" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_10_ 3" x="557" y="3862" w="161" h="208" pX="0.5" pY="0.5" oX="94" oY="54" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_11_ 3" x="718" y="3862" w="173" h="208" pX="0.5" pY="0.5" oX="88" oY="59" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_12_ 3" x="3472" y="3568" w="163" h="209" pX="0.5" pY="0.5" oX="93" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_13_ 4" x="1730" y="742" w="216" h="247" pX="0.5" pY="0.5" oX="67" oY="35" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_14_ 4" x="1988" y="247" w="224" h="244" pX="0.5" pY="0.5" oX="64" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_15_ 4" x="1513" y="746" w="217" h="247" pX="0.5" pY="0.5" oX="67" oY="36" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_16_ 5" x="1773" y="247" w="215" h="247" pX="0.5" pY="0.5" oX="68" oY="35" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_17_ 5" x="1970" y="982" w="224" h="244" pX="0.5" pY="0.5" oX="64" oY="42" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_18_ 5" x="1698" y="1495" w="217" h="246" pX="0.5" pY="0.5" oX="67" oY="37" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_19_ 6" x="1728" y="495" w="215" h="247" pX="0.5" pY="0.5" oX="67" oY="35" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_20_ 6" x="1970" y="1226" w="223" h="244" pX="0.5" pY="0.5" oX="62" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_21_ 6" x="1556" y="248" w="217" h="247" pX="0.5" pY="0.5" oX="66" oY="36" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_22_ 7" x="1512" y="498" w="216" h="248" pX="0.5" pY="0.5" oX="67" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_23_ 7" x="1746" y="989" w="224" h="246" pX="0.5" pY="0.5" oX="62" oY="40" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle Fidget_24_ 7" x="633" y="1514" w="217" h="248" pX="0.5" pY="0.5" oX="66" oY="35" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_01_ 0" x="3501" y="1056" w="154" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_02_ 0" x="3318" y="3586" w="154" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_03_ 0" x="2177" y="3627" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_04_ 0" x="2332" y="3587" w="157" h="210" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_05_ 0" x="2489" y="3587" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_06_ 1" x="2644" y="3586" w="155" h="210" pX="0.5" pY="0.5" oX="97" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_07_ 1" x="3828" y="1045" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_08_ 1" x="3828" y="1672" w="156" h="209" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_09_ 1" x="3829" y="1881" w="157" h="208" pX="0.5" pY="0.5" oX="96" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_10_ 1" x="3673" y="3314" w="156" h="209" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_11_ 2" x="3829" y="1462" w="155" h="208" pX="0.5" pY="0.5" oX="98" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_12_ 2" x="3673" y="2410" w="155" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_13_ 2" x="3673" y="3105" w="156" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_14_ 2" x="3499" y="1552" w="157" h="210" pX="0.5" pY="0.5" oX="97" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_15_ 2" x="3673" y="1672" w="155" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_16_ 3" x="1396" y="3645" w="154" h="210" pX="0.5" pY="0.5" oX="98" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_17_ 3" x="3673" y="836" w="154" h="209" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_18_ 3" x="3673" y="627" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_19_ 3" x="3501" y="636" w="157" h="210" pX="0.5" pY="0.5" oX="96" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_20_ 3" x="3673" y="418" w="155" h="209" pX="0.5" pY="0.5" oX="97" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_21_ 4" x="633" y="1265" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_22_ 4" x="423" y="1287" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_23_ 4" x="0" y="1537" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_24_ 4" x="211" y="1288" w="212" h="249" pX="0.5" pY="0.5" oX="69" oY="32" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_25_ 4" x="850" y="1514" w="211" h="248" pX="0.5" pY="0.5" oX="69" oY="32" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_26_ 5" x="1093" y="1001" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_27_ 5" x="1092" y="752" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_28_ 5" x="422" y="1537" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_29_ 5" x="211" y="1537" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="32" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_30_ 5" x="1556" y="0" w="211" h="248" pX="0.5" pY="0.5" oX="70" oY="32" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_31_ 6" x="1303" y="998" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_32_ 6" x="454" y="771" w="210" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_33_ 6" x="1094" y="250" w="211" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_34_ 6" x="1301" y="500" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="32" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_35_ 6" x="669" y="515" w="211" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_36_ 7" x="1053" y="1265" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_37_ 7" x="843" y="1265" w="210" h="249" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_38_ 7" x="883" y="252" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_39_ 7" x="669" y="765" w="212" h="250" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Idle_40_ 7" x="881" y="765" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_01_ 0" x="622" y="4274" w="160" h="196" pX="0.5" pY="0.5" oX="95" oY="68" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_02_ 0" x="0" y="4275" w="150" h="197" pX="0.5" pY="0.5" oX="100" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_03_ 0" x="4184" y="2678" w="150" h="199" pX="0.5" pY="0.5" oX="100" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_04_ 0" x="3147" y="3372" w="193" h="214" pX="0.5" pY="0.5" oX="78" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_05_ 0" x="932" y="4269" w="160" h="196" pX="0.5" pY="0.5" oX="95" oY="68" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_06_ 0" x="312" y="4275" w="150" h="197" pX="0.5" pY="0.5" oX="100" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_07_ 0" x="4154" y="2479" w="150" h="199" pX="0.5" pY="0.5" oX="100" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_08_ 0" x="2954" y="3372" w="193" h="214" pX="0.5" pY="0.5" oX="78" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_09_ 1" x="1407" y="3855" w="168" h="207" pX="0.5" pY="0.5" oX="87" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_10_ 1" x="885" y="3649" w="163" h="210" pX="0.5" pY="0.5" oX="88" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_11_ 1" x="3828" y="2298" w="166" h="208" pX="0.5" pY="0.5" oX="99" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_12_ 1" x="3476" y="3109" w="197" h="211" pX="0.5" pY="0.5" oX="74" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_13_ 1" x="1407" y="3855" w="168" h="207" pX="0.5" pY="0.5" oX="87" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_14_ 1" x="885" y="3649" w="163" h="210" pX="0.5" pY="0.5" oX="88" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_15_ 1" x="3828" y="625" w="166" h="208" pX="0.5" pY="0.5" oX="99" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_16_ 1" x="0" y="3653" w="197" h="211" pX="0.5" pY="0.5" oX="74" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_17_ 2" x="1239" y="3856" w="168" h="207" pX="0.5" pY="0.5" oX="95" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_18_ 2" x="3155" y="3586" w="163" h="210" pX="0.5" pY="0.5" oX="99" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_19_ 2" x="3828" y="209" w="166" h="208" pX="0.5" pY="0.5" oX="85" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_20_ 2" x="3669" y="2626" w="197" h="208" pX="0.5" pY="0.5" oX="79" oY="70" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_21_ 2" x="3149" y="3796" w="168" h="207" pX="0.5" pY="0.5" oX="95" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_22_ 2" x="2992" y="3586" w="163" h="210" pX="0.5" pY="0.5" oX="99" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_23_ 2" x="3828" y="417" w="166" h="208" pX="0.5" pY="0.5" oX="85" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_24_ 2" x="197" y="3864" w="197" h="208" pX="0.5" pY="0.5" oX="79" oY="70" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_25_ 3" x="4167" y="3504" w="160" h="200" pX="0.5" pY="0.5" oX="95" oY="63" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_26_ 3" x="782" y="4273" w="150" h="196" pX="0.5" pY="0.5" oX="100" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_27_ 3" x="2807" y="4273" w="150" h="193" pX="0.5" pY="0.5" oX="100" oY="64" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_28_ 3" x="2799" y="3586" w="193" h="210" pX="0.5" pY="0.5" oX="79" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_29_ 3" x="4135" y="1663" w="160" h="200" pX="0.5" pY="0.5" oX="95" oY="63" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_30_ 3" x="1566" y="4266" w="150" h="196" pX="0.5" pY="0.5" oX="100" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_31_ 3" x="2657" y="4273" w="150" h="193" pX="0.5" pY="0.5" oX="100" oY="64" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_32_ 3" x="1048" y="3646" w="193" h="210" pX="0.5" pY="0.5" oX="79" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_33_ 4" x="1752" y="2234" w="219" h="238" pX="0.5" pY="0.5" oX="63" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_34_ 4" x="3099" y="0" w="202" h="230" pX="0.5" pY="0.5" oX="71" oY="30" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_35_ 4" x="3299" y="895" w="202" h="223" pX="0.5" pY="0.5" oX="80" oY="36" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_36_ 4" x="219" y="2514" w="235" h="236" pX="0.5" pY="0.5" oX="59" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_37_ 4" x="2212" y="2190" w="219" h="238" pX="0.5" pY="0.5" oX="63" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_38_ 4" x="2384" y="2885" w="202" h="230" pX="0.5" pY="0.5" oX="71" oY="30" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_39_ 4" x="3299" y="1118" w="202" h="223" pX="0.5" pY="0.5" oX="80" oY="36" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_40_ 4" x="2431" y="2416" w="235" h="236" pX="0.5" pY="0.5" oX="59" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_41_ 5" x="1112" y="2489" w="220" h="236" pX="0.5" pY="0.5" oX="63" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_42_ 5" x="3301" y="0" w="202" h="224" pX="0.5" pY="0.5" oX="71" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_43_ 5" x="1242" y="2970" w="202" h="230" pX="0.5" pY="0.5" oX="80" oY="42" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_44_ 5" x="1317" y="2007" w="235" h="242" pX="0.5" pY="0.5" oX="59" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_45_ 5" x="674" y="2513" w="220" h="236" pX="0.5" pY="0.5" oX="63" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_46_ 5" x="2549" y="3148" w="202" h="224" pX="0.5" pY="0.5" oX="71" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_47_ 5" x="1242" y="2970" w="202" h="230" pX="0.5" pY="0.5" oX="80" oY="42" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_48_ 5" x="2233" y="242" w="235" h="242" pX="0.5" pY="0.5" oX="59" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_49_ 6" x="897" y="2250" w="220" h="239" pX="0.5" pY="0.5" oX="67" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_50_ 6" x="618" y="2972" w="202" h="231" pX="0.5" pY="0.5" oX="77" oY="30" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_51_ 6" x="3301" y="224" w="202" h="224" pX="0.5" pY="0.5" oX="68" oY="36" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_52_ 6" x="2434" y="962" w="235" h="237" pX="0.5" pY="0.5" oX="56" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_53_ 6" x="677" y="2261" w="220" h="239" pX="0.5" pY="0.5" oX="67" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_54_ 6" x="214" y="2972" w="202" h="231" pX="0.5" pY="0.5" oX="77" oY="30" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_55_ 6" x="3299" y="448" w="202" h="224" pX="0.5" pY="0.5" oX="68" oY="36" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_56_ 6" x="2431" y="2179" w="235" h="237" pX="0.5" pY="0.5" oX="56" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_57_ 7" x="0" y="2514" w="219" h="237" pX="0.5" pY="0.5" oX="68" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_58_ 7" x="2347" y="3148" w="202" h="224" pX="0.5" pY="0.5" oX="77" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_59_ 7" x="1040" y="2971" w="202" h="231" pX="0.5" pY="0.5" oX="68" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_60_ 7" x="2233" y="0" w="235" h="242" pX="0.5" pY="0.5" oX="56" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_61_ 7" x="2445" y="1199" w="219" h="237" pX="0.5" pY="0.5" oX="68" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_62_ 7" x="2751" y="3148" w="202" h="224" pX="0.5" pY="0.5" oX="77" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_63_ 7" x="416" y="2972" w="202" h="231" pX="0.5" pY="0.5" oX="68" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Running_64_ 7" x="1977" y="1951" w="235" h="242" pX="0.5" pY="0.5" oX="56" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_01_ 0" x="3131" y="230" w="161" h="217" pX="0.5" pY="0.5" oX="98" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_02_ 0" x="2016" y="2431" w="155" h="210" pX="0.5" pY="0.5" oX="98" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_03_ 0" x="3499" y="1341" w="173" h="211" pX="0.5" pY="0.5" oX="80" oY="49" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_04_ 1" x="3829" y="3042" w="160" h="207" pX="0.5" pY="0.5" oX="95" oY="53" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_05_ 1" x="726" y="3650" w="159" h="211" pX="0.5" pY="0.5" oX="93" oY="49" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_06_ 1" x="1787" y="1985" w="167" h="230" pX="0.5" pY="0.5" oX="86" oY="30" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_07_ 2" x="2901" y="2178" w="160" h="215" pX="0.5" pY="0.5" oX="95" oY="45" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_08_ 2" x="3299" y="1341" w="159" h="208" pX="0.5" pY="0.5" oX="98" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_09_ 2" x="1716" y="4259" w="167" h="195" pX="0.5" pY="0.5" oX="97" oY="65" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_10_ 3" x="3994" y="169" w="161" h="206" pX="0.5" pY="0.5" oX="91" oY="54" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_11_ 3" x="3501" y="846" w="155" h="210" pX="0.5" pY="0.5" oX="97" oY="50" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_12_ 3" x="2781" y="3372" w="173" h="214" pX="0.5" pY="0.5" oX="97" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_13_ 4" x="1746" y="1235" w="214" h="246" pX="0.5" pY="0.5" oX="69" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_14_ 4" x="1302" y="749" w="211" h="249" pX="0.5" pY="0.5" oX="69" oY="31" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_15_ 4" x="234" y="786" w="220" h="251" pX="0.5" pY="0.5" oX="60" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_16_ 5" x="2212" y="1950" w="211" h="240" pX="0.5" pY="0.5" oX="70" oY="40" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_17_ 5" x="1134" y="0" w="211" h="250" pX="0.5" pY="0.5" oX="70" oY="30" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_18_ 5" x="244" y="265" w="213" h="262" pX="0.5" pY="0.5" oX="70" oY="18" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_19_ 6" x="224" y="530" w="211" h="256" pX="0.5" pY="0.5" oX="69" oY="25" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_20_ 6" x="1061" y="1514" w="211" h="248" pX="0.5" pY="0.5" oX="69" oY="33" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_21_ 6" x="2171" y="2851" w="213" h="230" pX="0.5" pY="0.5" oX="67" oY="51" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_22_ 7" x="669" y="264" w="214" h="251" pX="0.5" pY="0.5" oX="67" oY="30" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_23_ 7" x="1345" y="0" w="211" h="249" pX="0.5" pY="0.5" oX="70" oY="32" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Use Skill_24_ 7" x="428" y="2031" w="220" h="243" pX="0.5" pY="0.5" oX="70" oY="38" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_01_ 0" x="462" y="4275" w="160" h="196" pX="0.5" pY="0.5" oX="95" oY="68" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_02_ 0" x="1410" y="4266" w="156" h="196" pX="0.5" pY="0.5" oX="97" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_03_ 0" x="2359" y="4273" w="150" h="193" pX="0.5" pY="0.5" oX="100" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_04_ 0" x="1252" y="4063" w="150" h="203" pX="0.5" pY="0.5" oX="100" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_05_ 0" x="4171" y="1238" w="150" h="198" pX="0.5" pY="0.5" oX="100" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_06_ 0" x="3503" y="426" w="170" h="210" pX="0.5" pY="0.5" oX="90" oY="45" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_07_ 0" x="3476" y="2682" w="193" h="214" pX="0.5" pY="0.5" oX="78" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_08_ 0" x="3994" y="1251" w="177" h="206" pX="0.5" pY="0.5" oX="86" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_09_ 1" x="1071" y="3856" w="168" h="207" pX="0.5" pY="0.5" oX="87" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_10_ 1" x="3994" y="1457" w="164" h="206" pX="0.5" pY="0.5" oX="89" oY="43" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_11_ 1" x="2448" y="3372" w="171" h="215" pX="0.5" pY="0.5" oX="79" oY="15" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_12_ 1" x="3994" y="2484" w="160" h="204" pX="0.5" pY="0.5" oX="91" oY="24" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_13_ 1" x="3503" y="2414" w="170" h="212" pX="0.5" pY="0.5" oX="101" oY="27" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_14_ 1" x="2901" y="1748" w="176" h="215" pX="0.5" pY="0.5" oX="88" oY="45" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_15_ 1" x="529" y="3651" w="197" h="211" pX="0.5" pY="0.5" oX="74" oY="66" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_16_ 1" x="891" y="3859" w="180" h="207" pX="0.5" pY="0.5" oX="83" oY="63" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_17_ 2" x="3317" y="3796" w="168" h="207" pX="0.5" pY="0.5" oX="95" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_18_ 2" x="3992" y="833" w="164" h="206" pX="0.5" pY="0.5" oX="97" oY="43" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_19_ 2" x="2901" y="1963" w="171" h="215" pX="0.5" pY="0.5" oX="100" oY="15" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_20_ 2" x="346" y="4072" w="160" h="203" pX="0.5" pY="0.5" oX="99" oY="25" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_21_ 2" x="197" y="3653" w="171" h="211" pX="0.5" pY="0.5" oX="79" oY="28" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_22_ 2" x="3476" y="2896" w="176" h="213" pX="0.5" pY="0.5" oX="86" oY="47" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_23_ 2" x="0" y="3864" w="197" h="208" pX="0.5" pY="0.5" oX="79" oY="70" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_24_ 2" x="2348" y="3797" w="180" h="207" pX="0.5" pY="0.5" oX="87" oY="64" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_25_ 3" x="4176" y="2892" w="160" h="200" pX="0.5" pY="0.5" oX="95" oY="63" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_26_ 3" x="1254" y="4266" w="156" h="196" pX="0.5" pY="0.5" oX="97" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_27_ 3" x="2957" y="4273" w="150" h="193" pX="0.5" pY="0.5" oX="100" oY="21" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_28_ 3" x="1883" y="4243" w="150" h="194" pX="0.5" pY="0.5" oX="100" oY="27" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_29_ 3" x="3445" y="4273" w="150" h="191" pX="0.5" pY="0.5" oX="100" oY="53" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_30_ 3" x="3822" y="2090" w="170" h="208" pX="0.5" pY="0.5" oX="90" oY="56" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_31_ 3" x="1823" y="3625" w="193" h="210" pX="0.5" pY="0.5" oX="79" oY="67" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_32_ 3" x="3482" y="2201" w="177" h="213" pX="0.5" pY="0.5" oX="87" oY="57" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_33_ 4" x="2429" y="484" w="219" h="238" pX="0.5" pY="0.5" oX="63" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_34_ 4" x="1108" y="2736" w="211" h="234" pX="0.5" pY="0.5" oX="67" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_35_ 4" x="3078" y="2007" w="209" h="229" pX="0.5" pY="0.5" oX="63" oY="18" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_36_ 4" x="2904" y="630" w="194" h="232" pX="0.5" pY="0.5" oX="79" oY="13" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_37_ 4" x="445" y="3430" w="206" h="221" pX="0.5" pY="0.5" oX="80" oY="20" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_38_ 4" x="1332" y="2488" w="214" h="235" pX="0.5" pY="0.5" oX="70" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_39_ 4" x="2431" y="2416" w="235" h="236" pX="0.5" pY="0.5" oX="59" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_40_ 4" x="225" y="2275" w="226" h="239" pX="0.5" pY="0.5" oX="63" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_41_ 5" x="454" y="2513" w="220" h="236" pX="0.5" pY="0.5" oX="63" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_42_ 5" x="3078" y="1091" w="211" h="229" pX="0.5" pY="0.5" oX="67" oY="33" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_43_ 5" x="3289" y="1549" w="210" h="219" pX="0.5" pY="0.5" oX="63" oY="11" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_44_ 5" x="1277" y="3200" w="194" h="226" pX="0.5" pY="0.5" oX="79" oY="11" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_45_ 5" x="1937" y="2883" w="205" h="230" pX="0.5" pY="0.5" oX="81" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_46_ 5" x="648" y="2018" w="214" h="243" pX="0.5" pY="0.5" oX="71" oY="37" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_47_ 5" x="1552" y="1992" w="235" h="242" pX="0.5" pY="0.5" oX="59" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_48_ 5" x="1767" y="0" w="225" h="247" pX="0.5" pY="0.5" oX="64" oY="41" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_49_ 6" x="677" y="2261" w="220" h="239" pX="0.5" pY="0.5" oX="67" oY="44" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_50_ 6" x="1534" y="2723" w="211" h="234" pX="0.5" pY="0.5" oX="72" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_51_ 6" x="3078" y="1778" w="210" h="229" pX="0.5" pY="0.5" oX="77" oY="18" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_52_ 6" x="2386" y="2652" w="194" h="233" pX="0.5" pY="0.5" oX="77" oY="13" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_53_ 6" x="3298" y="2460" w="205" h="222" pX="0.5" pY="0.5" oX="64" oY="20" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_54_ 6" x="894" y="2736" w="214" h="235" pX="0.5" pY="0.5" oX="65" oY="34" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_55_ 6" x="2431" y="1942" w="235" h="237" pX="0.5" pY="0.5" oX="56" oY="55" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_56_ 6" x="0" y="2275" w="225" h="239" pX="0.5" pY="0.5" oX="61" oY="48" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_57_ 7" x="2445" y="1436" w="219" h="237" pX="0.5" pY="0.5" oX="68" oY="46" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_58_ 7" x="3078" y="1549" w="211" h="229" pX="0.5" pY="0.5" oX="72" oY="33" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_59_ 7" x="3289" y="1768" w="209" h="219" pX="0.5" pY="0.5" oX="78" oY="11" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_60_ 7" x="1471" y="3189" w="194" h="226" pX="0.5" pY="0.5" oX="77" oY="11" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_61_ 7" x="1664" y="2957" w="206" h="230" pX="0.5" pY="0.5" oX="64" oY="29" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_62_ 7" x="862" y="2007" w="214" h="243" pX="0.5" pY="0.5" oX="66" oY="37" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_63_ 7" x="2187" y="1708" w="235" h="242" pX="0.5" pY="0.5" oX="56" oY="52" oW="350" oH="350"/>
+  <sprite n="ClearCube1_Walking_64_ 7" x="0" y="1786" w="226" h="246" pX="0.5" pY="0.5" oX="61" oY="42" oW="350" oH="350"/>
+</TextureAtlas>

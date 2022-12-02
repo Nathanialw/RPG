@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Cat_3.png" width="721" height="702" scale="1" format="RGBA8888">
+  <sprite n="Cat_3_Attack 1_01_ 0" x="597" y="534" w="12" h="40" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_02_ 0" x="557" y="459" w="17" h="33" pX="0.5" pY="0.5" oX="36" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_03_ 0" x="119" y="525" w="13" h="41" pX="0.5" pY="0.5" oX="36" oY="31" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_04_ 1" x="238" y="161" w="56" h="20" pX="0.5" pY="0.5" oX="18" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_05_ 1" x="513" y="617" w="39" h="38" pX="0.5" pY="0.5" oX="31" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_06_ 1" x="241" y="181" w="56" h="20" pX="0.5" pY="0.5" oX="11" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_07_ 2" x="239" y="238" w="57" h="20" pX="0.5" pY="0.5" oX="11" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_08_ 2" x="618" y="429" w="40" h="37" pX="0.5" pY="0.5" oX="17" oY="18" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_09_ 2" x="240" y="216" w="57" h="21" pX="0.5" pY="0.5" oX="18" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_10_ 3" x="355" y="255" w="12" h="49" pX="0.5" pY="0.5" oX="37" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_11_ 3" x="71" y="345" w="19" h="51" pX="0.5" pY="0.5" oX="34" oY="15" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_12_ 3" x="340" y="314" w="12" h="49" pX="0.5" pY="0.5" oX="37" oY="19" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_13_ 4" x="258" y="585" w="43" h="32" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_14_ 4" x="658" y="396" w="31" h="35" pX="0.5" pY="0.5" oX="35" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_15_ 4" x="129" y="585" w="43" h="31" pX="0.5" pY="0.5" oX="19" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_16_ 5" x="513" y="575" w="39" h="42" pX="0.5" pY="0.5" oX="24" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_17_ 5" x="229" y="390" w="30" h="48" pX="0.5" pY="0.5" oX="30" oY="16" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_18_ 5" x="606" y="574" w="40" h="40" pX="0.5" pY="0.5" oX="19" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_19_ 6" x="600" y="499" w="40" h="33" pX="0.5" pY="0.5" oX="22" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_20_ 6" x="202" y="664" w="32" h="33" pX="0.5" pY="0.5" oX="26" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_21_ 6" x="609" y="532" w="40" h="34" pX="0.5" pY="0.5" oX="27" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_22_ 7" x="272" y="540" w="44" h="38" pX="0.5" pY="0.5" oX="18" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_23_ 7" x="45" y="540" w="34" h="44" pX="0.5" pY="0.5" oX="20" oY="15" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 1_24_ 7" x="383" y="547" w="44" h="38" pX="0.5" pY="0.5" oX="23" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_01_ 0" x="597" y="534" w="12" h="40" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_02_ 0" x="659" y="363" w="18" h="31" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_03_ 0" x="590" y="643" w="16" h="36" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_04_ 1" x="238" y="161" w="56" h="20" pX="0.5" pY="0.5" oX="18" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_05_ 1" x="443" y="83" w="47" h="35" pX="0.5" pY="0.5" oX="24" oY="21" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_06_ 1" x="220" y="322" w="52" h="29" pX="0.5" pY="0.5" oX="21" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_07_ 2" x="239" y="238" w="57" h="20" pX="0.5" pY="0.5" oX="11" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_08_ 2" x="215" y="351" w="50" h="38" pX="0.5" pY="0.5" oX="14" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_09_ 2" x="224" y="289" w="54" h="33" pX="0.5" pY="0.5" oX="12" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_10_ 3" x="355" y="255" w="12" h="49" pX="0.5" pY="0.5" oX="37" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_11_ 3" x="198" y="73" w="17" h="60" pX="0.5" pY="0.5" oX="34" oY="12" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_12_ 3" x="300" y="74" w="14" h="57" pX="0.5" pY="0.5" oX="35" oY="16" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_13_ 4" x="258" y="585" w="43" h="32" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_14_ 4" x="606" y="614" w="39" h="31" pX="0.5" pY="0.5" oX="26" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_15_ 4" x="552" y="615" w="40" h="28" pX="0.5" pY="0.5" oX="27" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_16_ 5" x="513" y="575" w="39" h="42" pX="0.5" pY="0.5" oX="24" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_17_ 5" x="317" y="0" w="33" h="54" pX="0.5" pY="0.5" oX="28" oY="14" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_18_ 5" x="88" y="396" w="38" h="48" pX="0.5" pY="0.5" oX="25" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_19_ 6" x="600" y="499" w="40" h="33" pX="0.5" pY="0.5" oX="22" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_20_ 6" x="606" y="669" w="35" h="32" pX="0.5" pY="0.5" oX="24" oY="23" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_21_ 6" x="427" y="547" w="39" h="29" pX="0.5" pY="0.5" oX="23" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_22_ 7" x="272" y="540" w="44" h="38" pX="0.5" pY="0.5" oX="18" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_23_ 7" x="350" y="49" w="42" h="49" pX="0.5" pY="0.5" oX="20" oY="16" oW="80" oH="80"/>
+  <sprite n="Cat_3_Attack 2_24_ 7" x="259" y="390" w="41" h="48" pX="0.5" pY="0.5" oX="19" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_01_ 0" x="299" y="131" w="15" h="26" pX="0.5" pY="0.5" oX="35" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_02_ 0" x="160" y="559" w="15" h="26" pX="0.5" pY="0.5" oX="35" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_03_ 0" x="662" y="107" w="15" h="26" pX="0.5" pY="0.5" oX="35" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_04_ 1" x="689" y="0" w="32" h="24" pX="0.5" pY="0.5" oX="25" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_05_ 1" x="641" y="670" w="32" h="24" pX="0.5" pY="0.5" oX="25" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_06_ 1" x="641" y="646" w="32" h="24" pX="0.5" pY="0.5" oX="25" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_07_ 2" x="326" y="666" w="34" h="25" pX="0.5" pY="0.5" oX="28" oY="33" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_08_ 2" x="462" y="666" w="34" h="25" pX="0.5" pY="0.5" oX="28" oY="33" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_09_ 2" x="526" y="666" w="34" h="25" pX="0.5" pY="0.5" oX="28" oY="33" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_10_ 3" x="646" y="606" w="14" h="40" pX="0.5" pY="0.5" oX="36" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_11_ 3" x="233" y="624" w="14" h="40" pX="0.5" pY="0.5" oX="36" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_12_ 3" x="646" y="566" w="14" h="40" pX="0.5" pY="0.5" oX="36" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_13_ 4" x="358" y="560" w="25" h="23" pX="0.5" pY="0.5" oX="28" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_14_ 4" x="662" y="133" w="24" h="24" pX="0.5" pY="0.5" oX="29" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_15_ 4" x="662" y="157" w="24" h="24" pX="0.5" pY="0.5" oX="29" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_16_ 5" x="660" y="564" w="29" h="34" pX="0.5" pY="0.5" oX="27" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_17_ 5" x="660" y="256" w="29" h="34" pX="0.5" pY="0.5" oX="27" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_18_ 5" x="658" y="465" w="29" h="34" pX="0.5" pY="0.5" oX="27" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_19_ 6" x="689" y="48" w="31" h="24" pX="0.5" pY="0.5" oX="29" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_20_ 6" x="689" y="24" w="31" h="24" pX="0.5" pY="0.5" oX="29" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_21_ 6" x="689" y="72" w="31" h="24" pX="0.5" pY="0.5" oX="29" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_22_ 7" x="662" y="0" w="27" h="36" pX="0.5" pY="0.5" oX="32" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_23_ 7" x="662" y="36" w="27" h="36" pX="0.5" pY="0.5" oX="32" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Behavior_24_ 7" x="36" y="666" w="26" h="36" pX="0.5" pY="0.5" oX="32" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_01_ 0" x="597" y="534" w="12" h="40" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_02_ 0" x="272" y="340" w="12" h="50" pX="0.5" pY="0.5" oX="37" oY="15" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_03_ 0" x="338" y="106" w="12" h="51" pX="0.5" pY="0.5" oX="37" oY="12" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_04_ 1" x="238" y="161" w="56" h="20" pX="0.5" pY="0.5" oX="18" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_05_ 1" x="242" y="74" w="58" h="20" pX="0.5" pY="0.5" oX="21" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_06_ 1" x="54" y="324" w="54" h="21" pX="0.5" pY="0.5" oX="24" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_07_ 2" x="239" y="238" w="57" h="20" pX="0.5" pY="0.5" oX="11" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_08_ 2" x="120" y="240" w="58" h="20" pX="0.5" pY="0.5" oX="7" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_09_ 2" x="0" y="324" w="54" h="21" pX="0.5" pY="0.5" oX="8" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_10_ 3" x="355" y="255" w="12" h="49" pX="0.5" pY="0.5" oX="37" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_11_ 3" x="469" y="374" w="12" h="46" pX="0.5" pY="0.5" oX="37" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_12_ 3" x="594" y="577" w="12" h="41" pX="0.5" pY="0.5" oX="37" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_13_ 4" x="258" y="585" w="43" h="32" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_14_ 4" x="338" y="523" w="45" h="37" pX="0.5" pY="0.5" oX="26" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_15_ 4" x="43" y="586" w="43" h="41" pX="0.5" pY="0.5" oX="27" oY="19" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_16_ 5" x="513" y="575" w="39" h="42" pX="0.5" pY="0.5" oX="24" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_17_ 5" x="552" y="577" w="42" h="38" pX="0.5" pY="0.5" oX="26" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_18_ 5" x="619" y="296" w="41" h="33" pX="0.5" pY="0.5" oX="27" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_19_ 6" x="600" y="499" w="40" h="33" pX="0.5" pY="0.5" oX="22" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_20_ 6" x="620" y="119" w="42" h="41" pX="0.5" pY="0.5" oX="19" oY="21" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_21_ 6" x="579" y="301" w="40" h="43" pX="0.5" pY="0.5" oX="19" oY="18" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_22_ 7" x="272" y="540" w="44" h="38" pX="0.5" pY="0.5" oX="18" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_23_ 7" x="184" y="518" w="44" h="36" pX="0.5" pY="0.5" oX="16" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Block_24_ 7" x="618" y="363" w="41" h="33" pX="0.5" pY="0.5" oX="17" oY="31" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_01_ 0" x="305" y="261" w="12" h="54" pX="0.5" pY="0.5" oX="37" oY="12" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_02_ 0" x="317" y="261" w="12" h="53" pX="0.5" pY="0.5" oX="37" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_03_ 0" x="338" y="54" w="12" h="52" pX="0.5" pY="0.5" oX="37" oY="14" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_04_ 1" x="0" y="44" w="62" h="19" pX="0.5" pY="0.5" oX="15" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_05_ 1" x="62" y="41" w="62" h="19" pX="0.5" pY="0.5" oX="15" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_06_ 1" x="0" y="63" w="62" h="19" pX="0.5" pY="0.5" oX="15" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_07_ 2" x="124" y="51" w="61" h="19" pX="0.5" pY="0.5" oX="5" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_08_ 2" x="0" y="104" w="62" h="19" pX="0.5" pY="0.5" oX="4" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_09_ 2" x="62" y="81" w="62" h="19" pX="0.5" pY="0.5" oX="4" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_10_ 3" x="481" y="157" w="12" h="46" pX="0.5" pY="0.5" oX="37" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_11_ 3" x="443" y="157" w="12" h="47" pX="0.5" pY="0.5" oX="37" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_12_ 3" x="455" y="157" w="12" h="47" pX="0.5" pY="0.5" oX="37" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_13_ 4" x="443" y="335" w="47" h="39" pX="0.5" pY="0.5" oX="26" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_14_ 4" x="396" y="440" w="47" h="39" pX="0.5" pY="0.5" oX="26" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_15_ 4" x="126" y="443" w="47" h="38" pX="0.5" pY="0.5" oX="26" oY="23" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_16_ 5" x="387" y="585" w="43" h="38" pX="0.5" pY="0.5" oX="26" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_17_ 5" x="535" y="220" w="43" h="39" pX="0.5" pY="0.5" oX="26" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_18_ 5" x="575" y="453" w="43" h="39" pX="0.5" pY="0.5" oX="26" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_19_ 6" x="620" y="0" w="42" h="42" pX="0.5" pY="0.5" oX="18" oY="19" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_20_ 6" x="554" y="535" w="43" h="42" pX="0.5" pY="0.5" oX="17" oY="19" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_21_ 6" x="172" y="585" w="43" h="42" pX="0.5" pY="0.5" oX="17" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_22_ 7" x="47" y="446" w="47" h="35" pX="0.5" pY="0.5" oX="13" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_23_ 7" x="140" y="481" w="47" h="36" pX="0.5" pY="0.5" oX="13" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Critical HP_24_ 7" x="443" y="0" w="47" h="36" pX="0.5" pY="0.5" oX="13" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Dead_01_ 0" x="560" y="666" w="30" h="26" pX="0.5" pY="0.5" oX="33" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Dead_02_ 1" x="689" y="96" w="30" h="30" pX="0.5" pY="0.5" oX="29" oY="39" oW="80" oH="80"/>
+  <sprite n="Cat_3_Dead_03_ 2" x="466" y="554" w="29" h="23" pX="0.5" pY="0.5" oX="27" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Dead_04_ 3" x="46" y="519" w="30" h="21" pX="0.5" pY="0.5" oX="22" oY="41" oW="80" oH="80"/>
+  <sprite n="Cat_3_Dead_05_ 4" x="662" y="72" w="26" h="35" pX="0.5" pY="0.5" oX="35" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Dead_06_ 5" x="358" y="446" w="38" h="19" pX="0.5" pY="0.5" oX="20" oY="45" oW="80" oH="80"/>
+  <sprite n="Cat_3_Dead_07_ 6" x="552" y="645" w="38" h="21" pX="0.5" pY="0.5" oX="27" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Dead_08_ 7" x="234" y="664" w="25" h="27" pX="0.5" pY="0.5" oX="25" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_01_ 0" x="597" y="534" w="12" h="40" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_02_ 0" x="247" y="624" w="13" h="40" pX="0.5" pY="0.5" oX="38" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_03_ 0" x="215" y="624" w="18" h="40" pX="0.5" pY="0.5" oX="36" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_04_ 1" x="238" y="161" w="56" h="20" pX="0.5" pY="0.5" oX="18" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_05_ 1" x="241" y="142" w="57" h="19" pX="0.5" pY="0.5" oX="19" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_06_ 1" x="294" y="161" w="54" h="20" pX="0.5" pY="0.5" oX="23" oY="38" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_07_ 2" x="239" y="238" w="57" h="20" pX="0.5" pY="0.5" oX="11" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_08_ 2" x="60" y="265" w="58" h="21" pX="0.5" pY="0.5" oX="9" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_09_ 2" x="296" y="237" w="54" h="24" pX="0.5" pY="0.5" oX="9" oY="31" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_10_ 3" x="355" y="255" w="12" h="49" pX="0.5" pY="0.5" oX="37" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_11_ 3" x="343" y="261" w="12" h="49" pX="0.5" pY="0.5" oX="36" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_12_ 3" x="557" y="414" w="18" h="45" pX="0.5" pY="0.5" oX="32" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_13_ 4" x="258" y="585" w="43" h="32" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_14_ 4" x="620" y="193" w="41" h="32" pX="0.5" pY="0.5" oX="26" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_15_ 4" x="166" y="627" w="37" h="36" pX="0.5" pY="0.5" oX="28" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_16_ 5" x="513" y="575" w="39" h="42" pX="0.5" pY="0.5" oX="24" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_17_ 5" x="301" y="585" w="43" h="38" pX="0.5" pY="0.5" oX="24" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_18_ 5" x="0" y="446" w="47" h="32" pX="0.5" pY="0.5" oX="24" oY="33" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_19_ 6" x="600" y="499" w="40" h="33" pX="0.5" pY="0.5" oX="22" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_20_ 6" x="344" y="585" w="43" h="33" pX="0.5" pY="0.5" oX="19" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_21_ 6" x="443" y="421" w="47" h="35" pX="0.5" pY="0.5" oX="15" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_22_ 7" x="272" y="540" w="44" h="38" pX="0.5" pY="0.5" oX="18" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_23_ 7" x="619" y="256" w="41" h="40" pX="0.5" pY="0.5" oX="19" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Evade_24_ 7" x="538" y="168" w="37" h="41" pX="0.5" pY="0.5" oX="21" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_01_ 0" x="597" y="534" w="12" h="40" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_02_ 0" x="388" y="147" w="12" h="48" pX="0.5" pY="0.5" oX="37" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_03_ 0" x="490" y="92" w="12" h="45" pX="0.5" pY="0.5" oX="37" oY="18" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_04_ 1" x="238" y="161" w="56" h="20" pX="0.5" pY="0.5" oX="18" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_05_ 1" x="242" y="117" w="57" h="25" pX="0.5" pY="0.5" oX="20" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_06_ 1" x="168" y="309" w="52" h="29" pX="0.5" pY="0.5" oX="22" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_07_ 2" x="239" y="238" w="57" h="20" pX="0.5" pY="0.5" oX="11" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_08_ 2" x="259" y="26" w="58" h="25" pX="0.5" pY="0.5" oX="9" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_09_ 2" x="112" y="311" w="52" h="30" pX="0.5" pY="0.5" oX="12" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_10_ 3" x="355" y="255" w="12" h="49" pX="0.5" pY="0.5" oX="37" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_11_ 3" x="314" y="107" w="12" h="53" pX="0.5" pY="0.5" oX="37" oY="19" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_12_ 3" x="311" y="181" w="13" h="53" pX="0.5" pY="0.5" oX="37" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_13_ 4" x="258" y="585" w="43" h="32" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_14_ 4" x="576" y="120" w="44" h="36" pX="0.5" pY="0.5" oX="25" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_15_ 4" x="618" y="466" w="40" h="33" pX="0.5" pY="0.5" oX="26" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_16_ 5" x="513" y="575" w="39" h="42" pX="0.5" pY="0.5" oX="24" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_17_ 5" x="576" y="38" w="40" h="44" pX="0.5" pY="0.5" oX="26" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_18_ 5" x="384" y="479" w="36" h="46" pX="0.5" pY="0.5" oX="29" oY="19" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_19_ 6" x="600" y="499" w="40" h="33" pX="0.5" pY="0.5" oX="22" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_20_ 6" x="0" y="627" w="40" h="39" pX="0.5" pY="0.5" oX="20" oY="23" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_21_ 6" x="0" y="666" w="36" h="36" pX="0.5" pY="0.5" oX="21" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_22_ 7" x="272" y="540" w="44" h="38" pX="0.5" pY="0.5" oX="18" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_23_ 7" x="512" y="455" w="45" h="42" pX="0.5" pY="0.5" oX="17" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Get Hit_24_ 7" x="79" y="525" w="40" h="44" pX="0.5" pY="0.5" oX="20" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_01_ 0" x="111" y="627" w="12" h="38" pX="0.5" pY="0.5" oX="37" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_02_ 0" x="52" y="627" w="12" h="39" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_03_ 0" x="40" y="627" w="12" h="39" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_04_ 1" x="0" y="301" w="56" h="23" pX="0.5" pY="0.5" oX="18" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_05_ 1" x="56" y="300" w="56" h="23" pX="0.5" pY="0.5" oX="18" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_06_ 1" x="112" y="287" w="56" h="24" pX="0.5" pY="0.5" oX="18" oY="31" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_07_ 2" x="242" y="94" w="57" h="23" pX="0.5" pY="0.5" oX="12" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_08_ 2" x="259" y="51" w="58" h="23" pX="0.5" pY="0.5" oX="11" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_09_ 2" x="60" y="242" w="58" h="23" pX="0.5" pY="0.5" oX="11" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_10_ 3" x="326" y="107" w="12" h="53" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_11_ 3" x="317" y="54" w="12" h="53" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_12_ 3" x="324" y="181" w="12" h="53" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_13_ 4" x="184" y="554" w="43" h="31" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_14_ 4" x="620" y="225" w="41" h="31" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_15_ 4" x="579" y="344" w="39" h="30" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_16_ 5" x="490" y="46" w="39" h="46" pX="0.5" pY="0.5" oX="24" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_17_ 5" x="535" y="123" w="41" h="45" pX="0.5" pY="0.5" oX="24" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_18_ 5" x="576" y="156" w="43" h="43" pX="0.5" pY="0.5" oX="24" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_19_ 6" x="618" y="396" w="40" h="33" pX="0.5" pY="0.5" oX="22" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_20_ 6" x="620" y="160" w="42" h="33" pX="0.5" pY="0.5" oX="20" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_21_ 6" x="532" y="299" w="44" h="32" pX="0.5" pY="0.5" oX="18" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_22_ 7" x="228" y="540" w="44" h="43" pX="0.5" pY="0.5" oX="18" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_23_ 7" x="493" y="137" w="42" h="45" pX="0.5" pY="0.5" oX="20" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Idle_24_ 7" x="490" y="0" w="40" h="46" pX="0.5" pY="0.5" oX="22" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_01_ 0" x="490" y="442" w="17" h="30" pX="0.5" pY="0.5" oX="33" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_02_ 0" x="490" y="412" w="16" h="30" pX="0.5" pY="0.5" oX="34" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_03_ 0" x="492" y="619" w="16" h="30" pX="0.5" pY="0.5" oX="34" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_04_ 1" x="578" y="241" w="41" h="18" pX="0.5" pY="0.5" oX="21" oY="38" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_05_ 1" x="119" y="566" w="41" h="19" pX="0.5" pY="0.5" oX="21" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_06_ 1" x="0" y="528" w="41" h="19" pX="0.5" pY="0.5" oX="21" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_07_ 2" x="490" y="259" w="42" h="21" pX="0.5" pY="0.5" oX="23" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_08_ 2" x="316" y="560" w="42" h="21" pX="0.5" pY="0.5" oX="23" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_09_ 2" x="228" y="519" w="42" h="20" pX="0.5" pY="0.5" oX="23" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_10_ 3" x="80" y="627" w="16" h="38" pX="0.5" pY="0.5" oX="36" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_11_ 3" x="64" y="627" w="16" h="38" pX="0.5" pY="0.5" oX="36" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_12_ 3" x="96" y="627" w="15" h="38" pX="0.5" pY="0.5" oX="36" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_13_ 4" x="689" y="126" w="29" h="24" pX="0.5" pY="0.5" oX="27" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_14_ 4" x="689" y="174" w="29" h="24" pX="0.5" pY="0.5" oX="27" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_15_ 4" x="689" y="150" w="29" h="24" pX="0.5" pY="0.5" oX="27" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_16_ 5" x="428" y="666" w="34" h="31" pX="0.5" pY="0.5" oX="26" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_17_ 5" x="394" y="666" w="34" h="31" pX="0.5" pY="0.5" oX="26" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_18_ 5" x="360" y="666" w="34" h="31" pX="0.5" pY="0.5" oX="26" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_19_ 6" x="123" y="645" w="35" h="24" pX="0.5" pY="0.5" oX="25" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_20_ 6" x="606" y="645" w="35" h="24" pX="0.5" pY="0.5" oX="25" oY="37" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_21_ 6" x="649" y="539" w="35" h="25" pX="0.5" pY="0.5" oX="25" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_22_ 7" x="296" y="666" w="30" h="35" pX="0.5" pY="0.5" oX="30" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_23_ 7" x="496" y="666" w="30" h="34" pX="0.5" pY="0.5" oX="30" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Rest_24_ 7" x="658" y="431" w="30" h="34" pX="0.5" pY="0.5" oX="30" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_01_ 0" x="329" y="261" w="14" h="53" pX="0.5" pY="0.5" oX="36" oY="11" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_02_ 0" x="43" y="345" w="14" h="52" pX="0.5" pY="0.5" oX="36" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_03_ 0" x="336" y="181" w="13" h="53" pX="0.5" pY="0.5" oX="36" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_04_ 0" x="212" y="133" w="14" h="60" pX="0.5" pY="0.5" oX="36" oY="9" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_05_ 0" x="184" y="115" w="14" h="60" pX="0.5" pY="0.5" oX="36" oY="7" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_06_ 0" x="291" y="261" w="14" h="54" pX="0.5" pY="0.5" oX="36" oY="11" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_07_ 0" x="215" y="73" w="14" h="60" pX="0.5" pY="0.5" oX="36" oY="5" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_08_ 0" x="198" y="133" w="14" h="60" pX="0.5" pY="0.5" oX="36" oY="6" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_09_ 1" x="61" y="170" w="60" h="24" pX="0.5" pY="0.5" oX="19" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_10_ 1" x="0" y="82" w="62" h="22" pX="0.5" pY="0.5" oX="18" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_11_ 1" x="62" y="60" w="62" h="21" pX="0.5" pY="0.5" oX="18" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_12_ 1" x="0" y="0" w="63" h="22" pX="0.5" pY="0.5" oX="16" oY="33" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_13_ 1" x="118" y="260" w="58" h="27" pX="0.5" pY="0.5" oX="20" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_14_ 1" x="125" y="27" w="61" h="24" pX="0.5" pY="0.5" oX="18" oY="33" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_15_ 1" x="123" y="120" w="61" h="29" pX="0.5" pY="0.5" oX="18" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_16_ 1" x="0" y="123" w="62" h="26" pX="0.5" pY="0.5" oX="17" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_17_ 2" x="0" y="194" w="60" h="24" pX="0.5" pY="0.5" oX="8" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_18_ 2" x="63" y="19" w="62" h="22" pX="0.5" pY="0.5" oX="6" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_19_ 2" x="62" y="100" w="62" h="20" pX="0.5" pY="0.5" oX="6" oY="34" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_20_ 2" x="0" y="22" w="62" h="22" pX="0.5" pY="0.5" oX="8" oY="33" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_21_ 2" x="234" y="261" w="57" h="25" pX="0.5" pY="0.5" oX="9" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_22_ 2" x="123" y="169" w="61" h="21" pX="0.5" pY="0.5" oX="7" oY="33" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_23_ 2" x="124" y="70" w="61" h="26" pX="0.5" pY="0.5" oX="8" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_24_ 2" x="0" y="149" w="61" h="25" pX="0.5" pY="0.5" oX="8" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_25_ 3" x="135" y="341" w="13" h="50" pX="0.5" pY="0.5" oX="36" oY="21" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_26_ 3" x="297" y="181" w="14" h="53" pX="0.5" pY="0.5" oX="36" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_27_ 3" x="57" y="345" w="14" h="51" pX="0.5" pY="0.5" oX="36" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_28_ 3" x="443" y="374" w="14" h="47" pX="0.5" pY="0.5" oX="36" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_29_ 3" x="502" y="92" w="15" h="43" pX="0.5" pY="0.5" oX="35" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_30_ 3" x="379" y="255" w="15" h="48" pX="0.5" pY="0.5" oX="35" oY="23" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_31_ 3" x="467" y="157" w="14" h="47" pX="0.5" pY="0.5" oX="36" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_32_ 3" x="168" y="390" w="14" h="48" pX="0.5" pY="0.5" oX="36" oY="21" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_33_ 4" x="140" y="517" w="44" h="42" pX="0.5" pY="0.5" oX="25" oY="18" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_34_ 4" x="490" y="334" w="45" h="40" pX="0.5" pY="0.5" oX="25" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_35_ 4" x="530" y="0" w="46" h="44" pX="0.5" pY="0.5" oX="24" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_36_ 4" x="90" y="345" w="45" h="50" pX="0.5" pY="0.5" oX="24" oY="16" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_37_ 4" x="0" y="345" w="43" h="52" pX="0.5" pY="0.5" oX="26" oY="14" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_38_ 4" x="488" y="288" w="44" h="46" pX="0.5" pY="0.5" oX="25" oY="18" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_39_ 4" x="42" y="397" w="46" h="49" pX="0.5" pY="0.5" oX="24" oY="12" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_40_ 4" x="398" y="243" w="45" h="48" pX="0.5" pY="0.5" oX="24" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_41_ 5" x="532" y="259" w="44" h="40" pX="0.5" pY="0.5" oX="25" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_42_ 5" x="93" y="481" w="47" h="44" pX="0.5" pY="0.5" oX="23" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_43_ 5" x="530" y="44" w="46" h="42" pX="0.5" pY="0.5" oX="24" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_44_ 5" x="164" y="338" w="51" h="38" pX="0.5" pY="0.5" oX="19" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_45_ 5" x="420" y="513" w="46" h="34" pX="0.5" pY="0.5" oX="23" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_46_ 5" x="490" y="220" w="45" h="39" pX="0.5" pY="0.5" oX="24" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_47_ 5" x="443" y="250" w="47" h="38" pX="0.5" pY="0.5" oX="23" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_48_ 5" x="512" y="497" w="45" h="38" pX="0.5" pY="0.5" oX="24" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_49_ 6" x="86" y="585" w="43" h="42" pX="0.5" pY="0.5" oX="18" oY="18" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_50_ 6" x="266" y="439" w="46" h="40" pX="0.5" pY="0.5" oX="16" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_51_ 6" x="512" y="414" w="45" h="41" pX="0.5" pY="0.5" oX="17" oY="21" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_52_ 6" x="350" y="0" w="49" h="49" pX="0.5" pY="0.5" oX="17" oY="16" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_53_ 6" x="398" y="291" w="44" h="47" pX="0.5" pY="0.5" oX="19" oY="14" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_54_ 6" x="535" y="331" w="44" h="43" pX="0.5" pY="0.5" oX="17" oY="18" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_55_ 6" x="296" y="315" w="44" h="49" pX="0.5" pY="0.5" oX="18" oY="12" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_56_ 6" x="399" y="48" w="44" h="48" pX="0.5" pY="0.5" oX="18" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_57_ 7" x="572" y="374" w="44" h="40" pX="0.5" pY="0.5" oX="18" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_58_ 7" x="338" y="479" w="46" h="44" pX="0.5" pY="0.5" oX="16" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_59_ 7" x="292" y="479" w="46" h="42" pX="0.5" pY="0.5" oX="17" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_60_ 7" x="576" y="82" w="44" h="38" pX="0.5" pY="0.5" oX="18" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_61_ 7" x="619" y="329" w="41" h="34" pX="0.5" pY="0.5" oX="19" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_62_ 7" x="0" y="547" w="45" h="39" pX="0.5" pY="0.5" oX="17" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_63_ 7" x="576" y="0" w="44" h="38" pX="0.5" pY="0.5" oX="18" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Run_64_ 7" x="493" y="182" w="45" h="38" pX="0.5" pY="0.5" oX="18" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_01_ 0" x="597" y="534" w="12" h="40" pX="0.5" pY="0.5" oX="37" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_02_ 0" x="280" y="479" w="12" h="46" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_03_ 0" x="278" y="286" w="12" h="54" pX="0.5" pY="0.5" oX="37" oY="12" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_04_ 1" x="168" y="289" w="56" h="20" pX="0.5" pY="0.5" oX="15" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_05_ 1" x="0" y="174" w="61" h="19" pX="0.5" pY="0.5" oX="15" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_06_ 1" x="63" y="0" w="62" h="19" pX="0.5" pY="0.5" oX="17" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_07_ 2" x="239" y="238" w="57" h="20" pX="0.5" pY="0.5" oX="11" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_08_ 2" x="123" y="149" w="61" h="20" pX="0.5" pY="0.5" oX="7" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_09_ 2" x="124" y="96" w="61" h="19" pX="0.5" pY="0.5" oX="5" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_10_ 3" x="355" y="255" w="12" h="49" pX="0.5" pY="0.5" oX="37" oY="24" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_11_ 3" x="284" y="340" w="12" h="50" pX="0.5" pY="0.5" oX="37" oY="25" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_12_ 3" x="457" y="374" w="12" h="47" pX="0.5" pY="0.5" oX="37" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_13_ 4" x="258" y="585" w="43" h="32" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_14_ 4" x="220" y="446" w="46" h="33" pX="0.5" pY="0.5" oX="25" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_15_ 4" x="187" y="479" w="47" h="39" pX="0.5" pY="0.5" oX="26" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_16_ 5" x="513" y="575" w="39" h="42" pX="0.5" pY="0.5" oX="24" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_17_ 5" x="620" y="42" w="42" h="41" pX="0.5" pY="0.5" oX="25" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_18_ 5" x="575" y="414" w="43" h="39" pX="0.5" pY="0.5" oX="26" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_19_ 6" x="600" y="499" w="40" h="33" pX="0.5" pY="0.5" oX="22" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_20_ 6" x="620" y="83" w="42" h="36" pX="0.5" pY="0.5" oX="19" oY="26" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_21_ 6" x="576" y="259" w="43" h="42" pX="0.5" pY="0.5" oX="18" oY="19" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_22_ 7" x="272" y="540" w="44" h="38" pX="0.5" pY="0.5" oX="18" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_23_ 7" x="443" y="456" w="47" h="38" pX="0.5" pY="0.5" oX="15" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Use Skill_24_ 7" x="173" y="439" w="47" h="36" pX="0.5" pY="0.5" oX="13" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_01_ 0" x="247" y="0" w="12" h="58" pX="0.5" pY="0.5" oX="37" oY="8" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_02_ 0" x="12" y="242" w="12" h="59" pX="0.5" pY="0.5" oX="37" oY="7" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_03_ 0" x="0" y="242" w="12" h="59" pX="0.5" pY="0.5" oX="37" oY="7" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_04_ 0" x="229" y="73" w="13" h="59" pX="0.5" pY="0.5" oX="37" oY="7" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_05_ 0" x="24" y="242" w="12" h="59" pX="0.5" pY="0.5" oX="37" oY="7" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_06_ 0" x="48" y="242" w="12" h="58" pX="0.5" pY="0.5" oX="37" oY="7" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_07_ 0" x="226" y="133" w="12" h="60" pX="0.5" pY="0.5" oX="37" oY="7" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_08_ 0" x="36" y="242" w="12" h="58" pX="0.5" pY="0.5" oX="37" oY="8" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_09_ 1" x="121" y="190" w="60" h="27" pX="0.5" pY="0.5" oX="18" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_10_ 1" x="62" y="144" w="61" h="26" pX="0.5" pY="0.5" oX="18" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_11_ 1" x="62" y="120" w="61" h="24" pX="0.5" pY="0.5" oX="18" oY="31" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_12_ 1" x="120" y="217" w="60" h="23" pX="0.5" pY="0.5" oX="18" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_13_ 1" x="186" y="49" w="60" h="24" pX="0.5" pY="0.5" oX="18" oY="31" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_14_ 1" x="0" y="218" w="60" h="24" pX="0.5" pY="0.5" oX="18" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_15_ 1" x="186" y="0" w="61" h="25" pX="0.5" pY="0.5" oX="18" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_16_ 1" x="125" y="0" w="61" h="27" pX="0.5" pY="0.5" oX="18" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_17_ 2" x="181" y="216" w="59" h="22" pX="0.5" pY="0.5" oX="9" oY="33" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_18_ 2" x="180" y="238" w="59" h="23" pX="0.5" pY="0.5" oX="9" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_19_ 2" x="186" y="25" w="60" h="24" pX="0.5" pY="0.5" oX="9" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_20_ 2" x="176" y="261" w="58" h="28" pX="0.5" pY="0.5" oX="10" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_21_ 2" x="259" y="0" w="58" h="26" pX="0.5" pY="0.5" oX="10" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_22_ 2" x="60" y="217" w="60" h="25" pX="0.5" pY="0.5" oX="9" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_23_ 2" x="181" y="193" w="60" h="23" pX="0.5" pY="0.5" oX="9" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_24_ 2" x="60" y="194" w="60" h="23" pX="0.5" pY="0.5" oX="9" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_25_ 3" x="361" y="147" w="14" h="49" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_26_ 3" x="367" y="255" w="12" h="49" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_27_ 3" x="349" y="157" w="12" h="49" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_28_ 3" x="424" y="146" w="12" h="48" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_29_ 3" x="412" y="146" w="12" h="48" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_30_ 3" x="400" y="146" w="12" h="48" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_31_ 3" x="148" y="341" w="12" h="50" pX="0.5" pY="0.5" oX="37" oY="19" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_32_ 3" x="375" y="147" w="13" h="49" pX="0.5" pY="0.5" oX="37" oY="20" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_33_ 4" x="350" y="206" w="43" h="49" pX="0.5" pY="0.5" oX="23" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_34_ 4" x="399" y="0" w="44" h="48" pX="0.5" pY="0.5" oX="24" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_35_ 4" x="352" y="353" w="46" h="48" pX="0.5" pY="0.5" oX="24" oY="15" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_36_ 4" x="443" y="36" w="47" h="47" pX="0.5" pY="0.5" oX="24" oY="16" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_37_ 4" x="391" y="98" w="46" h="48" pX="0.5" pY="0.5" oX="24" oY="14" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_38_ 4" x="398" y="195" w="45" h="48" pX="0.5" pY="0.5" oX="24" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_39_ 4" x="355" y="304" w="43" h="49" pX="0.5" pY="0.5" oX="24" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_40_ 4" x="126" y="395" w="42" h="48" pX="0.5" pY="0.5" oX="24" oY="13" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_41_ 5" x="300" y="402" w="48" h="37" pX="0.5" pY="0.5" oX="24" oY="23" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_42_ 5" x="481" y="374" w="46" h="38" pX="0.5" pY="0.5" oX="24" oY="23" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_43_ 5" x="466" y="513" w="44" h="41" pX="0.5" pY="0.5" oX="24" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_44_ 5" x="578" y="199" w="42" h="42" pX="0.5" pY="0.5" oX="24" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_45_ 5" x="215" y="585" w="43" h="39" pX="0.5" pY="0.5" oX="24" oY="23" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_46_ 5" x="527" y="374" w="45" h="40" pX="0.5" pY="0.5" oX="24" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_47_ 5" x="396" y="401" w="47" h="39" pX="0.5" pY="0.5" oX="24" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_48_ 5" x="300" y="364" w="48" h="38" pX="0.5" pY="0.5" oX="24" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_49_ 6" x="348" y="401" w="48" h="45" pX="0.5" pY="0.5" oX="15" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_50_ 6" x="0" y="481" w="46" h="47" pX="0.5" pY="0.5" oX="17" oY="15" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_51_ 6" x="398" y="338" w="44" h="47" pX="0.5" pY="0.5" oX="19" oY="14" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_52_ 6" x="350" y="98" w="41" h="49" pX="0.5" pY="0.5" oX="22" oY="12" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_53_ 6" x="0" y="397" w="42" h="49" pX="0.5" pY="0.5" oX="21" oY="12" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_54_ 6" x="443" y="288" w="45" h="47" pX="0.5" pY="0.5" oX="18" oY="14" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_55_ 6" x="182" y="390" w="47" h="48" pX="0.5" pY="0.5" oX="16" oY="16" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_56_ 6" x="443" y="204" w="47" h="46" pX="0.5" pY="0.5" oX="16" oY="17" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_57_ 7" x="430" y="577" w="41" h="42" pX="0.5" pY="0.5" oX="22" oY="23" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_58_ 7" x="0" y="586" w="43" h="41" pX="0.5" pY="0.5" oX="20" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_59_ 7" x="234" y="479" w="46" h="40" pX="0.5" pY="0.5" oX="17" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_60_ 7" x="46" y="481" w="47" h="38" pX="0.5" pY="0.5" oX="16" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_61_ 7" x="529" y="86" w="45" h="37" pX="0.5" pY="0.5" oX="18" oY="23" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_62_ 7" x="510" y="535" w="44" h="40" pX="0.5" pY="0.5" oX="19" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_63_ 7" x="557" y="492" w="43" h="42" pX="0.5" pY="0.5" oX="20" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Walk_64_ 7" x="471" y="577" w="42" h="42" pX="0.5" pY="0.5" oX="21" oY="22" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_01_ 0" x="94" y="444" w="12" h="37" pX="0.5" pY="0.5" oX="37" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_02_ 0" x="203" y="627" w="12" h="37" pX="0.5" pY="0.5" oX="37" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_03_ 0" x="106" y="444" w="12" h="37" pX="0.5" pY="0.5" oX="37" oY="28" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_04_ 1" x="312" y="446" w="46" h="20" pX="0.5" pY="0.5" oX="21" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_05_ 1" x="420" y="494" w="46" h="19" pX="0.5" pY="0.5" oX="21" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_06_ 1" x="466" y="494" w="46" h="19" pX="0.5" pY="0.5" oX="21" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_07_ 2" x="292" y="521" w="46" h="19" pX="0.5" pY="0.5" oX="19" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_08_ 2" x="443" y="138" w="47" h="19" pX="0.5" pY="0.5" oX="18" oY="36" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_09_ 2" x="443" y="118" w="47" h="20" pX="0.5" pY="0.5" oX="18" oY="35" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_10_ 3" x="649" y="499" w="13" h="40" pX="0.5" pY="0.5" oX="37" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_11_ 3" x="185" y="73" w="12" h="41" pX="0.5" pY="0.5" oX="37" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_12_ 3" x="517" y="92" w="12" h="41" pX="0.5" pY="0.5" oX="37" oY="27" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_13_ 4" x="129" y="616" w="37" h="29" pX="0.5" pY="0.5" oX="24" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_14_ 4" x="455" y="619" w="37" h="29" pX="0.5" pY="0.5" oX="24" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_15_ 4" x="133" y="669" w="35" h="30" pX="0.5" pY="0.5" oX="25" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_16_ 5" x="168" y="663" w="34" h="34" pX="0.5" pY="0.5" oX="25" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_17_ 5" x="62" y="666" w="36" h="34" pX="0.5" pY="0.5" oX="24" oY="29" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_18_ 5" x="418" y="623" w="37" h="33" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_19_ 6" x="98" y="669" w="35" h="30" pX="0.5" pY="0.5" oX="26" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_20_ 6" x="381" y="623" w="37" h="30" pX="0.5" pY="0.5" oX="25" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_21_ 6" x="344" y="618" w="37" h="29" pX="0.5" pY="0.5" oX="25" oY="32" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_22_ 7" x="260" y="617" w="38" h="32" pX="0.5" pY="0.5" oX="24" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_23_ 7" x="298" y="623" w="37" h="32" pX="0.5" pY="0.5" oX="25" oY="30" oW="80" oH="80"/>
+  <sprite n="Cat_3_Woozy_24_ 7" x="260" y="649" w="36" h="34" pX="0.5" pY="0.5" oX="25" oY="29" oW="80" oH="80"/>
+</TextureAtlas>

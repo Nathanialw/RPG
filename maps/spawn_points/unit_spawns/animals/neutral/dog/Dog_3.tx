@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../../sprite_sheets/units/animals/neutral/dog/Dog_3.tsx"/>
+ <object name="Dog_3" class="unit" gid="1" width="33" height="18"/>
+</template>

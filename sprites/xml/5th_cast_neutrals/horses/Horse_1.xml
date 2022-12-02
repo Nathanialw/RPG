@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Horse_1.png" width="2730" height="2628" scale="1" format="RGBA8888">
+  <sprite n="Horse_1_Attack 1_01_ 0" x="2130" y="1599" w="49" h="151" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_02_ 0" x="2559" y="1529" w="50" h="130" pX="0.5" pY="0.5" oX="99" oY="54" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_03_ 0" x="2145" y="1442" w="57" h="146" pX="0.5" pY="0.5" oX="99" oY="32" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_04_ 1" x="884" y="1557" w="166" h="100" pX="0.5" pY="0.5" oX="40" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_05_ 1" x="1651" y="2246" w="140" h="127" pX="0.5" pY="0.5" oX="66" oY="51" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_06_ 1" x="2198" y="1913" w="147" h="134" pX="0.5" pY="0.5" oX="57" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_07_ 2" x="1372" y="1359" w="172" h="98" pX="0.5" pY="0.5" oX="35" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_08_ 2" x="1169" y="2102" w="149" h="132" pX="0.5" pY="0.5" oX="35" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_09_ 2" x="2064" y="0" w="156" h="152" pX="0.5" pY="0.5" oX="38" oY="26" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_10_ 3" x="1097" y="184" w="49" h="184" pX="0.5" pY="0.5" oX="99" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_11_ 3" x="652" y="389" w="50" h="196" pX="0.5" pY="0.5" oX="98" oY="22" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_12_ 3" x="748" y="277" w="52" h="192" pX="0.5" pY="0.5" oX="95" oY="28" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_13_ 4" x="2196" y="2398" w="120" h="121" pX="0.5" pY="0.5" oX="61" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_14_ 4" x="2568" y="1787" w="101" h="115" pX="0.5" pY="0.5" oX="82" oY="66" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_15_ 4" x="642" y="2499" w="111" h="127" pX="0.5" pY="0.5" oX="72" oY="41" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_16_ 5" x="0" y="2104" w="127" h="151" pX="0.5" pY="0.5" oX="62" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_17_ 5" x="311" y="1457" w="110" h="170" pX="0.5" pY="0.5" oX="76" oY="29" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_18_ 5" x="329" y="1627" w="108" h="166" pX="0.5" pY="0.5" oX="75" oY="38" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_19_ 6" x="266" y="2378" w="133" h="121" pX="0.5" pY="0.5" oX="52" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_20_ 6" x="2609" y="241" w="119" h="111" pX="0.5" pY="0.5" oX="55" oY="65" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_21_ 6" x="2351" y="1126" w="117" h="136" pX="0.5" pY="0.5" oX="59" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_22_ 7" x="758" y="1757" w="121" h="160" pX="0.5" pY="0.5" oX="65" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_23_ 7" x="1142" y="545" w="108" h="179" pX="0.5" pY="0.5" oX="61" oY="25" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 1_24_ 7" x="1137" y="1096" w="118" h="176" pX="0.5" pY="0.5" oX="60" oY="27" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_01_ 0" x="1941" y="636" w="49" h="151" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_02_ 0" x="286" y="1945" w="48" h="159" pX="0.5" pY="0.5" oX="99" oY="38" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_03_ 0" x="1064" y="1945" w="52" h="157" pX="0.5" pY="0.5" oX="94" oY="60" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_04_ 1" x="1544" y="1356" w="167" h="100" pX="0.5" pY="0.5" oX="45" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_05_ 1" x="1255" y="1182" w="174" h="88" pX="0.5" pY="0.5" oX="59" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_06_ 1" x="246" y="130" w="206" h="103" pX="0.5" pY="0.5" oX="12" oY="74" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_07_ 2" x="684" y="1359" w="172" h="98" pX="0.5" pY="0.5" oX="30" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_08_ 2" x="180" y="1219" w="176" h="87" pX="0.5" pY="0.5" oX="9" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_09_ 2" x="48" y="0" w="210" h="100" pX="0.5" pY="0.5" oX="26" oY="79" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_10_ 3" x="1097" y="0" w="49" h="184" pX="0.5" pY="0.5" oX="99" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_11_ 3" x="1399" y="175" w="49" h="173" pX="0.5" pY="0.5" oX="99" oY="56" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_12_ 3" x="404" y="233" w="47" h="204" pX="0.5" pY="0.5" oX="99" oY="7" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_13_ 4" x="2436" y="2435" w="120" h="121" pX="0.5" pY="0.5" oX="61" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_14_ 4" x="2483" y="661" w="122" h="130" pX="0.5" pY="0.5" oX="70" oY="54" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_15_ 4" x="2202" y="1330" w="145" h="127" pX="0.5" pY="0.5" oX="32" oY="70" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_16_ 5" x="709" y="2103" w="127" h="151" pX="0.5" pY="0.5" oX="62" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_17_ 5" x="2339" y="579" w="132" h="137" pX="0.5" pY="0.5" oX="72" oY="66" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_18_ 5" x="1777" y="809" w="160" h="163" pX="0.5" pY="0.5" oX="37" oY="24" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_19_ 6" x="665" y="2378" w="133" h="121" pX="0.5" pY="0.5" oX="52" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_20_ 6" x="2215" y="927" w="136" h="129" pX="0.5" pY="0.5" oX="38" oY="56" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_21_ 6" x="1777" y="601" w="164" h="114" pX="0.5" pY="0.5" oX="46" oY="85" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_22_ 7" x="1941" y="320" w="121" h="160" pX="0.5" pY="0.5" oX="65" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_23_ 7" x="2217" y="435" w="128" h="144" pX="0.5" pY="0.5" oX="50" oY="68" oW="240" oH="240"/>
+  <sprite n="Horse_1_Attack 2_24_ 7" x="1137" y="920" w="150" h="176" pX="0.5" pY="0.5" oX="66" oY="28" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_01_ 0" x="984" y="2103" w="50" h="150" pX="0.5" pY="0.5" oX="96" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_02_ 0" x="934" y="2103" w="50" h="150" pX="0.5" pY="0.5" oX="96" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_03_ 0" x="836" y="2103" w="50" h="150" pX="0.5" pY="0.5" oX="96" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_04_ 1" x="2062" y="841" w="154" h="86" pX="0.5" pY="0.5" oX="60" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_05_ 1" x="1868" y="1360" w="155" h="86" pX="0.5" pY="0.5" oX="60" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_06_ 1" x="2062" y="755" w="154" h="86" pX="0.5" pY="0.5" oX="60" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_07_ 2" x="2062" y="664" w="154" h="91" pX="0.5" pY="0.5" oX="28" oY="88" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_08_ 2" x="1620" y="329" w="156" h="91" pX="0.5" pY="0.5" oX="27" oY="88" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_09_ 2" x="2064" y="152" w="155" h="91" pX="0.5" pY="0.5" oX="28" oY="88" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_10_ 3" x="2179" y="1588" w="48" h="144" pX="0.5" pY="0.5" oX="100" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_11_ 3" x="1826" y="2099" w="48" h="145" pX="0.5" pY="0.5" oX="100" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_12_ 3" x="2216" y="1732" w="48" h="144" pX="0.5" pY="0.5" oX="100" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_13_ 4" x="1791" y="2360" w="107" h="132" pX="0.5" pY="0.5" oX="78" oY="62" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_14_ 4" x="2484" y="397" w="111" h="131" pX="0.5" pY="0.5" oX="78" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_15_ 4" x="2484" y="1252" w="117" h="130" pX="0.5" pY="0.5" oX="78" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_16_ 5" x="2483" y="791" w="126" h="119" pX="0.5" pY="0.5" oX="69" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_17_ 5" x="1509" y="2373" w="120" h="119" pX="0.5" pY="0.5" oX="69" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_18_ 5" x="1244" y="2492" w="113" h="123" pX="0.5" pY="0.5" oX="69" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_19_ 6" x="387" y="2499" w="128" h="119" pX="0.5" pY="0.5" oX="46" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_20_ 6" x="2609" y="0" w="121" h="120" pX="0.5" pY="0.5" oX="53" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_21_ 6" x="1825" y="479" w="114" h="121" pX="0.5" pY="0.5" oX="60" oY="62" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_22_ 7" x="1137" y="2492" w="107" h="125" pX="0.5" pY="0.5" oX="57" oY="82" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_23_ 7" x="2605" y="661" w="111" h="120" pX="0.5" pY="0.5" oX="53" oY="82" oW="240" oH="240"/>
+  <sprite n="Horse_1_Behavior_24_ 7" x="2609" y="781" w="117" h="115" pX="0.5" pY="0.5" oX="47" oY="82" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_01_ 0" x="1990" y="636" w="49" h="151" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_02_ 0" x="2030" y="1760" w="48" h="153" pX="0.5" pY="0.5" oX="99" oY="39" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_03_ 0" x="1783" y="1945" w="48" h="154" pX="0.5" pY="0.5" oX="99" oY="37" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_04_ 1" x="163" y="1657" w="166" h="100" pX="0.5" pY="0.5" oX="40" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_05_ 1" x="1393" y="1270" w="171" h="86" pX="0.5" pY="0.5" oX="57" oY="89" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_06_ 1" x="1255" y="1096" w="174" h="86" pX="0.5" pY="0.5" oX="58" oY="89" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_07_ 2" x="1450" y="0" w="172" h="98" pX="0.5" pY="0.5" oX="35" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_08_ 2" x="696" y="1272" w="175" h="85" pX="0.5" pY="0.5" oX="14" oY="89" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_09_ 2" x="366" y="1195" w="177" h="85" pX="0.5" pY="0.5" oX="10" oY="89" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_10_ 3" x="849" y="865" w="49" h="184" pX="0.5" pY="0.5" oX="99" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_11_ 3" x="1564" y="432" w="48" h="171" pX="0.5" pY="0.5" oX="99" oY="59" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_12_ 3" x="696" y="1112" w="49" h="160" pX="0.5" pY="0.5" oX="99" oY="73" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_13_ 4" x="2316" y="2429" w="120" h="121" pX="0.5" pY="0.5" oX="61" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_14_ 4" x="2336" y="2297" w="120" h="132" pX="0.5" pY="0.5" oX="72" oY="55" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_15_ 4" x="2485" y="132" w="123" h="132" pX="0.5" pY="0.5" oX="72" oY="54" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_16_ 5" x="582" y="2103" w="127" h="151" pX="0.5" pY="0.5" oX="62" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_17_ 5" x="2351" y="1262" w="133" h="136" pX="0.5" pY="0.5" oX="72" oY="69" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_18_ 5" x="2345" y="1798" w="135" h="123" pX="0.5" pY="0.5" oX="73" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_19_ 6" x="0" y="2378" w="133" h="121" pX="0.5" pY="0.5" oX="52" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_20_ 6" x="2347" y="397" w="137" h="132" pX="0.5" pY="0.5" oX="37" oY="57" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_21_ 6" x="2347" y="0" w="138" h="133" pX="0.5" pY="0.5" oX="34" oY="55" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_22_ 7" x="1910" y="1118" w="121" h="160" pX="0.5" pY="0.5" oX="65" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_23_ 7" x="2217" y="291" w="125" h="144" pX="0.5" pY="0.5" oX="50" oY="69" oW="240" oH="240"/>
+  <sprite n="Horse_1_Block_24_ 7" x="2483" y="529" w="126" h="132" pX="0.5" pY="0.5" oX="47" oY="83" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_01_ 0" x="1433" y="1625" w="49" h="162" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_02_ 0" x="1861" y="1118" w="49" h="162" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_03_ 0" x="1812" y="1118" w="49" h="162" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_04_ 1" x="180" y="1306" w="172" h="89" pX="0.5" pY="0.5" oX="35" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_05_ 1" x="512" y="1359" w="172" h="89" pX="0.5" pY="0.5" oX="35" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_06_ 1" x="1444" y="873" w="171" h="89" pX="0.5" pY="0.5" oX="36" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_07_ 2" x="1219" y="1272" w="174" h="87" pX="0.5" pY="0.5" oX="35" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_08_ 2" x="1045" y="1272" w="174" h="87" pX="0.5" pY="0.5" oX="34" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_09_ 2" x="871" y="1272" w="174" h="87" pX="0.5" pY="0.5" oX="34" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_10_ 3" x="1612" y="432" w="49" h="167" pX="0.5" pY="0.5" oX="99" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_11_ 3" x="1444" y="962" w="49" h="168" pX="0.5" pY="0.5" oX="99" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_12_ 3" x="1493" y="962" w="49" h="167" pX="0.5" pY="0.5" oX="99" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_13_ 4" x="2484" y="1121" w="125" h="131" pX="0.5" pY="0.5" oX="57" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_14_ 4" x="2482" y="1398" w="127" h="131" pX="0.5" pY="0.5" oX="57" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_15_ 4" x="0" y="2499" w="129" h="129" pX="0.5" pY="0.5" oX="58" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_16_ 5" x="2351" y="990" w="127" h="136" pX="0.5" pY="0.5" oX="59" oY="61" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_17_ 5" x="2227" y="1583" w="124" h="137" pX="0.5" pY="0.5" oX="60" oY="62" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_18_ 5" x="2217" y="579" w="122" h="140" pX="0.5" pY="0.5" oX="60" oY="62" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_19_ 6" x="2478" y="990" w="130" h="131" pX="0.5" pY="0.5" oX="55" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_20_ 6" x="2209" y="2266" w="127" h="132" pX="0.5" pY="0.5" oX="58" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_21_ 6" x="2485" y="0" w="124" h="132" pX="0.5" pY="0.5" oX="61" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_22_ 7" x="2216" y="719" w="126" h="139" pX="0.5" pY="0.5" oX="61" oY="62" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_23_ 7" x="2351" y="716" w="129" h="137" pX="0.5" pY="0.5" oX="58" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Critical HP_24_ 7" x="2351" y="853" w="132" h="137" pX="0.5" pY="0.5" oX="55" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Dead_01_ 0" x="2608" y="1659" w="102" h="112" pX="0.5" pY="0.5" oX="51" oY="85" oW="240" oH="240"/>
+  <sprite n="Horse_1_Dead_02_ 1" x="1627" y="2081" w="151" h="75" pX="0.5" pY="0.5" oX="46" oY="105" oW="240" oH="240"/>
+  <sprite n="Horse_1_Dead_03_ 2" x="2023" y="1360" w="150" h="82" pX="0.5" pY="0.5" oX="44" oY="104" oW="240" oH="240"/>
+  <sprite n="Horse_1_Dead_04_ 3" x="2609" y="352" w="103" h="111" pX="0.5" pY="0.5" oX="74" oY="79" oW="240" oH="240"/>
+  <sprite n="Horse_1_Dead_05_ 4" x="1629" y="2373" w="112" h="116" pX="0.5" pY="0.5" oX="68" oY="82" oW="240" oH="240"/>
+  <sprite n="Horse_1_Dead_06_ 5" x="1889" y="1280" w="160" h="80" pX="0.5" pY="0.5" oX="49" oY="104" oW="240" oH="240"/>
+  <sprite n="Horse_1_Dead_07_ 6" x="163" y="1757" w="161" h="89" pX="0.5" pY="0.5" oX="28" oY="94" oW="240" oH="240"/>
+  <sprite n="Horse_1_Dead_08_ 7" x="1477" y="2492" w="112" h="123" pX="0.5" pY="0.5" oX="61" oY="72" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_01_ 0" x="1029" y="1757" w="49" h="151" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_02_ 0" x="1177" y="2234" w="47" h="143" pX="0.5" pY="0.5" oX="100" oY="50" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_03_ 0" x="976" y="2253" w="54" h="125" pX="0.5" pY="0.5" oX="102" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_04_ 1" x="603" y="1657" w="166" h="100" pX="0.5" pY="0.5" oX="40" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_05_ 1" x="907" y="189" w="190" h="111" pX="0.5" pY="0.5" oX="43" oY="59" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_06_ 1" x="1776" y="972" w="162" h="146" pX="0.5" pY="0.5" oX="72" oY="32" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_07_ 2" x="0" y="1359" w="172" h="98" pX="0.5" pY="0.5" oX="35" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_08_ 2" x="0" y="536" w="197" h="115" pX="0.5" pY="0.5" oX="9" oY="59" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_09_ 2" x="1448" y="196" w="172" h="138" pX="0.5" pY="0.5" oX="8" oY="36" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_10_ 3" x="1090" y="736" w="49" h="184" pX="0.5" pY="0.5" oX="99" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_11_ 3" x="0" y="0" w="48" h="211" pX="0.5" pY="0.5" oX="99" oY="22" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_12_ 3" x="0" y="211" w="58" h="210" pX="0.5" pY="0.5" oX="90" oY="24" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_13_ 4" x="2076" y="2497" w="120" h="121" pX="0.5" pY="0.5" oX="61" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_14_ 4" x="575" y="815" w="134" h="114" pX="0.5" pY="0.5" oX="64" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_15_ 4" x="753" y="2499" w="126" h="122" pX="0.5" pY="0.5" oX="83" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_16_ 5" x="2049" y="1058" w="127" h="151" pX="0.5" pY="0.5" oX="62" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_17_ 5" x="1141" y="724" w="142" h="177" pX="0.5" pY="0.5" oX="64" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_18_ 5" x="903" y="674" w="114" h="190" pX="0.5" pY="0.5" oX="81" oY="27" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_19_ 6" x="133" y="2378" w="133" h="121" pX="0.5" pY="0.5" oX="52" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_20_ 6" x="1470" y="2088" w="150" h="121" pX="0.5" pY="0.5" oX="35" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_21_ 6" x="1323" y="2375" w="123" h="113" pX="0.5" pY="0.5" oX="46" oY="46" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_22_ 7" x="1941" y="160" w="121" h="160" pX="0.5" pY="0.5" oX="65" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_23_ 7" x="1146" y="0" w="142" h="183" pX="0.5" pY="0.5" oX="43" oY="30" oW="240" oH="240"/>
+  <sprite n="Horse_1_Evade_24_ 7" x="1146" y="183" w="137" h="181" pX="0.5" pY="0.5" oX="32" oY="26" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_01_ 0" x="533" y="2103" w="49" h="151" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_02_ 0" x="886" y="2103" w="48" h="150" pX="0.5" pY="0.5" oX="99" oY="50" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_03_ 0" x="1778" y="2099" w="48" h="147" pX="0.5" pY="0.5" oX="99" oY="51" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_04_ 1" x="935" y="1657" w="166" h="100" pX="0.5" pY="0.5" oX="40" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_05_ 1" x="1777" y="388" w="164" h="91" pX="0.5" pY="0.5" oX="41" oY="85" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_06_ 1" x="1777" y="715" w="164" h="94" pX="0.5" pY="0.5" oX="41" oY="82" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_07_ 2" x="1448" y="334" w="172" h="98" pX="0.5" pY="0.5" oX="35" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_08_ 2" x="1429" y="1132" w="170" h="90" pX="0.5" pY="0.5" oX="37" oY="85" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_09_ 2" x="1052" y="1457" w="168" h="93" pX="0.5" pY="0.5" oX="38" oY="82" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_10_ 3" x="1092" y="552" w="49" h="184" pX="0.5" pY="0.5" oX="99" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_11_ 3" x="1146" y="364" w="49" h="181" pX="0.5" pY="0.5" oX="99" oY="34" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_12_ 3" x="1086" y="1103" w="49" h="169" pX="0.5" pY="0.5" oX="99" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_13_ 4" x="1956" y="2435" w="120" h="121" pX="0.5" pY="0.5" oX="61" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_14_ 4" x="1712" y="2492" w="122" h="121" pX="0.5" pY="0.5" oX="60" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_15_ 4" x="1834" y="2492" w="122" h="120" pX="0.5" pY="0.5" oX="60" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_16_ 5" x="2048" y="1913" w="127" h="151" pX="0.5" pY="0.5" oX="62" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_17_ 5" x="2220" y="0" w="127" h="147" pX="0.5" pY="0.5" oX="61" oY="47" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_18_ 5" x="2351" y="1663" w="127" h="135" pX="0.5" pY="0.5" oX="60" oY="59" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_19_ 6" x="399" y="2378" w="133" h="121" pX="0.5" pY="0.5" oX="52" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_20_ 6" x="630" y="2254" w="135" h="122" pX="0.5" pY="0.5" oX="53" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_21_ 6" x="931" y="2378" w="132" h="121" pX="0.5" pY="0.5" oX="55" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_22_ 7" x="1943" y="0" w="121" h="160" pX="0.5" pY="0.5" oX="65" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_23_ 7" x="1938" y="809" w="124" h="156" pX="0.5" pY="0.5" oX="65" oY="47" oW="240" oH="240"/>
+  <sprite n="Horse_1_Get Hit_24_ 7" x="2220" y="147" w="123" h="144" pX="0.5" pY="0.5" oX="64" oY="59" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_01_ 0" x="303" y="2104" w="49" h="151" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_02_ 0" x="352" y="2103" w="49" h="151" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_03_ 0" x="324" y="1793" w="49" h="152" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_04_ 1" x="1101" y="1650" w="166" h="100" pX="0.5" pY="0.5" oX="40" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_05_ 1" x="884" y="1457" w="168" h="100" pX="0.5" pY="0.5" oX="39" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_06_ 1" x="1052" y="1550" w="167" h="100" pX="0.5" pY="0.5" oX="39" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_07_ 2" x="856" y="1359" w="172" h="98" pX="0.5" pY="0.5" oX="35" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_08_ 2" x="1200" y="1359" w="172" h="98" pX="0.5" pY="0.5" oX="35" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_09_ 2" x="1028" y="1359" w="172" h="98" pX="0.5" pY="0.5" oX="36" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_10_ 3" x="800" y="865" w="49" h="184" pX="0.5" pY="0.5" oX="99" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_11_ 3" x="1017" y="666" w="49" h="185" pX="0.5" pY="0.5" oX="99" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_12_ 3" x="751" y="865" w="49" h="184" pX="0.5" pY="0.5" oX="99" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_13_ 4" x="2076" y="2376" w="120" h="121" pX="0.5" pY="0.5" oX="61" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_14_ 4" x="1589" y="2492" w="123" h="121" pX="0.5" pY="0.5" oX="61" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_15_ 4" x="129" y="2499" w="129" h="120" pX="0.5" pY="0.5" oX="61" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_16_ 5" x="176" y="2104" w="127" h="151" pX="0.5" pY="0.5" oX="62" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_17_ 5" x="1941" y="480" w="121" h="156" pX="0.5" pY="0.5" oX="62" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_18_ 5" x="1649" y="1785" w="119" h="160" pX="0.5" pY="0.5" oX="62" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_19_ 6" x="798" y="2378" w="133" h="121" pX="0.5" pY="0.5" oX="52" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_20_ 6" x="515" y="2499" w="127" h="122" pX="0.5" pY="0.5" oX="58" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_21_ 6" x="1357" y="2492" w="120" h="123" pX="0.5" pY="0.5" oX="65" oY="62" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_22_ 7" x="1528" y="1785" w="121" h="160" pX="0.5" pY="0.5" oX="65" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_23_ 7" x="1342" y="1945" w="128" h="157" pX="0.5" pY="0.5" oX="58" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Idle_24_ 7" x="1116" y="1945" w="134" h="157" pX="0.5" pY="0.5" oX="52" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_01_ 0" x="879" y="2499" w="86" h="125" pX="0.5" pY="0.5" oX="82" oY="83" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_02_ 0" x="1051" y="2499" w="86" h="125" pX="0.5" pY="0.5" oX="82" oY="83" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_03_ 0" x="965" y="2499" w="86" h="125" pX="0.5" pY="0.5" oX="82" oY="83" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_04_ 1" x="1267" y="1625" w="166" h="97" pX="0.5" pY="0.5" oX="36" oY="78" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_05_ 1" x="1540" y="1624" w="166" h="97" pX="0.5" pY="0.5" oX="36" oY="78" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_06_ 1" x="1777" y="0" w="166" h="97" pX="0.5" pY="0.5" oX="36" oY="78" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_07_ 2" x="437" y="1657" w="166" h="72" pX="0.5" pY="0.5" oX="38" oY="103" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_08_ 2" x="1564" y="1283" w="166" h="72" pX="0.5" pY="0.5" oX="38" oY="103" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_09_ 2" x="1267" y="1722" w="166" h="72" pX="0.5" pY="0.5" oX="38" oY="103" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_10_ 3" x="2480" y="1787" w="88" h="130" pX="0.5" pY="0.5" oX="73" oY="74" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_11_ 3" x="2471" y="1529" w="88" h="130" pX="0.5" pY="0.5" oX="73" oY="74" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_12_ 3" x="2485" y="264" w="88" h="131" pX="0.5" pY="0.5" oX="73" oY="74" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_13_ 4" x="1791" y="2266" w="140" h="94" pX="0.5" pY="0.5" oX="40" oY="89" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_14_ 4" x="2198" y="2171" w="140" h="95" pX="0.5" pY="0.5" oX="40" oY="88" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_15_ 4" x="162" y="1846" w="140" h="95" pX="0.5" pY="0.5" oX="40" oY="88" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_16_ 5" x="2478" y="1659" w="130" h="128" pX="0.5" pY="0.5" oX="62" oY="66" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_17_ 5" x="2456" y="2307" w="130" h="128" pX="0.5" pY="0.5" oX="62" oY="66" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_18_ 5" x="2472" y="2179" w="130" h="128" pX="0.5" pY="0.5" oX="62" oY="66" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_19_ 6" x="1063" y="2378" w="130" h="113" pX="0.5" pY="0.5" oX="45" oY="72" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_20_ 6" x="2479" y="1921" w="130" h="113" pX="0.5" pY="0.5" oX="45" oY="72" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_21_ 6" x="1193" y="2377" w="130" h="113" pX="0.5" pY="0.5" oX="45" oY="72" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_22_ 7" x="491" y="2254" w="139" h="110" pX="0.5" pY="0.5" oX="47" oY="91" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_23_ 7" x="1931" y="2266" w="139" h="110" pX="0.5" pY="0.5" oX="47" oY="91" oW="240" oH="240"/>
+  <sprite n="Horse_1_Rest_24_ 7" x="2070" y="2266" w="139" h="110" pX="0.5" pY="0.5" oX="47" oY="91" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_01_ 0" x="1564" y="962" w="47" h="170" pX="0.5" pY="0.5" oX="100" oY="25" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_02_ 0" x="1241" y="364" w="46" h="178" pX="0.5" pY="0.5" oX="100" oY="27" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_03_ 0" x="1195" y="364" w="46" h="180" pX="0.5" pY="0.5" oX="100" oY="23" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_04_ 0" x="966" y="387" w="46" h="185" pX="0.5" pY="0.5" oX="100" oY="14" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_05_ 0" x="379" y="637" w="46" h="194" pX="0.5" pY="0.5" oX="100" oY="10" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_06_ 0" x="1017" y="387" w="47" h="189" pX="0.5" pY="0.5" oX="100" oY="14" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_07_ 0" x="846" y="277" w="47" h="190" pX="0.5" pY="0.5" oX="100" oY="12" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_08_ 0" x="1090" y="920" w="47" h="183" pX="0.5" pY="0.5" oX="100" oY="15" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_09_ 1" x="0" y="1025" w="187" h="105" pX="0.5" pY="0.5" oX="43" oY="66" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_10_ 1" x="907" y="89" w="190" h="100" pX="0.5" pY="0.5" oX="41" oY="73" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_11_ 1" x="384" y="831" w="191" h="98" pX="0.5" pY="0.5" oX="40" oY="72" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_12_ 1" x="512" y="0" w="201" h="98" pX="0.5" pY="0.5" oX="39" oY="73" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_13_ 1" x="471" y="637" w="194" h="93" pX="0.5" pY="0.5" oX="35" oY="79" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_14_ 1" x="184" y="749" w="195" h="92" pX="0.5" pY="0.5" oX="35" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_15_ 1" x="407" y="437" w="198" h="96" pX="0.5" pY="0.5" oX="35" oY="72" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_16_ 1" x="713" y="89" w="194" h="102" pX="0.5" pY="0.5" oX="38" oY="67" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_17_ 2" x="711" y="481" w="193" h="99" pX="0.5" pY="0.5" oX="12" oY="69" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_18_ 2" x="184" y="651" w="195" h="98" pX="0.5" pY="0.5" oX="12" oY="74" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_19_ 2" x="205" y="535" w="196" h="102" pX="0.5" pY="0.5" oX="12" oY="72" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_20_ 2" x="58" y="307" w="206" h="100" pX="0.5" pY="0.5" oX="2" oY="72" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_21_ 2" x="512" y="194" w="201" h="94" pX="0.5" pY="0.5" oX="11" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_22_ 2" x="512" y="98" w="201" h="96" pX="0.5" pY="0.5" oX="11" oY="75" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_23_ 2" x="205" y="437" w="202" h="98" pX="0.5" pY="0.5" oX="11" oY="72" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_24_ 2" x="498" y="288" w="198" h="101" pX="0.5" pY="0.5" oX="12" oY="68" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_25_ 3" x="199" y="100" w="47" h="206" pX="0.5" pY="0.5" oX="100" oY="26" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_26_ 3" x="357" y="233" w="47" h="204" pX="0.5" pY="0.5" oX="100" oY="29" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_27_ 3" x="152" y="100" w="47" h="207" pX="0.5" pY="0.5" oX="100" oY="27" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_28_ 3" x="105" y="100" w="47" h="207" pX="0.5" pY="0.5" oX="100" oY="26" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_29_ 3" x="264" y="233" w="46" h="204" pX="0.5" pY="0.5" oX="100" oY="29" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_30_ 3" x="310" y="233" w="47" h="204" pX="0.5" pY="0.5" oX="100" oY="28" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_31_ 3" x="465" y="0" w="47" h="203" pX="0.5" pY="0.5" oX="100" oY="28" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_32_ 3" x="58" y="100" w="47" h="207" pX="0.5" pY="0.5" oX="100" oY="25" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_33_ 4" x="2062" y="243" w="155" h="136" pX="0.5" pY="0.5" oX="62" oY="51" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_34_ 4" x="2062" y="379" w="155" h="143" pX="0.5" pY="0.5" oX="62" oY="53" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_35_ 4" x="2062" y="522" w="155" h="142" pX="0.5" pY="0.5" oX="62" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_36_ 4" x="1470" y="1945" w="157" h="143" pX="0.5" pY="0.5" oX="62" oY="41" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_37_ 4" x="1101" y="1750" w="160" h="152" pX="0.5" pY="0.5" oX="60" oY="36" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_38_ 4" x="598" y="1794" w="160" h="147" pX="0.5" pY="0.5" oX="59" oY="40" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_39_ 4" x="437" y="1729" w="161" h="146" pX="0.5" pY="0.5" oX="58" oY="39" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_40_ 4" x="1889" y="1927" w="159" h="139" pX="0.5" pY="0.5" oX="60" oY="42" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_41_ 5" x="1287" y="357" w="150" h="174" pX="0.5" pY="0.5" oX="65" oY="38" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_42_ 5" x="159" y="1457" w="152" h="170" pX="0.5" pY="0.5" oX="63" oY="42" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_43_ 5" x="1287" y="716" w="155" h="173" pX="0.5" pY="0.5" oX="62" oY="41" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_44_ 5" x="927" y="1042" w="159" h="178" pX="0.5" pY="0.5" oX="61" oY="41" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_45_ 5" x="583" y="1457" w="165" h="169" pX="0.5" pY="0.5" oX="57" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_46_ 5" x="1615" y="749" w="162" h="167" pX="0.5" pY="0.5" oX="58" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_47_ 5" x="1615" y="916" w="161" h="167" pX="0.5" pY="0.5" oX="58" oY="42" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_48_ 5" x="356" y="1280" w="156" h="172" pX="0.5" pY="0.5" oX="62" oY="38" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_49_ 6" x="2062" y="927" w="153" h="131" pX="0.5" pY="0.5" oX="30" oY="50" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_50_ 6" x="1627" y="1945" w="156" h="136" pX="0.5" pY="0.5" oX="28" oY="52" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_51_ 6" x="334" y="1945" w="159" h="146" pX="0.5" pY="0.5" oX="27" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_52_ 6" x="0" y="1794" w="162" h="151" pX="0.5" pY="0.5" oX="25" oY="41" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_53_ 6" x="1599" y="1132" w="167" h="151" pX="0.5" pY="0.5" oX="23" oY="37" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_54_ 6" x="1777" y="243" w="164" h="145" pX="0.5" pY="0.5" oX="26" oY="41" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_55_ 6" x="1777" y="97" w="164" h="146" pX="0.5" pY="0.5" oX="26" oY="39" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_56_ 6" x="1261" y="1794" w="160" h="141" pX="0.5" pY="0.5" oX="27" oY="41" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_57_ 7" x="0" y="1457" w="159" h="170" pX="0.5" pY="0.5" oX="27" oY="40" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_58_ 7" x="1220" y="1457" w="159" h="168" pX="0.5" pY="0.5" oX="27" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_59_ 7" x="1343" y="531" w="159" h="171" pX="0.5" pY="0.5" oX="27" oY="41" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_60_ 7" x="1442" y="702" w="159" h="171" pX="0.5" pY="0.5" oX="26" oY="40" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_61_ 7" x="1288" y="0" w="162" h="175" pX="0.5" pY="0.5" oX="25" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_62_ 7" x="1379" y="1457" w="161" h="168" pX="0.5" pY="0.5" oX="27" oY="42" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_63_ 7" x="0" y="1627" w="163" h="167" pX="0.5" pY="0.5" oX="26" oY="42" oW="240" oH="240"/>
+  <sprite n="Horse_1_Run_64_ 7" x="421" y="1457" w="162" h="170" pX="0.5" pY="0.5" oX="26" oY="39" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_01_ 0" x="127" y="2104" w="49" h="151" pX="0.5" pY="0.5" oX="98" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_02_ 0" x="1502" y="432" w="59" h="156" pX="0.5" pY="0.5" oX="100" oY="42" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_03_ 0" x="1250" y="542" w="93" h="174" pX="0.5" pY="0.5" oX="100" oY="25" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_04_ 1" x="769" y="1657" w="166" h="100" pX="0.5" pY="0.5" oX="34" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_05_ 1" x="711" y="761" w="192" h="104" pX="0.5" pY="0.5" oX="34" oY="69" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_06_ 1" x="0" y="421" w="205" h="115" pX="0.5" pY="0.5" oX="32" oY="70" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_07_ 2" x="1450" y="98" w="172" h="98" pX="0.5" pY="0.5" oX="41" oY="76" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_08_ 2" x="407" y="533" w="196" h="104" pX="0.5" pY="0.5" oX="18" oY="70" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_09_ 2" x="258" y="0" w="207" h="130" pX="0.5" pY="0.5" oX="9" oY="44" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_10_ 3" x="1093" y="368" w="49" h="184" pX="0.5" pY="0.5" oX="99" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_11_ 3" x="904" y="387" w="62" h="187" pX="0.5" pY="0.5" oX="85" oY="37" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_12_ 3" x="46" y="651" w="92" h="195" pX="0.5" pY="0.5" oX="55" oY="36" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_13_ 4" x="2609" y="120" w="120" h="121" pX="0.5" pY="0.5" oX="61" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_14_ 4" x="1661" y="479" w="164" h="122" pX="0.5" pY="0.5" oX="59" oY="58" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_15_ 4" x="0" y="1219" w="180" h="140" pX="0.5" pY="0.5" oX="55" oY="39" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_16_ 5" x="2049" y="1209" w="127" h="151" pX="0.5" pY="0.5" oX="62" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_17_ 5" x="1283" y="183" w="116" h="174" pX="0.5" pY="0.5" oX="65" oY="44" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_18_ 5" x="1622" y="0" w="155" h="167" pX="0.5" pY="0.5" oX="66" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_19_ 6" x="532" y="2378" w="133" h="121" pX="0.5" pY="0.5" oX="52" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_20_ 6" x="2351" y="1528" w="120" h="135" pX="0.5" pY="0.5" oX="63" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_21_ 6" x="1287" y="889" w="157" h="172" pX="0.5" pY="0.5" oX="25" oY="15" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_22_ 7" x="1768" y="1785" w="121" h="160" pX="0.5" pY="0.5" oX="65" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_23_ 7" x="1601" y="603" w="167" h="146" pX="0.5" pY="0.5" oX="21" oY="44" oW="240" oH="240"/>
+  <sprite n="Horse_1_Use Skill_24_ 7" x="746" y="1049" w="181" h="164" pX="0.5" pY="0.5" oX="12" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_01_ 0" x="1479" y="1787" w="47" h="155" pX="0.5" pY="0.5" oX="100" oY="46" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_02_ 0" x="1250" y="1945" w="46" h="157" pX="0.5" pY="0.5" oX="100" oY="46" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_03_ 0" x="1296" y="1945" w="46" h="157" pX="0.5" pY="0.5" oX="100" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_04_ 0" x="1433" y="1787" w="46" h="156" pX="0.5" pY="0.5" oX="100" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_05_ 0" x="1984" y="965" w="46" h="153" pX="0.5" pY="0.5" oX="100" oY="47" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_06_ 0" x="1938" y="965" w="46" h="153" pX="0.5" pY="0.5" oX="100" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_07_ 0" x="1831" y="1945" w="46" h="154" pX="0.5" pY="0.5" oX="100" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_08_ 0" x="373" y="1793" w="46" h="152" pX="0.5" pY="0.5" oX="100" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_09_ 1" x="376" y="932" w="188" h="92" pX="0.5" pY="0.5" oX="41" oY="81" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_10_ 1" x="188" y="933" w="188" h="89" pX="0.5" pY="0.5" oX="42" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_11_ 1" x="904" y="300" w="189" h="87" pX="0.5" pY="0.5" oX="41" oY="86" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_12_ 1" x="907" y="0" w="190" h="89" pX="0.5" pY="0.5" oX="41" oY="83" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_13_ 1" x="0" y="933" w="188" h="92" pX="0.5" pY="0.5" oX="42" oY="81" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_14_ 1" x="561" y="1024" w="185" h="88" pX="0.5" pY="0.5" oX="42" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_15_ 1" x="375" y="1024" w="186" h="83" pX="0.5" pY="0.5" oX="41" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_16_ 1" x="375" y="1107" w="183" h="88" pX="0.5" pY="0.5" oX="41" oY="83" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_17_ 2" x="0" y="846" w="192" h="87" pX="0.5" pY="0.5" oX="13" oY="85" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_18_ 2" x="713" y="191" w="193" h="86" pX="0.5" pY="0.5" oX="13" oY="86" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_19_ 2" x="471" y="730" w="194" h="85" pX="0.5" pY="0.5" oX="12" oY="86" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_20_ 2" x="713" y="0" w="194" h="89" pX="0.5" pY="0.5" oX="12" oY="82" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_21_ 2" x="711" y="580" w="193" h="94" pX="0.5" pY="0.5" oX="12" oY="78" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_22_ 2" x="192" y="841" w="192" h="91" pX="0.5" pY="0.5" oX="14" oY="82" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_23_ 2" x="711" y="674" w="192" h="87" pX="0.5" pY="0.5" oX="15" oY="87" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_24_ 2" x="904" y="576" w="188" h="90" pX="0.5" pY="0.5" oX="17" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_25_ 3" x="138" y="651" w="46" h="195" pX="0.5" pY="0.5" oX="100" oY="33" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_26_ 3" x="425" y="637" w="46" h="194" pX="0.5" pY="0.5" oX="100" oY="35" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_27_ 3" x="665" y="585" w="46" h="194" pX="0.5" pY="0.5" oX="100" oY="35" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_28_ 3" x="605" y="389" w="47" h="196" pX="0.5" pY="0.5" oX="100" oY="33" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_29_ 3" x="452" y="203" w="46" h="198" pX="0.5" pY="0.5" oX="100" oY="31" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_30_ 3" x="0" y="651" w="46" h="195" pX="0.5" pY="0.5" oX="100" oY="34" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_31_ 3" x="800" y="277" w="46" h="192" pX="0.5" pY="0.5" oX="100" oY="36" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_32_ 3" x="702" y="288" w="46" h="193" pX="0.5" pY="0.5" oX="100" oY="34" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_33_ 4" x="2338" y="2172" w="134" h="125" pX="0.5" pY="0.5" oX="59" oY="60" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_34_ 4" x="2347" y="133" w="138" h="135" pX="0.5" pY="0.5" oX="59" oY="60" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_35_ 4" x="1367" y="2246" w="142" h="128" pX="0.5" pY="0.5" oX="59" oY="60" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_36_ 4" x="1034" y="2252" w="143" h="126" pX="0.5" pY="0.5" oX="61" oY="60" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_37_ 4" x="2198" y="2047" w="144" h="124" pX="0.5" pY="0.5" oX="63" oY="62" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_38_ 4" x="144" y="2255" w="141" h="122" pX="0.5" pY="0.5" oX="61" oY="64" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_39_ 4" x="352" y="2254" w="139" h="124" pX="0.5" pY="0.5" oX="59" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_40_ 4" x="2342" y="2050" w="134" h="122" pX="0.5" pY="0.5" oX="59" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_41_ 5" x="774" y="1945" w="145" h="158" pX="0.5" pY="0.5" oX="61" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_42_ 5" x="631" y="1945" w="143" h="158" pX="0.5" pY="0.5" oX="60" oY="47" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_43_ 5" x="1889" y="1768" w="141" h="159" pX="0.5" pY="0.5" oX="59" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_44_ 5" x="1730" y="1283" w="138" h="164" pX="0.5" pY="0.5" oX="59" oY="46" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_45_ 5" x="1540" y="1457" w="134" h="167" pX="0.5" pY="0.5" oX="60" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_46_ 5" x="748" y="1457" w="136" h="168" pX="0.5" pY="0.5" oX="59" oY="47" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_47_ 5" x="147" y="1945" w="139" h="159" pX="0.5" pY="0.5" oX="59" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_48_ 5" x="493" y="1945" w="138" h="158" pX="0.5" pY="0.5" oX="61" oY="46" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_49_ 6" x="2048" y="2064" w="150" h="126" pX="0.5" pY="0.5" oX="36" oY="61" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_50_ 6" x="1318" y="2102" w="149" h="126" pX="0.5" pY="0.5" oX="39" oY="61" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_51_ 6" x="1877" y="2066" w="147" h="127" pX="0.5" pY="0.5" oX="42" oY="60" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_52_ 6" x="2202" y="1457" w="144" h="126" pX="0.5" pY="0.5" oX="45" oY="59" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_53_ 6" x="836" y="2253" w="140" h="125" pX="0.5" pY="0.5" oX="48" oY="61" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_54_ 6" x="1509" y="2246" w="142" h="127" pX="0.5" pY="0.5" oX="47" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_55_ 6" x="2202" y="1204" w="145" h="126" pX="0.5" pY="0.5" oX="44" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_56_ 6" x="0" y="2255" w="144" h="123" pX="0.5" pY="0.5" oX="43" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_57_ 7" x="1706" y="1621" w="141" h="164" pX="0.5" pY="0.5" oX="49" oY="47" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_58_ 7" x="1674" y="1456" w="144" h="165" pX="0.5" pY="0.5" oX="45" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_59_ 7" x="0" y="1945" w="147" h="159" pX="0.5" pY="0.5" oX="42" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_60_ 7" x="879" y="1757" w="150" h="160" pX="0.5" pY="0.5" oX="38" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_61_ 7" x="1864" y="1447" w="150" h="160" pX="0.5" pY="0.5" oX="36" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_62_ 7" x="1847" y="1608" w="148" h="160" pX="0.5" pY="0.5" oX="40" oY="45" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_63_ 7" x="919" y="1945" w="145" h="158" pX="0.5" pY="0.5" oX="44" oY="49" oW="240" oH="240"/>
+  <sprite n="Horse_1_Walk_64_ 7" x="1622" y="167" w="140" h="162" pX="0.5" pY="0.5" oX="49" oY="47" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_01_ 0" x="1482" y="1625" w="46" h="162" pX="0.5" pY="0.5" oX="100" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_02_ 0" x="1766" y="1118" w="46" h="162" pX="0.5" pY="0.5" oX="100" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_03_ 0" x="1818" y="1447" w="46" h="161" pX="0.5" pY="0.5" oX="100" oY="48" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_04_ 1" x="183" y="1130" w="183" h="89" pX="0.5" pY="0.5" oX="30" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_05_ 1" x="0" y="1130" w="183" h="89" pX="0.5" pY="0.5" oX="31" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_06_ 1" x="898" y="953" w="183" h="89" pX="0.5" pY="0.5" oX="31" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_07_ 2" x="903" y="864" w="187" h="89" pX="0.5" pY="0.5" oX="28" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_08_ 2" x="564" y="929" w="187" h="88" pX="0.5" pY="0.5" oX="28" oY="85" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_09_ 2" x="188" y="1022" w="187" h="89" pX="0.5" pY="0.5" oX="28" oY="84" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_10_ 3" x="650" y="1112" w="46" h="176" pX="0.5" pY="0.5" oX="100" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_11_ 3" x="604" y="1112" w="46" h="177" pX="0.5" pY="0.5" oX="100" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_12_ 3" x="558" y="1112" w="46" h="177" pX="0.5" pY="0.5" oX="100" oY="43" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_13_ 4" x="258" y="2499" w="129" h="129" pX="0.5" pY="0.5" oX="55" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_14_ 4" x="2476" y="2050" w="132" h="129" pX="0.5" pY="0.5" oX="55" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_15_ 4" x="2345" y="1921" w="134" h="129" pX="0.5" pY="0.5" oX="56" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_16_ 5" x="2202" y="1058" w="138" h="146" pX="0.5" pY="0.5" oX="55" oY="52" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_17_ 5" x="1034" y="2103" w="135" h="149" pX="0.5" pY="0.5" oX="55" oY="52" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_18_ 5" x="401" y="2103" w="132" h="151" pX="0.5" pY="0.5" oX="55" oY="52" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_19_ 6" x="1224" y="2246" w="143" h="129" pX="0.5" pY="0.5" oX="48" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_20_ 6" x="2347" y="268" w="138" h="129" pX="0.5" pY="0.5" oX="52" oY="63" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_21_ 6" x="2347" y="1398" w="135" h="130" pX="0.5" pY="0.5" oX="55" oY="62" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_22_ 7" x="2014" y="1446" w="131" h="153" pX="0.5" pY="0.5" oX="59" oY="52" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_23_ 7" x="1995" y="1607" w="135" h="153" pX="0.5" pY="0.5" oX="55" oY="52" oW="240" oH="240"/>
+  <sprite n="Horse_1_Woozy_24_ 7" x="2078" y="1760" w="138" h="153" pX="0.5" pY="0.5" oX="52" oY="52" oW="240" oH="240"/>
+</TextureAtlas>

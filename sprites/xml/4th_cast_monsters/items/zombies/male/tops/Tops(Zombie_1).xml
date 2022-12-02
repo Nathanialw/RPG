@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Tops(Zombie_1).png" width="656" height="644" scale="1" format="RGBA8888">
+  <sprite n="Tops(Zombie_1)_Attack 1_01_ 0" x="626" y="505" w="24" h="28" pX="0.5" pY="0.5" oX="88" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_02_ 0" x="222" y="331" w="24" h="38" pX="0.5" pY="0.5" oX="88" oY="51" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_03_ 0" x="324" y="460" w="23" h="19" pX="0.5" pY="0.5" oX="89" oY="85" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_04_ 1" x="365" y="252" w="23" h="38" pX="0.5" pY="0.5" oX="94" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_05_ 1" x="0" y="116" w="22" h="51" pX="0.5" pY="0.5" oX="116" oY="54" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_06_ 1" x="128" y="445" w="36" h="34" pX="0.5" pY="0.5" oX="79" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_07_ 2" x="309" y="407" w="23" h="37" pX="0.5" pY="0.5" oX="87" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_08_ 2" x="444" y="516" w="21" h="35" pX="0.5" pY="0.5" oX="68" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_09_ 2" x="332" y="407" w="37" h="32" pX="0.5" pY="0.5" oX="89" oY="75" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_10_ 3" x="213" y="407" w="24" h="38" pX="0.5" pY="0.5" oX="92" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_11_ 3" x="605" y="30" w="24" h="30" pX="0.5" pY="0.5" oX="92" oY="89" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_12_ 3" x="0" y="167" w="25" h="44" pX="0.5" pY="0.5" oX="92" oY="60" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_13_ 4" x="76" y="582" w="22" h="32" pX="0.5" pY="0.5" oX="92" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_14_ 4" x="224" y="369" w="21" h="38" pX="0.5" pY="0.5" oX="106" oY="56" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_15_ 4" x="361" y="516" w="35" h="21" pX="0.5" pY="0.5" oX="80" oY="81" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_16_ 5" x="318" y="176" w="23" h="39" pX="0.5" pY="0.5" oX="94" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_17_ 5" x="528" y="139" w="25" h="34" pX="0.5" pY="0.5" oX="108" oY="80" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_18_ 5" x="49" y="166" w="32" h="42" pX="0.5" pY="0.5" oX="84" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_19_ 6" x="558" y="66" w="22" h="33" pX="0.5" pY="0.5" oX="88" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_20_ 6" x="394" y="187" w="25" h="38" pX="0.5" pY="0.5" oX="72" oY="58" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_21_ 6" x="546" y="483" w="33" h="21" pX="0.5" pY="0.5" oX="88" oY="83" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_22_ 7" x="315" y="137" w="27" h="39" pX="0.5" pY="0.5" oX="88" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_23_ 7" x="422" y="551" w="22" h="31" pX="0.5" pY="0.5" oX="77" oY="84" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 1_24_ 7" x="128" y="136" w="34" h="42" pX="0.5" pY="0.5" oX="90" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_01_ 0" x="604" y="66" w="25" h="30" pX="0.5" pY="0.5" oX="86" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_02_ 0" x="113" y="479" w="24" h="36" pX="0.5" pY="0.5" oX="88" oY="61" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_03_ 0" x="629" y="0" w="27" h="28" pX="0.5" pY="0.5" oX="90" oY="82" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_04_ 1" x="319" y="78" w="24" h="39" pX="0.5" pY="0.5" oX="96" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_05_ 1" x="341" y="176" w="23" h="38" pX="0.5" pY="0.5" oX="100" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_06_ 1" x="605" y="193" w="24" h="29" pX="0.5" pY="0.5" oX="80" oY="77" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_07_ 2" x="527" y="287" w="24" h="34" pX="0.5" pY="0.5" oX="85" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_08_ 2" x="423" y="111" w="23" h="37" pX="0.5" pY="0.5" oX="82" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_09_ 2" x="224" y="125" w="27" h="41" pX="0.5" pY="0.5" oX="101" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_10_ 3" x="24" y="370" w="25" h="38" pX="0.5" pY="0.5" oX="93" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_11_ 3" x="49" y="369" w="23" h="38" pX="0.5" pY="0.5" oX="93" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_12_ 3" x="101" y="248" w="25" h="40" pX="0.5" pY="0.5" oX="89" oY="61" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_13_ 4" x="361" y="479" w="24" h="36" pX="0.5" pY="0.5" oX="92" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_14_ 4" x="182" y="207" w="22" h="41" pX="0.5" pY="0.5" oX="96" oY="57" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_15_ 4" x="622" y="160" w="20" h="28" pX="0.5" pY="0.5" oX="87" oY="82" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_16_ 5" x="320" y="39" w="24" h="39" pX="0.5" pY="0.5" oX="97" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_17_ 5" x="315" y="479" w="23" h="36" pX="0.5" pY="0.5" oX="99" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_18_ 5" x="53" y="516" w="26" h="35" pX="0.5" pY="0.5" oX="82" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_19_ 6" x="529" y="611" w="22" h="29" pX="0.5" pY="0.5" oX="85" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_20_ 6" x="204" y="549" w="23" h="33" pX="0.5" pY="0.5" oX="82" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_21_ 6" x="434" y="333" w="28" h="37" pX="0.5" pY="0.5" oX="96" oY="74" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_22_ 7" x="396" y="76" w="24" h="38" pX="0.5" pY="0.5" oX="89" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_23_ 7" x="129" y="207" w="25" h="41" pX="0.5" pY="0.5" oX="86" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Attack 2_24_ 7" x="25" y="166" w="24" h="43" pX="0.5" pY="0.5" oX="97" oY="60" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_01_ 0" x="579" y="487" w="21" h="17" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_02_ 0" x="347" y="460" w="20" h="19" pX="0.5" pY="0.5" oX="92" oY="99" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_03_ 0" x="628" y="139" w="21" h="20" pX="0.5" pY="0.5" oX="91" oY="98" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_04_ 1" x="595" y="393" w="30" h="30" pX="0.5" pY="0.5" oX="98" oY="101" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_05_ 1" x="297" y="551" w="29" h="32" pX="0.5" pY="0.5" oX="99" oY="99" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_06_ 1" x="577" y="504" w="28" h="32" pX="0.5" pY="0.5" oX="100" oY="99" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_07_ 2" x="450" y="582" w="31" h="31" pX="0.5" pY="0.5" oX="76" oY="100" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_08_ 2" x="267" y="583" w="29" h="31" pX="0.5" pY="0.5" oX="76" oY="100" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_09_ 2" x="296" y="583" w="29" h="31" pX="0.5" pY="0.5" oX="76" oY="100" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_10_ 3" x="169" y="0" w="23" h="42" pX="0.5" pY="0.5" oX="91" oY="99" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_11_ 3" x="169" y="42" w="23" h="42" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_12_ 3" x="45" y="331" w="23" h="38" pX="0.5" pY="0.5" oX="91" oY="104" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_13_ 4" x="34" y="552" w="32" h="22" pX="0.5" pY="0.5" oX="93" oY="100" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_14_ 4" x="141" y="551" w="31" h="23" pX="0.5" pY="0.5" oX="94" oY="99" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_15_ 4" x="595" y="423" w="30" h="24" pX="0.5" pY="0.5" oX="95" oY="98" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_16_ 5" x="497" y="0" w="31" h="36" pX="0.5" pY="0.5" oX="94" oY="102" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_17_ 5" x="192" y="331" w="30" h="38" pX="0.5" pY="0.5" oX="95" oY="101" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_18_ 5" x="246" y="331" w="30" h="38" pX="0.5" pY="0.5" oX="95" oY="101" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_19_ 6" x="213" y="583" w="31" h="22" pX="0.5" pY="0.5" oX="80" oY="100" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_20_ 6" x="331" y="614" w="30" h="23" pX="0.5" pY="0.5" oX="80" oY="99" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_21_ 6" x="387" y="613" w="29" h="23" pX="0.5" pY="0.5" oX="80" oY="99" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_22_ 7" x="458" y="407" w="32" h="37" pX="0.5" pY="0.5" oX="80" oY="102" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_23_ 7" x="458" y="370" w="30" h="37" pX="0.5" pY="0.5" oX="80" oY="102" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Behavior_24_ 7" x="462" y="333" w="30" h="37" pX="0.5" pY="0.5" oX="80" oY="102" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_01_ 0" x="577" y="598" w="22" h="29" pX="0.5" pY="0.5" oX="91" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_02_ 0" x="586" y="98" w="19" h="32" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_03_ 0" x="303" y="444" w="21" h="35" pX="0.5" pY="0.5" oX="92" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_04_ 1" x="268" y="479" w="24" h="36" pX="0.5" pY="0.5" oX="92" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_05_ 1" x="580" y="0" w="25" h="33" pX="0.5" pY="0.5" oX="92" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_06_ 1" x="580" y="305" w="24" h="32" pX="0.5" pY="0.5" oX="92" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_07_ 2" x="245" y="369" w="24" h="38" pX="0.5" pY="0.5" oX="88" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_08_ 2" x="269" y="369" w="26" h="38" pX="0.5" pY="0.5" oX="88" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_09_ 2" x="467" y="222" w="27" h="37" pX="0.5" pY="0.5" oX="87" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_10_ 3" x="320" y="369" w="24" h="38" pX="0.5" pY="0.5" oX="91" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_11_ 3" x="66" y="290" w="23" h="39" pX="0.5" pY="0.5" oX="91" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_12_ 3" x="192" y="42" w="22" h="42" pX="0.5" pY="0.5" oX="91" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_13_ 4" x="629" y="56" w="24" h="28" pX="0.5" pY="0.5" oX="92" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_14_ 4" x="604" y="595" w="25" h="29" pX="0.5" pY="0.5" oX="91" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_15_ 4" x="243" y="614" w="23" h="30" pX="0.5" pY="0.5" oX="93" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_16_ 5" x="0" y="252" w="24" h="40" pX="0.5" pY="0.5" oX="91" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_17_ 5" x="44" y="292" w="22" h="39" pX="0.5" pY="0.5" oX="92" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_18_ 5" x="367" y="187" w="23" h="38" pX="0.5" pY="0.5" oX="92" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_19_ 6" x="523" y="478" w="23" h="34" pX="0.5" pY="0.5" oX="90" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_20_ 6" x="469" y="0" w="22" h="37" pX="0.5" pY="0.5" oX="90" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_21_ 6" x="434" y="407" w="24" h="37" pX="0.5" pY="0.5" oX="90" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_22_ 7" x="396" y="38" w="25" h="38" pX="0.5" pY="0.5" oX="89" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_23_ 7" x="434" y="370" w="24" h="37" pX="0.5" pY="0.5" oX="89" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Block_24_ 7" x="293" y="98" w="25" h="39" pX="0.5" pY="0.5" oX="89" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_01_ 0" x="599" y="624" w="22" h="20" pX="0.5" pY="0.5" oX="88" oY="81" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_02_ 0" x="557" y="338" w="23" h="19" pX="0.5" pY="0.5" oX="88" oY="82" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_03_ 0" x="318" y="117" w="23" h="20" pX="0.5" pY="0.5" oX="88" oY="82" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_04_ 1" x="492" y="330" w="31" h="35" pX="0.5" pY="0.5" oX="87" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_05_ 1" x="23" y="517" w="30" h="35" pX="0.5" pY="0.5" oX="87" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_06_ 1" x="528" y="0" w="30" h="35" pX="0.5" pY="0.5" oX="87" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_07_ 2" x="557" y="99" w="29" h="32" pX="0.5" pY="0.5" oX="87" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_08_ 2" x="0" y="582" w="30" h="32" pX="0.5" pY="0.5" oX="87" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_09_ 2" x="551" y="207" w="29" h="33" pX="0.5" pY="0.5" oX="88" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_10_ 3" x="135" y="47" w="24" h="45" pX="0.5" pY="0.5" oX="92" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_11_ 3" x="104" y="110" w="24" h="44" pX="0.5" pY="0.5" oX="92" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_12_ 3" x="128" y="92" w="25" h="44" pX="0.5" pY="0.5" oX="92" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_13_ 4" x="546" y="458" w="33" h="25" pX="0.5" pY="0.5" oX="84" oY="78" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_14_ 4" x="66" y="551" w="32" h="26" pX="0.5" pY="0.5" oX="84" oY="78" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_15_ 4" x="401" y="339" w="33" h="25" pX="0.5" pY="0.5" oX="83" oY="79" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_16_ 5" x="152" y="248" w="29" h="40" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_17_ 5" x="181" y="248" w="28" h="40" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_18_ 5" x="209" y="248" w="29" h="40" pX="0.5" pY="0.5" oX="88" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_19_ 6" x="471" y="613" w="29" h="24" pX="0.5" pY="0.5" oX="87" oY="80" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_20_ 6" x="500" y="613" w="29" h="23" pX="0.5" pY="0.5" oX="87" oY="81" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_21_ 6" x="595" y="369" w="30" h="24" pX="0.5" pY="0.5" oX="87" oY="81" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_22_ 7" x="297" y="331" w="33" h="38" pX="0.5" pY="0.5" oX="88" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_23_ 7" x="344" y="0" w="33" h="38" pX="0.5" pY="0.5" oX="88" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Critical HP_24_ 7" x="281" y="202" w="34" h="39" pX="0.5" pY="0.5" oX="88" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_01_ 0" x="447" y="37" w="25" h="37" pX="0.5" pY="0.5" oX="90" oY="58" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_02_ 0" x="330" y="331" w="27" h="38" pX="0.5" pY="0.5" oX="88" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_03_ 0" x="344" y="292" w="23" h="38" pX="0.5" pY="0.5" oX="89" oY="81" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_04_ 1" x="528" y="391" w="25" h="34" pX="0.5" pY="0.5" oX="109" oY="74" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_05_ 1" x="225" y="207" w="34" h="41" pX="0.5" pY="0.5" oX="107" oY="80" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_06_ 1" x="281" y="24" w="39" h="35" pX="0.5" pY="0.5" oX="105" oY="98" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_07_ 2" x="350" y="546" w="26" h="33" pX="0.5" pY="0.5" oX="70" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_08_ 2" x="523" y="327" w="34" h="30" pX="0.5" pY="0.5" oX="63" oY="92" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_09_ 2" x="281" y="0" w="39" h="24" pX="0.5" pY="0.5" oX="60" oY="108" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_10_ 3" x="605" y="505" w="21" h="29" pX="0.5" pY="0.5" oX="93" oY="91" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_11_ 3" x="605" y="347" w="24" h="22" pX="0.5" pY="0.5" oX="92" oY="108" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_12_ 3" x="0" y="0" w="24" h="59" pX="0.5" pY="0.5" oX="92" oY="89" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_13_ 4" x="267" y="163" w="26" h="39" pX="0.5" pY="0.5" oX="102" oY="60" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_14_ 4" x="280" y="246" w="30" h="39" pX="0.5" pY="0.5" oX="101" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_15_ 4" x="95" y="369" w="33" h="38" pX="0.5" pY="0.5" oX="100" oY="87" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_16_ 5" x="577" y="536" w="27" h="31" pX="0.5" pY="0.5" oX="104" oY="86" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_17_ 5" x="135" y="0" w="34" h="47" pX="0.5" pY="0.5" oX="103" oY="81" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_18_ 5" x="200" y="445" w="36" h="22" pX="0.5" pY="0.5" oX="101" oY="117" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_19_ 6" x="198" y="369" w="26" h="38" pX="0.5" pY="0.5" oX="75" oY="62" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_20_ 6" x="434" y="222" w="33" h="37" pX="0.5" pY="0.5" oX="69" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_21_ 6" x="92" y="445" w="36" h="31" pX="0.5" pY="0.5" oX="68" oY="94" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_22_ 7" x="602" y="130" w="26" h="30" pX="0.5" pY="0.5" oX="76" oY="87" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_23_ 7" x="162" y="614" w="29" h="23" pX="0.5" pY="0.5" oX="75" oY="105" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Dead To Down_24_ 7" x="442" y="613" w="29" h="22" pX="0.5" pY="0.5" oX="76" oY="120" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_1_01_ 0" x="117" y="551" w="24" h="31" pX="0.5" pY="0.5" oX="92" oY="105" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_1_02_ 1" x="37" y="456" w="37" h="21" pX="0.5" pY="0.5" oX="100" oY="126" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_1_03_ 2" x="332" y="439" w="37" h="21" pX="0.5" pY="0.5" oX="68" oY="125" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_1_04_ 3" x="214" y="42" w="23" h="41" pX="0.5" pY="0.5" oX="90" oY="123" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_1_05_ 4" x="397" y="442" w="37" h="37" pX="0.5" pY="0.5" oX="95" oY="105" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_1_06_ 5" x="232" y="506" w="35" h="33" pX="0.5" pY="0.5" oX="96" oY="128" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_1_07_ 6" x="27" y="58" w="34" h="57" pX="0.5" pY="0.5" oX="74" oY="86" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_1_08_ 7" x="364" y="152" w="38" h="35" pX="0.5" pY="0.5" oX="72" oY="124" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_2_01_ 0" x="98" y="582" w="24" h="32" pX="0.5" pY="0.5" oX="91" oY="100" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_2_02_ 1" x="55" y="436" w="37" h="20" pX="0.5" pY="0.5" oX="104" oY="125" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_2_03_ 2" x="164" y="445" w="36" h="21" pX="0.5" pY="0.5" oX="64" oY="125" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_2_04_ 3" x="51" y="115" w="23" h="49" pX="0.5" pY="0.5" oX="92" oY="118" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_2_05_ 4" x="61" y="57" w="35" h="55" pX="0.5" pY="0.5" oX="99" oY="85" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_2_06_ 5" x="0" y="446" w="37" h="34" pX="0.5" pY="0.5" oX="98" oY="127" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_2_07_ 6" x="99" y="0" w="36" h="53" pX="0.5" pY="0.5" oX="70" oY="87" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_2_08_ 7" x="409" y="148" w="35" h="37" pX="0.5" pY="0.5" oX="71" oY="126" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_3_01_ 0" x="90" y="479" w="23" h="36" pX="0.5" pY="0.5" oX="92" oY="96" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_3_02_ 1" x="192" y="0" w="40" h="42" pX="0.5" pY="0.5" oX="107" oY="106" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_3_03_ 2" x="267" y="516" w="35" h="30" pX="0.5" pY="0.5" oX="62" oY="115" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_3_04_ 3" x="30" y="582" w="24" h="32" pX="0.5" pY="0.5" oX="89" oY="135" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_3_05_ 4" x="326" y="516" w="35" h="30" pX="0.5" pY="0.5" oX="103" oY="110" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_3_06_ 5" x="0" y="552" w="34" h="30" pX="0.5" pY="0.5" oX="100" oY="132" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_3_07_ 6" x="24" y="408" w="31" h="38" pX="0.5" pY="0.5" oX="71" oY="102" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_3_08_ 7" x="55" y="407" w="38" h="29" pX="0.5" pY="0.5" oX="67" oY="132" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_4_01_ 0" x="191" y="614" w="22" h="29" pX="0.5" pY="0.5" oX="94" oY="102" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_4_02_ 1" x="367" y="225" w="34" h="20" pX="0.5" pY="0.5" oX="105" oY="125" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_4_03_ 2" x="127" y="178" w="35" h="29" pX="0.5" pY="0.5" oX="63" oY="115" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_4_04_ 3" x="96" y="57" w="27" h="53" pX="0.5" pY="0.5" oX="88" oY="111" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_4_05_ 4" x="546" y="580" w="31" h="27" pX="0.5" pY="0.5" oX="105" oY="112" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_4_06_ 5" x="213" y="605" w="30" h="28" pX="0.5" pY="0.5" oX="100" oY="129" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_4_07_ 6" x="177" y="515" w="27" h="35" pX="0.5" pY="0.5" oX="75" oY="104" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Down_4_08_ 7" x="232" y="479" w="36" h="27" pX="0.5" pY="0.5" oX="69" oY="128" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_01_ 0" x="629" y="188" w="26" h="27" pX="0.5" pY="0.5" oX="83" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_02_ 0" x="629" y="112" w="26" h="27" pX="0.5" pY="0.5" oX="79" oY="74" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_03_ 0" x="629" y="28" w="27" h="28" pX="0.5" pY="0.5" oX="74" oY="75" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_04_ 1" x="0" y="331" w="23" h="39" pX="0.5" pY="0.5" oX="94" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_05_ 1" x="318" y="254" w="22" h="39" pX="0.5" pY="0.5" oX="97" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_06_ 1" x="259" y="206" w="22" h="40" pX="0.5" pY="0.5" oX="100" oY="61" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_07_ 2" x="479" y="259" w="23" h="36" pX="0.5" pY="0.5" oX="87" oY="74" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_08_ 2" x="465" y="516" w="23" h="35" pX="0.5" pY="0.5" oX="85" oY="80" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_09_ 2" x="421" y="516" w="23" h="35" pX="0.5" pY="0.5" oX="83" oY="85" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_10_ 3" x="423" y="0" w="25" h="37" pX="0.5" pY="0.5" oX="96" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_11_ 3" x="370" y="406" w="27" h="38" pX="0.5" pY="0.5" oX="99" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_12_ 3" x="232" y="0" w="27" h="41" pX="0.5" pY="0.5" oX="103" oY="77" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_13_ 4" x="580" y="337" w="25" h="32" pX="0.5" pY="0.5" oX="89" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_14_ 4" x="557" y="240" w="23" h="33" pX="0.5" pY="0.5" oX="87" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_15_ 4" x="553" y="139" w="26" h="33" pX="0.5" pY="0.5" oX="85" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_16_ 5" x="237" y="41" w="22" h="40" pX="0.5" pY="0.5" oX="98" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_17_ 5" x="251" y="123" w="23" h="40" pX="0.5" pY="0.5" oX="102" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_18_ 5" x="78" y="208" w="23" h="41" pX="0.5" pY="0.5" oX="107" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_19_ 6" x="527" y="580" w="19" h="31" pX="0.5" pY="0.5" oX="87" oY="74" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_20_ 6" x="266" y="614" w="20" h="30" pX="0.5" pY="0.5" oX="82" oY="78" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_21_ 6" x="72" y="614" w="20" h="30" pX="0.5" pY="0.5" oX="77" oY="82" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_22_ 7" x="367" y="290" w="27" h="38" pX="0.5" pY="0.5" oX="91" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_23_ 7" x="370" y="368" w="28" h="38" pX="0.5" pY="0.5" oX="92" oY="79" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Evade_24_ 7" x="419" y="185" w="29" h="37" pX="0.5" pY="0.5" oX="93" oY="85" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_01_ 0" x="286" y="614" w="23" h="30" pX="0.5" pY="0.5" oX="89" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_02_ 0" x="488" y="370" w="24" h="36" pX="0.5" pY="0.5" oX="89" oY="58" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_03_ 0" x="502" y="147" w="26" h="36" pX="0.5" pY="0.5" oX="90" oY="55" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_04_ 1" x="23" y="292" w="21" h="39" pX="0.5" pY="0.5" oX="97" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_05_ 1" x="155" y="516" w="22" h="35" pX="0.5" pY="0.5" oX="105" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_06_ 1" x="580" y="33" w="25" h="33" pX="0.5" pY="0.5" oX="108" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_07_ 2" x="448" y="0" w="21" h="37" pX="0.5" pY="0.5" oX="87" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_08_ 2" x="137" y="479" w="22" h="36" pX="0.5" pY="0.5" oX="77" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_09_ 2" x="131" y="516" w="24" h="35" pX="0.5" pY="0.5" oX="72" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_10_ 3" x="208" y="479" w="24" h="36" pX="0.5" pY="0.5" oX="92" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_11_ 3" x="92" y="614" w="23" h="30" pX="0.5" pY="0.5" oX="92" oY="83" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_12_ 3" x="141" y="614" w="21" h="30" pX="0.5" pY="0.5" oX="93" oY="87" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_13_ 4" x="376" y="537" w="20" h="33" pX="0.5" pY="0.5" oX="93" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_14_ 4" x="110" y="288" w="24" h="39" pX="0.5" pY="0.5" oX="99" oY="58" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_15_ 4" x="340" y="254" w="25" h="38" pX="0.5" pY="0.5" oX="102" oY="57" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_16_ 5" x="276" y="331" w="21" h="38" pX="0.5" pY="0.5" oX="97" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_17_ 5" x="526" y="253" w="25" h="34" pX="0.5" pY="0.5" oX="101" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_18_ 5" x="551" y="537" w="26" h="33" pX="0.5" pY="0.5" oX="103" oY="81" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_19_ 6" x="236" y="445" w="21" h="34" pX="0.5" pY="0.5" oX="89" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_20_ 6" x="517" y="71" w="24" h="34" pX="0.5" pY="0.5" oX="79" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_21_ 6" x="502" y="183" w="26" h="36" pX="0.5" pY="0.5" oX="76" oY="60" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_22_ 7" x="434" y="296" w="23" h="37" pX="0.5" pY="0.5" oX="88" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_23_ 7" x="551" y="273" w="24" h="33" pX="0.5" pY="0.5" oX="82" oY="78" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Get Hit_24_ 7" x="579" y="456" w="26" h="31" pX="0.5" pY="0.5" oX="77" oY="83" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_01_ 0" x="605" y="447" w="23" h="29" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_02_ 0" x="504" y="582" w="23" h="31" pX="0.5" pY="0.5" oX="89" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_03_ 0" x="481" y="582" w="23" h="31" pX="0.5" pY="0.5" oX="89" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_04_ 1" x="389" y="114" w="20" h="38" pX="0.5" pY="0.5" oX="96" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_05_ 1" x="556" y="424" w="18" h="33" pX="0.5" pY="0.5" oX="99" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_06_ 1" x="274" y="118" w="19" h="34" pX="0.5" pY="0.5" oX="98" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_07_ 2" x="357" y="330" w="21" h="38" pX="0.5" pY="0.5" oX="88" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_08_ 2" x="553" y="391" w="19" h="33" pX="0.5" pY="0.5" oX="87" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_09_ 2" x="539" y="173" w="19" h="34" pX="0.5" pY="0.5" oX="88" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_10_ 3" x="159" y="479" w="24" h="36" pX="0.5" pY="0.5" oX="92" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_11_ 3" x="204" y="515" w="23" h="34" pX="0.5" pY="0.5" oX="92" oY="75" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_12_ 3" x="515" y="219" w="24" h="34" pX="0.5" pY="0.5" oX="92" oY="74" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_13_ 4" x="162" y="134" w="19" h="32" pX="0.5" pY="0.5" oX="92" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_14_ 4" x="496" y="74" w="21" h="35" pX="0.5" pY="0.5" oX="95" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_15_ 4" x="494" y="222" w="21" h="35" pX="0.5" pY="0.5" oX="94" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_16_ 5" x="89" y="289" w="21" h="39" pX="0.5" pY="0.5" oX="96" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_17_ 5" x="69" y="479" w="21" h="36" pX="0.5" pY="0.5" oX="98" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_18_ 5" x="154" y="369" w="21" h="38" pX="0.5" pY="0.5" oX="97" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_19_ 6" x="557" y="306" w="20" h="32" pX="0.5" pY="0.5" oX="90" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_20_ 6" x="281" y="444" w="22" h="35" pX="0.5" pY="0.5" oX="87" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_21_ 6" x="580" y="131" w="22" h="32" pX="0.5" pY="0.5" oX="87" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_22_ 7" x="0" y="370" w="24" h="38" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_23_ 7" x="580" y="163" w="21" h="32" pX="0.5" pY="0.5" oX="88" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle Fidget_24_ 7" x="414" y="479" w="22" h="36" pX="0.5" pY="0.5" oX="88" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_01_ 0" x="604" y="258" w="25" h="30" pX="0.5" pY="0.5" oX="85" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_02_ 0" x="605" y="318" w="23" h="29" pX="0.5" pY="0.5" oX="86" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_03_ 0" x="551" y="607" w="24" h="28" pX="0.5" pY="0.5" oX="88" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_04_ 0" x="629" y="84" w="22" h="28" pX="0.5" pY="0.5" oX="91" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_05_ 0" x="629" y="533" w="23" h="28" pX="0.5" pY="0.5" oX="87" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_06_ 1" x="177" y="288" w="24" h="39" pX="0.5" pY="0.5" oX="92" oY="62" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_07_ 1" x="201" y="288" w="23" h="39" pX="0.5" pY="0.5" oX="92" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_08_ 1" x="24" y="480" w="23" h="37" pX="0.5" pY="0.5" oX="92" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_09_ 1" x="480" y="480" w="23" h="36" pX="0.5" pY="0.5" oX="92" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_10_ 1" x="68" y="331" w="23" h="38" pX="0.5" pY="0.5" oX="92" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_11_ 2" x="258" y="444" w="23" h="35" pX="0.5" pY="0.5" oX="89" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_12_ 2" x="505" y="406" w="23" h="36" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_13_ 2" x="505" y="442" w="23" h="36" pX="0.5" pY="0.5" oX="89" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_14_ 2" x="285" y="407" w="24" h="37" pX="0.5" pY="0.5" oX="89" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_15_ 2" x="460" y="444" w="23" h="36" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_16_ 3" x="188" y="407" w="25" h="38" pX="0.5" pY="0.5" oX="94" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_17_ 3" x="472" y="37" w="25" h="37" pX="0.5" pY="0.5" oX="93" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_18_ 3" x="473" y="185" w="24" h="37" pX="0.5" pY="0.5" oX="92" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_19_ 3" x="457" y="296" w="23" h="37" pX="0.5" pY="0.5" oX="91" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_20_ 3" x="471" y="148" w="24" h="37" pX="0.5" pY="0.5" oX="93" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_21_ 4" x="455" y="259" w="24" h="37" pX="0.5" pY="0.5" oX="89" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_22_ 4" x="326" y="546" w="24" h="34" pX="0.5" pY="0.5" oX="90" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_23_ 4" x="488" y="550" w="25" h="32" pX="0.5" pY="0.5" oX="90" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_24_ 4" x="166" y="583" w="21" h="31" pX="0.5" pY="0.5" oX="91" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_25_ 4" x="556" y="357" w="24" h="33" pX="0.5" pY="0.5" oX="90" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_26_ 5" x="401" y="263" w="22" h="38" pX="0.5" pY="0.5" oX="96" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_27_ 5" x="398" y="366" w="24" h="38" pX="0.5" pY="0.5" oX="94" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_28_ 5" x="273" y="285" w="23" h="39" pX="0.5" pY="0.5" oX="93" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_29_ 5" x="296" y="285" w="22" h="39" pX="0.5" pY="0.5" oX="92" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_30_ 5" x="320" y="0" w="24" h="39" pX="0.5" pY="0.5" oX="93" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_31_ 6" x="605" y="222" w="22" h="29" pX="0.5" pY="0.5" oX="86" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_32_ 6" x="601" y="163" w="21" h="30" pX="0.5" pY="0.5" oX="89" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_33_ 6" x="54" y="582" w="22" h="32" pX="0.5" pY="0.5" oX="89" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_34_ 6" x="558" y="0" w="22" h="33" pX="0.5" pY="0.5" oX="90" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_35_ 6" x="98" y="551" w="19" h="31" pX="0.5" pY="0.5" oX="91" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_36_ 7" x="175" y="369" w="23" h="38" pX="0.5" pY="0.5" oX="92" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_37_ 7" x="344" y="76" w="25" h="38" pX="0.5" pY="0.5" oX="91" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_38_ 7" x="344" y="38" w="26" h="38" pX="0.5" pY="0.5" oX="90" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_39_ 7" x="91" y="331" w="27" h="38" pX="0.5" pY="0.5" oX="89" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Idle_40_ 7" x="318" y="293" w="26" h="38" pX="0.5" pY="0.5" oX="90" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_01_ 0" x="629" y="215" w="22" h="26" pX="0.5" pY="0.5" oX="91" oY="79" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_02_ 0" x="605" y="476" w="23" h="29" pX="0.5" pY="0.5" oX="91" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_03_ 0" x="629" y="616" w="22" h="27" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_04_ 0" x="629" y="241" w="22" h="25" pX="0.5" pY="0.5" oX="89" oY="81" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_05_ 0" x="629" y="589" w="22" h="27" pX="0.5" pY="0.5" oX="89" oY="79" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_06_ 0" x="293" y="176" w="22" h="26" pX="0.5" pY="0.5" oX="90" oY="80" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_07_ 0" x="629" y="266" w="23" h="25" pX="0.5" pY="0.5" oX="90" oY="80" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_08_ 0" x="342" y="152" w="22" h="24" pX="0.5" pY="0.5" oX="91" oY="81" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_09_ 1" x="114" y="407" w="25" h="38" pX="0.5" pY="0.5" oX="86" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_10_ 1" x="343" y="114" w="25" h="38" pX="0.5" pY="0.5" oX="84" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_11_ 1" x="370" y="38" w="26" h="38" pX="0.5" pY="0.5" oX="84" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_12_ 1" x="369" y="76" w="27" h="38" pX="0.5" pY="0.5" oX="85" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_13_ 1" x="318" y="215" w="25" h="39" pX="0.5" pY="0.5" oX="85" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_14_ 1" x="140" y="331" w="26" h="38" pX="0.5" pY="0.5" oX="84" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_15_ 1" x="344" y="369" w="26" h="38" pX="0.5" pY="0.5" oX="85" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_16_ 1" x="444" y="148" w="27" h="37" pX="0.5" pY="0.5" oX="85" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_17_ 2" x="295" y="369" w="25" h="38" pX="0.5" pY="0.5" oX="93" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_18_ 2" x="377" y="0" w="26" h="38" pX="0.5" pY="0.5" oX="95" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_19_ 2" x="258" y="407" w="27" h="37" pX="0.5" pY="0.5" oX="94" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_20_ 2" x="492" y="111" w="27" h="36" pX="0.5" pY="0.5" oX="92" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_21_ 2" x="398" y="404" w="25" h="38" pX="0.5" pY="0.5" oX="95" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_22_ 2" x="224" y="288" w="26" h="39" pX="0.5" pY="0.5" oX="94" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_23_ 2" x="162" y="407" w="26" h="38" pX="0.5" pY="0.5" oX="93" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_24_ 2" x="166" y="331" w="26" h="38" pX="0.5" pY="0.5" oX="92" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_25_ 3" x="154" y="288" w="23" h="39" pX="0.5" pY="0.5" oX="91" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_26_ 3" x="343" y="214" w="24" h="38" pX="0.5" pY="0.5" oX="90" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_27_ 3" x="75" y="0" w="24" h="57" pX="0.5" pY="0.5" oX="92" oY="47" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_28_ 3" x="24" y="0" w="26" h="58" pX="0.5" pY="0.5" oX="93" oY="49" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_29_ 3" x="0" y="59" w="27" h="57" pX="0.5" pY="0.5" oX="93" oY="46" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_30_ 3" x="50" y="0" w="25" h="57" pX="0.5" pY="0.5" oX="92" oY="46" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_31_ 3" x="24" y="252" w="22" h="40" pX="0.5" pY="0.5" oX="92" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_32_ 3" x="202" y="84" w="23" h="41" pX="0.5" pY="0.5" oX="91" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_33_ 4" x="187" y="583" w="26" h="31" pX="0.5" pY="0.5" oX="87" oY="75" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_34_ 4" x="527" y="546" w="24" h="34" pX="0.5" pY="0.5" oX="87" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_35_ 4" x="551" y="504" w="26" h="33" pX="0.5" pY="0.5" oX="85" oY="74" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_36_ 4" x="372" y="582" w="26" h="31" pX="0.5" pY="0.5" oX="86" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_37_ 4" x="396" y="551" w="26" h="31" pX="0.5" pY="0.5" oX="84" oY="75" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_38_ 4" x="398" y="582" w="26" h="31" pX="0.5" pY="0.5" oX="85" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_39_ 4" x="424" y="582" w="26" h="31" pX="0.5" pY="0.5" oX="86" oY="75" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_40_ 4" x="444" y="551" w="26" h="31" pX="0.5" pY="0.5" oX="87" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_41_ 5" x="101" y="207" w="28" h="41" pX="0.5" pY="0.5" oX="85" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_42_ 5" x="46" y="250" w="27" h="40" pX="0.5" pY="0.5" oX="84" oY="62" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_43_ 5" x="73" y="249" w="28" h="40" pX="0.5" pY="0.5" oX="85" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_44_ 5" x="0" y="211" w="28" h="41" pX="0.5" pY="0.5" oX="87" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_45_ 5" x="28" y="209" w="25" h="41" pX="0.5" pY="0.5" oX="88" oY="62" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_46_ 5" x="53" y="208" w="25" h="41" pX="0.5" pY="0.5" oX="87" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_47_ 5" x="215" y="166" w="27" h="41" pX="0.5" pY="0.5" oX="86" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_48_ 5" x="81" y="161" w="27" h="42" pX="0.5" pY="0.5" oX="86" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_49_ 6" x="604" y="536" w="25" h="30" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_50_ 6" x="580" y="227" w="25" h="31" pX="0.5" pY="0.5" oX="93" oY="75" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_51_ 6" x="0" y="614" w="26" h="30" pX="0.5" pY="0.5" oX="92" oY="78" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_52_ 6" x="416" y="613" w="26" h="29" pX="0.5" pY="0.5" oX="90" oY="79" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_53_ 6" x="580" y="66" w="24" h="32" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_54_ 6" x="177" y="550" w="25" h="32" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_55_ 6" x="604" y="288" w="25" h="30" pX="0.5" pY="0.5" oX="92" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_56_ 6" x="361" y="614" w="26" h="30" pX="0.5" pY="0.5" oX="91" oY="77" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_57_ 7" x="126" y="248" w="26" h="40" pX="0.5" pY="0.5" oX="92" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_58_ 7" x="190" y="166" w="25" h="41" pX="0.5" pY="0.5" oX="93" oY="62" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_59_ 7" x="242" y="166" w="25" h="40" pX="0.5" pY="0.5" oX="94" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_60_ 7" x="153" y="92" w="28" h="42" pX="0.5" pY="0.5" oX="92" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_61_ 7" x="74" y="112" w="30" h="49" pX="0.5" pY="0.5" oX="95" oY="56" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_62_ 7" x="225" y="83" w="27" h="40" pX="0.5" pY="0.5" oX="94" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_63_ 7" x="162" y="166" w="28" h="41" pX="0.5" pY="0.5" oX="92" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Running_64_ 7" x="154" y="207" w="28" h="41" pX="0.5" pY="0.5" oX="91" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_01_ 0" x="629" y="561" w="24" h="28" pX="0.5" pY="0.5" oX="88" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_02_ 0" x="605" y="96" w="24" h="30" pX="0.5" pY="0.5" oX="88" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_03_ 0" x="0" y="408" w="24" h="38" pX="0.5" pY="0.5" oX="88" oY="59" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_04_ 1" x="423" y="74" w="23" h="37" pX="0.5" pY="0.5" oX="92" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_05_ 1" x="23" y="331" w="22" h="39" pX="0.5" pY="0.5" oX="94" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_06_ 1" x="237" y="407" w="21" h="38" pX="0.5" pY="0.5" oX="102" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_07_ 2" x="292" y="479" w="23" h="36" pX="0.5" pY="0.5" oX="89" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_08_ 2" x="434" y="259" w="21" h="37" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_09_ 2" x="181" y="84" w="21" h="42" pX="0.5" pY="0.5" oX="81" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_10_ 3" x="423" y="37" w="24" h="37" pX="0.5" pY="0.5" oX="92" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_11_ 3" x="436" y="444" w="24" h="36" pX="0.5" pY="0.5" oX="92" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_12_ 3" x="604" y="566" w="25" h="29" pX="0.5" pY="0.5" oX="92" oY="79" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_13_ 4" x="580" y="195" w="25" h="32" pX="0.5" pY="0.5" oX="90" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_14_ 4" x="273" y="546" w="24" h="33" pX="0.5" pY="0.5" oX="91" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_15_ 4" x="202" y="125" w="22" h="41" pX="0.5" pY="0.5" oX="96" oY="58" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_16_ 5" x="0" y="292" w="23" h="39" pX="0.5" pY="0.5" oX="93" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_17_ 5" x="293" y="137" w="21" h="39" pX="0.5" pY="0.5" oX="95" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_18_ 5" x="22" y="116" w="29" h="50" pX="0.5" pY="0.5" oX="98" oY="56" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_19_ 6" x="122" y="582" w="22" h="32" pX="0.5" pY="0.5" oX="89" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_20_ 6" x="326" y="582" w="22" h="32" pX="0.5" pY="0.5" oX="88" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_21_ 6" x="293" y="59" w="26" h="39" pX="0.5" pY="0.5" oX="80" oY="62" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_22_ 7" x="128" y="369" w="26" h="38" pX="0.5" pY="0.5" oX="90" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_23_ 7" x="448" y="185" w="25" h="37" pX="0.5" pY="0.5" oX="89" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Use Skill_24_ 7" x="309" y="614" w="22" h="30" pX="0.5" pY="0.5" oX="86" oY="78" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_01_ 0" x="605" y="0" w="24" h="30" pX="0.5" pY="0.5" oX="94" oY="75" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_02_ 0" x="348" y="582" w="24" h="32" pX="0.5" pY="0.5" oX="94" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_03_ 0" x="577" y="567" w="27" h="31" pX="0.5" pY="0.5" oX="91" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_04_ 0" x="528" y="357" w="28" h="34" pX="0.5" pY="0.5" oX="92" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_05_ 0" x="102" y="516" w="29" h="35" pX="0.5" pY="0.5" oX="92" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_06_ 0" x="446" y="74" w="26" h="37" pX="0.5" pY="0.5" oX="94" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_07_ 0" x="446" y="111" w="22" h="37" pX="0.5" pY="0.5" oX="96" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_08_ 0" x="79" y="516" w="23" h="35" pX="0.5" pY="0.5" oX="94" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_09_ 1" x="118" y="331" w="22" h="38" pX="0.5" pY="0.5" oX="85" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_10_ 1" x="259" y="40" w="22" h="39" pX="0.5" pY="0.5" oX="87" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_11_ 1" x="204" y="207" w="21" h="41" pX="0.5" pY="0.5" oX="89" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_12_ 1" x="108" y="154" w="19" h="41" pX="0.5" pY="0.5" oX="92" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_13_ 1" x="252" y="81" w="20" h="40" pX="0.5" pY="0.5" oX="95" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_14_ 1" x="181" y="126" w="20" h="40" pX="0.5" pY="0.5" oX="96" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_15_ 1" x="238" y="248" w="21" h="39" pX="0.5" pY="0.5" oX="96" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_16_ 1" x="272" y="79" w="20" h="39" pX="0.5" pY="0.5" oX="92" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_17_ 2" x="259" y="0" w="22" h="40" pX="0.5" pY="0.5" oX="97" oY="62" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_18_ 2" x="368" y="114" w="21" h="38" pX="0.5" pY="0.5" oX="96" oY="62" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_19_ 2" x="497" y="36" w="21" h="35" pX="0.5" pY="0.5" oX="95" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_20_ 2" x="503" y="480" w="20" h="35" pX="0.5" pY="0.5" oX="94" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_21_ 2" x="558" y="172" w="22" h="33" pX="0.5" pY="0.5" oX="89" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_22_ 2" x="403" y="0" w="20" h="37" pX="0.5" pY="0.5" oX="89" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_23_ 2" x="259" y="246" w="21" h="39" pX="0.5" pY="0.5" oX="87" oY="62" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_24_ 2" x="134" y="288" w="20" h="39" pX="0.5" pY="0.5" oX="92" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_25_ 3" x="338" y="479" w="23" h="36" pX="0.5" pY="0.5" oX="87" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_26_ 3" x="436" y="480" w="23" h="36" pX="0.5" pY="0.5" oX="87" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_27_ 3" x="369" y="444" w="27" h="35" pX="0.5" pY="0.5" oX="86" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_28_ 3" x="528" y="425" w="28" h="33" pX="0.5" pY="0.5" oX="85" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_29_ 3" x="575" y="273" w="29" h="32" pX="0.5" pY="0.5" oX="83" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_30_ 3" x="115" y="614" w="26" h="30" pX="0.5" pY="0.5" oX="84" oY="74" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_31_ 3" x="49" y="614" w="23" h="30" pX="0.5" pY="0.5" oX="86" oY="75" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_32_ 3" x="572" y="390" w="23" h="33" pX="0.5" pY="0.5" oX="87" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_33_ 4" x="244" y="583" w="23" h="31" pX="0.5" pY="0.5" oX="89" oY="76" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_34_ 4" x="503" y="515" w="24" h="35" pX="0.5" pY="0.5" oX="90" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_35_ 4" x="472" y="74" w="24" h="37" pX="0.5" pY="0.5" oX="91" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_36_ 4" x="0" y="480" w="24" h="37" pX="0.5" pY="0.5" oX="93" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_37_ 4" x="47" y="479" w="22" h="37" pX="0.5" pY="0.5" oX="96" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_38_ 4" x="459" y="480" w="21" h="36" pX="0.5" pY="0.5" oX="97" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_39_ 4" x="502" y="257" w="24" h="35" pX="0.5" pY="0.5" oX="96" oY="70" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_40_ 4" x="480" y="295" w="22" h="35" pX="0.5" pY="0.5" oX="94" oY="71" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_41_ 5" x="250" y="287" w="23" h="39" pX="0.5" pY="0.5" oX="84" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_42_ 5" x="93" y="407" w="21" h="38" pX="0.5" pY="0.5" oX="87" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_43_ 5" x="401" y="301" w="22" h="38" pX="0.5" pY="0.5" oX="88" oY="67" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_44_ 5" x="468" y="111" w="24" h="37" pX="0.5" pY="0.5" oX="88" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_45_ 5" x="528" y="105" w="29" h="34" pX="0.5" pY="0.5" oX="87" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_46_ 5" x="502" y="292" w="25" h="35" pX="0.5" pY="0.5" oX="89" oY="73" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_47_ 5" x="0" y="517" w="23" h="35" pX="0.5" pY="0.5" oX="90" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_48_ 5" x="483" y="444" w="22" h="36" pX="0.5" pY="0.5" oX="89" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_49_ 6" x="183" y="479" w="25" h="36" pX="0.5" pY="0.5" oX="97" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_50_ 6" x="250" y="546" w="23" h="33" pX="0.5" pY="0.5" oX="98" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_51_ 6" x="26" y="614" w="23" h="30" pX="0.5" pY="0.5" oX="95" oY="72" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_52_ 6" x="302" y="516" w="24" h="35" pX="0.5" pY="0.5" oX="93" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_53_ 6" x="385" y="479" w="29" h="36" pX="0.5" pY="0.5" oX="89" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_54_ 6" x="518" y="36" w="25" h="34" pX="0.5" pY="0.5" oX="91" oY="66" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_55_ 6" x="139" y="407" w="23" h="38" pX="0.5" pY="0.5" oX="92" oY="63" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_56_ 6" x="401" y="225" w="22" h="38" pX="0.5" pY="0.5" oX="95" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_57_ 7" x="378" y="328" w="23" h="38" pX="0.5" pY="0.5" oX="92" oY="61" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_58_ 7" x="72" y="369" w="23" h="38" pX="0.5" pY="0.5" oX="91" oY="61" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_59_ 7" x="396" y="516" w="25" h="35" pX="0.5" pY="0.5" oX="89" oY="64" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_60_ 7" x="227" y="546" w="23" h="34" pX="0.5" pY="0.5" oX="88" oY="65" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_61_ 7" x="144" y="582" w="22" h="32" pX="0.5" pY="0.5" oX="86" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_62_ 7" x="574" y="423" w="21" h="33" pX="0.5" pY="0.5" oX="86" oY="68" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_63_ 7" x="558" y="33" w="22" h="33" pX="0.5" pY="0.5" oX="84" oY="69" oW="200" oH="200"/>
+  <sprite n="Tops(Zombie_1)_Walking_64_ 7" x="527" y="512" w="21" h="34" pX="0.5" pY="0.5" oX="89" oY="67" oW="200" oH="200"/>
+</TextureAtlas>

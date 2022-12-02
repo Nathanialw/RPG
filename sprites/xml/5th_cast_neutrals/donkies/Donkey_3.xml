@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Donkey_3.png" width="1819" height="1879" scale="1" format="RGBA8888">
+  <sprite n="Donkey_3_Attack 1_01_ 0" x="1282" y="1253" w="70" h="98" pX="0.5" pY="0.5" oX="50" oY="28" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_02_ 0" x="916" y="335" w="73" h="107" pX="0.5" pY="0.5" oX="49" oY="3" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_03_ 0" x="72" y="0" w="70" h="136" pX="0.5" pY="0.5" oX="50" oY="4" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_04_ 1" x="348" y="411" w="124" h="79" pX="0.5" pY="0.5" oX="36" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_05_ 1" x="1171" y="871" w="101" h="96" pX="0.5" pY="0.5" oX="59" oY="23" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_06_ 1" x="1113" y="1355" w="96" h="97" pX="0.5" pY="0.5" oX="18" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_07_ 2" x="0" y="145" w="131" h="79" pX="0.5" pY="0.5" oX="9" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_08_ 2" x="223" y="414" w="123" h="101" pX="0.5" pY="0.5" oX="0" oY="18" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_09_ 2" x="1355" y="863" w="91" h="96" pX="0.5" pY="0.5" oX="52" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_10_ 3" x="578" y="0" w="69" h="120" pX="0.5" pY="0.5" oX="51" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_11_ 3" x="0" y="0" w="72" h="145" pX="0.5" pY="0.5" oX="49" oY="7" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_12_ 3" x="506" y="1546" w="71" h="86" pX="0.5" pY="0.5" oX="47" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_13_ 4" x="1291" y="772" w="97" h="91" pX="0.5" pY="0.5" oX="36" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_14_ 4" x="1479" y="859" w="93" h="89" pX="0.5" pY="0.5" oX="50" oY="20" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_15_ 4" x="483" y="125" w="85" h="123" pX="0.5" pY="0.5" oX="25" oY="13" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_16_ 5" x="100" y="1257" w="100" h="98" pX="0.5" pY="0.5" oX="48" oY="35" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_17_ 5" x="0" y="340" w="97" h="127" pX="0.5" pY="0.5" oX="60" oY="7" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_18_ 5" x="1731" y="1072" w="81" h="84" pX="0.5" pY="0.5" oX="26" oY="38" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_19_ 6" x="1035" y="692" w="102" h="87" pX="0.5" pY="0.5" oX="29" oY="42" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_20_ 6" x="1182" y="1253" w="100" h="87" pX="0.5" pY="0.5" oX="25" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_21_ 6" x="140" y="421" w="78" h="123" pX="0.5" pY="0.5" oX="53" oY="13" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_22_ 7" x="672" y="912" w="100" h="107" pX="0.5" pY="0.5" oX="43" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_23_ 7" x="413" y="0" w="94" h="125" pX="0.5" pY="0.5" oX="34" oY="4" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 1_24_ 7" x="1731" y="1319" w="82" h="80" pX="0.5" pY="0.5" oX="58" oY="23" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_01_ 0" x="1265" y="967" w="70" h="98" pX="0.5" pY="0.5" oX="50" oY="28" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_02_ 0" x="228" y="1452" w="69" h="95" pX="0.5" pY="0.5" oX="50" oY="21" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_03_ 0" x="1208" y="475" w="70" h="102" pX="0.5" pY="0.5" oX="50" oY="28" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_04_ 1" x="282" y="127" w="127" h="79" pX="0.5" pY="0.5" oX="22" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_05_ 1" x="804" y="412" w="112" h="78" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_06_ 1" x="348" y="332" w="124" h="79" pX="0.5" pY="0.5" oX="23" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_07_ 2" x="212" y="0" w="131" h="79" pX="0.5" pY="0.5" oX="12" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_08_ 2" x="0" y="679" w="117" h="77" pX="0.5" pY="0.5" oX="4" oY="49" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_09_ 2" x="0" y="261" w="128" h="79" pX="0.5" pY="0.5" oX="14" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_10_ 3" x="578" y="0" w="69" h="120" pX="0.5" pY="0.5" oX="51" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_11_ 3" x="394" y="690" w="69" h="114" pX="0.5" pY="0.5" oX="51" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_12_ 3" x="340" y="206" w="69" h="126" pX="0.5" pY="0.5" oX="51" oY="21" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_13_ 4" x="725" y="1355" w="97" h="91" pX="0.5" pY="0.5" oX="29" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_14_ 4" x="1375" y="1340" w="86" h="96" pX="0.5" pY="0.5" oX="44" oY="23" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_15_ 4" x="1388" y="458" w="96" h="90" pX="0.5" pY="0.5" oX="31" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_16_ 5" x="0" y="1257" w="100" h="98" pX="0.5" pY="0.5" oX="33" oY="35" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_17_ 5" x="139" y="1452" w="89" h="95" pX="0.5" pY="0.5" oX="49" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_18_ 5" x="1035" y="164" w="94" h="106" pX="0.5" pY="0.5" oX="35" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_19_ 6" x="472" y="1163" w="102" h="87" pX="0.5" pY="0.5" oX="29" oY="42" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_20_ 6" x="975" y="1532" w="92" h="86" pX="0.5" pY="0.5" oX="23" oY="35" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_21_ 6" x="1016" y="1355" w="97" h="83" pX="0.5" pY="0.5" oX="33" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_22_ 7" x="460" y="912" w="100" h="106" pX="0.5" pY="0.5" oX="35" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_23_ 7" x="495" y="1355" w="89" h="97" pX="0.5" pY="0.5" oX="31" oY="42" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Attack 2_24_ 7" x="834" y="0" w="100" h="113" pX="0.5" pY="0.5" oX="34" oY="23" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_01_ 0" x="507" y="1452" w="70" h="94" pX="0.5" pY="0.5" oX="47" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_02_ 0" x="297" y="1452" w="70" h="95" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_03_ 0" x="1340" y="1056" w="70" h="96" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_04_ 1" x="1199" y="1699" w="88" h="80" pX="0.5" pY="0.5" oX="31" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_05_ 1" x="663" y="1618" w="90" h="80" pX="0.5" pY="0.5" oX="30" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_06_ 1" x="1480" y="371" w="92" h="80" pX="0.5" pY="0.5" oX="30" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_07_ 2" x="1732" y="340" w="87" h="80" pX="0.5" pY="0.5" oX="44" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_08_ 2" x="239" y="1627" w="89" h="80" pX="0.5" pY="0.5" oX="43" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_09_ 2" x="1394" y="1529" w="91" h="80" pX="0.5" pY="0.5" oX="41" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_10_ 3" x="1660" y="443" w="70" h="84" pX="0.5" pY="0.5" oX="47" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_11_ 3" x="1659" y="527" w="70" h="84" pX="0.5" pY="0.5" oX="47" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_12_ 3" x="1659" y="611" w="70" h="84" pX="0.5" pY="0.5" oX="47" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_13_ 4" x="1572" y="901" w="81" h="90" pX="0.5" pY="0.5" oX="42" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_14_ 4" x="1572" y="991" w="81" h="90" pX="0.5" pY="0.5" oX="42" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_15_ 4" x="1572" y="1081" w="82" h="90" pX="0.5" pY="0.5" oX="41" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_16_ 5" x="1723" y="1642" w="80" h="81" pX="0.5" pY="0.5" oX="41" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_17_ 5" x="1731" y="1480" w="80" h="81" pX="0.5" pY="0.5" oX="41" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_18_ 5" x="0" y="1798" w="81" h="81" pX="0.5" pY="0.5" oX="40" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_19_ 6" x="1654" y="181" w="78" h="89" pX="0.5" pY="0.5" oX="43" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_20_ 6" x="1093" y="1610" w="78" h="90" pX="0.5" pY="0.5" oX="43" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_21_ 6" x="160" y="1611" w="79" h="90" pX="0.5" pY="0.5" oX="43" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_22_ 7" x="240" y="1797" w="78" h="80" pX="0.5" pY="0.5" oX="42" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_23_ 7" x="161" y="1798" w="79" h="80" pX="0.5" pY="0.5" oX="42" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Behavior_24_ 7" x="398" y="1797" w="79" h="80" pX="0.5" pY="0.5" oX="42" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_01_ 0" x="1271" y="362" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_02_ 0" x="367" y="1452" w="70" h="94" pX="0.5" pY="0.5" oX="47" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_03_ 0" x="288" y="1257" w="70" h="98" pX="0.5" pY="0.5" oX="47" oY="22" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_04_ 1" x="1283" y="1163" w="97" h="81" pX="0.5" pY="0.5" oX="22" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_05_ 1" x="753" y="1162" w="100" h="80" pX="0.5" pY="0.5" oX="27" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_06_ 1" x="853" y="1162" w="100" h="80" pX="0.5" pY="0.5" oX="35" oY="49" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_07_ 2" x="1388" y="708" w="96" h="81" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_08_ 2" x="1182" y="1173" w="101" h="80" pX="0.5" pY="0.5" oX="37" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_09_ 2" x="1194" y="184" w="99" h="80" pX="0.5" pY="0.5" oX="29" oY="49" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_10_ 3" x="70" y="756" w="70" h="115" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_11_ 3" x="1101" y="862" w="70" h="103" pX="0.5" pY="0.5" oX="47" oY="30" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_12_ 3" x="90" y="1618" w="70" h="91" pX="0.5" pY="0.5" oX="47" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_13_ 4" x="1572" y="91" w="86" h="90" pX="0.5" pY="0.5" oX="38" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_14_ 4" x="753" y="1618" w="90" h="90" pX="0.5" pY="0.5" oX="39" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_15_ 4" x="0" y="1618" w="90" h="91" pX="0.5" pY="0.5" oX="44" oY="30" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_16_ 5" x="388" y="1070" w="84" h="104" pX="0.5" pY="0.5" oX="37" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_17_ 5" x="577" y="1452" w="87" h="93" pX="0.5" pY="0.5" oX="39" oY="38" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_18_ 5" x="1732" y="260" w="87" h="80" pX="0.5" pY="0.5" oX="44" oY="54" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_19_ 6" x="1646" y="1476" w="85" h="89" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_20_ 6" x="935" y="1708" w="88" h="88" pX="0.5" pY="0.5" oX="38" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_21_ 6" x="1572" y="0" w="87" h="91" pX="0.5" pY="0.5" oX="32" oY="30" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_22_ 7" x="756" y="1253" w="88" h="100" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_23_ 7" x="1556" y="1479" w="90" h="91" pX="0.5" pY="0.5" oX="36" oY="38" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Block_24_ 7" x="1111" y="1700" w="88" h="81" pX="0.5" pY="0.5" oX="31" oY="53" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_01_ 0" x="1411" y="356" w="69" h="96" pX="0.5" pY="0.5" oX="47" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_02_ 0" x="0" y="1452" w="69" h="96" pX="0.5" pY="0.5" oX="47" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_03_ 0" x="1410" y="1056" w="69" h="96" pX="0.5" pY="0.5" oX="47" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_04_ 1" x="725" y="1446" w="94" h="80" pX="0.5" pY="0.5" oX="34" oY="50" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_05_ 1" x="975" y="1452" w="94" h="80" pX="0.5" pY="0.5" oX="34" oY="50" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_06_ 1" x="1381" y="171" w="94" h="80" pX="0.5" pY="0.5" oX="34" oY="50" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_07_ 2" x="1209" y="1351" w="96" h="80" pX="0.5" pY="0.5" oX="36" oY="50" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_08_ 2" x="1388" y="548" w="96" h="80" pX="0.5" pY="0.5" oX="36" oY="50" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_09_ 2" x="919" y="1355" w="97" h="80" pX="0.5" pY="0.5" oX="35" oY="50" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_10_ 3" x="858" y="711" w="69" h="109" pX="0.5" pY="0.5" oX="47" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_11_ 3" x="915" y="490" w="69" h="109" pX="0.5" pY="0.5" oX="47" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_12_ 3" x="373" y="804" w="69" h="108" pX="0.5" pY="0.5" oX="47" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_13_ 4" x="1732" y="746" w="86" h="86" pX="0.5" pY="0.5" oX="44" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_14_ 4" x="1732" y="173" w="86" h="87" pX="0.5" pY="0.5" oX="44" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_15_ 4" x="1732" y="86" w="86" h="87" pX="0.5" pY="0.5" oX="44" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_16_ 5" x="1118" y="587" w="85" h="102" pX="0.5" pY="0.5" oX="43" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_17_ 5" x="1180" y="967" w="85" h="101" pX="0.5" pY="0.5" oX="43" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_18_ 5" x="1184" y="1068" w="85" h="101" pX="0.5" pY="0.5" oX="43" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_19_ 6" x="1732" y="0" w="87" h="86" pX="0.5" pY="0.5" oX="36" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_20_ 6" x="1732" y="420" w="87" h="86" pX="0.5" pY="0.5" oX="36" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_21_ 6" x="1636" y="1659" w="87" h="86" pX="0.5" pY="0.5" oX="36" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_22_ 7" x="1293" y="162" w="88" h="98" pX="0.5" pY="0.5" oX="34" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_23_ 7" x="200" y="1257" w="88" h="98" pX="0.5" pY="0.5" oX="34" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Critical HP_24_ 7" x="1291" y="675" w="88" h="97" pX="0.5" pY="0.5" oX="34" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Dead_01_ 0" x="128" y="261" w="83" h="77" pX="0.5" pY="0.5" oX="51" oY="42" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Dead_02_ 1" x="1566" y="1225" w="90" h="66" pX="0.5" pY="0.5" oX="37" oY="65" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Dead_03_ 2" x="1388" y="789" w="91" h="72" pX="0.5" pY="0.5" oX="33" oY="41" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Dead_04_ 3" x="1731" y="1156" w="83" h="81" pX="0.5" pY="0.5" oX="26" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Dead_05_ 4" x="555" y="1796" w="77" h="78" pX="0.5" pY="0.5" oX="58" oY="54" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Dead_06_ 5" x="107" y="988" w="106" h="65" pX="0.5" pY="0.5" oX="22" oY="71" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Dead_07_ 6" x="1018" y="790" w="106" h="72" pX="0.5" pY="0.5" oX="32" oY="35" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Dead_08_ 7" x="1656" y="270" w="76" h="89" pX="0.5" pY="0.5" oX="26" oY="38" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_01_ 0" x="1271" y="362" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_02_ 0" x="1305" y="1351" w="70" h="96" pX="0.5" pY="0.5" oX="55" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_03_ 0" x="1341" y="362" w="70" h="96" pX="0.5" pY="0.5" oX="63" oY="21" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_04_ 1" x="1283" y="1163" w="97" h="81" pX="0.5" pY="0.5" oX="22" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_05_ 1" x="1388" y="628" w="96" h="80" pX="0.5" pY="0.5" oX="31" oY="54" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_06_ 1" x="1380" y="1152" w="94" h="80" pX="0.5" pY="0.5" oX="41" oY="61" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_07_ 2" x="1388" y="708" w="96" h="81" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_08_ 2" x="1391" y="0" w="96" h="81" pX="0.5" pY="0.5" oX="37" oY="42" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_09_ 2" x="1209" y="1431" w="95" h="82" pX="0.5" pY="0.5" oX="28" oY="37" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_10_ 3" x="70" y="756" w="70" h="115" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_11_ 3" x="1035" y="270" w="71" h="106" pX="0.5" pY="0.5" oX="38" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_12_ 3" x="769" y="1059" w="70" h="103" pX="0.5" pY="0.5" oX="30" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_13_ 4" x="1572" y="91" w="86" h="90" pX="0.5" pY="0.5" oX="38" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_14_ 4" x="1571" y="186" w="83" h="90" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_15_ 4" x="680" y="1708" w="80" h="88" pX="0.5" pY="0.5" oX="66" oY="37" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_16_ 5" x="388" y="1070" w="84" h="104" pX="0.5" pY="0.5" oX="37" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_17_ 5" x="889" y="1452" w="86" h="94" pX="0.5" pY="0.5" oX="35" oY="39" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_18_ 5" x="577" y="1545" w="86" h="90" pX="0.5" pY="0.5" oX="34" oY="53" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_19_ 6" x="1646" y="1476" w="85" h="89" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_20_ 6" x="760" y="1708" w="87" h="88" pX="0.5" pY="0.5" oX="43" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_21_ 6" x="847" y="1708" w="88" h="86" pX="0.5" pY="0.5" oX="43" oY="20" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_22_ 7" x="756" y="1253" w="88" h="100" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_23_ 7" x="1265" y="264" w="84" h="98" pX="0.5" pY="0.5" oX="30" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Evade_24_ 7" x="1349" y="260" w="81" h="96" pX="0.5" pY="0.5" oX="18" oY="30" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_01_ 0" x="584" y="1355" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_02_ 0" x="844" y="1256" w="71" h="99" pX="0.5" pY="0.5" oX="46" oY="24" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_03_ 0" x="1486" y="1295" w="71" h="92" pX="0.5" pY="0.5" oX="46" oY="18" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_04_ 1" x="1283" y="1163" w="97" h="81" pX="0.5" pY="0.5" oX="22" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_05_ 1" x="0" y="988" w="107" h="83" pX="0.5" pY="0.5" oX="25" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_06_ 1" x="210" y="773" w="112" h="85" pX="0.5" pY="0.5" oX="36" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_07_ 2" x="1388" y="708" w="96" h="81" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_08_ 2" x="934" y="81" w="109" h="83" pX="0.5" pY="0.5" oX="31" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_09_ 2" x="717" y="0" w="117" h="85" pX="0.5" pY="0.5" oX="14" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_10_ 3" x="0" y="756" w="70" h="115" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_11_ 3" x="625" y="479" w="70" h="115" pX="0.5" pY="0.5" oX="47" oY="23" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_12_ 3" x="212" y="79" w="70" h="131" pX="0.5" pY="0.5" oX="47" oY="18" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_13_ 4" x="1572" y="91" w="86" h="90" pX="0.5" pY="0.5" oX="38" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_14_ 4" x="1643" y="1291" w="86" h="89" pX="0.5" pY="0.5" oX="42" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_15_ 4" x="1732" y="583" w="83" h="86" pX="0.5" pY="0.5" oX="50" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_16_ 5" x="388" y="1070" w="84" h="104" pX="0.5" pY="0.5" oX="37" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_17_ 5" x="576" y="1070" w="84" h="104" pX="0.5" pY="0.5" oX="42" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_18_ 5" x="690" y="803" w="84" h="109" pX="0.5" pY="0.5" oX="50" oY="28" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_19_ 6" x="1646" y="1476" w="85" h="89" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_20_ 6" x="0" y="1709" w="85" h="89" pX="0.5" pY="0.5" oX="39" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_21_ 6" x="328" y="1631" w="89" h="84" pX="0.5" pY="0.5" oX="28" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_22_ 7" x="408" y="1253" w="88" h="100" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_23_ 7" x="1106" y="270" w="88" h="103" pX="0.5" pY="0.5" oX="36" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Get Hit_24_ 7" x="690" y="690" w="85" h="113" pX="0.5" pY="0.5" oX="32" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_01_ 0" x="1271" y="362" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_02_ 0" x="425" y="1355" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_03_ 0" x="355" y="1355" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_04_ 1" x="1283" y="1163" w="97" h="81" pX="0.5" pY="0.5" oX="22" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_05_ 1" x="1293" y="0" w="98" h="81" pX="0.5" pY="0.5" oX="22" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_06_ 1" x="1293" y="81" w="98" h="81" pX="0.5" pY="0.5" oX="22" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_07_ 2" x="1388" y="708" w="96" h="81" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_08_ 2" x="258" y="1355" w="97" h="81" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_09_ 2" x="161" y="1355" w="97" h="81" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_10_ 3" x="0" y="756" w="70" h="115" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_11_ 3" x="140" y="690" w="70" h="114" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_12_ 3" x="324" y="690" w="70" h="114" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_13_ 4" x="1572" y="91" w="86" h="90" pX="0.5" pY="0.5" oX="38" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_14_ 4" x="1572" y="631" w="86" h="90" pX="0.5" pY="0.5" oX="38" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_15_ 4" x="1572" y="721" w="86" h="90" pX="0.5" pY="0.5" oX="38" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_16_ 5" x="388" y="1070" w="84" h="104" pX="0.5" pY="0.5" oX="37" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_17_ 5" x="1035" y="482" w="84" h="105" pX="0.5" pY="0.5" oX="37" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_18_ 5" x="1035" y="587" w="83" h="105" pX="0.5" pY="0.5" oX="38" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_19_ 6" x="1646" y="1476" w="85" h="89" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_20_ 6" x="1338" y="1609" w="84" h="89" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_21_ 6" x="1571" y="1386" w="84" h="90" pX="0.5" pY="0.5" oX="44" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_22_ 7" x="756" y="1253" w="88" h="100" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_23_ 7" x="669" y="1253" w="87" h="100" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Idle_24_ 7" x="1199" y="0" w="87" h="100" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_01_ 0" x="417" y="1633" w="88" h="74" pX="0.5" pY="0.5" oX="53" oY="53" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_02_ 0" x="1548" y="1659" w="88" h="74" pX="0.5" pY="0.5" oX="53" oY="53" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_03_ 0" x="828" y="335" w="88" h="74" pX="0.5" pY="0.5" oX="53" oY="53" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_04_ 1" x="1732" y="832" w="86" h="80" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_05_ 1" x="1732" y="912" w="86" h="80" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_06_ 1" x="1731" y="992" w="86" h="80" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_07_ 2" x="1732" y="669" w="86" h="77" pX="0.5" pY="0.5" oX="48" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_08_ 2" x="574" y="1174" w="86" h="77" pX="0.5" pY="0.5" oX="48" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_09_ 2" x="1732" y="506" w="86" h="77" pX="0.5" pY="0.5" oX="48" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_10_ 3" x="1460" y="1698" w="88" h="80" pX="0.5" pY="0.5" oX="33" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_11_ 3" x="1372" y="1698" w="88" h="80" pX="0.5" pY="0.5" oX="33" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_12_ 3" x="1023" y="1708" w="88" h="80" pX="0.5" pY="0.5" oX="33" oY="43" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_13_ 4" x="1067" y="1545" w="91" h="65" pX="0.5" pY="0.5" oX="31" oY="62" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_14_ 4" x="751" y="1546" w="90" h="64" pX="0.5" pY="0.5" oX="32" oY="62" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_15_ 4" x="92" y="1547" w="90" h="64" pX="0.5" pY="0.5" oX="32" oY="62" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_16_ 5" x="1581" y="1570" w="72" h="89" pX="0.5" pY="0.5" oX="42" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_17_ 5" x="1659" y="0" w="73" h="89" pX="0.5" pY="0.5" oX="41" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_18_ 5" x="1659" y="89" w="73" h="89" pX="0.5" pY="0.5" oX="41" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_19_ 6" x="1656" y="1075" w="74" h="80" pX="0.5" pY="0.5" oX="53" oY="41" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_20_ 6" x="1656" y="1155" w="74" h="80" pX="0.5" pY="0.5" oX="53" oY="41" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_21_ 6" x="1655" y="1380" w="74" h="80" pX="0.5" pY="0.5" oX="53" oY="41" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_22_ 7" x="1479" y="789" w="93" h="70" pX="0.5" pY="0.5" oX="38" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_23_ 7" x="1474" y="1225" w="92" h="70" pX="0.5" pY="0.5" oX="38" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Rest_24_ 7" x="0" y="1548" w="92" h="70" pX="0.5" pY="0.5" oX="38" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_01_ 0" x="1137" y="689" w="70" h="102" pX="0.5" pY="0.5" oX="47" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_02_ 0" x="1129" y="0" w="70" h="102" pX="0.5" pY="0.5" oX="47" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_03_ 0" x="233" y="1070" w="70" h="104" pX="0.5" pY="0.5" oX="47" oY="28" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_04_ 0" x="1203" y="578" w="70" h="102" pX="0.5" pY="0.5" oX="47" oY="28" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_05_ 0" x="1011" y="1151" w="70" h="102" pX="0.5" pY="0.5" oX="47" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_06_ 0" x="76" y="1071" w="70" h="104" pX="0.5" pY="0.5" oX="47" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_07_ 0" x="1118" y="373" w="70" h="103" pX="0.5" pY="0.5" oX="47" oY="28" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_08_ 0" x="1114" y="1070" w="70" h="103" pX="0.5" pY="0.5" oX="47" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_09_ 1" x="97" y="340" w="126" h="81" pX="0.5" pY="0.5" oX="20" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_10_ 1" x="712" y="248" w="116" h="82" pX="0.5" pY="0.5" oX="18" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_11_ 1" x="594" y="601" w="118" h="82" pX="0.5" pY="0.5" oX="17" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_12_ 1" x="0" y="597" w="119" h="82" pX="0.5" pY="0.5" oX="18" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_13_ 1" x="346" y="490" w="121" h="82" pX="0.5" pY="0.5" oX="18" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_14_ 1" x="712" y="608" w="115" h="82" pX="0.5" pY="0.5" oX="19" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_15_ 1" x="712" y="330" w="116" h="82" pX="0.5" pY="0.5" oX="18" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_16_ 1" x="712" y="527" w="115" h="81" pX="0.5" pY="0.5" oX="19" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_17_ 2" x="212" y="210" w="128" h="81" pX="0.5" pY="0.5" oX="16" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_18_ 2" x="712" y="166" w="117" h="82" pX="0.5" pY="0.5" oX="28" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_19_ 2" x="119" y="601" w="119" h="82" pX="0.5" pY="0.5" oX="27" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_20_ 2" x="218" y="515" w="122" h="82" pX="0.5" pY="0.5" oX="25" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_21_ 2" x="223" y="332" w="125" h="82" pX="0.5" pY="0.5" oX="22" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_22_ 2" x="476" y="601" w="118" h="82" pX="0.5" pY="0.5" oX="28" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_23_ 2" x="238" y="601" w="119" h="82" pX="0.5" pY="0.5" oX="27" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_24_ 2" x="717" y="85" w="117" h="81" pX="0.5" pY="0.5" oX="27" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_25_ 3" x="142" y="132" w="70" h="129" pX="0.5" pY="0.5" oX="47" oY="20" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_26_ 3" x="507" y="0" w="71" h="123" pX="0.5" pY="0.5" oX="46" oY="19" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_27_ 3" x="568" y="243" w="70" h="120" pX="0.5" pY="0.5" oX="47" oY="19" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_28_ 3" x="0" y="467" w="70" h="124" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_29_ 3" x="343" y="0" w="70" h="127" pX="0.5" pY="0.5" oX="47" oY="15" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_30_ 3" x="70" y="467" w="70" h="124" pX="0.5" pY="0.5" oX="47" oY="14" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_31_ 3" x="542" y="363" w="70" h="119" pX="0.5" pY="0.5" oX="47" oY="19" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_32_ 3" x="472" y="331" w="70" h="122" pX="0.5" pY="0.5" oX="47" oY="22" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_33_ 4" x="1484" y="186" w="87" h="93" pX="0.5" pY="0.5" oX="30" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_34_ 4" x="664" y="1526" w="87" h="92" pX="0.5" pY="0.5" oX="29" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_35_ 4" x="1484" y="451" w="87" h="92" pX="0.5" pY="0.5" oX="29" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_36_ 4" x="1484" y="543" w="88" h="92" pX="0.5" pY="0.5" oX="29" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_37_ 4" x="1158" y="1513" w="89" h="92" pX="0.5" pY="0.5" oX="29" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_38_ 4" x="915" y="1256" w="87" h="99" pX="0.5" pY="0.5" oX="30" oY="30" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_39_ 4" x="1335" y="960" w="87" h="96" pX="0.5" pY="0.5" oX="29" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_40_ 4" x="1486" y="948" w="85" h="93" pX="0.5" pY="0.5" oX="30" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_41_ 5" x="463" y="803" w="100" h="109" pX="0.5" pY="0.5" oX="37" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_42_ 5" x="772" y="930" w="89" h="106" pX="0.5" pY="0.5" oX="37" oY="28" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_43_ 5" x="839" y="1059" w="87" h="103" pX="0.5" pY="0.5" oX="36" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_44_ 5" x="917" y="224" w="88" h="107" pX="0.5" pY="0.5" oX="36" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_45_ 5" x="88" y="871" w="90" h="110" pX="0.5" pY="0.5" oX="36" oY="23" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_46_ 5" x="919" y="599" w="85" h="108" pX="0.5" pY="0.5" oX="37" oY="22" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_47_ 5" x="926" y="1059" w="85" h="103" pX="0.5" pY="0.5" oX="37" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_48_ 5" x="660" y="1102" w="93" h="102" pX="0.5" pY="0.5" oX="37" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_49_ 6" x="472" y="1070" w="104" h="93" pX="0.5" pY="0.5" oX="24" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_50_ 6" x="1394" y="1436" w="92" h="93" pX="0.5" pY="0.5" oX="35" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_51_ 6" x="1484" y="635" w="88" h="92" pX="0.5" pY="0.5" oX="40" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_52_ 6" x="1480" y="279" w="90" h="92" pX="0.5" pY="0.5" oX="38" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_53_ 6" x="1479" y="1041" w="92" h="92" pX="0.5" pY="0.5" oX="36" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_54_ 6" x="1352" y="1244" w="88" h="96" pX="0.5" pY="0.5" oX="40" oY="30" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_55_ 6" x="1069" y="1452" w="89" h="93" pX="0.5" pY="0.5" oX="38" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_56_ 6" x="822" y="1355" w="97" h="92" pX="0.5" pY="0.5" oX="31" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_57_ 7" x="712" y="412" w="92" h="115" pX="0.5" pY="0.5" oX="36" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_58_ 7" x="0" y="871" w="88" h="110" pX="0.5" pY="0.5" oX="39" oY="28" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_59_ 7" x="1011" y="967" w="88" h="103" pX="0.5" pY="0.5" oX="39" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_60_ 7" x="927" y="790" w="91" h="108" pX="0.5" pY="0.5" oX="37" oY="24" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_61_ 7" x="827" y="601" w="92" h="110" pX="0.5" pY="0.5" oX="36" oY="23" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_62_ 7" x="834" y="113" w="87" h="111" pX="0.5" pY="0.5" oX="40" oY="22" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_63_ 7" x="829" y="224" w="88" h="111" pX="0.5" pY="0.5" oX="39" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Run_64_ 7" x="827" y="490" w="88" h="111" pX="0.5" pY="0.5" oX="40" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_01_ 0" x="584" y="1355" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_02_ 0" x="654" y="1355" w="71" h="97" pX="0.5" pY="0.5" oX="46" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_03_ 0" x="1486" y="1479" w="70" h="91" pX="0.5" pY="0.5" oX="46" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_04_ 1" x="1283" y="1163" w="97" h="81" pX="0.5" pY="0.5" oX="22" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_05_ 1" x="0" y="1176" w="102" h="81" pX="0.5" pY="0.5" oX="19" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_06_ 1" x="1184" y="791" w="101" h="80" pX="0.5" pY="0.5" oX="23" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_07_ 2" x="1388" y="708" w="96" h="81" pX="0.5" pY="0.5" oX="45" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_08_ 2" x="1011" y="1070" w="103" h="81" pX="0.5" pY="0.5" oX="43" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_09_ 2" x="560" y="987" w="105" h="83" pX="0.5" pY="0.5" oX="39" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_10_ 3" x="70" y="756" w="70" h="115" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_11_ 3" x="534" y="690" w="70" h="113" pX="0.5" pY="0.5" oX="47" oY="19" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_12_ 3" x="638" y="236" w="70" h="116" pX="0.5" pY="0.5" oX="47" oY="16" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_13_ 4" x="1572" y="91" w="86" h="90" pX="0.5" pY="0.5" oX="38" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_14_ 4" x="417" y="1546" w="89" h="87" pX="0.5" pY="0.5" oX="35" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_15_ 4" x="328" y="1547" w="89" h="84" pX="0.5" pY="0.5" oX="35" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_16_ 5" x="388" y="1070" w="84" h="104" pX="0.5" pY="0.5" oX="37" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_17_ 5" x="1099" y="967" w="81" h="103" pX="0.5" pY="0.5" oX="40" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_18_ 5" x="0" y="1071" w="76" h="105" pX="0.5" pY="0.5" oX="45" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_19_ 6" x="1646" y="1476" w="85" h="89" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_20_ 6" x="843" y="1618" w="81" h="90" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_21_ 6" x="1653" y="989" w="77" h="86" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_22_ 7" x="756" y="1253" w="88" h="100" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_23_ 7" x="496" y="1253" w="89" h="100" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Use Skill_24_ 7" x="70" y="1355" w="91" h="97" pX="0.5" pY="0.5" oX="40" oY="29" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_01_ 0" x="1273" y="577" w="70" h="98" pX="0.5" pY="0.5" oX="47" oY="30" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_02_ 0" x="0" y="1355" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_03_ 0" x="1278" y="459" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_04_ 0" x="1285" y="863" w="70" h="97" pX="0.5" pY="0.5" oX="47" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_05_ 0" x="1194" y="264" w="71" h="98" pX="0.5" pY="0.5" oX="46" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_06_ 0" x="1269" y="1065" w="71" h="98" pX="0.5" pY="0.5" oX="46" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_07_ 0" x="1002" y="1256" w="71" h="99" pX="0.5" pY="0.5" oX="46" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_08_ 0" x="1073" y="1256" w="71" h="99" pX="0.5" pY="0.5" oX="46" oY="31" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_09_ 1" x="102" y="1175" w="102" h="82" pX="0.5" pY="0.5" oX="22" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_10_ 1" x="357" y="601" w="119" h="82" pX="0.5" pY="0.5" oX="20" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_11_ 1" x="873" y="898" w="107" h="81" pX="0.5" pY="0.5" oX="20" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_12_ 1" x="861" y="979" w="105" h="80" pX="0.5" pY="0.5" oX="20" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_13_ 1" x="665" y="1019" w="104" h="83" pX="0.5" pY="0.5" oX="19" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_14_ 1" x="178" y="906" w="109" h="82" pX="0.5" pY="0.5" oX="19" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_15_ 1" x="1081" y="1173" w="101" h="83" pX="0.5" pY="0.5" oX="19" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_16_ 1" x="1129" y="102" w="100" h="82" pX="0.5" pY="0.5" oX="20" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_17_ 2" x="213" y="988" w="105" h="82" pX="0.5" pY="0.5" oX="37" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_18_ 2" x="409" y="249" w="123" h="82" pX="0.5" pY="0.5" oX="21" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_19_ 2" x="563" y="906" w="109" h="81" pX="0.5" pY="0.5" oX="35" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_20_ 2" x="934" y="0" w="109" h="81" pX="0.5" pY="0.5" oX="36" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_21_ 2" x="927" y="707" w="108" h="83" pX="0.5" pY="0.5" oX="38" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_22_ 2" x="210" y="690" w="114" h="83" pX="0.5" pY="0.5" oX="32" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_23_ 2" x="204" y="1174" w="102" h="83" pX="0.5" pY="0.5" oX="43" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_24_ 2" x="306" y="1174" w="102" h="83" pX="0.5" pY="0.5" oX="42" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_25_ 3" x="472" y="453" w="70" h="122" pX="0.5" pY="0.5" oX="47" oY="15" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_26_ 3" x="142" y="0" w="70" h="132" pX="0.5" pY="0.5" oX="47" oY="16" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_27_ 3" x="638" y="120" w="70" h="116" pX="0.5" pY="0.5" oX="47" oY="18" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_28_ 3" x="568" y="123" w="70" h="120" pX="0.5" pY="0.5" oX="47" oY="18" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_29_ 3" x="647" y="0" w="70" h="118" pX="0.5" pY="0.5" oX="47" oY="18" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_30_ 3" x="413" y="125" w="70" h="124" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_31_ 3" x="463" y="690" w="71" h="113" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_32_ 3" x="612" y="363" w="71" h="116" pX="0.5" pY="0.5" oX="47" oY="17" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_33_ 4" x="1571" y="451" w="85" h="90" pX="0.5" pY="0.5" oX="39" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_34_ 4" x="1391" y="81" w="96" h="90" pX="0.5" pY="0.5" oX="38" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_35_ 4" x="1252" y="1609" w="86" h="89" pX="0.5" pY="0.5" oX="38" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_36_ 4" x="1287" y="1698" w="85" h="88" pX="0.5" pY="0.5" oX="38" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_37_ 4" x="1557" y="1295" w="86" h="91" pX="0.5" pY="0.5" oX="38" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_38_ 4" x="1570" y="279" w="86" h="91" pX="0.5" pY="0.5" oX="38" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_39_ 4" x="1487" y="93" w="85" h="93" pX="0.5" pY="0.5" oX="39" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_40_ 4" x="1486" y="1387" w="85" h="92" pX="0.5" pY="0.5" oX="39" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_41_ 5" x="775" y="711" w="83" h="110" pX="0.5" pY="0.5" oX="38" oY="24" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_42_ 5" x="542" y="482" w="83" h="119" pX="0.5" pY="0.5" oX="38" oY="24" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_43_ 5" x="1018" y="862" w="83" h="105" pX="0.5" pY="0.5" oX="38" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_44_ 5" x="1188" y="373" w="83" h="102" pX="0.5" pY="0.5" oX="38" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_45_ 5" x="1124" y="476" w="84" h="102" pX="0.5" pY="0.5" oX="37" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_46_ 5" x="1043" y="0" w="86" h="106" pX="0.5" pY="0.5" oX="36" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_47_ 5" x="303" y="1070" w="85" h="104" pX="0.5" pY="0.5" oX="36" oY="27" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_48_ 5" x="1035" y="376" w="83" h="106" pX="0.5" pY="0.5" oX="37" oY="26" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_49_ 6" x="1008" y="1618" w="85" h="90" pX="0.5" pY="0.5" oX="43" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_50_ 6" x="924" y="1618" w="84" h="90" pX="0.5" pY="0.5" oX="42" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_51_ 6" x="85" y="1709" w="83" h="89" pX="0.5" pY="0.5" oX="43" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_52_ 6" x="417" y="1708" w="87" h="89" pX="0.5" pY="0.5" oX="40" oY="34" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_53_ 6" x="1572" y="541" w="87" h="90" pX="0.5" pY="0.5" oX="41" oY="33" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_54_ 6" x="1304" y="1447" w="90" h="93" pX="0.5" pY="0.5" oX="38" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_55_ 6" x="1487" y="0" w="85" h="93" pX="0.5" pY="0.5" oX="43" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_56_ 6" x="1486" y="1133" w="86" h="92" pX="0.5" pY="0.5" oX="43" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_57_ 7" x="146" y="1070" w="87" h="104" pX="0.5" pY="0.5" oX="41" oY="24" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_58_ 7" x="774" y="821" w="99" h="109" pX="0.5" pY="0.5" oX="27" oY="24" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_59_ 7" x="373" y="912" w="87" h="106" pX="0.5" pY="0.5" oX="39" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_60_ 7" x="604" y="796" w="86" h="110" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_61_ 7" x="287" y="858" w="86" h="109" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_62_ 7" x="604" y="683" w="86" h="113" pX="0.5" pY="0.5" oX="41" oY="24" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_63_ 7" x="1207" y="680" w="84" h="102" pX="0.5" pY="0.5" oX="41" oY="25" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Walk_64_ 7" x="585" y="1253" w="84" h="100" pX="0.5" pY="0.5" oX="41" oY="24" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_01_ 0" x="437" y="1452" w="70" h="94" pX="0.5" pY="0.5" oX="47" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_02_ 0" x="819" y="1452" w="70" h="94" pX="0.5" pY="0.5" oX="48" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_03_ 0" x="69" y="1452" w="70" h="95" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_04_ 1" x="504" y="1708" w="88" h="80" pX="0.5" pY="0.5" oX="31" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_05_ 1" x="168" y="1715" w="88" h="80" pX="0.5" pY="0.5" oX="31" oY="49" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_06_ 1" x="239" y="1547" w="89" h="80" pX="0.5" pY="0.5" oX="30" oY="50" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_07_ 2" x="592" y="1708" w="88" h="80" pX="0.5" pY="0.5" oX="44" oY="48" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_08_ 2" x="256" y="1715" w="88" h="81" pX="0.5" pY="0.5" oX="44" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_09_ 2" x="1572" y="370" w="88" h="81" pX="0.5" pY="0.5" oX="44" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_10_ 3" x="1660" y="443" w="70" h="84" pX="0.5" pY="0.5" oX="47" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_11_ 3" x="1658" y="695" w="71" h="84" pX="0.5" pY="0.5" oX="45" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_12_ 3" x="1660" y="359" w="70" h="84" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_13_ 4" x="1171" y="1609" w="81" h="90" pX="0.5" pY="0.5" oX="42" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_14_ 4" x="1572" y="811" w="81" h="90" pX="0.5" pY="0.5" oX="42" oY="37" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_15_ 4" x="1422" y="1609" w="81" h="89" pX="0.5" pY="0.5" oX="43" oY="38" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_16_ 5" x="81" y="1798" w="80" h="81" pX="0.5" pY="0.5" oX="41" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_17_ 5" x="1731" y="1399" w="80" h="81" pX="0.5" pY="0.5" oX="40" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_18_ 5" x="318" y="1797" w="80" h="80" pX="0.5" pY="0.5" oX="39" oY="47" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_19_ 6" x="1503" y="1570" w="78" h="89" pX="0.5" pY="0.5" oX="43" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_20_ 6" x="1654" y="900" w="78" h="89" pX="0.5" pY="0.5" oX="44" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_21_ 6" x="1654" y="811" w="78" h="89" pX="0.5" pY="0.5" oX="45" oY="36" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_22_ 7" x="477" y="1797" w="78" h="80" pX="0.5" pY="0.5" oX="42" oY="46" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_23_ 7" x="1731" y="1561" w="79" h="81" pX="0.5" pY="0.5" oX="41" oY="45" oW="160" oH="160"/>
+  <sprite n="Donkey_3_Woozy_24_ 7" x="1731" y="1237" w="78" h="82" pX="0.5" pY="0.5" oX="41" oY="44" oW="160" oH="160"/>
+</TextureAtlas>

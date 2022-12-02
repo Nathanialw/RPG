@@ -1,7 +1,7 @@
 #pragma once
 #include "utilities.h"
 #include "components.h"
-
+#include "player_control.h"
 
 namespace User_Mouse_Input {
 
@@ -163,33 +163,11 @@ namespace User_Mouse_Input {
     }
 
 		//take in an entity and set the units to save it and follow and attack it.
-	bool Command_Unit_Attack(entt::registry& zone, entt::entity) {
+	bool Command_Unit_Attack(entt::registry& zone, entt::entity &target_ID, Component::Radius &radius) {
 		if (!zone.empty<Component::Selected>()) {
-			if (abs(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x) > 40.0f || abs(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y) > 40.0f) {
-				auto view = zone.view<Component::Selected, Component::Soldier, Component::Commandable>();
-				float x = 0.0f;
-				float y = Mouse::Mouse_Selection_Box_y;
-				int i = 0;
-				float spacing = 0;
-				float z = abs((Mouse::Mouse_Selection_Box_x - Mouse::iXWorld_Mouse) / (50.0f));// z is the # of units that can fit along x
-				for (auto entity : view) {
-
-					x = Mouse::Mouse_Selection_Box_x + spacing;
-					if (i == z) {
-						spacing = 0.0f;
-						x = Mouse::Mouse_Selection_Box_x + spacing;
-						y = y + 50.0f;
-						i = 0;
-					}
-					i++;
-					spacing = spacing + 50.0f; //spacing shoudl be stored in "battalion" component
-
-					zone.emplace_or_replace<Component::Moving>(entity);
-					zone.emplace_or_replace<Component::Mouse_Move>(entity, x, y);
-				}
-			}
-			else { //moves all the units onto a single point, I want to have the spread out in some kind of formation
-				Order_Move(zone);
+			auto view = zone.view<Component::Selected>();
+			for (auto entity : view) {
+				Player_Control::Attack_Order(zone, entity, target_ID, radius);
 			}
 			Mouse::bRight_Mouse_Pressed = false;
 			return true;

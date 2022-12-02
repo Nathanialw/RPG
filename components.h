@@ -461,8 +461,8 @@ namespace Component {
 	};
 
 	struct Attack_Speed {
-		int period;
-		int counter;
+		int period = 0;
+		int counter = 0;
 	};
 
 	struct In_Combat {

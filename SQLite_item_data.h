@@ -9,15 +9,9 @@
 
 namespace SQLite_Item_Data {
 
-    std::vector<std::string> legs;
-    std::vector<std::string> chest;
-    std::vector<std::string> helm;
-
     // read in all items and emplace each unit type into the map and fill it up
     //  holds a map for each unit type >>>  holds a vector for each item type for the unit >>> the vector is a list of strings of the name of each item in the db
     std::unordered_map<std::string, std::unordered_map<Item_Component::Item_Type, std::vector<std::string>>>Items;
-
-
 
     Item_Component::Item_Type Get_Item_Type(std::string &db_type) {
        if (db_type == "back") {
@@ -83,6 +77,12 @@ namespace SQLite_Item_Data {
        else if (db_type == "shoulders") {
             return Item_Component::Item_Type::shoulders;
        }
+       else if (db_type == "wrist") {
+           return Item_Component::Item_Type::wrist;
+       }
+       else if (db_type == "jewelry") {
+           return Item_Component::Item_Type::jewelry;
+       }
        else {
            Utilities::Log("Get_Item_Type(std::string &db_type) passthrough error");
            return Item_Component::Item_Type::mainhand;
@@ -97,34 +97,30 @@ namespace SQLite_Item_Data {
         char buf[400];
         const char *jj = "SELECT slot, type, equip_type FROM weapon_types";
         strcpy(buf, jj);
-//        strcat(buf, unit_name.c_str());
         sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
         while (sqlite3_step(stmt) != SQLITE_DONE) {
-
 //            get the index of the enum of Item_Components::Item_Type
             auto itemType = sqlite3_column_text(stmt, 0); //0 only increments up when calling more than one column
             const char *f = (const char *) itemType;
             std::string g = std::string(reinterpret_cast< const char *> (f));
+            Utilities::Log(g);
             Item_Component::Item_Type item_type = Get_Item_Type(g);
 
             //get the name of the item as a sting
             auto type = sqlite3_column_text(stmt, 1); //0 only increments up when calling more than one column
             const char *s = (const char *) type;
             std::string item_name = std::string(reinterpret_cast< const char *> (s));
+            Utilities::Log(item_name);
 
             // get the RTP_male, classes_female etc strings
             auto equip_type = sqlite3_column_text(stmt, 2); //0 only increments up when calling more than one column
             const char *d = (const char *) equip_type;
             std::string vec = std::string(reinterpret_cast< const char *> (d));
-//            std::unordered_map<std::string, std::unordered_map<Item_Component::Item_Type, std::vector<std::string>>>Items;
-
-//            std::unordered_map<Item_Component::Item_Type, std::vector<std::string>> items;
-//            items[item_type];
-
+            Utilities::Log(vec);
 
             Items[vec][item_type].emplace_back(item_name);
         }
-
-        std::cout << legs.size() << std::endl;
+        Utilities::Log(Items.size());
+        Utilities::Log("Loading items success!");
     }
 }

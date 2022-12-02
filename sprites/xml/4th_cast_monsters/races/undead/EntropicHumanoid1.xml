@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="EntropicHumanoid1.png" width="3207" height="3205" scale="1" format="RGBA8888">
+  <sprite n="EntropicHumanoid1_Attack 1_01_ 0" x="0" y="3076" w="103" h="129" pX="0.5" pY="0.5" oX="102" oY="68" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_02_ 0" x="2963" y="1582" w="105" h="133" pX="0.5" pY="0.5" oX="97" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_03_ 0" x="2414" y="2429" w="98" h="138" pX="0.5" pY="0.5" oX="103" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_04_ 1" x="1687" y="321" w="186" h="134" pX="0.5" pY="0.5" oX="106" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_05_ 1" x="194" y="1093" w="194" h="141" pX="0.5" pY="0.5" oX="89" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_06_ 1" x="0" y="123" w="240" h="119" pX="0.5" pY="0.5" oX="32" oY="88" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_07_ 2" x="374" y="1629" w="186" h="134" pX="0.5" pY="0.5" oX="8" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_08_ 2" x="0" y="1093" w="194" h="148" pX="0.5" pY="0.5" oX="17" oY="59" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_09_ 2" x="0" y="0" w="240" h="123" pX="0.5" pY="0.5" oX="28" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_10_ 3" x="897" y="0" w="103" h="201" pX="0.5" pY="0.5" oX="95" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_11_ 3" x="591" y="625" w="105" h="206" pX="0.5" pY="0.5" oX="98" oY="55" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_12_ 3" x="99" y="360" w="99" h="215" pX="0.5" pY="0.5" oX="99" oY="34" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_13_ 4" x="1248" y="2565" w="163" h="113" pX="0.5" pY="0.5" oX="94" oY="88" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_14_ 4" x="560" y="1627" w="186" h="126" pX="0.5" pY="0.5" oX="71" oY="80" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_15_ 4" x="795" y="613" w="200" h="98" pX="0.5" pY="0.5" oX="56" oY="112" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_16_ 5" x="2079" y="2135" w="164" h="172" pX="0.5" pY="0.5" oX="81" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_17_ 5" x="1533" y="783" w="156" h="183" pX="0.5" pY="0.5" oX="77" oY="60" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_18_ 5" x="393" y="1763" w="175" h="181" pX="0.5" pY="0.5" oX="51" oY="57" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_19_ 6" x="921" y="2565" w="164" h="114" pX="0.5" pY="0.5" oX="55" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_20_ 6" x="1085" y="2618" w="157" h="134" pX="0.5" pY="0.5" oX="66" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_21_ 6" x="0" y="2125" w="175" h="125" pX="0.5" pY="0.5" oX="74" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_22_ 7" x="2376" y="859" w="163" h="167" pX="0.5" pY="0.5" oX="43" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_23_ 7" x="1694" y="0" w="186" h="181" pX="0.5" pY="0.5" oX="43" oY="51" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 1_24_ 7" x="0" y="912" w="200" h="181" pX="0.5" pY="0.5" oX="44" oY="47" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_01_ 0" x="2939" y="2696" w="99" h="131" pX="0.5" pY="0.5" oX="103" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_02_ 0" x="1214" y="831" w="99" h="143" pX="0.5" pY="0.5" oX="103" oY="64" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_03_ 0" x="1873" y="2516" w="98" h="164" pX="0.5" pY="0.5" oX="103" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_04_ 1" x="0" y="1371" w="189" h="131" pX="0.5" pY="0.5" oX="101" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_05_ 1" x="1904" y="2102" w="175" h="148" pX="0.5" pY="0.5" oX="100" oY="58" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_06_ 1" x="0" y="252" w="223" h="108" pX="0.5" pY="0.5" oX="24" oY="101" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_07_ 2" x="1140" y="1359" w="189" h="127" pX="0.5" pY="0.5" oX="10" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_08_ 2" x="939" y="2090" w="175" h="152" pX="0.5" pY="0.5" oX="25" oY="53" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_09_ 2" x="223" y="252" w="223" h="106" pX="0.5" pY="0.5" oX="53" oY="101" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_10_ 3" x="696" y="625" w="99" h="202" pX="0.5" pY="0.5" oX="98" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_11_ 3" x="696" y="827" w="99" h="199" pX="0.5" pY="0.5" oX="98" oY="64" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_12_ 3" x="2123" y="1034" w="98" h="175" pX="0.5" pY="0.5" oX="99" oY="41" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_13_ 4" x="2463" y="2585" w="153" h="110" pX="0.5" pY="0.5" oX="99" oY="92" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_14_ 4" x="2674" y="2215" w="143" h="155" pX="0.5" pY="0.5" oX="99" oY="53" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_15_ 4" x="1636" y="1804" w="180" h="131" pX="0.5" pY="0.5" oX="51" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_16_ 5" x="1933" y="2307" w="153" h="169" pX="0.5" pY="0.5" oX="98" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_17_ 5" x="2376" y="689" w="140" h="170" pX="0.5" pY="0.5" oX="99" oY="68" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_18_ 5" x="2240" y="2364" w="166" h="159" pX="0.5" pY="0.5" oX="54" oY="62" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_19_ 6" x="2463" y="2695" w="153" h="109" pX="0.5" pY="0.5" oX="49" oY="93" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_20_ 6" x="2818" y="959" w="140" h="148" pX="0.5" pY="0.5" oX="61" oY="60" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_21_ 6" x="337" y="2394" w="166" h="129" pX="0.5" pY="0.5" oX="80" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_22_ 7" x="2518" y="340" w="153" h="168" pX="0.5" pY="0.5" oX="48" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_23_ 7" x="1696" y="1494" w="143" h="182" pX="0.5" pY="0.5" oX="58" oY="55" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Attack 2_24_ 7" x="746" y="1748" w="180" h="157" pX="0.5" pY="0.5" oX="69" oY="61" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_01_ 0" x="1939" y="1545" w="99" h="127" pX="0.5" pY="0.5" oX="103" oY="64" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_02_ 0" x="2963" y="1901" w="112" h="134" pX="0.5" pY="0.5" oX="103" oY="61" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_03_ 0" x="1146" y="446" w="96" h="138" pX="0.5" pY="0.5" oX="102" oY="59" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_04_ 1" x="761" y="1617" w="187" h="131" pX="0.5" pY="0.5" oX="113" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_05_ 1" x="472" y="0" w="211" h="134" pX="0.5" pY="0.5" oX="89" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_06_ 1" x="240" y="0" w="232" h="133" pX="0.5" pY="0.5" oX="67" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_07_ 2" x="1324" y="1632" w="186" h="128" pX="0.5" pY="0.5" oX="1" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_08_ 2" x="0" y="578" w="210" h="127" pX="0.5" pY="0.5" oX="1" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_09_ 2" x="240" y="133" w="232" h="119" pX="0.5" pY="0.5" oX="1" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_10_ 3" x="795" y="711" w="99" h="200" pX="0.5" pY="0.5" oX="98" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_11_ 3" x="785" y="0" w="112" h="205" pX="0.5" pY="0.5" oX="85" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_12_ 3" x="198" y="360" w="96" h="213" pX="0.5" pY="0.5" oX="102" oY="59" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_13_ 4" x="2818" y="363" w="147" h="117" pX="0.5" pY="0.5" oX="108" oY="80" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_14_ 4" x="1691" y="2683" w="155" h="112" pX="0.5" pY="0.5" oX="96" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_15_ 4" x="1536" y="2683" w="155" h="118" pX="0.5" pY="0.5" oX="93" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_16_ 5" x="2169" y="1804" w="165" h="173" pX="0.5" pY="0.5" oX="96" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_17_ 5" x="1154" y="0" w="193" h="179" pX="0.5" pY="0.5" oX="73" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_18_ 5" x="1343" y="649" w="190" h="182" pX="0.5" pY="0.5" oX="80" oY="62" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_19_ 6" x="1258" y="2385" w="165" h="113" pX="0.5" pY="0.5" oX="39" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_20_ 6" x="774" y="1052" w="193" h="102" pX="0.5" pY="0.5" oX="34" oY="95" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_21_ 6" x="1343" y="551" w="190" h="98" pX="0.5" pY="0.5" oX="30" oY="99" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_22_ 7" x="2365" y="1425" w="147" h="170" pX="0.5" pY="0.5" oX="45" oY="80" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_23_ 7" x="238" y="1765" w="155" h="181" pX="0.5" pY="0.5" oX="49" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Behavior_24_ 7" x="1539" y="0" w="155" h="188" pX="0.5" pY="0.5" oX="52" oY="64" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_01_ 0" x="2217" y="3067" w="111" h="124" pX="0.5" pY="0.5" oX="104" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_02_ 0" x="3065" y="2035" w="119" h="122" pX="0.5" pY="0.5" oX="104" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_03_ 0" x="403" y="3076" w="128" h="119" pX="0.5" pY="0.5" oX="106" oY="68" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_04_ 1" x="1328" y="1497" w="187" h="135" pX="0.5" pY="0.5" oX="111" oY="83" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_05_ 1" x="1154" y="179" w="193" h="143" pX="0.5" pY="0.5" oX="104" oY="81" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_06_ 1" x="1762" y="2362" w="167" h="154" pX="0.5" pY="0.5" oX="128" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_07_ 2" x="188" y="1503" w="187" h="126" pX="0.5" pY="0.5" oX="2" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_08_ 2" x="1146" y="322" w="193" h="124" pX="0.5" pY="0.5" oX="3" oY="80" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_09_ 2" x="2506" y="1866" w="167" h="120" pX="0.5" pY="0.5" oX="5" oY="83" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_10_ 3" x="1090" y="974" w="111" h="193" pX="0.5" pY="0.5" oX="85" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_11_ 3" x="1095" y="781" w="119" h="193" pX="0.5" pY="0.5" oX="77" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_12_ 3" x="1201" y="974" w="128" h="190" pX="0.5" pY="0.5" oX="66" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_13_ 4" x="2506" y="1595" w="168" h="121" pX="0.5" pY="0.5" oX="112" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_14_ 4" x="175" y="2124" w="173" h="123" pX="0.5" pY="0.5" oX="116" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_15_ 4" x="2657" y="2535" w="161" h="125" pX="0.5" pY="0.5" oX="124" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_16_ 5" x="568" y="1753" w="143" h="180" pX="0.5" pY="0.5" oX="90" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_17_ 5" x="1356" y="1170" w="135" h="188" pX="0.5" pY="0.5" oX="94" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_18_ 5" x="1461" y="981" w="107" h="187" pX="0.5" pY="0.5" oX="114" oY="82" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_19_ 6" x="861" y="2956" w="143" h="118" pX="0.5" pY="0.5" oX="67" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_20_ 6" x="2964" y="1339" w="135" h="119" pX="0.5" pY="0.5" oX="71" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_21_ 6" x="3099" y="1339" w="107" h="115" pX="0.5" pY="0.5" oX="79" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_22_ 7" x="2506" y="1716" w="168" h="150" pX="0.5" pY="0.5" oX="20" oY="83" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_23_ 7" x="0" y="2250" w="173" h="145" pX="0.5" pY="0.5" oX="11" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Block_24_ 7" x="2656" y="1292" w="161" h="137" pX="0.5" pY="0.5" oX="15" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_01_ 0" x="1920" y="3067" w="99" h="125" pX="0.5" pY="0.5" oX="103" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_02_ 0" x="2019" y="3067" w="99" h="125" pX="0.5" pY="0.5" oX="103" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_03_ 0" x="2118" y="3067" w="99" h="125" pX="0.5" pY="0.5" oX="103" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_04_ 1" x="762" y="1999" w="177" h="120" pX="0.5" pY="0.5" oX="122" oY="89" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_05_ 1" x="1816" y="1805" w="177" h="120" pX="0.5" pY="0.5" oX="122" oY="89" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_06_ 1" x="2055" y="1393" w="176" h="121" pX="0.5" pY="0.5" oX="122" oY="88" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_07_ 2" x="2058" y="392" w="177" h="119" pX="0.5" pY="0.5" oX="1" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_08_ 2" x="408" y="1999" w="177" h="120" pX="0.5" pY="0.5" oX="1" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_09_ 2" x="1993" y="1805" w="176" h="120" pX="0.5" pY="0.5" oX="2" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_10_ 3" x="1158" y="1167" w="99" h="192" pX="0.5" pY="0.5" oX="98" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_11_ 3" x="1244" y="639" w="99" h="192" pX="0.5" pY="0.5" oX="98" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_12_ 3" x="991" y="974" w="99" h="193" pX="0.5" pY="0.5" oX="98" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_13_ 4" x="1536" y="2801" w="144" h="106" pX="0.5" pY="0.5" oX="114" oY="91" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_14_ 4" x="1691" y="2795" w="144" h="106" pX="0.5" pY="0.5" oX="114" oY="91" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_15_ 4" x="2463" y="2804" w="144" h="107" pX="0.5" pY="0.5" oX="114" oY="90" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_16_ 5" x="2114" y="2523" w="143" h="160" pX="0.5" pY="0.5" oX="114" oY="89" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_17_ 5" x="280" y="2523" w="143" h="160" pX="0.5" pY="0.5" oX="114" oY="89" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_18_ 5" x="2674" y="1131" w="143" h="161" pX="0.5" pY="0.5" oX="114" oY="88" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_19_ 6" x="143" y="2958" w="143" h="109" pX="0.5" pY="0.5" oX="43" oY="88" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_20_ 6" x="1380" y="2806" w="143" h="109" pX="0.5" pY="0.5" oX="43" oY="88" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_21_ 6" x="1990" y="2808" w="143" h="110" pX="0.5" pY="0.5" oX="43" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_22_ 7" x="2674" y="648" w="144" h="161" pX="0.5" pY="0.5" oX="42" oY="88" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_23_ 7" x="2674" y="325" w="144" h="162" pX="0.5" pY="0.5" oX="42" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Critical HP_24_ 7" x="2674" y="163" w="144" h="162" pX="0.5" pY="0.5" oX="42" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_01_ 0" x="2428" y="3067" w="98" h="124" pX="0.5" pY="0.5" oX="103" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_02_ 0" x="2625" y="3065" w="97" h="123" pX="0.5" pY="0.5" oX="104" oY="68" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_03_ 0" x="2950" y="2958" w="97" h="123" pX="0.5" pY="0.5" oX="104" oY="68" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_04_ 1" x="2057" y="906" w="176" h="128" pX="0.5" pY="0.5" oX="122" oY="81" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_05_ 1" x="585" y="2109" w="174" h="122" pX="0.5" pY="0.5" oX="122" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_06_ 1" x="920" y="2263" w="173" h="118" pX="0.5" pY="0.5" oX="122" oY="90" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_07_ 2" x="2058" y="784" w="176" h="122" pX="0.5" pY="0.5" oX="2" oY="83" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_08_ 2" x="2055" y="1689" w="174" h="115" pX="0.5" pY="0.5" oX="4" oY="89" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_09_ 2" x="408" y="2119" w="173" h="111" pX="0.5" pY="0.5" oX="5" oY="93" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_10_ 3" x="1047" y="588" w="98" h="193" pX="0.5" pY="0.5" oX="99" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_11_ 3" x="1491" y="1168" w="97" h="187" pX="0.5" pY="0.5" oX="99" oY="90" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_12_ 3" x="141" y="1765" w="97" h="181" pX="0.5" pY="0.5" oX="99" oY="95" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_13_ 4" x="0" y="2958" w="143" h="113" pX="0.5" pY="0.5" oX="114" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_14_ 4" x="1821" y="2925" w="141" h="107" pX="0.5" pY="0.5" oX="115" oY="90" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_15_ 4" x="1523" y="2907" w="141" h="102" pX="0.5" pY="0.5" oX="115" oY="95" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_16_ 5" x="2674" y="1553" w="142" h="161" pX="0.5" pY="0.5" oX="114" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_17_ 5" x="575" y="2680" w="140" h="155" pX="0.5" pY="0.5" oX="115" oY="92" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_18_ 5" x="2817" y="487" w="139" h="151" pX="0.5" pY="0.5" oX="115" oY="96" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_19_ 6" x="286" y="2955" w="142" h="111" pX="0.5" pY="0.5" oX="44" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_20_ 6" x="1680" y="2901" w="141" h="104" pX="0.5" pY="0.5" oX="45" oY="93" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_21_ 6" x="2964" y="891" w="139" h="102" pX="0.5" pY="0.5" oX="46" oY="95" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_22_ 7" x="2674" y="809" w="143" h="161" pX="0.5" pY="0.5" oX="43" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_23_ 7" x="715" y="2680" w="141" h="155" pX="0.5" pY="0.5" oX="44" oY="92" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Dead To Down_24_ 7" x="2817" y="809" w="141" h="150" pX="0.5" pY="0.5" oX="44" oY="97" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_1_01_ 0" x="3110" y="0" w="97" h="122" pX="0.5" pY="0.5" oX="104" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_1_02_ 1" x="1590" y="2250" w="172" h="114" pX="0.5" pY="0.5" oX="122" oY="94" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_1_03_ 2" x="2229" y="1687" w="172" h="107" pX="0.5" pY="0.5" oX="6" oY="97" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_1_04_ 3" x="1588" y="966" w="97" h="175" pX="0.5" pY="0.5" oX="99" oY="100" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_1_05_ 4" x="1004" y="2955" w="142" h="99" pX="0.5" pY="0.5" oX="113" oY="98" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_1_06_ 5" x="2818" y="1353" w="139" h="146" pX="0.5" pY="0.5" oX="115" oY="100" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_1_07_ 6" x="2970" y="127" w="139" h="101" pX="0.5" pY="0.5" oX="46" oY="96" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_1_08_ 7" x="2818" y="1765" w="142" h="145" pX="0.5" pY="0.5" oX="45" oY="102" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_2_01_ 0" x="3107" y="487" w="99" h="121" pX="0.5" pY="0.5" oX="104" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_2_02_ 1" x="2243" y="2260" w="171" h="104" pX="0.5" pY="0.5" oX="122" oY="105" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_2_03_ 2" x="1762" y="2250" w="171" h="112" pX="0.5" pY="0.5" oX="7" oY="92" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_2_04_ 3" x="2414" y="2260" w="99" h="169" pX="0.5" pY="0.5" oX="97" oY="105" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_2_05_ 4" x="395" y="959" w="150" h="93" pX="0.5" pY="0.5" oX="115" oY="104" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_2_06_ 5" x="2539" y="856" w="123" h="149" pX="0.5" pY="0.5" oX="115" oY="106" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_2_07_ 6" x="2827" y="3049" w="123" h="109" pX="0.5" pY="0.5" oX="62" oY="88" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_2_08_ 7" x="2818" y="638" w="150" h="141" pX="0.5" pY="0.5" oX="35" oY="94" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_3_01_ 0" x="3110" y="122" w="95" h="122" pX="0.5" pY="0.5" oX="101" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_3_02_ 1" x="1093" y="2263" w="172" h="115" pX="0.5" pY="0.5" oX="122" oY="91" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_3_03_ 2" x="345" y="2292" w="172" h="95" pX="0.5" pY="0.5" oX="6" oY="111" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_3_04_ 3" x="2401" y="1595" w="95" h="167" pX="0.5" pY="0.5" oX="104" oY="108" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_3_05_ 4" x="1004" y="3054" w="127" h="110" pX="0.5" pY="0.5" oX="115" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_3_06_ 5" x="2818" y="129" w="152" h="142" pX="0.5" pY="0.5" oX="115" oY="98" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_3_07_ 6" x="2818" y="271" w="152" h="92" pX="0.5" pY="0.5" oX="33" oY="105" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_3_08_ 7" x="2376" y="1026" w="127" h="144" pX="0.5" pY="0.5" oX="58" oY="112" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_4_01_ 0" x="1429" y="2915" w="93" h="118" pX="0.5" pY="0.5" oX="105" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_4_02_ 1" x="2499" y="1986" w="166" h="98" pX="0.5" pY="0.5" oX="122" oY="109" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_4_03_ 2" x="711" y="1905" w="166" h="94" pX="0.5" pY="0.5" oX="12" oY="110" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_4_04_ 3" x="680" y="1159" w="94" h="143" pX="0.5" pY="0.5" oX="102" oY="128" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_4_05_ 4" x="2376" y="1307" w="131" h="112" pX="0.5" pY="0.5" oX="115" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_4_06_ 5" x="1380" y="2683" w="156" h="123" pX="0.5" pY="0.5" oX="115" oY="120" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_4_07_ 6" x="1846" y="2683" w="155" h="107" pX="0.5" pY="0.5" oX="30" oY="90" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Down_4_08_ 7" x="2376" y="1170" w="131" h="137" pX="0.5" pY="0.5" oX="54" oY="120" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_01_ 0" x="2722" y="3049" w="105" h="123" pX="0.5" pY="0.5" oX="104" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_02_ 0" x="3075" y="1901" w="122" h="117" pX="0.5" pY="0.5" oX="104" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_03_ 0" x="2964" y="993" w="138" h="117" pX="0.5" pY="0.5" oX="104" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_04_ 1" x="1310" y="1804" w="181" h="127" pX="0.5" pY="0.5" oX="119" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_05_ 1" x="2334" y="1794" w="172" h="122" pX="0.5" pY="0.5" oX="119" oY="97" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_06_ 1" x="2607" y="2084" w="157" h="131" pX="0.5" pY="0.5" oX="123" oY="104" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_07_ 2" x="1129" y="1804" w="181" h="132" pX="0.5" pY="0.5" oX="0" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_08_ 2" x="173" y="2250" w="172" h="138" pX="0.5" pY="0.5" oX="9" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_09_ 2" x="0" y="2683" w="157" h="153" pX="0.5" pY="0.5" oX="20" oY="51" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_10_ 3" x="1356" y="981" w="105" h="189" pX="0.5" pY="0.5" oX="91" oY="90" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_11_ 3" x="146" y="1946" w="122" h="178" pX="0.5" pY="0.5" oX="74" oY="95" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_12_ 3" x="2234" y="519" w="139" h="165" pX="0.5" pY="0.5" oX="57" oY="102" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_13_ 4" x="503" y="2394" w="165" h="119" pX="0.5" pY="0.5" oX="117" oY="80" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_14_ 4" x="2058" y="511" w="176" h="115" pX="0.5" pY="0.5" oX="119" oY="82" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_15_ 4" x="585" y="1999" w="177" h="110" pX="0.5" pY="0.5" oX="122" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_16_ 5" x="1488" y="1940" w="139" h="177" pX="0.5" pY="0.5" oX="101" oY="89" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_17_ 5" x="268" y="1946" w="140" h="178" pX="0.5" pY="0.5" oX="100" oY="97" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_18_ 5" x="647" y="2516" w="130" h="164" pX="0.5" pY="0.5" oX="105" oY="112" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_19_ 6" x="2968" y="504" w="139" h="125" pX="0.5" pY="0.5" oX="60" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_20_ 6" x="2970" y="0" w="140" h="127" pX="0.5" pY="0.5" oX="60" oY="63" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_21_ 6" x="2960" y="1765" w="130" h="136" pX="0.5" pY="0.5" oX="65" oY="51" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_22_ 7" x="0" y="2526" w="165" h="157" pX="0.5" pY="0.5" oX="18" oY="81" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_23_ 7" x="2058" y="626" w="176" h="158" pX="0.5" pY="0.5" oX="5" oY="80" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Evade_24_ 7" x="1104" y="1936" w="177" h="154" pX="0.5" pY="0.5" oX="1" oY="81" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_01_ 0" x="1588" y="1141" w="100" h="137" pX="0.5" pY="0.5" oX="97" oY="53" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_02_ 0" x="1939" y="1400" w="110" h="145" pX="0.5" pY="0.5" oX="86" oY="43" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_03_ 0" x="313" y="2683" w="110" h="149" pX="0.5" pY="0.5" oX="86" oY="37" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_04_ 1" x="1694" y="181" w="186" h="140" pX="0.5" pY="0.5" oX="114" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_05_ 1" x="2125" y="1977" w="173" h="158" pX="0.5" pY="0.5" oX="127" oY="50" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_06_ 1" x="517" y="2231" w="170" h="163" pX="0.5" pY="0.5" oX="129" oY="44" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_07_ 2" x="1510" y="1632" w="186" h="128" pX="0.5" pY="0.5" oX="0" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_08_ 2" x="1273" y="2250" w="173" h="135" pX="0.5" pY="0.5" oX="0" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_09_ 2" x="0" y="2395" w="170" h="131" pX="0.5" pY="0.5" oX="1" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_10_ 3" x="1839" y="1494" w="100" h="178" pX="0.5" pY="0.5" oX="103" oY="92" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_11_ 3" x="1939" y="1222" w="110" h="178" pX="0.5" pY="0.5" oX="104" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_12_ 3" x="170" y="2523" w="110" h="160" pX="0.5" pY="0.5" oX="104" oY="104" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_13_ 4" x="2818" y="0" w="152" h="129" pX="0.5" pY="0.5" oX="105" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_14_ 4" x="2616" y="2786" w="144" h="140" pX="0.5" pY="0.5" oX="112" oY="54" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_15_ 4" x="1242" y="2680" w="138" h="156" pX="0.5" pY="0.5" oX="118" oY="36" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_16_ 5" x="687" y="2292" w="156" h="169" pX="0.5" pY="0.5" oX="106" oY="80" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_17_ 5" x="1533" y="415" w="152" h="185" pX="0.5" pY="0.5" oX="111" oY="64" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_18_ 5" x="2236" y="174" w="140" h="173" pX="0.5" pY="0.5" oX="121" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_19_ 6" x="157" y="2683" w="156" h="123" pX="0.5" pY="0.5" oX="38" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_20_ 6" x="2616" y="2660" w="152" h="126" pX="0.5" pY="0.5" oX="37" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_21_ 6" x="2557" y="2926" w="140" h="139" pX="0.5" pY="0.5" oX="39" oY="56" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_22_ 7" x="423" y="2680" w="152" h="156" pX="0.5" pY="0.5" oX="43" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_23_ 7" x="2674" y="1714" w="144" h="159" pX="0.5" pY="0.5" oX="44" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Get Hit_24_ 7" x="2419" y="2926" w="138" h="141" pX="0.5" pY="0.5" oX="44" oY="90" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_01_ 0" x="1524" y="3067" w="99" h="125" pX="0.5" pY="0.5" oX="103" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_02_ 0" x="304" y="3076" w="99" h="128" pX="0.5" pY="0.5" oX="103" oY="63" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_03_ 0" x="2939" y="2827" w="99" h="131" pX="0.5" pY="0.5" oX="103" oY="60" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_04_ 1" x="1880" y="132" w="179" h="132" pX="0.5" pY="0.5" oX="120" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_05_ 1" x="2059" y="133" w="177" h="132" pX="0.5" pY="0.5" oX="122" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_06_ 1" x="2059" y="0" w="177" h="133" pX="0.5" pY="0.5" oX="122" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_07_ 2" x="1879" y="516" w="179" h="126" pX="0.5" pY="0.5" oX="1" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_08_ 2" x="1804" y="1935" w="177" h="126" pX="0.5" pY="0.5" oX="1" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_09_ 2" x="1627" y="1940" w="177" h="128" pX="0.5" pY="0.5" oX="1" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_10_ 3" x="996" y="781" w="99" h="193" pX="0.5" pY="0.5" oX="98" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_11_ 3" x="1257" y="1164" w="99" h="190" pX="0.5" pY="0.5" oX="98" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_12_ 3" x="1588" y="188" w="99" h="186" pX="0.5" pY="0.5" oX="98" oY="88" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_13_ 4" x="1008" y="2836" w="144" h="119" pX="0.5" pY="0.5" oX="114" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_14_ 4" x="1152" y="2836" w="144" h="120" pX="0.5" pY="0.5" oX="114" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_15_ 4" x="0" y="2836" w="144" h="122" pX="0.5" pY="0.5" oX="114" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_16_ 5" x="1587" y="2516" w="143" h="164" pX="0.5" pY="0.5" oX="114" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_17_ 5" x="1971" y="2476" w="143" h="163" pX="0.5" pY="0.5" oX="114" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_18_ 5" x="2674" y="487" w="143" h="161" pX="0.5" pY="0.5" oX="114" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_19_ 6" x="575" y="2956" w="143" h="118" pX="0.5" pY="0.5" oX="43" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_20_ 6" x="718" y="2956" w="143" h="120" pX="0.5" pY="0.5" oX="43" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_21_ 6" x="432" y="2952" w="143" h="122" pX="0.5" pY="0.5" oX="43" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_22_ 7" x="2674" y="0" w="144" h="163" pX="0.5" pY="0.5" oX="42" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_23_ 7" x="2674" y="970" w="144" h="161" pX="0.5" pY="0.5" oX="42" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle Fidget_24_ 7" x="2674" y="1873" w="144" h="157" pX="0.5" pY="0.5" oX="42" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_01_ 0" x="2328" y="3067" w="100" h="124" pX="0.5" pY="0.5" oX="103" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_02_ 0" x="1821" y="3067" w="99" h="125" pX="0.5" pY="0.5" oX="103" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_03_ 0" x="1722" y="3005" w="99" h="125" pX="0.5" pY="0.5" oX="103" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_04_ 0" x="1131" y="3075" w="98" h="126" pX="0.5" pY="0.5" oX="103" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_05_ 0" x="1425" y="3073" w="99" h="125" pX="0.5" pY="0.5" oX="103" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_06_ 1" x="1879" y="906" w="178" h="134" pX="0.5" pY="0.5" oX="120" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_07_ 1" x="1877" y="1672" w="178" h="133" pX="0.5" pY="0.5" oX="120" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_08_ 1" x="1880" y="0" w="179" h="132" pX="0.5" pY="0.5" oX="120" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_09_ 1" x="1879" y="774" w="179" h="132" pX="0.5" pY="0.5" oX="120" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_10_ 1" x="1879" y="642" w="179" h="132" pX="0.5" pY="0.5" oX="120" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_11_ 2" x="2059" y="265" w="177" h="127" pX="0.5" pY="0.5" oX="3" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_12_ 2" x="926" y="1873" w="178" h="126" pX="0.5" pY="0.5" oX="2" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_13_ 2" x="1880" y="264" w="179" h="126" pX="0.5" pY="0.5" oX="1" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_14_ 2" x="1310" y="1931" w="178" h="126" pX="0.5" pY="0.5" oX="1" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_15_ 2" x="1879" y="390" w="179" h="126" pX="0.5" pY="0.5" oX="1" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_16_ 3" x="999" y="201" w="100" h="194" pX="0.5" pY="0.5" oX="97" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_17_ 3" x="1047" y="395" w="99" h="193" pX="0.5" pY="0.5" oX="98" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_18_ 3" x="1145" y="588" w="99" h="193" pX="0.5" pY="0.5" oX="98" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_19_ 3" x="1244" y="446" w="98" h="193" pX="0.5" pY="0.5" oX="99" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_20_ 3" x="568" y="831" w="99" h="193" pX="0.5" pY="0.5" oX="98" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_21_ 4" x="144" y="2836" w="144" h="119" pX="0.5" pY="0.5" oX="114" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_22_ 4" x="576" y="2836" w="144" h="119" pX="0.5" pY="0.5" oX="114" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_23_ 4" x="864" y="2836" w="144" h="119" pX="0.5" pY="0.5" oX="114" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_24_ 4" x="2818" y="2433" w="144" h="119" pX="0.5" pY="0.5" oX="114" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_25_ 4" x="2818" y="2552" w="144" h="119" pX="0.5" pY="0.5" oX="114" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_26_ 5" x="1446" y="2289" w="143" h="166" pX="0.5" pY="0.5" oX="114" oY="83" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_27_ 5" x="2512" y="1191" w="143" h="165" pX="0.5" pY="0.5" oX="114" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_28_ 5" x="1730" y="2516" w="143" h="164" pX="0.5" pY="0.5" oX="114" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_29_ 5" x="2234" y="689" w="142" h="164" pX="0.5" pY="0.5" oX="114" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_30_ 5" x="2512" y="1026" w="143" h="165" pX="0.5" pY="0.5" oX="114" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_31_ 6" x="2133" y="2926" w="143" h="118" pX="0.5" pY="0.5" oX="43" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_32_ 6" x="1990" y="2918" w="143" h="118" pX="0.5" pY="0.5" oX="43" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_33_ 6" x="2760" y="2787" w="143" h="118" pX="0.5" pY="0.5" oX="43" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_34_ 6" x="1146" y="2956" w="142" h="119" pX="0.5" pY="0.5" oX="44" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_35_ 6" x="2133" y="2808" w="143" h="118" pX="0.5" pY="0.5" oX="43" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_36_ 7" x="2518" y="508" w="144" h="165" pX="0.5" pY="0.5" oX="42" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_37_ 7" x="777" y="2516" w="144" h="164" pX="0.5" pY="0.5" oX="42" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_38_ 7" x="2513" y="2422" w="144" h="163" pX="0.5" pY="0.5" oX="42" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_39_ 7" x="2512" y="1356" w="144" h="163" pX="0.5" pY="0.5" oX="42" oY="86" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Idle_40_ 7" x="503" y="2516" w="144" h="164" pX="0.5" pY="0.5" oX="42" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_01_ 0" x="531" y="3076" w="112" h="128" pX="0.5" pY="0.5" oX="86" oY="64" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_02_ 0" x="2963" y="2168" w="108" h="132" pX="0.5" pY="0.5" oX="90" oY="59" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_03_ 0" x="2837" y="2905" w="102" h="133" pX="0.5" pY="0.5" oX="96" oY="58" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_04_ 0" x="2963" y="2300" w="103" h="132" pX="0.5" pY="0.5" oX="97" oY="59" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_05_ 0" x="103" y="3076" w="103" h="128" pX="0.5" pY="0.5" oX="98" oY="64" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_06_ 0" x="2963" y="2432" w="103" h="132" pX="0.5" pY="0.5" oX="97" oY="60" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_07_ 0" x="2963" y="2035" w="102" h="133" pX="0.5" pY="0.5" oX="96" oY="58" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_08_ 0" x="2962" y="2564" w="108" h="132" pX="0.5" pY="0.5" oX="90" oY="59" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_09_ 1" x="1140" y="1486" w="188" h="133" pX="0.5" pY="0.5" oX="105" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_10_ 1" x="384" y="1234" w="192" h="130" pX="0.5" pY="0.5" oX="108" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_11_ 1" x="0" y="1635" w="187" h="130" pX="0.5" pY="0.5" oX="113" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_12_ 1" x="1347" y="273" w="191" h="142" pX="0.5" pY="0.5" oX="108" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_13_ 1" x="1329" y="831" w="190" h="150" pX="0.5" pY="0.5" oX="103" oY="59" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_14_ 1" x="1347" y="0" w="192" h="144" pX="0.5" pY="0.5" oX="107" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_15_ 1" x="187" y="1635" w="187" h="130" pX="0.5" pY="0.5" oX="113" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_16_ 1" x="0" y="1241" w="192" h="130" pX="0.5" pY="0.5" oX="108" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_17_ 2" x="573" y="1498" w="188" h="129" pX="0.5" pY="0.5" oX="7" oY="81" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_18_ 2" x="192" y="1241" w="192" h="127" pX="0.5" pY="0.5" oX="0" oY="82" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_19_ 2" x="950" y="1492" w="187" h="123" pX="0.5" pY="0.5" oX="0" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_20_ 2" x="1347" y="144" w="191" h="129" pX="0.5" pY="0.5" oX="1" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_21_ 2" x="1343" y="415" w="190" h="136" pX="0.5" pY="0.5" oX="7" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_22_ 2" x="966" y="1167" w="192" h="130" pX="0.5" pY="0.5" oX="1" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_23_ 2" x="375" y="1503" w="187" h="123" pX="0.5" pY="0.5" oX="0" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_24_ 2" x="774" y="1154" w="192" h="127" pX="0.5" pY="0.5" oX="0" oY="82" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_25_ 3" x="299" y="625" w="112" h="206" pX="0.5" pY="0.5" oX="102" oY="62" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_26_ 3" x="472" y="134" w="108" h="210" pX="0.5" pY="0.5" oX="102" oY="63" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_27_ 3" x="683" y="0" w="102" h="209" pX="0.5" pY="0.5" oX="102" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_28_ 3" x="392" y="358" w="103" h="210" pX="0.5" pY="0.5" oX="100" oY="63" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_29_ 3" x="196" y="705" w="103" h="206" pX="0.5" pY="0.5" oX="99" oY="62" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_30_ 3" x="580" y="134" w="103" h="210" pX="0.5" pY="0.5" oX="100" oY="62" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_31_ 3" x="683" y="209" w="102" h="209" pX="0.5" pY="0.5" oX="102" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_32_ 3" x="495" y="344" w="108" h="210" pX="0.5" pY="0.5" oX="102" oY="63" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_33_ 4" x="2818" y="2298" w="145" h="135" pX="0.5" pY="0.5" oX="111" oY="60" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_34_ 4" x="2818" y="1632" w="145" h="133" pX="0.5" pY="0.5" oX="113" oY="63" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_35_ 4" x="2276" y="2808" w="143" h="129" pX="0.5" pY="0.5" oX="114" oY="68" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_36_ 4" x="2970" y="228" w="139" h="137" pX="0.5" pY="0.5" oX="115" oY="61" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_37_ 4" x="2968" y="365" w="137" h="139" pX="0.5" pY="0.5" oX="111" oY="60" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_38_ 4" x="2968" y="629" w="138" h="139" pX="0.5" pY="0.5" oX="115" oY="60" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_39_ 4" x="2276" y="2937" w="143" h="129" pX="0.5" pY="0.5" oX="114" oY="68" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_40_ 4" x="2818" y="1499" w="145" h="133" pX="0.5" pY="0.5" oX="113" oY="63" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_41_ 5" x="2376" y="172" w="133" h="171" pX="0.5" pY="0.5" oX="115" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_42_ 5" x="2236" y="0" w="140" h="174" pX="0.5" pY="0.5" oX="115" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_43_ 5" x="1446" y="2117" w="144" h="172" pX="0.5" pY="0.5" oX="114" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_44_ 5" x="2373" y="518" w="145" h="171" pX="0.5" pY="0.5" oX="113" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_45_ 5" x="2516" y="689" w="145" h="167" pX="0.5" pY="0.5" oX="111" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_46_ 5" x="2373" y="347" w="145" h="171" pX="0.5" pY="0.5" oX="113" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_47_ 5" x="2376" y="0" w="144" h="172" pX="0.5" pY="0.5" oX="114" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_48_ 5" x="1281" y="2057" w="140" h="174" pX="0.5" pY="0.5" oX="115" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_49_ 6" x="2963" y="1458" w="133" h="124" pX="0.5" pY="0.5" oX="52" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_50_ 6" x="2697" y="2926" w="140" h="123" pX="0.5" pY="0.5" oX="45" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_51_ 6" x="288" y="2836" w="144" h="119" pX="0.5" pY="0.5" oX="42" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_52_ 6" x="2818" y="2037" w="145" h="130" pX="0.5" pY="0.5" oX="42" oY="66" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_53_ 6" x="1846" y="2790" w="144" h="135" pX="0.5" pY="0.5" oX="44" oY="60" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_54_ 6" x="2818" y="2167" w="145" h="131" pX="0.5" pY="0.5" oX="42" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_55_ 6" x="720" y="2836" w="144" h="119" pX="0.5" pY="0.5" oX="42" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_56_ 6" x="2968" y="768" w="139" h="123" pX="0.5" pY="0.5" oX="46" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_57_ 7" x="2462" y="2088" w="145" h="167" pX="0.5" pY="0.5" oX="44" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_58_ 7" x="2231" y="1079" w="145" h="173" pX="0.5" pY="0.5" oX="42" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_59_ 7" x="2222" y="1514" w="143" h="173" pX="0.5" pY="0.5" oX="43" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_60_ 7" x="1627" y="2068" w="139" h="175" pX="0.5" pY="0.5" oX="46" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_61_ 7" x="2236" y="347" w="137" h="172" pX="0.5" pY="0.5" oX="52" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_62_ 7" x="1766" y="2068" w="138" h="175" pX="0.5" pY="0.5" oX="47" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_63_ 7" x="2233" y="906" w="143" h="173" pX="0.5" pY="0.5" oX="43" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Running_64_ 7" x="2231" y="1252" w="145" h="173" pX="0.5" pY="0.5" oX="42" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_01_ 0" x="1623" y="3067" w="99" h="125" pX="0.5" pY="0.5" oX="103" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_02_ 0" x="643" y="3076" w="99" h="127" pX="0.5" pY="0.5" oX="103" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_03_ 0" x="206" y="3076" w="98" h="128" pX="0.5" pY="0.5" oX="103" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_04_ 1" x="581" y="1026" w="193" h="133" pX="0.5" pY="0.5" oX="102" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_05_ 1" x="200" y="911" w="195" h="138" pX="0.5" pY="0.5" oX="94" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_06_ 1" x="1684" y="621" w="185" h="156" pX="0.5" pY="0.5" oX="97" oY="49" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_07_ 2" x="388" y="1052" w="193" h="129" pX="0.5" pY="0.5" oX="5" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_08_ 2" x="795" y="911" w="196" h="141" pX="0.5" pY="0.5" oX="11" oY="64" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_09_ 2" x="1685" y="455" w="185" h="166" pX="0.5" pY="0.5" oX="18" oY="39" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_10_ 3" x="581" y="1167" w="99" h="192" pX="0.5" pY="0.5" oX="98" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_11_ 3" x="0" y="360" w="99" h="218" pX="0.5" pY="0.5" oX="98" oY="54" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_12_ 3" x="294" y="358" w="98" h="211" pX="0.5" pY="0.5" oX="99" oY="56" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_13_ 4" x="921" y="2679" w="156" h="124" pX="0.5" pY="0.5" oX="100" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_14_ 4" x="1085" y="2490" w="163" h="128" pX="0.5" pY="0.5" oX="90" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_15_ 4" x="2257" y="2523" w="157" h="139" pX="0.5" pY="0.5" oX="92" oY="64" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_16_ 5" x="2513" y="2255" w="161" h="167" pX="0.5" pY="0.5" oX="92" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_17_ 5" x="1517" y="1355" w="167" h="186" pX="0.5" pY="0.5" oX="81" oY="59" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_18_ 5" x="1000" y="0" w="154" h="196" pX="0.5" pY="0.5" oX="88" oY="46" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_19_ 6" x="2656" y="1429" w="161" h="124" pX="0.5" pY="0.5" oX="47" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_20_ 6" x="170" y="2395" w="167" h="128" pX="0.5" pY="0.5" oX="52" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_21_ 6" x="2309" y="2662" w="154" h="146" pX="0.5" pY="0.5" oX="58" oY="57" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_22_ 7" x="2518" y="172" w="156" h="168" pX="0.5" pY="0.5" oX="44" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_23_ 7" x="884" y="401" w="163" h="195" pX="0.5" pY="0.5" oX="47" oY="48" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Use Skill_24_ 7" x="411" y="760" w="157" h="199" pX="0.5" pY="0.5" oX="51" oY="39" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_01_ 0" x="3105" y="365" w="102" h="122" pX="0.5" pY="0.5" oX="94" oY="70" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_02_ 0" x="742" y="3076" w="100" h="126" pX="0.5" pY="0.5" oX="98" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_03_ 0" x="842" y="3076" w="96" h="126" pX="0.5" pY="0.5" oX="102" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_04_ 0" x="2950" y="3081" w="99" h="123" pX="0.5" pY="0.5" oX="104" oY="68" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_05_ 0" x="3103" y="891" w="102" h="119" pX="0.5" pY="0.5" oX="104" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_06_ 0" x="2526" y="3067" w="99" h="124" pX="0.5" pY="0.5" oX="104" oY="67" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_07_ 0" x="1329" y="3073" w="96" h="126" pX="0.5" pY="0.5" oX="102" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_08_ 0" x="1229" y="3075" w="100" h="126" pX="0.5" pY="0.5" oX="98" oY="65" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_09_ 1" x="950" y="1615" w="187" h="124" pX="0.5" pY="0.5" oX="104" oY="81" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_10_ 1" x="762" y="1359" w="189" h="129" pX="0.5" pY="0.5" oX="110" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_11_ 1" x="1696" y="777" w="183" h="132" pX="0.5" pY="0.5" oX="117" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_12_ 1" x="573" y="1364" w="189" h="134" pX="0.5" pY="0.5" oX="106" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_13_ 1" x="948" y="1739" w="181" h="134" pX="0.5" pY="0.5" oX="104" oY="79" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_14_ 1" x="951" y="1359" w="189" h="133" pX="0.5" pY="0.5" oX="107" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_15_ 1" x="1696" y="1227" w="183" h="132" pX="0.5" pY="0.5" oX="117" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_16_ 1" x="762" y="1488" w="188" h="129" pX="0.5" pY="0.5" oX="111" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_17_ 2" x="1137" y="1619" w="187" h="142" pX="0.5" pY="0.5" oX="9" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_18_ 2" x="384" y="1364" w="189" h="139" pX="0.5" pY="0.5" oX="1" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_19_ 2" x="1696" y="1359" w="183" h="135" pX="0.5" pY="0.5" oX="0" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_20_ 2" x="189" y="1371" w="189" h="132" pX="0.5" pY="0.5" oX="5" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_21_ 2" x="1696" y="1676" w="181" h="128" pX="0.5" pY="0.5" oX="15" oY="77" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_22_ 2" x="0" y="1503" w="188" h="132" pX="0.5" pY="0.5" oX="5" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_23_ 2" x="1696" y="909" w="183" h="135" pX="0.5" pY="0.5" oX="0" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_24_ 2" x="1329" y="1358" w="188" h="139" pX="0.5" pY="0.5" oX="1" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_25_ 3" x="897" y="201" w="102" h="200" pX="0.5" pY="0.5" oX="104" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_26_ 3" x="603" y="418" w="101" h="207" pX="0.5" pY="0.5" oX="102" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_27_ 3" x="100" y="705" w="96" h="206" pX="0.5" pY="0.5" oX="102" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_28_ 3" x="785" y="205" w="99" h="204" pX="0.5" pY="0.5" oX="97" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_29_ 3" x="894" y="711" w="102" h="197" pX="0.5" pY="0.5" oX="94" oY="69" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_30_ 3" x="785" y="409" w="99" h="204" pX="0.5" pY="0.5" oX="97" oY="71" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_31_ 3" x="495" y="554" w="96" h="206" pX="0.5" pY="0.5" oX="102" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_32_ 3" x="0" y="705" w="100" h="207" pX="0.5" pY="0.5" oX="102" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_33_ 4" x="1423" y="2455" w="164" h="110" pX="0.5" pY="0.5" oX="103" oY="85" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_34_ 4" x="2657" y="2422" w="161" h="113" pX="0.5" pY="0.5" oX="101" oY="83" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_35_ 4" x="2768" y="2671" w="144" h="116" pX="0.5" pY="0.5" oX="107" oY="81" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_36_ 4" x="2964" y="1110" w="137" h="115" pX="0.5" pY="0.5" oX="113" oY="83" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_37_ 4" x="1288" y="2956" w="141" h="117" pX="0.5" pY="0.5" oX="111" oY="82" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_38_ 4" x="2964" y="1225" w="137" h="114" pX="0.5" pY="0.5" oX="113" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_39_ 4" x="432" y="2836" w="144" h="116" pX="0.5" pY="0.5" oX="107" oY="81" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_40_ 4" x="1411" y="2565" w="159" h="114" pX="0.5" pY="0.5" oX="102" oY="83" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_41_ 5" x="1491" y="1760" w="145" h="180" pX="0.5" pY="0.5" oX="110" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_42_ 5" x="1833" y="1044" w="146" h="178" pX="0.5" pY="0.5" oX="109" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_43_ 5" x="2086" y="2307" w="154" h="169" pX="0.5" pY="0.5" oX="109" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_44_ 5" x="2334" y="1916" w="165" h="172" pX="0.5" pY="0.5" oX="105" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_45_ 5" x="2055" y="1514" w="167" h="175" pX="0.5" pY="0.5" oX="105" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_46_ 5" x="2298" y="2088" w="164" h="172" pX="0.5" pY="0.5" oX="106" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_47_ 5" x="2520" y="0" w="154" h="169" pX="0.5" pY="0.5" oX="109" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_48_ 5" x="0" y="1947" w="146" h="178" pX="0.5" pY="0.5" oX="109" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_49_ 6" x="2818" y="1910" w="145" h="127" pX="0.5" pY="0.5" oX="45" oY="72" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_50_ 6" x="2818" y="1107" w="146" h="123" pX="0.5" pY="0.5" oX="45" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_51_ 6" x="2001" y="2683" w="154" h="119" pX="0.5" pY="0.5" oX="37" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_52_ 6" x="1093" y="2378" w="165" h="112" pX="0.5" pY="0.5" oX="30" oY="84" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_53_ 6" x="1589" y="2364" w="166" h="108" pX="0.5" pY="0.5" oX="29" oY="87" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_54_ 6" x="843" y="2381" w="165" h="113" pX="0.5" pY="0.5" oX="30" oY="83" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_55_ 6" x="2155" y="2683" w="154" h="119" pX="0.5" pY="0.5" oX="37" oY="78" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_56_ 6" x="2818" y="1230" w="146" h="123" pX="0.5" pY="0.5" oX="45" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_57_ 7" x="2055" y="1217" w="165" h="176" pX="0.5" pY="0.5" oX="33" oY="73" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_58_ 7" x="759" y="2119" w="161" h="173" pX="0.5" pY="0.5" oX="38" oY="75" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_59_ 7" x="1981" y="1925" w="144" h="177" pX="0.5" pY="0.5" oX="49" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_60_ 7" x="1696" y="1044" w="137" h="183" pX="0.5" pY="0.5" oX="50" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_61_ 7" x="0" y="1765" w="141" h="182" pX="0.5" pY="0.5" oX="48" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_62_ 7" x="1533" y="600" w="137" h="183" pX="0.5" pY="0.5" oX="50" oY="74" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_63_ 7" x="1979" y="1040" w="144" h="177" pX="0.5" pY="0.5" oX="49" oY="76" oW="300" oH="300"/>
+  <sprite n="EntropicHumanoid1_Walking_64_ 7" x="1114" y="2090" w="159" h="173" pX="0.5" pY="0.5" oX="39" oY="75" oW="300" oH="300"/>
+</TextureAtlas>

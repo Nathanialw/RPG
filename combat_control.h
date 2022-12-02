@@ -207,10 +207,11 @@ namespace Combat_Control {
     }
 
     void Update_Attacks(entt::registry& zone) {
+        AttackSpeed_Updater(zone);
+        Struck_Updater(zone);
         Attack_Cast(zone);
         Attack_Target(zone);
         Reset_Alert(zone);
         Alert_When_Struck(zone);
-        Struck_Updater(zone);
     }
 }

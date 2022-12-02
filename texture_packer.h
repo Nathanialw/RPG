@@ -155,6 +155,37 @@ namespace Texture_Packer {
                 return;
             }
         }
+
+        else if (unitType == "Medieval_Underdeep_Dwarves_Male" || unitType == "medieval_human_female" || unitType == "medieval_human_male") {
+            if (checkAction == "attack1") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "idle1") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "running") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "collapse") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "ko") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "dead") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "kneel") {
+                action = Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "sitting") {
+                action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else {
+                return;
+            }
+        }
+
         else {
             if (checkAction == "1-H Attack 1") {
                 action = Component::Action_State::attack;

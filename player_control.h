@@ -5,10 +5,10 @@
 #include "player_components.h"
 
 namespace Player_Control {
-	void Attack_Order(entt::registry& zone, entt::entity& entity, entt::entity &target_ID,  Component::Position &targetPosition, Component::Radius &targetRadius) {
-        zone.emplace_or_replace<Component::Moving>(entity);
+	void Attack_Order(entt::registry& zone, entt::entity& entity, entt::entity &target_ID, Component::Radius &targetRadius) {
         zone.remove<Component::Mouse_Move>(entity);
-        zone.emplace_or_replace<Player_Component::Attack_Move>(entity, target_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius);
+        zone.emplace_or_replace<Component::Moving>(entity);
+        zone.emplace_or_replace<Player_Component::Attack_Move>(entity, target_ID, targetRadius.fRadius);
 	}
 
     int64_t Player_Move_Poll = 0;
@@ -20,26 +20,27 @@ namespace Player_Control {
 			for (auto entity : view) {
                 //if not in range
                 auto& position = view.get<Component::Position>(entity);
-                auto& target = view.get<Player_Component::Attack_Move>(entity);
+                auto& targetData = view.get<Player_Component::Attack_Move>(entity);
+                auto& targetPosition = zone.get<Component::Position>(targetData.ID);
                 //check if the target is in attack range
                 auto& meleeRange = view.get<Component::Melee_Range>(entity);
-                Component::Position targetPosition = {target.x, target.y};
                 Component::Radius targetRadius;
-                targetRadius.fRadius = target.hitRadius;
+                targetRadius.fRadius = targetData.hitRadius;
                 if (!Entity_Control::Target_In_Melee_Range(zone, position, meleeRange, targetPosition, targetRadius)) {
                     auto &action = view.get<Component::Action>(entity);
                     auto &v = view.get<Component::Velocity>(entity);
-                    auto &moveTo = view.get<Player_Component::Attack_Move>(entity);
                     action.state = Component::walk;
-                    v.magnitude.x = v.speed * (moveTo.x - position.x);
-                    v.magnitude.y = v.speed * (moveTo.y - position.y);
+                    Utilities::Log(targetPosition.x);
+                    Utilities::Log(targetPosition.y);
+                    v.magnitude.x = v.speed * (targetPosition.x - position.x);
+                    v.magnitude.y = v.speed * (targetPosition.y - position.y);
                 }
                 else {
-                    if (Social_Control::Check_Relationship(zone, entity, target.ID)) {
-                        Entity_Control::Melee_Attack(zone, entity, target.ID, targetPosition);
+                    if (Social_Control::Check_Relationship(zone, entity, targetData.ID)) {
+                        Entity_Control::Melee_Attack(zone, entity, targetData.ID, targetPosition);
                     }
                     else {
-                        Social_Control::Interact(zone, entity, target.ID);
+                        Social_Control::Interact(zone, entity, targetData.ID);
                     }
                     zone.remove<Player_Component::Attack_Move>(entity);
                     zone.remove<Component::Moving>(entity);
@@ -52,35 +53,40 @@ namespace Player_Control {
 		auto view = zone.view<Component::Position, Player_Component::Attack_Move, Component::Moving, Component::Melee_Range>();
 		for (auto entity : view) {
 			auto& position = view.get<Component::Position>(entity);
-			auto& target = view.get<Player_Component::Attack_Move>(entity);
+			auto& targetData = view.get<Player_Component::Attack_Move>(entity);
+            auto& targetPosition = zone.get<Component::Position>(targetData.ID);
             //check if the target is in attack range
             auto& meleeRange = view.get<Component::Melee_Range>(entity);
-            Component::Position targetPosition = {target.x, target.y};
             Component::Radius targetRadius;
-            targetRadius.fRadius = target.hitRadius;
+            targetRadius.fRadius = targetData.hitRadius;
 			if (Entity_Control::Target_In_Melee_Range(zone, position, meleeRange, targetPosition, targetRadius)) {
                 //attack target
-                Component::Position targetPosition = { target.x, target.y };
-                if (Social_Control::Check_Relationship(zone, entity, target.ID)) {
-                    Entity_Control::Melee_Attack(zone, entity, target.ID, targetPosition);
+                if (Social_Control::Check_Relationship(zone, entity, targetData.ID)) {
+                    Entity_Control::Melee_Attack(zone, entity, targetData.ID, targetPosition);
                 }
                 else {
-                    Social_Control::Interact(zone, entity, target.ID);
+                    Social_Control::Interact(zone, entity, targetData.ID);
                 }
                 zone.remove<Player_Component::Attack_Move>(entity);
                 zone.remove<Component::Moving>(entity);
 			}
-            else {
-                //Update target position to move to
-                auto &targetPosition = zone.get<Component::Position>(target.ID);
-                target.x = targetPosition.x;
-                target.y = targetPosition.y;
-            }
 		}
 	}
 
+    void Remove_Attack(entt::registry& zone) {
+        auto view = zone.view<Player_Component::Attack_Move, Component::Action>();
+        for (auto entity : view) {
+            auto &action = view.get<Component::Action>(entity);
+            if (action.state != Component::walk) {
+                zone.remove<Player_Component::Attack_Move>(entity);
+                zone.remove<Component::Moving>(entity);
+            }
+        }
+    }
+
 	void Move_To_Atack_Routine(entt::registry & zone) {
 		Mouse_Move_To_Attack(zone);
-		Mouse_Move_Arrived_Attack_Target(zone);
+//		Mouse_Move_Arrived_Attack_Target(zone);
+        Remove_Attack(zone);
 	}
 }

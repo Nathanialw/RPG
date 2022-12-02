@@ -88,25 +88,25 @@ namespace Texture_Packer_Item {
     bool Get_Frame_Action_Data (std::string unitType, bool &check, std::string key, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
         std::string keyCheck = key;
         std::string frameCopy = frame;
-            /// presupposes that the top of the list is "itemName_00_1-H Attack 1_01_ 0" with 19 ending chars
+        /// presupposes that the top of the list is "itemName_00_1-H Attack 1_01_ 0" with 19 ending chars
 
         if (frameCopy.substr(0, keyCheck.size()) != keyCheck) {
             return false;
         }
 
         frameCopy = frame;
-            /// remove the prepended keyCheck string from frameCopy
+        /// remove the prepended keyCheck string from frameCopy
         auto index = frameCopy.find(keyCheck); // Find the starting position of substring in the string
-        if  (index != std::string::npos) {
+        if (index != std::string::npos) {
             frameCopy.erase(index, keyCheck.length() + 1); // erase function takes two parameter, the starting index in the string from where you want to erase characters and total no of characters you want to erase.
         }
-            ///remove the last 6 chars
-        std::string checkAction = frameCopy.erase(frameCopy.length()-6);
+        ///remove the last 6 chars
+        std::string checkAction = frameCopy.erase(frameCopy.length() - 6);
 //        checkAction = key + checkAction;
 
 //        std::cout << checkAction << std::endl;
         Component::Action_State action;
-            /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
+        /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
         if (unitType == "RTP_female" || unitType == "RTP_male") {
             if (checkAction == "1-H Attack 3") {
                 action = Component::Action_State::attack;
@@ -136,11 +136,11 @@ namespace Texture_Packer_Item {
             } else if (checkAction == "Talking 2") {
                 action = Component::Action_State::talk;
                 actionFrameData[action].frameSpeed = i;
-            }
-            else {
+            } else {
                 return false;
             }
         }
+
         else if (unitType == "classes_male" || unitType == "classes_female") {
             if (checkAction == "Attack Two Hand Swing") {
                 action = Component::Action_State::attack;
@@ -170,11 +170,41 @@ namespace Texture_Packer_Item {
             } else if (checkAction == "Hand Casual") {
                 action = Component::Action_State::talk;
                 actionFrameData[action].frameSpeed = i;
-            }
-            else {
+            } else {
                 return false;
             }
         }
+
+        else if (unitType == "Medieval_Underdeep_Dwarves_Male" || unitType == "medieval_human_female" || unitType == "medieval_human_male") {
+            if (checkAction == "attack1") {
+                action = Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "idle1") {
+                action = Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "running") {
+                action = Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "collapse") {
+                action = Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "ko") {
+                action = Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "dead") {
+                action = Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "kneel") {
+                action = Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "sitting") {
+                action = Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else {
+                return false;
+            }
+        }
+
         else {
             if (checkAction == "1-H Attack 1") {
                 action = Component::Action_State::attack;
@@ -271,7 +301,7 @@ namespace Texture_Packer_Item {
             Utilities::Log("TexturePacker_Import_Item() failed, empty xml_path");
             return {NULL, ""};
         }
-
+        Utilities::Log(dbData.xml_path);
         spriteSheetData.LoadFile(path);
 
         tinyxml2::XMLElement* pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");

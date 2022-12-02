@@ -129,12 +129,10 @@ namespace Event_Handler {
 				}
                 if (Mouse::itemCurrentlyHeld == false) {
                     User_Mouse_Input::Update_Move_Command_Box();
-                    if (zone.empty<Component::Selected>()) {
-                        Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition, meleeRange);
-                        //Mouse::bRight_Mouse_Pressed_Attacking = true; //held down for constant attacking
+                    if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition, meleeRange)) {
+                        Mouse::bRight_Mouse_Pressed = false; //otherwise mouse move will override attack move
                     }
                     else {
-//                        Mouse::bRight_Mouse_Pressed = true; //held down for constant moving
                     }
                 }
                 else {
