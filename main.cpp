@@ -40,6 +40,7 @@ int main(int argc, char* argv[]) {
 
 
 		Event_Handler::Update_User_Input(World::zone);
+        Character_Stats::Update_Items(World::zone);
 
         UI::Move_To_Item_Routine(World::zone, Mouse::itemCurrentlyHeld);
         Death_Control::Dead_Entity_Routine (World::zone);

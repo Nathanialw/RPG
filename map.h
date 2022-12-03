@@ -217,13 +217,20 @@ namespace Maps {
             Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius * data.scale, data.mass * data.scale, yes);
             zone.emplace<Collision_Component::Dynamic_Collider>(entity);
 
+            //do not attach to non combat
+            if (data.temp_type_name != "non-combat") {
+                zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);
+                zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0);
+            }
+            else {
+                Utilities::Log("non-combaT");
+            }
+
+            zone.emplace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
             zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
             zone.emplace<Component::Action>(entity, Component::idle);
-            zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);
-            zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0);
             zone.emplace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
             auto &health = zone.emplace<Component::Health>(entity, data.health * data.scale);
-            zone.emplace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
             zone.emplace<Component::Soldier>(entity);
             zone.emplace<Component::Commandable>(entity);
             zone.emplace<Component::Spellbook>(entity);

@@ -483,8 +483,9 @@ namespace Component {
 	};
 
 	struct Melee_Damage {
-		int minDamage;
-		int maxDamage;
+		int minDamage = 0;
+		int maxDamage = 0;
+        bool critical = false;
 	};
 
 	struct Melee_Range {
@@ -501,7 +502,8 @@ namespace Component {
 	};
 
 	struct Struck {
-		int struck;
+		int struck = 0;
+        bool critical = false;
 	};
 
 	//AI

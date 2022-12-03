@@ -29,61 +29,114 @@ namespace Character_Stats {
 	}
 
 	//run when equipping or unequipping an item
-	void Update_Unit_Stats(entt::registry& zone) { //run funtion on item equip or unequip
-		auto view = zone.view<Component::Sprite_Sheet_Info, Item_Component::Item_Equip, Component::Melee_Damage, Component::Health, Component::Attack_Speed, Item_Component::Equipment>();
+	void Update_Equip_slots(entt::registry& zone) { //run funtion on item equip or unequip
+		auto view = zone.view<Component::Sprite_Sheet_Info, Item_Component::Item_Equip, Item_Component::Equipment>();
 		for (auto entity : view) {
-			auto& damage = view.get<Component::Melee_Damage>(entity);
-			auto& health = view.get<Component::Health>(entity);
-			auto& attackSpeed = view.get<Component::Attack_Speed>(entity);
 			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
 			auto& equipment = view.get<Item_Component::Equipment>(entity);
 
-			//set character stats to base values
-			for (auto &stat : Items::statData) {
-				stat.second = Items::baseStatData[stat.first];
-			}
-
-			//add equipment stats to character stats
-
-            //iterate through each equiq slot
+            //iterate through each equip slot
 			for (auto &item : equipment.equippedItems) {
-
-                //check if slot is occupied, add stats if it is
                 if (item.second != Item_Component::emptyEquipSlot) {
-                    auto &stats = zone.get<Item_Stats>(item.second).stats;
-                    for (auto &stat: stats) {
-                        Items::statData[stat.first] += stat.second;
-                    }
 
                     //get the item at the item type index
                     auto &weaponSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
                     if (weaponSheet.sheetData) {
-                        sheetData.equipmentSheets[(int)item.first].ItemSheetData = weaponSheet.sheetData;
-                        sheetData.equipmentSheets[(int)item.first].name = weaponSheet.sheet_name;
-                        sheetData.equipmentSheets[(int)item.first].itemID = item.second;
+                        sheetData.equipmentSheets[(int) item.first].ItemSheetData = weaponSheet.sheetData;
+                        sheetData.equipmentSheets[(int) item.first].name = weaponSheet.sheet_name;
+                        sheetData.equipmentSheets[(int) item.first].itemID = item.second;
                     }
                 }
+
                 else if (item.second == Item_Component::emptyEquipSlot) {
                     sheetData.equipmentSheets[(int)item.first].ItemSheetData = NULL;
                     sheetData.equipmentSheets[(int)item.first].name = "empty";
                     sheetData.equipmentSheets[(int)item.first].itemID = emptyEquipSlot;
                 }
             }
-
-			//update components from updated character stat data
-			for (auto& stat : Items::statData) {
-				switch (stat.first) {
-					case Item_Component::Stat::damage: damage.minDamage = stat.second; damage.maxDamage = stat.second; break;
-					case Item_Component::Stat::health: health.maxHealth = stat.second; break;
-					case Item_Component::Stat::attackSpeed: attackSpeed.period = stat.second; break;
-				}
-			}
-
-			zone.remove<Item_Component::Item_Equip>(entity);
 		}
 	}
 
-	SDL_FRect Get_And_Scale_StatBox(entt::registry& zone, Component::Camera& camera) {
+    void Update_Unit_Offense(entt::registry &zone) {
+        auto view = zone.view<Item_Component::Item_Equip, Component::Melee_Damage, Component::Attack_Speed, Item_Component::Equipment>();
+        for (auto entity : view) {
+            auto& damage = view.get<Component::Melee_Damage>(entity);
+            auto& attackSpeed = view.get<Component::Attack_Speed>(entity);
+            auto& equipment = view.get<Item_Component::Equipment>(entity);
+
+            //set character stats to base values
+            for (auto &stat : Items::statData) {
+                if (stat.first == Item_Component::Stat::damage) {
+                    stat.second = Items::baseStatData[stat.first];
+                }
+                if (stat.first == Item_Component::Stat::attackSpeed) {
+                    stat.second = Items::baseStatData[stat.first];
+                }
+                if (stat.first == Item_Component::Stat::spellDamage) {
+                    stat.second = Items::baseStatData[stat.first];
+                }
+            }
+
+            //check if slot is occupied, add stats if it is
+            for (auto &item : equipment.equippedItems) {
+                if (item.second != Item_Component::emptyEquipSlot) {
+                    auto &stats = zone.get<Item_Stats>(item.second).stats;
+                    for (auto &stat: stats) {
+                        Items::statData[stat.first] += stat.second;
+                    }
+                }
+            }
+
+            //update components from updated character stat data
+            for (auto& stat : Items::statData) {
+                switch (stat.first) {
+                    case Item_Component::Stat::damage: damage.minDamage = stat.second; damage.maxDamage = stat.second; break;
+                    case Item_Component::Stat::attackSpeed: attackSpeed.period = stat.second; break;
+                }
+            }
+        }
+    }
+
+    void Update_Unit_Defense(entt::registry& zone) {
+        auto view = zone.view<Item_Component::Item_Equip, Component::Health, Item_Component::Equipment>();
+        for (auto entity : view) {
+            auto& health = view.get<Component::Health>(entity);
+            auto& equipment = view.get<Item_Component::Equipment>(entity);
+
+            //set character stats to base values
+            for (auto &stat : Items::statData) {
+                if (stat.first == Item_Component::Stat::health) {
+                    stat.second = Items::baseStatData[stat.first];
+                }
+                if (stat.first == Item_Component::Stat::armor) {
+                    stat.second = Items::baseStatData[stat.first];
+                }
+                if (stat.first == Item_Component::Stat::piety) {
+                    stat.second = Items::baseStatData[stat.first];
+                }
+            }
+
+            //check if slot is occupied, add stats if it is
+            for (auto &item : equipment.equippedItems) {
+                if (item.second != Item_Component::emptyEquipSlot) {
+                    auto &stats = zone.get<Item_Stats>(item.second).stats;
+                    for (auto &stat: stats) {
+                        Items::statData[stat.first] += stat.second;
+                    }
+                }
+            }
+
+            //update components from updated character stat data
+            for (auto& stat : Items::statData) {
+                switch (stat.first) {
+                    case Item_Component::Stat::health: health.maxHealth = stat.second; break;
+                }
+            }
+            zone.remove<Item_Component::Item_Equip>(entity);
+        }
+    }
+
+    SDL_FRect Get_And_Scale_StatBox(entt::registry& zone, Component::Camera& camera) {
 		SDL_FRect statsBox = { UI::defaultScreenPosition.x + statsSheetOffsetRect.x, UI::defaultScreenPosition.y + statsSheetOffsetRect.y, statsSheetOffsetRect.w, statsSheetOffsetRect.h };
 		return Camera_Control::Convert_FRect_To_Scale(zone, statsBox, camera);
 	}
@@ -183,6 +236,13 @@ namespace Character_Stats {
 
             zone.emplace<Item_Component::Item_Equip>(unit);
         }
+    }
+
+    void Update_Items(entt::registry &zone) {
+        Update_Equip_slots(zone);
+        Update_Unit_Offense(zone);
+        //defensive has to come after offensive as it removes the Item_Equip component
+        Update_Unit_Defense(zone);
     }
 
 	void Init_UI(entt::registry& zone) {

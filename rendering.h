@@ -127,7 +127,7 @@ namespace Rendering {
 
     void Frame_Increment(entt::entity &entity, Component::Scale &scale, Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
 
-//        sheetData.frameTime += Timer::timeStep;
+        sheetData.frameTime += Timer::timeStep;
         if (sheetData.finalFrame == Component::finalFrame) {
             sheetData.finalFrame = Component::firstFrame;
         }
@@ -218,7 +218,7 @@ namespace Rendering {
 
     void Update_Frame(entt::entity entity, Component::Scale scale, Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
 
-//        sheetData.frameTime += Timer::timeStep;
+        sheetData.frameTime += Timer::timeStep;
         if (sheetData.finalFrame == Component::finalFrame) {
             sheetData.finalFrame = Component::firstFrame;
         }
@@ -432,17 +432,17 @@ namespace Rendering {
 
 	void Render_Map(entt::registry &zone, tmx::Map& map, Component::Camera& camera) {
         //render at 30 fps
-        currentFrame += Timer::timeStep;
-
-        auto view = zone.view<Component::Renderable, Component::Sprite_Sheet_Info>();
-
-        for (auto entity : view) {
-            auto [renderable, sheetData] = view.get(entity);
-                sheetData.frameTime += Timer::timeStep;
-        }
-
-        while (currentFrame > frameRate) {
-            currentFrame -= frameRate;
+//        currentFrame += Timer::timeStep;
+//
+//        auto view = zone.view<Component::Renderable, Component::Sprite_Sheet_Info>();
+//
+//        for (auto entity : view) {
+//            auto [renderable, sheetData] = view.get(entity);
+//                sheetData.frameTime += Timer::timeStep;
+//        }
+//
+//        while (currentFrame > frameRate) {
+//            currentFrame -= frameRate;
 //            Utilities::Log("frame");
 //            Utilities::Log(currentFrame);
                 SDL_RenderClear(Graphics::renderer);
@@ -521,7 +521,7 @@ namespace Rendering {
                 }
 //		int ks = h + g;
 //            }
-        }
+//        }
 	}
 
 	void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {
@@ -618,8 +618,8 @@ namespace Rendering {
 	void Rendering(entt::registry& zone) {
 		Update_Camera_And_Mouse(zone);
 		SDL_FPoint mouse = { Mouse::iXMouse, Mouse::iYMouse };
-		Character_Stats::Update_Unit_Stats(zone);
-		auto camera_view = zone.view<Component::Camera>();
+
+        auto camera_view = zone.view<Component::Camera>();
 		for (auto entity : camera_view) {
 			auto& camera = camera_view.get<Component::Camera>(entity);
 //			SDL_RenderClear(Graphics::renderer);

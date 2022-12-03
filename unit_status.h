@@ -43,11 +43,12 @@ namespace Unit_Status {
 	void Update_Health(entt::registry& zone) {
 		auto view2 = zone.view<Component::Health, Component::Struck>();
 		for (auto entity : view2) {
-			auto& damage = view2.get<Component::Struck>(entity).struck;
+			auto& struck = view2.get<Component::Struck>(entity);
 			auto& health = view2.get<Component::Health>(entity).currentHealth;
 			//std::cout << "health = " << health << std::endl;
-			health -= damage;
-			damage -= damage;
+			health -= struck.struck;
+            struck.struck -= struck.struck;
+
 			//if the soldier is in the assignment vector it will be set as dying if it dies
 			if (health <= 0) {
 				if (zone.any_of<Component::Assigned_To_Formation>(entity)) {

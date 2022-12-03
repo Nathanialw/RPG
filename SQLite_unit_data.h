@@ -22,6 +22,7 @@ namespace Entity_Loader {
         float interact_h = 10.0f;
         float x_offset = 0.0f;
         float y_offset = 0.0f;
+        std::string temp_type_name = "NPC";
         std::string equip_type = "none";
         std::string entity_class = "monster";
         std::string sheet = "none";
@@ -47,7 +48,7 @@ namespace Entity_Loader {
 		Data values;
 		sqlite3_stmt* stmt;
 		char buf[400];
-		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, equip_type, race FROM unit_data WHERE name = ";
+		const char* jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, equip_type, race, temp_type_name FROM unit_data WHERE name = ";
 		strcpy(buf, jj);
 		strcat(buf, unit_name.c_str());
 		sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -73,6 +74,9 @@ namespace Entity_Loader {
             auto race = sqlite3_column_text(stmt, 16);
             const char * g = (const char *)race;
             values.race = std::string(reinterpret_cast< const char *> (g));
+            auto temp_type_name = sqlite3_column_text(stmt, 17);
+            const char * h = (const char *)temp_type_name;
+            values.temp_type_name = std::string(reinterpret_cast< const char *> (h));
             //std::cout << "data: " << name << std::endl;
 		}
 		return values;

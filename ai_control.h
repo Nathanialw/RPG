@@ -52,14 +52,25 @@ namespace AI {
                         auto &targetPosition = zone.get<Component::Position>(target);
                         auto &targetRadius = zone.get<Component::Radius>(target);
                         SDL_FPoint targetPoint = {targetPosition.x, targetPosition.y};
+
                         if (Utilities::bFPoint_FRectIntersect(targetPoint, sightBox)) {
                             zone.emplace_or_replace<Component::In_Combat>(unit_ID);
                             zone.emplace_or_replace<Component::In_Combat>(target);
-                            Attack_Move(zone, unit_ID, target, unitPosition, meleeRange, targetPosition, targetRadius);
+                            if (zone.any_of<Component::Melee_Damage>(unit_ID)) {
+                                //attack if the unit has an attack
+                                Attack_Move(zone, unit_ID, target, unitPosition, meleeRange, targetPosition, targetRadius);
+                            }
+                            else {
+                                Utilities::Log("I cannot attack! | Check_For_Targets()");
+                                //run away if unit does not have an attack
+                            }
                         } else {
                             zone.remove<Component::In_Combat>(unit_ID);
                         }
                         break;
+                    }
+                    else {
+
                     }
                 }
             }
@@ -70,7 +81,9 @@ namespace AI {
 		auto units = zone.view<Component::In_Combat, Component::Attack_Speed>();
 		for (auto unit_ID : units) {
 			auto& attackSpeed = units.get<Component::Attack_Speed>(unit_ID);
-			attackSpeed.counter -= (int)Timer::timeStep;
+            if (attackSpeed.counter > 0) {
+                attackSpeed.counter -= (int) Timer::timeStep;
+            }
 		}
 	}
 

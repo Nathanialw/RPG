@@ -63,12 +63,18 @@ namespace Combat_Control {
                         if (zone.any_of<Component::Input>(entity)) {
                             Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage);
                         }
-                        auto &struck = zone.get_or_emplace<Component::Struck>(target_ID).struck;
-                        auto &targetAction = zone.get_or_emplace<Component::Action>(target_ID);
-                        auto &targetSheetData = zone.get_or_emplace<Component::Sprite_Sheet_Info>(target_ID);
-                        targetSheetData.currentFrame = 0;
-                        targetAction.state = Component::struck;
-                        struck += damage;
+
+                        auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
+
+                        if (meleeDamage.critical) {
+                            struck.critical = true;
+                            auto &targetAction = zone.get_or_emplace<Component::Action>(target_ID);
+                            auto &targetSheetData = zone.get_or_emplace<Component::Sprite_Sheet_Info>(target_ID);
+                            targetAction.state = Component::struck;
+                            targetSheetData.currentFrame = 0;
+                        }
+
+                        struck.struck += damage;
                         //create_attack(position, direction);
                         zone.remove<Component::Attacking>(entity);
                         //act.frameCount[act.state].currentFrame = 0;
@@ -83,16 +89,22 @@ namespace Combat_Control {
                             /// calculate damage and show for player
                         Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage};
                         int damage = Calculate_Damage(damageRange);
+
                         if (zone.any_of<Component::Input>(entity)) {
                             Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage);
                         }
 
-                        auto &struck = zone.get_or_emplace<Component::Struck>(target_ID).struck;
-                        auto &targetAction = zone.get_or_emplace<Component::Action>(target_ID);
-                        auto &targetSheetData = zone.get_or_emplace<Component::Sprite_Sheet_Info>(target_ID);
-                        targetSheetData.currentFrame = 0;
-                        targetAction.state = Component::struck;
-                        struck += damage;
+                        auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
+
+                        if (meleeDamage.critical) {
+                            struck.critical = true;
+                            auto &targetAction = zone.get_or_emplace<Component::Action>(target_ID);
+                            auto &targetSheetData = zone.get_or_emplace<Component::Sprite_Sheet_Info>(target_ID);
+                            targetSheetData.currentFrame = 0;
+                            targetAction.state = Component::struck;
+                        }
+                        Utilities::Log(damage);
+                        struck.struck += damage;
                         //create_attack(position, direction);
                         zone.remove<Component::Attacking>(entity);
                         //act.frameCount[act.state].currentFrame = 0;

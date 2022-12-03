@@ -30,8 +30,7 @@ namespace Player_Control {
                     auto &action = view.get<Component::Action>(entity);
                     auto &v = view.get<Component::Velocity>(entity);
                     action.state = Component::walk;
-                    Utilities::Log(targetPosition.x);
-                    Utilities::Log(targetPosition.y);
+                    
                     v.magnitude.x = v.speed * (targetPosition.x - position.x);
                     v.magnitude.y = v.speed * (targetPosition.y - position.y);
                 }
