@@ -59,10 +59,20 @@ namespace AI {
                             if (zone.any_of<Component::Melee_Damage>(unit_ID)) {
                                 //attack if the unit has an attack
                                 Attack_Move(zone, unit_ID, target, unitPosition, meleeRange, targetPosition, targetRadius);
+
+                                //attack text
+                                std::string attack = "attack";
+                                Social_Control::Interact(zone, unit_ID, attack);
                             }
+
+                            //run away if unit does not have an attack
                             else {
-                                Utilities::Log("I cannot attack! | Check_For_Targets()");
-                                //run away if unit does not have an attack
+                                //shriek in terror
+                                std::string flee = "flee";
+                                Social_Control::Interact(zone, unit_ID, flee);
+
+                                //move in the opposite direction for a distance
+
                             }
                         } else {
                             zone.remove<Component::In_Combat>(unit_ID);

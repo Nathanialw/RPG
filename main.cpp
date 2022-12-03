@@ -32,8 +32,9 @@ int main(int argc, char* argv[]) {
 	Character_Stats::Init_UI(World::zone);
 	Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
     UI_Spellbook::init();
+    SQLite_Dialogue::Init_Dialogue();
 
-	while (Graphics::running == true) {
+    while (Graphics::running == true) {
 
 		//Squad_Control::Create_And_Fill_New_Squad(World::zone);
 		//Test_Units::Create_Formation(World::zone);

@@ -632,6 +632,7 @@ namespace Rendering {
             //
 			Items::Show_Ground_Items(zone, camera);
             Items::Unit_Name_On_Mouseover(zone, camera);
+            Social_Control::Show_Dialogue(zone, camera);
             Items::Name_On_Mouseover(zone, camera);
 			UI::Render_UI(zone, Graphics::renderer, camera);
 			Character_Stats::Render_Character_Stats(zone, camera);

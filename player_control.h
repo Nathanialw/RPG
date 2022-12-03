@@ -39,7 +39,7 @@ namespace Player_Control {
                         Entity_Control::Melee_Attack(zone, entity, targetData.ID, targetPosition);
                     }
                     else {
-                        Social_Control::Interact(zone, entity, targetData.ID);
+                        Social_Control::Greet(zone, entity, targetData.ID);
                     }
                     zone.remove<Player_Component::Attack_Move>(entity);
                     zone.remove<Component::Moving>(entity);
@@ -64,7 +64,7 @@ namespace Player_Control {
                     Entity_Control::Melee_Attack(zone, entity, targetData.ID, targetPosition);
                 }
                 else {
-                    Social_Control::Interact(zone, entity, targetData.ID);
+                    Social_Control::Greet(zone, entity, targetData.ID);
                 }
                 zone.remove<Player_Component::Attack_Move>(entity);
                 zone.remove<Component::Moving>(entity);

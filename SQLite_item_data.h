@@ -3,7 +3,6 @@
 #include <SDL2/SDL.h>
 #include "db.h"
 #include <string.h>
-#include "stdio.h"
 #include "vector"
 #include "item_components.h"
 
