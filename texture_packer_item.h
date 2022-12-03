@@ -287,7 +287,7 @@ namespace Texture_Packer_Item {
         std::string index;
     };
 
-        /// ie "Sword"
+    /// ie "Sword"
     Item_Data_And_Index TexturePacker_Import_Item(std::string &itemType, std::string &equip_type) {
 
             ///get path from db
@@ -312,6 +312,7 @@ namespace Texture_Packer_Item {
         const char* tex = dbData.texture_path.c_str();
         Get_Item_Texture(dbData.item_name, tex);
         spritesheet.texture = Item_Textures[dbData.item_name];
+        spritesheet.color = Graphics::Set_Random_Color();
 
         int frameIndex = 0;
         bool check = true;

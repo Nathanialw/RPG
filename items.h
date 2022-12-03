@@ -101,7 +101,17 @@ namespace Items {
         sheetData.equipmentSheets[(int)itemType].name = itemName;
     }
 
-	std::string Create_Weapon(entt::entity& item, Rarity &rarity, std::string &equip_type) {
+
+    Component::Color Set_Color() {
+        Component::Color color;
+        color.r = rand() % 254 + 1;
+        color.g = rand() % 254 + 1;
+        color.b = rand() % 254 + 1;
+        return color;
+    }
+
+
+    std::string Create_Weapon(entt::entity& item, Rarity &rarity, std::string &equip_type) {
 		auto material = Generate_Weapon_Material();
 		auto weaponType = Generate_Weapon_Type();
 
@@ -119,6 +129,7 @@ namespace Items {
             ///provide lookup string when the player picks it up
 
        auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type);
+
 
         if (equippedSheetData.itemData == NULL) {
             return "none";

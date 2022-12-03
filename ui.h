@@ -416,7 +416,7 @@ namespace UI {
             {
                 //render UI
                 Character_UI = Camera_Control::Convert_FRect_To_Scale(zone, defaultScreenPosition, camera);
-                Graphics::Render_FRect(Graphics::itsmars_Inventory, &charui, &Character_UI);
+                Graphics::Render_FRect(Graphics::itsmars_Inventory, {255,255,255}, &charui, &Character_UI);
                 //reder equipment slots
                 Equipment_UI::Update_Equipment_Position(zone, camera);
                 Equipment_UI::Render_Equipment_Slot(zone, renderer, camera, player_ID);

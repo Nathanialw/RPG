@@ -180,6 +180,7 @@ namespace SQLite_Spritesheets {
 
     std::unordered_map<std::string, Component::Sheet_Data_Flare>* Populate_Flare_SpriteSheet(std::string &name, Sheet_Data_Flare &data, SDL_Texture* texture) {
         if (Flare_Spritesheets[name].texture == NULL) {
+//            Flare_Spritesheets[name].color = Graphics::Set_Random_Color();
             Flare_Spritesheets[name].texture = texture;
             Flare_Spritesheets[name].sheetWidth = data.sheet_width;
             Flare_Spritesheets[name].spriteWidth = data.w;

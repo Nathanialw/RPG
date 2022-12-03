@@ -126,11 +126,15 @@ namespace Rendering {
     }
 
     void Frame_Increment(entt::entity &entity, Component::Scale &scale, Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
-        sheetData.frameTime += Timer::timeStep;
+
+//        sheetData.frameTime += Timer::timeStep;
         if (sheetData.finalFrame == Component::finalFrame) {
             sheetData.finalFrame = Component::firstFrame;
         }
         if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
+            sheetData.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
+//            sheetData.frameTime = 0;
+
             if (sheetData.finalFrame == Component::firstFrame) {
                 if (action.state == Component::dying || action.state == Component::dead) {
 
@@ -145,7 +149,6 @@ namespace Rendering {
             }
 
                 ///reset frame count if over
-            sheetData.frameTime = 0;
             int &currentFrame = sheetData.currentFrame;
             sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + currentFrame;
 
@@ -215,13 +218,14 @@ namespace Rendering {
 
     void Update_Frame(entt::entity entity, Component::Scale scale, Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
 
-        sheetData.frameTime += Timer::timeStep;
+//        sheetData.frameTime += Timer::timeStep;
         if (sheetData.finalFrame == Component::finalFrame) {
             sheetData.finalFrame = Component::firstFrame;
         }
 
         if (sheetData.frameTime >= sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
-            sheetData.frameTime = 0;
+            sheetData.frameTime -= sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
+//            sheetData.frameTime = 0;
 
             if (action.state != Component::isStatic) {
                 /// reset at the start so it had a chance loop through the logic once to trigger end of state actions
@@ -291,6 +295,7 @@ namespace Rendering {
             SDL_Rect clipRect;
             SDL_FRect renderRect;
             SDL_Texture* texture;
+            Component::Color color;
 
             if (sheetData.flareSpritesheet) {
                     /// get the next frame
@@ -308,8 +313,9 @@ namespace Rendering {
                 }
 
                 texture = sheetData.flareSpritesheet->at(sheetData.sheet_name).texture;
+                color = sheetData.flareSpritesheet->at(sheetData.sheet_name).color;
                 SDL_SetTextureAlphaMod(texture, renderable.alpha);
-                Graphics::Render_FRect(texture, &clipRect, &renderRect);
+                Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
             }
 
             else if (sheetData.sheetData) {
@@ -323,8 +329,9 @@ namespace Rendering {
                     renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
                 }
                 texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
+                color = sheetData.sheetData->at(sheetData.sheet_name).color;
                 SDL_SetTextureAlphaMod(texture, renderable.alpha);
-                Graphics::Render_FRect(texture, &clipRect, &renderRect);
+                Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
 
                 for (auto item : sheetData.equipmentSheets) {
                     if (item.ItemSheetData) {
@@ -337,8 +344,9 @@ namespace Rendering {
                             renderRect = Position_For_Render(item.ItemSheetData, item.name, item.FrameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, itemInteractionRect);
                         }
                         texture = item.ItemSheetData->at(item.name).texture;
+                        color = item.ItemSheetData->at(item.name).color;
                         SDL_SetTextureAlphaMod(texture, renderable.alpha);
-                        Graphics::Render_FRect(texture, &clipRect, &renderRect);
+                        Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
                     }
                 }
 //                std::cout << "currentFrame: " << sheetData.frameIndex<< ", start frame frame: " << sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(action.state).startFrame << ", num frames: " << sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(action.state).NumFrames << std::endl;
@@ -419,15 +427,22 @@ namespace Rendering {
 		return tileSpriteRect;
 	}
 
-    const float frameRate = 16;
-    float currentFrame = 0;
+    const int64_t frameRate = 3;
+    int64_t currentFrame = 0;
 
 	void Render_Map(entt::registry &zone, tmx::Map& map, Component::Camera& camera) {
-            //render at 30 fps
-//        currentFrame += (float)Timer::timeStep;
-//        else {
-//            while (currentFrame > frameRate) {
-//                currentFrame -= frameRate;
+        //render at 30 fps
+        currentFrame += Timer::timeStep;
+
+        auto view = zone.view<Component::Renderable, Component::Sprite_Sheet_Info>();
+
+        for (auto entity : view) {
+            auto [renderable, sheetData] = view.get(entity);
+                sheetData.frameTime += Timer::timeStep;
+        }
+
+        while (currentFrame > frameRate) {
+            currentFrame -= frameRate;
 //            Utilities::Log("frame");
 //            Utilities::Log(currentFrame);
                 SDL_RenderClear(Graphics::renderer);
@@ -489,7 +504,7 @@ namespace Rendering {
                                             int tileCount = tileset->getColumnCount();
                                             SDL_Rect data = getTexture(id, tileCount, tileSpriteRect);
                                             if (Graphics::pTexture[name] != NULL) {
-                                                Graphics::Render_FRect(Graphics::pTexture[name], &data, &renderPosition);
+                                                Graphics::Render_FRect(Graphics::pTexture[name], {255, 255, 255}, &data, &renderPosition);
                                             }
                                             //h++;
                                             break;
@@ -506,7 +521,7 @@ namespace Rendering {
                 }
 //		int ks = h + g;
 //            }
-//        }
+        }
 	}
 
 	void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {

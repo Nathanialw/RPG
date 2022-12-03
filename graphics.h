@@ -8,6 +8,10 @@
 #include "camera.h"
 #include "SDL_FontCache.h"
 
+namespace Graphics_Component {
+
+}
+
 namespace Graphics {
 
     namespace {
@@ -85,12 +89,20 @@ namespace Graphics {
     }
 
     void Render_FRectToScreen(SDL_Texture* texture, const SDL_Rect* sourceRect, SDL_FRect* targetRect) {
-        //targetRect->x -= Camera_Control::;
-
         SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
     }
 
-    void Render_FRect(SDL_Texture* texture, const SDL_Rect* sourceRect, SDL_FRect* targetRect) {
+    Component::Color Set_Random_Color() {
+        Component::Color color;
+        color.r = rand() % 254 + 1;
+        color.g = rand() % 254 + 1;
+        color.b = rand() % 254 + 1;
+        return color;
+    }
+
+
+    void Render_FRect(SDL_Texture* texture, Component::Color color, const SDL_Rect* sourceRect, SDL_FRect* targetRect) {
+        SDL_SetTextureColorMod( texture, color.r, color.g, color.b );
         SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
     }
 

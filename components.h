@@ -186,10 +186,17 @@ namespace Component {
         int frameSpeed = 75;
     };
 
+    struct Color {
+        u_int8_t r;
+        u_int8_t g;
+        u_int8_t b;
+    };
+
         /// one per item, but they can point to the same texture
 
     struct Sheet_Data {
         SDL_Texture* texture = NULL;
+        Color color = { 255, 255, 255 };
         std::vector<Sprite_Sheet_Data> frameList;
         /// start frame by state, number of frames per state.
         std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData;
@@ -199,6 +206,7 @@ namespace Component {
 
     struct Sheet_Data_Flare {
         SDL_Texture* texture = NULL;		//texture
+        Color color = { 255, 255, 255 };
         int sheetWidth = 0;
         int spriteWidth = 0;
         int spriteHeight = 0;

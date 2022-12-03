@@ -342,6 +342,7 @@ namespace Texture_Packer {
 
         spritesheet.frameList.shrink_to_fit();
         Packer_Textures[name] = spritesheet;
+//        spritesheet.color = Graphics::Set_Random_Color();
         return &Packer_Textures;
 	}
 }

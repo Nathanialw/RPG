@@ -899,11 +899,11 @@
   <object id="3162" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_PB_Male_4.tx" class="unit" x="22612.7" y="21343.3"/>
   <object id="3163" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_Warfare_Male_1.tx" class="unit" x="22718.7" y="21285.3"/>
   <object id="3164" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_Warfare_Male_2.tx" class="unit" x="22830" y="21224.7"/>
-  <object id="3165" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_1.tx" class="unit" x="22427.6" y="20544.4"/>
-  <object id="3166" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_2.tx" class="unit" x="22289.6" y="20482.4"/>
-  <object id="3167" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_3.tx" class="unit" x="22151.6" y="20393.8"/>
-  <object id="3168" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_4.tx" class="unit" x="22044.9" y="20252.4"/>
-  <object id="3169" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_5.tx" class="unit" x="22526.9" y="20522.4"/>
-  <object id="3170" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_6.tx" class="unit" x="22636.9" y="20532.4"/>
+  <object id="3165" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_1.tx" class="unit" x="22420.9" y="21060.4"/>
+  <object id="3166" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_2.tx" class="unit" x="22282.9" y="20998.4"/>
+  <object id="3167" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_3.tx" class="unit" x="22144.9" y="20909.8"/>
+  <object id="3168" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_4.tx" class="unit" x="22038.2" y="20768.4"/>
+  <object id="3169" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_5.tx" class="unit" x="22520.2" y="21038.4"/>
+  <object id="3170" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_6.tx" class="unit" x="22630.2" y="21048.4"/>
  </objectgroup>
 </map>

@@ -54,7 +54,7 @@ namespace Tooltip {
 		tooltipBackground.w += (tooltipBorder * 2.0f);
 		tooltipBackground.h += (tooltipBorder * 2.0f);
 
-		Graphics::Render_FRect(Graphics::tooltipBackground, &sourcerect, &tooltipBackground);
+		Graphics::Render_FRect(Graphics::tooltipBackground, {255,255,255}, &sourcerect, &tooltipBackground);
 	}
 
 	void Show_Item_Tooltip(entt::registry& zone, SDL_FPoint& mousePoint, Component::Camera& camera) {
@@ -109,7 +109,7 @@ namespace Tooltip {
 					//render item stats
 					for (auto& row : renderArray) {
 						row.renderRect.x += ( tooltip.tooltipWidth - row.renderRect.w) / 2.0f;
-						Graphics::Render_FRect(row.spriteData.pTexture, &row.spriteData.k, &row.renderRect);
+						Graphics::Render_FRect(row.spriteData.pTexture, {255,255,255}, &row.spriteData.k, &row.renderRect);
 						SDL_DestroyTexture(row.spriteData.pTexture);
 					}
 				}
