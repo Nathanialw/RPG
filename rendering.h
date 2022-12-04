@@ -123,6 +123,9 @@ namespace Rendering {
             case Component::Direction::SW: return 7;
             case Component::Direction::SE: return 5;
         }
+
+        Utilities::Log("Original_Direction_Enum() fallthough error");
+        return 2;
     }
 
     void Frame_Increment(entt::entity &entity, Component::Scale &scale, Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {

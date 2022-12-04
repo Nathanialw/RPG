@@ -1,9 +1,7 @@
 #pragma once
 #include "entt/entt.hpp"
-//#include "include/box2d/box2d.h"
 #include "components.h"
 #include "scene.h"
-#include "tmxlite/Types.hpp"
 #include "tmxlite/Object.hpp"
 #include "dynamic_quad_tree.h"
 

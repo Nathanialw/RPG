@@ -136,7 +136,7 @@ namespace Death_Control {
                     SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
 
                     World::zone.emplace_or_replace<Item_Component::Ground_Item>(item.second, rec);
-                    World::zone.emplace<Component::Interaction_Rect>(item.second, rec.x, rec.y, clipRect.w, clipRect.h);
+                    World::zone.emplace<Component::Interaction_Rect>(item.second, rec.x, rec.y, (float)clipRect.w, (float)clipRect.h);
 
                     World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item.second);
                     //needs radius to be able to be picked up

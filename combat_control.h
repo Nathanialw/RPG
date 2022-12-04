@@ -103,7 +103,6 @@ namespace Combat_Control {
                             targetSheetData.currentFrame = 0;
                             targetAction.state = Component::struck;
                         }
-                        Utilities::Log(damage);
                         struck.struck += damage;
                         //create_attack(position, direction);
                         zone.remove<Component::Attacking>(entity);

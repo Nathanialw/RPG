@@ -342,7 +342,8 @@ namespace Items {
 //            return Create_Weapon(item, rarity);
         }
 //        std::cout << "Choose_Item() fallthrough error, failed to select and item type, returned default" << std::endl;
-//        return Create_Armor(item, rarity);
+        return "Create_Armor(item, rarity)";
+
     }
 
 	void Create_And_Drop_Item(Component::Position& position, Component::Direction &direction) {

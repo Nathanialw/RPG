@@ -341,7 +341,7 @@ namespace UI {
                 SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
 
                 World::zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
-                World::zone.emplace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, clipRect.clip.w, clipRect.clip.h);
+                World::zone.emplace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float)clipRect.clip.w, (float)clipRect.clip.h);
 
                 World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
 

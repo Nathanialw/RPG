@@ -14,7 +14,7 @@ namespace Graphics_Component {
 
 namespace Graphics {
 
-    namespace {
+//    namespace {
         bool running;
         SDL_FRect resolution = { 0.0f, 0.0f, 1920.0f, 1200.0f };
         SDL_Window* window;
@@ -34,7 +34,7 @@ namespace Graphics {
             SDL_FRect highlightBox;
             Surface_Data textdata;
         };
-    }
+//    }
 
     SDL_Renderer* renderer;
 
