@@ -33,8 +33,8 @@ namespace Interface {
 				x.x *= 0.9f;
 				x.y *= 0.9f;
                 if (x.y < 2.0f) {
-                    x.x = 2.0f;
-                    x.y = 2.0f;
+                    x.x = 1.0f;
+                    x.y = 1.0f;
                 }
 				SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
 			}

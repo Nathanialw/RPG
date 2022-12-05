@@ -7,6 +7,7 @@
 #include "components.h"
 #include "camera.h"
 #include "SDL_FontCache.h"
+#include "rendering_components.h"
 
 namespace Graphics_Component {
 
@@ -92,8 +93,8 @@ namespace Graphics {
         SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
     }
 
-    Component::Color Set_Random_Color() {
-        Component::Color color;
+    Rendering_Components::Color Set_Random_Color() {
+        Rendering_Components::Color color;
         color.r = rand() % 254 + 1;
         color.g = rand() % 254 + 1;
         color.b = rand() % 254 + 1;
@@ -101,7 +102,7 @@ namespace Graphics {
     }
 
 
-    void Render_FRect(SDL_Texture* texture, Component::Color color, const SDL_Rect* sourceRect, SDL_FRect* targetRect) {
+    void Render_FRect(SDL_Texture* texture, Rendering_Components::Color color, const SDL_Rect* sourceRect, SDL_FRect* targetRect) {
         SDL_SetTextureColorMod( texture, color.r, color.g, color.b );
         SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
     }

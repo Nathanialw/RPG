@@ -332,7 +332,7 @@ namespace UI {
                 auto &itemPosition = zone.get<Component::Position>(item_ID);
                 itemPosition = entityPosition;
 
-                auto &sheetData = zone.get<Component::Sprite_Sheet_Info>(item_ID);
+                auto &sheetData = zone.get<Rendering_Components::Sprite_Sheet_Info>(item_ID);
                 auto direction = zone.emplace_or_replace<Component::Direction>(item_ID, (Component::Direction)(rand() % 7 + 1));
                 auto &clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList.at(sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(Component::dead).startFrame + (int)direction);
 
@@ -347,7 +347,7 @@ namespace UI {
 
                 World::zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
                 World::zone.get<Component::Action>(item_ID).state = Component::dying;
-                World::zone.get<Component::Sprite_Sheet_Info>(item_ID).currentFrame = 0;
+                World::zone.get<Rendering_Components::Sprite_Sheet_Info>(item_ID).currentFrame = 0;
             }
         }
         isItemCurrentlyHeld = false;
@@ -462,13 +462,13 @@ namespace UI {
 	}
 
 	void Mouse_Move_Arrived_Pickup_Item(entt::registry &zone, bool & isItemCurrentlyHeld) {
-		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Position, Component::Velocity, Component::Action, Component::Pickup_Item>();
+		auto view = World::zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Position, Component::Velocity, Component::Action, Component::Pickup_Item>();
 		for (auto entity : view) {
 			auto& action = view.get<Component::Action>(entity);
 			auto& v = view.get<Component::Velocity>(entity);
 			const auto& position = view.get<Component::Position>(entity);
 			auto& itemData = view.get<Component::Pickup_Item>(entity);
-			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+			auto& sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
 			if (Check_If_Arrived(position.x, position.y, itemData.x, itemData.y)) {
 				if (action.state == Component::walk) {
 					v.magnitude.x = 0.0f;

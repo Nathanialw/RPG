@@ -26,16 +26,16 @@ namespace Death_Spells {
 
         SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
         std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
-        std::unordered_map<std::string, Component::Sheet_Data_Flare>* flareSheetData = NULL;
+        std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
 
         SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
         flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
 
-        auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(skeleton0);
+        auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(skeleton0);
         sprite.flareSpritesheet = flareSheetData;
         sprite.sheet_name = name;
         sprite.type = sheetDataFlare.sheet_type;
-        zone.emplace<Component::Sprite_Offset>(skeleton0, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+        zone.emplace<Rendering_Components::Sprite_Offset>(skeleton0, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
         auto &scale = zone.emplace<Component::Scale>(skeleton0, 1.0f);
 

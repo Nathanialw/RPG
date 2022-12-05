@@ -7,8 +7,6 @@
 #include "include/box2d/box2d.h"
 
 
-
-
 namespace Component {
 
 	struct ObjectID {
@@ -167,140 +165,40 @@ namespace Component {
 		SW,
 		W
 	};
-
-	struct Sprite_Offset {
-        float x;
-        float y;
-	};
-
-    struct Sprite_Sheet_Data {
-        SDL_Rect clip;
-        float x_offset;
-        float y_offset;
-    };
-
-    struct Frame_Data_Packer {
-        int startFrame = 9999;
-        int NumFrames = 0;
-        int reverses = 0;
-        int frameSpeed = 75;
-    };
-
-    struct Color {
-        u_int8_t r;
-        u_int8_t g;
-        u_int8_t b;
-    };
-
-        /// one per item, but they can point to the same texture
-
-    struct Sheet_Data {
-        SDL_Texture* texture = NULL;
-        Color color = { 255, 255, 255 };
-        std::vector<Sprite_Sheet_Data> frameList;
-        /// start frame by state, number of frames per state.
-        std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData;
-        ///store the frame duration for each frame of each state, probably not worth it
-//        std::unordered_map<Component::Action_State, std::vector<int>> Frame_Speed_By_Action;
-    };
-
-    struct Sheet_Data_Flare {
-        SDL_Texture* texture = NULL;		//texture
-        Color color = { 255, 255, 255 };
-        int sheetWidth = 0;
-        int spriteWidth = 0;
-        int spriteHeight = 0;
-//        Frame_Data_Packer actionFrameDataArray[17];
-//        std::vector<Frame_Data_Packer> actionFrameDataVector[20];
-        std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData;
-    };
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-        ///only exists once and I look it up
-    struct Item_Render_Data {
-        SDL_Texture* texture  = NULL;
-            /// actual clip data of each sprite
-        std::vector<Sprite_Sheet_Data> frameList;
-            /// frame start and num frames calced from XML
-        std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData[2500];
-    };
-
-    //////////////////////////////////////////////////////////////////////////////////
-
-    struct Equipped_Items {
-            ///get the string from the item name and look up the texture from the data
-        std::unordered_map<std::string, Item_Render_Data> equippedItems;
-    };
-
     struct Action {
         Action_State state;
-    };
-
-    enum Frame {
-        firstFrame,
-        normalFrame,
-        finalFrame
-    };
-
-    struct Equip_Slot_Data {
-        std::unordered_map<std::string, Sheet_Data>* ItemSheetData = NULL;
-        //name is the index into the map that stores the data
-        std::string name = "empty";
-        int FrameIndex = 0;
-        entt::entity itemID;
-    };
-
-    ///component for the unit
-    struct Sprite_Sheet_Info {
-        std::string type = "default";
-
-        std::unordered_map<std::string, Sheet_Data_Flare>* flareSpritesheet = NULL;
-        std::unordered_map<std::string, Sheet_Data>* sheetData = NULL;
-        std::string sheet_name = "default";
-
-        Equip_Slot_Data equipmentSheets[30];
-
-            ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
-//        std::string* sheetData;
-//        int index = 0;
-        uint64_t frameTime = 0;
-        int frameIndex = 0;
-        int reversing = 0;
-        int currentFrame = 0;
-        Frame finalFrame = normalFrame;
     };
 
     struct Drop_Equipment {
 
     };
 
-    struct t_Stored_Frame_Data {
-        uint64_t frameTime = 0;
-        int frameIndex = 0;
-        int reversing = 0;
-        int currentFrame = 0;
-    };
+//    struct t_Stored_Frame_Data {
+//        uint64_t frameTime = 0;
+//        int frameIndex = 0;
+//        int reversing = 0;
+//        int currentFrame = 0;
+//    };
+//
+//    struct t_Sheet_Data {
+//        Frame_Data_Packer actionFrameData[17];
+//        int sheetWidth = 0;
+//        int spriteWidth = 0;
+//        int spriteHeight = 0;
+//    };
 
-    struct t_Sheet_Data {
-        Frame_Data_Packer actionFrameData[17];
-        int sheetWidth = 0;
-        int spriteWidth = 0;
-        int spriteHeight = 0;
-    };
+//    struct asd { ;
+//        t_Sheet_Data t_SheetDataArray[1000];
+//    };
 
-    struct asd { ;
-        t_Sheet_Data t_SheetDataArray[1000];
-    };
-
-    struct t_Rendering_Data {
-        SDL_Rect clipRect = {0,0,0,0};
-        SDL_FRect renderRect = {0,0,0,0};
-    };
-
-    struct t_Texture {
-        SDL_Texture *texture = NULL;
-    };
+//    struct t_Rendering_Data {
+//        SDL_Rect clipRect = {0,0,0,0};
+//        SDL_FRect renderRect = {0,0,0,0};
+//    };
+//
+//    struct t_Texture {
+//        SDL_Texture *texture = NULL;
+//    };
 
 	struct Line_Segment {
 		Position p[2];

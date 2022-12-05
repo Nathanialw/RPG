@@ -880,7 +880,7 @@
   <object id="2973" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Black.tx" x="11651" y="11501"/>
   <object id="2974" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Dire.tx" x="11462" y="11590"/>
   <object id="2975" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="11226" y="11734"/>
-  <object id="2987" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base1.tx" x="22307.7" y="20047.8">
+  <object id="2987" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base1.tx" x="22301.1" y="20587.8">
    <properties>
     <property name="player" type="bool" value="true"/>
    </properties>

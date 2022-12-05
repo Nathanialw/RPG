@@ -9,18 +9,21 @@
 #include "ui.h"
 #include "camera.h"
 #include "mouse_control.h"
-#include "components.h"
 #include "character_stats.h"
 #include "tooltips.h"
 #include "damage_text.h"
 #include "ui_resources.h"
-#include "map.h"
+//#include "map.h"
 #include "world_grid.h"
 #include "dynamic_quad_tree.h"
 #include "player_control.h"
 #include "death_control.h"
 
+#include "rendering_components.h"
 namespace Rendering {
+
+    using namespace Rendering_Components;
+
 	namespace {
 		bool showSpriteBox = false;
 		bool debug = false;
@@ -98,7 +101,7 @@ namespace Rendering {
         return 0;
     }
 
-    void Update_Frame_PVG(SDL_Rect &clipRect, Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
+    void Update_Frame_PVG(SDL_Rect &clipRect, Rendering_Components::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
         int spritesPerLine = sheetData.flareSpritesheet->at(sheetData.sheet_name).sheetWidth / sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth;
             ///the x index in absolute terms
         int x_index = sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + ((PVG_Direction_Enum(direction) * sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) + sheetData.currentFrame);
@@ -128,17 +131,17 @@ namespace Rendering {
         return 2;
     }
 
-    void Frame_Increment(entt::entity &entity, Component::Scale &scale, Component::Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
+    void Frame_Increment(entt::entity &entity, Component::Scale &scale, Sprite_Sheet_Info &sheetData, Component::Action &action, Component::Direction &direction) {
 
         sheetData.frameTime += Timer::timeStep;
-        if (sheetData.finalFrame == Component::finalFrame) {
-            sheetData.finalFrame = Component::firstFrame;
+        if (sheetData.finalFrame == finalFrame) {
+            sheetData.finalFrame = firstFrame;
         }
         if (sheetData.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
             sheetData.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
 //            sheetData.frameTime = 0;
 
-            if (sheetData.finalFrame == Component::firstFrame) {
+            if (sheetData.finalFrame == firstFrame) {
                 if (action.state == Component::dying || action.state == Component::dead) {
 
                 }
@@ -148,7 +151,7 @@ namespace Rendering {
                 else if (action.state == Component::struck || action.state == Component::attack || action.state == Component::cast) {
                     action.state = Component::idle;
                 }
-                sheetData.finalFrame = Component::normalFrame;
+                sheetData.finalFrame = normalFrame;
             }
 
                 ///reset frame count if over
@@ -186,7 +189,7 @@ namespace Rendering {
             }
             else if (currentFrame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
                 if (action.state != Component::walk && action.state != Component::run) {
-                    sheetData.finalFrame = Component::finalFrame;
+                    sheetData.finalFrame = finalFrame;
                 }
                 sheetData.currentFrame = 0;
 
@@ -203,7 +206,7 @@ namespace Rendering {
         clipRect.y = clipRect.h * Original_Direction_Enum(direction);
     }
 
-    void Get_Spritesheet_Type(SDL_Rect &clipRect, Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
+    void Get_Spritesheet_Type(SDL_Rect &clipRect, Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
             /// get the height and width
         clipRect = {0, 0, sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth, sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteHeight};
 
@@ -219,11 +222,11 @@ namespace Rendering {
         }
     }
 
-    void Update_Frame(entt::entity entity, Component::Scale scale, Component::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
+    void Update_Frame(entt::entity entity, Component::Scale scale, Sprite_Sheet_Info &sheetData, Component::Direction& direction, Component::Action& action) {
 
         sheetData.frameTime += Timer::timeStep;
-        if (sheetData.finalFrame == Component::finalFrame) {
-            sheetData.finalFrame = Component::firstFrame;
+        if (sheetData.finalFrame == finalFrame) {
+            sheetData.finalFrame = firstFrame;
         }
 
         if (sheetData.frameTime >= sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
@@ -232,7 +235,7 @@ namespace Rendering {
 
             if (action.state != Component::isStatic) {
                 /// reset at the start so it had a chance loop through the logic once to trigger end of state actions
-                if (sheetData.finalFrame == Component::firstFrame) {
+                if (sheetData.finalFrame == firstFrame) {
 
                     if (action.state != Component::walk && action.state != Component::struck && action.state != Component::attack && action.state != Component::dying && action.state != Component::dead) {
                         action.state = Component::idle;
@@ -240,7 +243,7 @@ namespace Rendering {
                         action.state = Component::idle;
                     }
 
-                    sheetData.finalFrame = Component::normalFrame;
+                    sheetData.finalFrame = normalFrame;
                 }
 
                 if (Death_Control::Death_Sequence(direction, entity, scale, sheetData, action, sheetData.currentFrame, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
@@ -267,7 +270,7 @@ namespace Rendering {
                 } else if (sheetData.currentFrame >= sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
 
                     if (action.state != Component::walk && action.state != Component::run) {
-                        sheetData.finalFrame = Component::finalFrame;
+                        sheetData.finalFrame = finalFrame;
                     }
 
                     sheetData.currentFrame = 0;
@@ -276,7 +279,7 @@ namespace Rendering {
         }
     }
 
-    SDL_FRect Position_For_Render(std::unordered_map<std::string, Component::Sheet_Data>*sheetData, std::string &name, int &frameIndex, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Component::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect, Component::Interaction_Rect &interactionRect) {
+    SDL_FRect Position_For_Render(std::unordered_map<std::string, Sheet_Data>*sheetData, std::string &name, int &frameIndex, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect, Component::Interaction_Rect &interactionRect) {
         clipRect = sheetData->at(name).frameList[frameIndex].clip;
         renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
         renderRect.x = sheetData->at(name).frameList[frameIndex].x_offset * scale.scale - offset.x + position.x;
@@ -291,14 +294,15 @@ namespace Rendering {
 
     void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
 
-        auto view1 = zone.view<Component::Renderable, Component::Position, Component::Sprite_Sheet_Info, Component::Action, Component::Direction, Component::Sprite_Offset, Component::Scale, Component::Entity_Type>();
+        auto view1 = zone.view<Component::Renderable, Component::Position, Sprite_Sheet_Info, Component::Action, Component::Direction, Sprite_Offset, Component::Scale, Component::Entity_Type>();
+        auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
 
         for (auto entity : view1) {
             auto [renderable, position, sheetData, action, direction, spriteOffset, scale, type] = view1.get(entity);
             SDL_Rect clipRect;
             SDL_FRect renderRect;
             SDL_Texture* texture;
-            Component::Color color;
+            Color color;
 
             if (sheetData.flareSpritesheet) {
                     /// get the next frame
@@ -321,7 +325,7 @@ namespace Rendering {
                 Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
             }
 
-            else if (sheetData.sheetData) {
+            else if (sheetData.sheetData && zone.any_of<Rendering_Components::Equipment_Sprites>(entity)) {
                 Frame_Increment(entity, scale, sheetData, action, direction);
                 if (zone.any_of<Component::Interaction_Rect>(entity)) {
                     auto &interactionRect = zone.get<Component::Interaction_Rect>(entity);
@@ -331,11 +335,17 @@ namespace Rendering {
                     Component::Interaction_Rect interactionRect = {};
                     renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
                 }
+
+//                render horse half behind
+
+
+//                render unit
                 texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
                 color = sheetData.sheetData->at(sheetData.sheet_name).color;
                 SDL_SetTextureAlphaMod(texture, renderable.alpha);
                 Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
 
+//                render equipment
                 for (auto item : sheetData.equipmentSheets) {
                     if (item.ItemSheetData) {
                         if (zone.any_of<Component::Interaction_Rect>(item.itemID)) {
@@ -352,12 +362,49 @@ namespace Rendering {
                         Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
                     }
                 }
+
+//                render horse half in front
+
+            }
+
+            else if (sheetData.sheetData) {
+                Frame_Increment(entity, scale, sheetData, action, direction);
+                if (zone.any_of<Component::Interaction_Rect>(entity)) {
+                    auto &interactionRect = zone.get<Component::Interaction_Rect>(entity);
+                    renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
+                }
+                else {
+                    Component::Interaction_Rect interactionRect = {};
+                    renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
+                }
+                texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
+                color = sheetData.sheetData->at(sheetData.sheet_name).color;
+                SDL_SetTextureAlphaMod(texture, renderable.alpha);
+                Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
+
+//                if (zone.any_of<Rendering_Components::Equipment>(entity)) {
+                    for (auto item: sheetData.equipmentSheets) {
+                        if (item.ItemSheetData) {
+                            if (zone.any_of<Component::Interaction_Rect>(item.itemID)) {
+                                auto &itemInteractionRect = zone.get<Component::Interaction_Rect>(item.itemID);
+                                renderRect = Position_For_Render(item.ItemSheetData, item.name, item.FrameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, itemInteractionRect);
+                            } else {
+                                Component::Interaction_Rect itemInteractionRect = {};
+                                renderRect = Position_For_Render(item.ItemSheetData, item.name, item.FrameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, itemInteractionRect);
+                            }
+                            texture = item.ItemSheetData->at(item.name).texture;
+                            color = item.ItemSheetData->at(item.name).color;
+                            SDL_SetTextureAlphaMod(texture, renderable.alpha);
+                            Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
+                        }
+                    }
+//                }
 //                std::cout << "currentFrame: " << sheetData.frameIndex<< ", start frame frame: " << sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(action.state).startFrame << ", num frames: " << sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(action.state).NumFrames << std::endl;
 //                std::cout << "direction: " << (int)direction << std::endl;
             }
 
             else {
-                Utilities::Log("Animation_Frame() fallthrough error: both pointers NULL");
+                Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL");
                 return;
             }
 		}

@@ -96,14 +96,14 @@ namespace Items {
 		return Armor_Type::cloth;
 	}
 
-    void armor_texture(Item_Type &itemType, Component::Sprite_Sheet_Info &sheetData, std::unordered_map<std::string, Component::Sheet_Data>* equippedSheetData, std::string &itemName) {
+    void armor_texture(Item_Type &itemType, Rendering_Components::Sprite_Sheet_Info &sheetData, std::unordered_map<std::string, Rendering_Components::Sheet_Data>* equippedSheetData, std::string &itemName) {
         sheetData.equipmentSheets[(int)itemType].ItemSheetData = equippedSheetData;
         sheetData.equipmentSheets[(int)itemType].name = itemName;
     }
 
 
-    Component::Color Set_Color() {
-        Component::Color color;
+    Rendering_Components::Color Set_Color() {
+        Rendering_Components::Color color;
         color.r = rand() % 254 + 1;
         color.g = rand() % 254 + 1;
         color.b = rand() % 254 + 1;
@@ -143,7 +143,7 @@ namespace Items {
 		SDL_Rect sprite = { column * size , row * size  ,size  ,size };
 
 
-		auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
+		auto &sheetData = World::zone.emplace<Rendering_Components::Sprite_Sheet_Info>(item);
         armor_texture(type, sheetData, equippedSheetData.itemData, equippedSheetData.index);
         sheetData.type = "RPG_Tools";
         sheetData.sheetData = equippedSheetData.itemData;
@@ -214,7 +214,7 @@ namespace Items {
         int size = 64;
         SDL_Rect sprite = { column * size, row * size, size, size };
 
-        auto &sheetData = World::zone.emplace<Component::Sprite_Sheet_Info>(item);
+        auto &sheetData = World::zone.emplace<Rendering_Components::Sprite_Sheet_Info>(item);
 
         Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
 //        if (itemType == Item_Component::Item_Type::legs || itemType == Item_Component::Item_Type::chest || itemType == Item_Component::Item_Type::helm || itemType == Item_Component::Item_Type::hair || itemType == Item_Component::Item_Type::kilt) {
@@ -250,7 +250,7 @@ namespace Items {
 		World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
 		auto &stats = World::zone.emplace<Item_Stats>(item);
 		stats = itemStats;
-		auto& offset = World::zone.emplace<Component::Sprite_Offset>(item, 90.0f, 130.0f);
+		auto& offset = World::zone.emplace<Rendering_Components::Sprite_Offset>(item, 90.0f, 130.0f);
 		auto& position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
 	}
 
@@ -371,7 +371,7 @@ namespace Items {
         World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
         auto &stats = World::zone.emplace<Item_Stats>(item);
         stats = itemStats;
-        auto& offset = World::zone.emplace<Component::Sprite_Offset>(item, 100.0f, 100.0f);
+        auto& offset = World::zone.emplace<Rendering_Components::Sprite_Offset>(item, 100.0f, 100.0f);
         auto& position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
     }
 

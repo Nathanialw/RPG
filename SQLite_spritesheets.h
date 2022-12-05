@@ -3,10 +3,11 @@
 #include <vector>
 #include <SDL2/SDL.h>
 #include <string>
-#include "components.h"
+//#include "components.h"
 #include <iostream>
 #include <map>
 #include "spritesheet_structs.h"
+#include "rendering_components.h"
 
 
 namespace SQLite_Spritesheets {
@@ -29,28 +30,28 @@ namespace SQLite_Spritesheets {
         int64_t time_between_frames = 0;
         std::string sheet_type = "default";
             /// initial values already set in component.h
-        Component::Frame_Data_Packer isStatic;
-        Component::Frame_Data_Packer idle = { 9999, 0, 0, i };
-        Component::Frame_Data_Packer walk;
-        Component::Frame_Data_Packer run;
-        Component::Frame_Data_Packer attack = { 9999, 0, 0, i };
-        Component::Frame_Data_Packer attack2 = { 9999, 0, 0, i };
-        Component::Frame_Data_Packer cast = { 9999, 0, 0, i };
-        Component::Frame_Data_Packer struck = { 9999, 0, 0, i };
-        Component::Frame_Data_Packer block = { 9999, 0, 0, i };
-        Component::Frame_Data_Packer evade = { 9999, 0, 0, i };
-        Component::Frame_Data_Packer stunned;
-        Component::Frame_Data_Packer dying = { 9999, 0, 0, i };
-        Component::Frame_Data_Packer corpse;
-        Component::Frame_Data_Packer low_hp;
-        Component::Frame_Data_Packer resting;
-        Component::Frame_Data_Packer ranged;
-        Component::Frame_Data_Packer cheer;
-        Component::Frame_Data_Packer behavior;
-        Component::Frame_Data_Packer summoned;
+        Rendering_Components::Frame_Data_Packer isStatic;
+        Rendering_Components::Frame_Data_Packer idle = { 9999, 0, 0, i };
+        Rendering_Components::Frame_Data_Packer walk;
+        Rendering_Components::Frame_Data_Packer run;
+        Rendering_Components::Frame_Data_Packer attack = { 9999, 0, 0, i };
+        Rendering_Components::Frame_Data_Packer attack2 = { 9999, 0, 0, i };
+        Rendering_Components::Frame_Data_Packer cast = { 9999, 0, 0, i };
+        Rendering_Components::Frame_Data_Packer struck = { 9999, 0, 0, i };
+        Rendering_Components::Frame_Data_Packer block = { 9999, 0, 0, i };
+        Rendering_Components::Frame_Data_Packer evade = { 9999, 0, 0, i };
+        Rendering_Components::Frame_Data_Packer stunned;
+        Rendering_Components::Frame_Data_Packer dying = { 9999, 0, 0, i };
+        Rendering_Components::Frame_Data_Packer corpse;
+        Rendering_Components::Frame_Data_Packer low_hp;
+        Rendering_Components::Frame_Data_Packer resting;
+        Rendering_Components::Frame_Data_Packer ranged;
+        Rendering_Components::Frame_Data_Packer cheer;
+        Rendering_Components::Frame_Data_Packer behavior;
+        Rendering_Components::Frame_Data_Packer summoned;
     };
         ///will hold all the flare spritesheets
-    std::unordered_map<std::string, Component::Sheet_Data_Flare> Flare_Spritesheets;
+    std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> Flare_Spritesheets;
 
     Sheet_Data_Flare Get_Flare_Spritesheet_Data_From_db(std::string sheet) {// needs to search for  a specific row that I can input in the arguments
         std::string sheet_name = db::Append_Quotes(sheet);
@@ -178,7 +179,7 @@ namespace SQLite_Spritesheets {
         return sheetData;
     }
 
-    std::unordered_map<std::string, Component::Sheet_Data_Flare>* Populate_Flare_SpriteSheet(std::string &name, Sheet_Data_Flare &data, SDL_Texture* texture) {
+    std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* Populate_Flare_SpriteSheet(std::string &name, Sheet_Data_Flare &data, SDL_Texture* texture) {
         if (Flare_Spritesheets[name].texture == NULL) {
 //            Flare_Spritesheets[name].color = Graphics::Set_Random_Color();
             Flare_Spritesheets[name].texture = texture;

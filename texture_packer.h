@@ -7,7 +7,7 @@
 namespace Texture_Packer {
         ///on init we need to do it parse the SQLite db for all sprite sheets names "texture_packer" and use the result to preallocate all the nodes of the std::unordered_map
 
-    std::unordered_map<std::string, Component::Sheet_Data> Packer_Textures;
+    std::unordered_map<std::string, Rendering_Components::Sheet_Data> Packer_Textures;
 
     struct Type_Data{
         std::string type;
@@ -38,9 +38,9 @@ namespace Texture_Packer {
         return typeData;
     }
 
-    Component::Sprite_Offset Get_Sprite_Offets_From_db(std::string &sheet) {// needs to search for  a specific row that I can input in the arguments
+    Rendering_Components::Sprite_Offset Get_Sprite_Offets_From_db(std::string &sheet) {// needs to search for  a specific row that I can input in the arguments
         std::string sheet_name = db::Append_Quotes(sheet);
-        Component::Sprite_Offset offset = {};
+        Rendering_Components::Sprite_Offset offset = {};
         sqlite3_stmt *stmt;
         const unsigned char *sheetType;
         char buf[300];
@@ -55,13 +55,13 @@ namespace Texture_Packer {
         return offset;
     }
 
-    void Calculate_Start_Frame (std::unordered_map<Component::Action_State, Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action, int &frameIndex) {
+    void Calculate_Start_Frame (std::unordered_map<Component::Action_State, Rendering_Components::Frame_Data_Packer> &actionFrameData, Component::Action_State &action, int &frameIndex) {
         if (actionFrameData[action].startFrame == 9999) {
             actionFrameData[action].startFrame = frameIndex;
         }
     }
 
-    void Calculate_Num_Frames (std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action) {
+    void Calculate_Num_Frames (std::string &frame, std::unordered_map<Component::Action_State,  Rendering_Components::Frame_Data_Packer> &actionFrameData, Component::Action_State &action) {
         if (frame.back() != '1') {
             return;
         }
@@ -72,7 +72,7 @@ namespace Texture_Packer {
 
     int i = 120;
 
-    void Get_Frame_Action_Data (std::string unitType, std::string &name, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+    void Get_Frame_Action_Data (std::string unitType, std::string &name, std::string &frame, std::unordered_map<Component::Action_State,  Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
 
             /// get the
         std::string keyCheck = name;
@@ -278,7 +278,7 @@ namespace Texture_Packer {
         Calculate_Num_Frames(frame, actionFrameData, action);
     }
 
-    std::unordered_map<std::string, Component::Sheet_Data>* TexturePacker_Import(std::string &name, std::string &xml_path, SDL_Texture* texture) {
+    std::unordered_map<std::string, Rendering_Components::Sheet_Data>* TexturePacker_Import(std::string &name, std::string &xml_path, SDL_Texture* texture) {
             ///check if the sheet data already exists
 
 
@@ -298,8 +298,8 @@ namespace Texture_Packer {
         tinyxml2::XMLElement *pSpriteElement;
         pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
 
-        Component::Sprite_Sheet_Data frame = {};
-        Component::Sheet_Data spritesheet;
+        Rendering_Components::Sprite_Sheet_Data frame = {};
+        Rendering_Components::Sheet_Data spritesheet;
         spritesheet.frameList.reserve(200);
         spritesheet.texture = texture;
 

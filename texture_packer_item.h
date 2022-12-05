@@ -9,7 +9,7 @@
 namespace Texture_Packer_Item {
     ///on init we need to do it parse the SQLite db for all sprite sheets names "texture_packer" and use the result to preallocate all the nodes of the std::unordered_map
 
-    std::unordered_map<std::string, Component::Sheet_Data> Packer_Textures_Items;
+    std::unordered_map<std::string, Rendering_Components::Sheet_Data> Packer_Textures_Items;
     std::unordered_map<std::string, SDL_Texture*> Item_Textures;
 
     struct Data {
@@ -67,14 +67,14 @@ namespace Texture_Packer_Item {
         return data;
     }
 
-    void Calculate_Start_Frame (std::unordered_map<Component::Action_State, Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action, int &frameIndex) {
+    void Calculate_Start_Frame (std::unordered_map<Component::Action_State, Rendering_Components::Frame_Data_Packer> &actionFrameData, Component::Action_State &action, int &frameIndex) {
         /// I know this is terrible but it does work.
         if (actionFrameData[action].startFrame == 9999) {
             actionFrameData[action].startFrame = frameIndex;
         }
     }
 
-    void Calculate_Num_Frames (std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, Component::Action_State &action) {
+    void Calculate_Num_Frames (std::string &frame, std::unordered_map<Component::Action_State,  Rendering_Components::Frame_Data_Packer> &actionFrameData, Component::Action_State &action) {
         if (frame.back() != '0') {
             return;
         }
@@ -85,7 +85,7 @@ namespace Texture_Packer_Item {
 
     int i = 120;
 
-    bool Get_Frame_Action_Data (std::string unitType, bool &check, std::string key, std::string &frame, std::unordered_map<Component::Action_State,  Component::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+    bool Get_Frame_Action_Data (std::string unitType, bool &check, std::string key, std::string &frame, std::unordered_map<Component::Action_State,  Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
         std::string keyCheck = key;
         std::string frameCopy = frame;
         /// presupposes that the top of the list is "itemName_00_1-H Attack 1_01_ 0" with 19 ending chars
@@ -283,7 +283,7 @@ namespace Texture_Packer_Item {
     }
 
     struct Item_Data_And_Index {
-        std::unordered_map<std::string, Component::Sheet_Data>* itemData;
+        std::unordered_map<std::string, Rendering_Components::Sheet_Data>* itemData;
         std::string index;
     };
 
@@ -306,13 +306,13 @@ namespace Texture_Packer_Item {
 
         tinyxml2::XMLElement* pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
 
-        Component::Sprite_Sheet_Data frame = {};
-        Component::Sheet_Data spritesheet;
+        Rendering_Components::Sprite_Sheet_Data frame = {};
+        Rendering_Components::Sheet_Data spritesheet;
         spritesheet.frameList.reserve(200);
         const char* tex = dbData.texture_path.c_str();
         Get_Item_Texture(dbData.item_name, tex);
         spritesheet.texture = Item_Textures[dbData.item_name];
-        spritesheet.color = Graphics::Set_Random_Color();
+//        spritesheet.color = Graphics::Set_Random_Color();
 
         int frameIndex = 0;
         bool check = true;

@@ -14,6 +14,7 @@
 #include "item_components.h"
 #include "social_control.h"
 #include "character_data.h"
+#include "rendering_components.h"
 
 //cell 100x100 pixels (change pixels to a meters??)
 //map 100 cells x 100 cells
@@ -97,8 +98,8 @@ namespace Maps {
 
             SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
             std::string layout = Entity_Loader::Get_Building_Sprite_layout(name);
-            std::unordered_map<std::string, Component::Sheet_Data_Flare>* flareSheetData = NULL;
-            std::unordered_map<std::string, Component::Sheet_Data> *packerframeData = NULL;
+            std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
+            std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
             ///get sheet data for new pointer to map
             SQLite_Spritesheets::Get_Flare_Building_From_DB(name, layout, sheetDataFlare);
@@ -115,11 +116,11 @@ namespace Maps {
             zone.emplace<Component::Mass>(entity, 100.0f);
             zone.emplace<Component::Alive>(entity, true);
 
-            auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
+            auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
             sprite.flareSpritesheet = flareSheetData;
             sprite.sheet_name = name;
             sprite.type = sheetDataFlare.sheet_type;
-            zone.emplace<Component::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+            zone.emplace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
             Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line);
             return true;
@@ -157,8 +158,8 @@ namespace Maps {
 
         SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
         std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
-        std::unordered_map<std::string, Component::Sheet_Data_Flare>* flareSheetData = NULL;
-        std::unordered_map<std::string, Component::Sheet_Data> *packerframeData = NULL;
+        std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
+        std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
         if (sheetname == "texture_packer") {
             ///run texture packer
@@ -179,12 +180,12 @@ namespace Maps {
         zone.emplace<Component::Mass>(entity, data.mass * data.scale);
         zone.emplace<Component::Alive>(entity, true);
         zone.emplace<Component::Unit>(entity);
-        zone.emplace<Component::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
+        zone.emplace<Rendering_Components::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
 
         auto &full_name = zone.emplace<Component::Name>(entity);
         Character_Data::Get_Name(full_name);
 
-        auto &sprite = zone.emplace<Component::Sprite_Sheet_Info>(entity);
+        auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
 
         //if RTP_pieces type
         if (packerframeData) {

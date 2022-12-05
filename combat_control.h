@@ -15,7 +15,7 @@ namespace Combat_Control {
 	}
 
     void Attack_Cast(entt::registry &zone) {
-        auto view = zone.view<Component::Sprite_Sheet_Info, Component::Direction, Component::Position, Component::Action, Component::Attack, Component::Velocity, Component::Attack_Speed>(entt::exclude<Component::Attacking>);
+        auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Direction, Component::Position, Component::Action, Component::Attack, Component::Velocity, Component::Attack_Speed>(entt::exclude<Component::Attacking>);
         for (auto entity : view) {
             //initiates a point and click attack
             auto& attackSpeed = view.get<Component::Attack_Speed>(entity);
@@ -28,7 +28,7 @@ namespace Combat_Control {
                 auto &angle = view.get<Component::Velocity>(entity).angle;
                 auto &target = view.get<Component::Attack>(entity);
                 auto &position = view.get<Component::Position>(entity);
-                auto &sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+                auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
                 direction = Movement::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
                 attackSpeed.counter = attackSpeed.period;
                 ///add attack state for render state
@@ -45,16 +45,16 @@ namespace Combat_Control {
     }
 
     void Attack_Target(entt::registry &zone) {
-        auto view = zone.view<Component::Attacking, Component::Action, Component::Melee_Damage, Component::Sprite_Sheet_Info>();
+        auto view = zone.view<Component::Attacking, Component::Action, Component::Melee_Damage, Rendering_Components::Sprite_Sheet_Info>();
         for (auto entity : view) {
             auto& action = view.get<Component::Action>(entity);
             if (action.state == Component::attack) {
                 ///ensures it attacks at the end of the last frame of the attack
-                auto &sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+                auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
                     ///Flare sprites
                 if (sheetData.flareSpritesheet) {
 //                    Utilities::Log(sheetData.currentFrame);
-                    if (sheetData.finalFrame == Component::finalFrame) {
+                    if (sheetData.finalFrame == Rendering_Components::finalFrame) {
                         //executes a point and click attack
                         auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
                         auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
@@ -69,7 +69,7 @@ namespace Combat_Control {
                         if (meleeDamage.critical) {
                             struck.critical = true;
                             auto &targetAction = zone.get_or_emplace<Component::Action>(target_ID);
-                            auto &targetSheetData = zone.get_or_emplace<Component::Sprite_Sheet_Info>(target_ID);
+                            auto &targetSheetData = zone.get_or_emplace<Rendering_Components::Sprite_Sheet_Info>(target_ID);
                             targetAction.state = Component::struck;
                             targetSheetData.currentFrame = 0;
                         }
@@ -82,7 +82,7 @@ namespace Combat_Control {
                 }
                 else if (sheetData.sheetData) {
                         /// RPG_tools sprites
-                    if (sheetData.finalFrame == Component::finalFrame) {
+                    if (sheetData.finalFrame == Rendering_Components::finalFrame) {
                         //executes a point and click attack
                         auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
                         auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
@@ -99,7 +99,7 @@ namespace Combat_Control {
                         if (meleeDamage.critical) {
                             struck.critical = true;
                             auto &targetAction = zone.get_or_emplace<Component::Action>(target_ID);
-                            auto &targetSheetData = zone.get_or_emplace<Component::Sprite_Sheet_Info>(target_ID);
+                            auto &targetSheetData = zone.get_or_emplace<Rendering_Components::Sprite_Sheet_Info>(target_ID);
                             targetSheetData.currentFrame = 0;
                             targetAction.state = Component::struck;
                         }
@@ -192,21 +192,21 @@ namespace Combat_Control {
     }
 
     void Struck_Updater(entt::registry &zone){
-        auto view = zone.view<Component::Struck, Component::Action, Component::Sprite_Sheet_Info>();
+        auto view = zone.view<Component::Struck, Component::Action, Rendering_Components::Sprite_Sheet_Info>();
         for (auto entity : view) {
             auto &action = view.get<Component::Action>(entity);
-            auto &sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+            auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
             if (action.state == Component::dying) {
                 zone.remove<Component::Struck>(entity);
             }
             if (sheetData.flareSpritesheet) {
-                if (sheetData.finalFrame  == Component::finalFrame) {
+                if (sheetData.finalFrame  == Rendering_Components::finalFrame) {
                         ///should not return to idle, should go into an "idle-combat" mode
                     zone.remove<Component::Struck>(entity);
                 }
             }
             else if (sheetData.sheetData) {
-                if (sheetData.finalFrame == Component::finalFrame) {
+                if (sheetData.finalFrame == Rendering_Components::finalFrame) {
                         ///should not return to idle, should go into an "idle-combat" mode
                     zone.remove<Component::Struck>(entity);
                 }

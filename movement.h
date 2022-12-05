@@ -110,14 +110,14 @@ namespace Movement {
 	}
 
 	void Mouse_Move_Arrived() {
-		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Position, Component::Velocity, Component::Action, Component::Mouse_Move, Component::Body>();
+		auto view = World::zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Position, Component::Velocity, Component::Action, Component::Mouse_Move, Component::Body>();
 		for (auto entity : view) {
 			auto& act = view.get<Component::Action>(entity);
 			auto& v = view.get<Component::Velocity>(entity);
 			const auto& x = view.get<Component::Position>(entity);
 			const auto& y = view.get<Component::Position>(entity);
 			const auto& mov = view.get<Component::Mouse_Move>(entity);
-			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+			auto& sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
 
 			if (Check_If_Arrived(x.x, y.y, mov.fX_Destination, mov.fY_Destination)) {
 				if (act.state == Component::walk) {

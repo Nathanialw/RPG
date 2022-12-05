@@ -67,7 +67,7 @@ namespace  Social_Control {
     }
 
     void Greet (entt::registry &zone, entt::entity &unitID, entt::entity &targetID) {
-        auto &sheetData = zone.get<Component::Sprite_Sheet_Info>(unitID);
+        auto &sheetData = zone.get<Rendering_Components::Sprite_Sheet_Info>(unitID);
         auto &action = zone.get<Component::Action>(unitID);
         action.state = Component::talk;
         sheetData.currentFrame = 0;

@@ -342,7 +342,7 @@ namespace Dynamic_Quad_Tree {
 			/* only does a quad search for those that moved*/
 
 	void Update_Quad_Tree_Positions(entt::registry& zone) {
-		auto view = zone.view<Component::Position, Component::Interaction_Rect, Component::Sprite_Offset>();
+		auto view = zone.view<Component::Position, Component::Interaction_Rect, Rendering_Components::Sprite_Offset>();
 
 		for (std::_List_iterator object_it = treeObjects.begin(); object_it != treeObjects.end(); ++object_it) {
 			auto& entity = object_it->item;

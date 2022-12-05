@@ -25,7 +25,7 @@ namespace Units {
 //				{ {3072, 0, 128, 128}, 2816, 512,  0, 0, 75, 0 }, //cheer
 //				{ {3584, 0, 128, 128}, 3584, 512,  1, 0, 75, 0 },//range
 //			};
-			World::zone.emplace<Component::Sprite_Offset>(archer, 60.0f, 95.0f);
+			World::zone.emplace<Rendering_Components::Sprite_Offset>(archer, 60.0f, 95.0f);
 
 			World::zone.emplace<Component::Action>(archer, Component::idle);
 //			World::zone.get<Component::Action>(archer).frameCount = {{0, 0}, {4, 0}, {8, 0}, {4, 0}, {0, 0}, {2, 0}, {5, 0}, {4, 0}, {4, 0} };

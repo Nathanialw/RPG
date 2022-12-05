@@ -54,16 +54,16 @@ namespace Spells {
 
         SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
         std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
-        std::unordered_map<std::string, Component::Sheet_Data_Flare>* flareSheetData = NULL;
+        std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
 
         SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
         flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
 
-        auto &sprite = World::zone.emplace<Component::Sprite_Sheet_Info>(entity);
+        auto &sprite = World::zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
         sprite.flareSpritesheet = flareSheetData;
         sprite.sheet_name = name;
         sprite.type = sheetDataFlare.sheet_type;
-        World::zone.emplace<Component::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+        World::zone.emplace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
 		World::zone.emplace<Component::Scale>(entity, scale);
 
@@ -98,7 +98,7 @@ namespace Spells {
 	}
 
 	void cast_fireball(const char *name) {
-		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Direction, Component::Action, Component::Position, Component::Casting, Component::Velocity>();
+		auto view = World::zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Direction, Component::Action, Component::Position, Component::Casting, Component::Velocity>();
 		for (auto entity : view) {
 
             auto& casting = view.get<Component::Casting>(entity);
@@ -114,19 +114,19 @@ namespace Spells {
             casting.counter -= Timer::timeStep;
             if (casting.counter <= 0) {
                 auto &target = World::zone.emplace_or_replace<Component::Cast>(entity, casting.x, casting.y);
-			    auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+			    auto& sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
                 auto &action = view.get<Component::Action>(entity);
 
                 ///set into casting mode
                 if (action.state == Component::casting) {
-                    sheetData.finalFrame = Component::normalFrame;
+                    sheetData.finalFrame = Rendering_Components::normalFrame;
                     sheetData.frameTime = 0;
                     sheetData.currentFrame = 0;
                 }
                 action.state = Component::cast;
 
                 ///cast Fireball
-                if (sheetData.finalFrame == Component::finalFrame) {
+                if (sheetData.finalFrame == Rendering_Components::finalFrame) {
                     create_fireball(entity, position.x, position.y, direction, name, target.targetX, target.targetY);
                     World::zone.remove<Component::Casting>(entity);
                 }
@@ -192,11 +192,11 @@ namespace Spells {
 	}
 	
 	void Casting_Updater() {
-		auto view = World::zone.view<Component::Sprite_Sheet_Info, Component::Cast, Component::Action>();
+		auto view = World::zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Cast, Component::Action>();
 		for (auto entity : view) {
 			auto& action = view.get<Component::Action>(entity);
-			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
-            if (sheetData.finalFrame == Component::finalFrame) {
+			auto& sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
+            if (sheetData.finalFrame == Rendering_Components::finalFrame) {
                 World::zone.remove<Component::Cast>(entity);
             }
 		}

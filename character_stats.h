@@ -30,9 +30,9 @@ namespace Character_Stats {
 
 	//run when equipping or unequipping an item
 	void Update_Equip_slots(entt::registry& zone) { //run funtion on item equip or unequip
-		auto view = zone.view<Component::Sprite_Sheet_Info, Item_Component::Item_Equip, Item_Component::Equipment>();
+		auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Item_Component::Item_Equip, Item_Component::Equipment>();
 		for (auto entity : view) {
-			auto& sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+			auto& sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
 			auto& equipment = view.get<Item_Component::Equipment>(entity);
 
             //iterate through each equip slot
@@ -40,7 +40,7 @@ namespace Character_Stats {
                 if (item.second != Item_Component::emptyEquipSlot) {
 
                     //get the item at the item type index
-                    auto &weaponSheet = zone.get<Component::Sprite_Sheet_Info>(item.second);
+                    auto &weaponSheet = zone.get<Rendering_Components::Sprite_Sheet_Info>(item.second);
                     if (weaponSheet.sheetData) {
                         sheetData.equipmentSheets[(int) item.first].ItemSheetData = weaponSheet.sheetData;
                         sheetData.equipmentSheets[(int) item.first].name = weaponSheet.sheet_name;

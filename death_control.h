@@ -14,7 +14,7 @@ namespace Death_Component {
 
 namespace Death_Control {
 
-    bool Death_Sequence (Component::Direction &direction, entt::entity entity, Component::Scale &scale, Component::Sprite_Sheet_Info &sheetData, Component::Action& action, int &currentFrame, int &numFrames) {
+    bool Death_Sequence (Component::Direction &direction, entt::entity entity, Component::Scale &scale, Rendering_Components::Sprite_Sheet_Info &sheetData, Component::Action& action, int &currentFrame, int &numFrames) {
         if (action.state == Component::dying) {
             if (currentFrame < numFrames - 1) {
                 currentFrame++;
@@ -51,17 +51,17 @@ namespace Death_Control {
     }
 
     void isDead(entt::registry& zone) {
-        auto view = zone.view<Component::Sprite_Sheet_Info, Component::Action, Component::Health, Component::Position, Component::Radius, Component::Sprite_Offset, Component::Body, Component::In_Object_Tree, Component::Direction>(entt::exclude<Component::Spell>);
+        auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Action, Component::Health, Component::Position, Component::Radius, Rendering_Components::Sprite_Offset, Component::Body, Component::In_Object_Tree, Component::Direction>(entt::exclude<Component::Spell>);
         for (auto entity: view) {
             auto &health = view.get<Component::Health>(entity);
             if (health.currentHealth <= 0) {
                 view.get<Component::Action>(entity).state = Component::dying;
-                auto &sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
+                auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
                 sheetData.currentFrame = 0;
 //                view.get<Component::Sprite_Sheet_Info>(entity).finalFrame = Component::normalFrame;
                 auto &position = view.get<Component::Position>(entity);
                 auto &radius = view.get<Component::Radius>(entity).fRadius;
-                auto &offset = view.get<Component::Sprite_Offset>(entity);
+                auto &offset = view.get<Rendering_Components::Sprite_Offset>(entity);
                 auto &body = view.get<Component::Body>(entity).body;
                 auto &inTree = view.get<Component::In_Object_Tree>(entity).inTree;
                 auto &direction = view.get<Component::Direction>(entity);
@@ -104,18 +104,18 @@ namespace Death_Control {
     };
 
     void Drop_Equipment_On_Death (entt::registry &zone) {
-        auto view = zone.view<Item_Component::Equipment, Component::Drop_Equipment, Component::Position, Component::Direction, Component::Sprite_Sheet_Info, Component::Sprite_Offset>();
+        auto view = zone.view<Item_Component::Equipment, Component::Drop_Equipment, Component::Position, Component::Direction, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset>();
         for (auto entity : view) {
             auto &equipment = view.get<Item_Component::Equipment>(entity);
             auto &position = view.get<Component::Position>(entity);
             auto &direction = view.get<Component::Direction>(entity);
-            auto &unitOffset = view.get<Component::Sprite_Offset>(entity);
-            auto &sheetData = view.get<Component::Sprite_Sheet_Info>(entity);
-            auto &offset = view.get<Component::Sprite_Offset>(entity);
+            auto &unitOffset = view.get<Rendering_Components::Sprite_Offset>(entity);
+            auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
+            auto &offset = view.get<Rendering_Components::Sprite_Offset>(entity);
 
             for (auto item : equipment.equippedItems) {
                 if (item.second != emptyEquipSlot) {
-                    auto &offset = World::zone.get<Component::Sprite_Offset>(item.second);
+                    auto &offset = World::zone.get<Rendering_Components::Sprite_Offset>(item.second);
 
                     auto &scale = World::zone.get<Component::Scale>(item.second);
                     auto &itemPosition = zone.get<Component::Position>(item.second);
@@ -153,7 +153,7 @@ namespace Death_Control {
         for (auto item : view) {
             auto &corpse = view.get<Item_On_Corpse>(item);
 
-            auto &sheetData = zone.get<Component::Sprite_Sheet_Info>(corpse.entity);
+            auto &sheetData = zone.get<Rendering_Components::Sprite_Sheet_Info>(corpse.entity);
             sheetData.equipmentSheets[(int)corpse.itemType].name = "empty";
             sheetData.equipmentSheets[(int)corpse.itemType].FrameIndex = 0;
             sheetData.equipmentSheets[(int)corpse.itemType].ItemSheetData = NULL;
@@ -168,10 +168,10 @@ namespace Death_Control {
     }
 
     void Set_As_Corpse (entt::registry &zone) {
-        auto view = zone.view<Component::Position, Death_Component::Corpse, Component::Sprite_Offset>();
+        auto view = zone.view<Component::Position, Death_Component::Corpse, Rendering_Components::Sprite_Offset>();
         for (auto entity : view) {
             auto &position = view.get<Component::Position>(entity);
-            auto &offset = view.get<Component::Sprite_Offset>(entity);
+            auto &offset = view.get<Rendering_Components::Sprite_Offset>(entity);
 
             position.x -= offset.x;
             position.y -= offset.y;
