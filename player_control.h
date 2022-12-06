@@ -16,7 +16,7 @@ namespace Player_Control {
 		Player_Move_Poll += Timer::timeStep;
 		if (Player_Move_Poll >= 0) {
 			Player_Move_Poll = 0;
-			auto view = zone.view<Component::Position, Component::Velocity, Component::Action, Component::Moving, Player_Component::Attack_Move, Component::Melee_Range>();
+			auto view = zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Moving, Player_Component::Attack_Move, Component::Melee_Range>();
 			for (auto entity : view) {
                 //if not in range
                 auto& position = view.get<Component::Position>(entity);
@@ -27,9 +27,9 @@ namespace Player_Control {
                 Component::Radius targetRadius;
                 targetRadius.fRadius = targetData.hitRadius;
                 if (!Entity_Control::Target_In_Melee_Range(zone, position, meleeRange, targetPosition, targetRadius)) {
-                    auto &action = view.get<Component::Action>(entity);
+                    auto &action = view.get<Action_Component::Action>(entity);
                     auto &v = view.get<Component::Velocity>(entity);
-                    action.state = Component::walk;
+                    action.state = Action_Component::walk;
                     
                     v.magnitude.x = v.speed * (targetPosition.x - position.x);
                     v.magnitude.y = v.speed * (targetPosition.y - position.y);
@@ -73,10 +73,10 @@ namespace Player_Control {
 	}
 
     void Remove_Attack(entt::registry& zone) {
-        auto view = zone.view<Player_Component::Attack_Move, Component::Action>();
+        auto view = zone.view<Player_Component::Attack_Move, Action_Component::Action>();
         for (auto entity : view) {
-            auto &action = view.get<Component::Action>(entity);
-            if (action.state != Component::walk) {
+            auto &action = view.get<Action_Component::Action>(entity);
+            if (action.state != Action_Component::walk) {
                 zone.remove<Player_Component::Attack_Move>(entity);
                 zone.remove<Component::Moving>(entity);
             }

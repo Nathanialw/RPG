@@ -1,5 +1,9 @@
 #pragma once
+#include <stdint.h>
 #include "db.h"
+#include "action_components.h"
+#include "rendering_components.h"
+
 
 namespace Spritesheet_Structs {
 
@@ -32,7 +36,7 @@ namespace Spritesheet_Structs {
         //size of sprites
         int w;
         int h;
-        std::map<Component::Action_State, Frame_Data>* frameData;
+        std::map<Action_Component::Action_State, Frame_Data>* frameData;
         float offset_x;
         float offset_y;
         SDL_Texture *texture;
@@ -42,7 +46,7 @@ namespace Spritesheet_Structs {
     spriteSheet* cow;
     spriteSheet* skeleton_00;
 
-    std::map<Component::Action_State, Frame_Data> frameData;
+    std::map<Action_Component::Action_State, Frame_Data> frameData;
 
 
     struct Data_On_Unit {
@@ -104,6 +108,232 @@ namespace Spritesheet_Structs {
         return unit_name;
     }
 
+    void Calculate_Start_Frame (std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, Action_Component::Action_State &action, int &frameIndex) {
+        if (actionFrameData[action].startFrame == 9999) {
+            actionFrameData[action].startFrame = frameIndex;
+        }
+    }
 
+    void Calculate_Num_Frames (std::string &frame, std::unordered_map<uint8_t,  Rendering_Components::Frame_Data_Packer> &actionFrameData, Action_Component::Action_State &action) {
+        if (frame.back() != '1') {
+            return;
+        }
+        else {
+            actionFrameData[action].NumFrames++;
+        }
+    }
 
+    int i = 120;
+
+    bool Get_Frame_Action_Data (std::string unitType, std::string &name, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+
+        /// get the
+        std::string keyCheck = name;
+        std::string frameCopy = frame;
+
+        if (frameCopy.substr(0, keyCheck.size()) != keyCheck) {
+            return false;
+        }
+
+        auto index = frameCopy.find(name); // Find the starting position of substring in the string
+        if  (index != std::string::npos) {
+            frameCopy.erase(index, keyCheck.length() + 1); // erase function takes two parameter, the starting index in the string from where you want to erase characters and total no of characters you want to erase.
+        }
+
+        ///just grab the first 3 letters of the string
+        std::string checkAction = frameCopy.erase(frameCopy.length()-6);
+
+        Action_Component::Action_State action;
+        /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
+        if (unitType == "RTP_female" || unitType == "RTP_male") {
+            if (checkAction == "1-H Attack 3") {
+                action = Action_Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle 2") {
+                action = Action_Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Running") {
+                action = Action_Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = 75;
+            } else if (checkAction == "Get Hit 2") {
+                action = Action_Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead-Down Forward") {
+                action = Action_Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = 100;
+            } else if (checkAction == "Praying") {
+                action = Action_Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = 150;
+                actionFrameData[action].reverses = 0;
+            } else if (checkAction == "Casting") {
+                action = Action_Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Down 2") {
+                action = Action_Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Talking 2") {
+                action = Action_Component::Action_State::talk;
+                actionFrameData[action].frameSpeed = i;
+            }
+            else {
+                return false;
+            }
+        }
+        else if (unitType == "classes_male" || unitType == "classes_female") {
+            if (checkAction == "Attack Two Hand Swing") {
+                action = Action_Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle3") {
+                action = Action_Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Run") {
+                action = Action_Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = 75;
+            } else if (checkAction == "Get Hit") {
+                action = Action_Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Critical Health Idle 1") {
+                action = Action_Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = 100;
+            } else if (checkAction == "Casting Idle") {
+                action = Action_Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = 150;
+                actionFrameData[action].reverses = 1;
+            } else if (checkAction == "Casting") {
+                action = Action_Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead") {
+                action = Action_Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Hand Casual") {
+                action = Action_Component::Action_State::talk;
+                actionFrameData[action].frameSpeed = i;
+            }
+            else {
+                return false;
+            }
+        }
+
+        else if (unitType == "Medieval_Underdeep_Dwarves_Male" || unitType == "medieval_human_female" || unitType == "medieval_human_male") {
+            if (checkAction == "attack1") {
+                action = Action_Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "idle1") {
+                action = Action_Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "running") {
+                action = Action_Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "collapse") {
+                action = Action_Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "ko") {
+                action = Action_Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "dead") {
+                action = Action_Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "kneel") {
+                action = Action_Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "sitting") {
+                action = Action_Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else {
+                return false;
+            }
+        }
+
+        else {
+            if (checkAction == "1-H Attack 1") {
+                action = Action_Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Attack Two Hand Swing") {
+                action = Action_Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Attack 1") {
+                action = Action_Component::Action_State::attack;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "1-H Idle") {
+                action = Action_Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle") {
+                action = Action_Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Idle1") {
+                action = Action_Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "idle1") {
+                action = Action_Component::Action_State::idle;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "1-H Walk") {
+                action = Action_Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "walking") {
+                action = Action_Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+//            } else if (checkAction == "Walking") {
+//                action = Action_Component::Action_State::walk;
+//                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Run") {
+                action = Action_Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Running") {
+                action = Action_Component::Action_State::walk;
+                actionFrameData[action].frameSpeed = 75;
+            } else if (checkAction == "Get Hit 1") {
+                action = Action_Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Get Hit") {
+                action = Action_Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "dead") {
+                action = Action_Component::Action_State::struck;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "collapse") {
+                action = Action_Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "ko") {
+                action = Action_Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead") {
+                action = Action_Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead2") {
+                action = Action_Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Down_1") {
+                action = Action_Component::Action_State::dead;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead To Down") {
+                action = Action_Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Dead2") {
+                action = Action_Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Woozy") {
+                action = Action_Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "ko") {
+                action = Action_Component::Action_State::dying;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Cast Idle") {
+                action = Action_Component::Action_State::casting;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Casting") {
+                action = Action_Component::Action_State::cast;
+                actionFrameData[action].frameSpeed = i;
+            } else {
+                return false;
+            }
+        }
+        //only run when the number changes
+
+        Calculate_Start_Frame(actionFrameData, action, frameIndex);
+
+//        Utilities::Log("----");
+//        Utilities::Log(frame);
+        Calculate_Num_Frames(frame, actionFrameData, action);
+        return true;
+    }
 }

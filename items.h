@@ -96,12 +96,6 @@ namespace Items {
 		return Armor_Type::cloth;
 	}
 
-    void armor_texture(Item_Type &itemType, Rendering_Components::Sprite_Sheet_Info &sheetData, std::unordered_map<std::string, Rendering_Components::Sheet_Data>* equippedSheetData, std::string &itemName) {
-        sheetData.equipmentSheets[(int)itemType].ItemSheetData = equippedSheetData;
-        sheetData.equipmentSheets[(int)itemType].name = itemName;
-    }
-
-
     Rendering_Components::Color Set_Color() {
         Rendering_Components::Color color;
         color.r = rand() % 254 + 1;
@@ -144,7 +138,6 @@ namespace Items {
 
 
 		auto &sheetData = World::zone.emplace<Rendering_Components::Sprite_Sheet_Info>(item);
-        armor_texture(type, sheetData, equippedSheetData.itemData, equippedSheetData.index);
         sheetData.type = "RPG_Tools";
         sheetData.sheetData = equippedSheetData.itemData;
         sheetData.sheet_name = equippedSheetData.index;
@@ -222,7 +215,6 @@ namespace Items {
         if (equippedSheetData.itemData == NULL) {
             return "none";
         }
-        armor_texture(itemType, sheetData, equippedSheetData.itemData, equippedSheetData.index);
 //        }
 //        else {
 //            return "none";
@@ -244,7 +236,7 @@ namespace Items {
 		float scale = 0.7f;
 
 		World::zone.emplace<Component::Scale>(item, scale);
-		World::zone.emplace<Component::Action>(item, Component::dying);
+		World::zone.emplace<Action_Component::Action>(item, Action_Component::dying);
 		World::zone.emplace<Component::Direction>(item, direction);
 		World::zone.emplace<Name>(item, name);
 		World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
@@ -366,7 +358,7 @@ namespace Items {
     void Create_Item1(entt::entity &item, Component::Position& position, const std::string &name, Item_Stats &itemStats) {
         float scale = 0.7f;
         World::zone.emplace<Component::Scale>(item, scale);
-        World::zone.emplace<Component::Action>(item, Component::isStatic);
+        World::zone.emplace<Action_Component::Action>(item, Action_Component::isStatic);
         World::zone.emplace<Name>(item, name);
         World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
         auto &stats = World::zone.emplace<Item_Stats>(item);

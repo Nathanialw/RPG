@@ -2,6 +2,7 @@ cmake-build-debug
 cmake-build-release
 CMakeFiles
 .cmake
+.idea
 bin
 sprites/PVG_guides
 cmake-build-relwithdebinfo

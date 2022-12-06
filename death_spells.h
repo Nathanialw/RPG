@@ -39,7 +39,7 @@ namespace Death_Spells {
 
         auto &scale = zone.emplace<Component::Scale>(skeleton0, 1.0f);
 
-		zone.emplace<Component::Action>(skeleton0, Component::idle);
+		zone.emplace<Action_Component::Action>(skeleton0, Action_Component::idle);
 
 		auto& position = zone.emplace<Component::Position>(skeleton0, x+i-j-k+l, y+j-i-k+l);
 		zone.emplace<Component::Radius>(skeleton0, data.radius);

@@ -96,65 +96,6 @@ namespace Component {
     /// need to have a check somewhere to see whether I am in 1h, 2h or bow mode and pick the correct array
     /// maybe save a piece of state within another component already used that denotes the current weapon state, use that to index which array to read from
 
-    enum Weapon_State {
-        unarmed,
-        _1hand,
-        _2hand,
-        bow,
-        xbow
-    };
-
-	enum Action_State {
-		isStatic,
-		idle,
-		idle2,
-		idle6,
-		walk,
-        walkBow,
-        run,
-		attack,
-        attack2,
-        attack2H_1,
-        attack2H_2,
-        idle2H,
-        idleCritical1,
-        idleCritical2,
-        talk,
-        run2H,
-        walk2H,
-        casting,
-		cast,
-		struck,
-        block,
-        evade,
-        stunned,
-        idle_low_hp,
-        idle_low_hp2,
-		dying,
-		dead,
-		dead2,
-		dead3,
-		dead4,
-		dead5,
-		dead6,
-        resting,
-		ranged,
-        ranged_bow1,
-        idleBow,
-		cheer,
-        behavior,
-		summoned,
-        kneel,
-        pray_kneeled,
-        pray_standing,
-        in_combat,
-        in_combat2,
-        climb,
-        use_item,
-        crouch
-
-	};
-
 	enum class Direction {
 		E,
 		N,
@@ -165,9 +106,6 @@ namespace Component {
 		SW,
 		W
 	};
-    struct Action {
-        Action_State state;
-    };
 
     struct Drop_Equipment {
 

@@ -27,7 +27,7 @@ namespace Units {
 //			};
 			World::zone.emplace<Rendering_Components::Sprite_Offset>(archer, 60.0f, 95.0f);
 
-			World::zone.emplace<Component::Action>(archer, Component::idle);
+			World::zone.emplace<Action_Component::Action>(archer, Action_Component::idle);
 //			World::zone.get<Component::Action>(archer).frameCount = {{0, 0}, {4, 0}, {8, 0}, {4, 0}, {0, 0}, {2, 0}, {5, 0}, {4, 0}, {4, 0} };
 
 			World::zone.emplace<Component::Position>(archer, 400.0f, 500.0f);

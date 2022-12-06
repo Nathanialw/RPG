@@ -26,7 +26,7 @@ namespace Entity_Control {
 
     void Spell_Attack(entt::registry& zone, entt::entity& entity, float& x, float& y, const char* name) {
         if (zone.any_of<Component::Casting>(entity) == false) { //locks out casting until cast animation has finished
-            zone.get<Component::Action>(entity).state = Component::casting;
+            zone.get<Action_Component::Action>(entity).state = Action_Component::casting;
             zone.remove<Component::Moving>(entity);
             zone.emplace_or_replace<Component::Casting>(entity, 2000, 2000, x, y);
             zone.emplace_or_replace<Component::Spell_Name>(entity, name);

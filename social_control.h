@@ -67,10 +67,9 @@ namespace  Social_Control {
     }
 
     void Greet (entt::registry &zone, entt::entity &unitID, entt::entity &targetID) {
-        auto &sheetData = zone.get<Rendering_Components::Sprite_Sheet_Info>(unitID);
-        auto &action = zone.get<Component::Action>(unitID);
-        action.state = Component::talk;
-        sheetData.currentFrame = 0;
+        auto &action = zone.get<Action_Component::Action>(unitID);
+        action.state = Action_Component::talk;
+        action.frame = 0;
 
         std::string text_type = "greeting";
         Interact(zone, unitID, text_type);

@@ -30,10 +30,11 @@ namespace Character_Stats {
 
 	//run when equipping or unequipping an item
 	void Update_Equip_slots(entt::registry& zone) { //run funtion on item equip or unequip
-		auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Item_Component::Item_Equip, Item_Component::Equipment>();
+		auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Item_Component::Item_Equip, Item_Component::Equipment, Rendering_Components::Equipment_Sprites>();
 		for (auto entity : view) {
 			auto& sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
 			auto& equipment = view.get<Item_Component::Equipment>(entity);
+			auto& equipmentSprites = view.get<Rendering_Components::Equipment_Sprites>(entity);
 
             //iterate through each equip slot
 			for (auto &item : equipment.equippedItems) {
@@ -42,16 +43,16 @@ namespace Character_Stats {
                     //get the item at the item type index
                     auto &weaponSheet = zone.get<Rendering_Components::Sprite_Sheet_Info>(item.second);
                     if (weaponSheet.sheetData) {
-                        sheetData.equipmentSheets[(int) item.first].ItemSheetData = weaponSheet.sheetData;
-                        sheetData.equipmentSheets[(int) item.first].name = weaponSheet.sheet_name;
-                        sheetData.equipmentSheets[(int) item.first].itemID = item.second;
+                        equipmentSprites.sheet[(int) item.first].ItemSheetData = weaponSheet.sheetData;
+                        equipmentSprites.sheet[(int) item.first].name = weaponSheet.sheet_name;
+                        equipmentSprites.sheet[(int) item.first].itemID = item.second;
                     }
                 }
 
                 else if (item.second == Item_Component::emptyEquipSlot) {
-                    sheetData.equipmentSheets[(int)item.first].ItemSheetData = NULL;
-                    sheetData.equipmentSheets[(int)item.first].name = "empty";
-                    sheetData.equipmentSheets[(int)item.first].itemID = emptyEquipSlot;
+                    equipmentSprites.sheet[(int)item.first].ItemSheetData = NULL;
+                    equipmentSprites.sheet[(int)item.first].name = "empty";
+                    equipmentSprites.sheet[(int)item.first].itemID = emptyEquipSlot;
                 }
             }
 		}

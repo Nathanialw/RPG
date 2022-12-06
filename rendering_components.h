@@ -8,11 +8,7 @@
 
 namespace Rendering_Components {
 
-    enum Frame {
-        firstFrame,
-        normalFrame,
-        finalFrame
-    };
+
 
     struct Sprite_Offset {
         float x;
@@ -45,7 +41,7 @@ namespace Rendering_Components {
         Color color = { 255, 255, 255 };
         std::vector<Sprite_Sheet_Data> frameList;
         /// start frame by state, number of frames per state.
-        std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData;
+        std::unordered_map<uint8_t , Frame_Data_Packer> actionFrameData;
         ///store the frame duration for each frame of each state, probably not worth it
 //        std::unordered_map<Component::Action_State, std::vector<int>> Frame_Speed_By_Action;
     };
@@ -58,7 +54,7 @@ namespace Rendering_Components {
         int spriteHeight = 0;
 //        Frame_Data_Packer actionFrameDataArray[17];
 //        std::vector<Frame_Data_Packer> actionFrameDataVector[20];
-        std::unordered_map<Component::Action_State, Frame_Data_Packer> actionFrameData;
+        std::unordered_map<uint8_t, Frame_Data_Packer> actionFrameData;
     };
 
     struct Mount_Sprite {
@@ -75,8 +71,9 @@ namespace Rendering_Components {
     };
 
     struct Equipment_Sprites {
-        Equip_Slot_Data equipmentSheets[30];
+        Equip_Slot_Data sheet[30];
     };
+
 
     ///component for the unit
     struct Sprite_Sheet_Info {
@@ -89,15 +86,14 @@ namespace Rendering_Components {
         std::unordered_map<std::string, Sheet_Data>* mount = NULL;
         std::string mount_name = "unmounted";
 
-        Equip_Slot_Data equipmentSheets[30];
+//        Equip_Slot_Data equipmentSheets[30];
 
         ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
 //        std::string* sheetData;
 //        int index = 0;
-        uint64_t frameTime = 0;
-        int frameIndex = 0;
+        uint16_t frameIndex = 0;
         uint8_t reversing = 0;
-        int currentFrame = 0;
-        Frame finalFrame = normalFrame;
+//        int currentFrame = 0;
+//        Frame finalFrame = normalFrame;
     };
 }

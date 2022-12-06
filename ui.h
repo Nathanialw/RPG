@@ -275,7 +275,6 @@ namespace UI {
                     if (Mouse::bRect_inside_Cursor(scaledSlot)) {
                         return equipment.equippedItems[item.first];
                     }
-
                 }
             }
 			return emptyEquipSlot;
@@ -334,7 +333,7 @@ namespace UI {
 
                 auto &sheetData = zone.get<Rendering_Components::Sprite_Sheet_Info>(item_ID);
                 auto direction = zone.emplace_or_replace<Component::Direction>(item_ID, (Component::Direction)(rand() % 7 + 1));
-                auto &clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList.at(sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(Component::dead).startFrame + (int)direction);
+                auto &clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList.at(sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(Action_Component::dead).startFrame + (int)direction);
 
                 zone.remove<Component::On_Mouse>(item_ID);
                 SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect.clip);
@@ -346,8 +345,8 @@ namespace UI {
                 World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
 
                 World::zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
-                World::zone.get<Component::Action>(item_ID).state = Component::dying;
-                World::zone.get<Rendering_Components::Sprite_Sheet_Info>(item_ID).currentFrame = 0;
+                auto &action = World::zone.get<Action_Component::Action>(item_ID);
+                Action_Component::Set_State(action, Action_Component::Action_State::dying);
             }
         }
         isItemCurrentlyHeld = false;
@@ -446,15 +445,15 @@ namespace UI {
 		Player_Move_Poll += Timer::timeStep;
 		if (Player_Move_Poll >= 200) {
 			Player_Move_Poll = 0;
-			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Component::Action, Component::Moving>();
+			auto view = World::zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Action_Component::Action, Component::Moving>();
 			for (auto entity : view) {
 				const auto& x = view.get<Component::Position>(entity);
 				const auto& y = view.get<Component::Position>(entity);
-				auto& act = view.get<Component::Action>(entity);
+				auto& action = view.get<Action_Component::Action>(entity);
 				auto& v = view.get<Component::Velocity>(entity);
 				auto& mov = view.get<Component::Pickup_Item>(entity);
-				act.state = Component::walk;
-				v.magnitude.x = v.speed * (mov.x - x.x);
+                action.state = Action_Component::walk;
+                v.magnitude.x = v.speed * (mov.x - x.x);
 				v.magnitude.y = v.speed * (mov.y - y.y);
 
 			}
@@ -462,19 +461,17 @@ namespace UI {
 	}
 
 	void Mouse_Move_Arrived_Pickup_Item(entt::registry &zone, bool & isItemCurrentlyHeld) {
-		auto view = World::zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Position, Component::Velocity, Component::Action, Component::Pickup_Item>();
+		auto view = World::zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Pickup_Item>();
 		for (auto entity : view) {
-			auto& action = view.get<Component::Action>(entity);
+			auto& action = view.get<Action_Component::Action>(entity);
 			auto& v = view.get<Component::Velocity>(entity);
 			const auto& position = view.get<Component::Position>(entity);
 			auto& itemData = view.get<Component::Pickup_Item>(entity);
-			auto& sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
 			if (Check_If_Arrived(position.x, position.y, itemData.x, itemData.y)) {
-				if (action.state == Component::walk) {
+				if (action.state == Action_Component::Action_State::walk) {
 					v.magnitude.x = 0.0f;
 					v.magnitude.y = 0.0f;
-					action.state = Component::idle;
-                    sheetData.currentFrame = 0;
+                    Action_Component::Set_State(action, Action_Component::Action_State::idle);
                     World::zone.remove<Component::Moving>(entity);
 				}
 

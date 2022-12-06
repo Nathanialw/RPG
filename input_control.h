@@ -30,8 +30,8 @@ namespace Input_Control {
             Component::Pickup_Item itemData = {item_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
             UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
 
-            auto &action = zone.get<Component::Action>(player_ID);
-            action.state = Component::idle;
+            auto &action = zone.get<Action_Component::Action>(player_ID);
+            action.state = Action_Component::idle;
 
             zone.remove<Component::Moving>(player_ID);
             zone.remove<Component::Pickup_Item>(player_ID);
@@ -97,8 +97,8 @@ namespace Input_Control {
                                 Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
                                 UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
                                 ///stop movement
-                                auto &action = zone.get<Component::Action>(player_ID);
-                                action.state = Component::idle;
+                                auto &action = zone.get<Action_Component::Action>(player_ID);
+                                action.state = Action_Component::idle;
                                 zone.remove<Component::Moving>(player_ID);
                                 return true;
                             } else {

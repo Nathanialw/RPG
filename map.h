@@ -15,6 +15,7 @@
 #include "social_control.h"
 #include "character_data.h"
 #include "rendering_components.h"
+#include "action_components.h"
 
 //cell 100x100 pixels (change pixels to a meters??)
 //map 100 cells x 100 cells
@@ -72,19 +73,19 @@ namespace Maps {
     void Set_Collision_Box (entt::registry &zone, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
         if (entity_class == "polygon_building") {
             Collision::Create_Static_Body_Polygon(zone, entity, position.x, position.y, pointVecs);
-            zone.emplace<Component::Action>(entity, Component::isStatic);
+            zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
             zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
             zone.emplace<Component::Line_Segment>(entity, line);
         }
         else if (entity_class == "rect_building") {
             Collision::Create_Static_Body_Rect(zone, entity, position.x, position.y, aabb);
-            zone.emplace<Component::Action>(entity, Component::isStatic);
+            zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
             zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
         }
         else if (entity_class == "round_building") {
             float rad = 185.0f;
             Collision::Create_Static_Body(zone, entity, position.x, position.y, rad);
-            zone.emplace<Component::Action>(entity, Component::isStatic);
+            zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
             zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
         }
     }
@@ -212,6 +213,7 @@ namespace Maps {
 
             if (data.equip_type != "none") {
                 zone.emplace<Item_Component::Equipment>(entity, data.equip_type);
+                zone.emplace<Rendering_Components::Equipment_Sprites>(entity);
             }
 
             bool yes = true;
@@ -223,13 +225,10 @@ namespace Maps {
                 zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);
                 zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0);
             }
-            else {
-                Utilities::Log("non-combaT");
-            }
 
             zone.emplace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
             zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
-            zone.emplace<Component::Action>(entity, Component::idle);
+            zone.emplace<Action_Component::Action>(entity, Action_Component::idle);
             zone.emplace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
             auto &health = zone.emplace<Component::Health>(entity, int(data.health * data.scale));
             zone.emplace<Component::Soldier>(entity);
@@ -251,7 +250,7 @@ namespace Maps {
             /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
             zone.emplace<Component::Direction>(entity, Component::Direction::W);
             Collision::Create_Static_Body(zone, entity, position.x, position.y, (data.radius * data.scale));
-            zone.emplace<Component::Action>(entity, Component::isStatic);
+            zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
             zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
         }
     }

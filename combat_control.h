@@ -3,6 +3,7 @@
 #include "components.h"
 #include "movement.h"
 #include "damage_text.h"
+#include "action_components.h"
 
 namespace Combat_Control {
 
@@ -15,25 +16,24 @@ namespace Combat_Control {
 	}
 
     void Attack_Cast(entt::registry &zone) {
-        auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Direction, Component::Position, Component::Action, Component::Attack, Component::Velocity, Component::Attack_Speed>(entt::exclude<Component::Attacking>);
+        auto view = zone.view<Component::Direction, Component::Position, Action_Component::Action, Component::Attack, Component::Velocity, Component::Attack_Speed>(entt::exclude<Component::Attacking>);
         for (auto entity : view) {
             //initiates a point and click attack
             auto& attackSpeed = view.get<Component::Attack_Speed>(entity);
-            auto &act = view.get<Component::Action>(entity);
+            auto &action = view.get<Action_Component::Action>(entity);
                 ///ensures it attacks at the end of the last frame of the attack
                 /// if current attackSpeed >= attackSpeed value then subtract the attackSpeed value from the current attackSpeed counter
-            if (act.state != Component::attack && act.state != Component::struck && act.state != Component::block && attackSpeed.counter <= 0) {
+            if (action.state != Action_Component::attack && action.state != Action_Component::struck && action.state != Action_Component::block && attackSpeed.counter <= 0) {
                 zone.emplace_or_replace<Component::In_Combat>(entity, true);
                 auto &direction = view.get<Component::Direction>(entity);
                 auto &angle = view.get<Component::Velocity>(entity).angle;
                 auto &target = view.get<Component::Attack>(entity);
                 auto &position = view.get<Component::Position>(entity);
-                auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
                 direction = Movement::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
                 attackSpeed.counter = attackSpeed.period;
                 ///add attack state for render state
-                act.state = Component::attack;
-                sheetData.currentFrame = 0;
+                action.state = Action_Component::attack;
+                action.frame = 0;
                 zone.emplace_or_replace<Component::Attacking>(entity, target.target_ID);
                 zone.remove<Component::Attack>(entity);
             }
@@ -45,72 +45,33 @@ namespace Combat_Control {
     }
 
     void Attack_Target(entt::registry &zone) {
-        auto view = zone.view<Component::Attacking, Component::Action, Component::Melee_Damage, Rendering_Components::Sprite_Sheet_Info>();
+        auto view = zone.view<Component::Attacking, Action_Component::Action, Component::Melee_Damage>();
         for (auto entity : view) {
-            auto& action = view.get<Component::Action>(entity);
-            if (action.state == Component::attack) {
+            auto& action = view.get<Action_Component::Action>(entity);
+            if (action.state == Action_Component::attack) {
                 ///ensures it attacks at the end of the last frame of the attack
-                auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
-                    ///Flare sprites
-                if (sheetData.flareSpritesheet) {
-//                    Utilities::Log(sheetData.currentFrame);
-                    if (sheetData.finalFrame == Rendering_Components::finalFrame) {
-                        //executes a point and click attack
-                        auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
-                        auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
-                        Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage};
-                        int damage = Calculate_Damage(damageRange);
-                        if (zone.any_of<Component::Input>(entity)) {
-                            Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage);
-                        }
+                if (action.frameState == Action_Component::last) {
+                    //executes a point and click attack
+                    auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
+                    auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
+                        /// calculate damage and show for player
+                    Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage};
+                    int damage = Calculate_Damage(damageRange);
 
-                        auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
-
-                        if (meleeDamage.critical) {
-                            struck.critical = true;
-                            auto &targetAction = zone.get_or_emplace<Component::Action>(target_ID);
-                            auto &targetSheetData = zone.get_or_emplace<Rendering_Components::Sprite_Sheet_Info>(target_ID);
-                            targetAction.state = Component::struck;
-                            targetSheetData.currentFrame = 0;
-                        }
-
-                        struck.struck += damage;
-                        //create_attack(position, direction);
-                        zone.remove<Component::Attacking>(entity);
-                        //act.frameCount[act.state].currentFrame = 0;
+                    if (zone.any_of<Component::Input>(entity)) {
+                        Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage);
                     }
-                }
-                else if (sheetData.sheetData) {
-                        /// RPG_tools sprites
-                    if (sheetData.finalFrame == Rendering_Components::finalFrame) {
-                        //executes a point and click attack
-                        auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
-                        auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
-                            /// calculate damage and show for player
-                        Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage};
-                        int damage = Calculate_Damage(damageRange);
 
-                        if (zone.any_of<Component::Input>(entity)) {
-                            Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage);
-                        }
+                    auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
 
-                        auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
-
-                        if (meleeDamage.critical) {
-                            struck.critical = true;
-                            auto &targetAction = zone.get_or_emplace<Component::Action>(target_ID);
-                            auto &targetSheetData = zone.get_or_emplace<Rendering_Components::Sprite_Sheet_Info>(target_ID);
-                            targetSheetData.currentFrame = 0;
-                            targetAction.state = Component::struck;
-                        }
-                        struck.struck += damage;
-                        //create_attack(position, direction);
-                        zone.remove<Component::Attacking>(entity);
-                        //act.frameCount[act.state].currentFrame = 0;
+                    if (meleeDamage.critical) {
+                        struck.critical = true;
+                        auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
+                        targetAction.frame = 0;
+                        targetAction.state = Action_Component::struck;
                     }
-                }
-                else {
-                    Utilities::Log("Attack_Target() - both NULL passthrough error");
+                    struck.struck += damage;
+                    zone.remove<Component::Attacking>(entity);
                 }
             }
             else {
@@ -192,21 +153,21 @@ namespace Combat_Control {
     }
 
     void Struck_Updater(entt::registry &zone){
-        auto view = zone.view<Component::Struck, Component::Action, Rendering_Components::Sprite_Sheet_Info>();
+        auto view = zone.view<Component::Struck, Action_Component::Action, Rendering_Components::Sprite_Sheet_Info>();
         for (auto entity : view) {
-            auto &action = view.get<Component::Action>(entity);
+            auto &action = view.get<Action_Component::Action>(entity);
             auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
-            if (action.state == Component::dying) {
+            if (action.state == Action_Component::dying) {
                 zone.remove<Component::Struck>(entity);
             }
             if (sheetData.flareSpritesheet) {
-                if (sheetData.finalFrame  == Rendering_Components::finalFrame) {
+                if (action.frameState == Action_Component::last) {
                         ///should not return to idle, should go into an "idle-combat" mode
                     zone.remove<Component::Struck>(entity);
                 }
             }
             else if (sheetData.sheetData) {
-                if (sheetData.finalFrame == Rendering_Components::finalFrame) {
+                if (action.frameState == Action_Component::last) {
                         ///should not return to idle, should go into an "idle-combat" mode
                     zone.remove<Component::Struck>(entity);
                 }
