@@ -649,7 +649,7 @@ namespace Rendering {
             UI_Resources::Render_Resources(zone, camera);
             UI_Spellbook::Draw_Spellbook();
             Pause::Pause_Control(camera);
-            Menu::Render_Menu(camera);
+            Menu::Render_Menu(zone, camera);
             //Mouse
             Interface::Run_Interface(zone, camera);
             //on top of mouse

@@ -17,6 +17,17 @@ namespace Camera_Control {
 			camera.screen.y = ((position.y) - (camera.screen.h / 2));
 	}
 
+    SDL_FRect Maintain_Scale(entt::registry& zone, SDL_FRect& rect, Component::Camera& camera) {
+
+        SDL_FRect fRenderToScreen = {
+                float(rect.x) * camera.scale.x,
+                float(rect.y) * camera.scale.y,
+                (float(rect.w) * camera.scale.x),
+                (float(rect.h) * camera.scale.y) };
+
+        return fRenderToScreen;
+    }
+
 	SDL_FRect Convert_Rect_To_Screen_Coods(entt::registry& zone, SDL_FRect& frect, Component::Camera& camera) {
 
 		SDL_FRect screenRect = {};

@@ -6,6 +6,7 @@
 #include "base_structs.h"
 #include "events.h"
 #include "pause.h"
+#include "camera.h"
 
 namespace Menu
 {
@@ -68,34 +69,42 @@ namespace Menu
 //    stores menus, access with key
     std::unordered_map<std::string, Menu> menus;
 
-
-
-    void Create_Menu(Component::Camera &camera) {
-        Menu menu;
-        Button button;
-        std::vector<const char*>labels = {"Continue", "Exit"};
-        menu.buttons.reserve(labels.size());
-
-        for (int i = 0; i < labels.size(); i++)
-        {
-            menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], colors[0]);
-        }
-//        set first index
+    void Update_Scale(Component::Camera &camera, Menu &menu)
+    {
+        //        set first index
         menu.buttons[0].size.x = (camera.screen.w / 2) - (menu.buttons[0].textSurface->clip_rect.w / 2);
         menu.buttons[0].size.y = (camera.screen.h / 4) - (menu.buttons[0].textSurface->clip_rect.h / 2);
         menu.buttons[0].size.w = menu.buttons[0].textSurface->clip_rect.w;
         menu.buttons[0].size.h = menu.buttons[0].textSurface->clip_rect.h;
-//        offset rest
-        for (int i = 1; i < labels.size(); i++)
+
+        //        offset rest
+        for (int i = 1; i < menu.buttons.size(); i++)
         {
-            menu.buttons[i].size.x = (camera.screen.w / 2) - (menu.buttons[i-1].textSurface->clip_rect.w / 2);
+            menu.buttons[i].size.x = (camera.screen.w / 2) - (menu.buttons[i].textSurface->clip_rect.w / 2);
             menu.buttons[i].size.y = menu.buttons[i-1].size.y + menu.buttons[i-1].size.h + menu.spacing;
             menu.buttons[i].size.w = menu.buttons[i].textSurface->clip_rect.w;
             menu.buttons[i].size.h = menu.buttons[i].textSurface->clip_rect.h;
         }
+    }
+
+    void Create_Menu(Component::Camera &camera) {
+        Menu menu;
+        std::vector<const char*>labels = {"Continue", "Exit"};
+
+        for (int i = 0; i < labels.size(); i++)
+        {
+            Button button;
+            button.text = labels[i];
+            button.textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], colors[0]);
+            button.textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, button.textSurface);
+            menu.buttons.emplace_back(button);
+        }
+
+        Update_Scale(camera, menu);
 
         menus["menu"] = menu;
     }
+
 
     bool toggleMenu = false;
     void Toggle(Component::Camera &camera)
@@ -116,40 +125,22 @@ namespace Menu
         }
     }
 
-    int Show_Menu(Component::Camera &camera)
+    int Show_Menu(entt::registry &zone, Component::Camera &camera)
     {
-//        const int NUMMENU = 2;
-//        const char *labels[NUMMENU] = {"Continue", "Exit"};
-//        SDL_Surface *menu[NUMMENU];
-//        bool selected[NUMMENU] = {0, 0};
-//        SDL_Color color[2] = {{255, 255, 255},
-//                              {255, 0,   0}};
-//        int spacing = Mouse::cursorRadius * 2;
-//
-//        menu[0] = TTF_RenderText_Solid(Graphics::font, labels[0], color[0]);
-//        menu[1] = TTF_RenderText_Solid(Graphics::font, labels[1], color[0]);
-//        SDL_FRect pos[NUMMENU];
-//        pos[0].x = (camera.screen.w / 2) - (menu[0]->clip_rect.w / 2);
-//        pos[0].y = (camera.screen.h / 4) - (menu[0]->clip_rect.h / 2);
-//        pos[0].w = menu[0]->clip_rect.w;
-//        pos[0].h = menu[0]->clip_rect.h;
-//
-//        pos[1].x = (camera.screen.w / 2) - (menu[1]->clip_rect.w / 2);
-//        pos[1].y = pos[0].y + pos[0].h + spacing;
-//        pos[1].w = menu[1]->clip_rect.w;
-//        pos[1].h = menu[1]->clip_rect.h;
-
         Menu &menu = menus["menu"];
 
         for (int i = 0; i < menu.buttons.size(); i++)
         {
+            Camera_Control::Maintain_Scale(zone, menu.buttons[i].size, camera);
+            Update_Scale(camera, menu);
+
             if (Mouse::FRect_inside_Screen_Cursor(menu.buttons[i].size))
             {
                 if (!menu.buttons[i].selected)
                 {
                     menu.buttons[i].selected = 1;
-                    menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[1]);
                     SDL_FreeSurface(menu.buttons[i].textSurface);
+                    menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[1]);
                     menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
                 }
 
@@ -159,8 +150,8 @@ namespace Menu
                 if (menu.buttons[i].selected)
                 {
                     menu.buttons[i].selected = 0;
-                    menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[0]);
                     SDL_FreeSurface(menu.buttons[i].textSurface);
+                    menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[0]);
                     menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
                 }
             }
@@ -213,13 +204,13 @@ namespace Menu
         return 3;
     }
 
-    void Render_Menu(Component::Camera &camera)
+    void Render_Menu(entt::registry &zone, Component::Camera &camera)
     {
         //pause with no inout
         if (toggleMenu)
         {
             Overlay();
-            int i = Show_Menu(camera);
+            int i = Show_Menu(zone, camera);
             if (i == 0)
             {
                 Toggle(camera);

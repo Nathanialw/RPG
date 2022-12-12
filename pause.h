@@ -35,7 +35,7 @@ namespace Pause {
         menu[0] = TTF_RenderText_Solid(Graphics::font, labels[0], color[0]);
         SDL_FRect pos[NUMMENU];
         pos[0].x = (camera.screen.w / 2) - (menu[0]->clip_rect.w / 2);
-        pos[0].y = (camera.screen.h / 5) - (menu[0]->clip_rect.h / 2);
+        pos[0].y = (camera.screen.h / 6) - (menu[0]->clip_rect.h / 2);
         pos[0].w = menu[0]->clip_rect.w;
         pos[0].h = menu[0]->clip_rect.h;
 
