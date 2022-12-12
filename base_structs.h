@@ -1,14 +1,11 @@
 #pragma once
 
+struct i2 {
+    int x;
+    int y;
+};
 
-namespace DataTypes {
-	struct i2d {
-		int x;
-		int y;
-	};
-
-	struct f2d {
-		float x;
-		float y;
-	};
-}
+struct f2 {
+    float x;
+    float y;
+};

@@ -81,13 +81,13 @@ namespace Component {
 
 	struct Velocity {
 		float dX, dY;
-		DataTypes::f2d magnitude;
+		f2 magnitude;
 		float speed;
 		float angle;
 	};
 
 	struct Building_Collider {
-		std::vector<DataTypes::i2d>walls;
+		std::vector<i2>walls;
 	};
 
     /// place 2-h and bow animations in a separate array
@@ -164,7 +164,7 @@ namespace Component {
 
 	struct Camera {
 		SDL_FRect screen;
-		DataTypes::f2d scale;
+		f2 scale;
 	};
 
 	struct Mass {
@@ -284,9 +284,9 @@ namespace Component {
 	};
 
 	struct Explosion {
-		DataTypes::i2d positionOffset;
+		i2 positionOffset;
 		SDL_FRect renderPosition;
-		DataTypes::f2d offsetToAlignWithFireball;
+		f2 offsetToAlignWithFireball;
 
 	};
 
@@ -364,8 +364,8 @@ namespace Component {
 		SDL_Texture* pIconBorder;
 		SDL_Rect clipSprite;
 		SDL_Rect clipIcon;
-		DataTypes::f2d renderRectSize;
-		DataTypes::f2d renderPositionOffset;
+		f2 renderRectSize;
+		f2 renderPositionOffset;
 	};
 
 	struct On_Mouse {

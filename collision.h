@@ -176,7 +176,7 @@ namespace Collision {
                                 if (fDistance == 0.0f) { fDistance = 0.0001; }
                                 float fOverlap = fDistance - (radius + collision_Radius);
 
-                                DataTypes::f2d resolver = {};
+                                f2 resolver = {};
                                 resolver.x = fOverlap * ( position.x - collision_Position.x) / fDistance;
                                 resolver.y = fOverlap * ( position.y - collision_Position.y) / fDistance;
 

@@ -25,7 +25,7 @@ namespace World_Grid {
 		void resize(const SDL_FRect& rArea) {
 			clear();
 			m_rect = rArea;
-			DataTypes::f2d vChildSize = {m_rect.w / 2.0f, m_rect.h / 2.0f};
+			f2 vChildSize = {m_rect.w / 2.0f, m_rect.h / 2.0f};
 
 			SDL_FRect first = { m_rect.x, m_rect.y, vChildSize.x, vChildSize.y };
 			SDL_FRect first1 = { m_rect.x + vChildSize.x, m_rect.y, vChildSize.x, vChildSize.y };

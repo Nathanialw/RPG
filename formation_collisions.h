@@ -121,7 +121,7 @@ namespace Formation_Collision {
 				if (fDistance <= ((soldier1.radius + soldier2.radius) * (soldier1.radius + soldier2.radius)) * 0.9999f) { // the constant keeps it from check collisions overlapping by round errors							
 					fDistance = sqrtf(fDistance);
 					float fOverlap = fDistance - (soldier1.radius + soldier2.radius);
-					DataTypes::f2d resolver = {};
+					f2 resolver = {};
 					resolver.x = fOverlap * (soldier2.x - soldier1.x) / fDistance;
 					resolver.y = fOverlap * (soldier2.y - soldier1.y) / fDistance;
 					float fTotalmass = soldier1.mass + soldier2.mass;
@@ -284,7 +284,7 @@ namespace Formation_Collision {
 					fDistance = (float)sqrtf(fDistance);
 					if (fDistance == 0.0f) { fDistance = 0.00001f; }
 					float fOverlap = fDistance - (soldier.radius + entity.radius);
-					DataTypes::f2d resolver = {};
+					f2 resolver = {};
 					resolver.x = fOverlap * (entity.x - soldier.x) / fDistance;
 					resolver.y = fOverlap * (entity.y - soldier.y) / fDistance;
 					float fTotalmass = soldier.mass + entity.mass;

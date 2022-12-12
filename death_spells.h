@@ -22,7 +22,7 @@ namespace Death_Spells {
 
 		auto skeleton0 = zone.create();
 
-        int unit_ID = Maps::Check_For_Template_ID(name);
+        int unit_ID = Create_Entities::Check_For_Template_ID(name);
 
         SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
         std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);

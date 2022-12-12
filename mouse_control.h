@@ -4,7 +4,7 @@
 
 namespace Mouse {
 	namespace {
-		float cursorSize = 5.0f;
+		float cursorRadius = 5.0f;
 		float Mouse_Selection_Box_x;
 		float Mouse_Selection_Box_y;
 	}
@@ -25,20 +25,25 @@ namespace Mouse {
 	bool itemCurrentlyHeld = false;
 
 	bool FRect_inside_Cursor(SDL_FRect &rect) {
-		SDL_FRect cursor = { iXWorld_Mouse, iYWorld_Mouse, cursorSize, cursorSize };
+		SDL_FRect cursor = {iXWorld_Mouse, iYWorld_Mouse, cursorRadius, cursorRadius };
 		return Utilities::bFRect_Intersect(cursor, rect);
 	}
 
-	bool bRect_inside_Cursor(SDL_FRect& rect) {
-		SDL_FRect cursor = { iXMouse, iYMouse, cursorSize, cursorSize };
+    bool FRect_inside_Screen_Cursor(SDL_FRect &rect) {
+        SDL_FRect cursor = {iXMouse, iYMouse, cursorRadius, cursorRadius };
+        return Utilities::bFRect_Intersect(cursor, rect);
+    }
+
+    bool bRect_inside_Cursor(SDL_FRect& rect) {
+		SDL_FRect cursor = {iXMouse, iYMouse, cursorRadius, cursorRadius };
 		return Utilities::bFRect_Intersect(cursor, rect);
 	}
 
 	bool Point_Inside_Cursor(float targetX, float targetY) { 
-		if (iXWorld_Mouse + cursorSize > targetX &&
-			iXWorld_Mouse - cursorSize < targetX &&
-			iYWorld_Mouse - cursorSize < targetY &&
-			iYWorld_Mouse + cursorSize > targetY) {
+		if (iXWorld_Mouse + cursorRadius > targetX &&
+            iXWorld_Mouse - cursorRadius < targetX &&
+            iYWorld_Mouse - cursorRadius < targetY &&
+            iYWorld_Mouse + cursorRadius > targetY) {
 			return true;
 		}
 		else return false;

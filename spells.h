@@ -27,7 +27,7 @@ namespace Spells {
 		}
 	}
 
-	DataTypes::f2d Spell_Direction(DataTypes::f2d& pos, Component::Direction& direction, float& scale) {
+	f2 Spell_Direction(f2& pos, Component::Direction& direction, float& scale) {
 		switch (direction) {
 		case Component::Direction::N: return { pos.x, pos.y - (20.0f * scale) };
 		case Component::Direction::S: return { pos.x, pos.y + (20.0f * scale) };
@@ -42,14 +42,14 @@ namespace Spells {
 		return { 1.0f, 1.0f };
 	}
 
-	void create_spell(entt::entity caster_ID, entt::entity& entity, DataTypes::f2d& pos, Component::Direction& direction, const char* spellname, float& targetX, float& targetY) {
+	void create_spell(entt::entity caster_ID, entt::entity& entity, f2& pos, Component::Direction& direction, const char* spellname, float& targetX, float& targetY) {
 		float scale = 1.0f;
 		Entity_Loader::Data data = Entity_Loader::parse_data(spellname);
-		DataTypes::f2d spelldir = Spell_Direction(pos, direction, scale);
+		f2 spelldir = Spell_Direction(pos, direction, scale);
 
         std::string name = (std::string)spellname;
 
-        int unit_ID = Maps::Check_For_Template_ID(name);
+        int unit_ID = Create_Entities::Check_For_Template_ID(name);
         Graphics::Create_Game_Object(unit_ID, SQLite_Spell_Data::Spell_Loader(name).path.c_str());
 
         SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
@@ -93,7 +93,7 @@ namespace Spells {
 
 	void create_fireball(entt::entity & caster_ID, float& x, float& y, Component::Direction& direction, const char* spellname, float& targetX, float& targetY) {
 		auto fireball = World::zone.create();
-		DataTypes::f2d pos = { x, y };
+		f2 pos = { x, y };
 		create_spell(caster_ID, fireball, pos, direction, spellname, targetX, targetY);
 	}
 

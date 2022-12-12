@@ -372,7 +372,7 @@ namespace Military {
 		std::vector<float>fMass;
 		std::vector<float>fRadius;
 
-		std::vector<DataTypes::f2d>vPosition; //
+		std::vector<f2>vPosition; //
 
 
 		Squad() {

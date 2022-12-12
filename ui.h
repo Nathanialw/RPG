@@ -14,8 +14,8 @@ namespace UI {
 	namespace Bag_UI {
 		namespace {
 			entt::entity emptyBagSlot;
-			DataTypes::f2d bagoffset = { 32.0f, 544.0f };
-			DataTypes::f2d numOfSlots = { 8.0f, 4.0f };
+			f2 bagoffset = { 32.0f, 544.0f };
+			f2 numOfSlots = { 8.0f, 4.0f };
 			int iTotalSlots = (int)numOfSlots.x * (int)numOfSlots.y;
 			float iBagSlotPixelSize = 64.0f;
 			SDL_FRect bagRect = { defaultScreenPosition.x + bagoffset.x, defaultScreenPosition.y + bagoffset.y, numOfSlots.x * iBagSlotPixelSize, numOfSlots.y * iBagSlotPixelSize };
@@ -160,8 +160,8 @@ namespace UI {
 
 	namespace Equipment_UI {
 		namespace {
-			DataTypes::f2d equipmentOffsetColumn1 = {32.0f, 32.0f};
-			DataTypes::f2d equipmentOffsetColumn2 = {452.0f, 32.0f};
+			f2 equipmentOffsetColumn1 = {32.0f, 32.0f};
+			f2 equipmentOffsetColumn2 = {452.0f, 32.0f};
 			float iEquipmentSlotPixelSize = 81.0f;
 			// 452 in the x
 			// 10 between in the y

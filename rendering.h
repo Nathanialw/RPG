@@ -13,6 +13,7 @@
 #include "tooltips.h"
 #include "damage_text.h"
 #include "ui_resources.h"
+#include "pause.h"
 //#include "map.h"
 #include "world_grid.h"
 #include "dynamic_quad_tree.h"
@@ -647,7 +648,8 @@ namespace Rendering {
 			Damage_Text::Show_Damage(zone, camera);
             UI_Resources::Render_Resources(zone, camera);
             UI_Spellbook::Draw_Spellbook();
-            Menu::Render_Menu();
+            Pause::Pause_Control(camera);
+            Menu::Render_Menu(camera);
             //Mouse
             Interface::Run_Interface(zone, camera);
             //on top of mouse

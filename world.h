@@ -2,6 +2,7 @@
 #include "entt/entt.hpp"
 #include "graphics.h"
 #include "procedural_generator.h"
+#include "create_entities.h"
 
 namespace  World_Data
 {
@@ -53,8 +54,7 @@ namespace  World_Data
 //        position
 //        float x;
 //        float y;
-
-        Tile_Type type;
+        bool hh;
     };
 
     struct Region {
@@ -118,7 +118,7 @@ namespace World
                 //set tile data
                 Procedural_Components::Seed seed;
                 seed.seed = Procedural_Generation::Create_Initial_Seed(position.x, position.y);
-                tile.type = (World_Data::Tile_Type)Procedural_Generation::Random_Int(0, 1, seed);
+//                tile.type = (World_Data::Tile_Type)Procedural_Generation::Random_Int(0, 1, seed);
             }
         }
     }
@@ -177,6 +177,32 @@ namespace World
 
     }
 
+    void Generate_Trees(entt::registry &zone, SDL_FRect rect)
+    {
+        Procedural_Components::Seed seed;
+        seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
+        int numMTrees = (World_Data::Tile_Type)Procedural_Generation::Random_Int(0, 5, seed);
+
+//      cycle through trees create each one and check each successive one to make sure it isn't intersecting another object on the tile
+        std::vector<entt::entity>trees;
+        for (int i = 0; i < numMTrees; i++)
+        {
+            //create tree
+//            position procedurally set within the tile
+            float x, y;
+
+//            not sure where to get these yet
+            bool isRandom, isPlayer;
+
+//            name is the key for SQLite db
+//            class is in SQLite db
+//            filepath is in SQLite db
+            std::string name, entityClass, imgpath;
+
+            Create_Entities::Create_Entity(zone, x, y, name, entityClass, isRandom, imgpath, isPlayer);
+        }
+    }
+
     void Render(Component::Camera &camera)
     {
         //generate objects only the tiles around the player
@@ -188,8 +214,6 @@ namespace World
 
         Get_Coords(camera.screen.x, x);
         Get_Coords(camera.screen.y, y);
-
-        int count = 0;
 
         for (int i = x; i <= (x + ((camera.screen.w  + size.width + size.width) / size.width)); i++)
         {
@@ -211,9 +235,7 @@ namespace World
                 SDL_Texture *texture = World_Data::tiles[(int)type];
 
                 SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
-                count++;
             }
         }
-        Utilities::Log(count);
     }
 }
