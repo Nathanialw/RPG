@@ -64,7 +64,7 @@ namespace Event_Handler {
 		}
 	};
 
-	void Interface_Input(entt::registry& zone, Component::Velocity& vel, Action_Component::Action& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
+	void Interface_Input(entt::registry& zone, Component::Camera &camera, Component::Velocity& vel, Action_Component::Action& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
 		if (Events::event.key.repeat == 0) {
 			if (Events::event.type == SDL_KEYDOWN) {
 				if (act.state != Action_Component::attack) {
@@ -80,7 +80,7 @@ namespace Event_Handler {
 					case SDLK_8: Skills::Feign_Death(zone, entity); break;
 					case SDLK_9: AI::Turn_On();  break;
 					case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
-                    case SDLK_ESCAPE: Menu::Toggle(); break;
+                    case SDLK_ESCAPE: Menu::Toggle(camera); break;
                     case SDLK_p: Pause::Toggle(); break;
 					case SDLK_PLUS:  break;
 					case SDLK_MINUS: break;
@@ -175,7 +175,7 @@ namespace Event_Handler {
                         Mouse_Input(zone, player_ID, playerPosition, meleeRange, camera);
                     } else if (Events::event.key.type == SDL_KEYDOWN || Events::event.key.type == SDL_KEYUP) {
                         Movement_Input(zone, playerVelocity, playerAction, player_ID);
-                        Interface_Input(zone, playerVelocity, playerAction, player_ID);
+                        Interface_Input(zone, camera, playerVelocity, playerAction, player_ID);
                     }
                     //if (event.key.type == SDL_JOYAXISMOTION) { // it works!
                     //	if (event.jaxis. == 0) {
