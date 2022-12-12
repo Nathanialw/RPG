@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="3171">
+<map version="1.9" tiledversion="1.9.2" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="3172">
  <tileset firstgid="1" source="sprite_sheets/units/flare/skeleton_00.tsx"/>
  <tileset firstgid="257" source="sprite_sheets/units/flare/skeleton_occultist_00.tsx"/>
  <tileset firstgid="481" source="sprite_sheets/units/flare/skeleton_mage_00.tsx"/>
@@ -880,11 +880,6 @@
   <object id="2973" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Black.tx" x="11651" y="11501"/>
   <object id="2974" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Dire.tx" x="11462" y="11590"/>
   <object id="2975" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="11226" y="11734"/>
-  <object id="2987" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base1.tx" x="22301.1" y="20587.8">
-   <properties>
-    <property name="player" type="bool" value="true"/>
-   </properties>
-  </object>
   <object id="3151" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_HighSeas_Female_1.tx" class="unit" x="22219.7" y="21599.7"/>
   <object id="3152" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_HighSeas_Female_2.tx" class="unit" x="22332.3" y="21647"/>
   <object id="3153" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_HighSeas_Female_4.tx" class="unit" x="22094.3" y="21466.3"/>
@@ -905,5 +900,10 @@
   <object id="3168" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_4.tx" class="unit" x="22038.2" y="20768.4"/>
   <object id="3169" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_5.tx" class="unit" x="22520.2" y="21038.4"/>
   <object id="3170" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_6.tx" class="unit" x="22630.2" y="21048.4"/>
+  <object id="3171" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base1.tx" x="323" y="694">
+   <properties>
+    <property name="player" type="bool" value="true"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

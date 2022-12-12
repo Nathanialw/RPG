@@ -4,6 +4,8 @@
 #include "movement.h"
 #include "damage_text.h"
 #include "action_components.h"
+#include "combat_sounds.h"
+#include "combat_graphics.h"
 
 namespace Combat_Control {
 
@@ -177,6 +179,12 @@ namespace Combat_Control {
             }
         }
     }
+
+    void Attack_Sounds()
+    {
+
+    }
+
 
     void Update_Attacks(entt::registry& zone) {
         AttackSpeed_Updater(zone);

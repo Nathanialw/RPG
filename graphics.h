@@ -15,9 +15,9 @@ namespace Graphics_Component {
 
 namespace Graphics {
 
-//    namespace {
         bool running;
         SDL_FRect resolution = { 0.0f, 0.0f, 1920.0f, 1200.0f };
+        const char* title = "RPG";
         SDL_Window* window;
         SDL_FRect Screen;
         TTF_Font* font;
@@ -25,17 +25,18 @@ namespace Graphics {
 
         entt::entity defaultIcon;
 
-        struct Surface_Data {
+        struct Surface_Data
+        {
             SDL_Texture* pTexture;
             SDL_Rect k;
         };
 
-        struct Text_Box_Data {
+        struct Text_Box_Data
+        {
             SDL_Rect textBoxBackground;
             SDL_FRect highlightBox;
             Surface_Data textdata;
         };
-//    }
 
     SDL_Renderer* renderer;
 
@@ -51,49 +52,36 @@ namespace Graphics {
     std::array<SDL_Texture*, numberOfTextures> UITextures;
 //    std::map<std::string, SDL_Texture*> itemTextures;
 
-
-
-    SDL_Texture* skeleton_0;
-    SDL_Texture* skeleton_1;
-    SDL_Texture* skeleton_mage_0;
-    SDL_Texture* archer_0;
-    SDL_Texture* house_0;
-    SDL_Texture* grass_0;
-    SDL_Texture* fireball_0;
     SDL_Texture* fireball_explosion_0;
-    SDL_Texture* longsword_default;
-    SDL_Texture* longsword_default_icon;
     SDL_Texture* itsmars_Inventory;
     SDL_Texture* cursor_0;
-    SDL_Texture* icon_axe1;
     SDL_Texture* weapons_icons;
     SDL_Texture* default_icon;
     SDL_Texture* emptyBagIcon;
 
     SDL_Texture* bagSlotBorder;
-    SDL_Texture* emptyEquippedIcon;
-    SDL_Texture* equipSlotBorder;
     SDL_Texture* itemBorderCommon;
     SDL_Texture* itemBorderMagic;
     SDL_Texture* itemBorderRare;
     SDL_Texture* itemBorderEite;
     SDL_Texture* armorSpriteSheet;
     SDL_Texture* spellbook;
-    SDL_Texture* female_weapons;
 
     SDL_Texture* tooltipBackground;
-    SDL_Texture* cow;
 
 
-    void Render_Rect(SDL_Texture* pTexture, SDL_Rect& clipSprite, SDL_Rect& scaledSlot) {
+    void Render_Rect(SDL_Texture* pTexture, SDL_Rect& clipSprite, SDL_Rect& scaledSlot)
+    {
         SDL_RenderCopy(renderer, pTexture, &clipSprite, &scaledSlot);
     }
 
-    void Render_FRectToScreen(SDL_Texture* texture, const SDL_Rect* sourceRect, SDL_FRect* targetRect) {
+    void Render_FRectToScreen(SDL_Texture* texture, const SDL_Rect* sourceRect, SDL_FRect* targetRect)
+    {
         SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
     }
 
-    Rendering_Components::Color Set_Random_Color() {
+    Rendering_Components::Color Set_Random_Color()
+    {
         Rendering_Components::Color color;
         color.r = rand() % 254 + 1;
         color.g = rand() % 254 + 1;
@@ -102,12 +90,14 @@ namespace Graphics {
     }
 
 
-    void Render_FRect(SDL_Texture* texture, Rendering_Components::Color color, const SDL_Rect* sourceRect, SDL_FRect* targetRect) {
+    void Render_FRect(SDL_Texture* texture, Rendering_Components::Color color, const SDL_Rect* sourceRect, SDL_FRect* targetRect)
+    {
         SDL_SetTextureColorMod( texture, color.r, color.g, color.b );
         SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
     }
 
-    Surface_Data Load_Text_Texture(std::string text, SDL_Color fontColor) {
+    Surface_Data Load_Text_Texture(std::string text, SDL_Color fontColor)
+    {
         SDL_Surface* surface = TTF_RenderText_Blended(font, text.c_str(), fontColor);   //convert font to Surface
         SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);	        //convert Surface to texture
 
@@ -119,7 +109,8 @@ namespace Graphics {
         return text_data;																//return SDL_Texture *texture
     };
 
-    Text_Box_Data Create_Text_Background (Component::Camera &camera, SDL_Color textColor, std::string &text, Component::Position &position) {
+    Text_Box_Data Create_Text_Background (Component::Camera &camera, SDL_Color textColor, std::string &text, Component::Position &position)
+    {
 //        float yPosition = position.y - 20.0f;
         SDL_FRect textBox = {};
         textBox.w = text.length() * 5.0f;
@@ -138,27 +129,31 @@ namespace Graphics {
 
         Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(text, textColor);
 
-        Text_Box_Data textBoxData = {
-                textBoxBackground,
-                textBox,
-                itemTextBox
+        Text_Box_Data textBoxData =
+        {
+            textBoxBackground,
+            textBox,
+            itemTextBox
         };
         return textBoxData;
     }
 
-    void Create_Font() {
+    void Create_Font()
+    {
         FC_LoadFont(fcFont, Graphics::renderer, "fonts/FreeSans.ttf", 20, FC_MakeColor(0,0,0,255), TTF_STYLE_NORMAL);
         font = TTF_OpenFont("fonts/Chomsky.otf", 30);
     }
 
-    SDL_Texture* createTexture(const char* spritesheet) {
+    SDL_Texture* createTexture(const char* spritesheet)
+    {
         SDL_Surface* surface = IMG_Load(spritesheet);
         SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_FreeSurface(surface);
         return texture;
     }
 
-    entt::entity Create_Icon_Entity(entt::registry& zone, SDL_Texture *iconImage, SDL_Texture *iconBorder) {
+    entt::entity Create_Icon_Entity(entt::registry& zone, SDL_Texture *iconImage, SDL_Texture *iconBorder)
+    {
         auto icon_entity = zone.create();
         auto& icon = zone.emplace<Component::Icon>(icon_entity, iconImage, iconBorder);
         icon.clipSprite = { 0, 0, 100, 100 };
@@ -169,22 +164,28 @@ namespace Graphics {
 
 
     //both unitID and filepath are stored in tiled map object
-    void Load_Texture(int &unitID, const char* filepath) {
+    void Load_Texture(int &unitID, const char* filepath)
+    {
         unitTextures[unitID] = createTexture(filepath);
     }
 
     //when creating the game objet
-    void Create_Game_Object(int& unitID, const char* filepath) {
-        if (unitTextures[unitID] == NULL) {
+    void Create_Game_Object(int& unitID, const char* filepath)
+    {
+        if (unitTextures[unitID] == NULL)
+        {
             Load_Texture(unitID, filepath);
-            if (unitTextures[unitID] == NULL) {
+            if (unitTextures[unitID] == NULL)
+            {
                 std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
             }
-            else {
+            else
+            {
                 //	std::cout << "loaded from file: " << filepath << std::endl;
             }
         }
-        else {
+        else
+        {
             //std::cout << "already loaded: " << filepath << std::endl;
             //unitTextures[unitID];
         }
@@ -193,30 +194,17 @@ namespace Graphics {
 
 
 
-    void Load_Textures(entt::registry& zone) {
+    void Load_Textures(entt::registry& zone)
+    {
         Create_Font();
-
-//		skeleton_1 = createTexture("sprites/units/skeleton/skeleton_00.png");
-//		skeleton_0 = createTexture("sprites/units/skeleton/armoured_skeleton_00.png");
-
-//		archer_0 = createTexture("sprites/units/archer/archer_00.png");
-
-//		fireball_0 = createTexture("sprites/spells/fireball_0.png");
         fireball_explosion_0 = createTexture("sprites/spells/fireball_explosion_0.png");
 
         weapons_icons = createTexture("sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
-//		longsword_default = createTexture("sprites/items/long_sword/w_longsword.png");
-//		icon_axe1 = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_axe1.png");
-        //longsword_default_icon = createTexture("sprites/items/weaponIcons32x32_png_Transparent/icon_sword_long4.png");
         itsmars_Inventory = createTexture("sprites/UI/itsmars_Inventory.png");
         cursor_0 = createTexture("sprites/UI/cursors/cursor.png");
 
-
         emptyBagIcon = createTexture("sprites/UI/icon_borders/bagsSot.png"); // currently NULL
         bagSlotBorder = createTexture("sprites/UI/icon_borders/32x32_BagSlotBorder.png");
-
-        emptyEquippedIcon = createTexture("sprites/UI/icon_borders/bagsSot.png");
-        equipSlotBorder = createTexture("sprites/UI/icon_borders/81x81_EquipSlotBorder.png");
 
         itemBorderCommon = createTexture("sprites/UI/icon_borders/frame-0-grey.png");
         itemBorderMagic = createTexture("sprites/UI/icon_borders/frame-0-blue.png");
@@ -226,21 +214,23 @@ namespace Graphics {
         armorSpriteSheet = createTexture("sprites/items/flare_armor_transparent.png");
 
         tooltipBackground = createTexture("sprites/UI/tooltips/tooltipBackground2.png");
-//		cow = createTexture("sprites/units/animals/no_death_animation/cow/walk_sheet_192x192_8x8_alpha.png");
         spellbook = createTexture("sprites/UI/spellbook/spellbook.png");
-        female_weapons = createTexture("sprites/items/weapons/Female_Swords.png");
 
         default_icon = createTexture("sprites/default.jpg");
         defaultIcon = Create_Icon_Entity(zone, default_icon, Graphics::bagSlotBorder);
     }
 
-    void createGraphicsContext(entt::registry& zone) {
-        SDL_CreateWindowAndRenderer((int)resolution.w, (int)resolution.h, SDL_RENDERER_PRESENTVSYNC, &window, &renderer);
+    void createGraphicsContext(entt::registry& zone)
+    {
+
+        window = SDL_CreateWindow(title, resolution.x, resolution.y, resolution.w, resolution.h, SDL_WINDOW_RESIZABLE);
+        renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
         SDL_SetHint(SDL_HINT_RENDER_BATCHING, "1");
         Load_Textures(zone);
     }
 
-    void closeContext() {
+    void closeContext()
+    {
         SDL_DestroyWindow(window);
         running = false;
     }

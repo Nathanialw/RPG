@@ -79,8 +79,12 @@ namespace Rendering_Components {
     struct Sprite_Sheet_Info {
         std::string type = "default";
 
-        std::unordered_map<std::string, Sheet_Data_Flare>* flareSpritesheet = NULL;
-        std::unordered_map<std::string, Sheet_Data>* sheetData = NULL;
+//        a union can how different types of data in the same memory address
+//        union {
+        std::unordered_map<std::string, Sheet_Data_Flare>* flareSpritesheet;
+        std::unordered_map<std::string, Sheet_Data>* sheetData;
+//        };
+
         std::string sheet_name = "default";
 
         std::unordered_map<std::string, Sheet_Data>* mount = NULL;
