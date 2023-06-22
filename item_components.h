@@ -5,6 +5,7 @@
 
 namespace Item_Component {
 
+//    item 0 renders first
 	enum class Item_Type {
         amulet,
         legs,
@@ -12,9 +13,9 @@ namespace Item_Component {
         wrist,
         boots,
         kilt,
-        hair,
         clothes,
         chest,
+        hair,
         gloves,
         ring,
         face,
@@ -51,7 +52,6 @@ namespace Item_Component {
             { Item_Type::boots, emptyEquipSlot },
             { Item_Type::crown, emptyEquipSlot },
             { Item_Type::dirt, emptyEquipSlot },
-            { Item_Type::hair, emptyEquipSlot },
             { Item_Type::helm, emptyEquipSlot },
             { Item_Type::hood, emptyEquipSlot },
             { Item_Type::legs, emptyEquipSlot },
@@ -59,6 +59,7 @@ namespace Item_Component {
             { Item_Type::gloves, emptyEquipSlot },
             { Item_Type::clothes, emptyEquipSlot },
             { Item_Type::chest, emptyEquipSlot },
+            { Item_Type::hair, emptyEquipSlot },
             { Item_Type::ring, emptyEquipSlot },
             { Item_Type::shins, emptyEquipSlot },
             { Item_Type::shoulders, emptyEquipSlot },

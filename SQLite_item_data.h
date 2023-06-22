@@ -93,7 +93,7 @@ namespace SQLite_Item_Data {
 //        std::string unit_name = db::Append_Quotes(unit_type);
 
         sqlite3_stmt *stmt;
-        char buf[400];
+        char buf[1000];
         const char *jj = "SELECT slot, type, equip_type FROM weapon_types";
         strcpy(buf, jj);
         sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -101,21 +101,22 @@ namespace SQLite_Item_Data {
 //            get the index of the enum of Item_Components::Item_Type
             auto itemType = sqlite3_column_text(stmt, 0); //0 only increments up when calling more than one column
             const char *f = (const char *) itemType;
+            if (f == NULL) {
+                Utilities::Log("Load_Item_Names() 'slot' from DB NULL value, passthrough error");
+                continue;
+            }
             std::string g = std::string(reinterpret_cast< const char *> (f));
-            Utilities::Log(g);
             Item_Component::Item_Type item_type = Get_Item_Type(g);
 
             //get the name of the item as a sting
             auto type = sqlite3_column_text(stmt, 1); //0 only increments up when calling more than one column
             const char *s = (const char *) type;
             std::string item_name = std::string(reinterpret_cast< const char *> (s));
-            Utilities::Log(item_name);
 
             // get the RTP_male, classes_female etc strings
             auto equip_type = sqlite3_column_text(stmt, 2); //0 only increments up when calling more than one column
             const char *d = (const char *) equip_type;
             std::string vec = std::string(reinterpret_cast< const char *> (d));
-            Utilities::Log(vec);
 
             Items[vec][item_type].emplace_back(item_name);
         }

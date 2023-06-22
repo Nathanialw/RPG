@@ -187,6 +187,27 @@ namespace Component {
 
 	};
 
+    struct Retinue {
+        entt::entity list[10];
+//        std::vector<entt::entity> list;
+    };
+
+    struct Household {
+        entt::entity list[10];
+    };
+
+    struct Workers {
+        entt::entity list[10];
+    };
+
+    struct Subordinates {
+        entt::entity list[10];
+    };
+
+    struct Relationships {
+        entt::entity list[10];
+    };
+
 	enum class Entity_Type {
 		unit,
 		foliage,

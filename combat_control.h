@@ -11,10 +11,10 @@ namespace Combat_Control {
 
 	int Calculate_Damage(Component::Damage& damageRange) {
 		if (damageRange.minDamage == 0) {
-			return 0;
 			std::cout << "function Calculate_Damage() min damage range 0, divide by zero error" << std::endl;
+//			return 0;
 		}
-		return rand() % damageRange.maxDamage + damageRange.minDamage;
+		return rand() % (damageRange.maxDamage - damageRange.minDamage + 1) + damageRange.minDamage;
 	}
 
     void Attack_Cast(entt::registry &zone) {

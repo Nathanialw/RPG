@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="3172">
+<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="3172">
  <tileset firstgid="1" source="sprite_sheets/units/flare/skeleton_00.tsx"/>
  <tileset firstgid="257" source="sprite_sheets/units/flare/skeleton_occultist_00.tsx"/>
  <tileset firstgid="481" source="sprite_sheets/units/flare/skeleton_mage_00.tsx"/>
@@ -850,25 +850,33 @@
   <object id="2927" template="spawn_points/unit_spawns/flare/zombie_00.tx" x="1254.42" y="3357.7"/>
   <object id="2928" template="spawn_points/unit_spawns/flare/zombie_00.tx" x="331.697" y="2413.76"/>
   <object id="2929" template="spawn_points/unit_spawns/flare/zombie_00.tx" x="366.545" y="3027.39"/>
-  <object id="2941" template="spawn_points/unit_spawns/1st_cast/humans/female/Addon_Female_Base1.tx" class="unit" x="20816.5" y="20478.4">
+  <object id="2941" template="spawn_points/unit_spawns/1st_cast/humans/female/Addon_Female_Base1.tx" type="unit" x="20816.5" y="20478.4">
    <properties>
     <property name="player" type="bool" value="false"/>
    </properties>
   </object>
-  <object id="2942" template="spawn_points/unit_spawns/1st_cast/humans/female/Addon_Female_Base2.tx" class="unit" x="19834.6" y="19278.3"/>
-  <object id="2945" template="spawn_points/unit_spawns/1st_cast/humans/female/Addon_Female_Base3.tx" class="unit" x="19905.6" y="20736.4"/>
-  <object id="2946" template="spawn_points/unit_spawns/1st_cast/humans/female/RTP_1_Female.tx" class="unit" x="18593.4" y="19541.6"/>
-  <object id="2947" template="spawn_points/unit_spawns/1st_cast/humans/female/RTP_2_Female.tx" class="unit" x="20497.6" y="19348.4"/>
-  <object id="2948" template="spawn_points/unit_spawns/1st_cast/humans/female/RTP_3_Female.tx" class="unit" x="19216.2" y="18550.6"/>
+  <object id="2942" template="spawn_points/unit_spawns/1st_cast/humans/female/Addon_Female_Base2.tx" type="unit" x="19834.6" y="19278.3">
+   <properties>
+    <property name="player" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="2945" template="spawn_points/unit_spawns/1st_cast/humans/female/Addon_Female_Base3.tx" type="unit" x="19905.6" y="20736.4"/>
+  <object id="2946" template="spawn_points/unit_spawns/1st_cast/humans/female/RTP_1_Female.tx" type="unit" x="18593.4" y="19541.6"/>
+  <object id="2947" template="spawn_points/unit_spawns/1st_cast/humans/female/RTP_2_Female.tx" type="unit" x="20497.6" y="19348.4"/>
+  <object id="2948" template="spawn_points/unit_spawns/1st_cast/humans/female/RTP_3_Female.tx" type="unit" x="19216.2" y="18550.6"/>
   <object id="2953" template="spawn_points/unit_spawns/Demons/Male_DaemonKnight.tx" x="21381" y="20917.7">
    <properties>
+    <property name="player" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="2955" template="spawn_points/unit_spawns/1st_cast/humans/male/Addon_Male_Base1.tx" type="unit" x="20516.7" y="19751.7"/>
+  <object id="2961" template="spawn_points/unit_spawns/1st_cast/humans/male/RTP_3_Male.tx" x="21085.1" y="22045.5"/>
+  <object id="2962" template="spawn_points/unit_spawns/1st_cast/humans/male/RTP_2_Male.tx" x="21427.9" y="21481.9"/>
+  <object id="2963" template="spawn_points/unit_spawns/1st_cast/humans/male/Addon_Male_Base3.tx" x="19689.1" y="19713">
+   <properties>
     <property name="player" type="bool" value="false"/>
    </properties>
   </object>
-  <object id="2955" template="spawn_points/unit_spawns/1st_cast/humans/male/Addon_Male_Base1.tx" class="unit" x="20516.7" y="19751.7"/>
-  <object id="2961" template="spawn_points/unit_spawns/1st_cast/humans/male/RTP_3_Male.tx" x="21085.1" y="22045.5"/>
-  <object id="2962" template="spawn_points/unit_spawns/1st_cast/humans/male/RTP_2_Male.tx" x="21427.9" y="21481.9"/>
-  <object id="2963" template="spawn_points/unit_spawns/1st_cast/humans/male/Addon_Male_Base3.tx" x="19689.1" y="19713"/>
   <object id="2964" template="spawn_points/unit_spawns/1st_cast/humans/male/Addon_Male_Base2.tx" x="21742.9" y="21297.4"/>
   <object id="2966" template="spawn_points/unit_spawns/animals/hostile/spiders/RTP_GiantSpider.tx" x="11163.3" y="10583.3"/>
   <object id="2967" template="spawn_points/unit_spawns/animals/hostile/spiders/GiantSpider_Striped.tx" x="10818.7" y="10509.3"/>
@@ -880,30 +888,25 @@
   <object id="2973" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Black.tx" x="11651" y="11501"/>
   <object id="2974" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Dire.tx" x="11462" y="11590"/>
   <object id="2975" template="spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="11226" y="11734"/>
-  <object id="3151" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_HighSeas_Female_1.tx" class="unit" x="22219.7" y="21599.7"/>
-  <object id="3152" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_HighSeas_Female_2.tx" class="unit" x="22332.3" y="21647"/>
-  <object id="3153" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_HighSeas_Female_4.tx" class="unit" x="22094.3" y="21466.3"/>
-  <object id="3154" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_KT_Female_1.tx" class="unit" x="22478.3" y="21666.3"/>
-  <object id="3155" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_PB_Female_3.tx" class="unit" x="22591.7" y="21654.3"/>
-  <object id="3156" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_PB_Female_4.tx" class="unit" x="21989" y="21310.3"/>
-  <object id="3157" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_Warfare_Female_2.tx" class="unit" x="22669" y="21590.3"/>
-  <object id="3158" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_HighSeas_Male_1.tx" class="unit" x="22060" y="21146.7"/>
-  <object id="3159" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_HighSeas_Male_4.tx" class="unit" x="22213.3" y="21289.3"/>
-  <object id="3160" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_KT_Male_1.tx" class="unit" x="22353.3" y="21341.3"/>
-  <object id="3161" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_PB_Male_3.tx" class="unit" x="22502.7" y="21346.7"/>
-  <object id="3162" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_PB_Male_4.tx" class="unit" x="22612.7" y="21343.3"/>
-  <object id="3163" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_Warfare_Male_1.tx" class="unit" x="22718.7" y="21285.3"/>
-  <object id="3164" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_Warfare_Male_2.tx" class="unit" x="22830" y="21224.7"/>
-  <object id="3165" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_1.tx" class="unit" x="22420.9" y="21060.4"/>
-  <object id="3166" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_2.tx" class="unit" x="22282.9" y="20998.4"/>
-  <object id="3167" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_3.tx" class="unit" x="22144.9" y="20909.8"/>
-  <object id="3168" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_4.tx" class="unit" x="22038.2" y="20768.4"/>
-  <object id="3169" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_5.tx" class="unit" x="22520.2" y="21038.4"/>
-  <object id="3170" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_6.tx" class="unit" x="22630.2" y="21048.4"/>
-  <object id="3171" template="spawn_points/unit_spawns/goblins/Addon_Goblin_Base1.tx" x="323" y="694">
-   <properties>
-    <property name="player" type="bool" value="true"/>
-   </properties>
-  </object>
+  <object id="3151" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_HighSeas_Female_1.tx" type="unit" x="22219.7" y="21599.7"/>
+  <object id="3152" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_HighSeas_Female_2.tx" type="unit" x="22332.3" y="21647"/>
+  <object id="3153" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_HighSeas_Female_4.tx" type="unit" x="22094.3" y="21466.3"/>
+  <object id="3154" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_KT_Female_1.tx" type="unit" x="22478.3" y="21666.3"/>
+  <object id="3155" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_PB_Female_3.tx" type="unit" x="22591.7" y="21654.3"/>
+  <object id="3156" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_PB_Female_4.tx" type="unit" x="21989" y="21310.3"/>
+  <object id="3157" template="spawn_points/unit_spawns/3rd_cast/human/female/Medieval_Warfare_Female_2.tx" type="unit" x="22669" y="21590.3"/>
+  <object id="3158" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_HighSeas_Male_1.tx" type="unit" x="22060" y="21146.7"/>
+  <object id="3159" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_HighSeas_Male_4.tx" type="unit" x="22213.3" y="21289.3"/>
+  <object id="3160" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_KT_Male_1.tx" type="unit" x="22353.3" y="21341.3"/>
+  <object id="3161" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_PB_Male_3.tx" type="unit" x="22502.7" y="21346.7"/>
+  <object id="3162" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_PB_Male_4.tx" type="unit" x="22612.7" y="21343.3"/>
+  <object id="3163" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_Warfare_Male_1.tx" type="unit" x="22718.7" y="21285.3"/>
+  <object id="3164" template="spawn_points/unit_spawns/3rd_cast/human/male/Medieval_Warfare_Male_2.tx" type="unit" x="22830" y="21224.7"/>
+  <object id="3165" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_1.tx" type="unit" x="22420.9" y="21060.4"/>
+  <object id="3166" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_2.tx" type="unit" x="22282.9" y="20998.4"/>
+  <object id="3167" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_3.tx" type="unit" x="22144.9" y="20909.8"/>
+  <object id="3168" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_4.tx" type="unit" x="22038.2" y="20768.4"/>
+  <object id="3169" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_5.tx" type="unit" x="22520.2" y="21038.4"/>
+  <object id="3170" template="spawn_points/unit_spawns/4th_cast/zombie/Zombie_6.tx" type="unit" x="22630.2" y="21048.4"/>
  </objectgroup>
 </map>

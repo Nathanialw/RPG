@@ -68,7 +68,8 @@ namespace World
 {
     World_Data::Offset worldOffset;
     World_Data::Tile_Size size;
-    entt::registry zone;
+
+    entt::basic_registry<entt::entity> zone;
     World_Data::Region region;
 
     void Init_Tiles() {
@@ -98,17 +99,16 @@ namespace World
         World_Data::tiles[20] = Graphics::createTexture("sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
     }
 
-//    needs to run when the zone is in range
-    void Generate_Region(World_Data::Offset &offset)
+    void Create_Map (World_Data::Offset offset)
     {
-        Init_Tiles();
-        //go through all tiles and and ust the position to generate a random number, use that number to determine what objects are on each tile
+        int h = 0;
 
-//        world
         for (int w = offset.x; w < (offset.x + World_Data::width); w++)
         {
             for (int i = offset.y; i < (offset.x + World_Data::height); i++) {
                 World_Data::Tile tile = region.board[w][i];
+
+                entt::entity entity = zone.create();
                 //get tile position
                 World_Data::Tile_Position position;
 
@@ -116,11 +116,23 @@ namespace World
                 position.y = i * size.height;
 
                 //set tile data
-                Procedural_Components::Seed seed;
+                Procedural_Components::Seed seed = zone.emplace<Procedural_Components::Seed>(entity);
                 seed.seed = Procedural_Generation::Create_Initial_Seed(position.x, position.y);
-//                tile.type = (World_Data::Tile_Type)Procedural_Generation::Random_Int(0, 1, seed);
+                h++;
             }
         }
+        Utilities::Log("----MAP SIZE----");
+        Utilities::Log(h);
+    }
+
+//    needs to run when the zone is in range
+    void Generate_Region()
+    {
+        Init_Tiles();
+
+        //go through all tiles and and ust the position to generate a random number, use that number to determine what objects are on each tile
+//        Create_Map({0.0f, 0.0f});
+
     }
 
     void Generate()

@@ -12,9 +12,9 @@ namespace Maps {
 
     void Create_Map()
     {
-        World::Init_Tiles();
+        World::Generate_Region();
 
-        if (map.load("maps/untitled3.tmx"))
+        if (map.load("maps/map.tmx"))
         {
             for (auto &spriteSheet: map.getTilesets())
             {
@@ -122,6 +122,7 @@ namespace Maps {
 
                         if (!Create_Entities::Polygon_Building(World::zone, x, y, name, entity_class, texture, aabb, pointVecs, line))
                         {
+                                                        std::cout << texture << std::endl;
                             Create_Entities::Create_Entity(World::zone, x, y, name, entity_class, is_random, texture, player);
                         }
                     };
