@@ -37,9 +37,9 @@ namespace Rendering {
 
 	void sort_Positions(entt::registry &zone) {
             // test whether a point lays on a line segment, positive is above and negative is below
-        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
-        auto points = zone.view<Component::Position, Component::Renderable>();
-
+//        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
+//        auto points = zone.view<Component::Position, Component::Renderable>();
+/*
         for (auto building : line_segments) {
             //test each renderable entity, if it is above the line
             auto [line, renderable] = line_segments.get(building);
@@ -66,11 +66,11 @@ namespace Rendering {
 
                 //set renderable.y to tested renderable.y + 1 for above and renderable.y - 1 for below then let the sort algo do its job
             }
-        }
+        }*/
         // sort the component to render before entities below and after entities above
 
         //sorts point positions least to great
-		zone.sort<Component::Renderable>([](const auto& lhs, const auto& rhs) { return lhs.y < rhs.y; });
+		zone.sort<Component::Renderable>([](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
 	}
 
 //    void RenderLine (entt::registry &zone, Component::Camera &camera) {
@@ -566,8 +566,8 @@ namespace Rendering {
 	}
 
 	void Add_Remove_Renderable_Component(entt::registry &zone, Component::Camera &camera) {
-		int j = 0;
-		SDL_FRect renderRect = {
+
+        SDL_FRect renderRect = {
 			camera.screen.x - (camera.screen.w / 4.0f),
 			camera.screen.y - (camera.screen.h / 4.0f),
 			camera.screen.w * 4.0f,
@@ -579,13 +579,12 @@ namespace Rendering {
 			auto& position = objectsView.get<Component::Position>(entity);
 			SDL_FPoint point = {position.x, position.y};
 			if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
-				int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
-				auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
+                int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
+                auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
                 renderable.alpha = alpha;
                 if (zone.all_of<Component::Line_Segment>(entity) == false) {
                     renderable.y = position.y;
                 }
-                j++;
 			}
 			else {
 				zone.remove<Component::Renderable>(entity);
