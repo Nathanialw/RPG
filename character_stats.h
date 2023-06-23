@@ -226,6 +226,7 @@ namespace Character_Stats {
 
             //create a weapon Component::Position& position, Component::Direction &direction
             equipment.equippedItems[Item_Type::mainhand] = Items::Create_And_Equip_Weapon(position, equipment.type);
+            equipment.equippedItems[Item_Type::offhand] = Items::Create_And_Equip_Offhand(position, equipment.type);
             //create a chest
             equipment.equippedItems[Item_Type::legs] = Items::Create_And_Equip_Armor(position, Item_Type::legs, equipment.type);
             //create a leggings

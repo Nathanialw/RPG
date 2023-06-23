@@ -23,9 +23,11 @@ namespace Items {
 		std::unordered_map<Item_Type, int>itemTypes;
 		std::unordered_map<Armor_Type, int>armorTypes;
 		std::unordered_map<Weapon_Type, int>weaponTypes;
+		std::unordered_map<Offhand_Type, int>offhandTypes;
         std::unordered_map<Weapon_Material, int>weaponMaterials;
         std::unordered_map<Item_Component::Weapon_Material, std::string>weaponMaterialName;
         std::unordered_map<Item_Component::Weapon_Type, std::string>weaponTypeName;
+        std::unordered_map<Item_Component::Offhand_Type, std::string>offhandTypeName;
         std::unordered_map<Item_Component::Armor_Type, std::string>ArmorTypeName;
 		std::unordered_map<Item_Component::Item_Type, std::string>ItemTypeName;
 		bool showGroundItems = false;
@@ -48,6 +50,22 @@ namespace Items {
         //defult return if it finds nothing
 		return Weapon_Type::sword;
 	}
+
+    Item_Component::Weapon_Type Generate_Offhand_Type() {
+        int randType = rand() % 4 + 1;
+        switch (randType) {
+            case 1: return Item_Component::Weapon_Type::sword;
+
+            case 2: return Item_Component::Weapon_Type::mace;
+
+            case 3: return Item_Component::Weapon_Type::axe;
+
+            case 4: return Item_Component::Weapon_Type::spear;
+        }
+        Utilities::Log("Generate_Weapon_Type() fallthrough error");
+        //defult return if it finds nothing
+        return Weapon_Type::sword;
+    }
 
     Item_Component::Item_Type Generate_Item_Type() {
 		int randType = rand() % 5 + 1;
@@ -152,6 +170,51 @@ namespace Items {
 		return equippedSheetData.index;
 	}
 
+    std::string Create_Offhand(entt::entity& item, Rarity &rarity, std::string &equip_type) {
+        auto material = Generate_Weapon_Material();
+        auto offhandType = Item_Component::Offhand_Type::shield;;
+
+        std::string materialType = weaponMaterialName[material];
+        std::string offhand = offhandTypeName[offhandType];
+        std::string offhandName = materialType  + " " + offhand;
+        std::string slot = "offhand";
+
+        auto &type = World::zone.emplace<Item_Type>(item, Item_Type::offhand);
+        World::zone.emplace<Rarity>(item, rarity);
+
+        ///create the weapon from the db
+        ///add to std::map
+        ///save the string of the name
+        ///provide lookup string when the player picks it up
+
+        auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type);
+
+        if (equippedSheetData.itemData == NULL) {
+            return "none";
+        }
+
+        //get from spritesheet
+        int column = weaponMaterials[material];
+        int row = offhandTypes[offhandType];
+        int size = 32;
+
+        SDL_Rect sprite = { column * size , row * size  ,size  ,size };
+
+
+        auto &sheetData = World::zone.emplace<Rendering_Components::Sprite_Sheet_Info>(item);
+        sheetData.type = "RPG_Tools";
+        sheetData.sheetData = equippedSheetData.itemData;
+        sheetData.sheet_name = equippedSheetData.index;
+
+        auto& icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+        icon.clipSprite = sprite;
+        icon.clipIcon = {0,0,256,256};
+        icon.renderRectSize = { 64.0f, 64.0f };
+        icon.renderPositionOffset = { icon.renderRectSize.x / 2, icon.renderRectSize.y / 2 };
+
+        World::zone.emplace<Weapon_Damage>(item, 1, 10);
+        return equippedSheetData.index;
+    }
 
 
 //	std::string Create_Armor(entt::entity& item, Rarity& rarity) {
@@ -381,6 +444,20 @@ namespace Items {
         return item_uID;
     }
 
+    entt::entity Create_And_Equip_Offhand(Component::Position& position, std::string &equip_type) {
+        Rarity rarity = Generate_Item_Rarity();
+        Item_Stats itemStats = Generate_Item_Stats(rarity);
+        auto item_uID = World::zone.create();
+        std::string itemName = Create_Offhand(item_uID, rarity, equip_type);
+        if (itemName == "none") {
+            World::zone.destroy(item_uID);
+            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
+            return Item_Component::emptyEquipSlot;
+        }
+        Create_Item1(item_uID, position, itemName, itemStats);
+        return item_uID;
+    }
+
     entt::entity Create_And_Equip_Armor(Component::Position& position, Item_Component::Item_Type itemType, std::string &equip_type) {
         Rarity rarity = Generate_Item_Rarity();
         Item_Stats itemStats = Generate_Item_Stats(rarity);
@@ -565,11 +642,10 @@ namespace Items {
 			{Item_Type::boots, 4},
 			//{Item_Type::neck, 1},
 			//{Item_Type::shoulders, 2},
-			//{Item_Type::weapon, 4},
 			//{Item_Type::belt, 6},
-			//{Item_Type::shield, 9}
 			{Item_Type::hair, 5},
-			{Item_Type::kilt, 6}
+			{Item_Type::kilt, 6},
+			{Item_Type::offhand, 7}
 		};
 
 		armorTypes = {
@@ -586,6 +662,12 @@ namespace Items {
             {Weapon_Type::mace, 2},
             {Weapon_Type::spear, 3}
 		};
+
+        offhandTypes = {
+            {Offhand_Type::dagger, 0},
+            {Offhand_Type::kama, 1},
+            {Offhand_Type::shield, 2},
+        };
 
         weaponMaterials = {
             {Weapon_Material::copper, 0},
@@ -622,6 +704,12 @@ namespace Items {
                 {Item_Component::Weapon_Type::axe, "axe"},
                 {Item_Component::Weapon_Type::mace, "mace"},
                 {Item_Component::Weapon_Type::spear, "polearm"}
+        };
+
+        offhandTypeName = {
+                {Item_Component::Offhand_Type::dagger, "dagger"},
+                {Item_Component::Offhand_Type::kama, "kama"},
+                {Item_Component::Offhand_Type::shield, "shield"},
         };
 
 		baseStatData = {

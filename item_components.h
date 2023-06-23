@@ -86,6 +86,12 @@ namespace Item_Component {
         spear
 	};
 
+    enum class Offhand_Type {
+        dagger,
+        kama,
+        shield
+    };
+
     enum class Weapon_Material {
         copper,
         bronze,
