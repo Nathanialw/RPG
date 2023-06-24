@@ -37,9 +37,9 @@ namespace Rendering {
 
 	void sort_Positions(entt::registry &zone) {
             // test whether a point lays on a line segment, positive is above and negative is below
-//        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
-//        auto points = zone.view<Component::Position, Component::Renderable>();
-/*
+        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
+        auto points = zone.view<Component::Position, Component::Renderable>();
+
         for (auto building : line_segments) {
             //test each renderable entity, if it is above the line
             auto [line, renderable] = line_segments.get(building);
@@ -66,10 +66,10 @@ namespace Rendering {
 
                 //set renderable.y to tested renderable.y + 1 for above and renderable.y - 1 for below then let the sort algo do its job
             }
-        }*/
-        // sort the component to render before entities below and after entities above
-
-        //sorts point positions least to great
+        }
+//        // sort the component to render before entities below and after entities above
+//
+//        //sorts point positions least to great
 		zone.sort<Component::Renderable>([](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
 	}
 
@@ -329,8 +329,11 @@ namespace Rendering {
         auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
         auto mounts = zone.view<Component::Renderable, Mount_Sprite>();
 
+        std::cout << "----------------------" << std::endl;
+
         for (auto entity : view1) {
             auto [renderable, action, position, sheetData, direction, spriteOffset, scale, type] = view1.get(entity);
+            std::cout << renderable.y << " ";
             SDL_Rect clipRect;
             SDL_FRect renderRect;
             SDL_Texture* texture;
@@ -385,6 +388,7 @@ namespace Rendering {
                 return;
             }
 		}
+        std::cout << "\n";
 	}
 
 	SDL_Rect Explosion_Frame_Update(Component::Sprite_Frames &frame) {
@@ -572,18 +576,32 @@ namespace Rendering {
 			camera.screen.y - (camera.screen.h / 4.0f),
 			camera.screen.w * 4.0f,
 			camera.screen.h * 4.0f };
-		auto objectsView = zone.view<Component::Position>(entt::exclude<Component::Inventory>);
+		auto objectsView = zone.view<Component::Position>(entt::exclude<Component::Inventory, Item_Component::Item_Type>);
 		float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
 		float bottomOfRenderRect = renderRect.y + renderRect.h;
 		for (auto entity : objectsView) {
 			auto& position = objectsView.get<Component::Position>(entity);
 			SDL_FPoint point = {position.x, position.y};
 			if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
-                int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
-                auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
-                renderable.alpha = alpha;
-                if (zone.all_of<Component::Line_Segment>(entity) == false) {
-                    renderable.y = position.y;
+
+                if(zone.any_of<Component::Renderable>(entity)) {
+                    //  update renderable values
+                    int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
+                    auto &renderable = zone.get<Component::Renderable>(entity);
+                    renderable.alpha = alpha;
+
+                    if (zone.all_of<Component::Line_Segment>(entity) == false) {
+                        renderable.y = position.y;
+                    }
+                }
+                else {
+//                    emplace and initialize renderable
+                    int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
+                    auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
+                    renderable.alpha = alpha;
+                    if (zone.all_of<Component::Line_Segment>(entity) == false) {
+                        renderable.y = position.y;
+                    }
                 }
 			}
 			else {
