@@ -214,11 +214,5 @@
     <property name="player" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="3376" template="spawn_points/unit_spawns/Demons/Daemon_Infernal.tx" x="10972.6" y="11694.1"/>
-  <object id="3377" template="spawn_points/unit_spawns/Demons/Male_DaemonKnight.tx" x="11568.1" y="10838"/>
-  <object id="3378" template="spawn_points/unit_spawns/Demons/Male_DaemonKnight.tx" x="11813.5" y="11113.8"/>
-  <object id="3379" template="spawn_points/unit_spawns/Demons/Male_DaemonKnight.tx" x="12163.5" y="11581.9"/>
-  <object id="3380" template="spawn_points/unit_spawns/Demons/Male_DaemonKnight.tx" x="12002.9" y="11688"/>
-  <object id="3381" template="spawn_points/unit_spawns/Demons/Male_DaemonKnight.tx" x="11740.8" y="11780.4"/>
  </objectgroup>
 </map>
