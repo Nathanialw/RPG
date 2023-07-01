@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(ARCH amd64)
 
 include_directories(include)
+include_directories(src)
 
 #add_library(srcDir "")
 #add_subdirectory(src)
