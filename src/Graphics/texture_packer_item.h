@@ -118,7 +118,10 @@ namespace Texture_Packer_Item {
         Rendering_Components::Sprite_Sheet_Data frame = {};
         Rendering_Components::Sheet_Data spritesheet;
         spritesheet.frameList.reserve(200);
-        const char* tex = dbData.texture_path.c_str();
+
+        std::string igmPathStr = "assets/" + dbData.texture_path;
+
+        const char* tex = igmPathStr.c_str();
         Get_Item_Texture(dbData.item_name, tex);
         spritesheet.texture = Item_Textures[dbData.item_name];
 //        spritesheet.color = Graphics::Set_Random_Color();

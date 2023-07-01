@@ -15,7 +15,7 @@
 #include "squad_control.h"
 #include "character_stats.h"
 #include "map.h"
-#include "texture_packer.h"~
+#include "texture_packer.h"
 #include "sounds.h"
 
 int main(int argc, char* argv[]) {
