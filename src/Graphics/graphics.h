@@ -222,7 +222,6 @@ namespace Graphics {
 
     void createGraphicsContext(entt::registry& zone)
     {
-
         window = SDL_CreateWindow(title, resolution.x, resolution.y, resolution.w, resolution.h, SDL_WINDOW_RESIZABLE);
         renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
         SDL_SetHint(SDL_HINT_RENDER_BATCHING, "1");

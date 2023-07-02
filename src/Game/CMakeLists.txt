@@ -1,7 +1,9 @@
 target_sources(RPG_game
         PUBLIC
-        game_loop.h
         init.h
+        main_menu.h
+        char_create.h
+        game_loop.h
         close.h
 )
 

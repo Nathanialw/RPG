@@ -20,13 +20,26 @@
 #include "map.h"
 #include "texture_packer.h"
 #include "sounds.h"
+#include "main_menu.h"
 
 
 namespace Init {
 
 	std::string batch = "1";
 
-	void init() {
+
+    void Init_World () {
+        Collision::init_Collison();
+        Init_Zone(World::zone);
+        Maps::Create_Map();
+        Character_Stats::Init_UI(World::zone);
+        Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
+        UI_Spellbook::init();
+        SQLite_Dialogue::Init_Dialogue();
+    }
+
+
+	void Init_Client() {
 		if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
 		//	SDL_Log("init error", SDL_GetError());
 		}
@@ -38,16 +51,15 @@ namespace Init {
 
 		Graphics::running = true;
 
-        Collision::init_Collison();
         Graphics::createGraphicsContext(World::zone);
         Sounds::init();
-        Init_Zone(World::zone);
-        update_scene(); //tries to add new environment objects and terrain the the world grid every frame
-        Maps::Create_Map();
-        Character_Stats::Init_UI(World::zone);
-        Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
-        UI_Spellbook::init();
-        SQLite_Dialogue::Init_Dialogue();
-	}
+
+        Main_Menu::Menu_Options();
+
+        Init_World();
+    }
+
+
+
 
 }
