@@ -1,5 +1,10 @@
 add_subdirectory(Components)
 add_subdirectory(unit_control)
+add_subdirectory(equip_unit)
+
+include_directories(Components)
+include_directories(unit_control)
+include_directories(equip_unit)
 
 target_sources (RPG_game
         PUBLIC

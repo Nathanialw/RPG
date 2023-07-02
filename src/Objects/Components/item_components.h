@@ -1,7 +1,7 @@
 #pragma once
 #include <SDL2/SDL.h>
 #include "sstream"
-
+#include "map"
 
 namespace Item_Component {
 

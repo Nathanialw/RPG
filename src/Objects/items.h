@@ -257,12 +257,12 @@ namespace Items {
 //		return equippedSheetData.index;
 //	}
 
-    std::string Create_Specific_Armor(entt::entity& item, Rarity& rarity, Item_Type itemType, std::string &equip_type) {
-        Armor_Type armorType = Generate_Armor_Type();
+    std::string Create_Specific_Armor(entt::entity& item, Rarity& rarity, Item_Type itemType, Armor_Type armorType, std::string &equip_type) {
+//        Armor_Type armorType = Generate_Armor_Type();
 
         std::string type = ItemTypeName[itemType];
         std::string armor = ArmorTypeName[armorType];
-        std::string itemName = armor + " " + type;
+        std::string itemName = armor + " " + type;  //ei. "Copper Pants" not implemented yet
         World::zone.emplace<Item_Type>(item, itemType);
         World::zone.emplace<Rarity>(item, rarity);
         int column = itemTypes[itemType];
@@ -461,8 +461,10 @@ namespace Items {
     entt::entity Create_And_Equip_Armor(Component::Position& position, Item_Component::Item_Type itemType, std::string &equip_type) {
         Rarity rarity = Generate_Item_Rarity();
         Item_Stats itemStats = Generate_Item_Stats(rarity);
+        Armor_Type armorType = Items::Generate_Armor_Type();
+
         auto item_uID = World::zone.create();
-        std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType, equip_type);
+        std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType, armorType, equip_type);
         if (itemName == "none") {
             World::zone.destroy(item_uID);
             Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
