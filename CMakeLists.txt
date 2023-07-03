@@ -22,7 +22,7 @@ add_executable(RPG_game main.cpp sqlite3.c tinyxml2.cpp SDL_FontCache.c)
 add_subdirectory(src)
 
 
-target_link_libraries(RPG_game -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer libbox2d.a libtmxlite.so )
+target_link_libraries(RPG_game -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer libbox2d.a libtmxlite.so -ltheoradec -ltheora -lvorbis -logg)
 
 set_target_properties(RPG_game PROPERTIES COMPILE_FLAGS "-m64" LINK_FLAGS "-m64")
 

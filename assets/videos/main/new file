@@ -1,0 +1,2 @@
+ffmpeg -i main_menu.mp4 -c:v libtheora -qscale:v 6 -c:a libvorbis -qscale:a 5 main_menu.ogv
+

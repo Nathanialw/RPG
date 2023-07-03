@@ -36,13 +36,18 @@ namespace Init {
         Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
         UI_Spellbook::init();
         SQLite_Dialogue::Init_Dialogue();
+        Video::Run_Audio("assets/music/nature.ogg");
     }
 
 
 	void Init_Client() {
 		if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
-		//	SDL_Log("init error", SDL_GetError());
+			SDL_Log(SDL_GetError());
 		}
+        Mix_Init(0);
+        Mix_OpenAudio(44100, AUDIO_S16SYS, 2, 4096);
+
+
 	//	Joystick::JoystickInit();
 		TTF_Init();
 

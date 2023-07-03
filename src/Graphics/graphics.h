@@ -230,7 +230,9 @@ namespace Graphics {
 
     void closeContext()
     {
-        SDL_DestroyWindow(window);
         running = false;
+        SDL_DestroyRenderer(renderer);
+        SDL_DestroyWindow(window);
+        SDL_Quit();
     }
 }

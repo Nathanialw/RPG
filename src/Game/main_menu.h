@@ -11,6 +11,7 @@
 #include "pause.h"
 #include "camera.h"
 #include "utilities.h"
+#include "video.h"
 
 namespace Main_Menu {
 
@@ -19,6 +20,7 @@ namespace Main_Menu {
         i2 w, h;
     };
 
+    const char *file = "assets/videos/main_menu.ogv";
 
     void Overlay() {
         SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_BLEND);
@@ -185,6 +187,7 @@ namespace Main_Menu {
 
 //      render menu
         SDL_RenderClear(Graphics::renderer);
+        Video::Run_Video(file, false);
         for (int i = 0; i < menu.buttons.size(); i++) {
             SDL_RenderCopyF(Graphics::renderer, menu.buttons[i].textTexture, NULL, &menu.buttons[i].size);
         }
@@ -199,9 +202,11 @@ namespace Main_Menu {
             Overlay();
             int i = Show_Menu(zone);
             if (i == 0) {
+                Video::Run_Video(file, true);
                 Toggle();
             }
             if (i == 1) {
+                Video::Run_Video(file, true);
                 Graphics::closeContext();
             }
         }
