@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Weretiger.png" width="1585" height="1596" scale="1" format="RGBA8888">
+  <sprite n="Weretiger_Attack 1_01_ 0" x="71" y="1509" w="52" h="86" pX="0.5" pY="0.5" oX="60" oY="77" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_02_ 0" x="1093" y="912" w="47" h="100" pX="0.5" pY="0.5" oX="61" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_03_ 0" x="1109" y="202" w="61" h="99" pX="0.5" pY="0.5" oX="71" oY="82" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_04_ 1" x="456" y="1223" w="62" h="98" pX="0.5" pY="0.5" oX="57" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_05_ 1" x="915" y="813" w="78" h="104" pX="0.5" pY="0.5" oX="50" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_06_ 1" x="397" y="0" w="118" h="85" pX="0.5" pY="0.5" oX="15" oY="61" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_07_ 2" x="1449" y="848" w="68" h="88" pX="0.5" pY="0.5" oX="71" oY="71" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_08_ 2" x="984" y="1502" w="81" h="83" pX="0.5" pY="0.5" oX="65" oY="70" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_09_ 2" x="0" y="139" w="123" h="99" pX="0.5" pY="0.5" oX="58" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_10_ 3" x="341" y="120" w="54" h="117" pX="0.5" pY="0.5" oX="84" oY="43" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_11_ 3" x="465" y="148" w="47" h="117" pX="0.5" pY="0.5" oX="87" oY="46" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_12_ 3" x="0" y="0" w="59" h="139" pX="0.5" pY="0.5" oX="66" oY="29" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_13_ 4" x="1263" y="1093" w="55" h="95" pX="0.5" pY="0.5" oX="55" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_14_ 4" x="1041" y="301" w="66" h="102" pX="0.5" pY="0.5" oX="46" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_15_ 4" x="235" y="1508" w="79" h="86" pX="0.5" pY="0.5" oX="37" oY="80" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_16_ 5" x="686" y="329" w="57" h="109" pX="0.5" pY="0.5" oX="67" oY="40" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_17_ 5" x="94" y="594" w="63" h="112" pX="0.5" pY="0.5" oX="68" oY="42" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_18_ 5" x="0" y="594" w="94" h="112" pX="0.5" pY="0.5" oX="38" oY="43" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_19_ 6" x="1186" y="1497" w="62" h="80" pX="0.5" pY="0.5" oX="66" oY="79" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_20_ 6" x="1428" y="1323" w="64" h="87" pX="0.5" pY="0.5" oX="66" oY="71" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_21_ 6" x="0" y="1026" w="101" h="97" pX="0.5" pY="0.5" oX="58" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_22_ 7" x="695" y="0" w="62" h="109" pX="0.5" pY="0.5" oX="82" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_23_ 7" x="782" y="763" w="71" h="106" pX="0.5" pY="0.5" oX="78" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 1_24_ 7" x="216" y="0" w="84" h="122" pX="0.5" pY="0.5" oX="76" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_01_ 0" x="467" y="1508" w="67" h="85" pX="0.5" pY="0.5" oX="60" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_02_ 0" x="0" y="1416" w="79" h="93" pX="0.5" pY="0.5" oX="67" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_03_ 0" x="782" y="943" w="99" h="71" pX="0.5" pY="0.5" oX="32" oY="81" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_04_ 1" x="439" y="1321" w="56" h="95" pX="0.5" pY="0.5" oX="83" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_05_ 1" x="1207" y="1108" w="56" h="96" pX="0.5" pY="0.5" oX="86" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_06_ 1" x="328" y="813" w="78" h="106" pX="0.5" pY="0.5" oX="59" oY="39" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_07_ 2" x="1382" y="1050" w="64" h="93" pX="0.5" pY="0.5" oX="53" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_08_ 2" x="859" y="1121" w="56" h="100" pX="0.5" pY="0.5" oX="52" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_09_ 2" x="62" y="1223" w="85" h="98" pX="0.5" pY="0.5" oX="55" oY="65" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_10_ 3" x="796" y="107" w="65" h="106" pX="0.5" pY="0.5" oX="69" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_11_ 3" x="382" y="1124" w="78" h="99" pX="0.5" pY="0.5" oX="48" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_12_ 3" x="57" y="478" w="107" h="116" pX="0.5" pY="0.5" oX="57" oY="38" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_13_ 4" x="1342" y="956" w="49" h="94" pX="0.5" pY="0.5" oX="86" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_14_ 4" x="1075" y="1221" w="61" h="97" pX="0.5" pY="0.5" oX="97" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_15_ 4" x="674" y="1123" w="62" h="100" pX="0.5" pY="0.5" oX="67" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_16_ 5" x="1318" y="1181" w="64" h="95" pX="0.5" pY="0.5" oX="69" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_17_ 5" x="1382" y="1143" w="67" h="92" pX="0.5" pY="0.5" oX="67" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_18_ 5" x="921" y="0" w="87" h="105" pX="0.5" pY="0.5" oX="52" oY="39" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_19_ 6" x="1346" y="1438" w="67" h="76" pX="0.5" pY="0.5" oX="58" oY="59" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_20_ 6" x="0" y="1509" w="71" h="87" pX="0.5" pY="0.5" oX="57" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_21_ 6" x="657" y="1507" w="67" h="85" pX="0.5" pY="0.5" oX="65" oY="73" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_22_ 7" x="406" y="813" w="49" h="106" pX="0.5" pY="0.5" oX="65" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_23_ 7" x="756" y="656" w="61" h="107" pX="0.5" pY="0.5" oX="42" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Attack 2_24_ 7" x="441" y="921" w="74" h="104" pX="0.5" pY="0.5" oX="67" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_01_ 0" x="965" y="1020" w="66" h="101" pX="0.5" pY="0.5" oX="72" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_02_ 0" x="1107" y="301" w="66" h="101" pX="0.5" pY="0.5" oX="72" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_03_ 0" x="990" y="917" w="65" h="103" pX="0.5" pY="0.5" oX="72" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_04_ 1" x="1109" y="402" w="39" h="101" pX="0.5" pY="0.5" oX="76" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_05_ 1" x="1055" y="912" w="38" h="101" pX="0.5" pY="0.5" oX="77" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_06_ 1" x="1103" y="607" w="38" h="101" pX="0.5" pY="0.5" oX="77" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_07_ 2" x="355" y="0" w="42" h="120" pX="0.5" pY="0.5" oX="82" oY="33" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_08_ 2" x="300" y="120" w="41" h="120" pX="0.5" pY="0.5" oX="82" oY="33" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_09_ 2" x="228" y="122" w="41" h="120" pX="0.5" pY="0.5" oX="82" oY="33" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_10_ 3" x="1111" y="503" w="63" h="101" pX="0.5" pY="0.5" oX="63" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_11_ 3" x="1109" y="101" w="63" h="101" pX="0.5" pY="0.5" oX="63" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_12_ 3" x="989" y="505" w="63" h="102" pX="0.5" pY="0.5" oX="63" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_13_ 4" x="1391" y="956" w="55" h="92" pX="0.5" pY="0.5" oX="74" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_14_ 4" x="1337" y="192" w="54" h="95" pX="0.5" pY="0.5" oX="75" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_15_ 4" x="1221" y="195" w="55" h="96" pX="0.5" pY="0.5" oX="75" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_16_ 5" x="979" y="105" w="50" h="103" pX="0.5" pY="0.5" oX="71" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_17_ 5" x="515" y="921" w="49" h="104" pX="0.5" pY="0.5" oX="72" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_18_ 5" x="993" y="813" w="48" h="103" pX="0.5" pY="0.5" oX="73" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_19_ 6" x="164" y="478" w="53" h="116" pX="0.5" pY="0.5" oX="76" oY="39" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_20_ 6" x="217" y="477" w="54" h="116" pX="0.5" pY="0.5" oX="75" oY="39" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_21_ 6" x="282" y="359" w="53" h="117" pX="0.5" pY="0.5" oX="75" oY="38" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_22_ 7" x="290" y="704" w="52" h="109" pX="0.5" pY="0.5" oX="72" oY="40" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_23_ 7" x="642" y="549" w="53" h="109" pX="0.5" pY="0.5" oX="71" oY="40" oW="190" oH="190"/>
+  <sprite n="Weretiger_Behavior_24_ 7" x="642" y="440" w="53" h="109" pX="0.5" pY="0.5" oX="71" oY="40" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_01_ 0" x="183" y="1508" w="52" h="86" pX="0.5" pY="0.5" oX="60" oY="77" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_02_ 0" x="1392" y="860" w="50" h="90" pX="0.5" pY="0.5" oX="62" oY="72" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_03_ 0" x="463" y="494" w="51" h="94" pX="0.5" pY="0.5" oX="64" oY="67" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_04_ 1" x="0" y="1223" w="62" h="98" pX="0.5" pY="0.5" oX="57" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_05_ 1" x="1271" y="97" w="66" h="96" pX="0.5" pY="0.5" oX="54" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_06_ 1" x="220" y="1321" w="62" h="95" pX="0.5" pY="0.5" oX="60" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_07_ 2" x="1450" y="557" w="68" h="88" pX="0.5" pY="0.5" oX="71" oY="71" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_08_ 2" x="644" y="1415" w="72" h="92" pX="0.5" pY="0.5" oX="70" oY="68" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_09_ 2" x="1231" y="592" w="69" h="96" pX="0.5" pY="0.5" oX="69" oY="65" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_10_ 3" x="408" y="148" w="54" h="117" pX="0.5" pY="0.5" oX="84" oY="43" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_11_ 3" x="465" y="380" w="50" h="114" pX="0.5" pY="0.5" oX="85" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_12_ 3" x="634" y="110" w="49" h="110" pX="0.5" pY="0.5" oX="84" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_13_ 4" x="1335" y="287" w="55" h="95" pX="0.5" pY="0.5" oX="55" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_14_ 4" x="972" y="1221" w="53" h="97" pX="0.5" pY="0.5" oX="57" oY="60" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_15_ 4" x="1170" y="202" w="51" h="99" pX="0.5" pY="0.5" oX="59" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_16_ 5" x="695" y="438" w="57" h="109" pX="0.5" pY="0.5" oX="67" oY="40" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_17_ 5" x="886" y="917" w="58" h="103" pX="0.5" pY="0.5" oX="69" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_18_ 5" x="325" y="1124" w="57" h="99" pX="0.5" pY="0.5" oX="72" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_19_ 6" x="1124" y="1502" w="62" h="80" pX="0.5" pY="0.5" oX="66" oY="79" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_20_ 6" x="920" y="1503" w="64" h="83" pX="0.5" pY="0.5" oX="63" oY="75" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_21_ 6" x="1450" y="469" w="64" h="88" pX="0.5" pY="0.5" oX="61" oY="70" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_22_ 7" x="60" y="706" w="62" h="109" pX="0.5" pY="0.5" oX="82" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_23_ 7" x="122" y="706" w="57" h="109" pX="0.5" pY="0.5" oX="82" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Block_24_ 7" x="179" y="706" w="56" h="109" pX="0.5" pY="0.5" oX="82" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_01_ 0" x="123" y="1508" w="60" h="86" pX="0.5" pY="0.5" oX="66" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_02_ 0" x="534" y="1508" w="60" h="85" pX="0.5" pY="0.5" oX="66" oY="70" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_03_ 0" x="724" y="1506" w="60" h="84" pX="0.5" pY="0.5" oX="66" oY="71" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_04_ 1" x="743" y="326" w="40" h="107" pX="0.5" pY="0.5" oX="68" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_05_ 1" x="742" y="109" w="41" h="107" pX="0.5" pY="0.5" oX="67" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_06_ 1" x="66" y="815" w="41" h="107" pX="0.5" pY="0.5" oX="66" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_07_ 2" x="1342" y="672" w="47" h="95" pX="0.5" pY="0.5" oX="84" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_08_ 2" x="120" y="1321" w="47" h="95" pX="0.5" pY="0.5" oX="85" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_09_ 2" x="572" y="1320" w="48" h="95" pX="0.5" pY="0.5" oX="85" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_10_ 3" x="992" y="403" w="63" h="102" pX="0.5" pY="0.5" oX="67" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_11_ 3" x="989" y="607" w="64" h="102" pX="0.5" pY="0.5" oX="66" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_12_ 3" x="719" y="870" w="63" h="103" pX="0.5" pY="0.5" oX="67" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_13_ 4" x="620" y="1320" w="54" h="95" pX="0.5" pY="0.5" oX="67" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_14_ 4" x="1258" y="688" w="53" h="95" pX="0.5" pY="0.5" oX="67" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_15_ 4" x="1027" y="1318" w="52" h="94" pX="0.5" pY="0.5" oX="67" oY="64" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_16_ 5" x="515" y="488" w="50" h="110" pX="0.5" pY="0.5" oX="69" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_17_ 5" x="585" y="110" w="49" h="110" pX="0.5" pY="0.5" oX="69" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_18_ 5" x="317" y="593" w="50" h="111" pX="0.5" pY="0.5" oX="68" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_19_ 6" x="1460" y="178" w="48" h="89" pX="0.5" pY="0.5" oX="77" oY="66" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_20_ 6" x="992" y="313" w="47" h="89" pX="0.5" pY="0.5" oX="78" oY="66" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_21_ 6" x="1449" y="936" w="47" h="88" pX="0.5" pY="0.5" oX="79" oY="67" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_22_ 7" x="916" y="1221" w="56" h="97" pX="0.5" pY="0.5" oX="73" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_23_ 7" x="295" y="1223" w="56" h="98" pX="0.5" pY="0.5" oX="73" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Critical HP_24_ 7" x="147" y="1223" w="57" h="98" pX="0.5" pY="0.5" oX="73" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Dead_01_ 0" x="60" y="1123" w="86" h="100" pX="0.5" pY="0.5" oX="68" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Dead_02_ 1" x="397" y="85" w="118" h="63" pX="0.5" pY="0.5" oX="42" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Dead_03_ 2" x="132" y="242" w="119" h="64" pX="0.5" pY="0.5" oX="30" oY="78" oW="190" oH="190"/>
+  <sprite n="Weretiger_Dead_04_ 3" x="314" y="1508" w="86" h="83" pX="0.5" pY="0.5" oX="36" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Dead_05_ 4" x="865" y="530" w="105" h="75" pX="0.5" pY="0.5" oX="49" oY="68" oW="190" oH="190"/>
+  <sprite n="Weretiger_Dead_06_ 5" x="1299" y="1276" w="93" h="73" pX="0.5" pY="0.5" oX="40" oY="66" oW="190" oH="190"/>
+  <sprite n="Weretiger_Dead_07_ 6" x="79" y="1416" w="93" h="80" pX="0.5" pY="0.5" oX="57" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Dead_08_ 7" x="782" y="869" w="104" h="74" pX="0.5" pY="0.5" oX="36" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_01_ 0" x="1389" y="577" w="60" h="92" pX="0.5" pY="0.5" oX="64" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_02_ 0" x="1276" y="193" w="59" h="96" pX="0.5" pY="0.5" oX="66" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_03_ 0" x="618" y="1023" w="64" h="100" pX="0.5" pY="0.5" oX="64" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_04_ 1" x="515" y="375" w="53" h="113" pX="0.5" pY="0.5" oX="61" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_05_ 1" x="757" y="0" w="60" h="107" pX="0.5" pY="0.5" oX="61" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_06_ 1" x="964" y="1121" w="69" h="100" pX="0.5" pY="0.5" oX="60" oY="61" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_07_ 2" x="712" y="1020" w="52" h="101" pX="0.5" pY="0.5" oX="83" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_08_ 2" x="1142" y="1113" w="65" h="99" pX="0.5" pY="0.5" oX="70" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_09_ 2" x="0" y="922" w="74" h="104" pX="0.5" pY="0.5" oX="62" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_10_ 3" x="1213" y="997" w="65" h="96" pX="0.5" pY="0.5" oX="66" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_11_ 3" x="719" y="764" w="63" h="106" pX="0.5" pY="0.5" oX="67" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_12_ 3" x="615" y="220" w="64" h="110" pX="0.5" pY="0.5" oX="68" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_13_ 4" x="886" y="318" w="52" h="105" pX="0.5" pY="0.5" oX="66" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_14_ 4" x="817" y="0" w="48" h="106" pX="0.5" pY="0.5" oX="71" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_15_ 4" x="783" y="326" w="58" h="106" pX="0.5" pY="0.5" oX="73" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_16_ 5" x="695" y="547" w="62" h="109" pX="0.5" pY="0.5" oX="63" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_17_ 5" x="1033" y="1121" w="63" h="100" pX="0.5" pY="0.5" oX="67" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_18_ 5" x="920" y="605" w="69" h="104" pX="0.5" pY="0.5" oX="63" oY="60" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_19_ 6" x="1229" y="291" w="61" h="96" pX="0.5" pY="0.5" oX="72" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_20_ 6" x="1318" y="1086" w="61" h="95" pX="0.5" pY="0.5" oX="68" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_21_ 6" x="1273" y="387" w="68" h="95" pX="0.5" pY="0.5" oX="64" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_22_ 7" x="1173" y="802" w="57" h="99" pX="0.5" pY="0.5" oX="73" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_23_ 7" x="145" y="922" w="50" h="104" pX="0.5" pY="0.5" oX="75" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Evade_24_ 7" x="918" y="423" w="62" h="104" pX="0.5" pY="0.5" oX="60" oY="46" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_01_ 0" x="339" y="1416" w="56" h="92" pX="0.5" pY="0.5" oX="69" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_02_ 0" x="513" y="814" w="67" h="107" pX="0.5" pY="0.5" oX="72" oY="40" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_03_ 0" x="390" y="474" w="73" h="114" pX="0.5" pY="0.5" oX="75" oY="32" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_04_ 1" x="513" y="262" w="42" h="113" pX="0.5" pY="0.5" oX="72" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_05_ 1" x="802" y="432" w="61" h="106" pX="0.5" pY="0.5" oX="72" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_06_ 1" x="259" y="815" w="69" h="107" pX="0.5" pY="0.5" oX="77" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_07_ 2" x="1132" y="809" w="41" h="101" pX="0.5" pY="0.5" oX="83" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_08_ 2" x="1090" y="708" w="59" h="101" pX="0.5" pY="0.5" oX="66" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_09_ 2" x="74" y="922" w="71" h="104" pX="0.5" pY="0.5" oX="52" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_10_ 3" x="1196" y="703" w="62" h="96" pX="0.5" pY="0.5" oX="66" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_11_ 3" x="722" y="1223" w="69" h="97" pX="0.5" pY="0.5" oX="58" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_12_ 3" x="388" y="357" w="77" h="117" pX="0.5" pY="0.5" oX="48" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_13_ 4" x="850" y="213" w="52" h="105" pX="0.5" pY="0.5" oX="66" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_14_ 4" x="1111" y="0" w="69" h="101" pX="0.5" pY="0.5" oX="67" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_15_ 4" x="1003" y="709" w="87" h="102" pX="0.5" pY="0.5" oX="73" oY="39" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_16_ 5" x="683" y="110" w="59" h="109" pX="0.5" pY="0.5" oX="66" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_17_ 5" x="853" y="749" w="62" h="105" pX="0.5" pY="0.5" oX="70" oY="59" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_18_ 5" x="149" y="359" w="50" h="119" pX="0.5" pY="0.5" oX="84" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_19_ 6" x="1208" y="901" w="55" h="96" pX="0.5" pY="0.5" oX="74" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_20_ 6" x="514" y="706" w="61" h="108" pX="0.5" pY="0.5" oX="67" oY="42" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_21_ 6" x="465" y="265" w="48" h="115" pX="0.5" pY="0.5" oX="65" oY="36" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_22_ 7" x="1174" y="501" w="57" h="99" pX="0.5" pY="0.5" oX="73" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_23_ 7" x="574" y="1415" w="70" h="92" pX="0.5" pY="0.5" oX="61" oY="59" oW="190" oH="190"/>
+  <sprite n="Weretiger_Get Hit_24_ 7" x="1141" y="604" w="90" h="99" pX="0.5" pY="0.5" oX="37" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_01_ 0" x="400" y="1508" w="67" h="85" pX="0.5" pY="0.5" oX="60" oY="72" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_02_ 0" x="784" y="1505" w="68" h="84" pX="0.5" pY="0.5" oX="59" oY="73" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_03_ 0" x="852" y="1503" w="68" h="84" pX="0.5" pY="0.5" oX="59" oY="73" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_04_ 1" x="1079" y="1318" w="57" h="94" pX="0.5" pY="0.5" oX="73" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_05_ 1" x="1136" y="1310" w="58" h="94" pX="0.5" pY="0.5" oX="72" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_06_ 1" x="1392" y="0" w="58" h="93" pX="0.5" pY="0.5" oX="72" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_07_ 2" x="172" y="1416" w="64" h="92" pX="0.5" pY="0.5" oX="61" oY="68" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_08_ 2" x="758" y="1414" w="65" h="91" pX="0.5" pY="0.5" oX="61" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_09_ 2" x="1088" y="1412" w="64" h="90" pX="0.5" pY="0.5" oX="62" oY="70" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_10_ 3" x="107" y="815" w="65" h="107" pX="0.5" pY="0.5" oX="69" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_11_ 3" x="0" y="815" w="66" h="107" pX="0.5" pY="0.5" oX="68" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_12_ 3" x="853" y="644" w="67" h="105" pX="0.5" pY="0.5" oX="68" oY="59" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_13_ 4" x="1342" y="862" w="50" h="94" pX="0.5" pY="0.5" oX="71" oY="67" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_14_ 4" x="1391" y="186" w="49" h="93" pX="0.5" pY="0.5" oX="72" oY="67" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_15_ 4" x="408" y="265" w="49" h="92" pX="0.5" pY="0.5" oX="72" oY="68" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_16_ 5" x="1231" y="496" w="64" h="96" pX="0.5" pY="0.5" oX="69" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_17_ 5" x="1278" y="991" w="64" h="95" pX="0.5" pY="0.5" oX="69" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_18_ 5" x="56" y="1321" w="64" h="95" pX="0.5" pY="0.5" oX="69" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_19_ 6" x="1395" y="1514" w="68" h="76" pX="0.5" pY="0.5" oX="57" oY="72" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_20_ 6" x="1517" y="89" w="68" h="75" pX="0.5" pY="0.5" oX="57" oY="73" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_21_ 6" x="1518" y="0" w="67" h="75" pX="0.5" pY="0.5" oX="58" oY="73" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_22_ 7" x="211" y="815" w="48" h="107" pX="0.5" pY="0.5" oX="75" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_23_ 7" x="629" y="814" w="49" h="106" pX="0.5" pY="0.5" oX="75" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Idle_24_ 7" x="580" y="814" w="49" h="106" pX="0.5" pY="0.5" oX="75" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_01_ 0" x="1463" y="1497" w="47" h="57" pX="0.5" pY="0.5" oX="72" oY="81" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_02_ 0" x="1291" y="1438" w="47" h="57" pX="0.5" pY="0.5" oX="72" oY="81" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_03_ 0" x="1511" y="1314" w="47" h="57" pX="0.5" pY="0.5" oX="72" oY="81" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_04_ 1" x="1517" y="773" w="58" h="63" pX="0.5" pY="0.5" oX="73" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_05_ 1" x="1517" y="898" w="58" h="62" pX="0.5" pY="0.5" oX="73" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_06_ 1" x="1517" y="836" w="58" h="62" pX="0.5" pY="0.5" oX="73" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_07_ 2" x="1496" y="960" w="60" h="58" pX="0.5" pY="0.5" oX="67" oY="66" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_08_ 2" x="1515" y="1018" w="60" h="58" pX="0.5" pY="0.5" oX="67" oY="66" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_09_ 2" x="1515" y="1076" w="60" h="58" pX="0.5" pY="0.5" oX="67" oY="66" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_10_ 3" x="1248" y="1497" w="49" h="76" pX="0.5" pY="0.5" oX="73" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_11_ 3" x="1297" y="1497" w="49" h="76" pX="0.5" pY="0.5" oX="73" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_12_ 3" x="1346" y="1514" w="49" h="76" pX="0.5" pY="0.5" oX="73" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_13_ 4" x="1518" y="581" w="54" h="64" pX="0.5" pY="0.5" oX="75" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_14_ 4" x="1517" y="645" w="54" h="64" pX="0.5" pY="0.5" oX="75" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_15_ 4" x="1517" y="709" w="54" h="64" pX="0.5" pY="0.5" oX="75" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_16_ 5" x="1518" y="443" w="58" h="69" pX="0.5" pY="0.5" oX="73" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_17_ 5" x="1518" y="512" w="58" h="69" pX="0.5" pY="0.5" oX="73" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_18_ 5" x="1518" y="374" w="58" h="69" pX="0.5" pY="0.5" oX="73" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_19_ 6" x="1515" y="1134" w="56" h="60" pX="0.5" pY="0.5" oX="68" oY="72" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_20_ 6" x="1515" y="1194" w="56" h="60" pX="0.5" pY="0.5" oX="68" oY="72" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_21_ 6" x="1511" y="1254" w="56" h="60" pX="0.5" pY="0.5" oX="68" oY="72" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_22_ 7" x="1518" y="164" w="53" h="70" pX="0.5" pY="0.5" oX="77" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_23_ 7" x="1518" y="234" w="53" h="70" pX="0.5" pY="0.5" oX="77" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Rest_24_ 7" x="1518" y="304" w="53" h="70" pX="0.5" pY="0.5" oX="77" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_01_ 0" x="244" y="1126" w="55" h="97" pX="0.5" pY="0.5" oX="66" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_02_ 0" x="594" y="1507" w="63" h="85" pX="0.5" pY="0.5" oX="66" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_03_ 0" x="1228" y="1403" w="63" h="90" pX="0.5" pY="0.5" oX="67" oY="61" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_04_ 0" x="1389" y="669" w="61" h="91" pX="0.5" pY="0.5" oX="70" oY="61" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_05_ 0" x="920" y="106" w="59" h="104" pX="0.5" pY="0.5" oX="72" oY="61" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_06_ 0" x="1021" y="1412" w="67" h="90" pX="0.5" pY="0.5" oX="67" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_07_ 0" x="1449" y="1024" w="61" h="88" pX="0.5" pY="0.5" oX="68" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_08_ 0" x="1460" y="267" w="57" h="89" pX="0.5" pY="0.5" oX="69" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_09_ 1" x="1311" y="767" w="76" h="95" pX="0.5" pY="0.5" oX="59" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_10_ 1" x="735" y="1320" w="68" h="94" pX="0.5" pY="0.5" oX="65" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_11_ 1" x="495" y="1321" w="77" h="95" pX="0.5" pY="0.5" oX="59" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_12_ 1" x="1263" y="895" w="79" h="96" pX="0.5" pY="0.5" oX="55" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_13_ 1" x="357" y="1321" w="82" h="95" pX="0.5" pY="0.5" oX="54" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_14_ 1" x="282" y="1321" w="75" h="95" pX="0.5" pY="0.5" oX="56" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_15_ 1" x="1140" y="910" w="68" h="99" pX="0.5" pY="0.5" oX="57" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_16_ 1" x="1300" y="0" w="92" h="96" pX="0.5" pY="0.5" oX="56" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_17_ 2" x="567" y="1223" w="78" h="97" pX="0.5" pY="0.5" oX="60" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_18_ 2" x="803" y="1318" w="64" h="94" pX="0.5" pY="0.5" oX="66" oY="53" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_19_ 2" x="1300" y="577" w="89" h="95" pX="0.5" pY="0.5" oX="49" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_20_ 2" x="1300" y="482" w="92" h="95" pX="0.5" pY="0.5" oX="44" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_21_ 2" x="146" y="1126" w="98" h="97" pX="0.5" pY="0.5" oX="48" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_22_ 2" x="946" y="1318" w="81" h="94" pX="0.5" pY="0.5" oX="60" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_23_ 2" x="1226" y="1204" w="73" h="96" pX="0.5" pY="0.5" oX="65" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_24_ 2" x="1194" y="1309" w="94" h="94" pX="0.5" pY="0.5" oX="46" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_25_ 3" x="512" y="148" w="55" h="114" pX="0.5" pY="0.5" oX="75" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_26_ 3" x="679" y="220" w="61" h="109" pX="0.5" pY="0.5" oX="70" oY="43" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_27_ 3" x="158" y="0" w="58" h="122" pX="0.5" pY="0.5" oX="71" oY="42" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_28_ 3" x="0" y="238" w="56" h="121" pX="0.5" pY="0.5" oX="71" oY="42" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_29_ 3" x="300" y="0" w="55" h="120" pX="0.5" pY="0.5" oX="71" oY="43" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_30_ 3" x="328" y="476" w="62" h="115" pX="0.5" pY="0.5" oX="67" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_31_ 3" x="335" y="359" w="53" h="117" pX="0.5" pY="0.5" oX="74" oY="42" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_32_ 3" x="104" y="0" w="54" h="125" pX="0.5" pY="0.5" oX="73" oY="41" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_33_ 4" x="1231" y="0" w="69" h="97" pX="0.5" pY="0.5" oX="67" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_34_ 4" x="1450" y="0" w="68" h="89" pX="0.5" pY="0.5" oX="62" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_35_ 4" x="953" y="1412" w="68" h="90" pX="0.5" pY="0.5" oX="60" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_36_ 4" x="1291" y="1349" w="72" h="89" pX="0.5" pY="0.5" oX="59" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_37_ 4" x="1148" y="402" w="68" h="99" pX="0.5" pY="0.5" oX="59" oY="59" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_38_ 4" x="823" y="1412" w="69" h="91" pX="0.5" pY="0.5" oX="58" oY="59" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_39_ 4" x="395" y="1416" w="55" h="92" pX="0.5" pY="0.5" oX="66" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_40_ 4" x="1341" y="382" w="74" h="93" pX="0.5" pY="0.5" oX="69" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_41_ 5" x="555" y="262" w="60" h="113" pX="0.5" pY="0.5" oX="68" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_42_ 5" x="757" y="540" w="57" h="106" pX="0.5" pY="0.5" oX="64" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_43_ 5" x="340" y="240" w="68" h="117" pX="0.5" pY="0.5" oX="65" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_44_ 5" x="515" y="0" w="70" h="114" pX="0.5" pY="0.5" oX="65" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_45_ 5" x="342" y="704" w="72" h="109" pX="0.5" pY="0.5" oX="65" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_46_ 5" x="1143" y="1009" w="70" h="99" pX="0.5" pY="0.5" oX="63" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_47_ 5" x="568" y="375" w="64" h="112" pX="0.5" pY="0.5" oX="63" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_48_ 5" x="269" y="240" w="71" h="119" pX="0.5" pY="0.5" oX="61" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_49_ 6" x="674" y="1320" w="61" h="95" pX="0.5" pY="0.5" oX="69" oY="61" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_50_ 6" x="1460" y="356" w="58" h="89" pX="0.5" pY="0.5" oX="74" oY="61" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_51_ 6" x="1152" y="1404" w="76" h="90" pX="0.5" pY="0.5" oX="56" oY="59" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_52_ 6" x="867" y="1318" w="79" h="94" pX="0.5" pY="0.5" oX="53" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_53_ 6" x="1029" y="199" w="80" h="102" pX="0.5" pY="0.5" oX="53" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_54_ 6" x="501" y="1416" w="73" h="92" pX="0.5" pY="0.5" oX="61" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_55_ 6" x="1363" y="1349" w="65" h="89" pX="0.5" pY="0.5" oX="67" oY="60" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_56_ 6" x="1449" y="1112" w="66" h="88" pX="0.5" pY="0.5" oX="69" oY="60" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_57_ 7" x="254" y="1026" w="71" h="100" pX="0.5" pY="0.5" oX="60" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_58_ 7" x="902" y="212" w="67" h="105" pX="0.5" pY="0.5" oX="66" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_59_ 7" x="76" y="359" w="73" h="119" pX="0.5" pY="0.5" oX="67" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_60_ 7" x="56" y="238" w="76" h="121" pX="0.5" pY="0.5" oX="67" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_61_ 7" x="158" y="122" w="70" h="120" pX="0.5" pY="0.5" oX="69" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_62_ 7" x="367" y="591" w="71" h="111" pX="0.5" pY="0.5" oX="71" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_63_ 7" x="0" y="706" w="60" h="109" pX="0.5" pY="0.5" oX="70" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Run_64_ 7" x="568" y="487" w="74" h="111" pX="0.5" pY="0.5" oX="54" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_01_ 0" x="243" y="1223" w="52" h="98" pX="0.5" pY="0.5" oX="71" oY="60" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_02_ 0" x="289" y="1416" w="50" h="92" pX="0.5" pY="0.5" oX="72" oY="68" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_03_ 0" x="678" y="814" w="41" h="106" pX="0.5" pY="0.5" oX="70" oY="73" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_04_ 1" x="1055" y="403" w="54" h="102" pX="0.5" pY="0.5" oX="68" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_05_ 1" x="736" y="1121" w="58" h="100" pX="0.5" pY="0.5" oX="58" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_06_ 1" x="1008" y="0" w="103" h="96" pX="0.5" pY="0.5" oX="9" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_07_ 2" x="1180" y="0" w="51" h="99" pX="0.5" pY="0.5" oX="75" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_08_ 2" x="1392" y="93" w="57" h="93" pX="0.5" pY="0.5" oX="78" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_09_ 2" x="479" y="598" w="108" h="84" pX="0.5" pY="0.5" oX="76" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_10_ 3" x="865" y="425" w="53" h="105" pX="0.5" pY="0.5" oX="74" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_11_ 3" x="212" y="594" w="52" h="112" pX="0.5" pY="0.5" oX="75" oY="42" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_12_ 3" x="59" y="0" w="45" h="136" pX="0.5" pY="0.5" oX="84" oY="17" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_13_ 4" x="675" y="920" w="37" h="103" pX="0.5" pY="0.5" oX="76" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_14_ 4" x="521" y="1025" w="41" h="99" pX="0.5" pY="0.5" oX="67" oY="58" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_15_ 4" x="645" y="1223" w="77" h="97" pX="0.5" pY="0.5" oX="30" oY="64" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_16_ 5" x="1031" y="1020" w="60" h="101" pX="0.5" pY="0.5" oX="69" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_17_ 5" x="633" y="706" w="58" h="108" pX="0.5" pY="0.5" oX="64" oY="41" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_18_ 5" x="0" y="359" w="76" h="119" pX="0.5" pY="0.5" oX="37" oY="30" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_19_ 6" x="892" y="1412" w="61" h="91" pX="0.5" pY="0.5" oX="66" oY="60" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_20_ 6" x="1065" y="1502" w="59" h="83" pX="0.5" pY="0.5" oX="71" oY="71" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_21_ 6" x="1428" y="1235" w="83" h="88" pX="0.5" pY="0.5" oX="76" oY="79" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_22_ 7" x="400" y="921" w="41" h="104" pX="0.5" pY="0.5" oX="81" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_23_ 7" x="752" y="433" w="50" h="107" pX="0.5" pY="0.5" oX="85" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Use Skill_24_ 7" x="199" y="359" w="83" h="118" pX="0.5" pY="0.5" oX="86" oY="37" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_01_ 0" x="564" y="921" w="54" h="103" pX="0.5" pY="0.5" oX="71" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_02_ 0" x="511" y="1124" w="55" h="99" pX="0.5" pY="0.5" oX="71" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_03_ 0" x="1392" y="475" w="56" h="92" pX="0.5" pY="0.5" oX="71" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_04_ 0" x="796" y="213" w="54" h="106" pX="0.5" pY="0.5" oX="71" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_05_ 0" x="938" y="317" w="54" h="104" pX="0.5" pY="0.5" oX="72" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_06_ 0" x="167" y="1321" w="53" h="95" pX="0.5" pY="0.5" oX="72" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_07_ 0" x="1337" y="96" w="51" h="96" pX="0.5" pY="0.5" oX="72" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_08_ 0" x="461" y="806" w="52" h="107" pX="0.5" pY="0.5" oX="72" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_09_ 1" x="1216" y="400" w="57" h="96" pX="0.5" pY="0.5" oX="71" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_10_ 1" x="853" y="1221" w="63" h="97" pX="0.5" pY="0.5" oX="73" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_11_ 1" x="204" y="1223" w="39" h="98" pX="0.5" pY="0.5" oX="78" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_12_ 1" x="564" y="1024" w="54" h="100" pX="0.5" pY="0.5" oX="62" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_13_ 1" x="405" y="1025" w="55" h="99" pX="0.5" pY="0.5" oX="69" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_14_ 1" x="1085" y="811" w="47" h="101" pX="0.5" pY="0.5" oX="74" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_15_ 1" x="1053" y="607" w="50" h="101" pX="0.5" pY="0.5" oX="65" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_16_ 1" x="791" y="1221" w="62" h="97" pX="0.5" pY="0.5" oX="60" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_17_ 2" x="347" y="1025" w="58" h="99" pX="0.5" pY="0.5" oX="67" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_18_ 2" x="794" y="1121" w="65" h="100" pX="0.5" pY="0.5" oX="56" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_19_ 2" x="944" y="917" w="46" h="103" pX="0.5" pY="0.5" oX="75" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_20_ 2" x="351" y="1223" w="52" h="98" pX="0.5" pY="0.5" oX="77" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_21_ 2" x="403" y="1223" w="53" h="98" pX="0.5" pY="0.5" oX="69" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_22_ 2" x="1025" y="1221" w="50" h="97" pX="0.5" pY="0.5" oX="71" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_23_ 2" x="1091" y="1013" w="52" h="100" pX="0.5" pY="0.5" oX="78" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_24_ 2" x="460" y="1025" w="61" h="99" pX="0.5" pY="0.5" oX="70" oY="50" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_25_ 3" x="0" y="478" w="57" h="116" pX="0.5" pY="0.5" oX="71" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_26_ 3" x="271" y="477" w="57" h="116" pX="0.5" pY="0.5" oX="71" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_27_ 3" x="740" y="219" w="56" h="107" pX="0.5" pY="0.5" oX="72" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_28_ 3" x="242" y="922" w="55" h="104" pX="0.5" pY="0.5" oX="73" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_29_ 3" x="585" y="0" w="55" h="110" pX="0.5" pY="0.5" oX="72" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_30_ 3" x="235" y="706" w="55" h="109" pX="0.5" pY="0.5" oX="72" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_31_ 3" x="969" y="210" w="55" h="103" pX="0.5" pY="0.5" oX="72" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_32_ 3" x="157" y="594" w="55" h="112" pX="0.5" pY="0.5" oX="72" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_33_ 4" x="915" y="1121" w="49" h="100" pX="0.5" pY="0.5" oX="72" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_34_ 4" x="1217" y="99" w="54" h="96" pX="0.5" pY="0.5" oX="73" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_35_ 4" x="236" y="1416" w="53" h="92" pX="0.5" pY="0.5" oX="69" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_36_ 4" x="865" y="0" w="56" h="106" pX="0.5" pY="0.5" oX="69" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_37_ 4" x="1055" y="96" w="53" h="103" pX="0.5" pY="0.5" oX="70" oY="56" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_38_ 4" x="1136" y="1213" w="42" h="97" pX="0.5" pY="0.5" oX="76" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_39_ 4" x="1290" y="289" w="45" h="94" pX="0.5" pY="0.5" oX="72" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_40_ 4" x="764" y="1020" w="53" h="101" pX="0.5" pY="0.5" oX="64" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_41_ 5" x="632" y="330" w="54" h="110" pX="0.5" pY="0.5" oX="70" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_42_ 5" x="264" y="593" w="53" h="111" pX="0.5" pY="0.5" oX="72" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_43_ 5" x="195" y="922" w="47" h="104" pX="0.5" pY="0.5" oX="76" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_44_ 5" x="1173" y="301" w="56" h="99" pX="0.5" pY="0.5" oX="66" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_45_ 5" x="297" y="922" w="50" h="104" pX="0.5" pY="0.5" oX="72" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_46_ 5" x="347" y="921" w="53" h="104" pX="0.5" pY="0.5" oX="70" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_47_ 5" x="618" y="920" w="57" h="103" pX="0.5" pY="0.5" oX="67" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_48_ 5" x="575" y="706" w="58" h="108" pX="0.5" pY="0.5" oX="67" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_49_ 6" x="870" y="1020" w="52" h="101" pX="0.5" pY="0.5" oX="72" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_50_ 6" x="199" y="1026" w="55" h="100" pX="0.5" pY="0.5" oX="67" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_51_ 6" x="101" y="1026" w="41" h="97" pX="0.5" pY="0.5" oX="78" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_52_ 6" x="1096" y="1113" w="46" h="100" pX="0.5" pY="0.5" oX="79" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_53_ 6" x="1149" y="703" w="47" h="99" pX="0.5" pY="0.5" oX="74" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_54_ 6" x="450" y="1416" w="51" h="92" pX="0.5" pY="0.5" oX="75" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_55_ 6" x="0" y="1321" w="56" h="95" pX="0.5" pY="0.5" oX="73" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_56_ 6" x="863" y="106" w="57" h="106" pX="0.5" pY="0.5" oX="72" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_57_ 7" x="587" y="598" w="55" h="108" pX="0.5" pY="0.5" oX="70" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_58_ 7" x="695" y="656" w="61" h="108" pX="0.5" pY="0.5" oX="65" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_59_ 7" x="817" y="1020" w="53" h="101" pX="0.5" pY="0.5" oX="74" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_60_ 7" x="1055" y="505" w="56" h="102" pX="0.5" pY="0.5" oX="71" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_61_ 7" x="461" y="698" w="53" h="108" pX="0.5" pY="0.5" oX="73" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_62_ 7" x="841" y="319" w="45" h="106" pX="0.5" pY="0.5" oX="78" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_63_ 7" x="566" y="1124" w="42" h="99" pX="0.5" pY="0.5" oX="81" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Walk_64_ 7" x="814" y="538" w="51" h="106" pX="0.5" pY="0.5" oX="76" oY="48" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_01_ 0" x="1450" y="645" w="53" h="88" pX="0.5" pY="0.5" oX="67" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_02_ 0" x="1460" y="89" w="51" h="89" pX="0.5" pY="0.5" oX="72" oY="68" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_03_ 0" x="1439" y="760" w="50" h="88" pX="0.5" pY="0.5" oX="76" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_04_ 1" x="438" y="588" w="41" h="110" pX="0.5" pY="0.5" oX="68" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_05_ 1" x="172" y="815" w="39" h="107" pX="0.5" pY="0.5" oX="70" oY="54" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_06_ 1" x="963" y="709" w="40" h="104" pX="0.5" pY="0.5" oX="69" oY="57" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_07_ 2" x="1415" y="380" w="45" h="89" pX="0.5" pY="0.5" oX="86" oY="62" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_08_ 2" x="1230" y="799" w="44" h="96" pX="0.5" pY="0.5" oX="86" oY="55" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_09_ 2" x="1172" y="101" w="45" h="99" pX="0.5" pY="0.5" oX="86" oY="52" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_10_ 3" x="0" y="1123" w="60" h="100" pX="0.5" pY="0.5" oX="71" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_11_ 3" x="618" y="1123" w="56" h="100" pX="0.5" pY="0.5" oX="71" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_12_ 3" x="146" y="1026" w="53" h="100" pX="0.5" pY="0.5" oX="70" oY="45" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_13_ 4" x="1041" y="811" w="44" h="101" pX="0.5" pY="0.5" oX="68" oY="61" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_14_ 4" x="922" y="1020" w="43" h="101" pX="0.5" pY="0.5" oX="71" oY="61" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_15_ 4" x="518" y="1223" w="49" h="97" pX="0.5" pY="0.5" oX="71" oY="64" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_16_ 5" x="642" y="0" w="50" h="110" pX="0.5" pY="0.5" oX="70" oY="44" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_17_ 5" x="414" y="702" w="47" h="108" pX="0.5" pY="0.5" oX="70" oY="46" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_18_ 5" x="920" y="709" w="43" h="104" pX="0.5" pY="0.5" oX="70" oY="49" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_19_ 6" x="1428" y="1410" w="46" h="87" pX="0.5" pY="0.5" oX="78" oY="69" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_20_ 6" x="716" y="1415" w="42" h="91" pX="0.5" pY="0.5" oX="82" oY="65" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_21_ 6" x="1390" y="287" w="46" h="93" pX="0.5" pY="0.5" oX="83" oY="63" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_22_ 7" x="1387" y="767" w="52" h="93" pX="0.5" pY="0.5" oX="80" oY="51" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_23_ 7" x="1178" y="1212" w="48" h="97" pX="0.5" pY="0.5" oX="80" oY="47" oW="190" oH="190"/>
+  <sprite n="Weretiger_Woozy_24_ 7" x="460" y="1124" w="51" h="99" pX="0.5" pY="0.5" oX="76" oY="45" oW="190" oH="190"/>
+</TextureAtlas>

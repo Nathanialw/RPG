@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Brute_Purple.png" width="2544" height="2595" scale="1" format="RGBA8888">
+  <sprite n="Brute_Purple_Attack 1_01_ 0" x="2310" y="1682" w="127" h="116" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_02_ 0" x="1041" y="871" w="125" h="154" pX="0.5" pY="0.5" oX="66" oY="29" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_03_ 0" x="1973" y="0" w="100" h="139" pX="0.5" pY="0.5" oX="103" oY="79" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_04_ 1" x="1123" y="1180" w="87" h="152" pX="0.5" pY="0.5" oX="91" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_05_ 1" x="284" y="712" w="113" h="174" pX="0.5" pY="0.5" oX="100" oY="29" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_06_ 1" x="1701" y="1028" w="141" h="144" pX="0.5" pY="0.5" oX="20" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_07_ 2" x="884" y="1499" w="96" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_08_ 2" x="1915" y="2459" w="113" h="110" pX="0.5" pY="0.5" oX="50" oY="70" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_09_ 2" x="154" y="1225" w="146" h="128" pX="0.5" pY="0.5" oX="105" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_10_ 3" x="1671" y="1621" w="126" h="143" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_11_ 3" x="1131" y="0" w="135" h="155" pX="0.5" pY="0.5" oX="72" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_12_ 3" x="115" y="915" w="103" h="159" pX="0.5" pY="0.5" oX="60" oY="14" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_13_ 4" x="415" y="1353" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_14_ 4" x="191" y="571" w="93" h="181" pX="0.5" pY="0.5" oX="99" oY="22" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_15_ 4" x="2310" y="845" w="129" h="113" pX="0.5" pY="0.5" oX="57" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_16_ 5" x="2028" y="995" w="124" h="138" pX="0.5" pY="0.5" oX="68" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_17_ 5" x="1090" y="1483" w="139" h="148" pX="0.5" pY="0.5" oX="73" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_18_ 5" x="584" y="883" w="123" h="158" pX="0.5" pY="0.5" oX="43" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_19_ 6" x="2310" y="471" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_20_ 6" x="2310" y="1318" w="128" h="108" pX="0.5" pY="0.5" oX="62" oY="55" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_21_ 6" x="2310" y="719" w="129" h="126" pX="0.5" pY="0.5" oX="99" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_22_ 7" x="1511" y="0" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_23_ 7" x="1449" y="1786" w="102" h="142" pX="0.5" pY="0.5" oX="72" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 1_24_ 7" x="1210" y="1319" w="136" h="149" pX="0.5" pY="0.5" oX="77" oY="28" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_01_ 0" x="1442" y="2337" w="124" h="125" pX="0.5" pY="0.5" oX="76" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_02_ 0" x="642" y="538" w="125" h="171" pX="0.5" pY="0.5" oX="78" oY="16" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_03_ 0" x="2028" y="2451" w="112" h="113" pX="0.5" pY="0.5" oX="81" oY="111" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_04_ 1" x="893" y="715" w="60" h="160" pX="0.5" pY="0.5" oX="90" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_05_ 1" x="695" y="0" w="104" h="177" pX="0.5" pY="0.5" oX="93" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_06_ 1" x="1691" y="2336" w="108" h="124" pX="0.5" pY="0.5" oX="31" oY="79" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_07_ 2" x="953" y="715" w="64" h="160" pX="0.5" pY="0.5" oX="119" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_08_ 2" x="555" y="364" w="84" h="179" pX="0.5" pY="0.5" oX="86" oY="18" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_09_ 2" x="2430" y="1899" w="108" h="121" pX="0.5" pY="0.5" oX="127" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_10_ 3" x="1014" y="2069" w="124" h="136" pX="0.5" pY="0.5" oX="63" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_11_ 3" x="1566" y="2336" w="125" h="120" pX="0.5" pY="0.5" oX="60" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_12_ 3" x="2140" y="2451" w="112" h="112" pX="0.5" pY="0.5" oX="70" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_13_ 4" x="88" y="1505" w="98" h="148" pX="0.5" pY="0.5" oX="78" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_14_ 4" x="84" y="262" w="116" h="189" pX="0.5" pY="0.5" oX="80" oY="18" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_15_ 4" x="2362" y="2404" w="109" h="106" pX="0.5" pY="0.5" oX="54" oY="106" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_16_ 5" x="315" y="1353" w="100" h="150" pX="0.5" pY="0.5" oX="65" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_17_ 5" x="779" y="1349" w="116" h="150" pX="0.5" pY="0.5" oX="65" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_18_ 5" x="2428" y="1426" w="116" h="122" pX="0.5" pY="0.5" oX="47" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_19_ 6" x="1561" y="1329" w="104" h="146" pX="0.5" pY="0.5" oX="99" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_20_ 6" x="287" y="0" w="103" h="187" pX="0.5" pY="0.5" oX="95" oY="9" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_21_ 6" x="879" y="2470" w="118" h="105" pX="0.5" pY="0.5" oX="100" oY="102" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_22_ 7" x="1346" y="1319" w="99" h="149" pX="0.5" pY="0.5" oX="87" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_23_ 7" x="1022" y="1026" w="104" h="154" pX="0.5" pY="0.5" oX="79" oY="27" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Attack 2_24_ 7" x="1330" y="2337" w="112" h="125" pX="0.5" pY="0.5" oX="100" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_01_ 0" x="390" y="0" w="185" h="149" pX="0.5" pY="0.5" oX="18" oY="36" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_02_ 0" x="287" y="299" w="185" h="150" pX="0.5" pY="0.5" oX="18" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_03_ 0" x="390" y="149" w="185" h="150" pX="0.5" pY="0.5" oX="18" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_04_ 1" x="631" y="712" w="95" h="171" pX="0.5" pY="0.5" oX="100" oY="19" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_05_ 1" x="799" y="0" w="94" h="171" pX="0.5" pY="0.5" oX="100" oY="19" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_06_ 1" x="695" y="177" w="93" h="172" pX="0.5" pY="0.5" oX="100" oY="18" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_07_ 2" x="202" y="191" w="85" h="189" pX="0.5" pY="0.5" oX="78" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_08_ 2" x="0" y="262" w="84" h="190" pX="0.5" pY="0.5" oX="79" oY="32" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_09_ 2" x="203" y="0" w="84" h="191" pX="0.5" pY="0.5" oX="79" oY="31" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_10_ 3" x="0" y="636" w="181" h="121" pX="0.5" pY="0.5" oX="70" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_11_ 3" x="373" y="449" w="182" h="121" pX="0.5" pY="0.5" oX="69" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_12_ 3" x="191" y="451" w="182" h="120" pX="0.5" pY="0.5" oX="69" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_13_ 4" x="0" y="1074" w="156" h="151" pX="0.5" pY="0.5" oX="61" oY="27" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_14_ 4" x="884" y="875" w="157" h="151" pX="0.5" pY="0.5" oX="60" oY="27" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_15_ 4" x="726" y="827" w="158" h="151" pX="0.5" pY="0.5" oX="59" oY="27" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_16_ 5" x="0" y="1941" w="122" h="141" pX="0.5" pY="0.5" oX="109" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_17_ 5" x="1797" y="1597" w="122" h="141" pX="0.5" pY="0.5" oX="109" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_18_ 5" x="1842" y="574" w="122" h="141" pX="0.5" pY="0.5" oX="109" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_19_ 6" x="575" y="182" w="120" h="182" pX="0.5" pY="0.5" oX="39" oY="23" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_20_ 6" x="575" y="0" w="120" h="182" pX="0.5" pY="0.5" oX="39" oY="23" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_21_ 6" x="71" y="452" w="120" h="182" pX="0.5" pY="0.5" oX="40" oY="23" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_22_ 7" x="1210" y="1179" w="152" h="140" pX="0.5" pY="0.5" oX="55" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_23_ 7" x="156" y="1074" w="154" h="141" pX="0.5" pY="0.5" oX="55" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Behavior_24_ 7" x="509" y="1200" w="153" h="141" pX="0.5" pY="0.5" oX="56" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_01_ 0" x="381" y="2346" w="127" h="116" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_02_ 0" x="997" y="2469" w="118" h="115" pX="0.5" pY="0.5" oX="73" oY="69" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_03_ 0" x="1322" y="2462" w="117" h="111" pX="0.5" pY="0.5" oX="73" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_04_ 1" x="1247" y="617" w="88" h="152" pX="0.5" pY="0.5" oX="91" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_05_ 1" x="186" y="1505" w="95" h="148" pX="0.5" pY="0.5" oX="84" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_06_ 1" x="1876" y="1738" w="92" h="141" pX="0.5" pY="0.5" oX="87" oY="62" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_07_ 2" x="1362" y="1056" w="96" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_08_ 2" x="1648" y="1786" w="100" h="142" pX="0.5" pY="0.5" oX="84" oY="62" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_09_ 2" x="1971" y="277" w="98" h="138" pX="0.5" pY="0.5" oX="84" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_10_ 3" x="1665" y="1328" w="126" h="144" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_11_ 3" x="2091" y="645" w="117" h="137" pX="0.5" pY="0.5" oX="73" oY="55" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_12_ 3" x="983" y="2343" w="117" h="126" pX="0.5" pY="0.5" oX="73" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_13_ 4" x="1264" y="769" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_14_ 4" x="1671" y="292" w="89" h="144" pX="0.5" pY="0.5" oX="83" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_15_ 4" x="1966" y="856" w="91" h="139" pX="0.5" pY="0.5" oX="83" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_16_ 5" x="2073" y="1398" w="124" h="138" pX="0.5" pY="0.5" oX="68" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_17_ 5" x="1354" y="2205" w="118" h="132" pX="0.5" pY="0.5" oX="74" oY="55" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_18_ 5" x="2424" y="589" w="118" h="122" pX="0.5" pY="0.5" oX="74" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_19_ 6" x="2310" y="353" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_20_ 6" x="1204" y="2451" w="118" h="115" pX="0.5" pY="0.5" oX="71" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_21_ 6" x="761" y="2457" w="118" h="111" pX="0.5" pY="0.5" oX="71" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_22_ 7" x="1458" y="1201" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_23_ 7" x="1871" y="856" w="95" h="141" pX="0.5" pY="0.5" oX="91" oY="62" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Block_24_ 7" x="1666" y="2069" w="94" h="136" pX="0.5" pY="0.5" oX="92" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_01_ 0" x="1685" y="2460" w="115" h="111" pX="0.5" pY="0.5" oX="78" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_02_ 0" x="1800" y="2459" w="115" h="112" pX="0.5" pY="0.5" oX="78" oY="88" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_03_ 0" x="1439" y="2462" w="115" h="112" pX="0.5" pY="0.5" oX="78" oY="88" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_04_ 1" x="1797" y="2204" w="108" h="131" pX="0.5" pY="0.5" oX="63" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_05_ 1" x="1689" y="2205" w="108" h="131" pX="0.5" pY="0.5" oX="63" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_06_ 1" x="795" y="2212" w="108" h="132" pX="0.5" pY="0.5" oX="63" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_07_ 2" x="1679" y="1472" w="116" h="143" pX="0.5" pY="0.5" oX="92" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_08_ 2" x="1726" y="1172" w="116" h="143" pX="0.5" pY="0.5" oX="92" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_09_ 2" x="1555" y="1642" w="116" h="144" pX="0.5" pY="0.5" oX="92" oY="55" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_10_ 3" x="487" y="1503" w="109" h="148" pX="0.5" pY="0.5" oX="76" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_11_ 3" x="596" y="1499" w="109" h="148" pX="0.5" pY="0.5" oX="76" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_12_ 3" x="1335" y="609" w="109" h="149" pX="0.5" pY="0.5" oX="76" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_13_ 4" x="591" y="2470" w="114" h="119" pX="0.5" pY="0.5" oX="59" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_14_ 4" x="114" y="2475" w="114" h="119" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_15_ 4" x="0" y="2475" w="114" h="120" pX="0.5" pY="0.5" oX="60" oY="88" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_16_ 5" x="1566" y="2456" w="119" h="119" pX="0.5" pY="0.5" oX="65" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_17_ 5" x="2406" y="2162" w="119" h="121" pX="0.5" pY="0.5" oX="65" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_18_ 5" x="2406" y="2283" w="119" h="121" pX="0.5" pY="0.5" oX="65" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_19_ 6" x="2013" y="2204" w="119" h="131" pX="0.5" pY="0.5" oX="79" oY="71" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_20_ 6" x="903" y="2211" w="119" h="132" pX="0.5" pY="0.5" oX="79" oY="70" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_21_ 6" x="1022" y="2205" w="119" h="132" pX="0.5" pY="0.5" oX="79" oY="69" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_22_ 7" x="1341" y="301" w="112" h="149" pX="0.5" pY="0.5" oX="95" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_23_ 7" x="1317" y="152" w="111" h="149" pX="0.5" pY="0.5" oX="95" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Critical HP_24_ 7" x="991" y="1334" w="112" h="149" pX="0.5" pY="0.5" oX="94" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Dead_01_ 0" x="463" y="570" w="179" h="142" pX="0.5" pY="0.5" oX="45" oY="77" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Dead_02_ 1" x="893" y="281" w="165" h="137" pX="0.5" pY="0.5" oX="49" oY="84" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Dead_03_ 2" x="893" y="583" w="165" h="132" pX="0.5" pY="0.5" oX="51" oY="86" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Dead_04_ 3" x="284" y="571" w="179" h="130" pX="0.5" pY="0.5" oX="40" oY="82" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Dead_05_ 4" x="458" y="712" w="173" h="160" pX="0.5" pY="0.5" oX="43" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Dead_06_ 5" x="0" y="130" w="202" h="132" pX="0.5" pY="0.5" oX="43" oY="85" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Dead_07_ 6" x="0" y="0" w="203" h="130" pX="0.5" pY="0.5" oX="19" oY="90" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Dead_08_ 7" x="0" y="757" w="174" h="158" pX="0.5" pY="0.5" oX="47" oY="78" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_01_ 0" x="1919" y="1279" w="139" h="106" pX="0.5" pY="0.5" oX="62" oY="70" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_02_ 0" x="2073" y="111" w="138" h="130" pX="0.5" pY="0.5" oX="65" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_03_ 0" x="2424" y="1073" w="120" h="121" pX="0.5" pY="0.5" oX="97" oY="25" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_04_ 1" x="1551" y="1786" w="97" h="142" pX="0.5" pY="0.5" oX="80" oY="45" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_05_ 1" x="471" y="883" w="113" h="158" pX="0.5" pY="0.5" oX="77" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_06_ 1" x="1118" y="1928" w="98" h="140" pX="0.5" pY="0.5" oX="131" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_07_ 2" x="1842" y="1138" w="104" h="141" pX="0.5" pY="0.5" oX="86" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_08_ 2" x="450" y="1045" w="121" h="155" pX="0.5" pY="0.5" oX="74" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_09_ 2" x="1103" y="1332" w="106" h="149" pX="0.5" pY="0.5" oX="35" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_10_ 3" x="1120" y="463" w="139" h="154" pX="0.5" pY="0.5" oX="69" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_11_ 3" x="0" y="1354" w="137" h="151" pX="0.5" pY="0.5" oX="69" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_12_ 3" x="350" y="886" w="121" h="159" pX="0.5" pY="0.5" oX="52" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_13_ 4" x="1969" y="706" w="122" h="138" pX="0.5" pY="0.5" oX="55" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_14_ 4" x="1126" y="1025" w="108" h="154" pX="0.5" pY="0.5" oX="87" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_15_ 4" x="1894" y="142" w="70" h="142" pX="0.5" pY="0.5" oX="138" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_16_ 5" x="660" y="1349" w="119" h="150" pX="0.5" pY="0.5" oX="57" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_17_ 5" x="1367" y="0" w="144" h="149" pX="0.5" pY="0.5" oX="54" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_18_ 5" x="1837" y="286" w="134" h="142" pX="0.5" pY="0.5" oX="78" oY="70" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_19_ 6" x="1960" y="2069" w="118" h="135" pX="0.5" pY="0.5" oX="95" oY="60" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_20_ 6" x="590" y="1792" w="143" h="137" pX="0.5" pY="0.5" oX="74" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_21_ 6" x="2073" y="0" w="138" h="111" pX="0.5" pY="0.5" oX="54" oY="31" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_22_ 7" x="1439" y="2069" w="129" h="136" pX="0.5" pY="0.5" oX="86" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_23_ 7" x="0" y="915" w="115" h="159" pX="0.5" pY="0.5" oX="68" oY="32" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Evade_24_ 7" x="181" y="752" w="81" h="163" pX="0.5" pY="0.5" oX="55" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_01_ 0" x="2123" y="2335" w="123" h="116" pX="0.5" pY="0.5" oX="77" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_02_ 0" x="2073" y="1271" w="138" h="127" pX="0.5" pY="0.5" oX="75" oY="61" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_03_ 0" x="893" y="142" w="166" h="139" pX="0.5" pY="0.5" oX="64" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_04_ 1" x="1017" y="715" w="68" h="156" pX="0.5" pY="0.5" oX="86" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_05_ 1" x="1060" y="0" w="71" h="157" pX="0.5" pY="0.5" oX="88" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_06_ 1" x="639" y="364" w="71" h="174" pX="0.5" pY="0.5" oX="96" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_07_ 2" x="310" y="1200" w="69" h="153" pX="0.5" pY="0.5" oX="118" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_08_ 2" x="1059" y="157" w="69" h="156" pX="0.5" pY="0.5" oX="112" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_09_ 2" x="397" y="701" w="61" h="173" pX="0.5" pY="0.5" oX="106" oY="24" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_10_ 3" x="123" y="2214" w="123" h="133" pX="0.5" pY="0.5" oX="63" oY="36" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_11_ 3" x="2073" y="241" w="138" h="128" pX="0.5" pY="0.5" oX="57" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_12_ 3" x="726" y="709" w="167" h="118" pX="0.5" pY="0.5" oX="41" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_13_ 4" x="0" y="1798" w="98" h="143" pX="0.5" pY="0.5" oX="78" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_14_ 4" x="980" y="1483" w="110" h="148" pX="0.5" pY="0.5" oX="72" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_15_ 4" x="379" y="1200" w="130" h="153" pX="0.5" pY="0.5" oX="66" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_16_ 5" x="1558" y="738" w="108" h="146" pX="0.5" pY="0.5" oX="63" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_17_ 5" x="1848" y="0" w="125" h="142" pX="0.5" pY="0.5" oX="51" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_18_ 5" x="1234" y="925" w="126" h="152" pX="0.5" pY="0.5" oX="54" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_19_ 6" x="1969" y="428" w="104" h="139" pX="0.5" pY="0.5" oX="101" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_20_ 6" x="1549" y="294" w="122" h="146" pX="0.5" pY="0.5" oX="96" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_21_ 6" x="1128" y="309" w="125" h="154" pX="0.5" pY="0.5" oX="91" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_22_ 7" x="733" y="1792" w="98" h="142" pX="0.5" pY="0.5" oX="87" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_23_ 7" x="412" y="1939" w="110" h="141" pX="0.5" pY="0.5" oX="87" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Get Hit_24_ 7" x="1329" y="1468" w="129" h="147" pX="0.5" pY="0.5" oX="75" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_01_ 0" x="508" y="2346" w="127" h="116" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_02_ 0" x="2310" y="1202" w="128" h="116" pX="0.5" pY="0.5" oX="68" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_03_ 0" x="2310" y="958" w="129" h="115" pX="0.5" pY="0.5" oX="68" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_04_ 1" x="1230" y="155" w="87" h="152" pX="0.5" pY="0.5" oX="91" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_05_ 1" x="1253" y="307" w="88" h="152" pX="0.5" pY="0.5" oX="91" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_06_ 1" x="137" y="1354" w="88" h="151" pX="0.5" pY="0.5" oX="91" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_07_ 2" x="281" y="1503" w="96" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_08_ 2" x="1511" y="147" w="96" h="147" pX="0.5" pY="0.5" oX="85" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_09_ 2" x="1453" y="298" w="96" h="147" pX="0.5" pY="0.5" oX="85" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_10_ 3" x="464" y="1796" w="126" h="143" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_11_ 3" x="1322" y="1759" w="127" h="142" pX="0.5" pY="0.5" oX="73" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_12_ 3" x="1748" y="1764" w="128" h="141" pX="0.5" pY="0.5" oX="72" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_13_ 4" x="225" y="1353" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_14_ 4" x="1259" y="459" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_15_ 4" x="1362" y="907" w="90" h="149" pX="0.5" pY="0.5" oX="82" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_16_ 5" x="2057" y="844" w="124" h="138" pX="0.5" pY="0.5" oX="68" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_17_ 5" x="2073" y="1536" w="124" h="137" pX="0.5" pY="0.5" oX="68" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_18_ 5" x="2073" y="1673" w="124" h="137" pX="0.5" pY="0.5" oX="68" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_19_ 6" x="2310" y="235" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_20_ 6" x="2310" y="117" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_21_ 6" x="2310" y="0" w="130" h="117" pX="0.5" pY="0.5" oX="71" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_22_ 7" x="1462" y="744" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_23_ 7" x="1458" y="1054" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Idle_24_ 7" x="1607" y="146" w="95" h="146" pX="0.5" pY="0.5" oX="92" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_01_ 0" x="2440" y="366" w="104" h="111" pX="0.5" pY="0.5" oX="76" oY="91" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_02_ 0" x="2440" y="477" w="104" h="111" pX="0.5" pY="0.5" oX="76" oY="91" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_03_ 0" x="287" y="187" w="103" h="110" pX="0.5" pY="0.5" oX="77" oY="91" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_04_ 1" x="1204" y="2337" w="126" h="114" pX="0.5" pY="0.5" oX="71" oY="71" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_05_ 1" x="635" y="2346" w="126" h="113" pX="0.5" pY="0.5" oX="71" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_06_ 1" x="761" y="2344" w="126" h="113" pX="0.5" pY="0.5" oX="71" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_07_ 2" x="137" y="2082" w="133" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_08_ 2" x="2176" y="2202" w="133" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_09_ 2" x="270" y="2082" w="133" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_10_ 3" x="923" y="1026" w="99" h="155" pX="0.5" pY="0.5" oX="88" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_11_ 3" x="1131" y="155" w="99" h="154" pX="0.5" pY="0.5" oX="88" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_12_ 3" x="1166" y="771" w="98" h="154" pX="0.5" pY="0.5" oX="88" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_13_ 4" x="1807" y="1905" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_14_ 4" x="1527" y="1928" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_15_ 4" x="1667" y="1928" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_16_ 5" x="1791" y="1315" w="98" h="141" pX="0.5" pY="0.5" oX="76" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_17_ 5" x="1871" y="715" w="98" h="141" pX="0.5" pY="0.5" oX="76" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_18_ 5" x="1754" y="876" w="98" h="141" pX="0.5" pY="0.5" oX="76" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_19_ 6" x="2440" y="244" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_20_ 6" x="2440" y="0" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_21_ 6" x="2440" y="122" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_22_ 7" x="838" y="1933" w="140" h="132" pX="0.5" pY="0.5" oX="65" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_23_ 7" x="978" y="1933" w="140" h="132" pX="0.5" pY="0.5" oX="65" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Rest_24_ 7" x="1216" y="1928" w="140" h="132" pX="0.5" pY="0.5" oX="65" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_01_ 0" x="1458" y="1348" w="103" h="147" pX="0.5" pY="0.5" oX="78" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_02_ 0" x="2176" y="2069" w="114" h="133" pX="0.5" pY="0.5" oX="71" oY="80" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_03_ 0" x="2252" y="2449" w="110" h="110" pX="0.5" pY="0.5" oX="80" oY="79" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_04_ 0" x="1362" y="1204" w="95" h="113" pX="0.5" pY="0.5" oX="91" oY="78" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_05_ 0" x="1229" y="1616" w="93" h="144" pX="0.5" pY="0.5" oX="93" oY="69" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_06_ 0" x="1253" y="2205" w="101" h="132" pX="0.5" pY="0.5" oX="91" oY="84" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_07_ 0" x="2438" y="1194" w="106" h="102" pX="0.5" pY="0.5" oX="81" oY="77" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_08_ 0" x="2208" y="636" w="98" h="132" pX="0.5" pY="0.5" oX="85" oY="73" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_09_ 1" x="509" y="1341" w="151" h="142" pX="0.5" pY="0.5" oX="42" oY="45" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_10_ 1" x="2310" y="589" w="114" h="130" pX="0.5" pY="0.5" oX="55" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_11_ 1" x="2231" y="1115" w="74" h="132" pX="0.5" pY="0.5" oX="77" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_12_ 1" x="291" y="2347" w="90" h="128" pX="0.5" pY="0.5" oX="76" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_13_ 1" x="2073" y="1947" w="137" h="122" pX="0.5" pY="0.5" oX="42" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_14_ 1" x="2309" y="1930" w="121" h="130" pX="0.5" pY="0.5" oX="53" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_15_ 1" x="2231" y="1247" w="76" h="132" pX="0.5" pY="0.5" oX="77" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_16_ 1" x="2152" y="982" w="111" h="133" pX="0.5" pY="0.5" oX="53" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_17_ 2" x="0" y="1225" w="154" h="129" pX="0.5" pY="0.5" oX="71" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_18_ 2" x="2197" y="1532" w="113" h="134" pX="0.5" pY="0.5" oX="95" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_19_ 2" x="2231" y="134" w="78" h="134" pX="0.5" pY="0.5" oX="118" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_20_ 2" x="1973" y="139" w="97" h="138" pX="0.5" pY="0.5" oX="99" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_21_ 2" x="0" y="2082" w="137" h="132" pX="0.5" pY="0.5" oX="88" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_22_ 2" x="1568" y="2205" w="121" h="131" pX="0.5" pY="0.5" oX="89" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_23_ 2" x="246" y="2214" w="83" h="133" pX="0.5" pY="0.5" oX="113" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_24_ 2" x="2310" y="1073" w="114" h="129" pX="0.5" pY="0.5" oX="100" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_25_ 3" x="893" y="418" w="101" h="165" pX="0.5" pY="0.5" oX="92" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_26_ 3" x="180" y="1653" w="113" h="145" pX="0.5" pY="0.5" oX="85" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_27_ 3" x="2310" y="1426" w="110" h="128" pX="0.5" pY="0.5" oX="78" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_28_ 3" x="1627" y="586" w="97" h="146" pX="0.5" pY="0.5" oX="83" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_29_ 3" x="731" y="1196" w="94" h="153" pX="0.5" pY="0.5" oX="84" oY="36" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_30_ 3" x="1444" y="597" w="101" h="147" pX="0.5" pY="0.5" oX="75" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_31_ 3" x="1968" y="1385" w="105" h="139" pX="0.5" pY="0.5" oX="83" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_32_ 3" x="787" y="1499" w="97" h="148" pX="0.5" pY="0.5" oX="88" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_33_ 4" x="1458" y="1495" w="138" h="147" pX="0.5" pY="0.5" oX="54" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_34_ 4" x="2199" y="369" w="108" h="134" pX="0.5" pY="0.5" oX="63" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_35_ 4" x="504" y="2470" w="87" h="119" pX="0.5" pY="0.5" oX="81" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_36_ 4" x="2437" y="1669" w="90" h="121" pX="0.5" pY="0.5" oX="86" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_37_ 4" x="2073" y="1810" w="135" h="137" pX="0.5" pY="0.5" oX="61" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_38_ 4" x="1855" y="2069" w="105" h="135" pX="0.5" pY="0.5" oX="74" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_39_ 4" x="2428" y="1548" w="78" h="121" pX="0.5" pY="0.5" oX="88" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_40_ 4" x="99" y="2347" w="106" h="128" pX="0.5" pY="0.5" oX="62" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_41_ 5" x="218" y="915" w="132" h="159" pX="0.5" pY="0.5" oX="64" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_42_ 5" x="2091" y="507" w="108" h="138" pX="0.5" pY="0.5" oX="75" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_43_ 5" x="319" y="2475" w="91" h="119" pX="0.5" pY="0.5" oX="76" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_44_ 5" x="205" y="2347" w="86" h="128" pX="0.5" pY="0.5" oX="82" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_45_ 5" x="1239" y="2069" w="120" h="136" pX="0.5" pY="0.5" oX="55" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_46_ 5" x="2310" y="1554" w="118" h="128" pX="0.5" pY="0.5" oX="61" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_47_ 5" x="1760" y="2069" w="95" h="135" pX="0.5" pY="0.5" oX="76" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_48_ 5" x="365" y="1796" w="99" h="143" pX="0.5" pY="0.5" oX="73" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_49_ 6" x="931" y="1791" w="127" h="142" pX="0.5" pY="0.5" oX="74" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_50_ 6" x="1356" y="1928" w="103" h="140" pX="0.5" pY="0.5" oX="85" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_51_ 6" x="2290" y="2067" w="88" h="130" pX="0.5" pY="0.5" oX="104" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_52_ 6" x="228" y="2475" w="91" h="119" pX="0.5" pY="0.5" oX="96" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_53_ 6" x="1329" y="1615" w="122" h="144" pX="0.5" pY="0.5" oX="89" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_54_ 6" x="2181" y="782" w="117" h="133" pX="0.5" pY="0.5" oX="85" oY="69" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_55_ 6" x="410" y="2470" w="94" h="119" pX="0.5" pY="0.5" oX="98" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_56_ 6" x="1968" y="1663" w="96" h="137" pX="0.5" pY="0.5" oX="97" oY="62" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_57_ 7" x="1805" y="432" w="141" h="142" pX="0.5" pY="0.5" oX="72" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_58_ 7" x="513" y="2080" w="107" h="134" pX="0.5" pY="0.5" oX="93" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_59_ 7" x="2146" y="1133" w="85" h="134" pX="0.5" pY="0.5" oX="102" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_60_ 7" x="1089" y="1642" w="93" h="144" pX="0.5" pY="0.5" oX="91" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_61_ 7" x="852" y="1647" w="132" h="144" pX="0.5" pY="0.5" oX="74" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_62_ 7" x="1058" y="1786" w="100" h="142" pX="0.5" pY="0.5" oX="89" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_63_ 7" x="1359" y="2069" w="80" h="136" pX="0.5" pY="0.5" oX="105" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Run_64_ 7" x="1905" y="2204" w="108" h="131" pX="0.5" pY="0.5" oX="96" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_01_ 0" x="2000" y="2335" w="123" h="116" pX="0.5" pY="0.5" oX="77" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_02_ 0" x="293" y="1651" w="145" h="127" pX="0.5" pY="0.5" oX="70" oY="61" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_03_ 0" x="893" y="0" w="167" h="142" pX="0.5" pY="0.5" oX="61" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_04_ 1" x="1017" y="715" w="68" h="156" pX="0.5" pY="0.5" oX="86" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_05_ 1" x="994" y="418" w="64" h="162" pX="0.5" pY="0.5" oX="93" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_06_ 1" x="0" y="452" w="71" h="184" pX="0.5" pY="0.5" oX="97" oY="30" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_07_ 2" x="662" y="1196" w="69" h="153" pX="0.5" pY="0.5" oX="118" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_08_ 2" x="1058" y="313" w="62" h="155" pX="0.5" pY="0.5" oX="115" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_09_ 2" x="788" y="177" w="61" h="169" pX="0.5" pY="0.5" oX="105" oY="28" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_10_ 3" x="0" y="2214" w="123" h="133" pX="0.5" pY="0.5" oX="63" oY="36" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_11_ 3" x="519" y="1651" w="145" h="128" pX="0.5" pY="0.5" oX="55" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_12_ 3" x="710" y="349" w="169" h="118" pX="0.5" pY="0.5" oX="43" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_13_ 4" x="1724" y="580" w="98" h="143" pX="0.5" pY="0.5" oX="78" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_14_ 4" x="377" y="1503" w="110" h="148" pX="0.5" pY="0.5" oX="72" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_15_ 4" x="767" y="467" w="124" h="162" pX="0.5" pY="0.5" oX="76" oY="45" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_16_ 5" x="1543" y="891" w="108" h="146" pX="0.5" pY="0.5" oX="63" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_17_ 5" x="1727" y="0" w="121" h="144" pX="0.5" pY="0.5" oX="55" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_18_ 5" x="571" y="1041" w="127" h="155" pX="0.5" pY="0.5" oX="62" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_19_ 6" x="1969" y="567" w="104" h="139" pX="0.5" pY="0.5" oX="101" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_20_ 6" x="1607" y="0" w="120" h="146" pX="0.5" pY="0.5" oX="95" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_21_ 6" x="698" y="1041" w="126" h="155" pX="0.5" pY="0.5" oX="83" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_22_ 7" x="1796" y="144" w="98" h="142" pX="0.5" pY="0.5" oX="87" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_23_ 7" x="622" y="1934" w="112" h="141" pX="0.5" pY="0.5" oX="86" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Use Skill_24_ 7" x="1947" y="1879" w="126" h="139" pX="0.5" pY="0.5" oX="71" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_01_ 0" x="1702" y="436" w="103" h="144" pX="0.5" pY="0.5" oX="83" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_02_ 0" x="2078" y="2069" w="98" h="135" pX="0.5" pY="0.5" oX="86" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_03_ 0" x="1799" y="2335" w="104" h="124" pX="0.5" pY="0.5" oX="86" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_04_ 0" x="2208" y="1398" w="101" h="134" pX="0.5" pY="0.5" oX="89" oY="60" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_05_ 0" x="831" y="1791" w="100" h="142" pX="0.5" pY="0.5" oX="91" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_06_ 0" x="412" y="2080" w="101" h="134" pX="0.5" pY="0.5" oX="84" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_07_ 0" x="1100" y="2337" w="104" h="126" pX="0.5" pY="0.5" oX="81" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_08_ 0" x="1772" y="723" w="99" h="141" pX="0.5" pY="0.5" oX="86" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_09_ 1" x="1651" y="884" w="103" h="144" pX="0.5" pY="0.5" oX="76" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_10_ 1" x="0" y="1653" w="89" h="145" pX="0.5" pY="0.5" oX="85" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_11_ 1" x="1459" y="1928" w="68" h="140" pX="0.5" pY="0.5" oX="94" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_12_ 1" x="2091" y="369" w="97" h="138" pX="0.5" pY="0.5" oX="75" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_13_ 1" x="734" y="1934" w="104" h="140" pX="0.5" pY="0.5" oX="68" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_14_ 1" x="1889" y="1385" w="79" h="139" pX="0.5" pY="0.5" oX="88" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_15_ 1" x="1956" y="997" w="72" h="139" pX="0.5" pY="0.5" oX="92" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_16_ 1" x="215" y="1941" w="95" h="141" pX="0.5" pY="0.5" oX="70" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_17_ 2" x="1554" y="1183" w="102" h="146" pX="0.5" pY="0.5" oX="85" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_18_ 2" x="0" y="1505" w="88" h="148" pX="0.5" pY="0.5" oX="91" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_19_ 2" x="1434" y="450" w="79" h="147" pX="0.5" pY="0.5" oX="102" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_20_ 2" x="1702" y="146" w="94" h="144" pX="0.5" pY="0.5" oX="97" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_21_ 2" x="310" y="1941" w="102" h="141" pX="0.5" pY="0.5" oX="94" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_22_ 2" x="705" y="1499" w="82" h="148" pX="0.5" pY="0.5" oX="97" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_23_ 2" x="1656" y="1183" w="70" h="145" pX="0.5" pY="0.5" oX="108" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_24_ 2" x="1795" y="1456" w="94" h="141" pX="0.5" pY="0.5" oX="101" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_25_ 3" x="350" y="1045" w="100" h="155" pX="0.5" pY="0.5" oX="86" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_26_ 3" x="895" y="1334" w="96" h="149" pX="0.5" pY="0.5" oX="87" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_27_ 3" x="1666" y="732" w="106" h="144" pX="0.5" pY="0.5" oX="78" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_28_ 3" x="1451" y="1642" w="104" h="144" pX="0.5" pY="0.5" oX="79" oY="32" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_29_ 3" x="1266" y="0" w="101" h="152" pX="0.5" pY="0.5" oX="79" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_30_ 3" x="1229" y="1468" w="100" h="148" pX="0.5" pY="0.5" oX="85" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_31_ 3" x="2208" y="503" w="102" h="133" pX="0.5" pY="0.5" oX="86" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_32_ 3" x="1158" y="1786" w="97" h="142" pX="0.5" pY="0.5" oX="87" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_33_ 4" x="909" y="2069" w="105" h="136" pX="0.5" pY="0.5" oX="75" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_34_ 4" x="2308" y="1800" w="104" h="130" pX="0.5" pY="0.5" oX="80" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_35_ 4" x="0" y="2347" w="99" h="128" pX="0.5" pY="0.5" oX="86" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_36_ 4" x="1596" y="1037" w="105" h="146" pX="0.5" pY="0.5" oX="89" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_37_ 4" x="825" y="1181" w="108" h="153" pX="0.5" pY="0.5" oX="86" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_38_ 4" x="1596" y="1475" w="83" h="146" pX="0.5" pY="0.5" oX="94" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_39_ 4" x="1946" y="1138" w="94" h="139" pX="0.5" pY="0.5" oX="81" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_40_ 4" x="1141" y="2205" w="112" h="132" pX="0.5" pY="0.5" oX="64" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_41_ 5" x="1028" y="1180" w="95" h="152" pX="0.5" pY="0.5" oX="94" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_42_ 5" x="1166" y="617" w="81" h="154" pX="0.5" pY="0.5" oX="98" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_43_ 5" x="1760" y="290" w="77" h="142" pX="0.5" pY="0.5" oX="97" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_44_ 5" x="1595" y="440" w="107" h="146" pX="0.5" pY="0.5" oX="70" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_45_ 5" x="664" y="1647" w="107" h="145" pX="0.5" pY="0.5" oX="68" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_46_ 5" x="2210" y="1800" w="98" h="134" pX="0.5" pY="0.5" oX="80" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_47_ 5" x="1568" y="2069" w="98" h="136" pX="0.5" pY="0.5" oX="87" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_48_ 5" x="522" y="1939" w="100" h="141" pX="0.5" pY="0.5" oX="86" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_49_ 6" x="933" y="1181" w="95" h="153" pX="0.5" pY="0.5" oX="80" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_50_ 6" x="1349" y="450" w="85" h="149" pX="0.5" pY="0.5" oX="91" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_51_ 6" x="189" y="1798" w="80" h="143" pX="0.5" pY="0.5" oX="97" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_52_ 6" x="2211" y="0" w="99" h="134" pX="0.5" pY="0.5" oX="96" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_53_ 6" x="2040" y="1133" w="106" h="138" pX="0.5" pY="0.5" oX="89" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_54_ 6" x="1472" y="2205" w="96" h="131" pX="0.5" pY="0.5" oX="87" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_55_ 6" x="269" y="1798" w="96" h="143" pX="0.5" pY="0.5" oX="85" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_56_ 6" x="824" y="1026" w="99" h="155" pX="0.5" pY="0.5" oX="84" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_57_ 7" x="1852" y="997" w="104" h="141" pX="0.5" pY="0.5" oX="84" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_58_ 7" x="2208" y="1666" w="102" h="134" pX="0.5" pY="0.5" oX="81" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_59_ 7" x="122" y="1941" w="93" h="141" pX="0.5" pY="0.5" oX="84" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_60_ 7" x="984" y="1642" w="105" h="144" pX="0.5" pY="0.5" oX="75" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_61_ 7" x="1354" y="758" w="108" h="149" pX="0.5" pY="0.5" oX="76" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_62_ 7" x="1513" y="445" w="82" h="147" pX="0.5" pY="0.5" oX="93" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_63_ 7" x="622" y="2075" w="85" h="137" pX="0.5" pY="0.5" oX="98" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Walk_64_ 7" x="1968" y="1524" w="105" h="139" pX="0.5" pY="0.5" oX="96" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_01_ 0" x="2412" y="1798" w="122" h="101" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_02_ 0" x="1234" y="1077" w="122" h="101" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_03_ 0" x="2406" y="2060" w="122" h="102" pX="0.5" pY="0.5" oX="78" oY="86" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_04_ 1" x="1428" y="149" w="73" h="149" pX="0.5" pY="0.5" oX="72" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_05_ 1" x="472" y="299" w="73" h="150" pX="0.5" pY="0.5" oX="72" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_06_ 1" x="1085" y="617" w="73" h="150" pX="0.5" pY="0.5" oX="72" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_07_ 2" x="1545" y="592" w="82" h="146" pX="0.5" pY="0.5" oX="119" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_08_ 2" x="438" y="1651" w="81" h="145" pX="0.5" pY="0.5" oX="119" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_09_ 2" x="771" y="1647" w="81" h="144" pX="0.5" pY="0.5" oX="119" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_10_ 3" x="672" y="2212" w="123" h="132" pX="0.5" pY="0.5" oX="63" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_11_ 3" x="549" y="2214" w="123" h="132" pX="0.5" pY="0.5" oX="63" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_12_ 3" x="426" y="2214" w="123" h="132" pX="0.5" pY="0.5" oX="63" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_13_ 4" x="2309" y="2197" w="97" h="130" pX="0.5" pY="0.5" oX="79" oY="77" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_14_ 4" x="329" y="2214" w="97" h="132" pX="0.5" pY="0.5" oX="79" oY="75" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_15_ 4" x="2210" y="1934" w="99" h="133" pX="0.5" pY="0.5" oX="77" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_16_ 5" x="98" y="1798" w="91" h="143" pX="0.5" pY="0.5" oX="72" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_17_ 5" x="89" y="1653" w="91" h="145" pX="0.5" pY="0.5" oX="71" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_18_ 5" x="1452" y="907" w="91" h="147" pX="0.5" pY="0.5" oX="71" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_19_ 6" x="887" y="2344" w="96" h="126" pX="0.5" pY="0.5" oX="101" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_20_ 6" x="1903" y="2335" w="97" h="124" pX="0.5" pY="0.5" oX="101" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_21_ 6" x="2246" y="2327" w="97" h="122" pX="0.5" pY="0.5" oX="101" oY="76" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_22_ 7" x="707" y="2075" w="98" h="137" pX="0.5" pY="0.5" oX="87" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_23_ 7" x="1138" y="2069" w="101" h="136" pX="0.5" pY="0.5" oX="87" oY="45" oW="256" oH="256"/>
+  <sprite n="Brute_Purple_Woozy_24_ 7" x="805" y="2074" w="104" h="137" pX="0.5" pY="0.5" oX="87" oY="44" oW="256" oH="256"/>
+</TextureAtlas>

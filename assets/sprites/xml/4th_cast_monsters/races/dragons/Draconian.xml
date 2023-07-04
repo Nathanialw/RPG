@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Draconian.png" width="2616" height="2599" scale="1" format="RGBA8888">
+  <sprite n="Draconian_Attack 1_01_ 0" x="2360" y="1974" w="127" h="116" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_02_ 0" x="0" y="1194" w="125" h="154" pX="0.5" pY="0.5" oX="66" oY="29" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_03_ 0" x="1657" y="2041" w="100" h="139" pX="0.5" pY="0.5" oX="103" oY="79" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_04_ 1" x="1385" y="306" w="91" h="152" pX="0.5" pY="0.5" oX="87" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_05_ 1" x="661" y="364" w="113" h="174" pX="0.5" pY="0.5" oX="100" oY="29" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_06_ 1" x="1679" y="1468" w="141" h="144" pX="0.5" pY="0.5" oX="20" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_07_ 2" x="1566" y="299" w="100" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_08_ 2" x="2488" y="1358" w="113" h="110" pX="0.5" pY="0.5" oX="50" oY="70" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_09_ 2" x="1761" y="740" w="146" h="132" pX="0.5" pY="0.5" oX="105" oY="44" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_10_ 3" x="1786" y="872" w="126" h="145" pX="0.5" pY="0.5" oX="73" oY="46" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_11_ 3" x="532" y="1005" w="135" h="157" pX="0.5" pY="0.5" oX="72" oY="61" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_12_ 3" x="132" y="1035" w="103" h="159" pX="0.5" pY="0.5" oX="60" oY="14" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_13_ 4" x="116" y="1500" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_14_ 4" x="367" y="546" w="95" h="181" pX="0.5" pY="0.5" oX="97" oY="22" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_15_ 4" x="2360" y="1126" w="129" h="113" pX="0.5" pY="0.5" oX="57" oY="89" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_16_ 5" x="1163" y="1899" w="124" h="142" pX="0.5" pY="0.5" oX="68" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_17_ 5" x="296" y="1499" w="139" h="150" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_18_ 5" x="681" y="883" w="123" h="158" pX="0.5" pY="0.5" oX="43" oY="40" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_19_ 6" x="1423" y="2316" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_20_ 6" x="2360" y="1367" w="128" h="108" pX="0.5" pY="0.5" oX="62" oY="55" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_21_ 6" x="2360" y="871" w="129" h="126" pX="0.5" pY="0.5" oX="99" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_22_ 7" x="535" y="1650" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_23_ 7" x="1912" y="718" w="104" h="142" pX="0.5" pY="0.5" oX="72" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 1_24_ 7" x="1303" y="1234" w="136" h="151" pX="0.5" pY="0.5" oX="77" oY="26" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_01_ 0" x="0" y="2473" w="124" h="126" pX="0.5" pY="0.5" oX="76" oY="62" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_02_ 0" x="874" y="0" w="125" h="171" pX="0.5" pY="0.5" oX="78" oY="16" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_03_ 0" x="2489" y="1025" w="112" h="113" pX="0.5" pY="0.5" oX="81" oY="111" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_04_ 1" x="999" y="160" w="62" h="160" pX="0.5" pY="0.5" oX="88" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_05_ 1" x="546" y="546" w="104" h="177" pX="0.5" pY="0.5" oX="93" oY="34" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_06_ 1" x="465" y="2470" w="108" h="124" pX="0.5" pY="0.5" oX="31" oY="79" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_07_ 2" x="999" y="0" w="68" h="160" pX="0.5" pY="0.5" oX="119" oY="39" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_08_ 2" x="462" y="546" w="84" h="179" pX="0.5" pY="0.5" oX="86" oY="18" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_09_ 2" x="1905" y="2434" w="108" h="121" pX="0.5" pY="0.5" oX="127" oY="74" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_10_ 3" x="1318" y="2040" w="124" h="138" pX="0.5" pY="0.5" oX="63" oY="31" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_11_ 3" x="228" y="2470" w="125" h="121" pX="0.5" pY="0.5" oX="60" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_12_ 3" x="869" y="342" w="112" h="114" pX="0.5" pY="0.5" oX="70" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_13_ 4" x="1480" y="1055" w="98" h="148" pX="0.5" pY="0.5" oX="78" oY="58" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_14_ 4" x="84" y="264" w="116" h="189" pX="0.5" pY="0.5" oX="80" oY="18" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_15_ 4" x="2446" y="2442" w="109" h="106" pX="0.5" pY="0.5" oX="54" oY="106" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_16_ 5" x="183" y="1348" w="100" h="152" pX="0.5" pY="0.5" oX="65" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_17_ 5" x="0" y="1500" w="116" h="150" pX="0.5" pY="0.5" oX="65" oY="40" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_18_ 5" x="1109" y="2446" w="116" h="122" pX="0.5" pY="0.5" oX="47" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_19_ 6" x="1665" y="907" w="104" h="146" pX="0.5" pY="0.5" oX="99" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_20_ 6" x="287" y="0" w="103" h="187" pX="0.5" pY="0.5" oX="95" oY="9" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_21_ 6" x="2495" y="359" w="118" h="105" pX="0.5" pY="0.5" oX="100" oY="102" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_22_ 7" x="532" y="1498" w="99" h="150" pX="0.5" pY="0.5" oX="87" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_23_ 7" x="125" y="1194" w="104" h="154" pX="0.5" pY="0.5" oX="79" oY="27" oW="256" oH="256"/>
+  <sprite n="Draconian_Attack 2_24_ 7" x="353" y="2470" w="112" h="125" pX="0.5" pY="0.5" oX="100" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_01_ 0" x="390" y="0" w="185" h="152" pX="0.5" pY="0.5" oX="18" oY="33" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_02_ 0" x="390" y="152" w="185" h="153" pX="0.5" pY="0.5" oX="18" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_03_ 0" x="0" y="454" w="185" h="153" pX="0.5" pY="0.5" oX="18" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_04_ 1" x="774" y="288" w="95" h="171" pX="0.5" pY="0.5" oX="100" oY="19" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_05_ 1" x="869" y="171" w="94" h="171" pX="0.5" pY="0.5" oX="100" oY="19" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_06_ 1" x="721" y="711" w="93" h="172" pX="0.5" pY="0.5" oX="100" oY="18" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_07_ 2" x="202" y="191" w="85" h="189" pX="0.5" pY="0.5" oX="78" oY="33" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_08_ 2" x="0" y="264" w="84" h="190" pX="0.5" pY="0.5" oX="79" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_09_ 2" x="203" y="0" w="84" h="191" pX="0.5" pY="0.5" oX="79" oY="31" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_10_ 3" x="0" y="607" w="181" h="123" pX="0.5" pY="0.5" oX="70" oY="62" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_11_ 3" x="185" y="453" w="182" h="123" pX="0.5" pY="0.5" oX="69" oY="62" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_12_ 3" x="359" y="305" w="182" h="123" pX="0.5" pY="0.5" oX="69" oY="62" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_13_ 4" x="1192" y="0" w="156" h="152" pX="0.5" pY="0.5" oX="61" oY="26" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_14_ 4" x="667" y="1041" w="157" h="152" pX="0.5" pY="0.5" oX="60" oY="26" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_15_ 4" x="235" y="1022" w="158" h="152" pX="0.5" pY="0.5" oX="59" oY="26" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_16_ 5" x="1063" y="1756" w="122" h="143" pX="0.5" pY="0.5" oX="109" oY="46" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_17_ 5" x="1185" y="1756" w="122" h="143" pX="0.5" pY="0.5" oX="109" oY="46" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_18_ 5" x="1307" y="1756" w="122" h="143" pX="0.5" pY="0.5" oX="109" oY="46" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_19_ 6" x="575" y="182" w="120" h="182" pX="0.5" pY="0.5" oX="39" oY="23" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_20_ 6" x="541" y="364" w="120" h="182" pX="0.5" pY="0.5" oX="39" oY="23" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_21_ 6" x="575" y="0" w="120" h="182" pX="0.5" pY="0.5" oX="40" oY="23" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_22_ 7" x="860" y="1213" w="152" h="140" pX="0.5" pY="0.5" oX="55" oY="67" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_23_ 7" x="598" y="1193" w="154" h="141" pX="0.5" pY="0.5" oX="55" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Behavior_24_ 7" x="1013" y="1091" w="153" h="141" pX="0.5" pY="0.5" oX="56" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_01_ 0" x="2360" y="2090" w="127" h="116" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_02_ 0" x="2495" y="575" w="118" h="115" pX="0.5" pY="0.5" oX="73" oY="69" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_03_ 0" x="2493" y="1710" w="117" h="111" pX="0.5" pY="0.5" oX="73" oY="72" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_04_ 1" x="283" y="1347" w="92" h="152" pX="0.5" pY="0.5" oX="87" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_05_ 1" x="1567" y="148" w="95" h="148" pX="0.5" pY="0.5" oX="84" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_06_ 1" x="1389" y="1899" w="92" h="141" pX="0.5" pY="0.5" oX="87" oY="62" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_07_ 2" x="1565" y="907" w="100" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_08_ 2" x="1063" y="1899" w="100" h="142" pX="0.5" pY="0.5" oX="84" oY="62" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_09_ 2" x="2064" y="282" w="98" h="138" pX="0.5" pY="0.5" oX="84" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_10_ 3" x="1786" y="0" w="126" h="146" pX="0.5" pY="0.5" oX="73" oY="46" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_11_ 3" x="581" y="2041" w="117" h="139" pX="0.5" pY="0.5" oX="73" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_12_ 3" x="2291" y="997" w="117" h="129" pX="0.5" pY="0.5" oX="73" oY="63" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_13_ 4" x="631" y="1498" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_14_ 4" x="1820" y="1468" w="89" h="144" pX="0.5" pY="0.5" oX="83" oY="59" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_15_ 4" x="2016" y="566" w="91" h="139" pX="0.5" pY="0.5" oX="83" oY="64" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_16_ 5" x="1669" y="1899" w="124" h="142" pX="0.5" pY="0.5" oX="68" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_17_ 5" x="1654" y="2180" w="118" h="136" pX="0.5" pY="0.5" oX="74" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_18_ 5" x="2314" y="1847" w="118" h="127" pX="0.5" pY="0.5" oX="74" oY="60" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_19_ 6" x="1293" y="2316" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_20_ 6" x="2485" y="2206" w="118" h="115" pX="0.5" pY="0.5" oX="71" oY="68" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_21_ 6" x="2495" y="464" w="118" h="111" pX="0.5" pY="0.5" oX="71" oY="72" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_22_ 7" x="1114" y="1543" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_23_ 7" x="2016" y="0" w="95" h="141" pX="0.5" pY="0.5" oX="91" oY="62" oW="256" oH="256"/>
+  <sprite n="Draconian_Block_24_ 7" x="1286" y="2179" w="94" h="136" pX="0.5" pY="0.5" oX="92" oY="67" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_01_ 0" x="2489" y="914" w="115" h="111" pX="0.5" pY="0.5" oX="78" oY="89" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_02_ 0" x="2489" y="802" w="115" h="112" pX="0.5" pY="0.5" oX="78" oY="88" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_03_ 0" x="2489" y="690" w="115" h="112" pX="0.5" pY="0.5" oX="78" oY="88" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_04_ 1" x="964" y="2334" w="111" h="131" pX="0.5" pY="0.5" oX="60" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_05_ 1" x="853" y="2334" w="111" h="131" pX="0.5" pY="0.5" oX="60" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_06_ 1" x="176" y="2338" w="111" h="132" pX="0.5" pY="0.5" oX="60" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_07_ 2" x="1557" y="1679" w="119" h="143" pX="0.5" pY="0.5" oX="92" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_08_ 2" x="1676" y="1756" w="119" h="143" pX="0.5" pY="0.5" oX="92" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_09_ 2" x="348" y="1797" w="119" h="144" pX="0.5" pY="0.5" oX="92" oY="55" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_10_ 3" x="1371" y="930" w="109" h="152" pX="0.5" pY="0.5" oX="76" oY="35" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_11_ 3" x="1374" y="611" w="109" h="152" pX="0.5" pY="0.5" oX="76" oY="35" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_12_ 3" x="1371" y="1082" w="109" h="152" pX="0.5" pY="0.5" oX="76" oY="35" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_13_ 4" x="2495" y="121" w="114" h="119" pX="0.5" pY="0.5" oX="59" oY="89" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_14_ 4" x="2495" y="240" w="114" h="119" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_15_ 4" x="2438" y="2322" w="114" h="120" pX="0.5" pY="0.5" oX="60" oY="88" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_16_ 5" x="2497" y="0" w="119" h="121" pX="0.5" pY="0.5" oX="65" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_17_ 5" x="990" y="2465" w="119" h="122" pX="0.5" pY="0.5" oX="65" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_18_ 5" x="670" y="2465" w="119" h="123" pX="0.5" pY="0.5" oX="65" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_19_ 6" x="613" y="2334" w="119" h="131" pX="0.5" pY="0.5" oX="79" oY="71" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_20_ 6" x="287" y="2338" w="119" h="132" pX="0.5" pY="0.5" oX="79" oY="70" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_21_ 6" x="2218" y="1404" w="119" h="132" pX="0.5" pY="0.5" oX="79" oY="69" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_22_ 7" x="1374" y="459" w="112" h="152" pX="0.5" pY="0.5" oX="95" oY="44" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_23_ 7" x="1346" y="777" w="111" h="153" pX="0.5" pY="0.5" oX="95" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Critical HP_24_ 7" x="1374" y="153" w="112" h="153" pX="0.5" pY="0.5" oX="94" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Dead_01_ 0" x="185" y="576" w="179" h="145" pX="0.5" pY="0.5" oX="45" oY="74" oW="256" oH="256"/>
+  <sprite n="Draconian_Dead_02_ 1" x="331" y="883" w="165" h="137" pX="0.5" pY="0.5" oX="49" oY="84" oW="256" oH="256"/>
+  <sprite n="Draconian_Dead_03_ 2" x="166" y="890" w="165" h="132" pX="0.5" pY="0.5" oX="51" oY="86" oW="256" oH="256"/>
+  <sprite n="Draconian_Dead_04_ 3" x="695" y="0" w="179" h="130" pX="0.5" pY="0.5" oX="40" oY="82" oW="256" oH="256"/>
+  <sprite n="Draconian_Dead_05_ 4" x="0" y="730" w="173" h="160" pX="0.5" pY="0.5" oX="43" oY="64" oW="256" oH="256"/>
+  <sprite n="Draconian_Dead_06_ 5" x="0" y="132" w="202" h="132" pX="0.5" pY="0.5" oX="43" oY="85" oW="256" oH="256"/>
+  <sprite n="Draconian_Dead_07_ 6" x="0" y="0" w="203" h="132" pX="0.5" pY="0.5" oX="19" oY="88" oW="256" oH="256"/>
+  <sprite n="Draconian_Dead_08_ 7" x="695" y="130" w="174" h="158" pX="0.5" pY="0.5" oX="47" oY="78" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_01_ 0" x="944" y="2104" w="139" h="106" pX="0.5" pY="0.5" oX="62" oY="70" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_02_ 0" x="1757" y="2041" w="138" h="130" pX="0.5" pY="0.5" oX="65" oY="46" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_03_ 0" x="1695" y="2434" w="120" h="121" pX="0.5" pY="0.5" oX="97" oY="25" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_04_ 1" x="1912" y="434" w="97" h="142" pX="0.5" pY="0.5" oX="80" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_05_ 1" x="938" y="902" w="113" h="158" pX="0.5" pY="0.5" oX="77" oY="38" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_06_ 1" x="122" y="1798" w="99" h="144" pX="0.5" pY="0.5" oX="130" oY="60" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_07_ 2" x="1957" y="286" w="107" h="141" pX="0.5" pY="0.5" oX="86" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_08_ 2" x="1177" y="936" w="121" h="155" pX="0.5" pY="0.5" oX="74" oY="37" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_09_ 2" x="1009" y="1374" w="109" h="149" pX="0.5" pY="0.5" oX="35" oY="34" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_10_ 3" x="393" y="1020" w="139" h="157" pX="0.5" pY="0.5" oX="69" oY="34" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_11_ 3" x="1166" y="1091" w="137" h="153" pX="0.5" pY="0.5" oX="69" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_12_ 3" x="496" y="843" w="121" h="162" pX="0.5" pY="0.5" oX="52" oY="64" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_13_ 4" x="2092" y="1581" w="122" h="138" pX="0.5" pY="0.5" oX="55" oY="58" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_14_ 4" x="389" y="1193" w="108" h="154" pX="0.5" pY="0.5" oX="87" oY="39" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_15_ 4" x="830" y="1353" w="71" h="142" pX="0.5" pY="0.5" oX="137" oY="40" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_16_ 5" x="1439" y="1234" w="119" h="150" pX="0.5" pY="0.5" oX="57" oY="41" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_17_ 5" x="1348" y="0" w="144" h="153" pX="0.5" pY="0.5" oX="54" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_18_ 5" x="305" y="1650" w="134" h="147" pX="0.5" pY="0.5" oX="78" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_19_ 6" x="2249" y="0" w="118" h="135" pX="0.5" pY="0.5" oX="95" oY="60" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_20_ 6" x="0" y="1942" w="143" h="137" pX="0.5" pY="0.5" oX="74" oY="47" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_21_ 6" x="2111" y="130" w="138" h="111" pX="0.5" pY="0.5" oX="54" oY="31" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_22_ 7" x="1083" y="2041" w="129" h="139" pX="0.5" pY="0.5" oX="86" oY="41" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_23_ 7" x="938" y="743" w="115" h="159" pX="0.5" pY="0.5" oX="68" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Evade_24_ 7" x="915" y="580" w="82" h="163" pX="0.5" pY="0.5" oX="55" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_01_ 0" x="2219" y="2386" w="123" h="117" pX="0.5" pY="0.5" oX="77" oY="71" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_02_ 0" x="2111" y="0" w="138" h="130" pX="0.5" pY="0.5" oX="75" oY="58" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_03_ 0" x="0" y="890" w="166" h="145" pX="0.5" pY="0.5" oX="64" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_04_ 1" x="981" y="320" w="72" h="156" pX="0.5" pY="0.5" oX="82" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_05_ 1" x="1067" y="157" w="71" h="157" pX="0.5" pY="0.5" oX="88" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_06_ 1" x="650" y="546" w="71" h="174" pX="0.5" pY="0.5" oX="96" oY="39" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_07_ 2" x="1298" y="936" w="73" h="153" pX="0.5" pY="0.5" oX="118" oY="44" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_08_ 2" x="1138" y="157" w="69" h="156" pX="0.5" pY="0.5" oX="112" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_09_ 2" x="721" y="538" w="61" h="173" pX="0.5" pY="0.5" oX="106" oY="24" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_10_ 3" x="2000" y="2169" w="123" h="135" pX="0.5" pY="0.5" oX="63" oY="34" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_11_ 3" x="1895" y="2039" w="138" h="130" pX="0.5" pY="0.5" oX="57" oY="40" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_12_ 3" x="814" y="459" w="167" h="121" pX="0.5" pY="0.5" oX="41" oY="48" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_13_ 4" x="1897" y="1160" w="98" h="143" pX="0.5" pY="0.5" oX="78" oY="64" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_14_ 4" x="1483" y="611" w="110" h="148" pX="0.5" pY="0.5" oX="72" oY="59" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_15_ 4" x="1207" y="152" w="130" h="155" pX="0.5" pY="0.5" oX="66" oY="52" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_16_ 5" x="1439" y="1384" w="108" h="149" pX="0.5" pY="0.5" oX="63" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_17_ 5" x="1887" y="1017" w="125" h="143" pX="0.5" pY="0.5" oX="51" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_18_ 5" x="1259" y="307" w="126" h="152" pX="0.5" pY="0.5" oX="54" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_19_ 6" x="944" y="1940" w="104" h="139" pX="0.5" pY="0.5" oX="101" oY="58" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_20_ 6" x="1335" y="1533" w="122" h="146" pX="0.5" pY="0.5" oX="96" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_21_ 6" x="1067" y="0" w="125" h="157" pX="0.5" pY="0.5" oX="91" oY="40" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_22_ 7" x="663" y="1797" w="98" h="144" pX="0.5" pY="0.5" oX="87" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_23_ 7" x="953" y="1797" w="110" h="143" pX="0.5" pY="0.5" oX="87" oY="37" oW="256" oH="256"/>
+  <sprite n="Draconian_Get Hit_24_ 7" x="1547" y="1532" w="129" h="147" pX="0.5" pY="0.5" oX="75" oY="33" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_01_ 0" x="2358" y="2206" w="127" h="116" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_02_ 0" x="2360" y="1475" w="128" h="116" pX="0.5" pY="0.5" oX="68" oY="67" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_03_ 0" x="2360" y="627" w="129" h="115" pX="0.5" pY="0.5" oX="68" oY="68" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_04_ 1" x="0" y="1348" w="91" h="152" pX="0.5" pY="0.5" oX="87" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_05_ 1" x="91" y="1348" w="92" h="152" pX="0.5" pY="0.5" oX="87" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_06_ 1" x="476" y="1347" w="92" h="151" pX="0.5" pY="0.5" oX="87" oY="52" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_07_ 2" x="1335" y="1385" w="100" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_08_ 2" x="1210" y="1543" w="100" h="147" pX="0.5" pY="0.5" oX="85" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_09_ 2" x="1013" y="1523" w="101" h="147" pX="0.5" pY="0.5" oX="85" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_10_ 3" x="1786" y="872" w="126" h="145" pX="0.5" pY="0.5" oX="73" oY="46" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_11_ 3" x="221" y="1797" w="127" h="144" pX="0.5" pY="0.5" oX="73" oY="47" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_12_ 3" x="1429" y="1756" w="128" h="143" pX="0.5" pY="0.5" oX="72" oY="48" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_13_ 4" x="1476" y="306" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_14_ 4" x="206" y="1500" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_15_ 4" x="1245" y="1385" w="90" h="149" pX="0.5" pY="0.5" oX="82" oY="54" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_16_ 5" x="1888" y="1897" w="124" h="142" pX="0.5" pY="0.5" oX="68" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_17_ 5" x="1968" y="1587" w="124" h="141" pX="0.5" pY="0.5" oX="68" oY="46" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_18_ 5" x="0" y="2079" w="124" h="140" pX="0.5" pY="0.5" oX="68" oY="47" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_19_ 6" x="1163" y="2316" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_20_ 6" x="2365" y="509" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_21_ 6" x="1797" y="2306" w="130" h="117" pX="0.5" pY="0.5" oX="71" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_22_ 7" x="535" y="1650" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_23_ 7" x="439" y="1650" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Idle_24_ 7" x="1676" y="594" w="95" h="146" pX="0.5" pY="0.5" oX="92" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_01_ 0" x="2488" y="1468" w="104" h="111" pX="0.5" pY="0.5" oX="76" oY="91" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_02_ 0" x="2013" y="2434" w="104" h="111" pX="0.5" pY="0.5" oX="76" oY="91" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_03_ 0" x="2487" y="1965" w="103" h="110" pX="0.5" pY="0.5" oX="77" oY="91" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_04_ 1" x="2365" y="395" w="130" h="114" pX="0.5" pY="0.5" oX="67" oY="71" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_05_ 1" x="2367" y="0" w="130" h="113" pX="0.5" pY="0.5" oX="67" oY="72" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_06_ 1" x="1667" y="2316" w="130" h="113" pX="0.5" pY="0.5" oX="67" oY="72" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_07_ 2" x="319" y="2214" w="137" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_08_ 2" x="716" y="2210" w="137" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_09_ 2" x="853" y="2210" w="137" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_10_ 3" x="1053" y="626" w="99" h="156" pX="0.5" pY="0.5" oX="88" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_11_ 3" x="1147" y="470" w="99" h="156" pX="0.5" pY="0.5" oX="88" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_12_ 3" x="1061" y="314" w="98" h="156" pX="0.5" pY="0.5" oX="88" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_13_ 4" x="143" y="1942" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_14_ 4" x="367" y="428" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_15_ 4" x="196" y="2074" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_16_ 5" x="1909" y="1445" w="98" h="142" pX="0.5" pY="0.5" oX="76" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_17_ 5" x="1909" y="1303" w="98" h="142" pX="0.5" pY="0.5" oX="76" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_18_ 5" x="1912" y="860" w="98" h="142" pX="0.5" pY="0.5" oX="76" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_19_ 6" x="789" y="2465" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_20_ 6" x="1469" y="2446" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_21_ 6" x="2342" y="2448" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_22_ 7" x="283" y="1941" w="140" h="133" pX="0.5" pY="0.5" oX="65" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_23_ 7" x="423" y="1941" w="140" h="133" pX="0.5" pY="0.5" oX="65" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Rest_24_ 7" x="336" y="2074" w="140" h="133" pX="0.5" pY="0.5" oX="65" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_01_ 0" x="202" y="1650" w="103" h="147" pX="0.5" pY="0.5" oX="78" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_02_ 0" x="2247" y="269" w="114" h="133" pX="0.5" pY="0.5" oX="71" oY="80" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_03_ 0" x="2487" y="2075" w="110" h="110" pX="0.5" pY="0.5" oX="80" oY="79" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_04_ 0" x="2510" y="1138" w="95" h="113" pX="0.5" pY="0.5" oX="91" oY="78" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_05_ 0" x="1676" y="1612" w="93" h="144" pX="0.5" pY="0.5" oX="93" oY="69" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_06_ 0" x="2184" y="402" w="101" h="132" pX="0.5" pY="0.5" oX="91" oY="84" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_07_ 0" x="2510" y="1251" w="106" h="102" pX="0.5" pY="0.5" oX="81" oY="77" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_08_ 0" x="78" y="2341" w="98" h="132" pX="0.5" pY="0.5" oX="85" oY="73" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_09_ 1" x="1012" y="1232" w="151" h="142" pX="0.5" pY="0.5" oX="42" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_10_ 1" x="1553" y="2316" w="114" h="130" pX="0.5" pY="0.5" oX="55" oY="52" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_11_ 1" x="0" y="2341" w="78" h="132" pX="0.5" pY="0.5" oX="73" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_12_ 1" x="2295" y="1719" w="94" h="128" pX="0.5" pY="0.5" oX="72" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_13_ 1" x="0" y="2219" w="137" h="122" pX="0.5" pY="0.5" oX="42" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_14_ 1" x="2000" y="2304" w="121" h="130" pX="0.5" pY="0.5" oX="53" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_15_ 1" x="2285" y="402" w="80" h="132" pX="0.5" pY="0.5" oX="73" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_16_ 1" x="2247" y="2122" w="111" h="133" pX="0.5" pY="0.5" oX="53" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_17_ 2" x="235" y="1174" w="154" h="129" pX="0.5" pY="0.5" oX="71" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_18_ 2" x="2247" y="1988" w="113" h="134" pX="0.5" pY="0.5" oX="95" oY="54" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_19_ 2" x="2233" y="1854" w="81" h="134" pX="0.5" pY="0.5" oX="118" oY="52" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_20_ 2" x="2107" y="558" w="100" h="138" pX="0.5" pY="0.5" oX="99" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_21_ 2" x="2110" y="1993" w="137" h="132" pX="0.5" pY="0.5" oX="88" oY="48" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_22_ 2" x="732" y="2334" w="121" h="131" pX="0.5" pY="0.5" oX="89" oY="54" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_23_ 2" x="2205" y="980" w="86" h="133" pX="0.5" pY="0.5" oX="113" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_24_ 2" x="2360" y="742" w="114" h="129" pX="0.5" pY="0.5" oX="100" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_25_ 3" x="814" y="580" w="101" h="167" pX="0.5" pY="0.5" oX="92" oY="31" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_26_ 3" x="1565" y="759" w="113" h="148" pX="0.5" pY="0.5" oX="85" oY="35" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_27_ 3" x="503" y="2334" w="110" h="131" pX="0.5" pY="0.5" oX="78" oY="35" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_28_ 3" x="721" y="1497" w="97" h="149" pX="0.5" pY="0.5" oX="83" oY="34" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_29_ 3" x="1053" y="470" w="94" h="156" pX="0.5" pY="0.5" oX="84" oY="33" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_30_ 3" x="375" y="1347" w="101" h="151" pX="0.5" pY="0.5" oX="75" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_31_ 3" x="1995" y="1160" w="105" h="141" pX="0.5" pY="0.5" oX="83" oY="33" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_32_ 3" x="435" y="1498" w="97" h="150" pX="0.5" pY="0.5" oX="88" oY="33" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_33_ 4" x="631" y="1650" w="138" h="147" pX="0.5" pY="0.5" oX="54" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_34_ 4" x="2209" y="1270" w="108" h="134" pX="0.5" pY="0.5" oX="63" oY="64" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_35_ 4" x="2466" y="1591" w="87" h="119" pX="0.5" pY="0.5" oX="81" oY="68" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_36_ 4" x="1815" y="2434" w="90" h="121" pX="0.5" pY="0.5" oX="86" oY="68" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_37_ 4" x="581" y="2180" w="135" h="137" pX="0.5" pY="0.5" oX="61" oY="67" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_38_ 4" x="1772" y="2171" w="105" h="135" pX="0.5" pY="0.5" oX="74" oY="74" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_39_ 4" x="824" y="1066" w="78" h="121" pX="0.5" pY="0.5" oX="88" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_40_ 4" x="2360" y="1591" w="106" h="128" pX="0.5" pY="0.5" oX="62" oY="63" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_41_ 5" x="0" y="1035" w="132" h="159" pX="0.5" pY="0.5" oX="64" oY="41" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_42_ 5" x="1442" y="2040" w="108" h="138" pX="0.5" pY="0.5" oX="75" oY="47" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_43_ 5" x="2121" y="2391" w="91" h="122" pX="0.5" pY="0.5" oX="76" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_44_ 5" x="2207" y="534" w="86" h="132" pX="0.5" pY="0.5" oX="82" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_45_ 5" x="698" y="2041" w="120" h="139" pX="0.5" pY="0.5" oX="55" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_46_ 5" x="2224" y="2255" w="118" h="131" pX="0.5" pY="0.5" oX="61" oY="47" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_47_ 5" x="2089" y="420" w="95" h="138" pX="0.5" pY="0.5" oX="76" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_48_ 5" x="467" y="1797" w="99" h="144" pX="0.5" pY="0.5" oX="73" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_49_ 6" x="1888" y="1755" w="127" h="142" pX="0.5" pY="0.5" oX="74" oY="63" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_50_ 6" x="2007" y="1441" w="104" h="140" pX="0.5" pY="0.5" oX="85" oY="68" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_51_ 6" x="1075" y="2316" w="88" h="130" pX="0.5" pY="0.5" oX="104" oY="66" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_52_ 6" x="2432" y="1846" w="91" h="119" pX="0.5" pY="0.5" oX="96" oY="65" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_53_ 6" x="0" y="1798" w="122" h="144" pX="0.5" pY="0.5" oX="89" oY="54" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_54_ 6" x="2234" y="829" w="117" h="133" pX="0.5" pY="0.5" oX="85" oY="69" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_55_ 6" x="2416" y="1239" w="94" h="119" pX="0.5" pY="0.5" oX="98" oY="64" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_56_ 6" x="2109" y="999" w="96" h="137" pX="0.5" pY="0.5" oX="97" oY="62" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_57_ 7" x="1771" y="586" w="141" h="145" pX="0.5" pY="0.5" oX="72" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_58_ 7" x="2111" y="1411" w="107" h="137" pX="0.5" pY="0.5" oX="93" oY="41" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_59_ 7" x="2109" y="1719" w="85" h="137" pX="0.5" pY="0.5" oX="102" oY="41" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_60_ 7" x="1593" y="447" w="93" h="147" pX="0.5" pY="0.5" oX="91" oY="41" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_61_ 7" x="1547" y="1384" w="132" h="148" pX="0.5" pY="0.5" oX="74" oY="40" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_62_ 7" x="1687" y="0" w="99" h="146" pX="0.5" pY="0.5" oX="89" oY="44" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_63_ 7" x="2009" y="427" w="80" h="139" pX="0.5" pY="0.5" oX="105" oY="39" oW="256" oH="256"/>
+  <sprite n="Draconian_Run_64_ 7" x="2249" y="135" w="108" h="134" pX="0.5" pY="0.5" oX="96" oY="38" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_01_ 0" x="456" y="2214" w="123" h="117" pX="0.5" pY="0.5" oX="77" oY="71" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_02_ 0" x="1665" y="1203" w="145" h="133" pX="0.5" pY="0.5" oX="70" oY="55" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_03_ 0" x="242" y="727" w="167" h="146" pX="0.5" pY="0.5" oX="61" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_04_ 1" x="409" y="727" w="72" h="156" pX="0.5" pY="0.5" oX="82" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_05_ 1" x="617" y="843" w="64" h="162" pX="0.5" pY="0.5" oX="93" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_06_ 1" x="287" y="187" w="72" h="184" pX="0.5" pY="0.5" oX="97" oY="30" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_07_ 2" x="1053" y="782" w="73" h="153" pX="0.5" pY="0.5" oX="118" oY="44" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_08_ 2" x="1246" y="469" w="62" h="155" pX="0.5" pY="0.5" oX="115" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_09_ 2" x="181" y="721" w="61" h="169" pX="0.5" pY="0.5" oX="105" oY="28" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_10_ 3" x="1877" y="2171" w="123" h="135" pX="0.5" pY="0.5" oX="63" oY="34" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_11_ 3" x="1679" y="1336" w="145" h="132" pX="0.5" pY="0.5" oX="55" oY="38" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_12_ 3" x="546" y="723" w="169" h="120" pX="0.5" pY="0.5" oX="43" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_13_ 4" x="855" y="1797" w="98" h="143" pX="0.5" pY="0.5" oX="78" oY="64" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_14_ 4" x="0" y="1650" w="110" h="148" pX="0.5" pY="0.5" oX="72" oY="59" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_15_ 4" x="814" y="747" w="124" h="162" pX="0.5" pY="0.5" oX="76" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_16_ 5" x="1118" y="1394" w="108" h="149" pX="0.5" pY="0.5" oX="63" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_17_ 5" x="1791" y="146" w="121" h="145" pX="0.5" pY="0.5" oX="55" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_18_ 5" x="1152" y="626" w="127" h="155" pX="0.5" pY="0.5" oX="62" oY="40" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_19_ 6" x="1553" y="1965" w="104" h="139" pX="0.5" pY="0.5" oX="101" oY="58" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_20_ 6" x="1567" y="0" w="120" h="148" pX="0.5" pY="0.5" oX="95" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_21_ 6" x="1051" y="936" w="126" h="155" pX="0.5" pY="0.5" oX="83" oY="41" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_22_ 7" x="663" y="1797" w="98" h="144" pX="0.5" pY="0.5" oX="87" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_23_ 7" x="1557" y="1822" w="112" h="143" pX="0.5" pY="0.5" oX="86" oY="37" oW="256" oH="256"/>
+  <sprite n="Draconian_Use Skill_24_ 7" x="818" y="2041" w="126" h="139" pX="0.5" pY="0.5" oX="71" oY="41" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_01_ 0" x="1683" y="1053" w="103" h="145" pX="0.5" pY="0.5" oX="83" oY="55" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_02_ 0" x="2111" y="1274" w="98" h="137" pX="0.5" pY="0.5" oX="86" oY="56" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_03_ 0" x="124" y="2473" w="104" h="125" pX="0.5" pY="0.5" oX="86" oY="58" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_04_ 0" x="2123" y="2125" w="101" h="135" pX="0.5" pY="0.5" oX="89" oY="59" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_05_ 0" x="1912" y="143" w="100" h="143" pX="0.5" pY="0.5" oX="91" oY="58" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_06_ 0" x="2194" y="1719" w="101" h="135" pX="0.5" pY="0.5" oX="84" oY="57" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_07_ 0" x="2389" y="1719" w="104" h="127" pX="0.5" pY="0.5" oX="81" oY="55" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_08_ 0" x="1912" y="576" w="99" h="142" pX="0.5" pY="0.5" oX="86" oY="55" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_09_ 1" x="1769" y="1612" w="103" h="144" pX="0.5" pY="0.5" oX="76" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_10_ 1" x="1768" y="291" w="89" h="145" pX="0.5" pY="0.5" oX="85" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_11_ 1" x="124" y="2079" w="72" h="140" pX="0.5" pY="0.5" oX="90" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_12_ 1" x="2012" y="999" w="97" h="138" pX="0.5" pY="0.5" oX="75" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_13_ 1" x="2007" y="1301" w="104" h="140" pX="0.5" pY="0.5" oX="68" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_14_ 1" x="2016" y="705" w="79" h="139" pX="0.5" pY="0.5" oX="88" oY="44" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_15_ 1" x="1481" y="1899" w="72" h="141" pX="0.5" pY="0.5" oX="92" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_16_ 1" x="1793" y="1899" w="95" h="141" pX="0.5" pY="0.5" oX="70" oY="44" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_17_ 2" x="1666" y="294" w="102" h="146" pX="0.5" pY="0.5" oX="85" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_18_ 2" x="110" y="1650" w="92" h="148" pX="0.5" pY="0.5" oX="91" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_19_ 2" x="1593" y="594" w="83" h="147" pX="0.5" pY="0.5" oX="102" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_20_ 2" x="761" y="1797" w="94" h="144" pX="0.5" pY="0.5" oX="97" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_21_ 2" x="1287" y="1899" w="102" h="141" pX="0.5" pY="0.5" oX="94" oY="44" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_22_ 2" x="909" y="1502" w="85" h="148" pX="0.5" pY="0.5" oX="97" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_23_ 2" x="1824" y="1162" w="73" h="145" pX="0.5" pY="0.5" oX="108" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_24_ 2" x="2016" y="141" w="94" h="141" pX="0.5" pY="0.5" oX="101" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_25_ 3" x="1159" y="313" w="100" h="156" pX="0.5" pY="0.5" oX="86" oY="33" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_26_ 3" x="659" y="1346" w="96" h="151" pX="0.5" pY="0.5" oX="87" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_27_ 3" x="1662" y="148" w="106" h="146" pX="0.5" pY="0.5" oX="78" oY="31" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_28_ 3" x="909" y="1650" w="104" h="147" pX="0.5" pY="0.5" oX="79" oY="29" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_29_ 3" x="497" y="1193" w="101" h="154" pX="0.5" pY="0.5" oX="79" oY="31" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_30_ 3" x="909" y="1353" w="100" h="149" pX="0.5" pY="0.5" oX="85" oY="33" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_31_ 3" x="1380" y="2178" w="102" h="135" pX="0.5" pY="0.5" oX="86" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_32_ 3" x="566" y="1797" w="97" h="144" pX="0.5" pY="0.5" oX="87" oY="33" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_33_ 4" x="1181" y="2180" w="105" h="136" pX="0.5" pY="0.5" oX="75" oY="48" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_34_ 4" x="2357" y="135" w="104" h="130" pX="0.5" pY="0.5" oX="80" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_35_ 4" x="2317" y="1239" w="99" h="128" pX="0.5" pY="0.5" oX="86" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_36_ 4" x="1686" y="440" w="105" h="146" pX="0.5" pY="0.5" oX="89" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_37_ 4" x="752" y="1193" w="108" h="153" pX="0.5" pY="0.5" oX="86" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_38_ 4" x="1678" y="740" w="83" h="146" pX="0.5" pY="0.5" oX="94" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_39_ 4" x="2015" y="1728" w="94" h="139" pX="0.5" pY="0.5" oX="81" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_40_ 4" x="2218" y="1536" w="112" h="132" pX="0.5" pY="0.5" oX="64" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_41_ 5" x="1152" y="781" w="95" h="155" pX="0.5" pY="0.5" oX="94" oY="37" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_42_ 5" x="824" y="909" w="81" h="157" pX="0.5" pY="0.5" oX="98" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_43_ 5" x="1810" y="1017" w="77" h="145" pX="0.5" pY="0.5" oX="97" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_44_ 5" x="1558" y="1203" w="107" h="148" pX="0.5" pY="0.5" oX="70" oY="35" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_45_ 5" x="1486" y="456" w="107" h="148" pX="0.5" pY="0.5" oX="68" oY="35" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_46_ 5" x="1083" y="2180" w="98" h="136" pX="0.5" pY="0.5" oX="80" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_47_ 5" x="2095" y="705" w="98" h="138" pX="0.5" pY="0.5" oX="87" oY="35" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_48_ 5" x="1857" y="291" w="100" h="143" pX="0.5" pY="0.5" oX="86" oY="37" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_49_ 6" x="1279" y="624" w="95" h="153" pX="0.5" pY="0.5" oX="80" oY="47" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_50_ 6" x="1480" y="763" w="85" h="149" pX="0.5" pY="0.5" oX="91" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_51_ 6" x="1480" y="912" w="80" h="143" pX="0.5" pY="0.5" oX="97" oY="50" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_52_ 6" x="2202" y="1136" w="99" h="134" pX="0.5" pY="0.5" oX="96" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_53_ 6" x="1212" y="2041" w="106" h="138" pX="0.5" pY="0.5" oX="89" oY="48" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_54_ 6" x="2123" y="2260" w="96" h="131" pX="0.5" pY="0.5" oX="87" oY="51" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_55_ 6" x="1872" y="1612" w="96" h="143" pX="0.5" pY="0.5" oX="85" oY="49" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_56_ 6" x="1247" y="781" w="99" h="155" pX="0.5" pY="0.5" oX="84" oY="47" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_57_ 7" x="1912" y="0" w="104" h="143" pX="0.5" pY="0.5" oX="84" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_58_ 7" x="2100" y="1137" w="102" h="137" pX="0.5" pY="0.5" oX="81" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_59_ 7" x="1795" y="1756" w="93" h="143" pX="0.5" pY="0.5" oX="84" oY="35" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_60_ 7" x="1578" y="1055" w="105" h="148" pX="0.5" pY="0.5" oX="75" oY="34" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_61_ 7" x="905" y="1060" w="108" h="153" pX="0.5" pY="0.5" oX="76" oY="36" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_62_ 7" x="1163" y="1244" w="82" h="150" pX="0.5" pY="0.5" oX="93" oY="38" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_63_ 7" x="2162" y="241" w="85" h="138" pX="0.5" pY="0.5" oX="98" oY="39" oW="256" oH="256"/>
+  <sprite n="Draconian_Walk_64_ 7" x="476" y="2074" w="105" h="140" pX="0.5" pY="0.5" oX="96" oY="38" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_01_ 0" x="1573" y="2446" w="122" h="101" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_02_ 0" x="1347" y="2446" w="122" h="101" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_03_ 0" x="1225" y="2446" w="122" h="102" pX="0.5" pY="0.5" oX="78" oY="86" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_04_ 1" x="1492" y="150" w="75" h="149" pX="0.5" pY="0.5" oX="70" oY="64" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_05_ 1" x="1492" y="0" w="75" h="150" pX="0.5" pY="0.5" oX="70" oY="63" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_06_ 1" x="755" y="1346" w="75" h="150" pX="0.5" pY="0.5" oX="70" oY="63" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_07_ 2" x="1457" y="1533" w="83" h="146" pX="0.5" pY="0.5" oX="119" oY="52" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_08_ 2" x="1791" y="436" w="83" h="145" pX="0.5" pY="0.5" oX="119" oY="53" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_09_ 2" x="1824" y="1307" w="83" h="144" pX="0.5" pY="0.5" oX="119" oY="54" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_10_ 3" x="2110" y="1856" w="123" h="137" pX="0.5" pY="0.5" oX="63" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_11_ 3" x="2111" y="843" w="123" h="137" pX="0.5" pY="0.5" oX="63" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_12_ 3" x="196" y="2178" w="123" h="137" pX="0.5" pY="0.5" oX="63" oY="32" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_13_ 4" x="2361" y="265" w="97" h="130" pX="0.5" pY="0.5" oX="79" oY="77" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_14_ 4" x="406" y="2338" w="97" h="132" pX="0.5" pY="0.5" oX="79" oY="75" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_15_ 4" x="2193" y="696" w="99" h="133" pX="0.5" pY="0.5" oX="77" oY="74" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_16_ 5" x="818" y="1645" w="91" h="147" pX="0.5" pY="0.5" oX="72" oY="47" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_17_ 5" x="818" y="1496" w="91" h="149" pX="0.5" pY="0.5" oX="71" oY="45" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_18_ 5" x="568" y="1347" w="91" h="151" pX="0.5" pY="0.5" oX="71" oY="43" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_19_ 6" x="2342" y="2322" w="96" h="126" pX="0.5" pY="0.5" oX="101" oY="72" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_20_ 6" x="573" y="2465" w="97" h="124" pX="0.5" pY="0.5" oX="101" oY="74" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_21_ 6" x="893" y="2465" w="97" h="122" pX="0.5" pY="0.5" oX="101" oY="76" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_22_ 7" x="2012" y="1897" w="98" h="141" pX="0.5" pY="0.5" oX="87" oY="40" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_23_ 7" x="2010" y="860" w="101" h="139" pX="0.5" pY="0.5" oX="87" oY="42" oW="256" oH="256"/>
+  <sprite n="Draconian_Woozy_24_ 7" x="1550" y="2104" w="104" h="137" pX="0.5" pY="0.5" oX="87" oY="44" oW="256" oH="256"/>
+</TextureAtlas>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Dragonfly.png" width="2424" height="2484" scale="1" format="RGBA8888">
+  <sprite n="Dragonfly_Attack 1_01_ 0" x="386" y="1269" w="148" h="108" pX="0.5" pY="0.5" oX="29" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_02_ 0" x="1293" y="632" w="113" h="84" pX="0.5" pY="0.5" oX="45" oY="68" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_03_ 0" x="2219" y="1115" w="112" h="105" pX="0.5" pY="0.5" oX="64" oY="57" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_04_ 1" x="1160" y="924" w="88" h="149" pX="0.5" pY="0.5" oX="75" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_05_ 1" x="1308" y="2278" w="94" h="102" pX="0.5" pY="0.5" oX="74" oY="74" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_06_ 1" x="1913" y="2212" w="79" h="118" pX="0.5" pY="0.5" oX="61" oY="70" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_07_ 2" x="665" y="1118" w="92" h="151" pX="0.5" pY="0.5" oX="38" oY="25" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_08_ 2" x="2320" y="2164" w="98" h="98" pX="0.5" pY="0.5" oX="33" oY="78" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_09_ 2" x="2336" y="306" w="79" h="100" pX="0.5" pY="0.5" oX="65" oY="63" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_10_ 3" x="0" y="1270" w="149" h="127" pX="0.5" pY="0.5" oX="31" oY="63" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_11_ 3" x="2220" y="510" w="113" h="104" pX="0.5" pY="0.5" oX="45" oY="86" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_12_ 3" x="128" y="1936" w="112" h="77" pX="0.5" pY="0.5" oX="28" oY="80" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_13_ 4" x="1712" y="1030" w="132" h="136" pX="0.5" pY="0.5" oX="40" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_14_ 4" x="2320" y="2070" w="101" h="94" pX="0.5" pY="0.5" oX="47" oY="72" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_15_ 4" x="2095" y="1555" w="87" h="122" pX="0.5" pY="0.5" oX="60" oY="61" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_16_ 5" x="1572" y="550" w="117" h="141" pX="0.5" pY="0.5" oX="46" oY="36" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_17_ 5" x="2219" y="1606" w="109" h="103" pX="0.5" pY="0.5" oX="60" oY="71" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_18_ 5" x="2219" y="1525" w="110" h="81" pX="0.5" pY="0.5" oX="38" oY="85" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_19_ 6" x="1968" y="132" w="116" h="132" pX="0.5" pY="0.5" oX="47" oY="36" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_20_ 6" x="2219" y="1016" w="112" h="99" pX="0.5" pY="0.5" oX="31" oY="72" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_21_ 6" x="2219" y="1437" w="110" h="88" pX="0.5" pY="0.5" oX="55" oY="81" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_22_ 7" x="1442" y="0" w="133" h="145" pX="0.5" pY="0.5" oX="35" oY="33" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_23_ 7" x="2216" y="2099" w="104" h="109" pX="0.5" pY="0.5" oX="53" oY="83" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 1_24_ 7" x="2333" y="406" w="84" h="100" pX="0.5" pY="0.5" oX="64" oY="66" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_01_ 0" x="1138" y="1222" w="148" h="108" pX="0.5" pY="0.5" oX="29" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_02_ 0" x="2220" y="614" w="113" h="88" pX="0.5" pY="0.5" oX="45" oY="58" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_03_ 0" x="1949" y="918" w="132" h="126" pX="0.5" pY="0.5" oX="40" oY="56" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_04_ 1" x="1160" y="1073" w="88" h="149" pX="0.5" pY="0.5" oX="75" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_05_ 1" x="1580" y="2287" w="74" h="106" pX="0.5" pY="0.5" oX="82" oY="69" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_06_ 1" x="1790" y="2075" w="89" h="127" pX="0.5" pY="0.5" oX="41" oY="61" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_07_ 2" x="918" y="1066" w="92" h="151" pX="0.5" pY="0.5" oX="38" oY="25" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_08_ 2" x="674" y="1269" w="75" h="98" pX="0.5" pY="0.5" oX="49" oY="76" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_09_ 2" x="536" y="2206" w="80" h="116" pX="0.5" pY="0.5" oX="82" oY="68" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_10_ 3" x="237" y="1253" w="149" h="127" pX="0.5" pY="0.5" oX="31" oY="63" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_11_ 3" x="2222" y="319" w="114" h="82" pX="0.5" pY="0.5" oX="45" oY="89" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_12_ 3" x="128" y="2015" w="133" h="64" pX="0.5" pY="0.5" oX="31" oY="74" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_13_ 4" x="1710" y="1592" w="132" h="136" pX="0.5" pY="0.5" oX="40" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_14_ 4" x="1992" y="2113" w="102" h="97" pX="0.5" pY="0.5" oX="52" oY="64" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_15_ 4" x="90" y="2210" w="96" h="120" pX="0.5" pY="0.5" oX="52" oY="61" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_16_ 5" x="1168" y="1513" w="117" h="141" pX="0.5" pY="0.5" oX="46" oY="36" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_17_ 5" x="149" y="1270" w="86" h="106" pX="0.5" pY="0.5" oX="65" oY="70" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_18_ 5" x="1151" y="2308" w="105" h="94" pX="0.5" pY="0.5" oX="38" oY="71" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_19_ 6" x="1713" y="275" w="116" h="132" pX="0.5" pY="0.5" oX="47" oY="36" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_20_ 6" x="2338" y="0" w="85" h="102" pX="0.5" pY="0.5" oX="53" oY="64" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_21_ 6" x="833" y="2203" w="104" h="115" pX="0.5" pY="0.5" oX="59" oY="61" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_22_ 7" x="1308" y="1367" w="133" h="145" pX="0.5" pY="0.5" oX="35" oY="33" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_23_ 7" x="303" y="2322" w="105" h="80" pX="0.5" pY="0.5" oX="48" oY="87" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Attack 2_24_ 7" x="2328" y="1693" w="94" h="94" pX="0.5" pY="0.5" oX="59" oY="73" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_01_ 0" x="2190" y="1044" w="27" h="107" pX="0.5" pY="0.5" oX="87" oY="52" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_02_ 0" x="852" y="622" w="28" h="106" pX="0.5" pY="0.5" oX="87" oY="53" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_03_ 0" x="2188" y="1170" w="31" h="107" pX="0.5" pY="0.5" oX="87" oY="53" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_04_ 1" x="1045" y="2330" w="106" h="73" pX="0.5" pY="0.5" oX="77" oY="83" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_05_ 1" x="108" y="2330" w="107" h="73" pX="0.5" pY="0.5" oX="76" oY="83" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_06_ 1" x="1759" y="2330" w="105" h="73" pX="0.5" pY="0.5" oX="77" oY="83" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_07_ 2" x="1864" y="2330" w="105" h="70" pX="0.5" pY="0.5" oX="20" oY="84" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_08_ 2" x="1969" y="2330" w="105" h="70" pX="0.5" pY="0.5" oX="20" oY="84" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_09_ 2" x="1654" y="2330" w="105" h="68" pX="0.5" pY="0.5" oX="20" oY="86" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_10_ 3" x="1256" y="2398" w="34" h="86" pX="0.5" pY="0.5" oX="86" oY="111" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_11_ 3" x="1963" y="1851" w="33" h="87" pX="0.5" pY="0.5" oX="86" oY="111" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_12_ 3" x="1308" y="2191" w="33" h="87" pX="0.5" pY="0.5" oX="86" oY="112" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_13_ 4" x="720" y="2287" w="80" h="102" pX="0.5" pY="0.5" oX="81" oY="58" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_14_ 4" x="2338" y="102" w="79" h="102" pX="0.5" pY="0.5" oX="81" oY="58" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_15_ 4" x="2336" y="204" w="79" h="102" pX="0.5" pY="0.5" oX="81" oY="58" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_16_ 5" x="90" y="2403" w="80" h="76" pX="0.5" pY="0.5" oX="80" oY="105" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_17_ 5" x="1290" y="2403" w="80" h="77" pX="0.5" pY="0.5" oX="80" oY="105" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_18_ 5" x="250" y="2403" w="79" h="77" pX="0.5" pY="0.5" oX="81" oY="105" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_19_ 6" x="2332" y="898" w="79" h="94" pX="0.5" pY="0.5" oX="42" oY="64" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_20_ 6" x="2330" y="1329" w="79" h="95" pX="0.5" pY="0.5" oX="42" oY="64" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_21_ 6" x="2333" y="803" w="79" h="95" pX="0.5" pY="0.5" oX="42" oY="64" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_22_ 7" x="1450" y="2403" w="79" h="79" pX="0.5" pY="0.5" oX="43" oY="103" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_23_ 7" x="170" y="2403" w="80" h="77" pX="0.5" pY="0.5" oX="42" oY="105" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Behavior_24_ 7" x="1370" y="2403" w="80" h="77" pX="0.5" pY="0.5" oX="42" oY="105" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_01_ 0" x="1795" y="2212" w="118" h="105" pX="0.5" pY="0.5" oX="48" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_02_ 0" x="534" y="1269" w="140" h="94" pX="0.5" pY="0.5" oX="35" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_03_ 0" x="1006" y="793" w="153" h="62" pX="0.5" pY="0.5" oX="22" oY="73" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_04_ 1" x="1488" y="1016" w="73" h="138" pX="0.5" pY="0.5" oX="78" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_05_ 1" x="1013" y="334" w="73" h="153" pX="0.5" pY="0.5" oX="85" oY="21" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_06_ 1" x="757" y="1217" w="73" h="149" pX="0.5" pY="0.5" oX="99" oY="35" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_07_ 2" x="1436" y="1782" w="79" h="135" pX="0.5" pY="0.5" oX="49" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_08_ 2" x="1166" y="484" w="79" h="150" pX="0.5" pY="0.5" oX="42" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_09_ 2" x="773" y="622" w="79" h="155" pX="0.5" pY="0.5" oX="28" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_10_ 3" x="0" y="2079" w="118" h="131" pX="0.5" pY="0.5" oX="44" oY="53" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_11_ 3" x="1572" y="286" w="141" h="123" pX="0.5" pY="0.5" oX="32" oY="66" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_12_ 3" x="469" y="624" w="156" h="107" pX="0.5" pY="0.5" oX="27" oY="79" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_13_ 4" x="2084" y="1175" w="104" h="126" pX="0.5" pY="0.5" oX="61" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_14_ 4" x="2084" y="132" w="117" h="126" pX="0.5" pY="0.5" oX="65" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_15_ 4" x="2222" y="204" w="114" h="115" pX="0.5" pY="0.5" oX="54" oY="43" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_16_ 5" x="1441" y="1361" w="107" h="144" pX="0.5" pY="0.5" oX="56" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_17_ 5" x="1511" y="1206" w="128" h="140" pX="0.5" pY="0.5" oX="56" oY="39" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_18_ 5" x="1469" y="2075" w="112" h="128" pX="0.5" pY="0.5" oX="52" oY="57" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_19_ 6" x="2076" y="396" w="108" h="123" pX="0.5" pY="0.5" oX="47" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_20_ 6" x="1082" y="2059" w="130" h="116" pX="0.5" pY="0.5" oX="24" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_21_ 6" x="2097" y="776" w="119" h="123" pX="0.5" pY="0.5" oX="36" oY="39" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_22_ 7" x="379" y="1526" w="105" h="143" pX="0.5" pY="0.5" oX="45" oY="31" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_23_ 7" x="1368" y="1071" w="120" h="145" pX="0.5" pY="0.5" oX="26" oY="35" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Block_24_ 7" x="337" y="1670" w="117" h="138" pX="0.5" pY="0.5" oX="35" oY="44" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_01_ 0" x="2223" y="102" w="115" h="102" pX="0.5" pY="0.5" oX="46" oY="52" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_02_ 0" x="155" y="884" w="154" h="79" pX="0.5" pY="0.5" oX="25" oY="71" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_03_ 0" x="2219" y="907" w="112" h="109" pX="0.5" pY="0.5" oX="42" oY="48" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_04_ 1" x="777" y="312" w="90" h="155" pX="0.5" pY="0.5" oX="80" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_05_ 1" x="1286" y="1219" w="90" h="148" pX="0.5" pY="0.5" oX="82" oY="41" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_06_ 1" x="1013" y="487" w="89" h="153" pX="0.5" pY="0.5" oX="84" oY="32" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_07_ 2" x="777" y="156" w="99" h="156" pX="0.5" pY="0.5" oX="31" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_08_ 2" x="922" y="1217" w="96" h="149" pX="0.5" pY="0.5" oX="28" oY="39" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_09_ 2" x="830" y="1217" w="92" h="149" pX="0.5" pY="0.5" oX="27" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_10_ 3" x="1308" y="1512" w="111" h="142" pX="0.5" pY="0.5" oX="47" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_11_ 3" x="313" y="763" w="156" h="115" pX="0.5" pY="0.5" oX="25" oY="82" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_12_ 3" x="1712" y="664" w="112" h="137" pX="0.5" pY="0.5" oX="46" oY="63" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_13_ 4" x="1996" y="1851" w="96" h="132" pX="0.5" pY="0.5" oX="55" oY="32" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_14_ 4" x="1167" y="1822" w="135" h="120" pX="0.5" pY="0.5" oX="37" oY="62" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_15_ 4" x="592" y="1655" w="90" h="137" pX="0.5" pY="0.5" oX="63" oY="43" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_16_ 5" x="829" y="1655" w="101" h="138" pX="0.5" pY="0.5" oX="52" oY="42" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_17_ 5" x="1693" y="1728" w="135" h="135" pX="0.5" pY="0.5" oX="37" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_18_ 5" x="465" y="1377" w="100" h="146" pX="0.5" pY="0.5" oX="53" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_19_ 6" x="1968" y="396" w="108" h="132" pX="0.5" pY="0.5" oX="50" oY="45" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_20_ 6" x="337" y="1808" w="135" h="132" pX="0.5" pY="0.5" oX="32" oY="43" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_21_ 6" x="817" y="1793" w="100" h="135" pX="0.5" pY="0.5" oX="47" oY="34" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_22_ 7" x="1156" y="334" w="96" h="150" pX="0.5" pY="0.5" oX="50" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_23_ 7" x="917" y="1821" w="134" h="120" pX="0.5" pY="0.5" oX="35" oY="63" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Critical HP_24_ 7" x="1996" y="1983" w="100" h="130" pX="0.5" pY="0.5" oX="47" oY="56" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Dead_01_ 0" x="930" y="1760" w="138" h="61" pX="0.5" pY="0.5" oX="31" oY="85" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Dead_02_ 1" x="2333" y="606" w="77" h="99" pX="0.5" pY="0.5" oX="46" oY="65" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Dead_03_ 2" x="2333" y="705" w="77" h="98" pX="0.5" pY="0.5" oX="80" oY="67" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Dead_04_ 3" x="876" y="218" w="137" h="85" pX="0.5" pY="0.5" oX="32" oY="79" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Dead_05_ 4" x="941" y="2197" w="118" h="87" pX="0.5" pY="0.5" oX="41" oY="71" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Dead_06_ 5" x="1341" y="2175" w="121" h="103" pX="0.5" pY="0.5" oX="40" oY="54" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Dead_07_ 6" x="693" y="1033" w="120" h="84" pX="0.5" pY="0.5" oX="40" oY="74" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Dead_08_ 7" x="1077" y="2175" w="118" h="103" pX="0.5" pY="0.5" oX="41" oY="55" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_01_ 0" x="1992" y="2212" w="118" h="105" pX="0.5" pY="0.5" oX="48" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_02_ 0" x="967" y="988" w="151" h="78" pX="0.5" pY="0.5" oX="35" oY="54" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_03_ 0" x="2220" y="702" w="113" h="107" pX="0.5" pY="0.5" oX="58" oY="31" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_04_ 1" x="1640" y="102" w="73" h="138" pX="0.5" pY="0.5" oX="78" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_05_ 1" x="170" y="0" w="93" h="163" pX="0.5" pY="0.5" oX="85" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_06_ 1" x="392" y="2076" w="103" h="130" pX="0.5" pY="0.5" oX="79" oY="56" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_07_ 2" x="1436" y="1782" w="79" h="135" pX="0.5" pY="0.5" oX="49" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_08_ 2" x="1068" y="1791" w="99" h="135" pX="0.5" pY="0.5" oX="26" oY="37" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_09_ 2" x="420" y="2206" w="116" h="110" pX="0.5" pY="0.5" oX="15" oY="53" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_10_ 3" x="1968" y="1044" w="118" h="131" pX="0.5" pY="0.5" oX="44" oY="53" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_11_ 3" x="314" y="323" w="160" h="139" pX="0.5" pY="0.5" oX="13" oY="53" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_12_ 3" x="1713" y="138" w="116" h="137" pX="0.5" pY="0.5" oX="32" oY="55" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_13_ 4" x="2086" y="1044" w="104" h="126" pX="0.5" pY="0.5" oX="61" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_14_ 4" x="948" y="2075" w="129" h="122" pX="0.5" pY="0.5" oX="57" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_15_ 4" x="2220" y="401" w="113" h="109" pX="0.5" pY="0.5" oX="72" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_16_ 5" x="1406" y="584" w="107" h="144" pX="0.5" pY="0.5" oX="56" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_17_ 5" x="0" y="0" w="110" h="167" pX="0.5" pY="0.5" oX="64" oY="33" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_18_ 5" x="121" y="1397" w="100" h="147" pX="0.5" pY="0.5" oX="82" oY="42" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_19_ 6" x="2076" y="396" w="108" h="123" pX="0.5" pY="0.5" oX="47" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_20_ 6" x="1195" y="2191" w="113" h="116" pX="0.5" pY="0.5" oX="29" oY="35" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_21_ 6" x="2205" y="2212" w="102" h="109" pX="0.5" pY="0.5" oX="17" oY="39" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_22_ 7" x="484" y="1523" w="105" h="143" pX="0.5" pY="0.5" oX="45" oY="31" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_23_ 7" x="136" y="1821" w="133" h="114" pX="0.5" pY="0.5" oX="21" oY="77" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Evade_24_ 7" x="2092" y="1851" w="120" h="125" pX="0.5" pY="0.5" oX="18" oY="67" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_01_ 0" x="1795" y="2212" w="118" h="105" pX="0.5" pY="0.5" oX="48" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_02_ 0" x="1968" y="660" w="129" h="121" pX="0.5" pY="0.5" oX="39" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_03_ 0" x="2219" y="1329" w="111" h="108" pX="0.5" pY="0.5" oX="61" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_04_ 1" x="1639" y="1206" w="73" h="138" pX="0.5" pY="0.5" oX="78" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_05_ 1" x="842" y="2076" w="99" h="127" pX="0.5" pY="0.5" oX="85" oY="42" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_06_ 1" x="2333" y="506" w="80" h="100" pX="0.5" pY="0.5" oX="105" oY="85" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_07_ 2" x="603" y="1792" w="79" h="135" pX="0.5" pY="0.5" oX="49" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_08_ 2" x="1442" y="145" w="95" h="144" pX="0.5" pY="0.5" oX="24" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_09_ 2" x="1709" y="2075" w="81" h="127" pX="0.5" pY="0.5" oX="17" oY="37" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_10_ 3" x="1968" y="1568" w="118" h="131" pX="0.5" pY="0.5" oX="44" oY="53" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_11_ 3" x="713" y="2076" w="129" h="114" pX="0.5" pY="0.5" oX="40" oY="71" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_12_ 3" x="2329" y="1437" w="95" h="94" pX="0.5" pY="0.5" oX="32" oY="89" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_13_ 4" x="2086" y="1044" w="104" h="126" pX="0.5" pY="0.5" oX="61" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_14_ 4" x="0" y="2210" w="90" h="122" pX="0.5" pY="0.5" oX="85" oY="29" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_15_ 4" x="616" y="2287" w="104" h="101" pX="0.5" pY="0.5" oX="80" oY="42" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_16_ 5" x="1406" y="440" w="107" h="144" pX="0.5" pY="0.5" oX="56" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_17_ 5" x="2097" y="258" w="125" h="105" pX="0.5" pY="0.5" oX="61" oY="78" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_18_ 5" x="2074" y="528" w="108" h="125" pX="0.5" pY="0.5" oX="59" oY="61" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_19_ 6" x="2095" y="1432" w="108" h="123" pX="0.5" pY="0.5" oX="47" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_20_ 6" x="2081" y="918" w="127" h="126" pX="0.5" pY="0.5" oX="21" oY="24" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_21_ 6" x="1775" y="911" w="137" h="119" pX="0.5" pY="0.5" oX="8" oY="24" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_22_ 7" x="484" y="1523" w="105" h="143" pX="0.5" pY="0.5" oX="45" oY="31" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_23_ 7" x="1077" y="1513" w="91" h="142" pX="0.5" pY="0.5" oX="29" oY="42" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Get Hit_24_ 7" x="2110" y="2212" w="95" h="117" pX="0.5" pY="0.5" oX="11" oY="56" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_01_ 0" x="2223" y="0" w="115" h="102" pX="0.5" pY="0.5" oX="46" oY="52" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_02_ 0" x="0" y="651" w="157" h="88" pX="0.5" pY="0.5" oX="24" oY="65" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_03_ 0" x="713" y="2190" w="120" h="97" pX="0.5" pY="0.5" oX="43" oY="58" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_04_ 1" x="774" y="467" w="108" h="155" pX="0.5" pY="0.5" oX="76" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_05_ 1" x="118" y="1682" w="109" h="139" pX="0.5" pY="0.5" oX="75" oY="48" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_06_ 1" x="467" y="964" w="107" h="154" pX="0.5" pY="0.5" oX="76" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_07_ 2" x="779" y="0" w="111" h="156" pX="0.5" pY="0.5" oX="19" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_08_ 2" x="1666" y="816" w="109" h="138" pX="0.5" pY="0.5" oX="19" oY="50" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_09_ 2" x="126" y="1118" w="111" h="152" pX="0.5" pY="0.5" oX="19" oY="31" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_10_ 3" x="820" y="1367" w="111" h="146" pX="0.5" pY="0.5" oX="47" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_11_ 3" x="483" y="516" w="157" h="108" pX="0.5" pY="0.5" oX="24" oY="89" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_12_ 3" x="1572" y="409" w="121" h="141" pX="0.5" pY="0.5" oX="46" oY="57" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_13_ 4" x="1968" y="528" w="106" h="132" pX="0.5" pY="0.5" oX="55" oY="32" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_14_ 4" x="1693" y="537" w="138" h="127" pX="0.5" pY="0.5" oX="33" oY="54" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_15_ 4" x="599" y="2076" w="114" h="129" pX="0.5" pY="0.5" oX="47" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_16_ 5" x="227" y="1682" w="110" h="139" pX="0.5" pY="0.5" oX="52" oY="42" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_17_ 5" x="1824" y="788" w="137" h="123" pX="0.5" pY="0.5" oX="34" oY="58" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_18_ 5" x="1166" y="150" w="106" h="149" pX="0.5" pY="0.5" oX="55" oY="33" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_19_ 6" x="1880" y="1942" w="116" h="132" pX="0.5" pY="0.5" oX="42" oY="45" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_20_ 6" x="1831" y="263" w="137" h="125" pX="0.5" pY="0.5" oX="34" oY="56" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_21_ 6" x="495" y="2076" w="104" h="130" pX="0.5" pY="0.5" oX="42" oY="36" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_22_ 7" x="814" y="1022" w="104" h="151" pX="0.5" pY="0.5" oX="42" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_23_ 7" x="1712" y="1166" w="136" h="125" pX="0.5" pY="0.5" oX="35" oY="57" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Idle_24_ 7" x="1847" y="1425" w="121" h="135" pX="0.5" pY="0.5" oX="42" oY="47" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_01_ 0" x="0" y="2332" w="108" h="70" pX="0.5" pY="0.5" oX="49" oY="89" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_02_ 0" x="1644" y="1863" w="108" h="69" pX="0.5" pY="0.5" oX="49" oY="90" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_03_ 0" x="2219" y="2002" w="108" h="68" pX="0.5" pY="0.5" oX="49" oY="91" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_04_ 1" x="510" y="2322" w="101" h="80" pX="0.5" pY="0.5" oX="76" oY="106" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_05_ 1" x="2205" y="2321" w="99" h="79" pX="0.5" pY="0.5" oX="78" oY="107" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_06_ 1" x="2304" y="2321" w="99" h="79" pX="0.5" pY="0.5" oX="78" oY="107" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_07_ 2" x="800" y="2318" w="102" h="85" pX="0.5" pY="0.5" oX="23" oY="98" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_08_ 2" x="408" y="2316" w="102" h="85" pX="0.5" pY="0.5" oX="23" oY="98" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_09_ 2" x="1402" y="2308" w="102" h="85" pX="0.5" pY="0.5" oX="23" oY="98" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_10_ 3" x="2219" y="1813" w="108" h="94" pX="0.5" pY="0.5" oX="43" oY="105" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_11_ 3" x="937" y="2308" w="108" h="94" pX="0.5" pY="0.5" oX="43" oY="105" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_12_ 3" x="2219" y="1907" w="108" h="95" pX="0.5" pY="0.5" oX="43" oY="105" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_13_ 4" x="2331" y="1066" w="92" h="74" pX="0.5" pY="0.5" oX="81" oY="86" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_14_ 4" x="2331" y="992" w="92" h="74" pX="0.5" pY="0.5" oX="81" oY="86" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_15_ 4" x="2074" y="2329" w="92" h="73" pX="0.5" pY="0.5" oX="81" oY="87" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_16_ 5" x="2327" y="1865" w="91" h="81" pX="0.5" pY="0.5" oX="80" oY="114" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_17_ 5" x="0" y="2403" w="90" h="81" pX="0.5" pY="0.5" oX="80" oY="114" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_18_ 5" x="2327" y="1946" w="90" h="81" pX="0.5" pY="0.5" oX="80" oY="114" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_19_ 6" x="2331" y="1217" w="91" h="78" pX="0.5" pY="0.5" oX="30" oY="81" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_20_ 6" x="2328" y="1787" w="91" h="78" pX="0.5" pY="0.5" oX="30" oY="81" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_21_ 6" x="2331" y="1140" w="91" h="77" pX="0.5" pY="0.5" oX="30" oY="81" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_22_ 7" x="2329" y="1531" w="94" h="81" pX="0.5" pY="0.5" oX="28" oY="113" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_23_ 7" x="616" y="2205" w="94" h="81" pX="0.5" pY="0.5" oX="28" oY="113" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Rest_24_ 7" x="2328" y="1612" w="94" h="81" pX="0.5" pY="0.5" oX="28" oY="113" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_01_ 0" x="690" y="1513" w="142" h="102" pX="0.5" pY="0.5" oX="34" oY="55" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_02_ 0" x="0" y="855" w="155" h="103" pX="0.5" pY="0.5" oX="25" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_03_ 0" x="1581" y="2174" w="120" h="113" pX="0.5" pY="0.5" oX="47" oY="47" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_04_ 0" x="890" y="115" w="155" h="103" pX="0.5" pY="0.5" oX="25" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_05_ 0" x="1575" y="0" w="142" h="102" pX="0.5" pY="0.5" oX="34" oY="55" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_06_ 0" x="0" y="855" w="155" h="103" pX="0.5" pY="0.5" oX="25" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_07_ 0" x="2096" y="2099" w="120" h="113" pX="0.5" pY="0.5" oX="47" oY="47" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_08_ 0" x="625" y="777" w="155" h="103" pX="0.5" pY="0.5" oX="25" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_09_ 1" x="641" y="435" w="133" h="156" pX="0.5" pY="0.5" oX="55" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_10_ 1" x="1018" y="1182" w="120" h="148" pX="0.5" pY="0.5" oX="71" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_11_ 1" x="0" y="1544" w="143" h="138" pX="0.5" pY="0.5" oX="48" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_12_ 1" x="1018" y="1182" w="120" h="148" pX="0.5" pY="0.5" oX="71" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_13_ 1" x="640" y="591" w="133" h="156" pX="0.5" pY="0.5" oX="55" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_14_ 1" x="1248" y="1071" w="120" h="148" pX="0.5" pY="0.5" oX="71" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_15_ 1" x="143" y="1544" w="143" h="138" pX="0.5" pY="0.5" oX="48" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_16_ 1" x="1286" y="923" w="120" h="148" pX="0.5" pY="0.5" oX="71" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_17_ 2" x="389" y="1118" w="138" h="151" pX="0.5" pY="0.5" oX="16" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_18_ 2" x="1053" y="1367" w="122" h="146" pX="0.5" pY="0.5" oX="13" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_19_ 2" x="1296" y="148" w="146" h="148" pX="0.5" pY="0.5" oX="14" oY="32" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_20_ 2" x="1053" y="1367" w="122" h="146" pX="0.5" pY="0.5" oX="13" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_21_ 2" x="527" y="1118" w="138" h="151" pX="0.5" pY="0.5" oX="16" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_22_ 2" x="931" y="1367" w="122" h="146" pX="0.5" pY="0.5" oX="13" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_23_ 2" x="1296" y="0" w="146" h="148" pX="0.5" pY="0.5" oX="14" oY="32" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_24_ 2" x="343" y="1380" w="122" h="146" pX="0.5" pY="0.5" oX="13" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_25_ 3" x="0" y="964" w="139" h="154" pX="0.5" pY="0.5" oX="29" oY="43" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_26_ 3" x="313" y="646" w="156" h="117" pX="0.5" pY="0.5" oX="25" oY="80" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_27_ 3" x="387" y="0" w="112" h="160" pX="0.5" pY="0.5" oX="43" oY="36" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_28_ 3" x="157" y="767" w="156" h="117" pX="0.5" pY="0.5" oX="25" oY="80" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_29_ 3" x="867" y="312" w="139" h="154" pX="0.5" pY="0.5" oX="29" oY="43" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_30_ 3" x="469" y="847" w="156" h="117" pX="0.5" pY="0.5" oX="25" oY="80" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_31_ 3" x="387" y="160" w="112" h="160" pX="0.5" pY="0.5" oX="43" oY="36" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_32_ 3" x="157" y="767" w="156" h="117" pX="0.5" pY="0.5" oX="25" oY="80" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_33_ 4" x="2096" y="1976" w="123" h="123" pX="0.5" pY="0.5" oX="49" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_34_ 4" x="935" y="1627" w="139" h="133" pX="0.5" pY="0.5" oX="28" oY="50" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_35_ 4" x="1341" y="2076" w="128" h="99" pX="0.5" pY="0.5" oX="39" oY="64" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_36_ 4" x="690" y="1615" w="139" h="133" pX="0.5" pY="0.5" oX="28" oY="50" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_37_ 4" x="2097" y="653" w="123" h="123" pX="0.5" pY="0.5" oX="49" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_38_ 4" x="935" y="1627" w="139" h="133" pX="0.5" pY="0.5" oX="28" oY="50" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_39_ 4" x="1581" y="2075" w="128" h="99" pX="0.5" pY="0.5" oX="39" oY="64" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_40_ 4" x="935" y="1627" w="139" h="133" pX="0.5" pY="0.5" oX="28" oY="50" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_41_ 5" x="882" y="466" w="131" h="154" pX="0.5" pY="0.5" oX="33" oY="28" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_42_ 5" x="1482" y="1942" w="133" h="131" pX="0.5" pY="0.5" oX="33" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_43_ 5" x="1045" y="0" w="121" h="153" pX="0.5" pY="0.5" oX="46" oY="29" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_44_ 5" x="1615" y="1942" w="133" h="131" pX="0.5" pY="0.5" oX="33" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_45_ 5" x="882" y="620" w="131" h="154" pX="0.5" pY="0.5" oX="33" oY="28" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_46_ 5" x="1349" y="1942" w="133" h="131" pX="0.5" pY="0.5" oX="33" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_47_ 5" x="693" y="880" w="121" h="153" pX="0.5" pY="0.5" oX="46" oY="29" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_48_ 5" x="525" y="1938" w="133" h="131" pX="0.5" pY="0.5" oX="33" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_49_ 6" x="1711" y="1471" w="136" h="114" pX="0.5" pY="0.5" oX="40" oY="59" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_50_ 6" x="682" y="1881" w="133" h="134" pX="0.5" pY="0.5" oX="39" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_51_ 6" x="1212" y="2076" w="129" h="115" pX="0.5" pY="0.5" oX="34" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_52_ 6" x="1216" y="1942" w="133" h="134" pX="0.5" pY="0.5" oX="39" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_53_ 6" x="0" y="1822" w="136" h="114" pX="0.5" pY="0.5" oX="40" oY="59" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_54_ 6" x="815" y="1942" w="133" h="134" pX="0.5" pY="0.5" oX="39" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_55_ 6" x="1515" y="1822" w="129" h="115" pX="0.5" pY="0.5" oX="34" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_56_ 6" x="682" y="1881" w="133" h="134" pX="0.5" pY="0.5" oX="39" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_57_ 7" x="0" y="1118" w="126" h="152" pX="0.5" pY="0.5" oX="33" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_58_ 7" x="1572" y="956" w="140" h="125" pX="0.5" pY="0.5" oX="37" oY="55" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_59_ 7" x="1013" y="640" w="130" h="153" pX="0.5" pY="0.5" oX="38" oY="35" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_60_ 7" x="1572" y="691" w="140" h="125" pX="0.5" pY="0.5" oX="37" oY="55" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_61_ 7" x="0" y="1118" w="126" h="152" pX="0.5" pY="0.5" oX="33" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_62_ 7" x="1572" y="1346" w="140" h="125" pX="0.5" pY="0.5" oX="37" oY="55" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_63_ 7" x="139" y="963" w="130" h="153" pX="0.5" pY="0.5" oX="38" oY="35" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Run_64_ 7" x="1572" y="1081" w="140" h="125" pX="0.5" pY="0.5" oX="37" oY="55" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_01_ 0" x="1462" y="2203" w="118" h="105" pX="0.5" pY="0.5" oX="48" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_02_ 0" x="269" y="993" w="152" h="93" pX="0.5" pY="0.5" oX="30" oY="52" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_03_ 0" x="1828" y="1862" w="134" h="80" pX="0.5" pY="0.5" oX="30" oY="58" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_04_ 1" x="1640" y="102" w="73" h="138" pX="0.5" pY="0.5" oX="78" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_05_ 1" x="632" y="278" w="79" h="157" pX="0.5" pY="0.5" oX="85" oY="21" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_06_ 1" x="1968" y="1306" w="91" h="131" pX="0.5" pY="0.5" oX="93" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_07_ 2" x="603" y="1792" w="79" h="135" pX="0.5" pY="0.5" oX="49" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_08_ 2" x="1160" y="775" w="82" h="149" pX="0.5" pY="0.5" oX="37" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_09_ 2" x="1701" y="2212" w="94" h="118" pX="0.5" pY="0.5" oX="18" oY="65" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_10_ 3" x="1968" y="1437" w="118" h="131" pX="0.5" pY="0.5" oX="44" oY="53" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_11_ 3" x="852" y="774" w="154" h="114" pX="0.5" pY="0.5" oX="26" oY="76" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_12_ 3" x="1557" y="1726" w="136" h="96" pX="0.5" pY="0.5" oX="40" oY="86" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_13_ 4" x="2059" y="1306" w="104" h="126" pX="0.5" pY="0.5" oX="61" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_14_ 4" x="118" y="2079" w="128" h="131" pX="0.5" pY="0.5" oX="58" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_15_ 4" x="2219" y="1709" w="109" h="104" pX="0.5" pY="0.5" oX="52" oY="61" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_16_ 5" x="1460" y="728" w="107" h="144" pX="0.5" pY="0.5" oX="56" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_17_ 5" x="1441" y="1505" w="131" h="143" pX="0.5" pY="0.5" oX="55" oY="41" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_18_ 5" x="2095" y="1677" w="113" h="122" pX="0.5" pY="0.5" oX="55" oY="63" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_19_ 6" x="1848" y="1302" w="108" h="123" pX="0.5" pY="0.5" oX="47" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_20_ 6" x="261" y="2070" w="131" h="123" pX="0.5" pY="0.5" oX="22" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_21_ 6" x="2219" y="809" w="113" h="98" pX="0.5" pY="0.5" oX="36" oY="68" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_22_ 7" x="379" y="1526" w="105" h="143" pX="0.5" pY="0.5" oX="45" oY="31" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_23_ 7" x="472" y="1803" w="131" h="135" pX="0.5" pY="0.5" oX="21" oY="47" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Use Skill_24_ 7" x="2219" y="1220" w="112" h="109" pX="0.5" pY="0.5" oX="42" oY="76" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_01_ 0" x="935" y="1513" w="142" h="114" pX="0.5" pY="0.5" oX="33" oY="44" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_02_ 0" x="313" y="878" w="154" h="115" pX="0.5" pY="0.5" oX="26" oY="42" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_03_ 0" x="474" y="320" w="158" h="116" pX="0.5" pY="0.5" oX="24" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_04_ 0" x="1013" y="218" w="153" h="116" pX="0.5" pY="0.5" oX="26" oY="39" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_05_ 0" x="1082" y="1942" w="134" h="117" pX="0.5" pY="0.5" oX="37" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_06_ 0" x="1010" y="1066" w="150" h="116" pX="0.5" pY="0.5" oX="27" oY="39" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_07_ 0" x="0" y="739" w="157" h="116" pX="0.5" pY="0.5" oX="25" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_08_ 0" x="890" y="0" w="155" h="115" pX="0.5" pY="0.5" oX="25" oY="42" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_09_ 1" x="0" y="491" w="121" h="160" pX="0.5" pY="0.5" oX="71" oY="28" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_10_ 1" x="499" y="0" w="122" h="159" pX="0.5" pY="0.5" oX="71" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_11_ 1" x="221" y="1380" w="122" h="147" pX="0.5" pY="0.5" oX="72" oY="35" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_12_ 1" x="193" y="327" w="121" h="160" pX="0.5" pY="0.5" oX="73" oY="28" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_13_ 1" x="0" y="167" w="119" h="163" pX="0.5" pY="0.5" oX="73" oY="23" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_14_ 1" x="119" y="165" w="121" h="162" pX="0.5" pY="0.5" oX="73" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_15_ 1" x="1242" y="775" w="122" h="148" pX="0.5" pY="0.5" oX="72" oY="37" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_16_ 1" x="621" y="120" w="121" h="158" pX="0.5" pY="0.5" oX="72" oY="28" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_17_ 2" x="0" y="330" w="119" h="161" pX="0.5" pY="0.5" oX="13" oY="27" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_18_ 2" x="263" y="162" w="120" h="161" pX="0.5" pY="0.5" oX="12" oY="28" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_19_ 2" x="0" y="1397" w="121" h="147" pX="0.5" pY="0.5" oX="11" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_20_ 2" x="362" y="462" w="121" h="159" pX="0.5" pY="0.5" oX="12" oY="28" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_21_ 2" x="263" y="0" w="124" h="162" pX="0.5" pY="0.5" oX="13" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_22_ 2" x="241" y="487" w="121" h="159" pX="0.5" pY="0.5" oX="12" oY="28" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_23_ 2" x="565" y="1367" w="121" h="146" pX="0.5" pY="0.5" oX="11" oY="37" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_24_ 2" x="121" y="487" w="120" h="160" pX="0.5" pY="0.5" oX="12" oY="29" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_25_ 3" x="1406" y="296" w="140" h="144" pX="0.5" pY="0.5" oX="29" oY="52" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_26_ 3" x="237" y="1118" w="152" h="135" pX="0.5" pY="0.5" oX="26" oY="61" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_27_ 3" x="157" y="647" w="156" h="120" pX="0.5" pY="0.5" oX="26" oY="76" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_28_ 3" x="814" y="888" w="153" h="134" pX="0.5" pY="0.5" oX="26" oY="61" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_29_ 3" x="1166" y="0" w="130" h="150" pX="0.5" pY="0.5" oX="36" oY="44" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_30_ 3" x="1143" y="638" w="150" h="137" pX="0.5" pY="0.5" oX="27" oY="58" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_31_ 3" x="621" y="0" w="158" h="120" pX="0.5" pY="0.5" oX="24" oY="76" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_32_ 3" x="1006" y="855" w="153" h="133" pX="0.5" pY="0.5" oX="26" oY="63" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_33_ 4" x="1842" y="1585" w="126" h="135" pX="0.5" pY="0.5" oX="42" oY="31" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_34_ 4" x="948" y="1942" w="134" h="133" pX="0.5" pY="0.5" oX="36" oY="33" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_35_ 4" x="1419" y="1648" w="138" h="134" pX="0.5" pY="0.5" oX="33" oY="42" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_36_ 4" x="261" y="1940" w="133" h="130" pX="0.5" pY="0.5" oX="36" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_37_ 4" x="1968" y="264" w="124" h="132" pX="0.5" pY="0.5" oX="44" oY="45" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_38_ 4" x="1961" y="788" w="132" h="130" pX="0.5" pY="0.5" oX="37" oY="50" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_39_ 4" x="1212" y="1654" w="138" h="130" pX="0.5" pY="0.5" oX="33" oY="48" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_40_ 4" x="1712" y="1291" w="136" h="134" pX="0.5" pY="0.5" oX="35" oY="34" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_41_ 5" x="1717" y="0" w="114" h="138" pX="0.5" pY="0.5" oX="54" oY="44" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_42_ 5" x="0" y="1942" w="128" h="134" pX="0.5" pY="0.5" oX="41" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_43_ 5" x="1831" y="0" w="137" h="130" pX="0.5" pY="0.5" oX="34" oY="48" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_44_ 5" x="686" y="1367" w="134" h="146" pX="0.5" pY="0.5" oX="37" oY="32" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_45_ 5" x="574" y="964" w="119" h="154" pX="0.5" pY="0.5" oX="49" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_46_ 5" x="1252" y="299" w="132" h="148" pX="0.5" pY="0.5" oX="38" oY="30" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_47_ 5" x="454" y="1669" w="138" h="134" pX="0.5" pY="0.5" oX="34" oY="44" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_48_ 5" x="1968" y="0" w="129" h="132" pX="0.5" pY="0.5" oX="40" oY="48" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_49_ 6" x="0" y="1682" w="118" h="139" pX="0.5" pY="0.5" oX="38" oY="43" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_50_ 6" x="1748" y="1942" w="132" h="133" pX="0.5" pY="0.5" oX="36" oY="49" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_51_ 6" x="1831" y="521" w="137" h="133" pX="0.5" pY="0.5" oX="36" oY="45" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_52_ 6" x="1302" y="1784" w="134" h="135" pX="0.5" pY="0.5" oX="34" oY="36" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_53_ 6" x="1968" y="1175" w="116" h="131" pX="0.5" pY="0.5" oX="37" oY="31" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_54_ 6" x="394" y="1940" w="131" h="133" pX="0.5" pY="0.5" oX="35" oY="35" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_55_ 6" x="1831" y="130" w="137" h="133" pX="0.5" pY="0.5" oX="35" oY="44" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_56_ 6" x="1963" y="1720" w="132" h="131" pX="0.5" pY="0.5" oX="37" oY="51" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_57_ 7" x="1245" y="484" w="123" h="148" pX="0.5" pY="0.5" oX="37" oY="31" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_58_ 7" x="1175" y="1367" w="133" h="146" pX="0.5" pY="0.5" oX="35" oY="33" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_59_ 7" x="1831" y="654" w="137" h="134" pX="0.5" pY="0.5" oX="36" oY="44" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_60_ 7" x="682" y="1748" w="135" h="133" pX="0.5" pY="0.5" oX="37" oY="48" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_61_ 7" x="1406" y="872" w="128" h="144" pX="0.5" pY="0.5" oX="38" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_62_ 7" x="1828" y="1728" w="135" h="134" pX="0.5" pY="0.5" oX="37" oY="48" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_63_ 7" x="1693" y="409" w="138" h="128" pX="0.5" pY="0.5" oX="36" oY="50" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Walk_64_ 7" x="1376" y="1216" w="135" h="145" pX="0.5" pY="0.5" oX="34" oY="34" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_01_ 0" x="303" y="2206" w="117" h="106" pX="0.5" pY="0.5" oX="46" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_02_ 0" x="483" y="436" w="158" h="80" pX="0.5" pY="0.5" oX="24" oY="67" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_03_ 0" x="186" y="2210" w="117" h="118" pX="0.5" pY="0.5" oX="42" oY="35" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_04_ 1" x="499" y="159" w="64" h="159" pX="0.5" pY="0.5" oX="81" oY="21" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_05_ 1" x="1102" y="487" w="64" h="151" pX="0.5" pY="0.5" oX="79" oY="32" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_06_ 1" x="110" y="0" w="60" h="165" pX="0.5" pY="0.5" oX="81" oY="16" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_07_ 2" x="119" y="327" w="74" h="160" pX="0.5" pY="0.5" oX="57" oY="21" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_08_ 2" x="1086" y="334" w="70" h="153" pX="0.5" pY="0.5" oX="59" oY="33" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_09_ 2" x="711" y="278" w="66" h="156" pX="0.5" pY="0.5" oX="61" oY="25" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_10_ 3" x="1880" y="2074" w="112" h="129" pX="0.5" pY="0.5" oX="47" oY="45" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_11_ 3" x="469" y="747" w="156" h="100" pX="0.5" pY="0.5" oX="25" oY="72" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_12_ 3" x="2097" y="0" w="126" h="123" pX="0.5" pY="0.5" oX="43" oY="47" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_13_ 4" x="1847" y="1030" w="96" h="136" pX="0.5" pY="0.5" oX="55" oY="26" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_14_ 4" x="1074" y="1655" w="138" h="136" pX="0.5" pY="0.5" oX="34" oY="38" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_15_ 4" x="286" y="1527" w="93" h="143" pX="0.5" pY="0.5" oX="50" oY="34" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_16_ 5" x="589" y="1513" w="101" h="142" pX="0.5" pY="0.5" oX="52" oY="35" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_17_ 5" x="1572" y="1471" w="139" h="121" pX="0.5" pY="0.5" oX="34" oY="55" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_18_ 5" x="832" y="1513" w="103" h="142" pX="0.5" pY="0.5" oX="49" oY="22" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_19_ 6" x="1848" y="1166" w="101" h="136" pX="0.5" pY="0.5" oX="58" oY="39" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_20_ 6" x="1572" y="1592" w="138" h="134" pX="0.5" pY="0.5" oX="35" oY="46" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_21_ 6" x="1537" y="145" w="103" h="141" pX="0.5" pY="0.5" oX="50" oY="24" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_22_ 7" x="1364" y="728" w="96" h="144" pX="0.5" pY="0.5" oX="51" oY="23" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_23_ 7" x="1831" y="388" w="137" h="133" pX="0.5" pY="0.5" oX="34" oY="40" oW="200" oH="200"/>
+  <sprite n="Dragonfly_Woozy_24_ 7" x="1572" y="816" w="94" h="140" pX="0.5" pY="0.5" oX="67" oY="36" oW="200" oH="200"/>
+</TextureAtlas>

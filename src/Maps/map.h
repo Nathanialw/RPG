@@ -122,7 +122,9 @@ namespace Maps {
 
                         if (!Create_Entities::Polygon_Building(World::zone, x, y, name, entity_class, texture, aabb, pointVecs, line))
                         {
-                                                        std::cout << texture << std::endl;
+                            if (texture == "assets/sprites/units/2nd_cast_classes/races/skeletons/male/Male_Skeleton.png") {
+                                std::cout << texture << std::endl;
+                            }
                             Create_Entities::Create_Entity(World::zone, x, y, name, entity_class, is_random, texture, player);
                         }
                     };

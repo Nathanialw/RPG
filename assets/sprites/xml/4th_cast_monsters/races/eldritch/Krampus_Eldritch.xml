@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Krampus_Eldritch.png" width="3670" height="3674" scale="1" format="RGBA8888">
+  <sprite n="Krampus_Eldritch_Attack 1_01_ 0" x="2760" y="1385" w="126" h="195" pX="0.5" pY="0.5" oX="97" oY="44" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_02_ 0" x="1819" y="860" w="157" h="215" pX="0.5" pY="0.5" oX="72" oY="20" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_03_ 0" x="3201" y="3063" w="171" h="183" pX="0.5" pY="0.5" oX="62" oY="114" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_04_ 1" x="2760" y="1189" w="158" h="196" pX="0.5" pY="0.5" oX="74" oY="46" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_05_ 1" x="495" y="1462" w="177" h="221" pX="0.5" pY="0.5" oX="105" oY="21" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_06_ 1" x="3087" y="2133" w="177" h="191" pX="0.5" pY="0.5" oX="16" oY="50" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_07_ 2" x="2565" y="1018" w="157" h="201" pX="0.5" pY="0.5" oX="88" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_08_ 2" x="0" y="2732" w="168" h="200" pX="0.5" pY="0.5" oX="35" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_09_ 2" x="3109" y="733" w="166" h="191" pX="0.5" pY="0.5" oX="111" oY="59" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_10_ 3" x="1398" y="0" w="122" h="223" pX="0.5" pY="0.5" oX="90" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_11_ 3" x="506" y="497" w="143" h="242" pX="0.5" pY="0.5" oX="81" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_12_ 3" x="2097" y="847" w="172" h="210" pX="0.5" pY="0.5" oX="77" oY="22" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_13_ 4" x="2882" y="787" w="140" h="195" pX="0.5" pY="0.5" oX="96" oY="44" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_14_ 4" x="1820" y="215" w="149" h="215" pX="0.5" pY="0.5" oX="110" oY="24" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_15_ 4" x="3220" y="2880" w="171" h="183" pX="0.5" pY="0.5" oX="31" oY="81" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_16_ 5" x="3109" y="924" w="138" h="191" pX="0.5" pY="0.5" oX="76" oY="58" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_17_ 5" x="423" y="1218" w="146" h="224" pX="0.5" pY="0.5" oX="101" oY="35" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_18_ 5" x="1807" y="430" w="165" h="215" pX="0.5" pY="0.5" oX="44" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_19_ 6" x="1993" y="3120" w="153" h="187" pX="0.5" pY="0.5" oX="97" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_20_ 6" x="125" y="3126" w="151" h="190" pX="0.5" pY="0.5" oX="77" oY="24" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_21_ 6" x="2688" y="3415" w="169" h="173" pX="0.5" pY="0.5" oX="113" oY="106" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_22_ 7" x="1078" y="919" w="137" h="225" pX="0.5" pY="0.5" oX="100" oY="25" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_23_ 7" x="0" y="774" w="150" h="239" pX="0.5" pY="0.5" oX="76" oY="20" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 1_24_ 7" x="2287" y="2730" w="158" h="197" pX="0.5" pY="0.5" oX="125" oY="16" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_01_ 0" x="3073" y="2895" w="128" h="190" pX="0.5" pY="0.5" oX="94" oY="55" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_02_ 0" x="2610" y="2273" w="133" h="200" pX="0.5" pY="0.5" oX="94" oY="52" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_03_ 0" x="3392" y="1467" w="140" h="168" pX="0.5" pY="0.5" oX="77" oY="122" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_04_ 1" x="1227" y="3309" w="157" h="180" pX="0.5" pY="0.5" oX="65" oY="62" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_05_ 1" x="1114" y="3490" w="171" h="162" pX="0.5" pY="0.5" oX="65" oY="80" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_06_ 1" x="2925" y="184" w="196" h="166" pX="0.5" pY="0.5" oX="16" oY="76" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_07_ 2" x="799" y="2927" w="158" h="193" pX="0.5" pY="0.5" oX="94" oY="62" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_08_ 2" x="2531" y="3252" w="157" h="179" pX="0.5" pY="0.5" oX="75" oY="75" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_09_ 2" x="2925" y="0" w="196" h="184" pX="0.5" pY="0.5" oX="89" oY="71" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_10_ 3" x="1198" y="1899" w="118" h="213" pX="0.5" pY="0.5" oX="89" oY="37" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_11_ 3" x="3275" y="914" w="127" h="185" pX="0.5" pY="0.5" oX="82" oY="67" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_12_ 3" x="1493" y="1897" w="138" h="212" pX="0.5" pY="0.5" oX="93" oY="36" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_13_ 4" x="3403" y="2200" w="131" h="174" pX="0.5" pY="0.5" oX="94" oY="67" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_14_ 4" x="3113" y="1369" w="145" h="191" pX="0.5" pY="0.5" oX="84" oY="54" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_15_ 4" x="1962" y="3307" w="163" h="178" pX="0.5" pY="0.5" oX="33" oY="98" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_16_ 5" x="3379" y="1835" w="155" h="176" pX="0.5" pY="0.5" oX="66" oY="63" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_17_ 5" x="475" y="3498" w="163" h="174" pX="0.5" pY="0.5" oX="69" oY="67" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_18_ 5" x="2370" y="2927" w="189" h="192" pX="0.5" pY="0.5" oX="33" oY="46" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_19_ 6" x="0" y="3499" w="169" h="175" pX="0.5" pY="0.5" oX="89" oY="53" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_20_ 6" x="1185" y="2535" w="164" h="158" pX="0.5" pY="0.5" oX="88" oY="74" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_21_ 6" x="2722" y="1010" w="197" h="179" pX="0.5" pY="0.5" oX="89" oY="95" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_22_ 7" x="888" y="1683" w="129" h="216" pX="0.5" pY="0.5" oX="109" oY="40" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_23_ 7" x="2759" y="592" w="137" h="195" pX="0.5" pY="0.5" oX="100" oY="61" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Attack 2_24_ 7" x="828" y="2120" w="147" h="208" pX="0.5" pY="0.5" oX="127" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_01_ 0" x="3398" y="2695" w="135" h="170" pX="0.5" pY="0.5" oX="96" oY="91" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_02_ 0" x="3264" y="1651" w="136" h="184" pX="0.5" pY="0.5" oX="95" oY="79" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_03_ 0" x="3353" y="3423" w="152" h="159" pX="0.5" pY="0.5" oX="79" oY="90" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_04_ 1" x="645" y="3310" w="159" h="181" pX="0.5" pY="0.5" oX="58" oY="87" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_05_ 1" x="2701" y="3049" w="169" h="187" pX="0.5" pY="0.5" oX="50" oY="81" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_06_ 1" x="420" y="3121" w="145" h="189" pX="0.5" pY="0.5" oX="74" oY="80" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_07_ 2" x="3121" y="192" w="160" h="149" pX="0.5" pY="0.5" oX="99" oY="99" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_08_ 2" x="847" y="2535" w="171" h="159" pX="0.5" pY="0.5" oX="98" oY="89" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_09_ 2" x="2514" y="3431" w="148" h="162" pX="0.5" pY="0.5" oX="97" oY="89" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_10_ 3" x="1384" y="3309" w="141" h="180" pX="0.5" pY="0.5" oX="70" oY="70" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_11_ 3" x="498" y="3310" w="147" h="182" pX="0.5" pY="0.5" oX="70" oY="68" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_12_ 3" x="1905" y="3486" w="158" h="166" pX="0.5" pY="0.5" oX="70" oY="84" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_13_ 4" x="3401" y="2537" w="158" h="153" pX="0.5" pY="0.5" oX="76" oY="97" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_14_ 4" x="326" y="3316" w="172" h="182" pX="0.5" pY="0.5" oX="62" oY="67" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_15_ 4" x="2870" y="3190" w="180" h="168" pX="0.5" pY="0.5" oX="54" oY="79" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_16_ 5" x="1851" y="3120" w="142" h="187" pX="0.5" pY="0.5" oX="64" oY="85" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_17_ 5" x="0" y="2121" w="171" h="209" pX="0.5" pY="0.5" oX="66" oY="63" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_18_ 5" x="2882" y="1857" w="155" h="196" pX="0.5" pY="0.5" oX="73" oY="76" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_19_ 6" x="3404" y="2011" w="152" h="147" pX="0.5" pY="0.5" oX="104" oY="104" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_20_ 6" x="2857" y="3524" w="171" h="150" pX="0.5" pY="0.5" oX="84" oY="98" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_21_ 6" x="3050" y="3271" w="153" h="177" pX="0.5" pY="0.5" oX="93" oY="85" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_22_ 7" x="1798" y="3307" w="164" h="179" pX="0.5" pY="0.5" oX="77" oY="73" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_23_ 7" x="1670" y="3120" w="181" h="187" pX="0.5" pY="0.5" oX="77" oY="65" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Behavior_24_ 7" x="2877" y="3022" w="188" h="168" pX="0.5" pY="0.5" oX="77" oY="84" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_01_ 0" x="2614" y="1869" w="123" h="199" pX="0.5" pY="0.5" oX="101" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_02_ 0" x="0" y="1243" w="130" h="225" pX="0.5" pY="0.5" oX="100" oY="26" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_03_ 0" x="3528" y="3055" w="142" h="156" pX="0.5" pY="0.5" oX="77" oY="80" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_04_ 1" x="1244" y="2927" w="158" h="193" pX="0.5" pY="0.5" oX="65" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_05_ 1" x="491" y="2695" w="164" h="199" pX="0.5" pY="0.5" oX="57" oY="43" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_06_ 1" x="2611" y="410" w="148" h="201" pX="0.5" pY="0.5" oX="91" oY="41" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_07_ 2" x="1619" y="2695" w="159" h="199" pX="0.5" pY="0.5" oX="100" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_08_ 2" x="2746" y="1660" w="170" h="197" pX="0.5" pY="0.5" oX="95" oY="44" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_09_ 2" x="2896" y="546" w="156" h="195" pX="0.5" pY="0.5" oX="72" oY="48" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_10_ 3" x="2263" y="1712" w="119" h="207" pX="0.5" pY="0.5" oX="89" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_11_ 3" x="1977" y="0" w="131" h="212" pX="0.5" pY="0.5" oX="82" oY="40" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_12_ 3" x="284" y="1013" w="139" h="229" pX="0.5" pY="0.5" oX="93" oY="50" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_13_ 4" x="3275" y="542" w="132" h="186" pX="0.5" pY="0.5" oX="83" oY="53" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_14_ 4" x="1263" y="1462" w="139" h="220" pX="0.5" pY="0.5" oX="64" oY="23" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_15_ 4" x="1525" y="3307" w="136" h="180" pX="0.5" pY="0.5" oX="69" oY="59" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_16_ 5" x="3087" y="1942" w="139" h="191" pX="0.5" pY="0.5" oX="66" oY="50" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_17_ 5" x="158" y="2330" w="162" h="206" pX="0.5" pY="0.5" oX="60" oY="35" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_18_ 5" x="676" y="2120" w="152" h="208" pX="0.5" pY="0.5" oX="82" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_19_ 6" x="2918" y="2248" w="148" h="194" pX="0.5" pY="0.5" oX="111" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_20_ 6" x="3230" y="2510" w="171" h="185" pX="0.5" pY="0.5" oX="92" oY="52" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_21_ 6" x="2125" y="3307" w="167" h="178" pX="0.5" pY="0.5" oX="77" oY="70" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_22_ 7" x="1676" y="440" w="131" h="215" pX="0.5" pY="0.5" oX="109" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_23_ 7" x="1520" y="1118" w="142" h="219" pX="0.5" pY="0.5" oX="117" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Block_24_ 7" x="649" y="497" w="143" h="237" pX="0.5" pY="0.5" oX="108" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_01_ 0" x="2146" y="3120" w="121" h="187" pX="0.5" pY="0.5" oX="100" oY="65" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_02_ 0" x="1955" y="1501" w="129" h="211" pX="0.5" pY="0.5" oX="100" oY="45" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_03_ 0" x="2292" y="3306" w="142" h="177" pX="0.5" pY="0.5" oX="77" oY="67" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_04_ 1" x="1433" y="3489" w="165" h="171" pX="0.5" pY="0.5" oX="59" oY="71" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_05_ 1" x="3343" y="3246" w="171" h="177" pX="0.5" pY="0.5" oX="53" oY="65" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_06_ 1" x="1074" y="3309" w="153" h="181" pX="0.5" pY="0.5" oX="72" oY="61" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_07_ 2" x="3282" y="366" w="169" h="176" pX="0.5" pY="0.5" oX="93" oY="72" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_08_ 2" x="3230" y="2324" w="173" h="186" pX="0.5" pY="0.5" oX="93" oY="62" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_09_ 2" x="2025" y="2927" w="157" h="193" pX="0.5" pY="0.5" oX="93" oY="55" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_10_ 3" x="202" y="2536" w="117" h="188" pX="0.5" pY="0.5" oX="89" oY="57" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_11_ 3" x="1115" y="2927" w="129" h="193" pX="0.5" pY="0.5" oX="82" oY="52" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_12_ 3" x="3203" y="3246" w="140" h="177" pX="0.5" pY="0.5" oX="93" oY="68" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_13_ 4" x="3407" y="714" w="127" h="169" pX="0.5" pY="0.5" oX="82" oY="79" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_14_ 4" x="2477" y="1256" w="139" h="203" pX="0.5" pY="0.5" oX="65" oY="44" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_15_ 4" x="565" y="3121" w="148" h="189" pX="0.5" pY="0.5" oX="62" oY="54" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_16_ 5" x="3391" y="2880" w="143" h="175" pX="0.5" pY="0.5" oX="63" oY="67" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_17_ 5" x="2919" y="1177" w="163" h="195" pX="0.5" pY="0.5" oX="61" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_18_ 5" x="0" y="3316" w="149" h="183" pX="0.5" pY="0.5" oX="72" oY="59" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_19_ 6" x="638" y="3492" w="151" h="173" pX="0.5" pY="0.5" oX="108" oY="68" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_20_ 6" x="1598" y="3487" w="163" h="169" pX="0.5" pY="0.5" oX="99" oY="73" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_21_ 6" x="713" y="3121" w="146" h="189" pX="0.5" pY="0.5" oX="103" oY="60" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_22_ 7" x="0" y="3126" w="125" h="190" pX="0.5" pY="0.5" oX="103" oY="60" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_23_ 7" x="2617" y="0" w="143" h="201" pX="0.5" pY="0.5" oX="103" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Critical HP_24_ 7" x="3258" y="1283" w="146" h="184" pX="0.5" pY="0.5" oX="103" oY="66" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Dead_01_ 0" x="1661" y="3307" w="137" h="179" pX="0.5" pY="0.5" oX="75" oY="65" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Dead_02_ 1" x="1212" y="1356" w="223" h="106" pX="0.5" pY="0.5" oX="59" oY="132" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Dead_03_ 2" x="273" y="1467" w="222" h="119" pX="0.5" pY="0.5" oX="20" oY="119" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Dead_04_ 3" x="3534" y="0" w="136" h="159" pX="0.5" pY="0.5" oX="102" oY="122" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Dead_05_ 4" x="2918" y="1372" w="195" h="165" pX="0.5" pY="0.5" oX="46" oY="93" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Dead_06_ 5" x="320" y="2330" w="206" h="149" pX="0.5" pY="0.5" oX="68" oY="109" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Dead_07_ 6" x="1483" y="2330" w="205" h="163" pX="0.5" pY="0.5" oX="28" oY="99" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Dead_08_ 7" x="481" y="2535" w="194" h="150" pX="0.5" pY="0.5" oX="69" oY="113" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_01_ 0" x="2611" y="2671" w="123" h="198" pX="0.5" pY="0.5" oX="101" oY="50" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_02_ 0" x="1126" y="1462" w="137" h="221" pX="0.5" pY="0.5" oX="96" oY="16" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_03_ 0" x="568" y="1899" w="157" h="214" pX="0.5" pY="0.5" oX="79" oY="21" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_04_ 1" x="1551" y="2927" w="158" h="193" pX="0.5" pY="0.5" oX="65" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_05_ 1" x="1442" y="2695" w="177" h="199" pX="0.5" pY="0.5" oX="74" oY="45" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_06_ 1" x="2456" y="1466" w="154" h="203" pX="0.5" pY="0.5" oX="116" oY="39" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_07_ 2" x="1123" y="2695" w="159" h="199" pX="0.5" pY="0.5" oX="100" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_08_ 2" x="1316" y="1899" w="177" h="213" pX="0.5" pY="0.5" oX="71" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_09_ 2" x="1361" y="1132" w="159" h="223" pX="0.5" pY="0.5" oX="50" oY="27" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_10_ 3" x="2267" y="211" w="119" h="207" pX="0.5" pY="0.5" oX="89" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_11_ 3" x="1004" y="2330" w="135" h="205" pX="0.5" pY="0.5" oX="80" oY="41" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_12_ 3" x="1520" y="440" w="155" h="220" pX="0.5" pY="0.5" oX="81" oY="70" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_13_ 4" x="2399" y="3119" w="132" h="186" pX="0.5" pY="0.5" oX="94" oY="53" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_14_ 4" x="136" y="1467" w="137" h="222" pX="0.5" pY="0.5" oX="94" oY="19" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_15_ 4" x="1376" y="227" w="143" h="223" pX="0.5" pY="0.5" oX="122" oY="16" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_16_ 5" x="3087" y="1560" w="139" h="191" pX="0.5" pY="0.5" oX="66" oY="50" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_17_ 5" x="1807" y="645" w="162" h="215" pX="0.5" pY="0.5" oX="77" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_18_ 5" x="2737" y="1869" w="145" h="197" pX="0.5" pY="0.5" oX="109" oY="60" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_19_ 6" x="2916" y="1537" w="149" h="194" pX="0.5" pY="0.5" oX="110" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_20_ 6" x="2445" y="2677" w="162" h="197" pX="0.5" pY="0.5" oX="87" oY="36" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_21_ 6" x="2456" y="1871" w="158" h="202" pX="0.5" pY="0.5" oX="57" oY="12" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_22_ 7" x="1677" y="218" w="130" h="215" pX="0.5" pY="0.5" oX="99" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_23_ 7" x="1365" y="907" w="136" h="223" pX="0.5" pY="0.5" oX="94" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Evade_24_ 7" x="130" y="1243" w="142" h="224" pX="0.5" pY="0.5" oX="61" oY="63" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_01_ 0" x="2615" y="203" w="123" h="199" pX="0.5" pY="0.5" oX="101" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_02_ 0" x="2132" y="1057" w="133" h="210" pX="0.5" pY="0.5" oX="94" oY="18" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_03_ 0" x="1975" y="1075" w="157" h="211" pX="0.5" pY="0.5" oX="67" oY="17" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_04_ 1" x="957" y="2927" w="158" h="193" pX="0.5" pY="0.5" oX="65" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_05_ 1" x="672" y="1462" w="176" h="221" pX="0.5" pY="0.5" oX="94" oY="21" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_06_ 1" x="980" y="1462" w="146" h="221" pX="0.5" pY="0.5" oX="134" oY="21" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_07_ 2" x="964" y="2695" w="159" h="199" pX="0.5" pY="0.5" oX="100" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_08_ 2" x="1793" y="1718" w="179" h="213" pX="0.5" pY="0.5" oX="51" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_09_ 2" x="2341" y="1263" w="136" h="203" pX="0.5" pY="0.5" oX="41" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_10_ 3" x="2147" y="1922" w="119" h="207" pX="0.5" pY="0.5" oX="89" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_11_ 3" x="1344" y="454" w="136" h="223" pX="0.5" pY="0.5" oX="86" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_12_ 3" x="329" y="2695" w="162" h="199" pX="0.5" pY="0.5" oX="87" oY="72" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_13_ 4" x="2267" y="3120" w="132" h="186" pX="0.5" pY="0.5" oX="94" oY="53" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_14_ 4" x="289" y="1899" w="134" h="214" pX="0.5" pY="0.5" oX="105" oY="25" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_15_ 4" x="730" y="1683" w="158" h="216" pX="0.5" pY="0.5" oX="126" oY="23" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_16_ 5" x="3084" y="2324" w="139" h="191" pX="0.5" pY="0.5" oX="66" oY="50" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_17_ 5" x="1662" y="1118" w="155" h="218" pX="0.5" pY="0.5" oX="100" oY="23" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_18_ 5" x="635" y="2927" w="164" h="194" pX="0.5" pY="0.5" oX="105" oY="62" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_19_ 6" x="330" y="2927" w="148" h="194" pX="0.5" pY="0.5" oX="111" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_20_ 6" x="168" y="2732" w="161" h="200" pX="0.5" pY="0.5" oX="68" oY="28" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_21_ 6" x="1282" y="2695" w="160" h="199" pX="0.5" pY="0.5" oX="55" oY="18" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_22_ 7" x="1676" y="655" w="130" h="215" pX="0.5" pY="0.5" oX="99" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_23_ 7" x="962" y="0" w="132" h="232" pX="0.5" pY="0.5" oX="89" oY="24" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Get Hit_24_ 7" x="1123" y="2120" w="154" h="208" pX="0.5" pY="0.5" oX="41" oY="60" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_01_ 0" x="2616" y="1219" w="123" h="199" pX="0.5" pY="0.5" oX="101" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_02_ 0" x="149" y="1689" w="132" h="217" pX="0.5" pY="0.5" oX="99" oY="21" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_03_ 0" x="276" y="3126" w="144" h="190" pX="0.5" pY="0.5" oX="77" oY="40" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_04_ 1" x="1709" y="2927" w="158" h="193" pX="0.5" pY="0.5" oX="65" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_05_ 1" x="2743" y="2273" w="174" h="196" pX="0.5" pY="0.5" oX="56" oY="46" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_06_ 1" x="2738" y="811" w="144" h="197" pX="0.5" pY="0.5" oX="74" oY="45" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_07_ 2" x="655" y="2695" w="159" h="199" pX="0.5" pY="0.5" oX="111" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_08_ 2" x="2266" y="1919" w="173" h="206" pX="0.5" pY="0.5" oX="103" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_09_ 2" x="1972" y="427" w="150" h="210" pX="0.5" pY="0.5" oX="111" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_10_ 3" x="2222" y="1267" w="119" h="207" pX="0.5" pY="0.5" oX="89" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_11_ 3" x="1583" y="2120" w="131" h="208" pX="0.5" pY="0.5" oX="82" oY="31" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_12_ 3" x="2559" y="2874" w="142" h="192" pX="0.5" pY="0.5" oX="93" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_13_ 4" x="2559" y="3066" w="132" h="186" pX="0.5" pY="0.5" oX="94" oY="46" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_14_ 4" x="1819" y="1504" w="136" h="214" pX="0.5" pY="0.5" oX="80" oY="18" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_15_ 4" x="2414" y="1053" w="151" h="203" pX="0.5" pY="0.5" oX="74" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_16_ 5" x="3087" y="1751" w="139" h="191" pX="0.5" pY="0.5" oX="66" oY="50" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_17_ 5" x="1402" y="1681" w="167" h="216" pX="0.5" pY="0.5" oX="64" oY="25" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_18_ 5" x="2456" y="2073" w="154" h="202" pX="0.5" pY="0.5" oX="73" oY="39" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_19_ 6" x="2743" y="2469" w="148" h="194" pX="0.5" pY="0.5" oX="111" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_20_ 6" x="1146" y="3120" w="169" h="189" pX="0.5" pY="0.5" oX="93" oY="52" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_21_ 6" x="2610" y="1459" w="150" h="201" pX="0.5" pY="0.5" oX="100" oY="40" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_22_ 7" x="471" y="1683" w="130" h="216" pX="0.5" pY="0.5" oX="109" oY="26" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_23_ 7" x="1078" y="1144" w="134" h="223" pX="0.5" pY="0.5" oX="119" oY="19" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Idle_24_ 7" x="2611" y="2073" w="149" h="200" pX="0.5" pY="0.5" oX="112" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_01_ 0" x="3407" y="542" w="119" h="172" pX="0.5" pY="0.5" oX="100" oY="85" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_02_ 0" x="2611" y="2473" w="129" h="198" pX="0.5" pY="0.5" oX="100" oY="65" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_03_ 0" x="2373" y="3483" w="141" h="163" pX="0.5" pY="0.5" oX="78" oY="88" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_04_ 1" x="3028" y="3524" w="165" h="148" pX="0.5" pY="0.5" oX="51" oY="86" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_05_ 1" x="675" y="2535" w="172" h="153" pX="0.5" pY="0.5" oX="44" oY="81" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_06_ 1" x="3514" y="3240" w="153" h="157" pX="0.5" pY="0.5" oX="63" oY="77" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_07_ 2" x="1018" y="2535" w="167" h="157" pX="0.5" pY="0.5" oX="100" oY="83" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_08_ 2" x="2862" y="3358" w="173" h="166" pX="0.5" pY="0.5" oX="100" oY="75" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_09_ 2" x="959" y="3490" w="155" h="173" pX="0.5" pY="0.5" oX="100" oY="70" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_10_ 3" x="3407" y="883" w="116" h="168" pX="0.5" pY="0.5" oX="88" oY="67" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_11_ 3" x="3407" y="0" w="127" h="177" pX="0.5" pY="0.5" oX="79" oY="58" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_12_ 3" x="3532" y="1260" w="138" h="154" pX="0.5" pY="0.5" oX="90" oY="81" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_13_ 4" x="1349" y="2535" w="126" h="156" pX="0.5" pY="0.5" oX="87" oY="98" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_14_ 4" x="3084" y="2705" w="136" h="190" pX="0.5" pY="0.5" oX="72" oY="64" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_15_ 4" x="169" y="3499" w="146" h="174" pX="0.5" pY="0.5" oX="66" oY="76" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_16_ 5" x="3505" y="3423" w="157" h="157" pX="0.5" pY="0.5" oX="54" oY="84" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_17_ 5" x="315" y="3499" w="160" h="174" pX="0.5" pY="0.5" oX="51" oY="67" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_18_ 5" x="2063" y="3485" w="147" h="164" pX="0.5" pY="0.5" oX="64" oY="77" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_19_ 6" x="3193" y="3448" w="160" h="159" pX="0.5" pY="0.5" oX="95" oY="84" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_20_ 6" x="2210" y="3485" w="163" h="157" pX="0.5" pY="0.5" oX="95" oY="88" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_21_ 6" x="1285" y="3489" w="148" h="171" pX="0.5" pY="0.5" oX="95" oY="81" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_22_ 7" x="3407" y="177" w="122" h="173" pX="0.5" pY="0.5" oX="119" oY="62" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_23_ 7" x="935" y="3309" w="139" h="181" pX="0.5" pY="0.5" oX="119" oY="54" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Rest_24_ 7" x="1761" y="3486" w="144" h="166" pX="0.5" pY="0.5" oX="119" oY="69" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_01_ 0" x="2097" y="1286" w="125" h="210" pX="0.5" pY="0.5" oX="98" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_02_ 0" x="848" y="1462" w="132" h="221" pX="0.5" pY="0.5" oX="100" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_03_ 0" x="2738" y="201" w="148" h="196" pX="0.5" pY="0.5" oX="76" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_04_ 0" x="933" y="697" w="145" h="231" pX="0.5" pY="0.5" oX="78" oY="45" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_05_ 0" x="1277" y="2120" w="138" h="208" pX="0.5" pY="0.5" oX="86" oY="43" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_06_ 0" x="0" y="2932" w="145" h="194" pX="0.5" pY="0.5" oX="77" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_07_ 0" x="1688" y="2330" w="147" h="204" pX="0.5" pY="0.5" oX="77" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_08_ 0" x="662" y="0" w="132" h="240" pX="0.5" pY="0.5" oX="101" oY="23" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_09_ 1" x="1776" y="1931" w="210" h="189" pX="0.5" pY="0.5" oX="47" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_10_ 1" x="2891" y="2636" w="193" h="194" pX="0.5" pY="0.5" oX="39" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_11_ 1" x="845" y="2330" w="159" h="205" pX="0.5" pY="0.5" oX="51" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_12_ 1" x="2918" y="2053" w="169" h="195" pX="0.5" pY="0.5" oX="51" oY="39" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_13_ 1" x="149" y="3316" w="177" h="183" pX="0.5" pY="0.5" oX="73" oY="45" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_14_ 1" x="3082" y="1177" w="165" h="192" pX="0.5" pY="0.5" oX="62" oY="40" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_15_ 1" x="2760" y="2066" w="158" h="196" pX="0.5" pY="0.5" oX="47" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_16_ 1" x="2888" y="2830" w="185" h="192" pX="0.5" pY="0.5" oX="46" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_17_ 2" x="1577" y="1554" w="216" h="183" pX="0.5" pY="0.5" oX="49" oY="39" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_18_ 2" x="2006" y="2129" w="203" h="200" pX="0.5" pY="0.5" oX="70" oY="33" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_19_ 2" x="1991" y="2330" w="173" h="204" pX="0.5" pY="0.5" oX="92" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_20_ 2" x="1139" y="2330" w="171" h="205" pX="0.5" pY="0.5" oX="81" oY="28" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_21_ 2" x="145" y="2932" w="185" h="194" pX="0.5" pY="0.5" oX="55" oY="36" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_22_ 2" x="2271" y="0" w="177" h="207" pX="0.5" pY="0.5" oX="76" oY="27" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_23_ 2" x="503" y="2120" w="173" h="208" pX="0.5" pY="0.5" oX="95" oY="27" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_24_ 2" x="1483" y="2493" w="195" h="202" pX="0.5" pY="0.5" oX="72" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_25_ 3" x="0" y="0" w="120" h="267" pX="0.5" pY="0.5" oX="91" oY="8" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_26_ 3" x="120" y="0" w="133" h="258" pX="0.5" pY="0.5" oX="82" oY="4" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_27_ 3" x="150" y="774" w="146" h="239" pX="0.5" pY="0.5" oX="92" oY="12" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_28_ 3" x="794" y="712" w="139" h="232" pX="0.5" pY="0.5" oX="95" oY="28" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_29_ 3" x="794" y="233" w="136" h="233" pX="0.5" pY="0.5" oX="92" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_30_ 3" x="735" y="971" w="140" h="228" pX="0.5" pY="0.5" oX="95" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_31_ 3" x="649" y="734" w="145" h="237" pX="0.5" pY="0.5" oX="92" oY="14" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_32_ 3" x="253" y="0" w="132" h="257" pX="0.5" pY="0.5" oX="82" oY="4" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_33_ 4" x="814" y="2695" w="150" h="199" pX="0.5" pY="0.5" oX="71" oY="52" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_34_ 4" x="975" y="2120" w="148" h="208" pX="0.5" pY="0.5" oX="59" oY="33" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_35_ 4" x="0" y="2330" w="158" h="206" pX="0.5" pY="0.5" oX="48" oY="33" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_36_ 4" x="0" y="1690" w="149" h="217" pX="0.5" pY="0.5" oX="68" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_37_ 4" x="3121" y="0" w="162" h="192" pX="0.5" pY="0.5" oX="79" oY="48" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_38_ 4" x="2287" y="2533" w="157" h="197" pX="0.5" pY="0.5" oX="66" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_39_ 4" x="1820" y="0" w="157" h="215" pX="0.5" pY="0.5" oX="46" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_40_ 4" x="1200" y="456" w="144" h="226" pX="0.5" pY="0.5" oX="63" oY="28" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_41_ 5" x="281" y="1683" w="190" h="216" pX="0.5" pY="0.5" oX="53" oY="33" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_42_ 5" x="296" y="754" w="174" h="236" pX="0.5" pY="0.5" oX="53" oY="4" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_43_ 5" x="294" y="513" w="156" h="241" pX="0.5" pY="0.5" oX="61" oY="11" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_44_ 5" x="585" y="975" w="150" h="228" pX="0.5" pY="0.5" oX="74" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_45_ 5" x="1078" y="692" w="138" h="227" pX="0.5" pY="0.5" oX="83" oY="37" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_46_ 5" x="1225" y="228" w="151" h="226" pX="0.5" pY="0.5" oX="72" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_47_ 5" x="1520" y="0" w="157" h="220" pX="0.5" pY="0.5" oX="59" oY="12" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_48_ 5" x="470" y="739" w="168" h="236" pX="0.5" pY="0.5" oX="57" oY="5" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_49_ 6" x="0" y="2536" w="202" h="196" pX="0.5" pY="0.5" oX="61" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_50_ 6" x="1482" y="3120" w="188" h="187" pX="0.5" pY="0.5" oX="75" oY="52" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_51_ 6" x="2264" y="422" w="162" h="207" pX="0.5" pY="0.5" oX="92" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_52_ 6" x="0" y="1013" w="149" h="230" pX="0.5" pY="0.5" oX="92" oY="30" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_53_ 6" x="1969" y="215" w="138" h="212" pX="0.5" pY="0.5" oX="91" oY="33" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_54_ 6" x="2265" y="1057" w="149" h="206" pX="0.5" pY="0.5" oX="93" oY="31" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_55_ 6" x="344" y="2120" w="159" h="209" pX="0.5" pY="0.5" oX="95" oY="39" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_56_ 6" x="2424" y="1669" w="183" h="202" pX="0.5" pY="0.5" oX="77" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_57_ 7" x="0" y="523" w="161" h="251" pX="0.5" pY="0.5" oX="83" oY="13" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_58_ 7" x="0" y="267" w="153" h="256" pX="0.5" pY="0.5" oX="102" oY="4" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_59_ 7" x="1228" y="0" w="170" h="227" pX="0.5" pY="0.5" oX="97" oY="22" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_60_ 7" x="2270" y="629" w="162" h="207" pX="0.5" pY="0.5" oX="85" oY="31" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_61_ 7" x="2097" y="637" w="173" h="210" pX="0.5" pY="0.5" oX="63" oY="36" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_62_ 7" x="2448" y="0" w="169" h="203" pX="0.5" pY="0.5" oX="80" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_63_ 7" x="1216" y="682" w="157" h="225" pX="0.5" pY="0.5" oX="113" oY="26" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Run_64_ 7" x="153" y="258" w="149" h="255" pX="0.5" pY="0.5" oX="101" oY="3" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_01_ 0" x="2615" y="811" w="123" h="199" pX="0.5" pY="0.5" oX="101" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_02_ 0" x="2132" y="422" w="132" h="210" pX="0.5" pY="0.5" oX="100" oY="20" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_03_ 0" x="2456" y="2476" w="155" h="201" pX="0.5" pY="0.5" oX="74" oY="27" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_04_ 1" x="1867" y="2927" w="158" h="193" pX="0.5" pY="0.5" oX="65" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_05_ 1" x="2266" y="2125" w="180" h="205" pX="0.5" pY="0.5" oX="68" oY="37" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_06_ 1" x="1059" y="465" w="141" h="227" pX="0.5" pY="0.5" oX="111" oY="15" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_07_ 2" x="1778" y="2677" w="159" h="199" pX="0.5" pY="0.5" oX="100" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_08_ 2" x="2084" y="1501" w="182" h="211" pX="0.5" pY="0.5" oX="74" oY="37" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_09_ 2" x="1677" y="0" w="143" h="218" pX="0.5" pY="0.5" oX="72" oY="30" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_10_ 3" x="1976" y="856" w="119" h="207" pX="0.5" pY="0.5" oX="89" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_11_ 3" x="1819" y="1290" w="133" h="214" pX="0.5" pY="0.5" oX="82" oY="25" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_12_ 3" x="2456" y="2275" w="154" h="201" pX="0.5" pY="0.5" oX="87" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_13_ 4" x="3275" y="728" w="132" h="186" pX="0.5" pY="0.5" oX="94" oY="53" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_14_ 4" x="0" y="1907" w="131" h="214" pX="0.5" pY="0.5" oX="93" oY="25" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_15_ 4" x="1193" y="1683" w="174" h="216" pX="0.5" pY="0.5" oX="91" oY="23" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_16_ 5" x="3109" y="542" w="139" h="191" pX="0.5" pY="0.5" oX="66" oY="50" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_17_ 5" x="855" y="1199" w="168" h="223" pX="0.5" pY="0.5" oX="76" oY="18" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_18_ 5" x="171" y="2121" w="173" h="209" pX="0.5" pY="0.5" oX="82" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_19_ 6" x="2740" y="2663" w="148" h="194" pX="0.5" pY="0.5" oX="111" oY="47" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_20_ 6" x="2439" y="613" w="172" h="203" pX="0.5" pY="0.5" oX="81" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_21_ 6" x="1501" y="899" w="175" h="219" pX="0.5" pY="0.5" oX="69" oY="22" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_22_ 7" x="1676" y="870" w="130" h="215" pX="0.5" pY="0.5" oX="99" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_23_ 7" x="929" y="466" w="130" h="231" pX="0.5" pY="0.5" oX="101" oY="18" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Use Skill_24_ 7" x="1402" y="1462" w="175" h="219" pX="0.5" pY="0.5" oX="60" oY="30" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_01_ 0" x="526" y="2330" w="125" h="205" pX="0.5" pY="0.5" oX="99" oY="37" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_02_ 0" x="601" y="1683" w="129" h="216" pX="0.5" pY="0.5" oX="100" oY="27" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_03_ 0" x="2269" y="847" w="149" h="206" pX="0.5" pY="0.5" oX="74" oY="31" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_04_ 0" x="1631" y="1737" w="145" h="212" pX="0.5" pY="0.5" oX="76" oY="40" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_05_ 0" x="2607" y="1669" w="139" h="200" pX="0.5" pY="0.5" oX="83" oY="49" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_06_ 0" x="2919" y="350" w="146" h="196" pX="0.5" pY="0.5" oX="75" oY="40" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_07_ 0" x="2310" y="2330" w="146" h="203" pX="0.5" pY="0.5" oX="77" oY="36" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_08_ 0" x="1094" y="228" w="131" h="228" pX="0.5" pY="0.5" oX="102" oY="26" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_09_ 1" x="2182" y="2927" w="188" h="193" pX="0.5" pY="0.5" oX="54" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_10_ 1" x="1415" y="2120" w="168" h="208" pX="0.5" pY="0.5" oX="52" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_11_ 1" x="423" y="1899" w="145" h="214" pX="0.5" pY="0.5" oX="61" oY="24" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_12_ 1" x="2164" y="2330" w="146" h="203" pX="0.5" pY="0.5" oX="73" oY="33" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_13_ 1" x="3113" y="350" w="169" h="192" pX="0.5" pY="0.5" oX="79" oY="39" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_14_ 1" x="2135" y="2677" w="152" h="198" pX="0.5" pY="0.5" oX="68" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_15_ 1" x="1863" y="2120" w="143" h="207" pX="0.5" pY="0.5" oX="59" oY="25" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_16_ 1" x="2432" y="207" w="183" h="203" pX="0.5" pY="0.5" oX="47" oY="33" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_17_ 2" x="1937" y="2677" w="198" h="198" pX="0.5" pY="0.5" oX="60" oY="34" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_18_ 2" x="1310" y="2330" w="173" h="205" pX="0.5" pY="0.5" oX="87" oY="26" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_19_ 2" x="894" y="1899" w="149" h="213" pX="0.5" pY="0.5" oX="106" oY="20" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_20_ 2" x="2108" y="211" w="159" h="211" pX="0.5" pY="0.5" oX="82" oY="23" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_21_ 2" x="2432" y="410" w="179" h="203" pX="0.5" pY="0.5" oX="55" oY="31" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_22_ 2" x="2108" y="0" w="163" h="211" pX="0.5" pY="0.5" oX="83" oY="24" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_23_ 2" x="1972" y="1712" w="156" h="210" pX="0.5" pY="0.5" oX="101" oY="23" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_24_ 2" x="651" y="2330" w="194" h="205" pX="0.5" pY="0.5" oX="71" oY="29" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_25_ 3" x="385" y="254" w="121" h="254" pX="0.5" pY="0.5" oX="90" oY="16" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_26_ 3" x="662" y="240" w="132" h="239" pX="0.5" pY="0.5" oX="83" oY="15" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_27_ 3" x="1215" y="1132" w="146" h="224" pX="0.5" pY="0.5" oX="93" oY="20" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_28_ 3" x="715" y="1203" w="140" h="224" pX="0.5" pY="0.5" oX="97" oY="37" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_29_ 3" x="792" y="479" w="137" h="233" pX="0.5" pY="0.5" oX="94" oY="40" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_30_ 3" x="1373" y="677" w="142" h="222" pX="0.5" pY="0.5" oX="96" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_31_ 3" x="933" y="928" w="145" h="229" pX="0.5" pY="0.5" oX="93" oY="18" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_32_ 3" x="385" y="0" w="131" h="254" pX="0.5" pY="0.5" oX="82" oY="15" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_33_ 4" x="2759" y="397" w="131" h="195" pX="0.5" pY="0.5" oX="79" oY="46" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_34_ 4" x="0" y="1468" w="136" h="222" pX="0.5" pY="0.5" oX="67" oY="14" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_35_ 4" x="1043" y="1899" w="155" h="213" pX="0.5" pY="0.5" oX="56" oY="18" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_36_ 4" x="2006" y="1922" w="141" h="207" pX="0.5" pY="0.5" oX="73" oY="27" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_37_ 4" x="478" y="2927" w="157" h="194" pX="0.5" pY="0.5" oX="78" oY="40" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_38_ 4" x="2611" y="611" w="148" h="200" pX="0.5" pY="0.5" oX="69" oY="28" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_39_ 4" x="1662" y="1336" w="157" h="218" pX="0.5" pY="0.5" oX="52" oY="21" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_40_ 4" x="149" y="1013" w="135" h="230" pX="0.5" pY="0.5" oX="65" oY="20" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_41_ 5" x="1017" y="1683" w="176" h="216" pX="0.5" pY="0.5" oX="56" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_42_ 5" x="423" y="990" w="162" h="228" pX="0.5" pY="0.5" oX="61" oY="8" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_43_ 5" x="933" y="233" w="157" h="232" pX="0.5" pY="0.5" oX="70" oY="14" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_44_ 5" x="1216" y="907" w="149" h="225" pX="0.5" pY="0.5" oX="82" oY="32" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_45_ 5" x="1094" y="0" w="134" h="228" pX="0.5" pY="0.5" oX="88" oY="38" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_46_ 5" x="272" y="1243" w="151" h="224" pX="0.5" pY="0.5" oX="78" oY="28" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_47_ 5" x="1515" y="660" w="159" h="220" pX="0.5" pY="0.5" oX="66" oY="13" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_48_ 5" x="794" y="0" w="168" h="233" pX="0.5" pY="0.5" oX="53" oY="13" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_49_ 6" x="2919" y="982" w="190" h="195" pX="0.5" pY="0.5" oX="69" oY="37" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_50_ 6" x="2760" y="0" w="165" h="197" pX="0.5" pY="0.5" oX="90" oY="35" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_51_ 6" x="1819" y="1075" w="156" h="215" pX="0.5" pY="0.5" oX="89" oY="26" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_52_ 6" x="569" y="1218" w="146" h="224" pX="0.5" pY="0.5" oX="87" oY="25" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_53_ 6" x="2128" y="1712" w="135" h="210" pX="0.5" pY="0.5" oX="91" oY="36" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_54_ 6" x="1714" y="2120" w="149" h="207" pX="0.5" pY="0.5" oX="88" oY="25" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_55_ 6" x="131" y="1907" w="158" h="214" pX="0.5" pY="0.5" oX="90" oY="28" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_56_ 6" x="2432" y="816" w="183" h="202" pX="0.5" pY="0.5" oX="80" oY="37" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_57_ 7" x="516" y="251" w="140" h="246" pX="0.5" pY="0.5" oX="96" oY="18" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_58_ 7" x="161" y="513" w="133" h="243" pX="0.5" pY="0.5" oX="113" oY="8" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_59_ 7" x="2266" y="1474" w="158" h="206" pX="0.5" pY="0.5" oX="102" oY="30" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_60_ 7" x="1835" y="2330" w="156" h="204" pX="0.5" pY="0.5" oX="87" oY="36" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_61_ 7" x="725" y="1899" w="169" h="214" pX="0.5" pY="0.5" oX="68" oY="36" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_62_ 7" x="320" y="2479" w="161" h="201" pX="0.5" pY="0.5" oX="86" oY="35" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_63_ 7" x="1520" y="220" w="157" h="220" pX="0.5" pY="0.5" oX="107" oY="26" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Walk_64_ 7" x="516" y="0" w="146" h="251" pX="0.5" pY="0.5" oX="104" oY="11" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_01_ 0" x="3283" y="0" w="124" h="186" pX="0.5" pY="0.5" oX="94" oY="73" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_02_ 0" x="1969" y="645" w="128" h="211" pX="0.5" pY="0.5" oX="99" oY="48" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_03_ 0" x="3400" y="1099" w="133" h="161" pX="0.5" pY="0.5" oX="87" oY="81" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_04_ 1" x="789" y="3491" w="170" h="173" pX="0.5" pY="0.5" oX="54" oY="69" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_05_ 1" x="1315" y="3120" w="167" h="189" pX="0.5" pY="0.5" oX="57" oY="53" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_06_ 1" x="1000" y="3120" w="146" h="189" pX="0.5" pY="0.5" oX="78" oY="53" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_07_ 2" x="2691" y="3236" w="171" h="179" pX="0.5" pY="0.5" oX="94" oY="69" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_08_ 2" x="3230" y="2695" w="168" h="185" pX="0.5" pY="0.5" oX="93" oY="63" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_09_ 2" x="2917" y="2442" w="149" h="194" pX="0.5" pY="0.5" oX="93" oY="54" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_10_ 3" x="3283" y="186" w="119" h="180" pX="0.5" pY="0.5" oX="93" oY="66" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_11_ 3" x="3264" y="1467" w="128" h="184" pX="0.5" pY="0.5" oX="83" oY="62" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_12_ 3" x="1631" y="1949" w="129" h="170" pX="0.5" pY="0.5" oX="91" oY="75" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_13_ 4" x="3403" y="2374" w="131" h="163" pX="0.5" pY="0.5" oX="75" oY="82" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_14_ 4" x="1952" y="1290" w="145" h="211" pX="0.5" pY="0.5" oX="59" oY="42" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_15_ 4" x="859" y="3120" w="141" h="189" pX="0.5" pY="0.5" oX="62" oY="62" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_16_ 5" x="804" y="3310" w="131" h="181" pX="0.5" pY="0.5" oX="75" oY="61" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_17_ 5" x="3226" y="1835" w="153" h="184" pX="0.5" pY="0.5" oX="57" oY="59" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_18_ 5" x="3264" y="2019" w="140" h="181" pX="0.5" pY="0.5" oX="67" oY="61" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_19_ 6" x="3264" y="1099" w="136" h="184" pX="0.5" pY="0.5" oX="108" oY="65" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_20_ 6" x="3372" y="3063" w="156" h="177" pX="0.5" pY="0.5" oX="107" oY="71" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_21_ 6" x="3084" y="2515" w="146" h="190" pX="0.5" pY="0.5" oX="107" oY="64" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_22_ 7" x="3065" y="3085" w="130" h="186" pX="0.5" pY="0.5" oX="101" oY="64" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_23_ 7" x="1402" y="2927" w="149" h="193" pX="0.5" pY="0.5" oX="102" oY="57" oW="300" oH="300"/>
+  <sprite n="Krampus_Eldritch_Woozy_24_ 7" x="2734" y="2857" w="143" h="192" pX="0.5" pY="0.5" oX="104" oY="58" oW="300" oH="300"/>
+</TextureAtlas>

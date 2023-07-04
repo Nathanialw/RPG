@@ -217,7 +217,6 @@ namespace Main_Menu {
         if (!menus.contains("menu")) {
             Create_Menu();
         }
-        SDL_SetRelativeMouseMode(SDL_FALSE);
         while (toggleMenu) {
             Update_Cursor();
             Render_Menu(World::zone);

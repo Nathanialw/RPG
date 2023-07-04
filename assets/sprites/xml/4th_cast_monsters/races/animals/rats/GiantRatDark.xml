@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="GiantRatDark.png" width="1092" height="1114" scale="1" format="RGBA8888">
+  <sprite n="GiantRatDark_Attack 1_01_ 0" x="482" y="250" w="25" h="76" pX="0.5" pY="0.5" oX="50" oY="18" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_02_ 0" x="397" y="1014" w="26" h="52" pX="0.5" pY="0.5" oX="50" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_03_ 0" x="401" y="805" w="31" h="66" pX="0.5" pY="0.5" oX="51" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_04_ 1" x="302" y="360" w="85" h="36" pX="0.5" pY="0.5" oX="22" oY="41" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_05_ 1" x="380" y="871" w="63" h="49" pX="0.5" pY="0.5" oX="36" oY="28" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_06_ 1" x="88" y="428" w="80" h="40" pX="0.5" pY="0.5" oX="18" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_07_ 2" x="263" y="396" w="85" h="34" pX="0.5" pY="0.5" oX="23" oY="43" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_08_ 2" x="799" y="556" w="64" h="41" pX="0.5" pY="0.5" oX="30" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_09_ 2" x="176" y="425" w="81" h="37" pX="0.5" pY="0.5" oX="31" oY="40" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_10_ 3" x="292" y="663" w="26" h="72" pX="0.5" pY="0.5" oX="54" oY="21" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_11_ 3" x="318" y="663" w="29" h="71" pX="0.5" pY="0.5" oX="53" oY="19" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_12_ 3" x="656" y="360" w="32" h="73" pX="0.5" pY="0.5" oX="47" oY="17" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_13_ 4" x="802" y="0" w="68" h="60" pX="0.5" pY="0.5" oX="29" oY="27" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_14_ 4" x="59" y="923" w="59" h="41" pX="0.5" pY="0.5" oX="37" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_15_ 4" x="731" y="94" w="71" h="41" pX="0.5" pY="0.5" oX="29" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_16_ 5" x="910" y="79" w="58" h="60" pX="0.5" pY="0.5" oX="35" oY="26" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_17_ 5" x="0" y="805" w="39" h="66" pX="0.5" pY="0.5" oX="44" oY="22" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_18_ 5" x="497" y="804" w="46" h="65" pX="0.5" pY="0.5" oX="32" oY="25" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_19_ 6" x="196" y="837" w="57" h="64" pX="0.5" pY="0.5" oX="37" oY="25" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_20_ 6" x="1008" y="145" w="42" h="49" pX="0.5" pY="0.5" oX="45" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_21_ 6" x="910" y="139" w="48" h="60" pX="0.5" pY="0.5" oX="50" oY="28" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_22_ 7" x="802" y="664" w="68" h="50" pX="0.5" pY="0.5" oX="33" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_23_ 7" x="910" y="199" w="60" h="54" pX="0.5" pY="0.5" oX="33" oY="26" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 1_24_ 7" x="731" y="42" w="71" h="52" pX="0.5" pY="0.5" oX="29" oY="27" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_01_ 0" x="1019" y="834" w="48" h="47" pX="0.5" pY="0.5" oX="36" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_02_ 0" x="1010" y="628" w="50" h="40" pX="0.5" pY="0.5" oX="32" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_03_ 0" x="1017" y="990" w="43" h="49" pX="0.5" pY="0.5" oX="43" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_04_ 1" x="487" y="1014" w="52" h="45" pX="0.5" pY="0.5" oX="37" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_05_ 1" x="1020" y="713" w="49" h="49" pX="0.5" pY="0.5" oX="41" oY="31" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_06_ 1" x="494" y="923" w="58" h="40" pX="0.5" pY="0.5" oX="33" oY="40" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_07_ 2" x="968" y="377" w="52" h="40" pX="0.5" pY="0.5" oX="39" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_08_ 2" x="968" y="417" w="52" h="39" pX="0.5" pY="0.5" oX="38" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_09_ 2" x="0" y="923" w="59" h="43" pX="0.5" pY="0.5" oX="38" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_10_ 3" x="1018" y="927" w="48" h="43" pX="0.5" pY="0.5" oX="44" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_11_ 3" x="970" y="195" w="50" h="56" pX="0.5" pY="0.5" oX="47" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_12_ 3" x="897" y="1007" w="43" h="53" pX="0.5" pY="0.5" oX="43" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_13_ 4" x="1042" y="100" w="50" h="45" pX="0.5" pY="0.5" oX="35" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_14_ 4" x="453" y="1066" w="46" h="44" pX="0.5" pY="0.5" oX="39" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_15_ 4" x="1008" y="507" w="50" h="39" pX="0.5" pY="0.5" oX="39" oY="40" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_16_ 5" x="632" y="1066" w="43" h="45" pX="0.5" pY="0.5" oX="46" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_17_ 5" x="445" y="1014" w="42" h="52" pX="0.5" pY="0.5" oX="49" oY="29" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_18_ 5" x="233" y="1066" w="44" h="47" pX="0.5" pY="0.5" oX="44" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_19_ 6" x="675" y="1066" w="43" h="43" pX="0.5" pY="0.5" oX="39" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_20_ 6" x="846" y="1065" w="40" h="37" pX="0.5" pY="0.5" oX="39" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_21_ 6" x="364" y="1066" w="45" h="46" pX="0.5" pY="0.5" oX="41" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_22_ 7" x="1019" y="802" w="49" h="32" pX="0.5" pY="0.5" oX="44" oY="53" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_23_ 7" x="186" y="1066" w="47" h="45" pX="0.5" pY="0.5" oX="44" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Attack 2_24_ 7" x="165" y="1017" w="51" h="45" pX="0.5" pY="0.5" oX="40" oY="40" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_01_ 0" x="928" y="615" w="29" h="61" pX="0.5" pY="0.5" oX="52" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_02_ 0" x="928" y="554" w="28" h="61" pX="0.5" pY="0.5" oX="52" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_03_ 0" x="901" y="777" w="27" h="61" pX="0.5" pY="0.5" oX="52" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_04_ 1" x="176" y="392" w="87" h="33" pX="0.5" pY="0.5" oX="19" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_05_ 1" x="302" y="287" w="88" h="32" pX="0.5" pY="0.5" oX="19" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_06_ 1" x="88" y="396" w="88" h="32" pX="0.5" pY="0.5" oX="19" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_07_ 2" x="176" y="363" w="87" h="29" pX="0.5" pY="0.5" oX="22" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_08_ 2" x="0" y="367" w="88" h="29" pX="0.5" pY="0.5" oX="21" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_09_ 2" x="88" y="367" w="88" h="29" pX="0.5" pY="0.5" oX="21" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_10_ 3" x="472" y="735" w="29" h="69" pX="0.5" pY="0.5" oX="47" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_11_ 3" x="444" y="735" w="28" h="70" pX="0.5" pY="0.5" oX="48" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_12_ 3" x="347" y="663" w="27" h="71" pX="0.5" pY="0.5" oX="49" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_13_ 4" x="150" y="601" w="75" h="46" pX="0.5" pY="0.5" oX="31" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_14_ 4" x="657" y="241" w="74" h="46" pX="0.5" pY="0.5" oX="31" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_15_ 4" x="657" y="195" w="74" h="46" pX="0.5" pY="0.5" oX="31" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_16_ 5" x="784" y="833" w="59" h="61" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_17_ 5" x="725" y="832" w="59" h="61" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_18_ 5" x="894" y="493" w="59" h="61" pX="0.5" pY="0.5" oX="32" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_19_ 6" x="0" y="966" w="58" h="51" pX="0.5" pY="0.5" oX="38" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_20_ 6" x="128" y="913" w="59" h="50" pX="0.5" pY="0.5" oX="37" oY="40" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_21_ 6" x="561" y="913" w="59" h="49" pX="0.5" pY="0.5" oX="37" oY="41" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_22_ 7" x="75" y="596" w="75" h="48" pX="0.5" pY="0.5" oX="22" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_23_ 7" x="657" y="119" w="74" h="48" pX="0.5" pY="0.5" oX="23" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Behavior_24_ 7" x="657" y="70" w="74" h="49" pX="0.5" pY="0.5" oX="23" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_01_ 0" x="870" y="431" w="39" h="62" pX="0.5" pY="0.5" oX="53" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_02_ 0" x="748" y="953" w="39" h="58" pX="0.5" pY="0.5" oX="53" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_03_ 0" x="587" y="1066" w="45" h="40" pX="0.5" pY="0.5" oX="53" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_04_ 1" x="509" y="65" w="78" h="40" pX="0.5" pY="0.5" oX="17" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_05_ 1" x="163" y="500" w="77" h="44" pX="0.5" pY="0.5" oX="21" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_06_ 1" x="564" y="1011" w="55" h="54" pX="0.5" pY="0.5" oX="45" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_07_ 2" x="509" y="173" w="78" h="31" pX="0.5" pY="0.5" oX="33" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_08_ 2" x="509" y="235" w="78" h="32" pX="0.5" pY="0.5" oX="30" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_09_ 2" x="552" y="962" w="57" h="40" pX="0.5" pY="0.5" oX="28" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_10_ 3" x="862" y="777" w="39" h="61" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_11_ 3" x="870" y="65" w="40" h="64" pX="0.5" pY="0.5" oX="36" oY="28" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_12_ 3" x="702" y="953" w="46" h="58" pX="0.5" pY="0.5" oX="29" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_13_ 4" x="591" y="646" w="71" h="46" pX="0.5" pY="0.5" oX="30" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_14_ 4" x="732" y="664" w="70" h="42" pX="0.5" pY="0.5" oX="33" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_15_ 4" x="844" y="1029" w="53" h="35" pX="0.5" pY="0.5" oX="54" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_16_ 5" x="443" y="871" w="51" h="59" pX="0.5" pY="0.5" oX="30" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_17_ 5" x="859" y="714" w="50" h="63" pX="0.5" pY="0.5" oX="33" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_18_ 5" x="869" y="307" w="41" h="62" pX="0.5" pY="0.5" oX="45" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_19_ 6" x="691" y="1011" w="49" h="55" pX="0.5" pY="0.5" oX="49" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_20_ 6" x="1042" y="0" w="50" h="50" pX="0.5" pY="0.5" oX="46" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_21_ 6" x="763" y="1061" w="42" h="35" pX="0.5" pY="0.5" oX="43" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_22_ 7" x="731" y="356" w="71" h="43" pX="0.5" pY="0.5" oX="27" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_23_ 7" x="728" y="445" w="70" h="46" pX="0.5" pY="0.5" oX="26" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Block_24_ 7" x="0" y="1017" w="55" h="49" pX="0.5" pY="0.5" oX="21" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_01_ 0" x="982" y="883" w="28" h="56" pX="0.5" pY="0.5" oX="54" oY="43" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_02_ 0" x="958" y="139" w="28" h="56" pX="0.5" pY="0.5" oX="54" oY="43" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_03_ 0" x="954" y="883" w="28" h="56" pX="0.5" pY="0.5" oX="54" oY="43" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_04_ 1" x="300" y="632" w="74" h="31" pX="0.5" pY="0.5" oX="20" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_05_ 1" x="300" y="601" w="74" h="31" pX="0.5" pY="0.5" oX="20" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_06_ 1" x="548" y="498" w="74" h="31" pX="0.5" pY="0.5" oX="20" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_07_ 2" x="237" y="573" w="74" h="28" pX="0.5" pY="0.5" oX="34" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_08_ 2" x="657" y="287" w="74" h="28" pX="0.5" pY="0.5" oX="34" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_09_ 2" x="657" y="167" w="74" h="28" pX="0.5" pY="0.5" oX="34" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_10_ 3" x="895" y="949" w="29" h="58" pX="0.5" pY="0.5" oX="46" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_11_ 3" x="816" y="953" w="29" h="58" pX="0.5" pY="0.5" oX="46" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_12_ 3" x="787" y="953" w="29" h="58" pX="0.5" pY="0.5" oX="46" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_13_ 4" x="376" y="920" w="59" h="46" pX="0.5" pY="0.5" oX="34" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_14_ 4" x="910" y="331" w="59" h="46" pX="0.5" pY="0.5" oX="34" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_15_ 4" x="620" y="920" w="59" h="46" pX="0.5" pY="0.5" oX="34" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_16_ 5" x="485" y="963" w="56" h="51" pX="0.5" pY="0.5" oX="30" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_17_ 5" x="962" y="939" w="56" h="51" pX="0.5" pY="0.5" oX="30" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_18_ 5" x="341" y="966" w="56" h="51" pX="0.5" pY="0.5" oX="30" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_19_ 6" x="963" y="840" w="56" h="43" pX="0.5" pY="0.5" oX="42" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_20_ 6" x="963" y="796" w="56" h="44" pX="0.5" pY="0.5" oX="42" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_21_ 6" x="609" y="966" w="56" h="44" pX="0.5" pY="0.5" oX="42" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_22_ 7" x="909" y="377" w="59" h="46" pX="0.5" pY="0.5" oX="35" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_23_ 7" x="909" y="423" w="59" h="45" pX="0.5" pY="0.5" oX="35" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Critical HP_24_ 7" x="904" y="838" w="59" h="45" pX="0.5" pY="0.5" oX="35" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Dead_01_ 0" x="817" y="1011" w="27" h="54" pX="0.5" pY="0.5" oX="50" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Dead_02_ 1" x="142" y="725" w="63" h="29" pX="0.5" pY="0.5" oX="32" oY="53" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Dead_03_ 2" x="428" y="411" w="63" h="23" pX="0.5" pY="0.5" oX="33" oY="56" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Dead_04_ 3" x="1059" y="881" w="27" h="46" pX="0.5" pY="0.5" oX="51" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Dead_05_ 4" x="970" y="306" w="45" h="53" pX="0.5" pY="0.5" oX="42" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Dead_06_ 5" x="623" y="877" w="61" h="43" pX="0.5" pY="0.5" oX="34" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Dead_07_ 6" x="910" y="0" w="61" h="38" pX="0.5" pY="0.5" oX="33" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Dead_08_ 7" x="542" y="1066" w="45" h="40" pX="0.5" pY="0.5" oX="41" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_01_ 0" x="870" y="369" w="39" h="62" pX="0.5" pY="0.5" oX="53" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_02_ 0" x="1042" y="50" w="47" h="50" pX="0.5" pY="0.5" oX="42" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_03_ 0" x="139" y="1066" w="47" h="45" pX="0.5" pY="0.5" oX="37" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_04_ 1" x="507" y="367" w="78" h="40" pX="0.5" pY="0.5" oX="17" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_05_ 1" x="58" y="966" w="58" h="44" pX="0.5" pY="0.5" oX="22" oY="43" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_06_ 1" x="113" y="1017" w="52" h="45" pX="0.5" pY="0.5" oX="30" oY="40" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_07_ 2" x="509" y="204" w="78" h="31" pX="0.5" pY="0.5" oX="33" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_08_ 2" x="668" y="630" w="59" h="33" pX="0.5" pY="0.5" oX="48" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_09_ 2" x="962" y="1029" w="52" h="36" pX="0.5" pY="0.5" oX="47" oY="52" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_10_ 3" x="928" y="676" w="40" h="61" pX="0.5" pY="0.5" oX="36" oY="28" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_11_ 3" x="277" y="1066" w="47" h="47" pX="0.5" pY="0.5" oX="39" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_12_ 3" x="48" y="1066" w="47" h="46" pX="0.5" pY="0.5" oX="44" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_13_ 4" x="731" y="191" w="71" h="46" pX="0.5" pY="0.5" oX="30" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_14_ 4" x="910" y="38" w="60" h="41" pX="0.5" pY="0.5" oX="27" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_15_ 4" x="1019" y="251" w="49" h="44" pX="0.5" pY="0.5" oX="30" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_16_ 5" x="774" y="894" w="51" h="59" pX="0.5" pY="0.5" oX="30" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_17_ 5" x="870" y="193" w="40" h="50" pX="0.5" pY="0.5" oX="39" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_18_ 5" x="95" y="1066" w="44" h="47" pX="0.5" pY="0.5" oX="40" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_19_ 6" x="970" y="251" w="49" h="55" pX="0.5" pY="0.5" oX="49" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_20_ 6" x="324" y="1066" w="40" h="46" pX="0.5" pY="0.5" oX="49" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_21_ 6" x="718" y="1066" w="43" h="42" pX="0.5" pY="0.5" oX="45" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_22_ 7" x="728" y="557" w="71" h="43" pX="0.5" pY="0.5" oX="27" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_23_ 7" x="910" y="253" w="60" h="35" pX="0.5" pY="0.5" oX="41" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Evade_24_ 7" x="543" y="802" w="49" h="30" pX="0.5" pY="0.5" oX="49" oY="52" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_01_ 0" x="870" y="369" w="39" h="62" pX="0.5" pY="0.5" oX="53" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_02_ 0" x="1050" y="145" w="42" h="47" pX="0.5" pY="0.5" oX="54" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_03_ 0" x="928" y="796" w="35" h="36" pX="0.5" pY="0.5" oX="54" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_04_ 1" x="507" y="267" w="78" h="40" pX="0.5" pY="0.5" oX="17" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_05_ 1" x="802" y="383" w="67" h="50" pX="0.5" pY="0.5" oX="31" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_06_ 1" x="1013" y="456" w="47" h="50" pX="0.5" pY="0.5" oX="50" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_07_ 2" x="507" y="407" w="78" h="31" pX="0.5" pY="0.5" oX="33" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_08_ 2" x="73" y="705" w="69" h="38" pX="0.5" pY="0.5" oX="31" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_09_ 2" x="216" y="1017" w="50" h="44" pX="0.5" pY="0.5" oX="31" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_10_ 3" x="685" y="829" w="40" h="61" pX="0.5" pY="0.5" oX="36" oY="28" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_11_ 3" x="624" y="433" w="44" h="73" pX="0.5" pY="0.5" oX="32" oY="17" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_12_ 3" x="834" y="490" w="36" h="66" pX="0.5" pY="0.5" oX="39" oY="26" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_13_ 4" x="731" y="237" w="71" h="46" pX="0.5" pY="0.5" oX="30" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_14_ 4" x="543" y="832" w="65" h="37" pX="0.5" pY="0.5" oX="40" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_15_ 4" x="623" y="557" w="45" h="38" pX="0.5" pY="0.5" oX="55" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_16_ 5" x="191" y="901" w="51" h="59" pX="0.5" pY="0.5" oX="30" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_17_ 5" x="0" y="735" w="43" h="70" pX="0.5" pY="0.5" oX="39" oY="24" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_18_ 5" x="868" y="243" w="31" h="64" pX="0.5" pY="0.5" oX="52" oY="29" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_19_ 6" x="619" y="1011" w="49" h="55" pX="0.5" pY="0.5" oX="49" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_20_ 6" x="1012" y="546" w="44" h="48" pX="0.5" pY="0.5" oX="47" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_21_ 6" x="1058" y="506" w="34" h="40" pX="0.5" pY="0.5" oX="45" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_22_ 7" x="591" y="692" w="71" h="43" pX="0.5" pY="0.5" oX="27" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_23_ 7" x="798" y="433" w="66" h="57" pX="0.5" pY="0.5" oX="24" oY="23" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Get Hit_24_ 7" x="187" y="960" w="48" h="57" pX="0.5" pY="0.5" oX="28" oY="27" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_01_ 0" x="870" y="129" w="39" h="64" pX="0.5" pY="0.5" oX="53" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_02_ 0" x="870" y="620" w="39" h="64" pX="0.5" pY="0.5" oX="53" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_03_ 0" x="870" y="0" w="40" h="65" pX="0.5" pY="0.5" oX="53" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_04_ 1" x="428" y="338" w="79" h="39" pX="0.5" pY="0.5" oX="17" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_05_ 1" x="168" y="462" w="79" h="38" pX="0.5" pY="0.5" oX="17" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_06_ 1" x="348" y="396" w="80" h="38" pX="0.5" pY="0.5" oX="17" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_07_ 2" x="509" y="33" w="78" h="32" pX="0.5" pY="0.5" oX="33" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_08_ 2" x="509" y="0" w="78" h="33" pX="0.5" pY="0.5" oX="33" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_09_ 2" x="428" y="377" w="79" h="34" pX="0.5" pY="0.5" oX="32" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_10_ 3" x="924" y="941" w="38" h="58" pX="0.5" pY="0.5" oX="37" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_11_ 3" x="928" y="737" w="39" h="59" pX="0.5" pY="0.5" oX="36" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_12_ 3" x="684" y="890" w="40" h="59" pX="0.5" pY="0.5" oX="35" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_13_ 4" x="728" y="399" w="70" h="46" pX="0.5" pY="0.5" oX="31" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_14_ 4" x="519" y="688" w="72" h="47" pX="0.5" pY="0.5" oX="30" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_15_ 4" x="522" y="599" w="73" h="47" pX="0.5" pY="0.5" oX="30" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_16_ 5" x="845" y="953" w="50" h="58" pX="0.5" pY="0.5" oX="31" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_17_ 5" x="904" y="883" w="50" h="58" pX="0.5" pY="0.5" oX="31" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_18_ 5" x="724" y="893" w="50" h="59" pX="0.5" pY="0.5" oX="31" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_19_ 6" x="970" y="56" w="49" h="56" pX="0.5" pY="0.5" oX="49" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_20_ 6" x="971" y="0" w="49" h="56" pX="0.5" pY="0.5" oX="49" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_21_ 6" x="235" y="960" w="49" h="57" pX="0.5" pY="0.5" oX="49" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_22_ 7" x="731" y="0" w="71" h="42" pX="0.5" pY="0.5" oX="27" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_23_ 7" x="519" y="646" w="72" h="42" pX="0.5" pY="0.5" oX="26" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Idle_24_ 7" x="595" y="597" w="73" h="42" pX="0.5" pY="0.5" oX="25" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_01_ 0" x="423" y="1014" w="22" h="52" pX="0.5" pY="0.5" oX="53" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_02_ 0" x="940" y="999" w="22" h="52" pX="0.5" pY="0.5" oX="53" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_03_ 0" x="411" y="754" w="22" h="51" pX="0.5" pY="0.5" oX="53" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_04_ 1" x="587" y="226" w="70" h="24" pX="0.5" pY="0.5" oX="27" oY="54" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_05_ 1" x="731" y="332" w="71" h="24" pX="0.5" pY="0.5" oX="26" oY="54" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_06_ 1" x="731" y="308" w="71" h="24" pX="0.5" pY="0.5" oX="26" oY="54" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_07_ 2" x="731" y="283" w="71" h="25" pX="0.5" pY="0.5" oX="31" oY="54" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_08_ 2" x="382" y="573" w="71" h="26" pX="0.5" pY="0.5" oX="31" oY="53" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_09_ 2" x="311" y="573" w="71" h="26" pX="0.5" pY="0.5" oX="31" oY="53" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_10_ 3" x="1020" y="51" w="22" h="51" pX="0.5" pY="0.5" oX="53" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_11_ 3" x="1020" y="0" w="22" h="51" pX="0.5" pY="0.5" oX="53" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_12_ 3" x="986" y="112" w="22" h="51" pX="0.5" pY="0.5" oX="53" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_13_ 4" x="1020" y="355" w="49" h="40" pX="0.5" pY="0.5" oX="38" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_14_ 4" x="1020" y="194" w="49" h="40" pX="0.5" pY="0.5" oX="38" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_15_ 4" x="1020" y="762" w="49" h="40" pX="0.5" pY="0.5" oX="38" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_16_ 5" x="957" y="590" w="55" h="38" pX="0.5" pY="0.5" oX="36" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_17_ 5" x="58" y="1010" w="55" h="38" pX="0.5" pY="0.5" oX="36" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_18_ 5" x="242" y="922" w="56" h="38" pX="0.5" pY="0.5" oX="36" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_19_ 6" x="962" y="990" w="55" h="39" pX="0.5" pY="0.5" oX="37" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_20_ 6" x="953" y="507" w="55" h="39" pX="0.5" pY="0.5" oX="37" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_21_ 6" x="957" y="468" w="56" h="39" pX="0.5" pY="0.5" oX="36" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_22_ 7" x="1010" y="883" w="49" h="44" pX="0.5" pY="0.5" oX="41" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_23_ 7" x="1020" y="668" w="49" h="45" pX="0.5" pY="0.5" oX="41" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Rest_24_ 7" x="1020" y="395" w="49" h="44" pX="0.5" pY="0.5" oX="41" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_01_ 0" x="23" y="226" w="23" h="98" pX="0.5" pY="0.5" oX="53" oY="5" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_02_ 0" x="306" y="0" w="23" h="96" pX="0.5" pY="0.5" oX="53" oY="7" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_03_ 0" x="279" y="274" w="23" h="91" pX="0.5" pY="0.5" oX="53" oY="11" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_04_ 0" x="421" y="0" w="23" h="86" pX="0.5" pY="0.5" oX="53" oY="14" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_05_ 0" x="390" y="302" w="23" h="87" pX="0.5" pY="0.5" oX="53" oY="13" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_06_ 0" x="0" y="226" w="23" h="99" pX="0.5" pY="0.5" oX="53" oY="4" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_07_ 0" x="46" y="226" w="23" h="98" pX="0.5" pY="0.5" oX="53" oY="5" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_08_ 0" x="393" y="124" w="23" h="91" pX="0.5" pY="0.5" oX="53" oY="12" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_09_ 1" x="329" y="78" w="91" h="46" pX="0.5" pY="0.5" oX="21" oY="40" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_10_ 1" x="0" y="163" w="100" h="34" pX="0.5" pY="0.5" oX="21" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_11_ 1" x="329" y="44" w="92" h="34" pX="0.5" pY="0.5" oX="21" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_12_ 1" x="104" y="0" w="102" h="34" pX="0.5" pY="0.5" oX="22" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_13_ 1" x="0" y="99" w="102" h="33" pX="0.5" pY="0.5" oX="22" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_14_ 1" x="186" y="317" w="93" h="46" pX="0.5" pY="0.5" oX="21" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_15_ 1" x="166" y="274" w="96" h="43" pX="0.5" pY="0.5" oX="22" oY="43" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_16_ 1" x="104" y="65" w="101" h="34" pX="0.5" pY="0.5" oX="22" oY="52" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_17_ 2" x="329" y="0" w="92" h="44" pX="0.5" pY="0.5" oX="20" oY="41" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_18_ 2" x="206" y="0" w="100" h="39" pX="0.5" pY="0.5" oX="12" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_19_ 2" x="93" y="317" w="93" h="40" pX="0.5" pY="0.5" oX="19" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_20_ 2" x="0" y="34" w="104" h="35" pX="0.5" pY="0.5" oX="8" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_21_ 2" x="0" y="0" w="104" h="34" pX="0.5" pY="0.5" oX="8" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_22_ 2" x="0" y="325" w="93" h="42" pX="0.5" pY="0.5" oX="18" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_23_ 2" x="69" y="274" w="97" h="39" pX="0.5" pY="0.5" oX="14" oY="47" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_24_ 2" x="0" y="69" w="102" h="30" pX="0.5" pY="0.5" oX="9" oY="54" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_25_ 3" x="870" y="493" w="24" h="62" pX="0.5" pY="0.5" oX="52" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_26_ 3" x="824" y="60" w="23" h="68" pX="0.5" pY="0.5" oX="53" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_27_ 3" x="43" y="735" w="23" h="70" pX="0.5" pY="0.5" oX="53" oY="31" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_28_ 3" x="459" y="250" w="23" h="76" pX="0.5" pY="0.5" oX="53" oY="28" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_29_ 3" x="439" y="438" w="23" h="78" pX="0.5" pY="0.5" oX="53" oY="29" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_30_ 3" x="679" y="953" w="23" h="58" pX="0.5" pY="0.5" oX="53" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_31_ 3" x="825" y="894" w="23" h="59" pX="0.5" pY="0.5" oX="53" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_32_ 3" x="501" y="735" w="23" h="69" pX="0.5" pY="0.5" oX="53" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_33_ 4" x="444" y="0" w="65" h="79" pX="0.5" pY="0.5" oX="30" oY="12" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_34_ 4" x="585" y="267" w="72" h="74" pX="0.5" pY="0.5" oX="30" oY="17" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_35_ 4" x="732" y="706" w="70" h="70" pX="0.5" pY="0.5" oX="30" oY="20" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_36_ 4" x="0" y="599" w="75" h="66" pX="0.5" pY="0.5" oX="30" oY="23" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_37_ 4" x="585" y="341" w="71" h="73" pX="0.5" pY="0.5" oX="30" oY="20" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_38_ 4" x="0" y="438" w="62" h="84" pX="0.5" pY="0.5" oX="31" oY="9" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_39_ 4" x="372" y="434" w="67" h="79" pX="0.5" pY="0.5" oX="31" oY="12" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_40_ 4" x="657" y="0" w="74" h="70" pX="0.5" pY="0.5" oX="31" oY="21" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_41_ 5" x="662" y="782" w="65" h="47" pX="0.5" pY="0.5" oX="30" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_42_ 5" x="662" y="728" w="70" h="54" pX="0.5" pY="0.5" oX="30" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_43_ 5" x="497" y="869" w="64" h="54" pX="0.5" pY="0.5" oX="30" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_44_ 5" x="447" y="646" w="72" h="61" pX="0.5" pY="0.5" oX="31" oY="29" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_45_ 5" x="507" y="307" w="78" h="60" pX="0.5" pY="0.5" oX="28" oY="29" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_46_ 5" x="374" y="706" w="70" h="48" pX="0.5" pY="0.5" oX="30" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_47_ 5" x="66" y="754" w="70" h="48" pX="0.5" pY="0.5" oX="31" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_48_ 5" x="731" y="135" w="71" h="56" pX="0.5" pY="0.5" oX="31" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_49_ 6" x="443" y="86" w="66" h="79" pX="0.5" pY="0.5" oX="33" oY="11" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_50_ 6" x="587" y="0" w="70" h="77" pX="0.5" pY="0.5" oX="29" oY="14" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_51_ 6" x="587" y="77" w="64" h="75" pX="0.5" pY="0.5" oX="35" oY="15" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_52_ 6" x="0" y="665" w="73" h="70" pX="0.5" pY="0.5" oX="26" oY="22" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_53_ 6" x="509" y="105" w="78" h="68" pX="0.5" pY="0.5" oX="22" oY="23" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_54_ 6" x="439" y="172" w="70" h="78" pX="0.5" pY="0.5" oX="28" oY="13" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_55_ 6" x="0" y="522" w="71" h="77" pX="0.5" pY="0.5" oX="27" oY="14" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_56_ 6" x="220" y="663" w="72" h="72" pX="0.5" pY="0.5" oX="26" oY="19" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_57_ 7" x="66" y="802" w="66" h="47" pX="0.5" pY="0.5" oX="33" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_58_ 7" x="623" y="506" w="73" h="51" pX="0.5" pY="0.5" oX="26" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_59_ 7" x="696" y="506" w="71" h="51" pX="0.5" pY="0.5" oX="28" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_60_ 7" x="471" y="538" w="76" h="61" pX="0.5" pY="0.5" oX="23" oY="29" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_61_ 7" x="148" y="663" w="72" h="62" pX="0.5" pY="0.5" oX="27" oY="29" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_62_ 7" x="317" y="871" w="63" h="49" pX="0.5" pY="0.5" oX="35" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_63_ 7" x="802" y="128" w="68" h="48" pX="0.5" pY="0.5" oX="30" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Run_64_ 7" x="162" y="544" w="75" h="57" pX="0.5" pY="0.5" oX="23" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_01_ 0" x="0" y="1066" w="48" h="48" pX="0.5" pY="0.5" oX="38" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_02_ 0" x="593" y="784" w="65" h="45" pX="0.5" pY="0.5" oX="36" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_03_ 0" x="805" y="1065" w="41" h="41" pX="0.5" pY="0.5" oX="43" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_04_ 1" x="957" y="546" w="55" h="44" pX="0.5" pY="0.5" oX="27" oY="40" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_05_ 1" x="848" y="891" w="55" h="58" pX="0.5" pY="0.5" oX="26" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_06_ 1" x="435" y="930" w="50" h="57" pX="0.5" pY="0.5" oX="34" oY="23" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_07_ 2" x="284" y="1014" w="55" h="40" pX="0.5" pY="0.5" oX="47" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_08_ 2" x="116" y="964" w="57" h="53" pX="0.5" pY="0.5" oX="47" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_09_ 2" x="968" y="672" w="52" h="40" pX="0.5" pY="0.5" oX="44" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_10_ 3" x="1015" y="306" w="47" h="49" pX="0.5" pY="0.5" oX="43" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_11_ 3" x="732" y="776" w="65" h="56" pX="0.5" pY="0.5" oX="27" oY="26" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_12_ 3" x="866" y="556" w="43" h="64" pX="0.5" pY="0.5" oX="45" oY="18" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_13_ 4" x="957" y="628" w="53" h="44" pX="0.5" pY="0.5" oX="28" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_14_ 4" x="284" y="966" w="57" h="48" pX="0.5" pY="0.5" oX="29" oY="44" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_15_ 4" x="910" y="288" w="60" h="43" pX="0.5" pY="0.5" oX="31" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_16_ 5" x="409" y="1066" w="44" h="46" pX="0.5" pY="0.5" oX="39" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_17_ 5" x="967" y="737" w="53" h="56" pX="0.5" pY="0.5" oX="28" oY="27" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_18_ 5" x="824" y="714" w="35" h="68" pX="0.5" pY="0.5" oX="44" oY="18" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_19_ 6" x="499" y="1066" w="43" h="45" pX="0.5" pY="0.5" oX="46" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_20_ 6" x="339" y="1017" w="52" h="43" pX="0.5" pY="0.5" oX="48" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_21_ 6" x="397" y="966" w="38" h="48" pX="0.5" pY="0.5" oX="49" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_22_ 7" x="763" y="1029" w="54" h="32" pX="0.5" pY="0.5" oX="47" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_23_ 7" x="317" y="920" w="59" h="46" pX="0.5" pY="0.5" oX="42" oY="34" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Use Skill_24_ 7" x="843" y="838" w="61" h="53" pX="0.5" pY="0.5" oX="37" oY="28" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_01_ 0" x="39" y="805" w="22" h="66" pX="0.5" pY="0.5" oX="54" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_02_ 0" x="802" y="714" w="22" h="68" pX="0.5" pY="0.5" oX="54" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_03_ 0" x="847" y="60" w="23" h="68" pX="0.5" pY="0.5" oX="53" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_04_ 0" x="846" y="243" w="22" h="67" pX="0.5" pY="0.5" oX="53" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_05_ 0" x="824" y="243" w="22" h="67" pX="0.5" pY="0.5" oX="53" oY="33" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_06_ 0" x="802" y="60" w="22" h="68" pX="0.5" pY="0.5" oX="53" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_07_ 0" x="688" y="360" w="23" h="68" pX="0.5" pY="0.5" oX="53" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_08_ 0" x="802" y="243" w="22" h="67" pX="0.5" pY="0.5" oX="54" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_09_ 1" x="200" y="187" w="99" h="29" pX="0.5" pY="0.5" oX="19" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_10_ 1" x="100" y="163" w="100" h="30" pX="0.5" pY="0.5" oX="19" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_11_ 1" x="0" y="197" w="100" h="29" pX="0.5" pY="0.5" oX="19" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_12_ 1" x="199" y="245" w="99" h="29" pX="0.5" pY="0.5" oX="19" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_13_ 1" x="100" y="223" w="99" h="29" pX="0.5" pY="0.5" oX="19" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_14_ 1" x="205" y="39" w="100" h="30" pX="0.5" pY="0.5" oX="19" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_15_ 1" x="0" y="132" w="100" h="31" pX="0.5" pY="0.5" oX="19" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_16_ 1" x="200" y="216" w="99" h="29" pX="0.5" pY="0.5" oX="19" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_17_ 2" x="205" y="69" w="99" h="30" pX="0.5" pY="0.5" oX="10" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_18_ 2" x="100" y="132" w="100" h="31" pX="0.5" pY="0.5" oX="9" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_19_ 2" x="104" y="34" w="101" h="31" pX="0.5" pY="0.5" oX="8" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_20_ 2" x="200" y="158" w="99" h="29" pX="0.5" pY="0.5" oX="10" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_21_ 2" x="203" y="99" w="99" h="29" pX="0.5" pY="0.5" oX="10" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_22_ 2" x="102" y="99" w="101" h="30" pX="0.5" pY="0.5" oX="8" oY="50" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_23_ 2" x="100" y="193" w="100" h="30" pX="0.5" pY="0.5" oX="9" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_24_ 2" x="203" y="128" w="99" h="30" pX="0.5" pY="0.5" oX="10" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_25_ 3" x="437" y="258" w="22" h="79" pX="0.5" pY="0.5" oX="53" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_26_ 3" x="257" y="434" w="23" h="80" pX="0.5" pY="0.5" oX="53" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_27_ 3" x="326" y="434" w="23" h="80" pX="0.5" pY="0.5" oX="53" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_28_ 3" x="280" y="434" w="23" h="80" pX="0.5" pY="0.5" oX="53" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_29_ 3" x="303" y="434" w="23" h="80" pX="0.5" pY="0.5" oX="53" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_30_ 3" x="62" y="438" w="23" h="80" pX="0.5" pY="0.5" oX="53" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_31_ 3" x="349" y="434" w="23" h="80" pX="0.5" pY="0.5" oX="53" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_32_ 3" x="415" y="258" w="22" h="80" pX="0.5" pY="0.5" oX="53" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_33_ 4" x="85" y="511" w="77" h="42" pX="0.5" pY="0.5" oX="33" oY="49" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_34_ 4" x="225" y="601" w="75" h="46" pX="0.5" pY="0.5" oX="32" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_35_ 4" x="136" y="754" w="69" h="50" pX="0.5" pY="0.5" oX="32" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_36_ 4" x="64" y="871" w="64" h="52" pX="0.5" pY="0.5" oX="32" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_37_ 4" x="0" y="871" w="64" h="52" pX="0.5" pY="0.5" oX="32" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_38_ 4" x="593" y="735" w="69" h="49" pX="0.5" pY="0.5" oX="32" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_39_ 4" x="657" y="315" w="74" h="45" pX="0.5" pY="0.5" oX="32" oY="46" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_40_ 4" x="71" y="553" w="77" h="43" pX="0.5" pY="0.5" oX="32" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_41_ 5" x="132" y="804" w="64" h="65" pX="0.5" pY="0.5" oX="31" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_42_ 5" x="767" y="491" w="67" h="65" pX="0.5" pY="0.5" oX="32" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_43_ 5" x="374" y="645" w="73" h="61" pX="0.5" pY="0.5" oX="32" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_44_ 5" x="240" y="516" w="77" h="57" pX="0.5" pY="0.5" oX="32" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_45_ 5" x="317" y="516" w="77" h="57" pX="0.5" pY="0.5" oX="32" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_46_ 5" x="75" y="644" w="73" h="61" pX="0.5" pY="0.5" oX="32" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_47_ 5" x="798" y="600" w="68" h="64" pX="0.5" pY="0.5" oX="32" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_48_ 5" x="432" y="805" w="65" h="66" pX="0.5" pY="0.5" oX="31" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_49_ 6" x="253" y="871" w="64" h="51" pX="0.5" pY="0.5" oX="33" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_50_ 6" x="343" y="754" w="68" h="51" pX="0.5" pY="0.5" oX="29" oY="40" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_51_ 6" x="374" y="599" w="74" h="46" pX="0.5" pY="0.5" oX="23" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_52_ 6" x="85" y="468" w="78" h="43" pX="0.5" pY="0.5" oX="19" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_53_ 6" x="462" y="438" w="78" h="43" pX="0.5" pY="0.5" oX="19" oY="48" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_54_ 6" x="448" y="599" w="74" h="47" pX="0.5" pY="0.5" oX="23" oY="45" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_55_ 6" x="274" y="754" w="69" h="51" pX="0.5" pY="0.5" oX="28" oY="41" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_56_ 6" x="797" y="782" w="65" h="51" pX="0.5" pY="0.5" oX="32" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_57_ 7" x="394" y="516" w="77" h="57" pX="0.5" pY="0.5" oX="19" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_58_ 7" x="547" y="538" w="76" h="59" pX="0.5" pY="0.5" oX="21" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_59_ 7" x="662" y="664" w="70" h="64" pX="0.5" pY="0.5" oX="27" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_60_ 7" x="271" y="805" w="65" h="66" pX="0.5" pY="0.5" oX="32" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_61_ 7" x="336" y="805" w="65" h="66" pX="0.5" pY="0.5" oX="32" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_62_ 7" x="728" y="600" w="70" h="64" pX="0.5" pY="0.5" oX="27" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_63_ 7" x="548" y="438" w="76" h="60" pX="0.5" pY="0.5" oX="21" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Walk_64_ 7" x="471" y="481" w="77" h="57" pX="0.5" pY="0.5" oX="19" oY="37" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_01_ 0" x="740" y="1011" w="23" h="54" pX="0.5" pY="0.5" oX="54" oY="25" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_02_ 0" x="668" y="1011" w="23" h="55" pX="0.5" pY="0.5" oX="54" oY="25" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_03_ 0" x="541" y="1011" w="23" h="55" pX="0.5" pY="0.5" oX="54" oY="25" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_04_ 1" x="0" y="396" w="88" h="42" pX="0.5" pY="0.5" oX="40" oY="38" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_05_ 1" x="302" y="319" w="88" h="41" pX="0.5" pY="0.5" oX="40" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_06_ 1" x="302" y="246" w="89" h="41" pX="0.5" pY="0.5" oX="39" oY="39" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_07_ 2" x="302" y="164" w="90" h="41" pX="0.5" pY="0.5" oX="0" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_08_ 2" x="302" y="205" w="90" h="41" pX="0.5" pY="0.5" oX="0" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_09_ 2" x="302" y="124" w="91" h="40" pX="0.5" pY="0.5" oX="0" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_10_ 3" x="392" y="215" w="23" h="87" pX="0.5" pY="0.5" oX="52" oY="29" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_11_ 3" x="420" y="86" w="23" h="86" pX="0.5" pY="0.5" oX="52" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_12_ 3" x="416" y="172" w="23" h="86" pX="0.5" pY="0.5" oX="52" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_13_ 4" x="205" y="801" w="66" h="36" pX="0.5" pY="0.5" oX="52" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_14_ 4" x="802" y="346" w="67" h="37" pX="0.5" pY="0.5" oX="51" oY="42" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_15_ 4" x="802" y="310" w="67" h="36" pX="0.5" pY="0.5" oX="51" oY="43" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_16_ 5" x="587" y="152" w="59" h="74" pX="0.5" pY="0.5" oX="42" oY="35" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_17_ 5" x="668" y="433" w="60" h="73" pX="0.5" pY="0.5" oX="41" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_18_ 5" x="668" y="557" w="60" h="73" pX="0.5" pY="0.5" oX="41" oY="36" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_19_ 6" x="561" y="869" w="62" h="44" pX="0.5" pY="0.5" oX="27" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_20_ 6" x="623" y="833" w="62" h="44" pX="0.5" pY="0.5" oX="27" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_21_ 6" x="128" y="869" w="63" h="44" pX="0.5" pY="0.5" oX="27" oY="32" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_22_ 7" x="802" y="176" w="68" h="67" pX="0.5" pY="0.5" oX="10" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_23_ 7" x="524" y="735" w="69" h="67" pX="0.5" pY="0.5" oX="10" oY="30" oW="128" oH="128"/>
+  <sprite n="GiantRatDark_Woozy_24_ 7" x="205" y="735" w="69" h="66" pX="0.5" pY="0.5" oX="10" oY="31" oW="128" oH="128"/>
+</TextureAtlas>

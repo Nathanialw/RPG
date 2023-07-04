@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Fiend_Brown.png" width="4222" height="4228" scale="1" format="RGBA8888">
+  <sprite n="Fiend_Brown_Attack 1_01_ 0" x="1940" y="3836" w="200" h="198" pX="0.5" pY="0.5" oX="107" oY="88" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_02_ 0" x="1378" y="687" w="197" h="256" pX="0.5" pY="0.5" oX="101" oY="30" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_03_ 0" x="2807" y="233" w="162" h="229" pX="0.5" pY="0.5" oX="154" oY="111" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_04_ 1" x="1958" y="740" w="136" h="244" pX="0.5" pY="0.5" oX="143" oY="73" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_05_ 1" x="484" y="953" w="175" h="272" pX="0.5" pY="0.5" oX="157" oY="44" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_06_ 1" x="0" y="2754" w="220" h="232" pX="0.5" pY="0.5" oX="31" oY="97" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_07_ 2" x="2510" y="945" w="151" h="233" pX="0.5" pY="0.5" oX="133" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_08_ 2" x="2652" y="4034" w="176" h="183" pX="0.5" pY="0.5" oX="78" oY="99" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_09_ 2" x="0" y="2986" w="227" h="217" pX="0.5" pY="0.5" oX="165" oY="59" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_10_ 3" x="2997" y="451" w="199" h="224" pX="0.5" pY="0.5" oX="114" oY="75" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_11_ 3" x="1777" y="0" w="212" h="248" pX="0.5" pY="0.5" oX="113" oY="93" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_12_ 3" x="772" y="1546" w="167" h="250" pX="0.5" pY="0.5" oX="94" oY="20" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_13_ 4" x="939" y="1521" w="156" h="250" pX="0.5" pY="0.5" oX="126" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_14_ 4" x="317" y="0" w="145" h="298" pX="0.5" pY="0.5" oX="155" oY="18" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_15_ 4" x="3838" y="209" w="203" h="184" pX="0.5" pY="0.5" oX="88" oY="131" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_16_ 5" x="3317" y="0" w="210" h="220" pX="0.5" pY="0.5" oX="104" oY="72" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_17_ 5" x="1388" y="2188" w="230" h="237" pX="0.5" pY="0.5" oX="114" oY="73" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_18_ 5" x="1184" y="1261" w="194" h="260" pX="0.5" pY="0.5" oX="66" oY="50" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_19_ 6" x="0" y="3838" w="207" h="196" pX="0.5" pY="0.5" oX="110" oY="90" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_20_ 6" x="438" y="3633" w="214" h="182" pX="0.5" pY="0.5" oX="83" oY="73" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_21_ 6" x="3653" y="3770" w="202" h="207" pX="0.5" pY="0.5" oX="155" oY="93" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_22_ 7" x="1618" y="2216" w="152" h="237" pX="0.5" pY="0.5" oX="142" oY="80" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_23_ 7" x="2971" y="2781" w="159" h="224" pX="0.5" pY="0.5" oX="113" oY="100" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 1_24_ 7" x="1174" y="2017" w="214" h="241" pX="0.5" pY="0.5" oX="121" oY="36" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_01_ 0" x="3643" y="417" w="193" h="208" pX="0.5" pY="0.5" oX="119" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_02_ 0" x="986" y="992" w="203" h="269" pX="0.5" pY="0.5" oX="122" oY="23" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_03_ 0" x="3685" y="2547" w="174" h="190" pX="0.5" pY="0.5" oX="127" oY="160" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_04_ 1" x="1320" y="943" w="108" h="254" pX="0.5" pY="0.5" oX="140" oY="78" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_05_ 1" x="320" y="953" w="164" h="280" pX="0.5" pY="0.5" oX="146" oY="50" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_06_ 1" x="2449" y="3834" w="171" h="200" pX="0.5" pY="0.5" oX="47" oY="116" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_07_ 2" x="0" y="1548" w="110" h="253" pX="0.5" pY="0.5" oX="176" oY="57" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_08_ 2" x="187" y="953" w="133" h="281" pX="0.5" pY="0.5" oX="132" oY="27" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_09_ 2" x="544" y="4034" w="170" h="192" pX="0.5" pY="0.5" oX="199" oY="112" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_10_ 3" x="1751" y="3622" w="193" h="214" pX="0.5" pY="0.5" oX="99" oY="51" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_11_ 3" x="1228" y="3838" w="196" h="189" pX="0.5" pY="0.5" oX="93" oY="70" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_12_ 3" x="2478" y="4034" w="174" h="183" pX="0.5" pY="0.5" oX="110" oY="72" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_13_ 4" x="862" y="2280" w="156" h="237" pX="0.5" pY="0.5" oX="123" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_14_ 4" x="263" y="409" w="183" h="296" pX="0.5" pY="0.5" oX="125" oY="27" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_15_ 4" x="2828" y="4034" w="173" h="182" pX="0.5" pY="0.5" oX="82" oY="151" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_16_ 5" x="2069" y="492" w="175" h="240" pX="0.5" pY="0.5" oX="100" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_17_ 5" x="2457" y="1370" w="186" h="236" pX="0.5" pY="0.5" oX="102" oY="61" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_18_ 5" x="3859" y="2139" w="183" h="203" pX="0.5" pY="0.5" oX="72" oY="77" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_19_ 6" x="2106" y="241" w="170" h="240" pX="0.5" pY="0.5" oX="150" oY="68" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_20_ 6" x="595" y="0" w="167" h="293" pX="0.5" pY="0.5" oX="142" oY="13" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_21_ 6" x="1740" y="4033" w="187" h="178" pX="0.5" pY="0.5" oX="156" oY="146" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_22_ 7" x="2466" y="1846" w="157" h="236" pX="0.5" pY="0.5" oX="136" oY="48" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_23_ 7" x="177" y="2039" w="165" h="243" pX="0.5" pY="0.5" oX="121" oY="40" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Attack 2_24_ 7" x="3836" y="417" w="180" h="203" pX="0.5" pY="0.5" oX="157" oY="80" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_01_ 0" x="131" y="706" w="289" h="234" pX="0.5" pY="0.5" oX="28" oY="55" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_02_ 0" x="446" y="531" w="289" h="234" pX="0.5" pY="0.5" oX="28" oY="55" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_03_ 0" x="462" y="296" w="290" h="235" pX="0.5" pY="0.5" oX="28" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_04_ 1" x="148" y="1280" w="148" h="267" pX="0.5" pY="0.5" oX="156" oY="30" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_05_ 1" x="0" y="1280" w="148" h="268" pX="0.5" pY="0.5" oX="156" oY="29" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_06_ 1" x="1169" y="468" w="147" h="269" pX="0.5" pY="0.5" oX="156" oY="28" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_07_ 2" x="462" y="0" w="133" h="296" pX="0.5" pY="0.5" oX="122" oY="51" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_08_ 2" x="131" y="409" w="132" h="297" pX="0.5" pY="0.5" oX="123" oY="50" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_09_ 2" x="0" y="409" w="131" h="298" pX="0.5" pY="0.5" oX="124" oY="49" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_10_ 3" x="735" y="756" w="283" h="188" pX="0.5" pY="0.5" oX="109" oY="101" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_11_ 3" x="762" y="0" w="285" h="188" pX="0.5" pY="0.5" oX="108" oY="101" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_12_ 3" x="420" y="765" w="286" h="188" pX="0.5" pY="0.5" oX="108" oY="101" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_13_ 4" x="492" y="1797" w="245" h="237" pX="0.5" pY="0.5" oX="95" oY="40" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_14_ 4" x="246" y="1799" w="246" h="237" pX="0.5" pY="0.5" oX="94" oY="40" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_15_ 4" x="0" y="1801" w="246" h="238" pX="0.5" pY="0.5" oX="93" oY="39" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_16_ 5" x="2001" y="3361" w="192" h="218" pX="0.5" pY="0.5" oX="170" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_17_ 5" x="2193" y="3404" w="191" h="218" pX="0.5" pY="0.5" oX="170" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_18_ 5" x="2384" y="3404" w="191" h="218" pX="0.5" pY="0.5" oX="171" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_19_ 6" x="0" y="997" w="187" h="283" pX="0.5" pY="0.5" oX="61" oY="37" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_20_ 6" x="752" y="472" w="187" h="284" pX="0.5" pY="0.5" oX="62" oY="36" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_21_ 6" x="762" y="188" w="188" h="284" pX="0.5" pY="0.5" oX="62" oY="36" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_22_ 7" x="2257" y="1150" w="239" h="220" pX="0.5" pY="0.5" oX="86" oY="104" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_23_ 7" x="2271" y="721" w="239" h="220" pX="0.5" pY="0.5" oX="87" oY="103" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Behavior_24_ 7" x="1970" y="1971" w="240" h="222" pX="0.5" pY="0.5" oX="87" oY="101" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_01_ 0" x="3809" y="1222" w="200" h="198" pX="0.5" pY="0.5" oX="107" oY="88" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_02_ 0" x="1012" y="4034" w="188" h="188" pX="0.5" pY="0.5" oX="110" oY="99" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_03_ 0" x="2112" y="4034" w="182" h="185" pX="0.5" pY="0.5" oX="115" oY="101" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_04_ 1" x="1933" y="496" w="136" h="244" pX="0.5" pY="0.5" oX="143" oY="73" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_05_ 1" x="2104" y="972" w="151" h="237" pX="0.5" pY="0.5" oX="129" oY="81" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_06_ 1" x="1267" y="2952" w="144" h="227" pX="0.5" pY="0.5" oX="136" oY="90" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_07_ 2" x="2051" y="2430" w="152" h="233" pX="0.5" pY="0.5" oX="132" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_08_ 2" x="2994" y="2330" w="158" h="225" pX="0.5" pY="0.5" oX="132" oY="94" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_09_ 2" x="1944" y="3622" w="153" h="214" pX="0.5" pY="0.5" oX="132" oY="104" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_10_ 3" x="3074" y="675" w="199" h="224" pX="0.5" pY="0.5" oX="114" oY="75" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_11_ 3" x="3485" y="3345" w="198" h="216" pX="0.5" pY="0.5" oX="113" oY="84" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_12_ 3" x="3423" y="3771" w="182" h="204" pX="0.5" pY="0.5" oX="114" oY="95" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_13_ 4" x="1095" y="1521" w="156" h="250" pX="0.5" pY="0.5" oX="126" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_14_ 4" x="357" y="2520" w="139" h="234" pX="0.5" pY="0.5" oX="129" oY="84" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_15_ 4" x="3154" y="1817" w="141" h="221" pX="0.5" pY="0.5" oX="130" oY="96" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_16_ 5" x="3317" y="220" w="210" h="220" pX="0.5" pY="0.5" oX="104" oY="72" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_17_ 5" x="2692" y="3621" w="185" h="212" pX="0.5" pY="0.5" oX="115" oY="81" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_18_ 5" x="2692" y="3833" w="184" h="201" pX="0.5" pY="0.5" oX="116" oY="91" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_19_ 6" x="615" y="3838" w="207" h="195" pX="0.5" pY="0.5" oX="110" oY="90" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_20_ 6" x="1927" y="4034" w="185" h="186" pX="0.5" pY="0.5" oX="111" oY="100" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_21_ 6" x="2294" y="4034" w="184" h="181" pX="0.5" pY="0.5" oX="111" oY="104" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_22_ 7" x="2104" y="1209" w="152" h="237" pX="0.5" pY="0.5" oX="142" oY="80" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_23_ 7" x="2203" y="2662" w="148" h="230" pX="0.5" pY="0.5" oX="143" oY="87" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Block_24_ 7" x="3379" y="659" w="147" h="219" pX="0.5" pY="0.5" oX="143" oY="98" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_01_ 0" x="1560" y="4034" w="180" h="187" pX="0.5" pY="0.5" oX="122" oY="125" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_02_ 0" x="1380" y="4034" w="180" h="187" pX="0.5" pY="0.5" oX="122" oY="125" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_03_ 0" x="1200" y="4034" w="180" h="188" pX="0.5" pY="0.5" oX="122" oY="124" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_04_ 1" x="3485" y="3561" w="168" h="210" pX="0.5" pY="0.5" oX="99" oY="98" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_05_ 1" x="3506" y="1311" w="168" h="212" pX="0.5" pY="0.5" oX="99" oY="96" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_06_ 1" x="3516" y="1097" w="168" h="214" pX="0.5" pY="0.5" oX="99" oY="94" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_07_ 2" x="2820" y="0" w="182" h="229" pX="0.5" pY="0.5" oX="144" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_08_ 2" x="2370" y="2550" w="182" h="230" pX="0.5" pY="0.5" oX="144" oY="81" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_09_ 2" x="2625" y="236" w="182" h="231" pX="0.5" pY="0.5" oX="144" oY="80" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_10_ 3" x="178" y="2520" w="179" h="234" pX="0.5" pY="0.5" oX="118" oY="59" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_11_ 3" x="0" y="2520" w="178" h="234" pX="0.5" pY="0.5" oX="118" oY="59" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_12_ 3" x="2445" y="475" w="178" h="235" pX="0.5" pY="0.5" oX="118" oY="58" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_13_ 4" x="3859" y="1420" w="181" h="197" pX="0.5" pY="0.5" oX="92" oY="128" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_14_ 4" x="3859" y="2744" w="181" h="199" pX="0.5" pY="0.5" oX="93" oY="126" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_15_ 4" x="3859" y="620" w="181" h="202" pX="0.5" pY="0.5" oX="94" oY="123" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_16_ 5" x="3859" y="822" w="186" h="202" pX="0.5" pY="0.5" oX="101" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_17_ 5" x="3859" y="0" w="186" h="204" pX="0.5" pY="0.5" oX="101" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_18_ 5" x="3237" y="3771" w="186" h="206" pX="0.5" pY="0.5" oX="101" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_19_ 6" x="1815" y="3142" w="186" h="221" pX="0.5" pY="0.5" oX="124" oY="96" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_20_ 6" x="3130" y="3002" w="186" h="221" pX="0.5" pY="0.5" oX="124" oY="95" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_21_ 6" x="3130" y="2781" w="186" h="221" pX="0.5" pY="0.5" oX="124" oY="94" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_22_ 7" x="1627" y="1975" w="177" h="241" pX="0.5" pY="0.5" oX="147" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_23_ 7" x="507" y="2039" w="177" h="242" pX="0.5" pY="0.5" oX="146" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Critical HP_24_ 7" x="0" y="2039" w="177" h="243" pX="0.5" pY="0.5" oX="145" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Dead_01_ 0" x="1047" y="0" w="279" h="220" pX="0.5" pY="0.5" oX="70" oY="121" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Dead_02_ 1" x="665" y="1331" w="258" h="215" pX="0.5" pY="0.5" oX="76" oY="131" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Dead_03_ 2" x="1320" y="224" w="259" h="206" pX="0.5" pY="0.5" oX="79" oY="134" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Dead_04_ 3" x="706" y="944" w="280" h="204" pX="0.5" pY="0.5" oX="63" oY="128" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Dead_05_ 4" x="950" y="220" w="271" h="248" pX="0.5" pY="0.5" oX="67" oY="101" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Dead_06_ 5" x="0" y="203" w="316" h="206" pX="0.5" pY="0.5" oX="67" oY="133" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Dead_07_ 6" x="0" y="0" w="317" h="203" pX="0.5" pY="0.5" oX="30" oY="141" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Dead_08_ 7" x="1018" y="745" w="271" h="247" pX="0.5" pY="0.5" oX="74" oY="121" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_01_ 0" x="657" y="3421" w="218" h="177" pX="0.5" pY="0.5" oX="96" oY="99" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_02_ 0" x="681" y="2986" w="225" h="213" pX="0.5" pY="0.5" oX="102" oY="62" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_03_ 0" x="3855" y="3536" w="190" h="199" pX="0.5" pY="0.5" oX="152" oY="29" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_04_ 1" x="3146" y="1371" w="151" h="224" pX="0.5" pY="0.5" oX="126" oY="68" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_05_ 1" x="1777" y="744" w="181" h="248" pX="0.5" pY="0.5" oX="120" oY="59" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_06_ 1" x="2048" y="2686" w="153" h="228" pX="0.5" pY="0.5" oX="205" oY="91" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_07_ 2" x="3154" y="224" w="163" h="222" pX="0.5" pY="0.5" oX="134" oY="75" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_08_ 2" x="235" y="1547" w="189" h="252" pX="0.5" pY="0.5" oX="116" oY="49" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_09_ 2" x="342" y="2039" w="165" h="243" pX="0.5" pY="0.5" oX="55" oY="42" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_10_ 3" x="1409" y="1947" w="218" h="241" pX="0.5" pY="0.5" oX="108" oY="57" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_11_ 3" x="1770" y="2216" w="225" h="237" pX="0.5" pY="0.5" oX="97" oY="72" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_12_ 3" x="1586" y="0" w="191" h="250" pX="0.5" pY="0.5" oX="79" oY="103" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_13_ 4" x="567" y="3199" w="198" h="222" pX="0.5" pY="0.5" oX="86" oY="84" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_14_ 4" x="424" y="1546" w="169" h="251" pX="0.5" pY="0.5" oX="136" oY="50" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_15_ 4" x="2950" y="696" w="124" h="225" pX="0.5" pY="0.5" oX="213" oY="59" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_16_ 5" x="2276" y="1608" w="204" h="238" pX="0.5" pY="0.5" oX="88" oY="61" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_17_ 5" x="2278" y="0" w="232" h="240" pX="0.5" pY="0.5" oX="85" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_18_ 5" x="2788" y="2102" w="214" h="228" pX="0.5" pY="0.5" oX="119" oY="104" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_19_ 6" x="3316" y="2911" w="201" h="217" pX="0.5" pY="0.5" oX="132" oY="88" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_20_ 6" x="1108" y="2727" w="231" h="225" pX="0.5" pY="0.5" oX="109" oY="62" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_21_ 6" x="3460" y="2256" w="216" h="184" pX="0.5" pY="0.5" oX="85" oY="37" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_22_ 7" x="2001" y="3141" w="203" h="220" pX="0.5" pY="0.5" oX="134" oY="61" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_23_ 7" x="593" y="1546" w="179" h="251" pX="0.5" pY="0.5" oX="107" oY="48" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Evade_24_ 7" x="1189" y="992" w="131" h="259" pX="0.5" pY="0.5" oX="87" oY="78" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_01_ 0" x="0" y="4034" w="192" h="194" pX="0.5" pY="0.5" oX="121" oY="99" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_02_ 0" x="1536" y="3622" w="215" h="212" pX="0.5" pY="0.5" oX="118" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_03_ 0" x="1326" y="0" w="260" h="224" pX="0.5" pY="0.5" oX="100" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_04_ 1" x="1574" y="1192" w="119" h="249" pX="0.5" pY="0.5" oX="135" oY="84" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_05_ 1" x="110" y="1548" w="125" h="252" pX="0.5" pY="0.5" oX="138" oY="81" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_06_ 1" x="939" y="472" w="121" h="273" pX="0.5" pY="0.5" oX="151" oY="60" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_07_ 2" x="684" y="2039" w="123" h="241" pX="0.5" pY="0.5" oX="169" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_08_ 2" x="1289" y="1770" w="120" h="246" pX="0.5" pY="0.5" oX="162" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_09_ 2" x="1060" y="468" w="109" h="270" pX="0.5" pY="0.5" oX="152" oY="38" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_10_ 3" x="3045" y="3650" w="192" h="207" pX="0.5" pY="0.5" oX="98" oY="57" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_11_ 3" x="0" y="3638" w="216" h="200" pX="0.5" pY="0.5" oX="89" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_12_ 3" x="404" y="1331" w="261" h="184" pX="0.5" pY="0.5" oX="64" oY="80" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_13_ 4" x="2203" y="2429" w="167" h="233" pX="0.5" pY="0.5" oX="120" oY="90" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_14_ 4" x="2276" y="1370" w="181" h="238" pX="0.5" pY="0.5" oX="113" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_15_ 4" x="1777" y="992" w="204" h="247" pX="0.5" pY="0.5" oX="104" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_16_ 5" x="2441" y="240" w="184" h="235" pX="0.5" pY="0.5" oX="99" oY="68" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_17_ 5" x="2792" y="2330" w="202" h="227" pX="0.5" pY="0.5" oX="80" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_18_ 5" x="487" y="2282" w="206" h="238" pX="0.5" pY="0.5" oX="84" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_19_ 6" x="2552" y="2777" w="179" h="226" pX="0.5" pY="0.5" oX="142" oY="81" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_20_ 6" x="2244" y="481" w="201" h="240" pX="0.5" pY="0.5" oX="141" oY="68" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_21_ 6" x="1574" y="943" w="203" h="249" pX="0.5" pY="0.5" oX="135" oY="58" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_22_ 7" x="2790" y="696" w="160" h="228" pX="0.5" pY="0.5" oX="135" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_23_ 7" x="2892" y="3005" w="180" h="221" pX="0.5" pY="0.5" oX="128" oY="61" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Get Hit_24_ 7" x="1529" y="2686" w="203" h="230" pX="0.5" pY="0.5" oX="116" oY="52" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_01_ 0" x="3809" y="1024" w="200" h="198" pX="0.5" pY="0.5" oX="107" oY="88" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_02_ 0" x="1536" y="3836" w="202" h="197" pX="0.5" pY="0.5" oX="106" oY="89" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_03_ 0" x="1738" y="3836" w="202" h="197" pX="0.5" pY="0.5" oX="106" oY="89" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_04_ 1" x="1808" y="1731" w="136" h="244" pX="0.5" pY="0.5" oX="143" oY="73" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_05_ 1" x="1938" y="248" w="136" h="244" pX="0.5" pY="0.5" oX="143" oY="73" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_06_ 1" x="772" y="1796" w="137" h="243" pX="0.5" pY="0.5" oX="142" oY="74" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_07_ 2" x="941" y="2517" w="151" h="233" pX="0.5" pY="0.5" oX="133" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_08_ 2" x="2471" y="2317" w="151" h="233" pX="0.5" pY="0.5" oX="133" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_09_ 2" x="2669" y="0" w="151" h="233" pX="0.5" pY="0.5" oX="133" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_10_ 3" x="3002" y="2055" w="199" h="224" pX="0.5" pY="0.5" oX="114" oY="75" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_11_ 3" x="199" y="3203" w="200" h="223" pX="0.5" pY="0.5" oX="113" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_12_ 3" x="906" y="2985" w="202" h="222" pX="0.5" pY="0.5" oX="112" oY="77" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_13_ 4" x="939" y="1521" w="156" h="250" pX="0.5" pY="0.5" oX="126" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_14_ 4" x="1554" y="430" w="156" h="249" pX="0.5" pY="0.5" oX="126" oY="68" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_15_ 4" x="1777" y="496" w="156" h="248" pX="0.5" pY="0.5" oX="126" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_16_ 5" x="3317" y="0" w="210" h="220" pX="0.5" pY="0.5" oX="104" oY="72" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_17_ 5" x="3316" y="2037" w="211" h="219" pX="0.5" pY="0.5" oX="103" oY="73" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_18_ 5" x="3316" y="2475" w="211" h="218" pX="0.5" pY="0.5" oX="103" oY="74" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_19_ 6" x="216" y="3638" w="207" h="196" pX="0.5" pY="0.5" oX="110" oY="90" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_20_ 6" x="207" y="3838" w="207" h="195" pX="0.5" pY="0.5" oX="110" oY="91" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_21_ 6" x="1021" y="3838" w="207" h="194" pX="0.5" pY="0.5" oX="110" oY="92" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_22_ 7" x="1995" y="2193" w="152" h="237" pX="0.5" pY="0.5" oX="142" oY="80" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_23_ 7" x="2510" y="710" w="152" h="235" pX="0.5" pY="0.5" oX="142" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Idle_24_ 7" x="1402" y="2425" w="152" h="233" pX="0.5" pY="0.5" oX="141" oY="84" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_01_ 0" x="3181" y="4033" w="172" h="180" pX="0.5" pY="0.5" oX="120" oY="135" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_02_ 0" x="3423" y="3975" w="173" h="179" pX="0.5" pY="0.5" oX="120" oY="136" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_03_ 0" x="3596" y="3977" w="173" h="179" pX="0.5" pY="0.5" oX="120" oY="136" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_04_ 1" x="3685" y="2943" w="196" h="176" pX="0.5" pY="0.5" oX="111" oY="112" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_05_ 1" x="1579" y="250" w="196" h="176" pX="0.5" pY="0.5" oX="111" oY="112" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_06_ 1" x="3028" y="3857" w="196" h="176" pX="0.5" pY="0.5" oX="111" oY="112" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_07_ 2" x="3643" y="625" w="207" h="205" pX="0.5" pY="0.5" oX="104" oY="105" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_08_ 2" x="3526" y="830" w="207" h="206" pX="0.5" pY="0.5" oX="104" oY="104" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_09_ 2" x="3527" y="1935" w="207" h="206" pX="0.5" pY="0.5" oX="104" oY="103" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_10_ 3" x="807" y="2039" w="167" h="241" pX="0.5" pY="0.5" oX="125" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_11_ 3" x="1804" y="1975" w="166" h="241" pX="0.5" pY="0.5" oX="125" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_12_ 3" x="2104" y="732" w="167" h="240" pX="0.5" pY="0.5" oX="124" oY="83" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_13_ 4" x="3297" y="1121" w="219" h="174" pX="0.5" pY="0.5" oX="91" oY="124" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_14_ 4" x="2204" y="3230" w="219" h="174" pX="0.5" pY="0.5" oX="91" oY="124" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_15_ 4" x="2423" y="3230" w="219" h="173" pX="0.5" pY="0.5" oX="91" oY="125" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_16_ 5" x="3002" y="226" w="152" h="225" pX="0.5" pY="0.5" oX="120" oY="98" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_17_ 5" x="3002" y="1605" w="152" h="225" pX="0.5" pY="0.5" oX="120" oY="98" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_18_ 5" x="3002" y="1830" w="152" h="225" pX="0.5" pY="0.5" oX="120" oY="98" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_19_ 6" x="3685" y="2346" w="162" h="201" pX="0.5" pY="0.5" oX="139" oY="129" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_20_ 6" x="3859" y="2342" w="162" h="202" pX="0.5" pY="0.5" oX="139" oY="128" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_21_ 6" x="3855" y="1728" w="162" h="203" pX="0.5" pY="0.5" oX="139" oY="127" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_22_ 7" x="0" y="3427" w="219" h="211" pX="0.5" pY="0.5" oX="101" oY="86" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_23_ 7" x="438" y="3421" w="219" h="212" pX="0.5" pY="0.5" oX="101" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Rest_24_ 7" x="219" y="3426" w="219" h="212" pX="0.5" pY="0.5" oX="101" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_01_ 0" x="1584" y="1441" w="177" h="247" pX="0.5" pY="0.5" oX="121" oY="86" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_02_ 0" x="3316" y="2693" w="193" h="218" pX="0.5" pY="0.5" oX="110" oY="115" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_03_ 0" x="3001" y="4033" w="180" h="181" pX="0.5" pY="0.5" oX="120" oY="114" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_04_ 0" x="3685" y="2737" w="166" h="186" pX="0.5" pY="0.5" oX="125" oY="112" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_05_ 0" x="2112" y="1722" w="164" h="240" pX="0.5" pY="0.5" oX="128" oY="93" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_06_ 0" x="1218" y="3622" w="162" h="216" pX="0.5" pY="0.5" oX="140" oY="121" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_07_ 0" x="4045" y="0" w="177" h="170" pX="0.5" pY="0.5" oX="125" oY="110" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_08_ 0" x="3517" y="2693" w="168" h="216" pX="0.5" pY="0.5" oX="131" oY="104" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_09_ 1" x="1018" y="2258" w="237" h="236" pX="0.5" pY="0.5" oX="65" oY="57" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_10_ 1" x="1218" y="3404" w="177" h="218" pX="0.5" pY="0.5" oX="87" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_11_ 1" x="2655" y="2102" w="120" h="214" pX="0.5" pY="0.5" oX="120" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_12_ 1" x="3685" y="2141" w="142" h="205" pX="0.5" pY="0.5" oX="120" oY="79" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_13_ 1" x="833" y="3598" w="215" h="195" pX="0.5" pY="0.5" oX="65" oY="79" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_14_ 1" x="3855" y="3332" w="189" h="204" pX="0.5" pY="0.5" oX="83" oY="89" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_15_ 1" x="3521" y="440" w="122" h="210" pX="0.5" pY="0.5" oX="120" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_16_ 1" x="3683" y="3124" w="176" h="208" pX="0.5" pY="0.5" oX="83" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_17_ 2" x="2271" y="941" w="239" h="209" pX="0.5" pY="0.5" oX="112" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_18_ 2" x="657" y="3623" w="176" h="215" pX="0.5" pY="0.5" oX="148" oY="79" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_19_ 2" x="2435" y="3622" w="123" h="212" pX="0.5" pY="0.5" oX="183" oY="78" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_20_ 2" x="2727" y="3345" w="153" h="217" pX="0.5" pY="0.5" oX="154" oY="77" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_21_ 2" x="3072" y="3223" w="215" h="217" pX="0.5" pY="0.5" oX="137" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_22_ 2" x="833" y="3793" w="188" h="207" pX="0.5" pY="0.5" oX="140" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_23_ 2" x="2558" y="3622" w="134" h="212" pX="0.5" pY="0.5" oX="173" oY="74" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_24_ 2" x="3682" y="1520" w="177" h="208" pX="0.5" pY="0.5" oX="157" oY="71" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_25_ 3" x="1378" y="430" w="176" h="257" pX="0.5" pY="0.5" oX="126" oY="52" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_26_ 3" x="2955" y="1380" w="191" h="225" pX="0.5" pY="0.5" oX="119" oY="60" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_27_ 3" x="2266" y="3834" w="183" h="200" pX="0.5" pY="0.5" oX="121" oY="59" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_28_ 3" x="2622" y="2547" w="170" h="230" pX="0.5" pY="0.5" oX="128" oY="56" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_29_ 3" x="2276" y="241" w="165" h="239" pX="0.5" pY="0.5" oX="130" oY="56" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_30_ 3" x="394" y="2754" w="166" h="232" pX="0.5" pY="0.5" oX="116" oY="60" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_31_ 3" x="1560" y="3363" w="177" h="217" pX="0.5" pY="0.5" oX="122" oY="55" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_32_ 3" x="2652" y="1178" w="168" h="232" pX="0.5" pY="0.5" oX="123" oY="55" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_33_ 4" x="1761" y="1239" w="216" h="247" pX="0.5" pY="0.5" oX="84" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_34_ 4" x="1734" y="2916" w="170" h="226" pX="0.5" pY="0.5" oX="98" oY="84" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_35_ 4" x="2877" y="3771" w="151" h="205" pX="0.5" pY="0.5" oX="126" oY="89" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_36_ 4" x="3527" y="1734" w="150" h="196" pX="0.5" pY="0.5" oX="128" oY="99" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_37_ 4" x="3316" y="1817" w="211" h="220" pX="0.5" pY="0.5" oX="95" oY="98" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_38_ 4" x="1395" y="3400" w="165" h="218" pX="0.5" pY="0.5" oX="117" oY="109" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_39_ 4" x="3683" y="3332" w="142" h="207" pX="0.5" pY="0.5" oX="131" oY="86" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_40_ 4" x="2097" y="3622" w="169" h="214" pX="0.5" pY="0.5" oX="97" oY="84" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_41_ 5" x="1378" y="1451" w="206" h="250" pX="0.5" pY="0.5" oX="101" oY="62" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_42_ 5" x="1050" y="3404" w="168" h="219" pX="0.5" pY="0.5" oX="118" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_43_ 5" x="384" y="4034" w="160" h="193" pX="0.5" pY="0.5" oX="116" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_44_ 5" x="3674" y="1311" w="135" h="209" pX="0.5" pY="0.5" oX="129" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_45_ 5" x="1626" y="3142" w="189" h="221" pX="0.5" pY="0.5" oX="87" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_46_ 5" x="3245" y="3562" w="185" h="209" pX="0.5" pY="0.5" oX="95" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_47_ 5" x="3360" y="440" w="161" h="219" pX="0.5" pY="0.5" oX="117" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_48_ 5" x="2820" y="924" w="164" h="228" pX="0.5" pY="0.5" oX="115" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_49_ 6" x="767" y="2753" w="200" h="232" pX="0.5" pY="0.5" oX="116" oY="89" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_50_ 6" x="2986" y="1146" w="165" h="225" pX="0.5" pY="0.5" oX="133" oY="100" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_51_ 6" x="3527" y="2440" w="155" h="210" pX="0.5" pY="0.5" oX="147" oY="96" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_52_ 6" x="3859" y="3119" w="142" h="195" pX="0.5" pY="0.5" oX="150" oY="92" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_53_ 6" x="2276" y="1846" w="190" h="238" pX="0.5" pY="0.5" oX="140" oY="71" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_54_ 6" x="1108" y="3179" w="183" h="221" pX="0.5" pY="0.5" oX="133" oY="94" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_55_ 6" x="2496" y="1178" w="154" h="192" pX="0.5" pY="0.5" oX="147" oY="94" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_56_ 6" x="2350" y="3006" w="155" h="221" pX="0.5" pY="0.5" oX="146" oY="90" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_57_ 7" x="2777" y="467" w="220" h="229" pX="0.5" pY="0.5" oX="112" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_58_ 7" x="2880" y="3226" w="167" h="217" pX="0.5" pY="0.5" oX="146" oY="62" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_59_ 7" x="1048" y="3623" w="148" h="214" pX="0.5" pY="0.5" oX="146" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_60_ 7" x="2655" y="1872" w="152" h="230" pX="0.5" pY="0.5" oX="142" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_61_ 7" x="560" y="2754" w="207" h="232" pX="0.5" pY="0.5" oX="116" oY="62" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_62_ 7" x="1732" y="2686" w="157" h="230" pX="0.5" pY="0.5" oX="137" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_63_ 7" x="3316" y="2256" w="144" h="219" pX="0.5" pY="0.5" oX="150" oY="59" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Run_64_ 7" x="3506" y="1523" w="169" h="211" pX="0.5" pY="0.5" oX="150" oY="57" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_01_ 0" x="192" y="4034" w="192" h="194" pX="0.5" pY="0.5" oX="121" oY="99" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_02_ 0" x="227" y="2986" w="227" h="211" pX="0.5" pY="0.5" oX="109" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_03_ 0" x="923" y="1261" w="261" h="223" pX="0.5" pY="0.5" oX="95" oY="70" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_04_ 1" x="1251" y="1521" w="119" h="249" pX="0.5" pY="0.5" oX="135" oY="84" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_05_ 1" x="1428" y="943" w="114" h="254" pX="0.5" pY="0.5" oX="145" oY="79" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_06_ 1" x="0" y="707" w="122" h="290" pX="0.5" pY="0.5" oX="151" oY="44" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_07_ 2" x="1981" y="984" w="123" h="241" pX="0.5" pY="0.5" oX="169" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_08_ 2" x="1409" y="1701" w="111" h="246" pX="0.5" pY="0.5" oX="165" oY="62" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_09_ 2" x="296" y="1261" w="108" h="266" pX="0.5" pY="0.5" oX="153" oY="42" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_10_ 3" x="423" y="3815" w="192" h="207" pX="0.5" pY="0.5" oX="98" oY="57" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_11_ 3" x="454" y="2986" w="227" h="199" pX="0.5" pY="0.5" oX="86" oY="66" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_12_ 3" x="659" y="1148" w="264" h="183" pX="0.5" pY="0.5" oX="67" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_13_ 4" x="1092" y="2494" w="167" h="233" pX="0.5" pY="0.5" oX="120" oY="90" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_14_ 4" x="0" y="2282" w="182" h="238" pX="0.5" pY="0.5" oX="113" oY="85" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_15_ 4" x="1378" y="1197" w="196" h="254" pX="0.5" pY="0.5" oX="118" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_16_ 5" x="2471" y="2082" w="184" h="235" pX="0.5" pY="0.5" oX="99" oY="68" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_17_ 5" x="0" y="3203" w="199" h="224" pX="0.5" pY="0.5" oX="86" oY="80" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_18_ 5" x="974" y="2017" w="200" h="241" pX="0.5" pY="0.5" oX="97" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_19_ 6" x="2792" y="2557" w="179" h="226" pX="0.5" pY="0.5" oX="142" oY="81" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_20_ 6" x="2060" y="1482" w="197" h="240" pX="0.5" pY="0.5" oX="139" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_21_ 6" x="939" y="1771" w="198" h="246" pX="0.5" pY="0.5" oX="129" oY="61" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_22_ 7" x="2790" y="696" w="160" h="228" pX="0.5" pY="0.5" oX="135" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_23_ 7" x="1291" y="3179" w="184" h="221" pX="0.5" pY="0.5" oX="126" oY="61" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Use Skill_24_ 7" x="3287" y="3345" w="198" h="217" pX="0.5" pY="0.5" oX="110" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_01_ 0" x="2480" y="1606" w="172" h="236" pX="0.5" pY="0.5" oX="129" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_02_ 0" x="3154" y="0" w="163" h="224" pX="0.5" pY="0.5" oX="131" oY="78" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_03_ 0" x="3685" y="1728" w="170" h="207" pX="0.5" pY="0.5" oX="130" oY="79" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_04_ 0" x="2677" y="3009" w="166" h="221" pX="0.5" pY="0.5" oX="133" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_05_ 0" x="1554" y="2453" w="167" h="233" pX="0.5" pY="0.5" oX="133" oY="81" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_06_ 0" x="399" y="3199" w="168" h="222" pX="0.5" pY="0.5" oX="131" oY="78" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_07_ 0" x="3685" y="0" w="174" h="209" pX="0.5" pY="0.5" oX="126" oY="76" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_08_ 0" x="1721" y="2453" w="164" h="233" pX="0.5" pY="0.5" oX="133" oY="75" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_09_ 1" x="1572" y="2916" w="162" h="226" pX="0.5" pY="0.5" oX="118" oY="66" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_10_ 1" x="2815" y="1410" w="140" h="229" pX="0.5" pY="0.5" oX="132" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_11_ 1" x="3273" y="666" w="106" h="220" pX="0.5" pY="0.5" oX="147" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_12_ 1" x="2575" y="3403" w="152" h="218" pX="0.5" pY="0.5" oX="117" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_13_ 1" x="3317" y="1295" w="162" h="219" pX="0.5" pY="0.5" oX="107" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_14_ 1" x="765" y="3199" w="125" h="222" pX="0.5" pY="0.5" oX="137" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_15_ 1" x="3151" y="1146" w="126" h="224" pX="0.5" pY="0.5" oX="145" oY="62" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_16_ 1" x="1411" y="2916" w="161" h="226" pX="0.5" pY="0.5" oX="109" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_17_ 2" x="2655" y="1410" w="160" h="231" pX="0.5" pY="0.5" oX="133" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_18_ 2" x="2661" y="945" w="137" h="231" pX="0.5" pY="0.5" oX="143" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_19_ 2" x="1255" y="2258" w="123" h="233" pX="0.5" pY="0.5" oX="160" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_20_ 2" x="1904" y="2915" w="148" h="226" pX="0.5" pY="0.5" oX="151" oY="66" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_21_ 2" x="1889" y="2686" w="159" h="229" pX="0.5" pY="0.5" oX="147" oY="60" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_22_ 2" x="2662" y="707" w="128" h="231" pX="0.5" pY="0.5" oX="151" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_23_ 2" x="2052" y="2914" w="125" h="226" pX="0.5" pY="0.5" oX="153" oY="66" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_24_ 2" x="1475" y="3142" w="151" h="221" pX="0.5" pY="0.5" oX="154" oY="65" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_25_ 3" x="1944" y="1730" w="168" h="241" pX="0.5" pY="0.5" oX="124" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_26_ 3" x="779" y="2517" w="162" h="233" pX="0.5" pY="0.5" oX="131" oY="53" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_27_ 3" x="2177" y="2914" w="173" h="226" pX="0.5" pY="0.5" oX="122" oY="51" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_28_ 3" x="2984" y="921" w="169" h="225" pX="0.5" pY="0.5" oX="123" oY="50" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_29_ 3" x="693" y="2280" w="169" h="237" pX="0.5" pY="0.5" oX="122" oY="52" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_30_ 3" x="2622" y="2317" w="166" h="230" pX="0.5" pY="0.5" oX="126" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_31_ 3" x="2877" y="3562" w="168" h="209" pX="0.5" pY="0.5" oX="126" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_32_ 3" x="3154" y="1595" w="163" h="222" pX="0.5" pY="0.5" oX="127" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_33_ 4" x="2816" y="1639" w="176" h="228" pX="0.5" pY="0.5" oX="117" oY="59" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_34_ 4" x="2266" y="3622" w="169" h="212" pX="0.5" pY="0.5" oX="126" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_35_ 4" x="3527" y="0" w="156" h="207" pX="0.5" pY="0.5" oX="135" oY="71" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_36_ 4" x="182" y="2282" w="164" h="238" pX="0.5" pY="0.5" oX="140" oY="68" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_37_ 4" x="1636" y="1731" w="172" h="244" pX="0.5" pY="0.5" oX="133" oY="71" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_38_ 4" x="2329" y="2084" w="142" h="236" pX="0.5" pY="0.5" oX="146" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_39_ 4" x="1108" y="2952" w="159" h="227" pX="0.5" pY="0.5" oX="126" oY="66" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_40_ 4" x="3317" y="1514" w="189" h="219" pX="0.5" pY="0.5" oX="100" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_41_ 5" x="1907" y="1486" w="153" h="244" pX="0.5" pY="0.5" oX="145" oY="55" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_42_ 5" x="1575" y="679" w="144" h="248" pX="0.5" pY="0.5" oX="150" oY="53" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_43_ 5" x="967" y="2750" w="141" h="231" pX="0.5" pY="0.5" oX="147" oY="53" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_44_ 5" x="2147" y="2193" w="182" h="236" pX="0.5" pY="0.5" oX="110" oY="51" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_45_ 5" x="220" y="2754" w="174" h="232" pX="0.5" pY="0.5" oX="107" oY="53" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_46_ 5" x="3517" y="2909" w="168" h="215" pX="0.5" pY="0.5" oX="126" oY="55" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_47_ 5" x="3316" y="3128" w="166" h="217" pX="0.5" pY="0.5" oX="135" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_48_ 5" x="2351" y="2780" w="166" h="226" pX="0.5" pY="0.5" oX="133" oY="55" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_49_ 6" x="1137" y="1771" w="152" h="246" pX="0.5" pY="0.5" oX="124" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_50_ 6" x="1761" y="1486" w="146" h="245" pX="0.5" pY="0.5" oX="131" oY="64" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_51_ 6" x="1259" y="2491" w="143" h="233" pX="0.5" pY="0.5" oX="137" oY="68" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_52_ 6" x="1737" y="3363" w="172" h="217" pX="0.5" pY="0.5" oX="133" oY="71" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_53_ 6" x="2820" y="1152" w="166" h="228" pX="0.5" pY="0.5" oX="139" oY="63" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_54_ 6" x="1380" y="3622" w="156" h="216" pX="0.5" pY="0.5" oX="130" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_55_ 6" x="2655" y="1641" w="161" h="231" pX="0.5" pY="0.5" oX="125" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_56_ 6" x="1777" y="248" w="161" h="248" pX="0.5" pY="0.5" oX="127" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_57_ 7" x="2731" y="2783" w="161" h="226" pX="0.5" pY="0.5" oX="132" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_58_ 7" x="3482" y="3128" w="158" h="217" pX="0.5" pY="0.5" oX="127" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_59_ 7" x="3002" y="0" w="152" h="226" pX="0.5" pY="0.5" oX="130" oY="52" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_60_ 7" x="1885" y="2453" w="166" h="233" pX="0.5" pY="0.5" oX="117" oY="52" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_61_ 7" x="2106" y="0" w="172" h="241" pX="0.5" pY="0.5" oX="116" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_62_ 7" x="346" y="2282" w="141" h="238" pX="0.5" pY="0.5" oX="136" oY="56" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_63_ 7" x="3379" y="878" w="147" h="219" pX="0.5" pY="0.5" oX="139" oY="57" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Walk_64_ 7" x="3136" y="2555" w="179" h="222" pX="0.5" pY="0.5" oX="135" oY="56" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_01_ 0" x="3855" y="3735" w="190" h="168" pX="0.5" pY="0.5" oX="122" oY="125" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_02_ 0" x="3855" y="3903" w="190" h="169" pX="0.5" pY="0.5" oX="122" oY="124" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_03_ 0" x="822" y="4000" w="190" h="169" pX="0.5" pY="0.5" oX="122" oY="124" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_04_ 1" x="1520" y="1701" w="116" h="245" pX="0.5" pY="0.5" oX="112" oY="88" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_05_ 1" x="1989" y="0" w="117" h="244" pX="0.5" pY="0.5" oX="112" oY="89" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_06_ 1" x="1977" y="1239" w="118" h="243" pX="0.5" pY="0.5" oX="112" oY="90" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_07_ 2" x="653" y="2520" w="126" h="233" pX="0.5" pY="0.5" oX="187" oY="77" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_08_ 2" x="1402" y="2658" w="127" h="231" pX="0.5" pY="0.5" oX="187" oY="79" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_09_ 2" x="2807" y="1872" w="127" h="228" pX="0.5" pY="0.5" oX="187" oY="82" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_10_ 3" x="3643" y="209" w="195" h="208" pX="0.5" pY="0.5" oX="98" oY="56" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_11_ 3" x="3653" y="3561" w="197" h="209" pX="0.5" pY="0.5" oX="98" oY="55" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_12_ 3" x="3047" y="3440" w="198" h="210" pX="0.5" pY="0.5" oX="98" oY="54" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_13_ 4" x="890" y="3207" w="160" h="220" pX="0.5" pY="0.5" oX="115" oY="103" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_14_ 4" x="2517" y="3003" w="160" h="221" pX="0.5" pY="0.5" oX="115" oY="102" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_15_ 4" x="3152" y="2279" w="160" h="221" pX="0.5" pY="0.5" oX="115" oY="102" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_16_ 5" x="2623" y="475" w="154" h="232" pX="0.5" pY="0.5" oX="110" oY="71" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_17_ 5" x="496" y="2520" w="157" h="234" pX="0.5" pY="0.5" oX="109" oY="69" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_18_ 5" x="2510" y="0" w="159" h="236" pX="0.5" pY="0.5" oX="109" oY="67" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_19_ 6" x="3734" y="1935" w="154" h="204" pX="0.5" pY="0.5" oX="158" oY="105" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_20_ 6" x="3888" y="1931" w="157" h="202" pX="0.5" pY="0.5" oX="156" oY="107" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_21_ 6" x="3859" y="2544" w="159" h="200" pX="0.5" pY="0.5" oX="155" oY="109" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_22_ 7" x="2971" y="2557" w="165" h="224" pX="0.5" pY="0.5" oX="136" oY="58" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_23_ 7" x="3153" y="899" w="164" h="222" pX="0.5" pY="0.5" oX="136" oY="60" oW="400" oH="400"/>
+  <sprite n="Fiend_Brown_Woozy_24_ 7" x="3196" y="446" w="164" h="220" pX="0.5" pY="0.5" oX="136" oY="62" oW="400" oH="400"/>
+</TextureAtlas>

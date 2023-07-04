@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="ApexHunter.png" width="5827" height="5851" scale="1" format="RGBA8888">
+  <sprite n="ApexHunter_Attack 1_01_ 0" x="2012" y="5249" w="181" h="324" pX="0.5" pY="0.5" oX="141" oY="82" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_02_ 0" x="715" y="5588" w="191" h="259" pX="0.5" pY="0.5" oX="132" oY="102" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_03_ 0" x="2797" y="2852" w="145" h="389" pX="0.5" pY="0.5" oX="178" oY="43" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_04_ 1" x="2097" y="2173" w="419" h="187" pX="0.5" pY="0.5" oX="34" oY="199" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_05_ 1" x="5042" y="5479" w="240" h="239" pX="0.5" pY="0.5" oX="124" oY="152" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_06_ 1" x="2928" y="1658" w="383" h="231" pX="0.5" pY="0.5" oX="15" oY="149" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_07_ 2" x="1893" y="1237" w="422" h="237" pX="0.5" pY="0.5" oX="64" oY="174" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_08_ 2" x="4194" y="5567" w="236" h="269" pX="0.5" pY="0.5" oX="158" oY="140" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_09_ 2" x="2648" y="3597" w="375" h="208" pX="0.5" pY="0.5" oX="126" oY="186" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_10_ 3" x="422" y="1944" w="179" h="379" pX="0.5" pY="0.5" oX="196" oY="80" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_11_ 3" x="5555" y="954" w="198" h="317" pX="0.5" pY="0.5" oX="191" oY="78" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_12_ 3" x="5632" y="3957" w="156" h="290" pX="0.5" pY="0.5" oX="192" oY="110" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_13_ 4" x="5555" y="4252" w="249" h="295" pX="0.5" pY="0.5" oX="162" oY="68" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_14_ 4" x="5385" y="323" w="177" h="264" pX="0.5" pY="0.5" oX="204" oY="60" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_15_ 4" x="4184" y="4586" w="251" h="357" pX="0.5" pY="0.5" oX="142" oY="28" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_16_ 5" x="3338" y="1320" w="379" h="260" pX="0.5" pY="0.5" oX="116" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_17_ 5" x="5156" y="2860" w="278" h="254" pX="0.5" pY="0.5" oX="177" oY="130" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_18_ 5" x="2137" y="4842" w="339" h="218" pX="0.5" pY="0.5" oX="105" oY="169" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_19_ 6" x="2287" y="3343" w="381" h="204" pX="0.5" pY="0.5" oX="23" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_20_ 6" x="0" y="5588" w="280" h="263" pX="0.5" pY="0.5" oX="66" oY="93" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_21_ 6" x="4819" y="4273" w="329" h="295" pX="0.5" pY="0.5" oX="82" oY="88" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_22_ 7" x="252" y="4944" w="252" h="345" pX="0.5" pY="0.5" oX="106" oY="146" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_23_ 7" x="1896" y="4925" w="166" h="324" pX="0.5" pY="0.5" oX="142" oY="131" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 1_24_ 7" x="5555" y="4547" w="244" h="288" pX="0.5" pY="0.5" oX="130" oY="173" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_01_ 0" x="4861" y="5156" w="181" h="324" pX="0.5" pY="0.5" oX="141" oY="82" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_02_ 0" x="3828" y="4586" w="177" h="357" pX="0.5" pY="0.5" oX="153" oY="40" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_03_ 0" x="0" y="1643" w="171" h="448" pX="0.5" pY="0.5" oX="157" oY="11" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_04_ 1" x="0" y="2536" w="418" h="186" pX="0.5" pY="0.5" oX="62" oY="199" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_05_ 1" x="4696" y="2491" w="346" h="292" pX="0.5" pY="0.5" oX="110" oY="119" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_06_ 1" x="1045" y="2949" w="390" h="324" pX="0.5" pY="0.5" oX="6" oY="64" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_07_ 2" x="1819" y="1491" w="423" h="237" pX="0.5" pY="0.5" oX="18" oY="174" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_08_ 2" x="5050" y="248" w="335" h="180" pX="0.5" pY="0.5" oX="51" oY="219" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_09_ 2" x="3352" y="205" w="380" h="207" pX="0.5" pY="0.5" oX="114" oY="194" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_10_ 3" x="3301" y="2147" w="178" h="379" pX="0.5" pY="0.5" oX="197" oY="80" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_11_ 3" x="2663" y="5588" w="192" h="230" pX="0.5" pY="0.5" oX="183" oY="185" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_12_ 3" x="531" y="5572" w="184" h="273" pX="0.5" pY="0.5" oX="193" oY="69" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_13_ 4" x="5555" y="3367" w="249" h="295" pX="0.5" pY="0.5" oX="162" oY="68" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_14_ 4" x="4472" y="2092" w="224" h="341" pX="0.5" pY="0.5" oX="196" oY="19" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_15_ 4" x="4109" y="2677" w="205" h="363" pX="0.5" pY="0.5" oX="136" oY="41" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_16_ 5" x="382" y="3681" w="378" h="260" pX="0.5" pY="0.5" oX="134" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_17_ 5" x="2193" y="5374" w="319" h="201" pX="0.5" pY="0.5" oX="173" oY="206" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_18_ 5" x="979" y="4355" w="355" h="238" pX="0.5" pY="0.5" oX="89" oY="139" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_19_ 6" x="382" y="3477" w="381" h="204" pX="0.5" pY="0.5" oX="23" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_20_ 6" x="635" y="5289" w="307" h="263" pX="0.5" pY="0.5" oX="53" oY="103" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_21_ 6" x="3114" y="4944" w="340" h="334" pX="0.5" pY="0.5" oX="107" oY="56" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_22_ 7" x="504" y="4944" w="252" h="345" pX="0.5" pY="0.5" oX="106" oY="146" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_23_ 7" x="5341" y="3114" w="209" h="240" pX="0.5" pY="0.5" oX="110" oY="209" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Attack 2_24_ 7" x="5335" y="4820" w="219" h="253" pX="0.5" pY="0.5" oX="161" oY="139" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_01_ 0" x="2871" y="4944" w="243" h="341" pX="0.5" pY="0.5" oX="155" oY="69" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_02_ 0" x="5562" y="0" w="265" h="319" pX="0.5" pY="0.5" oX="158" oY="81" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_03_ 0" x="328" y="5289" w="307" h="283" pX="0.5" pY="0.5" oX="138" oY="94" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_04_ 1" x="2522" y="1886" w="406" h="231" pX="0.5" pY="0.5" oX="35" oY="198" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_05_ 1" x="2668" y="3335" w="381" h="262" pX="0.5" pY="0.5" oX="44" oY="180" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_06_ 1" x="4251" y="4943" w="339" h="296" pX="0.5" pY="0.5" oX="67" oY="159" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_07_ 2" x="2522" y="1644" w="406" h="242" pX="0.5" pY="0.5" oX="79" oY="181" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_08_ 2" x="2928" y="1889" w="382" h="258" pX="0.5" pY="0.5" oX="95" oY="164" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_09_ 2" x="2528" y="4822" w="343" h="272" pX="0.5" pY="0.5" oX="113" oY="148" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_10_ 3" x="4696" y="1590" w="236" h="348" pX="0.5" pY="0.5" oX="121" oY="91" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_11_ 3" x="4696" y="3129" w="258" h="345" pX="0.5" pY="0.5" oX="96" oY="83" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_12_ 3" x="5042" y="2206" w="308" h="330" pX="0.5" pY="0.5" oX="75" oY="89" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_13_ 4" x="2963" y="214" w="388" h="196" pX="0.5" pY="0.5" oX="116" oY="158" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_14_ 4" x="1925" y="201" w="427" h="170" pX="0.5" pY="0.5" oX="82" oY="160" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_15_ 4" x="902" y="1573" w="435" h="157" pX="0.5" pY="0.5" oX="75" oY="159" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_16_ 5" x="4473" y="1076" w="222" h="353" pX="0.5" pY="0.5" oX="175" oY="147" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_17_ 5" x="3791" y="2458" w="171" h="371" pX="0.5" pY="0.5" oX="200" oY="132" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_18_ 5" x="2969" y="809" w="128" h="388" pX="0.5" pY="0.5" oX="230" oY="116" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_19_ 6" x="5156" y="762" w="225" h="333" pX="0.5" pY="0.5" oX="121" oY="41" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_20_ 6" x="4666" y="4586" w="176" h="348" pX="0.5" pY="0.5" oX="146" oY="36" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_21_ 6" x="3479" y="2219" w="128" h="352" pX="0.5" pY="0.5" oX="163" oY="34" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_22_ 7" x="2402" y="3045" w="392" h="237" pX="0.5" pY="0.5" oX="15" oY="158" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_23_ 7" x="1472" y="1739" w="429" h="206" pX="0.5" pY="0.5" oX="10" oY="172" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Behavior_24_ 7" x="464" y="1470" w="438" h="195" pX="0.5" pY="0.5" oX="9" oY="181" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_01_ 0" x="4680" y="5156" w="181" h="324" pX="0.5" pY="0.5" oX="141" oY="82" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_02_ 0" x="2517" y="5094" w="180" h="323" pX="0.5" pY="0.5" oX="141" oY="75" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_03_ 0" x="5555" y="637" w="181" h="317" pX="0.5" pY="0.5" oX="141" oY="69" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_04_ 1" x="1450" y="2145" w="419" h="186" pX="0.5" pY="0.5" oX="34" oY="199" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_05_ 1" x="2551" y="236" w="410" h="185" pX="0.5" pY="0.5" oX="53" oY="203" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_06_ 1" x="818" y="2762" w="398" h="187" pX="0.5" pY="0.5" oX="75" oY="203" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_07_ 2" x="606" y="1926" w="422" h="237" pX="0.5" pY="0.5" oX="64" oY="174" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_08_ 2" x="2551" y="0" w="412" h="236" pX="0.5" pY="0.5" oX="53" oY="176" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_09_ 2" x="0" y="2722" w="400" h="234" pX="0.5" pY="0.5" oX="43" oY="178" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_10_ 3" x="3479" y="941" w="176" h="379" pX="0.5" pY="0.5" oX="199" oY="80" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_11_ 3" x="4005" y="4586" w="179" h="357" pX="0.5" pY="0.5" oX="196" oY="110" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_12_ 3" x="4954" y="3129" w="182" h="335" pX="0.5" pY="0.5" oX="193" oY="139" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_13_ 4" x="5555" y="2777" w="249" h="295" pX="0.5" pY="0.5" oX="162" oY="68" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_14_ 4" x="5555" y="1585" w="244" h="300" pX="0.5" pY="0.5" oX="174" oY="63" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_15_ 4" x="1203" y="5289" w="230" h="298" pX="0.5" pY="0.5" oX="196" oY="59" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_16_ 5" x="3337" y="1580" w="379" h="260" pX="0.5" pY="0.5" oX="116" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_17_ 5" x="2272" y="3547" w="376" h="236" pX="0.5" pY="0.5" oX="126" oY="181" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_18_ 5" x="4092" y="822" w="365" h="235" pX="0.5" pY="0.5" oX="144" oY="187" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_19_ 6" x="2942" y="3131" w="381" h="204" pX="0.5" pY="0.5" oX="23" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_20_ 6" x="3309" y="3510" w="377" h="204" pX="0.5" pY="0.5" oX="15" oY="152" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_21_ 6" x="4092" y="618" w="365" h="204" pX="0.5" pY="0.5" oX="8" oY="152" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_22_ 7" x="1008" y="4944" w="252" h="345" pX="0.5" pY="0.5" oX="106" oY="146" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_23_ 7" x="1651" y="4925" w="245" h="337" pX="0.5" pY="0.5" oX="98" oY="160" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Block_24_ 7" x="5156" y="428" w="229" h="334" pX="0.5" pY="0.5" oX="91" oY="168" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_01_ 0" x="2012" y="5575" w="203" h="276" pX="0.5" pY="0.5" oX="117" oY="138" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_02_ 0" x="5350" y="2206" w="203" h="277" pX="0.5" pY="0.5" oX="117" oY="138" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_03_ 0" x="328" y="5572" w="203" h="278" pX="0.5" pY="0.5" oX="117" oY="137" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_04_ 1" x="1613" y="2762" w="397" h="177" pX="0.5" pY="0.5" oX="41" oY="213" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_05_ 1" x="1216" y="2762" w="397" h="177" pX="0.5" pY="0.5" oX="43" oY="214" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_06_ 1" x="2010" y="2752" w="395" h="176" pX="0.5" pY="0.5" oX="46" oY="215" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_07_ 2" x="2516" y="2347" w="401" h="252" pX="0.5" pY="0.5" oX="74" oY="190" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_08_ 2" x="418" y="2701" w="400" h="250" pX="0.5" pY="0.5" oX="73" oY="192" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_09_ 2" x="1237" y="2516" w="399" h="246" pX="0.5" pY="0.5" oX="71" oY="196" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_10_ 3" x="3454" y="4944" w="199" h="340" pX="0.5" pY="0.5" oX="196" oY="125" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_11_ 3" x="4957" y="2783" w="199" h="335" pX="0.5" pY="0.5" oX="196" oY="132" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_12_ 3" x="4932" y="1590" w="201" h="333" pX="0.5" pY="0.5" oX="195" oY="135" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_13_ 4" x="5335" y="4548" w="216" h="272" pX="0.5" pY="0.5" oX="162" oY="102" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_14_ 4" x="5337" y="2536" w="215" h="275" pX="0.5" pY="0.5" oX="164" oY="101" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_15_ 4" x="2447" y="5575" w="216" h="275" pX="0.5" pY="0.5" oX="165" oY="101" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_16_ 5" x="2950" y="1206" w="388" h="226" pX="0.5" pY="0.5" oX="114" oY="185" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_17_ 5" x="1435" y="3123" w="389" h="224" pX="0.5" pY="0.5" oX="115" oY="187" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_18_ 5" x="1951" y="3123" w="389" h="220" pX="0.5" pY="0.5" oX="117" oY="189" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_19_ 6" x="2405" y="2852" w="392" h="193" pX="0.5" pY="0.5" oX="10" oY="177" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_20_ 6" x="2010" y="2928" w="392" h="195" pX="0.5" pY="0.5" oX="8" oY="176" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_21_ 6" x="397" y="3123" w="391" h="199" pX="0.5" pY="0.5" oX="6" oY="173" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_22_ 7" x="4473" y="718" w="220" h="358" pX="0.5" pY="0.5" oX="134" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_23_ 7" x="4455" y="2677" w="219" h="359" pX="0.5" pY="0.5" oX="133" oY="152" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Critical HP_24_ 7" x="4473" y="359" w="217" h="359" pX="0.5" pY="0.5" oX="132" oY="153" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Dead_01_ 0" x="5555" y="1271" w="260" h="314" pX="0.5" pY="0.5" oX="159" oY="128" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Dead_02_ 1" x="1910" y="792" w="422" h="208" pX="0.5" pY="0.5" oX="35" oY="258" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Dead_03_ 2" x="1450" y="1945" w="421" h="200" pX="0.5" pY="0.5" oX="56" oY="230" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Dead_04_ 3" x="5042" y="5156" w="260" h="323" pX="0.5" pY="0.5" oX="93" oY="172" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Dead_05_ 4" x="5555" y="5123" w="259" h="287" pX="0.5" pY="0.5" oX="185" oY="123" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Dead_06_ 5" x="2516" y="2117" w="402" h="230" pX="0.5" pY="0.5" oX="95" oY="225" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Dead_07_ 6" x="835" y="2519" w="402" h="195" pX="0.5" pY="0.5" oX="15" oY="182" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Dead_08_ 7" x="942" y="5289" w="261" h="299" pX="0.5" pY="0.5" oX="68" oY="213" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_01_ 0" x="5156" y="2536" w="181" h="324" pX="0.5" pY="0.5" oX="141" oY="82" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_02_ 0" x="4899" y="202" w="126" h="347" pX="0.5" pY="0.5" oX="186" oY="68" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_03_ 0" x="4435" y="4586" w="231" h="354" pX="0.5" pY="0.5" oX="151" oY="71" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_04_ 1" x="840" y="2331" w="419" h="185" pX="0.5" pY="0.5" oX="43" oY="199" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_05_ 1" x="1041" y="1739" w="431" h="194" pX="0.5" pY="0.5" oX="31" oY="191" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_06_ 1" x="1636" y="2519" w="395" h="233" pX="0.5" pY="0.5" oX="15" oY="179" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_07_ 2" x="1028" y="1933" w="422" h="237" pX="0.5" pY="0.5" oX="55" oY="174" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_08_ 2" x="171" y="1739" w="435" h="205" pX="0.5" pY="0.5" oX="56" oY="182" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_09_ 2" x="2514" y="2599" w="395" h="253" pX="0.5" pY="0.5" oX="113" oY="171" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_10_ 3" x="3165" y="410" w="175" h="379" pX="0.5" pY="0.5" oX="200" oY="80" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_11_ 3" x="1824" y="2939" w="127" h="389" pX="0.5" pY="0.5" oX="202" oY="64" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_12_ 3" x="4473" y="0" w="224" h="359" pX="0.5" pY="0.5" oX="137" oY="43" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_13_ 4" x="5555" y="3662" w="249" h="295" pX="0.5" pY="0.5" oX="162" oY="68" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_14_ 4" x="5148" y="4273" w="321" h="275" pX="0.5" pY="0.5" oX="143" oY="88" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_15_ 4" x="2917" y="2347" w="384" h="227" pX="0.5" pY="0.5" oX="118" oY="131" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_16_ 5" x="360" y="4363" w="360" h="260" pX="0.5" pY="0.5" oX="152" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_17_ 5" x="5006" y="4843" w="329" h="313" pX="0.5" pY="0.5" oX="153" oY="129" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_18_ 5" x="4470" y="3036" w="226" h="357" pX="0.5" pY="0.5" oX="159" oY="101" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_19_ 6" x="1906" y="3343" w="381" h="204" pX="0.5" pY="0.5" oX="23" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_20_ 6" x="5048" y="1095" w="331" h="263" pX="0.5" pY="0.5" oX="73" oY="111" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_21_ 6" x="4819" y="3819" w="231" h="345" pX="0.5" pY="0.5" oX="170" oY="49" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_22_ 7" x="756" y="4944" w="252" h="345" pX="0.5" pY="0.5" oX="106" oY="146" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_23_ 7" x="2193" y="5060" w="324" h="314" pX="0.5" pY="0.5" oX="54" oY="140" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Evade_24_ 7" x="2909" y="2599" w="385" h="243" pX="0.5" pY="0.5" oX="20" oY="135" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_01_ 0" x="1831" y="5262" w="181" h="324" pX="0.5" pY="0.5" oX="141" oY="82" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_02_ 0" x="5136" y="3118" w="205" h="329" pX="0.5" pY="0.5" oX="131" oY="70" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_03_ 0" x="3990" y="5282" w="204" h="306" pX="0.5" pY="0.5" oX="143" oY="72" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_04_ 1" x="1259" y="2331" w="419" h="185" pX="0.5" pY="0.5" oX="34" oY="199" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_05_ 1" x="606" y="1739" w="435" h="187" pX="0.5" pY="0.5" oX="38" oY="201" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_06_ 1" x="1925" y="0" w="428" h="201" pX="0.5" pY="0.5" oX="57" oY="191" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_07_ 2" x="0" y="2091" w="422" h="237" pX="0.5" pY="0.5" oX="64" oY="174" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_08_ 2" x="941" y="1323" w="441" h="250" pX="0.5" pY="0.5" oX="43" oY="169" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_09_ 2" x="1382" y="1491" w="437" h="248" pX="0.5" pY="0.5" oX="31" oY="167" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_10_ 3" x="3323" y="3131" w="175" h="379" pX="0.5" pY="0.5" oX="200" oY="80" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_11_ 3" x="2323" y="1646" w="199" h="408" pX="0.5" pY="0.5" oX="186" oY="63" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_12_ 3" x="2353" y="0" w="198" h="420" pX="0.5" pY="0.5" oX="175" oY="63" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_13_ 4" x="5383" y="3957" w="249" h="295" pX="0.5" pY="0.5" oX="162" oY="68" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_14_ 4" x="5555" y="1885" w="255" h="300" pX="0.5" pY="0.5" oX="173" oY="64" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_15_ 4" x="5555" y="2185" w="260" h="297" pX="0.5" pY="0.5" oX="185" oY="71" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_16_ 5" x="3294" y="2574" w="379" h="260" pX="0.5" pY="0.5" oX="116" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_17_ 5" x="2942" y="2842" w="384" h="289" pX="0.5" pY="0.5" oX="125" oY="134" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_18_ 5" x="2887" y="4622" w="355" h="284" pX="0.5" pY="0.5" oX="111" oY="136" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_19_ 6" x="1045" y="3273" w="381" h="204" pX="0.5" pY="0.5" oX="23" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_20_ 6" x="2963" y="0" w="389" h="214" pX="0.5" pY="0.5" oX="7" oY="142" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_21_ 6" x="2950" y="1432" w="387" h="226" pX="0.5" pY="0.5" oX="23" oY="126" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_22_ 7" x="4712" y="3474" w="252" h="345" pX="0.5" pY="0.5" oX="106" oY="146" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_23_ 7" x="3049" y="3335" w="260" h="378" pX="0.5" pY="0.5" oX="89" oY="127" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Get Hit_24_ 7" x="2598" y="421" w="269" h="397" pX="0.5" pY="0.5" oX="71" oY="115" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_01_ 0" x="1512" y="5263" w="186" h="325" pX="0.5" pY="0.5" oX="136" oY="84" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_02_ 0" x="5133" y="1358" w="181" h="324" pX="0.5" pY="0.5" oX="141" oY="82" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_03_ 0" x="5387" y="0" w="175" h="323" pX="0.5" pY="0.5" oX="147" oY="81" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_04_ 1" x="421" y="2514" w="414" h="187" pX="0.5" pY="0.5" oX="43" oY="200" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_05_ 1" x="1678" y="2331" w="419" h="188" pX="0.5" pY="0.5" oX="43" oY="199" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_06_ 1" x="1916" y="605" w="422" h="187" pX="0.5" pY="0.5" oX="44" oY="199" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_07_ 2" x="2097" y="2360" w="417" h="240" pX="0.5" pY="0.5" oX="60" oY="175" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_08_ 2" x="1901" y="1936" w="422" h="237" pX="0.5" pY="0.5" oX="55" oY="174" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_09_ 2" x="1921" y="371" w="426" h="234" pX="0.5" pY="0.5" oX="50" oY="174" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_10_ 3" x="3655" y="941" w="187" h="373" pX="0.5" pY="0.5" oX="194" oY="81" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_11_ 3" x="3097" y="796" w="181" h="379" pX="0.5" pY="0.5" oX="194" oY="80" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_12_ 3" x="2989" y="410" w="176" h="386" pX="0.5" pY="0.5" oX="194" oY="78" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_13_ 4" x="5314" y="1358" w="239" h="301" pX="0.5" pY="0.5" oX="162" oY="64" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_14_ 4" x="5555" y="2482" w="249" h="295" pX="0.5" pY="0.5" oX="162" oY="68" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_15_ 4" x="5555" y="4835" w="258" h="288" pX="0.5" pY="0.5" oX="162" oY="72" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_16_ 5" x="3340" y="687" w="379" h="254" pX="0.5" pY="0.5" oX="133" oY="153" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_17_ 5" x="763" y="3680" w="378" h="260" pX="0.5" pY="0.5" oX="134" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_18_ 5" x="1896" y="3714" w="376" h="269" pX="0.5" pY="0.5" oX="135" oY="149" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_19_ 6" x="763" y="3477" w="381" h="203" pX="0.5" pY="0.5" oX="5" oY="152" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_20_ 6" x="1144" y="3477" w="381" h="204" pX="0.5" pY="0.5" oX="5" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_21_ 6" x="3352" y="0" w="380" h="205" pX="0.5" pY="0.5" oX="5" oY="150" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_22_ 7" x="4470" y="3474" w="242" h="345" pX="0.5" pY="0.5" oX="116" oY="147" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_23_ 7" x="0" y="4944" w="252" h="345" pX="0.5" pY="0.5" oX="106" oY="146" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Idle_24_ 7" x="4696" y="2783" w="261" h="346" pX="0.5" pY="0.5" oX="97" oY="145" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_01_ 0" x="3962" y="2458" w="126" h="370" pX="0.5" pY="0.5" oX="203" oY="45" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_02_ 0" x="3338" y="941" w="124" h="365" pX="0.5" pY="0.5" oX="202" oY="51" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_03_ 0" x="1494" y="4255" w="119" h="360" pX="0.5" pY="0.5" oX="202" oY="56" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_04_ 0" x="861" y="4252" w="118" h="360" pX="0.5" pY="0.5" oX="202" oY="56" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_05_ 0" x="3709" y="4586" w="119" h="358" pX="0.5" pY="0.5" oX="201" oY="57" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_06_ 0" x="3673" y="2458" w="118" h="371" pX="0.5" pY="0.5" oX="202" oY="45" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_07_ 0" x="739" y="4252" w="122" h="360" pX="0.5" pY="0.5" oX="202" oY="56" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_08_ 0" x="3498" y="3118" w="124" h="363" pX="0.5" pY="0.5" oX="203" oY="53" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_09_ 1" x="484" y="902" w="483" h="172" pX="0.5" pY="0.5" oX="28" oY="215" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_10_ 1" x="486" y="387" w="485" h="170" pX="0.5" pY="0.5" oX="26" oY="214" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_11_ 1" x="0" y="923" w="483" h="170" pX="0.5" pY="0.5" oX="25" oY="214" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_12_ 1" x="972" y="190" w="480" h="169" pX="0.5" pY="0.5" oX="26" oY="213" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_13_ 1" x="967" y="947" w="475" h="174" pX="0.5" pY="0.5" oX="28" oY="211" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_14_ 1" x="484" y="730" w="483" h="172" pX="0.5" pY="0.5" oX="27" oY="216" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_15_ 1" x="486" y="557" w="484" h="173" pX="0.5" pY="0.5" oX="25" oY="213" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_16_ 1" x="0" y="582" w="484" h="169" pX="0.5" pY="0.5" oX="26" oY="214" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_17_ 2" x="487" y="189" w="485" h="198" pX="0.5" pY="0.5" oX="4" oY="186" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_18_ 2" x="0" y="191" w="486" h="197" pX="0.5" pY="0.5" oX="5" oY="188" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_19_ 2" x="0" y="388" w="486" h="194" pX="0.5" pY="0.5" oX="6" oY="190" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_20_ 2" x="973" y="0" w="482" h="190" pX="0.5" pY="0.5" oX="9" oY="195" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_21_ 2" x="970" y="563" w="477" h="179" pX="0.5" pY="0.5" oX="12" oY="200" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_22_ 2" x="0" y="751" w="484" h="172" pX="0.5" pY="0.5" oX="6" oY="196" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_23_ 2" x="0" y="0" w="487" h="191" pX="0.5" pY="0.5" oX="5" oY="188" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_24_ 2" x="487" y="0" w="486" h="189" pX="0.5" pY="0.5" oX="5" oY="187" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_25_ 3" x="2845" y="818" w="124" h="388" pX="0.5" pY="0.5" oX="194" oY="119" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_26_ 3" x="0" y="2956" w="124" h="394" pX="0.5" pY="0.5" oX="194" oY="115" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_27_ 3" x="2689" y="1215" w="126" h="396" pX="0.5" pY="0.5" oX="192" oY="113" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_28_ 3" x="271" y="2956" w="126" h="393" pX="0.5" pY="0.5" oX="193" oY="114" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_29_ 3" x="788" y="2951" w="123" h="391" pX="0.5" pY="0.5" oX="196" oY="115" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_30_ 3" x="2867" y="421" w="122" h="388" pX="0.5" pY="0.5" oX="196" oY="118" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_31_ 3" x="2568" y="1233" w="121" h="397" pX="0.5" pY="0.5" oX="196" oY="113" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_32_ 3" x="2721" y="818" w="124" h="396" pX="0.5" pY="0.5" oX="193" oY="114" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_33_ 4" x="2172" y="4328" w="359" h="282" pX="0.5" pY="0.5" oX="127" oY="90" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_34_ 4" x="3378" y="4016" w="366" h="276" pX="0.5" pY="0.5" oX="122" oY="94" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_35_ 4" x="3717" y="1314" w="373" h="270" pX="0.5" pY="0.5" oX="117" oY="97" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_36_ 4" x="1519" y="3713" w="377" h="271" pX="0.5" pY="0.5" oX="113" oY="96" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_37_ 4" x="3340" y="412" w="379" h="275" pX="0.5" pY="0.5" oX="111" oY="95" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_38_ 4" x="3326" y="2834" w="377" h="284" pX="0.5" pY="0.5" oX="115" oY="85" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_39_ 4" x="1519" y="3984" w="368" h="271" pX="0.5" pY="0.5" oX="120" oY="98" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_40_ 4" x="4109" y="1299" w="364" h="274" pX="0.5" pY="0.5" oX="123" oY="96" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_41_ 5" x="3398" y="3714" w="371" h="302" pX="0.5" pY="0.5" oX="119" oY="188" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_42_ 5" x="3703" y="2146" w="372" h="312" pX="0.5" pY="0.5" oX="120" oY="182" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_43_ 5" x="1896" y="3983" w="369" h="319" pX="0.5" pY="0.5" oX="123" oY="177" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_44_ 5" x="4109" y="1573" w="364" h="321" pX="0.5" pY="0.5" oX="127" oY="175" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_45_ 5" x="0" y="4623" w="358" h="321" pX="0.5" pY="0.5" oX="132" oY="174" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_46_ 5" x="760" y="3940" w="368" h="312" pX="0.5" pY="0.5" oX="126" oY="181" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_47_ 5" x="2272" y="3783" w="370" h="316" pX="0.5" pY="0.5" oX="121" oY="179" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_48_ 5" x="3703" y="3105" w="370" h="311" pX="0.5" pY="0.5" oX="120" oY="182" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_49_ 6" x="3716" y="1584" w="373" h="289" pX="0.5" pY="0.5" oX="25" oY="87" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_50_ 6" x="3719" y="613" w="373" h="276" pX="0.5" pY="0.5" oX="23" oY="91" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_51_ 6" x="3703" y="2829" w="371" h="276" pX="0.5" pY="0.5" oX="23" oY="93" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_52_ 6" x="4107" y="336" w="366" h="282" pX="0.5" pY="0.5" oX="23" oY="91" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_53_ 6" x="4109" y="3262" w="361" h="286" pX="0.5" pY="0.5" oX="24" oY="89" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_54_ 6" x="3686" y="3416" w="369" h="292" pX="0.5" pY="0.5" oX="21" oY="81" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_55_ 6" x="3703" y="1873" w="372" h="273" pX="0.5" pY="0.5" oX="24" oY="94" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_56_ 6" x="3732" y="340" w="373" h="273" pX="0.5" pY="0.5" oX="24" oY="93" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_57_ 7" x="2990" y="4292" w="360" h="330" pX="0.5" pY="0.5" oX="30" oY="165" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_58_ 7" x="370" y="4025" w="369" h="336" pX="0.5" pY="0.5" oX="27" oY="162" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_59_ 7" x="3732" y="0" w="375" h="340" pX="0.5" pY="0.5" oX="25" oY="160" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_60_ 7" x="0" y="3686" w="379" h="339" pX="0.5" pY="0.5" oX="25" oY="160" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_61_ 7" x="0" y="3350" w="382" h="336" pX="0.5" pY="0.5" oX="25" oY="161" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_62_ 7" x="1141" y="3681" w="378" h="335" pX="0.5" pY="0.5" oX="24" oY="162" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_63_ 7" x="0" y="4025" w="370" h="338" pX="0.5" pY="0.5" oX="27" oY="161" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Run_64_ 7" x="4107" y="0" w="366" h="336" pX="0.5" pY="0.5" oX="28" oY="162" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_01_ 0" x="4499" y="5239" w="181" h="324" pX="0.5" pY="0.5" oX="141" oY="82" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_02_ 0" x="124" y="2956" w="147" h="393" pX="0.5" pY="0.5" oX="174" oY="21" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_03_ 0" x="911" y="2949" w="134" h="390" pX="0.5" pY="0.5" oX="183" oY="33" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_04_ 1" x="421" y="2328" w="419" h="186" pX="0.5" pY="0.5" oX="43" oY="199" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_05_ 1" x="3023" y="3714" w="375" h="245" pX="0.5" pY="0.5" oX="49" oY="144" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_06_ 1" x="1901" y="1728" w="422" h="208" pX="0.5" pY="0.5" oX="15" oY="176" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_07_ 2" x="1909" y="1000" w="422" h="237" pX="0.5" pY="0.5" oX="55" oY="174" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_08_ 2" x="2918" y="2147" w="365" h="192" pX="0.5" pY="0.5" oX="103" oY="198" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_09_ 2" x="0" y="2328" w="421" h="208" pX="0.5" pY="0.5" oX="86" oY="185" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_10_ 3" x="3479" y="1840" w="177" h="379" pX="0.5" pY="0.5" oX="198" oY="80" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_11_ 3" x="3311" y="1840" w="158" h="287" pX="0.5" pY="0.5" oX="194" oY="123" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_12_ 3" x="4314" y="2677" w="141" h="361" pX="0.5" pY="0.5" oX="200" oY="52" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_13_ 4" x="5555" y="3072" w="249" h="295" pX="0.5" pY="0.5" oX="162" oY="68" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_14_ 4" x="3842" y="889" w="239" h="365" pX="0.5" pY="0.5" oX="162" oY="11" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_15_ 4" x="3990" y="4943" w="261" h="339" pX="0.5" pY="0.5" oX="153" oY="33" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_16_ 5" x="0" y="4363" w="360" h="260" pX="0.5" pY="0.5" oX="152" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_17_ 5" x="3769" y="3708" w="340" h="199" pX="0.5" pY="0.5" oX="156" oY="190" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_18_ 5" x="1430" y="4615" w="354" h="258" pX="0.5" pY="0.5" oX="140" oY="127" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_19_ 6" x="1525" y="3347" w="381" h="204" pX="0.5" pY="0.5" oX="23" oY="151" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_20_ 6" x="0" y="5289" w="328" h="299" pX="0.5" pY="0.5" oX="67" oY="71" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_21_ 6" x="4696" y="712" w="353" h="282" pX="0.5" pY="0.5" oX="66" oY="83" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_22_ 7" x="1260" y="4944" w="252" h="345" pX="0.5" pY="0.5" oX="106" oY="146" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_23_ 7" x="2215" y="5575" w="232" h="275" pX="0.5" pY="0.5" oX="121" oY="167" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Use Skill_24_ 7" x="5302" y="5156" w="253" h="320" pX="0.5" pY="0.5" oX="111" oY="122" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_01_ 0" x="1512" y="4925" w="139" h="338" pX="0.5" pY="0.5" oX="180" oY="75" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_02_ 0" x="4368" y="5239" w="131" h="328" pX="0.5" pY="0.5" oX="190" oY="87" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_03_ 0" x="5562" y="319" w="121" h="318" pX="0.5" pY="0.5" oX="202" oY="96" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_04_ 0" x="5683" y="319" w="118" h="318" pX="0.5" pY="0.5" oX="205" oY="94" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_05_ 0" x="4251" y="5239" w="117" h="328" pX="0.5" pY="0.5" oX="207" oY="84" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_06_ 0" x="1698" y="5262" w="133" h="325" pX="0.5" pY="0.5" oX="200" oY="90" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_07_ 0" x="4842" y="4568" w="124" h="323" pX="0.5" pY="0.5" oX="200" oY="94" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_08_ 0" x="2697" y="5094" w="133" h="321" pX="0.5" pY="0.5" oX="190" oY="94" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_09_ 1" x="1442" y="947" w="467" h="181" pX="0.5" pY="0.5" oX="35" oY="207" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_10_ 1" x="0" y="1289" w="472" h="181" pX="0.5" pY="0.5" oX="32" oY="208" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_11_ 1" x="472" y="1289" w="469" h="181" pX="0.5" pY="0.5" oX="32" oY="210" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_12_ 1" x="1428" y="1314" w="463" h="177" pX="0.5" pY="0.5" oX="33" oY="213" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_13_ 1" x="0" y="1470" w="464" h="173" pX="0.5" pY="0.5" oX="36" oY="215" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_14_ 1" x="1428" y="1128" w="465" h="186" pX="0.5" pY="0.5" oX="33" oY="213" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_15_ 1" x="1452" y="203" w="469" h="175" pX="0.5" pY="0.5" oX="32" oY="210" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_16_ 1" x="1443" y="770" w="467" h="177" pX="0.5" pY="0.5" oX="33" oY="207" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_17_ 2" x="957" y="1121" w="471" h="202" pX="0.5" pY="0.5" oX="12" oY="189" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_18_ 2" x="972" y="359" w="477" h="204" pX="0.5" pY="0.5" oX="9" oY="185" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_19_ 2" x="0" y="1093" w="476" h="196" pX="0.5" pY="0.5" oX="11" oY="185" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_20_ 2" x="1449" y="378" w="469" h="193" pX="0.5" pY="0.5" oX="17" oY="185" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_21_ 2" x="1447" y="571" w="469" h="199" pX="0.5" pY="0.5" oX="13" oY="187" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_22_ 2" x="1455" y="0" w="470" h="203" pX="0.5" pY="0.5" oX="15" oY="185" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_23_ 2" x="967" y="742" w="476" h="205" pX="0.5" pY="0.5" oX="11" oY="183" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_24_ 2" x="483" y="1074" w="474" h="208" pX="0.5" pY="0.5" oX="12" oY="183" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_25_ 3" x="2815" y="1214" w="135" h="395" pX="0.5" pY="0.5" oX="199" oY="107" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_26_ 3" x="2332" y="830" w="130" h="407" pX="0.5" pY="0.5" oX="193" oY="102" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_27_ 3" x="2347" y="420" w="127" h="410" pX="0.5" pY="0.5" oX="190" oY="100" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_28_ 3" x="2474" y="421" w="124" h="403" pX="0.5" pY="0.5" oX="191" oY="102" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_29_ 3" x="2599" y="818" w="122" h="397" pX="0.5" pY="0.5" oX="191" oY="106" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_30_ 3" x="2462" y="830" w="137" h="403" pX="0.5" pY="0.5" oX="179" oY="102" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_31_ 3" x="2315" y="1237" w="126" h="409" pX="0.5" pY="0.5" oX="192" oY="100" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_32_ 3" x="2441" y="1237" w="127" h="407" pX="0.5" pY="0.5" oX="195" oY="101" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_33_ 4" x="5050" y="3754" w="333" h="272" pX="0.5" pY="0.5" oX="110" oY="99" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_34_ 4" x="5050" y="0" w="337" h="248" pX="0.5" pY="0.5" oX="113" oY="115" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_35_ 4" x="4469" y="4351" w="350" h="235" pX="0.5" pY="0.5" oX="117" oY="128" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_36_ 4" x="4109" y="3788" w="361" h="235" pX="0.5" pY="0.5" oX="122" oY="132" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_37_ 4" x="4109" y="2434" w="363" h="243" pX="0.5" pY="0.5" oX="130" oY="130" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_38_ 4" x="2630" y="4233" w="360" h="240" pX="0.5" pY="0.5" oX="124" oY="129" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_39_ 4" x="2172" y="4610" w="356" h="232" pX="0.5" pY="0.5" oX="118" oY="132" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_40_ 4" x="5050" y="4026" w="333" h="247" pX="0.5" pY="0.5" oX="114" oY="121" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_41_ 5" x="1784" y="4619" w="353" h="306" pX="0.5" pY="0.5" oX="139" oY="162" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_42_ 5" x="1813" y="4302" w="359" h="317" pX="0.5" pY="0.5" oX="131" oY="161" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_43_ 5" x="4109" y="4023" w="361" h="328" pX="0.5" pY="0.5" oX="124" oY="164" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_44_ 5" x="720" y="4612" w="356" h="331" pX="0.5" pY="0.5" oX="118" oY="170" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_45_ 5" x="4696" y="1267" w="348" h="323" pX="0.5" pY="0.5" oX="112" oY="179" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_46_ 5" x="3350" y="4292" w="359" h="330" pX="0.5" pY="0.5" oX="116" oY="171" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_47_ 5" x="1076" y="4593" w="354" h="332" pX="0.5" pY="0.5" oX="123" oY="165" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_48_ 5" x="3242" y="4622" w="355" h="316" pX="0.5" pY="0.5" oX="131" oY="161" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_49_ 6" x="358" y="4623" w="356" h="241" pX="0.5" pY="0.5" oX="22" oY="137" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_50_ 6" x="2265" y="4099" w="365" h="229" pX="0.5" pY="0.5" oX="22" oY="143" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_51_ 6" x="2642" y="4006" w="367" h="227" pX="0.5" pY="0.5" oX="27" oY="138" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_52_ 6" x="4109" y="3548" w="361" h="240" pX="0.5" pY="0.5" oX="39" oY="121" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_53_ 6" x="4696" y="994" w="352" h="273" pX="0.5" pY="0.5" oX="54" oY="100" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_54_ 6" x="4109" y="1057" w="364" h="242" pX="0.5" pY="0.5" oX="38" oY="118" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_55_ 6" x="4109" y="4351" w="360" h="235" pX="0.5" pY="0.5" oX="35" oY="131" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_56_ 6" x="4109" y="3040" w="361" h="222" pX="0.5" pY="0.5" oX="26" oY="149" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_57_ 7" x="3653" y="4944" w="337" h="340" pX="0.5" pY="0.5" oX="71" oY="162" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_58_ 7" x="4696" y="1938" w="344" h="347" pX="0.5" pY="0.5" oX="62" oY="159" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_59_ 7" x="2531" y="4473" w="356" h="349" pX="0.5" pY="0.5" oX="45" oY="157" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_60_ 7" x="1128" y="4016" w="366" h="339" pX="0.5" pY="0.5" oX="30" oY="157" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_61_ 7" x="3010" y="3959" w="368" h="325" pX="0.5" pY="0.5" oX="21" oY="156" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_62_ 7" x="3744" y="4016" w="365" h="339" pX="0.5" pY="0.5" oX="29" oY="157" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_63_ 7" x="4109" y="2092" w="363" h="342" pX="0.5" pY="0.5" oX="38" oY="158" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Walk_64_ 7" x="4470" y="3819" w="340" h="345" pX="0.5" pY="0.5" oX="65" oY="159" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_01_ 0" x="5133" y="1682" w="256" h="227" pX="0.5" pY="0.5" oX="62" oY="182" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_02_ 0" x="5555" y="5410" w="249" h="226" pX="0.5" pY="0.5" oX="68" oY="182" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_03_ 0" x="5302" y="5476" w="240" h="226" pX="0.5" pY="0.5" oX="76" oY="182" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_04_ 1" x="1435" y="2939" w="330" h="180" pX="0.5" pY="0.5" oX="57" oY="210" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_05_ 1" x="4470" y="4164" w="328" h="178" pX="0.5" pY="0.5" oX="58" oY="211" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_06_ 1" x="3114" y="5278" w="326" h="180" pX="0.5" pY="0.5" oX="59" oY="209" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_07_ 2" x="5050" y="3464" w="333" h="290" pX="0.5" pY="0.5" oX="125" oY="195" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_08_ 2" x="5042" y="1923" w="331" h="283" pX="0.5" pY="0.5" oX="126" oY="197" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_09_ 2" x="5006" y="4568" w="329" h="275" pX="0.5" pY="0.5" oX="127" oY="199" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_10_ 3" x="3440" y="5284" w="254" h="303" pX="0.5" pY="0.5" oX="197" oY="122" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_11_ 3" x="2830" y="5285" w="246" h="303" pX="0.5" pY="0.5" oX="198" oY="122" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_12_ 3" x="3694" y="5284" w="238" h="300" pX="0.5" pY="0.5" oX="198" oY="123" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_13_ 4" x="4472" y="2433" w="202" h="243" pX="0.5" pY="0.5" oX="156" oY="119" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_14_ 4" x="4473" y="1776" w="208" h="235" pX="0.5" pY="0.5" oX="151" oY="123" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_15_ 4" x="906" y="5588" w="217" h="228" pX="0.5" pY="0.5" oX="147" oY="127" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_16_ 5" x="4109" y="1894" w="364" h="198" pX="0.5" pY="0.5" oX="131" oY="186" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_17_ 5" x="4697" y="0" w="353" h="202" pX="0.5" pY="0.5" oX="136" oY="185" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_18_ 5" x="4666" y="4934" w="340" h="207" pX="0.5" pY="0.5" oX="142" oY="184" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_19_ 6" x="2642" y="3805" w="368" h="201" pX="0.5" pY="0.5" oX="17" oY="177" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_20_ 6" x="3709" y="4355" w="357" h="204" pX="0.5" pY="0.5" oX="23" oY="177" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_21_ 6" x="4696" y="2285" w="346" h="206" pX="0.5" pY="0.5" oX="30" oY="177" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_22_ 7" x="1613" y="4255" w="200" h="360" pX="0.5" pY="0.5" oX="159" oY="136" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_23_ 7" x="4690" y="359" w="209" h="353" pX="0.5" pY="0.5" oX="155" oY="138" oW="512" oH="512"/>
+  <sprite n="ApexHunter_Woozy_24_ 7" x="4473" y="1429" w="218" h="347" pX="0.5" pY="0.5" oX="150" oY="139" oW="512" oH="512"/>
+</TextureAtlas>

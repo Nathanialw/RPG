@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Beastman.png" width="2551" height="2636" scale="1" format="RGBA8888">
+  <sprite n="Beastman_Attack 1_01_ 0" x="816" y="2401" w="127" h="117" pX="0.5" pY="0.5" oX="69" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_02_ 0" x="1203" y="467" w="125" h="154" pX="0.5" pY="0.5" oX="66" oY="29" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_03_ 0" x="1558" y="1990" w="100" h="139" pX="0.5" pY="0.5" oX="103" oY="79" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_04_ 1" x="733" y="1258" w="90" h="152" pX="0.5" pY="0.5" oX="88" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_05_ 1" x="598" y="481" w="113" h="174" pX="0.5" pY="0.5" oX="100" oY="29" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_06_ 1" x="0" y="1710" w="141" h="145" pX="0.5" pY="0.5" oX="20" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_07_ 2" x="1533" y="741" w="100" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_08_ 2" x="560" y="2521" w="113" h="110" pX="0.5" pY="0.5" oX="50" oY="70" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_09_ 2" x="1608" y="1339" w="146" h="133" pX="0.5" pY="0.5" oX="105" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_10_ 3" x="0" y="1855" w="126" h="143" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_11_ 3" x="282" y="1104" w="135" h="156" pX="0.5" pY="0.5" oX="72" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_12_ 3" x="907" y="439" w="103" h="160" pX="0.5" pY="0.5" oX="60" oY="13" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_13_ 4" x="1413" y="1195" w="91" h="150" pX="0.5" pY="0.5" oX="81" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_14_ 4" x="240" y="603" w="95" h="181" pX="0.5" pY="0.5" oX="97" oY="22" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_15_ 4" x="2296" y="1060" w="129" h="113" pX="0.5" pY="0.5" oX="57" oY="89" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_16_ 5" x="668" y="1994" w="124" h="139" pX="0.5" pY="0.5" oX="68" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_17_ 5" x="1394" y="745" w="139" h="150" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_18_ 5" x="563" y="945" w="123" h="158" pX="0.5" pY="0.5" oX="43" oY="40" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_19_ 6" x="2302" y="2239" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_20_ 6" x="2304" y="1325" w="128" h="108" pX="0.5" pY="0.5" oX="62" oY="55" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_21_ 6" x="2298" y="781" w="129" h="126" pX="0.5" pY="0.5" oX="99" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_22_ 7" x="90" y="1414" w="96" h="149" pX="0.5" pY="0.5" oX="91" oY="54" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_23_ 7" x="1436" y="1783" w="103" h="142" pX="0.5" pY="0.5" oX="72" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 1_24_ 7" x="1085" y="778" w="136" h="154" pX="0.5" pY="0.5" oX="77" oY="24" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_01_ 0" x="2308" y="907" w="124" h="126" pX="0.5" pY="0.5" oX="76" oY="62" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_02_ 0" x="419" y="678" w="125" h="171" pX="0.5" pY="0.5" oX="78" oY="16" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_03_ 0" x="574" y="2406" w="112" h="113" pX="0.5" pY="0.5" oX="81" oY="111" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_04_ 1" x="962" y="778" w="61" h="161" pX="0.5" pY="0.5" oX="89" oY="52" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_05_ 1" x="656" y="145" w="104" h="178" pX="0.5" pY="0.5" oX="93" oY="34" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_06_ 1" x="2317" y="1433" w="108" h="124" pX="0.5" pY="0.5" oX="31" oY="79" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_07_ 2" x="173" y="785" w="67" h="160" pX="0.5" pY="0.5" oX="119" oY="39" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_08_ 2" x="335" y="603" w="84" h="180" pX="0.5" pY="0.5" oX="86" oY="18" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_09_ 2" x="2432" y="1256" w="108" h="121" pX="0.5" pY="0.5" oX="127" oY="74" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_10_ 3" x="0" y="2137" w="124" h="137" pX="0.5" pY="0.5" oX="63" oY="33" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_11_ 3" x="1070" y="2401" w="125" h="120" pX="0.5" pY="0.5" oX="60" oY="46" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_12_ 3" x="673" y="2521" w="112" h="112" pX="0.5" pY="0.5" oX="70" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_13_ 4" x="1199" y="1387" w="98" h="148" pX="0.5" pY="0.5" oX="78" oY="58" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_14_ 4" x="0" y="264" w="116" h="189" pX="0.5" pY="0.5" oX="80" oY="18" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_15_ 4" x="1206" y="2521" w="109" h="106" pX="0.5" pY="0.5" oX="54" oY="106" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_16_ 5" x="206" y="1260" w="100" h="153" pX="0.5" pY="0.5" oX="65" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_17_ 5" x="1413" y="895" w="116" h="150" pX="0.5" pY="0.5" oX="65" oY="40" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_18_ 5" x="2308" y="2357" w="116" h="123" pX="0.5" pY="0.5" oX="47" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_19_ 6" x="1238" y="1535" w="104" h="146" pX="0.5" pY="0.5" oX="99" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_20_ 6" x="287" y="150" w="103" h="187" pX="0.5" pY="0.5" oX="95" oY="9" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_21_ 6" x="258" y="2407" w="118" h="105" pX="0.5" pY="0.5" oX="100" oY="102" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_22_ 7" x="1240" y="1233" w="100" h="151" pX="0.5" pY="0.5" oX="87" oY="31" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_23_ 7" x="945" y="1096" w="104" h="154" pX="0.5" pY="0.5" oX="79" oY="27" oW="256" oH="256"/>
+  <sprite n="Beastman_Attack 2_24_ 7" x="1601" y="2395" w="112" h="125" pX="0.5" pY="0.5" oX="100" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_01_ 0" x="0" y="453" w="185" h="149" pX="0.5" pY="0.5" oX="18" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_02_ 0" x="185" y="453" w="185" h="150" pX="0.5" pY="0.5" oX="18" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_03_ 0" x="287" y="0" w="187" h="150" pX="0.5" pY="0.5" oX="17" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_04_ 1" x="711" y="653" w="95" h="171" pX="0.5" pY="0.5" oX="100" oY="19" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_05_ 1" x="598" y="655" w="94" h="171" pX="0.5" pY="0.5" oX="100" oY="19" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_06_ 1" x="711" y="481" w="94" h="172" pX="0.5" pY="0.5" oX="100" oY="18" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_07_ 2" x="116" y="264" w="85" h="189" pX="0.5" pY="0.5" oX="78" oY="33" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_08_ 2" x="203" y="191" w="84" h="190" pX="0.5" pY="0.5" oX="79" oY="32" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_09_ 2" x="203" y="0" w="84" h="191" pX="0.5" pY="0.5" oX="79" oY="31" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_10_ 3" x="370" y="426" w="182" h="122" pX="0.5" pY="0.5" oX="69" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_11_ 3" x="474" y="0" w="182" h="122" pX="0.5" pY="0.5" oX="69" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_12_ 3" x="474" y="122" w="182" h="122" pX="0.5" pY="0.5" oX="69" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_13_ 4" x="126" y="1105" w="156" h="152" pX="0.5" pY="0.5" oX="61" oY="26" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_14_ 4" x="844" y="944" w="157" h="152" pX="0.5" pY="0.5" oX="60" oY="26" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_15_ 4" x="686" y="945" w="158" h="152" pX="0.5" pY="0.5" oX="59" oY="26" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_16_ 5" x="1820" y="719" w="122" h="142" pX="0.5" pY="0.5" oX="109" oY="47" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_17_ 5" x="1840" y="1003" w="122" h="142" pX="0.5" pY="0.5" oX="109" oY="47" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_18_ 5" x="1840" y="861" w="122" h="142" pX="0.5" pY="0.5" oX="109" oY="47" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_19_ 6" x="0" y="603" w="120" h="182" pX="0.5" pY="0.5" oX="39" oY="23" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_20_ 6" x="461" y="244" w="120" h="182" pX="0.5" pY="0.5" oX="39" oY="23" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_21_ 6" x="120" y="603" w="120" h="182" pX="0.5" pY="0.5" oX="40" oY="23" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_22_ 7" x="1245" y="129" w="153" h="140" pX="0.5" pY="0.5" oX="55" oY="67" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_23_ 7" x="1049" y="1095" w="154" h="141" pX="0.5" pY="0.5" oX="55" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Behavior_24_ 7" x="1127" y="932" w="153" h="141" pX="0.5" pY="0.5" oX="56" oY="65" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_01_ 0" x="2305" y="1954" w="127" h="117" pX="0.5" pY="0.5" oX="69" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_02_ 0" x="2432" y="2216" w="118" h="115" pX="0.5" pY="0.5" oX="73" oY="69" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_03_ 0" x="118" y="2521" w="117" h="111" pX="0.5" pY="0.5" oX="73" oY="72" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_04_ 1" x="823" y="1252" w="91" h="152" pX="0.5" pY="0.5" oX="88" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_05_ 1" x="1513" y="1343" w="95" h="148" pX="0.5" pY="0.5" oX="84" oY="56" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_06_ 1" x="1885" y="576" w="92" h="142" pX="0.5" pY="0.5" oX="87" oY="61" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_07_ 2" x="1504" y="1195" w="100" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_08_ 2" x="1887" y="288" w="100" h="142" pX="0.5" pY="0.5" oX="84" oY="62" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_09_ 2" x="259" y="2137" w="99" h="137" pX="0.5" pY="0.5" oX="84" oY="67" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_10_ 3" x="1714" y="1023" w="126" h="144" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_11_ 3" x="2090" y="1327" w="118" h="137" pX="0.5" pY="0.5" oX="72" oY="55" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_12_ 3" x="1872" y="2393" w="117" h="128" pX="0.5" pY="0.5" oX="73" oY="64" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_13_ 4" x="1328" y="595" w="91" h="150" pX="0.5" pY="0.5" oX="81" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_14_ 4" x="1371" y="1639" w="90" h="144" pX="0.5" pY="0.5" oX="82" oY="59" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_15_ 4" x="348" y="1998" w="91" h="139" pX="0.5" pY="0.5" oX="83" oY="64" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_16_ 5" x="439" y="1997" w="124" h="139" pX="0.5" pY="0.5" oX="68" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_17_ 5" x="1295" y="2263" w="118" h="132" pX="0.5" pY="0.5" oX="74" oY="55" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_18_ 5" x="2432" y="123" w="118" h="122" pX="0.5" pY="0.5" oX="74" oY="65" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_19_ 6" x="2298" y="663" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_20_ 6" x="0" y="2521" w="118" h="115" pX="0.5" pY="0.5" oX="71" oY="68" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_21_ 6" x="2432" y="2331" w="118" h="111" pX="0.5" pY="0.5" oX="71" oY="72" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_22_ 7" x="910" y="1404" w="96" h="149" pX="0.5" pY="0.5" oX="91" oY="54" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_23_ 7" x="303" y="1855" w="95" h="143" pX="0.5" pY="0.5" oX="91" oY="60" oW="256" oH="256"/>
+  <sprite n="Beastman_Block_24_ 7" x="978" y="2133" w="94" h="136" pX="0.5" pY="0.5" oX="92" oY="67" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_01_ 0" x="350" y="2521" w="115" h="111" pX="0.5" pY="0.5" oX="78" oY="89" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_02_ 0" x="376" y="2407" w="115" h="112" pX="0.5" pY="0.5" oX="78" oY="88" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_03_ 0" x="235" y="2521" w="115" h="113" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_04_ 1" x="1650" y="2263" w="111" h="131" pX="0.5" pY="0.5" oX="60" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_05_ 1" x="1882" y="2262" w="111" h="131" pX="0.5" pY="0.5" oX="60" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_06_ 1" x="2206" y="1464" w="111" h="132" pX="0.5" pY="0.5" oX="60" oY="65" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_07_ 2" x="398" y="1854" w="119" h="143" pX="0.5" pY="0.5" oX="92" oY="56" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_08_ 2" x="1769" y="144" w="119" h="144" pX="0.5" pY="0.5" oX="92" oY="55" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_09_ 2" x="1769" y="0" w="119" h="144" pX="0.5" pY="0.5" oX="92" oY="55" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_10_ 3" x="1525" y="296" w="109" h="148" pX="0.5" pY="0.5" oX="76" oY="39" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_11_ 3" x="692" y="1410" w="109" h="149" pX="0.5" pY="0.5" oX="76" oY="39" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_12_ 3" x="801" y="1410" w="109" h="149" pX="0.5" pY="0.5" oX="76" oY="38" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_13_ 4" x="2432" y="2097" w="114" h="119" pX="0.5" pY="0.5" oX="59" oY="89" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_14_ 4" x="2432" y="1740" w="114" h="119" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_15_ 4" x="2090" y="1464" w="115" h="120" pX="0.5" pY="0.5" oX="60" oY="88" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_16_ 5" x="2432" y="1135" w="119" h="121" pX="0.5" pY="0.5" oX="65" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_17_ 5" x="2432" y="1619" w="119" h="121" pX="0.5" pY="0.5" oX="65" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_18_ 5" x="2432" y="0" w="119" h="123" pX="0.5" pY="0.5" oX="65" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_19_ 6" x="1531" y="2263" w="119" h="132" pX="0.5" pY="0.5" oX="79" oY="70" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_20_ 6" x="1176" y="2269" w="119" h="132" pX="0.5" pY="0.5" oX="79" oY="70" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_21_ 6" x="688" y="2269" w="119" h="132" pX="0.5" pY="0.5" oX="79" oY="69" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_22_ 7" x="1216" y="621" w="112" h="153" pX="0.5" pY="0.5" oX="95" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_23_ 7" x="95" y="1261" w="111" h="153" pX="0.5" pY="0.5" oX="95" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Critical HP_24_ 7" x="1133" y="0" w="112" h="154" pX="0.5" pY="0.5" oX="94" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Dead_01_ 0" x="656" y="0" w="179" h="145" pX="0.5" pY="0.5" oX="45" oY="74" oW="256" oH="256"/>
+  <sprite n="Beastman_Dead_02_ 1" x="896" y="139" w="165" h="138" pX="0.5" pY="0.5" oX="49" oY="83" oW="256" oH="256"/>
+  <sprite n="Beastman_Dead_03_ 2" x="880" y="646" w="165" h="132" pX="0.5" pY="0.5" oX="51" oY="86" oW="256" oH="256"/>
+  <sprite n="Beastman_Dead_04_ 3" x="419" y="548" w="179" h="130" pX="0.5" pY="0.5" oX="40" oY="82" oW="256" oH="256"/>
+  <sprite n="Beastman_Dead_05_ 4" x="0" y="785" w="173" h="160" pX="0.5" pY="0.5" oX="43" oY="64" oW="256" oH="256"/>
+  <sprite n="Beastman_Dead_06_ 5" x="0" y="0" w="203" h="132" pX="0.5" pY="0.5" oX="42" oY="85" oW="256" oH="256"/>
+  <sprite n="Beastman_Dead_07_ 6" x="0" y="132" w="203" h="132" pX="0.5" pY="0.5" oX="19" oY="88" oW="256" oH="256"/>
+  <sprite n="Beastman_Dead_08_ 7" x="642" y="323" w="174" h="158" pX="0.5" pY="0.5" oX="47" oY="78" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_01_ 0" x="1315" y="1990" w="139" h="106" pX="0.5" pY="0.5" oX="62" oY="70" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_02_ 0" x="1846" y="1990" w="138" h="130" pX="0.5" pY="0.5" oX="65" oY="46" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_03_ 0" x="2425" y="1498" w="121" h="121" pX="0.5" pY="0.5" oX="97" oY="25" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_04_ 1" x="1711" y="1763" w="97" h="142" pX="0.5" pY="0.5" oX="80" oY="45" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_05_ 1" x="368" y="945" w="113" h="159" pX="0.5" pY="0.5" oX="77" oY="38" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_06_ 1" x="1888" y="0" w="99" h="142" pX="0.5" pY="0.5" oX="130" oY="62" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_07_ 2" x="1879" y="1453" w="107" h="141" pX="0.5" pY="0.5" oX="86" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_08_ 2" x="1010" y="469" w="121" h="155" pX="0.5" pY="0.5" oX="74" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_09_ 2" x="476" y="1412" w="108" h="149" pX="0.5" pY="0.5" oX="35" oY="34" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_10_ 3" x="1215" y="311" w="139" h="154" pX="0.5" pY="0.5" oX="69" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_11_ 3" x="1399" y="0" w="137" h="151" pX="0.5" pY="0.5" oX="69" oY="47" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_12_ 3" x="247" y="945" w="121" h="159" pX="0.5" pY="0.5" oX="52" oY="67" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_13_ 4" x="2084" y="1584" w="122" h="138" pX="0.5" pY="0.5" oX="55" oY="58" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_14_ 4" x="417" y="1104" w="108" h="155" pX="0.5" pY="0.5" oX="87" oY="38" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_15_ 4" x="1639" y="1761" w="72" h="142" pX="0.5" pY="0.5" oX="136" oY="40" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_16_ 5" x="1398" y="151" w="120" h="151" pX="0.5" pY="0.5" oX="56" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_17_ 5" x="914" y="1251" w="144" h="152" pX="0.5" pY="0.5" oX="54" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_18_ 5" x="663" y="1851" w="135" h="143" pX="0.5" pY="0.5" oX="77" oY="69" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_19_ 6" x="860" y="2133" w="118" h="136" pX="0.5" pY="0.5" oX="95" oY="59" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_20_ 6" x="520" y="1837" w="143" h="137" pX="0.5" pY="0.5" oX="74" oY="47" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_21_ 6" x="2065" y="421" w="138" h="111" pX="0.5" pY="0.5" oX="54" oY="31" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_22_ 7" x="219" y="1998" w="129" h="139" pX="0.5" pY="0.5" oX="86" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_23_ 7" x="132" y="945" w="115" h="159" pX="0.5" pY="0.5" oX="68" oY="32" oW="256" oH="256"/>
+  <sprite n="Beastman_Evade_24_ 7" x="880" y="778" w="82" h="163" pX="0.5" pY="0.5" oX="55" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_01_ 0" x="2185" y="2378" w="123" h="117" pX="0.5" pY="0.5" oX="77" oY="71" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_02_ 0" x="2060" y="1200" w="138" h="127" pX="0.5" pY="0.5" oX="75" oY="61" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_03_ 0" x="896" y="0" w="166" h="139" pX="0.5" pY="0.5" oX="64" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_04_ 1" x="1045" y="313" w="71" h="156" pX="0.5" pY="0.5" oX="83" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_05_ 1" x="1062" y="0" w="71" h="157" pX="0.5" pY="0.5" oX="88" oY="56" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_06_ 1" x="760" y="145" w="72" h="174" pX="0.5" pY="0.5" oX="96" oY="39" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_07_ 2" x="1131" y="467" w="72" h="154" pX="0.5" pY="0.5" oX="118" oY="44" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_08_ 2" x="806" y="646" w="69" h="157" pX="0.5" pY="0.5" oX="112" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_09_ 2" x="581" y="244" w="61" h="174" pX="0.5" pY="0.5" oX="106" oY="24" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_10_ 3" x="351" y="2274" w="123" h="133" pX="0.5" pY="0.5" oX="63" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_11_ 3" x="2075" y="1857" w="138" h="130" pX="0.5" pY="0.5" oX="57" oY="40" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_12_ 3" x="713" y="824" w="167" h="120" pX="0.5" pY="0.5" oX="41" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_13_ 4" x="1145" y="1844" w="98" h="143" pX="0.5" pY="0.5" oX="78" oY="64" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_14_ 4" x="1536" y="148" w="110" h="148" pX="0.5" pY="0.5" oX="72" oY="59" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_15_ 4" x="1221" y="774" w="130" h="153" pX="0.5" pY="0.5" oX="66" oY="54" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_16_ 5" x="283" y="1413" w="108" h="149" pX="0.5" pY="0.5" oX="63" oY="45" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_17_ 5" x="395" y="1709" w="125" h="145" pX="0.5" pY="0.5" oX="51" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_18_ 5" x="505" y="1259" w="127" h="152" pX="0.5" pY="0.5" oX="54" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_19_ 6" x="1454" y="1990" w="104" h="139" pX="0.5" pY="0.5" oX="101" oY="58" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_20_ 6" x="1646" y="0" w="123" h="146" pX="0.5" pY="0.5" oX="96" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_21_ 6" x="0" y="1105" w="126" h="156" pX="0.5" pY="0.5" oX="91" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_22_ 7" x="810" y="1706" w="98" h="145" pX="0.5" pY="0.5" oX="87" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_23_ 7" x="1871" y="1311" w="110" h="142" pX="0.5" pY="0.5" oX="87" oY="38" oW="256" oH="256"/>
+  <sprite n="Beastman_Get Hit_24_ 7" x="0" y="1563" w="129" h="147" pX="0.5" pY="0.5" oX="75" oY="33" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_01_ 0" x="943" y="2401" w="127" h="117" pX="0.5" pY="0.5" oX="69" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_02_ 0" x="688" y="2401" w="128" h="116" pX="0.5" pY="0.5" oX="68" oY="67" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_03_ 0" x="2213" y="1726" w="129" h="115" pX="0.5" pY="0.5" oX="68" oY="68" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_04_ 1" x="1058" y="1236" w="90" h="152" pX="0.5" pY="0.5" oX="88" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_05_ 1" x="414" y="1260" w="91" h="152" pX="0.5" pY="0.5" oX="88" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_06_ 1" x="1148" y="1236" w="92" h="151" pX="0.5" pY="0.5" oX="87" oY="52" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_07_ 2" x="1413" y="1345" w="100" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_08_ 2" x="542" y="1561" w="100" h="147" pX="0.5" pY="0.5" oX="85" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_09_ 2" x="442" y="1562" w="100" h="147" pX="0.5" pY="0.5" oX="85" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_10_ 3" x="926" y="1851" w="126" h="143" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_11_ 3" x="1808" y="1763" w="127" h="142" pX="0.5" pY="0.5" oX="73" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_12_ 3" x="1987" y="0" w="129" h="141" pX="0.5" pY="0.5" oX="72" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_13_ 4" x="1413" y="1195" w="91" h="150" pX="0.5" pY="0.5" oX="81" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_14_ 4" x="1419" y="595" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_15_ 4" x="0" y="1414" w="90" h="149" pX="0.5" pY="0.5" oX="82" oY="54" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_16_ 5" x="0" y="1998" w="124" h="139" pX="0.5" pY="0.5" oX="68" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_17_ 5" x="1984" y="1990" w="124" h="138" pX="0.5" pY="0.5" oX="68" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_18_ 5" x="358" y="2137" w="125" h="137" pX="0.5" pY="0.5" oX="67" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_19_ 6" x="2302" y="2121" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_20_ 6" x="2124" y="2260" w="131" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_21_ 6" x="1993" y="2262" w="131" h="117" pX="0.5" pY="0.5" oX="71" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_22_ 7" x="1103" y="1388" w="96" h="149" pX="0.5" pY="0.5" oX="91" oY="54" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_23_ 7" x="1520" y="1045" w="96" h="148" pX="0.5" pY="0.5" oX="91" oY="55" oW="256" oH="256"/>
+  <sprite n="Beastman_Idle_24_ 7" x="1004" y="1553" w="95" h="147" pX="0.5" pY="0.5" oX="92" oY="56" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_01_ 0" x="889" y="2521" w="104" h="111" pX="0.5" pY="0.5" oX="76" oY="91" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_02_ 0" x="785" y="2521" w="104" h="111" pX="0.5" pY="0.5" oX="76" oY="91" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_03_ 0" x="993" y="2521" w="103" h="111" pX="0.5" pY="0.5" oX="77" oY="91" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_04_ 1" x="0" y="2407" w="129" h="114" pX="0.5" pY="0.5" oX="68" oY="71" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_05_ 1" x="129" y="2407" w="129" h="113" pX="0.5" pY="0.5" oX="68" oY="72" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_06_ 1" x="2213" y="1841" w="129" h="113" pX="0.5" pY="0.5" oX="68" oY="72" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_07_ 2" x="1315" y="2096" w="136" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_08_ 2" x="1177" y="2133" w="136" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_09_ 2" x="1451" y="2129" w="136" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_10_ 3" x="846" y="1096" w="99" h="155" pX="0.5" pY="0.5" oX="88" oY="52" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_11_ 3" x="1116" y="313" w="99" h="154" pX="0.5" pY="0.5" oX="88" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_12_ 3" x="1117" y="624" w="99" h="154" pX="0.5" pY="0.5" oX="88" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_13_ 4" x="1962" y="859" w="141" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_14_ 4" x="1962" y="1096" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_15_ 4" x="1881" y="1200" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_16_ 5" x="1484" y="1638" w="98" h="144" pX="0.5" pY="0.5" oX="76" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_17_ 5" x="1273" y="1681" w="98" h="144" pX="0.5" pY="0.5" oX="76" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_18_ 5" x="1175" y="1699" w="98" h="144" pX="0.5" pY="0.5" oX="76" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_19_ 6" x="2432" y="903" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_20_ 6" x="2427" y="781" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_21_ 6" x="2317" y="1557" w="104" h="123" pX="0.5" pY="0.5" oX="89" oY="88" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_22_ 7" x="1965" y="1724" w="140" h="133" pX="0.5" pY="0.5" oX="65" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_23_ 7" x="1935" y="1857" w="140" h="133" pX="0.5" pY="0.5" oX="65" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Rest_24_ 7" x="1962" y="963" w="140" h="133" pX="0.5" pY="0.5" oX="65" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_01_ 0" x="719" y="1559" w="103" h="147" pX="0.5" pY="0.5" oX="78" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_02_ 0" x="574" y="2273" w="114" h="133" pX="0.5" pY="0.5" oX="71" oY="80" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_03_ 0" x="1096" y="2521" w="110" h="110" pX="0.5" pY="0.5" oX="80" oY="79" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_04_ 0" x="465" y="2521" w="95" h="113" pX="0.5" pY="0.5" oX="91" oY="78" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_05_ 0" x="1633" y="735" w="93" h="144" pX="0.5" pY="0.5" oX="93" oY="69" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_06_ 0" x="2216" y="267" w="102" h="132" pX="0.5" pY="0.5" oX="91" oY="84" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_07_ 0" x="1315" y="2521" w="106" h="103" pX="0.5" pY="0.5" oX="81" oY="76" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_08_ 0" x="2216" y="531" w="98" h="132" pX="0.5" pY="0.5" oX="85" oY="73" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_09_ 1" x="1374" y="302" w="151" h="143" pX="0.5" pY="0.5" oX="42" oY="44" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_10_ 1" x="2318" y="0" w="114" h="130" pX="0.5" pY="0.5" oX="55" oY="52" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_11_ 1" x="2210" y="399" w="78" h="132" pX="0.5" pY="0.5" oX="73" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_12_ 1" x="2314" y="529" w="93" h="128" pX="0.5" pY="0.5" oX="73" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_13_ 1" x="2079" y="532" w="137" h="122" pX="0.5" pY="0.5" oX="42" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_14_ 1" x="2278" y="1195" w="121" h="130" pX="0.5" pY="0.5" oX="53" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_15_ 1" x="2198" y="1195" w="80" h="132" pX="0.5" pY="0.5" oX="73" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_16_ 1" x="123" y="2274" w="111" h="133" pX="0.5" pY="0.5" oX="53" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_17_ 2" x="1245" y="0" w="154" h="129" pX="0.5" pY="0.5" oX="71" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_18_ 2" x="1983" y="2128" w="113" h="134" pX="0.5" pY="0.5" oX="95" oY="54" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_19_ 2" x="2102" y="1062" w="81" h="134" pX="0.5" pY="0.5" oX="118" oY="52" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_20_ 2" x="2116" y="0" w="100" h="138" pX="0.5" pY="0.5" oX="99" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_21_ 2" x="1846" y="2120" w="137" h="132" pX="0.5" pY="0.5" oX="88" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_22_ 2" x="1761" y="2262" w="121" h="131" pX="0.5" pY="0.5" oX="89" oY="54" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_23_ 2" x="1587" y="2129" w="86" h="134" pX="0.5" pY="0.5" oX="113" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_24_ 2" x="2318" y="130" w="114" h="129" pX="0.5" pY="0.5" oX="100" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_25_ 3" x="805" y="481" w="102" h="165" pX="0.5" pY="0.5" oX="91" oY="33" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_26_ 3" x="282" y="1710" w="113" h="145" pX="0.5" pY="0.5" oX="85" oY="38" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_27_ 3" x="1761" y="2393" w="111" h="128" pX="0.5" pY="0.5" oX="78" oY="38" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_28_ 3" x="1616" y="1043" w="98" h="146" pX="0.5" pY="0.5" oX="82" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_29_ 3" x="1280" y="927" w="94" h="153" pX="0.5" pY="0.5" oX="84" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_30_ 3" x="341" y="1562" w="101" h="147" pX="0.5" pY="0.5" oX="75" oY="40" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_31_ 3" x="563" y="1994" w="105" h="139" pX="0.5" pY="0.5" oX="83" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_32_ 3" x="186" y="1414" w="97" h="149" pX="0.5" pY="0.5" oX="88" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_33_ 4" x="1099" y="1552" w="139" h="147" pX="0.5" pY="0.5" oX="53" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_34_ 4" x="2103" y="928" w="108" h="134" pX="0.5" pY="0.5" oX="63" oY="64" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_35_ 4" x="1195" y="2401" w="87" h="120" pX="0.5" pY="0.5" oX="81" oY="68" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_36_ 4" x="2432" y="1377" w="91" h="121" pX="0.5" pY="0.5" oX="86" oY="68" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_37_ 4" x="124" y="2137" w="135" h="137" pX="0.5" pY="0.5" oX="61" oY="67" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_38_ 4" x="2108" y="2124" w="105" h="136" pX="0.5" pY="0.5" oX="74" oY="73" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_39_ 4" x="2215" y="663" w="78" h="121" pX="0.5" pY="0.5" oX="88" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_40_ 4" x="2318" y="259" w="106" h="128" pX="0.5" pY="0.5" oX="62" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_41_ 5" x="0" y="945" w="132" h="160" pX="0.5" pY="0.5" oX="64" oY="40" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_42_ 5" x="1738" y="1990" w="108" h="138" pX="0.5" pY="0.5" oX="75" oY="47" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_43_ 5" x="2385" y="387" w="91" h="122" pX="0.5" pY="0.5" oX="76" oY="45" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_44_ 5" x="2212" y="791" w="86" h="132" pX="0.5" pY="0.5" oX="82" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_45_ 5" x="1987" y="281" w="121" h="140" pX="0.5" pY="0.5" oX="55" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_46_ 5" x="1413" y="2263" w="118" h="132" pX="0.5" pY="0.5" oX="61" oY="46" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_47_ 5" x="124" y="1998" w="95" h="139" pX="0.5" pY="0.5" oX="76" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_48_ 5" x="1787" y="288" w="99" h="144" pX="0.5" pY="0.5" oX="73" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_49_ 6" x="798" y="1851" w="128" h="143" pX="0.5" pY="0.5" oX="74" oY="62" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_50_ 6" x="1987" y="141" w="103" h="140" pX="0.5" pY="0.5" oX="85" oY="68" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_51_ 6" x="2213" y="2121" w="89" h="130" pX="0.5" pY="0.5" oX="103" oY="66" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_52_ 6" x="2432" y="1859" w="91" h="119" pX="0.5" pY="0.5" oX="96" oY="65" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_53_ 6" x="1645" y="1617" w="122" h="144" pX="0.5" pY="0.5" oX="89" oY="54" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_54_ 6" x="234" y="2274" w="117" h="133" pX="0.5" pY="0.5" oX="85" oY="69" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_55_ 6" x="2432" y="1978" w="95" h="119" pX="0.5" pY="0.5" oX="97" oY="64" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_56_ 6" x="483" y="2136" w="96" h="137" pX="0.5" pY="0.5" oX="97" oY="62" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_57_ 7" x="141" y="1710" w="141" h="145" pX="0.5" pY="0.5" oX="72" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_58_ 7" x="2108" y="654" w="107" h="137" pX="0.5" pY="0.5" oX="93" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_59_ 7" x="677" y="2133" w="85" h="136" pX="0.5" pY="0.5" oX="102" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_60_ 7" x="1634" y="296" w="93" h="146" pX="0.5" pY="0.5" oX="91" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_61_ 7" x="1513" y="1491" w="132" h="147" pX="0.5" pY="0.5" oX="74" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_62_ 7" x="1636" y="879" w="101" h="144" pX="0.5" pY="0.5" oX="88" oY="46" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_63_ 7" x="1658" y="1990" w="80" h="138" pX="0.5" pY="0.5" oX="105" oY="40" oW="256" oH="256"/>
+  <sprite n="Beastman_Run_64_ 7" x="2105" y="1722" w="108" h="134" pX="0.5" pY="0.5" oX="96" oY="38" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_01_ 0" x="2185" y="2378" w="123" h="117" pX="0.5" pY="0.5" oX="77" oY="71" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_02_ 0" x="520" y="1709" w="145" h="128" pX="0.5" pY="0.5" oX="70" oY="60" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_03_ 0" x="240" y="784" w="167" h="142" pX="0.5" pY="0.5" oX="61" oY="46" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_04_ 1" x="1061" y="157" w="71" h="156" pX="0.5" pY="0.5" oX="83" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_05_ 1" x="832" y="169" w="64" h="163" pX="0.5" pY="0.5" oX="93" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_06_ 1" x="390" y="150" w="71" h="184" pX="0.5" pY="0.5" oX="97" oY="30" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_07_ 2" x="1045" y="624" w="72" h="154" pX="0.5" pY="0.5" oX="118" oY="44" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_08_ 2" x="1023" y="778" w="62" h="156" pX="0.5" pY="0.5" oX="115" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_09_ 2" x="835" y="0" w="61" h="169" pX="0.5" pY="0.5" oX="105" oY="28" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_10_ 3" x="0" y="2274" w="123" h="133" pX="0.5" pY="0.5" oX="63" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_11_ 3" x="665" y="1707" w="145" h="131" pX="0.5" pY="0.5" oX="55" oY="39" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_12_ 3" x="544" y="826" w="169" h="119" pX="0.5" pY="0.5" oX="43" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_13_ 4" x="1787" y="576" w="98" h="143" pX="0.5" pY="0.5" oX="78" oY="64" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_14_ 4" x="1536" y="0" w="110" h="148" pX="0.5" pY="0.5" oX="72" oY="59" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_15_ 4" x="907" y="277" w="124" h="162" pX="0.5" pY="0.5" oX="76" oY="45" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_16_ 5" x="584" y="1411" w="108" h="149" pX="0.5" pY="0.5" oX="63" oY="45" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_17_ 5" x="1645" y="1472" w="121" h="145" pX="0.5" pY="0.5" oX="55" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_18_ 5" x="525" y="1103" w="127" h="155" pX="0.5" pY="0.5" oX="62" oY="40" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_19_ 6" x="1016" y="1994" w="104" h="139" pX="0.5" pY="0.5" oX="101" oY="58" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_20_ 6" x="129" y="1563" w="120" h="147" pX="0.5" pY="0.5" oX="95" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_21_ 6" x="1001" y="939" w="126" h="156" pX="0.5" pY="0.5" oX="83" oY="40" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_22_ 7" x="810" y="1706" w="98" h="145" pX="0.5" pY="0.5" oX="87" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_23_ 7" x="1767" y="1620" w="112" h="143" pX="0.5" pY="0.5" oX="86" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Use Skill_24_ 7" x="890" y="1994" w="126" h="139" pX="0.5" pY="0.5" oX="71" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_01_ 0" x="1767" y="1333" w="103" h="144" pX="0.5" pY="0.5" oX="83" oY="56" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_02_ 0" x="579" y="2133" w="98" h="136" pX="0.5" pY="0.5" oX="86" oY="57" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_03_ 0" x="1497" y="2395" w="104" h="125" pX="0.5" pY="0.5" oX="86" oY="58" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_04_ 0" x="1673" y="2128" w="101" h="134" pX="0.5" pY="0.5" oX="89" oY="60" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_05_ 0" x="1539" y="1782" w="100" h="142" pX="0.5" pY="0.5" oX="91" oY="59" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_06_ 0" x="2216" y="0" w="102" h="134" pX="0.5" pY="0.5" oX="83" oY="58" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_07_ 0" x="1392" y="2395" w="105" h="126" pX="0.5" pY="0.5" oX="81" oY="56" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_08_ 0" x="1888" y="142" w="99" h="142" pX="0.5" pY="0.5" oX="86" oY="55" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_09_ 1" x="1737" y="876" w="103" h="144" pX="0.5" pY="0.5" oX="76" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_10_ 1" x="908" y="1706" w="89" h="145" pX="0.5" pY="0.5" oX="85" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_11_ 1" x="2036" y="712" w="72" h="140" pX="0.5" pY="0.5" oX="90" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_12_ 1" x="792" y="1994" w="98" h="139" pX="0.5" pY="0.5" oX="74" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_13_ 1" x="1986" y="1444" w="104" h="140" pX="0.5" pY="0.5" oX="68" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_14_ 1" x="1981" y="1304" w="79" h="140" pX="0.5" pY="0.5" oX="88" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_15_ 1" x="1887" y="430" w="72" h="141" pX="0.5" pY="0.5" oX="92" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_16_ 1" x="1341" y="1825" w="95" h="142" pX="0.5" pY="0.5" oX="70" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_17_ 2" x="1382" y="1493" w="102" h="146" pX="0.5" pY="0.5" oX="85" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_18_ 2" x="1509" y="593" w="91" h="148" pX="0.5" pY="0.5" oX="91" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_19_ 2" x="822" y="1559" w="82" h="147" pX="0.5" pY="0.5" oX="102" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_20_ 2" x="1726" y="732" w="94" h="144" pX="0.5" pY="0.5" oX="97" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_21_ 2" x="1977" y="571" w="102" h="141" pX="0.5" pY="0.5" oX="94" oY="44" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_22_ 2" x="1297" y="1384" w="85" h="148" pX="0.5" pY="0.5" oX="97" oY="43" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_23_ 2" x="997" y="1706" w="73" h="145" pX="0.5" pY="0.5" oX="108" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_24_ 2" x="1942" y="718" w="94" h="141" pX="0.5" pY="0.5" oX="101" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_25_ 3" x="1132" y="157" w="100" h="154" pX="0.5" pY="0.5" oX="86" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_26_ 3" x="1006" y="1403" w="97" h="149" pX="0.5" pY="0.5" oX="87" oY="34" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_27_ 3" x="1681" y="588" w="106" h="144" pX="0.5" pY="0.5" oX="78" oY="33" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_28_ 3" x="1070" y="1700" w="105" h="144" pX="0.5" pY="0.5" oX="79" oY="32" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_29_ 3" x="632" y="1258" w="101" h="152" pX="0.5" pY="0.5" oX="79" oY="33" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_30_ 3" x="904" y="1559" w="100" h="147" pX="0.5" pY="0.5" oX="85" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_31_ 3" x="2216" y="134" w="102" h="133" pX="0.5" pY="0.5" oX="86" oY="34" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_32_ 3" x="1243" y="1843" w="98" h="142" pX="0.5" pY="0.5" oX="87" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_33_ 4" x="1072" y="2133" w="105" h="136" pX="0.5" pY="0.5" oX="75" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_34_ 4" x="2213" y="1596" w="104" h="130" pX="0.5" pY="0.5" oX="80" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_35_ 4" x="1989" y="2393" w="99" h="128" pX="0.5" pY="0.5" oX="86" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_36_ 4" x="1604" y="1193" w="105" h="146" pX="0.5" pY="0.5" oX="89" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_37_ 4" x="1203" y="1080" w="108" h="153" pX="0.5" pY="0.5" oX="86" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_38_ 4" x="1646" y="146" w="83" h="146" pX="0.5" pY="0.5" oX="94" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_39_ 4" x="1120" y="1994" w="94" h="139" pX="0.5" pY="0.5" oX="81" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_40_ 4" x="2183" y="1062" w="113" h="133" pX="0.5" pY="0.5" oX="64" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_41_ 5" x="652" y="1103" w="95" h="155" pX="0.5" pY="0.5" oX="94" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_42_ 5" x="481" y="945" w="82" h="158" pX="0.5" pY="0.5" oX="97" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_43_ 5" x="642" y="1560" w="77" h="147" pX="0.5" pY="0.5" oX="97" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_44_ 5" x="1413" y="1045" w="107" h="150" pX="0.5" pY="0.5" oX="70" oY="34" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_45_ 5" x="1529" y="895" w="107" h="148" pX="0.5" pY="0.5" oX="68" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_46_ 5" x="762" y="2133" w="98" h="136" pX="0.5" pY="0.5" oX="80" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_47_ 5" x="2108" y="1987" w="98" h="137" pX="0.5" pY="0.5" oX="87" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_48_ 5" x="1787" y="432" w="100" h="144" pX="0.5" pY="0.5" oX="86" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_49_ 6" x="0" y="1261" w="95" h="153" pX="0.5" pY="0.5" oX="80" oY="47" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_50_ 6" x="391" y="1413" w="85" h="149" pX="0.5" pY="0.5" oX="91" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_51_ 6" x="126" y="1855" w="80" h="143" pX="0.5" pY="0.5" oX="97" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_52_ 6" x="2206" y="1987" w="99" h="134" pX="0.5" pY="0.5" oX="96" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_53_ 6" x="2108" y="141" w="106" h="138" pX="0.5" pY="0.5" oX="89" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_54_ 6" x="2208" y="1327" w="96" h="132" pX="0.5" pY="0.5" oX="87" oY="51" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_55_ 6" x="206" y="1855" w="97" h="143" pX="0.5" pY="0.5" oX="85" oY="49" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_56_ 6" x="747" y="1097" w="99" h="155" pX="0.5" pY="0.5" oX="84" oY="47" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_57_ 7" x="1767" y="1477" w="104" h="143" pX="0.5" pY="0.5" oX="84" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_58_ 7" x="2108" y="279" w="102" h="137" pX="0.5" pY="0.5" oX="81" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_59_ 7" x="1052" y="1851" w="93" h="143" pX="0.5" pY="0.5" oX="84" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_60_ 7" x="1487" y="445" w="105" h="148" pX="0.5" pY="0.5" oX="75" oY="35" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_61_ 7" x="306" y="1260" w="108" h="153" pX="0.5" pY="0.5" oX="76" oY="36" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_62_ 7" x="1311" y="1080" w="83" h="151" pX="0.5" pY="0.5" oX="93" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_63_ 7" x="1879" y="1594" w="86" h="140" pX="0.5" pY="0.5" oX="97" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Walk_64_ 7" x="1959" y="430" w="106" h="141" pX="0.5" pY="0.5" oX="95" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_01_ 0" x="2428" y="509" w="122" h="101" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_02_ 0" x="2428" y="610" w="122" h="101" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_03_ 0" x="2425" y="1033" w="122" h="102" pX="0.5" pY="0.5" oX="78" oY="86" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_04_ 1" x="816" y="332" w="73" h="149" pX="0.5" pY="0.5" oX="72" oY="64" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_05_ 1" x="1340" y="1231" w="73" h="150" pX="0.5" pY="0.5" oX="72" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_06_ 1" x="1413" y="445" w="74" h="150" pX="0.5" pY="0.5" oX="72" oY="63" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_07_ 2" x="1592" y="444" w="81" h="146" pX="0.5" pY="0.5" oX="119" oY="52" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_08_ 2" x="1600" y="590" w="81" h="145" pX="0.5" pY="0.5" oX="119" oY="53" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_09_ 2" x="1800" y="1167" w="81" h="144" pX="0.5" pY="0.5" oX="119" oY="54" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_10_ 3" x="1053" y="2269" w="123" h="132" pX="0.5" pY="0.5" oX="63" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_11_ 3" x="930" y="2269" w="123" h="132" pX="0.5" pY="0.5" oX="63" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_12_ 3" x="807" y="2269" w="123" h="132" pX="0.5" pY="0.5" oX="63" oY="37" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_13_ 4" x="2288" y="399" w="97" h="130" pX="0.5" pY="0.5" oX="79" oY="77" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_14_ 4" x="2211" y="928" w="97" h="132" pX="0.5" pY="0.5" oX="79" oY="75" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_15_ 4" x="474" y="2274" w="100" h="133" pX="0.5" pY="0.5" oX="76" oY="74" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_16_ 5" x="1709" y="1189" w="91" h="144" pX="0.5" pY="0.5" oX="72" oY="50" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_17_ 5" x="1673" y="442" w="92" h="146" pX="0.5" pY="0.5" oX="70" oY="48" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_18_ 5" x="249" y="1563" w="92" h="147" pX="0.5" pY="0.5" oX="70" oY="47" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_19_ 6" x="1295" y="2395" w="97" h="126" pX="0.5" pY="0.5" oX="101" oY="72" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_20_ 6" x="2088" y="2379" w="97" h="124" pX="0.5" pY="0.5" oX="101" oY="74" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_21_ 6" x="2424" y="259" w="97" h="122" pX="0.5" pY="0.5" oX="101" oY="76" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_22_ 7" x="1986" y="1584" w="98" h="140" pX="0.5" pY="0.5" oX="87" oY="41" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_23_ 7" x="1214" y="1990" w="101" h="139" pX="0.5" pY="0.5" oX="87" oY="42" oW="256" oH="256"/>
+  <sprite n="Beastman_Woozy_24_ 7" x="2108" y="791" w="104" h="137" pX="0.5" pY="0.5" oX="87" oY="44" oW="256" oH="256"/>
+</TextureAtlas>

@@ -437,7 +437,7 @@ namespace Items {
         std::string itemName = Create_Weapon(item_uID, rarity, equip_type);
         if (itemName == "none") {
             World::zone.destroy(item_uID);
-            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
+//            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
             return Item_Component::emptyEquipSlot;
         }
         Create_Item1(item_uID, position, itemName, itemStats);
@@ -451,7 +451,7 @@ namespace Items {
         std::string itemName = Create_Offhand(item_uID, rarity, equip_type);
         if (itemName == "none") {
             World::zone.destroy(item_uID);
-            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
+//            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
             return Item_Component::emptyEquipSlot;
         }
         Create_Item1(item_uID, position, itemName, itemStats);
@@ -467,7 +467,7 @@ namespace Items {
         std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType, armorType, equip_type);
         if (itemName == "none") {
             World::zone.destroy(item_uID);
-            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
+//            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
             return Item_Component::emptyEquipSlot;
         }
         else {

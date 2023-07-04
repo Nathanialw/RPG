@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../../sprite_sheets/units/4th_cast/races/demons/PlagueFiend.tsx"/>
+ <object name="PlagueFiend" type="unit" gid="1" width="50" height="140"/>
+</template>

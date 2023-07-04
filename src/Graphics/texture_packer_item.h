@@ -153,7 +153,7 @@ namespace Texture_Packer_Item {
         Packer_Textures_Items[dbData.item_name] = spritesheet;
 
         for (auto aa : spritesheet.actionFrameData) {
-//            std::cout << "state: " << aa.first << ", start frame: " << aa.second.startFrame << ", number of frames: " << aa.second.NumFrames << std::endl;
+            std::cout << "state: " << aa.first << ", start frame: " << aa.second.startFrame << ", number of frames: " << aa.second.NumFrames << std::endl;
         }
 
         Item_Data_And_Index values;

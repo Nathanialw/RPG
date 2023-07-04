@@ -329,11 +329,11 @@ namespace Rendering {
         auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
         auto mounts = zone.view<Component::Renderable, Mount_Sprite>();
 
-        std::cout << "----------------------" << std::endl;
+//        std::cout << "----------------------" << std::endl;
 
         for (auto entity : view1) {
             auto [renderable, action, position, sheetData, direction, spriteOffset, scale, type] = view1.get(entity);
-            std::cout << renderable.y << " ";
+//            std::cout << renderable.y << " ";
             SDL_Rect clipRect;
             SDL_FRect renderRect;
             SDL_Texture* texture;

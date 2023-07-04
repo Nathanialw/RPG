@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Brute_Green.png" width="2546" height="2656" scale="1" format="RGBA8888">
+  <sprite n="Brute_Green_Attack 1_01_ 0" x="2264" y="2209" w="127" h="116" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_02_ 0" x="108" y="1145" w="125" h="154" pX="0.5" pY="0.5" oX="66" oY="29" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_03_ 0" x="2012" y="1563" w="100" h="139" pX="0.5" pY="0.5" oX="103" oY="79" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_04_ 1" x="1281" y="764" w="87" h="152" pX="0.5" pY="0.5" oX="91" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_05_ 1" x="191" y="633" w="113" h="174" pX="0.5" pY="0.5" oX="100" oY="29" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_06_ 1" x="1183" y="1702" w="141" h="144" pX="0.5" pY="0.5" oX="20" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_07_ 2" x="979" y="1415" w="96" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_08_ 2" x="2366" y="2541" w="113" h="110" pX="0.5" pY="0.5" oX="50" oY="70" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_09_ 2" x="629" y="1576" w="146" h="128" pX="0.5" pY="0.5" oX="105" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_10_ 3" x="1716" y="1299" w="126" h="143" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_11_ 3" x="1038" y="950" w="135" h="155" pX="0.5" pY="0.5" oX="72" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_12_ 3" x="925" y="640" w="103" h="159" pX="0.5" pY="0.5" oX="60" oY="14" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_13_ 4" x="674" y="1267" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_14_ 4" x="653" y="303" w="93" h="181" pX="0.5" pY="0.5" oX="99" oY="22" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_15_ 4" x="2307" y="502" w="129" h="113" pX="0.5" pY="0.5" oX="57" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_16_ 5" x="0" y="2021" w="124" h="138" pX="0.5" pY="0.5" oX="68" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_17_ 5" x="425" y="1428" w="139" h="148" pX="0.5" pY="0.5" oX="73" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_18_ 5" x="132" y="947" w="123" h="158" pX="0.5" pY="0.5" oX="43" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_19_ 6" x="1796" y="2262" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_20_ 6" x="2307" y="615" w="128" h="108" pX="0.5" pY="0.5" oX="62" oY="55" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_21_ 6" x="2307" y="376" w="129" h="126" pX="0.5" pY="0.5" oX="99" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_22_ 7" x="234" y="1578" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_23_ 7" x="1842" y="1427" w="102" h="142" pX="0.5" pY="0.5" oX="72" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 1_24_ 7" x="1408" y="149" w="136" h="149" pX="0.5" pY="0.5" oX="77" oY="28" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_01_ 0" x="924" y="2398" w="124" h="125" pX="0.5" pY="0.5" oX="76" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_02_ 0" x="743" y="503" w="125" h="171" pX="0.5" pY="0.5" oX="78" oY="16" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_03_ 0" x="2159" y="2541" w="112" h="113" pX="0.5" pY="0.5" oX="81" oY="111" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_04_ 1" x="929" y="162" w="60" h="160" pX="0.5" pY="0.5" oX="90" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_05_ 1" x="84" y="634" w="104" h="177" pX="0.5" pY="0.5" oX="93" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_06_ 1" x="2324" y="1492" w="108" h="124" pX="0.5" pY="0.5" oX="31" oY="79" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_07_ 2" x="989" y="162" w="64" h="160" pX="0.5" pY="0.5" oX="119" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_08_ 2" x="0" y="636" w="84" h="179" pX="0.5" pY="0.5" oX="86" oY="18" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_09_ 2" x="2438" y="0" w="108" h="121" pX="0.5" pY="0.5" oX="127" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_10_ 3" x="2113" y="676" w="124" h="136" pX="0.5" pY="0.5" oX="63" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_11_ 3" x="799" y="2399" w="125" h="120" pX="0.5" pY="0.5" oX="60" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_12_ 3" x="235" y="2540" w="112" h="112" pX="0.5" pY="0.5" oX="70" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_13_ 4" x="0" y="1441" w="98" h="148" pX="0.5" pY="0.5" oX="78" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_14_ 4" x="84" y="262" w="116" h="189" pX="0.5" pY="0.5" oX="80" oY="18" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_15_ 4" x="2436" y="580" w="109" h="106" pX="0.5" pY="0.5" oX="54" oY="106" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_16_ 5" x="501" y="1278" w="100" h="150" pX="0.5" pY="0.5" oX="65" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_17_ 5" x="1310" y="1218" w="116" h="150" pX="0.5" pY="0.5" oX="65" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_18_ 5" x="1818" y="2380" w="116" h="122" pX="0.5" pY="0.5" oX="47" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_19_ 6" x="1417" y="1500" w="104" h="146" pX="0.5" pY="0.5" oX="99" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_20_ 6" x="287" y="0" w="103" h="187" pX="0.5" pY="0.5" oX="95" oY="9" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_21_ 6" x="2413" y="1980" w="118" h="105" pX="0.5" pY="0.5" oX="100" oY="102" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_22_ 7" x="957" y="1266" w="99" h="149" pX="0.5" pY="0.5" oX="87" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_23_ 7" x="1181" y="0" w="104" h="154" pX="0.5" pY="0.5" oX="79" oY="27" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Attack 2_24_ 7" x="2325" y="1223" w="112" h="125" pX="0.5" pY="0.5" oX="100" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_01_ 0" x="390" y="0" w="185" h="149" pX="0.5" pY="0.5" oX="18" oY="36" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_02_ 0" x="390" y="149" w="185" h="150" pX="0.5" pY="0.5" oX="18" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_03_ 0" x="287" y="299" w="185" h="150" pX="0.5" pY="0.5" oX="18" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_04_ 1" x="0" y="815" w="95" h="171" pX="0.5" pY="0.5" oX="100" oY="19" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_05_ 1" x="746" y="332" w="94" h="171" pX="0.5" pY="0.5" oX="100" oY="19" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_06_ 1" x="756" y="160" w="93" h="172" pX="0.5" pY="0.5" oX="100" oY="18" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_07_ 2" x="202" y="191" w="85" h="189" pX="0.5" pY="0.5" oX="78" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_08_ 2" x="0" y="262" w="84" h="190" pX="0.5" pY="0.5" oX="79" oY="32" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_09_ 2" x="203" y="0" w="84" h="191" pX="0.5" pY="0.5" oX="79" oY="31" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_10_ 3" x="472" y="303" w="181" h="121" pX="0.5" pY="0.5" oX="70" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_11_ 3" x="575" y="0" w="182" h="121" pX="0.5" pY="0.5" oX="69" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_12_ 3" x="311" y="449" w="182" h="120" pX="0.5" pY="0.5" oX="69" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_13_ 4" x="778" y="957" w="156" h="151" pX="0.5" pY="0.5" oX="61" oY="27" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_14_ 4" x="413" y="971" w="157" h="151" pX="0.5" pY="0.5" oX="60" oY="27" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_15_ 4" x="255" y="971" w="158" h="151" pX="0.5" pY="0.5" oX="59" oY="27" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_16_ 5" x="1088" y="1853" w="122" h="141" pX="0.5" pY="0.5" oX="109" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_17_ 5" x="333" y="1869" w="122" h="141" pX="0.5" pY="0.5" oX="109" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_18_ 5" x="211" y="1869" w="122" h="141" pX="0.5" pY="0.5" oX="109" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_19_ 6" x="71" y="452" w="120" h="182" pX="0.5" pY="0.5" oX="39" oY="23" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_20_ 6" x="575" y="121" w="120" h="182" pX="0.5" pY="0.5" oX="39" oY="23" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_21_ 6" x="191" y="451" w="120" h="182" pX="0.5" pY="0.5" oX="40" oY="23" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_22_ 7" x="1285" y="0" w="152" h="140" pX="0.5" pY="0.5" oX="55" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_23_ 7" x="778" y="1108" w="154" h="141" pX="0.5" pY="0.5" oX="55" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Behavior_24_ 7" x="1127" y="636" w="153" h="141" pX="0.5" pY="0.5" oX="56" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_01_ 0" x="2232" y="2093" w="127" h="116" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_02_ 0" x="0" y="2541" w="118" h="115" pX="0.5" pY="0.5" oX="73" oY="69" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_03_ 0" x="118" y="2541" w="117" h="111" pX="0.5" pY="0.5" oX="73" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_04_ 1" x="1296" y="306" w="88" h="152" pX="0.5" pY="0.5" oX="91" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_05_ 1" x="330" y="1428" w="95" h="148" pX="0.5" pY="0.5" oX="84" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_06_ 1" x="1704" y="1851" w="92" h="141" pX="0.5" pY="0.5" oX="87" oY="62" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_07_ 2" x="1075" y="1408" w="96" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_08_ 2" x="1837" y="575" w="100" h="142" pX="0.5" pY="0.5" oX="84" oY="62" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_09_ 2" x="1173" y="930" w="98" h="138" pX="0.5" pY="0.5" oX="84" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_10_ 3" x="941" y="1709" w="126" h="144" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_11_ 3" x="2038" y="963" w="117" h="137" pX="0.5" pY="0.5" oX="73" oY="55" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_12_ 3" x="682" y="2414" w="117" h="126" pX="0.5" pY="0.5" oX="73" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_13_ 4" x="321" y="1278" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_14_ 4" x="1633" y="1155" w="89" h="144" pX="0.5" pY="0.5" oX="83" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_15_ 4" x="2012" y="1702" w="91" h="139" pX="0.5" pY="0.5" oX="83" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_16_ 5" x="564" y="2008" w="124" h="138" pX="0.5" pY="0.5" oX="68" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_17_ 5" x="0" y="2293" w="118" h="132" pX="0.5" pY="0.5" oX="74" oY="55" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_18_ 5" x="2142" y="2363" w="118" h="122" pX="0.5" pY="0.5" oX="74" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_19_ 6" x="2134" y="2245" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_20_ 6" x="2260" y="2426" w="118" h="115" pX="0.5" pY="0.5" oX="71" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_21_ 6" x="1696" y="2493" w="118" h="111" pX="0.5" pY="0.5" oX="71" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_22_ 7" x="138" y="1578" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_23_ 7" x="993" y="1853" w="95" h="141" pX="0.5" pY="0.5" oX="91" oY="62" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Block_24_ 7" x="2155" y="132" w="94" h="136" pX="0.5" pY="0.5" oX="92" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_01_ 0" x="1814" y="2541" w="115" h="111" pX="0.5" pY="0.5" oX="78" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_02_ 0" x="2044" y="2541" w="115" h="112" pX="0.5" pY="0.5" oX="78" oY="88" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_03_ 0" x="1929" y="2541" w="115" h="112" pX="0.5" pY="0.5" oX="78" oY="88" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_04_ 1" x="792" y="2268" w="108" h="131" pX="0.5" pY="0.5" oX="63" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_05_ 1" x="684" y="2280" w="108" h="131" pX="0.5" pY="0.5" oX="63" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_06_ 1" x="576" y="2282" w="108" h="132" pX="0.5" pY="0.5" oX="63" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_07_ 2" x="1722" y="718" w="116" h="143" pX="0.5" pY="0.5" oX="92" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_08_ 2" x="1697" y="146" w="116" h="143" pX="0.5" pY="0.5" oX="92" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_09_ 2" x="1067" y="1709" w="116" h="144" pX="0.5" pY="0.5" oX="92" oY="55" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_10_ 3" x="1429" y="1204" w="109" h="148" pX="0.5" pY="0.5" oX="76" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_11_ 3" x="564" y="1428" w="109" h="148" pX="0.5" pY="0.5" oX="76" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_12_ 3" x="1429" y="906" w="109" h="149" pX="0.5" pY="0.5" oX="76" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_13_ 4" x="2386" y="2325" w="114" h="119" pX="0.5" pY="0.5" oX="59" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_14_ 4" x="2391" y="2206" w="114" h="119" pX="0.5" pY="0.5" oX="60" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_15_ 4" x="2431" y="1088" w="114" h="120" pX="0.5" pY="0.5" oX="60" oY="88" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_16_ 5" x="2421" y="1861" w="119" h="119" pX="0.5" pY="0.5" oX="65" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_17_ 5" x="2424" y="967" w="119" h="121" pX="0.5" pY="0.5" oX="65" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_18_ 5" x="2359" y="2085" w="119" h="121" pX="0.5" pY="0.5" oX="65" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_19_ 6" x="900" y="2267" w="119" h="131" pX="0.5" pY="0.5" oX="79" oY="71" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_20_ 6" x="237" y="2293" w="119" h="132" pX="0.5" pY="0.5" oX="79" oY="70" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_21_ 6" x="118" y="2293" w="119" h="132" pX="0.5" pY="0.5" oX="79" oY="69" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_22_ 7" x="1437" y="0" w="112" h="149" pX="0.5" pY="0.5" oX="95" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_23_ 7" x="1384" y="306" w="111" h="149" pX="0.5" pY="0.5" oX="95" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Critical HP_24_ 7" x="1434" y="455" w="112" h="149" pX="0.5" pY="0.5" oX="94" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Dead_01_ 0" x="311" y="569" w="179" h="142" pX="0.5" pY="0.5" oX="45" oY="77" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Dead_02_ 1" x="696" y="674" w="165" h="137" pX="0.5" pY="0.5" oX="49" oY="84" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Dead_03_ 2" x="696" y="811" w="165" h="132" pX="0.5" pY="0.5" oX="51" oY="86" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Dead_04_ 3" x="493" y="484" w="179" h="130" pX="0.5" pY="0.5" oX="40" oY="82" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Dead_05_ 4" x="757" y="0" w="173" h="160" pX="0.5" pY="0.5" oX="43" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Dead_06_ 5" x="0" y="130" w="202" h="132" pX="0.5" pY="0.5" oX="43" oY="85" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Dead_07_ 6" x="0" y="0" w="203" h="130" pX="0.5" pY="0.5" oX="19" oY="90" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Dead_08_ 7" x="490" y="614" w="174" h="158" pX="0.5" pY="0.5" oX="47" oY="78" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_01_ 0" x="1967" y="857" w="139" h="106" pX="0.5" pY="0.5" oX="62" oY="70" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_02_ 0" x="1178" y="1994" w="138" h="130" pX="0.5" pY="0.5" oX="65" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_03_ 0" x="2421" y="1740" w="120" h="121" pX="0.5" pY="0.5" oX="97" oY="25" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_04_ 1" x="1842" y="1285" w="97" h="142" pX="0.5" pY="0.5" oX="80" oY="45" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_05_ 1" x="925" y="799" w="113" h="158" pX="0.5" pY="0.5" oX="77" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_06_ 1" x="1936" y="717" w="98" h="140" pX="0.5" pY="0.5" oX="131" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_07_ 2" x="889" y="1854" w="104" h="141" pX="0.5" pY="0.5" oX="86" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_08_ 2" x="1045" y="481" w="121" h="155" pX="0.5" pY="0.5" oX="74" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_09_ 2" x="1368" y="757" w="106" h="149" pX="0.5" pY="0.5" oX="35" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_10_ 3" x="1034" y="1105" w="139" h="154" pX="0.5" pY="0.5" oX="69" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_11_ 3" x="1173" y="1068" w="137" h="151" pX="0.5" pY="0.5" oX="69" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_12_ 3" x="930" y="322" w="121" h="159" pX="0.5" pY="0.5" oX="52" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_13_ 4" x="442" y="2010" w="122" h="138" pX="0.5" pY="0.5" oX="55" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_14_ 4" x="0" y="1145" w="108" h="154" pX="0.5" pY="0.5" oX="87" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_15_ 4" x="1897" y="1143" w="70" h="142" pX="0.5" pY="0.5" oX="138" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_16_ 5" x="1310" y="1068" w="119" h="150" pX="0.5" pY="0.5" oX="57" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_17_ 5" x="1129" y="1259" w="144" h="149" pX="0.5" pY="0.5" oX="54" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_18_ 5" x="1681" y="1493" w="134" h="142" pX="0.5" pY="0.5" oX="78" oY="70" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_19_ 6" x="2113" y="812" w="118" h="135" pX="0.5" pY="0.5" oX="95" oY="60" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_20_ 6" x="1521" y="1627" w="143" h="137" pX="0.5" pY="0.5" oX="74" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_21_ 6" x="1972" y="1980" w="138" h="111" pX="0.5" pY="0.5" oX="54" oY="31" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_22_ 7" x="2113" y="268" w="129" h="136" pX="0.5" pY="0.5" oX="86" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_23_ 7" x="930" y="481" w="115" h="159" pX="0.5" pY="0.5" oX="68" oY="32" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Evade_24_ 7" x="849" y="329" w="81" h="163" pX="0.5" pY="0.5" oX="55" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_01_ 0" x="1171" y="2396" w="123" h="116" pX="0.5" pY="0.5" oX="77" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_02_ 0" x="688" y="2007" w="138" h="127" pX="0.5" pY="0.5" oX="75" oY="61" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_03_ 0" x="429" y="829" w="166" h="139" pX="0.5" pY="0.5" oX="64" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_04_ 1" x="710" y="957" w="68" h="156" pX="0.5" pY="0.5" oX="86" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_05_ 1" x="570" y="968" w="71" h="157" pX="0.5" pY="0.5" oX="88" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_06_ 1" x="672" y="484" w="71" h="174" pX="0.5" pY="0.5" oX="96" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_07_ 2" x="567" y="1125" w="69" h="153" pX="0.5" pY="0.5" oX="118" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_08_ 2" x="641" y="957" w="69" h="156" pX="0.5" pY="0.5" oX="112" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_09_ 2" x="695" y="121" w="61" h="173" pX="0.5" pY="0.5" oX="106" oY="24" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_10_ 3" x="1681" y="2129" w="123" h="133" pX="0.5" pY="0.5" oX="63" oY="36" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_11_ 3" x="934" y="1995" w="138" h="128" pX="0.5" pY="0.5" oX="57" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_12_ 3" x="95" y="829" w="167" h="118" pX="0.5" pY="0.5" oX="41" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_13_ 4" x="1748" y="0" w="98" h="143" pX="0.5" pY="0.5" oX="78" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_14_ 4" x="869" y="1415" w="110" h="148" pX="0.5" pY="0.5" oX="72" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_15_ 4" x="1152" y="155" w="130" h="153" pX="0.5" pY="0.5" oX="66" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_16_ 5" x="877" y="1563" w="108" h="146" pX="0.5" pY="0.5" oX="63" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_17_ 5" x="1845" y="285" w="125" h="142" pX="0.5" pY="0.5" oX="51" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_18_ 5" x="1282" y="154" w="126" h="152" pX="0.5" pY="0.5" oX="54" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_19_ 6" x="1972" y="1841" w="104" h="139" pX="0.5" pY="0.5" oX="101" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_20_ 6" x="1093" y="1556" w="122" h="146" pX="0.5" pY="0.5" oX="96" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_21_ 6" x="641" y="1113" w="125" h="154" pX="0.5" pY="0.5" oX="91" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_22_ 7" x="1838" y="717" w="98" h="142" pX="0.5" pY="0.5" oX="87" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_23_ 7" x="455" y="1867" w="110" h="141" pX="0.5" pY="0.5" oX="87" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Get Hit_24_ 7" x="1495" y="298" w="129" h="147" pX="0.5" pY="0.5" oX="75" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_01_ 0" x="0" y="2425" w="127" h="116" pX="0.5" pY="0.5" oX="69" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_02_ 0" x="2307" y="723" w="128" h="116" pX="0.5" pY="0.5" oX="68" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_03_ 0" x="2307" y="132" w="129" h="115" pX="0.5" pY="0.5" oX="68" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_04_ 1" x="1280" y="612" w="87" h="152" pX="0.5" pY="0.5" oX="91" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_05_ 1" x="1208" y="308" w="88" h="152" pX="0.5" pY="0.5" oX="91" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_06_ 1" x="233" y="1279" w="88" h="151" pX="0.5" pY="0.5" oX="91" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_07_ 2" x="673" y="1428" w="96" h="148" pX="0.5" pY="0.5" oX="85" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_08_ 2" x="426" y="1576" w="96" h="147" pX="0.5" pY="0.5" oX="85" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_09_ 2" x="330" y="1576" w="96" h="147" pX="0.5" pY="0.5" oX="85" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_10_ 3" x="1716" y="1299" w="126" h="143" pX="0.5" pY="0.5" oX="73" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_11_ 3" x="1846" y="0" w="127" h="142" pX="0.5" pY="0.5" oX="73" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_12_ 3" x="565" y="1866" w="128" h="141" pX="0.5" pY="0.5" oX="72" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_13_ 4" x="674" y="1267" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_14_ 4" x="411" y="1278" w="90" h="150" pX="0.5" pY="0.5" oX="82" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_15_ 4" x="1367" y="608" w="90" h="149" pX="0.5" pY="0.5" oX="82" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_16_ 5" x="318" y="2010" w="124" h="138" pX="0.5" pY="0.5" oX="68" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_17_ 5" x="1547" y="1992" w="124" h="137" pX="0.5" pY="0.5" oX="68" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_18_ 5" x="1671" y="1992" w="124" h="137" pX="0.5" pY="0.5" oX="68" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_19_ 6" x="1796" y="2262" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_20_ 6" x="1344" y="2262" w="130" h="118" pX="0.5" pY="0.5" oX="71" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_21_ 6" x="1926" y="2246" w="130" h="117" pX="0.5" pY="0.5" oX="71" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_22_ 7" x="1525" y="1055" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_23_ 7" x="1171" y="1408" w="96" h="147" pX="0.5" pY="0.5" oX="91" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Idle_24_ 7" x="1538" y="1202" w="95" h="146" pX="0.5" pY="0.5" oX="92" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_01_ 0" x="347" y="2540" w="104" h="111" pX="0.5" pY="0.5" oX="76" oY="91" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_02_ 0" x="2438" y="359" w="104" h="111" pX="0.5" pY="0.5" oX="76" oY="91" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_03_ 0" x="287" y="187" w="103" h="110" pX="0.5" pY="0.5" oX="77" oY="91" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_04_ 1" x="127" y="2425" w="126" h="114" pX="0.5" pY="0.5" oX="71" oY="71" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_05_ 1" x="1344" y="2380" w="126" h="113" pX="0.5" pY="0.5" oX="71" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_06_ 1" x="556" y="2414" w="126" h="113" pX="0.5" pY="0.5" oX="71" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_07_ 2" x="1434" y="2129" w="133" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_08_ 2" x="1301" y="2129" w="133" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_09_ 2" x="98" y="1447" w="133" h="124" pX="0.5" pY="0.5" oX="66" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_10_ 3" x="1053" y="162" w="99" h="155" pX="0.5" pY="0.5" oX="88" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_11_ 3" x="468" y="1122" w="99" h="154" pX="0.5" pY="0.5" oX="88" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_12_ 3" x="932" y="1112" w="98" h="154" pX="0.5" pY="0.5" oX="88" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_13_ 4" x="1973" y="104" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_14_ 4" x="1973" y="0" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_15_ 4" x="1970" y="208" w="140" h="104" pX="0.5" pY="0.5" oX="58" oY="82" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_16_ 5" x="791" y="1854" w="98" h="141" pX="0.5" pY="0.5" oX="76" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_17_ 5" x="693" y="1854" w="98" h="141" pX="0.5" pY="0.5" oX="76" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_18_ 5" x="1791" y="1710" w="98" h="141" pX="0.5" pY="0.5" oX="76" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_19_ 6" x="1470" y="2392" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_20_ 6" x="2038" y="2363" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_21_ 6" x="1934" y="2363" w="104" h="122" pX="0.5" pY="0.5" oX="89" oY="89" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_22_ 7" x="1967" y="576" w="140" h="132" pX="0.5" pY="0.5" oX="65" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_23_ 7" x="1967" y="444" w="140" h="132" pX="0.5" pY="0.5" oX="65" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Rest_24_ 7" x="1970" y="312" w="140" h="132" pX="0.5" pY="0.5" oX="65" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_01_ 0" x="1474" y="752" w="103" h="147" pX="0.5" pY="0.5" oX="78" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_02_ 0" x="1567" y="2129" w="114" h="133" pX="0.5" pY="0.5" oX="71" oY="80" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_03_ 0" x="2436" y="470" w="110" h="110" pX="0.5" pY="0.5" oX="80" oY="79" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_04_ 0" x="2271" y="2541" w="95" h="113" pX="0.5" pY="0.5" oX="91" oY="78" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_05_ 0" x="318" y="1725" w="93" h="144" pX="0.5" pY="0.5" oX="93" oY="69" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_06_ 0" x="2215" y="1961" w="101" h="132" pX="0.5" pY="0.5" oX="91" oY="84" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_07_ 0" x="2435" y="686" w="106" h="102" pX="0.5" pY="0.5" oX="81" oY="77" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_08_ 0" x="2134" y="2113" w="98" h="132" pX="0.5" pY="0.5" oX="85" oY="73" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_09_ 1" x="0" y="1299" w="151" h="142" pX="0.5" pY="0.5" oX="42" oY="45" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_10_ 1" x="2324" y="0" w="114" h="130" pX="0.5" pY="0.5" oX="55" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_11_ 1" x="2250" y="0" w="74" h="132" pX="0.5" pY="0.5" oX="77" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_12_ 1" x="2235" y="1236" w="90" h="128" pX="0.5" pY="0.5" oX="76" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_13_ 1" x="1796" y="1991" w="137" h="122" pX="0.5" pY="0.5" oX="42" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_14_ 1" x="1474" y="2262" w="121" h="130" pX="0.5" pY="0.5" oX="53" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_15_ 1" x="2231" y="812" w="76" h="132" pX="0.5" pY="0.5" oX="77" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_16_ 1" x="1804" y="2113" w="111" h="133" pX="0.5" pY="0.5" oX="53" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_17_ 2" x="314" y="1125" w="154" h="129" pX="0.5" pY="0.5" oX="71" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_18_ 2" x="379" y="2148" w="113" h="134" pX="0.5" pY="0.5" oX="95" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_19_ 2" x="99" y="2159" w="78" h="134" pX="0.5" pY="0.5" oX="118" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_20_ 2" x="124" y="2021" w="97" h="138" pX="0.5" pY="0.5" oX="99" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_21_ 2" x="2113" y="0" w="137" h="132" pX="0.5" pY="0.5" oX="88" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_22_ 2" x="1019" y="2265" w="121" h="131" pX="0.5" pY="0.5" oX="89" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_23_ 2" x="1091" y="2132" w="83" h="133" pX="0.5" pY="0.5" oX="113" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_24_ 2" x="2324" y="247" w="114" h="129" pX="0.5" pY="0.5" oX="100" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_25_ 3" x="595" y="772" w="101" h="165" pX="0.5" pY="0.5" oX="92" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_26_ 3" x="1633" y="865" w="113" h="145" pX="0.5" pY="0.5" oX="85" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_27_ 3" x="2325" y="839" w="110" h="128" pX="0.5" pY="0.5" oX="78" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_28_ 3" x="1320" y="1555" w="97" h="146" pX="0.5" pY="0.5" oX="83" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_29_ 3" x="1166" y="470" w="94" h="153" pX="0.5" pY="0.5" oX="84" oY="36" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_30_ 3" x="1267" y="1408" w="101" h="147" pX="0.5" pY="0.5" oX="75" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_31_ 3" x="1967" y="1102" w="105" h="139" pX="0.5" pY="0.5" oX="83" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_32_ 3" x="233" y="1430" w="97" h="148" pX="0.5" pY="0.5" oX="88" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_33_ 4" x="0" y="1589" w="138" h="147" pX="0.5" pY="0.5" oX="54" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_34_ 4" x="786" y="2134" w="108" h="134" pX="0.5" pY="0.5" oX="63" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_35_ 4" x="2438" y="121" w="87" h="119" pX="0.5" pY="0.5" oX="81" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_36_ 4" x="2428" y="1616" w="90" h="121" pX="0.5" pY="0.5" oX="86" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_37_ 4" x="1412" y="1992" w="135" h="137" pX="0.5" pY="0.5" oX="61" oY="67" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_38_ 4" x="2110" y="1978" w="105" h="135" pX="0.5" pY="0.5" oX="74" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_39_ 4" x="2432" y="1492" w="78" h="121" pX="0.5" pY="0.5" oX="88" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_40_ 4" x="2325" y="1095" w="106" h="128" pX="0.5" pY="0.5" oX="62" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_41_ 5" x="0" y="986" w="132" h="159" pX="0.5" pY="0.5" oX="64" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_42_ 5" x="826" y="1995" w="108" h="138" pX="0.5" pY="0.5" oX="75" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_43_ 5" x="2438" y="240" w="91" h="119" pX="0.5" pY="0.5" oX="76" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_44_ 5" x="2239" y="1082" w="86" h="128" pX="0.5" pY="0.5" oX="82" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_45_ 5" x="2113" y="404" w="120" h="136" pX="0.5" pY="0.5" oX="55" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_46_ 5" x="2320" y="1364" w="118" h="128" pX="0.5" pY="0.5" oX="61" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_47_ 5" x="2155" y="947" w="95" h="135" pX="0.5" pY="0.5" oX="76" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_48_ 5" x="1746" y="432" w="99" h="143" pX="0.5" pY="0.5" oX="73" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_49_ 6" x="1664" y="1635" w="127" h="142" pX="0.5" pY="0.5" oX="74" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_50_ 6" x="1909" y="1569" w="103" h="140" pX="0.5" pY="0.5" oX="85" oY="68" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_51_ 6" x="2232" y="1372" w="88" h="130" pX="0.5" pY="0.5" oX="104" oY="66" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_52_ 6" x="2438" y="1208" w="91" h="119" pX="0.5" pY="0.5" oX="96" oY="65" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_53_ 6" x="411" y="1723" w="122" h="144" pX="0.5" pY="0.5" oX="89" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_54_ 6" x="1915" y="2113" w="117" h="133" pX="0.5" pY="0.5" oX="85" oY="69" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_55_ 6" x="2438" y="1327" w="94" h="119" pX="0.5" pY="0.5" oX="98" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_56_ 6" x="1316" y="1992" w="96" h="137" pX="0.5" pY="0.5" oX="97" oY="62" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_57_ 7" x="1813" y="143" w="141" h="142" pX="0.5" pY="0.5" oX="72" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_58_ 7" x="679" y="2146" w="107" h="134" pX="0.5" pY="0.5" oX="93" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_59_ 7" x="492" y="2148" w="85" h="134" pX="0.5" pY="0.5" oX="102" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_60_ 7" x="848" y="1710" w="93" h="144" pX="0.5" pY="0.5" oX="91" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_61_ 7" x="1324" y="1701" w="132" h="144" pX="0.5" pY="0.5" oX="74" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_62_ 7" x="1844" y="1001" w="100" h="142" pX="0.5" pY="0.5" oX="89" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_63_ 7" x="2155" y="540" w="80" h="136" pX="0.5" pY="0.5" oX="105" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Run_64_ 7" x="1140" y="2265" w="108" h="131" pX="0.5" pY="0.5" oX="96" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_01_ 0" x="1048" y="2396" w="123" h="116" pX="0.5" pY="0.5" oX="77" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_02_ 0" x="1577" y="738" w="145" h="127" pX="0.5" pY="0.5" oX="70" oY="61" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_03_ 0" x="262" y="829" w="167" h="142" pX="0.5" pY="0.5" oX="61" oY="46" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_04_ 1" x="710" y="957" w="68" h="156" pX="0.5" pY="0.5" oX="86" oY="57" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_05_ 1" x="861" y="674" w="64" h="162" pX="0.5" pY="0.5" oX="93" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_06_ 1" x="0" y="452" w="71" h="184" pX="0.5" pY="0.5" oX="97" oY="30" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_07_ 2" x="567" y="1125" w="69" h="153" pX="0.5" pY="0.5" oX="118" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_08_ 2" x="1051" y="322" w="62" h="155" pX="0.5" pY="0.5" oX="115" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_09_ 2" x="868" y="160" w="61" h="169" pX="0.5" pY="0.5" oX="105" oY="28" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_10_ 3" x="1178" y="2124" w="123" h="133" pX="0.5" pY="0.5" oX="63" oY="36" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_11_ 3" x="1536" y="1499" w="145" h="128" pX="0.5" pY="0.5" oX="55" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_12_ 3" x="304" y="711" w="169" h="118" pX="0.5" pY="0.5" oX="43" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_13_ 4" x="1722" y="1155" w="98" h="143" pX="0.5" pY="0.5" oX="78" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_14_ 4" x="1426" y="1352" w="110" h="148" pX="0.5" pY="0.5" oX="72" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_15_ 4" x="930" y="0" w="124" h="162" pX="0.5" pY="0.5" oX="76" oY="45" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_16_ 5" x="985" y="1563" w="108" h="146" pX="0.5" pY="0.5" oX="63" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_17_ 5" x="197" y="1725" w="121" h="144" pX="0.5" pY="0.5" oX="55" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_18_ 5" x="1054" y="0" w="127" h="155" pX="0.5" pY="0.5" oX="62" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_19_ 6" x="1972" y="1841" w="104" h="139" pX="0.5" pY="0.5" oX="101" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_20_ 6" x="1628" y="0" w="120" h="146" pX="0.5" pY="0.5" oX="95" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_21_ 6" x="1038" y="795" w="126" h="155" pX="0.5" pY="0.5" oX="83" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_22_ 7" x="1746" y="861" w="98" h="142" pX="0.5" pY="0.5" oX="87" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_23_ 7" x="99" y="1880" w="112" h="141" pX="0.5" pY="0.5" oX="86" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Use Skill_24_ 7" x="1939" y="1285" w="126" h="139" pX="0.5" pY="0.5" oX="71" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_01_ 0" x="1628" y="440" w="103" h="144" pX="0.5" pY="0.5" oX="83" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_02_ 0" x="2134" y="1372" w="98" h="135" pX="0.5" pY="0.5" oX="86" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_03_ 0" x="2324" y="1616" w="104" h="124" pX="0.5" pY="0.5" oX="86" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_04_ 0" x="278" y="2148" w="101" h="134" pX="0.5" pY="0.5" oX="89" oY="60" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_05_ 0" x="1844" y="859" w="100" h="142" pX="0.5" pY="0.5" oX="91" oY="59" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_06_ 0" x="177" y="2159" w="101" h="134" pX="0.5" pY="0.5" oX="84" oY="58" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_07_ 0" x="356" y="2414" w="104" h="126" pX="0.5" pY="0.5" oX="81" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_08_ 0" x="0" y="1880" w="99" h="141" pX="0.5" pY="0.5" oX="86" oY="56" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_09_ 1" x="94" y="1736" w="103" h="144" pX="0.5" pY="0.5" oX="76" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_10_ 1" x="1627" y="1348" w="89" h="145" pX="0.5" pY="0.5" oX="85" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_11_ 1" x="1889" y="1710" w="68" h="140" pX="0.5" pY="0.5" oX="94" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_12_ 1" x="221" y="2010" w="97" h="138" pX="0.5" pY="0.5" oX="75" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_13_ 1" x="1796" y="1851" w="104" h="140" pX="0.5" pY="0.5" oX="68" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_14_ 1" x="2034" y="708" w="79" h="139" pX="0.5" pY="0.5" oX="88" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_15_ 1" x="1900" y="1850" w="72" h="139" pX="0.5" pY="0.5" oX="92" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_16_ 1" x="1210" y="1851" w="95" h="141" pX="0.5" pY="0.5" oX="70" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_17_ 2" x="775" y="1564" w="102" h="146" pX="0.5" pY="0.5" oX="85" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_18_ 2" x="1457" y="604" w="88" h="148" pX="0.5" pY="0.5" oX="91" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_19_ 2" x="1549" y="0" w="79" h="147" pX="0.5" pY="0.5" oX="102" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_20_ 2" x="0" y="1736" w="94" h="144" pX="0.5" pY="0.5" oX="97" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_21_ 2" x="1498" y="1851" w="102" h="141" pX="0.5" pY="0.5" oX="94" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_22_ 2" x="151" y="1299" w="82" h="148" pX="0.5" pY="0.5" oX="97" oY="43" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_23_ 2" x="1627" y="147" w="70" h="145" pX="0.5" pY="0.5" oX="108" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_24_ 2" x="1815" y="1569" w="94" h="141" pX="0.5" pY="0.5" oX="101" oY="42" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_25_ 3" x="934" y="957" w="100" h="155" pX="0.5" pY="0.5" oX="86" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_26_ 3" x="1429" y="1055" w="96" h="149" pX="0.5" pY="0.5" oX="87" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_27_ 3" x="638" y="1710" w="106" h="144" pX="0.5" pY="0.5" oX="78" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_28_ 3" x="744" y="1710" w="104" h="144" pX="0.5" pY="0.5" oX="79" oY="32" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_29_ 3" x="1260" y="460" w="101" h="152" pX="0.5" pY="0.5" oX="79" oY="33" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_30_ 3" x="769" y="1416" w="100" h="148" pX="0.5" pY="0.5" oX="85" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_31_ 3" x="2032" y="2113" w="102" h="133" pX="0.5" pY="0.5" oX="86" oY="34" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_32_ 3" x="1845" y="427" w="97" h="142" pX="0.5" pY="0.5" oX="87" oY="35" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_33_ 4" x="2134" y="1100" w="105" h="136" pX="0.5" pY="0.5" oX="75" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_34_ 4" x="1595" y="2262" w="104" h="130" pX="0.5" pY="0.5" oX="80" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_35_ 4" x="2325" y="967" w="99" h="128" pX="0.5" pY="0.5" oX="86" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_36_ 4" x="1215" y="1555" w="105" h="146" pX="0.5" pY="0.5" oX="89" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_37_ 4" x="1173" y="777" w="108" h="153" pX="0.5" pY="0.5" oX="86" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_38_ 4" x="1544" y="149" w="83" h="146" pX="0.5" pY="0.5" oX="94" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_39_ 4" x="1944" y="963" w="94" h="139" pX="0.5" pY="0.5" oX="81" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_40_ 4" x="2210" y="1507" w="112" h="132" pX="0.5" pY="0.5" oX="64" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_41_ 5" x="1281" y="916" w="95" h="152" pX="0.5" pY="0.5" oX="94" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_42_ 5" x="233" y="1125" w="81" h="154" pX="0.5" pY="0.5" oX="98" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_43_ 5" x="1820" y="1143" w="77" h="142" pX="0.5" pY="0.5" oX="97" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_44_ 5" x="522" y="1576" w="107" h="146" pX="0.5" pY="0.5" oX="70" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_45_ 5" x="1633" y="1010" w="107" h="145" pX="0.5" pY="0.5" oX="68" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_46_ 5" x="894" y="2133" w="98" h="134" pX="0.5" pY="0.5" oX="80" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_47_ 5" x="2112" y="1561" w="98" h="136" pX="0.5" pY="0.5" oX="87" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_48_ 5" x="1305" y="1851" w="100" h="141" pX="0.5" pY="0.5" oX="86" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_49_ 6" x="1113" y="317" w="95" h="153" pX="0.5" pY="0.5" oX="80" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_50_ 6" x="764" y="1267" w="85" h="149" pX="0.5" pY="0.5" oX="91" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_51_ 6" x="1740" y="1010" w="80" h="143" pX="0.5" pY="0.5" oX="97" oY="50" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_52_ 6" x="0" y="2159" w="99" h="134" pX="0.5" pY="0.5" oX="96" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_53_ 6" x="1072" y="1994" w="106" h="138" pX="0.5" pY="0.5" oX="89" oY="48" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_54_ 6" x="1248" y="2262" w="96" h="131" pX="0.5" pY="0.5" oX="87" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_55_ 6" x="1746" y="289" w="96" h="143" pX="0.5" pY="0.5" oX="85" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_56_ 6" x="1028" y="640" w="99" h="155" pX="0.5" pY="0.5" oX="84" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_57_ 7" x="1600" y="1851" w="104" h="141" pX="0.5" pY="0.5" oX="84" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_58_ 7" x="577" y="2146" w="102" h="134" pX="0.5" pY="0.5" oX="81" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_59_ 7" x="1405" y="1851" w="93" h="141" pX="0.5" pY="0.5" oX="84" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_60_ 7" x="533" y="1722" w="105" h="144" pX="0.5" pY="0.5" oX="75" oY="38" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_61_ 7" x="849" y="1266" w="108" h="149" pX="0.5" pY="0.5" oX="76" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_62_ 7" x="1546" y="445" w="82" h="147" pX="0.5" pY="0.5" oX="93" oY="41" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_63_ 7" x="2049" y="1424" w="85" h="137" pX="0.5" pY="0.5" oX="98" oY="40" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Walk_64_ 7" x="1944" y="1424" w="105" h="139" pX="0.5" pY="0.5" oX="96" oY="39" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_01_ 0" x="2264" y="2325" w="122" h="101" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_02_ 0" x="1696" y="2392" w="122" h="101" pX="0.5" pY="0.5" oX="78" oY="87" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_03_ 0" x="1574" y="2392" w="122" h="102" pX="0.5" pY="0.5" oX="78" oY="86" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_04_ 1" x="1056" y="1259" w="73" h="149" pX="0.5" pY="0.5" oX="72" oY="64" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_05_ 1" x="601" y="1278" w="73" h="150" pX="0.5" pY="0.5" oX="72" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_06_ 1" x="1361" y="458" w="73" h="150" pX="0.5" pY="0.5" oX="72" oY="63" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_07_ 2" x="1546" y="592" w="82" h="146" pX="0.5" pY="0.5" oX="119" oY="52" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_08_ 2" x="1624" y="295" w="81" h="145" pX="0.5" pY="0.5" oX="119" oY="53" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_09_ 2" x="1628" y="584" w="81" h="144" pX="0.5" pY="0.5" oX="119" oY="54" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_10_ 3" x="2201" y="1829" w="123" h="132" pX="0.5" pY="0.5" oX="63" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_11_ 3" x="453" y="2282" w="123" h="132" pX="0.5" pY="0.5" oX="63" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_12_ 3" x="2201" y="1697" w="123" h="132" pX="0.5" pY="0.5" oX="63" oY="37" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_13_ 4" x="1699" y="2262" w="97" h="130" pX="0.5" pY="0.5" oX="79" oY="77" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_14_ 4" x="356" y="2282" w="97" h="132" pX="0.5" pY="0.5" oX="79" oY="75" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_15_ 4" x="992" y="2132" w="99" h="133" pX="0.5" pY="0.5" oX="77" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_16_ 5" x="1746" y="575" w="91" h="143" pX="0.5" pY="0.5" oX="72" oY="51" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_17_ 5" x="1538" y="899" w="91" h="145" pX="0.5" pY="0.5" oX="71" oY="49" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_18_ 5" x="1536" y="1352" w="91" h="147" pX="0.5" pY="0.5" oX="71" oY="47" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_19_ 6" x="460" y="2414" w="96" h="126" pX="0.5" pY="0.5" oX="101" oY="72" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_20_ 6" x="2316" y="1961" w="97" h="124" pX="0.5" pY="0.5" oX="101" oY="74" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_21_ 6" x="2324" y="1740" w="97" h="122" pX="0.5" pY="0.5" oX="101" oY="76" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_22_ 7" x="2103" y="1702" w="98" h="137" pX="0.5" pY="0.5" oX="87" oY="44" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_23_ 7" x="2134" y="1236" w="101" h="136" pX="0.5" pY="0.5" oX="87" oY="45" oW="256" oH="256"/>
+  <sprite n="Brute_Green_Woozy_24_ 7" x="2076" y="1841" w="104" h="137" pX="0.5" pY="0.5" oX="87" oY="44" oW="256" oH="256"/>
+</TextureAtlas>

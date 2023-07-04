@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Abberation.png" width="3016" height="3035" scale="1" format="RGBA8888">
+  <sprite n="Abberation_Attack 1_01_ 0" x="845" y="2758" w="148" h="137" pX="0.5" pY="0.5" oX="81" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_02_ 0" x="149" y="1447" w="147" h="181" pX="0.5" pY="0.5" oX="77" oY="33" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_03_ 0" x="2361" y="1996" w="117" h="162" pX="0.5" pY="0.5" oX="120" oY="93" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_04_ 1" x="987" y="1345" w="103" h="179" pX="0.5" pY="0.5" oX="106" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_05_ 1" x="786" y="413" w="131" h="203" pX="0.5" pY="0.5" oX="118" oY="34" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_06_ 1" x="2087" y="0" w="165" h="169" pX="0.5" pY="0.5" oX="23" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_07_ 2" x="1721" y="1756" w="114" h="173" pX="0.5" pY="0.5" oX="99" oY="66" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_08_ 2" x="1669" y="2892" w="132" h="129" pX="0.5" pY="0.5" oX="59" oY="82" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_09_ 2" x="991" y="1987" w="170" h="152" pX="0.5" pY="0.5" oX="124" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_10_ 3" x="1462" y="1929" w="149" h="170" pX="0.5" pY="0.5" oX="85" oY="54" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_11_ 3" x="460" y="1255" w="159" h="184" pX="0.5" pY="0.5" oX="84" oY="72" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_12_ 3" x="779" y="1018" w="120" h="187" pX="0.5" pY="0.5" oX="71" oY="16" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_13_ 4" x="1633" y="883" w="105" h="176" pX="0.5" pY="0.5" oX="96" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_14_ 4" x="141" y="707" w="109" h="211" pX="0.5" pY="0.5" oX="116" oY="26" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_15_ 4" x="2735" y="2522" w="151" h="131" pX="0.5" pY="0.5" oX="67" oY="105" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_16_ 5" x="1334" y="2266" w="146" h="164" pX="0.5" pY="0.5" oX="79" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_17_ 5" x="1559" y="1481" w="163" h="175" pX="0.5" pY="0.5" oX="85" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_18_ 5" x="132" y="1262" w="144" h="185" pX="0.5" pY="0.5" oX="51" oY="47" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_19_ 6" x="2739" y="2245" w="153" h="139" pX="0.5" pY="0.5" oX="83" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_20_ 6" x="1110" y="2737" w="150" h="126" pX="0.5" pY="0.5" oX="73" oY="65" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_21_ 6" x="2641" y="626" w="151" h="148" pX="0.5" pY="0.5" oX="116" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_22_ 7" x="1231" y="1643" w="112" h="173" pX="0.5" pY="0.5" oX="107" oY="65" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_23_ 7" x="856" y="2266" w="120" h="165" pX="0.5" pY="0.5" oX="85" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 1_24_ 7" x="1231" y="1466" w="160" h="177" pX="0.5" pY="0.5" oX="90" oY="31" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_01_ 0" x="2054" y="2739" w="145" h="147" pX="0.5" pY="0.5" oX="89" oY="73" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_02_ 0" x="634" y="818" w="147" h="200" pX="0.5" pY="0.5" oX="91" oY="19" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_03_ 0" x="2597" y="2893" w="131" h="132" pX="0.5" pY="0.5" oX="95" oY="130" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_04_ 1" x="975" y="975" w="70" h="187" pX="0.5" pY="0.5" oX="106" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_05_ 1" x="814" y="0" w="122" h="208" pX="0.5" pY="0.5" oX="109" oY="40" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_06_ 1" x="2819" y="307" w="127" h="144" pX="0.5" pY="0.5" oX="36" oY="93" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_07_ 2" x="899" y="975" w="76" h="187" pX="0.5" pY="0.5" oX="139" oY="46" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_08_ 2" x="250" y="670" w="98" h="210" pX="0.5" pY="0.5" oX="101" oY="21" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_09_ 2" x="2886" y="2522" w="126" h="141" pX="0.5" pY="0.5" oX="149" oY="87" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_10_ 3" x="2362" y="1834" w="145" h="162" pX="0.5" pY="0.5" oX="74" oY="37" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_11_ 3" x="1530" y="2747" w="147" h="142" pX="0.5" pY="0.5" oX="70" oY="53" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_12_ 3" x="2466" y="2893" w="131" h="132" pX="0.5" pY="0.5" oX="82" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_13_ 4" x="1738" y="700" w="114" h="174" pX="0.5" pY="0.5" oX="92" oY="68" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_14_ 4" x="98" y="308" w="136" h="221" pX="0.5" pY="0.5" oX="94" oY="21" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_15_ 4" x="2054" y="2886" w="128" h="125" pX="0.5" pY="0.5" oX="63" oY="124" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_16_ 5" x="1484" y="895" w="118" h="177" pX="0.5" pY="0.5" oX="76" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_17_ 5" x="982" y="1568" w="136" h="177" pX="0.5" pY="0.5" oX="76" oY="46" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_18_ 5" x="2874" y="925" w="136" h="143" pX="0.5" pY="0.5" oX="55" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_19_ 6" x="1859" y="1043" w="123" h="171" pX="0.5" pY="0.5" oX="116" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_20_ 6" x="336" y="0" w="121" h="220" pX="0.5" pY="0.5" oX="111" oY="10" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_21_ 6" x="1107" y="2863" w="139" h="122" pX="0.5" pY="0.5" oX="117" oY="120" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_22_ 7" x="1734" y="1059" w="116" h="175" pX="0.5" pY="0.5" oX="102" oY="38" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_23_ 7" x="1347" y="967" w="121" h="181" pX="0.5" pY="0.5" oX="93" oY="31" oW="300" oH="300"/>
+  <sprite n="Abberation_Attack 2_24_ 7" x="2199" y="2739" w="130" h="146" pX="0.5" pY="0.5" oX="118" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_01_ 0" x="0" y="530" w="217" h="177" pX="0.5" pY="0.5" oX="21" oY="40" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_02_ 0" x="457" y="178" w="217" h="177" pX="0.5" pY="0.5" oX="21" oY="40" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_03_ 0" x="457" y="0" w="217" h="178" pX="0.5" pY="0.5" oX="21" oY="39" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_04_ 1" x="781" y="818" w="111" h="200" pX="0.5" pY="0.5" oX="117" oY="23" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_05_ 1" x="524" y="823" w="110" h="201" pX="0.5" pY="0.5" oX="117" oY="22" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_06_ 1" x="767" y="616" w="110" h="202" pX="0.5" pY="0.5" oX="117" oY="21" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_07_ 2" x="237" y="223" w="99" h="222" pX="0.5" pY="0.5" oX="92" oY="38" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_08_ 2" x="0" y="308" w="98" h="222" pX="0.5" pY="0.5" oX="93" oY="38" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_09_ 2" x="238" y="0" w="98" h="223" pX="0.5" pY="0.5" oX="93" oY="37" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_10_ 3" x="431" y="496" w="213" h="141" pX="0.5" pY="0.5" oX="81" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_11_ 3" x="431" y="355" w="214" h="141" pX="0.5" pY="0.5" oX="81" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_12_ 3" x="217" y="529" w="214" h="141" pX="0.5" pY="0.5" oX="81" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_13_ 4" x="276" y="1256" w="184" h="177" pX="0.5" pY="0.5" oX="71" oY="31" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_14_ 4" x="1045" y="975" w="185" h="177" pX="0.5" pY="0.5" oX="70" oY="31" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_15_ 4" x="1068" y="607" w="185" h="178" pX="0.5" pY="0.5" oX="69" oY="30" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_16_ 5" x="1747" y="2261" w="143" h="164" pX="0.5" pY="0.5" oX="128" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_17_ 5" x="1890" y="2261" w="143" h="164" pX="0.5" pY="0.5" oX="128" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_18_ 5" x="2033" y="2259" w="143" h="164" pX="0.5" pY="0.5" oX="128" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_19_ 6" x="674" y="0" w="140" h="213" pX="0.5" pY="0.5" oX="46" oY="27" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_20_ 6" x="645" y="355" w="141" h="213" pX="0.5" pY="0.5" oX="46" oY="27" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_21_ 6" x="0" y="707" w="141" h="213" pX="0.5" pY="0.5" oX="47" oY="27" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_22_ 7" x="1450" y="1148" w="179" h="165" pX="0.5" pY="0.5" oX="64" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_23_ 7" x="534" y="1439" w="180" h="165" pX="0.5" pY="0.5" oX="65" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Behavior_24_ 7" x="1269" y="1150" w="181" h="166" pX="0.5" pY="0.5" oX="65" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_01_ 0" x="401" y="2758" w="148" h="137" pX="0.5" pY="0.5" oX="81" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_02_ 0" x="2329" y="2883" w="137" h="134" pX="0.5" pY="0.5" oX="86" oY="81" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_03_ 0" x="735" y="2895" w="137" h="131" pX="0.5" pY="0.5" oX="86" oY="84" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_04_ 1" x="1127" y="1334" w="104" h="179" pX="0.5" pY="0.5" oX="106" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_05_ 1" x="1738" y="874" w="111" h="174" pX="0.5" pY="0.5" oX="99" oY="65" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_06_ 1" x="1448" y="2100" w="108" h="166" pX="0.5" pY="0.5" oX="102" oY="72" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_07_ 2" x="204" y="1083" w="114" h="173" pX="0.5" pY="0.5" oX="99" oY="66" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_08_ 2" x="868" y="2100" w="117" h="166" pX="0.5" pY="0.5" oX="99" oY="73" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_09_ 2" x="1821" y="2425" w="115" h="161" pX="0.5" pY="0.5" oX="99" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_10_ 3" x="719" y="1954" w="149" h="171" pX="0.5" pY="0.5" oX="85" oY="54" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_11_ 3" x="0" y="2440" w="138" h="162" pX="0.5" pY="0.5" oX="85" oY="63" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_12_ 3" x="1917" y="2739" w="137" h="149" pX="0.5" pY="0.5" oX="85" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_13_ 4" x="1633" y="707" w="105" h="176" pX="0.5" pY="0.5" oX="96" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_14_ 4" x="1983" y="0" w="104" h="169" pX="0.5" pY="0.5" oX="97" oY="69" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_15_ 4" x="2361" y="842" w="106" h="163" pX="0.5" pY="0.5" oX="98" oY="75" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_16_ 5" x="1601" y="2265" w="146" h="164" pX="0.5" pY="0.5" oX="79" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_17_ 5" x="0" y="2602" w="139" h="157" pX="0.5" pY="0.5" oX="86" oY="63" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_18_ 5" x="2329" y="2738" w="138" h="145" pX="0.5" pY="0.5" oX="87" oY="74" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_19_ 6" x="2666" y="314" w="153" h="138" pX="0.5" pY="0.5" oX="83" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_20_ 6" x="246" y="2895" w="139" h="135" pX="0.5" pY="0.5" oX="83" oY="80" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_21_ 6" x="1530" y="2889" w="139" h="130" pX="0.5" pY="0.5" oX="83" oY="84" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_22_ 7" x="1118" y="1689" w="112" h="173" pX="0.5" pY="0.5" oX="107" oY="65" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_23_ 7" x="630" y="2140" w="111" h="166" pX="0.5" pY="0.5" oX="107" oY="72" oW="300" oH="300"/>
+  <sprite n="Abberation_Block_24_ 7" x="2478" y="1996" w="110" h="160" pX="0.5" pY="0.5" oX="107" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_01_ 0" x="1381" y="2895" w="134" h="130" pX="0.5" pY="0.5" oX="92" oY="104" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_02_ 0" x="1246" y="2895" w="135" h="131" pX="0.5" pY="0.5" oX="92" oY="103" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_03_ 0" x="872" y="2895" w="135" h="131" pX="0.5" pY="0.5" oX="92" oY="103" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_04_ 1" x="2685" y="1129" w="127" h="154" pX="0.5" pY="0.5" oX="73" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_05_ 1" x="2626" y="1814" w="127" h="154" pX="0.5" pY="0.5" oX="73" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_06_ 1" x="2623" y="975" w="127" h="154" pX="0.5" pY="0.5" oX="73" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_07_ 2" x="383" y="2149" w="137" h="167" pX="0.5" pY="0.5" oX="108" oY="66" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_08_ 2" x="1982" y="1181" w="137" h="168" pX="0.5" pY="0.5" oX="108" oY="65" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_09_ 2" x="1979" y="1517" w="137" h="168" pX="0.5" pY="0.5" oX="108" oY="65" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_10_ 3" x="1587" y="355" w="128" h="176" pX="0.5" pY="0.5" oX="89" oY="44" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_11_ 3" x="479" y="1619" w="128" h="177" pX="0.5" pY="0.5" oX="89" oY="43" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_12_ 3" x="248" y="1628" w="128" h="177" pX="0.5" pY="0.5" oX="89" oY="43" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_13_ 4" x="385" y="2895" w="133" h="139" pX="0.5" pY="0.5" oX="70" oY="105" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_14_ 4" x="2882" y="2663" w="134" h="140" pX="0.5" pY="0.5" oX="70" oY="104" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_15_ 4" x="2882" y="745" w="133" h="141" pX="0.5" pY="0.5" oX="71" oY="103" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_16_ 5" x="0" y="2895" w="140" h="140" pX="0.5" pY="0.5" oX="76" oY="61" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_17_ 5" x="2792" y="604" w="140" h="141" pX="0.5" pY="0.5" oX="76" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_18_ 5" x="674" y="213" w="140" h="142" pX="0.5" pY="0.5" oX="76" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_19_ 6" x="2755" y="0" w="139" h="154" pX="0.5" pY="0.5" oX="93" oY="83" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_20_ 6" x="2546" y="1133" w="139" h="154" pX="0.5" pY="0.5" oX="93" oY="82" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_21_ 6" x="2600" y="2311" w="139" h="155" pX="0.5" pY="0.5" oX="93" oY="81" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_22_ 7" x="1608" y="531" w="130" h="176" pX="0.5" pY="0.5" oX="112" oY="54" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_23_ 7" x="720" y="1576" w="131" h="177" pX="0.5" pY="0.5" oX="111" oY="53" oW="300" oH="300"/>
+  <sprite n="Abberation_Critical HP_24_ 7" x="851" y="1568" w="131" h="177" pX="0.5" pY="0.5" oX="110" oY="53" oW="300" oH="300"/>
+  <sprite n="Abberation_Dead_01_ 0" x="558" y="637" w="209" h="166" pX="0.5" pY="0.5" oX="53" oY="90" oW="300" oH="300"/>
+  <sprite n="Abberation_Dead_02_ 1" x="892" y="814" w="193" h="161" pX="0.5" pY="0.5" oX="57" oY="98" oW="300" oH="300"/>
+  <sprite n="Abberation_Dead_03_ 2" x="0" y="1107" w="193" h="155" pX="0.5" pY="0.5" oX="60" oY="100" oW="300" oH="300"/>
+  <sprite n="Abberation_Dead_04_ 3" x="348" y="670" w="210" h="153" pX="0.5" pY="0.5" oX="47" oY="96" oW="300" oH="300"/>
+  <sprite n="Abberation_Dead_05_ 4" x="0" y="920" w="204" h="187" pX="0.5" pY="0.5" oX="50" oY="75" oW="300" oH="300"/>
+  <sprite n="Abberation_Dead_06_ 5" x="0" y="153" w="237" h="155" pX="0.5" pY="0.5" oX="50" oY="99" oW="300" oH="300"/>
+  <sprite n="Abberation_Dead_07_ 6" x="0" y="0" w="238" h="153" pX="0.5" pY="0.5" oX="22" oY="105" oW="300" oH="300"/>
+  <sprite n="Abberation_Dead_08_ 7" x="321" y="880" w="203" h="185" pX="0.5" pY="0.5" oX="56" oY="91" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_01_ 0" x="495" y="2316" w="162" h="124" pX="0.5" pY="0.5" oX="73" oY="82" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_02_ 0" x="2363" y="665" w="162" h="152" pX="0.5" pY="0.5" oX="76" oY="54" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_03_ 0" x="2874" y="1068" w="141" h="142" pX="0.5" pY="0.5" oX="114" oY="29" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_04_ 1" x="1556" y="2099" w="114" h="166" pX="0.5" pY="0.5" oX="94" oY="53" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_05_ 1" x="0" y="1262" w="132" h="185" pX="0.5" pY="0.5" oX="90" oY="45" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_06_ 1" x="1670" y="2079" w="114" h="166" pX="0.5" pY="0.5" oX="154" oY="73" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_07_ 2" x="2239" y="842" w="122" h="165" pX="0.5" pY="0.5" oX="101" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_08_ 2" x="1127" y="1152" w="142" h="182" pX="0.5" pY="0.5" oX="87" oY="43" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_09_ 2" x="1735" y="1234" w="124" h="174" pX="0.5" pY="0.5" oX="41" oY="40" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_10_ 3" x="766" y="1206" w="163" h="183" pX="0.5" pY="0.5" oX="81" oY="41" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_11_ 3" x="0" y="1628" w="161" h="177" pX="0.5" pY="0.5" oX="81" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_12_ 3" x="637" y="1018" w="142" h="188" pX="0.5" pY="0.5" oX="61" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_13_ 4" x="1677" y="2429" w="144" h="161" pX="0.5" pY="0.5" oX="64" oY="68" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_14_ 4" x="296" y="1439" w="127" h="181" pX="0.5" pY="0.5" oX="102" oY="45" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_15_ 4" x="2238" y="1517" w="83" h="166" pX="0.5" pY="0.5" oX="161" oY="47" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_16_ 5" x="1640" y="0" w="141" h="176" pX="0.5" pY="0.5" oX="66" oY="48" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_17_ 5" x="1391" y="1481" w="168" h="177" pX="0.5" pY="0.5" oX="64" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_18_ 5" x="1983" y="169" w="158" h="169" pX="0.5" pY="0.5" oX="91" oY="80" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_19_ 6" x="2503" y="817" w="137" h="158" pX="0.5" pY="0.5" oX="112" oY="70" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_20_ 6" x="2084" y="2090" w="167" h="160" pX="0.5" pY="0.5" oX="87" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_21_ 6" x="330" y="2437" w="162" h="130" pX="0.5" pY="0.5" oX="63" oY="36" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_22_ 7" x="1384" y="2430" w="152" h="161" pX="0.5" pY="0.5" oX="101" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_23_ 7" x="1134" y="0" w="135" h="186" pX="0.5" pY="0.5" oX="80" oY="38" oW="300" oH="300"/>
+  <sprite n="Abberation_Evade_24_ 7" x="321" y="1065" w="95" h="191" pX="0.5" pY="0.5" oX="65" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_01_ 0" x="2853" y="1723" w="143" h="136" pX="0.5" pY="0.5" oX="91" oY="84" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_02_ 0" x="653" y="2453" w="161" h="148" pX="0.5" pY="0.5" oX="88" oY="72" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_03_ 0" x="917" y="443" w="195" h="164" pX="0.5" pY="0.5" oX="75" oY="56" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_04_ 1" x="929" y="1162" w="80" h="183" pX="0.5" pY="0.5" oX="100" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_05_ 1" x="1085" y="785" w="84" h="185" pX="0.5" pY="0.5" oX="103" oY="65" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_06_ 1" x="814" y="208" w="83" h="205" pX="0.5" pY="0.5" oX="113" oY="45" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_07_ 2" x="714" y="1397" w="81" h="179" pX="0.5" pY="0.5" oX="139" oY="52" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_08_ 2" x="1365" y="182" w="80" h="182" pX="0.5" pY="0.5" oX="132" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_09_ 2" x="250" y="880" w="71" h="203" pX="0.5" pY="0.5" oX="124" oY="28" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_10_ 3" x="258" y="2602" w="143" h="157" pX="0.5" pY="0.5" oX="74" oY="41" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_11_ 3" x="981" y="2430" w="161" h="151" pX="0.5" pY="0.5" oX="67" oY="48" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_12_ 3" x="917" y="305" w="196" h="138" pX="0.5" pY="0.5" oX="48" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_13_ 4" x="1334" y="2100" w="114" h="166" pX="0.5" pY="0.5" oX="92" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_14_ 4" x="1735" y="1408" w="129" h="174" pX="0.5" pY="0.5" oX="85" oY="69" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_15_ 4" x="1488" y="0" w="152" h="179" pX="0.5" pY="0.5" oX="78" oY="63" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_16_ 5" x="360" y="1805" w="126" h="173" pX="0.5" pY="0.5" oX="74" oY="54" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_17_ 5" x="1979" y="1349" w="146" h="168" pX="0.5" pY="0.5" oX="60" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_18_ 5" x="1484" y="717" w="149" h="178" pX="0.5" pY="0.5" oX="63" oY="49" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_19_ 6" x="2340" y="2158" w="122" h="162" pX="0.5" pY="0.5" oX="118" oY="69" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_20_ 6" x="1836" y="1582" w="143" h="171" pX="0.5" pY="0.5" oX="113" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_21_ 6" x="1341" y="0" w="147" h="182" pX="0.5" pY="0.5" oX="107" oY="49" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_22_ 7" x="2125" y="845" w="114" h="168" pX="0.5" pY="0.5" oX="102" oY="43" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_23_ 7" x="2234" y="676" w="129" h="166" pX="0.5" pY="0.5" oX="102" oY="45" oW="300" oH="300"/>
+  <sprite n="Abberation_Get Hit_24_ 7" x="0" y="1979" w="152" h="172" pX="0.5" pY="0.5" oX="88" oY="39" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_01_ 0" x="1260" y="2747" w="148" h="137" pX="0.5" pY="0.5" oX="81" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_02_ 0" x="151" y="2759" w="150" h="136" pX="0.5" pY="0.5" oX="80" oY="79" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_03_ 0" x="0" y="2759" w="151" h="136" pX="0.5" pY="0.5" oX="80" oY="79" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_04_ 1" x="1445" y="182" w="103" h="179" pX="0.5" pY="0.5" oX="106" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_05_ 1" x="1484" y="361" w="103" h="178" pX="0.5" pY="0.5" oX="106" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_06_ 1" x="376" y="1620" w="103" h="177" pX="0.5" pY="0.5" oX="106" oY="61" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_07_ 2" x="1721" y="1756" w="114" h="173" pX="0.5" pY="0.5" oX="99" oY="66" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_08_ 2" x="1869" y="172" w="114" h="172" pX="0.5" pY="0.5" oX="99" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_09_ 2" x="1869" y="0" w="114" h="172" pX="0.5" pY="0.5" oX="99" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_10_ 3" x="1462" y="1929" w="149" h="170" pX="0.5" pY="0.5" oX="85" oY="54" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_11_ 3" x="1976" y="1753" w="149" h="169" pX="0.5" pY="0.5" oX="85" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_12_ 3" x="0" y="2151" w="151" h="167" pX="0.5" pY="0.5" oX="84" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_13_ 4" x="1633" y="883" w="105" h="176" pX="0.5" pY="0.5" oX="96" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_14_ 4" x="1629" y="1059" w="105" h="176" pX="0.5" pY="0.5" oX="96" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_15_ 4" x="1629" y="1235" w="106" h="175" pX="0.5" pY="0.5" oX="96" oY="63" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_16_ 5" x="1334" y="2266" w="146" h="164" pX="0.5" pY="0.5" oX="79" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_17_ 5" x="2357" y="1007" w="146" h="163" pX="0.5" pY="0.5" oX="79" oY="56" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_18_ 5" x="2368" y="1333" w="146" h="162" pX="0.5" pY="0.5" oX="79" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_19_ 6" x="2739" y="2106" w="153" h="139" pX="0.5" pY="0.5" oX="83" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_20_ 6" x="2739" y="1968" w="153" h="138" pX="0.5" pY="0.5" oX="83" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_21_ 6" x="2739" y="2384" w="153" h="138" pX="0.5" pY="0.5" oX="83" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_22_ 7" x="486" y="1796" w="112" h="173" pX="0.5" pY="0.5" oX="107" oY="65" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_23_ 7" x="152" y="1979" w="112" h="172" pX="0.5" pY="0.5" oX="107" oY="66" oW="300" oH="300"/>
+  <sprite n="Abberation_Idle_24_ 7" x="1866" y="522" w="112" h="171" pX="0.5" pY="0.5" oX="107" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_01_ 0" x="2892" y="2130" w="121" h="130" pX="0.5" pY="0.5" oX="90" oY="106" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_02_ 0" x="2892" y="2260" w="121" h="129" pX="0.5" pY="0.5" oX="90" oY="107" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_03_ 0" x="2892" y="2389" w="121" h="129" pX="0.5" pY="0.5" oX="90" oY="107" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_04_ 1" x="549" y="2758" w="148" h="132" pX="0.5" pY="0.5" oX="83" oY="84" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_05_ 1" x="697" y="2758" w="148" h="132" pX="0.5" pY="0.5" oX="83" oY="84" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_06_ 1" x="2735" y="2653" w="147" h="132" pX="0.5" pY="0.5" oX="83" oY="84" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_07_ 2" x="1801" y="2590" w="156" h="145" pX="0.5" pY="0.5" oX="78" oY="87" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_08_ 2" x="1957" y="2585" w="156" h="145" pX="0.5" pY="0.5" oX="78" oY="87" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_09_ 2" x="1110" y="2591" w="156" h="146" pX="0.5" pY="0.5" oX="78" oY="86" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_10_ 3" x="1365" y="364" w="116" h="182" pX="0.5" pY="0.5" oX="103" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_11_ 3" x="1249" y="785" w="116" h="182" pX="0.5" pY="0.5" oX="103" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_12_ 3" x="1365" y="546" w="116" h="182" pX="0.5" pY="0.5" oX="103" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_13_ 4" x="165" y="2318" w="165" h="122" pX="0.5" pY="0.5" oX="68" oY="96" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_14_ 4" x="0" y="2318" w="165" h="122" pX="0.5" pY="0.5" oX="68" oY="96" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_15_ 4" x="330" y="2316" w="165" h="121" pX="0.5" pY="0.5" oX="68" oY="97" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_16_ 5" x="741" y="2125" w="115" h="166" pX="0.5" pY="0.5" oX="89" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_17_ 5" x="985" y="2139" w="114" h="166" pX="0.5" pY="0.5" oX="90" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_18_ 5" x="1099" y="2139" w="114" h="166" pX="0.5" pY="0.5" oX="90" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_19_ 6" x="2894" y="0" w="122" h="144" pX="0.5" pY="0.5" oX="104" oY="104" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_20_ 6" x="2467" y="2631" w="122" h="144" pX="0.5" pY="0.5" oX="104" oY="104" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_21_ 6" x="2894" y="451" w="122" h="143" pX="0.5" pY="0.5" oX="104" oY="104" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_22_ 7" x="2364" y="0" w="164" h="156" pX="0.5" pY="0.5" oX="76" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_23_ 7" x="2176" y="2250" w="164" h="156" pX="0.5" pY="0.5" oX="76" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Rest_24_ 7" x="2364" y="156" w="164" h="156" pX="0.5" pY="0.5" oX="76" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_01_ 0" x="895" y="1745" w="121" h="172" pX="0.5" pY="0.5" oX="91" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_02_ 0" x="2113" y="2583" w="134" h="156" pX="0.5" pY="0.5" oX="83" oY="94" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_03_ 0" x="2199" y="2885" w="128" h="129" pX="0.5" pY="0.5" oX="94" oY="92" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_04_ 0" x="2892" y="1999" w="111" h="131" pX="0.5" pY="0.5" oX="106" oY="92" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_05_ 0" x="2125" y="676" w="109" h="169" pX="0.5" pY="0.5" oX="109" oY="81" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_06_ 0" x="2635" y="1489" w="119" h="154" pX="0.5" pY="0.5" oX="107" oY="99" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_07_ 0" x="2610" y="2765" w="124" h="120" pX="0.5" pY="0.5" oX="95" oY="90" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_08_ 0" x="2640" y="1287" w="115" h="154" pX="0.5" pY="0.5" oX="99" oY="86" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_09_ 1" x="1450" y="1313" w="178" h="168" pX="0.5" pY="0.5" oX="49" oY="52" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_10_ 1" x="2755" y="1435" w="133" h="152" pX="0.5" pY="0.5" oX="65" oY="61" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_11_ 1" x="2251" y="2010" w="87" h="155" pX="0.5" pY="0.5" oX="89" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_12_ 1" x="2640" y="774" w="106" h="150" pX="0.5" pY="0.5" oX="88" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_13_ 1" x="2340" y="2320" w="161" h="142" pX="0.5" pY="0.5" oX="49" oY="63" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_14_ 1" x="2750" y="452" w="142" h="152" pX="0.5" pY="0.5" oX="62" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_15_ 1" x="2630" y="1655" w="90" h="154" pX="0.5" pY="0.5" oX="89" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_16_ 1" x="1554" y="2591" w="130" h="156" pX="0.5" pY="0.5" oX="62" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_17_ 2" x="1269" y="1316" w="179" h="150" pX="0.5" pY="0.5" oX="84" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_18_ 2" x="646" y="2601" w="132" h="157" pX="0.5" pY="0.5" oX="111" oY="63" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_19_ 2" x="778" y="2601" w="91" h="157" pX="0.5" pY="0.5" oX="139" oY="61" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_20_ 2" x="2362" y="1672" w="115" h="162" pX="0.5" pY="0.5" oX="116" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_21_ 2" x="492" y="2440" w="161" h="155" pX="0.5" pY="0.5" oX="103" oY="56" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_22_ 2" x="2525" y="320" w="141" h="154" pX="0.5" pY="0.5" oX="105" oY="63" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_23_ 2" x="869" y="2592" w="98" h="157" pX="0.5" pY="0.5" oX="132" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_24_ 2" x="2750" y="774" w="132" h="151" pX="0.5" pY="0.5" oX="118" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_25_ 3" x="949" y="607" w="119" h="195" pX="0.5" pY="0.5" oX="107" oY="37" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_26_ 3" x="1835" y="1924" w="132" h="171" pX="0.5" pY="0.5" oX="100" oY="43" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_27_ 3" x="2755" y="154" w="129" h="153" pX="0.5" pY="0.5" oX="92" oY="42" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_28_ 3" x="1722" y="1582" w="114" h="174" pX="0.5" pY="0.5" oX="97" oY="41" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_29_ 3" x="1253" y="491" w="109" h="180" pX="0.5" pY="0.5" oX="99" oY="41" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_30_ 3" x="0" y="1805" w="118" h="174" pX="0.5" pY="0.5" oX="88" oY="45" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_31_ 3" x="2246" y="1345" w="122" h="164" pX="0.5" pY="0.5" oX="98" oY="40" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_32_ 3" x="1118" y="1513" w="113" h="176" pX="0.5" pY="0.5" oX="103" oY="39" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_33_ 4" x="1559" y="1656" w="162" h="173" pX="0.5" pY="0.5" oX="63" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_34_ 4" x="520" y="2601" w="126" h="157" pX="0.5" pY="0.5" oX="74" oY="75" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_35_ 4" x="2892" y="1859" w="102" h="140" pX="0.5" pY="0.5" oX="95" oY="80" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_36_ 4" x="2894" y="1210" w="106" h="141" pX="0.5" pY="0.5" oX="101" oY="80" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_37_ 4" x="2477" y="1495" w="158" h="160" pX="0.5" pY="0.5" oX="71" oY="79" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_38_ 4" x="2518" y="474" w="123" h="159" pX="0.5" pY="0.5" oX="87" oY="86" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_39_ 4" x="2888" y="1435" w="92" h="142" pX="0.5" pY="0.5" oX="103" oY="77" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_40_ 4" x="2750" y="925" w="124" h="151" pX="0.5" pY="0.5" oX="73" oY="73" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_41_ 5" x="1113" y="305" w="155" h="186" pX="0.5" pY="0.5" oX="75" oY="48" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_42_ 5" x="1142" y="2430" w="127" h="161" pX="0.5" pY="0.5" oX="88" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_43_ 5" x="140" y="2895" w="106" h="140" pX="0.5" pY="0.5" oX="89" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_44_ 5" x="2753" y="1796" w="100" h="152" pX="0.5" pY="0.5" oX="97" oY="53" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_45_ 5" x="1536" y="2430" w="141" h="161" pX="0.5" pY="0.5" oX="65" oY="52" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_46_ 5" x="2755" y="1283" w="139" h="152" pX="0.5" pY="0.5" oX="71" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_47_ 5" x="1936" y="2425" w="111" h="160" pX="0.5" pY="0.5" oX="89" oY="52" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_48_ 5" x="151" y="2151" w="115" h="167" pX="0.5" pY="0.5" oX="86" oY="52" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_49_ 6" x="2077" y="1013" w="149" h="168" pX="0.5" pY="0.5" oX="87" oY="73" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_50_ 6" x="1480" y="2266" w="121" h="164" pX="0.5" pY="0.5" oX="100" oY="80" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_51_ 6" x="2641" y="474" w="104" h="152" pX="0.5" pY="0.5" oX="121" oY="78" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_52_ 6" x="629" y="2895" w="106" h="139" pX="0.5" pY="0.5" oX="113" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_53_ 6" x="1918" y="344" w="143" h="169" pX="0.5" pY="0.5" oX="105" oY="63" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_54_ 6" x="2563" y="2156" w="138" h="155" pX="0.5" pY="0.5" oX="99" oY="81" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_55_ 6" x="518" y="2895" w="111" h="139" pX="0.5" pY="0.5" oX="114" oY="75" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_56_ 6" x="2528" y="160" w="113" h="160" pX="0.5" pY="0.5" oX="113" oY="73" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_57_ 7" x="2084" y="1922" w="165" h="168" pX="0.5" pY="0.5" oX="84" oY="44" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_58_ 7" x="2514" y="1330" w="126" h="159" pX="0.5" pY="0.5" oX="109" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_59_ 7" x="2501" y="2318" w="99" h="158" pX="0.5" pY="0.5" oX="120" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_60_ 7" x="1864" y="1385" w="109" h="170" pX="0.5" pY="0.5" oX="107" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_61_ 7" x="564" y="1969" w="155" h="171" pX="0.5" pY="0.5" oX="87" oY="49" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_62_ 7" x="1967" y="1924" w="117" h="169" pX="0.5" pY="0.5" oX="104" oY="54" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_63_ 7" x="2452" y="1170" w="94" h="160" pX="0.5" pY="0.5" oX="123" oY="48" oW="300" oH="300"/>
+  <sprite n="Abberation_Run_64_ 7" x="2379" y="2476" w="127" h="155" pX="0.5" pY="0.5" oX="112" oY="46" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_01_ 0" x="2853" y="1587" w="143" h="136" pX="0.5" pY="0.5" oX="91" oY="84" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_02_ 0" x="1611" y="1929" w="169" h="150" pX="0.5" pY="0.5" oX="83" oY="70" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_03_ 0" x="936" y="137" w="196" h="168" pX="0.5" pY="0.5" oX="71" oY="52" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_04_ 1" x="1169" y="785" w="80" h="183" pX="0.5" pY="0.5" oX="100" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_05_ 1" x="562" y="1024" w="75" h="190" pX="0.5" pY="0.5" oX="109" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_06_ 1" x="336" y="220" w="84" h="215" pX="0.5" pY="0.5" oX="113" oY="35" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_07_ 2" x="795" y="1389" w="81" h="179" pX="0.5" pY="0.5" oX="139" oY="52" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_08_ 2" x="1269" y="0" w="72" h="182" pX="0.5" pY="0.5" oX="135" oY="49" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_09_ 2" x="877" y="616" w="72" h="198" pX="0.5" pY="0.5" oX="123" oY="33" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_10_ 3" x="967" y="2592" w="143" h="157" pX="0.5" pY="0.5" oX="74" oY="41" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_11_ 3" x="1161" y="1987" w="170" h="151" pX="0.5" pY="0.5" oX="65" oY="48" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_12_ 3" x="936" y="0" w="198" h="137" pX="0.5" pY="0.5" oX="50" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_13_ 4" x="1784" y="2095" w="114" h="166" pX="0.5" pY="0.5" oX="92" oY="76" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_14_ 4" x="1738" y="526" w="128" h="174" pX="0.5" pY="0.5" oX="85" oY="69" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_15_ 4" x="416" y="1065" w="146" h="190" pX="0.5" pY="0.5" oX="89" oY="53" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_16_ 5" x="360" y="1805" w="126" h="173" pX="0.5" pY="0.5" oX="74" oY="54" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_17_ 5" x="1978" y="513" w="142" h="169" pX="0.5" pY="0.5" oX="64" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_18_ 5" x="0" y="1447" w="149" h="181" pX="0.5" pY="0.5" oX="73" oY="47" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_19_ 6" x="138" y="2440" w="122" h="162" pX="0.5" pY="0.5" oX="118" oY="69" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_20_ 6" x="1836" y="1753" w="140" h="171" pX="0.5" pY="0.5" oX="112" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_21_ 6" x="619" y="1214" w="147" h="183" pX="0.5" pY="0.5" oX="98" oY="47" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_22_ 7" x="2125" y="1181" w="114" h="168" pX="0.5" pY="0.5" oX="102" oY="43" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_23_ 7" x="2226" y="1013" w="131" h="166" pX="0.5" pY="0.5" oX="101" oY="45" oW="300" oH="300"/>
+  <sprite n="Abberation_Use Skill_24_ 7" x="2370" y="498" w="148" h="163" pX="0.5" pY="0.5" oX="83" oY="48" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_01_ 0" x="2125" y="1349" w="121" h="168" pX="0.5" pY="0.5" oX="97" oY="66" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_02_ 0" x="2528" y="0" w="115" h="160" pX="0.5" pY="0.5" oX="101" oY="67" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_03_ 0" x="1677" y="2747" w="122" h="145" pX="0.5" pY="0.5" oX="101" oY="69" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_04_ 0" x="139" y="2602" w="119" h="157" pX="0.5" pY="0.5" oX="104" oY="70" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_05_ 0" x="2248" y="169" w="116" h="166" pX="0.5" pY="0.5" oX="107" oY="69" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_06_ 0" x="401" y="2601" w="119" h="157" pX="0.5" pY="0.5" oX="98" oY="68" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_07_ 0" x="1408" y="2747" w="122" h="148" pX="0.5" pY="0.5" oX="95" oY="66" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_08_ 0" x="1967" y="2093" w="117" h="166" pX="0.5" pY="0.5" oX="100" oY="65" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_09_ 1" x="2125" y="507" w="121" h="169" pX="0.5" pY="0.5" oX="89" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_10_ 1" x="361" y="1978" w="105" h="171" pX="0.5" pY="0.5" oX="99" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_11_ 1" x="2245" y="338" w="81" h="164" pX="0.5" pY="0.5" oX="109" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_12_ 1" x="741" y="2291" w="115" h="162" pX="0.5" pY="0.5" oX="87" oY="49" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_13_ 1" x="2321" y="1509" w="122" h="163" pX="0.5" pY="0.5" oX="80" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_14_ 1" x="2359" y="1170" w="93" h="163" pX="0.5" pY="0.5" oX="103" oY="51" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_15_ 1" x="2326" y="335" w="84" h="163" pX="0.5" pY="0.5" oX="108" oY="51" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_16_ 1" x="2252" y="0" w="112" h="166" pX="0.5" pY="0.5" oX="82" oY="51" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_17_ 2" x="1859" y="1214" w="120" h="171" pX="0.5" pY="0.5" oX="99" oY="49" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_18_ 2" x="1814" y="350" w="104" h="172" pX="0.5" pY="0.5" oX="107" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_19_ 2" x="802" y="1756" w="93" h="173" pX="0.5" pY="0.5" oX="120" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_20_ 2" x="1982" y="682" w="111" h="168" pX="0.5" pY="0.5" oX="113" oY="51" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_21_ 2" x="2239" y="1179" w="120" h="166" pX="0.5" pY="0.5" oX="110" oY="51" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_22_ 2" x="705" y="1781" w="97" h="173" pX="0.5" pY="0.5" oX="113" oY="51" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_23_ 2" x="1467" y="1658" w="82" h="170" pX="0.5" pY="0.5" oX="127" oY="49" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_24_ 2" x="2251" y="1683" w="111" h="165" pX="0.5" pY="0.5" oX="118" oY="49" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_25_ 3" x="1009" y="1162" w="118" h="183" pX="0.5" pY="0.5" oX="100" oY="39" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_26_ 3" x="607" y="1604" w="113" h="177" pX="0.5" pY="0.5" oX="102" oY="38" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_27_ 3" x="1343" y="1658" w="124" h="172" pX="0.5" pY="0.5" oX="92" oY="36" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_28_ 3" x="868" y="1929" w="123" h="171" pX="0.5" pY="0.5" oX="92" oY="35" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_29_ 3" x="1365" y="728" w="119" h="180" pX="0.5" pY="0.5" oX="93" oY="37" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_30_ 3" x="118" y="1805" w="117" h="174" pX="0.5" pY="0.5" oX="99" oY="39" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_31_ 3" x="2503" y="975" w="120" h="158" pX="0.5" pY="0.5" oX="100" oY="38" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_32_ 3" x="2125" y="1685" w="114" h="168" pX="0.5" pY="0.5" oX="102" oY="39" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_33_ 4" x="2507" y="1655" w="123" h="159" pX="0.5" pY="0.5" oX="88" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_34_ 4" x="2720" y="1643" w="121" h="153" pX="0.5" pY="0.5" oX="94" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_35_ 4" x="1801" y="2739" w="116" h="150" pX="0.5" pY="0.5" oX="101" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_36_ 4" x="1859" y="872" w="122" h="171" pX="0.5" pY="0.5" oX="105" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_37_ 4" x="1481" y="539" w="127" h="178" pX="0.5" pY="0.5" oX="101" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_38_ 4" x="466" y="1978" w="98" h="171" pX="0.5" pY="0.5" oX="110" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_39_ 4" x="2251" y="1848" w="110" h="162" pX="0.5" pY="0.5" oX="95" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_40_ 4" x="2247" y="2583" w="132" h="155" pX="0.5" pY="0.5" oX="75" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_41_ 5" x="423" y="1439" w="111" h="180" pX="0.5" pY="0.5" oX="110" oY="45" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_42_ 5" x="1269" y="182" w="96" h="182" pX="0.5" pY="0.5" oX="114" oY="44" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_43_ 5" x="2061" y="338" w="91" h="169" pX="0.5" pY="0.5" oX="113" oY="44" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_44_ 5" x="235" y="1805" w="125" h="173" pX="0.5" pY="0.5" oX="82" oY="42" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_45_ 5" x="1337" y="1929" w="125" h="171" pX="0.5" pY="0.5" oX="80" oY="43" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_46_ 5" x="2525" y="633" w="115" h="159" pX="0.5" pY="0.5" oX="94" oY="43" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_47_ 5" x="1269" y="2430" w="115" h="161" pX="0.5" pY="0.5" oX="102" oY="42" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_48_ 5" x="266" y="2149" w="117" h="167" pX="0.5" pY="0.5" oX="101" oY="44" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_49_ 6" x="876" y="1389" w="111" h="179" pX="0.5" pY="0.5" oX="94" oY="56" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_50_ 6" x="1715" y="352" w="99" h="174" pX="0.5" pY="0.5" oX="107" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_51_ 6" x="2152" y="338" w="93" h="167" pX="0.5" pY="0.5" oX="114" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_52_ 6" x="1684" y="2590" w="117" h="156" pX="0.5" pY="0.5" oX="112" oY="60" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_53_ 6" x="856" y="2431" w="125" h="161" pX="0.5" pY="0.5" oX="104" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_54_ 6" x="2643" y="0" w="112" h="155" pX="0.5" pY="0.5" oX="102" oY="59" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_55_ 6" x="2125" y="1517" w="113" h="168" pX="0.5" pY="0.5" oX="100" oY="57" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_56_ 6" x="1230" y="968" w="117" h="182" pX="0.5" pY="0.5" oX="98" oY="55" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_57_ 7" x="1213" y="2138" w="121" h="166" pX="0.5" pY="0.5" oX="99" oY="44" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_58_ 7" x="2507" y="1814" w="119" h="159" pX="0.5" pY="0.5" oX="95" oY="44" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_59_ 7" x="520" y="2149" w="110" h="167" pX="0.5" pY="0.5" oX="98" oY="42" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_60_ 7" x="1859" y="700" w="123" h="172" pX="0.5" pY="0.5" oX="88" oY="42" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_61_ 7" x="1548" y="179" w="126" h="176" pX="0.5" pY="0.5" oX="89" oY="45" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_62_ 7" x="1762" y="176" w="96" h="174" pX="0.5" pY="0.5" oX="109" oY="46" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_63_ 7" x="2462" y="2158" w="101" h="160" pX="0.5" pY="0.5" oX="114" oY="47" oW="300" oH="300"/>
+  <sprite n="Abberation_Walk_64_ 7" x="2246" y="502" w="124" h="163" pX="0.5" pY="0.5" oX="112" oY="45" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_01_ 0" x="2467" y="2775" w="143" h="118" pX="0.5" pY="0.5" oX="91" oY="102" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_02_ 0" x="976" y="2305" w="143" h="118" pX="0.5" pY="0.5" oX="91" oY="102" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_03_ 0" x="1119" y="2305" w="143" h="119" pX="0.5" pY="0.5" oX="91" oY="101" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_04_ 1" x="1781" y="0" w="88" h="175" pX="0.5" pY="0.5" oX="82" oY="75" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_05_ 1" x="1674" y="176" w="88" h="176" pX="0.5" pY="0.5" oX="82" oY="74" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_06_ 1" x="161" y="1628" w="87" h="177" pX="0.5" pY="0.5" oX="83" oY="73" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_07_ 2" x="264" y="1978" w="97" h="171" pX="0.5" pY="0.5" oX="140" oY="61" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_08_ 2" x="1016" y="1745" w="96" h="170" pX="0.5" pY="0.5" oX="140" oY="62" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_09_ 2" x="1981" y="872" w="96" h="169" pX="0.5" pY="0.5" oX="140" oY="63" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_10_ 3" x="2588" y="1973" w="144" h="155" pX="0.5" pY="0.5" oX="74" oY="43" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_11_ 3" x="1266" y="2591" w="144" h="156" pX="0.5" pY="0.5" oX="74" oY="42" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_12_ 3" x="1410" y="2591" w="144" h="156" pX="0.5" pY="0.5" oX="74" oY="42" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_13_ 4" x="2622" y="2466" w="113" h="152" pX="0.5" pY="0.5" oX="93" oY="90" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_14_ 4" x="2641" y="160" w="113" h="154" pX="0.5" pY="0.5" oX="93" oY="88" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_15_ 4" x="2506" y="2476" w="116" h="155" pX="0.5" pY="0.5" oX="90" oY="87" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_16_ 5" x="2141" y="169" w="107" h="169" pX="0.5" pY="0.5" oX="84" oY="58" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_17_ 5" x="1230" y="1816" w="107" h="171" pX="0.5" pY="0.5" oX="83" oY="56" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_18_ 5" x="598" y="1796" w="107" h="173" pX="0.5" pY="0.5" oX="83" oY="54" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_19_ 6" x="2622" y="2618" w="113" h="147" pX="0.5" pY="0.5" oX="118" oY="85" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_20_ 6" x="993" y="2749" w="114" h="145" pX="0.5" pY="0.5" oX="118" oY="87" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_21_ 6" x="2894" y="144" w="114" h="143" pX="0.5" pY="0.5" oX="118" oY="89" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_22_ 7" x="2410" y="312" w="115" h="162" pX="0.5" pY="0.5" oX="102" oY="50" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_23_ 7" x="2168" y="2423" w="118" h="160" pX="0.5" pY="0.5" oX="102" oY="52" oW="300" oH="300"/>
+  <sprite n="Abberation_Woozy_24_ 7" x="2047" y="2423" w="121" h="160" pX="0.5" pY="0.5" oX="102" oY="52" oW="300" oH="300"/>
+</TextureAtlas>
