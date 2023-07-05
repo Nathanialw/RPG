@@ -664,7 +664,7 @@ namespace Rendering {
             Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
 			Damage_Text::Show_Damage(zone, camera);
             UI_Resources::Render_Resources(zone, camera);
-            UI_Spellbook::Draw_Spellbook();
+            UI_Spellbook::Draw_Spellbook(camera);
             Pause::Pause_Control(camera);
             Menu::Render_Menu(zone, camera);
             //Mouse

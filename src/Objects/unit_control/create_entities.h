@@ -8,6 +8,8 @@
 #include "collision.h"
 #include "social_control.h"
 #include "item_components.h"
+#include "spellbook.h"
+
 
 namespace Create_Entities {
 
@@ -217,7 +219,8 @@ namespace Create_Entities {
             if (player) {
                 health.currentHealth += 200;
                 zone.emplace<Component::Input>(entity);
-                zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (Graphics::resolution.w), (Graphics::resolution.h), 2.0f, 2.0f);
+                auto &camera = zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (Graphics::resolution.w), (Graphics::resolution.h), 2.0f, 2.0f);
+                UI_Spellbook::Init_UI(camera);
             }
             else {
                 zone.emplace<Component::Sight_Range>(entity, data.sight_radius * data.scale, position.x - (data.sight_radius / 2.0f * data.scale), position.y - (data.sight_radius / 2.0f * data.sight_radius), data.sight_radius * data.scale, data.sight_radius * data.scale);
@@ -233,6 +236,4 @@ namespace Create_Entities {
             zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
         }
     }
-
-
 }
