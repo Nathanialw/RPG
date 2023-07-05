@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+Format:
+n  => name
+x  => x pos
+y  => y pos
+w  => width
+h  => height
+pX => x pos of the pivot point
+pY => y pos of the pivot point
+oX => x-corner offset
+oY => y-corner offset
+oW => original width
+oH => original height
+r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Male_WWIIAllies_3_BrenLMG.png" width="803" height="780" scale="1" format="RGBA8888">
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_01_ 0" x="546" y="677" w="9" h="42" pX="0.5" pY="0.5" oX="69" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_02_ 0" x="697" y="185" w="9" h="40" pX="0.5" pY="0.5" oX="69" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_03_ 0" x="155" y="542" w="8" h="38" pX="0.5" pY="0.5" oX="69" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_04_ 1" x="160" y="125" w="66" h="14" pX="0.5" pY="0.5" oX="27" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_05_ 1" x="160" y="46" w="67" h="13" pX="0.5" pY="0.5" oX="28" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_06_ 1" x="160" y="16" w="67" h="14" pX="0.5" pY="0.5" oX="29" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_07_ 2" x="160" y="139" w="66" h="16" pX="0.5" pY="0.5" oX="67" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_08_ 2" x="160" y="0" w="67" h="16" pX="0.5" pY="0.5" oX="65" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_09_ 2" x="160" y="30" w="67" h="16" pX="0.5" pY="0.5" oX="64" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_10_ 3" x="413" y="580" w="9" h="49" pX="0.5" pY="0.5" oX="82" oY="36" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_11_ 3" x="578" y="0" w="9" h="51" pX="0.5" pY="0.5" oX="82" oY="36" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_12_ 3" x="578" y="263" w="9" h="51" pX="0.5" pY="0.5" oX="83" oY="36" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_13_ 4" x="119" y="749" w="32" h="30" pX="0.5" pY="0.5" oX="39" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_14_ 4" x="151" y="749" w="32" h="29" pX="0.5" pY="0.5" oX="40" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_15_ 4" x="187" y="716" w="33" h="29" pX="0.5" pY="0.5" oX="40" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_16_ 5" x="203" y="540" w="51" h="33" pX="0.5" pY="0.5" oX="45" oY="45" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_17_ 5" x="104" y="542" w="51" h="33" pX="0.5" pY="0.5" oX="46" oY="45" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_18_ 5" x="336" y="542" w="51" h="34" pX="0.5" pY="0.5" oX="47" oY="45" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_19_ 6" x="587" y="573" w="48" h="32" pX="0.5" pY="0.5" oX="67" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_20_ 6" x="587" y="542" w="48" h="31" pX="0.5" pY="0.5" oX="66" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_21_ 6" x="587" y="245" w="48" h="30" pX="0.5" pY="0.5" oX="65" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_22_ 7" x="656" y="625" w="45" h="38" pX="0.5" pY="0.5" oX="76" oY="49" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_23_ 7" x="656" y="507" w="46" h="38" pX="0.5" pY="0.5" oX="75" oY="50" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack MG 1_24_ 7" x="656" y="587" w="45" h="38" pX="0.5" pY="0.5" oX="75" oY="50" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Pistol 1_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Rifle_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Attack Two Hand Swing_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Begging_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Shield_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Block Unarmed_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting Idle_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_01_ 0" x="494" y="576" w="20" h="49" pX="0.5" pY="0.5" oX="50" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_02_ 0" x="696" y="663" w="13" h="39" pX="0.5" pY="0.5" oX="58" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_03_ 0" x="761" y="267" w="10" h="19" pX="0.5" pY="0.5" oX="63" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_04_ 1" x="130" y="721" w="11" h="28" pX="0.5" pY="0.5" oX="87" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_05_ 1" x="703" y="0" w="14" h="40" pX="0.5" pY="0.5" oX="82" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_06_ 1" x="166" y="639" w="25" h="44" pX="0.5" pY="0.5" oX="75" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_07_ 2" x="136" y="303" w="22" h="59" pX="0.5" pY="0.5" oX="62" oY="80" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_08_ 2" x="490" y="240" w="20" h="54" pX="0.5" pY="0.5" oX="63" oY="80" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_09_ 2" x="674" y="384" w="26" h="44" pX="0.5" pY="0.5" oX="57" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_10_ 3" x="347" y="708" w="17" h="36" pX="0.5" pY="0.5" oX="93" oY="88" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_11_ 3" x="434" y="338" w="14" h="54" pX="0.5" pY="0.5" oX="88" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_12_ 3" x="240" y="298" w="15" h="60" pX="0.5" pY="0.5" oX="82" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_13_ 4" x="534" y="751" w="12" h="29" pX="0.5" pY="0.5" oX="62" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_14_ 4" x="423" y="746" w="21" h="30" pX="0.5" pY="0.5" oX="65" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_15_ 4" x="743" y="141" w="18" h="34" pX="0.5" pY="0.5" oX="72" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_16_ 5" x="745" y="648" w="15" h="34" pX="0.5" pY="0.5" oX="92" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_17_ 5" x="724" y="294" w="15" h="38" pX="0.5" pY="0.5" oX="90" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_18_ 5" x="645" y="229" w="17" h="44" pX="0.5" pY="0.5" oX="83" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_19_ 6" x="409" y="172" w="18" h="56" pX="0.5" pY="0.5" oX="53" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_20_ 6" x="536" y="630" w="18" h="47" pX="0.5" pY="0.5" oX="56" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_21_ 6" x="327" y="708" w="20" h="36" pX="0.5" pY="0.5" oX="57" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_22_ 7" x="443" y="109" w="20" h="54" pX="0.5" pY="0.5" oX="78" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_23_ 7" x="336" y="374" w="21" h="57" pX="0.5" pY="0.5" oX="76" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casting_24_ 7" x="389" y="115" w="22" h="57" pX="0.5" pY="0.5" oX="72" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Casual Sit_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_01_ 0" x="367" y="174" w="22" h="58" pX="0.5" pY="0.5" oX="72" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_02_ 0" x="367" y="0" w="22" h="58" pX="0.5" pY="0.5" oX="72" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_03_ 0" x="367" y="116" w="22" h="58" pX="0.5" pY="0.5" oX="72" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_04_ 1" x="587" y="100" w="49" h="29" pX="0.5" pY="0.5" oX="31" oY="62" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_05_ 1" x="587" y="129" w="49" h="29" pX="0.5" pY="0.5" oX="31" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_06_ 1" x="514" y="602" w="49" h="28" pX="0.5" pY="0.5" oX="31" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_07_ 2" x="328" y="356" w="58" h="18" pX="0.5" pY="0.5" oX="82" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_08_ 2" x="156" y="414" w="57" h="18" pX="0.5" pY="0.5" oX="83" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_09_ 2" x="213" y="362" w="57" h="19" pX="0.5" pY="0.5" oX="83" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_10_ 3" x="778" y="334" w="14" h="13" pX="0.5" pY="0.5" oX="76" oY="45" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_11_ 3" x="316" y="677" w="14" h="13" pX="0.5" pY="0.5" oX="76" oY="45" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_12_ 3" x="136" y="362" w="14" h="12" pX="0.5" pY="0.5" oX="76" oY="46" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_13_ 4" x="129" y="374" w="27" h="57" pX="0.5" pY="0.5" oX="52" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_14_ 4" x="105" y="432" w="27" h="56" pX="0.5" pY="0.5" oX="52" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_15_ 4" x="317" y="431" w="27" h="55" pX="0.5" pY="0.5" oX="51" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_16_ 5" x="489" y="402" w="39" h="13" pX="0.5" pY="0.5" oX="41" oY="54" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_17_ 5" x="119" y="626" w="38" h="13" pX="0.5" pY="0.5" oX="41" oY="55" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_18_ 5" x="662" y="320" w="37" h="13" pX="0.5" pY="0.5" oX="41" oY="55" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_19_ 6" x="379" y="405" w="56" h="38" pX="0.5" pY="0.5" oX="74" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_20_ 6" x="152" y="443" w="55" h="38" pX="0.5" pY="0.5" oX="74" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_21_ 6" x="213" y="381" w="55" h="38" pX="0.5" pY="0.5" oX="74" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_22_ 7" x="556" y="719" w="27" h="25" pX="0.5" pY="0.5" oX="92" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_23_ 7" x="671" y="722" w="27" h="24" pX="0.5" pY="0.5" oX="92" oY="53" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Cleaning Object_24_ 7" x="710" y="752" w="27" h="24" pX="0.5" pY="0.5" oX="92" oY="53" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Climb_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_01_ 0" x="270" y="486" w="21" h="53" pX="0.5" pY="0.5" oX="61" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_02_ 0" x="248" y="486" w="22" h="53" pX="0.5" pY="0.5" oX="61" oY="84" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_03_ 0" x="549" y="315" w="22" h="52" pX="0.5" pY="0.5" oX="62" oY="85" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_04_ 1" x="529" y="159" w="11" h="52" pX="0.5" pY="0.5" oX="71" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_05_ 1" x="518" y="293" w="10" h="53" pX="0.5" pY="0.5" oX="72" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_06_ 1" x="513" y="477" w="8" h="53" pX="0.5" pY="0.5" oX="73" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_07_ 2" x="635" y="385" w="11" h="45" pX="0.5" pY="0.5" oX="78" oY="92" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_08_ 2" x="587" y="275" w="9" h="34" pX="0.5" pY="0.5" oX="79" oY="102" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_09_ 2" x="701" y="545" w="8" h="34" pX="0.5" pY="0.5" oX="79" oY="102" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_10_ 3" x="648" y="185" w="12" h="44" pX="0.5" pY="0.5" oX="90" oY="82" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_11_ 3" x="636" y="275" w="12" h="45" pX="0.5" pY="0.5" oX="90" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_12_ 3" x="664" y="92" w="11" h="46" pX="0.5" pY="0.5" oX="90" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_13_ 4" x="234" y="487" w="14" h="53" pX="0.5" pY="0.5" oX="66" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_14_ 4" x="220" y="487" w="14" h="53" pX="0.5" pY="0.5" oX="67" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_15_ 4" x="206" y="487" w="14" h="53" pX="0.5" pY="0.5" oX="68" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_16_ 5" x="546" y="751" w="14" h="29" pX="0.5" pY="0.5" oX="73" oY="91" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_17_ 5" x="383" y="746" w="14" h="30" pX="0.5" pY="0.5" oX="73" oY="92" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_18_ 5" x="215" y="749" w="13" h="31" pX="0.5" pY="0.5" oX="73" oY="92" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_19_ 6" x="472" y="576" w="22" h="49" pX="0.5" pY="0.5" oX="65" oY="89" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_20_ 6" x="37" y="630" w="21" h="48" pX="0.5" pY="0.5" oX="66" oY="90" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_21_ 6" x="596" y="275" w="20" h="48" pX="0.5" pY="0.5" oX="67" oY="90" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_22_ 7" x="424" y="677" w="11" h="41" pX="0.5" pY="0.5" oX="88" oY="87" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_23_ 7" x="449" y="677" w="11" h="41" pX="0.5" pY="0.5" oX="87" oY="87" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 1_24_ 7" x="273" y="677" w="12" h="42" pX="0.5" pY="0.5" oX="86" oY="86" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_01_ 0" x="553" y="493" w="26" h="51" pX="0.5" pY="0.5" oX="74" oY="89" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_02_ 0" x="553" y="442" w="28" h="51" pX="0.5" pY="0.5" oX="73" oY="89" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_03_ 0" x="579" y="493" w="28" h="49" pX="0.5" pY="0.5" oX="73" oY="90" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_04_ 1" x="43" y="375" w="17" h="57" pX="0.5" pY="0.5" oX="63" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_05_ 1" x="60" y="375" w="17" h="57" pX="0.5" pY="0.5" oX="63" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_06_ 1" x="112" y="374" w="17" h="57" pX="0.5" pY="0.5" oX="63" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_07_ 2" x="737" y="752" w="17" h="27" pX="0.5" pY="0.5" oX="80" oY="89" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_08_ 2" x="761" y="26" w="17" h="26" pX="0.5" pY="0.5" oX="80" oY="89" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_09_ 2" x="761" y="0" w="17" h="26" pX="0.5" pY="0.5" oX="80" oY="89" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_10_ 3" x="618" y="752" w="27" h="28" pX="0.5" pY="0.5" oX="60" oY="85" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_11_ 3" x="570" y="751" w="27" h="29" pX="0.5" pY="0.5" oX="60" oY="85" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_12_ 3" x="478" y="751" w="28" h="29" pX="0.5" pY="0.5" oX="59" oY="85" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_13_ 4" x="319" y="122" w="11" h="59" pX="0.5" pY="0.5" oX="74" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_14_ 4" x="200" y="303" w="11" h="59" pX="0.5" pY="0.5" oX="74" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_15_ 4" x="211" y="303" w="12" h="59" pX="0.5" pY="0.5" oX="74" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_16_ 5" x="461" y="746" w="17" h="30" pX="0.5" pY="0.5" oX="54" oY="96" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_17_ 5" x="366" y="746" w="17" h="31" pX="0.5" pY="0.5" oX="54" oY="95" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_18_ 5" x="743" y="277" w="18" h="32" pX="0.5" pY="0.5" oX="53" oY="95" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_19_ 6" x="709" y="502" w="30" h="37" pX="0.5" pY="0.5" oX="76" oY="90" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_20_ 6" x="709" y="539" w="30" h="37" pX="0.5" pY="0.5" oX="76" oY="90" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_21_ 6" x="230" y="688" w="30" h="36" pX="0.5" pY="0.5" oX="76" oY="90" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_22_ 7" x="739" y="543" w="9" h="24" pX="0.5" pY="0.5" oX="77" oY="87" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_23_ 7" x="761" y="52" w="10" h="24" pX="0.5" pY="0.5" oX="76" oY="87" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 2_24_ 7" x="758" y="721" w="10" h="24" pX="0.5" pY="0.5" oX="76" oY="87" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_01_ 0" x="303" y="580" w="21" h="50" pX="0.5" pY="0.5" oX="73" oY="95" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_02_ 0" x="607" y="490" w="21" h="48" pX="0.5" pY="0.5" oX="73" oY="95" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_03_ 0" x="69" y="630" w="21" h="47" pX="0.5" pY="0.5" oX="73" oY="95" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_04_ 1" x="623" y="390" w="12" h="48" pX="0.5" pY="0.5" oX="65" oY="94" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_05_ 1" x="621" y="29" w="9" h="49" pX="0.5" pY="0.5" oX="68" oY="94" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_06_ 1" x="483" y="240" w="7" h="50" pX="0.5" pY="0.5" oX="71" oY="94" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_07_ 2" x="732" y="650" w="13" h="35" pX="0.5" pY="0.5" oX="82" oY="93" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_08_ 2" x="733" y="141" w="10" h="34" pX="0.5" pY="0.5" oX="82" oY="94" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_09_ 2" x="517" y="136" w="7" h="35" pX="0.5" pY="0.5" oX="82" oY="94" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_10_ 3" x="754" y="752" w="18" h="25" pX="0.5" pY="0.5" oX="66" oY="101" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_11_ 3" x="760" y="543" w="18" h="26" pX="0.5" pY="0.5" oX="68" oY="102" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_12_ 3" x="610" y="339" w="18" h="27" pX="0.5" pY="0.5" oX="68" oY="103" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_13_ 4" x="39" y="432" w="10" h="56" pX="0.5" pY="0.5" oX="72" oY="91" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_14_ 4" x="440" y="55" w="11" h="54" pX="0.5" pY="0.5" oX="73" oY="92" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_15_ 4" x="428" y="57" w="12" h="54" pX="0.5" pY="0.5" oX="73" oY="92" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_16_ 5" x="748" y="611" w="12" h="33" pX="0.5" pY="0.5" oX="62" oY="101" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_17_ 5" x="703" y="106" w="11" h="32" pX="0.5" pY="0.5" oX="63" oY="104" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_18_ 5" x="107" y="746" w="12" h="33" pX="0.5" pY="0.5" oX="64" oY="105" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_19_ 6" x="635" y="532" w="21" h="42" pX="0.5" pY="0.5" oX="77" oY="95" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_20_ 6" x="265" y="539" w="20" h="41" pX="0.5" pY="0.5" oX="77" oY="95" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_21_ 6" x="714" y="106" w="19" h="39" pX="0.5" pY="0.5" oX="77" oY="96" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_22_ 7" x="387" y="542" w="6" h="20" pX="0.5" pY="0.5" oX="83" oY="91" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_23_ 7" x="220" y="716" w="10" h="33" pX="0.5" pY="0.5" oX="78" oY="92" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 3_24_ 7" x="364" y="692" w="11" h="34" pX="0.5" pY="0.5" oX="76" oY="93" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_01_ 0" x="510" y="240" w="19" h="53" pX="0.5" pY="0.5" oX="55" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_02_ 0" x="453" y="421" w="19" h="54" pX="0.5" pY="0.5" oX="55" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_03_ 0" x="453" y="475" w="19" h="53" pX="0.5" pY="0.5" oX="56" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_04_ 1" x="234" y="27" w="6" h="31" pX="0.5" pY="0.5" oX="66" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_05_ 1" x="464" y="171" w="6" h="30" pX="0.5" pY="0.5" oX="65" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_06_ 1" x="361" y="58" w="6" h="31" pX="0.5" pY="0.5" oX="65" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_07_ 2" x="567" y="104" w="12" h="51" pX="0.5" pY="0.5" oX="82" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_08_ 2" x="571" y="315" w="12" h="51" pX="0.5" pY="0.5" oX="83" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_09_ 2" x="192" y="502" w="11" h="51" pX="0.5" pY="0.5" oX="84" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_10_ 3" x="409" y="677" w="15" h="42" pX="0.5" pY="0.5" oX="90" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_11_ 3" x="88" y="678" w="15" h="43" pX="0.5" pY="0.5" oX="90" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_12_ 3" x="596" y="323" w="14" h="43" pX="0.5" pY="0.5" oX="90" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_13_ 4" x="39" y="580" w="12" h="50" pX="0.5" pY="0.5" oX="56" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_14_ 4" x="541" y="502" w="11" h="50" pX="0.5" pY="0.5" oX="56" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_15_ 4" x="324" y="580" w="12" h="50" pX="0.5" pY="0.5" oX="55" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_16_ 5" x="581" y="677" w="12" h="42" pX="0.5" pY="0.5" oX="83" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_17_ 5" x="398" y="677" w="11" h="42" pX="0.5" pY="0.5" oX="83" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_18_ 5" x="569" y="677" w="12" h="42" pX="0.5" pY="0.5" oX="82" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_19_ 6" x="451" y="55" w="21" h="54" pX="0.5" pY="0.5" oX="65" oY="82" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_20_ 6" x="429" y="284" w="20" h="54" pX="0.5" pY="0.5" oX="66" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_21_ 6" x="431" y="224" w="21" h="54" pX="0.5" pY="0.5" oX="66" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_22_ 7" x="707" y="426" w="11" h="37" pX="0.5" pY="0.5" oX="93" oY="87" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_23_ 7" x="718" y="426" w="11" h="37" pX="0.5" pY="0.5" oX="93" oY="87" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Critical Health Idle 4_24_ 7" x="732" y="576" w="11" h="37" pX="0.5" pY="0.5" oX="93" oY="87" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crouch_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Crying_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Drink_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_01_ 0" x="31" y="160" w="19" h="65" pX="0.5" pY="0.5" oX="53" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_02_ 0" x="240" y="173" w="23" h="63" pX="0.5" pY="0.5" oX="48" oY="62" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_03_ 0" x="472" y="96" w="54" h="40" pX="0.5" pY="0.5" oX="23" oY="62" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_04_ 1" x="100" y="721" w="30" h="24" pX="0.5" pY="0.5" oX="43" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_05_ 1" x="285" y="677" w="31" h="15" pX="0.5" pY="0.5" oX="44" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_06_ 1" x="778" y="155" w="23" h="16" pX="0.5" pY="0.5" oX="72" oY="55" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_07_ 2" x="662" y="230" w="40" h="45" pX="0.5" pY="0.5" oX="77" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_08_ 2" x="383" y="630" w="47" h="45" pX="0.5" pY="0.5" oX="69" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_09_ 2" x="92" y="160" w="23" h="64" pX="0.5" pY="0.5" oX="65" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_10_ 3" x="709" y="686" w="18" h="13" pX="0.5" pY="0.5" oX="89" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_11_ 3" x="780" y="190" w="19" h="20" pX="0.5" pY="0.5" oX="93" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_12_ 3" x="333" y="657" w="43" h="16" pX="0.5" pY="0.5" oX="94" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_13_ 4" x="301" y="527" w="35" h="52" pX="0.5" pY="0.5" oX="36" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_14_ 4" x="503" y="677" w="43" h="42" pX="0.5" pY="0.5" oX="33" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_15_ 4" x="217" y="674" w="43" h="14" pX="0.5" pY="0.5" oX="35" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_16_ 5" x="191" y="677" w="24" h="13" pX="0.5" pY="0.5" oX="71" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_17_ 5" x="160" y="155" w="8" h="5" pX="0.5" pY="0.5" oX="89" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_18_ 5" x="213" y="419" w="29" h="13" pX="0.5" pY="0.5" oX="88" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_19_ 6" x="265" y="110" w="24" h="63" pX="0.5" pY="0.5" oX="65" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_20_ 6" x="27" y="225" w="22" h="64" pX="0.5" pY="0.5" oX="62" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_21_ 6" x="293" y="61" w="27" h="61" pX="0.5" pY="0.5" oX="44" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_22_ 7" x="628" y="721" w="33" h="24" pX="0.5" pY="0.5" oX="91" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_23_ 7" x="583" y="652" w="46" h="23" pX="0.5" pY="0.5" oX="81" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Evade_24_ 7" x="212" y="580" w="50" h="43" pX="0.5" pY="0.5" oX="75" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_01_ 0" x="176" y="59" w="13" h="66" pX="0.5" pY="0.5" oX="50" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_02_ 0" x="745" y="438" w="16" h="35" pX="0.5" pY="0.5" oX="65" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_03_ 0" x="691" y="752" w="19" h="27" pX="0.5" pY="0.5" oX="67" oY="41" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_04_ 1" x="187" y="690" w="43" h="26" pX="0.5" pY="0.5" oX="31" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_05_ 1" x="227" y="19" w="63" h="8" pX="0.5" pY="0.5" oX="23" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_06_ 1" x="731" y="686" w="30" h="35" pX="0.5" pY="0.5" oX="55" oY="27" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_07_ 2" x="52" y="542" w="52" h="35" pX="0.5" pY="0.5" oX="77" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_08_ 2" x="0" y="289" w="62" h="25" pX="0.5" pY="0.5" oX="75" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_09_ 2" x="51" y="580" w="29" h="50" pX="0.5" pY="0.5" oX="76" oY="21" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_10_ 3" x="230" y="724" w="9" h="21" pX="0.5" pY="0.5" oX="91" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_11_ 3" x="529" y="263" w="15" h="52" pX="0.5" pY="0.5" oX="79" oY="18" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_12_ 3" x="240" y="236" w="18" h="62" pX="0.5" pY="0.5" oX="73" oY="7" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_13_ 4" x="0" y="432" w="39" h="56" pX="0.5" pY="0.5" oX="31" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_14_ 4" x="703" y="40" w="39" h="27" pX="0.5" pY="0.5" oX="38" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_15_ 4" x="778" y="23" w="19" h="24" pX="0.5" pY="0.5" oX="64" oY="38" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_16_ 5" x="183" y="745" w="32" h="18" pX="0.5" pY="0.5" oX="59" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_17_ 5" x="460" y="629" w="47" h="35" pX="0.5" pY="0.5" oX="40" oY="29" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_18_ 5" x="551" y="158" w="31" h="51" pX="0.5" pY="0.5" oX="58" oY="14" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_19_ 6" x="63" y="307" w="34" h="60" pX="0.5" pY="0.5" oX="67" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_20_ 6" x="344" y="484" w="53" h="21" pX="0.5" pY="0.5" oX="67" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_21_ 6" x="735" y="368" w="26" h="35" pX="0.5" pY="0.5" oX="76" oY="33" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_22_ 7" x="587" y="29" w="34" h="21" pX="0.5" pY="0.5" oX="90" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_23_ 7" x="584" y="51" w="37" h="49" pX="0.5" pY="0.5" oX="85" oY="30" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Get Hit_24_ 7" x="24" y="314" w="20" h="61" pX="0.5" pY="0.5" oX="76" oY="10" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Hand Casual_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Head Scratch_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_01_ 0" x="189" y="59" w="8" h="66" pX="0.5" pY="0.5" oX="65" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_02_ 0" x="168" y="59" w="8" h="66" pX="0.5" pY="0.5" oX="65" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_03_ 0" x="160" y="59" w="8" h="66" pX="0.5" pY="0.5" oX="65" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_04_ 1" x="61" y="746" w="33" h="23" pX="0.5" pY="0.5" oX="31" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_05_ 1" x="144" y="720" w="33" h="23" pX="0.5" pY="0.5" oX="31" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_06_ 1" x="36" y="722" w="33" h="24" pX="0.5" pY="0.5" oX="31" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_07_ 2" x="435" y="392" w="54" h="29" pX="0.5" pY="0.5" oX="76" oY="80" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_08_ 2" x="472" y="421" w="54" h="28" pX="0.5" pY="0.5" oX="76" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_09_ 2" x="472" y="449" w="53" h="28" pX="0.5" pY="0.5" oX="76" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_10_ 3" x="514" y="576" w="7" h="23" pX="0.5" pY="0.5" oX="89" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_11_ 3" x="726" y="145" w="7" h="23" pX="0.5" pY="0.5" oX="89" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_12_ 3" x="737" y="403" w="7" h="23" pX="0.5" pY="0.5" oX="89" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_13_ 4" x="544" y="263" w="34" h="52" pX="0.5" pY="0.5" oX="37" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_14_ 4" x="550" y="211" w="32" h="52" pX="0.5" pY="0.5" oX="38" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_15_ 4" x="89" y="488" w="32" h="53" pX="0.5" pY="0.5" oX="38" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_16_ 5" x="327" y="692" w="37" h="16" pX="0.5" pY="0.5" oX="55" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_17_ 5" x="634" y="704" w="37" h="17" pX="0.5" pY="0.5" oX="55" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_18_ 5" x="63" y="367" w="37" h="7" pX="0.5" pY="0.5" oX="55" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_19_ 6" x="436" y="0" w="41" h="55" pX="0.5" pY="0.5" oX="68" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_20_ 6" x="207" y="432" w="41" h="55" pX="0.5" pY="0.5" oX="68" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_21_ 6" x="276" y="431" w="41" h="55" pX="0.5" pY="0.5" oX="68" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_22_ 7" x="671" y="703" w="37" h="19" pX="0.5" pY="0.5" oX="87" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_23_ 7" x="700" y="407" w="37" h="19" pX="0.5" pY="0.5" oX="87" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 1_24_ 7" x="0" y="724" w="36" h="19" pX="0.5" pY="0.5" oX="87" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_01_ 0" x="197" y="219" w="25" h="63" pX="0.5" pY="0.5" oX="64" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_02_ 0" x="240" y="110" w="25" h="63" pX="0.5" pY="0.5" oX="64" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_03_ 0" x="139" y="224" w="26" h="63" pX="0.5" pY="0.5" oX="63" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_04_ 1" x="470" y="530" w="51" h="46" pX="0.5" pY="0.5" oX="38" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_05_ 1" x="336" y="580" w="50" h="46" pX="0.5" pY="0.5" oX="38" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_06_ 1" x="113" y="580" w="50" h="46" pX="0.5" pY="0.5" oX="38" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_07_ 2" x="291" y="486" w="53" h="16" pX="0.5" pY="0.5" oX="69" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_08_ 2" x="291" y="502" w="53" h="16" pX="0.5" pY="0.5" oX="69" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_09_ 2" x="344" y="505" w="53" h="16" pX="0.5" pY="0.5" oX="69" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_10_ 3" x="761" y="229" w="12" h="19" pX="0.5" pY="0.5" oX="84" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_11_ 3" x="761" y="286" w="13" h="18" pX="0.5" pY="0.5" oX="84" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_12_ 3" x="434" y="562" w="13" h="18" pX="0.5" pY="0.5" oX="84" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_13_ 4" x="330" y="120" w="20" h="59" pX="0.5" pY="0.5" oX="55" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_14_ 4" x="327" y="61" w="19" h="59" pX="0.5" pY="0.5" oX="56" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_15_ 4" x="368" y="290" w="19" h="58" pX="0.5" pY="0.5" oX="56" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_16_ 5" x="344" y="464" w="54" h="20" pX="0.5" pY="0.5" oX="45" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_17_ 5" x="152" y="481" w="54" h="21" pX="0.5" pY="0.5" oX="45" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_18_ 5" x="344" y="443" w="55" h="21" pX="0.5" pY="0.5" oX="44" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_19_ 6" x="399" y="443" w="54" h="42" pX="0.5" pY="0.5" oX="61" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_20_ 6" x="477" y="0" w="54" h="42" pX="0.5" pY="0.5" oX="61" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_21_ 6" x="470" y="171" w="54" h="42" pX="0.5" pY="0.5" oX="61" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_22_ 7" x="778" y="171" w="23" h="19" pX="0.5" pY="0.5" oX="82" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_23_ 7" x="778" y="113" w="23" h="19" pX="0.5" pY="0.5" oX="82" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle MG 2_24_ 7" x="758" y="190" w="22" h="19" pX="0.5" pY="0.5" oX="82" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Rifle 1_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle Unarmed_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_01_ 0" x="240" y="27" w="7" h="63" pX="0.5" pY="0.5" oX="62" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_02_ 0" x="227" y="27" w="7" h="63" pX="0.5" pY="0.5" oX="61" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_03_ 0" x="269" y="27" w="7" h="63" pX="0.5" pY="0.5" oX="61" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_04_ 1" x="306" y="750" w="12" h="30" pX="0.5" pY="0.5" oX="66" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_05_ 1" x="397" y="746" w="13" h="30" pX="0.5" pY="0.5" oX="65" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_06_ 1" x="731" y="721" w="27" h="31" pX="0.5" pY="0.5" oX="66" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_07_ 2" x="507" y="630" w="29" h="47" pX="0.5" pY="0.5" oX="71" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_08_ 2" x="430" y="630" w="30" h="47" pX="0.5" pY="0.5" oX="71" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_09_ 2" x="90" y="630" w="29" h="47" pX="0.5" pY="0.5" oX="71" oY="82" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_10_ 3" x="702" y="294" w="7" h="31" pX="0.5" pY="0.5" oX="91" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_11_ 3" x="702" y="502" w="7" h="30" pX="0.5" pY="0.5" oX="92" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_12_ 3" x="379" y="374" w="7" h="31" pX="0.5" pY="0.5" oX="92" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_13_ 4" x="411" y="114" w="20" h="56" pX="0.5" pY="0.5" oX="56" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_14_ 4" x="411" y="228" w="20" h="56" pX="0.5" pY="0.5" oX="55" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_15_ 4" x="132" y="432" w="20" h="55" pX="0.5" pY="0.5" oX="55" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_16_ 5" x="267" y="746" w="20" h="32" pX="0.5" pY="0.5" oX="78" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_17_ 5" x="326" y="746" w="20" h="31" pX="0.5" pY="0.5" oX="78" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_18_ 5" x="635" y="574" w="20" h="31" pX="0.5" pY="0.5" oX="79" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_19_ 6" x="328" y="238" w="20" h="59" pX="0.5" pY="0.5" oX="59" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_20_ 6" x="180" y="303" w="20" h="59" pX="0.5" pY="0.5" oX="59" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_21_ 6" x="308" y="305" w="20" h="60" pX="0.5" pY="0.5" oX="58" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_22_ 7" x="708" y="702" w="23" h="36" pX="0.5" pY="0.5" oX="81" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_23_ 7" x="709" y="650" w="23" h="36" pX="0.5" pY="0.5" oX="82" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle1_24_ 7" x="709" y="576" w="23" h="37" pX="0.5" pY="0.5" oX="82" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_01_ 0" x="452" y="224" w="17" h="54" pX="0.5" pY="0.5" oX="57" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_02_ 0" x="449" y="278" w="17" h="54" pX="0.5" pY="0.5" oX="57" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_03_ 0" x="513" y="42" w="17" h="54" pX="0.5" pY="0.5" oX="57" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_04_ 1" x="435" y="421" w="6" h="22" pX="0.5" pY="0.5" oX="69" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_05_ 1" x="630" y="29" w="6" h="22" pX="0.5" pY="0.5" oX="69" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_06_ 1" x="621" y="78" w="7" h="22" pX="0.5" pY="0.5" oX="68" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_07_ 2" x="496" y="42" w="17" h="54" pX="0.5" pY="0.5" oX="74" oY="80" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_08_ 2" x="529" y="106" w="17" h="53" pX="0.5" pY="0.5" oX="74" oY="80" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_09_ 2" x="466" y="278" w="17" h="54" pX="0.5" pY="0.5" oX="75" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_10_ 3" x="375" y="677" w="14" h="42" pX="0.5" pY="0.5" oX="89" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_11_ 3" x="555" y="677" w="14" h="42" pX="0.5" pY="0.5" oX="89" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_12_ 3" x="435" y="677" w="14" h="41" pX="0.5" pY="0.5" oX="89" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_13_ 4" x="583" y="314" w="13" h="48" pX="0.5" pY="0.5" oX="60" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_14_ 4" x="582" y="390" w="13" h="48" pX="0.5" pY="0.5" oX="60" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_15_ 4" x="595" y="390" w="14" h="48" pX="0.5" pY="0.5" oX="59" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_16_ 5" x="702" y="138" w="12" h="39" pX="0.5" pY="0.5" oX="87" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_17_ 5" x="696" y="428" w="11" h="39" pX="0.5" pY="0.5" oX="87" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_18_ 5" x="703" y="67" w="11" h="39" pX="0.5" pY="0.5" oX="87" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_19_ 6" x="286" y="357" w="22" h="57" pX="0.5" pY="0.5" oX="61" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_20_ 6" x="387" y="289" w="21" h="57" pX="0.5" pY="0.5" oX="62" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_21_ 6" x="408" y="289" w="21" h="57" pX="0.5" pY="0.5" oX="62" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_22_ 7" x="736" y="613" w="12" h="35" pX="0.5" pY="0.5" oX="88" oY="91" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_23_ 7" x="748" y="473" w="13" h="35" pX="0.5" pY="0.5" oX="88" oY="91" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle2_24_ 7" x="748" y="543" w="12" h="34" pX="0.5" pY="0.5" oX="89" oY="91" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_01_ 0" x="347" y="0" w="19" h="58" pX="0.5" pY="0.5" oX="48" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_02_ 0" x="348" y="238" w="19" h="59" pX="0.5" pY="0.5" oX="48" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_03_ 0" x="328" y="297" w="19" h="59" pX="0.5" pY="0.5" oX="48" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_04_ 1" x="500" y="719" w="14" h="27" pX="0.5" pY="0.5" oX="60" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_05_ 1" x="541" y="719" w="15" h="27" pX="0.5" pY="0.5" oX="59" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_06_ 1" x="743" y="341" w="16" h="27" pX="0.5" pY="0.5" oX="59" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_07_ 2" x="411" y="0" w="25" h="57" pX="0.5" pY="0.5" oX="76" oY="82" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_08_ 2" x="386" y="232" w="25" h="57" pX="0.5" pY="0.5" oX="76" oY="82" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_09_ 2" x="386" y="348" w="25" h="57" pX="0.5" pY="0.5" oX="76" oY="82" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_10_ 3" x="743" y="508" w="18" h="35" pX="0.5" pY="0.5" oX="94" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_11_ 3" x="743" y="209" w="18" h="34" pX="0.5" pY="0.5" oX="94" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_12_ 3" x="743" y="243" w="18" h="34" pX="0.5" pY="0.5" oX="94" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_13_ 4" x="636" y="93" w="28" h="46" pX="0.5" pY="0.5" oX="44" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_14_ 4" x="264" y="630" w="28" h="47" pX="0.5" pY="0.5" oX="44" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_15_ 4" x="163" y="592" w="28" h="47" pX="0.5" pY="0.5" oX="44" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_16_ 5" x="177" y="720" w="10" h="25" pX="0.5" pY="0.5" oX="86" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_17_ 5" x="583" y="719" w="10" h="25" pX="0.5" pY="0.5" oX="86" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_18_ 5" x="460" y="722" w="10" h="24" pX="0.5" pY="0.5" oX="86" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_19_ 6" x="276" y="27" w="13" h="63" pX="0.5" pY="0.5" oX="65" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_20_ 6" x="165" y="224" w="14" h="63" pX="0.5" pY="0.5" oX="65" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_21_ 6" x="226" y="110" w="13" h="63" pX="0.5" pY="0.5" oX="66" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_22_ 7" x="636" y="47" w="28" h="46" pX="0.5" pY="0.5" oX="88" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_23_ 7" x="675" y="92" w="28" h="46" pX="0.5" pY="0.5" oX="88" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle3_24_ 7" x="646" y="385" w="28" h="45" pX="0.5" pY="0.5" oX="88" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle4_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle5_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_01_ 0" x="115" y="160" w="21" h="64" pX="0.5" pY="0.5" oX="62" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_02_ 0" x="189" y="155" w="21" h="64" pX="0.5" pY="0.5" oX="62" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_03_ 0" x="108" y="224" w="21" h="63" pX="0.5" pY="0.5" oX="62" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_04_ 1" x="583" y="605" w="29" h="47" pX="0.5" pY="0.5" oX="42" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_05_ 1" x="636" y="0" w="29" h="47" pX="0.5" pY="0.5" oX="42" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_06_ 1" x="554" y="630" w="29" h="47" pX="0.5" pY="0.5" oX="42" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_07_ 2" x="707" y="255" w="30" h="39" pX="0.5" pY="0.5" oX="88" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_08_ 2" x="707" y="216" w="30" h="39" pX="0.5" pY="0.5" oX="88" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_09_ 2" x="707" y="177" w="30" h="39" pX="0.5" pY="0.5" oX="88" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_10_ 3" x="364" y="726" w="11" h="20" pX="0.5" pY="0.5" oX="87" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_11_ 3" x="761" y="209" w="11" h="20" pX="0.5" pY="0.5" oX="87" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_12_ 3" x="441" y="421" w="11" h="20" pX="0.5" pY="0.5" oX="87" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_13_ 4" x="308" y="183" w="18" h="61" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_14_ 4" x="308" y="244" w="19" h="61" pX="0.5" pY="0.5" oX="49" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_15_ 4" x="44" y="314" w="19" h="61" pX="0.5" pY="0.5" oX="49" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_16_ 5" x="761" y="76" w="17" h="23" pX="0.5" pY="0.5" oX="56" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_17_ 5" x="761" y="122" w="17" h="23" pX="0.5" pY="0.5" oX="56" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_18_ 5" x="761" y="145" w="16" h="23" pX="0.5" pY="0.5" oX="56" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_19_ 6" x="427" y="170" w="28" h="54" pX="0.5" pY="0.5" oX="76" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_20_ 6" x="248" y="431" w="28" h="55" pX="0.5" pY="0.5" oX="76" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_21_ 6" x="490" y="294" w="28" h="54" pX="0.5" pY="0.5" oX="76" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_22_ 7" x="769" y="317" w="13" h="17" pX="0.5" pY="0.5" oX="97" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_23_ 7" x="782" y="317" w="13" h="17" pX="0.5" pY="0.5" oX="98" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Idle6_24_ 7" x="778" y="300" w="13" h="17" pX="0.5" pY="0.5" oX="98" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Instrument_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Interact_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_01_ 0" x="103" y="678" w="24" h="43" pX="0.5" pY="0.5" oX="41" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_02_ 0" x="593" y="675" w="41" h="35" pX="0.5" pY="0.5" oX="23" oY="53" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_03_ 0" x="580" y="366" w="48" h="24" pX="0.5" pY="0.5" oX="13" oY="46" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_04_ 1" x="778" y="269" w="19" h="18" pX="0.5" pY="0.5" oX="79" oY="55" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_05_ 1" x="183" y="763" w="24" h="16" pX="0.5" pY="0.5" oX="90" oY="36" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_06_ 1" x="217" y="655" w="47" h="19" pX="0.5" pY="0.5" oX="86" oY="17" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_07_ 2" x="97" y="307" w="19" h="60" pX="0.5" pY="0.5" oX="74" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_08_ 2" x="263" y="235" w="23" h="62" pX="0.5" pY="0.5" oX="59" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_09_ 2" x="77" y="374" w="35" h="57" pX="0.5" pY="0.5" oX="49" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_10_ 3" x="695" y="333" w="20" h="38" pX="0.5" pY="0.5" oX="99" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_11_ 3" x="662" y="430" w="34" h="44" pX="0.5" pY="0.5" oX="101" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_12_ 3" x="262" y="580" w="41" h="50" pX="0.5" pY="0.5" oX="98" oY="48" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_13_ 4" x="410" y="719" w="13" h="30" pX="0.5" pY="0.5" oX="58" oY="62" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_14_ 4" x="761" y="248" w="11" h="19" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_15_ 4" x="648" y="273" w="14" h="44" pX="0.5" pY="0.5" oX="60" oY="0" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_16_ 5" x="593" y="710" w="22" h="36" pX="0.5" pY="0.5" oX="93" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_17_ 5" x="144" y="690" w="43" h="30" pX="0.5" pY="0.5" oX="96" oY="47" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_18_ 5" x="470" y="213" w="54" h="27" pX="0.5" pY="0.5" oX="95" oY="37" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_19_ 6" x="448" y="338" w="22" h="54" pX="0.5" pY="0.5" oX="51" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_20_ 6" x="652" y="339" w="43" h="45" pX="0.5" pY="0.5" oX="27" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_21_ 6" x="463" y="136" w="54" h="35" pX="0.5" pY="0.5" oX="17" oY="53" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_22_ 7" x="350" y="176" w="15" h="58" pX="0.5" pY="0.5" oX="93" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_23_ 7" x="293" y="182" w="13" h="53" pX="0.5" pY="0.5" oX="92" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Jump_24_ 7" x="455" y="171" w="9" h="53" pX="0.5" pY="0.5" oX="93" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Kneel_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Merchant_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Kneel_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Pray Standing_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Rest_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_01_ 0" x="210" y="155" w="16" h="63" pX="0.5" pY="0.5" oX="53" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_02_ 0" x="116" y="307" w="20" h="60" pX="0.5" pY="0.5" oX="61" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_03_ 0" x="0" y="580" w="39" h="50" pX="0.5" pY="0.5" oX="62" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_04_ 0" x="0" y="542" w="52" h="38" pX="0.5" pY="0.5" oX="64" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_05_ 0" x="156" y="362" w="56" h="34" pX="0.5" pY="0.5" oX="66" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_06_ 0" x="581" y="442" w="44" h="48" pX="0.5" pY="0.5" oX="62" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_07_ 0" x="49" y="225" w="18" h="64" pX="0.5" pY="0.5" oX="60" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_08_ 0" x="346" y="59" w="15" h="59" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_09_ 1" x="506" y="751" w="28" h="29" pX="0.5" pY="0.5" oX="61" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_10_ 1" x="336" y="626" w="47" h="31" pX="0.5" pY="0.5" oX="24" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_11_ 1" x="587" y="204" w="49" h="41" pX="0.5" pY="0.5" oX="21" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_12_ 1" x="662" y="139" w="40" h="46" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_13_ 1" x="80" y="580" w="33" h="50" pX="0.5" pY="0.5" oX="32" oY="55" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_14_ 1" x="612" y="605" w="44" h="46" pX="0.5" pY="0.5" oX="23" oY="54" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_15_ 1" x="778" y="89" w="21" h="24" pX="0.5" pY="0.5" oX="47" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_16_ 1" x="760" y="326" w="9" h="13" pX="0.5" pY="0.5" oX="83" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_17_ 2" x="368" y="232" w="18" h="58" pX="0.5" pY="0.5" oX="71" oY="80" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_18_ 2" x="528" y="367" w="52" h="24" pX="0.5" pY="0.5" oX="83" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_19_ 2" x="387" y="562" w="47" h="18" pX="0.5" pY="0.5" oX="91" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_20_ 2" x="333" y="673" w="42" h="19" pX="0.5" pY="0.5" oX="92" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_21_ 2" x="268" y="414" w="40" h="13" pX="0.5" pY="0.5" oX="100" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_22_ 2" x="616" y="322" w="46" h="17" pX="0.5" pY="0.5" oX="94" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_23_ 2" x="163" y="542" w="29" h="50" pX="0.5" pY="0.5" oX="83" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_24_ 2" x="530" y="53" w="22" h="53" pX="0.5" pY="0.5" oX="74" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_25_ 3" x="152" y="432" w="16" h="11" pX="0.5" pY="0.5" oX="88" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_26_ 3" x="443" y="163" w="7" h="7" pX="0.5" pY="0.5" oX="90" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_27_ 3" x="667" y="663" w="29" h="40" pX="0.5" pY="0.5" oX="67" oY="27" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_28_ 3" x="139" y="502" w="53" h="40" pX="0.5" pY="0.5" oX="47" oY="21" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_29_ 3" x="587" y="0" w="49" h="29" pX="0.5" pY="0.5" oX="38" oY="25" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_30_ 3" x="375" y="719" w="29" h="27" pX="0.5" pY="0.5" oX="60" oY="28" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_31_ 3" x="579" y="542" w="8" h="10" pX="0.5" pY="0.5" oX="88" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_32_ 3" x="260" y="720" w="12" h="26" pX="0.5" pY="0.5" oX="84" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_33_ 4" x="24" y="678" w="34" h="44" pX="0.5" pY="0.5" oX="36" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_34_ 4" x="308" y="374" w="28" h="57" pX="0.5" pY="0.5" oX="39" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_35_ 4" x="350" y="118" w="15" h="58" pX="0.5" pY="0.5" oX="51" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_36_ 4" x="431" y="111" w="12" h="54" pX="0.5" pY="0.5" oX="57" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_37_ 4" x="470" y="332" w="20" h="54" pX="0.5" pY="0.5" oX="57" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_38_ 4" x="274" y="173" w="19" h="62" pX="0.5" pY="0.5" oX="45" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_39_ 4" x="525" y="449" w="28" h="53" pX="0.5" pY="0.5" oX="41" oY="62" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_40_ 4" x="758" y="175" w="20" h="15" pX="0.5" pY="0.5" oX="51" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_41_ 5" x="144" y="678" w="10" h="12" pX="0.5" pY="0.5" oX="86" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_42_ 5" x="207" y="396" w="6" h="10" pX="0.5" pY="0.5" oX="86" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_43_ 5" x="291" y="518" w="52" h="9" pX="0.5" pY="0.5" oX="22" oY="53" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_44_ 5" x="122" y="287" w="55" h="16" pX="0.5" pY="0.5" oX="18" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_45_ 5" x="343" y="521" w="52" h="21" pX="0.5" pY="0.5" oX="20" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_46_ 5" x="156" y="396" w="51" h="17" pX="0.5" pY="0.5" oX="22" oY="54" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_47_ 5" x="289" y="27" w="4" h="3" pX="0.5" pY="0.5" oX="86" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_48_ 5" x="191" y="603" w="12" h="26" pX="0.5" pY="0.5" oX="85" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_49_ 6" x="0" y="314" w="24" h="61" pX="0.5" pY="0.5" oX="64" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_50_ 6" x="397" y="519" w="52" h="43" pX="0.5" pY="0.5" oX="68" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_51_ 6" x="226" y="90" w="63" h="20" pX="0.5" pY="0.5" oX="75" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_52_ 6" x="179" y="282" w="61" h="21" pX="0.5" pY="0.5" oX="77" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_53_ 6" x="62" y="289" w="60" h="18" pX="0.5" pY="0.5" oX="83" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_54_ 6" x="227" y="0" w="63" h="19" pX="0.5" pY="0.5" oX="73" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_55_ 6" x="286" y="235" w="22" h="61" pX="0.5" pY="0.5" oX="70" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_56_ 6" x="223" y="303" w="17" h="59" pX="0.5" pY="0.5" oX="65" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_57_ 7" x="460" y="664" w="43" h="26" pX="0.5" pY="0.5" oX="81" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_58_ 7" x="778" y="0" w="25" h="23" pX="0.5" pY="0.5" oX="97" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_59_ 7" x="273" y="719" w="31" h="18" pX="0.5" pY="0.5" oX="94" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_60_ 7" x="552" y="544" w="19" h="8" pX="0.5" pY="0.5" oX="98" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_61_ 7" x="743" y="0" w="18" h="35" pX="0.5" pY="0.5" oX="87" oY="33" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_62_ 7" x="708" y="738" w="23" h="13" pX="0.5" pY="0.5" oX="96" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_63_ 7" x="306" y="719" w="20" h="31" pX="0.5" pY="0.5" oX="96" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Run_64_ 7" x="634" y="438" w="28" h="46" pX="0.5" pY="0.5" oX="80" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Search_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and tinker_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit and write_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sit on ground_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sitting_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sleep_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_01_ 0" x="0" y="160" w="18" h="65" pX="0.5" pY="0.5" oX="58" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_02_ 0" x="50" y="160" w="21" h="65" pX="0.5" pY="0.5" oX="55" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_03_ 0" x="74" y="224" w="23" h="63" pX="0.5" pY="0.5" oX="53" oY="54" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_04_ 0" x="26" y="488" w="25" h="53" pX="0.5" pY="0.5" oX="51" oY="51" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_05_ 0" x="712" y="613" w="24" h="37" pX="0.5" pY="0.5" oX="51" oY="51" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_06_ 0" x="447" y="580" w="25" h="49" pX="0.5" pY="0.5" oX="51" oY="51" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_07_ 0" x="0" y="375" w="24" h="57" pX="0.5" pY="0.5" oX="51" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_08_ 0" x="71" y="160" w="21" h="64" pX="0.5" pY="0.5" oX="54" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_09_ 1" x="217" y="630" w="47" h="25" pX="0.5" pY="0.5" oX="28" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_10_ 1" x="424" y="718" w="36" h="25" pX="0.5" pY="0.5" oX="40" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_11_ 1" x="514" y="719" w="27" h="24" pX="0.5" pY="0.5" oX="50" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_12_ 1" x="743" y="309" w="17" h="32" pX="0.5" pY="0.5" oX="74" oY="50" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_13_ 1" x="94" y="746" w="13" h="33" pX="0.5" pY="0.5" oX="88" oY="49" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_14_ 1" x="778" y="229" w="20" h="20" pX="0.5" pY="0.5" oX="73" oY="50" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_15_ 1" x="0" y="746" w="26" h="33" pX="0.5" pY="0.5" oX="64" oY="50" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_16_ 1" x="69" y="722" w="31" h="24" pX="0.5" pY="0.5" oX="45" oY="60" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_17_ 2" x="397" y="485" w="53" h="34" pX="0.5" pY="0.5" oX="85" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_18_ 2" x="656" y="545" w="45" h="42" pX="0.5" pY="0.5" oX="81" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_19_ 2" x="0" y="630" w="37" h="48" pX="0.5" pY="0.5" oX="79" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_20_ 2" x="387" y="58" w="19" h="57" pX="0.5" pY="0.5" oX="75" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_21_ 2" x="389" y="172" w="20" h="57" pX="0.5" pY="0.5" oX="65" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_22_ 2" x="328" y="0" w="19" h="59" pX="0.5" pY="0.5" oX="73" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_23_ 2" x="0" y="488" w="26" h="54" pX="0.5" pY="0.5" oX="76" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_24_ 2" x="662" y="275" w="40" h="45" pX="0.5" pY="0.5" oX="80" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_25_ 3" x="61" y="769" w="13" h="11" pX="0.5" pY="0.5" oX="97" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_26_ 3" x="778" y="287" w="18" h="13" pX="0.5" pY="0.5" oX="96" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_27_ 3" x="239" y="724" w="21" h="21" pX="0.5" pY="0.5" oX="97" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_28_ 3" x="634" y="663" w="24" h="41" pX="0.5" pY="0.5" oX="97" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_29_ 3" x="489" y="477" w="24" h="53" pX="0.5" pY="0.5" oX="97" oY="61" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_30_ 3" x="0" y="678" w="24" h="44" pX="0.5" pY="0.5" oX="97" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_31_ 3" x="737" y="106" w="24" h="35" pX="0.5" pY="0.5" oX="97" oY="57" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_32_ 3" x="778" y="210" w="20" h="19" pX="0.5" pY="0.5" oX="97" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_33_ 4" x="541" y="552" w="46" h="50" pX="0.5" pY="0.5" oX="32" oY="55" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_34_ 4" x="292" y="630" w="41" h="47" pX="0.5" pY="0.5" oX="38" oY="54" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_35_ 4" x="662" y="185" w="35" h="45" pX="0.5" pY="0.5" oX="44" oY="53" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_36_ 4" x="740" y="67" w="21" h="34" pX="0.5" pY="0.5" oX="59" oY="54" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_37_ 4" x="139" y="487" w="7" h="15" pX="0.5" pY="0.5" oX="75" oY="56" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_38_ 4" x="444" y="746" w="17" h="30" pX="0.5" pY="0.5" oX="63" oY="55" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_39_ 4" x="714" y="67" w="26" h="39" pX="0.5" pY="0.5" oX="53" oY="53" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_40_ 4" x="665" y="0" w="38" h="46" pX="0.5" pY="0.5" oX="41" oY="54" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_41_ 5" x="344" y="431" w="12" h="12" pX="0.5" pY="0.5" oX="65" oY="45" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_42_ 5" x="328" y="59" w="2" h="2" pX="0.5" pY="0.5" oX="75" oY="48" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_43_ 5" x="258" y="236" w="5" h="10" pX="0.5" pY="0.5" oX="95" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_44_ 5" x="714" y="145" w="12" h="32" pX="0.5" pY="0.5" oX="96" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_45_ 5" x="717" y="0" w="26" h="40" pX="0.5" pY="0.5" oX="96" oY="54" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_46_ 5" x="745" y="403" w="16" h="35" pX="0.5" pY="0.5" oX="96" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_47_ 5" x="698" y="722" w="10" h="26" pX="0.5" pY="0.5" oX="95" oY="52" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_48_ 5" x="327" y="120" w="3" h="2" pX="0.5" pY="0.5" oX="95" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_49_ 6" x="155" y="160" w="23" h="64" pX="0.5" pY="0.5" oX="81" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_50_ 6" x="208" y="59" w="18" h="65" pX="0.5" pY="0.5" oX="78" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_51_ 6" x="0" y="225" w="20" h="64" pX="0.5" pY="0.5" oX="73" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_52_ 6" x="330" y="179" w="20" h="59" pX="0.5" pY="0.5" oX="64" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_53_ 6" x="386" y="580" w="27" h="50" pX="0.5" pY="0.5" oX="50" oY="62" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_54_ 6" x="367" y="58" w="20" h="58" pX="0.5" pY="0.5" oX="61" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_55_ 6" x="222" y="218" w="18" h="63" pX="0.5" pY="0.5" oX="68" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_56_ 6" x="136" y="160" w="19" h="64" pX="0.5" pY="0.5" oX="75" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_57_ 7" x="656" y="484" w="46" h="23" pX="0.5" pY="0.5" oX="94" oY="59" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_58_ 7" x="285" y="692" w="42" h="27" pX="0.5" pY="0.5" oX="92" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_59_ 7" x="702" y="467" w="38" h="35" pX="0.5" pY="0.5" oX="90" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_60_ 7" x="553" y="0" w="25" h="51" pX="0.5" pY="0.5" oX="88" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_61_ 7" x="308" y="122" w="11" h="61" pX="0.5" pY="0.5" oX="86" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_62_ 7" x="531" y="0" w="22" h="53" pX="0.5" pY="0.5" oX="87" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_63_ 7" x="58" y="678" w="30" h="44" pX="0.5" pY="0.5" oX="89" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sneak_64_ 7" x="460" y="690" w="39" h="32" pX="0.5" pY="0.5" oX="91" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Sweeping_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Tapping Foot_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_01_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_02_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_03_ 0" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_04_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_05_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_06_ 1" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_07_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_08_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_09_ 2" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_10_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_11_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_12_ 3" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_13_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_14_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_15_ 4" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_16_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_17_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_18_ 5" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_19_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_20_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_21_ 6" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_22_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_23_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Throw_24_ 7" x="0" y="0" w="160" h="160" pX="0.5" pY="0.5"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_01_ 0" x="97" y="224" w="11" h="63" pX="0.5" pY="0.5" oX="62" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_02_ 0" x="263" y="173" w="11" h="62" pX="0.5" pY="0.5" oX="62" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_03_ 0" x="317" y="0" w="11" h="61" pX="0.5" pY="0.5" oX="62" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_04_ 1" x="739" y="175" w="19" h="34" pX="0.5" pY="0.5" oX="55" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_05_ 1" x="743" y="577" w="17" h="34" pX="0.5" pY="0.5" oX="57" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_06_ 1" x="26" y="746" w="16" h="33" pX="0.5" pY="0.5" oX="58" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_07_ 2" x="628" y="486" w="27" h="46" pX="0.5" pY="0.5" oX="78" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_08_ 2" x="636" y="139" w="25" h="46" pX="0.5" pY="0.5" oX="78" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_09_ 2" x="628" y="339" w="24" h="46" pX="0.5" pY="0.5" oX="78" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_10_ 3" x="463" y="109" w="9" h="27" pX="0.5" pY="0.5" oX="88" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_11_ 3" x="560" y="751" w="10" h="29" pX="0.5" pY="0.5" oX="88" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_12_ 3" x="661" y="721" w="10" h="30" pX="0.5" pY="0.5" oX="88" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_13_ 4" x="24" y="375" w="19" h="57" pX="0.5" pY="0.5" oX="53" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_14_ 4" x="87" y="432" w="18" h="56" pX="0.5" pY="0.5" oX="54" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_15_ 4" x="70" y="432" w="17" h="56" pX="0.5" pY="0.5" oX="55" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_16_ 5" x="701" y="650" w="8" h="13" pX="0.5" pY="0.5" oX="86" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_17_ 5" x="668" y="752" w="23" h="28" pX="0.5" pY="0.5" oX="71" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_18_ 5" x="645" y="752" w="23" h="28" pX="0.5" pY="0.5" oX="71" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_19_ 6" x="357" y="374" w="22" h="57" pX="0.5" pY="0.5" oX="67" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_20_ 6" x="389" y="0" w="22" h="57" pX="0.5" pY="0.5" oX="66" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_21_ 6" x="406" y="57" w="22" h="57" pX="0.5" pY="0.5" oX="66" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_22_ 7" x="597" y="751" w="21" h="29" pX="0.5" pY="0.5" oX="86" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_23_ 7" x="346" y="746" w="20" h="31" pX="0.5" pY="0.5" oX="86" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Use Item_24_ 7" x="287" y="746" w="19" h="32" pX="0.5" pY="0.5" oX="86" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_01_ 0" x="67" y="225" w="7" h="64" pX="0.5" pY="0.5" oX="63" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_02_ 0" x="178" y="155" w="11" h="64" pX="0.5" pY="0.5" oX="66" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_03_ 0" x="18" y="160" w="13" h="65" pX="0.5" pY="0.5" oX="66" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_04_ 0" x="293" y="0" w="24" h="61" pX="0.5" pY="0.5" oX="64" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_05_ 0" x="197" y="59" w="11" h="66" pX="0.5" pY="0.5" oX="65" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_06_ 0" x="129" y="224" w="10" h="63" pX="0.5" pY="0.5" oX="58" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_07_ 0" x="20" y="225" w="7" h="64" pX="0.5" pY="0.5" oX="64" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_08_ 0" x="320" y="61" w="7" h="61" pX="0.5" pY="0.5" oX="62" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_09_ 1" x="709" y="294" w="15" h="39" pX="0.5" pY="0.5" oX="74" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_10_ 1" x="389" y="229" w="2" h="3" pX="0.5" pY="0.5" oX="68" oY="88" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_11_ 1" x="715" y="370" w="20" h="37" pX="0.5" pY="0.5" oX="54" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_12_ 1" x="119" y="639" w="47" h="39" pX="0.5" pY="0.5" oX="27" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_13_ 1" x="243" y="746" w="24" h="32" pX="0.5" pY="0.5" oX="49" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_14_ 1" x="42" y="746" w="19" h="33" pX="0.5" pY="0.5" oX="71" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_15_ 1" x="701" y="579" w="8" h="25" pX="0.5" pY="0.5" oX="85" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_16_ 1" x="724" y="332" w="11" h="38" pX="0.5" pY="0.5" oX="82" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_17_ 2" x="528" y="315" w="21" h="52" pX="0.5" pY="0.5" oX="68" oY="80" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_18_ 2" x="191" y="630" w="26" h="47" pX="0.5" pY="0.5" oX="78" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_19_ 2" x="665" y="46" w="32" h="46" pX="0.5" pY="0.5" oX="82" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_20_ 2" x="422" y="580" w="25" h="49" pX="0.5" pY="0.5" oX="82" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_21_ 2" x="553" y="391" w="29" h="51" pX="0.5" pY="0.5" oX="78" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_22_ 2" x="49" y="432" w="21" h="56" pX="0.5" pY="0.5" oX="70" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_23_ 2" x="477" y="42" w="19" h="54" pX="0.5" pY="0.5" oX="65" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_24_ 2" x="546" y="106" w="21" h="52" pX="0.5" pY="0.5" oX="61" oY="80" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_25_ 3" x="735" y="332" w="8" h="36" pX="0.5" pY="0.5" oX="90" oY="82" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_26_ 3" x="740" y="473" w="8" h="26" pX="0.5" pY="0.5" oX="88" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_27_ 3" x="336" y="527" w="7" h="12" pX="0.5" pY="0.5" oX="92" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_28_ 3" x="376" y="657" w="7" h="16" pX="0.5" pY="0.5" oX="92" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_29_ 3" x="715" y="333" w="9" h="25" pX="0.5" pY="0.5" oX="94" oY="69" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_30_ 3" x="615" y="710" w="13" h="36" pX="0.5" pY="0.5" oX="92" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_31_ 3" x="389" y="677" w="9" h="42" pX="0.5" pY="0.5" oX="91" oY="86" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_32_ 3" x="636" y="229" w="9" h="44" pX="0.5" pY="0.5" oX="92" oY="86" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_33_ 4" x="579" y="102" w="8" h="49" pX="0.5" pY="0.5" oX="64" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_34_ 4" x="293" y="122" w="15" h="60" pX="0.5" pY="0.5" oX="57" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_35_ 4" x="247" y="27" w="22" h="63" pX="0.5" pY="0.5" oX="47" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_36_ 4" x="286" y="296" w="22" h="61" pX="0.5" pY="0.5" oX="47" oY="65" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_37_ 4" x="258" y="297" w="28" h="61" pX="0.5" pY="0.5" oX="44" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_38_ 4" x="254" y="539" w="11" h="41" pX="0.5" pY="0.5" oX="62" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_39_ 4" x="760" y="309" w="9" h="17" pX="0.5" pY="0.5" oX="64" oY="72" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_40_ 4" x="701" y="613" w="11" h="37" pX="0.5" pY="0.5" oX="62" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_41_ 5" x="260" y="677" w="13" h="43" pX="0.5" pY="0.5" oX="85" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_42_ 5" x="478" y="722" w="22" h="29" pX="0.5" pY="0.5" oX="69" oY="68" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_43_ 5" x="318" y="750" w="8" h="22" pX="0.5" pY="0.5" oX="63" oY="63" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_44_ 5" x="778" y="249" w="19" h="20" pX="0.5" pY="0.5" oX="54" oY="58" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_45_ 5" x="778" y="47" w="24" h="18" pX="0.5" pY="0.5" oX="66" oY="64" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_46_ 5" x="759" y="341" w="16" h="26" pX="0.5" pY="0.5" oX="79" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_47_ 5" x="743" y="35" w="12" h="32" pX="0.5" pY="0.5" oX="84" oY="67" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_48_ 5" x="609" y="390" w="14" h="48" pX="0.5" pY="0.5" oX="86" oY="66" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_49_ 6" x="179" y="219" w="18" h="63" pX="0.5" pY="0.5" oX="61" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_50_ 6" x="411" y="346" w="23" h="56" pX="0.5" pY="0.5" oX="68" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_51_ 6" x="51" y="488" w="38" h="53" pX="0.5" pY="0.5" oX="73" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_52_ 6" x="587" y="158" w="49" h="46" pX="0.5" pY="0.5" oX="72" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_53_ 6" x="490" y="348" w="38" h="54" pX="0.5" pY="0.5" oX="70" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_54_ 6" x="158" y="303" w="22" h="59" pX="0.5" pY="0.5" oX="62" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_55_ 6" x="347" y="297" w="21" h="58" pX="0.5" pY="0.5" oX="63" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_56_ 6" x="121" y="488" w="18" h="53" pX="0.5" pY="0.5" oX="61" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_57_ 7" x="469" y="240" w="10" h="38" pX="0.5" pY="0.5" oX="85" oY="89" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_58_ 7" x="230" y="746" w="13" h="32" pX="0.5" pY="0.5" oX="90" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_59_ 7" x="563" y="602" w="17" h="28" pX="0.5" pY="0.5" oX="93" oY="74" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_60_ 7" x="761" y="99" w="15" h="23" pX="0.5" pY="0.5" oX="94" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_61_ 7" x="778" y="65" w="20" h="24" pX="0.5" pY="0.5" oX="92" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_62_ 7" x="127" y="678" w="17" h="43" pX="0.5" pY="0.5" oX="88" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_63_ 7" x="270" y="358" w="12" h="56" pX="0.5" pY="0.5" oX="80" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Walk_64_ 7" x="552" y="53" w="17" h="51" pX="0.5" pY="0.5" oX="81" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_01_ 0" x="291" y="528" w="10" h="52" pX="0.5" pY="0.5" oX="62" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_02_ 0" x="540" y="159" w="11" h="52" pX="0.5" pY="0.5" oX="64" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_03_ 0" x="569" y="51" w="15" h="51" pX="0.5" pY="0.5" oX="64" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_04_ 1" x="410" y="749" w="13" h="30" pX="0.5" pY="0.5" oX="62" oY="84" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_05_ 1" x="700" y="371" w="13" h="36" pX="0.5" pY="0.5" oX="61" oY="77" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_06_ 1" x="729" y="426" w="13" h="37" pX="0.5" pY="0.5" oX="61" oY="76" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_07_ 2" x="521" y="553" w="20" h="49" pX="0.5" pY="0.5" oX="78" oY="84" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_08_ 2" x="528" y="391" w="21" h="51" pX="0.5" pY="0.5" oX="79" oY="80" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_09_ 2" x="472" y="477" w="17" h="53" pX="0.5" pY="0.5" oX="82" oY="78" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_10_ 3" x="616" y="275" w="8" h="46" pX="0.5" pY="0.5" oX="90" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_11_ 3" x="636" y="185" w="8" h="44" pX="0.5" pY="0.5" oX="88" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_12_ 3" x="226" y="173" w="9" h="45" pX="0.5" pY="0.5" oX="87" oY="70" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_13_ 4" x="192" y="553" w="11" h="50" pX="0.5" pY="0.5" oX="60" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_14_ 4" x="203" y="580" w="9" h="50" pX="0.5" pY="0.5" oX="62" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_15_ 4" x="628" y="275" w="8" h="47" pX="0.5" pY="0.5" oX="63" oY="73" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_16_ 5" x="658" y="663" w="9" h="41" pX="0.5" pY="0.5" oX="84" oY="71" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_17_ 5" x="778" y="132" w="21" h="23" pX="0.5" pY="0.5" oX="70" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_18_ 5" x="326" y="181" w="2" h="7" pX="0.5" pY="0.5" oX="84" oY="95" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_19_ 6" x="521" y="502" w="20" h="51" pX="0.5" pY="0.5" oX="67" oY="83" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_20_ 6" x="449" y="528" w="21" h="52" pX="0.5" pY="0.5" oX="69" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_21_ 6" x="529" y="211" w="21" h="52" pX="0.5" pY="0.5" oX="72" oY="81" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_22_ 7" x="58" y="630" w="11" h="47" pX="0.5" pY="0.5" oX="89" oY="79" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_23_ 7" x="625" y="438" w="9" h="48" pX="0.5" pY="0.5" oX="89" oY="75" oW="160" oH="160"/>
+  <sprite n="Male_WWIIAllies_3_BrenLMG_Woozy_24_ 7" x="483" y="290" w="7" h="37" pX="0.5" pY="0.5" oX="90" oY="86" oW="160" oH="160"/>
+</TextureAtlas>

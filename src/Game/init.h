@@ -27,8 +27,13 @@ namespace Init {
 
 	std::string batch = "1";
 
+    void Clear_Events() {
+        SDL_PumpEvents();
+        SDL_FlushEvents(SDL_FIRSTEVENT, SDL_LASTEVENT);
+    }
 
     void Init_World () {
+        Clear_Events();
         Collision::init_Collison();
         Init_Zone(World::zone);
         Maps::Create_Map();
@@ -36,7 +41,7 @@ namespace Init {
         Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
         UI_Spellbook::init();
         SQLite_Dialogue::Init_Dialogue();
-        Video::Run_Audio("assets/music/nature.ogg");
+//        Video::Run_Audio("assets/music/nature.ogg");
     }
 
 
