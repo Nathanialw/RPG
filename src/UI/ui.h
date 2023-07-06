@@ -3,6 +3,7 @@
 #include "camera.h"
 #include "menu.h"
 #include "spellbook.h"
+#include "ui_actionbar.h"
 
 namespace UI {
 	
@@ -408,11 +409,12 @@ namespace UI {
 	}
 
 	void Render_UI(entt::registry& zone, SDL_Renderer* renderer, Component::Camera &camera) {
-		if (bToggleCharacterUI) {
+        auto view = zone.view<Component::Input>();
+        for (auto player_ID : view) {
 
-            auto view = zone.view<Component::Input>();
-            for (auto player_ID : view)
-            {
+            Action_Bar::Render_Action_Bar(zone, camera);
+
+            if (bToggleCharacterUI) {
                 //render UI
                 Character_UI = Camera_Control::Convert_FRect_To_Scale(zone, defaultScreenPosition, camera);
                 Graphics::Render_FRect(Graphics::itsmars_Inventory, {255,255,255}, &charui, &Character_UI);

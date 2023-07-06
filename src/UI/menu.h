@@ -1,12 +1,11 @@
 #pragma once
-#include "timer.h"
-#include "graphics.h"
 #include "SDL2/SDL.h"
 #include "../SDL_FontCache.h"
 #include "base_structs.h"
 #include "events.h"
 #include "pause.h"
 #include "camera.h"
+#include "ui_elements.h"
 
 namespace Menu
 {
@@ -16,23 +15,11 @@ namespace Menu
         i2 w, h;
     };
 
-    SDL_FRect Center_Rect(Component::Camera &camera, SDL_Rect &clip) {
-        return {((Graphics::resolution.w / 2.0f) - (clip.w / 2.0f)), ((Graphics::resolution.h / 2.0f) - (clip.h / 2.0f)), (float)clip.w, (float)clip.h};
-    }
-
-    SDL_FRect Update_Scale(Component::Camera &camera, SDL_FRect textBox) {
-        textBox.x = textBox.x / camera.scale.x;
-        textBox.y = textBox.y / camera.scale.y;
-        textBox.w = textBox.w / camera.scale.x;
-        textBox.h = textBox.h / camera.scale.y;
-        return textBox;
-    }
-
     void Overlay(Component::Camera &camera)
     {
         SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_BLEND);
         SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 75);
-        SDL_FRect overlay = Update_Scale(camera, Graphics::resolution);
+        SDL_FRect overlay = UI::Update_Scale(camera, Graphics::resolution);
         SDL_RenderFillRectF(Graphics::renderer, &overlay);
     }
 
@@ -62,12 +49,12 @@ namespace Menu
     void Build_Menu(Component::Camera &camera, Menu &menu)
     {
         //        set first index
-        menu.buttons[0].size = Center_Rect(camera,  menu.buttons[0].textSurface->clip_rect);
+        menu.buttons[0].size = UI::Center_Rect(camera,  menu.buttons[0].textSurface->clip_rect);
         menu.buttons[0].size.y /= 2.0f;
         //        offset rest
         for (int i = 1; i < menu.buttons.size(); i++)
         {
-            menu.buttons[i].size = Center_Rect(camera,  menu.buttons[i].textSurface->clip_rect);
+            menu.buttons[i].size = UI::Center_Rect(camera,  menu.buttons[i].textSurface->clip_rect);
             menu.buttons[i].size.y = menu.buttons[i-1].size.y + menu.buttons[i-1].size.h + menu.spacing;;
         }
 
@@ -119,7 +106,7 @@ namespace Menu
         {
             Camera_Control::Maintain_Scale(zone, menu.buttons[i].size, camera);
             Build_Menu(camera, menu);
-            menu.buttons[i].scaledSize = Update_Scale(camera, menu.buttons[i].size);
+            menu.buttons[i].scaledSize = UI::Update_Scale(camera, menu.buttons[i].size);
 
 
             if (Mouse::FRect_inside_Screen_Cursor( menu.buttons[i].scaledSize))

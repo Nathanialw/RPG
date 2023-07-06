@@ -203,7 +203,7 @@ namespace Graphics {
         itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");
         cursor_0 = createTexture("assets/sprites/UI/cursors/cursor.png");
 
-        emptyBagIcon = createTexture("assets/sprites/UI/icon_borders/bagsSot.png"); // currently NULL
+        emptyBagIcon = createTexture("assets/sprites/UI/icon_borders/32x32_BagSlotBorder.png"); // currently NULL
         bagSlotBorder = createTexture("assets/sprites/UI/icon_borders/32x32_BagSlotBorder.png");
 
         itemBorderCommon = createTexture("assets/sprites/UI/icon_borders/frame-0-grey.png");

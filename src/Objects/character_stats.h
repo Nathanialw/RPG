@@ -66,15 +66,15 @@ namespace Character_Stats {
             auto& equipment = view.get<Item_Component::Equipment>(entity);
 
             //set character stats to base values
-            for (auto &stat : Items::statData) {
+            for (auto &stat : Item_Component::statData) {
                 if (stat.first == Item_Component::Stat::damage) {
-                    stat.second = Items::baseStatData[stat.first];
+                    stat.second = Item_Component::baseStatData[stat.first];
                 }
                 if (stat.first == Item_Component::Stat::attackSpeed) {
-                    stat.second = Items::baseStatData[stat.first];
+                    stat.second = Item_Component::baseStatData[stat.first];
                 }
                 if (stat.first == Item_Component::Stat::spellDamage) {
-                    stat.second = Items::baseStatData[stat.first];
+                    stat.second = Item_Component::baseStatData[stat.first];
                 }
             }
 
@@ -83,13 +83,13 @@ namespace Character_Stats {
                 if (item.second != Item_Component::emptyEquipSlot) {
                     auto &stats = zone.get<Item_Stats>(item.second).stats;
                     for (auto &stat: stats) {
-                        Items::statData[stat.first] += stat.second;
+                        Item_Component::statData[stat.first] += stat.second;
                     }
                 }
             }
 
             //update components from updated character stat data
-            for (auto& stat : Items::statData) {
+            for (auto& stat : Item_Component::statData) {
                 switch (stat.first) {
                     case Item_Component::Stat::damage: damage.minDamage = stat.second; damage.maxDamage = stat.second; break;
                     case Item_Component::Stat::attackSpeed: attackSpeed.period = stat.second; break;
@@ -105,15 +105,15 @@ namespace Character_Stats {
             auto& equipment = view.get<Item_Component::Equipment>(entity);
 
             //set character stats to base values
-            for (auto &stat : Items::statData) {
+            for (auto &stat : Item_Component::statData) {
                 if (stat.first == Item_Component::Stat::health) {
-                    stat.second = Items::baseStatData[stat.first];
+                    stat.second = Item_Component::baseStatData[stat.first];
                 }
                 if (stat.first == Item_Component::Stat::armor) {
-                    stat.second = Items::baseStatData[stat.first];
+                    stat.second = Item_Component::baseStatData[stat.first];
                 }
                 if (stat.first == Item_Component::Stat::piety) {
-                    stat.second = Items::baseStatData[stat.first];
+                    stat.second = Item_Component::baseStatData[stat.first];
                 }
             }
 
@@ -122,13 +122,13 @@ namespace Character_Stats {
                 if (item.second != Item_Component::emptyEquipSlot) {
                     auto &stats = zone.get<Item_Stats>(item.second).stats;
                     for (auto &stat: stats) {
-                        Items::statData[stat.first] += stat.second;
+                        Item_Component::statData[stat.first] += stat.second;
                     }
                 }
             }
 
             //update components from updated character stat data
-            for (auto& stat : Items::statData) {
+            for (auto& stat : Item_Component::statData) {
                 switch (stat.first) {
                     case Item_Component::Stat::health: health.maxHealth = stat.second; break;
                 }
@@ -152,7 +152,7 @@ namespace Character_Stats {
 			float charHeight = (20.0f / camera.scale.y);
 			float charWidth =  (10.0f / camera.scale.x);
 
-			for (auto& stat : Items::statData) {
+			for (auto& stat : Item_Component::statData) {
 //				Graphics::Surface_Data statNameData = Graphics::Load_Text_Texture(Items::statName[stat.first], black);
 
 				SDL_FRect statNameRect = statBox;
@@ -160,7 +160,7 @@ namespace Character_Stats {
 //				statNameRect.h = charHeight;
 //				statNameRect.w = Items::statName[stat.first].size() * charWidth;
 
-                FC_Draw(Graphics::fcFont, Graphics::renderer, statNameRect.x, statNameRect.y, Items::statName[stat.first].c_str());
+                FC_Draw(Graphics::fcFont, Graphics::renderer, statNameRect.x, statNameRect.y, Item_Component::statName[stat.first].c_str());
 //				Graphics::Render_FRect(statNameData.pTexture, &statNameData.k, &statNameRect);
 //				SDL_DestroyTexture(statNameData.pTexture);
 //				//SDL_RenderDrawRect(Graphics::renderer, &rowRect);
@@ -192,8 +192,8 @@ namespace Character_Stats {
 			auto& equipment = view.get<Item_Component::Equipment>(entity);
 
 			//set charcter stats to base values
-			for (auto& stat : Items::statData) {
-				stat.second = Items::baseStatData[stat.first];
+			for (auto& stat : Item_Component::statData) {
+				stat.second = Item_Component::baseStatData[stat.first];
 			}
 
 			//add equipment stats to charcter stats
@@ -201,13 +201,13 @@ namespace Character_Stats {
 				if (item.second != Item_Component::emptyEquipSlot) {
 					auto& stats = zone.get<Item_Stats>(item.second).stats;
 					for (auto& stat : stats) {
-						Items::statData[stat.first] += stat.second;
+                        Item_Component::statData[stat.first] += stat.second;
 					}
 				}
 			}
 
 			//update components from updated character stat data
-			for (auto& stat : Items::statData) {
+			for (auto& stat : Item_Component::statData) {
 				switch (stat.first) {
 				case Item_Component::Stat::damage: damage.minDamage = stat.second; damage.maxDamage = stat.second; break;
 				case Item_Component::Stat::health: health.maxHealth = stat.second; break;

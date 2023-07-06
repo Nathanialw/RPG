@@ -76,7 +76,7 @@ namespace Tooltip {
 					auto& stats = zone.get<Item_Component::Item_Stats>(item).stats;
 					auto& rarity = zone.get<Item_Component::Rarity>(item);
 					SDL_Color blue = { 51, 153, 255, 255 };
-					SDL_Color rarityColor = Items::rarityColor[rarity];
+					SDL_Color rarityColor = Item_Component::rarityColor[rarity];
 					int rows = 1 + (int)stats.size();
 
 
@@ -94,7 +94,7 @@ namespace Tooltip {
 
 					for (auto& stat : stats) {
 						//render each stat in order
-						std::string statName = Items::statName[stat.first];
+						std::string statName = Item_Component::statName[stat.first];
 						std::string statValue = std::to_string(stat.second);
 						std::string statData = statName + "    +" + statValue;
 

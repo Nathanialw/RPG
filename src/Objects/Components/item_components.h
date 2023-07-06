@@ -3,6 +3,8 @@
 #include "sstream"
 #include "map"
 
+
+
 namespace Item_Component {
 
 //    item 0 renders first
@@ -153,5 +155,21 @@ namespace Item_Component {
 
 		};
 	};
+
+    std::unordered_map<Rarity, SDL_Color>rarityColor;
+    std::unordered_map<Rarity, SDL_Texture*>rarityBorder;
+    std::unordered_map<Stat, int>baseStatData;
+    std::unordered_map<Stat, int>statData;
+    std::unordered_map<Stat, std::string>statName;
+    std::unordered_map<Item_Type, int>itemTypes;
+    std::unordered_map<Armor_Type, int>armorTypes;
+    std::unordered_map<Weapon_Type, int>weaponTypes;
+    std::unordered_map<Offhand_Type, int>offhandTypes;
+    std::unordered_map<Weapon_Material, int>weaponMaterials;
+    std::unordered_map<Weapon_Material, std::string>weaponMaterialName;
+    std::unordered_map<Weapon_Type, std::string>weaponTypeName;
+    std::unordered_map<Offhand_Type, std::string>offhandTypeName;
+    std::unordered_map<Armor_Type, std::string>ArmorTypeName;
+    std::unordered_map<Item_Type, std::string>ItemTypeName;
 }
 

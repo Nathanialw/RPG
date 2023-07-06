@@ -57,7 +57,7 @@ namespace Init {
 		TTF_Init();
 
 
-		SDL_SetRelativeMouseMode(SDL_TRUE);
+		SDL_SetRelativeMouseMode(SDL_FALSE);
 
 		Graphics::running = true;
 
