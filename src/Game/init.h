@@ -21,6 +21,7 @@
 #include "texture_packer.h"
 #include "sounds.h"
 #include "main_menu.h"
+#include "menu.h"
 
 
 namespace Init {
@@ -40,6 +41,7 @@ namespace Init {
         Character_Stats::Init_UI(World::zone);
         Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
         UI_Spellbook::init();
+        Menu::Init();
         SQLite_Dialogue::Init_Dialogue();
 //        Video::Run_Audio("assets/music/nature.ogg");
     }

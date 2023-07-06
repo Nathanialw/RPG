@@ -35,13 +35,13 @@ namespace Action_Bar {
         }
 
         SDL_Rect rect = Utilities::SDL_FRect_To_SDL_Rect(actionBar.actionBarFrame);
-        actionBar.actionBarFrame = UI::Center_Rect(camera, rect);
+        actionBar.actionBarFrame = UI::Center_Rect(camera.screen, rect);
         actionBar.actionBarFrame.y = Graphics::resolution.h - 64.0f;
     }
 
 
     void Render_Action_Bar(entt::registry &zone, Component::Camera &camera) {
-        SDL_FRect renderBarFrame = UI::Update_Scale(camera, actionBar.actionBarFrame);
+        SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar.actionBarFrame);
 
         for (int i = 0; i < 10; i++) {
             auto &icon = zone.get<Component::Icon>(actionBar.spell[i]);

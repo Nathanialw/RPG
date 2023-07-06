@@ -80,7 +80,7 @@ namespace Event_Handler {
 					case SDLK_8: Skills::Feign_Death(zone, entity); break;
 					case SDLK_9: AI::Turn_On();  break;
 					case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
-                    case SDLK_ESCAPE: Menu::Toggle(camera); break;
+                    case SDLK_ESCAPE: Menu::Toggle(); break;
                     case SDLK_p: Pause::Toggle(); break;
 					case SDLK_PLUS:  break;
 					case SDLK_MINUS: break;

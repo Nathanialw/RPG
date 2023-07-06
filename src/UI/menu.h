@@ -15,11 +15,12 @@ namespace Menu
         i2 w, h;
     };
 
+
     void Overlay(Component::Camera &camera)
     {
         SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_BLEND);
         SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 75);
-        SDL_FRect overlay = UI::Update_Scale(camera, Graphics::resolution);
+        SDL_FRect overlay = UI::Update_Scale(camera.scale, Graphics::resolution);
         SDL_RenderFillRectF(Graphics::renderer, &overlay);
     }
 
@@ -43,24 +44,25 @@ namespace Menu
         std::vector<Button> buttons;
     };
 
+
 //    stores menus, access with key
     std::unordered_map<std::string, Menu> menus;
 
-    void Build_Menu(Component::Camera &camera, Menu &menu)
+    Menu Build_Menu(Menu &menu)
     {
-        //        set first index
-        menu.buttons[0].size = UI::Center_Rect(camera,  menu.buttons[0].textSurface->clip_rect);
+        //        set first index position
+        menu.buttons[0].size = UI::Center_Rect(Graphics::resolution,  menu.buttons[0].textSurface->clip_rect);
         menu.buttons[0].size.y /= 2.0f;
-        //        offset rest
+        //        offset rest from first index
         for (int i = 1; i < menu.buttons.size(); i++)
         {
-            menu.buttons[i].size = UI::Center_Rect(camera,  menu.buttons[i].textSurface->clip_rect);
+            menu.buttons[i].size = UI::Center_Rect(Graphics::resolution,  menu.buttons[i].textSurface->clip_rect);
             menu.buttons[i].size.y = menu.buttons[i-1].size.y + menu.buttons[i-1].size.h + menu.spacing;;
         }
-
+        return menu;
     }
 
-    void Create_Menu(Component::Camera &camera) {
+    void Create_Menu() {
         Menu menu;
         std::vector<const char*>labels = {"Continue", "Exit"};
 
@@ -73,21 +75,19 @@ namespace Menu
             menu.buttons.emplace_back(button);
         }
 
-        Build_Menu(camera, menu);
+        menus["menu"] = Build_Menu(menu);
+    }
 
-        menus["menu"] = menu;
+    void Init () {
+        Create_Menu();
     }
 
 
     bool toggleMenu = false;
-    void Toggle(Component::Camera &camera)
+    void Toggle()
     {
         if (!toggleMenu)
         {
-            if (!menus.contains("menu"))
-            {
-                Create_Menu(camera);
-            }
             toggleMenu = true;
             if (!Pause::paused) { Pause::Toggle(); }
         }
@@ -104,9 +104,7 @@ namespace Menu
 
         for (int i = 0; i < menu.buttons.size(); i++)
         {
-            Camera_Control::Maintain_Scale(zone, menu.buttons[i].size, camera);
-            Build_Menu(camera, menu);
-            menu.buttons[i].scaledSize = UI::Update_Scale(camera, menu.buttons[i].size);
+            menu.buttons[i].scaledSize = UI::Update_Scale(camera.scale, menu.buttons[i].size);
 
 
             if (Mouse::FRect_inside_Screen_Cursor( menu.buttons[i].scaledSize))
@@ -163,20 +161,12 @@ namespace Menu
                 {
                     if (Events::event.key.keysym.sym == SDLK_ESCAPE)
                     {
-                        Toggle(camera);
+                        Toggle();
                         break;
                     }
                     break;
                 }
             }
-        }
-
-//      render menu
-        for (int i = 0; i < menu.buttons.size(); i++)
-        {
-//            background texture first
-//            SDL_RenderCopyF(Graphics::renderer, menu.buttons[i].backgroundTexture, NULL, &menu.buttons[i].size);
-//            SDL_RenderCopyF(Graphics::renderer, menu.buttons[i].textTexture, NULL, &listItem);
         }
         return 3;
     }
@@ -188,11 +178,11 @@ namespace Menu
         {
             Overlay(camera);
             int i = Show_Menu(zone, camera);
-            if (i == 0)
+            if (i == 0) // "continue"
             {
-                Toggle(camera);
+                Toggle();
             }
-            if (i == 1)
+            if (i == 1) // "exit"
             {
 //                exit program
                 Graphics::closeContext();

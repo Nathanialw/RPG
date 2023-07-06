@@ -1,7 +1,5 @@
 #pragma once
 #include "SDL2/SDL.h"
-#include "graphics.h"
-#include "camera.h"
 
 namespace UI {
 
@@ -11,15 +9,11 @@ namespace UI {
 		return box;
 	}
 
-    SDL_FRect Center_Rect(Component::Camera &camera, SDL_Rect &clip) {
-        return {((Graphics::resolution.w / 2.0f) - (clip.w / 2.0f)), ((Graphics::resolution.h / 2.0f) - (clip.h / 2.0f)), (float)clip.w, (float)clip.h};
+    SDL_FRect Center_Rect(SDL_FRect rect, SDL_Rect &clip) {
+        return { ((rect.w / 2.0f) - (clip.w / 2.0f)), ((rect.h / 2.0f) - (clip.h / 2.0f)), (float)clip.w, (float)clip.h };
     }
 
-    SDL_FRect Update_Scale(Component::Camera &camera, SDL_FRect textBox) {
-        textBox.x = textBox.x / camera.scale.x;
-        textBox.y = textBox.y / camera.scale.y;
-        textBox.w = textBox.w / camera.scale.x;
-        textBox.h = textBox.h / camera.scale.y;
-        return textBox;
+    SDL_FRect Update_Scale(f2 &scale, SDL_FRect &rect) {
+        return { rect.x / scale.x, rect.y / scale.y, rect.w / scale.x, rect.h / scale.y };
     }
 }
