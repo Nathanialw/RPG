@@ -220,9 +220,9 @@ namespace Create_Entities {
             if (player) {
                 health.currentHealth += 200;
                 zone.emplace<Component::Input>(entity);
-                auto &camera = zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (Graphics::resolution.w), (Graphics::resolution.h), 2.0f, 2.0f);
-                UI_Spellbook::Init_UI(camera);
-                Action_Bar::Create_Action_Bar(zone, camera);
+                SDL_DisplayMode dm;
+                SDL_GetWindowDisplayMode(Graphics::window, &dm);
+                zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (float)dm.w, (float)dm.h, 2.0f, 2.0f);
             }
             else {
                 zone.emplace<Component::Sight_Range>(entity, data.sight_radius * data.scale, position.x - (data.sight_radius / 2.0f * data.scale), position.y - (data.sight_radius / 2.0f * data.sight_radius), data.sight_radius * data.scale, data.sight_radius * data.scale);

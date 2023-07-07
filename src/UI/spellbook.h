@@ -32,13 +32,9 @@ namespace UI_Spellbook {
     SDL_FRect panelRect;
 
 
-    void init(){
-        panel = Graphics::spellbook;
-    }
-
 //    run once the camera is attached to a unit
-    void Init_UI(Component::Camera &camera){
-        panelRect = UI::Center_Rect(camera.screen, clip);
+    void Init_UI(){
+        panelRect = UI::Center_Rect(clip);
         panel = Graphics::spellbook;
     }
 

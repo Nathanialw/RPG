@@ -22,6 +22,7 @@
 #include "sounds.h"
 #include "main_menu.h"
 #include "menu.h"
+#include "world.h"
 
 
 namespace Init {
@@ -40,7 +41,8 @@ namespace Init {
         Maps::Create_Map();
         Character_Stats::Init_UI(World::zone);
         Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
-        UI_Spellbook::init();
+        UI_Spellbook::Init_UI();
+        Action_Bar::Create_Action_Bar(World::zone);
         Menu::Init();
         SQLite_Dialogue::Init_Dialogue();
 //        Video::Run_Audio("assets/music/nature.ogg");

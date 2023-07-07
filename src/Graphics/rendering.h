@@ -628,7 +628,7 @@ namespace Rendering {
 		for (auto player : focus_view) {
 			auto& camera = focus_view.get<Component::Camera>(player);
 			auto& position = focus_view.get<Component::Position>(player);
-			Camera_Control::Update_Camera_Follow(camera, position, Graphics::resolution);
+			Camera_Control::Update_Camera_Follow(camera, position);
 			Update_Cursor(camera);
 		}
 	}

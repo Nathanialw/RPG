@@ -184,6 +184,14 @@ namespace Event_Handler {
                     //	if (event.jaxis.axis == 0) {
                     //	std::cout << event.jaxis.value << std::endl;
                     //	}
+                    if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
+//                        recenter camera on player
+
+
+                        Action_Bar::Create_Action_Bar(zone);
+                        Menu::Create_Menu();
+
+                    }
                 }
             }
         }

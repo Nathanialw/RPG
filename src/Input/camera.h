@@ -1,29 +1,30 @@
 #pragma once
 #include "entt/entt.hpp"
 #include <SDL2/SDL.h>
-#include "../Components/components.h"
-
+#include "graphics.h"
 
 namespace Camera_Control {
 
 	class camera_object {
 	};
 
-	void Update_Camera_Follow(Component::Camera &camera, Component::Position &position, SDL_FRect &resolution) {
-			//center camera on the entity with the component
-			camera.screen.w = resolution.w / camera.scale.x;
-			camera.screen.h = resolution.h / camera.scale.y;
-			camera.screen.x = ((position.x) - (camera.screen.w / 2));
-			camera.screen.y = ((position.y) - (camera.screen.h / 2));
+	void Update_Camera_Follow(Component::Camera &camera, Component::Position &position) {
+        SDL_DisplayMode dm;
+        SDL_GetWindowDisplayMode(Graphics::window, &dm);
+        //center camera on the entity with the component
+        camera.screen.w = dm.w / camera.scale.x;
+        camera.screen.h = dm.h / camera.scale.y;
+        camera.screen.x = ((position.x) - (camera.screen.w / 2));
+        camera.screen.y = ((position.y) - (camera.screen.h / 2));
 	}
 
     SDL_FRect Maintain_Scale(entt::registry& zone, SDL_FRect& rect, Component::Camera& camera) {
 
         SDL_FRect fRenderToScreen = {
-                float(rect.x) * camera.scale.x,
-                float(rect.y) * camera.scale.y,
-                (float(rect.w) * camera.scale.x),
-                (float(rect.h) * camera.scale.y) };
+            float(rect.x) * camera.scale.x,
+            float(rect.y) * camera.scale.y,
+            (float(rect.w) * camera.scale.x),
+            (float(rect.h) * camera.scale.y) };
 
         return fRenderToScreen;
     }

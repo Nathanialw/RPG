@@ -15,16 +15,6 @@ namespace Menu
         i2 w, h;
     };
 
-
-    void Overlay(Component::Camera &camera)
-    {
-        SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_BLEND);
-        SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 75);
-        SDL_FRect overlay = UI::Update_Scale(camera.scale, Graphics::resolution);
-        SDL_RenderFillRectF(Graphics::renderer, &overlay);
-    }
-
-
     SDL_Color colors[2] = {{255, 255, 255}, {255, 0,   0}};
 
     struct Button
@@ -51,12 +41,12 @@ namespace Menu
     Menu Build_Menu(Menu &menu)
     {
         //        set first index position
-        menu.buttons[0].size = UI::Center_Rect(Graphics::resolution,  menu.buttons[0].textSurface->clip_rect);
+        menu.buttons[0].size = UI::Center_Rect(menu.buttons[0].textSurface->clip_rect);
         menu.buttons[0].size.y /= 2.0f;
         //        offset rest from first index
         for (int i = 1; i < menu.buttons.size(); i++)
         {
-            menu.buttons[i].size = UI::Center_Rect(Graphics::resolution,  menu.buttons[i].textSurface->clip_rect);
+            menu.buttons[i].size = UI::Center_Rect(menu.buttons[i].textSurface->clip_rect);
             menu.buttons[i].size.y = menu.buttons[i-1].size.y + menu.buttons[i-1].size.h + menu.spacing;;
         }
         return menu;
@@ -176,7 +166,7 @@ namespace Menu
         //pause with no inout
         if (toggleMenu)
         {
-            Overlay(camera);
+            UI::Overlay(camera.scale);
             int i = Show_Menu(zone, camera);
             if (i == 0) // "continue"
             {

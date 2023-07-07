@@ -9,8 +9,6 @@ namespace Action_Bar {
 
     };
 
-//    entt::entity emptyBarSlot;
-
     struct Spell_Bar {
         entt::entity spell[10];
         SDL_FRect actionBarFrame = { 0.0f, 0, 640.0f, 64.0f};
@@ -18,7 +16,7 @@ namespace Action_Bar {
 
     Spell_Bar actionBar;
 
-    void Create_Action_Bar(entt::registry &zone, Component::Camera &camera) {
+    void Create_Action_Bar(entt::registry &zone) {
         // initialize value of empty
         entt::entity emptyBarSlot = zone.create();
         zone.emplace<Component::Renderable>(emptyBarSlot);
@@ -35,8 +33,11 @@ namespace Action_Bar {
         }
 
         SDL_Rect rect = Utilities::SDL_FRect_To_SDL_Rect(actionBar.actionBarFrame);
-        actionBar.actionBarFrame = UI::Center_Rect(camera.screen, rect);
-        actionBar.actionBarFrame.y = Graphics::resolution.h - 64.0f;
+        actionBar.actionBarFrame = UI::Center_Rect(rect);
+
+        SDL_DisplayMode dm;
+        SDL_GetWindowDisplayMode(Graphics::window, &dm);
+        actionBar.actionBarFrame.y = dm.h - icon.renderRectSize.y;
     }
 
 

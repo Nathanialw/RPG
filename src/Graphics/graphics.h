@@ -4,7 +4,6 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
-#include "camera.h"
 #include "components.h"
 #include "../SDL_FontCache.h"
 #include "rendering_components.h"
