@@ -50,11 +50,51 @@ namespace Mouse {
 	}
 
 	bool Mouse_Selection_Box(SDL_FRect target) {
-		SDL_FRect entity = { float(Mouse::Mouse_Selection_Box_x), float(Mouse::Mouse_Selection_Box_y), float(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x), float(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y) };
-		if ((entity.y <= target.y + target.h) &&
-			(entity.x <= target.x + target.w) &&
-			(entity.y + entity.h >= target.y) &&
-			(entity.x + entity.w >= target.x)) {
+
+        SDL_FRect selectionRect = {};
+
+//        bottom-right
+        if (Mouse::Mouse_Selection_Box_x < Mouse::iXWorld_Mouse && Mouse::Mouse_Selection_Box_y < Mouse::iYWorld_Mouse) {
+            selectionRect = {
+                    float(Mouse::Mouse_Selection_Box_x),
+                    float(Mouse::Mouse_Selection_Box_y),
+                    float(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x),
+                    float(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y)
+            };
+        }
+//        top-right
+        else if (Mouse::Mouse_Selection_Box_x < Mouse::iXWorld_Mouse && Mouse::Mouse_Selection_Box_y > Mouse::iYWorld_Mouse) {
+            selectionRect = {
+                    float(Mouse::Mouse_Selection_Box_x),
+                    (float(Mouse::Mouse_Selection_Box_y) - abs(float(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y))),
+                    abs(float(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x)),
+                    abs(float(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y))
+            };
+        }
+//        top-left
+        else if (Mouse::Mouse_Selection_Box_x > Mouse::iXWorld_Mouse && Mouse::Mouse_Selection_Box_y < Mouse::iYWorld_Mouse) {
+            selectionRect = {
+                    float(Mouse::Mouse_Selection_Box_x) - abs(float(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x)),
+                    float(Mouse::Mouse_Selection_Box_y),
+                    abs(float(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x)),
+                    abs(float(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y))
+            };
+        }
+//        bottom-left
+        else if (Mouse::Mouse_Selection_Box_x > Mouse::iXWorld_Mouse && Mouse::Mouse_Selection_Box_y > Mouse::iYWorld_Mouse) {
+            selectionRect = {
+                    float(Mouse::Mouse_Selection_Box_x) - abs(float(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x)),
+                    (float(Mouse::Mouse_Selection_Box_y) - abs(float(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y))),
+                    abs(float(Mouse::iXWorld_Mouse - Mouse::Mouse_Selection_Box_x)),
+                    abs(float(Mouse::iYWorld_Mouse - Mouse::Mouse_Selection_Box_y))
+            };
+        }
+
+
+        if ((selectionRect.y <= target.y + target.h) &&
+			(selectionRect.x <= target.x + target.w) &&
+			(selectionRect.y + selectionRect.h >= target.y) &&
+			(selectionRect.x + selectionRect.w >= target.x)) {
 			return true;
 		}
 		return false;

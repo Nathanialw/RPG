@@ -113,7 +113,7 @@ namespace User_Mouse_Input {
 
 	bool Select_Soldier(entt::registry& zone) {
 		bool bSelected = false;
-		auto soldier_view = zone.view<Component::Soldier, Component::Commandable, Component::Interaction_Rect>();
+		auto soldier_view = zone.view<Component::Soldier, Component::Commandable, Component::Interaction_Rect, Component::Renderable>();
 		for (auto soldiers : soldier_view) {
 			auto& interaction = soldier_view.get<Component::Interaction_Rect>(soldiers);
 			if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_Cursor(interaction.rect)) {
