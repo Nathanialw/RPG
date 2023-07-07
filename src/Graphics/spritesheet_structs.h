@@ -180,7 +180,7 @@ namespace Spritesheet_Structs {
             }
         }
         else if (unitType == "classes_male" || unitType == "classes_female") {
-            if (checkAction == "Attack Two Hand Swing") {
+            if (checkAction == "Attack One Handed Side Slash") {
                 action = Action_Component::Action_State::attack;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Idle3") {

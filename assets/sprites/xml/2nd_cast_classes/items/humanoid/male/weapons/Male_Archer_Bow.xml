@@ -14,6 +14,7 @@ oY => y-corner offset
 oW => original width
 oH => original height
 r => 'y' if sprite is rotated-->
+<TextureAtlas imagePath="Male_Archer_Bow.png" width="1517" height="1517" scale="1" format="RGBA8888">
   <sprite n="Male_Archer_Bow_Attack Bow_01_ 0" x="70" y="1069" w="10" h="87" pX="0.5" pY="0.5" oX="73" oY="49" oW="160" oH="160"/>
   <sprite n="Male_Archer_Bow_Attack Bow_02_ 0" x="522" y="856" w="11" h="82" pX="0.5" pY="0.5" oX="79" oY="48" oW="160" oH="160"/>
   <sprite n="Male_Archer_Bow_Attack Bow_03_ 0" x="1076" y="1368" w="18" h="55" pX="0.5" pY="0.5" oX="74" oY="65" oW="160" oH="160"/>
@@ -2054,5 +2055,4 @@ r => 'y' if sprite is rotated-->
   <sprite n="Male_Archer_Bow_Woozy_22_ 7" x="939" y="1319" w="78" h="25" pX="0.5" pY="0.5" oX="54" oY="83" oW="160" oH="160"/>
   <sprite n="Male_Archer_Bow_Woozy_23_ 7" x="654" y="1419" w="74" h="29" pX="0.5" pY="0.5" oX="55" oY="77" oW="160" oH="160"/>
   <sprite n="Male_Archer_Bow_Woozy_24_ 7" x="1194" y="1447" w="56" h="48" pX="0.5" pY="0.5" oX="64" oY="56" oW="160" oH="160"/>
-<TextureAtlas imagePath="Male_Archer_Bow.png" width="1517" height="1517" scale="1" format="RGBA8888">
 </TextureAtlas>
