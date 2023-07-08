@@ -114,7 +114,12 @@ namespace Interface {
 			for (auto entity : view) {
 				auto& position = view.get<Component::Position>(entity);
 				auto& radius = view.get<Component::Radius>(entity);
-				SDL_SetRenderDrawColor(Graphics::renderer, 55, 255, 55, 255);
+                if (Social_Control::Check_Relationship(World::zone, focus, entity)) {
+                    SDL_SetRenderDrawColor(Graphics::renderer, 255, 55, 55, 255);
+                }
+                else {
+                    SDL_SetRenderDrawColor(Graphics::renderer, 55, 255, 55, 255);
+                }
 				SDL_FRect p = { position.x - radius.fRadius, position.y - radius.fRadius, radius.fRadius * 2, radius.fRadius * 2 };
 				SDL_FRect s = Camera_Control::Convert_Rect_To_Screen_Coods(World::zone, p, camera);
 

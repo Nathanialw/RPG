@@ -45,7 +45,7 @@ namespace Init {
         Action_Bar::Create_Action_Bar(World::zone);
         Menu::Init();
         SQLite_Dialogue::Init_Dialogue();
-//        Video::Run_Audio("assets/music/nature.ogg");
+        Video::Run_Audio("assets/music/nature.ogg");
     }
 
 
@@ -62,6 +62,7 @@ namespace Init {
 
 
 		SDL_SetRelativeMouseMode(SDL_FALSE);
+        SDL_ShowCursor(SDL_DISABLE );
 
 		Graphics::running = true;
 
