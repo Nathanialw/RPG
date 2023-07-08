@@ -45,7 +45,7 @@ namespace Input_Control {
     }
 
     bool Check_For_Mouse_Target(entt::registry& zone, bool showGroundItems, entt::entity& player_ID, Component::Position& playerPosition, Component::Melee_Range& meleeRange) {
-        if (zone.empty<Component::Selected>()) {
+        if (Social_Control::Enemy_Selected(zone, player_ID)) {
             if (World::zone.any_of<Component::Attacking>(player_ID) == true) {
                 return true;
             }
@@ -111,6 +111,7 @@ namespace Input_Control {
                 }
             }
         }
+//        if units ARE selected
         else {
             SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
             Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);

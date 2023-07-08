@@ -13,14 +13,14 @@ namespace Movement {
 	}
 
 	void Mouse_Moving(entt::registry &zone) { // maybe change to move and attack?
-		if (zone.empty<Component::Selected>()) {
-			auto view = zone.view<Component::Input>();
-			for (auto player : view) {
-				if (Mouse::bRight_Mouse_Pressed) {
-					Entity_Control::Move_Order(zone, player, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
-				}
-			}
-		}
+        auto view = zone.view<Component::Input>();
+        for (auto player_ID : view) {
+            if (Mouse::bRight_Mouse_Pressed) {
+                if (Social_Control::Enemy_Selected(zone, player_ID)) {
+                    Entity_Control::Move_Order(zone, player_ID, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+                }
+            }
+        }
 	}
 
     const float timeStep = 1.0f / 60.0f;

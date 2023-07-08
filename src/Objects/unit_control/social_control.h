@@ -95,6 +95,23 @@ namespace  Social_Control {
         return false;
     }
 
+    bool Enemy_Selected(entt::registry& zone, entt::entity &player_ID) {
+        if (zone.empty<Component::Selected>()) {
+            return true;
+        }
+        else {
+            auto view = zone.view<Component::Selected>();
+            for (auto unit : view) {
+                if (Social_Control::Check_Relationship(zone, player_ID, unit)) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        }
+    };
+
     void Show_Dialogue (entt::registry& zone, Component::Camera& camera) {
         auto view = zone.view<Component::Unit, Component::Interaction_Rect, Component::Renderable, Social_Component::Speaking>();
         for (auto entity : view) {
