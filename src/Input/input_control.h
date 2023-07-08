@@ -123,7 +123,7 @@ namespace Input_Control {
                         if (player_ID != targetData.entity_ID) {
                             // sent units to the unit
                             //if it is enemy attack it
-                            User_Mouse_Input::Command_Unit_Attack(zone, targetData.entity_ID, targetRadius);
+                            User_Mouse_Input::Command_Unit_Attack(zone, player_ID, targetData.entity_ID, targetRadius);
 
 //                        Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetPosition, targetRadius);
                             return true;

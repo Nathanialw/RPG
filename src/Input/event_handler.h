@@ -149,7 +149,7 @@ namespace Event_Handler {
 				User_Mouse_Input::Select_Units(World::zone, player_ID);
 			}
 			if (Events::event.button.button == SDL_BUTTON_RIGHT) {
-                User_Mouse_Input::Command_Unit_Move(zone);
+                User_Mouse_Input::Command_Unit_Move(zone, player_ID);
 				Mouse::bRight_Mouse_Pressed = false;
 			}
 		}
