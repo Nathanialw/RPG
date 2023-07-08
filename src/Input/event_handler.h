@@ -146,7 +146,7 @@ namespace Event_Handler {
 
 		if (Events::event.key.type == SDL_MOUSEBUTTONUP) {
 			if (Events::event.button.button == SDL_BUTTON_LEFT) {
-				User_Mouse_Input::Select_Units(World::zone);
+				User_Mouse_Input::Select_Units(World::zone, player_ID);
 			}
 			if (Events::event.button.button == SDL_BUTTON_RIGHT) {
                 User_Mouse_Input::Command_Unit_Move(zone);

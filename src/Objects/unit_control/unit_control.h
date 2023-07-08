@@ -127,23 +127,34 @@ namespace User_Mouse_Input {
         return bSelected;
     }
 
-	bool Select_Soldier(entt::registry& zone) {
+	bool Select_Soldier(entt::registry& zone, entt::entity player_ID) {
 		bool bSelected = false;
         std::vector<entt::entity> selected;
+        std::vector<entt::entity> selectedEnemy;
 
 		auto soldier_view = zone.view<Component::Soldier, Component::Commandable, Component::Interaction_Rect, Component::Renderable>();
 		for (auto soldier : soldier_view) {
 			auto& interaction = soldier_view.get<Component::Interaction_Rect>(soldier);
 			if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_Cursor(interaction.rect)) {
+                if (!Social_Control::Check_Relationship(zone, player_ID, soldier)) {
+                    selected.emplace_back(soldier);
+                }
+                else {
+                    selectedEnemy.emplace_back(soldier);
+                }
 //                check for allies
-                selected.emplace_back(soldier);
 //                if none, check for enemies, select only ONE enemy
 				bSelected = true;
 			}
 		}
 
-        for (auto unit : selected) {
-            zone.emplace_or_replace<Component::Selected>(unit);
+        if (selected.size() > 0) {
+            for (auto unit: selected) {
+                zone.emplace_or_replace<Component::Selected>(unit);
+            }
+        }
+        else if (selectedEnemy.size() > 0){
+            zone.emplace_or_replace<Component::Selected>(selectedEnemy.at(0));
         }
 
 		if (bSelected == false) {
@@ -156,15 +167,15 @@ namespace User_Mouse_Input {
 	void Select(entt::registry& zone) {
 		Select_Platoon(zone);
 		Select_Squad(zone);
-		Select_Soldier(zone);
+//		Select_Soldier(zone);
 	}
 
 
-	void Select_Units(entt::registry& zone) {
+	void Select_Units(entt::registry& zone, entt::entity player_ID) {
 		//if unit.Soldier then select all in his squad
 		if (zone.empty<Component::Selected>()) {
 			switch (eUnit_Selection) {
-				case Unit_Selection ::soldiers: Select_Soldier(zone); break;
+				case Unit_Selection ::soldiers: Select_Soldier(zone, player_ID); break;
 				case Unit_Selection ::squads: Select_Squad(zone); break;
 				case Unit_Selection ::platoons: Select_Platoon(zone); break;
 				case Unit_Selection ::companies: Select_Company(zone); break;

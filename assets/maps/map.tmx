@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="3870">
+<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="384" height="384" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="3871">
  <tileset firstgid="1" source="../sprite_sheets/units/flare/skeleton_00.tsx"/>
  <tileset firstgid="257" source="../sprite_sheets/units/flare/skeleton_occultist_00.tsx"/>
  <tileset firstgid="481" source="../sprite_sheets/units/flare/skeleton_mage_00.tsx"/>
@@ -660,13 +660,17 @@
   <object id="3838" template="../spawn_points/unit_spawns/trees/random_tree.tx" x="15436" y="12324"/>
   <object id="3839" template="../spawn_points/unit_spawns/trees/random_tree.tx" x="16472" y="12712"/>
   <object id="3840" template="../spawn_points/buildings/houses/Medieval_Expansion_Ruins_13.tx" x="21843.8" y="1204.67"/>
-  <object id="3850" template="../spawn_points/unit_spawns/2nd_cast/orc/male/Male_Orc_1.tx" x="16297.3" y="10188"/>
   <object id="3851" template="../spawn_points/unit_spawns/2nd_cast/zombie/male/Male_Zombie.tx" x="16258" y="10726">
    <properties>
-    <property name="player" type="bool" value="true"/>
+    <property name="player" type="bool" value="false"/>
    </properties>
   </object>
   <object id="3863" template="../spawn_points/unit_spawns/2nd_cast/skeletons/male/Male_Skeleton.tx" x="16640.7" y="10871.3"/>
   <object id="3868" template="../spawn_points/unit_spawns/4th_cast/races/demons/PlagueFiend.tx" x="16026.7" y="10208"/>
+  <object id="3870" template="../spawn_points/unit_spawns/2nd_cast/orc/male/Male_Orc_1.tx" x="21825.3" y="1565.33">
+   <properties>
+    <property name="player" type="bool" value="true"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
