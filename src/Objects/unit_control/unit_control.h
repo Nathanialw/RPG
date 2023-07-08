@@ -109,18 +109,43 @@ namespace User_Mouse_Input {
 		return bSelected;
 	}
 
-
+    bool Tab_Target(entt::registry& zone) {
+        bool bSelected = false;
+        auto soldier_view = zone.view<Component::Soldier, Component::Commandable, Component::Interaction_Rect, Component::Renderable>();
+        for (auto soldiers : soldier_view) {
+            auto& interaction = soldier_view.get<Component::Interaction_Rect>(soldiers);
+            if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_Cursor(interaction.rect)) {
+//                check for allies
+                zone.emplace_or_replace<Component::Selected>(soldiers);
+//                if none, check for enemies, select only ONE enemy
+                bSelected = true;
+            }
+        }
+        if (bSelected == false) {
+            zone.clear<Component::Selected>();
+        }
+        return bSelected;
+    }
 
 	bool Select_Soldier(entt::registry& zone) {
 		bool bSelected = false;
+        std::vector<entt::entity> selected;
+
 		auto soldier_view = zone.view<Component::Soldier, Component::Commandable, Component::Interaction_Rect, Component::Renderable>();
-		for (auto soldiers : soldier_view) {
-			auto& interaction = soldier_view.get<Component::Interaction_Rect>(soldiers);
+		for (auto soldier : soldier_view) {
+			auto& interaction = soldier_view.get<Component::Interaction_Rect>(soldier);
 			if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_Cursor(interaction.rect)) {
-				zone.emplace_or_replace<Component::Selected>(soldiers);
-				bSelected = true;					
+//                check for allies
+                selected.emplace_back(soldier);
+//                if none, check for enemies, select only ONE enemy
+				bSelected = true;
 			}
 		}
+
+        for (auto unit : selected) {
+            zone.emplace_or_replace<Component::Selected>(unit);
+        }
+
 		if (bSelected == false) {
 			zone.clear<Component::Selected>();
 		}		
