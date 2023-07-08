@@ -187,7 +187,7 @@ namespace Create_Entities {
             zone.emplace<Component::Direction>(entity, Component::Direction::S);
 
             auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
-            zone.emplace<Social_Component::Race>(entity, raceData[0]);
+            zone.emplace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
             auto &relationships = zone.emplace<Social_Component::Relationships>(entity);
             for (int i = 0; i < raceData.size(); i++) {
                 relationships.races[i] = raceData[i+1];

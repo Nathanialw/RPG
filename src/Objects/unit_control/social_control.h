@@ -4,13 +4,27 @@
 
 namespace Social_Component {
 
-    struct Race {
-        int race;
+    enum class Race {
+        rogue,
+        human,
+        fleshbeast,
+        goblin,
+        beast,
+        demon,
+        elf,
+        zombie,
+        skeleton,
+        orc,
+        dwarf,
+        monster,
+        eldtritch,
+        drow,
+        nature
     };
 
     struct Relationships {
         int races[14];
-        std::unordered_map<entt::entity, int> connections;
+//        std::unordered_map<entt::entity, Races> connections;
     };
 
     struct Speaking {
@@ -22,9 +36,56 @@ namespace Social_Component {
 
 namespace  Social_Control {
 
+    Social_Component::Race Get_Race(std::string raceStr) {
+                if (raceStr == "rogue") {
+                    return Social_Component::Race::rogue;
+                }
+                if (raceStr == "human") {
+                    return Social_Component::Race::human;
+                }
+                if (raceStr == "fleshbeast") {
+                    return Social_Component::Race::fleshbeast;
+                }
+                if (raceStr == "goblin") {
+                    return Social_Component::Race::goblin;
+                }
+                if (raceStr == "beast") {
+                    return Social_Component::Race::beast;
+                }
+                if (raceStr == "demon") {
+                    return Social_Component::Race::demon;
+                }
+                if (raceStr == "elf") {
+                    return Social_Component::Race::elf;
+                }
+                if (raceStr == "zombie") {
+                    return Social_Component::Race::zombie;
+                }
+                if (raceStr == "skeleton") {
+                    return Social_Component::Race::skeleton;
+                }
+                if (raceStr == "orc") {
+                    return Social_Component::Race::orc;
+                }
+                if (raceStr == "dwarf") {
+                    return Social_Component::Race::dwarf;
+                }
+                if (raceStr == "monster") {
+                    return Social_Component::Race::monster;
+                }
+                if (raceStr == "eldtritch") {
+                    return Social_Component::Race::eldtritch;
+                }
+                if (raceStr == "drow") {
+                    return Social_Component::Race::drow;
+                }
+                if (raceStr == "nature") {
+                    return Social_Component::Race::nature;
+                }    }
+
     bool Check_Relationship (entt::registry &zone, entt::entity &unitID, entt::entity &targetID) {
-        int race = zone.get<Social_Component::Race>(targetID).race;
-        int state = zone.get<Social_Component::Relationships>(unitID).races[race];
+        Social_Component::Race race = zone.get<Social_Component::Race>(targetID);
+        int state = zone.get<Social_Component::Relationships>(unitID).races[(int)race];
 //        zone.get<Social_Component::Relationships>(unitID).races.at(targetID);
 
         if (state < 33) {
