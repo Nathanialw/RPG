@@ -14,7 +14,7 @@ namespace Maps {
     {
         World::Generate_Region();
 
-        if (map.load("assets/maps/map.tmx"))
+        if (map.load("assets/maps/forest.tmx"))
         {
             for (auto &spriteSheet: map.getTilesets())
             {

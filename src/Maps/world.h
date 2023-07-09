@@ -27,7 +27,7 @@ namespace  World_Data
         float y;
     };
 
-    SDL_Texture* tiles[25];
+    SDL_Texture* tiles[75];
 
     enum Tile_Type {
         grass,
@@ -76,27 +76,81 @@ namespace World
 //        randomize
         worldOffset = { -100.0f, -100.0f };
 
-        World_Data::tiles[0] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[1] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[2] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[3] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[4] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[5] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[6] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[7] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[8] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[9] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[10] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[11] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[12] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[13] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[14] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[15] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[16] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[17] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[18] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[19] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
-        World_Data::tiles[20] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Grass_23_Tile.png");
+        World_Data::tiles[0] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_1_Tile.png");
+        World_Data::tiles[1] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_2_Tile.png");
+        World_Data::tiles[2] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_3_Tile.png");
+        World_Data::tiles[3] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_4_Tile.png");
+        World_Data::tiles[4] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_5_Tile.png");
+        World_Data::tiles[5] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_6_Tile.png");
+        World_Data::tiles[6] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_7_Tile.png");
+        World_Data::tiles[7] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_8_Tile.png");
+        World_Data::tiles[8] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_9_Tile.png");
+        World_Data::tiles[9] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Beach_10_Tile.png");
+        World_Data::tiles[10] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_1_Tile.png");
+        World_Data::tiles[11] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_2_Tile.png");
+        World_Data::tiles[12] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_3_Tile.png");
+        World_Data::tiles[13] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_4_Tile.png");
+        World_Data::tiles[14] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_5_Tile.png");
+        World_Data::tiles[15] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_6_Tile.png");
+        World_Data::tiles[16] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_7_Tile.png");
+        World_Data::tiles[17] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_8_Tile.png");
+        World_Data::tiles[18] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_9_Tile.png");
+        World_Data::tiles[19] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_10_Tile.png");
+        World_Data::tiles[20] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_11_Tile.png");
+        World_Data::tiles[21] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_12_Tile.png");
+        World_Data::tiles[22] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_13_Tile.png");
+        World_Data::tiles[23] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_14_Tile.png");
+        World_Data::tiles[24] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_15_Tile.png");
+        World_Data::tiles[25] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_16_Tile.png");
+        World_Data::tiles[26] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_17_Tile.png");
+        World_Data::tiles[27] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_18_Tile.png");
+        World_Data::tiles[28] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_19_Tile.png");
+        World_Data::tiles[29] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_20_Tile.png");
+        World_Data::tiles[30] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_21_Tile.png");
+        World_Data::tiles[31] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_22_Tile.png");
+        World_Data::tiles[32] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_23_Tile.png");
+        World_Data::tiles[33] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_24_Tile.png");
+        World_Data::tiles[34] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_25_Tile.png");
+        World_Data::tiles[35] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_26_Tile.png");
+        World_Data::tiles[36] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_27_Tile.png");
+        World_Data::tiles[37] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_28_Tile.png");
+        World_Data::tiles[38] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_29_Tile.png");
+        World_Data::tiles[39] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_30_Tile.png");
+        World_Data::tiles[40] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_31_Tile.png");
+        World_Data::tiles[41] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_32_Tile.png");
+        World_Data::tiles[42] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_33_Tile.png");
+        World_Data::tiles[43] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_34_Tile.png");
+        World_Data::tiles[44] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_35_Tile.png");
+        World_Data::tiles[45] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_36_Tile.png");
+        World_Data::tiles[46] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_37_Tile.png");
+        World_Data::tiles[47] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_38_Tile.png");
+        World_Data::tiles[48] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_39_Tile.png");
+        World_Data::tiles[49] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_40_Tile.png");
+        World_Data::tiles[50] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_41_Tile.png");
+        World_Data::tiles[51] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_42_Tile.png");
+        World_Data::tiles[52] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_43_Tile.png");
+        World_Data::tiles[53] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_44_Tile.png");
+        World_Data::tiles[54] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_45_Tile.png");
+        World_Data::tiles[55] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_46_Tile.png");
+        World_Data::tiles[56] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_47_Tile.png");
+        World_Data::tiles[57] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Dirt_48_Tile.png");
+        World_Data::tiles[58] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_1_Tile.png");
+        World_Data::tiles[59] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_2_Tile.png");
+        World_Data::tiles[60] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_3_Tile.png");
+        World_Data::tiles[61] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_4_Tile.png");
+        World_Data::tiles[62] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_5_Tile.png");
+        World_Data::tiles[63] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_6_Tile.png");
+        World_Data::tiles[64] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_7_Tile.png");
+        World_Data::tiles[65] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_8_Tile.png");
+        World_Data::tiles[66] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_9_Tile.png");
+        World_Data::tiles[67] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_10_Tile.png");
+        World_Data::tiles[68] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_11_Tile.png");
+        World_Data::tiles[69] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_12_Tile.png");
+        World_Data::tiles[70] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_13_Tile.png");
+        World_Data::tiles[71] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_14_Tile.png");
+        World_Data::tiles[72] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_15_Tile.png");
+        World_Data::tiles[73] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_16_Tile.png");
+        World_Data::tiles[74] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_17_Tile.png");
     }
 
     void Create_Map (World_Data::Offset offset)
@@ -234,7 +288,11 @@ namespace World
                 // generate tile type
                 Procedural_Components::Seed seed;
                 seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
-                World_Data::Tile_Type type = (World_Data::Tile_Type)Procedural_Generation::Random_Int(0, 19, seed);
+                int textureArraySize = 74;
+//                World_Data::Tile_Type type = (World_Data::Tile_Type)Procedural_Generation::Random_Int(0, textureArraySize, seed);
+
+//                index to get ground texture
+                int type = 74;
 
                 SDL_FRect renderRect;
                 renderRect.x = i * size.width - camera.screen.x;
@@ -244,7 +302,7 @@ namespace World
 
                 SDL_Rect clipRect = {0,0,(int)size.width,(int)size.height};
 
-                SDL_Texture *texture = World_Data::tiles[(int)type];
+                SDL_Texture *texture = World_Data::tiles[type];
 
                 SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
             }
