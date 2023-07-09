@@ -33,11 +33,14 @@ namespace UI_Spellbook {
 
 
 //    run once the camera is attached to a unit
-    void Init_UI(){
+    void Update_Position() {
         panelRect = UI::Center_Rect(clip);
-        panel = Graphics::spellbook;
     }
 
+    void Init_UI() {
+        Update_Position();
+        panel = Graphics::spellbook;
+    }
 
     void Toggle() {
         if (b_isOpen){

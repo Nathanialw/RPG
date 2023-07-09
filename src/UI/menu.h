@@ -6,6 +6,7 @@
 #include "pause.h"
 #include "camera.h"
 #include "ui_elements.h"
+#include <array>
 
 namespace Menu
 {
@@ -31,30 +32,29 @@ namespace Menu
     struct Menu {
         SDL_Texture *background;
         Uint8 spacing = Mouse::cursorRadius * 2;
-        std::vector<Button> buttons;
+        std::array<Button, 3> buttons;
     };
 
 
 //    stores menus, access with key
-    std::unordered_map<std::string, Menu> menus;
+//    std::unordered_map<std::string, Menu> menus;
+    Menu menu;
 
-    Menu Build_Menu(Menu &menu)
+    Menu Build_Menu()
     {
         //        set first index position
         menu.buttons[0].size = UI::Center_Rect(menu.buttons[0].textSurface->clip_rect);
         menu.buttons[0].size.y /= 2.0f;
         //        offset rest from first index
-        for (int i = 1; i < menu.buttons.size(); i++)
-        {
+        for (int i = 1; i < menu.buttons.size(); i++) {
             menu.buttons[i].size = UI::Center_Rect(menu.buttons[i].textSurface->clip_rect);
-            menu.buttons[i].size.y = menu.buttons[i-1].size.y + menu.buttons[i-1].size.h + menu.spacing;;
+            menu.buttons[i].size.y = menu.buttons[i - 1].size.y + menu.buttons[i - 1].size.h + menu.spacing;;
         }
-        return menu;
     }
 
     void Create_Menu() {
-        Menu menu;
-        std::vector<const char*>labels = {"Continue", "Exit"};
+        Menu tempMenu;
+        std::vector<const char*>labels = {"Continue", "Options", "Exit"};
 
         for (int i = 0; i < labels.size(); i++)
         {
@@ -62,10 +62,18 @@ namespace Menu
             button.text = labels[i];
             button.textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], colors[0]);
             button.textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, button.textSurface);
-            menu.buttons.emplace_back(button);
+            tempMenu.buttons[i] = button;
         }
 
-        menus["menu"] = Build_Menu(menu);
+        //        set first index position
+        tempMenu.buttons[0].size = UI::Center_Rect(tempMenu.buttons[0].textSurface->clip_rect);
+        tempMenu.buttons[0].size.y /= 2.0f;
+        //        offset rest from first index
+        for (int i = 1; i < tempMenu.buttons.size(); i++) {
+            tempMenu.buttons[i].size = UI::Center_Rect(tempMenu.buttons[i].textSurface->clip_rect);
+            tempMenu.buttons[i].size.y = tempMenu.buttons[i - 1].size.y + tempMenu.buttons[i - 1].size.h + tempMenu.spacing;;
+        }
+        menu = tempMenu;
     }
 
     void Init () {
@@ -90,8 +98,6 @@ namespace Menu
 
     int Show_Menu(entt::registry &zone, Component::Camera &camera)
     {
-        Menu &menu = menus["menu"];
-
         for (int i = 0; i < menu.buttons.size(); i++)
         {
             menu.buttons[i].scaledSize = UI::Update_Scale(camera.scale, menu.buttons[i].size);
@@ -126,6 +132,16 @@ namespace Menu
         {
             switch (Events::event.type)
             {
+                case SDL_WINDOWEVENT: {
+                    if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
+//                        recenter camera on player
+
+                        UI_Spellbook::Update_Position();
+                        Action_Bar::Update_Position();
+                        Build_Menu();
+                    }
+                    return 3;
+                }
                 case SDL_QUIT: {
                     for (int i = 0; i < menu.buttons.size(); i++)
                     {
@@ -158,7 +174,7 @@ namespace Menu
                 }
             }
         }
-        return 3;
+        return menu.buttons.size() + 1;
     }
 
     void Render_Menu(entt::registry &zone, Component::Camera &camera)
@@ -172,7 +188,11 @@ namespace Menu
             {
                 Toggle();
             }
-            if (i == 1) // "exit"
+            else if (i == 1) // "options"
+            {
+//                run options
+            }
+            else if (i == 2) // "exit"
             {
 //                exit program
                 Graphics::closeContext();

@@ -16,6 +16,17 @@ namespace Action_Bar {
 
     Spell_Bar actionBar;
 
+    void Update_Position() {
+        SDL_Rect rect = Utilities::SDL_FRect_To_SDL_Rect(actionBar.actionBarFrame);
+        actionBar.actionBarFrame = UI::Center_Rect(rect);
+        int w;
+        int h;
+//        SDL_GetWindowDisplayMode(Graphics::window, &dm);
+//        return { ((dm.w / 2.0f) - (clip.w / 2.0f)), ((dm.h / 2.0f) - (clip.h / 2.0f)), (float)clip.w, (float)clip.h };
+        SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
+        actionBar.actionBarFrame.y = (float)h - actionBar.actionBarFrame.h;
+    }
+
     void Create_Action_Bar(entt::registry &zone) {
         // initialize value of empty
         entt::entity emptyBarSlot = zone.create();
@@ -32,14 +43,8 @@ namespace Action_Bar {
             actionBar.spell[i] = emptyBarSlot;
         }
 
-        SDL_Rect rect = Utilities::SDL_FRect_To_SDL_Rect(actionBar.actionBarFrame);
-        actionBar.actionBarFrame = UI::Center_Rect(rect);
-
-        SDL_DisplayMode dm;
-        SDL_GetWindowDisplayMode(Graphics::window, &dm);
-        actionBar.actionBarFrame.y = dm.h - icon.renderRectSize.y;
+        Update_Position();
     }
-
 
     void Render_Action_Bar(entt::registry &zone, Component::Camera &camera) {
         SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar.actionBarFrame);

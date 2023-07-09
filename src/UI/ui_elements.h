@@ -10,9 +10,10 @@ namespace UI {
 	}
 
     SDL_FRect Center_Rect(SDL_Rect &clip) {
-        SDL_DisplayMode dm;
-        SDL_GetWindowDisplayMode(Graphics::window, &dm);
-        return { ((dm.w / 2.0f) - (clip.w / 2.0f)), ((dm.h / 2.0f) - (clip.h / 2.0f)), (float)clip.w, (float)clip.h };
+        int w;
+        int h;
+        SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
+        return { ((float)(w / 2.0f) - (clip.w / 2.0f)), ((float)(h / 2.0f) - (clip.h / 2.0f)), (float)clip.w, (float)clip.h };
     }
 
     SDL_FRect Update_Scale(f2 &scale, SDL_FRect &rect) {
@@ -20,21 +21,21 @@ namespace UI {
     }
 
     SDL_FRect Get_Resolution() {
-        SDL_DisplayMode dm;
-        SDL_GetWindowDisplayMode(Graphics::window, &dm);
-        return {0.0f, 0.0f, (float)dm.w, (float)dm.h};
+        int w;
+        int h;
+        SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
+        return {0.0f, 0.0f, (float)w, (float)h};
     }
-
-
 
     void Overlay(f2 &scale)
     {
         SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_BLEND);
         SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 75);
 
-        SDL_DisplayMode dm;
-        SDL_GetWindowDisplayMode(Graphics::window, &dm);
-        SDL_FRect overlay = {0, 0, (float)dm.w, (float)dm.h};
+        int w;
+        int h;
+        SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
+        SDL_FRect overlay = {0, 0, (float)w, (float)h};
         overlay = Update_Scale(scale, overlay);
         SDL_RenderFillRectF(Graphics::renderer, &overlay);
     }
