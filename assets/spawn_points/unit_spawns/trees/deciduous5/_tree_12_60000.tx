@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../sprite_sheets/environment/trees/deciduous5/_tree_12_60000.tsx"/>
+ <object name="_tree_12_60000" gid="1" width="788" height="726"/>
+</template>

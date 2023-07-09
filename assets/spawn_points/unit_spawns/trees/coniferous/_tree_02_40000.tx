@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../sprite_sheets/environment/trees/coniferous/_tree_02_40000.tsx"/>
+ <object name="_tree_02_40000" type="tree" gid="1" width="350" height="720"/>
+</template>
