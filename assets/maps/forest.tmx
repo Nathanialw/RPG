@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="4" nextobjectid="1873">
+<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="4" nextobjectid="1875">
  <tileset firstgid="1" source="../sprite_sheets/ground_tiles/grassland_tiles_x2.tsx"/>
  <tileset firstgid="673" source="../sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx"/>
  <tileset firstgid="674" source="../sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx"/>
@@ -419,11 +419,6 @@
   <object id="138" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="22616" y="22728"/>
   <object id="139" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="23560" y="24152"/>
   <object id="140" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="24640" y="25024"/>
-  <object id="141" template="../spawn_points/unit_spawns/2nd_cast/human/male/Male_BeastMaster.tx" x="26262" y="30610">
-   <properties>
-    <property name="player" type="bool" value="true"/>
-   </properties>
-  </object>
   <object id="156" template="../spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="28130" y="28126"/>
   <object id="157" template="../spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="27610" y="26622"/>
   <object id="158" template="../spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="28280" y="26360"/>
@@ -1814,5 +1809,10 @@
   <object id="1870" template="../spawn_points/unit_spawns/2nd_cast/orc/male/Male_Orc_1.tx" x="45120" y="33600"/>
   <object id="1871" template="../spawn_points/unit_spawns/2nd_cast/orc/male/Male_Orc_1.tx" x="40880" y="34896"/>
   <object id="1872" template="../spawn_points/unit_spawns/2nd_cast/orc/male/Male_Orc_1.tx" x="41296" y="36016"/>
+  <object id="1874" template="../spawn_points/unit_spawns/2nd_cast/human/male/Male_BeastMaster.tx" x="27920" y="27044">
+   <properties>
+    <property name="player" type="bool" value="true"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

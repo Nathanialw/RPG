@@ -70,8 +70,10 @@ namespace Event_Handler {
 				if (act.state != Action_Component::attack) {
 					switch (Events::event.key.keysym.sym)
 					{
-					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
-					case SDLK_2: Death_Spells::Summon_Skeleton(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "skeleton");  break;
+//					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
+                    case SDLK_1: break;
+//					case SDLK_2: Death_Spells::Summon_Skeleton(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "skeleton");  break;
+					case SDLK_2: break;
 					case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
 					case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;
 					case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
@@ -81,6 +83,7 @@ namespace Event_Handler {
 					case SDLK_9: AI::Turn_On();  break;
 					case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
                     case SDLK_ESCAPE: Menu::Toggle(); break;
+                    case SDLK_TAB: User_Mouse_Input::Tab_Target(zone, camera, entity); break;
                     case SDLK_p: Pause::Toggle(); break;
 					case SDLK_PLUS:  break;
 					case SDLK_MINUS: break;

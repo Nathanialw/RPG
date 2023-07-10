@@ -164,13 +164,63 @@ namespace User_Mouse_Input {
 		return bSelected;
 	}
 
+    bool Tab_Target(entt::registry& zone, Component::Camera &camera, entt::entity player_ID) {
+        bool bSelected = false;
+        std::vector<entt::entity> selectedEnemy;
+
+        auto soldier_view = zone.view<Component::Soldier, Component::Commandable, Component::Interaction_Rect, Component::Renderable>();
+        auto &targetRange = zone.get<Component::Target_Range>(player_ID).rangeBox;
+        SDL_FRect rect = {};
+
+//        if rangebox > screen rect cap to screen size
+        if ((targetRange.w > camera.screen.w) || (targetRange.h > camera.screen.h)) {
+            rect = camera.screen;
+        }
+        else {
+            rect = targetRange;
+        }
+
+        for (auto soldier : soldier_view) {
+            auto& interaction = soldier_view.get<Component::Interaction_Rect>(soldier);
+
+            if (Utilities::bFRect_Intersect(rect, interaction.rect)) {
+                if (soldier == player_ID) {
+//                    prevent from selecting player
+                    continue;
+                }
+                if (!Social_Control::Check_Relationship(zone, player_ID, soldier)) {
+//                    prevent tab targeting allies
+                    continue;
+                }
+                if (Social_Control::Check_Relationship(zone, player_ID, soldier)) {
+                    if (zone.any_of<Component::Selected>(soldier)) {
+                        continue;
+                    }
+                    else {
+                        zone.clear<Component::Selected>();
+                        selectedEnemy.emplace_back(soldier);
+                        bSelected = true;
+                        if (selectedEnemy.size() > 0) {
+                            zone.emplace_or_replace<Component::Selected>(selectedEnemy.at(0));
+                        }
+                        return bSelected;
+                    }
+                }
+            }
+        }
+//
+//        if (bSelected == false) {
+//            zone.clear<Component::Selected>();
+//        }
+        return bSelected;
+    }
+
 
 	void Select(entt::registry& zone) {
 		Select_Platoon(zone);
 		Select_Squad(zone);
 //		Select_Soldier(zone);
 	}
-
 
 	void Select_Units(entt::registry& zone, entt::entity player_ID) {
 		//if unit.Soldier then select all in his squad

@@ -234,9 +234,10 @@ namespace Create_Entities {
                 SDL_DisplayMode dm;
                 SDL_GetWindowDisplayMode(Graphics::window, &dm);
                 zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (float)dm.w, (float)dm.h, 2.0f, 2.0f);
+                zone.emplace<Component::Target_Range>(entity, 2000.0f * data.scale, position.x - (2000.0f / 2.0f * data.scale), position.y - (2000.0f / 2.0f * data.scale), 2000.0f * data.scale, 2000.0f * data.scale);
             }
             else {
-                zone.emplace<Component::Sight_Range>(entity, data.sight_radius * data.scale, position.x - (data.sight_radius / 2.0f * data.scale), position.y - (data.sight_radius / 2.0f * data.sight_radius), data.sight_radius * data.scale, data.sight_radius * data.scale);
+                zone.emplace<Component::Sight_Range>(entity, data.sight_radius * data.scale, position.x - (data.sight_radius / 2.0f * data.scale), position.y - (data.sight_radius / 2.0f * data.scale), data.sight_radius * data.scale, data.sight_radius * data.scale);
             }
         }
             //static entities

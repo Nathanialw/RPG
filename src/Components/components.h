@@ -370,6 +370,11 @@ namespace Component {
 		SDL_FRect sightBox;
 	};
 
+    struct Target_Range {
+        float range;
+        SDL_FRect rangeBox;
+    };
+
     struct Alert {
         float sightRange;
     };

@@ -107,6 +107,16 @@ namespace AI {
 		}
 	}
 
+    void Update_Player_Target_Range(entt::registry &zone) {
+        //could add Component::Moving so it only updates when the entity moves
+        auto view = zone.view<Component::Target_Range, Component::Position, Component::Alive>();
+        for (auto entity : view) {
+            auto& sight = view.get<Component::Target_Range>(entity);
+            auto& position = view.get<Component::Position>(entity);
+            sight.rangeBox = { position.x - (sight.range/2.0f), position.y - (sight.range/2.0f), sight.range, sight.range };
+        }
+    }
+
 	void Turn_On() {
 		if (b_AI == false) {
             b_AI = true;
@@ -124,6 +134,7 @@ namespace AI {
             if (time >= 100) {
                 time = 0;
                 Update_Sight_Box(zone);
+                Update_Player_Target_Range(zone);
                 Check_For_Targets(zone);
             }
 		}
