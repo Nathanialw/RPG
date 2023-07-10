@@ -7,6 +7,14 @@ namespace Utilities {
 		std::cout << string << std::endl;
 	}
 
+    void Log(const int &string) {
+        std::cout << string << std::endl;
+    }
+
+    void Log(const float &string) {
+        std::cout << string << std::endl;
+    }
+
 	SDL_FRect worldToScreen(SDL_FRect& Rect, SDL_FRect &camera) {
 		SDL_FRect screenRect = {};
 

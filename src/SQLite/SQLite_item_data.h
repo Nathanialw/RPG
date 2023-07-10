@@ -120,7 +120,7 @@ namespace SQLite_Item_Data {
 
             Items[vec][item_type].emplace_back(item_name);
         }
-        Utilities::Log(Items.size());
-        Utilities::Log("Loading items success!");
+//        Utilities::Log(Items.size());
+//        Utilities::Log("Loading items success!");
     }
 }

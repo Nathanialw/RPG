@@ -36,7 +36,7 @@ namespace Game_Loop {
     void Game_Loop() {
         Game_State();
         while (running == true) {
-
+            Game_State();
             //Squad_Control::Create_And_Fill_New_Squad(World::zone);
             //Test_Units::Create_Formation(World::zone);
 

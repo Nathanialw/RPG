@@ -29,7 +29,7 @@ namespace Texture_Packer_Item {
             item_name = SQLite_Item_Data::Items.at(equip_type).at(SQLite_Item_Data::Get_Item_Type(slot))[rand() % SQLite_Item_Data::Items.at(equip_type).at(SQLite_Item_Data::Get_Item_Type(slot)).size()];
         }
         else {
-            Utilities::Log("Get_Sprite_Sheet(std::string &slot) item not found for the given unit_type and slot");
+            Utilities::Log("Get_Sprite_Sheet(std::string &slot) item unit_Type: " + equip_type + " - slot: " + slot + " - not found for the given unit_type and slot");
             Data data;
             return data;
         }
@@ -110,7 +110,6 @@ namespace Texture_Packer_Item {
             return {NULL, ""};
         }
 
-        Utilities::Log(dbData.xml_path);
         spriteSheetData.LoadFile(path);
 
         tinyxml2::XMLElement* pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
@@ -152,9 +151,9 @@ namespace Texture_Packer_Item {
 
         Packer_Textures_Items[dbData.item_name] = spritesheet;
 
-        for (auto aa : spritesheet.actionFrameData) {
-            std::cout << "state: " << aa.first << ", start frame: " << aa.second.startFrame << ", number of frames: " << aa.second.NumFrames << std::endl;
-        }
+//        for (auto aa : spritesheet.actionFrameData) {
+//            std::cout << "state: " << aa.first << ", start frame: " << aa.second.startFrame << ", number of frames: " << aa.second.NumFrames << std::endl;
+//        }
 
         Item_Data_And_Index values;
         values.itemData = &Packer_Textures_Items;

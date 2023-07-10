@@ -6,6 +6,7 @@
 #include <SDL2/SDL_mixer.h>
 #include "sdlogv/theora.h"
 #include "graphics.h"
+#include "ui_elements.h"
 
 namespace Video {
     struct Video {
@@ -18,11 +19,13 @@ namespace Video {
     Video video;
     bool playingVideo = false;
     theora_t ctx = {0};
+    int8_t volume = 5;
 
     static void callback(int channel) {
         Mix_Chunk *audio = theora_audio(&ctx);
         /* could we get some audio data? If so, play it! */
         if (audio)
+            audio->volume = volume;
             Mix_PlayChannel(channel, audio, 0);
     }
 
@@ -60,9 +63,9 @@ namespace Video {
     }
 
     SDL_FRect Size_Video(Video video) {
-        SDL_DisplayMode dm;
-        SDL_GetWindowDisplayMode(Graphics::window, &dm);
-
+//        SDL_DisplayMode dm;
+//        SDL_GetWindowDisplayMode(Graphics::window, &dm);
+        SDL_FRect dm = UI::Get_Resolution();
         video.rect.w = dm.w;
         video.rect.h = ctx.h * dm.w / ctx.w;
         if (video.rect.h > dm.h) {
@@ -120,11 +123,9 @@ namespace Video {
 
     bool Play_Video(Video &video) {
         if (theora_playing(&ctx) && !got_sigint) {
-            printf("Playing started...\n");
             theora_video(&ctx, video.texture);
             SDL_FRect rect = Size_Video(video);
             SDL_RenderCopyF(Graphics::renderer, video.texture, NULL, &rect);
-            printf("Finished playing\n");
             return true;
         } else {
             return false;
@@ -151,11 +152,6 @@ namespace Video {
         if (!f) {
             fprintf(stderr, "unable to open file\n");
         }
-        /************************************************************************/
-        /***                  get the duration in millisec                    ***/
-        /************************************************************************/
-
-        printf("Duration: %lu msec\n", theora_getduration(f));
 
         /************************************************************************/
         /***                       start the decoder                          ***/

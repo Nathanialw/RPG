@@ -10,6 +10,7 @@
 #include "item_components.h"
 #include "spellbook.h"
 #include "ui_actionbar.h"
+#include "procedural_generator.h"
 
 
 namespace Create_Entities {
@@ -111,6 +112,8 @@ namespace Create_Entities {
         return false;
     }
 
+    Procedural_Components::Seed seed;
+
     void Create_Entity(entt::registry& zone, float x, float y, std::string name, std::string entity_class, bool is_random, std::string imgpath, bool &player) {
         auto entity = zone.create();
         Entity_Loader::Data data;
@@ -157,6 +160,14 @@ namespace Create_Entities {
         //Add shared components
         auto& position = zone.emplace<Component::Position>(entity, x, y);
         auto& scale = zone.emplace<Component::Scale>(entity, data.scale);
+//            randomly scale trees
+        if (is_random == 1) {
+            seed.seed = Procedural_Generation::Create_Initial_Seed(position.x, position.y);
+            float type = Procedural_Generation::Random_Int(0.5f, 1.5f, seed);
+            scale.scale = type;
+            data.scale = type;
+        }
+//
         auto &radius = zone.emplace<Component::Radius>(entity, (data.radius * data.scale));
         zone.emplace<Component::Interaction_Rect>(entity, (x - data.interact_r) * data.scale, (y - data.interact_h / 2.0f) * data.scale, (data.interact_r * 2.0f) * data.scale, data.interact_h * data.scale);
 
