@@ -183,6 +183,9 @@ namespace Spritesheet_Structs {
             if (checkAction == "Attack One Handed Side Slash") {
                 action = Action_Component::Action_State::attack;
                 actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "Attack One Handed Overhead") {
+                action = Action_Component::Action_State::attack2;
+                actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "Idle3") {
                 action = Action_Component::Action_State::idle;
                 actionFrameData[action].frameSpeed = i;

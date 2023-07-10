@@ -207,7 +207,7 @@ namespace Spells {
             player = input;
         }
         if (World::zone.get<Component::Caster>(spell_ID).caster == player) {
-            Damage_Text::Add_To_Scrolling_Damage(World::zone, spell_ID, struck_ID, damage);
+            Damage_Text::Add_To_Scrolling_Damage(World::zone, spell_ID, struck_ID, damage, false);
         }
         auto& struck = World::zone.get_or_emplace<Component::Struck>(struck_ID);
         struck.struck += damage;

@@ -28,7 +28,7 @@ namespace Unit_Status {
 						int damage = Combat_Control::Calculate_Damage(damageRange);
 
 						auto &caster_ID = zone.get<Component::Caster_ID>(collide.InteractionList[i].entity).caster_ID;
-						Damage_Text::Add_To_Scrolling_Damage(zone, caster_ID, entity, damage);
+						Damage_Text::Add_To_Scrolling_Damage(zone, caster_ID, entity, damage, false);
 						//std::cout << damage << std::endl;
 
 						auto& struck = zone.get_or_emplace<Component::Struck>(entity);

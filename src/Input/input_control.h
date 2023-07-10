@@ -44,7 +44,7 @@ namespace Input_Control {
         }
     }
 
-    bool Check_For_Mouse_Target(entt::registry& zone, bool showGroundItems, entt::entity& player_ID, Component::Position& playerPosition, Component::Melee_Range& meleeRange) {
+    bool Check_For_Mouse_Target(entt::registry& zone, bool showGroundItems, entt::entity& player_ID, Component::Position& playerPosition) {
         if (Social_Control::Enemy_Selected(zone, player_ID)) {
             if (World::zone.any_of<Component::Attacking>(player_ID) == true) {
                 return true;

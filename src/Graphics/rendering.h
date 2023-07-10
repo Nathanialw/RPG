@@ -136,6 +136,9 @@ namespace Rendering {
 
         action.frameTime += Timer::timeStep;
         if (action.frameState == Action_Component::last) {
+            if (action.state == Action_Component::attack2) {
+                action.state = Action_Component::idle2;
+            }
             action.frameState = Action_Component::start;
         }
         if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
@@ -146,7 +149,7 @@ namespace Rendering {
                 if (action.state == Action_Component::dying || action.state == Action_Component::dead) {
 
                 }
-                else if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::cast && action.state != Action_Component::casting) {
+                else if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::attack2 && action.state != Action_Component::cast && action.state != Action_Component::casting) {
                     action.state = Action_Component::idle;
                 }
                 else if (action.state == Action_Component::struck || action.state == Action_Component::attack || action.state == Action_Component::cast) {
@@ -231,7 +234,7 @@ namespace Rendering {
                 /// reset at the start so it had a chance loop through the logic once to trigger end of state actions
                 if (action.frameState == Action_Component::start) {
 
-                    if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::dying && action.state != Action_Component::dead) {
+                    if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::attack2 && action.state != Action_Component::dying && action.state != Action_Component::dead) {
                         action.state = Action_Component::idle;
                     } else if (action.state == Action_Component::struck || action.state == Action_Component::attack) {
                         action.state = Action_Component::idle;
@@ -268,6 +271,9 @@ namespace Rendering {
 
                     if (action.state != Action_Component::walk && action.state != Action_Component::run) {
                         action.frameState = Action_Component::last;
+                    }
+                    if (action.state == Action_Component::attack2) {
+                        action.state = Action_Component::idle;
                     }
                     action.frame = 0;
                 }

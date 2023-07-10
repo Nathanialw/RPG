@@ -413,6 +413,7 @@ namespace Component {
 		SDL_FPoint position;
 		std::string damageText;
 		int lingerTime;
+        bool special;
 	};
 
 

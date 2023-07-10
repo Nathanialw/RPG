@@ -143,7 +143,12 @@ namespace Movement {
 				auto& act = view.get<Action_Component::Action>(entity);
 				auto& v = view.get<Component::Velocity>(entity);
 				auto& mov = view.get<Component::Mouse_Move>(entity);
-				act.state = Action_Component::walk;
+
+//                temporary fix so the player can move and use an instant attack and still get the animation
+                if (act.state != Action_Component::attack2) {
+				    act.state = Action_Component::walk;
+                }
+
 				v.magnitude.x = v.speed * (mov.fX_Destination - position.x);
 				v.magnitude.y = v.speed * (mov.fY_Destination - position.y);
 				auto& pBody = view.get<Component::Body>(entity).body;

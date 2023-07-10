@@ -61,7 +61,7 @@ namespace Combat_Control {
                     int damage = Calculate_Damage(damageRange);
 
                     if (zone.any_of<Component::Input>(entity)) {
-                        Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage);
+                        Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, false);
                     }
 
                     auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);

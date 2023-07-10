@@ -14,6 +14,7 @@
 #include "menu.h"
 #include "events.h"
 #include "pause.h"
+#include "instant_attack.h"
 
 namespace Event_Handler {
 
@@ -72,8 +73,7 @@ namespace Event_Handler {
 					{
 //					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
                     case SDLK_1: break;
-//					case SDLK_2: Death_Spells::Summon_Skeleton(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "skeleton");  break;
-					case SDLK_2: break;
+					case SDLK_2: Instant_Attack::Instant_Attack(zone, entity); break;
 					case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
 					case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;
 					case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
@@ -135,7 +135,7 @@ namespace Event_Handler {
 				}
                 if (Mouse::itemCurrentlyHeld == false) {
                     User_Mouse_Input::Update_Move_Command_Box();
-                    if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition, meleeRange)) {
+                    if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition)) {
                         Mouse::bRight_Mouse_Pressed = false; //otherwise mouse move will override attack move
                     }
                     else {
