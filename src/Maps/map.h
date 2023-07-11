@@ -28,14 +28,37 @@ namespace Maps {
 
             for (const auto &layer: layers)
             {
-                if (layer->getName() == "widgets")
+                if (layer->getName() == "ground")
                 {
+                    if (layer->getType() == tmx::Layer::Type::Tile) {
+                        for (auto &tiles : map.getTilesets()) {
+                            std::string name = tiles.getName();
+                            std::string imgpath = tiles.getImagePath();
+                            Graphics::Create_Tileset(name, imgpath.c_str());
+                        }
+                    }
+                }
 
+                else if (layer->getName() == "widgets")
+                {
+                    if (layer->getType() == tmx::Layer::Type::Tile) {
+                        for (auto &tiles : map.getTilesets()) {
+                            std::string name = tiles.getName();
+                            std::string imgpath = tiles.getImagePath();
+                            Graphics::Create_Tileset(name, imgpath.c_str());
+                        }
+                    }
                 }
 
                 else if (layer->getName() == "taller_widgets1")
                 {
-
+                    if (layer->getType() == tmx::Layer::Type::Tile) {
+                        for (auto &tiles : map.getTilesets()) {
+                            std::string name = tiles.getName();
+                            std::string imgpath = tiles.getImagePath();
+                            Graphics::Create_Tileset(name, imgpath.c_str());
+                        }
+                    }
                 }
 
                 else if (layer->getName() == "unit_spawns")
@@ -119,7 +142,7 @@ namespace Maps {
 
                         std::string texture = templateTilesets.at(tilesetName).getImagePath();
                         std::string temptexture = "assets/" + texture;
-
+                        Utilities::Log(name);
                         if (!Create_Entities::Polygon_Building(World::zone, x, y, name, entity_class, texture, aabb, pointVecs, line))
                         {
                             Create_Entities::Create_Entity(World::zone, x, y, name, entity_class, is_random, texture, player);

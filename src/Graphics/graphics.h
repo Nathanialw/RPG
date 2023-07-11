@@ -161,7 +161,6 @@ namespace Graphics {
         return icon_entity;
     }
 
-
     //both unitID and filepath are stored in tiled map object
     void Load_Texture(int &unitID, const char* filepath)
     {
@@ -191,7 +190,28 @@ namespace Graphics {
         //to render it jsut needs access to the texture array and the unitID
     }
 
-
+    //when creating the game objet
+    void Create_Tileset(std::string &name, const char* filepath)
+    {
+        if (pTexture[name] == NULL)
+        {
+            pTexture[name] = createTexture(filepath);
+            if (pTexture[name] == NULL)
+            {
+                std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
+            }
+            else
+            {
+                //	std::cout << "loaded from file: " << filepath << std::endl;
+            }
+        }
+        else
+        {
+            //std::cout << "already loaded: " << filepath << std::endl;
+            //unitTextures[unitID];
+        }
+        //to render it jsut needs access to the texture array and the unitID
+    }
 
     void Load_Textures(entt::registry& zone)
     {

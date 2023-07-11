@@ -112,6 +112,12 @@ namespace Create_Entities {
         return false;
     }
 
+    void Set_Map_Texture(std::string &name, std::string imgpath) {
+        int unit_ID = 0;
+        unit_ID = Check_For_Template_ID(name);
+        Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
+    }
+
     Procedural_Components::Seed seed;
 
     void Create_Entity(entt::registry& zone, float x, float y, std::string name, std::string entity_class, bool is_random, std::string imgpath, bool &player) {

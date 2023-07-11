@@ -304,7 +304,7 @@ namespace World
 
                 SDL_Texture *texture = World_Data::tiles[type];
 
-                SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
+//                SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
             }
         }
     }

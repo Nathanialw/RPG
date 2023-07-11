@@ -537,6 +537,7 @@ namespace Rendering {
         SDL_RenderClear(Graphics::renderer);
 
         World::Render(camera);
+        Render_Iso_Tiles(zone, Maps::map, camera);
 
         Animation_Frame(zone, camera);
         Render_Explosions(zone, camera);
