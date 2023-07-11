@@ -612,6 +612,7 @@ namespace Rendering {
         World::Render(camera);
 //        Render_Iso_Tiles(zone, Maps::map, camera);
 //        Render_Ortho_Tiles(zone, Maps::map, camera);
+        Interface::Background();
 
         Animation_Frame(zone, camera);
         Render_Explosions(zone, camera);
@@ -750,7 +751,7 @@ namespace Rendering {
             Pause::Pause_Control(camera);
             Menu::Render_Menu(zone, camera);
             //Mouse
-            Interface::Run_Interface(zone, camera);
+            Interface::Foreground(zone, camera);
             //on top of mouse
             Tooltip::Show_Item_Tooltip(zone, mouse, camera);
             Render_Mouse_Item(zone, camera);

@@ -13,7 +13,6 @@ namespace Graphics_Component {
 }
 
 namespace Graphics {
-
         bool running;
         SDL_FRect resolution = { 0.0f, 0.0f, 1920.0f, 1200.0f };
         const char* title = "RPG";
@@ -54,6 +53,7 @@ namespace Graphics {
     SDL_Texture* fireball_explosion_0;
     SDL_Texture* itsmars_Inventory;
     SDL_Texture* cursor_0;
+    SDL_Texture* selector;
     SDL_Texture* weapons_icons;
     SDL_Texture* default_icon;
     SDL_Texture* emptyBagIcon;
@@ -67,7 +67,6 @@ namespace Graphics {
     SDL_Texture* spellbook;
 
     SDL_Texture* tooltipBackground;
-
 
     void Render_Rect(SDL_Texture* pTexture, SDL_Rect& clipSprite, SDL_Rect& scaledSlot)
     {
@@ -88,7 +87,6 @@ namespace Graphics {
         return color;
     }
 
-
     void Render_FRect(SDL_Texture* texture, Rendering_Components::Color color, const SDL_Rect* sourceRect, SDL_FRect* targetRect)
     {
         SDL_SetTextureColorMod( texture, color.r, color.g, color.b );
@@ -101,7 +99,6 @@ namespace Graphics {
         SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);	        //convert Surface to texture
 
         SDL_Rect k = surface->clip_rect;
-
 
         Surface_Data text_data = { texture, k };
         SDL_FreeSurface(surface);														//free surface memory
@@ -123,8 +120,6 @@ namespace Graphics {
         SDL_Rect textBoxBackground = Utilities::SDL_FRect_To_SDL_Rect(textBox);
         textBoxBackground.x -= 5;
         textBoxBackground.w += 10;
-
-
 
         Graphics::Surface_Data itemTextBox = Graphics::Load_Text_Texture(text, textColor);
 
@@ -221,6 +216,7 @@ namespace Graphics {
         weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
         itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");
         cursor_0 = createTexture("assets/sprites/UI/cursors/cursor.png");
+        selector = createTexture("assets/sprites/UI/selector/brush-ring/brush-ring-32x32-0.png");
 
         emptyBagIcon = createTexture("assets/sprites/UI/icon_borders/32x32_BagSlotBorder.png"); // currently NULL
         bagSlotBorder = createTexture("assets/sprites/UI/icon_borders/32x32_BagSlotBorder.png");

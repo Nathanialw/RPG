@@ -5,6 +5,7 @@
 #include "graphics.h"
 #include "debug_system.h"
 #include "components.h"
+#include "social_control.h"
 
 
 namespace Interface {
@@ -94,7 +95,6 @@ namespace Interface {
 			case Test::Formation_Type::army: { SDL_SetRenderDrawColor(Graphics::renderer, 255, 55, 0, 125); }; break;
 			}
 
-
 			SDL_FRect renderRectScreen = formation.sCollide_Box;
 			renderRectScreen.x -= camera.screen.x;
 			renderRectScreen.y -= camera.screen.y;
@@ -104,32 +104,31 @@ namespace Interface {
 		//std::cout << i << std::endl;
 	}
 
-
 	void Display_Selected() {
 		auto view1 = World::zone.view<Component::Camera>();
 		auto view = World::zone.view<Component::Selected, Component::Position, Component::Radius>();
-		SDL_Color a = { 155, 255, 50, 255 };
-		for (auto focus : view1) {
+
+        for (auto focus : view1) {
 			auto& camera = view1.get<Component::Camera>(focus);
 			for (auto entity : view) {
 				auto& position = view.get<Component::Position>(entity);
 				auto& radius = view.get<Component::Radius>(entity);
+                Rendering_Components::Color color;
                 if (Social_Control::Check_Relationship(World::zone, focus, entity)) {
-                    SDL_SetRenderDrawColor(Graphics::renderer, 255, 55, 55, 255);
+                    color = {255, 55, 55};
                 }
                 else {
-                    SDL_SetRenderDrawColor(Graphics::renderer, 55, 255, 55, 255);
+                    color = {55, 255, 55};
                 }
-				SDL_FRect p = { position.x - radius.fRadius, position.y - radius.fRadius, radius.fRadius * 2, radius.fRadius * 2 };
+
+				SDL_FRect p = { position.x - radius.fRadius, position.y, radius.fRadius * 2, radius.fRadius };
 				SDL_FRect s = Camera_Control::Convert_Rect_To_Screen_Coods(World::zone, p, camera);
 
-
-				SDL_RenderDrawRectF(Graphics::renderer, &s);
-				Debug_System::Entity_Data_Debug(position.x, position.y, position.x, position.y);
+                Graphics::Render_FRect(Graphics::selector, color, NULL, &s);
+//				Debug_System::Entity_Data_Debug(position.x, position.y, position.x, position.y, camera);
 			}
 		}
 	}
-
 
 	void Display_Selection_Box() {
 		if (Mouse::bLeft_Mouse_Pressed) {
@@ -138,7 +137,6 @@ namespace Interface {
 			SDL_RenderDrawRectF(Graphics::renderer, &p);
 		}
 	}
-
 
 	void Display_Mouse() {
 		auto view = World::zone.view<Component::Camera>();
@@ -152,8 +150,6 @@ namespace Interface {
 
 		}
 	}
-
-
 
 	void Show_Grid(Map::Node3& terrain) {
 		SDL_SetRenderDrawColor(Graphics::renderer, 255, 155, 255, 255);
@@ -254,17 +250,19 @@ namespace Interface {
 		}
 	}
 
-	void Run_Interface(entt::registry &zone, Component::Camera &camera) {
+    void Background () {
+		Display_Selected();
+    }
+
+	void Foreground(entt::registry &zone, Component::Camera &camera) {
 
 //		Show_Grid(Map::terrain);
 		//Display_Military_Groups();
 		//Display_Unit_Formations(camera);
 		Debug_System::Framerate(camera);
 		//Unit_Arrive_UI();
-		Display_Selected();
 		Display_Mouse();
 		Display_Selection_Box();
 		//Show_Attacks();
-
 	}
 }
