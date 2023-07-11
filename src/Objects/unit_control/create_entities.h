@@ -177,7 +177,7 @@ namespace Create_Entities {
         auto &radius = zone.emplace<Component::Radius>(entity, (data.radius * data.scale));
         zone.emplace<Component::Interaction_Rect>(entity, (x - data.interact_r) * data.scale, (y - data.interact_h / 2.0f) * data.scale, (data.interact_r * 2.0f) * data.scale, data.interact_h * data.scale);
 
-        zone.emplace<Component::Mass>(entity, data.mass * data.scale);
+        zone.emplace<Component::Mass>(entity, data.mass/* * data.scale*/);
         zone.emplace<Component::Alive>(entity, true);
         zone.emplace<Component::Unit>(entity);
         zone.emplace<Rendering_Components::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
@@ -216,7 +216,7 @@ namespace Create_Entities {
             }
 
             bool yes = true;
-            Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius * data.scale, data.mass * data.scale, yes);
+            Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius * data.scale, data.mass/* * data.scale*/, yes);
             zone.emplace<Collision_Component::Dynamic_Collider>(entity);
 
             //do not attach to non combat

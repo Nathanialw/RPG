@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="git" orientation="orthogonal" renderorder="right-down" width="288" height="144" tilewidth="512" tileheight="512" infinite="0" nextlayerid="3" nextobjectid="15">
+<map version="1.10" tiledversion="git" orientation="orthogonal" renderorder="right-down" width="288" height="144" tilewidth="512" tileheight="512" infinite="0" nextlayerid="3" nextobjectid="17">
  <tileset firstgid="1" source="../sprite_sheets/ground_tiles/grassland_tiles_x2.tsx"/>
  <tileset firstgid="673" source="../sprite_sheets/environment/ground_tiles/grass/Grass_15_Tile.tsx"/>
  <tileset firstgid="674" source="../sprite_sheets/units/2nd_cast/elf/male/Male_ArcherElven.tsx"/>
@@ -8,6 +8,7 @@
  <tileset firstgid="2426" source="../sprite_sheets/environment/ground_tiles/beach/Beach_1_Tile.tsx"/>
  <tileset firstgid="2427" source="../sprite_sheets/units/2nd_cast/elf/female/Female_ArcherElven.tsx"/>
  <tileset firstgid="3807" source="../sprite_sheets/units/2nd_cast/skeletons/male/Male_Skeleton.tsx"/>
+ <tileset firstgid="5557" source="../sprite_sheets/units/monsters/dragons/red_dragon.tsx"/>
  <layer id="1" name="ground" width="288" height="144">
   <data encoding="base64" compression="zlib">
    eJztw0ENAAAIBKCbPyvbxqYGETamky1VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV/fkAP4wr6g==
@@ -29,5 +30,6 @@
   <object id="12" template="../spawn_points/unit_spawns/2nd_cast/skeletons/male/Male_Skeleton.tx" x="1636.36" y="833.333"/>
   <object id="13" template="../spawn_points/unit_spawns/2nd_cast/skeletons/male/Male_Skeleton.tx" x="1418.18" y="978.788"/>
   <object id="14" template="../spawn_points/unit_spawns/2nd_cast/skeletons/male/Male_Skeleton.tx" x="893.939" y="1524.24"/>
+  <object id="16" template="../spawn_points/unit_spawns/monsters/dragons/Dragon_Red.tx" x="1615.15" y="1484.85"/>
  </objectgroup>
 </map>

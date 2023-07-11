@@ -13,8 +13,8 @@ namespace  World_Data
     };
 
     struct Tile_Size {
-        float width = 1024.0f;
-        float height = 1024.0f;
+        float width = 512.0f;
+        float height = 512.0f;
     };
 
     struct Offset {
@@ -292,7 +292,7 @@ namespace World
 //                World_Data::Tile_Type type = (World_Data::Tile_Type)Procedural_Generation::Random_Int(0, textureArraySize, seed);
 
 //                index to get ground texture
-                int type = 74;
+                int type = 73;
 
                 SDL_FRect renderRect;
                 renderRect.x = i * size.width - camera.screen.x;
@@ -300,11 +300,9 @@ namespace World
                 renderRect.w = size.width;
                 renderRect.h = size.height;
 
-                SDL_Rect clipRect = {0,0,(int)size.width,(int)size.height};
-
                 SDL_Texture *texture = World_Data::tiles[type];
 
-                SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
+                SDL_RenderCopyF(Graphics::renderer, texture, NULL, &renderRect);
             }
         }
     }
