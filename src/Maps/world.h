@@ -13,8 +13,8 @@ namespace  World_Data
     };
 
     struct Tile_Size {
-        float width = 512.0f;
-        float height = 512.0f;
+        float width = 1024.0f;
+        float height = 1024.0f;
     };
 
     struct Offset {
@@ -150,7 +150,7 @@ namespace World
         World_Data::tiles[71] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_14_Tile.png");
         World_Data::tiles[72] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_15_Tile.png");
         World_Data::tiles[73] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_16_Tile.png");
-        World_Data::tiles[74] = Graphics::createTexture("assets/sprites/environment/ground_tiles/GroundTextures_Large_1/Forest_17_Tile.png");
+        World_Data::tiles[74] = Graphics::createTexture("assets/House_Blood.png");
     }
 
     void Create_Map (World_Data::Offset offset)
@@ -304,7 +304,7 @@ namespace World
 
                 SDL_Texture *texture = World_Data::tiles[type];
 
-//                SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
+                SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
             }
         }
     }

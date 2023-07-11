@@ -165,6 +165,15 @@ namespace Event_Handler {
             while (SDL_PollEvent(&Events::event) != 0) {
                 auto view = zone.view<Component::Velocity, Action_Component::Action, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
                 for (auto player_ID: view) {
+                    if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
+//                        recenter camera on player
+
+                        UI_Spellbook::Update_Position();
+                        Action_Bar::Update_Position();
+                        Menu::Build_Menu();
+                        break;
+                    }
+
                     auto &playerPosition = view.get<Component::Position>(player_ID);
                     auto &meleeRange = view.get<Component::Melee_Range>(player_ID);
                     auto &playerVelocity = view.get<Component::Velocity>(player_ID);
@@ -187,14 +196,6 @@ namespace Event_Handler {
                     //	if (event.jaxis.axis == 0) {
                     //	std::cout << event.jaxis.value << std::endl;
                     //	}
-                    if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
-//                        recenter camera on player
-
-                        UI_Spellbook::Update_Position();
-                        Action_Bar::Update_Position();
-                        Menu::Build_Menu();
-
-                    }
                 }
             }
         }

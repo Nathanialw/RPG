@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="git" orientation="orthogonal" renderorder="right-down" width="288" height="144" tilewidth="512" tileheight="512" infinite="0" nextlayerid="3" nextobjectid="7">
+ <tileset firstgid="1" source="../sprite_sheets/ground_tiles/grassland_tiles_x2.tsx"/>
+ <tileset firstgid="673" source="../sprite_sheets/environment/ground_tiles/grass/Grass_15_Tile.tsx"/>
+ <tileset firstgid="674" source="../sprite_sheets/units/2nd_cast/elf/male/Male_ArcherElven.tsx"/>
+ <tileset firstgid="2424" source="../sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx"/>
+ <tileset firstgid="2425" source="../sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx"/>
+ <tileset firstgid="2426" source="../sprite_sheets/environment/ground_tiles/beach/Beach_1_Tile.tsx"/>
+ <layer id="1" name="ground" width="288" height="144">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAIBKCbPyvbxqYGETamky1VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV/fkAP4wr6g==
+  </data>
+ </layer>
+ <objectgroup id="2" name="unit_spawns">
+  <object id="4" template="../spawn_points/unit_spawns/2nd_cast/elf/male/Male_ArcherElven.tx" x="503.27" y="451">
+   <properties>
+    <property name="player" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="5" template="../spawn_points/buildings/houses/Medieval_Expansion_Ruins_13.tx" x="1113.74" y="831.879"/>
+  <object id="6" template="../spawn_points/buildings/houses/Medieval_Expansion_House_9.tx" x="210.712" y="1437.91"/>
+ </objectgroup>
+</map>

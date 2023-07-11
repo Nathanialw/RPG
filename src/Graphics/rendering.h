@@ -135,11 +135,18 @@ namespace Rendering {
     void Frame_Increment(entt::entity &entity, Component::Scale &scale, Sprite_Sheet_Info &sheetData, Action_Component::Action &action, Component::Direction &direction) {
 
         action.frameTime += Timer::timeStep;
+
         if (action.frameState == Action_Component::last) {
-            if (action.state == Action_Component::attack2) {
-                action.state = Action_Component::idle2;
+            if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses && (action.state != Action_Component::dying || action.state != Action_Component::dead)) {
+                if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
+                    action.state = Action_Component::idle2;
+                    action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
+                    action.frameState = Action_Component::start;
+                }
             }
-            action.frameState = Action_Component::start;
+            else {
+                action.frameState = Action_Component::start;
+            }
         }
         if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
             action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
@@ -374,8 +381,8 @@ namespace Rendering {
                 }
 
 //                render unit
-                Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData, action, direction);
                 Frame_Increment(entity, scale, sheetData, action, direction);
+                Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData, action, direction);
 
 //                render equipment
                 if (view.contains(entity)) {
@@ -466,8 +473,6 @@ namespace Rendering {
 
     void Render_Iso_Tiles(entt::registry &zone, tmx::Map& map, Component::Camera& camera)
     {
-        SDL_RenderClear(Graphics::renderer);
-
         float originX = 0.0f;
         float originY = 0.0f;
         SDL_Rect tileSpriteRect = {0, 0, (int) map.getTileSize().x, (int) map.getTileSize().y};
@@ -533,11 +538,80 @@ namespace Rendering {
         }
     }
 
+    void Render_Ortho_Tiles(entt::registry &zone, tmx::Map& map, Component::Camera& camera)
+    {
+        float originX = 0.0f;
+        float originY = 0.0f;
+        SDL_Rect tileSpriteRect = {0, 0, (int) map.getTileSize().x, (int) map.getTileSize().y};
+        SDL_FRect renderPosition = {0.0f, 0.0f, (float) map.getTileSize().x, (float) map.getTileSize().y};
+        auto &numOfTiles = map.getTileCount();
+        auto &layers = map.getLayers();
+        const auto tileWidth = (float) map.getTileSize().x;
+        const auto tileHeight = (float) map.getTileSize().y;
+        int newX = (int) camera.screen.x;
+        int newY = (int) camera.screen.y;
+
+        int X = (newX / tileWidth);
+        int Y = (newY / tileHeight);
+
+        int width = X + (camera.screen.w / tileWidth);
+        int height = Y + (camera.screen.h / tileHeight);
+
+        int g = 0;
+        //int o = 0;
+        auto &tilesets = Maps::map.getTilesets();
+        int p = Maps::map.getTilesets().size() - 1;
+        for (int i = 0; i < layers.size(); i++) {
+            if (layers[i]->getType() == tmx::Layer::Type::Tile) {
+                const auto &tiles = layers[i]->getLayerAs<tmx::TileLayer>().getTiles();
+                if (i == 2) {
+                    /// renders all objects just above the 2nd layer but below the 3rd in tiled
+                }
+                for (int x = X; x < width; x++) {
+                    if (x < 0) { x = 0; }
+                    for (int y = Y; y < height; y++) {
+                        //h++;
+                        if (y < 0) { y = 0; }
+                        if (x >= numOfTiles.x) { break; }
+                        if (y >= numOfTiles.y) { break; }
+                        renderPosition.x = originX + (x * tileWidth);
+                        renderPosition.y = originY + (y * tileHeight);
+                        renderPosition.x -= camera.screen.x;;
+                        renderPosition.y -= camera.screen.y;;
+
+                        int k = (numOfTiles.x * y) + x;
+                        auto id = tiles[k].ID;
+
+                        for (int tilesetCount = p; tilesetCount >= 0; --tilesetCount) {
+                            const tmx::Tileset *tileset = &tilesets[tilesetCount];
+                            if (tileset->getFirstGID() - 1 <= id) {
+                                id -= tilesets[tilesetCount].getFirstGID() - 1;
+                                std::string name = tileset->getName();
+                                int tileCount = tileset->getColumnCount();
+                                SDL_Rect data = getTexture(id, tileCount, tileSpriteRect);
+                                if (Graphics::pTexture[name] != NULL) {
+                                    Graphics::Render_FRect(Graphics::pTexture[name], {255, 255, 255}, &data, &renderPosition);
+                                }
+                                //h++;
+                                break;
+                            }
+                        }
+                    }
+                    g++;
+                }
+                if (i == 1) {
+
+                }
+            }
+        }
+    }
+
 	void Render_Map(entt::registry &zone, Component::Camera& camera) {
         SDL_RenderClear(Graphics::renderer);
 
         World::Render(camera);
-        Render_Iso_Tiles(zone, Maps::map, camera);
+//        Render_Iso_Tiles(zone, Maps::map, camera);
+//        Render_Ortho_Tiles(zone, Maps::map, camera);
 
         Animation_Frame(zone, camera);
         Render_Explosions(zone, camera);

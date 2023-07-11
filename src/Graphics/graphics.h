@@ -241,7 +241,7 @@ namespace Graphics {
 
     void createGraphicsContext(entt::registry& zone)
     {
-        window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED,  SDL_WINDOWPOS_CENTERED, resolution.w, resolution.h, SDL_WINDOW_RESIZABLE);
+        window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED,  SDL_WINDOWPOS_CENTERED, resolution.w, resolution.h, SDL_WINDOW_MAXIMIZED);
         renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
         SDL_SetHint(SDL_HINT_RENDER_BATCHING, "1");
         Load_Textures(zone);
