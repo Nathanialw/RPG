@@ -53,7 +53,7 @@ namespace Graphics {
   SDL_Texture* fireball_explosion_0;
   SDL_Texture* itsmars_Inventory;
   SDL_Texture* cursor_0;
-  SDL_Texture* selector;
+  SDL_Texture* selector32;
   SDL_Texture* weapons_icons;
   SDL_Texture* default_icon;
   SDL_Texture* emptyBagIcon;
@@ -216,7 +216,7 @@ namespace Graphics {
     weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
     itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");
     cursor_0 = createTexture("assets/sprites/UI/cursors/cursor.png");
-    selector = createTexture("assets/sprites/UI/selector/brush-ring/brush-ring-32x32-0.png");
+    selector32 = createTexture("assets/sprites/UI/selector/selector32.png");
 
     emptyBagIcon = createTexture("assets/sprites/UI/icon_borders/32x32_BagSlotBorder.png"); // currently NULL
     bagSlotBorder = createTexture("assets/sprites/UI/icon_borders/32x32_BagSlotBorder.png");

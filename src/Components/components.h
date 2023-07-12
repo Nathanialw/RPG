@@ -188,7 +188,12 @@ namespace Component {
   };
 
   struct Selected {
-
+    SDL_Texture* texture;
+    SDL_Rect clip;
+    int numFrames;
+    int currentFrame;
+    int frameLength;
+    int currentFrameTime;
   };
 
   struct Retinue {

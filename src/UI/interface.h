@@ -6,7 +6,7 @@
 #include "debug_system.h"
 #include "components.h"
 #include "social_control.h"
-
+#include "ui_unit_control.h"
 
 namespace Interface {
 
@@ -113,19 +113,22 @@ namespace Interface {
       for (auto entity : view) {
 	auto& position = view.get<Component::Position>(entity);
 	auto& radius = view.get<Component::Radius>(entity);
+	auto& selector = view.get<Component::Selected>(entity);
+	
 	Rendering_Components::Color color;
+
 	if (Social_Control::Check_Relationship(World::zone, focus, entity)) {
+	  //	  red if enemy
 	  color = {255, 55, 55};
 	}
 	else {
+	  //	  green if ally
 	  color = {55, 255, 55};
 	}
 
-	SDL_FRect p = { position.x - radius.fRadius, position.y, radius.fRadius * 2, radius.fRadius };
-	SDL_FRect s = Camera_Control::Convert_Rect_To_Screen_Coods(p, camera);
-
-	Graphics::Render_FRect(Graphics::selector, color, NULL, &s);
-	//				Debug_System::Entity_Data_Debug(position.x, position.y, position.x, position.y, camera);
+	SDL_FRect frect = { position.x - radius.fRadius, position.y, radius.fRadius * 2, radius.fRadius };
+	UI_Unit_Control::Loop_Sprite(selector, frect, color, camera);
+	//	Debug_System::Entity_Data_Debug(position.x, position.y, position.x, position.y, camera);
       }
     }
   }
