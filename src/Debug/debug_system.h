@@ -29,10 +29,10 @@ namespace Debug_System {
 		////SDL_RenderCopy(renderer, mass.pTexture, , );
 
 		SDL_FRect a = {sx+25, sy-20, 15, 15};
-        SDL_FRect c = Camera_Control::Convert_Rect_To_Screen_Coods(World::zone, a, camera);
+        SDL_FRect c = Camera_Control::Convert_Rect_To_Screen_Coods(a, camera);
 		SDL_RenderCopyF(Graphics::renderer, x_Position.pTexture, &x_Position.k, &c);
 		SDL_FRect b = { sx+25, sy-10, 15, 15 };
-        SDL_FRect s = Camera_Control::Convert_Rect_To_Screen_Coods(World::zone, b, camera);
+        SDL_FRect s = Camera_Control::Convert_Rect_To_Screen_Coods(b, camera);
 		SDL_RenderCopyF(Graphics::renderer, y_Position.pTexture, &y_Position.k, &s);
 		//SDL_Rect c = { sx, sy+20, 15, 10 };
 		//SDL_RenderCopy(renderer, collision_Radius.pTexture, &collision_Radius.k, &c);
