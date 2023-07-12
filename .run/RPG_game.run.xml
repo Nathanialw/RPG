@@ -1,7 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="RPG_game" type="CMakeRunConfiguration" factoryName="Application" activateToolWindowBeforeRun="false" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RPG_game" TARGET_NAME="RPG_game" RUN_TARGET_PROJECT_NAME="RPG_game" RUN_TARGET_NAME="RPG_game">
-    <method v="2">
-      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-    </method>
-  </configuration>
-</component>

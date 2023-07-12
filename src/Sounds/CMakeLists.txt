@@ -1,7 +1,7 @@
-target_sources(RPG_game
+target_sources(RPG
         PUBLIC
         combat_sounds.h
         sounds.h
 )
 
-target_include_directories(RPG_game PUBLIC ${CMAKE_CURRENT_LIST_DIR})
+target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

@@ -8,11 +8,13 @@ namespace UI {
     return box;
   }
 
-  SDL_FRect Center_Rect(SDL_Rect &clip) {
+  SDL_FRect Center_Rect(SDL_Rect clip) {
     int w;
     int h;
     SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
-    SDL_FRect rect = { ((float)(w / 2.0f) - (clip.w / 2.0f)), ((float)(h / 2.0f) - (clip.h / 2.0f)), 0, 0};
+    SDL_FRect rect;
+    rect.x = (w / 2.0f) - (clip.w / 2.0f);
+    rect.y = (h / 2.0f) - (clip.h / 2.0f);
     rect.w = clip.w;
     rect.h = clip.h;
     return rect;

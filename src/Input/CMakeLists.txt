@@ -1,4 +1,4 @@
-target_sources(RPG_game
+target_sources(RPG
         PUBLIC
         camera.h
         event_handler.h
@@ -11,4 +11,4 @@ target_sources(RPG_game
         player_control.h
 )
 
-target_include_directories(RPG_game PUBLIC ${CMAKE_CURRENT_LIST_DIR})
+target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

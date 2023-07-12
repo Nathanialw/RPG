@@ -6,7 +6,7 @@ include_directories(Components)
 include_directories(unit_control)
 include_directories(equip_unit)
 
-target_sources (RPG_game
+target_sources (RPG
         PUBLIC
         character_data.h
         character_stats.h
@@ -19,4 +19,4 @@ target_sources (RPG_game
         unit_status.h
 )
 
-target_include_directories(RPG_game PUBLIC ${CMAKE_CURRENT_LIST_DIR})
+target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

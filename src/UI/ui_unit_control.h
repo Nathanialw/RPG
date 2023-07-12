@@ -23,13 +23,12 @@ namespace UI_Unit_Control {
       }
       
       if (frame.texture) {
-	std::cout << frame.currentFrame << std::endl;
         clipRect.x = frame.clip.w * frame.currentFrame;
         SDL_FRect renderRect = Camera_Control::Convert_Rect_To_Screen_Coods(frect, camera);
         Graphics::Render_FRect(frame.texture, color, &clipRect, &renderRect);
       }
       else {
-	std::cout << "Loop_Sprite() selector texture not set" << std::endl;
+	std::cout << "Loop_Sprite() selector texture is NULL" << std::endl;
       }
     }
 

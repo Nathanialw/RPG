@@ -2,13 +2,15 @@
 #set(CMAKE_SYSTEM_NAME Windows)
 
 cmake_minimum_required(VERSION 3.22)
-project(RPG_game)
+project(RPG)
 
 
 link_directories(lib)
 
 set(CMAKE_CXX_STANDARD 20)
 set(ARCH amd64)
+set (CMAKE_CXX_FLAGS "-Wno-deprecated")
+
 
 include_directories(include)
 include_directories(src)
@@ -17,14 +19,14 @@ include_directories(src)
 #add_subdirectory(src)
 
 
-add_executable(RPG_game main.cpp sqlite3.c tinyxml2.cpp SDL_FontCache.c)
+add_executable(RPG main.cpp sqlite3.c tinyxml2.cpp SDL_FontCache.c)
 #target_sources(font SDL_FontCache.h)
 add_subdirectory(src)
 
 
-target_link_libraries(RPG_game -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer libbox2d.a libtmxlite.so -ltheoradec -ltheora -lvorbis -logg)
+target_link_libraries(RPG -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer libbox2d.a libtmxlite.so -ltheoradec -ltheora -lvorbis -logg)
 
-set_target_properties(RPG_game PROPERTIES COMPILE_FLAGS "-m64" LINK_FLAGS "-m64")
+set_target_properties(RPG PROPERTIES COMPILE_FLAGS "-m64" LINK_FLAGS "-m64")
 
 
 

@@ -1,4 +1,4 @@
-target_sources(RPG_game
+target_sources(RPG
         PUBLIC
         db.h
         SQLite_dialogue.h
@@ -8,4 +8,4 @@ target_sources(RPG_game
         SQLite_unit_data.h
 )
 
-target_include_directories(RPG_game PUBLIC ${CMAKE_CURRENT_LIST_DIR})
+target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

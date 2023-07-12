@@ -1,4 +1,4 @@
-target_sources(RPG_game
+target_sources(RPG
         PUBLIC
         combat_graphics.h
         graphics.h
@@ -13,5 +13,5 @@ target_sources(RPG_game
         texture_packer_item.h
 )
 
-target_include_directories(RPG_game PUBLIC ${CMAKE_CURRENT_LIST_DIR})
+target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})
 
