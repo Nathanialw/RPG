@@ -15,21 +15,11 @@
   </data>
  </layer>
  <objectgroup id="2" name="unit_spawns">
-  <object id="4" template="../spawn_points/unit_spawns/2nd_cast/elf/male/Male_ArcherElven.tx" x="503.27" y="451">
+  <object id="4" template="../spawn_points/unit_spawns/2nd_cast/elf/male/Male_ArcherElven.tx" x="1009.33" y="1220.7">
    <properties>
     <property name="player" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="5" template="../spawn_points/buildings/houses/Medieval_Expansion_Ruins_13.tx" x="1113.74" y="831.879"/>
-  <object id="6" template="../spawn_points/buildings/houses/Medieval_Expansion_House_9.tx" x="210.712" y="1437.91"/>
-  <object id="7" template="../spawn_points/unit_spawns/2nd_cast/elf/female/Female_ArcherElven.tx" x="490.909" y="596.97"/>
-  <object id="8" template="../spawn_points/unit_spawns/2nd_cast/elf/female/Female_ArcherElven.tx" x="724.242" y="654.545"/>
-  <object id="9" template="../spawn_points/unit_spawns/2nd_cast/elf/female/Female_ArcherElven.tx" x="942.424" y="503.03"/>
-  <object id="10" template="../spawn_points/unit_spawns/2nd_cast/elf/female/Female_ArcherElven.tx" x="815.152" y="342.424"/>
-  <object id="11" template="../spawn_points/unit_spawns/2nd_cast/elf/female/Female_ArcherElven.tx" x="751.515" y="384.848"/>
-  <object id="12" template="../spawn_points/unit_spawns/2nd_cast/skeletons/male/Male_Skeleton.tx" x="1636.36" y="833.333"/>
-  <object id="13" template="../spawn_points/unit_spawns/2nd_cast/skeletons/male/Male_Skeleton.tx" x="1418.18" y="978.788"/>
-  <object id="14" template="../spawn_points/unit_spawns/2nd_cast/skeletons/male/Male_Skeleton.tx" x="893.939" y="1524.24"/>
-  <object id="16" template="../spawn_points/unit_spawns/monsters/dragons/Dragon_Red.tx" x="1615.15" y="1484.85"/>
+  <object id="16" template="../spawn_points/unit_spawns/monsters/dragons/Dragon_Red.tx" x="1339.39" y="1278.79"/>
  </objectgroup>
 </map>

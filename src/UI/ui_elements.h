@@ -13,7 +13,10 @@ namespace UI {
         int w;
         int h;
         SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
-        return { ((float)(w / 2.0f) - (clip.w / 2.0f)), ((float)(h / 2.0f) - (clip.h / 2.0f)), (float)clip.w, (float)clip.h };
+	    SDL_FRect rect = { ((float)(w / 2.0f) - (clip.w / 2.0f)), ((float)(h / 2.0f) - (clip.h / 2.0f)), 0, 0};
+        rect.w = clip.w;
+        rect.h = clip.h;
+        return rect;
     }
 
     SDL_FRect Update_Scale(f2 &scale, SDL_FRect &rect) {

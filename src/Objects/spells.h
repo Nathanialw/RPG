@@ -81,7 +81,6 @@ namespace Spells {
 		    ///default data
 		World::zone.emplace<Component::Spell>(entity);
 		World::zone.emplace<Component::Interaction_Rect>(entity, (data.radius * 1.1f), ((data.radius * 1.1f) * 2.0f));
-		World::zone.emplace<Component::Renderable>(entity);
 		World::zone.emplace<Component::Direction>(entity, direction); //match Direction of the caster
 		World::zone.emplace<Component::Alive>(entity, true);
         World::zone.emplace<Component::Caster>(entity, caster_ID);

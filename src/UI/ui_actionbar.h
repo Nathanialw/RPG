@@ -30,7 +30,6 @@ namespace Action_Bar {
     void Create_Action_Bar(entt::registry &zone) {
         // initialize value of empty
         entt::entity emptyBarSlot = zone.create();
-        zone.emplace<Component::Renderable>(emptyBarSlot);
         zone.emplace<On_Spellbar>(emptyBarSlot);
         auto &icon = zone.emplace<Component::Icon>(emptyBarSlot, Graphics::emptyBagIcon, Graphics::default_icon, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
         icon.clipSprite = {0,0,256,256};

@@ -25,18 +25,18 @@ namespace Rendering {
 
     using namespace Rendering_Components;
 
-	namespace {
-		bool showSpriteBox = false;
-		bool debug = false;
-	}
+    namespace {
+        bool showSpriteBox = false;
+        bool debug = false;
+    }
 
 //	struct tileData {
 //		SDL_Texture* texture;
 //		SDL_Rect tileSpriteRect;
 //	};
 
-	void sort_Positions(entt::registry &zone) {
-            // test whether a point lays on a line segment, positive is above and negative is below
+    void sort_Positions(entt::registry &zone) {
+        // test whether a point lays on a line segment, positive is above and negative is below
         auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
         auto points = zone.view<Component::Position, Component::Renderable>();
 
@@ -70,8 +70,11 @@ namespace Rendering {
 //        // sort the component to render before entities below and after entities above
 //
 //        //sorts point positions least to great
-		zone.sort<Component::Renderable>([](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
-	}
+        int d = points.size_hint();
+        Utilities::Log("sorting");
+        Utilities::Log(d);
+        zone.sort<Component::Renderable>([](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
+    }
 
 //    void RenderLine (entt::registry &zone, Component::Camera &camera) {
 //        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
@@ -104,15 +107,15 @@ namespace Rendering {
 
     void Update_Frame_PVG(SDL_Rect &clipRect, Rendering_Components::Sprite_Sheet_Info &sheetData, Action_Component::Action &action, Component::Direction &direction) {
         int spritesPerLine = sheetData.flareSpritesheet->at(sheetData.sheet_name).sheetWidth / sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth;
-            ///the x index in absolute terms
+        ///the x index in absolute terms
         int x_index = sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + ((PVG_Direction_Enum(direction) * sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) + action.frame);
-            ///the x index in relative terms
+        ///the x index in relative terms
         int x_rel_index = x_index % spritesPerLine;
-            ///the x index in pixel terms
+        ///the x index in pixel terms
         clipRect.x = x_rel_index * sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth;
-            ///after dividing away the x index, add the remainder
+        ///after dividing away the x index, add the remainder
         int y_index = x_index / spritesPerLine;
-            ///the y index in pixel terms
+        ///the y index in pixel terms
         clipRect.y = y_index * sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth;
     }
 
@@ -165,14 +168,14 @@ namespace Rendering {
                 action.frameState = Action_Component::mid;
             }
 
-                ///reset frame count if over
+            ///reset frame count if over
             sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + action.frame;
 
             if (Death_Control::Death_Sequence(direction, entity, scale, sheetData, action, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
                 return;
             }
 
-                ///calculate reversing
+            ///calculate reversing
             if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
                 sheetData.reversing = 0;
             }
@@ -185,7 +188,7 @@ namespace Rendering {
             else if (!sheetData.reversing) {
                 action.frame++;
             }
-                /// -1 because of the zero index
+            /// -1 because of the zero index
             if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
                 if (action.frame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames - 1) {
                     sheetData.reversing = 1;
@@ -211,7 +214,7 @@ namespace Rendering {
     }
 
     void Get_Spritesheet_Type(SDL_Rect &clipRect, Sprite_Sheet_Info &sheetData, Component::Direction& direction, Action_Component::Action& action) {
-            /// get the height and width
+        /// get the height and width
         clipRect = {0, 0, sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteWidth, sheetData.flareSpritesheet->at(sheetData.sheet_name).spriteHeight};
 
         if (sheetData.type == "flare"){
@@ -221,7 +224,7 @@ namespace Rendering {
             Update_Frame_PVG(clipRect, sheetData, action, direction);
         }
         else if (sheetData.type == "item") {
-                /// assigned unused variables to store spritesheet indexes, currentFrame == row, frameIndex == column
+            /// assigned unused variables to store spritesheet indexes, currentFrame == row, frameIndex == column
             Update_Item_Frame(clipRect, action.frame, sheetData.frameIndex);
         }
     }
@@ -343,7 +346,9 @@ namespace Rendering {
         auto mounts = zone.view<Component::Renderable, Mount_Sprite>();
 
 //        std::cout << "----------------------" << std::endl;
-
+        int d = view1.size_hint();
+        Utilities::Log("rendering");
+        Utilities::Log(d);
         for (auto entity : view1) {
             auto [renderable, action, position, sheetData, direction, spriteOffset, scale, type] = view1.get(entity);
 //            std::cout << renderable.y << " ";
@@ -353,11 +358,11 @@ namespace Rendering {
             Color color;
 
             if (sheetData.flareSpritesheet) {
-                    /// get the next frame
+                /// get the next frame
                 Update_Frame(entity, scale, sheetData, direction, action);
-                    /// get/update the clip rect
+                /// get/update the clip rect
                 Get_Spritesheet_Type(clipRect, sheetData, direction, action);
-                    /// set the render rect size and position
+                /// set the render rect size and position
                 renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
                 renderRect.x = (position.x - camera.screen.x - spriteOffset.x);
                 renderRect.y = (position.y - camera.screen.y - spriteOffset.y);
@@ -387,8 +392,8 @@ namespace Rendering {
 //                render equipment
                 if (view.contains(entity)) {
                     auto equipment = view.get<Rendering_Components::Equipment_Sprites>(entity);
-                        Render_Equipment(equipment, scale, sheetData, camera, position, renderable, spriteOffset);
-                    }
+                    Render_Equipment(equipment, scale, sheetData, camera, position, renderable, spriteOffset);
+                }
 
                 if (mounts.contains(entity)) {
 //                render horse half in front unit
@@ -400,76 +405,145 @@ namespace Rendering {
                 Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL");
                 return;
             }
-		}
-        std::cout << "\n";
-	}
+        }
+//        std::cout << "\n";
+    }
 
-	SDL_Rect Explosion_Frame_Update(Component::Sprite_Frames &frame) {
-		    /// reset X to zero and increment Y
-		if (frame.frameX >= 8) {
-			frame.frameX = 0;
-			frame.frameY++;
-		}
-		    /// set Output Rect values
-		int row = frame.frameX * 128;
-		int column = frame.frameY * 128;
-		int width = 128;
-		int height = 128;
-		SDL_Rect rect = { row, column, width, height };
-		    ///increment X
-		frame.frameX++;
-		return rect;
-	}
+    void Render_Dead(entt::registry& zone, Component::Camera &camera) { //state
 
-	void Render_Explosions(entt::registry& zone, Component::Camera& camera) {
-		SDL_Rect xClipPos;
-		float sx;
-		float sy;
-		auto view = zone.view<Component::Explosion, Component::Position, Component::Frame_Delay, Component::Texture, Component::Sprite_Frames>();
-		for (auto spell : view) {
-			auto& anim = view.get<Component::Explosion>(spell);
-			auto& x = view.get<Component::Position>(spell);
-			auto& y = view.get<Component::Position>(spell);
-			auto& texture = view.get<Component::Texture>(spell);
-			auto& frames = view.get<Component::Sprite_Frames>(spell);
-			auto& delay = view.get<Component::Frame_Delay>(spell);
-			delay.currentFrameTime += Timer::timeStep;
-			if (delay.currentFrameTime >= delay.timeBetweenFrames) {
-				if (frames.currentFrame <= frames.maxFrames) { // if there are still frames remaining
-				    /// only fire this at 60 frames/sec
-					xClipPos = Explosion_Frame_Update(frames);		//get state and direction state sprite draw from
-					anim.renderPosition = Utilities::SDL_Rect_To_SDL_FRect(xClipPos);		//save sprite for vector
-					texture.clippedSpriteFrame = xClipPos;									//save position for renderer
-					frames.currentFrame++;
-				}
-				else {
-					    /// remove explosion from scene and free the entity
-					zone.destroy(spell);
-				}
-				delay.currentFrameTime = 0;
-			}
-			sx = x.x - camera.screen.x - anim.offsetToAlignWithFireball.x;
-			sy = y.y - camera.screen.y - anim.offsetToAlignWithFireball.y;
-			anim.renderPosition.x = sx - anim.positionOffset.x;
-			anim.renderPosition.y = sy - anim.positionOffset.y;
-			SDL_RenderCopyF(Graphics::renderer, texture.pTexture, &texture.clippedSpriteFrame, &anim.renderPosition);
-			if (showSpriteBox) {
-				SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
-			}
-		}
-	}
+        auto view1 = zone.view<Component::Renderable, Action_Component::Action, Component::Position, Sprite_Sheet_Info, Component::Direction, Sprite_Offset, Component::Scale, Component::Entity_Type, Component::Dead>();
+        auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
+        auto mounts = zone.view<Component::Renderable, Mount_Sprite>();
 
-	SDL_Rect getTexture(uint32_t x, int &sheetWidth, SDL_Rect &tileSpriteRect) {
-		int y = 0;
-		x -= 1;
-		while (x >= sheetWidth) {
-			x -= sheetWidth;
-			y++;
-		}
-		tileSpriteRect.x = tileSpriteRect.w * x;
-		tileSpriteRect.y = tileSpriteRect.h * y;
-		return tileSpriteRect;
-	}
+//        std::cout << "----------------------" << std::endl;
+
+        for (auto entity : view1) {
+            auto [renderable, action, position, sheetData, direction, spriteOffset, scale, type, dead] = view1.get(entity);
+//            std::cout << renderable.y << " ";
+            SDL_Rect clipRect;
+            SDL_FRect renderRect;
+            SDL_Texture* texture;
+            Color color;
+
+            if (sheetData.flareSpritesheet) {
+                /// get the next frame
+                Update_Frame(entity, scale, sheetData, direction, action);
+                /// get/update the clip rect
+                Get_Spritesheet_Type(clipRect, sheetData, direction, action);
+                /// set the render rect size and position
+                renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
+                renderRect.x = (position.x - camera.screen.x - spriteOffset.x);
+                renderRect.y = (position.y - camera.screen.y - spriteOffset.y);
+
+//                render icons
+                if (type == Component::Entity_Type::item){
+                    renderRect.w = (spriteOffset.x * 2.0f);
+                    renderRect.h = (spriteOffset.y * 2.0f);
+                }
+
+                texture = sheetData.flareSpritesheet->at(sheetData.sheet_name).texture;
+                color = sheetData.flareSpritesheet->at(sheetData.sheet_name).color;
+                SDL_SetTextureAlphaMod(texture, renderable.alpha);
+                Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
+            }
+
+            else if (sheetData.sheetData) {
+                if (mounts.contains(entity)) {
+//                render horse half behind unit
+
+                }
+
+//                render unit
+                Frame_Increment(entity, scale, sheetData, action, direction);
+                Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData, action, direction);
+
+//                render equipment
+                if (view.contains(entity)) {
+                    auto equipment = view.get<Rendering_Components::Equipment_Sprites>(entity);
+                    Render_Equipment(equipment, scale, sheetData, camera, position, renderable, spriteOffset);
+                }
+
+                if (mounts.contains(entity)) {
+//                render horse half in front unit
+
+                }
+            }
+
+            else {
+                Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL");
+                return;
+            }
+        }
+//        std::cout << "\n";
+    }
+
+
+    SDL_Rect Explosion_Frame_Update(Component::Sprite_Frames &frame) {
+        /// reset X to zero and increment Y
+        if (frame.frameX >= 8) {
+            frame.frameX = 0;
+            frame.frameY++;
+        }
+        /// set Output Rect values
+        int row = frame.frameX * 128;
+        int column = frame.frameY * 128;
+        int width = 128;
+        int height = 128;
+        SDL_Rect rect = { row, column, width, height };
+        ///increment X
+        frame.frameX++;
+        return rect;
+    }
+
+    void Render_Explosions(entt::registry& zone, Component::Camera& camera) {
+        SDL_Rect xClipPos;
+        float sx;
+        float sy;
+        auto view = zone.view<Component::Explosion, Component::Position, Component::Frame_Delay, Component::Texture, Component::Sprite_Frames>();
+        for (auto spell : view) {
+            auto& anim = view.get<Component::Explosion>(spell);
+            auto& x = view.get<Component::Position>(spell);
+            auto& y = view.get<Component::Position>(spell);
+            auto& texture = view.get<Component::Texture>(spell);
+            auto& frames = view.get<Component::Sprite_Frames>(spell);
+            auto& delay = view.get<Component::Frame_Delay>(spell);
+            delay.currentFrameTime += Timer::timeStep;
+            if (delay.currentFrameTime >= delay.timeBetweenFrames) {
+                if (frames.currentFrame <= frames.maxFrames) { // if there are still frames remaining
+                    /// only fire this at 60 frames/sec
+                    xClipPos = Explosion_Frame_Update(frames);		//get state and direction state sprite draw from
+                    anim.renderPosition = Utilities::SDL_Rect_To_SDL_FRect(xClipPos);		//save sprite for vector
+                    texture.clippedSpriteFrame = xClipPos;									//save position for renderer
+                    frames.currentFrame++;
+                }
+                else {
+                    /// remove explosion from scene and free the entity
+                    zone.destroy(spell);
+                }
+                delay.currentFrameTime = 0;
+            }
+            sx = x.x - camera.screen.x - anim.offsetToAlignWithFireball.x;
+            sy = y.y - camera.screen.y - anim.offsetToAlignWithFireball.y;
+            anim.renderPosition.x = sx - anim.positionOffset.x;
+            anim.renderPosition.y = sy - anim.positionOffset.y;
+            SDL_RenderCopyF(Graphics::renderer, texture.pTexture, &texture.clippedSpriteFrame, &anim.renderPosition);
+            if (showSpriteBox) {
+                SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
+            }
+        }
+    }
+
+    SDL_Rect getTexture(uint32_t x, int &sheetWidth, SDL_Rect &tileSpriteRect) {
+        int y = 0;
+        x -= 1;
+        while (x >= sheetWidth) {
+            x -= sheetWidth;
+            y++;
+        }
+        tileSpriteRect.x = tileSpriteRect.w * x;
+        tileSpriteRect.y = tileSpriteRect.h * y;
+        return tileSpriteRect;
+    }
 
     void Render_Iso_Tiles(entt::registry &zone, tmx::Map& map, Component::Camera& camera)
     {
@@ -606,66 +680,67 @@ namespace Rendering {
         }
     }
 
-	void Render_Map(entt::registry &zone, Component::Camera& camera) {
+    void Render_Map(entt::registry &zone, Component::Camera& camera) {
         SDL_RenderClear(Graphics::renderer);
 
         World::Render(camera);
 //        Render_Iso_Tiles(zone, Maps::map, camera);
 //        Render_Ortho_Tiles(zone, Maps::map, camera);
-        Interface::Background();
 
+        //Render_Dead(zone, camera);
+        Interface::Background();
         Animation_Frame(zone, camera);
         Render_Explosions(zone, camera);
-	}
+    }
 
-	void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {
-		SDL_FRect DisplayRect = {};
-		auto view = zone.view<Component::Position, Component::Icon, Component::On_Mouse>();
-		for (auto item : view) {
-			const auto& icon = view.get<Component::Icon>(item);
-			const auto& x = view.get<Component::Position>(item).x;
-			const auto& y = view.get<Component::Position>(item).y;
-			DisplayRect.x = (x - camera.screen.x) - (icon.renderPositionOffset.x / camera.scale.x);
-			DisplayRect.y = (y - camera.screen.y) - (icon.renderPositionOffset.y / camera.scale.y);
-			DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
-			DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
-			//std::cout << "x: " << DisplayRect.x << " y: " << DisplayRect.y << " w: " << DisplayRect.w << " h: " << DisplayRect.h << std::endl;
-			SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &DisplayRect);
-			SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, &icon.clipSprite, &DisplayRect);
-			if (showSpriteBox) {
-				//SDL_RenderDrawRect(Graphics::renderer, &DisplayRect);
-			}
-		}
-	}
+    void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {
+        SDL_FRect DisplayRect = {};
+        auto view = zone.view<Component::Position, Component::Icon, Component::On_Mouse>();
+        for (auto item : view) {
+            const auto& icon = view.get<Component::Icon>(item);
+            const auto& x = view.get<Component::Position>(item).x;
+            const auto& y = view.get<Component::Position>(item).y;
+            DisplayRect.x = (x - camera.screen.x) - (icon.renderPositionOffset.x / camera.scale.x);
+            DisplayRect.y = (y - camera.screen.y) - (icon.renderPositionOffset.y / camera.scale.y);
+            DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
+            DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
+            //std::cout << "x: " << DisplayRect.x << " y: " << DisplayRect.y << " w: " << DisplayRect.w << " h: " << DisplayRect.h << std::endl;
+            SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &DisplayRect);
+            SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, &icon.clipSprite, &DisplayRect);
+            if (showSpriteBox) {
+                //SDL_RenderDrawRect(Graphics::renderer, &DisplayRect);
+            }
+        }
+    }
 
-	int Set_Render_Position_Alpha(float& screenEdge, float& renderEdge, float& yPosition) {
-		if (yPosition <= screenEdge) {
-			return 255;
-		}
-		else {
-			float x = yPosition - screenEdge;
-			float edgeBuffer = renderEdge - screenEdge;
-			float y = edgeBuffer / x;
-			int alpha = 255 - ( 255 / (int)y );
-			return alpha;
-		}
-	}
+    int Set_Render_Position_Alpha(float& screenEdge, float& renderEdge, float& yPosition) {
+        if (yPosition <= screenEdge) {
+            return 255;
+        }
+        else {
+            float x = yPosition - screenEdge;
+            float edgeBuffer = renderEdge - screenEdge;
+            float y = edgeBuffer / x;
+            int alpha = 255 - ( 255 / (int)y );
+            return alpha;
+        }
+    }
 
-	void Add_Remove_Renderable_Component(entt::registry &zone, Component::Camera &camera) {
+    void Add_Remove_Renderable_Component(entt::registry &zone, Component::Camera &camera) {
 
         SDL_FRect renderRect = {
-			camera.screen.x - (camera.screen.w / 4.0f),
-			camera.screen.y - (camera.screen.h / 4.0f),
-			camera.screen.w * 4.0f,
-			camera.screen.h * 4.0f };
-		auto objectsView = zone.view<Component::Position>(entt::exclude<Component::Inventory>);
-                                                                                //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
-		float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
-		float bottomOfRenderRect = renderRect.y + renderRect.h;
-		for (auto entity : objectsView) {
-			auto& position = objectsView.get<Component::Position>(entity);
-			SDL_FPoint point = {position.x, position.y};
-			if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
+                camera.screen.x - (camera.screen.w / 4.0f),
+                camera.screen.y - (camera.screen.h / 4.0f),
+                camera.screen.w * 4.0f,
+                camera.screen.h * 4.0f };
+        auto objectsView = zone.view<Component::Position>(entt::exclude<Item_Component::Name>);
+        //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
+        float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
+        float bottomOfRenderRect = renderRect.y + renderRect.h;
+        for (auto entity : objectsView) {
+            auto& position = objectsView.get<Component::Position>(entity);
+            SDL_FPoint point = {position.x, position.y};
+            if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
 
                 if(zone.any_of<Component::Renderable>(entity)) {
                     //  update renderable values
@@ -686,66 +761,66 @@ namespace Rendering {
                         renderable.y = position.y;
                     }
                 }
-			}
-			else {
-				zone.remove<Component::Renderable>(entity);
-			}
-		}
-	}
+            }
+            else {
+                zone.remove<Component::Renderable>(entity);
+            }
+        }
+    }
 
-	void Update_Cursor(Component::Camera& camera) {
-		int mx, my;
-		SDL_GetMouseState(&mx, &my);
-		Mouse::iXMouse = (float)mx;
-		Mouse::iYMouse = (float)my;
-		Mouse::iXWorld_Mouse = (Mouse::iXMouse / camera.scale.x) + camera.screen.x;//getting mouse world Position corrected for scale
-		Mouse::iYWorld_Mouse = (Mouse::iYMouse / camera.scale.y) + camera.screen.y;//getting mouse world Position corrected for scale
-		Mouse::iXMouse = Mouse::iXMouse / camera.scale.x;  // getting the screen mouse position corrected for scale
-		Mouse::iYMouse = Mouse::iYMouse / camera.scale.y;  // getting the screen mouse position corrected for scale
-		Mouse::mousePoint = { (float)mx, (float)my };
-		Mouse::screenMousePoint = Camera_Control::Convert_FPoint_To_Scale(Mouse::mousePoint, camera);
-	}
+    void Update_Cursor(Component::Camera& camera) {
+        int mx, my;
+        SDL_GetMouseState(&mx, &my);
+        Mouse::iXMouse = (float)mx;
+        Mouse::iYMouse = (float)my;
+        Mouse::iXWorld_Mouse = (Mouse::iXMouse / camera.scale.x) + camera.screen.x;//getting mouse world Position corrected for scale
+        Mouse::iYWorld_Mouse = (Mouse::iYMouse / camera.scale.y) + camera.screen.y;//getting mouse world Position corrected for scale
+        Mouse::iXMouse = Mouse::iXMouse / camera.scale.x;  // getting the screen mouse position corrected for scale
+        Mouse::iYMouse = Mouse::iYMouse / camera.scale.y;  // getting the screen mouse position corrected for scale
+        Mouse::mousePoint = { (float)mx, (float)my };
+        Mouse::screenMousePoint = Camera_Control::Convert_FPoint_To_Scale(Mouse::mousePoint, camera);
+    }
 
-	void Update_Camera_And_Mouse(entt::registry& zone) {
-		auto focus_view = zone.view<Component::Camera, Component::Position>();
-		for (auto player : focus_view) {
-			auto& camera = focus_view.get<Component::Camera>(player);
-			auto& position = focus_view.get<Component::Position>(player);
-			Camera_Control::Update_Camera_Follow(camera, position);
-			Update_Cursor(camera);
-		}
-	}
+    void Update_Camera_And_Mouse(entt::registry& zone) {
+        auto focus_view = zone.view<Component::Camera, Component::Position>();
+        for (auto player : focus_view) {
+            auto& camera = focus_view.get<Component::Camera>(player);
+            auto& position = focus_view.get<Component::Position>(player);
+            Camera_Control::Update_Camera_Follow(camera, position);
+            Update_Cursor(camera);
+        }
+    }
 
-	void Remove_Entities_From_Registry(entt::registry& zone) {
-		auto view = zone.view<Component::Destroyed>(entt::exclude<Component::In_Object_Tree>);
-		for (auto entity : view) {
-			zone.destroy(entity);
-		}
-	}
+    void Remove_Entities_From_Registry(entt::registry& zone) {
+        auto view = zone.view<Component::Destroyed>(entt::exclude<Component::In_Object_Tree>);
+        for (auto entity : view) {
+            zone.destroy(entity);
+        }
+    }
 
-	void Rendering(entt::registry& zone) {
-		Update_Camera_And_Mouse(zone);
-		SDL_FPoint mouse = { Mouse::iXMouse, Mouse::iYMouse };
+    void Rendering(entt::registry& zone) {
+        Update_Camera_And_Mouse(zone);
+        SDL_FPoint mouse = { Mouse::iXMouse, Mouse::iYMouse };
 
         auto camera_view = zone.view<Component::Camera>();
-		for (auto entity : camera_view) {
-			auto& camera = camera_view.get<Component::Camera>(entity);
+        for (auto entity : camera_view) {
+            auto& camera = camera_view.get<Component::Camera>(entity);
 //			SDL_RenderClear(Graphics::renderer);
-			Add_Remove_Renderable_Component(zone, camera);
-			sort_Positions(zone);
-			Render_Map(zone, camera);
-			Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
+            Add_Remove_Renderable_Component(zone, camera);
+            sort_Positions(zone);
+            Render_Map(zone, camera);
+            Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
 
 //            RenderLine(zone, camera);
             //
-			Items::Show_Ground_Items(zone, camera);
+            Items::Show_Ground_Items(zone, camera);
             Items::Unit_Name_On_Mouseover(zone, camera);
             Social_Control::Show_Dialogue(zone, camera);
             Items::Name_On_Mouseover(zone, camera);
-			UI::Render_UI(zone, Graphics::renderer, camera);
-			Character_Stats::Render_Character_Stats(zone, camera);
+            UI::Render_UI(zone, Graphics::renderer, camera);
+            Character_Stats::Render_Character_Stats(zone, camera);
             Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
-			Damage_Text::Show_Damage(zone, camera);
+            Damage_Text::Show_Damage(zone, camera);
             UI_Resources::Render_Resources(zone, camera);
             UI_Spellbook::Draw_Spellbook(camera);
             Pause::Pause_Control(camera);
@@ -755,7 +830,7 @@ namespace Rendering {
             //on top of mouse
             Tooltip::Show_Item_Tooltip(zone, mouse, camera);
             Render_Mouse_Item(zone, camera);
-			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
+            SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
             if (Items::showGroundItems == true) {                //****//search quad tree instead
                 auto view = zone.view<Ground_Item, Component::Renderable>();
                 for (auto item : view) {
@@ -763,8 +838,8 @@ namespace Rendering {
                     SDL_RenderDrawRectF(Graphics::renderer, &box.box);
                 }
             }
-		}
-	}
+        }
+    }
 
     void Present() {
         SDL_RenderPresent(Graphics::renderer);

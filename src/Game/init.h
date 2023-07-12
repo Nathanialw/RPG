@@ -19,7 +19,6 @@
 #include "character_stats.h"
 #include "map.h"
 #include "texture_packer.h"
-#include "sounds.h"
 #include "main_menu.h"
 #include "menu.h"
 #include "world.h"
@@ -67,7 +66,6 @@ namespace Init {
 		Graphics::running = true;
 
         Graphics::createGraphicsContext(World::zone);
-        Sounds::init();
 
         Main_Menu::Menu_Options();
 

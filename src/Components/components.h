@@ -69,6 +69,10 @@ namespace Component {
 		bool bIsAlive = true;
 	};
 
+  struct Dead {
+    bool dead;
+  };
+
 	//Position
 	struct Position {
 		float x;
