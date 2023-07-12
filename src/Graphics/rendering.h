@@ -32,7 +32,7 @@ namespace Rendering {
 
 //	struct tileData {
 //		SDL_Texture* texture;
-//		SDL_Rect tileSpriteRect;
+//		SDL_Rect tileSpriteRect;       Utilities::Lo"");
 //	};
 
     void sort_Positions(entt::registry &zone) {
@@ -70,9 +70,6 @@ namespace Rendering {
 //        // sort the component to render before entities below and after entities above
 //
 //        //sorts point positions least to great
-        int d = points.size_hint();
-        Utilities::Log("sorting");
-        Utilities::Log(d);
         zone.sort<Component::Renderable>([](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
     }
 
@@ -345,10 +342,6 @@ namespace Rendering {
         auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
         auto mounts = zone.view<Component::Renderable, Mount_Sprite>();
 
-//        std::cout << "----------------------" << std::endl;
-        int d = view1.size_hint();
-        Utilities::Log("rendering");
-        Utilities::Log(d);
         for (auto entity : view1) {
             auto [renderable, action, position, sheetData, direction, spriteOffset, scale, type] = view1.get(entity);
 //            std::cout << renderable.y << " ";

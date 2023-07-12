@@ -132,6 +132,8 @@ namespace Spritesheet_Structs {
         std::string frameCopy = frame;
 
         if (frameCopy.substr(0, keyCheck.size()) != keyCheck) {
+            std::cout << "xml file name foes not match texture atlas sprite name - NAME: " << name << " FRAME: " << frame << std::endl;
+//            should assign a dummy value to prevent a crash nad to make it an obviouos bug
             return false;
         }
 
@@ -224,7 +226,13 @@ namespace Spritesheet_Structs {
             } else if (checkAction == "idle1") {
                 action = Action_Component::Action_State::idle;
                 actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "idle2") {
+                action = Action_Component::Action_State::idle2;
+                actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "running") {
+                action = Action_Component::Action_State::run;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "walking") {
                 action = Action_Component::Action_State::walk;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "collapse") {
@@ -237,15 +245,22 @@ namespace Spritesheet_Structs {
                 action = Action_Component::Action_State::dead;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "kneel") {
-                action = Action_Component::Action_State::casting;
+                action = Action_Component::Action_State::kneel;
                 actionFrameData[action].frameSpeed = i;
             } else if (checkAction == "sitting") {
                 action = Action_Component::Action_State::cast;
                 actionFrameData[action].frameSpeed = i;
-            } else {
-                return false;
+            } else if (checkAction == "sleeping") {
+                action = Action_Component::Action_State::resting;
+                actionFrameData[action].frameSpeed = i;
+            } else if (checkAction == "unique") {
+                action = Action_Component::Action_State::behavior;
+                actionFrameData[action].frameSpeed = i;
             }
-        }
+            else {
+                    return false;
+                }
+            }
 
         else {
             if (checkAction == "1-H Attack 1") {
