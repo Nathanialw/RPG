@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:44041c78cf01f8cf3aa21cc9973ba3c2:a85a0b9a14d11df191f542a6a06a864d:8244cadfd18cd453798863a8db50ac85$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Medieval_TC_Doe.png" width="128" height="2907">
+    <sprite n="Medieval_TC_Doe_behavior1_01_ 0" x="100" y="2476" w="22" h="64" oX="50" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_02_ 0" x="99" y="2542" w="22" h="64" oX="50" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_03_ 0" x="99" y="2608" w="22" h="64" oX="50" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_04_ 1" x="68" y="923" w="59" h="38" oX="28" oY="50" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_05_ 1" x="68" y="963" w="59" h="38" oX="28" oY="50" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_06_ 1" x="1" y="1334" w="61" h="38" oX="27" oY="50" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_07_ 2" x="68" y="839" w="59" h="40" oX="35" oY="50" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_08_ 2" x="68" y="881" w="59" h="40" oX="35" oY="50" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_09_ 2" x="65" y="1308" w="61" h="40" oX="34" oY="50" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_10_ 3" x="107" y="1573" w="20" h="53" oX="51" oY="40" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_11_ 3" x="49" y="2853" w="21" h="53" oX="51" oY="40" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_12_ 3" x="72" y="2853" w="21" h="53" oX="50" oY="40" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_13_ 4" x="1" y="1672" w="50" h="54" oX="32" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_14_ 4" x="53" y="1688" w="50" h="54" oX="32" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_15_ 4" x="1" y="1728" w="50" h="54" oX="32" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_16_ 5" x="1" y="2228" w="49" h="47" oX="33" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_17_ 5" x="52" y="2237" w="49" h="47" oX="33" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_18_ 5" x="1" y="1840" w="50" h="47" oX="32" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_19_ 6" x="53" y="1744" w="50" h="54" oX="40" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_20_ 6" x="1" y="1784" w="50" h="54" oX="40" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_21_ 6" x="53" y="1800" w="50" h="54" oX="40" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_22_ 7" x="1" y="2277" w="49" h="46" oX="40" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_23_ 7" x="53" y="1856" w="50" h="46" oX="40" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_behavior1_24_ 7" x="1" y="1889" w="50" h="46" oX="40" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_01_ 0" x="95" y="2853" w="22" h="52" oX="50" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_02_ 0" x="1" y="2853" w="22" h="53" oX="50" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_03_ 0" x="25" y="2853" w="22" h="53" oX="50" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_04_ 1" x="1" y="1176" w="63" h="50" oX="24" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_05_ 1" x="1" y="885" w="65" h="49" oX="23" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_06_ 1" x="1" y="936" w="65" h="49" oX="23" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_07_ 2" x="1" y="1228" w="63" h="50" oX="35" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_08_ 2" x="1" y="987" w="65" h="49" oX="34" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_09_ 2" x="1" y="833" w="65" h="50" oX="34" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_10_ 3" x="105" y="1946" w="22" h="75" oX="50" oY="21" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_11_ 3" x="103" y="2023" w="22" h="75" oX="50" oY="21" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_12_ 3" x="103" y="2177" w="22" h="74" oX="50" oY="22" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_13_ 4" x="52" y="2136" w="49" h="49" oX="34" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_14_ 4" x="1" y="2177" w="49" h="49" oX="34" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_15_ 4" x="1" y="2073" w="49" h="50" oX="34" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_16_ 5" x="1" y="2501" w="47" h="70" oX="34" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_17_ 5" x="1" y="2325" w="48" h="70" oX="34" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_18_ 5" x="78" y="129" w="49" h="70" oX="34" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_19_ 6" x="1" y="2644" w="47" h="49" oX="41" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_20_ 6" x="1" y="2450" w="48" h="49" oX="40" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_21_ 6" x="52" y="2084" w="49" h="50" oX="39" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_22_ 7" x="1" y="1937" w="49" h="66" oX="39" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_23_ 7" x="52" y="1951" w="49" h="66" oX="39" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_idle_24_ 7" x="1" y="2005" w="49" h="66" oX="39" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_01_ 0" x="95" y="2853" w="22" h="52" oX="50" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_02_ 0" x="40" y="2716" w="37" h="50" oX="36" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_03_ 0" x="1" y="2397" w="48" h="51" oX="39" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_04_ 1" x="1" y="1176" w="63" h="50" oX="24" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_05_ 1" x="67" y="1168" w="60" h="70" oX="26" oY="21" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_06_ 1" x="1" y="1133" w="64" h="41" oX="34" oY="51" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_07_ 2" x="1" y="1228" w="63" h="50" oX="35" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_08_ 2" x="64" y="1350" w="60" h="50" oX="36" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_09_ 2" x="1" y="1088" w="65" h="43" oX="24" oY="46" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_10_ 3" x="105" y="1946" w="22" h="75" oX="50" oY="21" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_11_ 3" x="1" y="2695" w="37" h="76" oX="49" oY="18" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_12_ 3" x="51" y="2360" w="48" h="54" oX="35" oY="40" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_13_ 4" x="52" y="2136" w="49" h="49" oX="34" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_14_ 4" x="69" y="786" w="55" h="51" oX="30" oY="23" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_15_ 4" x="1" y="1491" w="52" h="57" oX="45" oY="40" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_16_ 5" x="1" y="2501" w="47" h="70" oX="34" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_17_ 5" x="82" y="1" w="38" h="78" oX="44" oY="18" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_18_ 5" x="1" y="146" w="75" h="35" oX="24" oY="56" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_19_ 6" x="1" y="2644" w="47" h="49" oX="41" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_20_ 6" x="82" y="81" w="38" h="46" oX="40" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_21_ 6" x="1" y="103" w="75" h="41" oX="23" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_22_ 7" x="1" y="1937" w="49" h="66" oX="39" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_23_ 7" x="70" y="717" w="55" h="67" oX="37" oY="26" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_ko_24_ 7" x="56" y="1455" w="52" h="61" oX="25" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_01_ 0" x="25" y="2795" w="22" h="55" oX="50" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_02_ 0" x="79" y="2735" w="22" h="58" oX="50" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_03_ 0" x="1" y="2795" w="22" h="56" oX="50" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_04_ 0" x="49" y="2795" w="22" h="54" oX="50" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_05_ 0" x="73" y="2795" w="22" h="52" oX="51" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_06_ 0" x="103" y="2735" w="22" h="57" oX="51" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_07_ 0" x="99" y="2674" w="22" h="59" oX="51" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_08_ 0" x="103" y="2794" w="22" h="57" oX="51" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_09_ 1" x="1" y="633" w="68" h="48" oX="24" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_10_ 1" x="1" y="53" w="79" h="48" oX="23" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_11_ 1" x="1" y="384" w="70" h="48" oX="23" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_12_ 1" x="1" y="333" w="70" h="49" oX="23" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_13_ 1" x="1" y="281" w="70" h="50" oX="22" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_14_ 1" x="1" y="183" w="73" h="50" oX="22" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_15_ 1" x="1" y="683" w="67" h="48" oX="22" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_16_ 1" x="1" y="783" w="66" h="48" oX="22" oY="40" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_17_ 2" x="1" y="581" w="68" h="50" oX="30" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_18_ 2" x="1" y="1" w="79" h="50" oX="20" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_19_ 2" x="1" y="434" w="70" h="48" oX="29" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_20_ 2" x="1" y="533" w="70" h="46" oX="29" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_21_ 2" x="1" y="484" w="70" h="47" oX="30" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_22_ 2" x="1" y="235" w="73" h="44" oX="27" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_23_ 2" x="1" y="733" w="67" h="48" oX="33" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_24_ 2" x="1" y="1038" w="65" h="48" oX="34" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_25_ 3" x="105" y="1709" w="22" h="78" oX="50" oY="21" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_26_ 3" x="105" y="1628" w="22" h="79" oX="50" oY="22" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_27_ 3" x="102" y="2328" w="22" h="72" oX="50" oY="23" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_28_ 3" x="103" y="2100" w="22" h="75" oX="50" oY="23" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_29_ 3" x="105" y="1868" w="22" h="76" oX="49" oY="23" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_30_ 3" x="105" y="1789" w="22" h="77" oX="49" oY="23" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_31_ 3" x="101" y="2402" w="22" h="72" oX="48" oY="23" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_32_ 3" x="103" y="2253" w="22" h="73" oX="48" oY="22" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_33_ 4" x="73" y="544" w="54" h="48" oX="34" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_34_ 4" x="1" y="1280" w="62" h="52" oX="35" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_35_ 4" x="56" y="1402" w="53" h="51" oX="35" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_36_ 4" x="50" y="2665" w="47" h="49" oX="35" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_37_ 4" x="50" y="2613" w="47" h="50" oX="35" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_38_ 4" x="1" y="1550" w="51" h="47" oX="35" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_39_ 4" x="52" y="2187" w="49" h="48" oX="35" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_40_ 4" x="54" y="1573" w="51" h="47" oX="35" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_41_ 5" x="52" y="2286" w="48" h="72" oX="34" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_42_ 5" x="68" y="1093" w="53" h="73" oX="35" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_43_ 5" x="53" y="1622" w="50" h="64" oX="35" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_44_ 5" x="73" y="476" w="54" h="66" oX="35" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_45_ 5" x="73" y="407" w="54" h="67" oX="34" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_46_ 5" x="71" y="594" w="56" h="68" oX="34" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_47_ 5" x="76" y="201" w="51" h="68" oX="34" oY="26" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_48_ 5" x="50" y="2542" w="47" h="69" oX="34" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_49_ 6" x="1" y="2125" w="49" h="50" oX="39" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_50_ 6" x="1" y="1443" w="53" h="46" oX="34" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_51_ 6" x="53" y="1904" w="50" h="45" oX="37" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_52_ 6" x="68" y="1003" w="54" h="43" oX="33" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_53_ 6" x="68" y="1048" w="54" h="43" oX="34" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_54_ 6" x="71" y="664" w="56" h="51" oX="32" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_55_ 6" x="55" y="1518" w="51" h="53" oX="37" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_56_ 6" x="51" y="2416" w="48" h="51" oX="41" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_57_ 7" x="73" y="337" w="54" h="68" oX="34" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_58_ 7" x="66" y="1240" w="61" h="66" oX="26" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_59_ 7" x="1" y="1374" w="53" h="67" oX="34" oY="26" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_60_ 7" x="1" y="2573" w="47" h="69" oX="40" oY="26" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_61_ 7" x="51" y="2469" w="47" h="71" oX="40" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_62_ 7" x="1" y="1599" w="50" h="71" oX="37" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_63_ 7" x="52" y="2019" w="49" h="63" oX="38" oY="26" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Doe_walking_64_ 7" x="76" y="271" w="51" h="64" oX="36" oY="25" oW="128" oH="128"/>
+</TextureAtlas>

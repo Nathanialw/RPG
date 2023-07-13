@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:2efb33eb181329af87c23987495906aa:b98de89717d57ad6fea6baf0b83a8b33:7a2195bfee07805ba011d582e1a615f5$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Medieval_TC_Pig2.png" width="1891" height="128">
+    <sprite n="Medieval_TC_Pig2_behavior1_01_ 0" x="239" y="1" w="22" h="47" oX="37" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_02_ 0" x="263" y="1" w="22" h="47" oX="37" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_03_ 0" x="269" y="50" w="22" h="47" oX="37" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_04_ 1" x="1836" y="30" w="54" h="25" oX="11" oY="40" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_05_ 1" x="78" y="103" w="53" h="24" oX="12" oY="41" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_06_ 1" x="133" y="103" w="53" h="24" oX="12" oY="41" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_07_ 2" x="23" y="104" w="53" h="23" oX="31" oY="41" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_08_ 2" x="1836" y="57" w="53" h="23" oX="31" oY="41" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_09_ 2" x="1836" y="82" w="53" h="23" oX="31" oY="41" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_10_ 3" x="1235" y="1" w="22" h="40" oX="37" oY="25" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_11_ 3" x="1259" y="1" w="22" h="40" oX="37" oY="25" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_12_ 3" x="1237" y="85" w="22" h="40" oX="37" oY="25" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_13_ 4" x="1329" y="1" w="43" h="39" oX="19" oY="39" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_14_ 4" x="1354" y="83" w="43" h="39" oX="19" oY="39" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_15_ 4" x="1369" y="42" w="43" h="39" oX="19" oY="39" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_16_ 5" x="1416" y="1" w="43" h="38" oX="19" oY="27" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_17_ 5" x="1422" y="82" w="43" h="38" oX="19" oY="27" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_18_ 5" x="1460" y="41" w="43" h="38" oX="19" oY="27" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_19_ 6" x="1549" y="1" w="43" h="37" oX="34" oY="40" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_20_ 6" x="1513" y="79" w="43" h="37" oX="34" oY="40" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_21_ 6" x="1551" y="40" w="43" h="37" oX="34" oY="40" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_22_ 7" x="1503" y="1" w="44" h="37" oX="34" oY="28" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_23_ 7" x="1467" y="81" w="44" h="37" oX="34" oY="28" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_behavior1_24_ 7" x="1505" y="40" w="44" h="37" oX="34" oY="28" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_01_ 0" x="46" y="52" w="20" h="49" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_02_ 0" x="47" y="1" w="20" h="49" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_03_ 0" x="68" y="52" w="20" h="49" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_04_ 1" x="744" y="93" w="53" h="28" oX="11" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_05_ 1" x="1558" y="79" w="53" h="28" oX="11" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_06_ 1" x="1596" y="40" w="53" h="28" oX="11" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_07_ 2" x="1631" y="1" w="53" h="28" oX="32" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_08_ 2" x="1613" y="70" w="53" h="28" oX="32" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_09_ 2" x="1651" y="31" w="53" h="28" oX="32" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_10_ 3" x="340" y="49" w="21" h="46" oX="37" oY="20" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_11_ 3" x="356" y="1" w="21" h="46" oX="37" oY="20" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_12_ 3" x="363" y="49" w="21" h="46" oX="37" oY="20" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_13_ 4" x="809" y="1" w="45" h="42" oX="17" oY="31" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_14_ 4" x="856" y="1" w="45" h="42" oX="17" oY="31" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_15_ 4" x="950" y="1" w="44" h="42" oX="18" oY="31" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_16_ 5" x="408" y="48" w="45" h="45" oX="17" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_17_ 5" x="450" y="1" w="45" h="45" oX="17" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_18_ 5" x="455" y="48" w="45" h="45" oX="17" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_19_ 6" x="1095" y="1" w="45" h="40" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_20_ 6" x="1138" y="43" w="45" h="40" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_21_ 6" x="1185" y="43" w="44" h="40" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_22_ 7" x="543" y="1" w="45" h="44" oX="34" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_23_ 7" x="576" y="47" w="45" h="44" oX="34" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_idle_24_ 7" x="590" y="1" w="45" h="44" oX="34" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_01_ 0" x="69" y="1" w="20" h="49" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_02_ 0" x="953" y="45" w="32" h="42" oX="26" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_03_ 0" x="778" y="1" w="29" h="43" oX="43" oY="42" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_04_ 1" x="306" y="98" w="53" h="29" oX="11" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_05_ 1" x="1041" y="87" w="52" h="40" oX="13" oY="23" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_06_ 1" x="416" y="95" w="52" h="29" oX="17" oY="46" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_07_ 2" x="361" y="97" w="53" h="29" oX="32" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_08_ 2" x="1782" y="87" w="52" h="24" oX="31" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_09_ 2" x="470" y="95" w="52" h="29" oX="30" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_10_ 3" x="1399" y="83" w="21" h="39" oX="38" oY="20" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_11_ 3" x="204" y="1" w="33" h="47" oX="38" oY="11" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_12_ 3" x="238" y="50" w="29" h="47" oX="24" oY="20" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_13_ 4" x="859" y="45" w="45" h="42" oX="17" oY="31" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_14_ 4" x="582" y="93" w="48" h="33" oX="14" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_15_ 4" x="799" y="91" w="49" h="36" oX="29" oY="47" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_16_ 5" x="1142" y="1" w="45" h="40" oX="17" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_17_ 5" x="201" y="51" w="35" h="47" oX="27" oY="14" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_18_ 5" x="1374" y="1" w="40" h="39" oX="14" oY="35" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_19_ 6" x="903" y="1" w="45" h="42" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_20_ 6" x="1594" y="1" w="35" h="37" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_21_ 6" x="1461" y="1" w="40" h="38" oX="41" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_22_ 7" x="850" y="90" w="45" h="37" oX="34" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_23_ 7" x="897" y="89" w="48" h="38" oX="34" oY="21" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_ko_24_ 7" x="996" y="1" w="49" h="41" oX="19" oY="18" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_01_ 0" x="90" y="52" w="20" h="49" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_02_ 0" x="91" y="1" w="20" h="49" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_03_ 0" x="112" y="52" w="20" h="49" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_04_ 0" x="179" y="51" w="20" h="48" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_05_ 0" x="113" y="1" w="20" h="49" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_06_ 0" x="134" y="52" w="20" h="49" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_07_ 0" x="1" y="53" w="20" h="50" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_08_ 0" x="182" y="1" w="20" h="48" oX="38" oY="29" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_09_ 1" x="1761" y="30" w="53" h="27" oX="11" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_10_ 1" x="247" y="99" w="57" h="28" oX="11" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_11_ 1" x="1741" y="1" w="55" h="27" oX="10" oY="37" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_12_ 1" x="1671" y="91" w="54" h="27" oX="10" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_13_ 1" x="1686" y="1" w="53" h="28" oX="11" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_14_ 1" x="1668" y="61" w="53" h="28" oX="11" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_15_ 1" x="524" y="95" w="56" h="28" oX="12" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_16_ 1" x="632" y="93" w="54" h="28" oX="11" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_17_ 2" x="1706" y="31" w="53" h="28" oX="32" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_18_ 2" x="188" y="101" w="57" h="26" oX="28" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_19_ 2" x="1779" y="59" w="55" h="26" oX="31" oY="37" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_20_ 2" x="688" y="93" w="54" h="28" oX="32" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_21_ 2" x="1798" y="1" w="53" h="27" oX="32" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_22_ 2" x="1727" y="90" w="53" h="27" oX="32" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_23_ 2" x="1613" y="100" w="56" h="27" oX="28" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_24_ 2" x="1723" y="61" w="54" h="27" oX="31" oY="36" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_25_ 3" x="23" y="53" w="21" h="49" oX="37" oY="19" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_26_ 3" x="24" y="1" w="21" h="49" oX="37" oY="20" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_27_ 3" x="386" y="49" w="20" h="46" oX="38" oY="20" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_28_ 3" x="502" y="48" w="21" h="45" oX="37" oY="19" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_29_ 3" x="379" y="1" w="21" h="46" oX="37" oY="19" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_30_ 3" x="287" y="1" w="21" h="47" oX="37" oY="20" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_31_ 3" x="156" y="51" w="21" h="48" oX="37" oY="21" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_32_ 3" x="1" y="1" w="21" h="50" oX="37" oY="19" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_33_ 4" x="1095" y="87" w="47" h="40" oX="17" oY="31" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_34_ 4" x="1039" y="44" w="49" h="41" oX="18" oY="31" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_35_ 4" x="1047" y="1" w="46" h="41" oX="18" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_36_ 4" x="1144" y="85" w="45" h="40" oX="18" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_37_ 4" x="1189" y="1" w="44" h="40" oX="18" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_38_ 4" x="1277" y="43" w="44" h="39" oX="18" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_39_ 4" x="1191" y="85" w="44" h="40" oX="18" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_40_ 4" x="947" y="89" w="44" h="38" oX="18" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_41_ 5" x="135" y="1" w="45" h="48" oX="17" oY="21" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_42_ 5" x="293" y="50" w="45" h="46" oX="17" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_43_ 5" x="623" y="47" w="44" h="44" oX="18" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_44_ 5" x="637" y="1" w="44" h="44" oX="18" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_45_ 5" x="761" y="46" w="45" h="43" oX="17" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_46_ 5" x="669" y="47" w="44" h="44" oX="18" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_47_ 5" x="525" y="48" w="49" h="44" oX="17" oY="23" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_48_ 5" x="402" y="1" w="46" h="45" oX="18" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_49_ 6" x="1261" y="85" w="45" h="39" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_50_ 6" x="1283" y="1" w="44" h="39" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_51_ 6" x="1308" y="84" w="44" h="39" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_52_ 6" x="1414" y="42" w="44" h="38" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_53_ 6" x="1323" y="42" w="44" h="39" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_54_ 6" x="1231" y="43" w="44" h="40" oX="34" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_55_ 6" x="808" y="46" w="49" h="42" oX="30" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_56_ 6" x="1090" y="44" w="46" h="41" oX="32" oY="32" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_57_ 7" x="729" y="1" w="47" h="43" oX="32" oY="21" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_58_ 7" x="987" y="45" w="50" h="41" oX="29" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_59_ 7" x="993" y="88" w="46" h="39" oX="32" oY="23" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_60_ 7" x="906" y="45" w="45" h="42" oX="33" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_61_ 7" x="683" y="1" w="44" h="44" oX="34" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_62_ 7" x="497" y="1" w="44" h="45" oX="34" oY="22" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_63_ 7" x="715" y="47" w="44" h="44" oX="34" oY="24" oW="96" oH="96"/>
+    <sprite n="Medieval_TC_Pig2_walking_64_ 7" x="310" y="1" w="44" h="46" oX="34" oY="22" oW="96" oH="96"/>
+</TextureAtlas>

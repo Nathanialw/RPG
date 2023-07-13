@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:5cc9b0597ade46c8a1684b81ca7a3e4b:c23a61f7df74d554d34b97189392af4b:c6eaab100cf3143c7427e0b95383761a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Medieval_TC_Buck.png" width="1019" height="743">
+    <sprite n="Medieval_TC_Buck_behavior1_01_ 0" x="612" y="409" w="31" h="88" oX="49" oY="22" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_02_ 0" x="645" y="416" w="31" h="88" oX="49" oY="22" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_03_ 0" x="678" y="416" w="31" h="88" oX="49" oY="22" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_04_ 1" x="114" y="1" w="91" h="51" oX="8" oY="52" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_05_ 1" x="207" y="1" w="92" h="51" oX="7" oY="52" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_06_ 1" x="301" y="1" w="92" h="51" oX="7" oY="52" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_07_ 2" x="395" y="1" w="91" h="53" oX="29" oY="52" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_08_ 2" x="488" y="1" w="92" h="53" oX="29" oY="52" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_09_ 2" x="582" y="1" w="92" h="53" oX="29" oY="52" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_10_ 3" x="648" y="338" w="31" h="76" oX="48" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_11_ 3" x="681" y="338" w="31" h="76" oX="48" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_12_ 3" x="900" y="342" w="31" h="77" oX="48" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_13_ 4" x="747" y="340" w="74" h="76" oX="18" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_14_ 4" x="823" y="342" w="75" h="76" oX="17" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_15_ 4" x="933" y="345" w="75" h="76" oX="17" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_16_ 5" x="100" y="114" w="74" h="66" oX="17" oY="42" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_17_ 5" x="753" y="127" w="75" h="67" oX="17" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_18_ 5" x="830" y="127" w="75" h="67" oX="17" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_19_ 6" x="1" y="392" w="74" h="76" oX="37" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_20_ 6" x="77" y="395" w="75" h="76" oX="36" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_21_ 6" x="187" y="402" w="75" h="76" oX="36" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_22_ 7" x="176" y="115" w="74" h="66" oX="36" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_23_ 7" x="252" y="118" w="75" h="66" oX="36" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_behavior1_24_ 7" x="329" y="120" w="75" h="66" oX="36" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_01_ 0" x="700" y="193" w="31" h="70" oX="49" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_02_ 0" x="857" y="196" w="31" h="71" oX="49" oY="23" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_03_ 0" x="981" y="199" w="31" h="71" oX="49" oY="23" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_04_ 1" x="401" y="259" w="87" h="70" oX="11" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_05_ 1" x="890" y="199" w="89" h="69" oX="10" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_06_ 1" x="490" y="260" w="90" h="70" oX="11" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_07_ 2" x="1" y="319" w="87" h="71" oX="30" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_08_ 2" x="582" y="263" w="89" h="70" oX="29" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_09_ 2" x="673" y="266" w="90" h="70" oX="27" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_10_ 3" x="689" y="616" w="31" h="111" oX="48" oY="2" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_11_ 3" x="788" y="619" w="31" h="112" oX="48" oY="1" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_12_ 3" x="722" y="616" w="31" h="111" oX="48" oY="2" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_13_ 4" x="644" y="58" w="73" h="65" oX="20" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_14_ 4" x="788" y="60" w="73" h="65" oX="20" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_15_ 4" x="863" y="60" w="72" h="65" oX="21" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_16_ 5" x="1" y="570" w="71" h="104" oX="20" oY="7" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_17_ 5" x="538" y="496" w="72" h="103" oX="20" oY="8" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_18_ 5" x="74" y="572" w="73" h="103" oX="20" oY="8" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_19_ 6" x="406" y="121" w="71" h="66" oX="37" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_20_ 6" x="479" y="121" w="72" h="66" oX="36" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_21_ 6" x="553" y="122" w="73" h="66" oX="35" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_22_ 7" x="154" y="480" w="72" h="99" oX="35" oY="7" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_23_ 7" x="228" y="482" w="73" h="99" oX="35" oY="7" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_idle_24_ 7" x="1" y="470" w="72" h="98" oX="35" oY="8" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_01_ 0" x="700" y="193" w="31" h="70" oX="49" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_02_ 0" x="628" y="125" w="54" h="66" oX="25" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_03_ 0" x="334" y="404" w="68" h="77" oX="34" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_04_ 1" x="401" y="259" w="87" h="70" oX="11" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_05_ 1" x="219" y="583" w="80" h="103" oX="17" oY="4" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_06_ 1" x="1" y="52" w="97" h="58" oX="16" oY="53" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_07_ 2" x="1" y="319" w="87" h="71" oX="30" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_08_ 2" x="937" y="63" w="80" h="65" oX="31" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_09_ 2" x="789" y="1" w="97" h="57" oX="15" oY="47" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_10_ 3" x="689" y="616" w="31" h="111" oX="48" oY="2" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_11_ 3" x="633" y="616" w="54" h="110" oX="49" oY="0" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_12_ 3" x="264" y="404" w="68" h="76" oX="26" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_13_ 4" x="644" y="58" w="73" h="65" oX="20" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_14_ 4" x="940" y="272" w="76" h="71" oX="20" oY="13" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_15_ 4" x="470" y="408" w="69" h="85" oX="43" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_16_ 5" x="1" y="570" w="71" h="104" oX="20" oY="7" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_17_ 5" x="854" y="623" w="50" h="113" oX="42" oY="0" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_18_ 5" x="1" y="1" w="111" h="49" oX="4" oY="58" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_19_ 6" x="406" y="121" w="71" h="66" oX="37" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_20_ 6" x="967" y="1" w="51" h="60" oX="35" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_21_ 6" x="676" y="1" w="111" h="55" oX="13" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_22_ 7" x="154" y="480" w="72" h="99" oX="35" oY="7" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_23_ 7" x="711" y="418" w="76" h="94" oX="32" oY="15" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_ko_24_ 7" x="541" y="409" w="69" h="85" oX="16" oY="27" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_01_ 0" x="185" y="325" w="32" h="73" oX="48" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_02_ 0" x="404" y="406" w="31" h="78" oX="49" oY="23" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_03_ 0" x="508" y="332" w="31" h="74" oX="49" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_04_ 0" x="186" y="252" w="31" h="71" oX="49" oY="25" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_05_ 0" x="824" y="196" w="31" h="70" oX="50" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_06_ 0" x="154" y="400" w="31" h="77" oX="50" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_07_ 0" x="437" y="406" w="31" h="78" oX="51" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_08_ 0" x="714" y="338" w="31" h="76" oX="51" oY="24" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_09_ 1" x="907" y="130" w="95" h="67" oX="11" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_10_ 1" x="403" y="189" w="105" h="68" oX="13" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_11_ 1" x="510" y="190" w="93" h="68" oX="13" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_12_ 1" x="219" y="329" w="93" h="71" oX="13" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_13_ 1" x="314" y="331" w="92" h="71" oX="13" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_14_ 1" x="408" y="332" w="98" h="72" oX="12" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_15_ 1" x="1" y="248" w="89" h="69" oX="12" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_16_ 1" x="1" y="179" w="89" h="67" oX="11" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_17_ 2" x="843" y="270" w="95" h="70" oX="22" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_18_ 2" x="541" y="335" w="105" h="72" oX="10" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_19_ 2" x="90" y="323" w="93" h="70" oX="22" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_20_ 2" x="605" y="193" w="93" h="68" oX="22" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_21_ 2" x="92" y="252" w="92" h="69" oX="23" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_22_ 2" x="1" y="112" w="97" h="65" oX="18" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_23_ 2" x="733" y="196" w="89" h="68" oX="27" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_24_ 2" x="219" y="256" w="89" h="69" oX="28" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_25_ 3" x="906" y="624" w="31" h="115" oX="48" oY="2" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_26_ 3" x="972" y="624" w="31" h="118" oX="48" oY="3" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_27_ 3" x="645" y="506" w="31" h="108" oX="48" oY="4" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_28_ 3" x="755" y="619" w="31" h="111" oX="48" oY="5" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_29_ 3" x="821" y="623" w="31" h="112" oX="47" oY="5" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_30_ 3" x="939" y="624" w="31" h="115" oX="47" oY="4" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_31_ 3" x="612" y="499" w="31" h="107" oX="46" oY="4" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_32_ 3" x="600" y="608" w="31" h="109" oX="46" oY="3" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_33_ 4" x="413" y="56" w="80" h="63" oX="20" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_34_ 4" x="310" y="258" w="89" h="69" oX="22" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_35_ 4" x="249" y="186" w="78" h="68" oX="22" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_36_ 4" x="719" y="58" w="67" h="65" oX="25" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_37_ 4" x="684" y="125" w="67" h="66" oX="25" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_38_ 4" x="495" y="56" w="73" h="63" oX="24" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_39_ 4" x="570" y="56" w="72" h="64" oX="23" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_40_ 4" x="256" y="54" w="75" h="62" oX="22" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_41_ 5" x="445" y="597" w="73" h="106" oX="20" oY="7" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_42_ 5" x="520" y="601" w="78" h="108" oX="22" oY="8" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_43_ 5" x="789" y="420" w="75" h="95" oX="22" oY="9" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_44_ 5" x="75" y="473" w="77" h="97" oX="24" oY="9" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_45_ 5" x="303" y="483" w="77" h="99" oX="23" oY="9" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_46_ 5" x="382" y="486" w="80" h="100" oX="22" oY="10" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_47_ 5" x="678" y="514" w="76" h="100" oX="20" oY="11" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_48_ 5" x="464" y="495" w="72" h="100" oX="19" oY="10" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_49_ 6" x="92" y="182" w="73" h="67" oX="35" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_50_ 6" x="333" y="56" w="78" h="62" oX="28" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_51_ 6" x="179" y="54" w="75" h="59" oX="31" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_52_ 6" x="888" y="1" w="77" h="57" oX="27" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_53_ 6" x="100" y="54" w="77" h="58" oX="28" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_54_ 6" x="167" y="183" w="80" h="67" oX="26" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_55_ 6" x="765" y="268" w="76" h="70" oX="32" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_56_ 6" x="329" y="188" w="72" h="68" oX="37" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_57_ 7" x="847" y="520" w="79" h="101" oX="28" oY="7" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_58_ 7" x="756" y="517" w="89" h="100" oX="17" oY="8" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_59_ 7" x="928" y="521" w="78" h="101" oX="28" oY="9" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_60_ 7" x="149" y="581" w="68" h="104" oX="36" oY="9" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_61_ 7" x="301" y="584" w="68" h="104" oX="36" oY="9" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_62_ 7" x="371" y="588" w="72" h="104" oX="32" oY="9" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_63_ 7" x="866" y="423" w="72" h="95" oX="33" oY="9" oW="128" oH="128"/>
+    <sprite n="Medieval_TC_Buck_walking_64_ 7" x="940" y="423" w="74" h="96" oX="31" oY="8" oW="128" oH="128"/>
+</TextureAtlas>

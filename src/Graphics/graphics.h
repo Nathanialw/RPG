@@ -38,7 +38,7 @@ namespace Graphics {
 
   SDL_Renderer* renderer;
 
-  const int numberOfTextures = 100;
+  const int numberOfTextures = 200;
   int texture_ID = 0;
   std::array<SDL_Texture*, numberOfTextures> unitTextures;
 
