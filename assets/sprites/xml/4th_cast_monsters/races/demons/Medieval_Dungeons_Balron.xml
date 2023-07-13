@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:4dc052450c915fc5c7c607c2e695370e:ee8f94d07af5b2d6da031736b997fc8c:6ca83f99f227856f2effeaa6cf2a658f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Medieval_Dungeons_Balron.png" width="4089" height="3023">
+    <sprite n="Medieval_Dungeons_Balron_idle_01_ 0" x="198" y="1638" w="198" h="299" oX="155" oY="116" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_02_ 0" x="3612" y="1396" w="198" h="298" oX="155" oY="118" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_03_ 0" x="3637" y="1102" w="198" h="292" oX="155" oY="124" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_04_ 1" x="2490" y="1381" w="211" h="293" oX="148" oY="128" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_05_ 1" x="1" y="1341" w="211" h="291" oX="144" oY="130" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_06_ 1" x="1599" y="1082" w="207" h="287" oX="138" oY="134" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_07_ 2" x="1371" y="1366" w="211" h="292" oX="153" oY="133" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_08_ 2" x="1584" y="1371" w="211" h="292" oX="157" oY="133" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_09_ 2" x="3034" y="1098" w="207" h="290" oX="167" oY="135" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_10_ 3" x="2745" y="805" w="198" h="284" oX="159" oY="99" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_11_ 3" x="3874" y="536" w="198" h="281" oX="159" oY="100" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_12_ 3" x="2767" y="526" w="198" h="277" oX="159" oY="99" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_13_ 4" x="2687" y="1987" w="175" h="308" oX="151" oY="124" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_14_ 4" x="1070" y="1954" w="176" h="306" oX="150" oY="125" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_15_ 4" x="2275" y="1670" w="180" h="302" oX="147" oY="129" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_16_ 5" x="1" y="1052" w="190" h="285" oX="154" oY="106" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_17_ 5" x="1689" y="797" w="191" h="283" oX="151" oY="108" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_18_ 5" x="1" y="768" w="190" h="282" oX="146" oY="109" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_19_ 6" x="2106" y="1974" w="190" h="307" oX="168" oY="126" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_20_ 6" x="1248" y="1962" w="191" h="306" oX="170" oY="128" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_21_ 6" x="2703" y="1683" w="191" h="302" oX="176" oY="132" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_22_ 7" x="2315" y="800" w="175" h="284" oX="186" oY="110" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_23_ 7" x="3198" y="812" w="176" h="284" oX="186" oY="110" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_idle_24_ 7" x="1882" y="800" w="179" h="283" oX="186" oY="110" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_01_ 0" x="198" y="1638" w="198" h="299" oX="155" oY="116" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_02_ 0" x="2364" y="2286" w="283" h="319" oX="120" oY="68" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_03_ 0" x="2298" y="1977" w="387" h="307" oX="78" oY="99" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_04_ 1" x="2490" y="1381" w="211" h="293" oX="148" oY="128" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_05_ 1" x="2477" y="2622" w="212" h="348" oX="168" oY="86" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_06_ 1" x="716" y="247" w="386" h="263" oX="107" oY="188" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_07_ 2" x="1371" y="1366" w="211" h="292" oX="153" oY="133" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_08_ 2" x="471" y="2572" w="212" h="328" oX="132" oY="62" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_09_ 2" x="1423" y="2276" w="386" h="310" oX="48" oY="132" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_10_ 3" x="2745" y="805" w="198" h="284" oX="159" oY="99" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_11_ 3" x="3580" y="1696" w="283" h="302" oX="109" oY="83" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_12_ 3" x="3420" y="2000" w="387" h="308" oX="47" oY="168" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_13_ 4" x="2864" y="1989" w="175" h="308" oX="151" oY="124" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_14_ 4" x="676" y="1652" w="309" h="298" oX="100" oY="93" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_15_ 4" x="2164" y="255" w="350" h="266" oX="144" oY="162" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_16_ 5" x="1" y="1052" w="190" h="285" oX="154" oY="106" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_17_ 5" x="2945" y="2629" w="178" h="361" oX="185" oY="78" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_18_ 5" x="3387" y="263" w="351" h="269" oX="87" oY="195" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_19_ 6" x="2106" y="1974" w="190" h="307" oX="168" oY="126" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_20_ 6" x="1441" y="1967" w="178" h="306" oX="149" oY="73" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_21_ 6" x="987" y="1653" w="352" h="299" oX="56" oY="123" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_22_ 7" x="3376" y="815" w="175" h="284" oX="186" oY="110" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_23_ 7" x="3412" y="2310" w="309" h="323" oX="103" oY="61" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_ko_24_ 7" x="1808" y="1085" w="350" h="286" oX="31" oY="181" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_01_ 0" x="1621" y="1968" w="236" h="306" oX="114" oY="110" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_02_ 0" x="2967" y="529" w="230" h="279" oX="143" oY="112" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_03_ 0" x="817" y="1" w="205" h="243" oX="158" oY="110" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_04_ 0" x="690" y="1355" w="199" h="294" oX="160" oY="108" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_05_ 0" x="407" y="1062" w="194" h="285" oX="167" oY="112" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_06_ 0" x="3812" y="1396" w="207" h="298" oX="150" oY="118" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_07_ 0" x="3241" y="1" w="214" h="257" oX="141" oY="113" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_08_ 0" x="3385" y="534" w="231" h="279" oX="131" oY="117" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_09_ 1" x="1024" y="1" w="271" h="244" oX="123" oY="112" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_10_ 1" x="1831" y="1" w="293" h="250" oX="102" oY="116" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_11_ 1" x="2516" y="256" w="288" h="266" oX="107" oY="109" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_12_ 1" x="2959" y="1" w="280" h="254" oX="115" oY="105" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_13_ 1" x="1537" y="1" w="292" h="245" oX="117" oY="113" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_14_ 1" x="1104" y="247" w="290" h="264" oX="106" oY="114" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_15_ 1" x="398" y="1648" w="276" h="298" oX="118" oY="105" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_16_ 1" x="3457" y="1" w="288" h="260" oX="113" oY="116" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_17_ 2" x="2408" y="1" w="271" h="252" oX="118" oY="122" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_18_ 2" x="603" y="1069" w="293" h="284" oX="117" oY="108" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_19_ 2" x="2806" y="257" w="289" h="267" oX="116" oY="119" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_20_ 2" x="2126" y="1" w="280" h="251" oX="117" oY="123" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_21_ 2" x="231" y="1" w="292" h="235" oX="103" oY="118" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_22_ 2" x="525" y="1" w="290" h="240" oX="116" oY="127" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_23_ 2" x="2681" y="1" w="276" h="253" oX="118" oY="124" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_24_ 2" x="697" y="512" w="287" h="273" oX="112" oY="103" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_25_ 3" x="1" y="2560" w="236" h="324" oX="162" oY="71" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_26_ 3" x="3149" y="1692" w="230" h="301" oX="139" oY="71" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_27_ 3" x="3322" y="2635" w="206" h="376" oX="148" oY="65" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_28_ 3" x="3530" y="2635" w="199" h="385" oX="153" oY="67" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_29_ 3" x="3125" y="2631" w="195" h="363" oX="150" oY="69" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_30_ 3" x="163" y="2245" w="207" h="313" oX="155" oY="72" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_31_ 3" x="1077" y="2586" w="214" h="333" oX="157" oY="68" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_32_ 3" x="3731" y="2635" w="231" h="387" oX="150" oY="64" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_33_ 4" x="691" y="787" w="288" h="280" oX="86" oY="118" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_34_ 4" x="1396" y="248" w="257" h="264" oX="99" oY="117" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_35_ 4" x="1297" y="1" w="238" h="244" oX="127" oY="110" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_36_ 4" x="2063" y="800" w="250" h="283" oX="122" oY="106" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_37_ 4" x="444" y="506" w="251" h="272" oX="121" oY="110" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_38_ 4" x="1797" y="1373" w="241" h="292" oX="123" oY="113" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_39_ 4" x="3740" y="263" w="242" h="271" oX="100" oY="111" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_40_ 4" x="3747" y="1" w="273" h="260" oX="117" oY="119" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_41_ 5" x="2703" y="1386" w="222" h="295" oX="134" oY="89" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_42_ 5" x="2039" y="523" w="235" h="275" oX="119" oY="91" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_43_ 5" x="1293" y="2588" w="228" h="334" oX="124" oY="83" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_44_ 5" x="1523" y="2588" w="264" h="335" oX="116" oY="79" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_45_ 5" x="374" y="1948" w="272" h="303" oX="118" oY="84" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_46_ 5" x="1655" y="253" w="233" h="265" oX="139" oY="88" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_47_ 5" x="239" y="2563" w="230" h="326" oX="136" oY="82" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_48_ 5" x="2691" y="2629" w="252" h="350" oX="120" oY="86" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_49_ 6" x="2040" y="1375" w="223" h="292" oX="155" oY="113" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_50_ 6" x="2276" y="523" w="235" h="275" oX="158" oY="117" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_51_ 6" x="1" y="1" w="228" h="213" oX="160" oY="119" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_52_ 6" x="1773" y="521" w="264" h="274" oX="132" oY="121" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_53_ 6" x="1890" y="254" w="272" h="265" oX="122" oY="123" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_54_ 6" x="986" y="513" w="233" h="273" oX="140" oY="130" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_55_ 6" x="484" y="243" w="230" h="261" oX="146" oY="121" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_56_ 6" x="2513" y="524" w="252" h="275" oX="140" oY="117" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_57_ 7" x="3097" y="260" w="288" h="267" oX="138" oY="90" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_58_ 7" x="2776" y="1095" w="256" h="289" oX="156" oY="91" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_59_ 7" x="1985" y="2605" w="238" h="335" oX="147" oY="92" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_60_ 7" x="2225" y="2607" w="250" h="335" oX="140" oY="97" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_61_ 7" x="2649" y="2299" w="250" h="321" oX="140" oY="93" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_62_ 7" x="193" y="773" w="241" h="280" oX="148" oY="99" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_63_ 7" x="3155" y="1393" w="241" h="297" oX="170" oY="94" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_running_64_ 7" x="2901" y="2305" w="273" h="322" oX="122" oY="84" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_01_ 0" x="685" y="2577" w="194" h="330" oX="171" oY="96" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_02_ 0" x="3723" y="2310" w="193" h="323" oX="176" oY="94" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_03_ 0" x="3041" y="1995" w="198" h="308" oX="177" oY="93" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_04_ 0" x="864" y="2261" w="188" h="314" oX="180" oY="96" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_05_ 0" x="881" y="2578" w="194" h="331" oX="169" oY="96" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_06_ 0" x="1811" y="2279" w="184" h="315" oX="150" oY="93" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_07_ 0" x="1" y="2239" w="160" h="313" oX="175" oY="94" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_08_ 0" x="1054" y="2262" w="170" h="314" oX="169" oY="95" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_09_ 1" x="1443" y="795" w="244" h="282" oX="141" oY="114" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_10_ 1" x="2160" y="1086" w="245" h="287" oX="142" oY="109" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_11_ 1" x="2896" y="1687" w="251" h="300" oX="138" oY="114" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_12_ 1" x="406" y="1355" w="282" h="291" oX="105" oY="118" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_13_ 1" x="2492" y="801" w="251" h="283" oX="133" oY="116" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_14_ 1" x="3618" y="536" w="254" h="279" oX="132" oY="108" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_15_ 1" x="898" y="1072" w="303" h="285" oX="86" oY="101" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_16_ 1" x="981" y="789" w="276" h="281" oX="110" oY="108" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_17_ 2" x="198" y="500" w="244" h="271" oX="127" oY="113" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_18_ 2" x="1221" y="514" w="245" h="273" oX="125" oY="115" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_19_ 2" x="2945" y="810" w="251" h="283" oX="123" oY="109" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_20_ 2" x="3553" y="817" w="282" h="283" oX="125" oY="108" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_21_ 2" x="3837" y="819" w="251" h="283" oX="128" oY="112" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_22_ 2" x="436" y="780" w="253" h="280" oX="126" oY="117" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_23_ 2" x="1468" y="520" w="303" h="273" oX="123" oY="119" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_24_ 2" x="206" y="238" w="276" h="260" oX="126" oY="115" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_25_ 3" x="2169" y="2286" w="193" h="317" oX="147" oY="82" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_26_ 3" x="1789" y="2596" w="194" h="336" oX="142" oY="82" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_27_ 3" x="3381" y="1693" w="197" h="302" oX="137" oY="80" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_28_ 3" x="185" y="1939" w="187" h="304" oX="144" oY="80" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_29_ 3" x="1226" y="2270" w="195" h="314" oX="148" oY="82" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_30_ 3" x="648" y="1952" w="184" h="305" oX="178" oY="82" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_31_ 3" x="3865" y="1696" w="159" h="302" oX="177" oY="80" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_32_ 3" x="1997" y="2283" w="170" h="315" oX="173" oY="79" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_33_ 4" x="3241" y="1997" w="177" h="308" oX="154" oY="103" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_34_ 4" x="3809" y="2000" w="190" h="308" oX="150" oY="102" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_35_ 4" x="3398" y="1394" w="212" h="297" oX="135" oY="104" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_36_ 4" x="2927" y="1390" w="226" h="295" oX="134" oY="107" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_37_ 4" x="618" y="2261" w="244" h="309" oX="122" oY="108" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_38_ 4" x="1341" y="1660" w="224" h="300" oX="138" oY="104" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_39_ 4" x="3243" y="1101" w="203" h="290" oX="147" oY="101" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_40_ 4" x="3199" y="529" w="184" h="281" oX="152" oY="100" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_41_ 5" x="1859" y="1971" w="245" h="306" oX="120" oY="100" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_42_ 5" x="3176" y="2307" w="234" h="322" oX="127" oY="97" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_43_ 5" x="1203" y="1073" w="209" h="285" oX="144" oY="98" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_44_ 5" x="3448" y="1102" w="187" h="290" oX="151" oY="98" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_45_ 5" x="1259" y="789" w="182" h="282" oX="147" oY="96" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_46_ 5" x="1" y="491" w="195" h="275" oX="141" oY="94" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_47_ 5" x="891" y="1359" w="250" h="291" oX="100" oY="91" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_48_ 5" x="1778" y="1667" w="244" h="299" oX="118" oY="94" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_49_ 6" x="372" y="2253" w="244" h="308" oX="147" oY="107" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_50_ 6" x="834" y="1954" w="234" h="305" oX="150" oY="106" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_51_ 6" x="1567" y="1665" w="209" h="300" oX="159" oY="103" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_52_ 6" x="2407" y="1086" w="188" h="288" oX="173" oY="103" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_53_ 6" x="1" y="1934" w="182" h="303" oX="183" oY="102" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_54_ 6" x="1" y="1634" w="195" h="298" oX="176" oY="103" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_55_ 6" x="2024" y="1670" w="249" h="299" oX="162" oY="106" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_56_ 6" x="3837" y="1104" w="244" h="290" oX="150" oY="108" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_57_ 7" x="2597" y="1091" w="177" h="288" oX="181" oY="96" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_58_ 7" x="214" y="1341" w="190" h="295" oX="172" oY="98" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_59_ 7" x="193" y="1055" w="212" h="284" oX="165" oY="95" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_60_ 7" x="1143" y="1360" w="226" h="291" oX="152" oY="95" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_61_ 7" x="2457" y="1676" w="244" h="299" oX="146" oY="97" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_62_ 7" x="2265" y="1376" w="223" h="292" oX="150" oY="103" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_63_ 7" x="1" y="216" w="203" h="273" oX="162" oY="97" oW="512" oH="512"/>
+    <sprite n="Medieval_Dungeons_Balron_walking_64_ 7" x="1414" y="1079" w="183" h="285" oX="177" oY="95" oW="512" oH="512"/>
+</TextureAtlas>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:029c1c8674da526ca790887080f11e30:c84c1da0c1d292ad2ca9492e614cd604:9906de9a92b9f8e54bf21cdca1ed5a8d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Medieval_Dungeons_RodentofUnusualSize.png" width="256" height="2401">
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_01_ 0" x="213" y="63" w="41" h="59" oX="52" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_02_ 0" x="213" y="1" w="41" h="60" oX="52" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_03_ 0" x="162" y="2159" w="39" h="61" oX="52" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_04_ 1" x="1" y="836" w="79" h="41" oX="24" oY="53" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_05_ 1" x="1" y="632" w="81" h="42" oX="24" oY="53" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_06_ 1" x="96" y="595" w="84" h="40" oX="24" oY="54" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_07_ 2" x="82" y="885" w="79" h="34" oX="25" oY="52" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_08_ 2" x="84" y="637" w="81" h="33" oX="23" oY="53" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_09_ 2" x="1" y="597" w="84" h="33" oX="20" oY="53" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_10_ 3" x="209" y="230" w="40" h="58" oX="36" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_11_ 3" x="211" y="124" w="40" h="61" oX="36" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_12_ 3" x="110" y="2288" w="39" h="65" oX="37" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_13_ 4" x="1" y="1627" w="73" h="48" oX="29" oY="46" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_14_ 4" x="78" y="1414" w="75" h="48" oX="29" oY="46" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_15_ 4" x="80" y="1158" w="77" h="49" oX="29" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_16_ 5" x="55" y="2204" w="51" h="60" oX="29" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_17_ 5" x="69" y="2141" w="52" h="61" oX="29" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_18_ 5" x="198" y="463" w="53" h="64" oX="29" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_19_ 6" x="1" y="2251" w="51" h="57" oX="48" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_20_ 6" x="1" y="2192" w="52" h="57" oX="47" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_21_ 6" x="193" y="529" w="53" h="58" oX="46" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_22_ 7" x="1" y="1677" w="73" h="45" oX="26" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_23_ 7" x="1" y="1442" w="75" h="44" oX="24" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_idle_24_ 7" x="80" y="1209" w="77" h="44" oX="22" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_01_ 0" x="213" y="63" w="41" h="59" oX="52" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_02_ 0" x="76" y="2326" w="32" h="69" oX="47" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_03_ 0" x="139" y="2014" w="29" h="56" oX="49" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_04_ 1" x="82" y="843" w="79" h="40" oX="26" oY="55" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_05_ 1" x="1" y="1219" w="77" h="34" oX="34" oY="56" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_06_ 1" x="191" y="722" w="64" h="31" oX="41" oY="59" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_07_ 2" x="1" y="921" w="79" h="34" oX="23" oY="53" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_08_ 2" x="1" y="1018" w="78" h="32" oX="16" oY="60" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_09_ 2" x="190" y="924" w="65" h="24" oX="22" oY="62" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_10_ 3" x="54" y="2266" w="40" h="58" oX="36" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_11_ 3" x="203" y="2159" w="39" h="54" oX="48" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_12_ 3" x="139" y="2072" w="29" h="48" oX="50" oY="51" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_13_ 4" x="1" y="1627" w="73" h="48" oX="29" oY="46" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_14_ 4" x="207" y="344" w="47" h="60" oX="36" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_15_ 4" x="207" y="406" w="47" h="55" oX="41" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_16_ 5" x="55" y="2204" w="51" h="60" oX="29" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_17_ 5" x="177" y="1708" w="72" h="46" oX="32" oY="42" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_18_ 5" x="191" y="755" w="63" h="45" oX="33" oY="46" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_19_ 6" x="1" y="2251" w="51" h="57" oX="48" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_20_ 6" x="1" y="1724" w="72" h="47" oX="24" oY="43" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_21_ 6" x="190" y="950" w="63" h="40" oX="32" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_22_ 7" x="1" y="1677" w="73" h="45" oX="26" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_23_ 7" x="207" y="290" w="48" h="52" oX="44" oY="43" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_ko_24_ 7" x="209" y="187" w="46" h="41" oX="41" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_01_ 0" x="163" y="794" w="25" h="91" oX="52" oY="4" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_02_ 0" x="166" y="702" w="23" h="90" oX="52" oY="6" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_03_ 0" x="159" y="1219" w="24" h="84" oX="52" oY="10" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_04_ 0" x="151" y="1641" w="24" h="81" oX="52" oY="13" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_05_ 0" x="150" y="1724" w="24" h="81" oX="52" oY="12" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_06_ 0" x="160" y="1027" w="24" h="94" oX="52" oY="3" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_07_ 0" x="159" y="1123" w="24" h="94" oX="52" oY="4" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_08_ 0" x="163" y="887" w="25" h="86" oX="52" oY="11" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_09_ 1" x="1" y="547" w="93" h="48" oX="20" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_10_ 1" x="104" y="246" w="101" h="33" oX="20" oY="48" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_11_ 1" x="1" y="509" w="94" h="36" oX="20" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_12_ 1" x="1" y="39" w="104" h="35" oX="21" oY="48" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_13_ 1" x="107" y="39" w="104" h="32" oX="21" oY="48" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_14_ 1" x="101" y="461" w="95" h="45" oX="20" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_15_ 1" x="104" y="414" w="98" h="45" oX="21" oY="42" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_16_ 1" x="107" y="73" w="103" h="35" oX="21" oY="51" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_17_ 2" x="96" y="550" w="93" h="43" oX="19" oY="40" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_18_ 2" x="1" y="246" w="101" h="40" oX="11" oY="46" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_19_ 2" x="97" y="508" w="94" h="40" oX="18" oY="43" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_20_ 2" x="1" y="1" w="104" h="36" oX="7" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_21_ 2" x="107" y="1" w="104" h="36" oX="7" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_22_ 2" x="1" y="464" w="94" h="43" oX="17" oY="44" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_23_ 2" x="1" y="421" w="98" h="41" oX="13" oY="46" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_24_ 2" x="1" y="111" w="103" h="30" oX="8" oY="53" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_25_ 3" x="162" y="975" w="25" h="50" oX="51" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_26_ 3" x="147" y="1873" w="24" h="55" oX="52" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_27_ 3" x="158" y="2222" w="23" h="57" oX="52" oY="30" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_28_ 3" x="26" y="2326" w="23" h="73" oX="52" oY="27" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_29_ 3" x="51" y="2326" w="23" h="70" oX="52" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_30_ 3" x="151" y="2346" w="23" h="54" oX="52" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_31_ 3" x="176" y="2346" w="23" h="52" oX="52" oY="35" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_32_ 3" x="228" y="2281" w="23" h="63" oX="52" oY="34" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_33_ 4" x="1" y="1932" w="67" h="79" oX="29" oY="11" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_34_ 4" x="181" y="1418" w="74" h="68" oX="29" oY="16" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_35_ 4" x="76" y="1683" w="72" h="66" oX="29" oY="19" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_36_ 4" x="81" y="1027" w="77" h="66" oX="29" oY="22" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_37_ 4" x="1" y="1488" w="73" h="68" oX="29" oY="19" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_38_ 4" x="191" y="589" w="64" h="82" oX="30" oY="8" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_39_ 4" x="186" y="1062" w="69" h="81" oX="30" oY="11" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_40_ 4" x="1" y="1255" w="76" h="69" oX="30" oY="20" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_41_ 5" x="70" y="2043" w="67" h="41" oX="29" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_42_ 5" x="174" y="1824" w="71" h="38" oX="29" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_43_ 5" x="190" y="877" w="65" h="45" oX="29" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_44_ 5" x="181" y="1488" w="74" h="53" oX="30" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_45_ 5" x="1" y="676" w="80" h="52" oX="27" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_46_ 5" x="75" y="1751" w="72" h="44" oX="29" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_47_ 5" x="177" y="1659" w="72" h="47" oX="30" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_48_ 5" x="76" y="1634" w="73" h="47" oX="30" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_49_ 6" x="173" y="1915" w="67" h="74" oX="32" oY="10" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_50_ 6" x="75" y="1797" w="71" h="72" oX="28" oY="13" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_51_ 6" x="190" y="802" w="65" h="73" oX="34" oY="14" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_52_ 6" x="76" y="1510" w="73" h="68" oX="25" oY="21" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_53_ 6" x="84" y="672" w="80" h="64" oX="21" oY="22" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_54_ 6" x="183" y="1337" w="72" h="79" oX="27" oY="12" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_55_ 6" x="177" y="1584" w="72" h="73" oX="26" oY="13" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_56_ 6" x="1" y="1558" w="73" h="67" oX="25" oY="18" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_57_ 7" x="170" y="1991" w="67" h="44" oX="32" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_58_ 7" x="181" y="1543" w="74" h="39" oX="25" oY="33" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_59_ 7" x="1" y="1773" w="72" h="41" oX="27" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_60_ 7" x="1" y="1116" w="77" h="51" oX="22" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_61_ 7" x="76" y="1580" w="73" h="52" oX="26" oY="28" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_62_ 7" x="191" y="673" w="64" h="47" oX="34" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_63_ 7" x="74" y="1925" w="69" h="46" oX="29" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_running_64_ 7" x="79" y="1255" w="76" h="47" oX="22" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_01_ 0" x="201" y="2282" w="23" h="63" oX="53" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_02_ 0" x="133" y="2206" w="23" h="65" oX="53" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_03_ 0" x="203" y="2215" w="23" h="65" oX="52" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_04_ 0" x="151" y="2281" w="23" h="63" oX="52" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_05_ 0" x="176" y="2281" w="23" h="63" oX="52" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_06_ 0" x="228" y="2215" w="23" h="64" oX="52" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_07_ 0" x="148" y="1807" w="24" h="64" oX="52" oY="31" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_08_ 0" x="167" y="637" w="22" h="63" oX="53" oY="32" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_09_ 1" x="104" y="315" w="101" h="31" oX="18" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_10_ 1" x="1" y="178" w="102" h="32" oX="18" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_11_ 1" x="105" y="213" w="102" h="31" oX="18" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_12_ 1" x="1" y="322" w="101" h="31" oX="18" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_13_ 1" x="104" y="348" w="101" h="31" oX="18" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_14_ 1" x="105" y="179" w="102" h="32" oX="18" oY="48" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_15_ 1" x="1" y="143" w="102" h="33" oX="18" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_16_ 1" x="1" y="355" w="101" h="31" oX="18" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_17_ 2" x="104" y="281" w="101" h="32" oX="9" oY="48" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_18_ 2" x="105" y="144" w="102" h="33" oX="8" oY="48" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_19_ 2" x="1" y="76" w="103" h="33" oX="7" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_20_ 2" x="104" y="381" w="101" h="31" oX="9" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_21_ 2" x="1" y="388" w="101" h="31" oX="9" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_22_ 2" x="106" y="110" w="103" h="32" oX="7" oY="49" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_23_ 2" x="1" y="212" w="102" h="32" oX="8" oY="48" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_24_ 2" x="1" y="288" w="101" h="32" oX="9" oY="48" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_25_ 3" x="1" y="2310" w="23" h="81" oX="52" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_26_ 3" x="145" y="1930" w="23" h="82" oX="52" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_27_ 3" x="157" y="1305" w="24" h="82" oX="52" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_28_ 3" x="155" y="1389" w="24" h="82" oX="52" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_29_ 3" x="155" y="1473" w="24" h="82" oX="52" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_30_ 3" x="151" y="1557" w="24" h="82" oX="52" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_31_ 3" x="137" y="2122" w="23" h="82" oX="52" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_32_ 3" x="108" y="2204" w="23" h="82" oX="52" oY="29" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_33_ 4" x="1" y="879" w="79" h="40" oX="32" oY="48" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_34_ 4" x="1" y="1169" w="77" h="48" oX="31" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_35_ 4" x="74" y="1871" w="71" h="52" oX="31" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_36_ 4" x="69" y="2086" w="66" h="53" oX="31" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_37_ 4" x="1" y="2138" w="66" h="52" oX="31" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_38_ 4" x="1" y="1884" w="71" h="46" oX="31" oY="41" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_39_ 4" x="79" y="1304" w="76" h="43" oX="31" oY="45" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_40_ 4" x="81" y="982" w="78" h="43" oX="32" oY="47" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_41_ 5" x="170" y="2037" w="66" h="67" oX="30" oY="37" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_42_ 5" x="185" y="1268" w="69" h="67" oX="31" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_43_ 5" x="1" y="1326" w="75" h="63" oX="31" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_44_ 5" x="1" y="730" w="79" h="59" oX="31" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_45_ 5" x="82" y="738" w="79" h="59" oX="31" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_46_ 5" x="78" y="1349" w="75" h="63" oX="31" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_47_ 5" x="185" y="1145" w="70" h="66" oX="31" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_48_ 5" x="70" y="1973" w="67" h="68" oX="30" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_49_ 6" x="170" y="2106" w="66" h="51" oX="32" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_50_ 6" x="174" y="1864" w="69" h="49" oX="28" oY="39" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_51_ 6" x="78" y="1464" w="75" h="44" oX="22" oY="44" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_52_ 6" x="82" y="799" w="79" h="42" oX="18" oY="47" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_53_ 6" x="1" y="791" w="79" h="43" oX="18" oY="47" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_54_ 6" x="1" y="1391" w="75" h="49" oX="22" oY="44" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_55_ 6" x="185" y="1213" w="70" h="53" oX="27" oY="40" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_56_ 6" x="1" y="2013" w="67" h="53" oX="31" oY="38" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_57_ 7" x="82" y="921" w="78" h="59" oX="18" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_58_ 7" x="80" y="1095" w="77" h="61" oX="20" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_59_ 7" x="1" y="1816" w="71" h="66" oX="26" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_60_ 7" x="189" y="992" w="66" h="68" oX="31" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_61_ 7" x="1" y="2068" w="66" h="68" oX="31" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_62_ 7" x="176" y="1756" w="71" h="66" oX="26" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_63_ 7" x="1" y="1052" w="77" h="62" oX="20" oY="36" oW="128" oH="128"/>
+    <sprite n="Medieval_Dungeons_RodentofUnusualSize_walking_64_ 7" x="1" y="957" w="78" h="59" oX="18" oY="36" oW="128" oH="128"/>
+</TextureAtlas>

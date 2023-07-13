@@ -4,9 +4,7 @@
 #include "action_components.h"
 #include "rendering_components.h"
 
-
 namespace Spritesheet_Structs {
-
 
   struct Frame_Data {
     //number of frames/end if sheet
@@ -31,7 +29,6 @@ namespace Spritesheet_Structs {
     int frameSpeed = 75;
   };
 
-
   struct spriteSheet {
     //size of sprites
     int w;
@@ -48,14 +45,11 @@ namespace Spritesheet_Structs {
 
   std::map<Action_Component::Action_State, Frame_Data> frameData;
 
-
   struct Data_On_Unit {
     spriteSheet frameData;
     float timeOnFrame;
     int currentFrame;
   };
-
-
 
   struct sheetData {
     int w = 0;
@@ -85,9 +79,6 @@ namespace Spritesheet_Structs {
     Frame_Data behavior = {0, 0, 0, 0};
     Frame_Data summoned = {0, 0, 0, 0};
   };
-
-
-
 
   std::string Get_Sprite_Sheet(std::string &name) {// needs to search for  a specific row that I can input in the arguments
     //check if the name exists??
@@ -178,6 +169,7 @@ namespace Spritesheet_Structs {
 	actionFrameData[action].frameSpeed = i;
       }
       else {
+	std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
 	return false;
       }
     }
@@ -215,6 +207,7 @@ namespace Spritesheet_Structs {
 	actionFrameData[action].frameSpeed = i;
       }
       else {
+	std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
 	return false;
       }
     }
@@ -258,6 +251,171 @@ namespace Spritesheet_Structs {
 	actionFrameData[action].frameSpeed = i;
       }
       else {
+	std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
+	return false;
+      }
+    }
+    else if (unitType == "classes_male" || unitType == "classes_female") {
+      if (checkAction == "Attack One Handed Side Slash") {
+	action = Action_Component::Action_State::attack;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Attack One Handed Overhead") {
+	action = Action_Component::Action_State::attack2;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Idle3") {
+	action = Action_Component::Action_State::idle;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Run") {
+	action = Action_Component::Action_State::walk;
+	actionFrameData[action].frameSpeed = 75;
+      } else if (checkAction == "Get Hit") {
+	action = Action_Component::Action_State::struck;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Critical Health Idle 1") {
+	action = Action_Component::Action_State::dying;
+	actionFrameData[action].frameSpeed = 100;
+      } else if (checkAction == "Casting Idle") {
+	action = Action_Component::Action_State::casting;
+	actionFrameData[action].frameSpeed = 150;
+	actionFrameData[action].reverses = 1;
+      } else if (checkAction == "Casting") {
+	action = Action_Component::Action_State::cast;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Dead") {
+	action = Action_Component::Action_State::dead;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Hand Casual") {
+	action = Action_Component::Action_State::talk;
+	actionFrameData[action].frameSpeed = i;
+      }
+      else {
+	std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
+	return false;
+      }
+    }
+
+    else if (unitType == "Medieval_Underdeep_Dwarves_Male" || unitType == "medieval_human_female" || unitType == "medieval_human_male") {
+      if (checkAction == "attack1") {
+	action = Action_Component::Action_State::attack;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "idle1") {
+	action = Action_Component::Action_State::idle;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "idle2") {
+	action = Action_Component::Action_State::idle2;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "running") {
+	action = Action_Component::Action_State::run;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "walking") {
+	action = Action_Component::Action_State::walk;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "collapse") {
+	action = Action_Component::Action_State::struck;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "ko") {
+	action = Action_Component::Action_State::dying;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "dead") {
+	action = Action_Component::Action_State::dead;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "kneel") {
+	action = Action_Component::Action_State::kneel;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "sitting") {
+	action = Action_Component::Action_State::cast;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "sleeping") {
+	action = Action_Component::Action_State::resting;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "unique") {
+	action = Action_Component::Action_State::behavior;
+	actionFrameData[action].frameSpeed = i;
+      }
+      else {
+	std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
+	return false;
+      }
+    }
+    else if (unitType == "classes_male" || unitType == "classes_female") {
+      if (checkAction == "Attack One Handed Side Slash") {
+	action = Action_Component::Action_State::attack;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Attack One Handed Overhead") {
+	action = Action_Component::Action_State::attack2;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Idle3") {
+	action = Action_Component::Action_State::idle;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Run") {
+	action = Action_Component::Action_State::walk;
+	actionFrameData[action].frameSpeed = 75;
+      } else if (checkAction == "Get Hit") {
+	action = Action_Component::Action_State::struck;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Critical Health Idle 1") {
+	action = Action_Component::Action_State::dying;
+	actionFrameData[action].frameSpeed = 100;
+      } else if (checkAction == "Casting Idle") {
+	action = Action_Component::Action_State::casting;
+	actionFrameData[action].frameSpeed = 150;
+	actionFrameData[action].reverses = 1;
+      } else if (checkAction == "Casting") {
+	action = Action_Component::Action_State::cast;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Dead") {
+	action = Action_Component::Action_State::dead;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "Hand Casual") {
+	action = Action_Component::Action_State::talk;
+	actionFrameData[action].frameSpeed = i;
+      }
+      else {
+	std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
+	return false;
+      }
+    }
+
+    else if (unitType == "Medieval_Underdeep_Dwarves_Male" || unitType == "medieval_human_female" || unitType == "medieval_human_male") {
+      if (checkAction == "attack1") {
+	action = Action_Component::Action_State::attack;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "idle1") {
+	action = Action_Component::Action_State::idle;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "idle2") {
+	action = Action_Component::Action_State::idle2;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "running") {
+	action = Action_Component::Action_State::run;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "walking") {
+	action = Action_Component::Action_State::walk;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "collapse") {
+	action = Action_Component::Action_State::struck;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "ko") {
+	action = Action_Component::Action_State::dying;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "dead") {
+	action = Action_Component::Action_State::dead;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "kneel") {
+	action = Action_Component::Action_State::kneel;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "sitting") {
+	action = Action_Component::Action_State::cast;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "sleeping") {
+	action = Action_Component::Action_State::resting;
+	actionFrameData[action].frameSpeed = i;
+      } else if (checkAction == "unique") {
+	action = Action_Component::Action_State::behavior;
+	actionFrameData[action].frameSpeed = i;
+      }
+      else {
+	std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
 	return false;
       }
     }
@@ -351,11 +509,12 @@ namespace Spritesheet_Structs {
 	action = Action_Component::Action_State::cast;
 	actionFrameData[action].frameSpeed = i;
       } else {
+	std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
 	return false;
       }
     }
     //only run when the number changes
-
+    std::cout << checkAction << " frame data successfully saved" << std::endl;
     Calculate_Start_Frame(actionFrameData, action, frameIndex);
 
     //        Utilities::Log("----");

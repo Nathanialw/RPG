@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../../../sprite_sheets/units/3rd_cast/human/premade/female/Medieval_Interiors_Premade_Female_6.tsx"/>
+ <object name="Medieval_Interiors_Premade_Female_6" gid="1" width="107" height="80"/>
+</template>

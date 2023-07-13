@@ -5,7 +5,6 @@ target_sources(RPG
         events.h
         input_control.h
         joystick.h
-        movement.cpp
         movement.h
         pause.h
         player_control.h
