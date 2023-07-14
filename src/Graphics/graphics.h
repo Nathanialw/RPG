@@ -160,6 +160,10 @@ namespace Graphics {
   void Load_Texture(int &unitID, const char* filepath)
   {
     unitTextures[unitID] = createTexture(filepath);
+    if (unitTextures[unitID] == NULL) {
+        std::cout << "Load_Texture() failed to load  texture from file: " << filepath << std::endl;
+//        unitTextures[unitID] = Graphics::default_icon;
+    }
   }
 
   //when creating the game objet

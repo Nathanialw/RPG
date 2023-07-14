@@ -151,52 +151,52 @@ namespace Rendering {
     if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
       action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
       //            sheetData.frameTime = 0;
+      if (action.state != Action_Component::isStatic) {
+	if (action.frameState == Action_Component::start) {
+	  if (action.state == Action_Component::dying || action.state == Action_Component::dead) {
 
-      if (action.frameState == Action_Component::start) {
-	if (action.state == Action_Component::dying || action.state == Action_Component::dead) {
-
+	  }
+	  else if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::attack2 && action.state != Action_Component::cast && action.state != Action_Component::casting) {
+	    action.state = Action_Component::idle;
+	  }
+	  else if (action.state == Action_Component::struck || action.state == Action_Component::attack || action.state == Action_Component::cast) {
+	    action.state = Action_Component::idle;
+	  }
+	  action.frameState = Action_Component::mid;
 	}
-	else if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::attack2 && action.state != Action_Component::cast && action.state != Action_Component::casting) {
-	  action.state = Action_Component::idle;
+
+	///reset frame count if over
+	sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + action.frame;
+
+	if (Death_Control::Death_Sequence(direction, entity, scale, sheetData, action, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
+	  return;
 	}
-	else if (action.state == Action_Component::struck || action.state == Action_Component::attack || action.state == Action_Component::cast) {
-	  action.state = Action_Component::idle;
-	}
-	action.frameState = Action_Component::mid;
-      }
 
-      ///reset frame count if over
-      sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + action.frame;
-
-      if (Death_Control::Death_Sequence(direction, entity, scale, sheetData, action, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
-	return;
-      }
-
-      ///calculate reversing
-      if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
-	sheetData.reversing = 0;
-      }
-      if (sheetData.reversing) {
-	action.frame--;
-	if (action.frame < 1) {
+	///calculate reversing
+	if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
 	  sheetData.reversing = 0;
 	}
-      }
-      else if (!sheetData.reversing) {
-	action.frame++;
-      }
-      /// -1 because of the zero index
-      if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
-	if (action.frame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames - 1) {
-	  sheetData.reversing = 1;
+	if (sheetData.reversing) {
+	  action.frame--;
+	  if (action.frame < 1) {
+	    sheetData.reversing = 0;
+	  }
 	}
-      }
-      else if (action.frame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
-	if (action.state != Action_Component::walk && action.state != Action_Component::run) {
-	  action.frameState = Action_Component::last;
+	else if (!sheetData.reversing) {
+	  action.frame++;
 	}
-	action.frame = 0;
-
+	/// -1 because of the zero index
+	if (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
+	  if (action.frame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames - 1) {
+	    sheetData.reversing = 1;
+	  }
+	}
+	else if (action.frame >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
+	  if (action.state != Action_Component::walk && action.state != Action_Component::run) {
+	    action.frameState = Action_Component::last;
+	  }
+	  action.frame = 0;
+	}
       }
     }
   }
@@ -396,7 +396,6 @@ namespace Rendering {
 
       else {
 	Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL");
-	return;
       }
     }
     //        std::cout << "\n";

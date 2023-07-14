@@ -3,6 +3,8 @@
 #include <tmxlite/Layer.hpp>
 #include <tmxlite/TileLayer.hpp>
 #include <tmxlite/ObjectGroup.hpp>
+#include "SQLite_dialogue.h"
+#include "utilities.h"
 #include "world.h"
 
 namespace Maps {
@@ -69,7 +71,18 @@ namespace Maps {
 		for (auto &object: layer->getLayerAs<tmx::ObjectGroup>().getObjects())
 		  {
 		    auto &position = object.getPosition();
-		    std::string name = object.getName();
+		    //std::string templateName = object.getName();		    
+		    std::string tilePath = object.getTilesetName();
+		    
+//
+
+
+		    /*
+                      parse from the end backwards
+                      take whole substring from the firs '/'
+		      remove the . and the extension after it
+		     */
+		    
 		    std::string entity_class = object.getClass();
 
 		    // translates isometric position to world position
@@ -91,7 +104,23 @@ namespace Maps {
 		    std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
 		    Component::Line_Segment line;
 
-		    for (auto s: templateTilesets.at(tilesetName).getTiles())
+
+                auto ffs = templateTilesets.at(tilesetName);
+                std::string templateName = ffs.getName();
+            Utilities::Log(templateName);
+
+
+            auto fas = ffs.getTiles();
+            if (fas.size() > 1) {
+                auto asa = fas.at(object.getTileID() - 1);
+                std::string templateFile = asa.imagePath.substr(asa.imagePath.find_last_of("/\\") + 1);
+                std::string::size_type const p(templateFile.find_last_of('.'));
+                std::string qwe = templateFile.substr(0, p);
+                Utilities::Log(qwe);
+                templateName = qwe;
+            }
+
+              for (auto s: ffs.getTiles())
 		      {
 			collision_boxes = s.objectGroup.getObjects();
 			float sizeX = s.imageSize.x;
@@ -142,10 +171,10 @@ namespace Maps {
 
 		    std::string texture = templateTilesets.at(tilesetName).getImagePath();
 		    std::string temptexture = "assets/" + texture;
-		    Utilities::Log(name);
-		    if (!Create_Entities::Polygon_Building(World::zone, x, y, name, entity_class, texture, aabb, pointVecs, line))
+		    //Utilities::Log(templateName);
+		    if (!Create_Entities::Polygon_Building(World::zone, x, y, templateName, entity_class, texture, aabb, pointVecs, line))
 		      {
-			Create_Entities::Create_Entity(World::zone, x, y, name, entity_class, is_random, texture, player);
+			Create_Entities::Create_Entity(World::zone, x, y, templateName, entity_class, is_random, texture, player);
 		      }
 		  };
 	      }

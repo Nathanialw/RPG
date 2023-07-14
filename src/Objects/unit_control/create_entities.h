@@ -11,6 +11,8 @@
 #include "spellbook.h"
 #include "ui_actionbar.h"
 #include "procedural_generator.h"
+#include <cstddef>
+#include <type_traits>
 
 
 namespace Create_Entities {
@@ -120,7 +122,7 @@ namespace Create_Entities {
 
   Procedural_Components::Seed seed;
 
-  void Create_Entity(entt::registry& zone, float x, float y, std::string name, std::string entity_class, bool is_random, std::string imgpath, bool &player) {
+  void Create_Entity(entt::registry& zone, float x, float y, std::string templateName, std::string entity_class, bool is_random, std::string imgpath, bool &player) {
     auto entity = zone.create();
     Entity_Loader::Data data;
     int unit_ID = 0;
@@ -130,11 +132,11 @@ namespace Create_Entities {
     //
     //scaling only applies to trees
     if (is_random == 1) {
-      name = Entity_Loader::Get_All_Of_Class(entity_class);
+      templateName = Entity_Loader::Get_All_Of_Class(entity_class);
       //check if the random name has a tamplate ID, if it doesn't revert to default name
-      unit_ID = Get_Existing_Template_ID(name, entity_class);
+      unit_ID = Get_Existing_Template_ID(templateName, entity_class);
       Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
-      data = Entity_Loader::parse_data(name);//
+      data = Entity_Loader::parse_data(templateName);//
       ////randomEntity must be converted into a std::string//
       //auto& scale = zone.get<Component::Scale>(entity);
       //auto& radius = zone.get<Component::Radius>(entity);//
@@ -143,24 +145,27 @@ namespace Create_Entities {
       //scale.scale = rand_scale;
     }
     else {
-      unit_ID = Check_For_Template_ID(name);
+      unit_ID = Check_For_Template_ID(templateName);
       Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
-      data = Entity_Loader::parse_data(name);
+      data = Entity_Loader::parse_data(templateName);
+      if (Graphics::unitTextures[unit_ID] == NULL) {
+	    std::cout << "texture is NULL for: " << templateName << std::endl;
+      }
     }
 
     SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
-    std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
+    std::string sheetname = Entity_Loader::Get_Sprite_Sheet(templateName);
     std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
     std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
     if (sheetname == "texture_packer") {
       ///run texture packer
-      packerframeData = Texture_Packer::TexturePacker_Import(name, sheetname, Graphics::unitTextures[unit_ID]);
+      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID]);
     }
     else {
       ///get sheet data for new pointer to map
       SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
-      flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
+      flareSheetData = Populate_Flare_SpriteSheet(templateName, sheetDataFlare, Graphics::unitTextures[unit_ID]);
     }
 
     //Add shared components
@@ -190,12 +195,12 @@ namespace Create_Entities {
     //if RTP_pieces type
     if (packerframeData) {
       sprite.sheetData = packerframeData;
-      sprite.sheet_name = name;
+      sprite.sheet_name = templateName;
       sprite.type = "RPG_Tools";
     }
     else {
       sprite.flareSpritesheet = flareSheetData;
-      sprite.sheet_name = name;
+      sprite.sheet_name = templateName;
       sprite.type = sheetDataFlare.sheet_type;
     }
 
