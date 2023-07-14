@@ -3,6 +3,7 @@
 #include "social_control.h"
 #include "action_components.h"
 #include "damage_text.h"
+#include "utilities.h"
 
 namespace  Instant_Attack {
 
@@ -54,14 +55,17 @@ namespace  Instant_Attack {
                     }
                     else {
 //                        say "target is too far away"
+		      Utilities::Log("target is too far away");			
                     }
                 } else {
                     //            say "not a valid, target is not an enemy"
+		  Utilities::Log("invalid target");
                     return false;
                 }
             }
         } else {
 //        say "I have no target"
+	  Utilities::Log("no target");
         }
         return false;
     }
