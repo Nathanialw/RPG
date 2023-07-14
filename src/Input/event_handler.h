@@ -14,7 +14,7 @@
 #include "menu.h"
 #include "events.h"
 #include "pause.h"
-#include "instant_attack.h"
+#include "sinister_strike.h"
 
 namespace Event_Handler {
 
@@ -73,7 +73,7 @@ namespace Event_Handler {
 	    {
 	      //					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
 	    case SDLK_1: break;
-	    case SDLK_2: Instant_Attack::Instant_Attack(zone, entity); break;
+	    case SDLK_2: Sinister_Strike::Instant_Attack(zone, entity); break;
 	    case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
 	    case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;
 	    case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;

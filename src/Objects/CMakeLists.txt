@@ -9,13 +9,10 @@ include_directories(equip_unit)
 target_sources (RPG
         PUBLIC
         character_data.h
-        character_stats.h
-        death_spells.h
+        character_stats.h  
         equipment.h
         items.h
-        recruitable_units.h
-        skills.h
-        spells.h
+        recruitable_units.h        
         unit_status.h
 )
 
