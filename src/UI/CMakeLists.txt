@@ -10,7 +10,7 @@ target_sources(RPG
         ui_elements.h
         ui_resources.h
         ui_actionbar.h
-	ui_unit_control.h
+	ui_unit_control.hpp
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})
