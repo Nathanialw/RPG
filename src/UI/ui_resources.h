@@ -1,7 +1,7 @@
 #pragma once
 #include "camera.h"
 #include "graphics.h"
-
+#include "ui.h"
 
 namespace UI_Resources {
     //health is health

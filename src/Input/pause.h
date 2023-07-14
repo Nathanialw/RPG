@@ -1,6 +1,7 @@
 #pragma once
 #include "timer.h"
 #include "ui.h"
+#include "components.h"
 
 namespace Pause {
 

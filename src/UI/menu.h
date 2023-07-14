@@ -7,6 +7,7 @@
 #include "camera.h"
 #include "ui_elements.h"
 #include <array>
+#include "mouse_control.h"
 
 namespace Menu
 {
@@ -38,8 +39,9 @@ namespace Menu
   //    stores menu
   Menu menu;
 
+#pragma clang optimize off
   //    need the attricute otherwise it WILL be optimized out
-  Menu __attribute__((optimize("O0"))) Build_Menu()
+  Menu Build_Menu()
   {
     //        set first index position
     menu.buttons[0].size = UI::Center_Rect(menu.buttons[0].textSurface->clip_rect);
@@ -50,7 +52,8 @@ namespace Menu
       menu.buttons[i].size.y = menu.buttons[i - 1].size.y + menu.buttons[i - 1].size.h + menu.spacing;;
     }
   }
-
+#pragma clang optimize on
+  
   void Create_Menu() {
     Menu tempMenu;
     std::vector<const char*>labels = {"Continue", "Options", "Exit"};

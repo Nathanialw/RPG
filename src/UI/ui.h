@@ -1,9 +1,11 @@
 #pragma once
+#include "entt/entt.hpp"
 #include "components.h"
 #include "camera.h"
 #include "menu.h"
 #include "spellbook.h"
 #include "ui_actionbar.h"
+#include "item_components.h"
 
 namespace UI {
 	

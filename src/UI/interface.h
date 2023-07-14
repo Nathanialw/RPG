@@ -6,7 +6,7 @@
 #include "debug_system.h"
 #include "components.h"
 #include "social_control.h"
-#include "ui_unit_control.h"
+#include "ui_unit_control.hpp"
 
 namespace Interface {
 
