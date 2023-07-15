@@ -132,7 +132,8 @@ namespace Texture_Packer_Item {
       ///get frame data for each state
       std::string n = pSpriteElement->Attribute("n");
 
-      Spritesheet_Structs::Get_Frame_Action_Data(dbData.equip_type, dbData.item_name, n, spritesheet.actionFrameData, frameIndex);
+      int unusedBuildingIndex;
+      Spritesheet_Structs::Get_Frame_Action_Data(dbData.equip_type, dbData.item_name, n, spritesheet.actionFrameData, frameIndex, unusedBuildingIndex);
 
       ///get sprite data
       frame.clip.x = pSpriteElement->IntAttribute("x");

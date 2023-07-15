@@ -118,19 +118,17 @@ namespace Spritesheet_Structs {
 
   int i = 120;
 
-  bool Get_Frame_Action_Data (std::string unitType, std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+  bool Get_Frame_Action_Data (std::string unitType, std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex, int &buildingIndex) {
     // name should be the template name from tiled
     Action_Component::Action_State action;
     
     if (unitType == "tileset") {
       if (templateName == frame) {
+	buildingIndex = frameIndex;
 	action = Action_Component::Action_State::isStatic;
 	actionFrameData[action].frameSpeed = 75;
 	std::cout << "Success! " << templateName << " found " << "frame" << frame << std::endl;
-      }
-      else {
-	std::cout << "Passthrough Error: action for building frame " << templateName << " not found in xml" << std::endl;
-	return false;
+	return true;
       }
     }
     else {
@@ -368,11 +366,12 @@ namespace Spritesheet_Structs {
       //only run when the number changes
       //std::cout << checkAction << " frame data successfully saved" << std::endl;
     }
-    
+
     Calculate_Start_Frame(actionFrameData, action, frameIndex);
     //        Utilities::Log("----");
     //        Utilities::Log(frame);
     Calculate_Num_Frames(frame, actionFrameData, action);
+ 
     return true;
   }
 }

@@ -158,9 +158,11 @@ namespace Create_Entities {
     std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
     std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
+    //stores the index for a static frame in spritesheet xml 
+    int buildingIndex;
     if (sheetname == "texture_packer") {
       ///run texture packer
-      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID]);
+      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID], buildingIndex);
     }
     else {
       ///get sheet data for new pointer to map
@@ -197,6 +199,7 @@ namespace Create_Entities {
       sprite.sheetData = packerframeData;
       sprite.sheet_name = templateName;
       sprite.type = "RPG_Tools";
+      sprite.frameIndex = buildingIndex;
     }
     else {
       sprite.flareSpritesheet = flareSheetData;

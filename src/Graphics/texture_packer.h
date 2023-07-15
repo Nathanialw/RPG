@@ -65,30 +65,24 @@ namespace Texture_Packer {
     return offset;
   }
 
-
-
-
-
-  std::unordered_map<std::string, Rendering_Components::Sheet_Data>* TexturePacker_Import(std::string &templateName, std::string &xml_path, SDL_Texture* texture) {
-    ///check if the sheet data already exists
-
-
+  std::unordered_map<std::string, Rendering_Components::Sheet_Data>* TexturePacker_Import(std::string &templateName, std::string &xml_path, SDL_Texture* texture, int &buildingIndex) {
+    ///check if the sheet data already exists    
     if ( Packer_Textures[templateName].frameList.size() > 1) {
       return &Packer_Textures;
     }
 
     ///get path from db
     Type_Data typeData = Get_Sprite_Sheet(templateName);
-    if (typeData.xml_path.c_str() == NULL || typeData.xml_path.c_str() == ""){
+    if (typeData.xml_path.c_str() == NULL || typeData.xml_path == ""){
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
       return NULL;
     }
 
-      const char* imgPath;
-//    if (typeData.img_path.c_str() != NULL || typeData.img_path.c_str() == "") {
-        std::string imgPathStr = "assets/" + typeData.img_path;
-        imgPath = imgPathStr.c_str();
-//    }
+    const char* imgPath;
+    //    if (typeData.img_path.c_str() != NULL || typeData.img_path.c_str() == "") {
+    std::string imgPathStr = "assets/" + typeData.img_path;
+    imgPath = imgPathStr.c_str();
+    //    }
 
     const char* xmlPath;
     std::string xmlPathStr = "assets/" + typeData.xml_path;
@@ -113,33 +107,14 @@ namespace Texture_Packer {
       if (spritesheet.texture == NULL) {
 	std::cout << "Not texture found from image path " << imgPath << " texture: " << texture << std::endl;
 	return NULL;
-       }
+      }
     }
 
-    int frameIndex = 0;
-
-    if (pSpriteElement != NULL) {
-      ///get frame data for each state
-      std::string n = pSpriteElement->Attribute("n");
-      Spritesheet_Structs::Get_Frame_Action_Data(typeData.type, templateName, n, spritesheet.actionFrameData, frameIndex);
-      ///get sprite data
-      frame.clip.x = pSpriteElement->IntAttribute("x");
-      frame.clip.y = pSpriteElement->IntAttribute("y");
-      frame.clip.w = pSpriteElement->IntAttribute("w");
-      frame.clip.h = pSpriteElement->IntAttribute("h");
-      frame.x_offset = pSpriteElement->IntAttribute("oX");
-      frame.y_offset = pSpriteElement->IntAttribute("oY");
-      spritesheet.frameList.emplace_back(frame);
-      ///so we only grab this once
-      frameIndex++;
-      ///this grabs the next line
-      pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
-    }
-    ///get the rest of the xml
+    int frameIndex = 0;   
     while (pSpriteElement != NULL) {
       ///get frame data for each state
       std::string n = pSpriteElement->Attribute("n");
-      Spritesheet_Structs::Get_Frame_Action_Data(typeData.type, templateName, n, spritesheet.actionFrameData, frameIndex);
+      Spritesheet_Structs::Get_Frame_Action_Data(typeData.type, templateName, n, spritesheet.actionFrameData, frameIndex, buildingIndex);
       ///get sprite data
       frame.clip.x = pSpriteElement->IntAttribute("x");
       frame.clip.y = pSpriteElement->IntAttribute("y");
