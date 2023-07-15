@@ -73,11 +73,18 @@ namespace Create_Entities {
       zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
       zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
     }
+    else {
+//        no collision box
+        zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
+        zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
+    }
   }
 
   bool Polygon_Building(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
-    if (entity_class == "polygon_building" || entity_class == "rect_building" || entity_class == "round_building") {
+    std::string layout = Entity_Loader::Get_Building_Sprite_layout(name);
+
+    if (layout == "static") {
       auto entity = zone.create();
       int unit_ID = Check_For_Template_ID(name);
       Graphics::Create_Game_Object(unit_ID, filepath.c_str());
@@ -113,6 +120,54 @@ namespace Create_Entities {
     }
     return false;
   }
+
+    bool PVG_Building(entt::registry& zone, float x, float y, std::string &templateName, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+        /// if it is a building
+        std::string layout = Entity_Loader::Get_Building_Sprite_layout(templateName);
+
+        if (layout == "PVG") {
+            auto entity = zone.create();
+            int unit_ID = Check_For_Template_ID(templateName);
+
+            SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
+            std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
+            std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
+
+
+            std::string sheetname = Entity_Loader::Get_Sprite_Sheet(templateName);
+
+            ///run texture packer
+            int buildingIndex;
+            packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID], buildingIndex);
+
+            //Add shared components
+            auto &position = zone.emplace<Component::Position>(entity, x, y);
+            auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
+            auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
+
+            /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
+            zone.emplace<Component::Direction>(entity, Component::Direction::W);
+            zone.emplace<Component::Name>(entity, templateName);
+            zone.emplace<Component::Mass>(entity, 100.0f);
+            zone.emplace<Component::Alive>(entity, true);
+
+            auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
+            sprite.sheetData = packerframeData;
+            sprite.sheet_name = templateName;
+            sprite.type = "RPG_Tools";
+            sprite.frameIndex = buildingIndex;
+
+//            zone.emplace<Rendering_Components::Sprite_Offset>(entity, sprite.sheetData->at(templateName).frameList.at(buildingIndex).x_offset, sprite.sheetData->at(templateName).frameList.at(buildingIndex).y_offset);
+
+            Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line);
+            SDL_Rect rect = sprite.sheetData->at(templateName).frameList.at(buildingIndex).clip;
+            zone.emplace<Rendering_Components::Sprite_Offset>(entity, (float)rect.w /2.0f, (float)rect.h);
+//            position.x -= rect.w /2.0f;
+//            position.y -= rect.h;
+            return true;
+        }
+        return false;
+    }
 
   void Set_Map_Texture(std::string &name, std::string imgpath) {
     int unit_ID = 0;
@@ -159,10 +214,10 @@ namespace Create_Entities {
     std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
     //stores the index for a static frame in spritesheet xml 
-    int buildingIndex;
+    int imageCollectionIndex;
     if (sheetname == "texture_packer") {
       ///run texture packer
-      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID], buildingIndex);
+      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID], imageCollectionIndex);
     }
     else {
       ///get sheet data for new pointer to map
@@ -199,7 +254,6 @@ namespace Create_Entities {
       sprite.sheetData = packerframeData;
       sprite.sheet_name = templateName;
       sprite.type = "RPG_Tools";
-      sprite.frameIndex = buildingIndex;
     }
     else {
       sprite.flareSpritesheet = flareSheetData;

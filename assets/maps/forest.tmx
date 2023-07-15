@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="5114">
+<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="5134">
  <tileset firstgid="1" source="../sprite_sheets/ground_tiles/grassland_tiles_x2.tsx"/>
  <tileset firstgid="673" source="../sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx"/>
  <tileset firstgid="674" source="../sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx"/>
@@ -1785,7 +1785,7 @@
   <object id="5006" template="../spawn_points/unit_spawns/Demons/Daemon_Infernum.tx" x="28164.7" y="26944.7"/>
   <object id="5008" template="../spawn_points/unit_spawns/monsters/ogres/RTP_Ogre.tx" x="29292.7" y="28014"/>
   <object id="5012" template="../spawn_points/unit_spawns/2nd_cast/elf/female/Female_ArcherElven.tx" x="27331.5" y="26820.1"/>
-  <object id="5108" template="../spawn_points/buildings/orc/tents/Orc Tent 5 T6.tx" x="29009" y="30279.7"/>
+  <object id="5108" template="../spawn_points/buildings/orc/tents/Orc Tent 5 T6.tx" x="28893" y="30183.7"/>
   <object id="5110" template="../spawn_points/unit_spawns/2nd_cast/human/male/Male_Monk.tx" name="" x="28514.6" y="29479.6">
    <properties>
     <property name="player" type="bool" value="true"/>

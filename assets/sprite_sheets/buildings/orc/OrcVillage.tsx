@@ -237,6 +237,12 @@
  </tile>
  <tile id="78">
   <image width="311" height="285" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Orc Tent 5 T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="4" x="83.3127" y="96.13" width="1.60217" height="4.8065"/>
+   <object id="13" x="20.9677" y="187.097">
+    <polygon points="-17.3333,-44 125.29,104.71 280.731,-39.6989 143.957,-81.4409"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="79">
   <image width="202" height="317" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Orc Tent 5 T7.png"/>
@@ -387,5 +393,10 @@
  </tile>
  <tile id="128">
   <image width="295" height="313" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Tanning Rack T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="154.839" y="291.935">
+    <polygon points="-3.33333,16.6667 75.7419,-57.6774 -59.957,-154.559 -145.161,-96.7742"/>
+   </object>
+  </objectgroup>
  </tile>
 </tileset>

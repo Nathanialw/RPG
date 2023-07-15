@@ -41,8 +41,8 @@ namespace Texture_Packer {
 
       image = sqlite3_column_text(stmt, 2);
       if (image) {
-          s = (const char *) image;
-          typeData.img_path = std::string(reinterpret_cast< const char *> (s));
+	s = (const char *) image;
+	typeData.img_path = std::string(reinterpret_cast< const char *> (s));
       }
     }
     return typeData;
