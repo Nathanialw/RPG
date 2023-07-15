@@ -93,6 +93,10 @@ namespace Character_Stats {
 	switch (stat.first) {
 	case Item_Component::Stat::damage: damage.minDamage = stat.second; damage.maxDamage = stat.second; break;
 	case Item_Component::Stat::attackSpeed: attackSpeed.period = stat.second; break;
+	case Item_Component::Stat::armor: break;
+	case Item_Component::Stat::spellDamage: break;
+	case Item_Component::Stat::health: break;
+	case Item_Component::Stat::piety: break;
 	}
       }
     }
@@ -131,6 +135,11 @@ namespace Character_Stats {
       for (auto& stat : Item_Component::statData) {
 	switch (stat.first) {
 	case Item_Component::Stat::health: health.maxHealth = stat.second; break;
+	case Item_Component::Stat::armor: break;
+	case Item_Component::Stat::spellDamage: break;
+	case Item_Component::Stat::damage: break;
+	case Item_Component::Stat::attackSpeed: break;
+	case Item_Component::Stat::piety: break;
 	}
       }
       zone.remove<Item_Component::Item_Equip>(entity);
@@ -209,6 +218,9 @@ namespace Character_Stats {
 	case Item_Component::Stat::damage: damage.minDamage = stat.second; damage.maxDamage = stat.second; break;
 	case Item_Component::Stat::health: health.maxHealth = stat.second; break;
 	case Item_Component::Stat::attackSpeed: attackSpeed.period = stat.second; break;
+	case Item_Component::Stat::spellDamage: break;
+	case Item_Component::Stat::armor: break;
+	case Item_Component::Stat::piety: break;
 	}
       }
 

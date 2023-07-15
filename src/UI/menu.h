@@ -41,7 +41,7 @@ namespace Menu
 
 #pragma clang optimize off
   //    need the attricute otherwise it WILL be optimized out
-  Menu Build_Menu()
+  void Build_Menu()
   {
     //        set first index position
     menu.buttons[0].size = UI::Center_Rect(menu.buttons[0].textSurface->clip_rect);

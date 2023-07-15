@@ -77,6 +77,10 @@ namespace Input_Control {
 	Component::Position &targetPosition = zone.get<Component::Position>(targetData.entity_ID);
 	Component::Radius &targetRadius = zone.get<Component::Radius>(targetData.entity_ID);
 	switch (type) {
+	case Component::Entity_Type::foliage: break;
+	case Component::Entity_Type::melee: break;
+	case Component::Entity_Type::spell: break;
+
 	case Component::Entity_Type::unit: {
 	  if (player_ID != targetData.entity_ID) {
 	    Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetRadius);
@@ -120,6 +124,9 @@ namespace Input_Control {
 	Component::Position &targetPosition = zone.get<Component::Position>(targetData.entity_ID);
 	Component::Radius &targetRadius = zone.get<Component::Radius>(targetData.entity_ID);
 	switch (type) {
+	case Component::Entity_Type::foliage: break;
+	case Component::Entity_Type::melee: break;
+	case Component::Entity_Type::spell: break;
 	case Component::Entity_Type::unit: {
 	  if (player_ID != targetData.entity_ID) {
 	    // sent units to the unit

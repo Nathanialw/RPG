@@ -1,158 +1,159 @@
 #pragma once
 #include "entt/entt.hpp"
 #include "dialogue.h"
+#include "utilities.h"
+#include <type_traits>
 
 namespace Social_Component {
 
-    enum class Race {
-        rogue,
-        human,
-        fleshbeast,
-        goblin,
-        beast,
-        demon,
-        elf,
-        zombie,
-        skeleton,
-        orc,
-        dwarf,
-        monster,
-        eldtritch,
-        drow,
-        nature
-    };
+  enum class Race {
+    rogue,
+    human,
+    fleshbeast,
+    goblin,
+    beast,
+    demon,
+    elf,
+    zombie,
+    skeleton,
+    orc,
+    dwarf,
+    monster,
+    eldtritch,
+    drow,
+    nature
+  };
 
-    struct Relationships {
-        int races[14];
-//        std::unordered_map<entt::entity, Races> connections;
-    };
+  struct Relationships {
+    int races[14];
+    //        std::unordered_map<entt::entity, Races> connections;
+  };
 
-    struct Speaking {
-        std::string text;
-        uint64_t duration = 0;
-        uint64_t count = 1;
-    };
+  struct Speaking {
+    std::string text;
+    uint64_t duration = 0;
+    uint64_t count = 1;
+  };
 }
 
 namespace  Social_Control {
 
-    Social_Component::Race Get_Race(std::string raceStr) {
-                if (raceStr == "rogue") {
-                    return Social_Component::Race::rogue;
-                }
-                if (raceStr == "human") {
-                    return Social_Component::Race::human;
-                }
-                if (raceStr == "fleshbeast") {
-                    return Social_Component::Race::fleshbeast;
-                }
-                if (raceStr == "goblin") {
-                    return Social_Component::Race::goblin;
-                }
-                if (raceStr == "beast") {
-                    return Social_Component::Race::beast;
-                }
-                if (raceStr == "demon") {
-                    return Social_Component::Race::demon;
-                }
-                if (raceStr == "elf") {
-                    return Social_Component::Race::elf;
-                }
-                if (raceStr == "zombie") {
-                    return Social_Component::Race::zombie;
-                }
-                if (raceStr == "skeleton") {
-                    return Social_Component::Race::skeleton;
-                }
-                if (raceStr == "orc") {
-                    return Social_Component::Race::orc;
-                }
-                if (raceStr == "dwarf") {
-                    return Social_Component::Race::dwarf;
-                }
-                if (raceStr == "monster") {
-                    return Social_Component::Race::monster;
-                }
-                if (raceStr == "eldtritch") {
-                    return Social_Component::Race::eldtritch;
-                }
-                if (raceStr == "drow") {
-                    return Social_Component::Race::drow;
-                }
-                if (raceStr == "nature") {
-                    return Social_Component::Race::nature;
-                }    }
+  Social_Component::Race Get_Race(std::string raceStr) {
+    if (raceStr == "rogue") {
+      return Social_Component::Race::rogue;
+    }
+    if (raceStr == "human") {
+      return Social_Component::Race::human;
+    }
+    if (raceStr == "fleshbeast") {
+      return Social_Component::Race::fleshbeast;
+    }
+    if (raceStr == "goblin") {
+      return Social_Component::Race::goblin;
+    }
+    if (raceStr == "beast") {
+      return Social_Component::Race::beast;
+    }
+    if (raceStr == "demon") {
+      return Social_Component::Race::demon;
+    }
+    if (raceStr == "elf") {
+      return Social_Component::Race::elf;
+    }
+    if (raceStr == "zombie") {
+      return Social_Component::Race::zombie;
+    }
+    if (raceStr == "skeleton") {
+      return Social_Component::Race::skeleton;
+    }
+    if (raceStr == "orc") {
+      return Social_Component::Race::orc;
+    }
+    if (raceStr == "dwarf") {
+      return Social_Component::Race::dwarf;
+    }
+    if (raceStr == "monster") {
+      return Social_Component::Race::monster;
+    }
+    if (raceStr == "eldtritch") {
+      return Social_Component::Race::eldtritch;
+    }
+    if (raceStr == "drow") {
+      return Social_Component::Race::drow;
+    }
+    if (raceStr == "nature") {
+      return Social_Component::Race::nature;
+    }
+    Utilities::Log("race data not found in db, setting to 'human'");
+    return Social_Component::Race::human;
+  }
 
-    bool Check_Relationship (entt::registry &zone, entt::entity &unitID, entt::entity &targetID) {
-        Social_Component::Race race = zone.get<Social_Component::Race>(targetID);
-        int state = zone.get<Social_Component::Relationships>(unitID).races[(int)race];
-//        zone.get<Social_Component::Relationships>(unitID).races.at(targetID);
+  bool Check_Relationship (entt::registry &zone, entt::entity &unitID, entt::entity &targetID) {
+    Social_Component::Race race = zone.get<Social_Component::Race>(targetID);
+    int state = zone.get<Social_Component::Relationships>(unitID).races[(int)race];
+    //        zone.get<Social_Component::Relationships>(unitID).races.at(targetID);
 
-        if (state < 33) {
-            return true;
-        }
-
-        return false;
+    if (state < 33) {
+      return true;
     }
 
-    bool Enemy_Selected(entt::registry& zone, entt::entity &player_ID) {
-        if (zone.empty<Component::Selected>()) {
-            return true;
-        }
-        else {
-            auto view = zone.view<Component::Selected>();
-            for (auto unit : view) {
-                if (Social_Control::Check_Relationship(zone, player_ID, unit)) {
-                    return true;
-                }
-                else {
-                    return false;
-                }
-            }
-        }
-    };
+    return false;
+  }
 
-    void Show_Dialogue (entt::registry& zone, Component::Camera& camera) {
-        auto view = zone.view<Component::Unit, Component::Interaction_Rect, Component::Renderable, Social_Component::Speaking>();
-        for (auto entity : view) {
-            auto &interactionRect = view.get<Component::Interaction_Rect>(entity);
-            auto &speaking = view.get<Social_Component::Speaking>(entity);
-
-            Component::Position itemPosition = {interactionRect.rect.x + (interactionRect.rect.w / 2.0f), interactionRect.rect.y};
-            Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, {255, 255, 255}, speaking.text, itemPosition);
-
-            SDL_RenderFillRect(Graphics::renderer, &itemTextBox.textBoxBackground);
-            SDL_RenderCopyF(Graphics::renderer, itemTextBox.textdata.pTexture, &itemTextBox.textdata.k, &itemTextBox.highlightBox);
-            SDL_DestroyTexture(itemTextBox.textdata.pTexture);
-
-            speaking.count += Timer::timeStep;
-            if (speaking.count >= speaking.duration) {
-                zone.remove<Social_Component::Speaking>(entity);
-            }
-        }
+  bool Enemy_Selected(entt::registry& zone, entt::entity &player_ID) {
+    if (zone.empty<Component::Selected>()) {
+      return true;
     }
-
-    void Interact(entt::registry &zone, entt::entity &unitID, std::string text_type){
-        if (!zone.any_of<Social_Component::Speaking>(unitID)) {
-            auto &text = zone.emplace<Social_Component::Speaking>(unitID);
-
-            //set text
-            text.text = Dialogue::Get_Random_Dialogue(text_type);
-
-            //set duration
-            text.duration = 2000 + (text.text.length() * 100);
-        }
+    else {
+      auto view = zone.view<Component::Selected>();
+      for (auto unit : view) {
+	if (Social_Control::Check_Relationship(zone, player_ID, unit)) {
+	  return true;
+	}	
+      }
     }
+    return false;
+  };
 
-    void Greet (entt::registry &zone, entt::entity &unitID, entt::entity &targetID) {
-        auto &action = zone.get<Action_Component::Action>(unitID);
-        action.state = Action_Component::talk;
-        action.frame = 0;
+  void Show_Dialogue (entt::registry& zone, Component::Camera& camera) {
+    auto view = zone.view<Component::Unit, Component::Interaction_Rect, Component::Renderable, Social_Component::Speaking>();
+    for (auto entity : view) {
+      auto &interactionRect = view.get<Component::Interaction_Rect>(entity);
+      auto &speaking = view.get<Social_Component::Speaking>(entity);
 
-        std::string text_type = "greeting";
-        Interact(zone, unitID, text_type);
+      Component::Position itemPosition = {interactionRect.rect.x + (interactionRect.rect.w / 2.0f), interactionRect.rect.y};
+      Graphics::Text_Box_Data itemTextBox = Graphics::Create_Text_Background(camera, {255, 255, 255}, speaking.text, itemPosition);
 
+      SDL_RenderFillRect(Graphics::renderer, &itemTextBox.textBoxBackground);
+      SDL_RenderCopyF(Graphics::renderer, itemTextBox.textdata.pTexture, &itemTextBox.textdata.k, &itemTextBox.highlightBox);
+      SDL_DestroyTexture(itemTextBox.textdata.pTexture);
+
+      speaking.count += Timer::timeStep;
+      if (speaking.count >= speaking.duration) {
+	zone.remove<Social_Component::Speaking>(entity);
+      }
     }
+  }
 
+  void Interact(entt::registry &zone, entt::entity &unitID, std::string text_type){
+    if (!zone.any_of<Social_Component::Speaking>(unitID)) {
+      auto &text = zone.emplace<Social_Component::Speaking>(unitID);
 
+      //set text
+      text.text = Dialogue::Get_Random_Dialogue(text_type);
+
+      //set duration
+      text.duration = 2000 + (text.text.length() * 100);
+    }
+  }
+
+  void Greet (entt::registry &zone, entt::entity &unitID, entt::entity &targetID) {
+    auto &action = zone.get<Action_Component::Action>(unitID);
+    action.state = Action_Component::talk;
+    action.frame = 0;
+
+    std::string text_type = "greeting";
+    Interact(zone, unitID, text_type);
+
+  }
 }

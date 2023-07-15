@@ -23,56 +23,48 @@
 #include "menu.h"
 #include "world.h"
 
-
 namespace Init {
 
-	std::string batch = "1";
+  std::string batch = "1";
 
-    void Clear_Events() {
-        SDL_PumpEvents();
-        SDL_FlushEvents(SDL_FIRSTEVENT, SDL_LASTEVENT);
+  void Clear_Events() {
+    SDL_PumpEvents();
+    SDL_FlushEvents(SDL_FIRSTEVENT, SDL_LASTEVENT);
+  }
+
+  void Init_World () {
+    Clear_Events();
+    Collision::init_Collison();
+    Init_Zone(World::zone);
+    Maps::Create_Map();
+    Character_Stats::Init_UI(World::zone);
+    Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
+    UI_Spellbook::Init_UI();
+    Action_Bar::Create_Action_Bar(World::zone);
+    Menu::Init();
+    SQLite_Dialogue::Init_Dialogue();
+    Video::Run_Audio("assets/music/nature.ogg");
+  }
+
+  void Init_Client() {
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+      //SDL_Log(SDL_GetError());
     }
+    Mix_Init(0);
+    Mix_OpenAudio(44100, AUDIO_S16SYS, 2, 4096);
 
-    void Init_World () {
-        Clear_Events();
-        Collision::init_Collison();
-        Init_Zone(World::zone);
-        Maps::Create_Map();
-        Character_Stats::Init_UI(World::zone);
-        Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
-        UI_Spellbook::Init_UI();
-        Action_Bar::Create_Action_Bar(World::zone);
-        Menu::Init();
-        SQLite_Dialogue::Init_Dialogue();
-        Video::Run_Audio("assets/music/nature.ogg");
-    }
+    //	Joystick::JoystickInit();
+    TTF_Init();
 
+    SDL_SetRelativeMouseMode(SDL_FALSE);
+    SDL_ShowCursor(SDL_DISABLE );
 
-	void Init_Client() {
-		if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
-			SDL_Log(SDL_GetError());
-		}
-        Mix_Init(0);
-        Mix_OpenAudio(44100, AUDIO_S16SYS, 2, 4096);
+    Graphics::running = true;
 
+    Graphics::createGraphicsContext(World::zone);
 
-	//	Joystick::JoystickInit();
-		TTF_Init();
+    Main_Menu::Menu_Options();
 
-
-		SDL_SetRelativeMouseMode(SDL_FALSE);
-        SDL_ShowCursor(SDL_DISABLE );
-
-		Graphics::running = true;
-
-        Graphics::createGraphicsContext(World::zone);
-
-        Main_Menu::Menu_Options();
-
-        Init_World();
-    }
-
-
-
-
+    Init_World();
+  }
 }
