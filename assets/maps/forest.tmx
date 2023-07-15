@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="5134">
+<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="5331">
  <tileset firstgid="1" source="../sprite_sheets/ground_tiles/grassland_tiles_x2.tsx"/>
  <tileset firstgid="673" source="../sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx"/>
  <tileset firstgid="674" source="../sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx"/>
@@ -246,7 +246,7 @@
   <object id="203" template="../spawn_points/unit_spawns/trees/deciduous/tree_01_00.tx" x="26989" y="29287"/>
   <object id="204" template="../spawn_points/unit_spawns/trees/deciduous/tree_01_01.tx" x="26582" y="29454"/>
   <object id="205" template="../spawn_points/unit_spawns/trees/deciduous/tree_01_02.tx" x="27458" y="29198"/>
-  <object id="206" template="../spawn_points/unit_spawns/trees/deciduous/tree_01_03.tx" x="27660" y="28897.3"/>
+  <object id="206" template="../spawn_points/unit_spawns/trees/deciduous/tree_01_03.tx" x="27572" y="28941.3"/>
   <object id="207" template="../spawn_points/unit_spawns/trees/deciduous/tree_01_04.tx" x="26496" y="30088" visible="1"/>
   <object id="208" template="../spawn_points/unit_spawns/trees/deciduous/tree_01_05.tx" x="26982" y="30406"/>
   <object id="209" template="../spawn_points/unit_spawns/trees/deciduous/tree_01_06.tx" x="27957" y="29319"/>
@@ -415,8 +415,8 @@
   <object id="56" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="31264" y="30336"/>
   <object id="57" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="30744" y="30152"/>
   <object id="58" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="29688" y="28840"/>
-  <object id="59" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="28560" y="28144"/>
-  <object id="60" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="28256" y="28000"/>
+  <object id="59" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="28826.7" y="28295.5"/>
+  <object id="60" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="28266.6" y="27613.6"/>
   <object id="61" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="27608" y="26408"/>
   <object id="62" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="30624" y="28640"/>
   <object id="63" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="31608" y="30088"/>
@@ -441,7 +441,7 @@
   <object id="82" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="21672" y="24152"/>
   <object id="83" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="22304" y="22752"/>
   <object id="84" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="23992" y="24136"/>
-  <object id="85" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="25616" y="26576"/>
+  <object id="85" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="25367.5" y="26836.6"/>
   <object id="86" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="25824" y="28096"/>
   <object id="87" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="24920" y="27368"/>
   <object id="88" template="../spawn_points/unit_spawns/trees/deciduous/random_tree.tx" x="24120" y="25832"/>
@@ -520,7 +520,6 @@
   <object id="179" template="../spawn_points/unit_spawns/animals/hostile/wolves/RTP_GrayWolf.tx" x="29158" y="26866"/>
   <object id="180" template="../spawn_points/unit_spawns/animals/hostile/wolves/RTP_GrayWolf.tx" x="27970" y="25630"/>
   <object id="181" template="../spawn_points/unit_spawns/animals/hostile/wolves/RTP_GrayWolf.tx" x="26750" y="26218"/>
-  <object id="182" template="../spawn_points/unit_spawns/animals/hostile/wolves/RTP_GrayWolf.tx" x="27228" y="27244"/>
   <object id="184" template="../spawn_points/unit_spawns/animals/hostile/wolves/RTP_GrayWolf.tx" x="30530" y="29382"/>
   <object id="185" template="../spawn_points/unit_spawns/animals/hostile/wolves/RTP_GrayWolf.tx" x="30972" y="30332"/>
   <object id="186" template="../spawn_points/unit_spawns/animals/hostile/wolves/RTP_GrayWolf.tx" x="31656" y="30928"/>
@@ -1785,12 +1784,45 @@
   <object id="5006" template="../spawn_points/unit_spawns/Demons/Daemon_Infernum.tx" x="28164.7" y="26944.7"/>
   <object id="5008" template="../spawn_points/unit_spawns/monsters/ogres/RTP_Ogre.tx" x="29292.7" y="28014"/>
   <object id="5012" template="../spawn_points/unit_spawns/2nd_cast/elf/female/Female_ArcherElven.tx" x="27331.5" y="26820.1"/>
-  <object id="5108" template="../spawn_points/buildings/orc/tents/Orc Tent 5 T6.tx" x="28893" y="30183.7"/>
-  <object id="5110" template="../spawn_points/unit_spawns/2nd_cast/human/male/Male_Monk.tx" name="" x="28514.6" y="29479.6">
+  <object id="5110" template="../spawn_points/unit_spawns/2nd_cast/human/male/Male_Monk.tx" x="28448.6" y="29553.6">
    <properties>
     <property name="player" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="5113" template="../spawn_points/buildings/orc/tents/Tanning Rack T8.tx" x="29055.4" y="29943.5"/>
+  <object id="5296" template="../spawn_points/buildings/orc/tent/Orc Tent 2 T4.tx" x="26842" y="26798"/>
+  <object id="5297" template="../spawn_points/buildings/orc/tent/Orc Tent 2 T7.tx" x="26688" y="27824"/>
+  <object id="5298" template="../spawn_points/buildings/orc/tent/Orc Tent 5 T5.tx" x="26966" y="27314"/>
+  <object id="5299" template="../spawn_points/buildings/orc/tent/Orc Tent 2 T3.tx" x="26036" y="27236"/>
+  <object id="5300" template="../spawn_points/buildings/orc/tent/Orc Tent 5 T8.tx" x="25890" y="26766"/>
+  <object id="5301" template="../spawn_points/buildings/orc/tent/Orc Tent 6 T5.tx" x="26132" y="26484"/>
+  <object id="5302" template="../spawn_points/buildings/orc/fur/Fur T4.tx" x="26384" y="26488"/>
+  <object id="5303" template="../spawn_points/buildings/orc/fur/Fur T7.tx" x="26740" y="27892"/>
+  <object id="5304" template="../spawn_points/buildings/orc/fur/Fur T8.tx" x="26470" y="27250"/>
+  <object id="5305" template="../spawn_points/buildings/orc/fur/Fur T6.tx" x="26226" y="27118"/>
+  <object id="5306" template="../spawn_points/buildings/orc/fur/Fur T3.tx" x="26212" y="26836"/>
+  <object id="5307" template="../spawn_points/buildings/orc/fur/Fur T5.tx" x="26602" y="26926"/>
+  <object id="5308" template="../spawn_points/buildings/orc/campfire/Campfire T3.tx" x="26392" y="27008"/>
+  <object id="5309" template="../spawn_points/buildings/orc/spitroast/Spit Roast T4.tx" x="26450" y="27062"/>
+  <object id="5310" template="../spawn_points/buildings/orc/barricade/Pallisade T1.tx" x="25946" y="26070"/>
+  <object id="5311" template="../spawn_points/buildings/orc/barricade/Pallisade T1.tx" x="25754" y="26254"/>
+  <object id="5312" template="../spawn_points/buildings/orc/barricade/Pallisade T1.tx" x="25588" y="26452"/>
+  <object id="5313" template="../spawn_points/buildings/orc/barricade/Pallisade T2.tx" x="25602" y="26782"/>
+  <object id="5314" template="../spawn_points/buildings/orc/barricade/Pallisade T3.tx" x="25728" y="27048"/>
+  <object id="5315" template="../spawn_points/buildings/orc/barricade/Pallisade T2.tx" x="25814" y="27298"/>
+  <object id="5316" template="../spawn_points/buildings/orc/barricade/Pallisade T3.tx" x="25976" y="27544"/>
+  <object id="5317" template="../spawn_points/buildings/orc/barricade/Pallisade T3.tx" x="26262" y="27834"/>
+  <object id="5318" template="../spawn_points/buildings/orc/barricade/Pallisade T3.tx" x="26528" y="28088"/>
+  <object id="5319" template="../spawn_points/buildings/orc/barricade/Pallisade T5.tx" x="26652" y="28044"/>
+  <object id="5320" template="../spawn_points/buildings/orc/barricade/Pallisade T6.tx" x="27106" y="27902"/>
+  <object id="5321" template="../spawn_points/buildings/orc/barricade/Pallisade T6.tx" x="27320" y="27480"/>
+  <object id="5322" template="../spawn_points/buildings/orc/barricade/Pallisade T5.tx" x="27154" y="27614"/>
+  <object id="5323" template="../spawn_points/buildings/orc/barricade/Pallisade T4.tx" x="26954" y="28046"/>
+  <object id="5324" template="../spawn_points/buildings/orc/barricade/Pallisade T4.tx" x="26286" y="26114"/>
+  <object id="5325" template="../spawn_points/buildings/orc/barricade/Pallisade T5.tx" x="27286" y="27154"/>
+  <object id="5326" template="../spawn_points/buildings/orc/barricade/Pallisade T6.tx" x="27352" y="26928"/>
+  <object id="5327" template="../spawn_points/buildings/orc/barricade/Pallisade T7.tx" x="27244" y="26692"/>
+  <object id="5328" template="../spawn_points/buildings/orc/barricade/Pallisade T7.tx" x="26990" y="26458"/>
+  <object id="5329" template="../spawn_points/buildings/orc/barricade/Pallisade T4.tx" x="26720" y="26288"/>
+  <object id="5330" template="../spawn_points/buildings/orc/barricade/Palisade T3.tx" x="26446" y="26162"/>
  </objectgroup>
 </map>

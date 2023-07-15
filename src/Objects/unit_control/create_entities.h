@@ -9,6 +9,7 @@
 #include "social_control.h"
 #include "item_components.h"
 #include "spellbook.h"
+#include "texture_packer.h"
 #include "ui_actionbar.h"
 #include "procedural_generator.h"
 #include <cstddef>
@@ -74,9 +75,9 @@ namespace Create_Entities {
       zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
     }
     else {
-//        no collision box
-        zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
-        zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
+      //        no collision box
+      zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
     }
   }
 
@@ -121,53 +122,54 @@ namespace Create_Entities {
     return false;
   }
 
-    bool PVG_Building(entt::registry& zone, float x, float y, std::string &templateName, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
-        /// if it is a building
-        std::string layout = Entity_Loader::Get_Building_Sprite_layout(templateName);
+  bool PVG_Building(entt::registry& zone, float x, float y, std::string &templateName, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+    /// if it is a building
+    std::string layout = Entity_Loader::Get_Building_Sprite_layout(templateName);
 
-        if (layout == "PVG") {
-            auto entity = zone.create();
-            int unit_ID = Check_For_Template_ID(templateName);
+    if (layout == "PVG") {
+      auto entity = zone.create();
+      int unit_ID = Check_For_Template_ID(templateName);
 
-            SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
-            std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
-            std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
+      SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
+      std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
+      std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
 
-            std::string sheetname = Entity_Loader::Get_Sprite_Sheet(templateName);
+      std::string sheetname = Entity_Loader::Get_Sprite_Sheet(templateName);
 
-            ///run texture packer
-            int buildingIndex;
-            packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID], buildingIndex);
+      ///run texture packer
+      int buildingIndex;
+      std::string tilesetName;
+      packerframeData = Texture_Packer::TexturePacker_Import_Tileset(templateName, sheetname, Graphics::unitTextures[unit_ID], buildingIndex, tilesetName);
 
-            //Add shared components
-            auto &position = zone.emplace<Component::Position>(entity, x, y);
-            auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
-            auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
+      //Add shared components
+      auto &position = zone.emplace<Component::Position>(entity, x, y);
+      auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
+      auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
 
-            /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
-            zone.emplace<Component::Direction>(entity, Component::Direction::W);
-            zone.emplace<Component::Name>(entity, templateName);
-            zone.emplace<Component::Mass>(entity, 100.0f);
-            zone.emplace<Component::Alive>(entity, true);
+      /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
+      zone.emplace<Component::Direction>(entity, Component::Direction::W);
+      zone.emplace<Component::Name>(entity, templateName);
+      zone.emplace<Component::Mass>(entity, 100.0f);
+      zone.emplace<Component::Alive>(entity, true);
 
-            auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
-            sprite.sheetData = packerframeData;
-            sprite.sheet_name = templateName;
-            sprite.type = "RPG_Tools";
-            sprite.frameIndex = buildingIndex;
+      auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
+      sprite.sheetData = packerframeData;
+      sprite.sheet_name = tilesetName;
+      sprite.type = "RPG_Tools";
+      sprite.frameIndex = buildingIndex;
 
-//            zone.emplace<Rendering_Components::Sprite_Offset>(entity, sprite.sheetData->at(templateName).frameList.at(buildingIndex).x_offset, sprite.sheetData->at(templateName).frameList.at(buildingIndex).y_offset);
+      //            zone.emplace<Rendering_Components::Sprite_Offset>(entity, sprite.sheetData->at(templateName).frameList.at(buildingIndex).x_offset, sprite.sheetData->at(templateName).frameList.at(buildingIndex).y_offset);
 
-            Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line);
-            SDL_Rect rect = sprite.sheetData->at(templateName).frameList.at(buildingIndex).clip;
-            zone.emplace<Rendering_Components::Sprite_Offset>(entity, (float)rect.w /2.0f, (float)rect.h);
-//            position.x -= rect.w /2.0f;
-//            position.y -= rect.h;
-            return true;
-        }
-        return false;
+      Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line);
+      SDL_Rect rect = sprite.sheetData->at(tilesetName).frameList.at(buildingIndex).clip;
+      zone.emplace<Rendering_Components::Sprite_Offset>(entity, (float)rect.w /2.0f, (float)rect.h);
+      //            position.x -= rect.w /2.0f;
+      //            position.y -= rect.h;
+      return true;
     }
+    return false;
+  }
 
   void Set_Map_Texture(std::string &name, std::string imgpath) {
     int unit_ID = 0;
@@ -204,7 +206,7 @@ namespace Create_Entities {
       Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
       data = Entity_Loader::parse_data(templateName);
       if (Graphics::unitTextures[unit_ID] == NULL) {
-	    std::cout << "texture is NULL for: " << templateName << std::endl;
+	std::cout << "texture is NULL for: " << templateName << std::endl;
       }
     }
 
@@ -214,10 +216,9 @@ namespace Create_Entities {
     std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
     //stores the index for a static frame in spritesheet xml 
-    int imageCollectionIndex;
     if (sheetname == "texture_packer") {
       ///run texture packer
-      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID], imageCollectionIndex);
+      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID]);
     }
     else {
       ///get sheet data for new pointer to map

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../sprite_sheets/buildings/orc/OrcVillage.tsx"/>
+ <object gid="93" width="287" height="237"/>
+</template>
