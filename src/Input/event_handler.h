@@ -22,12 +22,12 @@ namespace Event_Handler {
 
   const Uint8* state = SDL_GetKeyboardState(NULL);
 
-  void Movement_Input(entt::registry& zone, Component::Velocity& vel, Action_Component::Action& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
+  void Movement_Input(entt::registry& zone, Action_Component::Action& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
 	if (act.state == Action_Component::idle || act.state == Action_Component::walk) {
 	  if (Events::event.type == SDL_KEYDOWN) {
-	    auto& position = zone.get<Component::Position>(entity);
+	    auto& vel = zone.get<Component::Velocity>(entity);
 	    switch (Events::event.key.keysym.sym) {
 	    case SDLK_e:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; act.state = Action_Component::walk; break;
 	    case SDLK_d:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; act.state = Action_Component::walk; break;
@@ -42,6 +42,7 @@ namespace Event_Handler {
 	}
       }
       else if (Events::event.type == SDL_KEYUP) {
+	auto& vel = zone.get<Component::Velocity>(entity);
 	switch (Events::event.key.keysym.sym)
 	  {
 	  case SDLK_e: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; break;
@@ -54,10 +55,11 @@ namespace Event_Handler {
 	  case SDLK_x: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
 	  }
       }
+      auto& vel = zone.get<Component::Velocity>(entity);
       if (act.state == Action_Component::attack) {
 	vel.magnitude.x = 0.0f;
 	vel.magnitude.y = 0.0f;
-      }
+      }      
       else if  ((vel.magnitude.x == 0.0f) && (vel.magnitude.y == 0.0f) && zone.any_of<Component::Moving>(entity)) {
 	zone.remove<Component::Moving>(entity);
 	act.state = Action_Component::idle;
@@ -65,7 +67,7 @@ namespace Event_Handler {
     }
   };
 
-  void Interface_Input(entt::registry& zone, Component::Camera &camera, Component::Velocity& vel, Action_Component::Action& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
+  void Interface_Input(entt::registry& zone, Component::Camera &camera, Action_Component::Action& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
 	if (act.state != Action_Component::attack) {
@@ -104,7 +106,7 @@ namespace Event_Handler {
     }
   };
 
-  void Mouse_Input(entt::registry &zone, entt::entity &player_ID, Component::Position &playerPosition, Component::Melee_Range &meleeRange, Component::Camera &camera) {
+  void Mouse_Input(entt::registry &zone, entt::entity &player_ID, Component::Position &playerPosition, Component::Camera &camera) {
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
 	//check if cursor is in the bag UI
@@ -163,7 +165,8 @@ namespace Event_Handler {
     //        keep function running to maintain input and perform actions during pause
     if (!Menu::toggleMenu) {
       while (SDL_PollEvent(&Events::event) != 0) {
-	auto view = zone.view<Component::Velocity, Action_Component::Action, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
+	//	auto view = zone.view<Component::Velocity, Action_Component::Action, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
+	auto view = zone.view<Action_Component::Action, Component::Position, Component::Input, Component::Camera>();
 	for (auto player_ID: view) {
 	  if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
 	    //                        recenter camera on player
@@ -175,8 +178,8 @@ namespace Event_Handler {
 	  }
 
 	  auto &playerPosition = view.get<Component::Position>(player_ID);
-	  auto &meleeRange = view.get<Component::Melee_Range>(player_ID);
-	  auto &playerVelocity = view.get<Component::Velocity>(player_ID);
+	  //	  auto &meleeRange = view.get<Component::Melee_Range>(player_ID);
+	  // auto &playerVelocity = view.get<Component::Velocity>(player_ID);
 	  auto &playerAction = view.get<Action_Component::Action>(player_ID);
 	  auto &camera = view.get<Component::Camera>(player_ID);
 
@@ -184,10 +187,12 @@ namespace Event_Handler {
 	    Interface::Update_Zoom(Events::event);
 	  }
 	  if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
-	    Mouse_Input(zone, player_ID, playerPosition, meleeRange, camera);
+	    Mouse_Input(zone, player_ID, playerPosition, camera);
 	  } else if (Events::event.key.type == SDL_KEYDOWN || Events::event.key.type == SDL_KEYUP) {
-	    Movement_Input(zone, playerVelocity, playerAction, player_ID);
-	    Interface_Input(zone, camera, playerVelocity, playerAction, player_ID);
+	    if (zone.any_of<Component::Velocity>(player_ID)) {
+	    Movement_Input(zone, playerAction, player_ID);
+	    }
+	    Interface_Input(zone, camera, playerAction, player_ID);
 	  }
 	  //if (event.key.type == SDL_JOYAXISMOTION) { // it works!
 	  //	if (event.jaxis. == 0) {

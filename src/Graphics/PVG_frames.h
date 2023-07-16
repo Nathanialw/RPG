@@ -25,6 +25,7 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
       action.frameState = Action_Component::start;
     }
   }
+  
   if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
     action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
     //            sheetData.frameTime = 0;
@@ -52,6 +53,7 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
     if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses) {
       sheetData.reversing = 0;
     }
+    // increment if it is reversing
     if (sheetData.reversing) {
       action.frame--;
       if (action.frame < 1) {
