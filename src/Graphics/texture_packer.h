@@ -5,6 +5,7 @@
 #include "graphics.h"
 #include "spritesheet_structs.h"
 #include <string>
+#include "SQLite_unit_data.h"
 
 namespace Texture_Packer {
   ///on init we need to do it parse the SQLite db for all sprite sheets names "texture_packer" and use the result to preallocate all the nodes of the std::unordered_map
@@ -135,26 +136,26 @@ namespace Texture_Packer {
     return &Packer_Textures;
   }
 
-  std::unordered_map<std::string, Rendering_Components::Sheet_Data>* TexturePacker_Import_Tileset(std::string &templateName, std::string &xml_path, SDL_Texture* texture, int &buildingIndex, std::string &tilesetName) {
+  std::unordered_map<std::string, Rendering_Components::Sheet_Data>* TexturePacker_Import_Tileset(std::string &templateName, Entity_Loader::Building_Data data, SDL_Texture* texture, int &buildingIndex, std::string &tilesetName) {
     //loads xml and image from db, only do once per xml
 
     ///get path from db
-    Type_Data typeData = Get_Sprite_Sheet(templateName);
-    if (typeData.xml_path.c_str() == NULL || typeData.xml_path == ""){
+    //    Type_Data typeData = Get_Sprite_Sheet(templateName);
+    if (data.xml.c_str() == NULL || data.xml == ""){
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
       return NULL;
     }
 
     const char* imgPath;
-    std::string imgPathStr = "assets/" + typeData.img_path;
+    std::string imgPathStr = "assets/" + data.img;
     imgPath = imgPathStr.c_str();
 
-  std::string base_filename = imgPathStr.substr(imgPathStr.find_last_of("/\\") + 1);
-  std::string::size_type const p(base_filename.find_last_of('.'));
-  tilesetName = base_filename.substr(0, p);
+    std::string base_filename = imgPathStr.substr(imgPathStr.find_last_of("/\\") + 1);
+    std::string::size_type const p(base_filename.find_last_of('.'));
+    tilesetName = base_filename.substr(0, p);
 
     const char* xmlPath;
-    std::string xmlPathStr = "assets/" + typeData.xml_path;
+    std::string xmlPathStr = "assets/" + data.xml;
     xmlPath = xmlPathStr.c_str();
 
     tinyxml2::XMLDocument spriteSheetData;
@@ -185,7 +186,7 @@ namespace Texture_Packer {
       while (pSpriteElement != NULL) {
 	///get frame data for each state
 	std::string n = pSpriteElement->Attribute("n");
-	Spritesheet_Structs::Get_Frame_Action_Data(typeData.type, templateName, n, spritesheet.actionFrameData, frameIndex);
+	Spritesheet_Structs::Get_Frame_Action_Data("tileset", templateName, n, spritesheet.actionFrameData, frameIndex);
 	///get sprite data
 	frame.clip.x = pSpriteElement->IntAttribute("x");
 	frame.clip.y = pSpriteElement->IntAttribute("y");
@@ -206,7 +207,7 @@ namespace Texture_Packer {
     while (pSpriteElement != NULL) {
       ///get frame data for each state
       std::string n = pSpriteElement->Attribute("n");
-      if (Spritesheet_Structs::Get_Tileset_Frame_Data(typeData.type, templateName, n, spritesheet.actionFrameData, frameIndex)) {
+      if (Spritesheet_Structs::Get_Tileset_Frame_Data(templateName, n, spritesheet.actionFrameData)) {
 	buildingIndex = frameIndex;
 	break;
       }

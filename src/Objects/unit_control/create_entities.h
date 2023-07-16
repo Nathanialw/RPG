@@ -6,6 +6,7 @@
 #include "character_data.h"
 #include "action_components.h"
 #include "collision.h"
+#include "rendering_components.h"
 #include "social_control.h"
 #include "item_components.h"
 #include "spellbook.h"
@@ -56,7 +57,7 @@ namespace Create_Entities {
     std::cout << "failed to assign template key for: " << name << std::endl;
   }
 
-  void Set_Collision_Box (entt::registry &zone, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+  void Set_Collision_Box (entt::registry &zone, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
     if (entity_class == "polygon_building") {
       Collision::Create_Static_Body_Polygon(zone, entity, position.x, position.y, pointVecs);
       zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
@@ -69,8 +70,7 @@ namespace Create_Entities {
       zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
     }
     else if (entity_class == "round_building") {
-      float rad = 185.0f;
-      Collision::Create_Static_Body(zone, entity, position.x, position.y, rad);
+      Collision::Create_Static_Body(zone, entity, position.x, position.y, radius);
       zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
       zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
     }
@@ -83,20 +83,19 @@ namespace Create_Entities {
 
   bool Polygon_Building(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
-    std::string layout = Entity_Loader::Get_Building_Sprite_layout(name);
+    Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(name);
 
-    if (layout == "static") {
+    if (data.sprite_layout == "static") {
       auto entity = zone.create();
       int unit_ID = Check_For_Template_ID(name);
       Graphics::Create_Game_Object(unit_ID, filepath.c_str());
 
       SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
-      std::string layout = Entity_Loader::Get_Building_Sprite_layout(name);
       std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
       std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
       ///get sheet data for new pointer to map
-      SQLite_Spritesheets::Get_Flare_Building_From_DB(name, layout, sheetDataFlare);
+      SQLite_Spritesheets::Get_Flare_Building_From_DB(name, data.sprite_layout, sheetDataFlare);
       flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
 
       //Add shared components
@@ -116,7 +115,7 @@ namespace Create_Entities {
       sprite.type = sheetDataFlare.sheet_type;
       zone.emplace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
-      Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line);
+      Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line, data.radius);
       return true;
     }
     return false;
@@ -124,9 +123,9 @@ namespace Create_Entities {
 
   bool PVG_Building(entt::registry& zone, float x, float y, std::string &templateName, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
-    std::string layout = Entity_Loader::Get_Building_Sprite_layout(templateName);
+    Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 
-    if (layout == "PVG") {
+    if (data.sprite_layout == "PVG") {
       auto entity = zone.create();
       int unit_ID = Check_For_Template_ID(templateName);
 
@@ -134,13 +133,12 @@ namespace Create_Entities {
       std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
       std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
-
       std::string sheetname = Entity_Loader::Get_Sprite_Sheet(templateName);
 
       ///run texture packer
       int buildingIndex;
       std::string tilesetName;
-      packerframeData = Texture_Packer::TexturePacker_Import_Tileset(templateName, sheetname, Graphics::unitTextures[unit_ID], buildingIndex, tilesetName);
+      packerframeData = Texture_Packer::TexturePacker_Import_Tileset(templateName, data, Graphics::unitTextures[unit_ID], buildingIndex, tilesetName);
 
       //Add shared components
       auto &position = zone.emplace<Component::Position>(entity, x, y);
@@ -159,13 +157,9 @@ namespace Create_Entities {
       sprite.type = "RPG_Tools";
       sprite.frameIndex = buildingIndex;
 
-      //            zone.emplace<Rendering_Components::Sprite_Offset>(entity, sprite.sheetData->at(templateName).frameList.at(buildingIndex).x_offset, sprite.sheetData->at(templateName).frameList.at(buildingIndex).y_offset);
-
-      Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line);
-      SDL_Rect rect = sprite.sheetData->at(tilesetName).frameList.at(buildingIndex).clip;
-      zone.emplace<Rendering_Components::Sprite_Offset>(entity, (float)rect.w /2.0f, (float)rect.h);
-      //            position.x -= rect.w /2.0f;
-      //            position.y -= rect.h;
+      Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line, data.radius);
+      Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(buildingIndex);
+      zone.emplace<Rendering_Components::Sprite_Offset>(entity, (float)frame.clip.w /2.0f - frame.x_offset, (float)frame.clip.h - frame.y_offset);
       return true;
     }
     return false;

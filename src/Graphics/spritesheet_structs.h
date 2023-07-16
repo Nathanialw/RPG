@@ -116,19 +116,17 @@ namespace Spritesheet_Structs {
     }
   }
 
-  bool Get_Tileset_Frame_Data (std::string unitType, std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+  bool Get_Tileset_Frame_Data (std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData) {
     // name should be the template name from tiled
     Action_Component::Action_State action;
 
     // load the whole xml sheet
-    if (unitType == "tileset") {
-      if (templateName == frame) {
-	action = Action_Component::Action_State::isStatic;
-	actionFrameData[action].frameSpeed = 75;
-	std::cout << "Success! " << templateName << " found " << "frame" << frame << std::endl;
-	return true;
-      }
-    }
+    if (templateName == frame) {
+      action = Action_Component::Action_State::isStatic;
+      actionFrameData[action].frameSpeed = 75;
+      std::cout << "Success! " << templateName << " found " << "frame" << frame << std::endl;
+      return true;
+    }    
     return false;
   }
   

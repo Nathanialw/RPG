@@ -300,51 +300,115 @@
  </tile>
  <tile id="97">
   <image width="187" height="95" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Palisade T1.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="26.6667" y="58" width="130.667" height="21.3333"/>
+  </objectgroup>
  </tile>
  <tile id="98">
   <image width="143" height="144" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Palisade T2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="32.6667" y="139.333">
+    <polygon points="0,0 86.6667,-68 73.3333,-80.6667 -14,-15.3333"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="99">
   <image width="108" height="165" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Palisade T3.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="56" y="53" width="14" height="96"/>
+  </objectgroup>
  </tile>
  <tile id="100">
   <image width="154" height="156" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Palisade T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="30.6667" y="68">
+    <polygon points="0,0 77.3333,60.6667 91.3333,52.6667 12.6667,-8"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="101">
   <image width="176" height="113" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Palisade T5.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="20" y="56" width="134" height="15"/>
+  </objectgroup>
  </tile>
  <tile id="102">
   <image width="155" height="158" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Palisade T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="25.3333" y="119.333">
+    <polygon points="0,0 84.6667,-64 94,-52 9.33333,9.33333"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="103">
   <image width="88" height="167" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Palisade T7.png"/>
+  <objectgroup draworder="index" id="3">
+   <object id="2" x="25" y="48" width="26" height="107"/>
+  </objectgroup>
  </tile>
  <tile id="104">
   <image width="155" height="146" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Palisade T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="106" y="138.667">
+    <polygon points="0,0 -88,-64.6667 -79.3333,-79.3333 12.6667,-16"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="105">
   <image width="389" height="113" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Pallisade T1.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="31" y="78" width="316" height="25"/>
+  </objectgroup>
  </tile>
  <tile id="106">
   <image width="300" height="270" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Pallisade T2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="16" y="255">
+    <polygon points="0,0 229,-178 240,-154 14,6"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="107">
   <image width="108" height="336" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Pallisade T3.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="12" y="74" width="23" height="243"/>
+  </objectgroup>
  </tile>
  <tile id="108">
   <image width="296" height="267" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Pallisade T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="20" y="109">
+    <polygon points="0,0 222,155 234,134 6,-19"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="109">
   <image width="395" height="128" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Pallisade T5.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="23" y="83" width="332" height="28"/>
+  </objectgroup>
  </tile>
  <tile id="110">
   <image width="298" height="251" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Pallisade T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="16" y="229">
+    <polygon points="0,0 229,-167 238,-139 23,17"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="111">
   <image width="137" height="316" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Pallisade T7.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="34" y="62" width="34" height="244"/>
+  </objectgroup>
  </tile>
  <tile id="112">
   <image width="302" height="244" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Pallisade T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="245" y="240">
+    <polygon points="0,0 -229,-171 -216,-185 14,-17"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="113">
   <image width="337" height="135" source="../../../../../Graphics/RPG_Tools_Output/Orc Pack/Orc 1/Spit Roast T1.png"/>

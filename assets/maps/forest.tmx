@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="5331">
+<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="5334">
  <tileset firstgid="1" source="../sprite_sheets/ground_tiles/grassland_tiles_x2.tsx"/>
  <tileset firstgid="673" source="../sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx"/>
  <tileset firstgid="674" source="../sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx"/>
@@ -237,7 +237,6 @@
   <object id="6" template="../spawn_points/buildings/houses/Medieval_Expansion_House_9.tx" x="28592" y="32000"/>
   <object id="7" template="../spawn_points/buildings/houses/Medieval_Expansion_House_9.tx" x="30040" y="32824"/>
   <object id="8" template="../spawn_points/buildings/houses/Medieval_Expansion_House_9.tx" x="29144" y="33336"/>
-  <object id="9" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_47.tx" x="43376" y="17424"/>
   <object id="10" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_47.tx" x="53936" y="4240"/>
   <object id="11" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_47.tx" x="2384" y="67184"/>
   <object id="12" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_7.tx" x="1424" y="61808"/>
@@ -1824,5 +1823,6 @@
   <object id="5328" template="../spawn_points/buildings/orc/barricade/Pallisade T7.tx" x="26990" y="26458"/>
   <object id="5329" template="../spawn_points/buildings/orc/barricade/Pallisade T4.tx" x="26720" y="26288"/>
   <object id="5330" template="../spawn_points/buildings/orc/barricade/Palisade T3.tx" x="26446" y="26162"/>
+  <object id="5333" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_47.tx" x="43548" y="17588"/>
  </objectgroup>
 </map>
