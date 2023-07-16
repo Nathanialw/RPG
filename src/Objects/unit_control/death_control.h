@@ -1,4 +1,5 @@
 #pragma once
+#include "action_components.h"
 #include "components.h"
 #include "world.h"
 #include "item_components.h"
@@ -168,11 +169,14 @@ namespace Death_Control {
   }
 
   void Set_As_Corpse (entt::registry &zone) {
-    auto view = zone.view<Component::Position, Death_Component::Corpse, Rendering_Components::Sprite_Offset>();
+    auto view = zone.view<Component::Position, Action_Component::Action_State, Death_Component::Corpse, Rendering_Components::Sprite_Offset>();
     for (auto entity : view) {
       auto &position = view.get<Component::Position>(entity);
       auto &offset = view.get<Rendering_Components::Sprite_Offset>(entity);
+      auto &action = view.get<Action_Component::Action_State>(entity);
 
+      action.state = Action_Component::dead;
+      
       position.x -= offset.x;
       position.y -= offset.y;
       offset.x = 0.0f;
