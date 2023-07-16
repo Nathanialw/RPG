@@ -12,6 +12,10 @@ namespace Rendering_Components {
     int frameIndex;
   };
 
+  struct Background {
+
+  };
+  
   struct Sprite_Offset {
     float x;
     float y;

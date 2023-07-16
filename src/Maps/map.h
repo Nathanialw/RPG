@@ -99,12 +99,8 @@ namespace Maps {
 		      std::string templateFile = asa.imagePath.substr(asa.imagePath.find_last_of("/\\") + 1);
 		      std::string::size_type const p(templateFile.find_last_of('.'));
 		      std::string qwe = templateFile.substr(0, p);
-		      Utilities::Log(qwe);
+		      // Utilities::Log(qwe);
 		      templateName = qwe;
-		    }
-
-		    if (templateName == "Blood1 T1") {
-		      Utilities::Log("asd");
 		    }
 
 		    for (auto s: ffs.getTiles())
@@ -158,7 +154,7 @@ namespace Maps {
 
 		    std::string texture = templateTilesets.at(tilesetName).getImagePath();
 		    std::string temptexture = "assets/" + texture;
-		    Utilities::Log(texture);
+		    // Utilities::Log(texture);
 
 		    if (!Create_Entities::PVG_Building(World::zone, x, y, templateName, entity_class, texture, aabb, pointVecs, line)) {
 		      if (!Create_Entities::Polygon_Building(World::zone, x, y, templateName, entity_class, texture, aabb, pointVecs, line))

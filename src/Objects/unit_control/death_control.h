@@ -1,17 +1,20 @@
 #pragma once
 #include "action_components.h"
 #include "components.h"
+#include "graphics.h"
+#include "rendering_components.h"
+#include "create_entities.h"
+#include "spritesheet_structs.h"
 #include "world.h"
 #include "item_components.h"
 #include "utilities.h"
-
+#include "game_objects.h"
 
 namespace Death_Component {
   struct Corpse {
 
   };
 }
-
 
 namespace Death_Control {
 
@@ -66,7 +69,6 @@ namespace Death_Control {
 	auto &body = view.get<Component::Body>(entity).body;
 	auto &inTree = view.get<Component::In_Object_Tree>(entity).inTree;
 	auto &direction = view.get<Component::Direction>(entity);
-
 
 	Collision::world->DestroyBody(body);
 	World::zone.remove<Component::Body>(entity);
@@ -171,12 +173,22 @@ namespace Death_Control {
       auto &action = view.get<Action_Component::Action>(entity);
 
       action.state = Action_Component::dead;
-      
+      //spawn blood under the corpse
+      //get a random index from bloodfVec
+        std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
+        Collision::aabb aabb;
+        Component::Line_Segment line;
+        std::string filepath = "";
+      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects::bloodVec[12], "", filepath, aabb, pointVecs, line);
+//        zone.emplace<Rendering_Components::Background>(entity);
+//        zone.remove<Component::Direction>(entity);
+
       position.x -= offset.x;
       position.y -= offset.y;
       offset.x = 0.0f;
       offset.y = 0.0f;
       zone.remove<Death_Component::Corpse>(entity);
+
     }
   }
 
@@ -185,13 +197,12 @@ namespace Death_Control {
     for (auto entity : view) {
       auto &interactionRect = view.get<Component::Interaction_Rect>(entity).rect;
       auto &groundBox = view.get<Item_Component::Ground_Item>(entity).box;
-
+      
       groundBox = interactionRect;
 
       //            zone.remove<Item_Component::Update_Ground_Item>(entity);
     }
   }
-
 
   void Dead_Entity_Routine (entt::registry &zone) {
     Update_Ground_Box(zone);

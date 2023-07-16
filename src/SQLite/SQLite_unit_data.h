@@ -4,6 +4,7 @@
 #include "db.h"
 #include <string.h>
 #include <string>
+#include <vector>
 #include "stdio.h"
 
 namespace Entity_Loader {
@@ -83,8 +84,6 @@ namespace Entity_Loader {
     return values;
   }
 
-  
-
   std::vector<int> Get_Race_Relationsips(std::string race) {// needs to search for  a specific row that I can input in the arguments
     std::vector<int> raceData;
     //check if the name exists??
@@ -129,6 +128,8 @@ namespace Entity_Loader {
       raceData.emplace_back(drow);
       int nature = sqlite3_column_int(stmt, 15);
       raceData.emplace_back(nature);
+      int neutral = sqlite3_column_int(stmt, 16);
+      raceData.emplace_back(neutral);
     }
 
     raceData.shrink_to_fit();
@@ -136,6 +137,204 @@ namespace Entity_Loader {
     return raceData;
   }
 
+  std::vector<std::string> Get_Names_Of_SubType(std::string type, std::string race) {
+    std::string class_name = db::Append_Quotes(type);
+    std::string race_name = db::Append_Quotes(race);
+    std::string text = class_name + " AND race = " + race_name;
+    std::vector<std::string> db_name;
+
+    const unsigned char* name;
+    sqlite3_stmt* stmt;
+    char buf[300];
+
+    const char* jj = "SELECT name FROM buildings WHERE subtype = ";
+    strcpy(buf, jj);
+    strcat(buf, text.c_str());
+
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char * s = (const char *)name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);     
+    }
+    db_name.shrink_to_fit();
+    return db_name;
+  }
+  
+  
+  /*
+    
+
+
+   */
+std::vector<std::string> Get_All_Names_Of_SubType(std::string &type) {
+    std::string class_name = db::Append_Quotes(type);
+    std::vector<std::string> db_name;
+
+    const unsigned char* name;
+    sqlite3_stmt* stmt;
+    char buf[300];
+    const char* jj = "SELECT name FROM buildings WHERE type = ";
+    strcpy(buf, jj);
+    strcat(buf, class_name.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char * s = (const char *)name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);
+     
+    }
+    db_name.shrink_to_fit();
+    return db_name;
+  }
+  
+std::vector<std::string> Get_All_Subtype_Of_Type(std::string &type) {
+    std::string class_name = db::Append_Quotes(type);
+    std::vector<std::string> db_name;
+
+    const unsigned char* name;
+    sqlite3_stmt* stmt;
+    char buf[300];
+    const char* jj = "SELECT subtype FROM building WHERE type = ";
+    strcpy(buf, jj);
+    strcat(buf, class_name.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char * s = (const char *)name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);
+     
+    }
+    db_name.shrink_to_fit();
+    return db_name;
+  }
+  
+  std::vector<std::string> Get_All_Types_Of_Race(std::string &type) {
+    std::string class_name = db::Append_Quotes(type);
+    std::vector<std::string> db_name;
+
+    const unsigned char* name;
+    sqlite3_stmt* stmt;
+    char buf[300];
+    const char* jj = "SELECT type FROM buildings WHERE race = ";
+    strcpy(buf, jj);
+    strcat(buf, class_name.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char * s = (const char *)name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);
+     
+    }
+    db_name.shrink_to_fit();
+    return db_name;
+  }
+
+    std::vector<std::string> Get_All_Of_Races() {// needs to search for  a specific row that I can input in the arguments
+    std::vector<std::string> db_name;
+    const unsigned char* name;
+    sqlite3_stmt* stmt;
+    char buf[300];
+    const char* jj = "SELECT race FROM race_relationships";
+    strcpy(buf, jj);
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char * s = (const char *)name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);
+    }
+    db_name.shrink_to_fit();
+    return db_name;
+  }
+  
+  std::vector<std::string> Get_All_Items_Of_Type(std::string &type) {
+    std::string class_name = db::Append_Quotes(type);
+    std::vector<std::string> db_name;
+
+    const unsigned char* name;
+    sqlite3_stmt* stmt;
+    char buf[300];
+    const char* jj = "SELECT type FROM weapon_types WHERE name = ";
+    strcpy(buf, jj);
+    strcat(buf, class_name.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char * s = (const char *)name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);     
+    }
+    db_name.shrink_to_fit();
+    return db_name;
+  }
+  
+  std::vector<std::string> Get_All_Objects_Of_Type(std::string &type) {
+    std::string class_name = db::Append_Quotes(type);
+    std::vector<std::string> db_name;
+
+    const unsigned char* name;
+    sqlite3_stmt* stmt;
+    char buf[300];
+    const char* jj = "SELECT name FROM buildings WHERE type = ";
+    strcpy(buf, jj);
+    strcat(buf, class_name.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char * s = (const char *)name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);
+     
+    }
+    db_name.shrink_to_fit();
+    return db_name;
+  }
+
+  std::vector<std::string> Get_All_Units_Of_Type(std::string &type) {
+    std::string class_name = db::Append_Quotes(type);
+    std::vector<std::string> db_name;
+
+    const unsigned char* name;
+    sqlite3_stmt* stmt;
+    char buf[300];
+    const char* jj = "SELECT name FROM unit_data WHERE type = ";
+    strcpy(buf, jj);
+    strcat(buf, class_name.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char * s = (const char *)name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);
+     
+    }
+    db_name.shrink_to_fit();
+    return db_name;
+  }
+    
+  std::vector<std::string> Get_All_Of_Type() {// needs to search for  a specific row that I can input in the arguments
+    std::vector<std::string> db_name;
+    const unsigned char* name;
+    sqlite3_stmt* stmt;
+    char buf[300];
+    const char* jj = "SELECT object_type FROM unit_types";
+    strcpy(buf, jj);
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char * s = (const char *)name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);
+    }
+    db_name.shrink_to_fit();
+    return db_name;
+  }
+  
 
   ////
   /// std::string entity_class MUST BE SINGLE QUOTES WRAPPED IN DOUBLE QUOTES OR ELSE IT THROWS A MEMORY READ EXCEPTION
@@ -157,7 +356,7 @@ namespace Entity_Loader {
       const char * s = (const char *)name;
       std::string retname = std::string(reinterpret_cast< const char *> (s));
       db_name.push_back(retname);
-      //std::cout << "class: " << name << std::endl;
+     
     }
     //get random index for name
     int i = rand() % ( db_name.size() ) + 1;

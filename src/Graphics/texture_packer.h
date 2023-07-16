@@ -183,7 +183,7 @@ namespace Texture_Packer {
     else {// assigns texture from img path in db unit_data
       texture = Graphics::createTexture(imgPath);
       spritesheet.texture = texture;
-      std::cout << "texture found from image path " << imgPath << " texture: " << texture << std::endl;
+      // std::cout << "texture found from image path " << imgPath << " texture: " << texture << std::endl;
       if (spritesheet.texture == NULL) {
 	std::cout << "Not texture found from image path " << imgPath << " texture: " << texture << std::endl;
 	return NULL;

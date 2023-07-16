@@ -137,6 +137,9 @@
 		<Unit filename="/home/nathanial/Workspace/RPG/sqlite3.h">
 			<Option target="RPG"/>
 		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Audio/audio.h">
+			<Option target="RPG"/>
+		</Unit>
 		<Unit filename="/home/nathanial/Workspace/RPG/src/Components/body_components.h">
 			<Option target="RPG"/>
 		</Unit>
@@ -164,10 +167,265 @@
 		<Unit filename="/home/nathanial/Workspace/RPG/src/Game/game_loop.h">
 			<Option target="RPG"/>
 		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Game/game_objects.h">
+			<Option target="RPG"/>
+		</Unit>
 		<Unit filename="/home/nathanial/Workspace/RPG/src/Game/init.h">
 			<Option target="RPG"/>
 		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Game/load_object_list.h">
+			<Option target="RPG"/>
+		</Unit>
 		<Unit filename="/home/nathanial/Workspace/RPG/src/Game/main_menu.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/blood.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/combat_graphics.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/graphics.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/rendering.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/rendering_components.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/shadow_casting.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/sprite_parser.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/sprite_sheets.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/sprites.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/spritesheet_structs.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/texture_packer.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Graphics/texture_packer_item.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Input/camera.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Input/event_handler.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Input/events.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Input/input_control.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Input/joystick.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Input/movement.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Input/pause.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Input/player_control.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Maps/isometric.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Maps/map.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Maps/procedural_generator.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Maps/scene.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Maps/world.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Maps/world_grid.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/Components/action_components.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/Components/item_components.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/character_data.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/character_stats.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/equip_unit/equip_player_start.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/equip_unit/equip_unit.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/equipment.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/items.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/recruitable_units.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/ai_components.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/ai_control.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/collision.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/combat_control.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/create_entities.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/death_control.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/dialogue.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/entity_control.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/formation_collisions.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/formation_positions.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/mounts.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/mouse_control.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/squad.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/squad_control.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/unit_control.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/unit_formations.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_control/unit_positions.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Objects/unit_status.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/SQLite/SQLite_dialogue.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/SQLite/SQLite_item_data.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/SQLite/SQLite_spell_data.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/SQLite/SQLite_spritesheets.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/SQLite/SQLite_unit_data.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/SQLite/db.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Sounds/combat_sounds.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Sounds/sounds.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Spells/death_spells.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Spells/instant_attack.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Spells/sinister_strike.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Spells/skills.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Spells/spells.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/damage_text.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/interface.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/menu.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/spellbook.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/text_box.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/tooltips.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/ui.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/ui_actionbar.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/ui_elements.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/ui_resources.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/UI/ui_unit_control.hpp">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Utils/base_structs.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Utils/dynamic_quad_tree.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Utils/quad_tree_controller.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Utils/timer.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Utils/utilities.h">
+			<Option target="RPG"/>
+		</Unit>
+		<Unit filename="/home/nathanial/Workspace/RPG/src/Video/video.h">
 			<Option target="RPG"/>
 		</Unit>
 		<Unit filename="/home/nathanial/Workspace/RPG/tinyxml2.cpp">

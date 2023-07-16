@@ -159,7 +159,7 @@ namespace Create_Entities {
 
       Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line, data.radius);
       Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(buildingIndex);
-      zone.emplace<Rendering_Components::Sprite_Offset>(entity, (float)frame.clip.w /2.0f - frame.x_offset, (float)frame.clip.h - frame.y_offset);
+      zone.emplace<Rendering_Components::Sprite_Offset>(entity, (float)frame.clip.w /2.0f + frame.x_offset, (float)frame.clip.h /2.0f + frame.y_offset);
       return true;
     }
     return false;

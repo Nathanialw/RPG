@@ -3,6 +3,7 @@
 #include "dialogue.h"
 #include "utilities.h"
 #include <type_traits>
+#include "components.h"
 
 namespace Social_Component {
 
@@ -21,11 +22,14 @@ namespace Social_Component {
     monster,
     eldtritch,
     drow,
-    nature
+    nature,
+    animal,
+    neutral,
+    SIZE
   };
 
   struct Relationships {
-    int races[14];
+    int races[15];
     //        std::unordered_map<entt::entity, Races> connections;
   };
 
@@ -83,6 +87,12 @@ namespace  Social_Control {
     }
     if (raceStr == "nature") {
       return Social_Component::Race::nature;
+    }
+    if (raceStr == "nature") {
+      return Social_Component::Race::animal;
+    }
+    if (raceStr == "neutral") {
+      return Social_Component::Race::neutral;
     }
     Utilities::Log("race data not found in db, setting to 'human'");
     return Social_Component::Race::human;

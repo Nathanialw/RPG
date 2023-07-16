@@ -22,6 +22,7 @@
 #include "main_menu.h"
 #include "menu.h"
 #include "world.h"
+#include "load_object_list.h"
 
 namespace Init {
 
@@ -43,6 +44,7 @@ namespace Init {
     Action_Bar::Create_Action_Bar(World::zone);
     Menu::Init();
     SQLite_Dialogue::Init_Dialogue();
+    Load_Object_List::Load_Entities();
     Video::Run_Audio("assets/music/nature.ogg");
   }
 

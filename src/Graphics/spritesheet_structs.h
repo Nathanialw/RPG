@@ -140,7 +140,7 @@ namespace Spritesheet_Structs {
     if (unitType == "tileset") {
       action = Action_Component::Action_State::isStatic;
       actionFrameData[action].frameSpeed = 75;
-      std::cout << "Success! " << templateName << " found " << "frame" << frame << std::endl;
+      // std::cout << "Success! " << templateName << " found " << "frame" << frame << std::endl;
       return true;
       
     }

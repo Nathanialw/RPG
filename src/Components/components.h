@@ -217,15 +217,60 @@ namespace Component {
     entt::entity list[10];
   };
 
-  enum class Entity_Type {
+  enum class Entity_Type {    
     unit,
     foliage,
     spell,    
     item,
     object,
-    prop
+    prop,
+    building,
+    SIZE
   };
 
+  enum class Object_Subtype{
+    interior,
+    exteior,
+    background,
+    foreground,
+    SIZE    
+  };
+  
+  enum class Units {
+    SIZE
+  };
+
+  enum class Foliage {
+    SIZE
+  };
+  
+  enum class Spells {
+    SIZE
+  };
+
+  enum class Items {
+    SIZE
+  };
+
+  enum class Objects {
+    food_table,
+    firepit,
+    SIZE
+  };
+  
+  enum class Props {
+    rug,
+    blood,
+    SIZE
+  };
+
+  enum class Buildings {
+    house,
+    wall,
+    tower,
+    SIZE
+  };
+  
   struct Entity_Interaction{
     entt::entity entity;
     Entity_Type type;
