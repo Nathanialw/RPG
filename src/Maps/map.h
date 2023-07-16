@@ -103,6 +103,10 @@ namespace Maps {
 		      templateName = qwe;
 		    }
 
+		    if (templateName == "Blood1 T1") {
+		      Utilities::Log("asd");
+		    }
+
 		    for (auto s: ffs.getTiles())
 		      {
 			collision_boxes = s.objectGroup.getObjects();
@@ -154,6 +158,7 @@ namespace Maps {
 
 		    std::string texture = templateTilesets.at(tilesetName).getImagePath();
 		    std::string temptexture = "assets/" + texture;
+		    Utilities::Log(texture);
 
 		    if (!Create_Entities::PVG_Building(World::zone, x, y, templateName, entity_class, texture, aabb, pointVecs, line)) {
 		      if (!Create_Entities::Polygon_Building(World::zone, x, y, templateName, entity_class, texture, aabb, pointVecs, line))

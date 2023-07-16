@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:7ded28a3e82bd2f022898824bae164ab:b023c37fc3aaeb94f56db72620378555:124b3bd0ff56be329062dd178e80040a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Props.png" width="255" height="1666">
+    <sprite n="Barrel 1.1" x="89" y="1370" w="78" h="34" oX="0" oY="0" oW="91" oH="34"/>
+    <sprite n="Barrel 1" x="115" y="1582" w="39" h="72" oX="0" oY="0" oW="67" oH="72"/>
+    <sprite n="Barrel 2" x="156" y="1624" w="32" h="41" oX="0" oY="0" oW="43" oH="41"/>
+    <sprite n="Barrel 3" x="40" y="1475" w="40" h="79" oX="0" oY="0" oW="72" oH="79"/>
+    <sprite n="Basket 2" x="167" y="1548" w="38" h="40" oX="0" oY="0" oW="45" oH="40"/>
+    <sprite n="Basket 3" x="143" y="1502" w="24" h="25" oX="0" oY="0" oW="29" oH="25"/>
+    <sprite n="Basket 4" x="224" y="165" w="30" h="35" oX="0" oY="0" oW="41" oH="35"/>
+    <sprite n="Basket 5" x="10" y="1548" w="28" h="30" oX="0" oY="0" oW="36" oH="30"/>
+    <sprite n="Basket" x="224" y="124" w="30" h="39" oX="0" oY="0" oW="40" oH="39"/>
+    <sprite n="Bucket" x="143" y="1529" w="22" h="31" oX="0" oY="0" oW="31" oH="31"/>
+    <sprite n="Campfire" x="207" y="1548" w="37" h="33" oX="0" oY="0" oW="43" oH="33"/>
+    <sprite n="Cart T1" x="1" y="1210" w="86" h="201" oX="0" oY="0" oW="110" oH="201"/>
+    <sprite n="Cart T2" x="1" y="94" w="221" h="91" oX="0" oY="0" oW="255" oH="91"/>
+    <sprite n="Cart T3" x="1" y="502" w="186" h="173" oX="0" oY="0" oW="212" oH="173"/>
+    <sprite n="Cart T4" x="1" y="187" w="190" h="166" oX="0" oY="0" oW="218" oH="166"/>
+    <sprite n="Cart T5" x="1" y="1" w="223" h="91" oX="0" oY="0" oW="247" oH="91"/>
+    <sprite n="Cart T6" x="1" y="677" w="186" h="152" oX="0" oY="0" oW="208" oH="152"/>
+    <sprite n="Cart T7" x="169" y="1377" w="85" h="169" oX="0" oY="0" oW="110" oH="169"/>
+    <sprite n="Cart T8" x="1" y="355" w="190" h="145" oX="0" oY="0" oW="214" oH="145"/>
+    <sprite n="Cauldron" x="37" y="1599" w="33" h="32" oX="0" oY="0" oW="40" oH="32"/>
+    <sprite n="Chopping Log T1" x="10" y="1580" w="25" h="51" oX="0" oY="0" oW="36" oH="51"/>
+    <sprite n="Chopping Log T2" x="226" y="74" w="28" h="48" oX="0" oY="0" oW="38" oH="48"/>
+    <sprite n="Chopping Log T3" x="207" y="1583" w="35" h="39" oX="0" oY="0" oW="45" oH="39"/>
+    <sprite n="Chopping Log T4" x="190" y="1624" w="30" h="34" oX="0" oY="0" oW="41" oH="34"/>
+    <sprite n="Cup" x="193" y="187" w="8" h="10" oX="0" oY="0" oW="9" oH="10"/>
+    <sprite n="Deer Skul" x="40" y="1556" w="40" h="41" oX="0" oY="0" oW="55" oH="41"/>
+    <sprite n="Fire Pit" x="1" y="831" w="185" h="99" oX="0" oY="0" oW="186" oH="99"/>
+    <sprite n="Grill" x="10" y="1633" w="37" h="32" oX="0" oY="0" oW="44" oH="32"/>
+    <sprite n="Leather T1" x="1" y="1413" w="85" h="60" oX="0" oY="0" oW="123" oH="60"/>
+    <sprite n="Leather T2" x="114" y="1077" w="62" h="95" oX="0" oY="0" oW="101" oH="95"/>
+    <sprite n="Leather T3" x="242" y="1202" w="9" h="111" oX="0" oY="0" oW="50" oH="111"/>
+    <sprite n="Leather T4" x="193" y="202" w="61" h="97" oX="0" oY="0" oW="100" oH="97"/>
+    <sprite n="Leather T5" x="170" y="1315" w="84" h="60" oX="0" oY="0" oW="123" oH="60"/>
+    <sprite n="Leather T6" x="193" y="301" w="61" h="96" oX="0" oY="0" oW="101" oH="96"/>
+    <sprite n="Leather T7" x="178" y="1153" w="62" h="95" oX="0" oY="0" oW="101" oH="95"/>
+    <sprite n="Stand T1" x="189" y="697" w="65" h="74" oX="0" oY="0" oW="80" oH="74"/>
+    <sprite n="Stand T2" x="189" y="773" w="63" h="81" oX="0" oY="0" oW="76" oH="81"/>
+    <sprite n="Stand T3" x="193" y="399" w="61" h="80" oX="0" oY="0" oW="80" oH="80"/>
+    <sprite n="Stand T4" x="189" y="618" w="65" h="77" oX="0" oY="0" oW="78" oH="77"/>
+    <sprite n="Stand T5" x="188" y="856" w="66" h="80" oX="0" oY="0" oW="81" oH="80"/>
+    <sprite n="Stand T6" x="184" y="938" w="63" h="77" oX="0" oY="0" oW="82" oH="77"/>
+    <sprite n="Stand T7" x="89" y="1406" w="60" h="80" oX="0" oY="0" oW="73" oH="80"/>
+    <sprite n="Stand T8" x="189" y="536" w="65" h="80" oX="0" oY="0" oW="82" oH="80"/>
+    <sprite n="Table T1" x="89" y="1333" w="79" h="35" oX="0" oY="0" oW="91" oH="35"/>
+    <sprite n="Table T2" x="180" y="1017" w="74" h="66" oX="0" oY="0" oW="86" oH="66"/>
+    <sprite n="Table T3" x="226" y="1" w="28" h="71" oX="0" oY="0" oW="39" oH="71"/>
+    <sprite n="Table T4" x="178" y="1085" w="73" h="66" oX="0" oY="0" oW="85" oH="66"/>
+    <sprite n="Test" x="89" y="1210" w="18" h="33" oX="0" oY="0" oW="31" oH="33"/>
+    <sprite n="Test1" x="1" y="1475" w="37" h="71" oX="0" oY="0" oW="67" oH="71"/>
+    <sprite n="Torch Stant T1" x="242" y="1153" w="12" h="47" oX="0" oY="0" oW="40" oH="47"/>
+    <sprite n="Torch Wall T1" x="89" y="1245" w="16" h="28" oX="0" oY="0" oW="30" oH="28"/>
+    <sprite n="Torch Wall T2" x="151" y="1470" w="13" h="30" oX="0" oY="0" oW="29" oH="30"/>
+    <sprite n="Torch Wall T3" x="151" y="1406" w="15" h="30" oX="0" oY="0" oW="31" oH="30"/>
+    <sprite n="Torch Wall T4" x="151" y="1438" w="15" h="30" oX="0" oY="0" oW="32" oH="30"/>
+    <sprite n="Vessel" x="49" y="1633" w="30" h="23" oX="0" oY="0" oW="35" oH="23"/>
+    <sprite n="Wattle Fence T1" x="89" y="1275" w="79" h="56" oX="0" oY="0" oW="116" oH="56"/>
+    <sprite n="Wattle Fence T2" x="82" y="1488" w="59" h="92" oX="0" oY="0" oW="94" oH="92"/>
+    <sprite n="Wattle Fence T3" x="1" y="1548" w="7" h="107" oX="0" oY="0" oW="45" oH="107"/>
+    <sprite n="Wattle Fence T4" x="110" y="1174" w="62" h="92" oX="0" oY="0" oW="94" oH="92"/>
+    <sprite n="Wood Stack T1" x="1" y="932" w="113" h="66" oX="0" oY="0" oW="134" oH="66"/>
+    <sprite n="Wood Stack T2" x="1" y="1000" w="111" h="101" oX="0" oY="0" oW="130" oH="101"/>
+    <sprite n="Wood Stack T3" x="116" y="967" w="62" h="108" oX="0" oY="0" oW="75" oH="108"/>
+    <sprite n="Wood Stack T4" x="1" y="1103" w="107" h="105" oX="0" oY="0" oW="124" oH="105"/>
+    <sprite n="Wood T1" x="81" y="1599" w="32" h="56" oX="0" oY="0" oW="39" oH="56"/>
+    <sprite n="Wood T2" x="174" y="1250" w="62" h="53" oX="0" oY="0" oW="67" oH="53"/>
+    <sprite n="Wood T3" x="116" y="932" w="66" h="33" oX="0" oY="0" oW="76" oH="33"/>
+    <sprite n="Wood T4" x="193" y="481" w="61" h="53" oX="0" oY="0" oW="68" oH="53"/>
+</TextureAtlas>

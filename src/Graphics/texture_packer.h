@@ -2,10 +2,19 @@
 #include <stdint.h>
 #include "../tinyxml2.h"
 #include "base_structs.h"
+#include "components.h"
 #include "graphics.h"
 #include "spritesheet_structs.h"
 #include <string>
+#include <vector>
 #include "SQLite_unit_data.h"
+
+// need the type of a unit
+//
+// 
+// use it to fund a random entity of that type
+
+//teh container array is the size of the number of Entity_Types, the inner vector is the number of entities in the db for each unit type saved as a string
 
 namespace Texture_Packer {
   ///on init we need to do it parse the SQLite db for all sprite sheets names "texture_packer" and use the result to preallocate all the nodes of the std::unordered_map
@@ -46,7 +55,7 @@ namespace Texture_Packer {
 	s = (const char *) image;
 	typeData.img_path = std::string(reinterpret_cast< const char *> (s));
       }
-    }
+    }    
     return typeData;
   }
 
@@ -158,6 +167,7 @@ namespace Texture_Packer {
     std::string xmlPathStr = "assets/" + data.xml;
     xmlPath = xmlPathStr.c_str();
 
+
     tinyxml2::XMLDocument spriteSheetData;
     spriteSheetData.LoadFile(xmlPath);
     tinyxml2::XMLElement *pSpriteElement;
@@ -197,11 +207,11 @@ namespace Texture_Packer {
 	spritesheet.frameList.emplace_back(frame);
 	frameIndex++;
 	///this grabs the next line
-          pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
+	pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
       }
     }
 
-      pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
+    pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
     bool indexFound = false;
     int frameIndex = 0;   
     while (pSpriteElement != NULL) {
@@ -211,8 +221,8 @@ namespace Texture_Packer {
 	buildingIndex = frameIndex;
 	break;
       }
-        frameIndex++;
-        pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
+      frameIndex++;
+      pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
     }
     
     if ( Packer_Textures[tilesetName].frameList.size() > 1) {
@@ -221,7 +231,7 @@ namespace Texture_Packer {
     else {    
       spritesheet.frameList.shrink_to_fit();
       Packer_Textures[tilesetName] = spritesheet;
-      //        spritesheet.color = Graphics::Set_Random_Color();
+      //spritesheet.color = Graphics::Set_Random_Color();
     }
     return &Packer_Textures;
   }

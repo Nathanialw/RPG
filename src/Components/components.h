@@ -220,9 +220,10 @@ namespace Component {
   enum class Entity_Type {
     unit,
     foliage,
-    spell,
-    melee,
-    item
+    spell,    
+    item,
+    object,
+    prop
   };
 
   struct Entity_Interaction{

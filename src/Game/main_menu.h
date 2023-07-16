@@ -101,7 +101,7 @@ namespace Main_Menu {
   //        }
   //    }
 
-  Menu Build_Menu(Menu &menu)
+  void Build_Menu(Menu &menu)
   {
     //        set first index position
     menu.buttons[0].size = UI::Center_Rect(menu.buttons[0].textSurface->clip_rect);
@@ -112,7 +112,6 @@ namespace Main_Menu {
 	menu.buttons[i].size = UI::Center_Rect(menu.buttons[i].textSurface->clip_rect);
 	menu.buttons[i].size.y = menu.buttons[i-1].size.y + menu.buttons[i-1].size.h + menu.spacing;;
       }
-    return menu;
   }
 
   void Create_Menu() {

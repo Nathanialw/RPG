@@ -1,5 +1,4 @@
 #!/bin/bash
 
 cmake --build debug
-./debug/RPG
-
+gdb ./debug/RPG

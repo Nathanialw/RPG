@@ -78,8 +78,9 @@ namespace Input_Control {
 	Component::Radius &targetRadius = zone.get<Component::Radius>(targetData.entity_ID);
 	switch (type) {
 	case Component::Entity_Type::foliage: break;
-	case Component::Entity_Type::melee: break;
 	case Component::Entity_Type::spell: break;
+	case Component::Entity_Type::object: break;
+	case Component::Entity_Type::prop: break;
 
 	case Component::Entity_Type::unit: {
 	  if (player_ID != targetData.entity_ID) {
@@ -125,8 +126,10 @@ namespace Input_Control {
 	Component::Radius &targetRadius = zone.get<Component::Radius>(targetData.entity_ID);
 	switch (type) {
 	case Component::Entity_Type::foliage: break;
-	case Component::Entity_Type::melee: break;
 	case Component::Entity_Type::spell: break;
+	case Component::Entity_Type::object: break;
+	case Component::Entity_Type::prop: break;
+	  
 	case Component::Entity_Type::unit: {
 	  if (player_ID != targetData.entity_ID) {
 	    // sent units to the unit
@@ -137,39 +140,38 @@ namespace Input_Control {
 	    return true;
 	  } else {
 	    //else I dont know, do whatever, move to the unit
-	    //                            User_Mouse_Input::Command_Unit_Move(zone);
-
-	    //  std::cout << "no target, 1 is targetting player: " << testasd(player_ID, targetData.entity_ID) << std::endl;
+	    //                            User_Mouse_Input::Command_Unit_Move(zone);	   
 	  }
-	}
 
-	case Component::Entity_Type::item: {
-	  if (!showGroundItems) {
-	    //send unit to go pick up item, and equip it maybe? maybe throw down what it is using, maybe create an interface to see the selected units equipped items ans inventory (I don't tihnk they have inventories yet)
+	  case Component::Entity_Type::item: {
+	    if (!showGroundItems) {
+	      //send unit to go pick up item, and equip it maybe? maybe throw down what it is using, maybe create an interface to see the selected units equipped items ans inventory (I don't tihnk they have inventories yet)
 
-	    //                        auto &radius = zone.get<Component::Radius>(player_ID).fRadius;
-	    //                        SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
-	    //                        SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
-	    //                        ///if player is next to the item
-	    //                        if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
-	    //                            ///pick up Item
-	    //                            Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
-	    //                            UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
-	    //                            ///stop movement
-	    //                            auto &action = zone.get<Component::Action>(player_ID);
-	    //                            action.state = Component::idle;
-	    //                            zone.remove<Component::Moving>(player_ID);
-	    //                            return true;
-	    //                        } else {
-	    //                            ///Move to Item then pick it up
-	    //                            Pick_Up_Item_Order(zone, player_ID, targetData.entity_ID, targetPosition.x, targetPosition.y);
-	    //                            return true;
-	    //                        }
-	  }
+	      //                        auto &radius = zone.get<Component::Radius>(player_ID).fRadius;
+	      //                        SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
+	      //                        SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
+	      //                        ///if player is next to the item
+	      //                        if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
+	      //                            ///pick up Item
+	      //                            Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
+	      //                            UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
+	      //                            ///stop movement
+	      //                            auto &action = zone.get<Component::Action>(player_ID);
+	      //                            action.state = Component::idle;
+	      //                            zone.remove<Component::Moving>(player_ID);
+	      //                            return true;
+	      //                        } else {
+	      //                            ///Move to Item then pick it up
+	      //                            Pick_Up_Item_Order(zone, player_ID, targetData.entity_ID, targetPosition.x, targetPosition.y);
+	      //                            return true;
+	      //                        }
+	    }
+	  }	
 	}
 	}
+	return false;
       }
     }
     return false;
-  }
+  }  
 }

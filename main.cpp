@@ -5,11 +5,11 @@
 
 int main(int argc, char* argv[]) {
 
-    srand((unsigned int)time(NULL));
+  srand((unsigned int)time(NULL));
 
-	Init::Init_Client();
-    Game_Loop::Game_Loop();
-    Close_Game::Close_Game();
+  Init::Init_Client();
+  Game_Loop::Game_Loop();
+  Close_Game::Close_Game();
 
-	return 0;
+  return 0;
 }

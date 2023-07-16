@@ -141,7 +141,7 @@ namespace Combat_Control {
         zone.emplace<Component::Weapon_Size>(aoeAttack, attackRect.x, attackRect.y, attackRect.w, attackRect.h); //set x, y to in front of char when he attacks
         zone.emplace<Component::Position>(aoeAttack, position);
         zone.emplace<Component::Alive>(aoeAttack, true);
-        zone.emplace<Component::Entity_Type>(aoeAttack, Component::Entity_Type::melee);
+        zone.emplace<Component::Entity_Type>(aoeAttack, Component::Entity_Type::spell);
     }
 
     void AttackSpeed_Updater(entt::registry &zone) {

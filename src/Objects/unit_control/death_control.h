@@ -70,8 +70,6 @@ namespace Death_Control {
 
 	Collision::world->DestroyBody(body);
 	World::zone.remove<Component::Body>(entity);
-	///set to remove from quad tree on update
-	//                SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
 	auto rect = zone.get<Component::Interaction_Rect>(entity).rect;
 
 	zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);
@@ -124,9 +122,6 @@ namespace Death_Control {
 	  offset = unitOffset;
 	  itemPosition = position;
 
-	  //                    renderRect.x = sheetData->at(name).frameList[frameIndex].x_offset * scale.scale - offset.x + position.x + 20.0f;
-	  //                    renderRect.y = sheetData->at(name).frameList[frameIndex].y_offset * scale.scale - offset.y + position.y + 20.0f;
-
 	  SDL_Rect clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].clip;
 	  SDL_FRect renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
 
@@ -169,11 +164,11 @@ namespace Death_Control {
   }
 
   void Set_As_Corpse (entt::registry &zone) {
-    auto view = zone.view<Component::Position, Action_Component::Action_State, Death_Component::Corpse, Rendering_Components::Sprite_Offset>();
+    auto view = zone.view<Component::Position, Action_Component::Action, Death_Component::Corpse, Rendering_Components::Sprite_Offset>();
     for (auto entity : view) {
       auto &position = view.get<Component::Position>(entity);
       auto &offset = view.get<Rendering_Components::Sprite_Offset>(entity);
-      auto &action = view.get<Action_Component::Action_State>(entity);
+      auto &action = view.get<Action_Component::Action>(entity);
 
       action.state = Action_Component::dead;
       

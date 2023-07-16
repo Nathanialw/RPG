@@ -134,7 +134,7 @@ namespace Graphics {
 
   void Create_Font()
   {
-    FC_LoadFont(fcFont, Graphics::renderer, "assets/fonts/FreeSans.ttf", 20, FC_MakeColor(0,0,0,255), TTF_STYLE_NORMAL);
+    FC_LoadFont(fcFont, Graphics::renderer, "assets/fonts/EagleLake-Regular.ttf", 20, FC_MakeColor(0,0,0,255), TTF_STYLE_NORMAL);
     font = TTF_OpenFont("assets/fonts/EagleLake-Regular.ttf", 30);
   }
 

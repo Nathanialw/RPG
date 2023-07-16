@@ -5,6 +5,7 @@ target_sources(RPG
         char_create.h
         game_loop.h
         close.h
+	load_object_list.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})
