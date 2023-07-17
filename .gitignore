@@ -12,11 +12,11 @@ CMakeFiles
 bin
 sprites/PVG_guides
 cmake-build-relwithdebinfo
-RPG_game
+RPG
 cmake_install.cmake
 CMakeCache.txt
 Makefile
-RPG_game.cbp
+RPG.cbp
 /.cmake/
 #*
 debug
