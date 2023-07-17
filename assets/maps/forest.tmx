@@ -1784,7 +1784,7 @@
   <object id="5006" template="../spawn_points/unit_spawns/Demons/Daemon_Infernum.tx" x="28164.7" y="26944.7"/>
   <object id="5008" template="../spawn_points/unit_spawns/monsters/ogres/RTP_Ogre.tx" x="29292.7" y="28014"/>
   <object id="5333" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_47.tx" x="43548" y="17588"/>
-  <object id="5474" template="../spawn_points/unit_spawns/2nd_cast/human/male/Male_Monk.tx" x="26586" y="25715">
+  <object id="5474" template="../spawn_points/unit_spawns/2nd_cast/human/male/Male_Monk.tx" x="25654.7" y="25425">
    <properties>
     <property name="player" type="bool" value="true"/>
    </properties>
@@ -1812,7 +1812,7 @@
   <object id="5637" template="../spawn_points/buildings/orc/village/Pallisade T1.tx" x="26261.8" y="25750.4"/>
   <object id="5639" template="../spawn_points/buildings/orc/village/Pallisade T1.tx" x="26586" y="25383.7"/>
   <object id="5640" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="26666.3" y="25188.2"/>
-  <object id="5641" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="26595.1" y="24895.8"/>
+  <object id="5641" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="26597.6" y="24891.3"/>
   <object id="5642" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="24484.5" y="24582.2"/>
   <object id="5643" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="24528.4" y="24853.4"/>
   <object id="5644" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="24576.9" y="25126.1"/>

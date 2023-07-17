@@ -23,6 +23,11 @@
  </tile>
  <tile id="3">
   <image width="154" height="158" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Cage T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="73" y="149">
+    <polygon points="0,0 -62.6667,-44 -4.66667,-83.3333 61,-40.6667"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="4">
   <image width="144" height="144" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Cage T5.png"/>
@@ -32,6 +37,11 @@
  </tile>
  <tile id="5">
   <image width="153" height="150" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Cage T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="132.667" y="86.3333">
+    <polygon points="0,0 -54,55.3333 -121.667,3 -67.6667,-36.3333"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="6">
   <image width="139" height="139" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Cage T7.png"/>
@@ -41,6 +51,11 @@
  </tile>
  <tile id="7">
   <image width="190" height="190" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Cage T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="91.6667" y="163">
+    <polygon points="0,0 -61,-47.6667 2.66667,-89.6667 63,-52.3333"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="8">
   <image width="115" height="89" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Campfire T1.png"/>
@@ -122,6 +137,11 @@
  </tile>
  <tile id="33">
   <image width="257" height="323" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Meat Stand T2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="14.6667" y="246">
+    <polygon points="0,0 86,71.3333 187.667,5.66667 109.333,-56"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="34">
   <image width="248" height="323" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Meat Stand T3.png"/>
@@ -131,6 +151,11 @@
  </tile>
  <tile id="35">
   <image width="259" height="352" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Meat Stand T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="116.333" y="347.333">
+    <polygon points="0,0 86,-77 6.66667,-147 -72,-94"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="36">
   <image width="230" height="317" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Meat Stand T5.png"/>
@@ -140,6 +165,11 @@
  </tile>
  <tile id="37">
   <image width="255" height="317" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Meat Stand T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="82.6667" y="310.667">
+    <polygon points="0,0 117.667,-61.3333 30.6667,-111 -62,-60.3333"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="38">
   <image width="246" height="320" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Meat Stand T7.png"/>
@@ -149,6 +179,11 @@
  </tile>
  <tile id="39">
   <image width="248" height="350" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Meat Stand T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="102.667" y="342">
+    <polygon points="0,0 84,-60.6667 10,-121.667 -72.6667,-78.6667"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="40">
   <image width="395" height="212" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 1 T1.png"/>
@@ -158,6 +193,11 @@
  </tile>
  <tile id="41">
   <image width="358" height="336" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 1 T2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="116.5" y="328.5">
+    <polygon points="0,0 232,-174 127,-250 -113.5,-94"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="42">
   <image width="272" height="360" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 1 T3.png"/>
@@ -167,6 +207,11 @@
  </tile>
  <tile id="43">
   <image width="357" height="336" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 1 T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="251" y="327">
+    <polygon points="0,0 91.5,-114 -138.5,-261.5 -248,-159"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="44">
   <image width="395" height="212" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 1 T5.png"/>
@@ -176,6 +221,11 @@
  </tile>
  <tile id="45">
   <image width="365" height="326" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 1 T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="122.5" y="312.5">
+    <polygon points="0,0 214.5,-164.5 107.5,-253.5 -111,-88.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="46">
   <image width="271" height="345" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 1 T7.png"/>
@@ -185,6 +235,11 @@
  </tile>
  <tile id="47">
   <image width="358" height="326" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 1 T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="233.5" y="315.5">
+    <polygon points="0,0 115,-99.5 -108.5,-268.5 -230,-153.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="48">
   <image width="291" height="259" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 2 T1.png"/>
@@ -298,6 +353,11 @@
  </tile>
  <tile id="73">
   <image width="317" height="290" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 5 T2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="133" y="280.5">
+    <polygon points="0,0 157.5,-123 74.5,-196.5 -98.5,-94"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="74">
   <image width="206" height="314" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 5 T3.png"/>
@@ -307,6 +367,11 @@
  </tile>
  <tile id="75">
   <image width="315" height="290" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 5 T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="276.5" y="186.5">
+    <polygon points="0,0 -119.5,97 -262.5,-16 -166.5,-93"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="76">
   <image width="340" height="196" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 5 T5.png"/>
@@ -316,6 +381,11 @@
  </tile>
  <tile id="77">
   <image width="311" height="285" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 5 T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="289.5" y="161">
+    <polygon points="0,0 -162.5,120.5 -256.5,29 -102.5,-69.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="78">
   <image width="202" height="317" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 5 T7.png"/>
@@ -325,6 +395,11 @@
  </tile>
  <tile id="79">
   <image width="313" height="286" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 5 T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="286.5" y="193.5">
+    <polygon points="0,0 -128.5,89.5 -268,-29 -181.5,-95.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="80">
   <image width="248" height="321" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 6 T1.png"/>
@@ -334,6 +409,11 @@
  </tile>
  <tile id="81">
   <image width="320" height="305" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 6 T2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="311" y="217.5">
+    <polygon points="0,0 -113,82 -308.5,-69.5 -207,-123.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="82">
   <image width="357" height="227" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 6 T3.png"/>
@@ -343,6 +423,11 @@
  </tile>
  <tile id="83">
   <image width="329" height="302" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 6 T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="299.5" y="152">
+    <polygon points="0,0 -196,144.5 -291,63.5 -101.5,-59.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="84">
   <image width="249" height="324" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 6 T5.png"/>
@@ -352,6 +437,11 @@
  </tile>
  <tile id="85">
   <image width="320" height="327" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 6 T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="307" y="235.5">
+    <polygon points="0,0 -101,83 -300.5,-66 -208,-131"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="86">
   <image width="358" height="263" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 6 T7.png"/>
@@ -361,6 +451,11 @@
  </tile>
  <tile id="87">
   <image width="329" height="323" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Tent 6 T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="307.5" y="168">
+    <polygon points="0,0 -202,148 -299.5,68.5 -107,-59"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="88">
   <image width="213" height="251" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T1.png"/>
@@ -370,6 +465,11 @@
  </tile>
  <tile id="89">
   <image width="275" height="242" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="244" y="172.5">
+    <polygon points="0,0 -108,72 -238,-33.5 -154.5,-84.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="90">
   <image width="324" height="193" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T3.png"/>
@@ -379,6 +479,11 @@
  </tile>
  <tile id="91">
   <image width="287" height="237" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="245.5" y="153.5">
+    <polygon points="0,0 -139.5,79.5 -236,30 -89,-45.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="92">
   <image width="213" height="242" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T5.png"/>
@@ -388,6 +493,11 @@
  </tile>
  <tile id="93">
   <image width="276" height="245" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="264" y="174.5">
+    <polygon points="0,0 -114.5,67.5 -253,-32.5 -146.5,-83"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="94">
   <image width="324" height="193" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T7.png"/>
@@ -397,6 +507,11 @@
  </tile>
  <tile id="95">
   <image width="287" height="240" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="254.5" y="149">
+    <polygon points="0,0 -176,89 -250,20.5 -91.5,-60.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="96">
   <image width="187" height="95" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Palisade T1.png"/>
@@ -406,6 +521,11 @@
  </tile>
  <tile id="97">
   <image width="143" height="144" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Palisade T2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="121.5" y="80.5">
+    <polygon points="0,0 -87.5,60.5 -114,37.5 -20.5,-19.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="98">
   <image width="108" height="165" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Palisade T3.png"/>
@@ -415,6 +535,14 @@
  </tile>
  <tile id="99">
   <image width="154" height="156" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Palisade T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="125" y="124.5">
+    <polygon points="0,0 -58,28 -51,-35.5"/>
+   </object>
+   <object id="2" x="69.5" y="86.5">
+    <polygon points="0,0 -63.5,7 -36.5,-30"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="100">
   <image width="176" height="113" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Palisade T5.png"/>
@@ -424,6 +552,14 @@
  </tile>
  <tile id="101">
   <image width="155" height="158" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Palisade T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="73.5" y="149.5">
+    <polygon points="0,0 -8.5,-55.5 -47.5,-26.5"/>
+   </object>
+   <object id="2" x="142" y="96.5">
+    <polygon points="0,0 -65,-12.5 -25,-43"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="102">
   <image width="88" height="167" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Palisade T7.png"/>
@@ -433,6 +569,11 @@
  </tile>
  <tile id="103">
   <image width="155" height="146" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Palisade T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="107" y="140">
+    <polygon points="0,0 -107,-80 -82,-98 17.5,-17"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="104">
   <image width="389" height="113" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Pallisade T1.png"/>
@@ -492,62 +633,178 @@
  </tile>
  <tile id="112">
   <image width="337" height="135" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Spit Roast T1.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="46" y="125.5">
+    <polygon points="0,0 101.5,-78.5 3,-85"/>
+   </object>
+   <object id="2" x="157" y="44.5">
+    <polygon points="0,0 109.5,77.5 109.5,-8"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="113">
   <image width="255" height="239" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Spit Roast T2.png"/>
+  <objectgroup draworder="index" id="3">
+   <object id="2" x="224" y="116.5">
+    <polygon points="0,0 -56,-49 -113.5,8"/>
+   </object>
+   <object id="3" x="74.5" y="234">
+    <polygon points="0,0 -64,-52.5 34,-108"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="114">
   <image width="139" height="263" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Spit Roast T3.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="113" y="250">
+    <polygon points="0,0 -52.5,-121 -97.5,4"/>
+   </object>
+   <object id="2" x="102" y="96.5">
+    <polygon points="0,0 -42,31.5 -72.5,-2"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="115">
   <image width="262" height="241" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Spit Roast T4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="169" y="232.5">
+    <polygon points="0,0 -46.5,-111 58,-56.5"/>
+   </object>
+   <object id="2" x="117.5" y="117">
+    <polygon points="0,0 -111,-4 -43,-42.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="116">
   <image width="334" height="141" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Spit Roast T5.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="46.5" y="133">
+    <polygon points="0,0 103,-61 5,-70.5"/>
+   </object>
+   <object id="2" x="278.5" y="132.5">
+    <polygon points="0,0 -116.5,-62.5 -9,-62"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="117">
   <image width="252" height="248" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Spit Roast T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="68.5" y="239.5">
+    <polygon points="0,0 40,-100.5 -49.5,-57"/>
+   </object>
+   <object id="2" x="114.5" y="133">
+    <polygon points="0,0 114.5,-16 53,-55.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="118">
   <image width="139" height="267" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Spit Roast T7.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="103" y="264">
+    <polygon points="0,0 -42.5,-97.5 -91,-7.5"/>
+   </object>
+   <object id="2" x="91" y="90">
+    <polygon points="0,0 -28,69 -67.5,8"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="119">
   <image width="268" height="241" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Spit Roast T8.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="162" y="231.5">
+    <polygon points="0,0 -35.5,-108.5 62.5,-47"/>
+   </object>
+   <object id="2" x="123" y="121.5">
+    <polygon points="0,0 -113.5,-5.5 -52.5,-47.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="120">
   <image width="357" height="242" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Tanning Rack T1.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="60" y="139" width="213" height="89"/>
+   <object id="2" x="65" y="120.5">
+    <polygon points="0,0 100.5,75.5 -5.5,115.5"/>
+   </object>
+   <object id="3" x="273" y="238.5">
+    <polygon points="0,0 -102,-45.5 -9.5,-127.5"/>
+   </object>
   </objectgroup>
  </tile>
  <tile id="121">
   <image width="285" height="326" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Tanning Rack T2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="23.5" y="247">
+    <polygon points="0,0 145,-18 83,74"/>
+   </object>
+   <object id="2" x="175" y="225">
+    <polygon points="0,0 2.5,-84.5 72,-17"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="122">
   <image width="183" height="328" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Tanning Rack T3.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="12" y="156" width="126" height="163"/>
+   <object id="1" x="12.5" y="318.5">
+    <polygon points="0,0 96.5,-107.5 129.5,3.5"/>
+   </object>
+   <object id="2" x="114" y="203.5">
+    <polygon points="0,0 -87,-34.5 26,-50"/>
+   </object>
   </objectgroup>
  </tile>
  <tile id="123">
   <image width="293" height="314" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Tanning Rack T4.png"/>
+  <objectgroup draworder="index" id="3">
+   <object id="2" x="234" y="236">
+    <polygon points="0,0 -87,71 -79,-70.5"/>
+   </object>
+   <object id="3" x="148" y="162">
+    <polygon points="0,0 -133,27.5 -54,-31.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="124">
   <image width="358" height="217" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Tanning Rack T5.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="57" y="116" width="213" height="84"/>
+   <object id="1" x="58.5" y="202">
+    <polygon points="0,0 95.5,-88 9,-83.5"/>
+   </object>
+   <object id="2" x="263.5" y="207.5">
+    <polygon points="0,0 -105.5,-96.5 -4,-91"/>
+   </object>
   </objectgroup>
  </tile>
  <tile id="125">
   <image width="283" height="309" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Tanning Rack T6.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="89.5" y="304.5">
+    <polygon points="0,0 8.5,-139.5 -83.5,-72"/>
+   </object>
+   <object id="2" x="240.5" y="188">
+    <polygon points="0,0 -133.5,-20.5 -79.5,-53"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="126">
   <image width="196" height="315" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Tanning Rack T7.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="9" y="152" width="128" height="153"/>
+   <object id="1" x="135.5" y="305.5">
+    <polygon points="0,0 -106,-92 -121,3"/>
+   </object>
+   <object id="2" x="134" y="156.5">
+    <polygon points="0,0 -104,51.5 -99.5,-13.5"/>
+   </object>
   </objectgroup>
  </tile>
  <tile id="127">
   <image width="295" height="313" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Tanning Rack T8.png"/>
+  <objectgroup draworder="index" id="3">
+   <object id="3" x="233" y="232">
+    <polygon points="0,0 -143.5,-19 -82.5,73.5"/>
+   </object>
+   <object id="5" x="96" y="138.5">
+    <polygon points="0,0 -10,68 -86.5,50.5"/>
+   </object>
+  </objectgroup>
  </tile>
 </tileset>
