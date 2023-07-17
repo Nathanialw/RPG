@@ -58,18 +58,18 @@ namespace Create_Entities {
   }
 
   void Set_Collision_Box (entt::registry &zone, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
-    if (entity_class == "polygon_building") {
+    if (entity_class == "polygon") {
       Collision::Create_Static_Body_Polygon(zone, entity, position.x, position.y, pointVecs);
       zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
       zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
       zone.emplace<Component::Line_Segment>(entity, line);
     }
-    else if (entity_class == "rect_building") {
+    else if (entity_class == "rect") {
       Collision::Create_Static_Body_Rect(zone, entity, position.x, position.y, aabb);
       zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
       zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
     }
-    else if (entity_class == "round_building") {
+    else if (entity_class == "round") {
       Collision::Create_Static_Body(zone, entity, position.x, position.y, radius);
       zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
       zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
@@ -115,13 +115,13 @@ namespace Create_Entities {
       sprite.type = sheetDataFlare.sheet_type;
       zone.emplace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
-      Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line, data.radius);
+      Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       return true;
     }
     return false;
   }
 
-  bool PVG_Building(entt::registry& zone, float x, float y, std::string &templateName, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+  bool PVG_Building(entt::registry& zone, float x, float y, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 
@@ -136,17 +136,23 @@ namespace Create_Entities {
       std::string sheetname = Entity_Loader::Get_Sprite_Sheet(templateName);
 
       ///run texture packer
-      int buildingIndex;
       std::string tilesetName;
-      packerframeData = Texture_Packer::TexturePacker_Import_Tileset(templateName, data, Graphics::unitTextures[unit_ID], buildingIndex, tilesetName);
+      packerframeData = Texture_Packer::TexturePacker_Import_Tileset(templateName, data, Graphics::unitTextures[unit_ID], tilesetName);
 
       //Add shared components
       auto &position = zone.emplace<Component::Position>(entity, x, y);
       auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
       auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
 
-      /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
-      zone.emplace<Component::Direction>(entity, Component::Direction::W);
+      // if items is background DO NOT set Direction component
+      if (data.collider_type != "background") {
+	/// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
+	zone.emplace<Component::Direction>(entity, Component::Direction::W);
+      }
+      else {
+        zone.emplace<Rendering_Components::Background>(entity);
+      }
+      
       zone.emplace<Component::Name>(entity, templateName);
       zone.emplace<Component::Mass>(entity, 100.0f);
       zone.emplace<Component::Alive>(entity, true);
@@ -155,11 +161,11 @@ namespace Create_Entities {
       sprite.sheetData = packerframeData;
       sprite.sheet_name = tilesetName;
       sprite.type = "RPG_Tools";
-      sprite.frameIndex = buildingIndex;
+      sprite.frameIndex = xmlIndex;
 
-      Set_Collision_Box(zone, entity, entity_class, position, aabb, pointVecs, line, data.radius);
-      Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(buildingIndex);
-      zone.emplace<Rendering_Components::Sprite_Offset>(entity, (float)frame.clip.w /2.0f + frame.x_offset, (float)frame.clip.h /2.0f + frame.y_offset);
+      Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+      Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(xmlIndex);
+      zone.emplace<Rendering_Components::Sprite_Offset>(entity, ((float)frame.clip.w /2.0f) + frame.x_offset, ((float)frame.clip.h) - frame.y_offset);
       return true;
     }
     return false;

@@ -92,25 +92,33 @@ namespace Maps {
 
 		    auto ffs = templateTilesets.at(tilesetName);
 		    std::string templateName = ffs.getName();
+            u_int32_t tilesetIndex = 0;
 
 		    auto fas = ffs.getTiles();
-		    if (fas.size() > 1) {
-		      auto asa = fas.at(object.getTileID() - 1);
+
+            if (fas.size() > 1) {
+                auto asa = fas.at(object.getTileID() - 1);
+                tilesetIndex = fas.at(object.getTileID() - 1).ID;
 		      std::string templateFile = asa.imagePath.substr(asa.imagePath.find_last_of("/\\") + 1);
 		      std::string::size_type const p(templateFile.find_last_of('.'));
 		      std::string qwe = templateFile.substr(0, p);
+
 		      // Utilities::Log(qwe);
 		      templateName = qwe;
 		    }
+            if (templateName == "Orc Tent 2 T3") {
+                Utilities::Log(templateName);
+            }
 
-		    for (auto s: ffs.getTiles())
-		      {
-			collision_boxes = s.objectGroup.getObjects();
-			float sizeX = s.imageSize.x;
-			float sizeY = s.imageSize.y;
+
+            if (ffs.getTiles().size() > tilesetIndex) {
+                auto s = ffs.getTiles().at(tilesetIndex);
+                collision_boxes = s.objectGroup.getObjects();
+                float sizeX = s.imageSize.x;
+                float sizeY = s.imageSize.y;
 
 			int j = 0;
-			for (auto rects: collision_boxes)
+			for (auto rects : collision_boxes)
 			  {
 			    aabb.hx = rects.getAABB().width / 2.0f;
 			    aabb.hy = rects.getAABB().height / 2.0f;
@@ -135,6 +143,7 @@ namespace Maps {
 				pointVecs.emplace_back(pointVec);
 			      }
 			  }
+
 		      }
 
 		    bool player = false;
@@ -156,7 +165,7 @@ namespace Maps {
 		    std::string temptexture = "assets/" + texture;
 		    // Utilities::Log(texture);
 
-		    if (!Create_Entities::PVG_Building(World::zone, x, y, templateName, entity_class, texture, aabb, pointVecs, line)) {
+		    if (!Create_Entities::PVG_Building(World::zone, x, y, templateName, tilesetIndex, aabb, pointVecs, line)) {
 		      if (!Create_Entities::Polygon_Building(World::zone, x, y, templateName, entity_class, texture, aabb, pointVecs, line))
 			{
 			  Create_Entities::Create_Entity(World::zone, x, y, templateName, entity_class, is_random, texture, player);

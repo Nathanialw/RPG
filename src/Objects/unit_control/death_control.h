@@ -173,16 +173,14 @@ namespace Death_Control {
       auto &action = view.get<Action_Component::Action>(entity);
 
       action.state = Action_Component::dead;
-      //spawn blood under the corpse
-      //get a random index from bloodfVec
-        std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
+      
+      std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
         Collision::aabb aabb;
         Component::Line_Segment line;
-        std::string filepath = "";
-      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects::bloodVec[12], "", filepath, aabb, pointVecs, line);
-//        zone.emplace<Rendering_Components::Background>(entity);
-//        zone.remove<Component::Direction>(entity);
 
+      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects::bloodVec[30], 30, aabb, pointVecs, line);
+      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects::bloodVec[12], 12, aabb, pointVecs, line);
+      
       position.x -= offset.x;
       position.y -= offset.y;
       offset.x = 0.0f;

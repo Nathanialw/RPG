@@ -145,7 +145,7 @@ namespace Texture_Packer {
     return &Packer_Textures;
   }
 
-  std::unordered_map<std::string, Rendering_Components::Sheet_Data>* TexturePacker_Import_Tileset(std::string &templateName, Entity_Loader::Building_Data data, SDL_Texture* texture, int &buildingIndex, std::string &tilesetName) {
+  std::unordered_map<std::string, Rendering_Components::Sheet_Data>* TexturePacker_Import_Tileset(std::string &templateName, Entity_Loader::Building_Data data, SDL_Texture* texture, std::string &tilesetName) {
     //loads xml and image from db, only do once per xml
 
     ///get path from db
@@ -191,7 +191,6 @@ namespace Texture_Packer {
     }    
 
     if (Packer_Textures[tilesetName].frameList.size() < 1) {
-      bool indexFound = false;
       int frameIndex = 0;   
       while (pSpriteElement != NULL) {
 	///get frame data for each state
@@ -211,20 +210,6 @@ namespace Texture_Packer {
       }
     }
 
-    pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
-    bool indexFound = false;
-    int frameIndex = 0;   
-    while (pSpriteElement != NULL) {
-      ///get frame data for each state
-      std::string n = pSpriteElement->Attribute("n");
-      if (Spritesheet_Structs::Get_Tileset_Frame_Data(templateName, n, spritesheet.actionFrameData)) {
-	buildingIndex = frameIndex;
-	break;
-      }
-      frameIndex++;
-      pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
-    }
-    
     if ( Packer_Textures[tilesetName].frameList.size() > 1) {
       return &Packer_Textures;
     }
