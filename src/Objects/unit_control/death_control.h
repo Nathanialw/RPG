@@ -88,7 +88,6 @@ namespace Death_Control {
 	zone.remove<Component::Radius>(entity);
 	zone.remove<Collision_Component::Dynamic_Collider>(entity);
 
-
 	if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
 	  auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);
 	  auto &soldier_list = zone.get<Test::Soldiers_Assigned_List>(soldier.iUnit_Assigned_To);
@@ -128,7 +127,6 @@ namespace Death_Control {
 	  SDL_FRect renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
 
 	  World::zone.emplace<Item_On_Corpse>(item.second, entity, item.first);
-
 
 	  SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect);
 	  SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
@@ -175,18 +173,18 @@ namespace Death_Control {
       action.state = Action_Component::dead;
       
       std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
-        Collision::aabb aabb;
-        Component::Line_Segment line;
+      Collision::aabb aabb;
+      Component::Line_Segment line;
 
-      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects::bloodVec[30], 30, aabb, pointVecs, line);
-      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects::bloodVec[12], 12, aabb, pointVecs, line);
+      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodVec[12], 12, aabb, pointVecs, line);
+      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodVec[4], 4, aabb, pointVecs, line);
       
       position.x -= offset.x;
       position.y -= offset.y;
       offset.x = 0.0f;
       offset.y = 0.0f;
-      zone.remove<Death_Component::Corpse>(entity);
 
+      zone.remove<Death_Component::Corpse>(entity);
     }
   }
 
@@ -197,7 +195,6 @@ namespace Death_Control {
       auto &groundBox = view.get<Item_Component::Ground_Item>(entity).box;
       
       groundBox = interactionRect;
-
       //            zone.remove<Item_Component::Update_Ground_Item>(entity);
     }
   }

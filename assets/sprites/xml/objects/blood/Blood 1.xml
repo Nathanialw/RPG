@@ -20,14 +20,14 @@ verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
 triangles  => sprite triangulation, 3 vertex indices per triangle
 -->
 <TextureAtlas imagePath="Blood 1.png" width="1016" height="764">
-    <sprite n="Blood T" x="1" y="1" w="156" h="63"/>
-    <sprite n="Blood T2" x="587" y="170" w="146" h="104"/>
-    <sprite n="Blood T3" x="609" y="276" w="99" h="113"/>
-    <sprite n="Blood T4" x="710" y="283" w="151" h="110"/>
-    <sprite n="Blood T5" x="159" y="1" w="168" h="65"/>
-    <sprite n="Blood T6" x="301" y="266" w="144" h="111"/>
-    <sprite n="Blood T7" x="607" y="391" w="98" h="114"/>
-    <sprite n="Blood T8" x="151" y="162" w="149" h="98"/>
+    <sprite n="Blood0 T" x="1" y="1" w="156" h="63"/>
+    <sprite n="Blood0 T2" x="587" y="170" w="146" h="104"/>
+    <sprite n="Blood0 T3" x="609" y="276" w="99" h="113"/>
+    <sprite n="Blood0 T4" x="710" y="283" w="151" h="110"/>
+    <sprite n="Blood0 T5" x="159" y="1" w="168" h="65"/>
+    <sprite n="Blood0 T6" x="301" y="266" w="144" h="111"/>
+    <sprite n="Blood0 T7" x="607" y="391" w="98" h="114"/>
+    <sprite n="Blood0 T8" x="151" y="162" w="149" h="98"/>
     <sprite n="Blood1 T1" x="452" y="80" w="155" h="87"/>
     <sprite n="Blood1 T2" x="735" y="177" w="129" h="104"/>
     <sprite n="Blood1 T3" x="452" y="169" w="133" h="101"/>

@@ -14,6 +14,7 @@
 #include "ui_actionbar.h"
 #include "procedural_generator.h"
 #include <cstddef>
+#include <stddef.h>
 #include <type_traits>
 
 
@@ -144,15 +145,6 @@ namespace Create_Entities {
       auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
       auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
 
-      // if items is background DO NOT set Direction component
-      if (data.collider_type != "background") {
-	/// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
-	zone.emplace<Component::Direction>(entity, Component::Direction::W);
-      }
-      else {
-        zone.emplace<Rendering_Components::Background>(entity);
-      }
-      
       zone.emplace<Component::Name>(entity, templateName);
       zone.emplace<Component::Mass>(entity, 100.0f);
       zone.emplace<Component::Alive>(entity, true);
@@ -162,10 +154,23 @@ namespace Create_Entities {
       sprite.sheet_name = tilesetName;
       sprite.type = "RPG_Tools";
       sprite.frameIndex = xmlIndex;
-
       Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+
       Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(xmlIndex);
-      zone.emplace<Rendering_Components::Sprite_Offset>(entity, ((float)frame.clip.w /2.0f) + frame.x_offset, ((float)frame.clip.h) - frame.y_offset);
+      auto &offset = zone.emplace<Rendering_Components::Sprite_Offset>(entity, ((float)frame.clip.w /2.0f) + frame.x_offset, ((float)frame.clip.h / 2.0f) + frame.y_offset);
+
+      if (data.collider_type != "background") {	
+	/// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
+    	zone.emplace<Component::Direction>(entity, Component::Direction::W);
+      }
+      // if items a background sprite DO NOT set Direction component
+      else {
+	position.x -= offset.x;
+	position.y -= offset.y;
+	offset.x = 0.0f;
+	offset.y = 0.0f;
+    zone.emplace<Rendering_Components::Background>(entity);
+      }            
       return true;
     }
     return false;
