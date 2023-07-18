@@ -159,17 +159,22 @@ namespace Create_Entities {
       Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(xmlIndex);
       auto &offset = zone.emplace<Rendering_Components::Sprite_Offset>(entity, ((float)frame.clip.w /2.0f) + frame.x_offset, ((float)frame.clip.h / 2.0f) + frame.y_offset);
 
-      if (data.collider_type != "background") {	
-	/// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
-    	zone.emplace<Component::Direction>(entity, Component::Direction::W);
-      }
-      // if items a background sprite DO NOT set Direction component
-      else {
+      if (data.collider_type == "background") {	
 	position.x -= offset.x;
 	position.y -= offset.y;
 	offset.x = 0.0f;
 	offset.y = 0.0f;
-    zone.emplace<Rendering_Components::Background>(entity);
+	zone.emplace<Rendering_Components::Background>(entity);
+      }
+      else if (data.collider_type == "foreground"){
+	position.x -= offset.x;
+	position.y -= offset.y;
+	offset.x = 0.0f;
+	offset.y = 0.0f;
+      }
+      // if items a background sprite DO NOT set Direction component
+      else {
+	zone.emplace<Component::Direction>(entity, Component::Direction::W);	
       }            
       return true;
     }

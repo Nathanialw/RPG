@@ -137,17 +137,19 @@ namespace Entity_Loader {
     return raceData;
   }
 
-  std::vector<std::string> Get_Names_Of_SubType(std::string type, std::string race) {
-    std::string class_name = db::Append_Quotes(type);
+  std::vector<std::string> Get_Names_Of_SubType(std::string race, std::string type, std::string subtype, std::string collider_type) {
     std::string race_name = db::Append_Quotes(race);
-    std::string text = class_name + " AND race = " + race_name;
+    std::string type_name = db::Append_Quotes(type);
+    std::string class_name = db::Append_Quotes(subtype);
+    std::string subtype_name = db::Append_Quotes(collider_type);
+    std::string text = race_name + " AND type = " + type_name + " AND subtype = " + class_name + " AND collider_type = " + subtype_name; 
     std::vector<std::string> db_name;
 
     const unsigned char* name;
     sqlite3_stmt* stmt;
     char buf[300];
 
-    const char* jj = "SELECT name FROM buildings WHERE subtype = ";
+    const char* jj = "SELECT name FROM buildings WHERE race = ";
     strcpy(buf, jj);
     strcat(buf, text.c_str());
 
@@ -172,7 +174,7 @@ namespace Entity_Loader {
 
 
    */
-std::vector<std::string> Get_All_Names_Of_SubType(std::string &type) {
+  std::vector<std::string> Get_All_Names_Of_SubType(std::string &type) {
     std::string class_name = db::Append_Quotes(type);
     std::vector<std::string> db_name;
 
@@ -194,7 +196,7 @@ std::vector<std::string> Get_All_Names_Of_SubType(std::string &type) {
     return db_name;
   }
   
-std::vector<std::string> Get_All_Subtype_Of_Type(std::string &type) {
+  std::vector<std::string> Get_All_Subtype_Of_Type(std::string &type) {
     std::string class_name = db::Append_Quotes(type);
     std::vector<std::string> db_name;
 
@@ -238,7 +240,7 @@ std::vector<std::string> Get_All_Subtype_Of_Type(std::string &type) {
     return db_name;
   }
 
-    std::vector<std::string> Get_All_Of_Races() {// needs to search for  a specific row that I can input in the arguments
+  std::vector<std::string> Get_All_Of_Races() {// needs to search for  a specific row that I can input in the arguments
     std::vector<std::string> db_name;
     const unsigned char* name;
     sqlite3_stmt* stmt;
@@ -431,7 +433,7 @@ std::vector<std::string> Get_All_Subtype_Of_Type(std::string &type) {
     //check if the name exists??
     std::string unit_name = db::Append_Quotes(name);
     Building_Data data;
-      const unsigned char* text;
+    const unsigned char* text;
 
     sqlite3_stmt* stmt;
     char buf[300];
@@ -440,15 +442,15 @@ std::vector<std::string> Get_All_Subtype_Of_Type(std::string &type) {
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
     while (sqlite3_step(stmt) != SQLITE_DONE) {
-        text = sqlite3_column_text(stmt, 0);
+      text = sqlite3_column_text(stmt, 0);
       data.collider_type = Get_String(text);
 
-        data.radius = (float)sqlite3_column_double(stmt, 1);
+      data.radius = (float)sqlite3_column_double(stmt, 1);
 
-       text = sqlite3_column_text(stmt, 2);
+      text = sqlite3_column_text(stmt, 2);
       data.sprite_layout = Get_String(text);
 
-        text = sqlite3_column_text(stmt, 3);
+      text = sqlite3_column_text(stmt, 3);
       data.xml = Get_String(text);
 
       text = sqlite3_column_text(stmt, 4);

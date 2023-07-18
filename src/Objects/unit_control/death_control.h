@@ -181,10 +181,10 @@ namespace Death_Control {
       Collision::aabb aabb;
       Component::Line_Segment line;
 
+      // spawn blood
       int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodPoolVec.size() - 1);
-      int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
-	
       Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodPoolVec[poolIndex], poolIndex, aabb, pointVecs, line);
+      int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
       Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line);
       
       position.x -= offset.x;

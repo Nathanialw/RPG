@@ -94,8 +94,6 @@ namespace Load_Object_List {
     std::vector<std::string> empty;
     return empty;
   }
-  
-  // race >> type >> subtype
 
   using namespace Social_Component;
   using namespace Component;
@@ -112,7 +110,6 @@ namespace Load_Object_List {
     return gameObjects[(int)type][(int)race][(int)unitType];
   };
   
-  
   void Load_Entities () {
     // auto races = Entity_Loader::Get_All_Of_Races();
     // for (auto race : races) {
@@ -127,20 +124,8 @@ namespace Load_Object_List {
     // 	}
     //   }
     // }
-    Game_Objects_Lists::bloodPoolVec = Entity_Loader::Get_Names_Of_SubType("blood_pool", "neutral");
-    Game_Objects_Lists::bloodSplatterVec = Entity_Loader::Get_Names_Of_SubType("blood_splatter", "neutral");
-
-    Utilities::Log("pool");
-    for (auto i : Game_Objects_Lists::bloodPoolVec) {
-      Utilities::Log(i);
-    }
-    Utilities::Log("spatter");
-    for (auto i : Game_Objects_Lists::bloodSplatterVec) {
-      Utilities::Log(i);
-    }
+    Game_Objects_Lists::bloodPoolVec = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "background");
+    Game_Objects_Lists::bloodSplatterVec = Entity_Loader::Get_Names_Of_SubType( "neutral", "prop", "blood", "foreground");
   }
-  
-
-
 }
 
