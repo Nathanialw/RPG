@@ -7,6 +7,7 @@
 #include <unordered_map>
 #include "graphics.h"
 #include "ui_elements.h"
+#include "utilities.h"
 
 namespace Unit_Frames {
 
@@ -26,7 +27,8 @@ namespace Unit_Frames {
   };
 
   // std::unordered_map<entt::entity, UI_Frame> frames;
-  UI_Frame frame;
+  UI_Frame targetFrame;
+
   
   void Update_Frame_Health(Frame_Element &frame, Component::Health &health) {
     //high stamina increases your speed and damage
@@ -56,11 +58,9 @@ namespace Unit_Frames {
   void Attach_Frame() {
     
   }
-
   
-  void Build_Target_Frame(f2 &scale, std::string &name, Component::Health &health) {
-    frame.background.frame =  {500.0f, 500.0f, 256.0f, 64.0f};    
-    
+  void Build_Target_Frame(f2 &scale, Component::Name &fullName, Component::Health &health, UI_Frame &frame) {
+    std::string name = fullName.first + " " + fullName.last;
     frame.background.frame = UI::Update_Scale(scale, frame.background.frame);
 
     frame.health.frame = {frame.background.frame.x + frame.background.frame.h, frame.background.frame.y + frame.background.frame.h / 2.0f, frame.background.frame.w - frame.background.frame.h, frame.background.frame.h / 2.0f};
@@ -80,7 +80,22 @@ namespace Unit_Frames {
     Graphics::Surface_Data nameData = Graphics::Load_Text_Texture(name, color);
     frame.name.textFrame = frame.name.frame;
     SDL_DestroyTexture(frame.name.textTexture);
-    frame.name.textTexture = nameData.pTexture;   
+    frame.name.textTexture = nameData.pTexture;
+
+    //      Update_Frame(entity, frame.health, health);
+
+    //background
+    SDL_RenderCopyF(Graphics::renderer, frame.background.backTexture, NULL, &frame.background.frame);
+    //health background
+    SDL_RenderCopyF(Graphics::renderer, frame.health.backTexture, NULL, &frame.health.frame);
+    //health
+    SDL_RenderCopyF(Graphics::renderer, frame.health.textTexture, NULL, &frame.health.textFrame);
+    //name background
+    SDL_RenderCopyF(Graphics::renderer, frame.name.backTexture, NULL, &frame.name.frame);
+    //name
+    SDL_RenderCopyF(Graphics::renderer, frame.name.textTexture, NULL, &frame.name.textFrame);
+    //img
+    SDL_RenderCopyF(Graphics::renderer, frame.img.backTexture, NULL, &frame.img.frame);    
   }
 
   void Update_Frame (entt::entity &entity, Frame_Element &frame, Component::Health &health) {
@@ -92,31 +107,17 @@ namespace Unit_Frames {
     
   }
 
-  void Show_Frames (entt::registry &zone) {
+  void Init_Frames () {
+    targetFrame.background.frame =  {512.0f, 512.0f, 256.0f, 64.0f};    
+  }
+
+  void Show_Frames (entt::registry &zone, Component::Camera &camera) {
+    Init_Frames ();
+    
     auto view = zone.view<Component::Selected, Component::Name, Component::Health>();
-    auto cam_view = zone.view<Component::Camera>();
-
-    for (auto camera : cam_view) {
-      auto [cam] = cam_view.get(camera);
-      for (auto entity : view) {
-	auto [selected, fullName, health] = view.get(entity);
-	std::string name = fullName.first + " " + fullName.last;
-	Build_Target_Frame(cam.scale, name, health);
-	//      Update_Frame(entity, frame.health, health);
-
-	//background
-	SDL_RenderCopyF(Graphics::renderer, frame.background.backTexture, NULL, &frame.background.frame);
-	//health background
-	SDL_RenderCopyF(Graphics::renderer, frame.health.backTexture, NULL, &frame.health.frame);
-	//health
-	SDL_RenderCopyF(Graphics::renderer, frame.health.textTexture, NULL, &frame.health.textFrame);
-	//name background
-	SDL_RenderCopyF(Graphics::renderer, frame.name.backTexture, NULL, &frame.name.frame);
-	//name
-	SDL_RenderCopyF(Graphics::renderer, frame.name.textTexture, NULL, &frame.name.textFrame);
-	//img
-	SDL_RenderCopyF(Graphics::renderer, frame.img.backTexture, NULL, &frame.img.frame);
-      }
+    for (auto entity : view) {
+      auto [selected, fullName, health] = view.get(entity);
+      Build_Target_Frame(camera.scale, fullName, health, targetFrame);
     }
   }
 }

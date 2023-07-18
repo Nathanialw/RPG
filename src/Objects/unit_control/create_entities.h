@@ -304,6 +304,7 @@ namespace Create_Entities {
 
       if (player) {
 	health.currentHealth += 200;
+	health.maxHealth += 200;
 	zone.emplace<Component::Input>(entity);
 	SDL_DisplayMode dm;
 	SDL_GetWindowDisplayMode(Graphics::window, &dm);

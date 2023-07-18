@@ -8,6 +8,7 @@
 #include "social_control.h"
 #include "ui_unit_control.hpp"
 #include "unit_frames.h"
+#include "ui_resources.h"
 
 namespace Interface {
 
@@ -263,7 +264,8 @@ namespace Interface {
     //		Show_Grid(Map::terrain);
     //Display_Military_Groups();
     //Display_Unit_Formations(camera);
-    Unit_Frames::Show_Frames(zone);
+    Unit_Frames::Show_Frames(zone, camera);
+    UI_Resources::Show_Frames(zone, camera);
     Debug_System::Framerate(camera);
     //Unit_Arrive_UI();
     Display_Mouse();
