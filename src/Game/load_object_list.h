@@ -127,17 +127,17 @@ namespace Load_Object_List {
     // 	}
     //   }
     // }
+    Game_Objects_Lists::bloodPoolVec = Entity_Loader::Get_Names_Of_SubType("blood_pool", "neutral");
+    Game_Objects_Lists::bloodSplatterVec = Entity_Loader::Get_Names_Of_SubType("blood_splatter", "neutral");
 
-     Game_Objects_Lists::bloodVec = Entity_Loader::Get_Names_Of_SubType("blood", "neutral");
-//     sort
-      std::sort(Game_Objects_Lists::bloodVec.begin(), Game_Objects_Lists::bloodVec.end(), [](const std::string & lhs, const std::string & rhs) {
-          return lhs < rhs;
-      });
-
-     for (auto i : Game_Objects_Lists::bloodVec) {
-       Utilities::Log(i);
-     }
-      Utilities::Log("s");
+    Utilities::Log("pool");
+    for (auto i : Game_Objects_Lists::bloodPoolVec) {
+      Utilities::Log(i);
+    }
+    Utilities::Log("spatter");
+    for (auto i : Game_Objects_Lists::bloodSplatterVec) {
+      Utilities::Log(i);
+    }
   }
   
 

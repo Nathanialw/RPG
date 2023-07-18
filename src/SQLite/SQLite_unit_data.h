@@ -159,6 +159,10 @@ namespace Entity_Loader {
       db_name.push_back(retname);     
     }
     db_name.shrink_to_fit();
+    //sort 
+    std::sort(db_name.begin(), db_name.end(), [](const std::string & lhs, const std::string & rhs) {
+      return lhs < rhs;
+    });
     return db_name;
   }
   

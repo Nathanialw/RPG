@@ -9,6 +9,7 @@
 #include "item_components.h"
 #include "utilities.h"
 #include "game_objects.h"
+#include <cstdlib>
 
 namespace Death_Component {
   struct Corpse {
@@ -42,6 +43,8 @@ namespace Death_Control {
       else {
 	action.frame = 0;
 	action.state = Action_Component::dead;
+	action.frameTime = 0;
+	action.frame = 0;
       }
       return true;
     }
@@ -61,6 +64,7 @@ namespace Death_Control {
       if (health.currentHealth <= 0) {
 	auto &action = view.get<Action_Component::Action>(entity);
 	action.state = Action_Component::dying;
+	action.frameTime = 0;
 	action.frame = 0;
 	//                view.get<Component::Sprite_Sheet_Info>(entity).finalFrame = Component::normalFrame;
 	auto &position = view.get<Component::Position>(entity);
@@ -84,7 +88,6 @@ namespace Death_Control {
 	zone.remove<Component::Spellbook>(entity);
 	zone.remove<Component::Mass>(entity);
 	zone.remove<Component::Sight_Range>(entity);
-	zone.remove<Component::Health>(entity);
 	zone.remove<Component::Radius>(entity);
 	zone.remove<Collision_Component::Dynamic_Collider>(entity);
 
@@ -171,13 +174,18 @@ namespace Death_Control {
       auto &action = view.get<Action_Component::Action>(entity);
 
       action.state = Action_Component::dead;
+      action.frameTime = 0;
+      action.frame = 0;
       
       std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
       Collision::aabb aabb;
       Component::Line_Segment line;
 
-      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodVec[12], 12, aabb, pointVecs, line);
-      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodVec[4], 4, aabb, pointVecs, line);
+      int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodPoolVec.size() - 1);
+      int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
+	
+      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodPoolVec[poolIndex], poolIndex, aabb, pointVecs, line);
+      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line);
       
       position.x -= offset.x;
       position.y -= offset.y;
@@ -199,10 +207,25 @@ namespace Death_Control {
     }
   }
 
+  void Set_Dead(entt::registry& zone) {
+    auto view = zone.view<Action_Component::Action, Component::Health>();
+    for (auto entity: view) {
+      auto &health = view.get<Component::Health>(entity);
+      auto &action = view.get<Action_Component::Action>(entity);
+      if (health.currentHealth <= 0 && action.state == Action_Component::idle) {
+	action.state = Action_Component::dying;
+	action.frameTime = 0;
+	action.frame = 0;
+      }
+    }
+  }
+  
+  
   void Dead_Entity_Routine (entt::registry &zone) {
+    Set_Dead(zone);
     Update_Ground_Box(zone);
     Drop_Equipment_On_Death(zone);
-    Remove_Item_From_Corpse(zone);
+    Remove_Item_From_Corpse(zone);    
     Set_As_Corpse(zone);
   }
 }

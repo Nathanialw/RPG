@@ -112,7 +112,6 @@ namespace Movement {
   void Mouse_Move_Arrived() {
     auto view = World::zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Position, Component::Velocity, Action_Component::Action, Component::Mouse_Move, Component::Body>();
     for (auto entity : view) {
-      auto& act = view.get<Action_Component::Action>(entity);
       auto& v = view.get<Component::Velocity>(entity);
       const auto& x = view.get<Component::Position>(entity);
       const auto& y = view.get<Component::Position>(entity);
@@ -121,7 +120,7 @@ namespace Movement {
 
 
       if (Check_If_Arrived(x.x, y.y, mov.fX_Destination, mov.fY_Destination)) {
-	if (act.state == Action_Component::walk) {
+	if (action.state == Action_Component::walk) {
 	  v.magnitude.x = 0.0f;
 	  v.magnitude.y = 0.0f;
 	  Action_Component::Set_State(action, Action_Component::Action_State::idle);

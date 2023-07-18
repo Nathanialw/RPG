@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:d116db95ecef82096444738aacaab601:5d8e01a08c92125fd9a98fecb015d8d1:8838d9ad0262eb9eb4a76d70b34a6adf$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="pool1.png" width="476" height="543">
+    <sprite n="Blood0 T" x="314" y="219" w="156" h="63"/>
+    <sprite n="Blood0 T2" x="329" y="113" w="146" h="104"/>
+    <sprite n="Blood0 T3" x="269" y="400" w="99" h="113"/>
+    <sprite n="Blood0 T4" x="323" y="1" w="151" h="110"/>
+    <sprite n="Blood0 T5" x="159" y="118" w="168" h="65"/>
+    <sprite n="Blood0 T6" x="1" y="352" w="144" h="111"/>
+    <sprite n="Blood0 T7" x="370" y="400" w="98" h="114"/>
+    <sprite n="Blood0 T8" x="163" y="185" w="149" h="98"/>
+    <sprite n="Blood4 T1" x="334" y="284" w="127" h="114"/>
+    <sprite n="Blood4 T2" x="1" y="244" w="160" h="106"/>
+    <sprite n="Blood4 T3" x="1" y="465" w="156" h="77"/>
+    <sprite n="Blood4 T4" x="1" y="130" w="152" h="112"/>
+    <sprite n="Blood4 T5" x="159" y="374" w="108" h="113"/>
+    <sprite n="Blood4 T6" x="159" y="1" w="162" h="115"/>
+    <sprite n="Blood4 T7" x="163" y="285" w="169" h="87"/>
+    <sprite n="Blood4 T8" x="1" y="1" w="156" h="127"/>
+</TextureAtlas>

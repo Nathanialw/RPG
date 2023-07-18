@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:eec5eb6f347906e26b89ecb46eee09b5:c9b6decf85492ff8fdb339325ef85952:febf166fb9bd7c3bf0825dbd443acce7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="splatter1.png" width="510" height="1034">
+    <sprite n="Blood1 T1" x="133" y="696" w="155" h="87"/>
+    <sprite n="Blood1 T2" x="1" y="802" w="129" h="104"/>
+    <sprite n="Blood1 T3" x="133" y="785" w="133" h="101"/>
+    <sprite n="Blood1 T4" x="314" y="692" w="148" h="93"/>
+    <sprite n="Blood1 T5" x="314" y="596" w="148" h="94"/>
+    <sprite n="Blood1 T6" x="166" y="587" w="146" h="107"/>
+    <sprite n="Blood1 T7" x="1" y="692" w="130" h="108"/>
+    <sprite n="Blood1 T8" x="1" y="591" w="148" h="99"/>
+    <sprite n="Blood2 T1" x="334" y="480" w="151" h="114"/>
+    <sprite n="Blood2 T2" x="344" y="1" w="160" h="126"/>
+    <sprite n="Blood2 T3" x="167" y="367" w="163" h="111"/>
+    <sprite n="Blood2 T4" x="339" y="246" w="164" h="116"/>
+    <sprite n="Blood2 T5" x="169" y="250" w="165" h="115"/>
+    <sprite n="Blood2 T6" x="166" y="480" w="166" h="105"/>
+    <sprite n="Blood2 T7" x="1" y="364" w="164" h="113"/>
+    <sprite n="Blood3 T1" x="248" y="955" w="112" h="74"/>
+    <sprite n="Blood3 T2" x="383" y="954" w="117" h="79"/>
+    <sprite n="Blood3 T3" x="1" y="908" w="98" h="79"/>
+    <sprite n="Blood3 T4" x="383" y="873" w="119" h="79"/>
+    <sprite n="Blood3 T5" x="132" y="888" w="114" h="73"/>
+    <sprite n="Blood3 T6" x="268" y="787" w="113" h="86"/>
+    <sprite n="Blood3 T7" x="268" y="875" w="113" h="78"/>
+    <sprite n="Blood3 T8" x="383" y="787" w="113" h="84"/>
+    <sprite n="Blood5 T1" x="336" y="364" w="173" h="114"/>
+    <sprite n="Blood5 T2" x="177" y="1" w="165" h="124"/>
+    <sprite n="Blood5 T3" x="171" y="127" w="166" h="121"/>
+    <sprite n="Blood5 T4" x="1" y="121" w="168" h="120"/>
+    <sprite n="Blood5 T5" x="1" y="479" w="163" h="110"/>
+    <sprite n="Blood5 T6" x="1" y="1" w="174" h="118"/>
+    <sprite n="Blood5 T7" x="1" y="243" w="166" h="119"/>
+    <sprite n="Blood5 T8" x="339" y="129" w="166" h="115"/>
+</TextureAtlas>
