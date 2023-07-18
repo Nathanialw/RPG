@@ -309,7 +309,7 @@ namespace Rendering {
     //        Render_Ortho_Tiles(zone, Maps::map, camera);
 
     //Render_Dead(zone, camera);
-      Display_Background_Objects(zone, camera);
+    Display_Background_Objects(zone, camera);
     Interface::Background();
     Animation_Frame(zone, camera);
     Render_Explosions(zone, camera);

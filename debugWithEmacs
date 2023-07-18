@@ -1,0 +1,3 @@
+command to run on emacs
+
+exec-file ./debug/RPG

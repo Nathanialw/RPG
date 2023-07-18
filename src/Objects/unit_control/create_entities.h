@@ -297,7 +297,7 @@ namespace Create_Entities {
       zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
       zone.emplace<Action_Component::Action>(entity, Action_Component::idle);
       zone.emplace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
-      auto &health = zone.emplace<Component::Health>(entity, int(data.health * data.scale));
+      auto &health = zone.emplace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
       zone.emplace<Component::Soldier>(entity);
       zone.emplace<Component::Commandable>(entity);
       zone.emplace<Component::Spellbook>(entity);

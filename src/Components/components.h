@@ -46,6 +46,14 @@ namespace Component {
     std::string nickname;
   };
 
+  struct Info {
+    std::string cityBorn;
+    std::string dateBorn;
+    std::string father;
+    std::string mother;
+    std::vector<std::string> children;
+  };
+  
   struct Cell_Assigned {
     int iIndex;
     entt::entity iCell_Assigned_To;
