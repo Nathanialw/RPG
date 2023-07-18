@@ -61,7 +61,7 @@ namespace Unit_Frames {
   
   void Build_Target_Frame(f2 &scale, Component::Name &fullName, Component::Health &health, UI_Frame &frame) {
     std::string name = fullName.first + " " + fullName.last;
-    frame.background.frame = UI::Update_Scale(scale, frame.background.frame);
+
 
     frame.health.frame = {frame.background.frame.x + frame.background.frame.h, frame.background.frame.y + frame.background.frame.h / 2.0f, frame.background.frame.w - frame.background.frame.h, frame.background.frame.h / 2.0f};
     frame.health.backTexture = Graphics::tooltipBackground;
@@ -113,11 +113,14 @@ namespace Unit_Frames {
 
   void Show_Frames (entt::registry &zone, Component::Camera &camera) {
     Init_Frames ();
+    targetFrame.background.frame = UI::Update_Scale(camera.scale, targetFrame.background.frame);
+    UI_Frame frame = targetFrame;
     
     auto view = zone.view<Component::Selected, Component::Name, Component::Health>();
     for (auto entity : view) {
       auto [selected, fullName, health] = view.get(entity);
-      Build_Target_Frame(camera.scale, fullName, health, targetFrame);
+      Build_Target_Frame(camera.scale, fullName, health, frame);
+      frame.background.frame.y += targetFrame.background.frame.h;
     }
   }
 }

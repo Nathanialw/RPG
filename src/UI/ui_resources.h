@@ -27,6 +27,7 @@ namespace UI_Resources {
 
   void Show_Frames (entt::registry &zone, Component::Camera &camera) {    
     Init_Frames ();
+    playerFrame.background.frame = UI::Update_Scale(camera.scale, playerFrame.background.frame);
     
     auto view = zone.view<Component::Name, Component::Health, Component::Input>();
     for (auto entity : view) {
