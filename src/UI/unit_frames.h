@@ -1,8 +1,12 @@
 #pragma once
 #include "SDL2/SDL.h"
+#include "base_structs.h"
 #include "components.h"
 #include "entt/entt.hpp"
 #include "map"
+#include <SDL2/SDL_pixels.h>
+#include <SDL2/SDL_rect.h>
+#include <SDL2/SDL_render.h>
 #include <string>
 #include <unordered_map>
 #include "graphics.h"
@@ -10,7 +14,10 @@
 #include "utilities.h"
 
 namespace Unit_Frames {
-
+  //high stamina increases your speed and damage
+  //as it reduces your become weaker
+  //it is the only resources that naturally replenishes
+  
   struct Frame_Element {
     SDL_Texture * backTexture;
     SDL_Texture * textTexture;
@@ -29,61 +36,55 @@ namespace Unit_Frames {
   // std::unordered_map<entt::entity, UI_Frame> frames;
   UI_Frame targetFrame;
 
-  
-  void Update_Frame_Health(Frame_Element &frame, Component::Health &health) {
-    //high stamina increases your speed and damage
-    //as it reduces your become weaker
-    //it is the only resources that naturally replenishes
-    SDL_DestroyTexture(frame.textTexture);
 
-    std::string currentHealth = std::to_string(health.currentHealth);
-    std::string maxHealth = std::to_string(health.maxHealth);
-
-    std::string healthText = currentHealth + " / " + maxHealth;
-
-    SDL_Color blue = { 212, 175, 55, 255 };
-    Graphics::Surface_Data currentHealthBox = Graphics::Load_Text_Texture(healthText, blue);;
-
-    SDL_FRect textBox = {};
-    float textSize = 20.0f;
-
-    textBox.w = (healthText.length() * (textSize / 2.0f));
-    textBox.h = (textSize);
-
-    frame.textFrame = textBox;
-    frame.textTexture = currentHealthBox.pTexture;
+  SDL_FRect Scale_Text(f2 &scale, SDL_FRect rect, std::string text, float textSize) {
+    rect.w = (text.length() * (textSize / 2.0f));
+    rect.h = (textSize);
+    return UI::Update_Rect_Size(scale, rect);
   }
-  //I want it fixed to a part of the screen and pop up when you select some units.
+
+  void Update_Frame_Text(f2 scale, Frame_Element &frame, std::string text, SDL_Color color) {
+
+    frame.textTexture = Graphics::Load_Text_Texture(text, color).pTexture;
+    frame.textFrame = Scale_Text(scale, frame.textFrame, text, 20.0f);
+    frame.textFrame = UI::Center_Rect_In_frame(frame.textFrame, frame.frame);
+  }
 
   void Attach_Frame() {
     
   }
   
-  void Build_Target_Frame(f2 &scale, Component::Name &fullName, Component::Health &health, UI_Frame &frame) {
-    std::string name = fullName.first + " " + fullName.last;
-
-
+  void Build_Target_Frame(UI_Frame &frame) {
+    //only rebuild if changed
+    
     frame.health.frame = {frame.background.frame.x + frame.background.frame.h, frame.background.frame.y + frame.background.frame.h / 2.0f, frame.background.frame.w - frame.background.frame.h, frame.background.frame.h / 2.0f};
-    frame.health.backTexture = Graphics::tooltipBackground;
-    Update_Frame_Health(frame.health, health);
-    frame.health.textFrame = {frame.background.frame.x + frame.background.frame.h, frame.background.frame.y + frame.background.frame.h / 2.0f, frame.background.frame.w - frame.background.frame.h, frame.background.frame.h / 2.0f};
+    frame.health.textFrame = frame.health.frame;
 
     frame.img.frame = {frame.background.frame.x, frame.background.frame.y, frame.background.frame.h, frame.background.frame.h} ;
-    frame.img.backTexture = Graphics::default_icon;
-    frame.img.textTexture = NULL;
-    frame.img.textFrame = {frame.background.frame.x, frame.background.frame.y, frame.background.frame.h, frame.background.frame.h} ;
+    frame.img.textFrame = frame.img.frame;
 
     frame.name.frame = {frame.background.frame.x + frame.background.frame.h, frame.background.frame.y, frame.background.frame.w - frame.background.frame.h, frame.background.frame.h / 2.0f};
+    frame.name.textFrame = frame.name.frame;    
+  }
+
+  void Update_Frame_Data(f2 &scale, Component::Name &fullName, Component::Health &health, UI_Frame &frame) {
+    //only update if changed
+    std::string healthText = std::to_string(health.currentHealth) + " / " + std::to_string(health.maxHealth);
+    Update_Frame_Text(scale, frame.health, healthText, {100,255,50});    
+    frame.health.backTexture = Graphics::tooltipBackground;
+
+    frame.img.backTexture = Graphics::default_icon;
+    frame.img.textTexture = NULL;
+
+
     frame.name.backTexture = Graphics::tooltipBackground;
+    std::string name = fullName.first + " " + fullName.last;
+    Update_Frame_Text(scale, frame.name, name, {255,155,155});
+  }
 
-    SDL_Color color = { 255, 155, 222};
-    Graphics::Surface_Data nameData = Graphics::Load_Text_Texture(name, color);
-    frame.name.textFrame = frame.name.frame;
-    SDL_DestroyTexture(frame.name.textTexture);
-    frame.name.textTexture = nameData.pTexture;
-
-    //      Update_Frame(entity, frame.health, health);
-
+  void Render_Target_Frame(UI_Frame &frame) {
+    //render every frame
+    
     //background
     SDL_RenderCopyF(Graphics::renderer, frame.background.backTexture, NULL, &frame.background.frame);
     //health background
@@ -96,15 +97,9 @@ namespace Unit_Frames {
     SDL_RenderCopyF(Graphics::renderer, frame.name.textTexture, NULL, &frame.name.textFrame);
     //img
     SDL_RenderCopyF(Graphics::renderer, frame.img.backTexture, NULL, &frame.img.frame);    
-  }
 
-  void Update_Frame (entt::entity &entity, Frame_Element &frame, Component::Health &health) {
-    //update and reprint health values    
-    Update_Frame_Health(frame, health);
-    //health bar % of current health
-
-    // change img pic to reflect unit emotional state    
-    
+    SDL_DestroyTexture(frame.name.textTexture);
+    SDL_DestroyTexture(frame.health.textTexture);
   }
 
   void Init_Frames () {
@@ -119,8 +114,10 @@ namespace Unit_Frames {
     auto view = zone.view<Component::Selected, Component::Name, Component::Health>();
     for (auto entity : view) {
       auto [selected, fullName, health] = view.get(entity);
-      Build_Target_Frame(camera.scale, fullName, health, frame);
-      frame.background.frame.y += targetFrame.background.frame.h;
+      Build_Target_Frame(frame);
+      Update_Frame_Data(camera.scale, fullName, health, frame);
+      Render_Target_Frame(frame);
+      frame.background.frame.y += targetFrame.background.frame.h;      
     }
   }
 }

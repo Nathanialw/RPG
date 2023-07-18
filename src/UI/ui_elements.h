@@ -20,9 +20,21 @@ namespace UI {
     rect.h = clip.h;
     return rect;
   }
+  
+  SDL_FRect Center_Rect_In_frame(SDL_FRect rect, SDL_FRect parentRect) {
+    rect.x = parentRect.x + (parentRect.w / 2.0f) - (rect.w / 2.0f);
+    rect.y = parentRect.y + (parentRect.h / 2.0f) - (rect.h / 2.0f);
+    rect.w = rect.w;
+    rect.h = rect.h;
+    return rect;
+  }
 
   SDL_FRect Update_Scale(f2 &scale, SDL_FRect &rect) {
     return { rect.x / scale.x, rect.y / scale.y, rect.w / scale.x, rect.h / scale.y };
+  }
+
+  SDL_FRect Update_Rect_Size(f2 &scale, SDL_FRect &rect) {
+    return {rect.x, rect.y, rect.w / scale.x, rect.h / scale.y };
   }
 
   SDL_FRect Get_Resolution() {

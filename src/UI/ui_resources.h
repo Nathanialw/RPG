@@ -32,7 +32,9 @@ namespace UI_Resources {
     auto view = zone.view<Component::Name, Component::Health, Component::Input>();
     for (auto entity : view) {
       auto [fullName, health] = view.get(entity);
-      Unit_Frames::Build_Target_Frame(camera.scale, fullName, health, playerFrame);
+      Unit_Frames::Build_Target_Frame(playerFrame);
+      Unit_Frames::Update_Frame_Data(camera.scale, fullName, health, playerFrame);
+      Unit_Frames::Render_Target_Frame(playerFrame);
     }
   }  
 }
