@@ -37,20 +37,9 @@ namespace Unit_Frames {
     frame.textTexture = d.pTexture;
   }
   
-  void Update_Frame_Text(f2 scale, UI::Text_Frame &frame, std::string text) {
-    frame.textFrame = Scale_Text(scale, frame.textFrame, text, 20.0f);
+  void Update_Frame_Text(f2 scale, UI::Text_Frame &frame, std::string text, float size) {
+    frame.textFrame = Scale_Text(scale, frame.textFrame, text, size);
     frame.textFrame = UI::Center_Rect_In_frame(frame.textFrame, frame.frame);
-  }
-
-  void Build_Target_Frame(Unit_Frames::UI_Frame &frame) {
-    //only rebuild if changed
-    float yPos = frame.background.frame.y;
-    frame.health.frame = {frame.background.frame.x + frame.background.frame.h, yPos + frame.background.frame.h / 2.0f, frame.background.frame.w - frame.background.frame.h, frame.background.frame.h / 2.0f};
-
-    frame.img.frame = {frame.background.frame.x, yPos, frame.background.frame.h, frame.background.frame.h} ;
-
-    frame.name.frame = {frame.background.frame.x + frame.background.frame.h, yPos, frame.background.frame.w - frame.background.frame.h, frame.background.frame.h / 2.0f};
-    yPos += frame.background.frame.h;
   }
   
   void Build_Target_Frames() {
@@ -75,7 +64,7 @@ namespace Unit_Frames {
       Populate_Frame(frame.health, healthText, {100,255,50});
       frame.health.backgroundTexture = Graphics::tooltipBackground;
     }
-    Update_Frame_Text(scale, frame.health, frame.health.text);    
+    Update_Frame_Text(scale, frame.health, frame.health.text, 20.0f);    
 
     if (frame.img.texture != Graphics::default_icon || frame.img.texture == NULL) {
       frame.img.texture = NULL;
@@ -89,7 +78,7 @@ namespace Unit_Frames {
       frame.name.backgroundTexture = Graphics::tooltipBackground;
       Populate_Frame(frame.name, name, {255,155,155});
     }
-    Update_Frame_Text(scale, frame.name, frame.name.text);
+    Update_Frame_Text(scale, frame.name, frame.name.text, 20.0f);
   }
 
   void Render_Target_Frame(UI_Frame &frame) {
@@ -108,9 +97,8 @@ namespace Unit_Frames {
   }
 
   void Init_Frames () {
-    targetFrame.frame =  {512.0f, 512.0f, 256.0f, 64.0f};    
+    targetFrame.frame =  {64.0f, 192.0f, 256.0f, 64.0f};    
   }
-
   
   void Show_Frames (entt::registry &zone, Component::Camera &camera) {
     if (1) { //if scale resized

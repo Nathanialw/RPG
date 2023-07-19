@@ -1,3 +1,5 @@
 command to run on emacs
 
-exec-file ./debug/RPG
+gdb -i=mi ./debug/RPG 
+cd ..
+r

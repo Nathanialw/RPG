@@ -7,14 +7,14 @@ namespace UI {
   
   struct Text_Frame {
     SDL_FRect frame;
-    SDL_Texture* backgroundTexture;
+    SDL_Texture* backgroundTexture = NULL;
     SDL_FRect textFrame;
-    SDL_Texture* textTexture;
+    SDL_Texture* textTexture = NULL;
     std::string text;
   };
 
   struct Image_Frame {
-    SDL_Texture* texture;
+    SDL_Texture* texture = NULL;
     SDL_FRect frame;
   };
  
