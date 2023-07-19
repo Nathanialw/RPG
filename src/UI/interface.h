@@ -9,6 +9,7 @@
 #include "ui_unit_control.hpp"
 #include "unit_frames.h"
 #include "ui_resources.h"
+#include "ui_frames.h"
 
 namespace Interface {
 
@@ -259,11 +260,18 @@ namespace Interface {
     Display_Selected();
   }
 
+  void Init_UI(f2 scale) {
+    // UI_Resources::Init_Frames ();
+    // Unit_Frames::Init_Frames();
+    //    UI_Frames::Init_Frames();
+  }
+  
   void Foreground(entt::registry &zone, Component::Camera &camera) {
 
     //		Show_Grid(Map::terrain);
     //Display_Military_Groups();
     //Display_Unit_Formations(camera);
+    UI_Frames::Show_Menu_Frame(zone, camera);
     Unit_Frames::Show_Frames(zone, camera);
     UI_Resources::Show_Frames(zone, camera);
     Debug_System::Framerate(camera);

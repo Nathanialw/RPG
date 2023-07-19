@@ -202,6 +202,8 @@ namespace Component {
     int currentFrame;
     int frameLength;
     int currentFrameTime;
+    int targetIndex;
+    bool selected = false;
   };
 
   struct Retinue {

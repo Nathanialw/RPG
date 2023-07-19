@@ -1,9 +1,23 @@
 #pragma once
 #include "SDL2/SDL.h"
 #include "graphics.h"
+#include <string>
 
 namespace UI {
+  
+  struct Text_Frame {
+    SDL_FRect frame;
+    SDL_Texture* backgroundTexture;
+    SDL_FRect textFrame;
+    SDL_Texture* textTexture;
+    std::string text;
+  };
 
+  struct Image_Frame {
+    SDL_Texture* texture;
+    SDL_FRect frame;
+  };
+ 
   SDL_FRect ui_box(float x, float y, float w, float h) { // take in size and location, return a box		
     SDL_FRect box;
     return box;

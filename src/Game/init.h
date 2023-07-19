@@ -23,6 +23,7 @@
 #include "menu.h"
 #include "world.h"
 #include "load_object_list.h"
+#include "interface.h"
 
 namespace Init {
 
