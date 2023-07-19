@@ -29,14 +29,14 @@ namespace Event_Handler {
 	  if (Events::event.type == SDL_KEYDOWN) {
 	    auto& vel = zone.get<Component::Velocity>(entity);
 	    switch (Events::event.key.keysym.sym) {
-	    case SDLK_e:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_d:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_s:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x -= vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_f:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x += vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_w:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x -= vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_r:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x += vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_v:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x += vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_x:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x -= vel.speed; act.state = Action_Component::walk; break;
+	    case SDLK_w:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; act.state = Action_Component::walk; break;
+	    case SDLK_s:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; act.state = Action_Component::walk; break;
+	    case SDLK_a:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x -= vel.speed; act.state = Action_Component::walk; break;
+	    case SDLK_d:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x += vel.speed; act.state = Action_Component::walk; break;
+	    case SDLK_q:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x -= vel.speed; act.state = Action_Component::walk; break;
+	    case SDLK_e:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x += vel.speed; act.state = Action_Component::walk; break;
+	    case SDLK_c:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x += vel.speed; act.state = Action_Component::walk; break;
+	    case SDLK_z:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x -= vel.speed; act.state = Action_Component::walk; break;
 	    }
 	  }
 	}
@@ -45,14 +45,14 @@ namespace Event_Handler {
 	auto& vel = zone.get<Component::Velocity>(entity);
 	switch (Events::event.key.keysym.sym)
 	  {
-	  case SDLK_e: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; break;
-	  case SDLK_d: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; break;
-	  case SDLK_s: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed; break;
-	  case SDLK_f: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed; break;
-	  case SDLK_w: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
-	  case SDLK_r: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
-	  case SDLK_v: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
-	  case SDLK_x: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
+	  case SDLK_w: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; break;
+	  case SDLK_s: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; break;
+	  case SDLK_a: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed; break;
+	  case SDLK_d: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed; break;
+	  case SDLK_q: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
+	  case SDLK_e: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
+	  case SDLK_c: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
+	  case SDLK_z: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
 	  }
       }
       auto& vel = zone.get<Component::Velocity>(entity);
@@ -66,35 +66,33 @@ namespace Event_Handler {
       }
     }
   };
-
+  
   void Interface_Input(entt::registry& zone, Component::Camera &camera, Action_Component::Action& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
-	if (act.state != Action_Component::attack) {
-	  switch (Events::event.key.keysym.sym)
-	    {
-	      //					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
-	    case SDLK_1: break;
-	    case SDLK_2: Sinister_Strike::Instant_Attack(zone, entity); break;
-	    case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
-	    case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;
-	    case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
-	    case SDLK_6: Interface::gridDepth++; break;
-	    case SDLK_7: Interface::gridDepth--; break;
-	    case SDLK_8: Skills::Feign_Death(zone, entity); break;
-	    case SDLK_9: AI::Turn_On();  break;
-	    case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
-	    case SDLK_ESCAPE: Menu::Toggle(); break;
-	    case SDLK_TAB: User_Mouse_Input::Tab_Target(zone, camera, entity); break;
-	    case SDLK_p: Pause::Toggle(); break;
-	    case SDLK_PLUS:  break;
-	    case SDLK_MINUS: break;
-	    case SDLK_l: UI_Spellbook::Toggle();  break;
-	    case SDLK_i: UI::Bag_UI::Toggle_Bag();  break;
-	    case SDLK_LALT: Items::showGroundItems = true;  break;
-	    case SDLK_RALT: Items::showGroundItems = true;  break;
-	    }
-	}
+	switch (Events::event.key.keysym.sym)
+	  {
+	    //					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
+	  case SDLK_1: break;
+	  case SDLK_2: Sinister_Strike::Instant_Attack(zone, entity); break;
+	  case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
+	  case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;
+	  case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
+	  case SDLK_6: Interface::gridDepth++; break;
+	  case SDLK_7: Interface::gridDepth--; break;
+	  case SDLK_8: Skills::Feign_Death(zone, entity); break;
+	  case SDLK_9: AI::Turn_On();  break;
+	  case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
+	  case SDLK_ESCAPE: Menu::Toggle(); break;
+	  case SDLK_TAB: User_Mouse_Input::Tab_Target(zone, camera, entity); break;
+	  case SDLK_p: Pause::Toggle(); break;
+	  case SDLK_PLUS:  break;
+	  case SDLK_MINUS: break;
+	  case SDLK_l: UI_Spellbook::Toggle();  break;
+	  case SDLK_i: UI::Bag_UI::Toggle_Bag();  break;
+	  case SDLK_LALT: Items::showGroundItems = true;  break;
+	  case SDLK_RALT: Items::showGroundItems = true;  break;
+	  }
       }
       else if (Events::event.type == SDL_KEYUP) {
 	switch (Events::event.key.keysym.sym)

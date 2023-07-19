@@ -8,7 +8,7 @@
 namespace UI_Unit_Control {
 
   // the animation for the select ring
-    void Loop_Sprite(Component::Selected& frame, SDL_FRect &frect, Rendering_Components::Color &color, Component::Camera &camera) {
+    void Loop_Sprite(Component::Selected& frame, SDL_FRect &frect, SDL_Color color, Component::Camera &camera) {
     // clip : size ont the frame in the spritesheet, will also use the size to render
    // rect : x,y is the targets rect around his feet, needs to be converted to screen coords probably
 

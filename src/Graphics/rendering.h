@@ -117,7 +117,7 @@ namespace Rendering {
       SDL_Rect clipRect;
       SDL_FRect renderRect;
       SDL_Texture* texture;
-      Color color;
+      SDL_Color color;
 
       if (sheetData.flareSpritesheet) {
 	/// get the next frame

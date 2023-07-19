@@ -87,6 +87,7 @@ namespace Create_Entities {
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(name);
 
     if (data.sprite_layout == "static") {
+      //std::cout << "loading Flare: " << name << std::endl;
       auto entity = zone.create();
       int unit_ID = Check_For_Template_ID(name);
       Graphics::Create_Game_Object(unit_ID, filepath.c_str());
@@ -127,19 +128,22 @@ namespace Create_Entities {
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 
     if (data.sprite_layout == "PVG") {
-      auto entity = zone.create();
-      int unit_ID = Check_For_Template_ID(templateName);
-
+      // std::cout << "loading Object: " << templateName << std::endl;
+      ///get texture data      
       SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
       std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
       std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
-
-      std::string sheetname = Entity_Loader::Get_Sprite_Sheet(templateName);
-
-      ///run texture packer
+      int textureIndex = Check_For_Template_ID(templateName);      
       std::string tilesetName;
-      packerframeData = Texture_Packer::TexturePacker_Import_Tileset(templateName, data, Graphics::unitTextures[unit_ID], tilesetName);
-
+      
+      packerframeData = Texture_Packer::Get_Texture_Data(textureIndex, templateName, data, tilesetName);
+      if (packerframeData == NULL) {
+	//	I think returning true will just make it do nothing because of how it is called in map.h
+	std::cout << "failed to load PVG_Building() for: " << templateName << std::endl; 
+	return true;
+      }
+      
+      auto entity = zone.create();
       //Add shared components
       auto &position = zone.emplace<Component::Position>(entity, x, y);
       auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
@@ -172,7 +176,7 @@ namespace Create_Entities {
 	offset.x = 0.0f;
 	offset.y = 0.0f;
       }
-      // if items a background sprite DO NOT set Direction component
+      // if object is a  background sprite DO NOT set Direction component
       else {
 	zone.emplace<Component::Direction>(entity, Component::Direction::W);	
       }            
@@ -193,6 +197,9 @@ namespace Create_Entities {
     auto entity = zone.create();
     Entity_Loader::Data data;
     int unit_ID = 0;
+    SDL_Texture* texture = NULL;
+    //std::cout << "loading Unit: " << templateName << std::endl;
+    
     //get the entity_class from the template in the tiled map
     //get the is_random from the template in the tiled map
     //if it is random, grab a random entry of the same class from the DB table, including the key name
@@ -202,7 +209,7 @@ namespace Create_Entities {
       templateName = Entity_Loader::Get_All_Of_Class(entity_class);
       //check if the random name has a tamplate ID, if it doesn't revert to default name
       unit_ID = Get_Existing_Template_ID(templateName, entity_class);
-      Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
+      texture = Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
       data = Entity_Loader::parse_data(templateName);//
       ////randomEntity must be converted into a std::string//
       //auto& scale = zone.get<Component::Scale>(entity);
@@ -213,11 +220,12 @@ namespace Create_Entities {
     }
     else {
       unit_ID = Check_For_Template_ID(templateName);
-      Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
+      texture = Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
       data = Entity_Loader::parse_data(templateName);
-      if (Graphics::unitTextures[unit_ID] == NULL) {
-	std::cout << "texture is NULL for: " << templateName << std::endl;
-      }
+    }
+
+    if (texture == NULL) {
+      std::cout << "texture is NULL for: " << templateName << std::endl;
     }
 
     SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
@@ -228,12 +236,12 @@ namespace Create_Entities {
     //stores the index for a static frame in spritesheet xml 
     if (sheetname == "texture_packer") {
       ///run texture packer
-      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, Graphics::unitTextures[unit_ID]);
+      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, texture);
     }
     else {
       ///get sheet data for new pointer to map
       SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
-      flareSheetData = Populate_Flare_SpriteSheet(templateName, sheetDataFlare, Graphics::unitTextures[unit_ID]);
+      flareSheetData = Populate_Flare_SpriteSheet(templateName, sheetDataFlare, texture);
     }
 
     //Add shared components

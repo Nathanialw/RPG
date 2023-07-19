@@ -117,7 +117,7 @@ namespace Interface {
 	auto& radius = view.get<Component::Radius>(entity);
 	auto& selector = view.get<Component::Selected>(entity);
 	
-	Rendering_Components::Color color;
+	SDL_Color color;
 
 	if (Social_Control::Check_Relationship(World::zone, focus, entity)) {
 	  //	  red if enemy

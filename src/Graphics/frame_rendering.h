@@ -1,6 +1,7 @@
 #pragma once
 #include "FLARE_frames.h"
 #include "PVG_frames.h"
+#include <SDL2/SDL_pixels.h>
 
 void Get_Spritesheet_Type(SDL_Rect &clipRect, Rendering_Components::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Action_Component::Action& action) {
   /// get the height and width
@@ -36,7 +37,7 @@ void Render_Equipment(Rendering_Components::Equipment_Sprites &equipment, Compon
       Component::Interaction_Rect itemInteractionRect = {};
       SDL_FRect renderRect = Position_For_Render(item.ItemSheetData, item.name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, itemInteractionRect);
       SDL_Texture* texture = item.ItemSheetData->at(item.name).texture;
-      Rendering_Components::Color color = item.ItemSheetData->at(item.name).color;
+      SDL_Color color = item.ItemSheetData->at(item.name).color;
       SDL_SetTextureAlphaMod(texture, renderable.alpha);
       Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
     }
@@ -57,7 +58,7 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
   }
 
   SDL_Texture* texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
-  Rendering_Components::Color color = sheetData.sheetData->at(sheetData.sheet_name).color;
+  SDL_Color color = sheetData.sheetData->at(sheetData.sheet_name).color;
   SDL_SetTextureAlphaMod(texture, renderable.alpha);
   Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
 }
@@ -74,7 +75,7 @@ void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
     SDL_Rect clipRect;
     SDL_FRect renderRect;
     SDL_Texture* texture;
-    Rendering_Components::Color color;
+    SDL_Color color;
 
     if (sheetData.flareSpritesheet) {
       /// get the next frame

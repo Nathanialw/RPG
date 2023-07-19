@@ -167,13 +167,7 @@ namespace Entity_Loader {
     });
     return db_name;
   }
-  
-  
-  /*
-    
 
-
-   */
   std::vector<std::string> Get_All_Names_Of_SubType(std::string &type) {
     std::string class_name = db::Append_Quotes(type);
     std::vector<std::string> db_name;
@@ -426,8 +420,6 @@ namespace Entity_Loader {
     }
     return "";
   }
-
-
   
   Building_Data Get_Building_Data(std::string &name) {// needs to search for  a specific row that I can input in the arguments
     //check if the name exists??

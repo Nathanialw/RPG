@@ -1,5 +1,6 @@
 #pragma once
 #include "entt/entt.hpp"
+#include <SDL2/SDL_render.h>
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
@@ -78,16 +79,16 @@ namespace Graphics {
     SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
   }
 
-  Rendering_Components::Color Set_Random_Color()
+  SDL_Color Set_Random_Color()
   {
-    Rendering_Components::Color color;
+    SDL_Color color;
     color.r = rand() % 254 + 1;
     color.g = rand() % 254 + 1;
     color.b = rand() % 254 + 1;
     return color;
   }
 
-  void Render_FRect(SDL_Texture* texture, Rendering_Components::Color color, const SDL_Rect* sourceRect, SDL_FRect* targetRect)
+  void Render_FRect(SDL_Texture* texture, SDL_Color color, const SDL_Rect* sourceRect, SDL_FRect* targetRect)
   {
     SDL_SetTextureColorMod( texture, color.r, color.g, color.b );
     SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
@@ -138,9 +139,9 @@ namespace Graphics {
     font = TTF_OpenFont("assets/fonts/EagleLake-Regular.ttf", 30);
   }
 
-  SDL_Texture* createTexture(const char* spritesheet)
+  SDL_Texture* createTexture(const char* filepath)
   {
-    SDL_Surface* surface = IMG_Load(spritesheet);
+    SDL_Surface* surface = IMG_Load(filepath);
     SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
     SDL_FreeSurface(surface);
     return texture;
@@ -167,25 +168,28 @@ namespace Graphics {
   }
 
   //when creating the game objet
-  void Create_Game_Object(int& unitID, const char* filepath)
+  SDL_Texture* Create_Game_Object(int& unitID, const char* filepath)
   {
-    if (unitTextures[unitID] == NULL)
-      {
-	Load_Texture(unitID, filepath);
-	if (unitTextures[unitID] == NULL)
-	  {
-	    std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
-	  }
-	else
-	  {
-	    //	std::cout << "loaded from file: " << filepath << std::endl;
-	  }
+    if (unitTextures[unitID] == NULL) {
+      Load_Texture(unitID, filepath);
+      return unitTextures[unitID];
+      if (unitTextures[unitID] == NULL)
+	{
+	  std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
+	  return NULL;
+	}
+      else {
+	return unitTextures[unitID];
+	//	std::cout << "loaded from file: " << filepath << std::endl;
       }
+    }
     else
       {
+	return unitTextures[unitID];
 	//std::cout << "already loaded: " << filepath << std::endl;
 	//unitTextures[unitID];
       }
+    return NULL;
     //to render it jsut needs access to the texture array and the unitID
   }
 

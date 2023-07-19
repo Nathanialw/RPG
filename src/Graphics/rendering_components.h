@@ -44,7 +44,7 @@ namespace Rendering_Components {
 
   struct Sheet_Data {
     SDL_Texture* texture = NULL;
-    Color color = { 255, 255, 255 };
+    SDL_Color color = { 255, 255, 255 };
     std::vector<Sprite_Sheet_Data> frameList;
     /// start frame by state, number of frames per state.
     std::unordered_map<uint8_t , Frame_Data_Packer> actionFrameData;
@@ -54,7 +54,7 @@ namespace Rendering_Components {
 
   struct Sheet_Data_Flare {
     SDL_Texture* texture = NULL;		//texture
-    Color color = { 255, 255, 255 };
+    SDL_Color color = { 255, 255, 255 };
     int sheetWidth = 0;
     int spriteWidth = 0;
     int spriteHeight = 0;
