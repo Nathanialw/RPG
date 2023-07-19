@@ -42,7 +42,18 @@ namespace Unit_Frames {
     frame.textFrame = UI::Center_Rect_In_frame(frame.textFrame, frame.frame);
   }
 
-  void Build_Target_Frame() {
+  void Build_Target_Frame(Unit_Frames::UI_Frame &frame) {
+    //only rebuild if changed
+    float yPos = frame.background.frame.y;
+    frame.health.frame = {frame.background.frame.x + frame.background.frame.h, yPos + frame.background.frame.h / 2.0f, frame.background.frame.w - frame.background.frame.h, frame.background.frame.h / 2.0f};
+
+    frame.img.frame = {frame.background.frame.x, yPos, frame.background.frame.h, frame.background.frame.h} ;
+
+    frame.name.frame = {frame.background.frame.x + frame.background.frame.h, yPos, frame.background.frame.w - frame.background.frame.h, frame.background.frame.h / 2.0f};
+    yPos += frame.background.frame.h;
+  }
+  
+  void Build_Target_Frames() {
     //only rebuild if changed
     float yPos = targetFrame.frame.y;
     for (auto &frame : targets) {
@@ -105,7 +116,7 @@ namespace Unit_Frames {
     if (1) { //if scale resized
       Init_Frames ();
       targetFrame.frame = UI::Update_Scale(camera.scale, targetFrame.frame);
-      Build_Target_Frame();
+      Build_Target_Frames();
     }
 
     for (auto &i : targets) {
