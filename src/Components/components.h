@@ -2,6 +2,7 @@
 #include "entt/entt.hpp"
 #include <SDL2/SDL.h>
 #include <iostream>
+#include <sys/types.h>
 #include <vector>
 #include "classes.h"
 #include "box2d/box2d.h"
@@ -402,12 +403,14 @@ namespace Component {
   struct Damage {
     int minDamage;
     int maxDamage;
+    int critChance;
+    bool critical;
   };
 
   struct Melee_Damage {
     int minDamage = 0;
     int maxDamage = 0;
-    bool critical = false;
+    int critChance;    
   };
 
   struct Melee_Range {
@@ -479,6 +482,7 @@ namespace Component {
     std::string damageText;
     int lingerTime;
     bool special;
+    bool critical;
   };
 
 

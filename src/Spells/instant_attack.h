@@ -4,6 +4,7 @@
 #include "action_components.h"
 #include "damage_text.h"
 #include "utilities.h"
+#include "combat_control.h"
 
 namespace  Instant_Attack {
 
@@ -15,12 +16,12 @@ namespace  Instant_Attack {
     auto &meleeDamage = zone.get<Component::Melee_Damage>(entity);
 
     /// calculate damage and show for player
-    Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage};
+    Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage, meleeDamage.critChance};
     int damage = Combat_Control::Calculate_Damage(damageRange);
     damage *= 2.0f;
 
     if (zone.any_of<Component::Input>(entity)) {
-      Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, true);
+      Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, true, damageRange.critical);
     }
 
     auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);

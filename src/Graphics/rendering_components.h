@@ -15,6 +15,10 @@ namespace Rendering_Components {
   struct Background {
 
   };
+
+  struct Foreground {
+
+  };
   
   struct Sprite_Offset {
     float x;

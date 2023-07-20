@@ -103,6 +103,21 @@ namespace Rendering {
         }
     }
 
+    void Display_Foreground_Objects(entt::registry& zone, Component::Camera &camera) {
+
+        auto view1 = zone.view<Component::Renderable, Component::Position, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset, Component::Scale, Component::Entity_Type, Rendering_Components::Foreground>();
+
+        for (auto entity: view1) {
+            auto [renderable, position, sheetData, spriteOffset, scale, type] = view1.get(entity);
+
+            if (sheetData.sheetData) {
+                Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
+            } else {
+                Utilities::Log("Static_Animation_Frame() fallthrough error: all pointers NULL");
+            }
+        }
+    }
+  
   void Render_Dead(entt::registry& zone, Component::Camera &camera) { //state
 
     auto view1 = zone.view<Component::Renderable, Action_Component::Action, Component::Position, Sprite_Sheet_Info, Component::Direction, Sprite_Offset, Component::Scale, Component::Entity_Type, Component::Dead>();
@@ -301,19 +316,6 @@ namespace Rendering {
     }
   }
 
-  void Render_Map(entt::registry &zone, Component::Camera& camera) {
-    SDL_RenderClear(Graphics::renderer);
-
-    World::Render(camera);
-    //        Render_Iso_Tiles(zone, Maps::map, camera);
-    //        Render_Ortho_Tiles(zone, Maps::map, camera);
-
-    //Render_Dead(zone, camera);
-    Display_Background_Objects(zone, camera);
-    Interface::Background();
-    Animation_Frame(zone, camera);
-    Render_Explosions(zone, camera);
-  }
 
   void Render_Mouse_Item(entt::registry& zone, Component::Camera &camera) {
     SDL_FRect DisplayRect = {};
@@ -418,6 +420,23 @@ namespace Rendering {
     for (auto entity : view) {
       zone.destroy(entity);
     }
+  }
+  
+  void Render_Map(entt::registry &zone, Component::Camera& camera) {
+    SDL_RenderClear(Graphics::renderer);
+
+    World::Render(camera);
+    //        Render_Iso_Tiles(zone, Maps::map, camera);
+    //        Render_Ortho_Tiles(zone, Maps::map, camera);
+
+    Display_Background_Objects(zone, camera);
+    //   need a render dead render routine so the foreground objects are on top
+    //   alternatively we could sort all the background and foreground objects by WHEN they spawned rather than simple y position
+    //Render_Dead(zone, camera);
+    Display_Foreground_Objects(zone, camera);
+    Interface::Background();
+    Animation_Frame(zone, camera);
+    Render_Explosions(zone, camera);
   }
 
   void Rendering(entt::registry& zone) {

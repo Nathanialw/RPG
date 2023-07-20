@@ -72,7 +72,7 @@ namespace Event_Handler {
       if (Events::event.type == SDL_KEYDOWN) {
 	switch (Events::event.key.keysym.sym)
 	  {
-	    //					case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
+	    //case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
 	  case SDLK_1: break;
 	  case SDLK_2: Sinister_Strike::Instant_Attack(zone, entity); break;
 	  case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;

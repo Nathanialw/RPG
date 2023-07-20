@@ -91,6 +91,16 @@ namespace Death_Control {
 	zone.remove<Component::Radius>(entity);
 	zone.remove<Collision_Component::Dynamic_Collider>(entity);
 
+	// spawn blood
+	std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
+	Collision::aabb aabb;
+	Component::Line_Segment line;
+
+	int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodPoolVec.size() - 1);
+	Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodPoolVec[poolIndex], poolIndex, aabb, pointVecs, line);
+	int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
+	Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line);
+
 	if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
 	  auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);
 	  auto &soldier_list = zone.get<Test::Soldiers_Assigned_List>(soldier.iUnit_Assigned_To);
@@ -176,17 +186,8 @@ namespace Death_Control {
       action.state = Action_Component::dead;
       action.frameTime = 0;
       action.frame = 0;
-      
-      std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
-      Collision::aabb aabb;
-      Component::Line_Segment line;
 
-      // spawn blood
-      int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodPoolVec.size() - 1);
-      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodPoolVec[poolIndex], poolIndex, aabb, pointVecs, line);
-      int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
-      Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line);
-      
+      //position as background texture
       position.x -= offset.x;
       position.y -= offset.y;
       offset.x = 0.0f;

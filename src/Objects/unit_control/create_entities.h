@@ -170,11 +170,12 @@ namespace Create_Entities {
 	offset.y = 0.0f;
 	zone.emplace<Rendering_Components::Background>(entity);
       }
-      else if (data.collider_type == "foreground"){
+      else if (data.collider_type == "foreground") {
 	position.x -= offset.x;
 	position.y -= offset.y;
 	offset.x = 0.0f;
 	offset.y = 0.0f;
+	zone.emplace<Rendering_Components::Foreground>(entity);
       }
       // if object is a  background sprite DO NOT set Direction component
       else {
@@ -302,7 +303,7 @@ namespace Create_Entities {
 
       //do not attach to non combat
       if (data.temp_type_name != "non-combat") {
-	zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max);
+	zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max, 25);
 	zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0);
       }
 

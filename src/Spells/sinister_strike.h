@@ -2,31 +2,34 @@
 
 namespace  Sinister_Strike {
 
+
+  
   void Attack(entt::registry &zone, entt::entity &entity, entt::entity &target_ID) {
     auto &action = zone.get<Action_Component::Action>(entity);
 
     action.state = Action_Component::attack2;
     action.frame = 0;
+    action.frameTime = 0;
     auto &meleeDamage = zone.get<Component::Melee_Damage>(entity);
 
     /// calculate damage and show for player
-    Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage};
+    Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage, meleeDamage.critChance};
     int damage = Combat_Control::Calculate_Damage(damageRange);
     damage *= 2.0f;
 
     if (zone.any_of<Component::Input>(entity)) {
-      Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, true);
+      Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, true, damageRange.critical);
     }
 
     auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
 
-    //                if (meleeDamage.critical) {
-    //                    struck.critical = true;
-    //                    auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
-    //                    targetAction.frame = 0;
-    //                    targetAction.state = Action_Component::struck;
-    //                }
-    struck.struck += damage;
+    if (damageRange.critical) {
+      struck.critical = true;
+      //      auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
+      //targetAction.frame = 0;
+      ///targetAction.state = Action_Component::struck;
+    }
+   struck.struck += damage;
   }
 
   //    have auto attacks "hit" at the start of the animation, the just process them after the swing timer ends

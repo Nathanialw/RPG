@@ -6,15 +6,24 @@
 #include "action_components.h"
 #include "combat_sounds.h"
 #include "combat_graphics.h"
+#include "utilities.h"
 
 namespace Combat_Control {
-
+  
   int Calculate_Damage(Component::Damage& damageRange) {
     if (damageRange.minDamage == 0) {
       std::cout << "function Calculate_Damage() min damage range 0, divide by zero error" << std::endl;
       //			return 0;
     }
-    return rand() % damageRange.maxDamage + damageRange.minDamage;
+
+    int damage = Utilities::Get_Random_Number(damageRange.minDamage, damageRange.maxDamage);
+    int checkCrit = Utilities::Get_Random_Number(1, 100);
+    
+    if (checkCrit <= damageRange.critChance) {
+      damage *= 2;
+      damageRange.critical = true;      
+    }
+    return damage;
   }
 
   void Attack_Cast(entt::registry &zone) {
@@ -57,21 +66,25 @@ namespace Combat_Control {
 	  auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
 	  auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
 	  /// calculate damage and show for player
-	  Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage};
+	  Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage, meleeDamage.critChance};
 	  int damage = Calculate_Damage(damageRange);
 
 	  if (zone.any_of<Component::Input>(entity)) {
-	    Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, false);
+	    Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, false, damageRange.critical);
 	  }
 
 	  auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
 
-	  if (meleeDamage.critical) {
+	  if (damageRange.critical) {
 	    struck.critical = true;
-	    auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
-	    targetAction.frame = 0;
-	    targetAction.state = Action_Component::struck;
 	  }
+	  
+	  if (damageRange.critical) {
+	    // auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
+	    // targetAction.frame = 0;
+	    // targetAction.state = Action_Component::struck;
+	  }
+	  
 	  struck.struck += damage;
 	  zone.remove<Component::Attacking>(entity);
 	}

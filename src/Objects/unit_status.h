@@ -5,6 +5,7 @@
 #include "tooltips.h"
 #include "graphics.h"
 #include "death_control.h"
+#include "utilities.h"
 //#include "include/box2d/box2d.h"
 
 
@@ -24,15 +25,17 @@ namespace Unit_Status {
       if (unitType == Component::Entity_Type::unit) {
 	for (int i = 0; i < collide.InteractionList.size(); i++) {
 	  if (collide.InteractionList[i].type == Component::Entity_Type::spell) {
-	    Component::Damage& damageRange = zone.get<Component::Damage>(collide.InteractionList[i].entity);
-	    int damage = Combat_Control::Calculate_Damage(damageRange);
+	    // Component::Damage& damageRange = zone.get<Component::Damage>(collide.InteractionList[i].entity);
+	    // int damage = Combat_Control::Calculate_Damage(damageRange);
 
-	    auto &caster_ID = zone.get<Component::Caster_ID>(collide.InteractionList[i].entity).caster_ID;
-	    Damage_Text::Add_To_Scrolling_Damage(zone, caster_ID, entity, damage, false);
-	    //std::cout << damage << std::endl;
-
-	    auto& struck = zone.get_or_emplace<Component::Struck>(entity);
-	    struck.struck += damage;
+	    // auto &caster_ID = zone.get<Component::Caster_ID>(collide.InteractionList[i].entity).caster_ID;
+	    // Damage_Text::Add_To_Scrolling_Damage(zone, caster_ID, entity, damage, false, damage);
+	    
+	    // auto& struck = zone.get_or_emplace<Component::Struck>(entity);
+	    // if (damageRange.critical) {
+	    //   struck.critical = true;
+	    // }
+	    // struck.struck += damage;
 	  }
 	}
       }
@@ -41,14 +44,26 @@ namespace Unit_Status {
   }
 
   void Update_Health(entt::registry& zone) {
-    auto view2 = zone.view<Component::Health, Component::Struck>();
+    auto view2 = zone.view<Component::Position, Component::Health, Component::Struck>();
     for (auto entity : view2) {
       auto& struck = view2.get<Component::Struck>(entity);
+      auto& position = view2.get<Component::Position>(entity);
       auto& health = view2.get<Component::Health>(entity).currentHealth;
       //std::cout << "health = " << health << std::endl;
       health -= struck.struck;
       struck.struck -= struck.struck;
 
+      if (struck.critical) {
+	//reset
+	struck.critical = false;
+	// spawn blood
+	std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
+	Collision::aabb aabb;
+	Component::Line_Segment line;
+	int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
+	Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line);
+      }
+      
       //if the soldier is in the assignment vector it will be set as dying if it dies
       if (health <= 0) {
 	if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
