@@ -21,7 +21,7 @@ namespace  Instant_Attack {
     damage *= 2.0f;
 
     if (zone.any_of<Component::Input>(entity)) {
-      Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, true, damageRange.critical);
+      // Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, , damageRange.critical);
     }
 
     auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);

@@ -1,4 +1,8 @@
+#pragma once
+#include "combat_control.h"
+#include "components.h"
 #include "instant_attack.h"
+#include "movement.h"
 
 namespace  Sinister_Strike {
 
@@ -9,24 +13,8 @@ namespace  Sinister_Strike {
 
     Action_Component::Set_State(action, Action_Component::attack2);
     auto &meleeDamage = zone.get<Component::Melee_Damage>(entity);
-
-    /// calculate damage and show for player
-    Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage, meleeDamage.critChance};
-    int damage = Combat_Control::Calculate_Damage(damageRange);
-    damage *= 2.0f;
-
-    if (zone.any_of<Component::Input>(entity)) {
-      Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, true, damageRange.critical);
-    }
-
-    auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
-
-    if (damageRange.critical) {
-      struck.critical = true;
-      auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
-      Action_Component::Set_State(targetAction, Action_Component::struck);
-    }
-   struck.struck += damage;
+    
+    Combat_Control::Queue_Hit(zone, entity, target_ID, meleeDamage, Component::skill, 5.0f, Component::Bonus_Damage_Type::add);   
   }
 
   //    have auto attacks "hit" at the start of the animation, the just process them after the swing timer ends

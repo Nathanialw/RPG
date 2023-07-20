@@ -1,4 +1,5 @@
 #pragma once
+#include "components.h"
 #include "movement.h"
 #include "collision.h"
 #include "combat_control.h"
@@ -206,7 +207,7 @@ namespace Spells {
       player = input;
     }
     if (World::zone.get<Component::Caster>(spell_ID).caster == player) {
-      Damage_Text::Add_To_Scrolling_Damage(World::zone, spell_ID, struck_ID, damage, false, damageRange.critical);
+      Damage_Text::Add_To_Scrolling_Damage(World::zone, spell_ID, struck_ID, damage, Component::fire, damageRange.critical);
     }
     auto& struck = World::zone.get_or_emplace<Component::Struck>(struck_ID);
     struck.struck += damage;

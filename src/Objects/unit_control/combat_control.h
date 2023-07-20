@@ -1,5 +1,4 @@
 #pragma once
-#include "entt/entt.hpp"
 #include "components.h"
 #include "movement.h"
 #include "damage_text.h"
@@ -7,9 +6,10 @@
 #include "combat_sounds.h"
 #include "combat_graphics.h"
 #include "utilities.h"
+#include <functional>
 
 namespace Combat_Control {
-  
+    
   int Calculate_Damage(Component::Damage& damageRange) {
     if (damageRange.minDamage == 0) {
       std::cout << "function Calculate_Damage() min damage range 0, divide by zero error" << std::endl;
@@ -55,6 +55,30 @@ namespace Combat_Control {
     //create SDL_FRect in front of unit, size from a size component on weapon
   }
 
+  void Queue_Hit(entt::registry &zone, entt::entity entity, entt::entity target_ID, Component::Melee_Damage meleeDamage, Component::Attack_Type type, float mod, Component::Bonus_Damage_Type bonusType) {
+    Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage, meleeDamage.critChance};
+
+    switch(bonusType) {
+    case Component::Bonus_Damage_Type::add: { damageRange.minDamage += mod; damageRange.maxDamage += mod; break; }
+    case Component::Bonus_Damage_Type::multiply: { damageRange.minDamage *= mod; damageRange.maxDamage *= mod; break; }
+    }
+    
+    int damage = Calculate_Damage(damageRange);
+    
+    if (zone.any_of<Component::Input>(entity)) {
+      Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, type, damageRange.critical);
+    }
+
+    auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
+    struck.struck += damage;
+
+    if (damageRange.critical) {
+      struck.critical = true;
+      auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
+      Action_Component::Set_State(targetAction, Action_Component::struck);
+    }	 
+  }
+
   void Attack_Target(entt::registry &zone) {
     auto view = zone.view<Component::Attacking, Action_Component::Action, Component::Melee_Damage>();
     for (auto entity : view) {
@@ -66,22 +90,8 @@ namespace Combat_Control {
 	  auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
 	  auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
 	  /// calculate damage and show for player
-	  Component::Damage damageRange = {meleeDamage.minDamage, meleeDamage.maxDamage, meleeDamage.critChance};
-	  int damage = Calculate_Damage(damageRange);
-
-	  if (zone.any_of<Component::Input>(entity)) {
-	    Damage_Text::Add_To_Scrolling_Damage(zone, entity, target_ID, damage, false, damageRange.critical);
-	  }
-
-	  auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
-	  struck.struck += damage;
-
-	  if (damageRange.critical) {
-	    struck.critical = true;
-	    auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
-	    Action_Component::Set_State(targetAction, Action_Component::struck);
-	  }	  
-
+	  Queue_Hit(zone, entity, target_ID, meleeDamage, Component::normal, 0.0f, Component::Bonus_Damage_Type::add);
+	  
 	  zone.remove<Component::Attacking>(entity);
 	}
       }

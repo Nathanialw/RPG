@@ -10,10 +10,10 @@ namespace Damage_Text {
 
   std::vector<Component::Scrolling_Damage_Text> damageTextQueue;
 
-  void Add_To_Scrolling_Damage(entt::registry& zone, entt::entity& entity, entt::entity& target, int& damage, bool special, bool critical) {
+  void Add_To_Scrolling_Damage(entt::registry& zone, entt::entity& entity, entt::entity& target, int& damage, Component::Attack_Type type, bool critical) {
     SDL_FPoint positionRect = { zone.get<Component::Position>(target).x, zone.get<Component::Position>(target).y - 60.0f };
 
-    Component::Scrolling_Damage_Text text = { positionRect, std::to_string(damage), 1000, special, critical };
+    Component::Scrolling_Damage_Text text = { positionRect, std::to_string(damage), 1000, type, critical };
     damageTextQueue.emplace_back(text);
   }
 
@@ -23,7 +23,7 @@ namespace Damage_Text {
       auto &i = damageTextQueue[j];
       SDL_Color color;
 
-      if (i.special) {
+      if (i.type == Component::skill) {
 	color = {250, 50, 55, 255};
       }
       else {
@@ -35,7 +35,7 @@ namespace Damage_Text {
       SDL_FRect textBox = {};
       float textSize = 20.0f;
       if (i.critical) {
-	textSize = 40.0f;
+	textSize = 30.0f;
       }
 
       textBox.w = i.damageText.length() * (textSize / 2.0f);

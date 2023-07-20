@@ -396,6 +396,18 @@ namespace Component {
     int counter = 0;
   };
 
+  enum Attack_Type {
+    normal,
+    skill,
+    fire,
+    frost
+  };
+
+  enum Bonus_Damage_Type {
+    add,
+    multiply
+  };
+
   struct In_Combat {
     bool combat;
   };
@@ -481,7 +493,7 @@ namespace Component {
     SDL_FPoint position;
     std::string damageText;
     int lingerTime;
-    bool special;
+    Attack_Type type;
     bool critical;
   };
 
