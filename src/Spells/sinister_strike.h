@@ -7,9 +7,7 @@ namespace  Sinister_Strike {
   void Attack(entt::registry &zone, entt::entity &entity, entt::entity &target_ID) {
     auto &action = zone.get<Action_Component::Action>(entity);
 
-    action.state = Action_Component::attack2;
-    action.frame = 0;
-    action.frameTime = 0;
+    Action_Component::Set_State(action, Action_Component::attack2);
     auto &meleeDamage = zone.get<Component::Melee_Damage>(entity);
 
     /// calculate damage and show for player
@@ -25,9 +23,8 @@ namespace  Sinister_Strike {
 
     if (damageRange.critical) {
       struck.critical = true;
-      //      auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
-      //targetAction.frame = 0;
-      ///targetAction.state = Action_Component::struck;
+      auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
+      Action_Component::Set_State(targetAction, Action_Component::struck);
     }
    struck.struck += damage;
   }

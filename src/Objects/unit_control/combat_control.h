@@ -40,11 +40,11 @@ namespace Combat_Control {
 	auto &angle = view.get<Component::Velocity>(entity).angle;
 	auto &target = view.get<Component::Attack>(entity);
 	auto &position = view.get<Component::Position>(entity);
-	direction = Movement::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
+
+        direction = Movement::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
 	attackSpeed.counter = attackSpeed.period;
-	///add attack state for render state
-	action.state = Action_Component::attack;
-	action.frame = 0;
+	Action_Component::Set_State(action, Action_Component::attack);
+	
 	zone.emplace_or_replace<Component::Attacking>(entity, target.target_ID);
 	zone.remove<Component::Attack>(entity);
       }
@@ -74,18 +74,14 @@ namespace Combat_Control {
 	  }
 
 	  auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
+	  struck.struck += damage;
 
 	  if (damageRange.critical) {
 	    struck.critical = true;
-	  }
-	  
-	  if (damageRange.critical) {
-	    // auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
-	    // targetAction.frame = 0;
-	    // targetAction.state = Action_Component::struck;
-	  }
-	  
-	  struck.struck += damage;
+	    auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
+	    Action_Component::Set_State(targetAction, Action_Component::struck);
+	  }	  
+
 	  zone.remove<Component::Attacking>(entity);
 	}
       }

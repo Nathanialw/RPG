@@ -36,9 +36,9 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
       else if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::attack2 && action.state != Action_Component::cast && action.state != Action_Component::casting) {
 	action.state = Action_Component::idle;
       }
-      else if (action.state == Action_Component::struck || action.state == Action_Component::attack || action.state == Action_Component::cast) {
-	action.state = Action_Component::idle;
-      }
+      /* else if (action.state == Action_Component::struck || action.state == Action_Component::attack || action.state == Action_Component::cast) { */
+      /* 	action.state = Action_Component::idle; */
+      /* } */
       action.frameState = Action_Component::mid;
     }
 
