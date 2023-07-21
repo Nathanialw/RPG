@@ -1,4 +1,5 @@
 #pragma once
+#include "action_components.h"
 #include "timer.h"
 #include "entity_control.h"
 #include "components.h"
@@ -25,7 +26,7 @@ namespace Movement {
 
   const float timeStep = 1.0f / 60.0f;
   void Update_Position() {
-    auto view = World::zone.view<Component::Position, Component::Velocity, Component::Moving, Component::Body>();
+    auto view = World::zone.view<Action_Component::Action, Component::Position, Component::Velocity, Component::Moving, Component::Body>();
     Update_Position_Poll += Timer::timeStep;
     float angleY = 0.0f;
     //std::cout << Update_Position_Poll << std::endl;
@@ -33,17 +34,15 @@ namespace Movement {
       for (auto entity : view) {
 	auto& velocity = view.get<Component::Velocity>(entity);
 	auto& position = view.get<Component::Position>(entity);
-
+	auto& action = view.get<Action_Component::Action>(entity);
+	
 	if (velocity.magnitude.x != 0 || velocity.magnitude.y != 0) {
-	  if (fabs(velocity.magnitude.x) < 0.01) { velocity.magnitude.x = 0; }; //clamp rounding errors
-	  if (fabs(velocity.magnitude.y) < 0.01) { velocity.magnitude.y = 0; };
+	  if (fabs(velocity.magnitude.x) < 0.1) { velocity.magnitude.x = 0; }; //clamp rounding errors
+	  if (fabs(velocity.magnitude.y) < 0.1) { velocity.magnitude.y = 0; };
 	  velocity.angle = atan2f(velocity.magnitude.x, velocity.magnitude.y);
 	  angleY = atan2f(velocity.magnitude.y, velocity.magnitude.x);
 	  float velocityX = sinf(velocity.angle) * velocity.speed;
 	  float velocityY = sinf(angleY) * velocity.speed;
-	  //                    velocity.dX = velocityX;
-	  //                    velocity.dY = velocityY;
-
 	  auto& pBody = view.get<Component::Body>(entity).body;
 
 	  velocity.dX = velocityX * (float)Update_Position_Poll * 5000000.0f;
@@ -52,13 +51,18 @@ namespace Movement {
 	  b2Vec2 impulse = { velocity.dX , velocity.dY };
 	  pBody->ApplyForce(impulse, pBody->GetWorldCenter(), true);
 	}
+
+	if  ((velocity.magnitude.x == 0.0f) && (velocity.magnitude.y == 0.0f))
+	  {
+	    World::zone.remove<Component::Moving>(entity);
+	    Action_Component::Set_State(action, Action_Component::idle);
+	    }
       }
       Update_Position_Poll = 0;
     }
   };
 
   Component::Direction Set_Direction(float angleInRadians) {
-
     if      (angleInRadians > 2.74889    || angleInRadians <= (-2.74889)) { return Component::Direction::N; }
     else if (angleInRadians > 1.96349    && angleInRadians <= (2.74889))  { return Component::Direction::NE; }
     else if (angleInRadians > 1.17809 	 && angleInRadians <= (1.96349))  { return Component::Direction::E; }
@@ -81,14 +85,14 @@ namespace Movement {
     auto view = World::zone.view<Component::Direction, Action_Component::Action, Component::Velocity, Component::Moving>();
     for (auto entity : view) {
       auto& vel = view.get<Component::Velocity>(entity);
-      auto& b = view.get<Component::Direction>(entity);
-      auto& c = view.get<Action_Component::Action>(entity);
+      auto& direction = view.get<Component::Direction>(entity);
+      auto& action = view.get<Action_Component::Action>(entity);
 
-      b = Set_Direction(vel.angle);
+      direction = Set_Direction(vel.angle);
 
-      if (c.state == Action_Component::walk) {
+      if (action.state == Action_Component::walk) {
 	if (vel.magnitude.x == 0 && vel.magnitude.y == 0) {
-	  c.state = Action_Component::idle;
+	  Action_Component::Set_State(action, Action_Component::idle);
 	};
       }
     }
@@ -118,7 +122,6 @@ namespace Movement {
       const auto& mov = view.get<Component::Mouse_Move>(entity);
       auto& action = view.get<Action_Component::Action>(entity);
 
-
       if (Check_If_Arrived(x.x, y.y, mov.fX_Destination, mov.fY_Destination)) {
 	if (action.state == Action_Component::walk) {
 	  v.magnitude.x = 0.0f;
@@ -139,19 +142,16 @@ namespace Movement {
       auto view = World::zone.view<Component::Position, Component::Velocity, Component::Mouse_Move, Action_Component::Action, Component::Moving, Component::Body>();
       for (auto entity : view) {
 	const auto& position = view.get<Component::Position>(entity);
-	auto& act = view.get<Action_Component::Action>(entity);
+	auto& action = view.get<Action_Component::Action>(entity);
 	auto& v = view.get<Component::Velocity>(entity);
 	auto& mov = view.get<Component::Mouse_Move>(entity);
 
-	//                temporary fix so the player can move and use an instant attack and still get the animation
-	if (act.state != Action_Component::attack2) {
-	  act.state = Action_Component::walk;
-	}
+    if (action.state == Action_Component::idle) {
+        Action_Component::Set_State(action, Action_Component::walk);
+    }
 
 	v.magnitude.x = v.speed * (mov.fX_Destination - position.x);
 	v.magnitude.y = v.speed * (mov.fY_Destination - position.y);
-	auto& pBody = view.get<Component::Body>(entity).body;
-	//	pBody->ApplyAngularImpulse(5.1f, true);
       }
     }
   }
@@ -161,13 +161,13 @@ namespace Movement {
     if (linearMovePoll >= 50) {
       auto view = World::zone.view<Component::Velocity, Action_Component::Action, Component::Moving, Component::Linear_Move, Component::Spell_Range>();
       for (auto entity : view) {
-	auto& act = view.get<Action_Component::Action>(entity);
+	auto& action = view.get<Action_Component::Action>(entity);
 	auto& v = view.get<Component::Velocity>(entity);
 	auto& mov = view.get<Component::Linear_Move>(entity);
 	auto& range = view.get<Component::Spell_Range>(entity);
 
 	if (range.fRange <= 1500) {
-	  act.state = Action_Component::walk;
+	  Action_Component::Set_State(action, Action_Component::walk);
 	  v.magnitude.x = v.speed * (mov.fX_Direction - range.fSourceX);
 	  v.magnitude.y = v.speed * (mov.fY_Direction - range.fSourceY);
 	  range.fRange += linearMovePoll;

@@ -12,7 +12,7 @@ set(ARCH amd64)
 #set (CMAKE_CXX_COMPILER "/usr/bin/clang++")
 set (CMAKE_CXX_FLAGS "-Wno-deprecated")
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std = c++11")
-
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include_directories(include)
 include_directories(src)
 

@@ -16,8 +16,10 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
   if (action.frameState == Action_Component::last) {
     if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses && (action.state != Action_Component::dying || action.state != Action_Component::dead)) {
       if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
+
 	action.state = Action_Component::idle2;
 	action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
+    action.frame = 0;
 	action.frameState = Action_Component::start;
       }
     }
@@ -33,11 +35,12 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
       if (action.state == Action_Component::dying || action.state == Action_Component::dead) {
 
       }
-      else if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::attack2 && action.state != Action_Component::cast && action.state != Action_Component::casting) {
-	action.state = Action_Component::idle;
+      //without this line teh frames break and I don't know why
+      else if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::attack2 && action.state != Action_Component::cast && action.state != Action_Component::casting &&action.state != Action_Component::talk) {
+          Action_Component::Set_State(action, Action_Component::idle);
       }
       /* else if (action.state == Action_Component::struck || action.state == Action_Component::attack || action.state == Action_Component::cast) { */
-      /* 	action.state = Action_Component::idle; */
+        //Action_Component::Set_State(action, Action_Component::idle);
       /* } */
       action.frameState = Action_Component::mid;
     }

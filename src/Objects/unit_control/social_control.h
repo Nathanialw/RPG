@@ -159,8 +159,7 @@ namespace  Social_Control {
 
   void Greet (entt::registry &zone, entt::entity &unitID, entt::entity &targetID) {
     auto &action = zone.get<Action_Component::Action>(unitID);
-    action.state = Action_Component::talk;
-    action.frame = 0;
+      Action_Component::Set_State(action, Action_Component::talk);
 
     std::string text_type = "greeting";
     Interact(zone, unitID, text_type);

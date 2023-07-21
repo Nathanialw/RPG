@@ -580,7 +580,7 @@
  <tile id="72">
   <image width="97" height="90" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush1_1.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="32.75" y="72.25">
+   <object id="1" x="42.75" y="60.25">
     <point/>
    </object>
   </objectgroup>
@@ -588,7 +588,7 @@
  <tile id="73">
   <image width="90" height="89" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush1_2.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="43" y="74.25">
+   <object id="1" x="43.6667" y="60.9167">
     <point/>
    </object>
   </objectgroup>
@@ -596,7 +596,7 @@
  <tile id="74">
   <image width="89" height="90" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush1_3.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="35" y="70.5">
+   <object id="1" x="37.6667" y="55.1667">
     <point/>
    </object>
   </objectgroup>
@@ -604,7 +604,7 @@
  <tile id="75">
   <image width="88" height="85" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush1_4.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="33" y="57.5">
+   <object id="1" x="37" y="54.1667">
     <point/>
    </object>
   </objectgroup>
@@ -644,7 +644,7 @@
  <tile id="80">
   <image width="85" height="82" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush2_1.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="42.75" y="70">
+   <object id="1" x="40.75" y="56.6667">
     <point/>
    </object>
   </objectgroup>
@@ -652,7 +652,7 @@
  <tile id="81">
   <image width="78" height="91" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush2_2.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="38.25" y="61.5">
+   <object id="1" x="40.25" y="56.1667">
     <point/>
    </object>
   </objectgroup>
@@ -660,7 +660,7 @@
  <tile id="82">
   <image width="86" height="91" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush2_3.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="27.5" y="61.5">
+   <object id="1" x="31.5" y="61.5">
     <point/>
    </object>
   </objectgroup>
@@ -668,7 +668,7 @@
  <tile id="83">
   <image width="85" height="87" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush2_4.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="40" y="63.75">
+   <object id="1" x="35.3333" y="56.4167">
     <point/>
    </object>
   </objectgroup>
@@ -708,7 +708,7 @@
  <tile id="88">
   <image width="81" height="92" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush3_1.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="36.75" y="63.5">
+   <object id="1" x="34.75" y="62.1667">
     <point/>
    </object>
   </objectgroup>
@@ -716,7 +716,7 @@
  <tile id="89">
   <image width="86" height="84" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush3_2.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="40" y="58.5">
+   <object id="1" x="36.6667" y="56.5">
     <point/>
    </object>
   </objectgroup>
@@ -771,15 +771,35 @@
  </tile>
  <tile id="96">
   <image width="117" height="80" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush4_1.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="53.3333" y="46.6667">
+    <point/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="97">
   <image width="73" height="109" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush4_2.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="33.3333" y="68.6667">
+    <point/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="98">
   <image width="104" height="99" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush4_3.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="45.3333" y="54.6667">
+    <point/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="99">
   <image width="105" height="98" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush4_4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="40" y="62">
+    <point/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="100">
   <image width="154" height="121" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush4_5.png"/>
@@ -824,7 +844,7 @@
  <tile id="105">
   <image width="90" height="81" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush5_2.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="42.25" y="58.5">
+   <object id="1" x="40.25" y="51.1667">
     <point/>
    </object>
   </objectgroup>
@@ -832,7 +852,7 @@
  <tile id="106">
   <image width="94" height="83" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush5_3.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="44.5" y="58">
+   <object id="1" x="36.5" y="52.6667">
     <point/>
    </object>
   </objectgroup>
@@ -840,7 +860,7 @@
  <tile id="107">
   <image width="92" height="81" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush5_4.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="49.25" y="60.75">
+   <object id="1" x="42.5833" y="51.4167">
     <point/>
    </object>
   </objectgroup>
@@ -880,7 +900,7 @@
  <tile id="112">
   <image width="79" height="70" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush6_1.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="32.75" y="45">
+   <object id="1" x="33.4167" y="40.3333">
     <point/>
    </object>
   </objectgroup>
@@ -896,7 +916,7 @@
  <tile id="114">
   <image width="71" height="75" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush6_3.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="32.5" y="49">
+   <object id="1" x="30.5" y="43.6667">
     <point/>
    </object>
   </objectgroup>
@@ -904,7 +924,7 @@
  <tile id="115">
   <image width="84" height="70" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush6_4.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="37" y="51.75">
+   <object id="1" x="36.3333" y="43.75">
     <point/>
    </object>
   </objectgroup>

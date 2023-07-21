@@ -38,9 +38,9 @@ void Update_Frame(entt::entity entity, Component::Scale scale, Rendering_Compone
       if (action.frameState == Action_Component::start) {
 
 	if (action.state != Action_Component::walk && action.state != Action_Component::struck && action.state != Action_Component::attack && action.state != Action_Component::attack2 && action.state != Action_Component::dying && action.state != Action_Component::dead) {
-	  action.state = Action_Component::idle;
+        Action_Component::Set_State(action, Action_Component::idle);
 	} else if (action.state == Action_Component::struck || action.state == Action_Component::attack) {
-	  action.state = Action_Component::idle;
+        Action_Component::Set_State(action, Action_Component::idle);
 	}
 	action.frameState = Action_Component::mid;
       }
@@ -76,7 +76,7 @@ void Update_Frame(entt::entity entity, Component::Scale scale, Rendering_Compone
 	  action.frameState = Action_Component::last;
 	}
 	if (action.state == Action_Component::attack2) {
-	  action.state = Action_Component::idle;
+        Action_Component::Set_State(action, Action_Component::idle);
 	}
 	action.frame = 0;
       }

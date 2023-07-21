@@ -263,7 +263,6 @@ namespace User_Mouse_Input {
       zone.clear<Component::Selected>();
       Mouse::bLeft_Mouse_Pressed = false;
     }
-
   }
 
   void Update_Move_Command_Box () {

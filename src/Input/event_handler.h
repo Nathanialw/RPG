@@ -1,5 +1,7 @@
 #pragma once
 #include <SDL2/SDL.h>
+#include "action_components.h"
+#include "components.h"
 #include "ui.h"
 #include "timer.h"
 #include "utilities.h"
@@ -29,14 +31,14 @@ namespace Event_Handler {
 	  if (Events::event.type == SDL_KEYDOWN) {
 	    auto& vel = zone.get<Component::Velocity>(entity);
 	    switch (Events::event.key.keysym.sym) {
-	    case SDLK_w:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_s:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_a:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x -= vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_d:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x += vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_q:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x -= vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_e:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x += vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_c:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x += vel.speed; act.state = Action_Component::walk; break;
-	    case SDLK_z:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x -= vel.speed; act.state = Action_Component::walk; break;
+	    case SDLK_w:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
+	    case SDLK_s:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
+	    case SDLK_a:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x -= vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
+	    case SDLK_d:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.x += vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
+	    case SDLK_q:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x -= vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
+	    case SDLK_e:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; vel.magnitude.x += vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
+	    case SDLK_c:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x += vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
+	    case SDLK_z:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; vel.magnitude.x -= vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
 	    }
 	  }
 	}
@@ -55,15 +57,12 @@ namespace Event_Handler {
 	  case SDLK_z: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
 	  }
       }
+      
       auto& vel = zone.get<Component::Velocity>(entity);
       if (act.state == Action_Component::attack) {
 	vel.magnitude.x = 0.0f;
 	vel.magnitude.y = 0.0f;
       }      
-      else if  ((vel.magnitude.x == 0.0f) && (vel.magnitude.y == 0.0f) && zone.any_of<Component::Moving>(entity)) {
-	zone.remove<Component::Moving>(entity);
-	act.state = Action_Component::idle;
-      }
     }
   };
   
@@ -134,12 +133,13 @@ namespace Event_Handler {
 	  }
 	}
 	if (Mouse::itemCurrentlyHeld == false) {
-	  User_Mouse_Input::Update_Move_Command_Box();
 	  if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition)) {
 	    Mouse::bRight_Mouse_Pressed = false; //otherwise mouse move will override attack move
 	  }
-	  else {
-	  }
+        else if (!Mouse::bRight_Mouse_Pressed) {
+            User_Mouse_Input::Update_Move_Command_Box();
+            // if not seleciton units
+        }
 	}
 	else {
 	  UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);

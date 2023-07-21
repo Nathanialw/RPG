@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="6333">
+<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="6336">
  <tileset firstgid="1" source="../sprite_sheets/ground_tiles/grassland_tiles_x2.tsx"/>
  <tileset firstgid="673" source="../sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx"/>
  <tileset firstgid="674" source="../sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx"/>
@@ -526,15 +526,15 @@
   <object id="6276" gid="55259" x="27435.1" y="27516.9" width="79" height="73"/>
   <object id="6277" gid="55256" x="27407.2" y="27487.5" width="74" height="62"/>
   <object id="6288" gid="54793" x="27273.6" y="27385.8" width="631" height="723"/>
-  <object id="6289" gid="54832" x="27047.8" y="27753.5" width="466" height="728"/>
+  <object id="6289" gid="54832" x="26995.6" y="27779.8" width="466" height="728"/>
   <object id="6290" gid="54885" x="27284.8" y="27390.5" width="176" height="143"/>
   <object id="6291" gid="54885" x="27197.8" y="27383.5" width="176" height="143"/>
   <object id="6292" gid="54983" x="27019.1" y="27738.3" width="81" height="68"/>
   <object id="6296" gid="54816" x="27379.3" y="27164" width="708" height="710"/>
-  <object id="6297" gid="54898" x="27044.3" y="27549" width="90" height="81"/>
+  <object id="6297" gid="54898" x="27040.6" y="27579.8" width="90" height="81"/>
   <object id="6298" gid="54898" x="27051.3" y="27526" width="90" height="81"/>
-  <object id="6299" gid="54898" x="27066.8" y="27484.5" width="90" height="81"/>
-  <object id="6300" gid="55002" x="27082.1" y="27525.3" width="79" height="76"/>
+  <object id="6299" gid="54898" x="27083.1" y="27465.3" width="90" height="81"/>
+  <object id="6300" gid="55002" x="27103.3" y="27558" width="79" height="76"/>
   <object id="6301" gid="55122" x="27064.3" y="27531" width="24" height="29"/>
   <object id="6302" gid="54794" x="27041.6" y="27417.8" width="631" height="723"/>
   <object id="6303" gid="54797" x="26712.1" y="27355.3" width="631" height="723"/>
@@ -558,5 +558,8 @@
   <object id="6330" gid="55643" x="27941.8" y="27889.5" width="32" height="32"/>
   <object id="6331" gid="54793" x="27941.4" y="27296.6" width="631" height="723"/>
   <object id="6332" gid="54793" x="28544.8" y="28098.6" width="631" height="723"/>
+  <object id="6333" gid="37938" x="27198.1" y="27433.3" width="102" height="53"/>
+  <object id="6334" gid="38766" x="27301.8" y="27493.5" width="12" height="33"/>
+  <object id="6335" gid="36483" x="27469.6" y="27409.8" width="31" height="75"/>
  </objectgroup>
 </map>

@@ -67,6 +67,9 @@ namespace Action_Component {
     };
 
     void Set_State(Action &action, Action_State state) {
+        if (action.state == state) {
+            return;
+        }
         action.state = state;
         action.frameState = start;
         action.frameTime = 0;

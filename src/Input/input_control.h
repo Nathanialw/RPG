@@ -1,4 +1,5 @@
 #pragma once
+#include "action_components.h"
 #include "entt/entt.hpp"
 #include "components.h"
 #include "mouse_control.h"
@@ -12,7 +13,7 @@ namespace Input_Control {
   void Pick_Up_Item_Order(entt::registry& zone, entt::entity& entity, entt::entity& Item_ID, float& x, float& y) {
     zone.emplace_or_replace<Component::Pickup_Item>(entity, Item_ID, x, y);
     zone.emplace_or_replace<Component::Moving>(entity);
-    zone.remove<Component::Mouse_Move>(entity);
+    zone.remove<Component::Mouse_Move>(entity);    
   }
 
   bool Move_To_Item_From_Name(entt::registry& zone, entt::entity& player_ID, Component::Position& playerPosition, entt::entity item_ID){
@@ -31,7 +32,7 @@ namespace Input_Control {
       UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
 
       auto &action = zone.get<Action_Component::Action>(player_ID);
-      action.state = Action_Component::idle;
+      Action_Component::Set_State(action, Action_Component::idle);
 
       zone.remove<Component::Moving>(player_ID);
       zone.remove<Component::Pickup_Item>(player_ID);
@@ -103,7 +104,7 @@ namespace Input_Control {
 	      UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
 	      ///stop movement
 	      auto &action = zone.get<Action_Component::Action>(player_ID);
-	      action.state = Action_Component::idle;
+            Action_Component::Set_State(action, Action_Component::idle);
 	      zone.remove<Component::Moving>(player_ID);
 	      return true;
 	    } else {
@@ -157,7 +158,7 @@ namespace Input_Control {
 	      //                            UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
 	      //                            ///stop movement
 	      //                            auto &action = zone.get<Component::Action>(player_ID);
-	      //                            action.state = Component::idle;
+//            Action_Component::Set_State(action, Action_Component::idle);
 	      //                            zone.remove<Component::Moving>(player_ID);
 	      //                            return true;
 	      //                        } else {

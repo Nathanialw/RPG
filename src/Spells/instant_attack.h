@@ -11,8 +11,7 @@ namespace  Instant_Attack {
   void Attack(entt::registry &zone, entt::entity &entity, entt::entity &target_ID) {
     auto &action = zone.get<Action_Component::Action>(entity);
 
-    action.state = Action_Component::attack2;
-    action.frame = 0;
+    Action_Component::Set_State(action, Action_Component::attack2);
     auto &meleeDamage = zone.get<Component::Melee_Damage>(entity);
 
     /// calculate damage and show for player

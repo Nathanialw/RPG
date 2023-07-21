@@ -459,7 +459,7 @@ namespace UI {
 	auto& action = view.get<Action_Component::Action>(entity);
 	auto& v = view.get<Component::Velocity>(entity);
 	auto& mov = view.get<Component::Pickup_Item>(entity);
-	action.state = Action_Component::walk;
+          Action_Component::Set_State(action, Action_Component::walk);
 	v.magnitude.x = v.speed * (mov.x - x.x);
 	v.magnitude.y = v.speed * (mov.y - y.y);
 
