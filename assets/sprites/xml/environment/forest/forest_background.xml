@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:06ee94fc5d25720360690bfeccbb4364:c554a666bdb0ed6bc48b4248c1050ece:e4f45d31c9e710e3b5cf20efa8c82429$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="forest_background.png" width="9506" height="512">
+    <sprite n="Flower34_1" x="9305" y="117" w="154" h="110" oX="0" oY="0" oW="156" oH="115"/>
+    <sprite n="Flower34_2" x="9227" y="1" w="152" h="114" oX="0" oY="0" oW="154" oH="118"/>
+    <sprite n="Flower34_3" x="1438" y="362" w="182" h="148" oX="0" oY="0" oW="184" oH="154"/>
+    <sprite n="Flower34_4" x="7559" y="268" w="203" h="130" oX="0" oY="0" oW="207" oH="135"/>
+    <sprite n="Flower35_1" x="7601" y="400" w="154" h="111" oX="0" oY="0" oW="156" oH="115"/>
+    <sprite n="Flower35_2" x="9207" y="364" w="152" h="114" oX="0" oY="0" oW="154" oH="118"/>
+    <sprite n="Flower35_3" x="4354" y="340" w="182" h="148" oX="0" oY="0" oW="184" oH="154"/>
+    <sprite n="Flower35_4" x="7762" y="134" w="203" h="130" oX="1" oY="0" oW="208" oH="135"/>
+    <sprite n="Flower36_1" x="7757" y="400" w="154" h="111" oX="0" oY="0" oW="156" oH="115"/>
+    <sprite n="Flower36_2" x="9231" y="239" w="152" h="114" oX="0" oY="0" oW="154" oH="118"/>
+    <sprite n="Flower36_3" x="1253" y="362" w="183" h="149" oX="0" oY="0" oW="184" oH="154"/>
+    <sprite n="Flower36_4" x="7867" y="1" w="203" h="130" oX="0" oY="0" oW="207" oH="135"/>
+    <sprite n="Flower37_1" x="8894" y="373" w="159" h="121" oX="0" oY="0" oW="162" oH="122"/>
+    <sprite n="Flower37_2" x="9055" y="371" w="150" h="116" oX="1" oY="0" oW="151" oH="121"/>
+    <sprite n="Flower37_3" x="4178" y="345" w="174" h="151" oX="1" oY="0" oW="179" oH="155"/>
+    <sprite n="Flower37_4" x="7552" y="135" w="208" h="131" oX="0" oY="0" oW="210" oH="136"/>
+    <sprite n="Flower38_1" x="8918" y="248" w="159" h="121" oX="0" oY="0" oW="162" oH="122"/>
+    <sprite n="Flower38_2" x="9079" y="246" w="150" h="116" oX="0" oY="0" oW="151" oH="121"/>
+    <sprite n="Flower38_3" x="4001" y="345" w="175" h="151" oX="0" oY="0" oW="179" oH="155"/>
+    <sprite n="Flower38_4" x="7447" y="1" w="208" h="132" oX="0" oY="0" oW="210" oH="136"/>
+    <sprite n="Flower39_1" x="8892" y="1" w="160" h="121" oX="0" oY="0" oW="162" oH="122"/>
+    <sprite n="Flower39_2" x="8071" y="395" w="151" h="116" oX="0" oY="0" oW="151" oH="121"/>
+    <sprite n="Flower39_3" x="3507" y="346" w="175" h="152" oX="0" oY="0" oW="179" oH="155"/>
+    <sprite n="Flower39_4" x="7657" y="1" w="208" h="131" oX="0" oY="0" oW="210" oH="136"/>
+    <sprite n="Flower40_1" x="8430" y="256" w="166" h="123" oX="0" oY="0" oW="173" oH="129"/>
+    <sprite n="Flower40_2" x="7379" y="138" w="171" h="133" oX="0" oY="1" oW="178" oH="135"/>
+    <sprite n="Flower40_3" x="7027" y="286" w="199" h="139" oX="1" oY="0" oW="202" oH="142"/>
+    <sprite n="Flower40_4" x="5177" y="328" w="193" h="145" oX="0" oY="0" oW="197" oH="150"/>
+    <sprite n="Flower41_1" x="8262" y="257" w="166" h="125" oX="0" oY="0" oW="173" oH="129"/>
+    <sprite n="Flower41_2" x="7228" y="282" w="171" h="135" oX="0" oY="0" oW="178" oH="135"/>
+    <sprite n="Flower41_3" x="6934" y="1" w="200" h="141" oX="0" oY="0" oW="202" oH="143"/>
+    <sprite n="Flower41_4" x="4982" y="328" w="193" h="147" oX="0" oY="0" oW="197" oH="150"/>
+    <sprite n="Flower42_1" x="8293" y="129" w="166" h="125" oX="0" oY="0" oW="173" oH="129"/>
+    <sprite n="Flower42_2" x="7273" y="1" w="172" h="135" oX="0" oY="0" oW="178" oH="135"/>
+    <sprite n="Flower42_3" x="7017" y="144" w="200" h="140" oX="0" oY="0" oW="202" oH="143"/>
+    <sprite n="Flower42_4" x="4665" y="340" w="194" h="147" oX="0" oY="0" oW="197" oH="150"/>
+    <sprite n="Flower_33" x="9461" y="1" w="44" h="44"/>
+    <sprite n="Flower_34" x="9461" y="92" w="44" h="42"/>
+    <sprite n="Grass1_1" x="8072" y="1" w="157" h="126" oX="0" oY="0" oW="161" oH="126"/>
+    <sprite n="Grass1_2" x="8733" y="1" w="157" h="122" oX="0" oY="0" oW="159" oH="123"/>
+    <sprite n="Grass1_3" x="2865" y="349" w="205" h="156" oX="1" oY="0" oW="212" oH="157"/>
+    <sprite n="Grass1_4" x="2662" y="349" w="201" h="159" oX="0" oY="0" oW="203" oH="160"/>
+    <sprite n="Grass2" x="1" y="1" w="508" h="500" oX="4" oY="2" oW="512" oH="505"/>
+    <sprite n="Grass2_1" x="8135" y="129" w="156" h="126" oX="1" oY="1" oW="160" oH="127"/>
+    <sprite n="Grass2_2" x="8735" y="375" w="157" h="122" oX="0" oY="1" oW="159" oH="125"/>
+    <sprite n="Grass2_3" x="3072" y="348" w="204" h="156" oX="3" oY="1" oW="213" oH="157"/>
+    <sprite n="Grass2_4" x="2249" y="350" w="201" h="160" oX="0" oY="0" oW="204" oH="160"/>
+    <sprite n="Grass3" x="511" y="1" w="512" h="404"/>
+    <sprite n="Grass3_1" x="8598" y="251" w="159" h="122" oX="0" oY="0" oW="163" oH="122"/>
+    <sprite n="Grass3_2" x="8103" y="261" w="157" h="126" oX="0" oY="0" oW="161" oH="127"/>
+    <sprite n="Grass3_3" x="6024" y="310" w="203" h="143" oX="1" oY="3" oW="206" oH="146"/>
+    <sprite n="Grass3_4" x="1063" y="362" w="188" h="149" oX="0" oY="3" oW="190" oH="154"/>
+    <sprite n="Grass4_1" x="8619" y="125" w="158" h="122" oX="1" oY="0" oW="164" oH="122"/>
+    <sprite n="Grass4_2" x="8231" y="1" w="156" h="126" oX="1" oY="0" oW="161" oH="127"/>
+    <sprite n="Grass4_3" x="5819" y="310" w="203" h="144" oX="0" oY="2" oW="205" oH="146"/>
+    <sprite n="Grass4_4" x="3810" y="346" w="189" h="151" oX="0" oY="1" oW="191" oH="152"/>
+    <sprite n="Grass5_1" x="8570" y="1" w="161" h="122" oX="0" oY="0" oW="164" oH="122"/>
+    <sprite n="Grass5_2" x="8759" y="249" w="157" h="122" oX="0" oY="1" oW="163" oH="124"/>
+    <sprite n="Grass5_3" x="1622" y="351" w="208" h="160" oX="0" oY="0" oW="212" oH="160"/>
+    <sprite n="Grass5_4" x="2452" y="349" w="208" h="159" oX="5" oY="0" oW="216" oH="159"/>
+    <sprite n="Grass6_1" x="8572" y="381" w="161" h="122" oX="0" oY="0" oW="165" oH="122"/>
+    <sprite n="Grass6_2" x="8461" y="126" w="156" h="123" oX="0" oY="0" oW="162" oH="123"/>
+    <sprite n="Grass6_3" x="2041" y="350" w="206" h="160" oX="1" oY="0" oW="212" oH="160"/>
+    <sprite n="Grass6_4" x="1832" y="351" w="207" h="160" oX="5" oY="0" oW="216" oH="160"/>
+    <sprite n="Grass19_1" x="4350" y="1" w="479" h="337" oX="0" oY="8" oW="491" oH="353"/>
+    <sprite n="Grass19_2" x="2909" y="1" w="476" h="345" oX="1" oY="7" oW="489" oH="359"/>
+    <sprite n="Grass19_3" x="3864" y="1" w="484" h="342" oX="5" oY="3" oW="497" oH="351"/>
+    <sprite n="Grass19_4" x="1960" y="1" w="471" h="347" oX="7" oY="11" oW="485" oH="361"/>
+    <sprite n="Grass20_1" x="3387" y="1" w="475" h="343" oX="2" oY="4" oW="487" oH="349"/>
+    <sprite n="Grass20_2" x="1494" y="1" w="464" h="348" oX="0" oY="3" oW="471" oH="360"/>
+    <sprite n="Grass20_3" x="1025" y="1" w="467" h="359" oX="4" oY="0" oW="475" oH="362"/>
+    <sprite n="Grass20_4" x="2433" y="1" w="474" h="346" oX="3" oY="3" oW="482" oH="352"/>
+    <sprite n="Grass21_1" x="5988" y="1" w="242" h="241" oX="9" oY="0" oW="263" oH="241"/>
+    <sprite n="Grass21_2" x="5572" y="1" w="414" h="307"/>
+    <sprite n="Grass21_3" x="5245" y="1" w="325" h="310" oX="38" oY="15" oW="412" oH="325"/>
+    <sprite n="Grass21_4" x="4831" y="1" w="412" h="325"/>
+    <sprite n="GroundCover_1" x="6232" y="1" w="242" h="241" oX="12" oY="3" oW="286" oH="244"/>
+    <sprite n="GroundCover_2" x="6712" y="1" w="220" h="209" oX="0" oY="0" oW="224" oH="209"/>
+    <sprite n="GroundCover_3" x="6229" y="308" w="220" h="203"/>
+    <sprite n="GroundCover_4" x="5403" y="313" w="206" h="197"/>
+    <sprite n="GroundCover_5" x="5611" y="310" w="206" h="195"/>
+    <sprite n="GroundCover_6" x="6476" y="1" w="234" h="209" oX="0" oY="0" oW="235" oH="209"/>
+    <sprite n="GroundCover_7" x="6451" y="307" w="232" h="204"/>
+    <sprite n="GroundCover_8" x="6685" y="307" w="209" h="204"/>
+    <sprite n="GroundCover_9" x="7086" y="427" w="74" h="75" oX="8" oY="14" oW="96" oH="96"/>
+    <sprite n="GroundCover_10" x="7162" y="427" w="74" h="74" oX="11" oY="12" oW="96" oH="96"/>
+    <sprite n="Ivy1_1" x="7401" y="273" w="156" h="132"/>
+    <sprite n="Ivy1_2" x="7913" y="397" w="156" h="114"/>
+    <sprite n="Ivy1_3" x="9143" y="122" w="160" h="115"/>
+    <sprite n="Ivy1_4" x="7219" y="143" w="158" h="137"/>
+    <sprite n="Ivy1_5" x="8952" y="124" w="189" h="120"/>
+    <sprite n="Ivy1_6" x="4538" y="340" w="125" h="148"/>
+    <sprite n="Ivy1_7" x="6896" y="297" w="129" h="142"/>
+    <sprite n="Ivy1_8" x="511" y="407" w="191" h="103"/>
+    <sprite n="Medieval_Expansion_Trees_68" x="9361" y="355" w="127" h="50"/>
+    <sprite n="Mushroom1_01" x="9414" y="407" w="45" h="42" oX="1" oY="0" oW="49" oH="43"/>
+    <sprite n="Mushroom1_02" x="9385" y="270" w="53" h="40" oX="1" oY="0" oW="56" oH="41"/>
+    <sprite n="Mushroom1_03" x="9361" y="453" w="49" h="44" oX="0" oY="0" oW="52" oH="44"/>
+    <sprite n="Mushroom1_04" x="9433" y="312" w="50" h="39" oX="0" oY="0" oW="53" oH="41"/>
+    <sprite n="Mushroom2_01" x="6607" y="241" w="69" h="59" oX="1" oY="0" oW="74" oH="61"/>
+    <sprite n="Mushroom2_02" x="9381" y="56" w="62" h="53" oX="1" oY="1" oW="69" oH="58"/>
+    <sprite n="Mushroom2_03" x="6243" y="244" w="70" h="62" oX="0" oY="0" oW="74" oH="63"/>
+    <sprite n="Mushroom2_04" x="5896" y="456" w="67" h="55" oX="1" oY="0" oW="72" oH="57"/>
+    <sprite n="Mushroom3_01" x="9461" y="47" w="44" h="43" oX="0" oY="0" oW="48" oH="46"/>
+    <sprite n="Mushroom3_02" x="9445" y="259" w="54" h="39" oX="0" oY="0" oW="57" oH="41"/>
+    <sprite n="Mushroom3_03" x="7523" y="462" w="42" h="46" oX="0" oY="0" oW="45" oH="49"/>
+    <sprite n="Mushroom3_04" x="9385" y="229" w="58" h="39" oX="0" oY="0" oW="61" oH="39"/>
+    <sprite n="Mushroom4_01" x="7512" y="407" w="73" h="53" oX="0" oY="0" oW="75" oH="54"/>
+    <sprite n="Mushroom4_02" x="7392" y="419" w="69" h="57" oX="1" oY="1" oW="71" oH="59"/>
+    <sprite n="Mushroom4_03" x="5965" y="456" w="73" h="54" oX="1" oY="0" oW="75" oH="56"/>
+    <sprite n="Mushroom4_04" x="6118" y="455" w="73" h="56" oX="0" oY="0" oW="74" oH="57"/>
+    <sprite n="Mushroom5_01" x="5988" y="244" w="84" h="64" oX="1" oY="0" oW="86" oH="64"/>
+    <sprite n="Mushroom5_02" x="6156" y="244" w="85" h="62" oX="0" oY="0" oW="86" oH="63"/>
+    <sprite n="Mushroom5_03" x="6896" y="441" w="92" h="69" oX="0" oY="1" oW="94" oH="71"/>
+    <sprite n="Mushroom5_04" x="6990" y="441" w="94" h="68" oX="0" oY="0" oW="95" oH="69"/>
+    <sprite n="Mushroom6_01" x="6040" y="455" w="76" h="56" oX="0" oY="1" oW="77" oH="58"/>
+    <sprite n="Mushroom6_02" x="7238" y="419" w="76" h="57" oX="0" oY="0" oW="77" oH="58"/>
+    <sprite n="Mushroom6_03" x="6934" y="144" w="81" h="57" oX="0" oY="0" oW="83" oH="59"/>
+    <sprite n="Mushroom6_04" x="6528" y="243" w="77" h="61" oX="0" oY="1" oW="78" oH="62"/>
+    <sprite n="Mushroom7_01" x="7316" y="419" w="74" h="57" oX="0" oY="0" oW="76" oH="58"/>
+    <sprite n="Mushroom7_02" x="5819" y="456" w="75" h="55" oX="0" oY="0" oW="76" oH="57"/>
+    <sprite n="Mushroom7_03" x="6074" y="244" w="80" h="64" oX="1" oY="0" oW="84" oH="65"/>
+    <sprite n="Mushroom7_04" x="6359" y="244" w="86" h="61" oX="1" oY="0" oW="89" oH="62"/>
+    <sprite n="Mushroom8_01" x="6565" y="212" w="32" h="29" oX="0" oY="0" oW="33" oH="30"/>
+    <sprite n="Mushroom8_02" x="6675" y="212" w="31" h="26" oX="0" oY="0" oW="32" oH="27"/>
+    <sprite n="Mushroom8_03" x="6637" y="212" w="36" h="26" oX="0" oY="0" oW="37" oH="26"/>
+    <sprite n="Mushroom8_04" x="9207" y="480" w="31" h="24" oX="0" oY="0" oW="33" oH="27"/>
+    <sprite n="Mushroom9_01" x="5329" y="475" w="35" h="35" oX="0" oY="0" oW="39" oH="35"/>
+    <sprite n="Mushroom9_02" x="6599" y="212" w="36" h="27" oX="1" oY="1" oW="39" oH="33"/>
+    <sprite n="Mushroom9_03" x="7441" y="478" w="31" h="31" oX="2" oY="1" oW="36" oH="33"/>
+    <sprite n="Mushroom9_04" x="6193" y="455" w="33" h="27" oX="1" oY="0" oW="37" oH="30"/>
+    <sprite n="Mushroom10_01" x="7326" y="478" w="38" h="31" oX="1" oY="1" oW="40" oH="34"/>
+    <sprite n="Mushroom10_02" x="7366" y="478" w="36" h="31" oX="0" oY="0" oW="38" oH="32"/>
+    <sprite n="Mushroom10_03" x="9461" y="178" w="37" h="37" oX="1" oY="0" oW="38" oH="38"/>
+    <sprite n="Mushroom10_04" x="6476" y="212" w="43" h="29" oX="1" oY="0" oW="47" oH="30"/>
+    <sprite n="Mushroom11_01" x="5126" y="477" w="33" h="33" oX="0" oY="1" oW="35" oH="38"/>
+    <sprite n="Mushroom11_02" x="6521" y="212" w="42" h="29" oX="1" oY="1" oW="46" oH="31"/>
+    <sprite n="Mushroom11_03" x="4982" y="477" w="36" h="34" oX="1" oY="1" oW="40" oH="36"/>
+    <sprite n="Mushroom11_04" x="7238" y="478" w="45" h="31" oX="0" oY="1" oW="49" oH="34"/>
+    <sprite n="Mushroom12_01" x="5048" y="477" w="39" h="33" oX="0" oY="0" oW="41" oH="34"/>
+    <sprite n="Mushroom12_02" x="5161" y="477" w="38" h="32" oX="1" oY="1" oW="41" oH="34"/>
+    <sprite n="Mushroom12_03" x="9385" y="312" w="46" h="40" oX="0" oY="0" oW="48" oH="41"/>
+    <sprite n="Mushroom12_04" x="5201" y="475" w="47" h="36" oX="1" oY="0" oW="50" oH="37"/>
+    <sprite n="Mushroom13_01" x="4354" y="490" w="29" h="21" oX="0" oY="1" oW="34" oH="25"/>
+    <sprite n="Mushroom13_02" x="5372" y="388" w="28" h="29" oX="0" oY="0" oW="32" oH="31"/>
+    <sprite n="Mushroom13_03" x="6780" y="212" w="36" h="24" oX="0" oY="0" oW="40" oH="25"/>
+    <sprite n="Mushroom13_04" x="5020" y="477" w="26" h="34" oX="1" oY="0" oW="28" oH="36"/>
+    <sprite n="Mushrooms_1" x="4705" y="489" w="27" h="22"/>
+    <sprite n="Mushrooms_2" x="4441" y="490" w="20" h="21"/>
+    <sprite n="Mushrooms_3" x="4416" y="490" w="23" h="21"/>
+    <sprite n="Mushrooms_4" x="9381" y="1" w="66" h="53"/>
+    <sprite n="Mushrooms_5" x="871" y="493" w="16" h="16"/>
+    <sprite n="Mushrooms_6" x="9240" y="480" w="31" h="23"/>
+    <sprite n="Mushrooms_7" x="4510" y="490" w="22" h="20" oX="0" oY="0" oW="23" oH="20"/>
+    <sprite n="Mushrooms_8" x="6678" y="240" w="94" h="65"/>
+    <sprite n="Mushrooms_9" x="6447" y="244" w="79" h="61"/>
+    <sprite n="Mushrooms_10" x="4665" y="489" w="38" h="22"/>
+    <sprite n="Mushrooms_11" x="6193" y="484" w="32" h="27"/>
+    <sprite n="Tall_Grass_1" x="704" y="407" w="82" h="90" oX="0" oY="0" oW="85" oH="90"/>
+    <sprite n="Tall_Grass_2" x="788" y="407" w="81" h="89"/>
+    <sprite n="Tall_Grass_3" x="871" y="407" w="91" h="84" oX="0" oY="0" oW="95" oH="84"/>
+    <sprite n="Tall_Grass_4" x="6915" y="212" w="92" h="83" oX="0" oY="0" oW="94" oH="83"/>
+    <sprite n="Tall_Grass_5" x="964" y="407" w="97" h="83"/>
+    <sprite n="Tall_Grass_6" x="6818" y="212" w="95" h="83"/>
+    <sprite n="Tall_Grass_10" x="4485" y="490" w="23" h="20" oX="0" oY="0" oW="23" oH="21"/>
+    <sprite n="Tall_Grass_28" x="5089" y="477" w="35" h="33"/>
+    <sprite n="Tall_Grass_29" x="4463" y="490" w="20" h="21"/>
+    <sprite n="Tall_Grass_30" x="5250" y="475" w="35" h="36"/>
+    <sprite n="Vine_9" x="6774" y="238" w="36" h="67" oX="0" oY="0" oW="48" oH="70"/>
+    <sprite n="Vine_10" x="7463" y="407" w="47" h="54" oX="0" oY="0" oW="50" oH="55"/>
+    <sprite n="Vine_11" x="3396" y="346" w="109" h="156" oX="0" oY="0" oW="123" oH="161"/>
+    <sprite n="Vine_12" x="3278" y="348" w="116" h="156" oX="0" oY="0" oW="122" oH="162"/>
+    <sprite n="Vine_13" x="4861" y="328" w="119" h="172" oX="16" oY="0" oW="135" oH="183"/>
+    <sprite n="Vine_14" x="7136" y="1" w="135" h="140" oX="0" oY="0" oW="157" oH="140"/>
+    <sprite n="Vine_15" x="3684" y="346" w="124" h="152" oX="0" oY="0" oW="140" oH="157"/>
+    <sprite n="Weeds1_1" x="6315" y="244" w="42" h="62" oX="0" oY="0" oW="43" oH="62"/>
+    <sprite n="Weeds1_2" x="1025" y="362" w="29" h="43" oX="0" oY="0" oW="29" oH="46"/>
+    <sprite n="Weeds1_3" x="7567" y="462" w="32" h="45" oX="0" oY="0" oW="32" oH="47"/>
+    <sprite n="Weeds1_4" x="5366" y="475" w="35" h="32"/>
+    <sprite n="Weeds1_5" x="704" y="499" w="14" h="12" oX="1" oY="0" oW="16" oH="12"/>
+    <sprite n="Weeds1_6" x="6708" y="212" w="25" h="25" oX="0" oY="0" oW="26" oH="26"/>
+    <sprite n="Weeds1_7" x="889" y="493" w="16" h="16" oX="1" oY="0" oW="18" oH="16"/>
+    <sprite n="Weeds1_8" x="9461" y="217" w="26" h="40" oX="0" oY="3" oW="34" oH="50"/>
+    <sprite n="Weeds1_9" x="5372" y="313" w="29" h="40"/>
+    <sprite n="Weeds1_10" x="4385" y="490" w="29" h="21" oX="6" oY="3" oW="35" oH="28"/>
+    <sprite n="Weeds1_11" x="5372" y="419" w="27" h="37" oX="0" oY="2" oW="30" oH="39"/>
+    <sprite n="Weeds1_12" x="5287" y="475" w="40" h="35" oX="0" oY="14" oW="47" oH="50"/>
+    <sprite n="Weeds2_1" x="8392" y="384" w="178" h="123" oX="0" oY="0" oW="179" oH="125"/>
+    <sprite n="Weeds2_2" x="7933" y="266" w="168" h="127" oX="0" oY="0" oW="170" oH="129"/>
+    <sprite n="Weeds2_3" x="8389" y="1" w="179" h="123" oX="0" oY="0" oW="181" oH="123"/>
+    <sprite n="Weeds2_4" x="7764" y="266" w="167" h="129" oX="0" oY="0" oW="170" oH="132"/>
+    <sprite n="Weeds2_5" x="7967" y="133" w="166" h="126" oX="0" oY="0" oW="168" oH="128"/>
+    <sprite n="Weeds2_6" x="9054" y="1" w="171" h="119" oX="0" oY="0" oW="174" oH="119"/>
+    <sprite n="Weeds2_7" x="8779" y="125" w="171" h="121" oX="0" oY="0" oW="172" oH="122"/>
+    <sprite n="Weeds2_8" x="8224" y="389" w="166" h="122" oX="0" oY="0" oW="167" oH="125"/>
+    <sprite n="Weeds6_1" x="7285" y="478" w="39" h="31"/>
+    <sprite n="Weeds6_2" x="9361" y="407" w="51" h="44"/>
+    <sprite n="Weeds6_3" x="7474" y="463" w="47" h="47"/>
+    <sprite n="Weeds6_4" x="6735" y="212" w="43" h="24"/>
+    <sprite n="Weeds6_5" x="5372" y="355" w="28" h="31"/>
+    <sprite n="Weeds6_6" x="9461" y="136" w="38" h="40"/>
+    <sprite n="Weeds6_7" x="9412" y="453" w="52" h="43"/>
+    <sprite n="Weeds6_8" x="7404" y="478" w="35" h="31"/>
+</TextureAtlas>

@@ -93,13 +93,14 @@ namespace Death_Control {
 
 	// spawn blood
 	std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
+	tmx::Vector2<float> imageOffset = {0.0f, 0.0f};
 	Collision::aabb aabb;
 	Component::Line_Segment line;
 
 	int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodPoolVec.size() - 1);
-	Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodPoolVec[poolIndex], poolIndex, aabb, pointVecs, line);
+	Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodPoolVec[poolIndex], poolIndex, aabb, pointVecs, line, imageOffset);
 	int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
-	Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line);
+	Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line, imageOffset);
 
 	if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
 	  auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);

@@ -13,6 +13,7 @@
 #include "texture_packer.h"
 #include "ui_actionbar.h"
 #include "procedural_generator.h"
+#include "utilities.h"
 #include <cstddef>
 #include <stddef.h>
 #include <type_traits>
@@ -82,7 +83,7 @@ namespace Create_Entities {
     }
   }
 
-  bool Polygon_Building(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+  bool Polygon_Building(entt::registry& zone, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(name);
 
@@ -101,8 +102,8 @@ namespace Create_Entities {
       flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
 
       //Add shared components
-      auto& position = zone.emplace<Component::Position>(entity, x, y);
-      auto& scale = zone.emplace<Component::Scale>(entity, 1.0f);
+      auto &position = zone.emplace<Component::Position>(entity, x, y);
+      auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
       auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
 
       /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
@@ -123,7 +124,7 @@ namespace Create_Entities {
     return false;
   }
 
-  bool PVG_Building(entt::registry& zone, float x, float y, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+  bool PVG_Building(entt::registry& zone, float x, float y, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 
@@ -161,7 +162,11 @@ namespace Create_Entities {
       Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
 
       Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(xmlIndex);
-      auto &offset = zone.emplace<Rendering_Components::Sprite_Offset>(entity, ((float)frame.clip.w /2.0f) + frame.x_offset, ((float)frame.clip.h / 2.0f) + frame.y_offset);
+      if (xmlIndex == 0) {
+	std::cout << templateName << " " << frame.x_offset << " " << imageOffset.x << " " << frame.y_offset << " " << imageOffset.y << std::endl;
+      }
+//      auto &offset = zone.emplace<Rendering_Components::Sprite_Offset>(entity, frame.x_offset + imageOffset.x, frame.y_offset + imageOffset.y);
+      auto &offset = zone.emplace<Rendering_Components::Sprite_Offset>(entity, imageOffset.x, imageOffset.y);
 
       if (data.collider_type == "background") {	
 	position.x -= offset.x;

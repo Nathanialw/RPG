@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../../../../sprite_sheets/environment/forest/forest_objects.tsx"/>
+ <object gid="93" width="149" height="165"/>
+</template>

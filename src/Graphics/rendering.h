@@ -147,9 +147,8 @@ namespace Rendering {
 	//                render icons
 	if (type == Component::Entity_Type::item){
 	  renderRect.w = (spriteOffset.x * 2.0f);
-	  renderRect.h = (spriteOffset.y * 2.0f);
+	  renderRect.h = (spriteOffset.y * 2.0f);	  
 	}
-
 	texture = sheetData.flareSpritesheet->at(sheetData.sheet_name).texture;
 	color = sheetData.flareSpritesheet->at(sheetData.sheet_name).color;
 	SDL_SetTextureAlphaMod(texture, renderable.alpha);

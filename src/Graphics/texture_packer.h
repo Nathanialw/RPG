@@ -171,7 +171,9 @@ namespace Texture_Packer {
       spriteSheetData.LoadFile(xmlPath);
       tinyxml2::XMLElement *pSpriteElement;
       pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
-        
+      Utilities::Log(tilesetName);
+      std::string imgPath = spriteSheetData.RootElement()->Attribute("imagePath");
+      
       Rendering_Components::Sprite_Sheet_Data frame = {};
       spritesheet.frameList.reserve(200);
 

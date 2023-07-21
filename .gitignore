@@ -21,3 +21,6 @@ RPG.cbp
 #*
 debug
 release
+.ninja_deps
+.ninja_log
+build.ninja
