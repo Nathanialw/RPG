@@ -1,4 +1,5 @@
 #pragma once
+#include "components.h"
 #include "ui.h"
 #include "base_structs.h"
 
@@ -42,7 +43,7 @@ namespace Equipment {
 
 
   //check if the Mouse point is in the rect and which one
-  int Get_Equipment_Slot(SDL_Point& mousePoint) {
+  int Get_Equipment_Slot(SDL_Point& mousePoint, Component::Camera camera) {
 
     SDL_Rect slotRect = {};
     slotRect.w = iBagSlotPixelSize;
@@ -57,16 +58,16 @@ namespace Equipment {
       for (j = 0; j < numOfSlots.y; j++) {
 	slotRect.y = (j * iBagSlotPixelSize) + Bag.y;
 
-	SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect);
-	if (Utilities::bPoint_RectIntersect(mousePoint, scaledSlot)) {
+	SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
+	if (Utilities::bPoint_RectIntersect(Mouse::mousePoint, scaledSlot)) {
 	  return slot;
 	}
 	if (j < (numOfSlots.y - 1)) {
 	  slot++;
 	}
       }
-      SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect);
-      if (Utilities::bPoint_RectIntersect(mousePoint, scaledSlot)) {
+      SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
+      if (Utilities::bPoint_RectIntersect(Mouse::mousePoint, scaledSlot)) {
 	return slot;
       }
       if (i < (numOfSlots.x - 1)) {
@@ -76,7 +77,7 @@ namespace Equipment {
 
   }
   //check if the Mouse point is in the rect and which one
-  void Render_Equipment_Slot(entt::registry& zone) {
+  void Render_Equipment_Slot(entt::registry& zone, Component::Camera camera) {
 
     SDL_Rect slotRect = {};
     slotRect.w = iBagSlotPixelSize;
@@ -92,7 +93,7 @@ namespace Equipment {
 	slotRect.y = (j * iBagSlotPixelSize) + Bag.y;
 
 	auto& icon = zone.get<Component::Icon>(UI_bagSlots.at(slot));
-	SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect);
+	SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
 	SDL_RenderCopy(Graphics::renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
 	if (j < (numOfSlots.y - 1)) {
 	  slot++;
@@ -100,7 +101,7 @@ namespace Equipment {
       }
 
       auto icon = zone.get<Component::Icon>(UI_bagSlots.at(slot));
-      SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect);
+      SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
       SDL_RenderCopy(Graphics::renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
       if (i < (numOfSlots.x - 1)) {
 	slot++;
@@ -110,8 +111,8 @@ namespace Equipment {
   }
 
 
-  void Interact_With_Equipment(entt::entity& item, SDL_Point& mousePoint, bool& mouseHasItem) {
-    SDL_Point screenCursor = Camera_Control::Convert_Point_To_Scale(mousePoint);
+  void Interact_With_Equipment(entt::entity& item, SDL_Point& mousePoint, bool& mouseHasItem, Component::Camera camera) {
+    SDL_Point screenCursor = Camera_Control::Convert_Point_To_Scale(mousePoint, camera);
     int slotNum = Get_Bag_Slot(screenCursor);
 
     if (Utilities::bPoint_RectIntersect(screenCursor, screenBag)) {

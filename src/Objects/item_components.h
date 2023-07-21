@@ -1,8 +1,6 @@
 #pragma once
-#include <SDL2/SDL.h>
 #include <map>
-
-
+#include <SDL2/SDL.h>
 
 namespace Item_Component {
 

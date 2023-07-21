@@ -5,7 +5,6 @@
 #include "timer.h"
 #include <vector>
 
-
 namespace Damage_Text {
 
   std::vector<Component::Scrolling_Damage_Text> damageTextQueue;

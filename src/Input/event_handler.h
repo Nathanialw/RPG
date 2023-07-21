@@ -9,7 +9,6 @@
 #include "movement.h"
 #include "death_spells.h"
 #include "spells.h"
-//#include "weapons.h"
 #include "ai_control.h"
 #include "input_control.h"
 #include "skills.h"
@@ -17,6 +16,8 @@
 #include "events.h"
 #include "pause.h"
 #include "sinister_strike.h"
+#include "interface.h"
+#include "items.h"
 
 namespace Event_Handler {
 

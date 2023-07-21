@@ -6,7 +6,6 @@
 #include "combat_sounds.h"
 #include "combat_graphics.h"
 #include "utilities.h"
-#include <functional>
 
 namespace Combat_Control {
     

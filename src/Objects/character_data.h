@@ -7,7 +7,6 @@ namespace Character_Data {
   std::vector<std::string>firstNames;
   std::vector<std::string>lastNames;
 
-
   void Get_Names_From_DB() {// needs to search for  a specific row that I can input in the arguments
     //check if the name exists??
     //        std::string unit_name = db::Append_Quotes(name);
@@ -33,7 +32,6 @@ namespace Character_Data {
     firstNames.shrink_to_fit();
     lastNames.shrink_to_fit();
   }
-
 
   void Get_Name(Component::Name &name) {
     if (firstNames.size() > 0) {

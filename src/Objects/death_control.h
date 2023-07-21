@@ -41,7 +41,7 @@ namespace Death_Control {
 	}
       }
       else {
-          Action_Component::Set_State(action, Action_Component::dead);
+	Action_Component::Set_State(action, Action_Component::dead);
       }
       return true;
     }
@@ -60,7 +60,7 @@ namespace Death_Control {
       auto &health = view.get<Component::Health>(entity);
       if (health.currentHealth <= 0) {
 	auto &action = view.get<Action_Component::Action>(entity);
-    Action_Component::Set_State(action, Action_Component::dying);
+	Action_Component::Set_State(action, Action_Component::dying);
 	//                view.get<Component::Sprite_Sheet_Info>(entity).finalFrame = Component::normalFrame;
 	auto &position = view.get<Component::Position>(entity);
 	auto &radius = view.get<Component::Radius>(entity).fRadius;
@@ -207,7 +207,7 @@ namespace Death_Control {
       auto &health = view.get<Component::Health>(entity);
       auto &action = view.get<Action_Component::Action>(entity);
       if (health.currentHealth <= 0 && action.state == Action_Component::idle) {
-          Action_Component::Set_State(action, Action_Component::dying);
+	Action_Component::Set_State(action, Action_Component::dying);
       }
     }
   }

@@ -8,6 +8,7 @@ target_sources(RPG
         movement.h
         pause.h
         player_control.h
+          mouse_control.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

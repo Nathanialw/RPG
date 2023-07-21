@@ -1,5 +1,4 @@
 #pragma once
-#include <stdint.h>
 
 namespace Action_Component {
 
@@ -62,8 +61,8 @@ namespace Action_Component {
     struct Action {
         Action_State state = walk;
         Action_Progress frameState = start;
-        uint8_t frame = 0;
-        u_int16_t frameTime = 0;
+        int frame = 0;
+        int frameTime = 0;
     };
 
     void Set_State(Action &action, Action_State state) {

@@ -14,9 +14,7 @@
 #include "ui_actionbar.h"
 #include "procedural_generator.h"
 #include "utilities.h"
-#include <cstddef>
 #include <stddef.h>
-#include <type_traits>
 
 
 namespace Create_Entities {

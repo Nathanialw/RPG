@@ -1,7 +1,6 @@
 #pragma once
 #include "components.h"
 
-
 namespace Mouse {
   namespace {
     float cursorRadius = 5.0f;

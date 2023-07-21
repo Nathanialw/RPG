@@ -1,6 +1,6 @@
 #pragma once
 #include "math.h"
-#include <stdio.h>
+#include <iostream>
 #include "SDL2/SDL.h"
 
 namespace Utilities {

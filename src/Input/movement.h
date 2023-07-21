@@ -4,6 +4,9 @@
 #include "entity_control.h"
 #include "components.h"
 #include "utilities.h"
+#include "social_control.h"
+#include "mouse_control.h"
+#include "world.h"
 
 namespace Movement {
 

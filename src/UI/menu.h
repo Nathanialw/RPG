@@ -9,8 +9,7 @@
 #include <array>
 #include "mouse_control.h"
 
-namespace Menu
-{
+namespace Menu {
 
   struct Size {
     i2 x, y;
