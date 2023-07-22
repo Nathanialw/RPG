@@ -1,6 +1,7 @@
 #pragma once
 #include "FLARE_frames.h"
 #include "PVG_frames.h"
+#include "utilities.h"
 #include <SDL2/SDL_pixels.h>
 
 void Get_Spritesheet_Type(SDL_Rect &clipRect, Rendering_Components::Sprite_Sheet_Info &sheetData, Component::Direction& direction, Action_Component::Action& action) {
@@ -100,7 +101,6 @@ void Animation_Frame(entt::registry& zone, Component::Camera &camera) { //state
     }
 
     else if (sheetData.sheetData) {
-      
       if (mounts.contains(entity)) {
 	//                render horse half behind unit
 

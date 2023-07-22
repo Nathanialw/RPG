@@ -40,13 +40,12 @@ namespace Rendering {
     // test whether a point lays on a line segment, positive is above and negative is below
     auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
     auto points = zone.view<Component::Position, Component::Renderable>();
-
     for (auto building : line_segments) {
       //test each renderable entity, if it is above the line
       auto [line, renderable] = line_segments.get(building);
       for (auto entity : points) {
 	auto [position, rend] = points.get(entity);
-
+	/*
 	//f(x) = k * x + b
 	//slope is k
 	float slope = (line.p[0].y - line.p[1].y) / (line.p[0].x - line.p[1].x);
@@ -64,14 +63,23 @@ namespace Rendering {
 	  //the entity is below the line
 	  renderable.y = position.y + 1;
 	}
-
+	*/
 	//set renderable.y to tested renderable.y + 1 for above and renderable.y - 1 for below then let the sort algo do its job
       }
     }
+   
     //        // sort the component to render before entities below and after entities above
     //
     //        //sorts point positions least to great
-    zone.sort<Component::Renderable>([](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
+    zone.sort<Component::Renderable>([](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y;});
+    // int i = 0;
+    // auto view = zone.view<Component::Renderable, Rendering_Components::Sprite_Sheet_Info>();
+    // for (auto sentity : view) {
+    //   auto name = view.get<Rendering_Components::Sprite_Sheet_Info>(sentity);
+    //   auto y = view.get<Component::Renderable>(sentity);
+    //   std::cout << i << " " << name.sheet_name << " " << y.y << std::endl;
+    //   i++;
+    // }
   }
 
   //    void RenderLine (entt::registry &zone, Component::Camera &camera) {
@@ -371,18 +379,18 @@ namespace Rendering {
 	  auto &renderable = zone.get<Component::Renderable>(entity);
 	  renderable.alpha = alpha;
 
-	  if (zone.all_of<Component::Line_Segment>(entity) == false) {
+	  //if (zone.all_of<Component::Line_Segment>(entity) == false) {
 	    renderable.y = position.y;
-	  }
+	    //}
 	}
 	else {
 	  //                    emplace and initialize renderable
 	  int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
 	  auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
 	  renderable.alpha = alpha;
-	  if (zone.all_of<Component::Line_Segment>(entity) == false) {
+	  // if (zone.all_of<Component::Line_Segment>(entity) == false) {
 	    renderable.y = position.y;
-	  }
+	    //	  }
 	}
       }
       else {

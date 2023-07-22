@@ -131,7 +131,7 @@ namespace Interface {
 
 	SDL_FRect frect = { position.x - radius.fRadius, position.y, radius.fRadius * 2, radius.fRadius };
 	UI_Unit_Control::Loop_Sprite(selector, frect, color, camera);
-	//	Debug_System::Entity_Data_Debug(position.x, position.y, position.x, position.y, camera);
+
       }
     }
   }
@@ -278,6 +278,7 @@ namespace Interface {
     //Unit_Arrive_UI();
     Display_Mouse();
     Display_Selection_Box();
+    //  Debug_System::Debug_Positions();
     //Show_Attacks();
   }
 }

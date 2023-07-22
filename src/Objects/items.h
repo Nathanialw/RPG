@@ -9,8 +9,8 @@
 #include "mouse_control.h"
 #include "texture_packer_item.h"
 #include "SQLite_item_data.h"
-
 #include "SQLite_spritesheets.h"
+
 using namespace Item_Component;
 
 namespace Items {

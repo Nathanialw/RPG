@@ -1,7 +1,11 @@
 #pragma once
 #include "components.h"
+#include "graphics.h"
 #include "ui.h"
 #include "base_structs.h"
+#include "utilities.h"
+#include <SDL2/SDL_rect.h>
+#include "mouse_control.h"
 
 using namespace UI;
 
@@ -59,7 +63,8 @@ namespace Equipment {
 	slotRect.y = (j * iBagSlotPixelSize) + Bag.y;
 
 	SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
-	if (Utilities::bPoint_RectIntersect(Mouse::mousePoint, scaledSlot)) {
+	SDL_FRect fSlot = Utilities::SDL_Rect_To_SDL_FRect(scaledSlot);
+	if (Utilities::bPoint_RectIntersect(Mouse::mousePoint, fSlot)) {
 	  return slot;
 	}
 	if (j < (numOfSlots.y - 1)) {
@@ -67,7 +72,8 @@ namespace Equipment {
 	}
       }
       SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
-      if (Utilities::bPoint_RectIntersect(Mouse::mousePoint, scaledSlot)) {
+      SDL_FRect fSlot = Utilities::SDL_Rect_To_SDL_FRect(scaledSlot);
+      if (Utilities::bPoint_RectIntersect(Mouse::mousePoint, fSlot)) {
 	return slot;
       }
       if (i < (numOfSlots.x - 1)) {
@@ -107,28 +113,28 @@ namespace Equipment {
 	slot++;
       }
     }
-
   }
 
 
-  void Interact_With_Equipment(entt::entity& item, SDL_Point& mousePoint, bool& mouseHasItem, Component::Camera camera) {
-    SDL_Point screenCursor = Camera_Control::Convert_Point_To_Scale(mousePoint, camera);
-    int slotNum = Get_Bag_Slot(screenCursor);
+  void Interact_With_Equipment(entt::registry &zone, entt::entity& item, SDL_Point& mousePoint, bool& mouseHasItem, Component::Camera camera) {
+    SDL_Point point = Camera_Control::Convert_Point_To_Scale(mousePoint, camera);
+    SDL_FPoint screenCursor = Utilities::SDL_FPoint_to_Point(point);
+    int slotNum = Bag_UI::Get_Bag_Slot(zone, screenCursor, camera);
 
-    if (Utilities::bPoint_RectIntersect(screenCursor, screenBag)) {
+    if (Utilities::bPoint_RectIntersect(screenCursor, Bag_UI::screenBag)) {
       if (mouseHasItem) {
-	Equip_Item(item, mouseHasItem, slotNum);
+	Equipment_UI::Equip_Item(zone, item, mouseHasItem, slotNum);
       }
       else if (UI_bagSlots.at(slotNum) != Graphics::defaultIcon) {
-	Unequip_Item(item, mouseHasItem, slotNum);
+	Equipment_UI::Unequip_Item(zone, item, mouseHasItem, slotNum);
       }
     }
   }
 
-  void Render_Equipment() {
+  void Render_Equipment(entt::registry& zone, Component::Camera& camera) {
     if (bToggleBag) {
       //render Items in bag
-      Render_Bag_Slot();
+      Bag_UI::Render_Bag_Slot(zone, Graphics::renderer, camera);
     }
   }
 

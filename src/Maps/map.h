@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include <tmxlite/Map.hpp>
 #include <tmxlite/Layer.hpp>
 #include <tmxlite/TileLayer.hpp>
@@ -194,11 +195,11 @@ namespace Maps {
 		float aabbx = rects.getAABB().left;
 		float aabby = rects.getAABB().top;
 
-
-		if (collision_boxes.size() == 1 && rects.getShape() == tmx::Object::Shape::Point) {
-              offset = rects.getPosition();
+		if (rects.getShape() == tmx::Object::Shape::Point) {
+		  offset = rects.getPosition();
 		}
-		else if (rects.getShape() == tmx::Object::Shape::Point && rects.getPoints().size() > 1) {
+
+		if (rects.getShape() == tmx::Object::Shape::Point && rects.getPoints().size() > 1) {
 		  line.p[j].x = x - ((sizeX / 2.0f) - aabbx);
 		  line.p[j].y = y - (sizeY - aabby);
 		  j++;		  

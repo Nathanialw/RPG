@@ -2171,6 +2171,11 @@
  </tile>
  <tile id="271">
   <image width="230" height="213" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush37_4.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="128" y="152">
+    <point/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="272">
   <image width="252" height="175" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Bush37_5.png"/>
@@ -5439,7 +5444,7 @@
  <tile id="680">
   <image width="90" height="83" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Rock2_01.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="43" y="37.6667">
+   <object id="1" x="43" y="53.6667">
     <point/>
    </object>
   </objectgroup>
@@ -6249,6 +6254,11 @@
  </tile>
  <tile id="787">
   <image width="224" height="288" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Rock_3_1.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="119" y="198">
+    <point/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="788">
   <image width="288" height="256" source="../../../../../Graphics/assets/environment/forest/forest_tileset/Rock_3_2.png"/>

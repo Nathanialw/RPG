@@ -16,7 +16,6 @@
 #include "utilities.h"
 #include <stddef.h>
 
-
 namespace Create_Entities {
 
   int template_ID = 0;
@@ -127,7 +126,6 @@ namespace Create_Entities {
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 
     if (data.sprite_layout == "PVG") {
-      // std::cout << "loading Object: " << templateName << std::endl;
       ///get texture data      
       SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
       std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* flareSheetData = NULL;
@@ -141,10 +139,47 @@ namespace Create_Entities {
 	std::cout << "failed to load PVG_Building() for: " << templateName << std::endl; 
 	return true;
       }
-      
       auto entity = zone.create();
-      //Add shared components
+      auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
+      sprite.sheetData = packerframeData;
+      sprite.sheet_name = tilesetName;
+      sprite.type = "RPG_Tools";
+      sprite.frameIndex = xmlIndex;
+      Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(xmlIndex);
       auto &position = zone.emplace<Component::Position>(entity, x, y);
+
+      auto &offset = zone.emplace<Rendering_Components::Sprite_Offset>(entity, 0.0f, 0.0f);
+      if (data.collider_type == "rect") {
+       	offset = { ((float)frame.clip.w / 2.0f), (float)frame.clip.h};
+	position.y -= (float)frame.clip.h / 2.0f;
+	Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+      }
+      else if (data.collider_type == "polygon") {
+       	offset = { ((float)frame.clip.w / 2.0f), (float)frame.clip.h / 2.0f};
+	Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+	position.y -= (float)frame.clip.h / 2.0f;
+      }
+      else if (data.collider_type == "round") {
+	offset = { imageOffset.x, imageOffset.y};
+	position.x -= frame.x_offset;
+	position.y -= frame.y_offset;
+	Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+      }
+      else if (data.collider_type == "none"){
+	offset = { imageOffset.x, imageOffset.y};
+	position.x -= frame.x_offset;
+	position.y -= frame.y_offset;
+	Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+      }
+      else {
+	offset = { imageOffset.x, imageOffset.y};
+	position.x -= frame.x_offset;
+	position.y -= frame.y_offset;
+	Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+	std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
+      }
+      
+      //Add shared components
       auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
       auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
 
@@ -152,19 +187,9 @@ namespace Create_Entities {
       zone.emplace<Component::Mass>(entity, 100.0f);
       zone.emplace<Component::Alive>(entity, true);
 
-      auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
-      sprite.sheetData = packerframeData;
-      sprite.sheet_name = tilesetName;
-      sprite.type = "RPG_Tools";
-      sprite.frameIndex = xmlIndex;
-      Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
-
-      Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(xmlIndex);
-      if (xmlIndex == 0) {
-	std::cout << templateName << " " << frame.x_offset << " " << imageOffset.x << " " << frame.y_offset << " " << imageOffset.y << std::endl;
-      }
-//      auto &offset = zone.emplace<Rendering_Components::Sprite_Offset>(entity, frame.x_offset + imageOffset.x, frame.y_offset + imageOffset.y);
-      auto &offset = zone.emplace<Rendering_Components::Sprite_Offset>(entity, imageOffset.x, imageOffset.y);
+      std::cout << templateName << "Xo: " << frame.x_offset << " Cw: " << frame.clip.w << " IXo: " << imageOffset.x << " Yo: " << frame.y_offset << " Ch: " << frame.clip.h << " IYo: " << imageOffset.y << std::endl;
+      
+      //should place the tiled position on the point
 
       if (data.collider_type == "background") {	
 	position.x -= offset.x;

@@ -4,6 +4,9 @@
 #include "utilities.h"
 #include <type_traits>
 #include "components.h"
+#include "timer.h"
+#include "graphics.h"
+#include "action_components.h"
 
 namespace Social_Component {
 
@@ -88,7 +91,7 @@ namespace  Social_Control {
     if (raceStr == "nature") {
       return Social_Component::Race::nature;
     }
-    if (raceStr == "nature") {
+    if (raceStr == "animal") {
       return Social_Component::Race::animal;
     }
     if (raceStr == "neutral") {

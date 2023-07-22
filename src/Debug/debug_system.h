@@ -5,7 +5,10 @@
 #include "sstream"
 #include "timer.h"
 #include "mouse_control.h"
+#include <SDL2/SDL_render.h>
 #include <algorithm>
+#include "camera.h"
+
 using namespace Scene;
 
 
@@ -83,6 +86,25 @@ namespace Debug_System {
     }
   }
 
+  void Debug_Positions () {
+    auto view1 = World::zone.view<Component::Camera>();
+    auto view = World::zone.view<Component::Position, Component::Renderable>();
+
+    for (auto focus : view1) {
+      auto& camera = view1.get<Component::Camera>(focus);
+      for (auto entity : view) {
+	auto& position = view.get<Component::Position>(entity);
+	Component::Radius radius;
+	radius.fRadius = 20.0f;
+	SDL_Color color = {55, 255, 55};
+
+	SDL_FRect frect = { position.x - radius.fRadius, position.y, radius.fRadius * 2, radius.fRadius };
+	SDL_RenderDrawRectF(Graphics::renderer, &frect);			
+	Debug_System::Entity_Data_Debug(position.x, position.y, position.x, position.y, camera);
+      }
+    }
+  }
+  
   void Debugger() {
     //Framerate();
   }

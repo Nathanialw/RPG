@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="6336">
+<map version="1.10" tiledversion="git" orientation="isometric" renderorder="right-down" width="1152" height="1152" tilewidth="128" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="6384">
  <tileset firstgid="1" source="../sprite_sheets/ground_tiles/grassland_tiles_x2.tsx"/>
  <tileset firstgid="673" source="../sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx"/>
  <tileset firstgid="674" source="../sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx"/>
@@ -135,7 +135,7 @@
   <object id="12" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_7.tx" x="1424" y="61808"/>
   <object id="13" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_47.tx" x="1360" y="27248"/>
   <object id="14" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_47.tx" x="1184" y="22688"/>
-  <object id="157" template="../spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="27610" y="26622"/>
+  <object id="157" template="../spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="28033" y="26411"/>
   <object id="158" template="../spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="28280" y="26360"/>
   <object id="160" template="../spawn_points/unit_spawns/animals/hostile/wolves/Wolf_Timber.tx" x="28547.7" y="27530.8">
    <properties>
@@ -437,52 +437,9 @@
   <object id="1870" template="../spawn_points/unit_spawns/2nd_cast/orc/male/Male_Orc_1.tx" x="45120" y="33600"/>
   <object id="1871" template="../spawn_points/unit_spawns/2nd_cast/orc/male/Male_Orc_1.tx" x="40880" y="34896"/>
   <object id="1872" template="../spawn_points/unit_spawns/2nd_cast/orc/male/Male_Orc_1.tx" x="41296" y="36016"/>
-  <object id="5006" template="../spawn_points/unit_spawns/Demons/Daemon_Infernum.tx" x="28164.7" y="26944.7"/>
+  <object id="5006" template="../spawn_points/unit_spawns/Demons/Daemon_Infernum.tx" x="28348.7" y="26736.7"/>
   <object id="5008" template="../spawn_points/unit_spawns/monsters/ogres/RTP_Ogre.tx" x="29292.7" y="28014"/>
   <object id="5333" template="../spawn_points/buildings/castle/Medieval_Expansion_Castle1_47.tx" x="43548" y="17588"/>
-  <object id="5474" template="../spawn_points/unit_spawns/2nd_cast/human/male/Male_Monk.tx" x="27407.3" y="27501.3">
-   <properties>
-    <property name="player" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="5616" template="../spawn_points/buildings/orc/village/Campfire T2.tx" x="25579.9" y="25020.1"/>
-  <object id="5617" template="../spawn_points/buildings/orc/village/Fur T3.tx" x="25558.7" y="25229.2"/>
-  <object id="5618" template="../spawn_points/buildings/orc/village/Fur T7.tx" x="25784.5" y="25021.6"/>
-  <object id="5619" template="../spawn_points/buildings/orc/village/Fur T4.tx" x="25510.2" y="24792.8"/>
-  <object id="5620" template="../spawn_points/buildings/orc/village/Fur T7.tx" x="25355.7" y="24995.8"/>
-  <object id="5621" template="../spawn_points/buildings/orc/village/Orc Tent 2 T2.tx" x="25645.1" y="24512.5"/>
-  <object id="5622" template="../spawn_points/buildings/orc/village/Orc Tent 3 T2.tx" x="25098.1" y="24550.4"/>
-  <object id="5623" template="../spawn_points/buildings/orc/village/Orc Tent 4 T4.tx" x="24945.1" y="24945.8"/>
-  <object id="5624" template="../spawn_points/buildings/orc/village/Orc Tent 3 T3.tx" x="25455.7" y="25671.6"/>
-  <object id="5625" template="../spawn_points/buildings/orc/village/Orc Tent 2 T3.tx" x="26036" y="25612.5"/>
-  <object id="5626" template="../spawn_points/buildings/orc/village/Orc Tent 1 T5.tx" x="26142.1" y="24924.6"/>
-  <object id="5627" template="../spawn_points/buildings/orc/village/Meat Hang T7.tx" x="26128.4" y="25229.2"/>
-  <object id="5628" template="../spawn_points/buildings/orc/village/Meat Stand T4.tx" x="25676.9" y="25638.2"/>
-  <object id="5629" template="../spawn_points/buildings/orc/village/Meat Stand T4.tx" x="25166.3" y="25245.8"/>
-  <object id="5630" template="../spawn_points/buildings/orc/village/Cage T7.tx" x="25205.7" y="24315.5"/>
-  <object id="5631" template="../spawn_points/buildings/orc/village/Pallisade T1.tx" x="24458.7" y="24274.6"/>
-  <object id="5632" template="../spawn_points/buildings/orc/village/Pallisade T1.tx" x="24634.5" y="24104.9"/>
-  <object id="5633" template="../spawn_points/buildings/orc/village/Pallisade T1.tx" x="24828.4" y="23929.2"/>
-  <object id="5634" template="../spawn_points/buildings/orc/village/Pallisade T1.tx" x="25929.9" y="26100.4"/>
-  <object id="5635" template="../spawn_points/buildings/orc/village/Pallisade T1.tx" x="26101.2" y="25904.9"/>
-  <object id="5637" template="../spawn_points/buildings/orc/village/Pallisade T1.tx" x="26261.8" y="25750.4"/>
-  <object id="5639" template="../spawn_points/buildings/orc/village/Pallisade T1.tx" x="26586" y="25383.7"/>
-  <object id="5640" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="26666.3" y="25188.2"/>
-  <object id="5641" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="26597.6" y="24891.3"/>
-  <object id="5642" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="24484.5" y="24582.2"/>
-  <object id="5643" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="24528.4" y="24853.4"/>
-  <object id="5644" template="../spawn_points/buildings/orc/village/Pallisade T6.tx" x="24576.9" y="25126.1"/>
-  <object id="5645" template="../spawn_points/buildings/orc/village/Pallisade T3.tx" x="24746.6" y="25429.2"/>
-  <object id="5646" template="../spawn_points/buildings/orc/village/Pallisade T3.tx" x="24979.9" y="25686.7"/>
-  <object id="5647" template="../spawn_points/buildings/orc/village/Pallisade T3.tx" x="26440.5" y="24638.2"/>
-  <object id="5649" template="../spawn_points/buildings/orc/village/Pallisade T3.tx" x="26211.8" y="24412.5"/>
-  <object id="5650" template="../spawn_points/buildings/orc/village/Pallisade T4.tx" x="25216.3" y="25820.1"/>
-  <object id="5651" template="../spawn_points/buildings/orc/village/Pallisade T4.tx" x="25928.4" y="24223.1"/>
-  <object id="5652" template="../spawn_points/buildings/orc/village/Pallisade T4.tx" x="25117.8" y="23936.7"/>
-  <object id="5653" template="../spawn_points/buildings/orc/village/Pallisade T4.tx" x="25390.5" y="23979.2"/>
-  <object id="5654" template="../spawn_points/buildings/orc/village/Pallisade T4.tx" x="25795.1" y="26217"/>
-  <object id="5655" template="../spawn_points/buildings/orc/village/Pallisade T7.tx" x="25542.1" y="26064"/>
-  <object id="5656" template="../spawn_points/buildings/orc/village/Pallisade T7.tx" x="25673.9" y="24107.9"/>
   <object id="5989" template="../spawn_points/environment/forest/flowers/Flower25_1.tx" x="27400.1" y="27968.6"/>
   <object id="5990" template="../spawn_points/environment/forest/flowers/Flower25_2.tx" x="27431.4" y="27925.3"/>
   <object id="5991" template="../spawn_points/environment/forest/flowers/Flower25_3.tx" x="27467.2" y="27882.8"/>
@@ -520,28 +477,25 @@
   <object id="6023" template="../spawn_points/environment/forest/flowers/Flower33_3.tx" x="28100.4" y="28471.6"/>
   <object id="6024" template="../spawn_points/environment/forest/flowers/Flower33_4.tx" x="28145.8" y="28432.2"/>
   <object id="6025" gid="55129" x="27544.8" y="28457.8" width="68" height="45"/>
-  <object id="6030" gid="33260" x="27269.8" y="27617.5" width="42" height="112"/>
-  <object id="6031" gid="39540" x="27465.1" y="27708.3" width="71" height="133"/>
-  <object id="6260" gid="54816" x="27462.8" y="27327.8" width="190" height="165"/>
   <object id="6276" gid="55259" x="27435.1" y="27516.9" width="79" height="73"/>
   <object id="6277" gid="55256" x="27407.2" y="27487.5" width="74" height="62"/>
-  <object id="6288" gid="54793" x="27273.6" y="27385.8" width="631" height="723"/>
-  <object id="6289" gid="54832" x="26995.6" y="27779.8" width="466" height="728"/>
+  <object id="6288" gid="54793" x="27105.6" y="27681.8" width="631" height="723"/>
+  <object id="6289" gid="54832" x="26839.6" y="27903.8" width="466" height="728"/>
   <object id="6290" gid="54885" x="27284.8" y="27390.5" width="176" height="143"/>
   <object id="6291" gid="54885" x="27197.8" y="27383.5" width="176" height="143"/>
   <object id="6292" gid="54983" x="27019.1" y="27738.3" width="81" height="68"/>
-  <object id="6296" gid="54816" x="27379.3" y="27164" width="708" height="710"/>
+  <object id="6296" gid="54816" x="27336.3" y="27471" width="708" height="710"/>
   <object id="6297" gid="54898" x="27040.6" y="27579.8" width="90" height="81"/>
   <object id="6298" gid="54898" x="27051.3" y="27526" width="90" height="81"/>
   <object id="6299" gid="54898" x="27083.1" y="27465.3" width="90" height="81"/>
   <object id="6300" gid="55002" x="27103.3" y="27558" width="79" height="76"/>
   <object id="6301" gid="55122" x="27064.3" y="27531" width="24" height="29"/>
-  <object id="6302" gid="54794" x="27041.6" y="27417.8" width="631" height="723"/>
-  <object id="6303" gid="54797" x="26712.1" y="27355.3" width="631" height="723"/>
-  <object id="6304" gid="54799" x="26873.6" y="27001.8" width="631" height="723"/>
-  <object id="6305" gid="54799" x="26961.1" y="27416.3" width="631" height="723"/>
-  <object id="6306" gid="54799" x="26704.6" y="27780.8" width="631" height="723"/>
-  <object id="6307" gid="54801" x="27105.3" y="26778" width="350" height="720"/>
+  <object id="6302" gid="54794" x="27310.6" y="26356.8" width="631" height="723"/>
+  <object id="6303" gid="54797" x="26402.1" y="27193.3" width="631" height="723"/>
+  <object id="6304" gid="54799" x="26856.6" y="26790.8" width="631" height="723"/>
+  <object id="6305" gid="54799" x="26634.1" y="27031.3" width="631" height="723"/>
+  <object id="6306" gid="54799" x="26190.6" y="27398.8" width="631" height="723"/>
+  <object id="6307" gid="54801" x="27037.3" y="26558" width="350" height="720"/>
   <object id="6313" gid="55020" x="27821.6" y="27983.8" width="155" height="167"/>
   <object id="6318" gid="55328" x="27748.8" y="27784.5" width="74" height="62"/>
   <object id="6319" gid="55328" x="27551.8" y="27741.5" width="74" height="62"/>
@@ -551,15 +505,22 @@
   <object id="6323" gid="55451" x="27525.8" y="27925.5" width="300" height="411"/>
   <object id="6324" gid="55448" x="27603.1" y="28074.3" width="309" height="426"/>
   <object id="6325" gid="55584" x="27243.8" y="28080.8" width="288" height="256"/>
-  <object id="6326" gid="55582" x="28079.2" y="27776.2" width="224" height="256"/>
   <object id="6327" gid="55562" x="27785.8" y="27325.5" width="96" height="96"/>
-  <object id="6328" gid="55559" x="27519.2" y="27173.5" width="122" height="88"/>
-  <object id="6329" gid="55581" x="27749.2" y="27602.2" width="288" height="256"/>
+  <object id="6328" gid="55559" x="27340.2" y="27564.5" width="122" height="88"/>
   <object id="6330" gid="55643" x="27941.8" y="27889.5" width="32" height="32"/>
-  <object id="6331" gid="54793" x="27941.4" y="27296.6" width="631" height="723"/>
-  <object id="6332" gid="54793" x="28544.8" y="28098.6" width="631" height="723"/>
-  <object id="6333" gid="37938" x="27198.1" y="27433.3" width="102" height="53"/>
-  <object id="6334" gid="38766" x="27301.8" y="27493.5" width="12" height="33"/>
-  <object id="6335" gid="36483" x="27469.6" y="27409.8" width="31" height="75"/>
+  <object id="6331" gid="54793" x="27559.4" y="27214.6" width="631" height="723"/>
+  <object id="6332" gid="54793" x="27817.8" y="26949.6" width="631" height="723"/>
+  <object id="6369" gid="45834" x="27010.3" y="29609" width="120" height="85"/>
+  <object id="6372" gid="42215" x="27062.8" y="29520.5" width="110" height="80"/>
+  <object id="6375" template="../spawn_points/unit_spawns/2nd_cast/human/male/Male_Monk.tx" x="28018.8" y="28145.8">
+   <properties>
+    <property name="player" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="6379" gid="55473" x="28209.8" y="27287.5" width="90" height="83"/>
+  <object id="6380" gid="55477" x="28225.8" y="27585.5" width="92" height="87"/>
+  <object id="6381" gid="55700" x="28139.1" y="27394.3" width="83" height="77"/>
+  <object id="6382" gid="55749" x="28211.1" y="27236.3" width="567" height="560"/>
+  <object id="6383" gid="55583" x="28112.8" y="27582.5" width="288" height="256"/>
  </objectgroup>
 </map>
