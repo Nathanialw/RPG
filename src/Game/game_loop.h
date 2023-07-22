@@ -22,67 +22,68 @@
 
 namespace Game_Loop {
 
-    bool running = false;
+  bool running = false;
 
-    void Game_State() {
-        if (Graphics::running == false) {
-            running = false;
-        } else {
-            running = true;
-        }
+  void Game_State() {
+    if (Graphics::running == false) {
+      running = false;
+    } else {
+      running = true;
     }
+  }
 
 
-    void Game_Loop() {
-        Game_State();
-        while (running == true) {
-            Game_State();
-            //Squad_Control::Create_And_Fill_New_Squad(World::zone);
-            //Test_Units::Create_Formation(World::zone);
+  void Game_Loop() {
+    Game_State();
+    Timer::startPerf = SDL_GetPerformanceCounter();
+    while (running == true) {
+      Game_State();
+      //Squad_Control::Create_And_Fill_New_Squad(World::zone);
+      //Test_Units::Create_Formation(World::zone);
 
 
-            Event_Handler::Update_User_Input(World::zone);
-            Character_Stats::Update_Items(World::zone);
+      Event_Handler::Update_User_Input(World::zone);
+      Character_Stats::Update_Items(World::zone);
 
-            UI::Move_To_Item_Routine(World::zone, Mouse::itemCurrentlyHeld);
-            Death_Control::Dead_Entity_Routine(World::zone);
-            Player_Control::Move_To_Atack_Routine(World::zone);
+      UI::Move_To_Item_Routine(World::zone, Mouse::itemCurrentlyHeld);
+      Death_Control::Dead_Entity_Routine(World::zone);
+      Player_Control::Move_To_Atack_Routine(World::zone);
 
-            //std::cout << "Player_Input = Good" << std::endl;
-            AI::Update_AI(World::zone);
+      //std::cout << "Player_Input = Good" << std::endl;
+      AI::Update_AI(World::zone);
 
-            //std::cout << "Update_Attacks = Good" << std::endl;
-            Spells::Update_Spells();
+      //std::cout << "Update_Attacks = Good" << std::endl;
+      Spells::Update_Spells();
 
-            //std::cout << "AI = Good" << std::endl;
-            Combat_Control::Update_Attacks(World::zone);
-
-
-            //std::cout << "Update_Spells = Good" << std::endl;
-            Movement::Update_Entity_Positions(World::zone);
-
-            //std::cout << "Movement_Handler = Good" << std::endl;
-            Collision::Collision_Routine(World::zone);
-
-            //	Unit_Position::Update_Formation_Positions(World::zone);
-
-            //std::cout << "Update_Formation_Rects = Good" << std::endl;
-
-            //Formation_Collision::Test_Collision(World::zone);
-
-            //std::cout << "Collisions = Good" << std::endl;
-            Unit_Status::Update_Unit_Status(World::zone);
-
-            //std::cout << "Update_Unit_Status = Good" << std::endl;
-            Rendering::Rendering(World::zone);
-            Dynamic_Quad_Tree::Update_Tree_Routine(World::zone);
+      //std::cout << "AI = Good" << std::endl;
+      Combat_Control::Update_Attacks(World::zone);
 
 
-            Rendering::Present();
-            //std::cout << "Rendering = Good" << std::endl;
-            Timer::Calculate_Timestep();
-            Timer::Calculate_FPS();
-            //std::cout << "frameTime = Good" << std::endl;
-        }
+      //std::cout << "Update_Spells = Good" << std::endl;
+      Movement::Update_Entity_Positions(World::zone);
+
+      //std::cout << "Movement_Handler = Good" << std::endl;
+      Collision::Collision_Routine(World::zone);
+
+      //	Unit_Position::Update_Formation_Positions(World::zone);
+
+      //std::cout << "Update_Formation_Rects = Good" << std::endl;
+
+      //Formation_Collision::Test_Collision(World::zone);
+
+      //std::cout << "Collisions = Good" << std::endl;
+      Unit_Status::Update_Unit_Status(World::zone);
+
+      //std::cout << "Update_Unit_Status = Good" << std::endl;
+      Rendering::Rendering(World::zone);
+      Dynamic_Quad_Tree::Update_Tree_Routine(World::zone);
+
+
+      Rendering::Present();
+      //std::cout << "Rendering = Good" << std::endl;
+      Timer::Calculate_Timestep();
+      Timer::Calculate_FPS();
+      //std::cout << "frameTime = Good" << std::endl;
     }
+  }
 }

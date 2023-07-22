@@ -1,15 +1,23 @@
 #pragma once
 #include "SDL2/SDL.h"
+#include <SDL2/SDL_timer.h>
 #include <iostream>
+#include "math.h"
+#include "utilities.h"
 
 namespace Timer {
 
-  int64_t timeStep = 0;
+  float timeStep = 0;
   int64_t avgFPS = 0;
-  int64_t prevFrame = 0;
-  int64_t currentFrame = 0;
+  int64_t startPerf = 0;
+  int64_t endPerf = 0;  
   bool pause = false;
 
+  float fps_timeStep = 0;
+  int64_t fps_avgFPS = 0;
+  int64_t fps_prevFrame = 0;
+  int64_t fps_currentFrame = 0;
+  
   void Pause_Control() {
     if (pause) {
       pause = false;
@@ -19,34 +27,35 @@ namespace Timer {
     }
   }
 
-  void Calculate_Timestep() {
-    prevFrame = currentFrame;
-    currentFrame = SDL_GetTicks64();
-    timeStep = currentFrame - prevFrame;
-
-    if (pause) {
-      timeStep = 0;
-    }
-  }
-
-  float fps_timeStep = 0;
-  int64_t fps_avgFPS = 0;
-  int64_t fps_prevFrame = 0;
-  int64_t fps_currentFrame = 0;
-
   void Calculate_FPS() {
-    fps_prevFrame = fps_currentFrame;
-    fps_currentFrame = SDL_GetPerformanceCounter();
-    fps_timeStep = fps_currentFrame - fps_prevFrame;
-    float frequency = SDL_GetPerformanceFrequency();
-    if (fps_timeStep != 0 && frequency != 0) {
-      fps_avgFPS = 1 / (fps_timeStep / frequency);
-    }
+    fps_avgFPS = 1.0f / timeStep / 1000.0f;
+    fps_timeStep = timeStep / 1000.0f;
     if (pause) {
       timeStep = 0;
       fps_timeStep = 0;
+    }    
+  }
+  
+  void Calculate_Timestep() {
+
+    endPerf = SDL_GetPerformanceCounter();
+    timeStep = ((float)endPerf - (float)startPerf) / (float)SDL_GetPerformanceFrequency() * (float)1000;
+
+    //if (timeStep < 16.66f) {
+    //  SDL_Delay(floor(16.66f - timeStep));
+    //  timeStep = 16.66f;
+    //}
+    //Utilities::Log(timeStep);
+    startPerf = SDL_GetPerformanceCounter();
+
+    Calculate_FPS();
+    
+    if (pause) {
+      timeStep = 0;
     }
   }
+
+
 
   class Frame_Timer {
     float fTime_between;

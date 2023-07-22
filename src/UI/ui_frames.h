@@ -14,7 +14,7 @@ namespace UI_Frames {
     std::vector<UI::Text_Frame> buttons = { menuButton, menuButton, menuButton };
   };
 
-  std::vector<std::string> text = { "test0", "test1", "test2", "test3", };
+  std::vector<std::string> text = { "Build", "Train", "Army", "test3", };
 
   Menu_Frame topFrame;
 

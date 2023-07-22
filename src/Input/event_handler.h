@@ -18,6 +18,7 @@
 #include "sinister_strike.h"
 #include "interface.h"
 #include "items.h"
+#include "game_menu.h"
 
 namespace Event_Handler {
 
@@ -107,6 +108,8 @@ namespace Event_Handler {
   void Mouse_Input(entt::registry &zone, entt::entity &player_ID, Component::Position &playerPosition, Component::Camera &camera) {
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
+	//	if (Game_Menu_Control::Check_Menu_Button()) {
+	//	}
 	//check if cursor is in the bag UI
 	if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
 	  UI::Bag_UI::Interact_With_Bag(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera);
@@ -137,10 +140,10 @@ namespace Event_Handler {
 	  if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition)) {
 	    Mouse::bRight_Mouse_Pressed = false; //otherwise mouse move will override attack move
 	  }
-        else if (!Mouse::bRight_Mouse_Pressed) {
+	  else if (!Mouse::bRight_Mouse_Pressed) {
             User_Mouse_Input::Update_Move_Command_Box();
             // if not seleciton units
-        }
+	  }
 	}
 	else {
 	  UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);

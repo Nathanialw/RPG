@@ -68,21 +68,17 @@ namespace Debug_System {
     iFramePollRate += Timer::timeStep;
     if (iFramePollRate >= 1000) {
       iFramePollRate = 0;
+      SDL_FRect c = { 0.0f, 0.0f, 96.0f / camera.scale.x, 64.0f / camera.scale.y };
       if (frameRateMode) {
 	SDL_DestroyTexture(framerate.pTexture);
 	framerate = Graphics::Load_Text_Texture(std::to_string(Timer::fps_avgFPS), { 133,255,133 });
+	SDL_RenderCopyF(Graphics::renderer, framerate.pTexture, &framerate.k, &c);
       }
       if (frameTimeMode) {
 	SDL_DestroyTexture(timeStep.pTexture);
-	timeStep = Graphics::Load_Text_Texture(std::to_string(Timer::fps_timeStep / (float)SDL_GetPerformanceFrequency()), { 133,255,133 });
+	timeStep = Graphics::Load_Text_Texture(std::to_string(Timer::fps_avgFPS), { 133,255,133 });
+	SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &timeStep.k, &c);
       }
-    }
-    SDL_FRect c = { 0.0f, 0.0f, 96.0f / camera.scale.x, 64.0f / camera.scale.y };
-    if (frameRateMode) {
-      SDL_RenderCopyF(Graphics::renderer, framerate.pTexture, &framerate.k, &c);
-    }
-    if (frameTimeMode) {
-      SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &timeStep.k, &c);
     }
   }
 

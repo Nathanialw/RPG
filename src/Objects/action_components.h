@@ -62,7 +62,7 @@ namespace Action_Component {
         Action_State state = walk;
         Action_Progress frameState = start;
         int frame = 0;
-        int frameTime = 0;
+        float frameTime = 0;
     };
 
     void Set_State(Action &action, Action_State state) {

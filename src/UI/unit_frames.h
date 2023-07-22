@@ -47,9 +47,7 @@ namespace Unit_Frames {
     float yPos = targetFrame.frame.y;
     for (auto &frame : targets) {
       frame.health.frame = {targetFrame.frame.x + targetFrame.frame.h, yPos + targetFrame.frame.h / 2.0f, targetFrame.frame.w - targetFrame.frame.h, targetFrame.frame.h / 2.0f};
-
       frame.img.frame = {targetFrame.frame.x, yPos, targetFrame.frame.h, targetFrame.frame.h} ;
-
       frame.name.frame = {targetFrame.frame.x + targetFrame.frame.h, yPos, targetFrame.frame.w - targetFrame.frame.h, targetFrame.frame.h / 2.0f};
       yPos += targetFrame.frame.h;
     }
