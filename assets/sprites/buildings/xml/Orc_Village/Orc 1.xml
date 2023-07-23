@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:66eb13dd06076edffa44b1bb357ea330:f8c0cff155401a5c736fd87822e8d71a:dfa52f92988362e9a7b7df5aa6136ff7$ -->
+<!-- $TexturePacker:SmartUpdate:ec052354697293d0a3287c184d84b6ea:f8c0cff155401a5c736fd87822e8d71a:dfa52f92988362e9a7b7df5aa6136ff7$ -->
 <!--Format:
 n  => name of the sprite
 x  => sprite x pos in texture
@@ -19,133 +19,133 @@ vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
 verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
 triangles  => sprite triangulation, 3 vertex indices per triangle
 -->
-<TextureAtlas imagePath="Orc 1.png" width="991" height="8108">
-    <sprite n="Cage T1" x="860" y="6956" w="129" h="142" oX="0" oY="0" oW="147" oH="142"/>
-    <sprite n="Cage T2" x="223" y="7381" w="143" h="157" oX="0" oY="0" oW="158" oH="157"/>
-    <sprite n="Cage T3" x="365" y="7769" w="127" h="157" oX="0" oY="0" oW="143" oH="157"/>
-    <sprite n="Cage T4" x="666" y="7817" w="141" h="158" oX="0" oY="0" oW="154" oH="158"/>
-    <sprite n="Cage T5" x="852" y="7248" w="135" h="144" oX="0" oY="0" oW="144" oH="144"/>
-    <sprite n="Cage T6" x="223" y="7712" w="140" h="150" oX="0" oY="0" oW="153" oH="150"/>
-    <sprite n="Cage T7" x="368" y="7397" w="126" h="130" oX="0" oY="0" oW="139" oH="139"/>
-    <sprite n="Cage T8" x="822" y="7712" w="144" h="152" oX="22" oY="15" oW="190" oH="190"/>
-    <sprite n="Campfire T1" x="875" y="5435" w="114" h="89" oX="0" oY="0" oW="115" oH="89"/>
-    <sprite n="Campfire T2" x="671" y="7977" w="117" h="81" oX="0" oY="0" oW="118" oH="81"/>
-    <sprite n="Campfire T3" x="875" y="5615" w="113" h="83" oX="0" oY="0" oW="114" oH="83"/>
-    <sprite n="Campfire T4" x="444" y="7977" w="111" h="93" oX="41" oY="60" oW="190" oH="190"/>
-    <sprite n="Campfire T5" x="557" y="8014" w="112" h="88" oX="0" oY="0" oW="113" oH="88"/>
-    <sprite n="Campfire T6" x="105" y="7728" w="116" h="82" oX="0" oY="0" oW="117" oH="82"/>
-    <sprite n="Campfire T7" x="875" y="5526" w="114" h="87" oX="41" oY="59" oW="190" oH="190"/>
-    <sprite n="Campfire T8" x="1" y="7728" w="102" h="85"/>
-    <sprite n="Fur T1" x="125" y="8035" w="104" h="69" oX="3" oY="0" oW="107" oH="69"/>
-    <sprite n="Fur T2" x="494" y="7877" w="81" h="79"/>
-    <sprite n="Fur T3" x="395" y="7529" w="99" h="74" oX="4" oY="0" oW="103" oH="74"/>
-    <sprite n="Fur T4" x="790" y="8053" w="113" h="54" oX="2" oY="0" oW="115" oH="54"/>
-    <sprite n="Fur T5" x="809" y="7866" w="102" h="73" oX="4" oY="0" oW="106" oH="73"/>
-    <sprite n="Fur T6" x="125" y="7602" w="82" h="78" oX="1" oY="0" oW="83" oH="78"/>
-    <sprite n="Fur T7" x="790" y="7977" w="100" h="74" oX="18" oY="24" oW="120" oH="120"/>
-    <sprite n="Fur T8" x="557" y="7958" w="104" h="54" oX="2" oY="0" oW="106" oH="54"/>
-    <sprite n="Meat Hang T1" x="395" y="7605" w="98" h="162" oX="0" oY="0" oW="111" oH="162"/>
-    <sprite n="Meat Hang T2" x="222" y="7540" w="81" h="170" oX="0" oY="0" oW="95" oH="170"/>
-    <sprite n="Meat Hang T3" x="125" y="7866" w="93" h="167" oX="0" oY="0" oW="110" oH="167"/>
-    <sprite n="Meat Hang T4" x="495" y="7721" w="86" h="154" oX="0" oY="0" oW="96" oH="154"/>
-    <sprite n="Meat Hang T5" x="125" y="7436" w="95" h="164" oX="0" oY="0" oW="106" oH="164"/>
-    <sprite n="Meat Hang T6" x="583" y="7728" w="81" h="149" oX="0" oY="0" oW="101" oH="149"/>
-    <sprite n="Meat Hang T7" x="496" y="7397" w="95" h="161" oX="0" oY="0" oW="106" oH="161"/>
-    <sprite n="Meat Hang T8" x="496" y="7560" w="88" h="159" oX="0" oY="0" oW="114" oH="159"/>
-    <sprite n="Meat Stand T1" x="421" y="7072" w="171" h="323" oX="0" oY="0" oW="229" oH="323"/>
-    <sprite n="Meat Stand T2" x="1" y="6867" w="219" h="323" oX="0" oY="0" oW="257" oH="323"/>
-    <sprite n="Meat Stand T3" x="729" y="6631" w="211" h="323" oX="0" oY="0" oW="248" oH="323"/>
-    <sprite n="Meat Stand T4" x="766" y="573" w="223" h="352" oX="0" oY="0" oW="259" oH="352"/>
-    <sprite n="Meat Stand T5" x="676" y="7053" w="174" h="317" oX="0" oY="0" oW="230" oH="317"/>
-    <sprite n="Meat Stand T6" x="773" y="254" w="217" h="317" oX="0" oY="0" oW="255" oH="317"/>
-    <sprite n="Meat Stand T7" x="463" y="6750" w="211" h="320" oX="0" oY="0" oW="246" oH="320"/>
-    <sprite n="Meat Stand T8" x="242" y="6710" w="219" h="350" oX="0" oY="0" oW="248" oH="350"/>
-    <sprite n="Orc Tent 1 T1" x="1" y="1" w="395" h="212"/>
-    <sprite n="Orc Tent 1 T2" x="360" y="1462" w="356" h="336" oX="0" oY="0" oW="358" oH="336"/>
-    <sprite n="Orc Tent 1 T3" x="717" y="2363" w="268" h="360" oX="0" oY="0" oW="272" oH="360"/>
-    <sprite n="Orc Tent 1 T4" x="1" y="1772" w="356" h="336" oX="0" oY="0" oW="357" oH="336"/>
-    <sprite n="Orc Tent 1 T5" x="398" y="1" w="394" h="212" oX="0" oY="0" oW="395" oH="212"/>
-    <sprite n="Orc Tent 1 T6" x="1" y="1444" w="357" h="326" oX="0" oY="0" oW="365" oH="326"/>
-    <sprite n="Orc Tent 1 T7" x="295" y="5565" w="267" h="345" oX="0" oY="0" oW="271" oH="345"/>
-    <sprite n="Orc Tent 1 T8" x="359" y="1800" w="356" h="326" oX="0" oY="0" oW="358" oH="326"/>
-    <sprite n="Orc Tent 2 T1" x="717" y="2102" w="270" h="259" oX="0" oY="0" oW="291" oH="259"/>
-    <sprite n="Orc Tent 2 T2" x="347" y="3067" w="338" h="279" oX="0" oY="0" oW="351" oH="279"/>
-    <sprite n="Orc Tent 2 T3" x="359" y="2128" w="356" h="259" oX="0" oY="0" oW="362" oH="260"/>
-    <sprite n="Orc Tent 2 T4" x="335" y="3646" w="330" h="289" oX="0" oY="0" oW="348" oH="289"/>
-    <sprite n="Orc Tent 2 T5" x="717" y="1838" w="272" h="262" oX="0" oY="0" oW="299" oH="284"/>
-    <sprite n="Orc Tent 2 T6" x="335" y="3348" w="332" h="296"/>
-    <sprite n="Orc Tent 2 T7" x="359" y="2389" w="355" h="308" oX="0" oY="0" oW="368" oH="308"/>
-    <sprite n="Orc Tent 2 T8" x="663" y="3977" w="325" h="303" oX="0" oY="0" oW="345" oH="303"/>
-    <sprite n="Orc Tent 3 T1" x="374" y="1091" w="365" h="369" oX="0" oY="0" oW="376" oH="369"/>
-    <sprite n="Orc Tent 3 T2" x="1" y="3939" w="324" h="382" oX="0" oY="0" oW="336" oH="382"/>
-    <sprite n="Orc Tent 3 T3" x="327" y="4247" w="324" h="372" oX="0" oY="0" oW="325" oH="372"/>
-    <sprite n="Orc Tent 3 T4" x="1" y="3259" w="332" h="380" oX="0" oY="0" oW="338" oH="380"/>
-    <sprite n="Orc Tent 3 T5" x="1" y="1076" w="371" h="366" oX="0" oY="0" oW="383" oH="366"/>
-    <sprite n="Orc Tent 3 T6" x="355" y="2699" w="350" h="366" oX="0" oY="0" oW="352" oH="366"/>
-    <sprite n="Orc Tent 3 T7" x="1" y="5445" w="292" h="383" oX="0" oY="0" oW="296" oH="383"/>
-    <sprite n="Orc Tent 3 T8" x="1" y="2890" w="344" h="367" oX="0" oY="0" oW="360" oH="367"/>
-    <sprite n="Orc Tent 4 T1" x="389" y="215" w="382" h="291" oX="0" oY="0" oW="387" oH="291"/>
-    <sprite n="Orc Tent 4 T2" x="1" y="733" w="375" h="341" oX="0" oY="0" oW="381" oH="341"/>
-    <sprite n="Orc Tent 4 T3" x="385" y="508" w="379" h="310" oX="0" oY="0" oW="389" oH="310"/>
-    <sprite n="Orc Tent 4 T4" x="378" y="820" w="374" h="269" oX="0" oY="0" oW="381" oH="269"/>
-    <sprite n="Orc Tent 4 T5" x="1" y="3641" w="332" h="296" oX="0" oY="0" oW="343" oH="296"/>
-    <sprite n="Orc Tent 4 T6" x="335" y="3937" w="326" h="308" oX="21" oY="25" oW="400" oH="400"/>
-    <sprite n="Orc Tent 4 T7" x="1" y="2604" w="352" h="284" oX="0" oY="0" oW="362" oH="284"/>
-    <sprite n="Orc Tent 4 T8" x="1" y="215" w="386" h="271" oX="3" oY="59" oW="400" oH="400"/>
-    <sprite n="Orc Tent 5 T1" x="653" y="4282" w="320" h="196" oX="0" oY="0" oW="344" oH="196"/>
-    <sprite n="Orc Tent 5 T2" x="1" y="5153" w="299" h="290" oX="0" oY="0" oW="317" oH="290"/>
-    <sprite n="Orc Tent 5 T3" x="783" y="6017" w="200" h="289" oX="0" oY="0" oW="206" oH="314"/>
-    <sprite n="Orc Tent 5 T4" x="687" y="3243" w="301" h="290" oX="0" oY="0" oW="315" oH="290"/>
-    <sprite n="Orc Tent 5 T5" x="669" y="3535" w="321" h="196" oX="0" oY="0" oW="340" oH="196"/>
-    <sprite n="Orc Tent 5 T6" x="302" y="5278" w="295" h="285" oX="0" oY="0" oW="311" oH="285"/>
-    <sprite n="Orc Tent 5 T7" x="222" y="7062" w="197" h="317" oX="0" oY="0" oW="202" oH="317"/>
-    <sprite n="Orc Tent 5 T8" x="635" y="5147" w="297" h="286" oX="0" oY="0" oW="313" oH="286"/>
-    <sprite n="Orc Tent 6 T1" x="756" y="6308" w="231" h="321" oX="0" oY="0" oW="248" oH="321"/>
-    <sprite n="Orc Tent 6 T2" x="1" y="4542" w="320" h="305"/>
-    <sprite n="Orc Tent 6 T3" x="1" y="2375" w="356" h="227" oX="0" oY="0" oW="357" oH="227"/>
-    <sprite n="Orc Tent 6 T4" x="1" y="4849" w="318" h="302" oX="0" oY="0" oW="329" oH="302"/>
-    <sprite n="Orc Tent 6 T5" x="754" y="927" w="231" h="324" oX="0" oY="0" oW="249" oH="324"/>
-    <sprite n="Orc Tent 6 T6" x="653" y="4480" w="318" h="327" oX="0" oY="0" oW="320" oH="327"/>
-    <sprite n="Orc Tent 6 T7" x="1" y="2110" w="356" h="263" oX="0" oY="0" oW="358" oH="263"/>
-    <sprite n="Orc Tent 6 T8" x="323" y="4621" w="318" h="323" oX="0" oY="0" oW="329" oH="323"/>
-    <sprite n="Orc Wagon T1" x="794" y="1" w="189" h="251" oX="0" oY="0" oW="213" oH="251"/>
-    <sprite n="Orc Wagon T2" x="263" y="5912" w="258" h="242" oX="0" oY="0" oW="275" oH="242"/>
-    <sprite n="Orc Wagon T3" x="640" y="4952" w="312" h="193" oX="0" oY="0" oW="324" oH="193"/>
-    <sprite n="Orc Wagon T4" x="1" y="5830" w="260" h="237" oX="0" oY="0" oW="287" oH="237"/>
-    <sprite n="Orc Wagon T5" x="1" y="7192" w="188" h="242" oX="0" oY="0" oW="213" oH="242"/>
-    <sprite n="Orc Wagon T6" x="523" y="6016" w="258" h="239" oX="0" oY="0" oW="276" oH="245"/>
-    <sprite n="Orc Wagon T7" x="321" y="5083" w="312" h="193" oX="0" oY="0" oW="324" oH="193"/>
-    <sprite n="Orc Wagon T8" x="1" y="6069" w="258" h="240" oX="0" oY="0" oW="287" oH="240"/>
-    <sprite n="Palisade T1" x="676" y="6956" w="182" h="95" oX="0" oY="0" oW="187" oH="95"/>
-    <sprite n="Palisade T2" x="309" y="7958" w="133" h="144" oX="0" oY="0" oW="143" oH="144"/>
-    <sprite n="Palisade T3" x="305" y="7540" w="88" h="165" oX="0" oY="0" oW="108" oH="165"/>
-    <sprite n="Palisade T4" x="822" y="7554" w="145" h="156" oX="0" oY="0" oW="154" oH="156"/>
-    <sprite n="Palisade T5" x="673" y="7372" w="167" h="113" oX="0" oY="0" oW="176" oH="113"/>
-    <sprite n="Palisade T6" x="842" y="7394" w="146" h="158" oX="0" oY="0" oW="155" oH="158"/>
-    <sprite n="Palisade T7" x="220" y="7866" w="87" h="167" oX="0" oY="0" oW="88" oH="167"/>
-    <sprite n="Palisade T8" x="852" y="7100" w="136" h="146" oX="0" oY="0" oW="155" oH="146"/>
-    <sprite n="Pallisade T1" x="1" y="618" w="376" h="113" oX="0" oY="0" oW="389" oH="113"/>
-    <sprite n="Pallisade T2" x="707" y="2971" w="274" h="270" oX="0" oY="0" oW="300" oH="270"/>
-    <sprite n="Pallisade T3" x="594" y="7390" w="71" h="336" oX="0" oY="0" oW="108" oH="336"/>
-    <sprite n="Pallisade T4" x="718" y="1569" w="272" h="267" oX="0" oY="0" oW="296" oH="267"/>
-    <sprite n="Pallisade T5" x="1" y="488" w="382" h="128" oX="0" oY="0" oW="395" oH="128"/>
-    <sprite n="Pallisade T6" x="599" y="5435" w="274" h="251" oX="0" oY="0" oW="298" oH="251"/>
-    <sprite n="Pallisade T7" x="594" y="7072" w="77" h="316" oX="4" oY="0" oW="137" oH="316"/>
-    <sprite n="Pallisade T8" x="707" y="2725" w="280" h="244" oX="0" oY="0" oW="302" oH="244"/>
-    <sprite n="Spit Roast T1" x="321" y="4946" w="317" h="135" oX="0" oY="0" oW="337" oH="135"/>
-    <sprite n="Spit Roast T2" x="1" y="6626" w="239" h="239" oX="0" oY="0" oW="255" oH="239"/>
-    <sprite n="Spit Roast T3" x="1" y="7436" w="122" h="263" oX="0" oY="0" oW="139" oH="263"/>
-    <sprite n="Spit Roast T4" x="489" y="6507" w="238" h="241" oX="0" oY="0" oW="262" oH="241"/>
-    <sprite n="Spit Roast T5" x="643" y="4809" w="318" h="141" oX="0" oY="0" oW="334" oH="141"/>
-    <sprite n="Spit Roast T6" x="512" y="6257" w="242" h="248" oX="0" oY="0" oW="252" oH="248"/>
-    <sprite n="Spit Roast T7" x="1" y="7817" w="122" h="267" oX="0" oY="0" oW="139" oH="267"/>
-    <sprite n="Spit Roast T8" x="248" y="6467" w="239" h="241" oX="0" oY="0" oW="268" oH="241"/>
-    <sprite n="Tanning Rack T1" x="667" y="3733" w="323" h="242" oX="0" oY="0" oW="357" oH="242"/>
-    <sprite n="Tanning Rack T2" x="564" y="5688" w="258" h="326" oX="0" oY="0" oW="285" oH="326"/>
-    <sprite n="Tanning Rack T3" x="667" y="7487" w="153" h="328" oX="0" oY="0" oW="183" oH="328"/>
-    <sprite n="Tanning Rack T4" x="741" y="1253" w="249" h="314" oX="0" oY="0" oW="293" oH="314"/>
-    <sprite n="Tanning Rack T5" x="1" y="4323" w="324" h="217" oX="0" oY="0" oW="358" oH="217"/>
-    <sprite n="Tanning Rack T6" x="261" y="6156" w="249" h="309" oX="0" oY="0" oW="283" oH="309"/>
-    <sprite n="Tanning Rack T7" x="824" y="5700" w="154" h="315" oX="0" oY="0" oW="196" oH="315"/>
-    <sprite n="Tanning Rack T8" x="1" y="6311" w="245" h="313" oX="0" oY="0" oW="295" oH="313"/>
+<TextureAtlas imagePath="Orc 1.png" width="1014" height="8471">
+    <sprite n="Cage T1" x="706" y="7815" w="147" h="142"/>
+    <sprite n="Cage T2" x="850" y="6685" w="158" h="157"/>
+    <sprite n="Cage T3" x="1" y="8313" w="143" h="157"/>
+    <sprite n="Cage T4" x="158" y="7976" w="154" h="158"/>
+    <sprite n="Cage T5" x="417" y="7985" w="144" h="144"/>
+    <sprite n="Cage T6" x="1" y="8161" w="153" h="150"/>
+    <sprite n="Cage T7" x="831" y="8023" w="139" h="139"/>
+    <sprite n="Cage T8" x="850" y="6531" w="159" h="152" oX="22" oY="15" oW="190" oH="190"/>
+    <sprite n="Campfire T1" x="883" y="6351" w="115" h="89"/>
+    <sprite n="Campfire T2" x="883" y="6184" w="118" h="81"/>
+    <sprite n="Campfire T3" x="888" y="7702" w="114" h="83"/>
+    <sprite n="Campfire T4" x="251" y="7661" w="190" h="153" oX="0" oY="0" oW="190" oH="190"/>
+    <sprite n="Campfire T5" x="888" y="7787" w="113" h="88"/>
+    <sprite n="Campfire T6" x="883" y="6267" w="117" h="82"/>
+    <sprite n="Campfire T7" x="883" y="6442" w="115" h="87" oX="41" oY="59" oW="190" oH="190"/>
+    <sprite n="Campfire T8" x="437" y="7898" w="102" h="85"/>
+    <sprite n="Fur T1" x="721" y="8126" w="107" h="69"/>
+    <sprite n="Fur T2" x="541" y="7898" w="81" h="79"/>
+    <sprite n="Fur T3" x="547" y="8396" w="103" h="74"/>
+    <sprite n="Fur T4" x="888" y="7485" w="115" h="54"/>
+    <sprite n="Fur T5" x="652" y="8396" w="106" h="73"/>
+    <sprite n="Fur T6" x="621" y="7815" w="83" h="78"/>
+    <sprite n="Fur T7" x="760" y="8363" w="103" h="75" oX="15" oY="24" oW="120" oH="120"/>
+    <sprite n="Fur T8" x="296" y="8405" w="106" h="54"/>
+    <sprite n="Meat Hang T1" x="901" y="5851" w="111" h="162"/>
+    <sprite n="Meat Hang T2" x="624" y="7959" w="95" h="170"/>
+    <sprite n="Meat Hang T3" x="901" y="6015" w="110" h="167"/>
+    <sprite n="Meat Hang T4" x="904" y="8164" w="96" h="154"/>
+    <sprite n="Meat Hang T5" x="688" y="8197" w="106" h="164"/>
+    <sprite n="Meat Hang T6" x="314" y="7985" w="101" h="149"/>
+    <sprite n="Meat Hang T7" x="796" y="8197" w="106" h="161"/>
+    <sprite n="Meat Hang T8" x="888" y="7541" w="114" h="159"/>
+    <sprite n="Meat Stand T1" x="781" y="817" w="229" h="323"/>
+    <sprite n="Meat Stand T2" x="1" y="6860" w="257" h="323"/>
+    <sprite n="Meat Stand T3" x="255" y="7336" w="248" h="323"/>
+    <sprite n="Meat Stand T4" x="265" y="6741" w="259" h="352"/>
+    <sprite n="Meat Stand T5" x="783" y="498" w="230" h="317"/>
+    <sprite n="Meat Stand T6" x="526" y="6795" w="255" h="317"/>
+    <sprite n="Meat Stand T7" x="767" y="7163" w="246" h="320"/>
+    <sprite n="Meat Stand T8" x="517" y="7114" w="248" h="350"/>
+    <sprite n="Orc Tent 1 T1" x="398" y="1" w="395" h="212"/>
+    <sprite n="Orc Tent 1 T2" x="363" y="2141" w="358" h="336"/>
+    <sprite n="Orc Tent 1 T3" x="1" y="6255" w="272" h="360"/>
+    <sprite n="Orc Tent 1 T4" x="361" y="2744" w="357" h="336"/>
+    <sprite n="Orc Tent 1 T5" x="398" y="215" w="395" h="212"/>
+    <sprite n="Orc Tent 1 T6" x="371" y="1551" w="365" h="326"/>
+    <sprite n="Orc Tent 1 T7" x="577" y="6448" w="271" h="345"/>
+    <sprite n="Orc Tent 1 T8" x="1" y="2320" w="358" h="326"/>
+    <sprite n="Orc Tent 2 T1" x="721" y="2581" w="291" h="259"/>
+    <sprite n="Orc Tent 2 T2" x="355" y="3311" w="351" h="279"/>
+    <sprite n="Orc Tent 2 T3" x="365" y="1879" w="362" h="260"/>
+    <sprite n="Orc Tent 2 T4" x="1" y="3479" w="348" h="289"/>
+    <sprite n="Orc Tent 2 T5" x="633" y="5565" w="299" h="284"/>
+    <sprite n="Orc Tent 2 T6" x="681" y="4264" w="332" h="296"/>
+    <sprite n="Orc Tent 2 T7" x="1" y="1355" w="368" h="308"/>
+    <sprite n="Orc Tent 2 T8" x="351" y="3592" w="345" h="303"/>
+    <sprite n="Orc Tent 3 T1" x="384" y="1180" w="376" h="369"/>
+    <sprite n="Orc Tent 3 T2" x="1" y="4548" w="336" h="382"/>
+    <sprite n="Orc Tent 3 T3" x="1" y="4932" w="325" h="372"/>
+    <sprite n="Orc Tent 3 T4" x="1" y="4166" w="338" h="380"/>
+    <sprite n="Orc Tent 3 T5" x="1" y="716" w="383" h="366"/>
+    <sprite n="Orc Tent 3 T6" x="1" y="3111" w="352" h="366"/>
+    <sprite n="Orc Tent 3 T7" x="1" y="5870" w="296" h="383"/>
+    <sprite n="Orc Tent 3 T8" x="1" y="1951" w="360" h="367"/>
+    <sprite n="Orc Tent 4 T1" x="392" y="544" w="387" h="291"/>
+    <sprite n="Orc Tent 4 T2" x="386" y="837" w="381" h="341"/>
+    <sprite n="Orc Tent 4 T3" x="1" y="404" w="389" h="310"/>
+    <sprite n="Orc Tent 4 T4" x="1" y="1084" w="381" h="269"/>
+    <sprite n="Orc Tent 4 T5" x="347" y="3897" w="343" h="296"/>
+    <sprite n="Orc Tent 4 T6" x="341" y="4195" w="338" h="308" oX="21" oY="25" oW="400" oH="400"/>
+    <sprite n="Orc Tent 4 T7" x="1" y="1665" w="362" h="284"/>
+    <sprite n="Orc Tent 4 T8" x="1" y="1" w="395" h="271" oX="3" oY="59" oW="400" oH="400"/>
+    <sprite n="Orc Tent 5 T1" x="1" y="3770" w="344" h="196"/>
+    <sprite n="Orc Tent 5 T2" x="1" y="5306" w="317" h="290"/>
+    <sprite n="Orc Tent 5 T3" x="769" y="1142" w="206" h="314"/>
+    <sprite n="Orc Tent 5 T4" x="698" y="3643" w="315" h="290"/>
+    <sprite n="Orc Tent 5 T5" x="1" y="3968" w="340" h="196"/>
+    <sprite n="Orc Tent 5 T6" x="320" y="5396" w="311" h="285"/>
+    <sprite n="Orc Tent 5 T7" x="783" y="6844" w="202" h="317"/>
+    <sprite n="Orc Tent 5 T8" x="650" y="5277" w="313" h="286"/>
+    <sprite n="Orc Tent 6 T1" x="1" y="7435" w="248" h="321"/>
+    <sprite n="Orc Tent 6 T2" x="328" y="5089" w="320" h="305"/>
+    <sprite n="Orc Tent 6 T3" x="360" y="3082" w="357" h="227"/>
+    <sprite n="Orc Tent 6 T4" x="339" y="4785" w="329" h="302"/>
+    <sprite n="Orc Tent 6 T5" x="762" y="1458" w="249" h="324"/>
+    <sprite n="Orc Tent 6 T6" x="692" y="3935" w="320" h="327"/>
+    <sprite n="Orc Tent 6 T7" x="361" y="2479" w="358" h="263"/>
+    <sprite n="Orc Tent 6 T8" x="680" y="4562" w="329" h="323"/>
+    <sprite n="Orc Wagon T1" x="795" y="1" w="213" h="251"/>
+    <sprite n="Orc Wagon T2" x="738" y="1784" w="275" h="242"/>
+    <sprite n="Orc Wagon T3" x="670" y="4887" w="324" h="193"/>
+    <sprite n="Orc Wagon T4" x="719" y="3158" w="287" h="237"/>
+    <sprite n="Orc Wagon T5" x="795" y="254" w="213" h="242"/>
+    <sprite n="Orc Wagon T6" x="299" y="6251" w="276" h="245"/>
+    <sprite n="Orc Wagon T7" x="670" y="5082" w="324" h="193"/>
+    <sprite n="Orc Wagon T8" x="723" y="2339" w="287" h="240"/>
+    <sprite n="Palisade T1" x="1" y="7758" w="187" h="95"/>
+    <sprite n="Palisade T2" x="855" y="7877" w="143" h="144"/>
+    <sprite n="Palisade T3" x="721" y="7959" w="108" h="165"/>
+    <sprite n="Palisade T4" x="1" y="8003" w="154" h="156"/>
+    <sprite n="Palisade T5" x="443" y="7783" w="176" h="113"/>
+    <sprite n="Palisade T6" x="190" y="7816" w="155" h="158"/>
+    <sprite n="Palisade T7" x="347" y="7816" w="88" h="167"/>
+    <sprite n="Palisade T8" x="1" y="7855" w="155" h="146"/>
+    <sprite n="Pallisade T1" x="392" y="429" w="389" h="113"/>
+    <sprite n="Pallisade T2" x="1" y="5598" w="300" h="270"/>
+    <sprite n="Pallisade T3" x="437" y="8131" w="108" h="336"/>
+    <sprite n="Pallisade T4" x="603" y="5851" w="296" h="267"/>
+    <sprite n="Pallisade T5" x="1" y="274" w="395" h="128"/>
+    <sprite n="Pallisade T6" x="303" y="5683" w="298" h="251"/>
+    <sprite n="Pallisade T7" x="157" y="8136" w="137" h="316"/>
+    <sprite n="Pallisade T8" x="708" y="3397" w="302" h="244"/>
+    <sprite n="Spit Roast T1" x="341" y="4505" w="337" h="135"/>
+    <sprite n="Spit Roast T2" x="260" y="7095" w="255" h="239"/>
+    <sprite n="Spit Roast T3" x="547" y="8131" w="139" h="263"/>
+    <sprite n="Spit Roast T4" x="1" y="6617" w="262" h="241"/>
+    <sprite n="Spit Roast T5" x="339" y="4642" w="334" h="141"/>
+    <sprite n="Spit Roast T6" x="1" y="7185" w="252" h="248"/>
+    <sprite n="Spit Roast T7" x="296" y="8136" w="139" h="267"/>
+    <sprite n="Spit Roast T8" x="275" y="6498" w="268" h="241"/>
+    <sprite n="Tanning Rack T1" x="1" y="2867" w="357" h="242"/>
+    <sprite n="Tanning Rack T2" x="596" y="6120" w="285" h="326"/>
+    <sprite n="Tanning Rack T3" x="703" y="7485" w="183" h="328"/>
+    <sprite n="Tanning Rack T4" x="720" y="2842" w="293" h="314"/>
+    <sprite n="Tanning Rack T5" x="1" y="2648" w="358" h="217"/>
+    <sprite n="Tanning Rack T6" x="729" y="2028" w="283" h="309"/>
+    <sprite n="Tanning Rack T7" x="505" y="7466" w="196" h="315"/>
+    <sprite n="Tanning Rack T8" x="299" y="5936" w="295" h="313"/>
 </TextureAtlas>

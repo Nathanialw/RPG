@@ -54,6 +54,7 @@ namespace Unit_Frames {
   }
 
   void Update_Frame_Data(f2 &scale, Component::Name &fullName, Component::Health &health, UI_Frame &frame) {
+    
     //only update if changed
     std::string healthText = std::to_string(health.currentHealth) + " / " + std::to_string(health.maxHealth);
     if (frame.health.text != healthText || frame.health.textTexture == NULL) {

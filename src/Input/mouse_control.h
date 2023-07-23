@@ -24,7 +24,8 @@ namespace Mouse {
   bool itemCurrentlyHeld = false;
 
   bool FRect_inside_Cursor(SDL_FRect &rect) {
-    SDL_FRect cursor = {iXWorld_Mouse, iYWorld_Mouse, cursorRadius, cursorRadius };
+    SDL_FRect cursor= { 0.0f, 0.0f, 0.0f, 0.0f };
+    cursor = { iXWorld_Mouse, iYWorld_Mouse, cursorRadius, cursorRadius };
     return Utilities::bFRect_Intersect(cursor, rect);
   }
 

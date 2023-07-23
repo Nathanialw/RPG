@@ -24,6 +24,7 @@
 #include "world.h"
 #include "load_object_list.h"
 #include "interface.h"
+#include "ui_frames.h"
 
 namespace Init {
 
@@ -47,6 +48,7 @@ namespace Init {
     SQLite_Dialogue::Init_Dialogue();
     Load_Object_List::Load_Entities();
     Video::Run_Audio("assets/music/nature.ogg");
+ 
   }
 
   void Init_Client() {

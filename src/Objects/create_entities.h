@@ -350,7 +350,11 @@ namespace Create_Entities {
 	zone.emplace<Component::Input>(entity);
 	SDL_DisplayMode dm;
 	SDL_GetWindowDisplayMode(Graphics::window, &dm);
-	zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (float)dm.w, (float)dm.h, 2.0f, 2.0f);
+	auto &camera = zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (float)dm.w, (float)dm.h, 2.0f, 2.0f);
+
+	//	UI_Frames::Init_Frames(camera.scale);
+	//	UI_Resources::Init_Frames(camera.scale);
+	
 	zone.emplace<Component::Target_Range>(entity, 2000.0f * data.scale, position.x - (2000.0f / 2.0f * data.scale), position.y - (2000.0f / 2.0f * data.scale), 2000.0f * data.scale, 2000.0f * data.scale);
       }
       else {

@@ -1,20 +1,36 @@
 #pragma once
 #include "graphics.h"
-#include "ui_elements.h"
-#include "unit_frames.h"
+#include "menu.h"
 #include <string>
 #include <vector>
+#include "unit_frames.h"
 
 namespace UI_Frames {
 
-  UI::Text_Frame menuButton;
+  enum Menu_Tab {
+    build,
+    train,
+    army,
+    serfs,
+    SIZE
+  };
+
+  struct Sub_Menu {
+  };
+  
+  struct Menu_Button {
+    UI::Text_Frame button;
+    std::vector<UI::Text_Frame> buildButton;
+  };
   
   struct Menu_Frame {
     UI::Image_Frame background;
-    std::vector<UI::Text_Frame> buttons = { menuButton, menuButton, menuButton };
+    UI::Image_Frame submenu;
+    std::vector<Menu_Button> buttons;
+    Menu_Tab currentTab = SIZE;
   };
 
-  std::vector<std::string> text = { "Build", "Train", "Army", "test3", };
+  std::vector<std::string> text = { "Build", "Train", "Army", "Serfs", };
 
   Menu_Frame topFrame;
 
@@ -28,23 +44,25 @@ namespace UI_Frames {
   //set the background frame in a position with a size and evenly space the buttons within
   void Init_Button_Menu() {
     topFrame.background.frame = { 1024.0f, 0.0f, 512.0f, 64.0f };
+    topFrame.submenu.frame = { topFrame.background.frame.x, topFrame.background.frame.y + topFrame.background.frame.h, topFrame.background.frame.w, 512.0 };
   }
 
   void Build_Buttons(f2 scale) {
     topFrame.background.frame = UI::Update_Scale(scale, topFrame.background.frame);
+    topFrame.submenu.frame = UI::Update_Scale(scale, topFrame.submenu.frame);
 
     topFrame.buttons.resize(text.size());
     float xPos = topFrame.background.frame.x;
     for (int i = 0; i < text.size(); i++) {
-      topFrame.buttons[i].backgroundTexture = Graphics::tooltipBackground;
-      topFrame.buttons[i].frame = {
+      topFrame.buttons[i].button.backgroundTexture = Graphics::tooltipBackground;
+      topFrame.buttons[i].button.frame = {
 	xPos,
 	topFrame.background.frame.y,
 	topFrame.background.frame.w / topFrame.buttons.size(),
 	topFrame.background.frame.h,
       };
 
-      Update_Frame_Data(scale, text[i], topFrame.buttons[i]);
+      Update_Frame_Data(scale, text[i], topFrame.buttons[i].button);
       xPos += topFrame.background.frame.w / topFrame.buttons.size();           
     }
     topFrame.buttons.shrink_to_fit();
@@ -55,13 +73,27 @@ namespace UI_Frames {
     Build_Buttons(scale);
   }
 
-  void Show_Menu_Frame(entt::registry &zone, Component::Camera &camera) {
-    Init_Frames(camera.scale);
-    topFrame.background.frame = UI::Update_Scale(camera.scale, topFrame.background.frame);      
+  void Show_Submenu(Menu_Frame &menu) {
+    SDL_RenderCopyF(Graphics::renderer, menu.buttons[0].button.backgroundTexture, NULL, &menu.submenu.frame);
+  }
 
-    for (auto &button : topFrame.buttons) {
-      SDL_RenderCopyF(Graphics::renderer, button.backgroundTexture, NULL, &button.frame);
-      SDL_RenderCopyF(Graphics::renderer, button.textTexture, NULL, &button.textFrame);
-    }
+  void Show_Menu_Frame(entt::registry &zone, Component::Camera &camera) {
+     Init_Button_Menu();
+     Build_Buttons(camera.scale);
+    
+     for (auto &menu : topFrame.buttons) {
+       Update_Frame_Data(camera.scale, menu.button.text, menu.button);
+       SDL_RenderCopyF(Graphics::renderer, menu.button.backgroundTexture, NULL, &menu.button.frame);
+       SDL_RenderCopyF(Graphics::renderer, menu.button.textTexture, NULL, &menu.button.textFrame);
+     }
+
+     //render submenu
+     switch (topFrame.currentTab) {
+     case build: { Show_Submenu(topFrame); break;}
+     case train: { Show_Submenu(topFrame); break;}
+     case army: { Show_Submenu(topFrame);  break;}
+     case serfs: { Show_Submenu(topFrame); break;}
+     case SIZE: {break;}
+     }
   }
 }

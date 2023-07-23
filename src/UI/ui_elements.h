@@ -15,6 +15,7 @@ namespace UI {
 
   struct Image_Frame {
     SDL_Texture* texture = NULL;
+    SDL_FRect defaultFrame;
     SDL_FRect frame;
   };
  

@@ -82,7 +82,6 @@ namespace Game_Loop {
       Rendering::Present();
       //std::cout << "Rendering = Good" << std::endl;
       Timer::Calculate_Timestep();
-      Timer::Calculate_FPS();
       //std::cout << "frameTime = Good" << std::endl;
     }
   }
