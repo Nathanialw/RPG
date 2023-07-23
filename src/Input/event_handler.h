@@ -47,24 +47,17 @@ namespace Event_Handler {
       }
       else if (Events::event.type == SDL_KEYUP) {
 	auto& vel = zone.get<Component::Velocity>(entity);
-	switch (Events::event.key.keysym.sym)
-	  {
-	  case SDLK_w: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; break;
-	  case SDLK_s: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; break;
-	  case SDLK_a: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed; break;
-	  case SDLK_d: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed; break;
-	  case SDLK_q: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
-	  case SDLK_e: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
-	  case SDLK_c: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
-	  case SDLK_z: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
-	  }
+	switch (Events::event.key.keysym.sym) {
+	case SDLK_w: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; break;
+	case SDLK_s: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; break;
+	case SDLK_a: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed; break;
+	case SDLK_d: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed; break;
+	case SDLK_q: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
+	case SDLK_e: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
+	case SDLK_c: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;  break;
+	case SDLK_z: zone.emplace_or_replace<Component::Moving>(entity); if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed; if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;  break;
+	}
       }
-      
-      auto& vel = zone.get<Component::Velocity>(entity);
-      if (act.state == Action_Component::attack) {
-	vel.magnitude.x = 0.0f;
-	vel.magnitude.y = 0.0f;
-      }      
     }
   };
   
@@ -111,7 +104,7 @@ namespace Event_Handler {
 	if (Game_Menu_Control::Check_Menu_Button()) {
 	}
 	//check if cursor is in the bag UI
-	if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
+	else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
 	  UI::Bag_UI::Interact_With_Bag(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera);
 	  if (UI::Equipment_UI::Interact_With_Equipment(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera, player_ID) == true) {
 	    //updates character stats
@@ -119,11 +112,9 @@ namespace Event_Handler {
 	  }
 	}
 	else {
-	  UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
-	}
-	if (Mouse::bRect_inside_Cursor(UI::Character_UI) == false) {
 	  User_Mouse_Input::Selection_Box(zone); //if units are currently selected
 	}
+	UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
       }
 
       else if (Events::event.button.button == SDL_BUTTON_RIGHT) {
@@ -161,7 +152,6 @@ namespace Event_Handler {
       }
     }
   }
-
 
   void Update_User_Input(entt::registry &zone) {
     //        keep function running to maintain input and perform actions during pause

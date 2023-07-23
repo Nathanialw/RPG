@@ -38,6 +38,11 @@ namespace Movement {
 	auto& velocity = view.get<Component::Velocity>(entity);
 	auto& position = view.get<Component::Position>(entity);
 	auto& action = view.get<Action_Component::Action>(entity);
+
+	if (action.state == Action_Component::attack) {
+	  velocity.magnitude.x = 0.0f;
+	  velocity.magnitude.y = 0.0f;
+	}      
 	
 	if (velocity.magnitude.x != 0 || velocity.magnitude.y != 0) {
 	  if (fabs(velocity.magnitude.x) < 0.1) { velocity.magnitude.x = 0; }; //clamp rounding errors
@@ -55,11 +60,10 @@ namespace Movement {
 	  pBody->ApplyForce(impulse, pBody->GetWorldCenter(), true);
 	}
 
-	if  ((velocity.magnitude.x == 0.0f) && (velocity.magnitude.y == 0.0f))
-	  {
-	    World::zone.remove<Component::Moving>(entity);
-	    Action_Component::Set_State(action, Action_Component::idle);
-	    }
+	if  ((velocity.magnitude.x == 0.0f) && (velocity.magnitude.y == 0.0f)) {
+	  World::zone.remove<Component::Moving>(entity);
+	  Action_Component::Set_State(action, Action_Component::idle);
+	}
       }
       Update_Position_Poll = 0;
     }
