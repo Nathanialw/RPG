@@ -1,4 +1,5 @@
 #pragma once
+
 #include "entt/entt.hpp"
 #include "graphics.h"
 #include "procedural_generator.h"
@@ -7,76 +8,75 @@
 #include <map>
 #include "dynamic_entity_loader.h"
 
-namespace  World_Data
-{
-  SDL_Texture* tileTextures[200];
+namespace World_Data {
+    SDL_Texture *tileTextures[200];
 
-  struct Tile_Objects {
-    entt::entity objects[4];
-  };
-
-
-  //  std::array<std::array<bool, 64>, 64> Map;
-
-  struct Tile_Size {
-    float width = 512.0f;
-    float height = 512.0f;
-  };
+    struct Tile_Objects {
+        entt::entity objects[4];
+    };
 
 
-  struct Offset {
-    float x;
-    float y;
-  };
+    //  std::array<std::array<bool, 64>, 64> Map;
 
-  struct Tile_Position {
-    float x;
-    float y;
-  };
+    struct Tile_Size {
+        float width = 512.0f;
+        float height = 512.0f;
+    };
 
-  SDL_Texture* tiles[75];
 
-  enum Tile_Type {
-    grass,
-    sand,
-    dirt
-  };
+    struct Offset {
+        float x;
+        float y;
+    };
 
-  struct TILE {
-       int type;
+    struct Tile_Position {
+        float x;
+        float y;
+    };
+
+    SDL_Texture *tiles[75];
+
+    enum Tile_Type {
+        grass,
+        sand,
+        dirt
+    };
+
+    struct TILE {
+        int type;
         bool generated;
         SDL_FRect position;
-   };
+    };
 
-    TILE Game_Map [256][256];
+    TILE Game_Map[256][256];
 
-  enum Area_Type {
-    wooded,
-    plains,
-    town
-  };
+    enum Area_Type {
+        wooded,
+        plains,
+        town
+    };
 
-  enum Zone_Type {
-    desert,
-    forest,
-    ocean
-  };
+    enum Zone_Type {
+        desert,
+        forest,
+        ocean
+    };
 
-  static const int width = 96;
-  static const int height = 96;
+    static const int width = 96;
+    static const int height = 96;
 
-  struct Tile {
-    //        position
-    //        float x;
-    //        float y;
-    bool hh;
-  };
+    struct Tile {
+        //        position
+        //        float x;
+        //        float y;
+        bool hh;
+    };
 
-  struct Region {
-    Tile board[width][height];
-  };
+    struct Region {
+        Tile board[width][height];
+    };
 
-  //    std::vector<Zone> World;
+    //    std::vector<Zone> World;
 }
 
 namespace World {
@@ -197,12 +197,12 @@ namespace World {
         int xmlIndex = 0;
         std::string objectName = "";
 
-        seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x + x, rect.y + y);
-
-        int numObjects = (World_Data::Tile_Type)Procedural_Generation::Random_Int(4, 10, seed);
+        seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
+        int numObjects = (World_Data::Tile_Type) Procedural_Generation::Random_Int(4, 10, seed);
 //        int chance = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, 100, seed);
 //        if (chance > 50) {
-            for (int k = 0; k < numObjects; k++) {
+        for (int k = 0; k < numObjects; k++) {
+            seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x + x, rect.y + y);
             x = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.width, seed);
             y = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.height, seed);
 
@@ -279,7 +279,6 @@ namespace World {
         }
         Utilities::Log(ii);
     }
-
 
 
     void Render(Component::Camera &camera) {
