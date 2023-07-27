@@ -784,9 +784,6 @@
   <image width="213" height="251" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T1.png"/>
   <objectgroup draworder="index" id="2">
    <object id="1" x="31" y="81" width="128" height="140"/>
-   <object id="2" x="95" y="164">
-    <point/>
-   </object>
   </objectgroup>
  </tile>
  <tile id="89">
@@ -795,18 +792,12 @@
    <object id="1" x="244" y="172.5">
     <polygon points="0,0 -108,72 -238,-33.5 -154.5,-84.5"/>
    </object>
-   <object id="2" x="118" y="160">
-    <point/>
-   </object>
   </objectgroup>
  </tile>
  <tile id="90">
   <image width="324" height="193" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T3.png"/>
   <objectgroup draworder="index" id="2">
    <object id="1" x="53" y="88" width="203" height="79"/>
-   <object id="2" x="152" y="129">
-    <point/>
-   </object>
   </objectgroup>
  </tile>
  <tile id="91">
@@ -815,18 +806,12 @@
    <object id="1" x="245.5" y="153.5">
     <polygon points="0,0 -139.5,79.5 -236,30 -89,-45.5"/>
    </object>
-   <object id="2" x="132" y="163">
-    <point/>
-   </object>
   </objectgroup>
  </tile>
  <tile id="92">
   <image width="213" height="242" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T5.png"/>
   <objectgroup draworder="index" id="2">
    <object id="1" x="31" y="86" width="137" height="130"/>
-   <object id="2" x="99" y="163">
-    <point/>
-   </object>
   </objectgroup>
  </tile>
  <tile id="93">
@@ -835,18 +820,12 @@
    <object id="1" x="264" y="174.5">
     <polygon points="0,0 -114.5,67.5 -253,-32.5 -146.5,-83"/>
    </object>
-   <object id="2" x="130" y="160">
-    <point/>
-   </object>
   </objectgroup>
  </tile>
  <tile id="94">
   <image width="324" height="193" source="../../../../../../Graphics/assets/tilesets/Orc Pack/Orc 1/Orc Wagon T7.png"/>
   <objectgroup draworder="index" id="2">
    <object id="1" x="25" y="91" width="273" height="80"/>
-   <object id="2" x="162" y="134">
-    <point/>
-   </object>
   </objectgroup>
  </tile>
  <tile id="95">
@@ -854,9 +833,6 @@
   <objectgroup draworder="index" id="2">
    <object id="1" x="254.5" y="149">
     <polygon points="0,0 -176,89 -250,20.5 -91.5,-60.5"/>
-   </object>
-   <object id="2" x="128" y="156">
-    <point/>
    </object>
   </objectgroup>
  </tile>

@@ -47,7 +47,16 @@ namespace Component {
     std::string nickname;
   };
 
-  struct Info {
+    struct Tile_Index {
+        int i;
+        int j;
+    };
+
+    struct Reset {
+
+    };
+
+    struct Info {
     std::string cityBorn;
     std::string dateBorn;
     std::string father;

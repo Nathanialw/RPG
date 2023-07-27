@@ -32,6 +32,11 @@ namespace Event_Handler {
 	if (act.state == Action_Component::idle || act.state == Action_Component::walk) {
 	  if (Events::event.type == SDL_KEYDOWN) {
 	    auto& vel = zone.get<Component::Velocity>(entity);
+		  if (zone.any_of<Component::Mouse_Move>(entity)) {
+			  zone.remove<Component::Mouse_Move>(entity);
+			  vel.magnitude.x = 0.0f;
+			  vel.magnitude.y = 0.0f;
+		  }
 	    switch (Events::event.key.keysym.sym) {
 	    case SDLK_w:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y -= vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
 	    case SDLK_s:  zone.emplace_or_replace<Component::Moving>(entity); vel.magnitude.y += vel.speed; Action_Component::Set_State(act, Action_Component::walk); break;
@@ -64,36 +69,34 @@ namespace Event_Handler {
   void Interface_Input(entt::registry& zone, Component::Camera &camera, Action_Component::Action& act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
-	switch (Events::event.key.keysym.sym)
-	  {
+	switch (Events::event.key.keysym.sym) {
 	    //case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
-	  case SDLK_1: break;
-	  case SDLK_2: Sinister_Strike::Instant_Attack(zone, entity); break;
-	  case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
-	  case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;
-	  case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
-	  case SDLK_6: Interface::gridDepth++; break;
-	  case SDLK_7: Interface::gridDepth--; break;
-	  case SDLK_8: Skills::Feign_Death(zone, entity); break;
-	  case SDLK_9: AI::Turn_On();  break;
-	  case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
-	  case SDLK_ESCAPE: Menu::Toggle(); break;
-	  case SDLK_TAB: User_Mouse_Input::Tab_Target(zone, camera, entity); break;
-	  case SDLK_p: Pause::Toggle(); break;
-	  case SDLK_PLUS:  break;
-	  case SDLK_MINUS: break;
-	  case SDLK_l: UI_Spellbook::Toggle();  break;
-	  case SDLK_i: UI::Bag_UI::Toggle_Bag();  break;
-	  case SDLK_LALT: Items::showGroundItems = true;  break;
-	  case SDLK_RALT: Items::showGroundItems = true;  break;
-	  }
+	case SDLK_1: break;
+	case SDLK_2: Sinister_Strike::Instant_Attack(zone, entity); break;
+	case SDLK_3: SDL_SetRelativeMouseMode(SDL_FALSE); break;
+	case SDLK_4: SDL_SetRelativeMouseMode(SDL_TRUE); break;
+	case SDLK_5: Debug_System::Toggle_Frame_Rate_Mode(); break;
+	case SDLK_6: Interface::gridDepth++; break;
+	case SDLK_7: Interface::gridDepth--; break;
+	case SDLK_8: Skills::Feign_Death(zone, entity); break;
+	case SDLK_9: AI::Turn_On();  break;
+	case SDLK_0: User_Mouse_Input::Selection_Soldiers();  break;
+	case SDLK_ESCAPE: Menu::Toggle(); break;
+	case SDLK_TAB: User_Mouse_Input::Tab_Target(zone, camera, entity); break;
+	case SDLK_p: Pause::Toggle(); break;
+	case SDLK_PLUS:  break;
+	case SDLK_MINUS: break;
+	case SDLK_l: UI_Spellbook::Toggle();  break;
+	case SDLK_i: UI::Bag_UI::Toggle_Bag();  break;
+	case SDLK_LALT: Items::showGroundItems = true;  break;
+	case SDLK_RALT: Items::showGroundItems = true;  break;
+	}
       }
       else if (Events::event.type == SDL_KEYUP) {
-	switch (Events::event.key.keysym.sym)
-	  {
-	  case SDLK_LALT: Items::showGroundItems = false;  break;
-	  case SDLK_RALT: Items::showGroundItems = false;  break;
-	  }
+	switch (Events::event.key.keysym.sym) {
+	case SDLK_LALT: Items::showGroundItems = false;  break;
+	case SDLK_RALT: Items::showGroundItems = false;  break;
+	}
       }
     }
   };
@@ -102,6 +105,7 @@ namespace Event_Handler {
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
 	if (Game_Menu_Control::Check_Menu_Button()) {
+
 	}
 	//check if cursor is in the bag UI
 	else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
@@ -113,8 +117,8 @@ namespace Event_Handler {
 	}
 	else {
 	  User_Mouse_Input::Selection_Box(zone); //if units are currently selected
+	  UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
 	}
-	UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
       }
 
       else if (Events::event.button.button == SDL_BUTTON_RIGHT) {
@@ -201,5 +205,4 @@ namespace Event_Handler {
   void Input_Handler(entt::registry& zone) {
     Update_User_Input(zone);
   }
-
 }

@@ -121,7 +121,7 @@ namespace Create_Entities {
     return false;
   }
 
-  bool PVG_Building(entt::registry& zone, float x, float y, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
+  bool PVG_Building(entt::registry& zone, float x, float y, int i, int j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 
@@ -161,6 +161,9 @@ namespace Create_Entities {
       }
       else if (data.collider_type == "round") {
 	offset = { imageOffset.x, imageOffset.y};
+    if (offset.x == 0.0f && offset.y == 0.0f ) {
+      offset = { data.x_offset, data.y_offset };
+    };
 	position.x -= frame.x_offset;
 	position.y -= frame.y_offset;
 	Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
@@ -178,14 +181,20 @@ namespace Create_Entities {
 	Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
 	std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
       }
-      
+
       //Add shared components
       auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
       auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
+        zone.emplace<Component::Interaction_Rect>(entity, (x - radius.fRadius), (y - 10.0f / 2.0f), (radius.fRadius * 2.0f), 10.0f);
 
       zone.emplace<Component::Name>(entity, templateName);
       zone.emplace<Component::Mass>(entity, 100.0f);
       zone.emplace<Component::Alive>(entity, true);
+      zone.emplace<Component::Health>(entity, 100, 100);
+
+      if (i != x && j != y) {
+          zone.emplace<Component::Tile_Index>(entity, i, j);
+      }
 
       std::cout << templateName << "Xo: " << frame.x_offset << " Cw: " << frame.clip.w << " IXo: " << imageOffset.x << " Yo: " << frame.y_offset << " Ch: " << frame.clip.h << " IYo: " << imageOffset.y << std::endl;
       
@@ -222,7 +231,7 @@ namespace Create_Entities {
 
   Procedural_Components::Seed seed;
 
-  void Create_Entity(entt::registry& zone, float x, float y, std::string templateName, std::string entity_class, bool is_random, std::string imgpath, bool &player) {
+  void Create_Entity(entt::registry& zone, float x, float y, std::string templateName, std::string entity_class, bool is_random, std::string &imgpath, bool player) {
     auto entity = zone.create();
     Entity_Loader::Data data;
     int unit_ID = 0;

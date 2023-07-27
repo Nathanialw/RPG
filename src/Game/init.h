@@ -25,6 +25,7 @@
 #include "load_object_list.h"
 #include "interface.h"
 #include "ui_frames.h"
+#include "dynamic_entity_loader.h"
 
 namespace Init {
 
@@ -37,16 +38,18 @@ namespace Init {
 
   void Init_World () {
     Clear_Events();
+      Init_Tiles_Array();
     Collision::init_Collison();
     Init_Zone(World::zone);
     Maps::Create_Map();
+    Load_Object_List::Load_Entities();
+    //World::Generate_Map();
     Character_Stats::Init_UI(World::zone);
     Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
     UI_Spellbook::Init_UI();
     Action_Bar::Create_Action_Bar(World::zone);
     Menu::Init();
     SQLite_Dialogue::Init_Dialogue();
-    Load_Object_List::Load_Entities();
     Video::Run_Audio("assets/music/nature.ogg");
  
   }

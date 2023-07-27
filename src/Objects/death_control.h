@@ -93,9 +93,9 @@ namespace Death_Control {
 	Component::Line_Segment line;
 
 	int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodPoolVec.size() - 1);
-	Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodPoolVec[poolIndex], poolIndex, aabb, pointVecs, line, imageOffset);
+	Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::bloodPoolVec[poolIndex], poolIndex, aabb, pointVecs, line, imageOffset);
 	int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
-	Create_Entities::PVG_Building(zone, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line, imageOffset);
+	Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line, imageOffset);
 
 	if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
 	  auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);
@@ -211,6 +211,20 @@ namespace Death_Control {
       }
     }
   }
+
+    void RemoveTileObjects(entt::registry& zone) {
+        auto view = zone.view<Component::Body, Component::In_Object_Tree, Component::Tile_Index, Component::Reset>();
+        for (auto entity: view) {
+            auto &body = view.get<Component::Body>(entity).body;
+
+            Collision::world->DestroyBody(body);
+            World::zone.remove<Component::Body>(entity);
+            auto rect = zone.get<Component::Interaction_Rect>(entity).rect;
+
+            zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);
+            Utilities::Log("removing tile obejct");
+        }
+    }
   
   
   void Dead_Entity_Routine (entt::registry &zone) {
@@ -219,5 +233,6 @@ namespace Death_Control {
     Drop_Equipment_On_Death(zone);
     Remove_Item_From_Corpse(zone);    
     Set_As_Corpse(zone);
+    RemoveTileObjects(zone);
   }
 }

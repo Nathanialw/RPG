@@ -4,6 +4,7 @@
 #include "entt/entt.hpp"
 #include "utilities.h"
 #include "graphics.h"
+#include "dynamic_entity_loader.h"
 
 namespace Dynamic_Quad_Tree {
 
@@ -308,6 +309,12 @@ namespace Dynamic_Quad_Tree {
       zone.remove<Component::Remove_From_Object_Tree>(entity);
       zone.remove<Component::In_Object_Tree>(entity);
       zone.remove<Component::Interaction_Rect>(entity);
+      if (zone.any_of<Component::Tile_Index>(entity)) {
+          int i = zone.get<Component::Tile_Index>(entity).i;
+          int j = zone.get<Component::Tile_Index>(entity).j;
+          tilesToRender[i][j] = false;
+          zone.emplace<Component::Destroyed>(entity);
+      }
       //	std::cout << i << std::endl;
     }
   }

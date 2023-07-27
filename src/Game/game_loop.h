@@ -46,7 +46,7 @@ namespace Game_Loop {
       Character_Stats::Update_Items(World::zone);
 
       UI::Move_To_Item_Routine(World::zone, Mouse::itemCurrentlyHeld);
-      Death_Control::Dead_Entity_Routine(World::zone);
+//      Death_Control::Dead_Entity_Routine(World::zone);
       Player_Control::Move_To_Atack_Routine(World::zone);
 
       //std::cout << "Player_Input = Good" << std::endl;

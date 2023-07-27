@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:0f58bb96e94b9e2964f1238c7e8d5e1f:d3342a7ed7468ad195680ae4e8cb4f2f:c6bf5b9cb1f6a3a3c513b5995f81c661$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Viking Pack.png" width="3955" height="8568">
+    <sprite n="House 1 T1" x="2177" y="6992" w="1747" h="920"/>
+    <sprite n="House 1 T2" x="1" y="1034" w="1542" h="1175"/>
+    <sprite n="House 1 T3" x="1545" y="1188" w="1301" h="1369"/>
+    <sprite n="House 1 T4" x="1796" y="1" w="1540" h="1185"/>
+    <sprite n="House 1 T5" x="1" y="1" w="1793" h="1031"/>
+    <sprite n="House 1 T6" x="1" y="2211" w="1469" h="1205"/>
+    <sprite n="House 1 T7" x="1472" y="2559" w="1141" h="1386"/>
+    <sprite n="House 1 T8" x="2466" y="5798" w="1474" h="1192"/>
+    <sprite n="House 2 T1" x="1445" y="7667" w="675" h="429"/>
+    <sprite n="House 2 T2" x="714" y="7667" w="729" h="517"/>
+    <sprite n="House 2 T3" x="2615" y="3742" w="539" h="477"/>
+    <sprite n="House 2 T4" x="1364" y="7135" w="726" h="530"/>
+    <sprite n="House 2 T5" x="1" y="7681" w="675" h="457"/>
+    <sprite n="House 2 T6" x="762" y="5897" w="729" h="570"/>
+    <sprite n="House 2 T7" x="912" y="3418" w="523" h="477"/>
+    <sprite n="House 2 T8" x="1449" y="6601" w="726" h="532"/>
+    <sprite n="House 3 T1" x="3281" y="1927" w="646" h="659"/>
+    <sprite n="House 3 T2" x="2191" y="4947" w="875" h="578"/>
+    <sprite n="House 3 T3" x="1597" y="5527" w="867" h="521"/>
+    <sprite n="House 3 T4" x="1352" y="3947" w="917" h="735"/>
+    <sprite n="House 3 T5" x="3217" y="2588" w="697" h="726"/>
+    <sprite n="House 3 T6" x="1" y="3418" w="909" h="786"/>
+    <sprite n="House 3 T7" x="3091" y="4606" w="806" h="578"/>
+    <sprite n="House 3 T8" x="3156" y="3924" w="798" h="680"/>
+    <sprite n="House 4 T1" x="2615" y="3207" w="541" h="533"/>
+    <sprite n="House 4 T2" x="1" y="6656" w="722" h="538"/>
+    <sprite n="House 4 T3" x="696" y="8186" w="685" h="381"/>
+    <sprite n="House 4 T4" x="1" y="6105" w="723" h="549"/>
+    <sprite n="House 4 T5" x="2615" y="2657" w="541" h="548"/>
+    <sprite n="House 4 T6" x="1493" y="6050" w="723" h="549"/>
+    <sprite n="House 4 T7" x="1" y="8140" w="693" h="382"/>
+    <sprite n="House 4 T8" x="726" y="6469" w="721" h="541"/>
+    <sprite n="House 5 T1" x="3338" y="1" w="530" h="633"/>
+    <sprite n="House 5 T2" x="3068" y="5186" w="755" h="610"/>
+    <sprite n="House 5 T3" x="3033" y="7914" w="763" h="390"/>
+    <sprite n="House 5 T4" x="826" y="5299" w="769" h="596"/>
+    <sprite n="House 5 T5" x="3338" y="636" w="529" h="614"/>
+    <sprite n="House 5 T6" x="1" y="5511" w="759" h="592"/>
+    <sprite n="House 5 T7" x="2265" y="7914" w="766" h="392"/>
+    <sprite n="House 5 T8" x="3158" y="3316" w="766" h="606"/>
+    <sprite n="House 6 T1" x="3305" y="1252" w="645" h="673"/>
+    <sprite n="House 6 T2" x="1" y="4831" w="823" h="678"/>
+    <sprite n="House 6 T3" x="1" y="7196" w="711" h="483"/>
+    <sprite n="House 6 T4" x="1" y="4206" w="905" h="623"/>
+    <sprite n="House 6 T5" x="725" y="7012" w="637" h="598"/>
+    <sprite n="House 6 T6" x="2271" y="4294" w="818" h="651"/>
+    <sprite n="House 6 T7" x="1445" y="8098" w="818" h="459"/>
+    <sprite n="House 6 T8" x="1302" y="4684" w="887" h="613"/>
+    <sprite n="Shade T1" x="908" y="4234" w="396" h="315"/>
+    <sprite n="Shade T2" x="912" y="3897" w="438" h="335"/>
+    <sprite n="Shade T3" x="2271" y="3947" w="324" h="345"/>
+    <sprite n="Shade T4" x="2848" y="1553" w="431" h="375"/>
+    <sprite n="Shade T5" x="908" y="4551" w="392" h="295"/>
+    <sprite n="Shade T6" x="2848" y="1188" w="455" h="363"/>
+    <sprite n="Shade T7" x="2848" y="2311" w="367" h="344"/>
+    <sprite n="Shade T8" x="2848" y="1930" w="412" h="379"/>
+</TextureAtlas>

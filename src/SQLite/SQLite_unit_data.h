@@ -405,11 +405,13 @@ namespace Entity_Loader {
   }
 
   struct Building_Data {
-    std::string collider_type;
-    float radius;
-    std::string sprite_layout;
-    std::string xml;
-    std::string img;    
+    std::string collider_type = "none";
+    float x_offset = 0.0f;
+    float y_offset = 0.0f;
+    float radius = 0.0f;
+    std::string sprite_layout = "";
+    std::string xml = "";
+    std::string img = "";
   };
 
   std::string Get_String (const unsigned char* text) {
@@ -429,7 +431,7 @@ namespace Entity_Loader {
 
     sqlite3_stmt* stmt;
     char buf[300];
-    const char* jj = "SELECT collider_type, radius, sprite_layout, xml, img FROM buildings WHERE name = ";
+    const char* jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img FROM buildings WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -438,14 +440,16 @@ namespace Entity_Loader {
       data.collider_type = Get_String(text);
 
       data.radius = (float)sqlite3_column_double(stmt, 1);
-
-      text = sqlite3_column_text(stmt, 2);
-      data.sprite_layout = Get_String(text);
-
-      text = sqlite3_column_text(stmt, 3);
-      data.xml = Get_String(text);
+      data.x_offset = (float)sqlite3_column_double(stmt, 2);
+      data.y_offset = (float)sqlite3_column_double(stmt, 3);
 
       text = sqlite3_column_text(stmt, 4);
+      data.sprite_layout = Get_String(text);
+
+      text = sqlite3_column_text(stmt, 5);
+      data.xml = Get_String(text);
+
+      text = sqlite3_column_text(stmt, 6);
       data.img = Get_String(text);
     }
     return data;

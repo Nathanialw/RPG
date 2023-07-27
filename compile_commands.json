@@ -1,22 +1,26 @@
 [
 {
   "directory": "/home/nathanial/Workspace/RPG",
-  "command": "/usr/bin/clang++ -I/home/nathanial/Workspace/RPG/include -I/home/nathanial/Workspace/RPG/src -I/home/nathanial/Workspace/RPG/src/Debug -I/home/nathanial/Workspace/RPG/src/Game -I/home/nathanial/Workspace/RPG/src/Graphics -I/home/nathanial/Workspace/RPG/src/Input -I/home/nathanial/Workspace/RPG/src/Maps -I/home/nathanial/Workspace/RPG/src/Components -I/home/nathanial/Workspace/RPG/src/Objects -I/home/nathanial/Workspace/RPG/src/Sounds -I/home/nathanial/Workspace/RPG/src/SQLite -I/home/nathanial/Workspace/RPG/src/UI -I/home/nathanial/Workspace/RPG/src/Utils -I/home/nathanial/Workspace/RPG/src/Video -I/home/nathanial/Workspace/RPG/src/Audio -I/home/nathanial/Workspace/RPG/src/Spells -Wno-deprecated -g -fcolor-diagnostics -m64 -std=gnu++20 -o CMakeFiles/RPG.dir/main.cpp.o -c /home/nathanial/Workspace/RPG/main.cpp",
-  "file": "/home/nathanial/Workspace/RPG/main.cpp"
+  "command": "/usr/bin/clang++ -I/home/nathanial/Workspace/RPG/include -I/home/nathanial/Workspace/RPG/src -I/home/nathanial/Workspace/RPG/src/Debug -I/home/nathanial/Workspace/RPG/src/Game -I/home/nathanial/Workspace/RPG/src/Graphics -I/home/nathanial/Workspace/RPG/src/Input -I/home/nathanial/Workspace/RPG/src/Maps -I/home/nathanial/Workspace/RPG/src/Components -I/home/nathanial/Workspace/RPG/src/Objects -I/home/nathanial/Workspace/RPG/src/Sounds -I/home/nathanial/Workspace/RPG/src/SQLite -I/home/nathanial/Workspace/RPG/src/UI -I/home/nathanial/Workspace/RPG/src/Utils -I/home/nathanial/Workspace/RPG/src/Video -I/home/nathanial/Workspace/RPG/src/Audio -I/home/nathanial/Workspace/RPG/src/Spells -Wno-deprecated -g -std=gnu++20 -fcolor-diagnostics -m64 -o CMakeFiles/RPG.dir/main.cpp.o -c /home/nathanial/Workspace/RPG/main.cpp",
+  "file": "/home/nathanial/Workspace/RPG/main.cpp",
+  "output": "CMakeFiles/RPG.dir/main.cpp.o"
 },
 {
   "directory": "/home/nathanial/Workspace/RPG",
   "command": "/usr/bin/cc -I/home/nathanial/Workspace/RPG/include -I/home/nathanial/Workspace/RPG/src -I/home/nathanial/Workspace/RPG/src/Debug -I/home/nathanial/Workspace/RPG/src/Game -I/home/nathanial/Workspace/RPG/src/Graphics -I/home/nathanial/Workspace/RPG/src/Input -I/home/nathanial/Workspace/RPG/src/Maps -I/home/nathanial/Workspace/RPG/src/Components -I/home/nathanial/Workspace/RPG/src/Objects -I/home/nathanial/Workspace/RPG/src/Sounds -I/home/nathanial/Workspace/RPG/src/SQLite -I/home/nathanial/Workspace/RPG/src/UI -I/home/nathanial/Workspace/RPG/src/Utils -I/home/nathanial/Workspace/RPG/src/Video -I/home/nathanial/Workspace/RPG/src/Audio -I/home/nathanial/Workspace/RPG/src/Spells -g -fdiagnostics-color=always -m64 -o CMakeFiles/RPG.dir/sqlite3.c.o -c /home/nathanial/Workspace/RPG/sqlite3.c",
-  "file": "/home/nathanial/Workspace/RPG/sqlite3.c"
+  "file": "/home/nathanial/Workspace/RPG/sqlite3.c",
+  "output": "CMakeFiles/RPG.dir/sqlite3.c.o"
 },
 {
   "directory": "/home/nathanial/Workspace/RPG",
-  "command": "/usr/bin/clang++ -I/home/nathanial/Workspace/RPG/include -I/home/nathanial/Workspace/RPG/src -I/home/nathanial/Workspace/RPG/src/Debug -I/home/nathanial/Workspace/RPG/src/Game -I/home/nathanial/Workspace/RPG/src/Graphics -I/home/nathanial/Workspace/RPG/src/Input -I/home/nathanial/Workspace/RPG/src/Maps -I/home/nathanial/Workspace/RPG/src/Components -I/home/nathanial/Workspace/RPG/src/Objects -I/home/nathanial/Workspace/RPG/src/Sounds -I/home/nathanial/Workspace/RPG/src/SQLite -I/home/nathanial/Workspace/RPG/src/UI -I/home/nathanial/Workspace/RPG/src/Utils -I/home/nathanial/Workspace/RPG/src/Video -I/home/nathanial/Workspace/RPG/src/Audio -I/home/nathanial/Workspace/RPG/src/Spells -Wno-deprecated -g -fcolor-diagnostics -m64 -std=gnu++20 -o CMakeFiles/RPG.dir/tinyxml2.cpp.o -c /home/nathanial/Workspace/RPG/tinyxml2.cpp",
-  "file": "/home/nathanial/Workspace/RPG/tinyxml2.cpp"
+  "command": "/usr/bin/clang++ -I/home/nathanial/Workspace/RPG/include -I/home/nathanial/Workspace/RPG/src -I/home/nathanial/Workspace/RPG/src/Debug -I/home/nathanial/Workspace/RPG/src/Game -I/home/nathanial/Workspace/RPG/src/Graphics -I/home/nathanial/Workspace/RPG/src/Input -I/home/nathanial/Workspace/RPG/src/Maps -I/home/nathanial/Workspace/RPG/src/Components -I/home/nathanial/Workspace/RPG/src/Objects -I/home/nathanial/Workspace/RPG/src/Sounds -I/home/nathanial/Workspace/RPG/src/SQLite -I/home/nathanial/Workspace/RPG/src/UI -I/home/nathanial/Workspace/RPG/src/Utils -I/home/nathanial/Workspace/RPG/src/Video -I/home/nathanial/Workspace/RPG/src/Audio -I/home/nathanial/Workspace/RPG/src/Spells -Wno-deprecated -g -std=gnu++20 -fcolor-diagnostics -m64 -o CMakeFiles/RPG.dir/tinyxml2.cpp.o -c /home/nathanial/Workspace/RPG/tinyxml2.cpp",
+  "file": "/home/nathanial/Workspace/RPG/tinyxml2.cpp",
+  "output": "CMakeFiles/RPG.dir/tinyxml2.cpp.o"
 },
 {
   "directory": "/home/nathanial/Workspace/RPG",
   "command": "/usr/bin/cc -I/home/nathanial/Workspace/RPG/include -I/home/nathanial/Workspace/RPG/src -I/home/nathanial/Workspace/RPG/src/Debug -I/home/nathanial/Workspace/RPG/src/Game -I/home/nathanial/Workspace/RPG/src/Graphics -I/home/nathanial/Workspace/RPG/src/Input -I/home/nathanial/Workspace/RPG/src/Maps -I/home/nathanial/Workspace/RPG/src/Components -I/home/nathanial/Workspace/RPG/src/Objects -I/home/nathanial/Workspace/RPG/src/Sounds -I/home/nathanial/Workspace/RPG/src/SQLite -I/home/nathanial/Workspace/RPG/src/UI -I/home/nathanial/Workspace/RPG/src/Utils -I/home/nathanial/Workspace/RPG/src/Video -I/home/nathanial/Workspace/RPG/src/Audio -I/home/nathanial/Workspace/RPG/src/Spells -g -fdiagnostics-color=always -m64 -o CMakeFiles/RPG.dir/SDL_FontCache.c.o -c /home/nathanial/Workspace/RPG/SDL_FontCache.c",
-  "file": "/home/nathanial/Workspace/RPG/SDL_FontCache.c"
+  "file": "/home/nathanial/Workspace/RPG/SDL_FontCache.c",
+  "output": "CMakeFiles/RPG.dir/SDL_FontCache.c.o"
 }
 ]

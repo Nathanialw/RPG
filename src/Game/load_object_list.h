@@ -124,8 +124,15 @@ namespace Load_Object_List {
     // 	}
     //   }
     // }
+
+
+    Game_Objects_Lists::forestObjectVec = Entity_Loader::Get_Names_Of_SubType("nature", "object", "tree", "round");
+
     Game_Objects_Lists::bloodPoolVec = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "background");
     Game_Objects_Lists::bloodSplatterVec = Entity_Loader::Get_Names_Of_SubType( "neutral", "prop", "blood", "foreground");
+
+
+    //Game_Objects_Lists::beastUnitVec = Entity_Loader::Get_Names_Of_SubType( "neutral", "prop", "blood", "foreground");
   }
 }
 

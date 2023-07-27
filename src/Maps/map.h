@@ -17,7 +17,7 @@ namespace Maps {
   void Create_Map() {
     World::Generate_Region();
 
-    if (map.load("assets/maps/forest.tmx")) {
+    if (map.load("assets/maps/aaaa.tmx")) {
       for (auto &spriteSheet: map.getTilesets()) {
 	std::string name = spriteSheet.getName();
       }
@@ -59,12 +59,20 @@ namespace Maps {
 	    std::string entity_class = object.getClass();
 
 	    // translates isometric position to world position
-	    float tileWidth = 128;
-	    float tileHeight = 64;
-	    float numTilesX = position.x / tileWidth;
-	    float numTilesY = position.y / tileHeight;
-	    float x = 64.0f + position.x - (numTilesY * tileWidth / 2.0f);
-	    float y = (numTilesX * tileHeight) + (position.y / 2.0f);
+//	    float tileWidth = 128;
+//	    float tileHeight = 64;
+//	    float numTilesX = position.x / tileWidth;
+//	    float numTilesY = position.y / tileHeight;
+//	    float x = 64.0f + position.x - (numTilesY * tileWidth / 2.0f);
+//	    float y = (numTilesX * tileHeight) + (position.y / 2.0f);
+
+	  float tileWidth = 512;
+	  float tileHeight = 512;
+	  float numTilesX = position.x / tileWidth;
+	  float numTilesY = position.y / tileHeight;
+	  float x = position.x;
+	  float y = position.y;
+
 	    //if it is random it needs to grab a name from a unit that was already loaded into graphics or default to a default unit name
 	    //get an array of all the potential names, check each on against teh std::map of graphics, keep all the ones already there and pick a random one
 
@@ -170,7 +178,7 @@ namespace Maps {
 		std::string temptexture = "assets/" + texture;
 		// Utilities::Log(texture);
 
-		if (!Create_Entities::PVG_Building(World::zone, x, y, templateName, tilesetIndex, aabb, pointVecs, line, offset)) {
+		if (!Create_Entities::PVG_Building(World::zone, x, y, x, y, templateName, tilesetIndex, aabb, pointVecs, line, offset)) {
 		  if (!Create_Entities::Polygon_Building(World::zone, x, y, templateName, entity_class, texture, aabb, pointVecs, line, offset)) {
 		    Create_Entities::Create_Entity(World::zone, x, y, templateName, entity_class, is_random, texture, player);
 		  }
@@ -213,12 +221,12 @@ namespace Maps {
 		  pointVecs.emplace_back(pointVec);
 		}
 	      }
-
+	      Utilities::Log(templateName);
 	      bool player = false;
 	      bool is_random = false;
 
 	      // imgPath is the location of the image used in Tiled, not useful for collections of images, the correct image path is derived later
-	      if (!Create_Entities::PVG_Building(World::zone, x, y, templateName, id, aabb, pointVecs, line, offset)) {
+	      if (!Create_Entities::PVG_Building(World::zone, x, y, x, y, templateName, id, aabb, pointVecs, line, offset)) {
 		if (!Create_Entities::Polygon_Building(World::zone, x, y, templateName, entity_class, imgPath, aabb, pointVecs, line, offset)) {
 		  Create_Entities::Create_Entity(World::zone, x, y, templateName, entity_class, is_random, imgPath, player);
 		}

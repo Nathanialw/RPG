@@ -393,8 +393,12 @@ namespace Rendering {
 	    //	  }
 	}
       }
-      else {
-	zone.remove<Component::Renderable>(entity);
+      else if (zone.any_of<Component::Renderable>(entity)) {
+	    zone.remove<Component::Renderable>(entity);
+        if (zone.any_of<Component::Tile_Index>(entity)) {
+	        zone.emplace_or_replace<Component::Reset>(entity);
+            //set it to be destroyed
+        }
       }
     }
   }
@@ -426,6 +430,7 @@ namespace Rendering {
     auto view = zone.view<Component::Destroyed>(entt::exclude<Component::In_Object_Tree>);
     for (auto entity : view) {
       zone.destroy(entity);
+        Utilities::Log("destroying tile object");
     }
   }
   
