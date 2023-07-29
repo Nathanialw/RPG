@@ -28,7 +28,6 @@ namespace Text_Panels {
 
   void Text_Box_At_Mouse(entt::registry &zone, std::string &text) {
 
-
   }
 
   void Text_Box_Over_Head(entt::registry &zone, Component::Camera &camera, std::string &text) {

@@ -11,6 +11,7 @@
 #include "unit_frames.h"
 #include "ui_resources.h"
 #include "ui_frames.h"
+#include "debug_components.h"
 
 namespace Interface {
 
@@ -290,12 +291,8 @@ namespace Interface {
   }
 
   void Count() {
-    int i = 0;
     auto view = World::zone.view<Component::Position>();
-    for (auto entity: view) {
-      i++;
-    }
-    Utilities::Log(i);
+    Debug::numEntities = view.size();
   }
 
   void Foreground(entt::registry &zone, Component::Camera &camera) {
@@ -310,7 +307,7 @@ namespace Interface {
     //Unit_Arrive_UI();
     Display_Mouse();
     Display_Selection_Box();
-    Debug_System::Debug_Positions();
+    //Debug_System::Debug_Positions();
     Count();
     //Show_Attacks();
   }

@@ -12,7 +12,6 @@
 
 using namespace Scene;
 
-
 namespace Debug_System {
   float iFramePollRate = 0.0f;
   bool showPosition = false;

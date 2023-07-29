@@ -7,6 +7,8 @@
 
 namespace Debug {
 
+  unsigned long int numEntities;
+
 
 	struct DEBUG_Position {
 

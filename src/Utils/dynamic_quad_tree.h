@@ -313,7 +313,9 @@ namespace Dynamic_Quad_Tree {
       zone.remove<Component::In_Object_Tree>(entity);
       zone.remove<Component::Interaction_Rect>(entity);
       if (zone.any_of<Component::Tile_Index>(entity)) {
-        tilesToRender[zone.get<Component::Tile_Index>(entity).i][zone.get<Component::Tile_Index>(entity).j].created = false;
+        int i = zone.get<Component::Tile_Index>(entity).i;
+        int j = zone.get<Component::Tile_Index>(entity).j;
+        tilesToRender[i][j].created = false;
         zone.destroy(entity);
 //        zone.emplace<Component::Destroyed>(entity);
       }
@@ -427,7 +429,7 @@ namespace Dynamic_Quad_Tree {
   void Update_Tree_Routine(entt::registry &zone) {
     Emplace_Objects_In_Quad_Tree(zone);
     Update_Quad_Tree_Positions(zone);
-    Draw_Tree_Object_Rects(zone);
+    //Draw_Tree_Object_Rects(zone);
     Remove_From_Tree(zone);
     // draw rects
   }

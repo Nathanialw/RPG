@@ -121,7 +121,7 @@ namespace Create_Entities {
     return false;
   }
 
-  bool PVG_Building(entt::registry &zone, float x, float y, int i, int j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
+  bool PVG_Building(entt::registry &zone, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 
@@ -175,7 +175,7 @@ namespace Create_Entities {
         position.x -= frame.x_offset;
         position.y -= frame.y_offset;
         Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
-        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
+//        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
       }
 
       //Add shared components
@@ -189,10 +189,11 @@ namespace Create_Entities {
       zone.emplace<Component::Health>(entity, 100, 100);
 
       if (i != x && j != y) {
-        zone.emplace<Component::Tile_Index>(entity, i, j);
+//        std::cout << i << " " << j << std::endl;
+        zone.emplace<Component::Tile_Index>(entity, (int)i, (int)j);
       }
 
-      std::cout << templateName << "Xo: " << frame.x_offset << " Cw: " << frame.clip.w << " IXo: " << imageOffset.x << " Yo: " << frame.y_offset << " Ch: " << frame.clip.h << " IYo: " << imageOffset.y << std::endl;
+      //std::cout << templateName << "Xo: " << frame.x_offset << " Cw: " << frame.clip.w << " IXo: " << imageOffset.x << " Yo: " << frame.y_offset << " Ch: " << frame.clip.h << " IYo: " << imageOffset.y << std::endl;
 
       //should place the tiled position on the point
       if (data.collider_type == "background") {

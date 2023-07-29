@@ -354,8 +354,8 @@ namespace Rendering {
     SDL_FRect renderRect = {
         camera.screen.x - (camera.screen.w / 4.0f),
         camera.screen.y - (camera.screen.h / 4.0f),
-        camera.screen.w * 4.0f,
-        camera.screen.h * 4.0f
+        camera.screen.w * 1.5f,
+        camera.screen.h * 1.5f
     };
     auto objectsView = zone.view<Component::Position>(entt::exclude<Item_Component::Name>);
     //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
@@ -398,7 +398,7 @@ namespace Rendering {
             World::zone.remove<Component::Body>(entity);
           }
 
-          Utilities::Log("set to remove tile object");
+//          Utilities::Log("set to remove tile object");
           //set it to be destroyed
         }
       }
