@@ -1,4 +1,5 @@
 #pragma once
+
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 //#include "Joystick.h"
@@ -36,13 +37,14 @@ namespace Init {
     SDL_FlushEvents(SDL_FIRSTEVENT, SDL_LASTEVENT);
   }
 
-  void Init_World () {
+  void Init_World() {
     Clear_Events();
-      Init_Tiles_Array();
+    Init_Tiles_Array();
     Collision::init_Collison();
     Init_Zone(World::zone);
     Maps::Create_Map();
     Load_Object_List::Load_Entities();
+    World::Init_Tile_Objects();
     //World::Generate_Map();
     Character_Stats::Init_UI(World::zone);
     Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
@@ -51,7 +53,7 @@ namespace Init {
     Menu::Init();
     SQLite_Dialogue::Init_Dialogue();
     Video::Run_Audio("assets/music/nature.ogg");
- 
+
   }
 
   void Init_Client() {
@@ -65,7 +67,7 @@ namespace Init {
     TTF_Init();
 
     SDL_SetRelativeMouseMode(SDL_FALSE);
-    SDL_ShowCursor(SDL_DISABLE );
+    SDL_ShowCursor(SDL_DISABLE);
 
     Graphics::running = true;
 

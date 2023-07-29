@@ -224,7 +224,7 @@ namespace Collision {
     Utilities::Log(i);
   }
 
-  int64_t collision_Timestep = 0;
+  float collision_Timestep = 0;
 
   void Update_Collision(entt::registry& zone) {
 

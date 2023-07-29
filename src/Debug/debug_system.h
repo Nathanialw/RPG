@@ -1,4 +1,5 @@
 #pragma once
+
 #include "components.h"
 #include "graphics.h"
 #include "scene.h"
@@ -13,7 +14,8 @@ using namespace Scene;
 
 
 namespace Debug_System {
-  int64_t iFramePollRate = 0;
+  float iFramePollRate = 0.0f;
+  bool showPosition = false;
 
   void Entity_Data_Debug(float x, float y, float sx, float sy, Component::Camera &camera) {
     //displays :
@@ -22,8 +24,8 @@ namespace Debug_System {
     //	mass
     //SDL_Rect j = { sx, sy, 30, 30 };
     ////SDL_RenderDrawRect(Graphics::renderer, &j);			
-    Graphics::Surface_Data x_Position = Graphics::Load_Text_Texture(std::to_string(int(x)), { 255,0,133 });
-    Graphics::Surface_Data y_Position = Graphics::Load_Text_Texture(std::to_string(int(y)), { 255,133,0	});
+    Graphics::Surface_Data x_Position = Graphics::Load_Text_Texture(std::to_string(int(x)), {255, 0, 133});
+    Graphics::Surface_Data y_Position = Graphics::Load_Text_Texture(std::to_string(int(y)), {255, 133, 0});
     //Surface_Data collision_Radius = Graphics::Load_Text_Texture(std::to_string(mas), { 133,133,133 }, renderer);
     //Surface_Data mass = Graphics::Load_Text_Texture(std::to_string(radius), { 133,133,133 }, renderer);
 
@@ -31,10 +33,10 @@ namespace Debug_System {
     //SDL_RenderDrawRect(renderer, &e);
     ////SDL_RenderCopy(renderer, mass.pTexture, , );
 
-    SDL_FRect a = {sx+25, sy-20, 15, 15};
+    SDL_FRect a = {sx + 25, sy - 20, 15, 15};
     SDL_FRect c = Camera_Control::Convert_Rect_To_Screen_Coods(a, camera);
     SDL_RenderCopyF(Graphics::renderer, x_Position.pTexture, &x_Position.k, &c);
-    SDL_FRect b = { sx+25, sy-10, 15, 15 };
+    SDL_FRect b = {sx + 25, sy - 10, 15, 15};
     SDL_FRect s = Camera_Control::Convert_Rect_To_Screen_Coods(b, camera);
     SDL_RenderCopyF(Graphics::renderer, y_Position.pTexture, &y_Position.k, &s);
     //SDL_Rect c = { sx, sy+20, 15, 10 };
@@ -55,52 +57,54 @@ namespace Debug_System {
   void Toggle_Frame_Rate_Mode() {
     if (frameRateMode) {
       frameRateMode = false;
-      frameTimeMode = true;			
-    }
-    else {
+      frameTimeMode = true;
+    } else {
       frameRateMode = true;
       frameTimeMode = false;
     }
-    iFramePollRate = 500;
+    iFramePollRate = 500.0f;
   }
 
-  void Framerate(Component::Camera &camera) {		
+  void Framerate(Component::Camera &camera) {
     iFramePollRate += Timer::timeStep;
-    if (iFramePollRate >= 1000) {
-      iFramePollRate = 0;
-      SDL_FRect c = { 0.0f, 0.0f, 96.0f / camera.scale.x, 64.0f / camera.scale.y };
+    if (iFramePollRate >= 1000.0f) {
+      iFramePollRate = 0.0f;
       if (frameRateMode) {
-	SDL_DestroyTexture(framerate.pTexture);
-	framerate = Graphics::Load_Text_Texture(std::to_string(Timer::fps_avgFPS), { 133,255,133 });
-	SDL_RenderCopyF(Graphics::renderer, framerate.pTexture, &framerate.k, &c);
+        SDL_DestroyTexture(framerate.pTexture);
+        framerate = Graphics::Load_Text_Texture(std::to_string((int) Timer::fps_avgFPS), {133, 255, 133});
+
+        SDL_DestroyTexture(timeStep.pTexture);
+        timeStep = Graphics::Load_Text_Texture(std::to_string(Timer::timeStep), {133, 255, 133});
       }
-      if (frameTimeMode) {
-	SDL_DestroyTexture(timeStep.pTexture);
-	timeStep = Graphics::Load_Text_Texture(std::to_string(Timer::fps_avgFPS), { 133,255,133 });
-	SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &timeStep.k, &c);
+    }
+    SDL_FRect c = {0.0f, 0.0f, 96.0f / camera.scale.x, 64.0f / camera.scale.y};
+    SDL_RenderCopyF(Graphics::renderer, framerate.pTexture, &framerate.k, &c);
+
+    SDL_FRect d = {128.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
+    SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &framerate.k, &d);
+  }
+
+  void Debug_Positions() {
+    if (showPosition) {
+      auto view1 = World::zone.view<Component::Camera>();
+      auto view = World::zone.view<Component::Position, Component::Renderable>();
+
+      for (auto focus: view1) {
+        auto &camera = view1.get<Component::Camera>(focus);
+        for (auto entity: view) {
+          auto &position = view.get<Component::Position>(entity);
+          Component::Radius radius;
+          radius.fRadius = 20.0f;
+          SDL_Color color = {55, 255, 55};
+
+          SDL_FRect frect = {position.x - radius.fRadius, position.y, radius.fRadius * 2, radius.fRadius};
+          SDL_RenderDrawRectF(Graphics::renderer, &frect);
+          Debug_System::Entity_Data_Debug(position.x, position.y, position.x, position.y, camera);
+        }
       }
     }
   }
 
-  void Debug_Positions () {
-    auto view1 = World::zone.view<Component::Camera>();
-    auto view = World::zone.view<Component::Position, Component::Renderable>();
-
-    for (auto focus : view1) {
-      auto& camera = view1.get<Component::Camera>(focus);
-      for (auto entity : view) {
-	auto& position = view.get<Component::Position>(entity);
-	Component::Radius radius;
-	radius.fRadius = 20.0f;
-	SDL_Color color = {55, 255, 55};
-
-	SDL_FRect frect = { position.x - radius.fRadius, position.y, radius.fRadius * 2, radius.fRadius };
-	SDL_RenderDrawRectF(Graphics::renderer, &frect);			
-	Debug_System::Entity_Data_Debug(position.x, position.y, position.x, position.y, camera);
-      }
-    }
-  }
-  
   void Debugger() {
     //Framerate();
   }

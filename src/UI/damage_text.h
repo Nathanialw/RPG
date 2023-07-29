@@ -19,7 +19,7 @@ namespace Damage_Text {
   void Show_Damage(entt::registry& zone, Component::Camera& camera) {
 
     for (int j = 0; j < damageTextQueue.size(); j++) {
-      auto &i = damageTextQueue[j];
+      Component::Scrolling_Damage_Text &i = damageTextQueue[j];
       SDL_Color color;
 
       if (i.type == Component::skill) {
@@ -45,8 +45,8 @@ namespace Damage_Text {
       SDL_RenderCopyF(Graphics::renderer, itemTextBox.pTexture, &itemTextBox.k, &textBox);
       SDL_DestroyTexture(itemTextBox.pTexture);
 
-      i.position.y -= 0.05f * (float)Timer::timeStep;
-      i.lingerTime -= (int)Timer::timeStep;
+      i.position.y -= 0.05f * Timer::timeStep;
+      i.lingerTime -= Timer::timeStep;
       if (i.lingerTime <= 0) {
 	damageTextQueue.erase(damageTextQueue.begin() + j);
       }

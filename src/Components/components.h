@@ -1,4 +1,5 @@
 #pragma once
+
 #include "entt/entt.hpp"
 #include <SDL2/SDL.h>
 #include <iostream>
@@ -37,8 +38,8 @@ namespace Component {
   };
 
   struct Body {
-    b2Body* body;
-    b2Body* rigidBody;
+    b2Body *body;
+    b2Body *rigidBody;
   };
 
   struct Name {
@@ -47,23 +48,23 @@ namespace Component {
     std::string nickname;
   };
 
-    struct Tile_Index {
-        int i;
-        int j;
-    };
+  struct Tile_Index {
+    int i;
+    int j;
+  };
 
-    struct Reset {
+  struct Reset {
 
-    };
+  };
 
-    struct Info {
+  struct Info {
     std::string cityBorn;
     std::string dateBorn;
     std::string father;
     std::string mother;
     std::vector<std::string> children;
   };
-  
+
   struct Cell_Assigned {
     int iIndex;
     entt::entity iCell_Assigned_To;
@@ -109,7 +110,7 @@ namespace Component {
   };
 
   struct Building_Collider {
-    std::vector<i2>walls;
+    std::vector<i2> walls;
   };
 
   /// place 2-h and bow animations in a separate array
@@ -206,12 +207,12 @@ namespace Component {
   };
 
   struct Selected {
-    SDL_Texture* texture;
+    SDL_Texture *texture;
     SDL_Rect clip;
     int numFrames;
     int currentFrame;
-    int frameLength;
-    int currentFrameTime;
+    float frameLength;
+    float currentFrameTime;
     int targetIndex;
     bool selected = false;
   };
@@ -237,10 +238,10 @@ namespace Component {
     entt::entity list[10];
   };
 
-  enum class Entity_Type {    
+  enum class Entity_Type {
     unit,
     foliage,
-    spell,    
+    spell,
     item,
     object,
     prop,
@@ -248,14 +249,14 @@ namespace Component {
     SIZE
   };
 
-  enum class Object_Subtype{
+  enum class Object_Subtype {
     interior,
     exteior,
     background,
     foreground,
-    SIZE    
+    SIZE
   };
-  
+
   enum class Units {
     SIZE
   };
@@ -263,7 +264,7 @@ namespace Component {
   enum class Foliage {
     SIZE
   };
-  
+
   enum class Spells {
     SIZE
   };
@@ -277,7 +278,7 @@ namespace Component {
     firepit,
     SIZE
   };
-  
+
   enum class Props {
     rug,
     blood,
@@ -290,8 +291,8 @@ namespace Component {
     tower,
     SIZE
   };
-  
-  struct Entity_Interaction{
+
+  struct Entity_Interaction {
     entt::entity entity;
     Entity_Type type;
   };
@@ -299,7 +300,7 @@ namespace Component {
   struct Collided {
     float x;
     float y;
-    std::vector<Entity_Interaction>InteractionList;
+    std::vector<Entity_Interaction> InteractionList;
   };
 
   struct Moving {
@@ -331,8 +332,8 @@ namespace Component {
   };
 
   struct Casting {
-    int castTime = 2000;
-    int counter = 2000;
+    float castTime = 2000;
+    float counter = 2000;
     float x = 0.0f;
     float y = 0.0f;
   };
@@ -355,7 +356,7 @@ namespace Component {
   };
 
   struct Spell_Name {
-    const char* spell;
+    const char *spell;
   };
 
   struct Casted {
@@ -370,7 +371,7 @@ namespace Component {
   };
 
   struct Texture {
-    SDL_Texture* pTexture;		//texture
+    SDL_Texture *pTexture;    //texture
     SDL_Rect clippedSpriteFrame;
   };
 
@@ -401,8 +402,8 @@ namespace Component {
   };
 
   struct Attack_Speed {
-    int period = 0;
-    int counter = 0;
+    float period = 0;
+    float counter = 0;
   };
 
   enum Attack_Type {
@@ -431,7 +432,7 @@ namespace Component {
   struct Melee_Damage {
     int minDamage = 0;
     int maxDamage = 0;
-    int critChance;    
+    int critChance;
   };
 
   struct Melee_Range {
@@ -443,8 +444,8 @@ namespace Component {
   };
 
   struct Attack_Box_Duration {
-    int64_t lifeTime;
-    int64_t count;
+    float lifeTime;
+    float count;
   };
 
   struct Struck {
@@ -473,10 +474,10 @@ namespace Component {
   };
 
   struct Icon {
-    SDL_Texture* pBackground;
-    SDL_Texture* pTexture;
-    SDL_Texture* pIconRarityBorder;
-    SDL_Texture* pIconBorder;
+    SDL_Texture *pBackground;
+    SDL_Texture *pTexture;
+    SDL_Texture *pIconRarityBorder;
+    SDL_Texture *pIconBorder;
     SDL_Rect clipSprite;
     SDL_Rect clipIcon;
     f2 renderRectSize;
@@ -501,7 +502,7 @@ namespace Component {
   struct Scrolling_Damage_Text {
     SDL_FPoint position;
     std::string damageText;
-    int lingerTime;
+    float lingerTime;
     Attack_Type type;
     bool critical;
   };
@@ -520,7 +521,6 @@ namespace Component {
     std::vector<entt::entity> followers;
   };
 }
-
 
 
 namespace Component_Camera { //unused yet

@@ -30,7 +30,7 @@ namespace Entity_Control {
       auto &action = zone.get<Action_Component::Action>(entity);
       Action_Component::Set_State(action, Action_Component::casting);
       zone.remove<Component::Moving>(entity);
-      zone.emplace_or_replace<Component::Casting>(entity, 2000, 2000, x, y);
+      zone.emplace_or_replace<Component::Casting>(entity, 2000.0f, 2000.0f, x, y);
       zone.emplace_or_replace<Component::Spell_Name>(entity, name);
     }
   }

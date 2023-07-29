@@ -390,7 +390,6 @@
     <property name="player" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="6482" gid="55356" x="31919.1" y="30096.3" width="631" height="723"/>
   <object id="6483" gid="55545" x="31408.8" y="30075.9" width="67" height="64"/>
   <object id="6484" gid="55752" x="31561.2" y="30388.8" width="54" height="60"/>
  </objectgroup>

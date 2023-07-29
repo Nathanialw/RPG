@@ -12,7 +12,7 @@ namespace Player_Control {
         zone.emplace_or_replace<Player_Component::Attack_Move>(entity, target_ID, targetRadius.fRadius);
     }
 
-    int64_t Player_Move_Poll = 0;
+    float Player_Move_Poll = 0;
 
     void Mouse_Move_To_Attack(entt::registry &zone) { //calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
         Player_Move_Poll += Timer::timeStep;

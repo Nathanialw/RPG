@@ -447,7 +447,7 @@ namespace UI {
     }
   }
 
-  int64_t Player_Move_Poll = 0;
+  float Player_Move_Poll = 0;
 
   void Mouse_Move_To_Item() { //calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
     Player_Move_Poll += Timer::timeStep;

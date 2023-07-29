@@ -92,7 +92,7 @@ namespace AI {
     for (auto unit_ID : units) {
       auto& attackSpeed = units.get<Component::Attack_Speed>(unit_ID);
       if (attackSpeed.counter > 0) {
-	attackSpeed.counter -= (int) Timer::timeStep;
+	attackSpeed.counter -= Timer::timeStep;
       }
     }
   }
@@ -126,7 +126,7 @@ namespace AI {
     }
   }
 
-  int64_t time = 0;
+float time = 0;
   void Update_AI(entt::registry& zone) {
     if (b_AI) {
       time += Timer::timeStep;

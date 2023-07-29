@@ -28,12 +28,12 @@ namespace Procedural_Generation {
         return m2;
     }
 
-    int Random_Int(int min, int max, Procedural_Components::Seed seed)
+    int Random_Int(int min, int max, Procedural_Components::Seed &seed)
     {
         return (Generate_Random_Number(seed.seed) % (max - min)) + min;
     }
 
-    double Random_Int(double min, double max, Procedural_Components::Seed seed)
+    double Random_Int(double min, double max, Procedural_Components::Seed &seed)
     {
         return ((double)Generate_Random_Number(seed.seed) / (double)(0x7FFFFFFF) * (max - min)) + min;
     }
