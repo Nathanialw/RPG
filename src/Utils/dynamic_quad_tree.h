@@ -6,6 +6,7 @@
 #include "utilities.h"
 #include "graphics.h"
 #include "dynamic_entity_loader.h"
+#include "debug_components.h"
 
 namespace Dynamic_Quad_Tree {
 
@@ -356,31 +357,33 @@ namespace Dynamic_Quad_Tree {
   }
 
   void Draw_Tree_Object_Rects(entt::registry &zone) {
-    auto view2 = zone.view<Component::Position, Component::Interaction_Rect>();
-    int i = 0;
-    auto view = zone.view<Component::Camera>();
-    for (auto entity: view) {
-      auto &camera = view.get<Component::Camera>(entity);
+    if (Debug::settings[2]) {
+      auto view2 = zone.view<Component::Position, Component::Interaction_Rect>();
+      int i = 0;
+      auto view = zone.view<Component::Camera>();
+      for (auto entity: view) {
+        auto &camera = view.get<Component::Camera>(entity);
 
-      int nodes = 0;
-      nodes = treeObjects.Draw(camera.screen.x, camera.screen.y, nodes);
+        int nodes = 0;
+        nodes = treeObjects.Draw(camera.screen.x, camera.screen.y, nodes);
 
-      for (const auto &object: treeObjects.search(camera.screen)) {
-        i++;
-        SDL_FRect screenRect = object->item.rect;
-        screenRect.x -= camera.screen.x;
-        screenRect.y -= camera.screen.y;
-        SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 255, 255);
-        SDL_RenderDrawRectF(Graphics::renderer, &screenRect);
-        //                SDL_FRect interactRect = view2.get<Component::Interaction_Rect>(object->item.entity_ID).rect;
-        //                interactRect.x -= camera.screen.x;
-        //                interactRect.y -= camera.screen.y;
-        //                SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 0, 255);
-        //				SDL_RenderDrawRectF(Graphics::renderer, &interactRect);
+        for (const auto &object: treeObjects.search(camera.screen)) {
+          i++;
+          SDL_FRect screenRect = object->item.rect;
+          screenRect.x -= camera.screen.x;
+          screenRect.y -= camera.screen.y;
+          SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 255, 255);
+          SDL_RenderDrawRectF(Graphics::renderer, &screenRect);
+          //                SDL_FRect interactRect = view2.get<Component::Interaction_Rect>(object->item.entity_ID).rect;
+          //                interactRect.x -= camera.screen.x;
+          //                interactRect.y -= camera.screen.y;
+          //                SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 0, 255);
+          //				SDL_RenderDrawRectF(Graphics::renderer, &interactRect);
+        }
+        //std::cout << "nodes: " << nodes << std::endl;
       }
-      //std::cout << "nodes: " << nodes << std::endl;
+      //		std::cout << "objects on screen: " << i << std::endl;
     }
-    //		std::cout << "objects on screen: " << i << std::endl;
   }
 
   struct Entity_Data {
@@ -429,7 +432,7 @@ namespace Dynamic_Quad_Tree {
   void Update_Tree_Routine(entt::registry &zone) {
     Emplace_Objects_In_Quad_Tree(zone);
     Update_Quad_Tree_Positions(zone);
-    //Draw_Tree_Object_Rects(zone);
+    Draw_Tree_Object_Rects(zone);
     Remove_From_Tree(zone);
     // draw rects
   }

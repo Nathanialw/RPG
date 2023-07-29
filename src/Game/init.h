@@ -39,6 +39,7 @@ namespace Init {
 
   void Init_World() {
     Clear_Events();
+    Debug::Load_Settings();
     Init_Tiles_Array();
     Collision::init_Collison();
     Init_Zone(World::zone);
@@ -51,9 +52,9 @@ namespace Init {
     UI_Spellbook::Init_UI();
     Action_Bar::Create_Action_Bar(World::zone);
     Menu::Init();
+    Menu_Options::Load_Options();
     SQLite_Dialogue::Init_Dialogue();
     Video::Run_Audio("assets/music/nature.ogg");
-
   }
 
   void Init_Client() {

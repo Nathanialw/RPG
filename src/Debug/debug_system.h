@@ -9,12 +9,12 @@
 #include <SDL2/SDL_render.h>
 #include <algorithm>
 #include "camera.h"
+#include "debug_components.h"
 
 using namespace Scene;
 
 namespace Debug_System {
   float iFramePollRate = 0.0f;
-  bool showPosition = false;
 
   void Entity_Data_Debug(float x, float y, float sx, float sy, Component::Camera &camera) {
     //displays :
@@ -50,6 +50,7 @@ namespace Debug_System {
 
   Graphics::Surface_Data framerate;
   Graphics::Surface_Data timeStep;
+  Graphics::Surface_Data numObjects;
   bool frameRateMode = true;
   bool frameTimeMode = false;
 
@@ -65,26 +66,37 @@ namespace Debug_System {
   }
 
   void Framerate(Component::Camera &camera) {
-    iFramePollRate += Timer::timeStep;
-    if (iFramePollRate >= 1000.0f) {
-      iFramePollRate = 0.0f;
-      if (frameRateMode) {
-        SDL_DestroyTexture(framerate.pTexture);
-        framerate = Graphics::Load_Text_Texture(std::to_string((int) Timer::fps_avgFPS), {133, 255, 133});
+    if (Debug::settings[0]) {
+      iFramePollRate += Timer::timeStep;
+      if (iFramePollRate >= 1000.0f) {
+        iFramePollRate = 0.0f;
+        if (frameRateMode) {
+          SDL_DestroyTexture(framerate.pTexture);
+          framerate = Graphics::Load_Text_Texture(std::to_string((int) Timer::fps_avgFPS), {133, 255, 133});
 
-        SDL_DestroyTexture(timeStep.pTexture);
-        timeStep = Graphics::Load_Text_Texture(std::to_string(Timer::timeStep), {133, 255, 133});
+          SDL_DestroyTexture(timeStep.pTexture);
+          timeStep = Graphics::Load_Text_Texture(std::to_string(Timer::timeStep), {133, 255, 133});
+        }
       }
-    }
-    SDL_FRect c = {0.0f, 0.0f, 96.0f / camera.scale.x, 64.0f / camera.scale.y};
-    SDL_RenderCopyF(Graphics::renderer, framerate.pTexture, &framerate.k, &c);
+      SDL_FRect c = {0.0f, 0.0f, 96.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_RenderCopyF(Graphics::renderer, framerate.pTexture, &framerate.k, &c);
 
-    SDL_FRect d = {128.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
-    SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &framerate.k, &d);
+      SDL_FRect d = {128.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &framerate.k, &d);
+    }
+    if (Debug::settings[3]) {
+      auto view = World::zone.view<Component::Position>();
+      Debug::numEntities = view.size();
+
+      SDL_DestroyTexture(numObjects.pTexture);
+      numObjects = Graphics::Load_Text_Texture(std::to_string(Debug::numEntities), {133, 255, 133});
+      SDL_FRect d = {256.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_RenderCopyF(Graphics::renderer, numObjects.pTexture, &numObjects.k, &d);
+    }
   }
 
   void Debug_Positions() {
-    if (showPosition) {
+    if (Debug::settings[2]) {
       auto view1 = World::zone.view<Component::Camera>();
       auto view = World::zone.view<Component::Position, Component::Renderable>();
 

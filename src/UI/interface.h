@@ -290,13 +290,7 @@ namespace Interface {
     //    UI_Frames::Init_Frames();
   }
 
-  void Count() {
-    auto view = World::zone.view<Component::Position>();
-    Debug::numEntities = view.size();
-  }
-
   void Foreground(entt::registry &zone, Component::Camera &camera) {
-
     //		Show_Grid(Map::terrain);
     //Display_Military_Groups();
     //Display_Unit_Formations(camera);
@@ -307,8 +301,7 @@ namespace Interface {
     //Unit_Arrive_UI();
     Display_Mouse();
     Display_Selection_Box();
-    //Debug_System::Debug_Positions();
-    Count();
+    Debug_System::Debug_Positions();
     //Show_Attacks();
   }
 }
