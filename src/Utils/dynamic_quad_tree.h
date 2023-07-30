@@ -19,7 +19,6 @@ namespace Dynamic_Quad_Tree {
     typename std::list<std::pair<SDL_FRect, T>>::iterator iterator;
   };
 
-
   template<typename OBJECT_TYPE>
   class DynamicQuadTree {
   public:
@@ -217,7 +216,7 @@ namespace Dynamic_Quad_Tree {
       QuadTreeItem<OBJECT_TYPE> newItem;
       newItem.item = item;
 
-      //item is stored in container
+//      item is stored in container
       m_allItems.push_back(newItem);
 
       //Pointer/Area of item is stored in quad tree
@@ -263,18 +262,15 @@ namespace Dynamic_Quad_Tree {
   float offset = 40.0f;
 
   void Fill_Quad_Tree(entt::registry &zone) {
-
     treeObjects.resize(zoneSize);
 
     auto view = zone.view<Component::Position, Component::Interaction_Rect>();
-
     for (auto entity: view) {
       auto &position = view.get<Component::Position>(entity);
       auto &interactRect = view.get<Component::Interaction_Rect>(entity);
 
       someObjectWithArea object{};
       object.entity_ID = entity;
-
       object.rect = interactRect.rect;
 
       zone.emplace<Component::In_Object_Tree>(entity, true);
@@ -290,7 +286,6 @@ namespace Dynamic_Quad_Tree {
 
       someObjectWithArea object{};
       object.entity_ID = entity;
-
       object.rect = interactRect.rect;
 
       zone.emplace<Component::In_Object_Tree>(entity, true);
@@ -302,7 +297,7 @@ namespace Dynamic_Quad_Tree {
     auto view = zone.view<Component::In_Object_Tree, Component::Remove_From_Object_Tree>();
 
     int i = 0;
-    for (auto entity: view) {
+    for (auto &entity: view) {
       auto &rect = view.get<Component::Remove_From_Object_Tree>(entity).rect;
       for (auto &object: treeObjects.search(rect)) {
         i++;
@@ -310,27 +305,28 @@ namespace Dynamic_Quad_Tree {
           treeObjects.remove(object);
         }
       }
-      zone.remove<Component::Remove_From_Object_Tree>(entity);
-      zone.remove<Component::In_Object_Tree>(entity);
-      zone.remove<Component::Interaction_Rect>(entity);
       if (zone.any_of<Component::Tile_Index>(entity)) {
         int i = zone.get<Component::Tile_Index>(entity).i;
         int j = zone.get<Component::Tile_Index>(entity).j;
         tilesToRender[i][j].created = false;
         zone.destroy(entity);
-//        zone.emplace<Component::Destroyed>(entity);
+      }
+      else {
+        zone.remove<Component::Interaction_Rect>(entity);
+        zone.remove<Component::Remove_From_Object_Tree>(entity);
+        zone.remove<Component::In_Object_Tree>(entity);
       }
       //	std::cout << i << std::endl;
     }
   }
 
-  //we can iterate through the list and update all entities in the quad tree
-  //		/* does  a quad search for every object to find it's ne space
-  //			seems like the same as jsut clearing and rebuilding		*/
-  //or
-  //
-  //we can iterate through a view and get all entities that have Moving or Collided
-  //and update their positions with a quad search to find them in the tree
+//  we can iterate through the list and update all entities in the quad tree
+//  		/* does  a quad search for every object to find it's ne space
+//  			seems like the same as just clearing and rebuilding		*/
+//  or
+//
+//  we can iterate through a view and get all entities that have Moving or Collided
+//  and update their positions with a quad search to find them in the tree
   /* only does a quad search for those that moved*/
 
   void Update_Quad_Tree_Positions(entt::registry &zone) {
@@ -343,15 +339,12 @@ namespace Dynamic_Quad_Tree {
         auto &position = view.get<Component::Position>(entity.entity_ID);
         auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
 
-        float y = position.y;
-        float x = position.x;
-
         //need to have an actual rect with an offset of the position and a rect the size of the entity
         entity.rect = interactRect.rect;
 
         treeObjects.relocate(object_it, entity.rect);
       } else {
-        Utilities::Log("entity does in tree but orphaned");
+        Utilities::Log("entity is in tree but orphaned");
       }
     }
   }

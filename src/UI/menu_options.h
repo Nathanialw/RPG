@@ -79,8 +79,10 @@ namespace Menu_Options {
               if (Mouse::FRect_inside_Screen_Cursor(Options.List[i].checkBox.frame)) {
                 if (Debug::settings[i]) {
                   Debug::settings[i] = false;
+//                  set texture to unchecked box
                 } else {
                   Debug::settings[i] = true;
+//                  set texture to checked box
                 }
                 break;
               }
