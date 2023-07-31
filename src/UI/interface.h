@@ -291,7 +291,7 @@ namespace Interface {
   }
 
   void Foreground(entt::registry &zone, Component::Camera &camera) {
-    //		Show_Grid(Map::terrain);
+//    Show_Grid(Map::terrain);
     //Display_Military_Groups();
     //Display_Unit_Formations(camera);
     UI_Frames::Show_Menu_Frame(zone, camera);

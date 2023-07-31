@@ -52,7 +52,7 @@ namespace Death_Control {
   }
 
   void isDead(entt::registry &zone) {
-    auto view = zone.view<Action_Component::Action, Component::Health, Component::Position, Component::Body, Component::Soldier>(entt::exclude<Component::Spell>);
+    auto view = zone.view<Action_Component::Action, Component::Health, Component::Position, Component::Body, Component::Soldier, Component::Renderable>(entt::exclude<Component::Spell>);
     for (auto entity: view) {
       auto &health = view.get<Component::Health>(entity);
       if (health.currentHealth <= 0) {
@@ -195,7 +195,7 @@ namespace Death_Control {
   }
 
   void Set_Dead(entt::registry &zone) {
-    auto view = zone.view<Action_Component::Action, Component::Health, Component::Soldier>();
+    auto view = zone.view<Action_Component::Action, Component::Health, Component::Soldier, Component::Renderable>();
     for (auto entity: view) {
       auto &health = view.get<Component::Health>(entity);
       auto &action = view.get<Action_Component::Action>(entity);

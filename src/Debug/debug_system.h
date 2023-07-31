@@ -55,6 +55,7 @@ namespace Debug_System {
   Graphics::Surface_Data renderChecks;
   Graphics::Surface_Data collisionChecks;
   Graphics::Surface_Data renderComponent;
+  Graphics::Surface_Data treeSize;
   bool frameRateMode = true;
   bool frameTimeMode = false;
 
@@ -126,6 +127,13 @@ namespace Debug_System {
       renderComponent = Graphics::Load_Text_Texture(std::to_string(Debug::renderComponent), {133, 255, 133});
       SDL_FRect d = {768.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
       SDL_RenderCopyF(Graphics::renderer, renderComponent.pTexture, &renderComponent.k, &d);
+    }
+
+    if (Debug::settings[Debug::Settings::TreeSize]) {
+      SDL_DestroyTexture(treeSize.pTexture);
+      treeSize = Graphics::Load_Text_Texture(std::to_string(Debug::treeSize), {133, 255, 133});
+      SDL_FRect d = {896.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_RenderCopyF(Graphics::renderer, treeSize.pTexture, &treeSize.k, &d);
     }
   }
 

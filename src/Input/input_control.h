@@ -118,6 +118,12 @@ namespace Input_Control {
               }
             }
           }
+          case Component::Entity_Type::building: {
+            Utilities::Log("Component::Entity_Type::building not implemented");
+          }
+          case Component::Entity_Type::SIZE: {
+            Utilities::Log("Component::Entity_Type::SIZE case should not be reached in Check_For_Mouse_Target()");
+          }
         }
       }
     }
@@ -185,11 +191,18 @@ namespace Input_Control {
                 //                        }
               }
             }
+            case Component::Entity_Type::building: {
+              Utilities::Log("Component::Entity_Type::building not implemented");
+            }
+            case Component::Entity_Type::SIZE: {
+              Utilities::Log("Component::Entity_Type::SIZE case should not be reached in Check_For_Mouse_Target()");
+            }
           }
         }
-        return false;
       }
+      return false;
     }
-    return false;
+  return false;
   }
 }
+

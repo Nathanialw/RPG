@@ -178,7 +178,7 @@ namespace Combat_Control {
   }
 
   void AttackSpeed_Updater(entt::registry &zone) {
-    auto view = zone.view<Component::Attack_Speed>();
+    auto view = zone.view<Component::Attack_Speed, Component::Renderable>();
     for (auto entity: view) {
       auto &attackSpeed = view.get<Component::Attack_Speed>(entity);
       if (attackSpeed.counter >= 0) {
@@ -214,7 +214,6 @@ namespace Combat_Control {
   void Attack_Sounds() {
 
   }
-
 
   void Update_Attacks(entt::registry &zone) {
     AttackSpeed_Updater(zone);

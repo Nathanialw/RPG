@@ -277,17 +277,24 @@ namespace Dynamic_Quad_Tree {
     }
   }
 
+  float emplaceQuadTree = 0.0f;
+
   void Emplace_Objects_In_Quad_Tree(entt::registry &zone) {
-    auto view = zone.view<Component::Interaction_Rect>(entt::exclude<Component::In_Object_Tree>);
-    for (auto entity: view) {
-      auto &interactRect = view.get<Component::Interaction_Rect>(entity);
+    emplaceQuadTree += Timer::timeStep;
+    if (emplaceQuadTree >= 50.0f) {
+      emplaceQuadTree -= 50.0f;
+      auto view = zone.view<Component::Interaction_Rect>(entt::exclude<Component::In_Object_Tree>);
+      int i = 0;
+      for (auto entity: view) {
+        auto &interactRect = view.get<Component::Interaction_Rect>(entity);
+        i++;
+        someObjectWithArea object{};
+        object.entity_ID = entity;
+        object.rect = interactRect.rect;
 
-      someObjectWithArea object{};
-      object.entity_ID = entity;
-      object.rect = interactRect.rect;
-
-      zone.emplace<Component::In_Object_Tree>(entity, true);
-      treeObjects.insert(object, object.rect);
+        zone.emplace<Component::In_Object_Tree>(entity, true);
+        treeObjects.insert(object, object.rect);
+      }
     }
   }
 
@@ -322,29 +329,34 @@ namespace Dynamic_Quad_Tree {
 //  we can iterate through a view and get all entities that have Moving or Collided
 //  and update their positions with a quad search to find them in the tree
   /* only does a quad search for those that moved*/
+  float updateQuadTreePosition = 0.0f;
 
   void Update_Quad_Tree_Positions(entt::registry &zone) {
-    auto view = zone.view<Component::Interaction_Rect>();
+    updateQuadTreePosition += Timer::timeStep;
+    if (updateQuadTreePosition >= 50.0f) {
+      updateQuadTreePosition -= 50.0f;
+      auto view = zone.view<Component::Interaction_Rect>();
+      Debug::treeSize = view.size();
 
-    for (std::_List_iterator object_it = treeObjects.begin(); object_it != treeObjects.end(); ++object_it) {
-      auto &entity = object_it->item;
-      if (!Debug::settings[Debug::Settings::UpdateQuadTreeDebug]) {
-        auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
-
-        //need to have an actual rect with an offset of the position and a rect the size of the entity
-        entity.rect = interactRect.rect;
-
-        treeObjects.relocate(object_it, entity.rect);
-      } else {
-        if (zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
+      for (std::_List_iterator object_it = treeObjects.begin(); object_it != treeObjects.end(); ++object_it) {
+        auto &entity = object_it->item;
+        if (!Debug::settings[Debug::Settings::UpdateQuadTreeDebug]) {
           auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
 
           //need to have an actual rect with an offset of the position and a rect the size of the entity
           entity.rect = interactRect.rect;
-
           treeObjects.relocate(object_it, entity.rect);
         } else {
-          Utilities::Log("entity is in tree but orphaned");
+          if (zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
+            auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
+
+            //need to have an actual rect with an offset of the position and a rect the size of the entity
+            entity.rect = interactRect.rect;
+
+            treeObjects.relocate(object_it, entity.rect);
+          } else {
+            Utilities::Log("entity is in tree but orphaned");
+          }
         }
       }
     }
@@ -406,7 +418,6 @@ namespace Dynamic_Quad_Tree {
       entityData.emplace_back(object->item.entity_ID);
     }
     entityData.shrink_to_fit();
-
     return entityData;
   }
 

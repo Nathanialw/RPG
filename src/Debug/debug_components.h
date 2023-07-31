@@ -11,6 +11,7 @@ namespace Debug {
   unsigned long int renderChecks;
   unsigned long int collisionChecks;
   unsigned long int renderComponent;
+  unsigned long int treeSize;
   bool showPosition = false;
 
   enum Settings {
@@ -22,6 +23,7 @@ namespace Debug {
     CollisionChecks,
     RenderComponent,
     UpdateQuadTreeDebug,
+    TreeSize,
     SIZE
   };
 
