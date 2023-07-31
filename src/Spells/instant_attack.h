@@ -6,7 +6,7 @@
 #include "utilities.h"
 #include "combat_control.h"
 
-namespace  Instant_Attack {
+namespace Instant_Attack {
 
   void Attack(entt::registry &zone, entt::entity &entity, entt::entity &target_ID) {
     auto &action = zone.get<Action_Component::Action>(entity);
@@ -38,30 +38,30 @@ namespace  Instant_Attack {
   //    this way you can reset the animation while still having the attack land
 
   bool Instant_Attack(entt::registry &zone, entt::entity &player_ID) {
-    if (!zone.empty<Component::Selected>()) {
+    auto view = zone.view<Component::Selected>();
+    if (!view.empty()) {
       auto view = zone.view<Component::Selected, Component::Position, Component::Melee_Range, Component::Radius>();
       for (auto target_ID: view) {
-	if (Social_Control::Check_Relationship(zone, player_ID, target_ID)) {
-	  auto &targetPosition = view.get<Component::Position>(target_ID);
-	  auto &targetRadius = view.get<Component::Radius>(target_ID);
-	  auto &position = zone.get<Component::Position>(player_ID);
-	  auto &meleeRange = zone.get<Component::Melee_Range>(player_ID);
-	  if (Entity_Control::Target_In_Melee_Range(zone, position, meleeRange, targetPosition, targetRadius)) {
-	    auto &angle = zone.get<Component::Velocity>(player_ID).angle;
-	    auto &direction = zone.get<Component::Direction>(player_ID);
-	    direction = Movement::Look_At_Target(position.x, position.y, targetPosition.x, targetPosition.y, angle);
-	    Attack(zone, player_ID, target_ID);
-	    return true;
-	  }
-	  else {
-	    //                        say "target is too far away"
-	    Utilities::Log("target is too far away");			
-	  }
-	} else {
-	  //            say "not a valid, target is not an enemy"
-	  Utilities::Log("invalid target");
-	  return false;
-	}
+        if (Social_Control::Check_Relationship(zone, player_ID, target_ID)) {
+          auto &targetPosition = view.get<Component::Position>(target_ID);
+          auto &targetRadius = view.get<Component::Radius>(target_ID);
+          auto &position = zone.get<Component::Position>(player_ID);
+          auto &meleeRange = zone.get<Component::Melee_Range>(player_ID);
+          if (Entity_Control::Target_In_Melee_Range(zone, position, meleeRange, targetPosition, targetRadius)) {
+            auto &angle = zone.get<Component::Velocity>(player_ID).angle;
+            auto &direction = zone.get<Component::Direction>(player_ID);
+            direction = Movement::Look_At_Target(position.x, position.y, targetPosition.x, targetPosition.y, angle);
+            Attack(zone, player_ID, target_ID);
+            return true;
+          } else {
+            //                        say "target is too far away"
+            Utilities::Log("target is too far away");
+          }
+        } else {
+          //            say "not a valid, target is not an enemy"
+          Utilities::Log("invalid target");
+          return false;
+        }
       }
     } else {
       //        say "I have no target"

@@ -51,6 +51,10 @@ namespace Debug_System {
   Graphics::Surface_Data framerate;
   Graphics::Surface_Data timeStep;
   Graphics::Surface_Data numObjects;
+  Graphics::Surface_Data numRendered;
+  Graphics::Surface_Data renderChecks;
+  Graphics::Surface_Data collisionChecks;
+  Graphics::Surface_Data renderComponent;
   bool frameRateMode = true;
   bool frameTimeMode = false;
 
@@ -85,13 +89,43 @@ namespace Debug_System {
       SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &framerate.k, &d);
     }
     if (Debug::settings[3]) {
-      auto view = World::zone.view<Component::Position>();
-      Debug::numEntities = view.size();
+//      Debug::numEntities = World::zone.view<Component::Position>().size();
+      Debug::numEntities = World::zone.size();
 
       SDL_DestroyTexture(numObjects.pTexture);
       numObjects = Graphics::Load_Text_Texture(std::to_string(Debug::numEntities), {133, 255, 133});
       SDL_FRect d = {256.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
       SDL_RenderCopyF(Graphics::renderer, numObjects.pTexture, &numObjects.k, &d);
+    }
+
+    if (Debug::settings[1]) {
+      SDL_DestroyTexture(numRendered.pTexture);
+      numRendered = Graphics::Load_Text_Texture(std::to_string(Debug::numRendered), {133, 255, 133});
+      SDL_FRect d = {372.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_RenderCopyF(Graphics::renderer, numRendered.pTexture, &numRendered.k, &d);
+    }
+
+    if (Debug::settings[4]) {
+      SDL_DestroyTexture(renderChecks.pTexture);
+      renderChecks = Graphics::Load_Text_Texture(std::to_string(Debug::renderChecks), {133, 255, 133});
+      SDL_FRect d = {512.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_RenderCopyF(Graphics::renderer, renderChecks.pTexture, &renderChecks.k, &d);
+    }
+
+    if (Debug::settings[Debug::Settings::CollisionChecks]) {
+      SDL_DestroyTexture(collisionChecks.pTexture);
+      collisionChecks = Graphics::Load_Text_Texture(std::to_string(Debug::collisionChecks), {133, 255, 133});
+      SDL_FRect d = {640.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_RenderCopyF(Graphics::renderer, collisionChecks.pTexture, &collisionChecks.k, &d);
+    }
+
+    if (Debug::settings[Debug::Settings::RenderComponent]) {
+      Debug::renderComponent = World::zone.view<Component::Renderable>().size();
+
+      SDL_DestroyTexture(renderComponent.pTexture);
+      renderComponent = Graphics::Load_Text_Texture(std::to_string(Debug::renderComponent), {133, 255, 133});
+      SDL_FRect d = {768.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_RenderCopyF(Graphics::renderer, renderComponent.pTexture, &renderComponent.k, &d);
     }
   }
 

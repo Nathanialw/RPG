@@ -1,4 +1,5 @@
 #pragma once
+
 #include "components.h"
 #include "graphics.h"
 #include "ui.h"
@@ -12,27 +13,25 @@ using namespace UI;
 namespace Equipment {
 
   namespace {
-    DataTypes::i2d slotOffset = { 32, 32 };
-    DataTypes::i2d numOfSlots = { 1, 5 };
-		
+    DataTypes::i2d slotOffset = {32, 32};
+    DataTypes::i2d numOfSlots = {1, 5};
+
     int iTotalSlots = numOfSlots.x * numOfSlots.y;
     int iBagSlotPixelSize = 80;
 
-    SDL_Rect equipment = { (int)(defaultScreenPosition.x + Bag_UI::bagoffset.x), (int)(defaultScreenPosition.y + Bag_UI::bagoffset.y), numOfSlots.x * iBagSlotPixelSize, numOfSlots.y * iBagSlotPixelSize };
-    SDL_Rect screenEquipment = { };
+    SDL_Rect equipment = {(int) (defaultScreenPosition.x + Bag_UI::bagoffset.x), (int) (defaultScreenPosition.y + Bag_UI::bagoffset.y), numOfSlots.x * iBagSlotPixelSize, numOfSlots.y * iBagSlotPixelSize};
+    SDL_Rect screenEquipment = {};
 
-    std::vector<entt::entity>UI_bagSlots(iTotalSlots);
+    std::vector<entt::entity> UI_bagSlots(iTotalSlots);
   }
 
-
-
-  void Equip_Item(entt::registry &zone, entt::entity& item, bool& mouseHasItem, int& slotNum) {
+  void Equip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, int &slotNum) {
     UI_bagSlots.at(slotNum) = item;
     mouseHasItem = false;
     zone.remove<Component::On_Mouse>(item);
   }
 
-  void Unequip_Item(entt::registry& zone, entt::entity& item, bool& mouseHasItem, int& slotNum) {
+  void Unequip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, int &slotNum) {
     item = UI_bagSlots.at(slotNum);
     UI_bagSlots.at(slotNum) = Graphics::defaultIcon;
     zone.emplace<Component::On_Mouse>(item);
@@ -45,9 +44,8 @@ namespace Equipment {
     }
   }
 
-
   //check if the Mouse point is in the rect and which one
-  int Get_Equipment_Slot(SDL_Point& mousePoint, Component::Camera camera) {
+  int Get_Equipment_Slot(SDL_Point &mousePoint, Component::Camera camera) {
 
     SDL_Rect slotRect = {};
     slotRect.w = iBagSlotPixelSize;
@@ -60,30 +58,30 @@ namespace Equipment {
       slotRect.x = (i * iBagSlotPixelSize) + Bag.x;
 
       for (j = 0; j < numOfSlots.y; j++) {
-	slotRect.y = (j * iBagSlotPixelSize) + Bag.y;
+        slotRect.y = (j * iBagSlotPixelSize) + Bag.y;
 
-	SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
-	SDL_FRect fSlot = Utilities::SDL_Rect_To_SDL_FRect(scaledSlot);
-	if (Utilities::bPoint_RectIntersect(Mouse::mousePoint, fSlot)) {
-	  return slot;
-	}
-	if (j < (numOfSlots.y - 1)) {
-	  slot++;
-	}
+        SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
+        SDL_FRect fSlot = Utilities::SDL_Rect_To_SDL_FRect(scaledSlot);
+        if (Utilities::bPoint_RectIntersect(Mouse::mousePoint, fSlot)) {
+          return slot;
+        }
+        if (j < (numOfSlots.y - 1)) {
+          slot++;
+        }
       }
       SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
       SDL_FRect fSlot = Utilities::SDL_Rect_To_SDL_FRect(scaledSlot);
       if (Utilities::bPoint_RectIntersect(Mouse::mousePoint, fSlot)) {
-	return slot;
+        return slot;
       }
       if (i < (numOfSlots.x - 1)) {
-	slot++;
+        slot++;
       }
     }
-
   }
+
   //check if the Mouse point is in the rect and which one
-  void Render_Equipment_Slot(entt::registry& zone, Component::Camera camera) {
+  void Render_Equipment_Slot(entt::registry &zone, Component::Camera camera) {
 
     SDL_Rect slotRect = {};
     slotRect.w = iBagSlotPixelSize;
@@ -96,42 +94,40 @@ namespace Equipment {
       slotRect.x = (i * iBagSlotPixelSize) + Bag.x;
 
       for (j = 0; j < numOfSlots.y; j++) {
-	slotRect.y = (j * iBagSlotPixelSize) + Bag.y;
+        slotRect.y = (j * iBagSlotPixelSize) + Bag.y;
 
-	auto& icon = zone.get<Component::Icon>(UI_bagSlots.at(slot));
-	SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
-	SDL_RenderCopy(Graphics::renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
-	if (j < (numOfSlots.y - 1)) {
-	  slot++;
-	}
+        auto &icon = zone.get<Component::Icon>(UI_bagSlots.at(slot));
+        SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
+        SDL_RenderCopy(Graphics::renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
+        if (j < (numOfSlots.y - 1)) {
+          slot++;
+        }
       }
 
       auto icon = zone.get<Component::Icon>(UI_bagSlots.at(slot));
       SDL_Rect scaledSlot = Camera_Control::Convert_Rect_To_Scale(slotRect, camera);
       SDL_RenderCopy(Graphics::renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
       if (i < (numOfSlots.x - 1)) {
-	slot++;
+        slot++;
       }
     }
   }
 
-
-  void Interact_With_Equipment(entt::registry &zone, entt::entity& item, SDL_Point& mousePoint, bool& mouseHasItem, Component::Camera camera) {
+  void Interact_With_Equipment(entt::registry &zone, entt::entity &item, SDL_Point &mousePoint, bool &mouseHasItem, Component::Camera camera) {
     SDL_Point point = Camera_Control::Convert_Point_To_Scale(mousePoint, camera);
     SDL_FPoint screenCursor = Utilities::SDL_FPoint_to_Point(point);
     int slotNum = Bag_UI::Get_Bag_Slot(zone, screenCursor, camera);
 
     if (Utilities::bPoint_RectIntersect(screenCursor, Bag_UI::screenBag)) {
       if (mouseHasItem) {
-	Equipment_UI::Equip_Item(zone, item, mouseHasItem, slotNum);
-      }
-      else if (UI_bagSlots.at(slotNum) != Graphics::defaultIcon) {
-	Equipment_UI::Unequip_Item(zone, item, mouseHasItem, slotNum);
+        Equipment_UI::Equip_Item(zone, item, mouseHasItem, slotNum);
+      } else if (UI_bagSlots.at(slotNum) != Graphics::defaultIcon) {
+        Equipment_UI::Unequip_Item(zone, item, mouseHasItem, slotNum);
       }
     }
   }
 
-  void Render_Equipment(entt::registry& zone, Component::Camera& camera) {
+  void Render_Equipment(entt::registry &zone, Component::Camera &camera) {
     if (bToggleBag) {
       //render Items in bag
       Bag_UI::Render_Bag_Slot(zone, Graphics::renderer, camera);
@@ -142,10 +138,4 @@ namespace Equipment {
   void Init_Equipment() {
     Create_Bag_UI();
   }
-
-
-
-
-
-
 }

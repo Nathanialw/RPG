@@ -13,6 +13,8 @@ set(ARCH amd64)
 set (CMAKE_CXX_FLAGS "-Wno-deprecated")
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std = c++11")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0")
 include_directories(include)
 include_directories(src)
 

@@ -52,19 +52,15 @@ namespace Death_Control {
   }
 
   void isDead(entt::registry &zone) {
-    auto view = zone.view<Action_Component::Action, Component::Health, Component::Position, Component::Radius, Rendering_Components::Sprite_Offset, Component::Body, Component::In_Object_Tree, Component::Direction>(entt::exclude<Component::Spell>);
+    auto view = zone.view<Action_Component::Action, Component::Health, Component::Position, Component::Body, Component::Soldier>(entt::exclude<Component::Spell>);
     for (auto entity: view) {
       auto &health = view.get<Component::Health>(entity);
       if (health.currentHealth <= 0) {
+        Utilities::Log("dead entity");
         auto &action = view.get<Action_Component::Action>(entity);
         Action_Component::Set_State(action, Action_Component::dying);
-        //                view.get<Component::Sprite_Sheet_Info>(entity).finalFrame = Component::normalFrame;
         auto &position = view.get<Component::Position>(entity);
-        auto &radius = view.get<Component::Radius>(entity).fRadius;
-        auto &offset = view.get<Rendering_Components::Sprite_Offset>(entity);
         auto &body = view.get<Component::Body>(entity).body;
-        auto &inTree = view.get<Component::In_Object_Tree>(entity).inTree;
-        auto &direction = view.get<Component::Direction>(entity);
 
         Collision::world->DestroyBody(body);
         World::zone.remove<Component::Body>(entity);
@@ -199,7 +195,7 @@ namespace Death_Control {
   }
 
   void Set_Dead(entt::registry &zone) {
-    auto view = zone.view<Action_Component::Action, Component::Health>();
+    auto view = zone.view<Action_Component::Action, Component::Health, Component::Soldier>();
     for (auto entity: view) {
       auto &health = view.get<Component::Health>(entity);
       auto &action = view.get<Action_Component::Action>(entity);

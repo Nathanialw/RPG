@@ -16,8 +16,8 @@ namespace Menu_Options {
 
   struct Menu_Options_Frame {
     UI::Image_Frame backgroundFrame;
-    Option_Frame List[4];
-    std::vector<const char *> labels = {"Framerate", "UNUSED", "Interaction Rects", "entity count"};
+    std::array<Option_Frame, Debug::Settings::SIZE> List;
+    std::array<const char *, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug"};
   };
   Menu_Options_Frame Options;
 

@@ -246,13 +246,13 @@ namespace World {
       for (int j = 0; j < 127; ++j) {
         seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
         int numObjects = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, 100, seed);
-        if (numObjects < 1) {
+        if (numObjects < 3) {
           x = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.width, seed);
           y = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.height, seed);
 
           int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::beastUnitVec.size() - 1, seed);
           db::Unit_Data data = Game_Objects_Lists::beastUnitVec[n];
-//          Create_Entities::Create_Entity(World::zone, (i * size.width) + x, (j * size.height) + y, data.name, "", false, data.imgPath, false);
+          Create_Entities::Create_Entity(World::zone, (i * size.width) + x, (j * size.height) + y, data.name, "", false, data.imgPath, false);
         }
       }
     }
@@ -260,6 +260,7 @@ namespace World {
 
   //    The first time the tile is rendered generate objects but only the first time
   int ii = 0;
+
   //position of tile
   void Generate_Trees(SDL_FRect rect, Tile &tile) {
     Procedural_Components::Seed seed;
@@ -274,7 +275,7 @@ namespace World {
     std::string objectName = "";
 
     seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
-    int numObjects = 1;//(World_Data::Tile_Type) Procedural_Generation::Random_Int(4, 10, seed);
+    int numObjects = 2;//(World_Data::Tile_Type) Procedural_Generation::Random_Int(4, 10, seed);
 
     for (int k = 0; k < numObjects; k++) {
       x = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.width, seed);
@@ -285,7 +286,6 @@ namespace World {
 
       xmlIndex = Procedural_Generation::Random_Int(1, Game_Objects_Lists::forestObjectVec.size() - 1, seed);
       objectName = Game_Objects_Lists::forestObjectVec[xmlIndex];
-      //std::cout << i << " " << j << std::endl;
       Create_Entities::PVG_Building(World::zone, rect.x + x, rect.y + y, i, j, objectName, xmlIndex, aabb, pointVecs, line, offset);
     }
   }

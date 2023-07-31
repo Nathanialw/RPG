@@ -42,6 +42,10 @@ namespace Component {
     b2Body *rigidBody;
   };
 
+  struct Active {
+
+  };
+
   struct Name {
     std::string first;
     std::string last;

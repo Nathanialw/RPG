@@ -114,10 +114,10 @@ namespace Social_Control {
   }
 
   bool Enemy_Selected(entt::registry &zone, entt::entity &player_ID) {
-    if (zone.empty<Component::Selected>()) {
+    auto view = zone.view<Component::Selected>();
+    if (view.empty()) {
       return true;
     } else {
-      auto view = zone.view<Component::Selected>();
       for (auto unit: view) {
         if (Social_Control::Check_Relationship(zone, player_ID, unit)) {
           return true;

@@ -349,59 +349,62 @@ namespace Rendering {
     }
   }
 
+  float placeRenderable = 0.0f;
+
   void Add_Remove_Renderable_Component(entt::registry &zone, Component::Camera &camera) {
-
-    SDL_FRect renderRect = {
-        camera.screen.x - (camera.screen.w / 4.0f),
-        camera.screen.y - (camera.screen.h / 4.0f),
-        camera.screen.w * 1.5f,
-        camera.screen.h * 1.5f
-    };
-    auto objectsView = zone.view<Component::Position>(entt::exclude<Item_Component::Name>);
-    //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
-    float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
-    float bottomOfRenderRect = renderRect.y + renderRect.h;
-    for (auto entity: objectsView) {
-      auto &position = objectsView.get<Component::Position>(entity);
-      SDL_FPoint point = {position.x, position.y};
-      if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
-        if (zone.any_of<Component::Renderable>(entity)) {
-          //  update renderable values
-          int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
-          auto &renderable = zone.get<Component::Renderable>(entity);
-          renderable.alpha = alpha;
-
-          //if (zone.all_of<Component::Line_Segment>(entity) == false) {
-          renderable.y = position.y;
-          //}
-        } else {
-          //                    emplace and initialize renderable
-          int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
-          auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
-          renderable.alpha = alpha;
-          // if (zone.all_of<Component::Line_Segment>(entity) == false) {
-          renderable.y = position.y;
-          //	  }
-        }
-      }
-
-      else if (zone.any_of<Component::Renderable>(entity)) {
-        zone.remove<Component::Renderable>(entity);
-
-        if (zone.any_of<Component::Tile_Index>(entity)) {
-          auto &rect = zone.get<Component::Interaction_Rect>(entity);
-          zone.emplace<Component::Remove_From_Object_Tree>(entity, rect.rect);
-
-          if (zone.any_of<Component::Body>(entity)) {
-            auto &body = zone.get<Component::Body>(entity).body;
-            Collision::world->DestroyBody(body);
-            World::zone.remove<Component::Body>(entity);
+    placeRenderable += Timer::timeStep;
+    if (placeRenderable >= 250.0f) {
+      placeRenderable -= 250.0f;
+      SDL_FRect renderRect = {
+          camera.screen.x - (camera.screen.w),
+          camera.screen.y - (camera.screen.h),
+          camera.screen.w * 3.0f,
+          camera.screen.h * 3.0f
+      };
+      auto objectsView = zone.view<Component::Position>(entt::exclude<Item_Component::Name>);
+      //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
+      float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
+      float bottomOfRenderRect = renderRect.y + renderRect.h;
+//    Debug::renderChecks = objectsView.size_hint();
+      int i = 0;
+      for (auto entity: objectsView) {
+        i++;
+        auto &position = objectsView.get<Component::Position>(entity);
+        SDL_FPoint point = {position.x, position.y};
+        if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
+          if (zone.any_of<Component::Renderable>(entity)) {
+            //  update renderable values
+            int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
+            auto &renderable = zone.get<Component::Renderable>(entity);
+            renderable.alpha = alpha;
+            //if (zone.all_of<Component::Line_Segment>(entity) == false) {
+            renderable.y = position.y;
+            //}
+          } else {
+            //                    emplace and initialize renderable
+            int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
+            auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
+            renderable.alpha = alpha;
+            // if (zone.all_of<Component::Line_Segment>(entity) == false) {
+            renderable.y = position.y;
+            //	  }
           }
+        } else if (zone.any_of<Component::Renderable>(entity)) {
+          zone.remove<Component::Renderable>(entity);
 
-//          Utilities::Log("set to remove tile object");
-          //set it to be destroyed
+          if (zone.any_of<Component::Tile_Index>(entity)) {
+            auto &rect = zone.get<Component::Interaction_Rect>(entity);
+            zone.emplace<Component::Remove_From_Object_Tree>(entity, rect.rect);
+
+            if (zone.any_of<Component::Body>(entity)) {
+              auto &body = zone.get<Component::Body>(entity).body;
+              Collision::world->DestroyBody(body);
+              World::zone.remove<Component::Body>(entity);
+            }
+          }
         }
       }
+      Debug::renderChecks = i;
     }
   }
 
