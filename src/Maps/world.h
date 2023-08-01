@@ -275,7 +275,7 @@ namespace World {
     std::string objectName = "";
 
     seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
-    int numObjects = 2;//(World_Data::Tile_Type) Procedural_Generation::Random_Int(4, 10, seed);
+    int numObjects = (World_Data::Tile_Type) Procedural_Generation::Random_Int(1, 3, seed);
 
     for (int k = 0; k < numObjects; k++) {
       x = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.width, seed);

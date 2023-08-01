@@ -41,6 +41,7 @@ namespace Init {
     Clear_Events();
     Debug::Load_Settings();
     Init_Tiles_Array();
+    UI_Frames::Load_Buildings();
     Collision::init_Collison();
     Init_Zone(World::zone);
     Maps::Create_Map();

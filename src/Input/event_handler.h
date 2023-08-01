@@ -207,7 +207,7 @@ namespace Event_Handler {
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
         if (Game_Menu_Control::Check_Menu_Button()) {
-
+          return;
         }
           //check if cursor is in the bag UI
         else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
