@@ -85,10 +85,10 @@ namespace Death_Control {
         Collision::aabb aabb;
         Component::Line_Segment line;
 
-        int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodPoolVec.size() - 1);
-        Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::bloodPoolVec[poolIndex], poolIndex, aabb, pointVecs, line, imageOffset);
-        int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
-        Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line, imageOffset);
+        int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["bloodPool"].size() - 1);
+        Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodPool"][poolIndex], poolIndex, aabb, pointVecs, line, imageOffset);
+        int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["bloodSplatter"].size() - 1);
+        Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodSplatter"][splatterIndex], splatterIndex, aabb, pointVecs, line, imageOffset);
 
         if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
           auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);

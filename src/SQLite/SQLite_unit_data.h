@@ -252,6 +252,25 @@ namespace Entity_Loader {
     return db_name;
   }
 
+  std::string Get_Tileset_Path(std::string tilesetName) {
+    std::string tileset = db::Append_Quotes(tilesetName);
+    std::string tilesetPath;
+
+    const unsigned char *name;
+    sqlite3_stmt *stmt;
+    char buf[300];
+    const char *jj = "SELECT path FROM tilesets WHERE name = ";
+    strcpy(buf, jj);
+    strcat(buf, tileset.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char *s = (const char *) name;
+      tilesetPath = std::string(reinterpret_cast< const char *> (s));
+    }
+    return tilesetPath;
+  }
+
   std::vector<std::string> Get_All_Subtype_Of_Type(std::string &type) {
     std::string class_name = db::Append_Quotes(type);
     std::vector<std::string> db_name;

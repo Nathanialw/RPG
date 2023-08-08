@@ -45,9 +45,11 @@ namespace Game_Menu_Control {
       }
     }
 
-//  place selector on mouse
     if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.submenu.frame) || UI_Frames::topFrame.open) {
       Utilities::Log("inside submenu");
+//      place full size texture on mouse
+
+//      while the texture is on the mouse when you click the mouse it creates  the building
     }
     return false;
   }

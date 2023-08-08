@@ -1,5 +1,4 @@
 #pragma once
-#include <stdint.h>
 #include "../tinyxml2.h"
 #include "base_structs.h"
 #include "components.h"
@@ -9,10 +8,11 @@
 #include <vector>
 #include "SQLite_unit_data.h"
 #include "utilities.h"
+#include "game_objects.h"
 
 // need the type of a unit
 //
-// 
+//
 // use it to fund a random entity of that type
 
 //teh container array is the size of the number of Entity_Types, the inner vector is the number of entities in the db for each unit type saved as a string
@@ -56,7 +56,7 @@ namespace Texture_Packer {
 	s = (const char *) image;
 	typeData.img_path = std::string(reinterpret_cast< const char *> (s));
       }
-    }    
+    }
     return typeData;
   }
 
@@ -78,7 +78,7 @@ namespace Texture_Packer {
   }
 
   std::unordered_map<std::string, Rendering_Components::Sheet_Data>* TexturePacker_Import(std::string &templateName, std::string &xml_path, SDL_Texture* texture) {
-    ///check if the sheet data already exists    
+    ///check if the sheet data already exists
     if ( Packer_Textures[templateName].frameList.size() > 1) {
       return &Packer_Textures;
     }
@@ -122,7 +122,7 @@ namespace Texture_Packer {
       }
     }
 
-    int frameIndex = 0;   
+    int frameIndex = 0;
     while (pSpriteElement != NULL) {
       ///get frame data for each state
       std::string n = pSpriteElement->Attribute("n");
@@ -156,7 +156,7 @@ namespace Texture_Packer {
     }
     return true;
   }
-  
+
 
   void TexturePacker_Import_Tileset(Rendering_Components::Sheet_Data &spritesheet, std::string &templateName, std::string &tilesetName, const char * xmlPath) {
     //loads xml and image from db, only do once per xml
@@ -173,11 +173,14 @@ namespace Texture_Packer {
       pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
       Utilities::Log(tilesetName);
       std::string imgPath = spriteSheetData.RootElement()->Attribute("imagePath");
-      
+
+      std::vector<std::string> tilesetVec;
+      tilesetVec.reserve(200);
+
       Rendering_Components::Sprite_Sheet_Data frame = {};
       spritesheet.frameList.reserve(200);
 
-      int frameIndex = 0;   
+      int frameIndex = 0;
       while (pSpriteElement != NULL) {
 	///get frame data for each state
 	std::string n = pSpriteElement->Attribute("n");
@@ -189,12 +192,41 @@ namespace Texture_Packer {
 	frame.clip.h = pSpriteElement->IntAttribute("h");
 	frame.x_offset = pSpriteElement->IntAttribute("oX");
 	frame.y_offset = pSpriteElement->IntAttribute("oY");
+        tilesetVec.emplace_back(n);
 	spritesheet.frameList.emplace_back(frame);
 	frameIndex++;
 	///this grabs the next line
 	pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
       }
+    tilesetVec.shrink_to_fit();
+    Game_Objects_Lists::Get_tileset(imgPath, tilesetVec);
     }
+  }
+
+  std::vector<std::string> Load_Tileset(const char * xmlPath) {
+    //loads xml and image from db, only do once per xml
+
+    ///get path from db
+    //    Type_Data typeData = Get_Sprite_Sheet(templateName);
+
+    tinyxml2::XMLDocument spriteSheetData;
+    spriteSheetData.LoadFile(xmlPath);
+    tinyxml2::XMLElement *pSpriteElement;
+    pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
+
+    std::string imgPath = spriteSheetData.RootElement()->Attribute("imagePath");
+
+    std::vector<std::string> tilesetVec;
+    tilesetVec.reserve(200);
+
+    while (pSpriteElement != NULL) {
+        ///get frame data for each state
+        std::string n = pSpriteElement->Attribute("n");
+        tilesetVec.emplace_back(n);
+        pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
+    }
+    tilesetVec.shrink_to_fit();
+    return tilesetVec;
   }
 
   std::unordered_map<std::string, Rendering_Components::Sheet_Data>* Get_Texture_Data(int textureIndex, std::string &templateName, Entity_Loader::Building_Data data, std::string &tilesetName) {
@@ -210,11 +242,10 @@ namespace Texture_Packer {
       //std::cout << "Tileset already loaded: " << tilesetName << std::endl;
       return &Packer_Textures;
     }
-    
+
     std::cout << "Loading: " << textureIndex  << ", " <<  templateName  << ", " << data.xml <<  ", " << data.img << ", " << tilesetName << std::endl;
-    
     Rendering_Components::Sheet_Data spritesheet;
-    
+
     //    import texture
     if (data.img.c_str() == NULL || data.img == ""){
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
@@ -223,7 +254,6 @@ namespace Texture_Packer {
     else {
       //get texture path
       imgPath = imgPathStr.c_str();
-
       Import_Tileset_Texture(textureIndex, spritesheet, imgPath);
     }
 
@@ -240,10 +270,10 @@ namespace Texture_Packer {
       TexturePacker_Import_Tileset(spritesheet, templateName, tilesetName, xmlPath);
     }
     Utilities::Log("SUCCESS!");
-    
+
     spritesheet.frameList.shrink_to_fit();
     //    spritesheet.color = Graphics::Set_Random_Color();
-    Packer_Textures[tilesetName] = spritesheet;    
+    Packer_Textures[tilesetName] = spritesheet;
     return &Packer_Textures;
   }
 }

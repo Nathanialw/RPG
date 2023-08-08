@@ -223,7 +223,9 @@ namespace Collision {
   float collision_Timestep = 0.0f;
 
   void Update_Collision(entt::registry &zone) {
-    auto view = zone.view<Component::Position, Component::Body>();
+//    auto view = zone.view<Component::Position, Component::Body>();
+    auto view = zone.view<Component::Position>();
+    
     b2Body *body = world->GetBodyList();
     int i = 0;
     //needs to be run multiple times per frame at low frame rate otherwise it will fall behind the rest of the program

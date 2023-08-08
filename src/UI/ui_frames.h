@@ -22,13 +22,13 @@ namespace UI_Frames {
   std::array<Building, 13> buildings;
 
   void Load_Buildings() {
-    for (auto &i: buildings) {
-      i.icon = Graphics::default_icon;
+    for (auto &building: buildings) {
+//      load icons of buildings from db
+
+//      place the texture in the array
+      building.icon = Graphics::default_icon;
     }
   }
-
-  struct Sub_Menu {
-  };
 
   struct Menu_Button {
     UI::Text_Frame button;
@@ -36,15 +36,14 @@ namespace UI_Frames {
   };
 
   struct Menu_Frame {
-    bool open = false;
     UI::Image_Frame background;
     UI::Image_Frame submenu;
     std::vector<Menu_Button> buttons;
     Menu_Tab currentTab = SIZE;
+    bool open = false;
   };
 
   std::vector<std::string> tabs = {"Build", "Train", "Army", "Serfs"};
-
   Menu_Frame topFrame;
 
   void Update_Frame_Data(f2 &scale, std::string &text, UI::Text_Frame &frame) {
@@ -74,7 +73,6 @@ namespace UI_Frames {
           topFrame.background.frame.w / topFrame.buttons.size(),
           topFrame.background.frame.h,
       };
-
       Update_Frame_Data(scale, tabs[i], topFrame.buttons[i].button);
       xPos += topFrame.background.frame.w / topFrame.buttons.size();
     }
@@ -90,9 +88,10 @@ namespace UI_Frames {
     SDL_RenderCopyF(Graphics::renderer, menu.buttons[0].button.backgroundTexture, NULL, &menu.submenu.frame);
     int x = 0;
     int y = 0;
-    for (int i = 0; i < buildings.size(); i++) {
-      SDL_FRect rect = {menu.submenu.frame.x + ((x) * menu.background.frame.h * 2.0f), menu.submenu.frame.y + ((y) * menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f)};
-      SDL_RenderCopyF(Graphics::renderer, buildings[i].icon, NULL, &rect);
+    for (auto building: buildings) {
+      SDL_FRect rect = {menu.submenu.frame.x + ((float) x * menu.background.frame.h * 2.0f), menu.submenu.frame.y + ((float) y * menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f)};
+      SDL_RenderCopyF(Graphics::renderer, building.icon, NULL, &rect);
+
       x++;
       if ((x > 0) && x % 4 == 0) {
         y++;

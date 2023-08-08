@@ -250,8 +250,8 @@ namespace World {
           x = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.width, seed);
           y = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.height, seed);
 
-          int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::beastUnitVec.size() - 1, seed);
-          db::Unit_Data data = Game_Objects_Lists::beastUnitVec[n];
+          int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::units["wolves"].size() - 1, seed);
+          db::Unit_Data data = Game_Objects_Lists::units["wolves"][n];
           Create_Entities::Create_Entity(World::zone, (i * size.width) + x, (j * size.height) + y, data.name, "", false, data.imgPath, false);
         }
       }
@@ -275,7 +275,7 @@ namespace World {
     std::string objectName = "";
 
     seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
-    int numObjects = (World_Data::Tile_Type) Procedural_Generation::Random_Int(1, 3, seed);
+    int numObjects = (World_Data::Tile_Type) Procedural_Generation::Random_Int(2, 6, seed);
 
     for (int k = 0; k < numObjects; k++) {
       x = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.width, seed);
@@ -284,8 +284,8 @@ namespace World {
       float i = rect.x / size.width;
       float j = rect.y / size.height;
 
-      xmlIndex = Procedural_Generation::Random_Int(1, Game_Objects_Lists::forestObjectVec.size() - 1, seed);
-      objectName = Game_Objects_Lists::forestObjectVec[xmlIndex];
+      xmlIndex = Procedural_Generation::Random_Int(1, Game_Objects_Lists::tilesets["forest_summer"].size() - 1, seed);
+      objectName = Game_Objects_Lists::tilesets["forest_summer"][xmlIndex];
       Create_Entities::PVG_Building(World::zone, rect.x + x, rect.y + y, i, j, objectName, xmlIndex, aabb, pointVecs, line, offset);
     }
   }

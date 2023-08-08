@@ -62,8 +62,8 @@ namespace Unit_Status {
         Component::Line_Segment line;
         tmx::Vector2<float> offset = {0.0f, 0.0f};
 
-        int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::bloodSplatterVec.size() - 1);
-        Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::bloodSplatterVec[splatterIndex], splatterIndex, aabb, pointVecs, line, offset);
+        int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["bloodPool"].size() - 1);
+        Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodPool"][splatterIndex], splatterIndex, aabb, pointVecs, line, offset);
       }
 
       //if the soldier is in the assignment vector it will be set as dying if it dies
