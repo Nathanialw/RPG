@@ -98,7 +98,6 @@ namespace Load_Object_List {
     return gameObjects[(int) type][(int) race][(int) unitType];
   };
 
-
   std::vector<std::string> Load_Tileset(const char * xmlPath) {
     tinyxml2::XMLDocument spriteSheetData;
     spriteSheetData.LoadFile(xmlPath);
@@ -121,20 +120,6 @@ namespace Load_Object_List {
   }
 
   void Load_Entities() {
-    // auto races = Entity_Loader::Get_All_Of_Races();
-    // for (auto race : races) {
-    //   Utilities::Log(race); 
-    //   auto types = Entity_Loader::Get_All_Types_Of_Race(race);
-    //   for (auto type : types) {
-    // 	Utilities::Log(type);
-    // 	auto subtypes = Entity_Loader::Get_All_Subtype_Of_Type(type);
-    // 	for (auto subtype : subtypes) {
-    // 	  Utilities::Log(subtype);
-    // 	  gameObjects[(int)Get_Type(type)][(int)Social_Control::Get_Race(race)][Get_Subtype(subtype)] = Entity_Loader::Get_All_Names_Of_SubType(subtype);
-    // 	}
-    //   }
-    // }
-//    Game_Objects_Lists::forestTreeVec = Entity_Loader::Get_Names_Of_SubType("nature", "object", "tree", "round");
     Game_Objects_Lists::tilesets["forest_summer"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_summer").c_str());
     Game_Objects_Lists::tilesets["bloodPool"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "background");
     Game_Objects_Lists::tilesets["bloodSplatter"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "foreground");

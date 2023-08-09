@@ -166,7 +166,7 @@ namespace Create_Entities {
         position.y -= frame.y_offset;
         Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       } else if (data.collider_type == "none") {
-        offset = {imageOffset.x, imageOffset.y};
+        offset = {data.x_offset, data.y_offset};
         position.x -= frame.x_offset;
         position.y -= frame.y_offset;
         Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
