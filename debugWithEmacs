@@ -1,5 +1,0 @@
-command to run on emacs
-
-gdb -i=mi ./debug/RPG 
-cd ..
-r

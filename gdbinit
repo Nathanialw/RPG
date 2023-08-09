@@ -1,5 +1,0 @@
--add-auto-load-safe-path /home/nathanial/Workspace/RPG/debug/RPG
--cd=/home/Workspace/RPG
--gdb-set mi-async on
--gdb-show mi-async
--list-target-features
