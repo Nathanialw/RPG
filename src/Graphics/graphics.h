@@ -7,7 +7,7 @@
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
 #include "components.h"
-#include "../SDL_FontCache.h"
+#include "SDL_FontCache/SDL_FontCache.h"
 #include "rendering_components.h"
 
 namespace Graphics_Component {

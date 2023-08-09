@@ -5,7 +5,7 @@
 #include "timer.h"
 #include "graphics.h"
 #include "SDL2/SDL.h"
-#include "../SDL_FontCache.h"
+#include "SDL_FontCache/SDL_FontCache.h"
 #include "base_structs.h"
 #include "events.h"
 #include "pause.h"

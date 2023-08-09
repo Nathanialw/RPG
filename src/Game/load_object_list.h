@@ -5,12 +5,13 @@
 #include <vector>
 #include <string>
 #include <map>
+
 #include "SQLite_unit_data.h"
+#include "tinyxml/tinyxml2.h"
 #include "components.h"
 #include "utilities.h"
 #include "social_control.h"
 #include "game_objects.h"
-#include "texture_packer.h"
 
 namespace Load_Object_List {
 
@@ -97,6 +98,28 @@ namespace Load_Object_List {
     return gameObjects[(int) type][(int) race][(int) unitType];
   };
 
+
+  std::vector<std::string> Load_Tileset(const char * xmlPath) {
+    tinyxml2::XMLDocument spriteSheetData;
+    spriteSheetData.LoadFile(xmlPath);
+    tinyxml2::XMLElement *pSpriteElement;
+    pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
+
+    std::string imgPath = spriteSheetData.RootElement()->Attribute("imagePath");
+
+    std::vector<std::string> tilesetVec;
+    tilesetVec.reserve(200);
+
+    while (pSpriteElement != NULL) {
+      ///get frame data for each state
+      std::string n = pSpriteElement->Attribute("n");
+      tilesetVec.emplace_back(n);
+      pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
+    }
+    tilesetVec.shrink_to_fit();
+    return tilesetVec;
+  }
+
   void Load_Entities() {
     // auto races = Entity_Loader::Get_All_Of_Races();
     // for (auto race : races) {
@@ -112,7 +135,7 @@ namespace Load_Object_List {
     //   }
     // }
 //    Game_Objects_Lists::forestTreeVec = Entity_Loader::Get_Names_Of_SubType("nature", "object", "tree", "round");
-    Game_Objects_Lists::tilesets["forest_summer"] = Texture_Packer::Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_summer").c_str());
+    Game_Objects_Lists::tilesets["forest_summer"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_summer").c_str());
     Game_Objects_Lists::tilesets["bloodPool"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "background");
     Game_Objects_Lists::tilesets["bloodSplatter"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "foreground");
 

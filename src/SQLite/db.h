@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../sqlite3.h"
+#include "sqlite/sqlite3.h"
 
 namespace db {
   sqlite3 *db;

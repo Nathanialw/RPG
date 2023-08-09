@@ -21,8 +21,8 @@ include_directories(src)
 #add_library(srcDir "")
 #add_subdirectory(src)
 
-
-add_executable(RPG main.cpp sqlite3.c tinyxml2.cpp SDL_FontCache.c)
+#sqlite3.c tinyxml2.cpp SDL_FontCache.c
+add_executable(RPG main.cpp include/sqlite/sqlite3.c include/tinyxml/tinyxml2.cpp include/SDL_FontCache/SDL_FontCache.c)
 #target_sources(font SDL_FontCache.h)
 add_subdirectory(src)
 

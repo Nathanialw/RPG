@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../tinyxml2.h"
+#include "tinyxml/tinyxml2.h"
 #include "spritesheet_structs.h"
 #include "components.h"
 #include <string>

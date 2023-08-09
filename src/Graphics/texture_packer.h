@@ -1,5 +1,5 @@
 #pragma once
-#include "../tinyxml2.h"
+#include "tinyxml/tinyxml2.h"
 #include "base_structs.h"
 #include "components.h"
 #include "graphics.h"
@@ -201,32 +201,6 @@ namespace Texture_Packer {
     tilesetVec.shrink_to_fit();
     Game_Objects_Lists::Get_tileset(imgPath, tilesetVec);
     }
-  }
-
-  std::vector<std::string> Load_Tileset(const char * xmlPath) {
-    //loads xml and image from db, only do once per xml
-
-    ///get path from db
-    //    Type_Data typeData = Get_Sprite_Sheet(templateName);
-
-    tinyxml2::XMLDocument spriteSheetData;
-    spriteSheetData.LoadFile(xmlPath);
-    tinyxml2::XMLElement *pSpriteElement;
-    pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
-
-    std::string imgPath = spriteSheetData.RootElement()->Attribute("imagePath");
-
-    std::vector<std::string> tilesetVec;
-    tilesetVec.reserve(200);
-
-    while (pSpriteElement != NULL) {
-        ///get frame data for each state
-        std::string n = pSpriteElement->Attribute("n");
-        tilesetVec.emplace_back(n);
-        pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
-    }
-    tilesetVec.shrink_to_fit();
-    return tilesetVec;
   }
 
   std::unordered_map<std::string, Rendering_Components::Sheet_Data>* Get_Texture_Data(int textureIndex, std::string &templateName, Entity_Loader::Building_Data data, std::string &tilesetName) {
