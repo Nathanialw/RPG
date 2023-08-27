@@ -238,6 +238,7 @@ namespace World {
   }
 
   void Init_Tile_Objects() {
+      int numUnits = 0;
     float x = 0.0f;
     float y = 0.0f;
     Procedural_Components::Seed seed;
@@ -253,9 +254,11 @@ namespace World {
           int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::units["wolves"].size() - 1, seed);
           db::Unit_Data data = Game_Objects_Lists::units["wolves"][n];
           Create_Entities::Create_Entity(World::zone, (i * size.width) + x, (j * size.height) + y, data.name, "", false, data.imgPath, false);
+            numUnits++;
         }
       }
     }
+      std::cout << "number of units: "<< numUnits << std::endl;
   }
 
   //    The first time the tile is rendered generate objects but only the first time
@@ -275,7 +278,7 @@ namespace World {
     std::string objectName = "";
 
     seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
-    int numObjects = (World_Data::Tile_Type) Procedural_Generation::Random_Int(2, 6, seed);
+    int numObjects = (World_Data::Tile_Type) Procedural_Generation::Random_Int(1, 3, seed);
 
     for (int k = 0; k < numObjects; k++) {
       x = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.width, seed);

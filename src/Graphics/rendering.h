@@ -125,6 +125,8 @@ namespace Rendering {
         Utilities::Log("Static_Animation_Frame() fallthrough error: all pointers NULL");
       }
     }
+
+
   }
 
   void Render_Dead(entt::registry &zone, Component::Camera &camera) { //state
@@ -356,10 +358,10 @@ namespace Rendering {
     if (placeRenderable >= 250.0f) {
       placeRenderable -= 250.0f;
       SDL_FRect renderRect = {
-          camera.screen.x - (camera.screen.w),
-          camera.screen.y - (camera.screen.h),
-          camera.screen.w * 3.0f,
-          camera.screen.h * 3.0f
+          camera.screen.x - 1000.0f,
+          camera.screen.y - 1000.0f,
+          camera.screen.w + 2000.0f,
+          camera.screen.h + 2000.0f
       };
       auto objectsView = zone.view<Component::Position>(entt::exclude<Item_Component::Name>);
       //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
@@ -437,6 +439,7 @@ namespace Rendering {
       zone.destroy(entity);
       Utilities::Log("tile object destroyed");
     }
+    zone.compact<>();
   }
 
   void Render_Map(entt::registry &zone, Component::Camera &camera) {

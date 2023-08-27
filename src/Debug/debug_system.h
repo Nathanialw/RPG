@@ -71,7 +71,7 @@ namespace Debug_System {
   }
 
   void Framerate(Component::Camera &camera) {
-    if (Debug::settings[0]) {
+    if (Debug::settings[Debug::Settings::Framerate]) {
       iFramePollRate += Timer::timeStep;
       if (iFramePollRate >= 1000.0f) {
         iFramePollRate = 0.0f;
@@ -89,9 +89,9 @@ namespace Debug_System {
       SDL_FRect d = {128.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
       SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &framerate.k, &d);
     }
-    if (Debug::settings[3]) {
+    if (Debug::settings[Debug::Settings::InteractionRects]) {
 //      Debug::numEntities = World::zone.view<Component::Position>().size();
-      Debug::numEntities = World::zone.size();
+      Debug::numEntities = World::zone.capacity();
 
       SDL_DestroyTexture(numObjects.pTexture);
       numObjects = Graphics::Load_Text_Texture(std::to_string(Debug::numEntities), {133, 255, 133});
@@ -99,14 +99,14 @@ namespace Debug_System {
       SDL_RenderCopyF(Graphics::renderer, numObjects.pTexture, &numObjects.k, &d);
     }
 
-    if (Debug::settings[1]) {
+    if (Debug::settings[Debug::Settings::EntityCount]) {
       SDL_DestroyTexture(numRendered.pTexture);
       numRendered = Graphics::Load_Text_Texture(std::to_string(Debug::numRendered), {133, 255, 133});
       SDL_FRect d = {372.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
       SDL_RenderCopyF(Graphics::renderer, numRendered.pTexture, &numRendered.k, &d);
     }
 
-    if (Debug::settings[4]) {
+    if (Debug::settings[Debug::Settings::RenderChecks]) {
       SDL_DestroyTexture(renderChecks.pTexture);
       renderChecks = Graphics::Load_Text_Texture(std::to_string(Debug::renderChecks), {133, 255, 133});
       SDL_FRect d = {512.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
@@ -138,7 +138,7 @@ namespace Debug_System {
   }
 
   void Debug_Positions() {
-    if (Debug::settings[2]) {
+    if (Debug::settings[Debug::Settings::NumRendered]) {
       auto view1 = World::zone.view<Component::Camera>();
       auto view = World::zone.view<Component::Position, Component::Renderable>();
 
