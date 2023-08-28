@@ -1,0 +1,8 @@
+//
+// Created by nathanial on 27/08/23.
+//
+
+#ifndef RPG_UI_GAMELOOP_FUNCTION_TIMES_H
+#define RPG_UI_GAMELOOP_FUNCTION_TIMES_H
+
+#endif //RPG_UI_GAMELOOP_FUNCTION_TIMES_H
