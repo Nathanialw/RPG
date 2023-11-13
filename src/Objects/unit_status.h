@@ -8,6 +8,7 @@
 #include "graphics.h"
 #include "death_control.h"
 #include "utilities.h"
+#include "blood.h"
 
 namespace Unit_Status {
   void Update_Collided_Unit(entt::registry &zone) {
@@ -54,16 +55,9 @@ namespace Unit_Status {
       struck.struck -= struck.struck;
 
       if (struck.critical) {
-        //reset
+        //reset crit state
         struck.critical = false;
-        // spawn blood
-        std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
-        Collision::aabb aabb;
-        Component::Line_Segment line;
-        tmx::Vector2<float> offset = {0.0f, 0.0f};
-
-        int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["bloodPool"].size() - 1);
-        Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodPool"][splatterIndex], splatterIndex, aabb, pointVecs, line, offset);
+        Blood::Splatter(zone, position);
       }
 
       //if the soldier is in the assignment vector it will be set as dying if it dies

@@ -17,7 +17,7 @@ namespace Game_Menu_Control {
       for (int i = 0; i < UI_Frames::topFrame.buttons.size(); i++) {
         if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.buttons[0].button.frame)) {
           Utilities::Log(UI_Frames::topFrame.buttons[0].button.text);
-          //open build menu
+          //open build menuc
           UI_Frames::topFrame.currentTab = UI_Frames::build;
           UI_Frames::topFrame.open = true;
           return true;

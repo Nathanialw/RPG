@@ -11,6 +11,7 @@
 #include "utilities.h"
 #include "game_objects.h"
 #include <cstdlib>
+#include "blood.h"
 
 namespace Death_Component {
   struct Corpse {
@@ -80,15 +81,7 @@ namespace Death_Control {
         zone.remove<Collision_Component::Dynamic_Collider>(entity);
 
         // spawn blood
-        std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
-        tmx::Vector2<float> imageOffset = {0.0f, 0.0f};
-        Collision::aabb aabb;
-        Component::Line_Segment line;
-
-        int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["bloodPool"].size() - 1);
-        Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodPool"][poolIndex], poolIndex, aabb, pointVecs, line, imageOffset);
-        int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["bloodSplatter"].size() - 1);
-        Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodSplatter"][splatterIndex], splatterIndex, aabb, pointVecs, line, imageOffset);
+        Blood::Pool(zone, position);
 
         if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
           auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);

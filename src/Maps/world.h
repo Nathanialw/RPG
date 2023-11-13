@@ -289,7 +289,7 @@ namespace World {
 
       xmlIndex = Procedural_Generation::Random_Int(1, Game_Objects_Lists::tilesets["forest_summer"].size() - 1, seed);
       objectName = Game_Objects_Lists::tilesets["forest_summer"][xmlIndex];
-      Create_Entities::PVG_Building(World::zone, rect.x + x, rect.y + y, i, j, objectName, xmlIndex, aabb, pointVecs, line, offset);
+      Create_Entities::PVG_Building(World::zone, rect.x + x, rect.y + y, i, j, objectName, xmlIndex, aabb, pointVecs, line);
     }
   }
 

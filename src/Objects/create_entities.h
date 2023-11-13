@@ -121,7 +121,7 @@ namespace Create_Entities {
     return false;
   }
 
-  bool PVG_Building(entt::registry &zone, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
+  bool PVG_Building(entt::registry &zone, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 
@@ -158,10 +158,7 @@ namespace Create_Entities {
         Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
         position.y -= (float) frame.clip.h / 2.0f;
       } else if (data.collider_type == "round") {
-        offset = {imageOffset.x, imageOffset.y};
-        if (offset.x == 0.0f && offset.y == 0.0f) {
-          offset = {data.x_offset, data.y_offset};
-        };
+        offset = {data.x_offset, data.y_offset};
         position.x -= frame.x_offset;
         position.y -= frame.y_offset;
         Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
@@ -171,9 +168,7 @@ namespace Create_Entities {
         position.y -= frame.y_offset;
         Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       } else {
-        offset = {imageOffset.x, imageOffset.y};
-        position.x -= frame.x_offset;
-        position.y -= frame.y_offset;
+        Utilities::Log("PVG_Building() no collider_type found for templateName");
         Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
 //        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
       }
@@ -197,12 +192,14 @@ namespace Create_Entities {
 
       //should place the tiled position on the point
       if (data.collider_type == "background") {
+        offset = {frame.clip.w/2.0f, frame.clip.h/2.0f};
         position.x -= offset.x;
         position.y -= offset.y;
         offset.x = 0.0f;
         offset.y = 0.0f;
         zone.emplace<Rendering_Components::Background>(entity);
       } else if (data.collider_type == "foreground") {
+        offset = {frame.clip.w/2.0f, frame.clip.h/2.0f};
         position.x -= offset.x;
         position.y -= offset.y;
         offset.x = 0.0f;
