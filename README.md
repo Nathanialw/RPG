@@ -1,7 +1,17 @@
-# Build with cmake
 
-# May need to add to CMakeLists.txt file 
-set(CMAKE_CXX_FLAGS_RELEASE_INIT "-w"")
+TODO:
 
-# sudo cmake CMakeLists.txt
-# sudo make 
+### Character selection screen
+    Species
+    Gender
+    Class
+### Buildings
+    Create Buildings
+        Crafting
+        Recruitment
+### Basic Spells
+    First row spells
+### Caves
+    Single level "hole in the ground"
+### Interaction with environment objects
+    Pick berry bushes

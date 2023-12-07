@@ -78,7 +78,5 @@ namespace Scene {
     Map::Build_Map(Map::map);
     Entity_Loader::init_db();
     Character_Data::Get_Names_From_DB();
-    SDL_RenderSetScale(Graphics::renderer, 2.0f, 2.0f);
-
   }
 }

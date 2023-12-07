@@ -6,6 +6,7 @@ target_sources(RPG
   game_loop.h
   close.h
   load_object_list.h
+        settings.h
   game_objects.h
   )
 

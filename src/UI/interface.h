@@ -29,9 +29,9 @@ namespace Interface {
       if (e.wheel.y > 0) {
         x.x *= 1.1f;
         x.y *= 1.1f;
-        if (x.y > 5.0f) {
-          //                    x.x = 5.0f;
-          //                    x.y = 5.0f;
+        if (x.y > 2.0f) {
+          x.x = 2.0f;
+          x.y = 2.0f;
         }
         SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
       }
@@ -39,8 +39,8 @@ namespace Interface {
         x.x *= 0.9f;
         x.y *= 0.9f;
         if (x.y < 2.0f) {
-          //                    x.x = 1.0f;
-          //                    x.y = 1.0f;
+//          x.x = 2.0f;
+//          x.y = 2.0f;
         }
         SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
       }
