@@ -137,7 +137,7 @@ namespace User_Mouse_Input {
     auto soldier_view = zone.view<Component::Interaction_Rect, Component::Renderable>();
     for (auto soldier: soldier_view) {
       auto &interaction = soldier_view.get<Component::Interaction_Rect>(soldier);
-      if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_Cursor(interaction.rect)) {
+      if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_World_Cursor(interaction.rect)) {
         if (soldier == player_ID) {
           //                    prevent from selecting player
           continue;

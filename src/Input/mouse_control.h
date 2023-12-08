@@ -39,6 +39,11 @@ namespace Mouse {
     return Utilities::bFRect_Intersect(cursor, rect);
   }
 
+  bool bRect_inside_World_Cursor(SDL_FRect& rect) {
+    SDL_FRect cursor = {iXWorld_Mouse, iYWorld_Mouse, cursorRadius, cursorRadius };
+    return Utilities::bFRect_Intersect(cursor, rect);
+  }
+
   bool Point_Inside_Cursor(float targetX, float targetY) { 
     if (iXWorld_Mouse + cursorRadius > targetX &&
 	iXWorld_Mouse - cursorRadius < targetX &&
