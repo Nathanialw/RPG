@@ -23,34 +23,36 @@ namespace Main_Menu {
 
   const char *file = "assets/videos/main_menu.ogv";
 
-  void Overlay() {
+  void Background_Video() {
+    SDL_RenderClear(Graphics::renderer);
+    Video::Run_Video(file, false);
     SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_BLEND);
     SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 75);
     SDL_RenderFillRectF(Graphics::renderer, &Graphics::resolution);
   }
 
+  void Background_Image() {
+    SDL_RenderClear(Graphics::renderer);
+  }
 
   SDL_Color colors[2] = {{255, 255, 255},
 			 {255, 0,   0}};
 
   struct Button {
-    SDL_FRect size;
-    SDL_FRect scaledSize;
-    SDL_Surface *textSurface;
-    SDL_Texture *backgroundTexture;
-    SDL_Texture *textTexture;
-    const char *text;
+    SDL_FRect size = {};
+    SDL_FRect scaledSize = {};
+    SDL_Surface *textSurface = nullptr;
+    SDL_Texture *backgroundTexture = nullptr;
+    SDL_Texture *textTexture = nullptr;
+    const char *text = nullptr;
     bool selected = false;
   };
 
   struct Menu {
-    SDL_Texture *background;
-    Uint8 spacing = Mouse::cursorRadius * 2;
+    SDL_Texture *background = nullptr;
+    float spacing = Mouse::cursorRadius * 2;
     std::vector<Button> buttons;
   };
-
-  //    stores menus, access with key
-  Menu menus;
 
   SDL_FPoint Convert_FPoint_To_Scale(SDL_FPoint& rect) {
 
@@ -82,25 +84,6 @@ namespace Main_Menu {
     SDL_RenderCopyF(Graphics::renderer, Graphics::cursor_0, &srcRect, &d);
   }
 
-  //    void Update_Scale(Menu &menu)
-  ////    zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (Graphics::resolution.w), (Graphics::resolution.h), 2.0f, 2.0f);
-  //    {
-  //        //        set first index
-  //        menu.buttons[0].size.x = (Graphics::resolution.w / 2) - (menu.buttons[0].textSurface->clip_rect.w / 2);
-  //        menu.buttons[0].size.y = (Graphics::resolution.h / 4) - (menu.buttons[0].textSurface->clip_rect.h / 2);
-  //        menu.buttons[0].size.w = menu.buttons[0].textSurface->clip_rect.w;
-  //        menu.buttons[0].size.h = menu.buttons[0].textSurface->clip_rect.h;
-  //
-  //        //        offset rest
-  //        for (int i = 1; i < menu.buttons.size(); i++)
-  //        {
-  //            menu.buttons[i].size.x = (Graphics::resolution.w / 2) - (menu.buttons[i].textSurface->clip_rect.w / 2);
-  //            menu.buttons[i].size.y = menu.buttons[i-1].size.y + menu.buttons[i-1].size.h + menu.spacing;
-  //            menu.buttons[i].size.w = menu.buttons[i].textSurface->clip_rect.w;
-  //            menu.buttons[i].size.h = menu.buttons[i].textSurface->clip_rect.h;
-  //        }
-  //    }
-
   void Build_Menu(Menu &menu)
   {
     //        set first index position
@@ -114,10 +97,8 @@ namespace Main_Menu {
       }
   }
 
-  void Create_Menu() {
-
-    std::vector<const char *> labels = {"Start", "Exit"};
-
+  Menu Create_Menu(std::vector<const char *> labels) {
+    Menu menus;
     for (int i = 0; i < labels.size(); i++) {
       Button button;
       menus.buttons.emplace_back(button);
@@ -127,8 +108,8 @@ namespace Main_Menu {
     }
 
     Build_Menu(menus);
+    return menus;
   }
-
 
   bool toggleMenu = true;
 
@@ -140,26 +121,15 @@ namespace Main_Menu {
     }
   }
 
-  int Show_Menu(entt::registry &zone)
+  int Show_Menu(Menu &menu)
   {
-    SDL_RenderClear(Graphics::renderer);
-    Video::Run_Video(file, false);
-
-
-    Build_Menu(menus);
-    Menu &menu = menus;
-
     for (int i = 0; i < menu.buttons.size(); i++)
       {
-	//            SDL_FRect rectf;
-	//            SDL_Rect rect1 = Utilities::SDL_FRect_To_SDL_Rect(menu.buttons[i].size);
-	//            menu.buttons[i].scaledSize = UI::Center_Rect(rectf, rect1);
-
 	if (Mouse::FRect_inside_Screen_Cursor( menu.buttons[i].size))
 	  {
 	    if (!menu.buttons[i].selected)
 	      {
-		menu.buttons[i].selected = 1;
+		menu.buttons[i].selected = true;
 		SDL_FreeSurface(menu.buttons[i].textSurface);
 		menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[1]);
 		menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
@@ -170,15 +140,14 @@ namespace Main_Menu {
 	  {
 	    if (menu.buttons[i].selected)
 	      {
-		menu.buttons[i].selected = 0;
+		menu.buttons[i].selected = false;
 		SDL_FreeSurface(menu.buttons[i].textSurface);
 		menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[0]);
 		menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
 	      }
 	  }
-	SDL_RenderCopyF(Graphics::renderer, menu.buttons[i].textTexture, NULL, & menu.buttons[i].size);
+	SDL_RenderCopyF(Graphics::renderer, menu.buttons[i].textTexture, nullptr, & menu.buttons[i].size);
       }
-
 
     while (SDL_PollEvent(&Events::event))
       {
@@ -222,80 +191,10 @@ namespace Main_Menu {
     return 3;
   }
 
-  //    int Show_Menu(entt::registry &zone) {
-  //        Menu &menu = menus["menu"];
-  //
-  //        for (int i = 0; i < menu.buttons.size(); i++)
-  //        {
-  //            if (Mouse::FRect_inside_Screen_Cursor(menu.buttons[i].size))
-  //            {
-  //                if (!menu.buttons[i].selected)
-  //                {
-  //                    menu.buttons[i].selected = 1;
-  //                    SDL_FreeSurface(menu.buttons[i].textSurface);
-  //                    Utilities::Log("----");
-  //                    Utilities::Log(menu.buttons[i].textSurface);
-  //                    menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[1]);
-  //                    Utilities::Log(menu.buttons[i].textSurface);
-  //                    menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
-  //                }
-  //            }
-  //            else
-  //            {
-  //                if (menu.buttons[i].selected)
-  //                {
-  //                    menu.buttons[i].selected = 0;
-  //                    SDL_FreeSurface(menu.buttons[i].textSurface);
-  //                    menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[0]);
-  //                    menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
-  //                }
-  //            }
-  //        }
-  //
-  //        while (SDL_PollEvent(&Events::event)) {
-  //            switch (Events::event.type) {
-  //                case SDL_QUIT: {
-  //                    for (int i = 0; i < menu.buttons.size(); i++) {
-  //                        SDL_FreeSurface(menu.buttons[i].textSurface);
-  //                    }
-  //                    return 1;
-  //                }
-  //
-  //                case SDL_MOUSEBUTTONDOWN: {
-  //                    for (int j = 0; j < menu.buttons.size(); j++) {
-  //                        if (Mouse::FRect_inside_Screen_Cursor(menu.buttons[j].size)) {
-  ////                            returns the index of the array the mouse has clicked on
-  //                            return j;
-  //                        }
-  //                    }
-  //                    break;
-  //                }
-  //
-  //                case SDL_KEYDOWN: {
-  //                    if (Events::event.key.keysym.sym == SDLK_ESCAPE) {
-  //                        Toggle();
-  //                        break;
-  //                    }
-  //                    break;
-  //                }
-  //            }
-  //        }
-  //
-  ////      render menu
-  //        SDL_RenderClear(Graphics::renderer);
-  //        Video::Run_Video(file, false);
-  //        for (int i = 0; i < menu.buttons.size(); i++) {
-  //            SDL_RenderCopyF(Graphics::renderer, menu.buttons[i].textTexture, NULL, &menu.buttons[i].size);
-  //        }
-  //        Display_Mouse();
-  //        SDL_RenderPresent(Graphics::renderer);
-  //        return 3;
-  //    }
-
-  void Render_Menu(entt::registry &zone) {
+  bool Render_Menu(Menu &Menu) {
     if (toggleMenu) {
-      Overlay();
-      int i = Show_Menu(zone);
+      Background_Video();
+      int i = Show_Menu(Menu);
       if (i == 0) {
 	Video::Run_Video(file, true);
 	Toggle();
@@ -303,25 +202,47 @@ namespace Main_Menu {
       if (i == 1) {
 	Video::Run_Video(file, true);
 	Graphics::closeContext();
+        return false;
       }
     }
+    return true;
   }
 
-  void Menu_Options() {
+  bool Create_Character(Menu &Menu) {
+    if (toggleMenu) {
+      Background_Image();
+      int i = Show_Menu(Menu);
+      if (i == 0) {
+        Toggle();
+      }
+      if (i == 1) {
+        Graphics::closeContext();
+        return false;
+      }
+    }
+    return true;
+  }
 
-    Create_Menu();
-
+  bool Menu_Options() {
+    std::vector<const char *> Start_Menu = {"Create Character", "Exit"};
+    Menu start_menu = Create_Menu(Start_Menu);
     while (toggleMenu) {
       Update_Cursor();
-      Render_Menu(World::zone);
+      if (!Render_Menu(start_menu)) {
+        return false;
+      };
     }
-    Char_Create::Character_Selection();
+
+    std::vector<const char *> Char_Select_Menu = {"Start", "Exit"};
+    Menu menu = Create_Menu(Char_Select_Menu);
+    toggleMenu = true;
+    while (toggleMenu) {
+      Update_Cursor();
+      Char_Create::Character_Selection();
+      if (!Create_Character(menu)) {
+        return false;
+      };
+    }
+    return true;
   }
-
-  //  BACKGROUND VIDEO
-
-
-
-  //  MAYBE A GOOD PLACE TO TRY ADDING SOUNDS
-
 }

@@ -58,7 +58,7 @@ namespace Init {
     Video::Run_Audio("assets/music/nature.ogg");
   }
 
-  void Init_Client() {
+  bool Init_Client() {
     if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
       //SDL_Log(SDL_GetError());
     }
@@ -75,8 +75,11 @@ namespace Init {
 
     Graphics::createGraphicsContext(World::zone);
 
-    Main_Menu::Menu_Options();
+    if (!Main_Menu::Menu_Options()) {
+      return false;
+    }
 
     Init_World();
+    return true;
   }
 }
