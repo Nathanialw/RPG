@@ -91,7 +91,7 @@ namespace equip_player_start {
     for (auto unit: view) {
       auto &equipment = view.get<Item_Component::Equipment>(unit);
       auto &position = view.get<Component::Position>(unit);
-      Character character =  Create_Character("female", Role::warrior);
+      Character character =  Create_Character("male", Role::warrior);
 
       //create a weapon Component::Position& position, Component::Direction &direction
       equipment.equippedItems[Item_Type::mainhand] = Create_And_Equip_Weapon(position, equipment.type);

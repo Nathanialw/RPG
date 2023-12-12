@@ -119,7 +119,7 @@ namespace Items {
     return color;
   }
 
-  std::string Create_Weapon(entt::entity &item, Rarity &rarity, std::string &equip_type) {
+  std::string Create_Weapon(entt::entity &item, Rarity &rarity, std::string &equip_type, std::string &item_name) {
     auto material = Generate_Weapon_Material();
     auto weaponType = Generate_Weapon_Type();
 
@@ -136,7 +136,7 @@ namespace Items {
     ///save the string of the name
     ///provide lookup string when the player picks it up
 
-    auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type);
+    auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type, item_name);
 
     if (equippedSheetData.itemData == NULL) {
       return "none";
@@ -164,7 +164,7 @@ namespace Items {
     return equippedSheetData.index;
   }
 
-  std::string Create_Offhand(entt::entity &item, Rarity &rarity, std::string &equip_type) {
+  std::string Create_Offhand(entt::entity &item, Rarity &rarity, std::string &equip_type, std::string &item_name) {
     auto material = Generate_Weapon_Material();
     auto offhandType = Item_Component::Offhand_Type::shield;;
 
@@ -181,7 +181,7 @@ namespace Items {
     ///save the string of the name
     ///provide lookup string when the player picks it up
 
-    auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type);
+    auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type, item_name);
 
     if (equippedSheetData.itemData == NULL) {
       return "none";
@@ -210,7 +210,7 @@ namespace Items {
     return equippedSheetData.index;
   }
 
-  std::string Create_Specific_Armor(entt::entity &item, Rarity &rarity, Item_Type itemType, Armor_Type armorType, std::string &equip_type) {
+  std::string Create_Specific_Armor(entt::entity &item, Rarity &rarity, Item_Type itemType, Armor_Type armorType, std::string &equip_type, std::string &item_name, SDL_Color &color) {
     //        Armor_Type armorType = Generate_Armor_Type();
 
     std::string type = ItemTypeName[itemType];
@@ -227,7 +227,7 @@ namespace Items {
 
     Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
     //        if (itemType == Item_Component::Item_Type::legs || itemType == Item_Component::Item_Type::chest || itemType == Item_Component::Item_Type::helm || itemType == Item_Component::Item_Type::hair || itemType == Item_Component::Item_Type::kilt) {
-    equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type, equip_type);
+    equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type, equip_type, item_name);
     if (equippedSheetData.itemData == NULL) {
       return "none";
     }
@@ -236,6 +236,7 @@ namespace Items {
     //            return "none";
     //        }
 
+    sheetData.color = color;
     sheetData.sheet_name = equippedSheetData.index;
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
@@ -365,11 +366,11 @@ namespace Items {
     auto &position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
   }
 
-  entt::entity Create_And_Equip_Weapon(Component::Position &position, std::string &equip_type) {
+  entt::entity Create_And_Equip_Weapon(Component::Position &position, std::string &equip_type, std::string item_name) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     auto item_uID = World::zone.create();
-    std::string itemName = Create_Weapon(item_uID, rarity, equip_type);
+    std::string itemName = Create_Weapon(item_uID, rarity, equip_type, item_name);
     if (itemName == "none") {
       World::zone.destroy(item_uID);
       //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
@@ -379,11 +380,11 @@ namespace Items {
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Offhand(Component::Position &position, std::string &equip_type) {
+  entt::entity Create_And_Equip_Offhand(Component::Position &position, std::string &equip_type, std::string item_name) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     auto item_uID = World::zone.create();
-    std::string itemName = Create_Offhand(item_uID, rarity, equip_type);
+    std::string itemName = Create_Offhand(item_uID, rarity, equip_type, item_name);
     if (itemName == "none") {
       World::zone.destroy(item_uID);
       //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
@@ -393,13 +394,13 @@ namespace Items {
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Armor(Component::Position &position, Item_Component::Item_Type itemType, std::string &equip_type) {
+  entt::entity Create_And_Equip_Armor(Component::Position &position, Item_Component::Item_Type itemType, std::string &equip_type, std::string item_name, SDL_Color color) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     Armor_Type armorType = Items::Generate_Armor_Type();
 
     auto item_uID = World::zone.create();
-    std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType, armorType, equip_type);
+    std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType, armorType, equip_type, item_name, color);
     if (itemName == "none") {
       World::zone.destroy(item_uID);
       //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");

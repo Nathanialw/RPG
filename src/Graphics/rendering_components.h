@@ -48,7 +48,6 @@ namespace Rendering_Components {
 
   struct Sheet_Data {
     SDL_Texture* texture = NULL;
-    SDL_Color color = { 255, 255, 255 };
     std::vector<Sprite_Sheet_Data> frameList;
     /// start frame by state, number of frames per state.
     std::unordered_map<uint8_t , Frame_Data_Packer> actionFrameData;
@@ -81,6 +80,7 @@ namespace Rendering_Components {
     std::unordered_map<std::string, Sheet_Data>* ItemSheetData = NULL;
     //name is the index into the map that stores the data
     std::string name = "empty";
+    SDL_Color color = {255, 255, 255};
     int FrameIndex = 0;
     entt::entity itemID;
   };
@@ -104,6 +104,7 @@ namespace Rendering_Components {
 
     std::unordered_map<std::string, Sheet_Data>* mount = NULL;
     std::string mount_name = "unmounted";
+    SDL_Color color = { 255, 255, 255 };
 
     //        Equip_Slot_Data equipmentSheets[30];
 

@@ -246,7 +246,6 @@ namespace Texture_Packer {
     Utilities::Log("SUCCESS!");
 
     spritesheet.frameList.shrink_to_fit();
-    //    spritesheet.color = Graphics::Set_Random_Color();
     Packer_Textures[tilesetName] = spritesheet;
     return &Packer_Textures;
   }

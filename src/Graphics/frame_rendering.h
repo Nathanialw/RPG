@@ -37,7 +37,7 @@ void Render_Equipment(Rendering_Components::Equipment_Sprites &equipment, Compon
       Component::Interaction_Rect itemInteractionRect = {};
       SDL_FRect renderRect = Position_For_Render(item.ItemSheetData, item.name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, itemInteractionRect);
       SDL_Texture *texture = item.ItemSheetData->at(item.name).texture;
-      SDL_Color color = item.ItemSheetData->at(item.name).color;
+      SDL_Color color = item.color;
       SDL_SetTextureAlphaMod(texture, renderable.alpha);
       Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
     }
@@ -57,7 +57,7 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
   }
 
   SDL_Texture *texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
-  SDL_Color color = sheetData.sheetData->at(sheetData.sheet_name).color;
+  SDL_Color color = sheetData.color;
   SDL_SetTextureAlphaMod(texture, renderable.alpha);
   Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
 }

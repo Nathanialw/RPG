@@ -149,6 +149,7 @@ namespace Graphics {
 
   //both unitID and filepath are stored in tiled map object
   static void Load_Texture(int &unitID, const char *filepath) {
+    filepath = filepath;
     unitTextures[unitID] = createTexture(filepath);
     if (unitTextures[unitID] == NULL) {
       std::cout << "Load_Texture() failed to load  texture from file: " << filepath << std::endl;

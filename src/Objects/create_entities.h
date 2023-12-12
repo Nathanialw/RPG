@@ -236,6 +236,7 @@ namespace Create_Entities {
     //if it is random, grab a random entry of the same class from the DB table, including the key name
     //
     //scaling only applies to trees
+    imgpath = "assets/" + imgpath;
     if (is_random == 1) {
       templateName = Entity_Loader::Get_All_Of_Class(entity_class);
       //check if the random name has a tamplate ID, if it doesn't revert to default name

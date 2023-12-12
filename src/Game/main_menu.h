@@ -1,18 +1,18 @@
 #pragma once
-#include "close.h"
-#include "char_create.h"
-#include "menu.h"
-#include "timer.h"
-#include "graphics.h"
 #include "SDL2/SDL.h"
 #include "SDL_FontCache/SDL_FontCache.h"
 #include "base_structs.h"
-#include "events.h"
-#include "pause.h"
 #include "camera.h"
+#include "char_create.h"
+#include "close.h"
+#include "events.h"
+#include "graphics.h"
+#include "menu.h"
+#include "pause.h"
+#include "timer.h"
+#include "ui_elements.h"
 #include "utilities.h"
 #include "video.h"
-#include "ui_elements.h"
 
 namespace Main_Menu {
 
@@ -36,7 +36,7 @@ namespace Main_Menu {
   }
 
   SDL_Color colors[2] = {{255, 255, 255},
-			 {255, 0,   0}};
+                         {255, 0, 0}};
 
   struct Button {
     SDL_FRect size = {};
@@ -54,47 +54,45 @@ namespace Main_Menu {
     std::vector<Button> buttons;
   };
 
-  SDL_FPoint Convert_FPoint_To_Scale(SDL_FPoint& rect) {
+  SDL_FPoint Convert_FPoint_To_Scale(SDL_FPoint &rect) {
 
     SDL_FPoint fRenderToScreen = {
-      float(rect.x),
-      float(rect.y) };
+        float(rect.x),
+        float(rect.y)};
 
     return fRenderToScreen;
-
   }
 
   void Update_Cursor() {
     int mx, my;
     SDL_GetMouseState(&mx, &my);
-    Mouse::iXMouse = (float)mx;
-    Mouse::iYMouse = (float)my;
+    Mouse::iXMouse = (float) mx;
+    Mouse::iYMouse = (float) my;
     Mouse::iXWorld_Mouse = (Mouse::iXMouse);//getting mouse world Position corrected for scale
     Mouse::iYWorld_Mouse = (Mouse::iYMouse);//getting mouse world Position corrected for scale
-    Mouse::iXMouse = Mouse::iXMouse;  // getting the screen mouse position corrected for scale
-    Mouse::iYMouse = Mouse::iYMouse;  // getting the screen mouse position corrected for scale
-    Mouse::mousePoint = { (float)mx, (float)my };
+    Mouse::iXMouse = Mouse::iXMouse;        // getting the screen mouse position corrected for scale
+    Mouse::iYMouse = Mouse::iYMouse;        // getting the screen mouse position corrected for scale
+    Mouse::mousePoint = {(float) mx, (float) my};
     Mouse::screenMousePoint = Convert_FPoint_To_Scale(Mouse::mousePoint);
   }
 
   void Display_Mouse() {
-    SDL_Rect srcRect = { 0, 0 , 32, 32 };
-    SDL_FRect d = { Mouse::iXMouse, Mouse::iYMouse, 32.0f, 32.0f };
+    SDL_Rect srcRect = {0, 0, 32, 32};
+    SDL_FRect d = {Mouse::iXMouse, Mouse::iYMouse, 32.0f, 32.0f};
 
     SDL_RenderCopyF(Graphics::renderer, Graphics::cursor_0, &srcRect, &d);
   }
 
-  void Build_Menu(Menu &menu)
-  {
+  void Build_Menu(Menu &menu) {
     //        set first index position
     menu.buttons[0].size = UI::Center_Rect(menu.buttons[0].textSurface->clip_rect);
     menu.buttons[0].size.y /= 4.0f;
     //        offset rest from first index
-    for (int i = 1; i < menu.buttons.size(); i++)
-      {
-	menu.buttons[i].size = UI::Center_Rect(menu.buttons[i].textSurface->clip_rect);
-	menu.buttons[i].size.y = menu.buttons[i-1].size.y + menu.buttons[i-1].size.h + menu.spacing;;
-      }
+    for (int i = 1; i < menu.buttons.size(); i++) {
+      menu.buttons[i].size = UI::Center_Rect(menu.buttons[i].textSurface->clip_rect);
+      menu.buttons[i].size.y = menu.buttons[i - 1].size.y + menu.buttons[i - 1].size.h + menu.spacing;
+      ;
+    }
   }
 
   Menu Create_Menu(std::vector<const char *> labels) {
@@ -121,70 +119,55 @@ namespace Main_Menu {
     }
   }
 
-  int Show_Menu(Menu &menu)
-  {
-    for (int i = 0; i < menu.buttons.size(); i++)
-      {
-	if (Mouse::FRect_inside_Screen_Cursor( menu.buttons[i].size))
-	  {
-	    if (!menu.buttons[i].selected)
-	      {
-		menu.buttons[i].selected = true;
-		SDL_FreeSurface(menu.buttons[i].textSurface);
-		menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[1]);
-		menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
-	      }
+  int Show_Menu(Menu &menu) {
+    for (int i = 0; i < menu.buttons.size(); i++) {
+      if (Mouse::FRect_inside_Screen_Cursor(menu.buttons[i].size)) {
+        if (!menu.buttons[i].selected) {
+          menu.buttons[i].selected = true;
+          SDL_FreeSurface(menu.buttons[i].textSurface);
+          menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[1]);
+          menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
+        }
 
-	  }
-	else
-	  {
-	    if (menu.buttons[i].selected)
-	      {
-		menu.buttons[i].selected = false;
-		SDL_FreeSurface(menu.buttons[i].textSurface);
-		menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[0]);
-		menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
-	      }
-	  }
-	SDL_RenderCopyF(Graphics::renderer, menu.buttons[i].textTexture, nullptr, & menu.buttons[i].size);
+      } else {
+        if (menu.buttons[i].selected) {
+          menu.buttons[i].selected = false;
+          SDL_FreeSurface(menu.buttons[i].textSurface);
+          menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[0]);
+          menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
+        }
       }
+      SDL_RenderCopyF(Graphics::renderer, menu.buttons[i].textTexture, nullptr, &menu.buttons[i].size);
+    }
 
-    while (SDL_PollEvent(&Events::event))
-      {
-	switch (Events::event.type)
-	  {
-	  case SDL_QUIT: {
-	    for (int i = 0; i < menu.buttons.size(); i++)
-	      {
-		SDL_FreeSurface(menu.buttons[i].textSurface);
-	      }
-	    return 1;
-	  }
+    while (SDL_PollEvent(&Events::event)) {
+      switch (Events::event.type) {
+        case SDL_QUIT: {
+          for (int i = 0; i < menu.buttons.size(); i++) {
+            SDL_FreeSurface(menu.buttons[i].textSurface);
+          }
+          return 1;
+        }
 
-	  case SDL_MOUSEBUTTONDOWN:
-	    {
-	      for (int j = 0; j < menu.buttons.size(); j++)
-		{
-		  if (Mouse::FRect_inside_Screen_Cursor( menu.buttons[j].size))
-		    {
-		      //                            returns the index of the array the mouse has clicked on
-		      return j;
-		    }
-		}
-	      break;
-	    }
+        case SDL_MOUSEBUTTONDOWN: {
+          for (int j = 0; j < menu.buttons.size(); j++) {
+            if (Mouse::FRect_inside_Screen_Cursor(menu.buttons[j].size)) {
+              //                            returns the index of the array the mouse has clicked on
+              return j;
+            }
+          }
+          break;
+        }
 
-	  case SDL_KEYDOWN:
-	    {
-	      if (Events::event.key.keysym.sym == SDLK_ESCAPE)
-		{
-		  Toggle();
-		  break;
-		}
-	      break;
-	    }
-	  }
+        case SDL_KEYDOWN: {
+          if (Events::event.key.keysym.sym == SDLK_ESCAPE) {
+            Toggle();
+            break;
+          }
+          break;
+        }
       }
+    }
 
     Display_Mouse();
     SDL_RenderPresent(Graphics::renderer);
@@ -196,12 +179,12 @@ namespace Main_Menu {
       Background_Video();
       int i = Show_Menu(Menu);
       if (i == 0) {
-	Video::Run_Video(file, true);
-	Toggle();
+        Video::Run_Video(file, true);
+        Toggle();
       }
       if (i == 1) {
-	Video::Run_Video(file, true);
-	Graphics::closeContext();
+        Video::Run_Video(file, true);
+        Graphics::closeContext();
         return false;
       }
     }
@@ -223,13 +206,15 @@ namespace Main_Menu {
     return true;
   }
 
-  bool Menu_Options() {
+  Character_Stats::Customization Menu_Options() {
+    Character_Stats::Customization options;
+    options.success = false;
     std::vector<const char *> Start_Menu = {"Create Character", "Exit"};
     Menu start_menu = Create_Menu(Start_Menu);
     while (toggleMenu) {
       Update_Cursor();
       if (!Render_Menu(start_menu)) {
-        return false;
+        return options;
       };
     }
 
@@ -240,9 +225,10 @@ namespace Main_Menu {
       Update_Cursor();
       Char_Create::Character_Selection();
       if (!Create_Character(menu)) {
-        return false;
+        return options;
       };
     }
-    return true;
+    options.success = true;
+    return options;
   }
-}
+}// namespace Main_Menu

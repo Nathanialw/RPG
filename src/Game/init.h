@@ -37,18 +37,19 @@ namespace Init {
     SDL_FlushEvents(SDL_FIRSTEVENT, SDL_LASTEVENT);
   }
 
-  void Init_World() {
+  void Init_World(Character_Stats::Customization &options) {
     Clear_Events();
     Debug::Load_Settings();
     Init_Tiles_Array();
     UI_Frames::Load_Buildings();
     Collision::init_Collison();
     Init_Zone(World::zone);
-    Maps::Create_Map();
+    World::Generate_Region();
     Load_Object_List::Load_Entities();
     World::Init_Tile_Objects();
     //World::Generate_Map();
     Character_Stats::Init_UI(World::zone);
+    Character_Stats::Init_Player(World::zone, options);
     Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
     UI_Spellbook::Init_UI();
     Action_Bar::Create_Action_Bar(World::zone);
@@ -75,11 +76,12 @@ namespace Init {
 
     Graphics::createGraphicsContext(World::zone);
 
-    if (!Main_Menu::Menu_Options()) {
+    Character_Stats::Customization options = Main_Menu::Menu_Options();
+    if (!options.success) {
       return false;
     }
 
-    Init_World();
+    Init_World(options);
     return true;
   }
 }
