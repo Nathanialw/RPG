@@ -4,6 +4,7 @@
 #include "ui.h"
 #include <SDL2/SDL.h>
 #include <sstream>
+#include "character_options.h"
 
 namespace Character_Stats {
 
@@ -261,80 +262,18 @@ namespace Character_Stats {
     }
   }
 
-  std::vector<std::string> Gear_Female = {"Female_Rogue_DaggerMain",
-                                          "Female_Druid_Top", "Female_Scout_Bottom",
-                                          "Female_Necromancer_Hair"};
-
-  std::vector<std::string> Gear_Male = {"Male_Rogue_DaggerMain", "Male_Druid_Top",
-                                        "Male_Footman_Bottom",
-                                        "Male_Necromancer_Hair"};
-
-  enum Sex {
-    male,
-    female
-  };
-
-  enum Species {
-    Orc,
-    Zombie,
-    Skeleton,
-    Demon,
-    fleshbeast,
-    elves,
-    Euro,
-    Asian,
-    Indian,
-    African,
-  };
-
-  enum Colors { red,
-                blonde,
-                brown,
-                black,
-                grey,
-                none };
-
-  std::unordered_map<Colors, SDL_Color> Color = {
-      {red, {117, 37, 10}},
-      {blonde, {179, 139, 103}},
-      {brown, {61, 35, 20}},
-      {black, {49, 49, 49}},
-      {grey, {116, 116, 116}},
-      {none, {255, 255, 255}}};
-
-  enum Cast {
-    RTP,
-    Classes,
-    Medieval
-  };
-
-  struct Customization {
-    bool success = false;
-    Sex sex = female;
-    Cast cast = Classes;
-    Species species = Euro;
-    std::string hair = "";
-    SDL_Color hairColor = Color[red];
-  };
-
-  std::vector<std::string> Get_Sex(Sex sex) {
-    if (sex == male) {
-      return Gear_Male;
-    }
-    return Gear_Female;
-  }
-
-  void Equip_Units(entt::registry &zone, Customization &options) {
+  void Equip_Units(entt::registry &zone, Character_Options::Customization &options) {
     std::vector<std::string> gear = Get_Sex(options.sex);
+    std::vector<std::string> hair = Get_Hair(options.sex);
     auto view = zone.view<Item_Component::Equipment, Component::Position>();
     for (auto unit: view) {
       auto &equipment = view.get<Item_Component::Equipment>(unit);
       auto &position = view.get<Component::Position>(unit);
 
       equipment.equippedItems[Item_Type::mainhand] = Items::Create_And_Equip_Weapon(position, equipment.type, gear[0]);
-      equipment.equippedItems[Item_Type::chest] = Items::Create_And_Equip_Armor(position, Item_Type::chest, equipment.type, gear[1], Color[none]);
-      equipment.equippedItems[Item_Type::legs] = Items::Create_And_Equip_Armor(position, Item_Type::legs, equipment.type, gear[2], Color[none]);
-      equipment.equippedItems[Item_Type::hair] = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type, gear[3], options.hairColor);
+      equipment.equippedItems[Item_Type::chest] = Items::Create_And_Equip_Armor(position, Item_Type::chest, equipment.type, gear[1], Character_Options::Color[0]);
+      equipment.equippedItems[Item_Type::legs] = Items::Create_And_Equip_Armor(position, Item_Type::legs, equipment.type, gear[2], Character_Options::Color[0]);
+      equipment.equippedItems[Item_Type::hair] = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type, hair[options.hairStyle], Character_Options::Color[options.hairColor]);
 
       zone.emplace<Item_Component::Item_Equip>(unit);
     }
@@ -353,26 +292,9 @@ namespace Character_Stats {
     UI::Equipment_UI::Create_Equipment_UI(zone);
   }
 
-  struct Gender {
-    std::string path = "sprites/units/2nd_cast_classes/races/humans/male/Male_Archer.png";
-    std::string templateName = "Male_Archer";
-    std::string sex = "male";
-  };
-
-  Gender Get_Gender(Sex &sex) {
-    Gender gender;
-    if (sex == male) {
-      return gender;
-    }
-    gender.path = "sprites/units/2nd_cast_classes/races/humans/female/Female_Archer.png";
-    gender.templateName = "Female_Archer";
-    gender.sex = "female";
-    return gender;
-  }
-
-  void Init_Player(entt::registry &zone, Character_Stats::Customization &options) {
-    Gender gender = Get_Gender(options.sex);
-    Create_Entities::Create_Entity(zone, 73188, 36964, gender.templateName, "unit", false, gender.path, true);
+  void Init_Player(entt::registry &zone, Character_Options::Customization &options) {
+    Character_Options::Race race = Character_Options::Get_Gender(options);
+    Create_Entities::Create_Entity(zone, 73188, 36964, race.templateName, "unit", false, race.path, true);
     Equip_Units(zone, options);
     Init_Player_Stats(zone);
   }

@@ -37,7 +37,7 @@ namespace Init {
     SDL_FlushEvents(SDL_FIRSTEVENT, SDL_LASTEVENT);
   }
 
-  void Init_World(Character_Stats::Customization &options) {
+  void Init_World(Character_Options::Customization &options) {
     Clear_Events();
     Debug::Load_Settings();
     Init_Tiles_Array();
@@ -76,7 +76,7 @@ namespace Init {
 
     Graphics::createGraphicsContext(World::zone);
 
-    Character_Stats::Customization options = Main_Menu::Menu_Options();
+    Character_Options::Customization options = Main_Menu::Menu_Options();
     if (!options.success) {
       return false;
     }
