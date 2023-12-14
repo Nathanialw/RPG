@@ -29,7 +29,8 @@ namespace Item_Component {
     dirt,
     ranged,
     mainhand,
-    offhand
+    offhand,
+    size
   };
 
   Item_Type Get_Item_Type(std::string &db_type) {
@@ -107,8 +108,7 @@ namespace Item_Component {
       return Item_Type::mainhand;
     }
   }
-  
-  
+
   enum class Unit_Equip_Type {
     Medieval_Underdeep_Dwarves_Male,
     RTP_female,
@@ -119,7 +119,8 @@ namespace Item_Component {
     medieval_human_female,
     medieval_human_male,
     zombie,
-    none
+    none,
+    size
   };
 
   Unit_Equip_Type Get_Unit_Equip_Type(std::string &db_type) {

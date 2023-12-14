@@ -286,8 +286,11 @@ namespace Character_Stats {
     Update_Unit_Defense(zone);
   }
 
-  void Init_UI(entt::registry &zone) {
+  void Init_Items(entt::registry &zone) {
     Items::Init_Item_Data();
+  }
+
+  void Init_UI(entt::registry &zone) {
     UI::Bag_UI::Create_Bag_UI(zone);
     UI::Equipment_UI::Create_Equipment_UI(zone);
   }

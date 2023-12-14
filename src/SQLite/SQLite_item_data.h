@@ -11,6 +11,7 @@ namespace SQLite_Item_Data {
     // read in all items and emplace each unit type into the map and fill it up
     //  holds a map for each unit type >>>  holds a vector for each item type for the unit >>> the vector is a list of strings of the name of each item in the db
     std::unordered_map<Item_Component::Unit_Equip_Type, std::unordered_map<Item_Component::Item_Type, std::vector<std::string>>>Items;
+//    std::array<std::array<std::vector<std::string>, (int)Item_Component::Item_Type::size>, (int)Item_Component::Unit_Equip_Type::size>Items;
 
     void Load_Item_Names() {// needs to search for  a specific row that I can input in the arguments
         //check if the name exists??
@@ -48,10 +49,6 @@ namespace SQLite_Item_Data {
             Item_Component::Unit_Equip_Type unit_equip_type = Item_Component::Get_Unit_Equip_Type(equip_type);
 
             Items[unit_equip_type][item_type].emplace_back(item_name);
-
-            //    std::string ds = SQLite_Item_Data::Items["classes_female"][Item_Component::Item_Type::hair][0];
-            //    std::string ds = SQLite_Item_Data::Items[classes_female][Item_Component::Item_Type::hair][0];
-            //    Utilities::Log(ds);
         }
 //        Utilities::Log(Items.size());
 //        Utilities::Log("Loading items success!");

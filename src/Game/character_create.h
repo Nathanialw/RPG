@@ -34,7 +34,8 @@ namespace Character_Create {
   enum state {
     unselected,
     selected,
-    disabled
+    disable,
+    is_disabled
   };
 
   struct Button {
@@ -150,7 +151,8 @@ namespace Character_Create {
         SDL_FreeSurface(menu.buttons[i].textSurface);
         menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[0]);
         menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
-      } else if (menu.buttons[i].selected == disabled) {
+      } else if (menu.buttons[i].selected == disable) {
+        menu.buttons[i].selected = is_disabled;
         SDL_FreeSurface(menu.buttons[i].textSurface);
         menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[2]);
         menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
@@ -163,7 +165,7 @@ namespace Character_Create {
 
   void Increment(int &index, int array) {
     index++;
-    if (index > array) {
+    if (index >= array) {
       index = 0;
     }
   }
@@ -179,7 +181,7 @@ namespace Character_Create {
     auto races = Character_Options::Get_Race(options.sex);
     for (int n = 0; n < menu.buttons.size(); n++) {
       if (races[n].templateName == "none") {
-        menu.buttons[n].selected = disabled;
+        menu.buttons[n].selected = disable;
         menu.buttons[n].backgroundTexture = nullptr;
         if (options.species == n) {
           options.species = (Character_Options::Species) 0;
@@ -215,14 +217,16 @@ namespace Character_Create {
               return;
             }
           }
-          //Hair
+          //Hair Style
           for (int k = 0; k < menus[1].buttons.size(); k++) {
             if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[0].size)) {
               Decrement(options.hairStyle, Character_Options::Get_Hair(options.sex).size());
+              Utilities::Log(options.hairStyle);
               return;
             }
             if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[2].size)) {
               Increment(options.hairStyle, Character_Options::Get_Hair(options.sex).size());
+              Utilities::Log(options.hairStyle);
               return;
             }
           }
@@ -230,10 +234,12 @@ namespace Character_Create {
           for (int l = 0; l < menus[2].buttons.size(); l++) {
             if (Mouse::FRect_inside_Screen_Cursor(menus[2].buttons[0].size)) {
               Decrement(options.hairColor, Character_Options::Color.size());
+              Utilities::Log(options.hairColor);
               return;
             }
             if (Mouse::FRect_inside_Screen_Cursor(menus[2].buttons[2].size)) {
               Increment(options.hairColor, Character_Options::Color.size());
+              Utilities::Log(options.hairColor);
               return;
             }
           }
@@ -243,7 +249,7 @@ namespace Character_Create {
               options.sex = Character_Options::male;
               menus[3].buttons[1].backgroundTexture = nullptr;
               menus[3].buttons[0].backgroundTexture = Graphics::default_icon;
-
+              options.hairStyle = 0;
               Update_Species_List(menus[4], options);
               return;
             }
@@ -251,7 +257,7 @@ namespace Character_Create {
               options.sex = Character_Options::female;
               menus[3].buttons[1].backgroundTexture = Graphics::default_icon;
               menus[3].buttons[0].backgroundTexture = nullptr;
-
+              options.hairStyle = 0;
               Update_Species_List(menus[4], options);
               return;
             }
@@ -259,7 +265,7 @@ namespace Character_Create {
           //Species
           for (int m = 0; m < menus[4].buttons.size(); m++) {
             if (Mouse::FRect_inside_Screen_Cursor(menus[4].buttons[m].size)) {
-              if(menus[4].buttons[m].selected != disabled) {
+              if(menus[4].buttons[m].selected != is_disabled) {
               //clear all selected, quite hacky
                 for (int n = 0; n < menus[4].buttons.size(); n++) {
                   menus[4].buttons[n].backgroundTexture = nullptr;

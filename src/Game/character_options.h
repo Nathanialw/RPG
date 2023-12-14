@@ -12,44 +12,6 @@ namespace Character_Options {
   std::vector<std::string> Gear_Female = {"Female_Rogue_DaggerMain",
                                           "Female_Druid_Top", "Female_Scout_Bottom"};
 
-  std::vector<std::string> Hair_Male = {
-      "Male_Druid_Hair",
-      "Male_Footman_Hair",
-      "Male_Knight_Hair",
-      "Male_Mage_Hair",
-      "Male_Miner_Hair",
-      "Male_Monk_Hair",
-      "Male_Musketeer_Hair",
-      "Male_Necromancer_Hair",
-      "Male_Prince_Hair",
-      "Male_Rogue_Hair",
-      "Male_Walker_Hair",
-      "Male_WitchHunter_Hair",
-      "Male_Archer_Hair",
-      "Male_ArcherElven_Hair",
-      "Male_Assassin_Hair",
-      "Male_Battleguard_Hair",
-      "Male_BeastMaster_Hair",
-      "Male_Commoner_1_Hair"};
-
-  std::vector<std::string> Hair_Female = {
-      "Female_Necromancer_Hair",
-      "Female_Footman_Hair",
-      "Female_Mage_Hair",
-      "Female_Knight_Hair",
-      "Female_Archer_Hair",
-      "Female_Beastmaster_Hair",
-      "Female_Cleric_Hair",
-      "Female_Druid_Hair",
-      "Female_Musketeer_Hair",
-      "Female_Necromancer_Hair",
-      "Female_Battleguard_Hair",
-      "Female_Bard_Hair",
-      "Female_1930s_1_1_Hair",
-      "Female_ArcherElven_Hair",
-      "Female_Assassin_Hair",
-      "Female_Jester_Hair"};
-
   enum Sex {
     male,
     female
@@ -99,28 +61,13 @@ namespace Character_Options {
       {"Female_WitchHunter", "sprites/units/2nd_cast_classes/races/humans/female/Female_WitchHunter.png"},
   };
 
-//  enum Colors { red,
-//                blonde,
-//                brown,
-//                black,
-//                grey,
-//                none };
-
-//  std::unordered_map<Colors, SDL_Color> Color = {
-//      {red, {117, 37, 10}},
-//      {blonde, {179, 139, 103}},
-//      {brown, {61, 35, 20}},
-//      {black, {49, 49, 49}},
-//      {grey, {116, 116, 116}},
-//      {none, {255, 255, 255}}};
-
   std::vector<SDL_Color> Color = {
-      {255, 255, 255},
-      {117, 37, 10},
-      {179, 139, 103},
-      {61, 35, 20},
-      {49, 49, 49},
-      {116, 116, 116}};
+      {255, 255, 255},  //white
+      {117, 37, 10},    //red
+      {179, 139, 103},  //blonde
+      {61, 35, 20},     //brown
+      {49, 49, 49},     //black
+      {116, 116, 116}}; //grey
 
   enum Cast {
     RTP,
@@ -131,7 +78,7 @@ namespace Character_Options {
   struct Customization {
     bool success = true;
     Sex sex = male;
-    Cast cast = Classes;
+//    Cast cast = Classes;
     Species species = euro;
     int hairStyle = 0;
     int hairColor = 1;
@@ -146,9 +93,11 @@ namespace Character_Options {
 
   std::vector<std::string> Get_Hair(Sex sex) {
     if (sex == male) {
-      return Hair_Male;
+      std::cout << SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair].size() << std::endl;
+      return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair];
     }
-    return Hair_Female;
+    std::cout << SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair].size() << std::endl;
+    return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair];
   }
 
   std::vector<Race> Get_Race(Sex sex) {
@@ -165,6 +114,7 @@ namespace Character_Options {
       race.templateName = Species_Male[options.species].templateName;
       return race;
     }
+
     race.path = Species_Female[options.species].path;
     race.templateName = Species_Female[options.species].templateName;
     return race;
