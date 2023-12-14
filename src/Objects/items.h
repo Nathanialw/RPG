@@ -119,7 +119,7 @@ namespace Items {
     return color;
   }
 
-  std::string Create_Weapon(entt::entity &item, Rarity &rarity, std::string &equip_type, std::string &item_name) {
+  std::string Create_Weapon(entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, std::string &item_name) {
     auto material = Generate_Weapon_Material();
     auto weaponType = Generate_Weapon_Type();
 
@@ -164,7 +164,7 @@ namespace Items {
     return equippedSheetData.index;
   }
 
-  std::string Create_Offhand(entt::entity &item, Rarity &rarity, std::string &equip_type, std::string &item_name) {
+  std::string Create_Offhand(entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, std::string &item_name) {
     auto material = Generate_Weapon_Material();
     auto offhandType = Item_Component::Offhand_Type::shield;;
 
@@ -210,7 +210,7 @@ namespace Items {
     return equippedSheetData.index;
   }
 
-  std::string Create_Specific_Armor(entt::entity &item, Rarity &rarity, Item_Type itemType, Armor_Type armorType, std::string &equip_type, std::string &item_name, SDL_Color &color) {
+  std::string Create_Specific_Armor(entt::entity &item, Rarity &rarity, Item_Type itemType, Armor_Type armorType, Item_Component::Unit_Equip_Type &equip_type, std::string &item_name, SDL_Color &color) {
     //        Armor_Type armorType = Generate_Armor_Type();
 
     std::string type = ItemTypeName[itemType];
@@ -366,7 +366,7 @@ namespace Items {
     auto &position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
   }
 
-  entt::entity Create_And_Equip_Weapon(Component::Position &position, std::string &equip_type, std::string item_name) {
+  entt::entity Create_And_Equip_Weapon(Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, std::string item_name) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     auto item_uID = World::zone.create();
@@ -380,7 +380,7 @@ namespace Items {
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Offhand(Component::Position &position, std::string &equip_type, std::string item_name) {
+  entt::entity Create_And_Equip_Offhand(Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, std::string item_name) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     auto item_uID = World::zone.create();
@@ -394,7 +394,7 @@ namespace Items {
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Armor(Component::Position &position, Item_Component::Item_Type itemType, std::string &equip_type, std::string item_name, SDL_Color color) {
+  entt::entity Create_And_Equip_Armor(Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Unit_Equip_Type &equip_type, std::string item_name, SDL_Color color) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     Armor_Type armorType = Items::Generate_Armor_Type();

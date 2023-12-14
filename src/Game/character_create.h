@@ -221,7 +221,7 @@ namespace Character_Create {
               Decrement(options.hairStyle, Character_Options::Get_Hair(options.sex).size());
               return;
             }
-            if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[1].size)) {
+            if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[2].size)) {
               Increment(options.hairStyle, Character_Options::Get_Hair(options.sex).size());
               return;
             }
@@ -232,7 +232,7 @@ namespace Character_Create {
               Decrement(options.hairColor, Character_Options::Color.size());
               return;
             }
-            if (Mouse::FRect_inside_Screen_Cursor(menus[2].buttons[1].size)) {
+            if (Mouse::FRect_inside_Screen_Cursor(menus[2].buttons[2].size)) {
               Increment(options.hairColor, Character_Options::Color.size());
               return;
             }
@@ -294,20 +294,20 @@ namespace Character_Create {
     Menu mainMenu = Create_Menu(Char_Select_Menu, -1, 1.0f, 1.75f, horizontal);
     menus.emplace_back(mainMenu);
 
-    std::vector<const char *> Hair_Menu = {"prev", "next"};
+    std::vector<const char *> Hair_Menu = {"prev", "style", "next"};
     Menu hairStyle = Create_Menu(Hair_Menu, -1, 1.0f, 0.5f, horizontal);
     menus.emplace_back(hairStyle);
 
-    std::vector<const char *> Hair_Color_Menu = {"prev", "next"};
+    std::vector<const char *> Hair_Color_Menu = {"prev", "color", "next"};
     Menu hairColor = Create_Menu(Hair_Color_Menu, -1, 1.0f, 0.75f, horizontal);
     menus.emplace_back(hairColor);
 
     std::vector<const char *> Gender_Menu = {"male", "female"};
-    Menu gender = Create_Menu(Gender_Menu, options.sex, 1.0f, 1.0f, horizontal);
+    Menu gender = Create_Menu(Gender_Menu, options.sex, 0.1f, 1.25f, horizontal);
     menus.emplace_back(gender);
 
     std::vector<const char *> Species_Menu = {"orc", "Zombie", "skeleton", "demon", "fleshbeast", "elves", "euro", "asian", "indian", "african"};
-    Menu species = Create_Menu(Species_Menu, options.species, 0.5f, 0.5f, vertical);
+    Menu species = Create_Menu(Species_Menu, options.species, 0.1f, 0.1f, vertical);
     menus.emplace_back(species);
 
     toggleMenu = true;

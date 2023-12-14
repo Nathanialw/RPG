@@ -21,22 +21,22 @@ namespace Texture_Packer_Item {
         std::string equip_type = "";
     };
 
-    std::string Random_Item(std::string &slot, std::string &equip_type, std::string item_name) {
+    std::string Random_Item(std::string &slot, Item_Component::Unit_Equip_Type &equip_type, std::string item_name) {
         if (item_name == "random") {
-          return SQLite_Item_Data::Items.at(equip_type).at(SQLite_Item_Data::Get_Item_Type(slot))[rand() % SQLite_Item_Data::Items.at(equip_type).at(SQLite_Item_Data::Get_Item_Type(slot)).size()];
+          return SQLite_Item_Data::Items.at(equip_type).at(Item_Component::Get_Item_Type(slot))[rand() % SQLite_Item_Data::Items.at(equip_type).at(Item_Component::Get_Item_Type(slot)).size()];
         }
         return item_name;
     }
 
-    Data Get_Sprite_Sheet(std::string &slot, std::string &equip_type, std::string &item_name) {// needs to search for  a specific row that I can input in the arguments
+    Data Get_Sprite_Sheet(std::string &slot, Item_Component::Unit_Equip_Type &equip_type, std::string &item_name) {// needs to search for  a specific row that I can input in the arguments
         std::string name;
         //get a random entry from item vector
         //need to know the UNIT_TYPE to get and the SLOT and that returns a vector of strings of the items
 
-        if (SQLite_Item_Data::Items.at(equip_type).contains(SQLite_Item_Data::Get_Item_Type(slot)) && SQLite_Item_Data::Items.at(equip_type).at(SQLite_Item_Data::Get_Item_Type(slot)).size() != 0) {
+        if (SQLite_Item_Data::Items.at(equip_type).contains(Item_Component::Get_Item_Type(slot)) && SQLite_Item_Data::Items.at(equip_type).at(Item_Component::Get_Item_Type(slot)).size() != 0) {
             name = Random_Item(slot, equip_type, item_name);
         } else {
-            Utilities::Log("Get_Sprite_Sheet(std::string &slot) item unit_Type: " + equip_type + " - slot: " + slot + " - not found for the given unit_type and slot");
+            Utilities::Log("Get_Sprite_Sheet(std::string &slot) item unit_Type:  - slot: " + slot + " - not found for the given unit_type and slot");
             Data data;
             return data;
         }
@@ -98,7 +98,7 @@ namespace Texture_Packer_Item {
         std::string index;
     };
 
-    Item_Data_And_Index TexturePacker_Import_Item(std::string &itemType, std::string &equip_type, std::string item_name) {
+    Item_Data_And_Index TexturePacker_Import_Item(std::string &itemType, Item_Component::Unit_Equip_Type &equip_type, std::string item_name) {
 
         ///get path from db
         Data dbData = Get_Sprite_Sheet(itemType, equip_type, item_name);

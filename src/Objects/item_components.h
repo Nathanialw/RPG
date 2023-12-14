@@ -32,6 +32,129 @@ namespace Item_Component {
     offhand
   };
 
+  Item_Type Get_Item_Type(std::string &db_type) {
+    if (db_type == "back") {
+      return Item_Type::back;
+    }
+    else if (db_type == "mainhand") {
+      return Item_Type::mainhand;
+    }
+    else if (db_type == "amulet") {
+      return Item_Type::amulet;
+    }
+    else if (db_type == "face") {
+      return Item_Type::face;
+    }
+    else if (db_type == "belt") {
+      return Item_Type::belt;
+    }
+    else if (db_type == "boots") {
+      return Item_Type::boots;
+    }
+    else if (db_type == "ranged") {
+      return Item_Type::ranged;
+    }
+    else if (db_type == "chest") {
+      return Item_Type::chest;
+    }
+    else if (db_type == "clothes") {
+      return Item_Type::clothes;
+    }
+    else if (db_type == "crown") {
+      return Item_Type::crown;
+    }
+    else if (db_type == "dirt") {
+      return Item_Type::dirt;
+    }
+    else if (db_type == "gloves") {
+      return Item_Type::gloves;
+    }
+    else if (db_type == "hair") {
+      return Item_Type::hair;
+    }
+    else if (db_type == "helm") {
+      return Item_Type::helm;
+    }
+    else if (db_type == "hood") {
+      return Item_Type::hood;
+    }
+    else if (db_type == "kilt") {
+      return Item_Type::kilt;
+    }
+    else if (db_type == "legs") {
+      return Item_Type::legs;
+    }
+    else if (db_type == "ring") {
+      return Item_Type::ring;
+    }
+    else if (db_type == "offhand") {
+      return Item_Type::offhand;
+    }
+    else if (db_type == "shins") {
+      return Item_Type::shins;
+    }
+    else if (db_type == "shoulders") {
+      return Item_Type::shoulders;
+    }
+    else if (db_type == "wrist") {
+      return Item_Type::wrist;
+    }
+    else if (db_type == "jewelry") {
+      return Item_Type::jewelry;
+    }
+    else {
+      Utilities::Log("Get_Item_Type(std::string &db_type) passthrough error");
+      return Item_Type::mainhand;
+    }
+  }
+  
+  
+  enum class Unit_Equip_Type {
+    Medieval_Underdeep_Dwarves_Male,
+    RTP_female,
+    RTP_male,
+    classes_female,
+    classes_male,
+    goblin,
+    medieval_human_female,
+    medieval_human_male,
+    zombie,
+    none
+  };
+
+  Unit_Equip_Type Get_Unit_Equip_Type(std::string &db_type) {
+    if (db_type == "Medieval_Underdeep_Dwarves_Male") {
+      return Unit_Equip_Type::Medieval_Underdeep_Dwarves_Male;
+    }
+    else if (db_type == "RTP_female") {
+      return Unit_Equip_Type::RTP_female;
+    }
+    else if (db_type == "RTP_male") {
+      return Unit_Equip_Type::RTP_male;
+    }
+    else if (db_type == "classes_female") {
+      return Unit_Equip_Type::classes_female;
+    }
+    else if (db_type == "classes_male") {
+      return Unit_Equip_Type::classes_male;
+    }
+    else if (db_type == "goblin") {
+      return Unit_Equip_Type::goblin;
+    }
+    else if (db_type == "medieval_human_female") {
+      return Unit_Equip_Type::medieval_human_female;
+    }
+    else if (db_type == "medieval_human_male") {
+      return Unit_Equip_Type::medieval_human_male;
+    }
+    else if (db_type == "zombie") {
+      return Unit_Equip_Type::zombie;
+    }
+    else {
+      return Unit_Equip_Type::none;
+    }
+  }
+  
   struct Item_Pickup {
 
   };
@@ -42,7 +165,7 @@ namespace Item_Component {
   entt::entity emptyEquipSlot;
 
   struct Equipment {
-    std::string type = "none";
+    Unit_Equip_Type type = Unit_Equip_Type::none;
     std::map<Item_Type, entt::entity>equippedItems{
       { Item_Type::amulet, emptyEquipSlot },
       { Item_Type::back, emptyEquipSlot },

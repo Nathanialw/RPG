@@ -2,6 +2,7 @@
 #include "string"
 #include "unordered_map"
 #include "vector"
+#include "SQLite_item_data.h"
 
 namespace Character_Options {
 
@@ -64,7 +65,7 @@ namespace Character_Options {
     euro,
     asian,
     indian,
-    african,
+    african
   };
 
   struct Race {

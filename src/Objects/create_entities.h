@@ -320,8 +320,9 @@ namespace Create_Entities {
         relationships.races[i] = raceData[i + 1];
       }
 
-      if (data.equip_type != "none") {
-        zone.emplace<Item_Component::Equipment>(entity, data.equip_type);
+      Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
+      if (equip_type != Item_Component::Unit_Equip_Type::none) {
+        zone.emplace<Item_Component::Equipment>(entity, equip_type);
         zone.emplace<Rendering_Components::Equipment_Sprites>(entity);
       }
 
