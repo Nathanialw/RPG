@@ -1,6 +1,6 @@
 #pragma once
-#include "vector"
 #include "SDL2/SDL.h"
+#include "vector"
 #include <map>
 
 #include "components.h"
@@ -13,13 +13,11 @@ namespace Rendering_Components {
   };
 
   struct Background {
-
   };
 
   struct Foreground {
-
   };
-  
+
   struct Sprite_Offset {
     float x;
     float y;
@@ -44,20 +42,30 @@ namespace Rendering_Components {
     u_int8_t b;
   };
 
+  struct Portait {
+    SDL_Texture *texture = NULL;
+    SDL_FRect position = {};
+  };
+
+  struct Body {
+    SDL_Texture *texture = NULL;
+    SDL_FRect position = {};
+  };
+
   /// one per item, but they can point to the same texture
 
   struct Sheet_Data {
-    SDL_Texture* texture = NULL;
+    SDL_Texture *texture = NULL;
     std::vector<Sprite_Sheet_Data> frameList;
     /// start frame by state, number of frames per state.
-    std::unordered_map<uint8_t , Frame_Data_Packer> actionFrameData;
+    std::unordered_map<uint8_t, Frame_Data_Packer> actionFrameData;
     ///store the frame duration for each frame of each state, probably not worth it
     //        std::unordered_map<Component::Action_State, std::vector<int>> Frame_Speed_By_Action;
   };
 
   struct Sheet_Data_Flare {
-    SDL_Texture* texture = NULL;		//texture
-    SDL_Color color = { 255, 255, 255 };
+    SDL_Texture *texture = NULL;//texture
+    SDL_Color color = {255, 255, 255};
     int sheetWidth = 0;
     int spriteWidth = 0;
     int spriteHeight = 0;
@@ -68,16 +76,15 @@ namespace Rendering_Components {
     std::unordered_map<uint8_t, Frame_Data_Packer> actionFrameData;
 
     // find the frame data from the index of the building
-      
   };
 
   struct Mount_Sprite {
-    std::unordered_map<std::string, Sheet_Data>* mount = NULL;
+    std::unordered_map<std::string, Sheet_Data> *mount = NULL;
     std::string front_name = "default";
   };
 
   struct Equip_Slot_Data {
-    std::unordered_map<std::string, Sheet_Data>* ItemSheetData = NULL;
+    std::unordered_map<std::string, Sheet_Data> *ItemSheetData = NULL;
     //name is the index into the map that stores the data
     std::string name = "empty";
     SDL_Color color = {255, 255, 255};
@@ -89,22 +96,21 @@ namespace Rendering_Components {
     Equip_Slot_Data sheet[30];
   };
 
-
   ///component for the unit
   struct Sprite_Sheet_Info {
     std::string type = "default";
 
     //        a union can how different types of data in the same memory address
     //        union {
-    std::unordered_map<std::string, Sheet_Data_Flare>* flareSpritesheet;
-    std::unordered_map<std::string, Sheet_Data>* sheetData;
+    std::unordered_map<std::string, Sheet_Data_Flare> *flareSpritesheet;
+    std::unordered_map<std::string, Sheet_Data> *sheetData;
     //        };
 
     std::string sheet_name = "default";
 
-    std::unordered_map<std::string, Sheet_Data>* mount = NULL;
+    std::unordered_map<std::string, Sheet_Data> *mount = NULL;
     std::string mount_name = "unmounted";
-    SDL_Color color = { 255, 255, 255 };
+    SDL_Color color = {255, 255, 255};
 
     //        Equip_Slot_Data equipmentSheets[30];
 
@@ -116,4 +122,4 @@ namespace Rendering_Components {
     //        int currentFrame = 0;
     //        Frame finalFrame = normalFrame;
   };
-}
+}// namespace Rendering_Components

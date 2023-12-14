@@ -264,7 +264,7 @@ namespace Character_Stats {
 
   void Equip_Units(entt::registry &zone, Character_Options::Customization &options) {
     std::vector<std::string> gear = Get_Sex(options.sex);
-    std::vector<std::string> hair = Get_Hair(options.sex);
+    std::vector<Item_Component::Item> hair = Get_Hair(options.sex);
     auto view = zone.view<Item_Component::Equipment, Component::Position>();
     for (auto unit: view) {
       auto &equipment = view.get<Item_Component::Equipment>(unit);
@@ -273,7 +273,7 @@ namespace Character_Stats {
       equipment.equippedItems[Item_Type::mainhand] = Items::Create_And_Equip_Weapon(position, equipment.type, gear[0]);
       equipment.equippedItems[Item_Type::chest] = Items::Create_And_Equip_Armor(position, Item_Type::chest, equipment.type, gear[1], Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::legs] = Items::Create_And_Equip_Armor(position, Item_Type::legs, equipment.type, gear[2], Character_Options::Color[0]);
-      equipment.equippedItems[Item_Type::hair] = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type, hair[options.hairStyle], Character_Options::Color[options.hairColor]);
+      equipment.equippedItems[Item_Type::hair] = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type, hair[options.hairStyle].name, Character_Options::Color[options.hairColor]);
 
       zone.emplace<Item_Component::Item_Equip>(unit);
     }
@@ -296,8 +296,8 @@ namespace Character_Stats {
   }
 
   void Init_Player(entt::registry &zone, Character_Options::Customization &options) {
-    Character_Options::Race race = Character_Options::Get_Gender(options);
-    Create_Entities::Create_Entity(zone, 73188, 36964, race.templateName, "unit", false, race.path, true);
+    db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
+    Create_Entities::Create_Entity(zone, 73188, 36964, "unit", false, data, true);
     Equip_Units(zone, options);
     Init_Player_Stats(zone);
   }

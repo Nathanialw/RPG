@@ -224,11 +224,12 @@ namespace Create_Entities {
 
   Procedural_Components::Seed seed;
 
-  void Create_Entity(entt::registry &zone, float x, float y, std::string templateName, std::string entity_class, bool is_random, std::string &imgpath, bool player) {
+  void Create_Entity(entt::registry &zone, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player) {
     auto entity = zone.create();
     Entity_Loader::Data data;
     int unit_ID = 0;
-    SDL_Texture *texture = NULL;
+
+    Graphics::Texture texture;
     //std::cout << "loading Unit: " << templateName << std::endl;
 
     //get the entity_class from the template in the tiled map
@@ -236,13 +237,15 @@ namespace Create_Entities {
     //if it is random, grab a random entry of the same class from the DB table, including the key name
     //
     //scaling only applies to trees
-    imgpath = "assets/" + imgpath;
+    imgPaths.imgPath = "assets/" + imgPaths.imgPath;
+    imgPaths.portraitPath = "assets/" + imgPaths.portraitPath;
+    imgPaths.bodyPath = "assets/" + imgPaths.bodyPath;
     if (is_random == 1) {
-      templateName = Entity_Loader::Get_All_Of_Class(entity_class);
+      imgPaths.name = Entity_Loader::Get_All_Of_Class(entity_class);
       //check if the random name has a tamplate ID, if it doesn't revert to default name
-      unit_ID = Get_Existing_Template_ID(templateName, entity_class);
-      texture = Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
-      data = Entity_Loader::parse_data(templateName);//
+      unit_ID = Get_Existing_Template_ID(imgPaths.name, entity_class);
+      texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
+      data = Entity_Loader::parse_data(imgPaths.name);//
       ////randomEntity must be converted into a std::string//
       //auto& scale = zone.get<Component::Scale>(entity);
       //auto& radius = zone.get<Component::Radius>(entity);//
@@ -250,28 +253,28 @@ namespace Create_Entities {
       //int rand_scale = 0.5;
       //scale.scale = rand_scale;
     } else {
-      unit_ID = Check_For_Template_ID(templateName);
-      texture = Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
-      data = Entity_Loader::parse_data(templateName);
-    }
-
-    if (texture == NULL) {
-      std::cout << "texture is NULL for: " << templateName << std::endl;
+      unit_ID = Check_For_Template_ID(imgPaths.name);
+      texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
+      data = Entity_Loader::parse_data(imgPaths.name);
     }
 
     SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
-    std::string sheetname = Entity_Loader::Get_Sprite_Sheet(templateName);
+    std::string sheetname = Entity_Loader::Get_Sprite_Sheet(imgPaths.name);
     std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> *flareSheetData = NULL;
     std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
 
     //stores the index for a static frame in spritesheet xml
     if (sheetname == "texture_packer") {
       ///run texture packer
-      packerframeData = Texture_Packer::TexturePacker_Import(templateName, sheetname, texture);
+      packerframeData = Texture_Packer::TexturePacker_Import(imgPaths.name, sheetname, texture.texture);
     } else {
       ///get sheet data for new pointer to map
       SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
-      flareSheetData = Populate_Flare_SpriteSheet(templateName, sheetDataFlare, texture);
+      flareSheetData = Populate_Flare_SpriteSheet(imgPaths.name, sheetDataFlare, texture.texture);
+    }
+
+    if (texture.texture == NULL) {
+      std::cout << "texture is NULL for: " << imgPaths.name << std::endl;
     }
 
     //Add shared components
@@ -301,11 +304,11 @@ namespace Create_Entities {
     //if RTP_pieces type
     if (packerframeData) {
       sprite.sheetData = packerframeData;
-      sprite.sheet_name = templateName;
+      sprite.sheet_name = imgPaths.name;
       sprite.type = "RPG_Tools";
     } else {
       sprite.flareSpritesheet = flareSheetData;
-      sprite.sheet_name = templateName;
+      sprite.sheet_name = imgPaths.name;
       sprite.type = sheetDataFlare.sheet_type;
     }
 

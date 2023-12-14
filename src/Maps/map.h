@@ -175,11 +175,13 @@ namespace Maps {
 
                 std::string texture = templateTilesets.at(tilesetName).getImagePath();
                 std::string temptexture = "assets/" + texture;
+                db::Unit_Data data = {templateName, imgPath, "", ""};
+
                 // Utilities::Log(texture);
 
                 if (!Create_Entities::PVG_Building(World::zone, x, y, x, y, templateName, tilesetIndex, aabb, pointVecs, line)) {
                   if (!Create_Entities::Polygon_Building(World::zone, x, y, templateName, entity_class, texture, aabb, pointVecs, line, offset)) {
-                    Create_Entities::Create_Entity(World::zone, x, y, templateName, entity_class, is_random, texture, player);
+                    Create_Entities::Create_Entity(World::zone, x, y, entity_class, is_random, data, player);
                   }
                 }
               }
@@ -221,11 +223,12 @@ namespace Maps {
               Utilities::Log(templateName);
               bool player = false;
               bool is_random = false;
+              db::Unit_Data data = {templateName, imgPath, "", ""};
 
               // imgPath is the location of the image used in Tiled, not useful for collections of images, the correct image path is derived later
               if (!Create_Entities::PVG_Building(World::zone, x, y, x, y, templateName, id, aabb, pointVecs, line)) {
                 if (!Create_Entities::Polygon_Building(World::zone, x, y, templateName, entity_class, imgPath, aabb, pointVecs, line, offset)) {
-                  Create_Entities::Create_Entity(World::zone, x, y, templateName, entity_class, is_random, imgPath, player);
+                  Create_Entities::Create_Entity(World::zone, x, y, entity_class, is_random, data, player);
                 }
               }
             }

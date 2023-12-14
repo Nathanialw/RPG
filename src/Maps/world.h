@@ -253,7 +253,7 @@ namespace World {
 
           int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::units["wolves"].size() - 1, seed);
           db::Unit_Data data = Game_Objects_Lists::units["wolves"][n];
-          Create_Entities::Create_Entity(World::zone, (i * size.width) + x, (j * size.height) + y, data.name, "", false, data.imgPath, false);
+          Create_Entities::Create_Entity(World::zone, (i * size.width) + x, (j * size.height) + y, "", false, data, false);
             numUnits++;
         }
       }

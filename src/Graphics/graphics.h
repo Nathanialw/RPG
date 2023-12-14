@@ -41,6 +41,14 @@ namespace Graphics {
   const int numberOfTextures = 200;
   int texture_ID = 0;
   std::array<SDL_Texture *, numberOfTextures> unitTextures;
+  std::array<SDL_Texture *, numberOfTextures> unitPortaits;
+  std::array<SDL_Texture *, numberOfTextures> unitBodies;
+
+  struct Texture {
+    SDL_Texture *texture = NULL;
+    SDL_Texture *portrait = NULL;
+    SDL_Texture *body = NULL;
+  };
 
   //where the actual texture is stored
   std::map<std::string, SDL_Texture *> pTexture;
@@ -149,7 +157,8 @@ namespace Graphics {
 
   //both unitID and filepath are stored in tiled map object
   static void Load_Texture(int &unitID, const char *filepath) {
-    filepath = filepath;
+    unitTextures[unitID] = createTexture(filepath);
+    unitTextures[unitID] = createTexture(filepath);
     unitTextures[unitID] = createTexture(filepath);
     if (unitTextures[unitID] == NULL) {
       std::cout << "Load_Texture() failed to load  texture from file: " << filepath << std::endl;
@@ -158,23 +167,26 @@ namespace Graphics {
   }
 
   //when creating the game objet
-  SDL_Texture *Create_Game_Object(int &unitID, const char *filepath) {
+  Texture Create_Game_Object(int &unitID, const char *filepath) {
+    Texture texture;
     if (unitTextures[unitID] == NULL) {
       Load_Texture(unitID, filepath);
-      return unitTextures[unitID];
-      if (unitTextures[unitID] == NULL) {
+      texture.texture = unitTextures[unitID];
+      if (texture.texture == NULL) {
         std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
-        return NULL;
+        return texture;
       } else {
-        return unitTextures[unitID];
+        texture.texture = unitTextures[unitID];
+        return texture;
         //	std::cout << "loaded from file: " << filepath << std::endl;
       }
     } else {
-      return unitTextures[unitID];
+      texture.texture = unitTextures[unitID];
+      return texture;
       //std::cout << "already loaded: " << filepath << std::endl;
       //unitTextures[unitID];
     }
-    return NULL;
+    return texture;
     //to render it jsut needs access to the texture array and the unitID
   }
 

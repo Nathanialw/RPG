@@ -94,27 +94,64 @@ namespace Entity_Loader {
     db::Unit_Data data;
     const unsigned char *name;
     const unsigned char *imgPath;
+    const unsigned char *facePath;
+    const unsigned char *bodyPath;
     sqlite3_stmt *stmt;
     char buf[300];
 
-    const char *jj = "SELECT name, image_path FROM unit_data WHERE race = ";
+    const char *jj = "SELECT name, image_path, face_path, body_path FROM unit_data WHERE race = ";
     strcpy(buf, jj);
     strcat(buf, text.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
-      const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = db::Convert_Char("name", name);
 
       imgPath = sqlite3_column_text(stmt, 1);
-      const char *d = (const char *) imgPath;
-      std::string retpath = std::string(reinterpret_cast< const char *> (d));
+      std::string img_path = db::Convert_Char("image_path", imgPath);
 
-      data = {retname, retpath};
+      facePath = sqlite3_column_text(stmt, 2);
+      std::string face_path = db::Convert_Char("face_path", facePath);
+
+      bodyPath = sqlite3_column_text(stmt, 3);
+      std::string body_path = db::Convert_Char("body_path", bodyPath);
+
+      data = {retname, img_path, face_path, body_path};
       db_name.push_back(data);
     }
     db_name.shrink_to_fit();
     return db_name;
+  }
+
+  db::Unit_Data Get_Character_Create(std::string name) {// needs to search for  a specific row that I can input in the arguments
+    //check if the name exists??
+    std::string text = db::Append_Quotes(name);
+    db::Unit_Data data;
+
+    const unsigned char *imgPath;
+    const unsigned char *facePath;
+    const unsigned char *bodyPath;
+    sqlite3_stmt *stmt;
+    char buf[300];
+
+    const char *jj = "SELECT image_path, face_path, body_path FROM unit_data WHERE text = ";
+    strcpy(buf, jj);
+    strcat(buf, text.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      imgPath = sqlite3_column_text(stmt, 0);
+      std::string img_path = db::Convert_Char("image_path", imgPath);
+
+      facePath = sqlite3_column_text(stmt, 1);
+      std::string face_path = db::Convert_Char("face_path", facePath);
+
+      bodyPath = sqlite3_column_text(stmt, 2);
+      std::string body_path = db::Convert_Char("body_path", bodyPath);
+
+      return {name, img_path, face_path, body_path};
+    }
+    Utilities::Log("db::Get_Character_Create() " + name + " from DB NULL value, passthrough error");
+    return {"", "", "", ""};
   }
 
   std::vector<int> Get_Race_Relationsips(std::string race) {// needs to search for  a specific row that I can input in the arguments
@@ -463,6 +500,7 @@ namespace Entity_Loader {
       const char *s = (const char *) sheet;
       unit_name = std::string(reinterpret_cast< const char *> (s));
     }
+
     return unit_name;
   }
 

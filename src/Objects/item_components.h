@@ -104,7 +104,7 @@ namespace Item_Component {
       return Item_Type::jewelry;
     }
     else {
-      Utilities::Log("Get_Item_Type(std::string &db_type) passthrough error");
+      Utilities::Log("Get_Item_Type(std::string &db_type) " + db_type + " passthrough error");
       return Item_Type::mainhand;
     }
   }
@@ -194,6 +194,12 @@ namespace Item_Component {
     };
   };
 
+  struct Item {
+    std::string name;
+    std::string face_pngPath;
+    std::string body_pngPath;
+    Unit_Equip_Type equip_type;
+  };
 
   enum class Armor_Type {
     cloth,

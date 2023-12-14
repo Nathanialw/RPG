@@ -12,12 +12,12 @@ namespace Character_Options {
   std::vector<std::string> Gear_Female = {"Female_Rogue_DaggerMain",
                                           "Female_Druid_Top", "Female_Scout_Bottom"};
 
-  enum Sex {
+  enum class Sex {
     male,
     female
   };
 
-  enum Species {
+  enum class Species {
     orc,
     zombie,
     skeleton,
@@ -30,35 +30,30 @@ namespace Character_Options {
     african
   };
 
-  struct Race {
-    std::string templateName = "Male_DaemonKnight";
-    std::string path = "sprites/units/2nd_cast_classes/races/demons/male/Male_DaemonKnight.png";
+  std::vector<std::string> Species_Male = {
+      {"Male_Orc_1"},
+      {"Male_Walker"},
+      {"Male_Skeleton"},
+      {"Male_DaemonKnight"},
+      {"Male_Meat_Zombie"},
+      {"Male_ArcherElven"},
+      {"Male_Archer"},
+      {"Male_Assassin"},
+      {"Male_Commoner_1"},
+      {"Male_WitchHunter"},
   };
 
-  std::vector<Race> Species_Male = {
-      {"Male_Orc_1", "sprites/units/2nd_cast_classes/races/orcs/male/Male_Orc_1.png"},
-      {"Male_Walker", "sprites/units/2nd_cast_classes/races/zombies/male/Male_Walker.png"},
-      {"Male_Skeleton", "sprites/units/2nd_cast_classes/races/skeletons/male/Male_Skeleton.png"},
-      {"Male_DaemonKnight", "sprites/units/2nd_cast_classes/races/demons/male/Male_DaemonKnight.png"},
-      {"Male_Meat_Zombie", "sprites/units/2nd_cast_classes/races/fleshbeast/male/Male_Meat_Zombie.png"},
-      {"Male_ArcherElven", "sprites/units/2nd_cast_classes/races/elves/male/Male_ArcherElven.png"},
-      {"Male_Archer", "sprites/units/2nd_cast_classes/races/humans/male/Male_Archer.png"},
-      {"Male_Assassin", "sprites/units/2nd_cast_classes/races/humans/male/Male_Assassin.png"},
-      {"Male_Commoner_1", "sprites/units/2nd_cast_classes/races/humans/male/Male_Commoner_1.png"},
-      {"Male_WitchHunter", "sprites/units/2nd_cast_classes/races/humans/male/Male_WitchHunter.png"},
-  };
-
-  std::vector<Race> Species_Female = {
-      {"Female_Orc_1", "sprites/units/2nd_cast_classes/races/orcs/female/Female_Orc_1.png"},
-      {"Female_Zombie", "sprites/units/2nd_cast_classes/races/zombies/female/Female_Zombie.png"},
-      {"none", ""},
-      {"none", ""},
-      {"none", ""},
-      {"Female_ArcherElven", "sprites/units/2nd_cast_classes/races/elves/female/Female_ArcherElven.png"},
-      {"Female_Archer", "sprites/units/2nd_cast_classes/races/humans/female/Female_Archer.png"},
-      {"Female_Assassin", "sprites/units/2nd_cast_classes/races/humans/female/Female_Assassin.png"},
-      {"Female_Bard", "sprites/units/2nd_cast_classes/races/humans/female/Female_Bard.png"},
-      {"Female_WitchHunter", "sprites/units/2nd_cast_classes/races/humans/female/Female_WitchHunter.png"},
+  std::vector<std::string> Species_Female = {
+      {"Female_Orc_1"},
+      {"Female_Zombie"},
+      {"none"},
+      {"none"},
+      {"none"},
+      {"Female_ArcherElven"},
+      {"Female_Archer"},
+      {"Female_Assassin"},
+      {"Female_Bard"},
+      {"Female_WitchHunter"},
   };
 
   std::vector<SDL_Color> Color = {
@@ -75,24 +70,64 @@ namespace Character_Options {
     Medieval
   };
 
+  //body image
+  struct Images {
+    std::vector<SDL_Texture *> species;
+    std::vector<SDL_Texture *> hairStyles;
+    SDL_Texture * chest = NULL;
+    SDL_Texture * legs = NULL;
+    SDL_Texture * weapon = NULL;
+  };
+  Images genderImages[2];
+
+  void Load_Start_Character_Images() {
+
+    for (int i = 0; i < Species_Female.size(); ++i) {
+      genderImages[(int) Sex::female].species.emplace_back(Graphics::createTexture(("assets/" + Entity_Loader::Get_Character_Create(Species_Female[i]).bodyPath).c_str()));
+    }
+    for (int i = 0; i < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair].size(); ++i) {
+      genderImages[(int)Sex::female].hairStyles.emplace_back(Graphics::createTexture(("assets/" + SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair][i].body_pngPath).c_str()));
+    }
+    genderImages[(int)Sex::female].weapon = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Female[0]).body_pngPath).c_str());
+    genderImages[(int)Sex::female].chest = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Female[1]).body_pngPath).c_str());
+    genderImages[(int)Sex::female].legs = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Female[2]).body_pngPath).c_str());
+
+
+    for (int i = 0; i < Species_Male.size(); ++i) {
+      genderImages[(int) Sex::male].species.emplace_back(Graphics::createTexture(Entity_Loader::Get_Character_Create(Species_Male[i]).bodyPath.c_str()));
+    }
+    for (int i = 0; i < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair].size(); ++i) {
+      genderImages[(int)Sex::male].hairStyles.emplace_back(Graphics::createTexture(("assets/" + SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair][i].body_pngPath).c_str()));
+    }
+    genderImages[(int) Sex::male].weapon = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Male[0]).body_pngPath).c_str());
+    genderImages[(int) Sex::male].chest = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Male[1]).body_pngPath).c_str());
+    genderImages[(int) Sex::male].legs = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Male[2]).body_pngPath).c_str());
+
+
+
+    //female gear
+
+    //male gear
+  }
+
+
   struct Customization {
     bool success = true;
-    Sex sex = male;
-//    Cast cast = Classes;
-    Species species = euro;
+    Sex sex = Sex::male;
+    Species species = Species::euro;
     int hairStyle = 0;
     int hairColor = 1;
   };
 
   std::vector<std::string> Get_Sex(Sex sex) {
-    if (sex == male) {
+    if (sex == Sex::male) {
       return Gear_Male;
     }
     return Gear_Female;
   }
 
-  std::vector<std::string> Get_Hair(Sex sex) {
-    if (sex == male) {
+  std::vector<Item_Component::Item> Get_Hair(Sex sex) {
+    if (sex == Sex::male) {
       std::cout << SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair].size() << std::endl;
       return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair];
     }
@@ -100,23 +135,17 @@ namespace Character_Options {
     return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair];
   }
 
-  std::vector<Race> Get_Race(Sex sex) {
-    if (sex == male) {
+  std::vector<std::string> Get_Race(Sex sex) {
+    if (sex == Sex::male) {
       return Species_Male;
     }
     return Species_Female;
   }
 
-  Race Get_Gender(Character_Options::Customization &options) {
-    Race race;
-    if (options.sex == Character_Options::male) {
-      race.path = Species_Male[options.species].path;
-      race.templateName = Species_Male[options.species].templateName;
-      return race;
+  std::string Get_Character(Character_Options::Customization &options) {
+    if (options.sex == Character_Options::Sex::male) {
+      return Species_Male[(int)options.species];
     }
-
-    race.path = Species_Female[options.species].path;
-    race.templateName = Species_Female[options.species].templateName;
-    return race;
+    return Species_Female[(int)options.species];
   }
 }// namespace Character_Options
