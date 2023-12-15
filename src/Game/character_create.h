@@ -247,16 +247,61 @@ namespace Character_Create {
     }
   }
 
+  void Toggle_Menu(Menu &menu, Character_Options::Customization &options) {
+    for (int n = 0; n < menu.buttons.size(); n++) {
+      if (options.sex == Character_Options::Sex::female) {
+        if (n == 1) {
+          menu.buttons[n].selected = disable;
+        }
+        menu.buttons[n].backgroundTexture = nullptr;
+      }
+      else {
+        if (n == 1) {
+          menu.buttons[n].selected = selected;
+        }
+        else {
+          menu.buttons[n].backgroundTexture = Graphics::default_icon;
+        }
+      }
+    }
+  }
+
+  void Toggle_Binary_Menu(Menu &menu, Character_Options::Customization &options) {
+    if (options.sex == Character_Options::Sex::female) {
+      for (int n = 0; n < menu.buttons.size(); n++) {
+        menu.buttons[n].selected = disable;
+        menu.buttons[n].backgroundTexture = nullptr;
+      }
+    }
+    else {
+      menu.buttons[0].selected = selected;
+      menu.buttons[1].selected = selected;
+      menu.buttons[0].backgroundTexture = Graphics::default_icon;
+      menu.buttons[1].backgroundTexture = nullptr;
+    }
+  }
+
   void Set_Image(Menu &menu, Character_Options::Customization &options) {
     //unit
-//    menu.buttons[0].backgroundTexture = Character_Options::genderImages[(int)options.sex].species[(int)options.species];
+    menu.buttons[0].backgroundTexture = Character_Options::genderImages[(int)options.sex].species[(int)options.species];
 
     //hair
     menu.buttons[1].backgroundTexture = Character_Options::genderImages[(int)options.sex].legs;
     menu.buttons[2].backgroundTexture = Character_Options::genderImages[(int)options.sex].chest;
     menu.buttons[3].backgroundTexture = Character_Options::genderImages[(int)options.sex].weapon;
-    menu.buttons[4].backgroundTexture = Character_Options::genderImages[(int)options.sex].hairStyles[(int)options.hairStyle];
-    menu.buttons[4].color = Character_Options::Color[options.hairColor];
+    if(options.sex == Character_Options::Sex::male) {
+      //beard
+      menu.buttons[4].backgroundTexture = Character_Options::genderImages[(int) options.sex].beardStyles[(int) options.beard];
+      menu.buttons[4].color = Character_Options::Color[options.hairColor];
+      //horns
+      menu.buttons[5].backgroundTexture = Character_Options::genderImages[(int) options.sex].horns[options.horns];
+    }
+    else {
+      menu.buttons[4].backgroundTexture = NULL;
+      menu.buttons[5].backgroundTexture = NULL;
+    }
+    menu.buttons[6].backgroundTexture = Character_Options::genderImages[(int)options.sex].hairStyles[(int)options.hairStyle];
+    menu.buttons[6].color = Character_Options::Color[options.hairColor];
   }
 
   void Menus_Events(std::vector<Menu> &menus, Character_Options::Customization &options) {
@@ -283,69 +328,115 @@ namespace Character_Create {
               return;
             }
           }
-          //Hair Style
+          //Horns
           for (int k = 0; k < menus[1].buttons.size(); k++) {
-            if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[0].size)) {
+            for (int m = 0; m < menus[1].buttons.size(); m++) {
+              if (menus[1].buttons[m].selected != is_disabled) {
+                if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[0].size)) {
+                  Increment(options.horns, Character_Options::genderImages[(int)options.sex].horns.size());
+                  menus[1].buttons[1].backgroundTexture = nullptr;
+                  menus[1].buttons[0].backgroundTexture = Graphics::default_icon;
+                  Set_Image(menus[7], options);
+                  return;
+                }
+                if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[1].size)) {
+                  Decrement(options.horns, Character_Options::genderImages[(int)options.sex].horns.size());
+                  menus[1].buttons[1].backgroundTexture = Graphics::default_icon;
+                  menus[1].buttons[0].backgroundTexture = nullptr;
+                  Set_Image(menus[7], options);
+                  return;
+                }
+              }
+            }
+          }
+          //Beard Style
+          for (int k = 0; k < menus[2].buttons.size(); k++) {
+            if (menus[2].buttons[k].selected != is_disabled) {
+              if (Mouse::FRect_inside_Screen_Cursor(menus[2].buttons[0].size)) {
+                Decrement(options.beard, Character_Options::Get_facialHair(options.sex).size());
+                Set_Image(menus[7], options);
+                return;
+              }
+              if (Mouse::FRect_inside_Screen_Cursor(menus[2].buttons[2].size)) {
+                Increment(options.beard, Character_Options::Get_facialHair(options.sex).size());
+                Set_Image(menus[7], options);
+                return;
+              }
+            }
+          }
+          //Hair Style
+          for (int k = 0; k < menus[3].buttons.size(); k++) {
+            if (Mouse::FRect_inside_Screen_Cursor(menus[3].buttons[0].size)) {
               Decrement(options.hairStyle, Character_Options::Get_Hair(options.sex).size());
-              Utilities::Log(options.hairStyle);
-              Set_Image(menus[5], options);
+              Set_Image(menus[7], options);
               return;
             }
-            if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[2].size)) {
+            if (Mouse::FRect_inside_Screen_Cursor(menus[3].buttons[2].size)) {
               Increment(options.hairStyle, Character_Options::Get_Hair(options.sex).size());
-              Utilities::Log(options.hairStyle);
-              Set_Image(menus[5], options);
+              Set_Image(menus[7], options);
               return;
             }
           }
           //Hair Color
-          for (int l = 0; l < menus[2].buttons.size(); l++) {
-            if (Mouse::FRect_inside_Screen_Cursor(menus[2].buttons[0].size)) {
+          for (int l = 0; l < menus[4].buttons.size(); l++) {
+            if (Mouse::FRect_inside_Screen_Cursor(menus[4].buttons[0].size)) {
               Decrement(options.hairColor, Character_Options::Color.size());
               Utilities::Log(options.hairColor);
-              Set_Image(menus[5], options);
+              Set_Image(menus[7], options);
               return;
             }
-            if (Mouse::FRect_inside_Screen_Cursor(menus[2].buttons[2].size)) {
+            if (Mouse::FRect_inside_Screen_Cursor(menus[4].buttons[2].size)) {
               Increment(options.hairColor, Character_Options::Color.size());
               Utilities::Log(options.hairColor);
-              Set_Image(menus[5], options);
+              Set_Image(menus[7], options);
               return;
             }
           }
           //Gender
-          for (int m = 0; m < menus[3].buttons.size(); m++) {
-            if (Mouse::FRect_inside_Screen_Cursor(menus[3].buttons[0].size)) {
+          for (int m = 0; m < menus[5].buttons.size(); m++) {
+            if (Mouse::FRect_inside_Screen_Cursor(menus[5].buttons[0].size)) {
               options.sex = Character_Options::Sex::male;
-              menus[3].buttons[1].backgroundTexture = nullptr;
-              menus[3].buttons[0].backgroundTexture = Graphics::default_icon;
+              menus[5].buttons[1].backgroundTexture = nullptr;
+              menus[5].buttons[0].backgroundTexture = Graphics::default_icon;
               options.hairStyle = 0;
-              Update_Species_List(menus[4], options);
-              Set_Image(menus[5], options);
+              //enable horns
+              options.horns = 0;
+              Toggle_Binary_Menu(menus[1], options);
+              //enable beard
+              options.beard = 0;
+              Toggle_Menu(menus[2], options);
+              Update_Species_List(menus[6], options);
+              Set_Image(menus[7], options);
               return;
             }
-            if (Mouse::FRect_inside_Screen_Cursor(menus[3].buttons[1].size)) {
+            if (Mouse::FRect_inside_Screen_Cursor(menus[5].buttons[1].size)) {
               options.sex = Character_Options::Sex::female;
-              menus[3].buttons[1].backgroundTexture = Graphics::default_icon;
-              menus[3].buttons[0].backgroundTexture = nullptr;
+              menus[5].buttons[1].backgroundTexture = Graphics::default_icon;
+              menus[5].buttons[0].backgroundTexture = nullptr;
               options.hairStyle = 0;
-              Update_Species_List(menus[4], options);
-              Set_Image(menus[5], options);
+              options.beard = 0;
+              //disable horns
+              options.horns = 0;
+              Toggle_Binary_Menu(menus[1], options);
+              //disable beard
+              Toggle_Menu(menus[2], options);
+              Update_Species_List(menus[6], options);
+              Set_Image(menus[7], options);
               return;
             }
           }
           //Species
-          for (int m = 0; m < menus[4].buttons.size(); m++) {
-            if (Mouse::FRect_inside_Screen_Cursor(menus[4].buttons[m].size)) {
-              if (menus[4].buttons[m].selected != is_disabled) {
+          for (int m = 0; m < menus[6].buttons.size(); m++) {
+            if (Mouse::FRect_inside_Screen_Cursor(menus[6].buttons[m].size)) {
+              if (menus[6].buttons[m].selected != is_disabled) {
                 //clear all selected, quite hacky
-                for (int n = 0; n < menus[4].buttons.size(); n++) {
-                  menus[4].buttons[n].backgroundTexture = nullptr;
+                for (int n = 0; n < menus[6].buttons.size(); n++) {
+                  menus[6].buttons[n].backgroundTexture = nullptr;
                 }
 
                 options.species = (Character_Options::Species) m;
-                menus[4].buttons[(int)options.species].backgroundTexture = Graphics::default_icon;
-                Set_Image(menus[5], options);
+                menus[6].buttons[(int)options.species].backgroundTexture = Graphics::default_icon;
+                Set_Image(menus[7], options);
                 return;
               }
             }
@@ -370,31 +461,17 @@ namespace Character_Create {
     Character_Options::Load_Start_Character_Images();
     std::vector<Menu> menus;
 
-    std::vector<const char *> Char_Select_Menu = {"Start", "Exit"};
-    Menu mainMenu = Create_Menu(Char_Select_Menu, -2, 1.0f, 1.75f, horizontal);
-    menus.emplace_back(mainMenu);
-
-    std::vector<const char *> Hair_Menu = {" ", "Hair Style", " "};
-    Menu hairStyle = Create_Menu(Hair_Menu, -1, 0.1f, 1.70f, horizontal);
-    menus.emplace_back(hairStyle);
-
-    std::vector<const char *> Hair_Color_Menu = {" ", "Hair Color", " "};
-    Menu hairColor = Create_Menu(Hair_Color_Menu, -1, 0.1f, 1.55f, horizontal);
-    menus.emplace_back(hairColor);
-
-    std::vector<const char *> Gender_Menu = {"male", "female"};
-    Menu gender = Create_Menu(Gender_Menu, (int)options.sex, 0.1f, 1.85f, horizontal);
-    menus.emplace_back(gender);
-
-    std::vector<const char *> Species_Menu = {"orc", "Zombie", "skeleton", "demon", "fleshbeast", "elves", "euro", "asian", "indian", "african"};
-    Menu species = Create_Menu(Species_Menu, (int)options.species, 0.1f, 0.1f, vertical);
-    menus.emplace_back(species);
-
-    std::vector<const char *> Body_Image = {NULL, NULL, NULL, NULL, NULL};
-    Menu bodyImage = Create_Menu(Body_Image, 0, 1.0f, 0.50f, image);
-    menus.emplace_back(bodyImage);
+    menus.emplace_back(Create_Menu({"Start", "Exit"}, -2, 1.0f, 1.75f, horizontal));
+    menus.emplace_back(Create_Menu({"None", "Horns"}, 0, 0.1f, 1.45f, horizontal));
+    menus.emplace_back(Create_Menu({" ", "Beard Style", " "}, -1, 0.1f, 1.55f, horizontal));
+    menus.emplace_back(Create_Menu({" ", "Hair Style", " "}, -1, 0.1f, 1.65f, horizontal));
+    menus.emplace_back(Create_Menu({" ", "Hair Color", " "}, -1, 0.1f, 1.75f, horizontal));
+    menus.emplace_back(Create_Menu({"male", "female"}, (int)options.sex, 0.1f, 1.85f, horizontal));
+    menus.emplace_back(Create_Menu({"orc", "Zombie", "skeleton", "demon", "fleshbeast", "elves", "euro", "asian", "indian", "african"}, (int)options.species, 0.1f, 0.1f, vertical));
+    menus.emplace_back(Create_Menu({NULL, NULL, NULL, NULL, NULL, NULL, NULL}, 0, 1.0f, 0.50f, image));
 
     toggleMenu = true;
+    Set_Image(menus[7], options);
 
     while (toggleMenu) {
       Background_Image();

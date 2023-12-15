@@ -403,10 +403,11 @@ namespace Items {
     std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType, armorType, equip_type, item_name, color);
     if (itemName == "none") {
       World::zone.destroy(item_uID);
-      //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
+      Utilities::Log("Create_And_Equip_Armor() " + itemName + " no item in db, no item has been created");
       return Item_Component::emptyEquipSlot;
     } else {
       Create_Item1(item_uID, position, itemName, itemStats);
+      Utilities::Log("Create_And_Equip_Armor() " + itemName + " item has successfully been created");
       return item_uID;
     }
   }

@@ -264,7 +264,10 @@ namespace Character_Stats {
 
   void Equip_Units(entt::registry &zone, Character_Options::Customization &options) {
     std::vector<std::string> gear = Get_Sex(options.sex);
-    std::vector<Item_Component::Item> hair = Get_Hair(options.sex);
+    std::string hair = Get_Hair_Name(options);
+    std::string beard = Get_Beard_Name(options);
+    std::string horns = Get_Horn_Name(options);
+
     auto view = zone.view<Item_Component::Equipment, Component::Position>();
     for (auto unit: view) {
       auto &equipment = view.get<Item_Component::Equipment>(unit);
@@ -273,7 +276,9 @@ namespace Character_Stats {
       equipment.equippedItems[Item_Type::mainhand] = Items::Create_And_Equip_Weapon(position, equipment.type, gear[0]);
       equipment.equippedItems[Item_Type::chest] = Items::Create_And_Equip_Armor(position, Item_Type::chest, equipment.type, gear[1], Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::legs] = Items::Create_And_Equip_Armor(position, Item_Type::legs, equipment.type, gear[2], Character_Options::Color[0]);
-      equipment.equippedItems[Item_Type::hair] = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type, hair[options.hairStyle].name, Character_Options::Color[options.hairColor]);
+      equipment.equippedItems[Item_Type::hair] = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type, hair, Character_Options::Color[options.hairColor]);
+      equipment.equippedItems[Item_Type::facialHair] = Items::Create_And_Equip_Armor(position, Item_Type::facialHair, equipment.type, beard, Character_Options::Color[options.hairColor]);
+      equipment.equippedItems[Item_Type::horns] = Items::Create_And_Equip_Armor(position, Item_Type::facialHair, equipment.type, horns, Character_Options::Color[0]);
 
       zone.emplace<Item_Component::Item_Equip>(unit);
     }

@@ -18,6 +18,7 @@ namespace Item_Component {
     hair,
     gloves,
     ring,
+    facialHair,
     face,
     helm,
     crown,
@@ -30,6 +31,7 @@ namespace Item_Component {
     ranged,
     mainhand,
     offhand,
+    horns,
     size
   };
 
@@ -45,6 +47,9 @@ namespace Item_Component {
     }
     else if (db_type == "face") {
       return Item_Type::face;
+    }
+    else if (db_type == "facialHair") {
+      return Item_Type::facialHair;
     }
     else if (db_type == "belt") {
       return Item_Type::belt;
@@ -102,6 +107,9 @@ namespace Item_Component {
     }
     else if (db_type == "jewelry") {
       return Item_Type::jewelry;
+    }
+    else if (db_type == "horns") {
+      return Item_Type::horns;
     }
     else {
       Utilities::Log("Get_Item_Type(std::string &db_type) " + db_type + " passthrough error");

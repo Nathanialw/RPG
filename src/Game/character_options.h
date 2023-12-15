@@ -17,6 +17,11 @@ namespace Character_Options {
     female
   };
 
+  enum class Horns {
+    none,
+    horns
+  };
+
   enum class Species {
     orc,
     zombie,
@@ -74,6 +79,8 @@ namespace Character_Options {
   struct Images {
     std::vector<SDL_Texture *> species;
     std::vector<SDL_Texture *> hairStyles;
+    std::vector<SDL_Texture *> beardStyles;
+    std::vector<SDL_Texture *> horns;
     SDL_Texture * chest = NULL;
     SDL_Texture * legs = NULL;
     SDL_Texture * weapon = NULL;
@@ -88,17 +95,32 @@ namespace Character_Options {
     for (int i = 0; i < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair].size(); ++i) {
       genderImages[(int)Sex::female].hairStyles.emplace_back(Graphics::createTexture(("assets/" + SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair][i].body_pngPath).c_str()));
     }
+    genderImages[(int)Sex::female].hairStyles.emplace_back(nullptr);
+
     genderImages[(int)Sex::female].weapon = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Female[0]).body_pngPath).c_str());
     genderImages[(int)Sex::female].chest = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Female[1]).body_pngPath).c_str());
     genderImages[(int)Sex::female].legs = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Female[2]).body_pngPath).c_str());
 
 
     for (int i = 0; i < Species_Male.size(); ++i) {
-      genderImages[(int) Sex::male].species.emplace_back(Graphics::createTexture(Entity_Loader::Get_Character_Create(Species_Male[i]).bodyPath.c_str()));
+      genderImages[(int) Sex::male].species.emplace_back(Graphics::createTexture(("assets/" + Entity_Loader::Get_Character_Create(Species_Male[i]).bodyPath).c_str()));
     }
     for (int i = 0; i < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair].size(); ++i) {
       genderImages[(int)Sex::male].hairStyles.emplace_back(Graphics::createTexture(("assets/" + SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair][i].body_pngPath).c_str()));
     }
+    genderImages[(int)Sex::male].hairStyles.emplace_back(nullptr);
+
+    for (int i = 0; i < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::facialHair].size(); ++i) {
+      genderImages[(int)Sex::male].beardStyles.emplace_back(Graphics::createTexture(("assets/" + SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::facialHair][i].body_pngPath).c_str()));
+    }
+    genderImages[(int)Sex::male].beardStyles.emplace_back(nullptr);
+
+    genderImages[(int)Sex::male].horns.emplace_back(nullptr);
+    for (int i = 0; i < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns].size(); ++i) {
+      genderImages[(int)Sex::male].horns.emplace_back(Graphics::createTexture(("assets/" + SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns][i].body_pngPath).c_str()));
+    }
+
+
     genderImages[(int) Sex::male].weapon = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Male[0]).body_pngPath).c_str());
     genderImages[(int) Sex::male].chest = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Male[1]).body_pngPath).c_str());
     genderImages[(int) Sex::male].legs = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Male[2]).body_pngPath).c_str());
@@ -115,6 +137,8 @@ namespace Character_Options {
     bool success = true;
     Sex sex = Sex::male;
     Species species = Species::euro;
+    int horns = 0;
+    int beard = 0;
     int hairStyle = 0;
     int hairColor = 1;
   };
@@ -126,13 +150,52 @@ namespace Character_Options {
     return Gear_Female;
   }
 
-  std::vector<Item_Component::Item> Get_Hair(Sex sex) {
-    if (sex == Sex::male) {
-      std::cout << SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair].size() << std::endl;
-      return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair];
+  std::string Get_Horn_Name(Character_Options::Customization &options) {
+    if (options.sex == Sex::male) {
+      if (options.horns) {
+        return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns][options.beard].name;
+      }
     }
-    std::cout << SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair].size() << std::endl;
-    return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair];
+    return "none";
+  }
+
+  std::string Get_Hair_Name(Character_Options::Customization &options) {
+    if (options.sex == Sex::male) {
+      if ((int)options.hairStyle < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair].size()){
+        return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::hair][options.hairStyle].name;
+      }
+    }
+    else {
+      if ((int)options.hairStyle < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair].size()) {
+        return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair][options.hairStyle].name;
+      }
+    }
+    return "none";
+  }
+
+  std::string Get_Beard_Name(Character_Options::Customization &options) {
+    if (options.sex == Sex::male) {
+      if ((int)options.hairStyle < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::facialHair].size()){
+        return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::facialHair][options.beard].name;
+      }
+    }
+    return "none";
+  }
+
+  std::vector<SDL_Texture*> Get_Hair(Sex sex) {
+    if (sex == Sex::male) {
+      return genderImages[(int)Sex::male].hairStyles;
+    }
+    return genderImages[(int)Sex::female].hairStyles;
+  }
+
+  std::vector<SDL_Texture*> Get_facialHair(Sex sex) {
+    if (sex == Sex::male) {
+      return genderImages[(int)Sex::male].beardStyles;
+    }
+    Utilities::Log("Ladies don't have facial hair");
+    std::vector<SDL_Texture*> s;
+    return s;
   }
 
   std::vector<std::string> Get_Race(Sex sex) {

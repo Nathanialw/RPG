@@ -134,7 +134,7 @@ namespace Entity_Loader {
     sqlite3_stmt *stmt;
     char buf[300];
 
-    const char *jj = "SELECT image_path, face_path, body_path FROM unit_data WHERE text = ";
+    const char *jj = "SELECT image_path, face_path, body_path FROM unit_data WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, text.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
