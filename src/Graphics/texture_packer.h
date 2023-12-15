@@ -147,7 +147,7 @@ namespace Texture_Packer {
 
   bool Import_Tileset_Texture(int textureIndex, Rendering_Components::Sheet_Data &spritesheet, const char *imgPath) {
 
-    spritesheet.texture = Graphics::Create_Game_Object(textureIndex, imgPath).texture;
+    spritesheet.texture = Graphics::Create_Game_Object(textureIndex, imgPath);
 
     if (spritesheet.texture == NULL) {
       std::cout << "No texture found from image path: " << imgPath << ", texture: " << spritesheet.texture << std::endl;

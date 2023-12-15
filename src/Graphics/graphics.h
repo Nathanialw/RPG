@@ -156,32 +156,75 @@ namespace Graphics {
   }
 
   //both unitID and filepath are stored in tiled map object
-  static void Load_Texture(int &unitID, const char *filepath) {
-    unitTextures[unitID] = createTexture(filepath);
-    unitTextures[unitID] = createTexture(filepath);
-    unitTextures[unitID] = createTexture(filepath);
-    if (unitTextures[unitID] == NULL) {
+  SDL_Texture* Load_Texture(int &unitID,  std::array<SDL_Texture *, numberOfTextures> &textures, const char *filepath) {
+    textures[unitID] = createTexture(filepath);
+    if (textures[unitID] == NULL) {
       std::cout << "Load_Texture() failed to load  texture from file: " << filepath << std::endl;
-//        unitTextures[unitID] = Graphics::default_icon;
+        unitTextures[unitID] = Graphics::default_icon;
     }
+    return textures[unitID];
   }
 
   //when creating the game objet
-  Texture Create_Game_Object(int &unitID, const char *filepath) {
-    Texture texture;
+  SDL_Texture* Create_Game_Object(int &unitID, const char *filepath) {
+    SDL_Texture* texture;
     if (unitTextures[unitID] == NULL) {
-      Load_Texture(unitID, filepath);
-      texture.texture = unitTextures[unitID];
-      if (texture.texture == NULL) {
+      Load_Texture(unitID, unitTextures, filepath);
+      texture = unitTextures[unitID];
+      if (texture == NULL) {
         std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
-        texture.texture = unitTextures[unitID];
+        texture = unitTextures[unitID];
         return texture;
         //	std::cout << "loaded from file: " << filepath << std::endl;
       }
     } else {
-      texture.texture = unitTextures[unitID];
+      texture = unitTextures[unitID];
+      return texture;
+      //std::cout << "already loaded: " << filepath << std::endl;
+      //unitTextures[unitID];
+    }
+    return texture;
+    //to render it jsut needs access to the texture array and the unitID
+  }
+
+  SDL_Texture* Load_Portrait(int &unitID, const char *filepath) {
+    SDL_Texture* texture;
+    if (unitPortaits[unitID] == NULL) {
+      texture = Load_Texture(unitID, unitPortaits, filepath);
+      if (texture == NULL) {
+        std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
+        return texture;
+      } else {
+        texture = unitPortaits[unitID];
+        return texture;
+        //	std::cout << "loaded from file: " << filepath << std::endl;
+      }
+    } else {
+      texture = unitPortaits[unitID];
+      return texture;
+      //std::cout << "already loaded: " << filepath << std::endl;
+      //unitTextures[unitID];
+    }
+    return texture;
+    //to render it jsut needs access to the texture array and the unitID
+  }
+
+  SDL_Texture* Load_Body(int &unitID, const char *filepath) {
+    SDL_Texture* texture;
+    if (unitBodies[unitID] == NULL) {
+      texture = Load_Texture(unitID, unitBodies, filepath);
+      if (texture == NULL) {
+        std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
+        return texture;
+      } else {
+        texture = unitBodies[unitID];
+        return texture;
+        //	std::cout << "loaded from file: " << filepath << std::endl;
+      }
+    } else {
+      texture = unitBodies[unitID];
       return texture;
       //std::cout << "already loaded: " << filepath << std::endl;
       //unitTextures[unitID];

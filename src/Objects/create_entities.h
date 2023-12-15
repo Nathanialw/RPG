@@ -240,11 +240,12 @@ namespace Create_Entities {
     imgPaths.imgPath = "assets/" + imgPaths.imgPath;
     imgPaths.portraitPath = "assets/" + imgPaths.portraitPath;
     imgPaths.bodyPath = "assets/" + imgPaths.bodyPath;
+
     if (is_random == 1) {
       imgPaths.name = Entity_Loader::Get_All_Of_Class(entity_class);
       //check if the random name has a tamplate ID, if it doesn't revert to default name
       unit_ID = Get_Existing_Template_ID(imgPaths.name, entity_class);
-      texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
+      texture.texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
       data = Entity_Loader::parse_data(imgPaths.name);//
       ////randomEntity must be converted into a std::string//
       //auto& scale = zone.get<Component::Scale>(entity);
@@ -254,7 +255,7 @@ namespace Create_Entities {
       //scale.scale = rand_scale;
     } else {
       unit_ID = Check_For_Template_ID(imgPaths.name);
-      texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
+      texture.texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
       data = Entity_Loader::parse_data(imgPaths.name);
     }
 
@@ -298,6 +299,11 @@ namespace Create_Entities {
 
     auto &full_name = zone.emplace<Component::Name>(entity);
     Character_Data::Get_Name(full_name);
+
+    texture.portrait = Graphics::Load_Portrait(unit_ID, imgPaths.portraitPath.c_str());
+    texture.body = Graphics::Load_Body(unit_ID, imgPaths.bodyPath.c_str());
+    zone.emplace<Rendering_Components::Portrait>(entity, texture.portrait);
+    zone.emplace<Rendering_Components::Body>(entity, texture.body);
 
     auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
 

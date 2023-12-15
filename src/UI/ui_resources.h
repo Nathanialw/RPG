@@ -36,11 +36,11 @@ namespace UI_Resources {
     Init_Frames ();
     playerFrame.background.frame = UI::Update_Scale(camera.scale, playerFrame.background.frame);
     
-    auto view = zone.view<Component::Name, Component::Health, Component::Input>();
+    auto view = zone.view<Component::Name, Component::Health, Component::Input, Rendering_Components::Portrait>();
     for (auto entity : view) {
-      auto [fullName, health] = view.get(entity);
+      auto [fullName, health, portrait] = view.get(entity);
       Build_Target_Frame(playerFrame);
-      Unit_Frames::Update_Frame_Data(camera.scale, fullName, health, playerFrame);
+      Unit_Frames::Update_Frame_Data(camera.scale, fullName, health, playerFrame, portrait);
       Unit_Frames::Render_Target_Frame(playerFrame);
     }
   }  

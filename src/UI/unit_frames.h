@@ -8,6 +8,7 @@
 #include <string>
 #include "graphics.h"
 #include "ui_elements.h"
+#include "portaits.h"
 
 namespace Unit_Frames {
 
@@ -15,6 +16,7 @@ namespace Unit_Frames {
   struct UI_Frame {
     UI::Image_Frame background;
     //std::vector<Frame_Element> frames;
+    Rendering_Components::Portrait gear;
     UI::Image_Frame img;
     UI::Text_Frame name;
     UI::Text_Frame health;
@@ -54,7 +56,7 @@ namespace Unit_Frames {
     }
   }
 
-  void Update_Frame_Data(f2 &scale, Component::Name &fullName, Component::Health &health, UI_Frame &frame) {
+  void Update_Frame_Data(f2 &scale, Component::Name &fullName, Component::Health &health, UI_Frame &frame, Rendering_Components::Portrait portrait) {
 
     //only update if changed
     std::string healthText = std::to_string(health.currentHealth) + " / " + std::to_string(health.maxHealth);
@@ -66,9 +68,9 @@ namespace Unit_Frames {
     }
     Update_Frame_Text(scale, frame.health, frame.health.text, 20.0f);
 
-    if (frame.img.texture != Graphics::default_icon || frame.img.texture == NULL) {
-      frame.img.texture = NULL;
-      frame.img.texture = Graphics::default_icon;
+    if (frame.img.texture != portrait.texture || frame.img.texture == NULL) {
+      frame.img.texture = portrait.texture;
+      frame.gear = portrait;
     }
 
     std::string name = fullName.first + " " + fullName.last;
@@ -93,7 +95,7 @@ namespace Unit_Frames {
     //name
     SDL_RenderCopyF(Graphics::renderer, frame.name.textTexture, NULL, &frame.name.textFrame);
     //img
-    SDL_RenderCopyF(Graphics::renderer, frame.img.texture, NULL, &frame.img.frame);
+    Portraits::Render_Portait(frame.health.backgroundTexture, frame.img.texture, frame.gear, frame.img.frame);
   }
 
   void Init_Frames() {
@@ -111,9 +113,9 @@ namespace Unit_Frames {
       i.selected = false;
     }
 
-    auto view = zone.view<Component::Selected, Component::Name, Component::Health>();
+    auto view = zone.view<Component::Selected, Component::Name, Component::Health, Rendering_Components::Portrait>();
     for (auto entity: view) {
-      auto [selected, fullName, health] = view.get(entity);
+      auto [selected, fullName, health, portrait] = view.get(entity);
       //place in new unit
       if (selected.selected == false) {
         for (int i = 0; i < targets.size(); i++) {
@@ -126,7 +128,7 @@ namespace Unit_Frames {
         }
       }
       targets[selected.targetIndex].selected = true;
-      Update_Frame_Data(camera.scale, fullName, health, targets[selected.targetIndex]);
+      Update_Frame_Data(camera.scale, fullName, health, targets[selected.targetIndex], portrait);
       Render_Target_Frame(targets[selected.targetIndex]);
     }
 

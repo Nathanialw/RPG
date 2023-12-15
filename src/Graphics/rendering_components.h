@@ -42,14 +42,17 @@ namespace Rendering_Components {
     u_int8_t b;
   };
 
-  struct Portait {
+  struct Portrait {
     SDL_Texture *texture = NULL;
-    SDL_FRect position = {};
+    SDL_Texture *helm = NULL;
+    SDL_Texture *hair = NULL;
+    SDL_Texture *horns = NULL;
+    SDL_Texture *beard = NULL;
+    SDL_Texture *chest = NULL;
   };
 
   struct Body {
     SDL_Texture *texture = NULL;
-    SDL_FRect position = {};
   };
 
   /// one per item, but they can point to the same texture
