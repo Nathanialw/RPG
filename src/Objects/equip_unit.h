@@ -40,12 +40,12 @@ namespace equip_unit {
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Armor(Component::Position &position, Item_Component::Item_Type itemType, std::string &equip_type) {
+  entt::entity Create_And_Equip_Armor(Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Item &equip_type) {
     Rarity rarity = Items::Generate_Item_Rarity();
     Item_Stats itemStats = Items::Generate_Item_Stats(rarity);
     Armor_Type armorType = Items::Generate_Armor_Type();
     auto item_uID = World::zone.create();
-    std::string itemName = Items::Create_Specific_Armor(item_uID, rarity, itemType, armorType, equip_type);
+    std::string itemName = Items::Create_Specific_Armor(item_uID, rarity, itemType, armorType, equip_type.name);
     if (itemName == "none") {
       World::zone.destroy(item_uID);
       Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");

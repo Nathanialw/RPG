@@ -262,26 +262,56 @@ namespace Character_Stats {
     }
   }
 
+  void Get_Bust_Textures(entt::registry &zone, entt::entity &item, Item_Type itemType, Rendering_Components::Body_Frame &bodyFrame, Rendering_Components::Unit_Frame_Portrait &unitPortraitFrame) {
+    if (item != Item_Component::emptyEquipSlot) {
+      unitPortraitFrame.gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
+      bodyFrame.gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
+    }
+  }
+
   void Equip_Units(entt::registry &zone, Character_Options::Customization &options) {
     std::vector<std::string> gear = Get_Sex(options.sex);
-    std::string hair = Get_Hair_Name(options);
-    std::string beard = Get_Beard_Name(options);
-    std::string horns = Get_Horn_Name(options);
+    Item_Component::Item hair = Get_Hair_Name(options);
+    Item_Component::Item beard = Get_Beard_Name(options);
+    Item_Component::Item horns = Get_Horn_Name(options);
 
     auto view = zone.view<Item_Component::Equipment, Component::Position>();
     for (auto unit: view) {
       auto &equipment = view.get<Item_Component::Equipment>(unit);
       auto &position = view.get<Component::Position>(unit);
+      auto &unitPortraitFrame = zone.get<Rendering_Components::Unit_Frame_Portrait>(unit);
+      auto &bodyFrame = zone.get<Rendering_Components::Body_Frame>(unit);
 
-      equipment.equippedItems[Item_Type::mainhand] = Items::Create_And_Equip_Weapon(position, equipment.type, gear[0]);
-      equipment.equippedItems[Item_Type::chest] = Items::Create_And_Equip_Armor(position, Item_Type::chest, equipment.type, gear[1], Character_Options::Color[0]);
-      equipment.equippedItems[Item_Type::legs] = Items::Create_And_Equip_Armor(position, Item_Type::legs, equipment.type, gear[2], Character_Options::Color[0]);
-      equipment.equippedItems[Item_Type::hair] = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type, hair, Character_Options::Color[options.hairColor]);
-      equipment.equippedItems[Item_Type::facialHair] = Items::Create_And_Equip_Armor(position, Item_Type::facialHair, equipment.type, beard, Character_Options::Color[options.hairColor]);
-      equipment.equippedItems[Item_Type::horns] = Items::Create_And_Equip_Armor(position, Item_Type::facialHair, equipment.type, horns, Character_Options::Color[0]);
+      entt::entity item = Items::Create_And_Equip_Weapon(position, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[0].c_str()), Character_Options::Color[0]);
+      equipment.equippedItems[Item_Type::mainhand] = item;
+      Get_Bust_Textures(zone, item, Item_Type::mainhand, bodyFrame, unitPortraitFrame);
+
+      item = Items::Create_And_Equip_Armor(position, Item_Type::chest, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[1].c_str()), Character_Options::Color[0]);
+      equipment.equippedItems[Item_Type::chest] = item;
+      Get_Bust_Textures(zone, item, Item_Type::chest, bodyFrame, unitPortraitFrame);
+
+      item = Items::Create_And_Equip_Armor(position, Item_Type::legs, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[2].c_str()), Character_Options::Color[0]);
+      equipment.equippedItems[Item_Type::legs] = item;
+      Get_Bust_Textures(zone, item, Item_Type::legs, bodyFrame, unitPortraitFrame);
+
+      item = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type, hair, Character_Options::Color[options.hairColor]);
+      equipment.equippedItems[Item_Type::hair] = item;
+      Get_Bust_Textures(zone, item, Item_Type::hair, bodyFrame, unitPortraitFrame);
+
+      item = Items::Create_And_Equip_Armor(position, Item_Type::facialHair, equipment.type, beard, Character_Options::Color[options.hairColor]);
+      equipment.equippedItems[Item_Type::facialHair] = item;
+      Get_Bust_Textures(zone, item, Item_Type::facialHair, bodyFrame, unitPortraitFrame);
+
+      item = Items::Create_And_Equip_Armor(position, Item_Type::horns, equipment.type, horns, Character_Options::Color[0]);
+      equipment.equippedItems[Item_Type::horns] = item;
+      Get_Bust_Textures(zone, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
 
       zone.emplace<Item_Component::Item_Equip>(unit);
     }
+  }
+
+  void Update_Gear() {
+
   }
 
   void Update_Items(entt::registry &zone) {

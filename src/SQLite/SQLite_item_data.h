@@ -90,6 +90,7 @@ namespace SQLite_Item_Data {
 
             return item;
         }
+        return item;
         //        Utilities::Log(Items.size());
         //        Utilities::Log("Loading items success!");
     }

@@ -300,10 +300,11 @@ namespace Create_Entities {
     auto &full_name = zone.emplace<Component::Name>(entity);
     Character_Data::Get_Name(full_name);
 
-    texture.portrait = Graphics::Load_Portrait(unit_ID, imgPaths.portraitPath.c_str());
-    texture.body = Graphics::Load_Body(unit_ID, imgPaths.bodyPath.c_str());
-    zone.emplace<Rendering_Components::Portrait>(entity, texture.portrait);
-    zone.emplace<Rendering_Components::Body>(entity, texture.body);
+    texture.portrait = zone.emplace<Rendering_Components::Portrait>(entity, Graphics::Load_Portrait(unit_ID, imgPaths.portraitPath.c_str())).texture;
+    texture.body = zone.emplace<Rendering_Components::Body>(entity, Graphics::Load_Body(unit_ID, imgPaths.bodyPath.c_str())).texture;
+
+    zone.emplace<Rendering_Components::Unit_Frame_Portrait>(entity, texture.portrait);
+    zone.emplace<Rendering_Components::Body_Frame>(entity, texture.body);
 
     auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
 

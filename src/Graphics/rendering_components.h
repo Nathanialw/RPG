@@ -44,15 +44,22 @@ namespace Rendering_Components {
 
   struct Portrait {
     SDL_Texture *texture = NULL;
-    SDL_Texture *helm = NULL;
-    SDL_Texture *hair = NULL;
-    SDL_Texture *horns = NULL;
-    SDL_Texture *beard = NULL;
-    SDL_Texture *chest = NULL;
+    SDL_Color color = {255, 255, 255};
   };
 
   struct Body {
     SDL_Texture *texture = NULL;
+    SDL_Color color = {255, 255, 255};
+  };
+
+  struct Unit_Frame_Portrait {
+    SDL_Texture *texture = NULL;
+    std::unordered_map<int, Portrait> gear;
+  };
+
+  struct Body_Frame {
+    SDL_Texture *texture = NULL;
+    std::unordered_map<int, Portrait> gear;
   };
 
   /// one per item, but they can point to the same texture

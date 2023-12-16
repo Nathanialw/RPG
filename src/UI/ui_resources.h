@@ -36,7 +36,7 @@ namespace UI_Resources {
     Init_Frames ();
     playerFrame.background.frame = UI::Update_Scale(camera.scale, playerFrame.background.frame);
     
-    auto view = zone.view<Component::Name, Component::Health, Component::Input, Rendering_Components::Portrait>();
+    auto view = zone.view<Component::Name, Component::Health, Component::Input, Rendering_Components::Unit_Frame_Portrait>();
     for (auto entity : view) {
       auto [fullName, health, portrait] = view.get(entity);
       Build_Target_Frame(playerFrame);

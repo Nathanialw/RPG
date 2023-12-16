@@ -76,15 +76,45 @@ namespace Texture_Packer_Item {
     return data;
   }
 
-  static void Load_Texture(std::string &index, const char *filepath) {
-    Item_Textures[index] = Graphics::createTexture(filepath);
+  static void Load_Texture(std::string &index, std::unordered_map<std::string, SDL_Texture *> &textures, const char *filepath) {
+    textures[index] = Graphics::createTexture(filepath);
   }
 
   void Get_Item_Texture(std::string &index, const char *filepath) {
     if (Item_Textures[index] == NULL) {
-      Load_Texture(index, filepath);
+      Load_Texture(index, Item_Textures, filepath);
       if (Item_Textures[index] == NULL) {
-        std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
+        std::cout << "Get_Item_Texture() failed to load  texture from file: " << filepath << std::endl;
+      } else {
+        //	std::cout << "loaded from file: " << filepath << std::endl;
+      }
+    } else {
+      //std::cout << "already loaded: " << filepath << std::endl;
+      //unitTextures[unitID];
+    }
+    //to render it jsut needs access to the texture array and the unitID
+  }
+
+  void Get_Item_Portrait_exture(std::string &index, const char *filepath) {
+    if (Item_Portaits[index] == NULL) {
+      Load_Texture(index, Item_Portaits, filepath);
+      if (Item_Portaits[index] == NULL) {
+        std::cout << "Get_Item_Portrait_exture() failed to load  texture from file: " << filepath << std::endl;
+      } else {
+        //	std::cout << "loaded from file: " << filepath << std::endl;
+      }
+    } else {
+      //std::cout << "already loaded: " << filepath << std::endl;
+      //unitTextures[unitID];
+    }
+    //to render it jsut needs access to the texture array and the unitID
+  }
+
+  void Get_Item_Body_Texture(std::string &index, const char *filepath) {
+    if (Item_Body[index] == NULL) {
+      Load_Texture(index, Item_Body,filepath);
+      if (Item_Body[index] == NULL) {
+        std::cout << "Get_Item_Body_Texture() failed to load  texture from file: " << filepath << std::endl;
       } else {
         //	std::cout << "loaded from file: " << filepath << std::endl;
       }

@@ -16,7 +16,7 @@ namespace Unit_Frames {
   struct UI_Frame {
     UI::Image_Frame background;
     //std::vector<Frame_Element> frames;
-    Rendering_Components::Portrait gear;
+    Rendering_Components::Unit_Frame_Portrait gear;
     UI::Image_Frame img;
     UI::Text_Frame name;
     UI::Text_Frame health;
@@ -56,7 +56,7 @@ namespace Unit_Frames {
     }
   }
 
-  void Update_Frame_Data(f2 &scale, Component::Name &fullName, Component::Health &health, UI_Frame &frame, Rendering_Components::Portrait portrait) {
+  void Update_Frame_Data(f2 &scale, Component::Name &fullName, Component::Health &health, UI_Frame &frame, Rendering_Components::Unit_Frame_Portrait portrait) {
 
     //only update if changed
     std::string healthText = std::to_string(health.currentHealth) + " / " + std::to_string(health.maxHealth);
@@ -70,8 +70,8 @@ namespace Unit_Frames {
 
     if (frame.img.texture != portrait.texture || frame.img.texture == NULL) {
       frame.img.texture = portrait.texture;
-      frame.gear = portrait;
     }
+    frame.gear = portrait;
 
     std::string name = fullName.first + " " + fullName.last;
     if (frame.name.text != name || frame.name.textTexture == NULL) {
@@ -113,7 +113,7 @@ namespace Unit_Frames {
       i.selected = false;
     }
 
-    auto view = zone.view<Component::Selected, Component::Name, Component::Health, Rendering_Components::Portrait>();
+    auto view = zone.view<Component::Selected, Component::Name, Component::Health, Rendering_Components::Unit_Frame_Portrait>();
     for (auto entity: view) {
       auto [selected, fullName, health, portrait] = view.get(entity);
       //place in new unit
