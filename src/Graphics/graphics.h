@@ -159,8 +159,7 @@ namespace Graphics {
   SDL_Texture* Load_Texture(int &unitID,  std::array<SDL_Texture *, numberOfTextures> &textures, const char *filepath) {
     textures[unitID] = createTexture(filepath);
     if (textures[unitID] == NULL) {
-      std::cout << "Load_Texture() failed to load  texture from file: " << filepath << std::endl;
-        unitTextures[unitID] = Graphics::default_icon;
+      unitTextures[unitID] = Graphics::default_icon;
     }
     return textures[unitID];
   }
@@ -194,7 +193,7 @@ namespace Graphics {
     if (unitPortaits[unitID] == NULL) {
       texture = Load_Texture(unitID, unitPortaits, filepath);
       if (texture == NULL) {
-        std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
+        std::cout << "Load_Portrait() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
         texture = unitPortaits[unitID];
@@ -216,7 +215,7 @@ namespace Graphics {
     if (unitBodies[unitID] == NULL) {
       texture = Load_Texture(unitID, unitBodies, filepath);
       if (texture == NULL) {
-        std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
+        std::cout << "Load_Body() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
         texture = unitBodies[unitID];
@@ -238,7 +237,7 @@ namespace Graphics {
     if (pTexture[name] == NULL) {
       pTexture[name] = createTexture(filepath);
       if (pTexture[name] == NULL) {
-        std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
+        std::cout << "Create_Tileset() failed to load  texture from file: " << filepath << std::endl;
       } else {
         //	std::cout << "loaded from file: " << filepath << std::endl;
       }

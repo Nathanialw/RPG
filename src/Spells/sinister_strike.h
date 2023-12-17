@@ -30,7 +30,7 @@ namespace Sinister_Strike {
           auto &targetRadius = view.get<Component::Radius>(target_ID);
           auto &position = zone.get<Component::Position>(player_ID);
           auto &meleeRange = zone.get<Component::Melee_Range>(player_ID);
-          if (Entity_Control::Target_In_Melee_Range(zone, position, meleeRange, targetPosition, targetRadius)) {
+          if (Entity_Control::Target_In_Range(position, meleeRange.meleeRange, targetPosition, targetRadius)) {
             auto &angle = zone.get<Component::Velocity>(player_ID).angle;
             auto &direction = zone.get<Component::Direction>(player_ID);
             direction = Movement::Look_At_Target(position.x, position.y, targetPosition.x, targetPosition.y, angle);

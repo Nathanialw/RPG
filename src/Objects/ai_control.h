@@ -20,7 +20,7 @@ namespace AI {
       //calcuate the point to move to that puts in range of melee attack on every few frames
       //if it is in range, run Melee_Attack()
       //else pass that point as an update to the move order
-      if (Entity_Control::Target_In_Melee_Range(zone, entityPosition, meleeRange, targetPosition, targetRadius)) { //check if center of attack rect is in the target
+      if (Entity_Control::Target_In_Range(entityPosition, meleeRange.meleeRange, targetPosition, targetRadius)) { //check if center of attack rect is in the target
         auto &action = zone.get<Action_Component::Action>(entity_ID);
         if (action.state != Action_Component::attack && action.state != Action_Component::struck) {
           Action_Component::Set_State(action, Action_Component::idle);

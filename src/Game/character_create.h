@@ -25,6 +25,7 @@ namespace Character_Create {
 
   void Background_Image() {
     SDL_RenderClear(Graphics::renderer);
+    // background based on species
   }
 
   SDL_Color colors[3] = {{255, 255, 255},
@@ -330,22 +331,20 @@ namespace Character_Create {
           }
           //Horns
           for (int k = 0; k < menus[1].buttons.size(); k++) {
-            for (int m = 0; m < menus[1].buttons.size(); m++) {
-              if (menus[1].buttons[m].selected != is_disabled) {
-                if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[0].size)) {
-                  Increment(options.horns, Character_Options::genderImages[(int)options.sex].horns.size());
-                  menus[1].buttons[1].backgroundTexture = nullptr;
-                  menus[1].buttons[0].backgroundTexture = Graphics::default_icon;
-                  Set_Image(menus[7], options);
-                  return;
-                }
-                if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[1].size)) {
-                  Decrement(options.horns, Character_Options::genderImages[(int)options.sex].horns.size());
-                  menus[1].buttons[1].backgroundTexture = Graphics::default_icon;
-                  menus[1].buttons[0].backgroundTexture = nullptr;
-                  Set_Image(menus[7], options);
-                  return;
-                }
+            if (menus[1].buttons[k].selected != is_disabled) {
+              if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[0].size)) {
+                Increment(options.horns, Character_Options::genderImages[(int)options.sex].horns.size());
+                menus[1].buttons[0].backgroundTexture = Graphics::default_icon;
+                menus[1].buttons[1].backgroundTexture = nullptr;
+                Set_Image(menus[7], options);
+                return;
+              }
+              if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[1].size)) {
+                Decrement(options.horns, Character_Options::genderImages[(int)options.sex].horns.size());
+                menus[1].buttons[0].backgroundTexture = nullptr;
+                menus[1].buttons[1].backgroundTexture = Graphics::default_icon;
+                Set_Image(menus[7], options);
+                return;
               }
             }
           }

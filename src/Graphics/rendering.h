@@ -363,7 +363,7 @@ namespace Rendering {
           camera.screen.w + 2000.0f,
           camera.screen.h + 2000.0f
       };
-      auto objectsView = zone.view<Component::Position>(entt::exclude<Item_Component::Name>);
+      auto objectsView = zone.view<Component::Position>();
       //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
       float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
       float bottomOfRenderRect = renderRect.y + renderRect.h;

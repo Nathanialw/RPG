@@ -145,7 +145,7 @@ namespace Character_Options {
   Item_Component::Item Get_Horn_Name(Character_Options::Customization &options) {
     if (options.sex == Sex::male) {
       if (options.horns) {
-        return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns][options.beard];
+        return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns][0];
       }
     }
     return {"none","none","none"};

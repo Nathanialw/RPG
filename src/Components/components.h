@@ -405,6 +405,18 @@ namespace Component {
     float targetY;
   };
 
+  struct Interacting {
+    entt::entity target_ID;
+    float targetX;
+    float targetY;
+  };
+
+  struct Interact {
+    entt::entity target_ID;
+    float targetX;
+    float targetY;
+  };
+
   struct Attack_Speed {
     float period = 0;
     float counter = 0;

@@ -262,6 +262,7 @@ namespace Character_Stats {
     }
   }
 
+
   void Get_Bust_Textures(entt::registry &zone, entt::entity &item, Item_Type itemType, Rendering_Components::Body_Frame &bodyFrame, Rendering_Components::Unit_Frame_Portrait &unitPortraitFrame) {
     if (item != Item_Component::emptyEquipSlot) {
       unitPortraitFrame.gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
@@ -275,12 +276,12 @@ namespace Character_Stats {
     Item_Component::Item beard = Get_Beard_Name(options);
     Item_Component::Item horns = Get_Horn_Name(options);
 
-    auto view = zone.view<Item_Component::Equipment, Component::Position>();
+    auto view = zone.view<Item_Component::Equipment, Component::Position, Rendering_Components::Unit_Frame_Portrait, Rendering_Components::Body_Frame>();
     for (auto unit: view) {
       auto &equipment = view.get<Item_Component::Equipment>(unit);
       auto &position = view.get<Component::Position>(unit);
-      auto &unitPortraitFrame = zone.get<Rendering_Components::Unit_Frame_Portrait>(unit);
-      auto &bodyFrame = zone.get<Rendering_Components::Body_Frame>(unit);
+      auto &unitPortraitFrame = view.get<Rendering_Components::Unit_Frame_Portrait>(unit);
+      auto &bodyFrame = view.get<Rendering_Components::Body_Frame>(unit);
 
       entt::entity item = Items::Create_And_Equip_Weapon(position, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[0].c_str()), Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::mainhand] = item;
@@ -308,10 +309,6 @@ namespace Character_Stats {
 
       zone.emplace<Item_Component::Item_Equip>(unit);
     }
-  }
-
-  void Update_Gear() {
-
   }
 
   void Update_Items(entt::registry &zone) {

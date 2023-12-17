@@ -169,7 +169,7 @@ namespace Create_Entities {
         position.y -= frame.y_offset;
         Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       } else {
-        Utilities::Log("PVG_Building() no collider_type found for templateName");
+        Utilities::Log("PVG_Building() no collider_type found for templateName, also prints for blood spawning");
         Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
 //        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
       }

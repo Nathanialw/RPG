@@ -41,11 +41,11 @@ namespace Entity_Control {
     }
   }
 
-  bool Target_In_Melee_Range(entt::registry& zone, Component::Position &entityPosition, Component::Melee_Range &meleeRange, Component::Position &targetPosition, Component::Radius &targetRadius) {
+  bool Target_In_Range(Component::Position &entityPosition, float &range, Component::Position &targetPosition, Component::Radius &targetRadius) {
     float length = entityPosition.x - targetPosition.x;
     float width = entityPosition.y - targetPosition.y;
 
-    if (((length * length) + (width * width)) <= ((meleeRange.meleeRange + targetRadius.fRadius) * (meleeRange.meleeRange + targetRadius.fRadius))) {
+    if (((length * length) + (width * width)) <= ((range + targetRadius.fRadius) * (range + targetRadius.fRadius))) {
       //float range = Utilities::Get_Hypotenuse(length, width);
       //if (range <= (meleeRange.meleeRange + targetRadius.fRadius)) {
       return true;

@@ -2,77 +2,82 @@
 
 namespace Action_Component {
 
-    enum Action_State {
-        isStatic,
-        idle,
-        idle2,
-        idle6,
-        walk,
-        walkBow,
-        run,
-        attack,
-        attack2,
-        attack2H_1,
-        attack2H_2,
-        idle2H,
-        idleCritical1,
-        idleCritical2,
-        talk,
-        run2H,
-        walk2H,
-        casting,
-        cast,
-        struck,
-        block,
-        evade,
-        stunned,
-        idle_low_hp,
-        idle_low_hp2,
-        dying,
-        dead,
-        dead2,
-        dead3,
-        dead4,
-        dead5,
-        dead6,
-        resting,
-        ranged,
-        ranged_bow1,
-        idleBow,
-        cheer,
-        behavior,
-        summoned,
-        kneel,
-        pray_kneeled,
-        pray_standing,
-        in_combat,
-        in_combat2,
-        climb,
-        use_item,
-        crouch
-    };
-  
-    enum Action_Progress {
-        start,
-        mid,
-        last
-    };
+  enum Action_State {
+    isStatic,
+    idle,
+    idle2,
+    idle6,
+    walk,
+    walkBow,
+    run,
+    attack,
+    attack2,
+    attack2H_1,
+    attack2H_2,
+    idle2H,
+    idleCritical1,
+    idleCritical2,
+    jump,
+    kick,
+    interact,
+    talk,
+    run2H,
+    walk2H,
+    casting,
+    cast,
+    struck,
+    block,
+    evade,
+    stunned,
+    search,
+    cleaning_object,
+    idle_low_hp,
+    idle_low_hp2,
+    dying,
+    dead,
+    dead2,
+    dead3,
+    dead4,
+    dead5,
+    dead6,
+    resting,
+    ranged,
+    ranged_bow1,
+    idleBow,
+    cheer,
+    behavior,
+    summoned,
+    kneel,
+    pray_kneeled,
+    pray_standing,
+    in_combat,
+    in_combat2,
+    climb,
+    use_item,
+    crouch
+  };
 
-    struct Action {
-        Action_State state = walk;
-        Action_Progress frameState = start;
-        int frame = 0;
-        float frameTime = 0;
-    };
+  enum Action_Progress {
+    start,
+    mid,
+    last
+  };
 
-    void Set_State(Action &action, Action_State state) {
-        if (action.state == state) {
-            return;
-        }
-        action.state = state;
-        action.frameState = start;
-        action.frameTime = 0;
-        action.frame = 0;
+  struct Action {
+    Action_State state = walk;
+    Action_Progress frameState = start;
+    int frame = 0;
+    float frameTime = 0;
+  };
+
+  void Set_State(Action &action, Action_State state) {
+    if (action.state == state) {
+      return;
     }
+    action.state = state;
+    action.frameState = start;
+    action.frameTime = 0;
+    action.frame = 0;
+  }
 
-}
+}// namespace Action_Component

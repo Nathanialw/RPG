@@ -6,4 +6,9 @@ namespace Player_Component {
         entt::entity ID;
         float hitRadius;
     };
+
+    struct Interact_Move {
+        entt::entity ID;
+        float hitRadius;
+    };
 }
