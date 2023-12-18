@@ -280,9 +280,9 @@ namespace Dynamic_Quad_Tree {
   float emplaceQuadTree = 0.0f;
 
   void Emplace_Objects_In_Quad_Tree(entt::registry &zone) {
-    emplaceQuadTree += Timer::timeStep;
-    if (emplaceQuadTree >= 50.0f) {
-      emplaceQuadTree -= 50.0f;
+//    emplaceQuadTree += Timer::timeStep;
+//    if (emplaceQuadTree >= 50.0f) {
+//      emplaceQuadTree -= 50.0f;
       auto view = zone.view<Component::Interaction_Rect>(entt::exclude<Component::In_Object_Tree>);
       int i = 0;
       for (auto entity: view) {
@@ -295,7 +295,7 @@ namespace Dynamic_Quad_Tree {
         zone.emplace<Component::In_Object_Tree>(entity, true);
         treeObjects.insert(object, object.rect);
       }
-    }
+//    }
   }
 
   void Remove_From_Tree(entt::registry &zone) {
@@ -332,11 +332,10 @@ namespace Dynamic_Quad_Tree {
   float updateQuadTreePosition = 0.0f;
 
   void Update_Quad_Tree_Positions(entt::registry &zone) {
-    updateQuadTreePosition += Timer::timeStep;
-    if (updateQuadTreePosition >= 50.0f) {
-      updateQuadTreePosition -= 50.0f;
-      auto view = zone.view<Component::Interaction_Rect>();
-      Debug::treeSize = view.size();
+//    updateQuadTreePosition += Timer::timeStep;
+//    if (updateQuadTreePosition >= 50.0f) {
+//      updateQuadTreePosition -= 50.0f;
+      auto view = zone.view<Component::Interaction_Rect, Component::In_Object_Tree>();
 
       for (std::_List_iterator object_it = treeObjects.begin(); object_it != treeObjects.end(); ++object_it) {
         auto &entity = object_it->item;
@@ -359,12 +358,11 @@ namespace Dynamic_Quad_Tree {
           }
         }
       }
-    }
+//    }
   }
 
   void Draw_Tree_Object_Rects(entt::registry &zone) {
-    if (Debug::settings[2]) {
-      auto view2 = zone.view<Component::Interaction_Rect>();
+    if (Debug::settings[Debug::InteractionRects]) {
       auto view = zone.view<Component::Camera>();
       for (auto entity: view) {
         auto &camera = view.get<Component::Camera>(entity);

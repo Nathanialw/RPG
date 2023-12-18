@@ -62,13 +62,13 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
   Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
 }
 
-void Animation_Frame(entt::registry &zone, Component::Camera &camera) { //state
+void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
 
   auto view1 = zone.view<Component::Renderable, Action_Component::Action, Component::Position, Rendering_Components::Sprite_Sheet_Info, Component::Direction, Rendering_Components::Sprite_Offset, Component::Scale, Component::Entity_Type>();
   auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
   auto mounts = zone.view<Component::Renderable, Rendering_Components::Mount_Sprite>();
 
-  Debug::numRendered = view1.size_hint();
+  Debug::settingsValue[Debug::NumRendered] = view1.size_hint();
   for (auto entity: view1) {
     auto [renderable, action, position, sheetData, direction, spriteOffset, scale, type] = view1.get(entity);
     //            std::cout << renderable.y << " ";
@@ -78,15 +78,15 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) { //state
     SDL_Color color;
 
     if (sheetData.flareSpritesheet) {
-//      get the next frame
+      //      get the next frame
       Update_Frame(entity, scale, sheetData, direction, action);
-//      get/update the clip rect
+      //      get/update the clip rect
       Get_Spritesheet_Type(clipRect, sheetData, direction, action);
-//      set the render rect size and position
+      //      set the render rect size and position
       renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
       renderRect.x = (position.x - camera.screen.x - spriteOffset.x);
       renderRect.y = (position.y - camera.screen.y - spriteOffset.y);
-//      render icons
+      //      render icons
       if (type == Component::Entity_Type::item) {
         renderRect.w = (spriteOffset.x * 2.0f);
         renderRect.h = (spriteOffset.y * 2.0f);
@@ -99,7 +99,6 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) { //state
     } else if (sheetData.sheetData) {
       if (mounts.contains(entity)) {
         //                render horse half behind unit
-
       }
 
       //                render unit
@@ -114,7 +113,6 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) { //state
 
       if (mounts.contains(entity)) {
         //                render horse half in front unit
-
       }
     } else {
       Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL");
@@ -122,7 +120,3 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) { //state
   }
   //        std::cout << "\n";
 }
-
-
-
-

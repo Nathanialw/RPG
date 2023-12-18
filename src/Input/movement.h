@@ -169,6 +169,9 @@ namespace Movement {
         if (action.state == Action_Component::idle) {
           Action_Component::Set_State(action, Action_Component::walk);
         }
+        World::zone.remove<Player_Component::Interact_Move>(entity);
+        World::zone.remove<Player_Component::Attack_Move>(entity);
+        World::zone.remove<Component::Pickup_Item>(entity);
 
         v.magnitude.x = v.speed * (mov.fX_Destination - position.x);
         v.magnitude.y = v.speed * (mov.fY_Destination - position.y);

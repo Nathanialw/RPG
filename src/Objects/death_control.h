@@ -21,7 +21,7 @@ namespace Death_Component {
 
 namespace Death_Control {
 
-  bool Death_Sequence(Component::Direction &direction, entt::entity entity, Component::Scale &scale, Rendering_Components::Sprite_Sheet_Info &sheetData, Action_Component::Action &action, int &numFrames) {
+  bool Death_Sequence(entt::entity entity, Rendering_Components::Sprite_Sheet_Info &sheetData, Action_Component::Action &action, int &numFrames) {
     if (action.state == Action_Component::dying) {
       if (action.frame < numFrames - 1) {
         action.frame++;
@@ -29,7 +29,7 @@ namespace Death_Control {
         if (action.frame == numFrames - 1) {
           if (sheetData.sheetData) {
             if (World::zone.get<Component::Entity_Type>(entity) == Component::Entity_Type::item) {
-
+              Utilities::Log("Death_Control::Death_Sequence() Item lands on the ground");
             } else if (World::zone.any_of<Item_Component::Equipment>(entity)) {
               World::zone.emplace<Component::Drop_Equipment>(entity);
               World::zone.emplace<Death_Component::Corpse>(entity);

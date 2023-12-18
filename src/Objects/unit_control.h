@@ -134,7 +134,7 @@ namespace User_Mouse_Input {
     std::vector<entt::entity> selected;
     std::vector<entt::entity> selectedEnemy;
 
-    auto soldier_view = zone.view<Component::Interaction_Rect, Component::Renderable>();
+    auto soldier_view = zone.view<Component::Interaction_Rect, Component::Renderable>(entt::exclude<Item_Component::Ground_Item>);
     for (auto soldier: soldier_view) {
       auto &interaction = soldier_view.get<Component::Interaction_Rect>(soldier);
       if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_World_Cursor(interaction.rect)) {

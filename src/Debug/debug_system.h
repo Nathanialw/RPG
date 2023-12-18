@@ -1,15 +1,15 @@
 #pragma once
 
+#include "camera.h"
 #include "components.h"
+#include "debug_components.h"
 #include "graphics.h"
+#include "mouse_control.h"
 #include "scene.h"
 #include "sstream"
 #include "timer.h"
-#include "mouse_control.h"
 #include <SDL2/SDL_render.h>
 #include <algorithm>
-#include "camera.h"
-#include "debug_components.h"
 
 using namespace Scene;
 
@@ -22,7 +22,7 @@ namespace Debug_System {
     //collision radius
     //	mass
     //SDL_Rect j = { sx, sy, 30, 30 };
-    ////SDL_RenderDrawRect(Graphics::renderer, &j);			
+    ////SDL_RenderDrawRect(Graphics::renderer, &j);
     Graphics::Surface_Data x_Position = Graphics::Load_Text_Texture(std::to_string(int(x)), {255, 0, 133});
     Graphics::Surface_Data y_Position = Graphics::Load_Text_Texture(std::to_string(int(y)), {255, 133, 0});
     //Surface_Data collision_Radius = Graphics::Load_Text_Texture(std::to_string(mas), { 133,133,133 }, renderer);
@@ -41,7 +41,7 @@ namespace Debug_System {
     //SDL_Rect c = { sx, sy+20, 15, 10 };
     //SDL_RenderCopy(renderer, collision_Radius.pTexture, &collision_Radius.k, &c);
     //SDL_Rect d = { sx, sy+30, 15, 10 };
-    //SDL_RenderCopy(renderer, mass.pTexture, &mass.k, &d);			
+    //SDL_RenderCopy(renderer, mass.pTexture, &mass.k, &d);
     //SDL_DestroyTexture(collision_Radius.pTexture);
     //SDL_DestroyTexture(mass.pTexture);
     SDL_DestroyTexture(x_Position.pTexture);
@@ -50,95 +50,67 @@ namespace Debug_System {
 
   Graphics::Surface_Data framerate;
   Graphics::Surface_Data timeStep;
+  Graphics::Surface_Data loopTextures[Timer::SIZE];
   Graphics::Surface_Data numObjects;
-  Graphics::Surface_Data numRendered;
-  Graphics::Surface_Data renderChecks;
-  Graphics::Surface_Data collisionChecks;
-  Graphics::Surface_Data renderComponent;
-  Graphics::Surface_Data treeSize;
-  bool frameRateMode = true;
-  bool frameTimeMode = false;
 
-  void Toggle_Frame_Rate_Mode() {
-    if (frameRateMode) {
-      frameRateMode = false;
-      frameTimeMode = true;
-    } else {
-      frameRateMode = true;
-      frameTimeMode = false;
+  void Show_Settings(Component::Camera &camera) {
+    float yPosition = 256.0f;
+    for (int i = 1; i < Debug::Settings::SIZE; ++i) {
+      yPosition += 48.0f ;//(float) numObjects.k.h;
+      if (Debug::settings[i]) {
+        SDL_DestroyTexture(numObjects.pTexture);
+        std::string text = Debug::labels[i] + ":  " + std::to_string(Debug::settingsValue[i]);
+        numObjects = Graphics::Load_Text_Texture(text, {133, 255, 133});
+        SDL_FRect d = {0 / camera.scale.x, yPosition / camera.scale.y, 256.0f / camera.scale.x, 48.0f / camera.scale.y};
+        SDL_RenderCopyF(Graphics::renderer, numObjects.pTexture, &numObjects.k, &d);
+      }
     }
-    iFramePollRate = 500.0f;
+
+    if (Debug::settings[Debug::Settings::loopTimers]) {
+      for (int i = 0; i < Timer::SIZE; ++i) {
+        if (iFramePollRate >= 400.0f) {
+          SDL_DestroyTexture(loopTextures[i].pTexture);
+          std::string text = Timer::GameStateText[i] + ":  " + std::to_string(Timer::GameStateValue[i]);
+          loopTextures[i] = Graphics::Load_Text_Texture(text, {133, 255, 133});
+        }
+        yPosition += 48.0f;
+        SDL_FRect d = {0 / camera.scale.x, yPosition / camera.scale.y, 256.0f / camera.scale.x, 48.0f / camera.scale.y};
+        SDL_RenderCopyF(Graphics::renderer, loopTextures[i].pTexture, &loopTextures[i].k, &d);
+      }
+    }
+  }
+
+  void Update_Settings() {
+    Debug::settingsValue[Debug::EntityCount] = World::zone.capacity();
+    Debug::settingsValue[Debug::NumRendered] = World::zone.view<Component::Renderable>().size();
+    Debug::settingsValue[Debug::TreeSize] = World::zone.view<Component::Interaction_Rect>().size();
   }
 
   void Framerate(Component::Camera &camera) {
+    Update_Settings();
     if (Debug::settings[Debug::Settings::Framerate]) {
       iFramePollRate += Timer::timeStep;
-      if (iFramePollRate >= 1000.0f) {
-        iFramePollRate = 0.0f;
-        if (frameRateMode) {
-          SDL_DestroyTexture(framerate.pTexture);
-          framerate = Graphics::Load_Text_Texture(std::to_string((int) Timer::fps_avgFPS), {133, 255, 133});
-
-          SDL_DestroyTexture(timeStep.pTexture);
-          timeStep = Graphics::Load_Text_Texture(std::to_string(Timer::timeStep), {133, 255, 133});
-        }
+      if (iFramePollRate >= 400.0f) {
+        SDL_DestroyTexture(framerate.pTexture);
+        framerate = Graphics::Load_Text_Texture(std::to_string((int) Timer::fps_avgFPS), {133, 255, 133});
+        SDL_DestroyTexture(timeStep.pTexture);
+        timeStep = Graphics::Load_Text_Texture(std::to_string(Timer::timeStep), {133, 255, 133});
       }
-      SDL_FRect c = {0.0f, 0.0f, 96.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_FRect c = {0.0f, 0.0f, 96.0f / camera.scale.x, 32.0f / camera.scale.y};
       SDL_RenderCopyF(Graphics::renderer, framerate.pTexture, &framerate.k, &c);
 
-      SDL_FRect d = {128.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
+      SDL_FRect d = {128.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 32.0f / camera.scale.y};
       SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &framerate.k, &d);
     }
-    if (Debug::settings[Debug::Settings::InteractionRects]) {
-//      Debug::numEntities = World::zone.view<Component::Position>().size();
-      Debug::numEntities = World::zone.capacity();
 
-      SDL_DestroyTexture(numObjects.pTexture);
-      numObjects = Graphics::Load_Text_Texture(std::to_string(Debug::numEntities), {133, 255, 133});
-      SDL_FRect d = {256.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
-      SDL_RenderCopyF(Graphics::renderer, numObjects.pTexture, &numObjects.k, &d);
-    }
-
-    if (Debug::settings[Debug::Settings::EntityCount]) {
-      SDL_DestroyTexture(numRendered.pTexture);
-      numRendered = Graphics::Load_Text_Texture(std::to_string(Debug::numRendered), {133, 255, 133});
-      SDL_FRect d = {372.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
-      SDL_RenderCopyF(Graphics::renderer, numRendered.pTexture, &numRendered.k, &d);
-    }
-
-    if (Debug::settings[Debug::Settings::RenderChecks]) {
-      SDL_DestroyTexture(renderChecks.pTexture);
-      renderChecks = Graphics::Load_Text_Texture(std::to_string(Debug::renderChecks), {133, 255, 133});
-      SDL_FRect d = {512.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
-      SDL_RenderCopyF(Graphics::renderer, renderChecks.pTexture, &renderChecks.k, &d);
-    }
-
-    if (Debug::settings[Debug::Settings::CollisionChecks]) {
-      SDL_DestroyTexture(collisionChecks.pTexture);
-      collisionChecks = Graphics::Load_Text_Texture(std::to_string(Debug::collisionChecks), {133, 255, 133});
-      SDL_FRect d = {640.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
-      SDL_RenderCopyF(Graphics::renderer, collisionChecks.pTexture, &collisionChecks.k, &d);
-    }
-
-    if (Debug::settings[Debug::Settings::RenderComponent]) {
-      Debug::renderComponent = World::zone.view<Component::Renderable>().size();
-
-      SDL_DestroyTexture(renderComponent.pTexture);
-      renderComponent = Graphics::Load_Text_Texture(std::to_string(Debug::renderComponent), {133, 255, 133});
-      SDL_FRect d = {768.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
-      SDL_RenderCopyF(Graphics::renderer, renderComponent.pTexture, &renderComponent.k, &d);
-    }
-
-    if (Debug::settings[Debug::Settings::TreeSize]) {
-      SDL_DestroyTexture(treeSize.pTexture);
-      treeSize = Graphics::Load_Text_Texture(std::to_string(Debug::treeSize), {133, 255, 133});
-      SDL_FRect d = {896.0f / camera.scale.x, 0.0f, 128.0f / camera.scale.x, 64.0f / camera.scale.y};
-      SDL_RenderCopyF(Graphics::renderer, treeSize.pTexture, &treeSize.k, &d);
+    Show_Settings(camera);
+    if (iFramePollRate >= 400.0f) {
+      iFramePollRate = 0.0f;
     }
   }
 
   void Debug_Positions() {
-    if (Debug::settings[Debug::Settings::NumRendered]) {
+    if (Debug::settings[Debug::Settings::entityPositions]) {
       auto view1 = World::zone.view<Component::Camera>();
       auto view = World::zone.view<Component::Position, Component::Renderable>();
 
@@ -161,9 +133,4 @@ namespace Debug_System {
   void Debugger() {
     //Framerate();
   }
-}
-
-
-
-
-
+}// namespace Debug_System

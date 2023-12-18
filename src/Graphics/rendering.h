@@ -406,7 +406,7 @@ namespace Rendering {
           }
         }
       }
-      Debug::renderChecks = i;
+      Debug::settingsValue[Debug::RenderChecks] = i;
     }
   }
 

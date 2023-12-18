@@ -1,12 +1,12 @@
 #pragma once
 
+#include "create_entities.h"
+#include "dynamic_entity_loader.h"
 #include "entt/entt.hpp"
+#include "game_objects.h"
 #include "graphics.h"
 #include "procedural_generator.h"
-#include "create_entities.h"
-#include "game_objects.h"
 #include <map>
-#include "dynamic_entity_loader.h"
 
 namespace World_Data {
   SDL_Texture *tileTextures[200];
@@ -76,7 +76,7 @@ namespace World_Data {
   };
 
   //    std::vector<Zone> World;
-}
+}// namespace World_Data
 
 namespace World {
   World_Data::Offset worldOffset;
@@ -126,7 +126,6 @@ namespace World {
 
     //go through all tiles and and ust the position to generate a random number, use that number to determine what objects are on each tile
     //        Create_Map({0.0f, 0.0f});
-
   }
 
   void Generate() {
@@ -176,7 +175,6 @@ namespace World {
   }
 
   void Get_Size() {
-
   }
 
   std::vector<bool> tiles = {};
@@ -238,7 +236,7 @@ namespace World {
   }
 
   void Init_Tile_Objects() {
-      int numUnits = 0;
+    int numUnits = 0;
     float x = 0.0f;
     float y = 0.0f;
     Procedural_Components::Seed seed;
@@ -254,11 +252,11 @@ namespace World {
           int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::units["wolves"].size() - 1, seed);
           db::Unit_Data data = Game_Objects_Lists::units["wolves"][n];
           Create_Entities::Create_Entity(World::zone, (i * size.width) + x, (j * size.height) + y, "", false, data, false);
-            numUnits++;
+          numUnits++;
         }
       }
     }
-      std::cout << "number of units: "<< numUnits << std::endl;
+    std::cout << "number of units: " << numUnits << std::endl;
   }
 
   //    The first time the tile is rendered generate objects but only the first time
@@ -267,7 +265,7 @@ namespace World {
   //position of tile
   void Generate_Trees(SDL_FRect rect, Tile &tile) {
     Procedural_Components::Seed seed;
-//    collisionBox;
+    //    collisionBox;
     Collision::aabb aabb;
     tmx::Vector2<float> offset = {0.0f, 0.0f};
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs = {};
@@ -315,13 +313,13 @@ namespace World {
           rect.w = size.width;
           rect.h = size.height;
           SDL_Texture *texture = World_Data::tiles[type];
-//                if entities created do nothing
+          //                if entities created do nothing
           if (tilesToRender[i][j].created) {
 
           }
-//                else create them
+          //                else create them
           else {
-//            Utilities::Log("creating tile objects");
+            //            Utilities::Log("creating tile objects");
             Generate_Trees(rect, tilesToRender[i][j]);
             tilesToRender[i][j].created = true;
           }
@@ -336,4 +334,4 @@ namespace World {
       }
     }
   }
-}
+}// namespace World

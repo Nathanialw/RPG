@@ -198,7 +198,7 @@ namespace UI {
     void Unequip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, const Item_Component::Item_Type &itemType, entt::entity &player) {
       auto &equipment = zone.get<Item_Component::Equipment>(player);
       item = equipment.equippedItems[itemType];
-      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int)itemType].texture = NULL;
+      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType].texture = NULL;
 
       equipment.equippedItems[itemType] = Item_Component::emptyEquipSlot;
       mouseHasItem = true;
@@ -208,7 +208,7 @@ namespace UI {
 
     void Equip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, Item_Component::Item_Type &itemType, entt::entity &player) {
       auto &equipment = zone.get<Item_Component::Equipment>(player);
-      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int)itemType] = zone.get<Rendering_Components::Portrait>(item);
+      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
 
       equipment.equippedItems[itemType] = item;
       mouseHasItem = false;
@@ -218,7 +218,7 @@ namespace UI {
 
     void Equip_Item_And_Swap_With_Mouse(entt::registry &zone, entt::entity &item, Item_Component::Item_Type &itemType, entt::entity &player) {
       auto &equipment = zone.get<Item_Component::Equipment>(player);
-      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int)itemType] = zone.get<Rendering_Components::Portrait>(item);
+      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
 
       entt::entity itemInSlot = equipment.equippedItems[itemType];
       equipment.equippedItems[itemType] = item;
@@ -319,7 +319,7 @@ namespace UI {
       auto type = zone.get<Item_Component::Item_Type>(itemInSlot);
       entt::entity equippedItem = equipment.equippedItems[type];
       equipment.equippedItems[type] = itemInSlot;
-      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int)type] = zone.get<Rendering_Components::Portrait>(itemInSlot);
+      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) type] = zone.get<Rendering_Components::Portrait>(itemInSlot);
 
       if (equippedItem == Item_Component::emptyEquipSlot) {
         Bag_UI::UI_bagSlots[slotNum] = Bag_UI::emptyBagSlot;
@@ -336,7 +336,6 @@ namespace UI {
       auto view = zone.view<Component::Input, Component::Position>();
       for (auto entity: view) {
         auto &entityPosition = view.get<Component::Position>(entity);
-
         auto &itemPosition = zone.get<Component::Position>(item_ID);
         itemPosition = entityPosition;
 
@@ -350,10 +349,18 @@ namespace UI {
 
         World::zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
         World::zone.emplace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.clip.w, (float) clipRect.clip.h);
-
         World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
-
         World::zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
+
+//        if (zone.any_of<Component::Remove_From_Object_Tree>(item_ID)) {
+//          Utilities::Log("item still has Remove_From_Object_Tree");
+//          zone.remove<Component::Remove_From_Object_Tree>(item_ID);
+//        }
+        //for some reason it does not remove this component in Remove_From_Tree even though it should
+        if (zone.any_of<Component::In_Object_Tree>(item_ID)) {
+          Utilities::Log("item was still has In_Object_Tree");
+          zone.remove<Component::In_Object_Tree>(item_ID);
+        }
         auto &action = World::zone.get<Action_Component::Action>(item_ID);
         Action_Component::Set_State(action, Action_Component::Action_State::dying);
       }
@@ -408,7 +415,7 @@ namespace UI {
       }
       //set overburdened message here here
       //cane use a nameplate to write it out above sprites head
-      std::cout << "I am overburdened" << std::endl;
+//      std::cout << "I am overburdened" << std::endl;
       return false;
     }
   }
@@ -431,65 +438,6 @@ namespace UI {
         Bag_UI::Render_Bag_Slot(zone, renderer, camera);
       }
     }
-  }
-
-  bool Check_If_Arrived(const float &unitX, const float &unitY, const float &destinationX, const float &destinationY) {
-    float accuracy = 5.0f;
-    if (unitX + accuracy > destinationX &&
-        unitX - accuracy < destinationX &&
-        unitY - accuracy < destinationY &&
-        unitY + accuracy > destinationY) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  float Player_Move_Poll = 0;
-
-  void Mouse_Move_To_Item() {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
-    Player_Move_Poll += Timer::timeStep;
-    if (Player_Move_Poll >= 200) {
-      Player_Move_Poll = 0;
-      auto view = World::zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Action_Component::Action, Component::Moving>();
-      for (auto entity: view) {
-        const auto &x = view.get<Component::Position>(entity);
-        const auto &y = view.get<Component::Position>(entity);
-        auto &action = view.get<Action_Component::Action>(entity);
-        auto &v = view.get<Component::Velocity>(entity);
-        auto &mov = view.get<Component::Pickup_Item>(entity);
-        Action_Component::Set_State(action, Action_Component::walk);
-        v.magnitude.x = v.speed * (mov.x - x.x);
-        v.magnitude.y = v.speed * (mov.y - y.y);
-      }
-    }
-  }
-
-  void Mouse_Move_Arrived_Pickup_Item(entt::registry &zone, bool &isItemCurrentlyHeld) {
-    auto view = World::zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Pickup_Item>();
-    for (auto entity: view) {
-      auto &action = view.get<Action_Component::Action>(entity);
-      auto &v = view.get<Component::Velocity>(entity);
-      const auto &position = view.get<Component::Position>(entity);
-      auto &itemData = view.get<Component::Pickup_Item>(entity);
-      if (Check_If_Arrived(position.x, position.y, itemData.x, itemData.y)) {
-        if (action.state == Action_Component::Action_State::walk) {
-          v.magnitude.x = 0.0f;
-          v.magnitude.y = 0.0f;
-          Action_Component::Set_State(action, Action_Component::Action_State::idle);
-          World::zone.remove<Component::Moving>(entity);
-        }
-
-        //pickup Item
-        Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, isItemCurrentlyHeld);
-        World::zone.remove<Component::Pickup_Item>(entity);
-      }
-    }
-  }
-
-  void Move_To_Item_Routine(entt::registry &zone, bool isItemCurrentlyHeld) {
-    Mouse_Move_To_Item();
-    Mouse_Move_Arrived_Pickup_Item(zone, isItemCurrentlyHeld);
   }
 
   //run at game start to init bag vector

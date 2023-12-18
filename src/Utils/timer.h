@@ -1,10 +1,10 @@
 #pragma once
 
 #include "SDL2/SDL.h"
-#include <SDL2/SDL_timer.h>
-#include <iostream>
 #include "math.h"
 #include "utilities.h"
+#include <SDL2/SDL_timer.h>
+#include <iostream>
 
 namespace Timer {
 
@@ -20,6 +20,33 @@ namespace Timer {
   int64_t fps_currentFrame = 0;
 
   bool lockFramerate = false;
+
+  enum GameState {
+    movement,
+    collision,
+    status,
+    render,
+    update_quad_tree,
+    renderpresent,
+    SIZE
+  };
+  std::array<float, SIZE> GameStateValue;
+  std::array<std::string, SIZE> GameStateText = {"movement", "collision", "status", "render", "update quad tree", "render present"};
+
+  struct Game_Loop_Timer {
+    int64_t startPerf = 0;
+    int64_t endPerf = 0;
+  };
+  Game_Loop_Timer gameLoopTimer;
+
+  void Update_Game_Loop_Timers(float &stateTime, Game_Loop_Timer &timer) {
+    timer.endPerf = SDL_GetPerformanceCounter();
+    int64_t sstateTime = (timer.endPerf - timer.startPerf);
+    int64_t dd = SDL_GetPerformanceFrequency();
+    float gg = (float)sstateTime / (float)dd;
+    stateTime = gg * 1000.0f;
+    timer.startPerf = timer.endPerf;
+  }
 
   void Pause_Control() {
     if (pause) {
@@ -40,8 +67,11 @@ namespace Timer {
 
   void Calculate_Timestep() {
     endPerf = SDL_GetPerformanceCounter();
-    timeStep = ((double) endPerf - (double) startPerf) / (double) SDL_GetPerformanceFrequency() * 1000.0f;
-    startPerf = SDL_GetPerformanceCounter();
+    int64_t sstateTime = (endPerf - startPerf);
+    int64_t dd = SDL_GetPerformanceFrequency();
+    float gg = (float)sstateTime / (float)dd;
+    timeStep = gg * 1000.0f;
+    startPerf = endPerf;
     if (lockFramerate) {
       if (timeStep < 16.66f) {
         SDL_Delay(floor(16.66f - timeStep));
@@ -65,12 +95,13 @@ namespace Timer {
       fCounter_MS = 0.0f;
     }
 
-    bool Calc() { //controls how often collision calculates
+    bool Calc() {//controls how often collision calculates
       fCounter_MS -= Timer::timeStep;
       if (fCounter_MS <= 0.0f) {
-        fCounter_MS = fTime_between; //every this many milliseconds
+        fCounter_MS = fTime_between;//every this many milliseconds
         return true;
-      } else return false;
+      } else
+        return false;
     }
   };
-}
+}// namespace Timer

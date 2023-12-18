@@ -1,24 +1,24 @@
 #pragma once
-#include <SDL2/SDL.h>
-#include "graphics.h"
-#include "rendering.h"
-#include "init.h"
-#include "event_handler.h"
+#include "ai_control.h"
+#include "character_stats.h"
 #include "collision.h"
 #include "debug_system.h"
-#include "ai_control.h"
+#include "event_handler.h"
+#include "formation_collisions.h"
+#include "graphics.h"
+#include "init.h"
 #include "interface.h"
+#include "map.h"
 #include "movement.h"
+#include "rendering.h"
+#include "sounds.h"
 #include "spells.h"
+#include "squad_control.h"
+#include "texture_packer.h"
+#include "ui_gameloop_function_times.h"
 #include "unit_positions.h"
 #include "unit_status.h"
-#include "formation_collisions.h"
-#include "squad_control.h"
-#include "character_stats.h"
-#include "map.h"
-#include "texture_packer.h"
-#include "sounds.h"
-#include "ui_gameloop_function_times.h"
+#include <SDL2/SDL.h>
 
 namespace Game_Loop {
 
@@ -32,7 +32,6 @@ namespace Game_Loop {
     }
   }
 
-
   void Game_Loop() {
     Game_State();
     Timer::startPerf = SDL_GetPerformanceCounter();
@@ -41,56 +40,30 @@ namespace Game_Loop {
       //Squad_Control::Create_And_Fill_New_Squad(World::zone);
       //Test_Units::Create_Formation(World::zone);
 
-        {
-            Event_Handler::Update_User_Input(World::zone);
-            Character_Stats::Update_Items(World::zone);
+      Event_Handler::Update_User_Input(World::zone);
+      Character_Stats::Update_Items(World::zone);
+      Player_Control::Move_To_Atack_Routine(World::zone);
+      AI::Update_AI(World::zone);
+      Spells::Update_Spells();
+      Combat_Control::Update_Attacks(World::zone);
+      Movement::Update_Entity_Positions(World::zone);
+      Update_Game_Loop_Timers(Timer::GameStateValue[Timer::movement], Timer::gameLoopTimer);
 
-            UI::Move_To_Item_Routine(World::zone, Mouse::itemCurrentlyHeld);
-//      Death_Control::Dead_Entity_Routine(World::zone);
-            Player_Control::Move_To_Atack_Routine(World::zone);
+      Collision::Collision_Routine(World::zone);
+      Update_Game_Loop_Timers(Timer::GameStateValue[Timer::collision], Timer::gameLoopTimer);
 
-            //std::cout << "Player_Input = Good" << std::endl;
-            AI::Update_AI(World::zone);
+      Unit_Status::Update_Unit_Status(World::zone);
+      Update_Game_Loop_Timers(Timer::GameStateValue[Timer::status], Timer::gameLoopTimer);
 
-            //std::cout << "Update_Attacks = Good" << std::endl;
-            Spells::Update_Spells();
+      Rendering::Rendering(World::zone);
+      Update_Game_Loop_Timers(Timer::GameStateValue[Timer::render], Timer::gameLoopTimer);
 
-            //std::cout << "AI = Good" << std::endl;
-            Combat_Control::Update_Attacks(World::zone);
+      Dynamic_Quad_Tree::Update_Tree_Routine(World::zone);
+      Update_Game_Loop_Timers(Timer::GameStateValue[Timer::update_quad_tree], Timer::gameLoopTimer);
 
-
-            //std::cout << "Update_Spells = Good" << std::endl;
-            Movement::Update_Entity_Positions(World::zone);
-            //std::cout << "Movement_Handler = Good" << std::endl;
-        }
-        {
-            Collision::Collision_Routine(World::zone);
-        }
-      //	Unit_Position::Update_Formation_Positions(World::zone);
-
-      //std::cout << "Update_Formation_Rects = Good" << std::endl;
-
-      //Formation_Collision::Test_Collision(World::zone);
-
-      //std::cout << "Collisions = Good" << std::endl;
-        {
-            Unit_Status::Update_Unit_Status(World::zone);
-        }
-      //std::cout << "Update_Unit_Status = Good" << std::endl;
-        {
-            Rendering::Rendering(World::zone);
-        }
-
-        {
-            Dynamic_Quad_Tree::Update_Tree_Routine(World::zone);
-        }
-
-        {
-            Rendering::Present();
-        }
-      //std::cout << "Rendering = Good" << std::endl;
+      Rendering::Present();
       Timer::Calculate_Timestep();
-      //std::cout << "frameTime = Good" << std::endl;
+      Update_Game_Loop_Timers(Timer::GameStateValue[Timer::renderpresent], Timer::gameLoopTimer);
     }
   }
-}
+}// namespace Game_Loop

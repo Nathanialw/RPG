@@ -50,156 +50,82 @@ namespace Input_Control {
       if (World::zone.any_of<Component::Attacking>(player_ID) == true) {
         return true;
       }
-
-      if (showGroundItems) {
-        zone.remove<Component::Pickup_Item>(player_ID);
-        zone.remove<Component::Moving>(player_ID);
-        zone.remove<Player_Component::Attack_Move>(player_ID);
-        auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();
-        for (auto item_ID: view) {
-          ///get the item ID the mouse is over nad plug it into the move to pick up function
-          auto Item_Name_Box = view.get<Ground_Item>(item_ID).ground_name;
-          ///only if the mouse intersects with the item box
-          if (Mouse::bRect_inside_Cursor(Item_Name_Box)) {
-            if (Input_Control::Move_To_Item_From_Name(zone, player_ID, playerPosition, item_ID)) {
-              return true;
-            };
+    }
+    SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+    Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);
+    if (targetData.b == true) {
+      //      zone.remove<Component::Pickup_Item>(player_ID);
+      //      zone.remove<Component::Moving>(player_ID);
+      //      zone.remove<Player_Component::Attack_Move>(player_ID);
+      ///reset target data
+      Component::Entity_Type &type = zone.get<Component::Entity_Type>(targetData.entity_ID);
+      Component::Position &targetPosition = zone.get<Component::Position>(targetData.entity_ID);
+      Component::Radius &targetRadius = zone.get<Component::Radius>(targetData.entity_ID);
+      switch (type) {
+        case Component::Entity_Type::foliage:
+          break;
+        case Component::Entity_Type::spell:
+          break;
+        case Component::Entity_Type::object:
+          Player_Control::Interact_Order(zone, player_ID, targetData.entity_ID, targetRadius);
+          return true;
+        case Component::Entity_Type::prop:
+          break;
+        case Component::Entity_Type::unit: {
+          if (player_ID != targetData.entity_ID) {
+            Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetRadius);
+            return true;
+          } else {
+            //  std::cout << "no target, 1 is targetting player: " << testasd(player_ID, targetData.entity_ID) << std::endl;
           }
         }
-      }
-      SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
-      Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);
-      if (targetData.b == true) {
-        zone.remove<Component::Pickup_Item>(player_ID);
-        zone.remove<Component::Moving>(player_ID);
-        zone.remove<Player_Component::Attack_Move>(player_ID);
-        ///reset target data
-        Component::Entity_Type &type = zone.get<Component::Entity_Type>(targetData.entity_ID);
-        Component::Position &targetPosition = zone.get<Component::Position>(targetData.entity_ID);
-        Component::Radius &targetRadius = zone.get<Component::Radius>(targetData.entity_ID);
-        switch (type) {
-          case Component::Entity_Type::foliage:
-            break;
-          case Component::Entity_Type::spell:
-            break;
-          case Component::Entity_Type::object:
-            Player_Control::Interact_Order(zone, player_ID, targetData.entity_ID, targetRadius);
-            return true;
-          case Component::Entity_Type::prop:
-            break;
-          case Component::Entity_Type::unit: {
-            if (player_ID != targetData.entity_ID) {
-              Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetRadius);
+
+        case Component::Entity_Type::item: {
+          if (!showGroundItems) {
+            auto &radius = zone.get<Component::Radius>(player_ID).fRadius;
+            SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
+            SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
+            ///if player is next to the item
+            if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
+              ///pick up Item
+              Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
+              UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
+              ///stop movement
+              auto &action = zone.get<Action_Component::Action>(player_ID);
+              zone.remove<Component::Moving>(player_ID);
               return true;
             } else {
-              //  std::cout << "no target, 1 is targetting player: " << testasd(player_ID, targetData.entity_ID) << std::endl;
+              ///Move to Item then pick it up
+              Pick_Up_Item_Order(zone, player_ID, targetData.entity_ID, targetPosition.x, targetPosition.y);
+              return true;
             }
           }
-
-          case Component::Entity_Type::item: {
-            if (!showGroundItems) {
-              auto &radius = zone.get<Component::Radius>(player_ID).fRadius;
-              SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
-              SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
-              ///if player is next to the item
-              if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
-                ///pick up Item
-                Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
-                UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
-                ///stop movement
-                auto &action = zone.get<Action_Component::Action>(player_ID);
-                zone.remove<Component::Moving>(player_ID);
-                return true;
-              } else {
-                ///Move to Item then pick it up
-                Pick_Up_Item_Order(zone, player_ID, targetData.entity_ID, targetPosition.x, targetPosition.y);
+          if (showGroundItems) {
+            zone.remove<Component::Pickup_Item>(player_ID);
+            zone.remove<Component::Moving>(player_ID);
+            zone.remove<Player_Component::Attack_Move>(player_ID);
+            zone.remove<Player_Component::Interact_Move>(player_ID);
+            auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();
+            for (auto item_ID: view) {
+              ///get the item ID the mouse is over nad plug it into the move to pick up function
+              auto Item_Name_Box = view.get<Ground_Item>(item_ID).ground_name;
+              ///only if the mouse intersects with the item box
+              if (Mouse::bRect_inside_Cursor(Item_Name_Box)) {
+                if (Move_To_Item_From_Name(zone, player_ID, playerPosition, item_ID)) {
+                  return true;
+                };
                 return true;
               }
             }
           }
-          case Component::Entity_Type::building: {
-            Utilities::Log("Component::Entity_Type::building not implemented");
-          }
-          case Component::Entity_Type::SIZE: {
-            Utilities::Log("Component::Entity_Type::SIZE case should not be reached in Check_For_Mouse_Target()");
-          }
+        }
+        case Component::Entity_Type::building: {
+          Utilities::Log("Component::Entity_Type::building not implemented");
+        }
+        case Component::Entity_Type::SIZE: {
+          Utilities::Log("Component::Entity_Type::SIZE case should not be reached in Check_For_Mouse_Target()");
         }
       }
-    }
-    //        if units ARE selected
-    else {
-      SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
-      Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);
-      if (targetData.b == true) {
-        Component::Entity_Type &type = zone.get<Component::Entity_Type>(targetData.entity_ID);
-        Component::Position &targetPosition = zone.get<Component::Position>(targetData.entity_ID);
-        Component::Radius &targetRadius = zone.get<Component::Radius>(targetData.entity_ID);
-        switch (type) {
-          case Component::Entity_Type::foliage:
-            break;
-          case Component::Entity_Type::spell:
-            break;
-          case Component::Entity_Type::object:
-            if (player_ID != targetData.entity_ID) {
-              // sent units to the unit
-              //if it is enemy attack it
-              User_Mouse_Input::Command_Unit_Attack(zone, player_ID, targetData.entity_ID, targetRadius);
-              //                        Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetPosition, targetRadius);
-              return true;
-            } else {
-              //else I dont know, do whatever, move to the unit
-              //                            User_Mouse_Input::Command_Unit_Move(zone);
-            }
-            break;
-          case Component::Entity_Type::prop:
-            break;
-
-          case Component::Entity_Type::unit: {
-            if (player_ID != targetData.entity_ID) {
-              // sent units to the unit
-              //if it is enemy attack it
-              User_Mouse_Input::Command_Unit_Attack(zone, player_ID, targetData.entity_ID, targetRadius);
-              //                        Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetPosition, targetRadius);
-              return true;
-            } else {
-              //else I dont know, do whatever, move to the unit
-              //                            User_Mouse_Input::Command_Unit_Move(zone);
-            }
-
-            case Component::Entity_Type::item: {
-              //              if (!showGroundItems) {
-              //                //send unit to go pick up item, and equip it maybe? maybe throw down what it is using, maybe create an interface to see the selected units equipped items ans inventory (I don't tihnk they have inventories yet)
-              //
-              //                auto &radius = zone.get<Component::Radius>(player_ID).fRadius;
-              //                SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
-              //                SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
-              //                ///if player is next to the item
-              //                if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
-              //                  ///pick up Item
-              //                  Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
-              //                  UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
-              //                  ///stop movement
-              //                  auto &action = zone.get<Action_Component::Action>(player_ID);
-              //                  Action_Component::Set_State(action, Action_Component::kneel);
-              //                  zone.remove<Component::Moving>(player_ID);
-              //                  return true;
-              //                } else {
-              //                  ///Move to Item then pick it up
-              //                  Pick_Up_Item_Order(zone, player_ID, targetData.entity_ID, targetPosition.x, targetPosition.y);
-              //                  return true;
-              //                }
-              //              }
-            }
-            case Component::Entity_Type::building: {
-              Utilities::Log("Component::Entity_Type::building not implemented");
-            }
-            case Component::Entity_Type::SIZE: {
-              Utilities::Log("Component::Entity_Type::SIZE case should not be reached in Check_For_Mouse_Target()");
-            }
-          }
-        }
-      }
-      return false;
     }
     return false;
   }

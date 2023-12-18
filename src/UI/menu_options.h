@@ -17,7 +17,7 @@ namespace Menu_Options {
   struct Menu_Options_Frame {
     UI::Image_Frame backgroundFrame;
     std::array<Option_Frame, Debug::Settings::SIZE> List;
-    std::array<const char *, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size"};
+    std::array<const char *, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers"};
   };
   Menu_Options_Frame Options;
 

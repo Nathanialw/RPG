@@ -1,25 +1,25 @@
 #pragma once
 
-#include <SDL2/SDL.h>
 #include "action_components.h"
-#include "components.h"
-#include "ui.h"
-#include "timer.h"
-#include "utilities.h"
-#include "unit_control.h"
-#include "movement.h"
-#include "death_spells.h"
-#include "spells.h"
 #include "ai_control.h"
-#include "input_control.h"
-#include "skills.h"
-#include "menu.h"
+#include "components.h"
+#include "death_spells.h"
 #include "events.h"
-#include "pause.h"
-#include "sinister_strike.h"
+#include "game_menu.h"
+#include "input_control.h"
 #include "interface.h"
 #include "items.h"
-#include "game_menu.h"
+#include "menu.h"
+#include "movement.h"
+#include "pause.h"
+#include "sinister_strike.h"
+#include "skills.h"
+#include "spells.h"
+#include "timer.h"
+#include "ui.h"
+#include "unit_control.h"
+#include "utilities.h"
+#include <SDL2/SDL.h>
 
 namespace Event_Handler {
 
@@ -27,17 +27,20 @@ namespace Event_Handler {
 
   const Uint8 *state = SDL_GetKeyboardState(NULL);
 
-  void Movement_Input(entt::registry &zone, Action_Component::Action &act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
+  void Movement_Input(entt::registry &zone, Action_Component::Action &act, entt::entity entity) {//can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
         if (act.state == Action_Component::idle || act.state == Action_Component::walk) {
           if (Events::event.type == SDL_KEYDOWN) {
             auto &vel = zone.get<Component::Velocity>(entity);
-            if (zone.any_of<Component::Mouse_Move>(entity)) {
-              zone.remove<Component::Mouse_Move>(entity);
-              vel.magnitude.x = 0.0f;
-              vel.magnitude.y = 0.0f;
-            }
+
+            zone.remove<Component::Mouse_Move>(entity);
+            zone.remove<Player_Component::Interact_Move>(entity);
+            zone.remove<Player_Component::Attack_Move>(entity);
+            World::zone.remove<Component::Pickup_Item>(entity);
+            vel.magnitude.x = 0.0f;
+            vel.magnitude.y = 0.0f;
+
             switch (Events::event.key.keysym.sym) {
               case SDLK_w:
                 zone.emplace_or_replace<Component::Moving>(entity);
@@ -130,7 +133,7 @@ namespace Event_Handler {
     }
   };
 
-  void Interface_Input(entt::registry &zone, Component::Camera &camera, Action_Component::Action &act, entt::entity entity) { //can return bools for x and y dir, and 2 enums for direction and state
+  void Interface_Input(entt::registry &zone, Component::Camera &camera, Action_Component::Action &act, entt::entity entity) {//can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
         switch (Events::event.key.keysym.sym) {
@@ -147,7 +150,6 @@ namespace Event_Handler {
             SDL_SetRelativeMouseMode(SDL_TRUE);
             break;
           case SDLK_5:
-            Debug_System::Toggle_Frame_Rate_Mode();
             break;
           case SDLK_6:
             Interface::gridDepth++;
@@ -209,15 +211,15 @@ namespace Event_Handler {
         if (Game_Menu_Control::Check_Menu_Button()) {
           return;
         }
-          //check if cursor is in the bag UI
+        //check if cursor is in the bag UI
         else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
           UI::Bag_UI::Interact_With_Bag(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera);
-          if (UI::Equipment_UI::Interact_With_Equipment(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera, player_ID) == true) {
+          if (UI::Equipment_UI::Interact_With_Equipment(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera, player_ID)) {
             //updates character stats
             zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
           }
         } else {
-          User_Mouse_Input::Selection_Box(zone); //if units are currently selected
+          User_Mouse_Input::Selection_Box(zone);//if units are currently selected
           UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
         }
       } else if (Events::event.button.button == SDL_BUTTON_RIGHT) {
@@ -230,9 +232,9 @@ namespace Event_Handler {
             return;
           }
         }
-        if (Mouse::itemCurrentlyHeld == false) {
+        if (!Mouse::itemCurrentlyHeld) {
           if (Input_Control::Check_For_Mouse_Target(zone, Items::showGroundItems, player_ID, playerPosition)) {
-            Mouse::bRight_Mouse_Pressed = false; //otherwise mouse move will override attack move
+            Mouse::bRight_Mouse_Pressed = false;//otherwise mouse move will override attack move
           } else if (!Mouse::bRight_Mouse_Pressed) {
             User_Mouse_Input::Update_Move_Command_Box();
             // if not seleciton units
@@ -245,10 +247,17 @@ namespace Event_Handler {
 
     if (Events::event.key.type == SDL_MOUSEBUTTONUP) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
-        User_Mouse_Input::Select_Units(World::zone, player_ID);
+        if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
+
+        }
+        else {
+          User_Mouse_Input::Select_Units(World::zone, player_ID);
+        }
       }
       if (Events::event.button.button == SDL_BUTTON_RIGHT) {
+        //        if (!UI::bToggleCharacterUI && !Mouse::bRect_inside_Cursor(UI::Character_UI)) {
         User_Mouse_Input::Command_Unit_Move(zone, player_ID);
+        //        }
         Mouse::bRight_Mouse_Pressed = false;
       }
     }
@@ -262,7 +271,7 @@ namespace Event_Handler {
         auto view = zone.view<Action_Component::Action, Component::Position, Component::Input, Component::Camera>();
         for (auto player_ID: view) {
           if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
-//            recenter camera on player
+            //            recenter camera on player
             UI_Spellbook::Update_Position();
             Action_Bar::Update_Position();
             Menu::Build_Menu();
@@ -270,8 +279,8 @@ namespace Event_Handler {
           }
 
           auto &playerPosition = view.get<Component::Position>(player_ID);
-//          auto &meleeRange = view.get<Component::Melee_Range>(player_ID);
-//          auto &playerVelocity = view.get<Component::Velocity>(player_ID);
+          //          auto &meleeRange = view.get<Component::Melee_Range>(player_ID);
+          //          auto &playerVelocity = view.get<Component::Velocity>(player_ID);
           auto &playerAction = view.get<Action_Component::Action>(player_ID);
           auto &camera = view.get<Component::Camera>(player_ID);
 
@@ -301,4 +310,4 @@ namespace Event_Handler {
   void Input_Handler(entt::registry &zone) {
     Update_User_Input(zone);
   }
-}
+}// namespace Event_Handler

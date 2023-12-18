@@ -248,7 +248,7 @@ namespace Collision {
       }
       world->ClearForces();
     }
-    Debug::collisionChecks = i;
+    Debug::settingsValue[Debug::CollisionChecks] = i;
   }
 
   void Collision_Routine(entt::registry &zone) {
