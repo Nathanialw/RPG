@@ -3,13 +3,13 @@
 #include "SDL2/SDL.h"
 #include "SDL_FontCache/SDL_FontCache.h"
 #include "base_structs.h"
-#include "events.h"
-#include "pause.h"
 #include "camera.h"
+#include "events.h"
+#include "menu_options.h"
+#include "mouse_control.h"
+#include "pause.h"
 #include "ui_elements.h"
 #include <array>
-#include "mouse_control.h"
-#include "menu_options.h"
 
 namespace Menu {
 
@@ -19,7 +19,7 @@ namespace Menu {
   };
 
   SDL_Color colors[2] = {{255, 255, 255},
-                         {255, 0,   0}};
+                         {255, 0, 0}};
 
   struct Button {
     SDL_FRect size;
@@ -70,7 +70,8 @@ namespace Menu {
     //        offset rest from first index
     for (int i = 1; i < tempMenu.buttons.size(); i++) {
       tempMenu.buttons[i].size = UI::Center_Rect(tempMenu.buttons[i].textSurface->clip_rect);
-      tempMenu.buttons[i].size.y = tempMenu.buttons[i - 1].size.y + tempMenu.buttons[i - 1].size.h + tempMenu.spacing;;
+      tempMenu.buttons[i].size.y = tempMenu.buttons[i - 1].size.y + tempMenu.buttons[i - 1].size.h + tempMenu.spacing;
+      ;
     }
     menu = tempMenu;
   }
@@ -120,7 +121,7 @@ namespace Menu {
 
         case SDL_WINDOWEVENT: {
           if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
-//            recenter camera on player
+            //            recenter camera on player
             UI_Spellbook::Update_Position();
             Action_Bar::Update_Position();
             Build_Menu();
@@ -138,7 +139,7 @@ namespace Menu {
         case SDL_MOUSEBUTTONDOWN: {
           for (int j = 0; j < menu.buttons.size(); j++) {
             if (Mouse::FRect_inside_Screen_Cursor(menu.buttons[j].scaledSize)) {
-//              returns the index of the array the mouse has clicked on
+              //              returns the index of the array the mouse has clicked on
               return j;
             }
           }
@@ -167,19 +168,19 @@ namespace Menu {
         i = Show_Menu(zone, camera);
       }
 
-      if (i == 0) // "continue"
+      if (i == 0)// "continue"
       {
         Toggle();
-      } else if (i == 1) // "options"
+      } else if (i == 1)// "options"
       {
-//        Toggle();
+        //        Toggle();
         i = Menu_Options::Show_Menu_Options(camera);
-      } else if (i == 2) // "exit"
+      } else if (i == 2)// "exit"
       {
-//        exit program
+        //        exit program
         Graphics::closeContext();
       }
     }
     //toggle pause with input
   }
-}
+}// namespace Menu

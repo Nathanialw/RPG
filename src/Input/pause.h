@@ -40,6 +40,7 @@ namespace Pause {
             SDL_Texture * texture = SDL_CreateTextureFromSurface(Graphics::renderer, menu[i]);
             SDL_FreeSurface(menu[i]);
             SDL_RenderCopyF(Graphics::renderer, texture, NULL, &pause);
+            SDL_DestroyTexture(texture);
         }
         return 3;
     }

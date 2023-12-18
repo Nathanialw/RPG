@@ -230,7 +230,7 @@ namespace Collision {
     int i = 0;
     //needs to be run multiple times per frame at low frame rate otherwise it will fall behind the rest of the program
     collision_Timestep += Timer::timeStep;
-    while (collision_Timestep > 0.0f) {
+    while (collision_Timestep > timeStep) {
       collision_Timestep -= timeStep;
       world->Step(timeStep, velocityIterations, positionIterations);
 
