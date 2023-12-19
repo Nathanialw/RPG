@@ -1,5 +1,4 @@
 #pragma once
-
 #include "action_components.h"
 #include "ai_control.h"
 #include "components.h"
@@ -24,111 +23,139 @@
 namespace Event_Handler {
 
   /*I will make a component that will be pased to this funtion tree so the functions can do work on the position value of an entity "<velocity> <player_controllable>" */
-
   const Uint8 *state = SDL_GetKeyboardState(NULL);
 
-  void Movement_Input(entt::registry &zone, Action_Component::Action &act, entt::entity entity) {//can return bools for x and y dir, and 2 enums for direction and state
+  std::vector<SDL_Keycode>keys;
+
+  void Movement_Input(entt::registry &zone, Action_Component::Action &act, entt::entity entity, Component::Input &input) {//can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
         if (act.state == Action_Component::idle || act.state == Action_Component::walk) {
-          if (Events::event.type == SDL_KEYDOWN) {
-            auto &vel = zone.get<Component::Velocity>(entity);
+          auto &vel = zone.get<Component::Velocity>(entity);
 
-            zone.remove<Component::Mouse_Move>(entity);
-            zone.remove<Player_Component::Interact_Move>(entity);
-            zone.remove<Player_Component::Attack_Move>(entity);
-            World::zone.remove<Component::Pickup_Item>(entity);
-            vel.magnitude.x = 0.0f;
-            vel.magnitude.y = 0.0f;
+          if (input.keyboardControl.contains(Events::event.key.keysym.sym)) {
+            if (!input.keyboardControl[Events::event.key.keysym.sym].pressed) {
+              input.keyboardControl[Events::event.key.keysym.sym].pressed = true;
+              if (zone.any_of<Player_Component::Interact_Move, Player_Component::Attack_Move, Component::Mouse_Move, Component::Pickup_Item>(entity)) {
+                zone.remove<Player_Component::Interact_Move>(entity);
+                zone.remove<Player_Component::Attack_Move>(entity);
+                zone.remove<Component::Mouse_Move>(entity);
+                zone.remove<Component::Pickup_Item>(entity);
+                vel.magnitude.x = 0.0f;
+                vel.magnitude.y = 0.0f;
+              }
 
-            switch (Events::event.key.keysym.sym) {
-              case SDLK_w:
-                zone.emplace_or_replace<Component::Moving>(entity);
-                vel.magnitude.y -= vel.speed;
-                Action_Component::Set_State(act, Action_Component::walk);
-                break;
-              case SDLK_s:
-                zone.emplace_or_replace<Component::Moving>(entity);
-                vel.magnitude.y += vel.speed;
-                Action_Component::Set_State(act, Action_Component::walk);
-                break;
-              case SDLK_a:
-                zone.emplace_or_replace<Component::Moving>(entity);
-                vel.magnitude.x -= vel.speed;
-                Action_Component::Set_State(act, Action_Component::walk);
-                break;
-              case SDLK_d:
-                zone.emplace_or_replace<Component::Moving>(entity);
-                vel.magnitude.x += vel.speed;
-                Action_Component::Set_State(act, Action_Component::walk);
-                break;
-              case SDLK_q:
-                zone.emplace_or_replace<Component::Moving>(entity);
-                vel.magnitude.y -= vel.speed;
-                vel.magnitude.x -= vel.speed;
-                Action_Component::Set_State(act, Action_Component::walk);
-                break;
-              case SDLK_e:
-                zone.emplace_or_replace<Component::Moving>(entity);
-                vel.magnitude.y -= vel.speed;
-                vel.magnitude.x += vel.speed;
-                Action_Component::Set_State(act, Action_Component::walk);
-                break;
-              case SDLK_c:
-                zone.emplace_or_replace<Component::Moving>(entity);
-                vel.magnitude.y += vel.speed;
-                vel.magnitude.x += vel.speed;
-                Action_Component::Set_State(act, Action_Component::walk);
-                break;
-              case SDLK_z:
-                zone.emplace_or_replace<Component::Moving>(entity);
-                vel.magnitude.y += vel.speed;
-                vel.magnitude.x -= vel.speed;
-                Action_Component::Set_State(act, Action_Component::walk);
-                break;
+              vel.magnitude.x += input.keyboardControl[Events::event.key.keysym.sym].velocity.x;
+              vel.magnitude.y += input.keyboardControl[Events::event.key.keysym.sym].velocity.y;
+              zone.emplace_or_replace<Component::Moving>(entity);
+              Action_Component::Set_State(act, Action_Component::walk);
             }
           }
+
+//
+//          switch (Events::event.key.keysym.sym) {
+//            case SDLK_w:
+//              zone.emplace_or_replace<Component::Moving>(entity);
+//              vel.magnitude.y -= vel.speed;
+//              Action_Component::Set_State(act, Action_Component::walk);
+////                break;
+//            case SDLK_s:
+//              zone.emplace_or_replace<Component::Moving>(entity);
+//              vel.magnitude.y += vel.speed;
+//              Action_Component::Set_State(act, Action_Component::walk);
+////                break;
+//            case SDLK_a:
+//              zone.emplace_or_replace<Component::Moving>(entity);
+//              vel.magnitude.x -= vel.speed;
+//              Action_Component::Set_State(act, Action_Component::walk);
+////                break;
+//            case SDLK_d:
+//              zone.emplace_or_replace<Component::Moving>(entity);
+//              vel.magnitude.x += vel.speed;
+//              Action_Component::Set_State(act, Action_Component::walk);
+////                break;
+//            case SDLK_q:
+//              zone.emplace_or_replace<Component::Moving>(entity);
+//              vel.magnitude.y -= vel.speed;
+//              vel.magnitude.x -= vel.speed;
+//              Action_Component::Set_State(act, Action_Component::walk);
+////                break;
+//            case SDLK_e:
+//              zone.emplace_or_replace<Component::Moving>(entity);
+//              vel.magnitude.y -= vel.speed;
+//              vel.magnitude.x += vel.speed;
+//              Action_Component::Set_State(act, Action_Component::walk);
+////                break;
+//            case SDLK_c:
+//              zone.emplace_or_replace<Component::Moving>(entity);
+//              vel.magnitude.y += vel.speed;
+//              vel.magnitude.x += vel.speed;
+//              Action_Component::Set_State(act, Action_Component::walk);
+////                break;
+//            case SDLK_z:
+//              zone.emplace_or_replace<Component::Moving>(entity);
+//              vel.magnitude.y += vel.speed;
+//              vel.magnitude.x -= vel.speed;
+//              Action_Component::Set_State(act, Action_Component::walk);
+////                break;
+//          }
         }
       } else if (Events::event.type == SDL_KEYUP) {
         auto &vel = zone.get<Component::Velocity>(entity);
-        switch (Events::event.key.keysym.sym) {
-          case SDLK_w:
-            zone.emplace_or_replace<Component::Moving>(entity);
-            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed;
-            break;
-          case SDLK_s:
-            zone.emplace_or_replace<Component::Moving>(entity);
-            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed;
-            break;
-          case SDLK_a:
-            zone.emplace_or_replace<Component::Moving>(entity);
-            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;
-            break;
-          case SDLK_d:
-            zone.emplace_or_replace<Component::Moving>(entity);
-            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;
-            break;
-          case SDLK_q:
-            zone.emplace_or_replace<Component::Moving>(entity);
-            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed;
-            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;
-            break;
-          case SDLK_e:
-            zone.emplace_or_replace<Component::Moving>(entity);
-            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed;
-            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;
-            break;
-          case SDLK_c:
-            zone.emplace_or_replace<Component::Moving>(entity);
-            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed;
-            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;
-            break;
-          case SDLK_z:
-            zone.emplace_or_replace<Component::Moving>(entity);
-            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed;
-            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;
-            break;
+        if (input.keyboardControl.contains(Events::event.key.keysym.sym)) {
+          if (input.keyboardControl[Events::event.key.keysym.sym].pressed) {
+            input.keyboardControl[Events::event.key.keysym.sym].pressed = false;
+            vel.magnitude.x = 0;
+            vel.magnitude.y = 0;
+          }
+          //recheck keys that are pressed
+          for (auto const &[key, value] : input.keyboardControl) {
+            if (value.pressed) {
+              vel.magnitude.x += input.keyboardControl[key].velocity.x;
+              vel.magnitude.y += input.keyboardControl[key].velocity.y;
+              zone.emplace_or_replace<Component::Moving>(entity);
+              Action_Component::Set_State(act, Action_Component::walk);
+            }
+          }
         }
+//        switch (Events::event.key.keysym.sym) {
+//          case SDLK_w:
+//            zone.emplace_or_replace<Component::Moving>(entity);
+//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed;
+////            break;
+//          case SDLK_s:
+//            zone.emplace_or_replace<Component::Moving>(entity);
+//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed;
+////            break;
+//          case SDLK_a:
+//            zone.emplace_or_replace<Component::Moving>(entity);
+//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;
+////            break;
+//          case SDLK_d:
+//            zone.emplace_or_replace<Component::Moving>(entity);
+//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;
+////            break;
+//          case SDLK_q:
+//            zone.emplace_or_replace<Component::Moving>(entity);
+//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed;
+//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;
+////            break;
+//          case SDLK_e:
+//            zone.emplace_or_replace<Component::Moving>(entity);
+//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed;
+//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;
+////            break;
+//          case SDLK_c:
+//            zone.emplace_or_replace<Component::Moving>(entity);
+//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed;
+//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;
+////            break;
+//          case SDLK_z:
+//            zone.emplace_or_replace<Component::Moving>(entity);
+//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed;
+//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;
+////            break;
+//        }
       }
     }
   };
@@ -139,6 +166,7 @@ namespace Event_Handler {
         switch (Events::event.key.keysym.sym) {
           //case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
           case SDLK_1:
+            Action_Component::Set_State(act, Action_Component::attack2);
             break;
           case SDLK_2:
             Sinister_Strike::Instant_Attack(zone, entity);
@@ -150,6 +178,7 @@ namespace Event_Handler {
             SDL_SetRelativeMouseMode(SDL_TRUE);
             break;
           case SDLK_5:
+            Action_Component::Set_State(act, Action_Component::kick);
             break;
           case SDLK_6:
             Interface::gridDepth++;
@@ -190,6 +219,9 @@ namespace Event_Handler {
             break;
           case SDLK_RALT:
             Items::showGroundItems = true;
+            break;
+          case SDLK_SPACE:
+            Action_Component::Set_State(act, Action_Component::jump);
             break;
         }
       } else if (Events::event.type == SDL_KEYUP) {
@@ -279,10 +311,9 @@ namespace Event_Handler {
           }
 
           auto &playerPosition = view.get<Component::Position>(player_ID);
-          //          auto &meleeRange = view.get<Component::Melee_Range>(player_ID);
-          //          auto &playerVelocity = view.get<Component::Velocity>(player_ID);
           auto &playerAction = view.get<Action_Component::Action>(player_ID);
           auto &camera = view.get<Component::Camera>(player_ID);
+          auto &input = view.get<Component::Input>(player_ID);
 
           if (Events::event.key.type == SDL_MOUSEWHEEL) {
             Interface::Update_Zoom(Events::event);
@@ -291,7 +322,7 @@ namespace Event_Handler {
             Mouse_Input(zone, player_ID, playerPosition, camera);
           } else if (Events::event.key.type == SDL_KEYDOWN || Events::event.key.type == SDL_KEYUP) {
             if (zone.any_of<Component::Velocity>(player_ID)) {
-              Movement_Input(zone, playerAction, player_ID);
+              Movement_Input(zone, playerAction, player_ID, input);
             }
             Interface_Input(zone, camera, playerAction, player_ID);
           }

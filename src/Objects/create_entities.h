@@ -349,7 +349,7 @@ namespace Create_Entities {
       zone.emplace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
       zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
       zone.emplace<Action_Component::Action>(entity, Action_Component::idle);
-      zone.emplace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
+      auto &velocity = zone.emplace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
       auto &health = zone.emplace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
       zone.emplace<Component::Soldier>(entity);
       zone.emplace<Component::Commandable>(entity);
@@ -358,7 +358,7 @@ namespace Create_Entities {
       if (player) {
         health.currentHealth += 200;
         health.maxHealth += 200;
-        zone.emplace<Component::Input>(entity);
+        Component::Add_Input_Component(zone, velocity, entity);
         SDL_DisplayMode dm;
         SDL_GetWindowDisplayMode(Graphics::window, &dm);
         auto &camera = zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (float) dm.w, (float) dm.h, Settings::cameraScale, Settings::cameraScale);

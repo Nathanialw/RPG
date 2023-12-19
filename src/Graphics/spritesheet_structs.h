@@ -6,7 +6,6 @@
 
 namespace Spritesheet_Structs {
 
-
   struct Frame_Data {
     //number of frames/end if sheet
     int numFrames = 0;
@@ -22,7 +21,6 @@ namespace Spritesheet_Structs {
     int startFrame;
     int numFrames;
   };
-
 
   struct Frame_Data_Packer {
     int startFrame = 9999;
@@ -97,7 +95,6 @@ namespace Spritesheet_Structs {
       const char *s = (const char *) sheet;
       unit_name = std::string(reinterpret_cast<const char *>(s));
     }
-
     return unit_name;
   }
 
@@ -130,16 +127,15 @@ namespace Spritesheet_Structs {
     return false;
   }
 
-  int i = 120;
-
   bool Get_Frame_Action_Data(std::string unitType, std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
     // name should be the template name from tiled
+    int i = 75;
     Action_Component::Action_State action;
 
     // load the whole xml sheet
     if (unitType == "tileset") {
       action = Action_Component::Action_State::isStatic;
-      actionFrameData[action].frameSpeed = 75;
+      actionFrameData[action].frameSpeed = 50;
       // std::cout << "Success! " << templateName << " found " << "frame" << frame << std::endl;
       return true;
 
@@ -162,9 +158,7 @@ namespace Spritesheet_Structs {
       ///just grab the first 3 letters of the string
       std::string checkAction = frameCopy.erase(frameCopy.length() - 6);
 
-
       /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
-
       if (unitType == "RTP_female" || unitType == "RTP_male") {
         if (checkAction == "1-H Attack 3") {
           action = Action_Component::Action_State::attack;
@@ -236,6 +230,7 @@ namespace Spritesheet_Structs {
         } else if (checkAction == "Jump") {
           action = Action_Component::Action_State::jump;
           actionFrameData[action].frameSpeed = i;
+          actionFrameData[action].reverses = 1;
         } else if (checkAction == "Kick") {
           action = Action_Component::Action_State::kick;
           actionFrameData[action].frameSpeed = i;

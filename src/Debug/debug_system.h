@@ -82,7 +82,7 @@ namespace Debug_System {
 
   void Update_Settings() {
     Debug::settingsValue[Debug::EntityCount] = World::zone.capacity();
-    Debug::settingsValue[Debug::NumRendered] = World::zone.view<Component::Renderable>().size();
+    Debug::settingsValue[Debug::RenderComponent] = World::zone.view<Component::Renderable>().size();
     Debug::settingsValue[Debug::TreeSize] = World::zone.view<Component::Interaction_Rect>().size();
   }
 

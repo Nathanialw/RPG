@@ -1,12 +1,12 @@
 #pragma once
 
+#include "box2d/box2d.h"
+#include "classes.h"
 #include "entt/entt.hpp"
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <sys/types.h>
 #include <vector>
-#include "classes.h"
-#include "box2d/box2d.h"
 
 
 namespace Component {
@@ -34,7 +34,6 @@ namespace Component {
   };
 
   struct Unit {
-
   };
 
   struct Body {
@@ -43,7 +42,6 @@ namespace Component {
   };
 
   struct Active {
-
   };
 
   struct Name {
@@ -58,7 +56,6 @@ namespace Component {
   };
 
   struct Reset {
-
   };
 
   struct Info {
@@ -80,7 +77,6 @@ namespace Component {
   };
 
   struct Soldier {
-
   };
 
   struct Health {
@@ -135,7 +131,6 @@ namespace Component {
   };
 
   struct Drop_Equipment {
-
   };
 
   //    struct t_Stored_Frame_Data {
@@ -173,7 +168,7 @@ namespace Component {
   };
 
   struct Renderable {
-    float y = 0.0f; //point
+    float y = 0.0f;//point
     int alpha = 0;
   };
 
@@ -185,9 +180,38 @@ namespace Component {
     float y;
   };
 
-  struct Input {
-    //std::vector<bool>keysPressed;
+  struct keyData {
+    f2 velocity = {0,0};
+    bool pressed = false;
   };
+
+  struct Input {
+    std::unordered_map<SDL_Keycode, keyData> keyboardControl;
+  };
+
+  void Add_Input_Component(entt::registry &zone, Component::Velocity &velocity, entt::entity &entity) {
+
+    std::unordered_map<SDL_Keycode, keyData> keyboardControl;
+    keyboardControl[SDLK_w].velocity.x = 0.0f;
+    keyboardControl[SDLK_w].velocity.y -= velocity.speed;
+    keyboardControl[SDLK_s].velocity.x = 0.0f;
+    keyboardControl[SDLK_s].velocity.y += velocity.speed;
+    keyboardControl[SDLK_a].velocity.x -= velocity.speed;
+    keyboardControl[SDLK_a].velocity.y = 0.0f;
+    keyboardControl[SDLK_d].velocity.x += velocity.speed;
+    keyboardControl[SDLK_d].velocity.y = 0.0f;
+    keyboardControl[SDLK_q].velocity.x -= velocity.speed;
+    keyboardControl[SDLK_q].velocity.y -= velocity.speed;
+    keyboardControl[SDLK_e].velocity.x += velocity.speed;
+    keyboardControl[SDLK_e].velocity.y -= velocity.speed;
+    keyboardControl[SDLK_c].velocity.x += velocity.speed;
+    keyboardControl[SDLK_c].velocity.y += velocity.speed;
+    keyboardControl[SDLK_z].velocity.x -= velocity.speed;
+    keyboardControl[SDLK_z].velocity.y += velocity.speed;
+
+    auto &input = zone.emplace<Input>(entity);
+    input.keyboardControl = keyboardControl;
+  }
 
   struct Camera {
     SDL_FRect screen;
@@ -204,7 +228,6 @@ namespace Component {
   };
 
   struct Commandable {
-
   };
 
   struct Commanding {
@@ -308,15 +331,12 @@ namespace Component {
   };
 
   struct Moving {
-
   };
 
   struct Environment {
-
   };
 
   struct Terrain {
-
   };
 
   struct Mouse_Move {
@@ -348,7 +368,6 @@ namespace Component {
   };
 
   struct Spell {
-
   };
 
   struct Caster {
@@ -356,7 +375,6 @@ namespace Component {
   };
 
   struct Spellbook {
-
   };
 
   struct Spell_Name {
@@ -364,7 +382,6 @@ namespace Component {
   };
 
   struct Casted {
-
   };
 
   struct Sprite_Frames {
@@ -375,7 +392,7 @@ namespace Component {
   };
 
   struct Texture {
-    SDL_Texture *pTexture;    //texture
+    SDL_Texture *pTexture;//texture
     SDL_Rect clippedSpriteFrame;
   };
 
@@ -388,11 +405,9 @@ namespace Component {
     i2 positionOffset;
     SDL_FRect renderPosition;
     f2 offsetToAlignWithFireball;
-
   };
 
   struct Melee {
-
   };
 
   struct Attacking {
@@ -505,7 +520,6 @@ namespace Component {
   };
 
   struct Inventory {
-
   };
 
   struct Pickup_Item {
@@ -536,10 +550,10 @@ namespace Component {
   struct Followers {
     std::vector<entt::entity> followers;
   };
-}
+}// namespace Component
 
 
-namespace Component_Camera { //unused yet
+namespace Component_Camera {//unused yet
 
   struct Viewport {
     SDL_FRect viewport;
@@ -552,5 +566,4 @@ namespace Component_Camera { //unused yet
   struct Screen {
     SDL_FRect screen;
   };
-}
-
+}// namespace Component_Camera

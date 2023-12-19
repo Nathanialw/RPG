@@ -38,7 +38,7 @@ namespace UI_Resources {
     
     auto view = zone.view<Component::Name, Component::Health, Component::Input, Rendering_Components::Unit_Frame_Portrait>();
     for (auto entity : view) {
-      auto [fullName, health, portrait] = view.get(entity);
+      auto [fullName, health, input, portrait] = view.get(entity);
       Build_Target_Frame(playerFrame);
       Unit_Frames::Update_Frame_Data(camera.scale, fullName, health, playerFrame, portrait);
       Unit_Frames::Render_Target_Frame(playerFrame);
