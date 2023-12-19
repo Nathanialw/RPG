@@ -33,16 +33,20 @@ namespace World_Data {
     float y;
   };
 
-  SDL_Texture *tiles[75];
+//  struct TileSets {
+//    SDL_Texture *tiles[75];
+//  };
 
-  enum Tile_Type {
+  enum class Tile_Type {
     grass,
     sand,
-    dirt
+    dirt,
+    SIZE
   };
+  std::array<std::vector<SDL_Texture*>, (int)Tile_Type::SIZE> tileSets;
 
   struct TILE {
-    int type;
+    int tile;
     bool generated;
     SDL_FRect position;
   };
@@ -83,17 +87,22 @@ namespace World {
   World_Data::Tile_Size size;
 
   entt::basic_registry<entt::entity> zone;
+  entt::basic_registry<entt::entity> cave;
   World_Data::Region region;
 
   void Init_Tiles() {
     //        randomize
     worldOffset = {-100.0f, -100.0f};
 
-    World_Data::tiles[0] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_0.png");
-    World_Data::tiles[1] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_1.png");
-    World_Data::tiles[2] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_2.png");
-    World_Data::tiles[3] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_3.png");
-    World_Data::tiles[4] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_4.png");
+    World_Data::tileSets[(int)World_Data::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_0.png"));
+    World_Data::tileSets[(int)World_Data::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_1.png"));
+    World_Data::tileSets[(int)World_Data::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_2.png"));
+    World_Data::tileSets[(int)World_Data::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_3.png"));
+    World_Data::tileSets[(int)World_Data::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_4.png"));
+//    World_Data::tileSets[(int)World_Data::Tile_Type::grass][1] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_1.png");
+//    World_Data::tileSets[(int)World_Data::Tile_Type::grass][2] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_2.png");
+//    World_Data::tileSets[(int)World_Data::Tile_Type::grass][3] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_3.png");
+//    World_Data::tileSets[(int)World_Data::Tile_Type::grass][4] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_4.png");
   }
 
   void Create_Map(World_Data::Offset offset) {
@@ -200,7 +209,7 @@ namespace World {
         renderRect.w = size.width;
         renderRect.h = size.height;
 
-        SDL_Texture *texture = World_Data::tiles[World_Data::Game_Map[i][j].type];
+        SDL_Texture *texture = World_Data::tileSets[(int)World_Data::Tile_Type::grass][World_Data::Game_Map[i][j].tile];
         SDL_RenderCopyF(Graphics::renderer, texture, NULL, &renderRect);
       }
     }
@@ -227,7 +236,7 @@ namespace World {
 
         tile.position = rect;
         tile.generated = true;
-        tile.type = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, textureArraySize, seed);
+        tile.tile = Procedural_Generation::Random_Int(0, textureArraySize, seed);
 
         World_Data::Game_Map[i][j] = tile;
         //Generate_Trees(tile.position);
@@ -244,10 +253,10 @@ namespace World {
     for (int i = 0; i < 255; ++i) {
       for (int j = 0; j < 127; ++j) {
         seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
-        int numObjects = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, 100, seed);
+        int numObjects = Procedural_Generation::Random_Int(0, 100, seed);
         if (numObjects < 3) {
-          x = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.width, seed);
-          y = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.height, seed);
+          x = Procedural_Generation::Random_Int(0, (int) size.width, seed);
+          y = Procedural_Generation::Random_Int(0, (int) size.height, seed);
 
           int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::units["wolves"].size() - 1, seed);
           db::Unit_Data data = Game_Objects_Lists::units["wolves"][n];
@@ -276,11 +285,11 @@ namespace World {
     std::string objectName = "";
 
     seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
-    int numObjects = (World_Data::Tile_Type) Procedural_Generation::Random_Int(1, 3, seed);
+    int numObjects = Procedural_Generation::Random_Int(1, 3, seed);
 
     for (int k = 0; k < numObjects; k++) {
-      x = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.width, seed);
-      y = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, (int) size.height, seed);
+      x = Procedural_Generation::Random_Int(0, (int) size.width, seed);
+      y = Procedural_Generation::Random_Int(0, (int) size.height, seed);
 
       float i = rect.x / size.width;
       float j = rect.y / size.height;
@@ -291,7 +300,7 @@ namespace World {
     }
   }
 
-  void Render(Component::Camera &camera) {
+  void Render(Component::Camera &camera, World_Data::Tile_Type tileType) {
     int x = 0;
     int y = 0;
 
@@ -305,23 +314,23 @@ namespace World {
           Procedural_Components::Seed seed;
           seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
           int textureArraySize = 5;
-          World_Data::Tile_Type type = (World_Data::Tile_Type) Procedural_Generation::Random_Int(0, textureArraySize, seed);
+          int tile = Procedural_Generation::Random_Int(0, textureArraySize, seed);
 
           SDL_FRect rect;
           rect.x = i * size.width;
           rect.y = j * size.height;
           rect.w = size.width;
           rect.h = size.height;
-          SDL_Texture *texture = World_Data::tiles[type];
+          SDL_Texture *texture = World_Data::tileSets[(int)tileType][tile];
           //                if entities created do nothing
-          if (tilesToRender[i][j].created) {
+          if (tilesEntities[i][j].created) {
 
           }
           //                else create them
           else {
             //            Utilities::Log("creating tile objects");
-            Generate_Trees(rect, tilesToRender[i][j]);
-            tilesToRender[i][j].created = true;
+            Generate_Trees(rect, tilesEntities[i][j]);
+            tilesEntities[i][j].created = true;
           }
 
           SDL_FRect renderRect;

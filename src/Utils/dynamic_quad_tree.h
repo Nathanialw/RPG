@@ -310,7 +310,7 @@ namespace Dynamic_Quad_Tree {
       if (zone.any_of<Component::Tile_Index>(entity)) {
         int i = zone.get<Component::Tile_Index>(entity).i;
         int j = zone.get<Component::Tile_Index>(entity).j;
-        tilesToRender[i][j].created = false;
+        tilesEntities[i][j].created = false;
         zone.remove<Component::Position>(entity);
         zone.destroy(entity);
       } else {

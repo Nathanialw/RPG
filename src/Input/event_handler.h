@@ -64,19 +64,19 @@ namespace Event_Handler {
             Sinister_Strike::Instant_Attack(zone, entity);
             break;
           case SDLK_3:
-            SDL_SetRelativeMouseMode(SDL_FALSE);
+            Action_Component::Set_State(act, Action_Component::cast);
             break;
           case SDLK_4:
-            SDL_SetRelativeMouseMode(SDL_TRUE);
+            Action_Component::Set_State(act, Action_Component::casting);
             break;
           case SDLK_5:
             Action_Component::Set_State(act, Action_Component::kick);
             break;
           case SDLK_6:
-            Interface::gridDepth++;
+            Action_Component::Set_State(act, Action_Component::pray_standing);
             break;
           case SDLK_7:
-            Interface::gridDepth--;
+            Action_Component::Set_State(act, Action_Component::pray_kneeled);
             break;
           case SDLK_8:
             Skills::Feign_Death(zone, entity);
@@ -97,8 +97,10 @@ namespace Event_Handler {
             Pause::Toggle();
             break;
           case SDLK_PLUS:
+            SDL_SetRelativeMouseMode(SDL_FALSE);
             break;
           case SDLK_MINUS:
+            SDL_SetRelativeMouseMode(SDL_TRUE);
             break;
           case SDLK_l:
             UI_Spellbook::Toggle();

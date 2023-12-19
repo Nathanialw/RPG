@@ -445,7 +445,7 @@ namespace Rendering {
   void Render_Map(entt::registry &zone, Component::Camera &camera) {
     SDL_RenderClear(Graphics::renderer);
 
-    World::Render(camera);
+    World::Render(camera, World_Data::Tile_Type::grass);
     //        Render_Iso_Tiles(zone, Maps::map, camera);
     //        Render_Ortho_Tiles(zone, Maps::map, camera);
     Display_Background_Objects(zone, camera);
