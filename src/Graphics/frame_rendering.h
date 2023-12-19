@@ -55,11 +55,9 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
     Component::Interaction_Rect interactionRect = {};
     renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
   }
-
   SDL_Texture *texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
-  SDL_Color color = sheetData.color;
   SDL_SetTextureAlphaMod(texture, renderable.alpha);
-  Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
+  Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
 }
 
 void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state

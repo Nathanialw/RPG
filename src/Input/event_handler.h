@@ -129,6 +129,28 @@ namespace Event_Handler {
     }
   };
 
+  std::vector<entt::entity> Mouse_Hover_Entities;
+
+  void Mouse_Hover(entt::registry &zone) {
+    for (auto &entity : Mouse_Hover_Entities) {
+      zone.get<Rendering_Components::Sprite_Sheet_Info>(entity).color = {222, 222, 222};
+    }
+    Mouse_Hover_Entities.clear();
+    //target unit
+    SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+    Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);
+    //change target SDL_Render slightly for render
+    if (zone.any_of<Rendering_Components::Sprite_Sheet_Info>(targetData.entity_ID)) {
+      auto &ff = zone.get<Rendering_Components::Sprite_Sheet_Info>(targetData.entity_ID);
+      ff.color = {255, 255, 255};
+      Mouse_Hover_Entities.emplace_back(targetData.entity_ID);
+      return;
+    }
+    // add component to keep track maybe
+
+    //revert color
+  }
+
   void Mouse_Input(entt::registry &zone, entt::entity &player_ID, Component::Position &playerPosition, Component::Camera &camera) {
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
@@ -207,10 +229,13 @@ namespace Event_Handler {
           auto &camera = view.get<Component::Camera>(player_ID);
           auto &input = view.get<Component::Input>(player_ID);
 
-          if (Events::event.key.type == SDL_MOUSEWHEEL) {
+          if (Events::event.key.type == SDL_MOUSEMOTION) {
+            Mouse_Hover(zone);
+          }
+          else if (Events::event.key.type == SDL_MOUSEWHEEL) {
             Interface::Update_Zoom(Events::event);
           }
-          if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
+          else if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
             Mouse_Input(zone, player_ID, playerPosition, camera);
           } else if (Events::event.key.type == SDL_KEYDOWN || Events::event.key.type == SDL_KEYUP) {
             if (zone.any_of<Component::Velocity>(player_ID)) {

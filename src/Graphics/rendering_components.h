@@ -120,16 +120,10 @@ namespace Rendering_Components {
 
     std::unordered_map<std::string, Sheet_Data> *mount = NULL;
     std::string mount_name = "unmounted";
-    SDL_Color color = {255, 255, 255};
-
+    SDL_Color color = {200, 200, 200};
     //        Equip_Slot_Data equipmentSheets[30];
-
     ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
-    //        std::string* sheetData;
-    //        int index = 0;
     uint16_t frameIndex = 0;
     uint8_t reversing = 0;
-    //        int currentFrame = 0;
-    //        Frame finalFrame = normalFrame;
   };
 }// namespace Rendering_Components

@@ -107,19 +107,6 @@ namespace Movement {
     }
   }
 
-  bool ss(entt::registry &zone, SDL_FRect &entityRect) {
-    //get objet from mouseclick
-    Dynamic_Quad_Tree::Entity_Data a = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, entityRect);
-    // save position somewhere
-
-    // check if they collide
-
-    // when the collide stop moving
-
-    a.entity_ID;
-    return true;
-  }
-
   //takes in the x,y of the unit and checks if it is within the destination x,y within an accuracy of the set variable
   bool Check_If_Arrived(const float &unitX, const float &unitY, const float &destinationX, const float &destinationY) {
     float accuracy = 5.0f;
