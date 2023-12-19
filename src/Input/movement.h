@@ -150,6 +150,7 @@ namespace Movement {
 
           World::zone.remove<Component::Mouse_Move>(entity);
           World::zone.remove<Component::Moving>(entity);
+          Player_Control::Check_Pressed_Keys(World::zone, entity);
         }
       }
     }

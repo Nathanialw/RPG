@@ -36,69 +36,9 @@ namespace Event_Handler {
           if (input.keyboardControl.contains(Events::event.key.keysym.sym)) {
             if (!input.keyboardControl[Events::event.key.keysym.sym].pressed) {
               input.keyboardControl[Events::event.key.keysym.sym].pressed = true;
-              if (zone.any_of<Player_Component::Interact_Move, Player_Component::Attack_Move, Component::Mouse_Move, Component::Pickup_Item>(entity)) {
-                zone.remove<Player_Component::Interact_Move>(entity);
-                zone.remove<Player_Component::Attack_Move>(entity);
-                zone.remove<Component::Mouse_Move>(entity);
-                zone.remove<Component::Pickup_Item>(entity);
-                vel.magnitude.x = 0.0f;
-                vel.magnitude.y = 0.0f;
-              }
-
-              vel.magnitude.x += input.keyboardControl[Events::event.key.keysym.sym].velocity.x;
-              vel.magnitude.y += input.keyboardControl[Events::event.key.keysym.sym].velocity.y;
-              zone.emplace_or_replace<Component::Moving>(entity);
-              Action_Component::Set_State(act, Action_Component::walk);
+              Player_Control::Update_Keyboard_Movement(zone, entity, vel, input, Events::event.key.keysym.sym);
             }
           }
-
-//
-//          switch (Events::event.key.keysym.sym) {
-//            case SDLK_w:
-//              zone.emplace_or_replace<Component::Moving>(entity);
-//              vel.magnitude.y -= vel.speed;
-//              Action_Component::Set_State(act, Action_Component::walk);
-////                break;
-//            case SDLK_s:
-//              zone.emplace_or_replace<Component::Moving>(entity);
-//              vel.magnitude.y += vel.speed;
-//              Action_Component::Set_State(act, Action_Component::walk);
-////                break;
-//            case SDLK_a:
-//              zone.emplace_or_replace<Component::Moving>(entity);
-//              vel.magnitude.x -= vel.speed;
-//              Action_Component::Set_State(act, Action_Component::walk);
-////                break;
-//            case SDLK_d:
-//              zone.emplace_or_replace<Component::Moving>(entity);
-//              vel.magnitude.x += vel.speed;
-//              Action_Component::Set_State(act, Action_Component::walk);
-////                break;
-//            case SDLK_q:
-//              zone.emplace_or_replace<Component::Moving>(entity);
-//              vel.magnitude.y -= vel.speed;
-//              vel.magnitude.x -= vel.speed;
-//              Action_Component::Set_State(act, Action_Component::walk);
-////                break;
-//            case SDLK_e:
-//              zone.emplace_or_replace<Component::Moving>(entity);
-//              vel.magnitude.y -= vel.speed;
-//              vel.magnitude.x += vel.speed;
-//              Action_Component::Set_State(act, Action_Component::walk);
-////                break;
-//            case SDLK_c:
-//              zone.emplace_or_replace<Component::Moving>(entity);
-//              vel.magnitude.y += vel.speed;
-//              vel.magnitude.x += vel.speed;
-//              Action_Component::Set_State(act, Action_Component::walk);
-////                break;
-//            case SDLK_z:
-//              zone.emplace_or_replace<Component::Moving>(entity);
-//              vel.magnitude.y += vel.speed;
-//              vel.magnitude.x -= vel.speed;
-//              Action_Component::Set_State(act, Action_Component::walk);
-////                break;
-//          }
         }
       } else if (Events::event.type == SDL_KEYUP) {
         auto &vel = zone.get<Component::Velocity>(entity);
@@ -108,54 +48,9 @@ namespace Event_Handler {
             vel.magnitude.x = 0;
             vel.magnitude.y = 0;
           }
-          //recheck keys that are pressed
-          for (auto const &[key, value] : input.keyboardControl) {
-            if (value.pressed) {
-              vel.magnitude.x += input.keyboardControl[key].velocity.x;
-              vel.magnitude.y += input.keyboardControl[key].velocity.y;
-              zone.emplace_or_replace<Component::Moving>(entity);
-              Action_Component::Set_State(act, Action_Component::walk);
-            }
-          }
+          //recheck to see which keys are pressed
+          Player_Control::Check_Pressed_Keys(zone, entity);
         }
-//        switch (Events::event.key.keysym.sym) {
-//          case SDLK_w:
-//            zone.emplace_or_replace<Component::Moving>(entity);
-//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed;
-////            break;
-//          case SDLK_s:
-//            zone.emplace_or_replace<Component::Moving>(entity);
-//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed;
-////            break;
-//          case SDLK_a:
-//            zone.emplace_or_replace<Component::Moving>(entity);
-//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;
-////            break;
-//          case SDLK_d:
-//            zone.emplace_or_replace<Component::Moving>(entity);
-//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;
-////            break;
-//          case SDLK_q:
-//            zone.emplace_or_replace<Component::Moving>(entity);
-//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed;
-//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;
-////            break;
-//          case SDLK_e:
-//            zone.emplace_or_replace<Component::Moving>(entity);
-//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y += vel.speed;
-//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;
-////            break;
-//          case SDLK_c:
-//            zone.emplace_or_replace<Component::Moving>(entity);
-//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed;
-//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x -= vel.speed;
-////            break;
-//          case SDLK_z:
-//            zone.emplace_or_replace<Component::Moving>(entity);
-//            if (fabs(vel.magnitude.y) > 0) vel.magnitude.y -= vel.speed;
-//            if (fabs(vel.magnitude.x) > 0) vel.magnitude.x += vel.speed;
-////            break;
-//        }
       }
     }
   };

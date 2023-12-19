@@ -19,6 +19,49 @@ namespace Player_Control {
     zone.emplace_or_replace<Player_Component::Interact_Move>(entity, target_ID, targetRadius.fRadius);
   }
 
+  void Update_Keyboard_Movement(entt::registry &zone, entt::entity entity, Component::Velocity &velocity, Component::Input &input, const SDL_Keycode &key) {
+    if (zone.any_of<Player_Component::Interact_Move, Player_Component::Attack_Move, Component::Mouse_Move, Component::Pickup_Item>(entity)) {
+      zone.remove<Player_Component::Interact_Move>(entity);
+      zone.remove<Player_Component::Attack_Move>(entity);
+      zone.remove<Component::Mouse_Move>(entity);
+      zone.remove<Component::Pickup_Item>(entity);
+      velocity.magnitude.x = 0.0f;
+      velocity.magnitude.y = 0.0f;
+    }
+
+    if (velocity.magnitude.x < 0 && input.keyboardControl[key].velocity.x > 0) {
+      velocity.magnitude.x = 0;
+    }
+    if (velocity.magnitude.x > 0 && input.keyboardControl[key].velocity.x < 0) {
+      velocity.magnitude.x = 0;
+    }
+    if (velocity.magnitude.y > 0 && input.keyboardControl[key].velocity.y < 0) {
+      velocity.magnitude.y = 0;
+    }
+    if (velocity.magnitude.y < 0 && input.keyboardControl[key].velocity.y > 0) {
+      velocity.magnitude.y = 0;
+    }
+    velocity.magnitude.x += input.keyboardControl[key].velocity.x;
+    velocity.magnitude.y += input.keyboardControl[key].velocity.y;
+
+    auto &action = World::zone.get<Action_Component::Action>(entity);
+    zone.emplace_or_replace<Component::Moving>(entity);
+    Action_Component::Set_State(action, Action_Component::walk);
+  }
+
+  void Check_Pressed_Keys(entt::registry &zone, entt::entity entity) {
+    if (World::zone.any_of<Component::Input>(entity)) {
+      auto &input = World::zone.get<Component::Input>(entity);
+      auto &velocity = World::zone.get<Component::Velocity>(entity);
+
+      for (auto const &[key, value]: input.keyboardControl) {
+        if (value.pressed) {
+          Update_Keyboard_Movement(zone, entity, velocity, input, key);
+        }
+      }
+    }
+  }
+
   float Player_Move_Poll = 0;
 
   void Mouse_Move_To_Attack(entt::registry &zone) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
@@ -44,8 +87,14 @@ namespace Player_Control {
         } else {
           if (Social_Control::Check_Relationship(zone, entity, targetData.ID)) {
             Entity_Control::Melee_Attack(zone, entity, targetData.ID, targetPosition);
+            auto &v = view.get<Component::Velocity>(entity);
+            v.magnitude.x = 0.0f;
+            v.magnitude.y = 0.0f;
           } else {
             Social_Control::Greet(zone, entity, targetData.ID);
+            auto &v = view.get<Component::Velocity>(entity);
+            v.magnitude.x = 0.0f;
+            v.magnitude.y = 0.0f;
           }
           zone.remove<Player_Component::Attack_Move>(entity);
           zone.remove<Component::Moving>(entity);
@@ -94,11 +143,13 @@ namespace Player_Control {
         if (!Entity_Control::Target_In_Range(position, radius.fRadius, targetPosition, targetRadius)) {
           auto &v = view.get<Component::Velocity>(entity);
           Action_Component::Set_State(action, Action_Component::walk);
-
           v.magnitude.x = v.speed * (targetPosition.x - position.x);
           v.magnitude.y = v.speed * (targetPosition.y - position.y);
         } else {
           Interact(zone, entity, targetData.ID, position, radius.fRadius, targetPosition, targetRadius);
+          auto &v = view.get<Component::Velocity>(entity);
+          v.magnitude.x = 0.0f;
+          v.magnitude.y = 0.0f;
           zone.remove<Player_Component::Interact_Move>(entity);
           zone.remove<Component::Moving>(entity);
         }

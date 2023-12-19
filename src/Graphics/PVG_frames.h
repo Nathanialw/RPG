@@ -15,11 +15,11 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
   if (action.frameState == Action_Component::last) {
     if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses && (action.state != Action_Component::dying || action.state != Action_Component::dead)) {
       if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
-
         action.state = Action_Component::idle;
         action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
         action.frame = 0;
         action.frameState = Action_Component::start;
+        Player_Control::Check_Pressed_Keys(World::zone, entity);
       }
     } else {
       action.frameState = Action_Component::start;

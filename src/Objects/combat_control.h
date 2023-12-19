@@ -98,7 +98,6 @@ namespace Combat_Control {
           auto &meleeDamage = view.get<Component::Melee_Damage>(entity);
           /// calculate damage and show for player
           Queue_Hit(zone, entity, target_ID, meleeDamage, Component::normal, 0.0f, Component::Bonus_Damage_Type::add);
-
           zone.remove<Component::Attacking>(entity);
         }
       } else {
@@ -199,6 +198,7 @@ namespace Combat_Control {
         if (action.frameState == Action_Component::last) {
           ///should not return to idle, should go into an "idle-combat" mode
           zone.remove<Component::Struck>(entity);
+
         }
       } else if (sheetData.sheetData) {
         if (action.frameState == Action_Component::last) {
