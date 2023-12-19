@@ -27,17 +27,14 @@ namespace Event_Handler {
 
   std::vector<SDL_Keycode>keys;
 
-  void Movement_Input(entt::registry &zone, Action_Component::Action &act, entt::entity entity, Component::Input &input) {//can return bools for x and y dir, and 2 enums for direction and state
+  void Movement_Input(entt::registry &zone, Action_Component::Action &action, entt::entity entity, Component::Input &input) {//can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
-        if (act.state == Action_Component::idle || act.state == Action_Component::walk) {
-          auto &vel = zone.get<Component::Velocity>(entity);
-
-          if (input.keyboardControl.contains(Events::event.key.keysym.sym)) {
-            if (!input.keyboardControl[Events::event.key.keysym.sym].pressed) {
-              input.keyboardControl[Events::event.key.keysym.sym].pressed = true;
-              Player_Control::Update_Keyboard_Movement(zone, entity, vel, input, Events::event.key.keysym.sym);
-            }
+        auto &velocity = zone.get<Component::Velocity>(entity);
+        if (input.keyboardControl.contains(Events::event.key.keysym.sym)) {
+          if (!input.keyboardControl[Events::event.key.keysym.sym].pressed) {
+            input.keyboardControl[Events::event.key.keysym.sym].pressed = true;
+            Player_Control::Update_Keyboard_Movement(zone, entity, velocity, input, Events::event.key.keysym.sym);
           }
         }
       } else if (Events::event.type == SDL_KEYUP) {

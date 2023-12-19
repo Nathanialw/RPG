@@ -50,6 +50,7 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
       if (action.frame < 1) {
         sheetData.reversing = 0;
         action.state = Action_Component::idle;
+        Player_Control::Check_Pressed_Keys(World::zone, entity);
       }
     } else if (!sheetData.reversing) {
       action.frame++;
