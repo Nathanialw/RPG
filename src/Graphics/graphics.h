@@ -250,7 +250,7 @@ namespace Graphics {
 
   static void Load_Textures(entt::registry &zone) {
     Create_Font();
-    fireball_explosion_0 = createTexture("assets/sprites/spells/fireball_explosion_0.png");
+    fireball_explosion_0 = createTexture("assets/sprites/spells/fire/explosions/fireball_explosion_0.png");
 
     weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
     itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");

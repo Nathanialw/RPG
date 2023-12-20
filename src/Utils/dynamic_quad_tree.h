@@ -321,6 +321,18 @@ namespace Dynamic_Quad_Tree {
     }
   }
 
+  void Remove_Entity_From_Tree(entt::registry &zone, entt::entity &entity) {
+    auto &rect = zone.get<Component::Remove_From_Object_Tree>(entity).rect;
+    for (auto &object : treeObjects.search(rect)) {
+      if (object->item.entity_ID == entity) {
+        treeObjects.remove(object);
+        zone.remove<Component::Interaction_Rect>(entity);
+        zone.remove<Component::Remove_From_Object_Tree>(entity);
+        zone.remove<Component::In_Object_Tree>(entity);
+      }
+    }
+  }
+
 //  we can iterate through the list and update all entities in the quad tree
 //  		/* does  a quad search for every object to find it's ne space
 //  			seems like the same as just clearing and rebuilding		*/

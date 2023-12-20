@@ -1,12 +1,9 @@
 #pragma once
 
-#include "combat_control.h"
 #include "components.h"
 #include "instant_attack.h"
-#include "movement.h"
 
 namespace Sinister_Strike {
-
 
   void Attack(entt::registry &zone, entt::entity &entity, entt::entity &target_ID) {
     auto &action = zone.get<Action_Component::Action>(entity);

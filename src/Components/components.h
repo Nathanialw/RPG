@@ -8,7 +8,6 @@
 #include <sys/types.h>
 #include <vector>
 
-
 namespace Component {
 
   struct ObjectID {
@@ -181,7 +180,7 @@ namespace Component {
   };
 
   struct keyData {
-    f2 velocity = {0,0};
+    f2 velocity = {0, 0};
     bool pressed = false;
   };
 
@@ -356,10 +355,11 @@ namespace Component {
   };
 
   struct Casting {
-    float castTime = 2000;
-    float counter = 2000;
+    float castTime = 2000.0f;
+    float counter = 2000.0f;
     float x = 0.0f;
     float y = 0.0f;
+    const char *name = "fireball";
   };
 
   struct Cast {

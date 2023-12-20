@@ -54,7 +54,7 @@ namespace Init {
     World::Init_Tile_Objects();
     //World::Generate_Map();
     Character_Stats::Init_UI(World::zone);
-    UI_Spellbook::Init_UI();
+    UI_Spellbook::Init_UI(World::zone);
     Character_Stats::Init_Player(World::zone, options);
     Dynamic_Quad_Tree::Fill_Quad_Tree(World::zone);
     Action_Bar::Create_Action_Bar(World::zone);

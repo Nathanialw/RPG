@@ -181,12 +181,13 @@ namespace User_Mouse_Input {
     return bSelected;
   }
 
-  bool Tab_Target(entt::registry &zone, Component::Camera &camera, entt::entity player_ID) {
+  bool Tab_Target(entt::registry &zone, entt::entity player_ID) {
     bool bSelected = false;
     std::vector<entt::entity> selectedEnemy;
 
     auto soldier_view = zone.view<Component::Soldier, Component::Commandable, Component::Interaction_Rect, Component::Renderable>();
     auto &targetRange = zone.get<Component::Target_Range>(player_ID).rangeBox;
+    auto &camera = zone.get<Component::Camera>(player_ID);
     SDL_FRect rect = {};
 
     //        if rangebox > screen rect cap to screen size

@@ -123,7 +123,7 @@ namespace Menu {
           if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
             //            recenter camera on player
             UI_Spellbook::Update_Position();
-            Action_Bar::Update_Position();
+            Action_Bar::Update_Position(Action_Bar::actionBar.actionBarFrame);
             Build_Menu();
           }
           return 3;

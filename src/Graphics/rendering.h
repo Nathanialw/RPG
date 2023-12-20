@@ -434,10 +434,14 @@ namespace Rendering {
   }
 
   void Remove_Entities_From_Registry(entt::registry &zone) {
-    auto view = zone.view<Component::Destroyed>(entt::exclude<Component::In_Object_Tree>);
+    auto view = zone.view<Component::Destroyed>();
     for (auto entity: view) {
+      if (zone.any_of<Component::In_Object_Tree>(entity)) {
+        Utilities::Log("item was still has In_Object_Tree");
+        Dynamic_Quad_Tree::Remove_Entity_From_Tree(zone, entity);
+      }
       zone.destroy(entity);
-      Utilities::Log("tile object destroyed");
+      Utilities::Log("object destroyed");
     }
     zone.compact<>();
   }
@@ -479,7 +483,7 @@ namespace Rendering {
       Character_Stats::Render_Character_Stats(camera);
       Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
       Damage_Text::Show_Damage(zone, camera);
-      UI_Spellbook::Draw_Spellbook(camera);
+      UI_Spellbook::Draw_Spellbook(zone, camera);
       Pause::Pause_Control(camera);
       Menu::Render_Menu(zone, camera);
       //Mouse

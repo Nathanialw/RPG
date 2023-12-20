@@ -4,8 +4,8 @@
 #include "entt/entt.hpp"
 #include "item_components.h"
 #include "menu.h"
-#include "spellbook.h"
 #include "ui_actionbar.h"
+#include "ui_spellbook.h"
 #include "world.h"
 
 namespace UI {

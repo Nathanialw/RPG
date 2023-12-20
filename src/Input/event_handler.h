@@ -5,6 +5,7 @@
 #include "death_spells.h"
 #include "events.h"
 #include "game_menu.h"
+#include "hotbar.h"
 #include "input_control.h"
 #include "interface.h"
 #include "items.h"
@@ -25,7 +26,7 @@ namespace Event_Handler {
   /*I will make a component that will be pased to this funtion tree so the functions can do work on the position value of an entity "<velocity> <player_controllable>" */
   const Uint8 *state = SDL_GetKeyboardState(NULL);
 
-  std::vector<SDL_Keycode>keys;
+  std::vector<SDL_Keycode> keys;
 
   void Movement_Input(entt::registry &zone, Action_Component::Action &action, entt::entity entity, Component::Input &input) {//can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
@@ -52,80 +53,17 @@ namespace Event_Handler {
     }
   };
 
-  void Interface_Input(entt::registry &zone, Component::Camera &camera, Action_Component::Action &act, entt::entity entity) {//can return bools for x and y dir, and 2 enums for direction and state
+  void Interface_Input(entt::registry &zone, Component::Camera &camera, Action_Component::Action &action, entt::entity entity) {//can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
-        switch (Events::event.key.keysym.sym) {
-          //case SDLK_1: Entity_Control::Spell_Attack(zone, entity, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "fireball"); break;
-          case SDLK_1:
-            Action_Component::Set_State(act, Action_Component::attack2);
-            break;
-          case SDLK_2:
-            Sinister_Strike::Instant_Attack(zone, entity);
-            break;
-          case SDLK_3:
-            Action_Component::Set_State(act, Action_Component::cast);
-            break;
-          case SDLK_4:
-            Action_Component::Set_State(act, Action_Component::casting);
-            break;
-          case SDLK_5:
-            Action_Component::Set_State(act, Action_Component::kick);
-            break;
-          case SDLK_6:
-            Action_Component::Set_State(act, Action_Component::pray_standing);
-            break;
-          case SDLK_7:
-            Action_Component::Set_State(act, Action_Component::pray_kneeled);
-            break;
-          case SDLK_8:
-            Skills::Feign_Death(zone, entity);
-            break;
-          case SDLK_9:
-            AI::Turn_On();
-            break;
-          case SDLK_0:
-            User_Mouse_Input::Selection_Soldiers();
-            break;
-          case SDLK_ESCAPE:
-            Menu::Toggle();
-            break;
-          case SDLK_TAB:
-            User_Mouse_Input::Tab_Target(zone, camera, entity);
-            break;
-          case SDLK_p:
-            Pause::Toggle();
-            break;
-          case SDLK_PLUS:
-            SDL_SetRelativeMouseMode(SDL_FALSE);
-            break;
-          case SDLK_MINUS:
-            SDL_SetRelativeMouseMode(SDL_TRUE);
-            break;
-          case SDLK_l:
-            UI_Spellbook::Toggle();
-            break;
-          case SDLK_i:
-            UI::Bag_UI::Toggle_Bag();
-            break;
-          case SDLK_LALT:
-            Items::showGroundItems = true;
-            break;
-          case SDLK_RALT:
-            Items::showGroundItems = true;
-            break;
-          case SDLK_SPACE:
-            Action_Component::Set_State(act, Action_Component::jump);
-            break;
+        auto &position = zone.get<Component::Position>(entity);
+
+        if (Hotbar::keybinds.contains(Events::event.key.keysym.sym)) {
+          Hotbar::keybinds[Events::event.key.keysym.sym](zone, entity, action, 0);
         }
       } else if (Events::event.type == SDL_KEYUP) {
-        switch (Events::event.key.keysym.sym) {
-          case SDLK_LALT:
-            Items::showGroundItems = false;
-            break;
-          case SDLK_RALT:
-            Items::showGroundItems = false;
-            break;
+        if (Hotbar::keyupKeybinds.contains(Events::event.key.keysym.sym)) {
+          Hotbar::keyupKeybinds[Events::event.key.keysym.sym](zone, entity, action, 0);
         }
       }
     }
@@ -134,7 +72,7 @@ namespace Event_Handler {
   std::vector<entt::entity> Mouse_Hover_Entities;
 
   void Mouse_Hover(entt::registry &zone) {
-    for (auto &entity : Mouse_Hover_Entities) {
+    for (auto &entity: Mouse_Hover_Entities) {
       zone.get<Rendering_Components::Sprite_Sheet_Info>(entity).color = {222, 222, 222};
     }
     Mouse_Hover_Entities.clear();
@@ -157,6 +95,13 @@ namespace Event_Handler {
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
         if (Game_Menu_Control::Check_Menu_Button()) {
+          return;
+        }
+        //check if cursor is over the action bar
+        else if (Action_Bar::Get_Slot(zone, camera)) {
+          return;
+        }
+        else if (UI_Spellbook::Get_Spell(zone, camera)) {
           return;
         }
         //check if cursor is in the bag UI
@@ -197,8 +142,7 @@ namespace Event_Handler {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
         if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
 
-        }
-        else {
+        } else {
           User_Mouse_Input::Select_Units(World::zone, player_ID);
         }
       }
@@ -221,7 +165,7 @@ namespace Event_Handler {
           if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
             //            recenter camera on player
             UI_Spellbook::Update_Position();
-            Action_Bar::Update_Position();
+            Action_Bar::Update_Position(Action_Bar::actionBar.actionBarFrame);
             Menu::Build_Menu();
             break;
           }
@@ -233,11 +177,9 @@ namespace Event_Handler {
 
           if (Events::event.key.type == SDL_MOUSEMOTION) {
             Mouse_Hover(zone);
-          }
-          else if (Events::event.key.type == SDL_MOUSEWHEEL) {
+          } else if (Events::event.key.type == SDL_MOUSEWHEEL) {
             Interface::Update_Zoom(Events::event);
-          }
-          else if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
+          } else if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
             Mouse_Input(zone, player_ID, playerPosition, camera);
           } else if (Events::event.key.type == SDL_KEYDOWN || Events::event.key.type == SDL_KEYUP) {
             if (zone.any_of<Component::Velocity>(player_ID)) {
