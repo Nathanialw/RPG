@@ -59,6 +59,12 @@ namespace UI {
       }
     }
 
+    void Close_Bag() {
+      if (bToggleCharacterUI) {
+        bToggleCharacterUI = false;
+      }
+    }
+
     void Toggle_Bag() {
       if (!bToggleCharacterUI) {
         bToggleCharacterUI = true;

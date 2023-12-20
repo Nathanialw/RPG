@@ -69,6 +69,12 @@ namespace UI_Spellbook {
     Build_Spellbook(zone);
   }
 
+  void Close_Spellbook() {
+    if (spellbook.b_isOpen) {
+      spellbook.b_isOpen = false;
+    }
+  }
+
   void Toggle() {
     if (spellbook.b_isOpen) {
       spellbook.b_isOpen = false;

@@ -72,6 +72,11 @@ namespace Hotbar {
   }
 
   int Menu_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+    if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI) {
+      UI::bToggleCharacterUI = false;
+      UI_Spellbook::spellbook.b_isOpen = false;
+      return 0;
+    }
     Menu::Toggle();
     return 0;
   }
