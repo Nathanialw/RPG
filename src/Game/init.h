@@ -103,6 +103,7 @@ namespace Init {
 
   Game Start_Game() {
     Game game;
+    SDL_RenderSetScale(Graphics::renderer, 1.0f, 1.0f);
     Character_Options::Customization options = Character_Create();
     if (!options.success) {
       return game;
