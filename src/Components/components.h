@@ -515,8 +515,16 @@ namespace Component {
     f2 renderPositionOffset;
   };
 
+  enum class Icon_Type {
+    none,
+    spell,
+    item,
+    SIZE
+  };
+
   struct On_Mouse {
     entt::entity item_ID;
+    Icon_Type type = Icon_Type::none;
   };
 
   struct Inventory {

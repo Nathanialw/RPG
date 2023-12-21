@@ -26,15 +26,18 @@ namespace Equipment {
   }
 
   void Equip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, int &slotNum) {
-    UI_bagSlots.at(slotNum) = item;
-    mouseHasItem = false;
-    zone.remove<Component::On_Mouse>(item);
+    if (zone.get<Component::On_Mouse>(item).type == Component::Icon_Type::item) {
+      UI_bagSlots.at(slotNum) = item;
+      mouseHasItem = false;
+      zone.remove<Component::On_Mouse>(item);
+    }
   }
 
   void Unequip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, int &slotNum) {
     item = UI_bagSlots.at(slotNum);
     UI_bagSlots.at(slotNum) = Graphics::defaultIcon;
-    zone.emplace<Component::On_Mouse>(item);
+    auto &mouseItem = zone.emplace<Component::On_Mouse>(item);
+    mouseItem.type = Component::Icon_Type::item;
     mouseHasItem = true;
   }
 

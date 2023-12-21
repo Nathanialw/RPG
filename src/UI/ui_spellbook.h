@@ -41,12 +41,18 @@ namespace UI_Spellbook {
 
   entt::entity Create_Spell(entt::registry &zone) {
     auto spell = zone.create();
-    auto &icon = zone.emplace<Component::Icon>(spell, Graphics::emptyBagIcon, Graphics::default_icon, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
+    //read db
+
+    //load texture
+
+    auto &icon = zone.emplace<Component::Icon>(spell, Graphics::emptyBagIcon, Graphics::fireball_explosion_0, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
+    zone.emplace<Component::Position>(spell);
     icon.clipSprite = {0, 0, 256, 256};
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
-
+    auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(spell);
+    mouseItem.type = Component::Icon_Type::spell;
     return spell;
   }
 
@@ -83,7 +89,7 @@ namespace UI_Spellbook {
     }
   }
 
-  bool Get_SpellPage(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw) {
+  bool Get_SpellPage(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw, bool &mouseHasItem) {
     float xSpacing = 32.0f;
     float ySpacing = 32.0f;
     float x = draw.x;
@@ -103,29 +109,26 @@ namespace UI_Spellbook {
       renderRect = UI::Update_Scale(camera.scale, renderRect);
 
       if (Mouse::bRect_inside_Cursor(renderRect)) {
-        Utilities::Log((int)spellbook.Skill_Trees[fire][i]);
+        mouseHasItem = true;
+        Mouse::mouseItem = spellbook.Skill_Trees[fire][i];
+        auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(spellbook.Skill_Trees[fire][i]);
+        mouseItem.type = Component::Icon_Type::spell;
         return true;
       }
     }
     return false;
   }
 
-  bool Get_Spell(entt::registry &zone, Component::Camera &camera) {
-    SDL_FRect draw = UI::Update_Scale(camera.scale, spellbook.panelRect);
-    if (!Mouse::bRect_inside_Cursor(draw)) {
-      Utilities::Log("nothing");
-      return false;
-    }
-    if (Get_SpellPage(zone, camera, spellbook.panelRect)) {
+  bool Get_Spell(entt::registry &zone, Component::Camera &camera, bool &mouseHasItem) {
+    if (Get_SpellPage(zone, camera, spellbook.panelRect, mouseHasItem)) {
       return true;
     }
     SDL_FRect page2 = spellbook.panelRect;
     page2.w /= 2;
     page2.x += page2.w - 64.0f;
-    if (Get_SpellPage(zone, camera, page2)) {
+    if (Get_SpellPage(zone, camera, page2, mouseHasItem)) {
       return true;
     }
-    Utilities::Log("nothing");
     return false;
   }
 
@@ -151,6 +154,14 @@ namespace UI_Spellbook {
       SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipIcon, &renderRect);
       SDL_RenderCopyF(Graphics::renderer, icon.pIconRarityBorder, &icon.clipIcon, &renderRect);
     }
+  }
+
+  bool Check_Spellbook(Component::Camera &camera) {
+    SDL_FRect draw = UI::Update_Scale(camera.scale, spellbook.panelRect);
+    if (spellbook.b_isOpen && Mouse::bRect_inside_Cursor(draw)) {
+      return true;
+    }
+    return false;
   }
 
   void Draw_Pages(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw) {

@@ -97,23 +97,32 @@ namespace Event_Handler {
         if (Game_Menu_Control::Check_Menu_Button()) {
           return;
         }
-        //check if cursor is over the action bar
-        else if (Action_Bar::Get_Slot(zone, camera)) {
-          return;
+//        spells
+        else if (Action_Bar::Mouse_Inside_Actionbar(camera)) {
+          if (Mouse::itemCurrentlyHeld) {
+            Action_Bar::Set_Mouse_Spell_On_Actionbar(zone, camera);
+          }
+          else {
+            Action_Bar::Get_Mouse_Spell_From_Actionbar(zone, camera);
+          }
         }
-        else if (UI_Spellbook::Get_Spell(zone, camera)) {
-          return;
+        else if (UI_Spellbook::Check_Spellbook(camera)) {
+          Action_Bar::Clear_Spell_On_Mouse(zone);
+          UI_Spellbook::Get_Spell(zone, camera, Mouse::itemCurrentlyHeld);
         }
-        //check if cursor is in the bag UI
+//        items
         else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-          UI::Bag_UI::Interact_With_Bag(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera);
-          if (UI::Equipment_UI::Interact_With_Equipment(zone, Mouse::mouseItem, Mouse::screenMousePoint, Mouse::itemCurrentlyHeld, camera, player_ID)) {
+          UI::Bag_UI::Interact_With_Bag(zone, camera);
+          if (UI::Equipment_UI::Interact_With_Equipment(zone, camera, player_ID)) {
             //updates character stats
             zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
           }
         } else {
           User_Mouse_Input::Selection_Box(zone);//if units are currently selected
-          UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
+//          items
+          UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
+//          spells
+          Action_Bar::Clear_Spell_On_Mouse(zone);
         }
       } else if (Events::event.button.button == SDL_BUTTON_RIGHT) {
         if (UI::bToggleCharacterUI) {
@@ -133,7 +142,7 @@ namespace Event_Handler {
             // if not seleciton units
           }
         } else {
-          UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseItem, Mouse::itemCurrentlyHeld);
+          UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
         }
       }
     }

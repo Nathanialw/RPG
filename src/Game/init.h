@@ -47,6 +47,7 @@ namespace Init {
     Clear_Events();
     Debug::Load_Settings();
     Init_Tiles_Array();
+    Mouse::Init_mouse(World::zone);
     UI_Frames::Load_Buildings();
     Collision::init_Collison();
     World::Generate_Region();

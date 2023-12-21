@@ -146,12 +146,14 @@ namespace Graphics {
     return texture;
   }
 
-  entt::entity Create_Icon_Entity(entt::registry &zone, SDL_Texture *iconImage, SDL_Texture *iconBorder) {
+  entt::entity Create_Icon_Entity(entt::registry &zone, SDL_Texture *iconImage, SDL_Texture *iconBorder, Component::Icon_Type type) {
     auto icon_entity = zone.create();
     auto &icon = zone.emplace<Component::Icon>(icon_entity, iconImage, iconBorder);
     icon.clipSprite = {0, 0, 100, 100};
     icon.renderRectSize = {48, 48};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
+    auto &mouseItem = zone.emplace<Component::On_Mouse>(icon_entity);
+    mouseItem.type = type;
     return icon_entity;
   }
 
@@ -271,7 +273,7 @@ namespace Graphics {
     spellbook = createTexture("assets/sprites/UI/spellbook/spellbook.png");
 
     default_icon = createTexture("assets/sprites/default.jpg");
-    defaultIcon = Create_Icon_Entity(zone, default_icon, Graphics::bagSlotBorder);
+    defaultIcon = Create_Icon_Entity(zone, default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
   }
 
   void createGraphicsContext(entt::registry &zone) {

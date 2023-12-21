@@ -27,33 +27,40 @@ namespace UI {
       std::vector<entt::entity> UI_bagSlots(iTotalSlots);
     }// namespace
 
-    void Place_Item_In_Bag(entt::registry &zone, entt::entity &item, bool &mouseHasItem, int &slotNum) {
-      UI_bagSlots.at(slotNum) = item;
-      mouseHasItem = false;
-      zone.remove<Component::On_Mouse>(item);
-      zone.emplace_or_replace<Component::Inventory>(item);
+    void Place_Item_In_Bag(entt::registry &zone, entt::entity &mouseItem, bool &mouseHasItem, int &slotNum) {
+      if (zone.get<Component::On_Mouse>(mouseItem).type == Component::Icon_Type::item) {
+        UI_bagSlots.at(slotNum) = mouseItem;
+        mouseHasItem = false;
+        zone.remove<Component::On_Mouse>(mouseItem);
+        zone.emplace_or_replace<Component::Inventory>(mouseItem);
+        mouseItem = Mouse::cursor_ID;
+      }
     }
 
     void Remove_Item_From_Bag(entt::registry &zone, entt::entity &item, bool &mouseHasItem, int &slotNum) {
       item = UI_bagSlots.at(slotNum);
       UI_bagSlots.at(slotNum) = emptyBagSlot;
-      zone.emplace<Component::On_Mouse>(item);
+      auto &mouseItem = zone.emplace<Component::On_Mouse>(item);
+      mouseItem.type = Component::Icon_Type::item;
       zone.remove<Component::Inventory>(item);
       mouseHasItem = true;
     }
 
-    void Bag_Item_And_Swap_With_Mouse(entt::registry &zone, entt::entity &item, int &slotNum) {
-      entt::entity itemInSlot = UI_bagSlots[slotNum];
-      UI_bagSlots[slotNum] = item;
-      zone.remove<Component::On_Mouse>(item);
-      zone.emplace<Component::Inventory>(item);
-      item = itemInSlot;
-      zone.emplace<Component::On_Mouse>(item);
-      zone.remove<Component::Inventory>(item);
+    void Bag_Item_And_Swap_With_Mouse(entt::registry &zone, entt::entity &mouseItem, int &slotNum) {
+      if (zone.get<Component::On_Mouse>(mouseItem).type == Component::Icon_Type::item) {
+        entt::entity itemInSlot = UI_bagSlots[slotNum];
+        UI_bagSlots[slotNum] = mouseItem;
+        zone.remove<Component::On_Mouse>(mouseItem);
+        zone.emplace<Component::Inventory>(mouseItem);
+        mouseItem = itemInSlot;
+        auto &mouseIte = zone.emplace<Component::On_Mouse>(mouseItem);
+        mouseIte.type = Component::Icon_Type::item;
+        zone.remove<Component::Inventory>(mouseItem);
+      }
     }
 
     void Create_Bag_UI(entt::registry &zone) {
-      emptyBagSlot = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder);
+      emptyBagSlot = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
       for (int i = 0; i < (iTotalSlots); i++) {
         UI_bagSlots.at(i) = emptyBagSlot;
       }
@@ -148,19 +155,19 @@ namespace UI {
       return Utilities::bPoint_RectIntersect(screenCursor, screenBag);
     }
 
-    void Interact_With_Bag(entt::registry &zone, entt::entity &item, SDL_FPoint &mousePoint, bool &mouseHasItem, Component::Camera &camera) {
+    void Interact_With_Bag(entt::registry &zone, Component::Camera &camera) {
       if (Mouse::bRect_inside_Cursor(Character_UI)) {
-        int slotNum = Get_Bag_Slot(zone, mousePoint, camera);
+        int slotNum = Get_Bag_Slot(zone, Mouse::screenMousePoint, camera);
 
-        if (Is_Cursor_Inside_Bag_Area(zone, camera, mousePoint)) {
-          if (mouseHasItem) {
+        if (Is_Cursor_Inside_Bag_Area(zone, camera, Mouse::screenMousePoint)) {
+          if (Mouse::itemCurrentlyHeld) {
             if (UI_bagSlots[slotNum] == emptyBagSlot) {
-              Place_Item_In_Bag(zone, item, mouseHasItem, slotNum);
+              Place_Item_In_Bag(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, slotNum);
             } else {
-              Bag_Item_And_Swap_With_Mouse(zone, item, slotNum);
+              Bag_Item_And_Swap_With_Mouse(zone, Mouse::mouseItem, slotNum);
             }
           } else if (UI_bagSlots.at(slotNum) != emptyBagSlot) {
-            Remove_Item_From_Bag(zone, item, mouseHasItem, slotNum);
+            Remove_Item_From_Bag(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, slotNum);
           }
         }
       }
@@ -191,7 +198,7 @@ namespace UI {
     }// namespace
 
     void Create_Equipment_UI(entt::registry &zone) {
-      Item_Component::emptyEquipSlot = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder);
+      Item_Component::emptyEquipSlot = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
       auto view = zone.view<Item_Component::Equipment>();
       for (auto player: view) {
         auto &equipment = view.get<Item_Component::Equipment>(player);
@@ -208,69 +215,84 @@ namespace UI {
 
       equipment.equippedItems[itemType] = Item_Component::emptyEquipSlot;
       mouseHasItem = true;
-      zone.emplace<Component::On_Mouse>(item);
+      auto &mouseItem = zone.emplace<Component::On_Mouse>(item);
+      mouseItem.type = Component::Icon_Type::item;
       zone.remove<Component::Inventory>(item);
     }
 
-    void Equip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, Item_Component::Item_Type &itemType, entt::entity &player) {
-      auto &equipment = zone.get<Item_Component::Equipment>(player);
-      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
-
-      equipment.equippedItems[itemType] = item;
-      mouseHasItem = false;
-      zone.remove<Component::On_Mouse>(item);
-      zone.emplace<Component::Inventory>(item);
+    bool Check_Mouse_Is_item(entt::registry &zone) {
+      if (zone.get<Component::On_Mouse>(Mouse::mouseItem).type == Component::Icon_Type::item || zone.get<Component::On_Mouse>(Mouse::mouseItem).type == Component::Icon_Type::none) {
+        return true;
+      }
+      return false;
     }
 
-    void Equip_Item_And_Swap_With_Mouse(entt::registry &zone, entt::entity &item, Item_Component::Item_Type &itemType, entt::entity &player) {
-      auto &equipment = zone.get<Item_Component::Equipment>(player);
-      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
+    void Equip_Item(entt::registry &zone, Item_Component::Item_Type &itemType, entt::entity &player) {
+      if (Check_Mouse_Is_item(zone)) {
+        auto &equipment = zone.get<Item_Component::Equipment>(player);
+        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(Mouse::mouseItem);
+        equipment.equippedItems[itemType] = Mouse::mouseItem;
+        Mouse::mouseItem = Mouse::cursor_ID;
+        Mouse::itemCurrentlyHeld = false;
+        zone.remove<Component::On_Mouse>(equipment.equippedItems[itemType]);
+        zone.emplace<Component::Inventory>(equipment.equippedItems[itemType]);
+      }
+    }
 
-      entt::entity itemInSlot = equipment.equippedItems[itemType];
-      equipment.equippedItems[itemType] = item;
-      zone.remove<Component::On_Mouse>(item);
-      zone.emplace<Component::Inventory>(item);
-      item = itemInSlot;
-      zone.emplace<Component::On_Mouse>(item);
-      zone.remove<Component::Inventory>(item);
+    void Equip_Item_And_Swap_With_Mouse(entt::registry &zone, Item_Component::Item_Type &itemType, entt::entity &player) {
+      if (Check_Mouse_Is_item(zone)) {
+        auto &equipment = zone.get<Item_Component::Equipment>(player);
+        entt::entity itemInSlot = equipment.equippedItems[itemType];
+
+        equipment.equippedItems[itemType] = Mouse::mouseItem;
+        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>( equipment.equippedItems[itemType]);
+        zone.remove<Component::On_Mouse>(equipment.equippedItems[itemType]);
+        zone.emplace<Component::Inventory>(equipment.equippedItems[itemType]);
+
+        Mouse::mouseItem = itemInSlot;
+        zone.remove<Component::Inventory>(Mouse::mouseItem);
+        auto &mouseItem = zone.emplace<Component::On_Mouse>(Mouse::mouseItem);
+        mouseItem.type = Component::Icon_Type::item;
+      }
     }
 
     bool Mouse_Inside_Equipment_Screen(entt::registry &zone, Component::Camera &camera, SDL_FPoint &screenCursor) {
-      //SDL_Rect equipmentScreen = Camera_Control::Convert_Rect_To_Scale(zone, screenEquipment, camera);
       return Utilities::bPoint_RectIntersect(screenCursor, screenEquipment);
     }
 
-    bool Interact_With_Equipment(entt::registry &zone, entt::entity &item, SDL_FPoint &mousePoint, bool &mouseHasItem, Component::Camera &camera, entt::entity &player) {
+
+
+    bool Interact_With_Equipment(entt::registry &zone, Component::Camera &camera, entt::entity &player) {
       /*could be injected instead*/
+      if (Check_Mouse_Is_item(zone)) {
+        if (Mouse_Inside_Equipment_Screen(zone, camera, Mouse::screenMousePoint)) {
+          //check which item type with a search of where the mouse and the rects of the equip slots
+          auto &equipment = zone.get<Item_Component::Equipment>(player);
+          if (Mouse::itemCurrentlyHeld) {
+            auto &itemType = zone.get<Item_Component::Item_Type>(Mouse::mouseItem);
 
-      if (Mouse_Inside_Equipment_Screen(zone, camera, mousePoint)) {
-        //check which item type with a search of where the mouse and the rects of the equip slots
-        auto &equipment = zone.get<Item_Component::Equipment>(player);
-        if (mouseHasItem) {
-          auto &itemType = zone.get<Item_Component::Item_Type>(item);
+            SDL_FRect slotRect = equippedItemsRect[itemType];
+            SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
 
-          SDL_FRect slotRect = equippedItemsRect[itemType];
-          SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-
-          if (Mouse::bRect_inside_Cursor(scaledSlot)) {
-
-            if (equipment.equippedItems[itemType] == Item_Component::emptyEquipSlot) {
-              Equip_Item(zone, item, mouseHasItem, itemType, player);
-              return true;
-            } else {
-              Equip_Item_And_Swap_With_Mouse(zone, item, itemType, player);
-              return true;
+            if (Mouse::bRect_inside_Cursor(scaledSlot)) {
+              if (equipment.equippedItems[itemType] == Item_Component::emptyEquipSlot) {
+                Equip_Item(zone, itemType, player);
+                return true;
+              } else {
+                Equip_Item_And_Swap_With_Mouse(zone, itemType, player);
+                return true;
+              }
             }
           }
-        }
 
-        else {
-          for (auto &itemSlot: equippedItemsRect) {
-            SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(itemSlot.second, camera);
-            if (Mouse::bRect_inside_Cursor(scaledSlot)) {
-              if (equipment.equippedItems[itemSlot.first] != Item_Component::emptyEquipSlot) {
-                Unequip_Item(zone, item, mouseHasItem, itemSlot.first, player);
-                return true;
+          else {
+            for (auto &itemSlot: equippedItemsRect) {
+              SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(itemSlot.second, camera);
+              if (Mouse::bRect_inside_Cursor(scaledSlot)) {
+                if (equipment.equippedItems[itemSlot.first] != Item_Component::emptyEquipSlot) {
+                  Unequip_Item(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, itemSlot.first, player);
+                  return true;
+                }
               }
             }
           }
@@ -337,38 +359,42 @@ namespace UI {
     return false;
   }
 
-  void Drop_Item_If_On_Mouse(entt::registry &zone, Component::Camera &camera, entt::entity &item_ID, bool &isItemCurrentlyHeld) {
-    if (isItemCurrentlyHeld == true) {
+  void Drop_Item_If_On_Mouse(entt::registry &zone, Component::Camera &camera, bool &isItemCurrentlyHeld) {
+    if (isItemCurrentlyHeld) {
       auto view = zone.view<Component::Input, Component::Position>();
       for (auto entity: view) {
-        auto &entityPosition = view.get<Component::Position>(entity);
-        auto &itemPosition = zone.get<Component::Position>(item_ID);
-        itemPosition = entityPosition;
+        if (zone.get<Component::On_Mouse>(Mouse::mouseItem).type == Component::Icon_Type::item) {
+          auto &entityPosition = view.get<Component::Position>(entity);
+          auto &itemPosition = zone.get<Component::Position>(Mouse::mouseItem);
+          itemPosition = entityPosition;
+          entt::entity item_ID = Mouse::mouseItem;
+          Mouse::mouseItem = Mouse::cursor_ID;
 
-        auto &sheetData = zone.get<Rendering_Components::Sprite_Sheet_Info>(item_ID);
-        auto direction = zone.emplace_or_replace<Component::Direction>(item_ID, (Component::Direction)(rand() % 7 + 1));
-        auto &clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList.at(sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(Action_Component::dead).startFrame + (int) direction);
+          auto &sheetData = zone.get<Rendering_Components::Sprite_Sheet_Info>(item_ID);
+          auto direction = zone.emplace_or_replace<Component::Direction>(item_ID, (Component::Direction)(rand() % 7 + 1));
+          auto &clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList.at(sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(Action_Component::dead).startFrame + (int) direction);
 
-        zone.remove<Component::On_Mouse>(item_ID);
-        SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect.clip);
-        SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
+          zone.remove<Component::On_Mouse>(item_ID);
+          SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect.clip);
+          SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
 
-        World::zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
-        World::zone.emplace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.clip.w, (float) clipRect.clip.h);
-        World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
-        World::zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
+          World::zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
+          World::zone.emplace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.clip.w, (float) clipRect.clip.h);
+          World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
+          World::zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
 
-//        if (zone.any_of<Component::Remove_From_Object_Tree>(item_ID)) {
-//          Utilities::Log("item still has Remove_From_Object_Tree");
-//          zone.remove<Component::Remove_From_Object_Tree>(item_ID);
-//        }
-        //for some reason it does not remove this component in Remove_From_Tree even though it should
-        if (zone.any_of<Component::In_Object_Tree>(item_ID)) {
-          Utilities::Log("item was still has In_Object_Tree");
-          zone.remove<Component::In_Object_Tree>(item_ID);
+          //        if (zone.any_of<Component::Remove_From_Object_Tree>(item_ID)) {
+          //          Utilities::Log("item still has Remove_From_Object_Tree");
+          //          zone.remove<Component::Remove_From_Object_Tree>(item_ID);
+          //        }
+          //for some reason it does not remove this component in Remove_From_Tree even though it should
+          if (zone.any_of<Component::In_Object_Tree>(item_ID)) {
+            Utilities::Log("item was still has In_Object_Tree");
+            zone.remove<Component::In_Object_Tree>(item_ID);
+          }
+          auto &action = World::zone.get<Action_Component::Action>(item_ID);
+          Action_Component::Set_State(action, Action_Component::Action_State::dying);
         }
-        auto &action = World::zone.get<Action_Component::Action>(item_ID);
-        Action_Component::Set_State(action, Action_Component::Action_State::dying);
       }
     }
     isItemCurrentlyHeld = false;
@@ -376,14 +402,15 @@ namespace UI {
 
 
   void Pick_Up_Item_To_Mouse(entt::registry &zone, entt::entity &item_ID, bool &isItemCurrentlyHeld) {
-    if (isItemCurrentlyHeld == false) {
+    if (!isItemCurrentlyHeld) {
       //removed pickup box from ground
       zone.remove<Item_Component::Ground_Item>(item_ID);
       //removes for main rendering loop
       zone.remove<Component::Direction>(item_ID);
       zone.remove<Component::Radius>(item_ID);
       //to render on mouse
-      zone.emplace<Component::On_Mouse>(item_ID);
+      auto &mouseItem = zone.emplace<Component::On_Mouse>(item_ID);
+      mouseItem.type = Component::Icon_Type::item;
       Mouse::mouseItem = item_ID;
       Mouse::itemCurrentlyHeld = true;
       //removes from quad tree
@@ -421,7 +448,7 @@ namespace UI {
       }
       //set overburdened message here here
       //cane use a nameplate to write it out above sprites head
-//      std::cout << "I am overburdened" << std::endl;
+      //      std::cout << "I am overburdened" << std::endl;
       return false;
     }
   }
