@@ -10,7 +10,7 @@
 #include "social_control.h"
 
 namespace Input_Control {
-  /// cand probaby merge the routine with Component::Pickup_Item and the normal mouse move, they are almost the same
+  /// cand probably merge the routine with Component::Pickup_Item and the normal mouse move, they are almost the same
   void Pick_Up_Item_Order(entt::registry &zone, entt::entity &entity, entt::entity &Item_ID, float &x, float &y) {
     zone.emplace_or_replace<Component::Pickup_Item>(entity, Item_ID, x, y);
     zone.emplace_or_replace<Component::Moving>(entity);
@@ -47,13 +47,13 @@ namespace Input_Control {
 
   bool Check_For_Mouse_Target(entt::registry &zone, bool showGroundItems, entt::entity &player_ID, Component::Position &playerPosition) {
     if (Social_Control::Enemy_Selected(zone, player_ID)) {
-      if (World::zone.any_of<Component::Attacking>(player_ID) == true) {
+      if (World::zone.any_of<Component::Attacking>(player_ID)) {
         return true;
       }
     }
     SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
     Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);
-    if (targetData.b == true) {
+    if (targetData.b) {
       //      zone.remove<Component::Pickup_Item>(player_ID);
       //      zone.remove<Component::Moving>(player_ID);
       //      zone.remove<Player_Component::Attack_Move>(player_ID);
@@ -76,7 +76,7 @@ namespace Input_Control {
             Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetRadius);
             return true;
           } else {
-            //  std::cout << "no target, 1 is targetting player: " << testasd(player_ID, targetData.entity_ID) << std::endl;
+            //  std::cout << "no target, 1 is targeting player: " << testasd(player_ID, targetData.entity_ID) << std::endl;
           }
         }
 

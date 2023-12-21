@@ -167,13 +167,13 @@ namespace Combat_Control {
     SDL_FRect attackRect = Create_Attack_Box(position, direction);
 
     auto aoeAttack = zone.create();
-    zone.emplace<Component::Damage>(aoeAttack, 1, 10);
-    zone.emplace<Component::Attack_Box_Duration>(aoeAttack, 0.0f, 0.0f);
-    zone.emplace<Component::Mass>(aoeAttack, 500.0f);
-    zone.emplace<Component::Weapon_Size>(aoeAttack, attackRect.x, attackRect.y, attackRect.w, attackRect.h); //set x, y to in front of char when he attacks
-    zone.emplace<Component::Position>(aoeAttack, position);
-    zone.emplace<Component::Alive>(aoeAttack, true);
-    zone.emplace<Component::Entity_Type>(aoeAttack, Component::Entity_Type::spell);
+    zone.emplace_or_replace<Component::Damage>(aoeAttack, 1, 10);
+    zone.emplace_or_replace<Component::Attack_Box_Duration>(aoeAttack, 0.0f, 0.0f);
+    zone.emplace_or_replace<Component::Mass>(aoeAttack, 500.0f);
+    zone.emplace_or_replace<Component::Weapon_Size>(aoeAttack, attackRect.x, attackRect.y, attackRect.w, attackRect.h); //set x, y to in front of char when he attacks
+    zone.emplace_or_replace<Component::Position>(aoeAttack, position);
+    zone.emplace_or_replace<Component::Alive>(aoeAttack, true);
+    zone.emplace_or_replace<Component::Entity_Type>(aoeAttack, Component::Entity_Type::spell);
   }
 
   void AttackSpeed_Updater(entt::registry &zone) {

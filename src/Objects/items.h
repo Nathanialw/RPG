@@ -128,13 +128,13 @@ namespace Items {
     std::string weaponName = materialType + " " + weapon;
     std::string slot = "mainhand";
 
-    auto &type = World::zone.emplace<Item_Type>(item, Item_Type::mainhand);
-    World::zone.emplace<Rarity>(item, rarity);
+    auto &type = World::zone.emplace_or_replace<Item_Type>(item, Item_Type::mainhand);
+    World::zone.emplace_or_replace<Rarity>(item, rarity);
 
     Texture_Packer_Item::Get_Item_Portrait_exture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
     Texture_Packer_Item::Get_Item_Body_Texture(item_name.name, ("assets/" + item_name.body_pngPath).c_str());
-    World::zone.emplace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
-    World::zone.emplace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
+    World::zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
+    World::zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
 
     ///create the weapon from the db
     ///add to std::map
@@ -154,18 +154,18 @@ namespace Items {
 
     SDL_Rect sprite = {column * size, row * size, size, size};
 
-    auto &sheetData = World::zone.emplace<Rendering_Components::Sprite_Sheet_Info>(item);
+    auto &sheetData = World::zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
     sheetData.sheet_name = equippedSheetData.index;
 
-    auto &icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+    auto &icon = World::zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
     icon.clipSprite = sprite;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
 
-    World::zone.emplace<Weapon_Damage>(item, 1, 10);
+    World::zone.emplace_or_replace<Weapon_Damage>(item, 1, 10);
     return equippedSheetData.index;
   }
 
@@ -178,8 +178,8 @@ namespace Items {
     std::string offhandName = materialType + " " + offhand;
     std::string slot = "offhand";
 
-    auto &type = World::zone.emplace<Item_Type>(item, Item_Type::offhand);
-    World::zone.emplace<Rarity>(item, rarity);
+    auto &type = World::zone.emplace_or_replace<Item_Type>(item, Item_Type::offhand);
+    World::zone.emplace_or_replace<Rarity>(item, rarity);
 
     ///create the weapon from the db
     ///add to std::map
@@ -200,18 +200,18 @@ namespace Items {
     SDL_Rect sprite = {column * size, row * size, size, size};
 
 
-    auto &sheetData = World::zone.emplace<Rendering_Components::Sprite_Sheet_Info>(item);
+    auto &sheetData = World::zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
     sheetData.sheet_name = equippedSheetData.index;
 
-    auto &icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+    auto &icon = World::zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
     icon.clipSprite = sprite;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
 
-    World::zone.emplace<Weapon_Damage>(item, 1, 10);
+    World::zone.emplace_or_replace<Weapon_Damage>(item, 1, 10);
     return equippedSheetData.index;
   }
 
@@ -221,8 +221,8 @@ namespace Items {
     std::string type = ItemTypeName[itemType];
     std::string armor = ArmorTypeName[armorType];
     std::string itemName = armor + " " + type;  //ei. "Copper Pants" not implemented yet
-    World::zone.emplace<Item_Type>(item, itemType);
-    World::zone.emplace<Rarity>(item, rarity);
+    World::zone.emplace_or_replace<Item_Type>(item, itemType);
+    World::zone.emplace_or_replace<Rarity>(item, rarity);
     int column = itemTypes[itemType];
     int row = armorTypes[armorType];
     int size = 64;
@@ -230,8 +230,8 @@ namespace Items {
 
     Texture_Packer_Item::Get_Item_Portrait_exture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
     Texture_Packer_Item::Get_Item_Body_Texture(item_name.name, ("assets/" + item_name.body_pngPath).c_str());
-    World::zone.emplace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
-    World::zone.emplace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
+    World::zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
+    World::zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
 
     Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
     equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type, equip_type, item_name.name);
@@ -239,13 +239,13 @@ namespace Items {
       return "none";
     }
 
-    auto &sheetData = World::zone.emplace<Rendering_Components::Sprite_Sheet_Info>(item);
+    auto &sheetData = World::zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
     sheetData.color = color;
     sheetData.sheet_name = equippedSheetData.index;
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
 
-    auto &icon = World::zone.emplace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
+    auto &icon = World::zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
     icon.clipSprite = sprite;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
@@ -256,15 +256,15 @@ namespace Items {
   void Create_Item(entt::entity &item, Component::Position &position, const std::string &name, Item_Stats &itemStats, Component::Direction &direction) {
     float scale = 0.7f;
 
-    World::zone.emplace<Component::Scale>(item, scale);
-    World::zone.emplace<Action_Component::Action>(item, Action_Component::dying);
-    World::zone.emplace<Component::Direction>(item, direction);
-    World::zone.emplace<Name>(item, name);
-    World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
-    auto &stats = World::zone.emplace<Item_Stats>(item);
+    World::zone.emplace_or_replace<Component::Scale>(item, scale);
+    World::zone.emplace_or_replace<Action_Component::Action>(item, Action_Component::dying);
+    World::zone.emplace_or_replace<Component::Direction>(item, direction);
+    World::zone.emplace_or_replace<Name>(item, name);
+    World::zone.emplace_or_replace<Component::Entity_Type>(item, Component::Entity_Type::item);
+    auto &stats = World::zone.emplace_or_replace<Item_Stats>(item);
     stats = itemStats;
-    auto &offset = World::zone.emplace<Rendering_Components::Sprite_Offset>(item, 90.0f, 130.0f);
-    auto &position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
+    auto &offset = World::zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(item, 90.0f, 130.0f);
+    auto &position2 = World::zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
   }
 
   statValue Get_Random_Stat() {
@@ -360,14 +360,14 @@ namespace Items {
 
   void Create_Item1(entt::entity &item, Component::Position &position, const std::string &name, Item_Stats &itemStats) {
     float scale = 0.7f;
-    World::zone.emplace<Component::Scale>(item, scale);
-    World::zone.emplace<Action_Component::Action>(item, Action_Component::isStatic);
-    World::zone.emplace<Name>(item, name);
-    World::zone.emplace<Component::Entity_Type>(item, Component::Entity_Type::item);
-    auto &stats = World::zone.emplace<Item_Stats>(item);
+    World::zone.emplace_or_replace<Component::Scale>(item, scale);
+    World::zone.emplace_or_replace<Action_Component::Action>(item, Action_Component::isStatic);
+    World::zone.emplace_or_replace<Name>(item, name);
+    World::zone.emplace_or_replace<Component::Entity_Type>(item, Component::Entity_Type::item);
+    auto &stats = World::zone.emplace_or_replace<Item_Stats>(item);
     stats = itemStats;
-    auto &offset = World::zone.emplace<Rendering_Components::Sprite_Offset>(item, 100.0f, 100.0f);
-    auto &position2 = World::zone.emplace<Component::Position>(item, position.x, position.y);
+    auto &offset = World::zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(item, 100.0f, 100.0f);
+    auto &position2 = World::zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
   }
 
   entt::entity Create_And_Equip_Weapon(Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {

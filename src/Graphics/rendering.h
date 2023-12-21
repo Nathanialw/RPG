@@ -396,7 +396,7 @@ namespace Rendering {
 
           if (zone.any_of<Component::Tile_Index>(entity)) {
             auto &rect = zone.get<Component::Interaction_Rect>(entity);
-            zone.emplace<Component::Remove_From_Object_Tree>(entity, rect.rect);
+            zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect.rect);
 
             if (zone.any_of<Component::Body>(entity)) {
               auto &body = zone.get<Component::Body>(entity).body;
@@ -462,7 +462,7 @@ namespace Rendering {
     Render_Explosions(zone, camera);
   }
 
-  void Rendering(entt::registry &zone) {
+  bool Rendering(entt::registry &zone, Menu::Menu &menu) {
     Update_Camera_And_Mouse(zone);
     SDL_FPoint mouse = {Mouse::iXMouse, Mouse::iYMouse};
 
@@ -485,14 +485,16 @@ namespace Rendering {
       Damage_Text::Show_Damage(zone, camera);
       UI_Spellbook::Draw_Spellbook(zone, camera);
       Pause::Pause_Control(camera);
-      Menu::Render_Menu(zone, camera);
+      if (!Menu::Render_Menu(menu, zone, camera)) {
+        return false;
+      }
       //Mouse
       Interface::Foreground(zone, camera);
       //on top of mouse
       Tooltip::Show_Item_Tooltip(zone, mouse, camera);
       Render_Mouse_Item(zone, camera);
       SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
-      if (Items::showGroundItems == true) {                //****//search quad tree instead
+      if (Items::showGroundItems) {                //****//search quad tree instead
         auto view = zone.view<Ground_Item, Component::Renderable>();
         for (auto item: view) {
           auto &box = zone.get<Ground_Item>(item);
@@ -500,6 +502,7 @@ namespace Rendering {
         }
       }
     }
+    return true;
   }
 
   void Present() {

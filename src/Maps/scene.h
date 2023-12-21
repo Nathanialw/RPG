@@ -43,7 +43,7 @@ namespace Scene {
   }
 
   //void Emplace_State_Data(entt::entity &entity) {
-  //	World::zone.emplace<Store_State>(entity);
+  //	World::zone.emplace_or_replace<Store_State>(entity);
   //	//Sprite_Parser::Store_State_Frame_Start_Y();
   //}
 
@@ -73,7 +73,7 @@ namespace Scene {
     //std::cout << "add_unit_to_grid = Good" << std::endl;
   }
 
-  void Init_Zone(entt::registry &zone) {
+  void Init_Zone() {
     Map::Build_Map(Map::terrain);
     Map::Build_Map(Map::map);
     Entity_Loader::init_db();

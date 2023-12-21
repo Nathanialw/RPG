@@ -87,6 +87,10 @@ namespace World {
   World_Data::Tile_Size size;
 
   entt::basic_registry<entt::entity> zone;
+  void close_zone() {
+    zone.clear<>();
+  }
+
   entt::basic_registry<entt::entity> cave;
   World_Data::Region region;
 
@@ -120,7 +124,7 @@ namespace World {
         position.y = i * size.height;
 
         //set tile data
-        Procedural_Components::Seed seed = zone.emplace<Procedural_Components::Seed>(entity);
+        Procedural_Components::Seed seed = zone.emplace_or_replace<Procedural_Components::Seed>(entity);
         seed.seed = Procedural_Generation::Create_Initial_Seed(position.x, position.y);
         h++;
       }
@@ -155,7 +159,7 @@ namespace World {
     position.x = ((w * z) + a) * size.width;
     position.y = ((i * j) + k) * size.height;
     //                                auto entity = zone.create();
-    //                                zone.emplace<World_Data::Tile>(entity, tile.x, tile.y);
+    //                                zone.emplace_or_replace<World_Data::Tile>(entity, tile.x, tile.y);
     //                                    takes in tile coords as seed, outputs random number
 
     Procedural_Components::Seed seed;
@@ -254,7 +258,7 @@ namespace World {
       for (int j = 0; j < 127; ++j) {
         seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
         int numObjects = Procedural_Generation::Random_Int(0, 100, seed);
-        if (numObjects < 3) {
+        if (numObjects < 5) {
           x = Procedural_Generation::Random_Int(0, (int) size.width, seed);
           y = Procedural_Generation::Random_Int(0, (int) size.height, seed);
 
@@ -285,7 +289,7 @@ namespace World {
     std::string objectName = "";
 
     seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
-    int numObjects = Procedural_Generation::Random_Int(1, 3, seed);
+    int numObjects = Procedural_Generation::Random_Int(1, 5, seed);
 
     for (int k = 0; k < numObjects; k++) {
       x = Procedural_Generation::Random_Int(0, (int) size.width, seed);

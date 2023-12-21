@@ -36,7 +36,7 @@ namespace Equipment {
   void Unequip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, int &slotNum) {
     item = UI_bagSlots.at(slotNum);
     UI_bagSlots.at(slotNum) = Graphics::defaultIcon;
-    auto &mouseItem = zone.emplace<Component::On_Mouse>(item);
+    auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(item);
     mouseItem.type = Component::Icon_Type::item;
     mouseHasItem = true;
   }

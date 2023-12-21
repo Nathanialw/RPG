@@ -164,7 +164,7 @@ namespace Event_Handler {
     }
   }
 
-  void Update_User_Input(entt::registry &zone) {
+  void Update_User_Input(entt::registry &zone, Menu::Menu &menu) {
     //        keep function running to maintain input and perform actions during pause
     if (!Menu::toggleMenu) {
       while (SDL_PollEvent(&Events::event) != 0) {
@@ -175,7 +175,7 @@ namespace Event_Handler {
             //            recenter camera on player
             UI_Spellbook::Update_Position();
             Action_Bar::Update_Position(Action_Bar::actionBar.actionBarFrame);
-            Menu::Build_Menu();
+            Menu::Build_Menu(menu);
             break;
           }
 
@@ -208,7 +208,7 @@ namespace Event_Handler {
     }
   };
 
-  void Input_Handler(entt::registry &zone) {
-    Update_User_Input(zone);
+  void Input_Handler(entt::registry &zone, Menu::Menu &menu) {
+    Update_User_Input(zone, menu);
   }
 }// namespace Event_Handler

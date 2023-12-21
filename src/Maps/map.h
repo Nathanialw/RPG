@@ -6,9 +6,10 @@
 #include <tmxlite/TileLayer.hpp>
 #include <tmxlite/ObjectGroup.hpp>
 #include "SQLite_dialogue.h"
-#include "utilities.h"
-#include "world.h"
+////#include "utilities.h"
 #include "create_entities.h"
+#include "world.h"
+#include "collision.h"
 
 namespace Maps {
 

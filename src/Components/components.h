@@ -208,7 +208,7 @@ namespace Component {
     keyboardControl[SDLK_z].velocity.x -= velocity.speed;
     keyboardControl[SDLK_z].velocity.y += velocity.speed;
 
-    auto &input = zone.emplace<Input>(entity);
+    auto &input = zone.emplace_or_replace<Input>(entity);
     input.keyboardControl = keyboardControl;
   }
 

@@ -21,26 +21,32 @@
 #include <SDL2/SDL.h>
 
 namespace Game_Loop {
+  enum GameState {
+    running,
+    restart,
+    exit
+  };
 
-  bool running = false;
+  GameState gamestate = GameState::running;
 
   void Game_State() {
-    if (Graphics::running == false) {
-      running = false;
+    if (!Graphics::running) {
+      gamestate = GameState::exit;
     } else {
-      running = true;
+      gamestate = GameState::running;
     }
   }
 
-  void Game_Loop() {
+
+  GameState Game_Loop(Init::Game &game) {
     Game_State();
     Timer::startPerf = SDL_GetPerformanceCounter();
-    while (running == true) {
+    while (gamestate == GameState::running) {
       Game_State();
       //Squad_Control::Create_And_Fill_New_Squad(World::zone);
       //Test_Units::Create_Formation(World::zone);
 
-      Event_Handler::Update_User_Input(World::zone);
+      Event_Handler::Update_User_Input(World::zone, game.menu);
       Character_Stats::Update_Items(World::zone);
       Player_Control::Move_To_Atack_Routine(World::zone);
       AI::Update_AI(World::zone);
@@ -55,7 +61,9 @@ namespace Game_Loop {
       Unit_Status::Update_Unit_Status(World::zone);
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::status], Timer::gameLoopTimer);
 
-      Rendering::Rendering(World::zone);
+      if (!Rendering::Rendering(World::zone, game.menu)) {
+        return GameState::restart;
+      }
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::render], Timer::gameLoopTimer);
 
       Dynamic_Quad_Tree::Update_Tree_Routine(World::zone);
@@ -65,5 +73,6 @@ namespace Game_Loop {
       Timer::Calculate_Timestep();
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::renderpresent], Timer::gameLoopTimer);
     }
+    return GameState::exit;
   }
 }// namespace Game_Loop

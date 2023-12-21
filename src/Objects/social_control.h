@@ -149,7 +149,7 @@ namespace Social_Control {
 
   void Interact(entt::registry &zone, entt::entity &unitID, std::string text_type) {
     if (!zone.any_of<Social_Component::Speaking>(unitID)) {
-      auto &text = zone.emplace<Social_Component::Speaking>(unitID);
+      auto &text = zone.emplace_or_replace<Social_Component::Speaking>(unitID);
       //set text
       text.text = Dialogue::Get_Random_Dialogue(text_type);
       //set duration

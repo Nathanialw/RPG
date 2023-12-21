@@ -1,3 +1,4 @@
+#pragma once
 #include "entt/entt.hpp"
 #include "action_components.h"
 #include "world.h"

@@ -6,8 +6,8 @@ namespace Squad_Control {
 
   entt::entity Create_New_Squad(entt::registry& zone) {
     auto new_squad_ID = zone.create();
-    zone.emplace<Test::Soldiers_Assigned_List>(new_squad_ID);
-    auto& squadData = zone.emplace<Test::Unit_Formation_Data>(new_squad_ID);
+    zone.emplace_or_replace<Test::Soldiers_Assigned_List>(new_squad_ID);
+    auto& squadData = zone.emplace_or_replace<Test::Unit_Formation_Data>(new_squad_ID);
     squadData.formationType = Test::Formation_Type::squad;
     squadData.formation_ID = new_squad_ID;
     return new_squad_ID;
@@ -17,7 +17,7 @@ namespace Squad_Control {
 
     for (int i = 0; i < squad.unitData.size(); i++) {
       if (squad.unitData.at(i).bAlive == false) {
-	auto& soldier = zone.emplace<Component::Assigned_To_Formation>(soldierData.unit_ID, i, squad_ID);
+	auto& soldier = zone.emplace_or_replace<Component::Assigned_To_Formation>(soldierData.unit_ID, i, squad_ID);
 	squad.unitData.at(i) = soldierData;
 	return true;
       }
@@ -27,7 +27,7 @@ namespace Squad_Control {
   bool Emplace_Umit_In_Squad(entt::registry& zone, entt::entity& squad_ID, Test::Soldiers_Assigned_List& squad, Test::Soldier_Data& soldierData) {
 
     if (squad.unitData.size() < squad.size) {
-      auto& soldier = zone.emplace<Component::Assigned_To_Formation>(soldierData.unit_ID, 0, squad_ID);
+      auto& soldier = zone.emplace_or_replace<Component::Assigned_To_Formation>(soldierData.unit_ID, 0, squad_ID);
       soldier.iIndex = (int)squad.unitData.size();
       squad.unitData.emplace_back(soldierData);
       return true;

@@ -307,7 +307,7 @@ namespace Character_Stats {
       equipment.equippedItems[Item_Type::horns] = item;
       Get_Bust_Textures(zone, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
 
-      zone.emplace<Item_Component::Item_Equip>(unit);
+      zone.emplace_or_replace<Item_Component::Item_Equip>(unit);
     }
   }
 

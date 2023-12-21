@@ -1,4 +1,4 @@
-//#pragma once
+#pragma once
 //#include "components.h"
 //#include "dynamic_quad_tree.h"
 ////#include "graphics.h"
@@ -33,7 +33,7 @@
 //			object.entity_ID = entity;
 //			object.rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
 //
-//			zone.emplace<Component::In_Object_Tree>(entity);
+//			zone.emplace_or_replace<Component::In_Object_Tree>(entity);
 //			treeObjects.insert(object, object.rect);
 //			
 //		}
@@ -51,7 +51,7 @@
 //			object.entity_ID = entity;
 //			object.rect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
 //
-//			zone.emplace<Component::In_Object_Tree>(entity);
+//			zone.emplace_or_replace<Component::In_Object_Tree>(entity);
 //			treeObjects.insert(object, object.rect);
 //		}
 //	}

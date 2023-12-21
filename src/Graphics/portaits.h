@@ -1,3 +1,4 @@
+#pragma once
 #include "SQLite_item_data.h"
 #include "graphics.h"
 

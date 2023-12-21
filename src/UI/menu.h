@@ -34,14 +34,14 @@ namespace Menu {
   struct Menu {
     SDL_Texture *background;
     Uint8 spacing = Mouse::cursorRadius * 2;
-    std::array<Button, 3> buttons;
+    std::array<Button, 6> buttons;
+    int i = -1;
   };
 
-  //    stores menu
   Menu menu;
 
   //    need the attricute otherwise it WILL be optimized out
-  void Build_Menu() {
+  void Build_Menu(Menu &menus) {
     //        set first index position
     menu.buttons[0].size = UI::Center_Rect(menu.buttons[0].textSurface->clip_rect);
     menu.buttons[0].size.y /= 2.0f;
@@ -52,9 +52,9 @@ namespace Menu {
     }
   }
 
-  void Create_Menu() {
+  void Create_Menu(Menu &menus) {
     Menu tempMenu;
-    std::vector<const char *> labels = {"Continue", "Options", "Exit"};
+    std::vector<const char *> labels = {"Continue", "New Game", "Save", "Load", "Options", "Exit"};
 
     for (int i = 0; i < labels.size(); i++) {
       Button button;
@@ -76,8 +76,9 @@ namespace Menu {
     menu = tempMenu;
   }
 
+
   void Init() {
-    Create_Menu();
+    Create_Menu(menu);
   }
 
   bool toggleMenu = false;
@@ -92,7 +93,7 @@ namespace Menu {
     }
   }
 
-  int Show_Menu(entt::registry &zone, Component::Camera &camera) {
+  int Show_Menu(Menu &menus, entt::registry &zone, Component::Camera &camera) {
     for (int i = 0; i < menu.buttons.size(); i++) {
       menu.buttons[i].scaledSize = UI::Update_Scale(camera.scale, menu.buttons[i].size);
 
@@ -124,9 +125,9 @@ namespace Menu {
             //            recenter camera on player
             UI_Spellbook::Update_Position();
             Action_Bar::Update_Position(Action_Bar::actionBar.actionBarFrame);
-            Build_Menu();
+            Build_Menu(menu);
           }
-          return 3;
+          return -1;
         }
 
         case SDL_QUIT: {
@@ -158,29 +159,22 @@ namespace Menu {
     return menu.buttons.size() + 1;
   }
 
-  int i = 3;
-
-  void Render_Menu(entt::registry &zone, Component::Camera &camera) {
+  bool Render_Menu(Menu &menus, entt::registry &zone, Component::Camera &camera) {
     //pause with no inout
     if (toggleMenu) {
       UI::Overlay(camera.scale);
-      if (i != 1) {
-        i = Show_Menu(zone, camera);
+      if (menu.i != 4) {
+        menu.i = Show_Menu(menu, zone, camera);
       }
-
-      if (i == 0)// "continue"
-      {
-        Toggle();
-      } else if (i == 1)// "options"
-      {
-        //        Toggle();
-        i = Menu_Options::Show_Menu_Options(camera);
-      } else if (i == 2)// "exit"
-      {
-        //        exit program
-        Graphics::closeContext();
+      switch (menu.i) {
+        case 0: {Toggle(); break;}
+        case 1: {return false; }
+        case 2: {return true; }
+        case 3: {return true; }
+        case 4: {menu.i = Menu_Options::Show_Menu_Options(camera); break;}
+        case 5: {Graphics::closeContext(); break;}
       }
     }
-    //toggle pause with input
+    return true;
   }
 }// namespace Menu

@@ -59,25 +59,25 @@ namespace Create_Entities {
   void Set_Collision_Box(entt::registry &zone, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
     if (entity_class == "polygon") {
       Collision::Create_Static_Body_Polygon(zone, entity, position.x, position.y, pointVecs);
-      zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace<Component::Line_Segment>(entity, line);
-      zone.emplace<Social_Component::Race>(entity, Social_Component::Race::neutral);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+      zone.emplace_or_replace<Component::Line_Segment>(entity, line);
+      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
     } else if (entity_class == "rect") {
       Collision::Create_Static_Body_Rect(zone, entity, position.x, position.y, aabb);
-      zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace<Social_Component::Race>(entity, Social_Component::Race::neutral);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
     } else if (entity_class == "round") {
       Collision::Create_Static_Body(zone, entity, position.x, position.y, radius);
-      zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace<Social_Component::Race>(entity, Social_Component::Race::neutral);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
     } else {
       //        no collision box
-      zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace<Social_Component::Race>(entity, Social_Component::Race::neutral);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
     }
   }
 
@@ -100,21 +100,21 @@ namespace Create_Entities {
       flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
 
       //Add shared components
-      auto &position = zone.emplace<Component::Position>(entity, x, y);
-      auto &scale = zone.emplace<Component::Scale>(entity, 1.0f);
-      auto &radius = zone.emplace<Component::Radius>(entity, 1.0f);
+      auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
+      auto &scale = zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
+      auto &radius = zone.emplace_or_replace<Component::Radius>(entity, 1.0f);
 
       /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
-      zone.emplace<Component::Direction>(entity, Component::Direction::W);
-      zone.emplace<Component::Name>(entity, name);
-      zone.emplace<Component::Mass>(entity, 100.0f);
-      zone.emplace<Component::Alive>(entity, true);
+      zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
+      zone.emplace_or_replace<Component::Name>(entity, name);
+      zone.emplace_or_replace<Component::Mass>(entity, 100.0f);
+      zone.emplace_or_replace<Component::Alive>(entity, true);
 
-      auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
+      auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
       sprite.flareSpritesheet = flareSheetData;
       sprite.sheet_name = name;
       sprite.type = sheetDataFlare.sheet_type;
-      zone.emplace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
       Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       return true;
@@ -141,15 +141,15 @@ namespace Create_Entities {
         return true;
       }
       auto entity = zone.create();
-      auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
+      auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
       sprite.sheetData = packerframeData;
       sprite.sheet_name = tilesetName;
       sprite.type = "RPG_Tools";
       sprite.frameIndex = xmlIndex;
       Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(xmlIndex);
-      auto &position = zone.emplace<Component::Position>(entity, x, y);
+      auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
 
-      auto &offset = zone.emplace<Rendering_Components::Sprite_Offset>(entity, 0.0f, 0.0f);
+      auto &offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, 0.0f, 0.0f);
       if (data.collider_type == "rect") {
         offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h};
         position.y -= (float) frame.clip.h / 2.0f;
@@ -175,18 +175,18 @@ namespace Create_Entities {
       }
 
       //Add shared components
-      auto &radius = zone.emplace<Component::Radius>(entity, data.radius);
-      zone.emplace<Component::Interaction_Rect>(entity, (x - radius.fRadius), (y - 10.0f / 2.0f), (radius.fRadius * 2.0f), 10.0f);
+      auto &radius = zone.emplace_or_replace<Component::Radius>(entity, data.radius);
+      zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius.fRadius), (y - 10.0f / 2.0f), (radius.fRadius * 2.0f), 10.0f);
 
-      zone.emplace<Component::Scale>(entity, 1.0f);
-      zone.emplace<Component::Name>(entity, templateName);
-      zone.emplace<Component::Mass>(entity, 100.0f);
-      zone.emplace<Component::Alive>(entity, true);
-      zone.emplace<Component::Health>(entity, 100, 100);
+      zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
+      zone.emplace_or_replace<Component::Name>(entity, templateName);
+      zone.emplace_or_replace<Component::Mass>(entity, 100.0f);
+      zone.emplace_or_replace<Component::Alive>(entity, true);
+      zone.emplace_or_replace<Component::Health>(entity, 100, 100);
 
       if (i != x && j != y) {
 //        std::cout << i << " " << j << std::endl;
-        zone.emplace<Component::Tile_Index>(entity, (int)i, (int)j);
+        zone.emplace_or_replace<Component::Tile_Index>(entity, (int)i, (int)j);
       }
 
       //std::cout << templateName << "Xo: " << frame.x_offset << " Cw: " << frame.clip.w << " IXo: " << imageOffset.x << " Yo: " << frame.y_offset << " Ch: " << frame.clip.h << " IYo: " << imageOffset.y << std::endl;
@@ -198,18 +198,18 @@ namespace Create_Entities {
         position.y -= offset.y;
         offset.x = 0.0f;
         offset.y = 0.0f;
-        zone.emplace<Rendering_Components::Background>(entity);
+        zone.emplace_or_replace<Rendering_Components::Background>(entity);
       } else if (data.collider_type == "foreground") {
         offset = {frame.clip.w/2.0f, frame.clip.h/2.0f};
         position.x -= offset.x;
         position.y -= offset.y;
         offset.x = 0.0f;
         offset.y = 0.0f;
-        zone.emplace<Rendering_Components::Foreground>(entity);
+        zone.emplace_or_replace<Rendering_Components::Foreground>(entity);
       }
         // if object is a  background sprite DO NOT set Direction component
       else {
-        zone.emplace<Component::Direction>(entity, Component::Direction::W);
+        zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
       }
       return true;
     }
@@ -279,8 +279,8 @@ namespace Create_Entities {
     }
 
     //Add shared components
-    auto &position = zone.emplace<Component::Position>(entity, x, y);
-    auto &scale = zone.emplace<Component::Scale>(entity, data.scale);
+    auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
+    auto &scale = zone.emplace_or_replace<Component::Scale>(entity, data.scale);
     //            randomly scale trees
     if (is_random == 1) {
       seed.seed = Procedural_Generation::Create_Initial_Seed(position.x, position.y);
@@ -289,24 +289,24 @@ namespace Create_Entities {
       data.scale = type;
     }
     //
-    auto &radius = zone.emplace<Component::Radius>(entity, (data.radius * data.scale));
-    zone.emplace<Component::Interaction_Rect>(entity, (x - data.interact_r) * data.scale, (y - data.interact_h / 2.0f) * data.scale, (data.interact_r * 2.0f) * data.scale, data.interact_h * data.scale);
+    auto &radius = zone.emplace_or_replace<Component::Radius>(entity, (data.radius * data.scale));
+    zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - data.interact_r) * data.scale, (y - data.interact_h / 2.0f) * data.scale, (data.interact_r * 2.0f) * data.scale, data.interact_h * data.scale);
 
-    zone.emplace<Component::Mass>(entity, data.mass * data.scale);
-    zone.emplace<Component::Alive>(entity, true);
-    zone.emplace<Component::Unit>(entity);
-    zone.emplace<Rendering_Components::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
+    zone.emplace_or_replace<Component::Mass>(entity, data.mass * data.scale);
+    zone.emplace_or_replace<Component::Alive>(entity, true);
+    zone.emplace_or_replace<Component::Unit>(entity);
+    zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
 
-    auto &full_name = zone.emplace<Component::Name>(entity);
+    auto &full_name = zone.emplace_or_replace<Component::Name>(entity);
     Character_Data::Get_Name(full_name);
 
-    texture.portrait = zone.emplace<Rendering_Components::Portrait>(entity, Graphics::Load_Portrait(unit_ID, imgPaths.portraitPath.c_str())).texture;
-    texture.body = zone.emplace<Rendering_Components::Body>(entity, Graphics::Load_Body(unit_ID, imgPaths.bodyPath.c_str())).texture;
+    texture.portrait = zone.emplace_or_replace<Rendering_Components::Portrait>(entity, Graphics::Load_Portrait(unit_ID, imgPaths.portraitPath.c_str())).texture;
+    texture.body = zone.emplace_or_replace<Rendering_Components::Body>(entity, Graphics::Load_Body(unit_ID, imgPaths.bodyPath.c_str())).texture;
 
-    zone.emplace<Rendering_Components::Unit_Frame_Portrait>(entity, texture.portrait);
-    zone.emplace<Rendering_Components::Body_Frame>(entity, texture.body);
+    zone.emplace_or_replace<Rendering_Components::Unit_Frame_Portrait>(entity, texture.portrait);
+    zone.emplace_or_replace<Rendering_Components::Body_Frame>(entity, texture.body);
 
-    auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
+    auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
 
     //if RTP_pieces type
     if (packerframeData) {
@@ -321,39 +321,39 @@ namespace Create_Entities {
 
     //dynamic entities
     if (data.body_type == 1) {
-      zone.emplace<Component::Direction>(entity, Component::Direction::S);
+      zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::S);
 
       auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
-      zone.emplace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
-      auto &relationships = zone.emplace<Social_Component::Relationships>(entity);
+      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
+      auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
       for (int i = 0; i < raceData.size(); i++) {
         relationships.races[i] = raceData[i + 1];
       }
 
       Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
       if (equip_type != Item_Component::Unit_Equip_Type::none) {
-        zone.emplace<Item_Component::Equipment>(entity, equip_type);
-        zone.emplace<Rendering_Components::Equipment_Sprites>(entity);
+        zone.emplace_or_replace<Item_Component::Equipment>(entity, equip_type);
+        zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
       }
 
       bool yes = true;
       Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius, data.mass, yes);
-      zone.emplace<Collision_Component::Dynamic_Collider>(entity);
+      zone.emplace_or_replace<Collision_Component::Dynamic_Collider>(entity);
 
       //do not attach to non combat
       if (data.temp_type_name != "non-combat") {
-        zone.emplace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max, 25);
-        zone.emplace<Component::Attack_Speed>(entity, data.attack_speed, 0.0f);
+        zone.emplace_or_replace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max, 25);
+        zone.emplace_or_replace<Component::Attack_Speed>(entity, data.attack_speed, 0.0f);
       }
 
-      zone.emplace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
-      zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
-      zone.emplace<Action_Component::Action>(entity, Action_Component::idle);
-      auto &velocity = zone.emplace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
-      auto &health = zone.emplace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
-      zone.emplace<Component::Soldier>(entity);
-      zone.emplace<Component::Commandable>(entity);
-      zone.emplace<Component::Spellbook>(entity);
+      zone.emplace_or_replace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::idle);
+      auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
+      auto &health = zone.emplace_or_replace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
+      zone.emplace_or_replace<Component::Soldier>(entity);
+      zone.emplace_or_replace<Component::Commandable>(entity);
+      zone.emplace_or_replace<Component::Spellbook>(entity);
 
       if (player) {
         health.currentHealth += 200;
@@ -361,22 +361,22 @@ namespace Create_Entities {
         Component::Add_Input_Component(zone, velocity, entity);
         SDL_DisplayMode dm;
         SDL_GetWindowDisplayMode(Graphics::window, &dm);
-        auto &camera = zone.emplace<Component::Camera>(entity, 0.0f, 0.0f, (float) dm.w, (float) dm.h, Settings::cameraScale, Settings::cameraScale);
+        auto &camera = zone.emplace_or_replace<Component::Camera>(entity, 0.0f, 0.0f, (float) dm.w, (float) dm.h, Settings::cameraScale, Settings::cameraScale);
 
-        zone.emplace<Component::Target_Range>(entity, 2000.0f * data.scale, position.x - (2000.0f / 2.0f * data.scale), position.y - (2000.0f / 2.0f * data.scale), 2000.0f * data.scale, 2000.0f * data.scale);
+        zone.emplace_or_replace<Component::Target_Range>(entity, 2000.0f * data.scale, position.x - (2000.0f / 2.0f * data.scale), position.y - (2000.0f / 2.0f * data.scale), 2000.0f * data.scale, 2000.0f * data.scale);
       }
       else {
-        zone.emplace<Component::Sight_Range>(entity, data.sight_radius * data.scale, position.x - (data.sight_radius / 2.0f * data.scale), position.y - (data.sight_radius / 2.0f * data.scale), data.sight_radius * data.scale, data.sight_radius * data.scale);
+        zone.emplace_or_replace<Component::Sight_Range>(entity, data.sight_radius * data.scale, position.x - (data.sight_radius / 2.0f * data.scale), position.y - (data.sight_radius / 2.0f * data.scale), data.sight_radius * data.scale, data.sight_radius * data.scale);
       }
     }
       //static entities
       //if it is an aabb building
     else if (data.body_type == 0) {
       /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
-      zone.emplace<Component::Direction>(entity, Component::Direction::W);
+      zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
       Collision::Create_Static_Body(zone, entity, position.x, position.y, (data.radius * data.scale));
-      zone.emplace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
     }
   }
 }

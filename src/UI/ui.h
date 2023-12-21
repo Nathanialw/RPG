@@ -40,7 +40,7 @@ namespace UI {
     void Remove_Item_From_Bag(entt::registry &zone, entt::entity &item, bool &mouseHasItem, int &slotNum) {
       item = UI_bagSlots.at(slotNum);
       UI_bagSlots.at(slotNum) = emptyBagSlot;
-      auto &mouseItem = zone.emplace<Component::On_Mouse>(item);
+      auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(item);
       mouseItem.type = Component::Icon_Type::item;
       zone.remove<Component::Inventory>(item);
       mouseHasItem = true;
@@ -51,9 +51,9 @@ namespace UI {
         entt::entity itemInSlot = UI_bagSlots[slotNum];
         UI_bagSlots[slotNum] = mouseItem;
         zone.remove<Component::On_Mouse>(mouseItem);
-        zone.emplace<Component::Inventory>(mouseItem);
+        zone.emplace_or_replace<Component::Inventory>(mouseItem);
         mouseItem = itemInSlot;
-        auto &mouseIte = zone.emplace<Component::On_Mouse>(mouseItem);
+        auto &mouseIte = zone.emplace_or_replace<Component::On_Mouse>(mouseItem);
         mouseIte.type = Component::Icon_Type::item;
         zone.remove<Component::Inventory>(mouseItem);
       }
@@ -215,7 +215,7 @@ namespace UI {
 
       equipment.equippedItems[itemType] = Item_Component::emptyEquipSlot;
       mouseHasItem = true;
-      auto &mouseItem = zone.emplace<Component::On_Mouse>(item);
+      auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(item);
       mouseItem.type = Component::Icon_Type::item;
       zone.remove<Component::Inventory>(item);
     }
@@ -235,7 +235,7 @@ namespace UI {
         Mouse::mouseItem = Mouse::cursor_ID;
         Mouse::itemCurrentlyHeld = false;
         zone.remove<Component::On_Mouse>(equipment.equippedItems[itemType]);
-        zone.emplace<Component::Inventory>(equipment.equippedItems[itemType]);
+        zone.emplace_or_replace<Component::Inventory>(equipment.equippedItems[itemType]);
       }
     }
 
@@ -247,11 +247,11 @@ namespace UI {
         equipment.equippedItems[itemType] = Mouse::mouseItem;
         zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>( equipment.equippedItems[itemType]);
         zone.remove<Component::On_Mouse>(equipment.equippedItems[itemType]);
-        zone.emplace<Component::Inventory>(equipment.equippedItems[itemType]);
+        zone.emplace_or_replace<Component::Inventory>(equipment.equippedItems[itemType]);
 
         Mouse::mouseItem = itemInSlot;
         zone.remove<Component::Inventory>(Mouse::mouseItem);
-        auto &mouseItem = zone.emplace<Component::On_Mouse>(Mouse::mouseItem);
+        auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(Mouse::mouseItem);
         mouseItem.type = Component::Icon_Type::item;
       }
     }
@@ -379,7 +379,7 @@ namespace UI {
           SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
 
           World::zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
-          World::zone.emplace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.clip.w, (float) clipRect.clip.h);
+          World::zone.emplace_or_replace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.clip.w, (float) clipRect.clip.h);
           World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
           World::zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
 
@@ -409,7 +409,7 @@ namespace UI {
       zone.remove<Component::Direction>(item_ID);
       zone.remove<Component::Radius>(item_ID);
       //to render on mouse
-      auto &mouseItem = zone.emplace<Component::On_Mouse>(item_ID);
+      auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(item_ID);
       mouseItem.type = Component::Icon_Type::item;
       Mouse::mouseItem = item_ID;
       Mouse::itemCurrentlyHeld = true;
@@ -417,7 +417,7 @@ namespace UI {
       auto &interactionRect = zone.get<Component::Interaction_Rect>(item_ID).rect;
       auto &position = zone.get<Component::Position>(item_ID);
       //prevents auto reinsertion into quad tree
-      zone.emplace<Component::Remove_From_Object_Tree>(item_ID, interactionRect);
+      zone.emplace_or_replace<Component::Remove_From_Object_Tree>(item_ID, interactionRect);
     }
   }
 
@@ -427,7 +427,7 @@ namespace UI {
 
     if (bToggleCharacterUI) {//bag is closed
       Pick_Up_Item_To_Mouse(zone, itemData.item_ID, isItemCurrentlyHeld);
-      zone.emplace<Item_Component::Item_Pickup>(itemData.item_ID);
+      zone.emplace_or_replace<Item_Component::Item_Pickup>(itemData.item_ID);
       return true;
     } else {
       //find the first slot with a default icon
@@ -435,8 +435,8 @@ namespace UI {
         if (Bag_UI::UI_bagSlots[i] == Bag_UI::emptyBagSlot) {
           Bag_UI::UI_bagSlots[i] = itemData.item_ID;
           auto &rect = zone.get<Component::Interaction_Rect>(itemData.item_ID).rect;
-          zone.emplace<Item_Component::Item_Pickup>(itemData.item_ID);
-          zone.emplace<Component::Remove_From_Object_Tree>(itemData.item_ID, rect);
+          zone.emplace_or_replace<Item_Component::Item_Pickup>(itemData.item_ID);
+          zone.emplace_or_replace<Component::Remove_From_Object_Tree>(itemData.item_ID, rect);
           //removed pickup box from ground
           zone.remove<Item_Component::Ground_Item>(itemData.item_ID);
           //removes for main rendering loop

@@ -486,7 +486,7 @@ namespace User_Mouse_Input {
     int iUnit = 0;
 
     auto squad_ID = zone.create();
-    auto &squad = zone.emplace<Component::Squad>(squad_ID);
+    auto &squad = zone.emplace_or_replace<Component::Squad>(squad_ID);
 
     for (auto entity: view) {
       if (iUnit < squad.size) { // caps number of units per squad
@@ -517,7 +517,7 @@ namespace User_Mouse_Input {
     for (auto view: platoons_view) {
       int iUnit = 0;
       auto Company_ID = zone.create();
-      auto &company = zone.emplace<Component::Company>(Company_ID);
+      auto &company = zone.emplace_or_replace<Component::Company>(Company_ID);
       for (auto platoons: platoons_view) {
         if (iUnit < company.size) { // caps number of units per squad
           auto &platoon = platoons_view.get<Component::Platoon>(platoons);
@@ -545,7 +545,7 @@ namespace User_Mouse_Input {
     for (auto entity2: squads_view) {
       int iUnit = 0;
       auto Platoon_ID = zone.create();
-      auto &platoon = zone.emplace<Component::Platoon>(Platoon_ID);
+      auto &platoon = zone.emplace_or_replace<Component::Platoon>(Platoon_ID);
       for (auto squads: squads_view) {
         if (iUnit < platoon.size) { // caps number of units per squad
           auto &squad = squads_view.get<Component::Squad>(squads);
@@ -569,7 +569,7 @@ namespace User_Mouse_Input {
 
   entt::entity Create_New_Squad(entt::registry &zone) {
     auto squad_ID = zone.create();
-    auto &squad = zone.emplace<Component::Squad>(squad_ID);
+    auto &squad = zone.emplace_or_replace<Component::Squad>(squad_ID);
     return squad_ID;
   }
 

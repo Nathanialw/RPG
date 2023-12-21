@@ -1,4 +1,4 @@
-
+#pragma once
 
 namespace Gameloop_Timers {
 

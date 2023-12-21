@@ -1,3 +1,4 @@
+#pragma once
 #include "item_components.h"
 #include "entt/entt.hpp"
 #include "components.h"
@@ -103,7 +104,7 @@ namespace equip_player_start {
       //create kilt
       //            equipment.equippedItems[Item_Type::clothes] = Items::Create_And_Equip_Armor(position, Item_Type::clothes, equipment.type);
 
-      zone.emplace<Item_Component::Item_Equip>(unit);
+      zone.emplace_or_replace<Item_Component::Item_Equip>(unit);
     }
   }
 

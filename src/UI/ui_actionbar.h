@@ -28,9 +28,9 @@ namespace Action_Bar {
   void Create_Action_Bar(entt::registry &zone) {
     // initialize value of empty
     defaultSlot = zone.create();
-    zone.emplace<On_Spellbar>(defaultSlot);
-    auto &icon = zone.emplace<Component::Icon>(defaultSlot, Graphics::emptyBagIcon, Graphics::default_icon, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
-    //    auto &icon = zone.emplace<Component::Icon>(emptyBarSlot, Graphics::emptyBagIcon, nullptr, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
+    zone.emplace_or_replace<On_Spellbar>(defaultSlot);
+    auto &icon = zone.emplace_or_replace<Component::Icon>(defaultSlot, Graphics::emptyBagIcon, Graphics::default_icon, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
+    //    auto &icon = zone.emplace_or_replace<Component::Icon>(emptyBarSlot, Graphics::emptyBagIcon, nullptr, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
     icon.clipSprite = {0, 0, 256, 256};
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
@@ -49,19 +49,6 @@ namespace Action_Bar {
       return true;
     }
     return false;
-  }
-
-  entt::entity Get_Slot(entt::registry &zone, Component::Camera &camera) {
-    SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar.actionBarFrame);
-    for (int i = 0; i < actionBar.spell.size(); i++) {
-      auto &icon = zone.get<Component::Icon>(actionBar.spell[i]);
-      SDL_FRect renderRect = {renderBarFrame.x + (renderBarFrame.h * i), renderBarFrame.y, renderBarFrame.h, renderBarFrame.h};
-      if (Mouse::bRect_inside_Cursor(renderRect)) {
-        return actionBar.spell[i];
-      }
-    }
-    Utilities::Log("Get_Slot() fallthrough");
-    return actionBar.spell[0];
   }
 
   void Set_Mouse_Spell_On_Actionbar(entt::registry &zone, Component::Camera &camera) {
@@ -93,7 +80,7 @@ namespace Action_Bar {
         if (actionBar.spell[i] != defaultSlot) {
           Mouse::mouseItem = actionBar.spell[i];
           actionBar.spell[i] = defaultSlot;
-          auto &mouseItem = zone.emplace<Component::On_Mouse>(Mouse::mouseItem);
+          auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(Mouse::mouseItem);
           mouseItem.type = Component::Icon_Type::spell;
           Mouse::itemCurrentlyHeld = true;
           return;
@@ -103,6 +90,9 @@ namespace Action_Bar {
   }
 
   void Clear_Spell_On_Mouse(entt::registry &zone) {
+    if (Mouse::mouseItem == Mouse::cursor_ID) {
+      Utilities::Log("same");
+    }
     if (zone.get<Component::On_Mouse>(Mouse::mouseItem).type == Component::Icon_Type::spell) {
       zone.remove<Component::On_Mouse>(Mouse::mouseItem);
       Mouse::itemCurrentlyHeld = false;

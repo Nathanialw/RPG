@@ -129,17 +129,17 @@ namespace Unit_Position {
       auto& formationType = formation_view.get<Test::Unit_Formation_Data>(formation_ID).formationType;	
 
       switch (formationType) {
-	//case Test::Formation_Type::soldier:	{	zone.emplace<Test::Soldier>(formation_ID); }; break;
-      case Test::Formation_Type::squad:	{	zone.emplace<Test::Squad>(formation_ID); }; break;
-      case Test::Formation_Type::platoon: { 	zone.emplace<Test::Platoon>(formation_ID); }; break;
-      case Test::Formation_Type::company: { 	zone.emplace<Test::Company>(formation_ID); }; break;
-      case Test::Formation_Type::battalion: { zone.emplace<Test::Battalion>(formation_ID); }; break;
-      case Test::Formation_Type::brigade: { 	zone.emplace<Test::Brigade>(formation_ID); }; break;
-      case Test::Formation_Type::division: { 	zone.emplace<Test::Division>(formation_ID); }; break;
-      case Test::Formation_Type::corps: { 	zone.emplace<Test::Corps>(formation_ID); }; break;
-      case Test::Formation_Type::army: { 		zone.emplace<Test::Army>(formation_ID); }; break;
+	//case Test::Formation_Type::soldier:	{	zone.emplace_or_replace<Test::Soldier>(formation_ID); }; break;
+      case Test::Formation_Type::squad:	{	zone.emplace_or_replace<Test::Squad>(formation_ID); }; break;
+      case Test::Formation_Type::platoon: { 	zone.emplace_or_replace<Test::Platoon>(formation_ID); }; break;
+      case Test::Formation_Type::company: { 	zone.emplace_or_replace<Test::Company>(formation_ID); }; break;
+      case Test::Formation_Type::battalion: { zone.emplace_or_replace<Test::Battalion>(formation_ID); }; break;
+      case Test::Formation_Type::brigade: { 	zone.emplace_or_replace<Test::Brigade>(formation_ID); }; break;
+      case Test::Formation_Type::division: { 	zone.emplace_or_replace<Test::Division>(formation_ID); }; break;
+      case Test::Formation_Type::corps: { 	zone.emplace_or_replace<Test::Corps>(formation_ID); }; break;
+      case Test::Formation_Type::army: { 		zone.emplace_or_replace<Test::Army>(formation_ID); }; break;
       }
-      zone.emplace<Test::Grouped>(formation_ID);		
+      zone.emplace_or_replace<Test::Grouped>(formation_ID);
     }
   }	
 

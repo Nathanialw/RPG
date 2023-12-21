@@ -1,3 +1,4 @@
+#pragma once
 #include <stdint.h>
 #include "entt/entt.hpp"
 
@@ -71,6 +72,6 @@ namespace Body_Components {
   };
 
   void Init_Body(entt::registry &zone, entt::entity &entity) {
-    zone.emplace<Body>(entity);
+    zone.emplace_or_replace<Body>(entity);
   }
 }

@@ -10,15 +10,15 @@
 namespace Spells {
 
   void Spell_Move_Target(entt::entity entity, float &x, float &y) {//sends spell to where the mouse is
-    World::zone.emplace<Component::Moving>(entity);
-    World::zone.emplace<Component::Mouse_Move>(entity, x, y);
+    World::zone.emplace_or_replace<Component::Moving>(entity);
+    World::zone.emplace_or_replace<Component::Mouse_Move>(entity, x, y);
     World::zone.remove<Component::Casted>(entity);
   }
 
   void Spell_Linear_Target(entt::entity &entity, float &x, float &y, float &sourceX, float &sourceY, float &range) {//sends spell to where the mouse is
-    World::zone.emplace<Component::Moving>(entity);
-    World::zone.emplace<Component::Linear_Move>(entity, x, y);
-    World::zone.emplace<Component::Spell_Range>(entity, sourceX, sourceY, range);
+    World::zone.emplace_or_replace<Component::Moving>(entity);
+    World::zone.emplace_or_replace<Component::Linear_Move>(entity, x, y);
+    World::zone.emplace_or_replace<Component::Spell_Range>(entity, sourceX, sourceY, range);
   }
 
   void Spell_Stack_Spells(float &x, float &y) {//sends spell to where the mouse is
@@ -73,30 +73,30 @@ namespace Spells {
     SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
     flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
 
-    auto &sprite = World::zone.emplace<Rendering_Components::Sprite_Sheet_Info>(entity);
+    auto &sprite = World::zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
     sprite.flareSpritesheet = flareSheetData;
     sprite.sheet_name = name;
     sprite.type = sheetDataFlare.sheet_type;
-    World::zone.emplace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+    World::zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
-    World::zone.emplace<Component::Scale>(entity, scale);
+    World::zone.emplace_or_replace<Component::Scale>(entity, scale);
 
-    World::zone.emplace<Action_Component::Action>(entity, Action_Component::walk);
+    World::zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::walk);
     ///positon data
-    World::zone.emplace<Component::Position>(entity, spelldir.x, spelldir.y);
+    World::zone.emplace_or_replace<Component::Position>(entity, spelldir.x, spelldir.y);
     ///spell data
-    World::zone.emplace<Component::Radius>(entity, data.radius * scale);
-    World::zone.emplace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed, 0.0f);
-    World::zone.emplace<Component::Mass>(entity, data.mass * scale);
-    World::zone.emplace<Component::Entity_Type>(entity, Component::Entity_Type::spell);
-    World::zone.emplace<Component::Damage>(entity, 2, 4, 5);
-    World::zone.emplace<Component::Caster_ID>(entity, caster_ID);
+    World::zone.emplace_or_replace<Component::Radius>(entity, data.radius * scale);
+    World::zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed, 0.0f);
+    World::zone.emplace_or_replace<Component::Mass>(entity, data.mass * scale);
+    World::zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::spell);
+    World::zone.emplace_or_replace<Component::Damage>(entity, 2, 4, 5);
+    World::zone.emplace_or_replace<Component::Caster_ID>(entity, caster_ID);
     ///default data
-    World::zone.emplace<Component::Spell>(entity);
-    World::zone.emplace<Component::Interaction_Rect>(entity, (data.radius * 1.1f), ((data.radius * 1.1f) * 2.0f));
-    World::zone.emplace<Component::Direction>(entity, direction);//match Direction of the caster
-    World::zone.emplace<Component::Alive>(entity, true);
-    World::zone.emplace<Component::Caster>(entity, caster_ID);
+    World::zone.emplace_or_replace<Component::Spell>(entity);
+    World::zone.emplace_or_replace<Component::Interaction_Rect>(entity, (data.radius * 1.1f), ((data.radius * 1.1f) * 2.0f));
+    World::zone.emplace_or_replace<Component::Direction>(entity, direction);//match Direction of the caster
+    World::zone.emplace_or_replace<Component::Alive>(entity, true);
+    World::zone.emplace_or_replace<Component::Caster>(entity, caster_ID);
     bool yes = true;
     Collision::Create_Dynamic_Body(World::zone, entity, spelldir.x, spelldir.y, data.radius, data.mass, yes);
     Spell_Linear_Target(entity, targetX, targetY, spelldir.x, spelldir.y, spellData.range);
@@ -141,11 +141,11 @@ namespace Spells {
 
   void Create_Explosion(float &x, float y) {//creates the explosion for fireballs
     auto explosion = World::zone.create();
-    World::zone.emplace<Component::Position>(explosion, x, y);
-    World::zone.emplace<Component::Sprite_Frames>(explosion, 63, 0, 0, 0);
-    World::zone.emplace<Component::Texture>(explosion, Graphics::fireball_explosion_0, 0, 0, 128, 128);
-    World::zone.emplace<Component::Frame_Delay>(explosion, 16.0f, 0.0f);
-    World::zone.emplace<Component::Explosion>(explosion, 0, 0, 0.0f, 0.0f, 128.0f, 128.0f, 64.0f, 100.0f);
+    World::zone.emplace_or_replace<Component::Position>(explosion, x, y);
+    World::zone.emplace_or_replace<Component::Sprite_Frames>(explosion, 63, 0, 0, 0);
+    World::zone.emplace_or_replace<Component::Texture>(explosion, Graphics::fireball_explosion_0, 0, 0, 128, 128);
+    World::zone.emplace_or_replace<Component::Frame_Delay>(explosion, 16.0f, 0.0f);
+    World::zone.emplace_or_replace<Component::Explosion>(explosion, 0, 0, 0.0f, 0.0f, 128.0f, 128.0f, 64.0f, 100.0f);
   }
 
   void Destroy_NonMoving_Spells() {
@@ -161,8 +161,8 @@ namespace Spells {
       World::zone.remove<Component::Body>(entity);
       ///set to remove from quad tree on update
 
-      World::zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);//goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
-      World::zone.emplace<Component::Destroyed>(entity, rect);              //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
+      World::zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect);//goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
+      World::zone.emplace_or_replace<Component::Destroyed>(entity, rect);              //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
     }
   }
 
@@ -181,8 +181,8 @@ namespace Spells {
         Collision::world->DestroyBody(body.body);
         World::zone.remove<Component::Body>(entity);
         ///set to remove from quad tree on update
-        World::zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);//goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
-        World::zone.emplace<Component::Destroyed>(entity, rect);              //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
+        World::zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect);//goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
+        World::zone.emplace_or_replace<Component::Destroyed>(entity, rect);              //goto: Dynamic_Quad_Tree::Remove_From_Tree_And_Registry()
       }
     }
   }

@@ -1,8 +1,8 @@
 #pragma once
 
 #include "entt/entt.hpp"
-#include "components.h"
-#include "scene.h"
+//#include "components.h"
+//#include "scene.h"
 #include "tmxlite/Object.hpp"
 #include "dynamic_quad_tree.h"
 
@@ -39,6 +39,15 @@ namespace Collision {
     world->SetAutoClearForces(false);
   }
 
+  void close_collision() {
+    b2Body *body = world->GetBodyList();
+
+    while (body != NULL) {
+      world->DestroyBody(body);
+      body = body->GetNext();
+    }
+}
+
   void Create_Static_Body_Rect(entt::registry &zone, entt::entity &entity, float &x, float &y, Collision::aabb aabb) {
 
     b2BodyDef bodyDef;
@@ -47,7 +56,7 @@ namespace Collision {
     bodyDef.userData.entity_ID = (int) entity;
 
     b2Body *body = world->CreateBody(&bodyDef);
-    zone.emplace<Component::Body>(entity, body);
+    zone.emplace_or_replace<Component::Body>(entity, body);
 
     b2PolygonShape rect;
     rect.SetAsBox(aabb.hx, aabb.hy);
@@ -63,7 +72,7 @@ namespace Collision {
     bodyDef.userData.entity_ID = (int) entity;
 
     b2Body *body = world->CreateBody(&bodyDef);
-    zone.emplace<Component::Body>(entity, body);
+    zone.emplace_or_replace<Component::Body>(entity, body);
 
     for (auto pointVec: pointVecs) {
       if (pointVec.size() > 0) {
@@ -89,7 +98,7 @@ namespace Collision {
     bodyDef.userData.entity_ID = (int) entity;
 
     b2Body *body = world->CreateBody(&bodyDef);
-    zone.emplace<Component::Body>(entity, body);
+    zone.emplace_or_replace<Component::Body>(entity, body);
 
     b2CircleShape circle;
     circle.m_radius = radius;
@@ -127,7 +136,7 @@ namespace Collision {
     bodyDef.angularDamping = 0.0f;
 
     b2Body *body = world->CreateBody(&bodyDef);
-    auto &bodyComponent = zone.emplace<Component::Body>(entity, body);
+    auto &bodyComponent = zone.emplace_or_replace<Component::Body>(entity, body);
 
     b2CircleShape polygon;
     polygon.m_radius = radius;

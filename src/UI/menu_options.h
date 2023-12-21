@@ -1,13 +1,13 @@
 #pragma once
 
-#include "utilities.h"
 #include "SDL2/SDL.h"
+#include "utilities.h"
 #include <map>
 
 namespace Menu_Options {
 
   SDL_Color colors[2] = {{255, 255, 255},
-                         {255, 0,   0}};
+                         {255, 0, 0}};
 
   struct Option_Frame {
     UI::Text_Frame text;
@@ -32,12 +32,12 @@ namespace Menu_Options {
   }
 
   void Load_Options() {
-//    load from file
+    //    load from file
     Options.backgroundFrame.frame = {0.0f, 0.0f, 512.0f, 512.0f};
     Options.backgroundFrame.defaultFrame = {0.0f, 0.0f, 512.0f, 512.0f};
     Options.backgroundFrame.texture = Graphics::tooltipBackground;
     Update_Position();
-//    asd
+    //    asd
     for (int i = 0; i < Options.labels.size(); ++i) {
       Options.List[i].text.frame = {Options.backgroundFrame.frame.x + 16.0f, Options.backgroundFrame.frame.y + (i * 32.0f) + 16.0f, 64.0f, 32.0f};
       Options.List[i].text.text = "";
@@ -68,7 +68,7 @@ namespace Menu_Options {
       switch (Events::event.type) {
         case SDL_WINDOWEVENT: {
           if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
-//            recenter camera on player
+            //            recenter camera on player
             Load_Options();
           }
         }
@@ -79,10 +79,10 @@ namespace Menu_Options {
               if (Mouse::FRect_inside_Screen_Cursor(Options.List[i].checkBox.frame)) {
                 if (Debug::settings[i]) {
                   Debug::settings[i] = false;
-//                  set texture to unchecked box
+                  //                  set texture to unchecked box
                 } else {
                   Debug::settings[i] = true;
-//                  set texture to checked box
+                  //                  set texture to checked box
                 }
                 break;
               }
@@ -93,13 +93,12 @@ namespace Menu_Options {
 
         case SDL_KEYDOWN: {
           if (Events::event.key.keysym.sym == SDLK_ESCAPE) {
-            return 2;
+            return -1;
           }
           break;
         }
-
       }
     }
-    return 1;
+    return 4;
   }
-}
+}// namespace Menu_Options

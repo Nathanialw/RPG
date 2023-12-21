@@ -10,7 +10,7 @@ namespace Test_Units {
 
   entt::entity Create_New_Formation(entt::registry& zone) {
     auto formation_ID = zone.create();
-    auto& formation = zone.emplace<Test::Unit_Formation_Data>(formation_ID);
+    auto& formation = zone.emplace_or_replace<Test::Unit_Formation_Data>(formation_ID);
     formation.formation_ID = formation_ID;
     return formation_ID;
   }

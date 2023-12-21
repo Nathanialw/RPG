@@ -27,6 +27,7 @@ namespace Mouse {
 
   void Init_mouse(entt::registry &zone) {
     cursor_ID = Graphics::Create_Icon_Entity(zone, Graphics::cursor_0, NULL, Component::Icon_Type::none);
+    mouseItem = cursor_ID;
   }
 
   bool FRect_inside_Cursor(SDL_FRect &rect) {

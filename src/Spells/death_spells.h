@@ -32,36 +32,36 @@ namespace Death_Spells {
     SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
     flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
 
-    auto &sprite = zone.emplace<Rendering_Components::Sprite_Sheet_Info>(skeleton0);
+    auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(skeleton0);
     sprite.flareSpritesheet = flareSheetData;
     sprite.sheet_name = name;
     sprite.type = sheetDataFlare.sheet_type;
-    zone.emplace<Rendering_Components::Sprite_Offset>(skeleton0, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+    zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(skeleton0, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
-    auto &scale = zone.emplace<Component::Scale>(skeleton0, 1.0f);
+    auto &scale = zone.emplace_or_replace<Component::Scale>(skeleton0, 1.0f);
 
-    zone.emplace<Action_Component::Action>(skeleton0, Action_Component::idle);
+    zone.emplace_or_replace<Action_Component::Action>(skeleton0, Action_Component::idle);
 
-    auto &position = zone.emplace<Component::Position>(skeleton0, x + i - j - k + l, y + j - i - k + l);
-    zone.emplace<Component::Radius>(skeleton0, data.radius);
-    zone.emplace<Component::Velocity>(skeleton0, 0.f, 0.0f, 0.f, 0.0f, data.speed);
+    auto &position = zone.emplace_or_replace<Component::Position>(skeleton0, x + i - j - k + l, y + j - i - k + l);
+    zone.emplace_or_replace<Component::Radius>(skeleton0, data.radius);
+    zone.emplace_or_replace<Component::Velocity>(skeleton0, 0.f, 0.0f, 0.f, 0.0f, data.speed);
 
-    zone.emplace<Component::Direction>(skeleton0, Component::Direction::SE);
-    zone.emplace<Component::Name>(skeleton0, name);
-    zone.emplace<Component::Mass>(skeleton0, data.mass);
+    zone.emplace_or_replace<Component::Direction>(skeleton0, Component::Direction::SE);
+    zone.emplace_or_replace<Component::Name>(skeleton0, name);
+    zone.emplace_or_replace<Component::Mass>(skeleton0, data.mass);
 
-    zone.emplace<Component::Alive>(skeleton0, true);
-    zone.emplace<Component::Health>(skeleton0, 30);
-    zone.emplace<Component::Melee_Damage>(skeleton0, 2, 5);
-    zone.emplace<Component::Attack_Speed>(skeleton0, 2000.0f, 0.0f);
+    zone.emplace_or_replace<Component::Alive>(skeleton0, true);
+    zone.emplace_or_replace<Component::Health>(skeleton0, 30);
+    zone.emplace_or_replace<Component::Melee_Damage>(skeleton0, 2, 5);
+    zone.emplace_or_replace<Component::Attack_Speed>(skeleton0, 2000.0f, 0.0f);
 
-    zone.emplace<Component::Melee_Range>(skeleton0, ((data.radius * 2.0f)));
-    zone.emplace<Component::Sight_Range>(skeleton0, position.x - 250.0f, position.y - 250.0f, 500.0f, 500.0f);
+    zone.emplace_or_replace<Component::Melee_Range>(skeleton0, ((data.radius * 2.0f)));
+    zone.emplace_or_replace<Component::Sight_Range>(skeleton0, position.x - 250.0f, position.y - 250.0f, 500.0f, 500.0f);
 
-    zone.emplace<Component::Soldier>(skeleton0);
-    zone.emplace<Component::Commandable>(skeleton0);
-    zone.emplace<Component::Spellbook>(skeleton0);
-    zone.emplace<Component::Entity_Type>(skeleton0, Component::Entity_Type::unit);
+    zone.emplace_or_replace<Component::Soldier>(skeleton0);
+    zone.emplace_or_replace<Component::Commandable>(skeleton0);
+    zone.emplace_or_replace<Component::Spellbook>(skeleton0);
+    zone.emplace_or_replace<Component::Entity_Type>(skeleton0, Component::Entity_Type::unit);
 
     bool yes = true;
     Collision::Create_Dynamic_Body(zone, skeleton0, position.x, position.y, data.radius, data.mass, yes);

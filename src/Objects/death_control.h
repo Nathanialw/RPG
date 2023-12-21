@@ -31,11 +31,11 @@ namespace Death_Control {
             if (World::zone.get<Component::Entity_Type>(entity) == Component::Entity_Type::item) {
               Utilities::Log("Death_Control::Death_Sequence() Item lands on the ground");
             } else if (World::zone.any_of<Item_Component::Equipment>(entity)) {
-              World::zone.emplace<Component::Drop_Equipment>(entity);
-              World::zone.emplace<Death_Component::Corpse>(entity);
+              World::zone.emplace_or_replace<Component::Drop_Equipment>(entity);
+              World::zone.emplace_or_replace<Death_Component::Corpse>(entity);
             } else {
               Utilities::Log("Death_Sequence() a monster died and it does nothing yet");
-              World::zone.emplace<Death_Component::Corpse>(entity);
+              World::zone.emplace_or_replace<Death_Component::Corpse>(entity);
             }
           }
         }
@@ -67,7 +67,7 @@ namespace Death_Control {
         World::zone.remove<Component::Body>(entity);
         auto rect = zone.get<Component::Interaction_Rect>(entity).rect;
 
-        zone.emplace<Component::Remove_From_Object_Tree>(entity, rect);
+        zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect);
         zone.get<Component::Alive>(entity).bIsAlive = false;
         zone.remove<Component::Commandable>(entity);
         zone.remove<Component::Selected>(entity);
@@ -121,17 +121,17 @@ namespace Death_Control {
           SDL_Rect clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].clip;
           SDL_FRect renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
 
-          World::zone.emplace<Item_On_Corpse>(item.second, entity, item.first);
+          World::zone.emplace_or_replace<Item_On_Corpse>(item.second, entity, item.first);
 
           SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect);
           SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
 
           World::zone.emplace_or_replace<Item_Component::Ground_Item>(item.second, rec);
-          World::zone.emplace<Component::Interaction_Rect>(item.second, rec.x, rec.y, (float) clipRect.w, (float) clipRect.h);
+          World::zone.emplace_or_replace<Component::Interaction_Rect>(item.second, rec.x, rec.y, (float) clipRect.w, (float) clipRect.h);
 
           World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item.second);
           //needs radius to be able to be picked up
-          World::zone.emplace<Component::Radius>(item.second, offset.x);
+          World::zone.emplace_or_replace<Component::Radius>(item.second, offset.x);
         }
       }
       zone.remove<Component::Drop_Equipment>(entity);

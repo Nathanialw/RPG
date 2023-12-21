@@ -272,7 +272,7 @@ namespace Dynamic_Quad_Tree {
       object.entity_ID = entity;
       object.rect = interactRect.rect;
 
-      zone.emplace<Component::In_Object_Tree>(entity, true);
+      zone.emplace_or_replace<Component::In_Object_Tree>(entity, true);
       treeObjects.insert(object, object.rect);
     }
   }
@@ -292,7 +292,7 @@ namespace Dynamic_Quad_Tree {
         object.entity_ID = entity;
         object.rect = interactRect.rect;
 
-        zone.emplace<Component::In_Object_Tree>(entity, true);
+        zone.emplace_or_replace<Component::In_Object_Tree>(entity, true);
         treeObjects.insert(object, object.rect);
       }
 //    }
@@ -386,8 +386,10 @@ namespace Dynamic_Quad_Tree {
           SDL_FRect screenRect = object->item.rect;
           screenRect.x -= camera.screen.x;
           screenRect.y -= camera.screen.y;
-          SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 255, 255);
-          SDL_RenderDrawRectF(Graphics::renderer, &screenRect);
+//          SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 255, 255);
+//          SDL_RenderDrawRectF(Graphics::renderer, &screenRect);
+          SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderMagic, NULL, &screenRect);
+
 //          SDL_FRect interactRect = view2.get<Component::Interaction_Rect>(object->item.entity_ID).rect;
 //          interactRect.x -= camera.screen.x;
 //          interactRect.y -= camera.screen.y;

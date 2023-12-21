@@ -5,6 +5,7 @@
 #include "components.h"
 #include "ai_components.h"
 #include "entity_control.h"
+#include "world.h"
 
 namespace AI {
   bool b_AI = true;
@@ -13,10 +14,10 @@ namespace AI {
   //use the target x,y to move towards it
   //if target is in range, melee attack
   void Attack_Move(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &entityPosition, Component::Melee_Range &meleeRange, Component::Position &targetPosition, Component::Radius &targetRadius) { // maybe change to move and attack?
-    if (World::zone.any_of<Component::Attacking>(entity_ID) == true) {
+    if (World::zone.any_of<Component::Attacking>(entity_ID)) {
       return;
     }
-    if (World::zone.any_of<Component::Attacking>(entity_ID) == false) {
+    if (!World::zone.any_of<Component::Attacking>(entity_ID)) {
       //calcuate the point to move to that puts in range of melee attack on every few frames
       //if it is in range, run Melee_Attack()
       //else pass that point as an update to the move order
@@ -117,7 +118,7 @@ namespace AI {
   }
 
   void Turn_On() {
-    if (b_AI == false) {
+    if (!b_AI) {
       b_AI = true;
     } else {
       b_AI = false;

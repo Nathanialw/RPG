@@ -90,7 +90,7 @@ namespace Formation_Collision {
       interaction.InteractionList.emplace_back(type);
     }
     else {
-      auto& interaction = zone.emplace<Component::Collided>(entity);
+      auto& interaction = zone.emplace_or_replace<Component::Collided>(entity);
       interaction = { position.x += potentialX, position.y += potentialY };
       interaction.InteractionList.emplace_back(type);
     }
@@ -103,7 +103,7 @@ namespace Formation_Collision {
       interaction.InteractionList.emplace_back(type);
     }
     else {
-      auto& interaction = zone.emplace<Component::Collided>(entity);
+      auto& interaction = zone.emplace_or_replace<Component::Collided>(entity);
       interaction = { position.x -= potentialX, position.y -= potentialY };
       interaction.InteractionList.emplace_back(type);
     }

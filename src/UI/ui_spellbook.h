@@ -45,8 +45,8 @@ namespace UI_Spellbook {
 
     //load texture
 
-    auto &icon = zone.emplace<Component::Icon>(spell, Graphics::emptyBagIcon, Graphics::fireball_explosion_0, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
-    zone.emplace<Component::Position>(spell);
+    auto &icon = zone.emplace_or_replace<Component::Icon>(spell, Graphics::emptyBagIcon, Graphics::fireball_explosion_0, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
+    zone.emplace_or_replace<Component::Position>(spell);
     icon.clipSprite = {0, 0, 256, 256};
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
