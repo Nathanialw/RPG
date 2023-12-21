@@ -3,12 +3,12 @@
 #include "SDL2/SDL.h"
 #include "components.h"
 #include "entt/entt.hpp"
+#include "graphics.h"
 #include "map"
+#include "portaits.h"
+#include "ui_elements.h"
 #include <array>
 #include <string>
-#include "graphics.h"
-#include "ui_elements.h"
-#include "portaits.h"
 
 namespace Unit_Frames {
 
@@ -63,7 +63,8 @@ namespace Unit_Frames {
     if (frame.health.text != healthText || frame.health.textTexture == NULL) {
       SDL_DestroyTexture(frame.health.textTexture);
       frame.health.textTexture = NULL;
-      Populate_Frame(frame.health, healthText, {100, 255, 50});
+      frame.health.healthFrameWidth = (float)health.currentHealth / (float)health.maxHealth;
+      Populate_Frame(frame.health, healthText, {200, 200, 200});
       frame.health.backgroundTexture = Graphics::tooltipBackground;
     }
     Update_Frame_Text(scale, frame.health, frame.health.text, 20.0f);
@@ -88,6 +89,13 @@ namespace Unit_Frames {
     SDL_RenderCopyF(Graphics::renderer, frame.background.texture, NULL, &frame.background.frame);
     //health background
     SDL_RenderCopyF(Graphics::renderer, frame.health.backgroundTexture, NULL, &frame.health.frame);
+    //health foreground
+    frame.health.healthFrame = frame.health.frame;
+    frame.health.healthFrame.w = frame.health.frame.w * frame.health.healthFrameWidth;
+    int red = 150 * ( 1 - frame.health.healthFrameWidth);
+    int green = 150 * frame.health.healthFrameWidth;
+    SDL_SetRenderDrawColor(Graphics::renderer, red, green, 0, 255);
+    SDL_RenderFillRectF(Graphics::renderer, &frame.health.healthFrame);
     //health
     SDL_RenderCopyF(Graphics::renderer, frame.health.textTexture, NULL, &frame.health.textFrame);
     //name background
@@ -103,7 +111,7 @@ namespace Unit_Frames {
   }
 
   void Show_Frames(entt::registry &zone, Component::Camera &camera) {
-    if (1) { //if scale resized
+    if (1) {//if scale resized
       Init_Frames();
       targetFrame.frame = UI::Update_Scale(camera.scale, targetFrame.frame);
       Build_Target_Frames();
@@ -117,9 +125,9 @@ namespace Unit_Frames {
     for (auto entity: view) {
       auto [selected, fullName, health, portrait] = view.get(entity);
       //place in new unit
-      if (selected.selected == false) {
+      if (!selected.selected) {
         for (int i = 0; i < targets.size(); i++) {
-          if (targets[i].occupied == false) {
+          if (!targets[i].occupied) {
             selected.targetIndex = i;
             targets[i].occupied = true;
             selected.selected = true;
@@ -134,7 +142,7 @@ namespace Unit_Frames {
 
     //clear the frame, (move all the others an index up?)
     for (auto &i: targets) {
-      if (i.selected == false) {
+      if (!i.selected) {
         i.occupied = false;
         SDL_DestroyTexture(i.name.textTexture);
         i.name.textTexture = NULL;
@@ -146,4 +154,4 @@ namespace Unit_Frames {
       }
     }
   }
-}
+}// namespace Unit_Frames

@@ -356,8 +356,8 @@ namespace Create_Entities {
       zone.emplace_or_replace<Component::Spellbook>(entity);
 
       if (player) {
-        health.currentHealth += 200;
-        health.maxHealth += 200;
+//        health.currentHealth += 200;
+//        health.maxHealth += 200;
         Component::Add_Input_Component(zone, velocity, entity);
         SDL_DisplayMode dm;
         SDL_GetWindowDisplayMode(Graphics::window, &dm);

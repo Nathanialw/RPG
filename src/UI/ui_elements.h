@@ -9,6 +9,9 @@ namespace UI {
     SDL_FRect frame;
     SDL_Texture* backgroundTexture = NULL;
     SDL_FRect textFrame;
+    SDL_Texture* foregroundTexture = NULL;
+    float healthFrameWidth = 1.0f;
+    SDL_FRect healthFrame;
     SDL_Texture* textTexture = NULL;
     std::string text;
   };

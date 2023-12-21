@@ -1,21 +1,21 @@
 #pragma once
+#include "character_options.h"
 #include "graphics.h"
 #include "items.h"
 #include "ui.h"
 #include <SDL2/SDL.h>
 #include <sstream>
-#include "character_options.h"
 
 namespace Character_Stats {
 
   SDL_FRect statsSheetOffsetRect = {160.0f, 64.0f, 240.0f, 384.0f};
 
   SDL_FRect screenCharacterStats = {
-    UI::defaultScreenPosition.x + statsSheetOffsetRect.x,
-    UI::defaultScreenPosition.y + statsSheetOffsetRect.y,
-    statsSheetOffsetRect.w, statsSheetOffsetRect.h};
+      UI::defaultScreenPosition.x + statsSheetOffsetRect.x,
+      UI::defaultScreenPosition.y + statsSheetOffsetRect.y,
+      statsSheetOffsetRect.w, statsSheetOffsetRect.h};
 
-    Graphics::Surface_Data Create_Text_Box(std::string &string, SDL_Color &rarity, SDL_Rect &textBox) {
+  Graphics::Surface_Data Create_Text_Box(std::string &string, SDL_Color &rarity, SDL_Rect &textBox) {
     Graphics::Surface_Data text = Graphics::Load_Text_Texture(string, rarity);
     text.k = textBox;
     return text;
@@ -333,4 +333,4 @@ namespace Character_Stats {
     Equip_Units(zone, options);
     Init_Player_Stats(zone);
   }
-}
+}// namespace Character_Stats
