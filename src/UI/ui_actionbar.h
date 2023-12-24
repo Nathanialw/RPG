@@ -91,7 +91,7 @@ namespace Action_Bar {
 
   void Clear_Spell_On_Mouse(entt::registry &zone) {
     if (Mouse::mouseItem == Mouse::cursor_ID) {
-      Utilities::Log("same");
+      Utilities::Log("objectID on mouse is the same as the cursorID same");
     }
     if (zone.get<Component::On_Mouse>(Mouse::mouseItem).type == Component::Icon_Type::spell) {
       zone.remove<Component::On_Mouse>(Mouse::mouseItem);

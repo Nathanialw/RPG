@@ -3,10 +3,8 @@
 #include "components.h"
 #include "entt/entt.hpp"
 #include "item_components.h"
-#include "menu.h"
-#include "ui_actionbar.h"
-#include "ui_spellbook.h"
 #include "world.h"
+#include "ui_actionbar.h"
 
 namespace UI {
 
@@ -197,23 +195,12 @@ namespace UI {
           {Item_Component::Item_Type::hair, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 800.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}}};
     }// namespace
 
-    void Create_Equipment_UI(entt::registry &zone) {
-      Item_Component::emptyEquipSlot = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
-      auto view = zone.view<Item_Component::Equipment>();
-      for (auto player: view) {
-        auto &equipment = view.get<Item_Component::Equipment>(player);
-        for (auto &itemSlot: equipment.equippedItems) {
-          itemSlot.second = Item_Component::emptyEquipSlot;
-        }
-      }
-    }
-
-    void Unequip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, const Item_Component::Item_Type &itemType, entt::entity &player) {
+    void Unequip_Item(entt::registry &zone, World::GameState &state, entt::entity &item, bool &mouseHasItem, const Item_Component::Item_Type &itemType, entt::entity &player) {
       auto &equipment = zone.get<Item_Component::Equipment>(player);
       item = equipment.equippedItems[itemType];
       zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType].texture = NULL;
 
-      equipment.equippedItems[itemType] = Item_Component::emptyEquipSlot;
+      equipment.equippedItems[itemType] = Item_Component::emptyEquipSlot[state];
       mouseHasItem = true;
       auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(item);
       mouseItem.type = Component::Icon_Type::item;
@@ -262,7 +249,7 @@ namespace UI {
 
 
 
-    bool Interact_With_Equipment(entt::registry &zone, Component::Camera &camera, entt::entity &player) {
+    bool Interact_With_Equipment(entt::registry &zone, World::GameState &state, Component::Camera &camera, entt::entity &player) {
       /*could be injected instead*/
       if (Check_Mouse_Is_item(zone)) {
         if (Mouse_Inside_Equipment_Screen(zone, camera, Mouse::screenMousePoint)) {
@@ -275,7 +262,7 @@ namespace UI {
             SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
 
             if (Mouse::bRect_inside_Cursor(scaledSlot)) {
-              if (equipment.equippedItems[itemType] == Item_Component::emptyEquipSlot) {
+              if (equipment.equippedItems[itemType] == Item_Component::emptyEquipSlot[state]) {
                 Equip_Item(zone, itemType, player);
                 return true;
               } else {
@@ -289,8 +276,8 @@ namespace UI {
             for (auto &itemSlot: equippedItemsRect) {
               SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(itemSlot.second, camera);
               if (Mouse::bRect_inside_Cursor(scaledSlot)) {
-                if (equipment.equippedItems[itemSlot.first] != Item_Component::emptyEquipSlot) {
-                  Unequip_Item(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, itemSlot.first, player);
+                if (equipment.equippedItems[itemSlot.first] != Item_Component::emptyEquipSlot[state]) {
+                  Unequip_Item(zone, state, Mouse::mouseItem, Mouse::itemCurrentlyHeld, itemSlot.first, player);
                   return true;
                 }
               }
@@ -301,7 +288,7 @@ namespace UI {
       return false;
     }
 
-    entt::entity Get_Equip_Slot(entt::registry &zone, Component::Camera &camera) {
+    entt::entity Get_Equip_Slot(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
       auto view = zone.view<Component::Input, Item_Component::Equipment>();
       for (auto player: view) {
         auto &equipment = view.get<Item_Component::Equipment>(player);
@@ -312,10 +299,10 @@ namespace UI {
           }
         }
       }
-      return Item_Component::emptyEquipSlot;
+      return Item_Component::emptyEquipSlot[state];
     }
 
-    void Render_Equipment_Slot(entt::registry &zone, SDL_Renderer *renderer, Component::Camera &camera, entt::entity &player) {
+    void Render_Equipment_Slot(entt::registry &zone, World::GameState &state, SDL_Renderer *renderer, Component::Camera &camera, entt::entity &player) {
       auto &equipment = zone.get<Item_Component::Equipment>(player);
       for (auto &slot: equipment.equippedItems) {
         auto &icon = zone.get<Component::Icon>(slot.second);
@@ -338,7 +325,7 @@ namespace UI {
     }
   }// namespace Equipment_UI
 
-  bool Swap_Item_In_Bag_For_Equipped(entt::registry &zone, SDL_FPoint &screenCursor, Component::Camera &camera, entt::entity &player) {
+  bool Swap_Item_In_Bag_For_Equipped(entt::registry &zone, World::GameState &state, SDL_FPoint &screenCursor, Component::Camera &camera, entt::entity &player) {
     auto &equipment = zone.get<Item_Component::Equipment>(player);
     Utilities::Log("swap item");
     int slotNum = Bag_UI::Get_Bag_Slot(zone, screenCursor, camera);
@@ -349,7 +336,7 @@ namespace UI {
       equipment.equippedItems[type] = itemInSlot;
       zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) type] = zone.get<Rendering_Components::Portrait>(itemInSlot);
 
-      if (equippedItem == Item_Component::emptyEquipSlot) {
+      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
         Bag_UI::UI_bagSlots[slotNum] = Bag_UI::emptyBagSlot;
       } else {
         Bag_UI::UI_bagSlots[slotNum] = equippedItem;
@@ -378,10 +365,10 @@ namespace UI {
           SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect.clip);
           SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
 
-          World::zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
-          World::zone.emplace_or_replace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.clip.w, (float) clipRect.clip.h);
-          World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
-          World::zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
+          zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
+          zone.emplace_or_replace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.clip.w, (float) clipRect.clip.h);
+          zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
+          zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
 
           //        if (zone.any_of<Component::Remove_From_Object_Tree>(item_ID)) {
           //          Utilities::Log("item still has Remove_From_Object_Tree");
@@ -392,7 +379,7 @@ namespace UI {
             Utilities::Log("item was still has In_Object_Tree");
             zone.remove<Component::In_Object_Tree>(item_ID);
           }
-          auto &action = World::zone.get<Action_Component::Action>(item_ID);
+          auto &action = zone.get<Action_Component::Action>(item_ID);
           Action_Component::Set_State(action, Action_Component::Action_State::dying);
         }
       }
@@ -453,7 +440,7 @@ namespace UI {
     }
   }
 
-  void Render_UI(entt::registry &zone, SDL_Renderer *renderer, Component::Camera &camera) {
+  void Render_UI(entt::registry &zone, World::GameState &state, SDL_Renderer *renderer, Component::Camera &camera) {
     auto view = zone.view<Component::Input>();
     for (auto player_ID: view) {
 
@@ -465,7 +452,7 @@ namespace UI {
         Graphics::Render_FRect(Graphics::itsmars_Inventory, {255, 255, 255}, &charui, &Character_UI);
         //reder equipment slots
         Equipment_UI::Update_Equipment_Position(camera);
-        Equipment_UI::Render_Equipment_Slot(zone, renderer, camera, player_ID);
+        Equipment_UI::Render_Equipment_Slot(zone, state, renderer, camera, player_ID);
         //render Items in bag
         Bag_UI::screenBag = Camera_Control::Convert_FRect_To_Scale(Bag_UI::bagRect, camera);
         Bag_UI::Render_Bag_Slot(zone, renderer, camera);

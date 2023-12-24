@@ -1,10 +1,9 @@
 #pragma once
-
 #include "entt/entt.hpp"
-//#include "components.h"
-//#include "scene.h"
+#include "world.h"
 #include "tmxlite/Object.hpp"
-#include "dynamic_quad_tree.h"
+#include "debug_system.h"
+#include "quad_tree.h"
 
 namespace Collision_Component {
 
@@ -19,41 +18,85 @@ namespace Collision_Component {
 }
 
 namespace Collision {
+//  std::map<World::GameState, b2World*> world;
+  b2World* overworld = NULL;
+  b2World* cave = NULL;
 
-  b2World *world;
+
   const float timeStep = 1.0f / 5.0f;
   const float M2P = 60.0f;
   const float P2M = 1.0f / M2P;
-  int32 velocityIterations = 1;
-  int32 positionIterations = 1;
+  int32 velocityIterations = 6;
+  int32 positionIterations = 8;
 
   struct aabb {
     int hx = 0;
     int hy = 0;
   };
 
-  void init_Collison() {
-    b2Vec2 gravity;
-    gravity.SetZero();
-    world = new b2World(gravity); //no gravity
-    world->SetAutoClearForces(false);
+  b2World* Get_Collision_List(World::GameState state) {
+    switch (state) {
+      case World::GameState::overworld: {return overworld;}
+      case World::GameState::cave: {return cave;}
+      case World::GameState::restart: {Utilities::Log("Collision Get_Collision_List() Big bug");return cave;}
+      case World::GameState::MODES: {Utilities::Log("Collision Get_Collision_List() Big bug");return cave;}
+      case World::GameState::exit: {Utilities::Log("Collision Get_Collision_List() Big bug");return cave;}
+    }
+  }
+  
+  void Set_Collision_NULL() {
+    for (int i = 0; i < (int)World::GameState::MODES; ++i) {
+//      auto world = Get_Collision_List(World::GameState(i));
+//      world = nullptr;
+    }
   }
 
-  void close_collision() {
-    b2Body *body = world->GetBodyList();
+  void init_Collison(World::GameState &state) {
+    b2Vec2 gravity;
+    gravity.SetZero();
+    switch (state) {
+      case World::GameState::overworld: {overworld = new b2World(gravity), overworld->SetAutoClearForces(false); break;}
+      case World::GameState::cave:      {cave = new b2World(gravity),      cave->SetAutoClearForces(false); break;}
+      case World::GameState::restart: {Utilities::Log("Collision Get_Collision_List() Big bug");break;}
+      case World::GameState::MODES: {Utilities::Log("Collision Get_Collision_List() Big bug");break;}
+      case World::GameState::exit: {Utilities::Log("Collision Get_Collision_List() Big bug");break;}
+    }
+//
+//    if (!world) {
+//      world = new b2World(gravity); //no gravity
+//      world->SetAutoClearForces(false);
+//    }
+  }
 
-    while (body != NULL) {
-      world->DestroyBody(body);
-      body = body->GetNext();
+  void close_collision(World::GameState state) {
+    auto world = Get_Collision_List(state);
+    if (world) {
+      b2Body *body = world->GetBodyList();
+
+      while (body) {
+        world->DestroyBody(body);
+        body = body->GetNext();
+      }
+      world = nullptr;
+//      delete world[state];
     }
 }
 
-  void Create_Static_Body_Rect(entt::registry &zone, entt::entity &entity, float &x, float &y, Collision::aabb aabb) {
+  void Create_Static_Body_Rect(entt::registry &zone, World::GameState &state, entt::entity &entity, float &x, float &y, Collision::aabb aabb) {
 
     b2BodyDef bodyDef;
 
     bodyDef.position.Set(x, y);
     bodyDef.userData.entity_ID = (int) entity;
+
+    auto world = Get_Collision_List(state);
+
+    if (world == overworld){
+      Utilities::Log("match");
+    }
+    else {
+      Utilities::Log("fail");
+    }
 
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
@@ -64,13 +107,20 @@ namespace Collision {
     body->CreateFixture(&rect, 0.0f);
   }
 
-  void Create_Static_Body_Polygon(entt::registry &zone, entt::entity &entity, float &x, float &y, std::vector<std::vector<tmx::Vector2<float>>> pointVecs) {
+  void Create_Static_Body_Polygon(entt::registry &zone, World::GameState &state, entt::entity &entity, float &x, float &y, std::vector<std::vector<tmx::Vector2<float>>> pointVecs) {
 
     b2BodyDef bodyDef;
 
     bodyDef.position.Set(x, y);
     bodyDef.userData.entity_ID = (int) entity;
 
+    auto world = Get_Collision_List(state);
+    if (world == overworld){
+      Utilities::Log("match");
+    }
+    else {
+      Utilities::Log("fail");
+    }
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
 
@@ -91,12 +141,13 @@ namespace Collision {
     }
   }
 
-  void Create_Static_Body(entt::registry &zone, entt::entity &entity, float &x, float &y, float radius) {
+  void Create_Static_Body(entt::registry &zone, World::GameState &state, entt::entity &entity, float &x, float &y, float radius) {
     b2BodyDef bodyDef;
 
     bodyDef.position.Set(x, y);
     bodyDef.userData.entity_ID = (int) entity;
 
+    auto world = Get_Collision_List(state);
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
 
@@ -126,7 +177,7 @@ namespace Collision {
     body.body->CreateFixture(&bodyFixture);
   }
 
-  void Create_Dynamic_Body(entt::registry &zone, entt::entity &entity, float &x, float &y, float radius, float mass, bool &isDynamicBody) {
+  void Create_Dynamic_Body(entt::registry &zone, World::GameState &state, entt::entity &entity, float &x, float &y, float radius, float mass, bool &isDynamicBody) {
 
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
@@ -135,6 +186,13 @@ namespace Collision {
     bodyDef.linearDamping = 10.0f;
     bodyDef.angularDamping = 0.0f;
 
+    b2World* world = Get_Collision_List(state);
+    if (world == overworld){
+      Utilities::Log("match");
+    }
+    else {
+      Utilities::Log("fail");
+    }
     b2Body *body = world->CreateBody(&bodyDef);
     auto &bodyComponent = zone.emplace_or_replace<Component::Body>(entity, body);
 
@@ -151,64 +209,64 @@ namespace Collision {
     //        Create_Kinematic_Body(zone, entity, bodyComponent, x, y,radius, mass, isDynamicBody);
   }
 
-  void Dynamic_Collisions(entt::registry &zone) {
-
-    auto view = zone.view<Collision_Component::Dynamic_Collider, Component::Position, Component::Radius, Component::Mass>();
-    for (auto entity: view) {
-      auto &awake = view.get<Collision_Component::Dynamic_Collider>(entity);
-      //            if (awake.awake == true) {
-      auto &position = view.get<Component::Position>(entity);
-      auto &radius = view.get<Component::Radius>(entity).fRadius;
-      auto &mass = view.get<Component::Mass>(entity).fKilos;
-
-      auto positionRect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
-      //get all entities colliding with the entity's rect
-      std::vector<entt::entity> list = Dynamic_Quad_Tree::Get_Nearby_Entities(zone, positionRect);
-
-      //test each entity for a circle collision and apply a collision component to accumulate the resolution data
-      for (auto collision_ID: list) {
-        //so it doesn't colled with itself
-        if (entity != collision_ID) {
-          if (zone.any_of<Collision_Component::Dynamic_Collider>(collision_ID)) {
-            auto &collision_Position = zone.get<Component::Position>(collision_ID);
-            auto &collision_Radius = zone.get<Component::Radius>(collision_ID).fRadius;
-            //check radius distance
-            float fx = position.x - collision_Position.x;
-            float fy = position.y - collision_Position.y;
-            float fDistance = (fx * fx) + (fy * fy);
-
-            if (fDistance <= ((radius + collision_Radius) * (radius + collision_Radius)) * 0.9999f) { // the constant keeps it from check collisions overlapping by round errors
-              fDistance = (float) sqrtf(fDistance);
-              if (fDistance == 0.0f) { fDistance = 0.0001; }
-              float fOverlap = fDistance - (radius + collision_Radius);
-
-              f2 resolver = {};
-              resolver.x = fOverlap * (position.x - collision_Position.x) / fDistance;
-              resolver.y = fOverlap * (position.y - collision_Position.y) / fDistance;
-
-              auto &collision_Mass = zone.get<Component::Mass>(collision_ID).fKilos;
-              float fTotalmass = mass + collision_Mass;
-              float fNomalizedMassA = (mass / fTotalmass);
-              float fNomalizedMassB = (collision_Mass / fTotalmass);
-
-              float resolverX = (resolver.x * fNomalizedMassB);
-              float resolverY = (resolver.y * fNomalizedMassB);
-              auto &collision_ResolverA = zone.emplace_or_replace<Collision_Component::Dynamic_Collision>(entity);
-              collision_ResolverA.x += resolverX;
-              collision_ResolverA.y += resolverY;
-
-              float bresolverX = (resolver.x * fNomalizedMassA);
-              float bresolverY = (resolver.y * fNomalizedMassA);
-              auto &collision_ResolverB = zone.emplace_or_replace<Collision_Component::Dynamic_Collision>(collision_ID);
-              collision_ResolverB.x -= bresolverX;
-              collision_ResolverB.y -= bresolverY;
-            }
-          }
-        }
-        //                }
-      }
-    }
-  }
+//  void Dynamic_Collisions(entt::registry &zone, World::GameState &state) {
+//
+//    auto view = zone.view<Collision_Component::Dynamic_Collider, Component::Position, Component::Radius, Component::Mass>();
+//    for (auto entity: view) {
+//      auto &awake = view.get<Collision_Component::Dynamic_Collider>(entity);
+//      //            if (awake.awake == true) {
+//      auto &position = view.get<Component::Position>(entity);
+//      auto &radius = view.get<Component::Radius>(entity).fRadius;
+//      auto &mass = view.get<Component::Mass>(entity).fKilos;
+//
+//      auto positionRect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
+//      //get all entities colliding with the entity's rect
+//      std::vector<entt::entity> list = Quad_Tree::Get_Nearby_Entities(zone, positionRect, state);
+//
+//      //test each entity for a circle collision and apply a collision component to accumulate the resolution data
+//      for (auto collision_ID: list) {
+//        //so it doesn't colled with itself
+//        if (entity != collision_ID) {
+//          if (zone.any_of<Collision_Component::Dynamic_Collider>(collision_ID)) {
+//            auto &collision_Position = zone.get<Component::Position>(collision_ID);
+//            auto &collision_Radius = zone.get<Component::Radius>(collision_ID).fRadius;
+//            //check radius distance
+//            float fx = position.x - collision_Position.x;
+//            float fy = position.y - collision_Position.y;
+//            float fDistance = (fx * fx) + (fy * fy);
+//
+//            if (fDistance <= ((radius + collision_Radius) * (radius + collision_Radius)) * 0.9999f) { // the constant keeps it from check collisions overlapping by round errors
+//              fDistance = (float) sqrtf(fDistance);
+//              if (fDistance == 0.0f) { fDistance = 0.0001; }
+//              float fOverlap = fDistance - (radius + collision_Radius);
+//
+//              f2 resolver = {};
+//              resolver.x = fOverlap * (position.x - collision_Position.x) / fDistance;
+//              resolver.y = fOverlap * (position.y - collision_Position.y) / fDistance;
+//
+//              auto &collision_Mass = zone.get<Component::Mass>(collision_ID).fKilos;
+//              float fTotalmass = mass + collision_Mass;
+//              float fNomalizedMassA = (mass / fTotalmass);
+//              float fNomalizedMassB = (collision_Mass / fTotalmass);
+//
+//              float resolverX = (resolver.x * fNomalizedMassB);
+//              float resolverY = (resolver.y * fNomalizedMassB);
+//              auto &collision_ResolverA = zone.emplace_or_replace<Collision_Component::Dynamic_Collision>(entity);
+//              collision_ResolverA.x += resolverX;
+//              collision_ResolverA.y += resolverY;
+//
+//              float bresolverX = (resolver.x * fNomalizedMassA);
+//              float bresolverY = (resolver.y * fNomalizedMassA);
+//              auto &collision_ResolverB = zone.emplace_or_replace<Collision_Component::Dynamic_Collision>(collision_ID);
+//              collision_ResolverB.x -= bresolverX;
+//              collision_ResolverB.y -= bresolverY;
+//            }
+//          }
+//        }
+//        //                }
+//      }
+//    }
+//  }
 
   void Resolve_Dynamic_Collisions(entt::registry &zone) {
     int i = 0;
@@ -231,37 +289,45 @@ namespace Collision {
 
   float collision_Timestep = 0.0f;
 
-  void Update_Collision(entt::registry &zone) {
+  void Update_Collision(entt::registry &zone, World::GameState &state) {
     auto view = zone.view<Component::Position>();
-
+    b2World* world = Get_Collision_List(state);
     b2Body *body = world->GetBodyList();
     int i = 0;
     //needs to be run multiple times per frame at low frame rate otherwise it will fall behind the rest of the program
     collision_Timestep += Timer::timeStep;
+    int j = 0;
     while (collision_Timestep >= timeStep) {
       collision_Timestep -= timeStep;
       world->Step(timeStep, velocityIterations, positionIterations);
 
-      while (body != NULL) {
+      while (body) {
         if (body->GetType() == b2_dynamicBody) {
           auto entity_ID = (entt::entity) body->GetUserData().entity_ID;
-          auto &position = view.get<Component::Position>(entity_ID);
+          if (zone.any_of<Component::Position>(entity_ID)){
+            auto &position = view.get<Component::Position>(entity_ID);
 
-          b2Vec2 newPosition = body->GetPosition();
-          position.x = newPosition.x;
-          position.y = newPosition.y;
+            b2Vec2 newPosition = body->GetPosition();
+            position.x = newPosition.x;
+            position.y = newPosition.y;
+          }
+          else {
+//            std::cout << "collision: " << i << std::endl;
+          }
         }
         i++;
         body = body->GetNext();
       }
       world->ClearForces();
+      j++;
+//      if (j > 5) {break;}
     }
     Debug::settingsValue[Debug::CollisionChecks] = i;
   }
 
-  void Collision_Routine(entt::registry &zone) {
+  void Collision_Routine(entt::registry &zone, World::GameState &state) {
     //        Dynamic_Collisions(zone);
     //        Resolve_Dynamic_Collisions(zone);
-    Update_Collision(zone);
+    Update_Collision(zone, state);
   };
 }

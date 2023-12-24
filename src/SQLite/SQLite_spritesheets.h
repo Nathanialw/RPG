@@ -3,7 +3,6 @@
 #include <vector>
 #include <SDL2/SDL.h>
 #include <string>
-//#include "components.h"
 #include <iostream>
 #include <map>
 #include "spritesheet_structs.h"

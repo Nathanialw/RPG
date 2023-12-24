@@ -5,6 +5,7 @@ target_sources(RPG
         quad_tree_controller.h
         timer.h
         utilities.h
+        quad_tree.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

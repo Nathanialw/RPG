@@ -6,6 +6,8 @@
 #include "ai_components.h"
 #include "entity_control.h"
 #include "world.h"
+#include "quad_tree.h"
+#include "social_control.h"
 
 namespace AI {
   bool b_AI = true;
@@ -14,10 +16,10 @@ namespace AI {
   //use the target x,y to move towards it
   //if target is in range, melee attack
   void Attack_Move(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &entityPosition, Component::Melee_Range &meleeRange, Component::Position &targetPosition, Component::Radius &targetRadius) { // maybe change to move and attack?
-    if (World::zone.any_of<Component::Attacking>(entity_ID)) {
+    if (zone.any_of<Component::Attacking>(entity_ID)) {
       return;
     }
-    if (!World::zone.any_of<Component::Attacking>(entity_ID)) {
+    if (!zone.any_of<Component::Attacking>(entity_ID)) {
       //calcuate the point to move to that puts in range of melee attack on every few frames
       //if it is in range, run Melee_Attack()
       //else pass that point as an update to the move order
@@ -36,7 +38,7 @@ namespace AI {
     //else move to cursor
   }
 
-  void Check_For_Targets(entt::registry &zone) {
+  void Check_For_Targets(entt::registry &zone, World::GameState &state) {
     auto units = zone.view<Component::Sight_Range, Component::Alive, Component::Position, Component::Melee_Range>();
     //currently specifically looks for a player as a target using input component
     for (auto unit_ID: units) {
@@ -44,7 +46,7 @@ namespace AI {
       auto &meleeRange = units.get<Component::Melee_Range>(unit_ID);
       auto &unitPosition = units.get<Component::Position>(unit_ID);
 
-      std::vector<entt::entity> entityData = Dynamic_Quad_Tree::Get_Nearby_Entities(zone, sightBox);
+      std::vector<entt::entity> entityData = Quad_Tree::Get_Nearby_Entities(zone, sightBox, state);
 
       for (auto target: entityData) {
         auto type = zone.get<Component::Entity_Type>(target);
@@ -127,14 +129,14 @@ namespace AI {
 
   float time = 0;
 
-  void Update_AI(entt::registry &zone) {
+  void Update_AI(entt::registry &zone, World::GameState &state) {
     if (b_AI) {
       time += Timer::timeStep;
       if (time >= 250.0f) {
         time = 0.0f;
         Update_Sight_Box(zone);
         Update_Player_Target_Range(zone);
-        Check_For_Targets(zone);
+        Check_For_Targets(zone, state);
       }
     }
     Update_Combat(zone);

@@ -9,10 +9,10 @@ namespace equip_player_start {
   entt::entity Create_And_Equip_Weapon(Component::Position &position, std::string &equip_type) {
     Rarity rarity = Items::Generate_Item_Rarity();
     Item_Stats itemStats = Items::Generate_Item_Stats(rarity);
-    auto item_uID = World::zone.create();
+    auto item_uID = zone.create();
     std::string itemName = Items::Create_Weapon(item_uID, rarity, equip_type);
     if (itemName == "none") {
-      World::zone.destroy(item_uID);
+      zone.destroy(item_uID);
       Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
       return Item_Component::emptyEquipSlot;
     }
@@ -24,10 +24,10 @@ namespace equip_player_start {
   entt::entity Create_And_Equip_Offhand(Component::Position &position, std::string &equip_type) {
     Rarity rarity = Items::Generate_Item_Rarity();
     Item_Stats itemStats = Items::Generate_Item_Stats(rarity);
-    auto item_uID = World::zone.create();
+    auto item_uID = zone.create();
     std::string itemName = Items::Create_Offhand(item_uID, rarity, equip_type);
     if (itemName == "none") {
-      World::zone.destroy(item_uID);
+      zone.destroy(item_uID);
       Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
       return Item_Component::emptyEquipSlot;
     }
@@ -73,11 +73,11 @@ namespace equip_player_start {
     Item_Stats itemStats = Items::Generate_Item_Stats(rarity);
     Rarity rarity = Item_Component::Rarity::common;
 
-    auto item_uID = World::zone.create();
+    auto item_uID = zone.create();
     std::string itemName = Items::Create_Specific_Armor(item_uID, rarity, Item_Component::Item_Type::chest, armorType, equip_type);
 
     if (itemName == "none") {
-      World::zone.destroy(item_uID);
+      zone.destroy(item_uID);
       Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
       return Item_Component::emptyEquipSlot;
     } else {

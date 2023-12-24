@@ -370,7 +370,7 @@ namespace User_Mouse_Input {
       } else { //moves all the units onto a single point, I want to have the spread out in some kind of formation
         auto squads_view = zone.view<Component::Selected, Component::Squad>();
         for (auto squads: squads_view) {
-          auto &squad = World::zone.get<Component::Squad>(squads);
+          auto &squad = zone.get<Component::Squad>(squads);
           for (int j = 0; j < squad.iSub_Units.size(); j++) {
             zone.emplace_or_replace<Component::Moving>(squad.iSub_Units[j]);
             zone.emplace_or_replace<Component::Mouse_Move>(squad.iSub_Units[j], Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
@@ -414,7 +414,7 @@ namespace User_Mouse_Input {
       } else { //moves all the units onto a single point, I want to have the spread out in some kind of formation
         auto squads_view = zone.view<Component::Selected, Component::Platoon>();
         for (auto squads: squads_view) {
-          auto &squad = World::zone.get<Component::Platoon>(squads);
+          auto &squad = zone.get<Component::Platoon>(squads);
           for (int j = 0; j < squad.iSub_Units.size(); j++) {
             zone.emplace_or_replace<Component::Moving>(squad.iSub_Units[j]);
             zone.emplace_or_replace<Component::Mouse_Move>(squad.iSub_Units[j], Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);

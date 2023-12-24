@@ -5,6 +5,8 @@
 #include "ui.h"
 #include <SDL2/SDL.h>
 #include <sstream>
+#include "load_zone.h"
+#include "create_entities.h"
 
 namespace Character_Stats {
 
@@ -28,8 +30,7 @@ namespace Character_Stats {
   }
 
   // run when equipping or unequipping an item
-  void Update_Equip_slots(
-      entt::registry &zone) {// run funtion on item equip or unequip
+  void Update_Equip_slots(entt::registry &zone, World::GameState &state) {// run funtion on item equip or unequip
     auto view = zone.view<Rendering_Components::Sprite_Sheet_Info,
                           Item_Component::Item_Equip, Item_Component::Equipment,
                           Rendering_Components::Equipment_Sprites>();
@@ -40,7 +41,7 @@ namespace Character_Stats {
 
       // iterate through each equip slot
       for (auto &item: equipment.equippedItems) {
-        if (item.second != Item_Component::emptyEquipSlot) {
+        if (item.second != Item_Component::emptyEquipSlot[state]) {
 
           // get the item at the item type index
           auto &weaponSheet =
@@ -54,16 +55,16 @@ namespace Character_Stats {
           }
         }
 
-        else if (item.second == Item_Component::emptyEquipSlot) {
+        else if (item.second == Item_Component::emptyEquipSlot[state]) {
           equipmentSprites.sheet[(int) item.first].ItemSheetData = NULL;
           equipmentSprites.sheet[(int) item.first].name = "empty";
-          equipmentSprites.sheet[(int) item.first].itemID = emptyEquipSlot;
+          equipmentSprites.sheet[(int) item.first].itemID = emptyEquipSlot[state];
         }
       }
     }
   }
 
-  void Update_Unit_Offense(entt::registry &zone) {
+  void Update_Unit_Offense(entt::registry &zone, World::GameState &state) {
     auto view = zone.view<Item_Component::Item_Equip, Component::Melee_Damage,
                           Component::Attack_Speed, Item_Component::Equipment>();
     for (auto entity: view) {
@@ -86,7 +87,7 @@ namespace Character_Stats {
 
       // check if slot is occupied, add stats if it is
       for (auto &item: equipment.equippedItems) {
-        if (item.second != Item_Component::emptyEquipSlot) {
+        if (item.second != Item_Component::emptyEquipSlot[state]) {
           auto &stats = zone.get<Item_Stats>(item.second).stats;
           for (auto &stat: stats) {
             Item_Component::statData[stat.first] += stat.second;
@@ -117,7 +118,7 @@ namespace Character_Stats {
     }
   }
 
-  void Update_Unit_Defense(entt::registry &zone) {
+  void Update_Unit_Defense(entt::registry &zone, World::GameState &state) {
     auto view = zone.view<Item_Component::Item_Equip, Component::Health,
                           Item_Component::Equipment>();
     for (auto entity: view) {
@@ -139,7 +140,7 @@ namespace Character_Stats {
 
       // check if slot is occupied, add stats if it is
       for (auto &item: equipment.equippedItems) {
-        if (item.second != Item_Component::emptyEquipSlot) {
+        if (item.second != Item_Component::emptyEquipSlot[state]) {
           auto &stats = zone.get<Item_Stats>(item.second).stats;
           for (auto &stat: stats) {
             Item_Component::statData[stat.first] += stat.second;
@@ -212,8 +213,7 @@ namespace Character_Stats {
     }
   }
 
-  void Init_Player_Stats(
-      entt::registry &zone) {// run funtion on item equip or unequip
+  void Init_Player_Stats(entt::registry &zone, World::GameState &state) {// run funtion on item equip or unequip
     auto view =
         zone.view<Component::Input, Component::Melee_Damage, Component::Health,
                   Component::Attack_Speed, Item_Component::Equipment>();
@@ -230,7 +230,7 @@ namespace Character_Stats {
 
       // add equipment stats to charcter stats
       for (auto &item: equipment.equippedItems) {
-        if (item.second != Item_Component::emptyEquipSlot) {
+        if (item.second != Item_Component::emptyEquipSlot[state]) {
           auto &stats = zone.get<Item_Stats>(item.second).stats;
           for (auto &stat: stats) {
             Item_Component::statData[stat.first] += stat.second;
@@ -263,14 +263,8 @@ namespace Character_Stats {
   }
 
 
-  void Get_Bust_Textures(entt::registry &zone, entt::entity &item, Item_Type itemType, Rendering_Components::Body_Frame &bodyFrame, Rendering_Components::Unit_Frame_Portrait &unitPortraitFrame) {
-    if (item != Item_Component::emptyEquipSlot) {
-      unitPortraitFrame.gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
-      bodyFrame.gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
-    }
-  }
 
-  void Equip_Units(entt::registry &zone, Character_Options::Customization &options) {
+  void Equip_Units(entt::registry &zone, World::GameState &state, Character_Options::Customization &options) {
     std::vector<std::string> gear = Get_Sex(options.sex);
     Item_Component::Item hair = Get_Hair_Name(options);
     Item_Component::Item beard = Get_Beard_Name(options);
@@ -282,55 +276,68 @@ namespace Character_Stats {
       auto &position = view.get<Component::Position>(unit);
       auto &unitPortraitFrame = view.get<Rendering_Components::Unit_Frame_Portrait>(unit);
       auto &bodyFrame = view.get<Rendering_Components::Body_Frame>(unit);
+//      for (auto item :equipment.equippedItems) {
+//        Utilities::Log((int)item.second);
+//      }
 
-      entt::entity item = Items::Create_And_Equip_Weapon(position, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[0].c_str()), Character_Options::Color[0]);
+      entt::entity item = Items::Create_And_Equip_Weapon(zone, state, position, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[0].c_str()), Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::mainhand] = item;
-      Get_Bust_Textures(zone, item, Item_Type::mainhand, bodyFrame, unitPortraitFrame);
+      Load::Get_Bust_Textures(zone, state, item, Item_Type::mainhand, bodyFrame, unitPortraitFrame);
 
-      item = Items::Create_And_Equip_Armor(position, Item_Type::chest, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[1].c_str()), Character_Options::Color[0]);
+      item = Items::Create_And_Equip_Armor(zone, state, position, Item_Type::chest, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[1].c_str()), Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::chest] = item;
-      Get_Bust_Textures(zone, item, Item_Type::chest, bodyFrame, unitPortraitFrame);
+      Load::Get_Bust_Textures(zone, state, item, Item_Type::chest, bodyFrame, unitPortraitFrame);
 
-      item = Items::Create_And_Equip_Armor(position, Item_Type::legs, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[2].c_str()), Character_Options::Color[0]);
+      item = Items::Create_And_Equip_Armor(zone, state, position, Item_Type::legs, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[2].c_str()), Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::legs] = item;
-      Get_Bust_Textures(zone, item, Item_Type::legs, bodyFrame, unitPortraitFrame);
+      Load::Get_Bust_Textures(zone, state, item, Item_Type::legs, bodyFrame, unitPortraitFrame);
 
-      item = Items::Create_And_Equip_Armor(position, Item_Type::hair, equipment.type, hair, Character_Options::Color[options.hairColor]);
+      item = Items::Create_And_Equip_Armor(zone, state, position, Item_Type::hair, equipment.type, hair, Character_Options::Color[options.hairColor]);
       equipment.equippedItems[Item_Type::hair] = item;
-      Get_Bust_Textures(zone, item, Item_Type::hair, bodyFrame, unitPortraitFrame);
+      Load::Get_Bust_Textures(zone, state, item, Item_Type::hair, bodyFrame, unitPortraitFrame);
 
-      item = Items::Create_And_Equip_Armor(position, Item_Type::facialHair, equipment.type, beard, Character_Options::Color[options.hairColor]);
+      item = Items::Create_And_Equip_Armor(zone, state, position, Item_Type::facialHair, equipment.type, beard, Character_Options::Color[options.hairColor]);
       equipment.equippedItems[Item_Type::facialHair] = item;
-      Get_Bust_Textures(zone, item, Item_Type::facialHair, bodyFrame, unitPortraitFrame);
+      Load::Get_Bust_Textures(zone, state, item, Item_Type::facialHair, bodyFrame, unitPortraitFrame);
 
-      item = Items::Create_And_Equip_Armor(position, Item_Type::horns, equipment.type, horns, Character_Options::Color[0]);
+      item = Items::Create_And_Equip_Armor(zone, state, position, Item_Type::horns, equipment.type, horns, Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::horns] = item;
-      Get_Bust_Textures(zone, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
+      Load::Get_Bust_Textures(zone, state, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
+
+//      for (auto item :equipment.equippedItems) {
+//        Utilities::Log((int)item.second);
+//      }
 
       zone.emplace_or_replace<Item_Component::Item_Equip>(unit);
     }
   }
 
-  void Update_Items(entt::registry &zone) {
-    Update_Equip_slots(zone);
-    Update_Unit_Offense(zone);
+  void Update_Items(entt::registry &zone, World::GameState &state) {
+    Update_Equip_slots(zone, state);
+    Update_Unit_Offense(zone, state);
     // defensive has to come after offensive as it removes the Item_Equip component
-    Update_Unit_Defense(zone);
+    Update_Unit_Defense(zone, state);
   }
 
-  void Init_Items(entt::registry &zone) {
+  void Init_Items() {
     Items::Init_Item_Data();
   }
 
-  void Init_UI(entt::registry &zone) {
+  void Init_UI(entt::registry &zone, World::GameState &state) {
     UI::Bag_UI::Create_Bag_UI(zone);
-    UI::Equipment_UI::Create_Equipment_UI(zone);
   }
 
-  void Init_Player(entt::registry &zone, Character_Options::Customization &options) {
+  void Init_Player(entt::registry &zone, World::GameState &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
-    Create_Entities::Create_Entity(zone, 73188, 36964, "unit", false, data, true);
-    Equip_Units(zone, options);
-    Init_Player_Stats(zone);
+    Create_Entities::Create_Entity(zone, state, 73188, 36964, "unit", false, data, true);
+    Equip_Units(zone, state, options);
+    Init_Player_Stats(zone, state);
   }
+
+  void Recreate_Player(entt::registry &zone, World::GameState &state, Character_Options::Customization &options) {
+    db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
+    Create_Entities::Create_Entity(zone, state, 73188, 36964, "unit", false, data, true);
+    Init_Player_Stats(zone, state);
+  }
+
 }// namespace Character_Stats

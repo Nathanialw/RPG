@@ -1,27 +1,19 @@
 #pragma once
 
+#include "entt/entt.hpp"
 #include <SDL2/SDL.h>
 #include <vector>
 #include "graphics.h"
 #include "timer.h"
-#include "interface.h"
 #include "utilities.h"
-#include "items.h"
-#include "ui.h"
 #include "camera.h"
-#include "mouse_control.h"
-#include "character_stats.h"
-#include "tooltips.h"
-#include "damage_text.h"
 #include "ui_resources.h"
 #include "pause.h"
 #include "world_grid.h"
-#include "dynamic_quad_tree.h"
-#include "player_control.h"
-#include "death_control.h"
 #include "frame_rendering.h"
 #include "rendering_components.h"
 #include "render_iso_tiles.h"
+#include "tooltips.h"
 
 namespace Rendering {
 
@@ -147,7 +139,7 @@ namespace Rendering {
 
       if (sheetData.flareSpritesheet) {
         /// get the next frame
-        Update_Frame(entity, scale, sheetData, direction, action);
+        Update_Frame(zone, entity, scale, sheetData, direction, action);
         /// get/update the clip rect
         Get_Spritesheet_Type(clipRect, sheetData, direction, action);
         /// set the render rect size and position
@@ -176,7 +168,7 @@ namespace Rendering {
         }
 
         //                render unit
-        Frame_Increment(entity, scale, sheetData, action, direction);
+        Frame_Increment(zone, entity, scale, sheetData, action, direction);
         Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
 
         //                render equipment
@@ -250,7 +242,6 @@ namespace Rendering {
       }
     }
   }
-
 
   void Render_Ortho_Tiles(entt::registry &zone, tmx::Map &map, Component::Camera &camera) {
     float originX = 0.0f;
@@ -353,7 +344,7 @@ namespace Rendering {
 
   float placeRenderable = 0.0f;
 
-  void Add_Remove_Renderable_Component(entt::registry &zone, Component::Camera &camera) {
+  void Add_Remove_Renderable_Component(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
     placeRenderable += Timer::timeStep;
     if (placeRenderable >= 250.0f) {
       placeRenderable -= 250.0f;
@@ -400,8 +391,9 @@ namespace Rendering {
 
             if (zone.any_of<Component::Body>(entity)) {
               auto &body = zone.get<Component::Body>(entity).body;
-              Collision::world->DestroyBody(body);
-              World::zone.remove<Component::Body>(entity);
+              auto world = Collision::Get_Collision_List(state);
+              world->DestroyBody(body);
+              zone.remove<Component::Body>(entity);
             }
           }
         }
@@ -433,12 +425,12 @@ namespace Rendering {
     }
   }
 
-  void Remove_Entities_From_Registry(entt::registry &zone) {
+  void Remove_Entities_From_Registry(entt::registry &zone, World::GameState &state) {
     auto view = zone.view<Component::Destroyed>();
     for (auto entity: view) {
       if (zone.any_of<Component::In_Object_Tree>(entity)) {
         Utilities::Log("item was still has In_Object_Tree");
-        Dynamic_Quad_Tree::Remove_Entity_From_Tree(zone, entity);
+        Quad_Tree::Remove_Entity_From_Tree(zone, entity, state);
       }
       zone.destroy(entity);
       Utilities::Log("object destroyed");
@@ -446,10 +438,10 @@ namespace Rendering {
     zone.compact<>();
   }
 
-  void Render_Map(entt::registry &zone, Component::Camera &camera) {
+  void Render_Map(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
     SDL_RenderClear(Graphics::renderer);
 
-    World::Render(camera, World_Data::Tile_Type::grass);
+    Maps::Render(zone, state, camera, World::Tile_Type::grass);
     //        Render_Iso_Tiles(zone, Maps::map, camera);
     //        Render_Ortho_Tiles(zone, Maps::map, camera);
     Display_Background_Objects(zone, camera);
@@ -457,12 +449,12 @@ namespace Rendering {
     //   alternatively we could sort all the background and foreground objects by WHEN they spawned rather than simple y position
     //Render_Dead(zone, camera);
     Display_Foreground_Objects(zone, camera);
-    Interface::Background();
+    Interface::Background(zone);
     Animation_Frame(zone, camera);
     Render_Explosions(zone, camera);
   }
 
-  bool Rendering(entt::registry &zone, Menu::Menu &menu) {
+  bool Rendering(entt::registry &zone, World::GameState &state) {
     Update_Camera_And_Mouse(zone);
     SDL_FPoint mouse = {Mouse::iXMouse, Mouse::iYMouse};
 
@@ -470,28 +462,28 @@ namespace Rendering {
     for (auto entity: camera_view) {
       auto &camera = camera_view.get<Component::Camera>(entity);
       //			SDL_RenderClear(Graphics::renderer);
-      Add_Remove_Renderable_Component(zone, camera);
+      Add_Remove_Renderable_Component(zone, state, camera);
       sort_Positions(zone);
-      Render_Map(zone, camera);
-      Remove_Entities_From_Registry(zone); // cannot be done before clearing the entities from the quad tree
+      Render_Map(zone, state, camera);
+      Remove_Entities_From_Registry(zone, state); // cannot be done before clearing the entities from the quad tree
       //            RenderLine(zone, camera);
       Items::Show_Ground_Items(zone, camera);
       Items::Unit_Name_On_Mouseover(zone, camera);
       Social_Control::Show_Dialogue(zone, camera);
       Items::Name_On_Mouseover(zone, camera);
-      UI::Render_UI(zone, Graphics::renderer, camera);
+      UI::Render_UI(zone, state, Graphics::renderer, camera);
       Character_Stats::Render_Character_Stats(camera);
       Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
       Damage_Text::Show_Damage(zone, camera);
       UI_Spellbook::Draw_Spellbook(zone, camera);
       Pause::Pause_Control(camera);
-      if (!Menu::Render_Menu(menu, zone, camera)) {
+      if (!Menu::Render_Menu(zone, camera)) {
         return false;
       }
       //Mouse
       Interface::Foreground(zone, camera);
       //on top of mouse
-      Tooltip::Show_Item_Tooltip(zone, mouse, camera);
+      Tooltip::Show_Item_Tooltip(zone, state, mouse, camera);
       Render_Mouse_Item(zone, camera);
       SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
       if (Items::showGroundItems) {                //****//search quad tree instead

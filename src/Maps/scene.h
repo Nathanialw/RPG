@@ -1,17 +1,21 @@
 #pragma once
-#include "entt/entt.hpp"
-#include <iostream>
-#include "components.h"
-#include "graphics.h"
 #include "SQLite_unit_data.h"
-#include "death_spells.h"
-#include "world.h"
+#include "character_data.h"
+#include "collision.h"
+#include "components.h"
+#include "entt/entt.hpp"
+#include "graphics.h"
 #include "recruitable_units.h"
+#include "sprite_parser.h"
 #include "unit_control.h"
 #include "unit_formations.h"
-#include "sprite_parser.h"
+#include "world.h"
+#include <iostream>
+#include "entt/entt.hpp"
+#include "components.h"
+#include "SQLite_unit_data.h"
 #include "collision.h"
-#include "character_data.h"
+#include "texture_packer.h"
 
 namespace Scene {
 
@@ -20,47 +24,46 @@ namespace Scene {
   //
 
   //adds Environment items to world grid
-  void add_unit_to_grid(Map::Node3& map) {
-    auto view = World::zone.view<Component::Position, Component::Radius, Component::Environment>(entt::exclude<Component::Assigned_To_Formation>);
-    for (auto entity : view) {
-      auto& x = view.get<Component::Position>(entity).x;
-      auto& y = view.get<Component::Position>(entity).y;
-      auto& r = view.get<Component::Radius>(entity).fRadius;
-      SDL_FRect rect = { x - r, y - r, r * 2.0f, r * 2.0f };
+  void add_unit_to_grid(entt::registry &zone, Map::Node3 &map) {
+    auto view = zone.view<Component::Position, Component::Radius, Component::Environment>(entt::exclude<Component::Assigned_To_Formation>);
+    for (auto entity: view) {
+      auto &x = view.get<Component::Position>(entity).x;
+      auto &y = view.get<Component::Position>(entity).y;
+      auto &r = view.get<Component::Radius>(entity).fRadius;
+      SDL_FRect rect = {x - r, y - r, r * 2.0f, r * 2.0f};
 
       Map::Place_Rect_On_Grid(rect, Map::map, entity);
-      World::zone.emplace_or_replace<Component::Assigned_To_Formation>(entity);
+      zone.emplace_or_replace<Component::Assigned_To_Formation>(entity);
     }
   }
 
-  void Spawn_Skeletons(entt::registry &zone, int x, int y) {
+  void Spawn_Skeletons(entt::registry &zone, World::GameState &state, int x, int y) {
     for (float j = 0; j < x; ++j) {
       for (float i = 0; i < y; ++i) {
-	Death_Spells::Summon_Skeleton(zone, (100.0f + (i * 60.0f)), (100.0f + (j * 60.0f)), "'skeleton'");
-	//	Death_Spells::Summon_Skeleton(zone, (200.0f + (i * 60.0f)), (200.0f + (j * 60.0f)), "'skeleton_mage'");
+//        Death_Spells::Summon_Skeleton(zone, state, (100.0f + (i * 60.0f)), (100.0f + (j * 60.0f)), "'skeleton'");
+        //	Death_Spells::Summon_Skeleton(zone, (200.0f + (i * 60.0f)), (200.0f + (j * 60.0f)), "'skeleton_mage'");
       }
     }
   }
 
   //void Emplace_State_Data(entt::entity &entity) {
-  //	World::zone.emplace_or_replace<Store_State>(entity);
+  //	zone.emplace_or_replace<Store_State>(entity);
   //	//Sprite_Parser::Store_State_Frame_Start_Y();
   //}
 
-  void Update_Army() {
-    auto company_view = World::zone.view<Component::Company>();
-    for (auto companies : company_view) {
-      auto& company = company_view.get<Component::Company>(companies);
+  void Update_Army(entt::registry &zone) {
+    auto company_view = zone.view<Component::Company>();
+    for (auto companies: company_view) {
+      auto &company = company_view.get<Component::Company>(companies);
       for (int c = 0; c < company.iSub_Units.size(); c++) {
-	auto& platoon = World::zone.get<Component::Platoon>(company.iSub_Units[c]);
-	for (int p = 0; p < platoon.iSub_Units.size(); p++) {
-	  auto& squad = World::zone.get<Component::Squad>(platoon.iSub_Units[p]);
-	  for (int i = 0; i < squad.iSub_Units.size(); i++) {
-	    if (squad.bAlive.at(i) == false) {
-
-	    }
-	  }
-	}
+        auto &platoon = zone.get<Component::Platoon>(company.iSub_Units[c]);
+        for (int p = 0; p < platoon.iSub_Units.size(); p++) {
+          auto &squad = zone.get<Component::Squad>(platoon.iSub_Units[p]);
+          for (int i = 0; i < squad.iSub_Units.size(); i++) {
+            if (squad.bAlive.at(i) == false) {
+            }
+          }
+        }
       }
     }
   }
@@ -79,4 +82,4 @@ namespace Scene {
     Entity_Loader::init_db();
     Character_Data::Get_Names_From_DB();
   }
-}
+}// namespace Scene

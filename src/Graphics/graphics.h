@@ -195,7 +195,7 @@ namespace Graphics {
     if (unitPortaits[unitID] == NULL) {
       texture = Load_Texture(unitID, unitPortaits, filepath);
       if (texture == NULL) {
-        std::cout << "Load_Portrait() failed to load  texture from file: " << filepath << std::endl;
+//        std::cout << "Load_Portrait() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
         texture = unitPortaits[unitID];
@@ -217,7 +217,7 @@ namespace Graphics {
     if (unitBodies[unitID] == NULL) {
       texture = Load_Texture(unitID, unitBodies, filepath);
       if (texture == NULL) {
-        std::cout << "Load_Body() failed to load  texture from file: " << filepath << std::endl;
+//        std::cout << "Load_Body() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
         texture = unitBodies[unitID];
@@ -250,7 +250,7 @@ namespace Graphics {
     //to render it jsut needs access to the texture array and the unitID
   }
 
-  static void Load_Textures(entt::registry &zone) {
+  static void Load_Textures() {
     Create_Font();
     fireball_explosion_0 = createTexture("assets/sprites/spells/fire/explosions/fireball_explosion_0.png");
 
@@ -273,14 +273,12 @@ namespace Graphics {
     spellbook = createTexture("assets/sprites/UI/spellbook/spellbook.png");
 
     default_icon = createTexture("assets/sprites/default.jpg");
-    defaultIcon = Create_Icon_Entity(zone, default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
   }
 
-  void createGraphicsContext(entt::registry &zone) {
+  void createGraphicsContext() {
     window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, resolution.w, resolution.h, SDL_WINDOW_RESIZABLE);
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     SDL_SetHint(SDL_HINT_RENDER_BATCHING, "1");
-    Load_Textures(zone);
   }
 
   void closeContext() {

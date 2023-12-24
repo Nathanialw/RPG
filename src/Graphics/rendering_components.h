@@ -3,9 +3,6 @@
 #include "vector"
 #include <map>
 
-#include "components.h"
-#include "mounts.h"
-
 namespace Rendering_Components {
 
   struct Building {

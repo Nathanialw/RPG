@@ -1,41 +1,40 @@
 #pragma once
 
 #include "action_components.h"
-#include "components.h"
-#include "graphics.h"
-#include "rendering_components.h"
-#include "create_entities.h"
-#include "spritesheet_structs.h"
-#include "world.h"
-#include "item_components.h"
-#include "utilities.h"
-#include "game_objects.h"
-#include <cstdlib>
 #include "blood.h"
+#include "components.h"
+#include "create_entities.h"
+#include "game_objects.h"
+#include "graphics.h"
+#include "item_components.h"
+#include "rendering_components.h"
+#include "spritesheet_structs.h"
+#include "utilities.h"
+#include "world.h"
+#include <cstdlib>
 
 namespace Death_Component {
   struct Corpse {
-
   };
-}
+}// namespace Death_Component
 
 namespace Death_Control {
 
-  bool Death_Sequence(entt::entity entity, Rendering_Components::Sprite_Sheet_Info &sheetData, Action_Component::Action &action, int &numFrames) {
+  bool Death_Sequence(entt::registry &zone, entt::entity entity, Rendering_Components::Sprite_Sheet_Info &sheetData, Action_Component::Action &action, int &numFrames) {
     if (action.state == Action_Component::dying) {
       if (action.frame < numFrames - 1) {
         action.frame++;
         // and if it is an item
         if (action.frame == numFrames - 1) {
           if (sheetData.sheetData) {
-            if (World::zone.get<Component::Entity_Type>(entity) == Component::Entity_Type::item) {
+            if (zone.get<Component::Entity_Type>(entity) == Component::Entity_Type::item) {
               Utilities::Log("Death_Control::Death_Sequence() Item lands on the ground");
-            } else if (World::zone.any_of<Item_Component::Equipment>(entity)) {
-              World::zone.emplace_or_replace<Component::Drop_Equipment>(entity);
-              World::zone.emplace_or_replace<Death_Component::Corpse>(entity);
+            } else if (zone.any_of<Item_Component::Equipment>(entity)) {
+              zone.emplace_or_replace<Component::Drop_Equipment>(entity);
+              zone.emplace_or_replace<Death_Component::Corpse>(entity);
             } else {
               Utilities::Log("Death_Sequence() a monster died and it does nothing yet");
-              World::zone.emplace_or_replace<Death_Component::Corpse>(entity);
+              zone.emplace_or_replace<Death_Component::Corpse>(entity);
             }
           }
         }
@@ -52,7 +51,7 @@ namespace Death_Control {
     return false;
   }
 
-  void isDead(entt::registry &zone) {
+  void isDead(entt::registry &zone, World::GameState &state) {
     auto view = zone.view<Action_Component::Action, Component::Health, Component::Position, Component::Body, Component::Soldier, Component::Renderable>(entt::exclude<Component::Spell>);
     for (auto entity: view) {
       auto &health = view.get<Component::Health>(entity);
@@ -63,8 +62,9 @@ namespace Death_Control {
         auto &position = view.get<Component::Position>(entity);
         auto &body = view.get<Component::Body>(entity).body;
 
-        Collision::world->DestroyBody(body);
-        World::zone.remove<Component::Body>(entity);
+        auto world = Collision::Get_Collision_List(state);
+        world->DestroyBody(body);
+        zone.remove<Component::Body>(entity);
         auto rect = zone.get<Component::Interaction_Rect>(entity).rect;
 
         zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect);
@@ -81,7 +81,7 @@ namespace Death_Control {
         zone.remove<Collision_Component::Dynamic_Collider>(entity);
 
         // spawn blood
-        Blood::Pool(zone, position);
+        Blood::Pool(zone, state, position);
 
         if (zone.any_of<Component::Assigned_To_Formation>(entity)) {
           auto &soldier = zone.get<Component::Assigned_To_Formation>(entity);
@@ -98,7 +98,7 @@ namespace Death_Control {
     Item_Component::Item_Type itemType;
   };
 
-  void Drop_Equipment_On_Death(entt::registry &zone) {
+  void Drop_Equipment_On_Death(entt::registry &zone, World::GameState &state) {
     auto view = zone.view<Item_Component::Equipment, Component::Drop_Equipment, Component::Position, Component::Direction, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset>();
     for (auto entity: view) {
       auto &equipment = view.get<Item_Component::Equipment>(entity);
@@ -109,10 +109,10 @@ namespace Death_Control {
       auto &offset = view.get<Rendering_Components::Sprite_Offset>(entity);
 
       for (auto item: equipment.equippedItems) {
-        if (item.second != emptyEquipSlot) {
-          auto &offset = World::zone.get<Rendering_Components::Sprite_Offset>(item.second);
+        if (item.second != emptyEquipSlot[state]) {
+          auto &offset = zone.get<Rendering_Components::Sprite_Offset>(item.second);
 
-          auto &scale = World::zone.get<Component::Scale>(item.second);
+          auto &scale = zone.get<Component::Scale>(item.second);
           auto &itemPosition = zone.get<Component::Position>(item.second);
 
           offset = unitOffset;
@@ -121,17 +121,17 @@ namespace Death_Control {
           SDL_Rect clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList[sheetData.frameIndex].clip;
           SDL_FRect renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
 
-          World::zone.emplace_or_replace<Item_On_Corpse>(item.second, entity, item.first);
+          zone.emplace_or_replace<Item_On_Corpse>(item.second, entity, item.first);
 
           SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect);
           SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
 
-          World::zone.emplace_or_replace<Item_Component::Ground_Item>(item.second, rec);
-          World::zone.emplace_or_replace<Component::Interaction_Rect>(item.second, rec.x, rec.y, (float) clipRect.w, (float) clipRect.h);
+          zone.emplace_or_replace<Item_Component::Ground_Item>(item.second, rec);
+          zone.emplace_or_replace<Component::Interaction_Rect>(item.second, rec.x, rec.y, (float) clipRect.w, (float) clipRect.h);
 
-          World::zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item.second);
+          zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item.second);
           //needs radius to be able to be picked up
-          World::zone.emplace_or_replace<Component::Radius>(item.second, offset.x);
+          zone.emplace_or_replace<Component::Radius>(item.second, offset.x);
         }
       }
       zone.remove<Component::Drop_Equipment>(entity);
@@ -198,11 +198,11 @@ namespace Death_Control {
     }
   }
 
-  void Dead_Entity_Routine(entt::registry &zone) {
+  void Dead_Entity_Routine(entt::registry &zone, World::GameState &state) {
     Set_Dead(zone);
     Update_Ground_Box(zone);
-    Drop_Equipment_On_Death(zone);
+    Drop_Equipment_On_Death(zone, state);
     Remove_Item_From_Corpse(zone);
     Set_As_Corpse(zone);
   }
-}
+}// namespace Death_Control

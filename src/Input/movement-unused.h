@@ -29,7 +29,7 @@
 //
 //
 //	void Update_Position() {
-//		auto view = World::zone.view<Component::Position, Component::Velocity, Component::Moving>();
+//		auto view = zone.view<Component::Position, Component::Velocity, Component::Moving>();
 //		Update_Position_Poll += Timer::timeStep;
 //		float angleY = 0.0f;
 //		//std::cout << Update_Position_Poll << std::endl;
@@ -76,7 +76,7 @@
 //	}
 //
 //	void Update_Direction() {
-//		auto view = World::zone.view<Direction, Actions, Velocity, Moving>();
+//		auto view = zone.view<Direction, Actions, Velocity, Moving>();
 //		for (auto entity : view) {
 //			auto& vel = view.get<Velocity>(entity);
 //			auto& b = view.get<Direction>(entity);
@@ -108,7 +108,7 @@
 //	}
 //
 //	void Mouse_Move_Arrived() {
-//		auto view = World::zone.view<Position, Velocity, Actions, Mouse_Move>();
+//		auto view = zone.view<Position, Velocity, Actions, Mouse_Move>();
 //		for (auto entity : view) {
 //			auto& act = view.get<Actions>(entity);
 //			auto& v = view.get<Velocity>(entity);
@@ -121,8 +121,8 @@
 //					v.magnitude.y = 0.0f;
 //					act.action = idle;
 //
-//					World::zone.remove<Mouse_Move>(entity);
-//					World::zone.remove<Moving>(entity);
+//					zone.remove<Mouse_Move>(entity);
+//					zone.remove<Moving>(entity);
 //				}
 //			}
 //		}
@@ -133,7 +133,7 @@
 //		Player_Move_Poll += Timer::timeStep;
 //		if (Player_Move_Poll >= 200) {
 //			Player_Move_Poll = 0;
-//			auto view = World::zone.view<Position, Velocity, Mouse_Move, Actions, Moving>();
+//			auto view = zone.view<Position, Velocity, Mouse_Move, Actions, Moving>();
 //			for (auto entity : view) {
 //				const auto& x = view.get<Position>(entity);
 //				const auto& y = view.get<Position>(entity);
@@ -152,7 +152,7 @@
 //	void Linear_Move_To() {
 //		linearMovePoll += Timer::timeStep;
 //		if (linearMovePoll >= 50) {
-//			auto view = World::zone.view<Velocity, Actions, Moving, Linear_Move, Spell_Range>();
+//			auto view = zone.view<Velocity, Actions, Moving, Linear_Move, Spell_Range>();
 //			for (auto entity : view) {
 //				auto& act = view.get<Actions>(entity);
 //				auto& v = view.get<Velocity>(entity);
@@ -166,7 +166,7 @@
 //					range.fRange += linearMovePoll;
 //				}
 //				else {
-//					World::zone.remove<Linear_Move>(entity);
+//					zone.remove<Linear_Move>(entity);
 //				}
 //			}
 //			linearMovePoll = 0;

@@ -6,7 +6,7 @@
 
 namespace Blood {
 
-  void Splatter(entt::registry &zone, Component::Position position) {
+  void Splatter(entt::registry &zone, World::GameState &state, Component::Position position) {
 
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
     Collision::aabb aabb;
@@ -14,10 +14,10 @@ namespace Blood {
 
     int splatterIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["bloodSplatter"].size() - 1);
 
-    Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodSplatter"][splatterIndex], splatterIndex, aabb, pointVecs, line);
+    Create_Entities::PVG_Building(zone, state, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodSplatter"][splatterIndex], splatterIndex, aabb, pointVecs, line);
   }
 
-  void Pool(entt::registry &zone, Component::Position position) {
+  void Pool(entt::registry &zone, World::GameState &state, Component::Position position) {
 
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
     Collision::aabb aabb;
@@ -25,7 +25,7 @@ namespace Blood {
 
 
     int poolIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["bloodPool"].size() - 1);
-    Create_Entities::PVG_Building(zone, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodPool"][poolIndex], poolIndex, aabb, pointVecs, line);
+    Create_Entities::PVG_Building(zone, state, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodPool"][poolIndex], poolIndex, aabb, pointVecs, line);
   }
 
   void Import_Blood_Sprites() {

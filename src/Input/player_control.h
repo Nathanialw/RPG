@@ -5,6 +5,7 @@
 #include "player_components.h"
 #include "timer.h"
 #include "ui.h"
+#include "social_control.h"
 
 namespace Player_Control {
   void Attack_Order(entt::registry &zone, entt::entity &entity, entt::entity &target_ID, Component::Radius &targetRadius) {
@@ -44,15 +45,15 @@ namespace Player_Control {
     velocity.magnitude.x += input.keyboardControl[key].velocity.x;
     velocity.magnitude.y += input.keyboardControl[key].velocity.y;
 
-    auto &action = World::zone.get<Action_Component::Action>(entity);
+    auto &action = zone.get<Action_Component::Action>(entity);
     zone.emplace_or_replace<Component::Moving>(entity);
     Action_Component::Set_State(action, Action_Component::walk);
   }
 
   void Check_Pressed_Keys(entt::registry &zone, entt::entity entity) {
-    if (World::zone.any_of<Component::Input>(entity)) {
-      auto &input = World::zone.get<Component::Input>(entity);
-      auto &velocity = World::zone.get<Component::Velocity>(entity);
+    if (zone.any_of<Component::Input>(entity) && zone.any_of<Component::Velocity>(entity)) {
+      auto &input = zone.get<Component::Input>(entity);
+      auto &velocity = zone.get<Component::Velocity>(entity);
 
       for (auto const &[key, value]: input.keyboardControl) {
         if (value.pressed) {
@@ -172,7 +173,7 @@ namespace Player_Control {
   void Mouse_Move_To_Item(entt::registry &zone) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
     if (Player_Move_Poll >= 0) {
       Player_Move_Poll = 0;
-      auto view = World::zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Action_Component::Action, Component::Moving>();
+      auto view = zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Action_Component::Action, Component::Moving>();
       for (auto entity: view) {
         const auto &x = view.get<Component::Position>(entity);
         const auto &y = view.get<Component::Position>(entity);
@@ -187,18 +188,18 @@ namespace Player_Control {
             v.magnitude.x = 0.0f;
             v.magnitude.y = 0.0f;
             Action_Component::Set_State(action, Action_Component::Action_State::kneel);
-            World::zone.remove<Component::Moving>(entity);
+            zone.remove<Component::Moving>(entity);
           }
           //pickup Item
-          UI::Pick_Up_Item_To_Mouse_Or_Bag(World::zone, mov, Mouse::itemCurrentlyHeld);
-          World::zone.remove<Component::Pickup_Item>(entity);
+          UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, mov, Mouse::itemCurrentlyHeld);
+          zone.remove<Component::Pickup_Item>(entity);
         }
       }
     }
   }
 
   //    void Mouse_Move_Arrived_Pickup_Item(entt::registry & zone, bool &isItemCurrentlyHeld) {
-  //      auto view = World::zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Pickup_Item>();
+  //      auto view = zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Pickup_Item>();
   //      for (auto entity: view) {
   //        auto &action = view.get<Action_Component::Action>(entity);
   //        auto &v = view.get<Component::Velocity>(entity);
@@ -209,16 +210,16 @@ namespace Player_Control {
   //            v.magnitude.x = 0.0f;
   //            v.magnitude.y = 0.0f;
   //            Action_Component::Set_State(action, Action_Component::Action_State::idle);
-  //            World::zone.remove<Component::Moving>(entity);
+  //            zone.remove<Component::Moving>(entity);
   //          }
   //
   //          //pickup Item
   //          UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, isItemCurrentlyHeld);
-  //          World::zone.remove<Component::Pickup_Item>(entity);
+  //          zone.remove<Component::Pickup_Item>(entity);
   //        }
   //        //      if (action.state == Action_Component::Action_State::idle) {
-  //        //        World::zone.remove<Component::Moving>(entity);
-  //        //        World::zone.remove<Component::Pickup_Item>(entity);
+  //        //        zone.remove<Component::Moving>(entity);
+  //        //        zone.remove<Component::Pickup_Item>(entity);
   //        //      }
   //      }
 

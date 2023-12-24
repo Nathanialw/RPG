@@ -28,8 +28,8 @@ namespace Movement {
     }
   }
 
-  void Update_Position() {
-    auto view = World::zone.view<Action_Component::Action, Component::Velocity, Component::Moving, Component::Body>();
+  void Update_Position(entt::registry &zone) {
+    auto view = zone.view<Action_Component::Action, Component::Velocity, Component::Moving, Component::Body>();
     float angleY = 0.0f;
     for (auto entity: view) {
       auto &velocity = view.get<Component::Velocity>(entity);
@@ -57,7 +57,7 @@ namespace Movement {
       }
 
       if ((velocity.magnitude.x == 0.0f) && (velocity.magnitude.y == 0.0f)) {
-        World::zone.remove<Component::Moving>(entity);
+        zone.remove<Component::Moving>(entity);
         Action_Component::Set_State(action, Action_Component::idle);
       }
     }
@@ -82,8 +82,8 @@ namespace Movement {
     return Set_Direction(angleInRadians);
   }
 
-  void Update_Direction() {
-    auto view = World::zone.view<Component::Direction, Action_Component::Action, Component::Velocity, Component::Moving>();
+  void Update_Direction(entt::registry &zone) {
+    auto view = zone.view<Component::Direction, Action_Component::Action, Component::Velocity, Component::Moving>();
     for (auto entity: view) {
       auto &vel = view.get<Component::Velocity>(entity);
       auto &direction = view.get<Component::Direction>(entity);
@@ -112,8 +112,8 @@ namespace Movement {
     }
   }
 
-  void Mouse_Move_Arrived() {
-    auto view = World::zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Position, Component::Velocity, Action_Component::Action, Component::Mouse_Move, Component::Body>();
+  void Mouse_Move_Arrived(entt::registry &zone) {
+    auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Position, Component::Velocity, Action_Component::Action, Component::Mouse_Move, Component::Body>();
     for (auto entity: view) {
       auto &v = view.get<Component::Velocity>(entity);
       const auto &x = view.get<Component::Position>(entity);
@@ -127,19 +127,19 @@ namespace Movement {
           v.magnitude.y = 0.0f;
           Action_Component::Set_State(action, Action_Component::Action_State::idle);
 
-          World::zone.remove<Component::Mouse_Move>(entity);
-          World::zone.remove<Component::Moving>(entity);
-          Player_Control::Check_Pressed_Keys(World::zone, entity);
+          zone.remove<Component::Mouse_Move>(entity);
+          zone.remove<Component::Moving>(entity);
+          Player_Control::Check_Pressed_Keys(zone, entity);
         }
       }
     }
   }
 
-  void Mouse_Move_To() { //calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
+  void Mouse_Move_To(entt::registry &zone) { //calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
     Player_Move_Poll += Timer::timeStep;
     if (Player_Move_Poll >= 0) {
       Player_Move_Poll = 0;
-      auto view = World::zone.view<Component::Position, Component::Velocity, Component::Mouse_Move, Action_Component::Action, Component::Moving, Component::Body>();
+      auto view = zone.view<Component::Position, Component::Velocity, Component::Mouse_Move, Action_Component::Action, Component::Moving, Component::Body>();
       for (auto entity: view) {
         const auto &position = view.get<Component::Position>(entity);
         auto &action = view.get<Action_Component::Action>(entity);
@@ -149,9 +149,9 @@ namespace Movement {
         if (action.state == Action_Component::idle) {
           Action_Component::Set_State(action, Action_Component::walk);
         }
-        World::zone.remove<Player_Component::Interact_Move>(entity);
-        World::zone.remove<Player_Component::Attack_Move>(entity);
-        World::zone.remove<Component::Pickup_Item>(entity);
+        zone.remove<Player_Component::Interact_Move>(entity);
+        zone.remove<Player_Component::Attack_Move>(entity);
+        zone.remove<Component::Pickup_Item>(entity);
 
         v.magnitude.x = v.speed * (mov.fX_Destination - position.x);
         v.magnitude.y = v.speed * (mov.fY_Destination - position.y);
@@ -159,8 +159,8 @@ namespace Movement {
     }
   }
 
-  void Linear_Move_To() {
-    auto view = World::zone.view<Component::Velocity, Action_Component::Action, Component::Moving, Component::Linear_Move, Component::Spell_Range>();
+  void Linear_Move_To(entt::registry &zone) {
+    auto view = zone.view<Component::Velocity, Action_Component::Action, Component::Moving, Component::Linear_Move, Component::Spell_Range>();
     for (auto entity: view) {
       auto &action = view.get<Action_Component::Action>(entity);
       auto &v = view.get<Component::Velocity>(entity);
@@ -168,7 +168,7 @@ namespace Movement {
       auto &range = view.get<Component::Spell_Range>(entity);
 
       if (range.fRange <= 0) {
-        World::zone.remove<Component::Linear_Move>(entity);
+        zone.remove<Component::Linear_Move>(entity);
       } else {
         Action_Component::Set_State(action, Action_Component::walk);
         v.magnitude.x = v.speed * (mov.fX_Direction - range.fSourceX);
@@ -181,10 +181,10 @@ namespace Movement {
   void Update_Entity_Positions(entt::registry &zone) {
     //Mouse_Attack_Move(); //runs every frame to see if mouse is down, if it is it moves you to the new location
     Mouse_Moving(zone);
-    Linear_Move_To();
-    Mouse_Move_To();
-    Mouse_Move_Arrived();
-    Update_Direction();
-    Update_Position();
+    Linear_Move_To(zone);
+    Mouse_Move_To(zone);
+    Mouse_Move_Arrived(zone);
+    Update_Direction(zone);
+    Update_Position(zone);
   }
 }

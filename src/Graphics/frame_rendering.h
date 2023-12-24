@@ -77,7 +77,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
 
     if (sheetData.flareSpritesheet) {
       //      get the next frame
-      Update_Frame(entity, scale, sheetData, direction, action);
+      Update_Frame(zone, entity, scale, sheetData, direction, action);
       //      get/update the clip rect
       Get_Spritesheet_Type(clipRect, sheetData, direction, action);
       //      set the render rect size and position
@@ -100,7 +100,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
       }
 
       //                render unit
-      Frame_Increment(entity, scale, sheetData, action, direction);
+      Frame_Increment(zone, entity, scale, sheetData, action, direction);
       Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
 
       //                render equipment

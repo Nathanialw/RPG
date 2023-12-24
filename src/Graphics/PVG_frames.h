@@ -3,7 +3,7 @@
 #include "rendering_components.h"
 #include "rendering_functions.h"
 
-void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Components::Sprite_Sheet_Info &sheetData, Action_Component::Action &action, Component::Direction &direction) {
+void Frame_Increment(entt::registry &zone, entt::entity &entity, Component::Scale &scale, Rendering_Components::Sprite_Sheet_Info &sheetData, Action_Component::Action &action, Component::Direction &direction) {
 
   action.frameTime += Timer::timeStep;
 
@@ -19,7 +19,7 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
         action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
         action.frame = 0;
         action.frameState = Action_Component::start;
-        Player_Control::Check_Pressed_Keys(World::zone, entity);
+        Player_Control::Check_Pressed_Keys(zone, entity);
       }
     } else {
       action.frameState = Action_Component::start;
@@ -36,7 +36,7 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
     ///reset frame count if over
     sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + action.frame;
 
-    if (Death_Control::Death_Sequence(entity, sheetData, action, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
+    if (Death_Control::Death_Sequence(zone, entity, sheetData, action, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
       return;
     }
 
@@ -50,7 +50,7 @@ void Frame_Increment(entt::entity &entity, Component::Scale &scale, Rendering_Co
       if (action.frame < 1) {
         sheetData.reversing = 0;
         action.state = Action_Component::idle;
-        Player_Control::Check_Pressed_Keys(World::zone, entity);
+        Player_Control::Check_Pressed_Keys(zone, entity);
       }
     } else if (!sheetData.reversing) {
       action.frame++;

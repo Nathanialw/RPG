@@ -22,7 +22,7 @@ void Update_Frame_Flare(SDL_Rect &clipRect, uint8_t currentFrame, int &startFram
 }
 
 
-void Update_Frame(entt::entity entity, Component::Scale scale, Rendering_Components::Sprite_Sheet_Info &sheetData, Component::Direction &direction, Action_Component::Action &action) {
+void Update_Frame(entt::registry &zone, entt::entity entity, Component::Scale scale, Rendering_Components::Sprite_Sheet_Info &sheetData, Component::Direction &direction, Action_Component::Action &action) {
 
   action.frameTime += Timer::timeStep;
   if (action.frameState == Action_Component::last) {
@@ -45,7 +45,7 @@ void Update_Frame(entt::entity entity, Component::Scale scale, Rendering_Compone
         action.frameState = Action_Component::mid;
       }
 
-      if (Death_Control::Death_Sequence(entity, sheetData, action, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
+      if (Death_Control::Death_Sequence(zone, entity, sheetData, action, sheetData.flareSpritesheet->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
         return;
       }
       ///render first frame before increment

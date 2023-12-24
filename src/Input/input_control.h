@@ -45,19 +45,27 @@ namespace Input_Control {
     }
   }
 
-  bool Check_For_Mouse_Target(entt::registry &zone, bool showGroundItems, entt::entity &player_ID, Component::Position &playerPosition) {
+  bool Check_For_Mouse_Target(entt::registry &zone, World::GameState &state, bool showGroundItems, entt::entity &player_ID, Component::Position &playerPosition) {
     if (Social_Control::Enemy_Selected(zone, player_ID)) {
-      if (World::zone.any_of<Component::Attacking>(player_ID)) {
+      if (zone.any_of<Component::Attacking>(player_ID)) {
         return true;
       }
     }
     SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
-    Dynamic_Quad_Tree::Entity_Data targetData = Dynamic_Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect);
+    Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect, state);
     if (targetData.b) {
       //      zone.remove<Component::Pickup_Item>(player_ID);
       //      zone.remove<Component::Moving>(player_ID);
       //      zone.remove<Player_Component::Attack_Move>(player_ID);
       ///reset target data
+      if (!zone.any_of<Component::Entity_Type>(targetData.entity_ID)) {
+        std::string name = "no name found";
+        if (zone.any_of<Component::Entity_Type>(targetData.entity_ID)) {
+          name = zone.get<Component::Name>(targetData.entity_ID).first;
+        }
+        std::cout << "object '" << name <<  "' has no type component: " << (int)targetData.entity_ID << std::endl;
+        return false;
+      }
       Component::Entity_Type &type = zone.get<Component::Entity_Type>(targetData.entity_ID);
       Component::Position &targetPosition = zone.get<Component::Position>(targetData.entity_ID);
       Component::Radius &targetRadius = zone.get<Component::Radius>(targetData.entity_ID);

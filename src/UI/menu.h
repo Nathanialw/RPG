@@ -10,6 +10,8 @@
 #include "pause.h"
 #include "ui_elements.h"
 #include <array>
+#include "ui_actionbar.h"
+#include "ui_spellbook.h"
 
 namespace Menu {
 
@@ -159,7 +161,7 @@ namespace Menu {
     return menu.buttons.size() + 1;
   }
 
-  bool Render_Menu(Menu &menus, entt::registry &zone, Component::Camera &camera) {
+  bool Render_Menu(entt::registry &zone, Component::Camera &camera) {
     //pause with no inout
     if (toggleMenu) {
       UI::Overlay(camera.scale);

@@ -7,7 +7,7 @@
 #include "components.h"
 #include "sinister_strike.h"
 #include "ui.h"
-
+#include "cave.h"
 /*
  * make an array of functions for everything that can go onto the hotbar, ie skills
  *
@@ -117,6 +117,24 @@ namespace Hotbar {
     return 0;
   }
 
+  int Enter_Cave(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+    if (World::gamestate != World::GameState::cave) {
+      Cave::Enter_Cave();
+    }
+    return 0;
+  }
+
+  int Exit_Cave(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+    if (World::gamestate != World::GameState::overworld) {
+      Cave::Exit_Cave();
+    }
+    return 0;
+  }
+
+  int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+    return 0;
+  }
+
   Fire::castSpell Spells[] = {
       SetStateAttack2,
       Fire::Cast_Spell,
@@ -126,6 +144,11 @@ namespace Hotbar {
       {SDLK_1, SetStateAttack2},
       {SDLK_2, Sinister_Strike},
       {SDLK_3, Fire::Cast_Spell},
+      {SDLK_4, Enter_Cave},
+      {SDLK_5, Exit_Cave},
+      {SDLK_6, PLACEHOLDER},
+      {SDLK_7, PLACEHOLDER},
+      {SDLK_8, PLACEHOLDER},
       {SDLK_9, Toggle_AI},
       {SDLK_TAB, Tab_Target},
       {SDLK_ESCAPE, Menu_Toggle},

@@ -17,6 +17,8 @@
 #include "ui_spellbook.h"
 #include "utilities.h"
 #include <stddef.h>
+#include "quad_tree.h"
+#include "load_zone.h"
 
 namespace Create_Entities {
 
@@ -56,20 +58,20 @@ namespace Create_Entities {
     std::cout << "failed to assign template key for: " << name << std::endl;
   }
 
-  void Set_Collision_Box(entt::registry &zone, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
+  void Set_Collision_Box(entt::registry &zone, World::GameState &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
     if (entity_class == "polygon") {
-      Collision::Create_Static_Body_Polygon(zone, entity, position.x, position.y, pointVecs);
+      Collision::Create_Static_Body_Polygon(zone, state, entity, position.x, position.y, pointVecs);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
       zone.emplace_or_replace<Component::Line_Segment>(entity, line);
       zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
     } else if (entity_class == "rect") {
-      Collision::Create_Static_Body_Rect(zone, entity, position.x, position.y, aabb);
+      Collision::Create_Static_Body_Rect(zone, state, entity, position.x, position.y, aabb);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
       zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
     } else if (entity_class == "round") {
-      Collision::Create_Static_Body(zone, entity, position.x, position.y, radius);
+      Collision::Create_Static_Body(zone, state, entity, position.x, position.y, radius);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
       zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
@@ -81,7 +83,9 @@ namespace Create_Entities {
     }
   }
 
-  bool Polygon_Building(entt::registry &zone, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
+
+
+  bool Polygon_Building(entt::registry &zone, World::GameState &state, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(name);
 
@@ -116,13 +120,13 @@ namespace Create_Entities {
       sprite.type = sheetDataFlare.sheet_type;
       zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
-      Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+      Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       return true;
     }
     return false;
   }
 
-  bool PVG_Building(entt::registry &zone, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+  bool PVG_Building(entt::registry &zone, World::GameState state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 
@@ -153,24 +157,24 @@ namespace Create_Entities {
       if (data.collider_type == "rect") {
         offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h};
         position.y -= (float) frame.clip.h / 2.0f;
-        Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       } else if (data.collider_type == "polygon") {
         offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h / 2.0f};
-        Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
         position.y -= (float) frame.clip.h / 2.0f;
       } else if (data.collider_type == "round") {
         offset = {data.x_offset, data.y_offset};
         position.x -= frame.x_offset;
         position.y -= frame.y_offset;
-        Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       } else if (data.collider_type == "none") {
         offset = {data.x_offset, data.y_offset};
         position.x -= frame.x_offset;
         position.y -= frame.y_offset;
-        Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       } else {
         Utilities::Log("PVG_Building() no collider_type found for templateName, also prints for blood spawning");
-        Set_Collision_Box(zone, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
 //        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
       }
 
@@ -223,8 +227,9 @@ namespace Create_Entities {
   }
 
   Procedural_Components::Seed seed;
+  bool startup = true;
 
-  void Create_Entity(entt::registry &zone, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player) {
+  void Create_Entity(entt::registry &zone, World::GameState &state, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player) {
     auto entity = zone.create();
     Entity_Loader::Data data;
     int unit_ID = 0;
@@ -322,22 +327,10 @@ namespace Create_Entities {
     //dynamic entities
     if (data.body_type == 1) {
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::S);
-
-      auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
       zone.emplace_or_replace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
-      auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
-      for (int i = 0; i < raceData.size(); i++) {
-        relationships.races[i] = raceData[i + 1];
-      }
-
-      Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
-      if (equip_type != Item_Component::Unit_Equip_Type::none) {
-        zone.emplace_or_replace<Item_Component::Equipment>(entity, equip_type);
-        zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
-      }
 
       bool yes = true;
-      Collision::Create_Dynamic_Body(zone, entity, position.x, position.y, radius.fRadius, data.mass, yes);
+      Collision::Create_Dynamic_Body(zone, state, entity, position.x, position.y, radius.fRadius, data.mass, yes);
       zone.emplace_or_replace<Collision_Component::Dynamic_Collider>(entity);
 
       //do not attach to non combat
@@ -350,19 +343,51 @@ namespace Create_Entities {
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::idle);
       auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
-      auto &health = zone.emplace_or_replace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
+
+      if (!player){
+        auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
+        auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
+        for (int i = 0; i < raceData.size(); i++) {
+          relationships.races[i] = raceData[i + 1];
+        }
+        Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
+        if (equip_type != Item_Component::Unit_Equip_Type::none) {
+          Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
+          zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
+        }
+        zone.emplace_or_replace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
+      }
+      // if this is the first run make these, otherwise copy them
+      else if (startup){
+        startup = false;
+        auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
+        auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
+        for (int i = 0; i < raceData.size(); i++) {
+          relationships.races[i] = raceData[i + 1];
+        }
+        Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
+        if (equip_type != Item_Component::Unit_Equip_Type::none) {
+          Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
+          zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
+        }
+        zone.emplace_or_replace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
+      }
+      else if (state == World::GameState::cave) {
+        Load::Copy_Player(zone, World::zone, state, World::GameState::overworld, entity);
+      }
+      else if (state == World::GameState::overworld) {
+        Load::Copy_Player(zone, World::cave, state, World::GameState::cave, entity);
+      }
+
       zone.emplace_or_replace<Component::Soldier>(entity);
       zone.emplace_or_replace<Component::Commandable>(entity);
       zone.emplace_or_replace<Component::Spellbook>(entity);
 
       if (player) {
-//        health.currentHealth += 200;
-//        health.maxHealth += 200;
         Component::Add_Input_Component(zone, velocity, entity);
         SDL_DisplayMode dm;
         SDL_GetWindowDisplayMode(Graphics::window, &dm);
         auto &camera = zone.emplace_or_replace<Component::Camera>(entity, 0.0f, 0.0f, (float) dm.w, (float) dm.h, Settings::cameraScale, Settings::cameraScale);
-
         zone.emplace_or_replace<Component::Target_Range>(entity, 2000.0f * data.scale, position.x - (2000.0f / 2.0f * data.scale), position.y - (2000.0f / 2.0f * data.scale), 2000.0f * data.scale, 2000.0f * data.scale);
       }
       else {
@@ -374,7 +399,7 @@ namespace Create_Entities {
     else if (data.body_type == 0) {
       /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
-      Collision::Create_Static_Body(zone, entity, position.x, position.y, (data.radius * data.scale));
+      Collision::Create_Static_Body(zone, state, entity, position.x, position.y, (data.radius * data.scale));
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
     }

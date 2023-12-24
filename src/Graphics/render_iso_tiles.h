@@ -1,6 +1,5 @@
 #pragma once
 #include "rendering_components.h"
-#include "map.h"
 
 
 SDL_Rect getTexture(uint32_t x, int &sheetWidth, SDL_Rect &tileSpriteRect) {

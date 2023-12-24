@@ -1,17 +1,17 @@
 #pragma once
 
-#include <SDL2/SDL.h>
-#include "mouse_control.h"
 #include "camera.h"
-#include "graphics.h"
-#include "debug_system.h"
 #include "components.h"
+#include "debug_components.h"
+#include "debug_system.h"
+#include "graphics.h"
+#include "mouse_control.h"
 #include "social_control.h"
+#include "ui_frames.h"
+#include "ui_resources.h"
 #include "ui_unit_control.hpp"
 #include "unit_frames.h"
-#include "ui_resources.h"
-#include "ui_frames.h"
-#include "debug_components.h"
+#include <SDL2/SDL.h>
 
 namespace Interface {
 
@@ -20,10 +20,10 @@ namespace Interface {
     Graphics::Surface_Data mouseX;
     Graphics::Surface_Data mouseY;
     int gridDepth = -1;
-  }
+  }// namespace
 
-  void Update_Zoom(SDL_Event &e) {
-    auto view = World::zone.view<Component::Camera>();
+  void Update_Zoom(entt::registry &zone, SDL_Event &e) {
+    auto view = zone.view<Component::Camera>();
     for (auto focus: view) {
       auto &x = view.get<Component::Camera>(focus).scale;
       if (e.wheel.y > 0) {
@@ -39,20 +39,20 @@ namespace Interface {
         x.x *= 0.9f;
         x.y *= 0.9f;
         if (x.y < 2.0f) {
-//          x.x = 2.0f;
-//          x.y = 2.0f;
+          //          x.x = 2.0f;
+          //          x.y = 2.0f;
         }
         SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
       }
     }
   }
 
-  void Display_Military_Groups() {
-    auto camera_view = World::zone.view<Component::Camera>();
+  void Display_Military_Groups(entt::registry &zone) {
+    auto camera_view = zone.view<Component::Camera>();
     for (auto cameras: camera_view) {
       auto &cam = camera_view.get<Component::Camera>(cameras);
 
-      auto squad_view = World::zone.view<Component::Squad>();
+      auto squad_view = zone.view<Component::Squad>();
       for (auto squads: squad_view) {
         SDL_FRect o = squad_view.get<Component::Squad>(squads).sCollide_Box;
         o.x -= cam.screen.x;
@@ -61,7 +61,7 @@ namespace Interface {
         //SDL_RenderDrawRectF(Graphics::renderer, &o);
       }
 
-      auto platoon_view = World::zone.view<Component::Platoon>();
+      auto platoon_view = zone.view<Component::Platoon>();
       for (auto platoons: platoon_view) {
         auto &platoon = platoon_view.get<Component::Platoon>(platoons);
         SDL_FRect o = platoon.sCollide_Box;
@@ -71,7 +71,7 @@ namespace Interface {
         //SDL_RenderDrawRectF(Graphics::renderer, &o);
       }
 
-      auto company_view = World::zone.view<Component::Company>();
+      auto company_view = zone.view<Component::Company>();
       for (auto companies: company_view) {
         auto &company = company_view.get<Component::Company>(companies);
         SDL_FRect o = company.sCollide_Box;
@@ -83,9 +83,9 @@ namespace Interface {
     }
   }
 
-  void Display_Unit_Formations(Component::Camera &camera) {
+  void Display_Unit_Formations(entt::registry &zone, Component::Camera &camera) {
     int i = 0;
-    auto unitFormations_view = World::zone.view<Test::Unit_Formation_Data>();
+    auto unitFormations_view = zone.view<Test::Unit_Formation_Data>();
     for (auto unitFormation: unitFormations_view) {
       auto &formation = unitFormations_view.get<Test::Unit_Formation_Data>(unitFormation);
 
@@ -93,35 +93,35 @@ namespace Interface {
         case Test::Formation_Type::squad: {
           SDL_SetRenderDrawColor(Graphics::renderer, 0, 55, 255, 125);
         };
-          break;
+            break;
         case Test::Formation_Type::platoon: {
           SDL_SetRenderDrawColor(Graphics::renderer, 0, 55, 155, 125);
         };
-          break;
+            break;
         case Test::Formation_Type::company: {
           SDL_SetRenderDrawColor(Graphics::renderer, 0, 55, 55, 125);
         };
-          break;
+            break;
         case Test::Formation_Type::battalion: {
           SDL_SetRenderDrawColor(Graphics::renderer, 0, 255, 0, 125);
         };
-          break;
+            break;
         case Test::Formation_Type::brigade: {
           SDL_SetRenderDrawColor(Graphics::renderer, 0, 155, 0, 125);
         };
-          break;
+            break;
         case Test::Formation_Type::division: {
           SDL_SetRenderDrawColor(Graphics::renderer, 55, 55, 0, 125);
         };
-          break;
+            break;
         case Test::Formation_Type::corps: {
           SDL_SetRenderDrawColor(Graphics::renderer, 155, 55, 0, 125);
         };
-          break;
+            break;
         case Test::Formation_Type::army: {
           SDL_SetRenderDrawColor(Graphics::renderer, 255, 55, 0, 125);
         };
-          break;
+            break;
       }
 
       SDL_FRect renderRectScreen = formation.sCollide_Box;
@@ -133,9 +133,9 @@ namespace Interface {
     //std::cout << i << std::endl;
   }
 
-  void Display_Selected() {
-    auto view1 = World::zone.view<Component::Camera>();
-    auto view = World::zone.view<Component::Selected, Component::Position, Component::Radius>();
+  void Display_Selected(entt::registry &zone) {
+    auto view1 = zone.view<Component::Camera>();
+    auto view = zone.view<Component::Selected, Component::Position, Component::Radius>();
 
     for (auto focus: view1) {
       auto &camera = view1.get<Component::Camera>(focus);
@@ -146,7 +146,7 @@ namespace Interface {
 
         SDL_Color color;
 
-        if (Social_Control::Check_Relationship(World::zone, focus, entity)) {
+        if (Social_Control::Check_Relationship(zone, focus, entity)) {
           //	  red if enemy
           color = {255, 55, 55};
         } else {
@@ -156,7 +156,6 @@ namespace Interface {
 
         SDL_FRect frect = {position.x - radius.fRadius, position.y, radius.fRadius * 2, radius.fRadius};
         UI_Unit_Control::Loop_Sprite(selector, frect, color, camera);
-
       }
     }
   }
@@ -169,18 +168,18 @@ namespace Interface {
     }
   }
 
-  void Display_Mouse() {
-    auto view = World::zone.view<Component::Camera>();
+  void Display_Mouse(entt::registry &zone) {
+    auto view = zone.view<Component::Camera>();
     for (auto focus: view) {
       auto &componentCamera = view.get<Component::Camera>(focus);
 
       SDL_Rect srcRect = {0, 0, 32, 32};
       SDL_FRect d = {Mouse::iXMouse, Mouse::iYMouse, 32.0f / componentCamera.scale.x, 32.0f / componentCamera.scale.y};
-      SDL_RenderCopyF(Graphics::renderer, World::zone.get<Component::Icon>(Mouse::cursor_ID).pBackground, &srcRect, &d);
+      SDL_RenderCopyF(Graphics::renderer, zone.get<Component::Icon>(Mouse::cursor_ID).pBackground, &srcRect, &d);
     }
   }
 
-  void Show_Grid(Map::Node3 &terrain) {
+  void Show_Grid(entt::registry &zone, Map::Node3 &terrain) {
     SDL_SetRenderDrawColor(Graphics::renderer, 255, 155, 255, 255);
 
     if (gridDepth > 3) {
@@ -189,7 +188,7 @@ namespace Interface {
     if (gridDepth < -1) {
       gridDepth = -1;
     } else {
-      auto view = World::zone.view<Component::Camera>();
+      auto view = zone.view<Component::Camera>();
 
       for (auto id: view) {
         auto &camera = view.get<Component::Camera>(id);
@@ -247,10 +246,10 @@ namespace Interface {
     }
   }
 
-  void Show_Attacks() {
+  void Show_Attacks(entt::registry &zone) {
     SDL_SetRenderDrawColor(Graphics::renderer, 155, 155, 55, 255);
-    auto weapon_view = World::zone.view<Component::Weapon_Size>();
-    auto camera_view = World::zone.view<Component::Camera>();
+    auto weapon_view = zone.view<Component::Weapon_Size>();
+    auto camera_view = zone.view<Component::Camera>();
     for (auto camera: camera_view) {
       auto &cam = camera_view.get<Component::Camera>(camera);
       SDL_FRect offset = cam.screen;
@@ -264,9 +263,9 @@ namespace Interface {
     }
   }
 
-  void Unit_Arrive_UI() {
-    auto view = World::zone.view<Component::Mouse_Move>();
-    auto view2 = World::zone.view<Component::Camera>();
+  void Unit_Arrive_UI(entt::registry &zone) {
+    auto view = zone.view<Component::Mouse_Move>();
+    auto view2 = zone.view<Component::Camera>();
     for (auto camera: view2) {
       auto &cam = view2.get<Component::Camera>(camera);
       for (auto entity: view) {
@@ -278,8 +277,8 @@ namespace Interface {
     }
   }
 
-  void Background() {
-    Display_Selected();
+  void Background(entt::registry &zone) {
+    Display_Selected(zone);
   }
 
   void Init_UI(f2 scale) {
@@ -289,17 +288,17 @@ namespace Interface {
   }
 
   void Foreground(entt::registry &zone, Component::Camera &camera) {
-//    Show_Grid(Map::terrain);
+    //    Show_Grid(Map::terrain);
     //Display_Military_Groups();
     //Display_Unit_Formations(camera);
     UI_Frames::Show_Menu_Frame(zone, camera);
     Unit_Frames::Show_Frames(zone, camera);
     UI_Resources::Show_Frames(zone, camera);
-    Debug_System::Framerate(camera);
+    Debug_System::Framerate(zone, camera);
     //Unit_Arrive_UI();
-    Display_Mouse();
+    Display_Mouse(zone);
     Display_Selection_Box();
-    Debug_System::Debug_Positions();
+    Debug_System::Debug_Positions(zone);
     //Show_Attacks();
   }
-}
+}// namespace Interface

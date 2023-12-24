@@ -3,6 +3,7 @@
 #include "SDL2/SDL.h"
 #include "utilities.h"
 #include <map>
+#include "ui.h"
 
 namespace Menu_Options {
 

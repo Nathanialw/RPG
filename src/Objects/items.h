@@ -1,16 +1,16 @@
 #pragma once
 
-#include <vector>
-#include "world.h"
-#include "components.h"
-#include "item_components.h"
-#include "graphics.h"
-#include "utilities.h"
-#include "camera.h"
-#include "mouse_control.h"
-#include "texture_packer_item.h"
 #include "SQLite_item_data.h"
 #include "SQLite_spritesheets.h"
+#include "camera.h"
+#include "components.h"
+#include "graphics.h"
+#include "item_components.h"
+#include "mouse_control.h"
+#include "texture_packer_item.h"
+#include "utilities.h"
+#include "world.h"
+#include <vector>
 
 using namespace Item_Component;
 
@@ -119,7 +119,7 @@ namespace Items {
     return color;
   }
 
-  std::string Create_Weapon(entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type,  Item_Component::Item item_name, SDL_Color color) {
+  std::string Create_Weapon(entt::registry &zone, entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
     auto material = Generate_Weapon_Material();
     auto weaponType = Generate_Weapon_Type();
 
@@ -128,13 +128,13 @@ namespace Items {
     std::string weaponName = materialType + " " + weapon;
     std::string slot = "mainhand";
 
-    auto &type = World::zone.emplace_or_replace<Item_Type>(item, Item_Type::mainhand);
-    World::zone.emplace_or_replace<Rarity>(item, rarity);
+    auto &type = zone.emplace_or_replace<Item_Type>(item, Item_Type::mainhand);
+    zone.emplace_or_replace<Rarity>(item, rarity);
 
     Texture_Packer_Item::Get_Item_Portrait_exture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
     Texture_Packer_Item::Get_Item_Body_Texture(item_name.name, ("assets/" + item_name.body_pngPath).c_str());
-    World::zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
-    World::zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
+    zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
+    zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
 
     ///create the weapon from the db
     ///add to std::map
@@ -154,32 +154,33 @@ namespace Items {
 
     SDL_Rect sprite = {column * size, row * size, size, size};
 
-    auto &sheetData = World::zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
+    auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
     sheetData.sheet_name = equippedSheetData.index;
 
-    auto &icon = World::zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
     icon.clipSprite = sprite;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
 
-    World::zone.emplace_or_replace<Weapon_Damage>(item, 1, 10);
+    zone.emplace_or_replace<Weapon_Damage>(item, 1, 10);
     return equippedSheetData.index;
   }
 
-  std::string Create_Offhand(entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, std::string &item_name) {
+  std::string Create_Offhand(entt::registry &zone, entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, std::string &item_name) {
     auto material = Generate_Weapon_Material();
-    auto offhandType = Item_Component::Offhand_Type::shield;;
+    auto offhandType = Item_Component::Offhand_Type::shield;
+    ;
 
     std::string materialType = weaponMaterialName[material];
     std::string offhand = offhandTypeName[offhandType];
     std::string offhandName = materialType + " " + offhand;
     std::string slot = "offhand";
 
-    auto &type = World::zone.emplace_or_replace<Item_Type>(item, Item_Type::offhand);
-    World::zone.emplace_or_replace<Rarity>(item, rarity);
+    auto &type = zone.emplace_or_replace<Item_Type>(item, Item_Type::offhand);
+    zone.emplace_or_replace<Rarity>(item, rarity);
 
     ///create the weapon from the db
     ///add to std::map
@@ -200,29 +201,29 @@ namespace Items {
     SDL_Rect sprite = {column * size, row * size, size, size};
 
 
-    auto &sheetData = World::zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
+    auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
     sheetData.sheet_name = equippedSheetData.index;
 
-    auto &icon = World::zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
     icon.clipSprite = sprite;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
 
-    World::zone.emplace_or_replace<Weapon_Damage>(item, 1, 10);
+    zone.emplace_or_replace<Weapon_Damage>(item, 1, 10);
     return equippedSheetData.index;
   }
 
-  std::string Create_Specific_Armor(entt::entity &item, Rarity &rarity, Item_Type itemType, Armor_Type armorType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item &item_name, SDL_Color &color) {
-    //        Armor_Type armorType = Generate_Armor_Type();
 
+  std::string Create_Specific_Armor(entt::registry &zone, entt::entity &item, Rarity &rarity, Item_Type itemType, Armor_Type armorType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item &item_name, SDL_Color &color) {
+    //        Armor_Type armorType = Generate_Armor_Type();
     std::string type = ItemTypeName[itemType];
     std::string armor = ArmorTypeName[armorType];
-    std::string itemName = armor + " " + type;  //ei. "Copper Pants" not implemented yet
-    World::zone.emplace_or_replace<Item_Type>(item, itemType);
-    World::zone.emplace_or_replace<Rarity>(item, rarity);
+    std::string itemName = armor + " " + type;//ei. "Copper Pants" not implemented yet
+    zone.emplace_or_replace<Item_Type>(item, itemType);
+    zone.emplace_or_replace<Rarity>(item, rarity);
     int column = itemTypes[itemType];
     int row = armorTypes[armorType];
     int size = 64;
@@ -230,8 +231,8 @@ namespace Items {
 
     Texture_Packer_Item::Get_Item_Portrait_exture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
     Texture_Packer_Item::Get_Item_Body_Texture(item_name.name, ("assets/" + item_name.body_pngPath).c_str());
-    World::zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
-    World::zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
+    zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
+    zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
 
     Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
     equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type, equip_type, item_name.name);
@@ -239,13 +240,13 @@ namespace Items {
       return "none";
     }
 
-    auto &sheetData = World::zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
+    auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
     sheetData.color = color;
     sheetData.sheet_name = equippedSheetData.index;
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
 
-    auto &icon = World::zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
+    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
     icon.clipSprite = sprite;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
@@ -253,18 +254,18 @@ namespace Items {
     return equippedSheetData.index;
   }
 
-  void Create_Item(entt::entity &item, Component::Position &position, const std::string &name, Item_Stats &itemStats, Component::Direction &direction) {
+  void Create_Item(entt::registry &zone, entt::entity &item, Component::Position &position, const std::string &name, Item_Stats &itemStats, Component::Direction &direction) {
     float scale = 0.7f;
 
-    World::zone.emplace_or_replace<Component::Scale>(item, scale);
-    World::zone.emplace_or_replace<Action_Component::Action>(item, Action_Component::dying);
-    World::zone.emplace_or_replace<Component::Direction>(item, direction);
-    World::zone.emplace_or_replace<Name>(item, name);
-    World::zone.emplace_or_replace<Component::Entity_Type>(item, Component::Entity_Type::item);
-    auto &stats = World::zone.emplace_or_replace<Item_Stats>(item);
+    zone.emplace_or_replace<Component::Scale>(item, scale);
+    zone.emplace_or_replace<Action_Component::Action>(item, Action_Component::dying);
+    zone.emplace_or_replace<Component::Direction>(item, direction);
+    zone.emplace_or_replace<Name>(item, name);
+    zone.emplace_or_replace<Component::Entity_Type>(item, Component::Entity_Type::item);
+    auto &stats = zone.emplace_or_replace<Item_Stats>(item);
     stats = itemStats;
-    auto &offset = World::zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(item, 90.0f, 130.0f);
-    auto &position2 = World::zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
+    auto &offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(item, 90.0f, 130.0f);
+    auto &position2 = zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
   }
 
   statValue Get_Random_Stat() {
@@ -338,79 +339,77 @@ namespace Items {
     }
     //        std::cout << "Choose_Item() fallthrough error, failed to select and item type, returned default" << std::endl;
     return "Create_Armor(item, rarity)";
-
   }
 
-  void Create_And_Drop_Item(Component::Position &position, Component::Direction &direction) {
+  void Create_And_Drop_Item(entt::registry &zone, Component::Position &position, Component::Direction &direction) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
-    auto item_uID = World::zone.create();
+    auto item_uID = zone.create();
     std::string itemName = Choose_Item(item_uID, rarity);
     if (itemName == "none") {
-      World::zone.destroy(item_uID);
+      zone.destroy(item_uID);
       Utilities::Log("no drop");
       return;
-
     }
     //	int item = rand() % 100 + 1;
     //	if (item <= 10) { Create_Item(item, position, rarity, "sword", Item_Type::weapon, Weapon_Type::sword, Graphics::longsword_default, Graphics::longsword_default_icon, itemStats); }
     //	else if (item <= 12) { Create_Item(item, position, rarity, "padded armour", Item_Type::chest, Armor_Type::cloth, Graphics::armorSpriteSheet, Graphics::armorSpriteSheet, itemStats); }
-    Create_Item(item_uID, position, itemName, itemStats, direction);
+    Create_Item(zone, item_uID, position, itemName, itemStats, direction);
   }
 
-  void Create_Item1(entt::entity &item, Component::Position &position, const std::string &name, Item_Stats &itemStats) {
+  void Create_Item1(entt::registry &zone, entt::entity &item, Component::Position &position, const std::string &name, Item_Stats &itemStats) {
     float scale = 0.7f;
-    World::zone.emplace_or_replace<Component::Scale>(item, scale);
-    World::zone.emplace_or_replace<Action_Component::Action>(item, Action_Component::isStatic);
-    World::zone.emplace_or_replace<Name>(item, name);
-    World::zone.emplace_or_replace<Component::Entity_Type>(item, Component::Entity_Type::item);
-    auto &stats = World::zone.emplace_or_replace<Item_Stats>(item);
-    stats = itemStats;
-    auto &offset = World::zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(item, 100.0f, 100.0f);
-    auto &position2 = World::zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
+    zone.emplace_or_replace<Component::Scale>(item, scale);
+    zone.emplace_or_replace<Action_Component::Action>(item, Action_Component::isStatic);
+    zone.emplace_or_replace<Component::Entity_Type>(item, Component::Entity_Type::item);
+    zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(item, 100.0f, 100.0f);
+
+    zone.emplace_or_replace<Item_Stats>(item) = itemStats;
+    zone.emplace_or_replace<Name>(item, name);
+    zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
   }
 
-  entt::entity Create_And_Equip_Weapon(Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
+  entt::entity Create_And_Equip_Weapon(entt::registry &zone, World::GameState &state, Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
-    auto item_uID = World::zone.create();
-    std::string itemName = Create_Weapon(item_uID, rarity, equip_type, item_name, color);
+    auto item_uID = zone.create();
+    std::string itemName = Create_Weapon(zone, item_uID, rarity, equip_type, item_name, color);
     if (itemName == "none") {
-      World::zone.destroy(item_uID);
+      zone.destroy(item_uID);
       //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
-      return Item_Component::emptyEquipSlot;
+      return Item_Component::emptyEquipSlot[state];
     }
-    Create_Item1(item_uID, position, itemName, itemStats);
+    Create_Item1(zone, item_uID, position, itemName, itemStats);
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Offhand(Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, std::string item_name) {
+  entt::entity Create_And_Equip_Offhand(entt::registry &zone, World::GameState &state, Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, std::string item_name) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
-    auto item_uID = World::zone.create();
-    std::string itemName = Create_Offhand(item_uID, rarity, equip_type, item_name);
+    auto item_uID = zone.create();
+    std::string itemName = Create_Offhand(zone, item_uID, rarity, equip_type, item_name);
     if (itemName == "none") {
-      World::zone.destroy(item_uID);
+      zone.destroy(item_uID);
       //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
-      return Item_Component::emptyEquipSlot;
+      return Item_Component::emptyEquipSlot[state];
     }
-    Create_Item1(item_uID, position, itemName, itemStats);
+    Create_Item1(zone, item_uID, position, itemName, itemStats);
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Armor(Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
+  entt::entity Create_And_Equip_Armor(entt::registry &zone, World::GameState &state, Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     Armor_Type armorType = Items::Generate_Armor_Type();
 
-    auto item_uID = World::zone.create();
-    std::string itemName = Create_Specific_Armor(item_uID, rarity, itemType, armorType, equip_type, item_name, color);
+    auto item_uID = zone.create();
+    std::string itemName = Create_Specific_Armor(zone, item_uID, rarity, itemType, armorType, equip_type, item_name, color);
     if (itemName == "none") {
-      World::zone.destroy(item_uID);
+      zone.destroy(item_uID);
       Utilities::Log("Create_And_Equip_Armor() " + itemName + " no item in db, no item has been created");
-      return Item_Component::emptyEquipSlot;
+      return Item_Component::emptyEquipSlot[state];
     } else {
-      Create_Item1(item_uID, position, itemName, itemStats);
+      Create_Item1(zone, item_uID, position, itemName, itemStats);
       Utilities::Log("Create_And_Equip_Armor() " + itemName + " item has successfully been created");
       return item_uID;
     }
@@ -420,7 +419,7 @@ namespace Items {
   //walk over to item
   //when arrived at item pick it up into mouse array
   void Hightlight_Item_Under_Cursor(SDL_FRect &itemRect) {
-    if (Mouse::bRect_inside_Cursor(itemRect)) { //if cursor in inside item text box
+    if (Mouse::bRect_inside_Cursor(itemRect)) {//if cursor in inside item text box
       //then change the background color of that box to another shade
       SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 155, 155);
     } else {
@@ -561,114 +560,109 @@ namespace Items {
 
     rarityColor = {
         {Rarity::common, {255, 255, 255, 200}},
-        {Rarity::magic,  {51,  153, 255, 255}},
-        {Rarity::rare,   {255, 128, 0,   255}},
-        {Rarity::unique, {255, 20,  20,  255}},
+        {Rarity::magic, {51, 153, 255, 255}},
+        {Rarity::rare, {255, 128, 0, 255}},
+        {Rarity::unique, {255, 20, 20, 255}},
     };
 
     rarityBorder = {
         {Rarity::common, Graphics::itemBorderCommon},
-        {Rarity::magic,  Graphics::itemBorderMagic},
-        {Rarity::rare,   Graphics::itemBorderRare},
+        {Rarity::magic, Graphics::itemBorderMagic},
+        {Rarity::rare, Graphics::itemBorderRare},
         {Rarity::unique, Graphics::itemBorderEite},
     };
 
     itemTypes = {
-        {Item_Type::helm,    0},
-        {Item_Type::chest,   1},
-        {Item_Type::gloves,  2},
-        {Item_Type::legs,    3},
-        {Item_Type::boots,   4},
+        {Item_Type::helm, 0},
+        {Item_Type::chest, 1},
+        {Item_Type::gloves, 2},
+        {Item_Type::legs, 3},
+        {Item_Type::boots, 4},
         //{Item_Type::neck, 1},
         //{Item_Type::shoulders, 2},
         //{Item_Type::belt, 6},
-        {Item_Type::hair,    5},
-        {Item_Type::kilt,    6},
-        {Item_Type::offhand, 7}
-    };
+        {Item_Type::hair, 5},
+        {Item_Type::kilt, 6},
+        {Item_Type::offhand, 7}};
 
     armorTypes = {
-        {Armor_Type::cloth,   0},
-        {Armor_Type::padded,  1},
+        {Armor_Type::cloth, 0},
+        {Armor_Type::padded, 1},
         {Armor_Type::leather, 2},
-        {Armor_Type::mail,    3},
-        {Armor_Type::plate,   4}
-    };
+        {Armor_Type::mail, 3},
+        {Armor_Type::plate, 4}};
 
     weaponTypes = {
         {Weapon_Type::sword, 0},
-        {Weapon_Type::axe,   1},
-        {Weapon_Type::mace,  2},
-        {Weapon_Type::spear, 3}
-    };
+        {Weapon_Type::axe, 1},
+        {Weapon_Type::mace, 2},
+        {Weapon_Type::spear, 3}};
 
     offhandTypes = {
         {Offhand_Type::dagger, 0},
-        {Offhand_Type::kama,   1},
+        {Offhand_Type::kama, 1},
         {Offhand_Type::shield, 2},
     };
 
     weaponMaterials = {
         {Weapon_Material::copper, 0},
         {Weapon_Material::bronze, 1},
-        {Weapon_Material::iron,   2},
+        {Weapon_Material::iron, 2},
     };
 
     ArmorTypeName = {
-        {Item_Component::Armor_Type::cloth,   "cloth"},
-        {Item_Component::Armor_Type::padded,  "padded"},
+        {Item_Component::Armor_Type::cloth, "cloth"},
+        {Item_Component::Armor_Type::padded, "padded"},
         {Item_Component::Armor_Type::leather, "leather"},
-        {Item_Component::Armor_Type::mail,    "mail"},
-        {Item_Component::Armor_Type::plate,   "plate"}
-    };
+        {Item_Component::Armor_Type::mail, "mail"},
+        {Item_Component::Armor_Type::plate, "plate"}};
 
     ItemTypeName = {
-        {Item_Component::Item_Type::helm,   "helm"},
-        {Item_Component::Item_Type::chest,  "chest"},
+        {Item_Component::Item_Type::helm, "helm"},
+        {Item_Component::Item_Type::chest, "chest"},
         {Item_Component::Item_Type::gloves, "gloves"},
-        {Item_Component::Item_Type::legs,   "legs"},
-        {Item_Component::Item_Type::boots,  "boots"},
-        {Item_Component::Item_Type::hair,   "hair"},
-        {Item_Component::Item_Type::kilt,   "kilt"},
+        {Item_Component::Item_Type::legs, "legs"},
+        {Item_Component::Item_Type::boots, "boots"},
+        {Item_Component::Item_Type::hair, "hair"},
+        {Item_Component::Item_Type::kilt, "kilt"},
     };
 
     weaponMaterialName = {
         {Item_Component::Weapon_Material::copper, "copper"},
         {Item_Component::Weapon_Material::bronze, "bronze"},
-        {Item_Component::Weapon_Material::iron,   "iron"},
+        {Item_Component::Weapon_Material::iron, "iron"},
     };
 
     weaponTypeName = {
         {Item_Component::Weapon_Type::sword, "sword"},
-        {Item_Component::Weapon_Type::axe,   "axe"},
-        {Item_Component::Weapon_Type::mace,  "mace"},
-        {Item_Component::Weapon_Type::spear, "polearm"}
-    };
+        {Item_Component::Weapon_Type::axe, "axe"},
+        {Item_Component::Weapon_Type::mace, "mace"},
+        {Item_Component::Weapon_Type::spear, "polearm"}};
 
     offhandTypeName = {
         {Item_Component::Offhand_Type::dagger, "dagger"},
-        {Item_Component::Offhand_Type::kama,   "kama"},
+        {Item_Component::Offhand_Type::kama, "kama"},
         {Item_Component::Offhand_Type::shield, "shield"},
     };
 
     baseStatData = {
-        {Item_Component::Stat::health,      100},
-        {Item_Component::Stat::damage,      2},
+        {Item_Component::Stat::health, 100},
+        {Item_Component::Stat::damage, 2},
         {Item_Component::Stat::spellDamage, 1},
-        {Item_Component::Stat::armor,       100},
-        {Item_Component::Stat::piety,       10},
+        {Item_Component::Stat::armor, 100},
+        {Item_Component::Stat::piety, 10},
         {Item_Component::Stat::attackSpeed, 500},
     };
 
     statData = baseStatData;
 
     statName = {
-        {Item_Component::Stat::health,      "Health"},
-        {Item_Component::Stat::damage,      "Damage"},
+        {Item_Component::Stat::health, "Health"},
+        {Item_Component::Stat::damage, "Damage"},
         {Item_Component::Stat::spellDamage, "Spell Damage"},
-        {Item_Component::Stat::armor,       "Armour"},
-        {Item_Component::Stat::piety,       "Piety"},
+        {Item_Component::Stat::armor, "Armour"},
+        {Item_Component::Stat::piety, "Piety"},
         {Item_Component::Stat::attackSpeed, "Attack Speed"},
     };
   }
-}
+}// namespace Items

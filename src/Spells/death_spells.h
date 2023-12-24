@@ -12,7 +12,7 @@ namespace Death_Spells {
   /*
   The x and y can be got rid of and the Position components can be updated elswhere; no reason to couple like that here
   */
-  void Summon_Skeleton(entt::registry &zone, float x, float y, std::string name) {
+  void Summon_Skeleton(entt::registry &zone, World::GameState &state, float x, float y, std::string name) {
 
     int i = rand() % 10 + 1;
     int j = rand() % 10 + 1;
@@ -64,7 +64,7 @@ namespace Death_Spells {
     zone.emplace_or_replace<Component::Entity_Type>(skeleton0, Component::Entity_Type::unit);
 
     bool yes = true;
-    Collision::Create_Dynamic_Body(zone, skeleton0, position.x, position.y, data.radius, data.mass, yes);
+    Collision::Create_Dynamic_Body(zone, state, skeleton0, position.x, position.y, data.radius, data.mass, yes);
   }
 
 }

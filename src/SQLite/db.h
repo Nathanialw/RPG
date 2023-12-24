@@ -19,7 +19,7 @@ namespace db {
   std::string Convert_Char(std::string column, const unsigned char *e) {
     const char *f = (const char *) e;
     if (f == NULL) {
-      Utilities::Log("db::Convert_Char() \"" + column + "\" from DB NULL value, passthrough error");
+//      Utilities::Log("db::Convert_Char() \"" + column + "\" from DB NULL value, passthrough error");
       return "";
     }
     return std::string(reinterpret_cast< const char *> (e));

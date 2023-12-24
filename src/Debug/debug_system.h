@@ -1,15 +1,8 @@
 #pragma once
 
-#include "camera.h"
-#include "components.h"
 #include "debug_components.h"
-#include "graphics.h"
-#include "mouse_control.h"
 #include "scene.h"
-#include "sstream"
-#include "timer.h"
-#include <SDL2/SDL_render.h>
-#include <algorithm>
+#include "camera.h"
 
 using namespace Scene;
 
@@ -80,14 +73,14 @@ namespace Debug_System {
     }
   }
 
-  void Update_Settings() {
-    Debug::settingsValue[Debug::EntityCount] = World::zone.capacity();
-    Debug::settingsValue[Debug::RenderComponent] = World::zone.view<Component::Renderable>().size();
-    Debug::settingsValue[Debug::TreeSize] = World::zone.view<Component::Interaction_Rect>().size();
+  void Update_Settings(entt::registry &zone) {
+    Debug::settingsValue[Debug::EntityCount] = zone.capacity();
+    Debug::settingsValue[Debug::RenderComponent] = zone.view<Component::Renderable>().size();
+    Debug::settingsValue[Debug::TreeSize] = zone.view<Component::Interaction_Rect>().size();
   }
 
-  void Framerate(Component::Camera &camera) {
-    Update_Settings();
+  void Framerate(entt::registry &zone, Component::Camera &camera) {
+    Update_Settings(zone);
     if (Debug::settings[Debug::Settings::Framerate]) {
       iFramePollRate += Timer::timeStep;
       if (iFramePollRate >= 400.0f) {
@@ -109,10 +102,10 @@ namespace Debug_System {
     }
   }
 
-  void Debug_Positions() {
+  void Debug_Positions(entt::registry &zone) {
     if (Debug::settings[Debug::Settings::entityPositions]) {
-      auto view1 = World::zone.view<Component::Camera>();
-      auto view = World::zone.view<Component::Position, Component::Renderable>();
+      auto view1 = zone.view<Component::Camera>();
+      auto view = zone.view<Component::Position, Component::Renderable>();
 
       for (auto focus: view1) {
         auto &camera = view1.get<Component::Camera>(focus);

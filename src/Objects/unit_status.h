@@ -44,7 +44,7 @@ namespace Unit_Status {
     }
   }
 
-  void Update_Health(entt::registry &zone) {
+  void Update_Health(entt::registry &zone, World::GameState &state) {
     auto view2 = zone.view<Component::Position, Component::Health, Component::Struck>();
     for (auto entity: view2) {
       auto &struck = view2.get<Component::Struck>(entity);
@@ -57,7 +57,7 @@ namespace Unit_Status {
       if (struck.critical) {
         //reset crit state
         struck.critical = false;
-        Blood::Splatter(zone, position);
+        Blood::Splatter(zone, state, position);
       }
 
       //if the soldier is in the assignment vector it will be set as dying if it dies
@@ -95,11 +95,11 @@ namespace Unit_Status {
     //		}
   }
 
-  void Update_Unit_Status(entt::registry &zone) {
+  void Update_Unit_Status(entt::registry &zone, World::GameState &state) {
     Items::Item_Collision(zone);
     Update_Collided_Unit(zone);
-    Update_Health(zone);
-    Death_Control::isDead(zone);
-    Death_Control::Dead_Entity_Routine(zone);
+    Update_Health(zone, state);
+    Death_Control::isDead(zone, state);
+    Death_Control::Dead_Entity_Routine(zone, state);
   }
 }
