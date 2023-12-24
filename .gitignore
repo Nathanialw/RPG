@@ -24,3 +24,4 @@ release
 .ninja_deps
 .ninja_log
 build.ninja
+/include/entt/OLDentt.hpp
