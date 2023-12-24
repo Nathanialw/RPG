@@ -35,6 +35,14 @@ namespace Maps {
     World::tileSets[(int)World::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_2.png"));
     World::tileSets[(int)World::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_3.png"));
     World::tileSets[(int)World::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_4.png"));
+
+    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
+    World::tileSets[(int)World::Tile_Type::volcanic].emplace_back(Graphics::createTexture("assets/sprites/environment/volcanic/Volcanic_7_Tile.png"));
+//    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
+//    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
+//    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
+//    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
+
     //    World::tileSets[(int)World::Tile_Type::grass][1] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_1.png");
     //    World::tileSets[(int)World::Tile_Type::grass][2] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_2.png");
     //    World::tileSets[(int)World::Tile_Type::grass][3] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_3.png");
@@ -123,33 +131,33 @@ namespace Maps {
   }
 
   std::vector<bool> tiles = {};
-
-  void Renders(Component::Camera &camera) {
-    //generate objects only the tiles around the player
-    //plug that in as the index ranges
-    int x = 0;
-    int y = 0;
-    Get_Coords(camera.screen.x, x);
-    Get_Coords(camera.screen.y, y);
-
-    for (int i = x; i <= (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
-      for (int j = y; j <= (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
-        if (i < 0 || j < 0 || j > 127 || i > 255) {
-          continue;
-        }
-        SDL_FRect tile = World::Game_Map[i][j].position;
-
-        SDL_FRect renderRect;
-        renderRect.x = tile.x - camera.screen.x;
-        renderRect.y = tile.y - camera.screen.y;
-        renderRect.w = World::size.width;
-        renderRect.h = World::size.height;
-
-        SDL_Texture *texture = World::tileSets[(int)World::Tile_Type::grass][World::Game_Map[i][j].tile];
-        SDL_RenderCopyF(Graphics::renderer, texture, NULL, &renderRect);
-      }
-    }
-  }
+//
+//  void Renders(Component::Camera &camera) {
+//    //generate objects only the tiles around the player
+//    //plug that in as the index ranges
+//    int x = 0;
+//    int y = 0;
+//    Get_Coords(camera.screen.x, x);
+//    Get_Coords(camera.screen.y, y);
+//
+//    for (int i = x; i <= (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
+//      for (int j = y; j <= (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
+//        if (i < 0 || j < 0 || j > 127 || i > 255) {
+//          continue;
+//        }
+//        SDL_FRect tile = World::Game_Map[i][j].position;
+//
+//        SDL_FRect renderRect;
+//        renderRect.x = tile.x - camera.screen.x;
+//        renderRect.y = tile.y - camera.screen.y;
+//        renderRect.w = World::size.width;
+//        renderRect.h = World::size.height;
+//
+//        SDL_Texture *texture = World::tileSets[(int)World::Tile_Type::grass][World::Game_Map[i][j].tile];
+//        SDL_RenderCopyF(Graphics::renderer, texture, NULL, &renderRect);
+//      }
+//    }
+//  }
 
   void Generate_Map() {
     int x = 0;
@@ -194,8 +202,9 @@ namespace Maps {
           x = Procedural_Generation::Random_Int(0, (int) World::size.width, seed);
           y = Procedural_Generation::Random_Int(0, (int) World::size.height, seed);
 
-          int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::units["wolves"].size() - 1, seed);
-          db::Unit_Data data = Game_Objects_Lists::units["wolves"][n];
+          int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::units["demons"].size(), seed);
+          n -= 1;
+          db::Unit_Data data = Game_Objects_Lists::units["demons"][n];
           Create_Entities::Create_Entity(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, "", false, data, false);
           numUnits++;
         }
@@ -236,7 +245,7 @@ namespace Maps {
     }
   }
 
-  void Render(entt::registry &zone, World::GameState &state, Component::Camera &camera, World::Tile_Type tileType) {
+  void Render(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
     int x = 0;
     int y = 0;
 
@@ -249,7 +258,7 @@ namespace Maps {
           // generate tile type
           Procedural_Components::Seed seed;
           seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
-          int textureArraySize = 5;
+          int textureArraySize = World::tileSets[(int)World::tileType[state]].size();
           int tile = Procedural_Generation::Random_Int(0, textureArraySize, seed);
 
           SDL_FRect rect;
@@ -257,7 +266,7 @@ namespace Maps {
           rect.y = j * World::size.height;
           rect.w = World::size.width;
           rect.h = World::size.height;
-          SDL_Texture *texture = World::tileSets[(int)tileType][tile];
+          SDL_Texture *texture = World::tileSets[(int)World::tileType[state]][tile];
           //                if entities created do nothing
           if (tilesEntities[i][j].created) {
 

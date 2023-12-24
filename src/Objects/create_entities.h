@@ -182,10 +182,37 @@ namespace Create_Entities {
       auto &radius = zone.emplace_or_replace<Component::Radius>(entity, data.radius);
       zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius.fRadius), (y - 10.0f / 2.0f), (radius.fRadius * 2.0f), 10.0f);
 
+      if (templateName == "Rock_3_1" ||
+          templateName == "Rock_3_2" ||
+          templateName == "Rock_3_3" ||
+          templateName == "Rock_3_4" ||
+          templateName == "Rock_3_5" ||
+          templateName == "Rock_3_6" ||
+          templateName == "Rock_3_7" ||
+          templateName == "Rock_3_8" ||
+          templateName == "Rock_2_1" ||
+          templateName == "Rock_2_2" ||
+          templateName == "Rock_2_3" ||
+          templateName == "Rock_2_4" ||
+          templateName == "Rock_2_5" ||
+          templateName == "Rock_2_6" ||
+          templateName == "Rock_2_7" ||
+          templateName == "Rock_2_8") {
+          auto &gg = zone.emplace_or_replace<Component::Dungeon>(entity);
+          gg.load = templateName;
+          zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::portal);
+      }
+
+      auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
+      auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
+      for (int i = 0; i < raceData.size(); i++) {
+        relationships.races[i] = raceData[i + 1];
+      }
       zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
       zone.emplace_or_replace<Component::Name>(entity, templateName);
       zone.emplace_or_replace<Component::Mass>(entity, 100.0f);
       zone.emplace_or_replace<Component::Alive>(entity, true);
+      zone.emplace_or_replace<Rendering_Components::Unit_Frame_Portrait>(entity);
       zone.emplace_or_replace<Component::Health>(entity, 100, 100);
 
       if (i != x && j != y) {
@@ -302,8 +329,7 @@ namespace Create_Entities {
     zone.emplace_or_replace<Component::Unit>(entity);
     zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
 
-    auto &full_name = zone.emplace_or_replace<Component::Name>(entity);
-    Character_Data::Get_Name(full_name);
+
 
     texture.portrait = zone.emplace_or_replace<Rendering_Components::Portrait>(entity, Graphics::Load_Portrait(unit_ID, imgPaths.portraitPath.c_str())).texture;
     texture.body = zone.emplace_or_replace<Rendering_Components::Body>(entity, Graphics::Load_Body(unit_ID, imgPaths.bodyPath.c_str())).texture;
@@ -345,6 +371,10 @@ namespace Create_Entities {
       auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
 
       if (!player){
+        if (imgPaths.name == "") {
+          zone.emplace_or_replace<Component::Dungeon>(entity);
+        }
+        zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
         auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
         auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
         for (int i = 0; i < raceData.size(); i++) {
@@ -390,6 +420,8 @@ namespace Create_Entities {
         SDL_GetWindowDisplayMode(Graphics::window, &dm);
         auto &camera = zone.emplace_or_replace<Component::Camera>(entity, 0.0f, 0.0f, (float) dm.w, (float) dm.h, Settings::cameraScale, Settings::cameraScale);
         zone.emplace_or_replace<Component::Target_Range>(entity, 2000.0f * data.scale, position.x - (2000.0f / 2.0f * data.scale), position.y - (2000.0f / 2.0f * data.scale), 2000.0f * data.scale, 2000.0f * data.scale);
+        auto &full_name = zone.emplace_or_replace<Component::Name>(entity);
+        Character_Data::Get_Name(full_name);
       }
       else {
         zone.emplace_or_replace<Component::Sight_Range>(entity, data.sight_radius * data.scale, position.x - (data.sight_radius / 2.0f * data.scale), position.y - (data.sight_radius / 2.0f * data.scale), data.sight_radius * data.scale, data.sight_radius * data.scale);

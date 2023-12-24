@@ -161,7 +161,7 @@ namespace Entity_Loader {
 
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT race_enum, rogue, human, fleshbeast, goblin, beast, demon, elf, zombie, skeleton, orc, dwarf, monster, eldritch, drow, nature FROM race_relationships WHERE race = ";
+    const char *jj = "SELECT race_enum, rogue, human, fleshbeast, goblin, beast, demon, elf, zombie, skeleton, orc, dwarf, monster, eldritch, drow, nature, animal, neutral FROM race_relationships WHERE race = ";
     strcpy(buf, jj);
     strcat(buf, raceInput.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -198,7 +198,9 @@ namespace Entity_Loader {
       raceData.emplace_back(drow);
       int nature = sqlite3_column_int(stmt, 15);
       raceData.emplace_back(nature);
-      int neutral = sqlite3_column_int(stmt, 16);
+      int animal = sqlite3_column_int(stmt, 16);
+      raceData.emplace_back(animal);
+      int neutral = sqlite3_column_int(stmt, 17);
       raceData.emplace_back(neutral);
     }
 
@@ -531,6 +533,7 @@ namespace Entity_Loader {
     std::string sprite_layout = "";
     std::string xml = "";
     std::string img = "";
+    std::string race = "neutral";
   };
 
   std::string Get_String(const unsigned char *text) {
@@ -550,7 +553,7 @@ namespace Entity_Loader {
 
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img FROM buildings WHERE name = ";
+    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race FROM buildings WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -570,6 +573,9 @@ namespace Entity_Loader {
 
       text = sqlite3_column_text(stmt, 6);
       data.img = Get_String(text);
+
+      text = sqlite3_column_text(stmt, 7);
+      data.race = Get_String(text);
     }
     return data;
   }

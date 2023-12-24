@@ -26,17 +26,36 @@ namespace World {
     float y;
   };
 
-//  struct TileSets {
-//    SDL_Texture *tiles[75];
-//  };
+  enum class GameState {
+    overworld,
+    cave,
+    MODES,
+    restart,
+    exit
+  };
+  GameState gamestate = GameState::overworld;
 
   enum class Tile_Type {
     grass,
     sand,
     dirt,
+    beach,
+    desert,
+    ice,
+    mud,
+    rock,
+    scorched,
+    snow,
+    swamp,
+    volcanic,
     SIZE
   };
   std::array<std::vector<SDL_Texture*>, (int)Tile_Type::SIZE> tileSets;
+
+  std::unordered_map<GameState, Tile_Type> tileType = {
+      {GameState::overworld, Tile_Type::grass },
+      {GameState::cave, Tile_Type::volcanic }
+  };
 
   struct TILE {
     int tile;
@@ -75,14 +94,7 @@ namespace World {
   World::Offset worldOffset;
   World::Tile_Size size;
   
-  enum class GameState {
-    overworld,
-    cave,
-    MODES,
-    restart,
-    exit
-  };
-  GameState gamestate = GameState::overworld;
+
 
 
   std::vector<entt::entity> Mouse_Hover_Entities;

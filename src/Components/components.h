@@ -272,6 +272,7 @@ namespace Component {
     object,
     prop,
     building,
+    portal,
     SIZE
   };
 
@@ -527,6 +528,10 @@ namespace Component {
   struct On_Mouse {
     entt::entity item_ID;
     Icon_Type type = Icon_Type::none;
+  };
+
+  struct Dungeon {
+    std::string load = "loading in";
   };
 
   struct Inventory {

@@ -45,6 +45,7 @@ namespace Input_Control {
     }
   }
 
+
   bool Check_For_Mouse_Target(entt::registry &zone, World::GameState &state, bool showGroundItems, entt::entity &player_ID, Component::Position &playerPosition) {
     if (Social_Control::Enemy_Selected(zone, player_ID)) {
       if (zone.any_of<Component::Attacking>(player_ID)) {
@@ -63,7 +64,7 @@ namespace Input_Control {
         if (zone.any_of<Component::Entity_Type>(targetData.entity_ID)) {
           name = zone.get<Component::Name>(targetData.entity_ID).first;
         }
-        std::cout << "object '" << name <<  "' has no type component: " << (int)targetData.entity_ID << std::endl;
+        std::cout << "object '" << name << "' has no type component: " << (int) targetData.entity_ID << std::endl;
         return false;
       }
       Component::Entity_Type &type = zone.get<Component::Entity_Type>(targetData.entity_ID);
@@ -78,6 +79,9 @@ namespace Input_Control {
           Player_Control::Interact_Order(zone, player_ID, targetData.entity_ID, targetRadius);
           return true;
         case Component::Entity_Type::prop:
+          break;
+        case Component::Entity_Type::portal:
+          Player_Control::Portal_Order(zone, player_ID, targetData.entity_ID, targetRadius);
           break;
         case Component::Entity_Type::unit: {
           if (player_ID != targetData.entity_ID) {

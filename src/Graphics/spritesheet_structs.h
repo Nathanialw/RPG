@@ -144,9 +144,10 @@ namespace Spritesheet_Structs {
       std::string keyCheck = templateName;
       std::string frameCopy = frame;
 
+
       if (frameCopy.substr(0, keyCheck.size()) != keyCheck) {
-        //std::cout << "xml file name foes not match texture atlas sprite name - NAME: " << templateName << " FRAME: " << frame << std::endl;
-        //            should assign a dummy value to prevent a crash nad to make it an obviouos bug
+        std::cout << "xml file name foes not match texture atlas sprite name - NAME: " << templateName << " FRAME: " << frame << std::endl;
+        //            should assign a dummy value to prevent a crash and to make it an obvious bug
         return false;
       }
 
@@ -192,7 +193,9 @@ namespace Spritesheet_Structs {
           //std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
           return false;
         }
-      } else if (unitType == "classes_male" || unitType == "classes_female") {
+      }
+
+      else if (unitType == "classes_male" || unitType == "classes_female") {
         if (checkAction == "Attack One Handed Side Slash") {
           action = Action_Component::Action_State::attack;
           actionFrameData[action].frameSpeed = i;
@@ -296,7 +299,9 @@ namespace Spritesheet_Structs {
           // std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
           return false;
         }
-      } else {
+      }
+
+      else {
         if (checkAction == "1-H Attack 1") {
           action = Action_Component::Action_State::attack;
           actionFrameData[action].frameSpeed = i;

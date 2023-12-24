@@ -11,4 +11,9 @@ namespace Player_Component {
         entt::entity ID;
         float hitRadius;
     };
+
+    struct Interact_Portal {
+        entt::entity ID;
+        float hitRadius;
+    };
 }

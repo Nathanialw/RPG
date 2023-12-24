@@ -68,7 +68,7 @@ namespace Load {
         if (oldItem.second != Item_Component::emptyEquipSlot[previousState]) {
           newEquipment.equippedItems[oldItem.first] = Copy_item(OldZone, newZone, oldItem.second);
 //          lags the game out, not sure why yet
-//          Get_Bust_Textures(newZone, state, newItem, static_cast<Item_Component::Item_Type>(newEquipment.equippedItems[s.first]), bodyFrame, unitPortraitFrame);
+//          Get_Bust_Textures(newZone, state, newEquipment.equippedItems[oldItem.first], static_cast<Item_Component::Item_Type>(newEquipment.equippedItems[oldItem.first]), bodyFrame, unitPortraitFrame);
           OldZone.destroy(oldItem.second);
         }
       }
