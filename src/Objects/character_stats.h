@@ -1,12 +1,12 @@
 #pragma once
 #include "character_options.h"
+#include "create_entities.h"
 #include "graphics.h"
 #include "items.h"
+#include "load_zone.h"
 #include "ui.h"
 #include <SDL2/SDL.h>
 #include <sstream>
-#include "load_zone.h"
-#include "create_entities.h"
 
 namespace Character_Stats {
 
@@ -214,9 +214,7 @@ namespace Character_Stats {
   }
 
   void Init_Player_Stats(entt::registry &zone, World::GameState &state) {// run funtion on item equip or unequip
-    auto view =
-        zone.view<Component::Input, Component::Melee_Damage, Component::Health,
-                  Component::Attack_Speed, Item_Component::Equipment>();
+    auto view =zone.view<Component::Input, Component::Melee_Damage, Component::Health, Component::Attack_Speed, Item_Component::Equipment>();
     for (auto entity: view) {
       auto &damage = view.get<Component::Melee_Damage>(entity);
       auto &health = view.get<Component::Health>(entity);
@@ -263,7 +261,6 @@ namespace Character_Stats {
   }
 
 
-
   void Equip_Units(entt::registry &zone, World::GameState &state, Character_Options::Customization &options) {
     std::vector<std::string> gear = Get_Sex(options.sex);
     Item_Component::Item hair = Get_Hair_Name(options);
@@ -276,9 +273,9 @@ namespace Character_Stats {
       auto &position = view.get<Component::Position>(unit);
       auto &unitPortraitFrame = view.get<Rendering_Components::Unit_Frame_Portrait>(unit);
       auto &bodyFrame = view.get<Rendering_Components::Body_Frame>(unit);
-//      for (auto item :equipment.equippedItems) {
-//        Utilities::Log((int)item.second);
-//      }
+      //      for (auto item :equipment.equippedItems) {
+      //        Utilities::Log((int)item.second);
+      //      }
 
       entt::entity item = Items::Create_And_Equip_Weapon(zone, state, position, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[0].c_str()), Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::mainhand] = item;
@@ -304,9 +301,9 @@ namespace Character_Stats {
       equipment.equippedItems[Item_Type::horns] = item;
       Load::Get_Bust_Textures(zone, state, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
 
-//      for (auto item :equipment.equippedItems) {
-//        Utilities::Log((int)item.second);
-//      }
+      //      for (auto item :equipment.equippedItems) {
+      //        Utilities::Log((int)item.second);
+      //      }
 
       zone.emplace_or_replace<Item_Component::Item_Equip>(unit);
     }
@@ -324,7 +321,6 @@ namespace Character_Stats {
   }
 
   void Init_UI(entt::registry &zone, World::GameState &state) {
-    UI::Bag_UI::Create_Bag_UI(zone);
   }
 
   void Init_Player(entt::registry &zone, World::GameState &state, Character_Options::Customization &options) {

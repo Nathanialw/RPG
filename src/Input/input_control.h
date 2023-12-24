@@ -17,7 +17,7 @@ namespace Input_Control {
     zone.remove<Component::Mouse_Move>(entity);
   }
 
-  bool Move_To_Item_From_Name(entt::registry &zone, entt::entity &player_ID, Component::Position &playerPosition, entt::entity item_ID) {
+  bool Move_To_Item_From_Name(entt::registry &zone, World::GameState &state, entt::entity &player_ID, Component::Position &playerPosition, entt::entity item_ID) {
     auto &radius = zone.get<Component::Radius>(player_ID).fRadius;
     SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
 
@@ -30,7 +30,7 @@ namespace Input_Control {
     if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
       ///pick up Item
       Component::Pickup_Item itemData = {item_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
-      UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
+      UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::itemCurrentlyHeld);
 
       auto &action = zone.get<Action_Component::Action>(player_ID);
       Action_Component::Set_State(action, Action_Component::idle);
@@ -97,7 +97,7 @@ namespace Input_Control {
             if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
               ///pick up Item
               Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
-              UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, Mouse::itemCurrentlyHeld);
+              UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::itemCurrentlyHeld);
               ///stop movement
               auto &action = zone.get<Action_Component::Action>(player_ID);
               zone.remove<Component::Moving>(player_ID);
@@ -119,7 +119,7 @@ namespace Input_Control {
               auto Item_Name_Box = view.get<Ground_Item>(item_ID).ground_name;
               ///only if the mouse intersects with the item box
               if (Mouse::bRect_inside_Cursor(Item_Name_Box)) {
-                if (Move_To_Item_From_Name(zone, player_ID, playerPosition, item_ID)) {
+                if (Move_To_Item_From_Name(zone, state, player_ID, playerPosition, item_ID)) {
                   return true;
                 };
                 return true;

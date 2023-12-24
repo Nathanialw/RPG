@@ -114,11 +114,11 @@ namespace Event_Handler {
           return;
         }
         //        spells
-        else if (Action_Bar::Mouse_Inside_Actionbar(camera)) {
+        else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
           if (Mouse::itemCurrentlyHeld) {
-            Action_Bar::Set_Mouse_Spell_On_Actionbar(zone, camera);
+            Action_Bar::Set_Mouse_Spell_On_Actionbar(zone, state, camera);
           } else {
-            Action_Bar::Get_Mouse_Spell_From_Actionbar(zone, camera);
+            Action_Bar::Get_Mouse_Spell_From_Actionbar(zone, state, camera);
           }
         } else if (UI_Spellbook::Check_Spellbook(camera)) {
           Action_Bar::Clear_Spell_On_Mouse(zone);
@@ -126,7 +126,7 @@ namespace Event_Handler {
         }
         //        items
         else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-          UI::Bag_UI::Interact_With_Bag(zone, camera);
+          UI::Bag_UI::Interact_With_Bag(zone, player_ID, state, camera);
           if (UI::Equipment_UI::Interact_With_Equipment(zone, state, camera, player_ID)) {
             //updates character stats
             zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
@@ -188,7 +188,7 @@ namespace Event_Handler {
             if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
               //            recenter camera on player
               UI_Spellbook::Update_Position();
-              Action_Bar::Update_Position(Action_Bar::actionBar.actionBarFrame);
+              Action_Bar::Update_Position(Action_Bar::actionBar[state].actionBar.actionBarFrame);
               Menu::Build_Menu(Menu::menu);
               break;
             }

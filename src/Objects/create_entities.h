@@ -360,6 +360,7 @@ namespace Create_Entities {
       // if this is the first run make these, otherwise copy them
       else if (startup){
         startup = false;
+        UI::Bag_UI::Create_Bag_UI(zone, entity, state);
         auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
         auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
         for (int i = 0; i < raceData.size(); i++) {

@@ -170,7 +170,7 @@ namespace Player_Control {
     }
   }
 
-  void Mouse_Move_To_Item(entt::registry &zone) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
+  void Mouse_Move_To_Item(entt::registry &zone, World::GameState &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
     if (Player_Move_Poll >= 0) {
       Player_Move_Poll = 0;
       auto view = zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Action_Component::Action, Component::Moving>();
@@ -191,7 +191,7 @@ namespace Player_Control {
             zone.remove<Component::Moving>(entity);
           }
           //pickup Item
-          UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, mov, Mouse::itemCurrentlyHeld);
+          UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, entity, state, mov, Mouse::itemCurrentlyHeld);
           zone.remove<Component::Pickup_Item>(entity);
         }
       }
@@ -263,11 +263,11 @@ namespace Player_Control {
 //    //    Mouse_Move_Arrived_Pickup_Item(zone, isItemCurrentlyHeld);
 //  }
 
-  void Move_To_Atack_Routine(entt::registry &zone) {
+  void Move_To_Atack_Routine(entt::registry &zone, World::GameState &state) {
     Player_Move_Poll += Timer::timeStep;
     Mouse_Move_To_Interact(zone);
     Mouse_Move_To_Attack(zone);
-    Mouse_Move_To_Item(zone);
+    Mouse_Move_To_Item(zone, state);
     //		Mouse_Move_Arrived_Attack_Target(zone);
     Remove_Attack(zone);
   }

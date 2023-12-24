@@ -501,7 +501,9 @@ namespace Component {
   };
 
   struct Bag {
-    std::vector<entt::entity> bag;
+//    std::vector<entt::entity> bag;
+    f2 numOfSlots = {8.0f, 4.0f};
+    std::array<entt::entity, 32> bag;
   };
 
   struct Icon {
@@ -544,7 +546,6 @@ namespace Component {
     Attack_Type type;
     bool critical;
   };
-
 
   struct Caster_ID {
     entt::entity caster_ID;

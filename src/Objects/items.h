@@ -463,16 +463,21 @@ namespace Items {
 
   void Update_Mouse_Slot_Position(entt::registry &zone, entt::entity &item, bool &isItemCurrentlyHeld, float &mouseX, float &mouseY) {
     //set item in mouse array position to mouse x, y every frame
-    if (isItemCurrentlyHeld == true) {
-      Component::Position &position = zone.get<Component::Position>(item);
-      position.x = mouseX;
-      position.y = mouseY;
+    if (isItemCurrentlyHeld) {
+      if (zone.any_of<Component::Position>(item)) {
+        Component::Position &position = zone.get<Component::Position>(item);
+        position.x = mouseX;
+        position.y = mouseY;
+      }
+      else {
+        Utilities::Log((int)item);
+      }
     }
     //		Item_Collision(zone);
   }
 
   void Show_Ground_Items(entt::registry &zone, Component::Camera &camera) {
-    if (showGroundItems == true) {
+    if (showGroundItems) {
       //****//search quad tree instead
       auto view = zone.view<Ground_Item, Component::Interaction_Rect, Rarity, Name, Component::Renderable>();
       for (auto item: view) {

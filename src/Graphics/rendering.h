@@ -477,13 +477,13 @@ namespace Rendering {
       Damage_Text::Show_Damage(zone, camera);
       UI_Spellbook::Draw_Spellbook(zone, camera);
       Pause::Pause_Control(camera);
-      if (!Menu::Render_Menu(zone, camera)) {
+      if (!Menu::Render_Menu(zone, state, camera)) {
         return false;
       }
       //Mouse
       Interface::Foreground(zone, camera);
       //on top of mouse
-      Tooltip::Show_Item_Tooltip(zone, state, mouse, camera);
+      Tooltip::Show_Item_Tooltip(zone, entity, state, mouse, camera);
       Render_Mouse_Item(zone, camera);
       SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
       if (Items::showGroundItems) {                //****//search quad tree instead

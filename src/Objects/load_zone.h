@@ -22,7 +22,7 @@ namespace Load {
     }
   }
 
-  void Create_Item1(entt::registry &zone, entt::entity &item, Component::Position &position, const std::string &name, Item_Component::Item_Stats &itemStats) {
+  void Create_Item(entt::registry &zone, entt::entity &item, Component::Position &position, const std::string &name, Item_Component::Item_Stats &itemStats) {
     float scale = 0.7f;
     zone.emplace_or_replace<Component::Scale>(item, scale);
     zone.emplace_or_replace<Action_Component::Action>(item, Action_Component::isStatic);
@@ -32,6 +32,24 @@ namespace Load {
     zone.emplace_or_replace<Item_Component::Item_Stats>(item) = itemStats;
     zone.emplace_or_replace<Item_Component::Name>(item, name);
     zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
+  }
+
+  entt::entity Copy_item(entt::registry &OldZone, entt::registry &newZone, entt::entity oldItem) {
+    entt::entity newItem = newZone.create();
+    auto &itemName = OldZone.get<Item_Component::Name>(oldItem);
+    auto &itemStats = OldZone.get<Item_Component::Item_Stats>(oldItem);
+    auto &position = OldZone.get<Component::Position>(oldItem);    //
+
+    newZone.emplace_or_replace<Rendering_Components::Portrait>(newItem) = OldZone.get<Rendering_Components::Portrait>(oldItem);
+    newZone.emplace_or_replace<Rendering_Components::Body>(newItem) = OldZone.get<Rendering_Components::Body>(oldItem);
+    newZone.emplace_or_replace<Item_Component::Item_Type>(newItem) = OldZone.get<Item_Component::Item_Type>(oldItem);
+    newZone.emplace_or_replace<Item_Component::Rarity>(newItem) = OldZone.get<Item_Component::Rarity>(oldItem);
+    newZone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(newItem) = OldZone.get<Rendering_Components::Sprite_Sheet_Info>(oldItem);
+    newZone.emplace_or_replace<Component::Icon>(newItem) = OldZone.get<Component::Icon>(oldItem);
+    newZone.emplace_or_replace<Component::Inventory>(newItem);
+    //
+    Create_Item(newZone, newItem, position, itemName.name, itemStats);
+    return newItem;
   }
 
   void Copy_Equipment(entt::registry &OldZone, World::GameState &state, World::GameState previousState, entt::registry &newZone, entt::entity oldUnit, entt::entity &newUnit) {
@@ -46,27 +64,27 @@ namespace Load {
       auto &newEquipment = newZone.get<Item_Component::Equipment>(newUnit);
       auto &bodyFrame = newZone.get<Rendering_Components::Body_Frame>(newUnit);
       auto &unitPortraitFrame = newZone.get<Rendering_Components::Unit_Frame_Portrait>(newUnit);
-      for (auto s: equipment.equippedItems) {
-        if (s.second != Item_Component::emptyEquipSlot[previousState]) {
-          entt::entity newItem = newZone.create();
-          entt::entity &oldItem = s.second;
-          auto &itemName = OldZone.get<Item_Component::Name>(oldItem);
-          auto &itemStats = OldZone.get<Item_Component::Item_Stats>(oldItem);
-          //
-          newZone.emplace_or_replace<Rendering_Components::Portrait>(newItem) = OldZone.get<Rendering_Components::Portrait>(oldItem);
-          newZone.emplace_or_replace<Rendering_Components::Body>(newItem) = OldZone.get<Rendering_Components::Body>(oldItem);
-          newZone.emplace_or_replace<Item_Component::Item_Type>(newItem) = OldZone.get<Item_Component::Item_Type>(oldItem);
-          newZone.emplace_or_replace<Item_Component::Rarity>(newItem) = OldZone.get<Item_Component::Rarity>(oldItem);
-          newZone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(newItem) = OldZone.get<Rendering_Components::Sprite_Sheet_Info>(oldItem);
-          newZone.emplace_or_replace<Component::Icon>(newItem) = OldZone.get<Component::Icon>(oldItem);
-          newZone.emplace_or_replace<Component::Inventory>(newItem);
-          //
-          Create_Item1(newZone, newItem, position, itemName.name, itemStats);
-          newEquipment.equippedItems[s.first] = newItem;
+      for (auto oldItem: equipment.equippedItems) {
+        if (oldItem.second != Item_Component::emptyEquipSlot[previousState]) {
+          newEquipment.equippedItems[oldItem.first] = Copy_item(OldZone, newZone, oldItem.second);
 //          lags the game out, not sure why yet
 //          Get_Bust_Textures(newZone, state, newItem, static_cast<Item_Component::Item_Type>(newEquipment.equippedItems[s.first]), bodyFrame, unitPortraitFrame);
-          OldZone.destroy(oldItem);
+          OldZone.destroy(oldItem.second);
         }
+      }
+    }
+  }
+
+  void Copy_Inventory(entt::registry &OldZone, entt::registry &newZone, World::GameState oldState, World::GameState &newState, entt::entity oldEntity, entt::entity &newEntity) {
+    UI::Bag_UI::Create_Bag_UI(newZone, newEntity, newState);
+    auto &oldBag = OldZone.get<Component::Bag>(oldEntity).bag;
+    auto &newBag = newZone.get<Component::Bag>(newEntity).bag;
+
+    for (int i = 0; i < oldBag.size(); ++i) {
+      //if it is an item and not an empty slot
+      if (oldBag[i] != UI::Bag_UI::emptyBagSlot[oldState]) {
+        newBag[i] = Copy_item(OldZone, newZone, oldBag[i]);
+        OldZone.destroy(oldBag[i]);
       }
     }
   }
@@ -81,7 +99,8 @@ namespace Load {
       newZone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(newEntity) = equipment_components;
       newZone.emplace_or_replace<Component::Health>(newEntity) = health;
 
-      Load::Copy_Equipment(oldZone, newState, oldState, newZone, playerID, newEntity);
+      Copy_Equipment(oldZone, newState, oldState, newZone, playerID, newEntity);
+      Copy_Inventory(oldZone, newZone, oldState, newState, playerID, newEntity);
 
       auto &body = view.get<Component::Body>(playerID).body;
       auto world = Collision::Get_Collision_List(oldState);

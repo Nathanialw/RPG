@@ -79,9 +79,9 @@ namespace Init {
     Collision::init_Collison(state);
     Item_Component::emptyEquipSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
     Graphics::defaultIcon = Graphics::Create_Icon_Entity(zone, Graphics::default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
+    UI::Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
     Mouse::Init_mouse(zone);
     UI_Spellbook::Init_UI(zone);
-    Character_Stats::Init_UI(zone, state);
     if (Create_Entities::startup) {
       Character_Stats::Init_Player(zone, state, options);
     } else {
@@ -89,7 +89,7 @@ namespace Init {
     }
     Maps::Init_Tile_Objects(zone, state);
     Quad_Tree::Fill_Quad_Tree(zone, state);
-    Action_Bar::Create_Action_Bar(zone);
+    Action_Bar::Create_Action_Bar(zone, state);
   };
 
   void Restart_Game() {

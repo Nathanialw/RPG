@@ -95,7 +95,7 @@ namespace Menu {
     }
   }
 
-  int Show_Menu(Menu &menus, entt::registry &zone, Component::Camera &camera) {
+  int Show_Menu(Menu &menus, entt::registry &zone, World::GameState &state, Component::Camera &camera) {
     for (int i = 0; i < menu.buttons.size(); i++) {
       menu.buttons[i].scaledSize = UI::Update_Scale(camera.scale, menu.buttons[i].size);
 
@@ -126,7 +126,7 @@ namespace Menu {
           if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
             //            recenter camera on player
             UI_Spellbook::Update_Position();
-            Action_Bar::Update_Position(Action_Bar::actionBar.actionBarFrame);
+            Action_Bar::Update_Position(Action_Bar::actionBar[state].actionBar.actionBarFrame);
             Build_Menu(menu);
           }
           return -1;
@@ -161,12 +161,12 @@ namespace Menu {
     return menu.buttons.size() + 1;
   }
 
-  bool Render_Menu(entt::registry &zone, Component::Camera &camera) {
+  bool Render_Menu(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
     //pause with no inout
     if (toggleMenu) {
       UI::Overlay(camera.scale);
       if (menu.i != 4) {
-        menu.i = Show_Menu(menu, zone, camera);
+        menu.i = Show_Menu(menu, zone, state, camera);
       }
       switch (menu.i) {
         case 0: {Toggle(); break;}
