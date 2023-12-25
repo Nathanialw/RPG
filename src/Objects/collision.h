@@ -91,13 +91,6 @@ namespace Collision {
 
     auto world = Get_Collision_List(state);
 
-    if (world == overworld){
-      Utilities::Log("match");
-    }
-    else {
-      Utilities::Log("fail");
-    }
-
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
 
@@ -115,12 +108,6 @@ namespace Collision {
     bodyDef.userData.entity_ID = (int) entity;
 
     auto world = Get_Collision_List(state);
-    if (world == overworld){
-      Utilities::Log("match");
-    }
-    else {
-      Utilities::Log("fail");
-    }
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
 
@@ -187,12 +174,6 @@ namespace Collision {
     bodyDef.angularDamping = 0.0f;
 
     b2World* world = Get_Collision_List(state);
-    if (world == overworld){
-      Utilities::Log("match");
-    }
-    else {
-      Utilities::Log("fail");
-    }
     b2Body *body = world->CreateBody(&bodyDef);
     auto &bodyComponent = zone.emplace_or_replace<Component::Body>(entity, body);
 

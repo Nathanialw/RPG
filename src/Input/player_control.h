@@ -9,30 +9,16 @@
 #include "cave.h"
 
 namespace Player_Control {
-  void Attack_Order(entt::registry &zone, entt::entity &entity, entt::entity &target_ID, Component::Radius &targetRadius) {
+  void Move_To(entt::registry &zone, entt::entity &entity, Player_Component::Target_Data targetData) {
     zone.remove<Component::Mouse_Move>(entity);
     zone.emplace_or_replace<Component::Moving>(entity);
-    zone.emplace_or_replace<Player_Component::Attack_Move>(entity, target_ID, targetRadius.fRadius);
+    zone.emplace_or_replace<Player_Component::Target_Data>(entity, targetData.entityType, targetData.ID, targetData.radius);
   }
-
-  void Interact_Order(entt::registry &zone, entt::entity &entity, entt::entity &target_ID, Component::Radius &targetRadius) {
-    zone.remove<Component::Mouse_Move>(entity);
-    zone.emplace_or_replace<Component::Moving>(entity);
-    zone.emplace_or_replace<Player_Component::Interact_Move>(entity, target_ID, targetRadius.fRadius);
-  }
-
-  void Portal_Order(entt::registry &zone, entt::entity &entity, entt::entity &target_ID, Component::Radius &targetRadius) {
-    zone.remove<Component::Mouse_Move>(entity);
-    zone.emplace_or_replace<Component::Moving>(entity);
-    zone.emplace_or_replace<Player_Component::Interact_Portal>(entity, target_ID, targetRadius.fRadius);
-  }
-
 
   void Update_Keyboard_Movement(entt::registry &zone, entt::entity entity, Component::Velocity &velocity, Component::Input &input, const SDL_Keycode &key) {
-    if (zone.any_of<Player_Component::Interact_Move, Player_Component::Attack_Move, Component::Mouse_Move, Component::Pickup_Item>(entity)) {
-      zone.remove<Player_Component::Interact_Move>(entity);
-      zone.remove<Player_Component::Attack_Move>(entity);
+    if (zone.any_of<Player_Component::Target_Data, Component::Mouse_Move, Component::Pickup_Item>(entity)) {
       zone.remove<Component::Mouse_Move>(entity);
+      zone.remove<Player_Component::Target_Data>(entity);
       zone.remove<Component::Pickup_Item>(entity);
       velocity.magnitude.x = 0.0f;
       velocity.magnitude.y = 0.0f;
@@ -71,140 +57,60 @@ namespace Player_Control {
     }
   }
 
-  float Player_Move_Poll = 0;
+  void Clear_Moving(entt::registry &zone, entt::entity &entity, Component::Velocity &velocity) {
+    velocity.magnitude.x = 0.0f;
+    velocity.magnitude.y = 0.0f;
+      zone.remove<Player_Component::Target_Data>(entity);
+    zone.remove<Component::Moving>(entity);
+  }
 
-  void Mouse_Move_To_Attack(entt::registry &zone) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
-    if (Player_Move_Poll >= 0) {
-      Player_Move_Poll = 0;
-      auto view = zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Moving, Player_Component::Attack_Move, Component::Melee_Range>();
-      for (auto entity: view) {
-        //if not in range
-        auto &position = view.get<Component::Position>(entity);
-        auto &targetData = view.get<Player_Component::Attack_Move>(entity);
-        auto &targetPosition = zone.get<Component::Position>(targetData.ID);
-        //check if the target is in attack range
-        auto &meleeRange = view.get<Component::Melee_Range>(entity);
-        Component::Radius targetRadius;
-        targetRadius.fRadius = targetData.hitRadius;
-        if (!Entity_Control::Target_In_Range(position, meleeRange.meleeRange, targetPosition, targetRadius)) {
-          auto &action = view.get<Action_Component::Action>(entity);
-          auto &v = view.get<Component::Velocity>(entity);
-          Action_Component::Set_State(action, Action_Component::walk);
-
-          v.magnitude.x = v.speed * (targetPosition.x - position.x);
-          v.magnitude.y = v.speed * (targetPosition.y - position.y);
-        } else {
-          if (Social_Control::Check_Relationship(zone, entity, targetData.ID)) {
-            Entity_Control::Melee_Attack(zone, entity, targetData.ID, targetPosition);
-            auto &v = view.get<Component::Velocity>(entity);
-            v.magnitude.x = 0.0f;
-            v.magnitude.y = 0.0f;
-          } else {
-            Social_Control::Greet(zone, entity, targetData.ID);
-            auto &v = view.get<Component::Velocity>(entity);
-            v.magnitude.x = 0.0f;
-            v.magnitude.y = 0.0f;
-          }
-          zone.remove<Player_Component::Attack_Move>(entity);
-          zone.remove<Component::Moving>(entity);
-        }
+  bool Attack(entt::registry &zone, entt::entity &entity, Player_Component::Target_Data &targetData, Component::Position &targetPosition, Component::Velocity velocity, Component::Position &position, Component::Melee_Range &meleeRange) {
+    if (Entity_Control::Target_In_Range(position, meleeRange.meleeRange, targetPosition, targetData.radius)) {
+      if (Social_Control::Check_Relationship(zone, entity, targetData.ID)) {
+        Entity_Control::Melee_Attack(zone, entity, targetData.ID, targetPosition);
+      } else {
+        Social_Control::Greet(zone, entity, targetData.ID);
+        //interaction, like shop or whatever
       }
+      Clear_Moving(zone, entity, velocity);
+
+      return true;
     }
+    return false;
   }
 
   void Interact_With_Object() {
     Utilities::Log("interacting with object");
   }
 
-  void Interact(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &entityPosition, float &radius, Component::Position &targetPosition, Component::Radius &targetRadius) {// maybe change to move and attack?
-    //calcuate the point to move to that puts in range of melee attack on every few frames
-    //if it is in range, run Melee_Attack()
-    //else pass that point as an update to the move order
-    if (Entity_Control::Target_In_Range(entityPosition, radius, targetPosition, targetRadius)) {//check if center of attack rect is in the target
+
+  bool Interact(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &entityPosition, Component::Radius &radius, Component::Position &targetPosition, Component::Radius &targetRadius, Component::Velocity &velocity) {// maybe change to move and attack?
+    if (Entity_Control::Target_In_Range(entityPosition, radius.fRadius, targetPosition, targetRadius)) {//check if center of attack rect is in the target
       auto &action = zone.get<Action_Component::Action>(entity_ID);
       if (action.state != Action_Component::kneel && action.state != Action_Component::struck) {
         Action_Component::Set_State(action, Action_Component::idle);
       }
       Action_Component::Set_State(action, Action_Component::kneel);
       Interact_With_Object();
-      zone.remove<Component::Mouse_Move>(entity_ID);
-      zone.remove<Component::Moving>(entity_ID);
-    } else {
-      Entity_Control::Move_Order(zone, entity_ID, targetPosition.x, targetPosition.y);
+      Clear_Moving(zone, entity_ID, velocity);
+      return true;
     }
+    return false;
     //else move to cursor
   }
 
-  void Mouse_Move_To_Interact(entt::registry &zone) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
-    if (Player_Move_Poll >= 0) {
-      Player_Move_Poll = 0;
-      auto view = zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Moving, Player_Component::Interact_Move, Component::Radius>();
-      for (auto entity: view) {
-        //if not in range
-        auto &position = view.get<Component::Position>(entity);
-        auto &targetData = view.get<Player_Component::Interact_Move>(entity);
-        auto &targetPosition = zone.get<Component::Position>(targetData.ID);
-        //check if the target is in attack range
-        auto &radius = view.get<Component::Radius>(entity);
-        Component::Radius targetRadius;
-        targetRadius.fRadius = targetData.hitRadius;
-        auto &action = view.get<Action_Component::Action>(entity);
-        if (!Entity_Control::Target_In_Range(position, radius.fRadius, targetPosition, targetRadius)) {
-          auto &v = view.get<Component::Velocity>(entity);
-          Action_Component::Set_State(action, Action_Component::walk);
-          v.magnitude.x = v.speed * (targetPosition.x - position.x);
-          v.magnitude.y = v.speed * (targetPosition.y - position.y);
-        } else {
-          Interact(zone, entity, targetData.ID, position, radius.fRadius, targetPosition, targetRadius);
-          auto &v = view.get<Component::Velocity>(entity);
-          v.magnitude.x = 0.0f;
-          v.magnitude.y = 0.0f;
-          zone.remove<Player_Component::Interact_Move>(entity);
-          zone.remove<Component::Moving>(entity);
-        }
+  bool Enter_Portal (entt::registry &zone, entt::entity &entity, World::GameState &state, Component::Position &position, Component::Position &targetPosition, Component::Velocity &velocity, Player_Component::Target_Data &targetData) {
+    if (Entity_Control::Target_In_Range(position, targetData.radius.fRadius, targetPosition, targetData.radius)) {
+      if (state == World::GameState::cave) {
+        Cave::Exit_Cave();
+      } else {
+        Cave::Enter_Cave();
       }
-    }
-  }
+      Clear_Moving(zone, entity, velocity);
+      return true;
 
-
-  void Enter_Portal (entt::registry &zone, World::GameState &state, entt::entity &portalID) {
-    if (state == World::GameState::cave) {
-      Cave::Exit_Cave();
     }
-    else {
-      Cave::Enter_Cave();
-    }
-  }
-
-  void Mouse_Move_To_Portal(entt::registry &zone, World::GameState &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
-    if (Player_Move_Poll >= 0) {
-      Player_Move_Poll = 0;
-      auto view = zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Moving, Player_Component::Interact_Portal, Component::Radius>();
-      for (auto entity: view) {
-        //if not in range
-        auto &position = view.get<Component::Position>(entity);
-        auto &targetData = view.get<Player_Component::Interact_Portal>(entity);
-        auto &targetPosition = zone.get<Component::Position>(targetData.ID);
-        //check if the target is in attack range
-        auto &radius = view.get<Component::Radius>(entity);
-        Component::Radius targetRadius;
-        targetRadius.fRadius = targetData.hitRadius;
-        auto &action = view.get<Action_Component::Action>(entity);
-        if (!Entity_Control::Target_In_Range(position, radius.fRadius, targetPosition, targetRadius)) {
-          auto &v = view.get<Component::Velocity>(entity);
-          Action_Component::Set_State(action, Action_Component::walk);
-          v.magnitude.x = v.speed * (targetPosition.x - position.x);
-          v.magnitude.y = v.speed * (targetPosition.y - position.y);
-        } else {
-          Enter_Portal(zone, state, targetData.ID);
-          auto &v = view.get<Component::Velocity>(entity);
-          v.magnitude.x = 0.0f;
-          v.magnitude.y = 0.0f;
-          zone.remove<Player_Component::Interact_Move>(entity);
-          zone.remove<Component::Moving>(entity);
-        }
-      }
-    }
+    return false;
   }
 
   bool Check_If_Arrived(const float &unitX, const float &unitY, const float &destinationX, const float &destinationY) {
@@ -220,30 +126,62 @@ namespace Player_Control {
   }
 
   void Mouse_Move_To_Item(entt::registry &zone, World::GameState &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
-    if (Player_Move_Poll >= 0) {
-      Player_Move_Poll = 0;
-      auto view = zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Action_Component::Action, Component::Moving>();
-      for (auto entity: view) {
-        const auto &x = view.get<Component::Position>(entity);
-        const auto &y = view.get<Component::Position>(entity);
-        auto &action = view.get<Action_Component::Action>(entity);
-        auto &v = view.get<Component::Velocity>(entity);
-        auto &mov = view.get<Component::Pickup_Item>(entity);
-        Action_Component::Set_State(action, Action_Component::walk);
-        v.magnitude.x = v.speed * (mov.x - x.x);
-        v.magnitude.y = v.speed * (mov.y - y.y);
-        if (Check_If_Arrived(x.x, y.y, mov.x, mov.y)) {
-          if (action.state == Action_Component::Action_State::walk) {
-            v.magnitude.x = 0.0f;
-            v.magnitude.y = 0.0f;
-            Action_Component::Set_State(action, Action_Component::Action_State::kneel);
-            zone.remove<Component::Moving>(entity);
-          }
-          //pickup Item
-          UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, entity, state, mov, Mouse::itemCurrentlyHeld);
-          zone.remove<Component::Pickup_Item>(entity);
+    auto view = zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Action_Component::Action, Component::Moving>();
+    for (auto entity: view) {
+      const auto &x = view.get<Component::Position>(entity);
+      const auto &y = view.get<Component::Position>(entity);
+      auto &action = view.get<Action_Component::Action>(entity);
+      auto &v = view.get<Component::Velocity>(entity);
+      auto &mov = view.get<Component::Pickup_Item>(entity);
+      Action_Component::Set_State(action, Action_Component::walk);
+      v.magnitude.x = v.speed * (mov.x - x.x);
+      v.magnitude.y = v.speed * (mov.y - y.y);
+      if (Check_If_Arrived(x.x, y.y, mov.x, mov.y)) {
+        if (action.state == Action_Component::Action_State::walk) {
+          v.magnitude.x = 0.0f;
+          v.magnitude.y = 0.0f;
+          Action_Component::Set_State(action, Action_Component::Action_State::kneel);
+          zone.remove<Component::Moving>(entity);
         }
+        //pickup Item
+        UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, entity, state, mov, Mouse::itemCurrentlyHeld);
+        zone.remove<Component::Pickup_Item>(entity);
       }
+    }
+  }
+
+  bool Move_To_Item() {
+    return false;
+  }
+
+  void Mouse_To_Target(entt::registry &zone, World::GameState &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
+    auto view = zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Moving, Player_Component::Target_Data, Component::Melee_Range, Component::Radius>();
+    for (auto entity: view) {
+      //if not in range
+      auto &position = view.get<Component::Position>(entity);
+      auto &radius = view.get<Component::Radius>(entity);
+      auto &targetData = view.get<Player_Component::Target_Data>(entity);
+      Utilities::Log((int)targetData.ID);
+      if (!zone.any_of<Component::Position>(targetData.ID)) { return; }
+      auto &targetPosition = zone.get<Component::Position>(targetData.ID);
+      auto &velocity = view.get<Component::Velocity>(entity);
+      //check if the target is in attack range
+      auto &meleeRange = view.get<Component::Melee_Range>(entity);
+      switch (targetData.entityType) {
+        case Component::Entity_Type::object:if (Interact(zone, entity, targetData.ID, position, radius, targetPosition, targetData.radius, velocity)) { return; } break;
+        case Component::Entity_Type::portal: if (Enter_Portal(zone, entity, state, position, targetPosition, velocity, targetData)){ return; } break;
+        case Component::Entity_Type::unit: if (Attack(zone, entity, targetData, targetPosition, velocity, position, meleeRange)) { return; } break;
+        case Component::Entity_Type::foliage: break;
+        case Component::Entity_Type::item: break;
+        case Component::Entity_Type::prop: break;
+        case Component::Entity_Type::building: break;
+        case Component::Entity_Type::spell: break;
+        case Component::Entity_Type::SIZE: break;
+      }
+      auto &action = view.get<Action_Component::Action>(entity);
+      Action_Component::Set_State(action, Action_Component::walk);
+      velocity.magnitude.x = velocity.speed * (targetPosition.x - position.x);
+      velocity.magnitude.y = velocity.speed * (targetPosition.y - position.y);
     }
   }
 
@@ -272,40 +210,6 @@ namespace Player_Control {
   //        //      }
   //      }
 
-  void Mouse_Move_Arrived_Attack_Target(entt::registry &zone) {
-    auto view = zone.view<Component::Position, Player_Component::Attack_Move, Component::Moving, Component::Melee_Range>();
-    for (auto entity: view) {
-      auto &position = view.get<Component::Position>(entity);
-      auto &targetData = view.get<Player_Component::Attack_Move>(entity);
-      auto &targetPosition = zone.get<Component::Position>(targetData.ID);
-      //check if the target is in attack range
-      auto &meleeRange = view.get<Component::Melee_Range>(entity);
-      Component::Radius targetRadius;
-      targetRadius.fRadius = targetData.hitRadius;
-      if (Entity_Control::Target_In_Range(position, meleeRange.meleeRange, targetPosition, targetRadius)) {
-        //attack target
-        if (Social_Control::Check_Relationship(zone, entity, targetData.ID)) {
-          Entity_Control::Melee_Attack(zone, entity, targetData.ID, targetPosition);
-        } else {
-          Social_Control::Greet(zone, entity, targetData.ID);
-        }
-        zone.remove<Player_Component::Attack_Move>(entity);
-        zone.remove<Component::Moving>(entity);
-      }
-    }
-  }
-
-  void Remove_Attack(entt::registry &zone) {
-    auto view = zone.view<Player_Component::Attack_Move, Action_Component::Action>();
-    for (auto entity: view) {
-      auto &action = view.get<Action_Component::Action>(entity);
-      if (action.state != Action_Component::walk) {
-        zone.remove<Player_Component::Attack_Move>(entity);
-        zone.remove<Component::Moving>(entity);
-      }
-    }
-  }
-
 
 //  void Move_To_Item_Routine(entt::registry &zone, bool isItemCurrentlyHeld) {
 //    Mouse_Move_To_Item();
@@ -313,12 +217,8 @@ namespace Player_Control {
 //  }
 
   void Move_To_Atack_Routine(entt::registry &zone, World::GameState &state) {
-    Player_Move_Poll += Timer::timeStep;
-    Mouse_Move_To_Interact(zone);
-    Mouse_Move_To_Attack(zone);
     Mouse_Move_To_Item(zone, state);
-    Mouse_Move_To_Portal(zone, state);
+    Mouse_To_Target(zone, state);
     //		Mouse_Move_Arrived_Attack_Target(zone);
-    Remove_Attack(zone);
   }
 }// namespace Player_Control

@@ -2,18 +2,10 @@
 #include "entt/entt.hpp"
 
 namespace Player_Component {
-    struct Attack_Move {
-        entt::entity ID;
-        float hitRadius;
-    };
 
-    struct Interact_Move {
-        entt::entity ID;
-        float hitRadius;
-    };
-
-    struct Interact_Portal {
-        entt::entity ID;
-        float hitRadius;
+    struct Target_Data {
+      Component::Entity_Type entityType;
+      entt::entity ID;
+      Component::Radius radius;
     };
 }

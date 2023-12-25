@@ -1,9 +1,9 @@
 #pragma once
-#include "dynamic_quad_tree.h"
-#include "world.h"
 #include "debug_system.h"
 #include "dynamic_entity_loader.h"
+#include "dynamic_quad_tree.h"
 #include "item_components.h"
+#include "world.h"
 //#include <SDL2/SDL.h>
 //#include "vector"
 //#include "entt/entt.hpp"
@@ -23,7 +23,7 @@ namespace Quad_Tree {
   //will be attached to the map later
   SDL_FRect zoneSize = {0.0f, 0.0f, 10000.0f, 10000.0f};
   //  DynamicQuadTreeContainer<someObjectWithArea> treeObjects;
-//  std::array<Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>, 2> quadTrees;
+  //  std::array<Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>, 2> quadTrees;
   std::unordered_map<World::GameState, Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees;
   float offset = 40.0f;
 
@@ -45,7 +45,7 @@ namespace Quad_Tree {
 
   float emplaceQuadTree = 0.0f;
 
-  void Emplace_Objects_In_Quad_Tree(entt::registry &zone,  World::GameState &state) {
+  void Emplace_Objects_In_Quad_Tree(entt::registry &zone, World::GameState &state) {
     //    emplaceQuadTree += Timer::timeStep;
     //    if (emplaceQuadTree >= 50.0f) {
     //      emplaceQuadTree -= 50.0f;
@@ -64,30 +64,55 @@ namespace Quad_Tree {
     //    }
   }
 
-  void Remove_From_Tree(entt::registry &zone,  World::GameState &state) {
-    auto view = zone.view<Component::In_Object_Tree, Component::Remove_From_Object_Tree>();
+  void Remove_From_Tree(entt::registry &zone, World::GameState &state) {
+    auto view = zone.view<Component::In_Object_Tree, Component::Remove_From_Object_Tree, Component::Tile_Index>();
     for (auto &entity: view) {
-      auto &rect = view.get<Component::Remove_From_Object_Tree>(entity).rect;
-      for (auto &object: quadTrees[state].search(rect)) {
-        if (object->item.entity_ID == entity) {
-          quadTrees[state].remove(object);
-        }
-      }
+
       if (zone.any_of<Component::Tile_Index>(entity)) {
-        int i = zone.get<Component::Tile_Index>(entity).i;
-        int j = zone.get<Component::Tile_Index>(entity).j;
+        int i = view.get<Component::Tile_Index>(entity).i;
+        int j = view.get<Component::Tile_Index>(entity).j;
         tilesEntities[i][j].created = false;
-        zone.remove<Component::Position>(entity);
-        zone.destroy(entity);
-      } else {
-        zone.remove<Component::Interaction_Rect>(entity);
-        zone.remove<Component::Remove_From_Object_Tree>(entity);
-        zone.remove<Component::In_Object_Tree>(entity);
+        //remove from tree
+        for (auto &tileEntity: tilesEntities[i][j].objects) {
+          if (!zone.any_of<Component::Interaction_Rect>(tileEntity)) {
+            if (zone.valid(entity)) {
+              Utilities::Log("the entity exists");
+              if (zone.any_of<Component::Body>(tileEntity)) {
+                auto &body = zone.get<Component::Body>(tileEntity).body;
+                auto world = Collision::Get_Collision_List(state);
+                world->DestroyBody(body);
+                zone.remove<Component::Body>(tileEntity);
+                zone.destroy(tileEntity);
+              }
+            }
+            else {
+              Utilities::Log("the does not entity exist");
+            }
+            continue;
+          }
+          auto &rect = zone.get<Component::Interaction_Rect>(tileEntity).rect;
+          for (auto &object: quadTrees[state].search(rect)) {
+            if (object->item.entity_ID == tileEntity) {
+              quadTrees[state].remove(object);
+            }
+          }
+          //remove from collision
+          if (zone.any_of<Component::Body>(tileEntity)) {
+            auto &body = zone.get<Component::Body>(tileEntity).body;
+            auto world = Collision::Get_Collision_List(state);
+            world->DestroyBody(body);
+            zone.remove<Component::Body>(tileEntity);
+          }
+          //remove from registry
+          zone.destroy(tileEntity);
+        }
+        tilesEntities[i][j].objects.clear();
       }
     }
   }
 
-  void Remove_Entity_From_Tree(entt::registry &zone, entt::entity &entity,  World::GameState &state) {
+
+  void Remove_Entity_From_Tree(entt::registry &zone, entt::entity &entity, World::GameState &state) {
     auto &rect = zone.get<Component::Remove_From_Object_Tree>(entity).rect;
     for (auto &object: quadTrees[state].search(rect)) {
       if (object->item.entity_ID == entity) {
@@ -114,11 +139,11 @@ namespace Quad_Tree {
     //    if (updateQuadTreePosition >= 50.0f) {
     //      updateQuadTreePosition -= 50.0f;
     auto view = zone.view<Component::Interaction_Rect, Component::In_Object_Tree>();
-//    Utilities::Log(Item_Component::emptyEquipSlot.size());
+    //    Utilities::Log(Item_Component::emptyEquipSlot.size());
     for (std::_List_iterator object_it = quadTrees[state].begin(); object_it != quadTrees[state].end(); ++object_it) {
       auto &entity = object_it->item;
       if (!Debug::settings[Debug::Settings::UpdateQuadTreeDebug]) {
-        if (zone.any_of<Component::Interaction_Rect>(entity.entity_ID)){
+        if (zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
           auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
           entity.rect = interactRect.rect;
           quadTrees[state].relocate(object_it, entity.rect);
@@ -139,7 +164,7 @@ namespace Quad_Tree {
     //    }
   }
 
-  void Draw_Tree_Object_Rects(entt::registry &zone,  World::GameState &state) {
+  void Draw_Tree_Object_Rects(entt::registry &zone, World::GameState &state) {
     if (Debug::settings[Debug::InteractionRects]) {
       auto view = zone.view<Component::Camera>();
       for (auto entity: view) {
@@ -173,7 +198,7 @@ namespace Quad_Tree {
     entt::entity entity_ID;
   };
 
-  Entity_Data Entity_vs_Mouse_Collision(entt::registry &zone, SDL_FRect &entityRect,  World::GameState &state) {
+  Entity_Data Entity_vs_Mouse_Collision(entt::registry &zone, SDL_FRect &entityRect, World::GameState &state) {
     for (const auto &object: quadTrees[state].search(entityRect)) {
       //prevents player from returning themselves from the quadtree
       //should probably make the player entity ID a constant saved somewhere, instead of grabbing it from a view every time

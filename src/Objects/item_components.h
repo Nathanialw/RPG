@@ -148,7 +148,7 @@ namespace Item_Component {
   Equipment Emplace_Equipment(entt::registry &zone, World::GameState &state, entt::entity &entity, Unit_Equip_Type &itemType) {
     auto &equipment = zone.emplace_or_replace<Equipment>(entity);
     equipment.type = itemType;
-    std::cout << (int)emptyEquipSlot[state] << std::endl;
+//    std::cout << "equipment slot entity: " << (int)emptyEquipSlot[state] << std::endl;
     equipment.equippedItems = {{Item_Type::amulet, emptyEquipSlot[state]},
                                {Item_Type::back, emptyEquipSlot[state]},
                                {Item_Type::face, emptyEquipSlot[state]},

@@ -287,7 +287,7 @@ namespace User_Mouse_Input {
     if (!view.empty()) {
       for (auto entity: view) {
         if (!Social_Control::Check_Relationship(zone, player_ID, entity)) {
-          Player_Control::Attack_Order(zone, entity, target_ID, radius);
+//          Player_Control::Attack_Order(zone, entity, target_ID, radius);
         } else {
           return false;
         }

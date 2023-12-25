@@ -1,19 +1,19 @@
 #pragma once
 
+#include "camera.h"
 #include "entt/entt.hpp"
+#include "frame_rendering.h"
+#include "graphics.h"
+#include "pause.h"
+#include "render_iso_tiles.h"
+#include "rendering_components.h"
+#include "timer.h"
+#include "tooltips.h"
+#include "ui_resources.h"
+#include "utilities.h"
+#include "world_grid.h"
 #include <SDL2/SDL.h>
 #include <vector>
-#include "graphics.h"
-#include "timer.h"
-#include "utilities.h"
-#include "camera.h"
-#include "ui_resources.h"
-#include "pause.h"
-#include "world_grid.h"
-#include "frame_rendering.h"
-#include "rendering_components.h"
-#include "render_iso_tiles.h"
-#include "tooltips.h"
 
 namespace Rendering {
 
@@ -22,7 +22,7 @@ namespace Rendering {
   namespace {
     bool showSpriteBox = false;
     bool debug = false;
-  }
+  }// namespace
 
   //	struct tileData {
   //		SDL_Texture* texture;
@@ -117,11 +117,9 @@ namespace Rendering {
         Utilities::Log("Static_Animation_Frame() fallthrough error: all pointers NULL");
       }
     }
-
-
   }
 
-  void Render_Dead(entt::registry &zone, Component::Camera &camera) { //state
+  void Render_Dead(entt::registry &zone, Component::Camera &camera) {//state
 
     auto view1 = zone.view<Component::Renderable, Action_Component::Action, Component::Position, Sprite_Sheet_Info, Component::Direction, Sprite_Offset, Component::Scale, Component::Entity_Type, Component::Dead>();
     auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
@@ -157,14 +155,13 @@ namespace Rendering {
         SDL_SetTextureAlphaMod(texture, renderable.alpha);
         Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
       }
-        // else if {
-        //	sheetData
-        //}
+      // else if {
+      //	sheetData
+      //}
 
       else if (sheetData.sheetData) {
         if (mounts.contains(entity)) {
           //                render horse half behind unit
-
         }
 
         //                render unit
@@ -179,7 +176,6 @@ namespace Rendering {
 
         if (mounts.contains(entity)) {
           //                render horse half in front unit
-
         }
       } else {
         Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL");
@@ -220,11 +216,11 @@ namespace Rendering {
       auto &delay = view.get<Component::Frame_Delay>(spell);
       delay.currentFrameTime += Timer::timeStep;
       if (delay.currentFrameTime >= delay.timeBetweenFrames) {
-        if (frames.currentFrame <= frames.maxFrames) { // if there are still frames remaining
+        if (frames.currentFrame <= frames.maxFrames) {// if there are still frames remaining
           /// only fire this at 60 frames/sec
-          xClipPos = Explosion_Frame_Update(frames);    //get state and direction state sprite draw from
-          anim.renderPosition = Utilities::SDL_Rect_To_SDL_FRect(xClipPos);    //save sprite for vector
-          texture.clippedSpriteFrame = xClipPos;                  //save position for renderer
+          xClipPos = Explosion_Frame_Update(frames);                       //get state and direction state sprite draw from
+          anim.renderPosition = Utilities::SDL_Rect_To_SDL_FRect(xClipPos);//save sprite for vector
+          texture.clippedSpriteFrame = xClipPos;                           //save position for renderer
           frames.currentFrame++;
         } else {
           /// remove explosion from scene and free the entity
@@ -280,8 +276,10 @@ namespace Rendering {
             if (y >= numOfTiles.y) { break; }
             renderPosition.x = originX + (x * tileWidth);
             renderPosition.y = originY + (y * tileHeight);
-            renderPosition.x -= camera.screen.x;;
-            renderPosition.y -= camera.screen.y;;
+            renderPosition.x -= camera.screen.x;
+            ;
+            renderPosition.y -= camera.screen.y;
+            ;
 
             int k = (numOfTiles.x * y) + x;
             auto id = tiles[k].ID;
@@ -304,7 +302,6 @@ namespace Rendering {
           g++;
         }
         if (i == 1) {
-
         }
       }
     }
@@ -349,16 +346,21 @@ namespace Rendering {
     if (placeRenderable >= 250.0f) {
       placeRenderable -= 250.0f;
       SDL_FRect renderRect = {
+          camera.screen.x - 500.0f,
+          camera.screen.y - 500.0f,
+          camera.screen.w + 1000.0f,
+          camera.screen.h + 1000.0f};
+
+      SDL_FRect despawnRect = {
           camera.screen.x - 1000.0f,
           camera.screen.y - 1000.0f,
           camera.screen.w + 2000.0f,
-          camera.screen.h + 2000.0f
-      };
+          camera.screen.h + 2000.0f};
       auto objectsView = zone.view<Component::Position>();
       //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
       float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
       float bottomOfRenderRect = renderRect.y + renderRect.h;
-//    Debug::renderChecks = objectsView.size_hint();
+      //    Debug::renderChecks = objectsView.size_hint();
       int i = 0;
       for (auto entity: objectsView) {
         i++;
@@ -382,18 +384,15 @@ namespace Rendering {
             renderable.y = position.y;
             //	  }
           }
-        } else if (zone.any_of<Component::Renderable>(entity)) {
-          zone.remove<Component::Renderable>(entity);
+        }
 
-          if (zone.any_of<Component::Tile_Index>(entity)) {
-            auto &rect = zone.get<Component::Interaction_Rect>(entity);
-            zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect.rect);
+        else if (!Utilities::bFPoint_FRectIntersect(point, despawnRect)) {
+          if (zone.any_of<Component::Renderable>(entity)) {
+            zone.remove<Component::Renderable>(entity);
 
-            if (zone.any_of<Component::Body>(entity)) {
-              auto &body = zone.get<Component::Body>(entity).body;
-              auto world = Collision::Get_Collision_List(state);
-              world->DestroyBody(body);
-              zone.remove<Component::Body>(entity);
+            if (zone.any_of<Component::Tile_Index>(entity)) {
+              auto &rect = zone.get<Component::Interaction_Rect>(entity);
+              zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect.rect);
             }
           }
         }
@@ -409,8 +408,8 @@ namespace Rendering {
     Mouse::iYMouse = (float) my;
     Mouse::iXWorld_Mouse = (Mouse::iXMouse / camera.scale.x) + camera.screen.x;//getting mouse world Position corrected for scale
     Mouse::iYWorld_Mouse = (Mouse::iYMouse / camera.scale.y) + camera.screen.y;//getting mouse world Position corrected for scale
-    Mouse::iXMouse = Mouse::iXMouse / camera.scale.x;  // getting the screen mouse position corrected for scale
-    Mouse::iYMouse = Mouse::iYMouse / camera.scale.y;  // getting the screen mouse position corrected for scale
+    Mouse::iXMouse = Mouse::iXMouse / camera.scale.x;                          // getting the screen mouse position corrected for scale
+    Mouse::iYMouse = Mouse::iYMouse / camera.scale.y;                          // getting the screen mouse position corrected for scale
     Mouse::mousePoint = {(float) mx, (float) my};
     Mouse::screenMousePoint = Camera_Control::Convert_FPoint_To_Scale(Mouse::mousePoint, camera);
   }
@@ -465,7 +464,7 @@ namespace Rendering {
       Add_Remove_Renderable_Component(zone, state, camera);
       sort_Positions(zone);
       Render_Map(zone, state, camera);
-      Remove_Entities_From_Registry(zone, state); // cannot be done before clearing the entities from the quad tree
+      Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
       //            RenderLine(zone, camera);
       Items::Show_Ground_Items(zone, camera);
       Items::Unit_Name_On_Mouseover(zone, camera);
@@ -486,7 +485,7 @@ namespace Rendering {
       Tooltip::Show_Item_Tooltip(zone, entity, state, mouse, camera);
       Render_Mouse_Item(zone, camera);
       SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
-      if (Items::showGroundItems) {                //****//search quad tree instead
+      if (Items::showGroundItems) {//****//search quad tree instead
         auto view = zone.view<Ground_Item, Component::Renderable>();
         for (auto item: view) {
           auto &box = zone.get<Ground_Item>(item);
@@ -500,4 +499,4 @@ namespace Rendering {
   void Present() {
     SDL_RenderPresent(Graphics::renderer);
   }
-}
+}// namespace Rendering

@@ -126,9 +126,10 @@ namespace Create_Entities {
     return false;
   }
 
-  bool PVG_Building(entt::registry &zone, World::GameState state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+  entt::entity PVG_Building(entt::registry &zone, World::GameState state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
+    auto entity = zone.create();
 
     if (data.sprite_layout == "PVG") {
       ///get texture data
@@ -142,9 +143,8 @@ namespace Create_Entities {
       if (packerframeData == NULL) {
         //	I think returning true will just make it do nothing because of how it is called in map.h
         std::cout << "failed to load PVG_Building() for: " << templateName << std::endl;
-        return true;
+        return entity;
       }
-      auto entity = zone.create();
       auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
       sprite.sheetData = packerframeData;
       sprite.sheet_name = tilesetName;
@@ -242,9 +242,8 @@ namespace Create_Entities {
       else {
         zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
       }
-      return true;
+      return entity;
     }
-    return false;
   }
 
   void Set_Map_Texture(std::string &name, std::string imgpath) {

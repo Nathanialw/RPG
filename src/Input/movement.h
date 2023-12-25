@@ -139,7 +139,7 @@ namespace Movement {
     Player_Move_Poll += Timer::timeStep;
     if (Player_Move_Poll >= 0) {
       Player_Move_Poll = 0;
-      auto view = zone.view<Component::Position, Component::Velocity, Component::Mouse_Move, Action_Component::Action, Component::Moving, Component::Body>();
+      auto view = zone.view<Component::Position, Component::Velocity, Component::Mouse_Move, Action_Component::Action, Component::Moving, Component::Body>(entt::exclude<Player_Component::Target_Data>);
       for (auto entity: view) {
         const auto &position = view.get<Component::Position>(entity);
         auto &action = view.get<Action_Component::Action>(entity);
@@ -149,8 +149,6 @@ namespace Movement {
         if (action.state == Action_Component::idle) {
           Action_Component::Set_State(action, Action_Component::walk);
         }
-        zone.remove<Player_Component::Interact_Move>(entity);
-        zone.remove<Player_Component::Attack_Move>(entity);
         zone.remove<Component::Pickup_Item>(entity);
 
         v.magnitude.x = v.speed * (mov.fX_Destination - position.x);

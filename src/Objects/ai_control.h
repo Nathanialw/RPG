@@ -52,6 +52,10 @@ namespace AI {
         auto type = zone.get<Component::Entity_Type>(target);
         if (type == Component::Entity_Type::unit) {
           if (Social_Control::Check_Relationship(zone, unit_ID, target)) {
+            if (!zone.any_of<Component::Alive>(target)) {Utilities::Log("target has no Component::Alive"); continue; }
+            auto &alive = zone.get<Component::Alive>(target);
+            if (!alive.bIsAlive) { Utilities::Log("target is dead"); continue; }
+
             auto &targetPosition = zone.get<Component::Position>(target);
             auto &targetRadius = zone.get<Component::Radius>(target);
             SDL_FPoint targetPoint = {targetPosition.x, targetPosition.y};

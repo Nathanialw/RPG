@@ -55,9 +55,6 @@ namespace Input_Control {
     SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
     Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect, state);
     if (targetData.b) {
-      //      zone.remove<Component::Pickup_Item>(player_ID);
-      //      zone.remove<Component::Moving>(player_ID);
-      //      zone.remove<Player_Component::Attack_Move>(player_ID);
       ///reset target data
       if (!zone.any_of<Component::Entity_Type>(targetData.entity_ID)) {
         std::string name = "no name found";
@@ -67,25 +64,37 @@ namespace Input_Control {
         std::cout << "object '" << name << "' has no type component: " << (int) targetData.entity_ID << std::endl;
         return false;
       }
+      if (!zone.any_of<Component::Entity_Type>(targetData.entity_ID)) {
+        Utilities::Log("Entity Type Component not found");
+        return false;
+      }
       Component::Entity_Type &type = zone.get<Component::Entity_Type>(targetData.entity_ID);
+      if (!zone.any_of<Component::Position>(targetData.entity_ID)) {
+        Utilities::Log("Position Component not found (entity is dead probably)");
+        return false;
+      }
       Component::Position &targetPosition = zone.get<Component::Position>(targetData.entity_ID);
+      if (!zone.any_of<Component::Radius>(targetData.entity_ID)) {
+        Utilities::Log("Radius Component not found");
+        return false;
+      }
       Component::Radius &targetRadius = zone.get<Component::Radius>(targetData.entity_ID);
       switch (type) {
         case Component::Entity_Type::foliage:
-          break;
+          return true;
         case Component::Entity_Type::spell:
-          break;
+          return true;
         case Component::Entity_Type::object:
-          Player_Control::Interact_Order(zone, player_ID, targetData.entity_ID, targetRadius);
+          Player_Control::Move_To(zone, player_ID, {type, targetData.entity_ID, targetRadius});
           return true;
         case Component::Entity_Type::prop:
-          break;
+          return true;
         case Component::Entity_Type::portal:
-          Player_Control::Portal_Order(zone, player_ID, targetData.entity_ID, targetRadius);
-          break;
+          Player_Control::Move_To(zone, player_ID, {type, targetData.entity_ID, targetRadius});
+          return true;
         case Component::Entity_Type::unit: {
           if (player_ID != targetData.entity_ID) {
-            Player_Control::Attack_Order(zone, player_ID, targetData.entity_ID, targetRadius);
+            Player_Control::Move_To(zone, player_ID, {type, targetData.entity_ID, targetRadius});
             return true;
           } else {
             //  std::cout << "no target, 1 is targeting player: " << testasd(player_ID, targetData.entity_ID) << std::endl;
@@ -115,8 +124,7 @@ namespace Input_Control {
           if (showGroundItems) {
             zone.remove<Component::Pickup_Item>(player_ID);
             zone.remove<Component::Moving>(player_ID);
-            zone.remove<Player_Component::Attack_Move>(player_ID);
-            zone.remove<Player_Component::Interact_Move>(player_ID);
+            zone.remove<Player_Component::Target_Data>(player_ID);
             auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();
             for (auto item_ID: view) {
               ///get the item ID the mouse is over nad plug it into the move to pick up function
@@ -138,6 +146,9 @@ namespace Input_Control {
           Utilities::Log("Component::Entity_Type::SIZE case should not be reached in Check_For_Mouse_Target()");
         }
       }
+    }
+    if (zone.any_of<Player_Component::Target_Data>(player_ID)) {
+      zone.remove<Player_Component::Target_Data>(player_ID);
     }
     return false;
   }

@@ -3,6 +3,7 @@
 
 struct Tile {
   bool created = false;
+  entt::entity dungeon;
   std::vector<entt::entity> objects;
 };
 
