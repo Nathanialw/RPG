@@ -30,7 +30,7 @@ namespace Character_Stats {
   }
 
   // run when equipping or unequipping an item
-  void Update_Equip_slots(entt::registry &zone, World::GameState &state) {// run funtion on item equip or unequip
+  void Update_Equip_slots(entt::registry &zone, int &state) {// run funtion on item equip or unequip
     auto view = zone.view<Rendering_Components::Sprite_Sheet_Info,
                           Item_Component::Item_Equip, Item_Component::Equipment,
                           Rendering_Components::Equipment_Sprites>();
@@ -64,7 +64,7 @@ namespace Character_Stats {
     }
   }
 
-  void Update_Unit_Offense(entt::registry &zone, World::GameState &state) {
+  void Update_Unit_Offense(entt::registry &zone, int &state) {
     auto view = zone.view<Item_Component::Item_Equip, Component::Melee_Damage,
                           Component::Attack_Speed, Item_Component::Equipment>();
     for (auto entity: view) {
@@ -118,7 +118,7 @@ namespace Character_Stats {
     }
   }
 
-  void Update_Unit_Defense(entt::registry &zone, World::GameState &state) {
+  void Update_Unit_Defense(entt::registry &zone, int &state) {
     auto view = zone.view<Item_Component::Item_Equip, Component::Health,
                           Item_Component::Equipment>();
     for (auto entity: view) {
@@ -213,7 +213,7 @@ namespace Character_Stats {
     }
   }
 
-  void Init_Player_Stats(entt::registry &zone, World::GameState &state) {// run funtion on item equip or unequip
+  void Init_Player_Stats(entt::registry &zone, int &state) {// run funtion on item equip or unequip
     auto view =zone.view<Component::Input, Component::Melee_Damage, Component::Health, Component::Attack_Speed, Item_Component::Equipment>();
     for (auto entity: view) {
       auto &damage = view.get<Component::Melee_Damage>(entity);
@@ -261,7 +261,7 @@ namespace Character_Stats {
   }
 
 
-  void Equip_Units(entt::registry &zone, World::GameState &state, Character_Options::Customization &options) {
+  void Equip_Units(entt::registry &zone, int &state, Character_Options::Customization &options) {
     std::vector<std::string> gear = Get_Sex(options.sex);
     Item_Component::Item hair = Get_Hair_Name(options);
     Item_Component::Item beard = Get_Beard_Name(options);
@@ -309,7 +309,7 @@ namespace Character_Stats {
     }
   }
 
-  void Update_Items(entt::registry &zone, World::GameState &state) {
+  void Update_Items(entt::registry &zone, int &state) {
     Update_Equip_slots(zone, state);
     Update_Unit_Offense(zone, state);
     // defensive has to come after offensive as it removes the Item_Equip component
@@ -320,17 +320,17 @@ namespace Character_Stats {
     Items::Init_Item_Data();
   }
 
-  void Init_UI(entt::registry &zone, World::GameState &state) {
+  void Init_UI(entt::registry &zone, int &state) {
   }
 
-  void Init_Player(entt::registry &zone, World::GameState &state, Character_Options::Customization &options) {
+  void Init_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
     Create_Entities::Create_Entity(zone, state, 73188, 36964, "unit", false, data, true);
     Equip_Units(zone, state, options);
     Init_Player_Stats(zone, state);
   }
 
-  void Recreate_Player(entt::registry &zone, World::GameState &state, Character_Options::Customization &options) {
+  void Recreate_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
     Create_Entities::Create_Entity(zone, state, 73188, 36964, "unit", false, data, true);
     Init_Player_Stats(zone, state);

@@ -341,7 +341,7 @@ namespace Rendering {
 
   float placeRenderable = 0.0f;
 
-  void Add_Remove_Renderable_Component(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
+  void Add_Remove_Renderable_Component(entt::registry &zone, int &state, Component::Camera &camera) {
     placeRenderable += Timer::timeStep;
     if (placeRenderable >= 250.0f) {
       placeRenderable -= 250.0f;
@@ -424,7 +424,7 @@ namespace Rendering {
     }
   }
 
-  void Remove_Entities_From_Registry(entt::registry &zone, World::GameState &state) {
+  void Remove_Entities_From_Registry(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Destroyed>();
     for (auto entity: view) {
       if (zone.any_of<Component::In_Object_Tree>(entity)) {
@@ -437,7 +437,7 @@ namespace Rendering {
     zone.compact<>();
   }
 
-  void Render_Map(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
+  void Render_Map(entt::registry &zone, int &state, Component::Camera &camera) {
     SDL_RenderClear(Graphics::renderer);
 
     Maps::Render(zone, state, camera);
@@ -453,7 +453,7 @@ namespace Rendering {
     Render_Explosions(zone, camera);
   }
 
-  bool Rendering(entt::registry &zone, World::GameState &state) {
+  bool Rendering(entt::registry &zone, int &state) {
     Update_Camera_And_Mouse(zone);
     SDL_FPoint mouse = {Mouse::iXMouse, Mouse::iYMouse};
 

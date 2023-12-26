@@ -310,6 +310,34 @@ namespace Entity_Loader {
     return tilesetPath;
   }
 
+  struct TileSet_Data {
+    std::string name;
+    std::string music;
+    std::string tileset;
+    std::string tileUnits;
+  };
+
+  TileSet_Data Get_Tileset_Data(std::string tilesetName) {
+    std::string tileset = db::Append_Quotes(tilesetName);
+    std::string tilesetMusic;
+    std::string tilesetTileset;
+    std::string tilesetUnits;
+
+    const unsigned char *name;
+    sqlite3_stmt *stmt;
+    char buf[300];
+    const char *jj = "SELECT music, tileset, units FROM tilesets WHERE name = ";
+    strcpy(buf, jj);
+    strcat(buf, tileset.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      tilesetMusic = db::Convert_Char("", sqlite3_column_text(stmt, 0));
+      tilesetTileset = db::Convert_Char("", sqlite3_column_text(stmt, 1));
+      tilesetUnits = db::Convert_Char("", sqlite3_column_text(stmt, 2));
+    }
+    return {tilesetName, tilesetMusic, tilesetTileset, tilesetUnits};
+  }
+
   std::vector<std::string> Get_All_Subtype_Of_Type(std::string &type) {
     std::string class_name = db::Append_Quotes(type);
     std::vector<std::string> db_name;

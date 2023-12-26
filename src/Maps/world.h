@@ -1,7 +1,7 @@
 #pragma once
 
 namespace World {
-  
+
   SDL_Texture *tileTextures[200];
 
   struct Tile_Objects {
@@ -29,11 +29,13 @@ namespace World {
   enum class GameState {
     overworld,
     cave,
+    dirt,
     MODES,
     restart,
     exit
   };
   GameState gamestate = GameState::overworld;
+
 
   enum class Tile_Type {
     grass,
@@ -50,13 +52,45 @@ namespace World {
     volcanic,
     SIZE
   };
-  std::array<std::vector<SDL_Texture*>, (int)Tile_Type::SIZE> tileSets;
 
-  std::unordered_map<GameState, Tile_Type> tileType = {
-      {GameState::overworld, Tile_Type::grass },
-      {GameState::cave, Tile_Type::volcanic }
+  struct Tileset {
+    entt::registry zone;
+    int previousZoneIndex;
+    std::string music = "assets/music/nature.ogg";
+    std::string tilesetName = "forest_summer";
+    std::string mobType;
+    std::string tileset;
+    Tile_Type type;
+    std::vector<SDL_Texture *> tileTextures;
+    bool loaded = false;
   };
 
+//  std::array<Tileset, (int) Tile_Type::SIZE> tileSets;
+
+  struct Current_Zone {
+    int current;
+    int next;
+  };
+  Current_Zone currentZone;
+
+  int Zone_Count = 2;
+  void increment_Zone() {
+    Zone_Count++;
+  }
+
+  std::unordered_map<int, Tile_Type> tileType = {
+      {2, Tile_Type::grass},
+      {3, Tile_Type::volcanic},
+      {4, Tile_Type::dirt}};
+
+  int numZones = 200;
+  std::vector<Tileset> world(numZones);
+
+  struct Loaded {
+    int instance = 2;
+  };
+
+  //  Loaded loaded;
   struct TILE {
     int tile;
     bool generated;
@@ -64,18 +98,6 @@ namespace World {
   };
 
   TILE Game_Map[256][256];
-
-  enum Area_Type {
-    wooded,
-    plains,
-    town
-  };
-
-  enum Zone_Type {
-    desert,
-    forest,
-    ocean
-  };
 
   static const int width = 96;
   static const int height = 96;
@@ -90,23 +112,18 @@ namespace World {
   struct Region {
     Tile board[width][height];
   };
-  
-  World::Offset worldOffset;
+
+  World::Offset worldOffset = {-100.0f, -100.0f};
+  ;
   World::Tile_Size size;
-  
-
-
 
   std::vector<entt::entity> Mouse_Hover_Entities;
-  entt::basic_registry<entt::entity> zone;
-//  std::vector<entt::entity> Mouse_Hover_EntitiesOverworld;
 
-  entt::basic_registry<entt::entity> cave;
-//  std::vector<entt::entity> Mouse_Hover_EntitiesCave;
+  //  std::unordered_map<GameState, Tileset> tileSets;
 
   //    std::vector<Zone> World;
 }// namespace World
 
 namespace Map {
 
-}// namespace World
+}// namespace Map

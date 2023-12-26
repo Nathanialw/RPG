@@ -12,7 +12,7 @@ namespace Death_Spells {
   /*
   The x and y can be got rid of and the Position components can be updated elswhere; no reason to couple like that here
   */
-  void Summon_Skeleton(entt::registry &zone, World::GameState &state, float x, float y, std::string name) {
+  void Summon_Skeleton(entt::registry &zone, int &state, float x, float y, std::string name) {
 
     int i = rand() % 10 + 1;
     int j = rand() % 10 + 1;

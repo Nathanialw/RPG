@@ -51,7 +51,7 @@ namespace Death_Control {
     return false;
   }
 
-  void isDead(entt::registry &zone, World::GameState &state) {
+  void isDead(entt::registry &zone, int &state) {
     auto view = zone.view<Action_Component::Action, Component::Health, Component::Position, Component::Body, Component::Soldier, Component::Renderable>(entt::exclude<Component::Spell>);
     for (auto entity: view) {
       auto &health = view.get<Component::Health>(entity);
@@ -62,7 +62,7 @@ namespace Death_Control {
         auto &position = view.get<Component::Position>(entity);
         auto &body = view.get<Component::Body>(entity).body;
 
-        auto world = Collision::Get_Collision_List(state);
+        auto world = Collision::collisionList[state];
         world->DestroyBody(body);
         zone.remove<Component::Body>(entity);
         auto rect = zone.get<Component::Interaction_Rect>(entity).rect;
@@ -98,7 +98,7 @@ namespace Death_Control {
     Item_Component::Item_Type itemType;
   };
 
-  void Drop_Equipment_On_Death(entt::registry &zone, World::GameState &state) {
+  void Drop_Equipment_On_Death(entt::registry &zone, int &state) {
     auto view = zone.view<Item_Component::Equipment, Component::Drop_Equipment, Component::Position, Component::Direction, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset>();
     for (auto entity: view) {
       auto &equipment = view.get<Item_Component::Equipment>(entity);
@@ -198,7 +198,7 @@ namespace Death_Control {
     }
   }
 
-  void Dead_Entity_Routine(entt::registry &zone, World::GameState &state) {
+  void Dead_Entity_Routine(entt::registry &zone, int &state) {
     Set_Dead(zone);
     Update_Ground_Box(zone);
     Drop_Equipment_On_Death(zone, state);

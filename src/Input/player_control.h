@@ -7,6 +7,7 @@
 #include "ui.h"
 #include "social_control.h"
 #include "cave.h"
+#include "mouse_control.h"
 
 namespace Player_Control {
   void Move_To(entt::registry &zone, entt::entity &entity, Player_Component::Target_Data targetData) {
@@ -99,13 +100,9 @@ namespace Player_Control {
     //else move to cursor
   }
 
-  bool Enter_Portal (entt::registry &zone, entt::entity &entity, World::GameState &state, Component::Position &position, Component::Position &targetPosition, Component::Velocity &velocity, Player_Component::Target_Data &targetData) {
+  bool Enter_Portal (entt::registry &zone, entt::entity &entity, int &state, Component::Position &position, Component::Position &targetPosition, Component::Velocity &velocity, Player_Component::Target_Data &targetData) {
     if (Entity_Control::Target_In_Range(position, targetData.radius.fRadius, targetPosition, targetData.radius)) {
-      if (state == World::GameState::cave) {
-        Cave::Exit_Cave();
-      } else {
-        Cave::Enter_Cave();
-      }
+      Cave::Load_Zone(zone, targetData.ID, state);
       Clear_Moving(zone, entity, velocity);
       return true;
 
@@ -125,7 +122,7 @@ namespace Player_Control {
     }
   }
 
-  void Mouse_Move_To_Item(entt::registry &zone, World::GameState &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
+  void Mouse_Move_To_Item(entt::registry &zone, int &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
     auto view = zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Action_Component::Action, Component::Moving>();
     for (auto entity: view) {
       const auto &x = view.get<Component::Position>(entity);
@@ -154,7 +151,7 @@ namespace Player_Control {
     return false;
   }
 
-  void Mouse_To_Target(entt::registry &zone, World::GameState &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
+  void Mouse_To_Target(entt::registry &zone, int &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
     auto view = zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Moving, Player_Component::Target_Data, Component::Melee_Range, Component::Radius>();
     for (auto entity: view) {
       //if not in range
@@ -216,7 +213,7 @@ namespace Player_Control {
 //    //    Mouse_Move_Arrived_Pickup_Item(zone, isItemCurrentlyHeld);
 //  }
 
-  void Move_To_Atack_Routine(entt::registry &zone, World::GameState &state) {
+  void Move_To_Atack_Routine(entt::registry &zone, int &state) {
     Mouse_Move_To_Item(zone, state);
     Mouse_To_Target(zone, state);
     //		Mouse_Move_Arrived_Attack_Target(zone);

@@ -44,7 +44,7 @@ namespace Unit_Status {
     }
   }
 
-  void Update_Health(entt::registry &zone, World::GameState &state) {
+  void Update_Health(entt::registry &zone, int &state) {
     auto view2 = zone.view<Component::Position, Component::Health, Component::Struck>();
     for (auto entity: view2) {
       auto &struck = view2.get<Component::Struck>(entity);
@@ -95,7 +95,7 @@ namespace Unit_Status {
     //		}
   }
 
-  void Update_Unit_Status(entt::registry &zone, World::GameState &state) {
+  void Update_Unit_Status(entt::registry &zone, int &state) {
     Items::Item_Collision(zone);
     Update_Collided_Unit(zone);
     Update_Health(zone, state);

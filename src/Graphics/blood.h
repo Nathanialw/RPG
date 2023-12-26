@@ -6,7 +6,7 @@
 
 namespace Blood {
 
-  void Splatter(entt::registry &zone, World::GameState &state, Component::Position position) {
+  void Splatter(entt::registry &zone, int &state, Component::Position position) {
 
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
     Collision::aabb aabb;
@@ -17,7 +17,7 @@ namespace Blood {
     Create_Entities::PVG_Building(zone, state, position.x, position.y, position.x, position.y, Game_Objects_Lists::tilesets["bloodSplatter"][splatterIndex], splatterIndex, aabb, pointVecs, line);
   }
 
-  void Pool(entt::registry &zone, World::GameState &state, Component::Position position) {
+  void Pool(entt::registry &zone, int &state, Component::Position position) {
 
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
     Collision::aabb aabb;

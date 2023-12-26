@@ -19,34 +19,24 @@
 
 namespace Maps {
 
-
   void close_zone(entt::registry &scene) {
     scene.clear<>();
   }
 
   World::Region region;
 
-  void Init_Tiles() {
+
+  void Init_Tiles(int &instance, std::string &tilesetName) {
     //        randomize
-    World::worldOffset = {-100.0f, -100.0f};
+    Entity_Loader::TileSet_Data data = Entity_Loader::Get_Tileset_Data(tilesetName);
+    Utilities::Log(data.music);
+    World::world[instance].music = data.music.c_str();
+    Utilities::Log(World::world[instance].music);
+    World::world[instance].mobType = data.tileUnits;
+    World::world[instance].tileset = data.name;
+    World::world[instance].tileTextures.emplace_back(Graphics::createTexture(data.tileset.c_str()));
+    //    World::tileSets[(int)World::Tile_Type::grass].music = "assets/music/nature.ogg";
 
-    World::tileSets[(int)World::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_0.png"));
-    World::tileSets[(int)World::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_1.png"));
-    World::tileSets[(int)World::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_2.png"));
-    World::tileSets[(int)World::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_3.png"));
-    World::tileSets[(int)World::Tile_Type::grass].emplace_back(Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_4.png"));
-
-    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
-    World::tileSets[(int)World::Tile_Type::volcanic].emplace_back(Graphics::createTexture("assets/sprites/environment/volcanic/Volcanic_7_Tile.png"));
-//    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
-//    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
-//    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
-//    World::tileSets[(int)World::Tile_Type::dirt].emplace_back(Graphics::createTexture("assets/sprites/environment/dirt/Mud_10_Tile.png"));
-
-    //    World::tileSets[(int)World::Tile_Type::grass][1] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_1.png");
-    //    World::tileSets[(int)World::Tile_Type::grass][2] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_2.png");
-    //    World::tileSets[(int)World::Tile_Type::grass][3] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_3.png");
-    //    World::tileSets[(int)World::Tile_Type::grass][4] = Graphics::createTexture("assets/sprites/environment/forest/forest_floor/Grass_Forest_4.png");
   }
 
   void Create_Map(World::Offset offset, entt::registry &zone) {
@@ -74,8 +64,8 @@ namespace Maps {
   }
 
   //    needs to run when the zone is in range
-  void Generate_Region() {
-    Init_Tiles();
+  void Generate_Region(int &instance, std::string &tilesetName) {
+    Init_Tiles(instance, tilesetName);
 
     //go through all tiles and and ust the position to generate a random number, use that number to determine what objects are on each tile
     //        Create_Map({0.0f, 0.0f});
@@ -188,7 +178,7 @@ namespace Maps {
     }
   }
 
-  void Init_Tile_Objects(entt::registry &zone, World::GameState &state) {
+  void Init_Tile_Objects(entt::registry &zone, int &state, std::string &unitType) {
     int numUnits = 0;
     float x = 0.0f;
     float y = 0.0f;
@@ -202,9 +192,9 @@ namespace Maps {
           x = Procedural_Generation::Random_Int(0, (int) World::size.width, seed);
           y = Procedural_Generation::Random_Int(0, (int) World::size.height, seed);
 
-          int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::units["demons"].size(), seed);
+          int n = Procedural_Generation::Random_Int(1, Game_Objects_Lists::units[unitType].size(), seed);
           n -= 1;
-          db::Unit_Data data = Game_Objects_Lists::units["demons"][n];
+          db::Unit_Data data = Game_Objects_Lists::units[unitType][n];
           Create_Entities::Create_Entity(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, "", false, data, false);
           numUnits++;
         }
@@ -217,7 +207,7 @@ namespace Maps {
   int ii = 0;
 
   //position of tile
-  void Generate_Trees(entt::registry &zone, World::GameState &state, SDL_FRect rect, Tile &tile) {
+  void Generate_Trees(entt::registry &zone, int &state, SDL_FRect rect, std::string &tileSet, Tile &tile) {
     Procedural_Components::Seed seed;
     //    collisionBox;
     Collision::aabb aabb;
@@ -238,14 +228,14 @@ namespace Maps {
 
       float i = rect.x / World::size.width;
       float j = rect.y / World::size.height;
-
-      xmlIndex = Procedural_Generation::Random_Int(1, Game_Objects_Lists::tilesets["forest_summer"].size() - 1, seed);
-      objectName = Game_Objects_Lists::tilesets["forest_summer"][xmlIndex];
+      if (Game_Objects_Lists::tilesets[tileSet].size() <= 0) { return; }
+      xmlIndex = Procedural_Generation::Random_Int(0, Game_Objects_Lists::tilesets[tileSet].size(), seed);
+      objectName = Game_Objects_Lists::tilesets[tileSet][xmlIndex];
       tile.objects.emplace_back(Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex, aabb, pointVecs, line));
     }
   }
 
-  void Render(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
+  void Render(entt::registry &zone, int &state, Component::Camera &camera) {
     int x = 0;
     int y = 0;
 
@@ -258,15 +248,16 @@ namespace Maps {
           // generate tile type
           Procedural_Components::Seed seed;
           seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
-          int textureArraySize = World::tileSets[(int)World::tileType[state]].size();
+//          int textureArraySize = World::tileSets[(int)World::tileType[state]].tileTextures.size();
+          int textureArraySize = World::world[state].tileTextures.size();
           int tile = Procedural_Generation::Random_Int(0, textureArraySize, seed);
-
           SDL_FRect rect;
           rect.x = i * World::size.width;
           rect.y = j * World::size.height;
           rect.w = World::size.width;
           rect.h = World::size.height;
-          SDL_Texture *texture = World::tileSets[(int)World::tileType[state]][tile];
+//          SDL_Texture *texture = World::tileSets[(int)World::tileType[state]].tileTextures[tile];
+          SDL_Texture *texture = World::world[state].tileTextures[tile];
           //                if entities created do nothing
           if (tilesEntities[i][j].created) {
 
@@ -274,7 +265,7 @@ namespace Maps {
           //                else create them
           else {
             //            Utilities::Log("creating tile objects");
-            Generate_Trees(zone, state, rect, tilesEntities[i][j]);
+            Generate_Trees(zone, state, rect, World::world[state].tileset, tilesEntities[i][j]);
             tilesEntities[i][j].created = true;
           }
 
@@ -292,7 +283,7 @@ namespace Maps {
   tmx::Map map;
   SDL_Texture *pTexture = NULL;
 //
-//  void Create_Map(entt::registry &zone, World::GameState &state) {
+//  void Create_Map(entt::registry &zone, int &state) {
 //    Generate_Region();
 //
 //    if (map.load("assets/maps/aaaa.tmx")) {

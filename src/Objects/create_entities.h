@@ -58,7 +58,7 @@ namespace Create_Entities {
     std::cout << "failed to assign template key for: " << name << std::endl;
   }
 
-  void Set_Collision_Box(entt::registry &zone, World::GameState &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
+  void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
     if (entity_class == "polygon") {
       Collision::Create_Static_Body_Polygon(zone, state, entity, position.x, position.y, pointVecs);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
@@ -85,7 +85,7 @@ namespace Create_Entities {
 
 
 
-  bool Polygon_Building(entt::registry &zone, World::GameState &state, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
+  bool Polygon_Building(entt::registry &zone, int &state, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(name);
 
@@ -126,7 +126,7 @@ namespace Create_Entities {
     return false;
   }
 
-  entt::entity PVG_Building(entt::registry &zone, World::GameState state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+  entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
     auto entity = zone.create();
@@ -198,8 +198,11 @@ namespace Create_Entities {
           templateName == "Rock_2_6" ||
           templateName == "Rock_2_7" ||
           templateName == "Rock_2_8") {
-          auto &gg = zone.emplace_or_replace<Component::Dungeon>(entity);
-          gg.load = templateName;
+
+          World::increment_Zone();
+          auto &dungeon = zone.emplace_or_replace<Component::Dungeon>(entity);
+          dungeon.instance = World::Zone_Count;
+          dungeon.tilesetName = "hell";
           zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::portal);
       }
 
@@ -255,7 +258,7 @@ namespace Create_Entities {
   Procedural_Components::Seed seed;
   bool startup = true;
 
-  void Create_Entity(entt::registry &zone, World::GameState &state, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player) {
+  void Create_Entity(entt::registry &zone, int &state, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player) {
     auto entity = zone.create();
     Entity_Loader::Data data;
     int unit_ID = 0;
@@ -370,9 +373,6 @@ namespace Create_Entities {
       auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
 
       if (!player){
-        if (imgPaths.name == "") {
-          zone.emplace_or_replace<Component::Dungeon>(entity);
-        }
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
         auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
         auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
@@ -402,11 +402,8 @@ namespace Create_Entities {
         }
         zone.emplace_or_replace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
       }
-      else if (state == World::GameState::cave) {
-        Load::Copy_Player(zone, World::zone, state, World::GameState::overworld, entity);
-      }
-      else if (state == World::GameState::overworld) {
-        Load::Copy_Player(zone, World::cave, state, World::GameState::cave, entity);
+      else {
+        Load::Copy_Player(zone, World::world[World::world[state].previousZoneIndex].zone, state, World::world[state].previousZoneIndex, entity);
       }
 
       zone.emplace_or_replace<Component::Soldier>(entity);

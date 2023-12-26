@@ -311,6 +311,9 @@ namespace Spritesheet_Structs {
         } else if (checkAction == "Attack 1") {
           action = Action_Component::Action_State::attack;
           actionFrameData[action].frameSpeed = i;
+        } else if (checkAction == "attack") {
+          action = Action_Component::Action_State::attack;
+          actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "1-H Idle") {
           action = Action_Component::Action_State::idle;
           actionFrameData[action].frameSpeed = i;
@@ -358,11 +361,16 @@ namespace Spritesheet_Structs {
           actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "dead") {
           action = Action_Component::Action_State::struck;
+        } else if (checkAction == "gethit") {
+          action = Action_Component::Action_State::struck;
           actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "collapse") {
           action = Action_Component::Action_State::dying;
           actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "ko") {
+          action = Action_Component::Action_State::dead;
+          actionFrameData[action].frameSpeed = i;
+        } else if (checkAction == "sleep") {
           action = Action_Component::Action_State::dead;
           actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "Dead") {

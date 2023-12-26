@@ -19,9 +19,7 @@ namespace Collision_Component {
 
 namespace Collision {
 //  std::map<World::GameState, b2World*> world;
-  b2World* overworld = NULL;
-  b2World* cave = NULL;
-
+  std::vector<b2World*> collisionList(World::numZones);
 
   const float timeStep = 1.0f / 5.0f;
   const float M2P = 60.0f;
@@ -34,15 +32,6 @@ namespace Collision {
     int hy = 0;
   };
 
-  b2World* Get_Collision_List(World::GameState state) {
-    switch (state) {
-      case World::GameState::overworld: {return overworld;}
-      case World::GameState::cave: {return cave;}
-      case World::GameState::restart: {Utilities::Log("Collision Get_Collision_List() Big bug");return cave;}
-      case World::GameState::MODES: {Utilities::Log("Collision Get_Collision_List() Big bug");return cave;}
-      case World::GameState::exit: {Utilities::Log("Collision Get_Collision_List() Big bug");return cave;}
-    }
-  }
   
   void Set_Collision_NULL() {
     for (int i = 0; i < (int)World::GameState::MODES; ++i) {
@@ -51,25 +40,15 @@ namespace Collision {
     }
   }
 
-  void init_Collison(World::GameState &state) {
+  void init_Collison(int &state) {
     b2Vec2 gravity;
     gravity.SetZero();
-    switch (state) {
-      case World::GameState::overworld: {overworld = new b2World(gravity), overworld->SetAutoClearForces(false); break;}
-      case World::GameState::cave:      {cave = new b2World(gravity),      cave->SetAutoClearForces(false); break;}
-      case World::GameState::restart: {Utilities::Log("Collision Get_Collision_List() Big bug");break;}
-      case World::GameState::MODES: {Utilities::Log("Collision Get_Collision_List() Big bug");break;}
-      case World::GameState::exit: {Utilities::Log("Collision Get_Collision_List() Big bug");break;}
-    }
-//
-//    if (!world) {
-//      world = new b2World(gravity); //no gravity
-//      world->SetAutoClearForces(false);
-//    }
+    collisionList.at(state) = new b2World(gravity);
+    collisionList[state]->SetAutoClearForces(false);
   }
 
-  void close_collision(World::GameState state) {
-    auto world = Get_Collision_List(state);
+  void close_collision(int &state) {
+    auto world = collisionList[state];
     if (world) {
       b2Body *body = world->GetBodyList();
 
@@ -82,14 +61,14 @@ namespace Collision {
     }
 }
 
-  void Create_Static_Body_Rect(entt::registry &zone, World::GameState &state, entt::entity &entity, float &x, float &y, Collision::aabb aabb) {
+  void Create_Static_Body_Rect(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, Collision::aabb aabb) {
 
     b2BodyDef bodyDef;
 
     bodyDef.position.Set(x, y);
     bodyDef.userData.entity_ID = (int) entity;
 
-    auto world = Get_Collision_List(state);
+    auto world = collisionList[state];
 
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
@@ -100,14 +79,14 @@ namespace Collision {
     body->CreateFixture(&rect, 0.0f);
   }
 
-  void Create_Static_Body_Polygon(entt::registry &zone, World::GameState &state, entt::entity &entity, float &x, float &y, std::vector<std::vector<tmx::Vector2<float>>> pointVecs) {
+  void Create_Static_Body_Polygon(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, std::vector<std::vector<tmx::Vector2<float>>> pointVecs) {
 
     b2BodyDef bodyDef;
 
     bodyDef.position.Set(x, y);
     bodyDef.userData.entity_ID = (int) entity;
 
-    auto world = Get_Collision_List(state);
+    auto world = collisionList[state];
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
 
@@ -128,13 +107,13 @@ namespace Collision {
     }
   }
 
-  void Create_Static_Body(entt::registry &zone, World::GameState &state, entt::entity &entity, float &x, float &y, float radius) {
+  void Create_Static_Body(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, float radius) {
     b2BodyDef bodyDef;
 
     bodyDef.position.Set(x, y);
     bodyDef.userData.entity_ID = (int) entity;
 
-    auto world = Get_Collision_List(state);
+    auto world = collisionList[state];
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
 
@@ -164,7 +143,7 @@ namespace Collision {
     body.body->CreateFixture(&bodyFixture);
   }
 
-  void Create_Dynamic_Body(entt::registry &zone, World::GameState &state, entt::entity &entity, float &x, float &y, float radius, float mass, bool &isDynamicBody) {
+  void Create_Dynamic_Body(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, float radius, float mass, bool &isDynamicBody) {
 
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
@@ -173,7 +152,7 @@ namespace Collision {
     bodyDef.linearDamping = 10.0f;
     bodyDef.angularDamping = 0.0f;
 
-    b2World* world = Get_Collision_List(state);
+    b2World* world = collisionList[state];
     b2Body *body = world->CreateBody(&bodyDef);
     auto &bodyComponent = zone.emplace_or_replace<Component::Body>(entity, body);
 
@@ -270,9 +249,9 @@ namespace Collision {
 
   float collision_Timestep = 0.0f;
 
-  void Update_Collision(entt::registry &zone, World::GameState &state) {
+  void Update_Collision(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Position>();
-    b2World* world = Get_Collision_List(state);
+    b2World* world = collisionList[state];
     b2Body *body = world->GetBodyList();
     int i = 0;
     //needs to be run multiple times per frame at low frame rate otherwise it will fall behind the rest of the program
@@ -306,7 +285,7 @@ namespace Collision {
     Debug::settingsValue[Debug::CollisionChecks] = i;
   }
 
-  void Collision_Routine(entt::registry &zone, World::GameState &state) {
+  void Collision_Routine(entt::registry &zone, int &state) {
     //        Dynamic_Collisions(zone);
     //        Resolve_Dynamic_Collisions(zone);
     Update_Collision(zone, state);

@@ -15,7 +15,7 @@ namespace Load {
 //    }
 //  }
 
-  void Get_Bust_Textures(entt::registry &zone, World::GameState &state, entt::entity &item, Item_Component::Item_Type itemType, Rendering_Components::Body_Frame &bodyFrame, Rendering_Components::Unit_Frame_Portrait &unitPortraitFrame) {
+  void Get_Bust_Textures(entt::registry &zone, int &state, entt::entity &item, Item_Component::Item_Type itemType, Rendering_Components::Body_Frame &bodyFrame, Rendering_Components::Unit_Frame_Portrait &unitPortraitFrame) {
     if (item != Item_Component::emptyEquipSlot[state]) {
       unitPortraitFrame.gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
       bodyFrame.gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(item);
@@ -52,7 +52,7 @@ namespace Load {
     return newItem;
   }
 
-  void Copy_Equipment(entt::registry &OldZone, World::GameState &state, World::GameState previousState, entt::registry &newZone, entt::entity oldUnit, entt::entity &newUnit) {
+  void Copy_Equipment(entt::registry &OldZone, int &state, int previousState, entt::registry &newZone, entt::entity oldUnit, entt::entity &newUnit) {
     auto view = OldZone.view<Component::Input, Item_Component::Equipment, Component::Position, Rendering_Components::Unit_Frame_Portrait, Rendering_Components::Body_Frame>();
     for (auto unit: view) {
       //need to copy each item in the equipment
@@ -75,7 +75,7 @@ namespace Load {
     }
   }
 
-  void Copy_Inventory(entt::registry &OldZone, entt::registry &newZone, World::GameState oldState, World::GameState &newState, entt::entity oldEntity, entt::entity &newEntity) {
+  void Copy_Inventory(entt::registry &OldZone, entt::registry &newZone, int oldState, int &newState, entt::entity oldEntity, entt::entity &newEntity) {
     UI::Bag_UI::Create_Bag_UI(newZone, newEntity, newState);
     auto &oldBag = OldZone.get<Component::Bag>(oldEntity).bag;
     auto &newBag = newZone.get<Component::Bag>(newEntity).bag;
@@ -89,7 +89,7 @@ namespace Load {
     }
   }
 
-  void Copy_Player(entt::registry &newZone, entt::registry &oldZone, World::GameState newState, World::GameState oldState, entt::entity newEntity) {
+  void Copy_Player(entt::registry &newZone, entt::registry &oldZone, int newState, int oldState, entt::entity newEntity) {
     auto view = oldZone.view<Component::Interaction_Rect, Component::Body, Social_Component::Relationships, Item_Component::Equipment, Rendering_Components::Equipment_Sprites, Component::Health, Component::Input>();
     for (auto playerID: view) {
       auto &relationships = view.get<Social_Component::Relationships>(playerID);
@@ -103,7 +103,7 @@ namespace Load {
       Copy_Inventory(oldZone, newZone, oldState, newState, playerID, newEntity);
 
       auto &body = view.get<Component::Body>(playerID).body;
-      auto world = Collision::Get_Collision_List(oldState);
+      auto world = Collision::collisionList[oldState];
       world->DestroyBody(body);
 
       auto &rect = view.get<Component::Interaction_Rect>(playerID).rect;

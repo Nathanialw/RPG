@@ -95,7 +95,7 @@ namespace Menu {
     }
   }
 
-  int Show_Menu(Menu &menus, entt::registry &zone, World::GameState &state, Component::Camera &camera) {
+  int Show_Menu(Menu &menus, entt::registry &zone, int &state, Component::Camera &camera) {
     for (int i = 0; i < menu.buttons.size(); i++) {
       menu.buttons[i].scaledSize = UI::Update_Scale(camera.scale, menu.buttons[i].size);
 
@@ -161,7 +161,7 @@ namespace Menu {
     return menu.buttons.size() + 1;
   }
 
-  bool Render_Menu(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
+  bool Render_Menu(entt::registry &zone, int &state, Component::Camera &camera) {
     //pause with no inout
     if (toggleMenu) {
       UI::Overlay(camera.scale);

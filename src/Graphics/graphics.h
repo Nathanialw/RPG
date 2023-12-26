@@ -9,6 +9,7 @@
 #include "components.h"
 #include "SDL_FontCache/SDL_FontCache.h"
 #include "rendering_components.h"
+#include "world.h"
 
 namespace Graphics_Component {
 
@@ -23,7 +24,7 @@ namespace Graphics {
   TTF_Font *font;
   FC_Font *fcFont = FC_CreateFont();
 
-  entt::entity defaultIcon;
+  std::vector<entt::entity> defaultIcon(World::numZones);
 
   struct Surface_Data {
     SDL_Texture *pTexture;

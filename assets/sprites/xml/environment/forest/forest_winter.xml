@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:1c267f02010a6c5d40b79dfcee58beb8:ea70163eb592db2d0c08df5fb0185af3:b6164c874b1e4d0825fa7c57d3fc6147$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="forest_winter.png" width="944" height="1397">
+    <sprite n="Tree_Leafless_1" x="1" y="995" w="233" h="401"/>
+    <sprite n="Tree_Leafless_2" x="471" y="970" w="235" h="408"/>
+    <sprite n="Tree_Leafless_3" x="337" y="1" w="271" h="505"/>
+    <sprite n="Tree_Leafless_4" x="1" y="1" w="334" h="495"/>
+    <sprite n="Tree_Snow_1" x="236" y="995" w="233" h="401"/>
+    <sprite n="Tree_Snow_2" x="708" y="959" w="235" h="408"/>
+    <sprite n="Tree_Snow_3" x="610" y="1" w="271" h="505"/>
+    <sprite n="Tree_Snow_4" x="1" y="498" w="334" h="495"/>
+    <sprite n="Tree_Snow_5" x="337" y="508" w="295" h="460"/>
+    <sprite n="Tree_Snow_6" x="634" y="508" w="270" h="449"/>
+</TextureAtlas>

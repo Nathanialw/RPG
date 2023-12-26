@@ -54,7 +54,7 @@ namespace Spells {
   }
 
   //  void Create_Spell(entt::entity caster_ID, entt::entity &entity, Component::Position &pos, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
-  void Create_Spell(entt::registry &zone, World::GameState &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
+  void Create_Spell(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
     auto entity = zone.create();
     float scale = 1.0f;
     Entity_Loader::Data data = Entity_Loader::parse_data(spellname);
@@ -103,7 +103,7 @@ namespace Spells {
     Spell_Linear_Target(zone, entity, targetX, targetY, spelldir.x, spelldir.y, spellData.range);
   }
 
-  void Cast_Spell(entt::registry &zone, World::GameState &state) {
+  void Cast_Spell(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Direction, Action_Component::Action, Component::Position, Component::Casting, Component::Velocity>();
     for (auto entity: view) {
 
@@ -149,7 +149,7 @@ namespace Spells {
     zone.emplace_or_replace<Component::Explosion>(explosion, 0, 0, 0.0f, 0.0f, 128.0f, 128.0f, 64.0f, 100.0f);
   }
 
-  void Destroy_NonMoving_Spells(entt::registry &zone, World::GameState &state) {
+  void Destroy_NonMoving_Spells(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Spell, Component::Body, Component::Position, Component::Interaction_Rect, Component::In_Object_Tree>(entt::exclude<Component::Linear_Move, Component::Explosion>);
     for (auto entity: view) {
       auto &position = view.get<Component::Position>(entity);
@@ -158,7 +158,7 @@ namespace Spells {
       ///create explosion
       Create_Explosion(zone, position.x, position.y);
       ///destroy box2d body
-      auto world = Collision::Get_Collision_List(state);
+      auto world = Collision::collisionList[state];
       world->DestroyBody(body.body);
       zone.remove<Component::Body>(entity);
       ///set to remove from quad tree on update
@@ -168,7 +168,7 @@ namespace Spells {
     }
   }
 
-  void Clear_Collided_Spells(entt::registry &zone, World::GameState &state) {
+  void Clear_Collided_Spells(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Spell, Component::Position, Component::Alive, Component::Body, Component::Radius, Component::Interaction_Rect, Component::In_Object_Tree>(entt::exclude<Component::Mouse_Move, Component::Linear_Move, Component::Explosion>);
     for (auto entity: view) {
       if (!view.get<Component::Alive>(entity).bIsAlive) {
@@ -180,7 +180,7 @@ namespace Spells {
         ///create explosion
         Create_Explosion(zone, position.x, position.y);
         ///destroy box2d body
-        auto world = Collision::Get_Collision_List(state);
+        auto world = Collision::collisionList[state];
         world->DestroyBody(body.body);
         zone.remove<Component::Body>(entity);
         ///set to remove from quad tree on update
@@ -216,7 +216,7 @@ namespace Spells {
     struck.struck += damage;
   }
 
-  void Check_Spell_Collide(entt::registry &zone, World::GameState &state) {
+  void Check_Spell_Collide(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Spell, Component::Radius, Component::Position, Component::Alive, Component::Caster>();
     for (auto entity: view) {
       auto &alive = view.get<Component::Alive>(entity).bIsAlive;
@@ -240,7 +240,7 @@ namespace Spells {
   }
 
 
-  void Update_Spells(entt::registry &zone, World::GameState &state) {
+  void Update_Spells(entt::registry &zone, int &state) {
     Destroy_NonMoving_Spells(zone, state);
     Clear_Collided_Spells(zone, state);
     Check_Spell_Collide(zone, state);

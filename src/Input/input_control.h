@@ -17,7 +17,7 @@ namespace Input_Control {
     zone.remove<Component::Mouse_Move>(entity);
   }
 
-  bool Move_To_Item_From_Name(entt::registry &zone, World::GameState &state, entt::entity &player_ID, Component::Position &playerPosition, entt::entity item_ID) {
+  bool Move_To_Item_From_Name(entt::registry &zone, int &state, entt::entity &player_ID, Component::Position &playerPosition, entt::entity item_ID) {
     auto &radius = zone.get<Component::Radius>(player_ID).fRadius;
     SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
 
@@ -46,7 +46,7 @@ namespace Input_Control {
   }
 
 
-  bool Check_For_Mouse_Target(entt::registry &zone, World::GameState &state, bool showGroundItems, entt::entity &player_ID, Component::Position &playerPosition) {
+  bool Check_For_Mouse_Target(entt::registry &zone, int &state, bool showGroundItems, entt::entity &player_ID, Component::Position &playerPosition) {
     if (Social_Control::Enemy_Selected(zone, player_ID)) {
       if (zone.any_of<Component::Attacking>(player_ID)) {
         return true;

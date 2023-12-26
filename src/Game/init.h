@@ -30,16 +30,22 @@
 namespace Init {
 
   std::string batch = "1";
+
   struct Game {
     bool success = false;
     Menu::Menu menu;
+    int instanceCount = 0;
     bool overworld = false;
     bool cave = false;
+
+    void incrementInstance() {
+      instanceCount++;
+    };
   };
 
+
   struct Loaded {
-    bool overworld = false;
-    bool cave = false;
+    int instance = 2;
   };
 
   void Clear_Events() {
@@ -53,7 +59,7 @@ namespace Init {
 
   Character_Options::Customization options;
 
-  void Recreate_Player(entt::registry &zone, World::GameState &state) {
+  void Recreate_Player(entt::registry &zone, int &state) {
     Character_Stats::Recreate_Player(zone, state, options);
   }
 
@@ -65,7 +71,6 @@ namespace Init {
     Debug::Load_Settings();
     UI_Frames::Load_Buildings();
     //this one should be different for whichever class you create
-    Maps::Generate_Region();
     Load_Object_List::Load_Entities();
     Menu::Init();
     Menu_Options::Load_Options();
@@ -74,11 +79,13 @@ namespace Init {
   }
 
   //only needs to be fired once per zone
-  void Create_Game_entities(entt::registry &zone, World::GameState &state, Character_Options::Customization &options) {
+  void Create_Game_entities(entt::registry &zone, int &state, std::string &tilesetName, Character_Options::Customization &options) {
+
+    Maps::Generate_Region(state, tilesetName);
     //for when we clear the registry
     Collision::init_Collison(state);
     Item_Component::emptyEquipSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
-    Graphics::defaultIcon = Graphics::Create_Icon_Entity(zone, Graphics::default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
+    Graphics::defaultIcon[state] = Graphics::Create_Icon_Entity(zone, Graphics::default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
     UI::Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
     Mouse::Init_mouse(zone);
     UI_Spellbook::Init_UI(zone);
@@ -87,23 +94,25 @@ namespace Init {
     } else {
       Recreate_Player(zone, state);
     }
-    Maps::Init_Tile_Objects(zone, state);
+    Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
     Quad_Tree::Fill_Quad_Tree(zone, state);
     Action_Bar::Create_Action_Bar(zone, state);
   };
 
   void Restart_Game() {
-    Collision::close_collision(World::GameState::overworld);
-    Collision::close_collision(World::GameState::cave);
-    Maps::close_zone(World::zone);
-    Maps::close_zone(World::cave);
-    Quad_Tree::quadTrees[World::GameState::overworld].clear();
-    Quad_Tree::quadTrees[World::GameState::cave].clear();
+    for (int i = 0; i < World::world.size(); ++i) {
+      Collision::close_collision(i);
+      Maps::close_zone(World::world[i].zone);
+      Quad_Tree::quadTrees[i].clear();
+    }
+    World::Zone_Count = 2;
+    World::world.clear();
+    World::world.resize(World::numZones);
   }
 
-  Game Init_World(Game &game) {
+  Game Init_World(Game &game, int &state) {
     Clear_Events();
-    Video::Run_Audio("assets/music/nature.ogg");
+    Video::Run_Audio(World::world[state].music.c_str());
     return game;
   }
 
@@ -125,24 +134,23 @@ namespace Init {
     Init_Data();
   }
 
-  void Reload_Zone(entt::registry &zone, World::GameState &state) {
+  void Reload_Zone(entt::registry &zone, int &state) {
     Game game;
     Recreate_Player(zone, state);
-    Init_World(game);
+    Init_World(game, state);
   }
 
-  Game Start_Game(entt::registry &zone, World::GameState &state, Loaded &loaded) {
+  Game Start_Game(entt::registry &zone, std::string &tilesetName, int &state) {
     Game game;
-    if (state == World::GameState::overworld) { loaded.overworld = true; }
-    if (state == World::GameState::cave) { loaded.cave = true;}
+    World::world[state].loaded = true;
     if (Create_Entities::startup) {
       options = Character_Create();
       if (!options.success) {
         return game;
       }
     }
-    Create_Game_entities(zone, state, options);
-    Init_World(game);
+    Create_Game_entities(zone, state, tilesetName, options);
+    Init_World(game, state);
     return game;
   }
 }// namespace Init

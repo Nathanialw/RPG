@@ -24,7 +24,7 @@ namespace Social_Component {
     orc,
     dwarf,
     monster,
-    eldtritch,
+    eldritch,
     drow,
     nature,
     animal,
@@ -82,8 +82,8 @@ namespace Social_Control {
     if (raceStr == "monster") {
       return Social_Component::Race::monster;
     }
-    if (raceStr == "eldtritch") {
-      return Social_Component::Race::eldtritch;
+    if (raceStr == "eldritch") {
+      return Social_Component::Race::eldritch;
     }
     if (raceStr == "drow") {
       return Social_Component::Race::drow;

@@ -23,11 +23,11 @@ namespace Quad_Tree {
   //will be attached to the map later
   SDL_FRect zoneSize = {0.0f, 0.0f, 10000.0f, 10000.0f};
   //  DynamicQuadTreeContainer<someObjectWithArea> treeObjects;
-  //  std::array<Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>, 2> quadTrees;
-  std::unordered_map<World::GameState, Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees;
+//  std::unordered_map<World::GameState, Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees;
+  std::vector<Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees(World::numZones);
   float offset = 40.0f;
 
-  void Fill_Quad_Tree(entt::registry &zone, World::GameState &state) {
+  void Fill_Quad_Tree(entt::registry &zone, int &state) {
     quadTrees[state].resize(zoneSize);
 
     auto view = zone.view<Component::Interaction_Rect>();
@@ -45,7 +45,7 @@ namespace Quad_Tree {
 
   float emplaceQuadTree = 0.0f;
 
-  void Emplace_Objects_In_Quad_Tree(entt::registry &zone, World::GameState &state) {
+  void Emplace_Objects_In_Quad_Tree(entt::registry &zone, int &state) {
     //    emplaceQuadTree += Timer::timeStep;
     //    if (emplaceQuadTree >= 50.0f) {
     //      emplaceQuadTree -= 50.0f;
@@ -64,7 +64,7 @@ namespace Quad_Tree {
     //    }
   }
 
-  void Remove_From_Tree(entt::registry &zone, World::GameState &state) {
+  void Remove_From_Tree(entt::registry &zone, int &state) {
     auto view = zone.view<Component::In_Object_Tree, Component::Remove_From_Object_Tree, Component::Tile_Index>();
     for (auto &entity: view) {
 
@@ -79,7 +79,7 @@ namespace Quad_Tree {
               Utilities::Log("the entity exists");
               if (zone.any_of<Component::Body>(tileEntity)) {
                 auto &body = zone.get<Component::Body>(tileEntity).body;
-                auto world = Collision::Get_Collision_List(state);
+                auto world = Collision::collisionList[state];
                 world->DestroyBody(body);
                 zone.remove<Component::Body>(tileEntity);
                 zone.destroy(tileEntity);
@@ -99,7 +99,7 @@ namespace Quad_Tree {
           //remove from collision
           if (zone.any_of<Component::Body>(tileEntity)) {
             auto &body = zone.get<Component::Body>(tileEntity).body;
-            auto world = Collision::Get_Collision_List(state);
+            auto world = Collision::collisionList[state];
             world->DestroyBody(body);
             zone.remove<Component::Body>(tileEntity);
           }
@@ -112,7 +112,7 @@ namespace Quad_Tree {
   }
 
 
-  void Remove_Entity_From_Tree(entt::registry &zone, entt::entity &entity, World::GameState &state) {
+  void Remove_Entity_From_Tree(entt::registry &zone, entt::entity &entity, int &state) {
     auto &rect = zone.get<Component::Remove_From_Object_Tree>(entity).rect;
     for (auto &object: quadTrees[state].search(rect)) {
       if (object->item.entity_ID == entity) {
@@ -134,7 +134,7 @@ namespace Quad_Tree {
   /* only does a quad search for those that moved*/
   float updateQuadTreePosition = 0.0f;
 
-  void Update_Quad_Tree_Positions(entt::registry &zone, World::GameState &state) {
+  void Update_Quad_Tree_Positions(entt::registry &zone, int &state) {
     //    updateQuadTreePosition += Timer::timeStep;
     //    if (updateQuadTreePosition >= 50.0f) {
     //      updateQuadTreePosition -= 50.0f;
@@ -164,7 +164,7 @@ namespace Quad_Tree {
     //    }
   }
 
-  void Draw_Tree_Object_Rects(entt::registry &zone, World::GameState &state) {
+  void Draw_Tree_Object_Rects(entt::registry &zone, int &state) {
     if (Debug::settings[Debug::InteractionRects]) {
       auto view = zone.view<Component::Camera>();
       for (auto entity: view) {
@@ -198,7 +198,7 @@ namespace Quad_Tree {
     entt::entity entity_ID;
   };
 
-  Entity_Data Entity_vs_Mouse_Collision(entt::registry &zone, SDL_FRect &entityRect, World::GameState &state) {
+  Entity_Data Entity_vs_Mouse_Collision(entt::registry &zone, SDL_FRect &entityRect, int &state) {
     for (const auto &object: quadTrees[state].search(entityRect)) {
       //prevents player from returning themselves from the quadtree
       //should probably make the player entity ID a constant saved somewhere, instead of grabbing it from a view every time
@@ -214,7 +214,7 @@ namespace Quad_Tree {
     return {false};
   }
 
-  std::vector<entt::entity> Get_Nearby_Entities(entt::registry &zone, SDL_FRect &entityRect, World::GameState &state) {
+  std::vector<entt::entity> Get_Nearby_Entities(entt::registry &zone, SDL_FRect &entityRect, int &state) {
     std::vector<entt::entity> entityData;
 
     for (const auto &object: quadTrees[state].search(entityRect)) {
@@ -224,7 +224,7 @@ namespace Quad_Tree {
     return entityData;
   }
 
-  Entity_Data Entity_vs_QuadTree_Collision(entt::registry &zone, SDL_FRect &entityRect, World::GameState &state) {
+  Entity_Data Entity_vs_QuadTree_Collision(entt::registry &zone, SDL_FRect &entityRect, int &state) {
     for (const auto &object: quadTrees[state].search(entityRect)) {
       if (Utilities::bFRect_Intersect(entityRect, object->item.rect)) {
         return {true, object->item.entity_ID};
@@ -235,7 +235,7 @@ namespace Quad_Tree {
     return {false};
   }
 
-  void Update_Tree_Routine(entt::registry &zone, World::GameState &state) {
+  void Update_Tree_Routine(entt::registry &zone, int &state) {
     Emplace_Objects_In_Quad_Tree(zone, state);
     Update_Quad_Tree_Positions(zone, state);
     Draw_Tree_Object_Rects(zone, state);

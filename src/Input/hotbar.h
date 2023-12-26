@@ -117,20 +117,6 @@ namespace Hotbar {
     return 0;
   }
 
-  int Enter_Cave(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
-    if (World::gamestate != World::GameState::cave) {
-      Cave::Enter_Cave();
-    }
-    return 0;
-  }
-
-  int Exit_Cave(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
-    if (World::gamestate != World::GameState::overworld) {
-      Cave::Exit_Cave();
-    }
-    return 0;
-  }
-
   int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
     return 0;
   }
@@ -144,8 +130,8 @@ namespace Hotbar {
       {SDLK_1, SetStateAttack2},
       {SDLK_2, Sinister_Strike},
       {SDLK_3, Fire::Cast_Spell},
-      {SDLK_4, Enter_Cave},
-      {SDLK_5, Exit_Cave},
+      {SDLK_4, PLACEHOLDER},
+      {SDLK_5, PLACEHOLDER},
       {SDLK_6, PLACEHOLDER},
       {SDLK_7, PLACEHOLDER},
       {SDLK_8, PLACEHOLDER},

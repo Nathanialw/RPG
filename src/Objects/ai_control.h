@@ -38,7 +38,7 @@ namespace AI {
     //else move to cursor
   }
 
-  void Check_For_Targets(entt::registry &zone, World::GameState &state) {
+  void Check_For_Targets(entt::registry &zone, int &state) {
     auto units = zone.view<Component::Sight_Range, Component::Alive, Component::Position, Component::Melee_Range>();
     //currently specifically looks for a player as a target using input component
     for (auto unit_ID: units) {
@@ -133,7 +133,7 @@ namespace AI {
 
   float time = 0;
 
-  void Update_AI(entt::registry &zone, World::GameState &state) {
+  void Update_AI(entt::registry &zone, int &state) {
     if (b_AI) {
       time += Timer::timeStep;
       if (time >= 250.0f) {

@@ -73,10 +73,10 @@ namespace Event_Handler {
     }
   };
 
-  void Mouse_Hover(entt::registry &zone, World::GameState &state) {
+  void Mouse_Hover(entt::registry &zone, int &state) {
     //    std::vector<entt::entity>* Mouse_Hover_Entities;
-    //    if (state == World::GameState::overworld) {Mouse_Hover_Entities = &World::Mouse_Hover_EntitiesOverworld;}
-    //    if (state == World::GameState::cave) {Mouse_Hover_Entities = &World::Mouse_Hover_EntitiesCave;}
+    //    if (state == int::overworld) {Mouse_Hover_Entities = &World::Mouse_Hover_EntitiesOverworld;}
+    //    if (state == int::cave) {Mouse_Hover_Entities = &World::Mouse_Hover_EntitiesCave;}
 
     for (auto &entity: World::Mouse_Hover_Entities) {
       if (zone.valid(entity)) {
@@ -107,7 +107,7 @@ namespace Event_Handler {
     //revert color
   }
 
-  void Mouse_Input(entt::registry &zone, World::GameState &state, entt::entity &player_ID, Component::Position &playerPosition, Component::Camera &camera) {
+  void Mouse_Input(entt::registry &zone, int &state, entt::entity &player_ID, Component::Position &playerPosition, Component::Camera &camera) {
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
         if (Game_Menu_Control::Check_Menu_Button()) {
@@ -178,7 +178,7 @@ namespace Event_Handler {
       }
     }
 
-    void Update_User_Input(entt::registry & zone, World::GameState & state) {
+    void Update_User_Input(entt::registry & zone, int & state) {
       //        keep function running to maintain input and perform actions during pause
       if (!Menu::toggleMenu) {
         while (SDL_PollEvent(&Events::event) != 0) {

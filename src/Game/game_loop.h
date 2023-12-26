@@ -31,8 +31,10 @@ namespace Game_Loop {
     }
   }
 
-  World::GameState Game_Loop(entt::registry &zone, World::GameState state) {
-    while (World::gamestate == World::GameState::overworld || World::gamestate == World::GameState::cave) {
+
+  int Game_Loop(entt::registry &zone, int &state) {
+    World::currentZone = {state, state};
+    while (state != 0) {
       Game_State();
       //Squad_Control::Create_And_Fill_New_Squad(zone);
       //Test_Units::Create_Formation(zone);
@@ -53,7 +55,8 @@ namespace Game_Loop {
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::status], Timer::gameLoopTimer);
 
       if (!Rendering::Rendering(zone, state)) {
-        return World::GameState::restart;
+        //restart
+        return 1;
       }
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::render], Timer::gameLoopTimer);
 
@@ -64,27 +67,30 @@ namespace Game_Loop {
       Timer::Calculate_Timestep();
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::renderpresent], Timer::gameLoopTimer);
 
-      if (Cave::Cave) { Cave::Load_Cave(); return World::GameState::cave;}
-      if (Cave::Overworld) { Cave::Load_Overworld(); return World::GameState::overworld;}
+
+      if (World::currentZone.current != World::currentZone.next) { return World::currentZone.next;}
     }
-    return World::GameState::exit;
+    return state;
   }
 
-  World::GameState Game_Running(entt::registry &zone) {
+  bool Game_Running(entt::registry &zone, int &state) {
     Game_State();
     Timer::startPerf = SDL_GetPerformanceCounter();
 
-    World::gamestate = Game_Loop(zone, World::gamestate);
+    state = Game_Loop(zone, state);
 
-    switch (World::gamestate) {
-      case World::GameState::overworld: { return World::GameState::overworld; break;}
-        //need a cave init function
-      //need collision bodies removed from the overworld first
-      //need object tree copied and a different one for the cave from the overworld first
-      case World::GameState::cave: {return World::GameState::cave; break;}
-      case World::GameState::MODES: {return World::GameState::exit; break;}
-      case World::GameState::restart: {return World::GameState::restart; break;}
-      case World::GameState::exit: {return World::GameState::exit; break;}
-    }
+
+    return state;
+//
+//    switch (World::gamestate) {
+//      case World::GameState::overworld: { return World::GameState::overworld; break;}
+//        //need a cave init function
+//      //need collision bodies removed from the overworld first
+//      //need object tree copied and a different one for the cave from the overworld first
+//      case World::GameState::restart: {return World::GameState::restart; break;}
+//      case World::GameState::exit: {return World::GameState::exit; break;}
+//      case World::GameState::cave: {return World::GameState::cave; break;}
+//      case World::GameState::MODES: {return World::GameState::exit; break;}
+//    }
   }
 }// namespace Game_Loop

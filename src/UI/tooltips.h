@@ -50,7 +50,7 @@ namespace Tooltip {
     Graphics::Render_FRect(Graphics::tooltipBackground, {255, 255, 255}, &sourcerect, &tooltipBackground);
   }
 
-  void Show_Item_Tooltip(entt::registry &zone, entt::entity &entity, World::GameState &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
+  void Show_Item_Tooltip(entt::registry &zone, entt::entity &entity, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
 
     if (UI::bToggleCharacterUI) {
       if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {

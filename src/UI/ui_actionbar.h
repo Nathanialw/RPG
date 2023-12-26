@@ -3,6 +3,7 @@
 #include "graphics.h"
 #include "item_components.h"
 #include "ui_elements.h"
+#include "world.h"
 
 namespace Action_Bar {
   struct On_Spellbar {
@@ -15,14 +16,14 @@ namespace Action_Bar {
 
 
 //  Spell_Bar actionBar;
-//  std::map<World::GameState, entt::entity> defaultSlot;
+//  std::map<int, entt::entity> defaultSlot;
 //  entt::entity defaultSlot;
 
   struct Action_Bar {
     Spell_Bar actionBar;
     entt::entity defaultSlot;
   };
-  std::map<World::GameState, Action_Bar> actionBar;
+  std::vector<Action_Bar> actionBar(World::numZones);
 
   void Update_Position(SDL_FRect &frameRect) {
     SDL_Rect rect = Utilities::SDL_FRect_To_SDL_Rect(frameRect);
@@ -33,7 +34,7 @@ namespace Action_Bar {
     frameRect.y = (float) h - frameRect.h;
   }
 
-  void Create_Action_Bar(entt::registry &zone, World::GameState &state) {
+  void Create_Action_Bar(entt::registry &zone, int &state) {
     // initialize value of empty
     actionBar[state].defaultSlot = zone.create();
     zone.emplace_or_replace<On_Spellbar>(actionBar[state].defaultSlot);
@@ -51,7 +52,7 @@ namespace Action_Bar {
     Update_Position(actionBar[state].actionBar.actionBarFrame);
   }
 
-  bool Mouse_Inside_Actionbar(Component::Camera &camera, World::GameState &state) {
+  bool Mouse_Inside_Actionbar(Component::Camera &camera, int &state) {
     SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar[state].actionBar.actionBarFrame);
     if (Mouse::bRect_inside_Cursor(renderBarFrame)){
       return true;
@@ -59,7 +60,7 @@ namespace Action_Bar {
     return false;
   }
 
-  void Set_Mouse_Spell_On_Actionbar(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
+  void Set_Mouse_Spell_On_Actionbar(entt::registry &zone, int &state, Component::Camera &camera) {
     SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar[state].actionBar.actionBarFrame);
 
     for (int i = 0; i < actionBar[state].actionBar.spell.size(); i++) {
@@ -77,7 +78,7 @@ namespace Action_Bar {
     }
   }
 
-  void Get_Mouse_Spell_From_Actionbar(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
+  void Get_Mouse_Spell_From_Actionbar(entt::registry &zone, int &state, Component::Camera &camera) {
     SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar[state].actionBar.actionBarFrame);
 
     for (int i = 0; i < actionBar[state].actionBar.spell.size(); i++) {
@@ -108,7 +109,7 @@ namespace Action_Bar {
     }
   }
 
-  void Render_Action_Bar(entt::registry &zone, World::GameState &state, Component::Camera &camera) {
+  void Render_Action_Bar(entt::registry &zone, int &state, Component::Camera &camera) {
     SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar[state].actionBar.actionBarFrame);
 
     for (int i = 0; i < actionBar[state].actionBar.spell.size(); i++) {

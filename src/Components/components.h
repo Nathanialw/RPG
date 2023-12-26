@@ -531,7 +531,8 @@ namespace Component {
   };
 
   struct Dungeon {
-    std::string load = "loading in";
+    int instance;
+    std::string tilesetName = "hell";
   };
 
   struct Inventory {

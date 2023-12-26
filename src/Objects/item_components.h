@@ -136,16 +136,14 @@ namespace Item_Component {
   struct Equip_Items_Type {
   };
 
-  std::unordered_map<World::GameState, entt::entity> emptyEquipSlot;
+  std::vector<entt::entity> emptyEquipSlot(World::numZones);
 
   struct Equipment {
     Unit_Equip_Type type = Unit_Equip_Type::none;
     std::map<Item_Type, entt::entity> equippedItems;
   };
 
-
-
-  Equipment Emplace_Equipment(entt::registry &zone, World::GameState &state, entt::entity &entity, Unit_Equip_Type &itemType) {
+  Equipment Emplace_Equipment(entt::registry &zone, int &state, entt::entity &entity, Unit_Equip_Type &itemType) {
     auto &equipment = zone.emplace_or_replace<Equipment>(entity);
     equipment.type = itemType;
 //    std::cout << "equipment slot entity: " << (int)emptyEquipSlot[state] << std::endl;

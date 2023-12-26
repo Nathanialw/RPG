@@ -369,7 +369,7 @@ namespace Items {
     zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
   }
 
-  entt::entity Create_And_Equip_Weapon(entt::registry &zone, World::GameState &state, Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
+  entt::entity Create_And_Equip_Weapon(entt::registry &zone, int &state, Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     auto item_uID = zone.create();
@@ -383,7 +383,7 @@ namespace Items {
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Offhand(entt::registry &zone, World::GameState &state, Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, std::string item_name) {
+  entt::entity Create_And_Equip_Offhand(entt::registry &zone, int &state, Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, std::string item_name) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     auto item_uID = zone.create();
@@ -397,7 +397,7 @@ namespace Items {
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Armor(entt::registry &zone, World::GameState &state, Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
+  entt::entity Create_And_Equip_Armor(entt::registry &zone, int &state, Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     Armor_Type armorType = Items::Generate_Armor_Type();

@@ -121,11 +121,14 @@ namespace Load_Object_List {
 
   void Load_Entities() {
     Game_Objects_Lists::tilesets["forest_summer"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_summer").c_str());
+    Game_Objects_Lists::tilesets["forest_winter"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_winter").c_str());
     Game_Objects_Lists::tilesets["bloodPool"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "background");
     Game_Objects_Lists::tilesets["bloodSplatter"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "foreground");
 
     Game_Objects_Lists::units["wolves"] = Entity_Loader::Get_Unit_Subtypes("beast", "wolf");
     Game_Objects_Lists::units["demons"] = Entity_Loader::Get_Unit_Subtypes("demon", "Demon");
+    Game_Objects_Lists::units["eldritch"] = Entity_Loader::Get_Unit_Subtypes("eldritch", "eldritch");
+    Game_Objects_Lists::units["troll"] = Entity_Loader::Get_Unit_Subtypes("monster", "troll");
   }
 }
 
