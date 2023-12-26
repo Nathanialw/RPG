@@ -8,7 +8,9 @@
 #include "components.h"
 #include "graphics.h"
 #include "item_components.h"
+#include "load_zone.h"
 #include "procedural_generator.h"
+#include "quad_tree.h"
 #include "rendering_components.h"
 #include "settings.h"
 #include "social_control.h"
@@ -17,8 +19,6 @@
 #include "ui_spellbook.h"
 #include "utilities.h"
 #include <stddef.h>
-#include "quad_tree.h"
-#include "load_zone.h"
 
 namespace Create_Entities {
 
@@ -83,7 +83,24 @@ namespace Create_Entities {
     }
   }
 
+  void Emplace_Interaction_Rect(entt::registry &zone, entt::entity &entity, Entity_Loader::Data &data, float &x, float &y) {
+    if (data.whole_sprite == 1) {//if the interaction rect is the whole sprite
+      zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - data.interact_r) * data.scale, (y - data.interact_h / 2.0f) * data.scale, (data.interact_r * 2.0f) * data.scale, data.interact_h * data.scale);
+    } else {//if the interaction rect is a rect around it's position
+      zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - data.interact_r) * data.scale, (y - data.interact_h / 2.0f) * data.scale, (data.interact_r * 2.0f) * data.scale, data.interact_h * data.scale, true);
+    }
+  }
 
+  void Emplace_Interaction_Rect_Building(entt::registry &zone, entt::entity &entity, Entity_Loader::Building_Data &data, float &x, float &y, float &radius, SDL_Rect &clipRect) {
+    if (data.whole_sprite == 1) {//if the interaction rect is the whole sprite
+      //      zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius), (y - 10.0f / 2.0f), (radius * 2.0f), 10.0f));
+      zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius), (y - radius), (radius * 2.0f), radius * 2.0f);
+
+    } else {//if the interaction rect is a rect around it's position
+      zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius), (y - radius), (radius * 2.0f), radius * 2.0f, true);
+
+    }
+  }
 
   bool Polygon_Building(entt::registry &zone, int &state, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
     /// if it is a building
@@ -175,12 +192,13 @@ namespace Create_Entities {
       } else {
         Utilities::Log("PVG_Building() no collider_type found for templateName, also prints for blood spawning");
         Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
-//        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
+        //        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
       }
 
       //Add shared components
+      SDL_Rect clipRect = sprite.sheetData->at(tilesetName).frameList[xmlIndex].clip;
       auto &radius = zone.emplace_or_replace<Component::Radius>(entity, data.radius);
-      zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius.fRadius), (y - 10.0f / 2.0f), (radius.fRadius * 2.0f), 10.0f);
+      Emplace_Interaction_Rect_Building(zone, entity, data, x, y, radius.fRadius, clipRect);
 
       if (templateName == "Rock_3_1" ||
           templateName == "Rock_3_2" ||
@@ -199,11 +217,11 @@ namespace Create_Entities {
           templateName == "Rock_2_7" ||
           templateName == "Rock_2_8") {
 
-          World::increment_Zone();
-          auto &dungeon = zone.emplace_or_replace<Component::Dungeon>(entity);
-          dungeon.instance = World::Zone_Count;
-          dungeon.tilesetName = "hell";
-          zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::portal);
+        World::increment_Zone();
+        auto &dungeon = zone.emplace_or_replace<Component::Dungeon>(entity);
+        dungeon.instance = World::Zone_Count;
+        dungeon.tilesetName = "hell";
+        zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::portal);
       }
 
       auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
@@ -219,29 +237,29 @@ namespace Create_Entities {
       zone.emplace_or_replace<Component::Health>(entity, 100, 100);
 
       if (i != x && j != y) {
-//        std::cout << i << " " << j << std::endl;
-        zone.emplace_or_replace<Component::Tile_Index>(entity, (int)i, (int)j);
+        //        std::cout << i << " " << j << std::endl;
+        zone.emplace_or_replace<Component::Tile_Index>(entity, (int) i, (int) j);
       }
 
       //std::cout << templateName << "Xo: " << frame.x_offset << " Cw: " << frame.clip.w << " IXo: " << imageOffset.x << " Yo: " << frame.y_offset << " Ch: " << frame.clip.h << " IYo: " << imageOffset.y << std::endl;
 
       //should place the tiled position on the point
       if (data.collider_type == "background") {
-        offset = {frame.clip.w/2.0f, frame.clip.h/2.0f};
+        offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
         position.x -= offset.x;
         position.y -= offset.y;
         offset.x = 0.0f;
         offset.y = 0.0f;
         zone.emplace_or_replace<Rendering_Components::Background>(entity);
       } else if (data.collider_type == "foreground") {
-        offset = {frame.clip.w/2.0f, frame.clip.h/2.0f};
+        offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
         position.x -= offset.x;
         position.y -= offset.y;
         offset.x = 0.0f;
         offset.y = 0.0f;
         zone.emplace_or_replace<Rendering_Components::Foreground>(entity);
       }
-        // if object is a  background sprite DO NOT set Direction component
+      // if object is a  background sprite DO NOT set Direction component
       else {
         zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
       }
@@ -324,14 +342,12 @@ namespace Create_Entities {
     }
     //
     auto &radius = zone.emplace_or_replace<Component::Radius>(entity, (data.radius * data.scale));
-    zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - data.interact_r) * data.scale, (y - data.interact_h / 2.0f) * data.scale, (data.interact_r * 2.0f) * data.scale, data.interact_h * data.scale);
+    Emplace_Interaction_Rect(zone, entity, data, x, y);
 
     zone.emplace_or_replace<Component::Mass>(entity, data.mass * data.scale);
     zone.emplace_or_replace<Component::Alive>(entity, true);
     zone.emplace_or_replace<Component::Unit>(entity);
     zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
-
-
 
     texture.portrait = zone.emplace_or_replace<Rendering_Components::Portrait>(entity, Graphics::Load_Portrait(unit_ID, imgPaths.portraitPath.c_str())).texture;
     texture.body = zone.emplace_or_replace<Rendering_Components::Body>(entity, Graphics::Load_Body(unit_ID, imgPaths.bodyPath.c_str())).texture;
@@ -372,7 +388,7 @@ namespace Create_Entities {
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::idle);
       auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
 
-      if (!player){
+      if (!player) {
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
         auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
         auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
@@ -387,7 +403,7 @@ namespace Create_Entities {
         zone.emplace_or_replace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
       }
       // if this is the first run make these, otherwise copy them
-      else if (startup){
+      else if (startup) {
         startup = false;
         UI::Bag_UI::Create_Bag_UI(zone, entity, state);
         auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
@@ -401,8 +417,7 @@ namespace Create_Entities {
           zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
         }
         zone.emplace_or_replace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
-      }
-      else {
+      } else {
         Load::Copy_Player(zone, World::world[World::world[state].previousZoneIndex].zone, state, World::world[state].previousZoneIndex, entity);
       }
 
@@ -418,13 +433,12 @@ namespace Create_Entities {
         zone.emplace_or_replace<Component::Target_Range>(entity, 2000.0f * data.scale, position.x - (2000.0f / 2.0f * data.scale), position.y - (2000.0f / 2.0f * data.scale), 2000.0f * data.scale, 2000.0f * data.scale);
         auto &full_name = zone.emplace_or_replace<Component::Name>(entity);
         Character_Data::Get_Name(full_name);
-      }
-      else {
+      } else {
         zone.emplace_or_replace<Component::Sight_Range>(entity, data.sight_radius * data.scale, position.x - (data.sight_radius / 2.0f * data.scale), position.y - (data.sight_radius / 2.0f * data.scale), data.sight_radius * data.scale, data.sight_radius * data.scale);
       }
     }
-      //static entities
-      //if it is an aabb building
+    //static entities
+    //if it is an aabb building
     else if (data.body_type == 0) {
       /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
@@ -433,4 +447,4 @@ namespace Create_Entities {
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::foliage);
     }
   }
-}
+}// namespace Create_Entities

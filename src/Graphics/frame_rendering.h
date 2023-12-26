@@ -49,7 +49,7 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
   SDL_FRect renderRect;
 
   if (zone.any_of<Component::Interaction_Rect>(entity)) {
-    auto &interactionRect = zone.get<Component::Interaction_Rect>(entity);
+    auto interactionRect = zone.get<Component::Interaction_Rect>(entity);
     renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
   } else {
     Component::Interaction_Rect interactionRect = {};

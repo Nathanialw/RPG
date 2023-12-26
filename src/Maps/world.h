@@ -78,11 +78,6 @@ namespace World {
     Zone_Count++;
   }
 
-  std::unordered_map<int, Tile_Type> tileType = {
-      {2, Tile_Type::grass},
-      {3, Tile_Type::volcanic},
-      {4, Tile_Type::dirt}};
-
   int numZones = 200;
   std::vector<Tileset> world(numZones);
 

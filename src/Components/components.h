@@ -30,6 +30,7 @@ namespace Component {
 
   struct Interaction_Rect {
     SDL_FRect rect;
+    bool tall = false;
   };
 
   struct Unit {

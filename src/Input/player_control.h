@@ -165,7 +165,7 @@ namespace Player_Control {
       //check if the target is in attack range
       auto &meleeRange = view.get<Component::Melee_Range>(entity);
       switch (targetData.entityType) {
-        case Component::Entity_Type::object:if (Interact(zone, entity, targetData.ID, position, radius, targetPosition, targetData.radius, velocity)) { return; } break;
+        case Component::Entity_Type::object: if (Interact(zone, entity, targetData.ID, position, radius, targetPosition, targetData.radius, velocity)) { return; } break;
         case Component::Entity_Type::portal: if (Enter_Portal(zone, entity, state, position, targetPosition, velocity, targetData)){ return; } break;
         case Component::Entity_Type::unit: if (Attack(zone, entity, targetData, targetPosition, velocity, position, meleeRange)) { return; } break;
         case Component::Entity_Type::foliage: break;

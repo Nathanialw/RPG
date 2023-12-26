@@ -174,7 +174,7 @@ namespace Menu {
         case 2: {return true; }
         case 3: {return true; }
         case 4: {menu.i = Menu_Options::Show_Menu_Options(camera); break;}
-        case 5: {Graphics::closeContext(); break;}
+        case 5: {state = 0; break;}
       }
     }
     return true;

@@ -56,6 +56,7 @@ namespace Death_Control {
     for (auto entity: view) {
       auto &health = view.get<Component::Health>(entity);
       if (health.currentHealth <= 0) {
+        health.currentHealth = 0;
         Utilities::Log("dead entity");
         auto &action = view.get<Action_Component::Action>(entity);
         Action_Component::Set_State(action, Action_Component::dying);

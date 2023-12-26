@@ -133,6 +133,22 @@ namespace Interface {
     //std::cout << i << std::endl;
   }
 
+  void Update_Interaction_Box(entt::registry &zone) {
+    auto view = zone.view<Component::Interaction_Rect, Component::Position, Component::Radius>();
+
+    for (auto entity: view) {
+      auto &position = view.get<Component::Position>(entity);
+      auto &radius = view.get<Component::Radius>(entity);
+      auto &rect = view.get<Component::Interaction_Rect>(entity);
+      if (rect.tall) { // if the unit is tall
+        rect.rect = {position.x - radius.fRadius, position.y - (radius.fRadius * 3.0f), radius.fRadius * 2.0f, radius.fRadius * 4.0f};
+      }
+      else {
+        rect.rect = {position.x - radius.fRadius, position.y - radius.fRadius, radius.fRadius * 2.0f, radius.fRadius * 2.0f};
+      }
+    }
+  }
+
   void Display_Selected(entt::registry &zone) {
     auto view1 = zone.view<Component::Camera>();
     auto view = zone.view<Component::Selected, Component::Position, Component::Radius>();
@@ -291,6 +307,7 @@ namespace Interface {
     //    Show_Grid(Map::terrain);
     //Display_Military_Groups();
     //Display_Unit_Formations(camera);
+    Update_Interaction_Box(zone);
     UI_Frames::Show_Menu_Frame(zone, camera);
     Unit_Frames::Show_Frames(zone, camera);
     UI_Resources::Show_Frames(zone, camera);

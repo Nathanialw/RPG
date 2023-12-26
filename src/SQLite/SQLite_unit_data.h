@@ -30,6 +30,7 @@ namespace Entity_Loader {
     std::string entity_class = "monster";
     std::string sheet = "none";
     std::string race = "rogue";
+    int whole_sprite = 1;
   };
 
   void init_db() {
@@ -50,7 +51,7 @@ namespace Entity_Loader {
     Data values;
     sqlite3_stmt *stmt;
     char buf[400];
-    const char *jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, equip_type, race, temp_type_name FROM unit_data WHERE name = ";
+    const char *jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, equip_type, race, temp_type_name, whole_sprite FROM unit_data WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -79,6 +80,8 @@ namespace Entity_Loader {
       auto temp_type_name = sqlite3_column_text(stmt, 17);
       const char *h = (const char *) temp_type_name;
       values.temp_type_name = std::string(reinterpret_cast< const char *> (h));
+      values.whole_sprite = sqlite3_column_double(stmt, 18);
+
       //std::cout << "data: " << name << std::endl;
     }
     return values;
@@ -562,6 +565,7 @@ namespace Entity_Loader {
     std::string xml = "";
     std::string img = "";
     std::string race = "neutral";
+    int whole_sprite = 1;
   };
 
   std::string Get_String(const unsigned char *text) {
@@ -581,7 +585,7 @@ namespace Entity_Loader {
 
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race FROM buildings WHERE name = ";
+    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite FROM buildings WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -604,6 +608,8 @@ namespace Entity_Loader {
 
       text = sqlite3_column_text(stmt, 7);
       data.race = Get_String(text);
+
+      data.whole_sprite = sqlite3_column_int(stmt, 8);
     }
     return data;
   }
