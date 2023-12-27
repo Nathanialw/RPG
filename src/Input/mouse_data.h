@@ -1,0 +1,16 @@
+#include "spell_data.h"
+
+
+namespace Mouse_Struct {
+  struct Mouse_Data {
+    entt::entity mouseItem;
+    entt::entity cursor_ID;
+    //    Spell_Data::Spell spell;
+    int index;
+    Spell_Data::Skill_Tree tree;
+    Component::Icon_Type type = Component::Icon_Type::none;
+    bool itemCurrentlyHeld = false;
+  };
+  Mouse_Data mouseData;
+
+}

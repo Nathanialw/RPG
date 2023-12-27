@@ -2,16 +2,9 @@
 #include "item_components.h"
 #include "components.h"
 #include "action_components.h"
-#include "Fire/fire.h"
-#include "sinister_strike.h"
+//#include "Fire/fire.h"
 
 namespace Spell_Data {
-
-  int Sinister_Strike(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
-    Sinister_Strike::Instant_Attack(zone, entity);
-    return 0;
-  }
-
 
   enum Skill_Tree {
     fire,
@@ -33,7 +26,9 @@ namespace Spell_Data {
 
   public:
     Component::Icon icon;
-    Fire::castSpell cast = Sinister_Strike;
+    Fire::castSpell cast;// = Sinister_Strike;
+    Skill_Tree tree;
+    int index;
 
     //constructor
     Spell() {
@@ -75,8 +70,8 @@ namespace Spell_Data {
       range = 0;
     }
     //function to cast the spell
-    static int Cast(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
-      Fire::Cast_Spell(zone, entity, action, index);
+    static int Cast(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index, float &x, float &y) {
+      Fire::Cast_Spell(zone, entity, action, index, x, y);
       return 0;
     }
   };

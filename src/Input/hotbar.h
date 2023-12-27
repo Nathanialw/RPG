@@ -49,32 +49,32 @@ namespace Hotbar {
     }
   }
 
-  int SetStateAttack2(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int SetStateAttack2(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     Action_Component::Set_State(action, Action_Component::attack2);
     return 0;
   }
 
-  int Sinister_Strike(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Sinister_Strike(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     Sinister_Strike::Instant_Attack(zone, entity);
     return 0;
   }
 
-  int Toggle_AI(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Toggle_AI(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     AI::Turn_On();
     return 0;
   }
 
-  int Tab_Target(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Tab_Target(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     User_Mouse_Input::Tab_Target(zone, entity);
     return 0;
   }
 
-  int Bag_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Bag_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     UI::Bag_UI::Toggle_Bag();
     return 0;
   }
 
-  int Menu_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Menu_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI) {
       UI::bToggleCharacterUI = false;
       UI_Spellbook::spellbook.b_isOpen = false;
@@ -84,47 +84,47 @@ namespace Hotbar {
     return 0;
   }
 
-  int Pause_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Pause_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     Menu::Toggle();
     return 0;
   }
 
-  int Mouse_On(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Mouse_On(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     SDL_SetRelativeMouseMode(SDL_FALSE);
     return 0;
   }
 
-  int Mouse_Off(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Mouse_Off(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     SDL_SetRelativeMouseMode(SDL_TRUE);
     return 0;
   }
 
-  int Toggle_Spellbook(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Toggle_Spellbook(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     UI_Spellbook::Toggle();
     return 0;
   }
 
-  int Show_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Show_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     Items::showGroundItems = true;
     return 0;
   }
 
-  int Unshow_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Unshow_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     Items::showGroundItems = false;
     return 0;
   }
 
-  int Jump(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Jump(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     Action_Component::Set_State(action, Action_Component::jump);
     return 0;
   }
 
-  int Surface(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int Surface(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     Cave::Surface(index);
     return 0;
   }
 
-  int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+  int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     return 0;
   }
 
@@ -140,11 +140,11 @@ namespace Hotbar {
         {SDLK_2, Action_Bar::actionBar.actionBar.spell[1].cast},
         {SDLK_3, Action_Bar::actionBar.actionBar.spell[2].cast},
         {SDLK_4, Action_Bar::actionBar.actionBar.spell[3].cast},
-        {SDLK_5, Action_Bar::actionBar.actionBar.spell[4].cast},
-        {SDLK_6, PLACEHOLDER},
-        {SDLK_7, PLACEHOLDER},
-        {SDLK_8, PLACEHOLDER},
-        {SDLK_9, Toggle_AI},
+        {SDLK_5, Action_Bar::actionBar.actionBar.spell[5].cast},
+        {SDLK_6, Action_Bar::actionBar.actionBar.spell[6].cast},
+        {SDLK_7, Action_Bar::actionBar.actionBar.spell[7].cast},
+        {SDLK_8, Action_Bar::actionBar.actionBar.spell[8].cast},
+        {SDLK_9, Action_Bar::actionBar.actionBar.spell[9].cast},
         {SDLK_TAB, Tab_Target},
         {SDLK_ESCAPE, Menu_Toggle},
         {SDLK_i, Bag_Toggle},
@@ -152,6 +152,7 @@ namespace Hotbar {
         {SDLK_PLUS, Mouse_On},
         {SDLK_MINUS, Mouse_Off},
         {SDLK_l, Toggle_Spellbook},
+        {SDLK_k, Toggle_AI},
         {SDLK_o, Surface},
         {SDLK_LALT, Show_Items},
         {SDLK_RALT, Show_Items},
@@ -163,10 +164,10 @@ namespace Hotbar {
       {SDLK_LALT, Unshow_Items},
       {SDLK_RALT, Unshow_Items}};
 
-  std::map<int, Fire::castSpell> hotBarSpells = {
-      {0, SetStateAttack2},
-      {1, Fire::Cast_Spell},
-      {2, Fire::Cast_Spell}};
+//  std::map<int, Fire::castSpell> hotBarSpells = {
+//      {0, SetStateAttack2},
+//      {1, Fire::Cast_Spell},
+//      {2, Fire::Cast_Spell}};
   //  save the index to the button
 
   Fire::castSpell Update_Button() {
@@ -174,6 +175,6 @@ namespace Hotbar {
   }
 
   void gfdgdfg(SDL_Keycode key) {
-    hotBarSpells[key] = Update_Button();
+//    hotBarSpells[key] = Update_Button();
   }
 }// namespace Hotbar

@@ -33,15 +33,14 @@ namespace Action_Bar {
     frameRect.y = (float) h - frameRect.h;
   }
 
-  Spell_Data::Spell Create_Spell() {
-    Spell_Data::Spell spell(Graphics::fireball_explosion_0);
-    return spell;
+  int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+    return 0;
   }
 
   void Create_Action_Bar() {
-    actionBar.defaultSlot = Create_Spell();
+    actionBar.defaultSlot = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     for (int i = 0; i < actionBar.actionBar.spell.size(); i++) {
-      actionBar.actionBar.spell[i] = Create_Spell();
+      actionBar.actionBar.spell[i] = actionBar.defaultSlot;
     }
     Update_Position(actionBar.actionBar.actionBarFrame);
     actionBar.actionBar.hotkey[0] = SDLK_1;
@@ -54,6 +53,16 @@ namespace Action_Bar {
     actionBar.actionBar.hotkey[7] = SDLK_8;
     actionBar.actionBar.hotkey[8] = SDLK_9;
     actionBar.actionBar.hotkey[9] = SDLK_0;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[0]] = actionBar.actionBar.spell[0].cast;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[1]] = actionBar.actionBar.spell[1].cast;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[2]] = actionBar.actionBar.spell[2].cast;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[3]] = actionBar.actionBar.spell[3].cast;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[4]] = actionBar.actionBar.spell[4].cast;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[5]] = actionBar.actionBar.spell[5].cast;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[6]] = actionBar.actionBar.spell[6].cast;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[7]] = actionBar.actionBar.spell[7].cast;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[8]] = actionBar.actionBar.spell[8].cast;
+    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[9]] = actionBar.actionBar.spell[9].cast;
   }
 
   bool Mouse_Inside_Actionbar(Component::Camera &camera, int &state) {
@@ -68,24 +77,32 @@ namespace Action_Bar {
     SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar.actionBar.actionBarFrame);
 
     for (int i = 0; i < actionBar.actionBar.spell.size(); i++) {
-      auto &icon = actionBar.actionBar.spell[i].icon;
       SDL_FRect renderRect = {renderBarFrame.x + (renderBarFrame.h * i), renderBarFrame.y, renderBarFrame.h, renderBarFrame.h};
       if (Mouse::bRect_inside_Cursor(renderRect)) {
-        if (Mouse::ss.type == Component::Icon_Type::spell) {
+        if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
 
-          actionBar.actionBar.spell[i] = UI_Spellbook::spellbook.Skill_Trees[Spell_Data::fire][Mouse::ss.index];
+          SDL_Texture *texture = actionBar.actionBar.spell[i].icon.pTexture;
+          Spell_Data::Skill_Tree tree = actionBar.actionBar.spell[i].tree;
+          int index = actionBar.actionBar.spell[i].index;
+          actionBar.actionBar.spell[i] = UI_Spellbook::spellbook.Skill_Trees[Mouse_Struct::mouseData.tree][Mouse_Struct::mouseData.index];
+          actionBar.actionBar.spell[i].tree = Mouse_Struct::mouseData.tree;
+          actionBar.actionBar.spell[i].index = Mouse_Struct::mouseData.index;
+
           Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[i]] = actionBar.actionBar.spell[i].cast;
 
-          Mouse::itemCurrentlyHeld = false;
-          Mouse::ss.type = Component::Icon_Type::none;
-          Mouse::ss.index = -1;
-          Mouse::mouseItem = Mouse::cursor_ID;
+          if (texture == actionBar.defaultSlot.icon.pTexture) {
+            Mouse_Struct::mouseData.type = Component::Icon_Type::none;
+            Mouse_Struct::mouseData.index = -1;
+            return;
+          }
+//          swap
+          Mouse_Struct::mouseData.tree = tree;
+          Mouse_Struct::mouseData.index = index;
           return;
         } else {
-          Mouse::itemCurrentlyHeld = false;
-          Mouse::ss.type = Component::Icon_Type::none;
-          Mouse::ss.index = -1;
-          Mouse::mouseItem = Mouse::cursor_ID;
+//          Mouse::itemCurrentlyHeld = false;
+          Mouse_Struct::mouseData.type = Component::Icon_Type::none;
+          Mouse_Struct::mouseData.index = -1;
           //          clear the mouse item
         }
       }
@@ -100,10 +117,11 @@ namespace Action_Bar {
       if (Mouse::bRect_inside_Cursor(renderRect)) {
         if (actionBar.actionBar.spell[i].icon.pTexture != actionBar.defaultSlot.icon.pTexture) {
 
-          Mouse::ss.index = i;
+          Mouse_Struct::mouseData.tree = actionBar.actionBar.spell[i].tree;
+          Mouse_Struct::mouseData.index = actionBar.actionBar.spell[i].index;
           actionBar.actionBar.spell[i] = actionBar.defaultSlot;
-          Mouse::ss.type = Component::Icon_Type::spell;
-          Mouse::itemCurrentlyHeld = true;
+          Mouse_Struct::mouseData.type = Component::Icon_Type::spell;
+//          Mouse::itemCurrentlyHeld = true;
 
           Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[i]] = actionBar.actionBar.spell[i].cast;
           return;
@@ -117,8 +135,8 @@ namespace Action_Bar {
     if (Mouse::mouseItem == Mouse::cursor_ID) {
       Utilities::Log("objectID on mouse is the same as the cursorID same");
     }
-    Mouse::ss.type = Component::Icon_Type::none;
-    Mouse::ss.index = -1;
+    Mouse_Struct::mouseData.type = Component::Icon_Type::none;
+    Mouse_Struct::mouseData.index = -1;
   }
 
   void Render_Action_Bar(entt::registry &zone, int &state, Component::Camera &camera) {
@@ -127,9 +145,10 @@ namespace Action_Bar {
     for (int i = 0; i < actionBar.actionBar.spell.size(); i++) {
       auto &icon = actionBar.actionBar.spell[i].icon;
       SDL_FRect renderRect = {renderBarFrame.x + (renderBarFrame.h * i), renderBarFrame.y, renderBarFrame.h, renderBarFrame.h};
-      SDL_RenderCopyF(Graphics::renderer, icon.pBackground, &icon.clipIcon, &renderRect);
-      SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipIcon, &renderRect);
-      SDL_RenderCopyF(Graphics::renderer, icon.pIconRarityBorder, &icon.clipIcon, &renderRect);
+      SDL_RenderCopyF(Graphics::renderer, icon.pBackground, NULL, &renderRect);
+      SDL_RenderCopyF(Graphics::renderer, icon.pTexture, NULL, &renderRect);
+      SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, NULL, &renderRect);
+      SDL_RenderCopyF(Graphics::renderer, icon.pIconRarityBorder, NULL, &renderRect);
     }
   }
 }// namespace Action_Bar

@@ -2,6 +2,9 @@
 #include "graphics.h"
 #include "spell_data.h"
 #include "ui_elements.h"
+#include "sinister_strike.h"
+#include "mouse_control.h"
+#include "mouse_data.h"
 
 namespace UI_Spellbook {
 
@@ -29,19 +32,106 @@ namespace UI_Spellbook {
     frameRect.y = (float) h - frameRect.h;
   }
 
-  Spell_Data::Spell Create_Spell() {
-    //read db
-    Spell_Data::Spell spell(Graphics::default_icon, Fire::Cast_Spell);
-    //load texture
-    return spell;
+  int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+    return 0;
+  }
+
+  int Sinister_Strike(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+    Sinister_Strike::Instant_Attack(zone, entity);
+    return 0;
   }
 
   void Build_Spellbook() {
-    for (auto &tree: spellbook.Skill_Trees) {
-      for (auto &spell: tree) {
-        spell = Create_Spell();
-      }
-    }
+    spellbook.Skill_Trees[Spell_Data::cold][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+
+    spellbook.Skill_Trees[Spell_Data::death][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+
+    spellbook.Skill_Trees[Spell_Data::life][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::life][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+
+    spellbook.Skill_Trees[Spell_Data::warrior][0] = Spell_Data::Spell(Graphics::death1, Sinister_Strike);
+    spellbook.Skill_Trees[Spell_Data::warrior][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+
+    spellbook.Skill_Trees[Spell_Data::cold][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::cold][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+
+    spellbook.Skill_Trees[Spell_Data::archery][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::archery][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+
+    spellbook.Skill_Trees[Spell_Data::fire][0] = Spell_Data::Spell(Graphics::fireball_icon, Fire::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
   }
 
   //    run once the camera is attached to a unit
@@ -69,30 +159,31 @@ namespace UI_Spellbook {
     }
   }
 
-  bool Get_SpellPage(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw, bool &mouseHasItem) {
+  bool Get_SpellPage(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw, bool &mouseHasItem, Spell_Data::Skill_Tree tree) {
     float xSpacing = 32.0f;
     float ySpacing = 32.0f;
     float x = draw.x;
     float y = draw.y;
     float i = 1;
     float w = 0;
-    for (int j = 0; j < spellbook.Skill_Trees[Spell_Data::fire].size(); ++j) {
-      SDL_FRect renderRect = {x + 192.0f + (spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x * w) + (xSpacing * w), y + 128.0f, spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x, spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x};
+    for (int j = 0; j < spellbook.Skill_Trees[tree].size(); ++j) {
+      SDL_FRect renderRect = {x + 192.0f + (spellbook.Skill_Trees[tree][j].icon.renderRectSize.x * w) + (xSpacing * w), y + 128.0f, spellbook.Skill_Trees[tree][j].icon.renderRectSize.x, spellbook.Skill_Trees[tree][j].icon.renderRectSize.x};
       w++;
       if ((j + 1) % 3 == 0) {
         x = draw.x;
-        y = draw.y + ((ySpacing + spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x) * i);
+        y = draw.y + ((ySpacing + spellbook.Skill_Trees[tree][j].icon.renderRectSize.x) * i);
         i++;
         w = 0.0f;
       }
       renderRect = UI::Update_Scale(camera.scale, renderRect);
 
       if (Mouse::bRect_inside_Cursor(renderRect)) {
-        mouseHasItem = true;
-        Mouse::ss.index = i;
-        Mouse::ss.type = Component::Icon_Type::spell;
-        Mouse::itemCurrentlyHeld = true;
-        Mouse::ss.index = i;
+        Utilities::Log("picked up spell at spellbook index " + std::to_string(j));
+//        mouseHasItem = true;
+        Mouse_Struct::mouseData.tree = tree;
+        Mouse_Struct::mouseData.index = j;
+        Mouse_Struct::mouseData.type = Component::Icon_Type::spell;
+//        Mouse::itemCurrentlyHeld = true;
         return true;
       }
     }
@@ -100,38 +191,38 @@ namespace UI_Spellbook {
   }
 
   bool Get_Spell(entt::registry &zone, Component::Camera &camera, bool &mouseHasItem) {
-    if (Get_SpellPage(zone, camera, spellbook.panelRect, mouseHasItem)) {
+    if (Get_SpellPage(zone, camera, spellbook.panelRect, mouseHasItem, Spell_Data::Skill_Tree::fire)) {
       return true;
     }
     SDL_FRect page2 = spellbook.panelRect;
     page2.w /= 2;
     page2.x += page2.w - 64.0f;
-    if (Get_SpellPage(zone, camera, page2, mouseHasItem)) {
+    if (Get_SpellPage(zone, camera, page2, mouseHasItem, Spell_Data::Skill_Tree::warrior)) {
       return true;
     }
     return false;
   }
 
-  void Draw_Spell_Page(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw) {
+  void Draw_Spell_Page(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw, Spell_Data::Skill_Tree tree) {
     float xSpacing = 32.0f;
     float ySpacing = 32.0f;
     float x = draw.x;
     float y = draw.y;
     float i = 1;
     float w = 0;
-    for (int j = 0; j < spellbook.Skill_Trees[Spell_Data::fire].size(); ++j) {
-      SDL_FRect renderRect = {x + 192.0f + (spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x * w) + (xSpacing * w), y + 128.0f, spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x, spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x};
+    for (int j = 0; j < spellbook.Skill_Trees[tree].size(); ++j) {
+      SDL_FRect renderRect = {x + 192.0f + (spellbook.Skill_Trees[tree][j].icon.renderRectSize.x * w) + (xSpacing * w), y + 128.0f, spellbook.Skill_Trees[tree][j].icon.renderRectSize.x, spellbook.Skill_Trees[tree][j].icon.renderRectSize.x};
       w++;
       if ((j + 1) % 3 == 0) {
         x = draw.x;
-        y = draw.y + ((ySpacing + spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x) * i);
+        y = draw.y + ((ySpacing + spellbook.Skill_Trees[tree][j].icon.renderRectSize.x) * i);
         i++;
         w = 0.0f;
       }
       renderRect = UI::Update_Scale(camera.scale, renderRect);
 
-      SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[Spell_Data::fire][j].icon.pTexture, &spellbook.Skill_Trees[Spell_Data::fire][j].icon.clipIcon, &renderRect);
-      SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[Spell_Data::fire][j].icon.pIconRarityBorder, &spellbook.Skill_Trees[Spell_Data::fire][j].icon.clipIcon, &renderRect);
+      SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[tree][j].icon.pTexture, NULL, &renderRect);
+      SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[tree][j].icon.pIconBorder, NULL, &renderRect);
     }
   }
 
@@ -144,11 +235,11 @@ namespace UI_Spellbook {
   }
 
   void Draw_Pages(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw) {
-    Draw_Spell_Page(zone, camera, draw);
+    Draw_Spell_Page(zone, camera, draw, Spell_Data::Skill_Tree::fire);
     SDL_FRect page2 = spellbook.panelRect;
     page2.w /= 2;
     page2.x += page2.w - 64.0f;
-    Draw_Spell_Page(zone, camera, page2);
+    Draw_Spell_Page(zone, camera, page2, Spell_Data::Skill_Tree::warrior);
   }
 
   void Draw_Spellbook(entt::registry &zone, Component::Camera &camera) {

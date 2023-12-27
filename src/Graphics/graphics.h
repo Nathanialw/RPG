@@ -60,6 +60,15 @@ namespace Graphics {
   //    std::map<std::string, SDL_Texture*> itemTextures;
 
   SDL_Texture *fireball_explosion_0;
+  SDL_Texture *fireball_icon;
+  SDL_Texture *death1;
+  SDL_Texture *death2;
+  SDL_Texture *death3;
+  SDL_Texture *death4;
+  SDL_Texture *death5;
+  SDL_Texture *death6;
+  SDL_Texture *death7;
+  SDL_Texture *death8;
   SDL_Texture *itsmars_Inventory;
   SDL_Texture *cursor_0;
   SDL_Texture *selector32;
@@ -254,6 +263,15 @@ namespace Graphics {
   static void Load_Textures() {
     Create_Font();
     fireball_explosion_0 = createTexture("assets/sprites/spells/fire/explosions/fireball_explosion_0.png");
+    fireball_icon = createTexture("assets/sprites/UI/icons/spell_icons/fire/Fantasy Game Skills Icon 1 - Magic - Fire Ball level 1.jpg");
+    death1 = createTexture("assets/sprites/UI/icons/Dark Magic/01.png");
+    death2 = createTexture("assets/sprites/UI/icons/Dark Magic/02.png");
+    death3 = createTexture("assets/sprites/UI/icons/Dark Magic/03.png");
+    death4 = createTexture("assets/sprites/UI/icons/Dark Magic/04.png");
+    death5 = createTexture("assets/sprites/UI/icons/Dark Magic/05.png");
+    death6 = createTexture("assets/sprites/UI/icons/Dark Magic/06.png");
+    death7 = createTexture("assets/sprites/UI/icons/Dark Magic/07.png");
+    death8 = createTexture("assets/sprites/UI/icons/Dark Magic/08.png");
 
     weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
     itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");

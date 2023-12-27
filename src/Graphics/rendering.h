@@ -328,19 +328,19 @@ namespace Rendering {
         }
       }
     }
-    if (Mouse::ss.type == Component::Icon_Type::spell) {
+    if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
 //      const auto &icon = UI_Spellbook::spellbook.Skill_Trees[UI_Spellbook::fire][0].icon;
-      const auto &icon = UI_Spellbook::spellbook.Skill_Trees[Spell_Data::fire][Mouse::ss.index].icon;
+      const auto &icon = UI_Spellbook::spellbook.Skill_Trees[Mouse_Struct::mouseData.tree][Mouse_Struct::mouseData.index].icon;
 //      const auto &icon = Mouse::ss.spell;
 
       DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
       DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
-      DisplayRect.x = (Mouse::mousePoint.x) - (DisplayRect.w / 2.0f);
-      DisplayRect.y = (Mouse::mousePoint.y) - (DisplayRect.h / 2.0f);
+      DisplayRect.x = Mouse::iXMouse - (DisplayRect.w / 2.0f);
+      DisplayRect.y = Mouse::iYMouse - (DisplayRect.h / 2.0f);
       //std::cout << "x: " << DisplayRect.x << " y: " << DisplayRect.y << " w: " << DisplayRect.w << " h: " << DisplayRect.h << std::endl;
-      SDL_RenderCopyF(Graphics::renderer, icon.pBackground, &icon.clipSprite, &DisplayRect);
-      SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &DisplayRect);
-      SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, &icon.clipSprite, &DisplayRect);
+      SDL_RenderCopyF(Graphics::renderer, icon.pBackground, NULL, &DisplayRect);
+      SDL_RenderCopyF(Graphics::renderer, icon.pTexture, NULL, &DisplayRect);
+      SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, NULL, &DisplayRect);
     }
   }
 

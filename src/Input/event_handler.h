@@ -64,11 +64,11 @@ namespace Event_Handler {
         auto &position = zone.get<Component::Position>(entity);
 
         if (Hotbar_Structs::keybinds.contains(Events::event.key.keysym.sym)) {
-          Hotbar_Structs::keybinds[Events::event.key.keysym.sym](zone, entity, action, state);
+          Hotbar_Structs::keybinds[Events::event.key.keysym.sym](zone, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
         }
       } else if (Events::event.type == SDL_KEYUP) {
         if (Hotbar::keyupKeybinds.contains(Events::event.key.keysym.sym)) {
-          Hotbar::keyupKeybinds[Events::event.key.keysym.sym](zone, entity, action, state);
+          Hotbar::keyupKeybinds[Events::event.key.keysym.sym](zone, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
         }
       }
     }
@@ -116,9 +116,9 @@ namespace Event_Handler {
         }
         //        spells
         else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
-          if (Mouse::itemCurrentlyHeld) {
+          if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
             Action_Bar::Set_Mouse_Spell_On_Actionbar(zone, state, camera);
-          } else {
+          } else if (Mouse_Struct::mouseData.type == Component::Icon_Type::none && !Mouse::itemCurrentlyHeld) {
             Action_Bar::Get_Mouse_Spell_From_Actionbar(zone, state, camera);
           }
         } else if (UI_Spellbook::Check_Spellbook(camera)) {
@@ -127,10 +127,12 @@ namespace Event_Handler {
         }
         //        items
         else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-          UI::Bag_UI::Interact_With_Bag(zone, player_ID, state, camera);
-          if (UI::Equipment_UI::Interact_With_Equipment(zone, state, camera, player_ID)) {
-            //updates character stats
-            zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
+          if (Mouse_Struct::mouseData.type != Component::Icon_Type::spell) {
+            UI::Bag_UI::Interact_With_Bag(zone, player_ID, state, camera);
+            if (UI::Equipment_UI::Interact_With_Equipment(zone, state, camera, player_ID)) {
+              //updates character stats
+              zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
+            }
           }
         } else {
           User_Mouse_Input::Selection_Box(zone);//if units are currently selected
@@ -141,20 +143,24 @@ namespace Event_Handler {
         }
       } else if (Events::event.button.button == SDL_BUTTON_RIGHT) {
         if (UI::bToggleCharacterUI) {
-          if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-            if (UI::Swap_Item_In_Bag_For_Equipped(zone, state, Mouse::screenMousePoint, camera, player_ID)) {
-              zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
+          if (Mouse_Struct::mouseData.type != Component::Icon_Type::spell) {
+            if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
+              if (UI::Swap_Item_In_Bag_For_Equipped(zone, state, Mouse::screenMousePoint, camera, player_ID)) {
+                zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
+                return;
+              }
               return;
             }
-            return;
           }
         }
         if (!Mouse::itemCurrentlyHeld) {
-          if (Input_Control::Check_For_Mouse_Target(zone, state, Items::showGroundItems, player_ID, playerPosition)) {
-            Mouse::bRight_Mouse_Pressed = false;//otherwise mouse move will override attack move
-          } else if (!Mouse::bRight_Mouse_Pressed) {
-            User_Mouse_Input::Update_Move_Command_Box();
-            // if not seleciton units
+          if (Mouse_Struct::mouseData.type != Component::Icon_Type::spell) {
+            if (Input_Control::Check_For_Mouse_Target(zone, state, Items::showGroundItems, player_ID, playerPosition)) {
+              Mouse::bRight_Mouse_Pressed = false;//otherwise mouse move will override attack move
+            } else if (!Mouse::bRight_Mouse_Pressed) {
+              User_Mouse_Input::Update_Move_Command_Box();
+              // if not seleciton units
+            }
           }
         } else {
           UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
