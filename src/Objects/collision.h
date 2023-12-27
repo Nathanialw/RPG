@@ -2,8 +2,7 @@
 #include "entt/entt.hpp"
 #include "world.h"
 #include "tmxlite/Object.hpp"
-#include "debug_system.h"
-#include "quad_tree.h"
+#include "timer.h"
 
 namespace Collision_Component {
 
@@ -282,7 +281,7 @@ namespace Collision {
       j++;
 //      if (j > 5) {break;}
     }
-    Debug::settingsValue[Debug::CollisionChecks] = i;
+//    Debug::settingsValue[Debug::CollisionChecks] = i;
   }
 
   void Collision_Routine(entt::registry &zone, int &state) {

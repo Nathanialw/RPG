@@ -260,8 +260,8 @@ namespace Graphics {
     cursor_0 = createTexture("assets/sprites/UI/cursors/cursor.png");
     selector32 = createTexture("assets/sprites/UI/selector/selector32.png");
 
-    emptyBagIcon = createTexture("assets/sprites/UI/icon_borders/32x32_BagSlotBorder.png"); // currently NULL
-    bagSlotBorder = createTexture("assets/sprites/UI/icon_borders/32x32_BagSlotBorder.png");
+    emptyBagIcon = createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png"); // currently NULL
+    bagSlotBorder = createTexture("assets/sprites/UI/icon_borders/frame-0-grey.png");
 
     itemBorderCommon = createTexture("assets/sprites/UI/icon_borders/frame-0-grey.png");
     itemBorderMagic = createTexture("assets/sprites/UI/icon_borders/frame-0-blue.png");

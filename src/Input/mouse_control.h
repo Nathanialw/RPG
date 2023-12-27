@@ -1,8 +1,15 @@
 #pragma once
 #include "components.h"
 #include "graphics.h"
+//#include "spell_data.h"
 
 namespace Mouse {
+
+//  struct On_Mouse {
+//    entt::entity item_ID;
+//    Component::Icon_Type type = Component::Icon_Type::none;
+//  };
+
   namespace {
     float cursorRadius = 5.0f;
     float Mouse_Selection_Box_x;
@@ -20,6 +27,17 @@ namespace Mouse {
   float iYWorld_Mouse;
   float Mouse_Selection_Box_x_Display;
   float Mouse_Selection_Box_y_Display;
+
+  struct mouseda {
+    entt::entity mouseItem;
+    entt::entity cursor_ID;
+    bool itemCurrentlyHeld = false;
+//    Spell_Data::Spell spell;
+//    Spell_Data::Skill_Tree tree;
+    int index;
+    Component::Icon_Type type = Component::Icon_Type::none;
+  };
+  mouseda ss;
 
   entt::entity mouseItem;
   entt::entity cursor_ID;

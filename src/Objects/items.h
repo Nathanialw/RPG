@@ -470,7 +470,7 @@ namespace Items {
         position.y = mouseY;
       }
       else {
-        Utilities::Log((int)item);
+        Utilities::Log("itemID " + std::to_string((int)item));
       }
     }
     //		Item_Collision(zone);

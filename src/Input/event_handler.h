@@ -24,6 +24,7 @@
 #include "hotbar.h"
 #include "input_control.h"
 #include "interface.h"
+#include "hotbar_structs.h"
 
 namespace Event_Handler {
 
@@ -57,17 +58,17 @@ namespace Event_Handler {
     }
   };
 
-  void Interface_Input(entt::registry &zone, Component::Camera &camera, Action_Component::Action &action, entt::entity entity) {//can return bools for x and y dir, and 2 enums for direction and state
+  void Interface_Input(entt::registry &zone, Component::Camera &camera, Action_Component::Action &action, entt::entity entity, int &state) {//can return bools for x and y dir, and 2 enums for direction and state
     if (Events::event.key.repeat == 0) {
       if (Events::event.type == SDL_KEYDOWN) {
         auto &position = zone.get<Component::Position>(entity);
 
-        if (Hotbar::keybinds.contains(Events::event.key.keysym.sym)) {
-          Hotbar::keybinds[Events::event.key.keysym.sym](zone, entity, action, 0);
+        if (Hotbar_Structs::keybinds.contains(Events::event.key.keysym.sym)) {
+          Hotbar_Structs::keybinds[Events::event.key.keysym.sym](zone, entity, action, state);
         }
       } else if (Events::event.type == SDL_KEYUP) {
         if (Hotbar::keyupKeybinds.contains(Events::event.key.keysym.sym)) {
-          Hotbar::keyupKeybinds[Events::event.key.keysym.sym](zone, entity, action, 0);
+          Hotbar::keyupKeybinds[Events::event.key.keysym.sym](zone, entity, action, state);
         }
       }
     }
@@ -188,7 +189,7 @@ namespace Event_Handler {
             if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
               //            recenter camera on player
               UI_Spellbook::Update_Position();
-              Action_Bar::Update_Position(Action_Bar::actionBar[state].actionBar.actionBarFrame);
+              Action_Bar::Update_Position(Action_Bar::actionBar.actionBar.actionBarFrame);
               Menu::Build_Menu(Menu::menu);
               break;
             }
@@ -208,7 +209,7 @@ namespace Event_Handler {
               if (zone.any_of<Component::Velocity>(player_ID)) {
                 Movement_Input(zone, playerAction, player_ID, input);
               }
-              Interface_Input(zone, camera, playerAction, player_ID);
+              Interface_Input(zone, camera, playerAction, player_ID, state);
             }
             //if (event.key.type == SDL_JOYAXISMOTION) { // it works!
             //	if (event.jaxis. == 0) {

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:a8ea2c9fdeaacd61c97127a35c875dce:4c3cc407b706996716df836ca472ba1a:3a0d00aa54f32f8ce94993dbfc362fd9$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="dead.png" width="7000" height="4084">
+    <sprite n="DeadBush1_1" x="1840" y="1633" w="66" h="76"/>
+    <sprite n="DeadBush1_2" x="6449" y="609" w="71" h="72"/>
+    <sprite n="DeadBush1_3" x="4551" y="2559" w="62" h="68"/>
+    <sprite n="DeadBush1_4" x="3942" y="656" w="76" h="53"/>
+    <sprite n="DeadBush1_5" x="6037" y="1897" w="64" h="78"/>
+    <sprite n="DeadBush1_6" x="5546" y="1107" w="78" h="65"/>
+    <sprite n="DeadBush1_7" x="2824" y="2066" w="74" h="67"/>
+    <sprite n="DeadBush1_8" x="5528" y="1892" w="64" h="67"/>
+    <sprite n="DeadTree1_1" x="3942" y="1" w="663" h="653"/>
+    <sprite n="DeadTree1_2" x="3311" y="1" w="629" h="709"/>
+    <sprite n="DeadTree1_3" x="1" y="3381" w="654" h="684"/>
+    <sprite n="DeadTree1_4" x="5228" y="1" w="610" h="679"/>
+    <sprite n="DeadTree1_5" x="4607" y="1" w="619" h="651"/>
+    <sprite n="DeadTree1_6" x="3311" y="712" w="607" h="651"/>
+    <sprite n="DeadTree1_7" x="647" y="868" w="593" h="700"/>
+    <sprite n="DeadTree1_8" x="5840" y="1" w="607" h="717"/>
+    <sprite n="DeadTree_19" x="6853" y="303" w="134" h="293"/>
+    <sprite n="DeadTree_20" x="6853" y="1" w="139" h="300"/>
+    <sprite n="DeadTree_21" x="2239" y="1739" w="190" h="318"/>
+    <sprite n="DeadTree_22" x="2828" y="3764" w="197" h="319"/>
+    <sprite n="DeadTree_23" x="1648" y="814" w="312" h="498"/>
+    <sprite n="DeadTree_24" x="5546" y="682" w="269" h="423"/>
+    <sprite n="DeadTree_25" x="6615" y="609" w="259" h="407"/>
+    <sprite n="DeadTree_26" x="6615" y="1018" w="270" h="406"/>
+    <sprite n="DeadTree_27" x="5528" y="1201" w="260" h="404"/>
+    <sprite n="Strange Flora 1" x="6490" y="3295" w="200" h="168"/>
+    <sprite n="Strange Flora 2" x="1242" y="1412" w="198" h="156"/>
+    <sprite n="Strange Flora 3" x="5705" y="3894" w="200" h="169"/>
+    <sprite n="Strange Flora 4" x="1442" y="1412" w="198" h="156"/>
+    <sprite n="Strange Flora 5" x="5939" y="3867" w="198" h="156"/>
+    <sprite n="Strange Flora 6" x="4160" y="3877" w="200" h="169"/>
+    <sprite n="Strange Flora 7" x="6295" y="3260" w="193" h="157"/>
+    <sprite n="Strange Flora 8" x="5449" y="3017" w="200" h="169"/>
+    <sprite n="Strange Flora 9" x="6436" y="3465" w="193" h="157"/>
+    <sprite n="Strange Flora 10" x="3920" y="1287" w="400" h="320"/>
+    <sprite n="Strange Flora 11" x="6594" y="1822" w="396" h="314"/>
+    <sprite n="Strange Flora 12" x="1482" y="2412" w="397" h="314"/>
+    <sprite n="Strange Flora 13" x="1838" y="2055" w="396" h="314"/>
+    <sprite n="Strange Flora 14" x="1840" y="1739" w="397" h="314"/>
+    <sprite n="Strange Flora 15 T2" x="3051" y="1384" w="262" h="344"/>
+    <sprite n="Strange Flora 15 T3" x="657" y="3730" w="400" h="353"/>
+    <sprite n="Strange Flora 15 T4" x="4664" y="1965" w="380" h="303"/>
+    <sprite n="Strange Flora 15 T5" x="2572" y="3116" w="393" h="310"/>
+    <sprite n="Strange Flora 15 T6" x="1350" y="3722" w="400" h="356"/>
+    <sprite n="Strange Flora 15 T7" x="3290" y="3095" w="251" h="358" oX="108" oY="4" oW="400" oH="400"/>
+    <sprite n="Strange Flora 15 T8" x="6192" y="1279" w="400" h="365"/>
+    <sprite n="Strange Flora 15" x="1866" y="2740" w="390" h="317"/>
+    <sprite n="Strange Flora 16 T1" x="5709" y="2599" w="331" h="299"/>
+    <sprite n="Strange Flora 16 T2" x="5790" y="1556" w="400" h="339"/>
+    <sprite n="Strange Flora 16 T3" x="4301" y="3269" w="229" h="271"/>
+    <sprite n="Strange Flora 16 T4" x="4001" y="3274" w="298" h="256"/>
+    <sprite n="Strange Flora 16 T5" x="5150" y="2661" w="293" h="300"/>
+    <sprite n="Strange Flora 16 T6" x="6192" y="1646" w="400" h="345"/>
+    <sprite n="Strange Flora 16 T7" x="4551" y="2634" w="298" h="315"/>
+    <sprite n="Strange Flora 17 T1" x="4724" y="1607" w="400" h="356"/>
+    <sprite n="Strange Flora 17 T2" x="2824" y="2138" w="246" h="316"/>
+    <sprite n="Strange Flora 17 T3" x="6746" y="2992" w="248" h="322"/>
+    <sprite n="Strange Flora 17 T4" x="656" y="2167" w="400" h="379"/>
+    <sprite n="Strange Flora 17 T5" x="5790" y="1185" w="400" h="369"/>
+    <sprite n="Strange Flora 17 T6" x="5813" y="3236" w="246" h="322"/>
+    <sprite n="Strange Flora 17 T7" x="5705" y="3560" w="232" h="332"/>
+    <sprite n="Strange Flora 17 T8" x="5126" y="1603" w="400" h="362"/>
+    <sprite n="Strange Flora 18 T1" x="3944" y="2250" w="344" h="295"/>
+    <sprite n="Strange Flora 18 T2" x="3338" y="3788" w="283" h="285"/>
+    <sprite n="Strange Flora 18 T3" x="6330" y="2345" w="262" h="325"/>
+    <sprite n="Strange Flora 18 T4" x="4256" y="3542" w="274" h="333"/>
+    <sprite n="Strange Flora 18 T5" x="3013" y="1730" w="317" h="343"/>
+    <sprite n="Strange Flora 18 T6" x="4251" y="2559" w="298" h="349"/>
+    <sprite n="Strange Flora 18 T7" x="6184" y="3545" w="250" h="303"/>
+    <sprite n="Strange Flora 18 T8" x="3623" y="3788" w="295" h="290"/>
+    <sprite n="Strange Flora 19 T1" x="3919" y="1609" w="396" h="272"/>
+    <sprite n="Tanglewood 1 T1" x="1477" y="1633" w="361" h="384"/>
+    <sprite n="Tanglewood 1 T2" x="1961" y="1382" w="400" h="355"/>
+    <sprite n="Tanglewood 1 T3" x="4317" y="1623" w="390" h="282"/>
+    <sprite n="Tanglewood 1 T4" x="1473" y="2728" w="391" h="324"/>
+    <sprite n="Tanglewood 1 T5" x="2885" y="3435" w="310" h="327"/>
+    <sprite n="Tanglewood 1 T6" x="3315" y="1365" w="390" h="316"/>
+    <sprite n="Tanglewood 1 T7" x="2236" y="2457" w="367" h="280"/>
+    <sprite n="Tanglewood 1 T8" x="2258" y="2739" w="362" h="330"/>
+    <sprite n="Tanglewood 2 T1" x="4983" y="2270" w="242" h="367"/>
+    <sprite n="Tanglewood 2 T2" x="2967" y="3096" w="321" h="337"/>
+    <sprite n="Tanglewood 2 T3" x="1059" y="3730" w="289" h="353"/>
+    <sprite n="Tanglewood 2 T4" x="3072" y="2075" w="253" h="386"/>
+    <sprite n="Tanglewood 2 T5" x="6042" y="2545" w="284" h="362"/>
+    <sprite n="Tanglewood 2 T6" x="3197" y="3455" w="306" h="331"/>
+    <sprite n="Tanglewood 2 T7" x="4815" y="3261" w="272" h="332"/>
+    <sprite n="Tanglewood 2 T8" x="4809" y="3620" w="228" h="359"/>
+    <sprite n="Tanglewood 3 T1" x="5227" y="2267" w="239" h="392"/>
+    <sprite n="Tanglewood 3 T2" x="2576" y="2066" w="246" h="388"/>
+    <sprite n="Tanglewood 3 T3" x="5468" y="2267" w="239" h="387"/>
+    <sprite n="Tanglewood 3 T4" x="6038" y="2180" w="290" h="363"/>
+    <sprite n="Tanglewood 3 T5" x="3659" y="2068" w="283" h="395"/>
+    <sprite n="Tanglewood 3 T6" x="3543" y="3056" w="216" h="390"/>
+    <sprite n="Tanglewood 3 T7" x="3272" y="2716" w="215" h="377"/>
+    <sprite n="Tanglewood 3 T8" x="2003" y="3721" w="240" h="362"/>
+    <sprite n="Tanglewood 4 T1" x="1484" y="3054" w="366" h="363"/>
+    <sprite n="Tanglewood 4 T2" x="2431" y="1710" w="352" h="354"/>
+    <sprite n="Tanglewood 4 T3" x="2212" y="3071" w="358" h="349"/>
+    <sprite n="Tanglewood 4 T4" x="3761" y="3055" w="238" h="384"/>
+    <sprite n="Tanglewood 4 T5" x="2245" y="3698" w="271" h="382"/>
+    <sprite n="Tanglewood 4 T6" x="6238" y="2931" w="253" h="327"/>
+    <sprite n="Tanglewood 4 T7" x="6493" y="2992" w="251" h="301"/>
+    <sprite n="Tanglewood 4 T8" x="1082" y="3480" w="197" h="248"/>
+    <sprite n="Tanglewood 5 T1" x="6594" y="2138" w="339" h="277"/>
+    <sprite n="Tanglewood 5 T2" x="2950" y="2463" w="371" h="251"/>
+    <sprite n="Tanglewood 5 T3" x="4532" y="3620" w="275" h="346"/>
+    <sprite n="Tanglewood 5 T4" x="4001" y="2890" w="240" h="382"/>
+    <sprite n="Tanglewood 5 T5" x="1648" y="3423" w="309" h="296"/>
+    <sprite n="Tanglewood 5 T6" x="6037" y="1993" w="341" h="185"/>
+    <sprite n="Tanglewood 5 T7" x="3705" y="2819" w="235" h="234"/>
+    <sprite n="Tanglewood 5 T8" x="6061" y="3260" w="232" h="283"/>
+    <sprite n="Tanglewood 6 T1" x="4243" y="2910" w="277" h="357"/>
+    <sprite n="Tanglewood 6 T2" x="5292" y="3626" w="195" h="377"/>
+    <sprite n="Tanglewood 6 T3" x="5089" y="3259" w="244" h="365"/>
+    <sprite n="Tanglewood 6 T4" x="2765" y="1390" w="284" h="318"/>
+    <sprite n="Tanglewood 6 T5" x="5528" y="1607" w="260" h="283"/>
+    <sprite n="Tanglewood 6 T6" x="6692" y="3316" w="267" h="236"/>
+    <sprite n="Tanglewood 6 T7" x="1881" y="2371" w="353" h="367"/>
+    <sprite n="Tanglewood 6 T8" x="1071" y="2676" w="400" h="400"/>
+    <sprite n="Tanglewood 7 T1" x="5039" y="3626" w="251" h="369"/>
+    <sprite n="Tanglewood 7 T2" x="3489" y="2661" w="214" h="393"/>
+    <sprite n="Tanglewood 7 T3" x="5489" y="3613" w="214" h="365"/>
+    <sprite n="Tanglewood 7 T4" x="5709" y="2900" w="268" h="316"/>
+    <sprite n="Tanglewood 7 T5" x="2561" y="3428" w="322" h="327"/>
+    <sprite n="Tanglewood 7 T6" x="4522" y="2951" w="290" h="313"/>
+    <sprite n="Tanglewood 7 T7" x="4532" y="3266" w="281" h="352"/>
+    <sprite n="Tanglewood 7 T8" x="3332" y="1683" w="317" h="393"/>
+    <sprite n="Tanglewood 8 T1" x="3707" y="1365" w="210" h="385"/>
+    <sprite n="Tanglewood 8 T2" x="5335" y="3236" w="224" h="375"/>
+    <sprite n="Tanglewood 8 T3" x="1752" y="3721" w="249" h="362"/>
+    <sprite n="Tanglewood 8 T4" x="3651" y="1752" w="266" h="314"/>
+    <sprite n="Tanglewood 8 T5" x="1959" y="3423" w="267" h="296"/>
+    <sprite n="Tanglewood 8 T6" x="5939" y="3560" w="243" h="305"/>
+    <sprite n="Tanglewood 8 T7" x="3505" y="3455" w="221" h="331"/>
+    <sprite n="Tanglewood 8 T8" x="5489" y="2656" w="218" h="359"/>
+    <sprite n="Tanglewood 9 T1" x="5979" y="2909" w="257" h="325"/>
+    <sprite n="Tanglewood 9 T2" x="2518" y="3757" w="308" h="321"/>
+    <sprite n="Tanglewood 9 T3" x="3944" y="2547" w="305" h="341"/>
+    <sprite n="Tanglewood 9 T4" x="5561" y="3218" w="250" h="328"/>
+    <sprite n="Tanglewood 9 T5" x="5074" y="2963" w="253" h="294"/>
+    <sprite n="Tanglewood 9 T6" x="6594" y="2417" w="335" h="256"/>
+    <sprite n="Tanglewood 9 T7" x="1281" y="3480" w="365" h="240"/>
+    <sprite n="Tanglewood 9 T8" x="4814" y="2951" w="258" h="308"/>
+    <sprite n="Tanglewood 10 T1" x="2363" y="1390" w="400" h="318"/>
+    <sprite n="Tanglewood 10 T2" x="4851" y="2639" w="297" h="307"/>
+    <sprite n="Tanglewood 10 T3" x="2785" y="1710" w="226" h="354"/>
+    <sprite n="Tanglewood 10 T4" x="3705" y="2465" w="237" h="352"/>
+    <sprite n="Tanglewood 10 T5" x="2228" y="3422" w="331" h="274"/>
+    <sprite n="Tanglewood 10 T6" x="5404" y="1967" w="300" h="298"/>
+    <sprite n="Tanglewood 10 T7" x="6380" y="1993" w="212" h="350"/>
+    <sprite n="Tanglewood 10 T8" x="3728" y="3448" w="244" h="334"/>
+    <sprite n="Tanglewood 11 T1" x="6592" y="2675" w="335" h="315"/>
+    <sprite n="Tanglewood 11 T2" x="2622" y="2738" w="342" h="376"/>
+    <sprite n="Tanglewood 11 T3" x="3944" y="1883" w="338" h="365"/>
+    <sprite n="Tanglewood 11 T4" x="5709" y="2249" w="327" h="348"/>
+    <sprite n="Tanglewood 11 T5" x="3327" y="2078" w="330" h="373"/>
+    <sprite n="Tanglewood 11 T6" x="1482" y="2019" w="354" h="391"/>
+    <sprite n="Tanglewood 11 T7" x="4642" y="2270" w="339" h="362"/>
+    <sprite n="Tanglewood 11 T8" x="1082" y="3078" w="400" h="400"/>
+    <sprite n="Tanglewood 12 T1" x="2966" y="2716" w="304" h="378"/>
+    <sprite n="Tanglewood 12 T2" x="1852" y="3059" w="358" h="362"/>
+    <sprite n="Tanglewood 12 T3" x="4322" y="1221" w="400" h="400"/>
+    <sprite n="Tanglewood 12 T4" x="4724" y="1205" w="400" h="400"/>
+    <sprite n="Tanglewood 12 T5" x="2236" y="2066" w="338" h="389"/>
+    <sprite n="Tanglewood 12 T6" x="5126" y="1201" w="400" h="400"/>
+    <sprite n="Tanglewood 12 T7" x="5046" y="1967" w="356" h="298"/>
+    <sprite n="Tanglewood 12 T8" x="6594" y="1426" w="356" h="394"/>
+    <sprite n="Tree 1" x="3027" y="3788" w="309" h="279"/>
+    <sprite n="Tree 2" x="1648" y="1314" w="311" h="317"/>
+    <sprite n="Tree 3" x="3920" y="3859" w="238" h="214"/>
+    <sprite n="Tree 4" x="4290" y="2237" w="350" h="320"/>
+    <sprite n="Tree 5" x="2605" y="2456" w="343" h="280"/>
+    <sprite n="Tree 6" x="4284" y="1907" w="378" h="328"/>
+    <sprite n="Tree 7" x="5706" y="1897" w="329" h="350"/>
+    <sprite n="Tree 8" x="3974" y="3532" w="280" h="325"/>
+    <sprite n="Tree 9" x="6328" y="2672" w="262" h="257"/>
+    <sprite n="Tree23_1" x="6449" y="1" w="402" h="606"/>
+    <sprite n="Tree23_2" x="3920" y="712" w="398" h="573"/>
+    <sprite n="Tree23_3" x="4320" y="656" w="381" h="563"/>
+    <sprite n="Tree23_4" x="667" y="3153" w="413" h="575"/>
+    <sprite n="Tree23_5" x="1071" y="1570" w="404" h="587"/>
+    <sprite n="Tree23_6" x="667" y="2548" w="402" h="603"/>
+    <sprite n="Tree23_7" x="1242" y="831" w="404" h="579"/>
+    <sprite n="Tree23_8" x="656" y="1570" w="413" h="595"/>
+    <sprite n="Tree25_1" x="1" y="1" w="647" h="865"/>
+    <sprite n="Tree25_2" x="2659" y="1" w="650" h="830"/>
+    <sprite n="Tree25_3" x="1" y="2548" w="664" h="831"/>
+    <sprite n="Tree25_4" x="1321" y="1" w="682" h="811"/>
+    <sprite n="Tree25_5" x="650" y="1" w="669" h="828"/>
+    <sprite n="Tree25_6" x="1" y="1713" w="653" h="833"/>
+    <sprite n="Tree25_7" x="2005" y="1" w="652" h="830"/>
+    <sprite n="Tree25_8" x="1" y="868" w="644" h="843"/>
+    <sprite n="Tree49_1" x="1962" y="833" w="444" h="547"/>
+    <sprite n="Tree49_2" x="6253" y="720" w="360" h="557"/>
+    <sprite n="Tree49_3" x="5817" y="720" w="434" h="463"/>
+    <sprite n="Tree49_4" x="4703" y="654" w="410" h="549"/>
+    <sprite n="Tree49_5" x="2408" y="833" w="432" h="555"/>
+    <sprite n="Tree49_6" x="5115" y="682" w="429" h="517"/>
+    <sprite n="Tree49_7" x="2842" y="833" w="422" h="549"/>
+    <sprite n="Tree49_8" x="1071" y="2159" w="409" h="515"/>
+    <sprite n="Tree50_1" x="6876" y="747" w="123" h="146"/>
+    <sprite n="Tree50_2" x="6565" y="3624" w="120" h="146"/>
+    <sprite n="Tree50_3" x="6562" y="3772" w="119" h="146"/>
+    <sprite n="Tree50_4" x="5329" y="2963" w="118" h="147"/>
+    <sprite n="Tree50_5" x="6876" y="598" w="117" h="147"/>
+    <sprite n="Tree50_6" x="4362" y="3877" w="123" h="149"/>
+    <sprite n="Tree50_7" x="6436" y="3624" w="127" h="145"/>
+    <sprite n="Tree50_8" x="6436" y="3771" w="124" h="145"/>
+</TextureAtlas>

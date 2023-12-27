@@ -1,16 +1,10 @@
 #pragma once
-#include "debug_system.h"
 #include "dynamic_entity_loader.h"
 #include "dynamic_quad_tree.h"
 #include "item_components.h"
 #include "world.h"
-//#include <SDL2/SDL.h>
-//#include "vector"
-//#include "entt/entt.hpp"
-//#include "utilities.h"
-//#include "graphics.h"
-//#include "debug_components.h"
-//#include "map"
+#include "collision.h"
+#include "Debug/debug_components.h"
 
 namespace Quad_Tree {
 

@@ -1,5 +1,6 @@
 #pragma once
 #include "spells.h"
+#include "mouse_control.h"
 
 namespace Fire {
   struct Cast_Data {
@@ -8,7 +9,7 @@ namespace Fire {
   };
 
   typedef int (*spells)(entt::registry &zone, entt::entity &entity);
-  typedef int (*castSpell)(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index);
+  typedef int (*castSpell)(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index);
 
   int Fireball(entt::registry &zone, entt::entity &entity) {
     //get data from db
@@ -22,12 +23,12 @@ namespace Fire {
 
   spells Fire_Spells[] = {Fireball};
 
-  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     if (action.state != Action_Component::casting && action.state != Action_Component::cast) {
 
       //read animation in from db?
       Action_Component::Set_State(action, Action_Component::casting);
-      Fire_Spells[index](zone, entity);
+      Fire_Spells[0](zone, entity);
     }
     return 0;
   }

@@ -1,13 +1,15 @@
 #pragma once
-#include "map"
-#include "array"
 #include "Fire/fire.h"
 #include "SDL2/SDL.h"
 #include "ai_control.h"
+#include "array"
+#include "cave.h"
 #include "components.h"
+#include "hotbar_structs.h"
+#include "map"
 #include "sinister_strike.h"
 #include "ui.h"
-#include "cave.h"
+#include "ui_actionbar.h"
 /*
  * make an array of functions for everything that can go onto the hotbar, ie skills
  *
@@ -47,32 +49,32 @@ namespace Hotbar {
     }
   }
 
-  int SetStateAttack2(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int SetStateAttack2(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     Action_Component::Set_State(action, Action_Component::attack2);
     return 0;
   }
 
-  int Sinister_Strike(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Sinister_Strike(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     Sinister_Strike::Instant_Attack(zone, entity);
     return 0;
   }
 
-  int Toggle_AI(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Toggle_AI(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     AI::Turn_On();
     return 0;
   }
 
-  int Tab_Target(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Tab_Target(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     User_Mouse_Input::Tab_Target(zone, entity);
     return 0;
   }
 
-  int Bag_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Bag_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     UI::Bag_UI::Toggle_Bag();
     return 0;
   }
 
-  int Menu_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Menu_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI) {
       UI::bToggleCharacterUI = false;
       UI_Spellbook::spellbook.b_isOpen = false;
@@ -82,42 +84,47 @@ namespace Hotbar {
     return 0;
   }
 
-  int Pause_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Pause_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     Menu::Toggle();
     return 0;
   }
 
-  int Mouse_On(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Mouse_On(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     SDL_SetRelativeMouseMode(SDL_FALSE);
     return 0;
   }
 
-  int Mouse_Off(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Mouse_Off(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     SDL_SetRelativeMouseMode(SDL_TRUE);
     return 0;
   }
 
-  int Toggle_Spellbook(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Toggle_Spellbook(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     UI_Spellbook::Toggle();
     return 0;
   }
 
-  int Show_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Show_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     Items::showGroundItems = true;
     return 0;
   }
 
-  int Unshow_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Unshow_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     Items::showGroundItems = false;
     return 0;
   }
 
-  int Jump(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Jump(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     Action_Component::Set_State(action, Action_Component::jump);
     return 0;
   }
 
-  int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index) {
+  int Surface(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
+    Cave::Surface(index);
+    return 0;
+  }
+
+  int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index) {
     return 0;
   }
 
@@ -126,32 +133,35 @@ namespace Hotbar {
       Fire::Cast_Spell,
       Fire::Cast_Spell};
 
-  std::map<SDL_Keycode, Fire::castSpell> keybinds = {
-      {SDLK_1, SetStateAttack2},
-      {SDLK_2, Sinister_Strike},
-      {SDLK_3, Fire::Cast_Spell},
-      {SDLK_4, PLACEHOLDER},
-      {SDLK_5, PLACEHOLDER},
-      {SDLK_6, PLACEHOLDER},
-      {SDLK_7, PLACEHOLDER},
-      {SDLK_8, PLACEHOLDER},
-      {SDLK_9, Toggle_AI},
-      {SDLK_TAB, Tab_Target},
-      {SDLK_ESCAPE, Menu_Toggle},
-      {SDLK_i, Bag_Toggle},
-      {SDLK_p, Pause_Toggle},
-      {SDLK_PLUS, Mouse_On},
-      {SDLK_MINUS, Mouse_Off},
-      {SDLK_l, Toggle_Spellbook},
-      {SDLK_LALT, Show_Items},
-      {SDLK_RALT, Show_Items},
-      {SDLK_SPACE, Jump}
-  };
+
+  void Init_Hotbar() {
+    Hotbar_Structs::keybinds = {
+        {SDLK_1, Action_Bar::actionBar.actionBar.spell[0].cast},
+        {SDLK_2, Action_Bar::actionBar.actionBar.spell[1].cast},
+        {SDLK_3, Action_Bar::actionBar.actionBar.spell[2].cast},
+        {SDLK_4, Action_Bar::actionBar.actionBar.spell[3].cast},
+        {SDLK_5, Action_Bar::actionBar.actionBar.spell[4].cast},
+        {SDLK_6, PLACEHOLDER},
+        {SDLK_7, PLACEHOLDER},
+        {SDLK_8, PLACEHOLDER},
+        {SDLK_9, Toggle_AI},
+        {SDLK_TAB, Tab_Target},
+        {SDLK_ESCAPE, Menu_Toggle},
+        {SDLK_i, Bag_Toggle},
+        {SDLK_p, Pause_Toggle},
+        {SDLK_PLUS, Mouse_On},
+        {SDLK_MINUS, Mouse_Off},
+        {SDLK_l, Toggle_Spellbook},
+        {SDLK_o, Surface},
+        {SDLK_LALT, Show_Items},
+        {SDLK_RALT, Show_Items},
+        {SDLK_SPACE, Jump}};
+  }
+
 
   std::map<SDL_Keycode, Fire::castSpell> keyupKeybinds = {
       {SDLK_LALT, Unshow_Items},
-      {SDLK_RALT, Unshow_Items}
-  };
+      {SDLK_RALT, Unshow_Items}};
 
   std::map<int, Fire::castSpell> hotBarSpells = {
       {0, SetStateAttack2},

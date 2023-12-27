@@ -311,19 +311,36 @@ namespace Rendering {
     SDL_FRect DisplayRect = {};
     auto view = zone.view<Component::Position, Component::Icon, Component::On_Mouse>();
     for (auto item: view) {
-      const auto &icon = view.get<Component::Icon>(item);
+      const auto &mouse = view.get<Component::On_Mouse>(item);
       const auto &x = view.get<Component::Position>(item).x;
       const auto &y = view.get<Component::Position>(item).y;
-      DisplayRect.x = (x - camera.screen.x) - (icon.renderPositionOffset.x / camera.scale.x);
-      DisplayRect.y = (y - camera.screen.y) - (icon.renderPositionOffset.y / camera.scale.y);
+      if (mouse.type == Component::Icon_Type::item) {
+        const auto &icon = view.get<Component::Icon>(item);
+        DisplayRect.x = (x - camera.screen.x) - (icon.renderPositionOffset.x / camera.scale.x);
+        DisplayRect.y = (y - camera.screen.y) - (icon.renderPositionOffset.y / camera.scale.y);
+        DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
+        DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
+        //std::cout << "x: " << DisplayRect.x << " y: " << DisplayRect.y << " w: " << DisplayRect.w << " h: " << DisplayRect.h << std::endl;
+        SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &DisplayRect);
+        SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, &icon.clipSprite, &DisplayRect);
+        if (showSpriteBox) {
+          //SDL_RenderDrawRect(Graphics::renderer, &DisplayRect);
+        }
+      }
+    }
+    if (Mouse::ss.type == Component::Icon_Type::spell) {
+//      const auto &icon = UI_Spellbook::spellbook.Skill_Trees[UI_Spellbook::fire][0].icon;
+      const auto &icon = UI_Spellbook::spellbook.Skill_Trees[Spell_Data::fire][Mouse::ss.index].icon;
+//      const auto &icon = Mouse::ss.spell;
+
       DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
       DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
+      DisplayRect.x = (Mouse::mousePoint.x) - (DisplayRect.w / 2.0f);
+      DisplayRect.y = (Mouse::mousePoint.y) - (DisplayRect.h / 2.0f);
       //std::cout << "x: " << DisplayRect.x << " y: " << DisplayRect.y << " w: " << DisplayRect.w << " h: " << DisplayRect.h << std::endl;
+      SDL_RenderCopyF(Graphics::renderer, icon.pBackground, &icon.clipSprite, &DisplayRect);
       SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &DisplayRect);
       SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, &icon.clipSprite, &DisplayRect);
-      if (showSpriteBox) {
-        //SDL_RenderDrawRect(Graphics::renderer, &DisplayRect);
-      }
     }
   }
 

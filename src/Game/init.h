@@ -65,7 +65,9 @@ namespace Init {
 
   void Init_Data() {
     Graphics::Load_Textures();
-
+    UI_Spellbook::Init_UI();
+    Hotbar::Init_Hotbar();
+    Action_Bar::Create_Action_Bar();
     Scene::Init_Zone();
     Init_Tiles_Array();
     Debug::Load_Settings();
@@ -80,15 +82,12 @@ namespace Init {
 
   //only needs to be fired once per zone
   void Create_Game_entities(entt::registry &zone, int &state, std::string &tilesetName, Character_Options::Customization &options) {
-
     Maps::Generate_Region(state, tilesetName);
-    //for when we clear the registry
     Collision::init_Collison(state);
     Item_Component::emptyEquipSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
     Graphics::defaultIcon[state] = Graphics::Create_Icon_Entity(zone, Graphics::default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
     UI::Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
     Mouse::Init_mouse(zone);
-    UI_Spellbook::Init_UI(zone);
     if (Create_Entities::startup) {
       Character_Stats::Init_Player(zone, state, options);
     } else {
@@ -96,7 +95,6 @@ namespace Init {
     }
     Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
     Quad_Tree::Fill_Quad_Tree(zone, state);
-    Action_Bar::Create_Action_Bar(zone, state);
   };
 
   void Restart_Game() {

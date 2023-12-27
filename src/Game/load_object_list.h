@@ -122,6 +122,9 @@ namespace Load_Object_List {
   void Load_Entities() {
     Game_Objects_Lists::tilesets["forest_summer"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_summer").c_str());
     Game_Objects_Lists::tilesets["forest_winter"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_winter").c_str());
+    Game_Objects_Lists::tilesets["beach"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("beach").c_str());
+    Game_Objects_Lists::tilesets["dead"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("dead").c_str());
+
     Game_Objects_Lists::tilesets["bloodPool"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "background");
     Game_Objects_Lists::tilesets["bloodSplatter"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "foreground");
 
@@ -129,6 +132,12 @@ namespace Load_Object_List {
     Game_Objects_Lists::units["demons"] = Entity_Loader::Get_Unit_Subtypes("demon", "Demon");
     Game_Objects_Lists::units["eldritch"] = Entity_Loader::Get_Unit_Subtypes("eldritch", "eldritch");
     Game_Objects_Lists::units["troll"] = Entity_Loader::Get_Unit_Subtypes("monster", "troll");
+    Game_Objects_Lists::units["amber_slime"] = Entity_Loader::Get_Unit_Subtypes("monster", "amber_slime");
+    Game_Objects_Lists::units["red_slime"] = Entity_Loader::Get_Unit_Subtypes("monster", "red_slime");
+    Game_Objects_Lists::units["misc_slime"] = Entity_Loader::Get_Unit_Subtypes("monster", "misc_slime");
+    Game_Objects_Lists::units["green_slime"] = Entity_Loader::Get_Unit_Subtypes("monster", "green_slime");
+    Game_Objects_Lists::units["clear_slime"] = Entity_Loader::Get_Unit_Subtypes("monster", "clear_slime");
+    Game_Objects_Lists::units["blue_slime"] = Entity_Loader::Get_Unit_Subtypes("monster", "blue_slime");
   }
 }
 

@@ -6,6 +6,7 @@
 #include "damage_text.h"
 #include "utilities.h"
 #include "combat_control.h"
+#include "movement_components.h"
 
 namespace Instant_Attack {
 
@@ -51,7 +52,7 @@ namespace Instant_Attack {
           if (Entity_Control::Target_In_Range(position, meleeRange.meleeRange, targetPosition, targetRadius)) {
             auto &angle = zone.get<Component::Velocity>(player_ID).angle;
             auto &direction = zone.get<Component::Direction>(player_ID);
-            direction = Movement::Look_At_Target(position.x, position.y, targetPosition.x, targetPosition.y, angle);
+            direction = Movement_Component::Look_At_Target(position.x, position.y, targetPosition.x, targetPosition.y, angle);
             Attack(zone, player_ID, target_ID);
             return true;
           } else {

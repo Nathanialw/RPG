@@ -44,7 +44,7 @@ namespace Game_Loop {
       Player_Control::Move_To_Atack_Routine(zone,state);
       AI::Update_AI(zone, state);
       Spells::Update_Spells(zone, state);
-      Combat_Control::Update_Attacks(zone);
+      Combat_Control::Update_Attacks(zone, state);
       Movement::Update_Entity_Positions(zone);
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::movement], Timer::gameLoopTimer);
 

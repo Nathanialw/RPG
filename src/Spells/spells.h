@@ -2,11 +2,12 @@
 
 #include "SQLite_spell_data.h"
 #include "collision.h"
-#include "combat_control.h"
 #include "components.h"
-#include "map.h"
-#include "movement.h"
+#include "movement_components.h"
 #include "quad_tree.h"
+#include "entity_data.h"
+#include "SQLite_unit_data.h"
+#include "SQLite_spritesheets.h"
 
 namespace Spells {
 
@@ -62,7 +63,7 @@ namespace Spells {
 
     std::string name = (std::string) spellname;
 
-    int unit_ID = Create_Entities::Check_For_Template_ID(name);
+    int unit_ID = Entity_Data::Check_For_Template_ID(name);
     SQLite_Spell_Data::Spell_Data spellData = SQLite_Spell_Data::Spell_Loader(name);
     spellData.path = "assets/" + spellData.path;
     Graphics::Create_Game_Object(unit_ID, spellData.path.c_str());
@@ -115,7 +116,7 @@ namespace Spells {
 
       ///look at target but only once
       if (casting.counter >= casting.castTime) {
-        direction = Movement::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle);
+        direction = Movement_Component::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle);
       }
       //            Utilities::Log((int)direction);
       casting.counter -= Timer::timeStep;
@@ -129,7 +130,7 @@ namespace Spells {
 
         ///cast spell
         if (action.frameState == Action_Component::last) {
-          direction = Movement::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle);
+          direction = Movement_Component::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle);
           Create_Spell(zone, state, entity, position, direction, casting.name, target.targetX, target.targetY);
           zone.remove<Component::Casting>(entity);
         }
@@ -200,50 +201,10 @@ namespace Spells {
     }
   }
 
-  void Spell_Hit(entt::registry &zone, entt::entity spell_ID, entt::entity struck_ID) {
-    Component::Damage damageRange = zone.get<Component::Damage>(spell_ID);
-
-    int damage = Combat_Control::Calculate_Damage(damageRange);
-    entt::entity player;
-    auto view = zone.view<Component::Input>();
-    for (auto input: view) {
-      player = input;
-    }
-    if (zone.get<Component::Caster>(spell_ID).caster == player) {
-      Damage_Text::Add_To_Scrolling_Damage(zone, spell_ID, struck_ID, damage, Component::fire, damageRange.critical);
-    }
-    auto &struck = zone.get_or_emplace<Component::Struck>(struck_ID);
-    struck.struck += damage;
-  }
-
-  void Check_Spell_Collide(entt::registry &zone, int &state) {
-    auto view = zone.view<Component::Spell, Component::Radius, Component::Position, Component::Alive, Component::Caster>();
-    for (auto entity: view) {
-      auto &alive = view.get<Component::Alive>(entity).bIsAlive;
-      if (alive) {
-        auto &radius = view.get<Component::Radius>(entity).fRadius;
-        auto &position = view.get<Component::Position>(entity);
-        auto &caster_ID = zone.get<Component::Caster>(entity).caster;
-
-        SDL_FRect spellRect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
-        Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_QuadTree_Collision(zone, spellRect, state);
-
-        ///prevent spell from hitting itself or it's caster or a ground item
-        if (targetData.b && caster_ID != targetData.entity_ID && targetData.entity_ID != entity && !zone.any_of<Ground_Item>(targetData.entity_ID)) {
-          alive = false;
-          Spell_Hit(zone, entity, targetData.entity_ID);
-          zone.remove<Component::Linear_Move>(entity);
-          zone.remove<Component::Mouse_Move>(entity);
-        }
-      }
-    }
-  }
-
 
   void Update_Spells(entt::registry &zone, int &state) {
     Destroy_NonMoving_Spells(zone, state);
     Clear_Collided_Spells(zone, state);
-    Check_Spell_Collide(zone, state);
     Cast_Spell(zone, state);
     Casting_Updater(zone);
   }

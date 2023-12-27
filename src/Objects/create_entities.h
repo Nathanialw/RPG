@@ -19,44 +19,10 @@
 #include "ui_spellbook.h"
 #include "utilities.h"
 #include <stddef.h>
+#include "entity_data.h"
 
 namespace Create_Entities {
 
-  int template_ID = 0;
-  std::map<std::string, int> savedTemplate_IDs;
-
-  int Check_For_Template_ID(std::string &name) {
-    if (savedTemplate_IDs.count(name) == 0) {
-      savedTemplate_IDs[name] = template_ID;
-      int unit_ID = template_ID;
-      template_ID++;
-      //  std::cout << "created and assigned template key: " << unit_ID << std::endl;
-      return unit_ID;
-    } else {
-      // std::cout << "assigned existing template key: " << savedTemplate_IDs[name] << std::endl;
-      return savedTemplate_IDs[name];
-    }
-    std::cout << "failed to assign template key for: " << name << std::endl;
-  }
-
-  int Get_Existing_Template_ID(std::string &name, std::string &entity_class) {
-    if (savedTemplate_IDs.count(name) == 0) {
-      //if it is not found save the class as the name (the class will always have the name of the base unit of the class and thus will default to the base unit if the random unit is not found)
-      name = entity_class;
-      if (savedTemplate_IDs.count(name) == 0) {
-        savedTemplate_IDs[name] = template_ID;
-        int unit_ID = template_ID;
-        template_ID++;
-        //  std::cout << "created and assigned template key: " << unit_ID << std::endl;
-        return unit_ID;
-      }
-      return savedTemplate_IDs[name];
-    } else {
-      // std::cout << "assigned existing template key: " << savedTemplate_IDs[name] << std::endl;
-      return savedTemplate_IDs[name];
-    }
-    std::cout << "failed to assign template key for: " << name << std::endl;
-  }
 
   void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
     if (entity_class == "polygon") {
@@ -109,7 +75,7 @@ namespace Create_Entities {
     if (data.sprite_layout == "static") {
       //std::cout << "loading Flare: " << name << std::endl;
       auto entity = zone.create();
-      int unit_ID = Check_For_Template_ID(name);
+      int unit_ID = Entity_Data::Check_For_Template_ID(name);
       Graphics::Create_Game_Object(unit_ID, filepath.c_str());
 
       SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
@@ -153,7 +119,7 @@ namespace Create_Entities {
       SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
       std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> *flareSheetData = NULL;
       std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
-      int textureIndex = Check_For_Template_ID(templateName);
+      int textureIndex = Entity_Data::Check_For_Template_ID(templateName);
       std::string tilesetName;
 
       packerframeData = Texture_Packer::Get_Texture_Data(textureIndex, templateName, data, tilesetName);
@@ -269,7 +235,7 @@ namespace Create_Entities {
 
   void Set_Map_Texture(std::string &name, std::string imgpath) {
     int unit_ID = 0;
-    unit_ID = Check_For_Template_ID(name);
+    unit_ID = Entity_Data::Check_For_Template_ID(name);
     Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
   }
 
@@ -296,7 +262,7 @@ namespace Create_Entities {
     if (is_random == 1) {
       imgPaths.name = Entity_Loader::Get_All_Of_Class(entity_class);
       //check if the random name has a tamplate ID, if it doesn't revert to default name
-      unit_ID = Get_Existing_Template_ID(imgPaths.name, entity_class);
+      unit_ID = Entity_Data::Get_Existing_Template_ID(imgPaths.name, entity_class);
       texture.texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
       data = Entity_Loader::parse_data(imgPaths.name);//
       ////randomEntity must be converted into a std::string//
@@ -306,7 +272,7 @@ namespace Create_Entities {
       //int rand_scale = 0.5;
       //scale.scale = rand_scale;
     } else {
-      unit_ID = Check_For_Template_ID(imgPaths.name);
+      unit_ID = Entity_Data::Check_For_Template_ID(imgPaths.name);
       texture.texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
       data = Entity_Loader::parse_data(imgPaths.name);
     }

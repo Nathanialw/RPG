@@ -1,11 +1,11 @@
 #pragma once
 
-#include "components.h"
-#include "movement.h"
-#include "damage_text.h"
 #include "action_components.h"
-#include "combat_sounds.h"
 #include "combat_graphics.h"
+#include "combat_sounds.h"
+#include "components.h"
+#include "damage_text.h"
+#include "movement_components.h"
 #include "utilities.h"
 
 namespace Combat_Control {
@@ -41,7 +41,7 @@ namespace Combat_Control {
         auto &target = view.get<Component::Attack>(entity);
         auto &position = view.get<Component::Position>(entity);
 
-        direction = Movement::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
+        direction = Movement_Component::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
         attackSpeed.counter = attackSpeed.period;
         Action_Component::Set_State(action, Action_Component::attack);
 
@@ -138,13 +138,13 @@ namespace Combat_Control {
         return {position.x + 15, position.y - 15, 40, 30};
       case Component::Direction::W:
         return {position.x - 55, position.y - 15, 40, 30};
-      case Component::Direction::NW :
+      case Component::Direction::NW:
         return {position.x - 45, position.y - 45, 30, 30};
-      case Component::Direction::NE :
+      case Component::Direction::NE:
         return {position.x + 15, position.y - 45, 30, 30};
-      case Component::Direction::SW :
+      case Component::Direction::SW:
         return {position.x - 45, position.y + 15, 30, 30};
-      case Component::Direction::SE :
+      case Component::Direction::SE:
         return {position.x + 15, position.y + 15, 30, 30};
     }
     std::cout << "Weapons::Attack_Direction() passthrough error" << std::endl;
@@ -170,7 +170,7 @@ namespace Combat_Control {
     zone.emplace_or_replace<Component::Damage>(aoeAttack, 1, 10);
     zone.emplace_or_replace<Component::Attack_Box_Duration>(aoeAttack, 0.0f, 0.0f);
     zone.emplace_or_replace<Component::Mass>(aoeAttack, 500.0f);
-    zone.emplace_or_replace<Component::Weapon_Size>(aoeAttack, attackRect.x, attackRect.y, attackRect.w, attackRect.h); //set x, y to in front of char when he attacks
+    zone.emplace_or_replace<Component::Weapon_Size>(aoeAttack, attackRect.x, attackRect.y, attackRect.w, attackRect.h);//set x, y to in front of char when he attacks
     zone.emplace_or_replace<Component::Position>(aoeAttack, position);
     zone.emplace_or_replace<Component::Alive>(aoeAttack, true);
     zone.emplace_or_replace<Component::Entity_Type>(aoeAttack, Component::Entity_Type::spell);
@@ -198,7 +198,6 @@ namespace Combat_Control {
         if (action.frameState == Action_Component::last) {
           ///should not return to idle, should go into an "idle-combat" mode
           zone.remove<Component::Struck>(entity);
-
         }
       } else if (sheetData.sheetData) {
         if (action.frameState == Action_Component::last) {
@@ -211,16 +210,56 @@ namespace Combat_Control {
     }
   }
 
-  void Attack_Sounds() {
+  void Spell_Hit(entt::registry &zone, entt::entity spell_ID, entt::entity struck_ID) {
+    Component::Damage damageRange = zone.get<Component::Damage>(spell_ID);
 
+    int damage = Combat_Control::Calculate_Damage(damageRange);
+    entt::entity player;
+    auto view = zone.view<Component::Input>();
+    for (auto input: view) {
+      player = input;
+    }
+    if (zone.get<Component::Caster>(spell_ID).caster == player) {
+      Damage_Text::Add_To_Scrolling_Damage(zone, spell_ID, struck_ID, damage, Component::fire, damageRange.critical);
+    }
+    auto &struck = zone.get_or_emplace<Component::Struck>(struck_ID);
+    struck.struck += damage;
   }
 
-  void Update_Attacks(entt::registry &zone) {
+  void Check_Spell_Collide(entt::registry &zone, int &state) {
+    auto view = zone.view<Component::Spell, Component::Radius, Component::Position, Component::Alive, Component::Caster>();
+    for (auto entity: view) {
+      auto &alive = view.get<Component::Alive>(entity).bIsAlive;
+      if (alive) {
+        auto &radius = view.get<Component::Radius>(entity).fRadius;
+        auto &position = view.get<Component::Position>(entity);
+        auto &caster_ID = zone.get<Component::Caster>(entity).caster;
+
+        SDL_FRect spellRect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
+        Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_QuadTree_Collision(zone, spellRect, state);
+
+        ///prevent spell from hitting itself or it's caster or a ground item
+        if (targetData.b && caster_ID != targetData.entity_ID && targetData.entity_ID != entity && !zone.any_of<Item_Component::Ground_Item>(targetData.entity_ID)) {
+          alive = false;
+          Spell_Hit(zone, entity, targetData.entity_ID);
+          zone.remove<Component::Linear_Move>(entity);
+          zone.remove<Component::Mouse_Move>(entity);
+        }
+      }
+    }
+  }
+
+
+  void Attack_Sounds() {
+  }
+
+  void Update_Attacks(entt::registry &zone, int &state) {
     AttackSpeed_Updater(zone);
+    Check_Spell_Collide(zone, state);
     Struck_Updater(zone);
     Attack_Cast(zone);
     Attack_Target(zone);
     Reset_Alert(zone);
     Alert_When_Struck(zone);
   }
-}
+}// namespace Combat_Control

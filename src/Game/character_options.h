@@ -4,6 +4,7 @@
 #include "unordered_map"
 #include "vector"
 #include "SQLite_item_data.h"
+#include "SQLite_unit_data.h"
 
 namespace Character_Options {
 

@@ -1,21 +1,12 @@
 #pragma once
 #include "graphics.h"
+#include "spell_data.h"
 #include "ui_elements.h"
 
 namespace UI_Spellbook {
 
-  enum Skill_Tree {
-    fire,
-    cold,
-    warrior,
-    archery,
-    life,
-    death,
-    SIZE
-  };
-
   struct Spellbook {
-    std::array<std::array<entt::entity, 12>, Skill_Tree::SIZE> Skill_Trees;
+    std::array<std::array<Spell_Data::Spell, 12>, (int) Spell_Data::SIZE> Skill_Trees;
     bool b_isOpen = false;
     SDL_FRect panelRect;
     SDL_Rect backgroundFrame = {0, 0, 1137, 700};
@@ -24,10 +15,9 @@ namespace UI_Spellbook {
     SDL_Texture *leftPage = NULL;
     SDL_Rect rightPageFrame = {0, 0, 1137, 700};
     SDL_Texture *rightPage = NULL;
-    Skill_Tree currentTab = fire;
+    Spell_Data::Skill_Tree currentTab = Spell_Data::fire;
     entt::entity spell;
   };
-
   Spellbook spellbook;
 
   void Update_Position(SDL_FRect &frameRect) {
@@ -39,27 +29,17 @@ namespace UI_Spellbook {
     frameRect.y = (float) h - frameRect.h;
   }
 
-  entt::entity Create_Spell(entt::registry &zone) {
-    auto spell = zone.create();
+  Spell_Data::Spell Create_Spell() {
     //read db
-
+    Spell_Data::Spell spell(Graphics::default_icon, Fire::Cast_Spell);
     //load texture
-
-    auto &icon = zone.emplace_or_replace<Component::Icon>(spell, Graphics::emptyBagIcon, Graphics::fireball_explosion_0, Item_Component::rarityBorder[Item_Component::Rarity::common], Graphics::bagSlotBorder);
-    zone.emplace_or_replace<Component::Position>(spell);
-    icon.clipSprite = {0, 0, 256, 256};
-    icon.clipIcon = {0, 0, 256, 256};
-    icon.renderRectSize = {64.0f, 64.0f};
-    icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
-    auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(spell);
-    mouseItem.type = Component::Icon_Type::spell;
     return spell;
   }
 
-  void Build_Spellbook(entt::registry &zone) {
+  void Build_Spellbook() {
     for (auto &tree: spellbook.Skill_Trees) {
       for (auto &spell: tree) {
-        spell = Create_Spell(zone);
+        spell = Create_Spell();
       }
     }
   }
@@ -69,10 +49,10 @@ namespace UI_Spellbook {
     spellbook.panelRect = UI::Center_Rect(spellbook.backgroundFrame);
   }
 
-  void Init_UI(entt::registry &zone) {
+  void Init_UI() {
     Update_Position();
     spellbook.background = Graphics::spellbook;
-    Build_Spellbook(zone);
+    Build_Spellbook();
   }
 
   void Close_Spellbook() {
@@ -96,13 +76,12 @@ namespace UI_Spellbook {
     float y = draw.y;
     float i = 1;
     float w = 0;
-    for (int j = 0; j < spellbook.Skill_Trees[fire].size(); ++j) {
-      auto &icon = zone.get<Component::Icon>(spellbook.Skill_Trees[fire][j]);
-      SDL_FRect renderRect = {x + 192.0f + (icon.renderRectSize.x * w) + (xSpacing * w), y + 128.0f, icon.renderRectSize.x, icon.renderRectSize.x};
+    for (int j = 0; j < spellbook.Skill_Trees[Spell_Data::fire].size(); ++j) {
+      SDL_FRect renderRect = {x + 192.0f + (spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x * w) + (xSpacing * w), y + 128.0f, spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x, spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x};
       w++;
       if ((j + 1) % 3 == 0) {
         x = draw.x;
-        y = draw.y + ((ySpacing + icon.renderRectSize.x) * i);
+        y = draw.y + ((ySpacing + spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x) * i);
         i++;
         w = 0.0f;
       }
@@ -110,9 +89,10 @@ namespace UI_Spellbook {
 
       if (Mouse::bRect_inside_Cursor(renderRect)) {
         mouseHasItem = true;
-        Mouse::mouseItem = spellbook.Skill_Trees[fire][i];
-        auto &mouseItem = zone.emplace_or_replace<Component::On_Mouse>(spellbook.Skill_Trees[fire][i]);
-        mouseItem.type = Component::Icon_Type::spell;
+        Mouse::ss.index = i;
+        Mouse::ss.type = Component::Icon_Type::spell;
+        Mouse::itemCurrentlyHeld = true;
+        Mouse::ss.index = i;
         return true;
       }
     }
@@ -139,20 +119,19 @@ namespace UI_Spellbook {
     float y = draw.y;
     float i = 1;
     float w = 0;
-    for (int j = 0; j < spellbook.Skill_Trees[fire].size(); ++j) {
-      auto &icon = zone.get<Component::Icon>(spellbook.Skill_Trees[fire][j]);
-      SDL_FRect renderRect = {x + 192.0f + (icon.renderRectSize.x * w) + (xSpacing * w), y + 128.0f, icon.renderRectSize.x, icon.renderRectSize.x};
+    for (int j = 0; j < spellbook.Skill_Trees[Spell_Data::fire].size(); ++j) {
+      SDL_FRect renderRect = {x + 192.0f + (spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x * w) + (xSpacing * w), y + 128.0f, spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x, spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x};
       w++;
       if ((j + 1) % 3 == 0) {
         x = draw.x;
-        y = draw.y + ((ySpacing + icon.renderRectSize.x) * i);
+        y = draw.y + ((ySpacing + spellbook.Skill_Trees[Spell_Data::fire][j].icon.renderRectSize.x) * i);
         i++;
         w = 0.0f;
       }
       renderRect = UI::Update_Scale(camera.scale, renderRect);
 
-      SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipIcon, &renderRect);
-      SDL_RenderCopyF(Graphics::renderer, icon.pIconRarityBorder, &icon.clipIcon, &renderRect);
+      SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[Spell_Data::fire][j].icon.pTexture, &spellbook.Skill_Trees[Spell_Data::fire][j].icon.clipIcon, &renderRect);
+      SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[Spell_Data::fire][j].icon.pIconRarityBorder, &spellbook.Skill_Trees[Spell_Data::fire][j].icon.clipIcon, &renderRect);
     }
   }
 
