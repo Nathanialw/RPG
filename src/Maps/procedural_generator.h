@@ -5,7 +5,7 @@ namespace  Procedural_Components {
 
 //    every tile and object needs a seed
     struct Seed {
-        uint32_t seed;
+        uint32_t seed = 0;
     };
 }
 
@@ -38,5 +38,10 @@ namespace Procedural_Generation {
         return ((double)Generate_Random_Number(seed.seed) / (double)(0x7FFFFFFF) * (max - min)) + min;
     }
 
+
+    float Random_float(int min, int max, Procedural_Components::Seed &seed)
+    {
+      return (Generate_Random_Number(seed.seed) % (max - min)) + min;
+    }
 
 };

@@ -189,11 +189,17 @@ namespace Create_Entities {
         dungeon.tilesetName = "hell";
         zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::portal);
       }
+      else {
+        if (i != x && j != y) {
+          //        std::cout << i << " " << j << std::endl;
+          zone.emplace_or_replace<Component::Tile_Index>(entity, (int) i, (int) j);
+        }
+      }
 
       auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
       auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
-      for (int i = 0; i < raceData.size(); i++) {
-        relationships.races[i] = raceData[i + 1];
+      for (int q = 0; q < raceData.size(); q++) {
+        relationships.races[q] = raceData[q + 1];
       }
       zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
       zone.emplace_or_replace<Component::Name>(entity, templateName);
@@ -202,10 +208,7 @@ namespace Create_Entities {
       zone.emplace_or_replace<Rendering_Components::Unit_Frame_Portrait>(entity);
       zone.emplace_or_replace<Component::Health>(entity, 100, 100);
 
-      if (i != x && j != y) {
-        //        std::cout << i << " " << j << std::endl;
-        zone.emplace_or_replace<Component::Tile_Index>(entity, (int) i, (int) j);
-      }
+
 
       //std::cout << templateName << "Xo: " << frame.x_offset << " Cw: " << frame.clip.w << " IXo: " << imageOffset.x << " Yo: " << frame.y_offset << " Ch: " << frame.clip.h << " IYo: " << imageOffset.y << std::endl;
 

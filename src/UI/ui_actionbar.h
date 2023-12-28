@@ -53,16 +53,6 @@ namespace Action_Bar {
     actionBar.actionBar.hotkey[7] = SDLK_8;
     actionBar.actionBar.hotkey[8] = SDLK_9;
     actionBar.actionBar.hotkey[9] = SDLK_0;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[0]] = actionBar.actionBar.spell[0].cast;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[1]] = actionBar.actionBar.spell[1].cast;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[2]] = actionBar.actionBar.spell[2].cast;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[3]] = actionBar.actionBar.spell[3].cast;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[4]] = actionBar.actionBar.spell[4].cast;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[5]] = actionBar.actionBar.spell[5].cast;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[6]] = actionBar.actionBar.spell[6].cast;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[7]] = actionBar.actionBar.spell[7].cast;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[8]] = actionBar.actionBar.spell[8].cast;
-    Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[9]] = actionBar.actionBar.spell[9].cast;
   }
 
   bool Mouse_Inside_Actionbar(Component::Camera &camera, int &state) {

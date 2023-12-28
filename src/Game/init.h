@@ -66,8 +66,8 @@ namespace Init {
   void Init_Data() {
     Graphics::Load_Textures();
     UI_Spellbook::Init_UI();
-    Hotbar::Init_Hotbar();
     Action_Bar::Create_Action_Bar();
+    Hotbar::Init_Hotbar();
     Scene::Init_Zone();
     Init_Tiles_Array();
     Debug::Load_Settings();
@@ -94,6 +94,7 @@ namespace Init {
       Recreate_Player(zone, state);
     }
     Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
+    Maps::Init_Caves(zone, state, World::world[state].tileset);
     Quad_Tree::Fill_Quad_Tree(zone, state);
   };
 

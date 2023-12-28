@@ -87,7 +87,8 @@ namespace Dynamic_Quad_Tree {
           SDL_FRect rect = m_rChild[i];
           rect.x -= cameraX;
           rect.y -= cameraY;
-          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+          SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderMagic, NULL, &rect);
+//          SDL_RenderDrawRectF(Graphics::renderer, &rect);
           nodeCount++;
           m_pChild[i]->Draw(cameraX, cameraY, nodeCount);
         }

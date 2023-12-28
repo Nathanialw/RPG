@@ -174,14 +174,13 @@ namespace Quad_Tree {
           //          SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 255, 255);
           //          SDL_RenderDrawRectF(Graphics::renderer, &screenRect);
           SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderMagic, NULL, &screenRect);
-
           //          SDL_FRect interactRect = view2.get<Component::Interaction_Rect>(object->item.entity_ID).rect;
           //          interactRect.x -= camera.screen.x;
           //          interactRect.y -= camera.screen.y;
           //          SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 0, 255);
           //          SDL_RenderDrawRectF(Graphics::renderer, &interactRect);
         }
-        //std::cout << "nodes: " << nodes << std::endl;
+        std::cout << "nodes: " << nodes << std::endl;
       }
       //		std::cout << "objects on screen: " << i << std::endl;
     }

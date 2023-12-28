@@ -325,14 +325,14 @@ namespace Character_Stats {
 
   void Init_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
-    Create_Entities::Create_Entity(zone, state, 73188, 36964, "unit", false, data, true);
+    Create_Entities::Create_Entity(zone, state, 0, 0, "unit", false, data, true);
     Equip_Units(zone, state, options);
     Init_Player_Stats(zone, state);
   }
 
   void Recreate_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
-    Create_Entities::Create_Entity(zone, state, 73188, 36964, "unit", false, data, true);
+    Create_Entities::Create_Entity(zone, state, 0, 0, "unit", false, data, true);
     Init_Player_Stats(zone, state);
   }
 

@@ -87,9 +87,9 @@ namespace World {
 
   //  Loaded loaded;
   struct TILE {
-    int tile;
-    bool generated;
-    SDL_FRect position;
+    int tile = 0;
+    bool generated = false;
+    SDL_FRect position = {};
   };
 
   TILE Game_Map[256][256];
