@@ -76,6 +76,8 @@ namespace Graphics {
   SDL_Texture *default_icon;
   SDL_Texture *emptyBagIcon;
 
+  SDL_Texture *charCreateBackground;
+
   SDL_Texture *bagSlotBorder;
   SDL_Texture *itemBorderCommon;
   SDL_Texture *itemBorderMagic;
@@ -272,6 +274,8 @@ namespace Graphics {
     death6 = createTexture("assets/sprites/UI/icons/Dark Magic/06.png");
     death7 = createTexture("assets/sprites/UI/icons/Dark Magic/07.png");
     death8 = createTexture("assets/sprites/UI/icons/Dark Magic/08.png");
+
+    charCreateBackground = createTexture("assets/sprites/UI/backgrounds/Background_47.png");
 
     weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
     itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");

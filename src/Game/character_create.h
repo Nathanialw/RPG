@@ -25,6 +25,8 @@ namespace Character_Create {
 
   void Background_Image() {
     SDL_RenderClear(Graphics::renderer);
+    SDL_RenderCopyF(Graphics::renderer, Graphics::charCreateBackground, NULL, NULL);
+
     // background based on species
   }
 
