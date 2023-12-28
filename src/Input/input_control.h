@@ -8,6 +8,7 @@
 #include "mouse_control.h"
 #include "player_control.h"
 #include "social_control.h"
+#include "string"
 
 namespace Input_Control {
   /// cand probably merge the routine with Component::Pickup_Item and the normal mouse move, they are almost the same

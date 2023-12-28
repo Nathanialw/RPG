@@ -6,6 +6,10 @@
 #include "mouse_control.h"
 #include "mouse_data.h"
 
+#include "Life/life.h"
+#include "Fire/fire.h"
+#include "Ice/ice.h"
+
 namespace UI_Spellbook {
 
   struct Spellbook {
@@ -121,9 +125,9 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::archery][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
     spellbook.Skill_Trees[Spell_Data::fire][0] = Spell_Data::Spell(Graphics::fireball_icon, Fire::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::fire][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::fire][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::fire][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][1] = Spell_Data::Spell(Graphics::death3, Life::Heal_Self);
+    spellbook.Skill_Trees[Spell_Data::fire][2] = Spell_Data::Spell(Graphics::death4, Life::Heal_Other);
+    spellbook.Skill_Trees[Spell_Data::fire][3] = Spell_Data::Spell(Graphics::death5, Ice::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::fire][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::fire][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::fire][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);

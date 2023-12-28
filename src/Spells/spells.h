@@ -11,6 +11,9 @@
 
 namespace Spells {
 
+  typedef int (*spells)(entt::registry &zone, entt::entity &entity, float &x, float &y);
+  typedef int (*castSpell)(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y);
+
   void Spell_Move_Target(entt::registry &zone, entt::entity entity, float &x, float &y) {//sends spell to where the mouse is
     zone.emplace_or_replace<Component::Moving>(entity);
     zone.emplace_or_replace<Component::Mouse_Move>(entity, x, y);

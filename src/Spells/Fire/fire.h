@@ -8,8 +8,6 @@ namespace Fire {
     const char *name = "fireball";
   };
 
-  typedef int (*spells)(entt::registry &zone, entt::entity &entity, float &x, float &y);
-  typedef int (*castSpell)(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y);
 
   int Fireball(entt::registry &zone, entt::entity &entity, float &x, float &y) {
     //get data from db
@@ -21,7 +19,7 @@ namespace Fire {
     return 1;
   }
 
-  spells Fire_Spells[] = {Fireball};
+  Spells::spells Fire_Spells[] = {Fireball};
 
   int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     if (action.state != Action_Component::casting && action.state != Action_Component::cast) {

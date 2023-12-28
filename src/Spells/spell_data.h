@@ -2,6 +2,7 @@
 #include "item_components.h"
 #include "components.h"
 #include "action_components.h"
+#include "spells.h"
 //#include "Fire/fire.h"
 
 namespace Spell_Data {
@@ -26,7 +27,7 @@ namespace Spell_Data {
 
   public:
     Component::Icon icon;
-    Fire::castSpell cast;// = Sinister_Strike;
+    Spells::castSpell cast;// = Sinister_Strike;
     Skill_Tree tree;
     int index;
 
@@ -52,7 +53,7 @@ namespace Spell_Data {
       range = 0;
     }
 
-    Spell(SDL_Texture* texture, Fire::castSpell spell) {
+    Spell(SDL_Texture* texture, Spells::castSpell spell) {
       icon.pBackground = Graphics::emptyBagIcon;
       icon.pTexture = texture;
       icon.pIconRarityBorder = Item_Component::rarityBorder[Item_Component::Rarity::common];
@@ -71,7 +72,7 @@ namespace Spell_Data {
     }
     //function to cast the spell
     static int Cast(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index, float &x, float &y) {
-      Fire::Cast_Spell(zone, entity, action, index, x, y);
+//      Spells::Cast_Spell(zone, entity, action, index, x, y);
       return 0;
     }
   };

@@ -10,6 +10,7 @@
 #include "sinister_strike.h"
 #include "ui.h"
 #include "ui_actionbar.h"
+#include "string"
 /*
  * make an array of functions for everything that can go onto the hotbar, ie skills
  *
@@ -128,12 +129,6 @@ namespace Hotbar {
     return 0;
   }
 
-  Fire::castSpell Spells[] = {
-      SetStateAttack2,
-      Fire::Cast_Spell,
-      Fire::Cast_Spell};
-
-
   void Init_Hotbar() {
     Hotbar_Structs::keybinds = {
         {SDLK_1, Action_Bar::actionBar.actionBar.spell[0].cast},
@@ -159,22 +154,8 @@ namespace Hotbar {
         {SDLK_SPACE, Jump}};
   }
 
-
-  std::map<SDL_Keycode, Fire::castSpell> keyupKeybinds = {
+  std::map<SDL_Keycode, Spells::castSpell> keyupKeybinds = {
       {SDLK_LALT, Unshow_Items},
       {SDLK_RALT, Unshow_Items}};
 
-//  std::map<int, Fire::castSpell> hotBarSpells = {
-//      {0, SetStateAttack2},
-//      {1, Fire::Cast_Spell},
-//      {2, Fire::Cast_Spell}};
-  //  save the index to the button
-
-  Fire::castSpell Update_Button() {
-    return Fire::Cast_Spell;
-  }
-
-  void gfdgdfg(SDL_Keycode key) {
-//    hotBarSpells[key] = Update_Button();
-  }
 }// namespace Hotbar

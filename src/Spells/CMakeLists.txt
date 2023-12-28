@@ -6,6 +6,8 @@ target_sources(RPG
         spells.h
         skills.h
         Fire/fire.h
+        Life/life.h
+        Ice/ice.h
         spell_data.h
 )
 
