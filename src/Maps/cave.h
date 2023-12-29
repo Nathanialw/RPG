@@ -14,7 +14,7 @@ namespace Cave {
     auto newZone = zone.get<Component::Dungeon>(targetID).instance;
     //save the old index go back to it later
     World::world[newZone].previousZoneIndex = state;
-    World::world[newZone].tilesetName = "cave";
+    World::world[newZone].tilesetName = "hell";
     World::currentZone.next = newZone;
   }
 

@@ -31,9 +31,7 @@ namespace Character_Stats {
 
   // run when equipping or unequipping an item
   void Update_Equip_slots(entt::registry &zone, int &state) {// run funtion on item equip or unequip
-    auto view = zone.view<Rendering_Components::Sprite_Sheet_Info,
-                          Item_Component::Item_Equip, Item_Component::Equipment,
-                          Rendering_Components::Equipment_Sprites>();
+    auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Item_Component::Item_Equip, Item_Component::Equipment, Rendering_Components::Equipment_Sprites>();
     for (auto entity: view) {
       auto &equipment = view.get<Item_Component::Equipment>(entity);
       auto &equipmentSprites =
@@ -119,8 +117,7 @@ namespace Character_Stats {
   }
 
   void Update_Unit_Defense(entt::registry &zone, int &state) {
-    auto view = zone.view<Item_Component::Item_Equip, Component::Health,
-                          Item_Component::Equipment>();
+    auto view = zone.view<Item_Component::Item_Equip, Component::Health, Item_Component::Equipment>();
     for (auto entity: view) {
       auto &health = view.get<Component::Health>(entity);
       auto &equipment = view.get<Item_Component::Equipment>(entity);
@@ -214,7 +211,7 @@ namespace Character_Stats {
   }
 
   void Init_Player_Stats(entt::registry &zone, int &state) {// run funtion on item equip or unequip
-    auto view =zone.view<Component::Input, Component::Melee_Damage, Component::Health, Component::Attack_Speed, Item_Component::Equipment>();
+    auto view = zone.view<Component::Input, Component::Melee_Damage, Component::Health, Component::Attack_Speed, Item_Component::Equipment>();
     for (auto entity: view) {
       auto &damage = view.get<Component::Melee_Damage>(entity);
       auto &health = view.get<Component::Health>(entity);
@@ -325,14 +322,14 @@ namespace Character_Stats {
 
   void Init_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
-    Create_Entities::Create_Entity(zone, state, 0, 0, "unit", false, data, true);
+    Create_Entities::Create_Entity(zone, state, 11875, 4828, "unit", false, data, true);
     Equip_Units(zone, state, options);
     Init_Player_Stats(zone, state);
   }
 
   void Recreate_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
-    Create_Entities::Create_Entity(zone, state, 0, 0, "unit", false, data, true);
+    Create_Entities::Create_Entity(zone, state, 11875, 4828, "unit", false, data, true);
     Init_Player_Stats(zone, state);
   }
 

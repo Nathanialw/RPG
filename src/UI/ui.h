@@ -3,8 +3,8 @@
 #include "components.h"
 #include "entt/entt.hpp"
 #include "item_components.h"
-#include "world.h"
 #include "ui_actionbar.h"
+#include "world.h"
 
 namespace UI {
 
@@ -13,9 +13,9 @@ namespace UI {
   SDL_FRect Character_UI = {};
   bool bToggleCharacterUI = false;
 
-//  struct Bag {
-//    std::vector<std::vector<entt::entity>> UI_bagSlots(int);
-//  };
+  //  struct Bag {
+  //    std::vector<std::vector<entt::entity>> UI_bagSlots(int);
+  //  };
 
   namespace Bag_UI {
     namespace {
@@ -28,7 +28,7 @@ namespace UI {
       SDL_FRect screenBag = {};
     }// namespace
 
-    void Place_Item_In_Bag(entt::registry &zone, entt::entity &entity, int &state,  entt::entity &mouseItem, bool &mouseHasItem, int &slotNum) {
+    void Place_Item_In_Bag(entt::registry &zone, entt::entity &entity, int &state, entt::entity &mouseItem, bool &mouseHasItem, int &slotNum) {
       auto &bag = zone.get<Component::Bag>(entity).bag;
 
       if (zone.get<Component::On_Mouse>(mouseItem).type == Component::Icon_Type::item) {
@@ -53,7 +53,7 @@ namespace UI {
 
     void Bag_Item_And_Swap_With_Mouse(entt::registry &zone, int &state, entt::entity &mouseItem, int &slotNum) {
       auto view = zone.view<Component::Bag, Component::Camera>();
-      for (auto entity : view) {
+      for (auto entity: view) {
         auto &bag = view.get<Component::Bag>(entity).bag;
 
         if (zone.get<Component::On_Mouse>(mouseItem).type == Component::Icon_Type::item) {
@@ -71,8 +71,8 @@ namespace UI {
 
     void Create_Bag_UI(entt::registry &zone, entt::entity &entity, int &state) {
       auto &bag = zone.emplace_or_replace<Component::Bag>(entity).bag;
-        for (int i = 0; i < (iTotalSlots); i++) {
-          bag.at(i) = emptyBagSlot[state];
+      for (int i = 0; i < (iTotalSlots); i++) {
+        bag.at(i) = emptyBagSlot[state];
       }
     }
 
@@ -248,7 +248,7 @@ namespace UI {
         entt::entity itemInSlot = equipment.equippedItems[itemType];
 
         equipment.equippedItems[itemType] = Mouse::mouseItem;
-        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>( equipment.equippedItems[itemType]);
+        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(equipment.equippedItems[itemType]);
         zone.remove<Component::On_Mouse>(equipment.equippedItems[itemType]);
         zone.emplace_or_replace<Component::Inventory>(equipment.equippedItems[itemType]);
 
@@ -262,7 +262,6 @@ namespace UI {
     bool Mouse_Inside_Equipment_Screen(entt::registry &zone, Component::Camera &camera, SDL_FPoint &screenCursor) {
       return Utilities::bPoint_RectIntersect(screenCursor, screenEquipment);
     }
-
 
 
     bool Interact_With_Equipment(entt::registry &zone, int &state, Component::Camera &camera, entt::entity &player) {
@@ -321,18 +320,23 @@ namespace UI {
     void Render_Equipment_Slot(entt::registry &zone, int &state, SDL_Renderer *renderer, Component::Camera &camera, entt::entity &player) {
       auto &equipment = zone.get<Item_Component::Equipment>(player);
       for (auto &slot: equipment.equippedItems) {
-        auto &icon = zone.get<Component::Icon>(slot.second);
-        SDL_FRect slotRect = equippedItemsRect[slot.first];
+        if (zone.any_of<Component::Icon>(slot.second)) {
+          auto &icon = zone.get<Component::Icon>(slot.second);
+          SDL_FRect slotRect = equippedItemsRect[slot.first];
 
-        SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-        SDL_SetTextureAlphaMod(icon.pTexture, 255);
-        SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
-        SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
-        //SDL_RenderCopy(renderer, icon.pBackground, &icon.clipSprite, &scaledSlot);
-        SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
-        SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
-        SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
+          SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+          SDL_SetTextureAlphaMod(icon.pTexture, 255);
+          SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
+          SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
+          //SDL_RenderCopy(renderer, icon.pBackground, &icon.clipSprite, &scaledSlot);
+          SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
+          SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
+          SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
+        } else {
+          Utilities::Log((int) slot.second);
+        }
       }
+      Utilities::Log((int)Item_Component::emptyEquipSlot[state]);
     }
 
     void Update_Equipment_Position(Component::Camera &camera) {
@@ -396,6 +400,7 @@ namespace UI {
           //for some reason it does not remove this component in Remove_From_Tree even though it should
           if (zone.any_of<Component::In_Object_Tree>(item_ID)) {
             Utilities::Log("item was still has In_Object_Tree");
+            zone.remove<Component::Remove_From_Object_Tree>(item_ID);
             zone.remove<Component::In_Object_Tree>(item_ID);
           }
           auto &action = zone.get<Action_Component::Action>(item_ID);

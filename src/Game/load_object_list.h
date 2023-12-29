@@ -124,6 +124,7 @@ namespace Load_Object_List {
     Game_Objects_Lists::tilesets["forest_winter"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_winter").c_str());
     Game_Objects_Lists::tilesets["beach"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("beach").c_str());
     Game_Objects_Lists::tilesets["dead"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("dead").c_str());
+    Game_Objects_Lists::tilesets["hell"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("hell").c_str());
 
     Game_Objects_Lists::tilesets["bloodPool"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "background");
     Game_Objects_Lists::tilesets["bloodSplatter"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "foreground");

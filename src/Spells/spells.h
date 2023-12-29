@@ -8,10 +8,11 @@
 #include "entity_data.h"
 #include "SQLite_unit_data.h"
 #include "SQLite_spritesheets.h"
+#include "texture_packer.h"
 
 namespace Spells {
 
-  typedef int (*spells)(entt::registry &zone, entt::entity &entity, float &x, float &y);
+  typedef int (*spells)(entt::registry &zone, entt::entity &entity, float &x, float &y, const char *name);
   typedef int (*castSpell)(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y);
 
   void Spell_Move_Target(entt::registry &zone, entt::entity entity, float &x, float &y) {//sends spell to where the mouse is
@@ -68,24 +69,38 @@ namespace Spells {
 
     int unit_ID = Entity_Data::Check_For_Template_ID(name);
     SQLite_Spell_Data::Spell_Data spellData = SQLite_Spell_Data::Spell_Loader(name);
-    spellData.path = "assets/" + spellData.path;
-    Graphics::Create_Game_Object(unit_ID, spellData.path.c_str());
+    Graphics::Create_Game_Object(unit_ID, spellData.imagePath.c_str());
+    std::string sheetType = Entity_Loader::Get_Sprite_Sheet(name);
 
-    SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
-    std::string sheetname = Entity_Loader::Get_Sprite_Sheet(name);
-    std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> *flareSheetData = NULL;
+    //for grid sprite
+    if (sheetType == "packer_linear") {
+      std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
+      packerframeData = Texture_Packer::TexturePacker_Import_Linear(name, spellData.xmlPath, Graphics::unitTextures[unit_ID]);
+      auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
 
-    SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
-    flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
+      sprite.sheetData = packerframeData;
+      sprite.sheet_name = name;
+      sprite.type = sheetType;
 
-    auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
-    sprite.flareSpritesheet = flareSheetData;
-    sprite.sheet_name = name;
-    sprite.type = sheetDataFlare.sheet_type;
-    zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, (sprite.sheetData->at(name).frameW / 2.0f), (sprite.sheetData->at(name).frameH / 2.0f));
+    }
+    //for packer sprites
+    else {
+      SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
+      std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> *flareSheetData = NULL;
+
+      SQLite_Spritesheets::Get_Flare_From_DB(sheetType, sheetDataFlare);
+      flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
+
+      auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
+      sprite.flareSpritesheet = flareSheetData;
+      sprite.sheet_name = name;
+      sprite.type = sheetDataFlare.sheet_type;
+
+      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
+    }
 
     zone.emplace_or_replace<Component::Scale>(entity, scale);
-
     zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::walk);
     ///positon data
     zone.emplace_or_replace<Component::Position>(entity, spelldir.x, spelldir.y);

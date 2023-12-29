@@ -413,4 +413,38 @@ namespace Spritesheet_Structs {
 
     return true;
   }
+
+  bool Get_Frame_Action_Data2(std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+    // name should be the template name from tiled
+    int i = 75;
+    Action_Component::Action_State action;
+
+    // load the whole xml sheet
+
+    /// get the
+    std::string keyCheck = templateName;
+    std::string frameCopy = frame;
+
+    if (frameCopy.substr(0, keyCheck.size()) != keyCheck) {
+      //        std::cout << "xml file name foes not match texture atlas sprite name - NAME: " << templateName << " FRAME: " << frame << std::endl;
+      //            should assign a dummy value to prevent a crash and to make it an obvious bug
+      return false;
+    }
+
+    auto index = frameCopy.find(templateName);// Find the starting position of substring in the string
+    if (index != std::string::npos) {
+      frameCopy.erase(index, keyCheck.length() + 1);// erase function takes two parameter, the starting index in the string from where you want to erase characters and total no of characters you want to erase.
+    }
+
+    ///just grab the first 3 letters of the string
+    std::string checkAction = frameCopy.erase(frameCopy.length() - 3);
+
+    /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
+
+    //only run when the number changes
+    //std::cout << checkAction << " frame data successfully saved" << std::endl;
+
+
+    return true;
+  }
 }// namespace Spritesheet_Structs

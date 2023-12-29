@@ -68,6 +68,8 @@ namespace Rendering_Components {
     std::unordered_map<uint8_t, Frame_Data_Packer> actionFrameData;
     ///store the frame duration for each frame of each state, probably not worth it
     //        std::unordered_map<Component::Action_State, std::vector<int>> Frame_Speed_By_Action;
+    int frameW = 0;
+    int frameH = 0;
   };
 
   struct Sheet_Data_Flare {

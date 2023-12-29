@@ -9,6 +9,10 @@
 #include "Life/life.h"
 #include "Fire/fire.h"
 #include "Ice/ice.h"
+#include "lightning/lightning.h"
+#include "lightning/lightningball.h"
+#include "Nature/leafspell.h"
+#include "Air/smoke.h"
 
 namespace UI_Spellbook {
 
@@ -85,7 +89,7 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::life][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::life][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
-    spellbook.Skill_Trees[Spell_Data::warrior][0] = Spell_Data::Spell(Graphics::death1, Sinister_Strike);
+    spellbook.Skill_Trees[Spell_Data::warrior][0] = Spell_Data::Spell(Graphics::sinisterstrike, Sinister_Strike);
     spellbook.Skill_Trees[Spell_Data::warrior][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::warrior][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::warrior][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
@@ -125,15 +129,15 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::archery][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
     spellbook.Skill_Trees[Spell_Data::fire][0] = Spell_Data::Spell(Graphics::fireball_icon, Fire::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::fire][1] = Spell_Data::Spell(Graphics::death3, Life::Heal_Self);
-    spellbook.Skill_Trees[Spell_Data::fire][2] = Spell_Data::Spell(Graphics::death4, Life::Heal_Other);
-    spellbook.Skill_Trees[Spell_Data::fire][3] = Spell_Data::Spell(Graphics::death5, Ice::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::fire][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::fire][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::fire][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::fire][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::fire][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::fire][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][1] = Spell_Data::Spell(Graphics::healself, Life::Heal_Self);
+    spellbook.Skill_Trees[Spell_Data::fire][2] = Spell_Data::Spell(Graphics::healother, Life::Heal_Other);
+    spellbook.Skill_Trees[Spell_Data::fire][3] = Spell_Data::Spell(Graphics::icebolt, Ice::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][4] = Spell_Data::Spell(Graphics::chargedbolt, Lightning::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][5] = Spell_Data::Spell(Graphics::lightningball, LightningBall::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][6] = Spell_Data::Spell(Graphics::lightningstrike, Lightning::Cast_Spell2);
+    spellbook.Skill_Trees[Spell_Data::fire][7] = Spell_Data::Spell(Graphics::leafspell, Nature::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][8] = Spell_Data::Spell(Graphics::swirlingsmoke, Air::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][9] = Spell_Data::Spell(Graphics::fire_1b_40, Fire::Fire);
     spellbook.Skill_Trees[Spell_Data::fire][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::fire][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
   }
@@ -225,8 +229,10 @@ namespace UI_Spellbook {
       }
       renderRect = UI::Update_Scale(camera.scale, renderRect);
 
+      SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[tree][j].icon.pBackground, NULL, &renderRect);
       SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[tree][j].icon.pTexture, NULL, &renderRect);
       SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[tree][j].icon.pIconBorder, NULL, &renderRect);
+      SDL_RenderCopyF(Graphics::renderer, spellbook.Skill_Trees[tree][j].icon.pIconRarityBorder, NULL, &renderRect);
     }
   }
 

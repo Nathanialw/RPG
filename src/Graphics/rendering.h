@@ -373,7 +373,7 @@ namespace Rendering {
           camera.screen.y - 1000.0f,
           camera.screen.w + 2000.0f,
           camera.screen.h + 2000.0f};
-      auto objectsView = zone.view<Component::Position>();
+      auto objectsView = zone.view<Component::Position, Component::Interaction_Rect>();
       //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
       float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
       float bottomOfRenderRect = renderRect.y + renderRect.h;
@@ -408,7 +408,7 @@ namespace Rendering {
             zone.remove<Component::Renderable>(entity);
 
             if (zone.any_of<Component::Tile_Index>(entity)) {
-              auto &rect = zone.get<Component::Interaction_Rect>(entity);
+              auto &rect = objectsView.get<Component::Interaction_Rect>(entity);
               zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect.rect);
             }
           }

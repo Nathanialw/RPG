@@ -43,7 +43,6 @@ namespace Init {
     };
   };
 
-
   struct Loaded {
     int instance = 2;
   };
@@ -69,7 +68,6 @@ namespace Init {
     Action_Bar::Create_Action_Bar();
     Hotbar::Init_Hotbar();
     Scene::Init_Zone();
-    Init_Tiles_Array();
     Debug::Load_Settings();
     UI_Frames::Load_Buildings();
     //this one should be different for whichever class you create
@@ -110,6 +108,7 @@ namespace Init {
   }
 
   Game Init_World(Game &game, int &state) {
+    Init_Tiles_Array();
     Clear_Events();
     Video::Run_Audio(World::world[state].music.c_str());
     return game;

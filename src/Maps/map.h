@@ -182,8 +182,8 @@ namespace Maps {
     float y = 0.0f;
     Procedural_Components::Seed seed;
 
-    for (int i = 0; i < 255; ++i) {
-      for (int j = 0; j < 127; ++j) {
+    for (int i = 0; i < REGION_SIZE; ++i) {
+      for (int j = 0; j < REGION_SIZE; ++j) {
         seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
         int numObjects = Procedural_Generation::Random_Int(0, 100, seed);
         if (numObjects < 5) {
@@ -213,8 +213,8 @@ namespace Maps {
     std::string objectName = "";
 
 
-    for (int i = 0; i < 255; ++i) {
-      for (int j = 0; j < 127; ++j) {
+    for (int i = 0; i < REGION_SIZE; ++i) {
+      for (int j = 0; j < REGION_SIZE; ++j) {
         seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
         int numObjects = Procedural_Generation::Random_Int(0, 100, seed);
         if (numObjects < 5) {
@@ -296,7 +296,7 @@ namespace Maps {
         continue;
       }
       if (i != 0) {
-        tile.objects.emplace_back(Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex, aabb, pointVecs, line));
+        tile.objects[k].entity = (Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex, aabb, pointVecs, line));
       }
     }
   }
@@ -310,38 +310,39 @@ namespace Maps {
 
     for (int i = x; i <= (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
       for (int j = y; j <= (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
-//        if (i == 0) {
-          // generate tile type
-          Procedural_Components::Seed seed;
-          seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
-          //          int textureArraySize = World::tileSets[(int)World::tileType[state]].tileTextures.size();
-          int textureArraySize = World::world[state].tileTextures.size();
-          int tile = Procedural_Generation::Random_Int(0, textureArraySize, seed);
-          SDL_FRect rect;
-          rect.x = i * World::size.width;
-          rect.y = j * World::size.height;
-          rect.w = World::size.width;
-          rect.h = World::size.height;
-          //          SDL_Texture *texture = World::tileSets[(int)World::tileType[state]].tileTextures[tile];
-          SDL_Texture *texture = World::world[state].tileTextures[tile];
-          //                if entities created do nothing
-          if (tilesEntities[i][j].created) {
-
+        //        if (i == 0) {
+        if (i < 0 || j < 0) {
+          continue;
+        } else {
+          if (i > REGION_SIZE || j > REGION_SIZE) {
+            continue;
           }
-          //                else create them
           else {
-            //            Utilities::Log("creating tile objects");
-            Generate_Trees(zone, state, rect, World::world[state].tileset, tilesEntities[i][j]);
-            tilesEntities[i][j].created = true;
-          }
+            // generate tile type
+            Procedural_Components::Seed seed;
+            seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
+            int textureArraySize = World::world[state].tileTextures.size();
+            int tile = Procedural_Generation::Random_Int(0, textureArraySize, seed);
+            SDL_FRect rect;
+            rect.x = i * World::size.width;
+            rect.y = j * World::size.height;
+            rect.w = World::size.width;
+            rect.h = World::size.height;
+            SDL_Texture *texture = World::world[state].tileTextures[tile];
 
-          SDL_FRect renderRect;
-          renderRect.x = i * World::size.width - camera.screen.x;
-          renderRect.y = j * World::size.height - camera.screen.y;
-          renderRect.w = World::size.width;
-          renderRect.h = World::size.height;
-          SDL_RenderCopyF(Graphics::renderer, texture, NULL, &renderRect);
-//        }
+            if (!tilesEntities[0][i][j].created) {
+              Generate_Trees(zone, state, rect, World::world[state].tileset, tilesEntities[0][i][j]);
+              tilesEntities[0][i][j].created = true;
+            }
+
+            SDL_FRect renderRect;
+            renderRect.x = i * World::size.width - camera.screen.x;
+            renderRect.y = j * World::size.height - camera.screen.y;
+            renderRect.w = World::size.width;
+            renderRect.h = World::size.height;
+            SDL_RenderCopyF(Graphics::renderer, texture, NULL, &renderRect);
+          }
+        }
       }
     }
   }

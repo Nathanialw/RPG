@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:4fe3bb8ef12ce6160d8fd6ecfa6e03c2:5f1e25facf2b6d1d1466d1f3c7d02be0:a676868ac7f746751a103b4623e7bb21$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="fire_1b_40.png" width="3043" height="118">
+    <sprite n="fire_1b_40_1.png" x="1053" y="0" w="79" h="118" oX="2" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_2.png" x="1598" y="0" w="75" h="118" oX="4" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_3.png" x="2969" y="0" w="74" h="97" oX="5" oY="26" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_4.png" x="2258" y="0" w="72" h="118" oX="6" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_5.png" x="2330" y="0" w="72" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_6.png" x="2402" y="0" w="72" h="118" oX="6" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_7.png" x="2474" y="0" w="72" h="118" oX="6" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_8.png" x="2618" y="0" w="71" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_9.png" x="1368" y="0" w="77" h="118" oX="1" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_10.png" x="1445" y="0" w="77" h="118" oX="1" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_11.png" x="2689" y="0" w="70" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_12.png" x="2759" y="0" w="70" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_13.png" x="2829" y="0" w="70" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_14.png" x="2899" y="0" w="70" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_15.png" x="0" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_16.png" x="81" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_17.png" x="162" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_18.png" x="243" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_19.png" x="324" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_20.png" x="405" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_21.png" x="1290" y="0" w="78" h="118" oX="2" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_22.png" x="1132" y="0" w="79" h="118" oX="2" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_23.png" x="1211" y="0" w="79" h="118" oX="2" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_24.png" x="486" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_25.png" x="567" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_26.png" x="2546" y="0" w="72" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_27.png" x="1747" y="0" w="73" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_28.png" x="1673" y="0" w="74" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_29.png" x="1820" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_30.png" x="1893" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_31.png" x="1966" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_32.png" x="2039" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_33.png" x="2112" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_34.png" x="2185" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_35.png" x="1522" y="0" w="76" h="118" oX="5" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_36.png" x="648" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_37.png" x="729" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_38.png" x="810" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_39.png" x="891" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1b_40_40.png" x="972" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_1.png" x="972" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_2.png" x="891" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_3.png" x="810" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_4.png" x="729" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_5.png" x="648" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_6.png" x="1522" y="0" w="76" h="118" oX="5" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_7.png" x="2185" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_8.png" x="2112" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_9.png" x="2039" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_10.png" x="1966" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_11.png" x="1893" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_12.png" x="1820" y="0" w="73" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_13.png" x="1673" y="0" w="74" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_14.png" x="1747" y="0" w="73" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_15.png" x="2546" y="0" w="72" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_16.png" x="567" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_17.png" x="486" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_18.png" x="1211" y="0" w="79" h="118" oX="2" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_19.png" x="1132" y="0" w="79" h="118" oX="2" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_20.png" x="1290" y="0" w="78" h="118" oX="2" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_21.png" x="405" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_22.png" x="324" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_23.png" x="243" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_24.png" x="162" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_25.png" x="81" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_26.png" x="0" y="0" w="81" h="118" oX="0" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_27.png" x="2899" y="0" w="70" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_28.png" x="2829" y="0" w="70" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_29.png" x="2759" y="0" w="70" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_30.png" x="2689" y="0" w="70" h="118" oX="8" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_31.png" x="1445" y="0" w="77" h="118" oX="1" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_32.png" x="1368" y="0" w="77" h="118" oX="1" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_33.png" x="2618" y="0" w="71" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_34.png" x="2474" y="0" w="72" h="118" oX="6" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_35.png" x="2402" y="0" w="72" h="118" oX="6" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_36.png" x="2330" y="0" w="72" h="118" oX="7" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_37.png" x="2258" y="0" w="72" h="118" oX="6" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_38.png" x="2969" y="0" w="74" h="97" oX="5" oY="26" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_39.png" x="1598" y="0" w="75" h="118" oX="4" oY="5" oW="81" oH="123"/>
+    <sprite n="fire_1f_40_40.png" x="1053" y="0" w="79" h="118" oX="2" oY="5" oW="81" oH="123"/>
+</TextureAtlas>

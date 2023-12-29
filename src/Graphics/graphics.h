@@ -69,6 +69,18 @@ namespace Graphics {
   SDL_Texture *death6;
   SDL_Texture *death7;
   SDL_Texture *death8;
+  SDL_Texture *healself;
+  SDL_Texture *healother;
+  SDL_Texture *sinisterstrike;
+  SDL_Texture *lightningstrike;
+  SDL_Texture *lightningball;
+  SDL_Texture *chargedbolt;
+  SDL_Texture *leafspell;
+  SDL_Texture *swirlingsmoke;
+  SDL_Texture *icebolt;
+  SDL_Texture *fire_1b_40;
+
+
   SDL_Texture *itsmars_Inventory;
   SDL_Texture *cursor_0;
   SDL_Texture *selector32;
@@ -274,6 +286,17 @@ namespace Graphics {
     death6 = createTexture("assets/sprites/UI/icons/Dark Magic/06.png");
     death7 = createTexture("assets/sprites/UI/icons/Dark Magic/07.png");
     death8 = createTexture("assets/sprites/UI/icons/Dark Magic/08.png");
+
+    sinisterstrike = createTexture("assets/sprites/items/icon_sword_long4.png");
+    healself = createTexture("assets/sprites/UI/icons/spells/leaf-jade-2.png");
+    healother = createTexture("assets/sprites/UI/icons/spells/leaf-orange-2.png");
+    lightningstrike = createTexture("assets/sprites/spells/lightning/fx1_blue_topEffect/spell_bluetop_1_1.png");
+    lightningball = createTexture("assets/sprites/spells/lightning/fx8_lighteningBall/lighteningball_1_20_1.png");
+    chargedbolt = createTexture("assets/sprites/spells/lightning/chargedbolt/chargedbolt-0.png");
+    leafspell = createTexture("assets/sprites/spells/nature/leafspell/0026.png");
+    swirlingsmoke = createTexture("assets/sprites/spells/air/swirlingsmoke/0000.png");
+    icebolt = createTexture("assets/sprites/UI/icons/spell_icons/ice/Fantasy Game Skills Icon 1 - Magic - Ice Lance level 1.jpg");
+    fire_1b_40 = createTexture("assets/sprites/spells/fire/fire/fire_1b_40_1.png");
 
     charCreateBackground = createTexture("assets/sprites/UI/backgrounds/Background_47.png");
 

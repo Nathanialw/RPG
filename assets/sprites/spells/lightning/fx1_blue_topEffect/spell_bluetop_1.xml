@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:44550964d386d04e2b6b523bce3f6573:36578f43b9d0a0fab081589bb8275f74:70602d01999b7e74eeb6cf0512ad6d65$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="spell_bluetop_1.png" width="652" height="478">
+    <sprite n="spell_bluetop_1_1.png" x="0" y="0" w="98" h="203"/>
+    <sprite n="spell_bluetop_1_2.png" x="0" y="203" w="98" h="200" oX="0" oY="3" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_3.png" x="98" y="0" w="97" h="177" oX="1" oY="25" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_4.png" x="195" y="0" w="95" h="151" oX="2" oY="51" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_5.png" x="478" y="0" w="92" h="130" oX="4" oY="71" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_6.png" x="478" y="130" w="90" h="128" oX="5" oY="73" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_7.png" x="568" y="240" w="84" h="122" oX="8" oY="77" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_8.png" x="568" y="362" w="78" h="116" oX="11" oY="83" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_9.png" x="570" y="123" w="78" h="117" oX="9" oY="80" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_10.png" x="570" y="0" w="81" h="123" oX="8" oY="77" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_11.png" x="478" y="258" w="90" h="125" oX="5" oY="74" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_12.png" x="385" y="134" w="87" h="130" oX="5" oY="70" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_13.png" x="385" y="0" w="91" h="134" oX="3" oY="67" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_14.png" x="384" y="294" w="94" h="135" oX="2" oY="66" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_15.png" x="290" y="294" w="94" h="139" oX="2" oY="63" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_16.png" x="290" y="0" w="95" h="142" oX="1" oY="60" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_17.png" x="194" y="328" w="96" h="145" oX="1" oY="57" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_18.png" x="98" y="329" w="96" h="147" oX="1" oY="55" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_19.png" x="98" y="177" w="95" h="152" oX="1" oY="51" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_20.png" x="193" y="177" w="96" h="151" oX="1" oY="51" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_21.png" x="289" y="151" w="96" h="143" oX="1" oY="59" oW="98" oH="203"/>
+    <sprite n="spell_bluetop_1_22.png" x="0" y="403" w="96" h="66" oX="1" oY="136" oW="98" oH="203"/>
+</TextureAtlas>

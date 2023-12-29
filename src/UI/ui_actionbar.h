@@ -38,7 +38,7 @@ namespace Action_Bar {
   }
 
   void Create_Action_Bar() {
-    actionBar.defaultSlot = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    actionBar.defaultSlot = Spell_Data::Spell(Graphics::emptyBagIcon, PLACEHOLDER);
     for (int i = 0; i < actionBar.actionBar.spell.size(); i++) {
       actionBar.actionBar.spell[i] = actionBar.defaultSlot;
     }

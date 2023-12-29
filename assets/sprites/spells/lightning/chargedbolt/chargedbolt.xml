@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:e2edc84be32c5a206f1c6af2f7c3d182:0f9d3477a54f474fd54a93338956a28c:3c869e31a49cfa074dc3252ee1c9ed3b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="chargedbolt.png" width="472" height="239">
+    <sprite n="chargedbolt-0" x="141" y="94" w="48" h="48" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-1" x="189" y="94" w="47" h="48" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-2" x="236" y="94" w="47" h="48" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-3" x="48" y="0" w="47" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-4" x="0" y="0" w="48" h="46" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-5" x="95" y="0" w="46" h="47" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-6" x="141" y="0" w="47" h="47" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-7" x="188" y="0" w="47" h="47" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-8" x="283" y="94" w="47" h="48" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-9" x="235" y="0" w="48" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-10" x="283" y="0" w="48" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-11" x="330" y="94" w="48" h="48" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-12" x="378" y="94" w="48" h="48" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-13" x="0" y="140" w="47" h="48" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-14" x="331" y="0" w="47" h="47" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-15" x="378" y="0" w="47" h="47" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-16" x="425" y="0" w="47" h="47" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-17" x="0" y="46" w="47" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-18" x="47" y="47" w="46" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-19" x="93" y="47" w="47" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-20" x="140" y="47" w="47" h="47" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-21" x="47" y="141" w="48" h="48" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-22" x="141" y="142" w="48" h="48" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-23" x="189" y="142" w="47" h="48" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-24" x="0" y="188" w="46" h="49" oX="27" oY="13" oW="100" oH="75"/>
+    <sprite n="chargedbolt-25" x="94" y="189" w="46" h="49" oX="27" oY="13" oW="100" oH="75"/>
+    <sprite n="chargedbolt-26" x="426" y="94" w="46" h="48" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-27" x="236" y="142" w="47" h="48" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-28" x="283" y="142" w="47" h="48" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-29" x="187" y="47" w="48" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-30" x="235" y="47" w="48" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-31" x="283" y="47" w="48" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-32" x="331" y="47" w="47" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-33" x="378" y="47" w="47" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-34" x="425" y="47" w="47" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-35" x="0" y="93" w="47" h="47" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-36" x="47" y="94" w="47" h="47" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-37" x="236" y="190" w="48" h="49" oX="26" oY="13" oW="100" oH="75"/>
+    <sprite n="chargedbolt-38" x="94" y="94" w="47" h="47" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-39" x="95" y="141" w="46" h="48" oX="27" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-40" x="330" y="142" w="47" h="48" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-41" x="377" y="142" w="48" h="48" oX="25" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-42" x="284" y="190" w="49" h="49" oX="25" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-43" x="46" y="189" w="48" h="48" oX="25" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-44" x="425" y="142" w="47" h="48" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-45" x="140" y="190" w="48" h="48" oX="26" oY="14" oW="100" oH="75"/>
+    <sprite n="chargedbolt-46" x="333" y="190" w="48" h="49" oX="26" oY="13" oW="100" oH="75"/>
+    <sprite n="chargedbolt-47" x="188" y="190" w="48" h="48" oX="26" oY="14" oW="100" oH="75"/>
+</TextureAtlas>

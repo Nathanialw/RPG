@@ -1,10 +1,10 @@
 #pragma once
+#include "Debug/debug_components.h"
+#include "collision.h"
 #include "dynamic_entity_loader.h"
 #include "dynamic_quad_tree.h"
 #include "item_components.h"
 #include "world.h"
-#include "collision.h"
-#include "Debug/debug_components.h"
 
 namespace Quad_Tree {
 
@@ -17,7 +17,7 @@ namespace Quad_Tree {
   //will be attached to the map later
   SDL_FRect zoneSize = {0.0f, 0.0f, 10000.0f, 10000.0f};
   //  DynamicQuadTreeContainer<someObjectWithArea> treeObjects;
-//  std::unordered_map<World::GameState, Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees;
+  //  std::unordered_map<World::GameState, Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees;
   std::vector<Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees(World::numZones);
   float offset = 40.0f;
 
@@ -65,44 +65,55 @@ namespace Quad_Tree {
       if (zone.any_of<Component::Tile_Index>(entity)) {
         int i = view.get<Component::Tile_Index>(entity).i;
         int j = view.get<Component::Tile_Index>(entity).j;
-        tilesEntities[i][j].created = false;
+        tilesEntities[0][i][j].created = false;
         //remove from tree
-        for (auto &tileEntity: tilesEntities[i][j].objects) {
-          if (!zone.any_of<Component::Interaction_Rect>(tileEntity)) {
-            if (zone.valid(entity)) {
-              Utilities::Log("the entity exists");
-              if (zone.any_of<Component::Body>(tileEntity)) {
-                auto &body = zone.get<Component::Body>(tileEntity).body;
-                auto world = Collision::collisionList[state];
-                world->DestroyBody(body);
-                zone.remove<Component::Body>(tileEntity);
-                zone.destroy(tileEntity);
+        if (i < 0 || j < 0) {
+          Utilities::Log(std::to_string(tilesEntities[0][i][j].objects.size()));
+          continue;
+        }
+        for (auto tileEntity: tilesEntities[0][i][j].objects) {
+          if (zone.valid(tileEntity.entity)) {
+            if (!zone.any_of<Component::Interaction_Rect>(tileEntity.entity)) {
+              Utilities::Log("the entity " + std::to_string((int) tileEntity.entity) + " has no interaction rect");
+              if (zone.any_of<Component::Body>(tileEntity.entity)) {
+                auto &body = zone.get<Component::Body>(tileEntity.entity).body;
+                Collision::collisionList[state]->DestroyBody(body);
+                zone.remove<Component::Body>(tileEntity.entity);
+                zone.remove<Component::Remove_From_Object_Tree>(entity);
+                zone.remove<Component::In_Object_Tree>(entity);
               }
+              zone.destroy(tileEntity.entity);
+              continue;
             }
-            else {
-              Utilities::Log("the does not entity exist");
-            }
+          } else {
+            //            Utilities::Log("the entity " + std::to_string((int)tileEntity) + " does not exist, i think it's stuck in the tree");
             continue;
           }
-          auto &rect = zone.get<Component::Interaction_Rect>(tileEntity).rect;
+          auto &rect = zone.get<Component::Interaction_Rect>(tileEntity.entity).rect;
           for (auto &object: quadTrees[state].search(rect)) {
-            if (object->item.entity_ID == tileEntity) {
+            if (object->item.entity_ID == tileEntity.entity) {
               quadTrees[state].remove(object);
             }
           }
           //remove from collision
-          if (zone.any_of<Component::Body>(tileEntity)) {
-            auto &body = zone.get<Component::Body>(tileEntity).body;
-            auto world = Collision::collisionList[state];
-            world->DestroyBody(body);
-            zone.remove<Component::Body>(tileEntity);
+          if (zone.any_of<Component::Body>(tileEntity.entity)) {
+            auto &body = zone.get<Component::Body>(tileEntity.entity).body;
+            Collision::collisionList[state]->DestroyBody(body);
+            zone.remove<Component::Body>(tileEntity.entity);
+            zone.remove<Component::Remove_From_Object_Tree>(tileEntity.entity);
+            zone.remove<Component::In_Object_Tree>(tileEntity.entity);
+            zone.remove<Component::Interaction_Rect>(tileEntity.entity);
+//            Utilities::Log(sizeof(Collision::collisionList[state]));
+//            Utilities::Log(quadTrees[state].size());
           }
           //remove from registry
-          zone.destroy(tileEntity);
+          zone.destroy(tileEntity.entity);
         }
-        tilesEntities[i][j].objects.clear();
+        zone.remove<Component::Remove_From_Object_Tree>(entity);
+        zone.remove<Component::In_Object_Tree>(entity);
       }
     }
+    zone.compact<>();
   }
 
 

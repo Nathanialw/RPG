@@ -156,6 +156,60 @@ namespace Texture_Packer {
     return true;
   }
 
+  std::unordered_map<std::string, Rendering_Components::Sheet_Data> *TexturePacker_Import_Linear(std::string &templateName, std::string &xml_path, SDL_Texture *texture) {
+    ///check if the sheet data already exists
+    if (Packer_Textures[templateName].frameList.size() > 1) {
+      return &Packer_Textures;
+    }
+
+    ///get path from db
+    if (xml_path.c_str() == NULL || xml_path == "") {
+      Utilities::Log("TexturePacker_Import() failed, empty xml_path");
+      return NULL;
+    }
+
+    const char *xmlPath = xml_path.c_str();
+
+    tinyxml2::XMLDocument spriteSheetData;
+    spriteSheetData.LoadFile(xmlPath);
+    tinyxml2::XMLElement *pSpriteElement;
+
+    pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
+
+    Rendering_Components::Sprite_Sheet_Data frame = {};
+    Rendering_Components::Sheet_Data spritesheet;
+    spritesheet.frameList.reserve(200);
+    if (texture) {
+      spritesheet.texture = texture;
+    }
+
+    int frameIndex = 0;
+    while (pSpriteElement != NULL) {
+      ///get frame data for each state
+      std::string n = pSpriteElement->Attribute("n");
+      ///get sprite data
+      frame.clip.x = pSpriteElement->IntAttribute("x");
+      frame.clip.y = pSpriteElement->IntAttribute("y");
+      frame.clip.w = pSpriteElement->IntAttribute("w");
+      frame.clip.h = pSpriteElement->IntAttribute("h");
+      frame.x_offset = pSpriteElement->IntAttribute("oX");
+      frame.y_offset = pSpriteElement->IntAttribute("oY");
+      spritesheet.frameW = pSpriteElement->IntAttribute("oW");
+      spritesheet.frameH = pSpriteElement->IntAttribute("oH");
+      spritesheet.frameList.emplace_back(frame);
+      frameIndex++;
+      ///this grabs the next line
+      pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
+    }
+
+    spritesheet.actionFrameData[Action_Component::walk].NumFrames = frameIndex;
+    spritesheet.actionFrameData[Action_Component::walk].startFrame = 0;
+    spritesheet.actionFrameData[Action_Component::walk].frameSpeed = 75;
+    spritesheet.frameList.shrink_to_fit();
+    Packer_Textures[templateName] = spritesheet;
+    //        spritesheet.color = Graphics::Set_Random_Color();
+    return &Packer_Textures;
+  }
 
   void TexturePacker_Import_Tileset(Rendering_Components::Sheet_Data &spritesheet, std::string &templateName, std::string &tilesetName, const char *xmlPath) {
     //loads xml and image from db, only do once per xml

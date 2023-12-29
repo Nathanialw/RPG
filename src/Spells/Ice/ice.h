@@ -9,7 +9,7 @@ namespace Ice {
   };
 
 
-  int Icebolt(entt::registry &zone, entt::entity &entity, float &x, float &y) {
+  int Icebolt(entt::registry &zone, entt::entity &entity, float &x, float &y, const char *name) {
     //get data from db
     Cast_Data castData;
     float castTime = 500.0f;
@@ -26,7 +26,7 @@ namespace Ice {
 
       //read animation in from db?
       Action_Component::Set_State(action, Action_Component::casting);
-      Fire_Spells[0](zone, entity, x, y);
+      Fire_Spells[0](zone, entity, x, y, "icebolt");
     }
     return 0;
   }

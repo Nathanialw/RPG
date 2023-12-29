@@ -21,6 +21,9 @@ void Update_Frame_Flare(SDL_Rect &clipRect, uint8_t currentFrame, int &startFram
   clipRect.y = clipRect.h * Original_Direction_Enum(direction);
 }
 
+void Update_Packer_Frame(Rendering_Components::Sprite_Sheet_Info &sheetData, SDL_Rect &clipRect, uint8_t currentFrame) {
+  clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList[currentFrame].clip;
+}
 
 void Update_Frame(entt::registry &zone, entt::entity entity, Component::Scale scale, Rendering_Components::Sprite_Sheet_Info &sheetData, Component::Direction &direction, Action_Component::Action &action) {
 

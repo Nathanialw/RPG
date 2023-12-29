@@ -95,22 +95,27 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
       SDL_SetTextureAlphaMod(texture, renderable.alpha);
       Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
     } else if (sheetData.sheetData) {
-      if (mounts.contains(entity)) {
-        //                render horse half behind unit
-      }
+      if (sheetData.type == "packer_linear") {
+        Update_Packer_Linear_Frame(sheetData, action);
+        Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
+      } else {
+        if (mounts.contains(entity)) {
+          //                render horse half behind unit
+        }
 
-      //                render unit
-      Frame_Increment(zone, entity, scale, sheetData, action, direction);
-      Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
+        //                render unit
+        Frame_Increment(zone, entity, scale, sheetData, action, direction);
+        Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
 
-      //                render equipment
-      if (view.contains(entity)) {
-        auto equipment = view.get<Rendering_Components::Equipment_Sprites>(entity);
-        Render_Equipment(equipment, scale, sheetData, camera, position, renderable, spriteOffset);
-      }
+        //                render equipment
+        if (view.contains(entity)) {
+          auto equipment = view.get<Rendering_Components::Equipment_Sprites>(entity);
+          Render_Equipment(equipment, scale, sheetData, camera, position, renderable, spriteOffset);
+        }
 
-      if (mounts.contains(entity)) {
-        //                render horse half in front unit
+        if (mounts.contains(entity)) {
+          //                render horse half in front unit
+        }
       }
     } else {
       Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL");

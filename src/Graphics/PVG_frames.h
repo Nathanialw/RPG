@@ -69,6 +69,14 @@ void Frame_Increment(entt::registry &zone, entt::entity &entity, Component::Scal
   }
 }
 
+void Update_Packer_Linear_Frame(Rendering_Components::Sprite_Sheet_Info &sheetData, Action_Component::Action &action) {
+  action.frameTime += Timer::timeStep;
+  if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
+    action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
+    sheetData.frameIndex++;
+  }
+}
+
 void Update_Item_Frame(SDL_Rect &clipRect, uint8_t row, uint16_t column) {
   clipRect = {column * clipRect.w, row * clipRect.h, clipRect.w, clipRect.h};
 }
