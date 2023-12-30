@@ -19,8 +19,8 @@
 //#include "ui_gameloop_function_times.h"
 //#include "unit_positions.h"
 //#include "unit_status.h"
-#include <SDL2/SDL.h>
 #include "quad_tree.h"
+#include <SDL2/SDL.h>
 
 namespace Game_Loop {
 
@@ -41,7 +41,7 @@ namespace Game_Loop {
 
       Event_Handler::Update_User_Input(zone, state);
       Character_Stats::Update_Items(zone, state);
-      Player_Control::Move_To_Atack_Routine(zone,state);
+      Player_Control::Move_To_Atack_Routine(zone, state);
       AI::Update_AI(zone, state);
       Spells::Update_Spells(zone, state);
       Combat_Control::Update_Attacks(zone, state);
@@ -54,21 +54,23 @@ namespace Game_Loop {
       Unit_Status::Update_Unit_Status(zone, state);
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::status], Timer::gameLoopTimer);
 
-      if (!Rendering::Rendering(zone, state)) {
-        //restart
-        return 1;
+      if (World::currentZone.current == World::currentZone.next) {
+        if (!Rendering::Rendering(zone, state)) {
+          //restart
+          return 1;
+        }
       }
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::render], Timer::gameLoopTimer);
 
+      if (World::currentZone.current != World::currentZone.next) { Clear_Tiles_Array(zone); }
       Quad_Tree::Update_Tree_Routine(zone, state);
+
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::update_quad_tree], Timer::gameLoopTimer);
 
       Rendering::Present();
       Timer::Calculate_Timestep();
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::renderpresent], Timer::gameLoopTimer);
-
-
-      if (World::currentZone.current != World::currentZone.next) { return World::currentZone.next;}
+      if (World::currentZone.current != World::currentZone.next) { return World::currentZone.next; }
     }
     return state;
   }
@@ -81,16 +83,16 @@ namespace Game_Loop {
 
 
     return state;
-//
-//    switch (World::gamestate) {
-//      case World::GameState::overworld: { return World::GameState::overworld; break;}
-//        //need a cave init function
-//      //need collision bodies removed from the overworld first
-//      //need object tree copied and a different one for the cave from the overworld first
-//      case World::GameState::restart: {return World::GameState::restart; break;}
-//      case World::GameState::exit: {return World::GameState::exit; break;}
-//      case World::GameState::cave: {return World::GameState::cave; break;}
-//      case World::GameState::MODES: {return World::GameState::exit; break;}
-//    }
+    //
+    //    switch (World::gamestate) {
+    //      case World::GameState::overworld: { return World::GameState::overworld; break;}
+    //        //need a cave init function
+    //      //need collision bodies removed from the overworld first
+    //      //need object tree copied and a different one for the cave from the overworld first
+    //      case World::GameState::restart: {return World::GameState::restart; break;}
+    //      case World::GameState::exit: {return World::GameState::exit; break;}
+    //      case World::GameState::cave: {return World::GameState::cave; break;}
+    //      case World::GameState::MODES: {return World::GameState::exit; break;}
+    //    }
   }
 }// namespace Game_Loop

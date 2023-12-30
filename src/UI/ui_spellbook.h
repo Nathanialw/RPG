@@ -13,6 +13,7 @@
 #include "lightning/lightningball.h"
 #include "Nature/leafspell.h"
 #include "Air/smoke.h"
+#include "Arcane/arcane.h"
 
 namespace UI_Spellbook {
 

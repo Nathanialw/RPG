@@ -16,6 +16,7 @@ namespace Cave {
     World::world[newZone].previousZoneIndex = state;
     World::world[newZone].tilesetName = "hell";
     World::currentZone.next = newZone;
+    Clear_Tiles_Array(zone);
   }
 
 }

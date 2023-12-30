@@ -58,7 +58,7 @@ namespace Quad_Tree {
     //    }
   }
 
-  void Remove_From_Tree(entt::registry &zone, int &state) {
+  void Remove_Tile_From_Tree(entt::registry &zone, int &state) {
     auto view = zone.view<Component::In_Object_Tree, Component::Remove_From_Object_Tree, Component::Tile_Index>();
     for (auto &entity: view) {
 
@@ -103,8 +103,8 @@ namespace Quad_Tree {
             zone.remove<Component::Remove_From_Object_Tree>(tileEntity.entity);
             zone.remove<Component::In_Object_Tree>(tileEntity.entity);
             zone.remove<Component::Interaction_Rect>(tileEntity.entity);
-//            Utilities::Log(sizeof(Collision::collisionList[state]));
-//            Utilities::Log(quadTrees[state].size());
+            //            Utilities::Log(sizeof(Collision::collisionList[state]));
+            //            Utilities::Log(quadTrees[state].size());
           }
           //remove from registry
           zone.destroy(tileEntity.entity);
@@ -116,6 +116,27 @@ namespace Quad_Tree {
     zone.compact<>();
   }
 
+  void Remove_From_Tree(entt::registry &zone, int &state) {
+    auto view = zone.view<Component::In_Object_Tree, Component::Remove_From_Object_Tree>();
+    for (auto &entity: view) {
+
+      auto &rect = zone.get<Component::Interaction_Rect>(entity).rect;
+      for (auto &object: quadTrees[state].search(rect)) {
+        if (object->item.entity_ID == entity) {
+          quadTrees[state].remove(object);
+        }
+      }
+      //remove from collision
+      if (zone.any_of<Component::Body>(entity)) {
+        auto &body = zone.get<Component::Body>(entity).body;
+        Collision::collisionList[state]->DestroyBody(body);
+        zone.remove<Component::Body>(entity);
+      }
+      zone.destroy(entity);
+      //remove from registry
+    }
+    zone.compact<>();
+  }
 
   void Remove_Entity_From_Tree(entt::registry &zone, entt::entity &entity, int &state) {
     auto &rect = zone.get<Component::Remove_From_Object_Tree>(entity).rect;
@@ -243,6 +264,7 @@ namespace Quad_Tree {
     Emplace_Objects_In_Quad_Tree(zone, state);
     Update_Quad_Tree_Positions(zone, state);
     Draw_Tree_Object_Rects(zone, state);
+    Remove_Tile_From_Tree(zone, state);
     Remove_From_Tree(zone, state);
     // draw rects
   }

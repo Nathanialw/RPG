@@ -91,6 +91,7 @@ namespace Init {
     } else {
       Recreate_Player(zone, state);
     }
+    Init_Tiles_Array();
     Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
     Maps::Init_Caves(zone, state, World::world[state].tileset);
     Quad_Tree::Fill_Quad_Tree(zone, state);
@@ -108,7 +109,7 @@ namespace Init {
   }
 
   Game Init_World(Game &game, int &state) {
-    Init_Tiles_Array();
+
     Clear_Events();
     Video::Run_Audio(World::world[state].music.c_str());
     return game;
@@ -133,6 +134,7 @@ namespace Init {
   }
 
   void Reload_Zone(entt::registry &zone, int &state) {
+    Init_Tiles_Array();
     Game game;
     Recreate_Player(zone, state);
     Init_World(game, state);

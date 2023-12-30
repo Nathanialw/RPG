@@ -122,9 +122,9 @@ namespace Action_Bar {
   }
 
   void Clear_Spell_On_Mouse(entt::registry &zone) {
-    if (Mouse::mouseItem == Mouse::cursor_ID) {
-      Utilities::Log("objectID on mouse is the same as the cursorID same");
-    }
+//    if (Mouse::mouseItem == Mouse::cursor_ID) {
+//      Utilities::Log("objectID on mouse is the same as the cursorID same");
+//    }
     Mouse_Struct::mouseData.type = Component::Icon_Type::none;
     Mouse_Struct::mouseData.index = -1;
   }
