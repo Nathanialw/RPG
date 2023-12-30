@@ -336,7 +336,7 @@ namespace UI {
           Utilities::Log((int) slot.second);
         }
       }
-      Utilities::Log((int)Item_Component::emptyEquipSlot[state]);
+//      Utilities::Log((int)Item_Component::emptyEquipSlot[state]);
     }
 
     void Update_Equipment_Position(Component::Camera &camera) {

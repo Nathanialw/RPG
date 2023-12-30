@@ -38,9 +38,9 @@ namespace Interface {
       if (e.wheel.y < 0) {
         x.x *= 0.9f;
         x.y *= 0.9f;
-        if (x.y < 2.0f) {
-          //          x.x = 2.0f;
-          //          x.y = 2.0f;
+        if (x.y < 0.75f) {
+          x.x = 0.75f;
+          x.y = 0.75f;
         }
         SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
       }
@@ -140,10 +140,9 @@ namespace Interface {
       auto &position = view.get<Component::Position>(entity);
       auto &radius = view.get<Component::Radius>(entity);
       auto &rect = view.get<Component::Interaction_Rect>(entity);
-      if (rect.tall) { // if the unit is tall
+      if (rect.tall) {// if the unit is tall
         rect.rect = {position.x - radius.fRadius, position.y - (radius.fRadius * 3.0f), radius.fRadius * 2.0f, radius.fRadius * 4.0f};
-      }
-      else {
+      } else {
         rect.rect = {position.x - radius.fRadius, position.y - radius.fRadius, radius.fRadius * 2.0f, radius.fRadius * 2.0f};
       }
     }
