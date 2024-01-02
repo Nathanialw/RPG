@@ -3,30 +3,33 @@
 #include "mouse_control.h"
 
 namespace Nature {
-  struct Cast_Data {
-    int spellIndex = 0;
-    const char *name = "leafspell";
-  };
 
+  int Cast_Template(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
 
-  int leafspell(entt::registry &zone, entt::entity &entity, float &x, float &y, const char *name) {
-    //get data from db
-    Cast_Data castData;
-    float castTime = 500.0f;
-
-    //send to generic create
-    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, castData.name);
     return 1;
   }
 
-  Spells::spells Fire_Spells[] = {leafspell};
+  int Icebolt(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
+    Spells::Create_Spell(zone, state, caster_ID, position, direction, hitEffect, casting, targetX, targetY);
+    return 1;
+  }
+
+  int Fireball_Hit(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
+    Spells::Spell_Hit_Effect(zone, state, caster_ID, position, direction, spellname, targetX, targetY);
+    //    Spells::Create_Explosion(zone, position.x, position.y);
+    return 1;
+  }
 
   int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     if (action.state != Action_Component::casting && action.state != Action_Component::cast) {
 
       //read animation in from db?
       Action_Component::Set_State(action, Action_Component::casting);
-      Fire_Spells[0](zone, entity, x, y, "leafspell");
+      float castTime = 500.0f;
+      //send to generic create
+      zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast_Template, Icebolt, Fireball_Hit);
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "", "");
+      return 1;
     }
     return 0;
   }

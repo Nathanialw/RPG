@@ -64,7 +64,9 @@ namespace World {
     std::vector<SDL_Texture *> tileTextures;
     bool loaded = false;
   };
-
+  int numZones = 200;
+  std::vector<Tileset> world(numZones);
+  std::array<Tileset, 4> regions;
 //  std::array<Tileset, (int) Tile_Type::SIZE> tileSets;
 
   struct Current_Zone {
@@ -78,8 +80,6 @@ namespace World {
     Zone_Count++;
   }
 
-  int numZones = 200;
-  std::vector<Tileset> world(numZones);
 
   struct Loaded {
     int instance = 2;

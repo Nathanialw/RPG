@@ -3,39 +3,34 @@
 #include "mouse_control.h"
 
 namespace Lightning {
-  struct Cast_Data {
-    int spellIndex = 0;
-    const char *name = "chargedbolt";
-  };
 
-
-  int chargedbolt(entt::registry &zone, entt::entity &entity, float &x, float &y, const char *name) {
-    //get data from db
-    float castTime = 500.0f;
-
-    //send to generic create
-    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, name);
-    return 1;
-  }
-
-  int spell_bluetop_1(entt::registry &zone, entt::entity &entity, float &x, float &y, const char *name) {
-    //get data from db
-    float castTime = 500.0f;
-
-    //send to generic create
-    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, name);
+  int Cast(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
+    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
     return 1;
   }
 
 
-  Spells::spells Fire_Spells[] = {chargedbolt, spell_bluetop_1};
+  int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
+    Spells::Create_Spell(zone, state, caster_ID, position, direction, hitEffect, casting, targetX, targetY);
+    return 1;
+  }
+
+  int Hit(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
+    Spells::Spell_Hit_Effect(zone, state, caster_ID, position, direction, spellname, targetX, targetY);
+    //    Spells::Create_Explosion(zone, position.x, position.y);
+    return 1;
+  }
 
   int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     if (action.state != Action_Component::casting && action.state != Action_Component::cast) {
 
       //read animation in from db?
       Action_Component::Set_State(action, Action_Component::casting);
-      Fire_Spells[0](zone, entity, x, y, "chargedbolt");
+      float castTime = 500.0f;
+      //send to generic create
+      zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "chargedbolt", "aura_test_1_32", "aura_test_1_32");
+      return 1;
     }
     return 0;
   }
@@ -45,7 +40,11 @@ namespace Lightning {
 
       //read animation in from db?
       Action_Component::Set_State(action, Action_Component::casting);
-      Fire_Spells[1](zone, entity, x, y, "spell_bluetop_1");
+      float castTime = 500.0f;
+      //send to generic create
+      zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "spell_bluetop_1", "aura_test_1_32", "aura_test_1_32");
+      return 1;
     }
     return 0;
   }

@@ -2,7 +2,7 @@
 #include "item_components.h"
 #include "components.h"
 #include "action_components.h"
-#include "spells.h"
+#include "spell_components.h"
 //#include "Fire/fire.h"
 
 namespace Spell_Data {
@@ -27,7 +27,9 @@ namespace Spell_Data {
 
   public:
     Component::Icon icon;
-    Spells::castSpell cast;// = Sinister_Strike;
+    Spells::castSpell cast;
+//    Spells::castEffect effect;
+//    Spells::spellHit hit;
     Skill_Tree tree;
     int index;
 

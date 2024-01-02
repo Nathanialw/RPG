@@ -89,6 +89,26 @@ namespace Rendering {
   //        }
   //    }
 
+  void Render_UI(entt::registry &zone, int &state, SDL_Renderer *renderer, Component::Camera &camera) {
+    auto view = zone.view<Component::Input>();
+    for (auto player_ID: view) {
+
+      Action_Bar::Render_Action_Bar(zone, state, camera);
+
+      if (UI::bToggleCharacterUI) {
+        //render UI
+        UI::Character_UI = Camera_Control::Convert_FRect_To_Scale(UI::defaultScreenPosition, camera);
+        Graphics::Render_FRect(Graphics::itsmars_Inventory, {255, 255, 255}, &UI::charui, &UI::Character_UI);
+        //reder equipment slots
+        UI::Equipment_UI::Update_Equipment_Position(camera);
+        UI::Equipment_UI::Render_Equipment_Slot(zone, state, renderer, camera, player_ID);
+        //render Items in bag
+        UI::Bag_UI::screenBag = Camera_Control::Convert_FRect_To_Scale(UI::Bag_UI::bagRect, camera);
+        UI::Bag_UI::Render_Bag_Slot(zone, player_ID, state, renderer, camera);
+      }
+    }
+  }
+
   void Display_Background_Objects(entt::registry &zone, Component::Camera &camera) {
 
     auto view1 = zone.view<Component::Renderable, Action_Component::Action, Component::Position, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset, Component::Scale, Component::Entity_Type, Rendering_Components::Background>();
@@ -487,7 +507,7 @@ namespace Rendering {
       Items::Unit_Name_On_Mouseover(zone, camera);
       Social_Control::Show_Dialogue(zone, camera);
       Items::Name_On_Mouseover(zone, camera);
-      UI::Render_UI(zone, state, Graphics::renderer, camera);
+      Render_UI(zone, state, Graphics::renderer, camera);
       Character_Stats::Render_Character_Stats(camera);
       Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
       Damage_Text::Show_Damage(zone, camera);

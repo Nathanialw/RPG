@@ -32,8 +32,15 @@ namespace Social_Component {
     SIZE
   };
 
+
   struct Relationships {
     std::array<int, (int)Race::SIZE>races;
+  };
+
+  struct Summon {
+    Relationships relationships;
+    Race race;
+    bool summon = false;
   };
 
   struct Speaking {

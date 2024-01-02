@@ -15,7 +15,7 @@ namespace Quad_Tree {
 
   //zoneSize is the area being searched for objects
   //will be attached to the map later
-  SDL_FRect zoneSize = {0.0f, 0.0f, 10000.0f, 10000.0f};
+  SDL_FRect zoneSize = {0.0f, 0.0f, (REGION_SIZE*World::size.height) + World::size.height, (REGION_SIZE*World::size.width) + World::size.width};
   //  DynamicQuadTreeContainer<someObjectWithArea> treeObjects;
   //  std::unordered_map<World::GameState, Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees;
   std::vector<Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees(World::numZones);
@@ -197,22 +197,15 @@ namespace Quad_Tree {
         auto &camera = view.get<Component::Camera>(entity);
 
         int nodes = 0;
-        nodes = quadTrees[state].Draw(camera.screen.x, camera.screen.y, nodes);
+//        nodes = quadTrees[state].Draw(camera.screen.x, camera.screen.y, nodes);
 
         for (const auto &object: quadTrees[state].search(camera.screen)) {
           SDL_FRect screenRect = object->item.rect;
           screenRect.x -= camera.screen.x;
           screenRect.y -= camera.screen.y;
-          //          SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 255, 255);
-          //          SDL_RenderDrawRectF(Graphics::renderer, &screenRect);
           SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderMagic, NULL, &screenRect);
-          //          SDL_FRect interactRect = view2.get<Component::Interaction_Rect>(object->item.entity_ID).rect;
-          //          interactRect.x -= camera.screen.x;
-          //          interactRect.y -= camera.screen.y;
-          //          SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 0, 255);
-          //          SDL_RenderDrawRectF(Graphics::renderer, &interactRect);
         }
-        std::cout << "nodes: " << nodes << std::endl;
+//        std::cout << "nodes: " << nodes << std::endl;
       }
       //		std::cout << "objects on screen: " << i << std::endl;
     }

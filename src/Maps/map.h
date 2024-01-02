@@ -25,6 +25,21 @@ namespace Maps {
   World::Region region;
 
 
+  void Init_Tilesets() {
+    std::string tilesetName[4] = {
+        "forest_summer",
+        "forest_winter",
+        "forest_autumn",
+        "beach"};
+    for (int i = 0; i < World::regions.size(); ++i) {
+      Entity_Loader::TileSet_Data data = Entity_Loader::Get_Tileset_Data(tilesetName[i]);
+      World::regions[i].music = data.music.c_str();
+      World::regions[i].mobType = data.tileUnits;
+      World::regions[i].tileset = data.name;
+      World::regions[i].tileTextures.emplace_back(Graphics::createTexture(data.tileset.c_str()));
+    }
+  }
+
   void Init_Tiles(int &instance, std::string &tilesetName) {
     //        randomize
     Entity_Loader::TileSet_Data data = Entity_Loader::Get_Tileset_Data(tilesetName);
@@ -64,7 +79,7 @@ namespace Maps {
   //    needs to run when the zone is in range
   void Generate_Region(int &instance, std::string &tilesetName) {
     Init_Tiles(instance, tilesetName);
-
+    Init_Tilesets();
     //go through all tiles and and ust the position to generate a random number, use that number to determine what objects are on each tile
     //        Create_Map({0.0f, 0.0f});
   }
@@ -192,7 +207,8 @@ namespace Maps {
 
           int n = Procedural_Generation::Random_Int(0, Game_Objects_Lists::units[unitType].size(), seed);
           db::Unit_Data data = Game_Objects_Lists::units[unitType][n];
-          Create_Entities::Create_Entity(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, "", false, data, false);
+          Social_Component::Summon summon;
+          Create_Entities::Create_Entity(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, "", false, data, false, summon);
           numUnits++;
         }
       }
@@ -308,16 +324,14 @@ namespace Maps {
     Get_Coords(camera.screen.x, x);
     Get_Coords(camera.screen.y, y);
 
-    for (int i = x; i <= (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
-      for (int j = y; j <= (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
-        //        if (i == 0) {
+    for (int i = x; i < (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
+      for (int j = y; j < (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
         if (i < 0 || j < 0) {
           continue;
         } else {
           if (i > REGION_SIZE || j > REGION_SIZE) {
             continue;
-          }
-          else {
+          } else {
             // generate tile type
             Procedural_Components::Seed seed;
             seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);

@@ -91,12 +91,14 @@ namespace Load {
   }
 
   void Copy_Player(entt::registry &newZone, entt::registry &oldZone, int newState, int oldState, entt::entity newEntity) {
-    auto view = oldZone.view<Component::Interaction_Rect, Component::Body, Social_Component::Relationships, Item_Component::Equipment, Rendering_Components::Equipment_Sprites, Component::Health, Component::Input>();
+    auto view = oldZone.view<Component::Interaction_Rect, Component::Body, Social_Component::Relationships, Social_Component::Race, Item_Component::Equipment, Rendering_Components::Equipment_Sprites, Component::Health, Component::Input>();
     for (auto playerID: view) {
       auto &relationships = view.get<Social_Component::Relationships>(playerID);
+      auto &race = view.get<Social_Component::Race>(playerID);
       auto &equipment_components = view.get<Rendering_Components::Equipment_Sprites>(playerID);
       auto &health = view.get<Component::Health>(playerID);
       newZone.emplace_or_replace<Social_Component::Relationships>(newEntity) = relationships;
+      newZone.emplace_or_replace<Social_Component::Race>(newEntity) = race;
       newZone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(newEntity) = equipment_components;
       newZone.emplace_or_replace<Component::Health>(newEntity) = health;
 

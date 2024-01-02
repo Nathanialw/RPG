@@ -1,13 +1,13 @@
 #pragma once
 
-#include "mouse_control.h"
-#include "timer.h"
-#include "components.h"
 #include "ai_components.h"
+#include "components.h"
 #include "entity_control.h"
-#include "world.h"
+#include "mouse_control.h"
 #include "quad_tree.h"
 #include "social_control.h"
+#include "timer.h"
+#include "world.h"
 
 namespace AI {
   bool b_AI = true;
@@ -15,7 +15,7 @@ namespace AI {
   //check for targets periodically
   //use the target x,y to move towards it
   //if target is in range, melee attack
-  void Attack_Move(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &entityPosition, Component::Melee_Range &meleeRange, Component::Position &targetPosition, Component::Radius &targetRadius) { // maybe change to move and attack?
+  void Attack_Move(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &entityPosition, Component::Melee_Range &meleeRange, Component::Position &targetPosition, Component::Radius &targetRadius) {// maybe change to move and attack?
     if (zone.any_of<Component::Attacking>(entity_ID)) {
       return;
     }
@@ -23,7 +23,7 @@ namespace AI {
       //calcuate the point to move to that puts in range of melee attack on every few frames
       //if it is in range, run Melee_Attack()
       //else pass that point as an update to the move order
-      if (Entity_Control::Target_In_Range(entityPosition, meleeRange.meleeRange, targetPosition, targetRadius)) { //check if center of attack rect is in the target
+      if (Entity_Control::Target_In_Range(entityPosition, meleeRange.meleeRange, targetPosition, targetRadius)) {//check if center of attack rect is in the target
         auto &action = zone.get<Action_Component::Action>(entity_ID);
         if (action.state != Action_Component::attack && action.state != Action_Component::struck) {
           Action_Component::Set_State(action, Action_Component::idle);
@@ -49,44 +49,50 @@ namespace AI {
       std::vector<entt::entity> entityData = Quad_Tree::Get_Nearby_Entities(zone, sightBox, state);
 
       for (auto target: entityData) {
-        auto type = zone.get<Component::Entity_Type>(target);
-        if (type == Component::Entity_Type::unit) {
-          if (Social_Control::Check_Relationship(zone, unit_ID, target)) {
-            if (!zone.any_of<Component::Alive>(target)) {Utilities::Log("target has no Component::Alive"); continue; }
-            auto &alive = zone.get<Component::Alive>(target);
-            if (!alive.bIsAlive) { Utilities::Log("target is dead"); continue; }
-
-            auto &targetPosition = zone.get<Component::Position>(target);
-            auto &targetRadius = zone.get<Component::Radius>(target);
-            SDL_FPoint targetPoint = {targetPosition.x, targetPosition.y};
-
-            if (Utilities::bFPoint_FRectIntersect(targetPoint, sightBox)) {
-              zone.emplace_or_replace<Component::In_Combat>(unit_ID);
-              zone.emplace_or_replace<Component::In_Combat>(target);
-              if (zone.any_of<Component::Melee_Damage>(unit_ID)) {
-                //attack if the unit has an attack
-                Attack_Move(zone, unit_ID, target, unitPosition, meleeRange, targetPosition, targetRadius);
-
-                //attack text
-                std::string attack = "attack";
-                Social_Control::Interact(zone, unit_ID, attack);
+        if (zone.any_of<Component::Entity_Type>(target)) {
+          auto type = zone.get<Component::Entity_Type>(target);
+          if (type == Component::Entity_Type::unit) {
+            if (Social_Control::Check_Relationship(zone, unit_ID, target)) {
+              if (!zone.any_of<Component::Alive>(target)) {
+                Utilities::Log("target has no Component::Alive");
+                continue;
               }
+              auto &alive = zone.get<Component::Alive>(target);
+              if (!alive.bIsAlive) {
+                Utilities::Log("target is dead");
+                continue;
+              }
+
+              auto &targetPosition = zone.get<Component::Position>(target);
+              auto &targetRadius = zone.get<Component::Radius>(target);
+              SDL_FPoint targetPoint = {targetPosition.x, targetPosition.y};
+
+              if (Utilities::bFPoint_FRectIntersect(targetPoint, sightBox)) {
+                zone.emplace_or_replace<Component::In_Combat>(unit_ID);
+                zone.emplace_or_replace<Component::In_Combat>(target);
+                if (zone.any_of<Component::Melee_Damage>(unit_ID)) {
+                  //attack if the unit has an attack
+                  Attack_Move(zone, unit_ID, target, unitPosition, meleeRange, targetPosition, targetRadius);
+
+                  //attack text
+                  std::string attack = "attack";
+                  Social_Control::Interact(zone, unit_ID, attack);
+                }
 
                 //run away if unit does not have an attack
-              else {
-                //shriek in terror
-                std::string flee = "flee";
-                Social_Control::Interact(zone, unit_ID, flee);
+                else {
+                  //shriek in terror
+                  std::string flee = "flee";
+                  Social_Control::Interact(zone, unit_ID, flee);
 
-                //move in the opposite direction for a distance
-
+                  //move in the opposite direction for a distance
+                }
+              } else {
+                zone.remove<Component::In_Combat>(unit_ID);
               }
+              break;
             } else {
-              zone.remove<Component::In_Combat>(unit_ID);
             }
-            break;
-          } else {
-
           }
         }
       }
@@ -145,4 +151,4 @@ namespace AI {
     }
     Update_Combat(zone);
   }
-}
+}// namespace AI

@@ -14,6 +14,8 @@
 #include "Nature/leafspell.h"
 #include "Air/smoke.h"
 #include "Arcane/arcane.h"
+#include "Life/heal_self.h"
+#include "Necromancy/raise_skeleton.h"
 
 namespace UI_Spellbook {
 
@@ -130,7 +132,7 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::archery][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
     spellbook.Skill_Trees[Spell_Data::fire][0] = Spell_Data::Spell(Graphics::fireball_icon, Fire::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::fire][1] = Spell_Data::Spell(Graphics::healself, Life::Heal_Self);
+    spellbook.Skill_Trees[Spell_Data::fire][1] = Spell_Data::Spell(Graphics::healself, Heal_Self::Heal_Self);
     spellbook.Skill_Trees[Spell_Data::fire][2] = Spell_Data::Spell(Graphics::healother, Life::Heal_Other);
     spellbook.Skill_Trees[Spell_Data::fire][3] = Spell_Data::Spell(Graphics::icebolt, Ice::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::fire][4] = Spell_Data::Spell(Graphics::chargedbolt, Lightning::Cast_Spell);
@@ -139,8 +141,8 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::fire][7] = Spell_Data::Spell(Graphics::leafspell, Nature::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::fire][8] = Spell_Data::Spell(Graphics::swirlingsmoke, Air::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::fire][9] = Spell_Data::Spell(Graphics::fire_1b_40, Fire::Fire);
-    spellbook.Skill_Trees[Spell_Data::fire][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::fire][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::fire][10] = Spell_Data::Spell(Graphics::warp_effect, Arcane::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][11] = Spell_Data::Spell(Graphics::death1, Summon_Demon::Cast);
   }
 
   //    run once the camera is attached to a unit

@@ -362,6 +362,10 @@ namespace Component {
     float x = 0.0f;
     float y = 0.0f;
     const char *name = "fireball";
+    const char *effect = "teleport";
+    const char *hit = "explosion";
+    bool linear = true;
+    entt::entity target_ID;
   };
 
   struct Cast {
@@ -370,6 +374,10 @@ namespace Component {
   };
 
   struct Spell {
+    const char *hit;
+  };
+
+  struct Particle {
   };
 
   struct Caster {

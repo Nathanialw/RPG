@@ -79,6 +79,10 @@ namespace Graphics {
   SDL_Texture *swirlingsmoke;
   SDL_Texture *icebolt;
   SDL_Texture *fire_1b_40;
+  SDL_Texture *warp_effect;
+  SDL_Texture *barrier000;
+  SDL_Texture *BBLBubbleEllipseYellow;
+  SDL_Texture *magic_flame;
 
 
   SDL_Texture *itsmars_Inventory;
@@ -160,8 +164,8 @@ namespace Graphics {
   }
 
   void Create_Font() {
-    FC_LoadFont(fcFont, Graphics::renderer, "assets/fonts/EagleLake-Regular.ttf", 20, FC_MakeColor(0, 0, 0, 255), TTF_STYLE_NORMAL);
-    font = TTF_OpenFont("assets/fonts/EagleLake-Regular.ttf", 30);
+    FC_LoadFont(fcFont, Graphics::renderer, "assets/fonts/dum1/dum1.ttf", 20, FC_MakeColor(0, 0, 0, 255), TTF_STYLE_NORMAL);
+    font = TTF_OpenFont("assets/fonts/dum1/dum1.ttf", 30);
   }
 
   SDL_Texture *createTexture(const char *filepath) {
@@ -298,6 +302,10 @@ namespace Graphics {
     swirlingsmoke = createTexture("assets/sprites/spells/air/swirlingsmoke/0000.png");
     icebolt = createTexture("assets/sprites/UI/icons/spell_icons/ice/Fantasy Game Skills Icon 1 - Magic - Ice Lance level 1.jpg");
     fire_1b_40 = createTexture("assets/sprites/spells/fire/fire/fire_1b_40_1.png");
+    warp_effect = createTexture("assets/sprites/spells/arcane/warp_effect-sheet-4.png");
+    barrier000 = createTexture("assets/sprites/spells/arcane/warp_effect-sheet-4.png");
+    BBLBubbleEllipseYellow = createTexture("assets/sprites/spells/holy/BBLBubbleEllipseYellow.png");
+    magic_flame = createTexture("assets/sprites/spells/holy/BBLBubbleEllipseYellow.png");
 
     charCreateBackground = createTexture("assets/sprites/UI/backgrounds/Background_47.png");
 

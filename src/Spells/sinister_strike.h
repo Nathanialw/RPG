@@ -49,4 +49,6 @@ namespace Sinister_Strike {
     }
     return false;
   }
+
+
 }// namespace Sinister_Strike

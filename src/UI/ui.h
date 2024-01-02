@@ -3,7 +3,6 @@
 #include "components.h"
 #include "entt/entt.hpp"
 #include "item_components.h"
-#include "ui_actionbar.h"
 #include "world.h"
 
 namespace UI {
@@ -465,25 +464,7 @@ namespace UI {
     }
   }
 
-  void Render_UI(entt::registry &zone, int &state, SDL_Renderer *renderer, Component::Camera &camera) {
-    auto view = zone.view<Component::Input>();
-    for (auto player_ID: view) {
 
-      Action_Bar::Render_Action_Bar(zone, state, camera);
-
-      if (bToggleCharacterUI) {
-        //render UI
-        Character_UI = Camera_Control::Convert_FRect_To_Scale(defaultScreenPosition, camera);
-        Graphics::Render_FRect(Graphics::itsmars_Inventory, {255, 255, 255}, &charui, &Character_UI);
-        //reder equipment slots
-        Equipment_UI::Update_Equipment_Position(camera);
-        Equipment_UI::Render_Equipment_Slot(zone, state, renderer, camera, player_ID);
-        //render Items in bag
-        Bag_UI::screenBag = Camera_Control::Convert_FRect_To_Scale(Bag_UI::bagRect, camera);
-        Bag_UI::Render_Bag_Slot(zone, player_ID, state, renderer, camera);
-      }
-    }
-  }
 
   //run at game start to init bag vector
   //	void Init_UI(entt::registry& zone) {

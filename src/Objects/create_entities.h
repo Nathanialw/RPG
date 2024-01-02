@@ -7,7 +7,6 @@
 #include "collision.h"
 #include "components.h"
 #include "graphics.h"
-#include "item_components.h"
 #include "load_zone.h"
 #include "procedural_generator.h"
 #include "quad_tree.h"
@@ -15,14 +14,11 @@
 #include "settings.h"
 #include "social_control.h"
 #include "texture_packer.h"
-#include "ui_actionbar.h"
-#include "ui_spellbook.h"
 #include "utilities.h"
 #include <stddef.h>
 #include "entity_data.h"
 
 namespace Create_Entities {
-
 
   void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
     if (entity_class == "polygon") {
@@ -245,7 +241,7 @@ namespace Create_Entities {
   Procedural_Components::Seed seed;
   bool startup = true;
 
-  void Create_Entity(entt::registry &zone, int &state, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player) {
+  void Create_Entity(entt::registry &zone, int &state, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player, Social_Component::Summon summon) {
     auto entity = zone.create();
     Entity_Loader::Data data;
     int unit_ID = 0;
@@ -340,8 +336,6 @@ namespace Create_Entities {
     //dynamic entities
     if (data.body_type == 1) {
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::S);
-      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
-
       bool yes = true;
       Collision::Create_Dynamic_Body(zone, state, entity, position.x, position.y, radius.fRadius, data.mass, yes);
       zone.emplace_or_replace<Collision_Component::Dynamic_Collider>(entity);
@@ -359,11 +353,19 @@ namespace Create_Entities {
 
       if (!player) {
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
-        auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
-        auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
-        for (int i = 0; i < raceData.size(); i++) {
-          relationships.races[i] = raceData[i + 1];
+        if (summon.summon) {
+          auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
+          zone.emplace_or_replace<Social_Component::Race>(entity, summon.race);
+          relationships.races = summon.relationships.races;
+        } else {
+          zone.emplace_or_replace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
+          auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
+          auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
+          for (int i = 0; i < raceData.size(); i++) {
+            relationships.races[i] = raceData[i + 1];
+          }
         }
+
         Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
         if (equip_type != Item_Component::Unit_Equip_Type::none) {
           Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
@@ -375,6 +377,7 @@ namespace Create_Entities {
       else if (startup) {
         startup = false;
         UI::Bag_UI::Create_Bag_UI(zone, entity, state);
+        zone.emplace_or_replace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
         auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
         auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
         for (int i = 0; i < raceData.size(); i++) {

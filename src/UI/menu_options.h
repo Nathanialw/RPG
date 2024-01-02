@@ -4,6 +4,7 @@
 #include "utilities.h"
 #include <map>
 #include "ui.h"
+#include "ui_elements.h"
 
 namespace Menu_Options {
 

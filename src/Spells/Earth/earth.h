@@ -2,7 +2,7 @@
 #include "spells.h"
 #include "mouse_control.h"
 
-namespace Ice {
+namespace Earth {
 
   int Cast(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
     Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
@@ -15,8 +15,8 @@ namespace Ice {
   }
 
   int Hit(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
-    //    Spells::Spell_Hit_Effect(zone, state, caster_ID, position, direction, spellname, targetX, targetY);
-    Spells::Create_Explosion(zone, position.x, position.y);
+    Spells::Spell_Hit_Effect(zone, state, caster_ID, position, direction, spellname, targetX, targetY);
+    //    Spells::Create_Explosion(zone, position.x, position.y);
     return 1;
   }
 
@@ -28,7 +28,7 @@ namespace Ice {
       float castTime = 500.0f;
       //send to generic create
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "icebolt", "", "");
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "earthspikes", "leafspell", "smoke_black_1_19");
       return 1;
     }
     return 0;

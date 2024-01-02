@@ -1,12 +1,12 @@
 #pragma once
 #include "character_options.h"
-#include "create_entities.h"
 #include "graphics.h"
 #include "items.h"
 #include "load_zone.h"
 #include "ui.h"
 #include <SDL2/SDL.h>
 #include <sstream>
+#include "create_entities.h"
 
 namespace Character_Stats {
 
@@ -322,14 +322,16 @@ namespace Character_Stats {
 
   void Init_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
-    Create_Entities::Create_Entity(zone, state, 11875, 4828, "unit", false, data, true);
+    Social_Component::Summon summon;
+    Create_Entities::Create_Entity(zone, state, 11575, 4828, "unit", false, data, true, summon);
     Equip_Units(zone, state, options);
     Init_Player_Stats(zone, state);
   }
 
   void Recreate_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
-    Create_Entities::Create_Entity(zone, state, 11875, 4828, "unit", false, data, true);
+    Social_Component::Summon summon;
+    Create_Entities::Create_Entity(zone, state, 11575, 4828, "unit", false, data, true, summon);
     Init_Player_Stats(zone, state);
   }
 
