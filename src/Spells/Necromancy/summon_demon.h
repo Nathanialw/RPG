@@ -3,7 +3,7 @@
 #include "entt/entt.hpp"
 #include "spells.h"
 
-namespace Raise_Skeleton {
+namespace Summon_Demon {
 
   int Casting(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
     Component::Position targetPosition = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
@@ -12,11 +12,13 @@ namespace Raise_Skeleton {
   }
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
-    db::Unit_Data data = Game_Objects_Lists::units["skeletons"][0];
-    Component::Unit_Index unitIndex = {"skeletons", 0};
+    db::Unit_Data data = Game_Objects_Lists::units["demons"][0];
+    Component::Unit_Index unitIndex = {"demons", 0};
+
     Social_Component::Summon summon;
     summon.relationships = zone.get<Social_Component::Relationships>(caster_ID);
     summon.summon = true;
+    summon.blendType = Social_Component::normal;
     summon.race = zone.get<Social_Component::Race>(caster_ID);
     Component::Position targetPosition = {casting.x, casting.y};
     Create_Entities::Create_Entity(zone, state, casting.x, casting.y, "unit", false, data, false, summon, unitIndex);

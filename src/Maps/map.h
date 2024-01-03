@@ -208,7 +208,8 @@ namespace Maps {
           int n = Procedural_Generation::Random_Int(0, Game_Objects_Lists::units[unitType].size(), seed);
           db::Unit_Data data = Game_Objects_Lists::units[unitType][n];
           Social_Component::Summon summon;
-          Create_Entities::Create_Entity(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, "", false, data, false, summon);
+          Component::Unit_Index unitIndex = {unitType, n};
+          Create_Entities::Create_Entity(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, "", false, data, false, summon, unitIndex);
           numUnits++;
         }
       }

@@ -11,11 +11,9 @@ namespace Life {
     if (targetData.b) {
       Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
       casting.target_ID = targetData.entity_ID;
+      return 1;
     }
-    else {
-      return 0;
-    }
-    return 1;
+    return 0;
   }
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
@@ -31,7 +29,7 @@ namespace Life {
   }
 
   int Hit(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
-    //    Spells::Spell_Hit_Effect(zone, state, caster_ID, position, direction, spellname, targetX, targetY);
+    //        Spells::Spell_Hit_Effect(zone, state, caster_ID, position, direction, spellname, targetX, targetY);
     return 1;
   }
 

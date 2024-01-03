@@ -8,8 +8,8 @@
 #include "entity_data.h"
 #include "movement_components.h"
 #include "quad_tree.h"
-#include "texture_packer.h"
 #include "spell_components.h"
+#include "texture_packer.h"
 
 namespace Spells {
 
@@ -50,13 +50,14 @@ namespace Spells {
     return {1.0f, 1.0f};
   }
 
-  void Get_Spell_Texture(entt::registry &zone, entt::entity &entity, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, std::string &xml, std::string &image){
+  void Get_Spell_Texture(entt::registry &zone, entt::entity &entity, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, std::string &xml, std::string &image) {
     std::string name = (std::string) spellname;
 
     int unit_ID = Entity_Data::Check_For_Template_ID(name);
-//    SQLite_Spell_Data::Spell_Data spellData = SQLite_Spell_Data::Spell_Loader(name);
+    //    SQLite_Spell_Data::Spell_Data spellData = SQLite_Spell_Data::Spell_Loader(name);
     Graphics::Create_Game_Object(unit_ID, image.c_str());
     std::string sheetType = Entity_Loader::Get_Sprite_Sheet(name);
+    SDL_SetTextureBlendMode(Graphics::unitTextures[unit_ID], SDL_BlendMode::SDL_BLENDMODE_ADD);
 
     //for grid sprite
     if (sheetType == "packer_linear") {

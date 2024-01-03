@@ -57,7 +57,17 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
   }
   SDL_Texture *texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
   SDL_SetTextureAlphaMod(texture, renderable.alpha);
-  Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
+  if (sheetData.blendType == Rendering_Components::ghost) {
+    SDL_SetTextureBlendMode(texture, SDL_BlendMode::SDL_BLENDMODE_ADD);
+    Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
+    SDL_SetTextureBlendMode(texture, SDL_BlendMode::SDL_BLENDMODE_BLEND);
+  }
+  else if (sheetData.blendType == Rendering_Components::reanimated) {
+    Graphics::Render_FRect(texture, {155,55,55}, &clipRect, &renderRect);
+  }
+  else {
+    Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
+  }
 }
 
 void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state

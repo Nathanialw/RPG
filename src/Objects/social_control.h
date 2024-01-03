@@ -37,9 +37,16 @@ namespace Social_Component {
     std::array<int, (int)Race::SIZE>races;
   };
 
+  enum Summon_Type {
+    normal,
+    reanimated,
+    ghost
+  };
+
   struct Summon {
     Relationships relationships;
     Race race;
+    Summon_Type blendType = normal;
     bool summon = false;
   };
 

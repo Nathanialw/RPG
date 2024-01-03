@@ -130,6 +130,7 @@ namespace Load_Object_List {
     Game_Objects_Lists::tilesets["bloodSplatter"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "foreground");
 
     Game_Objects_Lists::units["wolves"] = Entity_Loader::Get_Unit_Subtypes("beast", "wolf");
+    Game_Objects_Lists::units["skeletons"] = Entity_Loader::Get_Unit_Subtypes("beast", "wolf");
     Game_Objects_Lists::units["demons"] = Entity_Loader::Get_Unit_Subtypes("demon", "Demon");
     Game_Objects_Lists::units["eldritch"] = Entity_Loader::Get_Unit_Subtypes("eldritch", "eldritch");
     Game_Objects_Lists::units["troll"] = Entity_Loader::Get_Unit_Subtypes("monster", "troll");

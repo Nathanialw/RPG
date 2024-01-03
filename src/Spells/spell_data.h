@@ -10,8 +10,12 @@ namespace Spell_Data {
   enum Skill_Tree {
     fire,
     cold,
+    arcane,
+    earth,
     warrior,
     archery,
+    lightning,
+    air,
     life,
     death,
     SIZE

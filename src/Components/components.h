@@ -44,6 +44,11 @@ namespace Component {
   struct Active {
   };
 
+  struct Unit_Index {
+    std::string type;
+    int index;
+  };
+
   struct Name {
     std::string first;
     std::string last;

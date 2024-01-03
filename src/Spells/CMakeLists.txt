@@ -12,6 +12,7 @@ target_sources(RPG
         lightning/lightningball.h
         Nature/leafspell.h
         spell_data.h
+        Necromancy/summon_demon.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

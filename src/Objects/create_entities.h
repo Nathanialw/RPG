@@ -230,6 +230,7 @@ namespace Create_Entities {
       }
       return entity;
     }
+    return entity;
   }
 
   void Set_Map_Texture(std::string &name, std::string imgpath) {
@@ -241,7 +242,7 @@ namespace Create_Entities {
   Procedural_Components::Seed seed;
   bool startup = true;
 
-  void Create_Entity(entt::registry &zone, int &state, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player, Social_Component::Summon summon) {
+  void Create_Entity(entt::registry &zone, int &state, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player, Social_Component::Summon summon, Component::Unit_Index &unitIndex) {
     auto entity = zone.create();
     Entity_Loader::Data data;
     int unit_ID = 0;
@@ -309,6 +310,7 @@ namespace Create_Entities {
     auto &radius = zone.emplace_or_replace<Component::Radius>(entity, (data.radius * data.scale));
     Emplace_Interaction_Rect(zone, entity, data, x, y);
 
+    zone.emplace_or_replace<Component::Unit_Index>(entity, unitIndex);
     zone.emplace_or_replace<Component::Mass>(entity, data.mass * data.scale);
     zone.emplace_or_replace<Component::Alive>(entity, true);
     zone.emplace_or_replace<Component::Unit>(entity);
@@ -354,10 +356,25 @@ namespace Create_Entities {
       if (!player) {
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
         if (summon.summon) {
-          auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
-          zone.emplace_or_replace<Social_Component::Race>(entity, summon.race);
-          relationships.races = summon.relationships.races;
-        } else {
+          if (summon.blendType == Social_Component::ghost) {
+            sprite.blendType = Rendering_Components::ghost;
+            auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
+            zone.emplace_or_replace<Social_Component::Race>(entity, summon.race);
+            relationships.races = summon.relationships.races;
+          } else if (summon.blendType == Social_Component::reanimated) {
+            sprite.blendType = Rendering_Components::reanimated;
+            auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
+            zone.emplace_or_replace<Social_Component::Race>(entity, summon.race);
+            relationships.races = summon.relationships.races;
+          }
+          else {
+            sprite.blendType = Rendering_Components::normal;
+            auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
+            zone.emplace_or_replace<Social_Component::Race>(entity, summon.race);
+            relationships.races = summon.relationships.races;
+          }
+        }
+        else {
           zone.emplace_or_replace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
           auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
           auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
@@ -365,6 +382,7 @@ namespace Create_Entities {
             relationships.races[i] = raceData[i + 1];
           }
         }
+
 
         Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
         if (equip_type != Item_Component::Unit_Equip_Type::none) {

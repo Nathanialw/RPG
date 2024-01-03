@@ -15,7 +15,7 @@
 #include "Air/smoke.h"
 #include "Arcane/arcane.h"
 #include "Life/heal_self.h"
-#include "Necromancy/raise_skeleton.h"
+#include "Necromancy/necromancy.h"
 
 namespace UI_Spellbook {
 
@@ -66,6 +66,19 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::cold][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::cold][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
+    spellbook.Skill_Trees[Spell_Data::earth][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::earth][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+
     spellbook.Skill_Trees[Spell_Data::death][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::death][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::death][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
@@ -105,19 +118,6 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::warrior][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::warrior][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
-    spellbook.Skill_Trees[Spell_Data::cold][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::cold][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-
     spellbook.Skill_Trees[Spell_Data::archery][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::archery][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::archery][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
@@ -139,7 +139,7 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::fire][5] = Spell_Data::Spell(Graphics::lightningball, LightningBall::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::fire][6] = Spell_Data::Spell(Graphics::lightningstrike, Lightning::Cast_Spell2);
     spellbook.Skill_Trees[Spell_Data::fire][7] = Spell_Data::Spell(Graphics::leafspell, Nature::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::fire][8] = Spell_Data::Spell(Graphics::swirlingsmoke, Air::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][8] = Spell_Data::Spell(Graphics::swirlingsmoke, Arrogate_Ghost::Cast);
     spellbook.Skill_Trees[Spell_Data::fire][9] = Spell_Data::Spell(Graphics::fire_1b_40, Fire::Fire);
     spellbook.Skill_Trees[Spell_Data::fire][10] = Spell_Data::Spell(Graphics::warp_effect, Arcane::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::fire][11] = Spell_Data::Spell(Graphics::death1, Summon_Demon::Cast);

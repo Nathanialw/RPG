@@ -29,7 +29,7 @@ namespace LightningBall {
       float castTime = 500.0f;
       //send to generic create
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "lightningball", "aura_test_1_32", "smoke_black_1_19");
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "lightningball", "electric_cast", "aura_test_1_32");
       return 1;
     }
     return 0;

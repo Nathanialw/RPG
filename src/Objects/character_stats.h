@@ -322,8 +322,10 @@ namespace Character_Stats {
 
   void Init_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
+    Component::Unit_Index unitIndex = {"demons", 0};
+
     Social_Component::Summon summon;
-    Create_Entities::Create_Entity(zone, state, 11575, 4828, "unit", false, data, true, summon);
+    Create_Entities::Create_Entity(zone, state, 11575, 4828, "unit", false, data, true, summon, unitIndex);
     Equip_Units(zone, state, options);
     Init_Player_Stats(zone, state);
   }
@@ -331,7 +333,9 @@ namespace Character_Stats {
   void Recreate_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
     db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
     Social_Component::Summon summon;
-    Create_Entities::Create_Entity(zone, state, 11575, 4828, "unit", false, data, true, summon);
+    Component::Unit_Index unitIndex = {"demons", 0};
+
+    Create_Entities::Create_Entity(zone, state, 11575, 4828, "unit", false, data, true, summon, unitIndex);
     Init_Player_Stats(zone, state);
   }
 

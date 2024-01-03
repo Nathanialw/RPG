@@ -105,14 +105,20 @@ namespace Rendering_Components {
     Equip_Slot_Data sheet[30];
   };
 
+  enum Blend_Type {
+    normal,
+    reanimated,
+    ghost
+  };
+
   ///component for the unit
   struct Sprite_Sheet_Info {
     std::string type = "default";
 
     //        a union can how different types of data in the same memory address
     //        union {
-    std::unordered_map<std::string, Sheet_Data_Flare> *flareSpritesheet;
-    std::unordered_map<std::string, Sheet_Data> *sheetData;
+    std::unordered_map<std::string, Sheet_Data_Flare> *flareSpritesheet = NULL;
+    std::unordered_map<std::string, Sheet_Data> *sheetData = NULL;
     //        };
 
     std::string sheet_name = "default";
@@ -124,5 +130,6 @@ namespace Rendering_Components {
     ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
     uint16_t frameIndex = 0;
     uint8_t reversing = 0;
+    Blend_Type blendType = normal;
   };
 }// namespace Rendering_Components
