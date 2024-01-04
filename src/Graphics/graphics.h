@@ -83,6 +83,8 @@ namespace Graphics {
   SDL_Texture *barrier000;
   SDL_Texture *BBLBubbleEllipseYellow;
   SDL_Texture *magic_flame;
+  SDL_Texture *Snowflake1;
+  SDL_Texture *Snowflake2;
 
 
   SDL_Texture *itsmars_Inventory;
@@ -302,10 +304,12 @@ namespace Graphics {
     swirlingsmoke = createTexture("assets/sprites/spells/air/swirlingsmoke/0000.png");
     icebolt = createTexture("assets/sprites/UI/icons/spell_icons/ice/Fantasy Game Skills Icon 1 - Magic - Ice Lance level 1.jpg");
     fire_1b_40 = createTexture("assets/sprites/spells/fire/fire/fire_1b_40_1.png");
-    warp_effect = createTexture("assets/sprites/spells/arcane/warp_effect-sheet-4.png");
+    warp_effect = createTexture("assets/sprites/spells/arcane/warp_effect-sheet/warp_effect-sheet-3.png");
     barrier000 = createTexture("assets/sprites/spells/arcane/warp_effect-sheet-4.png");
     BBLBubbleEllipseYellow = createTexture("assets/sprites/spells/holy/BBLBubbleEllipseYellow.png");
     magic_flame = createTexture("assets/sprites/spells/holy/BBLBubbleEllipseYellow.png");
+    Snowflake1 = createTexture("assets/sprites/spells/frost/hjm_frost_bolt/frames/hjm_frost_bolt01.png");
+    Snowflake2 = createTexture("assets/sprites/spells/frost/hjm-snow_flake/frames/hjm-snow_flake_003.png");
 
     charCreateBackground = createTexture("assets/sprites/UI/backgrounds/Background_47.png");
 

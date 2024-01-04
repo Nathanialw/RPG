@@ -117,6 +117,7 @@ namespace Hotbar {
 
   int Jump(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     Action_Component::Set_State(action, Action_Component::jump);
+
     return 0;
   }
 
@@ -125,6 +126,14 @@ namespace Hotbar {
     return 0;
   }
 
+  int Next_Page(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+    UI_Spellbook::Next_Page();
+    return 0;
+  }
+  int Previous_Page(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+    UI_Spellbook::Previous_Page();
+    return 0;
+  }
   int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     return 0;
   }
@@ -151,7 +160,9 @@ namespace Hotbar {
         {SDLK_o, Surface},
         {SDLK_LALT, Show_Items},
         {SDLK_RALT, Show_Items},
-        {SDLK_SPACE, Jump}};
+        {SDLK_SPACE, Jump},
+        {SDLK_PERIOD, Next_Page},
+        {SDLK_COMMA, Previous_Page}};
   }
 
   std::map<SDL_Keycode, Spells::castSpell> keyupKeybinds = {

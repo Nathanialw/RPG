@@ -124,9 +124,13 @@ namespace Event_Handler {
           } else if (Mouse_Struct::mouseData.type == Component::Icon_Type::none && !Mouse::itemCurrentlyHeld) {
             Action_Bar::Get_Mouse_Spell_From_Actionbar(zone, state, camera);
           }
+          return;
         } else if (UI_Spellbook::Check_Spellbook(camera)) {
           Action_Bar::Clear_Spell_On_Mouse(zone);
-          UI_Spellbook::Get_Spell(zone, camera, Mouse::itemCurrentlyHeld);
+          if (!UI_Spellbook::Get_Spell(zone, camera, Mouse::itemCurrentlyHeld)) {
+            //check for button on spellbook
+          }
+          return;
         }
         //        items
         else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
@@ -175,7 +179,14 @@ namespace Event_Handler {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
         if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
 
-        } else {
+        }
+        else if (UI_Spellbook::Check_Spellbook(camera)){
+
+        }
+        else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
+
+        }
+        else {
           User_Mouse_Input::Select_Units(zone, player_ID);
         }
       }

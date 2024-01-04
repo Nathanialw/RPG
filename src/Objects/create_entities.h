@@ -350,7 +350,7 @@ namespace Create_Entities {
 
       zone.emplace_or_replace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::idle);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::attack2);
       auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
 
       if (!player) {

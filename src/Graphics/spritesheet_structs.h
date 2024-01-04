@@ -146,7 +146,7 @@ namespace Spritesheet_Structs {
 
 
       if (frameCopy.substr(0, keyCheck.size()) != keyCheck) {
-//        std::cout << "xml file name foes not match texture atlas sprite name - NAME: " << templateName << " FRAME: " << frame << std::endl;
+        //        std::cout << "xml file name foes not match texture atlas sprite name - NAME: " << templateName << " FRAME: " << frame << std::endl;
         //            should assign a dummy value to prevent a crash and to make it an obvious bug
         return false;
       }
@@ -311,6 +311,9 @@ namespace Spritesheet_Structs {
         } else if (checkAction == "Attack 1") {
           action = Action_Component::Action_State::attack;
           actionFrameData[action].frameSpeed = i;
+        } else if (checkAction == "Attack 2") {
+          action = Action_Component::Action_State::attack2;
+          actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "attack") {
           action = Action_Component::Action_State::attack;
           actionFrameData[action].frameSpeed = i;
@@ -336,14 +339,14 @@ namespace Spritesheet_Structs {
           action = Action_Component::Action_State::walk;
           actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "behavior") {
-          action = Action_Component::Action_State::struck;
+          action = Action_Component::Action_State::behavior;
+          actionFrameData[action].frameSpeed = i;
+        } else if (checkAction == "Behavior") {
+          action = Action_Component::Action_State::behavior;
           actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "behavior1") {
           action = Action_Component::Action_State::behavior;
           actionFrameData[action].frameSpeed = i;
-          //            } else if (checkAction == "Walking") {
-          //                action = Action_Component::Action_State::walk;
-          //                actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "Run") {
           action = Action_Component::Action_State::walk;
           actionFrameData[action].frameSpeed = i;
