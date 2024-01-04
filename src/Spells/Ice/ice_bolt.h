@@ -28,7 +28,7 @@ namespace Ice_Bolt {
       float castTime = 500.0f;
       //send to generic create
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "icebolt", "", "blue_burst");
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "icebolt", "19_StarOut01DkBlue", "15_FlashBurst02DkBlue");
       return 1;
     }
     return 0;

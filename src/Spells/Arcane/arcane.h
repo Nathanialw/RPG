@@ -9,7 +9,7 @@ namespace Arcane {
     return 1;
   }
 
-  int Teleport (entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
+  int Create (entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
     auto &body = zone.get<Component::Body>(caster_ID);
     b2Vec2 p = {targetX, targetY};
     body.body->SetTransform(p, 0);
@@ -18,8 +18,8 @@ namespace Arcane {
     return 1;
   }
 
-  int Teleport_Cast (entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
-    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
+  int Hit (entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
+//    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
     return 1;
   }
 
@@ -29,7 +29,7 @@ namespace Arcane {
 
       //read animation in from db?
       Action_Component::Set_State(action, Action_Component::casting);
-      zone.emplace_or_replace<Spells::Cast_Effect>(entity, Teleport_Cast, Teleport);
+      zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create);
       zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "teleport", "", false);
     }
     return 0;

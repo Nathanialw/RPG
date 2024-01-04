@@ -194,8 +194,12 @@ namespace Texture_Packer {
       frame.clip.h = pSpriteElement->IntAttribute("h");
       frame.x_offset = pSpriteElement->IntAttribute("oX");
       frame.y_offset = pSpriteElement->IntAttribute("oY");
-      spritesheet.frameW = pSpriteElement->IntAttribute("oW");
-      spritesheet.frameH = pSpriteElement->IntAttribute("oH");
+      if (spritesheet.frameW == 0) {
+        spritesheet.frameW = pSpriteElement->IntAttribute("oW");
+      }
+      if (spritesheet.frameH == 0) {
+        spritesheet.frameH = pSpriteElement->IntAttribute("oH");
+      }
       spritesheet.frameList.emplace_back(frame);
       frameIndex++;
       ///this grabs the next line

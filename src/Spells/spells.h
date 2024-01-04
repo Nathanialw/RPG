@@ -69,7 +69,7 @@ namespace Spells {
       sprite.sheet_name = name;
       sprite.type = sheetType;
 
-      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, (sprite.sheetData->at(name).frameW / 2.0f), (sprite.sheetData->at(name).frameH / 2.0f));
+//      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, (sprite.sheetData->at(name).frameW / 2.0f), (sprite.sheetData->at(name).frameH / 1.25f));
     }
     //for packer sprites
     else {
@@ -96,6 +96,9 @@ namespace Spells {
     float scale = 1.0f;
     Entity_Loader::Data data = Entity_Loader::parse_data(spellname);
 
+    if (!zone.any_of<Rendering_Components::Sprite_Offset>(entity)) {
+      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, data.x_offset, data.y_offset);
+    }
     zone.emplace_or_replace<Component::Scale>(entity, scale);
     zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::walk);
     ///spell data
@@ -162,7 +165,7 @@ namespace Spells {
     Get_Spell_Texture(zone, entity, state, caster_ID, position, direction, spellname, spellData.hit_xml_path, spellData.hit_image_path);
     Create_Spell_object(zone, entity, state, caster_ID, position, direction, spellname);
 
-    zone.emplace_or_replace<Component::Position>(entity, position.x, position.y);
+    zone.emplace_or_replace<Component::Position>(entity, position.x, (position.y + 0.1f));
     zone.emplace_or_replace<Component::Particle>(entity);
     zone.emplace_or_replace<Component::In_Object_Tree>(entity);
   }

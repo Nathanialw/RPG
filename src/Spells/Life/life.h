@@ -38,7 +38,7 @@ namespace Life {
     float castTime = 500.0f;
 
     zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "wings", "BBLBubbleEllipseYellow");
+    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "wings", "30_InDispersal4Step3");
     return 0;
   }
 }// namespace Life
