@@ -55,8 +55,8 @@ namespace UI_Spellbook {
 
   void Build_Spellbook() {
     spellbook.Skill_Trees[Spell_Data::fire][0] = Spell_Data::Spell(Graphics::fireball_icon, Fire_Bolt::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::fire][1] = Spell_Data::Spell(Graphics::death3, Fire_Ball::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::fire][2] = Spell_Data::Spell(Graphics::death4, Dragon_Breath::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][1] = Spell_Data::Spell(Graphics::firebolt, Fire_Ball::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::fire][2] = Spell_Data::Spell(Graphics::rainofFire, Dragon_Breath::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::fire][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::fire][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::fire][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
@@ -134,7 +134,7 @@ namespace UI_Spellbook {
 
     spellbook.Skill_Trees[Spell_Data::lightning][0] = Spell_Data::Spell(Graphics::chargedbolt, Lightning::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::lightning][1] = Spell_Data::Spell(Graphics::lightningball, LightningBall::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::lightning][2] = Spell_Data::Spell(Graphics::lightningstrike, Lightning::Cast_Spell2);
+    spellbook.Skill_Trees[Spell_Data::lightning][2] = Spell_Data::Spell(Graphics::thunderstorm, Lightning::Cast_Spell2);
     spellbook.Skill_Trees[Spell_Data::lightning][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::lightning][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::lightning][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
@@ -160,7 +160,7 @@ namespace UI_Spellbook {
 
     spellbook.Skill_Trees[Spell_Data::life][0] = Spell_Data::Spell(Graphics::healself, Heal_Self::Heal_Self);
     spellbook.Skill_Trees[Spell_Data::life][1] = Spell_Data::Spell(Graphics::healother, Life::Heal_Other);
-    spellbook.Skill_Trees[Spell_Data::life][2] = Spell_Data::Spell(Graphics::leafspell, Nature::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::life][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::life][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::life][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::life][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
@@ -171,11 +171,11 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::life][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::life][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
-    spellbook.Skill_Trees[Spell_Data::death][0] = Spell_Data::Spell(Graphics::swirlingsmoke, Arrogate_Ghost::Cast);
-    spellbook.Skill_Trees[Spell_Data::death][1] = Spell_Data::Spell(Graphics::death1, Summon_Demon::Cast);
-    spellbook.Skill_Trees[Spell_Data::death][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::death][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
-    spellbook.Skill_Trees[Spell_Data::death][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][0] = Spell_Data::Spell(Graphics::summonGhost, Arrogate_Ghost::Cast);
+    spellbook.Skill_Trees[Spell_Data::death][1] = Spell_Data::Spell(Graphics::summonDemon, Summon_Demon::Cast);
+    spellbook.Skill_Trees[Spell_Data::death][2] = Spell_Data::Spell(Graphics::raiseSkeleton, Raise_Skeleton::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::death][3] = Spell_Data::Spell(Graphics::reanimate, Reanimate::Cast);
+    spellbook.Skill_Trees[Spell_Data::death][4] = Spell_Data::Spell(Graphics::raiseZombie, Raise_Zombie::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::death][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::death][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::death][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);

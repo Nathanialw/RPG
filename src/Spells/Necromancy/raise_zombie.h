@@ -3,7 +3,7 @@
 #include "entt/entt.hpp"
 #include "spells.h"
 
-namespace Raise_Skeleton {
+namespace Raise_Zombie {
 
   int Cast(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
     Component::Position targetPosition = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
@@ -12,8 +12,8 @@ namespace Raise_Skeleton {
   }
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
-    db::Unit_Data data = Game_Objects_Lists::units["skeletons"][0];
-    Component::Unit_Index unitIndex = {"skeletons", 0};
+    db::Unit_Data data = Game_Objects_Lists::units["zombies"][0];
+    Component::Unit_Index unitIndex = {"zombies", 0};
     Social_Component::Summon summon;
     summon.relationships = zone.get<Social_Component::Relationships>(caster_ID);
     summon.summon = true;
@@ -36,4 +36,4 @@ namespace Raise_Skeleton {
     zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "Effects02", "");
     return 1;
   }
-}// namespace Summon_Demon
+}// namespace Summon_Demon//

@@ -1,15 +1,15 @@
 #pragma once
 
-#include "entt/entt.hpp"
-#include <SDL2/SDL_render.h>
-#include <iostream>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL_ttf.h>
-#include "components.h"
 #include "SDL_FontCache/SDL_FontCache.h"
+#include "components.h"
+#include "entt/entt.hpp"
 #include "rendering_components.h"
 #include "world.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_render.h>
+#include <SDL2/SDL_ttf.h>
+#include <iostream>
 
 namespace Graphics_Component {
 
@@ -86,6 +86,21 @@ namespace Graphics {
   SDL_Texture *Snowflake1;
   SDL_Texture *Snowflake2;
 
+  SDL_Texture *bow;
+  SDL_Texture *arrowsFlying;
+  SDL_Texture *redArrow;
+  SDL_Texture *blueArrow;
+  SDL_Texture *greenArrow;
+
+  SDL_Texture *rainofFire;
+  SDL_Texture *firebolt;
+  SDL_Texture *thunderstorm;
+  SDL_Texture *blizzard;
+  SDL_Texture *summonGhost;
+  SDL_Texture *summonDemon;
+  SDL_Texture *reanimate;
+  SDL_Texture *raiseZombie;
+  SDL_Texture *raiseSkeleton;
 
   SDL_Texture *itsmars_Inventory;
   SDL_Texture *cursor_0;
@@ -129,14 +144,14 @@ namespace Graphics {
   }
 
   Surface_Data Load_Text_Texture(std::string text, SDL_Color fontColor) {
-    SDL_Surface *surface = TTF_RenderText_Blended(font, text.c_str(), fontColor);   //convert font to Surface
-    SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);            //convert Surface to texture
+    SDL_Surface *surface = TTF_RenderText_Blended(font, text.c_str(), fontColor);//convert font to Surface
+    SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);      //convert Surface to texture
 
     SDL_Rect k = surface->clip_rect;
 
     Surface_Data text_data = {texture, k};
-    SDL_FreeSurface(surface);                                                        //free surface memory
-    return text_data;                                                                //return SDL_Texture *texture
+    SDL_FreeSurface(surface);//free surface memory
+    return text_data;        //return SDL_Texture *texture
   };
 
   Text_Box_Data Create_Text_Background(Component::Camera &camera, SDL_Color textColor, std::string &text, Component::Position &position) {
@@ -160,8 +175,7 @@ namespace Graphics {
         {
             textBoxBackground,
             textBox,
-            itemTextBox
-        };
+            itemTextBox};
     return textBoxData;
   }
 
@@ -189,7 +203,7 @@ namespace Graphics {
   }
 
   //both unitID and filepath are stored in tiled map object
-  SDL_Texture* Load_Texture(int &unitID,  std::array<SDL_Texture *, numberOfTextures> &textures, const char *filepath) {
+  SDL_Texture *Load_Texture(int &unitID, std::array<SDL_Texture *, numberOfTextures> &textures, const char *filepath) {
     textures[unitID] = createTexture(filepath);
     if (textures[unitID] == NULL) {
       unitTextures[unitID] = Graphics::default_icon;
@@ -198,8 +212,8 @@ namespace Graphics {
   }
 
   //when creating the game objet
-  SDL_Texture* Create_Game_Object(int &unitID, const char *filepath) {
-    SDL_Texture* texture;
+  SDL_Texture *Create_Game_Object(int &unitID, const char *filepath) {
+    SDL_Texture *texture;
     if (unitTextures[unitID] == NULL) {
       Load_Texture(unitID, unitTextures, filepath);
       texture = unitTextures[unitID];
@@ -221,12 +235,12 @@ namespace Graphics {
     //to render it jsut needs access to the texture array and the unitID
   }
 
-  SDL_Texture* Load_Portrait(int &unitID, const char *filepath) {
-    SDL_Texture* texture;
+  SDL_Texture *Load_Portrait(int &unitID, const char *filepath) {
+    SDL_Texture *texture;
     if (unitPortaits[unitID] == NULL) {
       texture = Load_Texture(unitID, unitPortaits, filepath);
       if (texture == NULL) {
-//        std::cout << "Load_Portrait() failed to load  texture from file: " << filepath << std::endl;
+        //        std::cout << "Load_Portrait() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
         texture = unitPortaits[unitID];
@@ -243,12 +257,12 @@ namespace Graphics {
     //to render it jsut needs access to the texture array and the unitID
   }
 
-  SDL_Texture* Load_Body(int &unitID, const char *filepath) {
-    SDL_Texture* texture;
+  SDL_Texture *Load_Body(int &unitID, const char *filepath) {
+    SDL_Texture *texture;
     if (unitBodies[unitID] == NULL) {
       texture = Load_Texture(unitID, unitBodies, filepath);
       if (texture == NULL) {
-//        std::cout << "Load_Body() failed to load  texture from file: " << filepath << std::endl;
+        //        std::cout << "Load_Body() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
         texture = unitBodies[unitID];
@@ -294,7 +308,7 @@ namespace Graphics {
     death7 = createTexture("assets/sprites/UI/icons/Dark Magic/07.png");
     death8 = createTexture("assets/sprites/UI/icons/Dark Magic/08.png");
 
-    sinisterstrike = createTexture("assets/sprites/items/icon_sword_long4.png");
+    sinisterstrike = createTexture("assets/sprites/UI/icons/misc_icons/old Ancient Beast icons/blood hack.jpg");
     healself = createTexture("assets/sprites/UI/icons/spells/leaf-jade-2.png");
     healother = createTexture("assets/sprites/UI/icons/spells/leaf-orange-2.png");
     lightningstrike = createTexture("assets/sprites/spells/lightning/fx1_blue_topEffect/spell_bluetop_1_1.png");
@@ -311,17 +325,33 @@ namespace Graphics {
     Snowflake1 = createTexture("assets/sprites/spells/frost/hjm_frost_bolt/frames/hjm_frost_bolt01.png");
     Snowflake2 = createTexture("assets/sprites/spells/frost/hjm-snow_flake/frames/hjm-snow_flake_003.png");
 
+    bow = createTexture("assets/sprites/UI/icons/misc_icons/Icons/10.png");
+    arrowsFlying = createTexture("assets/sprites/UI/icons/misc_icons/Icons/85.png");
+    redArrow = createTexture("assets/sprites/UI/icons/misc_icons/Icons/95.png");
+    blueArrow = createTexture("assets/sprites/UI/icons/misc_icons/Icons/96.png");
+    greenArrow = createTexture("assets/sprites/UI/icons/misc_icons/Icons/97.png");
+
+    rainofFire = createTexture("assets/sprites/UI/icons/misc_icons/modif/firestream.png");
+    thunderstorm = createTexture("assets/sprites/UI/icons/misc_icons/attack_icons/thunder-1.png");
+    blizzard = createTexture("assets/sprites/UI/icons/misc_icons/attack_icons/blizzard-3.png");
+    summonGhost = createTexture("assets/sprites/UI/icons/misc_icons/painterly-spell-icons-4/wind-grasp-eerie-3.png");
+    summonDemon = createTexture("assets/sprites/UI/icons/misc_icons/painterly-spell-icons-3/horror-red-3.png");
+    reanimate = createTexture("assets/sprites/UI/icons/misc_icons/painterly-spell-icons-3/horror-red-1.png");
+    raiseZombie = createTexture("assets/sprites/UI/icons/misc_icons/old Ancient Beast icons/monster.png");
+    raiseSkeleton = createTexture("assets/sprites/UI/icons/Dark Magic/08.png");
+    firebolt = createTexture("assets/sprites/UI/icons/spell_icons/fire/Fantasy Game Skills Icon 1 - Magic - Fire Ball level 3.jpg");
+
     charCreateBackground = createTexture("assets/sprites/UI/backgrounds/Background_47.png");
 
     weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
     itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");
     cursor_0 = createTexture("assets/sprites/UI/cursors/cursor.png");
-//    cursor_1 = createTexture("assets/sprites/UI/cursors/cursor_outline_blue.png");
-//    cursor_1 = createTexture("assets/sprites/UI/cursors/cursor_outline_red.png");
+    //    cursor_1 = createTexture("assets/sprites/UI/cursors/cursor_outline_blue.png");
+    //    cursor_1 = createTexture("assets/sprites/UI/cursors/cursor_outline_red.png");
     cursor_1 = createTexture("assets/sprites/UI/cursors/cursor_shiny.png");
     selector32 = createTexture("assets/sprites/UI/selector/selector32.png");
 
-    emptyBagIcon = createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png"); // currently NULL
+    emptyBagIcon = createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png");// currently NULL
     bagSlotBorder = createTexture("assets/sprites/UI/icon_borders/frame-0-grey.png");
 
     itemBorderCommon = createTexture("assets/sprites/UI/icon_borders/frame-0-grey.png");
@@ -349,4 +379,4 @@ namespace Graphics {
     SDL_DestroyWindow(window);
     SDL_Quit();
   }
-}
+}// namespace Graphics
