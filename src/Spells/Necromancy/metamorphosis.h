@@ -3,27 +3,21 @@
 #include "entt/entt.hpp"
 #include "spells.h"
 
-namespace Raise_Zombie {
+namespace Metamorphosis {
 
   int Cast(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
-    Component::Position targetPosition = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
-    Spells::Spell_Cast_Effect(zone, state, caster_ID, targetPosition, direction, casting.effect, targetX, targetY);
+    if (zone.any_of<Rendering_Components::Metamorphosis>(caster_ID)) {
+      return 0;
+    }
+    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
     return 1;
   }
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
-    db::Unit_Data data = Game_Objects_Lists::units["zombies"][0];
-    Component::Unit_Index unitIndex = {"zombies", 0};
-
-    Social_Component::Summon summon;
-    summon.relationships = zone.get<Social_Component::Relationships>(caster_ID);
-    summon.summon = true;
-    summon.race = zone.get<Social_Component::Race>(caster_ID);
-    Component::Position targetPosition = {casting.x, casting.y};
-    Create_Entities::Create_Entity(zone, state, casting.x, casting.y, "unit", false, data, false, summon, unitIndex);
-
-    zone.emplace_or_replace<Component::Destroyed>(casting.target_ID);
-    zone.emplace_or_replace<Component::Remove_From_Object_Tree>(casting.target_ID);
+    auto &metamorphosis = zone.emplace_or_replace<Rendering_Components::Metamorphosis>(caster_ID);
+    metamorphosis.duration = 10000;
+    metamorphosis.unit = {"demons", 0};
+    metamorphosis.spellEffect = "Effects02";
     return 1;
   }
 
@@ -40,4 +34,4 @@ namespace Raise_Zombie {
     zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "Effects02", "");
     return 1;
   }
-}// namespace Summon_Demon//
+}// namespace Metamorphosis

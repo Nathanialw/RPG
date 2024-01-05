@@ -14,12 +14,16 @@ namespace Raise_Skeleton {
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
     db::Unit_Data data = Game_Objects_Lists::units["skeletons"][0];
     Component::Unit_Index unitIndex = {"skeletons", 0};
+
     Social_Component::Summon summon;
     summon.relationships = zone.get<Social_Component::Relationships>(caster_ID);
     summon.summon = true;
     summon.race = zone.get<Social_Component::Race>(caster_ID);
     Component::Position targetPosition = {casting.x, casting.y};
     Create_Entities::Create_Entity(zone, state, casting.x, casting.y, "unit", false, data, false, summon, unitIndex);
+
+    zone.emplace_or_replace<Component::Destroyed>(casting.target_ID);
+    zone.emplace_or_replace<Component::Remove_From_Object_Tree>(casting.target_ID);
     return 1;
   }
 

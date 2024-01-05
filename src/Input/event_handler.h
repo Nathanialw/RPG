@@ -160,6 +160,13 @@ namespace Event_Handler {
             }
           }
         }
+        else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
+          //activate autocast on spell
+          return;
+        } else if (UI_Spellbook::Check_Spellbook(camera)) {
+          return;
+        }
+
         if (!Mouse::itemCurrentlyHeld) {
           if (Mouse_Struct::mouseData.type != Component::Icon_Type::spell) {
             if (Input_Control::Check_For_Mouse_Target(zone, state, Items::showGroundItems, player_ID, playerPosition)) {

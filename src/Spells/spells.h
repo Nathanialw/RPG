@@ -307,13 +307,6 @@ namespace Spells {
   }
 
 
-  void Update_Spells(entt::registry &zone, int &state) {
-    Destroy_Particle_Spells(zone);
-    Destroy_NonMoving_Spells(zone, state);
-    Clear_Collided_Spells(zone, state);
-    Cast_Spell(zone, state);
-    Casting_Updater(zone);
-  }
 
 
 }// namespace Spells

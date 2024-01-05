@@ -31,6 +31,9 @@ namespace Reanimate {
     summon.race = zone.get<Social_Component::Race>(caster_ID);
     Component::Position targetPosition = {casting.x, casting.y};
     Create_Entities::Create_Entity(zone, state, casting.x, casting.y, "unit", false, data, false, summon, unitIndex);
+
+    zone.emplace_or_replace<Component::Destroyed>(casting.target_ID);
+    zone.emplace_or_replace<Component::Remove_From_Object_Tree>(casting.target_ID);
     return 1;
   }
 

@@ -176,7 +176,7 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::death][2] = Spell_Data::Spell(Graphics::raiseSkeleton, Raise_Skeleton::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::death][3] = Spell_Data::Spell(Graphics::reanimate, Reanimate::Cast);
     spellbook.Skill_Trees[Spell_Data::death][4] = Spell_Data::Spell(Graphics::raiseZombie, Raise_Zombie::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::death][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::death][5] = Spell_Data::Spell(Graphics::death2, Metamorphosis::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::death][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::death][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::death][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);

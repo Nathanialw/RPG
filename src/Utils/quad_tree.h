@@ -116,11 +116,11 @@ namespace Quad_Tree {
     zone.compact<>();
   }
 
-  void Remove_From_Tree(entt::registry &zone, int &state) {
-    auto view = zone.view<Component::In_Object_Tree, Component::Remove_From_Object_Tree>();
+  void Remove_From_Tree_Destroy(entt::registry &zone, int &state) {
+    auto view = zone.view<Component::In_Object_Tree, Component::Remove_From_Object_Tree, Component::Interaction_Rect>();
     for (auto &entity: view) {
 
-      auto &rect = zone.get<Component::Interaction_Rect>(entity).rect;
+      auto &rect = view.get<Component::Interaction_Rect>(entity).rect;
       for (auto &object: quadTrees[state].search(rect)) {
         if (object->item.entity_ID == entity) {
           quadTrees[state].remove(object);
@@ -134,6 +134,26 @@ namespace Quad_Tree {
       }
       zone.destroy(entity);
       //remove from registry
+    }
+    zone.compact<>();
+  }
+
+  void Remove_From_Tree(entt::registry &zone, int &state) {
+    auto view = zone.view<Component::In_Object_Tree, Component::Remove_From_Object_Tree>();
+    for (auto &entity: view) {
+
+      auto &rect = view.get<Component::Remove_From_Object_Tree>(entity).rect;
+      for (auto &object: quadTrees[state].search(rect)) {
+        if (object->item.entity_ID == entity) {
+          quadTrees[state].remove(object);
+        }
+      }
+      //remove from collision
+      if (zone.any_of<Component::Body>(entity)) {
+        auto &body = zone.get<Component::Body>(entity).body;
+        Collision::collisionList[state]->DestroyBody(body);
+        zone.remove<Component::Body>(entity);
+      }
     }
     zone.compact<>();
   }
@@ -258,6 +278,7 @@ namespace Quad_Tree {
     Update_Quad_Tree_Positions(zone, state);
     Draw_Tree_Object_Rects(zone, state);
     Remove_Tile_From_Tree(zone, state);
+    Remove_From_Tree_Destroy(zone, state);
     Remove_From_Tree(zone, state);
     // draw rects
   }

@@ -130,4 +130,16 @@ namespace Rendering_Components {
     uint8_t reversing = 0;
     Blend_Type blendType = normal;
   };
+
+  struct Metamorphosis {
+    std::unordered_map<std::string, Sheet_Data> *sheetData = NULL;
+    std::string sheet_name = "default";
+    Equipment_Sprites equipment;
+    Sprite_Offset offsets = {0.0f, 0.0f};
+    Component::Interaction_Rect rect = {0.0f, 0.0f, 0.0f, 0.0f};
+    Component::Radius radius = {0.0f};
+    int duration = 1000;
+    Component::Unit_Index unit;
+    const char * spellEffect;
+  };
 }// namespace Rendering_Components

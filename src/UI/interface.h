@@ -190,7 +190,7 @@ namespace Interface {
 
       SDL_Rect srcRect = {0, 0, 32, 32};
       SDL_FRect d = {Mouse::iXMouse, Mouse::iYMouse, 32.0f / componentCamera.scale.x, 32.0f / componentCamera.scale.y};
-      SDL_RenderCopyF(Graphics::renderer, zone.get<Component::Icon>(Mouse::cursor_ID).pBackground, &srcRect, &d);
+      SDL_RenderCopyF(Graphics::renderer, zone.get<Component::Icon>(Mouse::mouseItem).pBackground, &srcRect, &d);
     }
   }
 

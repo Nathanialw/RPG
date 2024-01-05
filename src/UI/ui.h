@@ -410,7 +410,6 @@ namespace UI {
     isItemCurrentlyHeld = false;
   }
 
-
   void Pick_Up_Item_To_Mouse(entt::registry &zone, entt::entity &item_ID, bool &isItemCurrentlyHeld) {
     if (!isItemCurrentlyHeld) {
       //removed pickup box from ground
@@ -428,6 +427,7 @@ namespace UI {
       auto &position = zone.get<Component::Position>(item_ID);
       //prevents auto reinsertion into quad tree
       zone.emplace_or_replace<Component::Remove_From_Object_Tree>(item_ID, interactionRect);
+      zone.remove<Component::Interaction_Rect>(item_ID);
     }
   }
 
@@ -448,6 +448,7 @@ namespace UI {
           auto &rect = zone.get<Component::Interaction_Rect>(itemData.item_ID).rect;
           zone.emplace_or_replace<Item_Component::Item_Pickup>(itemData.item_ID);
           zone.emplace_or_replace<Component::Remove_From_Object_Tree>(itemData.item_ID, rect);
+          zone.remove<Component::Interaction_Rect>(itemData.item_ID);
           //removed pickup box from ground
           zone.remove<Item_Component::Ground_Item>(itemData.item_ID);
           //removes for main rendering loop
@@ -457,20 +458,7 @@ namespace UI {
           return true;
         }
       }
-      //set overburdened message here here
-      //cane use a nameplate to write it out above sprites head
-      //      std::cout << "I am overburdened" << std::endl;
       return false;
     }
   }
-
-
-
-  //run at game start to init bag vector
-  //	void Init_UI(entt::registry& zone) {
-  //		Items::Init_Item_Data();
-  //		Bag_UI::Create_Bag_UI(zone);
-  //		Equipment_UI::Create_Equipment_UI(zone);
-
-  //	}
 }// namespace UI
