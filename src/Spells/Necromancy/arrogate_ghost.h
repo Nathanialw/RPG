@@ -33,8 +33,9 @@ namespace Arrogate_Ghost {
     Create_Entities::Create_Entity(zone, state, casting.x, casting.y, "unit", false, data, false, summon, unitIndex);
 
     //needs to leave the corpse non-interactable but still render
-//    zone.emplace_or_replace<Component::Remove_From_Object_Tree>(casting.target_ID);
-//    zone.remove<Component::Interaction_Rect>(casting.target_ID);
+    auto &rect = zone.get<Component::Interaction_Rect>(casting.target_ID);
+    zone.emplace_or_replace<Component::Remove_From_Object_Tree>(casting.target_ID, rect.rect);
+    zone.remove<Component::Interaction_Rect>(casting.target_ID);
     return 1;
   }
 

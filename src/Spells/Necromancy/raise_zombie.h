@@ -6,9 +6,19 @@
 namespace Raise_Zombie {
 
   int Cast(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
-    Component::Position targetPosition = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
-    Spells::Spell_Cast_Effect(zone, state, caster_ID, targetPosition, direction, casting.effect, targetX, targetY);
-    return 1;
+    SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+    Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect, state);
+    if (targetData.b) {
+      auto &alive = zone.get<Component::Alive>(targetData.entity_ID);
+      if (!alive.bIsAlive) {
+        Component::Position targetPosition = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
+        Spells::Spell_Cast_Effect(zone, state, caster_ID, targetPosition, direction, casting.effect, targetX, targetY);
+        casting.target_ID = targetData.entity_ID;
+        return 1;
+      }
+      return 0;
+    }
+    return 0;
   }
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
@@ -22,8 +32,9 @@ namespace Raise_Zombie {
     Component::Position targetPosition = {casting.x, casting.y};
     Create_Entities::Create_Entity(zone, state, casting.x, casting.y, "unit", false, data, false, summon, unitIndex);
 
+    auto &rect = zone.get<Component::Interaction_Rect>(casting.target_ID);
     zone.emplace_or_replace<Component::Destroyed>(casting.target_ID);
-    zone.emplace_or_replace<Component::Remove_From_Object_Tree>(casting.target_ID);
+    zone.emplace_or_replace<Component::Remove_From_Object_Tree>(casting.target_ID, rect.rect);
     return 1;
   }
 

@@ -2,21 +2,35 @@
 #include "mouse_control.h"
 #include "spells.h"
 
-namespace Fire_Ball {
+namespace Might {
 
   int Cast(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
-    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
+//    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
     return 1;
   }
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
-    Spells::Create_Spell(zone, state, caster_ID, position, direction, hitEffect, casting, targetX, targetY);
+    //create a rect around the caster
+    SDL_FRect rect = {0.0f, 0.0f, 1000.0f, 1000.0f};
+    SDL_FRect frect = Utilities::Centre_Rect_On_Position(rect, position.x, position.y);
+    //get all entities within the rect from the quad tree
+    std::vector<entt::entity> entities = Quad_Tree::Get_Nearby_Entities(zone, frect, state);
+    //apply the aura to the unit
+    for (auto entity : entities) {
+      if (!Social_Control::Check_Relationship(zone, caster_ID, entity)) { // if unit is friendly
+        auto &entity_position = zone.get<Component::Position>(entity);
+        Spells::Spell_Cast_Effect(zone, state, caster_ID, entity_position, direction, casting.effect, entity_position.x, entity_position.y);
+
+        //apply buff
+      }
+    }
+    //repeat periodically like an autocast spell
+//    Spells::Create_Spell(zone, state, caster_ID, position, direction, hitEffect, casting, targetX, targetY);
     return 1;
   }
 
   int Hit(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
     Spells::Spell_Hit_Effect(zone, state, caster_ID, position, direction, spellname, targetX, targetY);
-    Spells::Create_Explosion(zone, position.x, position.y);
     return 1;
   }
 
@@ -28,7 +42,7 @@ namespace Fire_Ball {
       float castTime = 500.0f;
       //send to generic create
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "flame_ring", "001_fire", "fire_1b_40");
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "001_green", "");
       return 1;
     }
     return 0;

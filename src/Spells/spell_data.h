@@ -11,6 +11,7 @@ namespace Spell_Data {
     fire,
     cold,
     arcane,
+    bard,
     earth,
     warrior,
     archery,

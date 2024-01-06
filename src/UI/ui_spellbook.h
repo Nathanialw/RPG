@@ -9,11 +9,12 @@
 #include "Necromancy/necromancy.h"
 #include "Fire/fire.h"
 #include "Ice/ice.h"
+#include "Bard/auras.h"
 
 #include "Life/life.h"
 #include "lightning/lightning.h"
 #include "lightning/lightningball.h"
-#include "Nature/leafspell.h"
+#include "Nature/nature.h"
 #include "Air/smoke.h"
 #include "Arcane/arcane.h"
 #include "Life/heal_self.h"
@@ -92,6 +93,19 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::arcane][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::arcane][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::arcane][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+
+    spellbook.Skill_Trees[Spell_Data::bard][0] = Spell_Data::Spell(Graphics::arrowsFlying, Might::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::bard][1] = Spell_Data::Spell(Graphics::greenArrow, Garlic::Cast_Spell);
+    spellbook.Skill_Trees[Spell_Data::bard][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::bard][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::bard][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::bard][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::bard][6] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::bard][7] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::bard][8] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::bard][9] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::bard][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::bard][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
     spellbook.Skill_Trees[Spell_Data::earth][0] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::earth][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);

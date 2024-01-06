@@ -3,7 +3,7 @@
 #include "entt/entt.hpp"
 #include "spells.h"
 
-namespace Raise_Skeleton {
+namespace Mimic {
 
   int Cast(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
     SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
@@ -11,8 +11,7 @@ namespace Raise_Skeleton {
     if (targetData.b) {
       auto &alive = zone.get<Component::Alive>(targetData.entity_ID);
       if (!alive.bIsAlive) {
-        Component::Position targetPosition = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
-        Spells::Spell_Cast_Effect(zone, state, caster_ID, targetPosition, direction, casting.effect, targetX, targetY);
+        Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
         casting.target_ID = targetData.entity_ID;
         return 1;
       }
@@ -22,19 +21,18 @@ namespace Raise_Skeleton {
   }
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
-    db::Unit_Data data = Game_Objects_Lists::units["skeletons"][0];
-    Component::Unit_Index unitIndex = {"skeletons", 0};
+    //get target info
+      //sprite
+      //relationships
+    //copy to caster
 
-    Social_Component::Summon summon;
-    summon.relationships = zone.get<Social_Component::Relationships>(caster_ID);
-    summon.summon = true;
-    summon.race = zone.get<Social_Component::Race>(caster_ID);
-    Component::Position targetPosition = {casting.x, casting.y};
-    Create_Entities::Create_Entity(zone, state, casting.x, casting.y, "unit", false, data, false, summon, unitIndex);
+//    save caster data to a new component
 
-    auto &rect = zone.get<Component::Interaction_Rect>(casting.target_ID);
-    zone.emplace_or_replace<Component::Destroyed>(casting.target_ID);
-    zone.emplace_or_replace<Component::Remove_From_Object_Tree>(casting.target_ID, rect.rect);
+
+//    auto &metamorphosis = zone.emplace_or_replace<Rendering_Components::Metamorphosis>(caster_ID);
+//    metamorphosis.duration = 10000;
+//    metamorphosis.unit = {"demons", 0};
+//    metamorphosis.spellEffect = "Effects02";
     return 1;
   }
 
@@ -51,4 +49,4 @@ namespace Raise_Skeleton {
     zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "Effects02", "");
     return 1;
   }
-}// namespace Summon_Demon
+}// namespace Metamorphosis
