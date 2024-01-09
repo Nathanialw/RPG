@@ -50,7 +50,7 @@ namespace Spells {
     return {1.0f, 1.0f};
   }
 
-  void Get_Spell_Texture(entt::registry &zone, entt::entity &entity, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, std::string &xml, std::string &image) {
+  Rendering_Components::Buff_Sprite_Data Get_Spell_Texture(entt::registry &zone, entt::entity &entity, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, std::string &xml, std::string &image) {
     std::string name = (std::string) spellname;
 
     int unit_ID = Entity_Data::Check_For_Template_ID(name);
@@ -69,6 +69,7 @@ namespace Spells {
       sprite.sheet_name = name;
       sprite.type = sheetType;
 
+      return {packerframeData, name, {255, 255, 255}, 0, entity, 0.0f};
 //      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, (sprite.sheetData->at(name).frameW / 2.0f), (sprite.sheetData->at(name).frameH / 1.25f));
     }
     //for packer sprites
@@ -86,6 +87,7 @@ namespace Spells {
 
       zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
     }
+    return {};
   }
 
   //  void Create_Spell(entt::entity caster_ID, entt::entity &entity, Component::Position &pos, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
@@ -139,19 +141,22 @@ namespace Spells {
     Spell_Linear_Target(zone, entity, targetX, targetY, spelldir.x, spelldir.y, spellData.range);
   }
 
-  void Spell_Cast_Effect(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
+  Rendering_Components::Buff_Sprite_Data Spell_Cast_Effect(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
     if (spellname == "") {
-      return;
+      return {};
     }
     auto entity = zone.create();
     SQLite_Spell_Data::Spell_Data spellData = SQLite_Spell_Data::Spell_Loader(spellname);
-    Get_Spell_Texture(zone, entity, state, caster_ID, position, direction, spellname, spellData.casting_xml_path, spellData.casting_image_path);
+    auto sprite = Get_Spell_Texture(zone, entity, state, caster_ID, position, direction, spellname, spellData.casting_xml_path, spellData.casting_image_path);
     Create_Spell_object(zone, entity, state, caster_ID, position, direction, spellname);
+
+    sprite.offset = zone.get<Rendering_Components::Sprite_Offset>(entity);
 
     zone.emplace_or_replace<Component::Position>(entity, position.x, position.y + 0.1f);
     zone.emplace_or_replace<Component::Particle>(entity);
     ////to prevent the spell from being added into the quad tree
     zone.emplace_or_replace<Component::In_Object_Tree>(entity);
+    return sprite;
   }
 
   void Spell_Hit_Effect(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {

@@ -10,20 +10,15 @@ namespace Garlic {
   }
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
-//    if (zone.any_of<Component::Aura_Damage>(caster_ID)) {
-//      zone.remove<Component::Aura_Damage>(caster_ID);
-//      return 0;
-//    }
-//    zone.emplace_or_replace<Component::Aura_Damage>(caster_ID);
-//    return 1;
-
-    if (zone.any_of<Component::Damage_Over_Time>(caster_ID)) {
-      zone.remove<Component::Damage_Over_Time>(caster_ID);
+    if (zone.any_of<Component::Aura_Damage>(caster_ID)) {
+      zone.remove<Component::Aura_Damage>(caster_ID);
       return 0;
     }
-    auto &debuffs = zone.emplace_or_replace<Component::Damage_Over_Time>(caster_ID);
-    Component::DOT d;
-    debuffs.debuffs.emplace_back(d);
+    //read for db
+    std::string effect;
+    float frequency;
+
+    zone.emplace_or_replace<Component::Aura_Damage>(caster_ID);
     return 1;
   }
 

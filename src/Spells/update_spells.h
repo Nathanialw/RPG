@@ -77,12 +77,12 @@ namespace Update_Spells {
   }
 
   void Aura_Damage(entt::registry &zone, int &state) {
-    auto view = zone.view<Component::Aura_Damage, Component::Position, Component::Direction, Component::Alive>();
+    auto view = zone.view<Component::Aura_Damage, Component::Position, Component::Direction, Component::Alive, Component::Entity_Type>();
     for (auto caster_ID: view) {
       auto &casting = view.get<Component::Aura_Damage>(caster_ID);
 
       casting.count -= Timer::timeStep;
-      if (casting.count <= 0) {
+      if (casting.count <= 0.0f) {
         casting.count = casting.duration;
 
         auto &position = view.get<Component::Position>(caster_ID);
@@ -91,16 +91,19 @@ namespace Update_Spells {
         std::vector<entt::entity> entities = Quad_Tree::Get_Nearby_Entities(zone, frect, state);
 
         for (auto entity: entities) {
-          auto &alive = view.get<Component::Alive>(entity);
-          if (alive.bIsAlive) {
-            if (Social_Control::Check_Relationship(zone, caster_ID, entity)) {// if unit is friendly
-              auto &targetPosition = view.get<Component::Position>(entity);
-              auto &direction = view.get<Component::Direction>(entity);
+          auto &type = view.get<Component::Entity_Type>(entity);
+          if (type == Component::Entity_Type::unit) {
+            auto &alive = view.get<Component::Alive>(entity);
+            if (alive.bIsAlive) {
+              if (Social_Control::Check_Relationship(zone, caster_ID, entity)) {// if unit is friendly
+                auto &targetPosition = view.get<Component::Position>(entity);
+                auto &direction = view.get<Component::Direction>(entity);
 
-              Spells::Spell_Cast_Effect(zone, state, entity, targetPosition, direction, casting.effect, targetPosition.x, targetPosition.y);
+                Spells::Spell_Cast_Effect(zone, state, entity, targetPosition, direction, casting.effect, targetPosition.x, targetPosition.y);
 
-              Component::Melee_Damage meleeDamage = {1, 5, 20};
-              Combat_Control::Queue_Hit(zone, caster_ID, entity, meleeDamage, Component::normal, 0.0f, Component::Bonus_Damage_Type::add);
+                Component::Melee_Damage meleeDamage = {1, 5, 20};
+                Combat_Control::Queue_Hit(zone, caster_ID, entity, meleeDamage, Component::normal, 0.0f, Component::Bonus_Damage_Type::add);
+              }
             }
           }
         }
@@ -108,13 +111,58 @@ namespace Update_Spells {
     }
   }
 
+  void Might(entt::registry &zone, int &state) {
+    auto view = zone.view<Component::Might, Component::Position, Component::Direction, Component::Alive, Component::Entity_Type, Rendering_Components::Buff_Sprites>();
+    for (auto caster_ID: view) {
+      auto &casting = view.get<Component::Might>(caster_ID);
+      casting.count -= Timer::timeStep;
+      if (casting.count <= 0.0f) {
+        casting.count = casting.duration;
+
+        auto &position = view.get<Component::Position>(caster_ID);
+        SDL_FRect rect = {0.0f, 0.0f, 1000.0f, 1000.0f};
+        SDL_FRect frect = Utilities::Centre_Rect_On_Position(rect, position.x, position.y);
+        std::vector<entt::entity> entities = Quad_Tree::Get_Nearby_Entities(zone, frect, state);
+
+        for (auto entity: entities) {
+          auto &type = view.get<Component::Entity_Type>(entity);
+          if (type == Component::Entity_Type::unit) {
+            auto &alive = view.get<Component::Alive>(entity);
+            if (alive.bIsAlive) {
+              if (!Social_Control::Check_Relationship(zone, caster_ID, entity)) {// if unit is friendly
+                if (1) {
+                  auto &targetPosition = view.get<Component::Position>(entity);
+                  auto &direction = view.get<Component::Direction>(entity);
+                  auto &sprites = view.get<Rendering_Components::Buff_Sprites>(entity);
+
+                  for (auto &buff: sprites.sheet) {
+                    if (buff.FrameIndex >= buff.ItemSheetData->at(buff.name).actionFrameData[Action_Component::walk].NumFrames) {
+                      sprites.sheet.clear();
+                    }
+                  }
+
+                  auto sprite = Spells::Spell_Cast_Effect(zone, state, entity, targetPosition, direction, casting.effect, targetPosition.x, targetPosition.y);
+                  sprite.offset.y /= 2.0f;
+                  zone.destroy(sprite.itemID);
+
+                  sprites.sheet.emplace_back(sprite);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
   void Damage_Over_Time(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Damage_Over_Time, Component::Position, Component::Direction>();
     for (auto entity: view) {
       auto &casting = view.get<Component::Damage_Over_Time>(entity);
       for (int i = 0; i < casting.debuffs.size(); ++i) {
         casting.debuffs[i].count -= Timer::timeStep;
-        if (casting.debuffs[i].count <= 0) {
+        if (casting.debuffs[i].count <= 0.0f) {
           casting.debuffs[i].count = casting.debuffs[i].duration;
           casting.debuffs[i].ticks -= 1;
           auto &position = view.get<Component::Position>(entity);
@@ -135,6 +183,7 @@ namespace Update_Spells {
   void Update_Spells(entt::registry &zone, int &state) {
     Update_Metamorphosis(zone, state);
     Aura_Damage(zone, state);
+    Might(zone, state);
     Damage_Over_Time(zone, state);
     Spells::Destroy_Particle_Spells(zone);
     Spells::Destroy_NonMoving_Spells(zone, state);

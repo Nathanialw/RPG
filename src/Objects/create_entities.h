@@ -347,6 +347,8 @@ namespace Create_Entities {
         zone.emplace_or_replace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max, 25);
         zone.emplace_or_replace<Component::Attack_Speed>(entity, data.attack_speed, 0.0f);
       }
+//    needs to be copied for zone changes
+      zone.emplace_or_replace<Rendering_Components::Buff_Sprites>(entity);
 
       zone.emplace_or_replace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::unit);

@@ -487,15 +487,21 @@ namespace Component {
 
   struct Aura_Damage {
     const char *effect = "teleport";
-    int duration = 2000;
-    int count = 2000;
+    float duration = 2000.0f;
+    float count = 2000.0f;
+  };
+
+  struct Might {
+    const char *effect = "teleport";
+    float duration = 4000.0f;
+    float count = 4000.0f;
   };
 
   struct DOT {
     const char *effect = "teleport";
     int ticks = 4;
-    int duration = 2000;
-    int count = 2000;
+    float duration = 2000.0f;
+    float count = 2000.0f;
   };
 
   struct Damage_Over_Time {

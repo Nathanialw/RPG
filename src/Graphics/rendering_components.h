@@ -90,6 +90,21 @@ namespace Rendering_Components {
     std::string front_name = "default";
   };
 
+  struct Buff_Sprite_Data {
+    std::unordered_map<std::string, Sheet_Data> *ItemSheetData = NULL;
+    //name is the index into the map that stores the data
+    std::string name = "empty";
+    SDL_Color color = {255, 255, 255};
+    uint16_t FrameIndex = 0;
+    entt::entity itemID;
+    float frameTime = 0.0f;
+    Sprite_Offset offset = {0.0f, 0.0f};
+  };
+
+  struct Buff_Sprites {
+    std::vector<Buff_Sprite_Data> sheet;
+  };
+
   struct Equip_Slot_Data {
     std::unordered_map<std::string, Sheet_Data> *ItemSheetData = NULL;
     //name is the index into the map that stores the data

@@ -44,6 +44,23 @@ void Render_Equipment(Rendering_Components::Equipment_Sprites &equipment, Compon
   }
 }
 
+void Render_Buffs(entt::registry &zone, entt::entity &entity, Rendering_Components::Buff_Sprites &buffs, Component::Scale &scale, Component::Camera &camera, Component::Position &position, Component::Renderable &renderable, Rendering_Components::Sprite_Offset &spriteOffset) {
+  SDL_Rect clipRect;
+  for (auto &item: buffs.sheet) {
+    if (item.ItemSheetData) {
+      Rendering_Components::Sheet_Data &sheetData = item.ItemSheetData->at(item.name);
+      Update_Packer_Linear_Frame(item.frameTime, item.FrameIndex, sheetData.actionFrameData[Action_Component::walk].frameSpeed);
+      Utilities::Log(zone.get<Component::Name>(entity).first);
+      Component::Interaction_Rect itemInteractionRect = {};
+      SDL_FRect renderRect = Position_For_Render(item.ItemSheetData, item.name, item.FrameIndex, position, camera, scale, item.offset, clipRect, renderRect, itemInteractionRect);
+      SDL_Texture *texture = item.ItemSheetData->at(item.name).texture;
+      SDL_Color color = item.color;
+      SDL_SetTextureAlphaMod(texture, renderable.alpha);
+      Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
+    }
+  }
+}
+
 void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera &camera, Component::Scale &scale, Component::Renderable &renderable, Component::Position &position, Rendering_Components::Sprite_Offset &spriteOffset, Rendering_Components::Sprite_Sheet_Info &sheetData) {
   SDL_Rect clipRect;
   SDL_FRect renderRect;
@@ -75,6 +92,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
   auto view1 = zone.view<Component::Renderable, Action_Component::Action, Component::Position, Rendering_Components::Sprite_Sheet_Info, Component::Direction, Rendering_Components::Sprite_Offset, Component::Scale, Component::Entity_Type>();
   auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
   auto mounts = zone.view<Component::Renderable, Rendering_Components::Mount_Sprite>();
+  auto buffs = zone.view<Component::Renderable, Rendering_Components::Buff_Sprites>();
 
   Debug::settingsValue[Debug::NumRendered] = view1.size_hint();
   for (auto entity: view1) {
@@ -106,9 +124,14 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
       Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
     } else if (sheetData.sheetData) {
       if (sheetData.type == "packer_linear") {
-        Update_Packer_Linear_Frame(sheetData, action);
+        Update_Packer_Linear_Frame(action.frameTime, sheetData.frameIndex, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed);
         Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
       } else {
+        //if it has an aura  render it
+        if (buffs.contains(entity)) {
+          auto &buffSprites = buffs.get<Rendering_Components::Buff_Sprites>(entity);
+          Render_Buffs(zone, entity, buffSprites, scale, camera, position, renderable, spriteOffset);
+        }
         if (mounts.contains(entity)) {
           //                render horse half behind unit
         }
@@ -119,7 +142,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
 
         //                render equipment
         if (view.contains(entity)) {
-          auto equipment = view.get<Rendering_Components::Equipment_Sprites>(entity);
+          auto &equipment = view.get<Rendering_Components::Equipment_Sprites>(entity);
           Render_Equipment(equipment, scale, sheetData, camera, position, renderable, spriteOffset);
         }
 

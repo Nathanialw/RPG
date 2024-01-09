@@ -52,7 +52,7 @@ namespace Death_Control {
   }
 
   void isDead(entt::registry &zone, int &state) {
-    auto view = zone.view<Action_Component::Action, Component::Health, Component::Position, Component::Body, Component::Soldier, Component::Renderable>(entt::exclude<Component::Spell>);
+    auto view = zone.view<Component::Alive, Action_Component::Action, Component::Health, Component::Position, Component::Body, Component::Soldier, Component::Renderable>(entt::exclude<Component::Spell>);
     for (auto entity: view) {
       auto &health = view.get<Component::Health>(entity);
       if (health.currentHealth <= 0) {
@@ -62,6 +62,7 @@ namespace Death_Control {
         Action_Component::Set_State(action, Action_Component::dying);
         auto &position = view.get<Component::Position>(entity);
         auto &body = view.get<Component::Body>(entity).body;
+        auto &alive = view.get<Component::Alive>(entity).bIsAlive;
 
         auto world = Collision::collisionList[state];
         world->DestroyBody(body);
@@ -69,7 +70,7 @@ namespace Death_Control {
 //        auto rect = zone.get<Component::Interaction_Rect>(entity).rect;
 
 //        zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect);
-        zone.get<Component::Alive>(entity).bIsAlive = false;
+        alive = false;
         zone.remove<Component::Commandable>(entity);
         zone.remove<Component::Selected>(entity);
         zone.remove<Component::Moving>(entity);
