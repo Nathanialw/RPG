@@ -10,6 +10,7 @@
 #include "Fire/fire.h"
 #include "Ice/ice.h"
 #include "Bard/auras.h"
+#include "Holy/holy.h"
 
 #include "Life/life.h"
 #include "lightning/lightning.h"

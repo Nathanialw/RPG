@@ -10,25 +10,20 @@ namespace Garlic {
   }
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
-    //create a rect around the caster
-    SDL_FRect rect = {0.0f, 0.0f, 1000.0f, 1000.0f};
-    SDL_FRect frect = Utilities::Centre_Rect_On_Position(rect, position.x, position.y);
-    //get all entities within the rect from the quad tree
-    std::vector<entt::entity> entities = Quad_Tree::Get_Nearby_Entities(zone, frect, state);
-    //apply the aura to the unit
-    for (auto entity : entities) {
-      if (Social_Control::Check_Relationship(zone, caster_ID, entity)) { // if unit is friendly
-        auto &entity_position = zone.get<Component::Position>(entity);
-        Spells::Spell_Cast_Effect(zone, state, caster_ID, entity_position, direction, casting.effect, entity_position.x, entity_position.y);
+//    if (zone.any_of<Component::Aura_Damage>(caster_ID)) {
+//      zone.remove<Component::Aura_Damage>(caster_ID);
+//      return 0;
+//    }
+//    zone.emplace_or_replace<Component::Aura_Damage>(caster_ID);
+//    return 1;
 
-        Component::Melee_Damage meleeDamage = {1, 5, 20};
-        Combat_Control::Queue_Hit(zone, entity, entity, meleeDamage, Component::normal, 0.0f, Component::Bonus_Damage_Type::add);
-        //apply damage
-      }
+    if (zone.any_of<Component::Damage_Over_Time>(caster_ID)) {
+      zone.remove<Component::Damage_Over_Time>(caster_ID);
+      return 0;
     }
-    //repeat periodically like an autocast spell
-    //    Spells::Create_Spell(zone, state, caster_ID, position, direction, hitEffect, casting, targetX, targetY);
-    return 1;
+    auto &debuffs = zone.emplace_or_replace<Component::Damage_Over_Time>(caster_ID);
+    Component::DOT d;
+    debuffs.debuffs.emplace_back(d);
     return 1;
   }
 

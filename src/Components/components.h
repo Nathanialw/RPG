@@ -485,6 +485,23 @@ namespace Component {
     float meleeRange;
   };
 
+  struct Aura_Damage {
+    const char *effect = "teleport";
+    int duration = 2000;
+    int count = 2000;
+  };
+
+  struct DOT {
+    const char *effect = "teleport";
+    int ticks = 4;
+    int duration = 2000;
+    int count = 2000;
+  };
+
+  struct Damage_Over_Time {
+    std::vector<DOT> debuffs;
+  };
+
   struct Weapon_Size {
     SDL_FRect attackArea;
   };

@@ -6,7 +6,7 @@
 namespace Update_Spells {
 
   void Update_Metamorphosis(entt::registry &zone, int &state) {
-//    auto view1 = zone.view<Rendering_Components::Metamorphosis, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset, Component::Interaction_Rect, Component::Radius>();
+    //    auto view1 = zone.view<Rendering_Components::Metamorphosis, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset, Component::Interaction_Rect, Component::Radius>();
     auto view1 = zone.view<Rendering_Components::Metamorphosis, Component::Position, Component::Direction, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset, Component::Interaction_Rect, Component::Radius>();
     for (auto caster_ID: view1) {
       auto &metamorphosis = view1.get<Rendering_Components::Metamorphosis>(caster_ID);
@@ -76,8 +76,66 @@ namespace Update_Spells {
     }
   }
 
+  void Aura_Damage(entt::registry &zone, int &state) {
+    auto view = zone.view<Component::Aura_Damage, Component::Position, Component::Direction, Component::Alive>();
+    for (auto caster_ID: view) {
+      auto &casting = view.get<Component::Aura_Damage>(caster_ID);
+
+      casting.count -= Timer::timeStep;
+      if (casting.count <= 0) {
+        casting.count = casting.duration;
+
+        auto &position = view.get<Component::Position>(caster_ID);
+        SDL_FRect rect = {0.0f, 0.0f, 1000.0f, 1000.0f};
+        SDL_FRect frect = Utilities::Centre_Rect_On_Position(rect, position.x, position.y);
+        std::vector<entt::entity> entities = Quad_Tree::Get_Nearby_Entities(zone, frect, state);
+
+        for (auto entity: entities) {
+          auto &alive = view.get<Component::Alive>(entity);
+          if (alive.bIsAlive) {
+            if (Social_Control::Check_Relationship(zone, caster_ID, entity)) {// if unit is friendly
+              auto &targetPosition = view.get<Component::Position>(entity);
+              auto &direction = view.get<Component::Direction>(entity);
+
+              Spells::Spell_Cast_Effect(zone, state, entity, targetPosition, direction, casting.effect, targetPosition.x, targetPosition.y);
+
+              Component::Melee_Damage meleeDamage = {1, 5, 20};
+              Combat_Control::Queue_Hit(zone, caster_ID, entity, meleeDamage, Component::normal, 0.0f, Component::Bonus_Damage_Type::add);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  void Damage_Over_Time(entt::registry &zone, int &state) {
+    auto view = zone.view<Component::Damage_Over_Time, Component::Position, Component::Direction>();
+    for (auto entity: view) {
+      auto &casting = view.get<Component::Damage_Over_Time>(entity);
+      for (int i = 0; i < casting.debuffs.size(); ++i) {
+        casting.debuffs[i].count -= Timer::timeStep;
+        if (casting.debuffs[i].count <= 0) {
+          casting.debuffs[i].count = casting.debuffs[i].duration;
+          casting.debuffs[i].ticks -= 1;
+          auto &position = view.get<Component::Position>(entity);
+          auto &direction = view.get<Component::Direction>(entity);
+
+          Spells::Spell_Cast_Effect(zone, state, entity, position, direction, casting.debuffs[i].effect, position.x, position.y);
+
+          Component::Melee_Damage meleeDamage = {1, 5, 20};
+          Combat_Control::Queue_Hit(zone, entity, entity, meleeDamage, Component::normal, 0.0f, Component::Bonus_Damage_Type::add);
+          if (casting.debuffs[i].ticks < 0) {
+            casting.debuffs.erase(casting.debuffs.begin() + i);
+          }
+        }
+      }
+    }
+  }
+
   void Update_Spells(entt::registry &zone, int &state) {
     Update_Metamorphosis(zone, state);
+    Aura_Damage(zone, state);
+    Damage_Over_Time(zone, state);
     Spells::Destroy_Particle_Spells(zone);
     Spells::Destroy_NonMoving_Spells(zone, state);
     Spells::Clear_Collided_Spells(zone, state);
