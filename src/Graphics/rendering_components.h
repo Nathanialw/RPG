@@ -102,7 +102,8 @@ namespace Rendering_Components {
   };
 
   struct Buff_Sprites {
-    std::vector<Buff_Sprite_Data> sheet;
+      std::unordered_map<std::string, Buff_Sprite_Data> buffs;
+      std::vector<Buff_Sprite_Data> sheet;
   };
 
   struct Equip_Slot_Data {

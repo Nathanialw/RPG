@@ -24,10 +24,10 @@ namespace Update_Spells {
         //set texture to new texture
         zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(caster_ID, metamorphosis.equipment);
 
-
         auto &position = view1.get<Component::Position>(caster_ID);
         auto &direction = view1.get<Component::Direction>(caster_ID);
-        Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, metamorphosis.spellEffect, position.x, position.y);
+        Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, metamorphosis.spellEffect,
+                                  position.x, position.y);
 
         zone.remove<Rendering_Components::Metamorphosis>(caster_ID);
       } else {
@@ -69,7 +69,8 @@ namespace Update_Spells {
 
       sprite.sheetData = packerframeData;
       sprite.sheet_name = imgPaths.name;
-      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(caster_ID, data.x_offset * data.scale, data.y_offset * data.scale);
+      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(caster_ID, data.x_offset * data.scale,
+                                                                   data.y_offset * data.scale);
       radius.fRadius = data.radius;
       Create_Entities::Emplace_Interaction_Rect(zone, caster_ID, data, position.x, position.y);
       zone.remove<Rendering_Components::Equipment_Sprites>(caster_ID);
@@ -130,6 +131,8 @@ namespace Update_Spells {
             auto &alive = view.get<Component::Alive>(entity);
             if (alive.bIsAlive) {
               if (!Social_Control::Check_Relationship(zone, caster_ID, entity)) {// if unit is friendly
+                                                                                 //            if the buff is already applied do nothing
+                                                                                 //             maybe a hashmap instead I can look it up
                 if (1) {
                   auto &targetPosition = view.get<Component::Position>(entity);
                   auto &direction = view.get<Component::Direction>(entity);
@@ -146,6 +149,13 @@ namespace Update_Spells {
                   zone.destroy(sprite.itemID);
 
                   sprites.sheet.emplace_back(sprite);
+
+                  std::string name = "z";
+                  if (sprites.buffs.contains(name)) {
+                    return;
+                  } else {
+                    sprites.buffs.at(name) = sprite;
+                  }
                 }
               }
             }
@@ -154,7 +164,6 @@ namespace Update_Spells {
       }
     }
   }
-
 
   void Damage_Over_Time(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Damage_Over_Time, Component::Position, Component::Direction>();

@@ -9,7 +9,7 @@ link_directories(lib)
 
 set(CMAKE_CXX_STANDARD 20)
 set(ARCH amd64)
-#set (CMAKE_CXX_COMPILER "/usr/bin/clang++")
+set (CMAKE_CXX_COMPILER "/usr/bin/clang++")
 set (CMAKE_CXX_FLAGS "-Wno-deprecated")
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std = c++11")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
