@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:c39cbec07662180f9636c41147095662:d20bb11788a4b58739e4d7bcd14dc82e:9c2de90146988de39a04827a46667737$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="25_InStarBurstC1Infinity02.png" width="485" height="636">
+    <sprite n="25 InStarBurstC1Infinity02-0" x="270" y="293" w="27" h="25" oX="35" oY="37" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-1" x="429" y="594" w="35" h="34" oX="31" oY="32" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-2" x="384" y="594" w="43" h="41" oX="27" oY="29" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-3" x="384" y="544" w="49" h="48" oX="24" oY="25" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-4" x="213" y="293" w="55" h="53" oX="21" oY="23" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-5" x="157" y="558" w="61" h="59" oX="18" oY="20" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-6" x="146" y="293" w="65" h="63" oX="16" oY="18" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-7" x="75" y="293" w="69" h="67" oX="14" oY="16" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-8" x="1" y="293" w="72" h="71" oX="12" oY="14" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-9" x="80" y="558" w="75" h="74" oX="11" oY="12" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-10" x="1" y="558" w="77" h="76" oX="10" oY="11" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-11" x="220" y="555" w="79" h="79" oX="9" oY="9" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-12" x="301" y="554" w="81" h="81" oX="8" oY="8" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-13" x="287" y="469" w="83" h="83" oX="7" oY="7" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-14" x="389" y="457" w="85" h="85" oX="6" oY="6" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-15" x="301" y="382" w="86" h="85" oX="5" oY="6" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-16" x="392" y="368" w="87" h="87" oX="5" oY="5" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-17" x="301" y="293" w="89" h="87" oX="4" oY="5" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-18" x="393" y="277" w="89" h="89" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-19" x="393" y="186" w="90" h="89" oX="3" oY="4" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-20" x="393" y="94" w="91" h="90" oX="3" oY="3" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-21" x="393" y="1" w="91" h="91" oX="3" oY="3" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-22" x="193" y="368" w="92" h="91" oX="3" oY="3" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-23" x="192" y="462" w="93" h="91" oX="2" oY="3" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-24" x="98" y="368" w="93" h="92" oX="2" oY="2" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-25" x="97" y="463" w="93" h="93" oX="2" oY="2" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-26" x="1" y="463" w="94" h="93" oX="2" oY="2" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-27" x="1" y="368" w="95" h="93" oX="1" oY="2" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-28" x="99" y="197" w="95" h="94" oX="1" oY="1" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-29" x="1" y="197" w="96" h="94" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-30" x="197" y="99" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-31" x="295" y="99" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-32" x="197" y="196" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-33" x="295" y="196" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-34" x="1" y="1" w="96" h="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-35" x="99" y="1" w="96" h="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-36" x="197" y="1" w="96" h="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-37" x="295" y="1" w="96" h="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-38" x="1" y="99" w="96" h="96"/>
+    <sprite n="25 InStarBurstC1Infinity02-39" x="99" y="99" w="96" h="96"/>
+</TextureAtlas>

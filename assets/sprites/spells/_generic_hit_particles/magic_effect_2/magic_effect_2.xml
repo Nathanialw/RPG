@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:06274bbeb1eff52fd875bf14290ad0ad:60e195eb770418f1910ee222515df7f8:5c114b72b7d4f5421933c12a33b2cdcd$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="magic_effect_2.png" width="63" height="159">
+    <sprite n="magic_effect_2_01" x="1" y="137" w="12" h="12" oX="10" oY="20" oW="32" oH="32"/>
+    <sprite n="magic_effect_2_02" x="33" y="136" w="18" h="22" oX="6" oY="10" oW="32" oH="32"/>
+    <sprite n="magic_effect_2_03" x="33" y="35" w="29" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="magic_effect_2_04" x="34" y="1" w="28" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="magic_effect_2_05" x="33" y="68" w="25" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="magic_effect_2_06" x="33" y="102" w="23" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="magic_effect_2_07" x="1" y="1" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="magic_effect_2_08" x="1" y="35" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="magic_effect_2_09" x="1" y="69" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="magic_effect_2_10" x="1" y="103" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+</TextureAtlas>

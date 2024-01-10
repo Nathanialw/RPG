@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:be5ce0aeffa305f6be482583139c2187:0dadbe39a2a5f5d1692c60eee8dec1af:19ed623f699b240dfe09e2ad24bcdba7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="ImpactMetal02Variation1.png" width="506" height="151">
+    <sprite n="ImpactMetal02Variation1-0" x="327" y="147" w="3" h="3" oX="49" oY="45" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-1" x="63" y="87" w="33" h="34" oX="33" oY="31" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-2" x="1" y="87" w="60" h="62" oX="20" oY="17" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-3" x="256" y="82" w="69" h="66" oX="18" oY="18" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-4" x="358" y="1" w="77" h="76" oX="17" oY="16" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-5" x="1" y="1" w="71" h="84" oX="13" oY="12" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-6" x="327" y="80" w="67" h="65" oX="20" oY="18" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-7" x="98" y="86" w="76" h="64" oX="13" oY="20" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-8" x="176" y="85" w="78" h="65" oX="12" oY="20" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-9" x="396" y="79" w="70" h="71" oX="20" oY="14" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-10" x="437" y="1" w="68" h="76" oX="20" oY="9" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-11" x="216" y="1" w="68" h="79" oX="20" oY="6" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-12" x="146" y="1" w="68" h="82" oX="20" oY="3" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-13" x="74" y="1" w="70" h="83" oX="19" oY="2" oW="96" oH="96"/>
+    <sprite n="ImpactMetal02Variation1-14" x="286" y="1" w="70" h="77" oX="20" oY="2" oW="96" oH="96"/>
+</TextureAtlas>

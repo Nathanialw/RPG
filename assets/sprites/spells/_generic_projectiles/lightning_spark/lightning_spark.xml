@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:5c3399b718d1312458a23494524d3f4c:4a3bc581c945bd8d3ce17b1789c9f599:b859515c569afd489d4e482c19121d31$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="lightning_spark.png" width="245" height="50">
+    <sprite n="lightning-0" x="101" y="1" w="46" h="48" oX="0" oY="0" oW="48" oH="48"/>
+    <sprite n="lightning-1" x="149" y="1" w="48" h="47" oX="0" oY="0" oW="48" oH="48"/>
+    <sprite n="lightning-2" x="1" y="1" w="48" h="48"/>
+    <sprite n="lightning-3" x="199" y="1" w="45" h="47" oX="0" oY="0" oW="48" oH="48"/>
+    <sprite n="lightning-4" x="51" y="1" w="48" h="48"/>
+</TextureAtlas>

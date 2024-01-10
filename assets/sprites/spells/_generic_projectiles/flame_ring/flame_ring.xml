@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:478c7cecae59601ce49738b03c5e4d59:acebafde3ac9f737d417a41b11da8502:d57418ae5f188ee86c470f1fea839f0a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="flame_ring.png" width="505" height="255">
+    <sprite n="30000" x="122" y="60" w="64" h="60" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="30001" x="62" y="1" w="64" h="57" oX="0" oY="3" oW="64" oH="64"/>
+    <sprite n="30002" x="188" y="61" w="64" h="60" oX="0" oY="3" oW="64" oH="64"/>
+    <sprite n="30003" x="254" y="62" w="60" h="60" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="30004" x="254" y="188" w="57" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="30005" x="313" y="189" w="58" h="64" oX="2" oY="0" oW="64" oH="64"/>
+    <sprite n="30006" x="316" y="62" w="62" h="60" oX="0" oY="4" oW="64" oH="64"/>
+    <sprite n="30007" x="191" y="1" w="64" h="58" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="30008" x="257" y="1" w="59" h="59" oX="4" oY="3" oW="64" oH="64"/>
+    <sprite n="30009" x="443" y="125" w="58" h="63" oX="2" oY="1" oW="64" oH="64"/>
+    <sprite n="30010" x="373" y="189" w="63" h="64" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="30011" x="1" y="185" w="62" h="63" oX="2" oY="0" oW="64" oH="64"/>
+    <sprite n="30012" x="318" y="1" w="63" h="59" oX="0" oY="4" oW="64" oH="64"/>
+    <sprite n="30013" x="1" y="121" w="62" h="62" oX="2" oY="2" oW="64" oH="64"/>
+    <sprite n="30014" x="65" y="186" w="62" h="63" oX="2" oY="0" oW="64" oH="64"/>
+    <sprite n="30015" x="65" y="122" w="64" h="62" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="30016" x="129" y="187" w="60" h="63" oX="3" oY="0" oW="64" oH="64"/>
+    <sprite n="30017" x="383" y="1" w="59" h="59" oX="2" oY="2" oW="64" oH="64"/>
+    <sprite n="30018" x="444" y="1" w="59" h="59" oX="4" oY="1" oW="64" oH="64"/>
+    <sprite n="30019" x="380" y="62" w="60" h="61" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="30020" x="191" y="188" w="61" h="63" oX="2" oY="1" oW="64" oH="64"/>
+    <sprite n="30021" x="131" y="123" w="62" h="62" oX="2" oY="0" oW="64" oH="64"/>
+    <sprite n="30022" x="195" y="124" w="62" h="62" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="30023" x="1" y="1" w="59" h="55" oX="2" oY="4" oW="64" oH="64"/>
+    <sprite n="30024" x="58" y="60" w="62" h="59" oX="1" oY="2" oW="64" oH="64"/>
+    <sprite n="30025" x="1" y="58" w="55" h="59" oX="5" oY="5" oW="64" oH="64"/>
+    <sprite n="30026" x="128" y="1" w="61" h="57" oX="2" oY="2" oW="64" oH="64"/>
+    <sprite n="30027" x="259" y="124" w="60" h="62" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="30028" x="321" y="125" w="59" h="62" oX="1" oY="2" oW="64" oH="64"/>
+    <sprite n="30029" x="438" y="190" w="59" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="30030" x="382" y="125" w="59" h="62" oX="2" oY="0" oW="64" oH="64"/>
+    <sprite n="30031" x="442" y="62" w="62" h="61" oX="0" oY="3" oW="64" oH="64"/>
+</TextureAtlas>

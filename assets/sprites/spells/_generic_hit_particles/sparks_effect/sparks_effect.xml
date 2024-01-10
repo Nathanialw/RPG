@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:b381be26e5cd2fb42fdf9f635367a660:04b3d64c39c61d68b62030d1774fcf72:9bb33306ce3532bd1e315ef08b578dd1$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="sparks_effect.png" width="121" height="152">
+    <sprite n="sparks_effect_01" x="29" y="130" w="20" h="16" oX="17" oY="44" oW="64" oH="64"/>
+    <sprite n="sparks_effect_02" x="1" y="130" w="26" h="21" oX="15" oY="40" oW="64" oH="64"/>
+    <sprite n="sparks_effect_03" x="90" y="119" w="28" h="24" oX="13" oY="37" oW="64" oH="64"/>
+    <sprite n="sparks_effect_04" x="87" y="42" w="33" h="27" oX="11" oY="34" oW="64" oH="64"/>
+    <sprite n="sparks_effect_05" x="51" y="119" w="37" h="31" oX="9" oY="30" oW="64" oH="64"/>
+    <sprite n="sparks_effect_06" x="42" y="42" w="43" h="35" oX="6" oY="25" oW="64" oH="64"/>
+    <sprite n="sparks_effect_07" x="58" y="1" w="50" h="39" oX="3" oY="21" oW="64" oH="64"/>
+    <sprite n="sparks_effect_08" x="1" y="1" w="55" h="39" oX="3" oY="18" oW="64" oH="64"/>
+    <sprite n="sparks_effect_09" x="1" y="88" w="40" h="40" oX="20" oY="12" oW="64" oH="64"/>
+    <sprite n="sparks_effect_10" x="1" y="42" w="39" h="44" oX="21" oY="5" oW="64" oH="64"/>
+    <sprite n="sparks_effect_11" x="43" y="79" w="37" h="38" oX="21" oY="5" oW="64" oH="64"/>
+    <sprite n="sparks_effect_12" x="82" y="79" w="37" h="38" oX="21" oY="5" oW="64" oH="64"/>
+</TextureAtlas>

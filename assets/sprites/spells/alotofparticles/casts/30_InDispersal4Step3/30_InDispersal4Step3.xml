@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:ed9d93fecdd446e30ba4089a7e576621:251014bdbeb478e336bdb4c0abb81540:f06a270b412022a3b454bf8d2e5fbf91$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="30_InDispersal4Step3.png" width="256" height="486">
+    <sprite n="30 InDispersal4Step3-0" x="53" y="358" w="48" h="50" oX="24" oY="19" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-1" x="1" y="306" w="50" h="51" oX="23" oY="18" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-2" x="1" y="252" w="50" h="52" oX="23" oY="18" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-3" x="135" y="253" w="50" h="52" oX="23" oY="18" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-4" x="187" y="280" w="50" h="52" oX="23" oY="18" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-5" x="53" y="304" w="50" h="52" oX="23" oY="18" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-6" x="105" y="307" w="49" h="50" oX="24" oY="19" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-7" x="1" y="359" w="48" h="50" oX="24" oY="19" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-8" x="156" y="334" w="48" h="49" oX="24" oY="20" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-9" x="206" y="334" w="47" h="48" oX="25" oY="20" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-10" x="206" y="384" w="46" h="47" oX="25" oY="21" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-11" x="153" y="385" w="45" h="45" oX="26" oY="22" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-12" x="149" y="432" w="43" h="45" oX="27" oY="22" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-13" x="194" y="433" w="41" h="43" oX="28" oY="23" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-14" x="216" y="196" w="39" h="41" oX="29" oY="24" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-15" x="216" y="239" w="37" h="39" oX="30" oY="25" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-16" x="1" y="447" w="35" h="36" oX="31" oY="27" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-17" x="38" y="451" w="33" h="34" oX="32" oY="28" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-18" x="1" y="411" w="38" h="34" oX="29" oY="29" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-19" x="51" y="410" w="42" h="39" oX="27" oY="26" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-20" x="103" y="409" w="44" h="44" oX="26" oY="24" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-21" x="103" y="359" w="48" h="48" oX="24" oY="22" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-22" x="81" y="251" w="52" h="51" oX="22" oY="21" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-23" x="157" y="196" w="57" h="55" oX="20" oY="19" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-24" x="189" y="66" w="60" h="59" oX="18" oY="17" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-25" x="189" y="1" w="66" h="63" oX="15" oY="15" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-26" x="183" y="127" w="68" h="67" oX="14" oY="14" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-27" x="81" y="177" w="74" h="72" oX="11" oY="12" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-28" x="1" y="175" w="78" h="75" oX="9" oY="10" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-29" x="1" y="94" w="80" h="79" oX="8" oY="9" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-30" x="96" y="91" w="85" h="84" oX="6" oY="6" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-31" x="96" y="1" w="91" h="88" oX="3" oY="3" oW="96" oH="96"/>
+    <sprite n="30 InDispersal4Step3-32" x="1" y="1" w="93" h="91" oX="2" oY="3" oW="96" oH="96"/>
+</TextureAtlas>

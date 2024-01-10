@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:7e52c3ab95c58bb69166d9e30b0396a4:7a44535b02cdcce87a0c40b8efa34ced:0b80cf7673a9dfe41f14f137a71c17d7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="09_BBLDkBlue_BubblesLineGreen.png" width="95" height="3420">
+    <sprite n="09 BBLDkBlue BubblesLineGreen -0" x="1" y="1078" w="88" h="71" oX="6" oY="16" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -1" x="1" y="1504" w="87" h="69" oX="5" oY="18" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -2" x="1" y="1151" w="88" h="70" oX="4" oY="17" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -3" x="1" y="647" w="90" h="74" oX="3" oY="13" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -4" x="1" y="435" w="91" h="73" oX="2" oY="15" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -5" x="1" y="82" w="92" h="76" oX="2" oY="12" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -6" x="1" y="371" w="92" h="62" oX="2" oY="25" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -7" x="1" y="237" w="92" h="65" oX="2" oY="22" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -8" x="1" y="1575" w="87" h="64" oX="8" oY="23" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -9" x="1" y="1367" w="88" h="67" oX="8" oY="20" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -10" x="1" y="1223" w="88" h="70" oX="8" oY="17" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -11" x="1" y="1436" w="88" h="66" oX="8" oY="21" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -12" x="1" y="938" w="89" h="71" oX="7" oY="16" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -13" x="1" y="1011" w="89" h="65" oX="7" oY="22" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -14" x="1" y="798" w="90" h="68" oX="6" oY="19" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -15" x="1" y="2350" w="84" h="71" oX="5" oY="16" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -16" x="1" y="1994" w="85" h="64" oX="4" oY="23" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -17" x="1" y="1788" w="86" h="67" oX="3" oY="20" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -18" x="1" y="1295" w="88" h="70" oX="2" oY="17" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -19" x="1" y="723" w="90" h="73" oX="1" oY="14" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -20" x="1" y="583" w="91" h="62" oX="0" oY="26" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -21" x="1" y="304" w="92" h="65" oX="0" oY="22" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -22" x="1" y="868" w="90" h="68" oX="3" oY="19" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -23" x="1" y="510" w="91" h="71" oX="2" oY="16" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -24" x="1" y="160" w="92" h="75" oX="2" oY="12" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -25" x="1" y="1" w="93" h="79" oX="2" oY="8" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -26" x="1" y="1926" w="86" h="66" oX="2" oY="21" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -27" x="1" y="1718" w="86" h="68" oX="3" oY="19" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -28" x="1" y="2423" w="84" h="70" oX="5" oY="17" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -29" x="1" y="2060" w="85" h="64" oX="4" oY="23" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -30" x="1" y="1857" w="86" h="67" oX="4" oY="20" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -31" x="1" y="3349" w="81" h="70" oX="9" oY="17" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -32" x="1" y="3199" w="81" h="73" oX="9" oY="14" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -33" x="1" y="3131" w="82" h="66" oX="8" oY="21" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -34" x="1" y="2918" w="82" h="70" oX="8" oY="17" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -35" x="1" y="3274" w="81" h="73" oX="8" oY="14" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -36" x="1" y="3062" w="82" h="67" oX="8" oY="20" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -37" x="1" y="2990" w="82" h="70" oX="8" oY="17" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -38" x="1" y="2843" w="82" h="73" oX="8" oY="14" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -39" x="1" y="2777" w="83" h="64" oX="8" oY="23" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -40" x="1" y="2495" w="84" h="69" oX="7" oY="18" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -41" x="1" y="2566" w="84" h="69" oX="7" oY="18" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -42" x="1" y="2708" w="83" h="67" oX="8" oY="20" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -43" x="1" y="2637" w="84" h="69" oX="8" oY="18" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -44" x="1" y="2202" w="84" h="72" oX="8" oY="15" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -45" x="1" y="2126" w="84" h="74" oX="8" oY="13" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -46" x="1" y="2276" w="84" h="72" oX="8" oY="15" oW="96" oH="96"/>
+    <sprite n="09 BBLDkBlue BubblesLineGreen -47" x="1" y="1641" w="86" h="75" oX="7" oY="12" oW="96" oH="96"/>
+</TextureAtlas>

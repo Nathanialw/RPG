@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:5c71800119d59e57a4cb55c201e1a162:d7bb844bc8eeed367f16117c056e3d32:ce75e4574a2517d90297bf5390880c4e$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="hjm_frost_bolt.png" width="102" height="3311">
+    <sprite n="hjm_frost_bolt01" x="1" y="1" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt02" x="1" y="78" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt03" x="1" y="155" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt04" x="1" y="232" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt05" x="1" y="309" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt06" x="1" y="386" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt07" x="1" y="463" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt08" x="1" y="540" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt09" x="1" y="617" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt10" x="1" y="694" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt11" x="1" y="771" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt12" x="1" y="848" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt13" x="1" y="925" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt14" x="1" y="1002" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt15" x="1" y="1079" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt16" x="1" y="1156" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt17" x="1" y="1233" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt18" x="1" y="1310" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt19" x="1" y="1387" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt20" x="1" y="1464" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt21" x="1" y="1541" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt22" x="1" y="1618" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt23" x="1" y="1695" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt24" x="1" y="1772" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt25" x="1" y="1" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt26" x="1" y="1849" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt27" x="1" y="1926" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt28" x="1" y="232" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt29" x="1" y="2003" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt30" x="1" y="2080" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt31" x="1" y="2157" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt32" x="1" y="2234" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt33" x="1" y="2311" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt34" x="1" y="694" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt35" x="1" y="2388" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt36" x="1" y="2465" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt37" x="1" y="2542" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt38" x="1" y="2619" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt39" x="1" y="2696" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt40" x="1" y="2773" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt41" x="1" y="2850" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt42" x="1" y="2927" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt43" x="1" y="1387" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt44" x="1" y="3004" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt45" x="1" y="3081" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt46" x="1" y="1618" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt47" x="1" y="3158" w="100" h="75"/>
+    <sprite n="hjm_frost_bolt48" x="1" y="3235" w="100" h="75"/>
+</TextureAtlas>

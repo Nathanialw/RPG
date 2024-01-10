@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:5a1b96c8f0c2919e0bbed7073d2ec906:1e1d89df076a322109320b7b338c4124:ce4c487c7a63002325e8b68d95db13f7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="warp_effect-sheet.png" width="246" height="1047">
+    <sprite n="warp_effect-sheet-0.png" x="115" y="874" w="115" h="125" oX="104" oY="108" oW="320" oH="364"/>
+    <sprite n="warp_effect-sheet-1.png" x="0" y="874" w="115" h="173" oX="104" oY="93" oW="320" oH="364"/>
+    <sprite n="warp_effect-sheet-2.png" x="0" y="614" w="115" h="260" oX="104" oY="52" oW="320" oH="364"/>
+    <sprite n="warp_effect-sheet-3.png" x="0" y="356" w="146" h="258" oX="87" oY="47" oW="320" oH="364"/>
+    <sprite n="warp_effect-sheet-4.png" x="0" y="0" w="214" h="356" oX="53" oY="0" oW="320" oH="364"/>
+    <sprite n="warp_effect-sheet-5.png" x="115" y="614" w="112" h="260" oX="104" oY="52" oW="320" oH="364"/>
+    <sprite n="warp_effect-sheet-6.png" x="146" y="356" w="53" h="173" oX="133" oY="93" oW="320" oH="364"/>
+    <sprite n="warp_effect-sheet-7.png" x="199" y="356" w="47" h="151" oX="136" oY="99" oW="320" oH="364"/>
+</TextureAtlas>

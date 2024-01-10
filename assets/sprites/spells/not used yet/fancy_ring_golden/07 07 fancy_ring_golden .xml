@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:ee37a19fb5b53902a9450fef98534586:4e2956de83cb1b1764a1756d0cb27ab3:a72bd13e6f1ddf9621b9b68f2c4a784a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="07 07 fancy_ring_golden .png" width="64" height="1188">
+    <sprite n="fancy_ring_golden-0" x="52" y="1057" w="10" h="55" oX="48" oY="42" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-1" x="45" y="1122" w="11" h="59" oX="47" oY="38" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-2" x="39" y="1057" w="13" h="65" oX="45" oY="31" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-3" x="46" y="631" w="16" h="65" oX="43" oY="30" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-4" x="46" y="504" w="17" h="65" oX="42" oY="30" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-5" x="46" y="373" w="18" h="65" oX="41" oY="29" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-6" x="0" y="1084" w="19" h="64" oX="40" oY="29" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-7" x="20" y="1013" w="19" h="72" oX="40" oY="28" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-8" x="40" y="985" w="20" h="72" oX="39" oY="27" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-9" x="0" y="1013" w="20" h="71" oX="39" oY="27" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-10" x="20" y="939" w="20" h="74" oX="39" oY="26" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-11" x="43" y="911" w="21" h="74" oX="38" oY="25" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-12" x="22" y="864" w="21" h="75" oX="38" oY="23" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-13" x="22" y="789" w="22" h="75" oX="38" oY="22" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-14" x="0" y="860" w="22" h="75" oX="38" oY="21" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-15" x="0" y="784" w="22" h="76" oX="38" oY="19" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-16" x="0" y="711" w="23" h="73" oX="38" oY="20" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-17" x="23" y="630" w="23" h="79" oX="38" oY="16" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-18" x="23" y="461" w="23" h="85" oX="38" oY="14" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-19" x="0" y="373" w="23" h="87" oX="38" oY="12" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-20" x="0" y="460" w="23" h="87" oX="38" oY="13" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-21" x="23" y="372" w="23" h="89" oX="38" oY="11" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-22" x="23" y="281" w="23" h="91" oX="38" oY="9" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-23" x="0" y="281" w="23" h="92" oX="38" oY="7" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-24" x="0" y="95" w="23" h="93" oX="38" oY="5" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-25" x="24" y="0" w="23" h="94" oX="38" oY="3" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-26" x="0" y="0" w="24" h="95" oX="38" oY="1" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-27" x="0" y="188" w="23" h="93" oX="38" oY="2" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-28" x="24" y="94" w="23" h="94" oX="38" oY="0" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-29" x="23" y="188" w="23" h="93" oX="38" oY="0" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-30" x="23" y="546" w="23" h="84" oX="38" oY="7" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-31" x="0" y="547" w="23" h="82" oX="38" oY="8" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-32" x="23" y="709" w="22" h="80" oX="38" oY="8" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-33" x="0" y="629" w="23" h="82" oX="38" oY="5" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-34" x="44" y="830" w="20" h="81" oX="40" oY="4" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-35" x="45" y="749" w="19" h="81" oX="40" oY="2" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-36" x="47" y="0" w="17" h="81" oX="42" oY="0" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-37" x="0" y="935" w="20" h="78" oX="40" oY="1" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-38" x="47" y="81" w="17" h="77" oX="42" oY="0" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-39" x="47" y="158" w="17" h="75" oX="42" oY="0" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-40" x="46" y="233" w="17" h="70" oX="42" oY="3" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-41" x="46" y="303" w="17" h="70" oX="42" oY="1" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-42" x="46" y="438" w="17" h="66" oX="43" oY="2" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-43" x="46" y="569" w="17" h="62" oX="42" oY="4" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-44" x="46" y="696" w="18" h="53" oX="42" oY="10" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-45" x="19" y="1085" w="18" h="53" oX="42" oY="8" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-46" x="22" y="1138" w="13" h="43" oX="46" oY="14" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-47" x="35" y="1138" w="10" h="29" oX="46" oY="11" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-48" x="0" y="1148" w="14" h="40" oX="46" oY="12" oW="100" oH="100"/>
+    <sprite n="fancy_ring_golden-49" x="14" y="1148" w="8" h="40" oX="52" oY="9" oW="100" oH="100"/>
+</TextureAtlas>

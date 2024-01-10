@@ -154,7 +154,7 @@ namespace Update_Spells {
                   if (sprites.buffs.contains(name)) {
                     return;
                   } else {
-                    sprites.buffs.at(name) = sprite;
+                    sprites.buffs[name] = sprite;
                   }
                 }
               }

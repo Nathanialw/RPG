@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:f028e8ea3b27b9e9900cff0f0464db5f:382079efaf09bcaa8b0ca45bed9ba6b4:6017cbd222ce2037fba62db74bcb612d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Explosion_002_Tile_8x8_256x256.png" width="256" height="13784">
+    <sprite n="Explosion_002_Tile_8x8_256x256-0" x="239" y="12744" w="12" h="15" oX="65" oY="97" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-1" x="219" y="13119" w="36" h="40" oX="54" oY="84" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-2" x="191" y="13435" w="60" h="60" oX="44" oY="76" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-3" x="130" y="13684" w="89" h="86" oX="34" oY="66" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-4" x="0" y="13684" w="130" h="100" oX="24" oY="58" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-5" x="0" y="13569" w="175" h="115" oX="16" oY="52" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-6" x="0" y="13435" w="191" h="134" oX="8" oY="45" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-7" x="0" y="13285" w="208" h="150" oX="0" oY="40" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-8" x="0" y="13119" w="219" h="166" oX="0" oY="35" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-9" x="0" y="12938" w="229" h="181" oX="0" oY="30" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-10" x="0" y="12744" w="239" h="194" oX="0" oY="26" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-11" x="0" y="12538" w="248" h="206" oX="0" oY="23" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-12" x="0" y="12323" w="256" h="215" oX="0" oY="19" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-13" x="0" y="12104" w="256" h="219" oX="0" oY="16" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-14" x="0" y="11880" w="256" h="224" oX="0" oY="13" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-15" x="0" y="11653" w="256" h="227" oX="0" oY="10" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-16" x="0" y="11423" w="256" h="230" oX="0" oY="7" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-17" x="0" y="10263" w="256" h="232" oX="0" oY="5" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-18" x="0" y="7921" w="256" h="235" oX="0" oY="2" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-19" x="0" y="7210" w="256" h="237" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-20" x="0" y="7447" w="256" h="237" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-21" x="0" y="10495" w="256" h="232" oX="0" oY="6" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-22" x="0" y="10727" w="256" h="232" oX="0" oY="5" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-23" x="0" y="10959" w="256" h="232" oX="0" oY="5" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-24" x="0" y="11191" w="256" h="232" oX="0" oY="5" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-25" x="0" y="9797" w="256" h="233" oX="0" oY="4" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-26" x="0" y="10030" w="256" h="233" oX="0" oY="4" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-27" x="0" y="8861" w="256" h="234" oX="0" oY="3" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-28" x="0" y="9095" w="256" h="234" oX="0" oY="3" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-29" x="0" y="9329" w="256" h="234" oX="0" oY="3" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-30" x="0" y="9563" w="256" h="234" oX="0" oY="2" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-31" x="0" y="8156" w="256" h="235" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-32" x="0" y="8391" w="256" h="235" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-33" x="0" y="8626" w="256" h="235" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-34" x="0" y="7684" w="256" h="237" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-35" x="0" y="6972" w="256" h="238" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-36" x="0" y="6733" w="256" h="239" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-37" x="0" y="6493" w="256" h="240" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-38" x="0" y="6252" w="256" h="241" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-39" x="0" y="6010" w="256" h="242" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-40" x="0" y="5767" w="256" h="243" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-41" x="0" y="5279" w="256" h="244" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-42" x="0" y="5523" w="256" h="244" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-43" x="0" y="5034" w="256" h="245" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-44" x="0" y="4788" w="256" h="246" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-45" x="0" y="4541" w="256" h="247" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-46" x="0" y="4293" w="256" h="248" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-47" x="0" y="4044" w="256" h="249" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-48" x="0" y="3794" w="256" h="250" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-49" x="0" y="3543" w="256" h="251" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-50" x="0" y="2283" w="256" h="252" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-51" x="0" y="1271" w="256" h="253" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-52" x="0" y="255" w="256" h="254" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-53" x="0" y="0" w="256" h="255" oX="0" oY="1" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-54" x="0" y="509" w="256" h="254" oX="0" oY="2" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-55" x="0" y="763" w="256" h="254" oX="0" oY="2" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-56" x="0" y="1017" w="256" h="254" oX="0" oY="2" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-57" x="0" y="2535" w="256" h="252" oX="0" oY="3" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-58" x="0" y="1524" w="256" h="253" oX="0" oY="3" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-59" x="0" y="1777" w="256" h="253" oX="0" oY="3" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-60" x="0" y="2030" w="256" h="253" oX="0" oY="3" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-61" x="0" y="2787" w="256" h="252" oX="0" oY="4" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-62" x="0" y="3039" w="256" h="252" oX="0" oY="4" oW="256" oH="256"/>
+    <sprite n="Explosion_002_Tile_8x8_256x256-63" x="0" y="3291" w="256" h="252" oX="0" oY="4" oW="256" oH="256"/>
+</TextureAtlas>

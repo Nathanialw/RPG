@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:3f9a967a00c259298c4964646e0dedd6:49de17d396543c899eb8481e978dc10f:370901b85b4ef2c3503985e52760bad7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="15_FlashBurst02DkBlue.png" width="370" height="242">
+    <sprite n="15 FlashBurst02DkBlue -0" x="201" y="181" w="48" h="46" oX="24" oY="24" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -1" x="51" y="187" w="48" h="50" oX="24" oY="21" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -2" x="151" y="185" w="48" h="50" oX="24" oY="21" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -3" x="1" y="187" w="48" h="51" oX="24" oY="21" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -4" x="101" y="185" w="48" h="56" oX="24" oY="21" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -5" x="251" y="176" w="51" h="64" oX="23" oY="17" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -6" x="307" y="170" w="57" h="70" oX="20" oY="14" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -7" x="307" y="93" w="62" h="75" oX="18" oY="12" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -8" x="238" y="94" w="67" h="80" oX="15" oY="10" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -9" x="165" y="95" w="71" h="84" oX="13" oY="8" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -10" x="88" y="95" w="75" h="88" oX="11" oY="6" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -11" x="258" y="1" w="79" h="90" oX="9" oY="5" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -12" x="175" y="1" w="81" h="91" oX="8" oY="5" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -13" x="90" y="1" w="83" h="92" oX="7" oY="4" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -14" x="1" y="94" w="85" h="91" oX="6" oY="5" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02DkBlue -15" x="1" y="1" w="87" h="91" oX="5" oY="5" oW="96" oH="96"/>
+</TextureAtlas>

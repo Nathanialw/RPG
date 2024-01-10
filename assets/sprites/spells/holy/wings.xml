@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:872794bf37e3731804a904a8912c0721:c542c8615dcfdb9561fccba4aaa6c586:d1cd9e3a593e65075133383b30e12412$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="wings.png" width="2039" height="1179">
+    <sprite n="wings-0" x="1068" y="899" w="253" h="89" oX="64" oY="148" oW="384" oH="384"/>
+    <sprite n="wings-1" x="1068" y="990" w="266" h="98" oX="58" oY="141" oW="384" oH="384"/>
+    <sprite n="wings-2" x="1702" y="632" w="278" h="110" oX="52" oY="132" oW="384" oH="384"/>
+    <sprite n="wings-3" x="1001" y="537" w="290" h="120" oX="47" oY="124" oW="384" oH="384"/>
+    <sprite n="wings-4" x="698" y="366" w="301" h="133" oX="41" oY="114" oW="384" oH="384"/>
+    <sprite n="wings-5" x="341" y="246" w="310" h="145" oX="37" oY="105" oW="384" oH="384"/>
+    <sprite n="wings-6" x="1031" y="223" w="318" h="158" oX="33" oY="95" oW="384" oH="384"/>
+    <sprite n="wings-7" x="1711" y="122" w="326" h="171" oX="29" oY="85" oW="384" oH="384"/>
+    <sprite n="wings-8" x="1" y="973" w="332" h="184" oX="26" oY="75" oW="384" oH="384"/>
+    <sprite n="wings-9" x="1" y="774" w="338" h="197" oX="23" oY="65" oW="384" oH="384"/>
+    <sprite n="wings-10" x="1371" y="1" w="338" h="207" oX="23" oY="57" oW="384" oH="384"/>
+    <sprite n="wings-11" x="1027" y="1" w="342" h="220" oX="21" oY="46" oW="384" oH="384"/>
+    <sprite n="wings-12" x="685" y="1" w="340" h="230" oX="22" oY="38" oW="384" oH="384"/>
+    <sprite n="wings-13" x="341" y="1" w="342" h="243" oX="21" oY="27" oW="384" oH="384"/>
+    <sprite n="wings-14" x="1" y="1" w="338" h="251" oX="23" oY="19" oW="384" oH="384"/>
+    <sprite n="wings-15" x="1" y="254" w="330" h="258" oX="27" oY="12" oW="384" oH="384"/>
+    <sprite n="wings-16" x="1" y="514" w="316" h="258" oX="34" oY="9" oW="384" oH="384"/>
+    <sprite n="wings-17" x="705" y="605" w="256" h="210" oX="64" oY="33" oW="384" oH="384"/>
+    <sprite n="wings-18" x="1556" y="1095" w="208" h="77" oX="102" oY="128" oW="384" oH="384"/>
+    <sprite n="wings-19" x="1336" y="1085" w="218" h="80" oX="98" oY="127" oW="384" oH="384"/>
+    <sprite n="wings-20" x="1611" y="1011" w="223" h="82" oX="96" oY="126" oW="384" oH="384"/>
+    <sprite n="wings-21" x="1611" y="926" w="234" h="83" oX="91" oY="125" oW="384" oH="384"/>
+    <sprite n="wings-22" x="1689" y="839" w="239" h="85" oX="88" oY="125" oW="384" oH="384"/>
+    <sprite n="wings-23" x="1068" y="1090" w="249" h="88" oX="84" oY="124" oW="384" oH="384"/>
+    <sprite n="wings-24" x="1066" y="808" w="255" h="89" oX="81" oY="124" oW="384" oH="384"/>
+    <sprite n="wings-25" x="1702" y="744" w="267" h="93" oX="76" oY="122" oW="384" oH="384"/>
+    <sprite n="wings-26" x="1336" y="987" w="273" h="96" oX="73" oY="121" oW="384" oH="384"/>
+    <sprite n="wings-27" x="1323" y="886" w="286" h="99" oX="67" oY="120" oW="384" oH="384"/>
+    <sprite n="wings-28" x="707" y="501" w="292" h="102" oX="64" oY="119" oW="384" oH="384"/>
+    <sprite n="wings-29" x="1708" y="524" w="306" h="106" oX="57" oY="119" oW="384" oH="384"/>
+    <sprite n="wings-30" x="1711" y="412" w="312" h="110" oX="54" oY="119" oW="384" oH="384"/>
+    <sprite n="wings-31" x="1711" y="295" w="323" h="115" oX="48" oY="118" oW="384" oH="384"/>
+    <sprite n="wings-32" x="1711" y="1" w="327" h="119" oX="45" oY="118" oW="384" oH="384"/>
+    <sprite n="wings-33" x="1371" y="210" w="338" h="128" oX="36" oY="116" oW="384" oH="384"/>
+    <sprite n="wings-34" x="685" y="233" w="344" h="131" oX="33" oY="115" oW="384" oH="384"/>
+    <sprite n="wings-35" x="1351" y="340" w="358" h="135" oX="25" oY="116" oW="384" oH="384"/>
+    <sprite n="wings-36" x="333" y="393" w="363" h="137" oX="21" oY="118" oW="384" oH="384"/>
+    <sprite n="wings-37" x="1347" y="477" w="359" h="130" oX="15" oY="126" oW="384" oH="384"/>
+    <sprite n="wings-38" x="1330" y="751" w="357" h="133" oX="14" oY="127" oW="384" oH="384"/>
+    <sprite n="wings-39" x="341" y="863" w="364" h="138" oX="13" oY="129" oW="384" oH="384"/>
+    <sprite n="wings-40" x="1330" y="609" w="370" h="140" oX="10" oY="130" oW="384" oH="384"/>
+    <sprite n="wings-41" x="335" y="1003" w="380" h="145" oX="4" oY="133" oW="384" oH="384"/>
+    <sprite n="wings-42" x="963" y="659" w="365" h="147" oX="1" oY="135" oW="384" oH="384"/>
+    <sprite n="wings-43" x="1001" y="383" w="344" h="152" oX="27" oY="138" oW="384" oH="384"/>
+    <sprite n="wings-44" x="717" y="978" w="349" h="154" oX="25" oY="140" oW="384" oH="384"/>
+    <sprite n="wings-45" x="707" y="817" w="357" h="159" oX="21" oY="144" oW="384" oH="384"/>
+    <sprite n="wings-46" x="341" y="700" w="362" h="161" oX="19" oY="146" oW="384" oH="384"/>
+    <sprite n="wings-47" x="319" y="532" w="369" h="166" oX="15" oY="151" oW="384" oH="384"/>
+</TextureAtlas>

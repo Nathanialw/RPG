@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:7dcfc110758f8cd0ddac680582777621:c90b07dc218ea93cc5ab07b73e9af269:325750560c3a00fe228f86b128e6ced0$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="10_CircleFlame_1Grey.png" width="378" height="353">
+    <sprite n="10 CircleFlame 1Grey-0" x="334" y="117" w="38" h="9" oX="31" oY="87" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-1" x="334" y="105" w="40" h="10" oX="30" oY="86" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-2" x="334" y="89" w="41" h="14" oX="30" oY="82" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-3" x="277" y="331" w="42" h="20" oX="30" oY="76" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-4" x="327" y="319" w="42" h="28" oX="30" oY="68" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-5" x="333" y="223" w="44" h="36" oX="29" oY="60" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-6" x="333" y="176" w="44" h="45" oX="29" oY="51" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-7" x="327" y="263" w="45" h="54" oX="28" oY="42" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-8" x="277" y="263" w="48" h="66" oX="26" oY="30" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-9" x="223" y="264" w="52" h="79" oX="24" oY="17" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-10" x="59" y="87" w="55" h="87" oX="23" oY="9" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-11" x="281" y="89" w="51" h="85" oX="25" oY="11" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-12" x="116" y="87" w="52" h="87" oX="23" oY="9" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-13" x="116" y="176" w="53" h="86" oX="22" oY="10" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-14" x="117" y="264" w="52" h="87" oX="25" oY="9" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-15" x="1" y="181" w="56" h="85" oX="22" oY="11" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-16" x="59" y="264" w="56" h="85" oX="22" oY="11" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-17" x="280" y="176" w="51" h="85" oX="24" oY="11" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-18" x="239" y="1" w="55" h="85" oX="22" oY="11" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-19" x="1" y="268" w="56" h="84" oX="23" oY="12" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-20" x="1" y="92" w="56" h="87" oX="23" oY="9" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-21" x="121" y="1" w="58" h="83" oX="21" oY="13" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-22" x="225" y="175" w="53" h="85" oX="23" oY="11" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-23" x="181" y="1" w="56" h="85" oX="21" oY="11" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-24" x="59" y="1" w="60" h="84" oX="18" oY="12" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-25" x="171" y="264" w="50" h="87" oX="24" oY="9" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-26" x="170" y="88" w="53" h="86" oX="22" oY="10" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-27" x="296" y="1" w="54" h="86" oX="22" oY="10" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-28" x="1" y="1" w="56" h="89" oX="19" oY="7" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-29" x="171" y="176" w="52" h="86" oX="24" oY="10" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-30" x="59" y="176" w="55" h="86" oX="21" oY="10" oW="96" oH="96"/>
+    <sprite n="10 CircleFlame 1Grey-31" x="225" y="88" w="54" h="85" oX="23" oY="11" oW="96" oH="96"/>
+</TextureAtlas>

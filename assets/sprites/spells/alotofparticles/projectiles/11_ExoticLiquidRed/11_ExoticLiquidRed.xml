@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:4adcb92e395d84dcc8452df3a82cfa15:c61d522e6a0cf50591c31bf72acd2e7a:cbe48ee35c775d8c02d4bf69856a2f14$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="11_ExoticLiquidRed.png" width="3136" height="196">
+    <sprite n="11 ExoticLiquidRed -0" x="1" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -1" x="1" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -2" x="99" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -3" x="99" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -4" x="197" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -5" x="197" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -6" x="295" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -7" x="295" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -8" x="393" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -9" x="393" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -10" x="491" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -11" x="491" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -12" x="589" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -13" x="589" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -14" x="687" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -15" x="687" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -16" x="785" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -17" x="785" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -18" x="883" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -19" x="883" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -20" x="981" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -21" x="981" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -22" x="1079" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -23" x="1079" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -24" x="1177" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -25" x="1177" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -26" x="1275" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -27" x="1275" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -28" x="1373" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -29" x="1373" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -30" x="1471" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -31" x="1471" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -32" x="1569" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -33" x="1569" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -34" x="1667" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -35" x="1667" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -36" x="1765" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -37" x="1765" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -38" x="1863" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -39" x="1863" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -40" x="1961" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -41" x="1961" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -42" x="2059" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -43" x="2059" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -44" x="2157" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -45" x="2157" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -46" x="2255" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -47" x="2255" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -48" x="2353" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -49" x="2353" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -50" x="2451" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -51" x="2451" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -52" x="2549" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -53" x="2549" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -54" x="2647" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -55" x="2647" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -56" x="2745" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -57" x="2745" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -58" x="2843" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -59" x="2843" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -60" x="2941" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -61" x="2941" y="99" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -62" x="3039" y="1" w="96" h="96"/>
+    <sprite n="11 ExoticLiquidRed -63" x="3039" y="99" w="96" h="96"/>
+</TextureAtlas>

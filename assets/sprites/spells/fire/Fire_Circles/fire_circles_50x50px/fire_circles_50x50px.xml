@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:af202797d9453119e65a6899e9c74b64:88b3c84d95193582e9d366f1e24c6034:65e523e0a0bb2d13e1e0cebb28275545$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="fire_circles_50x50px.png" width="247" height="329">
+    <sprite n="fire_circles_50x50px-0" x="0" y="0" w="36" h="31" oX="7" oY="12" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-1" x="36" y="0" w="36" h="31" oX="7" oY="12" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-2" x="72" y="0" w="36" h="31" oX="7" oY="12" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-3" x="144" y="0" w="36" h="32" oX="7" oY="11" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-4" x="0" y="31" w="36" h="33" oX="7" oY="10" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-5" x="108" y="31" w="36" h="34" oX="7" oY="9" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-6" x="36" y="64" w="36" h="35" oX="7" oY="8" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-7" x="180" y="66" w="36" h="36" oX="7" oY="7" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-8" x="0" y="98" w="36" h="36" oX="7" oY="7" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-9" x="211" y="138" w="36" h="37" oX="7" oY="6" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-10" x="0" y="170" w="35" h="37" oX="8" oY="6" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-11" x="35" y="171" w="34" h="37" oX="9" oY="6" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-12" x="69" y="171" w="34" h="37" oX="9" oY="6" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-13" x="103" y="172" w="34" h="37" oX="9" oY="6" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-14" x="171" y="174" w="34" h="38" oX="9" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-15" x="205" y="175" w="34" h="38" oX="9" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-16" x="0" y="207" w="34" h="38" oX="9" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-17" x="34" y="208" w="34" h="38" oX="9" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-18" x="68" y="208" w="32" h="38" oX="11" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-19" x="100" y="209" w="32" h="38" oX="11" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-20" x="132" y="210" w="33" h="38" oX="10" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-21" x="165" y="212" w="34" h="38" oX="9" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-22" x="199" y="213" w="35" h="38" oX="8" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-23" x="34" y="246" w="36" h="38" oX="7" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-24" x="70" y="247" w="36" h="38" oX="7" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-25" x="36" y="99" w="36" h="36" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-26" x="72" y="99" w="36" h="36" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-27" x="108" y="100" w="36" h="36" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-28" x="144" y="101" w="36" h="36" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-29" x="180" y="102" w="36" h="36" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-30" x="0" y="134" w="36" h="36" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-31" x="72" y="64" w="36" h="35" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-32" x="108" y="65" w="36" h="35" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-33" x="180" y="0" w="36" h="32" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-34" x="36" y="31" w="36" h="33" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-35" x="144" y="32" w="36" h="34" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-36" x="144" y="66" w="36" h="35" oX="6" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-37" x="36" y="135" w="34" h="36" oX="7" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-38" x="70" y="135" w="34" h="36" oX="7" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-39" x="137" y="173" w="34" h="37" oX="7" oY="5" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-40" x="0" y="245" w="34" h="38" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-41" x="140" y="250" w="34" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-42" x="106" y="248" w="34" h="38" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-43" x="174" y="251" w="32" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-44" x="206" y="251" w="32" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-45" x="0" y="283" w="32" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-46" x="32" y="284" w="32" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-47" x="216" y="0" w="30" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-48" x="216" y="39" w="31" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-49" x="64" y="285" w="32" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-50" x="96" y="286" w="33" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-51" x="129" y="289" w="34" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-52" x="163" y="290" w="35" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-53" x="198" y="290" w="35" h="39" oX="7" oY="4" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-54" x="104" y="136" w="35" h="36" oX="7" oY="7" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-55" x="139" y="137" w="36" h="36" oX="7" oY="7" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-56" x="175" y="138" w="36" h="36" oX="7" oY="7" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-57" x="180" y="32" w="36" h="34" oX="7" oY="9" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-58" x="0" y="64" w="36" h="34" oX="7" oY="9" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-59" x="72" y="31" w="36" h="33" oX="7" oY="10" oW="50" oH="50"/>
+    <sprite n="fire_circles_50x50px-60" x="108" y="0" w="36" h="31" oX="7" oY="12" oW="50" oH="50"/>
+</TextureAtlas>

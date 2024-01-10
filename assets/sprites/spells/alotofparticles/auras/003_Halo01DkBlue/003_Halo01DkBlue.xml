@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:1c472b0103e5f503629a17e4e766a60d:3403093c40f92eb0232defeef47c3bfd:27c8f61372f7ad23d999bfe691da13c3$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="003_Halo01DkBlue.png" width="490" height="489">
+    <sprite n="003 Halo01DkBlue -0" x="1" y="1" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -1" x="1" y="99" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -2" x="1" y="197" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -3" x="1" y="295" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -4" x="99" y="1" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -5" x="197" y="1" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -6" x="295" y="1" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -7" x="393" y="1" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -8" x="393" y="294" w="95" h="96" oX="1" oY="0" oW="96" oH="96"/>
+    <sprite n="003 Halo01DkBlue -9" x="295" y="392" w="95" h="96" oX="1" oY="0" oW="96" oH="96"/>
+    <sprite n="003 Halo01DkBlue -10" x="392" y="392" w="95" h="96" oX="1" oY="0" oW="96" oH="96"/>
+    <sprite n="003 Halo01DkBlue -11" x="99" y="99" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -12" x="99" y="197" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -13" x="99" y="295" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -14" x="197" y="99" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -15" x="295" y="99" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -16" x="393" y="99" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -17" x="197" y="197" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -18" x="197" y="295" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -19" x="295" y="197" w="96" h="96"/>
+    <sprite n="003 Halo01DkBlue -20" x="1" y="393" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="003 Halo01DkBlue -21" x="99" y="393" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="003 Halo01DkBlue -22" x="197" y="393" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="003 Halo01DkBlue -23" x="393" y="197" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+</TextureAtlas>

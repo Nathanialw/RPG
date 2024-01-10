@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:8beb5ef096c63c0380bcc7f19c7dabbe:1eda71d63970f5a420c83e390b078c61:aba3f0e9291db5ddef13e337a181cb3f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="15_FlashBurst02Yellow.png" width="126" height="644">
+    <sprite n="15 FlashBurst02Yellow -0" x="72" y="351" w="48" h="46" oX="24" oY="24" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -1" x="76" y="124" w="48" h="50" oX="24" oY="21" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -2" x="76" y="176" w="48" h="50" oX="24" oY="21" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -3" x="72" y="299" w="48" h="50" oX="24" oY="21" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -4" x="77" y="66" w="48" h="56" oX="24" oY="20" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -5" x="77" y="1" w="48" h="63" oX="24" oY="16" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -6" x="74" y="228" w="50" h="69" oX="23" oY="13" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -7" x="70" y="399" w="55" h="75" oX="20" oY="10" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -8" x="65" y="558" w="59" h="80" oX="18" oY="7" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -9" x="1" y="558" w="62" h="85" oX="16" oY="4" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -10" x="1" y="468" w="65" h="88" oX="15" oY="2" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -11" x="1" y="375" w="67" h="91" oX="13" oY="0" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -12" x="1" y="281" w="69" h="92" oX="12" oY="0" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -13" x="1" y="187" w="71" h="92" oX="11" oY="0" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -14" x="1" y="94" w="73" h="91" oX="10" oY="0" oW="96" oH="96"/>
+    <sprite n="15 FlashBurst02Yellow -15" x="1" y="1" w="74" h="91" oX="9" oY="0" oW="96" oH="96"/>
+</TextureAtlas>

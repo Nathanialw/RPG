@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:804bb2966b62c0d0fe65830c7a3c46da:ae90a0a3c7f0643de6463ab4df8c361c:f1ef0e60beaae2ca357be7af7d7c1cd9$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="22_TorchDrippingGreen.png" width="104" height="994">
+    <sprite n="22 TorchDrippingGreen -0" x="1" y="820" w="31" h="86" oX="33" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -1" x="32" y="640" w="32" h="87" oX="32" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -2" x="66" y="736" w="32" h="85" oX="32" oY="3" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -3" x="37" y="193" w="34" h="90" oX="31" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -4" x="39" y="98" w="34" h="93" oX="31" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -5" x="1" y="99" w="34" h="93" oX="31" oY="2" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -6" x="1" y="194" w="31" h="96" oX="33" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -7" x="1" y="908" w="31" h="85" oX="33" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -8" x="34" y="729" w="30" h="85" oX="33" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -9" x="34" y="903" w="32" h="84" oX="32" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -10" x="68" y="909" w="33" h="79" oX="32" oY="6" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -11" x="32" y="461" w="34" h="85" oX="31" oY="1" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -12" x="34" y="285" w="35" h="86" oX="31" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -13" x="32" y="373" w="35" h="86" oX="31" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -14" x="68" y="475" w="34" h="85" oX="31" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -15" x="66" y="562" w="33" h="85" oX="31" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -16" x="68" y="823" w="32" h="84" oX="32" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -17" x="66" y="649" w="33" h="85" oX="31" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -18" x="69" y="386" w="34" h="87" oX="31" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -19" x="1" y="729" w="31" h="89" oX="32" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -20" x="32" y="548" w="32" h="90" oX="32" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -21" x="71" y="291" w="32" h="93" oX="30" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -22" x="39" y="1" w="34" h="95" oX="28" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -23" x="1" y="1" w="36" h="96" oX="26" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -24" x="1" y="569" w="29" h="85" oX="32" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -25" x="34" y="816" w="30" h="85" oX="32" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -26" x="1" y="480" w="29" h="87" oX="34" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -27" x="1" y="389" w="29" h="89" oX="34" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -28" x="75" y="96" w="28" h="91" oX="34" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -29" x="75" y="1" w="28" h="93" oX="35" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -30" x="1" y="292" w="29" h="95" oX="34" oY="0" oW="96" oH="96"/>
+    <sprite n="22 TorchDrippingGreen -31" x="73" y="193" w="29" h="96" oX="34" oY="0" oW="96" oH="96"/>
+</TextureAtlas>

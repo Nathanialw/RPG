@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:76f689f29efd7069913899affd10f894:d21e56d2abb70059e8191f095110d698:aef72ef744a518ac599e62449e45bd88$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="001_WhirlPoolThinLtDarkGrey.png" width="98" height="3510">
+    <sprite n="001 WhirlPoolThinLtDarkGrey -0" x="1" y="1" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -1" x="1" y="99" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -2" x="1" y="197" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -3" x="1" y="2633" w="95" h="96" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -4" x="1" y="3315" w="93" h="96" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -5" x="1" y="3021" w="94" h="96" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -6" x="1" y="3119" w="94" h="96" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -7" x="1" y="295" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -8" x="1" y="393" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -9" x="1" y="491" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -10" x="1" y="1863" w="96" h="95" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -11" x="1" y="1960" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -12" x="1" y="2251" w="96" h="94" oX="0" oY="2" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -13" x="1" y="2443" w="96" h="93" oX="0" oY="3" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -14" x="1" y="2347" w="96" h="94" oX="0" oY="2" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -15" x="1" y="2538" w="96" h="93" oX="0" oY="3" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -16" x="1" y="589" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -17" x="1" y="2731" w="95" h="96" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -18" x="1" y="2829" w="95" h="95" oX="1" oY="1" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -19" x="1" y="2926" w="95" h="93" oX="1" oY="3" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -20" x="1" y="3217" w="94" h="96" oX="2" oY="0" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -21" x="1" y="3413" w="92" h="96" oX="2" oY="0" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -22" x="1" y="687" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -23" x="1" y="785" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -24" x="1" y="883" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -25" x="1" y="981" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -26" x="1" y="1079" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -27" x="1" y="1177" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -28" x="1" y="1275" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -29" x="1" y="1373" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -30" x="1" y="1471" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -31" x="1" y="1569" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -32" x="1" y="1667" w="96" h="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -33" x="1" y="2057" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -34" x="1" y="2154" w="96" h="95" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="001 WhirlPoolThinLtDarkGrey -35" x="1" y="1765" w="96" h="96"/>
+</TextureAtlas>

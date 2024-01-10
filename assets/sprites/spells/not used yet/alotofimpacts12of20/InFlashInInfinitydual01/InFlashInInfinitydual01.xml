@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:aff082578653d7f3adeda921b85a00d6:94c9f0f6a063b11c6b4dce56f876ca40:5b0cda0cfdac7119c69c82ae5bdd8def$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="InFlashInInfinitydual01.png" width="455" height="231">
+    <sprite n="InFlashInInfinitydual01-0" x="386" y="1" w="65" h="68" oX="15" oY="13" oW="96" oH="96"/>
+    <sprite n="InFlashInInfinitydual01-1" x="197" y="98" w="92" h="92" oX="2" oY="1" oW="96" oH="96"/>
+    <sprite n="InFlashInInfinitydual01-2" x="1" y="1" w="96" h="96"/>
+    <sprite n="InFlashInInfinitydual01-3" x="1" y="99" w="96" h="96"/>
+    <sprite n="InFlashInInfinitydual01-4" x="99" y="1" w="96" h="96"/>
+    <sprite n="InFlashInInfinitydual01-5" x="99" y="99" w="96" h="96"/>
+    <sprite n="InFlashInInfinitydual01-6" x="294" y="1" w="90" h="90" oX="3" oY="4" oW="96" oH="96"/>
+    <sprite n="InFlashInInfinitydual01-7" x="377" y="140" w="77" h="77" oX="10" oY="10" oW="96" oH="96"/>
+    <sprite n="InFlashInInfinitydual01-8" x="197" y="1" w="95" h="95" oX="1" oY="1" oW="96" oH="96"/>
+    <sprite n="InFlashInInfinitydual01-9" x="294" y="93" w="81" h="81" oX="8" oY="8" oW="96" oH="96"/>
+    <sprite n="InFlashInInfinitydual01-10" x="386" y="71" w="66" h="67" oX="15" oY="15" oW="96" oH="96"/>
+    <sprite n="InFlashInInfinitydual01-11" x="291" y="176" w="52" h="53" oX="22" oY="22" oW="96" oH="96"/>
+    <sprite n="InFlashInInfinitydual01-12" x="197" y="192" w="38" h="38" oX="29" oY="29" oW="96" oH="96"/>
+    <sprite n="InFlashInInfinitydual01-13" x="1" y="197" w="24" h="24" oX="36" oY="36" oW="96" oH="96"/>
+</TextureAtlas>

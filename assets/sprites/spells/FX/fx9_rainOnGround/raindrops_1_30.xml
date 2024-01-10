@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:9242c0ef45e4babac86ba3858cb7cca2:0f81478afb72e687cc65c2e0740efb97:94405fa7b226fffec8294d2258e65106$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="raindrops_1_30.png" width="1911" height="63">
+    <sprite n="raindrops_1_30_1" x="776" y="0" w="62" h="63" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_2" x="585" y="0" w="64" h="63" oX="0" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_3" x="649" y="0" w="64" h="63" oX="0" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_4" x="0" y="0" w="65" h="63"/>
+    <sprite n="raindrops_1_30_5" x="65" y="0" w="65" h="63"/>
+    <sprite n="raindrops_1_30_6" x="130" y="0" w="65" h="63"/>
+    <sprite n="raindrops_1_30_7" x="195" y="0" w="65" h="63"/>
+    <sprite n="raindrops_1_30_8" x="260" y="0" w="65" h="63"/>
+    <sprite n="raindrops_1_30_9" x="325" y="0" w="65" h="63"/>
+    <sprite n="raindrops_1_30_10" x="390" y="0" w="65" h="63"/>
+    <sprite n="raindrops_1_30_11" x="455" y="0" w="65" h="63"/>
+    <sprite n="raindrops_1_30_12" x="520" y="0" w="65" h="63"/>
+    <sprite n="raindrops_1_30_13" x="1209" y="0" w="65" h="62" oX="0" oY="1" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_14" x="1397" y="0" w="65" h="61" oX="0" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_15" x="1462" y="0" w="65" h="61" oX="0" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_16" x="1527" y="0" w="65" h="61" oX="0" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_17" x="1592" y="0" w="65" h="61" oX="0" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_18" x="1657" y="0" w="65" h="61" oX="0" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_19" x="1722" y="0" w="65" h="61" oX="0" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_20" x="1787" y="0" w="63" h="61" oX="0" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_21" x="1850" y="0" w="61" h="61" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_22" x="1336" y="0" w="61" h="62" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_23" x="1274" y="0" w="62" h="62" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_24" x="838" y="0" w="62" h="63" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_25" x="900" y="0" w="62" h="63" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_26" x="962" y="0" w="62" h="63" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_27" x="1024" y="0" w="62" h="63" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_28" x="1086" y="0" w="62" h="63" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_29" x="1148" y="0" w="61" h="63" oX="2" oY="0" oW="65" oH="63"/>
+    <sprite n="raindrops_1_30_30" x="713" y="0" w="63" h="63" oX="2" oY="0" oW="65" oH="63"/>
+</TextureAtlas>

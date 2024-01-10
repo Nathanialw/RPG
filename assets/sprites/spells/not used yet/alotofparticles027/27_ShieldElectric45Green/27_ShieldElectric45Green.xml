@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:a6b66dd578bea259ef40d3b11e0758f4:5a97c6e7d93cd501f82c072b475f1fbc:6a0cee3cfb3d8852b498b44d9bd26eb3$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="27_ShieldElectric45Green.png" width="2700" height="90">
+    <sprite n="27 ShieldElectric45Green -0" x="1" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -1" x="91" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -2" x="181" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -3" x="271" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -4" x="361" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -5" x="451" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -6" x="541" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -7" x="631" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -8" x="721" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -9" x="811" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -10" x="901" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -11" x="991" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -12" x="1081" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -13" x="1171" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -14" x="1261" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -15" x="1351" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -16" x="1441" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -17" x="1531" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -18" x="1621" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -19" x="1711" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -20" x="1801" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -21" x="1891" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -22" x="1981" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -23" x="2071" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -24" x="2161" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -25" x="2251" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -26" x="2341" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -27" x="2431" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -28" x="2521" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+    <sprite n="27 ShieldElectric45Green -29" x="2611" y="1" w="88" h="88" oX="4" oY="4" oW="96" oH="96"/>
+</TextureAtlas>

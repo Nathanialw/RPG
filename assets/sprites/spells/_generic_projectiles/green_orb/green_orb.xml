@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:d05efcfb03f173872bc152403bc6dbed:a8c768d45ea15133e25bb36090963056:a6c48ee6c9187b94d4fb51f4d296cf9b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="green_orb.png" width="2046" height="66">
+    <sprite n="20000" x="1433" y="1" w="56" h="64" oX="5" oY="0" oW="64" oH="64"/>
+    <sprite n="20001" x="1491" y="1" w="58" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="20002" x="1551" y="1" w="58" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="20003" x="1611" y="1" w="60" h="64" oX="3" oY="0" oW="64" oH="64"/>
+    <sprite n="20004" x="1673" y="1" w="60" h="64" oX="3" oY="0" oW="64" oH="64"/>
+    <sprite n="20005" x="1735" y="1" w="62" h="64" oX="2" oY="0" oW="64" oH="64"/>
+    <sprite n="20006" x="1799" y="1" w="62" h="64" oX="2" oY="0" oW="64" oH="64"/>
+    <sprite n="20007" x="589" y="1" w="62" h="62" oX="2" oY="0" oW="64" oH="64"/>
+    <sprite n="20008" x="393" y="1" w="63" h="61" oX="1" oY="0" oW="64" oH="64"/>
+    <sprite n="20009" x="1" y="1" w="63" h="59" oX="1" oY="2" oW="64" oH="64"/>
+    <sprite n="20010" x="66" y="1" w="64" h="59" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="20011" x="132" y="1" w="63" h="60" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="20012" x="458" y="1" w="64" h="61" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="20013" x="653" y="1" w="64" h="62" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="20014" x="197" y="1" w="64" h="60" oX="0" oY="3" oW="64" oH="64"/>
+    <sprite n="20015" x="263" y="1" w="63" h="60" oX="1" oY="3" oW="64" oH="64"/>
+    <sprite n="20016" x="719" y="1" w="63" h="62" oX="1" oY="2" oW="64" oH="64"/>
+    <sprite n="20017" x="784" y="1" w="63" h="62" oX="1" oY="2" oW="64" oH="64"/>
+    <sprite n="20018" x="328" y="1" w="63" h="60" oX="1" oY="2" oW="64" oH="64"/>
+    <sprite n="20019" x="849" y="1" w="64" h="62" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="20020" x="524" y="1" w="63" h="61" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="20021" x="1110" y="1" w="62" h="63" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="20022" x="1174" y="1" w="62" h="63" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="20023" x="1238" y="1" w="61" h="63" oX="1" oY="1" oW="64" oH="64"/>
+    <sprite n="20024" x="915" y="1" w="62" h="62" oX="1" oY="2" oW="64" oH="64"/>
+    <sprite n="20025" x="979" y="1" w="63" h="62" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="20026" x="1044" y="1" w="64" h="62" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="20027" x="1301" y="1" w="64" h="63" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="20028" x="1367" y="1" w="64" h="63" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="20029" x="1863" y="1" w="63" h="64" oX="1" oY="0" oW="64" oH="64"/>
+    <sprite n="20030" x="1928" y="1" w="59" h="64" oX="1" oY="0" oW="64" oH="64"/>
+    <sprite n="20031" x="1989" y="1" w="56" h="64" oX="5" oY="0" oW="64" oH="64"/>
+</TextureAtlas>

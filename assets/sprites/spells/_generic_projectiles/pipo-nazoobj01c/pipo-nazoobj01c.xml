@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:fb7e440a8ba40c4e3e88f4da35380189:bb2efab0bb0702f676fe6a2f6618d4a5:e9efd8effdb79518466525a6932dec97$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="pipo-pipo-nazoobj01c.png" width="970" height="1114">
+    <sprite n="pipo-nazoobj01c_192-0" x="148" y="971" w="119" h="122" oX="37" oY="32" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-1" x="389" y="963" w="139" h="145" oX="26" oY="19" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-2" x="754" y="948" w="160" h="162" oX="18" oY="13" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-3" x="776" y="766" w="184" h="180" oX="8" oY="4" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-4" x="583" y="583" w="191" h="186" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-5" x="389" y="583" w="192" h="189" oX="0" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-6" x="1" y="1" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-7" x="195" y="1" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-8" x="389" y="1" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-9" x="583" y="1" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-10" x="777" y="1" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-11" x="1" y="195" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-12" x="1" y="389" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-13" x="1" y="583" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-14" x="1" y="777" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-15" x="195" y="195" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-16" x="195" y="389" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-17" x="195" y="583" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-18" x="195" y="777" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-19" x="389" y="195" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-20" x="583" y="195" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-21" x="777" y="195" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-22" x="389" y="389" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-23" x="583" y="389" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-24" x="777" y="389" w="192" h="192"/>
+    <sprite n="pipo-nazoobj01c_192-25" x="389" y="774" w="192" h="187" oX="0" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-26" x="776" y="583" w="192" h="181" oX="0" oY="2" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-27" x="583" y="771" w="188" h="174" oX="0" oY="6" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-28" x="583" y="947" w="169" h="159" oX="10" oY="13" oW="192" oH="192"/>
+    <sprite n="pipo-nazoobj01c_192-29" x="1" y="971" w="145" h="142" oX="23" oY="21" oW="192" oH="192"/>
+</TextureAtlas>

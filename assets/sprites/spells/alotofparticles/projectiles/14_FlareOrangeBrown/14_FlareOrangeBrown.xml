@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:492148fa521fc2492d44a7b3b7c56352:ce3bce0c7112ea69b3aa36ec220a6982:b5c4432eabaa1eeefc3705a66b1e05f7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="14_FlareOrangeBrown.png" width="98" height="3087">
+    <sprite n="14 FlareOrangeBrown -0" x="1" y="1748" w="96" h="94" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -1" x="1" y="99" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -2" x="1" y="196" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -3" x="1" y="293" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -4" x="1" y="390" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -5" x="1" y="487" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -6" x="1" y="584" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -7" x="1" y="681" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -8" x="1" y="778" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -9" x="1" y="2228" w="95" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -10" x="1" y="2519" w="95" h="94" oX="0" oY="2" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -11" x="1" y="2711" w="95" h="93" oX="0" oY="3" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -12" x="1" y="2806" w="95" h="92" oX="0" oY="4" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -13" x="1" y="2900" w="95" h="92" oX="0" oY="4" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -14" x="1" y="2994" w="95" h="92" oX="0" oY="4" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -15" x="1" y="2615" w="95" h="94" oX="0" oY="2" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -16" x="1" y="2325" w="95" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -17" x="1" y="2422" w="95" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -18" x="1" y="875" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -19" x="1" y="1" w="96" h="96"/>
+    <sprite n="14 FlareOrangeBrown -20" x="1" y="972" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -21" x="1" y="1069" w="96" h="95" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -22" x="1" y="1844" w="96" h="94" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -23" x="1" y="1166" w="96" h="95" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -24" x="1" y="1263" w="96" h="95" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -25" x="1" y="1360" w="96" h="95" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -26" x="1" y="1457" w="96" h="95" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -27" x="1" y="1554" w="96" h="95" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -28" x="1" y="1651" w="96" h="95" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -29" x="1" y="1940" w="96" h="94" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -30" x="1" y="2036" w="96" h="94" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="14 FlareOrangeBrown -31" x="1" y="2132" w="96" h="94" oX="0" oY="1" oW="96" oH="96"/>
+</TextureAtlas>

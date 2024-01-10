@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:8ee7401c1457ff96e87f2d4c94950569:3edc652ce9221c7cff7f17cbfc05d3e5:ca4403175f28137e5d0c56eee9860c68$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="ImpactMetal8GenInfinity.png" width="249" height="201">
+    <sprite n="ImpactMetal8GenInfinity-0" x="170" y="166" w="34" h="34" oX="32" oY="31" oW="96" oH="96"/>
+    <sprite n="ImpactMetal8GenInfinity-1" x="170" y="1" w="78" h="87" oX="16" oY="5" oW="96" oH="96"/>
+    <sprite n="ImpactMetal8GenInfinity-2" x="1" y="1" w="83" h="96" oX="13" oY="0" oW="96" oH="96"/>
+    <sprite n="ImpactMetal8GenInfinity-3" x="86" y="1" w="82" h="93" oX="14" oY="2" oW="96" oH="96"/>
+    <sprite n="ImpactMetal8GenInfinity-4" x="170" y="90" w="71" h="74" oX="16" oY="10" oW="96" oH="96"/>
+    <sprite n="ImpactMetal8GenInfinity-5" x="89" y="96" w="79" h="85" oX="12" oY="4" oW="96" oH="96"/>
+    <sprite n="ImpactMetal8GenInfinity-6" x="1" y="99" w="86" h="91" oX="9" oY="0" oW="96" oH="96"/>
+</TextureAtlas>

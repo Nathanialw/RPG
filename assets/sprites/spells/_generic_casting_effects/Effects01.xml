@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:9cf566ed4e73add3093cb35fb3531abf:3f0b73b0800dd4c0fbdc38241bcd82a9:50770f8bdf9d6aedaa5e945062af2697$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Effects01.png" width="899" height="435">
+    <sprite n="010000" x="842" y="1" w="3" h="3" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="010001" x="842" y="1" w="3" h="3" oX="0" oY="0" oW="256" oH="256"/>
+    <sprite n="010002" x="766" y="1" w="74" h="25" oX="91" oY="110" oW="256" oH="256"/>
+    <sprite n="010003" x="738" y="134" w="151" h="47" oX="52" oY="102" oW="256" oH="256"/>
+    <sprite n="010004" x="231" y="157" w="226" h="70" oX="15" oY="93" oW="256" oH="256"/>
+    <sprite n="010005" x="258" y="80" w="240" h="75" oX="8" oY="91" oW="256" oH="256"/>
+    <sprite n="010006" x="516" y="1" w="248" h="78" oX="4" oY="90" oW="256" oH="256"/>
+    <sprite n="010007" x="1" y="1" w="255" h="79" oX="0" oY="90" oW="256" oH="256"/>
+    <sprite n="010008" x="258" y="1" w="256" h="77" oX="0" oY="91" oW="256" oH="256"/>
+    <sprite n="010009" x="1" y="230" w="218" h="68" oX="19" oY="94" oW="256" oH="256"/>
+    <sprite n="010010" x="459" y="228" w="223" h="70" oX="16" oY="93" oW="256" oH="256"/>
+    <sprite n="010011" x="1" y="157" w="228" h="71" oX="14" oY="93" oW="256" oH="256"/>
+    <sprite n="010012" x="500" y="154" w="232" h="72" oX="12" oY="92" oW="256" oH="256"/>
+    <sprite n="010013" x="1" y="82" w="236" h="73" oX="10" oY="92" oW="256" oH="256"/>
+    <sprite n="010014" x="500" y="81" w="236" h="71" oX="10" oY="93" oW="256" oH="256"/>
+    <sprite n="010015" x="1" y="300" w="216" h="67" oX="20" oY="94" oW="256" oH="256"/>
+    <sprite n="010016" x="738" y="81" w="160" h="51" oX="48" oY="100" oW="256" oH="256"/>
+    <sprite n="010017" x="734" y="183" w="163" h="51" oX="46" oY="100" oW="256" oH="256"/>
+    <sprite n="010018" x="618" y="372" w="188" h="59" oX="34" oY="97" oW="256" oH="256"/>
+    <sprite n="010019" x="414" y="369" w="202" h="63" oX="27" oY="96" oW="256" oH="256"/>
+    <sprite n="010020" x="209" y="369" w="203" h="64" oX="26" oY="95" oW="256" oH="256"/>
+    <sprite n="010021" x="1" y="369" w="206" h="65" oX="25" oY="95" oW="256" oH="256"/>
+    <sprite n="010022" x="658" y="305" w="210" h="65" oX="23" oY="95" oW="256" oH="256"/>
+    <sprite n="010023" x="684" y="236" w="212" h="67" oX="22" oY="94" oW="256" oH="256"/>
+    <sprite n="010024" x="441" y="300" w="215" h="67" oX="20" oY="94" oW="256" oH="256"/>
+    <sprite n="010025" x="221" y="299" w="218" h="68" oX="19" oY="94" oW="256" oH="256"/>
+    <sprite n="010026" x="231" y="229" w="219" h="68" oX="18" oY="94" oW="256" oH="256"/>
+    <sprite n="010027" x="842" y="1" w="3" h="3" oX="0" oY="0" oW="256" oH="256"/>
+</TextureAtlas>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:f44a7e7c41f69f4744a962c3006012fc:0ebad11f078465e4866397b02d3f8997:2a143b2fd34156209d5f25b065cb78f2$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="highlight.png" width="400" height="20">
+    <sprite n="highlight-0" x="1" y="1" w="18" h="18"/>
+    <sprite n="highlight-1" x="21" y="1" w="18" h="18"/>
+    <sprite n="highlight-2" x="41" y="1" w="18" h="18"/>
+    <sprite n="highlight-3" x="61" y="1" w="18" h="18"/>
+    <sprite n="highlight-4" x="81" y="1" w="18" h="18"/>
+    <sprite n="highlight-5" x="101" y="1" w="18" h="18"/>
+    <sprite n="highlight-6" x="121" y="1" w="18" h="18"/>
+    <sprite n="highlight-7" x="141" y="1" w="18" h="18"/>
+    <sprite n="highlight-8" x="161" y="1" w="18" h="18"/>
+    <sprite n="highlight-9" x="181" y="1" w="18" h="18"/>
+    <sprite n="highlight-10" x="201" y="1" w="18" h="18"/>
+    <sprite n="highlight-11" x="221" y="1" w="18" h="18"/>
+    <sprite n="highlight-12" x="241" y="1" w="18" h="18"/>
+    <sprite n="highlight-13" x="261" y="1" w="18" h="18"/>
+    <sprite n="highlight-14" x="281" y="1" w="18" h="18"/>
+    <sprite n="highlight-15" x="301" y="1" w="18" h="18"/>
+    <sprite n="highlight-16" x="321" y="1" w="18" h="18"/>
+    <sprite n="highlight-17" x="341" y="1" w="18" h="18"/>
+    <sprite n="highlight-18" x="361" y="1" w="18" h="18"/>
+    <sprite n="highlight-19" x="381" y="1" w="18" h="18"/>
+</TextureAtlas>

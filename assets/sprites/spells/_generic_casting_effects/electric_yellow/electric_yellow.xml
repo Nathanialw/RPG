@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:d788fa51e60a924df86ee892f9dc4fbe:71777b8598bac00b7aea72ea9515d264:bf62ab014074171bdc215ab318682abb$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="electric_yellow.png" width="459" height="128">
+    <sprite n="50000" x="394" y="65" w="62" h="62" oX="2" oY="2" oW="64" oH="64"/>
+    <sprite n="50001" x="1" y="1" w="64" h="64"/>
+    <sprite n="50002" x="328" y="1" w="64" h="63" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="50003" x="199" y="1" w="63" h="64" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="50004" x="67" y="1" w="64" h="64"/>
+    <sprite n="50005" x="132" y="67" w="61" h="60" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="50006" x="328" y="66" w="61" h="61" oX="0" oY="1" oW="64" oH="64"/>
+    <sprite n="50007" x="67" y="67" w="63" h="60" oX="0" oY="3" oW="64" oH="64"/>
+    <sprite n="50008" x="394" y="1" w="64" h="62" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="50009" x="133" y="1" w="64" h="64"/>
+    <sprite n="50010" x="264" y="1" w="62" h="64" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="50011" x="1" y="67" w="64" h="60" oX="0" oY="4" oW="64" oH="64"/>
+</TextureAtlas>

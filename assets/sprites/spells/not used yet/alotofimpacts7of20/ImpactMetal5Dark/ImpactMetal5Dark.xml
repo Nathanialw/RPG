@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:5d1c2b7dd91230a44366be9fd73f5462:217c560bcb7df9d52c88717881e4b73e:4ffc64038401e8fcccd6989e42b22989$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="ImpactMetal5Dark.png" width="154" height="225">
+    <sprite n="ImpactMetal5Dark-0" x="83" y="80" w="68" h="68" oX="14" oY="14" oW="96" oH="96"/>
+    <sprite n="ImpactMetal5Dark-1" x="83" y="150" w="67" h="67" oX="15" oY="15" oW="96" oH="96"/>
+    <sprite n="ImpactMetal5Dark-2" x="1" y="157" w="67" h="67" oX="14" oY="14" oW="96" oH="96"/>
+    <sprite n="ImpactMetal5Dark-3" x="79" y="1" w="74" h="77" oX="7" oY="10" oW="96" oH="96"/>
+    <sprite n="ImpactMetal5Dark-4" x="1" y="1" w="76" h="84" oX="6" oY="4" oW="96" oH="96"/>
+    <sprite n="ImpactMetal5Dark-5" x="1" y="87" w="80" h="68" oX="2" oY="12" oW="96" oH="96"/>
+</TextureAtlas>

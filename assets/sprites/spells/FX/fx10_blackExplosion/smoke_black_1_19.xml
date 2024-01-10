@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:8a53b93ad1424b20cd398e708d03559b:8e2fecb049478f00e860c00eeb0dae75:13dabd35a4f8e445f0a29257b941ab79$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="smoke_black_1_19.png" width="50" height="813">
+    <sprite n="smoke_black_1_19_1" x="0" y="787" w="31" h="26" oX="12" oY="21" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_2" x="0" y="746" w="40" h="41" oX="3" oY="6" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_3" x="0" y="583" w="46" h="46" oX="0" oY="1" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_4" x="0" y="373" w="49" h="47" oX="0" oY="0" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_5" x="0" y="0" w="50" h="47"/>
+    <sprite n="smoke_black_1_19_6" x="0" y="47" w="50" h="47"/>
+    <sprite n="smoke_black_1_19_7" x="0" y="420" w="49" h="47" oX="1" oY="0" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_8" x="0" y="94" w="50" h="47"/>
+    <sprite n="smoke_black_1_19_9" x="0" y="141" w="50" h="47"/>
+    <sprite n="smoke_black_1_19_10" x="0" y="188" w="50" h="47"/>
+    <sprite n="smoke_black_1_19_11" x="0" y="235" w="50" h="47"/>
+    <sprite n="smoke_black_1_19_12" x="0" y="282" w="50" h="46" oX="0" oY="1" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_13" x="0" y="328" w="50" h="45" oX="0" oY="2" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_14" x="0" y="508" w="48" h="40" oX="2" oY="7" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_15" x="0" y="467" w="48" h="41" oX="2" oY="6" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_16" x="0" y="667" w="45" h="40" oX="2" oY="7" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_17" x="0" y="707" w="44" h="39" oX="2" oY="8" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_18" x="0" y="629" w="46" h="38" oX="2" oY="9" oW="50" oH="47"/>
+    <sprite n="smoke_black_1_19_19" x="0" y="548" w="47" h="35" oX="3" oY="12" oW="50" oH="47"/>
+</TextureAtlas>

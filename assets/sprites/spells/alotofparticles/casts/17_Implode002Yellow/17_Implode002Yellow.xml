@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:9f5288ddf15b8f819b2ebd0c62fdd5d5:09265f892d424645a435f865a287b2dc:8d9bb8b96fe464e2a4addb4489a0241f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="17_Implode002Yellow.png" width="2505" height="98">
+    <sprite n="17 Implode002Yellow -0" x="2310" y="1" w="84" h="86" oX="12" oY="10" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -1" x="1947" y="1" w="90" h="96" oX="6" oY="0" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -2" x="1854" y="1" w="91" h="96" oX="5" oY="0" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -3" x="1666" y="1" w="92" h="96" oX="4" oY="0" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -4" x="1569" y="1" w="95" h="96" oX="1" oY="0" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -5" x="1" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -6" x="99" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -7" x="197" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -8" x="295" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -9" x="393" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -10" x="491" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -11" x="589" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -12" x="687" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -13" x="785" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -14" x="883" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -15" x="981" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -16" x="1079" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -17" x="1177" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -18" x="1275" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -19" x="2118" y="1" w="96" h="93" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -20" x="1373" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -21" x="1471" y="1" w="96" h="96"/>
+    <sprite n="17 Implode002Yellow -22" x="1760" y="1" w="92" h="96" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -23" x="2216" y="1" w="92" h="91" oX="4" oY="0" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -24" x="2039" y="1" w="77" h="94" oX="12" oY="0" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -25" x="2396" y="1" w="61" h="74" oX="19" oY="10" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -26" x="2459" y="1" w="45" h="54" oX="26" oY="20" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -27" x="2459" y="57" w="31" h="33" oX="33" oY="31" oW="96" oH="96"/>
+    <sprite n="17 Implode002Yellow -28" x="2396" y="77" w="17" h="18" oX="40" oY="39" oW="96" oH="96"/>
+</TextureAtlas>

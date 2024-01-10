@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:1bb69055641e36bb3960001fe5df7d3f:c8f338a8993c12157d26fee0c0e21b05:3d1a7cb264e40a3c5c133be24aa2f62d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="26_ShieldBarsDark.png" width="55" height="2479">
+    <sprite n="26 ShieldBarsDark-0" x="1" y="2469" w="52" h="9" oX="22" oY="6" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-1" x="1" y="2450" w="53" h="17" oX="22" oY="5" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-2" x="1" y="2425" w="53" h="23" oX="22" oY="5" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-3" x="1" y="2393" w="53" h="30" oX="22" oY="5" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-4" x="1" y="2354" w="53" h="37" oX="22" oY="5" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-5" x="1" y="2308" w="53" h="44" oX="22" oY="5" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-6" x="1" y="2255" w="53" h="51" oX="22" oY="5" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-7" x="1" y="2194" w="53" h="59" oX="22" oY="4" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-8" x="1" y="2126" w="53" h="66" oX="22" oY="4" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-9" x="1" y="2052" w="53" h="72" oX="22" oY="4" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-10" x="1" y="1971" w="53" h="79" oX="22" oY="4" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-11" x="1" y="1881" w="53" h="88" oX="22" oY="3" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-12" x="1" y="1329" w="53" h="90" oX="22" oY="3" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-13" x="1" y="771" w="53" h="91" oX="22" oY="2" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-14" x="1" y="864" w="53" h="91" oX="22" oY="2" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-15" x="1" y="583" w="53" h="92" oX="22" oY="1" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-16" x="1" y="677" w="53" h="92" oX="22" oY="1" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-17" x="1" y="1421" w="53" h="90" oX="22" oY="4" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-18" x="1" y="1513" w="53" h="90" oX="22" oY="4" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-19" x="1" y="1605" w="53" h="90" oX="22" oY="4" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-20" x="1" y="957" w="53" h="91" oX="22" oY="3" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-21" x="1" y="1050" w="53" h="91" oX="22" oY="3" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-22" x="1" y="1143" w="53" h="91" oX="22" oY="3" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-23" x="1" y="488" w="53" h="93" oX="22" oY="2" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-24" x="1" y="392" w="53" h="94" oX="22" oY="1" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-25" x="1" y="295" w="53" h="95" oX="22" oY="1" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-26" x="1" y="1" w="53" h="96" oX="22" oY="0" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-27" x="1" y="99" w="53" h="96" oX="22" oY="0" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-28" x="1" y="197" w="53" h="96" oX="22" oY="0" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-29" x="1" y="1697" w="53" h="90" oX="22" oY="4" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-30" x="1" y="1789" w="53" h="90" oX="22" oY="4" oW="96" oH="96"/>
+    <sprite n="26 ShieldBarsDark-31" x="1" y="1236" w="53" h="91" oX="22" oY="4" oW="96" oH="96"/>
+</TextureAtlas>

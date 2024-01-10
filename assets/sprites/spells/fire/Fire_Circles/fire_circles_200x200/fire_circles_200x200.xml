@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:b0a7185fb82f79ee72de911ac06057c0:0c7766e4f2f2ccdf228faf9bbb4d3578:9991becd02c463d0c6872e4cd5aef800$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="fire_circles_200x200.png" width="991" height="1217">
+    <sprite n="fire_circles_200x200-0" x="139" y="783" w="140" h="139" oX="23" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-1" x="279" y="787" w="143" h="139" oX="23" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-2" x="422" y="793" w="143" h="139" oX="23" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-3" x="565" y="797" w="147" h="139" oX="22" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-4" x="712" y="797" w="148" h="139" oX="22" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-5" x="417" y="378" w="147" h="135" oX="22" oY="31" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-6" x="288" y="243" w="148" h="134" oX="22" oY="31" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-7" x="436" y="244" w="148" h="134" oX="22" oY="31" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-8" x="0" y="115" w="148" h="125" oX="22" oY="40" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-9" x="148" y="118" w="149" h="125" oX="21" oY="40" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-10" x="297" y="118" w="149" h="125" oX="21" oY="40" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-11" x="277" y="0" w="148" h="118" oX="21" oY="47" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-12" x="704" y="0" w="148" h="121" oX="21" oY="43" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-13" x="446" y="119" w="148" h="125" oX="21" oY="39" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-14" x="733" y="123" w="148" h="129" oX="21" oY="35" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-15" x="139" y="243" w="149" h="132" oX="20" oY="32" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-16" x="564" y="382" w="143" h="135" oX="26" oY="29" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-17" x="781" y="522" w="142" h="137" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-18" x="132" y="922" w="141" h="139" oX="27" oY="25" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-19" x="383" y="649" w="142" h="138" oX="26" oY="25" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-20" x="651" y="659" w="141" h="138" oX="27" oY="25" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-21" x="273" y="926" w="142" h="139" oX="26" oY="24" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-22" x="0" y="919" w="132" h="139" oX="36" oY="24" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-23" x="792" y="659" w="132" h="138" oX="36" oY="25" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-24" x="0" y="639" w="123" h="137" oX="44" oY="25" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-25" x="123" y="644" w="122" h="137" oX="45" oY="25" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-26" x="414" y="513" w="119" h="136" oX="48" oY="26" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-27" x="533" y="517" w="121" h="136" oX="46" oY="26" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-28" x="654" y="521" w="127" h="136" oX="40" oY="26" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-29" x="859" y="252" w="128" h="135" oX="39" oY="26" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-30" x="707" y="386" w="132" h="135" oX="35" oY="26" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-31" x="839" y="387" w="134" h="135" oX="33" oY="26" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-32" x="584" y="248" w="137" h="134" oX="30" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-33" x="0" y="504" w="136" h="135" oX="30" oY="26" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-34" x="721" y="252" w="138" h="134" oX="28" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-35" x="136" y="509" w="139" h="135" oX="27" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-36" x="0" y="370" w="139" h="134" oX="27" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-37" x="139" y="375" w="139" h="134" oX="27" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-38" x="564" y="0" w="140" h="119" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-39" x="0" y="0" w="139" h="115" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-40" x="139" y="0" w="138" h="115" oX="27" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-41" x="425" y="0" w="139" h="118" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-42" x="852" y="0" w="139" h="123" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-43" x="594" y="121" w="139" h="127" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-44" x="0" y="240" w="139" h="130" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-45" x="278" y="377" w="139" h="134" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-46" x="275" y="511" w="139" h="135" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-47" x="245" y="646" w="138" h="137" oX="26" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-48" x="0" y="781" w="139" h="138" oX="25" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-49" x="261" y="1065" w="138" h="141" oX="25" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-50" x="399" y="1071" w="138" h="141" oX="25" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-51" x="537" y="1075" w="138" h="141" oX="25" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-52" x="675" y="1076" w="138" h="141" oX="25" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-53" x="525" y="653" w="126" h="140" oX="24" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-54" x="860" y="797" w="126" h="140" oX="24" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-55" x="692" y="936" w="126" h="140" oX="24" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-56" x="818" y="937" w="125" h="140" oX="24" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-57" x="0" y="1058" w="129" h="140" oX="24" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-58" x="129" y="1061" w="132" h="140" oX="23" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-59" x="415" y="932" w="137" h="139" oX="23" oY="27" oW="200" oH="200"/>
+    <sprite n="fire_circles_200x200-60" x="552" y="936" w="140" h="139" oX="23" oY="27" oW="200" oH="200"/>
+</TextureAtlas>

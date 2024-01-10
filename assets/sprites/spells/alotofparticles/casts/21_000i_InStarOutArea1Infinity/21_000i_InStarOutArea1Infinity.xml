@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:dbd98e0c8f4a5bddf689eca36fe69980:483a3616525073f802a3e725d7e6993f:c6dff414fdd2160f4e12a9ad19ad3aee$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="21_000i_InStarOutArea1Infinity.png" width="910" height="189">
+    <sprite n="21 000i InStarOutArea1Infinity-0" x="780" y="143" w="35" h="38" oX="32" oY="30" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-1" x="737" y="143" w="41" h="42" oX="29" oY="28" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-2" x="863" y="65" w="46" h="48" oX="27" oY="25" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-3" x="817" y="124" w="51" h="52" oX="24" oY="23" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-4" x="805" y="65" w="56" h="57" oX="22" oY="21" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-5" x="804" y="1" w="60" h="62" oX="20" oY="18" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-6" x="737" y="75" w="66" h="66" oX="17" oY="16" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-7" x="732" y="1" w="70" h="72" oX="15" oY="13" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-8" x="656" y="1" w="74" h="77" oX="13" oY="11" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-9" x="655" y="90" w="80" h="81" oX="10" oY="9" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-10" x="569" y="90" w="84" h="87" oX="8" oY="6" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-11" x="380" y="94" w="89" h="91" oX="6" oY="4" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-12" x="96" y="1" w="93" h="94" oX="3" oY="2" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-13" x="464" y="1" w="92" h="90" oX="2" oY="0" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-14" x="280" y="1" w="90" h="92" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-15" x="288" y="95" w="90" h="92" oX="0" oY="2" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-16" x="1" y="1" w="93" h="96" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-17" x="191" y="1" w="87" h="93" oX="8" oY="0" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-18" x="372" y="1" w="90" h="91" oX="6" oY="4" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-19" x="98" y="97" w="92" h="91" oX="4" oY="5" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-20" x="192" y="96" w="94" h="92" oX="1" oY="2" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-21" x="471" y="93" w="96" h="87" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-22" x="558" y="1" w="96" h="87" oX="0" oY="2" oW="96" oH="96"/>
+    <sprite n="21 000i InStarOutArea1Infinity-23" x="1" y="99" w="95" h="89" oX="0" oY="2" oW="96" oH="96"/>
+</TextureAtlas>

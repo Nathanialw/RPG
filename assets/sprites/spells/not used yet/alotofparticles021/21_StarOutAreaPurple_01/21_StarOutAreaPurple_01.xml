@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:2ffbfad2c4e5bea725c868290d11442f:644f6c2999a62eae355ee60371c4f8cf:216b96bb9559d9c3f28e7dc56f632c4a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="21_StarOutAreaPurple_01.png" width="247" height="427">
+    <sprite n="21 StarOutAreaPurple 01-0" x="61" y="341" w="7" h="7" oX="35" oY="54" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-1" x="61" y="322" w="14" h="17" oX="33" oY="46" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-2" x="133" y="335" w="24" h="22" oX="30" oY="44" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-3" x="76" y="393" w="28" h="32" oX="28" oY="36" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-4" x="42" y="384" w="32" h="36" oX="26" oY="34" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-5" x="1" y="384" w="39" h="42" oX="23" oY="31" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-6" x="183" y="374" w="44" h="46" oX="21" oY="29" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-7" x="133" y="374" w="48" h="50" oX="19" oY="27" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-8" x="77" y="335" w="54" h="56" oX="16" oY="24" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-9" x="1" y="322" w="58" h="60" oX="14" oY="22" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-10" x="178" y="73" w="62" h="64" oX="12" oY="20" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-11" x="178" y="1" w="67" h="70" oX="10" oY="17" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-12" x="170" y="219" w="72" h="74" oX="7" oY="15" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-13" x="170" y="139" w="76" h="78" oX="5" oY="13" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-14" x="162" y="295" w="80" h="77" oX="4" oY="10" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-15" x="1" y="88" w="85" h="81" oX="1" oY="8" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-16" x="1" y="1" w="89" h="85" oX="0" oY="6" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-17" x="1" y="171" w="79" h="81" oX="12" oY="12" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-18" x="82" y="251" w="78" h="82" oX="15" oY="10" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-19" x="88" y="89" w="80" h="82" oX="13" oY="8" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-20" x="92" y="1" w="84" h="86" oX="11" oY="6" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-21" x="82" y="173" w="86" h="76" oX="10" oY="3" oW="96" oH="96"/>
+    <sprite n="21 StarOutAreaPurple 01-22" x="1" y="254" w="77" h="66" oX="8" oY="15" oW="96" oH="96"/>
+</TextureAtlas>

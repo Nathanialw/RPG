@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:edde3c9076dd41e8aad06b795cdedfca:482bbe7de634d088b155d9965c8dbc4e:ee1ac9c78c2633b3e768663b06e2aa1e$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="green_effect.png" width="82" height="124">
+    <sprite n="green_effect_01" x="65" y="69" w="16" h="15" oX="9" oY="10" oW="32" oH="32"/>
+    <sprite n="green_effect_02" x="1" y="100" w="20" h="21" oX="7" oY="7" oW="32" oH="32"/>
+    <sprite n="green_effect_03" x="23" y="100" w="20" h="20" oX="6" oY="7" oW="32" oH="32"/>
+    <sprite n="green_effect_04" x="45" y="99" w="26" h="24" oX="2" oY="5" oW="32" oH="32"/>
+    <sprite n="green_effect_05" x="1" y="69" w="30" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="green_effect_06" x="33" y="69" w="30" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="green_effect_07" x="1" y="1" w="32" h="32"/>
+    <sprite n="green_effect_08" x="35" y="1" w="32" h="32"/>
+    <sprite n="green_effect_09" x="1" y="35" w="32" h="32"/>
+    <sprite n="green_effect_10" x="35" y="35" w="32" h="32"/>
+</TextureAtlas>

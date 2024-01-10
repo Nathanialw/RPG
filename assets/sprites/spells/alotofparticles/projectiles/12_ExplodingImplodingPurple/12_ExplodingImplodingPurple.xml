@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:12ddaf5dfc5da4238613423eb2b1a10b:30b32ef59cedd3d350ff73e8726c174d:45ac7352550e183d42bfa978cd51b362$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="12_ExplodingImplodingPurple.png" width="255" height="982">
+    <sprite n="12 ExplodingImplodingPurple -0" x="90" y="1" w="86" h="89" oX="3" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -1" x="178" y="89" w="76" h="77" oX="14" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -2" x="165" y="644" w="75" h="77" oX="10" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -3" x="177" y="168" w="77" h="79" oX="9" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -4" x="1" y="741" w="81" h="84" oX="4" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -5" x="1" y="474" w="84" h="85" oX="0" oY="3" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -6" x="1" y="290" w="84" h="91" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -7" x="1" y="1" w="87" h="91" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -8" x="167" y="483" w="81" h="77" oX="9" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -9" x="169" y="328" w="84" h="77" oX="7" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -10" x="85" y="165" w="90" h="65" oX="2" oY="12" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -11" x="88" y="464" w="77" h="72" oX="0" oY="6" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -12" x="176" y="249" w="78" h="77" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -13" x="178" y="1" w="76" h="86" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -14" x="1" y="561" w="79" h="89" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -15" x="1" y="192" w="81" h="96" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -16" x="1" y="94" w="82" h="96" oX="0" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -17" x="166" y="562" w="81" h="80" oX="0" oY="16" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -18" x="1" y="827" w="84" h="81" oX="0" oY="15" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -19" x="88" y="381" w="79" h="81" oX="9" oY="15" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -20" x="90" y="92" w="86" h="71" oX="6" oY="25" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -21" x="1" y="910" w="88" h="71" oX="5" oY="25" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -22" x="87" y="314" w="69" h="65" oX="24" oY="24" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -23" x="91" y="910" w="67" h="68" oX="23" oY="25" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -24" x="91" y="680" w="72" h="71" oX="24" oY="25" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -25" x="84" y="753" w="72" h="72" oX="24" oY="24" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -26" x="165" y="723" w="74" h="76" oX="22" oY="20" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -27" x="159" y="801" w="74" h="78" oX="22" oY="18" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -28" x="87" y="827" w="70" h="81" oX="23" oY="15" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -29" x="160" y="881" w="71" h="68" oX="21" oY="13" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -30" x="87" y="538" w="77" h="70" oX="19" oY="11" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -31" x="82" y="610" w="81" h="68" oX="15" oY="10" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -32" x="169" y="407" w="84" h="74" oX="12" oY="6" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -33" x="87" y="232" w="87" h="80" oX="9" oY="3" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -34" x="1" y="652" w="78" h="87" oX="5" oY="0" oW="96" oH="96"/>
+    <sprite n="12 ExplodingImplodingPurple -35" x="1" y="383" w="85" h="89" oX="3" oY="0" oW="96" oH="96"/>
+</TextureAtlas>

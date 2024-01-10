@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:91a4563b32b0d85f2f112e9ae8c8de81:ee375e7744bae9c1584d20f2b31e2325:598fd24f6ace39c28585f149920913fb$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="pipo-mapeffect023.png" width="3829" height="194">
+    <sprite n="pipo-mapeffect023_192-0" x="2500" y="1" w="188" h="192" oX="2" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-1" x="2690" y="1" w="188" h="192" oX="2" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-2" x="2880" y="1" w="188" h="192" oX="2" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-3" x="388" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-4" x="580" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-5" x="772" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-6" x="195" y="1" w="191" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-7" x="1" y="1" w="192" h="192"/>
+    <sprite n="pipo-mapeffect023_192-8" x="964" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-9" x="1156" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-10" x="1348" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-11" x="1540" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-12" x="1732" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-13" x="1924" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-14" x="2116" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-15" x="2308" y="1" w="190" h="192" oX="1" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-16" x="3070" y="1" w="188" h="192" oX="2" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-17" x="3260" y="1" w="188" h="192" oX="2" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-18" x="3450" y="1" w="188" h="192" oX="2" oY="0" oW="192" oH="192"/>
+    <sprite n="pipo-mapeffect023_192-19" x="3640" y="1" w="188" h="192" oX="2" oY="0" oW="192" oH="192"/>
+</TextureAtlas>

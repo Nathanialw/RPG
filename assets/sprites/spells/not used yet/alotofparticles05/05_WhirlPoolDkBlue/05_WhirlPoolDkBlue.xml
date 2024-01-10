@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:9219e62e02073e18d16619216f3d5346:633cacd404fb94c0d12f81054900d75d:aa2b0ed21edad969d6ae0bed6d158d9c$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="05_WhirlPoolDkBlue.png" width="97" height="3361">
+    <sprite n="05 WhirlPoolDkBlue -0" x="1" y="474" w="94" h="92" oX="2" oY="1" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -1" x="1" y="1" w="95" h="91" oX="1" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -2" x="1" y="94" w="95" h="91" oX="0" oY="3" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -3" x="1" y="1408" w="93" h="91" oX="1" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -4" x="1" y="379" w="94" h="93" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -5" x="1" y="568" w="94" h="92" oX="1" oY="1" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -6" x="1" y="1965" w="92" h="91" oX="2" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -7" x="1" y="3082" w="90" h="92" oX="3" oY="0" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -8" x="1" y="2711" w="91" h="90" oX="0" oY="1" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -9" x="1" y="3270" w="90" h="90" oX="1" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -10" x="1" y="2336" w="91" h="92" oX="1" oY="3" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -11" x="1" y="2058" w="92" h="91" oX="1" oY="4" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -12" x="1" y="1501" w="93" h="91" oX="0" oY="4" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -13" x="1" y="1126" w="93" h="92" oX="0" oY="3" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -14" x="1" y="756" w="94" h="91" oX="0" oY="3" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -15" x="1" y="187" w="94" h="94" oX="2" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -16" x="1" y="283" w="94" h="94" oX="1" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -17" x="1" y="662" w="94" h="92" oX="1" oY="3" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -18" x="1" y="942" w="94" h="90" oX="2" oY="4" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -19" x="1" y="849" w="94" h="91" oX="1" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -20" x="1" y="2244" w="92" h="90" oX="2" oY="3" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -21" x="1" y="2803" w="91" h="90" oX="2" oY="3" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -22" x="1" y="2895" w="91" h="89" oX="3" oY="4" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -23" x="1" y="1687" w="93" h="88" oX="0" oY="4" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -24" x="1" y="1777" w="92" h="92" oX="1" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -25" x="1" y="3176" w="90" h="92" oX="2" oY="1" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -26" x="1" y="2430" w="91" h="92" oX="2" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -27" x="1" y="2524" w="91" h="92" oX="2" oY="0" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -28" x="1" y="2986" w="90" h="94" oX="3" oY="1" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -29" x="1" y="1871" w="92" h="92" oX="2" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -30" x="1" y="2151" w="92" h="91" oX="2" oY="3" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -31" x="1" y="2618" w="91" h="91" oX="3" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -32" x="1" y="1034" w="94" h="90" oX="1" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -33" x="1" y="1220" w="93" h="92" oX="2" oY="0" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -34" x="1" y="1594" w="93" h="91" oX="3" oY="2" oW="96" oH="96"/>
+    <sprite n="05 WhirlPoolDkBlue -35" x="1" y="1314" w="93" h="92" oX="2" oY="2" oW="96" oH="96"/>
+</TextureAtlas>

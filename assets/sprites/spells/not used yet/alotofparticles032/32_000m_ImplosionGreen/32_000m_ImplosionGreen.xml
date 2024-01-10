@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:4353162f9cc0406349841adba90121ad:65bc59b39afce7eb2e5b283fe562845c:b5c6e1690c71323ed9cee01b677e69ca$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="32 32_000m_ImplosionGreen.png" width="3136" height="98">
+    <sprite n="32 000m ImplosionGreen -0" x="1" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -1" x="99" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -2" x="197" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -3" x="295" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -4" x="393" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -5" x="491" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -6" x="589" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -7" x="687" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -8" x="785" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -9" x="883" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -10" x="981" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -11" x="1079" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -12" x="1177" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -13" x="1275" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -14" x="1373" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -15" x="1471" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -16" x="1569" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -17" x="1667" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -18" x="1765" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -19" x="1863" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -20" x="1961" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -21" x="2059" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -22" x="2157" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -23" x="2255" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -24" x="2353" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -25" x="2451" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -26" x="2549" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -27" x="2647" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -28" x="2745" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -29" x="2843" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -30" x="2941" y="1" w="96" h="96"/>
+    <sprite n="32 000m ImplosionGreen -31" x="3039" y="1" w="96" h="96"/>
+</TextureAtlas>

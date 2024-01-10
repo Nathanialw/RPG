@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:67bd94c7dd623fd255636c182b5623cc:f1a82d729e2e064190e1c60b559ecede:b18f8cffec6dfc62c6b7bcc61e1fd8d4$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="barrier000.png" width="238" height="1864">
+    <sprite n="barrier000-0.png" x="0" y="498" w="119" h="211" oX="69" oY="26" oW="256" oH="256"/>
+    <sprite n="barrier000-1.png" x="119" y="498" w="119" h="211" oX="69" oY="26" oW="256" oH="256"/>
+    <sprite n="barrier000-2.png" x="0" y="709" w="119" h="211" oX="69" oY="26" oW="256" oH="256"/>
+    <sprite n="barrier000-3.png" x="119" y="709" w="119" h="211" oX="69" oY="26" oW="256" oH="256"/>
+    <sprite n="barrier000-4.png" x="0" y="920" w="119" h="209" oX="69" oY="27" oW="256" oH="256"/>
+    <sprite n="barrier000-5.png" x="119" y="920" w="119" h="206" oX="69" oY="28" oW="256" oH="256"/>
+    <sprite n="barrier000-6.png" x="119" y="1126" w="119" h="202" oX="69" oY="30" oW="256" oH="256"/>
+    <sprite n="barrier000-7.png" x="0" y="1129" w="119" h="199" oX="69" oY="31" oW="256" oH="256"/>
+    <sprite n="barrier000-8.png" x="0" y="1328" w="119" h="184" oX="69" oY="39" oW="256" oH="256"/>
+    <sprite n="barrier000-9.png" x="119" y="1328" w="119" h="170" oX="69" oY="46" oW="256" oH="256"/>
+    <sprite n="barrier000-10.png" x="119" y="1498" w="119" h="156" oX="69" oY="53" oW="256" oH="256"/>
+    <sprite n="barrier000-11.png" x="0" y="1512" w="119" h="141" oX="69" oY="60" oW="256" oH="256"/>
+    <sprite n="barrier000-12.png" x="0" y="1653" w="119" h="127" oX="69" oY="67" oW="256" oH="256"/>
+    <sprite n="barrier000-13.png" x="119" y="1654" w="119" h="112" oX="69" oY="75" oW="256" oH="256"/>
+    <sprite n="barrier000-14.png" x="119" y="1766" w="119" h="98" oX="69" oY="82" oW="256" oH="256"/>
+    <sprite n="barrier000-15.png" x="0" y="387" w="157" h="84" oX="50" oY="89" oW="256" oH="256"/>
+    <sprite n="barrier000-16.png" x="0" y="283" w="196" h="69" oX="31" oY="96" oW="256" oH="256"/>
+    <sprite n="barrier000-17.png" x="0" y="187" w="234" h="54" oX="12" oY="104" oW="256" oH="256"/>
+    <sprite n="barrier000-18.png" x="0" y="0" w="236" h="47" oX="11" oY="110" oW="256" oH="256"/>
+    <sprite n="barrier000-19.png" x="0" y="47" w="236" h="47" oX="11" oY="110" oW="256" oH="256"/>
+    <sprite n="barrier000-20.png" x="0" y="94" w="236" h="47" oX="11" oY="110" oW="256" oH="256"/>
+    <sprite n="barrier000-21.png" x="0" y="141" w="236" h="46" oX="11" oY="110" oW="256" oH="256"/>
+    <sprite n="barrier000-22.png" x="0" y="241" w="216" h="42" oX="21" oY="112" oW="256" oH="256"/>
+    <sprite n="barrier000-23.png" x="0" y="352" w="179" h="35" oX="39" oY="115" oW="256" oH="256"/>
+    <sprite n="barrier000-24.png" x="0" y="471" w="141" h="27" oX="58" oY="119" oW="256" oH="256"/>
+</TextureAtlas>

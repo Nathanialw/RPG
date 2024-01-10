@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:8bbc2200cf10487c156d2c9e9b1483b1:90a2aae99947c810cc1f3ae2f9697ba4:6e575bda0f936adb05f5f5ae516f52e9$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="PhysicalImpact01Yellow2.png" width="325" height="78">
+    <sprite n="PhysicalImpact01Yellow 2-0" x="1" y="1" w="29" h="24" oX="34" oY="36" oW="96" oH="96"/>
+    <sprite n="PhysicalImpact01Yellow 2-1" x="108" y="1" w="59" h="68" oX="19" oY="13" oW="96" oH="96"/>
+    <sprite n="PhysicalImpact01Yellow 2-2" x="32" y="1" w="74" h="67" oX="11" oY="5" oW="96" oH="96"/>
+    <sprite n="PhysicalImpact01Yellow 2-3" x="169" y="1" w="78" h="76" oX="12" oY="0" oW="96" oH="96"/>
+    <sprite n="PhysicalImpact01Yellow 2-4" x="249" y="1" w="75" h="76" oX="6" oY="3" oW="96" oH="96"/>
+</TextureAtlas>

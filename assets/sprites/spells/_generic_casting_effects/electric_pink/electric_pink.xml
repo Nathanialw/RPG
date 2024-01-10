@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:26d625706815ddcaeafd405dd62aa605:27773eb746fe4b8b1f4863f147166f42:73f4b4d2603ce6a3f9ce5d812555b7ce$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="electric_pink.png" width="236" height="198">
+    <sprite n="40000" x="1" y="133" w="57" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="40001" x="60" y="133" w="57" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="40002" x="61" y="1" w="57" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="40003" x="61" y="67" w="57" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="40004" x="119" y="133" w="57" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="40005" x="1" y="1" w="58" h="64" oX="3" oY="0" oW="64" oH="64"/>
+    <sprite n="40006" x="1" y="67" w="58" h="64" oX="3" oY="0" oW="64" oH="64"/>
+    <sprite n="40007" x="120" y="1" w="57" h="64" oX="3" oY="0" oW="64" oH="64"/>
+    <sprite n="40008" x="120" y="67" w="57" h="64" oX="3" oY="0" oW="64" oH="64"/>
+    <sprite n="40009" x="178" y="133" w="57" h="64" oX="3" oY="0" oW="64" oH="64"/>
+    <sprite n="40010" x="179" y="1" w="56" h="64" oX="4" oY="0" oW="64" oH="64"/>
+    <sprite n="40011" x="179" y="67" w="56" h="64" oX="4" oY="0" oW="64" oH="64"/>
+</TextureAtlas>

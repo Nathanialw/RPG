@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:65637894b99088df0c34d09fea8b78f9:59e60b56d42c1417e50a580e7cf3f870:d2703100a613f23c6f80e77a7881f971$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="earthspikes.png" width="405" height="124">
+    <sprite n="0001" x="316" y="58" w="3" h="3" oX="0" oY="0" oW="100" oH="100"/>
+    <sprite n="0002" x="311" y="58" w="5" h="6" oX="69" oY="71" oW="100" oH="100"/>
+    <sprite n="0003" x="243" y="100" w="29" h="24" oX="48" oY="56" oW="100" oH="100"/>
+    <sprite n="0004" x="243" y="58" w="68" h="42" oX="11" oY="43" oW="100" oH="100"/>
+    <sprite n="0005" x="324" y="0" w="81" h="52" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0006" x="324" y="52" w="81" h="52" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0007" x="243" y="0" w="81" h="58" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0008" x="0" y="0" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0009" x="0" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0010" x="81" y="0" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0011" x="81" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0012" x="162" y="0" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0013" x="162" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0014" x="162" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0015" x="162" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0016" x="162" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0017" x="162" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0018" x="162" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0019" x="162" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+    <sprite n="0020" x="162" y="62" w="81" h="62" oX="0" oY="34" oW="100" oH="100"/>
+</TextureAtlas>

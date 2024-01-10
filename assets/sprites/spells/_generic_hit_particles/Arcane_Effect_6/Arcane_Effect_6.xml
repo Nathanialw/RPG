@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:cb96c6e8686b8329964ec576a0463209:aa24ae5aa27ef1e1e1bf3c37f3680979:86956ad2d5b169b1a844fec4d9e9db8f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Arcane_Effect_6.png" width="810" height="110">
+    <sprite n="Arcane_Effect_1" x="727" y="1" w="82" h="95" oX="19" oY="13" oW="124" oH="108"/>
+    <sprite n="Arcane_Effect_2" x="246" y="1" w="117" h="107" oX="1" oY="0" oW="124" oH="107"/>
+    <sprite n="Arcane_Effect_3" x="365" y="1" w="117" h="107" oX="1" oY="0" oW="124" oH="107"/>
+    <sprite n="Arcane_Effect_4" x="484" y="1" w="117" h="107" oX="1" oY="0" oW="124" oH="107"/>
+    <sprite n="Arcane_Effect_5" x="1" y="1" w="117" h="108" oX="1" oY="0" oW="124" oH="108"/>
+    <sprite n="Arcane_Effect_6" x="120" y="1" w="124" h="107"/>
+    <sprite n="Arcane_Effect_7" x="603" y="1" w="122" h="106" oX="0" oY="0" oW="124" oH="106"/>
+</TextureAtlas>

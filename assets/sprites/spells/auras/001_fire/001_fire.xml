@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:aa0839677616d2362b6777181cdd4133:b981ccd57e0f8a31d1a3c96be46db96c:4a43d802346e392fba976d7327367933$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="001_fire.png" width="2010" height="1220">
+    <sprite n="001_FX_0000" x="1805" y="155" w="192" h="196" oX="52" oY="13" oW="256" oH="256"/>
+    <sprite n="001_FX_0001" x="1" y="308" w="192" h="196" oX="52" oY="13" oW="256" oH="256"/>
+    <sprite n="001_FX_0002" x="1611" y="155" w="192" h="195" oX="52" oY="13" oW="256" oH="256"/>
+    <sprite n="001_FX_0003" x="1315" y="154" w="147" h="156" oX="53" oY="52" oW="256" oH="256"/>
+    <sprite n="001_FX_0004" x="727" y="154" w="146" h="155" oX="53" oY="53" oW="256" oH="256"/>
+    <sprite n="001_FX_0005" x="875" y="154" w="146" h="155" oX="53" oY="53" oW="256" oH="256"/>
+    <sprite n="001_FX_0006" x="145" y="153" w="145" h="153" oX="54" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0007" x="581" y="154" w="144" h="154" oX="55" oY="53" oW="256" oH="256"/>
+    <sprite n="001_FX_0008" x="1576" y="1" w="144" h="152" oX="55" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0009" x="1722" y="1" w="143" h="152" oX="55" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0010" x="1867" y="1" w="142" h="152" oX="56" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0011" x="716" y="1" w="142" h="151" oX="56" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0012" x="860" y="1" w="142" h="151" oX="56" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0013" x="1004" y="1" w="141" h="151" oX="57" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0014" x="1" y="1" w="141" h="150" oX="57" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0015" x="144" y="1" w="141" h="150" oX="57" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0016" x="287" y="1" w="141" h="150" oX="57" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0017" x="430" y="1" w="141" h="150" oX="57" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0018" x="573" y="1" w="141" h="150" oX="57" oY="54" oW="256" oH="256"/>
+    <sprite n="001_FX_0019" x="1147" y="1" w="141" h="151" oX="57" oY="53" oW="256" oH="256"/>
+    <sprite n="001_FX_0020" x="1290" y="1" w="141" h="151" oX="57" oY="53" oW="256" oH="256"/>
+    <sprite n="001_FX_0021" x="1433" y="1" w="141" h="151" oX="57" oY="53" oW="256" oH="256"/>
+    <sprite n="001_FX_0022" x="1" y="153" w="142" h="152" oX="57" oY="53" oW="256" oH="256"/>
+    <sprite n="001_FX_0023" x="292" y="153" w="142" h="153" oX="57" oY="52" oW="256" oH="256"/>
+    <sprite n="001_FX_0024" x="436" y="153" w="143" h="153" oX="56" oY="52" oW="256" oH="256"/>
+    <sprite n="001_FX_0025" x="1023" y="154" w="144" h="155" oX="56" oY="51" oW="256" oH="256"/>
+    <sprite n="001_FX_0026" x="1169" y="154" w="144" h="155" oX="56" oY="51" oW="256" oH="256"/>
+    <sprite n="001_FX_0027" x="1464" y="155" w="145" h="156" oX="56" oY="50" oW="256" oH="256"/>
+    <sprite n="001_FX_0028" x="195" y="308" w="188" h="196" oX="56" oY="11" oW="256" oH="256"/>
+    <sprite n="001_FX_0029" x="385" y="308" w="189" h="196" oX="55" oY="11" oW="256" oH="256"/>
+    <sprite n="001_FX_0030" x="576" y="311" w="189" h="196" oX="55" oY="11" oW="256" oH="256"/>
+    <sprite n="001_FX_0031" x="767" y="311" w="189" h="197" oX="55" oY="11" oW="256" oH="256"/>
+    <sprite n="001_FX_0032" x="1348" y="313" w="189" h="198" oX="55" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0033" x="196" y="506" w="190" h="199" oX="54" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0034" x="583" y="510" w="190" h="200" oX="54" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0035" x="775" y="510" w="190" h="200" oX="54" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0036" x="1" y="707" w="231" h="234" oX="13" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0037" x="234" y="710" w="232" h="234" oX="12" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0038" x="1643" y="788" w="232" h="235" oX="12" oY="9" oW="256" oH="256"/>
+    <sprite n="001_FX_0039" x="1" y="946" w="232" h="235" oX="12" oY="9" oW="256" oH="256"/>
+    <sprite n="001_FX_0040" x="235" y="948" w="232" h="235" oX="12" oY="9" oW="256" oH="256"/>
+    <sprite n="001_FX_0041" x="469" y="948" w="232" h="235" oX="12" oY="9" oW="256" oH="256"/>
+    <sprite n="001_FX_0042" x="703" y="948" w="233" h="235" oX="12" oY="9" oW="256" oH="256"/>
+    <sprite n="001_FX_0043" x="938" y="981" w="233" h="235" oX="12" oY="9" oW="256" oH="256"/>
+    <sprite n="001_FX_0044" x="1173" y="984" w="233" h="235" oX="12" oY="9" oW="256" oH="256"/>
+    <sprite n="001_FX_0045" x="468" y="712" w="233" h="234" oX="12" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0046" x="703" y="712" w="233" h="234" oX="12" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0047" x="938" y="745" w="233" h="234" oX="12" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0048" x="1173" y="748" w="233" h="234" oX="12" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0049" x="1408" y="787" w="233" h="234" oX="12" oY="10" oW="256" oH="256"/>
+    <sprite n="001_FX_0050" x="1201" y="513" w="233" h="233" oX="12" oY="11" oW="256" oH="256"/>
+    <sprite n="001_FX_0051" x="1436" y="552" w="232" h="233" oX="12" oY="11" oW="256" oH="256"/>
+    <sprite n="001_FX_0052" x="1670" y="553" w="232" h="233" oX="12" oY="11" oW="256" oH="256"/>
+    <sprite n="001_FX_0053" x="967" y="511" w="232" h="232" oX="12" oY="11" oW="256" oH="256"/>
+    <sprite n="001_FX_0054" x="388" y="509" w="193" h="199" oX="51" oY="12" oW="256" oH="256"/>
+    <sprite n="001_FX_0055" x="1539" y="352" w="193" h="198" oX="51" oY="12" oW="256" oH="256"/>
+    <sprite n="001_FX_0056" x="1734" y="353" w="193" h="198" oX="51" oY="12" oW="256" oH="256"/>
+    <sprite n="001_FX_0057" x="1" y="506" w="193" h="198" oX="51" oY="12" oW="256" oH="256"/>
+    <sprite n="001_FX_0058" x="958" y="311" w="193" h="197" oX="51" oY="12" oW="256" oH="256"/>
+    <sprite n="001_FX_0059" x="1153" y="312" w="193" h="197" oX="51" oY="12" oW="256" oH="256"/>
+</TextureAtlas>
