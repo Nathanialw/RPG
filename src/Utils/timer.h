@@ -10,8 +10,8 @@ namespace Timer {
 
   float timeStep = 0;
   int64_t avgFPS = 0;
-  int64_t startPerf = 0;
-  int64_t endPerf = 0;
+  Uint64 startPerf = 0;
+  Uint64 endPerf = 0;
   bool pause = false;
 
   float fps_timeStep = 0;
@@ -34,15 +34,15 @@ namespace Timer {
   std::array<std::string, SIZE> GameStateText = {"movement", "collision", "status", "render", "update quad tree", "render present"};
 
   struct Game_Loop_Timer {
-    int64_t startPerf = 0;
-    int64_t endPerf = 0;
+    Uint64 startPerf = 0;
+    Uint64 endPerf = 0;
   };
   Game_Loop_Timer gameLoopTimer;
 
   void Update_Game_Loop_Timers(float &stateTime, Game_Loop_Timer &timer) {
     timer.endPerf = SDL_GetPerformanceCounter();
-    int64_t sstateTime = (timer.endPerf - timer.startPerf);
-    int64_t dd = SDL_GetPerformanceFrequency();
+    Uint64 sstateTime = (timer.endPerf - timer.startPerf);
+    Uint64 dd = SDL_GetPerformanceFrequency();
     float gg = (float)sstateTime / (float)dd;
     stateTime = gg * 1000.0f;
     timer.startPerf = timer.endPerf;
@@ -67,15 +67,16 @@ namespace Timer {
 
   void Calculate_Timestep() {
     endPerf = SDL_GetPerformanceCounter();
-    int64_t sstateTime = (endPerf - startPerf);
-    int64_t dd = SDL_GetPerformanceFrequency();
+    Uint64 sstateTime = (endPerf - startPerf);
+    Uint64 dd = SDL_GetPerformanceFrequency();
     float gg = (float)sstateTime / (float)dd;
     timeStep = gg * 1000.0f;
     startPerf = endPerf;
     if (lockFramerate) {
       if (timeStep < 16.66f) {
-        SDL_Delay(floor(16.66f - timeStep));
-        timeStep = 16.66f;
+        Uint32 nn = floor(16.66f - timeStep);
+        SDL_Delay(nn);
+        timeStep = 16.66f - timeStep;
       }
     }
     Calculate_FPS();

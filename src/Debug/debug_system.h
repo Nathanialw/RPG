@@ -96,6 +96,13 @@ namespace Debug_System {
       SDL_RenderCopyF(Graphics::renderer, timeStep.pTexture, &framerate.k, &d);
     }
 
+    if (Debug::settings[Debug::Settings::lockFramerate]) {
+      Timer::lockFramerate = true;
+    }
+    else {
+      Timer::lockFramerate = false;
+    }
+
     Show_Settings(camera);
     if (iFramePollRate >= 400.0f) {
       iFramePollRate = 0.0f;
