@@ -62,12 +62,12 @@ namespace Character_Stats {
     }
   }
 
-  void Update_Unit_Offense(entt::registry &zone, int &state) {
-    auto view = zone.view<Item_Component::Item_Equip, Component::Melee_Damage,
-                          Component::Attack_Speed, Item_Component::Equipment>();
+  void Update_Unit_Stats(entt::registry &zone, int &state) {
+    auto view = zone.view<Item_Component::Item_Equip, Component::Melee_Damage, Component::Attack_Speed, Component::Health, Item_Component::Equipment>();
     for (auto entity: view) {
       auto &damage = view.get<Component::Melee_Damage>(entity);
       auto &attackSpeed = view.get<Component::Attack_Speed>(entity);
+      auto &health = view.get<Component::Health>(entity);
       auto &equipment = view.get<Item_Component::Equipment>(entity);
 
       // set character stats to base values
@@ -81,6 +81,15 @@ namespace Character_Stats {
         if (stat.first == Item_Component::Stat::spellDamage) {
           stat.second = Item_Component::baseStatData[stat.first];
         }
+        if (stat.first == Item_Component::Stat::health) {
+          stat.second = Item_Component::baseStatData[stat.first];
+        }
+        if (stat.first == Item_Component::Stat::armor) {
+          stat.second = Item_Component::baseStatData[stat.first];
+        }
+        if (stat.first == Item_Component::Stat::piety) {
+          stat.second = Item_Component::baseStatData[stat.first];
+        }
       }
 
       // check if slot is occupied, add stats if it is
@@ -89,6 +98,7 @@ namespace Character_Stats {
           auto &stats = zone.get<Item_Stats>(item.second).stats;
           for (auto &stat: stats) {
             Item_Component::statData[stat.first] += stat.second;
+            Utilities::Log(std::to_string(Item_Component::statData[stat.first]) + ": " + std::to_string(stat.second));
           }
         }
       }
@@ -108,56 +118,7 @@ namespace Character_Stats {
           case Item_Component::Stat::spellDamage:
             break;
           case Item_Component::Stat::health:
-            break;
-          case Item_Component::Stat::piety:
-            break;
-        }
-      }
-    }
-  }
-
-  void Update_Unit_Defense(entt::registry &zone, int &state) {
-    auto view = zone.view<Item_Component::Item_Equip, Component::Health, Item_Component::Equipment>();
-    for (auto entity: view) {
-      auto &health = view.get<Component::Health>(entity);
-      auto &equipment = view.get<Item_Component::Equipment>(entity);
-
-      // set character stats to base values
-      for (auto &stat: Item_Component::statData) {
-        if (stat.first == Item_Component::Stat::health) {
-          stat.second = Item_Component::baseStatData[stat.first];
-        }
-        if (stat.first == Item_Component::Stat::armor) {
-          stat.second = Item_Component::baseStatData[stat.first];
-        }
-        if (stat.first == Item_Component::Stat::piety) {
-          stat.second = Item_Component::baseStatData[stat.first];
-        }
-      }
-
-      // check if slot is occupied, add stats if it is
-      for (auto &item: equipment.equippedItems) {
-        if (item.second != Item_Component::emptyEquipSlot[state]) {
-          auto &stats = zone.get<Item_Stats>(item.second).stats;
-          for (auto &stat: stats) {
-            Item_Component::statData[stat.first] += stat.second;
-          }
-        }
-      }
-
-      // update components from updated character stat data
-      for (auto &stat: Item_Component::statData) {
-        switch (stat.first) {
-          case Item_Component::Stat::health:
             health.maxHealth = stat.second;
-            break;
-          case Item_Component::Stat::armor:
-            break;
-          case Item_Component::Stat::spellDamage:
-            break;
-          case Item_Component::Stat::damage:
-            break;
-          case Item_Component::Stat::attackSpeed:
             break;
           case Item_Component::Stat::piety:
             break;
@@ -167,13 +128,58 @@ namespace Character_Stats {
     }
   }
 
+  struct Stat_Textures {
+    SDL_Texture* stat;
+    SDL_Texture* value;
+  };
+  std::unordered_map<std::string, Stat_Textures> statsValues;
+
+  void Render_Stat(SDL_FRect &statBox, float &charHeight, float &charWidth, float &currentRow, SDL_Color &black, std::pair<const Stat, int>stat) {
+    Graphics::Surface_Data statNameData = Graphics::Load_Text_Texture(Item_Component::statName[stat.first], black);
+
+    SDL_FRect statNameRect = statBox;
+    statNameRect.y = statBox.y + currentRow;
+    statNameRect.h = charHeight;
+    statNameRect.w = Item_Component::statName[stat.first].size() * charWidth;
+
+    Graphics::Render_FRect(statNameData.pTexture, black, &statNameData.k, &statNameRect);
+    SDL_DestroyTexture(statNameData.pTexture);
+
+    std::string statValue = std::to_string(stat.second);
+    Graphics::Surface_Data statValueData = Graphics::Load_Text_Texture(statValue, black);
+
+    SDL_FRect statValueRect = statBox;
+    statValueRect.y = statBox.y + currentRow;
+    statValueRect.h = charHeight;
+    statValueRect.w = statValue.size() * charWidth;
+    statValueRect.x = statBox.x + statBox.w - statValueRect.w;
+
+    Graphics::Render_FRect(statValueData.pTexture, black, &statValueData.k, &statValueRect);
+    SDL_DestroyTexture(statValueData.pTexture);
+
+    statValueRect.x = statValueRect.x + (statBox.w - (statValue.length() * charWidth));
+    statBox.y += charHeight;
+  }
+
+  void Render_Stat_FC(Component::Camera &camera, SDL_FRect &statBox, float &charHeight, float &charWidth, std::pair<const Stat, int>stat) {
+    FC_Scale scale = {1/camera.scale.x, 1/camera.scale.y};
+
+    SDL_FRect statNameRect = statBox;
+    FC_DrawScale(Graphics::fcFont, Graphics::renderer, statNameRect.x, statNameRect.y, scale, Item_Component::statName[stat.first].c_str());
+
+    std::string statValue = std::to_string(stat.second);
+    SDL_FRect statValueRect = statBox;
+    statValueRect.x = statValueRect.x + (statBox.w - (statValue.length() * charWidth));
+
+    FC_DrawScale(Graphics::fcFont, Graphics::renderer, statValueRect.x, statValueRect.y, scale, statValue.c_str());
+
+    statBox.y += charHeight;
+  }
+
   void Render_Character_Stats(Component::Camera &camera) {
     if (UI::bToggleCharacterUI) {
 
-      SDL_FRect statsBox = {UI::defaultScreenPosition.x + statsSheetOffsetRect.x,
-                            UI::defaultScreenPosition.y + statsSheetOffsetRect.y,
-                            statsSheetOffsetRect.w, statsSheetOffsetRect.h};
-
+      SDL_FRect statsBox = {UI::defaultScreenPosition.x + statsSheetOffsetRect.x, UI::defaultScreenPosition.y + statsSheetOffsetRect.y, statsSheetOffsetRect.w, statsSheetOffsetRect.h};
       SDL_FRect statBox = Camera_Control::Convert_FRect_To_Scale(statsBox, camera);
       SDL_Color black = {0, 0, 0, 255};
 
@@ -181,31 +187,10 @@ namespace Character_Stats {
       float charHeight = (20.0f / camera.scale.y);
       float charWidth = (10.0f / camera.scale.x);
 
+      SDL_RenderDrawRectF(Graphics::renderer, &statBox);
+
       for (auto &stat: Item_Component::statData) {
-        // Graphics::Surface_Data statNameData = Graphics::Load_Text_Texture(Items::statName[stat.first], black);
-
-        SDL_FRect statNameRect = statBox;
-        statNameRect.y = statBox.y + currentRow;
-        // statNameRect.h = charHeight;
-        // statNameRect.w = Items::statName[stat.first].size() * charWidth;
-
-        FC_Draw(Graphics::fcFont, Graphics::renderer, statNameRect.x,
-                statNameRect.y, Item_Component::statName[stat.first].c_str());
-        // Graphics::Render_FRect(statNameData.pTexture, &statNameData.k, &statNameRect); SDL_DestroyTexture(statNameData.pTexture);
-        ////SDL_RenderDrawRect(Graphics::renderer, &rowRect);
-        //
-        std::string statValue = std::to_string(stat.second);
-        // Graphics::Surface_Data statValueData = Graphics::Load_Text_Texture(statValue, black);
-        //
-        SDL_FRect statValueRect = (statBox);
-        statValueRect.y = statBox.y + currentRow;
-        statValueRect.x = statBox.x + statBox.w - statValueRect.w;
-        // statValueRect.h = charHeight;
-        // statValueRect.w = statValue.size() * charWidth;
-        //
-        //
-        // Graphics::Render_FRect(statValueData.pTexture, &statValueData.k, &statValueRect); SDL_DestroyTexture(statValueData.pTexture); currentRow += charHeight;
-        FC_Draw(Graphics::fcFont, Graphics::renderer, statValueRect.x, statValueRect.y, statValue.c_str());
+        Debug::settings[Debug::Settings::fontRenderFC] ? Render_Stat(statBox, charHeight, charWidth, currentRow, black, stat) : Render_Stat_FC(camera, statBox, charHeight, charWidth, stat);
       }
     }
   }
@@ -270,9 +255,6 @@ namespace Character_Stats {
       auto &position = view.get<Component::Position>(unit);
       auto &unitPortraitFrame = view.get<Rendering_Components::Unit_Frame_Portrait>(unit);
       auto &bodyFrame = view.get<Rendering_Components::Body_Frame>(unit);
-      //      for (auto item :equipment.equippedItems) {
-      //        Utilities::Log((int)item.second);
-      //      }
 
       entt::entity item = Items::Create_And_Equip_Weapon(zone, state, position, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[0].c_str()), Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::mainhand] = item;
@@ -286,21 +268,17 @@ namespace Character_Stats {
       equipment.equippedItems[Item_Type::legs] = item;
       Load::Get_Bust_Textures(zone, state, item, Item_Type::legs, bodyFrame, unitPortraitFrame);
 
-      item = Items::Create_And_Equip_Armor(zone, state, position, Item_Type::hair, equipment.type, hair, Character_Options::Color[options.hairColor]);
+      item = Items::Create_And_Equip_Cosmetic(zone, state, position, Item_Type::hair, equipment.type, hair, Character_Options::Color[options.hairColor]);
       equipment.equippedItems[Item_Type::hair] = item;
       Load::Get_Bust_Textures(zone, state, item, Item_Type::hair, bodyFrame, unitPortraitFrame);
 
-      item = Items::Create_And_Equip_Armor(zone, state, position, Item_Type::facialHair, equipment.type, beard, Character_Options::Color[options.hairColor]);
+      item = Items::Create_And_Equip_Cosmetic(zone, state, position, Item_Type::facialHair, equipment.type, beard, Character_Options::Color[options.hairColor]);
       equipment.equippedItems[Item_Type::facialHair] = item;
       Load::Get_Bust_Textures(zone, state, item, Item_Type::facialHair, bodyFrame, unitPortraitFrame);
 
-      item = Items::Create_And_Equip_Armor(zone, state, position, Item_Type::horns, equipment.type, horns, Character_Options::Color[0]);
+      item = Items::Create_And_Equip_Cosmetic(zone, state, position, Item_Type::horns, equipment.type, horns, Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::horns] = item;
       Load::Get_Bust_Textures(zone, state, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
-
-      //      for (auto item :equipment.equippedItems) {
-      //        Utilities::Log((int)item.second);
-      //      }
 
       zone.emplace_or_replace<Item_Component::Item_Equip>(unit);
     }
@@ -308,9 +286,7 @@ namespace Character_Stats {
 
   void Update_Items(entt::registry &zone, int &state) {
     Update_Equip_slots(zone, state);
-    Update_Unit_Offense(zone, state);
-    // defensive has to come after offensive as it removes the Item_Equip component
-    Update_Unit_Defense(zone, state);
+    Update_Unit_Stats(zone, state);
   }
 
   void Init_Items() {

@@ -31,12 +31,13 @@ namespace Debug {
     entityPositions,
     loopTimers,
     lockFramerate,
+    fontRenderFC,
     SIZE
   };
 
   std::array<bool, Settings::SIZE> settings;
   std::array<unsigned long int, Settings::SIZE> settingsValue;
-  std::array<std::string, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate"};
+  std::array<std::string, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Font Render FC"};
 
   void Load_Settings() {
     for (auto &i: settings) {

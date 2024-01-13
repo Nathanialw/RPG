@@ -258,14 +258,14 @@ namespace Items {
     float scale = 0.7f;
 
     zone.emplace_or_replace<Component::Scale>(item, scale);
-    zone.emplace_or_replace<Action_Component::Action>(item, Action_Component::dying);
+    zone.emplace_or_replace<Action_Component::Action>(item, Action_Component::dead);
     zone.emplace_or_replace<Component::Direction>(item, direction);
     zone.emplace_or_replace<Name>(item, name);
     zone.emplace_or_replace<Component::Entity_Type>(item, Component::Entity_Type::item);
     auto &stats = zone.emplace_or_replace<Item_Stats>(item);
     stats = itemStats;
-    auto &offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(item, 90.0f, 130.0f);
-    auto &position2 = zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
+    zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(item, 90.0f, 130.0f);
+    zone.emplace_or_replace<Component::Position>(item, position.x, position.y);
   }
 
   statValue Get_Random_Stat() {
@@ -341,20 +341,46 @@ namespace Items {
     return "Create_Armor(item, rarity)";
   }
 
+  void Drop_Item(entt::registry &zone, entt::entity &item_ID, Component::Position &itemPosition, Component::Direction &direction) {
+    auto &sheetData = zone.get<Rendering_Components::Sprite_Sheet_Info>(item_ID);
+    auto &clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList.at(sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(Action_Component::dead).startFrame + (int) direction);
+    SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect.clip);
+    SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
+
+    zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
+    zone.emplace_or_replace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.clip.w, (float) clipRect.clip.h);
+    zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
+    zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
+
+    if (zone.any_of<Component::In_Object_Tree>(item_ID)) {
+      Utilities::Log("item was still has In_Object_Tree");
+      zone.remove<Component::Remove_From_Object_Tree>(item_ID);
+      zone.remove<Component::In_Object_Tree>(item_ID);
+    }
+  }
+
   void Create_And_Drop_Item(entt::registry &zone, Component::Position &position, Component::Direction &direction) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
-    auto item_uID = zone.create();
-    std::string itemName = Choose_Item(item_uID, rarity);
+    auto item_ID = zone.create();
+
+    Armor_Type armorType = Items::Generate_Armor_Type();
+    Item_Component::Item_Type itemType = Item_Type::helm;
+    Item_Component::Unit_Equip_Type equip_type = Unit_Equip_Type::classes_male;
+    Item_Component::Item item_name = SQLite_Item_Data::Load_Specific_Item("Male_Knight_Head");
+    SDL_Color color;
+
+    std::string itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
     if (itemName == "none") {
-      zone.destroy(item_uID);
+      zone.destroy(item_ID);
       Utilities::Log("no drop");
       return;
     }
     //	int item = rand() % 100 + 1;
     //	if (item <= 10) { Create_Item(item, position, rarity, "sword", Item_Type::weapon, Weapon_Type::sword, Graphics::longsword_default, Graphics::longsword_default_icon, itemStats); }
     //	else if (item <= 12) { Create_Item(item, position, rarity, "padded armour", Item_Type::chest, Armor_Type::cloth, Graphics::armorSpriteSheet, Graphics::armorSpriteSheet, itemStats); }
-    Create_Item(zone, item_uID, position, itemName, itemStats, direction);
+    Create_Item(zone, item_ID, position, itemName, itemStats, direction);
+    Drop_Item(zone, item_ID, position, direction);
   }
 
   void Create_Item1(entt::registry &zone, entt::entity &item, Component::Position &position, const std::string &name, Item_Stats &itemStats) {
@@ -400,6 +426,24 @@ namespace Items {
   entt::entity Create_And_Equip_Armor(entt::registry &zone, int &state, Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
+    Armor_Type armorType = Items::Generate_Armor_Type();
+
+    auto item_uID = zone.create();
+    std::string itemName = Create_Specific_Armor(zone, item_uID, rarity, itemType, armorType, equip_type, item_name, color);
+    if (itemName == "none") {
+      zone.destroy(item_uID);
+      Utilities::Log("Create_And_Equip_Armor() " + itemName + " no item in db, no item has been created");
+      return Item_Component::emptyEquipSlot[state];
+    } else {
+      Create_Item1(zone, item_uID, position, itemName, itemStats);
+      Utilities::Log("Create_And_Equip_Armor() " + itemName + " item has successfully been created");
+      return item_uID;
+    }
+  }
+
+  entt::entity Create_And_Equip_Cosmetic(entt::registry &zone, int &state, Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
+    Rarity rarity = Generate_Item_Rarity();
+    Item_Stats itemStats = {};
     Armor_Type armorType = Items::Generate_Armor_Type();
 
     auto item_uID = zone.create();

@@ -76,7 +76,7 @@ namespace Timer {
       if (timeStep < 16.66f) {
         Uint32 nn = floor(16.66f - timeStep);
         SDL_Delay(nn);
-        timeStep = 16.66f - timeStep;
+        timeStep = nn + timeStep;
       }
     }
     Calculate_FPS();

@@ -35,6 +35,10 @@ namespace Death_Control {
             } else {
               Utilities::Log("Death_Sequence() a monster died and it does nothing yet");
               zone.emplace_or_replace<Death_Component::Corpse>(entity);
+              auto &position = zone.get<Component::Position>(entity);
+              auto &direction = zone.get<Component::Direction>(entity);
+
+              Items::Create_And_Drop_Item(zone, position, direction);
             }
           }
         }
