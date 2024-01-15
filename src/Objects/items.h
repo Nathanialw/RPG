@@ -169,7 +169,7 @@ namespace Items {
     return equippedSheetData.index;
   }
 
-  std::string Create_Offhand(entt::registry &zone, entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, std::string &item_name) {
+  std::string Create_Offhand(entt::registry &zone, entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item &item_name, SDL_Color &color) {
     auto material = Generate_Weapon_Material();
     auto offhandType = Item_Component::Offhand_Type::shield;
     ;
@@ -187,7 +187,12 @@ namespace Items {
     ///save the string of the name
     ///provide lookup string when the player picks it up
 
-    auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type, item_name);
+    auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type, item_name.name);
+
+    Texture_Packer_Item::Get_Item_Portrait_exture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
+    Texture_Packer_Item::Get_Item_Body_Texture(item_name.name, ("assets/" + item_name.body_pngPath).c_str());
+    zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
+    zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
 
     if (equippedSheetData.itemData == NULL) {
       return "none";
@@ -359,18 +364,37 @@ namespace Items {
     }
   }
 
-  void Create_And_Drop_Item(entt::registry &zone, Component::Position &position, Component::Direction &direction) {
+  void Create_And_Drop_Item(entt::registry &zone, Component::Position &position, Component::Direction direction, Item_Component::Unit_Equip_Type equip_type) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     auto item_ID = zone.create();
 
-    Armor_Type armorType = Items::Generate_Armor_Type();
-    Item_Component::Item_Type itemType = Item_Type::helm;
-    Item_Component::Unit_Equip_Type equip_type = Unit_Equip_Type::classes_male;
-    Item_Component::Item item_name = SQLite_Item_Data::Load_Specific_Item("Male_Knight_Head");
+    Item_Component::Item item_name;
     SDL_Color color;
+    std::string itemName;
 
-    std::string itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
+    int type = rand() % 3 + 0;
+    Utilities::Log(type);
+    switch (type) {
+      case 0: {
+        Item_Component::Item_Type itemType = Item_Type::helm;
+        Armor_Type armorType = Items::Generate_Armor_Type();
+        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Knight_Head") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Knight_Head");
+        itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
+        break;
+      }
+      case 1: {
+        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Battleguard_Sword") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Battleguard_Sword");
+        itemName = Create_Weapon(zone, item_ID, rarity, equip_type, item_name, color);
+        break;
+      }
+      case 2: {
+        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Footman_Shield") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Footman_Shield");
+        itemName = Create_Offhand(zone, item_ID, rarity, equip_type, item_name, color);
+        break;
+      }
+    }
+
     if (itemName == "none") {
       zone.destroy(item_ID);
       Utilities::Log("no drop");
@@ -398,29 +422,30 @@ namespace Items {
   entt::entity Create_And_Equip_Weapon(entt::registry &zone, int &state, Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
-    auto item_uID = zone.create();
-    std::string itemName = Create_Weapon(zone, item_uID, rarity, equip_type, item_name, color);
+    auto item_ID = zone.create();
+    std::string itemName = Create_Weapon(zone, item_ID, rarity, equip_type, item_name, color);
     if (itemName == "none") {
-      zone.destroy(item_uID);
+      zone.destroy(item_ID);
       //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
       return Item_Component::emptyEquipSlot[state];
     }
-    Create_Item1(zone, item_uID, position, itemName, itemStats);
-    return item_uID;
+    Create_Item1(zone, item_ID, position, itemName, itemStats);
+    return item_ID;
   }
 
-  entt::entity Create_And_Equip_Offhand(entt::registry &zone, int &state, Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, std::string item_name) {
+  entt::entity Create_And_Equip_Offhand(entt::registry &zone, int &state, Component::Position &position, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
-    auto item_uID = zone.create();
-    std::string itemName = Create_Offhand(zone, item_uID, rarity, equip_type, item_name);
+    SDL_Color color;
+    auto item_ID = zone.create();
+    std::string itemName = Create_Offhand(zone, item_ID, rarity, equip_type, item_name, color);
     if (itemName == "none") {
-      zone.destroy(item_uID);
+      zone.destroy(item_ID);
       //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
       return Item_Component::emptyEquipSlot[state];
     }
-    Create_Item1(zone, item_uID, position, itemName, itemStats);
-    return item_uID;
+    Create_Item1(zone, item_ID, position, itemName, itemStats);
+    return item_ID;
   }
 
   entt::entity Create_And_Equip_Armor(entt::registry &zone, int &state, Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
@@ -428,16 +453,16 @@ namespace Items {
     Item_Stats itemStats = Generate_Item_Stats(rarity);
     Armor_Type armorType = Items::Generate_Armor_Type();
 
-    auto item_uID = zone.create();
-    std::string itemName = Create_Specific_Armor(zone, item_uID, rarity, itemType, armorType, equip_type, item_name, color);
+    auto item_ID = zone.create();
+    std::string itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
     if (itemName == "none") {
-      zone.destroy(item_uID);
+      zone.destroy(item_ID);
       Utilities::Log("Create_And_Equip_Armor() " + itemName + " no item in db, no item has been created");
       return Item_Component::emptyEquipSlot[state];
     } else {
-      Create_Item1(zone, item_uID, position, itemName, itemStats);
+      Create_Item1(zone, item_ID, position, itemName, itemStats);
       Utilities::Log("Create_And_Equip_Armor() " + itemName + " item has successfully been created");
-      return item_uID;
+      return item_ID;
     }
   }
 
@@ -446,16 +471,16 @@ namespace Items {
     Item_Stats itemStats = {};
     Armor_Type armorType = Items::Generate_Armor_Type();
 
-    auto item_uID = zone.create();
-    std::string itemName = Create_Specific_Armor(zone, item_uID, rarity, itemType, armorType, equip_type, item_name, color);
+    auto item_ID = zone.create();
+    std::string itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
     if (itemName == "none") {
-      zone.destroy(item_uID);
+      zone.destroy(item_ID);
       Utilities::Log("Create_And_Equip_Armor() " + itemName + " no item in db, no item has been created");
       return Item_Component::emptyEquipSlot[state];
     } else {
-      Create_Item1(zone, item_uID, position, itemName, itemStats);
+      Create_Item1(zone, item_ID, position, itemName, itemStats);
       Utilities::Log("Create_And_Equip_Armor() " + itemName + " item has successfully been created");
-      return item_uID;
+      return item_ID;
     }
   }
 
@@ -512,9 +537,8 @@ namespace Items {
         Component::Position &position = zone.get<Component::Position>(item);
         position.x = mouseX;
         position.y = mouseY;
-      }
-      else {
-//        Utilities::Log("itemID " + std::to_string((int)item));
+      } else {
+        //        Utilities::Log("itemID " + std::to_string((int)item));
       }
     }
     //		Item_Collision(zone);

@@ -94,6 +94,11 @@ namespace Player_Control {
       Action_Component::Set_State(action, Action_Component::kneel);
       Interact_With_Object();
       Clear_Moving(zone, entity_ID, velocity);
+      auto &rad = zone.get<Component::Radius>(target_ID);
+      Component::Position dropPosition = {targetPosition.x, (targetPosition.y + rad.fRadius + 5.0f)};
+      Item_Component::Unit_Equip_Type equip_type = zone.get<Item_Component::Equipment>(entity_ID).type;
+      Items::Create_And_Drop_Item(zone, dropPosition, Component::Direction::N, equip_type);
+      zone.remove<Component::Radius>(target_ID);
       return true;
     }
     return false;

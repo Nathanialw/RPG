@@ -38,7 +38,11 @@ namespace Death_Control {
               auto &position = zone.get<Component::Position>(entity);
               auto &direction = zone.get<Component::Direction>(entity);
 
-              Items::Create_And_Drop_Item(zone, position, direction);
+              auto view = zone.view<Component::Input, Item_Component::Equipment>();
+              for (auto player_ID: view) {
+                auto &equip_type = view.get<Item_Component::Equipment>(player_ID).type;
+                Items::Create_And_Drop_Item(zone, position, direction, equip_type);
+              }
             }
           }
         }

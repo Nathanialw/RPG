@@ -76,6 +76,8 @@ namespace Item_Component {
       return Item_Type::ring;
     } else if (db_type == "offhand") {
       return Item_Type::offhand;
+    } else if (db_type == "shield") {
+      return Item_Type::offhand;
     } else if (db_type == "shins") {
       return Item_Type::shins;
     } else if (db_type == "shoulders") {

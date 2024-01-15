@@ -162,16 +162,17 @@ namespace Character_Stats {
   }
 
   void Render_Stat_FC(Component::Camera &camera, SDL_FRect &statBox, float &charHeight, float &charWidth, std::pair<const Stat, int>stat) {
-    FC_Scale scale = {1/camera.scale.x, 1/camera.scale.y};
+    FC_Scale scale = {1.0f/camera.scale.x, 1.0f/camera.scale.y};
 
     SDL_FRect statNameRect = statBox;
     FC_DrawScale(Graphics::fcFont, Graphics::renderer, statNameRect.x, statNameRect.y, scale, Item_Component::statName[stat.first].c_str());
 
     std::string statValue = std::to_string(stat.second);
     SDL_FRect statValueRect = statBox;
-    statValueRect.x = statValueRect.x + (statBox.w - (statValue.length() * charWidth));
+//    statValueRect.x = statValueRect.x + (statBox.w - (statValue.length() * charWidth));
+    statValueRect.x = statValueRect.x + statBox.w;
 
-    FC_DrawScale(Graphics::fcFont, Graphics::renderer, statValueRect.x, statValueRect.y, scale, statValue.c_str());
+    FC_DrawScaleRight(Graphics::fcFont, Graphics::renderer, statValueRect.x, statValueRect.y, scale, statValue.c_str());
 
     statBox.y += charHeight;
   }
@@ -186,8 +187,6 @@ namespace Character_Stats {
       float currentRow = 0.0f;
       float charHeight = (20.0f / camera.scale.y);
       float charWidth = (10.0f / camera.scale.x);
-
-      SDL_RenderDrawRectF(Graphics::renderer, &statBox);
 
       for (auto &stat: Item_Component::statData) {
         Debug::settings[Debug::Settings::fontRenderFC] ? Render_Stat(statBox, charHeight, charWidth, currentRow, black, stat) : Render_Stat_FC(camera, statBox, charHeight, charWidth, stat);
