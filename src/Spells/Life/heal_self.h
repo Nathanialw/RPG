@@ -10,7 +10,6 @@ namespace Heal_Self {
     return 1;
   }
 
-
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
     auto &health = zone.get<Component::Health>(caster_ID);
     health.currentHealth += 10;
@@ -27,12 +26,11 @@ namespace Heal_Self {
 
   int Heal_Self(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     //get data from db
-    Action_Component::Set_State(action, Action_Component::casting);
+    Action_Component::Set_State(action, Action_Component::pray_standing);
     float castTime = 500.0f;
 
     zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
     zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "pipo-mapeffect013a", "BBLBubbleEllipseYellow");
     return 1;
   }
-
 }// namespace Life

@@ -103,7 +103,7 @@ typedef struct FC_Font FC_Font;
 
 typedef struct FC_GlyphData
 {
-    SDL_Rect rect;
+    SDL_FRect rect;
     int cache_level;
 
 } FC_GlyphData;

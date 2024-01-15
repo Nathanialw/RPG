@@ -700,8 +700,8 @@ FC_Rect FC_DefaultRenderCallback(FC_Image* src, FC_Rect* srcrect, FC_Target* des
         }
 
         SDL_Rect r = *srcrect;
-        SDL_Rect dr = {(int)x, (int)y, (int)(xscale*r.w), (int)(yscale*r.h)};
-        SDL_RenderCopyEx(dest, src, &r, &dr, 0, NULL, flip);
+        SDL_FRect dr = {x, y, (xscale*r.w), (yscale*r.h)};
+        SDL_RenderCopyExF(dest, src, &r, &dr, 0, NULL, flip);
     }
     #endif
 
@@ -1271,7 +1271,11 @@ Uint8 FC_LoadFontFromTTF(FC_Font* font, SDL_Renderer* renderer, TTF_Font* ttf, S
             {
                 SDL_SetSurfaceBlendMode(glyph_surf, SDL_BLENDMODE_NONE);
                 SDL_Rect srcRect = {0, 0, glyph_surf->w, glyph_surf->h};
-                SDL_Rect destrect = font->last_glyph.rect;
+                SDL_Rect destrect;
+                destrect.x = font->last_glyph.rect.x;
+                destrect.y = font->last_glyph.rect.y;
+                destrect.w = font->last_glyph.rect.w;
+                destrect.h = font->last_glyph.rect.h;
                 SDL_BlitSurface(glyph_surf, &srcRect, surfaces[num_surfaces-1], &destrect);
             }
 
@@ -1518,7 +1522,7 @@ Uint8 FC_AddGlyphToCache(FC_Font* font, SDL_Surface* glyph_surface)
     {
         SDL_Renderer* renderer = font->renderer;
         SDL_Texture* img;
-        SDL_Rect destrect;
+        SDL_FRect destrect;
         SDL_Texture* prev_target = SDL_GetRenderTarget(renderer);
         SDL_Rect prev_clip, prev_viewport;
         int prev_logicalw, prev_logicalh;
@@ -1536,9 +1540,12 @@ Uint8 FC_AddGlyphToCache(FC_Font* font, SDL_Surface* glyph_surface)
 
         img = SDL_CreateTextureFromSurface(renderer, glyph_surface);
 
-        destrect = font->last_glyph.rect;
+        destrect.x = (float)font->last_glyph.rect.x;
+        destrect.y = (float)font->last_glyph.rect.y;
+        destrect.w = (float)font->last_glyph.rect.w;
+        destrect.h = (float)font->last_glyph.rect.h;
         SDL_SetRenderTarget(renderer, dest);
-        SDL_RenderCopy(renderer, img, NULL, &destrect);
+        SDL_RenderCopyF(renderer, img, NULL, &destrect);
         SDL_SetRenderTarget(renderer, prev_target);
         if (prev_target) {
             if (prev_clip_enabled)
@@ -1735,7 +1742,10 @@ static FC_Rect FC_RenderLeft(FC_Font* font, FC_Target* dest, float x, float y, F
         srcRect.w = glyph.rect.w;
         srcRect.h = glyph.rect.h;
         #else
-        srcRect = glyph.rect;
+        srcRect.x = glyph.rect.x;
+        srcRect.y = glyph.rect.y;
+        srcRect.w = glyph.rect.w;
+        srcRect.h = glyph.rect.h;
         #endif
         dstRect = fc_render_callback(FC_GetGlyphCacheLevel(font, glyph.cache_level), &srcRect, dest, destX, destY, scale.x, scale.y);
         if(dirtyRect.w == 0 || dirtyRect.h == 0)
