@@ -517,7 +517,7 @@ namespace Rendering {
         return false;
       }
       //Mouse
-      Interface::Foreground(zone, camera);
+      Interface::Foreground(zone, state, camera);
       //on top of mouse
       Tooltip::Show_Item_Tooltip(zone, entity, state, mouse, camera);
       Render_Mouse_Item(zone, camera);

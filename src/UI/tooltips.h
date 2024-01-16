@@ -50,11 +50,52 @@ namespace Tooltip {
     Graphics::Render_FRect(Graphics::tooltipBackground, {255, 255, 255}, &sourcerect, &tooltipBackground);
   }
 
-  void Show_Item_Tooltip(entt::registry &zone, entt::entity &entity, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
+  void Render_Tooltip(entt::registry &zone, entt::entity &item, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
+    auto &name = zone.get<Item_Component::Name>(item).name;
+    auto &stats = zone.get<Item_Component::Item_Stats>(item).stats;
+    auto &rarity = zone.get<Item_Component::Rarity>(item);
+    SDL_Color blue = {51, 153, 255, 255};
+    SDL_Color rarityColor = Item_Component::rarityColor[rarity];
+    int rows = 1 + (int) stats.size();
 
+
+    std::vector<Tooltip_Render_Data> renderArray(rows);
+    int renderArrayIndex = 0;
+
+    //render item name at the top
+    Tooltip_Text_Data tooltip = {name, mousePoint};
+    tooltip.charWidth = (10.0f / camera.scale.x);
+    tooltip.charHeight = (20.0f / camera.scale.y);
+
+    //set name at the color of it's rarity
+    renderArray[renderArrayIndex] = Create_Text(tooltip, rarityColor, rows);
+    renderArrayIndex++;
+
+    for (auto &stat: stats) {
+      //render each stat in order
+      std::string statName = Item_Component::statName[stat.first];
+      std::string statValue = std::to_string(stat.second);
+      std::string statData = statName + "    +" + statValue;
+
+      tooltip.text = statData;
+
+      renderArray[renderArrayIndex] = Create_Text(tooltip, blue, rows);
+      renderArrayIndex++;
+    }
+    //render tooltip background
+    SDL_FRect tooltipBackground = {mousePoint.x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 1))};
+    Render_Tooltip_Background(tooltipBackground, camera);
+    //render item stats
+    for (auto &row: renderArray) {
+      row.renderRect.x += (tooltip.tooltipWidth - row.renderRect.w) / 2.0f;
+      Graphics::Render_FRect(row.spriteData.pTexture, {255, 255, 255}, &row.spriteData.k, &row.renderRect);
+      SDL_DestroyTexture(row.spriteData.pTexture);
+    }
+  }
+
+  void Show_Item_Tooltip(entt::registry &zone, entt::entity &entity, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
     if (UI::bToggleCharacterUI) {
       if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-
         entt::entity item = Item_Component::emptyEquipSlot[state];
         if (UI::Bag_UI::Is_Cursor_Inside_Bag_Area(zone, camera, mousePoint)) { //if mouse is over the bag area
           int mouseoverSlot = UI::Bag_UI::Get_Bag_Slot(zone, mousePoint, camera);
@@ -64,47 +105,7 @@ namespace Tooltip {
           item = UI::Equipment_UI::Get_Equip_Slot(zone, state, camera);
         }
         if (item != UI::Bag_UI::emptyBagSlot[state] && item != Item_Component::emptyEquipSlot[state]) {
-
-          auto &name = zone.get<Item_Component::Name>(item).name;
-          auto &stats = zone.get<Item_Component::Item_Stats>(item).stats;
-          auto &rarity = zone.get<Item_Component::Rarity>(item);
-          SDL_Color blue = {51, 153, 255, 255};
-          SDL_Color rarityColor = Item_Component::rarityColor[rarity];
-          int rows = 1 + (int) stats.size();
-
-
-          std::vector<Tooltip_Render_Data> renderArray(rows);
-          int renderArrayIndex = 0;
-
-          //render item name at the top
-          Tooltip_Text_Data tooltip = {name, mousePoint};
-          tooltip.charWidth = (10.0f / camera.scale.x);
-          tooltip.charHeight = (20.0f / camera.scale.y);
-
-          //set name at the color of it's rarity
-          renderArray[renderArrayIndex] = Create_Text(tooltip, rarityColor, rows);
-          renderArrayIndex++;
-
-          for (auto &stat: stats) {
-            //render each stat in order
-            std::string statName = Item_Component::statName[stat.first];
-            std::string statValue = std::to_string(stat.second);
-            std::string statData = statName + "    +" + statValue;
-
-            tooltip.text = statData;
-
-            renderArray[renderArrayIndex] = Create_Text(tooltip, blue, rows);
-            renderArrayIndex++;
-          }
-          //render tooltip background
-          SDL_FRect tooltipBackground = {mousePoint.x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 1))};
-          Render_Tooltip_Background(tooltipBackground, camera);
-          //render item stats
-          for (auto &row: renderArray) {
-            row.renderRect.x += (tooltip.tooltipWidth - row.renderRect.w) / 2.0f;
-            Graphics::Render_FRect(row.spriteData.pTexture, {255, 255, 255}, &row.spriteData.k, &row.renderRect);
-            SDL_DestroyTexture(row.spriteData.pTexture);
-          }
+          Tooltip::Render_Tooltip(zone, item, state, mousePoint, camera);
         }
       }
     }

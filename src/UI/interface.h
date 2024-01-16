@@ -302,11 +302,12 @@ namespace Interface {
     //    UI_Frames::Init_Frames();
   }
 
-  void Foreground(entt::registry &zone, Component::Camera &camera) {
+  void Foreground(entt::registry &zone, int &state, Component::Camera &camera) {
     //    Show_Grid(Map::terrain);
     //Display_Military_Groups();
     //Display_Unit_Formations(camera);
     Update_Interaction_Box(zone);
+    Loot_Panel::Render_Loot(zone, state, camera);
     UI_Frames::Show_Menu_Frame(zone, camera);
     Unit_Frames::Show_Frames(zone, camera);
     UI_Resources::Show_Frames(zone, camera);

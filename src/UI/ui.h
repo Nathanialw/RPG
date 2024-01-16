@@ -423,11 +423,13 @@ namespace UI {
       Mouse::mouseItem = item_ID;
       Mouse::itemCurrentlyHeld = true;
       //removes from quad tree
-      auto &interactionRect = zone.get<Component::Interaction_Rect>(item_ID).rect;
-      auto &position = zone.get<Component::Position>(item_ID);
-      //prevents auto reinsertion into quad tree
-      zone.emplace_or_replace<Component::Remove_From_Object_Tree>(item_ID, interactionRect);
-      zone.remove<Component::Interaction_Rect>(item_ID);
+      if (zone.any_of<Component::Interaction_Rect>(item_ID)) {
+        auto &interactionRect = zone.get<Component::Interaction_Rect>(item_ID).rect;
+        auto &position = zone.get<Component::Position>(item_ID);
+        //prevents auto reinsertion into quad tree
+        zone.emplace_or_replace<Component::Remove_From_Object_Tree>(item_ID, interactionRect);
+        zone.remove<Component::Interaction_Rect>(item_ID);
+      }
     }
   }
 
@@ -436,7 +438,7 @@ namespace UI {
     SDL_FRect rect = Utilities::Get_FRect_From_Point_Radius(itemData.radius, itemData.x, itemData.y);
     auto &bag = zone.get<Component::Bag>(entity).bag;
 
-    if (bToggleCharacterUI) {//bag is closed
+    if (bToggleCharacterUI) {//bag is open
       Pick_Up_Item_To_Mouse(zone, itemData.item_ID, isItemCurrentlyHeld);
       zone.emplace_or_replace<Item_Component::Item_Pickup>(itemData.item_ID);
       return true;

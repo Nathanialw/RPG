@@ -364,6 +364,56 @@ namespace Items {
     }
   }
 
+  struct Item_Generation {
+    bool created = false;
+    entt::entity item;
+  };
+
+  Item_Generation Generate_Item(entt::registry &zone, Item_Component::Unit_Equip_Type equip_type) {
+    Rarity rarity = Generate_Item_Rarity();
+    Item_Stats itemStats = Generate_Item_Stats(rarity);
+    auto item_ID = zone.create();
+
+    Item_Component::Item item_name;
+    SDL_Color color;
+    std::string itemName;
+
+    int type = rand() % 3 + 0;
+    Utilities::Log(type);
+    switch (type) {
+      case 0: {
+        Item_Component::Item_Type itemType = Item_Type::helm;
+        Armor_Type armorType = Items::Generate_Armor_Type();
+        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Knight_Head") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Knight_Head");
+        itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
+        break;
+      }
+      case 1: {
+        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Battleguard_Sword") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Battleguard_Sword");
+        itemName = Create_Weapon(zone, item_ID, rarity, equip_type, item_name, color);
+        break;
+      }
+      case 2: {
+        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Footman_Shield") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Footman_Shield");
+        itemName = Create_Offhand(zone, item_ID, rarity, equip_type, item_name, color);
+        break;
+      }
+    }
+
+    if (itemName == "none") {
+      zone.destroy(item_ID);
+      Utilities::Log("no drop");
+      return {false};
+    }
+    //	int item = rand() % 100 + 1;
+    //	if (item <= 10) { Create_Item(item, position, rarity, "sword", Item_Type::weapon, Weapon_Type::sword, Graphics::longsword_default, Graphics::longsword_default_icon, itemStats); }
+    //	else if (item <= 12) { Create_Item(item, position, rarity, "padded armour", Item_Type::chest, Armor_Type::cloth, Graphics::armorSpriteSheet, Graphics::armorSpriteSheet, itemStats); }
+    Component::Position position = {0.0f, 0.0f};
+    Component::Direction direction = Component::Direction::W;
+    Create_Item(zone, item_ID, position, itemName, itemStats, direction);
+    return {true, item_ID};
+  }
+
   void Create_And_Drop_Item(entt::registry &zone, Component::Position &position, Component::Direction direction, Item_Component::Unit_Equip_Type equip_type) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);

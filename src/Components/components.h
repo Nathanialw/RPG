@@ -138,6 +138,10 @@ namespace Component {
   struct Drop_Equipment {
   };
 
+  struct Loot {
+    std::vector<entt::entity> items;
+  };
+
   //    struct t_Stored_Frame_Data {
   //        uint64_t frameTime = 0;
   //        int frameIndex = 0;

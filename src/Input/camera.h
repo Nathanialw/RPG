@@ -64,6 +64,24 @@ namespace Camera_Control {
     return fRenderToScreen;
   }
 
+  SDL_FRect Scale_FRect_Size(SDL_FRect& rect, Component::Camera& camera) {
+    SDL_FRect fRenderToScreen = {
+        float(rect.x),
+        float(rect.y),
+        (float(rect.w) / camera.scale.x),
+        (float(rect.h) / camera.scale.y) };
+    return fRenderToScreen;
+  }
+
+  SDL_FRect Scale_FRect_Position(SDL_FRect& rect, Component::Camera& camera) {
+    SDL_FRect fRenderToScreen = {
+        float(rect.x) / camera.scale.x,
+        float(rect.y) / camera.scale.y,
+        float(rect.w),
+        float(rect.h) };
+    return fRenderToScreen;
+  }
+
   SDL_Point Convert_Point_To_Scale(SDL_Point& rect, Component::Camera &camera) {
 
     SDL_FPoint fRenderToScreen = {
@@ -78,6 +96,15 @@ namespace Camera_Control {
     SDL_FPoint fRenderToScreen = {
       float(rect.x) / camera.scale.x,
       float(rect.y) / camera.scale.y };
+
+    return fRenderToScreen;
+  }
+
+  SDL_FPoint Revert_FPoint_To_Scale(SDL_FPoint& rect, Component::Camera& camera) {
+
+    SDL_FPoint fRenderToScreen = {
+        float(rect.x) * camera.scale.x,
+        float(rect.y) * camera.scale.y };
 
     return fRenderToScreen;
   }

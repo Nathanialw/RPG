@@ -1,13 +1,14 @@
 #pragma once
 
+#include "cave.h"
 #include "components.h"
 #include "entity_control.h"
+#include "loot_panel.h"
+#include "mouse_control.h"
 #include "player_components.h"
+#include "social_control.h"
 #include "timer.h"
 #include "ui.h"
-#include "social_control.h"
-#include "cave.h"
-#include "mouse_control.h"
 
 namespace Player_Control {
   void Move_To(entt::registry &zone, entt::entity &entity, Player_Component::Target_Data targetData) {
@@ -61,7 +62,7 @@ namespace Player_Control {
   void Clear_Moving(entt::registry &zone, entt::entity &entity, Component::Velocity &velocity) {
     velocity.magnitude.x = 0.0f;
     velocity.magnitude.y = 0.0f;
-      zone.remove<Player_Component::Target_Data>(entity);
+    zone.remove<Player_Component::Target_Data>(entity);
     zone.remove<Component::Moving>(entity);
   }
 
@@ -74,43 +75,60 @@ namespace Player_Control {
         //interaction, like shop or whatever
       }
       Clear_Moving(zone, entity, velocity);
-
       return true;
     }
     return false;
   }
 
-  void Interact_With_Object() {
+  void Interact_With_Object(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &targetPosition) {
     Utilities::Log("interacting with object");
+
+    if (!zone.any_of<Component::Loot>(target_ID)) {
+      //populate loot drops
+      auto &loot = zone.emplace_or_replace<Component::Loot>(target_ID);
+      Item_Component::Unit_Equip_Type equip_type = zone.get<Item_Component::Equipment>(entity_ID).type;
+      int type = rand() % 3 + 1;
+      for (int i = 0; i < type; ++i) {
+        Items::Item_Generation item = Items::Generate_Item(zone, equip_type);
+        if (item.created) {
+          loot.items.emplace_back(item.item);
+        }
+      }
+    }
+    auto &loot = zone.get<Component::Loot>(target_ID);
+    //push the drops of the unit into the loot window
+    Loot_Panel::Set_Loot(loot);
   }
 
+  void Drop_Item(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &targetPosition) {
+    auto &rad = zone.get<Component::Radius>(target_ID);
+    Component::Position dropPosition = {targetPosition.x, (targetPosition.y + rad.fRadius + 5.0f)};
+    Item_Component::Unit_Equip_Type equip_type = zone.get<Item_Component::Equipment>(entity_ID).type;
+    Items::Create_And_Drop_Item(zone, dropPosition, Component::Direction::N, equip_type);
+    zone.remove<Component::Radius>(target_ID);
+  }
 
   bool Interact(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &entityPosition, Component::Radius &radius, Component::Position &targetPosition, Component::Radius &targetRadius, Component::Velocity &velocity) {// maybe change to move and attack?
-    if (Entity_Control::Target_In_Range(entityPosition, radius.fRadius, targetPosition, targetRadius)) {//check if center of attack rect is in the target
+    if (Entity_Control::Target_In_Range(entityPosition, radius.fRadius, targetPosition, targetRadius)) {                                                                                                                                                      //check if center of attack rect is in the target
       auto &action = zone.get<Action_Component::Action>(entity_ID);
       if (action.state != Action_Component::kneel && action.state != Action_Component::struck) {
         Action_Component::Set_State(action, Action_Component::idle);
       }
       Action_Component::Set_State(action, Action_Component::kneel);
-      Interact_With_Object();
+      Interact_With_Object(zone, entity_ID, target_ID, targetPosition);
       Clear_Moving(zone, entity_ID, velocity);
-      auto &rad = zone.get<Component::Radius>(target_ID);
-      Component::Position dropPosition = {targetPosition.x, (targetPosition.y + rad.fRadius + 5.0f)};
-      Item_Component::Unit_Equip_Type equip_type = zone.get<Item_Component::Equipment>(entity_ID).type;
-      Items::Create_And_Drop_Item(zone, dropPosition, Component::Direction::N, equip_type);
-      zone.remove<Component::Radius>(target_ID);
+//      Drop_Item(zone, entity_ID, target_ID, targetPosition);
       return true;
     }
     return false;
     //else move to cursor
   }
 
-  bool Enter_Portal (entt::registry &zone, entt::entity &entity, int &state, Component::Position &position, Component::Position &targetPosition, Component::Velocity &velocity, Player_Component::Target_Data &targetData) {
+  bool Enter_Portal(entt::registry &zone, entt::entity &entity, int &state, Component::Position &position, Component::Position &targetPosition, Component::Velocity &velocity, Player_Component::Target_Data &targetData) {
     if (Entity_Control::Target_In_Range(position, targetData.radius.fRadius, targetPosition, targetData.radius)) {
       Cave::Load_Zone(zone, targetData.ID, state);
       Clear_Moving(zone, entity, velocity);
       return true;
-
     }
     return false;
   }
@@ -163,22 +181,36 @@ namespace Player_Control {
       auto &position = view.get<Component::Position>(entity);
       auto &radius = view.get<Component::Radius>(entity);
       auto &targetData = view.get<Player_Component::Target_Data>(entity);
-      Utilities::Log((int)targetData.ID);
-      if (!zone.any_of<Component::Position>(targetData.ID)) { return; }
+      if (!zone.any_of<Component::Position>(targetData.ID)) {
+        Utilities::Log(std::to_string((int) targetData.ID) + ": has no Position component");
+        return;
+      }
       auto &targetPosition = zone.get<Component::Position>(targetData.ID);
       auto &velocity = view.get<Component::Velocity>(entity);
       //check if the target is in attack range
       auto &meleeRange = view.get<Component::Melee_Range>(entity);
       switch (targetData.entityType) {
-        case Component::Entity_Type::object: if (Interact(zone, entity, targetData.ID, position, radius, targetPosition, targetData.radius, velocity)) { return; } break;
-        case Component::Entity_Type::portal: if (Enter_Portal(zone, entity, state, position, targetPosition, velocity, targetData)){ return; } break;
-        case Component::Entity_Type::unit: if (Attack(zone, entity, targetData, targetPosition, velocity, position, meleeRange)) { return; } break;
-        case Component::Entity_Type::foliage: break;
-        case Component::Entity_Type::item: break;
-        case Component::Entity_Type::prop: break;
-        case Component::Entity_Type::building: break;
-        case Component::Entity_Type::spell: break;
-        case Component::Entity_Type::SIZE: break;
+        case Component::Entity_Type::object:
+          if (Interact(zone, entity, targetData.ID, position, radius, targetPosition, targetData.radius, velocity)) { return; }
+          break;
+        case Component::Entity_Type::portal:
+          if (Enter_Portal(zone, entity, state, position, targetPosition, velocity, targetData)) { return; }
+          break;
+        case Component::Entity_Type::unit:
+          if (Attack(zone, entity, targetData, targetPosition, velocity, position, meleeRange)) { return; }
+          break;
+        case Component::Entity_Type::foliage:
+          break;
+        case Component::Entity_Type::item:
+          break;
+        case Component::Entity_Type::prop:
+          break;
+        case Component::Entity_Type::building:
+          break;
+        case Component::Entity_Type::spell:
+          break;
+        case Component::Entity_Type::SIZE:
+          break;
       }
       auto &action = view.get<Action_Component::Action>(entity);
       Action_Component::Set_State(action, Action_Component::walk);
@@ -213,10 +245,10 @@ namespace Player_Control {
   //      }
 
 
-//  void Move_To_Item_Routine(entt::registry &zone, bool isItemCurrentlyHeld) {
-//    Mouse_Move_To_Item();
-//    //    Mouse_Move_Arrived_Pickup_Item(zone, isItemCurrentlyHeld);
-//  }
+  //  void Move_To_Item_Routine(entt::registry &zone, bool isItemCurrentlyHeld) {
+  //    Mouse_Move_To_Item();
+  //    //    Mouse_Move_Arrived_Pickup_Item(zone, isItemCurrentlyHeld);
+  //  }
 
   void Move_To_Atack_Routine(entt::registry &zone, int &state) {
     Mouse_Move_To_Item(zone, state);

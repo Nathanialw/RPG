@@ -22,9 +22,9 @@
 //#include <SDL2/SDL.h>
 #include "game_menu.h"
 #include "hotbar.h"
+#include "hotbar_structs.h"
 #include "input_control.h"
 #include "interface.h"
-#include "hotbar_structs.h"
 
 namespace Event_Handler {
 
@@ -41,6 +41,7 @@ namespace Event_Handler {
           if (!input.keyboardControl[Events::event.key.keysym.sym].pressed) {
             input.keyboardControl[Events::event.key.keysym.sym].pressed = true;
             Player_Control::Update_Keyboard_Movement(zone, entity, velocity, input, Events::event.key.keysym.sym);
+            Loot_Panel::Close();
           }
         }
       } else if (Events::event.type == SDL_KEYUP) {
@@ -117,7 +118,13 @@ namespace Event_Handler {
         if (Game_Menu_Control::Check_Menu_Button()) {
           return;
         }
-        //        spells
+        //        loot
+        else if (Loot_Panel::Mouse_Inside_Panel(camera, state)) {
+          //activate autocast on spell
+          Loot_Panel::Get_loot_Item(zone, state, camera);
+          return;
+        }
+        //        actionbar
         else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
             Action_Bar::Set_Mouse_Spell_On_Actionbar(zone, state, camera);
@@ -125,7 +132,9 @@ namespace Event_Handler {
             Action_Bar::Get_Mouse_Spell_From_Actionbar(zone, state, camera);
           }
           return;
-        } else if (UI_Spellbook::Check_Spellbook(camera)) {
+        }
+        //      spellbook
+        else if (UI_Spellbook::Check_Spellbook(camera)) {
           Action_Bar::Clear_Spell_On_Mouse(zone);
           if (!UI_Spellbook::Get_Spell(zone, camera, Mouse::itemCurrentlyHeld)) {
             //check for button on spellbook
@@ -159,21 +168,26 @@ namespace Event_Handler {
               return;
             }
           }
-        }
-        else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
+        } else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
           //activate autocast on spell
           return;
         } else if (UI_Spellbook::Check_Spellbook(camera)) {
           return;
         }
-
+        //        loot
+        if (Loot_Panel::Mouse_Inside_Panel(camera, state)) {
+          //activate autocast on spell
+          Loot_Panel::Get_loot_Item_To_Bag(zone, state, camera);
+          return;
+        }
         if (!Mouse::itemCurrentlyHeld) {
           if (Mouse_Struct::mouseData.type != Component::Icon_Type::spell) {
+            Loot_Panel::Close();
             if (Input_Control::Check_For_Mouse_Target(zone, state, Items::showGroundItems, player_ID, playerPosition)) {
               Mouse::bRight_Mouse_Pressed = false;//otherwise mouse move will override attack move
             } else if (!Mouse::bRight_Mouse_Pressed) {
               User_Mouse_Input::Update_Move_Command_Box();
-              // if not seleciton units
+              // if not selection units
             }
           }
         } else {
@@ -185,68 +199,67 @@ namespace Event_Handler {
     if (Events::event.key.type == SDL_MOUSEBUTTONUP) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
         if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-
-        }
-        else if (UI_Spellbook::Check_Spellbook(camera)){
-
-        }
-        else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
-
-        }
-        else {
+          return;
+        } else if (UI_Spellbook::Check_Spellbook(camera)) {
+          return;
+        } else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
+          return;
+        } else if (Loot_Panel::Mouse_Inside_Panel(camera, state)) {
+          return;
+        } else {
           User_Mouse_Input::Select_Units(zone, player_ID);
         }
       }
       if (Events::event.button.button == SDL_BUTTON_RIGHT) {
-//        if (!UI::bToggleCharacterUI && !Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-          User_Mouse_Input::Command_Unit_Move(zone, player_ID);
-          //        }
-          Mouse::bRight_Mouse_Pressed = false;
+        //        if (!UI::bToggleCharacterUI && !Mouse::bRect_inside_Cursor(UI::Character_UI)) {
+        User_Mouse_Input::Command_Unit_Move(zone, player_ID);
+        //        }
+        Mouse::bRight_Mouse_Pressed = false;
+      }
+    }
+  }
+
+  void Update_User_Input(entt::registry &zone, int &state) {
+    //        keep function running to maintain input and perform actions during pause
+    if (!Menu::toggleMenu) {
+      while (SDL_PollEvent(&Events::event) != 0) {
+        //	auto view = zone.view<Component::Velocity, Action_Component::Action, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
+        auto view = zone.view<Action_Component::Action, Component::Position, Component::Input, Component::Camera>();
+        for (auto player_ID: view) {
+          if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
+            //            recenter camera on player
+            UI_Spellbook::Update_Position();
+            Action_Bar::Update_Position(Action_Bar::actionBar.actionBar.actionBarFrame);
+            Menu::Build_Menu(Menu::menu);
+            break;
+          }
+
+          auto &playerPosition = view.get<Component::Position>(player_ID);
+          auto &playerAction = view.get<Action_Component::Action>(player_ID);
+          auto &camera = view.get<Component::Camera>(player_ID);
+          auto &input = view.get<Component::Input>(player_ID);
+
+          if (Events::event.key.type == SDL_MOUSEMOTION) {
+            Mouse_Hover(zone, state);
+          } else if (Events::event.key.type == SDL_MOUSEWHEEL) {
+            Interface::Update_Zoom(zone, Events::event);
+          } else if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
+            Mouse_Input(zone, state, player_ID, playerPosition, camera);
+          } else if (Events::event.key.type == SDL_KEYDOWN || Events::event.key.type == SDL_KEYUP) {
+            if (zone.any_of<Component::Velocity>(player_ID)) {
+              Movement_Input(zone, playerAction, player_ID, input);
+            }
+            Interface_Input(zone, camera, playerAction, player_ID, state);
+          }
+          //if (event.key.type == SDL_JOYAXISMOTION) { // it works!
+          //	if (event.jaxis. == 0) {
+          //Joystick::JoystickInput(event);
+          //std::cout << Joystick::JoystickInput(event) << std::endl;
+          //	if (event.jaxis.axis == 0) {
+          //	std::cout << event.jaxis.value << std::endl;
+          //	}
         }
       }
     }
-
-    void Update_User_Input(entt::registry & zone, int & state) {
-      //        keep function running to maintain input and perform actions during pause
-      if (!Menu::toggleMenu) {
-        while (SDL_PollEvent(&Events::event) != 0) {
-          //	auto view = zone.view<Component::Velocity, Action_Component::Action, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
-          auto view = zone.view<Action_Component::Action, Component::Position, Component::Input, Component::Camera>();
-          for (auto player_ID: view) {
-            if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
-              //            recenter camera on player
-              UI_Spellbook::Update_Position();
-              Action_Bar::Update_Position(Action_Bar::actionBar.actionBar.actionBarFrame);
-              Menu::Build_Menu(Menu::menu);
-              break;
-            }
-
-            auto &playerPosition = view.get<Component::Position>(player_ID);
-            auto &playerAction = view.get<Action_Component::Action>(player_ID);
-            auto &camera = view.get<Component::Camera>(player_ID);
-            auto &input = view.get<Component::Input>(player_ID);
-
-            if (Events::event.key.type == SDL_MOUSEMOTION) {
-              Mouse_Hover(zone, state);
-            } else if (Events::event.key.type == SDL_MOUSEWHEEL) {
-              Interface::Update_Zoom(zone, Events::event);
-            } else if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
-              Mouse_Input(zone, state, player_ID, playerPosition, camera);
-            } else if (Events::event.key.type == SDL_KEYDOWN || Events::event.key.type == SDL_KEYUP) {
-              if (zone.any_of<Component::Velocity>(player_ID)) {
-                Movement_Input(zone, playerAction, player_ID, input);
-              }
-              Interface_Input(zone, camera, playerAction, player_ID, state);
-            }
-            //if (event.key.type == SDL_JOYAXISMOTION) { // it works!
-            //	if (event.jaxis. == 0) {
-            //Joystick::JoystickInput(event);
-            //std::cout << Joystick::JoystickInput(event) << std::endl;
-            //	if (event.jaxis.axis == 0) {
-            //	std::cout << event.jaxis.value << std::endl;
-            //	}
-          }
-        }
-      }
-    };
-  }// namespace Event_Handler
+  };
+}// namespace Event_Handler
