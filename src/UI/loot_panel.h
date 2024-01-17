@@ -106,19 +106,6 @@ namespace Loot_Panel {
     return false;
   }
 
-  bool Show_loot_Tooltip(entt::registry &zone, Component::Camera &camera) {
-    SDL_FRect panel = lootPanel.panel;
-    for (auto &item: *lootPanel.items) {
-      SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(panel, camera);
-      if (Mouse::bRect_inside_Cursor(scaledSlot)) {
-        Utilities::Log(zone.get<Item_Component::Name>(item).name);
-        return true;
-      }
-      panel.y += lootPanel.lootPanelSize;
-    }
-    return false;
-  };
-
   void Render_Loot(entt::registry &zone, int &state, Component::Camera &camera) {
     if (!lootPanel.open) {
       SDL_FPoint point = {Mouse::iXMouse, Mouse::iYMouse};

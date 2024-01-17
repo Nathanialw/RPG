@@ -1,14 +1,16 @@
 #pragma once
 
-#include "item_components.h"
 #include "components.h"
 #include "graphics.h"
+#include "item_components.h"
 
 namespace Tooltip {
 
   struct Tooltip_Render_Data {
+    std::string text;
     Graphics::Surface_Data spriteData;
     SDL_FRect renderRect;
+    SDL_Color color;
   };
 
   struct Tooltip_Text_Data {
@@ -34,7 +36,7 @@ namespace Tooltip {
     }
     tooltip.currentRow += tooltip.charHeight;
 
-    return {itemName, statNameRect};
+    return {tooltip.text, itemName, statNameRect, textcolor};
   }
 
   void Render_Tooltip_Background(SDL_FRect &tooltipBox, Component::Camera &camera) {
@@ -48,6 +50,23 @@ namespace Tooltip {
     tooltipBackground.h += (tooltipBorder * 2.0f);
 
     Graphics::Render_FRect(Graphics::tooltipBackground, {255, 255, 255}, &sourcerect, &tooltipBackground);
+  }
+
+  void Render_Tooltip_FC(Component::Camera &camera, SDL_FRect &statBox, float &charHeight, SDL_Color color, std::string &text) {
+
+
+    FC_Scale scale = {1.0f / camera.scale.x, 1.0f / camera.scale.y};
+
+    SDL_FRect statNameRect = statBox;
+    FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, statNameRect.x, statNameRect.y, scale, color, text.c_str());
+
+    statBox.y += charHeight;
+  }
+
+  void Render_tooltip_0(Tooltip_Render_Data &row, float &tooltipWidth) {
+    row.renderRect.x += (tooltipWidth - row.renderRect.w) / 2.0f;
+    Graphics::Render_FRect(row.spriteData.pTexture, {255, 255, 255}, &row.spriteData.k, &row.renderRect);
+    SDL_DestroyTexture(row.spriteData.pTexture);
   }
 
   void Render_Tooltip(entt::registry &zone, entt::entity &item, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
@@ -83,13 +102,19 @@ namespace Tooltip {
       renderArrayIndex++;
     }
     //render tooltip background
-    SDL_FRect tooltipBackground = {mousePoint.x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 1))};
+    SDL_FRect tooltipBackground;
+    if (Debug::settings[Debug::Settings::fontRenderFC]) {
+      tooltipBackground = {mousePoint.x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 1))};
+    } else {
+      float x = mousePoint.x - (tooltip.tooltipWidth / 2.0f);
+      tooltipBackground = {x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 1))};
+    }
+
     Render_Tooltip_Background(tooltipBackground, camera);
     //render item stats
-    for (auto &row: renderArray) {
-      row.renderRect.x += (tooltip.tooltipWidth - row.renderRect.w) / 2.0f;
-      Graphics::Render_FRect(row.spriteData.pTexture, {255, 255, 255}, &row.spriteData.k, &row.renderRect);
-      SDL_DestroyTexture(row.spriteData.pTexture);
+    float charHeight = tooltip.charHeight;
+    for (auto row: renderArray) {
+      Debug::settings[Debug::Settings::fontRenderFC] ? Render_tooltip_0(row, tooltip.tooltipWidth) : Render_Tooltip_FC(camera, row.renderRect, charHeight, row.color, row.text);
     }
   }
 
@@ -97,11 +122,11 @@ namespace Tooltip {
     if (UI::bToggleCharacterUI) {
       if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
         entt::entity item = Item_Component::emptyEquipSlot[state];
-        if (UI::Bag_UI::Is_Cursor_Inside_Bag_Area(zone, camera, mousePoint)) { //if mouse is over the bag area
+        if (UI::Bag_UI::Is_Cursor_Inside_Bag_Area(zone, camera, mousePoint)) {//if mouse is over the bag area
           int mouseoverSlot = UI::Bag_UI::Get_Bag_Slot(zone, mousePoint, camera);
           auto &bag = zone.get<Component::Bag>(entity).bag;
           item = bag[mouseoverSlot];
-        } else if (UI::Equipment_UI::Mouse_Inside_Equipment_Screen(zone, camera, mousePoint)) { // if mouse is over the equip area
+        } else if (UI::Equipment_UI::Mouse_Inside_Equipment_Screen(zone, camera, mousePoint)) {// if mouse is over the equip area
           item = UI::Equipment_UI::Get_Equip_Slot(zone, state, camera);
         }
         if (item != UI::Bag_UI::emptyBagSlot[state] && item != Item_Component::emptyEquipSlot[state]) {
@@ -110,4 +135,4 @@ namespace Tooltip {
       }
     }
   }
-}
+}// namespace Tooltip

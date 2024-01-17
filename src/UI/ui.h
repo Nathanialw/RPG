@@ -332,7 +332,7 @@ namespace UI {
           SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
           SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
         } else {
-          Utilities::Log((int) slot.second);
+          Utilities::Log("Render_Equipment_Slot " + std::to_string((int)slot.second));
         }
       }
 //      Utilities::Log((int)Item_Component::emptyEquipSlot[state]);

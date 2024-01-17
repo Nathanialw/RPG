@@ -2392,14 +2392,14 @@ static FC_Rect FC_RenderRight(FC_Font* font, FC_Target* dest, float x, float y, 
 
 
 
-FC_Rect FC_DrawScale(FC_Font* font, FC_Target* dest, float x, float y, FC_Scale scale, const char* formatted_text, ...)
+FC_Rect FC_DrawScale(FC_Font* font, FC_Target* dest, float x, float y, FC_Scale scale, SDL_Color color, const char* formatted_text, ...)
 {
     if(formatted_text == NULL || font == NULL)
         return FC_MakeRect(x, y, 0, 0);
 
     FC_EXTRACT_VARARGS(fc_buffer, formatted_text);
 
-    set_color_for_all_caches(font, font->default_color);
+    set_color_for_all_caches(font, color);
 
     return FC_RenderLeft(font, dest, x, y, scale, fc_buffer);
 }
@@ -2414,6 +2414,18 @@ FC_Rect FC_DrawScaleRight(FC_Font* font, FC_Target* dest, float x, float y, FC_S
   set_color_for_all_caches(font, font->default_color);
 
   return FC_RenderRight(font, dest, x, y, scale, fc_buffer);
+}
+
+FC_Rect FC_DrawScale_Center(FC_Font* font, FC_Target* dest, float x, float y, FC_Scale scale, SDL_Color color, const char* formatted_text, ...)
+{
+  if(formatted_text == NULL || font == NULL)
+    return FC_MakeRect(x, y, 0, 0);
+
+  FC_EXTRACT_VARARGS(fc_buffer, formatted_text);
+
+  set_color_for_all_caches(font, color);
+
+  return FC_RenderCenter(font, dest, x, y, scale, fc_buffer);
 }
 
 FC_Rect FC_DrawAlign(FC_Font* font, FC_Target* dest, float x, float y, FC_AlignEnum align, const char* formatted_text, ...)

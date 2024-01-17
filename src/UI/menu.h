@@ -8,10 +8,10 @@
 #include "menu_options.h"
 #include "mouse_control.h"
 #include "pause.h"
-#include "ui_elements.h"
-#include <array>
 #include "ui_actionbar.h"
+#include "ui_elements.h"
 #include "ui_spellbook.h"
+#include <array>
 
 namespace Menu {
 
@@ -95,7 +95,30 @@ namespace Menu {
     }
   }
 
-  int Show_Menu(Menu &menus, entt::registry &zone, int &state, Component::Camera &camera) {
+  void Render_Menu_FC(Component::Camera &camera) {
+    for (int i = 0; i < menu.buttons.size(); i++) {
+      menu.buttons[i].scaledSize = UI::Update_Scale(camera.scale, menu.buttons[i].size);
+
+      SDL_Color color = colors[0];
+      FC_Scale scale = {1.0f / camera.scale.x, 1.0f / camera.scale.y};
+
+      if (Mouse::FRect_inside_Screen_Cursor(menu.buttons[i].scaledSize)) {
+        if (!menu.buttons[i].selected) {
+          menu.buttons[i].selected = 1;
+          color = colors[1];
+        }
+
+      } else {
+        if (menu.buttons[i].selected) {
+          menu.buttons[i].selected = 0;
+          color = colors[0];
+        }
+      }
+      FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, menu.buttons[i].size.x, menu.buttons[i].size.y, scale, color, menu.buttons[i].text);
+    }
+  }
+
+  void Render_Menu(Component::Camera &camera) {
     for (int i = 0; i < menu.buttons.size(); i++) {
       menu.buttons[i].scaledSize = UI::Update_Scale(camera.scale, menu.buttons[i].size);
 
@@ -115,9 +138,13 @@ namespace Menu {
           menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
         }
       }
-
       SDL_RenderCopyF(Graphics::renderer, menu.buttons[i].textTexture, NULL, &menu.buttons[i].scaledSize);
     }
+  }
+
+  int Show_Menu(Menu &menus, entt::registry &zone, int &state, Component::Camera &camera) {
+//    Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu(camera) : Render_Menu_FC(camera);
+    Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu_FC(camera) : Render_Menu(camera);
 
     while (SDL_PollEvent(&Events::event)) {
       switch (Events::event.type) {
@@ -169,12 +196,27 @@ namespace Menu {
         menu.i = Show_Menu(menu, zone, state, camera);
       }
       switch (menu.i) {
-        case 0: {Toggle(); break;}
-        case 1: {return false; }
-        case 2: {return true; }
-        case 3: {return true; }
-        case 4: {menu.i = Menu_Options::Show_Menu_Options(camera); break;}
-        case 5: {state = 0; break;}
+        case 0: {
+          Toggle();
+          break;
+        }
+        case 1: {
+          return false;
+        }
+        case 2: {
+          return true;
+        }
+        case 3: {
+          return true;
+        }
+        case 4: {
+          menu.i = Menu_Options::Show_Menu_Options(camera);
+          break;
+        }
+        case 5: {
+          state = 0;
+          break;
+        }
       }
     }
     return true;

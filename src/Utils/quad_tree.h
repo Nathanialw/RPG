@@ -68,7 +68,7 @@ namespace Quad_Tree {
         tilesEntities[0][i][j].created = false;
         //remove from tree
         if (i < 0 || j < 0) {
-          Utilities::Log(std::to_string(tilesEntities[0][i][j].objects.size()));
+          Utilities::Log("tile objects: " + std::to_string(tilesEntities[0][i][j].objects.size()));
           continue;
         }
         for (auto tileEntity: tilesEntities[0][i][j].objects) {
