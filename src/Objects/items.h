@@ -375,30 +375,49 @@ namespace Items {
     auto item_ID = zone.create();
 
     Item_Component::Item item_name;
-    SDL_Color color;
+    SDL_Color color = {255,255,255};
     std::string itemName;
 
-    int type = rand() % 3 + 0;
-    Utilities::Log(type);
-    switch (type) {
-      case 0: {
-        Item_Component::Item_Type itemType = Item_Type::helm;
-        Armor_Type armorType = Items::Generate_Armor_Type();
-        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Knight_Head") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Knight_Head");
-        itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
-        break;
-      }
-      case 1: {
-        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Battleguard_Sword") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Battleguard_Sword");
-        itemName = Create_Weapon(zone, item_ID, rarity, equip_type, item_name, color);
-        break;
-      }
-      case 2: {
-        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Footman_Shield") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Footman_Shield");
-        itemName = Create_Offhand(zone, item_ID, rarity, equip_type, item_name, color);
-        break;
-      }
+    //    int type = rand() % 3 + 0;
+    //    Utilities::Log(type);
+    //    switch (type) {
+    //      case 0: {
+    //        Item_Component::Item_Type itemType = Item_Type::helm;
+    //        Armor_Type armorType = Items::Generate_Armor_Type();
+    //        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Knight_Head") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Knight_Head");
+    //        itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
+    //        break;
+    //      }
+    //      case 1: {
+    //        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Battleguard_Sword") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Battleguard_Sword");
+    //        itemName = Create_Weapon(zone, item_ID, rarity, equip_type, item_name, color);
+    //        break;
+    //      }
+    //      case 2: {
+    //        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Footman_Shield") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Footman_Shield");
+    //        itemName = Create_Offhand(zone, item_ID, rarity, equip_type, item_name, color);
+    //        break;
+    //      }
+    //    }
+
+    Item_Type itemType = Item_Type::hair;
+    while (itemType == Item_Type::hair || itemType == Item_Type::facialHair || itemType == Item_Type::dirt || itemType == Item_Type::horns) {
+      itemType = Item_Type(rand() % (int) Item_Type::size + 0);
     }
+
+    std::string item_type = Item_Component::Get_Item_Type_String(itemType);
+    std::vector<Item_Component::Item> items = SQLite_Item_Data::Load_Item(item_type, Get_Unit_Equip_Type_String(equip_type));
+    if (items.empty()) {
+      zone.destroy(item_ID);
+      Utilities::Log("no item found in db: " + item_type + " " + Get_Unit_Equip_Type_String(equip_type));
+      return {false};
+    }
+    int type = rand() % items.size() + 0;
+    item_name = items[type];
+
+//    Item_Component::Item_Type itemType = Item_Type::chest;
+    Armor_Type armorType = Items::Generate_Armor_Type();
+    itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
 
     if (itemName == "none") {
       zone.destroy(item_ID);
@@ -420,7 +439,7 @@ namespace Items {
     auto item_ID = zone.create();
 
     Item_Component::Item item_name;
-    SDL_Color color;
+    SDL_Color color = {255,255,255};
     std::string itemName;
 
     int type = rand() % 3 + 0;

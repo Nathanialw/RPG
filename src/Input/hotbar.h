@@ -11,6 +11,7 @@
 #include "ui.h"
 #include "ui_actionbar.h"
 #include "string"
+#include "info.h"
 /*
  * make an array of functions for everything that can go onto the hotbar, ie skills
  *
@@ -72,6 +73,11 @@ namespace Hotbar {
 
   int Bag_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     UI::Bag_UI::Toggle_Bag();
+    return 0;
+  }
+
+  int Info_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+    Info::Info_Toggle();
     return 0;
   }
 
@@ -151,7 +157,8 @@ namespace Hotbar {
         {SDLK_9, Action_Bar::actionBar.actionBar.spell[9].cast},
         {SDLK_TAB, Tab_Target},
         {SDLK_ESCAPE, Menu_Toggle},
-        {SDLK_i, Bag_Toggle},
+        {SDLK_i, Info_Toggle},
+        {SDLK_b, Bag_Toggle},
         {SDLK_p, Pause_Toggle},
         {SDLK_PLUS, Mouse_On},
         {SDLK_MINUS, Mouse_Off},

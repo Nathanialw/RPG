@@ -53,13 +53,9 @@ namespace Tooltip {
   }
 
   void Render_Tooltip_FC(Component::Camera &camera, SDL_FRect &statBox, float &charHeight, SDL_Color color, std::string &text) {
-
-
     FC_Scale scale = {1.0f / camera.scale.x, 1.0f / camera.scale.y};
-
     SDL_FRect statNameRect = statBox;
     FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, statNameRect.x, statNameRect.y, scale, color, text.c_str());
-
     statBox.y += charHeight;
   }
 
@@ -75,8 +71,7 @@ namespace Tooltip {
     auto &rarity = zone.get<Item_Component::Rarity>(item);
     SDL_Color blue = {51, 153, 255, 255};
     SDL_Color rarityColor = Item_Component::rarityColor[rarity];
-    int rows = 1 + (int) stats.size();
-
+    int rows = 2 + (int) stats.size();
 
     std::vector<Tooltip_Render_Data> renderArray(rows);
     int renderArrayIndex = 0;
@@ -90,12 +85,16 @@ namespace Tooltip {
     renderArray[renderArrayIndex] = Create_Text(tooltip, rarityColor, rows);
     renderArrayIndex++;
 
+    //set type at the color of it's rarity
+    tooltip.text = Item_Component::Get_Item_Type_String(zone.get<Item_Component::Item_Type>(item));
+    renderArray[renderArrayIndex] = Create_Text(tooltip, rarityColor, rows);
+    renderArrayIndex++;
+
     for (auto &stat: stats) {
       //render each stat in order
       std::string statName = Item_Component::statName[stat.first];
       std::string statValue = std::to_string(stat.second);
       std::string statData = statName + "    +" + statValue;
-
       tooltip.text = statData;
 
       renderArray[renderArrayIndex] = Create_Text(tooltip, blue, rows);
@@ -104,10 +103,10 @@ namespace Tooltip {
     //render tooltip background
     SDL_FRect tooltipBackground;
     if (Debug::settings[Debug::Settings::fontRenderFC]) {
-      tooltipBackground = {mousePoint.x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 1))};
+      tooltipBackground = {mousePoint.x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 2))};
     } else {
       float x = mousePoint.x - (tooltip.tooltipWidth / 2.0f);
-      tooltipBackground = {x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 1))};
+      tooltipBackground = {x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 2))};
     }
 
     Render_Tooltip_Background(tooltipBackground, camera);
@@ -115,6 +114,7 @@ namespace Tooltip {
     float charHeight = tooltip.charHeight;
     for (auto row: renderArray) {
       Debug::settings[Debug::Settings::fontRenderFC] ? Render_tooltip_0(row, tooltip.tooltipWidth) : Render_Tooltip_FC(camera, row.renderRect, charHeight, row.color, row.text);
+      SDL_DestroyTexture(row.spriteData.pTexture);
     }
   }
 
