@@ -77,7 +77,7 @@ namespace Hotbar {
   }
 
   int Info_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
-    Info::Info_Toggle();
+    UI_Info::Info_Toggle();
     return 0;
   }
 

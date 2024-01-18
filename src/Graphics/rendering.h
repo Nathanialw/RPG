@@ -14,6 +14,7 @@
 #include "world_grid.h"
 #include <SDL2/SDL.h>
 #include <vector>
+#include "fog.h"
 
 namespace Rendering {
 
@@ -349,9 +350,9 @@ namespace Rendering {
       }
     }
     if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
-//      const auto &icon = UI_Spellbook::spellbook.Skill_Trees[UI_Spellbook::fire][0].icon;
+      //      const auto &icon = UI_Spellbook::spellbook.Skill_Trees[UI_Spellbook::fire][0].icon;
       const auto &icon = UI_Spellbook::spellbook.Skill_Trees[Mouse_Struct::mouseData.tree][Mouse_Struct::mouseData.index].icon;
-//      const auto &icon = Mouse::ss.spell;
+      //      const auto &icon = Mouse::ss.spell;
 
       DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
       DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
@@ -507,11 +508,13 @@ namespace Rendering {
       Items::Unit_Name_On_Mouseover(zone, camera);
       Social_Control::Show_Dialogue(zone, camera);
       Items::Name_On_Mouseover(zone, camera);
+      Fog::Fog(camera);
       Render_UI(zone, state, Graphics::renderer, camera);
       Character_Stats::Render_Character_Stats(camera);
       Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
       Damage_Text::Show_Damage(zone, camera);
       UI_Spellbook::Draw_Spellbook(camera);
+      UI_Info::Draw_Attributes(camera);
       Pause::Pause_Control(camera);
       if (!Menu::Render_Menu(zone, state, camera)) {
         return false;

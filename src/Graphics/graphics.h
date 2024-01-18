@@ -111,6 +111,8 @@ namespace Graphics {
   SDL_Texture *emptyBagIcon;
 
   SDL_Texture *charCreateBackground;
+  SDL_Texture *window_glow;
+  SDL_Texture *fog;
 
   SDL_Texture *bagSlotBorder;
   SDL_Texture *itemBorderCommon;
@@ -342,6 +344,8 @@ namespace Graphics {
     firebolt = createTexture("assets/sprites/UI/icons/spell_icons/fire/Fantasy Game Skills Icon 1 - Magic - Fire Ball level 3.jpg");
 
     charCreateBackground = createTexture("assets/sprites/UI/backgrounds/Background_47.png");
+    window_glow = createTexture("assets/sprites/UI/window_glow.png");
+    fog = createTexture("assets/sprites/UI/mist/fog_0.png");
 
     weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
     itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");

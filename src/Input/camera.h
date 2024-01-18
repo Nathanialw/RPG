@@ -30,14 +30,11 @@ namespace Camera_Control {
   }
 
   SDL_FRect Convert_Rect_To_Screen_Coods(SDL_FRect& frect, Component::Camera& camera) {
-
     SDL_FRect screenRect = {};
-
     screenRect.x = frect.x - camera.screen.x;
     screenRect.y = frect.y - camera.screen.y;
     screenRect.w = frect.w;
     screenRect.h = frect.h;
-
     return screenRect;
   }
 
