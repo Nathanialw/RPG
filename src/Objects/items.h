@@ -112,8 +112,8 @@ namespace Items {
     return Armor_Type::cloth;
   }
 
-  Rendering_Components::Color Set_Color() {
-    Rendering_Components::Color color;
+  Rendering_Components::Color Set_Random_Color() {
+    Rendering_Components::Color color = {};
     color.r = rand() % 254 + 1;
     color.g = rand() % 254 + 1;
     color.b = rand() % 254 + 1;
@@ -132,7 +132,7 @@ namespace Items {
     auto &type = zone.emplace_or_replace<Item_Type>(item, Item_Type::mainhand);
     zone.emplace_or_replace<Rarity>(item, rarity);
 
-    Texture_Packer_Item::Get_Item_Portrait_exture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
+    Texture_Packer_Item::Get_Item_Portrait_Texture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
     Texture_Packer_Item::Get_Item_Body_Texture(item_name.name, ("assets/" + item_name.body_pngPath).c_str());
     zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
     zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
@@ -190,7 +190,7 @@ namespace Items {
 
     auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type, item_name.name);
 
-    Texture_Packer_Item::Get_Item_Portrait_exture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
+    Texture_Packer_Item::Get_Item_Portrait_Texture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
     Texture_Packer_Item::Get_Item_Body_Texture(item_name.name, ("assets/" + item_name.body_pngPath).c_str());
     zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
     zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
@@ -234,26 +234,36 @@ namespace Items {
     //    int size = 64;
     //    SDL_Rect sprite = {column * size, row * size, size, size};
 
-
-    Texture_Packer_Item::Get_Item_Portrait_exture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
+    Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
+    Texture_Packer_Item::Get_Item_Portrait_Texture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
     Texture_Packer_Item::Get_Item_Body_Texture(item_name.name, ("assets/" + item_name.body_pngPath).c_str());
     zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
     zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
 
-    Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
-    equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type, equip_type, item_name.name);
-    if (equippedSheetData.itemData == NULL) {
-      return "none";
+    if (item_name.hasTexture) {
+      equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type, equip_type, item_name.name);
+      if (equippedSheetData.itemData == NULL) {
+        return "none";
+      }
+      auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
+      sheetData.color = color;
+      sheetData.sheet_name = equippedSheetData.index;
+      sheetData.type = "RPG_Tools";
+      sheetData.sheetData = equippedSheetData.itemData;
+    } else {
+      equippedSheetData.index = item_name.name;
+
+      auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
+      sheetData.color = color;
+      sheetData.sheet_name = equippedSheetData.index;
+      sheetData.type = "RPG_Tools";
+      sheetData.sheetData = NULL;
     }
 
-    auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
-    sheetData.color = color;
-    sheetData.sheet_name = equippedSheetData.index;
-    sheetData.type = "RPG_Tools";
-    sheetData.sheetData = equippedSheetData.itemData;
 
     //look up clip from xml save to icon.clipSprite
     //save whole sprite sheet of icons to *iconTexture
+    //    }
     Icons::Icon_Clip sprite = Icons::iconClipRects[item_name.icon_name];
 
     SDL_Texture *iconTexture = Graphics::icons;
@@ -405,7 +415,7 @@ namespace Items {
     //    }
 
     Item_Type itemType = Item_Type::hair;
-    while (itemType == Item_Type::hair || itemType == Item_Type::facialHair || itemType == Item_Type::dirt || itemType == Item_Type::horns) {
+    while (itemType == Item_Type::hair || itemType == Item_Type::facialHair || itemType == Item_Type::dirt || itemType == Item_Type::horns || itemType == Item_Type::ring0 || itemType == Item_Type::ring1 || itemType == Item_Type::jewelry0 || itemType == Item_Type::jewelry1) {
       itemType = Item_Type(rand() % (int) Item_Type::size + 0);
     }
 

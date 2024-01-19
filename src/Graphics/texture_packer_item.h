@@ -95,11 +95,11 @@ namespace Texture_Packer_Item {
     //to render it jsut needs access to the texture array and the unitID
   }
 
-  void Get_Item_Portrait_exture(std::string &index, const char *filepath) {
+  void Get_Item_Portrait_Texture(std::string &index, const char *filepath) {
     if (Item_Portaits[index] == NULL) {
       Load_Texture(index, Item_Portaits, filepath);
       if (Item_Portaits[index] == NULL) {
-        std::cout << "Get_Item_Portrait_exture() failed to load  texture from file: " << filepath << std::endl;
+        std::cout << "Get_Item_Portrait_Texture() failed to load  texture from file: " << filepath << std::endl;
       } else {
         //	std::cout << "loaded from file: " << filepath << std::endl;
       }

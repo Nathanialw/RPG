@@ -15,18 +15,22 @@ namespace Item_Component {
     boots,
     kilt,
     chest,
-    hair,
     gloves,
     ring,
+    ring0,
+    ring1,
     facialHair,
     face,
+    hair,
     hood,
+    back,
     helm,
     crown,
     shins,
-    back,
     shoulders,
     jewelry,
+    jewelry0,
+    jewelry1,
     dirt,
     ranged,
     mainhand,
@@ -247,10 +251,12 @@ namespace Item_Component {
                                {Item_Type::chest, emptyEquipSlot[state]},
                                {Item_Type::hair, emptyEquipSlot[state]},
                                {Item_Type::crown, emptyEquipSlot[state]},
-                               {Item_Type::ring, emptyEquipSlot[state]},
+                               {Item_Type::ring0, emptyEquipSlot[state]},
+                               {Item_Type::ring1, emptyEquipSlot[state]},
                                {Item_Type::shins, emptyEquipSlot[state]},
                                {Item_Type::shoulders, emptyEquipSlot[state]},
-                               {Item_Type::jewelry, emptyEquipSlot[state]},
+                               {Item_Type::jewelry0, emptyEquipSlot[state]},
+                               {Item_Type::jewelry1, emptyEquipSlot[state]},
                                {Item_Type::ranged, emptyEquipSlot[state]},
                                {Item_Type::offhand, emptyEquipSlot[state]},
                                {Item_Type::mainhand, emptyEquipSlot[state]}};
@@ -266,6 +272,7 @@ namespace Item_Component {
     std::string body_pngPath;
     std::string icon_name;
     Unit_Equip_Type equip_type;
+    bool hasTexture = false;
   };
 
   enum class Armor_Type {

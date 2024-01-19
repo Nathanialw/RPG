@@ -224,6 +224,9 @@ namespace Spritesheet_Structs {
         } else if (checkAction == "Dead") {
           action = Action_Component::Action_State::dead;
           actionFrameData[action].frameSpeed = i;
+        } else if (checkAction == "Dead2") {
+          action = Action_Component::Action_State::dead;
+          actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "Hand Casual") {
           action = Action_Component::Action_State::talk;
           actionFrameData[action].frameSpeed = i;

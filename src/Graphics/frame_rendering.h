@@ -151,7 +151,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
         }
       }
     } else {
-      Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL");
+      Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL, probably item on ground with no sprite");
     }
   }
   //        std::cout << "\n";

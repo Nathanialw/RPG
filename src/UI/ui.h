@@ -191,7 +191,8 @@ namespace UI {
     namespace {
       f2 equipmentOffsetColumn1 = {32.0f, 32.0f};
       f2 equipmentOffsetColumn2 = {452.0f, 32.0f};
-      float iEquipmentSlotPixelSize = 81.0f;
+      //      float iEquipmentSlotPixelSize = 81.0f;
+      float iEquipmentSlotPixelSize = 40.5f;
       // 452 in the x
       // 10 between in the y
       SDL_FRect screenEquipment = {defaultScreenPosition.x, defaultScreenPosition.y, 490.0f, 1080.0f};
@@ -207,7 +208,20 @@ namespace UI {
           {Item_Component::Item_Type::legs, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
           {Item_Component::Item_Type::boots, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
           {Item_Component::Item_Type::offhand, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::hair, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 800.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}}};
+
+          {Item_Component::Item_Type::clothes, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::wrist, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::kilt, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::face, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::hood, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::crown, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::shins, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::back, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::ring0, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::ring1, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::jewelry0, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::jewelry1, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}}};
+      //            Item_Component::Item_Type::ranged, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 800.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
     }// namespace
 
     void Unequip_Item(entt::registry &zone, int &state, entt::entity &item, bool &mouseHasItem, const Item_Component::Item_Type &itemType, entt::entity &player) {
@@ -262,7 +276,6 @@ namespace UI {
       return Utilities::bPoint_RectIntersect(screenCursor, screenEquipment);
     }
 
-
     bool Interact_With_Equipment(entt::registry &zone, int &state, Component::Camera &camera, entt::entity &player) {
       /*could be injected instead*/
       if (Check_Mouse_Is_item(zone)) {
@@ -270,12 +283,42 @@ namespace UI {
           //check which item type with a search of where the mouse and the rects of the equip slots
           auto &equipment = zone.get<Item_Component::Equipment>(player);
           if (Mouse::itemCurrentlyHeld) {
-            auto &itemType = zone.get<Item_Component::Item_Type>(Mouse::mouseItem);
+            auto itemType = zone.get<Item_Component::Item_Type>(Mouse::mouseItem);
 
             SDL_FRect slotRect = equippedItemsRect[itemType];
-            SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+            SDL_FRect scaledSlot;
+            bool inside;
+            if (itemType == Item_Component::Item_Type::ring) {
+              slotRect = equippedItemsRect[Item_Component::Item_Type::ring0];
+              scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+              inside = Mouse::bRect_inside_Cursor(scaledSlot);
+              itemType = Item_Component::Item_Type::ring0;
+              if (!inside) {
+                slotRect = equippedItemsRect[Item_Component::Item_Type::ring1];
+                scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+                inside = Mouse::bRect_inside_Cursor(scaledSlot);
+                itemType = Item_Component::Item_Type::ring1;
+              }
+            }
+            else if (itemType == Item_Component::Item_Type::jewelry) {
+              slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry0];
+              scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+              inside = Mouse::bRect_inside_Cursor(scaledSlot);
+              itemType = Item_Component::Item_Type::jewelry0;
+              if (!inside) {
+                slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry1];
+                scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+                inside = Mouse::bRect_inside_Cursor(scaledSlot);
+                itemType = Item_Component::Item_Type::jewelry1;
+              }
+            }
 
-            if (Mouse::bRect_inside_Cursor(scaledSlot)) {
+            else {
+              scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+              inside = Mouse::bRect_inside_Cursor(scaledSlot);
+            }
+
+            if (inside) {
               if (equipment.equippedItems[itemType] == Item_Component::emptyEquipSlot[state]) {
                 Equip_Item(zone, itemType, player);
                 return true;
@@ -330,12 +373,12 @@ namespace UI {
           //SDL_RenderCopy(renderer, icon.pBackground, &icon.clipSprite, &scaledSlot);
           SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
           SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
-          SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
+          //          SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
         } else {
-          Utilities::Log("Render_Equipment_Slot " + std::to_string((int)slot.second));
+          //          Utilities::Log("Render_Equipment_Slot " + std::to_string((int) slot.second));
         }
       }
-//      Utilities::Log((int)Item_Component::emptyEquipSlot[state]);
+      //      Utilities::Log((int)Item_Component::emptyEquipSlot[state]);
     }
 
     void Update_Equipment_Position(Component::Camera &camera) {
@@ -344,26 +387,73 @@ namespace UI {
     }
   }// namespace Equipment_UI
 
+  bool Swap_Multislot(int &state, Item_Component::Item_Type &type, Item_Component::Equipment &equipment, entt::entity &itemInSlot, std::array<entt::entity, 32> &bag, int &slotNum) {
+    //check in rung slot 1 is open if it is place it in
+    if (type == Item_Component::Item_Type::ring) {
+      entt::entity equippedItem = equipment.equippedItems[Item_Component::Item_Type::ring0];
+      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
+        equipment.equippedItems[Item_Component::Item_Type::ring0] = itemInSlot;
+        bag[slotNum] = Bag_UI::emptyBagSlot[state];
+        return true;
+      }
+      //check if ring slot 2 is open if it is place it in
+      equippedItem = equipment.equippedItems[Item_Component::Item_Type::ring1];
+      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
+        equipment.equippedItems[Item_Component::Item_Type::ring1] = itemInSlot;
+        bag[slotNum] = Bag_UI::emptyBagSlot[state];
+        return true;
+      }
+      //if neither is open swap ring slot 1
+      equippedItem = equipment.equippedItems[Item_Component::Item_Type::ring0];
+      equipment.equippedItems[Item_Component::Item_Type::ring0] = itemInSlot;
+      bag[slotNum] = equippedItem;
+      return true;
+    }
+
+    if (type == Item_Component::Item_Type::jewelry) {
+      entt::entity equippedItem = equipment.equippedItems[Item_Component::Item_Type::jewelry0];
+      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
+        equipment.equippedItems[Item_Component::Item_Type::jewelry0] = itemInSlot;
+        bag[slotNum] = Bag_UI::emptyBagSlot[state];
+        return true;
+      }
+      //check if ring slot 2 is open if it is place it in
+      equippedItem = equipment.equippedItems[Item_Component::Item_Type::jewelry1];
+      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
+        equipment.equippedItems[Item_Component::Item_Type::jewelry1] = itemInSlot;
+        bag[slotNum] = Bag_UI::emptyBagSlot[state];
+        return true;
+      }
+      //if neither is open swap ring slot 1
+      equippedItem = equipment.equippedItems[Item_Component::Item_Type::jewelry0];
+      equipment.equippedItems[Item_Component::Item_Type::jewelry0] = itemInSlot;
+      bag[slotNum] = equippedItem;
+      return true;
+    }
+    return false;
+  }
+
   bool Swap_Item_In_Bag_For_Equipped(entt::registry &zone, int &state, SDL_FPoint &screenCursor, Component::Camera &camera, entt::entity &player) {
     auto &bag = zone.get<Component::Bag>(player).bag;
-
-
     auto &equipment = zone.get<Item_Component::Equipment>(player);
-    Utilities::Log("swap item");
     int slotNum = Bag_UI::Get_Bag_Slot(zone, screenCursor, camera);
     entt::entity itemInSlot = bag[slotNum];
+
     if (itemInSlot != Bag_UI::emptyBagSlot[state]) {
       auto type = zone.get<Item_Component::Item_Type>(itemInSlot);
-      entt::entity equippedItem = equipment.equippedItems[type];
-      equipment.equippedItems[type] = itemInSlot;
-      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) type] = zone.get<Rendering_Components::Portrait>(itemInSlot);
-
-      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
-        bag[slotNum] = Bag_UI::emptyBagSlot[state];
+      if (Swap_Multislot(state, type, equipment, itemInSlot, bag, slotNum)) {
+        return true;
       } else {
-        bag[slotNum] = equippedItem;
+        entt::entity equippedItem = equipment.equippedItems[type];
+        equipment.equippedItems[type] = itemInSlot;
+        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) type] = zone.get<Rendering_Components::Portrait>(itemInSlot);
+        if (equippedItem == Item_Component::emptyEquipSlot[state]) {
+          bag[slotNum] = Bag_UI::emptyBagSlot[state];
+        } else {
+          bag[slotNum] = equippedItem;
+        }
+        return true;
       }
-      return true;
     }
     return false;
   }
@@ -381,14 +471,23 @@ namespace UI {
 
           auto &sheetData = zone.get<Rendering_Components::Sprite_Sheet_Info>(item_ID);
           auto direction = zone.emplace_or_replace<Component::Direction>(item_ID, (Component::Direction)(rand() % 7 + 1));
-          auto &clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList.at(sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(Action_Component::dead).startFrame + (int) direction);
 
+          //needs to be changed to a sprite of the item laying on the ground
+          // does not currently show a ground sprite for an item without a sprite on character
+          // items from the back slot do not work
+          SDL_Rect clipRect;
+          if (sheetData.sheetData) {
+            clipRect = sheetData.sheetData->at(sheetData.sheet_name).frameList.at(sheetData.sheetData->at(sheetData.sheet_name).actionFrameData.at(Action_Component::dead).startFrame + (int) direction).clip;
+          } else {
+            clipRect = {(int) Mouse::iXWorld_Mouse, (int) Mouse::iYWorld_Mouse, 20, 20};
+          }
+
+          SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect);
           zone.remove<Component::On_Mouse>(item_ID);
-          SDL_FRect frec = Utilities::SDL_Rect_To_SDL_FRect(clipRect.clip);
           SDL_FRect rec = Utilities::Centre_Rect_On_Position(frec, itemPosition.x, itemPosition.y);
 
           zone.emplace_or_replace<Item_Component::Ground_Item>(item_ID, rec);
-          zone.emplace_or_replace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.clip.w, (float) clipRect.clip.h);
+          zone.emplace_or_replace<Component::Interaction_Rect>(item_ID, rec.x, rec.y, (float) clipRect.w, (float) clipRect.h);
           zone.emplace_or_replace<Item_Component::Update_Ground_Item>(item_ID);
           zone.emplace_or_replace<Component::Radius>(item_ID, 10.0f);
 

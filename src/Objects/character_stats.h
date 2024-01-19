@@ -1,12 +1,12 @@
 #pragma once
 #include "character_options.h"
+#include "create_entities.h"
 #include "graphics.h"
 #include "items.h"
 #include "load_zone.h"
 #include "ui.h"
 #include <SDL2/SDL.h>
 #include <sstream>
-#include "create_entities.h"
 
 namespace Character_Stats {
 
@@ -42,11 +42,9 @@ namespace Character_Stats {
         if (item.second != Item_Component::emptyEquipSlot[state]) {
 
           // get the item at the item type index
-          auto &weaponSheet =
-              zone.get<Rendering_Components::Sprite_Sheet_Info>(item.second);
+          auto &weaponSheet = zone.get<Rendering_Components::Sprite_Sheet_Info>(item.second);
           if (weaponSheet.sheetData) {
-            equipmentSprites.sheet[(int) item.first].ItemSheetData =
-                weaponSheet.sheetData;
+            equipmentSprites.sheet[(int) item.first].ItemSheetData = weaponSheet.sheetData;
             equipmentSprites.sheet[(int) item.first].name = weaponSheet.sheet_name;
             equipmentSprites.sheet[(int) item.first].itemID = item.second;
             equipmentSprites.sheet[(int) item.first].color = weaponSheet.color;
@@ -129,12 +127,12 @@ namespace Character_Stats {
   }
 
   struct Stat_Textures {
-    SDL_Texture* stat;
-    SDL_Texture* value;
+    SDL_Texture *stat;
+    SDL_Texture *value;
   };
   std::unordered_map<std::string, Stat_Textures> statsValues;
 
-  void Render_Stat(SDL_FRect &statBox, float &charHeight, float &charWidth, float &currentRow, SDL_Color &black, std::pair<const Stat, int>stat) {
+  void Render_Stat(SDL_FRect &statBox, float &charHeight, float &charWidth, float &currentRow, SDL_Color &black, std::pair<const Stat, int> stat) {
     Graphics::Surface_Data statNameData = Graphics::Load_Text_Texture(Item_Component::statName[stat.first], black);
 
     SDL_FRect statNameRect = statBox;
@@ -161,8 +159,8 @@ namespace Character_Stats {
     statBox.y += charHeight;
   }
 
-  void Render_Stat_FC(Component::Camera &camera, SDL_FRect &statBox, float &charHeight, float &charWidth, SDL_Color color, std::pair<const Stat, int>stat) {
-    FC_Scale scale = {1.0f/camera.scale.x, 1.0f/camera.scale.y};
+  void Render_Stat_FC(Component::Camera &camera, SDL_FRect &statBox, float &charHeight, float &charWidth, SDL_Color color, std::pair<const Stat, int> stat) {
+    FC_Scale scale = {1.0f / camera.scale.x, 1.0f / camera.scale.y};
 
     SDL_FRect statNameRect = statBox;
     FC_DrawScale(Graphics::fcFont, Graphics::renderer, statNameRect.x, statNameRect.y, scale, color, Item_Component::statName[stat.first].c_str());
@@ -247,6 +245,7 @@ namespace Character_Stats {
     Item_Component::Item beard = Get_Beard_Name(options);
     Item_Component::Item horns = Get_Horn_Name(options);
 
+
     auto view = zone.view<Item_Component::Equipment, Component::Position, Rendering_Components::Unit_Frame_Portrait, Rendering_Components::Body_Frame>();
     for (auto unit: view) {
       auto &equipment = view.get<Item_Component::Equipment>(unit);
@@ -274,9 +273,11 @@ namespace Character_Stats {
       equipment.equippedItems[Item_Type::facialHair] = item;
       Load::Get_Bust_Textures(zone, state, item, Item_Type::facialHair, bodyFrame, unitPortraitFrame);
 
-      item = Items::Create_And_Equip_Cosmetic(zone, state, position, Item_Type::horns, equipment.type, horns, Character_Options::Color[0]);
-      equipment.equippedItems[Item_Type::horns] = item;
-      Load::Get_Bust_Textures(zone, state, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
+      if (horns.hasTexture) {
+        item = Items::Create_And_Equip_Cosmetic(zone, state, position, Item_Type::horns, equipment.type, horns, Character_Options::Color[0]);
+        equipment.equippedItems[Item_Type::horns] = item;
+        Load::Get_Bust_Textures(zone, state, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
+      }
 
       zone.emplace_or_replace<Item_Component::Item_Equip>(unit);
     }
