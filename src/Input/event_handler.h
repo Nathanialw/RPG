@@ -121,7 +121,6 @@ namespace Event_Handler {
         //        loot
         else if (Loot_Panel::Mouse_Inside_Panel(camera, state)) {
           //activate autocast on spell
-          Loot_Panel::Get_loot_Item(zone, state, camera);
           return;
         }
         //        actionbar
@@ -205,6 +204,7 @@ namespace Event_Handler {
         } else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
           return;
         } else if (Loot_Panel::Mouse_Inside_Panel(camera, state)) {
+          Loot_Panel::Get_loot_Item(zone, state, camera);
           return;
         } else {
           User_Mouse_Input::Select_Units(zone, player_ID);

@@ -49,9 +49,9 @@ namespace Loot_Panel {
           zone.emplace_or_replace<Component::Inventory>(slot);
           return true;
         } else {
-          Utilities::Log("I am overburdened");
         }
       }
+      Utilities::Log("I am overburdened");
       return true;
     }
     return false;

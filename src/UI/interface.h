@@ -309,8 +309,6 @@ namespace Interface {
     Update_Interaction_Box(zone);
     Loot_Panel::Render_Loot(zone, state, camera);
     UI_Frames::Show_Menu_Frame(zone, camera);
-    Unit_Frames::Show_Frames(zone, camera);
-    UI_Resources::Show_Frames(zone, camera);
     Debug_System::Framerate(zone, camera);
     //Unit_Arrive_UI();
     Display_Mouse(zone);

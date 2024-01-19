@@ -45,6 +45,8 @@ namespace Graphics {
   std::array<SDL_Texture *, numberOfTextures> unitPortaits;
   std::array<SDL_Texture *, numberOfTextures> unitBodies;
 
+
+
   struct Texture {
     SDL_Texture *texture = NULL;
     SDL_Texture *portrait = NULL;
@@ -113,6 +115,8 @@ namespace Graphics {
   SDL_Texture *charCreateBackground;
   SDL_Texture *window_glow;
   SDL_Texture *fog;
+
+  SDL_Texture *icons;
 
   SDL_Texture *bagSlotBorder;
   SDL_Texture *itemBorderCommon;
@@ -346,6 +350,8 @@ namespace Graphics {
     charCreateBackground = createTexture("assets/sprites/UI/backgrounds/Background_47.png");
     window_glow = createTexture("assets/sprites/UI/window_glow.png");
     fog = createTexture("assets/sprites/UI/mist/fog_0.png");
+
+    icons = createTexture("assets/sprites/icons/icons.png");
 
     weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
     itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");

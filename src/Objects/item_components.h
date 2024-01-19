@@ -264,6 +264,7 @@ namespace Item_Component {
     std::string name;
     std::string face_pngPath;
     std::string body_pngPath;
+    std::string icon_name;
     Unit_Equip_Type equip_type;
   };
 

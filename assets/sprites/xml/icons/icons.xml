@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:98a849fd2b4d2da9eecf3aec63cd9a42:31243548547cc8c2f6b4b6a6aa23de56:90a68ccae83e65ad8ceeb861f0a8529d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="icons.png" width="724" height="485">
+    <sprite n="arcane-sceptre" x="419" y="185" w="56" h="56"/>
+    <sprite n="Axe" x="1" y="1" w="64" h="64"/>
+    <sprite n="axe_05" x="1" y="67" w="64" h="64"/>
+    <sprite n="bracers_cloth" x="516" y="301" w="55" h="53" oX="6" oY="4" oW="64" oH="64"/>
+    <sprite n="buckler" x="1" y="265" w="60" h="60"/>
+    <sprite n="chest_cloth_0" x="359" y="362" w="48" h="58" oX="7" oY="4" oW="64" oH="64"/>
+    <sprite n="chest_cloth_1" x="406" y="304" w="50" h="55" oX="7" oY="4" oW="64" oH="64"/>
+    <sprite n="chest_leather" x="458" y="301" w="56" h="54" oX="5" oY="9" oW="64" oH="64"/>
+    <sprite n="chest_mail" x="262" y="63" w="59" h="57" oX="3" oY="5" oW="64" oH="64"/>
+    <sprite n="chest_plate" x="63" y="391" w="58" h="59" oX="5" oY="4" oW="64" oH="64"/>
+    <sprite n="cloth_feet_1" x="63" y="265" w="52" h="61" oX="8" oY="1" oW="64" oH="64"/>
+    <sprite n="clothes" x="67" y="199" w="60" h="60"/>
+    <sprite n="dagger-1" x="477" y="185" w="56" h="56"/>
+    <sprite n="dagger-2" x="535" y="185" w="56" h="56"/>
+    <sprite n="dagger-3" x="593" y="185" w="56" h="56"/>
+    <sprite n="dagger" x="133" y="133" w="60" h="60"/>
+    <sprite n="feet_cloth_0" x="409" y="361" w="48" h="55" oX="9" oY="4" oW="64" oH="64"/>
+    <sprite n="feet_leather" x="129" y="199" w="48" h="60" oX="10" oY="2" oW="64" oH="64"/>
+    <sprite n="feet_mail" x="651" y="185" w="40" h="56" oX="13" oY="5" oW="64" oH="64"/>
+    <sprite n="feet_plate" x="677" y="243" w="46" h="53" oX="13" oY="8" oW="64" oH="64"/>
+    <sprite n="greatbow" x="199" y="64" w="60" h="60"/>
+    <sprite n="greatstaff" x="262" y="1" w="60" h="60"/>
+    <sprite n="greatsword" x="1" y="327" w="60" h="60"/>
+    <sprite n="Hammer" x="67" y="1" w="64" h="64"/>
+    <sprite n="hammer_01" x="63" y="328" w="58" h="61" oX="3" oY="0" oW="64" oH="64"/>
+    <sprite n="hands_cloth" x="459" y="357" w="55" h="46" oX="5" oY="8" oW="64" oH="64"/>
+    <sprite n="hands_leather" x="516" y="356" w="44" h="54" oX="11" oY="4" oW="64" oH="64"/>
+    <sprite n="hands_mail" x="573" y="301" w="54" h="55" oX="6" oY="4" oW="64" oH="64"/>
+    <sprite n="hands_plate" x="299" y="432" w="56" h="51" oX="5" oY="9" oW="64" oH="64"/>
+    <sprite n="head_mail" x="676" y="301" w="35" h="57" oX="14" oY="3" oW="64" oH="64"/>
+    <sprite n="head_plate" x="629" y="301" w="45" h="57" oX="9" oY="5" oW="64" oH="64"/>
+    <sprite n="hood_cloth" x="562" y="358" w="43" h="58" oX="10" oY="3" oW="64" oH="64"/>
+    <sprite n="hood_leather" x="652" y="360" w="40" h="58" oX="11" oY="3" oW="64" oH="64"/>
+    <sprite n="icon_axe1" x="273" y="439" w="23" h="29" oX="4" oY="3" oW="32" oH="32"/>
+    <sprite n="icon_axe2" x="1" y="451" w="32" h="32"/>
+    <sprite n="icon_axe3" x="696" y="33" w="26" h="30" oX="6" oY="2" oW="32" oH="32"/>
+    <sprite n="icon_bigclub1" x="35" y="452" w="32" h="32"/>
+    <sprite n="icon_bigclub2" x="69" y="452" w="32" h="32"/>
+    <sprite n="icon_bigclub3" x="171" y="448" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="icon_Bow1" x="103" y="452" w="32" h="32"/>
+    <sprite n="icon_Bow2" x="137" y="448" w="32" h="32"/>
+    <sprite n="icon_Bow3" x="693" y="65" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="icon_claw1" x="689" y="99" w="32" h="32"/>
+    <sprite n="icon_claw2" x="459" y="405" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="icon_claw3" x="393" y="422" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="icon_dagger1" x="693" y="185" w="28" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="icon_dagger2" x="692" y="428" w="29" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="icon_dagger3" x="682" y="133" w="32" h="32"/>
+    <sprite n="icon_halberd1" x="593" y="454" w="28" h="29" oX="4" oY="3" oW="32" oH="32"/>
+    <sprite n="icon_halberd2" x="694" y="360" w="29" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="icon_halberd3" x="204" y="445" w="32" h="32"/>
+    <sprite n="ICON_hammer1.png" x="694" y="394" w="29" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="icon_hammer2" x="359" y="422" w="32" h="32"/>
+    <sprite n="icon_hammer3" x="426" y="452" w="32" h="32"/>
+    <sprite n="icon_spear1" x="460" y="434" w="32" h="32"/>
+    <sprite n="icon_spear2" x="426" y="418" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="icon_spear3" x="239" y="439" w="32" h="32"/>
+    <sprite n="icon_staff1" x="494" y="428" w="29" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="icon_staff2" x="661" y="420" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="icon_staff3" x="682" y="167" w="32" h="16" oX="0" oY="9" oW="32" oH="32"/>
+    <sprite n="icon_sword_long1" x="525" y="412" w="32" h="32"/>
+    <sprite n="icon_sword_long2" x="559" y="418" w="32" h="32"/>
+    <sprite n="icon_sword_long3" x="525" y="446" w="32" h="32"/>
+    <sprite n="icon_sword_short1" x="696" y="1" w="27" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="icon_sword_short2" x="357" y="456" w="31" h="26" oX="1" oY="6" oW="32" oH="32"/>
+    <sprite n="icon_sword_short3" x="559" y="452" w="32" h="32"/>
+    <sprite n="icon_XBow1" x="627" y="420" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="icon_XBow2" x="593" y="420" w="32" h="32"/>
+    <sprite n="icon_XBow3" x="627" y="453" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="Knive" x="1" y="133" w="64" h="64"/>
+    <sprite n="leather_armor" x="324" y="1" w="60" h="60"/>
+    <sprite n="legs_cloth" x="117" y="261" w="44" h="61" oX="10" oY="2" oW="64" oH="64"/>
+    <sprite n="legs_leather" x="185" y="323" w="41" h="59" oX="12" oY="3" oW="64" oH="64"/>
+    <sprite n="legs_mail" x="185" y="384" w="52" h="59" oX="6" oY="2" oW="64" oH="64"/>
+    <sprite n="legs_plate" x="607" y="360" w="43" h="58" oX="11" oY="3" oW="64" oH="64"/>
+    <sprite n="longbow" x="1" y="389" w="60" h="60"/>
+    <sprite n="longsword" x="386" y="1" w="60" h="60"/>
+    <sprite n="Nail" x="67" y="67" w="64" h="64"/>
+    <sprite n="Paintbrush" x="133" y="1" w="64" h="64"/>
+    <sprite n="Pickaxe" x="1" y="199" w="64" h="64"/>
+    <sprite n="ring" x="67" y="133" w="64" h="64"/>
+    <sprite n="ring_01" x="133" y="67" w="64" h="64"/>
+    <sprite n="ring_02" x="179" y="195" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_03" x="239" y="188" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_04" x="225" y="256" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_05" x="228" y="317" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_06" x="239" y="378" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_07" x="285" y="249" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_08" x="288" y="310" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_09" x="299" y="371" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_10" x="322" y="124" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_11" x="382" y="124" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_12" x="442" y="124" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_13" x="502" y="124" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_14" x="562" y="124" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_15" x="622" y="124" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_16" x="299" y="185" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="ring_17" x="359" y="185" w="58" h="59" oX="3" oY="2" oW="64" oH="64"/>
+    <sprite n="rod" x="448" y="1" w="60" h="60"/>
+    <sprite n="shield" x="510" y="1" w="60" h="60"/>
+    <sprite n="shortbow" x="572" y="1" w="60" h="60"/>
+    <sprite n="shortsword" x="634" y="1" w="60" h="60"/>
+    <sprite n="skirt_cloth" x="403" y="246" w="40" h="56" oX="13" oY="3" oW="64" oH="64"/>
+    <sprite n="slingshot" x="199" y="126" w="60" h="60"/>
+    <sprite n="staff" x="123" y="324" w="60" h="60"/>
+    <sprite n="steel_armor" x="123" y="386" w="60" h="60"/>
+    <sprite n="sword-arcane" x="345" y="246" w="56" h="56"/>
+    <sprite n="sword-cold" x="348" y="304" w="56" h="56"/>
+    <sprite n="sword-dark" x="445" y="243" w="56" h="56"/>
+    <sprite n="sword-fire" x="503" y="243" w="56" h="56"/>
+    <sprite n="sword-gold" x="561" y="243" w="56" h="56"/>
+    <sprite n="sword-holy" x="619" y="243" w="56" h="56"/>
+    <sprite n="w_longsword" x="261" y="122" w="59" h="59" oX="2" oY="3" oW="64" oH="64"/>
+    <sprite n="w_longsword_cold" x="323" y="63" w="59" h="59" oX="2" oY="3" oW="64" oH="64"/>
+    <sprite n="w_longsword_copper" x="384" y="63" w="59" h="59" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="w_longsword_dark" x="199" y="1" w="61" h="61" oX="1" oY="2" oW="64" oH="64"/>
+    <sprite n="w_longsword_flame" x="445" y="63" w="59" h="59" oX="2" oY="3" oW="64" oH="64"/>
+    <sprite n="w_longsword_gold" x="506" y="63" w="59" h="59" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="w_longsword_holy" x="567" y="63" w="59" h="59" oX="2" oY="3" oW="64" oH="64"/>
+    <sprite n="w_longsword_steel" x="628" y="63" w="59" h="59" oX="2" oY="3" oW="64" oH="64"/>
+    <sprite n="wand" x="163" y="261" w="60" h="60"/>
+</TextureAtlas>

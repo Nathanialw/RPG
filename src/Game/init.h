@@ -65,6 +65,7 @@ namespace Init {
   void Init_Data() {
     Graphics::Load_Textures();
     UI_Info::Update_Position();
+    Icons::Load();
     UI_Spellbook::Init_UI();
     Action_Bar::Create_Action_Bar();
     Hotbar::Init_Hotbar();

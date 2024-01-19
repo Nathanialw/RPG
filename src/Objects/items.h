@@ -5,6 +5,7 @@
 #include "camera.h"
 #include "components.h"
 #include "graphics.h"
+#include "icons.h"
 #include "item_components.h"
 #include "mouse_control.h"
 #include "texture_packer_item.h"
@@ -205,7 +206,6 @@ namespace Items {
 
     SDL_Rect sprite = {column * size, row * size, size, size};
 
-
     auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
@@ -221,7 +221,6 @@ namespace Items {
     return equippedSheetData.index;
   }
 
-
   std::string Create_Specific_Armor(entt::registry &zone, entt::entity &item, Rarity &rarity, Item_Type itemType, Armor_Type armorType, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item &item_name, SDL_Color &color) {
     //        Armor_Type armorType = Generate_Armor_Type();
     std::string type = ItemTypeName[itemType];
@@ -229,10 +228,12 @@ namespace Items {
     std::string itemName = armor + " " + type;//ei. "Copper Pants" not implemented yet
     zone.emplace_or_replace<Item_Type>(item, itemType);
     zone.emplace_or_replace<Rarity>(item, rarity);
-    int column = itemTypes[itemType];
-    int row = armorTypes[armorType];
-    int size = 64;
-    SDL_Rect sprite = {column * size, row * size, size, size};
+
+    //    int column = itemTypes[itemType];
+    //    int row = armorTypes[armorType];
+    //    int size = 64;
+    //    SDL_Rect sprite = {column * size, row * size, size, size};
+
 
     Texture_Packer_Item::Get_Item_Portrait_exture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());
     Texture_Packer_Item::Get_Item_Body_Texture(item_name.name, ("assets/" + item_name.body_pngPath).c_str());
@@ -251,8 +252,13 @@ namespace Items {
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
 
-    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::armorSpriteSheet, rarityBorder[rarity], Graphics::bagSlotBorder);
-    icon.clipSprite = sprite;
+    //look up clip from xml save to icon.clipSprite
+    //save whole sprite sheet of icons to *iconTexture
+    Icons::Icon_Clip sprite = Icons::iconClipRects[item_name.icon_name];
+
+    SDL_Texture *iconTexture = Graphics::icons;
+    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, iconTexture, rarityBorder[rarity], Graphics::bagSlotBorder);
+    icon.clipSprite = sprite.clipRect;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
@@ -372,11 +378,9 @@ namespace Items {
   Item_Generation Generate_Item(entt::registry &zone, Item_Component::Unit_Equip_Type equip_type) {
     Rarity rarity = Generate_Item_Rarity();
     Item_Stats itemStats = Generate_Item_Stats(rarity);
-    auto item_ID = zone.create();
 
     Item_Component::Item item_name;
-    SDL_Color color = {255,255,255};
-    std::string itemName;
+    SDL_Color color = {255, 255, 255};
 
     //    int type = rand() % 3 + 0;
     //    Utilities::Log(type);
@@ -408,16 +412,15 @@ namespace Items {
     std::string item_type = Item_Component::Get_Item_Type_String(itemType);
     std::vector<Item_Component::Item> items = SQLite_Item_Data::Load_Item(item_type, Get_Unit_Equip_Type_String(equip_type));
     if (items.empty()) {
-      zone.destroy(item_ID);
       Utilities::Log("no item found in db: " + item_type + " " + Get_Unit_Equip_Type_String(equip_type));
       return {false};
     }
     int type = rand() % items.size() + 0;
     item_name = items[type];
 
-//    Item_Component::Item_Type itemType = Item_Type::chest;
     Armor_Type armorType = Items::Generate_Armor_Type();
-    itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
+    auto item_ID = zone.create();
+    std::string itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
 
     if (itemName == "none") {
       zone.destroy(item_ID);
@@ -439,7 +442,7 @@ namespace Items {
     auto item_ID = zone.create();
 
     Item_Component::Item item_name;
-    SDL_Color color = {255,255,255};
+    SDL_Color color = {255, 255, 255};
     std::string itemName;
 
     int type = rand() % 3 + 0;

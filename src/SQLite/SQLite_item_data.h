@@ -60,7 +60,7 @@ namespace SQLite_Item_Data {
 
     sqlite3_stmt *stmt;
     char buf[1000];
-    const char *jj = "SELECT slot, type, equip_type, face, body FROM weapon_types WHERE type = ";
+    const char *jj = "SELECT slot, type, equip_type, face, body, icon_name FROM weapon_types WHERE type = ";
     strcpy(buf, jj);
     strcat(buf, text.c_str());
 
@@ -88,6 +88,10 @@ namespace SQLite_Item_Data {
       auto db_body = sqlite3_column_text(stmt, 4);//0 only increments up when calling more than one column
       item.body_pngPath = db::Convert_Char("body", db_body);
 
+      //icon name
+      auto db_icon = sqlite3_column_text(stmt, 5);//0 only increments up when calling more than one column
+      item.icon_name = db::Convert_Char("icon_name", db_icon);
+
       return item;
     }
     return item;
@@ -105,7 +109,7 @@ namespace SQLite_Item_Data {
     std::string statement = slotType + " AND equip_type = " + equipType;
     sqlite3_stmt *stmt;
     char buf[1000];
-    const char *jj = "SELECT slot, type, face, body FROM weapon_types WHERE slot = ";
+    const char *jj = "SELECT slot, type, face, body, icon_name FROM weapon_types WHERE slot = ";
     strcpy(buf, jj);
     strcat(buf, statement.c_str());
 
@@ -121,17 +125,21 @@ namespace SQLite_Item_Data {
       item.name = db::Convert_Char("type", type);
 
       // get the RTP_male, classes_female etc strings
-      auto db_equip_type = sqlite3_column_text(stmt, 2);//0 only increments up when calling more than one column
-      std::string equip_type = db::Convert_Char("equip_type", db_equip_type);
-      item.equip_type = Item_Component::Get_Unit_Equip_Type(equip_type);
+      //      auto db_equip_type = sqlite3_column_text(stmt, 2);//0 only increments up when calling more than one column
+      //      std::string equip_type = db::Convert_Char("equip_type", db_equip_type);
+      //      item.equip_type = Item_Component::Get_Unit_Equip_Type(equip_type);
 
       // get the face etc strings
-      auto db_face = sqlite3_column_text(stmt, 3);//0 only increments up when calling more than one column
+      auto db_face = sqlite3_column_text(stmt, 2);//0 only increments up when calling more than one column
       item.face_pngPath = db::Convert_Char("face", db_face);
 
       // get the body etc strings
-      auto db_body = sqlite3_column_text(stmt, 4);//0 only increments up when calling more than one column
+      auto db_body = sqlite3_column_text(stmt, 3);//0 only increments up when calling more than one column
       item.body_pngPath = db::Convert_Char("body", db_body);
+
+      //icon name
+      auto db_icon = sqlite3_column_text(stmt, 4);//0 only increments up when calling more than one column
+      item.icon_name = db::Convert_Char("icon_name", db_icon);
 
       items.emplace_back(item);
     }

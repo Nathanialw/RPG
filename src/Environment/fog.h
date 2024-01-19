@@ -6,10 +6,7 @@ namespace Fog {
   SDL_FRect fog = {0.0f, 0.0f, 1507.0f, 353.0f};
 
   void Fog(Component::Camera &camera) {
-    SDL_FRect rect = camera.screen;
-    //    rect.x = -camera.screen.x;
-    //    rect.y = -camera.screen.y;
-    //    SDL_RenderCopyF(Graphics::renderer, Graphics::window_glow, NULL, &rect);
+    SDL_FRect rect;
     rect.w = fog.w;
     rect.h = fog.h;
 
@@ -26,7 +23,7 @@ namespace Fog {
       fog.y -= camera.screen.h;
     }
 
-    int i = 0;
+    //    int i = 0;
     SDL_FRect renderRect = Camera_Control::Convert_Rect_To_Screen_Coods(rect, camera);
     SDL_FRect rect2 = Camera_Control::Convert_Rect_To_Screen_Coods(rect, camera);
 
@@ -34,13 +31,19 @@ namespace Fog {
       while (renderRect.y < camera.screen.h) {
         if (renderRect.x > -camera.screen.w && renderRect.y > -camera.screen.h) {
           SDL_RenderCopyF(Graphics::renderer, Graphics::fog, NULL, &renderRect);
-          i++;
+          //          i++;
         }
         renderRect.y += renderRect.h;
       }
       renderRect.x += renderRect.w;
       renderRect.y = rect2.y;
     }
-    Utilities::Log(i);
+    //    Utilities::Log(i);
+  }
+
+  void Update_Fog(Component::Camera &camera) {
+    if (1) {
+//      Fog(camera);
+    }
   }
 }// namespace Fog

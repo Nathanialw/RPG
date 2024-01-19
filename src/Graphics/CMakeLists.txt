@@ -13,6 +13,7 @@ target_sources(RPG
         texture_packer_item.h
         blood.h
         portaits.h
+        icons.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

@@ -508,7 +508,9 @@ namespace Rendering {
       Items::Unit_Name_On_Mouseover(zone, camera);
       Social_Control::Show_Dialogue(zone, camera);
       Items::Name_On_Mouseover(zone, camera);
-      Fog::Fog(camera);
+      Fog::Update_Fog(camera);
+      UI_Resources::Show_Frames(zone, camera);
+      Unit_Frames::Show_Frames(zone, camera);
       Render_UI(zone, state, Graphics::renderer, camera);
       Character_Stats::Render_Character_Stats(camera);
       Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
