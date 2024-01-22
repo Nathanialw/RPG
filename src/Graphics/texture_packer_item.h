@@ -112,7 +112,7 @@ namespace Texture_Packer_Item {
 
   void Get_Item_Body_Texture(std::string &index, const char *filepath) {
     if (Item_Body[index] == NULL) {
-      Load_Texture(index, Item_Body,filepath);
+      Load_Texture(index, Item_Body, filepath);
       if (Item_Body[index] == NULL) {
         std::cout << "Get_Item_Body_Texture() failed to load  texture from file: " << filepath << std::endl;
       } else {
@@ -143,12 +143,9 @@ namespace Texture_Packer_Item {
     }
     const char *path = pathStr.c_str();
 
-    if (path == NULL) {
-      Utilities::Log("TexturePacker_Import_Item() failed, empty xml_path");
+    if (spriteSheetData.LoadFile(path)) {
       return {NULL, ""};
     }
-
-    spriteSheetData.LoadFile(path);
 
     tinyxml2::XMLElement *pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:605e1284cfe0afec4c487333f773a61e:94f0ba4e7b410d714dd4df6265a35c27:41d21c08c0f3d86c10e4f2c8e6942046$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="arrow.png" width="56" height="55">
+    <sprite n="arrows_00-0" x="1" y="35" w="34" h="6" oX="16" oY="29" oW="64" oH="64"/>
+    <sprite n="arrows_00-1" x="1" y="1" w="26" h="15" oX="20" oY="25" oW="64" oH="64"/>
+    <sprite n="arrows_00-2" x="37" y="35" w="6" h="19" oX="29" oY="23" oW="64" oH="64"/>
+    <sprite n="arrows_00-3" x="1" y="18" w="26" h="15" oX="18" oY="25" oW="64" oH="64"/>
+    <sprite n="arrows_00-4" x="1" y="43" w="34" h="6" oX="14" oY="29" oW="64" oH="64"/>
+    <sprite n="arrows_00-5" x="29" y="1" w="26" h="15" oX="18" oY="24" oW="64" oH="64"/>
+    <sprite n="arrows_00-6" x="45" y="35" w="6" h="19" oX="29" oY="22" oW="64" oH="64"/>
+    <sprite n="arrows_00-7" x="29" y="18" w="26" h="15" oX="20" oY="24" oW="64" oH="64"/>
+</TextureAtlas>

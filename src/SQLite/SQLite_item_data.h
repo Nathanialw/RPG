@@ -21,7 +21,7 @@ namespace SQLite_Item_Data {
 
     sqlite3_stmt *stmt;
     char buf[1000];
-    const char *jj = "SELECT slot, type, equip_type, face, body, has_texture FROM weapon_types";
+    const char *jj = "SELECT slot, type, equip_type, face, body, has_texture, item_type FROM weapon_types";
     strcpy(buf, jj);
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
     while (sqlite3_step(stmt) != SQLITE_DONE) {
@@ -50,6 +50,10 @@ namespace SQLite_Item_Data {
       auto db_has_texture = sqlite3_column_int(stmt, 5);//0 only increments up when calling more than one column
       db::Get_bool("body", db_has_texture) ? item.hasTexture = true : item.hasTexture = false;
 
+      //item type
+      auto db_item_type = sqlite3_column_text(stmt, 6);//0 only increments up when calling more than one column
+      item.weapon_type = db::Convert_Char("item_type", db_item_type);
+
       Item_Component::Unit_Equip_Type unit_equip_type = Item_Component::Get_Unit_Equip_Type(equip_type);
       Items[unit_equip_type][item_type].emplace_back(item);
     }
@@ -64,7 +68,7 @@ namespace SQLite_Item_Data {
 
     sqlite3_stmt *stmt;
     char buf[1000];
-    const char *jj = "SELECT slot, type, equip_type, face, body, icon_name, has_texture FROM weapon_types WHERE type = ";
+    const char *jj = "SELECT slot, type, equip_type, face, body, icon_name, has_texture, item_type FROM weapon_types WHERE type = ";
     strcpy(buf, jj);
     strcat(buf, text.c_str());
 
@@ -100,6 +104,10 @@ namespace SQLite_Item_Data {
       auto db_has_texture = sqlite3_column_int(stmt, 6);//0 only increments up when calling more than one column
       db::Get_bool("body", db_has_texture) ? item.hasTexture = true : item.hasTexture = false;
 
+      //item type
+      auto db_item_type = sqlite3_column_text(stmt, 7);//0 only increments up when calling more than one column
+      item.weapon_type = db::Convert_Char("item_type", db_item_type);
+
       return item;
     }
     return item;
@@ -117,7 +125,7 @@ namespace SQLite_Item_Data {
     std::string statement = slotType + " AND equip_type = " + equipType;
     sqlite3_stmt *stmt;
     char buf[1000];
-    const char *jj = "SELECT slot, type, face, body, icon_name, has_texture FROM weapon_types WHERE slot = ";
+    const char *jj = "SELECT slot, type, face, body, icon_name, has_texture, item_type FROM weapon_types WHERE slot = ";
     strcpy(buf, jj);
     strcat(buf, statement.c_str());
 
@@ -152,6 +160,10 @@ namespace SQLite_Item_Data {
       //has texture
       auto db_has_texture = sqlite3_column_int(stmt, 5);//0 only increments up when calling more than one column
       db::Get_bool("body", db_has_texture) ? item.hasTexture = true : item.hasTexture = false;
+
+      //item type
+      auto db_item_type = sqlite3_column_text(stmt, 6);//0 only increments up when calling more than one column
+      item.weapon_type = db::Convert_Char("item_type", db_item_type);
 
       items.emplace_back(item);
     }

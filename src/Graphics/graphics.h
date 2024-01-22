@@ -88,6 +88,7 @@ namespace Graphics {
   SDL_Texture *Snowflake1;
   SDL_Texture *Snowflake2;
 
+  SDL_Texture *arrow;
   SDL_Texture *bow;
   SDL_Texture *arrowsFlying;
   SDL_Texture *redArrow;
@@ -330,6 +331,8 @@ namespace Graphics {
     magic_flame = createTexture("assets/sprites/spells/holy/BBLBubbleEllipseYellow.png");
     Snowflake1 = createTexture("assets/sprites/spells/frost/hjm_frost_bolt/frames/hjm_frost_bolt01.png");
     Snowflake2 = createTexture("assets/sprites/spells/frost/hjm-snow_flake/frames/hjm-snow_flake_003.png");
+
+    arrow = createTexture("assets/sprites/spells/archery/arrow.png");
 
     bow = createTexture("assets/sprites/UI/icons/misc_icons/Icons/10.png");
     arrowsFlying = createTexture("assets/sprites/UI/icons/misc_icons/Icons/85.png");

@@ -248,6 +248,7 @@ namespace UI {
         auto &equipment = zone.get<Item_Component::Equipment>(player);
         zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(Mouse::mouseItem);
         equipment.equippedItems[itemType] = Mouse::mouseItem;
+        if (itemType == Item_Component::Item_Type::mainhand) { zone.get<Action_Component::Action>(player).weaponType = zone.get<Item_Component::Weapon_Type>(Mouse::mouseItem); }
         Mouse::mouseItem = Mouse::cursor_ID;
         Mouse::itemCurrentlyHeld = false;
         zone.remove<Component::On_Mouse>(equipment.equippedItems[itemType]);
@@ -261,6 +262,7 @@ namespace UI {
         entt::entity itemInSlot = equipment.equippedItems[itemType];
 
         equipment.equippedItems[itemType] = Mouse::mouseItem;
+        if (itemType == Item_Component::Item_Type::mainhand) { zone.get<Action_Component::Action>(player).weaponType = zone.get<Item_Component::Weapon_Type>(Mouse::mouseItem); }
         zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(equipment.equippedItems[itemType]);
         zone.remove<Component::On_Mouse>(equipment.equippedItems[itemType]);
         zone.emplace_or_replace<Component::Inventory>(equipment.equippedItems[itemType]);
@@ -312,6 +314,8 @@ namespace UI {
                 itemType = Item_Component::Item_Type::jewelry1;
               }
             }
+
+
 
             else {
               scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
@@ -387,6 +391,22 @@ namespace UI {
     }
   }// namespace Equipment_UI
 
+  bool Swap_Weapon(entt::registry &zone, int &state, entt::entity &player, Item_Component::Item_Type &type, Item_Component::Equipment &equipment, entt::entity &itemInSlot, std::array<entt::entity, 32> &bag, int &slotNum) {
+    if (type == Item_Component::Item_Type::mainhand) {
+      entt::entity equippedItem = equipment.equippedItems[type];
+      equipment.equippedItems[type] = itemInSlot;
+      zone.get<Action_Component::Action>(player).weaponType = zone.get<Item_Component::Weapon_Type>(itemInSlot);
+      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) type] = zone.get<Rendering_Components::Portrait>(itemInSlot);
+      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
+        bag[slotNum] = Bag_UI::emptyBagSlot[state];
+      } else {
+        bag[slotNum] = equippedItem;
+      }
+      return true;
+    }
+    return false;
+  }
+
   bool Swap_Multislot(int &state, Item_Component::Item_Type &type, Item_Component::Equipment &equipment, entt::entity &itemInSlot, std::array<entt::entity, 32> &bag, int &slotNum) {
     //check in rung slot 1 is open if it is place it in
     if (type == Item_Component::Item_Type::ring) {
@@ -443,7 +463,11 @@ namespace UI {
       auto type = zone.get<Item_Component::Item_Type>(itemInSlot);
       if (Swap_Multislot(state, type, equipment, itemInSlot, bag, slotNum)) {
         return true;
-      } else {
+      }
+      else if (Swap_Weapon(zone, state, player, type, equipment, itemInSlot, bag, slotNum)) {
+        return true;
+      }
+      else {
         entt::entity equippedItem = equipment.equippedItems[type];
         equipment.equippedItems[type] = itemInSlot;
         zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) type] = zone.get<Rendering_Components::Portrait>(itemInSlot);
@@ -463,6 +487,7 @@ namespace UI {
       auto view = zone.view<Component::Input, Component::Position>();
       for (auto entity: view) {
         if (zone.get<Component::On_Mouse>(Mouse::mouseItem).type == Component::Icon_Type::item) {
+          if (zone.get<Item_Component::Item_Type>(Mouse::mouseItem) == Item_Component::Item_Type::back) { return;}
           auto &entityPosition = view.get<Component::Position>(entity);
           auto &itemPosition = zone.get<Component::Position>(Mouse::mouseItem);
           itemPosition = entityPosition;

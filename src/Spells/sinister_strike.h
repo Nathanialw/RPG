@@ -8,7 +8,15 @@ namespace Sinister_Strike {
   void Attack(entt::registry &zone, entt::entity &entity, entt::entity &target_ID) {
     auto &action = zone.get<Action_Component::Action>(entity);
 
-    Action_Component::Set_State(action, Action_Component::attack2);
+    if (action.weaponType == Weapon_Type::spear || action.weaponType == Weapon_Type::staff) {
+      Action_Component::Set_State(action, Action_Component::attackPolearm);
+    }
+    else if (action.weaponType == Weapon_Type::bow) {
+      Action_Component::Set_State(action, Action_Component::ranged);
+    }
+    else {
+      Action_Component::Set_State(action, Action_Component::attack2);
+    }
     auto &meleeDamage = zone.get<Component::Melee_Damage>(entity);
 
     Combat_Control::Queue_Hit(zone, entity, target_ID, meleeDamage, Component::skill, 5.0f, Component::Bonus_Damage_Type::add);

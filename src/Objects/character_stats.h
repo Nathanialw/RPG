@@ -246,15 +246,17 @@ namespace Character_Stats {
     Item_Component::Item horns = Get_Horn_Name(options);
 
 
-    auto view = zone.view<Item_Component::Equipment, Component::Position, Rendering_Components::Unit_Frame_Portrait, Rendering_Components::Body_Frame>();
+    auto view = zone.view<Item_Component::Equipment, Component::Position, Rendering_Components::Unit_Frame_Portrait, Rendering_Components::Body_Frame, Action_Component::Action>();
     for (auto unit: view) {
       auto &equipment = view.get<Item_Component::Equipment>(unit);
       auto &position = view.get<Component::Position>(unit);
       auto &unitPortraitFrame = view.get<Rendering_Components::Unit_Frame_Portrait>(unit);
       auto &bodyFrame = view.get<Rendering_Components::Body_Frame>(unit);
+      auto &action = view.get<Action_Component::Action>(unit);
 
       entt::entity item = Items::Create_And_Equip_Weapon(zone, state, position, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[0].c_str()), Character_Options::Color[0]);
       equipment.equippedItems[Item_Type::mainhand] = item;
+      action.weaponType = zone.get<Item_Component::Weapon_Type>(item);
       Load::Get_Bust_Textures(zone, state, item, Item_Type::mainhand, bodyFrame, unitPortraitFrame);
 
       item = Items::Create_And_Equip_Armor(zone, state, position, Item_Type::chest, equipment.type, SQLite_Item_Data::Load_Specific_Item(gear[1].c_str()), Character_Options::Color[0]);

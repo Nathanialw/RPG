@@ -122,7 +122,8 @@ namespace Items {
 
   std::string Create_Weapon(entt::registry &zone, entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
     auto material = Generate_Weapon_Material();
-    auto weaponType = Generate_Weapon_Type();
+    Weapon_Type weaponType = Get_Weapon_Type(item_name.weapon_type);
+    if (weaponType == Weapon_Type::SIZE) { return "none"; };
 
     std::string materialType = weaponMaterialName[material];
     std::string weapon = weaponTypeName[weaponType];
@@ -143,28 +144,35 @@ namespace Items {
     ///provide lookup string when the player picks it up
 
     auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type, item_name.name);
+    zone.emplace_or_replace<Item_Component::Weapon_Type>(item, weaponType);
 
     if (equippedSheetData.itemData == NULL) {
       return "none";
     }
-
-    //get from spritesheet
-    int column = weaponMaterials[material];
-    int row = weaponTypes[weaponType];
-    int size = 32;
-
-    SDL_Rect sprite = {column * size, row * size, size, size};
 
     auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
     sheetData.sheet_name = equippedSheetData.index;
 
-    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
-    icon.clipSprite = sprite;
+    //get from spritesheet
+//    int column = weaponMaterials[material];
+//    int row = weaponTypes[weaponType];
+//    int size = 32;
+//    SDL_Rect sprite = {column * size, row * size, size, size};
+    Icons::Icon_Clip sprite = Icons::iconClipRects[item_name.icon_name];
+
+    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+    icon.clipSprite = sprite.clipRect;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
+
+//    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+//    icon.clipSprite = sprite;
+//    icon.clipIcon = {0, 0, 256, 256};
+//    icon.renderRectSize = {64.0f, 64.0f};
+//    icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
 
     zone.emplace_or_replace<Weapon_Damage>(item, 1, 10);
     return equippedSheetData.index;
@@ -266,8 +274,7 @@ namespace Items {
     //    }
     Icons::Icon_Clip sprite = Icons::iconClipRects[item_name.icon_name];
 
-    SDL_Texture *iconTexture = Graphics::icons;
-    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, iconTexture, rarityBorder[rarity], Graphics::bagSlotBorder);
+    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::icons, rarityBorder[rarity], Graphics::bagSlotBorder);
     icon.clipSprite = sprite.clipRect;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
@@ -430,8 +437,13 @@ namespace Items {
 
     Armor_Type armorType = Items::Generate_Armor_Type();
     auto item_ID = zone.create();
-    std::string itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
-
+    std::string itemName = "";
+    if (itemType == Item_Type::mainhand) {
+      itemName = Create_Weapon(zone, item_ID, rarity, equip_type, item_name, color);
+    }
+    else {
+      itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
+    }
     if (itemName == "none") {
       zone.destroy(item_ID);
       Utilities::Log("no drop");

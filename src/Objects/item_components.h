@@ -151,7 +151,7 @@ namespace Item_Component {
     } else if (db_type == Item_Type::horns) {
       return "horns";
     } else {
-      Utilities::Log("Get_Item_Type(std::string &db_type) " + std::to_string((int)db_type) + " passthrough error");
+      Utilities::Log("Get_Item_Type(std::string &db_type) " + std::to_string((int) db_type) + " passthrough error");
       return "mainhand";
     }
   }
@@ -193,6 +193,7 @@ namespace Item_Component {
       return Unit_Equip_Type::none;
     }
   }
+
 
   std::string Get_Unit_Equip_Type_String(Unit_Equip_Type &enum_type) {
     if (enum_type == Unit_Equip_Type::Medieval_Underdeep_Dwarves_Male) {
@@ -266,15 +267,6 @@ namespace Item_Component {
     return equipment;
   }
 
-  struct Item {
-    std::string name;
-    std::string face_pngPath;
-    std::string body_pngPath;
-    std::string icon_name;
-    Unit_Equip_Type equip_type;
-    bool hasTexture = false;
-  };
-
   enum class Armor_Type {
     cloth,
     padded,
@@ -287,8 +279,69 @@ namespace Item_Component {
     sword,
     axe,
     mace,
-    spear
+    bow,
+    spear,
+    xbow,
+    staff,
+    dagger,
+    SIZE
   };
+
+  Weapon_Type Get_Weapon_Type(std::string &weaponType) {
+    if (weaponType == "axe") {
+      return Weapon_Type::axe;
+    } else if (weaponType == "sword") {
+      return Weapon_Type::sword;
+    } else if (weaponType == "polearm") {
+      return Weapon_Type::spear;
+    } else if (weaponType == "mace") {
+      return Weapon_Type::mace;
+    } else if (weaponType == "bow") {
+      return Weapon_Type::bow;
+    } else if (weaponType == "xbow") {
+      return Weapon_Type::xbow;
+    } else if (weaponType == "staff") {
+      return Weapon_Type::staff;
+    } else if (weaponType == "dagger") {
+      return Weapon_Type::dagger;
+    }
+    Utilities::Log("Get_Weapon_Type() '" + weaponType + "' weapon type not found");
+    return Weapon_Type::SIZE;
+  }
+  //
+  //  "legs"
+  //  "chest"
+  //  "helm"
+  //
+  //  "hair"
+  //  "beard"
+  //
+  //  "clothes"
+  //  "mask"
+  //
+  //
+  //  "shield"
+  //  "quiver"
+  //  "sheath"
+  //  "backpack"
+  //  "crown"
+  //  "hood"
+  //  "kilt"
+  //  "dirt"
+  //  "shoulders"
+  //  "amulet"
+  //  "ring"
+  //  "belt"
+  //  "gloves"
+  //  "boots"
+  //  "shins"
+  //  "face"
+  //  "wrist"
+  //  "cloak"
+  //  "jewelry"
+  //  "facialHair"
+  //  "horns"
+
 
   enum class Offhand_Type {
     dagger,
@@ -344,6 +397,17 @@ namespace Item_Component {
     piety,
     attackSpeed
   };
+
+  struct Item {
+    std::string name;
+    std::string face_pngPath;
+    std::string body_pngPath;
+    std::string icon_name;
+    Unit_Equip_Type equip_type;
+    bool hasTexture = false;
+    std::string weapon_type;
+  };
+
 
   struct statValue {
     Stat name;

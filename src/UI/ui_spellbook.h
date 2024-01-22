@@ -11,6 +11,7 @@
 #include "Ice/ice.h"
 #include "Bard/auras.h"
 #include "Holy/holy.h"
+#include "Archery/archery.h"
 
 #include "Life/life.h"
 #include "lightning/lightning.h"
@@ -122,7 +123,7 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::earth][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
     spellbook.Skill_Trees[Spell_Data::warrior][0] = Spell_Data::Spell(Graphics::sinisterstrike, Sinister_Strike);
-    spellbook.Skill_Trees[Spell_Data::warrior][1] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][1] = Spell_Data::Spell(Graphics::redArrow, Shoot_Arrow::Cast_Spell);
     spellbook.Skill_Trees[Spell_Data::warrior][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::warrior][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::warrior][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);

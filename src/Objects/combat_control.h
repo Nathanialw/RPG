@@ -43,7 +43,16 @@ namespace Combat_Control {
 
         direction = Movement_Component::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
         attackSpeed.counter = attackSpeed.period;
-        Action_Component::Set_State(action, Action_Component::attack);
+
+        if (action.weaponType == Weapon_Type::spear || action.weaponType == Weapon_Type::staff) {
+          Action_Component::Set_State(action, Action_Component::attackPolearm);
+        }
+        else if (action.weaponType == Weapon_Type::bow) {
+          Action_Component::Set_State(action, Action_Component::ranged);
+        }
+        else {
+          Action_Component::Set_State(action, Action_Component::attack);
+        }
 
         zone.emplace_or_replace<Component::Attacking>(entity, target.target_ID);
         zone.remove<Component::Attack>(entity);
@@ -90,7 +99,8 @@ namespace Combat_Control {
     auto view = zone.view<Component::Attacking, Action_Component::Action, Component::Melee_Damage>();
     for (auto entity: view) {
       auto &action = view.get<Action_Component::Action>(entity);
-      if (action.state == Action_Component::attack) {
+      ///possibly not necessary
+      if (action.state == Action_Component::attack || action.state == Action_Component::attackPolearm || action.state == Action_Component::ranged) {
         ///ensures it attacks at the end of the last frame of the attack
         if (action.frameState == Action_Component::last) {
           //executes a point and click attack

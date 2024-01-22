@@ -8,6 +8,7 @@ target_sources(RPG
         Fire/fire.h
         Life/life.h
         Ice/ice.h
+        Archery/archery.h
         lightning/lightning.h
         lightning/lightningball.h
         Nature/leafspell.h

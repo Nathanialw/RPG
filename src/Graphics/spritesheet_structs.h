@@ -196,11 +196,17 @@ namespace Spritesheet_Structs {
       }
 
       else if (unitType == "classes_male" || unitType == "classes_female") {
-        if (checkAction == "Attack One Handed Side Slash") {
+        if (checkAction == "Attack One Handed Stab") {
           action = Action_Component::Action_State::attack;
           actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "Attack One Handed Overhead") {
           action = Action_Component::Action_State::attack2;
+          actionFrameData[action].frameSpeed = i;
+        } else if (checkAction == "Attack Polearm") {
+          action = Action_Component::Action_State::attackPolearm;
+          actionFrameData[action].frameSpeed = i;
+        } else if (checkAction == "Attack Dual Wield") {
+          action = Action_Component::Action_State::attackAOE;
           actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "Idle3") {
           action = Action_Component::Action_State::idle;
@@ -220,6 +226,9 @@ namespace Spritesheet_Structs {
           actionFrameData[action].reverses = 1;
         } else if (checkAction == "Casting") {
           action = Action_Component::Action_State::cast;
+          actionFrameData[action].frameSpeed = i;
+        } else if (checkAction == "Attack Bow") {
+          action = Action_Component::Action_State::ranged;
           actionFrameData[action].frameSpeed = i;
         } else if (checkAction == "Dead") {
           action = Action_Component::Action_State::dead;

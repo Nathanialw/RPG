@@ -1,4 +1,5 @@
 #pragma once
+#include "item_components.h"
 
 namespace Action_Component {
 
@@ -14,6 +15,8 @@ namespace Action_Component {
     attack2,
     attack2H_1,
     attack2H_2,
+    attackPolearm,
+    attackAOE,
     idle2H,
     idleCritical1,
     idleCritical2,
@@ -68,6 +71,7 @@ namespace Action_Component {
     Action_Progress frameState = start;
     int frame = 0;
     float frameTime = 0;
+    Item_Component::Weapon_Type weaponType = Item_Component::Weapon_Type::axe;
   };
 
   void Set_State(Action &action, Action_State state) {
