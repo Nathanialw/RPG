@@ -549,14 +549,14 @@ namespace Component {
   };
 
   struct Icon {
-    SDL_Texture *pBackground;
-    SDL_Texture *pTexture;
-    SDL_Texture *pIconRarityBorder;
-    SDL_Texture *pIconBorder;
-    SDL_Rect clipSprite;
-    SDL_Rect clipIcon;
-    f2 renderRectSize;
-    f2 renderPositionOffset;
+    SDL_Texture *pBackground = NULL;
+    SDL_Texture *pTexture = NULL;
+    SDL_Texture *pIconRarityBorder = NULL;
+    SDL_Texture *pIconBorder = NULL;
+    SDL_Rect clipSprite = {};
+    SDL_Rect clipIcon = {};
+    f2 renderRectSize = {};
+    f2 renderPositionOffset = {};
   };
 
   enum class Icon_Type {

@@ -137,12 +137,13 @@ namespace UI {
           auto &icon = zone.get<Component::Icon>(bag.at(slot));
           /*could be injected instead if it was a class object method*/
           SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+          SDL_SetTextureAlphaMod(icon.pBackground, 255);
           SDL_SetTextureAlphaMod(icon.pTexture, 255);
           SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
           SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
+          SDL_RenderCopyF(renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
           SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
           SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
-          SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
           if (j < (numOfSlots.y - 1)) {
             slot++;
           }
@@ -150,12 +151,13 @@ namespace UI {
         auto &icon = zone.get<Component::Icon>(bag.at(slot));
         /*could be injected instead if it was a class object method*/
         SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+        SDL_SetTextureAlphaMod(icon.pBackground, 255);
         SDL_SetTextureAlphaMod(icon.pTexture, 255);
         SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
         SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
+        SDL_RenderCopyF(renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
         SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
         SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
-        SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
         if (i < (numOfSlots.x - 1)) {
           slot++;
         }
@@ -365,16 +367,17 @@ namespace UI {
 
     void Render_Equipment_Slot(entt::registry &zone, int &state, SDL_Renderer *renderer, Component::Camera &camera, entt::entity &player) {
       auto &equipment = zone.get<Item_Component::Equipment>(player);
-      for (auto &slot: equipment.equippedItems) {
+      for (auto slot: equipment.equippedItems) {
         if (zone.any_of<Component::Icon>(slot.second)) {
           auto &icon = zone.get<Component::Icon>(slot.second);
           SDL_FRect slotRect = equippedItemsRect[slot.first];
 
           SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+          SDL_SetTextureAlphaMod(icon.pBackground, 255);
           SDL_SetTextureAlphaMod(icon.pTexture, 255);
           SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
           SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
-          //SDL_RenderCopy(renderer, icon.pBackground, &icon.clipSprite, &scaledSlot);
+          SDL_RenderCopyF(renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
           SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
           SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
           //          SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);

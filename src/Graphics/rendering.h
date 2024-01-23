@@ -337,13 +337,13 @@ namespace Rendering {
       const auto &y = view.get<Component::Position>(item).y;
       if (mouse.type == Component::Icon_Type::item) {
         const auto &icon = view.get<Component::Icon>(item);
-        DisplayRect.x = (x - camera.screen.x) - (icon.renderPositionOffset.x / camera.scale.x);
-        DisplayRect.y = (y - camera.screen.y) - (icon.renderPositionOffset.y / camera.scale.y);
         DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
         DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
-        //std::cout << "x: " << DisplayRect.x << " y: " << DisplayRect.y << " w: " << DisplayRect.w << " h: " << DisplayRect.h << std::endl;
+        DisplayRect.x = Mouse::iXMouse - (DisplayRect.w / 2.0f);
+        DisplayRect.y = Mouse::iYMouse - (DisplayRect.h / 2.0f);
+        SDL_RenderCopyF(Graphics::renderer, icon.pBackground, &icon.clipIcon, &DisplayRect);
         SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &DisplayRect);
-        SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, &icon.clipSprite, &DisplayRect);
+        SDL_RenderCopyF(Graphics::renderer, icon.pIconRarityBorder, &icon.clipIcon, &DisplayRect);
         if (showSpriteBox) {
           //SDL_RenderDrawRect(Graphics::renderer, &DisplayRect);
         }

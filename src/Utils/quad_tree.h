@@ -15,7 +15,7 @@ namespace Quad_Tree {
 
   //zoneSize is the area being searched for objects
   //will be attached to the map later
-  SDL_FRect zoneSize = {0.0f, 0.0f, (REGION_SIZE*World::size.height) + World::size.height, (REGION_SIZE*World::size.width) + World::size.width};
+  SDL_FRect zoneSize = {0.0f, 0.0f, (REGION_SIZE * World::size.height) + World::size.height, (REGION_SIZE * World::size.width) + World::size.width};
   //  DynamicQuadTreeContainer<someObjectWithArea> treeObjects;
   //  std::unordered_map<World::GameState, Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees;
   std::vector<Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees(World::numZones);
@@ -72,18 +72,20 @@ namespace Quad_Tree {
           continue;
         }
         for (auto tileEntity: tilesEntities[0][i][j].objects) {
-          if (zone.valid(tileEntity.entity)) {
-            if (!zone.any_of<Component::Interaction_Rect>(tileEntity.entity)) {
-              Utilities::Log("the entity " + std::to_string((int) tileEntity.entity) + " has no interaction rect");
-              if (zone.any_of<Component::Body>(tileEntity.entity)) {
-                auto &body = zone.get<Component::Body>(tileEntity.entity).body;
-                Collision::collisionList[state]->DestroyBody(body);
-                zone.remove<Component::Body>(tileEntity.entity);
-                zone.remove<Component::Remove_From_Object_Tree>(entity);
-                zone.remove<Component::In_Object_Tree>(entity);
+          if (tileEntity.entity != (entt::entity)0) {
+            if (zone.valid(tileEntity.entity)) {
+              if (!zone.any_of<Component::Interaction_Rect>(tileEntity.entity)) {
+                Utilities::Log("the entity " + std::to_string((int) tileEntity.entity) + " has no interaction rect");
+                if (zone.any_of<Component::Body>(tileEntity.entity)) {
+                  auto &body = zone.get<Component::Body>(tileEntity.entity).body;
+                  Collision::collisionList[state]->DestroyBody(body);
+                  zone.remove<Component::Body>(tileEntity.entity);
+                  zone.remove<Component::Remove_From_Object_Tree>(entity);
+                  zone.remove<Component::In_Object_Tree>(entity);
+                }
+                zone.destroy(tileEntity.entity);
+                continue;
               }
-              zone.destroy(tileEntity.entity);
-              continue;
             }
           } else {
             //            Utilities::Log("the entity " + std::to_string((int)tileEntity) + " does not exist, i think it's stuck in the tree");
@@ -217,7 +219,7 @@ namespace Quad_Tree {
         auto &camera = view.get<Component::Camera>(entity);
 
         int nodes = 0;
-//        nodes = quadTrees[state].Draw(camera.screen.x, camera.screen.y, nodes);
+        //        nodes = quadTrees[state].Draw(camera.screen.x, camera.screen.y, nodes);
 
         for (const auto &object: quadTrees[state].search(camera.screen)) {
           SDL_FRect screenRect = object->item.rect;
@@ -225,7 +227,7 @@ namespace Quad_Tree {
           screenRect.y -= camera.screen.y;
           SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderMagic, NULL, &screenRect);
         }
-//        std::cout << "nodes: " << nodes << std::endl;
+        //        std::cout << "nodes: " << nodes << std::endl;
       }
       //		std::cout << "objects on screen: " << i << std::endl;
     }
@@ -248,8 +250,7 @@ namespace Quad_Tree {
         } else {
           if (zone.any_of<Component::Radius>(object->item.entity_ID)) {
             return {true, object->item.entity_ID};
-          }
-          else {
+          } else {
             data = {true, object->item.entity_ID};
           }
         }

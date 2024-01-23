@@ -84,9 +84,9 @@ namespace Init {
   void Create_Game_entities(entt::registry &zone, int &state, std::string &tilesetName, Character_Options::Customization &options) {
     Maps::Generate_Region(state, tilesetName);
     Collision::init_Collison(state);
-    Item_Component::emptyEquipSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
+    Item_Component::emptyEquipSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
     Graphics::defaultIcon[state] = Graphics::Create_Icon_Entity(zone, Graphics::default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
-    UI::Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::bagSlotBorder, Component::Icon_Type::item);
+    UI::Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
     Mouse::Init_mouse(zone);
     if (Create_Entities::startup) {
       Character_Stats::Init_Player(zone, state, options);

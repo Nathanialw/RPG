@@ -14,7 +14,7 @@ struct Tile {
 };
 
 const int REGION_SIZE = 32;
-std::array<Tile[REGION_SIZE][REGION_SIZE], 4> tilesEntities;
+std::array<Tile[REGION_SIZE][REGION_SIZE], 4> tilesEntities = {};
 
 void Clear_Tiles_Array(entt::registry &zone) {
   for (int i = 0; i < REGION_SIZE; ++i) {
