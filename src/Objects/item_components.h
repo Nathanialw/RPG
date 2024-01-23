@@ -8,11 +8,12 @@ namespace Item_Component {
   //    item 0 renders first
   enum class Item_Type {
     clothes,
+    shins,
+    boots,
     amulet,
     legs,
     belt,
     wrist,
-    boots,
     kilt,
     chest,
     gloves,
@@ -22,11 +23,7 @@ namespace Item_Component {
     facialHair,
     face,
     hair,
-    hood,
     back,
-    helm,
-    crown,
-    shins,
     shoulders,
     jewelry,
     jewelry0,
@@ -35,6 +32,9 @@ namespace Item_Component {
     ranged,
     mainhand,
     offhand,
+    hood,
+    helm,
+    crown,
     horns,
     size
   };

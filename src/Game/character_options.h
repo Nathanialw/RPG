@@ -8,11 +8,11 @@
 
 namespace Character_Options {
 
-  std::vector<std::string> Gear_Male = {"Male_Rogue_DaggerMain", "Male_Druid_Top",
-                                        "Male_Footman_Bottom"};
+  std::vector<std::string> Gear_Male = {"Male_Rogue_DaggerMain", "Male_Commoner_1_Top",
+                                        "Male_Commoner_1_Bottom"};
 
   std::vector<std::string> Gear_Female = {"Female_Rogue_DaggerMain",
-                                          "Female_Druid_Top", "Female_Scout_Bottom"};
+                                          "Female_MythosLady_1_Top", "Female_MythosLady_1_Bottom"};
 
   enum class Sex {
     male,
