@@ -5,6 +5,7 @@
 #include <map>
 #include "ui.h"
 #include "ui_elements.h"
+#include "Video/video.h"
 
 namespace Menu_Options {
 
@@ -19,7 +20,7 @@ namespace Menu_Options {
   struct Menu_Options_Frame {
     UI::Image_Frame backgroundFrame;
     std::array<Option_Frame, Debug::Settings::SIZE> List;
-    std::array<const char *, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Font Render FC"};
+    std::array<const char *, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Font Render FC", "Volume"};
   };
   Menu_Options_Frame Options;
 
@@ -54,6 +55,7 @@ namespace Menu_Options {
   }
 
   int Show_Menu_Options(Component::Camera &camera) {
+    Video::Update_Volume();
     Update_Position();
     SDL_FRect renderOptions = UI::Update_Scale(camera.scale, Options.backgroundFrame.frame);
     SDL_RenderCopyF(Graphics::renderer, Options.backgroundFrame.texture, NULL, &renderOptions);

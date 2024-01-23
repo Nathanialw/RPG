@@ -380,12 +380,8 @@ namespace UI {
           SDL_RenderCopyF(renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
           SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
           SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
-          //          SDL_RenderCopyF(renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
-        } else {
-          //          Utilities::Log("Render_Equipment_Slot " + std::to_string((int) slot.second));
         }
       }
-      //      Utilities::Log((int)Item_Component::emptyEquipSlot[state]);
     }
 
     void Update_Equipment_Position(Component::Camera &camera) {

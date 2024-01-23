@@ -128,12 +128,12 @@ namespace Loot_Panel {
         auto &icon = zone.get<Component::Icon>(item);
         SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(panel, camera);
 
+        SDL_SetTextureAlphaMod(icon.pBackground, 255);
         SDL_SetTextureAlphaMod(icon.pTexture, 255);
         SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
-        SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
+        SDL_RenderCopyF(Graphics::renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
         SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
         SDL_RenderCopyF(Graphics::renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
-        SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, &icon.clipIcon, &scaledSlot);
 
         //next slot down
         panel.y += lootPanel.lootPanelSize;

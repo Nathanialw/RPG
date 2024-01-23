@@ -6,17 +6,17 @@
 
 namespace Debug {
 
-//  unsigned long int numEntities;
-//  unsigned long int numRendered;
-//  unsigned long int interactionRects;
-//  unsigned long int renderChecks;
-//  unsigned long int entityCount;
-//  unsigned long int renderChecks;
-//  unsigned long int collisionChecks;
-//  unsigned long int renderComponent;
-//  unsigned long int UpdateQuadTreeDebug;
-//  unsigned long int treeSize;
-//  bool showPosition = false;
+  //  unsigned long int numEntities;
+  //  unsigned long int numRendered;
+  //  unsigned long int interactionRects;
+  //  unsigned long int renderChecks;
+  //  unsigned long int entityCount;
+  //  unsigned long int renderChecks;
+  //  unsigned long int collisionChecks;
+  //  unsigned long int renderComponent;
+  //  unsigned long int UpdateQuadTreeDebug;
+  //  unsigned long int treeSize;
+  //  bool showPosition = false;
 
   enum Settings {
     Framerate = 0,
@@ -32,12 +32,13 @@ namespace Debug {
     loopTimers,
     lockFramerate,
     fontRenderFC,
+    volume,
     SIZE
   };
 
   std::array<bool, Settings::SIZE> settings;
   std::array<unsigned long int, Settings::SIZE> settingsValue;
-  std::array<std::string, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Font Render FC"};
+  std::array<std::string, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Font Render FC", "Volume"};
 
   void Load_Settings() {
     for (auto &i: settings) {
@@ -46,6 +47,5 @@ namespace Debug {
   };
 
   struct DEBUG_Position {
-
   };
-}
+}// namespace Debug
