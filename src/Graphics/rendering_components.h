@@ -119,6 +119,13 @@ namespace Rendering_Components {
     Equip_Slot_Data sheet[30];
   };
 
+  //import the data to sheath
+  //set it to equip slot back
+  //remove it from equip slot back
+  struct Sheathed {
+    Equip_Slot_Data sheatheItemData;
+  };
+
   enum Blend_Type {
     normal,
     reanimated,

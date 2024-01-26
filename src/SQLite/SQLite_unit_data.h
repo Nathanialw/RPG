@@ -265,7 +265,38 @@ namespace Entity_Loader {
       db_name.push_back(retname);
     }
     db_name.shrink_to_fit();
-    //sort 
+//    sort
+    std::sort(db_name.begin(), db_name.end(), [](const std::string &lhs, const std::string &rhs) {
+      return lhs < rhs;
+    });
+    return db_name;
+  }
+
+  std::vector<std::string> Get_Names_Of_SubType(std::string race, std::string type, std::string subtype) {
+    std::string race_name = db::Append_Quotes(race);
+    std::string type_name = db::Append_Quotes(type);
+    std::string class_name = db::Append_Quotes(subtype);
+//    std::string subtype_name = db::Append_Quotes(collider_type);
+    std::string text = race_name + " AND type = " + type_name + " AND subtype = " + class_name;
+    std::vector<std::string> db_name;
+
+    const unsigned char *name;
+    sqlite3_stmt *stmt;
+    char buf[300];
+
+    const char *jj = "SELECT name FROM buildings WHERE race = ";
+    strcpy(buf, jj);
+    strcat(buf, text.c_str());
+
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      name = sqlite3_column_text(stmt, 0);
+      const char *s = (const char *) name;
+      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      db_name.push_back(retname);
+    }
+    db_name.shrink_to_fit();
+    //    sort
     std::sort(db_name.begin(), db_name.end(), [](const std::string &lhs, const std::string &rhs) {
       return lhs < rhs;
     });

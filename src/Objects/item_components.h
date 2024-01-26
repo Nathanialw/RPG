@@ -23,8 +23,10 @@ namespace Item_Component {
     facialHair,
     face,
     hair,
-    back,
     shoulders,
+    hood,
+    quiver,
+    back,
     jewelry,
     jewelry0,
     jewelry1,
@@ -32,7 +34,6 @@ namespace Item_Component {
     ranged,
     mainhand,
     offhand,
-    hood,
     helm,
     crown,
     horns,
@@ -42,6 +43,8 @@ namespace Item_Component {
   Item_Type Get_Item_Type(std::string &db_type) {
     if (db_type == "back") {
       return Item_Type::back;
+    } else if (db_type == "quiver") {
+      return Item_Type::quiver;
     } else if (db_type == "mainhand") {
       return Item_Type::mainhand;
     } else if (db_type == "amulet") {
@@ -104,6 +107,8 @@ namespace Item_Component {
       return "back";
     } else if (db_type == Item_Type::mainhand) {
       return "mainhand";
+    } else if (db_type == Item_Type::quiver) {
+      return "quiver";
     } else if (db_type == Item_Type::amulet) {
       return "amulet";
     } else if (db_type == Item_Type::face) {
@@ -244,6 +249,7 @@ namespace Item_Component {
                                {Item_Type::boots, emptyEquipSlot[state]},
                                {Item_Type::dirt, emptyEquipSlot[state]},
                                {Item_Type::hood, emptyEquipSlot[state]},
+                               {Item_Type::quiver, emptyEquipSlot[state]},
                                {Item_Type::helm, emptyEquipSlot[state]},
                                {Item_Type::legs, emptyEquipSlot[state]},
                                {Item_Type::kilt, emptyEquipSlot[state]},

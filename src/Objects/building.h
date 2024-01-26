@@ -1,8 +1,6 @@
 #pragma once
 
-namespace Building {
+namespace Build {
+  #include "Buildings/orc.h"
 
-
-
-
-}
+};

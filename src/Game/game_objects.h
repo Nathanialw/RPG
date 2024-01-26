@@ -5,6 +5,7 @@
 namespace Game_Objects_Lists {
 //tilesets
   std::unordered_map<std::string, std::vector<std::string>> tilesets;
+  std::unordered_map<std::string, std::unordered_map<std::string, int>> indexes;
 
   //Units
   std::unordered_map<std::string, std::vector<db::Unit_Data>> units;

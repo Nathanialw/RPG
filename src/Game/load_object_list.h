@@ -126,6 +126,11 @@ namespace Load_Object_List {
     Game_Objects_Lists::tilesets["dead"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("dead").c_str());
     Game_Objects_Lists::tilesets["hell"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("hell").c_str());
 
+    Game_Objects_Lists::tilesets["buildings_orc"] = Entity_Loader::Get_Names_Of_SubType("orc", "building", "house");
+    for (int i = 0; i < Game_Objects_Lists::tilesets["buildings_orc"].size(); ++i) {
+      Game_Objects_Lists::indexes["buildings_orc"][Game_Objects_Lists::tilesets["buildings_orc"][i]] = i;
+    }
+
     Game_Objects_Lists::tilesets["bloodPool"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "background");
     Game_Objects_Lists::tilesets["bloodSplatter"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "foreground");
 

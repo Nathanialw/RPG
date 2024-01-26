@@ -323,6 +323,7 @@ namespace Component {
   };
 
   enum class Buildings {
+    tent,
     house,
     wall,
     tower,
