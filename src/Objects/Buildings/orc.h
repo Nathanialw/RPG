@@ -42,7 +42,8 @@ namespace Orc {
       Utilities::Log(name + " not found");
       return;
     }
-    Create_Entities::PVG_Building(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex, aabb, pointVecs, line);
+    Create_Entities::On_Mouse(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
+    //    Create_Entities::PVG_Building(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex, aabb, pointVecs, line);
   }
 
   void Tent_1(entt::registry &zone, int &state) {

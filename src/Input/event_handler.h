@@ -135,14 +135,14 @@ namespace Event_Handler {
         //      spellbook
         else if (UI_Spellbook::Check_Spellbook(camera)) {
           Action_Bar::Clear_Spell_On_Mouse(zone);
-          if (!UI_Spellbook::Get_Spell(zone, camera, Mouse::itemCurrentlyHeld)) {
+          if (!UI_Spellbook::Get_Spell(zone, camera)) {
             //check for button on spellbook
           }
           return;
         }
         //        items
         else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-          if (Mouse_Struct::mouseData.type != Component::Icon_Type::spell) {
+          if (Mouse_Struct::mouseData.type == Component::Icon_Type::item || Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
             UI::Bag_UI::Interact_With_Bag(zone, player_ID, state, camera);
             if (UI::Equipment_UI::Interact_With_Equipment(zone, state, camera, player_ID)) {
               //updates character stats
@@ -158,7 +158,7 @@ namespace Event_Handler {
         }
       } else if (Events::event.button.button == SDL_BUTTON_RIGHT) {
         if (UI::bToggleCharacterUI) {
-          if (Mouse_Struct::mouseData.type != Component::Icon_Type::spell) {
+          if (Mouse_Struct::mouseData.type == Component::Icon_Type::item || Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
             if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
               if (UI::Swap_Item_In_Bag_For_Equipped(zone, state, Mouse::screenMousePoint, camera, player_ID)) {
                 zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
@@ -239,9 +239,9 @@ namespace Event_Handler {
           auto &camera = view.get<Component::Camera>(player_ID);
           auto &input = view.get<Component::Input>(player_ID);
 
-          if (Events::event.key.type == SDL_MOUSEMOTION) {
-            Mouse_Hover(zone, state);
-          } else if (Events::event.key.type == SDL_MOUSEWHEEL) {
+          //          if (Events::event.key.type == SDL_MOUSEMOTION) {
+          Mouse_Hover(zone, state);
+          if (Events::event.key.type == SDL_MOUSEWHEEL) {
             Interface::Update_Zoom(zone, Events::event);
           } else if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
             Mouse_Input(zone, state, player_ID, playerPosition, camera);

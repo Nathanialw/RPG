@@ -254,10 +254,10 @@ namespace Texture_Packer {
     }
   }
 
-  std::unordered_map<std::string, Rendering_Components::Sheet_Data> *Get_Texture_Data(int textureIndex, std::string &templateName, Entity_Loader::Building_Data data, std::string &tilesetName) {
+  std::unordered_map<std::string, Rendering_Components::Sheet_Data> *Get_Texture_Data(int textureIndex, std::string &templateName, std::string img, std::string xml, std::string &tilesetName) {
     // get tileset name from texture path
     const char *imgPath;
-    std::string imgPathStr = "assets/" + data.img;
+    std::string imgPathStr = "assets/" + img;
     std::string base_filename = imgPathStr.substr(imgPathStr.find_last_of("/\\") + 1);
     std::string::size_type const p(base_filename.find_last_of('.'));
     tilesetName = base_filename.substr(0, p);
@@ -268,11 +268,11 @@ namespace Texture_Packer {
       return &Packer_Textures;
     }
 
-    std::cout << "Loading: " << textureIndex << ", " << templateName << ", " << data.xml << ", " << data.img << ", " << tilesetName << std::endl;
+    std::cout << "Loading: " << textureIndex << ", " << templateName << ", " << xml << ", " << img << ", " << tilesetName << std::endl;
     Rendering_Components::Sheet_Data spritesheet;
 
     //    import texture
-    if (data.img.c_str() == NULL || data.img == "") {
+    if (img.c_str() == NULL || img == "") {
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
       return NULL;
     } else {
@@ -282,12 +282,12 @@ namespace Texture_Packer {
     }
 
     //    import xml
-    if (data.xml.c_str() == NULL || data.xml == "") {
+    if (xml.c_str() == NULL || xml == "") {
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
       return NULL;
     } else {
       const char *xmlPath;
-      std::string xmlPathStr = "assets/" + data.xml;
+      std::string xmlPathStr = "assets/" + xml;
       xmlPath = xmlPathStr.c_str();
 
       TexturePacker_Import_Tileset(spritesheet, templateName, tilesetName, xmlPath);

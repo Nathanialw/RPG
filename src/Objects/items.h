@@ -156,10 +156,10 @@ namespace Items {
     sheetData.sheet_name = equippedSheetData.index;
 
     //get from spritesheet
-//    int column = weaponMaterials[material];
-//    int row = weaponTypes[weaponType];
-//    int size = 32;
-//    SDL_Rect sprite = {column * size, row * size, size, size};
+    //    int column = weaponMaterials[material];
+    //    int row = weaponTypes[weaponType];
+    //    int size = 32;
+    //    SDL_Rect sprite = {column * size, row * size, size, size};
     Icons::Icon_Clip sprite = Icons::iconClipRects[item_name.icon_name];
 
     auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::icons, rarityBorder[rarity], Graphics::bagSlotBorder);
@@ -168,11 +168,11 @@ namespace Items {
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
 
-//    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
-//    icon.clipSprite = sprite;
-//    icon.clipIcon = {0, 0, 256, 256};
-//    icon.renderRectSize = {64.0f, 64.0f};
-//    icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
+    //    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+    //    icon.clipSprite = sprite;
+    //    icon.clipIcon = {0, 0, 256, 256};
+    //    icon.renderRectSize = {64.0f, 64.0f};
+    //    icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
 
     zone.emplace_or_replace<Weapon_Damage>(item, 1, 10);
     return equippedSheetData.index;
@@ -440,8 +440,7 @@ namespace Items {
     std::string itemName = "";
     if (itemType == Item_Type::mainhand) {
       itemName = Create_Weapon(zone, item_ID, rarity, equip_type, item_name, color);
-    }
-    else {
+    } else {
       itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
     }
     if (itemName == "none") {
@@ -520,7 +519,7 @@ namespace Items {
     std::string itemName = Create_Weapon(zone, item_ID, rarity, equip_type, item_name, color);
     if (itemName == "none") {
       zone.destroy(item_ID);
-      //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
+      Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
       return Item_Component::emptyEquipSlot[state];
     }
     Create_Item1(zone, item_ID, position, itemName, itemStats);
@@ -535,7 +534,7 @@ namespace Items {
     std::string itemName = Create_Offhand(zone, item_ID, rarity, equip_type, item_name, color);
     if (itemName == "none") {
       zone.destroy(item_ID);
-      //            Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
+      Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
       return Item_Component::emptyEquipSlot[state];
     }
     Create_Item1(zone, item_ID, position, itemName, itemStats);

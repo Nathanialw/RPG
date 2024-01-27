@@ -102,8 +102,8 @@ namespace Rendering_Components {
   };
 
   struct Buff_Sprites {
-      std::unordered_map<std::string, Buff_Sprite_Data> buffs;
-      std::vector<Buff_Sprite_Data> sheet;
+    std::unordered_map<std::string, Buff_Sprite_Data> buffs;
+    std::vector<Buff_Sprite_Data> sheet;
   };
 
   struct Equip_Slot_Data {
@@ -163,6 +163,6 @@ namespace Rendering_Components {
     Component::Radius radius = {0.0f};
     int duration = 1000;
     Component::Unit_Index unit;
-    const char * spellEffect;
+    const char *spellEffect;
   };
 }// namespace Rendering_Components

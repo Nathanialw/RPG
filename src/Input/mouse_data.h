@@ -1,3 +1,4 @@
+#pragma once
 #include "spell_data.h"
 
 
@@ -13,4 +14,4 @@ namespace Mouse_Struct {
   };
   Mouse_Data mouseData;
 
-}
+}// namespace Mouse_Struct

@@ -72,7 +72,7 @@ namespace Quad_Tree {
           continue;
         }
         for (auto tileEntity: tilesEntities[0][i][j].objects) {
-          if (tileEntity.entity != (entt::entity)0) {
+          if (tileEntity.entity != (entt::entity) 0) {
             if (zone.valid(tileEntity.entity)) {
               if (!zone.any_of<Component::Interaction_Rect>(tileEntity.entity)) {
                 Utilities::Log("the entity " + std::to_string((int) tileEntity.entity) + " has no interaction rect");
@@ -135,6 +135,7 @@ namespace Quad_Tree {
         zone.remove<Component::Body>(entity);
       }
       zone.destroy(entity);
+      Utilities::Log("destroyed");
       //remove from registry
     }
     zone.compact<>();

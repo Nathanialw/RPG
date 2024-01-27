@@ -544,7 +544,7 @@ namespace Component {
   };
 
   struct Bag {
-//    std::vector<entt::entity> bag;
+    //    std::vector<entt::entity> bag;
     f2 numOfSlots = {8.0f, 4.0f};
     std::array<entt::entity, 32> bag;
   };
@@ -562,6 +562,7 @@ namespace Component {
 
   enum class Icon_Type {
     none,
+    building,
     spell,
     item,
     SIZE

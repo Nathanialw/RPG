@@ -1,25 +1,25 @@
 #pragma once
 #include "graphics.h"
-#include "spell_data.h"
-#include "ui_elements.h"
-#include "sinister_strike.h"
 #include "mouse_control.h"
 #include "mouse_data.h"
+#include "sinister_strike.h"
+#include "spell_data.h"
+#include "ui_elements.h"
 
-#include "Necromancy/necromancy.h"
-#include "Fire/fire.h"
-#include "Ice/ice.h"
-#include "Bard/auras.h"
-#include "Holy/holy.h"
 #include "Archery/archery.h"
+#include "Bard/auras.h"
+#include "Fire/fire.h"
+#include "Holy/holy.h"
+#include "Ice/ice.h"
+#include "Necromancy/necromancy.h"
 
-#include "Life/life.h"
-#include "lightning/lightning.h"
-#include "lightning/lightningball.h"
-#include "Nature/nature.h"
 #include "Air/smoke.h"
 #include "Arcane/arcane.h"
 #include "Life/heal_self.h"
+#include "Life/life.h"
+#include "Nature/nature.h"
+#include "lightning/lightning.h"
+#include "lightning/lightningball.h"
 
 namespace UI_Spellbook {
 
@@ -226,7 +226,7 @@ namespace UI_Spellbook {
     }
   }
 
-  bool Get_SpellPage(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw, bool &mouseHasItem, Spell_Data::Skill_Tree tree) {
+  bool Get_SpellPage(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw, Spell_Data::Skill_Tree tree) {
     float xSpacing = 32.0f;
     float ySpacing = 32.0f;
     float x = draw.x;
@@ -245,10 +245,11 @@ namespace UI_Spellbook {
       renderRect = UI::Update_Scale(camera.scale, renderRect);
 
       if (Mouse::bRect_inside_Cursor(renderRect)) {
-//        Utilities::Log("picked up spell at spellbook index " + std::to_string(j));
+        //        Utilities::Log("picked up spell at spellbook index " + std::to_string(j));
         Mouse_Struct::mouseData.tree = tree;
         Mouse_Struct::mouseData.index = j;
         Mouse_Struct::mouseData.type = Component::Icon_Type::spell;
+        Mouse::itemCurrentlyHeld = true;
         return true;
       }
     }
@@ -269,15 +270,17 @@ namespace UI_Spellbook {
     }
   }
 
-  bool Get_Spell(entt::registry &zone, Component::Camera &camera, bool &mouseHasItem) {
-    if (Get_SpellPage(zone, camera, spellbook.panelRect, mouseHasItem, Spell_Data::Skill_Tree(spellbook.currentTab))) {
-      return true;
-    }
-    SDL_FRect page2 = spellbook.panelRect;
-    page2.w /= 2;
-    page2.x += page2.w - 64.0f;
-    if (Get_SpellPage(zone, camera, page2, mouseHasItem, Spell_Data::Skill_Tree(spellbook.currentTab+1))) {
-      return true;
+  bool Get_Spell(entt::registry &zone, Component::Camera &camera) {
+    if (!Mouse::itemCurrentlyHeld) {
+      if (Get_SpellPage(zone, camera, spellbook.panelRect, Spell_Data::Skill_Tree(spellbook.currentTab))) {
+        return true;
+      }
+      SDL_FRect page2 = spellbook.panelRect;
+      page2.w /= 2;
+      page2.x += page2.w - 64.0f;
+      if (Get_SpellPage(zone, camera, page2, Spell_Data::Skill_Tree(spellbook.currentTab + 1))) {
+        return true;
+      }
     }
     return false;
   }
@@ -320,7 +323,7 @@ namespace UI_Spellbook {
     SDL_FRect page2 = spellbook.panelRect;
     page2.w /= 2;
     page2.x += page2.w - 64.0f;
-    Draw_Spell_Page(camera, page2, Spell_Data::Skill_Tree(spellbook.currentTab+1));
+    Draw_Spell_Page(camera, page2, Spell_Data::Skill_Tree(spellbook.currentTab + 1));
   }
 
   void Draw_Spellbook(Component::Camera &camera) {

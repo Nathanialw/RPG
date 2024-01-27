@@ -85,12 +85,12 @@ namespace Action_Bar {
             Mouse_Struct::mouseData.index = -1;
             return;
           }
-//          swap
+          //          swap
           Mouse_Struct::mouseData.tree = tree;
           Mouse_Struct::mouseData.index = index;
           return;
         } else {
-//          Mouse::itemCurrentlyHeld = false;
+          //          Mouse::itemCurrentlyHeld = false;
           Mouse_Struct::mouseData.type = Component::Icon_Type::none;
           Mouse_Struct::mouseData.index = -1;
           //          clear the mouse item
@@ -100,33 +100,37 @@ namespace Action_Bar {
   }
 
   void Get_Mouse_Spell_From_Actionbar(entt::registry &zone, int &state, Component::Camera &camera) {
-    SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar.actionBar.actionBarFrame);
+    if (!Mouse::itemCurrentlyHeld) {
+      SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar.actionBar.actionBarFrame);
 
-    for (int i = 0; i < actionBar.actionBar.spell.size(); i++) {
-      SDL_FRect renderRect = {renderBarFrame.x + (renderBarFrame.h * i), renderBarFrame.y, renderBarFrame.h, renderBarFrame.h};
-      if (Mouse::bRect_inside_Cursor(renderRect)) {
-        if (actionBar.actionBar.spell[i].icon.pTexture != actionBar.defaultSlot.icon.pTexture) {
+      for (int i = 0; i < actionBar.actionBar.spell.size(); i++) {
+        SDL_FRect renderRect = {renderBarFrame.x + (renderBarFrame.h * i), renderBarFrame.y, renderBarFrame.h, renderBarFrame.h};
+        if (Mouse::bRect_inside_Cursor(renderRect)) {
+          if (actionBar.actionBar.spell[i].icon.pTexture != actionBar.defaultSlot.icon.pTexture) {
 
-          Mouse_Struct::mouseData.tree = actionBar.actionBar.spell[i].tree;
-          Mouse_Struct::mouseData.index = actionBar.actionBar.spell[i].index;
-          actionBar.actionBar.spell[i] = actionBar.defaultSlot;
-          Mouse_Struct::mouseData.type = Component::Icon_Type::spell;
-//          Mouse::itemCurrentlyHeld = true;
+            Mouse_Struct::mouseData.tree = actionBar.actionBar.spell[i].tree;
+            Mouse_Struct::mouseData.index = actionBar.actionBar.spell[i].index;
+            actionBar.actionBar.spell[i] = actionBar.defaultSlot;
+            Mouse_Struct::mouseData.type = Component::Icon_Type::spell;
+            Mouse::itemCurrentlyHeld = true;
 
-          Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[i]] = actionBar.actionBar.spell[i].cast;
-          return;
+            Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[i]] = actionBar.actionBar.spell[i].cast;
+            return;
+          }
+          //          clear the mouse item
         }
-        //          clear the mouse item
       }
     }
   }
 
   void Clear_Spell_On_Mouse(entt::registry &zone) {
-//    if (Mouse::mouseItem == Mouse::cursor_ID) {
-//      Utilities::Log("objectID on mouse is the same as the cursorID same");
-//    }
+    //    if (Mouse::mouseItem == Mouse::cursor_ID) {
+    //      Utilities::Log("objectID on mouse is the same as the cursorID same");
+    //    }
     Mouse_Struct::mouseData.type = Component::Icon_Type::none;
     Mouse_Struct::mouseData.index = -1;
+    Mouse::mouseItem = Mouse::cursor_ID;
+    Mouse::itemCurrentlyHeld = false;
   }
 
   void Render_Action_Bar(entt::registry &zone, int &state, Component::Camera &camera) {

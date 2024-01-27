@@ -3,6 +3,7 @@
 #include "components.h"
 #include "entt/entt.hpp"
 #include "item_components.h"
+#include "mouse_data.h"
 #include "world.h"
 
 namespace UI {
@@ -204,7 +205,7 @@ namespace UI {
           {Item_Component::Item_Type::amulet, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
           {Item_Component::Item_Type::shoulders, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 
-          {Item_Component::Item_Type::size, {defaultScreenPosition.x + equipmentOffsetColumn1.x  + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+          {Item_Component::Item_Type::size, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 
           {Item_Component::Item_Type::chest, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
           {Item_Component::Item_Type::mainhand, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
@@ -312,8 +313,7 @@ namespace UI {
                 inside = Mouse::bRect_inside_Cursor(scaledSlot);
                 itemType = Item_Component::Item_Type::ring1;
               }
-            }
-            else if (itemType == Item_Component::Item_Type::jewelry) {
+            } else if (itemType == Item_Component::Item_Type::jewelry) {
               slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry0];
               scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
               inside = Mouse::bRect_inside_Cursor(scaledSlot);
@@ -325,7 +325,6 @@ namespace UI {
                 itemType = Item_Component::Item_Type::jewelry1;
               }
             }
-
 
 
             else {
@@ -471,11 +470,9 @@ namespace UI {
       auto type = zone.get<Item_Component::Item_Type>(itemInSlot);
       if (Swap_Multislot(state, type, equipment, itemInSlot, bag, slotNum)) {
         return true;
-      }
-      else if (Swap_Weapon(zone, state, player, type, equipment, itemInSlot, bag, slotNum)) {
+      } else if (Swap_Weapon(zone, state, player, type, equipment, itemInSlot, bag, slotNum)) {
         return true;
-      }
-      else {
+      } else {
         entt::entity equippedItem = equipment.equippedItems[type];
         equipment.equippedItems[type] = itemInSlot;
         zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) type] = zone.get<Rendering_Components::Portrait>(itemInSlot);
@@ -495,8 +492,8 @@ namespace UI {
       auto view = zone.view<Component::Input, Component::Position>();
       for (auto entity: view) {
         if (zone.get<Component::On_Mouse>(Mouse::mouseItem).type == Component::Icon_Type::item) {
-          if (zone.get<Item_Component::Item_Type>(Mouse::mouseItem) == Item_Component::Item_Type::back) { return;}
-          if (zone.get<Item_Component::Item_Type>(Mouse::mouseItem) == Item_Component::Item_Type::quiver) { return;}
+          if (zone.get<Item_Component::Item_Type>(Mouse::mouseItem) == Item_Component::Item_Type::back) { return; }
+          if (zone.get<Item_Component::Item_Type>(Mouse::mouseItem) == Item_Component::Item_Type::quiver) { return; }
           auto &entityPosition = view.get<Component::Position>(entity);
           auto &itemPosition = zone.get<Component::Position>(Mouse::mouseItem);
           itemPosition = entityPosition;
@@ -541,6 +538,8 @@ namespace UI {
       }
     }
     isItemCurrentlyHeld = false;
+    Mouse::mouseItem = Mouse::cursor_ID;
+    Mouse_Struct::mouseData.type = Component::Icon_Type::none;
   }
 
   void Pick_Up_Item_To_Mouse(entt::registry &zone, entt::entity &item_ID, bool &isItemCurrentlyHeld) {

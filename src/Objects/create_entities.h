@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Rendering_Components/rendering_functions.h"
 #include "SQLite_spritesheets.h"
 #include "SQLite_unit_data.h"
 #include "action_components.h"
@@ -80,6 +81,36 @@ namespace Create_Entities {
     return false;
   }
 
+  entt::entity On_Mouse(entt::registry &zone, float x, float y, std::string &templateName, int xmlIndex) {
+    Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
+    auto entity = zone.create();
+
+    if (data.sprite_layout == "PVG") {
+      ///get texture data
+      Rendering::Sheet_Data sheetData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
+      if (!sheetData.packerframeData) return entity;
+
+      Rendering_Components::Sprite_Sheet_Data frame = sheetData.frame;
+      auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
+
+      //attach collider
+      Rendering::Set_Offset(zone, entity, data.collider_type, position, data.x_offset, data.y_offset, frame);
+
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+
+      SDL_Rect clipRect = sheetData.frame.clip;
+      Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius, clipRect);
+
+      Social_Control::Entity(zone, entity, data.race);
+      zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
+
+      zone.emplace<Component::On_Mouse>(entity, entity, Component::Icon_Type::building);
+      Mouse::mouseItem = entity;
+      Mouse::itemCurrentlyHeld = true;
+    }
+    return entity;
+  }
 
   entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
@@ -88,32 +119,17 @@ namespace Create_Entities {
 
     if (data.sprite_layout == "PVG") {
       ///get texture data
-      SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
-      std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> *flareSheetData = NULL;
-      std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
-      int textureIndex = Entity_Data::Check_For_Template_ID(templateName);
-      std::string tilesetName;
+      Rendering::Sheet_Data sheetData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
+      if (!sheetData.packerframeData) return entity;
 
-      packerframeData = Texture_Packer::Get_Texture_Data(textureIndex, templateName, data, tilesetName);
-      if (packerframeData == NULL) {
-        //	I think returning true will just make it do nothing because of how it is called in map.h
-        std::cout << "failed to load PVG_Building() for: " << templateName << std::endl;
-        return entity;
-      }
-      auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
-      sprite.sheetData = packerframeData;
-      sprite.sheet_name = tilesetName;
-      sprite.type = "RPG_Tools";
-      sprite.frameIndex = xmlIndex;
-      Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(xmlIndex);
+      Rendering_Components::Sprite_Sheet_Data frame = sheetData.frame;
       auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
 
-      //attach collider
-      Collision::Attach_Collider(zone, state, entity, data.collider_type, data.x_offset, data.y_offset, data.radius, position, frame, aabb, pointVecs, line);
-      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
+      Rendering::Set_Offset(zone, entity, data.collider_type, position, data.x_offset, data.y_offset, frame);
+      Collision::Attach_Components(zone, state, entity, data.collider_type, data.radius, position, aabb, pointVecs, line);
 
       //Add shared components
-      SDL_Rect clipRect = sprite.sheetData->at(tilesetName).frameList[xmlIndex].clip;
+      SDL_Rect clipRect = sheetData.frame.clip;
       auto &radius = zone.emplace_or_replace<Component::Radius>(entity, data.radius);
       Emplace_Interaction_Rect_Building(zone, entity, data, x, y, radius.fRadius, clipRect);
 
@@ -123,20 +139,14 @@ namespace Create_Entities {
         }
       }
 
-      auto raceData = Social_Control::Get_Race_Relationsips(data.race);
-      auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
-      for (int q = 0; q < raceData.size(); q++) {
-        relationships.races[q] = raceData[q + 1];
-      }
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      Social_Control::Entity(zone, entity, data.race);
       zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
       zone.emplace_or_replace<Component::Name>(entity, templateName);
-      zone.emplace_or_replace<Component::Mass>(entity, 100.0f);
       zone.emplace_or_replace<Component::Alive>(entity, true);
       zone.emplace_or_replace<Rendering_Components::Unit_Frame_Portrait>(entity);
       zone.emplace_or_replace<Component::Health>(entity, 100, 100);
-
-      //std::cout << templateName << "Xo: " << frame.x_offset << " Cw: " << frame.clip.w << " IXo: " << imageOffset.x << " Yo: " << frame.y_offset << " Ch: " << frame.clip.h << " IYo: " << imageOffset.y << std::endl;
-      return entity;
     }
     return entity;
   }

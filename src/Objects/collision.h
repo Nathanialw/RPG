@@ -171,70 +171,17 @@ namespace Collision {
   void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
     if (entity_class == "polygon") {
       Collision::Create_Static_Body_Polygon(zone, state, entity, position.x, position.y, pointVecs);
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
       zone.emplace_or_replace<Component::Line_Segment>(entity, line);
     } else if (entity_class == "rect") {
       Collision::Create_Static_Body_Rect(zone, state, entity, position.x, position.y, aabb);
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
     } else if (entity_class == "round") {
       Collision::Create_Static_Body(zone, state, entity, position.x, position.y, radius);
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-    } else {
-      //        no collision box
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
     }
   }
 
-  void Attach_Collider(entt::registry &zone, int &state, entt::entity &entity, std::string &colliderType, float &xOffset, float &yOffset, float &radius, Component::Position &position, Rendering_Components::Sprite_Sheet_Data &frame, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
-    auto &offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, 0.0f, 0.0f);
-    if (colliderType == "rect") {
-      offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h};
-      position.y -= (float) frame.clip.h / 2.0f;
-      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
-    } else if (colliderType == "polygon") {
-      offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h / 2.0f};
-      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
-      position.y -= (float) frame.clip.h / 2.0f;
-    } else if (colliderType == "round") {
-      offset = {xOffset, yOffset};
-      position.x -= frame.x_offset;
-      position.y -= frame.y_offset;
-      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
-    } else if (colliderType == "none") {
-      offset = {xOffset, yOffset};
-      position.x -= frame.x_offset;
-      position.y -= frame.y_offset;
-      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
-    } else {
-      Utilities::Log("PVG_Building() no collider_type found for templateName, also prints for blood spawning");
-      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
-      //        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
-    }
-
-    //should place the tiled position on the point
-    if (colliderType == "background") {
-      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
-      position.x -= offset.x;
-      position.y -= offset.y;
-      offset.x = 0.0f;
-      offset.y = 0.0f;
-      zone.emplace_or_replace<Rendering_Components::Background>(entity);
-    } else if (colliderType == "foreground") {
-      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
-      position.x -= offset.x;
-      position.y -= offset.y;
-      offset.x = 0.0f;
-      offset.y = 0.0f;
-      zone.emplace_or_replace<Rendering_Components::Foreground>(entity);
-    }
-    // if object is a  background sprite DO NOT set Direction component
-    else {
-      zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
-    }
+  void Attach_Components(entt::registry &zone, int &state, entt::entity &entity, std::string &colliderType, float &radius, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+    Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
+    zone.emplace_or_replace<Component::Mass>(entity, 100.0f);
   }
 
   //  void Dynamic_Collisions(entt::registry &zone, World::GameState &state) {
