@@ -3,4 +3,9 @@
 namespace Build {
   #include "Buildings/orc.h"
 
+
+
+  void Build () {
+
+  }
 };

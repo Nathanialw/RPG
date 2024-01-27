@@ -220,7 +220,7 @@ namespace Maps {
   void Init_Caves(entt::registry &zone, int &state, std::string &tileSet) {
     Procedural_Components::Seed seed;
     //    collisionBox;
-    Collision::aabb aabb;
+    Collision_Component::aabb aabb;
     tmx::Vector2<float> offset = {0.0f, 0.0f};
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs = {};
     Component::Line_Segment line = {};
@@ -273,7 +273,7 @@ namespace Maps {
   void Generate_Trees(entt::registry &zone, int &state, SDL_FRect rect, std::string &tileSet, Tile &tile) {
     Procedural_Components::Seed seed;
     //    collisionBox;
-    Collision::aabb aabb;
+    Collision_Component::aabb aabb;
     tmx::Vector2<float> offset = {0.0f, 0.0f};
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs = {};
     Component::Line_Segment line = {};

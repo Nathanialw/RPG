@@ -134,7 +134,9 @@ namespace Event_Handler {
         }
         //      spellbook
         else if (UI_Spellbook::Check_Spellbook(camera)) {
-          Action_Bar::Clear_Spell_On_Mouse(zone);
+          if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
+            Action_Bar::Clear_Spell_On_Mouse(zone);
+          }
           if (!UI_Spellbook::Get_Spell(zone, camera)) {
             //check for button on spellbook
           }
@@ -152,6 +154,13 @@ namespace Event_Handler {
         } else {
           User_Mouse_Input::Selection_Box(zone);//if units are currently selected
                                                 //          items
+          if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
+            //set building
+            if (Create_Entities::Create_Object(zone, state, Mouse::mouseItem)) {
+              Create_Entities::Remove_From_Mouse(zone, Mouse::mouseItem);
+              return;
+            };
+          }
           UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
           //          spells
           Action_Bar::Clear_Spell_On_Mouse(zone);
@@ -189,7 +198,15 @@ namespace Event_Handler {
               // if not selection units
             }
           }
-        } else {
+        }
+        else {
+          if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
+            //set building
+            if (Create_Entities::Create_Object(zone, state, Mouse::mouseItem)) {
+              Create_Entities::Remove_From_Mouse(zone, Mouse::mouseItem);
+              return;
+            };
+          }
           UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
         }
       }

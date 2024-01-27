@@ -83,6 +83,8 @@ namespace Action_Bar {
           if (texture == actionBar.defaultSlot.icon.pTexture) {
             Mouse_Struct::mouseData.type = Component::Icon_Type::none;
             Mouse_Struct::mouseData.index = -1;
+            Mouse::mouseItem = Mouse::cursor_ID;
+            Mouse::itemCurrentlyHeld = false;
             return;
           }
           //          swap
@@ -93,6 +95,8 @@ namespace Action_Bar {
           //          Mouse::itemCurrentlyHeld = false;
           Mouse_Struct::mouseData.type = Component::Icon_Type::none;
           Mouse_Struct::mouseData.index = -1;
+          Mouse::mouseItem = Mouse::cursor_ID;
+          Mouse::itemCurrentlyHeld = false;
           //          clear the mouse item
         }
       }

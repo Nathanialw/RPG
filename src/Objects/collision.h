@@ -3,18 +3,8 @@
 #include "timer.h"
 #include "tmxlite/Object.hpp"
 #include "world.h"
+#include "collision_components.h"
 
-namespace Collision_Component {
-
-  struct Dynamic_Collider {
-    bool awake = true;
-  };
-
-  struct Dynamic_Collision {
-    float x = 0;
-    float y = 0;
-  };
-}// namespace Collision_Component
 
 namespace Collision {
   //  std::map<World::GameState, b2World*> world;
@@ -25,12 +15,6 @@ namespace Collision {
   const float P2M = 1.0f / M2P;
   int32 velocityIterations = 6;
   int32 positionIterations = 8;
-
-  struct aabb {
-    int hx = 0;
-    int hy = 0;
-  };
-
 
   void Set_Collision_NULL() {
     for (int i = 0; i < (int) World::GameState::MODES; ++i) {
@@ -60,7 +44,7 @@ namespace Collision {
     }
   }
 
-  void Create_Static_Body_Rect(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, Collision::aabb aabb) {
+  void Create_Static_Body_Rect(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, Collision_Component::aabb aabb) {
 
     b2BodyDef bodyDef;
 
@@ -168,7 +152,7 @@ namespace Collision {
     //        Create_Kinematic_Body(zone, entity, bodyComponent, x, y,radius, mass, isDynamicBody);
   }
 
-  void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
+  void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
     if (entity_class == "polygon") {
       Collision::Create_Static_Body_Polygon(zone, state, entity, position.x, position.y, pointVecs);
       zone.emplace_or_replace<Component::Line_Segment>(entity, line);
@@ -179,7 +163,7 @@ namespace Collision {
     }
   }
 
-  void Attach_Components(entt::registry &zone, int &state, entt::entity &entity, std::string &colliderType, float &radius, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+  void Attach_Components(entt::registry &zone, int &state, entt::entity &entity, std::string &colliderType, float &radius, Component::Position &position, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
     zone.emplace_or_replace<Component::Mass>(entity, 100.0f);
   }

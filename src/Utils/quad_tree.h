@@ -91,25 +91,35 @@ namespace Quad_Tree {
             //            Utilities::Log("the entity " + std::to_string((int)tileEntity) + " does not exist, i think it's stuck in the tree");
             continue;
           }
-          auto &rect = zone.get<Component::Interaction_Rect>(tileEntity.entity).rect;
-          for (auto &object: quadTrees[state].search(rect)) {
-            if (object->item.entity_ID == tileEntity.entity) {
-              quadTrees[state].remove(object);
+          if (zone.any_of<Component::Interaction_Rect>(tileEntity.entity)) {
+            auto &rect = zone.get<Component::Interaction_Rect>(tileEntity.entity).rect;
+            for (auto &object: quadTrees[state].search(rect)) {
+              if (object->item.entity_ID == tileEntity.entity) {
+                quadTrees[state].remove(object);
+              }
             }
+            //remove from collision
+            if (zone.any_of<Component::Body>(tileEntity.entity)) {
+              auto &body = zone.get<Component::Body>(tileEntity.entity).body;
+              Collision::collisionList[state]->DestroyBody(body);
+              zone.remove<Component::Body>(tileEntity.entity);
+              zone.remove<Component::Remove_From_Object_Tree>(tileEntity.entity);
+              zone.remove<Component::In_Object_Tree>(tileEntity.entity);
+              zone.remove<Component::Interaction_Rect>(tileEntity.entity);
+              //            Utilities::Log(sizeof(Collision::collisionList[state]));
+              //            Utilities::Log(quadTrees[state].size());
+            }
+            //remove from registry
+            zone.destroy(tileEntity.entity);
+          } else {
+            if (zone.valid(tileEntity.entity)) {
+              zone.destroy(tileEntity.entity);
+              Utilities::Log("Remove_Tile_From_Tree() Interaction Rect not found - Destroyed");
+            } else {
+              Utilities::Log("Remove_Tile_From_Tree() Interaction Rect not found");
+            }
+            continue;
           }
-          //remove from collision
-          if (zone.any_of<Component::Body>(tileEntity.entity)) {
-            auto &body = zone.get<Component::Body>(tileEntity.entity).body;
-            Collision::collisionList[state]->DestroyBody(body);
-            zone.remove<Component::Body>(tileEntity.entity);
-            zone.remove<Component::Remove_From_Object_Tree>(tileEntity.entity);
-            zone.remove<Component::In_Object_Tree>(tileEntity.entity);
-            zone.remove<Component::Interaction_Rect>(tileEntity.entity);
-            //            Utilities::Log(sizeof(Collision::collisionList[state]));
-            //            Utilities::Log(quadTrees[state].size());
-          }
-          //remove from registry
-          zone.destroy(tileEntity.entity);
         }
         zone.remove<Component::Remove_From_Object_Tree>(entity);
         zone.remove<Component::In_Object_Tree>(entity);

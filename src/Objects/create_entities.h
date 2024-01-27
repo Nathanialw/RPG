@@ -4,6 +4,7 @@
 #include "SQLite_spritesheets.h"
 #include "SQLite_unit_data.h"
 #include "action_components.h"
+#include "building_components.h"
 #include "cave.h"
 #include "character_data.h"
 #include "collision.h"
@@ -40,7 +41,7 @@ namespace Create_Entities {
     }
   }
 
-  bool Polygon_Building(entt::registry &zone, int &state, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
+  bool Polygon_Building(entt::registry &zone, int &state, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(name);
 
@@ -75,13 +76,13 @@ namespace Create_Entities {
       sprite.type = sheetDataFlare.sheet_type;
       zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
 
-      Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
+      Collision::Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
       return true;
     }
     return false;
   }
 
-  entt::entity On_Mouse(entt::registry &zone, float x, float y, std::string &templateName, int xmlIndex) {
+  entt::entity Create_Render_Object(entt::registry &zone, float x, float y, std::string &templateName, int xmlIndex) {
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
     auto entity = zone.create();
 
@@ -104,50 +105,47 @@ namespace Create_Entities {
 
       Social_Control::Entity(zone, entity, data.race);
       zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
-
-      zone.emplace<Component::On_Mouse>(entity, entity, Component::Icon_Type::building);
-      Mouse::mouseItem = entity;
-      Mouse::itemCurrentlyHeld = true;
+      zone.emplace_or_replace<Component::Name>(entity, templateName);
+      zone.emplace<Collision_Component::Collider_Data>(entity, data.radius, position, data.collider_type);
     }
     return entity;
   }
 
-  entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
-    /// if it is a building
-    Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
-    auto entity = zone.create();
+  void Set_On_Mouse(entt::registry &zone, entt::entity &entity) {
+    zone.emplace<Component::On_Mouse>(entity, entity, Component::Icon_Type::building);
+    Mouse_Struct::mouseData.type = Component::Icon_Type::building;
+    Mouse::mouseItem = entity;
+    Mouse::itemCurrentlyHeld = true;
+  }
 
-    if (data.sprite_layout == "PVG") {
-      ///get texture data
-      Rendering::Sheet_Data sheetData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
-      if (!sheetData.packerframeData) return entity;
+  void Remove_From_Mouse(entt::registry &zone, entt::entity &entity) {
+    zone.remove<Component::On_Mouse>(entity);
+    Mouse::mouseItem = Mouse::cursor_ID;
+    Mouse_Struct::mouseData.type = Component::Icon_Type::none;
+    Mouse::itemCurrentlyHeld = false;
+  }
 
-      Rendering_Components::Sprite_Sheet_Data frame = sheetData.frame;
-      auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
+  bool Create_Object(entt::registry &zone, int state, entt::entity &entity) {
+    auto colliderData = zone.get<Collision_Component::Collider_Data>(entity);
+    zone.remove<Collision_Component::Collider_Data>(entity);
+    Collision::Attach_Components(zone, state, entity, colliderData.colliderType, colliderData.radius, colliderData.position, colliderData.aabb, colliderData.pointVecs, colliderData.line);
 
-      Rendering::Set_Offset(zone, entity, data.collider_type, position, data.x_offset, data.y_offset, frame);
-      Collision::Attach_Components(zone, state, entity, data.collider_type, data.radius, position, aabb, pointVecs, line);
+    zone.emplace_or_replace<Component::Radius>(entity, colliderData.radius);
+    zone.emplace_or_replace<Component::Alive>(entity, true);
+    zone.emplace_or_replace<Rendering_Components::Unit_Frame_Portrait>(entity);
+    zone.emplace_or_replace<Component::Health>(entity, 100, 100);
+    return true;
+  }
 
-      //Add shared components
-      SDL_Rect clipRect = sheetData.frame.clip;
-      auto &radius = zone.emplace_or_replace<Component::Radius>(entity, data.radius);
-      Emplace_Interaction_Rect_Building(zone, entity, data, x, y, radius.fRadius, clipRect);
-
-      if (!Cave::Set_As_Cave(zone, entity, templateName)) {
-        if (i != x && j != y) {
-          zone.emplace_or_replace<Component::Tile_Index>(entity, (int) i, (int) j);
-        }
+  entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+    entt::entity entity = Create_Entities::Create_Render_Object(zone, x, y, templateName, xmlIndex);
+    if (!Cave::Set_As_Cave(zone, entity, templateName)) {
+      ///used for object generation like blood so it isn't added to a tile index
+      if (i != x && j != y) {
+        zone.emplace_or_replace<Component::Tile_Index>(entity, (int) i, (int) j);
       }
-
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-      Social_Control::Entity(zone, entity, data.race);
-      zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
-      zone.emplace_or_replace<Component::Name>(entity, templateName);
-      zone.emplace_or_replace<Component::Alive>(entity, true);
-      zone.emplace_or_replace<Rendering_Components::Unit_Frame_Portrait>(entity);
-      zone.emplace_or_replace<Component::Health>(entity, 100, 100);
     }
+    Create_Entities::Create_Object(zone, state, entity);
     return entity;
   }
 
