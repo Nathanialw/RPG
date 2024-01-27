@@ -1,8 +1,8 @@
 #pragma once
 #include "entt/entt.hpp"
-#include "world.h"
-#include "tmxlite/Object.hpp"
 #include "timer.h"
+#include "tmxlite/Object.hpp"
+#include "world.h"
 
 namespace Collision_Component {
 
@@ -14,11 +14,11 @@ namespace Collision_Component {
     float x = 0;
     float y = 0;
   };
-}
+}// namespace Collision_Component
 
 namespace Collision {
-//  std::map<World::GameState, b2World*> world;
-  std::vector<b2World*> collisionList(World::numZones);
+  //  std::map<World::GameState, b2World*> world;
+  std::vector<b2World *> collisionList(World::numZones);
 
   const float timeStep = 1.0f / 5.0f;
   const float M2P = 60.0f;
@@ -31,11 +31,11 @@ namespace Collision {
     int hy = 0;
   };
 
-  
+
   void Set_Collision_NULL() {
-    for (int i = 0; i < (int)World::GameState::MODES; ++i) {
-//      auto world = Get_Collision_List(World::GameState(i));
-//      world = nullptr;
+    for (int i = 0; i < (int) World::GameState::MODES; ++i) {
+      //      auto world = Get_Collision_List(World::GameState(i));
+      //      world = nullptr;
     }
   }
 
@@ -56,9 +56,9 @@ namespace Collision {
         body = body->GetNext();
       }
       world = nullptr;
-//      delete world[state];
+      //      delete world[state];
     }
-}
+  }
 
   void Create_Static_Body_Rect(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, Collision::aabb aabb) {
 
@@ -136,7 +136,7 @@ namespace Collision {
 
     b2FixtureDef bodyFixture;
     bodyFixture.shape = &circle;
-    bodyFixture.density = 0.1f;     //mass
+    bodyFixture.density = 0.1f;//mass
     bodyFixture.friction = 0.1f;
 
     body.body->CreateFixture(&bodyFixture);
@@ -151,7 +151,7 @@ namespace Collision {
     bodyDef.linearDamping = 10.0f;
     bodyDef.angularDamping = 0.0f;
 
-    b2World* world = collisionList[state];
+    b2World *world = collisionList[state];
     b2Body *body = world->CreateBody(&bodyDef);
     auto &bodyComponent = zone.emplace_or_replace<Component::Body>(entity, body);
 
@@ -168,64 +168,133 @@ namespace Collision {
     //        Create_Kinematic_Body(zone, entity, bodyComponent, x, y,radius, mass, isDynamicBody);
   }
 
-//  void Dynamic_Collisions(entt::registry &zone, World::GameState &state) {
-//
-//    auto view = zone.view<Collision_Component::Dynamic_Collider, Component::Position, Component::Radius, Component::Mass>();
-//    for (auto entity: view) {
-//      auto &awake = view.get<Collision_Component::Dynamic_Collider>(entity);
-//      //            if (awake.awake == true) {
-//      auto &position = view.get<Component::Position>(entity);
-//      auto &radius = view.get<Component::Radius>(entity).fRadius;
-//      auto &mass = view.get<Component::Mass>(entity).fKilos;
-//
-//      auto positionRect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
-//      //get all entities colliding with the entity's rect
-//      std::vector<entt::entity> list = Quad_Tree::Get_Nearby_Entities(zone, positionRect, state);
-//
-//      //test each entity for a circle collision and apply a collision component to accumulate the resolution data
-//      for (auto collision_ID: list) {
-//        //so it doesn't colled with itself
-//        if (entity != collision_ID) {
-//          if (zone.any_of<Collision_Component::Dynamic_Collider>(collision_ID)) {
-//            auto &collision_Position = zone.get<Component::Position>(collision_ID);
-//            auto &collision_Radius = zone.get<Component::Radius>(collision_ID).fRadius;
-//            //check radius distance
-//            float fx = position.x - collision_Position.x;
-//            float fy = position.y - collision_Position.y;
-//            float fDistance = (fx * fx) + (fy * fy);
-//
-//            if (fDistance <= ((radius + collision_Radius) * (radius + collision_Radius)) * 0.9999f) { // the constant keeps it from check collisions overlapping by round errors
-//              fDistance = (float) sqrtf(fDistance);
-//              if (fDistance == 0.0f) { fDistance = 0.0001; }
-//              float fOverlap = fDistance - (radius + collision_Radius);
-//
-//              f2 resolver = {};
-//              resolver.x = fOverlap * (position.x - collision_Position.x) / fDistance;
-//              resolver.y = fOverlap * (position.y - collision_Position.y) / fDistance;
-//
-//              auto &collision_Mass = zone.get<Component::Mass>(collision_ID).fKilos;
-//              float fTotalmass = mass + collision_Mass;
-//              float fNomalizedMassA = (mass / fTotalmass);
-//              float fNomalizedMassB = (collision_Mass / fTotalmass);
-//
-//              float resolverX = (resolver.x * fNomalizedMassB);
-//              float resolverY = (resolver.y * fNomalizedMassB);
-//              auto &collision_ResolverA = zone.emplace_or_replace<Collision_Component::Dynamic_Collision>(entity);
-//              collision_ResolverA.x += resolverX;
-//              collision_ResolverA.y += resolverY;
-//
-//              float bresolverX = (resolver.x * fNomalizedMassA);
-//              float bresolverY = (resolver.y * fNomalizedMassA);
-//              auto &collision_ResolverB = zone.emplace_or_replace<Collision_Component::Dynamic_Collision>(collision_ID);
-//              collision_ResolverB.x -= bresolverX;
-//              collision_ResolverB.y -= bresolverY;
-//            }
-//          }
-//        }
-//        //                }
-//      }
-//    }
-//  }
+  void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
+    if (entity_class == "polygon") {
+      Collision::Create_Static_Body_Polygon(zone, state, entity, position.x, position.y, pointVecs);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+      zone.emplace_or_replace<Component::Line_Segment>(entity, line);
+    } else if (entity_class == "rect") {
+      Collision::Create_Static_Body_Rect(zone, state, entity, position.x, position.y, aabb);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+    } else if (entity_class == "round") {
+      Collision::Create_Static_Body(zone, state, entity, position.x, position.y, radius);
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+    } else {
+      //        no collision box
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+    }
+  }
+
+  void Attach_Collider(entt::registry &zone, int &state, entt::entity &entity, std::string &colliderType, float &xOffset, float &yOffset, float &radius, Component::Position &position, Rendering_Components::Sprite_Sheet_Data &frame, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+    auto &offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, 0.0f, 0.0f);
+    if (colliderType == "rect") {
+      offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h};
+      position.y -= (float) frame.clip.h / 2.0f;
+      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
+    } else if (colliderType == "polygon") {
+      offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h / 2.0f};
+      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
+      position.y -= (float) frame.clip.h / 2.0f;
+    } else if (colliderType == "round") {
+      offset = {xOffset, yOffset};
+      position.x -= frame.x_offset;
+      position.y -= frame.y_offset;
+      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
+    } else if (colliderType == "none") {
+      offset = {xOffset, yOffset};
+      position.x -= frame.x_offset;
+      position.y -= frame.y_offset;
+      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
+    } else {
+      Utilities::Log("PVG_Building() no collider_type found for templateName, also prints for blood spawning");
+      Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
+      //        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
+    }
+
+    //should place the tiled position on the point
+    if (colliderType == "background") {
+      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
+      position.x -= offset.x;
+      position.y -= offset.y;
+      offset.x = 0.0f;
+      offset.y = 0.0f;
+      zone.emplace_or_replace<Rendering_Components::Background>(entity);
+    } else if (colliderType == "foreground") {
+      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
+      position.x -= offset.x;
+      position.y -= offset.y;
+      offset.x = 0.0f;
+      offset.y = 0.0f;
+      zone.emplace_or_replace<Rendering_Components::Foreground>(entity);
+    }
+    // if object is a  background sprite DO NOT set Direction component
+    else {
+      zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
+    }
+  }
+
+  //  void Dynamic_Collisions(entt::registry &zone, World::GameState &state) {
+  //
+  //    auto view = zone.view<Collision_Component::Dynamic_Collider, Component::Position, Component::Radius, Component::Mass>();
+  //    for (auto entity: view) {
+  //      auto &awake = view.get<Collision_Component::Dynamic_Collider>(entity);
+  //      //            if (awake.awake == true) {
+  //      auto &position = view.get<Component::Position>(entity);
+  //      auto &radius = view.get<Component::Radius>(entity).fRadius;
+  //      auto &mass = view.get<Component::Mass>(entity).fKilos;
+  //
+  //      auto positionRect = Utilities::Get_FRect_From_Point_Radius(radius, position.x, position.y);
+  //      //get all entities colliding with the entity's rect
+  //      std::vector<entt::entity> list = Quad_Tree::Get_Nearby_Entities(zone, positionRect, state);
+  //
+  //      //test each entity for a circle collision and apply a collision component to accumulate the resolution data
+  //      for (auto collision_ID: list) {
+  //        //so it doesn't colled with itself
+  //        if (entity != collision_ID) {
+  //          if (zone.any_of<Collision_Component::Dynamic_Collider>(collision_ID)) {
+  //            auto &collision_Position = zone.get<Component::Position>(collision_ID);
+  //            auto &collision_Radius = zone.get<Component::Radius>(collision_ID).fRadius;
+  //            //check radius distance
+  //            float fx = position.x - collision_Position.x;
+  //            float fy = position.y - collision_Position.y;
+  //            float fDistance = (fx * fx) + (fy * fy);
+  //
+  //            if (fDistance <= ((radius + collision_Radius) * (radius + collision_Radius)) * 0.9999f) { // the constant keeps it from check collisions overlapping by round errors
+  //              fDistance = (float) sqrtf(fDistance);
+  //              if (fDistance == 0.0f) { fDistance = 0.0001; }
+  //              float fOverlap = fDistance - (radius + collision_Radius);
+  //
+  //              f2 resolver = {};
+  //              resolver.x = fOverlap * (position.x - collision_Position.x) / fDistance;
+  //              resolver.y = fOverlap * (position.y - collision_Position.y) / fDistance;
+  //
+  //              auto &collision_Mass = zone.get<Component::Mass>(collision_ID).fKilos;
+  //              float fTotalmass = mass + collision_Mass;
+  //              float fNomalizedMassA = (mass / fTotalmass);
+  //              float fNomalizedMassB = (collision_Mass / fTotalmass);
+  //
+  //              float resolverX = (resolver.x * fNomalizedMassB);
+  //              float resolverY = (resolver.y * fNomalizedMassB);
+  //              auto &collision_ResolverA = zone.emplace_or_replace<Collision_Component::Dynamic_Collision>(entity);
+  //              collision_ResolverA.x += resolverX;
+  //              collision_ResolverA.y += resolverY;
+  //
+  //              float bresolverX = (resolver.x * fNomalizedMassA);
+  //              float bresolverY = (resolver.y * fNomalizedMassA);
+  //              auto &collision_ResolverB = zone.emplace_or_replace<Collision_Component::Dynamic_Collision>(collision_ID);
+  //              collision_ResolverB.x -= bresolverX;
+  //              collision_ResolverB.y -= bresolverY;
+  //            }
+  //          }
+  //        }
+  //        //                }
+  //      }
+  //    }
+  //  }
 
   void Resolve_Dynamic_Collisions(entt::registry &zone) {
     int i = 0;
@@ -250,7 +319,7 @@ namespace Collision {
 
   void Update_Collision(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Position>();
-    b2World* world = collisionList[state];
+    b2World *world = collisionList[state];
     b2Body *body = world->GetBodyList();
     int i = 0;
     //needs to be run multiple times per frame at low frame rate otherwise it will fall behind the rest of the program
@@ -263,15 +332,14 @@ namespace Collision {
       while (body) {
         if (body->GetType() == b2_dynamicBody) {
           auto entity_ID = (entt::entity) body->GetUserData().entity_ID;
-          if (zone.any_of<Component::Position>(entity_ID)){
+          if (zone.any_of<Component::Position>(entity_ID)) {
             auto &position = view.get<Component::Position>(entity_ID);
 
             b2Vec2 newPosition = body->GetPosition();
             position.x = newPosition.x;
             position.y = newPosition.y;
-          }
-          else {
-//            std::cout << "collision: " << i << std::endl;
+          } else {
+            //            std::cout << "collision: " << i << std::endl;
           }
         }
         i++;
@@ -279,9 +347,9 @@ namespace Collision {
       }
       world->ClearForces();
       j++;
-//      if (j > 5) {break;}
+      //      if (j > 5) {break;}
     }
-//    Debug::settingsValue[Debug::CollisionChecks] = i;
+    //    Debug::settingsValue[Debug::CollisionChecks] = i;
   }
 
   void Collision_Routine(entt::registry &zone, int &state) {
@@ -289,4 +357,4 @@ namespace Collision {
     //        Resolve_Dynamic_Collisions(zone);
     Update_Collision(zone, state);
   };
-}
+}// namespace Collision

@@ -9,12 +9,14 @@ namespace Raise_Skeleton {
     SDL_FRect mouseRect = Utilities::Get_FRect_From_Point_Radius(Mouse::cursorRadius, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
     Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_Mouse_Collision(zone, mouseRect, state);
     if (targetData.b) {
-      auto &alive = zone.get<Component::Alive>(targetData.entity_ID);
-      if (!alive.bIsAlive) {
-        Component::Position targetPosition = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
-        Spells::Spell_Cast_Effect(zone, state, caster_ID, targetPosition, direction, casting.effect, targetX, targetY);
-        casting.target_ID = targetData.entity_ID;
-        return 1;
+      if (zone.get<Component::Entity_Type>(targetData.entity_ID) == Component::Entity_Type::unit) {
+        auto &alive = zone.get<Component::Alive>(targetData.entity_ID);
+        if (!alive.bIsAlive) {
+          Component::Position targetPosition = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
+          Spells::Spell_Cast_Effect(zone, state, caster_ID, targetPosition, direction, casting.effect, targetX, targetY);
+          casting.target_ID = targetData.entity_ID;
+          return 1;
+        }
       }
       return 0;
     }
@@ -51,4 +53,4 @@ namespace Raise_Skeleton {
     zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "Effects02", "");
     return 1;
   }
-}// namespace Summon_Demon
+}// namespace Raise_Skeleton

@@ -3,9 +3,11 @@
 #include "SQLite_spritesheets.h"
 #include "SQLite_unit_data.h"
 #include "action_components.h"
+#include "cave.h"
 #include "character_data.h"
 #include "collision.h"
 #include "components.h"
+#include "entity_data.h"
 #include "graphics.h"
 #include "load_zone.h"
 #include "procedural_generator.h"
@@ -16,34 +18,8 @@
 #include "texture_packer.h"
 #include "utilities.h"
 #include <stddef.h>
-#include "entity_data.h"
 
 namespace Create_Entities {
-
-  void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
-    if (entity_class == "polygon") {
-      Collision::Create_Static_Body_Polygon(zone, state, entity, position.x, position.y, pointVecs);
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace_or_replace<Component::Line_Segment>(entity, line);
-      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
-    } else if (entity_class == "rect") {
-      Collision::Create_Static_Body_Rect(zone, state, entity, position.x, position.y, aabb);
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
-    } else if (entity_class == "round") {
-      Collision::Create_Static_Body(zone, state, entity, position.x, position.y, radius);
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
-    } else {
-      //        no collision box
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
-    }
-  }
 
   void Emplace_Interaction_Rect(entt::registry &zone, entt::entity &entity, Entity_Loader::Data &data, float &x, float &y) {
     if (data.whole_sprite == 1) {//if the interaction rect is the whole sprite
@@ -60,7 +36,6 @@ namespace Create_Entities {
 
     } else {//if the interaction rect is a rect around it's position
       zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius), (y - radius), (radius * 2.0f), radius * 2.0f, true);
-
     }
   }
 
@@ -105,6 +80,7 @@ namespace Create_Entities {
     return false;
   }
 
+
   entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
     /// if it is a building
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
@@ -132,67 +108,22 @@ namespace Create_Entities {
       Rendering_Components::Sprite_Sheet_Data frame = sprite.sheetData->at(tilesetName).frameList.at(xmlIndex);
       auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
 
-      auto &offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, 0.0f, 0.0f);
-      if (data.collider_type == "rect") {
-        offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h};
-        position.y -= (float) frame.clip.h / 2.0f;
-        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
-      } else if (data.collider_type == "polygon") {
-        offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h / 2.0f};
-        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
-        position.y -= (float) frame.clip.h / 2.0f;
-      } else if (data.collider_type == "round") {
-        offset = {data.x_offset, data.y_offset};
-        position.x -= frame.x_offset;
-        position.y -= frame.y_offset;
-        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
-      } else if (data.collider_type == "none") {
-        offset = {data.x_offset, data.y_offset};
-        position.x -= frame.x_offset;
-        position.y -= frame.y_offset;
-        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
-      } else {
-        Utilities::Log("PVG_Building() no collider_type found for templateName, also prints for blood spawning");
-        Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
-        //        std::cout << templateName << " PVG_Buliding() trying to add collider, not found in db" << std::endl;
-      }
+      //attach collider
+      Collision::Attach_Collider(zone, state, entity, data.collider_type, data.x_offset, data.y_offset, data.radius, position, frame, aabb, pointVecs, line);
+      zone.emplace_or_replace<Social_Component::Race>(entity, Social_Component::Race::neutral);
 
       //Add shared components
       SDL_Rect clipRect = sprite.sheetData->at(tilesetName).frameList[xmlIndex].clip;
       auto &radius = zone.emplace_or_replace<Component::Radius>(entity, data.radius);
       Emplace_Interaction_Rect_Building(zone, entity, data, x, y, radius.fRadius, clipRect);
 
-      if (templateName == "Rock_3_1" ||
-          templateName == "Rock_3_2" ||
-          templateName == "Rock_3_3" ||
-          templateName == "Rock_3_4" ||
-          templateName == "Rock_3_5" ||
-          templateName == "Rock_3_6" ||
-          templateName == "Rock_3_7" ||
-          templateName == "Rock_3_8" ||
-          templateName == "Rock_2_1" ||
-          templateName == "Rock_2_2" ||
-          templateName == "Rock_2_3" ||
-          templateName == "Rock_2_4" ||
-          templateName == "Rock_2_5" ||
-          templateName == "Rock_2_6" ||
-          templateName == "Rock_2_7" ||
-          templateName == "Rock_2_8") {
-
-        World::increment_Zone();
-        auto &dungeon = zone.emplace_or_replace<Component::Dungeon>(entity);
-        dungeon.instance = World::Zone_Count;
-        dungeon.tilesetName = "hell";
-        zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::portal);
-      }
-      else {
+      if (!Cave::Set_As_Cave(zone, entity, templateName)) {
         if (i != x && j != y) {
-          //        std::cout << i << " " << j << std::endl;
           zone.emplace_or_replace<Component::Tile_Index>(entity, (int) i, (int) j);
         }
       }
 
-      auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
+      auto raceData = Social_Control::Get_Race_Relationsips(data.race);
       auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
       for (int q = 0; q < raceData.size(); q++) {
         relationships.races[q] = raceData[q + 1];
@@ -204,30 +135,7 @@ namespace Create_Entities {
       zone.emplace_or_replace<Rendering_Components::Unit_Frame_Portrait>(entity);
       zone.emplace_or_replace<Component::Health>(entity, 100, 100);
 
-
-
       //std::cout << templateName << "Xo: " << frame.x_offset << " Cw: " << frame.clip.w << " IXo: " << imageOffset.x << " Yo: " << frame.y_offset << " Ch: " << frame.clip.h << " IYo: " << imageOffset.y << std::endl;
-
-      //should place the tiled position on the point
-      if (data.collider_type == "background") {
-        offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
-        position.x -= offset.x;
-        position.y -= offset.y;
-        offset.x = 0.0f;
-        offset.y = 0.0f;
-        zone.emplace_or_replace<Rendering_Components::Background>(entity);
-      } else if (data.collider_type == "foreground") {
-        offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
-        position.x -= offset.x;
-        position.y -= offset.y;
-        offset.x = 0.0f;
-        offset.y = 0.0f;
-        zone.emplace_or_replace<Rendering_Components::Foreground>(entity);
-      }
-      // if object is a  background sprite DO NOT set Direction component
-      else {
-        zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
-      }
       return entity;
     }
     return entity;
@@ -347,7 +255,7 @@ namespace Create_Entities {
         zone.emplace_or_replace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max, 25);
         zone.emplace_or_replace<Component::Attack_Speed>(entity, data.attack_speed, 0.0f);
       }
-//    needs to be copied for zone changes
+      //    needs to be copied for zone changes
       zone.emplace_or_replace<Rendering_Components::Buff_Sprites>(entity);
 
       zone.emplace_or_replace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
@@ -357,34 +265,7 @@ namespace Create_Entities {
 
       if (!player) {
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
-        if (summon.summon) {
-          if (summon.blendType == Social_Component::ghost) {
-            sprite.blendType = Rendering_Components::ghost;
-            auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
-            zone.emplace_or_replace<Social_Component::Race>(entity, summon.race);
-            relationships.races = summon.relationships.races;
-          } else if (summon.blendType == Social_Component::reanimated) {
-            sprite.blendType = Rendering_Components::reanimated;
-            auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
-            zone.emplace_or_replace<Social_Component::Race>(entity, summon.race);
-            relationships.races = summon.relationships.races;
-          }
-          else {
-            sprite.blendType = Rendering_Components::normal;
-            auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
-            zone.emplace_or_replace<Social_Component::Race>(entity, summon.race);
-            relationships.races = summon.relationships.races;
-          }
-        }
-        else {
-          zone.emplace_or_replace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
-          auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
-          auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
-          for (int i = 0; i < raceData.size(); i++) {
-            relationships.races[i] = raceData[i + 1];
-          }
-        }
-
+        if (!Social_Control::Summon(zone, entity, summon, sprite.blendType)) Social_Control::Entity(zone, entity, data.race);
 
         Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
         if (equip_type != Item_Component::Unit_Equip_Type::none) {
@@ -398,7 +279,7 @@ namespace Create_Entities {
         startup = false;
         UI::Bag_UI::Create_Bag_UI(zone, entity, state);
         zone.emplace_or_replace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
-        auto raceData = Entity_Loader::Get_Race_Relationsips(data.race);
+        auto raceData = Social_Control::Get_Race_Relationsips(data.race);
         auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);
         for (int i = 0; i < raceData.size(); i++) {
           relationships.races[i] = raceData[i + 1];

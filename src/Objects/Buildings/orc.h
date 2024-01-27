@@ -6,23 +6,42 @@ namespace Orc {
 
   std::string buildingType = "buildings_orc";
 
+  void Building_On_Mouse(entt::registry &zone, int &state) {
+    //create the basic object on the mouse
+    std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
+    Collision::aabb aabb;
+    Component::Line_Segment line = {};
+
+    //    int xmlIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["buildings_orc"].size() - 1);
+    std::string name = "Orc Tent 3 T2";
+    int xmlIndex;
+    if (Game_Objects_Lists::indexes[buildingType].contains(name)) {
+      xmlIndex = Game_Objects_Lists::indexes[buildingType][name];
+    } else {
+      Utilities::Log(name + " not found");
+      return;
+    }
+    Create_Entities::PVG_Building(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex, aabb, pointVecs, line);
+
+    //set mouse obect to building
+
+    //when placed add collision box and interaction rect
+  }
+
   void House(entt::registry &zone, int &state) {
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
     Collision::aabb aabb;
     Component::Line_Segment line = {};
 
-//    int xmlIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["buildings_orc"].size() - 1);
+    //    int xmlIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["buildings_orc"].size() - 1);
     std::string name = "Orc Tent 3 T2";
     int xmlIndex;
     if (Game_Objects_Lists::indexes[buildingType].contains(name)) {
       xmlIndex = Game_Objects_Lists::indexes[buildingType][name];
-    }
-    else {
+    } else {
       Utilities::Log(name + " not found");
       return;
     }
-
-
     Create_Entities::PVG_Building(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex, aabb, pointVecs, line);
   }
 
@@ -36,4 +55,5 @@ namespace Orc {
     Create_Entities::PVG_Building(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, Game_Objects_Lists::tilesets[buildingType].at(xmlIndex), xmlIndex, aabb, pointVecs, line);
   }
 
-}// namespace Building
+
+}// namespace Orc

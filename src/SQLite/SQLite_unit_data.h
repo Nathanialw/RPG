@@ -1,12 +1,12 @@
 #pragma once
 
-#include <iostream>
-#include <SDL2/SDL.h>
 #include "db.h"
+#include "stdio.h"
+#include <SDL2/SDL.h>
+#include <iostream>
 #include <string.h>
 #include <string>
 #include <vector>
-#include "stdio.h"
 
 namespace Entity_Loader {
   struct Data {
@@ -56,9 +56,9 @@ namespace Entity_Loader {
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
     while (sqlite3_step(stmt) != SQLITE_DONE) {
-      values.radius = (float) sqlite3_column_double(stmt, 0); //0 only increments up when calling more than one column
+      values.radius = (float) sqlite3_column_double(stmt, 0);//0 only increments up when calling more than one column
       values.speed = (float) sqlite3_column_double(stmt, 1); //0 only increments up when calling more than one column
-      values.mass = (float) sqlite3_column_double(stmt, 2); //0 only increments up when calling more than one column
+      values.mass = (float) sqlite3_column_double(stmt, 2);  //0 only increments up when calling more than one column
       values.health = sqlite3_column_int(stmt, 3);
       values.damage_min = sqlite3_column_int(stmt, 4);
       values.damage_max = sqlite3_column_int(stmt, 5);
@@ -73,13 +73,13 @@ namespace Entity_Loader {
       values.y_offset = sqlite3_column_double(stmt, 14);
       auto name = sqlite3_column_text(stmt, 15);
       const char *s = (const char *) name;
-      values.equip_type = std::string(reinterpret_cast< const char *> (s));
+      values.equip_type = std::string(reinterpret_cast<const char *>(s));
       auto race = sqlite3_column_text(stmt, 16);
       const char *g = (const char *) race;
-      values.race = std::string(reinterpret_cast< const char *> (g));
+      values.race = std::string(reinterpret_cast<const char *>(g));
       auto temp_type_name = sqlite3_column_text(stmt, 17);
       const char *h = (const char *) temp_type_name;
-      values.temp_type_name = std::string(reinterpret_cast< const char *> (h));
+      values.temp_type_name = std::string(reinterpret_cast<const char *>(h));
       values.whole_sprite = sqlite3_column_double(stmt, 18);
 
       //std::cout << "data: " << name << std::endl;
@@ -157,61 +157,6 @@ namespace Entity_Loader {
     return {"", "", "", ""};
   }
 
-  std::vector<int> Get_Race_Relationsips(std::string race) {// needs to search for  a specific row that I can input in the arguments
-    std::vector<int> raceData;
-    //check if the name exists??
-    std::string raceInput = db::Append_Quotes(race);
-
-    sqlite3_stmt *stmt;
-    char buf[300];
-    const char *jj = "SELECT race_enum, rogue, human, fleshbeast, goblin, beast, demon, elf, zombie, skeleton, orc, dwarf, monster, eldritch, drow, nature, animal, neutral FROM race_relationships WHERE race = ";
-    strcpy(buf, jj);
-    strcat(buf, raceInput.c_str());
-    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
-    while (sqlite3_step(stmt) != SQLITE_DONE) {
-      int raceID = sqlite3_column_int(stmt, 0);
-      raceData.emplace_back(raceID);
-      int rogue = sqlite3_column_int(stmt, 1);
-      raceData.emplace_back(rogue);
-      int human = sqlite3_column_int(stmt, 2);
-      raceData.emplace_back(human);
-      int fleshbeast = sqlite3_column_int(stmt, 3);
-      raceData.emplace_back(fleshbeast);
-      int goblin = sqlite3_column_int(stmt, 4);
-      raceData.emplace_back(goblin);
-      int beast = sqlite3_column_int(stmt, 5);
-      raceData.emplace_back(beast);
-      int demon = sqlite3_column_int(stmt, 6);
-      raceData.emplace_back(demon);
-      int elf = sqlite3_column_int(stmt, 7);
-      raceData.emplace_back(elf);
-      int zombie = sqlite3_column_int(stmt, 8);
-      raceData.emplace_back(zombie);
-      int skeleton = sqlite3_column_int(stmt, 9);
-      raceData.emplace_back(skeleton);
-      int orc = sqlite3_column_int(stmt, 10);
-      raceData.emplace_back(orc);
-      int dwarf = sqlite3_column_int(stmt, 11);
-      raceData.emplace_back(dwarf);
-      int monster = sqlite3_column_int(stmt, 12);
-      raceData.emplace_back(monster);
-      int eldtritch = sqlite3_column_int(stmt, 13);
-      raceData.emplace_back(eldtritch);
-      int drow = sqlite3_column_int(stmt, 14);
-      raceData.emplace_back(drow);
-      int nature = sqlite3_column_int(stmt, 15);
-      raceData.emplace_back(nature);
-      int animal = sqlite3_column_int(stmt, 16);
-      raceData.emplace_back(animal);
-      int neutral = sqlite3_column_int(stmt, 17);
-      raceData.emplace_back(neutral);
-    }
-
-    raceData.shrink_to_fit();
-
-    return raceData;
-  }
-
   std::vector<std::string> Get_Tileset_Objects(std::string race, std::string type) {
     std::string race_name = db::Append_Quotes(race);
     std::string type_name = db::Append_Quotes(type);
@@ -230,7 +175,7 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
     }
     db_name.shrink_to_fit();
@@ -261,11 +206,11 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
     }
     db_name.shrink_to_fit();
-//    sort
+    //    sort
     std::sort(db_name.begin(), db_name.end(), [](const std::string &lhs, const std::string &rhs) {
       return lhs < rhs;
     });
@@ -276,7 +221,7 @@ namespace Entity_Loader {
     std::string race_name = db::Append_Quotes(race);
     std::string type_name = db::Append_Quotes(type);
     std::string class_name = db::Append_Quotes(subtype);
-//    std::string subtype_name = db::Append_Quotes(collider_type);
+    //    std::string subtype_name = db::Append_Quotes(collider_type);
     std::string text = race_name + " AND type = " + type_name + " AND subtype = " + class_name;
     std::vector<std::string> db_name;
 
@@ -292,7 +237,7 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
     }
     db_name.shrink_to_fit();
@@ -317,9 +262,8 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
-
     }
     db_name.shrink_to_fit();
     return db_name;
@@ -339,7 +283,7 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      tilesetPath = std::string(reinterpret_cast< const char *> (s));
+      tilesetPath = std::string(reinterpret_cast<const char *>(s));
     }
     return tilesetPath;
   }
@@ -386,9 +330,8 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
-
     }
     db_name.shrink_to_fit();
     return db_name;
@@ -408,9 +351,8 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
-
     }
     db_name.shrink_to_fit();
     return db_name;
@@ -427,7 +369,7 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
     }
     db_name.shrink_to_fit();
@@ -448,7 +390,7 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
     }
     db_name.shrink_to_fit();
@@ -469,9 +411,8 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
-
     }
     db_name.shrink_to_fit();
     return db_name;
@@ -491,9 +432,8 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
-
     }
     db_name.shrink_to_fit();
     return db_name;
@@ -510,7 +450,7 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
     }
     db_name.shrink_to_fit();
@@ -536,9 +476,8 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       name = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) name;
-      std::string retname = std::string(reinterpret_cast< const char *> (s));
+      std::string retname = std::string(reinterpret_cast<const char *>(s));
       db_name.push_back(retname);
-
     }
     //get random index for name
     int i = rand() % (db_name.size()) + 1;
@@ -562,7 +501,7 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       sheet = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) sheet;
-      unit_name = std::string(reinterpret_cast< const char *> (s));
+      unit_name = std::string(reinterpret_cast<const char *>(s));
     }
 
     return unit_name;
@@ -582,7 +521,7 @@ namespace Entity_Loader {
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       sheet = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) sheet;
-      sprite_layout = std::string(reinterpret_cast< const char *> (s));
+      sprite_layout = std::string(reinterpret_cast<const char *>(s));
     }
     return sprite_layout;
   }
@@ -603,7 +542,7 @@ namespace Entity_Loader {
     const char *s;
     s = (const char *) text;
     if (s != NULL) {
-      return std::string(reinterpret_cast< const char *> (s));
+      return std::string(reinterpret_cast<const char *>(s));
     }
     return "";
   }
@@ -644,4 +583,4 @@ namespace Entity_Loader {
     }
     return data;
   }
-}
+}// namespace Entity_Loader

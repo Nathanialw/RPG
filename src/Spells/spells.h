@@ -70,7 +70,7 @@ namespace Spells {
       sprite.type = sheetType;
 
       return {packerframeData, name, {255, 255, 255}, 0, entity, 0.0f};
-//      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, (sprite.sheetData->at(name).frameW / 2.0f), (sprite.sheetData->at(name).frameH / 1.25f));
+      //      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, (sprite.sheetData->at(name).frameW / 2.0f), (sprite.sheetData->at(name).frameH / 1.25f));
     }
     //for packer sprites
     else {
@@ -240,6 +240,10 @@ namespace Spells {
     for (auto entity: view) {
       auto &action = view.get<Action_Component::Action>(entity);
       auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
+      if (!sheetData.sheetData) {
+        Utilities::Log("Destroy_Particle_Spells() no sheetData for particle: " + sheetData.sheet_name);
+        return;
+      }
       if (sheetData.frameIndex >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames) {
         zone.destroy(entity);
       }
@@ -310,8 +314,6 @@ namespace Spells {
       }
     }
   }
-
-
 
 
 }// namespace Spells
