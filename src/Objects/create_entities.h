@@ -155,43 +155,24 @@ namespace Create_Entities {
     Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
   }
 
-  Procedural_Components::Seed seed;
+  Graphics::Texture Get_Texture(db::Unit_Data &imgPaths) {
+    int unit_ID = 0;
+    unit_ID = Entity_Data::Check_For_Template_ID(imgPaths.name);
+    return {Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str()), NULL, NULL};
+  }
+
   bool startup = true;
 
-  void Create_Entity(entt::registry &zone, int &state, float x, float y, std::string entity_class, bool is_random, db::Unit_Data &imgPaths, bool player, Social_Component::Summon summon, Component::Unit_Index &unitIndex) {
+  void Create_Entity(entt::registry &zone, int &state, float x, float y, db::Unit_Data &imgPaths, bool player, Social_Component::Summon summon, Component::Unit_Index &unitIndex) {
     auto entity = zone.create();
     Entity_Loader::Data data;
-    int unit_ID = 0;
 
-    Graphics::Texture texture;
-    //std::cout << "loading Unit: " << templateName << std::endl;
-
-    //get the entity_class from the template in the tiled map
-    //get the is_random from the template in the tiled map
-    //if it is random, grab a random entry of the same class from the DB table, including the key name
-    //
-    //scaling only applies to trees
     imgPaths.imgPath = "assets/" + imgPaths.imgPath;
     imgPaths.portraitPath = "assets/" + imgPaths.portraitPath;
     imgPaths.bodyPath = "assets/" + imgPaths.bodyPath;
 
-    if (is_random == 1) {
-      imgPaths.name = Entity_Loader::Get_All_Of_Class(entity_class);
-      //check if the random name has a tamplate ID, if it doesn't revert to default name
-      unit_ID = Entity_Data::Get_Existing_Template_ID(imgPaths.name, entity_class);
-      texture.texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
-      data = Entity_Loader::parse_data(imgPaths.name);//
-      ////randomEntity must be converted into a std::string//
-      //auto& scale = zone.get<Component::Scale>(entity);
-      //auto& radius = zone.get<Component::Radius>(entity);//
-      ////random number between 0.25 and 2
-      //int rand_scale = 0.5;
-      //scale.scale = rand_scale;
-    } else {
-      unit_ID = Entity_Data::Check_For_Template_ID(imgPaths.name);
-      texture.texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
-      data = Entity_Loader::parse_data(imgPaths.name);
-    }
+    Graphics::Texture texture = Get_Texture(imgPaths);
+    data = Entity_Loader::parse_data(imgPaths.name);
 
     SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
     std::string sheetname = Entity_Loader::Get_Sprite_Sheet(imgPaths.name);
@@ -215,14 +196,7 @@ namespace Create_Entities {
     //Add shared components
     auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
     auto &scale = zone.emplace_or_replace<Component::Scale>(entity, data.scale);
-    //            randomly scale trees
-    if (is_random == 1) {
-      seed.seed = Procedural_Generation::Create_Initial_Seed(position.x, position.y);
-      float type = Procedural_Generation::Random_Int(0.5f, 1.5f, seed);
-      scale.scale = type;
-      data.scale = type;
-    }
-    //
+
     auto &radius = zone.emplace_or_replace<Component::Radius>(entity, (data.radius * data.scale));
     Emplace_Interaction_Rect(zone, entity, data, x, y);
 

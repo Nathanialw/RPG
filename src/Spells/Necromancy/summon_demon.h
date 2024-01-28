@@ -21,7 +21,7 @@ namespace Summon_Demon {
     summon.blendType = Social_Component::normal;
     summon.race = zone.get<Social_Component::Race>(caster_ID);
     Component::Position targetPosition = {casting.x, casting.y};
-    Create_Entities::Create_Entity(zone, state, casting.x, casting.y, "unit", false, data, false, summon, unitIndex);
+    Create_Entities::Create_Entity(zone, state, casting.x, casting.y, data, false, summon, unitIndex);
     return 1;
   }
 

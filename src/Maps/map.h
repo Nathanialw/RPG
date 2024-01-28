@@ -209,7 +209,7 @@ namespace Maps {
           db::Unit_Data data = Game_Objects_Lists::units[unitType][n];
           Social_Component::Summon summon;
           Component::Unit_Index unitIndex = {unitType, n};
-          Create_Entities::Create_Entity(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, "", false, data, false, summon, unitIndex);
+          Create_Entities::Create_Entity(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, data, false, summon, unitIndex);
           numUnits++;
         }
       }
@@ -228,7 +228,6 @@ namespace Maps {
     float y = 0.0f;
     int xmlIndex = 0;
     std::string objectName = "";
-
 
     for (int i = 0; i < REGION_SIZE; ++i) {
       for (int j = 0; j < REGION_SIZE; ++j) {

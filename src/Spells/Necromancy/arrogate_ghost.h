@@ -32,7 +32,7 @@ namespace Arrogate_Ghost {
     summon.blendType = Social_Component::ghost;
     summon.race = zone.get<Social_Component::Race>(caster_ID);
     Component::Position targetPosition = {casting.x, casting.y};
-    Create_Entities::Create_Entity(zone, state, casting.x, casting.y, "unit", false, data, false, summon, unitIndex);
+    Create_Entities::Create_Entity(zone, state, casting.x, casting.y, data, false, summon, unitIndex);
 
     //needs to leave the corpse non-interactable but still render
     auto &rect = zone.get<Component::Interaction_Rect>(casting.target_ID);
