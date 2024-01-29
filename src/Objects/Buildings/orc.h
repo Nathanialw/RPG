@@ -29,16 +29,18 @@ namespace Orc {
   }
 
   void House(entt::registry &zone, int &state) {
-    std::string name = "Orc Tent 3 T2";
-    int xmlIndex;
-    if (Game_Objects_Lists::indexes[buildingType].contains(name)) {
-      xmlIndex = Game_Objects_Lists::indexes[buildingType][name];
-    } else {
-      Utilities::Log(name + " not found");
-      return;
+    if (Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
+      std::string name = "Orc Tent 3 T2";
+      int xmlIndex;
+      if (Game_Objects_Lists::indexes[buildingType].contains(name)) {
+        xmlIndex = Game_Objects_Lists::indexes[buildingType][name];
+      } else {
+        Utilities::Log(name + " not found");
+        return;
+      }
+      entt::entity entity = Create_Entities::Create_Render_Object(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
+      Create_Entities::Set_On_Mouse(zone, entity);
     }
-    entt::entity entity = Create_Entities::Create_Render_Object(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
-    Create_Entities::Set_On_Mouse(zone, entity);
   }
 
   void Tent_1(entt::registry &zone, int &state) {

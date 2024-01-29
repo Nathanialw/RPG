@@ -1,12 +1,37 @@
 #pragma once
 
+#include "building.h"
 #include "graphics.h"
 #include "menu.h"
+#include "unit_frames.h"
 #include <string>
 #include <vector>
-#include "unit_frames.h"
+
 
 namespace UI_Frames {
+
+  class Grid {
+  private:
+    int x = 0;
+    int y = 0;
+
+  public:
+    void Update(int w) {
+      x++;
+      if ((x > 0) && x % w == 0) {
+        y++;
+        x = 0;
+      }
+    }
+
+    int Get_X() {
+      return x;
+    };
+
+    int Get_Y() {
+      return y;
+    };
+  };
 
   enum Menu_Tab {
     build,
@@ -16,23 +41,20 @@ namespace UI_Frames {
     SIZE
   };
 
-  struct Building {
-    SDL_Texture *icon;
-  };
-  std::array<Building, 13> buildings;
-
-  void Load_Buildings() {
-    for (auto &building: buildings) {
-//      load icons of buildings from db
-
-//      place the texture in the array
-      building.icon = Graphics::default_icon;
-    }
+  int Build(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+    Build::Orc::House(zone, index);
+    return 0;
   }
+
+  struct Building {
+    SDL_Texture *icon = Graphics::default_icon;
+    Spells::castSpell build = Build;
+  };
 
   struct Menu_Button {
     UI::Text_Frame button;
     std::vector<UI::Text_Frame> buildButton;
+    std::array<Building, 13> buildings;
   };
 
   struct Menu_Frame {
@@ -45,6 +67,14 @@ namespace UI_Frames {
 
   std::vector<std::string> tabs = {"Build", "Train", "Army", "Serfs"};
   Menu_Frame topFrame;
+
+  void Load_Buildings() {
+    for (auto &tab: topFrame.buttons) {
+      for (auto &building: tab.buildings) {
+        building = {Graphics::default_icon, Build};
+      }
+    }
+  }
 
   void Update_Frame_Data(f2 &scale, std::string &text, UI::Text_Frame &frame) {
     if (frame.textTexture == NULL) {
@@ -86,17 +116,11 @@ namespace UI_Frames {
 
   void Show_Submenu(Menu_Frame &menu) {
     SDL_RenderCopyF(Graphics::renderer, menu.buttons[0].button.backgroundTexture, NULL, &menu.submenu.frame);
-    int x = 0;
-    int y = 0;
-    for (auto building: buildings) {
-      SDL_FRect rect = {menu.submenu.frame.x + ((float) x * menu.background.frame.h * 2.0f), menu.submenu.frame.y + ((float) y * menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f)};
+    Grid grid;
+    for (auto building: menu.buttons[menu.currentTab].buildings) {
+      SDL_FRect rect = {menu.submenu.frame.x + ((float) grid.Get_X() * menu.background.frame.h * 2.0f), menu.submenu.frame.y + ((float) grid.Get_Y() * menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f)};
       SDL_RenderCopyF(Graphics::renderer, building.icon, NULL, &rect);
-
-      x++;
-      if ((x > 0) && x % 4 == 0) {
-        y++;
-        x = 0;
-      }
+      grid.Update(4);
     }
   }
 
@@ -133,4 +157,4 @@ namespace UI_Frames {
       }
     }
   }
-}
+}// namespace UI_Frames

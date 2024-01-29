@@ -6,13 +6,12 @@
 #include "cave.h"
 #include "components.h"
 #include "hotbar_structs.h"
+#include "info.h"
 #include "map"
 #include "sinister_strike.h"
+#include "string"
 #include "ui.h"
 #include "ui_actionbar.h"
-#include "string"
-#include "info.h"
-#include "building.h"
 /*
  * make an array of functions for everything that can go onto the hotbar, ie skills
  *
@@ -127,11 +126,6 @@ namespace Hotbar {
     return 0;
   }
 
-  int Build(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
-    Build::Orc::House(zone, index);
-    return 0;
-  }
-
   int Surface(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
     Cave::Surface(index);
     return 0;
@@ -173,7 +167,6 @@ namespace Hotbar {
         {SDLK_LALT, Show_Items},
         {SDLK_RALT, Show_Items},
         {SDLK_SPACE, Jump},
-        {SDLK_F1, Build},
         {SDLK_PERIOD, Next_Page},
         {SDLK_COMMA, Previous_Page}};
   }

@@ -115,7 +115,7 @@ namespace Event_Handler {
   void Mouse_Input(entt::registry &zone, int &state, entt::entity &player_ID, Component::Position &playerPosition, Component::Camera &camera) {
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
-        if (Game_Menu_Control::Check_Menu_Button()) {
+        if (Game_Menu_Control::Check_Menu_Button(zone)) {
           return;
         }
         //        loot
@@ -198,8 +198,7 @@ namespace Event_Handler {
               // if not selection units
             }
           }
-        }
-        else {
+        } else {
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
             //set building
             if (Create_Entities::Create_Object(zone, state, Mouse::mouseItem)) {
