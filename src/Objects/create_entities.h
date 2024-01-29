@@ -155,24 +155,18 @@ namespace Create_Entities {
     Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
   }
 
-  Graphics::Texture Get_Texture(db::Unit_Data &imgPaths) {
+  Rendering_Components::Blend_Type Set_Texture_Components(entt::registry &zone, entt::entity &entity, db::Unit_Data &imgPaths) {
     int unit_ID = 0;
     unit_ID = Entity_Data::Check_For_Template_ID(imgPaths.name);
-    return {Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str()), NULL, NULL};
-  }
-
-  bool startup = true;
-
-  void Create_Entity(entt::registry &zone, int &state, float x, float y, db::Unit_Data &imgPaths, bool player, Social_Component::Summon summon, Component::Unit_Index &unitIndex) {
-    auto entity = zone.create();
-    Entity_Loader::Data data;
+    Graphics::Texture texture = {};
 
     imgPaths.imgPath = "assets/" + imgPaths.imgPath;
     imgPaths.portraitPath = "assets/" + imgPaths.portraitPath;
     imgPaths.bodyPath = "assets/" + imgPaths.bodyPath;
+    texture.texture = Graphics::Create_Game_Object(unit_ID, imgPaths.imgPath.c_str());
+    texture.portrait = zone.emplace_or_replace<Rendering_Components::Portrait>(entity, Graphics::Load_Portrait(unit_ID, imgPaths.portraitPath.c_str())).texture;
+    texture.body = zone.emplace_or_replace<Rendering_Components::Body>(entity, Graphics::Load_Body(unit_ID, imgPaths.bodyPath.c_str())).texture;
 
-    Graphics::Texture texture = Get_Texture(imgPaths);
-    data = Entity_Loader::parse_data(imgPaths.name);
 
     SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
     std::string sheetname = Entity_Loader::Get_Sprite_Sheet(imgPaths.name);
@@ -188,26 +182,9 @@ namespace Create_Entities {
       SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
       flareSheetData = Populate_Flare_SpriteSheet(imgPaths.name, sheetDataFlare, texture.texture);
     }
-
     if (texture.texture == NULL) {
       std::cout << "texture is NULL for: " << imgPaths.name << std::endl;
     }
-
-    //Add shared components
-    auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
-    auto &scale = zone.emplace_or_replace<Component::Scale>(entity, data.scale);
-
-    auto &radius = zone.emplace_or_replace<Component::Radius>(entity, (data.radius * data.scale));
-    Emplace_Interaction_Rect(zone, entity, data, x, y);
-
-    zone.emplace_or_replace<Component::Unit_Index>(entity, unitIndex);
-    zone.emplace_or_replace<Component::Mass>(entity, data.mass * data.scale);
-    zone.emplace_or_replace<Component::Alive>(entity, true);
-    zone.emplace_or_replace<Component::Unit>(entity);
-    zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
-
-    texture.portrait = zone.emplace_or_replace<Rendering_Components::Portrait>(entity, Graphics::Load_Portrait(unit_ID, imgPaths.portraitPath.c_str())).texture;
-    texture.body = zone.emplace_or_replace<Rendering_Components::Body>(entity, Graphics::Load_Body(unit_ID, imgPaths.bodyPath.c_str())).texture;
 
     zone.emplace_or_replace<Rendering_Components::Unit_Frame_Portrait>(entity, texture.portrait);
     zone.emplace_or_replace<Rendering_Components::Body_Frame>(entity, texture.body);
@@ -224,30 +201,55 @@ namespace Create_Entities {
       sprite.sheet_name = imgPaths.name;
       sprite.type = sheetDataFlare.sheet_type;
     }
+    return sprite.blendType;
+  }
+
+  Component::Position Add_Shared_Components(entt::registry &zone, entt::entity &entity, float x, float y, Entity_Loader::Data &data, Component::Unit_Index &unitIndex) {
+    //Add shared components
+    auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
+    Emplace_Interaction_Rect(zone, entity, data, x, y);
+    zone.emplace_or_replace<Component::Scale>(entity, data.scale);
+    zone.emplace_or_replace<Component::Radius>(entity, (data.radius * data.scale));
+    zone.emplace_or_replace<Component::Unit_Index>(entity, unitIndex);
+    zone.emplace_or_replace<Component::Mass>(entity, data.mass * data.scale);
+    zone.emplace_or_replace<Component::Alive>(entity, true);
+    zone.emplace_or_replace<Component::Unit>(entity);
+    zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, data.x_offset * data.scale, data.y_offset * data.scale);
+    return position;
+  }
+
+  void Add_Melee(entt::registry &zone, entt::entity &entity, Entity_Loader::Data &data) {
+    if (data.temp_type_name != "non-combat") {
+      zone.emplace_or_replace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max, 25);
+      zone.emplace_or_replace<Component::Attack_Speed>(entity, data.attack_speed, 0.0f);
+    }
+    zone.emplace_or_replace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
+  }
+  bool startup = true;
+
+  void Create_Entity(entt::registry &zone, int &state, float x, float y, db::Unit_Data &imgPaths, bool player, Social_Component::Summon summon, Component::Unit_Index &unitIndex) {
+    auto entity = zone.create();
+    Entity_Loader::Data data;
+    data = Entity_Loader::parse_data(imgPaths.name);
+    Rendering_Components::Blend_Type blendType = Set_Texture_Components(zone, entity, imgPaths);
+    Component::Position position = Add_Shared_Components(zone, entity, x, y, data, unitIndex);
 
     //dynamic entities
     if (data.body_type == 1) {
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::S);
       bool yes = true;
-      Collision::Create_Dynamic_Body(zone, state, entity, position.x, position.y, radius.fRadius, data.mass, yes);
-      zone.emplace_or_replace<Collision_Component::Dynamic_Collider>(entity);
-
+      Collision::Create_Dynamic_Body(zone, state, entity, position.x, position.y, data.radius, data.mass, yes);
       //do not attach to non combat
-      if (data.temp_type_name != "non-combat") {
-        zone.emplace_or_replace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max, 25);
-        zone.emplace_or_replace<Component::Attack_Speed>(entity, data.attack_speed, 0.0f);
-      }
+      Add_Melee(zone, entity, data);
       //    needs to be copied for zone changes
       zone.emplace_or_replace<Rendering_Components::Buff_Sprites>(entity);
-
-      zone.emplace_or_replace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::attack2);
       auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
 
       if (!player) {
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
-        if (!Social_Control::Summon(zone, entity, summon, sprite.blendType)) Social_Control::Entity(zone, entity, data.race);
+        if (!Social_Control::Summon(zone, entity, summon, blendType)) Social_Control::Entity(zone, entity, data.race);
 
         Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
         if (equip_type != Item_Component::Unit_Equip_Type::none) {

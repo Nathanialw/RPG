@@ -1,4 +1,5 @@
 #pragma once
+#include "tmxlite/Object.hpp"
 
 namespace Collision_Component {
 
@@ -19,7 +20,7 @@ namespace Collision_Component {
   struct Collider_Data {
     float radius = 0.0f;
     Component::Position position = {};
-    std::string colliderType = "";
+    std::string colliderType;
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs = {};
     Collision_Component::aabb aabb = {};
     Component::Line_Segment line = {};

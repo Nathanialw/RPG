@@ -1,9 +1,9 @@
 #pragma once
+#include "collision_components.h"
 #include "entt/entt.hpp"
 #include "timer.h"
 #include "tmxlite/Object.hpp"
 #include "world.h"
-#include "collision_components.h"
 
 
 namespace Collision {
@@ -127,7 +127,6 @@ namespace Collision {
   }
 
   void Create_Dynamic_Body(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, float radius, float mass, bool &isDynamicBody) {
-
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(x, y);
@@ -138,6 +137,7 @@ namespace Collision {
     b2World *world = collisionList[state];
     b2Body *body = world->CreateBody(&bodyDef);
     auto &bodyComponent = zone.emplace_or_replace<Component::Body>(entity, body);
+    zone.emplace_or_replace<Collision_Component::Dynamic_Collider>(entity);
 
     b2CircleShape polygon;
     polygon.m_radius = radius;
