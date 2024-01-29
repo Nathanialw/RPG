@@ -53,8 +53,17 @@ namespace Character_Stats {
 
         else if (item.second == Item_Component::emptyEquipSlot[state]) {
           equipmentSprites.sheet[(int) item.first].ItemSheetData = NULL;
-          equipmentSprites.sheet[(int) item.first].name = "empty";
-          equipmentSprites.sheet[(int) item.first].itemID = emptyEquipSlot[state];
+          if ((int) item.first < (int) Item_Component::Item_Type::SIZE) {
+            Utilities::Log((int) item.first);
+            Utilities::Log(equipmentSprites.sheet[(int) item.first].name);
+            Utilities::Log((int) item.second);
+            equipmentSprites.sheet[(int) item.first].name = "empty";
+            equipmentSprites.sheet[(int) item.first].itemID = emptyEquipSlot[state];
+          } else {
+            Utilities::Log("-------");
+            Utilities::Log((int) item.first);
+            Utilities::Log("-------");
+          }
         }
       }
     }

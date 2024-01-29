@@ -53,14 +53,13 @@ namespace UI_Frames {
 
   struct Menu_Button {
     UI::Text_Frame button;
-    std::vector<UI::Text_Frame> buildButton;
-    std::array<Building, 13> buildings;
+    std::vector<Building> objects;
   };
 
   struct Menu_Frame {
     UI::Image_Frame background;
     UI::Image_Frame submenu;
-    std::vector<Menu_Button> buttons;
+    std::array<Menu_Button, Menu_Tab::SIZE> buttons;
     Menu_Tab currentTab = SIZE;
     bool open = false;
   };
@@ -69,11 +68,8 @@ namespace UI_Frames {
   Menu_Frame topFrame;
 
   void Load_Buildings() {
-    for (auto &tab: topFrame.buttons) {
-      for (auto &building: tab.buildings) {
-        building = {Graphics::default_icon, Build};
-      }
-    }
+    Building dd = {Graphics::default_icon, Build};
+    topFrame.buttons[Menu_Tab::build].objects.emplace_back(dd);
   }
 
   void Update_Frame_Data(f2 &scale, std::string &text, UI::Text_Frame &frame) {
@@ -93,7 +89,6 @@ namespace UI_Frames {
     topFrame.background.frame = UI::Update_Scale(scale, topFrame.background.frame);
     topFrame.submenu.frame = UI::Update_Scale(scale, topFrame.submenu.frame);
 
-    topFrame.buttons.resize(tabs.size());
     float xPos = topFrame.background.frame.x;
     for (int i = 0; i < tabs.size(); i++) {
       topFrame.buttons[i].button.backgroundTexture = Graphics::tooltipBackground;
@@ -106,7 +101,6 @@ namespace UI_Frames {
       Update_Frame_Data(scale, tabs[i], topFrame.buttons[i].button);
       xPos += topFrame.background.frame.w / topFrame.buttons.size();
     }
-    topFrame.buttons.shrink_to_fit();
   }
 
   void Init_Frames(f2 scale) {
@@ -117,7 +111,7 @@ namespace UI_Frames {
   void Show_Submenu(Menu_Frame &menu) {
     SDL_RenderCopyF(Graphics::renderer, menu.buttons[0].button.backgroundTexture, NULL, &menu.submenu.frame);
     Grid grid;
-    for (auto building: menu.buttons[menu.currentTab].buildings) {
+    for (auto building: menu.buttons[menu.currentTab].objects) {
       SDL_FRect rect = {menu.submenu.frame.x + ((float) grid.Get_X() * menu.background.frame.h * 2.0f), menu.submenu.frame.y + ((float) grid.Get_Y() * menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f)};
       SDL_RenderCopyF(Graphics::renderer, building.icon, NULL, &rect);
       grid.Update(4);

@@ -9,9 +9,9 @@
 namespace Game_Menu_Control {
 
   bool Select_Building(entt::registry &zone, UI_Frames::Menu_Frame &menu) {
-    SDL_RenderCopyF(Graphics::renderer, menu.buttons[0].button.backgroundTexture, nullptr, &menu.submenu.frame);
+    //    SDL_RenderCopyF(Graphics::renderer, menu.buttons[0].button.backgroundTexture, nullptr, &menu.submenu.frame);
     UI_Frames::Grid grid;
-    for (int i = 0; i < menu.buttons[menu.currentTab].buildings.size(); ++i) {
+    for (int i = 0; i < menu.buttons[menu.currentTab].objects.size(); ++i) {
       SDL_FRect rect = {menu.submenu.frame.x + ((float) grid.Get_X() * menu.background.frame.h * 2.0f), menu.submenu.frame.y + ((float) grid.Get_Y() * menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f)};
       if (Mouse::FRect_inside_Screen_Cursor(rect)) {
         entt::entity entity;
@@ -19,7 +19,7 @@ namespace Game_Menu_Control {
         int index;
         float x;
         float y;
-        menu.buttons[menu.currentTab].buildings[i].build(zone, entity, action, index, x, y);
+        menu.buttons[menu.currentTab].objects[i].build(zone, entity, action, index, x, y);
         return true;
       }
       grid.Update(4);
@@ -36,11 +36,13 @@ namespace Game_Menu_Control {
           return true;
         }
       }
+      return true;
     } else {
-      if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.submenu.frame)) {
+      if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.submenu.frame) && UI_Frames::topFrame.open) {
         if (Select_Building(zone, UI_Frames::topFrame)) {
           return true;
         }
+        return true;
       } else {
         if (Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
           UI_Frames::topFrame.currentTab = UI_Frames::SIZE;
@@ -48,6 +50,16 @@ namespace Game_Menu_Control {
           return false;
         }
       }
+    }
+    return false;
+  }
+
+  bool Check_Menu_Frame() {
+    if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.background.frame)) {
+      return true;
+    }
+    if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.submenu.frame) && UI_Frames::topFrame.open) {
+      return true;
     }
     return false;
   }

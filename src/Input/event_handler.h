@@ -217,6 +217,8 @@ namespace Event_Handler {
           return;
         } else if (UI_Spellbook::Check_Spellbook(camera)) {
           return;
+        } else if (Game_Menu_Control::Check_Menu_Frame()) {
+          return;
         } else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
           return;
         } else if (Loot_Panel::Mouse_Inside_Panel(camera, state)) {

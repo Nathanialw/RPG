@@ -1,25 +1,22 @@
 #pragma once
 #include "entt/entt.hpp"
+#include "world.h"
 #include <SDL2/SDL.h>
 #include <map>
 
 namespace Item_Component {
 
-  //    item 0 renders first
+  //    item 0 renders first 29 last
   enum class Item_Type {
     clothes,
     shins,
     boots,
-    amulet,
     legs,
     belt,
     wrist,
     kilt,
     chest,
     gloves,
-    ring,
-    ring0,
-    ring1,
     facialHair,
     face,
     hair,
@@ -27,9 +24,6 @@ namespace Item_Component {
     hood,
     quiver,
     back,
-    jewelry,
-    jewelry0,
-    jewelry1,
     dirt,
     ranged,
     mainhand,
@@ -37,7 +31,15 @@ namespace Item_Component {
     helm,
     crown,
     horns,
-    size
+    //non-rendering items
+    ring,
+    ring0,
+    ring1,
+    amulet,
+    jewelry,
+    jewelry0,
+    jewelry1,
+    SIZE
   };
 
   Item_Type Get_Item_Type(std::string &db_type) {

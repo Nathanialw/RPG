@@ -423,7 +423,7 @@ namespace Items {
 
     Item_Type itemType = Item_Type::hair;
     while (itemType == Item_Type::hair || itemType == Item_Type::facialHair || itemType == Item_Type::dirt || itemType == Item_Type::horns || itemType == Item_Type::ring0 || itemType == Item_Type::ring1 || itemType == Item_Type::jewelry0 || itemType == Item_Type::jewelry1) {
-      itemType = Item_Type(rand() % (int) Item_Type::size + 0);
+      itemType = Item_Type(rand() % (int) Item_Type::SIZE + 0);
     }
 
     std::string item_type = Item_Component::Get_Item_Type_String(itemType);

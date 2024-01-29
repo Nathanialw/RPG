@@ -1,5 +1,6 @@
 #pragma once
 #include "SDL2/SDL.h"
+#include "item_components.h"
 #include "vector"
 #include <map>
 
@@ -116,7 +117,7 @@ namespace Rendering_Components {
   };
 
   struct Equipment_Sprites {
-    Equip_Slot_Data sheet[30];
+    Equip_Slot_Data sheet[(int) Item_Component::Item_Type::SIZE];
   };
 
   //import the data to sheath
