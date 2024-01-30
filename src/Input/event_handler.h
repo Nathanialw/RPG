@@ -156,6 +156,9 @@ namespace Event_Handler {
                                                 //          items
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
             //set building
+            auto &colliderData = zone.get<Collision_Component::Collider_Data>(Mouse::mouseItem);
+            colliderData.position.x = Mouse::iXWorld_Mouse;
+            colliderData.position.y = Mouse::iYWorld_Mouse;
             if (Create_Entities::Create_Object(zone, state, Mouse::mouseItem)) {
               Create_Entities::Remove_From_Mouse(zone, Mouse::mouseItem);
               return;

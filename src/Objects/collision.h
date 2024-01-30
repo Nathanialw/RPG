@@ -92,14 +92,17 @@ namespace Collision {
 
   void Create_Static_Body(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, float radius) {
     b2BodyDef bodyDef;
-
+    bodyDef.type = b2_staticBody;
     bodyDef.position.Set(x, y);
     bodyDef.userData.entity_ID = (int) entity;
+    bodyDef.linearDamping = 0.0f;
+    bodyDef.angularDamping = 0.0f;
 
     auto world = collisionList[state];
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
-
+    auto &position = zone.get<Component::Position>(entity);
+    
     b2CircleShape circle;
     circle.m_radius = radius;
 
@@ -152,13 +155,13 @@ namespace Collision {
     //        Create_Kinematic_Body(zone, entity, bodyComponent, x, y,radius, mass, isDynamicBody);
   }
 
-  void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &entity_class, Component::Position &position, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
-    if (entity_class == "polygon") {
+  void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &colliderType, Component::Position &position, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
+    if (colliderType == "polygon") {
       Collision::Create_Static_Body_Polygon(zone, state, entity, position.x, position.y, pointVecs);
       zone.emplace_or_replace<Component::Line_Segment>(entity, line);
-    } else if (entity_class == "rect") {
-      Collision::Create_Static_Body_Rect(zone, state, entity, position.x, position.y, aabb);
-    } else if (entity_class == "round") {
+    } else if (colliderType == "rect") {
+      Collision::Create_Static_Body_Rect(zone, state, entity, position.x, position.y, {(int) radius, (int) radius});
+    } else if (colliderType == "round") {
       Collision::Create_Static_Body(zone, state, entity, position.x, position.y, radius);
     }
   }

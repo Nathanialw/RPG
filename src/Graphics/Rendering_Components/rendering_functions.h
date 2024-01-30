@@ -41,7 +41,7 @@ namespace Rendering {
   void Set_Offset(entt::registry &zone, entt::entity &entity, std::string &colliderType, Component::Position &position, float &xOffset, float &yOffset, Rendering_Components::Sprite_Sheet_Data &frame) {
     auto &offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, 0.0f, 0.0f);
     if (colliderType == "rect") {
-      offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h};
+      offset = {xOffset, yOffset};
       position.y -= (float) frame.clip.h / 2.0f;
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "polygon") {
@@ -50,8 +50,8 @@ namespace Rendering {
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "round") {
       offset = {xOffset, yOffset};
-      position.x -= frame.x_offset;
-      position.y -= frame.y_offset;
+      position.x -= xOffset;
+      position.y -= yOffset;
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "none") {
       offset = {xOffset, yOffset};
