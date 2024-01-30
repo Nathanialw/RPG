@@ -4,7 +4,6 @@
 
 namespace Orc {
 
-  std::string buildingType = "buildings_orc";
 
   void Building_On_Mouse(entt::registry &zone, int &state) {
     //create the basic object on the mouse
@@ -13,6 +12,7 @@ namespace Orc {
     Component::Line_Segment line = {};
 
     //    int xmlIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["buildings_orc"].size() - 1);
+    std::string buildingType = "buildings_orc";
     std::string name = "Orc Tent 3 T2";
     int xmlIndex;
     if (Game_Objects_Lists::indexes[buildingType].contains(name)) {
@@ -28,22 +28,20 @@ namespace Orc {
     //when placed add collision box and interaction rect
   }
 
-  void House(entt::registry &zone, int &state) {
+  void House(entt::registry &zone, int &state, std::string name) {
     if (Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
-      std::string name = "Orc Tent 3 T2";
-      int xmlIndex;
-      if (Game_Objects_Lists::indexes[buildingType].contains(name)) {
-        xmlIndex = Game_Objects_Lists::indexes[buildingType][name];
-      } else {
-        Utilities::Log(name + " not found");
-        return;
-      }
+
+      std::string buildingType = "buildings_human";
+      int xmlIndex = -1;
+
       entt::entity entity = Create_Entities::Create_Render_Object(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
       Create_Entities::Set_On_Mouse(zone, entity);
     }
   }
 
   void Tent_1(entt::registry &zone, int &state) {
+    std::string buildingType = "buildings_orc";
+
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
     Collision_Component::aabb aabb;
     Component::Line_Segment line = {};

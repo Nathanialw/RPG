@@ -65,11 +65,11 @@ namespace Event_Handler {
         auto &position = zone.get<Component::Position>(entity);
 
         if (Hotbar_Structs::keybinds.contains(Events::event.key.keysym.sym)) {
-          Hotbar_Structs::keybinds[Events::event.key.keysym.sym](zone, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+          Hotbar_Structs::keybinds[Events::event.key.keysym.sym](zone, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "");
         }
       } else if (Events::event.type == SDL_KEYUP) {
         if (Hotbar::keyupKeybinds.contains(Events::event.key.keysym.sym)) {
-          Hotbar::keyupKeybinds[Events::event.key.keysym.sym](zone, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+          Hotbar::keyupKeybinds[Events::event.key.keysym.sym](zone, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "");
         }
       }
     }

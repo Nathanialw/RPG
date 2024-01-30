@@ -22,11 +22,11 @@ namespace Icons {
     Offset offset = {};
   };
   std::unordered_map<std::string, Icon_Clip> iconClipRects;
+  std::unordered_map<std::string, Icon_Clip> buildingIconClipRects;
 
 
-  void Load() {
+  void Load_Icons(std::unordered_map<std::string, Icon_Clip> &icons, std::string xml_path) {
     ///check if the sheet data already exists
-    std::string xml_path = "assets/sprites/xml/icons/icons.xml";
 
     ///get path from db
     if (xml_path.c_str() == NULL || xml_path == "") {
@@ -55,9 +55,14 @@ namespace Icons {
       icon.offset.x = pSpriteElement->IntAttribute("oX");
       icon.offset.y = pSpriteElement->IntAttribute("oY");
 
-      iconClipRects[n] = icon;
+      icons[n] = icon;
       ///this grabs the next line
       pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
     }
   }
-}
+
+  void Load() {
+    Load_Icons(iconClipRects, "assets/sprites/xml/icons/icons.xml");
+    Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/Viking Pack/icons.xml");
+  }
+}// namespace Icons

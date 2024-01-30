@@ -1,6 +1,6 @@
 #pragma once
-#include "spells.h"
 #include "mouse_control.h"
+#include "spells.h"
 
 namespace LightningBall {
 
@@ -21,7 +21,7 @@ namespace LightningBall {
     return 1;
   }
 
-  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     if (action.state != Action_Component::casting && action.state != Action_Component::cast) {
 
       //read animation in from db?
@@ -35,4 +35,4 @@ namespace LightningBall {
     return 0;
   }
 
-}// namespace Fire
+}// namespace LightningBall

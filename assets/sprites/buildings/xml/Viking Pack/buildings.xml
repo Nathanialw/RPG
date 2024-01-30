@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:bedb3006874cbc6a594fedd6a5aa2bb1:3e663ab6c7e5bfcba5dd2840e470ad20:a0eaabb781b28ec27d1a7244e7eebeff$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="buildings.png" width="4048" height="8230">
+    <sprite n="House 1/House 1 T1" x="3362" y="7156" w="644" h="538"/>
+    <sprite n="House 1/House 2 T1" x="3183" y="5169" w="845" h="917"/>
+    <sprite n="House 1/House 3 T1" x="1855" y="6647" w="791" h="778"/>
+    <sprite n="House 1/House 4 T1" x="2648" y="6725" w="712" h="598"/>
+    <sprite n="House 1/House 5 T1" x="2914" y="6088" w="823" h="635"/>
+    <sprite n="House 2/House 1 T1" x="1417" y="1747" w="874" h="793"/>
+    <sprite n="House 2/House 2 T1" x="1" y="2606" w="1250" h="883"/>
+    <sprite n="House 2/House 4 T1" x="1" y="3491" w="1168" h="821"/>
+    <sprite n="House 2/House 5 T1" x="2300" y="923" w="1615" h="588"/>
+    <sprite n="House 2/House 6 T1" x="1" y="1747" w="1414" h="857"/>
+    <sprite n="House 2/House 3 T1" x="1" y="1" w="2297" h="1744"/>
+    <sprite n="House 3/House 7 T1" x="2284" y="3512" w="1105" h="930"/>
+    <sprite n="House 3/House 8 T1" x="937" y="6208" w="916" h="838"/>
+    <sprite n="House 3/House 9 T1" x="2300" y="1513" w="1505" h="1334"/>
+    <sprite n="House 4/House 10 T1" x="1253" y="3490" w="1029" h="939"/>
+    <sprite n="House 4/House 11 T1" x="1100" y="4431" w="1081" h="865"/>
+    <sprite n="House 4/House 12 T1" x="2183" y="5101" w="998" h="568"/>
+    <sprite n="House 4/House 13 T1" x="2183" y="4444" w="1020" h="655"/>
+    <sprite n="House 5/House 1 T1" x="1" y="4314" w="1097" h="657"/>
+    <sprite n="House 5/House 2 T1" x="1417" y="2542" w="867" h="946"/>
+    <sprite n="House 5/House 3 T1" x="893" y="7048" w="768" h="1047"/>
+    <sprite n="House 5/House 4 T1" x="1" y="5681" w="934" h="848"/>
+    <sprite n="House 5/House 5 T1" x="1" y="7270" w="734" h="852"/>
+    <sprite n="House 5/House 6 T1" x="1" y="4973" w="1021" h="706"/>
+    <sprite n="House 5/House 7 T1" x="1" y="6531" w="890" h="737"/>
+    <sprite n="House 5/House 8 T1" x="2286" y="2849" w="1224" h="661"/>
+    <sprite n="House/House 1 T1" x="2300" y="1" w="1747" h="920"/>
+    <sprite n="House/House 2 T1" x="3362" y="6725" w="675" h="429"/>
+    <sprite n="House/House 3 T1" x="3391" y="3801" w="646" h="659"/>
+    <sprite n="House/House 4 T1" x="2977" y="7696" w="541" h="533"/>
+    <sprite n="House/House 5 T1" x="3512" y="2849" w="530" h="633"/>
+    <sprite n="House/House 6 T1" x="2330" y="7427" w="645" h="673"/>
+    <sprite n="House/Shade T1" x="3512" y="3484" w="396" h="315"/>
+    <sprite n="Tower 1/Tower 1 T1" x="3205" y="4462" w="824" h="705"/>
+    <sprite n="Tower 1/Tower 2 T1" x="1024" y="5298" w="969" h="908"/>
+    <sprite n="Tower 1/Tower 3 T1" x="1995" y="5671" w="917" h="974"/>
+    <sprite n="Tower 1/Tower 4 T1" x="1663" y="7427" w="665" h="688"/>
+</TextureAtlas>

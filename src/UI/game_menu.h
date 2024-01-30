@@ -19,7 +19,7 @@ namespace Game_Menu_Control {
         int index;
         float x;
         float y;
-        menu.buttons[menu.currentTab].objects[i].build(zone, entity, action, index, x, y);
+        menu.buttons[menu.currentTab].objects[i].build(zone, entity, action, index, x, y, menu.buttons[menu.currentTab].objects[i].name);
         return true;
       }
       grid.Update(4);

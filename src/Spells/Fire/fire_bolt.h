@@ -24,7 +24,7 @@ namespace Fire_Bolt {
     return 1;
   }
 
-  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     if (action.state != Action_Component::casting && action.state != Action_Component::cast) {
 
       //read animation in from db?

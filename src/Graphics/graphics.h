@@ -46,7 +46,6 @@ namespace Graphics {
   std::array<SDL_Texture *, numberOfTextures> unitBodies;
 
 
-
   struct Texture {
     SDL_Texture *texture = NULL;
     SDL_Texture *portrait = NULL;
@@ -118,6 +117,7 @@ namespace Graphics {
   SDL_Texture *fog;
 
   SDL_Texture *icons;
+  SDL_Texture *vikingBuildingIcons;
 
   SDL_Texture *bagSlotBorder;
   SDL_Texture *itemBorderCommon;
@@ -355,6 +355,7 @@ namespace Graphics {
     fog = createTexture("assets/sprites/UI/mist/fog_0.png");
 
     icons = createTexture("assets/sprites/icons/icons.png");
+    vikingBuildingIcons = createTexture("assets/sprites/buildings/viking/icons.png");
 
     weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
     itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");

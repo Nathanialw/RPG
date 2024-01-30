@@ -14,6 +14,7 @@ namespace UI_Frames {
   private:
     int x = 0;
     int y = 0;
+    int w = 0;
 
   public:
     void Update(int w) {
@@ -24,12 +25,12 @@ namespace UI_Frames {
       }
     }
 
-    int Get_X() {
-      return x;
+    float Get_X() {
+      return (float) x;
     };
 
-    int Get_Y() {
-      return y;
+    float Get_Y() {
+      return (float) y;
     };
   };
 
@@ -41,14 +42,15 @@ namespace UI_Frames {
     SIZE
   };
 
-  int Build(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
-    Build::Orc::House(zone, index);
+  int Build(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    Build::Orc::House(zone, index, objectName);
     return 0;
   }
 
   struct Building {
-    SDL_Texture *icon = Graphics::default_icon;
-    Spells::castSpell build = Build;
+    Component::Icon icon = {Graphics::default_icon};
+    std::string name;
+    Spells::castSpell build;
   };
 
   struct Menu_Button {
@@ -67,9 +69,56 @@ namespace UI_Frames {
   std::vector<std::string> tabs = {"Build", "Train", "Army", "Serfs"};
   Menu_Frame topFrame;
 
+  const int numHouses = 37;
   void Load_Buildings() {
-    Building dd = {Graphics::default_icon, Build};
-    topFrame.buttons[Menu_Tab::build].objects.emplace_back(dd);
+    std::array<std::string, numHouses> houses;
+    houses =
+        {"House 1/House 1 T1",
+         "House 1/House 2 T1",
+         "House 1/House 3 T1",
+         "House 1/House 4 T1",
+         "House 1/House 5 T1",
+         "House 2/House 1 T1",
+         "House 2/House 2 T1",
+         "House 2/House 4 T1",
+         "House 2/House 5 T1",
+         "House 2/House 6 T1",
+         "House 2/House 3 T1",
+         "House 3/House 7 T1",
+         "House 3/House 8 T1",
+         "House 3/House 9 T1",
+         "House 4/House 10 T1",
+         "House 4/House 11 T1",
+         "House 4/House 12 T1",
+         "House 4/House 13 T1",
+         "House 5/House 1 T1",
+         "House 5/House 2 T1",
+         "House 5/House 3 T1",
+         "House 5/House 4 T1",
+         "House 5/House 5 T1",
+         "House 5/House 6 T1",
+         "House 5/House 7 T1",
+         "House 5/House 8 T1",
+         "House/House 1 T1",
+         "House/House 2 T1",
+         "House/House 3 T1",
+         "House/House 4 T1",
+         "House/House 5 T1",
+         "House/House 6 T1",
+         "House/Shade T1",
+         "Tower 1/Tower 1 T1",
+         "Tower 1/Tower 2 T1",
+         "Tower 1/Tower 3 T1",
+         "Tower 1/Tower 4 T1"};
+
+    Building building;
+    for (auto house: houses) {
+      building.name = house;
+      building.icon.clipSprite = Icons::buildingIconClipRects[building.name].clipRect;
+      building.icon.pTexture = Graphics::vikingBuildingIcons;
+      building.build = Build;
+      topFrame.buttons[Menu_Tab::build].objects.emplace_back(building);
+    }
   }
 
   void Update_Frame_Data(f2 &scale, std::string &text, UI::Text_Frame &frame) {
@@ -82,7 +131,7 @@ namespace UI_Frames {
   //set the background frame in a position with a size and evenly space the buttons within
   void Init_Button_Menu() {
     topFrame.background.frame = {1024.0f, 0.0f, 512.0f, 64.0f};
-    topFrame.submenu.frame = {topFrame.background.frame.x, topFrame.background.frame.y + topFrame.background.frame.h, topFrame.background.frame.w, 512.0};
+    topFrame.submenu.frame = {topFrame.background.frame.x, topFrame.background.frame.y + topFrame.background.frame.h, topFrame.background.frame.w, ((topFrame.background.frame.h * 2.0f) * (ceil(numHouses / 4.0f)))};
   }
 
   void Build_Buttons(f2 scale) {
@@ -112,8 +161,12 @@ namespace UI_Frames {
     SDL_RenderCopyF(Graphics::renderer, menu.buttons[0].button.backgroundTexture, NULL, &menu.submenu.frame);
     Grid grid;
     for (auto building: menu.buttons[menu.currentTab].objects) {
-      SDL_FRect rect = {menu.submenu.frame.x + ((float) grid.Get_X() * menu.background.frame.h * 2.0f), menu.submenu.frame.y + ((float) grid.Get_Y() * menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f)};
-      SDL_RenderCopyF(Graphics::renderer, building.icon, NULL, &rect);
+      SDL_FRect rect = {menu.submenu.frame.x + (grid.Get_X() * menu.background.frame.h * 2.0f), menu.submenu.frame.y + (grid.Get_Y() * menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f), (menu.background.frame.h * 2.0f)};
+      rect.x += (rect.w * 0.1f);
+      rect.y += (rect.h * 0.1f);
+      rect.w -= (rect.w * 0.1f);
+      rect.w -= (rect.w * 0.1f);
+      SDL_RenderCopyF(Graphics::renderer, building.icon.pTexture, &building.icon.clipSprite, &rect);
       grid.Update(4);
     }
   }

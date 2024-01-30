@@ -5,7 +5,7 @@
 namespace Might {
 
   int Cast(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
-//    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
+    //    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
     return 1;
   }
 
@@ -27,7 +27,7 @@ namespace Might {
     return 1;
   }
 
-  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     if (action.state != Action_Component::casting && action.state != Action_Component::cast) {
 
       //read animation in from db?
@@ -40,4 +40,4 @@ namespace Might {
     }
     return 0;
   }
-}// namespace Fire
+}// namespace Might

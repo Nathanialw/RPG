@@ -245,6 +245,7 @@ namespace Texture_Packer {
         frame.y_offset = pSpriteElement->IntAttribute("oY");
         tilesetVec.emplace_back(n);
         spritesheet.frameList.emplace_back(frame);
+        Game_Objects_Lists::objectIndexes[n] = frameIndex;
         frameIndex++;
         ///this grabs the next line
         pSpriteElement = pSpriteElement->NextSiblingElement("sprite");

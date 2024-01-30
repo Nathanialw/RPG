@@ -24,7 +24,7 @@ namespace Heal_Self {
     return 1;
   }
 
-  int Heal_Self(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+  int Heal_Self(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     //get data from db
     Action_Component::Set_State(action, Action_Component::pray_standing);
     float castTime = 500.0f;
@@ -33,4 +33,4 @@ namespace Heal_Self {
     zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "pipo-mapeffect013a", "BBLBubbleEllipseYellow");
     return 1;
   }
-}// namespace Life
+}// namespace Heal_Self

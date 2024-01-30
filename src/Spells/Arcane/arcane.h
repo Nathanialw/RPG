@@ -1,6 +1,6 @@
 #pragma once
-#include "spells.h"
 #include "mouse_control.h"
+#include "spells.h"
 
 namespace Arcane {
 
@@ -9,7 +9,7 @@ namespace Arcane {
     return 1;
   }
 
-  int Create (entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
+  int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
     auto &body = zone.get<Component::Body>(caster_ID);
     b2Vec2 p = {targetX, targetY};
     body.body->SetTransform(p, 0);
@@ -18,12 +18,12 @@ namespace Arcane {
     return 1;
   }
 
-  int Hit (entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
-//    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
+  int Hit(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Component::Casting &casting, float &targetX, float &targetY) {
+    //    Spells::Spell_Cast_Effect(zone, state, caster_ID, position, direction, casting.effect, casting.x, casting.y);
     return 1;
   }
 
-  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     if (action.state != Action_Component::casting && action.state != Action_Component::cast) {
       float castTime = 500.0f;
 
@@ -34,4 +34,4 @@ namespace Arcane {
     }
     return 0;
   }
-}// namespace Fire
+}// namespace Arcane

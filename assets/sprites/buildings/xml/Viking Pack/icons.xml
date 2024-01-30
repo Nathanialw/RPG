@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:5c5bb0200dcd24fa7f80a286d1705822:f6b3072c2c8ddf68de2654773411a30e:90a68ccae83e65ad8ceeb861f0a8529d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="icons.png" width="3700" height="100">
+    <sprite n="House 1/House 1 T1" x="0" y="0" w="100" h="100"/>
+    <sprite n="House 1/House 2 T1" x="100" y="0" w="100" h="100"/>
+    <sprite n="House 1/House 3 T1" x="200" y="0" w="100" h="100"/>
+    <sprite n="House 1/House 4 T1" x="300" y="0" w="100" h="100"/>
+    <sprite n="House 1/House 5 T1" x="400" y="0" w="100" h="100"/>
+    <sprite n="House 2/House 1 T1" x="500" y="0" w="100" h="100"/>
+    <sprite n="House 2/House 2 T1" x="600" y="0" w="100" h="100"/>
+    <sprite n="House 2/House 4 T1" x="700" y="0" w="100" h="100"/>
+    <sprite n="House 2/House 5 T1" x="800" y="0" w="100" h="100"/>
+    <sprite n="House 2/House 6 T1" x="900" y="0" w="100" h="100"/>
+    <sprite n="House 2/House 3 T1" x="1000" y="0" w="100" h="100"/>
+    <sprite n="House 3/House 7 T1" x="1100" y="0" w="100" h="100"/>
+    <sprite n="House 3/House 8 T1" x="1200" y="0" w="100" h="100"/>
+    <sprite n="House 3/House 9 T1" x="1300" y="0" w="100" h="100"/>
+    <sprite n="House 4/House 10 T1" x="1400" y="0" w="100" h="100"/>
+    <sprite n="House 4/House 11 T1" x="1500" y="0" w="100" h="100"/>
+    <sprite n="House 4/House 12 T1" x="1600" y="0" w="100" h="100"/>
+    <sprite n="House 4/House 13 T1" x="1700" y="0" w="100" h="100"/>
+    <sprite n="House 5/House 1 T1" x="1800" y="0" w="100" h="100"/>
+    <sprite n="House 5/House 2 T1" x="1900" y="0" w="100" h="100"/>
+    <sprite n="House 5/House 3 T1" x="2000" y="0" w="100" h="100"/>
+    <sprite n="House 5/House 4 T1" x="2100" y="0" w="100" h="100"/>
+    <sprite n="House 5/House 5 T1" x="2200" y="0" w="100" h="100"/>
+    <sprite n="House 5/House 6 T1" x="2300" y="0" w="100" h="100"/>
+    <sprite n="House 5/House 7 T1" x="2400" y="0" w="100" h="100"/>
+    <sprite n="House 5/House 8 T1" x="2500" y="0" w="100" h="100"/>
+    <sprite n="House/House 1 T1" x="2600" y="0" w="100" h="100"/>
+    <sprite n="House/House 2 T1" x="2700" y="0" w="100" h="100"/>
+    <sprite n="House/House 3 T1" x="2800" y="0" w="100" h="100"/>
+    <sprite n="House/House 4 T1" x="2900" y="0" w="100" h="100"/>
+    <sprite n="House/House 5 T1" x="3000" y="0" w="100" h="100"/>
+    <sprite n="House/House 6 T1" x="3100" y="0" w="100" h="100"/>
+    <sprite n="House/Shade T1" x="3200" y="0" w="100" h="100"/>
+    <sprite n="Tower 1/Tower 1 T1" x="3300" y="0" w="100" h="100"/>
+    <sprite n="Tower 1/Tower 2 T1" x="3400" y="0" w="100" h="100"/>
+    <sprite n="Tower 1/Tower 3 T1" x="3500" y="0" w="100" h="100"/>
+    <sprite n="Tower 1/Tower 4 T1" x="3600" y="0" w="100" h="100"/>
+</TextureAtlas>

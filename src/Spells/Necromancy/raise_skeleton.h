@@ -45,7 +45,7 @@ namespace Raise_Skeleton {
     return 1;
   }
 
-  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y) {
+  int Cast_Spell(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Action_Component::Set_State(action, Action_Component::casting);
     float castTime = 500.0f;
 

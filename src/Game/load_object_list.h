@@ -1,17 +1,17 @@
 #pragma once
 
 #include <array>
+#include <map>
+#include <string>
 #include <unordered_map>
 #include <vector>
-#include <string>
-#include <map>
 
 #include "SQLite_unit_data.h"
-#include "tinyxml/tinyxml2.h"
 #include "components.h"
-#include "utilities.h"
-#include "social_control.h"
 #include "game_objects.h"
+#include "social_control.h"
+#include "tinyxml/tinyxml2.h"
+#include "utilities.h"
 
 namespace Load_Object_List {
 
@@ -25,7 +25,7 @@ namespace Load_Object_List {
     std::vector<std::string> props[(int) Social_Component::Race::SIZE][(int) Component::Entity_Type::SIZE][(int) Component::Props::SIZE];
     std::vector<std::string> buildings[(int) Social_Component::Race::SIZE][(int) Component::Entity_Type::SIZE][(int) Component::Buildings::SIZE];
 
-    //    std::unordered_map<std::string, std::vector<std::string>> gameObjects; 
+    //    std::unordered_map<std::string, std::vector<std::string>> gameObjects;
   };
 
   Component::Entity_Type Get_Type(std::string &typeStr) {
@@ -61,10 +61,12 @@ namespace Load_Object_List {
       return Entity_Loader::Get_All_Units_Of_Type(typeStr);
     } else if (typeStr == "foliage") {
       Utilities::Log("foliage");
-      return Entity_Loader::Get_All_Units_Of_Type(typeStr);;
+      return Entity_Loader::Get_All_Units_Of_Type(typeStr);
+      ;
     } else if (typeStr == "building") {
       Utilities::Log("building");
-      return Entity_Loader::Get_All_Objects_Of_Type(typeStr);;
+      return Entity_Loader::Get_All_Objects_Of_Type(typeStr);
+      ;
     } else if (typeStr == "spell") {
       Utilities::Log("spells");
       return Entity_Loader::Get_All_Units_Of_Type(typeStr);
@@ -98,7 +100,7 @@ namespace Load_Object_List {
     return gameObjects[(int) type][(int) race][(int) unitType];
   };
 
-  std::vector<std::string> Load_Tileset(const char * xmlPath) {
+  std::vector<std::string> Load_Tileset(const char *xmlPath) {
     tinyxml2::XMLDocument spriteSheetData;
     spriteSheetData.LoadFile(xmlPath);
     tinyxml2::XMLElement *pSpriteElement;
@@ -131,6 +133,11 @@ namespace Load_Object_List {
       Game_Objects_Lists::indexes["buildings_orc"][Game_Objects_Lists::tilesets["buildings_orc"][i]] = i;
     }
 
+    Game_Objects_Lists::tilesets["buildings_human"] = Entity_Loader::Get_Names_Of_SubType("human", "building", "house");
+    for (int i = 0; i < Game_Objects_Lists::tilesets["buildings_human"].size(); ++i) {
+      Game_Objects_Lists::indexes["buildings_human"][Game_Objects_Lists::tilesets["buildings_human"][i]] = i;
+    }
+
     Game_Objects_Lists::tilesets["bloodPool"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "background");
     Game_Objects_Lists::tilesets["bloodSplatter"] = Entity_Loader::Get_Names_Of_SubType("neutral", "prop", "blood", "foreground");
 
@@ -149,5 +156,6 @@ namespace Load_Object_List {
     Game_Objects_Lists::units["clear_slime"] = Entity_Loader::Get_Unit_Subtypes("monster", "clear_slime");
     Game_Objects_Lists::units["blue_slime"] = Entity_Loader::Get_Unit_Subtypes("monster", "blue_slime");
   }
-}
 
+
+}// namespace Load_Object_List

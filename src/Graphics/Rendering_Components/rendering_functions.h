@@ -24,6 +24,10 @@ namespace Rendering {
       std::cout << "failed to load PVG_Building() for: " << templateName << std::endl;
       return {NULL};
     }
+
+    if (xmlIndex == -1) {
+      xmlIndex = Game_Objects_Lists::objectIndexes[templateName];
+    }
     auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
     sprite.sheetData = packerframeData;
     sprite.sheet_name = sheetName;
