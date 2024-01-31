@@ -62,7 +62,9 @@ namespace Icons {
   }
 
   void Load() {
+    Texture_Packer::TexturePacker_Import_Collision("assets/sprites/buildings/medieval/collision/house.xml");
     Load_Icons(iconClipRects, "assets/sprites/xml/icons/icons.xml");
     Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/Viking Pack/icons.xml");
+    Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/medieval/buildings.xml");
   }
 }// namespace Icons

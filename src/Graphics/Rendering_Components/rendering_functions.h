@@ -38,7 +38,7 @@ namespace Rendering {
     return {sprite.sheetData, sprite.sheetData->at(sheetName).frameList[xmlIndex]};
   }
 
-  void Set_Offset(entt::registry &zone, entt::entity &entity, std::string &colliderType, Component::Position &position, float &xOffset, float &yOffset, Rendering_Components::Sprite_Sheet_Data &frame) {
+  Rendering_Components::Sprite_Offset Set_Offset(entt::registry &zone, entt::entity &entity, std::string &colliderType, Component::Position &position, float &xOffset, float &yOffset, Rendering_Components::Sprite_Sheet_Data &frame) {
     auto &offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, 0.0f, 0.0f);
     if (colliderType == "rect") {
       offset = {xOffset, yOffset};
@@ -74,6 +74,7 @@ namespace Rendering {
       zone.emplace_or_replace<Rendering_Components::Foreground>(entity);
     }
     // if object is a  background sprite DO NOT set Direction component
+    return {fabs(((float) frame.clip.w / 2.0f) - offset.x), (float) frame.clip.h / 2.0f};
   }
 
   void Attach_Components(entt::registry &zone, entt::entity &entity) {

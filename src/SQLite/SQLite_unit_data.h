@@ -167,7 +167,7 @@ namespace Entity_Loader {
     sqlite3_stmt *stmt;
     char buf[300];
 
-    const char *jj = "SELECT name FROM buildings WHERE race = ";
+    const char *jj = "SELECT name FROM building_exteriors WHERE race = ";
     strcpy(buf, jj);
     strcat(buf, text.c_str());
 
@@ -198,7 +198,7 @@ namespace Entity_Loader {
     sqlite3_stmt *stmt;
     char buf[300];
 
-    const char *jj = "SELECT name FROM buildings WHERE race = ";
+    const char *jj = "SELECT name FROM building_exteriors WHERE race = ";
     strcpy(buf, jj);
     strcat(buf, text.c_str());
 
@@ -229,7 +229,7 @@ namespace Entity_Loader {
     sqlite3_stmt *stmt;
     char buf[300];
 
-    const char *jj = "SELECT name FROM buildings WHERE race = ";
+    const char *jj = "SELECT name FROM building_exteriors WHERE race = ";
     strcpy(buf, jj);
     strcat(buf, text.c_str());
 
@@ -255,7 +255,7 @@ namespace Entity_Loader {
     const unsigned char *name;
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT name FROM buildings WHERE type = ";
+    const char *jj = "SELECT name FROM building_exteriors WHERE type = ";
     strcpy(buf, jj);
     strcat(buf, class_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -344,7 +344,7 @@ namespace Entity_Loader {
     const unsigned char *name;
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT type FROM buildings WHERE race = ";
+    const char *jj = "SELECT type FROM building_exteriors WHERE race = ";
     strcpy(buf, jj);
     strcat(buf, class_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -404,7 +404,7 @@ namespace Entity_Loader {
     const unsigned char *name;
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT name FROM buildings WHERE type = ";
+    const char *jj = "SELECT name FROM building_exteriors WHERE type = ";
     strcpy(buf, jj);
     strcat(buf, class_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -514,7 +514,7 @@ namespace Entity_Loader {
     const unsigned char *sheet;
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT sprite_layout FROM buildings WHERE name = ";
+    const char *jj = "SELECT sprite_layout FROM building_exteriors WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -555,7 +555,7 @@ namespace Entity_Loader {
 
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite FROM buildings WHERE name = ";
+    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite FROM building_exteriors WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);

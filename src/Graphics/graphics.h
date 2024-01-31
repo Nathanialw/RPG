@@ -118,6 +118,7 @@ namespace Graphics {
 
   SDL_Texture *icons;
   SDL_Texture *vikingBuildingIcons;
+  SDL_Texture *medievelBuildingIcons;
 
   SDL_Texture *bagSlotBorder;
   SDL_Texture *itemBorderCommon;
@@ -356,6 +357,7 @@ namespace Graphics {
 
     icons = createTexture("assets/sprites/icons/icons.png");
     vikingBuildingIcons = createTexture("assets/sprites/buildings/viking/icons.png");
+    medievelBuildingIcons = createTexture("assets/sprites/buildings/medieval/buildings.png");
 
     weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
     itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");

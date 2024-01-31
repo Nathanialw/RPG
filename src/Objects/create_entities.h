@@ -95,7 +95,7 @@ namespace Create_Entities {
       auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
 
       //attach collider
-      Rendering::Set_Offset(zone, entity, data.collider_type, position, data.x_offset, data.y_offset, frame);
+      Rendering_Components::Sprite_Offset offset = Rendering::Set_Offset(zone, entity, data.collider_type, position, data.x_offset, data.y_offset, frame);
 
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
@@ -106,7 +106,7 @@ namespace Create_Entities {
       Social_Control::Entity(zone, entity, data.race);
       zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
       zone.emplace_or_replace<Component::Name>(entity, templateName);
-      zone.emplace<Collision_Component::Collider_Data>(entity, data.radius, position, data.collider_type);
+      zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offset, data.radius, position, data.collider_type);
     }
     return entity;
   }
@@ -128,7 +128,7 @@ namespace Create_Entities {
   bool Create_Object(entt::registry &zone, int state, entt::entity &entity) {
     auto colliderData = zone.get<Collision_Component::Collider_Data>(entity);
     zone.remove<Collision_Component::Collider_Data>(entity);
-    Collision::Attach_Components(zone, state, entity, colliderData.colliderType, colliderData.radius, colliderData.position, colliderData.aabb, colliderData.pointVecs, colliderData.line);
+    Collision::Attach_Components(zone, state, entity, colliderData);
 
     zone.emplace_or_replace<Component::Radius>(entity, colliderData.radius);
     zone.emplace_or_replace<Component::Alive>(entity, true);

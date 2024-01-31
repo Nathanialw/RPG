@@ -69,53 +69,116 @@ namespace UI_Frames {
   std::vector<std::string> tabs = {"Build", "Train", "Army", "Serfs"};
   Menu_Frame topFrame;
 
-  const int numHouses = 37;
+  const int numHouses = 63;
   void Load_Buildings() {
     std::array<std::string, numHouses> houses;
-    houses =
-        {"House 1/House 1 T1",
-         "House 1/House 2 T1",
-         "House 1/House 3 T1",
-         "House 1/House 4 T1",
-         "House 1/House 5 T1",
-         "House 2/House 1 T1",
-         "House 2/House 2 T1",
-         "House 2/House 4 T1",
-         "House 2/House 5 T1",
-         "House 2/House 6 T1",
-         "House 2/House 3 T1",
-         "House 3/House 7 T1",
-         "House 3/House 8 T1",
-         "House 3/House 9 T1",
-         "House 4/House 10 T1",
-         "House 4/House 11 T1",
-         "House 4/House 12 T1",
-         "House 4/House 13 T1",
-         "House 5/House 1 T1",
-         "House 5/House 2 T1",
-         "House 5/House 3 T1",
-         "House 5/House 4 T1",
-         "House 5/House 5 T1",
-         "House 5/House 6 T1",
-         "House 5/House 7 T1",
-         "House 5/House 8 T1",
-         "House/House 1 T1",
-         "House/House 2 T1",
-         "House/House 3 T1",
-         "House/House 4 T1",
-         "House/House 5 T1",
-         "House/House 6 T1",
-         "House/Shade T1",
-         "Tower 1/Tower 1 T1",
-         "Tower 1/Tower 2 T1",
-         "Tower 1/Tower 3 T1",
-         "Tower 1/Tower 4 T1"};
+    //    houses =
+    //        {"House 1/House 1 T1",
+    //         "House 1/House 2 T1",
+    //         "House 1/House 3 T1",
+    //         "House 1/House 4 T1",
+    //         "House 1/House 5 T1",
+    //         "House 2/House 1 T1",
+    //         "House 2/House 2 T1",
+    //         "House 2/House 4 T1",
+    //         "House 2/House 5 T1",
+    //         "House 2/House 6 T1",
+    //         "House 2/House 3 T1",
+    //         "House 3/House 7 T1",
+    //         "House 3/House 8 T1",
+    //         "House 3/House 9 T1",
+    //         "House 4/House 10 T1",
+    //         "House 4/House 11 T1",
+    //         "House 4/House 12 T1",
+    //         "House 4/House 13 T1",
+    //         "House 5/House 1 T1",
+    //         "House 5/House 2 T1",
+    //         "House 5/House 3 T1",
+    //         "House 5/House 4 T1",
+    //         "House 5/House 5 T1",
+    //         "House 5/House 6 T1",
+    //         "House 5/House 7 T1",
+    //         "House 5/House 8 T1",
+    //         "House/House 1 T1",
+    //         "House/House 2 T1",
+    //         "House/House 3 T1",
+    //         "House/House 4 T1",
+    //         "House/House 5 T1",
+    //         "House/House 6 T1",
+    //         "House/Shade T1",
+    //         "Tower 1/Tower 1 T1",
+    //         "Tower 1/Tower 2 T1",
+    //         "Tower 1/Tower 3 T1",
+    //         "Tower 1/Tower 4 T1"};
 
+    houses = {"Building1_1",
+              "Building1_2",
+              "Building2_1",
+              "Building2_2",
+              "Building3_1",
+              "Building3_2",
+              "Building4_1",
+              "Building4_2",
+              "Building5_1",
+              "Building5_2",
+              "Building6_1",
+              "Building6_2",
+              "Building7_1",
+              "Building7_2",
+              "Building8_1",
+              "Building8_2",
+              "Building9_1",
+              "Building9_2",
+              "Building10_1",
+              "Building10_2",
+              "Building11_1",
+              "Building11_2",
+              "Building12_1",
+              "Building12_2",
+              "Building13_1",
+              "Building13_2",
+              "Building14_1",
+              "Building14_2",
+              "Building15_1",
+              "Building15_2",
+              "Building16_1",
+              "Building16_3",
+              "Building17_1",
+              "Building17_3",
+              "Building18_1",
+              "Building18_3",
+              "Building19_1",
+              "Building19_3",
+              "Building20_1",
+              "Building20_3",
+              "Building21_1",
+              "Building21_3",
+              "Building22_3",
+              "Building23_1",
+              "Building23_3",
+              "Building24_1",
+              "Building24_3",
+              "Building25_3",
+              "Building26_2",
+              "Building27_1",
+              "Building27_2",
+              "Building28",
+              "Building28_2",
+              "Building29_1",
+              "Building29_3",
+              "Building30_1",
+              "Building30_3",
+              "Building31_1",
+              "Building32_1",
+              "Building35_1",
+              "Building36_1",
+              "Building37_1",
+              "Windmill1_3"};
     Building building;
     for (auto house: houses) {
       building.name = house;
       building.icon.clipSprite = Icons::buildingIconClipRects[building.name].clipRect;
-      building.icon.pTexture = Graphics::vikingBuildingIcons;
+      building.icon.pTexture = Graphics::medievelBuildingIcons;
       building.build = Build;
       topFrame.buttons[Menu_Tab::build].objects.emplace_back(building);
     }
@@ -130,13 +193,17 @@ namespace UI_Frames {
 
   //set the background frame in a position with a size and evenly space the buttons within
   void Init_Button_Menu() {
-    topFrame.background.frame = {1024.0f, 0.0f, 512.0f, 64.0f};
+    //x needs to be screen width -frame width
+    //needs to update on screen resize
+    topFrame.background.frame = {0.0f, 0.0f, 512.0f, 64.0f};
     topFrame.submenu.frame = {topFrame.background.frame.x, topFrame.background.frame.y + topFrame.background.frame.h, topFrame.background.frame.w, ((topFrame.background.frame.h * 2.0f) * (ceil(numHouses / 4.0f)))};
   }
 
-  void Build_Buttons(f2 scale) {
-    topFrame.background.frame = UI::Update_Scale(scale, topFrame.background.frame);
-    topFrame.submenu.frame = UI::Update_Scale(scale, topFrame.submenu.frame);
+  void Build_Buttons(Component::Camera &camera) {
+    topFrame.background.frame = UI::Update_Scale(camera.scale, topFrame.background.frame);
+    topFrame.submenu.frame = UI::Update_Scale(camera.scale, topFrame.submenu.frame);
+    topFrame.background.frame.x = camera.screen.w - topFrame.background.frame.w;
+    topFrame.submenu.frame.x = camera.screen.w - topFrame.submenu.frame.w;
 
     float xPos = topFrame.background.frame.x;
     for (int i = 0; i < tabs.size(); i++) {
@@ -147,14 +214,9 @@ namespace UI_Frames {
           topFrame.background.frame.w / topFrame.buttons.size(),
           topFrame.background.frame.h,
       };
-      Update_Frame_Data(scale, tabs[i], topFrame.buttons[i].button);
+      Update_Frame_Data(camera.scale, tabs[i], topFrame.buttons[i].button);
       xPos += topFrame.background.frame.w / topFrame.buttons.size();
     }
-  }
-
-  void Init_Frames(f2 scale) {
-    Init_Button_Menu();
-    Build_Buttons(scale);
   }
 
   void Show_Submenu(Menu_Frame &menu) {
@@ -173,7 +235,7 @@ namespace UI_Frames {
 
   void Show_Menu_Frame(entt::registry &zone, Component::Camera &camera) {
     Init_Button_Menu();
-    Build_Buttons(camera.scale);
+    Build_Buttons(camera);
 
     for (auto &menu: topFrame.buttons) {
       Update_Frame_Data(camera.scale, menu.button.text, menu.button);

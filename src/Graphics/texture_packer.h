@@ -255,6 +255,58 @@ namespace Texture_Packer {
     }
   }
 
+
+  void TexturePacker_Import_Collision(const char *xmlPath) {
+    tinyxml2::XMLDocument spriteSheetData;
+    spriteSheetData.LoadFile(xmlPath);
+    tinyxml2::XMLElement *pSpriteElement;
+    Collision_Component::Colliders colliders;
+
+    pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("bodies");
+    //    pSpriteElement = pSpriteElement->FirstChildElement("bodies");
+    int numBodies = pSpriteElement->IntAttribute("numBodies");
+
+    tinyxml2::XMLElement *bodyElement = pSpriteElement->FirstChildElement("body");
+    for (int k = 0; k < numBodies; ++k) {
+      if ((std::string) bodyElement->Attribute("dynamic") == "dynamic") colliders.bodyType = b2_dynamicBody;
+      int numFixtures = bodyElement->IntAttribute("numFixtures");
+      tinyxml2::XMLElement *fixtureElement = bodyElement->FirstChildElement("fixture");
+      if (fixtureElement) {
+        colliders.isSensor.resize(numFixtures);
+        for (int i = 0; i < numFixtures; ++i) {
+          if ((std::string) fixtureElement->Attribute("isSensor") == "true") colliders.isSensor[i] = true;
+          std::string type = fixtureElement->Attribute("type");
+          if (type == "POLYGON") {
+            tinyxml2::XMLElement *polygonElement = fixtureElement->FirstChildElement("polygon");
+            int numVertexes = polygonElement->IntAttribute("numVertexes");
+            std::vector<tmx::Vector2<float>> vertexes;
+            colliders.pointVecs.emplace_back(vertexes);
+            tinyxml2::XMLElement *vertexElement = polygonElement->FirstChildElement("vertex");
+            for (int j = 0; j < numVertexes; ++j) {
+              tmx::Vector2 vec = {vertexElement->FloatAttribute("x"), vertexElement->FloatAttribute("y")};
+              colliders.pointVecs[i].emplace_back(vec);
+              vertexElement = vertexElement->NextSiblingElement("vertex");
+            }
+            colliders.pointVecs[i].shrink_to_fit();
+          } else if (type == "CIRCLE") {
+            tinyxml2::XMLElement *circleElement = fixtureElement->FirstChildElement("circle");
+            Collision_Component::Circle circle;
+            circle.r = circleElement->FloatAttribute("radius");
+            circle.x = circleElement->FloatAttribute("x");
+            circle.y = circleElement->FloatAttribute("y");
+            colliders.circlesVecs.emplace_back(circle);
+          }
+          fixtureElement = fixtureElement->NextSiblingElement("fixture");
+        }
+      }
+      colliders.isSensor.shrink_to_fit();
+      colliders.pointVecs.shrink_to_fit();
+      colliders.circlesVecs.shrink_to_fit();
+      Collision_Component::houseColliders[bodyElement->Attribute("name")] = colliders;
+      bodyElement = bodyElement->NextSiblingElement("body");
+    }
+  }
+
   std::unordered_map<std::string, Rendering_Components::Sheet_Data> *Get_Texture_Data(int textureIndex, std::string &templateName, std::string img, std::string xml, std::string &tilesetName) {
     // get tileset name from texture path
     const char *imgPath;

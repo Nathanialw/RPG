@@ -75,7 +75,7 @@ namespace Collision {
 
     for (auto pointVec: pointVecs) {
       if (pointVec.size() > 0) {
-        b2PolygonShape rect;
+        b2PolygonShape polygon;
         b2Vec2 vertices[pointVec.size()];
 
         for (int i = 0; i < pointVec.size(); i++) {
@@ -83,11 +83,49 @@ namespace Collision {
         }
 
         int32 count = pointVec.size();
-        rect.Set(vertices, count);
+        polygon.Set(vertices, count);
 
-        body->CreateFixture(&rect, 0.0f);
+        body->CreateFixture(&polygon, 0.0f);
       }
     }
+  }
+
+  void Add_Polygon_Fixture(b2Body *body, std::vector<tmx::Vector2<float>> pointVec) {
+    if (pointVec.size() > 0) {
+      b2PolygonShape polygon;
+      b2Vec2 vertices[pointVec.size()];
+
+      for (int i = 0; i < pointVec.size(); i++) {
+        vertices[i].Set(pointVec[i].x, pointVec[i].y);
+      }
+
+      int32 count = pointVec.size();
+      polygon.Set(vertices, count);
+
+      body->CreateFixture(&polygon, 0.0f);
+    }
+  }
+
+  void Add_Circle_Fixture(b2Body *body, float radius) {
+    b2CircleShape circle;
+    circle.m_radius = radius;
+
+    body->CreateFixture(&circle, 0.0f);
+  }
+
+  b2Body *Add_Static_Body(entt::registry &zone, int &state, entt::entity &entity, Component::Position &position) {
+    //    auto &position = zone.get<Component::Position>(entity);
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_staticBody;
+    bodyDef.position.Set(position.x, position.y);
+    bodyDef.userData.entity_ID = (int) entity;
+    bodyDef.linearDamping = 0.0f;
+    bodyDef.angularDamping = 0.0f;
+
+    auto world = collisionList[state];
+    b2Body *body = world->CreateBody(&bodyDef);
+    zone.emplace_or_replace<Component::Body>(entity, body);
+    return body;
   }
 
   void Create_Static_Body(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, float radius) {
@@ -102,7 +140,7 @@ namespace Collision {
     b2Body *body = world->CreateBody(&bodyDef);
     zone.emplace_or_replace<Component::Body>(entity, body);
     auto &position = zone.get<Component::Position>(entity);
-    
+
     b2CircleShape circle;
     circle.m_radius = radius;
 
@@ -166,8 +204,23 @@ namespace Collision {
     }
   }
 
-  void Attach_Components(entt::registry &zone, int &state, entt::entity &entity, std::string &colliderType, float &radius, Component::Position &position, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
-    Set_Collision_Box(zone, state, entity, colliderType, position, aabb, pointVecs, line, radius);
+  void Attach_Components(entt::registry &zone, int &state, entt::entity &entity, Collision_Component::Collider_Data &colliderData) {
+    if (Collision_Component::houseColliders.contains(colliderData.name)) {
+      auto collider = Collision_Component::houseColliders.at(colliderData.name);
+      colliderData.position.x += colliderData.offset.x;
+      colliderData.position.y -= colliderData.offset.y;
+      b2Body *body = Collision::Add_Static_Body(zone, state, entity, colliderData.position);
+      for (int i = 0; i < collider.pointVecs.size(); ++i) {
+        if (!collider.isSensor[i]) {
+          Collision::Add_Polygon_Fixture(body, collider.pointVecs[i]);
+        }
+      }
+      for (auto &circle: collider.circlesVecs) {
+        Collision::Add_Circle_Fixture(body, colliderData.radius);
+      }
+    } else {
+      Set_Collision_Box(zone, state, entity, colliderData.colliderType, colliderData.position, colliderData.aabb, colliderData.pointVecs, colliderData.line, colliderData.radius);
+    }
     zone.emplace_or_replace<Component::Mass>(entity, 100.0f);
   }
 

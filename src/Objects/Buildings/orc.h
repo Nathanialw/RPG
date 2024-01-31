@@ -31,9 +31,7 @@ namespace Orc {
   void House(entt::registry &zone, int &state, std::string name) {
     if (Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
 
-      std::string buildingType = "buildings_human";
       int xmlIndex = -1;
-
       entt::entity entity = Create_Entities::Create_Render_Object(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
       Create_Entities::Set_On_Mouse(zone, entity);
     }

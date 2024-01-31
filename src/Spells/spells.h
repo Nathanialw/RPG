@@ -314,6 +314,4 @@ namespace Spells {
       }
     }
   }
-
-
 }// namespace Spells
