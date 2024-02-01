@@ -73,7 +73,9 @@ namespace Rendering {
   Rendering_Components::Offsets Set_Offset(entt::registry &zone, entt::entity &entity, std::string colliderType, Component::Position &position, float xOffset, float yOffset, Rendering_Components::Sprite_Sheet_Data &frame) {
     Rendering_Components::Sprite_Offset offset = {};
     if (colliderType == "rect") {
-      offset = {xOffset, yOffset};
+      //      offset = {xOffset, yOffset};
+      //      offset = {(float) frame.clip.w / 2.0f, (float) frame.clip.h / 2.0f};
+      offset = {xOffset / 2.0f, yOffset / 2.0f};
       //      position.y -= (float) frame.clip.h / 2.0f;
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "polygon") {

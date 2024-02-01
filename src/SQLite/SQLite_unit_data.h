@@ -537,11 +537,14 @@ namespace Entity_Loader {
     std::string race = "neutral";
     int whole_sprite = 1;
     std::string interior;
+    int direction;
   };
 
-  struct Interior_Building_Data{
+  struct Interior_Building_Data {
     float x_offset = 0.0f;
     float y_offset = 0.0f;
+    float x_collision_offset = 0.0f;
+    float y_collision_offset = 0.0f;
     std::string xml;
     std::string img;
   };
@@ -563,7 +566,7 @@ namespace Entity_Loader {
 
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite, interior FROM building_exteriors WHERE name = ";
+    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite, interior, direction FROM building_exteriors WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -592,6 +595,7 @@ namespace Entity_Loader {
       text = sqlite3_column_text(stmt, 9);
       data.interior = Get_String(text);
 
+      data.direction = sqlite3_column_int(stmt, 10);
     }
     return data;
   }
@@ -604,20 +608,53 @@ namespace Entity_Loader {
 
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT x_offset, y_offset, xml, png FROM building_interiors WHERE name = ";
+    const char *jj = "SELECT x_offset, y_offset, collision_offset_x, collision_offset_y, xml, png FROM building_interiors WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       data.x_offset = (float) sqlite3_column_double(stmt, 0);
       data.y_offset = (float) sqlite3_column_double(stmt, 1);
+      data.x_collision_offset = (float) sqlite3_column_double(stmt, 2);
+      data.y_collision_offset = (float) sqlite3_column_double(stmt, 3);
 
-      text = sqlite3_column_text(stmt, 2);
+      text = sqlite3_column_text(stmt, 4);
       data.xml = Get_String(text);
 
-      text = sqlite3_column_text(stmt, 3);
+      text = sqlite3_column_text(stmt, 5);
       data.img = Get_String(text);
     }
     return data;
+  }
+
+  std::string Increment_Direction(std::string name, int &direction) {// needs to search for  a specific row that I can input in the arguments
+    //check if the name exists??
+    direction++;
+    std::string unit_name = db::Append_Quotes(name);
+    const unsigned char *text;
+
+    std::string buildingName;
+    std::vector<std::string> directions;
+
+    sqlite3_stmt *stmt;
+    char buf[300];
+    const char *jj = "SELECT name FROM building_exteriors WHERE icon = ";
+    // AND direction == direction
+    strcpy(buf, jj);
+    strcat(buf, unit_name.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      text = sqlite3_column_text(stmt, 0);
+      buildingName = Get_String(text);
+
+      directions.emplace_back(buildingName);
+    }
+    if (direction >= directions.size()) {
+      direction = 0;
+      return directions[0];
+    } else {
+      return directions[direction];
+    }
   }
 }// namespace Entity_Loader

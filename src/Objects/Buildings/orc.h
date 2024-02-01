@@ -4,14 +4,12 @@
 
 namespace Orc {
 
-
   void Building_On_Mouse(entt::registry &zone, int &state) {
     //create the basic object on the mouse
     std::vector<std::vector<tmx::Vector2<float>>> pointVecs;
     Collision_Component::aabb aabb;
     Component::Line_Segment line = {};
 
-    //    int xmlIndex = Utilities::Get_Random_Number(1, Game_Objects_Lists::tilesets["buildings_orc"].size() - 1);
     std::string buildingType = "buildings_orc";
     std::string name = "Orc Tent 3 T2";
     int xmlIndex;
@@ -22,18 +20,15 @@ namespace Orc {
       return;
     }
     Create_Entities::PVG_Building(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex, aabb, pointVecs, line);
-
-    //set mouse obect to building
-
-    //when placed add collision box and interaction rect
   }
 
   void House(entt::registry &zone, int &state, std::string name) {
     if (Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
 
       int xmlIndex = -1;
-      entt::entity entity = Create_Entities::Create_Render_Object(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
-      Create_Entities::Set_On_Mouse(zone, entity);
+      auto mouseEntity = Create_Entities::Create_Render_Object(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
+      Mouse_Struct::mouseData.name = mouseEntity.name;
+      Create_Entities::Set_On_Mouse(zone, mouseEntity);
     }
   }
 
@@ -48,6 +43,4 @@ namespace Orc {
 
     Create_Entities::PVG_Building(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, Game_Objects_Lists::tilesets[buildingType].at(xmlIndex), xmlIndex, aabb, pointVecs, line);
   }
-
-
 }// namespace Orc

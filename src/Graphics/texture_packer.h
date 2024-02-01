@@ -303,6 +303,9 @@ namespace Texture_Packer {
       colliders.pointVecs.shrink_to_fit();
       colliders.circlesVecs.shrink_to_fit();
       Collision_Component::houseColliders[bodyElement->Attribute("name")] = colliders;
+      colliders.isSensor.clear();
+      colliders.pointVecs.clear();
+      colliders.circlesVecs.clear();
       bodyElement = bodyElement->NextSiblingElement("body");
     }
   }

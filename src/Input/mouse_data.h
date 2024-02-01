@@ -10,6 +10,8 @@ namespace Mouse_Struct {
     int index;
     Spell_Data::Skill_Tree tree;
     Component::Icon_Type type = Component::Icon_Type::none;
+    std::string name;
+    int direction;
     bool itemCurrentlyHeld = false;
   };
   Mouse_Data mouseData;

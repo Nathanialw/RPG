@@ -123,28 +123,31 @@ namespace Collision {
   }
 
   void Add_Polygon_Fixture(b2Body *body, std::vector<tmx::Vector2<float>> &pointVec, const bool &isSensor) {
-    if (pointVec.size() > 0) {
-      b2PolygonShape polygon;
-      b2Vec2 vertices[pointVec.size()];
+    if (pointVec.size() >= 3) {
+      if (pointVec.size() <= 8) {
+        b2PolygonShape polygon;
+        b2Vec2 vertices[pointVec.size()];
 
+        for (int i = 0; i < pointVec.size(); i++) {
+          vertices[i].Set(pointVec[i].x, pointVec[i].y);
+        }
 
-      for (int i = 0; i < pointVec.size(); i++) {
-        vertices[i].Set(pointVec[i].x, pointVec[i].y);
+        int32 count = pointVec.size();
+        polygon.Set(vertices, count);
+        b2FixtureDef fixture;
+
+        fixture.isSensor = isSensor;
+        fixture.shape = &polygon;
+        fixture.density = 0.0f;
+
+        body->CreateFixture(&fixture);
+        return;
       }
-
-      int32 count = pointVec.size();
-      polygon.Set(vertices, count);
-      b2FixtureDef fixture;
-
-      fixture.isSensor = isSensor;
-      fixture.shape = &polygon;
-      fixture.density = 0.0f;
-      if (fixture.isSensor) {
-        Utilities::Log("is a sensor");
-      }
-
-      body->CreateFixture(&fixture);
+      Utilities::Log("too many vertices in the polygon, max 8, current: " + std::to_string(pointVec.size()));
+      return;
     }
+    Utilities::Log("too few vertices in the polygon, min 3, current: " + std::to_string(pointVec.size()));
+    return;
   }
 
   void Add_Circle_Fixture(b2Body *body, float radius) {
@@ -248,6 +251,7 @@ namespace Collision {
   void Attach_Components(entt::registry &zone, int &state, entt::entity &entity, Collision_Component::Collider_Data &colliderData) {
     if (Collision_Component::houseColliders.contains(colliderData.name)) {
       auto collider = Collision_Component::houseColliders.at(colliderData.name);
+      colliderData.position.x -= colliderData.offset.x;
       colliderData.position.y -= colliderData.offset.y;
       b2Body *body = Collision::Add_Static_Body(zone, state, entity, colliderData.position);
       for (int i = 0; i < collider.pointVecs.size(); ++i) {

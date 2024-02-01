@@ -1,7 +1,7 @@
 #pragma once
-#include "item_components.h"
-#include "components.h"
 #include "action_components.h"
+#include "components.h"
+#include "item_components.h"
 #include "spell_components.h"
 //#include "Fire/fire.h"
 
@@ -19,6 +19,7 @@ namespace Spell_Data {
     air,
     life,
     death,
+    extra,
     SIZE
   };
 
@@ -33,17 +34,16 @@ namespace Spell_Data {
   public:
     Component::Icon icon;
     Spells::castSpell cast;
-//    Spells::castEffect effect;
-//    Spells::spellHit hit;
+    //    Spells::castEffect effect;
+    //    Spells::spellHit hit;
     Skill_Tree tree;
     int index;
 
     //constructor
     Spell() {
-
     }
 
-    Spell(SDL_Texture* texture) {
+    Spell(SDL_Texture *texture) {
       icon.pBackground = Graphics::emptyBagIcon;
       icon.pTexture = texture;
       icon.pIconRarityBorder = Item_Component::rarityBorder[Item_Component::Rarity::common];
@@ -60,7 +60,7 @@ namespace Spell_Data {
       range = 0;
     }
 
-    Spell(SDL_Texture* texture, Spells::castSpell spell) {
+    Spell(SDL_Texture *texture, Spells::castSpell spell) {
       icon.pBackground = Graphics::emptyBagIcon;
       icon.pTexture = texture;
       icon.pIconRarityBorder = Item_Component::rarityBorder[Item_Component::Rarity::common];
@@ -79,8 +79,8 @@ namespace Spell_Data {
     }
     //function to cast the spell
     static int Cast(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int index, float &x, float &y) {
-//      Spells::Cast_Spell(zone, entity, action, index, x, y);
+      //      Spells::Cast_Spell(zone, entity, action, index, x, y);
       return 0;
     }
   };
-}
+}// namespace Spell_Data

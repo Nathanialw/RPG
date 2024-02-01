@@ -202,14 +202,19 @@ namespace Event_Handler {
             }
           }
         } else {
+          //set building
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
-            //set building
-            if (Create_Entities::Create_Object(zone, state, Mouse::mouseItem)) {
-              Create_Entities::Remove_From_Mouse(zone, Mouse::mouseItem);
-              return;
-            };
+            //destroy the previous mouse entity
+            zone.destroy(Mouse::mouseItem);
+            //go into the db and get all with the icon name of the same,
+            std::string name = Entity_Loader::Increment_Direction(Mouse_Struct::mouseData.name, Mouse_Struct::mouseData.direction);
+            // plug it into Create_Render_Object()
+            int xmlIndex = -1;
+            auto mouseEntity = Create_Entities::Create_Render_Object(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
+            Create_Entities::Set_On_Mouse(zone, mouseEntity);
+          } else {
+            UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
           }
-          UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
         }
       }
     }

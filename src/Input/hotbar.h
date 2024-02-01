@@ -82,9 +82,20 @@ namespace Hotbar {
   }
 
   int Menu_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-    if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI) {
-      UI::bToggleCharacterUI = false;
-      UI_Spellbook::spellbook.b_isOpen = false;
+    if (Mouse_Struct::mouseData.type == Component::Icon_Type::building || UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen) {
+      if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
+        Mouse_Struct::mouseData.type = Component::Icon_Type::none;
+        Mouse_Struct::mouseData.name = "";
+        zone.destroy(Mouse::mouseItem);
+        Mouse::mouseItem = Mouse::cursor_ID;
+        Mouse_Struct::mouseData.mouseItem = Mouse::cursor_ID;
+        Mouse_Struct::mouseData.itemCurrentlyHeld = false;
+      }
+      if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen) {
+        UI::bToggleCharacterUI = false;
+        UI_Spellbook::spellbook.b_isOpen = false;
+        UI_Info::spellbook.b_isOpen = false;
+      }
       return 0;
     }
     Menu::Toggle();
