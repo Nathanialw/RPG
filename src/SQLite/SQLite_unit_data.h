@@ -531,11 +531,19 @@ namespace Entity_Loader {
     float x_offset = 0.0f;
     float y_offset = 0.0f;
     float radius = 0.0f;
-    std::string sprite_layout = "";
-    std::string xml = "";
-    std::string img = "";
+    std::string sprite_layout;
+    std::string xml;
+    std::string img;
     std::string race = "neutral";
     int whole_sprite = 1;
+    std::string interior;
+  };
+
+  struct Interior_Building_Data{
+    float x_offset = 0.0f;
+    float y_offset = 0.0f;
+    std::string xml;
+    std::string img;
   };
 
   std::string Get_String(const unsigned char *text) {
@@ -555,7 +563,7 @@ namespace Entity_Loader {
 
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite FROM building_exteriors WHERE name = ";
+    const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite, interior FROM building_exteriors WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -580,6 +588,35 @@ namespace Entity_Loader {
       data.race = Get_String(text);
 
       data.whole_sprite = sqlite3_column_int(stmt, 8);
+
+      text = sqlite3_column_text(stmt, 9);
+      data.interior = Get_String(text);
+
+    }
+    return data;
+  }
+
+  Interior_Building_Data Get_Interior_Building_Data(std::string &name) {// needs to search for  a specific row that I can input in the arguments
+    //check if the name exists??
+    std::string unit_name = db::Append_Quotes(name);
+    Interior_Building_Data data;
+    const unsigned char *text;
+
+    sqlite3_stmt *stmt;
+    char buf[300];
+    const char *jj = "SELECT x_offset, y_offset, xml, png FROM building_interiors WHERE name = ";
+    strcpy(buf, jj);
+    strcat(buf, unit_name.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      data.x_offset = (float) sqlite3_column_double(stmt, 0);
+      data.y_offset = (float) sqlite3_column_double(stmt, 1);
+
+      text = sqlite3_column_text(stmt, 2);
+      data.xml = Get_String(text);
+
+      text = sqlite3_column_text(stmt, 3);
+      data.img = Get_String(text);
     }
     return data;
   }

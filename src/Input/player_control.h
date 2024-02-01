@@ -117,7 +117,7 @@ namespace Player_Control {
       Action_Component::Set_State(action, Action_Component::kneel);
       Interact_With_Object(zone, entity_ID, target_ID, targetPosition);
       Clear_Moving(zone, entity_ID, velocity);
-//      Drop_Item(zone, entity_ID, target_ID, targetPosition);
+      //      Drop_Item(zone, entity_ID, target_ID, targetPosition);
       return true;
     }
     return false;
@@ -219,40 +219,8 @@ namespace Player_Control {
     }
   }
 
-  //    void Mouse_Move_Arrived_Pickup_Item(entt::registry & zone, bool &isItemCurrentlyHeld) {
-  //      auto view = zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Pickup_Item>();
-  //      for (auto entity: view) {
-  //        auto &action = view.get<Action_Component::Action>(entity);
-  //        auto &v = view.get<Component::Velocity>(entity);
-  //        const auto &position = view.get<Component::Position>(entity);
-  //        auto &itemData = view.get<Component::Pickup_Item>(entity);
-  //        if (Check_If_Arrived(position.x, position.y, itemData.x, itemData.y)) {
-  //          if (action.state == Action_Component::Action_State::walk) {
-  //            v.magnitude.x = 0.0f;
-  //            v.magnitude.y = 0.0f;
-  //            Action_Component::Set_State(action, Action_Component::Action_State::idle);
-  //            zone.remove<Component::Moving>(entity);
-  //          }
-  //
-  //          //pickup Item
-  //          UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, itemData, isItemCurrentlyHeld);
-  //          zone.remove<Component::Pickup_Item>(entity);
-  //        }
-  //        //      if (action.state == Action_Component::Action_State::idle) {
-  //        //        zone.remove<Component::Moving>(entity);
-  //        //        zone.remove<Component::Pickup_Item>(entity);
-  //        //      }
-  //      }
-
-
-  //  void Move_To_Item_Routine(entt::registry &zone, bool isItemCurrentlyHeld) {
-  //    Mouse_Move_To_Item();
-  //    //    Mouse_Move_Arrived_Pickup_Item(zone, isItemCurrentlyHeld);
-  //  }
-
   void Move_To_Atack_Routine(entt::registry &zone, int &state) {
     Mouse_Move_To_Item(zone, state);
     Mouse_To_Target(zone, state);
-    //		Mouse_Move_Arrived_Attack_Target(zone);
   }
 }// namespace Player_Control

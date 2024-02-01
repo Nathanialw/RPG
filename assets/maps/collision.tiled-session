@@ -1,0 +1,978 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/buildings/human/civilized/Medieval_Expansion_Buildings.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/buildings/orc/village/Orc 1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/buildings/viking/Viking Pack.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/castle/Medieval_Expansion_Castle1_56.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/castle/Medieval_Expansion_Castle1_7.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/environment/forest/forest_background.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/environment/forest/forest_objects.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/environment/ground_tiles/beach/Beach_1_Tile.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/environment/ground_tiles/grass/Grass_15_Tile.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/environment/trees/deciduous/tree_01_00.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/ground_tiles/grassland_tiles_x2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/objects/blood/Blood 1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/1st_cast/humans/female/Addon_Female_Base2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/elf/female/Female_ArcherElven.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/elf/male/Male_ArcherElven.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/fleshbeast/male/Meat_Zombie.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/female/Female_1930s_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/female/Female_Battleguard.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/female/Female_Mage.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/female/Female_Nurse.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/female/Female_Princess.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/female/Female_Valkyrie.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/male/Male_Archer.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/male/Male_Battleguard.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/male/Male_BeastMaster.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/male/Male_Berserker.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/male/Male_Commoner_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/male/Male_Druid.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/male/Male_Miner.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/male/Male_Monk.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/human/male/Male_Musketeer.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/orcs/female/Female_Orc_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/orcs/male/Male_Orc_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/2nd_cast/skeletons/male/Male_Skeleton.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/female/Medieval_HighSeas_Female_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/female/Medieval_HighSeas_Female_2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/female/Medieval_HighSeas_Female_4.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/female/Medieval_KT_Female_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/female/Medieval_PB_Female_4.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/male/Medieval_HighSeas_Male_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/male/Medieval_KT_Male_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_Interiors_Premade_Female_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_Interiors_Premade_Female_2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_Interiors_Premade_Female_3.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_Interiors_Premade_Female_4.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_Interiors_Premade_Female_5.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_Interiors_Premade_Female_6.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_TC_Premade_Female_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_TC_Premade_Female_2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_TC_Premade_Female_3.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_TC_Premade_Female_4.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_TC_Premade_Female_5.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/female/Medieval_TC_Premade_Female_6.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_Dungeons_Prisoner_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_Dungeons_Prisoner_2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_Dungeons_Prisoner_3.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_Interiors_Premade_Male_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_Interiors_Premade_Male_2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_Interiors_Premade_Male_3.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_Interiors_Premade_Male_4.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_Interiors_Premade_Male_5.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_Interiors_Premade_Male_6.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_TC_Premade_Male_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_TC_Premade_Male_2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_TC_Premade_Male_3.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_TC_Premade_Male_4.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_TC_Premade_Male_5.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/3rd_cast/human/premade/male/Medieval_TC_Premade_Male_6.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/Demons/Daemon_Infernum.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/Demons/Medieval_Dungeons_Balron.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/hostile/rats/Medieval_Dungeons_Ratman.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/hostile/rats/Medieval_Dungeons_RodentofUnusualSize.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/hostile/spiders/GiantSpider_Striped.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/hostile/wolves/RTP_GrayWolf.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/hostile/wolves/Wolf_Arctic.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/hostile/wolves/Wolf_Black.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/hostile/wolves/Wolf_Timber.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/dog/Medieval_TC_Dog1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/dog/Medieval_TC_Dog2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/donkey/Donkey_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/donkey/Donkey_2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/donkey/Donkey_3.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/donkey/Donkey_4.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/farm_animals/Chicken_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/farm_animals/Medieval_TC_Cow1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/farm_animals/Medieval_TC_Cow2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/farm_animals/Medieval_TC_Pig1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/farm_animals/Medieval_TC_Pig2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/farm_animals/Turkey_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/wild_animals/Buck.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/wild_animals/Doe.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/wild_animals/Medieval_TC_Buck.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/wild_animals/Medieval_TC_Doe.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/wild_animals/Medieval_TC_WolfBlack.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/animals/neutral/wild_animals/Medieval_TC_WolfTimber.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/monsters/dragons/red_dragon.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/monsters/ogres/Medieval_Dungeons_Bugbear.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/monsters/ogres/Medieval_Dungeons_Ogre.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/monsters/ogres/RTP_Ogre.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/townsfolk/Medieval_Interiors_Child_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/townsfolk/Medieval_Interiors_Child_2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/townsfolk/Medieval_Interiors_Child_3.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/townsfolk/Medieval_Interiors_Child_4.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/townsfolk/Medieval_TC_Child_1.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/townsfolk/Medieval_TC_Child_2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/townsfolk/Medieval_TC_Child_3.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/townsfolk/Medieval_TC_Child_4.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/nathanial/Workspace/RPG/assets/sprite_sheets/units/townsfolk/Medieval_Townfolk_Child_1.tsx": {
+            "scaleInDock": 1
+        },
+        "buildings.tsx": {
+            "dynamicWrapping": true
+        },
+        "forest.tmx": {
+            "scale": 0.041015625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 73728,
+                "y": 36864
+            }
+        },
+        "hell.tmx": {
+            "scale": 0.015625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 73728,
+                "y": 45888
+            }
+        },
+        "rule1.tmx": {
+            "scale": 1.246875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 512.4812030075188,
+                "y": 256.64160401002505
+            }
+        },
+        "sprite_sheets/buildings/fences/Medieval_Expansion_Fences.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/buildings/houses/Medieval_Expansion_House_9.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/buildings/houses/Medieval_Expansion_Ruins_13.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/castle/Medieval_Expansion_Castle1_47.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/castle/Medieval_Expansion_Castle1_56.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/castle/Medieval_Expansion_Castle1_7.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/environment/trees/broken_trees/BrokenTree22_5.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/environment/trees/tree_01_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/environment/trees/tree_01_01.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/environment/trees/tree_01_02.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/environment/trees/tree_01_03.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/environment/trees/tree_01_04.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/environment/trees/tree_01_05.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/environment/trees/tree_01_06.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/environment/trees/tree_01_07.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/ground_tiles/Medieval_Expansion_GroundDecals_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/ground_tiles/grass/Grass_21_Decal.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/ground_tiles/grassland_tiles_x2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/Addon_Female_Base1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/female/Addon_Female_Base2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/female/Addon_Female_Base3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/female/RTP_1_Female.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/female/RTP_2_Female.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/female/RTP_3_Female.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/male/Addon_Male_Base1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/male/Addon_Male_Base2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/male/Addon_Male_Base3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/male/RTP_1_Male.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/male/RTP_2_Male.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/1st_cast/humans/male/RTP_3_Male.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/elf/female/Female_ArcherElven.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/elf/male/Male_ArcherElven.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/fleshbeast/male/Meat_Zombie.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_1930s_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Archer.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Assassin.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Bard.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Battleguard.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Beastmaster.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Druid.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Footman.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Jester.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Knight.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Mage.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Musketeer.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_MythosLady_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Necromancer.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Nurse.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Princess.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Rogue.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Shieldmaiden.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Valkyrie.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_Witch.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/female/Female_WitchHunter.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Archer.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Assassin.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Battleguard.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_BeastMaster.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Berserker.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Commoner_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Druid.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Footman.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Knight.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Mage.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Miner.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Monk.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Musketeer.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Necromancer.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Prince.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_Rogue.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_WWIIAllies_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_WWIIAllies_3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_WWIIAxis_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_WWIIAxis_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_WWIIAxis_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/human/male/Male_WitchHunter.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/orcs/female/Female_Orc_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/orcs/male/Male_Orc_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/skeletons/Skeleton_Base.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/zombie/female/Female_Zombie.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/zombie/male/Male_Walker.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/2nd_cast/zombie/male/Male_Zombie.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/Medieval_Underdeep_Drow_Female_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/Medieval_Underdeep_Drow_Female_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/Medieval_Underdeep_Drow_Male_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/Medieval_Underdeep_Drow_Male_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/female/Medieval_HighSeas_Female_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/female/Medieval_HighSeas_Female_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/female/Medieval_HighSeas_Female_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/female/Medieval_KT_Female_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/female/Medieval_PB_Female_3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/female/Medieval_Warfare_Female_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/male/Medieval_HighSeas_Male_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/male/Medieval_HighSeas_Male_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/male/Medieval_KT_Male_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/male/Medieval_PB_Male_3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/male/Medieval_PB_Male_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/male/Medieval_Warfare_Male_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/3rd_cast/human/male/Medieval_Warfare_Male_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/5th_cast/zombies/Zombie_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/5th_cast/zombies/Zombie_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/5th_cast/zombies/Zombie_3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/5th_cast/zombies/Zombie_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/5th_cast/zombies/Zombie_5.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/5th_cast/zombies/Zombie_6.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_Bone.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_Hounds.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_Howler.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_Infernal.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_InfernalGreater.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_InfernalWingless.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Daemon_PitLord.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/HellChicken.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/HellSpawn_Black_Brown.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/HellSpawn_Gray_Red.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/HellWarden.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/Demons/Male_DaemonKnight.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/GiantSpider_Black.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/GiantSpider_BlueSpotted.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/GiantSpider_Poison.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/GiantSpider_Striped.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/spiders/RTP_GiantSpider.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/RTP_GrayWolf.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/Wolf_Arctic.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/Wolf_Black.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/Wolf_Dire.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/hostile/wolves/Wolf_Timber.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/cat/Cat_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/cat/Cat_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/cat/Cat_3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/cat/Cat_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/cat/Cat_5.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/cat/Cat_6.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/cat/RTP_Cat1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/dog/Dog_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/dog/Dog_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/dog/Dog_3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/dog/Dog_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/dog/Dog_5.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/dog/Dog_6.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/dog/RTP_Dog1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/donkey/Donkey_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/donkey/Donkey_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/donkey/Donkey_3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/donkey/Donkey_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/farm_animals/Chicken_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/farm_animals/Turkey_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/horse/Horse_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/horse/Horse_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/horse/Horse_3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/horse/Horse_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/horse/Horse_5.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/horse/Horse_6.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/wild_animals/Buck.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/animals/neutral/wild_animals/Doe.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/cow_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/dwarves/Medieval_Underdeep_Dwarves_Male_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/dwarves/Medieval_Underdeep_Dwarves_Male_2.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/dwarves/Medieval_Underdeep_Dwarves_Male_3.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/dwarves/Medieval_Underdeep_Dwarves_Male_4.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/dwarves/Medieval_Underdeep_Dwarves_Male_5.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/Bow_Hobgoblin_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/armoured_skeleton_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/goblin_high_shaman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/goblin_high_shaman_01.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/goblin_shaman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/goblin_spearman_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/goblin_spearman_01.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/goblin_spearman_02.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/goblin_spearman_03.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/grey_werebear_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/minotaur_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/rock_golem_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/skeleton_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/skeleton_mage_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/skeleton_occultist_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/troll_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/werewolf_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/wolf_riders.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/flare/zombie_00.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/goblins/goblin_bases_1-6.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/goblins/goblin_bases_7-12.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/goblins/goblin_basic.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/dragons/red_dragon.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/dragons/wyvern_gray.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/giants/giant_air.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/giants/giant_fire.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/giants/uruk_crusher.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/giants/uruk_soldier.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/ogres/RTP_Ogre.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/monsters/trolls/Troll.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/townsfolk/Medieval_Townfolk_Child_1.tsx": {
+            "scaleInDock": 1
+        },
+        "sprite_sheets/units/townsfolk/Medieval_Townfolk_Female_Merchant.tsx": {
+            "scaleInDock": 1
+        },
+        "untitled.tmx": {
+            "scale": 0.64125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 640.9356725146199,
+                "y": 640.9356725146199
+            }
+        },
+        "untitled3.tmx": {
+            "scale": 0.041015625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 24576,
+                "y": 12288
+            }
+        }
+    },
+    "openFiles": [
+    ],
+    "project": "collision.tiled-project",
+    "recentFiles": [
+        "forest.tmx",
+        "rule1.tmx",
+        "hell.tmx",
+        "untitled.tmx",
+        "untitled3.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 1
+}

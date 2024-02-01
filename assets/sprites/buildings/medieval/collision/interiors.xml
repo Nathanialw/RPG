@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with http://www.physicseditor.de -->
+<bodydef version="1.0">
+    <bodies numBodies="64">
+
+        <body name="Medieval RTP Interiors_Interior1_1" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior1_2" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior1_3" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior1_4" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior1_5" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior1_6" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior1_7" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior2_1" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior2_2" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior2_3" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior2_4" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior2_5" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior2_6" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior2_7" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior2_8" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior3_1" dynamic="false" numFixtures="6">
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="-317.5000" y="-68.5000" />
+
+                    <vertex x="-316.5000" y="-78.5000" />
+
+                    <vertex x="234.5000" y="-79.5000" />
+
+                    <vertex x="236.5000" y="-68.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="-292.5000" y="-61.5000" />
+
+                    <vertex x="-294.5000" y="540.5000" />
+
+                    <vertex x="-312.5000" y="539.5000" />
+
+                    <vertex x="-311.5000" y="-62.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="240.5000" y="-65.5000" />
+
+                    <vertex x="238.5000" y="536.5000" />
+
+                    <vertex x="220.5000" y="535.5000" />
+
+                    <vertex x="221.5000" y="-66.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="-287.5000" y="545.5000" />
+
+                    <vertex x="-289.5000" y="529.5000" />
+
+                    <vertex x="-132.5000" y="531.5000" />
+
+                    <vertex x="-134.5000" y="548.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="217.5000" y="526.5000" />
+
+                    <vertex x="220.5000" y="540.5000" />
+
+                    <vertex x="58.5000" y="545.5000" />
+
+                    <vertex x="57.5000" y="528.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="-281.5000" y="-63.5000" />
+
+                    <vertex x="218.5000" y="-64.5000" />
+
+                    <vertex x="217.5000" y="524.5000" />
+
+                    <vertex x="-290.5000" y="525.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior3_2" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior3_3" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior3_4" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior3_5" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior3_6" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior3_7" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior3_8" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior4_1" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior4_2" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior4_3" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior4_4" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior4_5" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior5_1" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior5_2" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior5_3" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval RTP Interiors_Interior5_4" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior1_1" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior1_2" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior1_3" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior1_4" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior1_5" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior1_6" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior1_7" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior1_8" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior2_1" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior2_2" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior2_3" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior2_4" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior2_5" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior2_6" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior2_7" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior2_8" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior3_1" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior3_2" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior3_3" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior3_4" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior3_5" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior3_6" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior3_7" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior3_8" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior4_1" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior4_2" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior4_3" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior4_4" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior4_5" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior4_6" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior4_7" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="Medieval Town Building Pieces_Interior4_8" dynamic="true" numFixtures="0">
+
+        </body>
+
+    </bodies>
+    <metadata>
+        <format>1</format>
+        <ptm_ratio></ptm_ratio>
+    </metadata>
+</bodydef>
