@@ -30,6 +30,17 @@ SDL_FRect Position_For_Render(std::unordered_map<std::string, Rendering_Componen
   return renderRect;
 }
 
+SDL_FRect Position_Image_For_Render(std::unordered_map<std::string, Rendering_Components::Image_Data> *imageData, std::string &name, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Rendering_Components::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect, Component::Interaction_Rect &interactionRect) {
+  clipRect = {0, 0, imageData->at(name).w, imageData->at(name).h};
+  renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
+  renderRect.x = -offset.x + position.x;
+  renderRect.y = -offset.y + position.y;
+  interactionRect.rect = renderRect;
+  renderRect.x -= camera.screen.x;
+  renderRect.y -= camera.screen.y;
+  return renderRect;
+}
+
 void Render_Equipment(Rendering_Components::Equipment_Sprites &equipment, Component::Scale &scale, Rendering_Components::Sprite_Sheet_Info &sheetData, Component::Camera &camera, Component::Position &position, Component::Renderable &renderable, Rendering_Components::Sprite_Offset &spriteOffset) {
   SDL_Rect clipRect;
   for (auto item: equipment.sheet) {
@@ -78,11 +89,33 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
     SDL_SetTextureBlendMode(texture, SDL_BlendMode::SDL_BLENDMODE_ADD);
     Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
     SDL_SetTextureBlendMode(texture, SDL_BlendMode::SDL_BLENDMODE_BLEND);
+  } else if (sheetData.blendType == Rendering_Components::reanimated) {
+    Graphics::Render_FRect(texture, {155, 55, 55}, &clipRect, &renderRect);
+  } else {
+    Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
   }
-  else if (sheetData.blendType == Rendering_Components::reanimated) {
-    Graphics::Render_FRect(texture, {155,55,55}, &clipRect, &renderRect);
+}
+
+void Render_Image(entt::registry &zone, entt::entity &entity, Component::Camera &camera, Component::Scale &scale, Component::Renderable &renderable, Component::Position &position, Rendering_Components::Sprite_Offset &spriteOffset, Rendering_Components::Sprite_Sheet_Info &sheetData) {
+  SDL_Rect clipRect;
+  SDL_FRect renderRect;
+
+  if (zone.any_of<Component::Interaction_Rect>(entity)) {
+    auto interactionRect = zone.get<Component::Interaction_Rect>(entity);
+    renderRect = Position_Image_For_Render(sheetData.imageData, sheetData.sheet_name, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
+  } else {
+    Component::Interaction_Rect interactionRect = {};
+    renderRect = Position_Image_For_Render(sheetData.imageData, sheetData.sheet_name, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
   }
-  else {
+  SDL_Texture *texture = sheetData.imageData->at(sheetData.sheet_name).texture;
+  SDL_SetTextureAlphaMod(texture, renderable.alpha);
+  if (sheetData.blendType == Rendering_Components::ghost) {
+    SDL_SetTextureBlendMode(texture, SDL_BlendMode::SDL_BLENDMODE_ADD);
+    Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
+    SDL_SetTextureBlendMode(texture, SDL_BlendMode::SDL_BLENDMODE_BLEND);
+  } else if (sheetData.blendType == Rendering_Components::reanimated) {
+    Graphics::Render_FRect(texture, {155, 55, 55}, &clipRect, &renderRect);
+  } else {
     Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
   }
 }
@@ -93,6 +126,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
   auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
   auto mounts = zone.view<Component::Renderable, Rendering_Components::Mount_Sprite>();
   auto buffs = zone.view<Component::Renderable, Rendering_Components::Buff_Sprites>();
+  auto interiors = zone.view<Component::Renderable, Rendering_Components::Interior_Sheet_Info>();
 
   Debug::settingsValue[Debug::NumRendered] = view1.size_hint();
   for (auto entity: view1) {
@@ -127,6 +161,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
         Update_Packer_Linear_Frame(action.frameTime, sheetData.frameIndex, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed);
         Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
       } else {
+        //if it is how interior
         //if it has an aura  render it
         if (buffs.contains(entity)) {
           auto &buffSprites = buffs.get<Rendering_Components::Buff_Sprites>(entity);
@@ -135,7 +170,6 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
         if (mounts.contains(entity)) {
           //                render horse half behind unit
         }
-
         //                render unit
         Frame_Increment(zone, entity, scale, sheetData, action, direction);
         Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
@@ -150,9 +184,18 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
           //                render horse half in front unit
         }
       }
-    } else {
+    } else if (sheetData.imageData) {
+      if (sheetData.interior) {
+        auto &interior = interiors.get<Rendering_Components::Interior_Sheet_Info>(entity);
+        Rendering_Components::Sprite_Offset interiorOffset = interior.offset;
+        interiorOffset.y -= interior.offset.y;
+        Render_Image(zone, entity, camera, scale, renderable, position, interiorOffset, interior.interior);
+      } else {
+        Render_Image(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
+      }
+      // render it as a single frame
+    } else
       Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL, probably item on ground with no sprite");
-    }
   }
-  //        std::cout << "\n";
 }
+//        std::cout << "\n";

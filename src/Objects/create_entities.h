@@ -88,25 +88,40 @@ namespace Create_Entities {
 
     if (data.sprite_layout == "PVG") {
       ///get texture data
-      Rendering::Sheet_Data sheetData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
-      if (!sheetData.packerframeData) return entity;
+      Rendering::Sheet_Data frameData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
 
-      Rendering_Components::Sprite_Sheet_Data frame = sheetData.frame;
+      Rendering_Components::Sprite_Sheet_Data frame = frameData.frame;
       auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
+      Rendering_Components::Offsets offset = Rendering::Set_Offset(zone, entity, data.collider_type, position, data.x_offset, data.y_offset, frame);
+      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, offset.offset);
 
-      //attach collider
-      Rendering_Components::Sprite_Offset offset = Rendering::Set_Offset(zone, entity, data.collider_type, position, data.x_offset, data.y_offset, frame);
+      if (!data.interior.empty()) {
+        //interior sprite needs to be centered on the exterior sprite fot them to line up
+        Entity_Loader::Interior_Building_Data interiorData = Entity_Loader::Get_Interior_Building_Data(data.interior);
+        Rendering::Sheet_Data interiorFrameData = Rendering::Set_Render_Interior(zone, entity, data.interior, xmlIndex, interiorData.img, interiorData.xml);
+        Rendering_Components::Sprite_Sheet_Data interiorFrame = interiorFrameData.frame;
 
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
+        auto &interiorSheetData = zone.get<Rendering_Components::Interior_Sheet_Info>(entity);
+        interiorSheetData.position = {x, y};
+        Rendering_Components::Offsets interiorOffset = Rendering::Set_Offset(zone, entity, "rect", interiorSheetData.position, interiorData.x_offset, interiorData.y_offset, interiorFrame);
+        interiorSheetData.offset = interiorOffset.offset;
+        offset.colliderOffset = {0.0f, (float) frameData.imageData->at(templateName).h / 2.0f};
 
-      SDL_Rect clipRect = sheetData.frame.clip;
+        zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::building);
+      } else {
+        //only use this interaction rect if the building doesn't have an interior
+        zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
+      }
+
+      SDL_Rect clipRect = frameData.frame.clip;
       Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius, clipRect);
+
+      zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
 
       Social_Control::Entity(zone, entity, data.race);
       zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
       zone.emplace_or_replace<Component::Name>(entity, templateName);
-      zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offset, data.radius, position, data.collider_type);
+      zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offset.colliderOffset, data.radius, position, data.collider_type);
     }
     return entity;
   }
@@ -127,6 +142,7 @@ namespace Create_Entities {
 
   bool Create_Object(entt::registry &zone, int state, entt::entity &entity) {
     auto colliderData = zone.get<Collision_Component::Collider_Data>(entity);
+    Utilities::Log(colliderData.position.y);
     zone.remove<Collision_Component::Collider_Data>(entity);
     Collision::Attach_Components(zone, state, entity, colliderData);
 

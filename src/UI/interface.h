@@ -39,8 +39,8 @@ namespace Interface {
         x.x *= 0.9f;
         x.y *= 0.9f;
         if (x.y < 0.75f) {
-//          x.x = 0.75f;
-//          x.y = 0.75f;
+          //          x.x = 0.75f;
+          //          x.y = 0.75f;
         }
         SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
       }
@@ -134,7 +134,7 @@ namespace Interface {
   }
 
   void Update_Interaction_Box(entt::registry &zone) {
-    auto view = zone.view<Component::Interaction_Rect, Component::Position, Component::Radius, Component::Renderable>();
+    auto view = zone.view<Component::Interaction_Rect, Component::Position, Component::Radius, Component::Renderable>(entt::exclude<Rendering_Components::Showing_Interior>);
 
     for (auto entity: view) {
       auto &position = view.get<Component::Position>(entity);
@@ -190,7 +190,9 @@ namespace Interface {
 
       SDL_Rect srcRect = {0, 0, 32, 32};
       SDL_FRect d = {Mouse::iXMouse, Mouse::iYMouse, 32.0f / componentCamera.scale.x, 32.0f / componentCamera.scale.y};
-      SDL_RenderCopyF(Graphics::renderer, zone.get<Component::Icon>(Mouse::mouseItem).pBackground, &srcRect, &d);
+      if (zone.any_of<Component::Icon>(Mouse::mouseItem)) {
+        SDL_RenderCopyF(Graphics::renderer, zone.get<Component::Icon>(Mouse::mouseItem).pBackground, &srcRect, &d);
+      }
     }
   }
 

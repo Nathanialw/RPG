@@ -21,6 +21,7 @@ namespace Texture_Packer {
   ///on init we need to do it parse the SQLite db for all sprite sheets names "texture_packer" and use the result to preallocate all the nodes of the std::unordered_map
 
   std::unordered_map<std::string, Rendering_Components::Sheet_Data> Packer_Textures;
+  std::unordered_map<std::string, Rendering_Components::Image_Data> Image_Textures;
 
   struct Type_Data {
     std::string type;
@@ -145,15 +146,14 @@ namespace Texture_Packer {
     return &Packer_Textures;
   }
 
-  bool Import_Tileset_Texture(int textureIndex, Rendering_Components::Sheet_Data &spritesheet, const char *imgPath) {
+  SDL_Texture *Import_Tileset_Texture(int textureIndex, SDL_Texture *texture, const char *imgPath) {
+    texture = Graphics::Create_Game_Object(textureIndex, imgPath);
 
-    spritesheet.texture = Graphics::Create_Game_Object(textureIndex, imgPath);
-
-    if (spritesheet.texture == NULL) {
-      std::cout << "No texture found from image path: " << imgPath << ", texture: " << spritesheet.texture << std::endl;
-      return false;
+    if (texture == NULL) {
+      std::cout << "No texture found from image path: " << imgPath << ", texture: " << texture << std::endl;
+      return texture;
     }
-    return true;
+    return texture;
   }
 
   std::unordered_map<std::string, Rendering_Components::Sheet_Data> *TexturePacker_Import_Linear(std::string &templateName, std::string &xml_path, SDL_Texture *texture) {
@@ -307,7 +307,12 @@ namespace Texture_Packer {
     }
   }
 
-  std::unordered_map<std::string, Rendering_Components::Sheet_Data> *Get_Texture_Data(int textureIndex, std::string &templateName, std::string img, std::string xml, std::string &tilesetName) {
+  struct Sheet_Data {
+    std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerData;
+    std::unordered_map<std::string, Rendering_Components::Image_Data> *imageData;
+  };
+
+  Sheet_Data Get_Texture_Data(int textureIndex, std::string &templateName, std::string img, std::string xml, std::string &tilesetName) {
     // get tileset name from texture path
     const char *imgPath;
     std::string imgPathStr = "assets/" + img;
@@ -316,39 +321,58 @@ namespace Texture_Packer {
     tilesetName = base_filename.substr(0, p);
 
     // return texture data if it is already loaded
-    if (Packer_Textures[tilesetName].texture) {
-      //std::cout << "Tileset already loaded: " << tilesetName << std::endl;
-      return &Packer_Textures;
-    }
+
 
     std::cout << "Loading: " << textureIndex << ", " << templateName << ", " << xml << ", " << img << ", " << tilesetName << std::endl;
-    Rendering_Components::Sheet_Data spritesheet;
 
-    //    import texture
-    if (img.c_str() == NULL || img == "") {
+    if (xml.c_str() == nullptr || xml == "") {
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
-      return NULL;
-    } else {
-      //get texture path
-      imgPath = imgPathStr.c_str();
-      Import_Tileset_Texture(textureIndex, spritesheet, imgPath);
+      Rendering_Components::Image_Data imageData = {};
+
+      if (img.c_str() == nullptr || img == "") {
+        Utilities::Log("TexturePacker_Import() failed, empty xml_path");
+        return {nullptr, nullptr};
+      } else {
+        //get texture path
+        imgPath = imgPathStr.c_str();
+        imageData.texture = Import_Tileset_Texture(textureIndex, imageData.texture, imgPath);
+        SDL_QueryTexture(imageData.texture, NULL, NULL, &imageData.w, &imageData.h);
+      }
+      Utilities::Log("SUCCESS!");
+
+      Image_Textures[tilesetName] = imageData;
+      return {nullptr, &Image_Textures};
     }
 
-    //    import xml
-    if (xml.c_str() == NULL || xml == "") {
-      Utilities::Log("TexturePacker_Import() failed, empty xml_path");
-      return NULL;
-    } else {
+    //    import xml if the xml string is valid
+    else {
+      Rendering_Components::Sheet_Data spriteSheet = {};
+
+      if (Packer_Textures[tilesetName].texture) {
+        //std::cout << "Tileset already loaded: " << tilesetName << std::endl;
+        return {&Packer_Textures, nullptr};
+      }
+
       const char *xmlPath;
       std::string xmlPathStr = "assets/" + xml;
       xmlPath = xmlPathStr.c_str();
 
-      TexturePacker_Import_Tileset(spritesheet, templateName, tilesetName, xmlPath);
-    }
-    Utilities::Log("SUCCESS!");
+      TexturePacker_Import_Tileset(spriteSheet, templateName, tilesetName, xmlPath);
 
-    spritesheet.frameList.shrink_to_fit();
-    Packer_Textures[tilesetName] = spritesheet;
-    return &Packer_Textures;
+      //    import texture
+      if (img.c_str() == nullptr || img == "") {
+        Utilities::Log("TexturePacker_Import() failed, empty xml_path");
+        return {nullptr, nullptr};
+      } else {
+        //get texture path
+        imgPath = imgPathStr.c_str();
+        spriteSheet.texture = Import_Tileset_Texture(textureIndex, spriteSheet.texture, imgPath);
+      }
+      Utilities::Log("SUCCESS!");
+
+      spriteSheet.frameList.shrink_to_fit();
+      Packer_Textures[tilesetName] = spriteSheet;
+      return {&Packer_Textures, nullptr};
+    }
   }
 }// namespace Texture_Packer

@@ -21,6 +21,11 @@ namespace Rendering_Components {
     float y;
   };
 
+  struct Offsets {
+    Rendering_Components::Sprite_Offset offset;
+    Rendering_Components::Sprite_Offset colliderOffset;
+  };
+
   struct Sprite_Sheet_Data {
     SDL_Rect clip;
     float x_offset;
@@ -69,6 +74,12 @@ namespace Rendering_Components {
     std::unordered_map<uint8_t, Frame_Data_Packer> actionFrameData;
     ///store the frame duration for each frame of each state, probably not worth it
     //        std::unordered_map<Component::Action_State, std::vector<int>> Frame_Speed_By_Action;
+  };
+
+  struct Image_Data {
+    SDL_Texture *texture = NULL;
+    int w;
+    int h;
   };
 
   struct Sheet_Data_Flare {
@@ -141,6 +152,7 @@ namespace Rendering_Components {
     //        union {
     std::unordered_map<std::string, Sheet_Data_Flare> *flareSpritesheet = NULL;
     std::unordered_map<std::string, Sheet_Data> *sheetData = NULL;
+    std::unordered_map<std::string, Image_Data> *imageData = NULL;
     //        };
 
     std::string sheet_name = "default";
@@ -153,6 +165,16 @@ namespace Rendering_Components {
     uint16_t frameIndex = 0;
     uint8_t reversing = 0;
     Blend_Type blendType = normal;
+    bool interior = false;
+  };
+
+  struct Interior_Sheet_Info {
+    Sprite_Sheet_Info interior;
+    Sprite_Offset offset;
+    Component::Position position;
+  };
+
+  struct Showing_Interior {
   };
 
   struct Metamorphosis {
