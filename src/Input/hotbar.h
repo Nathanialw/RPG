@@ -106,6 +106,13 @@ namespace Hotbar {
     return 0;
   }
 
+  bool autoRun = false;
+  int Auto_Run(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    autoRun = true;
+    Mouse::bRight_Mouse_Pressed = true;
+    return 0;
+  }
+
   int Pause_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Menu::Toggle();
     return 0;
@@ -150,10 +157,12 @@ namespace Hotbar {
     UI_Spellbook::Next_Page();
     return 0;
   }
+
   int Previous_Page(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     UI_Spellbook::Previous_Page();
     return 0;
   }
+
   int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     return 0;
   }
@@ -171,6 +180,7 @@ namespace Hotbar {
         {SDLK_9, Action_Bar::actionBar.actionBar.spell[9].cast},
         {SDLK_TAB, Tab_Target},
         {SDLK_ESCAPE, Menu_Toggle},
+        {SDLK_r, Auto_Run},
         {SDLK_i, Info_Toggle},
         {SDLK_b, Bag_Toggle},
         {SDLK_p, Pause_Toggle},

@@ -22,9 +22,11 @@ namespace Movement {
     auto view = zone.view<Component::Input>();
     for (auto player_ID: view) {
       if (Mouse::bRight_Mouse_Pressed) {
-        if (SDL_GetMouseState(NULL, NULL) != SDL_BUTTON(SDL_BUTTON_RIGHT)) {
+        if (SDL_GetMouseState(NULL, NULL) != SDL_BUTTON(SDL_BUTTON_RIGHT) && !Hotbar::autoRun) {
           Mouse::bRight_Mouse_Pressed = false;
-        } else if (Social_Control::Enemy_Selected(zone, player_ID)) {
+        }
+        //if I have an ally selected I don't want to move when I click the button, but I DO want to still use autorun
+        else if (Social_Control::Enemy_Selected(zone, player_ID)) {
           Entity_Control::Move_Order(zone, player_ID, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
         }
       }
@@ -37,6 +39,10 @@ namespace Movement {
     for (auto entity: view) {
       auto &velocity = view.get<Component::Velocity>(entity);
       auto &action = view.get<Action_Component::Action>(entity);
+
+      if (zone.any_of<Component::Input>(entity)) {
+        Loot_Panel::Close();
+      }
 
       if (action.state == Action_Component::attack) {
         velocity.magnitude.x = 0.0f;

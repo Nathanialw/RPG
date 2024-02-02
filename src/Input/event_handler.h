@@ -41,7 +41,6 @@ namespace Event_Handler {
           if (!input.keyboardControl[Events::event.key.keysym.sym].pressed) {
             input.keyboardControl[Events::event.key.keysym.sym].pressed = true;
             Player_Control::Update_Keyboard_Movement(zone, entity, velocity, input, Events::event.key.keysym.sym);
-            Loot_Panel::Close();
           }
         }
       } else if (Events::event.type == SDL_KEYUP) {
@@ -242,6 +241,7 @@ namespace Event_Handler {
         User_Mouse_Input::Command_Unit_Move(zone, player_ID);
         //        }
         Mouse::bRight_Mouse_Pressed = false;
+        Hotbar::autoRun = false;
       }
     }
   }

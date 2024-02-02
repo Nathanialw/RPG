@@ -1,11 +1,11 @@
 #pragma once
 
-#include "utilities.h"
 #include "components.h"
-#include "player_control.h"
-#include "mouse_control.h"
-#include "social_control.h"
 #include "graphics.h"
+#include "mouse_control.h"
+#include "player_control.h"
+#include "social_control.h"
+#include "utilities.h"
 #include "world.h"
 
 namespace User_Mouse_Input {
@@ -287,7 +287,7 @@ namespace User_Mouse_Input {
     if (!view.empty()) {
       for (auto entity: view) {
         if (!Social_Control::Check_Relationship(zone, player_ID, entity)) {
-//          Player_Control::Attack_Order(zone, entity, target_ID, radius);
+          //          Player_Control::Attack_Order(zone, entity, target_ID, radius);
         } else {
           return false;
         }
@@ -320,12 +320,12 @@ namespace User_Mouse_Input {
               i = 0;
             }
             i++;
-            spacing = spacing + 50.0f; //spacing should be stored in "battalion" component
+            spacing = spacing + 50.0f;//spacing should be stored in "battalion" component
 
             zone.emplace_or_replace<Component::Moving>(entity);
             zone.emplace_or_replace<Component::Mouse_Move>(entity, x, y);
 
-          } else { //moves all the units onto a single point, I want to have the spread out in some kind of formation
+          } else {//moves all the units onto a single point, I want to have the spread out in some kind of formation
             Order_Move(zone, entity);
           }
         } else {
@@ -361,13 +361,13 @@ namespace User_Mouse_Input {
               i = 0;
             }
             i++;
-            spacing = spacing + 50; //spacing shoudl be stored in "battalion" component
+            spacing = spacing + 50;//spacing shoudl be stored in "battalion" component
 
             zone.emplace_or_replace<Component::Moving>(squad.iSub_Units[j]);
             zone.emplace_or_replace<Component::Mouse_Move>(squad.iSub_Units[j], x, y);
           }
         }
-      } else { //moves all the units onto a single point, I want to have the spread out in some kind of formation
+      } else {//moves all the units onto a single point, I want to have the spread out in some kind of formation
         auto squads_view = zone.view<Component::Selected, Component::Squad>();
         for (auto squads: squads_view) {
           auto &squad = zone.get<Component::Squad>(squads);
@@ -405,13 +405,13 @@ namespace User_Mouse_Input {
               i = 0;
             }
             i++;
-            spacing = spacing + 50.0f; //spacing shoudl be stored in "battalion" component
+            spacing = spacing + 50.0f;//spacing shoudl be stored in "battalion" component
 
             zone.emplace_or_replace<Component::Moving>(squad.iSub_Units[j]);
             zone.emplace_or_replace<Component::Mouse_Move>(squad.iSub_Units[j], x, y);
           }
         }
-      } else { //moves all the units onto a single point, I want to have the spread out in some kind of formation
+      } else {//moves all the units onto a single point, I want to have the spread out in some kind of formation
         auto squads_view = zone.view<Component::Selected, Component::Platoon>();
         for (auto squads: squads_view) {
           auto &squad = zone.get<Component::Platoon>(squads);
@@ -489,7 +489,7 @@ namespace User_Mouse_Input {
     auto &squad = zone.emplace_or_replace<Component::Squad>(squad_ID);
 
     for (auto entity: view) {
-      if (iUnit < squad.size) { // caps number of units per squad
+      if (iUnit < squad.size) {// caps number of units per squad
         auto &x = view.get<Component::Position>(entity);
         auto &y = view.get<Component::Position>(entity);
         auto &m = view.get<Component::Mass>(entity);
@@ -519,13 +519,13 @@ namespace User_Mouse_Input {
       auto Company_ID = zone.create();
       auto &company = zone.emplace_or_replace<Component::Company>(Company_ID);
       for (auto platoons: platoons_view) {
-        if (iUnit < company.size) { // caps number of units per squad
+        if (iUnit < company.size) {// caps number of units per squad
           auto &platoon = platoons_view.get<Component::Platoon>(platoons);
           const auto PLATOON_ID = entt::to_entity(zone, platoon);
           const auto COMPANY_ID = entt::to_entity(zone, company);
           auto &assigned = zone.emplace_or_replace<Component::Assigned_To_Formation>(platoons, 0, Company_ID);
           //add squad ID to  to Platoon list
-          company.iSub_Units.emplace_back(PLATOON_ID);    //?? add Platoon ID to squad???
+          company.iSub_Units.emplace_back(PLATOON_ID);//?? add Platoon ID to squad???
           //add index to squad
           assigned.iIndex = (int) company.iSub_Units.size() - 1;
           //add squad collider to Platoon coords
@@ -547,13 +547,13 @@ namespace User_Mouse_Input {
       auto Platoon_ID = zone.create();
       auto &platoon = zone.emplace_or_replace<Component::Platoon>(Platoon_ID);
       for (auto squads: squads_view) {
-        if (iUnit < platoon.size) { // caps number of units per squad
+        if (iUnit < platoon.size) {// caps number of units per squad
           auto &squad = squads_view.get<Component::Squad>(squads);
           const auto SQUAD_ID = entt::to_entity(zone, squad);
           const auto PLATOON_ID = entt::to_entity(zone, platoon);
           auto &assigned = zone.emplace_or_replace<Component::Assigned_To_Formation>(squads, 0, PLATOON_ID);
           //add squad ID to  to Platoon list
-          platoon.iSub_Units.emplace_back(SQUAD_ID);    //?? add Platoon ID to squad???
+          platoon.iSub_Units.emplace_back(SQUAD_ID);//?? add Platoon ID to squad???
           //add index to squad
           assigned.iIndex = (int) platoon.iSub_Units.size() - 1;
           //add squad collider to Platoon coords
@@ -655,7 +655,6 @@ namespace User_Mouse_Input {
       auto &radius = view.get<Component::Radius>(unit_ID);
       Assign_Selected_Units_To_Squad(zone, unit_ID, position, mass, radius);
     }
-
   };
 
   void Create_And_Fill_New_Platoon(entt::registry &zone) {
@@ -667,7 +666,6 @@ namespace User_Mouse_Input {
       auto &radius = view.get<Component::Radius>(unit_ID);
       Assign_Selected_Units_To_Squad(zone, unit_ID, position, mass, radius);
     }
-
   };
 
   bool Assign_All_Units_To_Squad(entt::registry &zone, entt::entity &squad_ID) {
@@ -707,7 +705,8 @@ namespace User_Mouse_Input {
 
     while (units) {
 
-      units = Assign_All_Units_To_Squad(zone, squad_ID);;
+      units = Assign_All_Units_To_Squad(zone, squad_ID);
+      ;
     }
   }
 
@@ -717,4 +716,4 @@ namespace User_Mouse_Input {
     Create_Companies(zone);
   }
 
-}
+}// namespace User_Mouse_Input
