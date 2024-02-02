@@ -82,7 +82,8 @@ namespace Hotbar {
   }
 
   int Menu_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-    if (Mouse_Struct::mouseData.type == Component::Icon_Type::building || UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen) {
+    auto view = zone.view<Component::Selected>();
+    if (Mouse_Struct::mouseData.type == Component::Icon_Type::building || UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || !view.empty()) {
       if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
         Mouse_Struct::mouseData.type = Component::Icon_Type::none;
         Mouse_Struct::mouseData.name = "";
@@ -91,7 +92,10 @@ namespace Hotbar {
         Mouse_Struct::mouseData.mouseItem = Mouse::cursor_ID;
         Mouse_Struct::mouseData.itemCurrentlyHeld = false;
       }
-      if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen) {
+      if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || !view.empty()) {
+        Mouse::bLeft_Mouse_Pressed = false;
+        zone.clear<Component::Selected>();
+        Loot_Panel::Close();
         UI::bToggleCharacterUI = false;
         UI_Spellbook::spellbook.b_isOpen = false;
         UI_Info::spellbook.b_isOpen = false;

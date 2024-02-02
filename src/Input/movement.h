@@ -1,14 +1,14 @@
 #pragma once
 
 #include "action_components.h"
-#include "timer.h"
-#include "entity_control.h"
 #include "components.h"
-#include "utilities.h"
-#include "social_control.h"
+#include "entity_control.h"
 #include "mouse_control.h"
-#include "world.h"
 #include "movement_components.h"
+#include "social_control.h"
+#include "timer.h"
+#include "utilities.h"
+#include "world.h"
 
 namespace Movement {
 
@@ -16,13 +16,15 @@ namespace Movement {
     float Player_Move_Poll = 0.0f;
     float Update_Position_Poll = 0.0f;
     float linearMovePoll = 0.0f;
-  }
+  }// namespace
 
-  void Mouse_Moving(entt::registry &zone) { // maybe change to move and attack?
+  void Mouse_Moving(entt::registry &zone) {// maybe change to move and attack?
     auto view = zone.view<Component::Input>();
     for (auto player_ID: view) {
       if (Mouse::bRight_Mouse_Pressed) {
-        if (Social_Control::Enemy_Selected(zone, player_ID)) {
+        if (SDL_GetMouseState(NULL, NULL) != SDL_BUTTON(SDL_BUTTON_RIGHT)) {
+          Mouse::bRight_Mouse_Pressed = false;
+        } else if (Social_Control::Enemy_Selected(zone, player_ID)) {
           Entity_Control::Move_Order(zone, player_ID, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
         }
       }
@@ -42,7 +44,7 @@ namespace Movement {
       }
 
       if (velocity.magnitude.x != 0 || velocity.magnitude.y != 0) {
-        if (fabs(velocity.magnitude.x) < 0.1) { velocity.magnitude.x = 0; }; //clamp rounding errors
+        if (fabs(velocity.magnitude.x) < 0.1) { velocity.magnitude.x = 0; };//clamp rounding errors
         if (fabs(velocity.magnitude.y) < 0.1) { velocity.magnitude.y = 0; };
         velocity.angle = atan2f(velocity.magnitude.x, velocity.magnitude.y);
         angleY = atan2f(velocity.magnitude.y, velocity.magnitude.x);
@@ -50,8 +52,8 @@ namespace Movement {
         float velocityY = sinf(angleY) * velocity.speed;
         auto &pBody = view.get<Component::Body>(entity).body;
 
-        velocity.dY = velocityY * (float)Timer::timeStep * 5000000.0f;
-        velocity.dX = velocityX * (float)Timer::timeStep * 5000000.0f;
+        velocity.dY = velocityY * (float) Timer::timeStep * 5000000.0f;
+        velocity.dX = velocityX * (float) Timer::timeStep * 5000000.0f;
 
         b2Vec2 impulse = {velocity.dX, velocity.dY};
         pBody->ApplyForce(impulse, pBody->GetWorldCenter(), true);
@@ -118,7 +120,7 @@ namespace Movement {
     }
   }
 
-  void Mouse_Move_To(entt::registry &zone) { //calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
+  void Mouse_Move_To(entt::registry &zone) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
     Player_Move_Poll += Timer::timeStep;
     if (Player_Move_Poll >= 0) {
       Player_Move_Poll = 0;
@@ -168,4 +170,4 @@ namespace Movement {
     Update_Direction(zone);
     Update_Position(zone);
   }
-}
+}// namespace Movement

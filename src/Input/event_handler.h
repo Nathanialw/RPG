@@ -232,8 +232,9 @@ namespace Event_Handler {
         } else if (Loot_Panel::Mouse_Inside_Panel(camera, state)) {
           Loot_Panel::Get_loot_Item(zone, state, camera);
           return;
-        } else {
+        } else if (Mouse::bLeft_Mouse_Pressed) {
           User_Mouse_Input::Select_Units(zone, player_ID);
+          return;
         }
       }
       if (Events::event.button.button == SDL_BUTTON_RIGHT) {
