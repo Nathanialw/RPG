@@ -1,5 +1,6 @@
 #pragma once
 #include "Debug/debug_components.h"
+#include "building_components.h"
 #include "collision.h"
 #include "dynamic_entity_loader.h"
 #include "dynamic_quad_tree.h"
@@ -281,6 +282,29 @@ namespace Quad_Tree {
       }
     }
     return {false};
+  }
+
+  bool Entity_vs_Polygon_Collision(entt::registry &zone, int &state, Building_Component::Polygon &polygon, SDL_FRect &entityRect) {
+    std::vector<std::vector<f2>> polygons;
+    for (const auto &object: quadTrees[state].search(entityRect)) {
+      if (zone.any_of<Component::Radius>(object->item.entity_ID)) {
+        auto &rect = zone.get<Component::Interaction_Rect>(object->item.entity_ID).rect;
+        std::vector<f2> treePolygon;
+        treePolygon.push_back({rect.x, rect.y});
+        treePolygon.push_back({rect.x + rect.w, rect.y});
+        treePolygon.push_back({rect.x + rect.w, rect.y + rect.h});
+        treePolygon.push_back({rect.x, rect.y + rect.h});
+
+        polygons.emplace_back(treePolygon);
+      }
+    }
+    //sort by type and get the higher priority one first
+    if (!polygons.empty()) {
+      for (auto &p: polygons) {
+        if (Utilities::PolygonOverlap_SAT(polygon, p)) return true;
+      }
+    }
+    return false;
   }
 
   std::vector<entt::entity> Get_Nearby_Entities(entt::registry &zone, SDL_FRect &entityRect, int &state) {

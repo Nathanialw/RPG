@@ -633,17 +633,27 @@ namespace Items {
           auto &rect = zone.get<Component::Interaction_Rect>(item).rect;
           rect.x = mouseX - (rect.w / 2.0f);
           rect.y = mouseY - (rect.h / 2.0f);
-          Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_Mouse_Collision(zone, rect, state);
+          //          Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_Mouse_Collision(zone, rect, state);
+          auto &placeable = zone.get<Building_Component::Placement>(item);
+          bool collision = false;
+          for (auto polygon: placeable.polygons) {
+            Building_Component::Polygon treePolygon;
+            treePolygon.push_back({rect.x, rect.y});
+            treePolygon.push_back({rect.x + rect.w, rect.y});
+            treePolygon.push_back({rect.x + rect.w, rect.y + rect.h});
+            treePolygon.push_back({rect.x, rect.y + rect.h});
 
-          auto &placeable = zone.get<Building_Component::Placement>(item).placeable;
+            collision = Quad_Tree::Entity_vs_Polygon_Collision(zone, state, treePolygon, rect);
+          }
+
           auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(item);
           sprite.blendType = Rendering_Components::ghost;
-          if (targetData.b) {
+          if (collision) {
             sprite.color = {255, 0, 0, 50};
-            placeable = false;
+            placeable.placeable = false;
           } else {
             sprite.color = {200, 200, 200, 50};
-            placeable = true;
+            placeable.placeable = true;
           }
         }
 

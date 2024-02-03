@@ -76,9 +76,18 @@ namespace Create_Entities {
         //position is replaced by mouse position with building placement
         zone.emplace<Collision_Component::Collider_Data>(entity, data.interior, offsets.colliderOffset, data.radius, x, y, data.collider_type, ((float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f));
 
-        zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w / 2.0f), (y - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f), (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, false);
+        auto &box = zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w / 2.0f), (y - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f), (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, false);
 
-        auto &gg = zone.emplace_or_replace<Building_Component::Placement>(entity);
+        auto rect = box.rect;
+        Building_Component::Polygon treePolygon;
+        treePolygon.push_back({rect.x, rect.y});
+        treePolygon.push_back({rect.x + rect.w, rect.y});
+        treePolygon.push_back({rect.x + rect.w, rect.y + rect.h});
+        treePolygon.push_back({rect.x, rect.y + rect.h});
+
+        std::vector<Building_Component::Polygon> polygons;
+        polygons.emplace_back(treePolygon);
+        zone.emplace_or_replace<Building_Component::Placement>(entity, polygons);
 
       } else {
         //only use this interaction rect if the building doesn't have an interior

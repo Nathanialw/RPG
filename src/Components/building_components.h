@@ -5,16 +5,13 @@
 
 namespace Building_Component {
 
+  typedef std::vector<f2> Polygon;
   //aabb
   //polygon
   //circle
   struct Circle {
     SDL_FPoint point;
     float radius;
-  };
-
-  struct Polygon {
-    std::vector<f2> polygon;
   };
 
   struct Placement {
