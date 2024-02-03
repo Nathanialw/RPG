@@ -6,8 +6,9 @@
 namespace Rendering {
 
   struct Sheet_Data {
-    std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
-    std::unordered_map<std::string, Rendering_Components::Image_Data> *imageData = NULL;
+    Rendering_Components::Sprite_Sheet_Info frameData;
+    //    std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
+    //    std::unordered_map<std::string, Rendering_Components::Image_Data> *imageData = NULL;
     Rendering_Components::Sprite_Sheet_Data frame;
   };
 
@@ -32,10 +33,10 @@ namespace Rendering {
       std::cout << "failed to load PVG_Building() for: " << templateName << std::endl;
       //      return {NULL};
       interior.imageData = sheetData.imageData;
-      return {interior.sheetData, {}};
+      return {interior, {}};
     }
     std::cout << "BIG BUG PVG_Building() for: " << templateName << std::endl;
-    return {interior.sheetData, {}};
+    return {interior, {}};
   }
 
   Sheet_Data Set_Rend(entt::registry &zone, entt::entity &entity, std::string &templateName, int xmlIndex, std::string img, std::string xml) {
@@ -60,51 +61,39 @@ namespace Rendering {
 
       sprite.imageData = sheetData.imageData;
       zone.emplace_or_replace<Component::Icon>(entity, sprite.imageData->at(sheetName).texture);
-      return {sprite.sheetData, sprite.imageData};
+      return {sprite};
     }
     std::cout << "Loading packer data for: " << templateName << std::endl;
 
     sprite.sheetData = sheetData.packerData;
     zone.emplace_or_replace<Component::Icon>(entity, sprite.sheetData->at(sheetName).texture);
-    return {sprite.sheetData, sprite.imageData, sprite.sheetData->at(sheetName).frameList[xmlIndex]};
+    return {sprite, sprite.sheetData->at(sheetName).frameList[xmlIndex]};
   }
 
 
-  Rendering_Components::Offsets Set_Offset(entt::registry &zone, entt::entity &entity, std::string colliderType, Component::Position &position, float xOffset, float yOffset, Rendering_Components::Sprite_Sheet_Data &frame) {
+  Rendering_Components::Offsets Set_Offset(entt::registry &zone, entt::entity &entity, std::string colliderType, float xOffset, float yOffset, Rendering_Components::Sprite_Sheet_Data &frame) {
     Rendering_Components::Sprite_Offset offset = {};
     if (colliderType == "rect") {
-      //      offset = {xOffset, yOffset};
-      //      offset = {(float) frame.clip.w / 2.0f, (float) frame.clip.h / 2.0f};
-      offset = {xOffset / 2.0f, yOffset / 2.0f};
-      //      position.y -= (float) frame.clip.h / 2.0f;
+      offset = {xOffset, yOffset / 2.0f};
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "polygon") {
       offset = {((float) frame.clip.w / 2.0f), (float) frame.clip.h / 2.0f};
-      //      position.y -= (float) frame.clip.h / 2.0f;
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "round") {
       offset = {xOffset, yOffset};
-      //      position.x -= xOffset;
-      //      position.y -= yOffset;
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "none") {
       offset = {xOffset, yOffset};
-      //      position.x -= frame.x_offset;
-      //      position.y -= frame.y_offset;
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "background") {
-      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
-      //      position.x -= offset.x;
-      //      position.y -= offset.y;
       offset.x = 0.0f;
       offset.y = 0.0f;
+      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
       zone.emplace_or_replace<Rendering_Components::Background>(entity);
     } else if (colliderType == "foreground") {
-      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
-      //      position.x -= offset.x;
-      //      position.y -= offset.y;
       offset.x = 0.0f;
       offset.y = 0.0f;
+      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
       zone.emplace_or_replace<Rendering_Components::Foreground>(entity);
     }
     // if object is a  background sprite DO NOT set Direction component

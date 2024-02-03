@@ -65,7 +65,7 @@ namespace Update_Spells {
 
       std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
       std::string sheetname = Entity_Loader::Get_Sprite_Sheet(imgPaths.name);
-      packerframeData = Texture_Packer::TexturePacker_Import(imgPaths.name, sheetname, texture.texture);
+      packerframeData = Texture_Packer::TexturePacker_Import(imgPaths.name, texture.texture);
 
       sprite.sheetData = packerframeData;
       sprite.sheet_name = imgPaths.name;

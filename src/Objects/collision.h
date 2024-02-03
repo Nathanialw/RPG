@@ -232,9 +232,7 @@ namespace Collision {
     bodyFixture.density = mass / radius;
     bodyFixture.friction = 0.0f;
 
-    //        bodyFixture.filter.groupIndex = -8;
     body->CreateFixture(&bodyFixture);
-    //        Create_Kinematic_Body(zone, entity, bodyComponent, x, y,radius, mass, isDynamicBody);
   }
 
   void Set_Collision_Box(entt::registry &zone, int &state, entt::entity &entity, std::string &colliderType, Component::Position &position, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, float &radius) {
@@ -251,8 +249,15 @@ namespace Collision {
   void Attach_Components(entt::registry &zone, int &state, entt::entity &entity, Collision_Component::Collider_Data &colliderData) {
     if (Collision_Component::houseColliders.contains(colliderData.name)) {
       auto collider = Collision_Component::houseColliders.at(colliderData.name);
-      colliderData.position.x -= colliderData.offset.x;
+      auto &position = zone.get<Component::Position>(entity);
+      auto &offset = zone.get<Rendering_Components::Sprite_Offset>(entity);
+
+      position.y += (colliderData.placementOffset - colliderData.offset.y);
+      offset.y += (colliderData.placementOffset - colliderData.offset.y);
+
+      colliderData.position.x += colliderData.offset.x;
       colliderData.position.y -= colliderData.offset.y;
+
       b2Body *body = Collision::Add_Static_Body(zone, state, entity, colliderData.position);
       for (int i = 0; i < collider.pointVecs.size(); ++i) {
         Collision::Add_Polygon_Fixture(body, collider.pointVecs[i], collider.isSensor[i]);
@@ -266,10 +271,7 @@ namespace Collision {
     zone.emplace_or_replace<Component::Mass>(entity, 100.0f);
   }
 
-
   void Update_Collision(entt::registry &zone, int &state) {
-
-
     auto view = zone.view<Component::Position>();
     auto view2 = zone.view<Rendering_Components::Sprite_Sheet_Info>();
     b2World *world = collisionList[state];

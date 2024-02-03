@@ -42,7 +42,7 @@ namespace Texture_Packer {
     const char *jj = "SELECT xml_path, equip_type, image_path FROM unit_data WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, sheet_name.c_str());
-    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, nullptr);
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       sheet = sqlite3_column_text(stmt, 0);
       const char *s = (const char *) sheet;
@@ -65,12 +65,11 @@ namespace Texture_Packer {
     std::string sheet_name = db::Append_Quotes(sheet);
     Rendering_Components::Sprite_Offset offset = {};
     sqlite3_stmt *stmt;
-    const unsigned char *sheetType;
     char buf[300];
     const char *ii = "SELECT x_offset, y_offset FROM sprite_layout WHERE sprite_sheet = ";
     strcpy(buf, ii);
     strcat(buf, sheet_name.c_str());
-    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, nullptr);
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       offset.x = (float) sqlite3_column_double(stmt, 0);
       offset.y = (float) sqlite3_column_double(stmt, 1);
@@ -78,7 +77,7 @@ namespace Texture_Packer {
     return offset;
   }
 
-  std::unordered_map<std::string, Rendering_Components::Sheet_Data> *TexturePacker_Import(std::string &templateName, std::string &xml_path, SDL_Texture *texture) {
+  std::unordered_map<std::string, Rendering_Components::Sheet_Data> *TexturePacker_Import(std::string &templateName, SDL_Texture *texture) {
     ///check if the sheet data already exists
     if (Packer_Textures[templateName].frameList.size() > 1) {
       return &Packer_Textures;
@@ -86,9 +85,9 @@ namespace Texture_Packer {
 
     ///get path from db
     Type_Data typeData = Get_Sprite_Sheet(templateName);
-    if (typeData.xml_path.c_str() == NULL || typeData.xml_path == "") {
+    if (typeData.xml_path.c_str() == nullptr || typeData.xml_path.empty()) {
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
-      return NULL;
+      return nullptr;
     }
 
     const char *imgPath;
@@ -116,14 +115,14 @@ namespace Texture_Packer {
       texture = Graphics::createTexture(imgPath);
       spritesheet.texture = texture;
       std::cout << "texture found from image path " << imgPath << " texture: " << texture << std::endl;
-      if (spritesheet.texture == NULL) {
+      if (!spritesheet.texture) {
         std::cout << "Not texture found from image path " << imgPath << " texture: " << texture << std::endl;
-        return NULL;
+        return nullptr;
       }
     }
 
     int frameIndex = 0;
-    while (pSpriteElement != NULL) {
+    while (pSpriteElement) {
       ///get frame data for each state
       std::string n = pSpriteElement->Attribute("n");
       Spritesheet_Structs::Get_Frame_Action_Data(typeData.type, templateName, n, spritesheet.actionFrameData, frameIndex);
@@ -132,8 +131,8 @@ namespace Texture_Packer {
       frame.clip.y = pSpriteElement->IntAttribute("y");
       frame.clip.w = pSpriteElement->IntAttribute("w");
       frame.clip.h = pSpriteElement->IntAttribute("h");
-      frame.x_offset = pSpriteElement->IntAttribute("oX");
-      frame.y_offset = pSpriteElement->IntAttribute("oY");
+      frame.x_offset = pSpriteElement->FloatAttribute("oX");
+      frame.y_offset = pSpriteElement->FloatAttribute("oY");
       spritesheet.frameList.emplace_back(frame);
       frameIndex++;
       ///this grabs the next line
@@ -149,7 +148,7 @@ namespace Texture_Packer {
   SDL_Texture *Import_Tileset_Texture(int textureIndex, SDL_Texture *texture, const char *imgPath) {
     texture = Graphics::Create_Game_Object(textureIndex, imgPath);
 
-    if (texture == NULL) {
+    if (!texture) {
       std::cout << "No texture found from image path: " << imgPath << ", texture: " << texture << std::endl;
       return texture;
     }
@@ -163,9 +162,9 @@ namespace Texture_Packer {
     }
 
     ///get path from db
-    if (xml_path.c_str() == NULL || xml_path == "") {
+    if (xml_path.c_str() == nullptr || xml_path.empty()) {
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
-      return NULL;
+      return nullptr;
     }
 
     const char *xmlPath = xml_path.c_str();
@@ -184,7 +183,7 @@ namespace Texture_Packer {
     }
 
     int frameIndex = 0;
-    while (pSpriteElement != NULL) {
+    while (pSpriteElement) {
       ///get frame data for each state
       std::string n = pSpriteElement->Attribute("n");
       ///get sprite data
@@ -192,8 +191,8 @@ namespace Texture_Packer {
       frame.clip.y = pSpriteElement->IntAttribute("y");
       frame.clip.w = pSpriteElement->IntAttribute("w");
       frame.clip.h = pSpriteElement->IntAttribute("h");
-      frame.x_offset = pSpriteElement->IntAttribute("oX");
-      frame.y_offset = pSpriteElement->IntAttribute("oY");
+      frame.x_offset = pSpriteElement->FloatAttribute("oX");
+      frame.y_offset = pSpriteElement->FloatAttribute("oY");
 
       spritesheet.frameList.emplace_back(frame);
       frameIndex++;
@@ -232,7 +231,7 @@ namespace Texture_Packer {
       spritesheet.frameList.reserve(200);
 
       int frameIndex = 0;
-      while (pSpriteElement != NULL) {
+      while (pSpriteElement) {
         ///get frame data for each state
         std::string n = pSpriteElement->Attribute("n");
         Spritesheet_Structs::Get_Frame_Action_Data("tileset", templateName, n, spritesheet.actionFrameData, frameIndex);
@@ -241,8 +240,8 @@ namespace Texture_Packer {
         frame.clip.y = pSpriteElement->IntAttribute("y");
         frame.clip.w = pSpriteElement->IntAttribute("w");
         frame.clip.h = pSpriteElement->IntAttribute("h");
-        frame.x_offset = pSpriteElement->IntAttribute("oX");
-        frame.y_offset = pSpriteElement->IntAttribute("oY");
+        frame.x_offset = pSpriteElement->FloatAttribute("oX");
+        frame.y_offset = pSpriteElement->FloatAttribute("oY");
         tilesetVec.emplace_back(n);
         spritesheet.frameList.emplace_back(frame);
         Game_Objects_Lists::objectIndexes[n] = frameIndex;
@@ -315,7 +314,7 @@ namespace Texture_Packer {
     std::unordered_map<std::string, Rendering_Components::Image_Data> *imageData;
   };
 
-  Sheet_Data Get_Texture_Data(int textureIndex, std::string &templateName, std::string img, std::string xml, std::string &tilesetName) {
+  Sheet_Data Get_Texture_Data(int textureIndex, std::string &templateName, const std::string &img, const std::string &xml, std::string &tilesetName) {
     // get tileset name from texture path
     const char *imgPath;
     std::string imgPathStr = "assets/" + img;
@@ -328,18 +327,18 @@ namespace Texture_Packer {
 
     std::cout << "Loading: " << textureIndex << ", " << templateName << ", " << xml << ", " << img << ", " << tilesetName << std::endl;
 
-    if (xml.c_str() == nullptr || xml == "") {
+    if (xml.c_str() == nullptr || xml.empty()) {
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
       Rendering_Components::Image_Data imageData = {};
 
-      if (img.c_str() == nullptr || img == "") {
+      if (img.c_str() == nullptr || img.empty()) {
         Utilities::Log("TexturePacker_Import() failed, empty xml_path");
         return {nullptr, nullptr};
       } else {
         //get texture path
         imgPath = imgPathStr.c_str();
         imageData.texture = Import_Tileset_Texture(textureIndex, imageData.texture, imgPath);
-        SDL_QueryTexture(imageData.texture, NULL, NULL, &imageData.w, &imageData.h);
+        SDL_QueryTexture(imageData.texture, nullptr, nullptr, &imageData.w, &imageData.h);
       }
       Utilities::Log("SUCCESS!");
 
@@ -363,7 +362,7 @@ namespace Texture_Packer {
       TexturePacker_Import_Tileset(spriteSheet, templateName, tilesetName, xmlPath);
 
       //    import texture
-      if (img.c_str() == nullptr || img == "") {
+      if (img.c_str() == nullptr || img.empty()) {
         Utilities::Log("TexturePacker_Import() failed, empty xml_path");
         return {nullptr, nullptr};
       } else {

@@ -72,46 +72,9 @@ namespace UI_Frames {
   const int numHouses = 63;
   void Load_Buildings() {
     std::array<std::string, numHouses> houses;
-    //    houses =
-    //        {"House 1/House 1 T1",
-    //         "House 1/House 2 T1",
-    //         "House 1/House 3 T1",
-    //         "House 1/House 4 T1",
-    //         "House 1/House 5 T1",
-    //         "House 2/House 1 T1",
-    //         "House 2/House 2 T1",
-    //         "House 2/House 4 T1",
-    //         "House 2/House 5 T1",
-    //         "House 2/House 6 T1",
-    //         "House 2/House 3 T1",
-    //         "House 3/House 7 T1",
-    //         "House 3/House 8 T1",
-    //         "House 3/House 9 T1",
-    //         "House 4/House 10 T1",
-    //         "House 4/House 11 T1",
-    //         "House 4/House 12 T1",
-    //         "House 4/House 13 T1",
-    //         "House 5/House 1 T1",
-    //         "House 5/House 2 T1",
-    //         "House 5/House 3 T1",
-    //         "House 5/House 4 T1",
-    //         "House 5/House 5 T1",
-    //         "House 5/House 6 T1",
-    //         "House 5/House 7 T1",
-    //         "House 5/House 8 T1",
-    //         "House/House 1 T1",
-    //         "House/House 2 T1",
-    //         "House/House 3 T1",
-    //         "House/House 4 T1",
-    //         "House/House 5 T1",
-    //         "House/House 6 T1",
-    //         "House/Shade T1",
-    //         "Tower 1/Tower 1 T1",
-    //         "Tower 1/Tower 2 T1",
-    //         "Tower 1/Tower 3 T1",
-    //         "Tower 1/Tower 4 T1"};
 
-    houses = {"Building1_1"};
+    houses = {"Medieval RTP Building Exteriors Building1_1"};
+    
     Building building;
     for (auto house: houses) {
       building.name = house;

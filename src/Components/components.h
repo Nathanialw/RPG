@@ -275,14 +275,14 @@ namespace Component {
   };
 
   enum class Entity_Type {
-    unit,
+    portal,
     foliage,
-    spell,
+    unit,
     item,
     object,
-    prop,
     building,
-    portal,
+    spell,
+    prop,
     SIZE
   };
 

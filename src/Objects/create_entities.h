@@ -19,7 +19,6 @@
 #include "social_control.h"
 #include "texture_packer.h"
 #include "utilities.h"
-#include <stddef.h>
 
 namespace Create_Entities {
 
@@ -31,55 +30,13 @@ namespace Create_Entities {
     }
   }
 
-  void Emplace_Interaction_Rect_Building(entt::registry &zone, entt::entity &entity, Entity_Loader::Building_Data &data, float &x, float &y, float &radius, SDL_Rect &clipRect) {
+  void Emplace_Interaction_Rect_Building(entt::registry &zone, entt::entity &entity, Entity_Loader::Building_Data &data, float &x, float &y, float &radius) {
     if (data.whole_sprite == 1) {//if the interaction rect is the whole sprite
       //      zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius), (y - 10.0f / 2.0f), (radius * 2.0f), 10.0f));
       zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius), (y - radius), (radius * 2.0f), radius * 2.0f);
-
     } else {//if the interaction rect is a rect around it's position
       zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - radius), (y - radius), (radius * 2.0f), radius * 2.0f, true);
     }
-  }
-
-  bool Polygon_Building(entt::registry &zone, int &state, float x, float y, std::string &name, std::string entity_class, std::string &filepath, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line, tmx::Vector2<float> imageOffset) {
-    /// if it is a building
-    Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(name);
-
-    if (data.sprite_layout == "static") {
-      //std::cout << "loading Flare: " << name << std::endl;
-      auto entity = zone.create();
-      int unit_ID = Entity_Data::Check_For_Template_ID(name);
-      Graphics::Create_Game_Object(unit_ID, filepath.c_str());
-
-      SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
-      std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> *flareSheetData = NULL;
-      std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
-
-      ///get sheet data for new pointer to map
-      SQLite_Spritesheets::Get_Flare_Building_From_DB(name, data.sprite_layout, sheetDataFlare);
-      flareSheetData = Populate_Flare_SpriteSheet(name, sheetDataFlare, Graphics::unitTextures[unit_ID]);
-
-      //Add shared components
-      auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
-      auto &scale = zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
-      auto &radius = zone.emplace_or_replace<Component::Radius>(entity, 1.0f);
-
-      /// static objects must be set to west as it is the 0 position in the enumeration, ugh yeah I know
-      zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
-      zone.emplace_or_replace<Component::Name>(entity, name);
-      zone.emplace_or_replace<Component::Mass>(entity, 100.0f);
-      zone.emplace_or_replace<Component::Alive>(entity, true);
-
-      auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
-      sprite.flareSpritesheet = flareSheetData;
-      sprite.sheet_name = name;
-      sprite.type = sheetDataFlare.sheet_type;
-      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, sheetDataFlare.x_offset, sheetDataFlare.y_offset);
-
-      Collision::Set_Collision_Box(zone, state, entity, data.collider_type, position, aabb, pointVecs, line, data.radius);
-      return true;
-    }
-    return false;
   }
 
   struct Entity_ID_Direction {
@@ -96,14 +53,14 @@ namespace Create_Entities {
       ///get texture data
       Rendering::Sheet_Data frameData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
 
-      auto &position = zone.emplace_or_replace<Component::Position>(entity, x, y);
-      Rendering_Components::Offsets offset = {};
-      if (frameData.packerframeData) {
-        offset = Rendering::Set_Offset(zone, entity, data.collider_type, position, data.x_offset, data.y_offset, frameData.frame);
+      zone.emplace_or_replace<Component::Position>(entity, x, y);
+      Rendering_Components::Offsets offsets;
+      if (frameData.frameData.sheetData) {
+        offsets = Rendering::Set_Offset(zone, entity, data.collider_type, data.x_offset, data.y_offset, frameData.frame);
       } else {
-        offset = Rendering::Set_Offset(zone, entity, data.collider_type, position, (float) frameData.imageData->at(templateName).w, (float) frameData.imageData->at(templateName).h, frameData.frame);
+        offsets = Rendering::Set_Offset(zone, entity, data.collider_type, data.x_offset, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, frameData.frame);
       }
-      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, offset.offset);
+      zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, offsets.offset);
 
       if (!data.interior.empty()) {
         //interior sprite needs to be centered on the exterior sprite fot them to line up
@@ -112,27 +69,21 @@ namespace Create_Entities {
         Rendering_Components::Sprite_Sheet_Data interiorFrame = interiorFrameData.frame;
 
         auto &interiorSheetData = zone.get<Rendering_Components::Interior_Sheet_Info>(entity);
-        interiorSheetData.position = {x, y};
-        Rendering_Components::Offsets interiorOffset = Rendering::Set_Offset(zone, entity, "rect", interiorSheetData.position, interiorData.x_offset, interiorData.y_offset, interiorFrame);
-        interiorSheetData.offset = interiorOffset.offset;
-        offset.colliderOffset = {0.0f - interiorData.x_collision_offset, (float) frameData.imageData->at(templateName).h / 2.0f - interiorData.y_collision_offset};
-
+        Rendering::Set_Offset(zone, entity, "rect", interiorData.x_offset, interiorData.y_offset, interiorFrame);
+        interiorSheetData.offset = {interiorData.x_offset, interiorData.y_offset};
+        offsets.colliderOffset = {interiorData.x_collision_offset, interiorData.y_collision_offset};
         zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::building);
-
         //position is replaced by mouse position with building placement
-        zone.emplace<Collision_Component::Collider_Data>(entity, data.interior, offset.colliderOffset, data.radius, position, data.collider_type);
+        zone.emplace<Collision_Component::Collider_Data>(entity, data.interior, offsets.colliderOffset, data.radius, x, y, data.collider_type, ((float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f));
 
       } else {
         //only use this interaction rect if the building doesn't have an interior
         zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-        zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offset.colliderOffset, data.radius, position, data.collider_type);
+        zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offsets.colliderOffset, data.radius, x, y, data.collider_type, 0.0f);
       }
 
-      SDL_Rect clipRect = frameData.frame.clip;
-      Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius, clipRect);
-
+      Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
-
       Social_Control::Entity(zone, entity, data.race);
       zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
       zone.emplace_or_replace<Component::Name>(entity, templateName);
@@ -157,7 +108,6 @@ namespace Create_Entities {
 
   bool Create_Object(entt::registry &zone, int state, entt::entity &entity) {
     auto colliderData = zone.get<Collision_Component::Collider_Data>(entity);
-    Utilities::Log(colliderData.position.y);
     zone.remove<Collision_Component::Collider_Data>(entity);
     Collision::Attach_Components(zone, state, entity, colliderData);
 
@@ -168,7 +118,7 @@ namespace Create_Entities {
     return true;
   }
 
-  entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex, Collision_Component::aabb &aabb, std::vector<std::vector<tmx::Vector2<float>>> &pointVecs, Component::Line_Segment &line) {
+  entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex) {
     entt::entity entity = Create_Entities::Create_Render_Object(zone, x, y, templateName, xmlIndex).entity;
     if (!Cave::Set_As_Cave(zone, entity, templateName)) {
       ///used for object generation like blood so it isn't added to a tile index
@@ -178,12 +128,6 @@ namespace Create_Entities {
     }
     Create_Entities::Create_Object(zone, state, entity);
     return entity;
-  }
-
-  void Set_Map_Texture(std::string &name, std::string imgpath) {
-    int unit_ID = 0;
-    unit_ID = Entity_Data::Check_For_Template_ID(name);
-    Graphics::Create_Game_Object(unit_ID, imgpath.c_str());
   }
 
   Rendering_Components::Blend_Type Set_Texture_Components(entt::registry &zone, entt::entity &entity, db::Unit_Data &imgPaths) {
@@ -201,19 +145,19 @@ namespace Create_Entities {
 
     SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
     std::string sheetname = Entity_Loader::Get_Sprite_Sheet(imgPaths.name);
-    std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> *flareSheetData = NULL;
-    std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = NULL;
+    std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> *flareSheetData = nullptr;
+    std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = nullptr;
 
     //stores the index for a static frame in spritesheet xml
     if (sheetname == "texture_packer") {
       ///run texture packer
-      packerframeData = Texture_Packer::TexturePacker_Import(imgPaths.name, sheetname, texture.texture);
+      packerframeData = Texture_Packer::TexturePacker_Import(imgPaths.name, texture.texture);
     } else {
       ///get sheet data for new pointer to map
       SQLite_Spritesheets::Get_Flare_From_DB(sheetname, sheetDataFlare);
       flareSheetData = Populate_Flare_SpriteSheet(imgPaths.name, sheetDataFlare, texture.texture);
     }
-    if (texture.texture == NULL) {
+    if (!texture.texture) {
       std::cout << "texture is NULL for: " << imgPaths.name << std::endl;
     }
 
@@ -282,12 +226,13 @@ namespace Create_Entities {
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
         if (!Social_Control::Summon(zone, entity, summon, blendType)) Social_Control::Entity(zone, entity, data.race);
 
+        zone.emplace_or_replace<Component::Health>(entity, data.health * (int) data.scale, data.health * (int) data.scale);
         Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
+
         if (equip_type != Item_Component::Unit_Equip_Type::none) {
           Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
           zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
         }
-        zone.emplace_or_replace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
       }
       // if this is the first run make these, otherwise copy them
       else if (startup) {
@@ -304,7 +249,7 @@ namespace Create_Entities {
           Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
           zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
         }
-        zone.emplace_or_replace<Component::Health>(entity, int(data.health * data.scale), int(data.health * data.scale));
+        zone.emplace_or_replace<Component::Health>(entity, data.health * (int) data.scale, data.health * (int) data.scale);
       } else {
         Load::Copy_Player(zone, World::world[World::world[state].previousZoneIndex].zone, state, World::world[state].previousZoneIndex, entity);
       }
@@ -317,7 +262,7 @@ namespace Create_Entities {
         Component::Add_Input_Component(zone, velocity, entity);
         SDL_DisplayMode dm;
         SDL_GetWindowDisplayMode(Graphics::window, &dm);
-        auto &camera = zone.emplace_or_replace<Component::Camera>(entity, 0.0f, 0.0f, (float) dm.w, (float) dm.h, Settings::cameraScale, Settings::cameraScale);
+        zone.emplace_or_replace<Component::Camera>(entity, 0.0f, 0.0f, (float) dm.w, (float) dm.h, Settings::cameraScale, Settings::cameraScale);
         zone.emplace_or_replace<Component::Target_Range>(entity, 2000.0f * data.scale, position.x - (2000.0f / 2.0f * data.scale), position.y - (2000.0f / 2.0f * data.scale), 2000.0f * data.scale, 2000.0f * data.scale);
         auto &full_name = zone.emplace_or_replace<Component::Name>(entity);
         Character_Data::Get_Name(full_name);

@@ -250,7 +250,7 @@ namespace Quad_Tree {
   };
 
   Entity_Data Entity_vs_Mouse_Collision(entt::registry &zone, SDL_FRect &entityRect, int &state) {
-    Entity_Data data = {false};
+    std::vector<Entity_Data> targets;
     for (const auto &object: quadTrees[state].search(entityRect)) {
       //prevents player from returning themselves from the quadtree
       //should probably make the player entity ID a constant saved somewhere, instead of grabbing it from a view every time
@@ -260,14 +260,27 @@ namespace Quad_Tree {
           continue;
         } else {
           if (zone.any_of<Component::Radius>(object->item.entity_ID)) {
-            return {true, object->item.entity_ID};
-          } else {
-            data = {true, object->item.entity_ID};
+            Entity_Data target = {true, object->item.entity_ID};
+            targets.emplace_back(target);
+          }
+          //          else {
+          //            data = {true, object->item.entity_ID};
+          //          }
+        }
+      }
+    }
+    //sort by type and get the higher priority one first
+    if (!targets.empty()) {
+      for (int i = 0; i < (int) Component::Entity_Type::SIZE - 1; ++i) {
+        for (int j = 0; j < targets.size(); ++j) {
+          auto type = zone.get<Component::Entity_Type>(targets[j].entity_ID);
+          if (type == (Component::Entity_Type) i) {
+            return targets[j];
           }
         }
       }
     }
-    return data;
+    return {false};
   }
 
   std::vector<entt::entity> Get_Nearby_Entities(entt::registry &zone, SDL_FRect &entityRect, int &state) {

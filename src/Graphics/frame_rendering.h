@@ -188,7 +188,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
       if (sheetData.interior) {
         auto &interior = interiors.get<Rendering_Components::Interior_Sheet_Info>(entity);
         Rendering_Components::Sprite_Offset interiorOffset = interior.offset;
-        interiorOffset.y -= interior.offset.y;
+        //        interiorOffset.y -= interior.offset.y;
         Render_Image(zone, entity, camera, scale, renderable, position, interiorOffset, interior.interior);
       } else {
         Render_Image(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);

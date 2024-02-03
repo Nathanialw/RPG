@@ -20,68 +20,68 @@ verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
 triangles  => sprite triangulation, 3 vertex indices per triangle
 -->
 <TextureAtlas imagePath="buildings.png" width="11267" height="4049">
-    <sprite n="Building1_1" x="594" y="2814" w="677" h="1200"/>
-    <sprite n="Building1_2" x="4731" y="3149" w="522" h="889"/>
-    <sprite n="Building2_1" x="871" y="1296" w="910" h="1288"/>
-    <sprite n="Building2_2" x="5253" y="3149" w="522" h="889"/>
-    <sprite n="Building3_1" x="10468" y="681" w="678" h="531"/>
-    <sprite n="Building3_2" x="7868" y="2754" w="496" h="850"/>
-    <sprite n="Building4_1" x="9867" y="3315" w="422" h="713"/>
-    <sprite n="Building4_2" x="8364" y="2754" w="496" h="850"/>
-    <sprite n="Building5_1" x="10289" y="3315" w="422" h="713"/>
-    <sprite n="Building5_2" x="8036" y="0" w="496" h="913"/>
-    <sprite n="Building6_1" x="9434" y="3265" w="433" h="717"/>
-    <sprite n="Building6_2" x="7173" y="1867" w="496" h="913"/>
-    <sprite n="Building7_1" x="10411" y="1873" w="603" h="730"/>
-    <sprite n="Building7_2" x="4630" y="2111" w="533" h="1038"/>
-    <sprite n="Building8_1" x="4144" y="0" w="780" h="1062"/>
-    <sprite n="Building8_2" x="5163" y="2111" w="533" h="1038"/>
-    <sprite n="Building9_1" x="3489" y="0" w="655" h="1089"/>
-    <sprite n="Building9_2" x="5527" y="0" w="526" h="1030"/>
-    <sprite n="Building10_1" x="6579" y="0" w="478" h="945"/>
-    <sprite n="Building10_2" x="6053" y="0" w="526" h="1030"/>
-    <sprite n="Building11_1" x="6430" y="3105" w="591" h="944"/>
-    <sprite n="Building11_2" x="4924" y="0" w="603" h="1040"/>
-    <sprite n="Building12_1" x="5775" y="3105" w="655" h="944"/>
-    <sprite n="Building12_2" x="6416" y="1030" w="585" h="1018"/>
-    <sprite n="Building13_1" x="6696" y="2048" w="477" h="943"/>
-    <sprite n="Building13_2" x="0" y="2814" w="594" h="1221"/>
-    <sprite n="Building14_1" x="1365" y="0" w="720" h="1279"/>
-    <sprite n="Building14_2" x="2863" y="0" w="626" h="1157"/>
-    <sprite n="Building15_1" x="10468" y="0" w="765" h="681"/>
-    <sprite n="Building15_2" x="2837" y="2552" w="626" h="1164"/>
-    <sprite n="Building16_1" x="8860" y="2645" w="576" h="620"/>
-    <sprite n="Building16_3" x="3852" y="3486" w="879" h="545"/>
-    <sprite n="Building17_1" x="2085" y="0" w="778" h="1259"/>
-    <sprite n="Building17_3" x="9466" y="1612" w="945" h="534"/>
-    <sprite n="Building18_1" x="0" y="0" w="611" h="1502"/>
-    <sprite n="Building18_3" x="10381" y="2603" w="886" h="568"/>
-    <sprite n="Building19_1" x="7021" y="2991" w="847" h="940"/>
-    <sprite n="Building19_3" x="8795" y="857" w="1004" h="755"/>
-    <sprite n="Building20_1" x="0" y="1502" w="871" h="1312"/>
-    <sprite n="Building20_3" x="9464" y="0" w="1004" h="752"/>
-    <sprite n="Building21_1" x="1781" y="1279" w="1061" h="1273"/>
-    <sprite n="Building21_3" x="8532" y="0" w="932" h="857"/>
-    <sprite n="Building22_3" x="7001" y="945" w="1067" h="922"/>
-    <sprite n="Building23_1" x="9466" y="2146" w="915" h="573"/>
-    <sprite n="Building23_3" x="7057" y="0" w="979" h="920"/>
-    <sprite n="Building24_1" x="1271" y="2584" w="655" h="1274"/>
-    <sprite n="Building24_3" x="3578" y="1089" w="973" h="1066"/>
-    <sprite n="Building25_3" x="1926" y="2552" w="911" h="1244"/>
-    <sprite n="Building26_2" x="7669" y="1867" w="793" h="887"/>
-    <sprite n="Building27_1" x="611" y="0" w="754" h="1296"/>
-    <sprite n="Building27_2" x="4551" y="1062" w="699" h="1049"/>
-    <sprite n="Building28" x="8860" y="3265" w="574" h="740"/>
-    <sprite n="Building28_2" x="2842" y="1259" w="736" h="1158"/>
-    <sprite n="Building29_1" x="3463" y="2417" w="1167" h="1069"/>
-    <sprite n="Building29_3" x="5696" y="2076" w="1000" h="1029"/>
-    <sprite n="Building30_1" x="5250" y="1040" w="1166" h="1036"/>
-    <sprite n="Building30_3" x="8462" y="1797" w="1004" h="848"/>
-    <sprite n="Building31_1" x="9799" y="752" w="664" h="708"/>
-    <sprite n="Building32_1" x="10463" y="1212" w="608" h="661"/>
-    <sprite n="Building35_1" x="10711" y="3171" w="383" h="646"/>
-    <sprite n="Building36_1" x="9867" y="2719" w="514" h="596"/>
-    <sprite n="Building37_1" x="3435" y="3716" w="417" h="268"/>
-    <sprite n="Building38_1" x="2837" y="3716" w="598" h="302"/>
-    <sprite n="Windmill1_3" x="8068" y="913" w="727" h="884"/>
+    <sprite n="Medieval RTP Building Exteriors Building1_1" x="594" y="2814" w="677" h="1200"/>
+    <sprite n="Medieval RTP Building Exteriors Building1_2" x="4731" y="3149" w="522" h="889"/>
+    <sprite n="Medieval RTP Building Exteriors Building2_1" x="871" y="1296" w="910" h="1288"/>
+    <sprite n="Medieval RTP Building Exteriors Building2_2" x="5253" y="3149" w="522" h="889"/>
+    <sprite n="Medieval RTP Building Exteriors Building3_1" x="10468" y="681" w="678" h="531"/>
+    <sprite n="Medieval RTP Building Exteriors Building3_2" x="7868" y="2754" w="496" h="850"/>
+    <sprite n="Medieval RTP Building Exteriors Building4_1" x="9867" y="3315" w="422" h="713"/>
+    <sprite n="Medieval RTP Building Exteriors Building4_2" x="8364" y="2754" w="496" h="850"/>
+    <sprite n="Medieval RTP Building Exteriors Building5_1" x="10289" y="3315" w="422" h="713"/>
+    <sprite n="Medieval RTP Building Exteriors Building5_2" x="8036" y="0" w="496" h="913"/>
+    <sprite n="Medieval RTP Building Exteriors Building6_1" x="9434" y="3265" w="433" h="717"/>
+    <sprite n="Medieval RTP Building Exteriors Building6_2" x="7173" y="1867" w="496" h="913"/>
+    <sprite n="Medieval RTP Building Exteriors Building7_1" x="10411" y="1873" w="603" h="730"/>
+    <sprite n="Medieval RTP Building Exteriors Building7_2" x="4630" y="2111" w="533" h="1038"/>
+    <sprite n="Medieval RTP Building Exteriors Building8_1" x="4144" y="0" w="780" h="1062"/>
+    <sprite n="Medieval RTP Building Exteriors Building8_2" x="5163" y="2111" w="533" h="1038"/>
+    <sprite n="Medieval RTP Building Exteriors Building9_1" x="3489" y="0" w="655" h="1089"/>
+    <sprite n="Medieval RTP Building Exteriors Building9_2" x="5527" y="0" w="526" h="1030"/>
+    <sprite n="Medieval RTP Building Exteriors Building10_1" x="6579" y="0" w="478" h="945"/>
+    <sprite n="Medieval RTP Building Exteriors Building10_2" x="6053" y="0" w="526" h="1030"/>
+    <sprite n="Medieval RTP Building Exteriors Building11_1" x="6430" y="3105" w="591" h="944"/>
+    <sprite n="Medieval RTP Building Exteriors Building11_2" x="4924" y="0" w="603" h="1040"/>
+    <sprite n="Medieval RTP Building Exteriors Building12_1" x="5775" y="3105" w="655" h="944"/>
+    <sprite n="Medieval RTP Building Exteriors Building12_2" x="6416" y="1030" w="585" h="1018"/>
+    <sprite n="Medieval RTP Building Exteriors Building13_1" x="6696" y="2048" w="477" h="943"/>
+    <sprite n="Medieval RTP Building Exteriors Building13_2" x="0" y="2814" w="594" h="1221"/>
+    <sprite n="Medieval RTP Building Exteriors Building14_1" x="1365" y="0" w="720" h="1279"/>
+    <sprite n="Medieval RTP Building Exteriors Building14_2" x="2863" y="0" w="626" h="1157"/>
+    <sprite n="Medieval RTP Building Exteriors Building15_1" x="10468" y="0" w="765" h="681"/>
+    <sprite n="Medieval RTP Building Exteriors Building15_2" x="2837" y="2552" w="626" h="1164"/>
+    <sprite n="Medieval RTP Building Exteriors Building16_1" x="8860" y="2645" w="576" h="620"/>
+    <sprite n="Medieval RTP Building Exteriors Building16_3" x="3852" y="3486" w="879" h="545"/>
+    <sprite n="Medieval RTP Building Exteriors Building17_1" x="2085" y="0" w="778" h="1259"/>
+    <sprite n="Medieval RTP Building Exteriors Building17_3" x="9466" y="1612" w="945" h="534"/>
+    <sprite n="Medieval RTP Building Exteriors Building18_1" x="0" y="0" w="611" h="1502"/>
+    <sprite n="Medieval RTP Building Exteriors Building18_3" x="10381" y="2603" w="886" h="568"/>
+    <sprite n="Medieval RTP Building Exteriors Building19_1" x="7021" y="2991" w="847" h="940"/>
+    <sprite n="Medieval RTP Building Exteriors Building19_3" x="8795" y="857" w="1004" h="755"/>
+    <sprite n="Medieval RTP Building Exteriors Building20_1" x="0" y="1502" w="871" h="1312"/>
+    <sprite n="Medieval RTP Building Exteriors Building20_3" x="9464" y="0" w="1004" h="752"/>
+    <sprite n="Medieval RTP Building Exteriors Building21_1" x="1781" y="1279" w="1061" h="1273"/>
+    <sprite n="Medieval RTP Building Exteriors Building21_3" x="8532" y="0" w="932" h="857"/>
+    <sprite n="Medieval RTP Building Exteriors Building22_3" x="7001" y="945" w="1067" h="922"/>
+    <sprite n="Medieval RTP Building Exteriors Building23_1" x="9466" y="2146" w="915" h="573"/>
+    <sprite n="Medieval RTP Building Exteriors Building23_3" x="7057" y="0" w="979" h="920"/>
+    <sprite n="Medieval RTP Building Exteriors Building24_1" x="1271" y="2584" w="655" h="1274"/>
+    <sprite n="Medieval RTP Building Exteriors Building24_3" x="3578" y="1089" w="973" h="1066"/>
+    <sprite n="Medieval RTP Building Exteriors Building25_3" x="1926" y="2552" w="911" h="1244"/>
+    <sprite n="Medieval RTP Building Exteriors Building26_2" x="7669" y="1867" w="793" h="887"/>
+    <sprite n="Medieval RTP Building Exteriors Building27_1" x="611" y="0" w="754" h="1296"/>
+    <sprite n="Medieval RTP Building Exteriors Building27_2" x="4551" y="1062" w="699" h="1049"/>
+    <sprite n="Medieval RTP Building Exteriors Building28" x="8860" y="3265" w="574" h="740"/>
+    <sprite n="Medieval RTP Building Exteriors Building28_2" x="2842" y="1259" w="736" h="1158"/>
+    <sprite n="Medieval RTP Building Exteriors Building29_1" x="3463" y="2417" w="1167" h="1069"/>
+    <sprite n="Medieval RTP Building Exteriors Building29_3" x="5696" y="2076" w="1000" h="1029"/>
+    <sprite n="Medieval RTP Building Exteriors Building30_1" x="5250" y="1040" w="1166" h="1036"/>
+    <sprite n="Medieval RTP Building Exteriors Building30_3" x="8462" y="1797" w="1004" h="848"/>
+    <sprite n="Medieval RTP Building Exteriors Building31_1" x="9799" y="752" w="664" h="708"/>
+    <sprite n="Medieval RTP Building Exteriors Building32_1" x="10463" y="1212" w="608" h="661"/>
+    <sprite n="Medieval RTP Building Exteriors Building35_1" x="10711" y="3171" w="383" h="646"/>
+    <sprite n="Medieval RTP Building Exteriors Building36_1" x="9867" y="2719" w="514" h="596"/>
+    <sprite n="Medieval RTP Building Exteriors Building37_1" x="3435" y="3716" w="417" h="268"/>
+    <sprite n="Medieval RTP Building Exteriors Building38_1" x="2837" y="3716" w="598" h="302"/>
+    <sprite n="Medieval RTP Building Exteriors Windmill1_3" x="8068" y="913" w="727" h="884"/>
 </TextureAtlas>

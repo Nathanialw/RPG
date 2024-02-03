@@ -171,7 +171,6 @@ namespace Rendering_Components {
   struct Interior_Sheet_Info {
     Sprite_Sheet_Info interior;
     Sprite_Offset offset;
-    Component::Position position;
   };
 
   struct Showing_Interior {

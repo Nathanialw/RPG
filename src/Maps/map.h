@@ -220,10 +220,7 @@ namespace Maps {
   void Init_Caves(entt::registry &zone, int &state, std::string &tileSet) {
     Procedural_Components::Seed seed;
     //    collisionBox;
-    Collision_Component::aabb aabb;
     tmx::Vector2<float> offset = {0.0f, 0.0f};
-    std::vector<std::vector<tmx::Vector2<float>>> pointVecs = {};
-    Component::Line_Segment line = {};
     float x = 0.0f;
     float y = 0.0f;
     int xmlIndex = 0;
@@ -258,7 +255,7 @@ namespace Maps {
               objectName == "Rock_2_6" ||
               objectName == "Rock_2_7" ||
               objectName == "Rock_2_8") {
-            Create_Entities::PVG_Building(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, i, j, objectName, xmlIndex, aabb, pointVecs, line);
+            Create_Entities::PVG_Building(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, i, j, objectName, xmlIndex);
           }
         }
       }
@@ -272,10 +269,7 @@ namespace Maps {
   void Generate_Trees(entt::registry &zone, int &state, SDL_FRect rect, std::string &tileSet, Tile &tile) {
     Procedural_Components::Seed seed;
     //    collisionBox;
-    Collision_Component::aabb aabb;
     tmx::Vector2<float> offset = {0.0f, 0.0f};
-    std::vector<std::vector<tmx::Vector2<float>>> pointVecs = {};
-    Component::Line_Segment line = {};
     float x = 0.0f;
     float y = 0.0f;
     int xmlIndex = 0;
@@ -312,7 +306,7 @@ namespace Maps {
         continue;
       }
       if (i != 0) {
-        tile.objects[k].entity = (Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex, aabb, pointVecs, line));
+        tile.objects[k].entity = (Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex));
       }
     }
   }
