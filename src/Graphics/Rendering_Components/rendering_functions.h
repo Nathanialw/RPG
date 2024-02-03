@@ -12,7 +12,7 @@ namespace Rendering {
     Rendering_Components::Sprite_Sheet_Data frame;
   };
 
-  Sheet_Data Set_Render_Interior(entt::registry &zone, entt::entity &entity, std::string &templateName, int xmlIndex, std::string img, std::string xml) {
+  Sheet_Data Set_Render_Interior(entt::registry &zone, const entt::entity &entity, std::string &templateName, int xmlIndex, const std::string img, const std::string xml) {
     ///get texture data
     SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
     int textureIndex = Entity_Data::Check_For_Template_ID(templateName);
@@ -39,7 +39,7 @@ namespace Rendering {
     return {interior, {}};
   }
 
-  Sheet_Data Set_Rend(entt::registry &zone, entt::entity &entity, std::string &templateName, int xmlIndex, std::string img, std::string xml) {
+  Sheet_Data Set_Rend(entt::registry &zone, const entt::entity &entity, std::string &templateName, int xmlIndex, const std::string img, const std::string xml) {
     ///get texture data
     SQLite_Spritesheets::Sheet_Data_Flare sheetDataFlare = {};
     int textureIndex = Entity_Data::Check_For_Template_ID(templateName);
@@ -63,15 +63,13 @@ namespace Rendering {
       zone.emplace_or_replace<Component::Icon>(entity, sprite.imageData->at(sheetName).texture);
       return {sprite};
     }
-    std::cout << "Loading packer data for: " << templateName << std::endl;
 
     sprite.sheetData = sheetData.packerData;
     zone.emplace_or_replace<Component::Icon>(entity, sprite.sheetData->at(sheetName).texture);
     return {sprite, sprite.sheetData->at(sheetName).frameList[xmlIndex]};
   }
 
-
-  Rendering_Components::Offsets Set_Offset(entt::registry &zone, entt::entity &entity, std::string colliderType, float xOffset, float yOffset, Rendering_Components::Sprite_Sheet_Data &frame) {
+  Rendering_Components::Offsets Set_Offset(entt::registry &zone, const entt::entity &entity, const std::string colliderType, const float xOffset, const float yOffset, const Rendering_Components::Sprite_Sheet_Data &frame) {
     Rendering_Components::Sprite_Offset offset = {};
     if (colliderType == "rect") {
       offset = {xOffset, yOffset / 2.0f};
@@ -88,19 +86,15 @@ namespace Rendering {
     } else if (colliderType == "background") {
       offset.x = 0.0f;
       offset.y = 0.0f;
-      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
+      offset = {(float) frame.clip.w / 2.0f, (float) frame.clip.h / 2.0f};
       zone.emplace_or_replace<Rendering_Components::Background>(entity);
     } else if (colliderType == "foreground") {
       offset.x = 0.0f;
       offset.y = 0.0f;
-      offset = {frame.clip.w / 2.0f, frame.clip.h / 2.0f};
+      offset = {(float) frame.clip.w / 2.0f, (float) frame.clip.h / 2.0f};
       zone.emplace_or_replace<Rendering_Components::Foreground>(entity);
     }
     // if object is a  background sprite DO NOT set Direction component
     return {offset, {fabs(((float) frame.clip.w / 2.0f) - offset.x), (float) frame.clip.h / 2.0f}};
   }
-
-  void Attach_Components(entt::registry &zone, entt::entity &entity) {
-  }
-
 }// namespace Rendering

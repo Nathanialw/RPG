@@ -276,7 +276,7 @@ namespace Maps {
     std::string objectName = "";
 
     seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
-    int numObjects = Procedural_Generation::Random_Int(1, 5, seed);
+    int numObjects = Procedural_Generation::Random_Int(0, 2, seed);
 
     for (int k = 0; k < numObjects; k++) {
       x = Procedural_Generation::Random_float(0, (int) World::size.width, seed);

@@ -47,11 +47,11 @@ namespace UI_Spellbook {
     frameRect.y = (float) h - frameRect.h;
   }
 
-  int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int PLACEHOLDER(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     return 0;
   }
 
-  int Sinister_Strike(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Sinister_Strike(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Sinister_Strike::Instant_Attack(zone, entity);
     return 0;
   }

@@ -8,7 +8,7 @@
 
 namespace Game_Menu_Control {
 
-  bool Select_Building(entt::registry &zone, UI_Frames::Menu_Frame &menu) {
+  bool Select_Building(entt::registry &zone, int &state, UI_Frames::Menu_Frame &menu) {
     //    SDL_RenderCopyF(Graphics::renderer, menu.buttons[0].button.backgroundTexture, nullptr, &menu.submenu.frame);
     UI_Frames::Grid grid;
     for (int i = 0; i < menu.buttons[menu.currentTab].objects.size(); ++i) {
@@ -19,7 +19,7 @@ namespace Game_Menu_Control {
         int index;
         float x;
         float y;
-        menu.buttons[menu.currentTab].objects[i].build(zone, entity, action, index, x, y, menu.buttons[menu.currentTab].objects[i].name);
+        menu.buttons[menu.currentTab].objects[i].build(zone, state, entity, action, index, x, y, menu.buttons[menu.currentTab].objects[i].name);
         return true;
       }
       grid.Update(4);
@@ -27,7 +27,7 @@ namespace Game_Menu_Control {
     return false;
   }
 
-  bool Check_Menu_Button(entt::registry &zone) {
+  bool Check_Menu_Button(entt::registry &zone, int &state) {
     if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.background.frame)) {
       for (int i = 0; i < UI_Frames::topFrame.buttons.size(); i++) {
         if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.buttons[i].button.frame)) {
@@ -39,7 +39,7 @@ namespace Game_Menu_Control {
       return true;
     } else {
       if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.submenu.frame) && UI_Frames::topFrame.open) {
-        if (Select_Building(zone, UI_Frames::topFrame)) {
+        if (Select_Building(zone, state, UI_Frames::topFrame)) {
           return true;
         }
         return true;

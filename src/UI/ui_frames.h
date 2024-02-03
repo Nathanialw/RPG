@@ -42,8 +42,8 @@ namespace UI_Frames {
     SIZE
   };
 
-  int Build(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-    Build::Orc::House(zone, index, objectName);
+  int Build(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    Build::Orc::House(zone, state, objectName);
     return 0;
   }
 
@@ -74,7 +74,7 @@ namespace UI_Frames {
     std::array<std::string, numHouses> houses;
 
     houses = {"Medieval RTP Building Exteriors Building1_1"};
-    
+
     Building building;
     for (auto house: houses) {
       building.name = house;

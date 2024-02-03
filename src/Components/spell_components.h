@@ -8,7 +8,7 @@ namespace Spells {
   typedef int (*spells)(entt::registry &zone, entt::entity &entity, float &x, float &y, const char *name);
 
   //  typedef int (*castSpell)(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y);
-  typedef int (*castSpell)(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName);
+  typedef int (*castSpell)(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName);
   typedef int (*Hit)(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY);
 
   int Hit_Template(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {

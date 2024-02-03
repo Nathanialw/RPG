@@ -2,6 +2,7 @@
 
 #include "camera.h"
 #include "entt/entt.hpp"
+#include "fog.h"
 #include "frame_rendering.h"
 #include "graphics.h"
 #include "pause.h"
@@ -14,7 +15,6 @@
 #include "world_grid.h"
 #include <SDL2/SDL.h>
 #include <vector>
-#include "fog.h"
 
 namespace Rendering {
 
@@ -463,9 +463,11 @@ namespace Rendering {
   }
 
   void Remove_Entities_From_Registry(entt::registry &zone, int &state) {
-    auto view = zone.view<Component::Destroyed>();
+    auto view = zone.view<Component::Destroyed, Component::Interaction_Rect>();
     for (auto entity: view) {
       if (zone.any_of<Component::In_Object_Tree>(entity)) {
+        auto &rect = view.get<Component::Interaction_Rect>(entity).rect;
+        zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect);
         Utilities::Log("item was still has In_Object_Tree");
         Quad_Tree::Remove_Entity_From_Tree(zone, entity, state);
       }
@@ -513,7 +515,7 @@ namespace Rendering {
       Unit_Frames::Show_Frames(zone, camera);
       Render_UI(zone, state, Graphics::renderer, camera);
       Character_Stats::Render_Character_Stats(camera);
-      Items::Update_Mouse_Slot_Position(zone, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+      Items::Update_Mouse_Slot_Position(zone, state, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
       Damage_Text::Show_Damage(zone, camera);
       UI_Spellbook::Draw_Spellbook(camera);
       UI_Info::Draw_Attributes(camera);

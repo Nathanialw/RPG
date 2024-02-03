@@ -17,45 +17,21 @@ namespace Collision {
   int32 velocityIterations = 6;
   int32 positionIterations = 8;
 
-  void Set_Collision_NULL() {
-    for (int i = 0; i < (int) World::GameState::MODES; ++i) {
-      //      auto world = Get_Collision_List(World::GameState(i));
-      //      world = nullptr;
-    }
-  }
-
   float collision_Timestep = 0.0f;
 
-
   class MyContactListener : public b2ContactListener {
-    void BeginContact(b2Contact *contact) {
-      if (World::world[World::currentZone.current].zone.any_of<Component::Input>((entt::entity) contact->GetFixtureA()->GetBody()->GetUserData().entity_ID)) {
-        if (contact->GetFixtureB()->IsSensor()) {
-          Building_Functions::Show_Interior(World::world[World::currentZone.current].zone, (entt::entity) contact->GetFixtureB()->GetBody()->GetUserData().entity_ID);
-        }
-      } else if (World::world[World::currentZone.current].zone.any_of<Component::Input>((entt::entity) contact->GetFixtureB()->GetBody()->GetUserData().entity_ID)) {
-        if (contact->GetFixtureA()->IsSensor()) {
-          Building_Functions::Show_Interior(World::world[World::currentZone.current].zone, (entt::entity) contact->GetFixtureA()->GetBody()->GetUserData().entity_ID);
-        }
-      }
+    void BeginContact(b2Contact *contact) override {
+      Building_Functions::Show_Interior(contact);
     }
 
-    void EndContact(b2Contact *contact) {
-      if (World::world[World::currentZone.current].zone.any_of<Component::Input>((entt::entity) contact->GetFixtureA()->GetBody()->GetUserData().entity_ID)) {
-        if (contact->GetFixtureB()->IsSensor()) {
-          Building_Functions::Show_Exterior(World::world[World::currentZone.current].zone, (entt::entity) contact->GetFixtureB()->GetBody()->GetUserData().entity_ID);
-        }
-      } else if (World::world[World::currentZone.current].zone.any_of<Component::Input>((entt::entity) contact->GetFixtureB()->GetBody()->GetUserData().entity_ID)) {
-        if (contact->GetFixtureA()->IsSensor()) {
-          Building_Functions::Show_Exterior(World::world[World::currentZone.current].zone, (entt::entity) contact->GetFixtureA()->GetBody()->GetUserData().entity_ID);
-        }
-      }
+    void EndContact(b2Contact *contact) override {
+      Building_Functions::Show_Exterior(contact);
     }
   };
   MyContactListener myContactListenerInstance;
 
-  void init_Collison(int &state) {
-    b2Vec2 gravity;
+  void init_Collison(const int &state) {
+    b2Vec2 gravity{};
     gravity.SetZero();
     collisionList.at(state) = new b2World(gravity);
     collisionList[state]->SetAutoClearForces(false);
@@ -76,7 +52,7 @@ namespace Collision {
     }
   }
 
-  void Create_Static_Body_Rect(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, Collision_Component::aabb aabb) {
+  void Create_Static_Body_Rect(entt::registry &zone, const int &state, const entt::entity &entity, const float &x, const float &y, const Collision_Component::aabb aabb) {
 
     b2BodyDef bodyDef;
 
@@ -89,12 +65,12 @@ namespace Collision {
     zone.emplace_or_replace<Component::Body>(entity, body);
 
     b2PolygonShape rect;
-    rect.SetAsBox(aabb.hx, aabb.hy);
+    rect.SetAsBox((float) aabb.hx, (float) aabb.hy);
 
     body->CreateFixture(&rect, 0.0f);
   }
 
-  void Create_Static_Body_Polygon(entt::registry &zone, int &state, entt::entity &entity, float &x, float &y, std::vector<std::vector<tmx::Vector2<float>>> pointVecs) {
+  void Create_Static_Body_Polygon(entt::registry &zone, const int &state, const entt::entity &entity, const float &x, const float &y, const std::vector<std::vector<tmx::Vector2<float>>> &pointVecs) {
 
     b2BodyDef bodyDef;
 
@@ -106,7 +82,7 @@ namespace Collision {
     zone.emplace_or_replace<Component::Body>(entity, body);
 
     for (auto pointVec: pointVecs) {
-      if (pointVec.size() > 0) {
+      if (!pointVec.empty()) {
         b2PolygonShape polygon;
         b2Vec2 vertices[pointVec.size()];
 
@@ -114,7 +90,7 @@ namespace Collision {
           vertices[i].Set(pointVec[i].x, pointVec[i].y);
         }
 
-        int32 count = pointVec.size();
+        auto count = (int) pointVec.size();
         polygon.Set(vertices, count);
 
         body->CreateFixture(&polygon, 0.0f);
@@ -132,7 +108,7 @@ namespace Collision {
           vertices[i].Set(pointVec[i].x, pointVec[i].y);
         }
 
-        int32 count = pointVec.size();
+        auto count = (int) pointVec.size();
         polygon.Set(vertices, count);
         b2FixtureDef fixture;
 
@@ -147,7 +123,6 @@ namespace Collision {
       return;
     }
     Utilities::Log("too few vertices in the polygon, min 3, current: " + std::to_string(pointVec.size()));
-    return;
   }
 
   void Add_Circle_Fixture(b2Body *body, float radius) {
@@ -248,7 +223,7 @@ namespace Collision {
 
   void Attach_Components(entt::registry &zone, int &state, entt::entity &entity, Collision_Component::Collider_Data &colliderData) {
     if (Collision_Component::houseColliders.contains(colliderData.name)) {
-      auto collider = Collision_Component::houseColliders.at(colliderData.name);
+      auto collider = Collision_Component::houseColliders.at(colliderData.name).colliders;
       auto &position = zone.get<Component::Position>(entity);
       auto &offset = zone.get<Rendering_Components::Sprite_Offset>(entity);
 
@@ -257,8 +232,12 @@ namespace Collision {
 
       colliderData.position.x += colliderData.offset.x;
       colliderData.position.y -= colliderData.offset.y;
-
-      b2Body *body = Collision::Add_Static_Body(zone, state, entity, colliderData.position);
+      b2Body *body;
+      if (zone.any_of<Component::Body>(entity)) {
+        body = zone.get<Component::Body>(entity).body;
+      } else {
+        body = Collision::Add_Static_Body(zone, state, entity, colliderData.position);
+      }
       for (int i = 0; i < collider.pointVecs.size(); ++i) {
         Collision::Add_Polygon_Fixture(body, collider.pointVecs[i], collider.isSensor[i]);
       }

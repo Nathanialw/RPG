@@ -623,11 +623,30 @@ namespace Items {
     }
   }
 
-  void Update_Mouse_Slot_Position(entt::registry &zone, entt::entity &item, bool &isItemCurrentlyHeld, float &mouseX, float &mouseY) {
+  void Update_Mouse_Slot_Position(entt::registry &zone, int &state, entt::entity &item, bool &isItemCurrentlyHeld, float &mouseX, float &mouseY) {
     //set item in mouse array position to mouse x, y every frame
     if (isItemCurrentlyHeld) {
       if (zone.any_of<Component::Position>(item)) {
         Component::Position &position = zone.get<Component::Position>(item);
+
+        if (zone.any_of<Component::Interaction_Rect>(item)) {
+          auto &rect = zone.get<Component::Interaction_Rect>(item).rect;
+          rect.x = mouseX - (rect.w / 2.0f);
+          rect.y = mouseY - (rect.h / 2.0f);
+          Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_Mouse_Collision(zone, rect, state);
+
+          auto &placeable = zone.get<Building_Component::Placement>(item).placeable;
+          auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(item);
+          sprite.blendType = Rendering_Components::ghost;
+          if (targetData.b) {
+            sprite.color = {255, 0, 0, 50};
+            placeable = false;
+          } else {
+            sprite.color = {200, 200, 200, 50};
+            placeable = true;
+          }
+        }
+
         position.x = mouseX;
         position.y = mouseY;
       } else {

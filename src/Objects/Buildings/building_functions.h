@@ -2,7 +2,7 @@
 
 namespace Building_Functions {
 
-  void Show_Interior(entt::registry &zone, entt::entity building_ID) {
+  void Check_For_Interior(entt::registry &zone, const entt::entity building_ID) {
     if (!zone.any_of<Rendering_Components::Showing_Interior>(building_ID)) {
       if (zone.any_of<Component::Entity_Type>(building_ID)) {
         auto type = zone.get<Component::Entity_Type>(building_ID);
@@ -22,7 +22,19 @@ namespace Building_Functions {
     }
   }
 
-  void Show_Exterior(entt::registry &zone, entt::entity building_ID) {
+  void Show_Interior(const b2Contact *contact) {
+    if (World::world[World::currentZone.current].zone.any_of<Component::Input>((entt::entity) contact->GetFixtureA()->GetBody()->GetUserData().entity_ID)) {
+      if (contact->GetFixtureB()->IsSensor()) {
+        Check_For_Interior(World::world[World::currentZone.current].zone, (entt::entity) contact->GetFixtureB()->GetBody()->GetUserData().entity_ID);
+      }
+    } else if (World::world[World::currentZone.current].zone.any_of<Component::Input>((entt::entity) contact->GetFixtureB()->GetBody()->GetUserData().entity_ID)) {
+      if (contact->GetFixtureA()->IsSensor()) {
+        Check_For_Interior(World::world[World::currentZone.current].zone, (entt::entity) contact->GetFixtureA()->GetBody()->GetUserData().entity_ID);
+      }
+    }
+  }
+
+  void Check_For_Exterior(entt::registry &zone, const entt::entity building_ID) {
     if (zone.any_of<Rendering_Components::Interior_Sheet_Info>(building_ID)) {
       auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(building_ID);
       auto &offset = zone.get<Rendering_Components::Sprite_Offset>(building_ID);
@@ -32,6 +44,18 @@ namespace Building_Functions {
       buildingPosition.y += offset.y;
       sprite.interior = false;
       zone.remove<Rendering_Components::Showing_Interior>(building_ID);
+    }
+  }
+
+  void Show_Exterior(const b2Contact *contact) {
+    if (World::world[World::currentZone.current].zone.any_of<Component::Input>((entt::entity) contact->GetFixtureA()->GetBody()->GetUserData().entity_ID)) {
+      if (contact->GetFixtureB()->IsSensor()) {
+        Check_For_Exterior(World::world[World::currentZone.current].zone, (entt::entity) contact->GetFixtureB()->GetBody()->GetUserData().entity_ID);
+      }
+    } else if (World::world[World::currentZone.current].zone.any_of<Component::Input>((entt::entity) contact->GetFixtureB()->GetBody()->GetUserData().entity_ID)) {
+      if (contact->GetFixtureA()->IsSensor()) {
+        Check_For_Exterior(World::world[World::currentZone.current].zone, (entt::entity) contact->GetFixtureA()->GetBody()->GetUserData().entity_ID);
+      }
     }
   }
 

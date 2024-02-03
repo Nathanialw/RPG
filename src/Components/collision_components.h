@@ -35,6 +35,12 @@ namespace Collision_Component {
     float y = 0.0f;
   };
 
+  struct Placement_Box {
+    u_int8_t groupIndex = 1;
+    bool isSensor = false;
+    std::vector<tmx::Vector2<float>> pointVecs = {};
+  };
+
   struct Colliders {
     b2BodyType bodyType = b2_staticBody;
     std::vector<bool> isSensor;
@@ -42,5 +48,10 @@ namespace Collision_Component {
     std::vector<Circle> circlesVecs = {};
   };
 
-  std::unordered_map<std::string, Colliders> houseColliders;
+  struct Building_Colliders {
+    Colliders colliders;
+    Placement_Box placementBox;
+  };
+
+  std::unordered_map<std::string, Building_Colliders> houseColliders;
 }// namespace Collision_Component

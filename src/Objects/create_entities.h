@@ -45,7 +45,7 @@ namespace Create_Entities {
     int direction;
   };
 
-  Entity_ID_Direction Create_Render_Object(entt::registry &zone, float x, float y, std::string &templateName, int xmlIndex) {
+  Entity_ID_Direction Create_Render_Object(entt::registry &zone, int state, float x, float y, std::string &templateName, int xmlIndex) {
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
     auto entity = zone.create();
 
@@ -54,7 +54,7 @@ namespace Create_Entities {
       Rendering::Sheet_Data frameData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
 
       zone.emplace_or_replace<Component::Position>(entity, x, y);
-      Rendering_Components::Offsets offsets;
+      Rendering_Components::Offsets offsets = {};
       if (frameData.frameData.sheetData) {
         offsets = Rendering::Set_Offset(zone, entity, data.collider_type, data.x_offset, data.y_offset, frameData.frame);
       } else {
@@ -76,13 +76,17 @@ namespace Create_Entities {
         //position is replaced by mouse position with building placement
         zone.emplace<Collision_Component::Collider_Data>(entity, data.interior, offsets.colliderOffset, data.radius, x, y, data.collider_type, ((float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f));
 
+        zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w / 2.0f), (y - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f), (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, false);
+
+        auto &gg = zone.emplace_or_replace<Building_Component::Placement>(entity);
+
       } else {
         //only use this interaction rect if the building doesn't have an interior
         zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
         zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offsets.colliderOffset, data.radius, x, y, data.collider_type, 0.0f);
+        Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius);
       }
 
-      Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
       Social_Control::Entity(zone, entity, data.race);
       zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
@@ -119,7 +123,7 @@ namespace Create_Entities {
   }
 
   entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex) {
-    entt::entity entity = Create_Entities::Create_Render_Object(zone, x, y, templateName, xmlIndex).entity;
+    entt::entity entity = Create_Entities::Create_Render_Object(zone, state, x, y, templateName, xmlIndex).entity;
     if (!Cave::Set_As_Cave(zone, entity, templateName)) {
       ///used for object generation like blood so it isn't added to a tile index
       if (i != x && j != y) {

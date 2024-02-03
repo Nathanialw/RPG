@@ -24,7 +24,7 @@ namespace Heal_Self {
     return 1;
   }
 
-  int Heal_Self(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Heal_Self(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     //get data from db
     Action_Component::Set_State(action, Action_Component::pray_standing);
     float castTime = 500.0f;

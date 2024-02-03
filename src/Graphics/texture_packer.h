@@ -254,12 +254,54 @@ namespace Texture_Packer {
     }
   }
 
+  void Retrieve_Collider(const std::string &type, const int &i, Collision_Component::Colliders &colliders, tinyxml2::XMLElement *fixtureElement) {
+    if (type == "POLYGON") {
+      tinyxml2::XMLElement *polygonElement = fixtureElement->FirstChildElement("polygon");
+      int numVertexes = polygonElement->IntAttribute("numVertexes");
+      std::vector<tmx::Vector2<float>> vertexes;
+      colliders.pointVecs.emplace_back(vertexes);
+      tinyxml2::XMLElement *vertexElement = polygonElement->FirstChildElement("vertex");
+
+      for (int j = 0; j < numVertexes; ++j) {
+        tmx::Vector2 vec = {vertexElement->FloatAttribute("x"), vertexElement->FloatAttribute("y")};
+        colliders.pointVecs[i].emplace_back(vec);
+        vertexElement = vertexElement->NextSiblingElement("vertex");
+      }
+      colliders.pointVecs[i].shrink_to_fit();
+    } else if (type == "CIRCLE") {
+      tinyxml2::XMLElement *circleElement = fixtureElement->FirstChildElement("circle");
+      Collision_Component::Circle circle;
+      circle.r = circleElement->FloatAttribute("radius");
+      circle.x = circleElement->FloatAttribute("x");
+      circle.y = circleElement->FloatAttribute("y");
+      colliders.circlesVecs.emplace_back(circle);
+    }
+  };
+
+  void Retrieve_Placement(const std::string &type, const int &i, Collision_Component::Placement_Box &placementBox, tinyxml2::XMLElement *fixtureElement) {
+    if (type == "POLYGON") {
+      placementBox.groupIndex = 1;
+      placementBox.isSensor = true;
+
+      tinyxml2::XMLElement *polygonElement = fixtureElement->FirstChildElement("polygon");
+      int numVertexes = polygonElement->IntAttribute("numVertexes");
+      tinyxml2::XMLElement *vertexElement = polygonElement->FirstChildElement("vertex");
+      for (int j = 0; j < numVertexes; ++j) {
+        tmx::Vector2 vec = {vertexElement->FloatAttribute("x"), vertexElement->FloatAttribute("y")};
+        placementBox.pointVecs.emplace_back(vec);
+        vertexElement = vertexElement->NextSiblingElement("vertex");
+      }
+      placementBox.pointVecs.shrink_to_fit();
+    }
+  };
+
 
   void TexturePacker_Import_Collision(const char *xmlPath) {
     tinyxml2::XMLDocument spriteSheetData;
     spriteSheetData.LoadFile(xmlPath);
     tinyxml2::XMLElement *pSpriteElement;
     Collision_Component::Colliders colliders;
+    Collision_Component::Placement_Box placementBox;
 
     pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("bodies");
     //    pSpriteElement = pSpriteElement->FirstChildElement("bodies");
@@ -271,29 +313,17 @@ namespace Texture_Packer {
       int numFixtures = bodyElement->IntAttribute("numFixtures");
       tinyxml2::XMLElement *fixtureElement = bodyElement->FirstChildElement("fixture");
       if (fixtureElement) {
-        colliders.isSensor.resize(numFixtures);
         for (int i = 0; i < numFixtures; ++i) {
-          if ((std::string) fixtureElement->Attribute("isSensor") == "true") colliders.isSensor[i] = true;
           std::string type = fixtureElement->Attribute("type");
-          if (type == "POLYGON") {
-            tinyxml2::XMLElement *polygonElement = fixtureElement->FirstChildElement("polygon");
-            int numVertexes = polygonElement->IntAttribute("numVertexes");
-            std::vector<tmx::Vector2<float>> vertexes;
-            colliders.pointVecs.emplace_back(vertexes);
-            tinyxml2::XMLElement *vertexElement = polygonElement->FirstChildElement("vertex");
-            for (int j = 0; j < numVertexes; ++j) {
-              tmx::Vector2 vec = {vertexElement->FloatAttribute("x"), vertexElement->FloatAttribute("y")};
-              colliders.pointVecs[i].emplace_back(vec);
-              vertexElement = vertexElement->NextSiblingElement("vertex");
+          if ((std::string) fixtureElement->Attribute("filter_groupIndex") == "1") {
+            Retrieve_Placement(type, i, placementBox, fixtureElement);
+          } else {
+            if ((std::string) fixtureElement->Attribute("isSensor") == "true") {
+              colliders.isSensor.emplace_back(true);
+            } else {
+              colliders.isSensor.emplace_back(false);
             }
-            colliders.pointVecs[i].shrink_to_fit();
-          } else if (type == "CIRCLE") {
-            tinyxml2::XMLElement *circleElement = fixtureElement->FirstChildElement("circle");
-            Collision_Component::Circle circle;
-            circle.r = circleElement->FloatAttribute("radius");
-            circle.x = circleElement->FloatAttribute("x");
-            circle.y = circleElement->FloatAttribute("y");
-            colliders.circlesVecs.emplace_back(circle);
+            Retrieve_Collider(type, i, colliders, fixtureElement);
           }
           fixtureElement = fixtureElement->NextSiblingElement("fixture");
         }
@@ -301,7 +331,7 @@ namespace Texture_Packer {
       colliders.isSensor.shrink_to_fit();
       colliders.pointVecs.shrink_to_fit();
       colliders.circlesVecs.shrink_to_fit();
-      Collision_Component::houseColliders[bodyElement->Attribute("name")] = colliders;
+      Collision_Component::houseColliders[bodyElement->Attribute("name")] = {colliders, placementBox};
       colliders.isSensor.clear();
       colliders.pointVecs.clear();
       colliders.circlesVecs.clear();
@@ -340,7 +370,6 @@ namespace Texture_Packer {
         imageData.texture = Import_Tileset_Texture(textureIndex, imageData.texture, imgPath);
         SDL_QueryTexture(imageData.texture, nullptr, nullptr, &imageData.w, &imageData.h);
       }
-      Utilities::Log("SUCCESS!");
 
       Image_Textures[tilesetName] = imageData;
       return {nullptr, &Image_Textures};
@@ -370,7 +399,6 @@ namespace Texture_Packer {
         imgPath = imgPathStr.c_str();
         spriteSheet.texture = Import_Tileset_Texture(textureIndex, spriteSheet.texture, imgPath);
       }
-      Utilities::Log("SUCCESS!");
 
       spriteSheet.frameList.shrink_to_fit();
       Packer_Textures[tilesetName] = spriteSheet;

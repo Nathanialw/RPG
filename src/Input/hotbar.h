@@ -51,43 +51,43 @@ namespace Hotbar {
     }
   }
 
-  int SetStateAttack2(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int SetStateAttack2(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Action_Component::Set_State(action, Action_Component::attack2);
     return 0;
   }
 
-  int Sinister_Strike(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Sinister_Strike(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Sinister_Strike::Instant_Attack(zone, entity);
     return 0;
   }
 
-  int Toggle_AI(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Toggle_AI(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     AI::Turn_On();
     return 0;
   }
 
-  int Tab_Target(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Tab_Target(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     User_Mouse_Input::Tab_Target(zone, entity);
     return 0;
   }
 
-  int Bag_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Bag_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     UI::Bag_UI::Toggle_Bag();
     return 0;
   }
 
-  int Info_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Info_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     UI_Info::Info_Toggle();
     return 0;
   }
 
-  int Menu_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Menu_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     auto view = zone.view<Component::Selected>();
     if (Mouse_Struct::mouseData.type == Component::Icon_Type::building || UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || !view.empty()) {
       if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
         Mouse_Struct::mouseData.type = Component::Icon_Type::none;
         Mouse_Struct::mouseData.name = "";
-        zone.destroy(Mouse::mouseItem);
+        zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseItem);
         Mouse::mouseItem = Mouse::cursor_ID;
         Mouse_Struct::mouseData.mouseItem = Mouse::cursor_ID;
         Mouse_Struct::mouseData.itemCurrentlyHeld = false;
@@ -107,63 +107,63 @@ namespace Hotbar {
   }
 
   bool autoRun = false;
-  int Auto_Run(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Auto_Run(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     autoRun = true;
     Mouse::bRight_Mouse_Pressed = true;
     return 0;
   }
 
-  int Pause_Toggle(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Pause_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Menu::Toggle();
     return 0;
   }
 
-  int Mouse_On(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Mouse_On(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     SDL_SetRelativeMouseMode(SDL_FALSE);
     return 0;
   }
 
-  int Mouse_Off(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Mouse_Off(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     SDL_SetRelativeMouseMode(SDL_TRUE);
     return 0;
   }
 
-  int Toggle_Spellbook(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Toggle_Spellbook(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     UI_Spellbook::Toggle();
     return 0;
   }
 
-  int Show_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Show_Items(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Items::showGroundItems = true;
     return 0;
   }
 
-  int Unshow_Items(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Unshow_Items(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Items::showGroundItems = false;
     return 0;
   }
 
-  int Jump(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Jump(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Action_Component::Set_State(action, Action_Component::jump);
     return 0;
   }
 
-  int Surface(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Surface(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Cave::Surface(index);
     return 0;
   }
 
-  int Next_Page(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Next_Page(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     UI_Spellbook::Next_Page();
     return 0;
   }
 
-  int Previous_Page(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int Previous_Page(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     UI_Spellbook::Previous_Page();
     return 0;
   }
 
-  int PLACEHOLDER(entt::registry &zone, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+  int PLACEHOLDER(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     return 0;
   }
 

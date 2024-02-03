@@ -64,11 +64,11 @@ namespace Event_Handler {
         auto &position = zone.get<Component::Position>(entity);
 
         if (Hotbar_Structs::keybinds.contains(Events::event.key.keysym.sym)) {
-          Hotbar_Structs::keybinds[Events::event.key.keysym.sym](zone, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "");
+          Hotbar_Structs::keybinds[Events::event.key.keysym.sym](zone, state, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "");
         }
       } else if (Events::event.type == SDL_KEYUP) {
         if (Hotbar::keyupKeybinds.contains(Events::event.key.keysym.sym)) {
-          Hotbar::keyupKeybinds[Events::event.key.keysym.sym](zone, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "");
+          Hotbar::keyupKeybinds[Events::event.key.keysym.sym](zone, state, entity, action, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, "");
         }
       }
     }
@@ -114,7 +114,7 @@ namespace Event_Handler {
   void Mouse_Input(entt::registry &zone, int &state, entt::entity &player_ID, Component::Position &playerPosition, Component::Camera &camera) {
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
-        if (Game_Menu_Control::Check_Menu_Button(zone)) {
+        if (Game_Menu_Control::Check_Menu_Button(zone, state)) {
           return;
         }
         //        loot
@@ -151,18 +151,26 @@ namespace Event_Handler {
             }
           }
         } else {
-          User_Mouse_Input::Selection_Box(zone);//if units are currently selected
-                                                //          items
+          //buildings
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
-            //set building
-            auto &colliderData = zone.get<Collision_Component::Collider_Data>(Mouse::mouseItem);
-            colliderData.position.x = Mouse::iXWorld_Mouse;
-            colliderData.position.y = Mouse::iYWorld_Mouse;
-            if (Create_Entities::Create_Object(zone, state, Mouse::mouseItem)) {
-              Create_Entities::Remove_From_Mouse(zone, Mouse::mouseItem);
+            auto &placeable = zone.get<Building_Component::Placement>(Mouse::mouseItem).placeable;
+            if (placeable) {
+              auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(Mouse::mouseItem);
+              sprite.color = {200, 200, 200, SDL_ALPHA_OPAQUE};
+              sprite.blendType = Rendering_Components::normal;
+              //set building
+              zone.get<Collision_Component::Collider_Data>(Mouse::mouseItem).position = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
+              if (Create_Entities::Create_Object(zone, state, Mouse::mouseItem)) {
+                Create_Entities::Remove_From_Mouse(zone, Mouse::mouseItem);
+                return;
+              };
+            } else {
+              Utilities::Log("building cannot be placed, something is in the way");
               return;
-            };
+            }
           }
+          //          items
+          User_Mouse_Input::Selection_Box(zone);//if units are currently selected
           UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
           //          spells
           Action_Bar::Clear_Spell_On_Mouse(zone);
@@ -204,12 +212,12 @@ namespace Event_Handler {
           //set building
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
             //destroy the previous mouse entity
-            zone.destroy(Mouse::mouseItem);
+            zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseItem);
             //go into the db and get all with the icon name of the same,
             std::string name = Entity_Loader::Increment_Direction(Mouse_Struct::mouseData.name, Mouse_Struct::mouseData.direction);
             // plug it into Create_Render_Object()
             int xmlIndex = -1;
-            auto mouseEntity = Create_Entities::Create_Render_Object(zone, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
+            auto mouseEntity = Create_Entities::Create_Render_Object(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
             Create_Entities::Set_On_Mouse(zone, mouseEntity);
           } else {
             UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
@@ -220,20 +228,22 @@ namespace Event_Handler {
 
     if (Events::event.key.type == SDL_MOUSEBUTTONUP) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
-        if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-          return;
-        } else if (UI_Spellbook::Check_Spellbook(camera)) {
-          return;
-        } else if (Game_Menu_Control::Check_Menu_Frame()) {
-          return;
-        } else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
-          return;
-        } else if (Loot_Panel::Mouse_Inside_Panel(camera, state)) {
-          Loot_Panel::Get_loot_Item(zone, state, camera);
-          return;
-        } else if (Mouse::bLeft_Mouse_Pressed) {
-          User_Mouse_Input::Select_Units(zone, player_ID);
-          return;
+        if (Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
+          if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
+            return;
+          } else if (UI_Spellbook::Check_Spellbook(camera)) {
+            return;
+          } else if (Game_Menu_Control::Check_Menu_Frame()) {
+            return;
+          } else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
+            return;
+          } else if (Loot_Panel::Mouse_Inside_Panel(camera, state)) {
+            Loot_Panel::Get_loot_Item(zone, state, camera);
+            return;
+          } else if (Mouse::bLeft_Mouse_Pressed) {
+            User_Mouse_Input::Select_Units(zone, player_ID);
+            return;
+          }
         }
       }
       if (Events::event.button.button == SDL_BUTTON_RIGHT) {

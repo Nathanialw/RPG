@@ -38,7 +38,6 @@ namespace Component {
 
   struct Body {
     b2Body *body;
-    b2Body *rigidBody;
   };
 
   struct Active {
