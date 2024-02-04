@@ -155,6 +155,7 @@ namespace Event_Handler {
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
             auto &placeable = zone.get<Building_Component::Placement>(Mouse::mouseItem).placeable;
             if (placeable) {
+              zone.remove<Building_Component::Placement>(Mouse::mouseItem);
               auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(Mouse::mouseItem);
               sprite.color = {200, 200, 200, SDL_ALPHA_OPAQUE};
               sprite.blendType = Rendering_Components::normal;

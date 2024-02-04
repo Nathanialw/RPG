@@ -287,23 +287,41 @@ namespace Quad_Tree {
   bool Entity_vs_Polygon_Collision(entt::registry &zone, int &state, Building_Component::Polygon &polygon, SDL_FRect &entityRect) {
     std::vector<std::vector<f2>> polygons;
     for (const auto &object: quadTrees[state].search(entityRect)) {
-      if (zone.any_of<Component::Radius>(object->item.entity_ID)) {
-        auto &rect = zone.get<Component::Interaction_Rect>(object->item.entity_ID).rect;
-        std::vector<f2> treePolygon;
-        treePolygon.push_back({rect.x, rect.y});
-        treePolygon.push_back({rect.x + rect.w, rect.y});
-        treePolygon.push_back({rect.x + rect.w, rect.y + rect.h});
-        treePolygon.push_back({rect.x, rect.y + rect.h});
-
+      if (zone.any_of<Building_Component::Set_Placement>(object->item.entity_ID)) {
+        if (object->item.entity_ID != Mouse::mouseItem) {
+          auto &building_polygons = zone.get<Building_Component::Set_Placement>(object->item.entity_ID).polygons;
+          for (const auto &treePolygon: building_polygons) {
+            polygons.emplace_back(treePolygon);
+          }
+        }
+      } else {
+        auto &rect = zone.get<Component::Interaction_Rect>(object->item.entity_ID);
+        Building_Component::Polygon treePolygon;
+        if (rect.tall) {
+          SDL_FRect rect2 = {
+              rect.rect.x,
+              rect.rect.y += (rect.rect.h / 2.0f),
+              rect.rect.w,
+              rect.rect.h /= 2.0f};
+          treePolygon.push_back({rect2.x, rect2.y});
+          treePolygon.push_back({rect2.x + rect2.w, rect2.y});
+          treePolygon.push_back({rect2.x + rect2.w, rect2.y + rect2.h});
+          treePolygon.push_back({rect2.x, rect2.y + rect2.h});
+        } else {
+          treePolygon.push_back({rect.rect.x, rect.rect.y});
+          treePolygon.push_back({rect.rect.x + rect.rect.w, rect.rect.y});
+          treePolygon.push_back({rect.rect.x + rect.rect.w, rect.rect.y + rect.rect.h});
+          treePolygon.push_back({rect.rect.x, rect.rect.y + rect.rect.h});
+        }
         polygons.emplace_back(treePolygon);
       }
     }
-    //sort by type and get the higher priority one first
     if (!polygons.empty()) {
       for (auto &p: polygons) {
         if (Utilities::PolygonOverlap_SAT(polygon, p)) return true;
       }
     }
+
     return false;
   }
 

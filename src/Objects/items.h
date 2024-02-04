@@ -638,11 +638,23 @@ namespace Items {
           bool collision = false;
           for (auto polygon: placeable.polygons) {
             Building_Component::Polygon treePolygon;
-            treePolygon.push_back({rect.x, rect.y});
-            treePolygon.push_back({rect.x + rect.w, rect.y});
-            treePolygon.push_back({rect.x + rect.w, rect.y + rect.h});
-            treePolygon.push_back({rect.x, rect.y + rect.h});
-
+            for (auto vec: polygon) {
+              treePolygon.push_back({mouseX + vec.x, mouseY + vec.y});
+            }
+            std::vector<Building_Component::Polygon> place;
+            place.emplace_back(treePolygon);
+            zone.emplace_or_replace<Building_Component::Set_Placement>(item, place);
+            
+            SDL_FPoint points[4];
+            auto view = zone.view<Component::Camera>();
+            for (auto entity: view) {
+              auto &camera = zone.get<Component::Camera>(entity);
+              for (int j = 0; j < treePolygon.size(); ++j) {
+                points[j].x = treePolygon[j].x - camera.screen.x;
+                points[j].y = treePolygon[j].y - camera.screen.y;
+              }
+              SDL_RenderDrawLinesF(Graphics::renderer, points, treePolygon.size());
+            }
             collision = Quad_Tree::Entity_vs_Polygon_Collision(zone, state, treePolygon, rect);
           }
 

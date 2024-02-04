@@ -19,4 +19,9 @@ namespace Building_Component {
     std::vector<Circle> circles;
     bool placeable = false;
   };
+
+  struct Set_Placement {
+    std::vector<Polygon> polygons;
+    std::vector<Circle> circles;
+  };
 }// namespace Building_Component
