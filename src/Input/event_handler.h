@@ -153,8 +153,9 @@ namespace Event_Handler {
         } else {
           //buildings
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
-            auto &placeable = zone.get<Building_Component::Placement>(Mouse::mouseItem).placeable;
-            if (placeable) {
+            auto &placeable = zone.get<Building_Component::Placement>(Mouse::mouseItem);
+            Utilities::Log(placeable.polygons.size());
+            if (!placeable.obstructed) {
               zone.remove<Building_Component::Placement>(Mouse::mouseItem);
               auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(Mouse::mouseItem);
               sprite.color = {200, 200, 200, SDL_ALPHA_OPAQUE};

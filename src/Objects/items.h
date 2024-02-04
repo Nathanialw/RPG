@@ -593,7 +593,7 @@ namespace Items {
   void Item_Collision(entt::registry &zone) {
     ///What we actually need to do is create a quad tree with each cell the size of one item and only one item per cell
     /// when an item it dropped it falls it queries the tree into the nearest vacant cell
-    auto view = zone.view<Ground_Item, Component::Position, Name, Component::Renderable>();
+    auto view = zone.view<Item_Component::Ground_Item, Component::Position, Item_Component::Name, Component::Renderable>();
     for (auto item1: view) {
       auto &itemPosition1 = view.get<Component::Position>(item1);
       auto &name1 = view.get<Name>(item1).name;
@@ -623,52 +623,50 @@ namespace Items {
     }
   }
 
-  void Update_Mouse_Slot_Position(entt::registry &zone, int &state, entt::entity &item, bool &isItemCurrentlyHeld, float &mouseX, float &mouseY) {
+  void Update_Mouse_Slot_Position(entt::registry &zone, const int &state, const entt::entity &item, const bool &isItemCurrentlyHeld, const float &mouseX, const float &mouseY) {
     //set item in mouse array position to mouse x, y every frame
     if (isItemCurrentlyHeld) {
       if (zone.any_of<Component::Position>(item)) {
-        Component::Position &position = zone.get<Component::Position>(item);
-
         if (zone.any_of<Component::Interaction_Rect>(item)) {
           auto &rect = zone.get<Component::Interaction_Rect>(item).rect;
           rect.x = mouseX - (rect.w / 2.0f);
           rect.y = mouseY - (rect.h / 2.0f);
-          //          Quad_Tree::Entity_Data targetData = Quad_Tree::Entity_vs_Mouse_Collision(zone, rect, state);
           auto &placeable = zone.get<Building_Component::Placement>(item);
-          bool collision = false;
           for (auto polygon: placeable.polygons) {
             Building_Component::Polygon treePolygon;
             for (auto vec: polygon) {
               treePolygon.push_back({mouseX + vec.x, mouseY + vec.y});
             }
+
             std::vector<Building_Component::Polygon> place;
             place.emplace_back(treePolygon);
             zone.emplace_or_replace<Building_Component::Set_Placement>(item, place);
-            
-            SDL_FPoint points[4];
+
             auto view = zone.view<Component::Camera>();
             for (auto entity: view) {
-              auto &camera = zone.get<Component::Camera>(entity);
-              for (int j = 0; j < treePolygon.size(); ++j) {
+              auto &camera = view.get<Component::Camera>(entity);
+              SDL_FPoint points[4];
+              for (int j = 0; j < 4; ++j) {
                 points[j].x = treePolygon[j].x - camera.screen.x;
                 points[j].y = treePolygon[j].y - camera.screen.y;
               }
-              SDL_RenderDrawLinesF(Graphics::renderer, points, treePolygon.size());
+              SDL_RenderDrawLinesF(Graphics::renderer, points, 4);
+              SDL_RenderDrawLineF(Graphics::renderer, points[0].x, points[0].y, points[3].x, points[3].y);
             }
-            collision = Quad_Tree::Entity_vs_Polygon_Collision(zone, state, treePolygon, rect);
+
+            placeable.obstructed = Quad_Tree::Entity_vs_Polygon_Collision(zone, state, treePolygon, rect);
           }
 
           auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(item);
           sprite.blendType = Rendering_Components::ghost;
-          if (collision) {
+          if (placeable.obstructed) {
             sprite.color = {255, 0, 0, 50};
-            placeable.placeable = false;
           } else {
             sprite.color = {200, 200, 200, 50};
-            placeable.placeable = true;
           }
         }
 
+        Component::Position &position = zone.get<Component::Position>(item);
         position.x = mouseX;
         position.y = mouseY;
       } else {

@@ -284,7 +284,7 @@ namespace Quad_Tree {
     return {false};
   }
 
-  bool Entity_vs_Polygon_Collision(entt::registry &zone, int &state, Building_Component::Polygon &polygon, SDL_FRect &entityRect) {
+  bool Entity_vs_Polygon_Collision(entt::registry &zone, const int &state, Building_Component::Polygon &polygon, SDL_FRect &entityRect) {
     std::vector<std::vector<f2>> polygons;
     for (const auto &object: quadTrees[state].search(entityRect)) {
       if (zone.any_of<Building_Component::Set_Placement>(object->item.entity_ID)) {

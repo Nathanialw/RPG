@@ -134,7 +134,7 @@ namespace Interface {
   }
 
   void Update_Interaction_Box(entt::registry &zone) {
-    auto view = zone.view<Component::Interaction_Rect, Component::Position, Component::Radius, Component::Renderable>(entt::exclude<Building_Component::Placement>);
+    auto view = zone.view<Component::Interaction_Rect, Component::Position, Component::Radius, Component::Renderable>(entt::exclude<Building_Component::Placement, Building_Component::Set_Placement>);
 
     for (auto entity: view) {
       auto &position = view.get<Component::Position>(entity);

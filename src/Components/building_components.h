@@ -17,7 +17,7 @@ namespace Building_Component {
   struct Placement {
     std::vector<Polygon> polygons;
     std::vector<Circle> circles;
-    bool placeable = false;
+    bool obstructed = false;
   };
 
   struct Set_Placement {

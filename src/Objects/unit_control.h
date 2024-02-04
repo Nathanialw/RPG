@@ -134,11 +134,12 @@ namespace User_Mouse_Input {
     std::vector<entt::entity> selected;
     std::vector<entt::entity> selectedEnemy;
 
-    auto soldier_view = zone.view<Component::Interaction_Rect, Component::Renderable>(entt::exclude<Item_Component::Ground_Item, Component::Caster>);
+    auto soldier_view = zone.view<Component::Interaction_Rect, Component::Entity_Type, Component::Renderable>(entt::exclude<Item_Component::Ground_Item, Component::Caster>);
     for (auto soldier: soldier_view) {
       auto &interaction = soldier_view.get<Component::Interaction_Rect>(soldier);
+      auto &type = soldier_view.get<Component::Entity_Type>(soldier);
       if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_World_Cursor(interaction.rect)) {
-        if (soldier == player_ID) {
+        if (soldier == player_ID || type == Component::Entity_Type::building) {
           //                    prevent from selecting player
           continue;
         }

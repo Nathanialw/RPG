@@ -278,7 +278,7 @@ namespace Texture_Packer {
     }
   };
 
-  void Retrieve_Placement(const std::string &type, const int &i, Collision_Component::Placement_Box &placementBox, tinyxml2::XMLElement *fixtureElement) {
+  void Retrieve_Placement(const std::string &type, Collision_Component::Placement_Box &placementBox, tinyxml2::XMLElement *fixtureElement) {
     if (type == "POLYGON") {
       placementBox.groupIndex = 1;
       placementBox.isSensor = true;
@@ -316,7 +316,7 @@ namespace Texture_Packer {
         for (int i = 0; i < numFixtures; ++i) {
           std::string type = fixtureElement->Attribute("type");
           if ((std::string) fixtureElement->Attribute("filter_groupIndex") == "1") {
-            Retrieve_Placement(type, i, placementBox, fixtureElement);
+            Retrieve_Placement(type, placementBox, fixtureElement);
           } else {
             if ((std::string) fixtureElement->Attribute("isSensor") == "true") {
               colliders.isSensor.emplace_back(true);
@@ -331,10 +331,12 @@ namespace Texture_Packer {
       colliders.isSensor.shrink_to_fit();
       colliders.pointVecs.shrink_to_fit();
       colliders.circlesVecs.shrink_to_fit();
+      placementBox.pointVecs.shrink_to_fit();
       Collision_Component::houseColliders[bodyElement->Attribute("name")] = {colliders, placementBox};
       colliders.isSensor.clear();
       colliders.pointVecs.clear();
       colliders.circlesVecs.clear();
+      placementBox.pointVecs.clear();
       bodyElement = bodyElement->NextSiblingElement("body");
     }
   }

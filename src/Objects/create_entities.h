@@ -79,12 +79,11 @@ namespace Create_Entities {
         zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w / 2.0f), (y - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f), (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, false);
 
         if (Collision_Component::houseColliders.contains(data.interior)) {
-          std::vector<Building_Component::Polygon> polygons;
           Building_Component::Polygon treePolygon;
-          auto placementPolygon = Collision_Component::houseColliders.at(data.interior).placementBox.pointVecs;
-          for (auto polygon: placementPolygon) {
+          for (auto polygon: Collision_Component::houseColliders.at(data.interior).placementBox.pointVecs) {
             treePolygon.push_back({polygon.x + offsets.colliderOffset.x, polygon.y - offsets.colliderOffset.y});
           }
+          std::vector<Building_Component::Polygon> polygons;
           polygons.emplace_back(treePolygon);
           zone.emplace_or_replace<Building_Component::Placement>(entity, polygons);
         }
