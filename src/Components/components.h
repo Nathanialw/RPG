@@ -10,10 +10,6 @@
 
 namespace Component {
 
-  struct ObjectID {
-    int id;
-  };
-
   struct In_Object_Tree {
     //QuadTreeItemLocation<typename std::list<QuadTreeItem<someObjectWithArea>>::iterator> pItem;
     //std::_List_iterator<DynamicQuadTreeContainer<someObjectWithArea>> item_it;
@@ -38,9 +34,6 @@ namespace Component {
 
   struct Body {
     b2Body *body;
-  };
-
-  struct Active {
   };
 
   struct Unit_Index {
@@ -113,10 +106,6 @@ namespace Component {
     float angle;
   };
 
-  struct Building_Collider {
-    std::vector<i2> walls;
-  };
-
   /// place 2-h and bow animations in a separate array
   /// if I have a bow equipped it links a different array but the state value remains the same
 
@@ -141,51 +130,21 @@ namespace Component {
     std::vector<entt::entity> items;
   };
 
-  //    struct t_Stored_Frame_Data {
-  //        uint64_t frameTime = 0;
-  //        int frameIndex = 0;
-  //        int reversing = 0;
-  //        int currentFrame = 0;
-  //    };
-  //
-  //    struct t_Sheet_Data {
-  //        Frame_Data_Packer actionFrameData[17];
-  //        int sheetWidth = 0;
-  //        int spriteWidth = 0;
-  //        int spriteHeight = 0;
-  //    };
-
-  //    struct asd { ;
-  //        t_Sheet_Data t_SheetDataArray[1000];
-  //    };
-
-  //    struct t_Rendering_Data {
-  //        SDL_Rect clipRect = {0,0,0,0};
-  //        SDL_FRect renderRect = {0,0,0,0};
-  //    };
-  //
-  //    struct t_Texture {
-  //        SDL_Texture *texture = NULL;
-  //    };
-
   struct Line_Segment {
-    Position p[2];
-
-    //		Position p1 = {0.0f, 0.0f};
-    //		Position p2 = {0.0f, 0.0f};
+    Position start;
+    Position end;
   };
 
+  //  typedef std::vector<Line_Segment> Line_Segments;
+
   struct Renderable {
-    float y = 0.0f;//point
+    Position point = {0.0f, 0.0f};//point
     int alpha = 0;
+    std::vector<Line_Segment> lineSegment;
   };
 
   struct Scale {
     float scale;
-  };
-
-  struct Terrain_Renderable {
-    float y;
   };
 
   struct keyData {
@@ -597,11 +556,6 @@ namespace Component {
 
   struct Caster_ID {
     entt::entity caster_ID;
-  };
-
-  struct Srite_Direction {
-    Direction direction;
-    int numFrames;
   };
 
   struct Followers {

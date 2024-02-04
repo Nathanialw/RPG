@@ -69,6 +69,7 @@ namespace Create_Entities {
         Rendering_Components::Sprite_Sheet_Data interiorFrame = interiorFrameData.frame;
 
         auto &interiorSheetData = zone.get<Rendering_Components::Interior_Sheet_Info>(entity);
+        interiorSheetData.collisionBocArrayIndex = data.interior;
         Rendering::Set_Offset(zone, entity, "rect", interiorData.x_offset, interiorData.y_offset, interiorFrame);
         interiorSheetData.offset = {interiorData.x_offset, interiorData.y_offset};
         offsets.colliderOffset = {interiorData.x_collision_offset, interiorData.y_collision_offset};

@@ -1703,7 +1703,7 @@
 
         </body>
 
-        <body name="Medieval RTP Interiors_Interior3_5" dynamic="false" numFixtures="7">
+        <body name="Medieval RTP Interiors_Interior3_5" dynamic="false" numFixtures="8">
 
             <fixture
                 density="2"
@@ -1895,6 +1895,32 @@
                     <vertex x="84.0000" y="573.0000" />
 
                     <vertex x="-672.0000" y="42.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-96.0000" y="152.0000" />
+
+                    <vertex x="-562.0000" y="51.0000" />
+
+                    <vertex x="489.0000" y="271.0000" />
 
                 </polygon>
 

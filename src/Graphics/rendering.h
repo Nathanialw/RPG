@@ -25,70 +25,70 @@ namespace Rendering {
     bool debug = false;
   }// namespace
 
-  //	struct tileData {
-  //		SDL_Texture* texture;
-  //		SDL_Rect tileSpriteRect;       Utilities::Lo"");
-  //	};
+  void gg() {
+    auto &zone = World::world[World::currentZone.current].zone;
 
-  void sort_Positions(entt::registry &zone) {
-    // test whether a point lays on a line segment, positive is above and negative is below
-    auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
-    auto points = zone.view<Component::Position, Component::Renderable>();
-    for (auto building: line_segments) {
-      //test each renderable entity, if it is above the line
-      auto [line, renderable] = line_segments.get(building);
-      for (auto entity: points) {
-        auto [position, rend] = points.get(entity);
-        /*
-        //f(x) = k * x + b
-        //slope is k
-        float slope = (line.p[0].y - line.p[1].y) / (line.p[0].x - line.p[1].x);
-        //y_offset is b
-        int y_offset = line.p[1].y / (slope * line.p[1].x);
-        //check whether the y position is above or below the line
-        float y = (slope * position.x) + y_offset;
-        if (position.y + y > position.y) {
-          //the entity is above the line
+    auto view = zone.view<Component::Renderable>();
+    auto camera_view = zone.view<Component::Camera>();
 
-          //check the collsion box, if they collide place the low y position entity, behind the higher y position, else do nothing
-          renderable.y = position.y - 1;
+    for (auto camera: camera_view) {
+      auto &screen = camera_view.get<Component::Camera>(camera).screen;
+      for (auto entity: view) {
+        auto &lines = view.get<Component::Renderable>(entity).lineSegment;
+        for (auto line: lines) {
+          SDL_RenderDrawLineF(Graphics::renderer, line.start.x - screen.x, line.start.y - screen.y, line.end.x - screen.x, line.end.y - screen.y);
         }
-        else {
-          //the entity is below the line
-          renderable.y = position.y + 1;
-        }
-        */
-        //set renderable.y to tested renderable.y + 1 for above and renderable.y - 1 for below then let the sort algo do its job
+      }
+    }
+  }
+
+  int ComparePointAndLine(Component::Position point, Component::Line_Segment line) {
+    float pointY = point.y;
+    if (pointY > line.start.y && pointY > line.end.y) {
+      return 0;
+    } else if (pointY < line.start.y && pointY < line.end.y) {
+      return 1;
+    } else {
+      float slope = (line.end.y - line.start.y) / (line.end.x - line.start.x);
+      float intercept = line.start.y - (slope * line.start.x);
+      float yOnLineForPoint = (slope * point.x) + intercept;
+      return yOnLineForPoint > point.y ? 1 : 0;
+    }
+  }
+
+  int Sort(const Component::Renderable &lhs, const Component::Renderable &rhs) {
+    if (!lhs.lineSegment.empty()) {
+      for (auto line: lhs.lineSegment)
+        if (ComparePointAndLine(rhs.point, line)) {
+          Utilities::Log("collision 1");
+          return 0;
+        } else {
+          Utilities::Log("collision 2");
+          return 1;
+        };
+    }
+
+    if (!rhs.lineSegment.empty()) {
+      for (auto line: rhs.lineSegment) {
+        if (ComparePointAndLine(lhs.point, line)) {
+          Utilities::Log("collision 3");
+          return 1;
+        } else {
+          Utilities::Log("collision 4");
+          return 0;
+        };
       }
     }
 
-    //        // sort the component to render before entities below and after entities above
-    //
-    //        //sorts point positions least to great
-    zone.sort<Component::Renderable>([](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
-    // int i = 0;
-    // auto view = zone.view<Component::Renderable, Rendering_Components::Sprite_Sheet_Info>();
-    // for (auto sentity : view) {
-    //   auto name = view.get<Rendering_Components::Sprite_Sheet_Info>(sentity);
-    //   auto y = view.get<Component::Renderable>(sentity);
-    //   std::cout << i << " " << name.sheet_name << " " << y.y << std::endl;
-    //   i++;
-    // }
+    Utilities::Log("collision 5");
+    return lhs.point.y < rhs.point.y;
   }
 
-  //    void RenderLine (entt::registry &zone, Component::Camera &camera) {
-  //        auto line_segments = zone.view<Component::Line_Segment, Component::Renderable>();
-  //        for (auto building : line_segments) {
-  //            auto [line, renderable] = line_segments.get(building);
-  //            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_NONE);
-  //            SDL_SetRenderDrawColor(Graphics::renderer, 255,0,0,255);
-  //            float x1 = line.p[0].x - (camera.screen.x);
-  //            float y1 = line.p[0].y - (camera.screen.y);
-  //            float x2 = line.p[1].x - (camera.screen.x);
-  //            float y2 = line.p[1].y - (camera.screen.y);
-  //            SDL_RenderDrawLineF(Graphics::renderer, x1, y1, x2, y2);
-  //        }
-  //    }
+  void Sort_Positions(entt::registry &zone) {
+    zone.sort<Component::Renderable>([](const Component::Renderable &lhs, const Component::Renderable &rhs) {
+      return Sort(lhs, rhs);
+    });
+  }
 
   void Render_UI(entt::registry &zone, int &state, SDL_Renderer *renderer, Component::Camera &camera) {
     auto view = zone.view<Component::Input>();
@@ -381,8 +381,8 @@ namespace Rendering {
 
   void Add_Remove_Renderable_Component(entt::registry &zone, int &state, Component::Camera &camera) {
     placeRenderable += Timer::timeStep;
-    if (placeRenderable >= 250.0f) {
-      placeRenderable -= 250.0f;
+    if (placeRenderable >= 150.0f) {
+      placeRenderable -= 150.0f;
       SDL_FRect renderRect = {
           camera.screen.x - 500.0f,
           camera.screen.y - 500.0f,
@@ -411,7 +411,8 @@ namespace Rendering {
             auto &renderable = zone.get<Component::Renderable>(entity);
             renderable.alpha = alpha;
             //if (zone.all_of<Component::Line_Segment>(entity) == false) {
-            renderable.y = position.y;
+            renderable.point.x = position.x;
+            renderable.point.y = position.y;
             //}
           } else {
             //                    emplace and initialize renderable
@@ -419,7 +420,14 @@ namespace Rendering {
             auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
             renderable.alpha = alpha;
             // if (zone.all_of<Component::Line_Segment>(entity) == false) {
-            renderable.y = position.y;
+            renderable.point.x = position.x;
+            renderable.point.y = position.y;
+            if (zone.any_of<Rendering_Components::Interior_Sheet_Info>(entity)) {
+              auto name = zone.get<Rendering_Components::Interior_Sheet_Info>(entity).collisionBocArrayIndex;
+              auto ff = Collision_Component::houseColliders[name].lineSegment;
+              Component::Line_Segment line = {{Mouse::iXWorld_Mouse + ff.start.x, Mouse::iYWorld_Mouse + ff.start.y}, {Mouse::iXWorld_Mouse + ff.end.x, Mouse::iYWorld_Mouse + ff.end.y}};
+              renderable.lineSegment.emplace_back(line);
+            }
             //	  }
           }
         }
@@ -502,7 +510,7 @@ namespace Rendering {
       auto &camera = camera_view.get<Component::Camera>(entity);
       //			SDL_RenderClear(Graphics::renderer);
       Add_Remove_Renderable_Component(zone, state, camera);
-      sort_Positions(zone);
+      Sort_Positions(zone);
       Render_Map(zone, state, camera);
       Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
       //            RenderLine(zone, camera);
@@ -523,6 +531,7 @@ namespace Rendering {
       if (!Menu::Render_Menu(zone, state, camera)) {
         return false;
       }
+      gg();
       //Mouse
       Interface::Foreground(zone, state, camera);
       //on top of mouse
