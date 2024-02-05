@@ -161,12 +161,12 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
         Update_Packer_Linear_Frame(action.frameTime, sheetData.frameIndex, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed);
         Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
       } else {
-        //if it is how interior
-        //if it has an aura  render it
-        if (buffs.contains(entity)) {
-          auto &buffSprites = buffs.get<Rendering_Components::Buff_Sprites>(entity);
-          Render_Buffs(zone, entity, buffSprites, scale, camera, position, renderable, spriteOffset);
-        }
+
+        //        if (buffs.contains(entity)) {
+        //          auto &buffSprites = buffs.get<Rendering_Components::Buff_Sprites>(entity);
+        //          Render_Buffs(zone, entity, buffSprites, scale, camera, position, renderable, spriteOffset);
+        //        }
+        
         if (mounts.contains(entity)) {
           //                render horse half behind unit
         }

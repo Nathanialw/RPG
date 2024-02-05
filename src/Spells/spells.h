@@ -92,7 +92,7 @@ namespace Spells {
 
   //  void Create_Spell(entt::entity caster_ID, entt::entity &entity, Component::Position &pos, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
   void Create_Spell_object(entt::registry &zone, entt::entity &entity, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname) {
-    if (spellname == "") {
+    if (!spellname) {
       return;
     }
     float scale = 1.0f;
@@ -114,11 +114,13 @@ namespace Spells {
     zone.emplace_or_replace<Component::Direction>(entity, direction);//match Direction of the caster
     zone.emplace_or_replace<Component::Alive>(entity, true);
     zone.emplace_or_replace<Component::Caster>(entity, caster_ID);
+    zone.emplace_or_replace<Component::Name>(entity, spellname);
+    zone.emplace_or_replace<Component::Is_Inside>(entity);
   }
 
 
   void Create_Spell(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting casting, float &targetX, float &targetY) {
-    if (casting.name == "") {
+    if (!casting.name) {
       return;
     }
     auto entity = zone.create();
@@ -142,7 +144,7 @@ namespace Spells {
   }
 
   Rendering_Components::Buff_Sprite_Data Spell_Cast_Effect(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
-    if (spellname == "") {
+    if (!spellname) {
       return {};
     }
     auto entity = zone.create();
@@ -160,7 +162,7 @@ namespace Spells {
   }
 
   void Spell_Hit_Effect(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, const char *spellname, float &targetX, float &targetY) {
-    if (spellname == "") {
+    if (!spellname) {
       return;
     }
     auto entity = zone.create();
@@ -205,7 +207,7 @@ namespace Spells {
       if (casting.counter >= casting.castTime) {
         direction = Movement_Component::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle);
         ////create cast particle object
-        if (spell.casting(zone, state, caster_ID, position, direction, casting, casting.x, casting.x) == 0) {
+        if (spell.casting(zone, state, caster_ID, position, direction, casting, casting.x, casting.y) == 0) {
           zone.remove<Component::Casting>(caster_ID);
           zone.remove<Spells::Cast_Effect>(caster_ID);
         };

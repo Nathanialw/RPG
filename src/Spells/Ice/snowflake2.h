@@ -28,7 +28,7 @@ namespace Snowflake2 {
       float castTime = 500.0f;
       //send to generic create
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "hjm-snow_flake", "", "blue_burst");
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "hjm-snow_flake", nullptr, "blue_burst");
       return 1;
     }
     return 0;

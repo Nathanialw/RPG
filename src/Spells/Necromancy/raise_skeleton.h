@@ -50,7 +50,7 @@ namespace Raise_Skeleton {
     float castTime = 500.0f;
 
     zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "Effects02", "");
+    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, nullptr, "Effects02", nullptr);
     return 1;
   }
 }// namespace Raise_Skeleton

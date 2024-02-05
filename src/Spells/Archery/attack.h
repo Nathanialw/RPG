@@ -28,7 +28,7 @@ namespace Shoot_Arrow {
       float castTime = 500.0f;
       //send to generic create
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "arrow", "", "fire_1b_40");
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "arrow", nullptr, "fire_1b_40");
       return 1;
     }
     return 0;

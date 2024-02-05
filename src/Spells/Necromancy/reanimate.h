@@ -50,7 +50,7 @@ namespace Reanimate {
     float castTime = 500.0f;
 
     zone.emplace_or_replace<Spells::Cast_Effect>(entity, Casting, Create, Hit);
-    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "", "");
+    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, nullptr, nullptr, nullptr);
     return 1;
   }
 }// namespace Reanimate

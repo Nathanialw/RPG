@@ -22,17 +22,17 @@ namespace Mimic {
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
     //get target info
-      //sprite
-      //relationships
+    //sprite
+    //relationships
     //copy to caster
 
-//    save caster data to a new component
+    //    save caster data to a new component
 
 
-//    auto &metamorphosis = zone.emplace_or_replace<Rendering_Components::Metamorphosis>(caster_ID);
-//    metamorphosis.duration = 10000;
-//    metamorphosis.unit = {"demons", 0};
-//    metamorphosis.spellEffect = "Effects02";
+    //    auto &metamorphosis = zone.emplace_or_replace<Rendering_Components::Metamorphosis>(caster_ID);
+    //    metamorphosis.duration = 10000;
+    //    metamorphosis.unit = {"demons", 0};
+    //    metamorphosis.spellEffect = "Effects02";
     return 1;
   }
 
@@ -46,7 +46,7 @@ namespace Mimic {
     float castTime = 500.0f;
 
     zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "Effects02", "");
+    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, nullptr, "Effects02", nullptr);
     return 1;
   }
-}// namespace Metamorphosis
+}// namespace Mimic

@@ -32,7 +32,7 @@ namespace Fire_Bolt {
       float castTime = 500.0f;
       //send to generic create
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Fire_Cast, Fireball, Fireball_Hit);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "fireball", "", "fire_1b_40");
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "fireball", nullptr, "fire_1b_40");
       return 1;
     }
     return 0;
@@ -45,7 +45,7 @@ namespace Fire_Bolt {
       Action_Component::Set_State(action, Action_Component::casting);
       float castTime = 500.0f;
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Fire_Cast, Fireball);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "fire_1b_40", "");
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, nullptr, "fire_1b_40", nullptr);
     }
     return 0;
   }

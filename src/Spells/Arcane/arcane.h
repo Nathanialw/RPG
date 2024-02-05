@@ -30,7 +30,7 @@ namespace Arcane {
       //read animation in from db?
       Action_Component::Set_State(action, Action_Component::casting);
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "teleport", "", false);
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, nullptr, "teleport", nullptr, false);
     }
     return 0;
   }

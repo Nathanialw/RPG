@@ -341,9 +341,9 @@ namespace Component {
     float counter = 2000.0f;
     float x = 0.0f;
     float y = 0.0f;
-    const char *name = "fireball";
-    const char *effect = "teleport";
-    const char *hit = "explosion";
+    const char *name = nullptr;
+    const char *effect = nullptr;
+    const char *hit = nullptr;
     bool linear = true;
     entt::entity target_ID;
   };

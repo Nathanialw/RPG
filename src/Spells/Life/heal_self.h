@@ -30,7 +30,7 @@ namespace Heal_Self {
     float castTime = 500.0f;
 
     zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);
-    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "pipo-mapeffect013a", "BBLBubbleEllipseYellow");
+    zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, nullptr, "pipo-mapeffect013a", "BBLBubbleEllipseYellow");
     return 1;
   }
 }// namespace Heal_Self

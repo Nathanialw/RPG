@@ -1,6 +1,6 @@
 #pragma once
-#include "spells.h"
 #include "mouse_control.h"
+#include "spells.h"
 
 namespace Nature {
 
@@ -28,9 +28,9 @@ namespace Nature {
       float castTime = 500.0f;
       //send to generic create
       zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast_Template, Icebolt, Fireball_Hit);
-      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, "", "", "");
+      zone.emplace_or_replace<Component::Casting>(entity, castTime, castTime, x, y, nullptr, nullptr, nullptr);
       return 1;
     }
     return 0;
   }
-}// namespace Fire
+}// namespace Nature
