@@ -5,22 +5,9 @@
 namespace Cave {
 
   bool Set_As_Cave(entt::registry &zone, entt::entity &entity, std::string &templateName) {
-    if (templateName == "Rock_3_1" ||
-        templateName == "Rock_3_2" ||
-        templateName == "Rock_3_3" ||
-        templateName == "Rock_3_4" ||
-        templateName == "Rock_3_5" ||
-        templateName == "Rock_3_6" ||
-        templateName == "Rock_3_7" ||
-        templateName == "Rock_3_8" ||
-        templateName == "Rock_2_1" ||
-        templateName == "Rock_2_2" ||
-        templateName == "Rock_2_3" ||
-        templateName == "Rock_2_4" ||
-        templateName == "Rock_2_5" ||
-        templateName == "Rock_2_6" ||
-        templateName == "Rock_2_7" ||
-        templateName == "Rock_2_8") {
+    if (templateName == "CaveEntrance1" ||
+        templateName == "CaveEntrance2" ||
+        templateName == "CaveEntrance3") {
 
       World::increment_Zone();
       auto &dungeon = zone.emplace_or_replace<Component::Dungeon>(entity);

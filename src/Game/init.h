@@ -81,7 +81,7 @@ namespace Init {
   }
 
   //only needs to be fired once per zone
-  void Create_Game_entities(entt::registry &zone, int &state, std::string &tilesetName, Character_Options::Customization &options) {
+  void Create_Game_entities(entt::registry &zone, int &state, std::string &tilesetName, Character_Options::Customization &playerOptions) {
     Maps::Generate_Region(state, tilesetName);
     Collision::init_Collison(state);
     Item_Component::emptyEquipSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
@@ -89,13 +89,13 @@ namespace Init {
     UI::Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
     Mouse::Init_mouse(zone);
     if (Create_Entities::startup) {
-      Character_Stats::Init_Player(zone, state, options);
+      Character_Stats::Init_Player(zone, state, playerOptions);
     } else {
       Recreate_Player(zone, state);
     }
     Init_Tiles_Array();
     Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
-    Maps::Init_Caves(zone, state, World::world[state].tileset);
+    Maps::Init_Caves(zone, state, World::world[state].cave);
     Quad_Tree::Fill_Quad_Tree(zone, state);
   };
 

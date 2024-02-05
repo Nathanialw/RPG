@@ -49,12 +49,6 @@ namespace Load_Object_List {
     return Component::Entity_Type::SIZE;
   }
 
-  int Get_Subtype(std::string &type) {
-
-
-    return 1;
-  };
-
   std::vector<std::string> Get_Entities(std::string &typeStr) {
     if (typeStr == "unit") {
       Utilities::Log("units");
@@ -100,33 +94,36 @@ namespace Load_Object_List {
     return gameObjects[(int) type][(int) race][(int) unitType];
   };
 
-  std::vector<std::string> Load_Tileset(const char *xmlPath) {
+  void Load_Tileset(const std::string tileset) {
+    std::string xmlPath = Entity_Loader::Get_Tileset_Path(tileset);
+
     tinyxml2::XMLDocument spriteSheetData;
-    spriteSheetData.LoadFile(xmlPath);
+    spriteSheetData.LoadFile(xmlPath.c_str());
     tinyxml2::XMLElement *pSpriteElement;
     pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("sprite");
-
-    std::string imgPath = spriteSheetData.RootElement()->Attribute("imagePath");
+    //    std::string imgPath = spriteSheetData.RootElement()->Attribute("imagePath");
 
     std::vector<std::string> tilesetVec;
     tilesetVec.reserve(200);
 
-    while (pSpriteElement != NULL) {
+    while (pSpriteElement != nullptr) {
       ///get frame data for each state
       std::string n = pSpriteElement->Attribute("n");
       tilesetVec.emplace_back(n);
       pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
     }
     tilesetVec.shrink_to_fit();
-    return tilesetVec;
+    Game_Objects_Lists::tilesets[tileset] = tilesetVec;
   }
 
   void Load_Entities() {
-    Game_Objects_Lists::tilesets["forest_summer"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_summer").c_str());
-    Game_Objects_Lists::tilesets["forest_winter"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("forest_winter").c_str());
-    Game_Objects_Lists::tilesets["beach"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("beach").c_str());
-    Game_Objects_Lists::tilesets["dead"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("dead").c_str());
-    Game_Objects_Lists::tilesets["hell"] = Load_Tileset(Entity_Loader::Get_Tileset_Path("hell").c_str());
+    Load_Tileset("forest_summer");
+    Load_Tileset("forest_winter");
+    Load_Tileset("beach");
+    Load_Tileset("dead");
+    Load_Tileset("hell");
+    Load_Tileset("cave_entrances");
+
 
     Game_Objects_Lists::tilesets["buildings_orc"] = Entity_Loader::Get_Names_Of_SubType("orc", "building", "house");
     for (int i = 0; i < Game_Objects_Lists::tilesets["buildings_orc"].size(); ++i) {

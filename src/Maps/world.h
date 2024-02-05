@@ -56,10 +56,11 @@ namespace World {
   struct Tileset {
     entt::registry zone;
     int previousZoneIndex;
-    std::string music = "assets/music/nature.ogg";
+    std::string music;
     std::string tilesetName = "forest_summer";
     std::string mobType;
     std::string tileset;
+    std::string cave;
     Tile_Type type;
     std::vector<SDL_Texture *> tileTextures;
     bool loaded = false;
@@ -67,7 +68,7 @@ namespace World {
   int numZones = 200;
   std::vector<Tileset> world(numZones);
   std::array<Tileset, 4> regions;
-//  std::array<Tileset, (int) Tile_Type::SIZE> tileSets;
+  //  std::array<Tileset, (int) Tile_Type::SIZE> tileSets;
 
   struct Current_Zone {
     int current;

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:802c8533a6b54d3be831c5a583a14b5a:2be1d03b8666f3f060291d86dc257005:2decd4bbdf3613496a3160fb6edb67a6$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="cave_entrances.png" width="2862" height="828">
+    <sprite n="CaveEntrance1" x="1" y="1" w="873" h="826"/>
+    <sprite n="CaveEntrance2" x="876" y="1" w="772" h="752"/>
+    <sprite n="CaveEntrance3" x="1650" y="1" w="1211" h="684"/>
+</TextureAtlas>

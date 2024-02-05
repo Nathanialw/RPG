@@ -86,8 +86,8 @@ namespace Splash_Screen {
   void Build_Menu(Menu &menu, float x, float y) {
     //        set first index position
     menu.buttons[0].size = UI::Center_Rect(menu.buttons[0].textSurface->clip_rect);
-    menu.buttons[0].size.x = (menu.buttons[0].size.x / ( 1.0f / x));
-    menu.buttons[0].size.y = (menu.buttons[0].size.y / ( 1.0f / y));
+    menu.buttons[0].size.x = (menu.buttons[0].size.x / (1.0f / x));
+    menu.buttons[0].size.y = (menu.buttons[0].size.y / (1.0f / y));
     //        offset rest from first index
     for (int i = 1; i < menu.buttons.size(); i++) {
       menu.buttons[i].size = UI::Center_Rect(menu.buttons[i].textSurface->clip_rect);
@@ -161,9 +161,14 @@ namespace Splash_Screen {
         }
 
         case SDL_KEYDOWN: {
-          if (Events::event.key.keysym.sym == SDLK_ESCAPE) {
-            Toggle();
-            return 1;
+          switch (Events::event.key.keysym.sym) {
+            case SDLK_ESCAPE: {
+              Toggle();
+              return 1;
+            }
+            case SDLK_RETURN:
+              //return whichever is highlight and use arrow to move the highlighted up and down
+              return 0;
           }
           break;
         }
@@ -203,4 +208,4 @@ namespace Splash_Screen {
     }
     return true;
   }
-}
+}// namespace Splash_Screen

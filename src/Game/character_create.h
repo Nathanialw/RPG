@@ -50,7 +50,7 @@ namespace Character_Create {
     const char *text = nullptr;
     state selected = unselected;
     bool button = false;
-    SDL_Color color = {255,255,255};
+    SDL_Color color = {255, 255, 255};
   };
 
   struct Menu {
@@ -101,8 +101,7 @@ namespace Character_Create {
       menu.buttons[0].size.x = (menu.buttons[0].size.x / (1.0f / x));
       menu.buttons[0].size.y = (menu.buttons[0].size.y / (1.0f / y));
       menu.buttons[0].size.w = menu.buttons[0].textSurface->clip_rect.h;
-    }
-    else if (menu.buttons[0].textSurface) {
+    } else if (menu.buttons[0].textSurface) {
       menu.buttons[0].size = UI::Center_Rect(menu.buttons[0].textSurface->clip_rect);
       menu.buttons[0].size.x = (menu.buttons[0].size.x / (1.0f / x));
       menu.buttons[0].size.y = (menu.buttons[0].size.y / (1.0f / y));
@@ -115,8 +114,7 @@ namespace Character_Create {
           menu.buttons[i].size.x = menu.buttons[i - 1].size.y + menu.buttons[i - 1].size.h + menu.spacing;
           menu.buttons[i].size.y = menu.buttons[i - 1].size.x;
           menu.buttons[i].size.w = menu.buttons[i - 1].textSurface->clip_rect.h;
-        }
-        else if (menu.buttons[i].textSurface) {
+        } else if (menu.buttons[i].textSurface) {
           menu.buttons[i].size = UI::Center_Rect(menu.buttons[i].textSurface->clip_rect);
           menu.buttons[i].size.y = menu.buttons[i - 1].size.y + menu.buttons[i - 1].size.h + menu.spacing;
           menu.buttons[i].size.x = menu.buttons[i - 1].size.x;
@@ -129,16 +127,14 @@ namespace Character_Create {
           menu.buttons[i].size.x = menu.buttons[i - 1].size.x + menu.buttons[i - 1].size.w + menu.spacing;
           menu.buttons[i].size.y = menu.buttons[i - 1].size.y;
           menu.buttons[i].size.w = menu.buttons[i - 1].textSurface->clip_rect.h;
-        }
-        else if (menu.buttons[i].textSurface) {
+        } else if (menu.buttons[i].textSurface) {
           menu.buttons[i].size = UI::Center_Rect(menu.buttons[i].textSurface->clip_rect);
           menu.buttons[i].size.x = menu.buttons[i - 1].size.x + menu.buttons[i - 1].size.w + menu.spacing;
           menu.buttons[i].size.y = menu.buttons[i - 1].size.y;
         }
       }
-    }
-    else if (type == image) {
-      for (auto &image : menu.buttons) {
+    } else if (type == image) {
+      for (auto &image: menu.buttons) {
         image.size = UI::Center_Rect({0, 0, 700, 700});
       }
     }
@@ -175,8 +171,8 @@ namespace Character_Create {
         Button button;
         menus.buttons.emplace_back(button);
 
-//          menus.buttons[i].backgroundTexture = Graphics::default_icon;
-          menus.buttons[i].size = {0, 0, 256, 512};
+        //          menus.buttons[i].backgroundTexture = Graphics::default_icon;
+        menus.buttons[i].size = {0, 0, 256, 512};
       }
     }
 
@@ -240,9 +236,9 @@ namespace Character_Create {
       if (races[n] == "none") {
         menu.buttons[n].selected = disable;
         menu.buttons[n].backgroundTexture = nullptr;
-        if ((int)options.species == n) {
+        if ((int) options.species == n) {
           options.species = (Character_Options::Species) 0;
-          menu.buttons[(int)options.species].backgroundTexture = Graphics::default_icon;
+          menu.buttons[(int) options.species].backgroundTexture = Graphics::default_icon;
         }
       } else {
         menu.buttons[n].selected = selected;
@@ -257,12 +253,10 @@ namespace Character_Create {
           menu.buttons[n].selected = disable;
         }
         menu.buttons[n].backgroundTexture = nullptr;
-      }
-      else {
+      } else {
         if (n == 1) {
           menu.buttons[n].selected = selected;
-        }
-        else {
+        } else {
           menu.buttons[n].backgroundTexture = Graphics::default_icon;
         }
       }
@@ -275,8 +269,7 @@ namespace Character_Create {
         menu.buttons[n].selected = disable;
         menu.buttons[n].backgroundTexture = nullptr;
       }
-    }
-    else {
+    } else {
       menu.buttons[0].selected = selected;
       menu.buttons[1].selected = selected;
       menu.buttons[0].backgroundTexture = Graphics::default_icon;
@@ -286,24 +279,23 @@ namespace Character_Create {
 
   void Set_Image(Menu &menu, Character_Options::Customization &options) {
     //unit
-    menu.buttons[0].backgroundTexture = Character_Options::genderImages[(int)options.sex].species[(int)options.species];
+    menu.buttons[0].backgroundTexture = Character_Options::genderImages[(int) options.sex].species[(int) options.species];
 
     //hair
-    menu.buttons[1].backgroundTexture = Character_Options::genderImages[(int)options.sex].legs;
-    menu.buttons[2].backgroundTexture = Character_Options::genderImages[(int)options.sex].chest;
-    menu.buttons[3].backgroundTexture = Character_Options::genderImages[(int)options.sex].weapon;
-    if(options.sex == Character_Options::Sex::male) {
+    menu.buttons[1].backgroundTexture = Character_Options::genderImages[(int) options.sex].legs;
+    menu.buttons[2].backgroundTexture = Character_Options::genderImages[(int) options.sex].chest;
+    menu.buttons[3].backgroundTexture = Character_Options::genderImages[(int) options.sex].weapon;
+    if (options.sex == Character_Options::Sex::male) {
       //beard
       menu.buttons[4].backgroundTexture = Character_Options::genderImages[(int) options.sex].beardStyles[(int) options.beard];
       menu.buttons[4].color = Character_Options::Color[options.hairColor];
       //horns
       menu.buttons[5].backgroundTexture = Character_Options::genderImages[(int) options.sex].horns[options.horns];
-    }
-    else {
+    } else {
       menu.buttons[4].backgroundTexture = NULL;
       menu.buttons[5].backgroundTexture = NULL;
     }
-    menu.buttons[6].backgroundTexture = Character_Options::genderImages[(int)options.sex].hairStyles[(int)options.hairStyle];
+    menu.buttons[6].backgroundTexture = Character_Options::genderImages[(int) options.sex].hairStyles[(int) options.hairStyle];
     menu.buttons[6].color = Character_Options::Color[options.hairColor];
   }
 
@@ -335,14 +327,14 @@ namespace Character_Create {
           for (int k = 0; k < menus[1].buttons.size(); k++) {
             if (menus[1].buttons[k].selected != is_disabled) {
               if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[0].size)) {
-                Increment(options.horns, Character_Options::genderImages[(int)options.sex].horns.size());
+                Increment(options.horns, Character_Options::genderImages[(int) options.sex].horns.size());
                 menus[1].buttons[0].backgroundTexture = Graphics::default_icon;
                 menus[1].buttons[1].backgroundTexture = nullptr;
                 Set_Image(menus[7], options);
                 return;
               }
               if (Mouse::FRect_inside_Screen_Cursor(menus[1].buttons[1].size)) {
-                Decrement(options.horns, Character_Options::genderImages[(int)options.sex].horns.size());
+                Decrement(options.horns, Character_Options::genderImages[(int) options.sex].horns.size());
                 menus[1].buttons[0].backgroundTexture = nullptr;
                 menus[1].buttons[1].backgroundTexture = Graphics::default_icon;
                 Set_Image(menus[7], options);
@@ -436,7 +428,7 @@ namespace Character_Create {
                 }
 
                 options.species = (Character_Options::Species) m;
-                menus[6].buttons[(int)options.species].backgroundTexture = Graphics::default_icon;
+                menus[6].buttons[(int) options.species].backgroundTexture = Graphics::default_icon;
                 Set_Image(menus[7], options);
                 return;
               }
@@ -447,10 +439,15 @@ namespace Character_Create {
         }
 
         case SDL_KEYDOWN: {
-          if (Events::event.key.keysym.sym == SDLK_ESCAPE) {
-            Toggle();
-            options.success = false;
-            return;
+          switch (Events::event.key.keysym.sym) {
+            case SDLK_ESCAPE: {
+              Toggle();
+              options.success = false;
+              return;
+            }
+            case SDLK_RETURN:
+              Toggle();
+              return;
           }
           break;
         }
@@ -467,8 +464,8 @@ namespace Character_Create {
     menus.emplace_back(Create_Menu({" ", "Beard Style", " "}, -1, 0.1f, 1.55f, horizontal));
     menus.emplace_back(Create_Menu({" ", "Hair Style", " "}, -1, 0.1f, 1.65f, horizontal));
     menus.emplace_back(Create_Menu({" ", "Hair Color", " "}, -1, 0.1f, 1.75f, horizontal));
-    menus.emplace_back(Create_Menu({"male", "female"}, (int)options.sex, 0.1f, 1.85f, horizontal));
-    menus.emplace_back(Create_Menu({"orc", "zombie", "skeleton", "demon", "fleshbeast", "elves", "euro", "asian", "indian", "african"}, (int)options.species, 0.1f, 0.1f, vertical));
+    menus.emplace_back(Create_Menu({"male", "female"}, (int) options.sex, 0.1f, 1.85f, horizontal));
+    menus.emplace_back(Create_Menu({"orc", "zombie", "skeleton", "demon", "fleshbeast", "elves", "euro", "asian", "indian", "african"}, (int) options.species, 0.1f, 0.1f, vertical));
     menus.emplace_back(Create_Menu({NULL, NULL, NULL, NULL, NULL, NULL, NULL}, 0, 1.0f, 0.50f, image));
 
     toggleMenu = true;

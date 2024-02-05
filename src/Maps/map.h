@@ -33,7 +33,7 @@ namespace Maps {
         "beach"};
     for (int i = 0; i < World::regions.size(); ++i) {
       Entity_Loader::TileSet_Data data = Entity_Loader::Get_Tileset_Data(tilesetName[i]);
-      World::regions[i].music = data.music.c_str();
+      World::regions[i].music = data.music;
       World::regions[i].mobType = data.tileUnits;
       World::regions[i].tileset = data.name;
       World::regions[i].tileTextures.emplace_back(Graphics::createTexture(data.tileset.c_str()));
@@ -44,11 +44,12 @@ namespace Maps {
     //        randomize
     Entity_Loader::TileSet_Data data = Entity_Loader::Get_Tileset_Data(tilesetName);
     Utilities::Log(data.music);
-    World::world[instance].music = data.music.c_str();
+    World::world[instance].music = data.music;
     Utilities::Log(World::world[instance].music);
     World::world[instance].mobType = data.tileUnits;
     World::world[instance].tileset = data.name;
     World::world[instance].tileTextures.emplace_back(Graphics::createTexture(data.tileset.c_str()));
+    World::world[instance].cave = "cave_entrances";
     //    World::tileSets[(int)World::Tile_Type::grass].music = "assets/music/nature.ogg";
   }
 
@@ -196,6 +197,9 @@ namespace Maps {
     float x = 0.0f;
     float y = 0.0f;
     Procedural_Components::Seed seed;
+    auto &units = Game_Objects_Lists::units[unitType];
+    if (units.empty())
+      return;
 
     for (int i = 0; i < REGION_SIZE; ++i) {
       for (int j = 0; j < REGION_SIZE; ++j) {
@@ -205,7 +209,7 @@ namespace Maps {
           x = Procedural_Generation::Random_float(0, (int) World::size.width, seed);
           y = Procedural_Generation::Random_float(0, (int) World::size.height, seed);
 
-          int n = Procedural_Generation::Random_Int(0, Game_Objects_Lists::units[unitType].size(), seed);
+          int n = Procedural_Generation::Random_Int(0, units.size(), seed);
           db::Unit_Data data = Game_Objects_Lists::units[unitType][n];
           Social_Component::Summon summon;
           Component::Unit_Index unitIndex = {unitType, n};
@@ -224,39 +228,25 @@ namespace Maps {
     float x = 0.0f;
     float y = 0.0f;
     int xmlIndex = 0;
-    std::string objectName = "";
+    std::string objectName;
+
+    int numTiles = REGION_SIZE * REGION_SIZE;
+    int avgPerRegion = 3;
 
     for (int i = 0; i < REGION_SIZE; ++i) {
       for (int j = 0; j < REGION_SIZE; ++j) {
         seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
-        int numObjects = Procedural_Generation::Random_Int(0, 100, seed);
-        if (numObjects < 5) {
+        int numObjects = Procedural_Generation::Random_Int(0, numTiles, seed);
+        if (numObjects < avgPerRegion) {
           x = Procedural_Generation::Random_float(0, (int) World::size.width, seed);
           y = Procedural_Generation::Random_float(0, (int) World::size.height, seed);
 
-          if (Game_Objects_Lists::tilesets[tileSet].size() <= 0) { return; }
+          if (Game_Objects_Lists::tilesets[tileSet].empty()) { return; }
 
-          xmlIndex = Procedural_Generation::Random_Int(0, Game_Objects_Lists::tilesets[tileSet].size(), seed);
+          xmlIndex = Procedural_Generation::Random_Int(0, (int) Game_Objects_Lists::tilesets[tileSet].size(), seed);
           objectName = Game_Objects_Lists::tilesets[tileSet][xmlIndex];
 
-          if (objectName == "Rock_3_1" ||
-              objectName == "Rock_3_2" ||
-              objectName == "Rock_3_3" ||
-              objectName == "Rock_3_4" ||
-              objectName == "Rock_3_5" ||
-              objectName == "Rock_3_6" ||
-              objectName == "Rock_3_7" ||
-              objectName == "Rock_3_8" ||
-              objectName == "Rock_2_1" ||
-              objectName == "Rock_2_2" ||
-              objectName == "Rock_2_3" ||
-              objectName == "Rock_2_4" ||
-              objectName == "Rock_2_5" ||
-              objectName == "Rock_2_6" ||
-              objectName == "Rock_2_7" ||
-              objectName == "Rock_2_8") {
-            Create_Entities::PVG_Building(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, i, j, objectName, xmlIndex);
-          }
+          Create_Entities::PVG_Building(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, i, j, objectName, xmlIndex);
         }
       }
     }
@@ -273,7 +263,7 @@ namespace Maps {
     float x = 0.0f;
     float y = 0.0f;
     int xmlIndex = 0;
-    std::string objectName = "";
+    std::string objectName;
 
     seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
     int numObjects = Procedural_Generation::Random_Int(0, 2, seed);
@@ -284,27 +274,10 @@ namespace Maps {
 
       float i = rect.x / World::size.width;
       float j = rect.y / World::size.height;
-      if (Game_Objects_Lists::tilesets[tileSet].size() <= 0) { return; }
-      xmlIndex = Procedural_Generation::Random_Int(0, Game_Objects_Lists::tilesets[tileSet].size(), seed);
+      if (Game_Objects_Lists::tilesets[tileSet].empty()) { return; }
+      xmlIndex = Procedural_Generation::Random_Int(0, (int) Game_Objects_Lists::tilesets[tileSet].size(), seed);
       objectName = Game_Objects_Lists::tilesets[tileSet][xmlIndex];
-      if (objectName == "Rock_3_1" ||
-          objectName == "Rock_3_2" ||
-          objectName == "Rock_3_3" ||
-          objectName == "Rock_3_4" ||
-          objectName == "Rock_3_5" ||
-          objectName == "Rock_3_6" ||
-          objectName == "Rock_3_7" ||
-          objectName == "Rock_3_8" ||
-          objectName == "Rock_2_1" ||
-          objectName == "Rock_2_2" ||
-          objectName == "Rock_2_3" ||
-          objectName == "Rock_2_4" ||
-          objectName == "Rock_2_5" ||
-          objectName == "Rock_2_6" ||
-          objectName == "Rock_2_7" ||
-          objectName == "Rock_2_8") {
-        continue;
-      }
+
       if (i != 0) {
         tile.objects[k].entity = (Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex));
       }
@@ -315,8 +288,8 @@ namespace Maps {
     int x = 0;
     int y = 0;
 
-    Get_Coords(camera.screen.x, x);
-    Get_Coords(camera.screen.y, y);
+    Get_Coords((int) camera.screen.x, x);
+    Get_Coords((int) camera.screen.y, y);
 
     for (int i = x; i < (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
       for (int j = y; j < (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
@@ -348,7 +321,7 @@ namespace Maps {
             renderRect.y = j * World::size.height - camera.screen.y;
             renderRect.w = World::size.width;
             renderRect.h = World::size.height;
-            SDL_RenderCopyF(Graphics::renderer, texture, NULL, &renderRect);
+            SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &renderRect);
           }
         }
       }
@@ -356,7 +329,7 @@ namespace Maps {
   }
 
   tmx::Map map;
-  SDL_Texture *pTexture = NULL;
+  SDL_Texture *pTexture = nullptr;
   //
   //  void Create_Map(entt::registry &zone, int &state) {
   //    Generate_Region();
