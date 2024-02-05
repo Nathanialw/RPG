@@ -295,25 +295,26 @@ namespace Texture_Packer {
     }
   };
 
-  void Retrieve_Line_Segment(const std::string &type, Component::Line_Segment &lineSegments, tinyxml2::XMLElement *fixtureElement) {
+  void Retrieve_Line_Segment(const std::string &type, std::vector<Component::Line_Segment> &lineSegments, tinyxml2::XMLElement *fixtureElement) {
     if (type == "POLYGON") {
-
       tinyxml2::XMLElement *polygonElement = fixtureElement->FirstChildElement("polygon");
       int numVertexes = polygonElement->IntAttribute("numVertexes");
       tinyxml2::XMLElement *vertexElement = polygonElement->FirstChildElement("vertex");
       std::vector<Component::Position> positions;
+
       for (int j = 0; j < numVertexes; ++j) {
         float x = vertexElement->FloatAttribute("x");
         float y = vertexElement->FloatAttribute("y");
         positions.push_back({x, y});
         vertexElement = vertexElement->NextSiblingElement("vertex");
       }
+
       std::sort(positions.begin(), positions.end(), [](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
       std::sort(positions.begin(), positions.end(), [](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
       std::sort(positions.begin(), positions.end(), [](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
       std::sort(positions.begin(), positions.end(), [](const auto &lhs, const auto &rhs) { return lhs.y < rhs.y; });
-      lineSegments.start = positions[0];
-      lineSegments.end = positions[2];
+      lineSegments.push_back({positions[0], positions[1]});
+      lineSegments.push_back({positions[0], positions[2]});
     }
   };
 
@@ -323,7 +324,7 @@ namespace Texture_Packer {
     tinyxml2::XMLElement *pSpriteElement;
     Collision_Component::Colliders colliders;
     Collision_Component::Placement_Box placementBox;
-    Component::Line_Segment lineSegment;
+    std::vector<Component::Line_Segment> lineSegment;
 
     pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("bodies");
     int numBodies = pSpriteElement->IntAttribute("numBodies");
@@ -376,7 +377,7 @@ namespace Texture_Packer {
     std::string base_filename = imgPathStr.substr(imgPathStr.find_last_of("/\\") + 1);
     std::string::size_type const p(base_filename.find_last_of('.'));
     tilesetName = base_filename.substr(0, p);
-    
+
     std::cout << "Loading: " << textureIndex << ", " << templateName << ", " << xml << ", " << img << ", " << tilesetName << std::endl;
 
     if (xml.c_str() == nullptr || xml.empty()) {

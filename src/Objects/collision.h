@@ -227,6 +227,7 @@ namespace Collision {
       auto &position = zone.get<Component::Position>(entity);
       auto &offset = zone.get<Rendering_Components::Sprite_Offset>(entity);
 
+      Utilities::Log(colliderData.placementOffset - colliderData.offset.y);
       position.y += (colliderData.placementOffset - colliderData.offset.y);
       offset.y += (colliderData.placementOffset - colliderData.offset.y);
 

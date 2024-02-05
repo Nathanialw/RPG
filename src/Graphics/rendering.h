@@ -25,7 +25,7 @@ namespace Rendering {
     bool debug = false;
   }// namespace
 
-  void gg() {
+  void RenderLines() {
     auto &zone = World::world[World::currentZone.current].zone;
 
     auto view = zone.view<Component::Renderable>();
@@ -42,49 +42,78 @@ namespace Rendering {
     }
   }
 
+  /*
+  //returns 0 if the point is ABOVE the line on the screen
+  */
   int ComparePointAndLine(Component::Position point, Component::Line_Segment line) {
     float pointY = point.y;
     if (pointY > line.start.y && pointY > line.end.y) {
-      return 0;
-    } else if (pointY < line.start.y && pointY < line.end.y) {
       return 1;
+    } else if (pointY < line.start.y && pointY < line.end.y) {
+      return 0;
     } else {
       float slope = (line.end.y - line.start.y) / (line.end.x - line.start.x);
       float intercept = line.start.y - (slope * line.start.x);
       float yOnLineForPoint = (slope * point.x) + intercept;
-      return yOnLineForPoint > point.y ? 1 : 0;
+      return yOnLineForPoint > point.y ? 0 : 1;
     }
   }
 
+  /*
+        BECAUSE the y of 'lhs' is a lower value than the y of 'rhs';
+        THEN the algo places the 'lhs' BEHIND the 'rhs'
+        returns 1 to swap the positions
+
+        SO return 1 when you want the lhs BEHIND the rhs
+  */
   int Sort(const Component::Renderable &lhs, const Component::Renderable &rhs) {
+    std::vector<int> g;
+    if (!rhs.lineSegment.empty() && !lhs.lineSegment.empty()) {
+      if (lhs.point.y < rhs.point.y) {
+        //        Utilities::Log("Placing '" + lhs.name + "' at : '" + std::to_string(lhs.point.y) + "' behind '" + rhs.name + "'" + "' at : '" + std::to_string(lhs.point.y) + "'");
+        return 1;
+      } else {
+        return 0;
+      }
+    }
+
     if (!lhs.lineSegment.empty()) {
-      for (auto line: lhs.lineSegment)
-        if (ComparePointAndLine(rhs.point, line)) {
-          Utilities::Log("collision 1");
-          return 0;
-        } else {
-          Utilities::Log("collision 2");
-          return 1;
-        };
+      for (auto line: lhs.lineSegment) {
+        g.emplace_back(ComparePointAndLine(rhs.point, line));
+      }
+      if (g[0] && g[1]) {
+        //        Utilities::Log("Placing '" + lhs.name + "' at : '" + std::to_string(lhs.point.y) + "' behind '" + rhs.name + "'" + "' at : '" + std::to_string(lhs.point.y) + "'");
+        return 1;
+      } else {
+        return 0;
+      };
     }
 
     if (!rhs.lineSegment.empty()) {
       for (auto line: rhs.lineSegment) {
-        if (ComparePointAndLine(lhs.point, line)) {
-          Utilities::Log("collision 3");
-          return 1;
-        } else {
-          Utilities::Log("collision 4");
-          return 0;
-        };
+        g.emplace_back(ComparePointAndLine(lhs.point, line));
       }
+      if (g[0] && g[1]) {
+        return 0;
+      } else {
+        //        Utilities::Log("Placing '" + lhs.name + "' behind '" + rhs.name + "'");
+        return 1;
+      };
     }
 
-    Utilities::Log("collision 5");
-    return lhs.point.y < rhs.point.y;
+    if (lhs.point.y < rhs.point.y && !lhs.inside) {
+      //      Utilities::Log("Placing '" + lhs.name + "' behind '" + rhs.name + "'");
+      return 1;
+    } else if (lhs.point.y < rhs.point.y && lhs.inside && rhs.inside) {
+      //      Utilities::Log("Placing '" + lhs.name + "' behind '" + rhs.name + "'");
+      return 1;
+    }
+
+    return 0;
   }
 
   void Sort_Positions(entt::registry &zone) {
+    //    Utilities::Log("Call Sort Function");
     zone.sort<Component::Renderable>([](const Component::Renderable &lhs, const Component::Renderable &rhs) {
       return Sort(lhs, rhs);
     });
@@ -111,7 +140,6 @@ namespace Rendering {
   }
 
   void Display_Background_Objects(entt::registry &zone, Component::Camera &camera) {
-
     auto view1 = zone.view<Component::Renderable, Action_Component::Action, Component::Position, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset, Component::Scale, Component::Entity_Type, Rendering_Components::Background>();
 
     for (auto entity: view1) {
@@ -126,7 +154,6 @@ namespace Rendering {
   }
 
   void Display_Foreground_Objects(entt::registry &zone, Component::Camera &camera) {
-
     auto view1 = zone.view<Component::Renderable, Component::Position, Rendering_Components::Sprite_Sheet_Info, Rendering_Components::Sprite_Offset, Component::Scale, Component::Entity_Type, Rendering_Components::Foreground>();
 
     for (auto entity: view1) {
@@ -138,72 +165,6 @@ namespace Rendering {
         Utilities::Log("Static_Animation_Frame() fallthrough error: all pointers NULL");
       }
     }
-  }
-
-  void Render_Dead(entt::registry &zone, Component::Camera &camera) {//state
-
-    auto view1 = zone.view<Component::Renderable, Action_Component::Action, Component::Position, Sprite_Sheet_Info, Component::Direction, Sprite_Offset, Component::Scale, Component::Entity_Type, Component::Dead>();
-    auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
-    auto mounts = zone.view<Component::Renderable, Mount_Sprite>();
-
-    //        std::cout << "----------------------" << std::endl;
-
-    for (auto entity: view1) {
-      auto [renderable, action, position, sheetData, direction, spriteOffset, scale, type, dead] = view1.get(entity);
-      //            std::cout << renderable.y << " ";
-      SDL_Rect clipRect;
-      SDL_FRect renderRect;
-      SDL_Texture *texture;
-      SDL_Color color;
-
-      if (sheetData.flareSpritesheet) {
-        /// get the next frame
-        Update_Frame(zone, entity, scale, sheetData, direction, action);
-        /// get/update the clip rect
-        Get_Spritesheet_Type(clipRect, sheetData, direction, action);
-        /// set the render rect size and position
-        renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
-        renderRect.x = (position.x - camera.screen.x - spriteOffset.x);
-        renderRect.y = (position.y - camera.screen.y - spriteOffset.y);
-
-        //                render icons
-        if (type == Component::Entity_Type::item) {
-          renderRect.w = (spriteOffset.x * 2.0f);
-          renderRect.h = (spriteOffset.y * 2.0f);
-        }
-        texture = sheetData.flareSpritesheet->at(sheetData.sheet_name).texture;
-        color = sheetData.flareSpritesheet->at(sheetData.sheet_name).color;
-        SDL_SetTextureAlphaMod(texture, renderable.alpha);
-        Graphics::Render_FRect(texture, color, &clipRect, &renderRect);
-      }
-      // else if {
-      //	sheetData
-      //}
-
-      else if (sheetData.sheetData) {
-        if (mounts.contains(entity)) {
-          //                render horse half behind unit
-        }
-
-        //                render unit
-        Frame_Increment(zone, entity, scale, sheetData, action, direction);
-        Render_Sprite(zone, entity, camera, scale, renderable, position, spriteOffset, sheetData);
-
-        //                render equipment
-        if (view.contains(entity)) {
-          auto equipment = view.get<Rendering_Components::Equipment_Sprites>(entity);
-          Render_Equipment(equipment, scale, sheetData, camera, position, renderable, spriteOffset);
-        }
-
-        if (mounts.contains(entity)) {
-          //                render horse half in front unit
-        }
-      } else {
-        Utilities::Log("Animation_Frame() fallthrough error: all pointers NULL");
-        return;
-      }
-    }
-    //        std::cout << "\n";
   }
 
   SDL_Rect Explosion_Frame_Update(Component::Sprite_Frames &frame) {
@@ -256,74 +217,6 @@ namespace Rendering {
       SDL_RenderCopyF(Graphics::renderer, texture.pTexture, &texture.clippedSpriteFrame, &anim.renderPosition);
       if (showSpriteBox) {
         SDL_RenderDrawRectF(Graphics::renderer, &anim.renderPosition);
-      }
-    }
-  }
-
-  void Render_Ortho_Tiles(entt::registry &zone, tmx::Map &map, Component::Camera &camera) {
-    float originX = 0.0f;
-    float originY = 0.0f;
-    SDL_Rect tileSpriteRect = {0, 0, (int) map.getTileSize().x, (int) map.getTileSize().y};
-    SDL_FRect renderPosition = {0.0f, 0.0f, (float) map.getTileSize().x, (float) map.getTileSize().y};
-    auto &numOfTiles = map.getTileCount();
-    auto &layers = map.getLayers();
-    const auto tileWidth = (float) map.getTileSize().x;
-    const auto tileHeight = (float) map.getTileSize().y;
-    int newX = (int) camera.screen.x;
-    int newY = (int) camera.screen.y;
-
-    int X = (newX / tileWidth);
-    int Y = (newY / tileHeight);
-
-    int width = X + (camera.screen.w / tileWidth);
-    int height = Y + (camera.screen.h / tileHeight);
-
-    int g = 0;
-    //int o = 0;
-    auto &tilesets = Maps::map.getTilesets();
-    int p = Maps::map.getTilesets().size() - 1;
-    for (int i = 0; i < layers.size(); i++) {
-      if (layers[i]->getType() == tmx::Layer::Type::Tile) {
-        const auto &tiles = layers[i]->getLayerAs<tmx::TileLayer>().getTiles();
-        if (i == 2) {
-          /// renders all objects just above the 2nd layer but below the 3rd in tiled
-        }
-        for (int x = X; x < width; x++) {
-          if (x < 0) { x = 0; }
-          for (int y = Y; y < height; y++) {
-            //h++;
-            if (y < 0) { y = 0; }
-            if (x >= numOfTiles.x) { break; }
-            if (y >= numOfTiles.y) { break; }
-            renderPosition.x = originX + (x * tileWidth);
-            renderPosition.y = originY + (y * tileHeight);
-            renderPosition.x -= camera.screen.x;
-            ;
-            renderPosition.y -= camera.screen.y;
-            ;
-
-            int k = (numOfTiles.x * y) + x;
-            auto id = tiles[k].ID;
-
-            for (int tilesetCount = p; tilesetCount >= 0; --tilesetCount) {
-              const tmx::Tileset *tileset = &tilesets[tilesetCount];
-              if (tileset->getFirstGID() - 1 <= id) {
-                id -= tilesets[tilesetCount].getFirstGID() - 1;
-                std::string name = tileset->getName();
-                int tileCount = tileset->getColumnCount();
-                SDL_Rect data = getTexture(id, tileCount, tileSpriteRect);
-                if (Graphics::pTexture[name] != NULL) {
-                  Graphics::Render_FRect(Graphics::pTexture[name], {255, 255, 255}, &data, &renderPosition);
-                }
-                //h++;
-                break;
-              }
-            }
-          }
-          g++;
-        }
-        if (i == 1) {
-        }
       }
     }
   }
@@ -384,17 +277,17 @@ namespace Rendering {
     if (placeRenderable >= 150.0f) {
       placeRenderable -= 150.0f;
       SDL_FRect renderRect = {
+          camera.screen.x - 550.0f,
+          camera.screen.y - 550.0f,
+          camera.screen.w + 1100.0f,
+          camera.screen.h + 1100.0f};
+
+      SDL_FRect despawnRect = {
           camera.screen.x - 500.0f,
           camera.screen.y - 500.0f,
           camera.screen.w + 1000.0f,
           camera.screen.h + 1000.0f};
-
-      SDL_FRect despawnRect = {
-          camera.screen.x - 1000.0f,
-          camera.screen.y - 1000.0f,
-          camera.screen.w + 2000.0f,
-          camera.screen.h + 2000.0f};
-      auto objectsView = zone.view<Component::Position, Component::Interaction_Rect>();
+      auto objectsView = zone.view<Component::Position, Component::Interaction_Rect, Component::Name, Component::Is_Inside>();
       //if you add Item_Component::Item_Type to this list it will not show ground items, instead I can give a graphic to a ground item
       float bottomOfScreenEdge = camera.screen.y + camera.screen.h;
       float bottomOfRenderRect = renderRect.y + renderRect.h;
@@ -403,32 +296,38 @@ namespace Rendering {
       for (auto entity: objectsView) {
         i++;
         auto &position = objectsView.get<Component::Position>(entity);
+        auto &name = objectsView.get<Component::Name>(entity).first;
+        auto &inside = objectsView.get<Component::Is_Inside>(entity).inside;
+        //        auto &inside = objectsView.get<Component::Is_Inside>(entity).interior;
         SDL_FPoint point = {position.x, position.y};
         if (Utilities::bFPoint_FRectIntersect(point, renderRect)) {
           if (zone.any_of<Component::Renderable>(entity)) {
-            //  update renderable values
             int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
             auto &renderable = zone.get<Component::Renderable>(entity);
             renderable.alpha = alpha;
-            //if (zone.all_of<Component::Line_Segment>(entity) == false) {
             renderable.point.x = position.x;
             renderable.point.y = position.y;
-            //}
-          } else {
-            //                    emplace and initialize renderable
+            renderable.name = name;
+            renderable.inside = inside;
+          }
+
+          else {
             int alpha = Set_Render_Position_Alpha(bottomOfScreenEdge, bottomOfRenderRect, position.y);
             auto &renderable = zone.emplace_or_replace<Component::Renderable>(entity);
             renderable.alpha = alpha;
-            // if (zone.all_of<Component::Line_Segment>(entity) == false) {
             renderable.point.x = position.x;
             renderable.point.y = position.y;
-            if (zone.any_of<Rendering_Components::Interior_Sheet_Info>(entity)) {
-              auto name = zone.get<Rendering_Components::Interior_Sheet_Info>(entity).collisionBocArrayIndex;
-              auto ff = Collision_Component::houseColliders[name].lineSegment;
-              Component::Line_Segment line = {{Mouse::iXWorld_Mouse + ff.start.x, Mouse::iYWorld_Mouse + ff.start.y}, {Mouse::iXWorld_Mouse + ff.end.x, Mouse::iYWorld_Mouse + ff.end.y}};
-              renderable.lineSegment.emplace_back(line);
+            renderable.name = name;
+            renderable.inside = inside;
+
+            if (zone.any_of<Component::Saved_Line_Segments>(entity)) {
+              auto lines = zone.get<Component::Saved_Line_Segments>(entity).lineSegment;
+              auto index = zone.get<Component::Saved_Line_Segments>(entity).name;
+              for (auto line: lines) {
+                renderable.lineSegment.emplace_back(line);
+                renderable.name = index;
+              }
             }
-            //	  }
           }
         }
 
@@ -489,12 +388,9 @@ namespace Rendering {
     SDL_RenderClear(Graphics::renderer);
 
     Maps::Render(zone, state, camera);
-    //        Render_Iso_Tiles(zone, Maps::map, camera);
-    //        Render_Ortho_Tiles(zone, Maps::map, camera);
     Display_Background_Objects(zone, camera);
     //   need a render dead render routine so the foreground objects are on top
     //   alternatively we could sort all the background and foreground objects by WHEN they spawned rather than simple y position
-    //Render_Dead(zone, camera);
     Display_Foreground_Objects(zone, camera);
     Interface::Background(zone);
     Animation_Frame(zone, camera);
@@ -531,7 +427,7 @@ namespace Rendering {
       if (!Menu::Render_Menu(zone, state, camera)) {
         return false;
       }
-      gg();
+      RenderLines();
       //Mouse
       Interface::Foreground(zone, state, camera);
       //on top of mouse

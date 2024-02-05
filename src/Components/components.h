@@ -141,7 +141,19 @@ namespace Component {
     Position point = {0.0f, 0.0f};//point
     int alpha = 0;
     std::vector<Line_Segment> lineSegment;
+    std::string name;
+    bool inside = false;
   };
+
+  struct Is_Inside {
+    bool inside = false;
+  };
+
+  struct Saved_Line_Segments {
+    std::vector<Line_Segment> lineSegment;
+    std::string name;
+  };
+
 
   struct Scale {
     float scale;

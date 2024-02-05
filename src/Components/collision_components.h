@@ -52,7 +52,7 @@ namespace Collision_Component {
     Colliders colliders;
     ///these will eventuall get vectors probably
     Placement_Box placementBox;
-    Component::Line_Segment lineSegment;
+    std::vector<Component::Line_Segment> lineSegment{};
   };
 
   std::unordered_map<std::string, Building_Colliders> houseColliders;

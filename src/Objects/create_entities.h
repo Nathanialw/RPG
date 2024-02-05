@@ -96,6 +96,7 @@ namespace Create_Entities {
         Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius);
       }
 
+      zone.emplace_or_replace<Component::Is_Inside>(entity);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
       Social_Control::Entity(zone, entity, data.race);
       zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
@@ -233,6 +234,7 @@ namespace Create_Entities {
       zone.emplace_or_replace<Rendering_Components::Buff_Sprites>(entity);
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::attack2);
+      zone.emplace_or_replace<Component::Is_Inside>(entity);
       auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
 
       if (!player) {
