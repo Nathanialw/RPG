@@ -53,12 +53,6 @@ namespace Building_Functions {
         Flag_Inside(zone, entity2);
       }
     }
-
-    if (zone.any_of<Component::Renderable>(entity1))
-      Utilities::Log(zone.get<Component::Renderable>(entity1).inside);
-
-    if (zone.any_of<Component::Renderable>(entity2))
-      Utilities::Log(zone.get<Component::Renderable>(entity2).inside);
   }
 
   bool Check_For_Exterior(entt::registry &zone, const entt::entity building_ID) {
