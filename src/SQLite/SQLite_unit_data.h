@@ -627,8 +627,28 @@ namespace Entity_Loader {
     return data;
   }
 
+  std::string Get_Building_Icon(std::string name) {
+    //check if the name exists??
+    std::string unit_name = db::Append_Quotes(name);
+    std::string buildingName;
+
+    sqlite3_stmt *stmt;
+    char buf[300];
+    const char *jj = "SELECT icon FROM building_exteriors WHERE name = ";
+    strcpy(buf, jj);
+    strcat(buf, unit_name.c_str());
+    sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+
+    while (sqlite3_step(stmt) != SQLITE_DONE) {
+      const unsigned char *text = sqlite3_column_text(stmt, 0);
+      buildingName = Get_String(text);
+    }
+    return buildingName;
+  }
+
   std::string Increment_Direction(std::string name, int &direction) {// needs to search for  a specific row that I can input in the arguments
     //check if the name exists??
+    name = Get_Building_Icon(name);
     direction++;
     std::string unit_name = db::Append_Quotes(name);
     const unsigned char *text;

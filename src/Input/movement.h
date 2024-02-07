@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Movement/movement_functions.h"
 #include "action_components.h"
 #include "components.h"
 #include "entity_control.h"
@@ -17,6 +18,8 @@ namespace Movement {
     float Update_Position_Poll = 0.0f;
     float linearMovePoll = 0.0f;
   }// namespace
+
+  using namespace Movement_Functions;
 
   void Mouse_Moving(entt::registry &zone) {// maybe change to move and attack?
     auto view = zone.view<Component::Input>();
@@ -90,18 +93,6 @@ namespace Movement {
     }
   }
 
-  //takes in the x,y of the unit and checks if it is within the destination x,y within an accuracy of the set variable
-  bool Check_If_Arrived(const float &unitX, const float &unitY, const float &destinationX, const float &destinationY) {
-    float accuracy = 5.0f;
-    if (unitX + accuracy > destinationX &&
-        unitX - accuracy < destinationX &&
-        unitY - accuracy < destinationY &&
-        unitY + accuracy > destinationY) {
-      return true;
-    } else {
-      return false;
-    }
-  }
 
   void Mouse_Move_Arrived(entt::registry &zone) {
     auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Component::Position, Component::Velocity, Action_Component::Action, Component::Mouse_Move, Component::Body>();

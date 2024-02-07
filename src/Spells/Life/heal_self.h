@@ -12,6 +12,8 @@ namespace Heal_Self {
 
   int Create(entt::registry &zone, int &state, entt::entity &caster_ID, Component::Position &position, Component::Direction &direction, Spells::Hit &hitEffect, Component::Casting &casting, float &targetX, float &targetY) {
     auto &health = zone.get<Component::Health>(caster_ID);
+    Action_Component::Set_State(zone.get<Action_Component::Action>(caster_ID), Action_Component::pray_kneeled);
+
     health.currentHealth += 10;
     if (health.currentHealth > health.maxHealth) {
       health.currentHealth = health.maxHealth;
@@ -26,7 +28,7 @@ namespace Heal_Self {
 
   int Heal_Self(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     //get data from db
-    Action_Component::Set_State(action, Action_Component::pray_standing);
+    Action_Component::Set_State(action, Action_Component::kneel);
     float castTime = 500.0f;
 
     zone.emplace_or_replace<Spells::Cast_Effect>(entity, Cast, Create, Hit);

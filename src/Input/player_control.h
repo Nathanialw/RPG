@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Movement/movement_functions.h"
 #include "cave.h"
 #include "components.h"
 #include "entity_control.h"
@@ -26,18 +27,15 @@ namespace Player_Control {
       velocity.magnitude.y = 0.0f;
     }
 
-    if (velocity.magnitude.x < 0 && input.keyboardControl[key].velocity.x > 0) {
+    if (velocity.magnitude.x < 0 && input.keyboardControl[key].velocity.x > 0)
       velocity.magnitude.x = 0;
-    }
-    if (velocity.magnitude.x > 0 && input.keyboardControl[key].velocity.x < 0) {
+    if (velocity.magnitude.x > 0 && input.keyboardControl[key].velocity.x < 0)
       velocity.magnitude.x = 0;
-    }
-    if (velocity.magnitude.y > 0 && input.keyboardControl[key].velocity.y < 0) {
+    if (velocity.magnitude.y > 0 && input.keyboardControl[key].velocity.y < 0)
       velocity.magnitude.y = 0;
-    }
-    if (velocity.magnitude.y < 0 && input.keyboardControl[key].velocity.y > 0) {
+    if (velocity.magnitude.y < 0 && input.keyboardControl[key].velocity.y > 0)
       velocity.magnitude.y = 0;
-    }
+
     velocity.magnitude.x += input.keyboardControl[key].velocity.x;
     velocity.magnitude.y += input.keyboardControl[key].velocity.y;
 
@@ -62,6 +60,8 @@ namespace Player_Control {
   void Clear_Moving(entt::registry &zone, entt::entity &entity, Component::Velocity &velocity) {
     velocity.magnitude.x = 0.0f;
     velocity.magnitude.y = 0.0f;
+
+    Action_Component::Set_State(zone.get<Action_Component::Action>(entity), Action_Component::idle);
     zone.remove<Player_Component::Target_Data>(entity);
     zone.remove<Component::Moving>(entity);
   }
@@ -114,9 +114,9 @@ namespace Player_Control {
       if (action.state != Action_Component::kneel && action.state != Action_Component::struck) {
         Action_Component::Set_State(action, Action_Component::idle);
       }
+      Clear_Moving(zone, entity_ID, velocity);
       Action_Component::Set_State(action, Action_Component::kneel);
       Interact_With_Object(zone, entity_ID, target_ID, targetPosition);
-      Clear_Moving(zone, entity_ID, velocity);
       //      Drop_Item(zone, entity_ID, target_ID, targetPosition);
       return true;
     }
@@ -212,10 +212,22 @@ namespace Player_Control {
         case Component::Entity_Type::SIZE:
           break;
       }
+
       auto &action = view.get<Action_Component::Action>(entity);
       Action_Component::Set_State(action, Action_Component::walk);
       velocity.magnitude.x = velocity.speed * (targetPosition.x - position.x);
       velocity.magnitude.y = velocity.speed * (targetPosition.y - position.y);
+
+      if (Movement_Functions::Check_If_Arrived(position, targetPosition)) {
+        Clear_Moving(zone, entity, velocity);
+
+        velocity.magnitude.x = 0.0f;
+        velocity.magnitude.y = 0.0f;
+        Action_Component::Set_State(action, Action_Component::Action_State::idle);
+
+        zone.remove<Player_Component::Target_Data>(entity);
+        zone.remove<Component::Moving>(entity);
+      }
     }
   }
 
