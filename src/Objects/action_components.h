@@ -60,6 +60,122 @@ namespace Action_Component {
     crouch
   };
 
+
+  std::string Get_State_String(Action_State actionState) {
+    switch (actionState) {
+
+      case isStatic:
+        return "isStatic";
+      case idle:
+        return "idle";
+      case idle2:
+        return "idle2";
+      case idle6:
+        return "idle6";
+      case walk:
+        return "walk";
+      case walkBow:
+        return "walkBow";
+      case run:
+        return "run";
+      case attack:
+        return "attack";
+      case attack2:
+        return "attack2";
+      case attack2H_1:
+        return "attack2H_1";
+      case attack2H_2:
+        return "attack2H_2";
+      case attackPolearm:
+        return "attackPolearm";
+      case attackAOE:
+        return "attackAOE";
+      case idle2H:
+        return "idle2H";
+      case idleCritical1:
+        return "idleCritical1";
+      case idleCritical2:
+        return "idleCritical2";
+      case jump:
+        return "jump";
+      case kick:
+        return "kick";
+      case interact:
+        return "interact";
+      case talk:
+        return "talk";
+      case run2H:
+        return "run2H";
+      case walk2H:
+        return "walk2H";
+      case casting:
+        return "casting";
+      case cast:
+        return "cast";
+      case struck:
+        return "struck";
+      case block:
+        return "block";
+      case evade:
+        return "evade";
+      case stunned:
+        return "stunned";
+      case search:
+        return "search";
+      case cleaning_object:
+        return "cleaning_object";
+      case idle_low_hp:
+        return "idle_low_hp";
+      case idle_low_hp2:
+        return "idle_low_hp2";
+      case dying:
+        return "dying";
+      case dead:
+        return "dead";
+      case dead2:
+        return "dead2";
+      case dead3:
+        return "dead3";
+      case dead4:
+        return "dead4";
+      case dead5:
+        return "dead5";
+      case dead6:
+        return "dead6";
+      case resting:
+        return "resting";
+      case ranged:
+        return "ranged";
+      case ranged_bow1:
+        return "ranged_bow1";
+      case idleBow:
+        return "idleBow";
+      case cheer:
+        return "cheer";
+      case behavior:
+        return "behavior";
+      case summoned:
+        return "summoned";
+      case kneel:
+        return "kneel";
+      case pray_kneeled:
+        return "pray_kneeled";
+      case pray_standing:
+        return "pray_standing";
+      case in_combat:
+        return "in_combat";
+      case in_combat2:
+        return "in_combat2";
+      case climb:
+        return "climb";
+      case use_item:
+        return "use_item";
+      case crouch:
+        return "crouch";
+    }
+    return std::to_string((int) actionState) + " state not found in enum";
+  }
+
   enum Action_Progress {
     start,
     mid,
@@ -75,6 +191,8 @@ namespace Action_Component {
   };
 
   void Set_State(Action &action, Action_State state) {
+    if (state == walk)
+      Utilities::Log("setting state to: " + Get_State_String(state));
     if (action.state == state) {
       return;
     }

@@ -129,6 +129,7 @@ namespace Movement {
         auto &mov = view.get<Component::Mouse_Move>(entity);
 
         if (action.state == Action_Component::idle) {
+          Utilities::Log("Mouse_Move_To() setting state to walk");
           Action_Component::Set_State(action, Action_Component::walk);
         }
         zone.remove<Component::Pickup_Item>(entity);
@@ -150,6 +151,7 @@ namespace Movement {
       if (range.fRange <= 0) {
         zone.remove<Component::Linear_Move>(entity);
       } else {
+        Utilities::Log("Linear_Move_To() setting state to walk");
         Action_Component::Set_State(action, Action_Component::walk);
         v.magnitude.x = v.speed * (mov.fX_Direction - range.fSourceX);
         v.magnitude.y = v.speed * (mov.fY_Direction - range.fSourceY);

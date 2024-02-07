@@ -34,7 +34,7 @@ namespace Input_Control {
       UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::mouseData.itemCurrentlyHeld);
 
       auto &action = zone.get<Action_Component::Action>(player_ID);
-      Action_Component::Set_State(action, Action_Component::idle);
+      Action_Component::Set_State(action, Action_Component::kneel);
 
       zone.remove<Component::Moving>(player_ID);
       zone.remove<Component::Pickup_Item>(player_ID);
@@ -113,7 +113,7 @@ namespace Input_Control {
               Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
               UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::mouseData.itemCurrentlyHeld);
               ///stop movement
-              auto &action = zone.get<Action_Component::Action>(player_ID);
+              Action_Component::Set_State(zone.get<Action_Component::Action>(player_ID), Action_Component::kneel);
               zone.remove<Component::Moving>(player_ID);
               return true;
             } else {
@@ -121,9 +121,9 @@ namespace Input_Control {
               Pick_Up_Item_Order(zone, player_ID, targetData.entity_ID, targetPosition.x, targetPosition.y);
               return true;
             }
-          }
-          if (showGroundItems) {
+          } else {
             zone.remove<Component::Pickup_Item>(player_ID);
+            Action_Component::Set_State(zone.get<Action_Component::Action>(player_ID), Action_Component::kneel);
             zone.remove<Component::Moving>(player_ID);
             zone.remove<Player_Component::Target_Data>(player_ID);
             auto view = zone.view<Ground_Item, Component::Position, Rarity, Name, Component::Renderable>();

@@ -41,6 +41,7 @@ namespace Player_Control {
 
     auto &action = zone.get<Action_Component::Action>(entity);
     zone.emplace_or_replace<Component::Moving>(entity);
+    Utilities::Log("Update_Keyboard_Movement() setting state to walk");
     Action_Component::Set_State(action, Action_Component::walk);
   }
 
@@ -57,11 +58,11 @@ namespace Player_Control {
     }
   }
 
-  void Clear_Moving(entt::registry &zone, entt::entity &entity, Component::Velocity &velocity) {
+  void Clear_Moving(entt::registry &zone, entt::entity &entity, Component::Velocity &velocity, Action_Component::Action &action) {
     velocity.magnitude.x = 0.0f;
     velocity.magnitude.y = 0.0f;
 
-    Action_Component::Set_State(zone.get<Action_Component::Action>(entity), Action_Component::idle);
+    Action_Component::Set_State(action, Action_Component::idle);
     zone.remove<Player_Component::Target_Data>(entity);
     zone.remove<Component::Moving>(entity);
   }
@@ -74,7 +75,7 @@ namespace Player_Control {
         Social_Control::Greet(zone, entity, targetData.ID);
         //interaction, like shop or whatever
       }
-      Clear_Moving(zone, entity, velocity);
+      Clear_Moving(zone, entity, velocity, zone.get<Action_Component::Action>(entity));
       return true;
     }
     return false;
@@ -114,7 +115,7 @@ namespace Player_Control {
       if (action.state != Action_Component::kneel && action.state != Action_Component::struck) {
         Action_Component::Set_State(action, Action_Component::idle);
       }
-      Clear_Moving(zone, entity_ID, velocity);
+      Clear_Moving(zone, entity_ID, velocity, action);
       Action_Component::Set_State(action, Action_Component::kneel);
       Interact_With_Object(zone, entity_ID, target_ID, targetPosition);
       //      Drop_Item(zone, entity_ID, target_ID, targetPosition);
@@ -127,7 +128,7 @@ namespace Player_Control {
   bool Enter_Portal(entt::registry &zone, entt::entity &entity, int &state, Component::Position &position, Component::Position &targetPosition, Component::Velocity &velocity, Player_Component::Target_Data &targetData) {
     if (Entity_Control::Target_In_Range(position, targetData.radius.fRadius, targetPosition, targetData.radius)) {
       Cave::Load_Zone(zone, targetData.ID, state);
-      Clear_Moving(zone, entity, velocity);
+      Clear_Moving(zone, entity, velocity, zone.get<Action_Component::Action>(entity));
       return true;
     }
     return false;
@@ -153,6 +154,7 @@ namespace Player_Control {
       auto &action = view.get<Action_Component::Action>(entity);
       auto &v = view.get<Component::Velocity>(entity);
       auto &mov = view.get<Component::Pickup_Item>(entity);
+      Utilities::Log("Mouse_Move_To_Item() setting state to walk");
       Action_Component::Set_State(action, Action_Component::walk);
       v.magnitude.x = v.speed * (mov.x - x.x);
       v.magnitude.y = v.speed * (mov.y - y.y);
@@ -170,21 +172,31 @@ namespace Player_Control {
     }
   }
 
-  bool Move_To_Item() {
-    return false;
+  void Move_To_Target(entt::registry &zone, entt::entity &entity, Component::Position &position, Component::Position &targetPosition, Component::Velocity &velocity, Action_Component::Action &action) {
+    if (Movement_Functions::Check_If_Arrived(position, targetPosition)) {
+      Clear_Moving(zone, entity, velocity, action);
+      zone.remove<Player_Component::Target_Data>(entity);
+    } else {
+      if (action.state != Action_Component::walk) {
+        Utilities::Log("Move_To_Target() setting state to walk");
+        Action_Component::Set_State(action, Action_Component::walk);
+      }
+      velocity.magnitude.x = velocity.speed * (targetPosition.x - position.x);
+      velocity.magnitude.y = velocity.speed * (targetPosition.y - position.y);
+    }
   }
 
   void Mouse_To_Target(entt::registry &zone, int &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
     auto view = zone.view<Component::Position, Component::Velocity, Action_Component::Action, Component::Moving, Player_Component::Target_Data, Component::Melee_Range, Component::Radius>();
     for (auto entity: view) {
       //if not in range
-      auto &position = view.get<Component::Position>(entity);
-      auto &radius = view.get<Component::Radius>(entity);
       auto &targetData = view.get<Player_Component::Target_Data>(entity);
       if (!zone.any_of<Component::Position>(targetData.ID)) {
         Utilities::Log(std::to_string((int) targetData.ID) + ": has no Position component");
         return;
       }
+      auto &position = view.get<Component::Position>(entity);
+      auto &radius = view.get<Component::Radius>(entity);
       auto &targetPosition = zone.get<Component::Position>(targetData.ID);
       auto &velocity = view.get<Component::Velocity>(entity);
       //check if the target is in attack range
@@ -214,20 +226,7 @@ namespace Player_Control {
       }
 
       auto &action = view.get<Action_Component::Action>(entity);
-      Action_Component::Set_State(action, Action_Component::walk);
-      velocity.magnitude.x = velocity.speed * (targetPosition.x - position.x);
-      velocity.magnitude.y = velocity.speed * (targetPosition.y - position.y);
-
-      if (Movement_Functions::Check_If_Arrived(position, targetPosition)) {
-        Clear_Moving(zone, entity, velocity);
-
-        velocity.magnitude.x = 0.0f;
-        velocity.magnitude.y = 0.0f;
-        Action_Component::Set_State(action, Action_Component::Action_State::idle);
-
-        zone.remove<Player_Component::Target_Data>(entity);
-        zone.remove<Component::Moving>(entity);
-      }
+      Move_To_Target(zone, entity, position, targetPosition, velocity, action);
     }
   }
 
