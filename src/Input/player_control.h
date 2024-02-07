@@ -164,7 +164,7 @@ namespace Player_Control {
           zone.remove<Component::Moving>(entity);
         }
         //pickup Item
-        UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, entity, state, mov, Mouse::itemCurrentlyHeld);
+        UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, entity, state, mov, Mouse::mouseData.itemCurrentlyHeld);
         zone.remove<Component::Pickup_Item>(entity);
       }
     }

@@ -3,7 +3,6 @@
 #include "components.h"
 #include "item_components.h"
 #include "spell_components.h"
-//#include "Fire/fire.h"
 
 namespace Spell_Data {
 
@@ -26,6 +25,7 @@ namespace Spell_Data {
   class Spell {
     std::string name;
     Component::On_Mouse mouseItem;
+    Component::Icon_Type type;
     //spell data
     int minDamage = 0;
     int MaxDamage;
@@ -52,7 +52,7 @@ namespace Spell_Data {
       icon.clipIcon = {0, 0, 256, 256};
       icon.renderRectSize = {64.0f, 64.0f};
       icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
-      mouseItem.type = Component::Icon_Type::spell;
+      type = Component::Icon_Type::spell;
 
       name = "";
       minDamage = 0;
@@ -69,7 +69,7 @@ namespace Spell_Data {
       icon.clipIcon = {0, 0, 256, 256};
       icon.renderRectSize = {64.0f, 64.0f};
       icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
-      mouseItem.type = Component::Icon_Type::spell;
+      type = Component::Icon_Type::spell;
       cast = spell;
 
       name = "";

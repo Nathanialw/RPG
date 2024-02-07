@@ -3,18 +3,11 @@
 #include "components.h"
 #include "entt/entt.hpp"
 #include "item_components.h"
-#include "rendering_components.h"
 #include "quad_tree.h"
+#include "rendering_components.h"
 #include "ui.h"
 
 namespace Load {
-
-//  void Clear(entt::registry &zone, World::GameState &state, entt::entity entity) {
-//    if (zone.any_of<Component::In_Object_Tree>(entity)) {
-//      Quad_Tree::Remove_Entity_From_Tree(zone, entity, state);
-//      World::cave.destroy(entity);
-//    }
-//  }
 
   void Get_Bust_Textures(entt::registry &zone, int &state, entt::entity &item, Item_Component::Item_Type itemType, Rendering_Components::Body_Frame &bodyFrame, Rendering_Components::Unit_Frame_Portrait &unitPortraitFrame) {
     if (item != Item_Component::emptyEquipSlot[state]) {
@@ -39,7 +32,7 @@ namespace Load {
     entt::entity newItem = newZone.create();
     auto &itemName = OldZone.get<Item_Component::Name>(oldItem);
     auto &itemStats = OldZone.get<Item_Component::Item_Stats>(oldItem);
-    auto &position = OldZone.get<Component::Position>(oldItem);    //
+    auto &position = OldZone.get<Component::Position>(oldItem);//
 
     newZone.emplace_or_replace<Rendering_Components::Portrait>(newItem) = OldZone.get<Rendering_Components::Portrait>(oldItem);
     newZone.emplace_or_replace<Rendering_Components::Body>(newItem) = OldZone.get<Rendering_Components::Body>(oldItem);
@@ -48,6 +41,8 @@ namespace Load {
     newZone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(newItem) = OldZone.get<Rendering_Components::Sprite_Sheet_Info>(oldItem);
     newZone.emplace_or_replace<Component::Icon>(newItem) = OldZone.get<Component::Icon>(oldItem);
     newZone.emplace_or_replace<Component::Inventory>(newItem);
+
+    if (OldZone.any_of<Item_Component::Weapon_Type>(oldItem)) newZone.emplace_or_replace<Item_Component::Weapon_Type>(newItem);
     //
     Create_Item(newZone, newItem, position, itemName.name, itemStats);
     return newItem;
@@ -68,8 +63,8 @@ namespace Load {
       for (auto oldItem: equipment.equippedItems) {
         if (oldItem.second != Item_Component::emptyEquipSlot[previousState]) {
           newEquipment.equippedItems[oldItem.first] = Copy_item(OldZone, newZone, oldItem.second);
-//          lags the game out, not sure why yet
-//          Get_Bust_Textures(newZone, state, newEquipment.equippedItems[oldItem.first], static_cast<Item_Component::Item_Type>(newEquipment.equippedItems[oldItem.first]), bodyFrame, unitPortraitFrame);
+          //          lags the game out, not sure why yet
+          //          Get_Bust_Textures(newZone, state, newEquipment.equippedItems[oldItem.first], static_cast<Item_Component::Item_Type>(newEquipment.equippedItems[oldItem.first]), bodyFrame, unitPortraitFrame);
           OldZone.destroy(oldItem.second);
         }
       }
@@ -113,12 +108,6 @@ namespace Load {
       oldZone.emplace_or_replace<Component::Remove_From_Object_Tree>(playerID, rect);
       Quad_Tree::Remove_Entity_From_Tree(oldZone, playerID, oldState);
       oldZone.destroy(playerID);
-
-      /*    TO DO
-       *    copy bag component with each inventory slot
-       *    create proper
-       *
-       * */
     }
   }
 }// namespace Load

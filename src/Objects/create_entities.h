@@ -39,13 +39,7 @@ namespace Create_Entities {
     }
   }
 
-  struct Entity_ID_Direction {
-    entt::entity entity;
-    std::string name;
-    int direction;
-  };
-
-  Entity_ID_Direction Create_Render_Object(entt::registry &zone, int state, float x, float y, std::string &templateName, int xmlIndex) {
+  Mouse_Struct::Entity_ID_Direction Create_Render_Object(entt::registry &zone, int state, float x, float y, std::string &templateName, int xmlIndex) {
     Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
     auto entity = zone.create();
 
@@ -103,21 +97,6 @@ namespace Create_Entities {
       zone.emplace_or_replace<Component::Name>(entity, templateName);
     }
     return {entity, templateName, data.direction};
-  }
-
-  void Set_On_Mouse(entt::registry &zone, Entity_ID_Direction &building) {
-    zone.emplace<Component::On_Mouse>(building.entity, building.entity, Component::Icon_Type::building);
-    Mouse_Struct::mouseData.type = Component::Icon_Type::building;
-    Mouse_Struct::mouseData.direction = building.direction;
-    Mouse::mouseItem = building.entity;
-    Mouse::itemCurrentlyHeld = true;
-  }
-
-  void Remove_From_Mouse(entt::registry &zone, entt::entity &entity) {
-    zone.remove<Component::On_Mouse>(entity);
-    Mouse::mouseItem = Mouse::cursor_ID;
-    Mouse_Struct::mouseData.type = Component::Icon_Type::none;
-    Mouse::itemCurrentlyHeld = false;
   }
 
   bool Create_Object(entt::registry &zone, int state, entt::entity &entity) {

@@ -16,15 +16,19 @@
 //#include "skills.h"
 //#include "spells.h"
 //#include "timer.h"
-//#include "ui.h"
+#include "ui.h"
 //#include "unit_control.h"
 //#include "utilities.h"
 //#include <SDL2/SDL.h>
+#include "building_components.h"
+#include "create_entities.h"
 #include "game_menu.h"
 #include "hotbar.h"
 #include "hotbar_structs.h"
 #include "input_control.h"
 #include "interface.h"
+#include "items.h"
+#include "quad_tree.h"
 
 namespace Event_Handler {
 
@@ -75,9 +79,7 @@ namespace Event_Handler {
   };
 
   void Mouse_Hover(entt::registry &zone, int &state) {
-    //    std::vector<entt::entity>* Mouse_Hover_Entities;
-    //    if (state == int::overworld) {Mouse_Hover_Entities = &World::Mouse_Hover_EntitiesOverworld;}
-    //    if (state == int::cave) {Mouse_Hover_Entities = &World::Mouse_Hover_EntitiesCave;}
+    if (Mouse::mouseData.itemCurrentlyHeld) return;
 
     for (auto &entity: World::Mouse_Hover_Entities) {
       if (zone.valid(entity)) {
@@ -102,12 +104,12 @@ namespace Event_Handler {
       ff.color = {255, 255, 255};
       World::Mouse_Hover_Entities.emplace_back(targetData.entity_ID);
       //recolour pointer
-      zone.get<Component::Icon>(Mouse::cursor_ID).pBackground = Graphics::cursor_1;
+      zone.get<Component::Icon>(Mouse::mouseData.mouseItem).pBackground = Graphics::cursor_1;
       return;
     }
     // add component to keep track maybe
     //recolour pointer
-    zone.get<Component::Icon>(Mouse::cursor_ID).pBackground = Graphics::cursor_0;
+    zone.get<Component::Icon>(Mouse::mouseData.mouseItem).pBackground = Graphics::cursor_0;
     //revert color
   }
 
@@ -126,7 +128,7 @@ namespace Event_Handler {
         else if (Action_Bar::Mouse_Inside_Actionbar(camera, state)) {
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
             Action_Bar::Set_Mouse_Spell_On_Actionbar(zone, state, camera);
-          } else if (Mouse_Struct::mouseData.type == Component::Icon_Type::none && !Mouse::itemCurrentlyHeld) {
+          } else if (Mouse_Struct::mouseData.type == Component::Icon_Type::none && !Mouse::mouseData.itemCurrentlyHeld) {
             Action_Bar::Get_Mouse_Spell_From_Actionbar(zone, state, camera);
           }
           return;
@@ -153,17 +155,17 @@ namespace Event_Handler {
         } else {
           //buildings
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
-            auto &placeable = zone.get<Building_Component::Placement>(Mouse::mouseItem);
+            auto &placeable = zone.get<Building_Component::Placement>(Mouse::mouseData.mouseItem);
             Utilities::Log(placeable.polygons.size());
             if (!placeable.obstructed) {
-              zone.remove<Building_Component::Placement>(Mouse::mouseItem);
-              auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(Mouse::mouseItem);
+              zone.remove<Building_Component::Placement>(Mouse::mouseData.mouseItem);
+              auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(Mouse::mouseData.mouseItem);
               sprite.color = {200, 200, 200, SDL_ALPHA_OPAQUE};
               sprite.blendType = Rendering_Components::normal;
               //set building
-              zone.get<Collision_Component::Collider_Data>(Mouse::mouseItem).position = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
-              if (Create_Entities::Create_Object(zone, state, Mouse::mouseItem)) {
-                Create_Entities::Remove_From_Mouse(zone, Mouse::mouseItem);
+              zone.get<Collision_Component::Collider_Data>(Mouse::mouseData.mouseItem).position = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
+              if (Create_Entities::Create_Object(zone, state, Mouse::mouseData.mouseItem)) {
+                Mouse::Set_Cursor_As_Cursor(zone);
                 return;
               };
             } else {
@@ -173,7 +175,7 @@ namespace Event_Handler {
           }
           //          items
           User_Mouse_Input::Selection_Box(zone);//if units are currently selected
-          UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
+          UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
           //          spells
           Action_Bar::Clear_Spell_On_Mouse(zone);
         }
@@ -200,7 +202,7 @@ namespace Event_Handler {
           Loot_Panel::Get_loot_Item_To_Bag(zone, state, camera);
           return;
         }
-        if (!Mouse::itemCurrentlyHeld) {
+        if (!Mouse::mouseData.itemCurrentlyHeld) {
           if (Mouse_Struct::mouseData.type != Component::Icon_Type::spell) {
             Loot_Panel::Close();
             if (Input_Control::Check_For_Mouse_Target(zone, state, Items::showGroundItems, player_ID, playerPosition)) {
@@ -214,15 +216,15 @@ namespace Event_Handler {
           //set building
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
             //destroy the previous mouse entity
-            zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseItem);
+            zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseData.mouseItem);
             //go into the db and get all with the icon name of the same,
             std::string name = Entity_Loader::Increment_Direction(Mouse_Struct::mouseData.name, Mouse_Struct::mouseData.direction);
             // plug it into Create_Render_Object()
             int xmlIndex = -1;
             auto mouseEntity = Create_Entities::Create_Render_Object(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
-            Create_Entities::Set_On_Mouse(zone, mouseEntity);
+            Mouse::Set_Cursor_As_Entity(zone, mouseEntity, Mouse_Struct::mouseData.type);
           } else {
-            UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::itemCurrentlyHeld);
+            UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
           }
         }
       }

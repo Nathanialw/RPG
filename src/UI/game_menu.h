@@ -27,6 +27,11 @@ namespace Game_Menu_Control {
     return false;
   }
 
+  void Close() {
+    UI_Frames::topFrame.currentTab = UI_Frames::SIZE;
+    UI_Frames::topFrame.open = false;
+  }
+
   bool Check_Menu_Button(entt::registry &zone, int &state) {
     if (Mouse::FRect_inside_Screen_Cursor(UI_Frames::topFrame.background.frame)) {
       for (int i = 0; i < UI_Frames::topFrame.buttons.size(); i++) {
@@ -45,8 +50,7 @@ namespace Game_Menu_Control {
         return true;
       } else {
         if (Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
-          UI_Frames::topFrame.currentTab = UI_Frames::SIZE;
-          UI_Frames::topFrame.open = false;
+          Close();
           return false;
         }
       }

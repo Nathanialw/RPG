@@ -3,9 +3,15 @@
 
 
 namespace Mouse_Struct {
+  struct Entity_ID_Direction {
+    entt::entity entity;
+    std::string name;
+    int direction;
+  };
+  
   struct Mouse_Data {
-    entt::entity mouseItem;
-    entt::entity cursor_ID;
+    entt::entity mouseItem{};
+    entt::entity cursor_ID{};
     //    Spell_Data::Spell spell;
     int index;
     Spell_Data::Skill_Tree tree;

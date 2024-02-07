@@ -539,8 +539,6 @@ namespace Component {
   };
 
   struct On_Mouse {
-    entt::entity item_ID;
-    Icon_Type type = Icon_Type::none;
   };
 
   struct Dungeon {

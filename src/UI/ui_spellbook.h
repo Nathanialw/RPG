@@ -259,10 +259,10 @@ namespace UI_Spellbook {
 
       if (Mouse::bRect_inside_Cursor(renderRect)) {
         //        Utilities::Log("picked up spell at spellbook index " + std::to_string(j));
-        Mouse_Struct::mouseData.tree = tree;
-        Mouse_Struct::mouseData.index = j;
-        Mouse_Struct::mouseData.type = Component::Icon_Type::spell;
-        Mouse::itemCurrentlyHeld = true;
+        Mouse::mouseData.tree = tree;
+        Mouse::mouseData.index = j;
+        Mouse::mouseData.type = Component::Icon_Type::spell;
+        Mouse::mouseData.itemCurrentlyHeld = true;
         return true;
       }
     }
@@ -284,7 +284,7 @@ namespace UI_Spellbook {
   }
 
   bool Get_Spell(entt::registry &zone, Component::Camera &camera) {
-    if (!Mouse::itemCurrentlyHeld) {
+    if (!Mouse::mouseData.itemCurrentlyHeld) {
       if (Get_SpellPage(zone, camera, spellbook.panelRect, Spell_Data::Skill_Tree(spellbook.currentTab))) {
         return true;
       }

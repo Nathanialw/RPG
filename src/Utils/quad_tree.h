@@ -288,7 +288,7 @@ namespace Quad_Tree {
     std::vector<std::vector<f2>> polygons;
     for (const auto &object: quadTrees[state].search(entityRect)) {
       if (zone.any_of<Building_Component::Set_Placement>(object->item.entity_ID)) {
-        if (object->item.entity_ID != Mouse::mouseItem) {
+        if (object->item.entity_ID != Mouse::mouseData.mouseItem) {
           auto &building_polygons = zone.get<Building_Component::Set_Placement>(object->item.entity_ID).polygons;
           for (const auto &treePolygon: building_polygons) {
             polygons.emplace_back(treePolygon);

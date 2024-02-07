@@ -83,8 +83,8 @@ namespace Action_Bar {
           if (texture == actionBar.defaultSlot.icon.pTexture) {
             Mouse_Struct::mouseData.type = Component::Icon_Type::none;
             Mouse_Struct::mouseData.index = -1;
-            Mouse::mouseItem = Mouse::cursor_ID;
-            Mouse::itemCurrentlyHeld = false;
+            Mouse::mouseData.mouseItem = Mouse::mouseData.cursor_ID;
+            Mouse::mouseData.itemCurrentlyHeld = false;
             return;
           }
           //          swap
@@ -95,8 +95,8 @@ namespace Action_Bar {
           //          Mouse::itemCurrentlyHeld = false;
           Mouse_Struct::mouseData.type = Component::Icon_Type::none;
           Mouse_Struct::mouseData.index = -1;
-          Mouse::mouseItem = Mouse::cursor_ID;
-          Mouse::itemCurrentlyHeld = false;
+          Mouse::mouseData.mouseItem = Mouse::mouseData.cursor_ID;
+          Mouse::mouseData.itemCurrentlyHeld = false;
           //          clear the mouse item
         }
       }
@@ -104,7 +104,7 @@ namespace Action_Bar {
   }
 
   void Get_Mouse_Spell_From_Actionbar(entt::registry &zone, int &state, Component::Camera &camera) {
-    if (!Mouse::itemCurrentlyHeld) {
+    if (!Mouse::mouseData.itemCurrentlyHeld) {
       SDL_FRect renderBarFrame = UI::Update_Scale(camera.scale, actionBar.actionBar.actionBarFrame);
 
       for (int i = 0; i < actionBar.actionBar.spell.size(); i++) {
@@ -116,7 +116,7 @@ namespace Action_Bar {
             Mouse_Struct::mouseData.index = actionBar.actionBar.spell[i].index;
             actionBar.actionBar.spell[i] = actionBar.defaultSlot;
             Mouse_Struct::mouseData.type = Component::Icon_Type::spell;
-            Mouse::itemCurrentlyHeld = true;
+            Mouse::mouseData.itemCurrentlyHeld = true;
 
             Hotbar_Structs::keybinds[actionBar.actionBar.hotkey[i]] = actionBar.actionBar.spell[i].cast;
             return;
@@ -131,10 +131,13 @@ namespace Action_Bar {
     //    if (Mouse::mouseItem == Mouse::cursor_ID) {
     //      Utilities::Log("objectID on mouse is the same as the cursorID same");
     //    }
+    Mouse_Struct::mouseData.tree = Spell_Data::SIZE;
+    
+
     Mouse_Struct::mouseData.type = Component::Icon_Type::none;
     Mouse_Struct::mouseData.index = -1;
-    Mouse::mouseItem = Mouse::cursor_ID;
-    Mouse::itemCurrentlyHeld = false;
+    Mouse::mouseData.mouseItem = Mouse::mouseData.cursor_ID;
+    Mouse::mouseData.itemCurrentlyHeld = false;
   }
 
   void Render_Action_Bar(entt::registry &zone, int &state, Component::Camera &camera) {

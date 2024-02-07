@@ -83,23 +83,18 @@ namespace Hotbar {
 
   int Menu_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     auto view = zone.view<Component::Selected>();
-    if (Mouse_Struct::mouseData.type == Component::Icon_Type::building || UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || !view.empty()) {
-      if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
-        Mouse_Struct::mouseData.type = Component::Icon_Type::none;
-        Mouse_Struct::mouseData.name = "";
-        zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseItem);
-        Mouse::mouseItem = Mouse::cursor_ID;
-        Mouse_Struct::mouseData.mouseItem = Mouse::cursor_ID;
-        Mouse_Struct::mouseData.itemCurrentlyHeld = false;
-      }
-      if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || !view.empty()) {
-        Mouse::bLeft_Mouse_Pressed = false;
-        zone.clear<Component::Selected>();
-        Loot_Panel::Close();
-        UI::bToggleCharacterUI = false;
-        UI_Spellbook::spellbook.b_isOpen = false;
-        UI_Info::spellbook.b_isOpen = false;
-      }
+    if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
+      zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseData.mouseItem);
+      Mouse::Set_Cursor_As_Cursor(zone);
+      return 0;
+    } else if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || UI_Frames::topFrame.open || !view.empty()) {
+      Mouse::bLeft_Mouse_Pressed = false;
+      zone.clear<Component::Selected>();
+      Loot_Panel::Close();
+      UI::bToggleCharacterUI = false;
+      UI_Spellbook::spellbook.b_isOpen = false;
+      UI_Info::spellbook.b_isOpen = false;
+      Game_Menu_Control::Close();
       return 0;
     }
     Menu::Toggle();

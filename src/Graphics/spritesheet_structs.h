@@ -146,8 +146,7 @@ namespace Spritesheet_Structs {
 
 
       if (frameCopy.substr(0, keyCheck.size()) != keyCheck) {
-        //        std::cout << "xml file name foes not match texture atlas sprite name - NAME: " << templateName << " FRAME: " << frame << std::endl;
-        //            should assign a dummy value to prevent a crash and to make it an obvious bug
+        Utilities::Log("Get_Frame_Action_Data() error: Sheet name: " + keyCheck + " != frame: " + frameCopy.substr(0, keyCheck.size()));
         return false;
       }
 

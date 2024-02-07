@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with http://www.physicseditor.de -->
+<bodydef version="1.0">
+    <bodies numBodies="3">
+
+        <body name="CaveEntrance1" dynamic="false" numFixtures="4">
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-392.5000" y="-46.0000" />
+
+                    <vertex x="18.5000" y="-280.0000" />
+
+                    <vertex x="419.5000" y="-140.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="6">
+
+                    <vertex x="-400.5000" y="-50.0000" />
+
+                    <vertex x="15.5000" y="-274.0000" />
+
+                    <vertex x="222.5000" y="-281.0000" />
+
+                    <vertex x="423.5000" y="-137.0000" />
+
+                    <vertex x="-199.5000" y="176.0000" />
+
+                    <vertex x="-387.5000" y="185.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="5">
+
+                    <vertex x="397.5000" y="97.0000" />
+
+                    <vertex x="303.5000" y="161.0000" />
+
+                    <vertex x="158.5000" y="75.0000" />
+
+                    <vertex x="147.5000" y="3.0000" />
+
+                    <vertex x="420.5000" y="-133.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="5">
+
+                    <vertex x="-77.5000" y="373.0000" />
+
+                    <vertex x="-216.5000" y="331.0000" />
+
+                    <vertex x="-195.5000" y="175.0000" />
+
+                    <vertex x="-29.5000" y="96.0000" />
+
+                    <vertex x="89.5000" y="279.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+        </body>
+
+        <body name="CaveEntrance2" dynamic="false" numFixtures="4">
+
+            <fixture
+                density="1"
+                friction="0.6"
+                restitution="0.3"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="5">
+
+                    <vertex x="-106.0000" y="79.0000" />
+
+                    <vertex x="-232.0000" y="148.0000" />
+
+                    <vertex x="-376.0000" y="83.0000" />
+
+                    <vertex x="-318.0000" y="-60.0000" />
+
+                    <vertex x="-147.0000" y="-229.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-334.0000" y="-25.0000" />
+
+                    <vertex x="135.0000" y="-190.0000" />
+
+                    <vertex x="353.0000" y="335.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="5">
+
+                    <vertex x="362.0000" y="58.0000" />
+
+                    <vertex x="356.0000" y="338.0000" />
+
+                    <vertex x="57.0000" y="339.0000" />
+
+                    <vertex x="-19.0000" y="228.0000" />
+
+                    <vertex x="144.0000" y="-195.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="34.0000" y="89.0000" />
+
+                    <vertex x="-104.0000" y="77.0000" />
+
+                    <vertex x="-147.0000" y="-233.0000" />
+
+                    <vertex x="145.0000" y="-199.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+        </body>
+
+        <body name="CaveEntrance3" dynamic="false" numFixtures="5">
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="6">
+
+                    <vertex x="-527.5000" y="75.0000" />
+
+                    <vertex x="-94.5000" y="12.0000" />
+
+                    <vertex x="-103.5000" y="186.0000" />
+
+                    <vertex x="-315.5000" y="299.0000" />
+
+                    <vertex x="-540.5000" y="298.0000" />
+
+                    <vertex x="-611.5000" y="162.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="578.5000" y="17.0000" />
+
+                    <vertex x="-591.5000" y="27.0000" />
+
+                    <vertex x="-13.5000" y="-185.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="5">
+
+                    <vertex x="-525.5000" y="72.0000" />
+
+                    <vertex x="-589.5000" y="23.0000" />
+
+                    <vertex x="-263.5000" y="-160.0000" />
+
+                    <vertex x="132.5000" y="-213.0000" />
+
+                    <vertex x="560.5000" y="-82.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="6">
+
+                    <vertex x="365.5000" y="282.0000" />
+
+                    <vertex x="109.5000" y="268.0000" />
+
+                    <vertex x="72.5000" y="136.0000" />
+
+                    <vertex x="90.5000" y="-12.0000" />
+
+                    <vertex x="534.5000" y="59.0000" />
+
+                    <vertex x="571.5000" y="185.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="540.5000" y="59.0000" />
+
+                    <vertex x="93.5000" y="-13.0000" />
+
+                    <vertex x="558.5000" y="-79.0000" />
+
+                    <vertex x="577.5000" y="17.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+        </body>
+
+    </bodies>
+    <metadata>
+        <format>1</format>
+        <ptm_ratio></ptm_ratio>
+    </metadata>
+</bodydef>

@@ -230,31 +230,25 @@ namespace Rendering {
   }
 
   void Render_Mouse_Item(entt::registry &zone, Component::Camera &camera) {
-    SDL_FRect DisplayRect = {};
-    auto view = zone.view<Component::Position, Component::Icon, Component::On_Mouse>();
-    for (auto item: view) {
-      const auto &mouse = view.get<Component::On_Mouse>(item);
-      const auto &x = view.get<Component::Position>(item).x;
-      const auto &y = view.get<Component::Position>(item).y;
-      if (mouse.type == Component::Icon_Type::item) {
-        const auto &icon = view.get<Component::Icon>(item);
-        DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
-        DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
-        DisplayRect.x = Mouse::iXMouse - (DisplayRect.w / 2.0f);
-        DisplayRect.y = Mouse::iYMouse - (DisplayRect.h / 2.0f);
-        SDL_RenderCopyF(Graphics::renderer, icon.pBackground, &icon.clipIcon, &DisplayRect);
-        SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &DisplayRect);
-        SDL_RenderCopyF(Graphics::renderer, icon.pIconRarityBorder, &icon.clipIcon, &DisplayRect);
-        if (showSpriteBox) {
-          //SDL_RenderDrawRect(Graphics::renderer, &DisplayRect);
-        }
+    if (Mouse::mouseData.type == Component::Icon_Type::item) {
+      const auto &icon = zone.get<Component::Icon>(Mouse::mouseData.mouseItem);
+      SDL_FRect DisplayRect = {};
+      DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
+      DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
+      DisplayRect.x = Mouse::iXMouse - (DisplayRect.w / 2.0f);
+      DisplayRect.y = Mouse::iYMouse - (DisplayRect.h / 2.0f);
+      SDL_RenderCopyF(Graphics::renderer, icon.pBackground, &icon.clipIcon, &DisplayRect);
+      SDL_RenderCopyF(Graphics::renderer, icon.pTexture, &icon.clipSprite, &DisplayRect);
+      SDL_RenderCopyF(Graphics::renderer, icon.pIconRarityBorder, &icon.clipIcon, &DisplayRect);
+      if (showSpriteBox) {
+        //SDL_RenderDrawRect(Graphics::renderer, &DisplayRect);
       }
     }
     if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
       //      const auto &icon = UI_Spellbook::spellbook.Skill_Trees[UI_Spellbook::fire][0].icon;
       const auto &icon = UI_Spellbook::spellbook.Skill_Trees[Mouse_Struct::mouseData.tree][Mouse_Struct::mouseData.index].icon;
       //      const auto &icon = Mouse::ss.spell;
-
+      SDL_FRect DisplayRect = {};
       DisplayRect.w = icon.renderRectSize.x / camera.scale.x;
       DisplayRect.h = icon.renderRectSize.y / camera.scale.y;
       DisplayRect.x = Mouse::iXMouse - (DisplayRect.w / 2.0f);
@@ -427,7 +421,7 @@ namespace Rendering {
       Unit_Frames::Show_Frames(zone, camera);
       Render_UI(zone, state, Graphics::renderer, camera);
       Character_Stats::Render_Character_Stats(camera);
-      Items::Update_Mouse_Slot_Position(zone, state, Mouse::mouseItem, Mouse::itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
+      Items::Update_Mouse_Slot_Position(zone, state, Mouse::mouseData.mouseItem, Mouse::mouseData.itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
       Damage_Text::Show_Damage(zone, camera);
       UI_Spellbook::Draw_Spellbook(camera);
       UI_Info::Draw_Attributes(camera);

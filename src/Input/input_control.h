@@ -31,7 +31,7 @@ namespace Input_Control {
     if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
       ///pick up Item
       Component::Pickup_Item itemData = {item_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
-      UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::itemCurrentlyHeld);
+      UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::mouseData.itemCurrentlyHeld);
 
       auto &action = zone.get<Action_Component::Action>(player_ID);
       Action_Component::Set_State(action, Action_Component::idle);
@@ -111,7 +111,7 @@ namespace Input_Control {
             if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
               ///pick up Item
               Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
-              UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::itemCurrentlyHeld);
+              UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::mouseData.itemCurrentlyHeld);
               ///stop movement
               auto &action = zone.get<Action_Component::Action>(player_ID);
               zone.remove<Component::Moving>(player_ID);

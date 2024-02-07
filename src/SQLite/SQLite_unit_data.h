@@ -650,6 +650,9 @@ namespace Entity_Loader {
 
       directions.emplace_back(buildingName);
     }
+
+    if (directions.empty()) return name;
+
     if (direction >= directions.size()) {
       direction = 0;
       return directions[0];

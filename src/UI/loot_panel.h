@@ -59,14 +59,14 @@ namespace Loot_Panel {
 
   bool Get_loot_Item(entt::registry &zone, int &state, Component::Camera &camera) {
     if (lootPanel.items) {
-      if (!Mouse::itemCurrentlyHeld) {
+      if (!Mouse::mouseData.itemCurrentlyHeld) {
         SDL_FRect panel = lootPanel.panel;
         for (int i = 0; i < lootPanel.items->size(); ++i) {
           SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(panel, camera);
           if (Mouse::bRect_inside_Cursor(scaledSlot)) {
             //bag is open
             if (UI::bToggleCharacterUI) {
-              UI::Pick_Up_Item_To_Mouse(zone, lootPanel.items->at(i), Mouse::itemCurrentlyHeld);
+              UI::Pick_Up_Item_To_Mouse(zone, lootPanel.items->at(i), Mouse::mouseData.itemCurrentlyHeld);
               //remove item from loot
               lootPanel.items->erase(lootPanel.items->begin() + i);
               return true;
@@ -87,15 +87,14 @@ namespace Loot_Panel {
 
   bool Get_loot_Item_To_Bag(entt::registry &zone, int &state, Component::Camera &camera) {
     if (lootPanel.items) {
-      if (!Mouse::itemCurrentlyHeld) {
+      if (!Mouse::mouseData.itemCurrentlyHeld) {
         SDL_FRect panel = lootPanel.panel;
         for (int i = 0; i < lootPanel.items->size(); ++i) {
           SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(panel, camera);
           if (Mouse::bRect_inside_Cursor(scaledSlot)) {
             if (loot_Item_To_Bag(zone, state, camera, i)) {
               return true;
-            }
-            else {
+            } else {
               return false;
             }
           }
