@@ -231,7 +231,7 @@ namespace Maps {
     std::string objectName;
 
     int numTiles = REGION_SIZE * REGION_SIZE;
-    int avgPerRegion = 3;
+    int avgPerRegion = 1;
 
     for (int i = 0; i < REGION_SIZE; ++i) {
       for (int j = 0; j < REGION_SIZE; ++j) {
@@ -284,6 +284,8 @@ namespace Maps {
     }
   }
 
+
+  //render tiles and instantiate the objects on the tiles
   void Render(entt::registry &zone, int &state, Component::Camera &camera) {
     int x = 0;
     int y = 0;

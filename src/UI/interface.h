@@ -22,11 +22,12 @@ namespace Interface {
     int gridDepth = -1;
   }// namespace
 
-  void Update_Zoom(entt::registry &zone, SDL_Event &e) {
+  void Update_Zoom(entt::registry &zone, const int zoom) {
     auto view = zone.view<Component::Camera>();
     for (auto focus: view) {
       auto &x = view.get<Component::Camera>(focus).scale;
-      if (e.wheel.y > 0) {
+      //      if (e.wheel.y > 0) {
+      if (zoom > 0) {
         x.x *= 1.1f;
         x.y *= 1.1f;
         if (x.y > 2.0f) {
@@ -35,7 +36,8 @@ namespace Interface {
         }
         SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
       }
-      if (e.wheel.y < 0) {
+      //      if (e.wheel.y < 0) {
+      if (zoom < 0) {
         x.x *= 0.9f;
         x.y *= 0.9f;
         if (x.y < 0.75f) {

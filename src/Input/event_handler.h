@@ -284,7 +284,7 @@ namespace Event_Handler {
           //          if (Events::event.key.type == SDL_MOUSEMOTION) {
           Mouse_Hover(zone, state);
           if (Events::event.key.type == SDL_MOUSEWHEEL) {
-            Interface::Update_Zoom(zone, Events::event);
+            Interface::Update_Zoom(zone, Events::event.wheel.y);
           } else if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
             Mouse_Input(zone, state, player_ID, playerPosition, camera);
           } else if (Events::event.key.type == SDL_KEYDOWN || Events::event.key.type == SDL_KEYUP) {
