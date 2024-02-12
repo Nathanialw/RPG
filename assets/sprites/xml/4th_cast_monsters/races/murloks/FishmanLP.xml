@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:0830e4852dcbea98a99e1e86422108cf:30c8851f134027e4681d740c7420202f:535cdf1ba825381df2dc1835e2e6a147$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="FishmanLP.png" width="1024" height="900">
+    <sprite n="FishmanLP_Attack 1_E___0000" x="359" y="153" w="50" h="43" oX="148" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_E___0001" x="411" y="203" w="50" h="43" oX="145" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_E___0002" x="306" y="358" w="52" h="43" oX="144" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_E___0003" x="924" y="1" w="60" h="46" oX="162" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_E___0004" x="236" y="1" w="74" h="44" oX="165" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_E___0005" x="312" y="1" w="70" h="46" oX="166" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_E___0006" x="736" y="1" w="61" h="47" oX="166" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_E___0007" x="62" y="617" w="52" h="45" oX="155" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_E___0008" x="421" y="735" w="50" h="42" oX="147" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_E___0009" x="424" y="403" w="51" h="43" oX="147" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0000" x="171" y="666" w="35" h="55" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0001" x="503" y="355" w="30" h="52" oX="167" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0002" x="167" y="613" w="32" h="51" oX="166" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0003" x="136" y="150" w="33" h="57" oX="161" oY="132" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0004" x="130" y="325" w="33" h="67" oX="160" oY="117" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0005" x="165" y="325" w="33" h="67" oX="160" oY="118" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0006" x="160" y="550" w="32" h="61" oX="160" oY="127" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0007" x="214" y="97" w="32" h="51" oX="160" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0008" x="986" y="1" w="36" h="55" oX="163" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_N___0009" x="263" y="208" w="35" h="55" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0000" x="116" y="617" w="49" h="47" oX="153" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0001" x="553" y="104" w="46" h="44" oX="152" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0002" x="408" y="355" w="47" h="46" oX="151" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0003" x="418" y="779" w="54" h="42" oX="158" oY="137" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0004" x="799" y="1" w="60" h="48" oX="162" oY="129" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0005" x="132" y="450" w="59" h="47" oX="161" oY="130" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0006" x="421" y="495" w="54" h="44" oX="161" oY="136" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0007" x="54" y="851" w="49" h="48" oX="158" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0008" x="477" y="546" w="48" h="47" oX="154" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NE__0009" x="454" y="44" w="48" h="47" oX="153" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0000" x="562" y="50" w="36" h="52" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0001" x="132" y="209" w="40" h="52" oX="163" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0002" x="451" y="93" w="44" h="51" oX="160" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0003" x="167" y="723" w="42" h="55" oX="152" oY="137" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0004" x="171" y="150" w="46" h="57" oX="138" oY="129" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0005" x="115" y="557" w="43" h="58" oX="140" oY="130" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0006" x="219" y="150" w="41" h="57" oX="148" oY="135" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0007" x="255" y="506" w="42" h="53" oX="161" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0008" x="696" y="205" w="38" h="52" oX="164" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_NW__0009" x="768" y="752" w="36" h="53" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0000" x="822" y="203" w="36" h="48" oX="160" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0001" x="842" y="51" w="31" h="52" oX="162" oY="135" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0002" x="736" y="204" w="32" h="53" oX="162" oY="134" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0003" x="248" y="810" w="34" h="38" oX="165" oY="155" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0004" x="358" y="49" w="33" h="45" oX="167" oY="156" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0005" x="463" y="203" w="33" h="43" oX="167" oY="155" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0006" x="841" y="105" w="32" h="41" oX="168" oY="153" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0007" x="704" y="51" w="32" h="38" oX="168" oY="149" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0008" x="737" y="259" w="36" h="47" oX="161" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_S___0009" x="460" y="248" w="34" h="49" oX="161" oY="138" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0000" x="934" y="345" w="36" h="44" oX="159" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0001" x="608" y="196" w="40" h="47" oX="157" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0002" x="457" y="355" w="44" h="46" oX="156" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0003" x="660" y="46" w="42" h="43" oX="166" oY="149" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0004" x="649" y="148" w="45" h="46" oX="176" oY="150" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0005" x="254" y="660" w="43" h="49" oX="177" oY="147" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0006" x="693" y="259" w="42" h="47" oX="171" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0007" x="529" y="767" w="42" h="41" oX="157" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0008" x="767" y="807" w="38" h="41" oX="158" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SE__0009" x="973" y="665" w="36" h="44" oX="159" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0000" x="553" y="150" w="48" h="44" oX="158" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0001" x="692" y="308" w="46" h="45" oX="162" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0002" x="802" y="454" w="46" h="46" oX="163" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0003" x="474" y="454" w="54" h="38" oX="148" oY="151" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0004" x="69" y="480" w="61" h="32" oX="138" oY="157" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0005" x="236" y="471" w="59" h="33" oX="140" oY="156" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0006" x="497" y="141" w="54" h="37" oX="145" oY="152" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0007" x="689" y="495" w="48" h="40" oX="154" oY="149" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0008" x="639" y="429" w="48" h="44" oX="158" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_SW__0009" x="535" y="428" w="49" h="44" oX="158" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0000" x="475" y="595" w="50" h="42" oX="162" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0001" x="689" y="355" w="50" h="42" oX="165" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0002" x="422" y="541" w="53" h="43" oX="164" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0003" x="193" y="506" w="60" h="42" oX="138" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0004" x="384" y="1" w="73" h="41" oX="122" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0005" x="459" y="1" w="71" h="40" oX="124" oY="147" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0006" x="236" y="381" w="61" h="41" oX="133" oY="147" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0007" x="533" y="285" w="51" h="43" oX="154" oY="147" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0008" x="573" y="750" w="50" h="42" oX="163" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Attack 1_W___0009" x="474" y="779" w="51" h="42" oX="162" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Dead_E___0000" x="299" y="585" w="59" h="41" oX="171" oY="158" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Dead_N___0000" x="236" y="47" w="57" h="48" oX="151" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Dead_NE__0000" x="1" y="493" w="65" h="53" oX="166" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Dead_NW__0000" x="79" y="100" w="74" h="48" oX="129" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Dead_S___0000" x="359" y="807" w="57" h="42" oX="152" oY="172" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Dead_SE__0000" x="158" y="50" w="74" h="45" oX="157" oY="171" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Dead_SW__0000" x="1" y="437" w="66" h="54" oX="127" oY="162" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Dead_W___0000" x="360" y="717" w="59" h="43" oX="130" oY="157" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0000" x="586" y="287" w="51" h="43" oX="147" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0001" x="360" y="354" w="46" h="47" oX="144" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0002" x="62" y="557" w="51" h="58" oX="155" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0003" x="1" y="150" w="65" h="57" oX="158" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0004" x="861" y="1" w="61" h="46" oX="164" oY="155" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0005" x="236" y="424" w="59" h="45" oX="166" oY="156" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0006" x="299" y="541" w="60" h="42" oX="172" oY="159" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0007" x="362" y="403" w="60" h="43" oX="172" oY="158" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0008" x="361" y="541" w="59" h="43" oX="173" oY="158" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_E___0009" x="299" y="585" w="59" h="41" oX="171" oY="158" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0000" x="359" y="96" w="36" h="55" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0001" x="60" y="664" w="53" h="54" oX="153" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0002" x="1" y="723" w="57" h="56" oX="155" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0003" x="300" y="198" w="56" h="48" oX="154" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0004" x="60" y="720" w="52" h="55" oX="158" oY="136" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0005" x="115" y="666" w="54" h="52" oX="156" oY="134" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0006" x="194" y="550" w="59" h="45" oX="151" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0007" x="297" y="448" w="59" h="45" oX="151" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0008" x="299" y="495" w="59" h="44" oX="151" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_N___0009" x="236" y="47" w="57" h="48" oX="151" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0000" x="54" y="802" w="49" h="47" oX="154" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0001" x="601" y="91" w="46" h="50" oX="157" oY="147" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0002" x="1" y="781" w="51" h="60" oX="158" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0003" x="69" y="208" w="61" h="52" oX="159" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0004" x="69" y="262" w="59" h="54" oX="163" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0005" x="1" y="548" w="59" h="57" oX="166" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0006" x="1" y="267" w="66" h="55" oX="167" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0007" x="68" y="150" w="66" h="56" oX="167" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0008" x="1" y="209" w="66" h="56" oX="167" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NE__0009" x="1" y="493" w="65" h="53" oX="166" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0000" x="850" y="454" w="35" h="52" oX="166" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0001" x="1" y="843" w="51" h="56" oX="161" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0002" x="1" y="607" w="59" h="55" oX="154" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0003" x="358" y="198" w="51" h="48" oX="154" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0004" x="69" y="427" w="61" h="51" oX="143" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0005" x="532" y="1" w="67" h="47" oX="137" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0006" x="1" y="51" w="77" h="47" oX="127" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0007" x="80" y="51" w="76" h="47" oX="128" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0008" x="158" y="1" w="76" h="47" oX="128" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_NW__0009" x="79" y="100" w="74" h="48" oX="129" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0000" x="860" y="203" w="35" h="48" oX="160" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0001" x="201" y="597" w="53" h="47" oX="154" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0002" x="359" y="762" w="57" h="43" oX="148" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0003" x="132" y="394" w="56" h="54" oX="150" oY="155" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0004" x="105" y="802" w="52" h="46" oX="150" oY="166" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0005" x="419" y="448" w="53" h="45" oX="150" oY="167" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0006" x="393" y="44" w="59" h="47" oX="150" oY="170" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0007" x="360" y="586" w="59" h="42" oX="150" oY="174" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0008" x="299" y="628" w="59" h="42" oX="150" oY="174" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_S___0009" x="359" y="807" w="57" h="42" oX="152" oY="172" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0000" x="915" y="787" w="35" h="44" oX="159" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0001" x="474" y="639" w="51" h="45" oX="148" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0002" x="360" y="495" w="59" h="44" oX="147" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0003" x="114" y="720" w="51" h="55" oX="155" oY="152" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0004" x="295" y="49" w="61" h="45" oX="156" oY="164" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0005" x="601" y="1" w="67" h="43" oX="156" oY="166" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0006" x="1" y="1" w="77" h="48" oX="156" oY="170" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0007" x="80" y="1" w="76" h="48" oX="156" oY="170" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0008" x="1" y="100" w="76" h="48" oX="156" oY="170" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SE__0009" x="158" y="50" w="74" h="45" oX="157" oY="171" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0000" x="577" y="659" w="48" h="44" oX="158" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0001" x="528" y="665" w="46" h="47" oX="158" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0002" x="586" y="429" w="51" h="43" oX="151" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0003" x="299" y="403" w="61" h="43" oX="140" oY="151" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0004" x="360" y="630" w="59" h="40" oX="138" oY="161" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0005" x="299" y="762" w="58" h="44" oX="135" oY="162" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0006" x="1" y="324" w="66" h="55" oX="127" oY="162" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0007" x="1" y="381" w="66" h="54" oX="127" oY="162" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0008" x="1" y="437" w="66" h="54" oX="127" oY="162" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_SW__0009" x="1" y="437" w="66" h="54" oX="127" oY="162" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0000" x="530" y="474" w="51" h="43" oX="162" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0001" x="203" y="850" w="45" h="49" oX="171" oY="138" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0002" x="533" y="238" w="51" h="45" oX="154" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0003" x="670" y="1" w="64" h="42" oX="137" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0004" x="68" y="514" w="62" h="41" oX="135" oY="151" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0005" x="299" y="808" w="58" h="40" oX="135" oY="153" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0006" x="299" y="672" w="59" h="43" oX="128" oY="158" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0007" x="360" y="672" w="59" h="43" oX="128" oY="158" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0008" x="299" y="717" w="59" h="43" oX="128" oY="158" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Death_W___0009" x="360" y="717" w="59" h="43" oX="130" oY="157" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_E___0000" x="583" y="474" w="51" h="43" oX="147" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_E___0001" x="726" y="803" w="39" h="45" oX="151" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_E___0002" x="719" y="94" w="39" h="52" oX="150" oY="137" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_E___0003" x="215" y="268" w="49" h="53" oX="136" oY="136" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_E___0004" x="421" y="586" w="52" h="47" oX="128" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_E___0005" x="473" y="686" w="53" h="45" oX="125" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_E___0006" x="578" y="519" w="51" h="44" oX="125" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_E___0007" x="477" y="409" w="56" h="43" oX="135" oY="148" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_E___0008" x="498" y="180" w="53" h="41" oX="144" oY="147" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_N___0000" x="438" y="823" w="36" h="55" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_N___0001" x="355" y="302" w="51" h="50" oX="165" oY="149" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_N___0002" x="132" y="499" w="59" h="49" oX="158" oY="151" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_N___0003" x="69" y="318" w="59" h="53" oX="153" oY="147" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_N___0004" x="248" y="97" w="50" h="51" oX="155" oY="152" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_N___0005" x="190" y="394" w="44" h="53" oX="159" oY="154" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_N___0006" x="529" y="714" w="42" h="51" oX="161" oY="155" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_N___0007" x="649" y="91" w="34" h="55" oX="167" oY="149" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_N___0008" x="685" y="91" w="32" h="55" oX="168" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NE__0000" x="535" y="330" w="49" h="47" oX="154" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NE__0001" x="250" y="851" w="46" h="48" oX="154" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NE__0002" x="603" y="143" w="44" h="51" oX="157" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NE__0003" x="302" y="248" w="50" h="53" oX="155" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NE__0004" x="740" y="308" w="45" h="45" oX="151" oY="150" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NE__0005" x="254" y="711" w="43" h="46" oX="147" oY="152" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NE__0006" x="256" y="613" w="41" h="45" oX="144" oY="154" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NE__0007" x="211" y="752" w="41" h="48" oX="150" oY="150" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NE__0008" x="527" y="617" w="48" h="46" oX="152" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NW__0000" x="897" y="247" w="35" h="52" oX="166" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NW__0001" x="477" y="494" w="47" h="50" oX="163" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NW__0002" x="306" y="303" w="47" h="53" oX="164" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NW__0003" x="1" y="664" w="57" h="57" oX="166" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NW__0004" x="300" y="96" w="57" h="50" oX="169" oY="150" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NW__0005" x="158" y="97" w="54" h="51" oX="172" oY="151" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NW__0006" x="397" y="93" w="52" h="51" oX="172" oY="151" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NW__0007" x="408" y="299" w="45" h="54" oX="170" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_NW__0008" x="772" y="399" w="38" h="53" oX="167" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_S___0000" x="930" y="399" w="35" h="48" oX="160" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_S___0001" x="421" y="635" w="51" h="48" oX="144" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_S___0002" x="69" y="373" w="59" h="52" oX="143" oY="135" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_S___0003" x="358" y="448" w="59" h="45" oX="148" oY="135" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_S___0004" x="354" y="248" w="50" h="52" oX="155" oY="122" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_S___0005" x="174" y="209" w="44" h="56" oX="157" oY="118" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_S___0006" x="130" y="263" w="42" h="60" oX="157" oY="115" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_S___0007" x="200" y="325" w="34" h="60" oX="159" oY="124" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_S___0008" x="900" y="301" w="32" h="52" oX="160" oY="135" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SE__0000" x="905" y="833" w="35" h="44" oX="159" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SE__0001" x="578" y="614" w="47" h="43" oX="150" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SE__0002" x="578" y="565" w="47" h="47" oX="149" oY="138" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SE__0003" x="300" y="148" w="57" h="48" oX="137" oY="137" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SE__0004" x="601" y="46" w="57" h="43" oX="134" oY="138" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SE__0005" x="473" y="733" w="54" h="44" oX="134" oY="133" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SE__0006" x="406" y="248" w="52" h="49" oX="136" oY="128" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SE__0007" x="298" y="850" w="45" h="49" oX="145" oY="135" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SE__0008" x="933" y="647" w="38" h="45" oX="155" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SW__0000" x="972" y="240" w="48" h="44" oX="158" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SW__0001" x="155" y="850" w="46" h="49" oX="160" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SW__0002" x="208" y="646" w="44" h="53" oX="159" oY="135" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SW__0003" x="637" y="336" w="50" h="44" oX="155" oY="136" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SW__0004" x="476" y="823" w="45" h="52" oX="164" oY="127" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SW__0005" x="411" y="146" w="43" h="55" oX="170" oY="124" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SW__0006" x="220" y="209" w="41" h="57" oX="175" oY="123" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SW__0007" x="193" y="449" w="41" h="55" oX="169" oY="131" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_SW__0008" x="625" y="835" w="48" h="45" oX="160" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_W___0000" x="640" y="247" w="51" h="43" oX="162" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_W___0001" x="787" y="302" w="39" h="51" oX="170" oY="136" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_W___0002" x="174" y="267" w="39" h="56" oX="171" oY="131" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_W___0003" x="105" y="850" w="48" h="49" oX="176" oY="136" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_W___0004" x="586" y="245" w="52" h="40" oX="180" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_W___0005" x="553" y="196" w="53" h="40" oX="182" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_W___0006" x="639" y="292" w="51" h="42" oX="184" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_W___0007" x="504" y="50" w="56" h="43" oX="169" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Got Hit 1_W___0008" x="497" y="95" w="54" h="44" oX="163" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0000" x="573" y="794" w="50" h="43" oX="148" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0001" x="636" y="475" w="51" h="43" oX="147" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0002" x="684" y="537" w="51" h="42" oX="147" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0003" x="680" y="581" w="51" h="42" oX="147" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0004" x="631" y="520" w="51" h="43" oX="147" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0005" x="523" y="856" w="50" h="43" oX="148" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0006" x="627" y="565" w="51" h="43" oX="148" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0007" x="737" y="537" w="50" h="42" oX="149" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0008" x="627" y="743" w="50" h="42" oX="149" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0009" x="576" y="705" w="49" h="43" oX="149" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_E___0010" x="679" y="758" w="50" h="43" oX="148" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0000" x="171" y="666" w="35" h="55" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0001" x="456" y="146" w="35" h="55" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0002" x="696" y="148" w="34" h="55" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0003" x="733" y="581" w="35" h="55" oX="165" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0004" x="733" y="638" w="35" h="55" oX="165" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0005" x="455" y="299" w="34" h="54" oX="165" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0006" x="733" y="695" w="34" h="55" oX="165" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0007" x="491" y="299" w="35" h="54" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0008" x="236" y="323" w="35" h="56" oX="164" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0009" x="262" y="150" w="36" h="56" oX="164" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_N___0010" x="266" y="265" w="34" h="56" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0000" x="535" y="379" w="49" h="47" oX="153" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0001" x="586" y="332" w="49" h="47" oX="153" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0002" x="689" y="399" w="48" h="46" oX="153" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0003" x="689" y="447" w="48" h="46" oX="153" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0004" x="575" y="839" w="48" h="46" oX="153" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0005" x="625" y="787" w="48" h="46" oX="154" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0006" x="586" y="381" w="49" h="46" oX="154" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0007" x="159" y="802" w="50" h="46" oX="154" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0008" x="527" y="519" w="49" h="47" oX="155" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0009" x="421" y="685" w="50" h="48" oX="154" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NE__0010" x="527" y="568" w="49" h="47" oX="154" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0000" x="934" y="237" w="36" h="52" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0001" x="805" y="148" w="36" h="53" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0002" x="934" y="291" w="36" h="52" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0003" x="887" y="449" w="35" h="52" oX="166" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0004" x="924" y="449" w="35" h="52" oX="166" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0005" x="855" y="636" w="35" h="52" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0006" x="807" y="773" w="35" h="52" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0007" x="812" y="399" w="35" h="53" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0008" x="849" y="399" w="35" h="53" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0009" x="843" y="148" w="35" h="53" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_NW__0010" x="897" y="192" w="35" h="53" oX="165" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0000" x="830" y="827" w="36" h="48" oX="160" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0001" x="496" y="248" w="35" h="49" oX="161" oY="138" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0002" x="720" y="850" w="35" h="49" oX="160" oY="138" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0003" x="804" y="96" w="35" h="50" oX="160" oY="137" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0004" x="757" y="850" w="35" h="49" oX="160" oY="138" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0005" x="794" y="850" w="34" h="49" oX="161" oY="138" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0006" x="989" y="568" w="34" h="47" oX="161" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0007" x="989" y="617" w="34" h="46" oX="161" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0008" x="879" y="758" w="34" h="45" oX="161" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0009" x="211" y="802" w="35" h="46" oX="161" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_S___0010" x="859" y="253" w="36" h="47" oX="160" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0000" x="934" y="345" w="36" h="44" oX="159" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0001" x="933" y="694" w="36" h="44" oX="159" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0002" x="971" y="711" w="36" h="45" oX="159" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0003" x="915" y="740" w="35" h="45" oX="159" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0004" x="952" y="758" w="35" h="45" oX="159" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0005" x="868" y="827" w="35" h="46" oX="160" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0006" x="952" y="805" w="35" h="44" oX="160" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0007" x="793" y="355" w="35" h="42" oX="160" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0008" x="942" y="851" w="35" h="42" oX="160" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0009" x="979" y="851" w="35" h="41" oX="160" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SE__0010" x="731" y="758" w="35" h="43" oX="160" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0000" x="972" y="286" w="48" h="44" oX="158" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0001" x="875" y="49" w="49" h="44" oX="158" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0002" x="875" y="95" w="48" h="45" oX="159" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0003" x="972" y="332" w="48" h="44" oX="159" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0004" x="926" y="49" w="49" h="44" oX="158" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0005" x="972" y="378" w="48" h="44" oX="158" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0006" x="802" y="592" w="48" h="44" oX="158" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0007" x="925" y="95" w="49" h="44" oX="157" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0008" x="637" y="382" w="49" h="45" oX="156" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0009" x="675" y="803" w="49" h="45" oX="157" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_SW__0010" x="925" y="141" w="49" h="44" oX="157" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0000" x="738" y="50" w="50" h="42" oX="162" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0001" x="627" y="610" w="51" h="42" oX="162" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0002" x="680" y="625" w="51" h="42" oX="162" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0003" x="627" y="654" w="51" h="42" oX="162" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0004" x="680" y="669" w="51" h="43" oX="162" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0005" x="790" y="51" w="50" h="43" oX="162" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0006" x="627" y="698" w="51" h="43" oX="161" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0007" x="967" y="424" w="50" h="43" oX="161" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0008" x="741" y="355" w="50" h="42" oX="161" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0009" x="830" y="355" w="49" h="42" oX="162" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Idle_W___0010" x="881" y="355" w="50" h="42" oX="162" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_E___0000" x="804" y="638" w="49" h="44" oX="149" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_E___0001" x="961" y="469" w="50" h="43" oX="147" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_E___0002" x="806" y="729" w="49" h="42" oX="147" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_E___0003" x="938" y="559" w="49" h="42" oX="148" oY="146" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_E___0004" x="887" y="503" w="50" h="43" oX="149" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_E___0005" x="939" y="514" w="50" h="43" oX="149" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_N___0000" x="770" y="581" w="30" h="55" oX="163" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_N___0001" x="770" y="638" w="32" h="55" oX="163" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_N___0002" x="769" y="695" w="33" h="55" oX="164" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_N___0003" x="739" y="399" w="31" h="55" oX="167" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_N___0004" x="739" y="456" w="30" h="55" oX="167" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_N___0005" x="771" y="456" w="29" h="55" oX="166" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NE__0000" x="254" y="759" w="43" h="49" oX="158" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NE__0001" x="760" y="96" w="42" h="50" oX="158" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NE__0002" x="650" y="196" w="44" h="49" oX="155" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NE__0003" x="880" y="142" w="43" h="48" oX="155" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NE__0004" x="392" y="851" w="44" h="48" oX="157" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NE__0005" x="886" y="399" w="42" h="48" oX="159" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NW__0000" x="345" y="851" w="45" h="48" oX="163" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NW__0001" x="211" y="701" w="41" h="49" oX="165" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NW__0002" x="934" y="187" w="40" h="48" oX="164" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NW__0003" x="845" y="508" w="39" h="48" oX="164" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NW__0004" x="828" y="302" w="38" h="51" oX="164" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_NW__0005" x="256" y="561" w="41" h="50" oX="164" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_S___0000" x="732" y="148" w="30" h="54" oX="167" oY="137" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_S___0001" x="903" y="592" w="33" h="52" oX="164" oY="135" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_S___0002" x="844" y="773" w="33" h="52" oX="163" oY="134" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_S___0003" x="273" y="323" w="31" h="56" oX="162" oY="134" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_S___0004" x="868" y="302" w="30" h="49" oX="163" oY="137" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_S___0005" x="991" y="514" w="29" h="52" oX="165" oY="137" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SE__0000" x="977" y="58" w="45" h="43" oX="152" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SE__0001" x="802" y="502" w="41" h="43" oX="154" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SE__0002" x="892" y="646" w="39" h="48" oX="156" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SE__0003" x="764" y="148" w="39" h="53" oX="157" oY="139" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SE__0004" x="819" y="253" w="38" h="47" oX="158" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SE__0005" x="802" y="547" w="41" h="43" oX="155" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SW__0000" x="775" y="249" w="42" h="51" oX="160" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SW__0001" x="976" y="103" w="43" h="48" oX="159" oY="140" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SW__0002" x="527" y="810" w="44" h="44" oX="161" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SW__0003" x="976" y="153" w="43" h="43" oX="162" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SW__0004" x="976" y="198" w="44" h="40" oX="159" oY="143" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_SW__0005" x="675" y="850" w="43" h="49" oX="158" oY="141" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_W___0000" x="852" y="592" w="49" h="42" oX="162" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_W___0001" x="886" y="548" w="50" h="42" oX="163" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_W___0002" x="938" y="603" w="49" h="42" oX="164" oY="145" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_W___0003" x="804" y="684" w="49" h="43" oX="163" oY="144" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_W___0004" x="770" y="203" w="50" h="44" oX="161" oY="142" oW="360" oH="360"/>
+    <sprite n="FishmanLP_Walk_W___0005" x="680" y="714" w="51" h="42" oX="161" oY="144" oW="360" oH="360"/>
+</TextureAtlas>

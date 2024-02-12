@@ -205,7 +205,7 @@ namespace Spells {
 
       ///look at target but only once
       if (casting.counter >= casting.castTime) {
-        direction = Movement_Component::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle);
+        direction = Movement_Component::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle, velocity.hexDir);
         ////create cast particle object
         if (spell.casting(zone, state, caster_ID, position, direction, casting, casting.x, casting.y) == 0) {
           zone.remove<Component::Casting>(caster_ID);
@@ -224,7 +224,7 @@ namespace Spells {
 
         ///cast spell
         if (action.frameState == Action_Component::last) {
-          direction = Movement_Component::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle);
+          direction = Movement_Component::Look_At_Target(position.x, position.y, casting.x, casting.y, velocity.angle, velocity.hexDir);
           spell.create(zone, state, caster_ID, position, direction, spell.hit, casting, target.targetX, target.targetY);
           zone.remove<Component::Casting>(caster_ID);
           zone.remove<Spells::Cast_Effect>(caster_ID);

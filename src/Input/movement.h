@@ -83,7 +83,7 @@ namespace Movement {
       auto &direction = view.get<Component::Direction>(entity);
       auto &action = view.get<Action_Component::Action>(entity);
 
-      direction = Movement_Component::Set_Direction(vel.angle);
+      direction = Movement_Component::Set_Direction(vel.angle, vel.hexDir);
 
       if (action.state == Action_Component::walk) {
         if (vel.magnitude.x == 0 && vel.magnitude.y == 0) {

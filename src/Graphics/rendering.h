@@ -430,6 +430,7 @@ namespace Rendering {
         return false;
       }
       RenderLines();
+      Maps::Render_Fog_Of_War(camera);
       //Mouse
       Interface::Foreground(zone, state, camera);
       //on top of mouse

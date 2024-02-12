@@ -17,7 +17,7 @@ namespace Utilities {
     std::cout << string << std::endl;
   }
 
-  SDL_FRect worldToScreen(SDL_FRect &Rect, SDL_FRect &camera) {
+  SDL_FRect worldToScreen(const SDL_FRect &Rect, const SDL_FRect &camera) {
     SDL_FRect screenRect = {};
 
     screenRect.x = Rect.x + camera.x;
@@ -26,7 +26,7 @@ namespace Utilities {
     return screenRect;
   }
 
-  SDL_FRect screenToWorld(SDL_FRect &Rect, SDL_FRect &camera) {
+  SDL_FRect screenToWorld(const SDL_FRect &Rect, const SDL_FRect &camera) {
     SDL_FRect screenRect = {};
 
     screenRect.x = Rect.x - camera.x;
@@ -35,11 +35,11 @@ namespace Utilities {
     return screenRect;
   }
 
-  float Get_Hypotenuse(float &length, float &width) {
+  float Get_Hypotenuse(const float &length, const float &width) {
     return sqrtf((length * length) + (width * width));
   }
 
-  bool bFRect_Intersect(SDL_FRect &entity, SDL_FRect &target) {
+  bool bFRect_Intersect(const SDL_FRect &entity, const SDL_FRect &target) {
     if ((entity.y <= target.y + target.h) &&
         (entity.x <= target.x + target.w) &&
         (entity.y + entity.h >= target.y) &&
@@ -49,7 +49,7 @@ namespace Utilities {
     return false;
   };
 
-  bool bRect_Intersect(SDL_Rect &entity, SDL_Rect &target) {
+  bool bRect_Intersect(const SDL_Rect &entity, const SDL_Rect &target) {
     if ((entity.y <= target.y + target.h) &&
         (entity.x <= target.x + target.w) &&
         (entity.y + entity.h >= target.y) &&
@@ -59,15 +59,15 @@ namespace Utilities {
     return false;
   };
 
-  bool bFPoint_FRectIntersect(SDL_FPoint &p, SDL_FRect &r) {
+  bool bFPoint_FRectIntersect(const SDL_FPoint &p, const SDL_FRect &r) {
     return ((p.x >= r.x) && (p.x < (r.x + r.w)) && (p.y >= r.y) && (p.y < (r.y + r.h))) ? SDL_TRUE : SDL_FALSE;
   };
 
-  bool bPoint_RectIntersect(SDL_FPoint &p, SDL_FRect &r) {
+  bool bPoint_RectIntersect(const SDL_FPoint &p, const SDL_FRect &r) {
     return ((p.x >= r.x) && (p.x < (r.x + r.w)) && (p.y >= r.y) && (p.y < (r.y + r.h))) ? SDL_TRUE : SDL_FALSE;
   };
 
-  SDL_Rect SDL_FRect_To_SDL_Rect(SDL_FRect &a) {
+  SDL_Rect SDL_FRect_To_SDL_Rect(const SDL_FRect &a) {
     SDL_Rect b = {};
     b.x = (int) a.x;
     b.y = (int) a.y;
@@ -76,7 +76,7 @@ namespace Utilities {
     return b;
   }
 
-  SDL_FRect SDL_Rect_To_SDL_FRect(SDL_Rect &a) {
+  SDL_FRect SDL_Rect_To_SDL_FRect(const SDL_Rect &a) {
     SDL_FRect b = {};
     b.x = (float) a.x;
     b.y = (float) a.y;
@@ -85,14 +85,14 @@ namespace Utilities {
     return b;
   }
 
-  SDL_Point SDL_FPoint_to_Point(SDL_FPoint &a) {
+  SDL_Point SDL_FPoint_to_Point(const SDL_FPoint &a) {
     SDL_Point b = {};
     b.x = (int) a.x;
     b.y = (int) a.y;
     return b;
   }
 
-  SDL_FPoint SDL_FPoint_to_Point(SDL_Point &a) {
+  SDL_FPoint SDL_FPoint_to_Point(const SDL_Point &a) {
     SDL_FPoint b = {};
     b.x = (float) a.x;
     b.y = (float) a.y;
@@ -100,14 +100,14 @@ namespace Utilities {
   }
 
 
-  float Get_Direction_Point(float &sourceX, float &sourceY, float &targetX, float &targetY) {
+  float Get_Direction_Point(const float &sourceX, const float &sourceY, const float &targetX, const float &targetY) {
     float a = targetX - sourceX;
     float b = targetY - sourceY;
 
     return atan2f(a, b);
   }
 
-  SDL_FRect Get_FRect_From_Point_Radius(float &radius, float &x, float &y) {
+  SDL_FRect Get_FRect_From_Point_Radius(const float &radius, const float &x, const float &y) {
     float rectX = x - radius;
     float rectY = y - radius;
     float width = radius * 2.0f;
@@ -117,7 +117,7 @@ namespace Utilities {
     return rect;
   }
 
-  SDL_FRect Centre_Rect_On_Position(SDL_FRect &frect, float &x, float &y) {
+  SDL_FRect Centre_Rect_On_Position(const SDL_FRect &frect, const float &x, const float &y) {
     SDL_FRect rect;
     rect.x = x - (frect.w / 2.0f);
     rect.y = y - (frect.h / 2.0f);
@@ -127,7 +127,7 @@ namespace Utilities {
     return rect;
   }
 
-  SDL_Point Check_Collision_Rects(SDL_Rect &rect1, SDL_Rect &rect2) {
+  SDL_Point Check_Collision_Rects(const SDL_Rect &rect1, const SDL_Rect &rect2) {
 
     if (Utilities::bRect_Intersect(rect1, rect2)) {
       SDL_Point returnRect = {};
@@ -166,7 +166,7 @@ namespace Utilities {
   }
 
 
-  SDL_FRect Scale_Rect(SDL_Rect &clippedSprite, float &scale) {
+  SDL_FRect Scale_Rect(const SDL_Rect &clippedSprite, const float &scale) {
     SDL_FRect fScaledImage = SDL_Rect_To_SDL_FRect(clippedSprite);
     fScaledImage = {
         fScaledImage.x - (fScaledImage.w * scale),
@@ -176,7 +176,7 @@ namespace Utilities {
     return fScaledImage;
   }
 
-  int Get_Random_Number(int min, int max) {
+  int Get_Random_Number(const int min, const int max) {
     if (min == 0) {
       std::cout << "function Utilities::Get_Random_Number() min range 0, divide by zero error" << std::endl;
       //			return 0;

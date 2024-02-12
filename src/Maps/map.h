@@ -126,9 +126,9 @@ namespace Maps {
     //        farm
   }
 
-  void Get_Coords(int x, int &w) {
-    x -= World::size.width;
-    w = x / World::size.width;
+  void Get_Coords(int cameraPosition, int &gridIndex) {
+    cameraPosition -= World::size.width;
+    gridIndex = cameraPosition / World::size.width;
   }
 
   void Get_Size() {
@@ -318,12 +318,50 @@ namespace Maps {
               tilesEntities[0][i][j].created = true;
             }
 
+            // fog needs to be rendered over the tile
+
+            //an area around the player will trigger the fog to not render
+
             SDL_FRect renderRect;
-            renderRect.x = i * World::size.width - camera.screen.x;
-            renderRect.y = j * World::size.height - camera.screen.y;
-            renderRect.w = World::size.width;
-            renderRect.h = World::size.height;
+            renderRect.x = (float) i * World::size.width - camera.screen.x;
+            renderRect.y = (float) j * World::size.height - camera.screen.y;
+            renderRect.w = (float) World::size.width;
+            renderRect.h = (float) World::size.height;
             SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &renderRect);
+
+            //            SDL_RenderCopyF(Graphics::renderer, Graphics::fog, nullptr, &renderRect);
+          }
+        }
+      }
+    }
+  }
+
+  void Render_Fog_Of_War(Component::Camera &camera) {
+    int x = 0;
+    int y = 0;
+
+    Get_Coords((int) camera.screen.x, x);
+    Get_Coords((int) camera.screen.y, y);
+
+    for (int i = x; i < (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
+      for (int j = y; j < (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
+        if (i < 0 || j < 0) {
+          continue;
+        } else {
+          if (i > REGION_SIZE || j > REGION_SIZE) {
+            continue;
+          } else {
+            // fog needs to be rendered over the tile
+
+            //an area around the player will trigger the fog to not render
+
+            SDL_FRect renderRect;
+            renderRect.x = (float) i * World::size.width - camera.screen.x;
+            renderRect.y = (float) j * World::size.height - camera.screen.y;
+            renderRect.w = (float) World::size.width;
+            renderRect.h = (float) World::size.height;
+
+            //            SDL_RenderCopyF(Graphics::renderer, Graphics::fog, nullptr, &renderRect);
           }
         }
       }

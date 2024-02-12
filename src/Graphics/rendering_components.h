@@ -6,10 +6,6 @@
 
 namespace Rendering_Components {
 
-  struct Building {
-    int frameIndex;
-  };
-
   struct Background {
   };
 
@@ -46,29 +42,30 @@ namespace Rendering_Components {
   };
 
   struct Portrait {
-    SDL_Texture *texture = NULL;
+    SDL_Texture *texture = nullptr;
     SDL_Color color = {255, 255, 255};
   };
 
   struct Body {
-    SDL_Texture *texture = NULL;
+    SDL_Texture *texture = nullptr;
     SDL_Color color = {255, 255, 255};
   };
 
   struct Unit_Frame_Portrait {
-    SDL_Texture *texture = NULL;
+    SDL_Texture *texture = nullptr;
     std::unordered_map<int, Portrait> gear;
   };
 
   struct Body_Frame {
-    SDL_Texture *texture = NULL;
+    SDL_Texture *texture = nullptr;
     std::unordered_map<int, Portrait> gear;
   };
 
   /// one per item, but they can point to the same texture
 
   struct Sheet_Data {
-    SDL_Texture *texture = NULL;
+    SDL_Texture *texture = nullptr;
+    ///data for each frame in the sprite sheet
     std::vector<Sprite_Sheet_Data> frameList;
     /// start frame by state, number of frames per state.
     std::unordered_map<uint8_t, Frame_Data_Packer> actionFrameData;
@@ -77,13 +74,13 @@ namespace Rendering_Components {
   };
 
   struct Image_Data {
-    SDL_Texture *texture = NULL;
-    int w;
-    int h;
+    SDL_Texture *texture = nullptr;
+    int w = 0;
+    int h = 0;
   };
 
   struct Sheet_Data_Flare {
-    SDL_Texture *texture = NULL;//texture
+    SDL_Texture *texture = nullptr;//texture
     SDL_Color color = {255, 255, 255};
     int sheetWidth = 0;
     int spriteWidth = 0;
@@ -98,12 +95,12 @@ namespace Rendering_Components {
   };
 
   struct Mount_Sprite {
-    std::unordered_map<std::string, Sheet_Data> *mount = NULL;
+    std::unordered_map<std::string, Sheet_Data> *mount = nullptr;
     std::string front_name = "default";
   };
 
   struct Buff_Sprite_Data {
-    std::unordered_map<std::string, Sheet_Data> *ItemSheetData = NULL;
+    std::unordered_map<std::string, Sheet_Data> *ItemSheetData = nullptr;
     //name is the index into the map that stores the data
     std::string name = "empty";
     SDL_Color color = {255, 255, 255};
@@ -119,7 +116,7 @@ namespace Rendering_Components {
   };
 
   struct Equip_Slot_Data {
-    std::unordered_map<std::string, Sheet_Data> *ItemSheetData = NULL;
+    std::unordered_map<std::string, Sheet_Data> *ItemSheetData = nullptr;
     //name is the index into the map that stores the data
     std::string name = "empty";
     SDL_Color color = {255, 255, 255};
@@ -150,14 +147,14 @@ namespace Rendering_Components {
 
     //        a union can how different types of data in the same memory address
     //        union {
-    std::unordered_map<std::string, Sheet_Data_Flare> *flareSpritesheet = NULL;
-    std::unordered_map<std::string, Sheet_Data> *sheetData = NULL;
-    std::unordered_map<std::string, Image_Data> *imageData = NULL;
+    std::unordered_map<std::string, Sheet_Data_Flare> *flareSpritesheet = nullptr;
+    std::unordered_map<std::string, Sheet_Data> *sheetData = nullptr;
+    std::unordered_map<std::string, Image_Data> *imageData = nullptr;
     //        };
 
     std::string sheet_name = "default";
 
-    std::unordered_map<std::string, Sheet_Data> *mount = NULL;
+    std::unordered_map<std::string, Sheet_Data> *mount = nullptr;
     std::string mount_name = "unmounted";
     SDL_Color color = {200, 200, 200};
     //        Equip_Slot_Data equipmentSheets[30];
@@ -166,6 +163,8 @@ namespace Rendering_Components {
     uint8_t reversing = 0;
     Blend_Type blendType = normal;
     bool interior = false;
+    bool unity = false;
+    bool hexDir = false;
   };
 
   struct Interior_Sheet_Info {
@@ -178,7 +177,7 @@ namespace Rendering_Components {
   };
 
   struct Metamorphosis {
-    std::unordered_map<std::string, Sheet_Data> *sheetData = NULL;
+    std::unordered_map<std::string, Sheet_Data> *sheetData = nullptr;
     std::string sheet_name = "default";
     Equipment_Sprites equipment;
     Sprite_Offset offsets = {0.0f, 0.0f};

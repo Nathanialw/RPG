@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:9355cb82f4828dac3032be2e21038e8b:777a08060b3e2fa1921cc81233873aab:7d0a5c201198ef2ba8928d242daea1b9$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Dragon.png" width="16239" height="15873">
+    <sprite n="Dragon_Attack 1_E___0000" x="887" y="395" w="930" h="404" oX="112" oY="325" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_E___0001" x="3683" y="399" w="859" h="406" oX="123" oY="324" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_E___0002" x="10866" y="402" w="967" h="420" oX="161" oY="309" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_E___0003" x="6922" y="2620" w="934" h="474" oX="145" oY="254" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_E___0004" x="14941" y="1" w="936" h="402" oX="91" oY="325" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_E___0005" x="6505" y="1" w="943" h="398" oX="86" oY="330" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_E___0006" x="1819" y="395" w="930" h="404" oX="112" oY="325" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_E___0007" x="2751" y="398" w="930" h="404" oX="112" oY="325" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_E___0008" x="2751" y="398" w="930" h="404" oX="112" oY="325" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_E___0009" x="2751" y="398" w="930" h="404" oX="112" oY="325" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0000" x="13932" y="5769" w="821" h="561" oX="187" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0001" x="7759" y="3099" w="752" h="491" oX="187" oY="309" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0002" x="4212" y="3080" w="859" h="485" oX="224" oY="334" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0003" x="1" y="782" w="845" h="430" oX="204" oY="307" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0004" x="13576" y="404" w="865" h="427" oX="155" oY="362" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0005" x="13696" y="3637" w="855" h="505" oX="150" oY="328" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0006" x="14755" y="5782" w="821" h="561" oX="187" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0007" x="675" y="6183" w="821" h="561" oX="187" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0008" x="675" y="6183" w="821" h="561" oX="187" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ENE_0009" x="675" y="6183" w="821" h="561" oX="187" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0000" x="3319" y="2600" w="902" h="471" oX="124" oY="289" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0001" x="3706" y="4580" w="848" h="524" oX="133" oY="237" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0002" x="13979" y="4148" w="932" h="521" oX="177" oY="240" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0003" x="10095" y="8658" w="897" h="617" oX="163" oY="189" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0004" x="8513" y="3101" w="912" h="492" oX="115" oY="266" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0005" x="2371" y="3069" w="901" h="484" oX="113" oY="275" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0006" x="4223" y="2606" w="902" h="472" oX="124" oY="289" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0007" x="5127" y="2608" w="902" h="472" oX="124" oY="289" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0008" x="5127" y="2608" w="902" h="472" oX="124" oY="289" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_ESE_0009" x="5127" y="2608" w="902" h="472" oX="124" oY="289" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0000" x="7133" y="14877" w="442" h="817" oX="462" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0001" x="743" y="11045" w="452" h="687" oX="405" oY="290" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0002" x="12280" y="12675" w="463" h="734" oX="415" oY="263" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0003" x="3320" y="8538" w="494" h="624" oX="433" oY="271" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0004" x="14584" y="12725" w="492" h="735" oX="445" oY="265" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0005" x="1335" y="14727" w="459" h="807" oX="457" oY="243" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0006" x="7577" y="14886" w="442" h="817" oX="462" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0007" x="8021" y="14886" w="442" h="817" oX="462" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0008" x="8021" y="14886" w="442" h="817" oX="462" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_N___0009" x="8021" y="14886" w="442" h="817" oX="462" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0000" x="10964" y="12665" w="656" h="721" oX="275" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0001" x="1" y="9115" w="665" h="622" oX="223" oY="286" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0002" x="4906" y="9824" w="703" h="645" oX="277" oY="279" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0003" x="12987" y="2650" w="731" h="480" oX="277" oY="341" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0004" x="11488" y="6878" w="727" h="582" oX="246" oY="329" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0005" x="1197" y="11060" w="668" h="683" oX="266" oY="273" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0006" x="11622" y="12675" w="656" h="721" oX="275" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0007" x="13277" y="12712" w="656" h="721" oX="275" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0008" x="13277" y="12712" w="656" h="721" oX="275" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NE__0009" x="13277" y="12712" w="656" h="721" oX="275" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0000" x="4315" y="14791" w="476" h="811" oX="391" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0001" x="15665" y="10641" w="539" h="685" oX="317" oY="285" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0002" x="12745" y="12697" w="530" h="724" oX="357" oY="262" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0003" x="3497" y="7348" w="566" h="588" oX="360" oY="298" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0004" x="15626" y="11328" w="536" h="698" oX="363" oY="285" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0005" x="3095" y="13982" w="492" h="783" oX="383" oY="247" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0006" x="4793" y="14819" w="476" h="811" oX="391" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0007" x="5271" y="14821" w="476" h="811" oX="391" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0008" x="5271" y="14821" w="476" h="811" oX="391" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNE_0009" x="5271" y="14821" w="476" h="811" oX="391" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0000" x="9417" y="13362" w="497" h="765" oX="492" oY="215" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0001" x="7574" y="8602" w="530" h="627" oX="455" oY="305" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0002" x="1" y="10384" w="542" h="655" oX="403" oY="300" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0003" x="10567" y="6297" w="521" h="570" oX="454" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0004" x="8957" y="10535" w="533" h="677" oX="489" oY="280" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0005" x="3920" y="13228" w="524" h="754" oX="490" oY="254" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0006" x="9916" y="13375" w="497" h="765" oX="492" oY="215" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0007" x="10415" y="13375" w="497" h="765" oX="492" oY="215" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0008" x="10415" y="13375" w="497" h="765" oX="492" oY="215" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NNW_0009" x="10415" y="13375" w="497" h="765" oX="492" oY="215" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0000" x="9559" y="9277" w="740" h="634" oX="406" oY="247" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0001" x="14073" y="3137" w="716" h="498" oX="425" oY="339" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0002" x="7524" y="5698" w="771" h="557" oX="326" oY="313" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0003" x="7839" y="822" w="726" h="434" oX="383" oY="334" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0004" x="13447" y="4671" w="746" h="536" oX="395" oY="325" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0005" x="10994" y="8661" w="728" h="617" oX="413" oY="296" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0006" x="10301" y="9280" w="740" h="634" oX="406" oY="247" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0007" x="11658" y="9290" w="740" h="634" oX="406" oY="247" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0008" x="11658" y="9290" w="740" h="634" oX="406" oY="247" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_NW__0009" x="11658" y="9290" w="740" h="634" oX="406" oY="247" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0000" x="5193" y="7964" w="442" h="599" oX="464" oY="188" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0001" x="9640" y="8634" w="453" h="635" oX="510" oY="145" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0002" x="15774" y="12842" w="463" h="757" oX="490" oY="145" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0003" x="4446" y="13246" w="494" h="757" oX="441" oY="123" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0004" x="4162" y="11121" w="492" h="687" oX="431" oY="153" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0005" x="12868" y="11292" w="459" h="693" oX="452" oY="129" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0006" x="6343" y="7991" w="442" h="600" oX="464" oY="188" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0007" x="6787" y="7998" w="442" h="600" oX="464" oY="188" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0008" x="6787" y="7998" w="442" h="600" oX="464" oY="188" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_S___0009" x="6787" y="7998" w="442" h="600" oX="464" oY="188" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0000" x="2763" y="5099" w="740" h="539" oX="222" oY="241" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0001" x="8106" y="8628" w="716" h="615" oX="227" oY="167" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0002" x="15155" y="8723" w="772" h="621" oX="270" oY="178" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0003" x="1" y="13150" w="725" h="726" oX="260" oY="132" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0004" x="668" y="9124" w="747" h="621" oX="226" oY="195" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0005" x="654" y="6746" w="728" h="573" oX="227" oY="206" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0006" x="3505" y="5106" w="740" h="539" oX="222" oY="241" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0007" x="4247" y="5110" w="740" h="539" oX="222" oY="241" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0008" x="4247" y="5110" w="740" h="539" oX="222" oY="241" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SE__0009" x="4247" y="5110" w="740" h="539" oX="222" oY="241" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0000" x="10187" y="7452" w="497" h="592" oX="379" oY="192" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0001" x="5611" y="9841" w="530" h="646" oX="383" oY="142" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0002" x="5019" y="12552" w="541" h="716" oX="424" oY="155" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0003" x="14426" y="13462" w="521" h="772" oX="393" oY="114" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0004" x="8824" y="11214" w="533" h="691" oX="346" oY="153" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0005" x="12392" y="9937" w="524" h="653" oX="354" oY="150" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0006" x="10686" y="7458" w="497" h="592" oX="379" oY="192" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0007" x="12031" y="7466" w="497" h="592" oX="379" oY="192" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0008" x="12031" y="7466" w="497" h="592" oX="379" oY="192" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSE_0009" x="12031" y="7466" w="497" h="592" oX="379" oY="192" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0000" x="11977" y="8060" w="476" h="608" oX="501" oY="195" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0001" x="7657" y="9878" w="539" h="648" oX="512" oY="147" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0002" x="6356" y="13300" w="530" h="762" oX="481" oY="132" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0003" x="4451" y="12529" w="566" h="715" oX="442" oY="136" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0004" x="8966" y="9884" w="536" h="649" oX="469" oY="161" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0005" x="10893" y="11255" w="492" h="692" oX="493" oY="113" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0006" x="14030" y="8100" w="476" h="609" oX="501" oY="195" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0007" x="1414" y="8513" w="476" h="609" oX="501" oY="195" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0008" x="1414" y="8513" w="476" h="609" oX="501" oY="195" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SSW_0009" x="1414" y="8513" w="476" h="609" oX="501" oY="195" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0000" x="11582" y="6304" w="656" h="572" oX="437" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0001" x="4580" y="8565" w="665" h="609" oX="480" oY="191" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0002" x="14921" y="11322" w="703" h="692" oX="388" oY="155" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0003" x="1417" y="9134" w="731" h="623" oX="360" oY="181" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0004" x="1" y="8505" w="727" h="608" oX="395" oY="191" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0005" x="12918" y="9954" w="668" h="653" oX="434" oY="149" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0006" x="14673" y="6345" w="656" h="572" oX="437" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0007" x="15331" y="6358" w="656" h="572" oX="437" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0008" x="15331" y="6358" w="656" h="572" oX="437" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_SW__0009" x="15331" y="6358" w="656" h="572" oX="437" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0000" x="3453" y="1243" w="931" h="438" oX="325" oY="326" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0001" x="7193" y="1258" w="859" h="439" oX="386" oY="319" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0002" x="7691" y="3595" w="967" h="500" oX="240" oY="263" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0003" x="15119" y="836" w="935" h="437" oX="288" oY="321" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0004" x="713" y="1233" w="936" h="437" oX="341" oY="319" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0005" x="8718" y="2621" w="943" h="478" oX="339" oY="282" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0006" x="4386" y="1244" w="931" h="438" oX="325" oY="326" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0007" x="5319" y="1249" w="931" h="438" oX="325" oY="326" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0008" x="5319" y="1249" w="931" h="438" oX="325" oY="326" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_W___0009" x="5319" y="1249" w="931" h="438" oX="325" oY="326" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0000" x="11758" y="1266" w="901" h="444" oX="342" oY="302" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0001" x="11835" y="404" w="848" h="421" oX="387" oY="352" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0002" x="2504" y="1676" w="932" h="449" oX="259" oY="299" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0003" x="1" y="1" w="898" h="372" oX="307" oY="370" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0004" x="901" y="1" w="912" h="391" oX="341" oY="352" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0005" x="6835" y="1699" w="901" h="452" oX="354" oY="324" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0006" x="12661" y="1270" w="901" h="444" oX="342" oY="302" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0007" x="13564" y="1273" w="901" h="444" oX="342" oY="302" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0008" x="13564" y="1273" w="901" h="444" oX="342" oY="302" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WNW_0009" x="13564" y="1273" w="901" h="444" oX="342" oY="302" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0000" x="1605" y="4055" w="821" h="510" oX="360" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0001" x="696" y="4554" w="752" h="522" oX="429" oY="265" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0002" x="440" y="7321" w="860" h="585" oX="285" oY="209" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0003" x="6722" y="5140" w="845" h="543" oX="319" oY="246" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0004" x="5259" y="4596" w="865" h="526" oX="348" oY="260" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0005" x="6345" y="6243" w="856" h="568" oX="363" oY="221" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0006" x="2428" y="4060" w="821" h="510" oX="360" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0007" x="3251" y="4062" w="821" h="510" oX="360" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0008" x="3251" y="4062" w="821" h="510" oX="360" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Attack 1_WSW_0009" x="3251" y="4062" w="821" h="510" oX="360" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_E___0000" x="14913" y="4164" w="790" h="521" oX="211" oY="546" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_ENE_0000" x="13233" y="8085" w="795" h="606" oX="317" oY="550" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_ESE_0000" x="14791" y="3141" w="805" h="498" oX="51" oY="504" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_N___0000" x="15267" y="8114" w="686" h="607" oX="534" oY="415" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_NE__0000" x="14268" y="10638" w="697" h="679" oX="468" oY="503" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_NNE_0000" x="12262" y="10592" w="639" h="681" oX="507" oY="456" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_NNW_0000" x="9810" y="5721" w="771" h="558" oX="573" oY="366" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_NW__0000" x="6533" y="4088" w="777" h="511" oX="591" oY="322" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_S___0000" x="2150" y="9135" w="686" h="627" oX="148" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_SE__0000" x="13441" y="7490" w="777" h="593" oX="0" oY="422" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_SSE_0000" x="6624" y="9215" w="771" h="633" oX="24" oY="348" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_SSW_0000" x="7203" y="6257" w="639" h="568" oX="222" oY="239" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_SW__0000" x="14195" y="4671" w="697" h="539" oX="203" oY="192" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_W___0000" x="861" y="3060" w="791" h="482" oX="367" oY="303" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_WNW_0000" x="2511" y="2595" w="806" h="472" oX="512" oY="328" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Dead_WSW_0000" x="14894" y="4687" w="795" h="537" oX="256" oY="219" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0000" x="12140" y="1" w="932" h="401" oX="111" oY="328" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0001" x="4544" y="400" w="928" h="407" oX="112" oY="320" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0002" x="5083" y="1689" w="839" h="451" oX="174" oY="282" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0003" x="3460" y="807" w="843" h="432" oX="147" oY="327" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0004" x="9197" y="5166" w="818" h="544" oX="152" oY="322" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0005" x="7830" y="14096" w="737" h="788" oX="195" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0006" x="5562" y="12558" w="795" h="716" oX="147" oY="209" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0007" x="5828" y="5130" w="892" h="541" oX="114" oY="419" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0008" x="8824" y="8628" w="814" h="616" oX="190" oY="457" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_E___0009" x="14913" y="4164" w="790" h="521" oX="211" oY="546" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0000" x="2434" y="5640" w="826" h="553" oX="181" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0001" x="6403" y="401" w="936" h="412" oX="82" oY="367" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0002" x="7738" y="1701" w="835" h="452" oX="193" oY="377" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0003" x="8660" y="3602" w="822" h="502" oX="143" oY="341" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0004" x="13161" y="8693" w="720" h="619" oX="206" oY="365" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0005" x="15078" y="12739" w="694" h="732" oX="221" oY="303" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0006" x="9605" y="12642" w="707" h="718" oX="281" oY="311" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0007" x="6577" y="5685" w="945" h="556" oX="150" oY="512" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0008" x="15369" y="9346" w="830" h="638" oX="283" oY="528" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ENE_0009" x="13233" y="8085" w="795" h="606" oX="317" oY="550" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0000" x="14131" y="2184" w="899" h="468" oX="127" oY="292" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0001" x="10992" y="3120" w="849" h="493" oX="158" oY="257" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0002" x="10017" y="5175" w="817" h="544" oX="132" oY="211" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0003" x="7569" y="5153" w="819" h="543" oX="151" oY="236" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0004" x="7844" y="6261" w="909" h="568" oX="65" oY="227" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0005" x="15422" y="14378" w="798" h="806" oX="130" oY="106" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0006" x="9987" y="11936" w="790" h="704" oX="75" oY="111" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0007" x="11387" y="11269" w="860" h="688" oX="10" oY="295" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0008" x="8922" y="7434" w="825" h="589" oX="35" oY="408" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_ESE_0009" x="14791" y="3141" w="805" h="498" oX="51" oY="504" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0000" x="9343" y="14924" w="442" h="819" oX="465" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0001" x="11936" y="9926" w="454" h="663" oX="455" oY="307" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0002" x="9504" y="9913" w="617" h="649" oX="350" oY="264" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0003" x="12758" y="11987" w="526" h="708" oX="512" oY="270" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0004" x="10779" y="11949" w="572" h="704" oX="522" oY="288" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0005" x="1245" y="10402" w="642" h="656" oX="518" oY="246" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0006" x="8336" y="11202" w="486" h="689" oX="582" oY="304" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0007" x="4326" y="9805" w="578" h="644" oX="638" oY="397" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0008" x="12455" y="8073" w="776" h="603" oX="475" oY="412" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_N___0009" x="15267" y="8114" w="686" h="607" oX="534" oY="415" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0000" x="6359" y="12582" w="651" h="716" oX="279" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0001" x="8390" y="5157" w="805" h="543" oX="143" oY="336" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0002" x="12240" y="6310" w="786" h="570" oX="206" oY="341" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0003" x="4065" y="7367" w="728" h="588" oX="215" oY="306" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0004" x="1898" y="12486" w="646" h="714" oX="289" oY="334" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0005" x="13286" y="12003" w="667" h="707" oX="272" oY="311" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0006" x="2790" y="11790" w="690" h="699" oX="337" oY="379" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0007" x="3849" y="7957" w="871" h="598" oX="265" oY="508" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0008" x="6104" y="11167" w="791" h="685" oX="372" oY="505" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NE__0009" x="14268" y="10638" w="697" h="679" oX="468" oY="503" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0000" x="2887" y="14767" w="474" h="809" oX="394" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0001" x="13883" y="8711" w="586" h="625" oX="286" oY="307" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0002" x="13142" y="9314" w="680" h="638" oX="248" oY="300" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0003" x="11043" y="9280" w="613" h="638" oX="357" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0004" x="2817" y="13207" w="573" h="747" oX="422" oY="306" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0005" x="10931" y="10580" w="655" h="673" oX="384" oY="278" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0006" x="2546" y="12491" w="574" h="714" oX="441" oY="350" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0007" x="4509" y="9176" w="684" h="627" oX="439" oY="461" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0008" x="1" y="11045" w="740" h="680" oX="402" oY="455" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNE_0009" x="12262" y="10592" w="639" h="681" oX="507" oY="456" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0000" x="12447" y="13423" w="500" h="769" oX="493" oY="216" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0001" x="8452" y="10528" w="503" h="672" oX="504" oY="313" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0002" x="11389" y="8054" w="586" h="605" oX="500" oY="251" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0003" x="3122" y="12491" w="610" h="714" oX="548" oY="265" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0004" x="12217" y="6882" w="719" h="582" oX="493" oY="297" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0005" x="5343" y="6794" w="663" h="576" oX="544" oY="233" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0006" x="8563" y="8025" w="605" h="601" oX="607" oY="274" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0007" x="1867" y="11069" w="703" h="685" oX="664" oY="334" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0008" x="10836" y="5187" w="789" h="545" oX="579" oY="361" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NNW_0009" x="9810" y="5721" w="771" h="558" oX="573" oY="366" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0000" x="649" y="9747" w="735" h="641" oX="405" oY="248" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0001" x="5637" y="7981" w="704" h="598" oX="433" oY="341" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0002" x="730" y="8513" w="682" h="608" oX="516" oY="265" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0003" x="2821" y="9790" w="766" h="642" oX="462" oY="281" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0004" x="14443" y="405" w="871" h="429" oX="425" oY="330" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0005" x="4074" y="4068" w="743" h="510" oX="476" oY="244" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0006" x="1" y="4039" w="708" h="509" oX="567" oY="249" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0007" x="14597" y="9346" w="770" h="635" oX="598" oY="307" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0008" x="11627" y="5194" w="778" h="545" oX="590" oY="320" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_NW__0009" x="6533" y="4088" w="777" h="511" oX="591" oY="322" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0000" x="7231" y="8000" w="442" h="600" oX="461" oY="188" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0001" x="1" y="12421" w="453" h="710" oX="460" oY="128" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0002" x="12249" y="11275" w="617" h="692" oX="401" oY="77" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0003" x="8038" y="11893" w="526" h="703" oX="330" oY="63" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0004" x="13955" y="12011" w="572" h="707" oX="274" oY="64" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0005" x="6888" y="13304" w="642" h="762" oX="208" oY="5" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0006" x="11464" y="13398" w="486" h="766" oX="300" oY="4" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0007" x="1796" y="14733" w="578" h="806" oX="152" oY="68" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0008" x="7558" y="11195" w="776" h="685" oX="117" oY="224" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_S___0009" x="2150" y="9135" w="686" h="627" oX="148" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0000" x="1" y="5078" w="735" h="537" oX="228" oY="243" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0001" x="5247" y="8581" w="704" h="611" oX="231" oY="168" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0002" x="14471" y="8722" w="682" h="619" oX="170" oY="155" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0003" x="8198" y="9878" w="766" h="648" oX="140" oY="139" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0004" x="9492" y="10569" w="871" h="667" oX="72" oY="131" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0005" x="1850" y="13951" w="742" h="780" oX="149" oY="27" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0006" x="4131" y="14005" w="707" h="784" oX="94" oY="37" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0007" x="8569" y="14117" w="770" h="788" oX="0" oY="182" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0008" x="3730" y="9167" w="777" h="626" oX="0" oY="386" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SE__0009" x="13441" y="7490" w="777" h="593" oX="0" oY="422" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0000" x="4795" y="7367" w="500" h="590" oX="375" oY="194" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0001" x="4027" y="11810" w="503" h="700" oX="361" oY="124" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0002" x="5516" y="11161" w="586" h="687" oX="282" oY="92" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0003" x="15179" y="12028" w="610" h="709" oX="210" oY="75" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0004" x="8231" y="12612" w="719" h="717" oX="156" oY="72" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0005" x="12613" y="14206" w="663" h="797" oX="161" oY="0" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0006" x="14815" y="14250" w="605" h="805" oX="156" oY="0" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0007" x="13882" y="15042" w="703" h="830" oX="1" oY="102" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0008" x="703" y="11745" w="789" h="691" oX="0" oY="287" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSE_0009" x="6624" y="9215" w="771" h="633" oX="24" oY="348" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0000" x="1892" y="8523" w="474" h="609" oX="500" oY="194" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0001" x="8971" y="9246" w="586" h="636" oX="496" oY="181" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0002" x="5195" y="9194" w="680" h="628" oX="440" oY="118" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0003" x="7397" y="9231" w="613" h="633" oX="398" oY="104" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0004" x="5556" y="10489" w="573" h="670" oX="373" oY="109" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0005" x="12903" y="10609" w="656" h="681" oX="328" oY="66" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0006" x="2213" y="11786" w="575" h="698" oX="352" oY="53" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0007" x="11353" y="11959" w="684" h="704" oX="244" oY="83" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0008" x="439" y="7908" w="739" h="595" oX="226" oY="211" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SSW_0009" x="7203" y="6257" w="639" h="568" oX="222" oY="239" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0000" x="1" y="6736" w="651" h="574" oX="438" oY="233" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0001" x="1" y="5623" w="805" h="548" oX="420" oY="225" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0002" x="14891" y="5226" w="785" h="554" oX="376" oY="172" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0003" x="5953" y="8593" w="728" h="612" oX="425" oY="121" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0004" x="1" y="9739" w="646" h="643" oX="433" oY="114" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0005" x="12938" y="6893" w="667" h="583" oX="429" oY="156" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0006" x="14710" y="7518" w="691" h="594" oX="341" oY="134" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0007" x="13588" y="9979" w="871" h="653" oX="232" oY="66" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0008" x="13028" y="6320" w="792" h="571" oX="204" oY="159" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_SW__0009" x="14195" y="4671" w="697" h="539" oX="203" oY="192" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0000" x="8054" y="1259" w="932" h="440" oX="325" oY="324" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0001" x="5474" y="400" w="927" h="408" oX="329" oY="326" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0002" x="11843" y="3127" w="840" h="494" oX="355" oY="270" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0003" x="9427" y="3108" w="843" h="492" oX="379" oY="226" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0004" x="1" y="3538" w="818" h="499" oX="398" oY="220" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0005" x="14701" y="1722" w="737" h="460" oX="436" oY="260" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0006" x="12202" y="1716" w="795" h="454" oX="426" oY="263" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0007" x="711" y="4046" w="892" h="506" oX="362" oY="203" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0008" x="10346" y="3615" w="814" h="503" oX="364" oY="267" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_W___0009" x="861" y="3060" w="791" h="482" oX="367" oY="303" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0000" x="8575" y="1701" w="899" h="452" oX="342" oY="303" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0001" x="15032" y="2185" w="849" h="468" oX="361" oY="371" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0002" x="1615" y="5635" w="817" h="552" oX="419" oY="289" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0003" x="11166" y="4653" w="819" h="532" oX="398" oY="286" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0004" x="5924" y="1691" w="909" h="451" oX="394" oY="291" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0005" x="9681" y="2161" w="797" h="465" oX="440" oY="274" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0006" x="821" y="3544" w="790" h="500" oX="503" oY="238" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0007" x="1613" y="3555" w="860" h="498" oX="498" oY="323" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0008" x="3348" y="3559" w="825" h="501" oX="508" oY="326" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WNW_0009" x="2511" y="2595" w="806" h="472" oX="512" oY="328" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0000" x="7312" y="4097" w="826" h="512" oX="361" oY="282" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0001" x="3274" y="3073" w="936" h="484" oX="350" oY="277" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0002" x="13236" y="3136" w="835" h="496" oX="340" oY="218" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0003" x="12274" y="5749" w="822" h="559" oX="403" oY="164" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0004" x="8522" y="6841" w="720" h="578" oX="442" oY="145" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0005" x="1" y="4550" w="693" h="521" oX="453" oY="205" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0006" x="15481" y="2655" w="708" h="484" oX="380" oY="209" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0007" x="13607" y="6905" w="945" h="583" oX="273" oY="101" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0008" x="13148" y="4144" w="829" h="519" oX="255" oY="180" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Death_WSW_0009" x="14894" y="4687" w="795" h="537" oX="256" oY="219" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_E___0000" x="13074" y="1" w="932" h="401" oX="111" oY="328" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_E___0001" x="8269" y="402" w="871" h="418" oX="106" oY="299" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_E___0002" x="6126" y="4601" w="762" h="527" oX="142" oY="233" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_E___0003" x="9663" y="2628" w="807" h="478" oX="167" oY="264" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_E___0004" x="1815" y="1" w="942" h="392" oX="111" oY="336" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ENE_0000" x="3262" y="5647" w="826" h="553" oX="181" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ENE_0001" x="2225" y="6759" w="805" h="574" oX="80" oY="263" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ENE_0002" x="5958" y="3094" w="862" h="486" oX="34" oY="294" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ENE_0003" x="11162" y="3623" w="823" h="503" oX="67" oY="322" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ENE_0004" x="1612" y="1672" w="890" h="448" oX="140" oY="372" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ESE_0000" x="1" y="2585" w="899" h="468" oX="127" oY="292" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ESE_0001" x="11384" y="2172" w="909" h="466" oX="120" oY="255" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ESE_0002" x="6008" y="6813" w="716" h="576" oX="276" oY="119" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ESE_0003" x="5799" y="7391" w="816" h="588" oX="215" oY="160" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_ESE_0004" x="1" y="3055" w="858" h="481" oX="165" oY="273" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_N___0000" x="9787" y="14934" w="442" h="819" oX="465" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_N___0001" x="11448" y="9926" w="486" h="652" oX="384" oY="349" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_N___0002" x="6683" y="8602" w="889" h="611" oX="265" oY="349" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_N___0003" x="14461" y="9983" w="747" h="653" oX="299" oY="305" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_N___0004" x="1527" y="13202" w="525" h="741" oX="451" oY="274" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NE__0000" x="7012" y="12586" w="651" h="716" oX="279" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NE__0001" x="14967" y="10641" w="696" h="679" oX="147" oY="264" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NE__0002" x="6822" y="3096" w="935" h="487" oX="17" oY="303" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NE__0003" x="13098" y="5758" w="832" h="560" oX="56" oY="298" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NE__0004" x="10232" y="6869" w="762" h="581" oX="199" oY="312" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNE_0000" x="3363" y="14769" w="474" h="809" oX="394" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNE_0001" x="3482" y="11790" w="543" h="699" oX="283" oY="302" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNE_0002" x="5618" y="5673" w="957" h="553" oX="100" oY="340" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNE_0003" x="10590" y="8054" w="797" h="602" oX="141" oY="287" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNE_0004" x="8566" y="11907" w="595" h="703" oX="322" oY="279" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNW_0000" x="12949" y="13435" w="500" h="769" oX="493" oY="216" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNW_0001" x="11724" y="8670" w="686" h="618" oX="332" oY="357" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNW_0002" x="14034" y="11319" w="885" h="690" oX="298" oY="304" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNW_0003" x="13824" y="9343" w="771" h="634" oX="379" oY="349" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NNW_0004" x="7665" y="12598" w="564" h="716" oX="516" oY="275" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NW__0000" x="1386" y="9759" w="735" h="641" oX="405" oY="248" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NW__0001" x="1498" y="6189" w="839" h="561" oX="328" oY="367" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NW__0002" x="547" y="13903" w="829" h="769" oX="309" oY="238" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NW__0003" x="4656" y="11142" w="858" h="684" oX="331" oY="307" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_NW__0004" x="14508" y="8114" w="757" h="606" oX="419" oY="307" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_S___0000" x="7675" y="8000" w="442" h="600" oX="461" oY="188" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_S___0001" x="3838" y="10439" w="486" h="667" oX="498" oY="138" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_S___0002" x="2838" y="9164" w="890" h="624" oX="214" oY="155" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_S___0003" x="12412" y="8678" w="747" h="618" oX="322" oY="179" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_S___0004" x="4326" y="10451" w="525" h="668" oX="392" oY="183" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SE__0000" x="1289" y="5091" w="735" h="537" oX="228" oY="243" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SE__0001" x="1180" y="7916" w="839" h="595" oX="200" oY="165" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SE__0002" x="15210" y="9986" w="830" h="653" oX="229" oY="61" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SE__0003" x="7592" y="10528" w="858" h="665" oX="179" oY="103" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SE__0004" x="1302" y="7327" w="757" h="587" oX="192" oY="198" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSE_0000" x="5297" y="7372" w="500" h="590" oX="375" oY="194" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSE_0001" x="6904" y="10515" w="686" h="671" oX="350" oY="120" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSE_0002" x="3275" y="11108" w="885" h="680" oX="186" oY="74" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSE_0003" x="6131" y="10498" w="771" h="667" oX="218" oY="112" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSE_0004" x="10365" y="10573" w="564" h="672" oX="288" oY="163" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSW_0000" x="2368" y="8524" w="474" h="609" oX="500" oY="194" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSW_0001" x="3293" y="10439" w="543" h="664" oX="542" oY="169" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSW_0002" x="8012" y="9246" w="957" h="630" oX="311" oY="185" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSW_0003" x="728" y="13168" w="797" h="733" oX="430" oY="102" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SSW_0004" x="10123" y="9916" w="596" h="651" oX="450" oY="176" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SW__0000" x="3032" y="6768" w="651" h="574" oX="438" oY="233" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SW__0001" x="2123" y="9764" w="696" h="641" oX="525" oY="192" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SW__0002" x="4942" y="13276" w="935" h="753" oX="416" oY="106" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SW__0003" x="8030" y="13331" w="832" h="763" oX="480" oY="75" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_SW__0004" x="3816" y="8557" w="762" h="608" oX="407" oY="190" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_W___0000" x="8988" y="1259" w="932" h="440" oX="325" oY="324" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_W___0001" x="6963" y="2155" w="870" h="463" oX="391" oY="311" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_W___0002" x="2054" y="13207" w="761" h="742" oX="464" oY="93" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_W___0003" x="6143" y="9850" w="806" h="646" oX="394" oY="170" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_W___0004" x="13186" y="2181" w="943" h="467" oX="315" oY="290" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WNW_0000" x="9476" y="1702" w="899" h="452" oX="342" oY="303" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WNW_0001" x="10472" y="2634" w="909" h="478" oX="339" oY="350" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WNW_0002" x="9886" y="14142" w="716" h="790" oX="377" oY="158" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WNW_0003" x="9359" y="11238" w="816" h="687" oX="337" oY="245" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WNW_0004" x="7858" y="2620" w="858" h="477" oX="345" oY="322" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WSW_0000" x="8140" y="4106" w="826" h="512" oX="361" oY="282" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WSW_0001" x="808" y="5630" w="805" h="551" oX="483" oY="251" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WSW_0002" x="472" y="14674" w="861" h="794" oX="472" oY="73" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WSW_0003" x="9163" y="11927" w="822" h="703" oX="478" oY="101" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Got Hit 1_WSW_0004" x="12407" y="5201" w="890" h="546" oX="338" oY="239" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0000" x="14008" y="1" w="931" h="401" oX="111" oY="328" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0001" x="8386" y="1" w="928" h="399" oX="115" oY="330" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0002" x="4636" y="1" w="930" h="397" oX="114" oY="331" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0003" x="5568" y="1" w="935" h="397" oX="109" oY="331" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0004" x="9316" y="1" w="940" h="399" oX="104" oY="330" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0005" x="10258" y="1" w="939" h="399" oX="105" oY="330" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0006" x="7450" y="1" w="934" h="398" oX="110" oY="331" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0007" x="2759" y="1" w="934" h="395" oX="110" oY="333" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0008" x="3695" y="1" w="939" h="396" oX="104" oY="332" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_E___0009" x="11199" y="1" w="939" h="399" oX="104" oY="329" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0000" x="4090" y="5651" w="826" h="553" oX="181" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0001" x="3179" y="6202" w="817" h="564" oX="191" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0002" x="8297" y="5702" w="821" h="557" oX="187" oY="287" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0003" x="4989" y="5124" w="837" h="540" oX="172" oY="288" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0004" x="8968" y="4112" w="859" h="512" oX="151" oY="288" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0005" x="13720" y="2654" w="878" h="480" oX="133" oY="287" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0006" x="12102" y="2646" w="883" h="479" oX="127" oY="286" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0007" x="14600" y="2655" w="879" h="480" oX="130" oY="287" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0008" x="5056" y="3569" w="868" h="500" oX="140" oY="286" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ENE_0009" x="9574" y="4634" w="848" h="530" oX="159" oY="285" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0000" x="1610" y="2590" w="899" h="468" oX="127" oY="292" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0001" x="10480" y="2167" w="902" h="465" oX="124" oY="295" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0002" x="3382" y="2136" w="901" h="462" oX="126" oY="298" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0003" x="4285" y="2142" w="895" h="462" oX="132" oY="298" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0004" x="5182" y="2144" w="882" h="462" oX="145" oY="298" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0005" x="1" y="2121" w="863" h="461" oX="164" oY="300" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0006" x="13852" y="1721" w="847" h="458" oX="180" oY="303" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0007" x="12999" y="1719" w="851" h="457" oX="176" oY="303" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0008" x="866" y="2122" w="871" h="461" oX="156" oY="299" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_ESE_0009" x="12295" y="2178" w="889" h="466" oX="137" oY="294" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0000" x="11613" y="14977" w="442" h="820" oX="465" oY="211" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0001" x="8465" y="14907" w="439" h="817" oX="466" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0002" x="10231" y="14951" w="436" h="819" oX="467" oY="213" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0003" x="12563" y="15005" w="436" h="821" oX="466" oY="213" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0004" x="13444" y="15021" w="436" h="823" oX="466" oY="211" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0005" x="8906" y="14924" w="435" h="818" oX="466" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0006" x="15791" y="12028" w="436" h="812" oX="466" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0007" x="6694" y="14863" w="437" h="814" oX="466" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0008" x="10669" y="14962" w="439" h="819" oX="466" oY="213" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_N___0009" x="13001" y="15011" w="441" h="822" oX="465" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0000" x="8952" y="12632" w="651" h="717" oX="279" oY="234" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0001" x="13935" y="12725" w="647" h="722" oX="283" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0002" x="10314" y="12655" w="648" h="718" oX="284" oY="237" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0003" x="14529" y="12016" w="648" h="707" oX="284" oY="238" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0004" x="6897" y="11188" w="659" h="688" oX="274" oY="237" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0005" x="2602" y="10434" w="689" h="663" oX="244" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0006" x="6951" y="9866" w="704" h="647" oX="228" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0007" x="545" y="10390" w="698" h="653" oX="234" oY="237" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0008" x="11588" y="10591" w="672" h="676" oX="259" oY="237" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NE__0009" x="5249" y="11850" w="650" h="700" oX="280" oY="236" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0000" x="3839" y="14791" w="474" h="809" oX="394" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0001" x="6221" y="14856" w="471" h="812" oX="397" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0002" x="5749" y="14838" w="470" h="811" oX="398" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0003" x="1" y="14659" w="469" h="806" oX="398" oY="211" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0004" x="11650" y="14180" w="469" h="795" oX="398" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0005" x="1378" y="13945" w="470" h="780" oX="397" oY="209" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0006" x="5879" y="13276" w="475" h="770" oX="392" oY="209" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0007" x="13451" y="13435" w="471" h="774" oX="396" oY="211" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0008" x="5330" y="14031" w="471" h="788" oX="396" oY="212" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNE_0009" x="13829" y="14220" w="473" h="799" oX="395" oY="211" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0000" x="13924" y="13449" w="500" h="769" oX="493" oY="216" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0001" x="7532" y="13316" w="496" h="764" oX="493" oY="216" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0002" x="11952" y="13411" w="493" h="767" oX="493" oY="218" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0003" x="14949" y="13473" w="490" h="775" oX="493" oY="218" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0004" x="4840" y="14031" w="488" h="786" oX="493" oY="216" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0005" x="6850" y="14068" w="488" h="793" oX="493" oY="215" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0006" x="12121" y="14194" w="490" h="795" oX="493" oY="215" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0007" x="10604" y="14155" w="493" h="794" oX="493" oY="217" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0008" x="6352" y="14064" w="496" h="790" oX="493" oY="218" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NNW_0009" x="2594" y="13956" w="499" h="780" oX="493" oY="216" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0000" x="3589" y="9795" w="735" h="642" oX="405" oY="247" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0001" x="5877" y="9207" w="745" h="632" oX="404" oY="248" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0002" x="12400" y="9298" w="740" h="637" oX="404" oY="250" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0003" x="10721" y="9920" w="725" h="651" oX="403" oY="250" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0004" x="4853" y="10471" w="701" h="669" oX="402" oY="249" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0005" x="2572" y="11099" w="701" h="685" oX="402" oY="248" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0006" x="1" y="11727" w="700" h="692" oX="403" oY="248" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0007" x="13329" y="11313" w="703" h="688" oX="403" oY="250" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0008" x="13561" y="10634" w="705" h="677" oX="404" oY="250" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_NW__0009" x="1889" y="10407" w="711" h="660" oX="404" oY="249" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0000" x="8119" y="8014" w="442" h="600" oX="461" oY="188" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0001" x="2965" y="7933" w="439" h="598" oX="463" oY="189" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0002" x="1" y="7899" w="436" h="595" oX="465" oY="192" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0003" x="13003" y="7478" w="436" h="593" oX="466" oY="194" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0004" x="9749" y="7434" w="436" h="592" oX="466" oY="196" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0005" x="2559" y="7335" w="435" h="588" oX="467" oY="200" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0006" x="6726" y="6813" w="436" h="584" oX="466" oY="204" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0007" x="1" y="7312" w="437" h="585" oX="465" oY="202" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0008" x="6617" y="7399" w="440" h="590" oX="463" oY="197" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_S___0009" x="3406" y="7938" w="441" h="598" oX="462" oY="189" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0000" x="2026" y="5096" w="735" h="537" oX="228" oY="243" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0001" x="11987" y="4658" w="745" h="534" oX="219" oY="246" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0002" x="10424" y="4643" w="740" h="530" oX="224" oY="249" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0003" x="8846" y="4626" w="726" h="529" oX="239" oY="251" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0004" x="7597" y="4620" w="701" h="528" oX="265" oY="252" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0005" x="4556" y="4583" w="701" h="525" oX="265" oY="255" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0006" x="1450" y="4567" w="700" h="522" oX="265" oY="258" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0007" x="3001" y="4574" w="703" h="523" oX="262" oY="257" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0008" x="6890" y="4611" w="705" h="527" oX="259" oY="252" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SE__0009" x="12734" y="4665" w="711" h="534" oX="253" oY="246" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0000" x="7059" y="7406" w="500" h="590" oX="375" oY="194" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0001" x="2061" y="7335" w="496" h="587" oX="379" oY="197" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0002" x="14554" y="6919" w="493" h="584" oX="382" oY="200" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0003" x="10996" y="6874" w="490" h="582" oX="385" oY="202" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0004" x="9244" y="6852" w="488" h="580" oX="387" oY="204" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0005" x="7164" y="6827" w="488" h="577" oX="387" oY="208" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0006" x="11090" y="6297" w="490" h="575" oX="385" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0007" x="4338" y="6790" w="493" h="575" oX="382" oY="209" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0008" x="9734" y="6852" w="496" h="580" oX="379" oY="204" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSE_0009" x="2996" y="7344" w="499" h="587" oX="376" oY="197" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0000" x="2844" y="8533" w="474" h="609" oX="500" oY="194" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0001" x="9642" y="8028" w="471" h="604" oX="500" oY="199" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0002" x="9170" y="8025" w="470" h="601" oX="500" oY="202" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0003" x="4722" y="7959" w="469" h="598" oX="501" oY="205" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0004" x="2021" y="7924" w="469" h="597" oX="501" oY="207" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0005" x="15403" y="7518" w="470" h="594" oX="501" oY="210" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0006" x="8444" y="7421" w="476" h="591" oX="501" oY="213" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0007" x="12530" y="7478" w="471" h="592" oX="501" oY="211" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0008" x="2492" y="7925" w="471" h="597" oX="501" oY="206" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SSW_0009" x="10115" y="8046" w="473" h="605" oX="500" oY="198" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0000" x="3685" y="6772" w="651" h="574" oX="438" oY="233" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0001" x="8755" y="6271" w="647" h="568" oX="438" oY="238" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0002" x="3998" y="6206" w="648" h="564" oX="436" oY="242" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0003" x="11624" y="5741" w="648" h="561" oX="436" oY="245" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0004" x="15578" y="5795" w="659" h="561" oX="435" oY="246" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0005" x="9120" y="5712" w="688" h="557" oX="435" oY="250" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0006" x="14185" y="5212" w="704" h="555" oX="436" oY="252" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0007" x="4918" y="5666" w="698" h="556" oX="436" oY="250" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0008" x="1" y="6173" w="672" h="561" oX="437" oY="245" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_SW__0009" x="9404" y="6281" w="650" h="569" oX="438" oY="237" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0000" x="9922" y="1260" w="931" h="440" oX="326" oY="324" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0001" x="1651" y="1233" w="928" h="437" oX="325" oY="327" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0002" x="8567" y="823" w="930" h="434" oX="325" oY="329" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0003" x="9499" y="823" w="935" h="434" oX="324" oY="329" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0004" x="12313" y="829" w="940" h="435" oX="324" oY="329" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0005" x="13255" y="833" w="939" h="435" oX="324" oY="329" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0006" x="10436" y="824" w="934" h="434" oX="324" oY="330" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0007" x="4305" y="809" w="935" h="432" oX="324" oY="331" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0008" x="11372" y="827" w="939" h="434" oX="325" oY="329" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_W___0009" x="6252" y="1251" w="939" h="438" oX="325" oY="326" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0000" x="10377" y="1707" w="899" h="452" oX="342" oY="303" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0001" x="10855" y="1263" w="901" h="442" oX="342" oY="304" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0002" x="709" y="1672" w="901" h="447" oX="341" oY="306" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0003" x="6066" y="2153" w="895" h="462" oX="341" oY="307" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0004" x="5073" y="3082" w="883" h="485" oX="341" oY="307" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0005" x="4819" y="4071" w="862" h="510" oX="341" oY="306" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0006" x="2152" y="4572" w="847" h="522" oX="341" oY="305" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0007" x="11744" y="4134" w="851" h="517" oX="341" oY="306" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0008" x="2475" y="3559" w="871" h="499" oX="341" oY="306" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WNW_0009" x="6031" y="2617" w="889" h="475" oX="342" oY="304" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0000" x="9829" y="4120" w="826" h="512" oX="361" oY="282" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0001" x="15376" y="3654" w="817" h="508" oX="360" oY="286" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0002" x="14553" y="3641" w="821" h="505" oX="360" oY="289" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0003" x="11987" y="3629" w="838" h="503" oX="358" oY="291" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0004" x="9484" y="3608" w="860" h="502" oX="357" oY="292" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0005" x="6811" y="3585" w="878" h="501" oX="357" oY="294" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0006" x="5926" y="3582" w="883" h="500" oX="358" oY="295" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0007" x="4175" y="3567" w="879" h="499" oX="359" oY="295" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0008" x="12827" y="3634" w="867" h="503" oX="360" oY="290" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Idle_WSW_0009" x="5683" y="4084" w="848" h="510" oX="361" oY="284" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_E___0000" x="4155" y="1684" w="926" h="450" oX="109" oY="349" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_E___0001" x="1739" y="2127" w="921" h="461" oX="109" oY="342" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_E___0002" x="7835" y="2155" w="923" h="463" oX="109" oY="348" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_E___0003" x="8760" y="2156" w="919" h="463" oX="116" oY="339" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_E___0004" x="11278" y="1712" w="922" h="453" oX="107" oY="337" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ENE_0000" x="1384" y="6752" w="839" h="573" oX="176" oY="333" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ENE_0001" x="11185" y="7462" w="844" h="590" oX="166" oY="322" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ENE_0002" x="7561" y="7410" w="881" h="588" oX="131" oY="331" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ENE_0003" x="15049" y="6932" w="890" h="584" oX="125" oY="328" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ENE_0004" x="7654" y="6831" w="866" h="577" oX="143" oY="323" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ESE_0000" x="1" y="375" w="884" h="405" oX="129" oY="330" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ESE_0001" x="2581" y="1237" w="870" h="437" oX="139" oY="319" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ESE_0002" x="848" y="801" w="838" h="430" oX="172" oY="328" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ESE_0003" x="5242" y="810" w="822" h="432" oX="191" oY="320" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_ESE_0004" x="6066" y="815" w="849" h="432" oX="159" oY="314" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_N___0000" x="7340" y="14082" w="488" h="793" oX="450" oY="243" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_N___0001" x="12057" y="14991" w="504" h="820" oX="442" oY="234" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_N___0002" x="14304" y="14236" w="509" h="804" oX="443" oY="242" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_N___0003" x="2376" y="14738" w="509" h="807" oX="436" oY="237" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_N___0004" x="11110" y="14962" w="501" h="819" oX="431" oY="236" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NE__0000" x="5901" y="11854" w="706" h="702" oX="241" oY="278" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NE__0001" x="3734" y="12512" w="715" h="714" oX="228" oY="268" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NE__0002" x="1186" y="12454" w="710" h="712" oX="235" oY="277" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NE__0003" x="456" y="12438" w="728" h="710" oX="219" oY="273" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NE__0004" x="12039" y="11969" w="717" h="704" oX="225" oY="270" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNE_0000" x="15441" y="13601" w="536" h="775" oX="346" oY="247" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNE_0001" x="11099" y="14166" w="549" h="794" oX="333" oY="239" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNE_0002" x="8864" y="13351" w="551" h="764" oX="338" oY="246" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNE_0003" x="10914" y="13388" w="548" h="765" oX="332" oY="242" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNE_0004" x="1" y="13878" w="544" h="779" oX="324" oY="241" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNW_0000" x="3392" y="13228" w="526" h="752" oX="504" oY="243" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNW_0001" x="3589" y="13984" w="540" h="783" oX="508" oY="235" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNW_0002" x="5803" y="14048" w="547" h="788" oX="505" oY="242" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNW_0003" x="13278" y="14211" w="549" h="798" oX="497" oY="238" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NNW_0004" x="9341" y="14129" w="543" h="793" oX="494" oY="237" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NW__0000" x="10177" y="11247" w="714" h="687" oX="422" oY="273" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NW__0001" x="4532" y="11828" w="715" h="699" oX="425" oY="265" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NW__0002" x="1494" y="11756" w="717" h="696" oX="425" oY="272" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NW__0003" x="6609" y="11878" w="718" h="702" oX="422" oY="268" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_NW__0004" x="7329" y="11882" w="707" h="702" oX="426" oY="266" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_S___0000" x="14220" y="7505" w="488" h="593" oX="430" oY="217" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_S___0001" x="15678" y="5236" w="504" h="557" oX="422" oY="238" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_S___0002" x="4833" y="6790" w="508" h="575" oX="417" oY="228" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_S___0003" x="10056" y="6281" w="509" h="569" oX="423" oY="236" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_S___0004" x="10583" y="5734" w="501" h="558" oX="436" oY="236" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SE__0000" x="15335" y="1275" w="714" h="445" oX="232" oY="302" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SE__0001" x="1654" y="3060" w="715" h="490" oX="228" oY="291" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SE__0002" x="11383" y="2640" w="717" h="478" oX="226" oY="302" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SE__0003" x="2662" y="2127" w="718" h="466" oX="228" oY="295" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SE__0004" x="1" y="1657" w="706" h="455" oX="235" oY="290" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSE_0000" x="15705" y="4164" w="526" h="526" oX="338" oY="265" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSE_0001" x="10657" y="4128" w="540" h="513" oX="320" oY="278" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSE_0002" x="15691" y="4692" w="547" h="542" oX="316" oY="245" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSE_0003" x="738" y="5078" w="549" h="543" oX="322" oY="243" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSE_0004" x="11199" y="4128" w="543" h="515" oX="331" oY="261" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSW_0000" x="11086" y="5734" w="536" h="561" oX="486" oY="230" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSW_0001" x="12597" y="4139" w="549" h="517" oX="486" oY="259" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSW_0002" x="15598" y="3141" w="550" h="511" oX="479" oY="274" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSW_0003" x="12685" y="3132" w="549" h="495" oX="487" oY="291" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SSW_0004" x="8300" y="4620" w="544" h="531" oX="500" oY="273" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SW__0000" x="902" y="2585" w="706" h="471" oX="421" oY="304" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SW__0001" x="3438" y="1683" w="715" h="449" oX="425" oY="304" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SW__0002" x="1" y="1214" w="710" h="441" oX="423" oY="311" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SW__0003" x="15440" y="1722" w="727" h="461" oX="421" oY="310" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_SW__0004" x="10272" y="3114" w="718" h="492" oX="425" oY="305" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_W___0000" x="7341" y="401" w="926" h="413" oX="333" oY="353" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_W___0001" x="6917" y="816" w="920" h="433" oX="338" oY="339" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_W___0002" x="1688" y="801" w="924" h="430" oX="336" oY="344" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_W___0003" x="15316" y="405" w="919" h="429" oX="333" oY="346" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_W___0004" x="14196" y="836" w="921" h="435" oX="339" oY="345" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WNW_0000" x="13299" y="5209" w="884" h="547" oX="355" oY="330" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WNW_0001" x="4648" y="6224" w="870" h="564" oX="359" oY="320" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WNW_0002" x="2339" y="6195" w="838" h="562" oX="358" oY="326" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WNW_0003" x="5520" y="6228" w="823" h="564" oX="355" oY="324" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WNW_0004" x="13822" y="6332" w="849" h="571" oX="360" oY="320" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WSW_0000" x="9142" y="402" w="839" h="419" oX="353" oY="343" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WSW_0001" x="2614" y="804" w="844" h="431" oX="358" oY="323" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WSW_0002" x="9983" y="402" w="881" h="419" oX="356" oY="329" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WSW_0003" x="12685" y="404" w="889" h="423" oX="353" oY="330" oW="1368" oH="1368"/>
+    <sprite n="Dragon_Walk_WSW_0004" x="14467" y="1275" w="866" h="444" oX="359" oY="328" oW="1368" oH="1368"/>
+</TextureAtlas>

@@ -112,6 +112,15 @@ namespace Spritesheet_Structs {
     }
   }
 
+  void Calculate_Num_Frames_Unity(std::string frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, Action_Component::Action_State &action) {
+    std::string E = frame.substr(frame.size() - 9, 3);
+    if (E != "_E_") {
+      return;
+    } else {
+      actionFrameData[action].NumFrames++;
+    }
+  }
+
   bool Get_Tileset_Frame_Data(std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData) {
     // name should be the template name from tiled
     Action_Component::Action_State action;
@@ -127,7 +136,25 @@ namespace Spritesheet_Structs {
     return false;
   }
 
-  bool Get_Frame_Action_Data(std::string unitType, std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
+  std::string ss(const std::string &templateName, const std::string &frame, const int &fromEnd) {
+    std::string frameCopy = frame;
+
+    if (frameCopy.substr(0, templateName.size()) != templateName) {
+      Utilities::Log("Get_Frame_Action_Data() error: Sheet name: " + templateName + " != frame: " + frameCopy.substr(0, templateName.size()));
+      return "";
+    }
+
+    auto index = frameCopy.find(templateName);// Find the starting position of substring in the string
+    if (index != std::string::npos) {
+      frameCopy.erase(index, templateName.length() + 1);// erase function takes two parameter, the starting index in the string from where you want to erase characters and total no of characters you want to erase.
+    }
+
+    ///just grab the first 3 letters of the string
+    return frameCopy.erase(frameCopy.length() - fromEnd);
+  }
+
+
+  bool Get_Frame_Action_Data(const std::string unitType, std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
     // name should be the template name from tiled
     int i = 75;
     Action_Component::Action_State action;
@@ -139,24 +166,43 @@ namespace Spritesheet_Structs {
       // std::cout << "Success! " << templateName << " found " << "frame" << frame << std::endl;
       return true;
 
-    } else {
+    } else if (unitType == "Unity") {
       /// get the
-      std::string keyCheck = templateName;
-      std::string frameCopy = frame;
+      std::string checkAction = ss(templateName, frame, 9);
+      if (checkAction.empty()) return false;
 
-
-      if (frameCopy.substr(0, keyCheck.size()) != keyCheck) {
-        Utilities::Log("Get_Frame_Action_Data() error: Sheet name: " + keyCheck + " != frame: " + frameCopy.substr(0, keyCheck.size()));
+      /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
+      // was 75
+      int speed = 100;
+      if (checkAction == "Attack 1") {
+        action = Action_Component::Action_State::attack;
+        actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "Idle") {
+        action = Action_Component::Action_State::idle;
+        actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "Walk") {
+        action = Action_Component::Action_State::walk;
+        actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "Got Hit 1") {
+        action = Action_Component::Action_State::struck;
+        actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "Death") {
+        action = Action_Component::Action_State::dying;
+        actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "Dead") {
+        action = Action_Component::Action_State::dead;
+        actionFrameData[action].frameSpeed = speed;
+      } else {
+        std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
         return false;
       }
+    }
 
-      auto index = frameCopy.find(templateName);// Find the starting position of substring in the string
-      if (index != std::string::npos) {
-        frameCopy.erase(index, keyCheck.length() + 1);// erase function takes two parameter, the starting index in the string from where you want to erase characters and total no of characters you want to erase.
-      }
+    else {
 
       ///just grab the first 3 letters of the string
-      std::string checkAction = frameCopy.erase(frameCopy.length() - 6);
+      std::string checkAction = ss(templateName, frame, 6);
+      if (checkAction.empty()) return false;
 
       /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
       if (unitType == "RTP_female" || unitType == "RTP_male") {
@@ -423,7 +469,11 @@ namespace Spritesheet_Structs {
     Calculate_Start_Frame(actionFrameData, action, frameIndex);
     //        Utilities::Log("----");
     //        Utilities::Log(frame);
-    Calculate_Num_Frames(frame, actionFrameData, action);
+    if (unitType == "Unity") {
+      Calculate_Num_Frames_Unity(frame, actionFrameData, action);
+    } else {
+      Calculate_Num_Frames(frame, actionFrameData, action);
+    }
 
     return true;
   }

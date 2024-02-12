@@ -123,7 +123,7 @@ namespace Create_Entities {
     return entity;
   }
 
-  Rendering_Components::Blend_Type Set_Texture_Components(entt::registry &zone, entt::entity &entity, db::Unit_Data &imgPaths) {
+  Rendering_Components::Blend_Type Set_Texture_Components(entt::registry &zone, entt::entity &entity, db::Unit_Data &imgPaths, const std::string &unity, const bool &hexDir) {
     int unit_ID = 0;
     unit_ID = Entity_Data::Check_For_Template_ID(imgPaths.name);
     Graphics::Texture texture = {};
@@ -164,6 +164,8 @@ namespace Create_Entities {
       sprite.sheetData = packerframeData;
       sprite.sheet_name = imgPaths.name;
       sprite.type = "RPG_Tools";
+      sprite.hexDir = hexDir;
+      if (unity == "Unity") sprite.unity = true;
     } else {
       sprite.flareSpritesheet = flareSheetData;
       sprite.sheet_name = imgPaths.name;
@@ -199,7 +201,10 @@ namespace Create_Entities {
     auto entity = zone.create();
     Entity_Loader::Data data;
     data = Entity_Loader::parse_data(imgPaths.name);
-    Rendering_Components::Blend_Type blendType = Set_Texture_Components(zone, entity, imgPaths);
+    if (data.hexDir) {
+      Utilities::Log(data.hexDir);
+    }
+    Rendering_Components::Blend_Type blendType = Set_Texture_Components(zone, entity, imgPaths, data.equip_type, data.hexDir);
     Component::Position position = Add_Shared_Components(zone, entity, x, y, data, unitIndex);
 
     //dynamic entities
@@ -214,7 +219,8 @@ namespace Create_Entities {
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
       zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::attack2);
       zone.emplace_or_replace<Component::Is_Inside>(entity);
-      auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale);
+
+      auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale, 0.0f, data.hexDir);
 
       if (!player) {
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);

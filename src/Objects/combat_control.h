@@ -37,20 +37,18 @@ namespace Combat_Control {
       if (action.state != Action_Component::attack && action.state != Action_Component::struck && action.state != Action_Component::block && attackSpeed.counter <= 0) {
         zone.emplace_or_replace<Component::In_Combat>(entity, true);
         auto &direction = view.get<Component::Direction>(entity);
-        auto &angle = view.get<Component::Velocity>(entity).angle;
+        auto &velocity = view.get<Component::Velocity>(entity);
         auto &target = view.get<Component::Attack>(entity);
         auto &position = view.get<Component::Position>(entity);
 
-        direction = Movement_Component::Look_At_Target(position.x, position.y, target.targetX, target.targetY, angle);
+        direction = Movement_Component::Look_At_Target(position.x, position.y, target.targetX, target.targetY, velocity.angle, velocity.hexDir);
         attackSpeed.counter = attackSpeed.period;
 
         if (action.weaponType == Weapon_Type::spear || action.weaponType == Weapon_Type::staff) {
           Action_Component::Set_State(action, Action_Component::attackPolearm);
-        }
-        else if (action.weaponType == Weapon_Type::bow) {
+        } else if (action.weaponType == Weapon_Type::bow) {
           Action_Component::Set_State(action, Action_Component::ranged);
-        }
-        else {
+        } else {
           Action_Component::Set_State(action, Action_Component::attack);
         }
 

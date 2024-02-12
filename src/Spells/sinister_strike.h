@@ -10,11 +10,9 @@ namespace Sinister_Strike {
 
     if (action.weaponType == Weapon_Type::spear || action.weaponType == Weapon_Type::staff) {
       Action_Component::Set_State(action, Action_Component::attackPolearm);
-    }
-    else if (action.weaponType == Weapon_Type::bow) {
+    } else if (action.weaponType == Weapon_Type::bow) {
       Action_Component::Set_State(action, Action_Component::ranged);
-    }
-    else {
+    } else {
       Action_Component::Set_State(action, Action_Component::attack2);
     }
     auto &meleeDamage = zone.get<Component::Melee_Damage>(entity);
@@ -36,9 +34,9 @@ namespace Sinister_Strike {
           auto &position = zone.get<Component::Position>(player_ID);
           auto &meleeRange = zone.get<Component::Melee_Range>(player_ID);
           if (Entity_Control::Target_In_Range(position, meleeRange.meleeRange, targetPosition, targetRadius)) {
-            auto &angle = zone.get<Component::Velocity>(player_ID).angle;
+            auto &velocity = zone.get<Component::Velocity>(player_ID);
             auto &direction = zone.get<Component::Direction>(player_ID);
-            direction = Movement_Component::Look_At_Target(position.x, position.y, targetPosition.x, targetPosition.y, angle);
+            direction = Movement_Component::Look_At_Target(position.x, position.y, targetPosition.x, targetPosition.y, velocity.angle, velocity.hexDir);
             Attack(zone, player_ID, target_ID);
             return true;
           } else {

@@ -104,6 +104,7 @@ namespace Component {
     f2 magnitude;
     float speed;
     float angle;
+    bool hexDir = false;
   };
 
   /// place 2-h and bow animations in a separate array
@@ -120,7 +121,15 @@ namespace Component {
     S,
     SE,
     SW,
-    W
+    W,
+    SSE,
+    SSW,
+    NNE,
+    NNW,
+    ESE,
+    ENE,
+    WSW,
+    WNW
   };
 
   struct Drop_Equipment {

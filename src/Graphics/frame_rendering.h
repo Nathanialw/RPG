@@ -75,6 +75,8 @@ void Render_Buffs(entt::registry &zone, entt::entity &entity, Rendering_Componen
 void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera &camera, Component::Scale &scale, Component::Renderable &renderable, Component::Position &position, Rendering_Components::Sprite_Offset &spriteOffset, Rendering_Components::Sprite_Sheet_Info &sheetData) {
   SDL_Rect clipRect;
   SDL_FRect renderRect;
+  if (sheetData.sheet_name == "Dragon")
+    int isa = 0;
 
   if (zone.any_of<Component::Interaction_Rect>(entity)) {
     auto interactionRect = zone.get<Component::Interaction_Rect>(entity);
@@ -92,7 +94,12 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
   } else if (sheetData.blendType == Rendering_Components::reanimated) {
     Graphics::Render_FRect(texture, {155, 55, 55}, &clipRect, &renderRect);
   } else {
-    Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
+    //    Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
+    if (texture == Graphics::default_icon) {
+      Graphics::Render_FRect(texture, sheetData.color, nullptr, &renderRect);
+    } else {
+      Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
+    }
   }
 }
 
@@ -166,7 +173,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
         //          auto &buffSprites = buffs.get<Rendering_Components::Buff_Sprites>(entity);
         //          Render_Buffs(zone, entity, buffSprites, scale, camera, position, renderable, spriteOffset);
         //        }
-        
+
         if (mounts.contains(entity)) {
           //                render horse half behind unit
         }

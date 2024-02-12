@@ -85,6 +85,7 @@ namespace Texture_Packer {
 
     ///get path from db
     Type_Data typeData = Get_Sprite_Sheet(templateName);
+
     if (typeData.xml_path.c_str() == nullptr || typeData.xml_path.empty()) {
       Utilities::Log("TexturePacker_Import() failed, empty xml_path");
       return nullptr;

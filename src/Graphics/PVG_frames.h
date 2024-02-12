@@ -34,7 +34,15 @@ void Frame_Increment(entt::registry &zone, entt::entity &entity, Component::Scal
     }
 
     ///reset frame count if over
-    sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + action.frame;
+    if (sheetData.unity) {
+      if (sheetData.hexDir) {
+        sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * Unity_Direction_Enum16(direction)) + action.frame;
+      } else {
+        sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * Unity_Direction_Enum8(direction)) + action.frame;
+      }
+    } else {
+      sheetData.frameIndex = sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].startFrame + (sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + action.frame;
+    }
 
     if (Death_Control::Death_Sequence(zone, entity, sheetData, action, sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames)) {
       return;
@@ -79,8 +87,4 @@ void Update_Packer_Linear_Frame(float &frameTime, uint16_t &frameIndex, int &fra
 
 void Update_Item_Frame(SDL_Rect &clipRect, uint8_t row, uint16_t column) {
   clipRect = {column * clipRect.w, row * clipRect.h, clipRect.w, clipRect.h};
-}
-
-void Update_Equipment(Rendering_Components::Equip_Slot_Data &item, Action_Component::Action &action, Component::Direction &direction) {
-  item.FrameIndex = item.ItemSheetData->at(item.name).actionFrameData[action.state].startFrame + (item.ItemSheetData->at(item.name).actionFrameData[action.state].NumFrames * PVG_Direction_Enum(direction)) + action.frame;
 }
