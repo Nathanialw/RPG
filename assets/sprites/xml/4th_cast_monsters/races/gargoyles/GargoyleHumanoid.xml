@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:37208af766561857adb46a67e47e1b6b:1e338d93ceb7885bacb84f4bf9e262f8:9823bc27d1d738970c546442790dc973$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="GargoyleHumanoid.png" width="8150" height="4656">
+    <sprite n="GargoyleHumanoid_Attack 1_E___0000" x="1398" y="713" w="159" h="227" oX="434" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_E___0001" x="2430" y="1161" w="190" h="254" oX="380" oY="380" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_E___0002" x="2577" y="492" w="177" h="221" oX="454" oY="344" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_E___0003" x="1202" y="1700" w="214" h="257" oX="491" oY="327" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_E___0004" x="1666" y="2207" w="239" h="234" oX="515" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_E___0005" x="2128" y="3500" w="222" h="212" oX="456" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_E___0006" x="5189" y="416" w="227" h="234" oX="409" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_E___0007" x="7443" y="468" w="162" h="228" oX="423" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ENE_0000" x="2576" y="715" w="186" h="227" oX="404" oY="386" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ENE_0001" x="5567" y="248" w="231" h="233" oX="369" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ENE_0002" x="6005" y="735" w="186" h="208" oX="426" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ENE_0003" x="1206" y="1432" w="201" h="266" oX="490" oY="293" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ENE_0004" x="926" y="2433" w="249" h="224" oX="509" oY="338" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ENE_0005" x="6491" y="1889" w="180" h="211" oX="502" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ENE_0006" x="2396" y="2226" w="258" h="209" oX="392" oY="389" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ENE_0007" x="3094" y="1831" w="189" h="221" oX="393" oY="393" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ESE_0000" x="7430" y="889" w="169" h="215" oX="424" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ESE_0001" x="1958" y="3324" w="168" h="269" oX="414" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ESE_0002" x="2875" y="2207" w="216" h="239" oX="441" oY="330" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ESE_0003" x="3496" y="1821" w="214" h="236" oX="499" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ESE_0004" x="338" y="3485" w="233" h="258" oX="486" oY="360" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ESE_0005" x="1507" y="518" w="281" h="193" oX="422" oY="415" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ESE_0006" x="3873" y="896" w="198" h="233" oX="430" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_ESE_0007" x="3162" y="3037" w="172" h="220" oX="426" oY="352" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_N___0000" x="2128" y="3714" w="222" h="220" oX="433" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_N___0001" x="2393" y="2669" w="285" h="184" oX="427" oY="430" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_N___0002" x="6417" y="2545" w="157" h="171" oX="446" oY="382" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_N___0003" x="2161" y="1693" w="233" h="268" oX="439" oY="262" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_N___0004" x="2682" y="2437" w="191" h="241" oX="468" oY="294" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_N___0005" x="1163" y="1959" w="252" h="211" oX="443" oY="340" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_N___0006" x="2875" y="2683" w="282" h="213" oX="460" oY="372" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_N___0007" x="1177" y="2430" w="249" h="228" oX="432" oY="395" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NE__0000" x="2669" y="3104" w="204" h="214" oX="392" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NE__0001" x="1625" y="2894" w="273" h="198" oX="384" oY="405" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NE__0002" x="6295" y="1897" w="194" h="194" oX="414" oY="365" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NE__0003" x="573" y="3384" w="204" h="275" oX="497" oY="275" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NE__0004" x="1653" y="2670" w="245" h="222" oX="487" oY="332" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NE__0005" x="2539" y="3946" w="170" h="222" oX="539" oY="336" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NE__0006" x="6504" y="631" w="277" h="174" oX="397" oY="400" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NE__0007" x="4966" y="1674" w="222" h="213" oX="384" oY="402" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNE_0000" x="4741" y="1270" w="225" h="212" oX="402" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNE_0001" x="6783" y="670" w="276" h="181" oX="420" oY="416" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNE_0002" x="6941" y="4470" w="181" h="178" oX="421" oY="379" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNE_0003" x="779" y="3290" w="190" h="276" oX="502" oY="264" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNE_0004" x="1680" y="3094" w="218" h="228" oX="472" oY="316" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNE_0005" x="712" y="2499" w="212" h="224" oX="502" oY="331" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNE_0006" x="4581" y="640" w="295" h="168" oX="424" oY="391" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNE_0007" x="1907" y="2175" w="252" h="205" oX="398" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNW_0000" x="3336" y="3035" w="191" h="233" oX="475" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNW_0001" x="1902" y="2566" w="256" h="204" oX="446" oY="415" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNW_0002" x="6765" y="2747" w="200" h="168" oX="425" oY="386" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNW_0003" x="2396" y="1972" w="254" h="252" oX="392" oY="269" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNW_0004" x="3295" y="845" w="154" h="237" oX="474" oY="292" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNW_0005" x="2568" y="944" w="270" h="215" oX="399" oY="330" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNW_0006" x="1881" y="1693" w="278" h="258" oX="456" oY="338" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NNW_0007" x="1360" y="942" w="229" h="240" oX="463" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NW__0000" x="3478" y="1576" w="191" h="243" oX="479" oY="387" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NW__0001" x="2730" y="4412" w="189" h="215" oX="478" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NW__0002" x="5344" y="249" w="221" h="165" oX="415" oY="389" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NW__0003" x="2875" y="2448" w="242" h="233" oX="366" oY="284" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NW__0004" x="2680" y="2680" w="193" h="215" oX="423" oY="310" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NW__0005" x="5800" y="276" w="297" h="220" oX="376" oY="319" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NW__0006" x="1418" y="1698" w="247" h="282" oX="450" oY="311" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_NW__0007" x="2876" y="1421" w="212" h="259" oX="469" oY="378" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_S___0000" x="5623" y="1373" w="222" h="185" oX="425" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_S___0001" x="2395" y="2437" w="285" h="230" oX="368" oY="331" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_S___0002" x="3122" y="3951" w="157" h="220" oX="477" oY="347" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_S___0003" x="2161" y="2407" w="232" h="253" oX="408" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_S___0004" x="660" y="3937" w="191" h="271" oX="421" oY="400" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_S___0005" x="1871" y="1168" w="252" h="261" oX="385" oY="351" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_S___0006" x="2875" y="3128" w="282" h="202" oX="338" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_S___0007" x="926" y="2659" w="249" h="196" oX="399" oY="364" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SE__0000" x="2621" y="3723" w="190" h="221" oX="411" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SE__0001" x="856" y="4105" w="189" h="265" oX="413" oY="330" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SE__0002" x="1390" y="1184" w="221" h="245" oX="444" oY="325" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SE__0003" x="2622" y="1161" w="242" h="258" oX="472" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SE__0004" x="547" y="2809" w="193" h="286" oX="464" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SE__0005" x="3762" y="462" w="297" h="211" oX="407" oY="410" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SE__0006" x="1653" y="2443" w="247" h="225" oX="383" oY="346" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SE__0007" x="6673" y="1880" w="212" h="227" oX="399" oY="344" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSE_0000" x="7569" y="1106" w="191" h="209" oX="414" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSE_0001" x="1613" y="1184" w="256" h="245" oX="378" oY="322" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSE_0002" x="3671" y="1568" w="200" h="236" oX="455" oY="331" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSE_0003" x="1409" y="1431" w="254" h="265" oX="434" oY="358" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSE_0004" x="698" y="1906" w="154" h="290" oX="452" oY="386" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSE_0005" x="971" y="3290" w="270" h="239" oX="411" oY="384" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSE_0006" x="1881" y="1953" w="278" h="220" oX="346" oY="347" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSE_0007" x="2840" y="943" w="229" h="216" oX="388" oY="351" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSW_0000" x="5396" y="1764" w="225" h="169" oX="453" oY="380" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSW_0001" x="2864" y="3332" w="276" h="198" oX="384" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSW_0002" x="2969" y="3721" w="181" h="228" oX="478" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSW_0003" x="2921" y="4397" w="190" h="231" oX="388" oY="360" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSW_0004" x="1591" y="942" w="218" h="240" oX="390" oY="404" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSW_0005" x="1667" y="1698" w="212" h="303" oX="366" oY="327" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSW_0006" x="4878" y="643" w="295" h="194" oX="361" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SSW_0007" x="1907" y="2382" w="252" h="182" oX="430" oY="368" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SW__0000" x="5190" y="1733" w="204" h="180" oX="484" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SW__0001" x="960" y="3123" w="273" h="165" oX="423" oY="382" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SW__0002" x="3451" y="845" w="194" h="237" oX="472" oY="352" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SW__0003" x="7568" y="1549" w="205" h="213" oX="379" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SW__0004" x="6444" y="807" w="245" h="198" oX="348" oY="400" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SW__0005" x="526" y="1907" w="170" h="316" oX="371" oY="315" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SW__0006" x="1680" y="3324" w="276" h="230" oX="406" oY="319" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_SW__0007" x="5849" y="1781" w="222" h="201" oX="474" oY="347" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_W___0000" x="4782" y="2698" w="159" h="230" oX="487" oY="365" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_W___0001" x="2538" y="4170" w="190" h="205" oX="510" oY="366" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_W___0002" x="6790" y="2545" w="176" h="200" oX="450" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_W___0003" x="4969" y="1482" w="214" h="190" oX="375" oY="330" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_W___0004" x="6263" y="627" w="239" h="171" oX="326" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_W___0005" x="2396" y="1691" w="222" h="279" oX="402" oY="305" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_W___0006" x="2620" y="1670" w="227" h="271" oX="444" oY="280" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_W___0007" x="1063" y="4324" w="162" h="256" oX="495" oY="340" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WNW_0000" x="3159" y="2549" w="169" h="242" oX="487" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WNW_0001" x="6100" y="3375" w="168" h="213" oX="498" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WNW_0002" x="1900" y="3143" w="216" h="179" oX="423" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WNW_0003" x="4790" y="2488" w="214" h="206" oX="367" oY="312" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WNW_0004" x="2161" y="2218" w="233" h="187" oX="361" oY="338" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WNW_0005" x="2386" y="3043" w="281" h="228" oX="377" oY="314" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WNW_0006" x="570" y="3097" w="199" h="285" oX="452" oY="288" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WNW_0007" x="853" y="3837" w="172" h="266" oX="482" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WSW_0000" x="7950" y="2885" w="186" h="202" oX="490" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WSW_0001" x="2160" y="2662" w="231" h="189" oX="480" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WSW_0002" x="3529" y="3273" w="186" h="227" oX="468" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WSW_0003" x="7177" y="2769" w="201" h="194" oX="389" oY="346" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WSW_0004" x="6193" y="800" w="249" h="162" oX="322" oY="379" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WSW_0005" x="530" y="2225" w="180" h="310" oX="398" oY="305" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WSW_0006" x="1880" y="1431" w="259" h="260" oX="429" oY="290" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Attack 1_WSW_0007" x="5300" y="2928" w="189" h="225" oX="498" oY="337" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_E___0000" x="3516" y="1" w="381" h="237" oX="95" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_ENE_0000" x="783" y="278" w="362" h="227" oX="133" oY="478" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_ESE_0000" x="1931" y="1" w="386" h="268" oX="106" oY="295" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_N___0000" x="1" y="4018" w="335" h="272" oX="312" oY="576" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_NE__0000" x="2714" y="1" w="399" h="247" oX="134" oY="538" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_NNE_0000" x="1165" y="1" w="381" h="278" oX="197" oY="562" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_NNW_0000" x="541" y="1175" w="325" h="261" oX="451" oY="566" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_NW__0000" x="7572" y="1" w="334" h="286" oX="562" oY="540" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_S___0000" x="340" y="652" w="335" h="272" oX="433" oY="218" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_SE__0000" x="1" y="3451" w="335" h="283" oX="183" oY="251" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_SSE_0000" x="880" y="1432" w="324" h="258" oX="305" oY="250" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_SSW_0000" x="1548" y="1" w="381" h="276" oX="502" oY="226" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_SW__0000" x="3115" y="1" w="399" h="239" oX="547" oY="280" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_W___0000" x="3899" y="1" w="381" h="237" oX="604" oY="463" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_WNW_0000" x="388" y="1" w="386" h="276" oX="587" oY="505" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Dead_WSW_0000" x="677" y="685" w="362" h="234" oX="585" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_E___0000" x="5221" y="2488" w="160" h="230" oX="433" oY="368" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_E___0001" x="6479" y="1401" w="187" h="242" oX="375" oY="379" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_E___0002" x="1666" y="2003" w="213" h="202" oX="339" oY="335" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_E___0003" x="7908" y="1" w="240" h="289" oX="266" oY="260" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_E___0004" x="1667" y="279" w="262" h="237" oX="237" oY="305" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_E___0005" x="1" y="3736" w="328" h="280" oX="151" oY="301" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_E___0006" x="5801" y="1" w="358" h="273" oX="119" oY="320" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_E___0007" x="3516" y="1" w="381" h="237" oX="95" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ENE_0000" x="5906" y="2927" w="187" h="228" oX="403" oY="386" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ENE_0001" x="1428" y="2669" w="223" h="211" oX="346" oY="412" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ENE_0002" x="6263" y="458" w="240" h="167" oX="316" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ENE_0003" x="2652" y="1943" w="208" h="281" oX="293" oY="310" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ENE_0004" x="7132" y="468" w="309" h="224" oX="195" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ENE_0005" x="338" y="4016" w="320" h="263" oX="173" oY="389" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ENE_0006" x="340" y="926" w="339" h="245" oX="156" oY="418" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ENE_0007" x="783" y="278" w="362" h="227" oX="133" oY="478" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ESE_0000" x="6100" y="3157" w="168" h="216" oX="425" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ESE_0001" x="896" y="4372" w="165" h="261" oX="393" oY="341" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ESE_0002" x="6068" y="1161" w="220" h="210" oX="327" oY="297" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ESE_0003" x="274" y="1602" w="255" h="303" oX="265" oY="228" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ESE_0004" x="2862" y="1935" w="227" h="270" oX="285" oY="241" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ESE_0005" x="1" y="624" w="337" h="314" oX="164" oY="224" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ESE_0006" x="1" y="309" w="368" h="313" oX="125" oY="249" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_ESE_0007" x="1931" y="1" w="386" h="268" oX="106" oY="295" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_N___0000" x="5170" y="1082" w="224" h="220" oX="432" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_N___0001" x="5713" y="735" w="290" h="196" oX="406" oY="437" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_N___0002" x="6161" y="267" w="342" h="189" oX="359" oY="428" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_N___0003" x="1931" y="440" w="321" h="174" oX="333" oY="476" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_N___0004" x="2862" y="3532" w="275" h="187" oX="341" oY="502" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_N___0005" x="2157" y="2853" w="231" h="187" oX="389" oY="559" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_N___0006" x="541" y="1438" w="337" h="229" oX="294" oY="576" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_N___0007" x="1" y="4018" w="335" h="272" oX="312" oY="576" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NE__0000" x="5686" y="3145" w="205" h="215" oX="391" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NE__0001" x="2390" y="2855" w="285" h="186" oX="338" oY="422" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NE__0002" x="3034" y="689" w="283" h="154" oX="299" oY="415" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NE__0003" x="2866" y="1161" w="220" h="258" oX="303" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NE__0004" x="2254" y="492" w="321" h="203" oX="194" oY="440" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NE__0005" x="854" y="1913" w="307" h="236" oX="223" oY="470" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NE__0006" x="4282" y="1" w="387" h="222" oX="145" oY="513" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NE__0007" x="2714" y="1" w="399" h="247" oX="134" oY="538" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNE_0000" x="4512" y="1016" w="227" h="212" oX="401" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNE_0001" x="3516" y="240" w="310" h="167" oX="359" oY="429" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNE_0002" x="1931" y="271" w="337" h="167" oX="313" oY="425" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNE_0003" x="7185" y="889" w="243" h="213" oX="307" oY="434" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNE_0004" x="5417" y="715" w="294" h="186" oX="245" oY="477" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNE_0005" x="7061" y="694" w="271" h="193" oX="297" oY="543" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNE_0006" x="4671" y="1" w="385" h="223" oX="193" oY="561" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNE_0007" x="1165" y="1" w="381" h="278" oX="197" oY="562" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNW_0000" x="4061" y="2983" w="192" h="233" oX="475" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNW_0001" x="1559" y="713" w="231" h="227" oX="473" oY="430" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNW_0002" x="5794" y="498" w="296" h="235" oX="432" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNW_0003" x="4991" y="249" w="351" h="165" oX="390" oY="470" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNW_0004" x="2632" y="3320" w="230" h="208" oX="467" oY="509" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNW_0005" x="1417" y="1982" w="247" h="187" oX="487" oY="545" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNW_0006" x="865" y="1692" w="335" h="219" oX="430" oY="564" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NNW_0007" x="541" y="1175" w="325" h="261" oX="451" oY="566" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NW__0000" x="3093" y="2054" w="191" h="244" oX="479" oY="387" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NW__0001" x="3090" y="1330" w="188" h="249" oX="513" oY="417" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NW__0002" x="437" y="4281" w="238" h="306" oX="507" oY="356" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NW__0003" x="7190" y="302" w="327" h="164" oX="470" oY="446" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NW__0004" x="6073" y="1373" w="215" h="224" oX="541" oY="494" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NW__0005" x="4282" y="631" w="297" h="171" oX="551" oY="523" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NW__0006" x="531" y="1669" w="332" h="235" oX="554" oY="540" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_NW__0007" x="7572" y="1" w="334" h="286" oX="562" oY="540" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_S___0000" x="5623" y="1781" w="224" h="185" oX="424" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_S___0001" x="3034" y="472" w="290" h="215" oX="384" oY="325" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_S___0002" x="3115" y="242" w="342" h="228" oX="379" oY="274" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_S___0003" x="2253" y="697" w="321" h="244" oX="426" oY="241" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_S___0004" x="1" y="1933" w="275" h="323" oX="464" oY="178" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_S___0005" x="297" y="2239" w="231" h="324" oX="460" oY="164" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_S___0006" x="7233" y="1" w="337" h="299" oX="449" oY="192" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_S___0007" x="340" y="652" w="335" h="272" oX="433" oY="218" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SE__0000" x="6270" y="3157" w="191" h="221" oX="410" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SE__0001" x="3094" y="1581" w="189" h="248" oX="379" oY="322" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SE__0002" x="1426" y="2171" w="238" h="231" oX="335" oY="276" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SE__0003" x="1" y="2871" w="327" h="292" oX="283" oY="220" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SE__0004" x="330" y="2867" w="215" h="295" oX="324" oY="194" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SE__0005" x="1" y="1260" w="296" h="338" oX="232" oY="174" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SE__0006" x="1" y="940" w="332" h="318" oX="194" oY="214" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SE__0007" x="1" y="3451" w="335" h="283" oX="183" oY="251" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSE_0000" x="7380" y="2769" w="192" h="210" oX="413" oY="358" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSE_0001" x="5561" y="483" w="231" h="230" oX="376" oY="316" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSE_0002" x="4890" y="416" w="297" h="225" oX="352" oY="280" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSE_0003" x="6881" y="1" w="350" h="263" oX="340" oY="233" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSE_0004" x="338" y="3164" w="230" h="319" oX="383" oY="172" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSE_0005" x="278" y="1907" w="246" h="330" oX="347" oY="157" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSE_0006" x="1" y="3165" w="335" h="284" oX="315" oY="222" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSE_0007" x="880" y="1432" w="324" h="258" oX="305" oY="250" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSW_0000" x="4740" y="1484" w="227" h="170" oX="452" oY="380" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSW_0001" x="6820" y="458" w="310" h="210" oX="411" oY="325" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSW_0002" x="1022" y="936" w="336" h="246" oX="431" oY="254" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSW_0003" x="2849" y="1682" w="243" h="251" oX="530" oY="229" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSW_0004" x="1" y="2258" w="294" h="306" oX="541" oY="211" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSW_0005" x="1" y="1600" w="271" h="331" oX="512" oY="172" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSW_0006" x="1" y="1" w="385" h="306" oX="502" oY="196" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SSW_0007" x="1548" y="1" w="381" h="276" oX="502" oY="226" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SW__0000" x="5686" y="3362" w="205" h="180" oX="484" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SW__0001" x="2875" y="2898" w="285" h="228" oX="457" oY="322" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SW__0002" x="1792" y="616" w="283" h="286" oX="498" oY="253" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SW__0003" x="1243" y="3290" w="220" h="250" oX="557" oY="242" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SW__0004" x="331" y="3745" w="321" h="269" oX="565" oY="267" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SW__0005" x="1" y="2566" w="306" h="303" oX="551" oY="220" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SW__0006" x="776" y="1" w="387" h="275" oX="548" oY="244" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_SW__0007" x="3115" y="1" w="399" h="239" oX="547" oY="280" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_W___0000" x="3717" y="3253" w="160" h="232" oX="487" oY="364" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_W___0001" x="771" y="3011" w="187" h="277" oX="518" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_W___0002" x="1" y="4292" w="212" h="363" oX="528" oY="272" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_W___0003" x="5175" y="652" w="240" h="234" oX="574" oY="344" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_W___0004" x="7887" y="470" w="262" h="206" oX="581" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_W___0005" x="6860" y="266" w="328" h="190" oX="601" oY="402" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_W___0006" x="6521" y="1" w="358" h="257" oX="603" oY="412" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_W___0007" x="3899" y="1" w="381" h="237" oX="604" oY="463" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WNW_0000" x="3330" y="2547" w="168" h="242" oX="487" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WNW_0001" x="1047" y="4056" w="165" h="266" oX="522" oY="390" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WNW_0002" x="215" y="4292" w="220" h="352" oX="533" oY="308" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WNW_0003" x="1900" y="2772" w="255" h="196" oX="560" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WNW_0004" x="4512" y="1230" w="227" h="221" oX="568" oY="460" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WNW_0005" x="6521" y="260" w="337" h="173" oX="579" oY="477" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WNW_0006" x="5430" y="1" w="369" h="245" oX="586" oY="495" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WNW_0007" x="388" y="1" w="386" h="276" oX="587" oY="505" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WSW_0000" x="7777" y="3233" w="187" h="202" oX="490" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WSW_0001" x="1428" y="2404" w="223" h="263" oX="511" oY="331" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WSW_0002" x="299" y="1260" w="240" h="340" oX="524" oY="253" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WSW_0003" x="988" y="3531" w="208" h="255" oX="579" oY="282" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WSW_0004" x="3828" y="240" w="309" h="220" oX="576" oY="336" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WSW_0005" x="868" y="1184" w="320" h="246" oX="587" oY="301" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WSW_0006" x="681" y="921" w="339" h="252" oX="585" oY="330" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Death_WSW_0007" x="677" y="685" w="362" h="234" oX="585" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0000" x="6095" y="2927" w="159" h="228" oX="434" oY="368" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0001" x="4139" y="240" w="141" h="283" oX="438" oY="314" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0002" x="1176" y="2858" w="218" h="263" oX="301" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0003" x="1465" y="3288" w="213" h="257" oX="360" oY="329" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0004" x="6092" y="498" w="169" h="235" oX="433" oY="358" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0005" x="6463" y="3157" w="158" h="227" oX="417" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0006" x="4077" y="1190" w="203" h="209" oX="393" oY="382" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0007" x="6371" y="2720" w="186" h="204" oX="412" oY="392" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0008" x="7544" y="2364" w="170" h="203" oX="430" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_E___0009" x="1942" y="4259" w="174" h="220" oX="425" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0000" x="6463" y="3386" w="186" h="227" oX="404" oY="386" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0001" x="1227" y="4296" w="180" h="255" oX="403" oY="342" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0002" x="1650" y="3556" w="268" h="235" oX="267" oY="415" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0003" x="2352" y="3273" w="278" h="239" oX="317" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0004" x="4511" y="1644" w="226" h="221" oX="400" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0005" x="4072" y="1628" w="208" h="212" oX="382" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0006" x="6073" y="1781" w="220" h="210" oX="383" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0007" x="5006" y="2488" w="213" h="206" oX="401" oY="411" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0008" x="2677" y="2897" w="196" h="205" oX="408" oY="395" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ENE_0009" x="6292" y="2093" w="197" h="224" oX="399" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0000" x="7774" y="3016" w="169" h="215" oX="424" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0001" x="654" y="3661" w="177" h="274" oX="403" oY="302" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0002" x="1665" y="1431" w="213" h="265" oX="320" oY="303" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0003" x="1027" y="3788" w="174" h="266" oX="396" oY="304" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0004" x="6290" y="1161" w="153" h="244" oX="442" oY="345" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0005" x="3288" y="1084" w="167" h="244" oX="417" oY="335" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0006" x="7716" y="2360" w="165" h="207" oX="420" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0007" x="7766" y="1908" w="183" h="192" oX="414" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0008" x="3546" y="3733" w="183" h="216" oX="418" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_ESE_0009" x="3710" y="2059" w="178" h="224" oX="416" oY="345" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0000" x="5623" y="1560" w="223" h="219" oX="432" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0001" x="371" y="469" w="382" h="181" oX="354" oY="405" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0002" x="755" y="507" w="370" h="176" oX="350" oY="467" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0003" x="6505" y="435" w="313" h="194" oX="390" oY="415" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0004" x="6691" y="853" w="245" h="192" oX="426" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0005" x="4511" y="1453" w="227" h="189" oX="419" oY="416" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0006" x="4975" y="839" w="198" h="231" oX="458" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0007" x="3159" y="3259" w="174" h="229" oX="481" oY="395" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0008" x="4077" y="973" w="203" h="215" oX="439" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_N___0009" x="6886" y="2327" w="215" h="214" oX="430" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0000" x="5893" y="3157" w="205" h="214" oX="391" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0001" x="2352" y="3514" w="275" h="207" oX="378" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0002" x="1147" y="488" w="358" h="223" oX="252" oY="440" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0003" x="3459" y="409" w="301" h="197" oX="308" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0004" x="1177" y="2660" w="249" h="196" oX="388" oY="401" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0005" x="4282" y="1015" w="228" h="204" oX="370" oY="411" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0006" x="5185" y="1304" w="209" h="211" oX="397" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0007" x="2153" y="3042" w="231" h="212" oX="411" oY="413" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0008" x="6673" y="2337" w="211" h="206" oX="398" oY="411" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NE__0009" x="5699" y="2927" w="205" h="216" oX="387" oY="400" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0000" x="5404" y="903" w="225" h="211" oX="402" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0001" x="4282" y="225" w="355" h="169" oX="352" oY="410" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0002" x="388" y="279" w="393" h="188" oX="282" oY="464" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0003" x="7572" y="289" w="324" h="163" oX="333" oY="410" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0004" x="1900" y="2970" w="251" h="171" oX="398" oY="407" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0005" x="6672" y="1230" w="223" h="193" oX="383" oY="417" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0006" x="6463" y="3615" w="193" h="227" oX="425" oY="401" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0007" x="4726" y="2261" w="215" h="215" oX="439" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0008" x="5822" y="2326" w="215" h="212" oX="409" oY="409" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNE_0009" x="4061" y="525" w="219" h="213" oX="399" oY="400" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0000" x="4161" y="2254" w="192" h="233" oX="475" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0001" x="4639" y="226" w="350" h="184" oX="385" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0002" x="4282" y="396" w="303" h="233" oX="447" oY="449" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0003" x="2609" y="1421" w="265" h="247" oX="459" oY="393" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0004" x="6673" y="2109" w="211" h="226" oX="462" oY="389" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0005" x="5843" y="1152" w="223" h="219" oX="449" oY="411" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0006" x="3285" y="1823" w="209" h="229" oX="469" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0007" x="1413" y="3802" w="189" h="234" oX="486" oY="392" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0008" x="3825" y="3952" w="176" h="225" oX="484" oY="392" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NNW_0009" x="3650" y="4397" w="186" h="230" oX="476" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0000" x="3285" y="1577" w="191" h="244" oX="479" oY="387" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0001" x="2352" y="3723" w="267" h="221" oX="438" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0002" x="2374" y="1417" w="233" h="272" oX="532" oY="421" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0003" x="926" y="2151" w="231" h="280" oX="486" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0004" x="1214" y="4038" w="187" h="256" oX="477" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0005" x="3660" y="1330" w="208" h="236" oX="469" oY="404" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0006" x="2711" y="3946" w="189" h="222" oX="490" oY="400" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0007" x="4194" y="2724" w="194" h="232" oX="481" oY="383" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0008" x="3879" y="3244" w="184" h="232" oX="485" oY="390" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_NW__0009" x="3286" y="2054" w="190" h="244" oX="478" oY="385" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0000" x="5847" y="1373" w="224" h="185" oX="424" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0001" x="1147" y="281" w="382" h="205" oX="344" oY="333" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0002" x="5058" y="1" w="370" h="246" oX="360" oY="277" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0003" x="2253" y="943" w="313" h="216" oX="377" oY="330" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0004" x="6938" y="889" w="245" h="200" oX="409" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0005" x="4282" y="1421" w="227" h="213" oX="434" oY="349" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0006" x="6463" y="3844" w="198" h="201" oX="424" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0007" x="7775" y="1712" w="174" h="194" oX="425" oY="366" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0008" x="7377" y="3618" w="202" h="192" oX="439" oY="368" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_S___0009" x="7545" y="2169" w="214" h="189" oX="435" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0000" x="5493" y="3377" w="191" h="221" oX="410" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0001" x="2764" y="694" w="266" h="247" oX="375" oY="306" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0002" x="2161" y="1963" w="233" h="253" oX="315" oY="269" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0003" x="2141" y="1416" w="231" h="275" oX="363" oY="292" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0004" x="3119" y="2300" w="187" h="247" oX="416" oY="344" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0005" x="1203" y="3782" w="208" h="254" oX="403" oY="325" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0006" x="6663" y="3828" w="189" h="221" oX="401" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0007" x="7378" y="2981" w="194" h="209" oX="405" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0008" x="6277" y="2319" w="184" h="224" oX="411" oY="346" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SE__0009" x="5109" y="3155" w="190" h="230" oX="412" oY="341" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0000" x="7952" y="2241" w="192" h="209" oX="413" oY="358" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0001" x="2319" y="257" w="350" h="233" oX="345" oY="314" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0002" x="2125" y="1161" w="303" h="253" oX="330" oY="263" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0003" x="1159" y="2172" w="265" h="256" oX="356" oY="302" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0004" x="6664" y="1647" w="211" h="231" oX="407" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0005" x="2128" y="3256" w="222" h="242" oX="409" oY="331" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0006" x="4579" y="2478" w="209" h="218" oX="402" oY="349" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0007" x="7776" y="3654" w="189" h="210" oX="405" oY="358" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0008" x="4908" y="3938" w="176" h="215" oX="420" oY="352" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSE_0009" x="7762" y="839" w="186" h="218" oX="418" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0000" x="6445" y="1230" w="225" h="169" oX="453" oY="380" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0001" x="1041" y="713" w="355" h="221" oX="373" oY="312" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0002" x="2319" y="1" w="393" h="254" oX="405" oY="279" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0003" x="2714" y="250" w="324" h="195" oX="423" oY="341" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0004" x="7898" y="292" w="251" h="176" oX="431" oY="380" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0005" x="7326" y="1964" w="223" h="192" oX="474" oY="356" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0006" x="7582" y="3236" w="193" h="192" oX="462" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0007" x="5779" y="2540" w="215" h="178" oX="426" oY="372" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0008" x="4968" y="1306" w="215" h="174" oX="456" oY="376" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SSW_0009" x="1235" y="3123" w="219" h="165" oX="462" oY="384" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0000" x="5893" y="3373" w="205" h="180" oX="484" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0001" x="2756" y="447" w="276" h="245" oX="427" oY="301" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0002" x="6161" y="1" w="358" h="264" oX="470" oY="280" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0003" x="4587" y="412" w="301" h="226" oX="471" oY="321" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0004" x="7334" y="698" w="249" h="189" oX="443" oY="358" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0005" x="4282" y="1221" w="228" h="198" oX="482" oY="346" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0006" x="3866" y="1131" w="209" h="197" oX="474" oY="348" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0007" x="2629" y="3530" w="231" h="190" oX="438" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0008" x="5686" y="3753" w="211" h="183" oX="471" oY="365" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_SW__0009" x="5996" y="2540" w="204" h="178" oX="489" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0000" x="4259" y="3193" w="159" h="232" oX="487" oY="364" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0001" x="5418" y="416" w="141" h="296" oX="501" oY="304" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0002" x="309" y="2565" w="218" h="300" oX="561" oY="324" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0003" x="960" y="2857" w="214" h="264" oX="506" oY="324" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0004" x="2081" y="903" w="170" h="252" oX="477" oY="341" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0005" x="3712" y="1806" w="158" h="246" oX="505" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0006" x="7377" y="3192" w="203" h="210" oX="484" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0007" x="7762" y="1059" w="186" h="208" oX="482" oY="361" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0008" x="7008" y="3582" w="170" h="223" oX="480" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_W___0009" x="7775" y="1491" w="174" h="219" oX="481" oY="370" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0000" x="3162" y="2793" w="169" h="242" oX="487" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0001" x="677" y="4210" w="177" h="270" oX="500" oY="331" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0002" x="712" y="2198" w="212" h="299" oX="548" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0003" x="2077" y="616" w="174" h="285" oX="510" oY="344" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0004" x="833" y="3568" w="153" h="267" oX="485" oY="349" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0005" x="3308" y="2300" w="167" h="245" oX="496" oY="387" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0006" x="3281" y="3951" w="165" h="220" oX="495" oY="376" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0007" x="6993" y="3357" w="182" h="223" oX="484" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0008" x="3529" y="3033" w="183" h="238" oX="479" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WNW_0009" x="3674" y="2770" w="178" h="239" oX="486" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0000" x="6199" y="4448" w="187" h="202" oX="490" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0001" x="742" y="2725" w="180" h="284" oX="497" oY="294" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0002" x="1811" y="904" w="268" h="262" oX="545" oY="293" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0003" x="7607" y="454" w="278" h="241" oX="485" oY="315" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0004" x="5396" y="1116" w="225" h="214" oX="455" oY="345" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0005" x="4072" y="1401" w="208" h="225" oX="490" oY="348" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0006" x="4282" y="1861" w="220" h="210" oX="477" oY="347" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0007" x="5137" y="2720" w="213" h="206" oX="466" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0008" x="7376" y="2569" w="196" h="198" oX="476" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Got Hit 1_WSW_0009" x="3152" y="3753" w="197" h="196" oX="484" oY="365" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0000" x="6256" y="2927" w="160" h="228" oX="434" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0001" x="4027" y="4397" w="157" h="227" oX="436" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0002" x="6837" y="3367" w="154" h="224" oX="439" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0003" x="2813" y="3722" w="154" h="222" oX="440" oY="372" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0004" x="7022" y="3807" w="157" h="223" oX="438" oY="370" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0005" x="3477" y="2319" w="158" h="226" oX="434" oY="370" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0006" x="4068" y="3707" w="159" h="228" oX="432" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0007" x="4177" y="4167" w="156" h="227" oX="437" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0008" x="6850" y="3593" w="156" h="224" oX="444" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0009" x="3297" y="4173" w="160" h="222" oX="445" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0010" x="3651" y="4173" w="163" h="222" oX="442" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_E___0011" x="4013" y="4170" w="162" h="225" oX="437" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0000" x="3881" y="3478" w="186" h="227" oX="404" oY="386" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0001" x="6580" y="2920" w="184" h="225" oX="406" oY="389" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0002" x="3448" y="3951" w="182" h="220" oX="409" oY="392" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0003" x="7765" y="2794" w="183" h="220" oX="410" oY="389" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0004" x="7574" y="2569" w="185" h="223" oX="408" oY="387" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0005" x="6623" y="3147" w="186" h="225" oX="404" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0006" x="4186" y="4396" w="185" h="226" oX="403" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0007" x="6651" y="3374" w="184" h="225" oX="406" oY="387" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0008" x="3112" y="4173" w="183" h="222" oX="413" oY="385" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0009" x="3459" y="4173" w="190" h="222" oX="414" oY="382" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0010" x="3335" y="3270" w="192" h="224" oX="412" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ENE_0011" x="4229" y="3681" w="188" h="226" oX="407" oY="383" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0000" x="5086" y="3938" w="167" h="215" oX="426" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0001" x="5472" y="4364" w="160" h="216" oX="432" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0002" x="6943" y="4255" w="152" h="213" oX="440" oY="361" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0003" x="7607" y="697" w="153" h="209" oX="438" oY="360" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0004" x="4975" y="3620" w="159" h="212" oX="432" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0005" x="5327" y="3387" w="164" h="214" oX="427" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0006" x="7026" y="4032" w="166" h="216" oX="425" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0007" x="7097" y="4250" w="161" h="214" oX="432" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0008" x="4525" y="4155" w="158" h="208" oX="440" oY="361" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0009" x="4685" y="4155" w="164" h="208" oX="438" oY="361" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0010" x="6100" y="3590" w="168" h="208" oX="433" oY="360" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_ESE_0011" x="7194" y="4020" w="169" h="213" oX="426" oY="356" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0000" x="6445" y="1007" w="222" h="221" oX="433" oY="393" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0001" x="7103" y="1738" w="221" h="218" oX="434" oY="395" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0002" x="7124" y="1315" w="218" h="211" oX="436" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0003" x="2656" y="2226" w="217" h="209" oX="436" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0004" x="1824" y="3802" w="218" h="211" oX="435" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0005" x="7344" y="1317" w="222" h="216" oX="433" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0006" x="6668" y="1425" w="223" h="220" oX="432" oY="395" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0007" x="7326" y="1744" w="221" h="218" oX="432" oY="395" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0008" x="2319" y="4161" w="217" h="214" oX="433" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0009" x="2319" y="3946" w="218" h="213" oX="431" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0010" x="4948" y="1889" w="219" h="215" oX="431" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_N___0011" x="5848" y="1560" w="220" h="219" oX="433" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0000" x="5190" y="1517" w="204" h="214" oX="392" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0001" x="7377" y="3404" w="202" h="212" oX="394" oY="405" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0002" x="5255" y="3783" w="200" h="206" oX="397" oY="409" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0003" x="3152" y="3547" w="198" h="204" oX="399" oY="410" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0004" x="5043" y="4155" w="200" h="207" oX="396" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0005" x="7370" y="3812" w="203" h="211" oX="393" oY="407" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0006" x="6968" y="2556" w="204" h="214" oX="391" oY="404" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0007" x="7173" y="2965" w="203" h="212" oX="393" oY="404" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0008" x="1920" y="3595" w="206" h="205" oX="399" oY="405" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0009" x="5568" y="2720" w="212" h="205" oX="401" oY="402" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0010" x="6039" y="2327" w="214" h="207" oX="399" oY="401" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NE__0011" x="4072" y="1842" w="208" h="209" oX="395" oY="404" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0000" x="4739" y="1656" w="225" h="211" oX="402" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0001" x="7119" y="1104" w="223" h="209" oX="404" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0002" x="7103" y="2144" w="219" h="205" oX="407" oY="401" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0003" x="7324" y="2364" w="218" h="203" oX="407" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0004" x="7324" y="2158" w="219" h="204" oX="406" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0005" x="7344" y="1106" w="223" h="209" oX="403" oY="400" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0006" x="5396" y="1332" w="225" h="210" oX="401" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0007" x="7120" y="1528" w="222" h="208" oX="403" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0008" x="7103" y="2351" w="219" h="203" oX="406" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0009" x="4064" y="2053" w="216" h="199" oX="408" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0010" x="3647" y="1128" w="217" h="200" oX="407" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNE_0011" x="7344" y="1535" w="222" h="207" oX="404" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0000" x="4355" y="2252" w="191" h="233" oX="475" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0001" x="4599" y="3163" w="189" h="231" oX="476" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0002" x="4324" y="3909" w="190" h="226" oX="475" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0003" x="6270" y="3380" w="191" h="224" oX="474" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0004" x="6270" y="3606" w="191" h="227" oX="474" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0005" x="4943" y="2696" w="192" h="230" oX="475" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0006" x="4390" y="2722" w="191" h="232" oX="476" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0007" x="5301" y="3155" w="190" h="230" oX="474" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0008" x="4069" y="3452" w="190" h="227" oX="470" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0009" x="5493" y="3145" w="191" h="230" oX="467" oY="393" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0010" x="4193" y="2489" w="192" h="233" oX="468" oY="392" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NNW_0011" x="3966" y="2275" w="193" h="234" oX="471" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0000" x="3280" y="1330" w="189" h="245" oX="479" oY="386" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0001" x="6480" y="1645" w="182" h="242" oX="480" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0002" x="2730" y="4170" w="178" h="240" oX="479" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0003" x="3654" y="2528" w="179" h="240" oX="479" oY="386" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0004" x="529" y="2565" w="181" h="242" oX="479" oY="385" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0005" x="6290" y="1407" w="187" h="243" oX="479" oY="387" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0006" x="3457" y="1084" w="188" h="244" oX="480" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0007" x="6295" y="1652" w="183" h="243" oX="479" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0008" x="6491" y="2102" w="180" h="241" oX="473" oY="387" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0009" x="2167" y="4390" w="180" h="241" oX="474" oY="384" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0010" x="3333" y="2791" w="178" h="242" oX="481" oY="384" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_NW__0011" x="3471" y="1330" w="187" h="244" oX="480" oY="385" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0000" x="5388" y="2122" w="222" h="183" oX="425" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0001" x="7103" y="1958" w="221" h="184" oX="425" oY="374" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0002" x="5168" y="2111" w="218" h="183" oX="426" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0003" x="5383" y="2307" w="217" h="180" oX="427" oY="378" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0004" x="6070" y="1599" w="218" h="180" oX="427" oY="378" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0005" x="5612" y="2137" w="222" h="184" oX="425" oY="374" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0006" x="5391" y="1935" w="223" h="185" oX="425" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0007" x="6669" y="1047" w="221" h="181" oX="427" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0008" x="677" y="4482" w="217" h="173" oX="430" oY="385" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0009" x="5836" y="2155" w="218" h="169" oX="431" oY="390" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0010" x="4726" y="2089" w="219" h="170" oX="430" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_S___0011" x="4282" y="2073" w="220" h="177" oX="427" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0000" x="7761" y="2102" w="189" h="219" oX="412" oY="351" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0001" x="7967" y="3517" w="182" h="217" oX="418" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0002" x="4615" y="3625" w="178" h="213" oX="423" oY="356" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0003" x="5634" y="4332" w="179" h="214" oX="422" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0004" x="5289" y="4364" w="181" h="217" oX="420" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0005" x="4913" y="4365" w="187" h="219" oX="414" oY="351" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0006" x="7574" y="2794" w="189" h="220" oX="411" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0007" x="7966" y="3089" w="183" h="217" oX="418" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0008" x="7430" y="4269" w="180" h="210" oX="427" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0009" x="7612" y="4285" w="180" h="210" oX="426" oY="360" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0010" x="4795" y="3620" w="178" h="210" oX="421" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SE__0011" x="4719" y="3938" w="187" h="215" oX="413" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0000" x="5493" y="3600" w="191" h="207" oX="414" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0001" x="5815" y="4339" w="190" h="206" oX="414" oY="360" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0002" x="6262" y="4041" w="190" h="204" oX="415" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0003" x="6454" y="4047" w="190" h="203" oX="416" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0004" x="5992" y="2720" w="191" h="205" oX="415" oY="361" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0005" x="5245" y="4155" w="192" h="207" oX="413" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0006" x="4851" y="4155" w="190" h="208" oX="414" oY="358" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0007" x="6270" y="3835" w="191" h="204" oX="416" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0008" x="6015" y="4216" w="190" h="197" oX="420" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0009" x="5822" y="4143" w="191" h="194" oX="422" oY="372" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0010" x="3351" y="3753" w="193" h="196" oX="420" oY="370" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSE_0011" x="7581" y="3646" w="193" h="203" oX="416" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0000" x="6897" y="1315" w="225" h="167" oX="453" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0001" x="5842" y="1984" w="223" h="169" oX="453" oY="379" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0002" x="4947" y="2106" w="219" h="169" oX="454" oY="379" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0003" x="5602" y="2323" w="218" h="167" oX="455" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0004" x="4504" y="2075" w="220" h="167" oX="455" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0005" x="6067" y="1993" w="223" h="168" oX="454" oY="380" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0006" x="6893" y="1484" w="225" h="169" oX="454" oY="379" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0007" x="5616" y="1968" w="224" h="167" oX="454" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0008" x="6056" y="2163" w="219" h="162" oX="455" oY="386" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0009" x="5109" y="3387" w="216" h="158" oX="456" oY="390" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0010" x="7887" y="678" w="218" h="159" oX="456" oY="389" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SSW_0011" x="1456" y="3122" w="222" h="164" oX="454" oY="384" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0000" x="6965" y="2951" w="204" h="179" oX="484" oY="370" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0001" x="5289" y="3603" w="202" h="178" oX="484" oY="370" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0002" x="7950" y="839" w="199" h="179" oX="484" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0003" x="7950" y="1020" w="199" h="178" oX="483" oY="370" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0004" x="5867" y="3963" w="200" h="178" oX="484" oY="370" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0005" x="5457" y="3809" w="203" h="180" oX="484" oY="369" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0006" x="6559" y="2737" w="204" h="181" oX="485" oY="368" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0007" x="5662" y="3938" w="203" h="177" oX="484" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0008" x="1959" y="4481" w="206" h="174" oX="475" oY="374" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0009" x="6202" y="2545" w="213" h="173" oX="466" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0010" x="1743" y="4481" w="214" h="174" oX="467" oY="374" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_SW__0011" x="6967" y="2772" w="208" h="177" oX="477" oY="371" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0000" x="4780" y="2930" w="159" h="231" oX="487" oY="365" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0001" x="4790" y="3163" w="157" h="232" oX="487" oY="366" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0002" x="4255" y="2958" w="154" h="233" oX="487" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0003" x="4003" y="3938" w="154" h="230" oX="486" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0004" x="4261" y="3427" w="157" h="230" oX="485" oY="366" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0005" x="4941" y="2930" w="158" h="231" oX="488" oY="365" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0006" x="4949" y="3163" w="158" h="232" oX="489" oY="365" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0007" x="3302" y="4397" w="156" h="232" oX="487" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0008" x="3731" y="3718" w="156" h="232" oX="480" oY="368" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0009" x="6418" y="2926" w="160" h="229" oX="475" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0010" x="4159" y="3937" w="163" h="228" oX="475" oY="366" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_W___0011" x="3717" y="3487" w="162" h="229" oX="481" oY="365" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0000" x="1403" y="4038" w="167" h="242" oX="487" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0001" x="1572" y="4038" w="160" h="242" oX="488" oY="378" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0002" x="3500" y="2547" w="152" h="241" oX="488" oY="378" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0003" x="3714" y="3011" w="153" h="240" oX="489" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0004" x="3513" y="2790" w="159" h="241" oX="489" oY="376" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0005" x="1409" y="4282" w="164" h="242" oX="489" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0006" x="1575" y="4282" w="166" h="242" oX="489" oY="378" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0007" x="1942" y="4015" w="161" h="242" oX="487" oY="379" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0008" x="3807" y="2285" w="157" h="239" oX="483" oY="380" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0009" x="3835" y="2526" w="164" h="238" oX="478" oY="378" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0010" x="3854" y="2766" w="168" h="238" oX="479" oY="377" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WNW_0011" x="3637" y="2285" w="168" h="241" oX="485" oY="376" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WSW_0000" x="6838" y="4051" w="186" h="202" oX="490" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WSW_0001" x="6185" y="2720" w="184" h="205" oX="490" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WSW_0002" x="7967" y="3736" w="182" h="209" oX="489" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WSW_0003" x="7966" y="3308" w="183" h="207" oX="487" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WSW_0004" x="7742" y="4080" w="185" h="203" oX="487" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WSW_0005" x="6753" y="4452" w="186" h="203" oX="490" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WSW_0006" x="7554" y="4064" w="186" h="203" oX="492" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WSW_0007" x="7965" y="3947" w="184" h="206" oX="490" oY="364" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Idle_WSW_0008" x="7929" y="4155" w="184" h="206" oX="484" oY="367" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_E___0000" x="6388" y="4456" w="185" h="199" oX="412" oY="380" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_E___0001" x="7951" y="1823" w="195" h="195" oX="404" oY="378" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_E___0002" x="6399" y="4252" w="187" h="202" oX="410" oY="378" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_E___0003" x="7776" y="3437" w="188" h="215" oX="415" oY="382" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_E___0004" x="3632" y="3952" w="191" h="219" oX="409" oY="381" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_E___0005" x="7177" y="3179" w="198" h="214" oX="400" oY="375" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_E___0006" x="3352" y="3547" w="192" h="204" oX="404" oY="379" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_E___0007" x="6646" y="4051" w="190" h="202" oX="406" oY="385" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ENE_0000" x="5686" y="3544" w="205" h="207" oX="388" oY="402" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ENE_0001" x="5782" y="2720" w="208" h="205" oX="388" oY="402" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ENE_0002" x="4943" y="2277" w="218" h="209" oX="387" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ENE_0003" x="1604" y="3793" w="218" h="218" oX="391" oY="407" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ENE_0004" x="4741" y="1046" w="225" h="222" oX="384" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ENE_0005" x="3749" y="675" w="230" h="219" oX="378" oY="400" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ENE_0006" x="5631" y="933" w="225" h="210" oX="382" oY="401" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ENE_0007" x="4504" y="1867" w="220" h="206" oX="386" oY="406" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ESE_0000" x="7180" y="3576" w="195" h="217" oX="399" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ESE_0001" x="7933" y="2452" w="200" h="208" oX="394" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ESE_0002" x="7951" y="1622" w="197" h="199" oX="394" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ESE_0003" x="5858" y="945" w="224" h="205" oX="392" oY="356" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ESE_0004" x="7551" y="1958" w="207" h="209" oX="389" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ESE_0005" x="5899" y="3751" w="199" h="210" oX="395" oY="349" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ESE_0006" x="7575" y="3851" w="193" h="211" oX="401" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_ESE_0007" x="5633" y="4117" w="187" h="213" oX="405" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_N___0000" x="4615" y="3396" w="170" h="227" oX="448" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_N___0001" x="3546" y="3502" w="169" h="229" oX="448" oY="402" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_N___0002" x="3889" y="3707" w="177" h="229" oX="448" oY="397" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_N___0003" x="2349" y="4377" w="190" h="236" oX="439" oY="392" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_N___0004" x="4585" y="2930" w="193" h="231" oX="443" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_N___0005" x="7950" y="2662" w="182" h="221" oX="449" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_N___0006" x="7761" y="2569" w="170" h="223" oX="452" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_N___0007" x="6854" y="3819" w="166" h="224" oX="456" oY="395" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NE__0000" x="2105" y="3936" w="212" h="220" oX="387" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NE__0001" x="6886" y="2109" w="215" h="216" oX="387" oY="413" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NE__0002" x="6897" y="1091" w="220" h="222" oX="386" oY="409" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NE__0003" x="3071" y="845" w="222" h="237" oX="386" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NE__0004" x="1396" y="2882" w="227" h="238" oX="382" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NE__0005" x="3478" y="2059" w="230" h="224" oX="380" oY="411" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NE__0006" x="4282" y="1636" w="227" h="223" oX="384" oY="405" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NE__0007" x="5623" y="1145" w="218" h="226" oX="388" oY="401" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNE_0000" x="4387" y="2487" w="190" h="233" oX="408" oY="401" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNE_0001" x="4065" y="3218" w="192" h="232" oX="407" oY="406" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNE_0002" x="3326" y="608" w="192" h="235" oX="408" oY="401" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNE_0003" x="1190" y="1184" w="198" h="246" oX="403" oY="396" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNE_0004" x="3088" y="1084" w="198" h="244" oX="403" oY="402" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNE_0005" x="4968" y="1072" w="200" h="232" oX="404" oY="405" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNE_0006" x="3873" y="1568" w="197" h="233" oX="408" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNE_0007" x="4001" y="2511" w="190" h="234" oX="412" oY="395" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNW_0000" x="6100" y="3800" w="168" h="229" oX="489" oY="402" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNW_0001" x="6811" y="3140" w="168" h="225" oX="490" oY="405" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNW_0002" x="4548" y="2244" w="176" h="230" oX="489" oY="398" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNW_0003" x="4583" y="2698" w="197" h="230" oX="472" oY="393" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNW_0004" x="7568" y="1317" w="192" h="230" oX="483" oY="402" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNW_0005" x="3113" y="4397" w="187" h="231" oX="481" oY="407" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNW_0006" x="4420" y="3191" w="177" h="232" oX="482" oY="403" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NNW_0007" x="4411" y="2956" w="172" h="233" oX="486" oY="399" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NW__0000" x="7181" y="3795" w="187" h="223" oX="492" oY="409" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NW__0001" x="6658" y="3601" w="190" h="225" oX="492" oY="407" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NW__0002" x="3872" y="1806" w="198" h="227" oX="488" oY="404" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NW__0003" x="1422" y="3547" w="226" h="231" oX="463" oY="400" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NW__0004" x="6887" y="1880" w="214" h="227" oX="480" oY="409" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NW__0005" x="1734" y="4015" w="206" h="229" oX="480" oY="407" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NW__0006" x="5101" y="2928" w="197" h="225" oX="482" oY="408" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_NW__0007" x="4335" y="4137" w="188" h="226" oX="488" oY="406" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_S___0000" x="4419" y="3659" w="169" h="213" oX="463" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_S___0001" x="6772" y="4255" w="169" h="193" oX="463" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_S___0002" x="7794" y="4363" w="178" h="198" oX="454" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_S___0003" x="6981" y="3132" w="190" h="223" oX="451" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_S___0004" x="7581" y="3430" w="193" h="214" oX="444" oY="351" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_S___0005" x="6588" y="4255" w="182" h="195" oX="449" oY="348" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_S___0006" x="7974" y="4363" w="170" h="198" oX="458" oY="349" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_S___0007" x="4745" y="4365" w="166" h="220" oX="458" oY="351" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SE__0000" x="2541" y="4377" w="187" h="236" oX="401" oY="341" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SE__0001" x="7952" y="2020" w="190" h="219" oX="398" oY="340" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SE__0002" x="7951" y="1414" w="198" h="206" oX="394" oY="338" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SE__0003" x="4746" y="839" w="227" h="205" oX="390" oY="342" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SE__0004" x="5352" y="2720" w="214" h="204" oX="386" oY="339" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SE__0005" x="5491" y="2927" w="206" h="216" oX="394" oY="335" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SE__0006" x="5580" y="2492" w="197" h="226" oX="401" oY="337" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SE__0007" x="3869" y="3006" w="190" h="236" oX="403" oY="342" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSE_0000" x="4024" y="2747" w="168" h="234" oX="423" oY="341" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSE_0001" x="7260" y="4235" w="168" h="214" oX="422" oY="340" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSE_0002" x="6575" y="4456" w="176" h="199" oX="415" oY="337" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSE_0003" x="6766" y="2917" w="197" h="221" oX="411" oY="341" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSE_0004" x="4525" y="3938" w="192" h="215" oX="405" oY="338" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSE_0005" x="7365" y="4025" w="187" h="206" oX="412" oY="335" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSE_0006" x="4566" y="4365" w="177" h="221" oX="421" oY="336" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSE_0007" x="3890" y="2035" w="172" h="238" oX="422" oY="340" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSW_0000" x="6007" y="4415" w="190" h="200" oX="482" oY="358" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSW_0001" x="6069" y="4031" w="191" h="183" oX="481" oY="356" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSW_0002" x="5439" y="4155" w="192" h="207" oX="480" oY="352" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSW_0003" x="3870" y="1330" w="198" h="236" oX="479" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSW_0004" x="4787" y="3397" w="198" h="221" oX="479" oY="353" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSW_0005" x="7174" y="2569" w="200" h="198" oX="476" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSW_0006" x="7177" y="3395" w="197" h="179" oX="475" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SSW_0007" x="6207" y="4247" w="190" h="199" oX="478" oY="359" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SW__0000" x="6576" y="2545" w="212" h="190" oX="481" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SW__0001" x="7549" y="1764" w="215" h="192" oX="478" oY="354" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SW__0002" x="4726" y="1869" w="220" h="218" oX="474" oY="349" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SW__0003" x="1198" y="3542" w="222" h="238" oX="472" oY="349" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SW__0004" x="3520" y="608" w="227" h="228" oX="471" oY="350" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SW__0005" x="4282" y="804" w="230" h="209" oX="470" oY="352" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SW__0006" x="5175" y="888" w="227" h="192" oX="469" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_SW__0007" x="5163" y="2296" w="218" h="190" oX="474" oY="355" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_W___0000" x="5102" y="4364" w="185" h="219" oX="483" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_W___0001" x="3816" y="4179" w="195" h="216" oX="481" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_W___0002" x="7762" y="1269" w="187" h="220" oX="483" oY="368" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_W___0003" x="3460" y="4397" w="188" h="230" oX="477" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_W___0004" x="4373" y="4365" w="191" h="226" oX="480" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_W___0005" x="7951" y="1200" w="198" h="212" oX="482" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_W___0006" x="7770" y="3866" w="193" h="212" oX="484" oY="373" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_W___0007" x="7582" y="3016" w="190" h="218" oX="484" oY="372" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WNW_0000" x="5383" y="2489" w="195" h="229" oX="486" oY="390" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WNW_0001" x="2910" y="4166" w="200" h="229" oX="486" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WNW_0002" x="1743" y="4246" w="197" h="233" oX="489" oY="384" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WNW_0003" x="3647" y="896" w="224" h="230" oX="464" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WNW_0004" x="4073" y="740" w="207" h="231" oX="484" oY="394" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WNW_0005" x="2118" y="4158" w="199" h="230" oX="486" oY="388" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WNW_0006" x="4420" y="3425" w="193" h="227" oX="486" oY="389" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WNW_0007" x="3838" y="4397" w="187" h="227" oX="488" oY="390" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WSW_0000" x="5893" y="3555" w="205" h="194" oX="487" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WSW_0001" x="6463" y="2345" w="208" h="196" oX="484" oY="363" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WSW_0002" x="2902" y="3951" w="218" h="213" oX="475" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WSW_0003" x="6877" y="1655" w="218" h="223" oX="471" oY="357" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WSW_0004" x="5396" y="1544" w="225" h="218" oX="471" oY="358" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WSW_0005" x="4514" y="810" w="230" h="204" oX="472" oY="361" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WSW_0006" x="6084" y="964" w="225" h="195" oX="473" oY="362" oW="1080" oH="1080"/>
+    <sprite n="GargoyleHumanoid_Walk_WSW_0007" x="5169" y="1915" w="220" h="194" oX="474" oY="360" oW="1080" oH="1080"/>
+</TextureAtlas>

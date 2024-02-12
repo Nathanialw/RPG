@@ -75,7 +75,7 @@ void Render_Buffs(entt::registry &zone, entt::entity &entity, Rendering_Componen
 void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera &camera, Component::Scale &scale, Component::Renderable &renderable, Component::Position &position, Rendering_Components::Sprite_Offset &spriteOffset, Rendering_Components::Sprite_Sheet_Info &sheetData) {
   SDL_Rect clipRect;
   SDL_FRect renderRect;
-  if (sheetData.sheet_name == "Dragon")
+  if (sheetData.hexDir)
     int isa = 0;
 
   if (zone.any_of<Component::Interaction_Rect>(entity)) {
