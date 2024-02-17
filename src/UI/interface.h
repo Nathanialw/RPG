@@ -178,7 +178,7 @@ namespace Interface {
   }
 
   void Display_Selection_Box() {
-    if (Mouse::bLeft_Mouse_Pressed) {
+    if (Mouse::bLeft_Mouse_Pressed && ((Mouse::iXMouse - Mouse::Mouse_Selection_Box_x_Display) > 5.0f || (Mouse::iYMouse - Mouse::Mouse_Selection_Box_y_Display) > 5.0f)) {
       SDL_SetRenderDrawColor(Graphics::renderer, 55, 255, 55, 255);
       SDL_FRect p = {Mouse::Mouse_Selection_Box_x_Display, Mouse::Mouse_Selection_Box_y_Display, Mouse::iXMouse - Mouse::Mouse_Selection_Box_x_Display, Mouse::iYMouse - Mouse::Mouse_Selection_Box_y_Display};
       SDL_RenderDrawRectF(Graphics::renderer, &p);

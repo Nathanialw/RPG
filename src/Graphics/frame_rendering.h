@@ -76,15 +76,11 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
   SDL_Rect clipRect;
   SDL_FRect renderRect;
   if (sheetData.hexDir)
-    int isa = 0;
+    int hex = 0;
 
-  if (zone.any_of<Component::Interaction_Rect>(entity)) {
-    auto interactionRect = zone.get<Component::Interaction_Rect>(entity);
-    renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
-  } else {
-    Component::Interaction_Rect interactionRect = {};
-    renderRect = Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
-  }
+  Component::Interaction_Rect interactionRect = {};
+  renderRect = (zone.any_of<Component::Interaction_Rect>(entity)) ? Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, zone.get<Component::Interaction_Rect>(entity)) : Position_For_Render(sheetData.sheetData, sheetData.sheet_name, sheetData.frameIndex, position, camera, scale, spriteOffset, clipRect, renderRect, interactionRect);
+
   SDL_Texture *texture = sheetData.sheetData->at(sheetData.sheet_name).texture;
   SDL_SetTextureAlphaMod(texture, renderable.alpha);
   if (sheetData.blendType == Rendering_Components::ghost) {
@@ -94,7 +90,6 @@ void Render_Sprite(entt::registry &zone, entt::entity &entity, Component::Camera
   } else if (sheetData.blendType == Rendering_Components::reanimated) {
     Graphics::Render_FRect(texture, {155, 55, 55}, &clipRect, &renderRect);
   } else {
-    //    Graphics::Render_FRect(texture, sheetData.color, &clipRect, &renderRect);
     if (texture == Graphics::default_icon) {
       Graphics::Render_FRect(texture, sheetData.color, nullptr, &renderRect);
     } else {

@@ -343,6 +343,7 @@ namespace Maps {
     Get_Coords((int) camera.screen.x, x);
     Get_Coords((int) camera.screen.y, y);
 
+
     for (int i = x; i < (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
       for (int j = y; j < (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
         if (i < 0 || j < 0) {
@@ -360,12 +361,28 @@ namespace Maps {
             renderRect.y = (float) j * World::size.height - camera.screen.y;
             renderRect.w = (float) World::size.width;
             renderRect.h = (float) World::size.height;
-
-            //            SDL_RenderCopyF(Graphics::renderer, Graphics::fog, nullptr, &renderRect);
+            //
+            //            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BlendMode::SDL_BLENDMODE_BLEND);
+            //            SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 200);
+            //            SDL_RenderFillRectF(Graphics::renderer, &renderRect);
+            //
+            //            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BlendMode::SDL_BLENDMODE_BLEND);
+            //            renderRect = {
+            //                renderRect.x + renderRect.w * 0.25f,
+            //                renderRect.y + renderRect.w * 0.25f,
+            //                renderRect.w * 0.5f,
+            //                renderRect.h * 0.5f};
+            //            SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 255, 0);
+            //            SDL_RenderFillRectF(Graphics::renderer, &renderRect);
+            //
+            //
+            //            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BlendMode::SDL_BLENDMODE_BLEND);
+            //                SDL_RenderCopyF(Graphics::renderer, Graphics::fog, nullptr, &renderRect);
           }
         }
       }
     }
+    SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 0);
   }
 
   tmx::Map map;
