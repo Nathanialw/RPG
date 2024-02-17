@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:cd77705caaaafe2efc6e9660e6019180:18233bb29418616c5f1d37f1fa15e49f:9e68855c835322b9cc76f3f5e10dbc94$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="SerpentWarrior.png" width="4088" height="8746">
+    <sprite n="SerpentWarrior_Attack 1_E___0000" x="3818" y="1473" w="237" h="177" oX="350" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_E___0001" x="3545" y="1473" w="271" h="174" oX="349" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_E___0002" x="1277" y="1586" w="276" h="165" oX="344" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_E___0003" x="1555" y="1787" w="272" h="151" oX="339" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_E___0004" x="1870" y="209" w="320" h="146" oX="331" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_E___0005" x="355" y="5380" w="203" h="156" oX="361" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_E___0006" x="340" y="8102" w="191" h="165" oX="372" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_E___0007" x="2346" y="2678" w="218" h="162" oX="365" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_E___0008" x="1827" y="2257" w="253" h="170" oX="350" oY="394" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_E___0009" x="3319" y="1076" w="226" h="185" oX="357" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0000" x="235" y="1682" w="223" h="223" oX="373" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0001" x="3547" y="1040" w="247" h="225" oX="374" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0002" x="2082" y="2255" w="244" h="216" oX="377" oY="394" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0003" x="468" y="2373" w="231" h="206" oX="361" oY="403" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0004" x="2192" y="207" w="317" h="186" oX="344" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0005" x="1634" y="4167" w="209" h="184" oX="358" oY="403" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0006" x="1845" y="4166" w="187" h="187" oX="378" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0007" x="2445" y="4608" w="219" h="192" oX="370" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0008" x="262" y="870" w="226" h="209" oX="363" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ENE_0009" x="402" y="5795" w="195" h="228" oX="388" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0000" x="2445" y="4802" w="228" h="153" oX="355" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0001" x="554" y="5047" w="259" h="139" oX="351" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0002" x="1601" y="256" w="267" h="136" oX="341" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0003" x="1225" y="733" w="289" h="133" oX="345" oY="412" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0004" x="3106" y="655" w="283" h="137" oX="345" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0005" x="1248" y="6789" w="179" h="151" oX="387" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0006" x="2114" y="5582" w="182" h="158" oX="388" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0007" x="2106" y="5742" w="203" h="160" oX="381" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0008" x="1128" y="2545" w="255" h="163" oX="361" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_ESE_0009" x="2445" y="4957" w="234" h="155" oX="353" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0000" x="211" y="3006" w="162" h="282" oX="458" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0001" x="196" y="3301" w="95" h="281" oX="497" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0002" x="666" y="3832" w="98" h="280" oX="496" oY="382" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0003" x="772" y="1348" w="163" h="287" oX="456" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0004" x="235" y="1350" w="107" h="330" oX="504" oY="347" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0005" x="701" y="2139" w="108" h="258" oX="475" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0006" x="3970" y="816" w="117" h="242" oX="492" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0007" x="930" y="1081" w="140" h="264" oX="493" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0008" x="766" y="3815" w="146" h="273" oX="482" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_N___0009" x="914" y="3812" w="162" h="272" oX="457" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0000" x="936" y="2135" w="195" h="258" oX="420" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0001" x="1327" y="868" w="187" h="261" oX="424" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0002" x="410" y="5538" w="182" h="255" oX="431" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0003" x="549" y="6908" w="200" h="248" oX="405" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0004" x="1222" y="267" w="270" h="246" oX="382" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0005" x="2034" y="4159" w="194" h="211" oX="375" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0006" x="490" y="870" w="168" h="209" oX="402" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0007" x="406" y="8509" w="204" h="215" oX="396" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0008" x="182" y="6013" w="212" h="243" oX="400" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NE__0009" x="380" y="6383" w="169" h="260" oX="433" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0000" x="165" y="7669" w="164" h="279" oX="460" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0001" x="679" y="4114" w="131" h="280" oX="465" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0002" x="3319" y="794" w="144" h="280" oX="465" oY="385" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0003" x="623" y="1862" w="156" h="275" oX="458" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0004" x="1" y="3301" w="193" h="299" oX="438" oY="366" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0005" x="406" y="8269" w="152" h="238" oX="420" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0006" x="258" y="8493" w="146" h="230" oX="442" oY="413" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0007" x="2211" y="2929" w="184" h="250" oX="439" oY="402" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0008" x="260" y="1081" w="164" h="267" oX="461" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNE_0009" x="669" y="3539" w="153" h="274" oX="463" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0000" x="794" y="2710" w="183" h="264" oX="465" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0001" x="1211" y="3737" w="165" h="261" oX="488" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0002" x="937" y="1626" w="166" h="259" oX="494" oY="382" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0003" x="840" y="267" w="213" h="278" oX="439" oY="384" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0004" x="166" y="6690" w="117" h="327" oX="512" oY="342" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0005" x="874" y="2976" w="107" h="264" oX="507" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0006" x="1384" y="2710" w="122" h="238" oX="504" oY="410" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0007" x="1078" y="3771" w="131" h="263" oX="501" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0008" x="426" y="1081" w="166" h="265" oX="468" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NNW_0009" x="396" y="6025" w="203" h="249" oX="458" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0000" x="2230" y="4153" w="213" h="230" oX="482" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0001" x="2445" y="4386" w="218" h="220" oX="483" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0002" x="1745" y="3155" w="228" h="228" oX="484" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0003" x="1601" y="1" w="267" h="253" oX="438" oY="379" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0004" x="1" y="3006" w="208" h="293" oX="485" oY="349" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0005" x="1371" y="2950" w="144" h="257" oX="513" oY="379" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0006" x="1031" y="5797" w="151" h="222" oX="506" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0007" x="937" y="1887" w="166" h="246" oX="498" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0008" x="1158" y="2710" w="224" h="238" oX="461" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_NW__0009" x="1508" y="2701" w="234" h="223" oX="471" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0000" x="3204" y="5449" w="162" h="140" oX="460" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0001" x="3958" y="7500" w="95" h="143" oX="488" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0002" x="3136" y="4445" w="98" h="156" oX="486" oY="379" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0003" x="815" y="5031" w="164" h="158" oX="461" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0004" x="3134" y="4603" w="107" h="156" oX="469" oY="378" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0005" x="2841" y="5780" w="108" h="157" oX="497" oY="375" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0006" x="3969" y="1060" w="118" h="160" oX="470" oY="372" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0007" x="3079" y="2266" w="140" h="153" oX="447" oY="380" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0008" x="3810" y="7505" w="146" h="138" oX="452" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_S___0009" x="3636" y="7800" w="162" h="137" oX="461" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0000" x="2230" y="4744" w="213" h="140" oX="385" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0001" x="2821" y="2817" w="218" h="131" oX="379" oY="410" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0002" x="2790" y="3473" w="228" h="126" oX="368" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0003" x="1508" y="1215" w="267" h="124" oX="375" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0004" x="3715" y="4283" w="208" h="134" oX="387" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0005" x="2996" y="7974" w="144" h="152" oX="423" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0006" x="2556" y="7635" w="152" h="158" oX="423" oY="382" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0007" x="3921" y="2724" w="166" h="157" oX="416" oY="384" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0008" x="805" y="5998" w="224" h="152" oX="395" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SE__0009" x="2774" y="3965" w="234" h="139" oX="375" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0000" x="1388" y="8363" w="183" h="126" oX="432" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0001" x="3922" y="4874" w="165" h="127" oX="427" oY="409" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0002" x="3921" y="3166" w="166" h="135" oX="420" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0003" x="2230" y="4886" w="213" h="132" oX="428" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0004" x="1295" y="6021" w="117" h="147" oX="451" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0005" x="2845" y="6912" w="107" h="157" oX="466" oY="379" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0006" x="2839" y="5620" w="122" h="158" oX="454" oY="377" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0007" x="2632" y="8453" w="131" h="155" oX="448" oY="381" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0008" x="3921" y="3025" w="166" h="139" oX="446" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSE_0009" x="2697" y="6661" w="202" h="125" oX="419" oY="413" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0000" x="3800" y="7811" w="162" h="135" oX="457" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0001" x="2829" y="5476" w="135" h="142" oX="481" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0002" x="3761" y="7026" w="138" h="161" oX="476" oY="376" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0003" x="1385" y="2509" w="158" h="172" oX="462" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0004" x="1845" y="4966" w="186" h="146" oX="453" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0005" x="3649" y="7335" w="159" h="165" oX="505" oY="368" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0006" x="2710" y="7516" w="141" h="163" oX="498" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0007" x="3742" y="6215" w="182" h="154" oX="458" oY="380" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0008" x="3368" y="5448" w="168" h="141" oX="455" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SSW_0009" x="2756" y="7805" w="152" h="139" oX="464" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0000" x="3182" y="5912" w="195" h="134" oX="465" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0001" x="2910" y="6788" w="187" h="122" oX="469" oY="417" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0002" x="3535" y="6650" w="182" h="144" oX="467" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0003" x="981" y="4797" w="200" h="176" oX="475" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0004" x="3545" y="1649" w="270" h="146" oX="428" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0005" x="2034" y="4372" w="194" h="172" oX="511" oY="364" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0006" x="3200" y="5591" w="168" h="163" oX="510" oY="373" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0007" x="3250" y="4936" w="204" h="151" oX="480" oY="385" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0008" x="1414" y="6063" w="212" h="148" oX="468" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_SW__0009" x="3465" y="7795" w="169" h="139" oX="478" oY="403" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0000" x="1628" y="6064" w="236" h="174" oX="493" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0001" x="1277" y="1913" w="272" h="158" oX="460" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0002" x="1277" y="1753" w="276" h="158" oX="460" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0003" x="3270" y="1436" w="273" h="181" oX="468" oY="380" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0004" x="1870" y="357" w="320" h="166" oX="429" oY="394" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0005" x="978" y="4600" w="203" h="195" oX="516" oY="366" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0006" x="1441" y="4249" w="191" h="172" oX="517" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0007" x="3044" y="2950" w="218" h="171" oX="497" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0008" x="2566" y="2683" w="253" h="176" oX="477" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_W___0009" x="2119" y="6425" w="226" h="171" oX="497" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0000" x="1628" y="5114" w="228" h="202" oX="497" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0001" x="2589" y="1868" w="259" h="193" oX="470" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0002" x="1601" y="394" w="267" h="195" oX="472" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0003" x="2510" y="405" w="289" h="216" oX="446" oY="378" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0004" x="3106" y="419" w="283" h="234" oX="452" oY="368" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0005" x="1447" y="5079" w="179" h="233" oX="514" oY="371" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0006" x="3042" y="2421" w="182" h="198" oX="510" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0007" x="773" y="4580" w="203" h="215" oX="496" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0008" x="2567" y="2063" w="255" h="201" oX="464" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WNW_0009" x="1628" y="5862" w="233" h="200" oX="494" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0000" x="3258" y="3640" w="223" h="151" oX="484" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0001" x="265" y="416" w="247" h="126" oX="459" oY="418" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0002" x="467" y="2581" w="244" h="127" oX="459" oY="417" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0003" x="1384" y="7146" w="231" h="182" oX="488" oY="385" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0004" x="2192" y="395" w="316" h="152" oX="420" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0005" x="601" y="4396" w="209" h="182" oX="513" oY="363" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0006" x="3795" y="1305" w="187" h="166" oX="515" oY="380" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0007" x="3236" y="4449" w="219" h="152" oX="491" oY="394" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0008" x="3041" y="3123" w="226" h="158" oX="491" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Attack 1_WSW_0009" x="2033" y="4958" w="195" h="155" oX="497" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_E___0000" x="2051" y="1699" w="285" h="139" oX="429" oY="477" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_ENE_0000" x="2912" y="1752" w="284" h="151" oX="443" oY="455" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_ESE_0000" x="2824" y="2259" w="253" h="157" oX="425" oY="482" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_NE__0000" x="2306" y="3883" w="189" h="250" oX="467" oY="355" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_NE__0000" x="1176" y="5417" w="254" h="176" oX="459" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_NNE_0000" x="842" y="875" w="200" h="204" oX="480" oY="417" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_NNW_0000" x="1175" y="8456" w="196" h="218" oX="438" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_NW__0000" x="1625" y="6570" w="234" h="193" oX="417" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_S___0000" x="1446" y="4867" w="180" h="210" oX="429" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_SE__0000" x="1625" y="6966" w="234" h="193" oX="429" oY="468" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_SSE_0000" x="2033" y="4546" w="195" h="210" oX="447" oY="458" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_SSW_0000" x="981" y="4975" w="200" h="189" oX="400" oY="448" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_SW__0000" x="1858" y="5332" w="254" h="168" oX="367" oY="453" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_W___0000" x="2625" y="1733" w="285" h="133" oX="366" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_WNW_0000" x="2110" y="8101" w="253" h="150" oX="402" oY="428" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Dead_WSW_0000" x="3483" y="1797" w="284" h="142" oX="353" oY="465" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0000" x="3020" y="3465" w="234" h="173" oX="421" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0001" x="2082" y="2624" w="262" h="160" oX="387" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0002" x="814" y="5380" w="239" h="159" oX="381" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0003" x="1861" y="6756" w="253" h="141" oX="343" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0004" x="3284" y="7655" w="190" h="138" oX="391" oY="417" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0005" x="2697" y="6788" w="211" h="122" oX="391" oY="440" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0006" x="3415" y="354" w="320" h="111" oX="371" oY="481" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0007" x="1516" y="1089" w="279" h="124" oX="436" oY="476" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0008" x="1777" y="1269" w="285" h="138" oX="430" oY="479" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_E___0009" x="2051" y="1699" w="285" h="139" oX="429" oY="477" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0000" x="2033" y="5115" w="212" h="215" oX="437" oY="374" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0001" x="2304" y="2061" w="261" h="187" oX="389" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0002" x="756" y="8098" w="223" h="169" oX="396" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0003" x="3484" y="3793" w="219" h="172" oX="360" oY="422" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0004" x="1573" y="8339" w="181" h="150" oX="413" oY="438" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0005" x="2853" y="7385" w="206" h="143" oX="405" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0006" x="1507" y="591" w="308" h="128" oX="395" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0007" x="1797" y="1107" w="280" h="160" oX="446" oY="455" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0008" x="3198" y="1752" w="283" h="149" oX="444" oY="457" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ENE_0009" x="2912" y="1752" w="284" h="151" oX="443" oY="455" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0000" x="2103" y="5904" w="238" h="153" oX="421" oY="420" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0001" x="1866" y="6426" w="251" h="148" oX="408" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0002" x="2116" y="6756" w="250" h="159" oX="389" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0003" x="2793" y="2950" w="249" h="154" oX="356" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0004" x="2855" y="7229" w="192" h="154" oX="391" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0005" x="1634" y="4353" w="209" h="134" oX="397" oY="429" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0006" x="2499" y="623" w="292" h="133" oX="372" oY="467" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0007" x="3011" y="3640" w="245" h="141" oX="434" oY="480" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0008" x="560" y="5380" w="252" h="156" oX="426" oY="482" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_ESE_0009" x="2824" y="2259" w="253" h="157" oX="425" oY="482" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0000" x="812" y="4090" w="164" h="273" oX="459" oY="338" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0001" x="2081" y="3385" w="110" h="256" oX="479" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0002" x="1055" y="5344" w="119" h="232" oX="466" oY="402" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0003" x="2650" y="3842" w="122" h="249" oX="493" oY="426" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0004" x="2474" y="6917" w="139" h="187" oX="496" oY="446" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0005" x="2555" y="6552" w="140" h="188" oX="497" oY="443" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0006" x="1140" y="4036" w="132" h="261" oX="499" oY="363" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0007" x="1120" y="7788" w="167" h="222" oX="467" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0008" x="981" y="8025" w="180" h="224" oX="474" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_N___0009" x="992" y="8477" w="181" h="223" oX="470" oY="394" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0000" x="2306" y="3883" w="189" h="250" oX="467" oY="355" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0001" x="309" y="7130" w="225" h="213" oX="413" oY="378" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0002" x="1373" y="7961" w="175" h="200" oX="433" oY="410" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0003" x="1441" y="4423" w="191" h="221" oX="404" oY="417" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0004" x="3370" y="5591" w="167" h="166" oX="448" oY="449" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0005" x="1432" y="5470" w="194" h="168" oX="437" oY="444" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0006" x="2824" y="2063" w="253" h="194" oX="439" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0007" x="1825" y="2601" w="255" h="176" oX="459" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0008" x="1826" y="2429" w="254" h="170" oX="459" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NE__0009" x="1176" y="5417" w="254" h="176" oX="459" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0000" x="636" y="2710" w="156" h="270" oX="491" oY="344" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0001" x="978" y="4358" w="160" h="240" oX="457" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0002" x="1494" y="267" w="105" h="224" oX="484" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0003" x="2445" y="4135" w="138" h="249" oX="468" oY="419" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0004" x="2467" y="7106" w="157" h="182" oX="473" oY="448" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0005" x="812" y="4365" w="164" h="180" oX="477" oY="449" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0006" x="701" y="623" w="176" h="245" oX="481" oY="380" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0007" x="1186" y="7338" w="203" h="201" oX="479" oY="409" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0008" x="2363" y="2473" w="201" h="203" oX="480" oY="417" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNE_0009" x="842" y="875" w="200" h="204" oX="480" oY="417" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0000" x="1634" y="3908" w="191" h="257" oX="429" oY="342" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0001" x="2497" y="3842" w="151" h="250" oX="445" oY="374" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0002" x="1858" y="5114" w="173" h="216" oX="443" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0003" x="1133" y="2134" w="142" h="235" oX="481" oY="428" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0004" x="1550" y="7939" w="128" h="198" oX="502" oY="424" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0005" x="3079" y="2063" w="133" h="201" oX="489" oY="420" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0006" x="2111" y="3643" w="162" h="253" oX="473" oY="355" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0007" x="1168" y="8235" w="218" h="219" oX="437" oY="382" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0008" x="1441" y="4646" w="191" h="219" oX="444" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NNW_0009" x="1175" y="8456" w="196" h="218" oX="438" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0000" x="542" y="4580" w="229" h="224" oX="416" oY="352" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0001" x="1634" y="4489" w="209" h="229" oX="424" oY="378" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0002" x="3226" y="2417" w="227" h="182" oX="434" oY="417" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0003" x="1418" y="5640" w="208" h="216" oX="476" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0004" x="1105" y="1625" w="170" h="194" oX="498" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0005" x="2189" y="8390" w="175" h="196" oX="480" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0006" x="468" y="2139" w="231" h="232" oX="451" oY="362" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0007" x="2157" y="3181" w="239" h="200" oX="421" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0008" x="2790" y="3277" w="226" h="194" oX="424" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_NW__0009" x="1625" y="6570" w="234" h="193" oX="417" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0000" x="3370" y="5759" w="164" h="147" oX="457" oY="438" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0001" x="1988" y="8275" w="110" h="170" oX="491" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0002" x="1054" y="5166" w="120" h="176" oX="495" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0003" x="3965" y="2163" w="122" h="172" oX="465" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0004" x="2341" y="7463" w="139" h="171" oX="445" oY="371" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0005" x="2555" y="6742" w="140" h="155" oX="443" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0006" x="1140" y="4299" w="132" h="207" oX="449" oY="383" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0007" x="1388" y="8163" w="167" h="198" oX="446" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0008" x="660" y="870" w="180" h="209" oX="426" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_S___0009" x="1446" y="4867" w="180" h="210" oX="429" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0000" x="3690" y="2677" w="229" h="136" oX="435" oY="443" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0001" x="3533" y="6056" w="208" h="148" oX="447" oY="420" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0002" x="3010" y="3964" w="226" h="167" oX="419" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0003" x="1634" y="4720" w="209" h="165" oX="396" oY="381" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0004" x="1105" y="1821" w="170" h="165" oX="412" oY="382" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0005" x="2910" y="7828" w="175" h="144" oX="425" oY="421" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0006" x="3473" y="3967" w="231" h="168" oX="398" oY="430" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0007" x="1866" y="6247" w="239" h="177" oX="420" oY="466" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0008" x="1156" y="7144" w="226" h="192" oX="430" oY="468" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SE__0009" x="1625" y="6966" w="234" h="193" oX="429" oY="468" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0000" x="3798" y="7948" w="191" h="135" oX="460" oY="449" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0001" x="2328" y="7291" w="151" h="170" oX="484" oY="409" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0002" x="2345" y="6250" w="173" h="171" oX="464" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0003" x="1133" y="2371" w="142" h="172" oX="457" oY="372" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0004" x="2344" y="6917" w="128" h="172" oX="450" oY="373" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0005" x="2343" y="5907" w="133" h="150" oX="458" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0006" x="3926" y="3604" w="161" h="198" oX="446" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0007" x="2821" y="2618" w="218" h="197" oX="425" oY="457" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0008" x="767" y="7129" w="192" h="208" oX="444" oY="459" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSE_0009" x="2033" y="4546" w="195" h="210" oX="447" oY="458" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0000" x="2910" y="7686" w="156" h="140" oX="433" oY="440" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0001" x="3476" y="7635" w="160" h="158" oX="464" oY="423" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0002" x="3984" y="1222" w="103" h="171" oX="492" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0003" x="2481" y="7290" w="140" h="171" oX="474" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0004" x="3800" y="7645" w="158" h="164" oX="449" oY="376" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0005" x="3920" y="5924" w="164" h="147" oX="439" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0006" x="1557" y="8139" w="178" h="198" oX="420" oY="384" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0007" x="2908" y="5078" w="203" h="176" oX="398" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0008" x="1373" y="8491" w="201" h="186" oX="399" oY="449" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SSW_0009" x="981" y="4975" w="200" h="189" oX="400" oY="448" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0000" x="351" y="4701" w="189" h="145" oX="424" oY="439" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0001" x="2681" y="5123" w="225" h="157" oX="442" oY="423" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0002" x="3743" y="6049" w="175" h="164" oX="472" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0003" x="2462" y="5660" w="191" h="164" oX="485" oY="379" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0004" x="3920" y="5362" w="167" h="155" oX="465" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0005" x="3041" y="2822" w="194" h="126" oX="449" oY="424" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0006" x="1031" y="6162" w="253" h="173" oX="388" oY="402" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0007" x="1" y="8573" w="255" h="172" oX="366" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0008" x="1858" y="5502" w="254" h="164" oX="367" oY="453" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_SW__0009" x="1858" y="5332" w="254" h="168" oX="367" oY="453" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0000" x="3451" y="3282" w="234" h="173" oX="425" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0001" x="713" y="2540" w="262" h="168" oX="431" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0002" x="3473" y="4137" w="240" h="150" oX="459" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0003" x="3710" y="2163" w="253" h="157" oX="484" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0004" x="2363" y="6595" w="190" h="159" oX="499" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0005" x="2364" y="7795" w="211" h="149" oX="478" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0006" x="3746" y="208" w="320" h="151" oX="389" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0007" x="3264" y="1619" w="279" h="131" oX="365" oY="452" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0008" x="2338" y="1716" w="285" h="131" oX="365" oY="449" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_W___0009" x="2625" y="1733" w="285" h="133" oX="366" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0000" x="1863" y="5857" w="238" h="200" oX="421" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0001" x="553" y="5188" w="251" h="190" oX="421" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0002" x="1864" y="7303" w="249" h="154" oX="442" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0003" x="2094" y="6917" w="248" h="178" oX="476" oY="410" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0004" x="1995" y="8447" w="192" h="175" oX="497" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0005" x="3256" y="3465" w="209" h="173" oX="474" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0006" x="2511" y="206" w="292" h="197" oX="416" oY="379" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0007" x="1617" y="7161" w="245" h="160" oX="401" oY="417" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0008" x="2110" y="7795" w="252" h="151" oX="402" oY="427" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WNW_0009" x="2110" y="8101" w="253" h="150" oX="402" oY="428" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0000" x="1414" y="6213" w="212" h="159" oX="431" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0001" x="1183" y="4924" w="261" h="157" oX="430" oY="410" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0002" x="2365" y="7946" w="223" h="158" oX="461" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0003" x="3705" y="3791" w="219" h="159" oX="501" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0004" x="3738" y="5213" w="181" h="147" oX="486" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0005" x="2901" y="6650" w="206" h="136" oX="469" oY="410" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0006" x="2391" y="1282" w="308" h="125" oX="377" oY="436" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0007" x="3766" y="2005" w="280" h="156" oX="354" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0008" x="3198" y="1903" w="283" h="140" oX="353" oY="462" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Death_WSW_0009" x="3483" y="1797" w="284" h="142" oX="353" oY="465" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0000" x="3446" y="2235" w="237" h="175" oX="418" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0001" x="1183" y="4596" w="256" h="163" oX="410" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0002" x="3310" y="1263" w="235" h="171" oX="420" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0003" x="3538" y="5426" w="195" h="163" oX="426" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0004" x="2665" y="5987" w="179" h="167" oX="441" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0005" x="3280" y="5089" w="200" h="165" oX="421" oY="410" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0006" x="2110" y="7636" w="239" h="157" oX="385" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0007" x="2787" y="3106" w="252" h="169" oX="417" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0008" x="1183" y="5083" w="262" h="163" oX="417" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_E___0009" x="1628" y="6240" w="236" h="176" oX="418" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0000" x="1555" y="1566" w="215" h="219" oX="437" oY="375" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0001" x="2048" y="2048" w="254" h="205" oX="429" oY="384" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0002" x="3547" y="1267" w="246" h="204" oX="430" oY="382" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0003" x="1845" y="4355" w="187" h="188" oX="455" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0004" x="3925" y="4383" w="162" h="183" oX="454" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0005" x="3269" y="3108" w="180" h="193" oX="438" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0006" x="3221" y="2227" w="223" h="188" oX="398" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0007" x="1866" y="6059" w="239" h="186" oX="410" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0008" x="3817" y="1652" w="270" h="201" oX="422" oY="382" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ENE_0009" x="309" y="6908" w="238" h="220" oX="432" oY="372" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0000" x="3238" y="4126" w="233" h="159" oX="418" oY="418" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0001" x="2720" y="4106" w="246" h="154" oX="411" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0002" x="2590" y="7946" w="211" h="158" oX="427" oY="410" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0003" x="3482" y="5086" w="203" h="171" oX="413" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0004" x="2368" y="6756" w="178" h="159" oX="436" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0005" x="2850" y="7071" w="196" h="156" oX="418" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0006" x="3236" y="3793" w="246" h="157" oX="395" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0007" x="2769" y="3601" w="240" h="173" oX="437" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0008" x="1183" y="4761" w="256" h="161" oX="426" oY="413" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_ESE_0009" x="2968" y="4133" w="245" h="154" oX="420" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0000" x="1105" y="1347" w="170" h="276" oX="455" oY="342" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0001" x="2128" y="3898" w="176" h="253" oX="440" oY="371" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0002" x="601" y="6022" w="196" h="244" oX="427" oY="375" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0003" x="3041" y="2621" w="196" h="199" oX="443" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0004" x="2338" y="6059" w="138" h="189" oX="476" oY="420" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0005" x="1034" y="5578" w="140" h="217" oX="466" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0006" x="1827" y="3907" w="138" h="257" oX="468" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0007" x="1930" y="3385" w="149" h="257" oX="482" oY="368" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0008" x="811" y="2103" w="123" h="275" oX="485" oY="350" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_N___0009" x="699" y="268" w="139" h="279" oX="474" oY="341" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0000" x="1737" y="3392" w="191" h="254" oX="470" oY="358" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0001" x="774" y="8269" w="216" h="231" oX="463" oY="379" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0002" x="2418" y="5282" w="223" h="221" oX="456" oY="384" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0003" x="1289" y="7755" w="183" h="204" oX="475" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0004" x="1737" y="8058" w="135" h="194" oX="472" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0005" x="1268" y="7541" w="144" h="212" oX="464" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0006" x="1975" y="3155" w="180" h="228" oX="431" oY="385" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0007" x="1269" y="1131" w="237" h="214" oX="421" oY="380" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0008" x="1277" y="1347" w="242" h="237" oX="441" oY="366" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NE__0009" x="1163" y="2950" w="206" h="256" oX="461" oY="355" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0000" x="468" y="2710" w="166" h="271" oX="487" oY="349" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0001" x="2591" y="3592" w="176" h="248" oX="478" oY="375" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0002" x="1163" y="8012" w="208" h="221" oX="453" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0003" x="961" y="7129" w="193" h="207" oX="461" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0004" x="2585" y="4094" w="133" h="196" oX="481" oY="418" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0005" x="2290" y="5271" w="126" h="222" oX="477" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0006" x="2275" y="3630" w="134" h="251" oX="474" oY="383" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0007" x="599" y="5779" w="204" h="241" oX="450" oY="371" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0008" x="979" y="2710" w="177" h="264" oX="474" oY="355" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNE_0009" x="647" y="3262" w="153" h="275" oX="492" oY="345" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0000" x="340" y="7841" w="191" h="259" oX="430" oY="346" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0001" x="2592" y="3324" w="196" h="249" oX="417" oY="363" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0002" x="2399" y="3340" w="191" h="250" oX="417" oY="361" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0003" x="2675" y="4751" w="201" h="184" oX="436" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0004" x="2868" y="8261" w="149" h="186" oX="479" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0005" x="1474" y="7735" w="168" h="202" oX="464" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0006" x="2398" y="3092" w="160" h="246" oX="446" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0007" x="1362" y="3209" w="153" h="258" oX="442" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0008" x="978" y="4086" w="160" h="270" oX="443" oY="351" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NNW_0009" x="983" y="2976" w="178" h="264" oX="441" oY="345" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0000" x="805" y="5541" w="227" h="226" oX="420" oY="355" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0001" x="2328" y="2250" w="237" h="221" oX="412" oY="367" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0002" x="560" y="8269" w="212" h="232" oX="423" oY="360" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0003" x="3239" y="2601" w="218" h="180" oX="443" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0004" x="460" y="1680" w="163" h="179" oX="477" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0005" x="3735" y="5362" w="183" h="183" oX="470" oY="409" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0006" x="1827" y="2033" w="219" h="222" oX="435" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0007" x="2193" y="3383" w="204" h="245" oX="414" oY="373" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0008" x="3465" y="791" w="222" h="247" oX="410" oY="359" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_NW__0009" x="313" y="7345" w="225" h="231" oX="419" oY="357" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0000" x="1105" y="1988" w="170" h="144" oX="455" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0001" x="3019" y="8425" w="176" h="154" oX="464" oY="435" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0002" x="3252" y="3303" w="197" h="160" oX="457" oY="426" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0003" x="3539" y="5591" w="197" h="169" oX="441" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0004" x="2482" y="7463" w="138" h="170" oX="466" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0005" x="3761" y="6858" w="140" h="166" oX="474" oY="419" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0006" x="3810" y="7335" w="138" h="168" oX="474" oY="418" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0007" x="2868" y="8449" w="149" h="152" oX="449" oY="436" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0008" x="3960" y="7645" w="123" h="146" oX="472" oY="445" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_S___0009" x="3167" y="6797" w="139" h="142" oX="467" oY="444" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0000" x="2626" y="7229" w="227" h="144" oX="433" oY="439" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0001" x="1628" y="6418" w="236" h="150" oX="431" oY="429" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0002" x="2115" y="7298" w="211" h="163" oX="445" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0003" x="3706" y="3952" w="217" h="171" oX="419" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0004" x="3924" y="3440" w="163" h="162" oX="440" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0005" x="3734" y="6371" w="183" h="162" oX="427" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0006" x="3243" y="4603" w="219" h="156" oX="426" oY="421" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0007" x="3479" y="5259" w="204" h="165" oX="462" oY="422" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0008" x="533" y="8101" w="221" h="166" oX="448" oY="427" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SE__0009" x="3457" y="4450" w="225" h="148" oX="436" oY="437" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0000" x="2803" y="7974" w="191" h="129" oX="459" oY="455" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0001" x="3109" y="6650" w="197" h="145" oX="467" oY="441" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0002" x="3542" y="6363" w="190" h="161" oX="472" oY="422" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0003" x="3536" y="5762" w="200" h="166" oX="443" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0004" x="977" y="2540" w="149" h="168" oX="452" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0005" x="3919" y="6371" w="168" h="165" oX="448" oY="418" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0006" x="3638" y="7639" w="160" h="159" oX="474" oY="425" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0007" x="3181" y="8190" w="153" h="154" oX="485" oY="432" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0008" x="3019" y="8261" w="160" h="162" oX="477" oY="438" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSE_0009" x="3469" y="7499" w="178" h="134" oX="461" oY="453" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0000" x="3920" y="6073" w="164" h="139" oX="428" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0001" x="2577" y="7795" w="177" h="149" oX="425" oY="436" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0002" x="3178" y="6048" w="207" h="158" oX="420" oY="425" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0003" x="2671" y="6156" w="197" h="167" oX="423" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0004" x="3397" y="6205" w="134" h="169" oX="465" oY="412" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0005" x="1286" y="6170" w="126" h="167" oX="477" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0006" x="3950" y="7335" w="130" h="163" oX="473" oY="419" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0007" x="2351" y="7636" w="203" h="157" oX="428" oY="433" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0008" x="3087" y="7805" w="178" h="137" oX="429" oY="445" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SSW_0009" x="3491" y="8209" w="152" h="135" oX="435" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0000" x="3534" y="6796" w="191" h="142" oX="419" oY="436" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0001" x="2954" y="6202" w="216" h="146" oX="401" oY="430" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0002" x="2626" y="7071" w="222" h="156" oX="402" oY="419" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0003" x="2655" y="5642" w="182" h="173" oX="423" oY="409" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0004" x="3113" y="4955" w="135" h="167" oX="473" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0005" x="3387" y="6039" w="144" h="164" oX="472" oY="410" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0006" x="3738" y="5718" w="180" h="165" oX="469" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0007" x="2107" y="6260" w="236" h="163" oX="422" oY="420" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0008" x="2720" y="4262" w="242" h="141" oX="397" oY="434" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_SW__0009" x="3049" y="7229" w="206" h="144" oX="413" oY="437" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0000" x="3451" y="2936" w="236" h="173" oX="426" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0001" x="2424" y="5114" w="255" h="166" oX="415" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0002" x="3687" y="3462" w="235" h="166" oX="425" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0003" x="2681" y="4937" w="195" h="184" oX="459" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0004" x="2347" y="6423" w="179" h="170" oX="460" oY="402" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0005" x="3483" y="3629" w="200" h="162" oX="459" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0006" x="2895" y="4445" w="239" h="153" oX="456" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0007" x="1861" y="6576" w="252" h="178" oX="411" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0008" x="1176" y="5248" w="262" h="167" oX="401" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_W___0009" x="3451" y="3111" w="236" h="169" oX="426" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0000" x="1625" y="6765" w="233" h="199" oX="429" oY="371" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0001" x="806" y="5191" w="246" h="187" oX="423" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0002" x="1414" y="5858" w="212" h="203" oX="441" oY="373" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0003" x="3250" y="4761" w="204" h="173" oX="463" oY="402" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0004" x="2478" y="5826" w="178" h="170" oX="466" oY="403" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0005" x="2676" y="6325" w="196" h="165" oX="466" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0006" x="1858" y="5668" w="246" h="187" oX="439" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0007" x="2567" y="2266" w="240" h="217" oX="403" oY="381" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0008" x="2331" y="1849" w="256" h="210" oX="398" oY="373" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WNW_0009" x="2566" y="2485" w="245" h="196" oX="415" oY="373" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0000" x="2366" y="8388" w="215" h="158" oX="428" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0001" x="2110" y="7948" w="253" h="151" oX="398" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0002" x="2115" y="6598" w="246" h="156" oX="404" oY="409" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0003" x="1845" y="4545" w="186" h="184" oX="439" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0004" x="3925" y="4568" w="162" h="166" oX="464" oY="403" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0005" x="3738" y="5885" w="180" h="162" oX="462" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0006" x="3464" y="4600" w="223" h="162" oX="459" oY="411" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0007" x="3685" y="3630" w="239" h="159" oX="431" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0008" x="1551" y="1940" w="270" h="147" oX="388" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Got Hit 1_WSW_0009" x="2894" y="4600" w="238" h="152" oX="410" oY="416" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0000" x="3002" y="3783" w="232" h="179" oX="352" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0001" x="536" y="7158" w="229" h="183" oX="355" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0002" x="935" y="6936" w="219" h="191" oX="366" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0003" x="1429" y="6761" w="194" h="199" oX="391" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0004" x="3264" y="2909" w="185" h="197" oX="399" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0005" x="1576" y="8491" w="185" h="194" oX="399" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0006" x="2774" y="3776" w="226" h="187" oX="358" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0007" x="1390" y="6962" w="233" h="182" oX="351" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0008" x="799" y="6152" w="230" h="182" oX="355" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0009" x="1628" y="5318" w="228" h="180" oX="357" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0010" x="3214" y="2045" w="233" h="180" oX="357" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0011" x="3459" y="2595" w="229" h="180" oX="356" oY="394" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0012" x="3455" y="2412" w="230" h="181" oX="355" oY="394" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0013" x="3018" y="3283" w="232" h="180" oX="353" oY="394" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_E___0014" x="3687" y="2322" w="232" h="179" oX="352" oY="394" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0000" x="977" y="7338" w="207" h="223" oX="376" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0001" x="917" y="7797" w="201" h="226" oX="383" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0002" x="751" y="6894" w="182" h="233" oX="402" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0003" x="811" y="6564" w="174" h="234" oX="410" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0004" x="992" y="8251" w="174" h="224" oX="410" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0005" x="875" y="7568" w="174" h="227" oX="410" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0006" x="1845" y="4731" w="186" h="233" oX="397" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0007" x="1416" y="6532" w="207" h="227" oX="376" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0008" x="769" y="7339" w="206" h="227" oX="377" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0009" x="551" y="6418" w="208" h="225" oX="378" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0010" x="1203" y="6563" w="211" h="224" oX="378" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0011" x="987" y="6563" w="214" h="224" oX="377" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0012" x="1628" y="4887" w="215" h="225" oX="377" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0013" x="986" y="6337" w="215" h="224" oX="376" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ENE_0014" x="767" y="4806" w="212" h="223" oX="376" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0000" x="3459" y="2777" w="229" h="157" oX="355" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0001" x="3690" y="2815" w="229" h="154" oX="354" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0002" x="2365" y="8106" w="227" h="153" oX="356" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0003" x="2853" y="7530" w="213" h="154" oX="370" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0004" x="2643" y="5482" w="184" h="158" oX="400" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0005" x="2594" y="8106" w="195" h="153" oX="389" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0006" x="2964" y="4289" w="240" h="154" oX="345" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0007" x="1876" y="7634" w="232" h="155" oX="354" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0008" x="1645" y="7728" w="229" h="156" oX="358" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0009" x="1628" y="5500" w="228" h="157" oX="360" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0010" x="2615" y="6912" w="228" h="157" oX="360" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0011" x="2963" y="5748" w="229" h="157" oX="360" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0012" x="3689" y="2971" w="230" h="157" oX="358" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0013" x="3456" y="4927" w="231" h="157" oX="357" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_ESE_0014" x="3689" y="3130" w="230" h="157" oX="356" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0000" x="351" y="4420" w="162" h="279" oX="458" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0001" x="802" y="3260" w="162" h="274" oX="456" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0002" x="594" y="1081" w="163" h="265" oX="455" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0003" x="2114" y="5332" w="174" h="248" oX="453" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0004" x="2411" y="3592" w="178" h="248" oX="453" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0005" x="2247" y="5020" w="175" h="249" oX="452" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0006" x="3796" y="1032" w="171" h="271" oX="452" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0007" x="375" y="2983" w="173" h="282" oX="452" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0008" x="879" y="547" w="175" h="282" oX="452" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0009" x="293" y="3290" w="177" h="281" oX="452" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0010" x="319" y="3856" w="177" h="280" oX="453" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0011" x="319" y="3573" w="176" h="281" oX="454" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0012" x="472" y="3267" w="173" h="281" oX="456" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0013" x="497" y="3550" w="170" h="280" oX="457" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_N___0014" x="498" y="3832" w="166" h="280" oX="458" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0000" x="1760" y="3648" w="182" h="257" oX="424" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0001" x="1369" y="3469" w="167" h="258" oX="434" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0002" x="1274" y="4000" w="165" h="261" oX="434" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0003" x="1944" y="3644" w="165" h="256" oX="433" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0004" x="612" y="8503" w="166" h="242" oX="433" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0005" x="2397" y="2842" w="167" h="248" oX="433" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0006" x="759" y="1081" w="169" h="265" oX="433" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0007" x="285" y="6645" w="179" h="261" oX="426" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0008" x="466" y="6645" w="184" h="261" oX="424" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0009" x="533" y="7840" w="188" h="259" oX="423" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0010" x="1378" y="3729" w="191" h="258" oX="423" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0011" x="681" y="7576" w="192" h="259" oX="423" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0012" x="723" y="7837" w="192" h="259" oX="423" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0013" x="1441" y="3989" w="191" h="258" oX="423" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NE__0014" x="1571" y="3648" w="187" h="258" oX="424" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0000" x="465" y="1861" w="156" h="276" oX="463" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0001" x="824" y="3536" w="153" h="274" oX="462" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0002" x="781" y="1829" w="154" h="272" oX="460" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0003" x="524" y="7578" w="155" h="260" oX="459" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0004" x="652" y="6645" w="157" h="247" oX="458" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0005" x="1967" y="3902" w="159" h="255" oX="458" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0006" x="516" y="4114" w="161" h="278" oX="458" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0007" x="351" y="4138" w="163" h="280" oX="458" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0008" x="532" y="268" w="165" h="279" oX="459" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0009" x="182" y="4260" w="167" h="277" oX="460" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0010" x="1056" y="547" w="167" h="277" oX="461" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0011" x="937" y="1347" w="166" h="277" oX="463" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0012" x="1055" y="267" w="165" h="278" oX="464" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0013" x="550" y="2983" w="161" h="277" oX="465" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNE_0014" x="713" y="2982" w="159" h="276" oX="465" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0000" x="186" y="6383" w="192" h="260" oX="459" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0001" x="1538" y="3392" w="197" h="254" oX="459" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0002" x="554" y="4806" w="211" h="239" oX="457" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0003" x="182" y="5772" w="218" h="239" oX="457" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0004" x="594" y="5538" w="209" h="239" oX="456" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0005" x="780" y="8502" w="210" h="240" oX="455" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0006" x="1829" y="1786" w="220" h="245" oX="455" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0007" x="966" y="3242" w="199" h="262" oX="454" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0008" x="355" y="4848" w="197" h="264" oX="453" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0009" x="355" y="5114" w="196" h="264" oX="453" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0010" x="1072" y="1081" w="195" h="264" oX="454" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0011" x="979" y="3506" w="194" h="263" oX="455" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0012" x="1167" y="3208" w="193" h="263" oX="456" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0013" x="1175" y="3473" w="192" h="262" oX="458" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NNW_0014" x="331" y="7578" w="191" h="261" oX="459" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0000" x="761" y="6336" w="223" h="226" oX="473" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0001" x="1184" y="5796" w="228" h="223" oX="473" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0002" x="168" y="8269" w="236" h="222" oX="472" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0003" x="1976" y="2929" w="233" h="222" oX="472" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0004" x="1203" y="6339" w="209" h="222" oX="471" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0005" x="1051" y="7563" w="215" h="223" oX="471" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0006" x="1521" y="1341" w="249" h="223" oX="470" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0007" x="1745" y="2925" w="229" h="228" oX="469" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0008" x="540" y="7343" w="227" h="231" oX="468" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0009" x="181" y="5538" w="227" h="232" oX="467" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0010" x="1517" y="2926" w="226" h="231" oX="468" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0011" x="1517" y="3159" w="226" h="231" oX="468" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0012" x="2566" y="2861" w="225" h="230" oX="469" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0013" x="2560" y="3093" w="225" h="229" oX="470" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_NW__0014" x="805" y="5769" w="224" h="227" oX="472" oY="386" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0000" x="3634" y="7939" w="162" h="141" oX="460" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0001" x="3823" y="8212" w="162" h="139" oX="462" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0002" x="3578" y="8486" w="163" h="133" oX="462" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0003" x="3743" y="8487" w="174" h="122" oX="453" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0004" x="3520" y="6526" w="178" h="122" oX="449" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0005" x="1763" y="8624" w="175" h="121" oX="453" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0006" x="701" y="2399" w="171" h="139" oX="457" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0007" x="3578" y="8347" w="173" h="137" oX="455" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0008" x="3753" y="8353" w="175" h="132" oX="453" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0009" x="2975" y="8128" w="177" h="131" oX="451" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0010" x="3019" y="8581" w="177" h="132" oX="450" oY="403" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0011" x="3645" y="8212" w="176" h="133" oX="450" oY="402" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0012" x="2632" y="8610" w="173" h="135" oX="451" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0013" x="3361" y="6939" w="170" h="137" oX="453" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_S___0014" x="3921" y="2883" w="166" h="140" oX="456" oY="395" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0000" x="3172" y="6208" w="223" h="142" oX="384" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0001" x="2623" y="7375" w="228" h="139" oX="379" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0002" x="2966" y="5449" w="236" h="136" oX="372" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0003" x="1876" y="7791" w="232" h="135" oX="376" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0004" x="3331" y="6376" w="209" h="135" oX="400" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0005" x="3303" y="6513" w="215" h="135" oX="394" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0006" x="2109" y="8253" w="249" h="135" oX="361" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0007" x="2951" y="5907" w="229" h="136" oX="382" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0008" x="2874" y="6350" w="227" h="139" oX="385" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0009" x="3103" y="6352" w="226" h="139" oX="386" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0010" x="3533" y="6940" w="226" h="141" oX="386" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0011" x="3256" y="7078" w="226" h="142" oX="386" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0012" x="3061" y="7375" w="225" h="143" oX="386" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0013" x="3308" y="6650" w="225" h="143" oX="385" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SE__0014" x="3308" y="6795" w="224" h="142" oX="384" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0000" x="3167" y="6941" w="192" h="125" oX="429" oY="412" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0001" x="3484" y="7209" w="197" h="124" oX="424" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0002" x="182" y="6258" w="211" h="123" oX="412" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0003" x="3239" y="2783" w="218" h="124" oX="405" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0004" x="3484" y="7083" w="209" h="124" oX="415" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0005" x="3257" y="7222" w="210" h="124" oX="415" oY="415" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0006" x="2360" y="8261" w="221" h="125" oX="405" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0007" x="3536" y="5930" w="199" h="124" oX="427" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0008" x="3068" y="7679" w="197" h="124" oX="430" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0009" x="3267" y="7795" w="196" h="125" oX="431" oY="413" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0010" x="3683" y="7209" w="195" h="124" oX="431" oY="413" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0011" x="3267" y="7922" w="194" h="125" oX="431" oY="412" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0012" x="3347" y="8079" w="193" h="125" oX="431" oY="412" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0013" x="3542" y="8082" w="192" h="125" oX="430" oY="412" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSE_0014" x="3736" y="8085" w="191" h="125" oX="430" oY="412" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0000" x="3880" y="7197" w="156" h="136" oX="461" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0001" x="3336" y="8206" w="153" h="138" oX="465" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0002" x="3930" y="8353" w="154" h="137" oX="466" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0003" x="3379" y="5908" w="155" h="129" oX="466" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0004" x="2101" y="8624" w="157" h="121" oX="465" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0005" x="1940" y="8624" w="159" h="121" oX="463" oY="414" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0006" x="3926" y="6214" w="161" h="147" oX="461" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0007" x="3743" y="8611" w="163" h="134" oX="459" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0008" x="3921" y="5133" w="165" h="127" oX="456" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0009" x="3920" y="5796" w="167" h="126" oX="453" oY="409" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0010" x="2298" y="5505" w="167" h="126" oX="452" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0011" x="3921" y="5003" w="166" h="128" oX="451" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0012" x="3113" y="5124" w="165" h="130" oX="451" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0013" x="3919" y="8492" w="162" h="133" oX="453" oY="401" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SSW_0014" x="3649" y="7502" w="159" h="135" oX="456" oY="399" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0000" x="3388" y="8488" w="182" h="139" oX="474" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0001" x="3920" y="5519" w="167" h="137" oX="479" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0002" x="1274" y="4458" w="165" h="136" oX="481" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0003" x="3922" y="4736" w="165" h="136" oX="482" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0004" x="3921" y="3303" w="166" h="135" oX="481" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0005" x="3920" y="5658" w="167" h="136" oX="480" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0006" x="3463" y="7936" w="169" h="141" oX="478" oY="400" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0007" x="3288" y="7516" w="179" h="137" oX="475" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0008" x="3735" y="5072" w="184" h="139" oX="472" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0009" x="3198" y="8488" w="188" h="139" oX="469" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0010" x="3154" y="8049" w="191" h="139" oX="466" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0011" x="551" y="6276" w="193" h="140" oX="465" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0012" x="2807" y="8603" w="192" h="140" oX="465" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0013" x="3197" y="8346" w="190" h="140" oX="467" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_SW__0014" x="3389" y="8346" w="187" h="140" oX="469" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0000" x="3687" y="3289" w="232" h="171" oX="496" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0001" x="2110" y="7463" w="229" h="171" oX="496" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0002" x="3467" y="3457" w="218" h="170" oX="495" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0003" x="1680" y="7886" w="194" h="170" oX="495" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0004" x="3738" y="4419" w="185" h="170" oX="496" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0005" x="2478" y="5998" w="185" h="170" oX="496" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0006" x="2666" y="4579" w="226" h="170" oX="496" oY="393" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0007" x="1874" y="8102" w="233" h="171" oX="496" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0008" x="1763" y="8450" w="230" h="172" oX="495" oY="392" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0009" x="2665" y="4405" w="228" h="172" oX="495" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0010" x="3238" y="3952" w="233" h="172" oX="490" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0011" x="3690" y="2503" w="229" h="172" oX="495" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0012" x="1756" y="8275" w="230" h="173" oX="495" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0013" x="1876" y="7459" w="232" h="173" oX="495" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_W___0014" x="1876" y="7928" w="232" h="172" oX="496" oY="391" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0000" x="2107" y="6059" w="229" h="199" oX="496" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0001" x="2095" y="7097" w="229" h="199" oX="497" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0002" x="2813" y="2418" w="227" h="198" oX="497" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0003" x="2230" y="4385" w="213" h="198" oX="497" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0004" x="2643" y="5282" w="184" h="198" oX="496" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0005" x="2033" y="4758" w="195" h="198" oX="496" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0006" x="1176" y="5595" w="240" h="199" oX="495" oY="390" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0007" x="1156" y="6942" w="232" h="200" oX="494" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0008" x="1414" y="7533" w="229" h="200" oX="493" oY="389" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0009" x="1628" y="5659" w="228" h="201" oX="492" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0010" x="1645" y="7526" w="229" h="200" oX="491" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0011" x="1864" y="7101" w="229" h="200" oX="491" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0012" x="1391" y="7330" w="231" h="201" oX="491" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0013" x="1624" y="7323" w="231" h="201" oX="492" oY="387" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WNW_0014" x="1861" y="6899" w="231" h="200" oX="494" oY="388" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0000" x="3094" y="6493" w="207" h="155" oX="497" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0001" x="2975" y="6045" w="201" h="155" oX="496" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0002" x="2791" y="8106" w="182" h="153" oX="496" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0003" x="2467" y="5505" w="174" h="153" oX="496" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0004" x="3194" y="5756" w="174" h="154" oX="496" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0005" x="3727" y="6702" w="174" h="154" oX="496" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0006" x="1440" y="5314" w="186" h="154" oX="497" oY="398" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0007" x="3533" y="6206" w="207" h="155" oX="497" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0008" x="3048" y="7071" w="206" h="156" oX="497" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0009" x="3715" y="4125" w="208" h="156" oX="494" oY="397" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0010" x="2954" y="6912" w="211" h="157" oX="491" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0011" x="2230" y="4585" w="213" h="157" oX="489" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0012" x="2878" y="6491" w="214" h="157" oX="489" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0013" x="3068" y="7520" w="214" h="157" oX="490" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Idle_WSW_0014" x="1414" y="6374" w="212" h="156" oX="492" oY="396" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0000" x="1516" y="721" w="302" h="152" oX="410" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0001" x="2355" y="1562" w="301" h="152" oX="411" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0002" x="2658" y="1579" w="301" h="152" oX="412" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0003" x="2392" y="1131" w="304" h="149" oX="411" oY="408" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0004" x="2701" y="955" w="307" h="147" oX="409" oY="407" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0005" x="3433" y="205" w="311" h="147" oX="408" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0006" x="3737" y="361" w="313" h="148" oX="407" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0007" x="3707" y="511" w="313" h="149" oX="407" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0008" x="2185" y="549" w="312" h="150" oX="407" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_E___0009" x="3010" y="957" w="307" h="150" oX="409" oY="406" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0000" x="3746" y="1" w="305" h="205" oX="419" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0001" x="2801" y="419" w="303" h="205" oX="421" oY="371" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0002" x="3111" y="210" w="302" h="207" oX="422" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0003" x="2805" y="210" w="304" h="207" oX="420" oY="370" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0004" x="3125" y="1" w="306" h="207" oX="418" oY="369" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0005" x="2813" y="1" w="310" h="207" oX="416" oY="368" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0006" x="1870" y="1" w="312" h="206" oX="415" oY="367" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0007" x="2184" y="1" w="313" h="204" oX="415" oY="367" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0008" x="2499" y="1" w="312" h="203" oX="415" oY="368" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ENE_0009" x="3433" y="1" w="311" h="202" oX="416" oY="369" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0000" x="2076" y="1542" w="277" h="155" oX="420" oY="446" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0001" x="2850" y="1905" w="279" h="156" oX="420" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0002" x="1545" y="2089" w="280" h="155" oX="420" oY="448" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0003" x="2418" y="975" w="281" h="154" oX="420" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0004" x="1545" y="2246" w="280" h="150" oX="421" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0005" x="3483" y="1941" w="281" h="149" oX="419" oY="445" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0006" x="3769" y="1855" w="281" h="148" oX="419" oY="444" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0007" x="1545" y="2398" w="279" h="147" oX="420" oY="444" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0008" x="2082" y="2473" w="279" h="149" oX="419" oY="444" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_ESE_0009" x="1545" y="2547" w="278" h="152" oX="420" oY="445" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0000" x="400" y="549" w="149" h="319" oX="461" oY="311" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0001" x="551" y="549" w="148" h="319" oX="462" oY="310" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0002" x="165" y="7346" w="146" h="321" oX="463" oY="309" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0003" x="165" y="7019" w="142" h="325" oX="465" oY="308" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0004" x="344" y="1350" w="138" h="328" oX="468" oY="307" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0005" x="182" y="3602" w="135" h="328" oX="469" oY="307" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0006" x="182" y="3932" w="135" h="326" oX="469" oY="307" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0007" x="262" y="544" w="136" h="324" oX="468" oY="307" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0008" x="484" y="1348" w="139" h="322" oX="466" oY="308" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_N___0009" x="625" y="1348" w="145" h="320" oX="463" oY="310" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0000" x="1336" y="1" w="263" h="264" oX="446" oY="339" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0001" x="1" y="814" w="259" h="265" oX="449" oY="339" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0002" x="1" y="1081" w="257" h="267" oX="450" oY="339" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0003" x="1" y="544" w="259" h="268" oX="448" oY="338" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0004" x="1" y="273" w="262" h="269" oX="444" oY="337" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0005" x="1" y="1" w="263" h="270" oX="443" oY="336" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0006" x="266" y="1" w="264" h="268" oX="442" oY="336" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0007" x="532" y="1" w="266" h="265" oX="441" oY="336" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0008" x="800" y="1" w="266" h="264" oX="442" oY="337" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NE__0009" x="1068" y="1" w="266" h="262" oX="443" oY="338" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0000" x="1" y="6080" w="179" h="303" oX="489" oY="320" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0001" x="1" y="5774" w="179" h="304" oX="489" oY="319" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0002" x="1" y="5465" w="178" h="307" oX="488" oY="318" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0003" x="1" y="3915" w="179" h="310" oX="485" oY="317" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0004" x="1" y="3602" w="179" h="311" oX="484" oY="316" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0005" x="1" y="4227" w="179" h="310" oX="484" oY="316" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0006" x="1" y="4539" w="180" h="308" oX="482" oY="316" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0007" x="1" y="4849" w="181" h="307" oX="482" oY="316" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0008" x="1" y="5158" w="181" h="305" oX="483" oY="317" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNE_0009" x="1" y="6385" w="183" h="303" oX="484" oY="319" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0000" x="184" y="5156" w="169" h="305" oX="423" oY="319" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0001" x="169" y="7950" w="169" h="304" oX="424" oY="318" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0002" x="184" y="4848" w="169" h="306" oX="424" oY="317" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0003" x="1" y="7950" w="166" h="310" oX="425" oY="316" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0004" x="1" y="7006" w="162" h="314" oX="426" oY="315" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0005" x="1" y="6690" w="163" h="314" oX="426" oY="315" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0006" x="1" y="7322" w="162" h="313" oX="426" oY="315" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0007" x="1" y="7637" w="162" h="311" oX="425" oY="315" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0008" x="1" y="8262" w="165" h="309" oX="424" oY="316" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NNW_0009" x="183" y="4539" w="166" h="307" oX="423" oY="317" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0000" x="234" y="2447" w="231" h="266" oX="401" oY="338" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0001" x="235" y="2715" w="231" h="266" oX="401" oY="337" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0002" x="234" y="2178" w="232" h="267" oX="401" oY="336" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0003" x="1" y="2459" w="231" h="272" oX="401" oY="335" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0004" x="1" y="1905" w="230" h="276" oX="400" oY="335" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0005" x="1" y="1350" w="232" h="276" oX="399" oY="334" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0006" x="1" y="1628" w="232" h="275" oX="399" oY="334" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0007" x="1" y="2183" w="231" h="274" oX="399" oY="334" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0008" x="1" y="2733" w="232" h="271" oX="399" oY="335" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_NW__0009" x="233" y="1907" w="230" h="269" oX="400" oY="336" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0000" x="2311" y="5633" w="149" h="189" oX="470" oY="444" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0001" x="2520" y="6170" w="149" h="189" oX="470" oY="445" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0002" x="2528" y="6361" w="146" h="189" oX="471" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0003" x="2723" y="8261" w="143" h="188" oX="472" oY="448" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0004" x="2583" y="8261" w="138" h="190" oX="474" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0005" x="2494" y="8548" w="136" h="191" oX="475" oY="445" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0006" x="2829" y="5282" w="135" h="192" oX="476" oY="443" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0007" x="3112" y="4761" w="136" h="192" oX="476" oY="441" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0008" x="2326" y="7097" w="139" h="192" oX="475" oY="440" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_S___0009" x="625" y="1670" w="145" h="190" oX="472" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0000" x="3236" y="4287" w="231" h="160" oX="448" oY="470" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0001" x="2878" y="4754" w="232" h="160" oX="447" oY="472" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0002" x="3469" y="4289" w="232" h="159" oX="447" oY="473" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0003" x="3689" y="4752" w="231" h="158" oX="448" oY="473" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0004" x="3689" y="4912" w="230" h="158" oX="450" oY="471" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0005" x="2260" y="8588" w="232" h="157" oX="449" oY="469" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0006" x="2966" y="5587" w="232" h="159" oX="449" oY="466" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0007" x="3689" y="4591" w="231" h="159" oX="450" oY="465" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0008" x="2878" y="4916" w="232" h="160" oX="449" oY="465" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SE__0009" x="3456" y="4764" w="230" h="161" oX="450" oY="466" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0000" x="2966" y="5256" w="169" h="191" oX="488" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0001" x="3137" y="5256" w="169" h="191" oX="487" oY="452" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0002" x="3308" y="5256" w="169" h="190" oX="487" oY="454" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0003" x="3921" y="2532" w="166" h="190" oX="489" oY="454" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0004" x="3926" y="3804" w="161" h="189" oX="493" oY="453" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0005" x="772" y="1637" w="163" h="190" oX="491" oY="451" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0006" x="3925" y="3995" w="162" h="192" oX="492" oY="448" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0007" x="3925" y="4189" w="162" h="192" oX="493" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0008" x="1274" y="4263" w="165" h="193" oX="491" oY="446" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSE_0009" x="3921" y="2337" w="166" h="193" oX="491" oY="447" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0000" x="3904" y="6538" w="180" h="163" oX="412" oY="451" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0001" x="3903" y="6868" w="178" h="163" oX="412" oY="451" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0002" x="3469" y="7335" w="178" h="162" oX="413" oY="453" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0003" x="3901" y="7033" w="178" h="162" oX="415" oY="454" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0004" x="3903" y="6703" w="180" h="163" oX="416" oY="455" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0005" x="3288" y="7348" w="179" h="166" oX="417" oY="453" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0006" x="2697" y="6492" w="179" h="167" oX="418" oY="451" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0007" x="2658" y="5817" w="181" h="168" oX="417" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0008" x="3738" y="5547" w="180" h="169" oX="416" oY="448" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SSW_0009" x="3719" y="6535" w="183" h="165" oX="414" oY="450" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0000" x="1744" y="2779" w="263" h="144" oX="371" oY="469" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0001" x="987" y="6789" w="259" h="145" oX="372" oY="469" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0002" x="874" y="2395" w="257" h="143" oX="373" oY="471" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0003" x="3449" y="2092" w="259" h="141" oX="373" oY="473" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0004" x="1031" y="6021" w="262" h="139" oX="374" oY="475" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0005" x="2009" y="2786" w="263" h="141" oX="374" oY="473" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0006" x="266" y="271" w="264" h="143" oX="374" oY="471" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0007" x="1277" y="2073" w="266" h="143" oX="373" oY="470" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0008" x="1277" y="2218" w="266" h="144" oX="372" oY="469" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_SW__0009" x="1277" y="2364" w="266" h="143" oX="371" oY="470" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0000" x="1772" y="1409" w="302" h="166" oX="368" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0001" x="3007" y="1262" w="301" h="166" oX="368" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0002" x="2961" y="1585" w="301" h="165" oX="367" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0003" x="2701" y="1260" w="304" h="162" oX="365" oY="405" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0004" x="3010" y="794" w="307" h="161" oX="364" oY="404" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0005" x="2793" y="626" w="311" h="160" oX="361" oY="403" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0006" x="3391" y="630" w="313" h="159" oX="360" oY="403" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0007" x="3391" y="467" w="314" h="161" oX="359" oY="402" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0008" x="2104" y="701" w="312" h="163" oX="361" oY="402" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_W___0009" x="2701" y="788" w="307" h="165" oX="364" oY="403" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0000" x="1772" y="1577" w="277" h="207" oX="383" oY="368" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0001" x="2051" y="1840" w="278" h="206" oX="381" oY="368" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0002" x="1797" y="897" w="280" h="208" oX="380" oY="367" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0003" x="1044" y="868" w="281" h="211" oX="379" oY="367" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0004" x="1225" y="515" w="280" h="216" oX="379" oY="366" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0005" x="1820" y="679" w="282" h="216" oX="379" oY="365" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0006" x="2418" y="758" w="281" h="215" oX="380" oY="365" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0007" x="3689" y="816" w="279" h="214" oX="381" oY="365" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0008" x="1516" y="875" w="279" h="212" oX="382" oY="365" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WNW_0009" x="2076" y="1329" w="277" h="211" oX="383" oY="366" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0000" x="2701" y="1104" w="306" h="154" oX="355" oY="444" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0001" x="2661" y="1424" w="303" h="153" oX="356" oY="445" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0002" x="2966" y="1430" w="302" h="153" oX="356" oY="445" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0003" x="2355" y="1409" w="304" h="151" oX="356" oY="445" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0004" x="3009" y="1109" w="308" h="151" oX="355" oY="444" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0005" x="2079" y="1176" w="310" h="151" oX="354" oY="443" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0006" x="2104" y="866" w="312" h="152" oX="353" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0007" x="3706" y="662" w="313" h="152" oX="352" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0008" x="1870" y="525" w="313" h="152" oX="352" oY="442" oW="1080" oH="1080"/>
+    <sprite n="SerpentWarrior_Walk_WSW_0009" x="2079" y="1020" w="311" h="154" oX="353" oY="443" oW="1080" oH="1080"/>
+</TextureAtlas>

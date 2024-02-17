@@ -190,10 +190,10 @@ namespace Create_Entities {
 
   void Add_Melee(entt::registry &zone, entt::entity &entity, Entity_Loader::Data &data) {
     if (data.temp_type_name != "non-combat") {
-      zone.emplace_or_replace<Component::Melee_Damage>(entity, data.damage_min, data.damage_max, 25);
+      zone.emplace_or_replace<Component::Melee_Damage>(entity, (int) (data.damage_min * data.scale), (int) (data.damage_max * data.scale), 25);
       zone.emplace_or_replace<Component::Attack_Speed>(entity, data.attack_speed, 0.0f);
     }
-    zone.emplace_or_replace<Component::Melee_Range>(entity, ((data.radius + data.melee_range) * data.scale));
+    zone.emplace_or_replace<Component::Melee_Range>(entity, ((data.radius * data.scale) + (data.melee_range * data.scale)));
   }
   bool startup = true;
 
@@ -211,7 +211,7 @@ namespace Create_Entities {
     if (data.body_type == 1) {
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::S);
       bool yes = true;
-      Collision::Create_Dynamic_Body(zone, state, entity, position.x, position.y, data.radius, data.mass, yes);
+      Collision::Create_Dynamic_Body(zone, state, entity, position.x, position.y, (data.radius * data.scale), (data.mass * data.scale), yes);
       //do not attach to non combat
       Add_Melee(zone, entity, data);
       //    needs to be copied for zone changes
@@ -226,7 +226,7 @@ namespace Create_Entities {
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
         if (!Social_Control::Summon(zone, entity, summon, blendType)) Social_Control::Entity(zone, entity, data.race);
 
-        zone.emplace_or_replace<Component::Health>(entity, data.health * (int) data.scale, data.health * (int) data.scale);
+        zone.emplace_or_replace<Component::Health>(entity, (int) (data.health * data.scale), (int) (data.health * data.scale));
         Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);
 
         if (equip_type != Item_Component::Unit_Equip_Type::none) {
@@ -249,7 +249,7 @@ namespace Create_Entities {
           Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
           zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
         }
-        zone.emplace_or_replace<Component::Health>(entity, data.health * (int) data.scale, data.health * (int) data.scale);
+        zone.emplace_or_replace<Component::Health>(entity, (int) (data.health * data.scale), (int) (data.health * data.scale));
       } else {
         Load::Copy_Player(zone, World::world[World::world[state].previousZoneIndex].zone, state, World::world[state].previousZoneIndex, entity);
       }

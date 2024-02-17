@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:8e1e8bd6c47fb2765a21d5a110778b4a:ddcf1c0e755f40314538b74f4489925c:a08edaf528cbfc0bc47ee94471a6900b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="F_Ogre.png" width="8189" height="5911">
+    <sprite n="F_Ogre_Attack 2_E___0000" x="6411" y="5019" w="155" h="276" oX="295" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0001" x="5845" y="3271" w="259" h="225" oX="211" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0002" x="2244" y="3226" w="265" h="223" oX="218" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0003" x="7026" y="1398" w="313" h="196" oX="260" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0004" x="1792" y="1747" w="320" h="200" oX="263" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0005" x="1" y="1321" w="283" h="192" oX="283" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0006" x="3415" y="1175" w="269" h="190" oX="256" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0007" x="726" y="2548" w="227" h="211" oX="247" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0008" x="3216" y="3467" w="216" h="229" oX="251" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0009" x="4039" y="4980" w="160" h="273" oX="300" oY="169" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0010" x="7043" y="5046" w="135" h="279" oX="297" oY="174" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0011" x="2704" y="4953" w="136" h="274" oX="282" oY="183" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0012" x="1552" y="4926" w="136" h="272" oX="292" oY="194" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0013" x="3927" y="4972" w="110" h="275" oX="311" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0014" x="3924" y="5249" w="106" h="286" oX="311" oY="194" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_E___0015" x="206" y="4880" w="104" h="274" oX="307" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0000" x="7621" y="4377" w="197" h="254" oX="283" oY="185" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0001" x="7147" y="1016" w="279" h="188" oX="194" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0002" x="3871" y="2382" w="300" h="209" oX="211" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0003" x="7864" y="2555" w="292" h="211" oX="268" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0004" x="4865" y="2608" w="285" h="212" oX="271" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0005" x="1654" y="2360" w="250" h="209" oX="296" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0006" x="1379" y="1157" w="269" h="189" oX="264" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0007" x="1366" y="1348" w="260" h="192" oX="241" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0008" x="7950" y="1671" w="232" h="200" oX="240" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0009" x="2656" y="3926" w="151" h="247" oX="279" oY="185" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0010" x="183" y="5156" w="126" h="279" oX="294" oY="178" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0011" x="2150" y="5211" w="120" h="281" oX="285" oY="185" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0012" x="6921" y="5038" w="120" h="280" oX="290" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0013" x="3219" y="4959" w="127" h="274" oX="290" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0014" x="6599" y="4751" w="156" h="267" oX="292" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ENE_0015" x="312" y="4890" w="132" h="271" oX="292" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0000" x="2272" y="5218" w="152" h="281" oX="311" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0001" x="5869" y="5008" w="227" h="275" oX="248" oY="169" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0002" x="7317" y="3798" w="228" h="239" oX="244" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0003" x="4732" y="3039" w="296" h="219" oX="262" oY="209" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0004" x="137" y="2120" w="315" h="205" oX="264" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0005" x="6659" y="1999" w="281" h="204" oX="276" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0006" x="4273" y="2810" w="235" h="215" oX="261" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0007" x="5297" y="4213" w="196" h="252" oX="267" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0008" x="1" y="4880" w="203" h="267" oX="276" oY="177" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0009" x="2426" y="5226" w="182" h="281" oX="302" oY="160" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0010" x="4074" y="4713" w="177" h="265" oX="271" oY="173" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0011" x="3712" y="4190" w="186" h="250" oX="254" oY="186" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0012" x="4914" y="4207" w="193" h="251" oX="265" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0013" x="6760" y="4490" w="159" h="262" oX="294" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0014" x="7874" y="5212" w="131" h="282" oX="309" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_ESE_0015" x="8086" y="1873" w="102" h="263" oX="309" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0000" x="3564" y="623" w="253" h="178" oX="236" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0001" x="2661" y="4687" w="184" h="264" oX="274" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0002" x="7204" y="4542" w="235" h="262" oX="234" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0003" x="4201" y="4983" w="160" h="273" oX="250" oY="158" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0004" x="963" y="4651" w="156" h="263" oX="259" oY="166" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0005" x="5878" y="3730" w="147" h="239" oX="263" oY="176" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0006" x="5900" y="2830" w="166" h="216" oX="259" oY="218" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0007" x="3984" y="3473" w="196" h="230" oX="265" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0008" x="3434" y="3468" w="191" h="229" oX="267" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0009" x="6120" y="823" w="200" h="183" oX="259" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0010" x="626" y="1327" w="225" h="192" oX="242" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0011" x="955" y="2562" w="230" h="211" oX="240" oY="209" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0012" x="3585" y="2592" w="229" h="212" oX="244" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0013" x="5118" y="1189" w="236" h="191" oX="239" oY="216" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0014" x="4240" y="286" w="246" h="166" oX="230" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_N___0015" x="3973" y="1180" w="229" h="190" oX="237" oY="209" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0000" x="6555" y="2625" w="223" h="213" oX="281" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0001" x="4781" y="1381" w="284" h="194" oX="200" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0002" x="1183" y="2996" w="294" h="217" oX="224" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0003" x="4325" y="3483" w="242" h="229" oX="276" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0004" x="1" y="3632" w="218" h="235" oX="283" oY="185" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0005" x="6540" y="2840" w="224" h="216" oX="277" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0006" x="1187" y="2566" w="232" h="211" oX="284" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0007" x="1869" y="1548" w="257" h="197" oX="250" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0008" x="1550" y="1743" w="240" h="200" oX="244" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0009" x="6068" y="2831" w="178" h="216" oX="267" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0010" x="5244" y="4467" w="149" h="261" oX="280" oY="187" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0011" x="2004" y="4934" w="151" h="272" oX="270" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0012" x="1852" y="4932" w="150" h="271" oX="273" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0013" x="1130" y="4400" w="171" h="256" oX="273" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0014" x="4817" y="3487" w="196" h="230" oX="270" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NE__0015" x="5109" y="4211" w="186" h="252" oX="261" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0000" x="1940" y="1163" w="245" h="189" oX="262" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0001" x="6435" y="3739" w="250" h="238" oX="229" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0002" x="7661" y="3886" w="251" h="240" oX="253" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0003" x="2847" y="4690" w="186" h="264" oX="269" oY="165" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0004" x="7049" y="4510" w="153" h="262" oX="275" oY="166" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0005" x="5464" y="3726" w="170" h="238" oX="266" oY="182" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0006" x="5499" y="3046" w="208" h="220" oX="270" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0007" x="5894" y="3049" w="216" h="220" oX="275" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0008" x="2813" y="3014" w="216" h="219" oX="263" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0009" x="4504" y="1569" w="191" h="198" oX="267" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0010" x="2841" y="3463" w="187" h="228" oX="260" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0011" x="1222" y="4150" w="192" h="248" oX="254" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0012" x="1416" y="4153" w="189" h="248" oX="257" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0013" x="1986" y="3450" w="206" h="227" oX="255" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0014" x="7428" y="1018" w="234" h="188" oX="245" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNE_0015" x="3569" y="3242" w="217" h="224" oX="241" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0000" x="4240" y="454" w="229" h="172" oX="225" oY="242" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0001" x="4253" y="4716" w="159" h="265" oX="269" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0002" x="2401" y="5509" w="205" h="291" oX="226" oY="175" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0003" x="1416" y="4403" w="183" h="256" oX="243" oY="169" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0004" x="6027" y="3731" w="195" h="238" oX="235" oY="185" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0005" x="6766" y="2842" w="175" h="216" oX="254" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0006" x="783" y="1922" w="155" h="202" oX="259" oY="226" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0007" x="6924" y="3062" w="161" h="222" oX="261" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0008" x="6756" y="3060" w="166" h="221" oX="261" oY="224" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0009" x="3819" y="624" w="209" h="178" oX="237" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0010" x="6396" y="642" w="234" h="180" oX="238" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0011" x="5067" y="1382" w="245" h="194" oX="239" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0012" x="3115" y="1363" w="244" h="193" oX="239" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0013" x="2761" y="980" w="237" h="186" oX="234" oY="224" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0014" x="4471" y="454" w="225" h="172" oX="231" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NNW_0015" x="3203" y="1171" w="210" h="190" oX="249" oY="218" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0000" x="1967" y="441" w="188" h="171" oX="232" oY="245" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0001" x="5128" y="3964" w="169" h="245" oX="253" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0002" x="440" y="5455" w="205" h="289" oX="230" oY="168" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0003" x="232" y="3187" w="240" h="222" oX="205" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0004" x="2291" y="1550" w="269" h="197" oX="175" oY="218" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0005" x="1131" y="1941" w="244" h="202" oX="198" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0006" x="1923" y="614" w="184" h="176" oX="258" oY="238" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0007" x="622" y="1521" w="159" h="197" oX="263" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0008" x="6828" y="1594" w="173" h="200" oX="244" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0009" x="2204" y="793" w="205" h="181" oX="228" oY="245" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0010" x="2411" y="795" w="216" h="181" oX="248" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0011" x="7341" y="1401" w="227" h="196" oX="253" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0012" x="2562" y="1553" w="231" h="197" oX="243" oY="225" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0013" x="853" y="1329" w="209" h="192" oX="243" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0014" x="1" y="943" w="173" h="185" oX="248" oY="239" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_NW__0015" x="7695" y="2048" w="162" h="205" oX="275" oY="225" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0000" x="7927" y="3686" w="252" h="235" oX="232" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0001" x="983" y="5473" w="184" h="290" oX="262" oY="148" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0002" x="1715" y="4408" w="235" h="256" oX="251" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0003" x="6555" y="5589" w="160" h="321" oX="310" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0004" x="5182" y="5562" w="156" h="302" oX="305" oY="216" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0005" x="3753" y="5531" w="147" h="296" oX="310" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0006" x="5697" y="5281" w="166" h="286" oX="295" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0007" x="2288" y="4945" w="196" h="271" oX="259" oY="170" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0008" x="849" y="5187" w="191" h="278" oX="262" oY="158" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0009" x="4111" y="4451" w="200" h="260" oX="261" oY="171" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0010" x="5945" y="2404" w="225" h="210" oX="253" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0011" x="4204" y="1180" w="230" h="190" oX="250" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0012" x="2389" y="1165" w="229" h="189" oX="247" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0013" x="6632" y="642" w="236" h="180" oX="245" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0014" x="454" y="2125" w="246" h="205" oX="244" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_S___0015" x="5776" y="463" w="228" h="173" oX="255" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0000" x="6056" y="5288" w="188" h="286" oX="300" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0001" x="4850" y="5556" w="169" h="301" oX="298" oY="147" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0002" x="4363" y="4985" w="205" h="273" oX="285" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0003" x="4414" y="4718" w="240" h="265" oX="275" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0004" x="7832" y="4166" w="269" h="249" oX="276" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0005" x="659" y="3896" w="244" h="240" oX="278" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0006" x="528" y="4387" w="184" h="254" oX="278" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0007" x="4032" y="5255" w="159" h="284" oX="298" oY="180" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0008" x="1" y="5427" w="173" h="289" oX="303" oY="159" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0009" x="4929" y="4994" w="205" h="274" oX="287" oY="156" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0010" x="1332" y="3671" w="216" h="235" oX="256" oY="179" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0011" x="6780" y="2627" w="227" h="213" oX="240" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0012" x="4510" y="2819" w="231" h="215" oX="246" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0013" x="6224" y="3735" w="209" h="238" oX="268" oY="209" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0014" x="4656" y="4721" w="176" h="265" oX="296" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SE__0015" x="905" y="3899" w="163" h="242" oX="282" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0000" x="1110" y="4922" w="229" h="269" oX="266" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0001" x="5021" y="5559" w="159" h="301" oX="292" oY="139" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0002" x="1242" y="5197" w="205" h="279" oX="289" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0003" x="6051" y="5576" w="183" h="306" oX="294" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0004" x="1449" y="5200" w="195" h="279" oX="290" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0005" x="7419" y="4856" w="175" h="267" oX="291" oY="225" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0006" x="2927" y="5232" w="155" h="282" oX="306" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0007" x="1169" y="5478" w="161" h="290" oX="298" oY="170" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0008" x="5247" y="5275" w="166" h="285" oX="293" oY="154" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0009" x="2428" y="4170" w="209" h="249" oX="274" oY="161" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0010" x="4743" y="2822" w="234" h="215" oX="248" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0011" x="6359" y="1197" w="245" h="191" oX="236" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0012" x="1413" y="970" w="244" h="185" oX="237" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0013" x="4670" y="1776" w="238" h="201" oX="248" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0014" x="432" y="3879" w="225" h="239" oX="264" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSE_0015" x="2435" y="2366" w="210" h="209" oX="261" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0000" x="4569" y="3486" w="246" h="229" oX="212" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0001" x="7759" y="4940" w="250" h="270" oX="241" oY="172" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0002" x="458" y="3646" w="251" h="231" oX="216" oY="209" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0003" x="6367" y="5586" w="186" h="312" oX="265" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0004" x="5896" y="5572" w="153" h="306" oX="292" oY="209" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0005" x="4369" y="5545" w="170" h="299" oX="284" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0006" x="4834" y="4722" w="208" h="265" oX="242" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0007" x="3900" y="4192" w="216" h="250" oX="229" oY="183" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0008" x="2486" y="4953" w="216" h="271" oX="241" oY="173" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0009" x="1" y="4616" w="191" h="262" oX="262" oY="186" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0010" x="2049" y="2362" w="187" h="209" oX="273" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0011" x="5314" y="1383" w="192" h="195" oX="274" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0012" x="940" y="1927" w="189" h="202" oX="274" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0013" x="6149" y="1389" w="206" h="196" oX="259" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0014" x="5508" y="1384" w="233" h="194" oX="242" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SSW_0015" x="4967" y="288" w="215" h="167" oX="264" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0000" x="711" y="3661" w="223" h="233" oX="216" oY="218" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0001" x="5015" y="3490" w="284" h="230" oX="236" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0002" x="2517" y="3013" w="294" h="218" oX="202" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0003" x="443" y="5177" w="242" h="276" oX="202" oY="194" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0004" x="4892" y="5270" w="218" h="284" oX="219" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0005" x="5311" y="4999" w="224" h="274" oX="219" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0006" x="5825" y="3498" w="232" h="230" oX="204" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0007" x="821" y="3433" w="257" h="226" oX="213" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0008" x="174" y="4112" w="240" h="247" oX="236" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0009" x="4231" y="4199" w="178" h="250" oX="275" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0010" x="6404" y="2620" w="149" h="213" oX="291" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0011" x="7859" y="2076" w="151" h="205" oX="299" oY="231" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0012" x="4173" y="2383" w="150" h="210" oX="297" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0013" x="6893" y="2205" w="169" h="208" oX="278" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0014" x="2238" y="2363" w="195" h="209" oX="255" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_SW__0015" x="4957" y="999" w="186" h="187" oX="273" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0000" x="6502" y="1993" w="155" h="204" oX="270" oY="244" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0001" x="2591" y="443" w="259" h="171" oX="250" oY="250" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0002" x="6350" y="3979" w="265" h="246" oX="237" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0003" x="845" y="3209" w="313" h="222" oX="147" oY="216" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0004" x="2701" y="2584" w="320" h="211" oX="137" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0005" x="4841" y="1981" w="283" h="203" oX="154" oY="226" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0006" x="6085" y="1008" w="269" h="187" oX="195" oY="245" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0007" x="4216" y="628" w="227" h="179" oX="246" oY="249" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0008" x="2834" y="797" w="216" h="181" oX="253" oY="245" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0009" x="5987" y="1389" w="160" h="195" oX="260" oY="237" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0010" x="2114" y="1747" w="135" h="201" oX="288" oY="242" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0011" x="4968" y="2186" w="136" h="208" oX="302" oY="237" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0012" x="2808" y="2163" w="136" h="207" oX="292" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0013" x="5589" y="2190" w="110" h="208" oX="299" oY="238" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0014" x="4536" y="2389" w="106" h="212" oX="303" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_W___0015" x="4540" y="2176" w="104" h="211" oX="309" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0000" x="5966" y="819" w="152" h="184" oX="257" oY="246" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0001" x="702" y="2126" w="227" h="205" oX="245" oY="248" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0002" x="2359" y="4421" w="228" h="257" oX="248" oY="179" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0003" x="4910" y="1778" w="296" h="201" oX="162" oY="224" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0004" x="1801" y="974" w="315" h="185" oX="141" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0005" x="145" y="1131" w="281" h="188" oX="163" oY="239" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0006" x="246" y="588" w="235" h="174" oX="224" oY="250" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0007" x="6266" y="297" w="196" h="168" oX="257" oY="253" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0008" x="2629" y="795" w="203" h="181" oX="241" oY="248" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0009" x="6870" y="643" w="182" h="180" oX="236" oY="246" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0010" x="4436" y="1181" w="177" h="190" oX="272" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0011" x="7543" y="1613" w="186" h="200" oX="280" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0012" x="1513" y="1945" w="193" h="202" oX="262" oY="231" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0013" x="5949" y="1586" w="158" h="199" oX="267" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0014" x="3113" y="1757" w="131" h="201" oX="280" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WNW_0015" x="7896" y="846" w="102" h="212" oX="309" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0000" x="7087" y="3064" w="197" h="221" oX="240" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0001" x="3283" y="621" w="279" h="177" oX="247" oY="247" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0002" x="2194" y="3451" w="300" h="227" oX="209" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0003" x="1521" y="3911" w="292" h="240" oX="160" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0004" x="3878" y="3705" w="285" h="237" oX="164" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0005" x="6483" y="3280" w="250" h="225" oX="174" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0006" x="1967" y="2573" w="269" h="211" oX="187" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0007" x="2251" y="1749" w="260" h="200" oX="219" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0008" x="2805" y="2373" w="232" h="209" oX="248" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0009" x="4189" y="3247" w="151" h="225" oX="290" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0010" x="4644" y="2393" w="126" h="210" oX="300" oY="237" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0011" x="1532" y="2356" w="120" h="210" oX="315" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0012" x="4772" y="2395" w="120" h="210" oX="310" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0013" x="598" y="2543" w="126" h="211" oX="304" oY="238" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0014" x="6382" y="2835" w="156" h="217" oX="272" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Attack 2_WSW_0015" x="3110" y="1960" w="131" h="203" oX="297" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_E___0000" x="892" y="1" w="294" h="111" oX="413" oY="289" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_ENE_0000" x="2947" y="1" w="290" h="124" oX="401" oY="249" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_ESE_0000" x="759" y="114" w="260" h="143" oX="411" oY="333" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_N___0000" x="1" y="2118" w="134" h="205" oX="269" oY="118" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_NE__0000" x="7792" y="1" w="246" h="142" oX="378" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_NNE_0000" x="7054" y="647" w="194" h="180" oX="324" oY="144" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_NNW_0000" x="3619" y="1762" w="145" h="201" oX="220" oY="130" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_NW__0000" x="428" y="1133" w="196" h="189" oX="132" oY="176" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_S___0000" x="7310" y="2861" w="134" h="218" oX="317" oY="392" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_SE__0000" x="3052" y="798" w="196" h="181" oX="392" oY="370" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_SSE_0000" x="7009" y="2629" w="145" h="213" oX="355" oY="385" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_SSW_0000" x="6830" y="1396" w="194" h="196" oX="202" oY="389" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_SW__0000" x="2102" y="125" w="247" h="149" oX="95" oY="380" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_W___0000" x="4384" y="1" w="295" h="127" oX="12" oY="325" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_WNW_0000" x="7510" y="144" w="261" h="158" oX="48" oY="251" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Dead_WSW_0000" x="5834" y="1" w="290" h="133" oX="29" oY="354" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0000" x="6568" y="5020" w="150" h="276" oX="317" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0001" x="6921" y="4764" w="123" h="272" oX="322" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0002" x="8046" y="4417" w="132" h="257" oX="306" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0003" x="7513" y="4082" w="142" h="251" oX="301" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0004" x="7135" y="3765" w="180" h="240" oX="272" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0005" x="1974" y="3679" w="208" h="235" oX="258" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0006" x="6923" y="3287" w="257" h="225" oX="232" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0007" x="4180" y="1969" w="252" h="203" oX="257" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0008" x="652" y="951" w="211" h="184" oX="310" oY="250" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0009" x="6943" y="2844" w="174" h="216" oX="362" oY="252" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0010" x="1976" y="276" w="235" h="163" oX="378" oY="292" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0011" x="1" y="1" w="294" h="107" oX="397" oY="287" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0012" x="297" y="1" w="297" h="107" oX="411" oY="289" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0013" x="1188" y="1" w="295" h="111" oX="413" oY="289" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0014" x="596" y="1" w="294" h="110" oX="413" oY="289" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_E___0015" x="1485" y="1" w="294" h="111" oX="413" oY="289" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0000" x="3848" y="3944" w="193" h="244" oX="301" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0001" x="2639" y="4175" w="155" h="250" oX="309" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0002" x="2303" y="4161" w="123" h="251" oX="303" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0003" x="6921" y="4500" w="126" h="262" oX="304" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0004" x="6228" y="4743" w="137" h="266" oX="299" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0005" x="8011" y="4941" w="161" h="271" oX="291" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0006" x="4570" y="4988" w="194" h="273" oX="280" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0007" x="5670" y="3969" w="195" h="246" oX="299" oY="209" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0008" x="2085" y="3224" w="157" h="224" oX="346" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0009" x="4358" y="3027" w="149" h="222" oX="364" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0010" x="3822" y="1" w="264" h="126" oX="376" oY="258" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0011" x="1781" y="1" w="282" h="122" oX="396" oY="250" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0012" x="3239" y="1" w="289" h="124" oX="401" oY="249" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0013" x="2655" y="1" w="290" h="123" oX="401" oY="249" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0014" x="2065" y="1" w="290" h="122" oX="401" oY="249" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ENE_0015" x="3530" y="1" w="290" h="124" oX="401" oY="249" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0000" x="5569" y="5277" w="126" h="286" oX="316" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0001" x="7537" y="5169" w="142" h="277" oX="314" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0002" x="6192" y="4222" w="152" h="254" oX="295" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0003" x="5654" y="3495" w="169" h="232" oX="283" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0004" x="4434" y="1971" w="212" h="203" oX="252" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0005" x="5743" y="1386" w="242" h="194" oX="233" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0006" x="6194" y="467" w="291" h="173" oX="201" oY="244" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0007" x="745" y="259" w="288" h="160" oX="229" oY="254" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0008" x="4254" y="130" w="267" h="154" oX="279" oY="270" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0009" x="3250" y="800" w="203" h="181" oX="357" oY="300" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0010" x="7660" y="1221" w="197" h="192" oX="370" oY="321" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0011" x="7272" y="1" w="270" h="140" oX="384" oY="329" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0012" x="6998" y="1" w="272" h="136" oX="402" oY="334" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0013" x="1" y="110" w="260" h="142" oX="411" oY="334" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0014" x="1021" y="114" w="260" h="143" oX="411" oY="333" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_ESE_0015" x="1283" y="114" w="260" h="143" oX="411" oY="333" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0000" x="4768" y="130" w="251" h="155" oX="229" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0001" x="1035" y="259" w="212" h="162" oX="268" oY="225" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0002" x="4615" y="1181" w="182" h="190" oX="272" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0003" x="5470" y="3494" w="182" h="230" oX="268" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0004" x="2065" y="4411" w="178" h="256" oX="266" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0005" x="826" y="4392" w="190" h="254" oX="272" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0006" x="1694" y="4666" w="202" h="263" oX="277" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0007" x="7136" y="3532" w="202" h="231" oX="267" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0008" x="7731" y="1643" w="217" h="200" oX="251" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0009" x="1814" y="125" w="286" h="148" oX="227" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0010" x="1850" y="3222" w="233" h="223" oX="261" oY="125" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0011" x="6962" y="3994" w="142" h="247" oX="266" oY="87" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0012" x="1906" y="2361" w="141" h="209" oX="270" oY="115" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0013" x="931" y="2131" w="137" h="205" oX="266" oY="118" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0014" x="8012" y="2138" w="140" h="205" oX="269" oY="118" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_N___0015" x="1070" y="2145" w="134" h="205" oX="269" oY="118" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0000" x="6357" y="1390" w="231" h="195" oX="276" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0001" x="6112" y="3050" w="192" h="220" oX="293" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0002" x="6985" y="3514" w="149" h="235" oX="290" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0003" x="5395" y="4469" w="133" h="261" oX="290" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0004" x="311" y="5163" w="130" h="279" oX="293" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0005" x="6246" y="5288" w="127" h="286" oX="307" oY="182" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0006" x="3902" y="5541" w="131" h="296" oX="323" oY="183" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0007" x="7046" y="4774" w="133" h="270" oX="334" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0008" x="5329" y="3725" w="133" h="238" oX="348" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0009" x="4012" y="1766" w="167" h="201" oX="358" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0010" x="1545" y="125" w="267" h="147" oX="361" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0011" x="3000" y="981" w="241" h="186" oX="375" oY="171" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0012" x="4523" y="130" w="243" h="154" oX="378" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0013" x="263" y="110" w="246" h="142" oX="378" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0014" x="7544" y="1" w="246" h="141" oX="378" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NE__0015" x="511" y="113" w="246" h="142" oX="378" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0000" x="2871" y="278" w="258" h="165" oX="246" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0001" x="3455" y="803" w="211" h="181" oX="278" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0002" x="1184" y="2779" w="173" h="214" oX="281" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0003" x="4411" y="4202" w="156" h="250" oX="280" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0004" x="6098" y="5011" w="143" h="275" oX="279" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0005" x="2610" y="5229" w="144" h="281" oX="288" oY="183" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0006" x="1493" y="5481" w="140" h="293" oX="300" oY="180" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0007" x="2532" y="4686" w="127" h="264" oX="311" oY="189" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0008" x="5336" y="3264" w="137" h="226" oX="313" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0009" x="5021" y="130" w="238" h="156" oX="293" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0010" x="1628" y="1351" w="269" h="192" oX="307" oY="161" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0011" x="6059" y="3499" w="193" h="230" oX="323" oY="113" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0012" x="4928" y="1188" w="188" h="191" oX="325" oY="140" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0013" x="7250" y="649" w="194" h="180" oX="324" oY="144" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0014" x="7446" y="651" w="194" h="180" oX="324" oY="144" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNE_0015" x="7642" y="651" w="194" h="180" oX="324" oY="144" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0000" x="3131" y="279" w="209" h="165" oX="228" oY="237" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0001" x="7658" y="305" w="197" h="169" oX="260" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0002" x="3243" y="983" w="179" h="186" oX="268" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0003" x="4648" y="1979" w="191" h="203" oX="263" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0004" x="3788" y="3245" w="204" h="224" oX="256" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0005" x="1421" y="2568" w="226" h="211" oX="255" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0006" x="4894" y="2397" w="262" h="209" oX="252" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0007" x="6607" y="1010" w="270" h="187" oX="226" oY="216" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0008" x="6379" y="138" w="272" h="157" oX="202" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0009" x="5833" y="136" w="296" h="156" oX="178" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0010" x="1" y="4111" w="171" h="247" oX="223" oY="102" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0011" x="3011" y="3932" w="164" h="246" oX="213" oY="96" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0012" x="3430" y="1964" w="159" h="203" oX="220" oY="128" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0013" x="5208" y="1780" w="152" h="201" oX="213" oY="130" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0014" x="5362" y="1780" w="151" h="201" oX="220" oY="130" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NNW_0015" x="5515" y="1780" w="145" h="201" oX="220" oY="130" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0000" x="4445" y="628" w="162" h="179" oX="246" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0001" x="8012" y="542" w="162" h="177" oX="260" oY="231" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0002" x="1029" y="1526" w="165" h="197" oX="268" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0003" x="7570" y="1415" w="189" h="196" oX="263" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0004" x="1899" y="1354" w="220" h="192" oX="253" oY="216" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0005" x="2109" y="614" w="247" h="176" oX="247" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0006" x="3399" y="127" w="291" h="152" oX="237" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0007" x="2351" y="125" w="299" h="149" oX="204" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0008" x="3342" y="281" w="288" h="165" oX="175" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0009" x="2578" y="616" w="266" h="177" oX="155" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0010" x="5044" y="4727" w="167" h="265" oX="194" oY="109" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0011" x="1" y="3404" w="221" h="226" oX="134" oY="139" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0012" x="5145" y="1000" w="218" h="187" oX="128" oY="177" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0013" x="7664" y="1031" w="196" h="188" oX="132" oY="177" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0014" x="2187" y="1163" w="200" h="189" oX="132" oY="176" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_NW__0015" x="2759" y="1168" w="196" h="189" oX="132" oY="176" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0000" x="1070" y="3903" w="251" h="240" oX="240" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0001" x="4979" y="2822" w="211" h="215" oX="241" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0002" x="5709" y="3047" w="183" h="220" oX="265" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0003" x="5662" y="1782" w="182" h="201" oX="270" oY="218" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0004" x="7991" y="1089" w="177" h="188" oX="277" oY="237" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0005" x="5365" y="1001" w="190" h="187" oX="258" oY="248" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0006" x="6858" y="2415" w="202" h="210" oX="241" oY="242" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0007" x="5672" y="4471" w="202" h="261" oX="251" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0008" x="2438" y="3926" w="216" h="242" oX="253" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0009" x="6418" y="1" w="286" h="135" oX="207" oY="351" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0010" x="2795" y="1554" w="233" h="197" oX="226" oY="342" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0011" x="4342" y="3251" w="142" h="225" oX="312" oY="348" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0012" x="4182" y="3474" w="141" h="231" oX="309" oY="377" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0013" x="2106" y="3003" w="137" h="219" oX="317" oY="391" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0014" x="3289" y="3018" w="140" h="219" oX="311" oY="392" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_S___0015" x="7446" y="2892" w="134" h="218" oX="317" oY="392" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0000" x="4193" y="5258" w="162" h="284" oX="312" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0001" x="6757" y="4754" w="162" h="268" oX="298" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0002" x="6968" y="3751" w="165" h="241" oX="287" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0003" x="2250" y="2155" w="189" h="206" oX="268" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0004" x="6612" y="824" w="219" h="183" oX="248" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0005" x="2846" y="618" w="247" h="177" oX="226" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0006" x="3287" y="448" w="291" h="171" oX="192" oY="255" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0007" x="3580" y="450" w="299" h="171" oX="217" oY="265" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0008" x="6653" y="138" w="288" h="157" oX="257" oY="289" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0009" x="5274" y="1" w="266" h="132" oX="299" oY="345" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0010" x="1601" y="2784" w="167" h="214" oX="359" oY="336" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0011" x="3668" y="804" w="221" h="181" oX="365" oY="348" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0012" x="2358" y="615" w="218" h="176" oX="374" oY="371" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0013" x="1" y="761" w="195" h="180" oX="393" oY="371" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0014" x="3891" y="807" w="200" h="181" oX="388" oY="370" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SE__0015" x="4093" y="809" w="196" h="181" oX="392" oY="370" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0000" x="1341" y="4925" w="209" h="270" oX="283" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0001" x="5299" y="3966" w="197" h="245" oX="263" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0002" x="474" y="3190" w="179" h="222" oX="273" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0003" x="3361" y="1367" w="191" h="193" oX="266" oY="216" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0004" x="5760" y="819" w="204" h="182" oX="260" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0005" x="198" y="764" w="225" h="180" oX="240" oY="245" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0006" x="4291" y="809" w="262" h="181" oX="206" oY="260" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0007" x="2245" y="3006" w="270" h="218" oX="224" oY="237" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0008" x="1" y="1714" w="271" h="199" oX="247" oY="263" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0009" x="2357" y="1" w="296" h="122" oX="246" oY="351" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0010" x="5192" y="2823" w="171" h="215" oX="326" oY="344" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0011" x="5365" y="2826" w="164" h="215" oX="343" oY="351" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0012" x="4124" y="2595" w="159" h="212" oX="341" oY="383" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0013" x="7156" y="2630" w="152" h="213" oX="355" oY="385" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0014" x="7310" y="2646" w="151" h="213" oX="349" oY="385" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSE_0015" x="7463" y="2677" w="145" h="213" oX="355" oY="385" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0000" x="1708" y="1949" w="258" h="202" oX="216" oY="216" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0001" x="7582" y="2920" w="211" h="217" oX="231" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0002" x="459" y="3414" w="172" h="226" oX="267" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0003" x="1206" y="2145" w="157" h="205" oX="283" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0004" x="1064" y="1331" w="143" h="193" oX="298" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0005" x="4261" y="1372" w="144" h="194" oX="288" oY="247" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0006" x="936" y="3661" w="140" h="236" oX="280" oY="218" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0007" x="2272" y="5501" w="127" h="293" oX="282" oY="179" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0008" x="6836" y="5320" w="138" h="287" oX="269" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0009" x="6996" y="829" w="238" h="183" oX="189" oY="319" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0010" x="5128" y="461" w="269" h="172" oX="144" oY="335" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0011" x="3994" y="3247" w="193" h="224" oX="204" oY="338" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0012" x="655" y="3194" w="188" h="222" oX="207" oY="362" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0013" x="7761" y="1445" w="194" h="196" oX="202" oY="389" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0014" x="7957" y="1473" w="194" h="196" oX="202" oY="389" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SSW_0015" x="1" y="1515" w="194" h="196" oX="202" oY="389" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0000" x="277" y="2969" w="230" h="216" oX="214" oY="225" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0001" x="7610" y="2705" w="192" h="213" oX="235" oY="218" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0002" x="8022" y="3457" w="149" h="227" oX="281" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0003" x="6344" y="2196" w="133" h="208" oX="297" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0004" x="7859" y="1250" w="130" h="193" oX="297" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0005" x="4799" y="1183" w="127" h="192" oX="286" oY="248" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0006" x="3745" y="3702" w="131" h="237" oX="266" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0007" x="5340" y="5564" w="133" h="302" oX="253" oY="169" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0008" x="5761" y="5572" w="133" h="304" oX="239" oY="187" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0009" x="5301" y="3492" w="167" h="231" oX="195" oY="274" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0010" x="3692" y="129" w="267" h="152" oX="92" oY="326" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0011" x="3030" y="1558" w="242" h="197" oX="103" oY="323" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0012" x="5700" y="1003" w="242" h="187" oX="100" oY="342" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0013" x="2652" y="126" w="247" h="149" oX="95" oY="380" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0014" x="3150" y="127" w="247" h="150" oX="95" oY="379" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_SW__0015" x="2901" y="127" w="247" h="149" oX="95" oY="380" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0000" x="5410" y="2397" w="150" h="210" oX="253" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0001" x="1477" y="1542" w="123" h="198" oX="275" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0002" x="6248" y="2832" w="132" h="216" oX="282" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0003" x="2946" y="2164" w="142" h="207" oX="277" oY="218" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0004" x="5356" y="1190" w="180" h="191" oX="268" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0005" x="4488" y="286" w="208" h="166" oX="254" oY="256" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0006" x="3554" y="1368" w="257" h="193" oX="231" oY="226" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0007" x="1078" y="3667" w="252" h="234" oX="211" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0008" x="7060" y="4255" w="211" h="253" oX="199" oY="184" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0009" x="416" y="4120" w="174" h="247" oX="184" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0010" x="221" y="3638" w="235" h="232" oX="107" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0011" x="6943" y="139" w="294" h="157" oX="29" oY="291" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0012" x="5261" y="135" w="297" h="155" oX="12" oY="295" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0013" x="4088" y="1" w="294" h="126" oX="13" oY="325" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0014" x="4681" y="1" w="294" h="127" oX="13" oY="325" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_W___0015" x="4977" y="1" w="295" h="127" oX="12" oY="325" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0000" x="3808" y="1566" w="126" h="198" oX="278" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0001" x="1" y="1130" w="142" h="188" oX="264" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0002" x="3428" y="2169" w="152" h="207" oX="273" oY="209" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0003" x="543" y="1720" w="169" h="200" oX="268" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0004" x="2121" y="1354" w="212" h="192" oX="256" oY="226" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0005" x="2157" y="441" w="243" h="171" oX="245" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0006" x="3961" y="129" w="291" h="153" oX="228" oY="250" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0007" x="1650" y="1161" w="288" h="188" oX="203" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0008" x="274" y="1716" w="267" h="199" oX="174" oY="194" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0009" x="1649" y="2571" w="203" h="211" oX="160" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0010" x="4313" y="4454" w="197" h="260" oX="153" oY="145" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0011" x="4989" y="1578" w="271" h="198" oX="65" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0012" x="5560" y="135" w="271" h="156" oX="47" oY="252" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0013" x="7773" y="145" w="260" h="158" oX="49" oY="251" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0014" x="1" y="254" w="261" h="158" oX="48" oY="251" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WNW_0015" x="482" y="257" w="261" h="158" oX="48" oY="251" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0000" x="3918" y="3024" w="193" h="219" oX="226" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0001" x="7284" y="2208" w="155" h="208" oX="256" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0002" x="7435" y="3112" w="123" h="224" oX="294" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0003" x="1" y="2325" w="126" h="209" oX="290" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0004" x="2620" y="1165" w="137" h="191" oX="284" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0005" x="7838" y="662" w="161" h="182" oX="268" oY="252" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0006" x="2511" y="3233" w="194" h="223" oX="246" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0007" x="3210" y="5237" w="195" h="282" oX="226" oY="173" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0008" x="2737" y="5513" w="157" h="293" oX="217" oY="179" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0009" x="6796" y="4234" w="149" h="254" oX="207" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0010" x="7446" y="833" w="264" h="183" oX="80" oY="274" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0011" x="870" y="595" w="282" h="174" oX="42" oY="307" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0012" x="6464" y="297" w="289" h="168" oX="30" oY="318" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0013" x="5542" y="1" w="290" h="132" oX="29" oY="354" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0014" x="6706" y="1" w="290" h="135" oX="29" oY="352" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Death_WSW_0015" x="6126" y="1" w="290" h="133" oX="29" oY="354" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0000" x="7380" y="5125" w="155" h="276" oX="323" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0001" x="3151" y="4693" w="215" h="264" oX="262" oY="216" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0002" x="5136" y="4997" w="173" h="274" oX="237" oY="216" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0003" x="5726" y="4218" w="229" h="251" oX="181" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0004" x="4509" y="3036" w="221" h="219" oX="203" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0005" x="4766" y="4989" w="161" h="273" oX="286" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0006" x="2842" y="4956" w="151" h="272" oX="304" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0007" x="7273" y="4287" w="232" h="253" oX="270" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0008" x="453" y="4643" w="223" h="262" oX="275" oY="181" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0009" x="5331" y="4732" w="199" h="265" oX="284" oY="178" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0010" x="1" y="5149" w="180" h="276" oX="298" oY="178" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0011" x="1646" y="5203" w="166" h="279" oX="308" oY="183" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_E___0012" x="1814" y="5205" w="153" h="279" oX="316" oY="189" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0000" x="1" y="4361" w="201" h="253" oX="307" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0001" x="6687" y="3746" w="279" h="238" oX="249" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0002" x="2995" y="4959" w="222" h="271" oX="216" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0003" x="1804" y="5486" w="161" h="291" oX="245" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0004" x="7441" y="4592" w="176" h="262" oX="249" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0005" x="3498" y="5529" w="127" h="295" oX="317" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0006" x="4043" y="3946" w="207" h="244" oX="280" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0007" x="7795" y="2983" w="269" h="216" oX="261" oY="189" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0008" x="1479" y="3000" w="267" h="217" oX="259" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0009" x="2707" y="3235" w="236" h="223" oX="275" oY="186" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0010" x="4282" y="3714" w="213" h="237" oX="291" oY="182" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0011" x="2809" y="3932" w="200" h="243" oX="299" oY="187" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ENE_0012" x="3177" y="3936" w="189" h="243" oX="305" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0000" x="4743" y="5264" w="147" h="284" oX="318" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0001" x="7596" y="4897" w="161" h="270" oX="287" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0002" x="4512" y="4456" w="165" h="260" oX="252" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0003" x="5262" y="1580" w="274" h="198" oX="141" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0004" x="425" y="764" w="250" h="180" oX="182" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0005" x="6254" y="3503" w="209" h="230" oX="243" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0006" x="5112" y="5273" w="133" h="284" oX="313" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0007" x="6243" y="5011" w="166" h="275" oX="290" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0008" x="1332" y="5481" w="159" h="290" oX="291" oY="180" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0009" x="291" y="5444" w="147" h="289" oX="299" oY="180" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0010" x="2608" y="5512" w="127" h="293" oX="312" oY="185" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0011" x="2150" y="5494" w="120" h="293" oX="316" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_ESE_0012" x="176" y="5437" w="113" h="292" oX="316" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0000" x="2852" y="445" w="261" h="171" oX="242" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0001" x="4497" y="3717" w="236" h="237" oX="293" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0002" x="2184" y="3680" w="278" h="234" oX="267" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0003" x="3348" y="4963" w="228" h="272" oX="285" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0004" x="1635" y="5484" w="167" h="290" oX="305" oY="194" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0005" x="2585" y="3689" w="229" h="235" oX="271" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0006" x="4698" y="455" w="239" h="172" oX="263" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0007" x="3274" y="1562" w="241" h="197" oX="233" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0008" x="856" y="1139" w="238" h="188" oX="239" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0009" x="865" y="771" w="237" h="180" oX="232" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0010" x="695" y="421" w="247" h="170" oX="224" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0011" x="1249" y="259" w="245" h="162" oX="227" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_N___0012" x="6131" y="136" w="246" h="156" oX="229" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0000" x="114" y="2537" w="244" h="210" oX="287" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0001" x="3816" y="2593" w="306" h="211" oX="250" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0002" x="592" y="4138" w="279" h="247" oX="214" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0003" x="6236" y="5576" w="129" h="310" oX="287" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0004" x="2896" y="5516" w="135" h="293" oX="300" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0005" x="3033" y="5516" w="132" h="293" oX="311" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0006" x="3925" y="2173" w="252" h="207" oX="263" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0007" x="3517" y="1563" w="289" h="197" oX="246" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0008" x="3966" y="1372" w="293" h="193" oX="240" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0009" x="3936" y="1567" w="271" h="197" oX="250" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0010" x="6570" y="1589" w="256" h="199" oX="260" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0011" x="783" y="1523" w="244" h="196" oX="267" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NE__0012" x="2335" y="1356" w="237" h="192" oX="270" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0000" x="5538" y="1192" w="265" h="190" oX="265" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0001" x="1884" y="2786" w="290" h="214" oX="266" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0002" x="1080" y="3439" w="299" h="226" oX="232" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0003" x="5475" y="5565" w="154" h="302" oX="287" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0004" x="5631" y="5569" w="128" h="302" oX="310" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0005" x="3578" y="4971" w="182" h="272" oX="296" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0006" x="865" y="953" w="262" h="184" oX="258" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0007" x="6109" y="1587" w="281" h="198" oX="234" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0008" x="6074" y="1197" w="283" h="190" oX="232" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0009" x="3580" y="987" w="273" h="186" oX="233" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0010" x="4555" y="810" w="270" h="181" oX="234" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0011" x="6487" y="467" w="263" h="173" oX="239" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNE_0012" x="3632" y="283" w="260" h="165" oX="242" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0000" x="2413" y="276" w="225" h="164" oX="230" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0001" x="6594" y="4234" w="200" h="252" oX="279" oY="187" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0002" x="5957" y="4222" w="233" h="251" oX="299" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0003" x="7747" y="3425" w="273" h="225" oX="292" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0004" x="5876" y="4475" w="216" h="261" oX="295" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0005" x="2574" y="1359" w="256" h="192" oX="258" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0006" x="1527" y="611" w="209" h="175" oX="253" oY="242" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0007" x="3742" y="2172" w="181" h="207" oX="242" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0008" x="6942" y="1999" w="167" h="204" oX="259" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0009" x="468" y="946" w="182" h="185" oX="247" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0010" x="483" y="588" w="200" h="174" oX="232" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0011" x="6939" y="298" w="198" h="168" oX="233" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NNW_0012" x="2213" y="276" w="198" h="163" oX="234" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0000" x="4063" y="284" w="175" h="166" oX="235" oY="246" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0001" x="1690" y="4931" w="160" h="270" oX="273" oY="168" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0002" x="6720" y="5024" w="199" h="275" oX="298" oY="189" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0003" x="5846" y="1787" w="288" h="201" oX="301" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0004" x="6508" y="3058" w="246" h="220" oX="287" oY="187" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0005" x="6356" y="1008" w="249" h="187" oX="257" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0006" x="7991" y="1279" w="169" h="192" oX="256" oY="237" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0007" x="4124" y="2809" w="147" h="215" oX="263" oY="226" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0008" x="3998" y="2806" w="124" h="216" oX="286" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0009" x="1377" y="1944" w="134" h="202" oX="276" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0010" x="3686" y="1175" w="150" h="191" oX="257" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0011" x="3424" y="986" w="154" h="186" oX="255" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_NW__0012" x="1758" y="788" w="152" h="183" oX="256" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0000" x="5623" y="2615" w="261" h="212" oX="217" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0001" x="5531" y="2829" w="236" h="215" oX="191" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0002" x="1479" y="788" w="277" h="180" oX="176" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0003" x="626" y="1137" w="228" h="188" oX="207" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0004" x="3894" y="284" w="167" h="165" oX="248" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0005" x="2640" y="277" w="229" h="164" oX="220" oY="258" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0006" x="2292" y="2790" w="239" h="214" oX="218" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0007" x="446" y="4908" w="241" h="267" oX="246" oY="194" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0008" x="689" y="4912" w="238" h="268" oX="243" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0009" x="3174" y="4433" w="237" h="258" oX="251" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0010" x="2701" y="4428" w="247" h="257" oX="249" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0011" x="6346" y="4227" w="246" h="251" oX="247" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_S___0012" x="3368" y="3937" w="246" h="243" oX="245" oY="208" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0000" x="3570" y="5245" w="175" h="282" oX="310" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0001" x="687" y="5182" w="160" h="277" oX="287" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0002" x="4252" y="3953" w="199" h="244" oX="223" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0003" x="6322" y="824" w="288" h="182" oX="131" oY="218" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0004" x="944" y="423" w="246" h="170" oX="187" oY="242" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0005" x="4609" y="629" w="249" h="179" oX="214" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0006" x="2756" y="5230" w="169" h="281" oX="295" oY="195" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0007" x="6976" y="5327" w="147" h="287" oX="310" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0008" x="3627" y="5531" w="124" h="295" oX="310" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0009" x="7507" y="5448" w="134" h="289" oX="310" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0010" x="6375" y="5297" w="150" h="286" oX="313" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0011" x="6527" y="5298" w="154" h="286" oX="311" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SE__0012" x="5415" y="5277" w="152" h="285" oX="312" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0000" x="3413" y="4437" w="226" h="258" oX="264" oY="224" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0001" x="4679" y="4459" w="200" h="260" oX="241" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0002" x="7111" y="2002" w="233" h="204" oX="188" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0003" x="5069" y="635" w="273" h="179" oX="155" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0004" x="264" y="254" w="216" h="159" oX="209" oY="247" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0005" x="1192" y="423" w="256" h="170" oX="206" oY="250" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0006" x="204" y="4361" w="209" h="253" oX="258" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0007" x="1967" y="5489" w="181" h="290" oX="297" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0008" x="647" y="5461" w="167" h="289" oX="294" oY="189" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0009" x="4357" y="5260" w="182" h="283" oX="291" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0010" x="4541" y="5263" w="200" h="283" oX="288" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0011" x="1042" y="5193" w="198" h="278" oX="289" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSE_0012" x="7180" y="5074" w="198" h="275" oX="288" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0000" x="6879" y="1014" w="266" h="187" oX="189" oY="248" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0001" x="1912" y="792" w="290" h="180" oX="164" oY="242" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0002" x="7359" y="1208" w="299" h="191" oX="189" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0003" x="3591" y="1965" w="154" h="203" oX="279" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0004" x="8040" y="1" w="128" h="179" oX="282" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0005" x="6755" y="297" w="182" h="168" oX="242" oY="257" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0006" x="6606" y="1199" w="262" h="191" oX="200" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0007" x="7777" y="3201" w="281" h="222" oX="205" oY="206" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0008" x="4675" y="3260" w="283" h="224" oX="205" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0009" x="1160" y="3215" w="273" h="222" oX="214" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0010" x="2650" y="2797" w="270" h="214" oX="216" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0011" x="129" y="2327" w="263" h="208" oX="218" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SSW_0012" x="5126" y="1983" w="260" h="203" oX="218" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0000" x="2957" y="1169" w="244" h="189" oX="189" oY="260" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0001" x="7051" y="1206" w="306" h="190" oX="164" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0002" x="3156" y="2802" w="279" h="214" oX="227" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0003" x="5769" y="2830" w="129" h="215" oX="304" oY="187" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0004" x="286" y="1321" w="135" h="193" oX="285" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0005" x="7878" y="476" w="132" h="184" oX="277" oY="249" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0006" x="3998" y="992" w="251" h="186" oX="206" oY="248" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0007" x="1365" y="2149" w="289" h="205" oX="185" oY="224" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0008" x="4209" y="1568" w="293" h="197" oX="187" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0009" x="394" y="2332" w="270" h="208" oX="200" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0010" x="3031" y="3018" w="256" h="218" oX="204" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0011" x="700" y="2976" w="243" h="216" oX="210" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_SW__0012" x="4285" y="2596" w="237" h="212" oX="213" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0000" x="1209" y="1346" w="155" h="193" oX="242" oY="251" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0001" x="7560" y="3139" w="215" h="221" oX="243" oY="186" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0002" x="5537" y="5001" w="173" h="274" oX="310" oY="152" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0003" x="1" y="3181" w="229" h="221" oX="310" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0004" x="2441" y="2158" w="220" h="206" oX="296" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0005" x="6833" y="825" w="161" h="183" oX="273" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0006" x="8035" y="182" w="151" h="175" oX="265" oY="254" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0007" x="5715" y="1582" w="232" h="198" oX="218" oY="252" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0008" x="2513" y="1752" w="223" h="200" oX="222" oY="246" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0009" x="4179" y="2174" w="199" h="207" oX="237" oY="244" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0010" x="1" y="2749" w="180" h="213" oX="242" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0011" x="183" y="2749" w="166" h="213" oX="246" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_W___0012" x="5152" y="2608" w="153" h="212" oX="251" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0000" x="8031" y="359" w="147" h="181" oX="255" oY="246" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0001" x="4881" y="4460" w="161" h="260" oX="272" oY="167" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0002" x="816" y="5467" w="165" h="289" oX="303" oY="162" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0003" x="5886" y="2616" w="274" h="212" oX="305" oY="200" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0004" x="5158" y="2397" w="250" h="209" oX="288" oY="187" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0005" x="7236" y="831" w="208" h="183" oX="268" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0006" x="3838" y="1178" w="133" h="191" oX="274" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0007" x="7441" y="2224" w="166" h="208" oX="264" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0008" x="7609" y="2255" w="159" h="208" oX="270" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0009" x="1936" y="2153" w="147" h="206" oX="274" oY="244" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0010" x="3090" y="2165" w="127" h="207" oX="281" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0011" x="2988" y="1959" w="120" h="203" oX="284" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WNW_0012" x="6136" y="1787" w="113" h="201" oX="291" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0000" x="423" y="1324" w="201" h="192" oX="212" oY="260" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0001" x="1196" y="1542" w="279" h="196" oX="192" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0002" x="2054" y="3916" w="222" h="241" oX="282" oY="162" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0003" x="1943" y="3002" w="161" h="218" oX="314" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0004" x="6367" y="1788" w="176" h="201" oX="295" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0005" x="7862" y="1060" w="127" h="188" oX="276" oY="245" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0006" x="4860" y="631" w="207" h="179" oX="233" oY="257" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0007" x="7003" y="1596" w="269" h="198" oX="190" oY="246" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0008" x="7274" y="1599" w="267" h="198" oX="194" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0009" x="2350" y="2577" w="237" h="211" oX="208" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0010" x="2945" y="3238" w="213" h="223" oX="216" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0011" x="6306" y="3054" w="200" h="220" oX="221" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Got Hit 1_WSW_0012" x="7119" y="2845" w="189" h="217" oX="226" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0000" x="4118" y="4192" w="111" h="255" oX="306" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0001" x="1601" y="4403" w="112" h="256" oX="306" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0002" x="2589" y="4427" w="110" h="257" oX="306" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0003" x="2950" y="4431" w="110" h="257" oX="306" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0004" x="1303" y="4400" w="111" h="256" oX="306" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0005" x="6947" y="4243" w="111" h="255" oX="306" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0006" x="1952" y="4409" w="111" h="256" oX="306" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0007" x="2245" y="4414" w="112" h="256" oX="306" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0008" x="7507" y="4335" w="112" h="255" oX="306" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0009" x="7547" y="3826" w="112" h="254" oX="306" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0010" x="415" y="4369" w="111" h="255" oX="306" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0011" x="7820" y="4417" w="111" h="256" oX="306" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0012" x="714" y="4387" w="110" h="255" oX="306" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0013" x="1018" y="4394" w="110" h="255" oX="306" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0014" x="3062" y="4432" w="110" h="257" oX="306" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_E___0015" x="7933" y="4417" w="111" h="256" oX="306" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0000" x="3035" y="4691" w="114" h="264" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0001" x="5213" y="4730" w="116" h="265" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0002" x="5532" y="4732" w="114" h="265" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0003" x="5648" y="4734" w="114" h="265" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0004" x="6112" y="4741" w="114" h="266" oX="297" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0005" x="5764" y="4738" w="114" h="265" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0006" x="5880" y="4738" w="114" h="265" oX="297" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0007" x="1576" y="4661" w="116" h="263" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0008" x="194" y="4616" w="116" h="262" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0009" x="1898" y="4667" w="116" h="263" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0010" x="6367" y="4743" w="114" h="266" oX="297" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0011" x="6483" y="4751" w="114" h="266" oX="297" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0012" x="3368" y="4697" w="114" h="264" oX="297" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0013" x="3484" y="4697" w="114" h="264" oX="297" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0014" x="5996" y="4741" w="114" h="265" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ENE_0015" x="3600" y="4703" w="114" h="264" oX="297" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0000" x="2464" y="3687" w="119" h="236" oX="300" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0001" x="2816" y="3693" w="118" h="236" oX="301" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0002" x="4165" y="3707" w="115" h="237" oX="301" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0003" x="4735" y="3719" w="116" h="237" oX="300" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0004" x="2936" y="3694" w="119" h="236" oX="300" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0005" x="3057" y="3694" w="119" h="236" oX="300" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0006" x="4853" y="3719" w="117" h="237" oX="302" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0007" x="4972" y="3722" w="116" h="237" oX="303" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0008" x="3178" y="3698" w="115" h="236" oX="304" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0009" x="8066" y="2983" w="117" h="235" oX="302" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0010" x="8060" y="3220" w="119" h="235" oX="300" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0011" x="3295" y="3698" w="120" h="236" oX="299" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0012" x="7549" y="3589" w="117" h="235" oX="299" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0013" x="5090" y="3722" w="116" h="237" oX="300" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0014" x="3417" y="3699" w="115" h="236" oX="301" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_ESE_0015" x="5208" y="3725" w="119" h="237" oX="300" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0000" x="6106" y="3272" w="186" h="225" oX="248" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0001" x="633" y="3418" w="186" h="226" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0002" x="4486" y="3257" w="187" h="224" oX="248" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0003" x="6294" y="3276" w="187" h="225" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0004" x="4960" y="3261" w="187" h="224" oX="248" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0005" x="6735" y="3283" w="186" h="225" oX="248" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0006" x="5149" y="3264" w="185" h="224" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0007" x="5475" y="3268" w="183" h="224" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0008" x="5660" y="3269" w="183" h="224" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0009" x="1381" y="3443" w="183" h="226" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0010" x="3030" y="3464" w="184" h="228" oX="248" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0011" x="2496" y="3458" w="186" h="227" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0012" x="1566" y="3445" w="187" h="226" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0013" x="7182" y="3305" w="187" h="225" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0014" x="7371" y="3338" w="186" h="225" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_N___0015" x="7559" y="3362" w="186" h="225" oX="248" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0000" x="312" y="4626" w="139" h="262" oX="276" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0001" x="5530" y="4469" w="140" h="261" oX="276" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0002" x="7619" y="4633" w="141" h="262" oX="276" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0003" x="678" y="4644" w="141" h="262" oX="276" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0004" x="2016" y="4669" w="140" h="263" oX="276" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0005" x="2158" y="4672" w="140" h="263" oX="276" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0006" x="6094" y="4478" w="140" h="261" oX="276" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0007" x="3641" y="4442" w="140" h="259" oX="276" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0008" x="3970" y="4444" w="139" h="260" oX="276" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0009" x="6236" y="4480" w="139" h="261" oX="276" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0010" x="7762" y="4675" w="138" h="263" oX="276" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0011" x="3716" y="4705" w="138" h="264" oX="276" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0012" x="7902" y="4675" w="139" h="263" oX="276" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0013" x="8043" y="4676" w="140" h="263" oX="276" oY="190" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0014" x="6377" y="4480" w="141" h="261" oX="276" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NE__0015" x="821" y="4648" w="140" h="262" oX="276" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0000" x="1607" y="4153" w="171" h="248" oX="256" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0001" x="2796" y="4177" w="172" h="249" oX="256" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0002" x="1780" y="4158" w="173" h="248" oX="256" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0003" x="7657" y="4128" w="173" h="247" oX="256" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0004" x="1955" y="4159" w="172" h="248" oX="256" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0005" x="873" y="4143" w="172" h="247" oX="256" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0006" x="2129" y="4161" w="172" h="248" oX="256" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0007" x="6617" y="3986" w="171" h="246" oX="256" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0008" x="5498" y="3969" w="170" h="245" oX="256" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0009" x="6790" y="3986" w="170" h="246" oX="256" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0010" x="4569" y="4204" w="170" h="250" oX="256" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0011" x="4741" y="4207" w="171" h="250" oX="256" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0012" x="2970" y="4180" w="172" h="249" oX="256" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0013" x="3144" y="4181" w="173" h="249" oX="256" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0014" x="1047" y="4145" w="173" h="247" oX="256" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNE_0015" x="3319" y="4182" w="172" h="249" oX="256" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0000" x="6545" y="1790" w="185" h="201" oX="255" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0001" x="6732" y="1796" w="185" h="201" oX="255" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0002" x="6919" y="1796" w="185" h="201" oX="255" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0003" x="975" y="1725" w="186" h="200" oX="255" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0004" x="2738" y="1753" w="186" h="200" oX="255" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0005" x="2926" y="1757" w="185" h="200" oX="255" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0006" x="3246" y="1761" w="184" h="200" oX="254" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0007" x="2202" y="1951" w="182" h="202" oX="254" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0008" x="7222" y="1799" w="181" h="201" oX="254" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0009" x="2502" y="1954" w="182" h="202" oX="255" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0010" x="2686" y="1955" w="184" h="202" oX="255" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0011" x="7521" y="1815" w="186" h="201" oX="255" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0012" x="7709" y="1845" w="187" h="201" oX="255" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0013" x="7898" y="1873" w="186" h="201" oX="255" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0014" x="3432" y="1762" w="185" h="200" oX="255" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NNW_0015" x="1" y="1915" w="185" h="201" oX="255" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0000" x="3582" y="2170" w="158" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0001" x="7770" y="2283" w="158" h="208" oX="276" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0002" x="4380" y="2176" w="158" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0003" x="4646" y="2184" w="159" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0004" x="4807" y="2186" w="159" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0005" x="5106" y="2188" w="159" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0006" x="5267" y="2188" w="158" h="207" oX="274" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0007" x="2647" y="2367" w="156" h="209" oX="274" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0008" x="666" y="2333" w="156" h="208" oX="274" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0009" x="824" y="2338" w="155" h="208" oX="276" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0010" x="7930" y="2345" w="158" h="208" oX="276" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0011" x="5427" y="2188" w="160" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0012" x="5701" y="2195" w="160" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0013" x="5863" y="2195" w="159" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0014" x="6024" y="2195" w="158" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_NW__0015" x="6184" y="2196" w="158" h="207" oX="276" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0000" x="4053" y="452" w="185" h="173" oX="287" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0001" x="6006" y="463" w="186" h="173" oX="286" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0002" x="6939" y="468" w="186" h="173" oX="286" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0003" x="4939" y="457" w="187" h="172" oX="285" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0004" x="7127" y="472" w="187" h="173" oX="285" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0005" x="7316" y="474" w="186" h="173" oX="286" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0006" x="6752" y="467" w="185" h="173" oX="287" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0007" x="1738" y="611" w="183" h="175" oX="289" oY="226" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0008" x="685" y="593" w="183" h="174" oX="289" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0009" x="1154" y="595" w="183" h="174" oX="289" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0010" x="7504" y="476" w="184" h="173" oX="288" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0011" x="7690" y="476" w="186" h="173" oX="286" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0012" x="2402" y="442" w="187" h="171" oX="285" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0013" x="5399" y="462" w="187" h="172" oX="285" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0014" x="5588" y="463" w="186" h="172" oX="286" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_S___0015" x="1339" y="610" w="186" h="174" oX="286" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0000" x="981" y="2352" w="158" h="208" oX="286" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0001" x="6172" y="2405" w="158" h="210" oX="286" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0002" x="3039" y="2374" w="158" h="209" oX="286" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0003" x="6445" y="2408" w="159" h="210" oX="285" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0004" x="3199" y="2375" w="159" h="209" oX="285" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0005" x="7062" y="2417" w="159" h="210" oX="285" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0006" x="7223" y="2418" w="158" h="210" oX="288" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0007" x="5307" y="2609" w="156" h="212" oX="290" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0008" x="5465" y="2612" w="156" h="212" oX="290" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0009" x="1141" y="2352" w="155" h="208" oX="289" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0010" x="3360" y="2378" w="158" h="209" oX="286" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0011" x="6479" y="2199" w="160" h="207" oX="284" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0012" x="3520" y="2379" w="160" h="209" oX="284" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0013" x="7383" y="2434" w="159" h="210" oX="285" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0014" x="7544" y="2465" w="158" h="210" oX="286" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SE__0015" x="7704" y="2493" w="158" h="210" oX="286" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0000" x="5344" y="636" w="185" h="179" oX="280" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0001" x="4827" y="812" w="185" h="181" oX="280" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0002" x="8001" y="721" w="185" h="180" oX="280" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0003" x="5014" y="816" w="186" h="181" oX="279" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0004" x="677" y="769" w="186" h="180" oX="279" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0005" x="5202" y="817" w="186" h="181" oX="279" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0006" x="5390" y="818" w="184" h="181" oX="282" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0007" x="7712" y="846" w="182" h="183" oX="284" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0008" x="8000" y="903" w="182" h="184" oX="284" oY="219" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0009" x="5576" y="819" w="182" h="181" oX="283" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0010" x="4030" y="627" w="184" h="178" oX="281" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0011" x="3095" y="619" w="186" h="177" oX="279" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0012" x="5531" y="637" w="187" h="179" oX="278" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0013" x="1104" y="771" w="186" h="180" oX="279" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0014" x="1292" y="786" w="185" h="180" oX="280" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSE_0015" x="5720" y="638" w="185" h="179" oX="280" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0000" x="7857" y="305" w="172" h="169" oX="292" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0001" x="1" y="414" w="172" h="169" oX="292" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0002" x="7139" y="302" w="171" h="168" oX="293" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0003" x="7312" y="302" w="173" h="168" oX="291" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0004" x="175" y="415" w="172" h="169" oX="292" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0005" x="349" y="417" w="172" h="169" oX="292" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0006" x="1450" y="438" w="171" h="170" oX="293" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0007" x="3115" y="446" w="170" h="171" oX="294" oY="231" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0008" x="3881" y="451" w="170" h="171" oX="294" oY="231" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0009" x="1623" y="439" w="170" h="170" oX="294" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0010" x="523" y="417" w="170" h="169" oX="294" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0011" x="7487" y="304" w="169" h="168" oX="295" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0012" x="5184" y="292" w="172" h="167" oX="292" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0013" x="5358" y="292" w="173" h="167" oX="291" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0014" x="5533" y="293" w="172" h="167" oX="292" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SSW_0015" x="1795" y="439" w="170" h="170" oX="294" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0000" x="1129" y="953" w="140" h="185" oX="304" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0001" x="3855" y="990" w="141" h="186" oX="303" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0002" x="5557" y="1002" w="141" h="187" oX="303" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0003" x="4251" y="992" w="140" h="186" oX="304" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0004" x="1271" y="968" w="140" h="185" oX="304" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0005" x="1659" y="973" w="140" h="185" oX="304" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0006" x="5944" y="1005" w="139" h="187" oX="305" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0007" x="1096" y="1140" w="140" h="189" oX="304" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0008" x="1238" y="1155" w="139" h="189" oX="305" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0009" x="4393" y="992" w="138" h="186" oX="306" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0010" x="2118" y="976" w="138" h="185" oX="306" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0011" x="2258" y="976" w="138" h="185" oX="306" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0012" x="2398" y="978" w="139" h="185" oX="305" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0013" x="4533" y="993" w="139" h="186" oX="305" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0014" x="4674" y="993" w="140" h="186" oX="304" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_SW__0015" x="4816" y="995" w="139" h="186" oX="305" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0000" x="1854" y="2572" w="111" h="211" oX="303" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0001" x="4524" y="2603" w="112" h="212" oX="302" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0002" x="2238" y="2574" w="110" h="211" oX="304" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0003" x="2589" y="2578" w="110" h="211" oX="304" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0004" x="5562" y="2400" w="111" h="210" oX="303" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0005" x="3023" y="2585" w="111" h="211" oX="303" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0006" x="4638" y="2605" w="111" h="212" oX="303" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0007" x="1070" y="2775" w="112" h="214" oX="302" oY="226" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0008" x="1770" y="2785" w="112" h="214" oX="302" oY="226" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0009" x="4751" y="2607" w="112" h="212" oX="302" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0010" x="3136" y="2586" w="111" h="211" oX="303" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0011" x="6332" y="2406" w="111" h="210" oX="303" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0012" x="3249" y="2589" w="110" h="211" oX="304" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0013" x="3361" y="2589" w="110" h="211" oX="304" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0014" x="3473" y="2590" w="110" h="211" oX="304" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_W___0015" x="1" y="2536" w="111" h="210" oX="303" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0000" x="6162" y="2617" w="118" h="212" oX="301" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0001" x="351" y="2754" w="118" h="213" oX="301" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0002" x="2176" y="2787" w="114" h="214" oX="304" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0003" x="471" y="2754" w="115" h="213" oX="304" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0004" x="6282" y="2618" w="120" h="212" oX="301" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0005" x="588" y="2756" w="119" h="213" oX="301" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0006" x="709" y="2761" w="116" h="213" oX="301" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0007" x="2533" y="2791" w="115" h="214" oX="301" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0008" x="2922" y="2798" w="114" h="214" oX="301" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0009" x="3038" y="2799" w="116" h="214" oX="301" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0010" x="3437" y="2803" w="119" h="214" oX="301" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0011" x="827" y="2761" w="121" h="213" oX="301" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0012" x="7804" y="2768" w="116" h="213" oX="304" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0013" x="7922" y="2768" w="115" h="213" oX="304" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0014" x="8039" y="2768" w="116" h="213" oX="304" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WNW_0015" x="950" y="2775" w="118" h="213" oX="301" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0000" x="6251" y="1787" w="114" h="201" oX="309" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0001" x="1968" y="1949" w="116" h="202" oX="307" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0002" x="2086" y="1950" w="114" h="202" oX="309" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0003" x="7106" y="1796" w="114" h="201" oX="309" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0004" x="7405" y="1799" w="114" h="201" oX="309" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0005" x="1434" y="1742" w="114" h="200" oX="309" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0006" x="5388" y="1983" w="114" h="203" oX="309" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0007" x="6213" y="1990" w="116" h="204" oX="307" oY="231" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0008" x="7346" y="2002" w="116" h="204" oX="307" oY="231" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0009" x="5504" y="1983" w="116" h="203" oX="307" oY="231" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0010" x="188" y="1917" w="114" h="201" oX="309" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0011" x="304" y="1917" w="114" h="201" oX="309" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0012" x="420" y="1917" w="114" h="201" oX="309" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0013" x="2386" y="1951" w="114" h="202" oX="309" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0014" x="2872" y="1959" w="114" h="202" oX="309" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Idle_WSW_0015" x="536" y="1922" w="114" h="201" oX="309" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_E___0000" x="5748" y="1990" w="278" h="203" oX="247" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_E___0001" x="7340" y="3565" w="207" h="231" oX="261" oY="205" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_E___0002" x="3783" y="4444" w="185" h="259" oX="276" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_E___0003" x="3407" y="5237" w="161" h="283" oX="282" oY="174" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_E___0004" x="3762" y="4972" w="163" h="272" oX="284" oY="177" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_E___0005" x="1550" y="3673" w="183" h="235" oX="276" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_E___0006" x="3747" y="1968" w="238" h="202" oX="269" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_E___0007" x="1602" y="1545" w="265" h="196" oX="261" oY="210" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ENE_0000" x="176" y="946" w="290" h="183" oX="244" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ENE_0001" x="6641" y="2205" w="250" h="207" oX="247" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ENE_0002" x="3534" y="3699" w="209" h="236" oX="253" oY="193" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ENE_0003" x="5044" y="4465" w="198" h="260" oX="255" oY="182" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ENE_0004" x="4453" y="3956" w="193" h="244" oX="260" oY="189" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ENE_0005" x="2539" y="978" w="220" h="185" oX="260" oY="223" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ENE_0006" x="4698" y="287" w="267" h="166" oX="255" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ENE_0007" x="5707" y="294" w="281" h="167" oX="253" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ESE_0000" x="4648" y="3958" w="232" h="244" oX="263" oY="202" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ESE_0001" x="929" y="4916" w="179" h="269" oX="286" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ESE_0002" x="3747" y="5246" w="175" h="283" oX="297" oY="172" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ESE_0003" x="4541" y="5548" w="168" h="299" oX="295" oY="161" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ESE_0004" x="7643" y="5494" w="169" h="290" oX="296" oY="164" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ESE_0005" x="2157" y="4937" w="129" h="272" oX="302" oY="184" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ESE_0006" x="7106" y="4007" w="185" h="246" oX="288" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_ESE_0007" x="7293" y="4039" w="218" h="246" oX="278" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_N___0000" x="1" y="3869" w="184" h="240" oX="244" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_N___0001" x="7464" y="2018" w="229" h="204" oX="239" oY="227" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_N___0002" x="1755" y="3447" w="229" h="226" oX="254" oY="194" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_N___0003" x="1735" y="3675" w="237" h="234" oX="260" oY="182" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_N___0004" x="945" y="2991" w="236" h="216" oX="249" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_N___0005" x="5907" y="638" w="217" h="179" oX="241" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_N___0006" x="4407" y="1373" w="191" h="193" oX="250" oY="232" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_N___0007" x="3160" y="3239" w="172" h="223" oX="253" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NE__0000" x="6126" y="642" w="268" h="179" oX="250" oY="229" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NE__0001" x="714" y="1721" w="259" h="199" oX="248" oY="203" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NE__0002" x="1435" y="3219" w="243" h="222" oX="244" oY="187" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NE__0003" x="7914" y="3923" w="243" h="241" oX="242" oY="175" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NE__0004" x="224" y="3411" w="233" h="225" oX="248" oY="185" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NE__0005" x="1496" y="274" w="236" h="162" oX="256" oY="238" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NE__0006" x="7239" y="143" w="269" h="157" oX="246" oY="239" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NE__0007" x="5990" y="294" w="274" h="167" oX="243" oY="233" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNE_0000" x="3558" y="2806" w="238" h="214" oX="243" oY="215" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNE_0001" x="3766" y="1766" w="244" h="200" oX="253" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNE_0002" x="3431" y="3022" w="243" h="218" oX="251" oY="187" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNE_0003" x="6465" y="3507" w="257" h="230" oX="244" oY="176" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNE_0004" x="3676" y="3022" w="240" h="218" oX="252" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNE_0005" x="1734" y="275" w="240" h="162" oX="244" oY="239" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNE_0006" x="1" y="586" w="243" h="173" oX="243" oY="238" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNE_0007" x="384" y="1518" w="236" h="196" oX="243" oY="222" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNW_0000" x="2278" y="3916" w="158" h="243" oX="254" oY="199" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNW_0001" x="3987" y="1969" w="191" h="202" oX="236" oY="238" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNW_0002" x="3766" y="3471" w="216" h="229" oX="241" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNW_0003" x="3616" y="3941" w="230" h="243" oX="245" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNW_0004" x="5030" y="3040" w="222" h="219" oX="241" oY="212" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNW_0005" x="6870" y="1203" w="179" h="191" oX="249" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNW_0006" x="2663" y="2159" w="143" h="206" oX="267" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NNW_0007" x="3627" y="3468" w="137" h="229" oX="270" oY="207" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NW__0000" x="2684" y="3460" w="155" h="227" oX="273" oY="211" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NW__0001" x="6392" y="1587" w="176" h="199" oX="243" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NW__0002" x="509" y="2971" w="189" h="217" oX="240" oY="225" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NW__0003" x="1323" y="3908" w="196" h="240" oX="243" oY="204" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NW__0004" x="3682" y="2381" w="187" h="209" oX="243" oY="230" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NW__0005" x="3813" y="1371" w="151" h="193" oX="266" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NW__0006" x="5622" y="1985" w="124" h="203" oX="286" oY="238" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_NW__0007" x="7286" y="3081" w="147" h="222" oX="269" oY="221" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_S___0000" x="3312" y="5522" w="184" h="294" oX="292" oY="183" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_S___0001" x="1121" y="4658" w="229" h="262" oX="252" oY="175" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_S___0002" x="5495" y="4217" w="229" h="250" oX="237" oY="182" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_S___0003" x="1815" y="3916" w="237" h="240" oX="223" oY="179" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_S___0004" x="5867" y="3971" w="236" h="245" oX="235" oY="177" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_S___0005" x="3493" y="4186" w="217" h="249" oX="262" oY="182" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_S___0006" x="7681" y="5212" w="191" h="280" oX="279" oY="185" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_S___0007" x="4035" y="5544" w="172" h="296" oX="295" oY="182" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SE__0000" x="5712" y="5005" w="155" h="274" oX="292" oY="198" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SE__0001" x="7814" y="5496" w="176" h="290" oX="301" oY="174" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SE__0002" x="5865" y="5285" w="189" h="285" oX="291" oY="165" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SE__0003" x="7992" y="5496" w="196" h="292" oX="281" oY="157" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SE__0004" x="7125" y="5351" w="187" h="287" oX="290" oY="159" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SE__0005" x="6683" y="5301" w="151" h="286" oX="303" oY="175" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SE__0006" x="3084" y="5232" w="124" h="282" oX="310" oY="188" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SE__0007" x="8007" y="5214" w="147" h="280" oX="304" oY="192" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSE_0000" x="4209" y="5545" w="158" h="298" oX="308" oY="185" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSE_0001" x="7314" y="5403" w="191" h="287" oX="293" oY="170" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSE_0002" x="3856" y="4706" w="216" h="264" oX="263" oY="168" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSE_0003" x="2300" y="4680" w="230" h="263" oX="245" oY="163" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSE_0004" x="1352" y="4661" w="222" h="262" oX="257" oY="164" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSE_0005" x="1969" y="5208" w="179" h="279" oX="292" oY="174" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSE_0006" x="3167" y="5521" w="143" h="293" oX="310" oY="182" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSE_0007" x="4711" y="5550" w="137" h="300" oX="313" oY="183" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSW_0000" x="6520" y="4488" w="238" h="261" oX="239" oY="194" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSW_0001" x="4882" y="3961" w="244" h="244" oX="223" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSW_0002" x="187" y="3872" w="243" h="238" oX="226" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSW_0003" x="7668" y="3652" w="257" h="232" oX="219" oY="201" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSW_0004" x="5636" y="3730" w="240" h="237" oX="228" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSW_0005" x="1359" y="2781" w="240" h="213" oX="236" oY="197" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSW_0006" x="6105" y="3975" w="243" h="245" oX="234" oY="196" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SSW_0007" x="7181" y="4806" w="236" h="266" oX="241" oY="191" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SW__0000" x="5675" y="2404" w="268" h="209" oX="202" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SW__0001" x="6724" y="3514" w="259" h="230" oX="213" oY="213" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SW__0002" x="5254" y="3043" w="243" h="219" oX="233" oY="226" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SW__0003" x="4113" y="3027" w="243" h="218" oX="235" oY="225" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SW__0004" x="3334" y="3242" w="233" h="223" oX="239" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SW__0005" x="360" y="2542" w="236" h="210" oX="228" oY="217" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SW__0006" x="1163" y="1740" w="269" h="199" oX="205" oY="214" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_SW__0007" x="1" y="2964" w="274" h="215" oX="203" oY="209" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_W___0000" x="1656" y="2153" w="278" h="205" oX="195" oY="237" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_W___0001" x="3219" y="2167" w="207" h="206" oX="252" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_W___0002" x="197" y="1516" w="185" h="196" oX="259" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_W___0003" x="2128" y="1548" w="161" h="197" oX="277" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_W___0004" x="2085" y="2155" w="163" h="205" oX="273" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_W___0005" x="6028" y="1990" w="183" h="203" oX="261" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_W___0006" x="6590" y="1392" w="238" h="195" oX="213" oY="243" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_W___0007" x="4181" y="1767" w="265" h="200" oX="194" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WNW_0000" x="1298" y="2356" w="232" h="208" oX="225" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WNW_0001" x="4600" y="1373" w="179" h="194" oX="255" oY="242" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WNW_0002" x="5538" y="1580" w="175" h="198" oX="248" oY="240" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WNW_0003" x="1680" y="3221" w="168" h="222" oX="257" oY="220" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WNW_0004" x="6331" y="1991" w="169" h="203" oX="255" oY="234" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WNW_0005" x="652" y="1922" w="129" h="201" oX="289" oY="242" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WNW_0006" x="3243" y="1963" w="185" h="202" oX="247" oY="241" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WNW_0007" x="7064" y="2208" w="218" h="207" oX="224" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WSW_0000" x="4697" y="1577" w="290" h="197" oX="186" oY="238" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WSW_0001" x="6606" y="2414" w="250" h="209" oX="223" oY="239" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WSW_0002" x="4325" y="2385" w="209" h="209" oX="258" oY="235" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WSW_0003" x="3798" y="2806" w="198" h="214" oX="267" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WSW_0004" x="1748" y="3002" w="193" h="217" oX="267" oY="228" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WSW_0005" x="4448" y="1769" w="220" h="200" oX="240" oY="239" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WSW_0006" x="5805" y="1194" w="267" h="190" oX="198" oY="236" oW="720" oH="720"/>
+    <sprite n="F_Ogre_Walk_WSW_0007" x="2832" y="1360" w="281" h="192" oX="186" oY="232" oW="720" oH="720"/>
+</TextureAtlas>

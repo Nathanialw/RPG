@@ -174,22 +174,31 @@ namespace Spritesheet_Structs {
       /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
       // was 75
       int speed = 100;
-      if (checkAction == "Attack 1") {
+      if (checkAction == "parry") {
         action = Action_Component::Action_State::attack;
         actionFrameData[action].frameSpeed = speed;
-      } else if (checkAction == "Idle") {
+      } else if (checkAction == "parry") {
+        action = Action_Component::Action_State::attack;
+        actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "idle") {
         action = Action_Component::Action_State::idle;
         actionFrameData[action].frameSpeed = speed;
-      } else if (checkAction == "Walk") {
+      } else if (checkAction == "run") {
         action = Action_Component::Action_State::walk;
         actionFrameData[action].frameSpeed = speed;
-      } else if (checkAction == "Got Hit 1") {
+      } else if (checkAction == "struck1") {
         action = Action_Component::Action_State::struck;
         actionFrameData[action].frameSpeed = speed;
-      } else if (checkAction == "Death") {
+      } else if (checkAction == "death") {
         action = Action_Component::Action_State::dying;
         actionFrameData[action].frameSpeed = speed;
-      } else if (checkAction == "Dead") {
+      } else if (checkAction == "castStart") {
+        action = Action_Component::Action_State::cast;
+        actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "castingLoop") {
+        action = Action_Component::Action_State::casting;
+        actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "dead") {
         action = Action_Component::Action_State::dead;
         actionFrameData[action].frameSpeed = speed;
       } else {
@@ -199,7 +208,6 @@ namespace Spritesheet_Structs {
     }
 
     else {
-
       ///just grab the first 3 letters of the string
       std::string checkAction = ss(templateName, frame, 6);
       if (checkAction.empty()) return false;

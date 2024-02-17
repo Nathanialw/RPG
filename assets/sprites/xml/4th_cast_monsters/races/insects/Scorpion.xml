@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:ecfc183531b2813b5bbf7eabf2190c7f:a7eca842c9486d836fc4b7fd4d414a6b:66fc729e67a2059d123e3fcf01559c39$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Scorpion.png" width="16312" height="12678">
+    <sprite n="Scorpion_Attack 2_E___0000" x="11624" y="384" w="383" h="367" oX="911" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0001" x="904" y="4828" w="414" h="371" oX="875" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0002" x="2795" y="1192" w="494" h="349" oX="785" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0003" x="8274" y="1084" w="547" h="350" oX="725" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0004" x="8818" y="707" w="554" h="348" oX="711" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0005" x="8274" y="1780" w="522" h="344" oX="733" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0006" x="7837" y="11996" w="374" h="342" oX="891" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0007" x="448" y="4841" w="454" h="354" oX="911" oY="871" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0008" x="15921" y="10753" w="368" h="348" oX="911" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0009" x="5890" y="6175" w="375" h="345" oX="911" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0010" x="7456" y="12030" w="379" h="352" oX="911" oY="871" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0011" x="1380" y="5693" w="381" h="358" oX="911" oY="865" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_E___0012" x="10305" y="7799" w="383" h="362" oX="911" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0000" x="4230" y="2429" w="428" h="371" oX="872" oY="853" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0001" x="6963" y="3179" w="424" h="344" oX="872" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0002" x="4193" y="2802" w="494" h="345" oX="799" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0003" x="9374" y="711" w="548" h="345" oX="741" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0004" x="14197" y="383" w="556" h="345" oX="729" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0005" x="15344" y="676" w="528" h="338" oX="747" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0006" x="10206" y="11766" w="403" h="333" oX="872" oY="891" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0007" x="902" y="5694" w="476" h="342" oX="871" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0008" x="5160" y="3778" w="421" h="349" oX="871" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0009" x="429" y="10903" w="430" h="342" oX="872" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0010" x="1307" y="10899" w="435" h="346" oX="872" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0011" x="1320" y="9752" w="437" h="357" oX="871" oY="867" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ENE_0012" x="1763" y="5691" w="430" h="366" oX="872" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0000" x="14461" y="1587" w="424" h="356" oX="877" oY="860" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0001" x="7389" y="3145" w="415" h="399" oX="877" oY="823" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0002" x="4654" y="1288" w="473" h="393" oX="812" oY="832" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0003" x="12559" y="381" w="528" h="364" oX="749" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0004" x="8816" y="1441" w="532" h="356" oX="736" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0005" x="7763" y="773" w="509" h="376" oX="758" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0006" x="12140" y="5486" w="406" h="343" oX="877" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0007" x="414" y="7304" w="479" h="366" oX="876" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0008" x="15735" y="2199" w="421" h="357" oX="877" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0009" x="2195" y="9806" w="426" h="349" oX="877" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0010" x="4465" y="7394" w="430" h="375" oX="877" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0011" x="4897" y="7772" w="428" h="378" oX="877" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_ESE_0012" x="2195" y="8199" w="426" h="372" oX="877" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0000" x="2195" y="7396" w="425" h="344" oX="860" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0001" x="9990" y="5342" w="425" h="331" oX="860" oY="894" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0002" x="2195" y="5667" w="425" h="393" oX="860" oY="896" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0003" x="1765" y="4772" w="426" h="430" oX="860" oY="901" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0004" x="6962" y="3525" w="425" h="433" oX="860" oY="908" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0005" x="7389" y="3546" w="426" h="412" oX="860" oY="914" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0006" x="9554" y="4894" w="425" h="301" oX="860" oY="913" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0007" x="2195" y="6548" w="425" h="395" oX="860" oY="805" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0008" x="4897" y="7386" w="421" h="384" oX="860" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0009" x="14241" y="7499" w="418" h="325" oX="863" oY="874" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0010" x="10296" y="9666" w="418" h="309" oX="863" oY="890" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0011" x="10296" y="9343" w="418" h="321" oX="863" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_N___0012" x="10851" y="5432" w="421" h="343" oX="860" oY="856" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0000" x="4465" y="7771" w="430" h="377" oX="860" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0001" x="10417" y="5344" w="432" h="336" oX="860" oY="892" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0002" x="6049" y="3092" w="447" h="341" oX="848" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0003" x="4668" y="3544" w="490" h="380" oX="803" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0004" x="8729" y="4011" w="492" h="387" oX="795" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0005" x="3064" y="9447" w="469" h="368" oX="808" oY="890" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0006" x="8544" y="10793" w="415" h="335" oX="860" oY="893" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0007" x="2622" y="6567" w="433" h="379" oX="859" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0008" x="5327" y="7772" w="427" h="387" oX="860" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0009" x="9308" y="2542" w="436" h="355" oX="860" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0010" x="7442" y="4412" w="441" h="349" oX="860" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0011" x="1756" y="10115" w="437" h="358" oX="860" oY="870" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NE__0012" x="1759" y="8563" w="434" h="374" oX="860" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0000" x="11595" y="2257" w="417" h="372" oX="855" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0001" x="11274" y="5486" w="425" h="336" oX="855" oY="888" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0002" x="7784" y="4763" w="430" h="382" oX="855" oY="888" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0003" x="2622" y="5664" w="433" h="424" oX="855" oY="891" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0004" x="3057" y="5663" w="433" h="428" oX="855" oY="896" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0005" x="3064" y="8579" w="425" h="406" oX="855" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0006" x="8951" y="12128" w="417" h="323" oX="855" oY="901" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0007" x="12726" y="1125" w="417" h="410" oX="855" oY="814" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0008" x="6950" y="1803" w="422" h="404" oX="855" oY="820" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0009" x="1760" y="7376" w="433" h="352" oX="855" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0010" x="11701" y="5486" w="437" h="339" oX="855" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0011" x="12548" y="5486" w="432" h="351" oX="855" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNE_0012" x="14462" y="1945" w="427" h="371" oX="855" oY="853" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0000" x="4244" y="2051" w="408" h="376" oX="875" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0001" x="10716" y="8745" w="408" h="334" oX="875" oY="894" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0002" x="3535" y="9430" w="409" h="385" oX="874" oY="894" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0003" x="1737" y="12209" w="408" h="425" oX="875" oY="895" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0004" x="9142" y="4770" w="410" h="430" oX="873" oY="899" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0005" x="12982" y="5486" w="411" h="407" oX="872" oY="909" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0006" x="6860" y="10151" w="416" h="317" oX="867" oY="911" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0007" x="14891" y="1915" w="424" h="414" oX="859" oY="814" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0008" x="13395" y="5485" w="425" h="409" oX="858" oY="819" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0009" x="7704" y="10525" w="422" h="356" oX="858" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0010" x="6860" y="10470" w="416" h="345" oX="864" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0011" x="6840" y="6302" w="413" h="354" oX="870" oY="874" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NNW_0012" x="10716" y="9081" w="408" h="375" oX="875" oY="853" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0000" x="14662" y="5535" w="425" h="385" oX="864" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0001" x="7278" y="10153" w="424" h="341" oX="865" oY="895" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0002" x="2195" y="10157" w="426" h="348" oX="863" oY="896" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0003" x="4654" y="1683" w="473" h="378" oX="867" oY="898" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0004" x="421" y="6463" w="479" h="384" oX="871" oY="898" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0005" x="2800" y="819" w="463" h="371" oX="869" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0006" x="13148" y="1927" w="429" h="330" oX="860" oY="906" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0007" x="3057" y="6570" w="440" h="386" oX="850" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0008" x="2623" y="8579" w="439" h="394" oX="850" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0009" x="4689" y="2786" w="438" h="362" oX="851" oY="874" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0010" x="14022" y="1587" w="437" h="356" oX="852" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0011" x="9235" y="3644" w="432" h="365" oX="857" oY="871" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_NW__0012" x="5998" y="8987" w="429" h="381" oX="860" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0000" x="13679" y="3500" w="425" h="402" oX="875" oY="830" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0001" x="7454" y="3960" w="425" h="450" oX="875" oY="778" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0002" x="903" y="5201" w="425" h="491" oX="875" oY="730" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0003" x="416" y="8478" w="426" h="484" oX="874" oY="732" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0004" x="2195" y="6062" w="425" h="484" oX="875" oY="727" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0005" x="7817" y="3451" w="426" h="485" oX="874" oY="719" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0006" x="15089" y="5535" w="425" h="394" oX="875" oY="817" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0007" x="12833" y="3480" w="425" h="418" oX="875" oY="864" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0008" x="8541" y="9693" w="421" h="346" oX="879" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0009" x="13822" y="5901" w="418" h="383" oX="879" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0010" x="13822" y="5485" w="418" h="414" oX="879" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0011" x="14242" y="5485" w="418" h="418" oX="879" oY="813" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_S___0012" x="13254" y="3900" w="421" h="406" oX="879" oY="825" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0000" x="10847" y="5777" w="425" h="381" oX="871" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0001" x="1311" y="11735" w="424" h="433" oX="871" oY="797" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0002" x="2195" y="7742" w="426" h="455" oX="871" oY="777" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0003" x="4654" y="847" w="473" h="439" oX="820" oY="792" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0004" x="1308" y="856" w="479" h="432" oX="810" oY="795" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0005" x="6498" y="2229" w="463" h="443" oX="828" oY="776" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0006" x="12014" y="2257" w="429" h="372" oX="871" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0007" x="2186" y="10507" w="440" h="390" oX="870" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0008" x="2623" y="9433" w="439" h="373" oX="871" oY="853" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0009" x="14022" y="1945" w="438" h="371" oX="871" oY="862" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0010" x="1320" y="9349" w="437" h="401" oX="871" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0011" x="13677" y="3904" w="432" h="403" oX="871" oY="831" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SE__0012" x="2646" y="4304" w="429" h="392" oX="871" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0000" x="15401" y="3097" w="408" h="401" oX="877" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0001" x="2147" y="12187" w="408" h="452" oX="877" oY="781" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0002" x="6963" y="2209" w="409" h="491" oX="877" oY="740" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0003" x="3060" y="7740" w="408" h="483" oX="877" oY="745" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0004" x="429" y="10420" w="410" h="481" oX="877" oY="745" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0005" x="427" y="1813" w="411" h="486" oX="877" oY="732" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0006" x="4375" y="9422" w="416" h="393" oX="877" oY="825" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0007" x="9564" y="5197" w="424" h="422" oX="877" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0008" x="12445" y="2257" w="425" h="372" oX="877" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0009" x="6429" y="8981" w="422" h="389" oX="880" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0010" x="12459" y="2631" w="416" h="420" oX="880" oY="821" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0011" x="3077" y="4304" w="413" h="424" oX="877" oY="818" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSE_0012" x="15407" y="3500" w="408" h="408" oX="877" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0000" x="13260" y="3497" w="417" h="401" oX="888" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0001" x="2195" y="6945" w="425" h="449" oX="880" oY="781" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0002" x="1763" y="5204" w="430" h="485" oX="875" oY="740" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0003" x="2622" y="6090" w="433" h="475" oX="872" oY="745" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0004" x="1760" y="6905" w="433" h="469" oX="872" oY="744" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0005" x="416" y="8964" w="425" h="481" oX="880" oY="731" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0006" x="4357" y="8586" w="417" h="399" oX="888" oY="825" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0007" x="3073" y="4730" w="417" h="433" oX="888" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0008" x="9260" y="2899" w="422" h="380" oX="883" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0009" x="15089" y="5931" w="433" h="390" oX="872" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0010" x="12020" y="2631" w="437" h="420" oX="868" oY="821" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0011" x="13145" y="1114" w="432" h="421" oX="873" oY="818" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SSW_0012" x="14111" y="3904" w="427" h="409" oX="878" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0000" x="8236" y="7337" w="430" h="385" oX="870" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0001" x="3956" y="6958" w="432" h="434" oX="868" oY="798" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0002" x="6049" y="2192" w="447" h="457" oX="865" oY="776" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0003" x="2152" y="3803" w="490" h="439" oX="867" oY="792" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0004" x="6960" y="3960" w="492" h="431" oX="873" oY="797" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0005" x="414" y="6849" w="469" h="453" oX="883" oY="776" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0006" x="7279" y="9372" w="415" h="389" oX="885" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0007" x="12819" y="3900" w="433" h="406" oX="868" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0008" x="3946" y="9423" w="427" h="392" oX="873" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0009" x="1321" y="8552" w="436" h="379" oX="864" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0010" x="3291" y="1191" w="441" h="407" oX="859" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0011" x="14539" y="4321" w="437" h="407" oX="863" oY="831" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_SW__0012" x="1759" y="8165" w="434" h="396" oX="866" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0000" x="15417" y="9650" w="383" h="377" oX="866" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0001" x="8128" y="10522" w="414" h="382" oX="871" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0002" x="3181" y="3472" w="494" h="358" oX="881" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0003" x="13089" y="378" w="547" h="358" oX="888" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0004" x="8818" y="348" w="554" h="357" oX="895" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0005" x="8798" y="1799" w="522" h="353" oX="905" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0006" x="7080" y="12165" w="374" h="353" oX="895" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0007" x="2186" y="10899" w="454" h="369" oX="795" oY="867" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0008" x="15938" y="8211" w="368" h="364" oX="881" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0009" x="15919" y="8577" w="375" h="358" oX="874" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0010" x="5952" y="6559" w="379" h="363" oX="870" oY="871" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0011" x="6267" y="6188" w="381" h="369" oX="868" oY="865" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_W___0012" x="14212" y="12128" w="383" h="374" oX="866" oY="862" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0000" x="7278" y="10496" w="424" h="384" oX="859" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0001" x="9790" y="11381" w="415" h="359" oX="868" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0002" x="4654" y="2063" w="473" h="358" oX="875" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0003" x="9350" y="1776" w="528" h="357" oX="883" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0004" x="9353" y="1417" w="532" h="357" oX="892" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0005" x="7763" y="1151" w="509" h="352" oX="893" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0006" x="10233" y="10308" w="406" h="348" oX="877" oY="891" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0007" x="895" y="7716" w="479" h="359" oX="805" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0008" x="8538" y="10041" w="421" h="363" oX="862" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0009" x="14661" y="7494" w="426" h="362" oX="857" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0010" x="11844" y="1502" w="430" h="364" oX="853" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0011" x="13635" y="4680" w="428" h="371" oX="855" oY="868" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WNW_0012" x="2195" y="8573" w="426" h="380" oX="857" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0000" x="3927" y="8620" w="428" h="365" oX="860" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0001" x="14106" y="3500" w="424" h="402" oX="864" oY="824" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0002" x="3687" y="3093" w="494" h="392" oX="867" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0003" x="12009" y="381" w="548" h="362" oX="871" oY="864" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0004" x="9374" y="355" w="556" h="354" oX="875" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0005" x="8823" y="1057" w="528" h="382" oX="885" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0006" x="15406" y="10029" w="403" h="358" oX="885" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0007" x="902" y="6475" w="476" h="385" oX="813" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0008" x="8105" y="11280" w="421" h="374" oX="868" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0009" x="15410" y="4733" w="430" h="364" oX="858" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0010" x="2623" y="8200" w="435" h="377" oX="853" oY="856" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0011" x="11895" y="4670" w="437" h="379" oX="852" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Attack 2_WSW_0012" x="7693" y="6256" w="431" h="374" oX="858" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_E___0000" x="3253" y="1" w="648" h="333" oX="635" oY="905" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_ENE_0000" x="9932" y="355" w="560" h="346" oX="686" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_ESE_0000" x="1301" y="1" w="650" h="345" oX="648" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_N___0000" x="6049" y="865" w="449" h="467" oX="854" oY="928" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_NE__0000" x="880" y="8077" w="486" h="419" oX="793" oY="921" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_NNE_0000" x="2800" y="348" w="463" h="469" oX="832" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_NNW_0000" x="902" y="6038" w="475" h="435" oX="864" oY="924" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_NW__0000" x="11357" y="1" w="571" h="381" oX="876" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_S___0000" x="4203" y="336" w="449" h="504" oX="857" oY="720" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_SE__0000" x="11930" y="1" w="571" h="378" oX="713" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_SSE_0000" x="403" y="8040" w="475" h="436" oX="821" oY="762" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_SSW_0000" x="4654" y="333" w="463" h="512" oX="865" oY="722" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_SW__0000" x="1789" y="834" w="486" h="454" oX="881" oY="770" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_W___0000" x="4551" y="1" w="648" h="330" oX="877" oY="910" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_WNW_0000" x="1" y="1" w="650" h="359" oX="862" oY="897" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Dead_WSW_0000" x="13649" y="1" w="560" h="379" oX="914" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0000" x="15919" y="6722" w="392" h="364" oX="909" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0001" x="5636" y="9422" w="398" h="398" oX="908" oY="828" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0002" x="2623" y="9808" w="439" h="410" oX="860" oY="816" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0003" x="9107" y="5202" w="455" h="415" oX="837" oY="810" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0004" x="9629" y="4469" w="458" h="423" oX="827" oY="800" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0005" x="5583" y="1327" w="464" h="433" oX="821" oY="790" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0006" x="3064" y="9817" w="479" h="428" oX="804" oY="795" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0007" x="4173" y="3506" w="493" h="416" oX="790" oY="807" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0008" x="2185" y="2669" w="500" h="397" oX="783" oY="826" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0009" x="3189" y="2701" w="500" h="372" oX="783" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0010" x="2682" y="3460" w="497" h="339" oX="786" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0011" x="2283" y="810" w="515" h="329" oX="768" oY="897" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0012" x="15344" y="349" w="575" h="325" oX="708" oY="901" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0013" x="7763" y="1" w="611" h="334" oX="672" oY="905" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0014" x="7125" y="1" w="636" h="329" oX="647" oY="905" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_E___0015" x="3903" y="1" w="646" h="333" oX="637" oY="905" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0000" x="12779" y="4679" w="431" h="372" oX="870" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0001" x="10315" y="8955" w="399" h="386" oX="870" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0002" x="15802" y="9650" w="398" h="377" oX="862" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0003" x="9453" y="8956" w="428" h="367" oX="823" oY="856" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0004" x="12788" y="4308" w="428" h="369" oX="816" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0005" x="11701" y="5827" w="437" h="375" oX="808" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0006" x="5129" y="1324" w="452" h="364" oX="789" oY="857" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0007" x="6498" y="3142" w="463" h="349" oX="778" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0008" x="1721" y="3430" w="458" h="345" oX="783" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0009" x="10553" y="4149" w="447" h="347" oX="794" oY="874" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0010" x="13703" y="9601" w="427" h="342" oX="814" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0011" x="9013" y="8958" w="429" h="348" oX="812" oY="895" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0012" x="4569" y="3926" w="480" h="372" oX="761" oY="904" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0013" x="7763" y="1505" w="509" h="354" oX="737" oY="916" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0014" x="8274" y="734" w="542" h="348" oX="704" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ENE_0015" x="13638" y="382" w="557" h="346" oX="689" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0000" x="15030" y="9282" w="431" h="366" oX="876" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0001" x="15089" y="6323" w="435" h="389" oX="877" oY="826" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0002" x="10417" y="4921" w="432" h="421" oX="877" oY="794" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0003" x="3492" y="4709" w="438" h="440" oX="868" oY="775" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0004" x="2623" y="7740" w="435" h="458" oX="864" oY="760" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0005" x="427" y="11247" w="434" h="471" oX="864" oY="745" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0006" x="5129" y="846" w="452" h="476" oX="846" oY="740" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0007" x="5583" y="858" w="464" h="467" oX="834" oY="749" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0008" x="2168" y="4244" w="476" h="452" oX="822" oY="764" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0009" x="885" y="6862" w="487" h="428" oX="811" oY="787" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0010" x="2687" y="3074" w="499" h="384" oX="799" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0011" x="8274" y="1436" w="540" h="342" oX="758" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0012" x="8989" y="1" w="608" h="345" oX="690" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0013" x="5849" y="1" w="636" h="345" oX="662" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0014" x="2605" y="1" w="646" h="345" oX="652" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_ESE_0015" x="1953" y="1" w="650" h="345" oX="648" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0000" x="11274" y="5824" w="425" h="362" oX="860" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0001" x="14661" y="7858" w="426" h="339" oX="860" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0002" x="2195" y="9407" w="426" h="397" oX="860" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0003" x="12836" y="3053" w="422" h="425" oX="863" oY="827" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0004" x="15846" y="4321" w="418" h="418" oX="863" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0005" x="8533" y="11130" w="421" h="361" oX="860" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0006" x="8528" y="11493" w="421" h="355" oX="860" oY="921" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0007" x="13212" y="4679" w="421" h="372" oX="860" oY="913" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0008" x="8118" y="9363" w="421" h="382" oX="860" oY="908" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0009" x="7278" y="9763" w="424" h="388" oX="857" oY="903" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0010" x="9243" y="3281" w="429" h="361" oX="854" oY="927" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0011" x="15076" y="8562" w="436" h="373" oX="850" oY="928" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0012" x="14540" y="3904" w="433" h="415" oX="853" oY="928" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0013" x="3492" y="4266" w="450" h="441" oX="854" oY="928" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0014" x="3064" y="8987" w="443" h="458" oX="854" oY="928" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_N___0015" x="6049" y="1334" w="449" h="466" oX="854" oY="928" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0000" x="14660" y="6707" w="427" h="388" oX="859" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0001" x="15811" y="10029" w="398" h="377" oX="857" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0002" x="7374" y="1921" w="385" h="377" oX="860" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0003" x="7704" y="9740" w="410" h="391" oX="835" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0004" x="13395" y="6284" w="425" h="379" oX="823" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0005" x="14178" y="8888" w="433" h="327" oX="814" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0006" x="9957" y="5675" w="443" h="330" oX="804" oY="899" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0007" x="10994" y="4662" w="445" h="333" oX="802" oY="896" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0008" x="1759" y="9777" w="434" h="336" oX="813" oY="893" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0009" x="8961" y="11008" w="409" h="346" oX="838" oY="890" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0010" x="15461" y="11804" w="399" h="345" oX="853" oY="903" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0011" x="6605" y="11550" w="414" h="371" oX="848" oY="912" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0012" x="14975" y="3904" w="425" h="415" oX="848" oY="919" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0013" x="11574" y="2631" w="444" h="420" oX="835" oY="921" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0014" x="5583" y="1762" w="464" h="420" oX="815" oY="921" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NE__0015" x="1722" y="1747" w="482" h="419" oX="797" oY="921" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0000" x="13822" y="6286" w="417" h="386" oX="855" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0001" x="9790" y="10642" w="420" h="363" oX="851" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0002" x="6860" y="9761" w="416" h="388" oX="855" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0003" x="15895" y="5169" w="416" h="407" oX="855" oY="823" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0004" x="9389" y="8158" w="428" h="397" oX="847" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0005" x="6840" y="10817" w="425" h="340" oX="847" oY="893" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0006" x="13273" y="9598" w="428" h="329" oX="844" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0007" x="8105" y="11656" w="421" h="338" oX="851" oY="916" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0008" x="3060" y="8225" w="417" h="352" oX="855" oY="911" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0009" x="9372" y="11009" w="416" h="364" oX="855" oY="906" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0010" x="12844" y="9544" w="427" h="362" oX="848" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0011" x="11262" y="6188" w="437" h="391" oX="841" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0012" x="6049" y="2651" w="447" h="439" oX="842" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0013" x="1258" y="1781" w="462" h="459" oX="833" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0014" x="6498" y="2674" w="463" h="466" oX="832" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNE_0015" x="438" y="5197" w="463" h="469" oX="832" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0000" x="13170" y="1537" w="407" h="388" oX="875" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0001" x="12140" y="6236" w="406" h="349" oX="876" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0002" x="6451" y="10160" w="407" h="372" oX="875" oY="862" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0003" x="5589" y="8585" w="407" h="411" oX="875" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0004" x="7487" y="7754" w="404" h="402" oX="876" oY="865" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0005" x="10207" y="11411" w="404" h="353" oX="876" oY="919" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0006" x="10208" y="12101" w="404" h="371" oX="876" oY="915" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0007" x="10207" y="11028" w="404" h="381" oX="876" oY="913" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0008" x="15898" y="11103" w="399" h="380" oX="881" oY="910" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0009" x="15862" y="11831" w="399" h="378" oX="881" oY="905" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0010" x="9372" y="11375" w="416" h="356" oX="875" oY="912" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0011" x="8130" y="6961" w="438" h="339" oX="872" oY="931" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0012" x="3677" y="3487" w="494" h="381" oX="863" oY="925" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0013" x="10875" y="1093" w="485" h="399" oX="864" oY="924" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0014" x="895" y="7292" w="477" h="422" oX="864" oY="924" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NNW_0015" x="844" y="8498" w="475" h="433" oX="864" oY="924" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0000" x="13395" y="5896" w="425" h="386" oX="865" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0001" x="14132" y="9613" w="427" h="355" oX="862" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0002" x="9563" y="7451" w="431" h="346" oX="858" oY="890" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0003" x="9005" y="9308" w="429" h="362" oX="860" oY="892" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0004" x="7893" y="7791" w="424" h="365" oX="865" oY="897" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0005" x="8956" y="11356" w="414" h="378" oX="876" oY="890" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0006" x="7704" y="10133" w="414" h="390" oX="876" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0007" x="6853" y="8976" w="414" h="394" oX="876" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0008" x="8120" y="10131" w="414" h="389" oX="876" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0009" x="13395" y="6665" w="425" h="375" oX="876" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0010" x="13579" y="1941" w="441" h="353" oX="876" oY="888" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0011" x="1263" y="10111" w="491" h="341" oX="876" oY="903" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0012" x="10494" y="369" w="563" h="342" oX="876" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0013" x="10209" y="1" w="572" h="352" oX="876" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0014" x="10783" y="1" w="572" h="366" oX="876" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_NW__0015" x="12503" y="1" w="571" h="378" oX="876" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0000" x="14662" y="5922" w="425" h="397" oX="875" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0001" x="4166" y="11580" w="426" h="438" oX="874" oY="802" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0002" x="2195" y="8955" w="426" h="450" oX="874" oY="785" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0003" x="6950" y="1347" w="422" h="454" oX="875" oY="776" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0004" x="3475" y="10247" w="418" h="461" oX="879" oY="764" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0005" x="6951" y="856" w="421" h="489" oX="879" oY="736" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0006" x="6951" y="333" w="421" h="521" oX="879" oY="703" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0007" x="1" y="9610" w="421" h="537" oX="879" oY="687" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0008" x="1" y="10149" w="421" h="537" oX="879" oY="687" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0009" x="1" y="11226" w="424" h="530" oX="879" oY="694" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0010" x="433" y="2825" w="429" h="513" oX="877" oY="711" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0011" x="3473" y="10710" w="436" h="453" oX="874" oY="771" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0012" x="1760" y="7730" w="433" h="433" oX="874" oY="791" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0013" x="2193" y="4698" w="450" h="465" oX="856" oY="759" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0014" x="448" y="4346" w="443" h="493" oX="863" oY="731" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_S___0015" x="6500" y="832" w="449" h="502" oX="857" oY="722" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0000" x="14662" y="6321" w="425" h="384" oX="870" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0001" x="11986" y="9495" w="427" h="389" oX="871" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0002" x="1762" y="6059" w="431" h="414" oX="871" oY="783" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0003" x="3932" y="4709" w="429" h="440" oX="871" oY="757" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0004" x="3047" y="10702" w="424" h="459" oX="871" oY="740" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0005" x="424" y="9937" w="414" h="481" oX="870" oY="718" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0006" x="2611" y="5165" w="414" h="497" oX="870" oY="702" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0007" x="3027" y="5165" w="414" h="496" oX="870" oY="703" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0008" x="450" y="11720" w="414" h="481" oX="870" oY="718" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0009" x="883" y="12168" w="425" h="464" oX="859" oY="735" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0010" x="3545" y="9817" w="441" h="428" oX="843" oY="774" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0011" x="14755" y="697" w="491" h="336" oX="793" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0012" x="11059" y="384" w="563" h="329" oX="721" oY="888" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0013" x="14770" y="362" w="572" h="333" oX="712" oY="888" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0014" x="14770" y="1" w="572" h="359" oX="712" oY="862" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SE__0015" x="13076" y="1" w="571" h="375" oX="713" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0000" x="6451" y="9764" w="407" h="394" oX="878" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0001" x="8321" y="4355" w="406" h="410" oX="878" oY="804" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0002" x="3988" y="9817" w="407" h="428" oX="878" oY="779" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0003" x="5118" y="6488" w="407" h="440" oX="878" oY="761" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0004" x="3492" y="5623" w="404" h="455" oX="880" oY="741" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0005" x="841" y="10417" w="404" h="482" oX="880" oY="715" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0006" x="887" y="3814" w="404" h="505" oX="880" oY="689" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0007" x="864" y="2787" w="404" h="513" oX="880" oY="681" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0008" x="893" y="4321" w="399" h="505" oX="880" oY="689" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0009" x="1737" y="11719" w="399" h="488" oX="880" oY="706" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0010" x="840" y="1800" w="416" h="463" oX="869" oY="731" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0011" x="14065" y="4680" w="439" h="383" oX="849" oY="811" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0012" x="8269" y="2863" w="494" h="359" oX="803" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0013" x="11348" y="1868" w="485" h="387" oX="811" oY="811" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0014" x="1707" y="10475" w="477" h="419" oX="819" oY="779" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSE_0015" x="843" y="9295" w="475" h="433" oX="821" oY="765" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0000" x="15811" y="3097" w="417" h="401" oX="888" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0001" x="12543" y="5053" w="420" h="431" oX="889" oY="814" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0002" x="14877" y="1035" w="416" h="438" oX="889" oY="805" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0003" x="15317" y="1894" w="416" h="435" oX="889" oY="805" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0004" x="15295" y="1016" w="428" h="437" oX="885" oY="798" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0005" x="1310" y="12170" w="425" h="462" oX="888" oY="773" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0006" x="1738" y="4278" w="428" h="492" oX="888" oY="742" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0007" x="1270" y="2763" w="421" h="512" oX="888" oY="722" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0008" x="430" y="2301" w="417" h="522" oX="888" oY="712" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0009" x="840" y="1272" w="416" h="526" oX="889" oY="708" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0010" x="1262" y="2242" w="427" h="519" oX="885" oY="715" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0011" x="15874" y="842" w="437" h="484" oX="882" oY="750" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0012" x="6047" y="3845" w="447" h="457" oX="871" oY="777" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0013" x="1258" y="1290" w="462" h="489" oX="865" oY="745" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0014" x="5584" y="348" w="463" h="508" oX="865" oY="726" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SSW_0015" x="5119" y="333" w="463" h="511" oX="865" oY="723" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0000" x="5756" y="7761" w="427" h="398" oX="874" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0001" x="4776" y="8586" w="398" h="399" oX="905" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0002" x="7374" y="2747" w="385" h="396" oX="915" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0003" x="9223" y="4011" w="410" h="387" oX="915" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0004" x="11835" y="1868" w="425" h="387" oX="912" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0005" x="14532" y="3500" w="433" h="402" oX="913" oY="823" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0006" x="1320" y="4772" w="443" h="427" oX="913" oY="797" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0007" x="3472" y="11165" w="445" h="445" oX="913" oY="779" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0008" x="1759" y="8939" w="434" h="461" oX="913" oY="763" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0009" x="6963" y="2702" w="409" h="475" oX="913" oY="749" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0010" x="2628" y="10220" w="399" h="485" oX="908" oY="739" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0011" x="2138" y="11719" w="414" h="466" oX="898" oY="758" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0012" x="9990" y="4910" w="425" h="430" oX="887" oY="794" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0013" x="3029" y="10247" w="444" h="453" oX="881" oY="771" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0014" x="5583" y="2184" w="464" h="460" oX="881" oY="764" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_SW__0015" x="1722" y="1290" w="482" h="455" oX="881" oY="769" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0000" x="15919" y="6353" w="392" h="367" oX="859" oY="869" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0001" x="12617" y="12043" w="398" h="364" oX="854" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0002" x="12107" y="6974" w="439" h="357" oX="861" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0003" x="10096" y="4138" w="455" h="357" oX="868" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0004" x="10230" y="2201" w="458" h="364" oX="875" oY="870" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0005" x="5583" y="2646" w="464" h="373" oX="875" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0006" x="2646" y="3924" w="479" h="378" oX="877" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0007" x="8765" y="2899" w="493" h="380" oX="877" oY="856" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0008" x="2687" y="2691" w="500" h="381" oX="877" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0009" x="3691" y="2707" w="500" h="384" oX="877" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0010" x="3188" y="3075" w="497" h="395" oX="877" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0011" x="8792" y="2154" w="515" h="386" oX="877" oY="857" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0012" x="15344" y="1" w="575" h="346" oX="877" oY="895" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0013" x="8376" y="1" w="611" h="336" oX="877" oY="904" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0014" x="6487" y="1" w="636" h="330" oX="877" oY="910" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_W___0015" x="5201" y="1" w="646" h="330" oX="877" oY="910" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0000" x="11850" y="1124" w="431" h="376" oX="853" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0001" x="9126" y="7439" w="435" h="358" oX="848" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0002" x="12548" y="6239" w="432" h="352" oX="851" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0003" x="15089" y="7511" w="438" h="354" oX="854" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0004" x="14224" y="7826" w="435" h="366" oX="861" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0005" x="1759" y="9402" w="434" h="373" oX="862" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0006" x="5129" y="1690" w="452" h="379" oX="862" oY="868" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0007" x="5583" y="3021" w="464" h="377" oX="862" oY="865" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0008" x="7306" y="4763" w="476" h="376" oX="862" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0009" x="10386" y="1091" w="487" h="379" oX="862" oY="860" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0010" x="2181" y="3433" w="499" h="368" oX="862" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0011" x="9353" y="1058" w="540" h="357" oX="862" oY="892" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0012" x="9599" y="1" w="608" h="352" oX="862" oY="897" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0013" x="653" y="362" w="636" h="358" oX="862" oY="897" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0014" x="653" y="1" w="646" h="359" oX="862" oY="897" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WNW_0015" x="1" y="362" w="650" h="359" oX="862" oY="897" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0000" x="14597" y="9240" w="431" h="379" oX="859" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0001" x="11014" y="12014" w="399" h="379" oX="891" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0002" x="13017" y="12071" w="398" h="360" oX="900" oY="865" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0003" x="9436" y="9325" w="428" h="356" oX="909" oY="869" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0004" x="9883" y="8956" w="428" h="367" oX="916" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0005" x="11701" y="6204" w="437" h="381" oX="915" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0006" x="5129" y="2071" w="452" h="386" oX="919" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0007" x="5583" y="3400" w="463" h="386" oX="919" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0008" x="10209" y="2567" w="458" h="392" oX="919" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0009" x="10590" y="3734" w="447" h="413" oX="919" oY="808" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0010" x="5081" y="6046" w="427" h="440" oX="919" oY="785" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0011" x="15733" y="1328" w="429" h="430" oX="919" oY="797" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0012" x="3603" y="3870" w="480" h="394" oX="919" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0013" x="7763" y="1861" w="509" h="398" oX="914" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0014" x="8274" y="339" w="542" h="393" oX="914" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Death_WSW_0015" x="14211" y="1" w="557" h="380" oX="914" oY="853" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0000" x="15529" y="6363" w="388" h="359" oX="909" oY="866" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0001" x="6333" y="6559" w="366" h="372" oX="896" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0002" x="15516" y="5535" w="363" h="390" oX="873" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0003" x="7881" y="3938" w="355" h="408" oX="866" oY="808" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0004" x="4259" y="842" w="393" h="429" oX="833" oY="784" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0005" x="4425" y="4300" w="471" h="412" oX="772" oY="803" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0006" x="8274" y="2490" w="515" h="371" oX="735" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0007" x="3229" y="1954" w="505" h="365" oX="750" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0008" x="10690" y="2226" w="454" h="387" oX="803" oY="832" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0009" x="5129" y="2459" w="452" h="404" oX="812" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0010" x="6007" y="6939" w="433" h="406" oX="826" oY="809" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0011" x="11487" y="3861" w="443" h="412" oX="833" oY="809" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0012" x="14978" y="4321" w="430" h="411" oX="848" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0013" x="5320" y="7374" w="403" h="396" oX="882" oY="830" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0014" x="7374" y="783" w="387" h="378" oX="910" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_E___0015" x="8319" y="7791" w="392" h="365" oX="909" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0000" x="9199" y="4400" w="428" h="368" oX="870" oY="856" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0001" x="9790" y="11007" w="415" h="372" oX="849" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0002" x="12982" y="5895" w="411" h="381" oX="823" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0003" x="5994" y="10249" w="403" h="416" oX="819" oY="823" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0004" x="15518" y="2685" w="415" h="410" oX="823" oY="830" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0005" x="13089" y="738" w="490" h="374" oX="770" oY="867" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0006" x="8791" y="2542" w="515" h="355" oX="751" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0007" x="844" y="8933" w="492" h="360" oX="774" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0008" x="3265" y="826" w="467" h="363" oX="798" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0009" x="6015" y="4304" w="479" h="380" oX="790" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0010" x="11450" y="4275" w="443" h="394" oX="814" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0011" x="15089" y="6714" w="437" h="404" oX="841" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0012" x="6827" y="8569" w="428" h="405" oX="852" oY="832" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0013" x="13822" y="6674" w="417" h="395" oX="869" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0014" x="7255" y="5916" w="423" h="381" oX="872" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ENE_0015" x="12548" y="6990" w="432" h="374" oX="870" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0000" x="14561" y="9621" w="426" h="370" oX="876" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0001" x="10315" y="8557" w="399" h="396" oX="876" oY="820" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0002" x="6036" y="9370" w="379" h="395" oX="877" oY="813" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0003" x="1374" y="6897" w="384" h="413" oX="862" oY="787" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0004" x="2554" y="11714" w="405" h="461" oX="843" oY="740" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0005" x="3057" y="6958" w="454" h="463" oX="811" oY="742" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0006" x="7763" y="337" w="509" h="434" oX="765" oY="772" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0007" x="2206" y="2247" w="505" h="420" oX="772" oY="782" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0008" x="435" y="6026" w="465" h="435" oX="814" oY="771" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0009" x="1247" y="10454" w="458" h="443" oX="822" oY="763" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0010" x="6498" y="3493" w="462" h="435" oX="822" oY="768" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0011" x="5583" y="3788" w="462" h="427" oX="826" oY="778" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0012" x="9635" y="4057" w="459" h="410" oX="834" oY="798" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0013" x="12262" y="1871" w="438" h="384" oX="858" oY="824" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0014" x="13218" y="4308" w="427" h="369" oX="876" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_ESE_0015" x="9866" y="9325" w="428" h="364" oX="876" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0000" x="13395" y="7042" w="425" h="367" oX="860" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0001" x="14989" y="9650" w="426" h="372" oX="860" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0002" x="11126" y="9862" w="426" h="383" oX="860" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0003" x="12982" y="6278" w="411" h="360" oX="860" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0004" x="15474" y="11477" w="402" h="325" oX="865" oY="930" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0005" x="10613" y="11286" w="403" h="381" oX="868" oY="917" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0006" x="5395" y="11535" w="400" h="425" oX="867" oY="900" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0007" x="4397" y="9817" w="406" h="428" oX="865" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0008" x="5176" y="8586" w="411" h="399" oX="865" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0009" x="6036" y="9767" w="413" h="396" oX="863" oY="874" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0010" x="12982" y="6640" w="411" h="386" oX="860" oY="874" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0011" x="7693" y="10883" w="414" h="388" oX="865" oY="867" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0012" x="11554" y="9865" w="426" h="388" oX="860" oY="857" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0013" x="11982" y="9886" w="426" h="374" oX="860" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0014" x="12838" y="9908" w="426" h="360" oX="860" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_N___0015" x="12410" y="9896" w="426" h="366" oX="860" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0000" x="7267" y="10882" w="424" h="388" oX="859" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0001" x="15089" y="7120" w="437" h="389" oX="832" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0002" x="4685" y="3150" w="442" h="392" oX="808" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0003" x="15410" y="4321" w="434" h="410" oX="808" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0004" x="9373" y="10632" w="415" h="375" oX="830" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0005" x="14212" y="2318" w="444" h="360" oX="810" oY="892" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0006" x="11146" y="2257" w="447" h="372" oX="810" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0007" x="11498" y="3477" w="445" h="382" oX="810" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0008" x="8130" y="6582" w="439" h="377" oX="816" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0009" x="10595" y="3359" w="453" h="373" oX="808" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0010" x="11441" y="4671" w="445" h="378" oX="817" oY="874" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0011" x="11566" y="8394" w="435" h="394" oX="832" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0012" x="13754" y="2666" w="439" h="400" oX="833" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0013" x="14164" y="9217" w="431" h="394" oX="847" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0014" x="6417" y="9372" w="428" h="390" oX="855" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NE__0015" x="13266" y="9929" w="426" h="389" oX="859" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0000" x="14241" y="6701" w="417" h="390" oX="855" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0001" x="7264" y="11272" w="423" h="389" oX="848" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0002" x="6847" y="9372" w="430" h="387" oX="831" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0003" x="9372" y="11733" w="415" h="377" oX="835" oY="857" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0004" x="13046" y="11381" w="403" h="340" oX="847" oY="908" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0005" x="12982" y="7028" w="411" h="369" oX="846" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0006" x="14242" y="5905" w="418" h="410" oX="839" oY="893" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0007" x="1338" y="8933" w="419" h="414" oX="833" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0008" x="6838" y="11159" w="424" h="389" oX="833" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0009" x="12415" y="9509" w="427" h="385" oX="830" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0010" x="8544" y="10406" w="413" h="385" oX="840" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0011" x="8951" y="11736" w="404" h="390" oX="852" oY="870" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0012" x="8975" y="8158" w="412" h="398" oX="849" oY="856" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0013" x="12982" y="7399" w="411" h="390" oX="850" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0014" x="6840" y="5916" w="413" h="384" oX="855" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNE_0015" x="7689" y="11273" w="414" h="389" oX="858" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0000" x="4793" y="9422" w="408" h="393" oX="875" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0001" x="6840" y="6946" w="408" h="399" oX="875" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0002" x="6427" y="8571" w="398" h="408" oX="884" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0003" x="14241" y="6317" w="419" h="382" oX="886" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0004" x="10252" y="9977" w="420" h="329" oX="885" oY="933" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0005" x="15881" y="5578" w="430" h="397" oX="878" oY="903" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0006" x="12401" y="3053" w="433" h="425" oX="875" oY="888" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0007" x="12877" y="2631" w="435" h="419" oX="873" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0008" x="15817" y="3500" w="432" h="408" oX="876" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0009" x="5986" y="10667" w="426" h="416" oX="878" oY="870" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0010" x="8108" y="8158" w="431" h="404" oX="877" oY="864" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0011" x="5203" y="9422" w="431" h="393" oX="877" oY="856" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0012" x="7810" y="7302" w="424" h="395" oX="877" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0013" x="8961" y="10618" w="410" h="388" oX="881" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0014" x="4251" y="1659" w="401" h="390" oX="882" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NNW_0015" x="10716" y="8349" w="408" h="394" oX="875" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0000" x="6416" y="10929" w="420" h="394" oX="870" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0001" x="12140" y="5831" w="406" h="403" oX="884" oY="853" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0002" x="5725" y="7347" w="396" h="412" oX="894" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0003" x="10235" y="8163" w="416" h="392" oX="902" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0004" x="13822" y="7468" w="417" h="334" oX="903" oY="923" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0005" x="1744" y="10896" w="440" h="369" oX="883" oY="902" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0006" x="10147" y="2961" w="458" h="382" oX="873" oY="889" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0007" x="1" y="12288" w="466" h="389" oX="871" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0008" x="6049" y="1802" w="448" h="388" oX="875" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0009" x="11932" y="3876" w="442" h="414" oX="878" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0010" x="11511" y="3053" w="445" h="422" oX="878" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0011" x="11063" y="3019" w="446" h="422" oX="877" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0012" x="11958" y="3053" w="441" h="422" oX="874" oY="833" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0013" x="5998" y="8575" w="427" h="410" oX="870" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0014" x="5527" y="6528" w="423" h="400" oX="867" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_NW__0015" x="7269" y="8974" w="420" h="396" oX="870" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0000" x="13395" y="7411" w="425" h="386" oX="875" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0001" x="14550" y="9993" w="426" h="362" oX="874" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0002" x="14978" y="10024" w="426" h="361" oX="874" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0003" x="15842" y="3910" w="411" h="409" oX="889" oY="771" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0004" x="1311" y="11247" w="402" h="486" oX="893" oY="698" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0005" x="456" y="723" w="403" h="547" oX="889" oY="648" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0006" x="1" y="7958" w="400" h="556" oX="893" oY="644" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0007" x="1" y="7395" w="406" h="561" oX="889" oY="643" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0008" x="1" y="6833" w="411" h="560" oX="884" oY="645" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0009" x="1" y="8516" w="413" h="549" oX="884" oY="661" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0010" x="849" y="2265" w="411" h="520" oX="889" oY="687" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0011" x="2195" y="5165" w="414" h="500" oX="881" oY="719" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0012" x="2645" y="4698" w="426" h="465" oX="874" oY="755" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0013" x="4171" y="12020" w="426" h="438" oX="874" oY="787" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0014" x="5988" y="11085" w="426" h="414" oX="874" oY="820" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_S___0015" x="9453" y="8557" w="426" h="397" oX="874" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0000" x="7696" y="9351" w="420" h="387" oX="870" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0001" x="6966" y="7347" w="406" h="407" oX="870" oY="807" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0002" x="6442" y="6939" w="396" h="406" oX="870" oY="795" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0003" x="15895" y="4741" w="416" h="426" oX="842" oY="769" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0004" x="424" y="9447" w="417" h="488" oX="840" oY="709" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0005" x="6049" y="348" w="440" h="515" oX="837" oY="688" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0006" x="6491" y="333" w="458" h="497" oX="829" oY="709" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0007" x="3265" y="336" w="467" h="488" oX="822" oY="716" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0008" x="6500" y="1336" w="448" h="493" oX="837" oY="711" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0009" x="1294" y="4278" w="442" h="492" oX="840" oY="716" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0010" x="7806" y="2969" w="445" h="480" oX="837" oY="729" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0011" x="863" y="11247" w="446" h="462" oX="837" oY="751" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0012" x="3513" y="6958" w="441" h="434" oX="845" oY="782" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0013" x="5981" y="8161" w="427" h="412" oX="863" oY="808" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0014" x="8133" y="8970" w="423" h="391" oX="870" oY="833" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SE__0015" x="8116" y="9747" w="420" h="382" oX="870" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0000" x="10716" y="9458" w="408" h="388" oX="877" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0001" x="10716" y="9848" w="408" h="394" oX="877" oY="816" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0002" x="10614" y="12014" w="398" h="386" oX="878" oY="803" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0003" x="13807" y="5065" w="419" h="418" oX="855" oY="763" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0004" x="1730" y="3777" w="420" h="499" oX="855" oY="693" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0005" x="1" y="2970" w="430" h="555" oX="852" oY="653" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0006" x="1" y="3527" w="433" h="551" oX="852" oY="661" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0007" x="1" y="5178" w="435" h="546" oX="852" oY="666" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0008" x="1" y="5726" w="432" h="545" oX="852" oY="666" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0009" x="1" y="10688" w="426" h="536" oX="856" oY="678" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0010" x="436" y="3340" w="431" h="505" oX="852" oY="701" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0011" x="1330" y="5201" w="431" h="490" oX="852" oY="730" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0012" x="2557" y="12177" w="424" h="457" oX="859" oY="764" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0013" x="4319" y="11113" w="410" h="432" oX="869" oY="794" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0014" x="6123" y="7347" w="401" h="409" oX="877" oY="824" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSE_0015" x="6647" y="11923" w="408" h="394" oX="877" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0000" x="13822" y="7071" w="417" h="395" oX="888" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0001" x="8558" y="9322" w="423" h="369" oX="889" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0002" x="8573" y="8962" w="430" h="358" oX="899" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0003" x="7255" y="8158" w="415" h="407" oX="910" oY="791" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0004" x="2642" y="10707" w="403" h="476" oX="910" oY="723" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0005" x="427" y="1272" w="411" h="539" oX="903" oY="672" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0006" x="1" y="6273" w="418" h="558" oX="903" oY="660" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0007" x="1" y="1840" w="419" h="567" oX="908" oY="653" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0008" x="1" y="1268" w="424" h="570" oX="903" oY="651" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0009" x="1" y="2409" w="427" h="559" oX="903" oY="663" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0010" x="1" y="9067" w="413" h="541" oX="907" oY="684" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0011" x="869" y="3302" w="404" h="510" oX="904" oY="717" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0012" x="469" y="12203" w="412" h="473" oX="899" oY="758" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0013" x="3895" y="10247" w="411" h="443" oX="899" oY="790" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0014" x="5592" y="6930" w="413" h="415" oX="892" oY="823" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SSW_0015" x="9819" y="8158" w="414" h="397" oX="888" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0000" x="6414" y="10534" w="424" h="393" oX="877" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0001" x="12437" y="8440" w="437" h="370" oX="891" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0002" x="9016" y="6333" w="442" h="353" oX="910" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0003" x="12112" y="6587" w="434" h="385" oX="918" oY="821" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0004" x="3055" y="11163" w="415" h="448" oX="915" oY="757" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0005" x="1275" y="3277" w="444" h="501" oX="906" oY="719" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0006" x="1" y="11758" w="447" h="528" oX="903" oY="699" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0007" x="1" y="4633" w="445" h="543" oX="905" oY="685" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0008" x="1" y="4080" w="439" h="551" oX="905" oY="674" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0009" x="1" y="723" w="453" h="543" oX="899" oY="680" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0010" x="861" y="722" w="445" h="526" oX="898" oY="697" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0011" x="1293" y="3780" w="435" h="496" oX="893" oY="728" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0012" x="2623" y="8975" w="439" h="456" oX="888" oY="770" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0013" x="1762" y="6475" w="431" h="428" oX="882" oY="801" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0014" x="6185" y="7758" w="428" h="400" oX="877" oY="831" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_SW__0015" x="13694" y="9945" w="426" h="391" oX="875" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0000" x="15463" y="9282" w="388" h="366" oX="863" oY="870" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0001" x="15926" y="7859" w="366" h="350" oX="898" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0002" x="8713" y="7799" w="363" h="357" oX="924" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0003" x="15935" y="2558" w="355" h="375" oX="939" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0004" x="4259" y="1273" w="393" h="384" oX="934" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0005" x="5795" y="5427" w="471" h="376" oX="917" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0006" x="3734" y="1563" w="515" h="385" oX="910" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0007" x="2713" y="2274" w="505" h="415" oX="905" oY="818" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0008" x="1715" y="11267" w="454" h="450" oX="903" oY="783" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0009" x="5129" y="2865" w="452" h="469" oX="896" oY="765" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0010" x="2622" y="6948" w="433" h="470" oX="901" oY="766" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0011" x="866" y="11711" w="443" h="455" oX="884" oY="778" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0012" x="14022" y="1149" w="430" h="436" oX="882" oY="800" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0013" x="6410" y="8160" w="403" h="409" oX="875" oY="827" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0014" x="7374" y="1163" w="387" h="386" oX="863" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_W___0015" x="15919" y="5977" w="392" h="374" oX="859" oY="862" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0000" x="14122" y="9970" w="426" h="380" oX="858" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0001" x="11816" y="12025" w="399" h="374" oX="885" oY="870" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0002" x="14981" y="12143" w="379" h="386" oX="904" oY="870" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0003" x="1374" y="7312" w="384" h="381" oX="914" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0004" x="10641" y="10588" w="405" h="352" oX="912" oY="893" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0005" x="10669" y="2615" w="454" h="349" oX="895" oY="897" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0006" x="2718" y="1907" w="509" h="365" oX="886" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0007" x="3220" y="2321" w="505" h="378" oX="883" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0008" x="7680" y="5505" w="465" h="407" oX="881" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0009" x="2171" y="11270" w="458" h="442" oX="880" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0010" x="1721" y="2984" w="462" h="444" oX="876" oY="806" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0011" x="6496" y="3930" w="462" h="433" oX="872" oY="808" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0012" x="3499" y="6529" w="459" h="427" oX="867" oY="817" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0013" x="13314" y="2644" w="438" h="413" oX="864" oY="830" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0014" x="14660" y="7097" w="427" h="395" oX="857" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WNW_0015" x="11126" y="9475" w="428" h="385" oX="856" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0000" x="11556" y="9486" w="428" h="377" oX="862" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0001" x="9789" y="11742" w="415" h="361" oX="896" oY="865" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0002" x="15900" y="8937" w="411" h="342" oX="926" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0003" x="15514" y="8562" w="403" h="373" oX="938" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0004" x="6230" y="11923" w="415" h="416" oX="922" oY="802" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0005" x="1693" y="2540" w="490" h="442" oX="900" oY="781" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0006" x="2283" y="348" w="515" h="460" oX="894" oY="765" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0007" x="1789" y="348" w="492" h="484" oX="894" oY="743" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0008" x="3734" y="336" w="467" h="504" oX="895" oY="721" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0009" x="1308" y="348" w="479" h="506" oX="891" oY="717" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0010" x="442" y="3847" w="443" h="497" oX="903" oY="727" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0011" x="3057" y="6093" w="437" h="475" oX="882" oY="749" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0012" x="3509" y="8987" w="428" h="441" oX="880" oY="783" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0013" x="14241" y="7093" w="417" h="404" oX="874" oY="817" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0014" x="7693" y="8972" w="423" h="377" oX="865" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Got Hit 1_WSW_0015" x="12548" y="7366" w="432" h="372" oX="858" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0000" x="13451" y="11394" w="403" h="352" oX="911" oY="871" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0001" x="11454" y="10595" w="404" h="350" oX="911" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0002" x="12267" y="10606" w="404" h="347" oX="911" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0003" x="12673" y="10614" w="404" h="347" oX="911" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0004" x="11860" y="10602" w="405" h="347" oX="911" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0005" x="13079" y="10666" w="404" h="348" oX="911" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0006" x="13485" y="10684" w="404" h="348" oX="911" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0007" x="13891" y="10695" w="404" h="350" oX="911" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0008" x="11048" y="10589" w="404" h="354" oX="911" oY="869" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0009" x="14297" y="10698" w="404" h="355" oX="911" oY="868" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0010" x="14703" y="10728" w="404" h="351" oX="911" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0011" x="15515" y="10753" w="404" h="345" oX="911" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0012" x="10620" y="10942" w="404" h="342" oX="911" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0013" x="11026" y="10945" w="404" h="342" oX="911" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0014" x="11432" y="10947" w="404" h="346" oX="911" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_E___0015" x="15109" y="10731" w="404" h="350" oX="911" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0000" x="10402" y="5682" w="443" h="346" oX="872" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0001" x="12723" y="1537" w="445" h="346" oX="871" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0002" x="8147" y="5872" w="443" h="346" oX="872" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0003" x="8592" y="5906" w="443" h="345" oX="872" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0004" x="13318" y="2296" w="445" h="346" oX="872" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0005" x="9037" y="5985" w="443" h="346" oX="872" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0006" x="9482" y="5990" w="443" h="346" oX="872" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0007" x="13765" y="2318" w="445" h="346" oX="871" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0008" x="14658" y="2331" w="444" h="349" oX="872" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0009" x="15104" y="2331" w="444" h="352" oX="872" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0010" x="14506" y="4730" w="444" h="348" oX="872" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0011" x="9927" y="6007" w="443" h="342" oX="872" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0012" x="10372" y="6030" w="443" h="340" oX="872" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0013" x="7680" y="5914" w="444" h="340" oX="872" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0014" x="5074" y="5702" w="444" h="342" oX="872" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ENE_0015" x="861" y="10901" w="444" h="344" oX="872" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0000" x="9460" y="6338" w="440" h="367" oX="877" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0001" x="9902" y="6351" w="440" h="366" oX="877" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0002" x="10344" y="6372" w="440" h="363" oX="877" oY="853" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0003" x="10786" y="6528" w="440" h="358" oX="877" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0004" x="11228" y="6581" w="440" h="356" oX="877" oY="860" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0005" x="11670" y="6587" w="440" h="357" oX="877" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0006" x="8571" y="6612" w="440" h="361" oX="877" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0007" x="9013" y="6688" w="440" h="364" oX="877" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0008" x="9455" y="6707" w="440" h="366" oX="877" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0009" x="9897" y="6719" w="440" h="366" oX="877" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0010" x="10339" y="6737" w="440" h="362" oX="877" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0011" x="10781" y="6888" w="440" h="357" oX="877" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0012" x="11223" y="6939" w="440" h="354" oX="877" oY="862" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0013" x="11665" y="6946" w="440" h="355" oX="877" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0014" x="8570" y="6975" w="440" h="360" oX="877" oY="856" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_ESE_0015" x="9012" y="7054" w="440" h="365" oX="877" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0000" x="840" y="10098" w="421" h="317" oX="860" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0001" x="3045" y="7423" w="421" h="315" oX="860" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0002" x="8528" y="11850" w="421" h="313" oX="860" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0003" x="7255" y="6299" w="421" h="312" oX="860" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0004" x="7255" y="6613" w="421" h="311" oX="860" oY="888" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0005" x="8983" y="9672" w="421" h="312" oX="860" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0006" x="5811" y="12363" w="421" h="314" oX="860" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0007" x="9406" y="9683" w="421" h="316" oX="860" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0008" x="2622" y="7420" w="421" h="318" oX="860" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0009" x="9829" y="9691" w="421" h="317" oX="860" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0010" x="8964" y="9986" w="421" h="316" oX="860" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0011" x="9387" y="10001" w="421" h="314" oX="860" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0012" x="9810" y="10010" w="421" h="312" oX="860" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0013" x="8961" y="10304" w="421" h="312" oX="860" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0014" x="9384" y="10317" w="421" h="313" oX="860" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_N___0015" x="9807" y="10324" w="421" h="316" oX="860" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0000" x="15089" y="7867" w="438" h="342" oX="860" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0001" x="10690" y="8006" w="438" h="341" oX="860" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0002" x="12014" y="8064" w="438" h="338" oX="860" oY="890" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0003" x="9996" y="7463" w="438" h="334" oX="860" oY="894" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0004" x="12454" y="8104" w="438" h="334" oX="860" oY="894" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0005" x="6234" y="12341" w="438" h="336" oX="860" oY="892" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0006" x="12894" y="8153" w="438" h="337" oX="860" oY="891" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0007" x="13334" y="8160" w="438" h="343" oX="860" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0008" x="13774" y="8165" w="438" h="350" oX="860" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0009" x="14214" y="8194" w="438" h="351" oX="860" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0010" x="15088" y="8211" w="438" h="349" oX="860" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0011" x="12876" y="8492" w="438" h="343" oX="860" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0012" x="13316" y="8505" w="438" h="339" oX="860" oY="889" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0013" x="13756" y="8517" w="438" h="336" oX="860" oY="892" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0014" x="14196" y="8547" w="438" h="339" oX="860" oY="889" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NE__0015" x="14636" y="8550" w="438" h="341" oX="860" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0000" x="9370" y="12112" w="417" h="344" oX="855" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0001" x="10674" y="10244" w="417" h="342" oX="855" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0002" x="11093" y="10247" w="417" h="340" oX="855" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0003" x="11512" y="10255" w="417" h="338" oX="855" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0004" x="11931" y="10262" w="417" h="338" oX="855" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0005" x="12350" y="10264" w="417" h="340" oX="855" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0006" x="12769" y="10270" w="417" h="342" oX="855" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0007" x="13188" y="10320" w="417" h="344" oX="855" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0008" x="9789" y="12105" w="417" h="345" oX="855" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0009" x="13607" y="10338" w="417" h="344" oX="855" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0010" x="15481" y="8937" w="417" h="343" oX="855" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0011" x="14026" y="10352" w="417" h="341" oX="855" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0012" x="14445" y="10357" w="417" h="339" oX="855" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0013" x="14864" y="10387" w="417" h="339" oX="855" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0014" x="15283" y="10389" w="417" h="340" oX="855" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNE_0015" x="15702" y="10408" w="417" h="343" oX="855" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0000" x="14666" y="11442" w="402" h="348" oX="881" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0001" x="15070" y="11447" w="402" h="346" oX="881" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0002" x="15878" y="11485" w="402" h="344" oX="881" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0003" x="10613" y="11669" w="402" h="343" oX="881" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0004" x="11017" y="11670" w="402" h="342" oX="881" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0005" x="11421" y="11673" w="402" h="343" oX="881" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0006" x="11825" y="11678" w="402" h="345" oX="881" oY="883" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0007" x="12229" y="11681" w="402" h="347" oX="881" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0008" x="15528" y="8211" w="408" h="349" oX="875" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0009" x="12633" y="11693" w="402" h="348" oX="881" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0010" x="13037" y="11723" w="402" h="346" oX="881" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0011" x="13441" y="11748" w="402" h="344" oX="881" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0012" x="13845" y="11773" w="402" h="343" oX="881" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0013" x="14249" y="11783" w="402" h="343" oX="881" oY="885" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0014" x="14653" y="11792" w="402" h="344" oX="881" oY="884" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NNW_0015" x="15057" y="11795" w="402" h="346" oX="881" oY="882" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0000" x="11126" y="8779" w="434" h="350" oX="855" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0001" x="11562" y="8790" w="434" h="349" oX="855" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0002" x="14613" y="8893" w="432" h="345" oX="857" oY="891" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0003" x="15047" y="8937" w="432" h="343" oX="857" oY="893" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0004" x="11126" y="9131" w="432" h="342" oX="857" oY="894" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0005" x="11560" y="9141" w="432" h="343" oX="857" oY="893" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0006" x="11998" y="8802" w="434" h="345" oX="855" oY="891" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0007" x="12434" y="8812" w="434" h="350" oX="855" oY="886" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0008" x="9078" y="7799" w="434" h="357" oX="855" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0009" x="12870" y="8837" w="434" h="358" oX="855" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0010" x="13306" y="8846" w="434" h="355" oX="855" oY="881" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0011" x="14654" y="8199" w="432" h="349" oX="857" oY="887" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0012" x="11994" y="9149" w="432" h="344" oX="857" oY="892" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0013" x="12428" y="9164" w="432" h="343" oX="857" oY="893" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0014" x="12862" y="9197" w="432" h="345" oX="857" oY="891" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_NW__0015" x="13742" y="8855" w="434" h="348" oX="855" oY="888" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0000" x="5160" y="3336" w="421" h="440" oX="879" oY="806" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0001" x="3338" y="11613" w="421" h="439" oX="879" oY="807" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0002" x="14454" y="1149" w="421" h="436" oX="879" oY="810" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0003" x="12120" y="5053" w="421" h="431" oX="879" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0004" x="13384" y="5053" w="421" h="430" oX="879" oY="817" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0005" x="13679" y="3068" w="421" h="430" oX="879" oY="816" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0006" x="10851" y="4997" w="421" h="433" oX="879" oY="813" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0007" x="15310" y="1455" w="421" h="437" oX="879" oY="809" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0008" x="3363" y="12054" w="421" h="439" oX="879" oY="807" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0009" x="14887" y="1475" w="421" h="438" oX="879" oY="808" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0010" x="11274" y="5051" w="421" h="433" oX="879" oY="813" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0011" x="14102" y="3070" w="421" h="428" oX="879" oY="818" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0012" x="5209" y="9817" w="421" h="425" oX="879" oY="821" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0013" x="4727" y="10249" w="421" h="427" oX="879" oY="819" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0014" x="11697" y="5051" w="421" h="433" oX="879" oY="813" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_S___0015" x="15735" y="1760" w="421" h="437" oX="879" oY="809" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0000" x="3491" y="8579" w="434" h="406" oX="871" oY="828" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0001" x="7885" y="4355" w="434" h="406" oX="871" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0002" x="14228" y="5080" w="432" h="403" oX="871" oY="832" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0003" x="12548" y="5839" w="432" h="398" oX="871" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0004" x="12548" y="6593" w="432" h="395" oX="871" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0005" x="9881" y="8557" w="432" h="397" oX="871" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0006" x="6615" y="7757" w="434" h="400" oX="871" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0007" x="14525" y="3095" w="434" h="403" oX="871" oY="831" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0008" x="7257" y="8567" w="434" h="405" oX="871" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0009" x="7374" y="7347" w="434" h="405" oX="871" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0010" x="7051" y="7756" w="434" h="400" oX="871" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0011" x="12003" y="8404" w="432" h="396" oX="871" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0012" x="13296" y="9203" w="432" h="393" oX="871" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0013" x="13730" y="9205" w="432" h="394" oX="871" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0014" x="8541" y="8158" w="432" h="400" oX="871" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SE__0015" x="7672" y="8158" w="434" h="405" oX="871" oY="830" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0000" x="15081" y="5099" w="402" h="434" oX="877" oY="812" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0001" x="4777" y="8987" w="402" h="433" oX="877" oY="814" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0002" x="4805" y="9817" w="402" h="430" oX="877" oY="816" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0003" x="5632" y="9822" w="402" h="425" oX="877" oY="821" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0004" x="5407" y="11962" w="402" h="425" oX="877" oY="823" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0005" x="5797" y="11514" w="402" h="424" oX="877" oY="822" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0006" x="5150" y="10249" w="402" h="427" oX="877" oY="819" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0007" x="4754" y="8152" w="402" h="432" oX="877" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0008" x="15485" y="5099" w="408" h="434" oX="877" oY="813" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0009" x="5181" y="8987" w="402" h="433" oX="877" oY="814" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0010" x="4991" y="11539" w="402" h="428" oX="877" oY="819" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0011" x="5577" y="8161" w="402" h="422" oX="877" oY="824" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0012" x="6201" y="11501" w="402" h="420" oX="877" oY="826" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0013" x="5585" y="8998" w="402" h="422" oX="877" oY="825" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0014" x="5003" y="11969" w="402" h="428" oX="877" oY="819" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSE_0015" x="4599" y="11986" w="402" h="432" oX="877" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0000" x="13260" y="3059" w="417" h="436" oX="888" oY="812" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0001" x="14662" y="5099" w="417" h="434" oX="888" oY="814" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0002" x="12965" y="5053" w="417" h="431" oX="888" oY="817" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0003" x="5148" y="10678" w="417" h="427" oX="888" oY="821" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0004" x="5567" y="10661" w="417" h="425" oX="888" oY="823" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0005" x="5150" y="11107" w="417" h="426" oX="888" oY="822" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0006" x="4310" y="10682" w="417" h="429" oX="888" oY="819" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0007" x="4358" y="8987" w="417" h="433" oX="888" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0008" x="3939" y="8987" w="417" h="434" oX="888" oY="814" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0009" x="4335" y="8150" w="417" h="434" oX="888" oY="814" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0010" x="4729" y="10678" w="417" h="429" oX="888" oY="819" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0011" x="5569" y="11088" w="417" h="424" oX="888" oY="824" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0012" x="5811" y="11940" w="417" h="421" oX="888" oY="827" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0013" x="5158" y="8161" w="417" h="423" oX="888" oY="825" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0014" x="4731" y="11109" w="417" h="428" oX="888" oY="820" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SSW_0015" x="4308" y="10247" w="417" h="433" oX="888" oY="815" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0000" x="14638" y="2682" w="438" h="411" oX="862" oY="828" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0001" x="15078" y="2685" w="438" h="410" oX="862" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0002" x="7693" y="8565" w="438" h="405" oX="862" oY="833" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0003" x="14961" y="3097" w="438" h="401" oX="862" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0004" x="7250" y="6946" w="438" h="399" oX="862" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0005" x="8573" y="8560" w="438" h="400" oX="862" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0006" x="7690" y="6632" w="438" h="404" oX="862" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0007" x="6526" y="7347" w="438" h="408" oX="862" oY="831" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0008" x="5554" y="10249" w="438" h="410" oX="862" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0009" x="15402" y="3910" w="438" h="409" oX="862" oY="830" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0010" x="8133" y="8564" w="438" h="404" oX="862" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0011" x="9013" y="8558" w="438" h="398" oX="862" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0012" x="11126" y="8382" w="438" h="395" oX="862" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0013" x="10690" y="7608" w="438" h="396" oX="862" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0014" x="14967" y="3500" w="438" h="402" oX="862" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_SW__0015" x="6815" y="8159" w="438" h="408" oX="862" oY="831" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0000" x="13856" y="11407" w="403" h="364" oX="846" oY="872" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0001" x="11838" y="10951" w="404" h="363" oX="845" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0002" x="11828" y="11316" w="404" h="360" oX="845" oY="876" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0003" x="6674" y="12319" w="404" h="358" oX="845" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0004" x="9514" y="7799" w="405" h="357" oX="844" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0005" x="12650" y="10963" w="404" h="358" oX="845" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0006" x="12244" y="10955" w="404" h="359" oX="845" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0007" x="12234" y="11316" w="404" h="363" oX="845" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0008" x="15853" y="9282" w="404" h="366" oX="845" oY="870" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0009" x="12640" y="11323" w="404" h="368" oX="845" oY="868" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0010" x="13056" y="11016" w="404" h="363" oX="845" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0011" x="13462" y="11034" w="404" h="358" oX="845" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0012" x="13868" y="11047" w="404" h="358" oX="845" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0013" x="14274" y="11055" w="404" h="358" oX="845" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0014" x="14680" y="11081" w="404" h="359" oX="845" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_W___0015" x="15086" y="11083" w="404" h="362" oX="845" oY="874" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0000" x="9454" y="7075" w="440" h="362" oX="843" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0001" x="9896" y="7087" w="440" h="362" oX="843" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0002" x="10338" y="7101" w="440" h="360" oX="843" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0003" x="10780" y="7247" w="440" h="359" oX="843" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0004" x="11222" y="7295" w="440" h="359" oX="843" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0005" x="11664" y="7303" w="440" h="359" oX="843" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0006" x="12106" y="7333" w="440" h="361" oX="843" oY="878" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0007" x="11130" y="7656" w="440" h="362" oX="843" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0008" x="11572" y="7664" w="440" h="364" oX="843" oY="875" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0009" x="12014" y="7696" w="440" h="366" oX="843" oY="873" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0010" x="12456" y="7740" w="440" h="362" oX="843" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0011" x="12898" y="7791" w="440" h="360" oX="843" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0012" x="13340" y="7799" w="440" h="359" oX="843" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0013" x="13782" y="7804" w="440" h="359" oX="843" oY="880" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0014" x="11130" y="8020" w="440" h="360" oX="843" oY="879" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WNW_0015" x="11572" y="8030" w="440" h="362" oX="843" oY="877" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0000" x="12334" y="4679" w="443" h="372" oX="845" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0001" x="12702" y="1885" w="444" h="370" oX="844" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0002" x="9512" y="5621" w="443" h="367" oX="845" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0003" x="14093" y="4315" w="444" h="363" oX="845" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0004" x="12276" y="1508" w="445" h="361" oX="843" oY="860" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0005" x="14952" y="4734" w="444" h="363" oX="845" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0006" x="10817" y="6160" w="443" h="366" oX="845" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0007" x="12341" y="4308" w="445" h="369" oX="844" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0008" x="11895" y="4292" w="444" h="376" oX="844" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0009" x="12872" y="2259" w="444" h="370" oX="844" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0010" x="8174" y="5504" w="444" h="366" oX="844" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0011" x="8126" y="6220" w="443" h="360" oX="845" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0012" x="8571" y="6253" w="443" h="357" oX="845" oY="864" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0013" x="8620" y="5545" w="444" h="359" oX="844" oY="862" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0014" x="9066" y="5619" w="444" h="364" oX="844" oY="857" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Idle_WSW_0015" x="13647" y="4309" w="444" h="369" oX="844" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0000" x="8253" y="3224" w="493" h="353" oX="878" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0001" x="10378" y="1472" w="487" h="359" oX="884" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0002" x="9674" y="3329" w="460" h="358" oX="910" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0003" x="8644" y="5185" w="461" h="358" oX="909" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0004" x="8174" y="5149" w="468" h="353" oX="902" oY="853" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0005" x="6344" y="4730" w="479" h="355" oX="891" oY="853" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0006" x="4584" y="5242" w="474" h="357" oX="896" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0007" x="438" y="5668" w="462" h="356" oX="908" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0008" x="7705" y="5147" w="467" h="356" oX="903" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_E___0009" x="5315" y="4962" w="478" h="356" oX="892" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0000" x="5051" y="4129" w="480" h="371" oX="881" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0001" x="1722" y="2168" w="482" h="370" oX="879" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0002" x="5533" y="4217" w="480" h="366" oX="879" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0003" x="9880" y="1810" w="488" h="356" oX="871" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0004" x="3231" y="1600" w="501" h="352" oX="858" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0005" x="7761" y="2261" w="511" h="351" oX="848" oY="865" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0006" x="7761" y="2614" w="506" h="353" oX="853" oY="866" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0007" x="9932" y="703" w="489" h="357" oX="870" oY="865" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0008" x="7229" y="5141" w="474" h="361" oX="885" oY="864" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ENE_0009" x="843" y="9730" w="475" h="366" oX="884" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0000" x="3734" y="842" w="523" h="363" oX="840" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0001" x="2277" y="1141" w="516" h="368" oX="847" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0002" x="8245" y="3579" w="493" h="369" oX="870" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0003" x="6960" y="4393" w="480" h="368" oX="883" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0004" x="11356" y="1502" w="486" h="364" oX="877" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0005" x="10370" y="1833" w="487" h="366" oX="876" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0006" x="409" y="7672" w="484" h="366" oX="879" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0007" x="10867" y="1494" w="487" h="365" oX="876" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0008" x="2185" y="3068" w="500" h="363" oX="863" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_ESE_0009" x="2719" y="1543" w="510" h="362" oX="853" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0000" x="15362" y="12151" w="378" h="381" oX="882" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0001" x="14597" y="12138" w="382" h="379" oX="882" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0002" x="7057" y="11663" w="378" h="362" oX="882" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0003" x="7437" y="11664" w="375" h="364" oX="886" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0004" x="5890" y="5805" w="375" h="368" oX="882" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0005" x="5510" y="6046" w="378" h="374" oX="882" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0006" x="15742" y="12211" w="382" h="368" oX="882" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0007" x="9921" y="7799" w="382" h="357" oX="882" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0008" x="6267" y="5826" w="382" h="360" oX="882" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_N___0009" x="7374" y="1551" w="387" h="368" oX="877" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0000" x="11945" y="3477" w="443" h="397" oX="871" oY="856" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0001" x="11050" y="3443" w="446" h="395" oX="868" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0002" x="11125" y="2631" w="447" h="386" oX="865" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0003" x="10136" y="3345" w="457" h="370" oX="855" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0004" x="6741" y="5501" w="469" h="374" oX="843" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0005" x="6275" y="5087" w="475" h="369" oX="837" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0006" x="3513" y="7394" w="474" h="371" oX="840" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0007" x="9767" y="2168" w="461" h="373" oX="853" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0008" x="12283" y="1125" w="441" h="381" oX="873" oY="860" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NE__0009" x="13579" y="1552" w="441" h="387" oX="871" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0000" x="1379" y="6053" w="381" h="400" oX="883" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0001" x="1368" y="8152" w="389" h="398" oX="875" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0002" x="15529" y="5977" w="388" h="384" oX="876" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0003" x="13816" y="12118" w="394" h="377" oX="870" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0004" x="11018" y="11289" w="402" h="379" oX="862" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0005" x="11422" y="11295" w="404" h="376" oX="860" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0006" x="15492" y="11100" w="404" h="375" oX="860" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0007" x="13417" y="12094" w="397" h="376" oX="867" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0008" x="15926" y="7474" w="383" h="383" oX="881" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNE_0009" x="15528" y="7118" w="380" h="389" oX="884" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0000" x="8109" y="10906" w="422" h="372" oX="873" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0001" x="8713" y="7421" w="411" h="376" oX="879" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0002" x="11415" y="12018" w="399" h="378" oX="884" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0003" x="15926" y="7088" w="385" h="384" oX="884" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0004" x="15528" y="6724" w="381" h="392" oX="884" oY="845" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0005" x="15921" y="443" w="390" h="397" oX="882" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0006" x="15529" y="7509" w="395" h="392" oX="882" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0007" x="12217" y="12030" w="398" h="378" oX="882" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0008" x="14261" y="11415" w="403" h="366" oX="882" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NNW_0009" x="10212" y="10658" w="406" h="368" oX="884" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0000" x="9895" y="1062" w="489" h="371" oX="836" oY="857" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0001" x="12495" y="747" w="482" h="376" oX="836" oY="854" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0002" x="5327" y="5320" w="466" h="380" oX="836" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0003" x="14195" y="2680" w="441" h="388" oX="836" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0004" x="6499" y="1831" w="448" h="396" oX="836" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0005" x="3479" y="8180" w="446" h="397" oX="836" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0006" x="10607" y="2966" w="454" h="391" oX="836" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0007" x="8216" y="4767" w="461" h="380" oX="836" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0008" x="6268" y="5458" w="471" h="366" oX="836" oY="861" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_NW__0009" x="6825" y="4763" w="479" h="369" oX="836" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0000" x="3820" y="5151" w="378" h="452" oX="900" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0001" x="1376" y="7695" w="382" h="455" oX="896" oY="831" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0002" x="2983" y="12173" w="378" h="456" oX="900" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0003" x="2961" y="11714" w="375" h="457" oX="899" oY="828" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0004" x="3443" y="5165" w="375" h="456" oX="903" oY="829" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0005" x="3898" y="5605" w="378" h="452" oX="900" oY="833" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0006" x="3900" y="6059" w="382" h="448" oX="896" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0007" x="3960" y="6509" w="382" h="447" oX="896" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0008" x="4200" y="5151" w="382" h="448" oX="896" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_S___0009" x="7374" y="332" w="387" h="449" oX="896" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0000" x="8238" y="3950" w="489" h="403" oX="835" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0001" x="13638" y="730" w="482" h="408" oX="842" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0002" x="7212" y="5504" w="466" h="410" oX="858" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0003" x="12390" y="3480" w="441" h="411" oX="883" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0004" x="6048" y="3435" w="448" h="408" oX="876" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0005" x="11039" y="3840" w="446" h="403" oX="878" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0006" x="10089" y="4497" w="454" h="411" oX="870" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0007" x="8679" y="4770" w="461" h="413" oX="863" oY="833" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0008" x="3470" y="7767" w="471" h="411" oX="853" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SE__0009" x="3944" y="4300" w="479" h="402" oX="845" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0000" x="2631" y="11270" w="422" h="442" oX="865" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0001" x="4390" y="6948" w="411" h="444" oX="870" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0002" x="4680" y="6048" w="399" h="444" oX="877" oY="833" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0003" x="7374" y="2300" w="385" h="445" oX="891" oY="832" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0004" x="4735" y="6494" w="381" h="444" oX="895" oY="833" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0005" x="15921" y="1" w="390" h="440" oX="888" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0006" x="4594" y="11547" w="395" h="437" oX="883" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0007" x="3919" y="11137" w="398" h="441" oX="880" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0008" x="3761" y="11612" w="403" h="439" oX="875" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSE_0009" x="3927" y="8180" w="406" h="438" oX="870" oY="839" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0000" x="5209" y="6930" w="381" h="442" oX="896" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0001" x="4344" y="6501" w="389" h="445" oX="896" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0002" x="4278" y="5601" w="388" h="448" oX="896" oY="832" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0003" x="4284" y="6051" w="394" h="448" oX="896" oY="832" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0004" x="3496" y="6080" w="402" h="447" oX="896" oY="833" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0005" x="4803" y="6940" w="404" h="444" oX="896" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0006" x="4668" y="5601" w="404" h="445" oX="896" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0007" x="3911" y="10692" w="397" h="443" oX="896" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0008" x="3786" y="12053" w="383" h="439" oX="896" oY="841" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SSW_0009" x="1380" y="6455" w="380" h="440" oX="896" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0000" x="9322" y="2135" w="443" h="405" oX="846" oY="848" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0001" x="11002" y="4245" w="446" h="415" oX="846" oY="838" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0002" x="10545" y="4498" w="447" h="421" oX="848" oY="832" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0003" x="10131" y="3717" w="457" h="419" oX="848" oY="834" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0004" x="4363" y="4714" w="469" h="416" oX="848" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0005" x="14122" y="730" w="475" h="417" oX="848" oY="836" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0006" x="3127" y="3832" w="474" h="418" oX="846" oY="835" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0007" x="9746" y="2543" w="461" h="416" oX="846" oY="837" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0008" x="12376" y="3893" w="441" h="413" oX="846" oY="840" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_SW__0009" x="13579" y="1140" w="441" h="410" oX="848" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0000" x="8748" y="3281" w="493" h="361" oX="789" oY="860" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0001" x="10859" y="1861" w="487" h="363" oX="789" oY="858" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0002" x="9669" y="3689" w="460" h="366" oX="790" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0003" x="9684" y="2961" w="461" h="366" oX="790" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0004" x="8729" y="4400" w="468" h="368" oX="790" oY="852" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0005" x="4834" y="4874" w="479" h="366" oX="790" oY="855" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0006" x="3989" y="7766" w="474" h="363" oX="790" oY="857" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0007" x="6496" y="4365" w="462" h="363" oX="790" oY="857" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0008" x="4660" y="2423" w="467" h="361" oX="790" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_W___0009" x="5795" y="5061" w="478" h="364" oX="790" oY="860" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0000" x="3734" y="1207" w="523" h="354" oX="797" oY="866" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0001" x="8274" y="2126" w="516" h="362" oX="797" oY="863" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0002" x="8740" y="3644" w="493" h="365" oX="797" oY="860" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0003" x="4898" y="4502" w="480" h="370" oX="797" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0004" x="11362" y="1124" w="486" h="376" oX="797" oY="859" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0005" x="10913" y="715" w="487" h="376" oX="797" oY="860" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0006" x="12009" y="745" w="484" h="374" oX="797" oY="862" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0007" x="11402" y="753" w="487" h="369" oX="797" oY="862" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0008" x="4183" y="3149" w="500" h="355" oX="797" oY="866" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WNW_0009" x="2206" y="1891" w="510" h="354" oX="797" oY="865" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0000" x="5380" y="4585" w="480" h="375" oX="799" oY="851" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0001" x="4085" y="3924" w="482" h="374" oX="799" oY="849" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0002" x="5862" y="4686" w="480" h="373" oX="801" oY="846" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0003" x="10423" y="713" w="488" h="376" oX="801" oY="843" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0004" x="3727" y="2328" w="501" h="377" oX="801" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0005" x="2206" y="1511" w="511" h="378" oX="801" oY="842" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0006" x="3736" y="1950" w="506" h="376" oX="801" oY="844" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0007" x="9887" y="1435" w="489" h="373" oX="801" oY="847" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0008" x="3989" y="7394" w="474" h="370" oX="801" oY="850" oW="2160" oH="2160"/>
+    <sprite n="Scorpion_Walk_WSW_0009" x="6752" y="5134" w="475" h="365" oX="801" oY="854" oW="2160" oH="2160"/>
+</TextureAtlas>
