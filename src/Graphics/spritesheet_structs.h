@@ -174,10 +174,10 @@ namespace Spritesheet_Structs {
       /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
       // was 75
       int speed = 100;
-      if (checkAction == "parry") {
+      if (checkAction == "singleStrike1") {
         action = Action_Component::Action_State::attack;
         actionFrameData[action].frameSpeed = speed;
-      } else if (checkAction == "parry") {
+      } else if (checkAction == "singleStrike1") {
         action = Action_Component::Action_State::attack;
         actionFrameData[action].frameSpeed = speed;
       } else if (checkAction == "idle") {
@@ -195,7 +195,7 @@ namespace Spritesheet_Structs {
       } else if (checkAction == "castStart") {
         action = Action_Component::Action_State::cast;
         actionFrameData[action].frameSpeed = speed;
-      } else if (checkAction == "castingLoop") {
+      } else if (checkAction == "castEnd") {
         action = Action_Component::Action_State::casting;
         actionFrameData[action].frameSpeed = speed;
       } else if (checkAction == "dead") {

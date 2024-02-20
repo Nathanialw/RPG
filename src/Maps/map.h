@@ -344,8 +344,8 @@ namespace Maps {
     Get_Coords((int) camera.screen.y, y);
 
 
-    for (int i = x; i < (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
-      for (int j = y; j < (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
+    for (float i = x; i < (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
+      for (float j = y; j < (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
         if (i < 0 || j < 0) {
           continue;
         } else {

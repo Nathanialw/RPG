@@ -122,7 +122,7 @@ namespace Rendering {
   float SortIt = 0;
   void Sort_Positions(entt::registry &zone) {
     //    Utilities::Log("Call Sort Function");
-    zone.sort<Component::Renderable>([](const Component::Renderable &lhs, const Component::Renderable &rhs) {
+    zone.sort<Component::Renderable>([&](const Component::Renderable &lhs, const Component::Renderable &rhs) {
       return Sort(lhs, rhs);
     });
   }
