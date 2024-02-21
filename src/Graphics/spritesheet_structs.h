@@ -175,20 +175,17 @@ namespace Spritesheet_Structs {
       // was 75
       int speed = 100;
       int fastSpeed = 50;
-      if (checkAction == "singleStrike1") {
+      if (checkAction == "singleStrike2") {
         action = Action_Component::Action_State::attack;
         actionFrameData[action].frameSpeed = fastSpeed;
       } else if (checkAction == "singleStrike1") {
-        action = Action_Component::Action_State::attack;
-        actionFrameData[action].frameSpeed = fastSpeed;
-      } else if (checkAction == "combatIdle") {
         action = Action_Component::Action_State::attack2;
         actionFrameData[action].frameSpeed = fastSpeed;
       } else if (checkAction == "idle") {
-        action = Action_Component::Action_State::idle;
+        action = Action_Component::Action_State::combatIdle;
         actionFrameData[action].frameSpeed = speed;
       } else if (checkAction == "combatIdle") {
-        action = Action_Component::Action_State::combatIdle;
+        action = Action_Component::Action_State::idle;
         actionFrameData[action].frameSpeed = speed;
       } else if (checkAction == "kneel") {
         action = Action_Component::Action_State::kneel;

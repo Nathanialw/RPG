@@ -44,9 +44,10 @@ namespace Combat_Control {
         direction = Movement_Component::Look_At_Target(position.x, position.y, target.targetX, target.targetY, velocity.angle, velocity.hexDir);
         attackSpeed.counter = attackSpeed.period;
 
-        if (action.weaponType == Weapon_Type::spear || action.weaponType == Weapon_Type::staff) {
-          Action_Component::Set_State(action, Action_Component::attackPolearm);
-        } else if (action.weaponType == Weapon_Type::bow) {
+        //        if (action.weaponType == Weapon_Type::spear || action.weaponType == Weapon_Type::staff) {
+        //          Action_Component::Set_State(action, Action_Component::attackPolearm);
+        //        }
+        if (action.weaponType == Weapon_Type::bow) {
           Action_Component::Set_State(action, Action_Component::ranged);
         } else {
           Action_Component::Set_State(action, Action_Component::attack);

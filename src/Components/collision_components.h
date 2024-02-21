@@ -56,4 +56,5 @@ namespace Collision_Component {
   };
 
   std::unordered_map<std::string, Building_Colliders> houseColliders;
+  std::unordered_map<std::string, Building_Colliders> caveColliders;
 }// namespace Collision_Component

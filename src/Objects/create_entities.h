@@ -75,9 +75,21 @@ namespace Create_Entities {
 
         if (Collision_Component::houseColliders.contains(data.interior)) {
           Building_Component::Polygon treePolygon;
+
+          //          if (templateName == "CaveEntrance1" ||
+          //              templateName == "CaveEntrance2" ||
+          //              templateName == "CaveEntrance3") {
+          //            for (auto polygon: Collision_Component::caveColliders.at(templateName).placementBox.pointVecs) {
+          //              treePolygon.push_back({polygon.x + offsets.colliderOffset.x, polygon.y - offsets.colliderOffset.y});
+          //            }
+          //          }
+
+          //          else {
           for (auto polygon: Collision_Component::houseColliders.at(data.interior).placementBox.pointVecs) {
             treePolygon.push_back({polygon.x + offsets.colliderOffset.x, polygon.y - offsets.colliderOffset.y});
           }
+          //          }
+
           std::vector<Building_Component::Polygon> polygons;
           polygons.emplace_back(treePolygon);
           zone.emplace_or_replace<Building_Component::Placement>(entity, polygons);

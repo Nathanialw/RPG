@@ -319,7 +319,7 @@ namespace Texture_Packer {
     }
   };
 
-  void TexturePacker_Import_Collision(const char *xmlPath) {
+  void TexturePacker_Import_Collision(const char *xmlPath, std::unordered_map<std::string, Collision_Component::Building_Colliders> &polygonColliders) {
     tinyxml2::XMLDocument spriteSheetData;
     spriteSheetData.LoadFile(xmlPath);
     tinyxml2::XMLElement *pSpriteElement;
@@ -357,13 +357,14 @@ namespace Texture_Packer {
       colliders.pointVecs.shrink_to_fit();
       colliders.circlesVecs.shrink_to_fit();
       placementBox.pointVecs.shrink_to_fit();
-      Collision_Component::houseColliders[bodyElement->Attribute("name")] = {colliders, placementBox, lineSegment};
+      polygonColliders[bodyElement->Attribute("name")] = {colliders, placementBox, lineSegment};
       colliders.isSensor.clear();
       colliders.pointVecs.clear();
       colliders.circlesVecs.clear();
       placementBox.pointVecs.clear();
       bodyElement = bodyElement->NextSiblingElement("body");
     }
+    return;
   }
 
   struct Sheet_Data {

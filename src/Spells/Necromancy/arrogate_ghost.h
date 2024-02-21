@@ -47,7 +47,7 @@ namespace Arrogate_Ghost {
   }
 
   int Cast(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-    Action_Component::Set_State(action, Action_Component::casting);
+    Action_Component::Set_State(action, Action_Component::summon);
     float castTime = 500.0f;
 
     zone.emplace_or_replace<Spells::Cast_Effect>(entity, Casting, Create, Hit);
