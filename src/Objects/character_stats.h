@@ -256,8 +256,8 @@ namespace Character_Stats {
     if (options.species == Character_Options::Species::dwarf) {
       gear = {
           "Sword003",
-          "F_Dwarf_08_TorsoAddon",
-          "F_Dwarf_BodyClothing_Legs"};
+          "F_Dwarf_Bra",
+          "F_Dwarf_Underwear"};
       if ((int) options.hairStyle < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair].size()) {
         hair = SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::dwarf_female][Item_Component::Item_Type::hair][options.hairStyle];
       }

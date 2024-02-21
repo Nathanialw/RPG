@@ -153,12 +153,18 @@ namespace Spritesheet_Structs {
     return frameCopy.erase(frameCopy.length() - fromEnd);
   }
 
+  void Set_Action(std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, std::vector<Action_Component::Action_State> &actions, Action_Component::Action_State &action, Action_Component::Action_State state, int speed) {
+    action = state;
+    actionFrameData[action].frameSpeed = speed;
+    actions.emplace_back(action);
+  }
 
   bool Get_Frame_Action_Data(const std::string unitType, std::string &templateName, std::string &frame, std::unordered_map<uint8_t, Rendering_Components::Frame_Data_Packer> &actionFrameData, int &frameIndex) {
     // name should be the template name from tiled
     int i = 75;
-    Action_Component::Action_State action;
 
+    std::vector<Action_Component::Action_State> actions;
+    Action_Component::Action_State action;
     // load the whole xml sheet
     if (unitType == "tileset") {
       action = Action_Component::Action_State::isStatic;
@@ -176,44 +182,31 @@ namespace Spritesheet_Structs {
       int speed = 100;
       int fastSpeed = 50;
       if (checkAction == "singleStrike2") {
-        action = Action_Component::Action_State::attack;
-        actionFrameData[action].frameSpeed = fastSpeed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack, fastSpeed);
       } else if (checkAction == "singleStrike1") {
-        action = Action_Component::Action_State::attack2;
-        actionFrameData[action].frameSpeed = fastSpeed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack2, fastSpeed);
       } else if (checkAction == "idle") {
-        action = Action_Component::Action_State::combatIdle;
-        actionFrameData[action].frameSpeed = speed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle, speed);
       } else if (checkAction == "combatIdle") {
-        action = Action_Component::Action_State::idle;
-        actionFrameData[action].frameSpeed = speed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::combatIdle, speed);
       } else if (checkAction == "kneel") {
-        action = Action_Component::Action_State::kneel;
-        actionFrameData[action].frameSpeed = fastSpeed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::kneel, fastSpeed);
       } else if (checkAction == "summon") {
-        action = Action_Component::Action_State::summon;
-        actionFrameData[action].frameSpeed = fastSpeed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::summon, fastSpeed);
       } else if (checkAction == "run") {
-        action = Action_Component::Action_State::walk;
-        actionFrameData[action].frameSpeed = speed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::walk, speed);
       } else if (checkAction == "walk") {
-        action = Action_Component::Action_State::run;
-        actionFrameData[action].frameSpeed = speed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::run, speed);
       } else if (checkAction == "struck1") {
-        action = Action_Component::Action_State::struck;
-        actionFrameData[action].frameSpeed = fastSpeed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::struck, fastSpeed);
       } else if (checkAction == "death") {
-        action = Action_Component::Action_State::dying;
-        actionFrameData[action].frameSpeed = speed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dying, speed);
       } else if (checkAction == "castEnd") {
-        action = Action_Component::Action_State::cast;
-        actionFrameData[action].frameSpeed = fastSpeed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::cast, fastSpeed);
       } else if (checkAction == "castStart") {
-        action = Action_Component::Action_State::casting;
-        actionFrameData[action].frameSpeed = fastSpeed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::casting, fastSpeed);
       } else if (checkAction == "dead") {
-        action = Action_Component::Action_State::dead;
-        actionFrameData[action].frameSpeed = speed;
+        Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, speed);
       } else {
         std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
         return false;
@@ -228,33 +221,23 @@ namespace Spritesheet_Structs {
       /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
       if (unitType == "RTP_female" || unitType == "RTP_male") {
         if (checkAction == "1-H Attack 3") {
-          action = Action_Component::Action_State::attack;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack, i);
         } else if (checkAction == "Idle 2") {
-          action = Action_Component::Action_State::idle;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle, i);
         } else if (checkAction == "Running") {
-          action = Action_Component::Action_State::walk;
-          actionFrameData[action].frameSpeed = 75;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::walk, 75);
         } else if (checkAction == "Get Hit 2") {
-          action = Action_Component::Action_State::struck;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::struck, i);
         } else if (checkAction == "Dead-Down Forward") {
-          action = Action_Component::Action_State::dying;
-          actionFrameData[action].frameSpeed = 100;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dying, 100);
         } else if (checkAction == "Praying") {
-          action = Action_Component::Action_State::casting;
-          actionFrameData[action].frameSpeed = 150;
-          actionFrameData[action].reverses = 0;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::casting, 150);
         } else if (checkAction == "Casting") {
-          action = Action_Component::Action_State::cast;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::cast, i);
         } else if (checkAction == "Down 2") {
-          action = Action_Component::Action_State::dead;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, i);
         } else if (checkAction == "Talking 2") {
-          action = Action_Component::Action_State::talk;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::talk, i);
         } else {
           //std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
           return false;
@@ -263,73 +246,51 @@ namespace Spritesheet_Structs {
 
       else if (unitType == "classes_male" || unitType == "classes_female") {
         if (checkAction == "Attack One Handed Stab") {
-          action = Action_Component::Action_State::attack;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack, i);
         } else if (checkAction == "Attack One Handed Overhead") {
-          action = Action_Component::Action_State::attack2;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack2, i);
         } else if (checkAction == "Attack Polearm") {
-          action = Action_Component::Action_State::attackPolearm;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attackPolearm, i);
         } else if (checkAction == "Attack Dual Wield") {
-          action = Action_Component::Action_State::attackAOE;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attackAOE, i);
         } else if (checkAction == "Idle3") {
-          action = Action_Component::Action_State::idle;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle, i);
         } else if (checkAction == "Run") {
-          action = Action_Component::Action_State::walk;
-          actionFrameData[action].frameSpeed = 75;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::walk, 75);
         } else if (checkAction == "Get Hit") {
-          action = Action_Component::Action_State::struck;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::struck, i);
         } else if (checkAction == "Critical Health Idle 1") {
-          action = Action_Component::Action_State::dying;
-          actionFrameData[action].frameSpeed = 100;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dying, 100);
         } else if (checkAction == "Casting Idle") {
-          action = Action_Component::Action_State::casting;
-          actionFrameData[action].frameSpeed = 150;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::casting, 150);
           actionFrameData[action].reverses = 1;
         } else if (checkAction == "Casting") {
-          action = Action_Component::Action_State::cast;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::cast, i);
         } else if (checkAction == "Attack Bow") {
-          action = Action_Component::Action_State::ranged;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::ranged, i);
         } else if (checkAction == "Dead") {
-          action = Action_Component::Action_State::dead;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, i);
         } else if (checkAction == "Dead2") {
-          action = Action_Component::Action_State::dead;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, i);
         } else if (checkAction == "Hand Casual") {
-          action = Action_Component::Action_State::talk;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::talk, i);
         } else if (checkAction == "Interact") {
-          action = Action_Component::Action_State::interact;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::interact, i);
         } else if (checkAction == "Jump") {
-          action = Action_Component::Action_State::jump;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::jump, i);
           actionFrameData[action].reverses = 1;
         } else if (checkAction == "Kick") {
-          action = Action_Component::Action_State::kick;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::kick, i);
         } else if (checkAction == "Kneel") {
-          action = Action_Component::Action_State::kneel;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::kneel, i);
         } else if (checkAction == "Pray Kneel") {
-          action = Action_Component::Action_State::pray_kneeled;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::pray_kneeled, i);
         } else if (checkAction == "Pray Standing") {
-          action = Action_Component::Action_State::pray_standing;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::pray_standing, i);
         } else if (checkAction == "Search") {
-          action = Action_Component::Action_State::search;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::search, i);
         } else if (checkAction == "Cleaning Object") {
-          action = Action_Component::Action_State::cleaning_object;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::cleaning_object, i);
         } else {
           // std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
           return false;
@@ -338,41 +299,29 @@ namespace Spritesheet_Structs {
 
       else if (unitType == "Medieval_Underdeep_Dwarves_Male" || unitType == "medieval_human_female" || unitType == "medieval_human_male") {
         if (checkAction == "attack1") {
-          action = Action_Component::Action_State::attack;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack, i);
         } else if (checkAction == "idle1") {
-          action = Action_Component::Action_State::idle;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle, i);
         } else if (checkAction == "idle2") {
-          action = Action_Component::Action_State::idle2;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle2, i);
         } else if (checkAction == "running") {
-          action = Action_Component::Action_State::run;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::run, i);
         } else if (checkAction == "walking") {
-          action = Action_Component::Action_State::walk;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::struck, i);
         } else if (checkAction == "collapse") {
-          action = Action_Component::Action_State::struck;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::struck, i);
         } else if (checkAction == "ko") {
-          action = Action_Component::Action_State::dying;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dying, i);
         } else if (checkAction == "dead") {
-          action = Action_Component::Action_State::dead;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, i);
         } else if (checkAction == "kneel") {
-          action = Action_Component::Action_State::kneel;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::kneel, i);
         } else if (checkAction == "sitting") {
-          action = Action_Component::Action_State::cast;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::cast, i);
         } else if (checkAction == "sleeping") {
-          action = Action_Component::Action_State::resting;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::resting, i);
         } else if (checkAction == "unique") {
-          action = Action_Component::Action_State::behavior;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::behavior, i);
         } else {
           // std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
           return false;
@@ -381,103 +330,76 @@ namespace Spritesheet_Structs {
 
       else {
         if (checkAction == "1-H Attack 1") {
-          action = Action_Component::Action_State::attack;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack, i);
         } else if (checkAction == "Attack Two Hand Swing") {
-          action = Action_Component::Action_State::attack;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack, i);
         } else if (checkAction == "Attack 1") {
-          action = Action_Component::Action_State::attack;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack, i);
         } else if (checkAction == "Attack 2") {
-          action = Action_Component::Action_State::attack2;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack2, i);
         } else if (checkAction == "attack") {
-          action = Action_Component::Action_State::attack;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::attack, i);
         } else if (checkAction == "1-H Idle") {
-          action = Action_Component::Action_State::idle;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle, i);
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::combatIdle, i);
         } else if (checkAction == "Idle") {
-          action = Action_Component::Action_State::idle;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle, i);
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::combatIdle, i);
         } else if (checkAction == "idle") {
-          action = Action_Component::Action_State::idle;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle, i);
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::combatIdle, i);
         } else if (checkAction == "Idle1") {
-          action = Action_Component::Action_State::idle;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle, i);
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::combatIdle, i);
         } else if (checkAction == "idle1") {
-          action = Action_Component::Action_State::idle;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::idle, i);
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::combatIdle, i);
         } else if (checkAction == "1-H Walk") {
-          action = Action_Component::Action_State::walk;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::walk, i);
         } else if (checkAction == "walking") {
-          action = Action_Component::Action_State::walk;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::walk, i);
         } else if (checkAction == "behavior") {
-          action = Action_Component::Action_State::behavior;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::behavior, i);
         } else if (checkAction == "Behavior") {
-          action = Action_Component::Action_State::behavior;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::behavior, i);
         } else if (checkAction == "behavior1") {
-          action = Action_Component::Action_State::behavior;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::behavior, i);
         } else if (checkAction == "Run") {
-          action = Action_Component::Action_State::walk;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::walk, i);
         } else if (checkAction == "Running") {
-          action = Action_Component::Action_State::walk;
-          actionFrameData[action].frameSpeed = 75;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::walk, i);
         } else if (checkAction == "running") {
-          action = Action_Component::Action_State::run;
-          actionFrameData[action].frameSpeed = 75;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::walk, i);
         } else if (checkAction == "Get Hit 1") {
-          action = Action_Component::Action_State::struck;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::struck, i);
         } else if (checkAction == "Get Hit") {
-          action = Action_Component::Action_State::struck;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::struck, i);
         } else if (checkAction == "dead") {
-          action = Action_Component::Action_State::struck;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::struck, i);
         } else if (checkAction == "gethit") {
-          action = Action_Component::Action_State::struck;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::struck, i);
         } else if (checkAction == "collapse") {
-          action = Action_Component::Action_State::dying;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dying, i);
         } else if (checkAction == "ko") {
-          action = Action_Component::Action_State::dead;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, i);
         } else if (checkAction == "sleep") {
-          action = Action_Component::Action_State::dead;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, i);
         } else if (checkAction == "Dead") {
-          action = Action_Component::Action_State::dead;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, i);
         } else if (checkAction == "Dead2") {
-          action = Action_Component::Action_State::dead;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, i);
         } else if (checkAction == "Down_1") {
-          action = Action_Component::Action_State::dead;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dead, i);
         } else if (checkAction == "Dead To Down") {
-          action = Action_Component::Action_State::dying;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dying, i);
         } else if (checkAction == "Dead2") {
-          action = Action_Component::Action_State::dying;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dying, i);
         } else if (checkAction == "Woozy") {
-          action = Action_Component::Action_State::dying;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::dying, i);
         } else if (checkAction == "Cast Idle") {
-          action = Action_Component::Action_State::casting;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::casting, i);
         } else if (checkAction == "Casting") {
-          action = Action_Component::Action_State::cast;
-          actionFrameData[action].frameSpeed = i;
+          Set_Action(actionFrameData, actions, action, Action_Component::Action_State::cast, i);
         } else {
           //std::cout << "Passthrough Error: action for frame " << checkAction << " not found" << std::endl;
           return false;
@@ -486,14 +408,19 @@ namespace Spritesheet_Structs {
       //only run when the number changes
       //std::cout << checkAction << " frame data successfully saved" << std::endl;
     }
-
-    Calculate_Start_Frame(actionFrameData, action, frameIndex);
+    for (auto act: actions) {
+      Calculate_Start_Frame(actionFrameData, act, frameIndex);
+    }
     //        Utilities::Log("----");
     //        Utilities::Log(frame);
     if (unitType == "Unity" || unitType == "dwarf_female") {
-      Calculate_Num_Frames_Unity(frame, actionFrameData, action);
+      for (auto act: actions) {
+        Calculate_Num_Frames_Unity(frame, actionFrameData, act);
+      }
     } else {
-      Calculate_Num_Frames(frame, actionFrameData, action);
+      for (auto act: actions) {
+        Calculate_Num_Frames(frame, actionFrameData, act);
+      }
     }
 
     return true;

@@ -15,7 +15,9 @@ void Frame_Increment(entt::registry &zone, entt::entity &entity, Component::Scal
   if (action.frameState == Action_Component::last) {
     if (!sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].reverses && (action.state != Action_Component::dying || action.state != Action_Component::dead)) {
       if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
-        action.state = Action_Component::idle;
+        if (action.state == Action_Component::attack || action.state == Action_Component::attack2 || action.state == Action_Component::combatIdle || action.state == Action_Component::struck) Action_Component::Set_State(action, Action_Component::combatIdle);
+        else if (action.state != Action_Component::idle)
+          Action_Component::Set_State(action, Action_Component::idle);
         action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
         action.frame = 0;
         action.frameState = Action_Component::start;
@@ -57,7 +59,8 @@ void Frame_Increment(entt::registry &zone, entt::entity &entity, Component::Scal
       action.frame--;
       if (action.frame < 1) {
         sheetData.reversing = 0;
-        action.state = Action_Component::idle;
+        if (action.state != Action_Component::idle)
+          Action_Component::Set_State(action, Action_Component::idle);
         Player_Control::Check_Pressed_Keys(zone, entity);
       }
     } else if (!sheetData.reversing) {

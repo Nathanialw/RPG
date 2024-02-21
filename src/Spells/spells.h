@@ -230,6 +230,7 @@ namespace Spells {
           zone.remove<Spells::Cast_Effect>(caster_ID);
         }
       } else if (zone.any_of<Component::Moving>(caster_ID)) {
+        Utilities::Log("Cast_Spell()");
         Action_Component::Set_State(action, Action_Component::idle);
         zone.remove<Component::Casting>(caster_ID);
         zone.remove<Spells::Cast_Effect>(caster_ID);

@@ -70,6 +70,7 @@ namespace Movement {
 
       if ((velocity.magnitude.x == 0.0f) && (velocity.magnitude.y == 0.0f)) {
         zone.remove<Component::Moving>(entity);
+        Utilities::Log("Update_Position()");
         Action_Component::Set_State(action, Action_Component::idle);
       }
     }
@@ -87,6 +88,7 @@ namespace Movement {
 
       if (action.state == Action_Component::walk) {
         if (vel.magnitude.x == 0 && vel.magnitude.y == 0) {
+          Utilities::Log("Update_Direction()");
           Action_Component::Set_State(action, Action_Component::idle);
         };
       }
@@ -128,7 +130,7 @@ namespace Movement {
         auto &v = view.get<Component::Velocity>(entity);
         auto &mov = view.get<Component::Mouse_Move>(entity);
 
-        if (action.state == Action_Component::idle) {
+        if (action.state == Action_Component::idle || action.state == Action_Component::combatIdle) {
           Utilities::Log("Mouse_Move_To() setting state to walk");
           Action_Component::Set_State(action, Action_Component::walk);
         }
@@ -151,7 +153,7 @@ namespace Movement {
       if (range.fRange <= 0) {
         zone.remove<Component::Linear_Move>(entity);
       } else {
-        Utilities::Log("Linear_Move_To() setting state to walk");
+        //        Utilities::Log("Linear_Move_To() setting state to walk");
         Action_Component::Set_State(action, Action_Component::walk);
         v.magnitude.x = v.speed * (mov.fX_Direction - range.fSourceX);
         v.magnitude.y = v.speed * (mov.fY_Direction - range.fSourceY);

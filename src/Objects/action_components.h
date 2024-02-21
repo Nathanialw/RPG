@@ -71,6 +71,8 @@ namespace Action_Component {
         return "idle";
       case idle2:
         return "idle2";
+      case combatIdle:
+        return "combatIdle";
       case idle6:
         return "idle6";
       case walk:
@@ -192,11 +194,10 @@ namespace Action_Component {
   };
 
   void Set_State(Action &action, Action_State state) {
-    if (state == walk)
-      Utilities::Log("setting state to: " + Get_State_String(state));
     if (action.state == state) {
       return;
     }
+    Utilities::Log("setting state to: " + Get_State_String(state));
     action.state = state;
     action.frameState = start;
     action.frameTime = 0;

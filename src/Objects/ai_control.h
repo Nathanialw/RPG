@@ -26,7 +26,7 @@ namespace AI {
       if (Entity_Control::Target_In_Range(entityPosition, meleeRange.meleeRange, targetPosition, targetRadius)) {//check if center of attack rect is in the target
         auto &action = zone.get<Action_Component::Action>(entity_ID);
         if (action.state != Action_Component::attack && action.state != Action_Component::struck) {
-          Action_Component::Set_State(action, Action_Component::idle);
+          Action_Component::Set_State(action, Action_Component::combatIdle);
         }
         zone.remove<Component::Mouse_Move>(entity_ID);
         zone.remove<Component::Moving>(entity_ID);

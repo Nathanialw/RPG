@@ -41,6 +41,10 @@ namespace Combat_Control {
         auto &target = view.get<Component::Attack>(entity);
         auto &position = view.get<Component::Position>(entity);
 
+        //reset keyboard movement
+        velocity.magnitude.x = 0.0f;
+        velocity.magnitude.y = 0.0f;
+
         direction = Movement_Component::Look_At_Target(position.x, position.y, target.targetX, target.targetY, velocity.angle, velocity.hexDir);
         attackSpeed.counter = attackSpeed.period;
 
@@ -87,10 +91,12 @@ namespace Combat_Control {
     auto &struck = zone.get_or_emplace<Component::Struck>(target_ID);
     struck.struck += damage;
 
+    auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
     if (damageRange.critical) {
       struck.critical = true;
-      auto &targetAction = zone.get_or_emplace<Action_Component::Action>(target_ID);
       Action_Component::Set_State(targetAction, Action_Component::struck);
+    } else if (targetAction.state == Action_Component::idle) {
+      Action_Component::Set_State(targetAction, Action_Component::combatIdle);
     }
   }
 
