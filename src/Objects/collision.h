@@ -222,8 +222,8 @@ namespace Collision {
   }
 
   void Attach_Components(entt::registry &zone, int &state, entt::entity &entity, Collision_Component::Collider_Data &colliderData) {
-    if (Collision_Component::houseColliders.contains(colliderData.name)) {
-      auto collider = Collision_Component::houseColliders.at(colliderData.name).colliders;
+    if (Collision_Component::polygonColliders.contains(colliderData.name)) {
+      auto collider = Collision_Component::polygonColliders.at(colliderData.name).colliders;
       auto &position = zone.get<Component::Position>(entity);
       auto &offset = zone.get<Rendering_Components::Sprite_Offset>(entity);
 
@@ -281,6 +281,27 @@ namespace Collision {
       }
       world->ClearForces();
       j++;
+    }
+  }
+
+  void Save_Line_Segment(entt::registry &zone, const entt::entity &item, std::string name) {
+    if (Collision_Component::polygonColliders.contains(name)) {
+      auto ff = Collision_Component::polygonColliders[name].lineSegment;
+      if (!ff.empty()) {
+        auto &position = zone.get<Component::Position>(item);
+        Component::Saved_Line_Segments lines;
+        for (auto line: ff) {
+          Component::Line_Segment lineSegment = {{position.x + line.start.x, position.y + line.start.y}, {position.x + line.end.x, position.y + line.end.y}};
+          lines.lineSegment.emplace_back(lineSegment);
+        }
+        zone.emplace_or_replace<Component::Saved_Line_Segments>(item, lines.lineSegment, name);
+        if (zone.any_of<Component::Renderable>(item)) {
+          auto &renderable = zone.get<Component::Renderable>(item);
+          renderable.lineSegment.clear();
+          renderable.lineSegment = lines.lineSegment;
+          renderable.name = name;
+        }
+      }
     }
   }
 

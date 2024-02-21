@@ -261,6 +261,7 @@ namespace Texture_Packer {
       int numVertexes = polygonElement->IntAttribute("numVertexes");
       std::vector<tmx::Vector2<float>> vertexes;
       colliders.pointVecs.emplace_back(vertexes);
+      Utilities::Log(colliders.pointVecs.size());
       tinyxml2::XMLElement *vertexElement = polygonElement->FirstChildElement("vertex");
 
       for (int j = 0; j < numVertexes; ++j) {
@@ -323,15 +324,17 @@ namespace Texture_Packer {
     tinyxml2::XMLDocument spriteSheetData;
     spriteSheetData.LoadFile(xmlPath);
     tinyxml2::XMLElement *pSpriteElement;
-    Collision_Component::Colliders colliders;
-    Collision_Component::Placement_Box placementBox;
-    std::vector<Component::Line_Segment> lineSegment;
 
     pSpriteElement = spriteSheetData.RootElement()->FirstChildElement("bodies");
     int numBodies = pSpriteElement->IntAttribute("numBodies");
 
     tinyxml2::XMLElement *bodyElement = pSpriteElement->FirstChildElement("body");
     for (int k = 0; k < numBodies; ++k) {
+      Collision_Component::Colliders colliders;
+      Collision_Component::Placement_Box placementBox;
+      std::vector<Component::Line_Segment> lineSegment;
+      int nonColliders = 0;
+
       if ((std::string) bodyElement->Attribute("dynamic") == "dynamic") colliders.bodyType = b2_dynamicBody;
       int numFixtures = bodyElement->IntAttribute("numFixtures");
       tinyxml2::XMLElement *fixtureElement = bodyElement->FirstChildElement("fixture");
@@ -340,15 +343,17 @@ namespace Texture_Packer {
           std::string type = fixtureElement->Attribute("type");
           if ((std::string) fixtureElement->Attribute("filter_groupIndex") == "1") {
             Retrieve_Placement(type, placementBox, fixtureElement);
+            nonColliders++;
           } else if ((std::string) fixtureElement->Attribute("filter_groupIndex") == "2") {
             Retrieve_Line_Segment(type, lineSegment, fixtureElement);
+            nonColliders++;
           } else {
             if ((std::string) fixtureElement->Attribute("isSensor") == "true") {
               colliders.isSensor.emplace_back(true);
             } else {
               colliders.isSensor.emplace_back(false);
             }
-            Retrieve_Collider(type, i, colliders, fixtureElement);
+            Retrieve_Collider(type, i - nonColliders, colliders, fixtureElement);
           }
           fixtureElement = fixtureElement->NextSiblingElement("fixture");
         }
@@ -364,7 +369,6 @@ namespace Texture_Packer {
       placementBox.pointVecs.clear();
       bodyElement = bodyElement->NextSiblingElement("body");
     }
-    return;
   }
 
   struct Sheet_Data {

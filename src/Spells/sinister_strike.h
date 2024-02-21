@@ -24,8 +24,8 @@ namespace Sinister_Strike {
   //    this way you can reset the animation while still having the attack land
 
   bool Instant_Attack(entt::registry &zone, entt::entity &player_ID) {
-    auto view = zone.view<Component::Selected>();
-    if (!view.empty()) {
+    auto selectView = zone.view<Component::Selected>();
+    if (!selectView.empty()) {
       auto view = zone.view<Component::Selected, Component::Position, Component::Melee_Range, Component::Radius>();
       for (auto target_ID: view) {
         if (Social_Control::Check_Relationship(zone, player_ID, target_ID)) {

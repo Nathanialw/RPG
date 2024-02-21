@@ -146,7 +146,7 @@ namespace Items {
     auto equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(slot, equip_type, item_name.name);
     zone.emplace_or_replace<Item_Component::Weapon_Type>(item, weaponType);
 
-    if (equippedSheetData.itemData == NULL) {
+    if (!equippedSheetData.itemData) {
       return "none";
     }
 
@@ -203,7 +203,7 @@ namespace Items {
     zone.emplace_or_replace<Rendering_Components::Portrait>(item, Texture_Packer_Item::Item_Portaits[item_name.name], color);
     zone.emplace_or_replace<Rendering_Components::Body>(item, Texture_Packer_Item::Item_Body[item_name.name], color);
 
-    if (equippedSheetData.itemData == NULL) {
+    if (!equippedSheetData.itemData) {
       return "none";
     }
 
@@ -250,7 +250,7 @@ namespace Items {
 
     if (item_name.hasTexture) {
       equippedSheetData = Texture_Packer_Item::TexturePacker_Import_Item(type, equip_type, item_name.name);
-      if (equippedSheetData.itemData == NULL) {
+      if (!equippedSheetData.itemData) {
         return "none";
       }
       auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
@@ -265,7 +265,7 @@ namespace Items {
       sheetData.color = color;
       sheetData.sheet_name = equippedSheetData.index;
       sheetData.type = "RPG_Tools";
-      sheetData.sheetData = NULL;
+      sheetData.sheetData = nullptr;
     }
 
 
@@ -623,28 +623,6 @@ namespace Items {
     }
   }
 
-  void Save_Line_Segment(entt::registry &zone, const entt::entity &item) {
-    auto name = zone.get<Rendering_Components::Interior_Sheet_Info>(item).collisionBocArrayIndex;
-    if (Collision_Component::houseColliders.contains(name)) {
-      auto ff = Collision_Component::houseColliders[name].lineSegment;
-      if (!ff.empty()) {
-        auto &position = zone.get<Component::Position>(item);
-        Component::Saved_Line_Segments lines;
-        for (auto line: ff) {
-          Component::Line_Segment lineSegment = {{position.x + line.start.x, position.y + line.start.y}, {position.x + line.end.x, position.y + line.end.y}};
-          lines.lineSegment.emplace_back(lineSegment);
-        }
-        zone.emplace_or_replace<Component::Saved_Line_Segments>(item, lines.lineSegment, name);
-        if (zone.any_of<Component::Renderable>(item)) {
-          auto &renderable = zone.get<Component::Renderable>(item);
-          renderable.lineSegment.clear();
-          renderable.lineSegment = lines.lineSegment;
-          renderable.name = name;
-        }
-      }
-    }
-  }
-
   void Update_Mouse_Slot_Position(entt::registry &zone, const int &state, const entt::entity &item, const bool &isItemCurrentlyHeld, const float &mouseX, const float &mouseY) {
     //set item in mouse array position to mouse x, y every frame
     if (isItemCurrentlyHeld) {
@@ -660,7 +638,9 @@ namespace Items {
               treePolygon.push_back({mouseX + vec.x, mouseY + vec.y});
             }
 
-            Save_Line_Segment(zone, item);
+            auto name = zone.get<Rendering_Components::Interior_Sheet_Info>(item).collisionBocArrayIndex;
+            Collision::Save_Line_Segment(zone, item, name);
+            
             std::vector<Building_Component::Polygon> place;
             place.emplace_back(treePolygon);
             zone.emplace_or_replace<Building_Component::Set_Placement>(item, place);

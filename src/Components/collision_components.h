@@ -55,6 +55,5 @@ namespace Collision_Component {
     std::vector<Component::Line_Segment> lineSegment{};
   };
 
-  std::unordered_map<std::string, Building_Colliders> houseColliders;
-  std::unordered_map<std::string, Building_Colliders> caveColliders;
+  std::unordered_map<std::string, Building_Colliders> polygonColliders;
 }// namespace Collision_Component

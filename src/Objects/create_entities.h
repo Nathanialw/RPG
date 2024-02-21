@@ -47,6 +47,9 @@ namespace Create_Entities {
       ///get texture data
       Rendering::Sheet_Data frameData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
 
+      if (templateName == "CaveEntrance1" || templateName == "CaveEntrance2" || templateName == "CaveEntrance3")
+        Utilities::Log("asd");
+
       zone.emplace_or_replace<Component::Position>(entity, x, y);
       Rendering_Components::Offsets offsets = {};
       if (frameData.frameData.sheetData) {
@@ -70,31 +73,19 @@ namespace Create_Entities {
         zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::building);
         //position is replaced by mouse position with building placement
         zone.emplace<Collision_Component::Collider_Data>(entity, data.interior, offsets.colliderOffset, data.radius, x, y, data.collider_type, ((float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f));
-
+        Collision::Save_Line_Segment(zone, entity, templateName);
+        
         zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w / 2.0f), (y - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f), (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, false);
 
-        if (Collision_Component::houseColliders.contains(data.interior)) {
+        if (Collision_Component::polygonColliders.contains(data.interior)) {
           Building_Component::Polygon treePolygon;
-
-          //          if (templateName == "CaveEntrance1" ||
-          //              templateName == "CaveEntrance2" ||
-          //              templateName == "CaveEntrance3") {
-          //            for (auto polygon: Collision_Component::caveColliders.at(templateName).placementBox.pointVecs) {
-          //              treePolygon.push_back({polygon.x + offsets.colliderOffset.x, polygon.y - offsets.colliderOffset.y});
-          //            }
-          //          }
-
-          //          else {
-          for (auto polygon: Collision_Component::houseColliders.at(data.interior).placementBox.pointVecs) {
+          for (auto polygon: Collision_Component::polygonColliders.at(data.interior).placementBox.pointVecs) {
             treePolygon.push_back({polygon.x + offsets.colliderOffset.x, polygon.y - offsets.colliderOffset.y});
           }
-          //          }
-
           std::vector<Building_Component::Polygon> polygons;
           polygons.emplace_back(treePolygon);
           zone.emplace_or_replace<Building_Component::Placement>(entity, polygons);
         }
-
       } else {
         //only use this interaction rect if the building doesn't have an interior
         zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);

@@ -99,7 +99,7 @@ namespace Maps {
     int k;
 
     World::Tile tile = region.board[w][i];
-    World::Tile_Position position;
+    World::Tile_Position position = {};
     position.x = ((w * z) + a) * World::size.width;
     position.y = ((i * j) + k) * World::size.height;
     //                                auto entity = zone.create();
@@ -177,10 +177,10 @@ namespace Maps {
 
         World::TILE tile;
         SDL_FRect rect;
-        rect.x = ((i + x) * World::size.width);
-        rect.y = (j * World::size.height);
-        rect.w = World::size.width;
-        rect.h = World::size.height;
+        rect.x = (float) ((i + x) * World::size.width);
+        rect.y = (float) (j * World::size.height);
+        rect.w = (float) World::size.width;
+        rect.h = (float) World::size.height;
 
         tile.position = rect;
         tile.generated = true;

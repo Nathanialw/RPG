@@ -11,8 +11,8 @@ namespace World {
   //  std::array<std::array<bool, 64>, 64> Map;
 
   struct Tile_Size {
-    float width = 512.0f;
-    float height = 512.0f;
+    const int width = 512;
+    const int height = 512;
   };
 
 
@@ -111,7 +111,7 @@ namespace World {
 
   World::Offset worldOffset = {-100.0f, -100.0f};
   ;
-  World::Tile_Size size;
+  constexpr World::Tile_Size size;
 
   std::vector<entt::entity> Mouse_Hover_Entities;
 
