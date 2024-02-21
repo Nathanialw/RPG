@@ -165,7 +165,7 @@ namespace Create_Entities {
       sprite.sheet_name = imgPaths.name;
       sprite.type = "RPG_Tools";
       sprite.hexDir = hexDir;
-      if (unity == "Unity") sprite.unity = true;
+      if (unity == "Unity" || unity == "dwarf_female") sprite.unity = true;
     } else {
       sprite.flareSpritesheet = flareSheetData;
       sprite.sheet_name = imgPaths.name;

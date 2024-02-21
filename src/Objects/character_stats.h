@@ -247,12 +247,28 @@ namespace Character_Stats {
     }
   }
 
-
   void Equip_Units(entt::registry &zone, int &state, Character_Options::Customization &options) {
-    std::vector<std::string> gear = Get_Sex(options.sex);
-    Item_Component::Item hair = Get_Hair_Name(options);
-    Item_Component::Item beard = Get_Beard_Name(options);
-    Item_Component::Item horns = Get_Horn_Name(options);
+    std::vector<std::string> gear;
+    Item_Component::Item hair;
+    Item_Component::Item beard;
+    Item_Component::Item horns;
+
+    if (options.species == Character_Options::Species::dwarf) {
+      gear = {
+          "Sword003",
+          "F_Dwarf_08_TorsoArmour",
+          "F_Dwarf_08_Skirt"};
+      if ((int) options.hairStyle < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair].size()) {
+        hair = SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::dwarf_female][Item_Component::Item_Type::hair][options.hairStyle];
+      }
+      beard = {"none", "none", "none"};
+      horns = {"none", "none", "none"};
+    } else {
+      gear = Get_Sex(options.sex);
+      hair = Get_Hair_Name(options);
+      beard = Get_Beard_Name(options);
+      horns = Get_Horn_Name(options);
+    }
 
 
     auto view = zone.view<Item_Component::Equipment, Component::Position, Rendering_Components::Unit_Frame_Portrait, Rendering_Components::Body_Frame, Action_Component::Action>();

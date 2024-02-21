@@ -224,7 +224,7 @@ namespace Event_Handler {
             auto mouseEntity = Create_Entities::Create_Render_Object(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
             Mouse::Set_Cursor_As_Cursor(zone);
             Mouse::Set_Cursor_As_Entity(zone, mouseEntity, Component::Icon_Type::building);
-          } else {
+          } else if (Mouse_Struct::mouseData.type == Component::Icon_Type::item) {
             UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
           }
         }

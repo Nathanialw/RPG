@@ -166,7 +166,7 @@ namespace Spritesheet_Structs {
       // std::cout << "Success! " << templateName << " found " << "frame" << frame << std::endl;
       return true;
 
-    } else if (unitType == "Unity") {
+    } else if (unitType == "Unity" || unitType == "dwarf_female") {
       /// get the
       std::string checkAction = ss(templateName, frame, 9);
       if (checkAction.empty()) return false;
@@ -174,30 +174,46 @@ namespace Spritesheet_Structs {
       /// compare the string in the xml with the values, I should probably just read in from the db, just push the test strings back on a vector and iterate through comparing, I wonder if I can store the enum in the db too I would probably have to for it to be worth it.
       // was 75
       int speed = 100;
+      int fastSpeed = 50;
       if (checkAction == "singleStrike1") {
         action = Action_Component::Action_State::attack;
-        actionFrameData[action].frameSpeed = speed;
+        actionFrameData[action].frameSpeed = fastSpeed;
       } else if (checkAction == "singleStrike1") {
         action = Action_Component::Action_State::attack;
-        actionFrameData[action].frameSpeed = speed;
+        actionFrameData[action].frameSpeed = fastSpeed;
+      } else if (checkAction == "combatIdle") {
+        action = Action_Component::Action_State::attack2;
+        actionFrameData[action].frameSpeed = fastSpeed;
       } else if (checkAction == "idle") {
         action = Action_Component::Action_State::idle;
         actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "combatIdle") {
+        action = Action_Component::Action_State::combatIdle;
+        actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "kneel") {
+        action = Action_Component::Action_State::kneel;
+        actionFrameData[action].frameSpeed = fastSpeed;
+      } else if (checkAction == "summon") {
+        action = Action_Component::Action_State::summon;
+        actionFrameData[action].frameSpeed = fastSpeed;
       } else if (checkAction == "run") {
         action = Action_Component::Action_State::walk;
         actionFrameData[action].frameSpeed = speed;
+      } else if (checkAction == "walk") {
+        action = Action_Component::Action_State::run;
+        actionFrameData[action].frameSpeed = speed;
       } else if (checkAction == "struck1") {
         action = Action_Component::Action_State::struck;
-        actionFrameData[action].frameSpeed = speed;
+        actionFrameData[action].frameSpeed = fastSpeed;
       } else if (checkAction == "death") {
         action = Action_Component::Action_State::dying;
         actionFrameData[action].frameSpeed = speed;
-      } else if (checkAction == "castStart") {
-        action = Action_Component::Action_State::cast;
-        actionFrameData[action].frameSpeed = speed;
       } else if (checkAction == "castEnd") {
+        action = Action_Component::Action_State::cast;
+        actionFrameData[action].frameSpeed = fastSpeed;
+      } else if (checkAction == "castStart") {
         action = Action_Component::Action_State::casting;
-        actionFrameData[action].frameSpeed = speed;
+        actionFrameData[action].frameSpeed = fastSpeed;
       } else if (checkAction == "dead") {
         action = Action_Component::Action_State::dead;
         actionFrameData[action].frameSpeed = speed;
@@ -477,7 +493,7 @@ namespace Spritesheet_Structs {
     Calculate_Start_Frame(actionFrameData, action, frameIndex);
     //        Utilities::Log("----");
     //        Utilities::Log(frame);
-    if (unitType == "Unity") {
+    if (unitType == "Unity" || unitType == "dwarf_female") {
       Calculate_Num_Frames_Unity(frame, actionFrameData, action);
     } else {
       Calculate_Num_Frames(frame, actionFrameData, action);

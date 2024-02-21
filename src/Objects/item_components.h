@@ -173,6 +173,7 @@ namespace Item_Component {
     medieval_human_female,
     medieval_human_male,
     zombie,
+    dwarf_female,
     none,
     size
   };
@@ -196,6 +197,8 @@ namespace Item_Component {
       return Unit_Equip_Type::medieval_human_male;
     } else if (db_type == "zombie") {
       return Unit_Equip_Type::zombie;
+    } else if (db_type == "dwarf_female") {
+      return Unit_Equip_Type::dwarf_female;
     } else {
       return Unit_Equip_Type::none;
     }
@@ -221,6 +224,8 @@ namespace Item_Component {
       return "medieval_human_male";
     } else if (enum_type == Unit_Equip_Type::zombie) {
       return "zombie";
+    } else if (enum_type == Unit_Equip_Type::dwarf_female) {
+      return "dwarf_female";
     } else {
       return "none";
     }

@@ -465,7 +465,7 @@ namespace Character_Create {
     menus.emplace_back(Create_Menu({" ", "Hair Style", " "}, -1, 0.1f, 1.65f, horizontal));
     menus.emplace_back(Create_Menu({" ", "Hair Color", " "}, -1, 0.1f, 1.75f, horizontal));
     menus.emplace_back(Create_Menu({"male", "female"}, (int) options.sex, 0.1f, 1.85f, horizontal));
-    menus.emplace_back(Create_Menu({"orc", "zombie", "skeleton", "demon", "fleshbeast", "elves", "euro", "asian", "indian", "african"}, (int) options.species, 0.1f, 0.1f, vertical));
+    menus.emplace_back(Create_Menu({"orc", "zombie", "skeleton", "demon", "fleshbeast", "elves", "euro", "asian", "indian", "african", /*"half-orc", "goblin", "human", "orc",*/ "dwarf"}, (int) options.species, 0.1f, 0.1f, vertical));
     menus.emplace_back(Create_Menu({NULL, NULL, NULL, NULL, NULL, NULL, NULL}, 0, 1.0f, 0.50f, image));
 
     toggleMenu = true;

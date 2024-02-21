@@ -6,6 +6,7 @@ namespace Action_Component {
   enum Action_State {
     isStatic,
     idle,
+    combatIdle,
     idle2,
     idle6,
     walk,
@@ -28,6 +29,8 @@ namespace Action_Component {
     walk2H,
     casting,
     cast,
+    castEnd,
+    summon,
     struck,
     block,
     evade,
@@ -60,10 +63,8 @@ namespace Action_Component {
     crouch
   };
 
-
   std::string Get_State_String(Action_State actionState) {
     switch (actionState) {
-
       case isStatic:
         return "isStatic";
       case idle:

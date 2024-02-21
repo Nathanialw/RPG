@@ -88,7 +88,7 @@ namespace Dynamic_Quad_Tree {
           rect.x -= cameraX;
           rect.y -= cameraY;
           SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderMagic, NULL, &rect);
-//          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+          SDL_RenderDrawRectF(Graphics::renderer, &rect);
           nodeCount++;
           m_pChild[i]->Draw(cameraX, cameraY, nodeCount);
         }
@@ -114,7 +114,7 @@ namespace Dynamic_Quad_Tree {
           if (Utilities::bFrect_Contains_Frect(rArea, m_rChild[i])) {
             m_pChild[i]->items(listItems);
           }
-            //if child overlaps with search area then checks need to be made
+          //if child overlaps with search area then checks need to be made
           else if (Utilities::bFRect_Intersect(rArea, m_rChild[i])) {
             m_pChild[i]->search(rArea, listItems);
           }
@@ -164,15 +164,13 @@ namespace Dynamic_Quad_Tree {
 
   template<typename OBJECT_TYPE>
   class DynamicQuadTreeContainer {
-    using QuadTreeContainer = std::list<QuadTreeItem<OBJECT_TYPE>>; // contains the item itelfs as well as the location of where it is stored in the quad tree
+    using QuadTreeContainer = std::list<QuadTreeItem<OBJECT_TYPE>>;// contains the item itelfs as well as the location of where it is stored in the quad tree
   protected:
-
     QuadTreeContainer m_allItems;
     DynamicQuadTree<typename QuadTreeContainer::iterator> root;
 
   public:
     DynamicQuadTreeContainer(const SDL_FRect &size = {0.0f, 0.0f, 100.0f, 100.0f}, const size_t nDepth = 0) : root(size) {
-
     }
 
     void resize(SDL_FRect &rArea) {
@@ -212,7 +210,7 @@ namespace Dynamic_Quad_Tree {
       QuadTreeItem<OBJECT_TYPE> newItem;
       newItem.item = item;
 
-//      item is stored in container
+      //      item is stored in container
       m_allItems.push_back(newItem);
 
       //Pointer/Area of item is stored in quad tree
@@ -247,4 +245,4 @@ namespace Dynamic_Quad_Tree {
   };
 
 
-}
+}// namespace Dynamic_Quad_Tree

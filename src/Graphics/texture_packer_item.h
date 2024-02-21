@@ -61,14 +61,13 @@ namespace Texture_Packer_Item {
     sqlite3_prepare_v2(db::db, buf2, -1, &stmt2, 0);
     while (sqlite3_step(stmt2) != SQLITE_DONE) {
       xml_path = sqlite3_column_text(stmt2, 0);
-      const char *s = (const char *) xml_path;
-      path = std::string(reinterpret_cast<const char *>(s));
+      path = Entity_Loader::Get_String(xml_path);
+
       tex_path = sqlite3_column_text(stmt2, 1);
-      const char *d = (const char *) tex_path;
-      texture_path = std::string(reinterpret_cast<const char *>(d));
+      texture_path = Entity_Loader::Get_String(tex_path);
+
       equip_typ = sqlite3_column_text(stmt2, 2);
-      const char *e = (const char *) equip_typ;
-      data.equip_type = std::string(reinterpret_cast<const char *>(e));
+      data.equip_type = Entity_Loader::Get_String(equip_typ);
     }
     data.xml_path = path;
     data.texture_path = texture_path;

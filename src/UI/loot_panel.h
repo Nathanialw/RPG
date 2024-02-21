@@ -5,7 +5,7 @@
 namespace Loot_Panel {
 
   struct Loot_Panel {
-    std::vector<entt::entity> *items = NULL;
+    std::vector<entt::entity> *items = nullptr;
     float lootPanelSize = 64.0f;
     bool open = false;
     SDL_FRect interactPanel = {0, 0, 64.0f, 64.0f};
@@ -23,7 +23,7 @@ namespace Loot_Panel {
   }
 
   void Close() {
-    lootPanel.items = NULL;
+    lootPanel.items = nullptr;
     lootPanel.interactPanel = {0.0f, 0.0f, 0.0f, 0.0f};
   };
 
@@ -121,7 +121,7 @@ namespace Loot_Panel {
       scaledBackground = Camera_Control::Convert_FRect_To_Scale(scaledBackground, camera);
 
       lootPanel.interactPanel = scaledBackground;
-      SDL_RenderCopyF(Graphics::renderer, Graphics::tooltipBackground, NULL, &scaledBackground);
+      SDL_RenderCopyF(Graphics::renderer, Graphics::tooltipBackground, nullptr, &scaledBackground);
 
       for (auto &item: *lootPanel.items) {
         auto &icon = zone.get<Component::Icon>(item);
