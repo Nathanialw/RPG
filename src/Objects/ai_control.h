@@ -112,7 +112,7 @@ namespace AI {
           }
         }
       }
-      if (!found) {
+      if (!found && zone.any_of<Component::Spawn_Location>(unit_ID)) {
         auto spawnPosition = zone.get<Component::Spawn_Location>(unit_ID).position;
         if (!Movement_Functions::Check_If_Arrived(unitPosition, spawnPosition)) {
           auto pathing = zone.emplace_or_replace<Component::Pathing>(unit_ID);

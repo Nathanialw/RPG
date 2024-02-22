@@ -412,7 +412,8 @@ namespace Rendering {
       Sort_Positions(zone);
       Render_Map(zone, state, camera);
       Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
-      //            RenderLine(zone, camera);
+                                                 //            RenderLine(zone, camera);
+                                                 //      Pathing::Draw(camera);
       Items::Show_Ground_Items(zone, camera);
       Items::Unit_Name_On_Mouseover(zone, camera);
       Social_Control::Show_Dialogue(zone, camera);
@@ -432,7 +433,6 @@ namespace Rendering {
       }
       RenderLines();
       Maps::Render_Fog_Of_War(camera);
-      //      Pathing::Draw(camera);
       //Mouse
       Interface::Foreground(zone, state, camera);
       //on top of mouse

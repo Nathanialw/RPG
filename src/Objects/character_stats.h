@@ -324,8 +324,8 @@ namespace Character_Stats {
     Component::Unit_Index unitIndex = {"demons", 0};
 
     Social_Component::Summon summon;
-    Create_Entities::Create_Entity(zone, state, 0, 0, data, true, summon, unitIndex);
-    //    Create_Entities::Create_Entity(zone, state, 1660, 8924, data, true, summon, unitIndex);
+    //    Create_Entities::Create_Entity(zone, state, 0, 0, data, true, summon, unitIndex);
+    Create_Entities::Create_Entity(zone, state, 1660, 8924, data, true, summon, unitIndex);
     Equip_Units(zone, state, options);
     Init_Player_Stats(zone, state);
   }

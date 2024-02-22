@@ -41,14 +41,14 @@ namespace Game_Loop {
       Game_State();
       //Squad_Control::Create_And_Fill_New_Squad(zone);
       //Test_Units::Create_Formation(zone);
-
+      Pathing::Update(zone);
       Event_Handler::Update_User_Input(zone, state);
       Character_Stats::Update_Items(zone, state);
       Player_Control::Move_To_Atack_Routine(zone, state);
       AI::Update_AI(zone, state);
       Update_Spells::Update_Spells(zone, state);
       Combat_Control::Update_Attacks(zone, state);
-      
+
       Movement::Update_Entity_Positions(zone);
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::movement], Timer::gameLoopTimer);
 

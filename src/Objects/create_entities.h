@@ -209,7 +209,6 @@ namespace Create_Entities {
     }
     Rendering_Components::Blend_Type blendType = Set_Texture_Components(zone, entity, imgPaths, data.equip_type, data.hexDir);
     Component::Position position = Add_Shared_Components(zone, entity, x, y, data, unitIndex);
-    zone.emplace_or_replace<Component::Spawn_Location>(entity, position);
 
     //dynamic entities
     if (data.body_type == 1) {
@@ -228,7 +227,10 @@ namespace Create_Entities {
 
       if (!player) {
         zone.emplace_or_replace<Component::Name>(entity, imgPaths.name);
-        if (!Social_Control::Summon(zone, entity, summon, blendType)) Social_Control::Entity(zone, entity, data.race);
+        if (!Social_Control::Summon(zone, entity, summon, blendType)) {
+          Social_Control::Entity(zone, entity, data.race);
+          zone.emplace_or_replace<Component::Spawn_Location>(entity, position);
+        }
 
         zone.emplace_or_replace<Component::Health>(entity, (int) (data.health * data.scale), (int) (data.health * data.scale));
         Item_Component::Unit_Equip_Type equip_type = Item_Component::Get_Unit_Equip_Type(data.equip_type);

@@ -3,36 +3,7 @@
 #include "mouse_control.h"
 #include "world.h"
 
-// have a grid of the whole map
-// set all cells that overlap with a collision box to impassable
-
-//collision radii
-//32
-//64
-//128
-//256
-//512
 namespace Pathing {
-  //  const int size32 = World::size.width * REGION_SIZE / 32;
-  //  const int size64 = World::size.width * REGION_SIZE / 64;
-  //  const int size128 = World::size.width * REGION_SIZE / 128;
-  //  const int size256 = World::size.width * REGION_SIZE / 256;
-  //
-  //  std::array<std::array<bool, size32>, size32> passableTerrain32;
-  //  std::array<std::array<bool, size64>, size64> passableTerrain64;
-  //  std::array<std::array<bool, size128>, size128> passableTerrain128;
-  //  std::array<std::array<bool, size256>, size256> passableTerrain256;
-  //
-  //  void asd(std::array<std::array<bool, size32>, size32> passableTerrain) {
-  //    for (int i = 0; i < passableTerrain.size(); ++i) {
-  //      for (int j = 0; j < passableTerrain[i].size(); ++j) {
-  //        //check for a collision with any static objects to set map defaults
-  //
-  //        //check for a collision with any dynamic objects every frame
-  //        //      passableTerrain[i][j];
-  //      }
-  //    }
-  //  }
 
   struct sNode {
     bool bObstacle = false;
@@ -56,6 +27,33 @@ namespace Pathing {
   sNode *nodeEnd = nullptr;
   int nNodeSize = World::size.width / scale;
   int nNodeBorder = nNodeSize / 4;
+
+  void Update(entt::registry &zone) {
+    auto view = zone.view<Component::Position, Action_Component::Action, Component::Interaction_Rect>();
+    for (auto entity: view) {
+      auto action = view.get<Action_Component::Action>(entity);
+      auto rect = view.get<Component::Interaction_Rect>(entity).rect;
+
+      //if the interation rect intersects set it as impassable
+
+      //emplace all static objects
+      if (action.state == Action_Component::isStatic) {
+
+        float x = rect.x;
+        float y = rect.y;
+
+        for (int l = rect.w; l > -nNodeSize / 2; l -= nNodeSize) {
+          for (int h = rect.h; h > -nNodeSize / 2; h -= nNodeSize) {
+            nodes[(int(y / nNodeSize) * nMapWidth) + int(x / nNodeSize)].bObstacle = true;
+            y += nNodeSize;
+          }
+          //          nodes[(int(y / nNodeSize) * nMapWidth) + int(x / nNodeSize)].bObstacle = true;
+          x += nNodeSize;
+          y = rect.y;
+        }
+      }
+    }
+  }
 
   bool Init() {
     nodes = new sNode[nMapWidth * nMapHeight];
@@ -103,6 +101,7 @@ namespace Pathing {
     // Reset Navigation Graph - default all node states
     nodeStart = &nodes[(int(position.y / nNodeSize) * nMapWidth) + int(position.x / nNodeSize)];
     nodeEnd = &nodes[(int(target.y / nNodeSize) * nMapWidth) + int(target.x / nNodeSize)];
+    //    if (nodeEnd->bObstacle) return false;
 
     for (int x = 0; x < nMapWidth; x++)
       for (int y = 0; y < nMapHeight; y++) {
@@ -137,8 +136,11 @@ namespace Pathing {
     // which have not yet been explored. However, we will also stop
     // searching when we reach the target - there may well be better
     // paths but this one will do - it wont be the longest.
+    int i = 0;
     while (!listNotTestedNodes.empty() && nodeCurrent != nodeEnd)// Find absolutely shortest path // && nodeCurrent != nodeEnd)
     {
+      i++;
+      if (i > 200) return false;
       // Sort Untested nodes by global goal, so lowest is first
       listNotTestedNodes.sort([](const sNode *lhs, const sNode *rhs) { return lhs->fGlobalGoal < rhs->fGlobalGoal; });
 
@@ -186,6 +188,7 @@ namespace Pathing {
     while (k != nodeStart) {
       path.push_back({(float) k->x, (float) k->y});
       k = k->parent;
+      if (k == nullptr) break;
     }
 
     return true;
@@ -193,40 +196,20 @@ namespace Pathing {
 
   bool Draw(Component::Camera &camera) {
 
-    // Use integer division to nicely get cursor position in node space
-    int nSelectedNodeX = Mouse::iXWorld_Mouse / nNodeSize;
-    int nSelectedNodeY = Mouse::iYWorld_Mouse / nNodeSize;
-
-
-    //    if (m_mouse[0].bReleased)// Use mouse to draw maze, shift and ctrl to place start and end
-    //    {
-    //      if (nSelectedNodeX >= 0 && nSelectedNodeX < nMapWidth)
-    //        if (nSelectedNodeY >= 0 && nSelectedNodeY < nMapHeight) {
-    //          if (m_keys[VK_SHIFT].bHeld)
-    //            nodeStart = &nodes[nSelectedNodeY * nMapWidth + nSelectedNodeX];
-    //          else if (m_keys[VK_CONTROL].bHeld)
-    //            nodeEnd = &nodes[nSelectedNodeY * nMapWidth + nSelectedNodeX];
-    //          else
-    //            nodes[nSelectedNodeY * nMapWidth + nSelectedNodeX].bObstacle = !nodes[nSelectedNodeY * nMapWidth + nSelectedNodeX].bObstacle;
-    //
-    //          //          Solve_AStar(); // Solve in "real-time" gives a nice effect
-    //        }
-    //    }
-
     // Draw Connections First - lines from this nodes position to its
     // connected neighbour node positions
     //    Fill(0, 0, camera.screen.w, camera.screen.h, L' ');
-    for (int x = 0; x < nMapWidth; x++)
-      for (int y = 0; y < nMapHeight; y++) {
-        for (auto n: nodes[y * nMapWidth + x].vecNeighbours) {
-          SDL_RenderDrawLineF(
-              Graphics::renderer,
-              (x * nNodeSize + nNodeSize / 2) - camera.screen.x,
-              (y * nNodeSize + nNodeSize / 2) - camera.screen.y,
-              (n->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
-              (n->y * nNodeSize + nNodeSize / 2) - camera.screen.y);
-        }
-      }
+    //    for (int x = 0; x < nMapWidth; x++)
+    //      for (int y = 0; y < nMapHeight; y++) {
+    //        for (auto n: nodes[y * nMapWidth + x].vecNeighbours) {
+    //          SDL_RenderDrawLineF(
+    //              Graphics::renderer,
+    //              (x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+    //              (y * nNodeSize + nNodeSize / 2) - camera.screen.y,
+    //              (n->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+    //              (n->y * nNodeSize + nNodeSize / 2) - camera.screen.y);
+    //        }
+    //      }
 
     // Draw Nodes on top
     for (int x = 0; x < nMapWidth; x++)
@@ -238,21 +221,29 @@ namespace Pathing {
             (float) nNodeSize - (nNodeBorder * 2.0f),
             (float) nNodeSize - (nNodeBorder * 2.0f)};
         rect = Utilities::World_To_ScreenF(rect, camera.screen);
-        SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 255, 155);
 
-        SDL_Color color = {255, 255, 255, 0};
-        if (nodes[y * nMapWidth + x].bVisited)
+        if (nodes[y * nMapWidth + x].bVisited) {
           SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 255, 155);
+          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+        }
 
-        if (&nodes[y * nMapWidth + x] == nodeStart)
+        else if (&nodes[y * nMapWidth + x] == nodeStart) {
           SDL_SetRenderDrawColor(Graphics::renderer, 0, 255, 0, 155);
+          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+        }
 
-        if (&nodes[y * nMapWidth + x] == nodeEnd)
+        else if (&nodes[y * nMapWidth + x] == nodeEnd) {
           SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 0, 155);
+          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+        }
 
-        SDL_RenderDrawRectF(Graphics::renderer, &rect);
+        else if (nodes[y * nMapWidth + x].bObstacle) {
+          SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 255, 255);
+          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+        }
       }
 
+    SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 255, 155);
 
     // Draw Path by starting ath the end, and following the parent node trail
     // back to the start - the start node will not have a parent path to follow
@@ -275,6 +266,24 @@ namespace Pathing {
     return true;
   }
 
+  void Draw_Paths(entt::registry &zone, Component::Camera &camera) {
+    //    auto view = zone.view<Component::Pathing>();
+    //    for (auto entity: view) {
+    //      auto path = view.get<Component::Pathing>(entity).path;
+    //
+    //      if (path.size() >= 2) {
+    //        for (int i = 0; i < path.size() - 1; ++i) {
+    //          SDL_SetRenderDrawColor(Graphics::renderer, 0, 125, 125, 255);
+    //          SDL_RenderDrawLineF(
+    //              Graphics::renderer,
+    //              (path[i].x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+    //              (path[i].y * nNodeSize + nNodeSize / 2) - camera.screen.y,
+    //              (path[i + 1].x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+    //              (path[i + 1].y * nNodeSize + nNodeSize / 2) - camera.screen.y);
+    //        }
+    //      }
+    //    }
+  }
 
 }// namespace Pathing
  // maybe preset maps where the cell size is the size of the entity (ie. radius of 20 would use the grid with a cell size of 20x20)
