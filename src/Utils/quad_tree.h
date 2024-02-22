@@ -325,11 +325,12 @@ namespace Quad_Tree {
     return false;
   }
 
-  std::vector<entt::entity> Get_Nearby_Entities(entt::registry &zone, SDL_FRect &entityRect, int &state) {
+  std::vector<entt::entity> Get_Nearby_Entities(entt::registry &zone, entt::entity &entity, SDL_FRect &entityRect, int &state) {
     std::vector<entt::entity> entityData;
 
     for (const auto &object: quadTrees[state].search(entityRect)) {
-      entityData.emplace_back(object->item.entity_ID);
+      if (entity != object->item.entity_ID)
+        entityData.emplace_back(object->item.entity_ID);
     }
     entityData.shrink_to_fit();
     return entityData;

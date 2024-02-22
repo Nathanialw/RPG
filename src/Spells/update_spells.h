@@ -89,7 +89,7 @@ namespace Update_Spells {
         auto &position = view.get<Component::Position>(caster_ID);
         SDL_FRect rect = {0.0f, 0.0f, 1000.0f, 1000.0f};
         SDL_FRect frect = Utilities::Centre_Rect_On_Position(rect, position.x, position.y);
-        std::vector<entt::entity> entities = Quad_Tree::Get_Nearby_Entities(zone, frect, state);
+        std::vector<entt::entity> entities = Quad_Tree::Get_Nearby_Entities(zone, caster_ID, frect, state);
 
         for (auto entity: entities) {
           auto &type = view.get<Component::Entity_Type>(entity);
@@ -123,7 +123,7 @@ namespace Update_Spells {
         auto &position = view.get<Component::Position>(caster_ID);
         SDL_FRect rect = {0.0f, 0.0f, 1000.0f, 1000.0f};
         SDL_FRect frect = Utilities::Centre_Rect_On_Position(rect, position.x, position.y);
-        std::vector<entt::entity> entities = Quad_Tree::Get_Nearby_Entities(zone, frect, state);
+        std::vector<entt::entity> entities = Quad_Tree::Get_Nearby_Entities(zone, caster_ID, frect, state);
 
         for (auto entity: entities) {
           auto &type = view.get<Component::Entity_Type>(entity);

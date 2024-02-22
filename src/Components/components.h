@@ -95,6 +95,10 @@ namespace Component {
     float y;
   };
 
+  struct Spawn_Location {
+    Position position;
+  };
+
   struct Radius {
     float fRadius = 0.0f;
   };
@@ -511,6 +515,11 @@ namespace Component {
   struct Sight_Range {
     float range;
     SDL_FRect sightBox;
+  };
+
+  struct Pathing {
+    std::vector<f2> path;
+    int index = 0;
   };
 
   struct Target_Range {

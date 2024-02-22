@@ -28,6 +28,7 @@
 #include "input_control.h"
 #include "interface.h"
 #include "items.h"
+#include "pathing.h"
 #include "quad_tree.h"
 
 namespace Event_Handler {

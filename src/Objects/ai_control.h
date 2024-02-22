@@ -1,9 +1,11 @@
 #pragma once
 
+#include "Movement/movement_functions.h"
 #include "ai_components.h"
 #include "components.h"
 #include "entity_control.h"
 #include "mouse_control.h"
+#include "pathing.h"
 #include "quad_tree.h"
 #include "social_control.h"
 #include "timer.h"
@@ -30,14 +32,22 @@ namespace AI {
         }
         zone.remove<Component::Mouse_Move>(entity_ID);
         zone.remove<Component::Moving>(entity_ID);
+        zone.remove<Component::Pathing>(entity_ID);
         Entity_Control::Melee_Attack(zone, entity_ID, target_ID, targetPosition);
       } else {
-        //calc A*
-        // save nodes to list
-        //move to next not after it has reached
-        //stop when it has reached the end
+        auto pathing = zone.emplace_or_replace<Component::Pathing>(entity_ID);
+        Pathing::Solve_AStar(entityPosition, targetPosition, pathing.path);
 
-        Entity_Control::Move_Order(zone, entity_ID, targetPosition.x, targetPosition.y);
+        if (pathing.path.empty()) {
+          Utilities::Log("In target Node, moving directly");
+          Entity_Control::Move_Order(zone, entity_ID, targetPosition.x, targetPosition.y);
+          return;
+        }
+
+        float y = (pathing.path[pathing.path.size() - 1].y * Pathing::nNodeSize) + (Pathing::nNodeSize / 2.0f);
+        float x = (pathing.path[pathing.path.size() - 1].x * Pathing::nNodeSize) + (Pathing::nNodeSize / 2.0f);
+
+        Entity_Control::Move_Order(zone, entity_ID, x, y);
       }
     }
     //else move to cursor
@@ -51,8 +61,9 @@ namespace AI {
       auto &meleeRange = units.get<Component::Melee_Range>(unit_ID);
       auto &unitPosition = units.get<Component::Position>(unit_ID);
 
-      std::vector<entt::entity> entityData = Quad_Tree::Get_Nearby_Entities(zone, sightBox, state);
+      std::vector<entt::entity> entityData = Quad_Tree::Get_Nearby_Entities(zone, unit_ID, sightBox, state);
 
+      bool found = false;
       for (auto target: entityData) {
         if (zone.any_of<Component::Entity_Type>(target)) {
           auto type = zone.get<Component::Entity_Type>(target);
@@ -73,6 +84,7 @@ namespace AI {
               SDL_FPoint targetPoint = {targetPosition.x, targetPosition.y};
 
               if (Utilities::bFPoint_FRectIntersect(targetPoint, sightBox)) {
+                found = true;
                 zone.emplace_or_replace<Component::In_Combat>(unit_ID);
                 zone.emplace_or_replace<Component::In_Combat>(target);
                 if (zone.any_of<Component::Melee_Damage>(unit_ID)) {
@@ -96,9 +108,28 @@ namespace AI {
                 zone.remove<Component::In_Combat>(unit_ID);
               }
               break;
-            } else {
             }
           }
+        }
+      }
+      if (!found) {
+        auto spawnPosition = zone.get<Component::Spawn_Location>(unit_ID).position;
+        if (!Movement_Functions::Check_If_Arrived(unitPosition, spawnPosition)) {
+          auto pathing = zone.emplace_or_replace<Component::Pathing>(unit_ID);
+          Pathing::Solve_AStar(unitPosition, spawnPosition, pathing.path);
+          //return to spawn location if he is not already there
+          if (pathing.path.empty()) {
+            Utilities::Log("In target Node, moving directly");
+            Entity_Control::Move_Order(zone, unit_ID, spawnPosition.x, spawnPosition.y);
+            break;
+          }
+          float y = (pathing.path[pathing.path.size() - 1].y * Pathing::nNodeSize) + (Pathing::nNodeSize / 2.0f);
+          float x = (pathing.path[pathing.path.size() - 1].x * Pathing::nNodeSize) + (Pathing::nNodeSize / 2.0f);
+          Entity_Control::Move_Order(zone, unit_ID, x, y);
+        } else {
+          zone.remove<Component::Mouse_Move>(unit_ID);
+          zone.remove<Component::Moving>(unit_ID);
+          zone.remove<Component::Pathing>(unit_ID);
         }
       }
     }

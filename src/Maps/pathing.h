@@ -46,12 +46,16 @@ namespace Pathing {
     sNode *parent;
   };
 
+  int scale = 8;
+
   sNode *nodes = nullptr;
-  int nMapWidth = 32;
-  int nMapHeight = 32;
+  int nMapWidth = REGION_SIZE * scale;
+  int nMapHeight = REGION_SIZE * scale;
 
   sNode *nodeStart = nullptr;
   sNode *nodeEnd = nullptr;
+  int nNodeSize = World::size.width / scale;
+  int nNodeBorder = nNodeSize / 4;
 
   bool Init() {
     nodes = new sNode[nMapWidth * nMapHeight];
@@ -95,8 +99,11 @@ namespace Pathing {
     return true;
   }
 
-  bool Solve_AStar() {
+  bool Solve_AStar(Component::Position &position, Component::Position &target, std::vector<f2> &path) {
     // Reset Navigation Graph - default all node states
+    nodeStart = &nodes[(int(position.y / nNodeSize) * nMapWidth) + int(position.x / nNodeSize)];
+    nodeEnd = &nodes[(int(target.y / nNodeSize) * nMapWidth) + int(target.x / nNodeSize)];
+
     for (int x = 0; x < nMapWidth; x++)
       for (int y = 0; y < nMapHeight; y++) {
         nodes[y * nMapWidth + x].bVisited = false;
@@ -175,19 +182,21 @@ namespace Pathing {
       }
     }
 
+    sNode *k = nodeEnd;
+    while (k != nodeStart) {
+      path.push_back({(float) k->x, (float) k->y});
+      k = k->parent;
+    }
+
     return true;
   }
 
   bool Draw(Component::Camera &camera) {
-    int nNodeSize = 76;
-    int nNodeBorder = 12;
 
     // Use integer division to nicely get cursor position in node space
     int nSelectedNodeX = Mouse::iXWorld_Mouse / nNodeSize;
     int nSelectedNodeY = Mouse::iYWorld_Mouse / nNodeSize;
 
-    nodeStart = &nodes[0];
-    nodeEnd = &nodes[900];
 
     //    if (m_mouse[0].bReleased)// Use mouse to draw maze, shift and ctrl to place start and end
     //    {
@@ -224,8 +233,8 @@ namespace Pathing {
       for (int y = 0; y < nMapHeight; y++) {
 
         SDL_FRect rect = {
-            (float) x * nNodeSize + nNodeBorder,
-            (float) y * nNodeSize + nNodeBorder,
+            (float) (x * nNodeSize) + nNodeBorder,
+            (float) (y * nNodeSize) + nNodeBorder,
             (float) nNodeSize - (nNodeBorder * 2.0f),
             (float) nNodeSize - (nNodeBorder * 2.0f)};
         rect = Utilities::World_To_ScreenF(rect, camera.screen);

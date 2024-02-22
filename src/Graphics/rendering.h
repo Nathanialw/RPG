@@ -432,7 +432,7 @@ namespace Rendering {
       }
       RenderLines();
       Maps::Render_Fog_Of_War(camera);
-      Pathing::Draw(camera);
+      //      Pathing::Draw(camera);
       //Mouse
       Interface::Foreground(zone, state, camera);
       //on top of mouse

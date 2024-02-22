@@ -74,7 +74,7 @@ namespace Create_Entities {
         //position is replaced by mouse position with building placement
         zone.emplace<Collision_Component::Collider_Data>(entity, data.interior, offsets.colliderOffset, data.radius, x, y, data.collider_type, ((float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f));
         Collision::Save_Line_Segment(zone, entity, templateName);
-        
+
         zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w / 2.0f), (y - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f), (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, false);
 
         if (Collision_Component::polygonColliders.contains(data.interior)) {
@@ -209,6 +209,7 @@ namespace Create_Entities {
     }
     Rendering_Components::Blend_Type blendType = Set_Texture_Components(zone, entity, imgPaths, data.equip_type, data.hexDir);
     Component::Position position = Add_Shared_Components(zone, entity, x, y, data, unitIndex);
+    zone.emplace_or_replace<Component::Spawn_Location>(entity, position);
 
     //dynamic entities
     if (data.body_type == 1) {
