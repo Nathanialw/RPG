@@ -19,9 +19,10 @@
 //#include "ui_gameloop_function_times.h"
 //#include "unit_positions.h"
 //#include "unit_status.h"
+#include "pathing.h"
 #include "quad_tree.h"
-#include <SDL2/SDL.h>
 #include "update_spells.h"
+#include <SDL2/SDL.h>
 
 namespace Game_Loop {
 
@@ -34,6 +35,7 @@ namespace Game_Loop {
 
 
   int Game_Loop(entt::registry &zone, int &state) {
+    Pathing::Init();
     World::currentZone = {state, state};
     while (state != 0) {
       Game_State();
@@ -46,6 +48,7 @@ namespace Game_Loop {
       AI::Update_AI(zone, state);
       Update_Spells::Update_Spells(zone, state);
       Combat_Control::Update_Attacks(zone, state);
+      
       Movement::Update_Entity_Positions(zone);
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::movement], Timer::gameLoopTimer);
 

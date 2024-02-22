@@ -10,10 +10,10 @@ namespace Item_Component {
   enum class Item_Type {
     clothes,
     shins,
-    boots,
     legs,
-    wrist,
+    boots,
     kilt,
+    wrist,
     chest,
     belt,
     gloves,

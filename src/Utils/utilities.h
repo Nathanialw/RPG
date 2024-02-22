@@ -26,8 +26,17 @@ namespace Utilities {
     return screenRect;
   }
 
+  SDL_FRect World_To_ScreenF(const SDL_FRect &Rect, const SDL_FRect &camera) {
+    SDL_FRect screenRect = Rect;
+
+    screenRect.x = Rect.x - camera.x;
+    screenRect.y = Rect.y - camera.y;
+
+    return screenRect;
+  }
+
   SDL_FRect screenToWorld(const SDL_FRect &Rect, const SDL_FRect &camera) {
-    SDL_FRect screenRect = {};
+    SDL_FRect screenRect = Rect;
 
     screenRect.x = Rect.x - camera.x;
     screenRect.y = Rect.y - camera.y;
@@ -165,6 +174,15 @@ namespace Utilities {
     //return false;
   }
 
+  SDL_FRect Scale_FRect(const SDL_FRect &clippedSprite, const float &scale) {
+    SDL_FRect fScaledImage = clippedSprite;
+    fScaledImage = {
+        fScaledImage.x - (fScaledImage.w * scale),
+        fScaledImage.y - (fScaledImage.h * scale),
+        fScaledImage.w * scale,
+        fScaledImage.h * scale};
+    return fScaledImage;
+  }
 
   SDL_FRect Scale_Rect(const SDL_Rect &clippedSprite, const float &scale) {
     SDL_FRect fScaledImage = SDL_Rect_To_SDL_FRect(clippedSprite);

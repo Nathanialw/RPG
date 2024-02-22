@@ -32,6 +32,11 @@ namespace AI {
         zone.remove<Component::Moving>(entity_ID);
         Entity_Control::Melee_Attack(zone, entity_ID, target_ID, targetPosition);
       } else {
+        //calc A*
+        // save nodes to list
+        //move to next not after it has reached
+        //stop when it has reached the end
+
         Entity_Control::Move_Order(zone, entity_ID, targetPosition.x, targetPosition.y);
       }
     }
