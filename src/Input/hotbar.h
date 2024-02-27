@@ -1,5 +1,6 @@
 #pragma once
 #include "Fire/fire.h"
+#include "Fog_Of_War/fog_of_war.h"
 #include "SDL2/SDL.h"
 #include "ai_control.h"
 #include "array"
@@ -173,6 +174,18 @@ namespace Hotbar {
     return 0;
   }
 
+  int Sight_Increase(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    Fog_Of_War::lightRadius++;
+    if (Fog_Of_War::lightRadius >= 15) Fog_Of_War::lightRadius = 15;
+    return 0;
+  }
+
+  int Sight_Decrease(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    Fog_Of_War::lightRadius--;
+    if (Fog_Of_War::lightRadius <= 0) Fog_Of_War::lightRadius = 0;
+    return 0;
+  }
+
   void Init_Hotbar() {
     Hotbar_Structs::keybinds = {
         {SDLK_1, Action_Bar::actionBar.actionBar.spell[0].cast},
@@ -201,7 +214,10 @@ namespace Hotbar {
         {SDLK_RALT, Show_Items},
         {SDLK_SPACE, Jump},
         {SDLK_PERIOD, Next_Page},
-        {SDLK_COMMA, Previous_Page}};
+        {SDLK_COMMA, Previous_Page},
+        {SDLK_UP, Sight_Increase},
+        {SDLK_DOWN, Sight_Decrease},
+    };
   }
 
   std::map<SDL_Keycode, Spells::castSpell> keyupKeybinds = {

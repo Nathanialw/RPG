@@ -172,7 +172,7 @@ namespace Spritesheet_Structs {
       // std::cout << "Success! " << templateName << " found " << "frame" << frame << std::endl;
       return true;
 
-    } else if (unitType == "Unity" || unitType == "dwarf_female") {
+    } else if (unitType == "Unity" || unitType == "dwarf_female" || unitType == "elf_female" || unitType == "human_female") {
       /// get the
       std::string checkAction = ss(templateName, frame, 9);
       if (checkAction.empty()) return false;
@@ -413,7 +413,7 @@ namespace Spritesheet_Structs {
     }
     //        Utilities::Log("----");
     //        Utilities::Log(frame);
-    if (unitType == "Unity" || unitType == "dwarf_female") {
+    if (unitType == "Unity" || unitType == "dwarf_female" || unitType == "elf_female" || unitType == "human_female") {
       for (auto act: actions) {
         Calculate_Num_Frames_Unity(frame, actionFrameData, act);
       }

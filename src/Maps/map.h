@@ -126,11 +126,6 @@ namespace Maps {
     //        farm
   }
 
-  void Get_Coords(int cameraPosition, int &gridIndex) {
-    cameraPosition -= World::size.width;
-    gridIndex = cameraPosition / World::size.width;
-  }
-
   void Get_Size() {
   }
 
@@ -290,8 +285,8 @@ namespace Maps {
     int x = 0;
     int y = 0;
 
-    Get_Coords((int) camera.screen.x, x);
-    Get_Coords((int) camera.screen.y, y);
+    Camera_Control::Get_Coords((int) camera.screen.x, x);
+    Camera_Control::Get_Coords((int) camera.screen.y, y);
 
     for (int i = x; i < (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
       for (int j = y; j < (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
@@ -336,54 +331,6 @@ namespace Maps {
     }
   }
 
-  void Render_Fog_Of_War(Component::Camera &camera) {
-    int x = 0;
-    int y = 0;
-
-    Get_Coords((int) camera.screen.x, x);
-    Get_Coords((int) camera.screen.y, y);
-
-
-    for (float i = x; i < (x + ((camera.screen.w + World::size.width + World::size.width) / World::size.width)); i++) {
-      for (float j = y; j < (y + ((camera.screen.h + World::size.height + World::size.height) / World::size.height)); j++) {
-        if (i < 0 || j < 0) {
-          continue;
-        } else {
-          if (i > REGION_SIZE || j > REGION_SIZE) {
-            continue;
-          } else {
-            // fog needs to be rendered over the tile
-
-            //an area around the player will trigger the fog to not render
-
-            SDL_FRect renderRect;
-            renderRect.x = (float) i * World::size.width - camera.screen.x;
-            renderRect.y = (float) j * World::size.height - camera.screen.y;
-            renderRect.w = (float) World::size.width;
-            renderRect.h = (float) World::size.height;
-            //
-            //            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BlendMode::SDL_BLENDMODE_BLEND);
-            //            SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 200);
-            //            SDL_RenderFillRectF(Graphics::renderer, &renderRect);
-            //
-            //            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BlendMode::SDL_BLENDMODE_BLEND);
-            //            renderRect = {
-            //                renderRect.x + renderRect.w * 0.25f,
-            //                renderRect.y + renderRect.w * 0.25f,
-            //                renderRect.w * 0.5f,
-            //                renderRect.h * 0.5f};
-            //            SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 255, 0);
-            //            SDL_RenderFillRectF(Graphics::renderer, &renderRect);
-            //
-            //
-            //            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BlendMode::SDL_BLENDMODE_BLEND);
-            //                SDL_RenderCopyF(Graphics::renderer, Graphics::fog, nullptr, &renderRect);
-          }
-        }
-      }
-    }
-    SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 0);
-  }
 
   tmx::Map map;
   SDL_Texture *pTexture = nullptr;

@@ -17,21 +17,23 @@ namespace Item_Component {
     chest,
     belt,
     gloves,
-    facialHair,
-    face,
-    hair,
-    shoulders,
-    hood,
-    quiver,
-    back,
-    dirt,
-    ranged,
+    //
     mainhand,
     offhand,
+    ranged,
+    //
+    back,
+    facialHair,
+    face,
+    shoulders,
+    hair,
     helm,
+    hood,
     crown,
-    horns,
     //non-rendering items
+    horns,
+    quiver,
+    dirt,
     ring,
     ring0,
     ring1,
@@ -174,6 +176,8 @@ namespace Item_Component {
     medieval_human_male,
     zombie,
     dwarf_female,
+    human_female,
+    elf_female,
     none,
     size
   };
@@ -199,6 +203,10 @@ namespace Item_Component {
       return Unit_Equip_Type::zombie;
     } else if (db_type == "dwarf_female") {
       return Unit_Equip_Type::dwarf_female;
+    } else if (db_type == "elf_female") {
+      return Unit_Equip_Type::elf_female;
+    } else if (db_type == "human_female") {
+      return Unit_Equip_Type::human_female;
     } else {
       return Unit_Equip_Type::none;
     }
@@ -226,6 +234,10 @@ namespace Item_Component {
       return "zombie";
     } else if (enum_type == Unit_Equip_Type::dwarf_female) {
       return "dwarf_female";
+    } else if (enum_type == Unit_Equip_Type::elf_female) {
+      return "elf_female";
+    } else if (enum_type == Unit_Equip_Type::human_female) {
+      return "human_female";
     } else {
       return "none";
     }

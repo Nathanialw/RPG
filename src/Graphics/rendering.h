@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Fog_Of_War/fog_of_war.h"
 #include "camera.h"
 #include "entt/entt.hpp"
 #include "fog.h"
@@ -118,7 +119,6 @@ namespace Rendering {
 
     return 0;
   }
-
 
   float SortIt = 0;
   void Sort_Positions(entt::registry &zone) {
@@ -414,6 +414,7 @@ namespace Rendering {
       Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
                                                  //            RenderLine(zone, camera);
                                                  //      Pathing::Draw(camera);
+      Fog_Of_War::Render(zone, entity, camera);
       Items::Show_Ground_Items(zone, camera);
       Items::Unit_Name_On_Mouseover(zone, camera);
       Social_Control::Show_Dialogue(zone, camera);
@@ -432,7 +433,6 @@ namespace Rendering {
         return false;
       }
       RenderLines();
-      Maps::Render_Fog_Of_War(camera);
       //Mouse
       Interface::Foreground(zone, state, camera);
       //on top of mouse

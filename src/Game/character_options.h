@@ -39,8 +39,9 @@ namespace Character_Options {
     african,
     //    halfOrc,
     //    goblin,
-    //    human,
+    human,
     //    orc,
+    elf,
     dwarf,
   };
 
@@ -58,7 +59,8 @@ namespace Character_Options {
       //      {"none"},
       //      {"none"},
       //      {"none"},
-      //      {"none"},
+      {"none"},
+      {"none"},
       {"none"}};
 
   std::vector<std::string> Species_Female = {
@@ -74,8 +76,9 @@ namespace Character_Options {
       {"Female_WitchHunter"},
       //      {"Half Orc Female"},
       //      {"F_Goblin"},
-      //      {"F_Human"},
       //      {"F_Orc"},
+      {"F_Elf"},
+      {"F_Human"},
       {"F_Dwarf"}};
 
   std::vector<SDL_Color> Color = {
@@ -113,10 +116,28 @@ namespace Character_Options {
     }
   }
 
+  Item_Component::Unit_Equip_Type Get_EquipType_Elf(Sex sex) {
+    switch (sex) {
+      case Sex::female:
+        return Item_Component::Unit_Equip_Type::elf_female;
+        //      case Sex::male:
+        //        return Item_Component::Unit_Equip_Type::dwarf_male;
+    }
+  }
+
   Item_Component::Unit_Equip_Type Get_EquipType_Dwarf(Sex sex) {
     switch (sex) {
       case Sex::female:
         return Item_Component::Unit_Equip_Type::dwarf_female;
+        //      case Sex::male:
+        //        return Item_Component::Unit_Equip_Type::dwarf_male;
+    }
+  }
+
+  Item_Component::Unit_Equip_Type Get_EquipType_Human(Sex sex) {
+    switch (sex) {
+      case Sex::female:
+        return Item_Component::Unit_Equip_Type::human_female;
         //      case Sex::male:
         //        return Item_Component::Unit_Equip_Type::dwarf_male;
     }
@@ -144,6 +165,10 @@ namespace Character_Options {
         return Get_EquipType_Class(sex);
       case Species::african:
         return Get_EquipType_Class(sex);
+      case Species::elf:
+        return Get_EquipType_Elf(sex);
+      case Species::human:
+        return Get_EquipType_Human(sex);
       case Species::dwarf:
         return Get_EquipType_Dwarf(sex);
     }

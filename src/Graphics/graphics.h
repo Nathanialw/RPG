@@ -129,6 +129,7 @@ namespace Graphics {
   SDL_Texture *spellbook;
 
   SDL_Texture *tooltipBackground;
+  SDL_Texture *fogOfWar;
 
   void Render_Rect(SDL_Texture *pTexture, SDL_Rect &clipSprite, SDL_Rect &scaledSlot) {
     SDL_RenderCopy(renderer, pTexture, &clipSprite, &scaledSlot);
@@ -375,6 +376,8 @@ namespace Graphics {
 
     armorSpriteSheet = createTexture("assets/sprites/items/flare_armor_transparent.png");
 
+    //    fogOfWar = createTexture("assets/sprites/fog_of_war/blackFog.png");
+    fogOfWar = createTexture("assets/sprites/UI/tooltips/fogOfWar.png");
     tooltipBackground = createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png");
     spellbook = createTexture("assets/sprites/UI/spellbook/spellbook.png");
 
@@ -384,6 +387,8 @@ namespace Graphics {
   void createGraphicsContext() {
     window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, resolution.w, resolution.h, SDL_WINDOW_RESIZABLE);
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+    //locks to 60 fps
+    //    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     SDL_SetHint(SDL_HINT_RENDER_BATCHING, "1");
   }
 

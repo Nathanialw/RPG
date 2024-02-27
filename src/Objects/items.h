@@ -627,7 +627,7 @@ namespace Items {
     //set item in mouse array position to mouse x, y every frame
     if (isItemCurrentlyHeld) {
       if (zone.any_of<Component::Position>(item)) {
-        if (zone.any_of<Component::Interaction_Rect>(item)) {
+        if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
           auto &rect = zone.get<Component::Interaction_Rect>(item).rect;
           rect.x = mouseX - (rect.w / 2.0f);
           rect.y = mouseY - (rect.h / 2.0f);
@@ -640,7 +640,7 @@ namespace Items {
 
             auto name = zone.get<Rendering_Components::Interior_Sheet_Info>(item).collisionBocArrayIndex;
             Collision::Save_Line_Segment(zone, item, name);
-            
+
             std::vector<Building_Component::Polygon> place;
             place.emplace_back(treePolygon);
             zone.emplace_or_replace<Building_Component::Set_Placement>(item, place);

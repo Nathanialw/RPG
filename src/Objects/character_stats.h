@@ -255,11 +255,31 @@ namespace Character_Stats {
 
     if (options.species == Character_Options::Species::dwarf) {
       gear = {
-          "Sword003",
+          "F_Dwarf_Sword003",
           "F_Dwarf_Bra",
-          "F_Dwarf_Underwear"};
-      if ((int) options.hairStyle < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_female][Item_Component::Item_Type::hair].size()) {
+          "F_Dwarf_01_Legs"};
+      if ((int) options.hairStyle < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::dwarf_female][Item_Component::Item_Type::hair].size()) {
         hair = SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::dwarf_female][Item_Component::Item_Type::hair][options.hairStyle];
+      }
+      beard = {"none", "none", "none"};
+      horns = {"none", "none", "none"};
+    } else if (options.species == Character_Options::Species::elf) {
+      gear = {
+          "F_Elf_Hammer001a",
+          "F_Elf_01_TorsoArmour",
+          "F_Elf_12_LegArmour"};
+      if ((int) options.hairStyle < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::elf_female][Item_Component::Item_Type::hair].size()) {
+        hair = SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::elf_female][Item_Component::Item_Type::hair][options.hairStyle];
+      }
+      beard = {"none", "none", "none"};
+      horns = {"none", "none", "none"};
+    } else if (options.species == Character_Options::Species::human) {
+      gear = {
+          "F_Human_Axe001",
+          "F_Human_StarterOutfitTorso",
+          "F_Human_StarterOutfitLegs"};
+      if ((int) options.hairStyle < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::human_female][Item_Component::Item_Type::hair].size()) {
+        hair = SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::human_female][Item_Component::Item_Type::hair][options.hairStyle];
       }
       beard = {"none", "none", "none"};
       horns = {"none", "none", "none"};
