@@ -75,9 +75,9 @@ namespace Death_Control {
         auto world = Collision::collisionList[state];
         world->DestroyBody(body);
         zone.remove<Component::Body>(entity);
-//        auto rect = zone.get<Component::Interaction_Rect>(entity).rect;
+        //        auto rect = zone.get<Component::Interaction_Rect>(entity).rect;
 
-//        zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect);
+        //        zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect);
         alive = false;
         zone.remove<Component::Commandable>(entity);
         zone.remove<Component::Selected>(entity);

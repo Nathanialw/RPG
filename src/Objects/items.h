@@ -181,7 +181,6 @@ namespace Items {
   std::string Create_Offhand(entt::registry &zone, entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item &item_name, SDL_Color &color) {
     auto material = Generate_Weapon_Material();
     auto offhandType = Item_Component::Offhand_Type::shield;
-    ;
 
     std::string materialType = weaponMaterialName[material];
     std::string offhand = offhandTypeName[offhandType];
@@ -207,20 +206,15 @@ namespace Items {
       return "none";
     }
 
-    //get from spritesheet
-    int column = weaponMaterials[material];
-    int row = offhandTypes[offhandType];
-    int size = 32;
-
-    SDL_Rect sprite = {column * size, row * size, size, size};
-
     auto &sheetData = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(item);
     sheetData.type = "RPG_Tools";
     sheetData.sheetData = equippedSheetData.itemData;
     sheetData.sheet_name = equippedSheetData.index;
 
-    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
-    icon.clipSprite = sprite;
+    Icons::Icon_Clip sprite = Icons::iconClipRects[item_name.icon_name];
+
+    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::icons, rarityBorder[rarity], Graphics::bagSlotBorder);
+    icon.clipSprite = sprite.clipRect;
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
@@ -466,23 +460,28 @@ namespace Items {
     SDL_Color color = {255, 255, 255};
     std::string itemName;
 
-    int type = rand() % 3 + 0;
+    int type = rand() % 3;
     Utilities::Log(type);
+
+
+    //instead of random, use a loot table saved in the DB
     switch (type) {
       case 0: {
         Item_Component::Item_Type itemType = Item_Type::helm;
+        item_name = SQLite_Item_Data::Items[equip_type][itemType][rand() % SQLite_Item_Data::Items[equip_type][itemType].size()];
         Armor_Type armorType = Items::Generate_Armor_Type();
-        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Knight_Head") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Knight_Head");
         itemName = Create_Specific_Armor(zone, item_ID, rarity, itemType, armorType, equip_type, item_name, color);
         break;
       }
       case 1: {
-        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Battleguard_Sword") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Battleguard_Sword");
+        Item_Component::Item_Type itemType = Item_Type::mainhand;
+        item_name = SQLite_Item_Data::Items[equip_type][itemType][rand() % SQLite_Item_Data::Items[equip_type][itemType].size()];
         itemName = Create_Weapon(zone, item_ID, rarity, equip_type, item_name, color);
         break;
       }
       case 2: {
-        equip_type == Unit_Equip_Type::classes_male ? item_name = SQLite_Item_Data::Load_Specific_Item("Male_Footman_Shield") : item_name = SQLite_Item_Data::Load_Specific_Item("Female_Footman_Shield");
+        Item_Component::Item_Type itemType = Item_Type::offhand;
+        item_name = SQLite_Item_Data::Items[equip_type][itemType][rand() % SQLite_Item_Data::Items[equip_type][itemType].size()];
         itemName = Create_Offhand(zone, item_ID, rarity, equip_type, item_name, color);
         break;
       }
