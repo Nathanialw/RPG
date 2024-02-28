@@ -1,5 +1,5 @@
 #pragma once
-#include "death_control.h"
+#include "Objects/Combat/death_control.h"
 #include "rendering_components.h"
 #include "rendering_functions.h"
 

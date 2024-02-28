@@ -3,12 +3,12 @@
 #include "Maps/Pathing/pathing.h"
 #include "Maps/World/world.h"
 #include "Movement/movement_functions.h"
+#include "Objects/Social/social_control.h"
 #include "ai_components.h"
 #include "components.h"
 #include "entity_control.h"
 #include "mouse_control.h"
 #include "quad_tree.h"
-#include "social_control.h"
 #include "timer.h"
 
 namespace AI {

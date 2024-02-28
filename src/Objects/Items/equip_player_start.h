@@ -1,16 +1,10 @@
 #pragma once
-#include "item_components.h"
-#include "entt/entt.hpp"
+#include "Items/items.h"
 #include "components.h"
-#include "items.h"
+#include "entt/entt.hpp"
+#include "item_components.h"
 
-namespace equip_unit {
-
-  /*
-   * creat a set of armour based on the chosen class
-   *
-   *
-   * */
+namespace equip_player_start {
 
   entt::entity Create_And_Equip_Weapon(Component::Position &position, std::string &equip_type) {
     Rarity rarity = Items::Generate_Item_Rarity();
@@ -41,12 +35,49 @@ namespace equip_unit {
     return item_uID;
   }
 
-  entt::entity Create_And_Equip_Armor(Component::Position &position, Item_Component::Item_Type itemType, Item_Component::Item &equip_type) {
-    Rarity rarity = Items::Generate_Item_Rarity();
+  enum Role {
+    archer,
+    warrior,
+    mage
+  };
+
+  struct Character {
+    Armor_Type armorType;
+    std::string equipType;
+  };
+
+  Character Create_Character(std::string gender, Role role) {
+    std::string equipType;
+    if (gender == "male") {
+      equipType = "classes_male";
+    } else {
+      equipType = "classes_female";
+    }
+
+    Item_Component::Armor_Type armorType;
+
+    switch (role) {
+      case archer:
+        armorType = Item_Component::Armor_Type::leather;
+      case warrior:
+        armorType = Item_Component::Armor_Type::mail;
+      case mage:
+        armorType = Item_Component::Armor_Type::cloth;
+    }
+    Character character = {armorType, equipType};
+
+    return character;
+  }
+
+  entt::entity Create_Starter_Chest(Component::Position &position, Item_Component::Item_Type itemType, std::string &equip_type, Armor_Type armorType) {
+
+
     Item_Stats itemStats = Items::Generate_Item_Stats(rarity);
-    Armor_Type armorType = Items::Generate_Armor_Type();
+    Rarity rarity = Item_Component::Rarity::common;
+
     auto item_uID = zone.create();
-    std::string itemName = Items::Create_Specific_Armor(item_uID, rarity, itemType, armorType, equip_type.name);
+    std::string itemName = Items::Create_Specific_Armor(item_uID, rarity, Item_Component::Item_Type::chest, armorType, equip_type);
+
     if (itemName == "none") {
       zone.destroy(item_uID);
       Utilities::Log("Create_And_Equip_Armor() no item in db, no item has been created");
@@ -63,16 +94,15 @@ namespace equip_unit {
     for (auto unit: view) {
       auto &equipment = view.get<Item_Component::Equipment>(unit);
       auto &position = view.get<Component::Position>(unit);
+      Character character = Create_Character("male", Role::warrior);
 
       //create a weapon Component::Position& position, Component::Direction &direction
       equipment.equippedItems[Item_Type::mainhand] = Create_And_Equip_Weapon(position, equipment.type);
       equipment.equippedItems[Item_Type::offhand] = Create_And_Equip_Offhand(position, equipment.type);
       //create a chest
-      equipment.equippedItems[Item_Type::legs] = Create_And_Equip_Armor(position, Item_Type::legs, equipment.type);
+      equipment.equippedItems[Item_Type::chest] = Create_Starter_Chest(position, Item_Type::chest, character.equipType, character.armorType);
       //create a leggings
-      equipment.equippedItems[Item_Type::chest] = Create_And_Equip_Armor(position, Item_Type::chest, equipment.type);
       //create hair
-      equipment.equippedItems[Item_Type::hair] = Create_And_Equip_Armor(position, Item_Type::hair, equipment.type);
       //create kilt
       //            equipment.equippedItems[Item_Type::clothes] = Items::Create_And_Equip_Armor(position, Item_Type::clothes, equipment.type);
 
@@ -81,7 +111,7 @@ namespace equip_unit {
   }
 
   //run when equipping or unequipping an item
-  void Update_Equip_slots(entt::registry &zone) { //run function on item equip or unequip
+  void Update_Equip_slots(entt::registry &zone) {//run funtion on item equip or unequip
     auto view = zone.view<Rendering_Components::Sprite_Sheet_Info, Item_Component::Item_Equip, Item_Component::Equipment, Rendering_Components::Equipment_Sprites>();
     for (auto entity: view) {
       auto &sheetData = view.get<Rendering_Components::Sprite_Sheet_Info>(entity);
@@ -90,22 +120,36 @@ namespace equip_unit {
 
       //iterate through each equip slot
       for (auto &item: equipment.equippedItems) {
-	if (item.second != Item_Component::emptyEquipSlot) {
+        if (item.second != Item_Component::emptyEquipSlot) {
 
-	  //get the item at the item type index
-	  auto &weaponSheet = zone.get<Rendering_Components::Sprite_Sheet_Info>(item.second);
-	  if (weaponSheet.sheetData) {
-	    equipmentSprites.sheet[(int) item.first].ItemSheetData = weaponSheet.sheetData;
-	    equipmentSprites.sheet[(int) item.first].name = weaponSheet.sheet_name;
-	    equipmentSprites.sheet[(int) item.first].itemID = item.second;
-	  }
-	} else if (item.second == Item_Component::emptyEquipSlot) {
-	  equipmentSprites.sheet[(int) item.first].ItemSheetData = NULL;
-	  equipmentSprites.sheet[(int) item.first].name = "empty";
-	  equipmentSprites.sheet[(int) item.first].itemID = emptyEquipSlot;
-	}
+          //get the item at the item type index
+          auto &weaponSheet = zone.get<Rendering_Components::Sprite_Sheet_Info>(item.second);
+          if (weaponSheet.sheetData) {
+            equipmentSprites.sheet[(int) item.first].ItemSheetData = weaponSheet.sheetData;
+            equipmentSprites.sheet[(int) item.first].name = weaponSheet.sheet_name;
+            equipmentSprites.sheet[(int) item.first].itemID = item.second;
+          }
+        } else if (item.second == Item_Component::emptyEquipSlot) {
+          equipmentSprites.sheet[(int) item.first].ItemSheetData = NULL;
+          equipmentSprites.sheet[(int) item.first].name = "empty";
+          equipmentSprites.sheet[(int) item.first].itemID = emptyEquipSlot;
+        }
       }
     }
   }
-}
+}// namespace equip_player_start
 
+
+/*
+ * pants
+ *      skirt   if female
+ *      pants   if male
+ *
+ * chest
+ *      tunic
+ *
+ * 2h           if warrior
+ * ranged       if archer
+ * staff        if mage
+ *
+ * */

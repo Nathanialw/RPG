@@ -1,32 +1,32 @@
 target_sources(RPG
         PUBLIC
-        character_data.h
-        character_stats.h
-        equipment.h
-        items.h
+        Stats/character_data.h
+        Stats/character_stats.h
+        Items/equipment.h
+        Items/items.h
         recruitable_units.h
-        unit_status.h
-        equip_player_start.h
-        equip_unit.h
-        action_components.h
-        item_components.h
-        ai_components.h
+        Stats/unit_status.h
+        Items/equip_player_start.h
+        Items/equip_unit.h
+        ../Components/action_components.h
+        ../Components/item_components.h
+        ../Components/ai_components.h
         ai_control.h
-        collision.h
-        combat_control.h
+        Collision/collision.h
+        Combat/combat_control.h
         create_entities.h
-        death_control.h
-        dialogue.h
+        Combat/death_control.h
+        Social/dialogue.h
         entity_control.h
-        formation_collisions.h
-        formation_positions.h
+        Collision/formation_collisions.h
+        Movement/formation_positions.h
         mounts.h
         squad.h
         squad_control.h
         unit_control.h
-        unit_formations.h
-        unit_positions.h
-        load_zone.h
+        Movement/unit_formations.h
+        Movement/unit_positions.h
+        ../Game/load_zone.h
 )
 
 

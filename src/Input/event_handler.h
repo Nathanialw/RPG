@@ -20,6 +20,7 @@
 //#include "unit_control.h"
 //#include "utilities.h"
 //#include <SDL2/SDL.h>
+#include "Items/items.h"
 #include "Maps/Pathing/pathing.h"
 #include "building_components.h"
 #include "create_entities.h"
@@ -28,7 +29,6 @@
 #include "hotbar_structs.h"
 #include "input_control.h"
 #include "interface.h"
-#include "items.h"
 #include "quad_tree.h"
 
 namespace Event_Handler {

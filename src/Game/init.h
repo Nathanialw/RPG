@@ -3,15 +3,18 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 //#include "Joystick.h"
+#include "Game/Game_Start/create_character_entity.h"
 #include "Maps/World/dynamic_entity_loader.h"
 #include "Maps/World/map.h"
 #include "Maps/World/world.h"
+#include "Objects/Collision/collision.h"
+#include "Objects/Collision/formation_collisions.h"
+#include "Objects/Movement/unit_positions.h"
+#include "Objects/Stats/character_stats.h"
+#include "Objects/Stats/unit_status.h"
 #include "ai_control.h"
-#include "character_stats.h"
-#include "collision.h"
 #include "debug_system.h"
 #include "event_handler.h"
-#include "formation_collisions.h"
 #include "graphics.h"
 #include "interface.h"
 #include "load_object_list.h"
@@ -23,8 +26,6 @@
 #include "squad_control.h"
 #include "texture_packer.h"
 #include "ui_frames.h"
-#include "unit_positions.h"
-#include "unit_status.h"
 #include <SDL2/SDL.h>
 
 namespace Init {
@@ -59,7 +60,7 @@ namespace Init {
   Character_Options::Customization options;
 
   void Recreate_Player(entt::registry &zone, int &state) {
-    Character_Stats::Recreate_Player(zone, state, options);
+    Create_Character_Entity::Recreate_Player(zone, state, options);
   }
 
   void Init_Data() {
@@ -77,7 +78,7 @@ namespace Init {
     Menu::Init();
     Menu_Options::Load_Options();
     SQLite_Dialogue::Init_Dialogue();
-    Character_Stats::Init_Items();
+    Create_Character_Entity::Init_Items();
   }
 
   //only needs to be fired once per zone
@@ -89,7 +90,7 @@ namespace Init {
     UI::Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
     Mouse::Init_mouse(zone);
     if (Create_Entities::startup) {
-      Character_Stats::Init_Player(zone, state, playerOptions);
+      Create_Character_Entity::Init_Player(zone, state, playerOptions);
     } else {
       Recreate_Player(zone, state);
     }

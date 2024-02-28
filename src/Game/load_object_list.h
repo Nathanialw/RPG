@@ -6,10 +6,10 @@
 #include <unordered_map>
 #include <vector>
 
+#include "Objects/Social/social_control.h"
 #include "SQLite_unit_data.h"
 #include "components.h"
 #include "game_objects.h"
-#include "social_control.h"
 #include "tinyxml/tinyxml2.h"
 #include "utilities.h"
 

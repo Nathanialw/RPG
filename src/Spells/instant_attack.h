@@ -1,11 +1,11 @@
 #pragma once
+#include "Objects/Combat/combat_control.h"
+#include "Objects/Social/social_control.h"
 #include "action_components.h"
-#include "combat_control.h"
 #include "components.h"
 #include "damage_text.h"
 #include "entt/entt.hpp"
 #include "movement_components.h"
-#include "social_control.h"
 #include "utilities.h"
 
 namespace Instant_Attack {

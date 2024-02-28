@@ -5,11 +5,11 @@
 #include "game_objects.h"
 #include "graphics.h"
 #include "spritesheet_structs.h"
+#include "texture_packer.h"
 #include "tinyxml/tinyxml2.h"
 #include "utilities.h"
 #include <string>
 #include <vector>
-
 
 namespace Icons {
   struct Offset {

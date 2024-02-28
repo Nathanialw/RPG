@@ -2,6 +2,7 @@
 #include "SDL2/SDL.h"
 #include "SQLite_item_data.h"
 #include "SQLite_unit_data.h"
+#include "graphics.h"
 #include "string"
 #include "unordered_map"
 #include "vector"

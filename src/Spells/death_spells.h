@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Maps/World/map.h"
+#include "Objects/Collision/collision.h"
 #include "SQLite_unit_data.h"
-#include "collision.h"
 #include "components.h"
 #include "entt/entt.hpp"
 #include "texture_packer.h"

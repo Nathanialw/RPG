@@ -1,8 +1,8 @@
 #pragma once
 
+#include "Objects/Collision/collision.h"
+#include "Objects/Stats/character_stats.h"
 #include "ai_control.h"
-#include "character_stats.h"
-#include "collision.h"
 #include "debug_system.h"
 #include "event_handler.h"
 //#include "formation_collisions.h"
@@ -43,7 +43,7 @@ namespace Game_Loop {
       //Test_Units::Create_Formation(zone);
       Pathing::Update(zone);
       Event_Handler::Update_User_Input(zone, state);
-      Character_Stats::Update_Items(zone, state);
+      Create_Character_Entity::Update_Items(zone, state);
       Player_Control::Move_To_Atack_Routine(zone, state);
       AI::Update_AI(zone, state);
       Update_Spells::Update_Spells(zone, state);

@@ -1,5 +1,5 @@
+#include "Objects/Stats/entity_data.h"
 #include "SQLite_spritesheets.h"
-#include "entity_data.h"
 #include "entt/entt.hpp"
 #include "texture_packer.h"
 

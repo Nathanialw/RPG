@@ -1,5 +1,6 @@
 #pragma once
 #include "components.h"
+#include "dynamic_entity_loader.h"
 #include "world.h"
 
 namespace Cave {

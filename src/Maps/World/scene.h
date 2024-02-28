@@ -1,21 +1,17 @@
 #pragma once
+#include "Objects/Collision/collision.h"
+#include "Objects/Movement/unit_formations.h"
+#include "Objects/Stats/character_data.h"
 #include "SQLite_unit_data.h"
-#include "character_data.h"
-#include "collision.h"
 #include "components.h"
 #include "entt/entt.hpp"
 #include "graphics.h"
 #include "recruitable_units.h"
 #include "sprite_parser.h"
+#include "texture_packer.h"
 #include "unit_control.h"
-#include "unit_formations.h"
 #include "world.h"
 #include <iostream>
-#include "entt/entt.hpp"
-#include "components.h"
-#include "SQLite_unit_data.h"
-#include "collision.h"
-#include "texture_packer.h"
 
 namespace Scene {
 
@@ -40,7 +36,7 @@ namespace Scene {
   void Spawn_Skeletons(entt::registry &zone, World::GameState &state, int x, int y) {
     for (float j = 0; j < x; ++j) {
       for (float i = 0; i < y; ++i) {
-//        Death_Spells::Summon_Skeleton(zone, state, (100.0f + (i * 60.0f)), (100.0f + (j * 60.0f)), "'skeleton'");
+        //        Death_Spells::Summon_Skeleton(zone, state, (100.0f + (i * 60.0f)), (100.0f + (j * 60.0f)), "'skeleton'");
         //	Death_Spells::Summon_Skeleton(zone, (200.0f + (i * 60.0f)), (200.0f + (j * 60.0f)), "'skeleton_mage'");
       }
     }

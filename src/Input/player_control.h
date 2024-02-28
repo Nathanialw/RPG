@@ -2,12 +2,12 @@
 
 #include "Maps/World/cave.h"
 #include "Movement/movement_functions.h"
+#include "Objects/Social/social_control.h"
 #include "components.h"
 #include "entity_control.h"
 #include "loot_panel.h"
 #include "mouse_control.h"
 #include "player_components.h"
-#include "social_control.h"
 #include "timer.h"
 #include "ui.h"
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "death_control.h"
+#include "Objects/Combat/death_control.h"
 #include "rendering_functions.h"
 
 void Update_Frame_PVG(SDL_Rect &clipRect, Rendering_Components::Sprite_Sheet_Info &sheetData, Action_Component::Action &action, Component::Direction &direction) {

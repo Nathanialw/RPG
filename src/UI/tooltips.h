@@ -1,8 +1,10 @@
 #pragma once
 
+#include "Debug/debug_components.h"
 #include "components.h"
 #include "graphics.h"
 #include "item_components.h"
+#include "ui.h"
 
 namespace Tooltip {
 

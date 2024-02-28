@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Objects/Social/social_control.h"
 #include "action_components.h"
 #include "components.h"
 #include "dynamic_quad_tree.h"
@@ -7,7 +8,6 @@
 #include "entt/entt.hpp"
 #include "mouse_control.h"
 #include "player_control.h"
-#include "social_control.h"
 #include "string"
 
 namespace Input_Control {

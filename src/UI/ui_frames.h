@@ -1,6 +1,6 @@
 #pragma once
 
-#include "building.h"
+#include "Objects/Buildings/building.h"
 #include "graphics.h"
 #include "menu.h"
 #include "unit_frames.h"

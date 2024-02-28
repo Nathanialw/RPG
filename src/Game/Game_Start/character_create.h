@@ -3,6 +3,7 @@
 #include "SDL_FontCache/SDL_FontCache.h"
 #include "base_structs.h"
 #include "camera.h"
+#include "character_options.h"
 #include "close.h"
 #include "events.h"
 #include "graphics.h"

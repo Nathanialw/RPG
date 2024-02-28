@@ -1,11 +1,11 @@
 #pragma once
 
+#include "Objects/Collision/collision.h"
+#include "Objects/Stats/entity_data.h"
 #include "SQLite_spell_data.h"
 #include "SQLite_spritesheets.h"
 #include "SQLite_unit_data.h"
-#include "collision.h"
 #include "components.h"
-#include "entity_data.h"
 #include "movement_components.h"
 #include "quad_tree.h"
 #include "spell_components.h"

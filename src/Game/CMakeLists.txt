@@ -2,7 +2,7 @@ target_sources(RPG
         PUBLIC
         init.h
         main_menu.h
-        character_create.h
+        Game_Start/character_create.h
         game_loop.h
         close.h
         load_object_list.h

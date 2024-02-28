@@ -1,14 +1,14 @@
 #pragma once
 
-#include "entt/entt.hpp"
-#include "components.h"
-#include "combat_control.h"
-#include "items.h"
-#include "tooltips.h"
-#include "graphics.h"
-#include "death_control.h"
-#include "utilities.h"
+#include "Items/items.h"
+#include "Objects/Combat/combat_control.h"
+#include "Objects/Combat/death_control.h"
 #include "blood.h"
+#include "components.h"
+#include "entt/entt.hpp"
+#include "graphics.h"
+#include "tooltips.h"
+#include "utilities.h"
 
 namespace Unit_Status {
   void Update_Collided_Unit(entt::registry &zone) {
@@ -21,7 +21,7 @@ namespace Unit_Status {
       position.x = collide.x;
       position.y = collide.y;
       if (unitType == Component::Entity_Type::spell) {
-        alive.bIsAlive = false; //destroy spell on contact
+        alive.bIsAlive = false;//destroy spell on contact
       }
       if (unitType == Component::Entity_Type::unit) {
         for (int i = 0; i < collide.InteractionList.size(); i++) {
@@ -102,4 +102,4 @@ namespace Unit_Status {
     Death_Control::isDead(zone, state);
     Death_Control::Dead_Entity_Routine(zone, state);
   }
-}
+}// namespace Unit_Status

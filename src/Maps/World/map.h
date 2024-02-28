@@ -1,7 +1,7 @@
 #pragma once
 
+#include "Objects/Collision/collision.h"
 #include "SQLite_dialogue.h"
-#include "collision.h"
 #include "create_entities.h"
 #include "dynamic_entity_loader.h"
 #include "entt/entt.hpp"
