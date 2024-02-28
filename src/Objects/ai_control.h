@@ -1,15 +1,15 @@
 #pragma once
 
+#include "Maps/Pathing/pathing.h"
+#include "Maps/World/world.h"
 #include "Movement/movement_functions.h"
 #include "ai_components.h"
 #include "components.h"
 #include "entity_control.h"
 #include "mouse_control.h"
-#include "pathing.h"
 #include "quad_tree.h"
 #include "social_control.h"
 #include "timer.h"
-#include "world.h"
 
 namespace AI {
   bool b_AI = true;

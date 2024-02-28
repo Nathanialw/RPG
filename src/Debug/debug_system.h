@@ -1,8 +1,8 @@
 #pragma once
 
-#include "debug_components.h"
-#include "scene.h"
+#include "Maps/World/scene.h"
 #include "camera.h"
+#include "debug_components.h"
 
 using namespace Scene;
 
@@ -49,7 +49,7 @@ namespace Debug_System {
   void Show_Settings(Component::Camera &camera) {
     float yPosition = 256.0f;
     for (int i = 1; i < Debug::Settings::SIZE; ++i) {
-      yPosition += 48.0f ;//(float) numObjects.k.h;
+      yPosition += 48.0f;//(float) numObjects.k.h;
       if (Debug::settings[i]) {
         SDL_DestroyTexture(numObjects.pTexture);
         std::string text = Debug::labels[i] + ":  " + std::to_string(Debug::settingsValue[i]);
@@ -98,8 +98,7 @@ namespace Debug_System {
 
     if (Debug::settings[Debug::Settings::lockFramerate]) {
       Timer::lockFramerate = true;
-    }
-    else {
+    } else {
       Timer::lockFramerate = false;
     }
 

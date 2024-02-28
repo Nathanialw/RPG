@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Maps/World/world.h"
 #include "Movement/movement_functions.h"
 #include "action_components.h"
 #include "components.h"
@@ -9,7 +10,6 @@
 #include "social_control.h"
 #include "timer.h"
 #include "utilities.h"
-#include "world.h"
 
 namespace Movement {
 

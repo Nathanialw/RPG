@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Maps/World/world.h"
 #include "action_components.h"
 #include "blood.h"
 #include "components.h"
@@ -10,7 +11,6 @@
 #include "rendering_components.h"
 #include "spritesheet_structs.h"
 #include "utilities.h"
-#include "world.h"
 #include <cstdlib>
 
 namespace Death_Component {

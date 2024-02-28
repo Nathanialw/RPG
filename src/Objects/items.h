@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Maps/World/world.h"
 #include "SQLite_item_data.h"
 #include "SQLite_spritesheets.h"
 #include "camera.h"
@@ -10,7 +11,6 @@
 #include "mouse_control.h"
 #include "texture_packer_item.h"
 #include "utilities.h"
-#include "world.h"
 #include <vector>
 
 using namespace Item_Component;
@@ -155,11 +155,6 @@ namespace Items {
     sheetData.sheetData = equippedSheetData.itemData;
     sheetData.sheet_name = equippedSheetData.index;
 
-    //get from spritesheet
-    //    int column = weaponMaterials[material];
-    //    int row = weaponTypes[weaponType];
-    //    int size = 32;
-    //    SDL_Rect sprite = {column * size, row * size, size, size};
     Icons::Icon_Clip sprite = Icons::iconClipRects[item_name.icon_name];
 
     auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::icons, rarityBorder[rarity], Graphics::bagSlotBorder);
@@ -167,12 +162,6 @@ namespace Items {
     icon.clipIcon = {0, 0, 256, 256};
     icon.renderRectSize = {64.0f, 64.0f};
     icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
-
-    //    auto &icon = zone.emplace_or_replace<Component::Icon>(item, Graphics::emptyBagIcon, Graphics::weapons_icons, rarityBorder[rarity], Graphics::bagSlotBorder);
-    //    icon.clipSprite = sprite;
-    //    icon.clipIcon = {0, 0, 256, 256};
-    //    icon.renderRectSize = {64.0f, 64.0f};
-    //    icon.renderPositionOffset = {icon.renderRectSize.x / 2, icon.renderRectSize.y / 2};
 
     zone.emplace_or_replace<Weapon_Damage>(item, 1, 10);
     return equippedSheetData.index;
@@ -230,11 +219,6 @@ namespace Items {
     std::string itemName = armor + " " + type;//ei. "Copper Pants" not implemented yet
     zone.emplace_or_replace<Item_Type>(item, itemType);
     zone.emplace_or_replace<Rarity>(item, rarity);
-
-    //    int column = itemTypes[itemType];
-    //    int row = armorTypes[armorType];
-    //    int size = 64;
-    //    SDL_Rect sprite = {column * size, row * size, size, size};
 
     Texture_Packer_Item::Item_Data_And_Index equippedSheetData;
     Texture_Packer_Item::Get_Item_Portrait_Texture(item_name.name, ("assets/" + item_name.face_pngPath).c_str());

@@ -3,18 +3,19 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 //#include "Joystick.h"
+#include "Maps/World/dynamic_entity_loader.h"
+#include "Maps/World/map.h"
+#include "Maps/World/world.h"
 #include "ai_control.h"
 #include "character_stats.h"
 #include "collision.h"
 #include "debug_system.h"
-#include "dynamic_entity_loader.h"
 #include "event_handler.h"
 #include "formation_collisions.h"
 #include "graphics.h"
 #include "interface.h"
 #include "load_object_list.h"
 #include "main_menu.h"
-#include "map.h"
 #include "menu.h"
 #include "movement.h"
 #include "rendering.h"
@@ -24,7 +25,6 @@
 #include "ui_frames.h"
 #include "unit_positions.h"
 #include "unit_status.h"
-#include "world.h"
 #include <SDL2/SDL.h>
 
 namespace Init {

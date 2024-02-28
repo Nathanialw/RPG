@@ -1,7 +1,7 @@
 #pragma once
-#include "dynamic_entity_loader.h"
+#include "Maps/World/dynamic_entity_loader.h"
+#include "Maps/World/world.h"
 #include "mouse_control.h"
-#include "world.h"
 
 namespace Pathing {
 

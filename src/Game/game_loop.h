@@ -19,7 +19,7 @@
 //#include "ui_gameloop_function_times.h"
 //#include "unit_positions.h"
 //#include "unit_status.h"
-#include "pathing.h"
+#include "Maps/Pathing/pathing.h"
 #include "quad_tree.h"
 #include "update_spells.h"
 #include <SDL2/SDL.h>

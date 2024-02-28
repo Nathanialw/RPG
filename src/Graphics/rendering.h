@@ -1,12 +1,13 @@
 #pragma once
 
 #include "Fog_Of_War/fog_of_war.h"
+#include "Maps/Pathing/pathing.h"
+#include "Maps/World/world_grid.h"
 #include "camera.h"
 #include "entt/entt.hpp"
 #include "fog.h"
 #include "frame_rendering.h"
 #include "graphics.h"
-#include "pathing.h"
 #include "pause.h"
 #include "render_iso_tiles.h"
 #include "rendering_components.h"
@@ -14,7 +15,6 @@
 #include "tooltips.h"
 #include "ui_resources.h"
 #include "utilities.h"
-#include "world_grid.h"
 #include <SDL2/SDL.h>
 #include <vector>
 

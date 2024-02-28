@@ -1,11 +1,11 @@
 #pragma once
 #include "Debug/debug_components.h"
+#include "Maps/World/dynamic_entity_loader.h"
+#include "Maps/World/world.h"
 #include "building_components.h"
 #include "collision.h"
-#include "dynamic_entity_loader.h"
 #include "dynamic_quad_tree.h"
 #include "item_components.h"
-#include "world.h"
 
 namespace Quad_Tree {
 

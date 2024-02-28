@@ -1,10 +1,10 @@
 #pragma once
 #include "Fire/fire.h"
 #include "Fog_Of_War/fog_of_war.h"
+#include "Maps/World/cave.h"
 #include "SDL2/SDL.h"
 #include "ai_control.h"
 #include "array"
-#include "cave.h"
 #include "components.h"
 #include "hotbar_structs.h"
 #include "info.h"

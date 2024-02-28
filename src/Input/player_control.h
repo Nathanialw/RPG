@@ -1,7 +1,7 @@
 #pragma once
 
+#include "Maps/World/cave.h"
 #include "Movement/movement_functions.h"
-#include "cave.h"
 #include "components.h"
 #include "entity_control.h"
 #include "loot_panel.h"

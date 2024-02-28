@@ -1,10 +1,10 @@
 #pragma once
 
+#include "Maps/World/world.h"
 #include "SDL_FontCache/SDL_FontCache.h"
 #include "components.h"
 #include "entt/entt.hpp"
 #include "rendering_components.h"
-#include "world.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_render.h>
