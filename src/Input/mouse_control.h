@@ -93,18 +93,23 @@ namespace Mouse {
     return true;
   }
 
-  entt::entity *Swap_Entity_On_Cursor_With_Entity(entt::registry &zone, entt::entity &toMouse, const Component::Icon_Type type) {
+  struct isEntity {
+    bool exists;
+    entt::entity entity_ID;
+  };
+
+  isEntity Swap_Entity_On_Cursor_With_Entity(entt::registry &zone, entt::entity &toMouse, const Component::Icon_Type type) {
     if (!mouseData.itemCurrentlyHeld || mouseData.type != type) {
       Utilities::Log("Set_Cursor_As_Entity() failed, itemCurrentlyHeld: " + std::to_string((int) mouseData.itemCurrentlyHeld) + ", mouse type: " + std::to_string((int) mouseData.type) + ", entity type: " + std::to_string((int) type));
-      return nullptr;
+      return {false};
     }
     entt::entity ItemInSlot = toMouse;
-    entt::entity *fromMouse = &mouseData.mouseItem;
+    entt::entity fromMouse = mouseData.mouseItem;
 
     toMouse = Mouse_Struct::mouseData.mouseItem;
     Mouse::Set_Cursor_As_Cursor(zone);
     Mouse::Set_Cursor_As_Entity(zone, ItemInSlot, type);
-    return fromMouse;
+    return {true, fromMouse};
   };
 
   bool FRect_inside_Cursor(SDL_FRect &rect) {

@@ -44,11 +44,11 @@ namespace UI {
 
     void Bag_Item_And_Swap_With_Mouse(entt::registry &zone, int &state, entt::entity &playerID, int &slotNum) {
       auto &bag = zone.get<Component::Bag>(playerID).bag;
-      entt::entity *fromMouse = Mouse::Swap_Entity_On_Cursor_With_Entity(zone, bag[slotNum], Component::Icon_Type::item);
-      if (fromMouse) {
+      auto fromMouse = Mouse::Swap_Entity_On_Cursor_With_Entity(zone, bag[slotNum], Component::Icon_Type::item);
+      if (fromMouse.exists) {
         zone.remove<Component::Inventory>(bag[slotNum]);
-        bag[slotNum] = *fromMouse;
-        zone.emplace_or_replace<Component::Inventory>(*fromMouse);
+        bag[slotNum] = fromMouse.entity_ID;
+        zone.emplace_or_replace<Component::Inventory>(fromMouse.entity_ID);
       }
     }
 
@@ -256,11 +256,11 @@ namespace UI {
     void Equip_Item_And_Swap_With_Mouse(entt::registry &zone, Item_Component::Item_Type &itemType, entt::entity &player) {
       if (Check_Mouse_Is_item(zone)) {
         auto &equipment = zone.get<Item_Component::Equipment>(player);
-        entt::entity *ItemInSlot = Mouse::Swap_Entity_On_Cursor_With_Entity(zone, equipment.equippedItems[itemType], Component::Icon_Type::item);
+        auto ItemInSlot = Mouse::Swap_Entity_On_Cursor_With_Entity(zone, equipment.equippedItems[itemType], Component::Icon_Type::item);
 
-        if (zone.any_of<Component::Inventory>(*ItemInSlot)) zone.remove<Component::Inventory>(*ItemInSlot);
-        if (itemType == Item_Component::Item_Type::mainhand) { zone.get<Action_Component::Action>(player).weaponType = zone.get<Item_Component::Weapon_Type>(*ItemInSlot); }
-        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(*ItemInSlot);
+        if (zone.any_of<Component::Inventory>(ItemInSlot.entity_ID)) zone.remove<Component::Inventory>(ItemInSlot.entity_ID);
+        if (itemType == Item_Component::Item_Type::mainhand) { zone.get<Action_Component::Action>(player).weaponType = zone.get<Item_Component::Weapon_Type>(ItemInSlot.entity_ID); }
+        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(ItemInSlot.entity_ID);
       }
     }
 
@@ -542,7 +542,7 @@ namespace UI {
       Utilities::Log("Pick_Up_Item_To_Bag() failed item does not exist");
       return false;
     }
-    
+
     auto &bag = zone.get<Component::Bag>(entity).bag;
     for (auto &slot: bag) {
       if (slot == Bag_UI::emptyBagSlot[state]) {

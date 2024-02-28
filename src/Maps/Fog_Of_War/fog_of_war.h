@@ -6,8 +6,8 @@
 
 namespace Fog_Of_War {
 
-  const int numCells = 32;
-  int cellSize = 16;
+  const int numCells = 128;
+  int cellSize = 1;
   int lightRadius = 0;
   Uint8 maxDarkness = 245;
   Uint8 minDarkness = 100;

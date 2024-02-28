@@ -561,7 +561,7 @@ namespace Component {
 
   struct Dungeon {
     int instance;
-    std::string tilesetName = "hell";
+    std::string tilesetName = "cave";
   };
 
   struct Inventory {
