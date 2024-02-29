@@ -310,6 +310,10 @@ namespace Maps {
 
             if (!World_Data::tilesEntities[0][i][j].created) {
               Generate_Trees(zone, state, rect, World::world[state].tileset, World_Data::tilesEntities[0][i][j]);
+              if (Texture_Data::Packer_Textures.contains(World::world[state].tileset)) {
+                World_Data::tilesEntities[0][i][j].tileObject = (Create_Entities::Create_Tile(zone, state, i, j, "labyrinth0_" + std::to_string(World_Data::tilesEntities[0][i][j].tileTexture)));
+                World_Data::tilesEntities[0][i][j].isTileObject = true;
+              }
               World_Data::tilesEntities[0][i][j].created = true;
             }
 
@@ -323,12 +327,12 @@ namespace Maps {
             renderRect.w = (float) World::size.width;
             renderRect.h = (float) World::size.height;
 
+            SDL_Texture *texture = World::world[state].tileTextures[0];
+
             if (Texture_Data::Packer_Textures.contains(World::world[state].tileset)) {
-              SDL_Texture *texture = World::world[state].tileTextures[0];
               auto clipRect = Texture_Data::Packer_Textures[World::world[state].tileset].frameList[World_Data::tilesEntities[0][i][j].tileTexture].clip;
               SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
             } else {
-              SDL_Texture *texture = World::world[state].tileTextures[0];
               SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &renderRect);
             }
 

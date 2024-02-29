@@ -11,9 +11,11 @@ namespace World_Data {
 
   struct Tile {
     std::array<object, maxObjectsPerTile> objects{};
-    bool created = false;
-    float noise;
+    entt::entity tileObject{};
+    bool isTileObject = false;
     int tileTexture = 0;
+    bool created = false;
+    float noise{};
   };
 
   const int REGION_SIZE = 32;

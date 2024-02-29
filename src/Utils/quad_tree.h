@@ -67,6 +67,18 @@ namespace Quad_Tree {
         int i = view.get<Component::Tile_Index>(entity).i;
         int j = view.get<Component::Tile_Index>(entity).j;
         World_Data::tilesEntities[0][i][j].created = false;
+
+        if (World_Data::tilesEntities[0][i][j].isTileObject)
+          if (World_Data::tilesEntities[0][i][j].tileObject != (entt::entity) 0)
+            if (zone.valid(World_Data::tilesEntities[0][i][j].tileObject)) {
+              if (zone.any_of<Component::Body>(World_Data::tilesEntities[0][i][j].tileObject)) {
+                auto &body = zone.get<Component::Body>(World_Data::tilesEntities[0][i][j].tileObject).body;
+                Collision::collisionList[state]->DestroyBody(body);
+                zone.remove<Component::Body>(World_Data::tilesEntities[0][i][j].tileObject);
+              }
+              zone.destroy(World_Data::tilesEntities[0][i][j].tileObject);
+            }
+
         //remove from tree
         if (i < 0 || j < 0) {
           Utilities::Log("tile objects: " + std::to_string(World_Data::tilesEntities[0][i][j].objects.size()));

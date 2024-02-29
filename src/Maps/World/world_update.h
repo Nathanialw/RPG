@@ -31,7 +31,7 @@ namespace World_Update {
     for (int i = 0; i < World_Data::REGION_SIZE; ++i) {
       for (int j = 0; j < World_Data::REGION_SIZE; ++j) {
         World_Data::tilesEntities[0][i][j].created = false;
-        World_Data::tilesEntities[0][i][j].noise = Simplex_Noise::fPerlinNoiseArray2D[(i * World_Data::REGION_SIZE) + j];
+        World_Data::tilesEntities[0][i][j].noise = Simplex_Noise::fPerlinNoiseArray2D[(j * World_Data::REGION_SIZE) + i];
         World_Data::tilesEntities[0][i][j].tileTexture = Labyrinth::labyrinth[(j * World_Data::REGION_SIZE) + i];
       }
     }

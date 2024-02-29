@@ -11,11 +11,11 @@ namespace Collision {
   //  std::map<World::GameState, b2World*> world;
   std::vector<b2World *> collisionList(World_Data::numZones);
 
-  const float timeStep = 1.0f / 5.0f;
+  const float timeStep = 1.0f / 60.0f;
   const float M2P = 60.0f;
   const float P2M = 1.0f / M2P;
-  int32 velocityIterations = 6;
-  int32 positionIterations = 8;
+  int32 velocityIterations = 1;
+  int32 positionIterations = 1;
 
   float collision_Timestep = 0.0f;
 
@@ -227,7 +227,6 @@ namespace Collision {
       auto &position = zone.get<Component::Position>(entity);
       auto &offset = zone.get<Rendering_Components::Sprite_Offset>(entity);
 
-      Utilities::Log(colliderData.placementOffset - colliderData.offset.y);
       position.y += (colliderData.placementOffset - colliderData.offset.y);
       offset.y += (colliderData.placementOffset - colliderData.offset.y);
 
@@ -253,7 +252,7 @@ namespace Collision {
 
   void Update_Collision(entt::registry &zone, int &state) {
     auto view = zone.view<Component::Position>();
-    auto view2 = zone.view<Rendering_Components::Sprite_Sheet_Info>();
+
     b2World *world = collisionList[state];
     b2Body *body = world->GetBodyList();
     int i = 0;
@@ -267,13 +266,12 @@ namespace Collision {
       while (body) {
         if (body->GetType() == b2_dynamicBody) {
           auto entity_ID = (entt::entity) body->GetUserData().entity_ID;
-          if (zone.any_of<Component::Position>(entity_ID)) {
+          if (zone.all_of<Component::Position>(entity_ID)) {
             auto &position = view.get<Component::Position>(entity_ID);
 
             b2Vec2 newPosition = body->GetPosition();
             position.x = newPosition.x;
             position.y = newPosition.y;
-          } else {
           }
         }
         i++;

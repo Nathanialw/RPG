@@ -266,6 +266,7 @@ namespace Component {
     building,
     spell,
     prop,
+    tile,
     SIZE
   };
 
