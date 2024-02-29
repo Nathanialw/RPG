@@ -24,7 +24,7 @@ namespace Graphics {
   TTF_Font *font;
   FC_Font *fcFont = FC_CreateFont();
 
-  std::vector<entt::entity> defaultIcon(World::numZones);
+  std::vector<entt::entity> defaultIcon(World_Data::numZones);
 
   struct Surface_Data {
     SDL_Texture *pTexture;
@@ -212,7 +212,7 @@ namespace Graphics {
   //both unitID and filepath are stored in tiled map object
   SDL_Texture *Load_Texture(int &unitID, std::array<SDL_Texture *, numberOfTextures> &textures, const char *filepath) {
     textures[unitID] = createTexture(filepath);
-    if (textures[unitID] == NULL) {
+    if (textures[unitID] == nullptr) {
       unitTextures[unitID] = Graphics::default_icon;
     }
     return textures[unitID];
@@ -221,10 +221,10 @@ namespace Graphics {
   //when creating the game objet
   SDL_Texture *Create_Game_Object(int &unitID, const char *filepath) {
     SDL_Texture *texture;
-    if (unitTextures[unitID] == NULL) {
+    if (unitTextures[unitID] == nullptr) {
       Load_Texture(unitID, unitTextures, filepath);
       texture = unitTextures[unitID];
-      if (texture == NULL) {
+      if (texture == nullptr) {
         std::cout << "Create_Game_Object() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
@@ -244,9 +244,9 @@ namespace Graphics {
 
   SDL_Texture *Load_Portrait(int &unitID, const char *filepath) {
     SDL_Texture *texture;
-    if (unitPortaits[unitID] == NULL) {
+    if (unitPortaits[unitID] == nullptr) {
       texture = Load_Texture(unitID, unitPortaits, filepath);
-      if (texture == NULL) {
+      if (texture == nullptr) {
         //        std::cout << "Load_Portrait() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
@@ -266,9 +266,9 @@ namespace Graphics {
 
   SDL_Texture *Load_Body(int &unitID, const char *filepath) {
     SDL_Texture *texture;
-    if (unitBodies[unitID] == NULL) {
+    if (unitBodies[unitID] == nullptr) {
       texture = Load_Texture(unitID, unitBodies, filepath);
-      if (texture == NULL) {
+      if (texture == nullptr) {
         //        std::cout << "Load_Body() failed to load  texture from file: " << filepath << std::endl;
         return texture;
       } else {
@@ -288,9 +288,9 @@ namespace Graphics {
 
   //when creating the game objet
   void Create_Tileset(std::string &name, const char *filepath) {
-    if (pTexture[name] == NULL) {
+    if (pTexture[name] == nullptr) {
       pTexture[name] = createTexture(filepath);
-      if (pTexture[name] == NULL) {
+      if (pTexture[name] == nullptr) {
         std::cout << "Create_Tileset() failed to load  texture from file: " << filepath << std::endl;
       } else {
         //	std::cout << "loaded from file: " << filepath << std::endl;

@@ -1,7 +1,7 @@
 #pragma once
 #include "Debug/debug_components.h"
-#include "Maps/World/dynamic_entity_loader.h"
 #include "Maps/World/world.h"
+#include "Maps/World/world_update.h"
 #include "Objects/Collision/collision.h"
 #include "building_components.h"
 #include "dynamic_quad_tree.h"
@@ -16,10 +16,10 @@ namespace Quad_Tree {
 
   //zoneSize is the area being searched for objects
   //will be attached to the map later
-  SDL_FRect zoneSize = {0.0f, 0.0f, (REGION_SIZE * World::size.height) + World::size.height, (REGION_SIZE * World::size.width) + World::size.width};
+  SDL_FRect zoneSize = {0.0f, 0.0f, (World_Data::REGION_SIZE * World::size.height) + World::size.height, (World_Data::REGION_SIZE * World::size.width) + World::size.width};
   //  DynamicQuadTreeContainer<someObjectWithArea> treeObjects;
   //  std::unordered_map<World::GameState, Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees;
-  std::vector<Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees(World::numZones);
+  std::vector<Dynamic_Quad_Tree::DynamicQuadTreeContainer<someObjectWithArea>> quadTrees(World_Data::numZones);
   float offset = 40.0f;
 
   void Fill_Quad_Tree(entt::registry &zone, int &state) {
@@ -66,13 +66,13 @@ namespace Quad_Tree {
       if (zone.any_of<Component::Tile_Index>(entity)) {
         int i = view.get<Component::Tile_Index>(entity).i;
         int j = view.get<Component::Tile_Index>(entity).j;
-        tilesEntities[0][i][j].created = false;
+        World_Data::tilesEntities[0][i][j].created = false;
         //remove from tree
         if (i < 0 || j < 0) {
-          Utilities::Log("tile objects: " + std::to_string(tilesEntities[0][i][j].objects.size()));
+          Utilities::Log("tile objects: " + std::to_string(World_Data::tilesEntities[0][i][j].objects.size()));
           continue;
         }
-        for (auto tileEntity: tilesEntities[0][i][j].objects) {
+        for (auto tileEntity: World_Data::tilesEntities[0][i][j].objects) {
           if (tileEntity.entity != (entt::entity) 0) {
             if (zone.valid(tileEntity.entity)) {
               if (!zone.any_of<Component::Interaction_Rect>(tileEntity.entity)) {

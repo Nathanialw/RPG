@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Maps/Pathing/pathing.h"
+#include "Maps/Pathing/a_star.h"
 #include "Maps/World/world.h"
 #include "Movement/movement_functions.h"
 #include "Objects/Social/social_control.h"
@@ -36,7 +36,7 @@ namespace AI {
         Entity_Control::Melee_Attack(zone, entity_ID, target_ID, targetPosition);
       } else {
         auto pathing = zone.emplace_or_replace<Component::Pathing>(entity_ID);
-        Pathing::Solve_AStar(entityPosition, targetPosition, pathing.path);
+        A_Star::Solve_AStar(entityPosition, targetPosition, pathing.path);
 
         if (pathing.path.empty()) {
           Utilities::Log("In target Node, moving directly");
@@ -44,8 +44,8 @@ namespace AI {
           return;
         }
 
-        float y = (pathing.path[pathing.path.size() - 1].y * Pathing::nNodeSize) + (Pathing::nNodeSize / 2.0f);
-        float x = (pathing.path[pathing.path.size() - 1].x * Pathing::nNodeSize) + (Pathing::nNodeSize / 2.0f);
+        float y = (pathing.path[pathing.path.size() - 1].y * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
+        float x = (pathing.path[pathing.path.size() - 1].x * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
 
         Entity_Control::Move_Order(zone, entity_ID, x, y);
       }
@@ -116,15 +116,15 @@ namespace AI {
         auto spawnPosition = zone.get<Component::Spawn_Location>(unit_ID).position;
         if (!Movement_Functions::Check_If_Arrived(unitPosition, spawnPosition)) {
           auto pathing = zone.emplace_or_replace<Component::Pathing>(unit_ID);
-          Pathing::Solve_AStar(unitPosition, spawnPosition, pathing.path);
+          A_Star::Solve_AStar(unitPosition, spawnPosition, pathing.path);
           //return to spawn location if he is not already there
           if (pathing.path.empty()) {
             Utilities::Log("In target Node, moving directly");
             Entity_Control::Move_Order(zone, unit_ID, spawnPosition.x, spawnPosition.y);
             break;
           }
-          float y = (pathing.path[pathing.path.size() - 1].y * Pathing::nNodeSize) + (Pathing::nNodeSize / 2.0f);
-          float x = (pathing.path[pathing.path.size() - 1].x * Pathing::nNodeSize) + (Pathing::nNodeSize / 2.0f);
+          float y = (pathing.path[pathing.path.size() - 1].y * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
+          float x = (pathing.path[pathing.path.size() - 1].x * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
           Entity_Control::Move_Order(zone, unit_ID, x, y);
         } else {
           zone.remove<Component::Mouse_Move>(unit_ID);

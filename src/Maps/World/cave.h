@@ -1,7 +1,7 @@
 #pragma once
 #include "components.h"
-#include "dynamic_entity_loader.h"
 #include "world.h"
+#include "world_update.h"
 
 namespace Cave {
 
@@ -13,7 +13,7 @@ namespace Cave {
       World::increment_Zone();
       auto &dungeon = zone.emplace_or_replace<Component::Dungeon>(entity);
       dungeon.instance = World::Zone_Count;
-      dungeon.tilesetName = "cave";
+      dungeon.tilesetName = "labyrinth";
       zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::portal);
       return true;
     }
@@ -32,7 +32,7 @@ namespace Cave {
     World::world[newZone.instance].previousZoneIndex = state;
     World::world[newZone.instance].tilesetName = newZone.tilesetName;
     World::currentZone.next = newZone.instance;
-    Clear_Tiles_Array(zone);
+    World_Update::Clear_Tiles_Array(zone);
   }
 
 }// namespace Cave

@@ -1,5 +1,6 @@
 #pragma once
 #include "SDL2/SDL.h"
+#include "XML_Parsers/texture_data.h"
 #include "entt/entt.hpp"
 #include "string"
 
@@ -47,11 +48,11 @@ namespace World {
     std::string cave;
     Tile_Type type;
     std::vector<SDL_Texture *> tileTextures;
+    std::unordered_map<std::string, Rendering_Components::Sheet_Data> *sheetData;
     bool loaded = false;
   };
 
-  int numZones = 200;//max number of zones
-  std::vector<Tileset> world(numZones);
+  std::vector<Tileset> world(World_Data::numZones);
   //  std::array<Tileset, 4> regions;
 
   struct Current_Zone {

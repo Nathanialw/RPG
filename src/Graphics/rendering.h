@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Fog_Of_War/fog_of_war.h"
-#include "Maps/Pathing/pathing.h"
+#include "Maps/Pathing/a_star.h"
 #include "Maps/World/world_grid.h"
 #include "camera.h"
 #include "entt/entt.hpp"
@@ -413,7 +413,7 @@ namespace Rendering {
       Render_Map(zone, state, camera);
       Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
                                                  //            RenderLine(zone, camera);
-                                                 //      Pathing::Draw(camera);
+                                                 //      A_Star::Draw(camera);
       Fog_Of_War::Render(camera);
       Items::Show_Ground_Items(zone, camera);
       Items::Unit_Name_On_Mouseover(zone, camera);

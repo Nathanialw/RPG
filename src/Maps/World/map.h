@@ -3,13 +3,13 @@
 #include "Objects/Collision/collision.h"
 #include "SQLite_dialogue.h"
 #include "create_entities.h"
-#include "dynamic_entity_loader.h"
 #include "entt/entt.hpp"
 #include "tmxlite/Layer.hpp"
 #include "tmxlite/Map.hpp"
 #include "tmxlite/ObjectGroup.hpp"
 #include "tmxlite/TileLayer.hpp"
 #include "world.h"
+#include "world_update.h"
 #include <iostream>
 //#include "game_objects.h"
 //#include "graphics.h"
@@ -49,6 +49,12 @@ namespace Maps {
     World::world[instance].mobType = data.tileUnits;
     World::world[instance].tileset = data.name;
     World::world[instance].tileTextures.emplace_back(Graphics::createTexture(data.tileset.c_str()));
+
+    if (!data.tilesetXML.empty()) {
+      Rendering_Components::Sheet_Data spritesheet;
+      World::world[instance].sheetData = Texture_Packer::TexturePacker_Import_Tileset(spritesheet, data.name, data.name, data.tilesetXML.c_str());
+    }
+
     World::world[instance].cave = "cave_entrances";
     //    World::tileSets[(int)World::Tile_Type::grass].music = "assets/music/nature.ogg";
   }
@@ -192,8 +198,8 @@ namespace Maps {
     int numUnits = 0;
     Procedural_Components::Seed seed;
 
-    for (int i = 0; i < REGION_SIZE; ++i) {
-      for (int j = 0; j < REGION_SIZE; ++j) {
+    for (int i = 0; i < World_Data::REGION_SIZE; ++i) {
+      for (int j = 0; j < World_Data::REGION_SIZE; ++j) {
         seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
         int numObjects = Procedural_Generation::Random_Int(0, 100, seed);
         if (numObjects < 5) {
@@ -222,11 +228,11 @@ namespace Maps {
     int xmlIndex = 0;
     std::string objectName;
 
-    int numTiles = REGION_SIZE * REGION_SIZE;
+    int numTiles = World_Data::REGION_SIZE * World_Data::REGION_SIZE;
     int avgPerRegion = 1;
 
-    for (int i = 0; i < REGION_SIZE; ++i) {
-      for (int j = 0; j < REGION_SIZE; ++j) {
+    for (int i = 0; i < World_Data::REGION_SIZE; ++i) {
+      for (int j = 0; j < World_Data::REGION_SIZE; ++j) {
         seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
         int numObjects = Procedural_Generation::Random_Int(0, numTiles, seed);
         if (numObjects < avgPerRegion) {
@@ -247,14 +253,14 @@ namespace Maps {
   //The first time the tile is rendered generate objects but only the first time
 
   //spawn static units onto the map that despawn when you move too far away
-  void Generate_Trees(entt::registry &zone, int &state, SDL_FRect rect, std::string &tileSet, Tile &tile) {
+  void Generate_Trees(entt::registry &zone, int &state, SDL_FRect rect, std::string &tileSet, World_Data::Tile &tile) {
     Procedural_Components::Seed seed;
     seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
 
     // the number of objects(trees and rocks) should be retrieved from an array created by simplex noise in order to create a proper forest
     // later, more trees = forest, more rocks = forest edge
     //    int numObjects = Procedural_Generation::Random_Int(0, 8, seed);
-    int numObjects = maxObjectsPerTile * tile.noise;
+    int numObjects = World_Data::maxObjectsPerTile * tile.noise;
 
     for (int k = 0; k < numObjects; k++) {
       float x = Procedural_Generation::Random_float(0, (int) World::size.width, seed);
@@ -286,14 +292,14 @@ namespace Maps {
         if (i < 0 || j < 0) {
           continue;
         } else {
-          if (i > REGION_SIZE || j > REGION_SIZE) {
+          if (i > World_Data::REGION_SIZE || j > World_Data::REGION_SIZE) {
             continue;
           } else {
             // generate tile type
-            Procedural_Components::Seed seed;
-            seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
-            int textureArraySize = World::world[state].tileTextures.size();
-            int tile = Procedural_Generation::Random_Int(0, textureArraySize, seed);
+            //            Procedural_Components::Seed seed;
+            //            seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
+            //            int textureArraySize = World::world[state].tileTextures.size();
+            //            int tile = Procedural_Generation::Random_Int(0, textureArraySize, seed);
 
             SDL_FRect rect;
             rect.x = i * World::size.width;
@@ -301,11 +307,10 @@ namespace Maps {
             rect.w = World::size.width;
             rect.h = World::size.height;
 
-            SDL_Texture *texture = World::world[state].tileTextures[tile];
 
-            if (!tilesEntities[0][i][j].created) {
-              Generate_Trees(zone, state, rect, World::world[state].tileset, tilesEntities[0][i][j]);
-              tilesEntities[0][i][j].created = true;
+            if (!World_Data::tilesEntities[0][i][j].created) {
+              Generate_Trees(zone, state, rect, World::world[state].tileset, World_Data::tilesEntities[0][i][j]);
+              World_Data::tilesEntities[0][i][j].created = true;
             }
 
             // fog needs to be rendered over the tile
@@ -317,7 +322,15 @@ namespace Maps {
             renderRect.y = (float) j * World::size.height - camera.screen.y;
             renderRect.w = (float) World::size.width;
             renderRect.h = (float) World::size.height;
-            SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &renderRect);
+
+            if (Texture_Data::Packer_Textures.contains(World::world[state].tileset)) {
+              SDL_Texture *texture = World::world[state].tileTextures[0];
+              auto clipRect = Texture_Data::Packer_Textures[World::world[state].tileset].frameList[World_Data::tilesEntities[0][i][j].tileTexture].clip;
+              SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
+            } else {
+              SDL_Texture *texture = World::world[state].tileTextures[0];
+              SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &renderRect);
+            }
 
             //            SDL_RenderCopyF(Graphics::renderer, Graphics::fog, nullptr, &renderRect);
           }

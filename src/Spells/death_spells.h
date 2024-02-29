@@ -1,11 +1,11 @@
 #pragma once
 
+#include "Graphics/XML_Parsers/texture_packer.h"
 #include "Maps/World/map.h"
 #include "Objects/Collision/collision.h"
 #include "SQLite_unit_data.h"
 #include "components.h"
 #include "entt/entt.hpp"
-#include "texture_packer.h"
 
 namespace Death_Spells {
 

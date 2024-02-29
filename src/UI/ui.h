@@ -19,7 +19,7 @@ namespace UI {
 
   namespace Bag_UI {
     namespace {
-      std::vector<entt::entity> emptyBagSlot(World::numZones);
+      std::vector<entt::entity> emptyBagSlot(World_Data::numZones);
       f2 bagoffset = {32.0f, 544.0f};
       f2 numOfSlots = {8.0f, 4.0f};
       int iTotalSlots = (int) numOfSlots.x * (int) numOfSlots.y;

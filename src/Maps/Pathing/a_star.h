@@ -1,9 +1,9 @@
 #pragma once
-#include "Maps/World/dynamic_entity_loader.h"
 #include "Maps/World/world.h"
+#include "Maps/World/world_update.h"
 #include "mouse_control.h"
 
-namespace Pathing {
+namespace A_Star {
 
   struct sNode {
     bool bObstacle = false;
@@ -20,8 +20,8 @@ namespace Pathing {
   int scale = 8;
 
   sNode *nodes = nullptr;
-  int nMapWidth = REGION_SIZE * scale;
-  int nMapHeight = REGION_SIZE * scale;
+  int nMapWidth = World_Data::REGION_SIZE * scale;
+  int nMapHeight = World_Data::REGION_SIZE * scale;
 
   sNode *nodeStart = nullptr;
   sNode *nodeEnd = nullptr;
@@ -267,9 +267,9 @@ namespace Pathing {
   }
 
   void Draw_Paths(entt::registry &zone, Component::Camera &camera) {
-    //    auto view = zone.view<Component::Pathing>();
+    //    auto view = zone.view<Component::A_Star>();
     //    for (auto entity: view) {
-    //      auto path = view.get<Component::Pathing>(entity).path;
+    //      auto path = view.get<Component::A_Star>(entity).path;
     //
     //      if (path.size() >= 2) {
     //        for (int i = 0; i < path.size() - 1; ++i) {
@@ -285,5 +285,5 @@ namespace Pathing {
     //    }
   }
 
-}// namespace Pathing
+}// namespace A_Star
  // maybe preset maps where the cell size is the size of the entity (ie. radius of 20 would use the grid with a cell size of 20x20)

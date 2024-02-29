@@ -1,5 +1,5 @@
 #pragma once
-#include "Maps/World/world.h"
+#include "Maps/World/world_data.h"
 #include "entt/entt.hpp"
 #include <SDL2/SDL.h>
 #include <map>
@@ -249,7 +249,7 @@ namespace Item_Component {
   struct Equip_Items_Type {
   };
 
-  std::vector<entt::entity> emptyEquipSlot(World::numZones);
+  std::vector<entt::entity> emptyEquipSlot(World_Data::numZones);
 
   struct Equipment {
     Unit_Equip_Type type = Unit_Equip_Type::none;

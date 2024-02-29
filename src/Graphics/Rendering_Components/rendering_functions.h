@@ -1,7 +1,8 @@
+#pragma once
+#include "Graphics/XML_Parsers/texture_data.h"
 #include "Objects/Stats/entity_data.h"
 #include "SQLite_spritesheets.h"
 #include "entt/entt.hpp"
-#include "texture_packer.h"
 
 namespace Rendering {
 
@@ -22,7 +23,7 @@ namespace Rendering {
       xmlIndex = Game_Objects_Lists::objectIndexes[templateName];
     }
 
-    Texture_Packer::Sheet_Data sheetData = Texture_Packer::Get_Texture_Data(textureIndex, templateName, img, xml, sheetName);
+    Texture_Data::Sheet_Data sheetData = Texture_Packer::Get_Texture_Data(textureIndex, templateName, img, xml, sheetName);
     auto &sprite = zone.emplace_or_replace<Rendering_Components::Interior_Sheet_Info>(entity);
     auto &interior = sprite.interior;
     interior.sheet_name = sheetName;
@@ -45,7 +46,7 @@ namespace Rendering {
     int textureIndex = Entity_Data::Check_For_Template_ID(templateName);
     std::string sheetName;
 
-    Texture_Packer::Sheet_Data sheetData = Texture_Packer::Get_Texture_Data(textureIndex, templateName, img, xml, sheetName);
+    Texture_Data::Sheet_Data sheetData = Texture_Packer::Get_Texture_Data(textureIndex, templateName, img, xml, sheetName);
 
     if (xmlIndex == -1) {
       xmlIndex = Game_Objects_Lists::objectIndexes[templateName];

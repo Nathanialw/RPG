@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Graphics/XML_Parsers/texture_packer_item.h"
 #include "Maps/World/world.h"
 #include "SQLite_item_data.h"
 #include "SQLite_spritesheets.h"
@@ -11,7 +12,6 @@
 #include "item_components.h"
 #include "mouse_control.h"
 #include "quad_tree.h"
-#include "texture_packer_item.h"
 #include "utilities.h"
 #include <vector>
 

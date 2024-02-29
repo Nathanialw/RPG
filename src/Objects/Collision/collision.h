@@ -9,7 +9,7 @@
 
 namespace Collision {
   //  std::map<World::GameState, b2World*> world;
-  std::vector<b2World *> collisionList(World::numZones);
+  std::vector<b2World *> collisionList(World_Data::numZones);
 
   const float timeStep = 1.0f / 5.0f;
   const float M2P = 60.0f;

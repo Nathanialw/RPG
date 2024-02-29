@@ -21,7 +21,7 @@
 //#include "utilities.h"
 //#include <SDL2/SDL.h>
 #include "Items/items.h"
-#include "Maps/Pathing/pathing.h"
+#include "Maps/Pathing/a_star.h"
 #include "building_components.h"
 #include "create_entities.h"
 #include "game_menu.h"

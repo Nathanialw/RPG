@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Graphics/XML_Parsers/texture_packer.h"
 #include "Maps/Procedural_Generation/number_generator.h"
 #include "Maps/World/cave.h"
 #include "Objects/Collision/collision.h"
@@ -17,7 +18,6 @@
 #include "quad_tree.h"
 #include "rendering_components.h"
 #include "settings.h"
-#include "texture_packer.h"
 #include "utilities.h"
 
 namespace Create_Entities {

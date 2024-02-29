@@ -15,11 +15,11 @@
 #include "sounds.h"
 #include "spells.h"
 //#include "squad_control.h"
-#include "texture_packer.h"
+#include "Graphics/XML_Parsers/texture_packer.h"
 //#include "ui_gameloop_function_times.h"
 //#include "unit_positions.h"
 //#include "unit_status.h"
-#include "Maps/Pathing/pathing.h"
+#include "Maps/Pathing/a_star.h"
 #include "quad_tree.h"
 #include "update_spells.h"
 #include <SDL2/SDL.h>
@@ -35,13 +35,13 @@ namespace Game_Loop {
 
 
   int Game_Loop(entt::registry &zone, int &state) {
-    Pathing::Init();
+    A_Star::Init();
     World::currentZone = {state, state};
     while (state != 0) {
       Game_State();
       //Squad_Control::Create_And_Fill_New_Squad(zone);
       //Test_Units::Create_Formation(zone);
-      Pathing::Update(zone);
+      A_Star::Update(zone);
       Event_Handler::Update_User_Input(zone, state);
       Create_Character_Entity::Update_Items(zone, state);
       Player_Control::Move_To_Atack_Routine(zone, state);
@@ -66,7 +66,7 @@ namespace Game_Loop {
       }
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::render], Timer::gameLoopTimer);
 
-      if (World::currentZone.current != World::currentZone.next) { Clear_Tiles_Array(zone); }
+      if (World::currentZone.current != World::currentZone.next) { World_Update::Clear_Tiles_Array(zone); }
       Quad_Tree::Update_Tree_Routine(zone, state);
 
       Update_Game_Loop_Timers(Timer::GameStateValue[Timer::update_quad_tree], Timer::gameLoopTimer);

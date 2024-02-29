@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Graphics/XML_Parsers/texture_packer.h"
 #include "Objects/Collision/collision.h"
 #include "Objects/Stats/entity_data.h"
 #include "SQLite_spell_data.h"
@@ -9,7 +10,6 @@
 #include "movement_components.h"
 #include "quad_tree.h"
 #include "spell_components.h"
-#include "texture_packer.h"
 
 namespace Spells {
 

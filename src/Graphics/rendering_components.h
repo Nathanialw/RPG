@@ -1,5 +1,6 @@
 #pragma once
 #include "SDL2/SDL.h"
+#include "components.h"
 #include "item_components.h"
 #include "vector"
 #include <map>

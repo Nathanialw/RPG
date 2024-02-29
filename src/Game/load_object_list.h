@@ -123,6 +123,7 @@ namespace Load_Object_List {
     Load_Tileset("dead");
     Load_Tileset("hell");
     Load_Tileset("cave_entrances");
+    Load_Tileset("labyrinth");
 
 
     Game_Objects_Lists::tilesets["buildings_orc"] = Entity_Loader::Get_Names_Of_SubType("orc", "building", "house");

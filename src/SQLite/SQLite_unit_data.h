@@ -295,6 +295,7 @@ namespace Entity_Loader {
     std::string music;
     std::string tileset;
     std::string tileUnits;
+    std::string tilesetXML;
   };
 
   TileSet_Data Get_Tileset_Data(std::string tilesetName) {
@@ -302,11 +303,12 @@ namespace Entity_Loader {
     std::string tilesetMusic;
     std::string tilesetTileset;
     std::string tilesetUnits;
+    std::string tilesetXML;
 
     const unsigned char *name;
     sqlite3_stmt *stmt;
     char buf[300];
-    const char *jj = "SELECT music, tileset, units FROM tilesets WHERE name = ";
+    const char *jj = "SELECT music, tileset, units, tileset_XML FROM tilesets WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, tileset.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -314,8 +316,9 @@ namespace Entity_Loader {
       tilesetMusic = db::Convert_Char("", sqlite3_column_text(stmt, 0));
       tilesetTileset = db::Convert_Char("", sqlite3_column_text(stmt, 1));
       tilesetUnits = db::Convert_Char("", sqlite3_column_text(stmt, 2));
+      tilesetXML = db::Convert_Char("", sqlite3_column_text(stmt, 3));
     }
-    return {tilesetName, tilesetMusic, tilesetTileset, tilesetUnits};
+    return {tilesetName, tilesetMusic, tilesetTileset, tilesetUnits, tilesetXML};
   }
 
   std::vector<std::string> Get_All_Subtype_Of_Type(std::string &type) {

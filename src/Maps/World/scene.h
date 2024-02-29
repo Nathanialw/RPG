@@ -1,4 +1,6 @@
 #pragma once
+#include "Graphics/XML_Parsers/sprite_parser.h"
+#include "Graphics/XML_Parsers/texture_packer.h"
 #include "Objects/Collision/collision.h"
 #include "Objects/Movement/unit_formations.h"
 #include "Objects/Stats/character_data.h"
@@ -7,8 +9,6 @@
 #include "entt/entt.hpp"
 #include "graphics.h"
 #include "recruitable_units.h"
-#include "sprite_parser.h"
-#include "texture_packer.h"
 #include "unit_control.h"
 #include "world.h"
 #include <iostream>

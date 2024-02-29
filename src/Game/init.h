@@ -4,9 +4,10 @@
 #include <SDL2/SDL_ttf.h>
 //#include "Joystick.h"
 #include "Game/Game_Start/create_character_entity.h"
-#include "Maps/World/dynamic_entity_loader.h"
+#include "Graphics/XML_Parsers/texture_packer.h"
 #include "Maps/World/map.h"
 #include "Maps/World/world.h"
+#include "Maps/World/world_update.h"
 #include "Objects/Collision/collision.h"
 #include "Objects/Collision/formation_collisions.h"
 #include "Objects/Movement/unit_positions.h"
@@ -24,7 +25,6 @@
 #include "rendering.h"
 #include "spells.h"
 #include "squad_control.h"
-#include "texture_packer.h"
 #include "ui_frames.h"
 #include <SDL2/SDL.h>
 
@@ -94,7 +94,7 @@ namespace Init {
     } else {
       Recreate_Player(zone, state);
     }
-    Init_Tiles_Array();
+    World_Update::Init_Tiles_Array(state);
     Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
     Maps::Init_Caves(zone, state, World::world[state].cave);
     Quad_Tree::Fill_Quad_Tree(zone, state);
@@ -108,7 +108,7 @@ namespace Init {
     }
     World::Zone_Count = 2;
     World::world.clear();
-    World::world.resize(World::numZones);
+    World::world.resize(World_Data::numZones);
   }
 
   Game Init_World(Game &game, int &state) {
@@ -137,7 +137,7 @@ namespace Init {
   }
 
   void Reload_Zone(entt::registry &zone, int &state) {
-    Init_Tiles_Array();
+    World_Update::Init_Tiles_Array(state);
     Game game;
     Recreate_Player(zone, state);
     Init_World(game, state);
