@@ -1,4 +1,5 @@
 #pragma once
+#include "SDL2/SDL.h"
 #include "array"
 #include "camera.h"
 #include "components.h"
@@ -7,13 +8,15 @@
 namespace Fog_Of_War {
 
   const int numCells = 128;
-  int cellSize = 1;
-  int lightRadius = 0;
+  int cellSize = 4;
+  int lightRadius = 4;
   Uint8 maxDarkness = 245;
   Uint8 minDarkness = 100;
   SDL_Texture *texture;
+  SDL_Texture *fogScreenBuffer;
 
-  std::array<std::array<Uint8, numCells>, numCells> fogCells;
+  std::array<std::array<Uint8, numCells>, numCells>
+      fogCells;
 
   void Render_Void(float x, float y, float w, float h) {
     SDL_FRect renderRect;
@@ -24,11 +27,16 @@ namespace Fog_Of_War {
 
     SDL_Color color = {0, 0, 0, maxDarkness};
     SDL_SetTextureAlphaMod(texture, maxDarkness);
+    //render to texture
     Graphics::Render_FRect(texture, color, nullptr, &renderRect);
   }
 
   void Set() {
     texture = Graphics::fogOfWar;
+    SDL_DestroyTexture(fogScreenBuffer);
+    fogScreenBuffer = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, (numCells * (cellSize + lightRadius)), (numCells * (cellSize + lightRadius)));
+    SDL_SetTextureBlendMode(fogScreenBuffer, SDL_BLENDMODE_BLEND);
+    SDL_SetRenderTarget(Graphics::renderer, fogScreenBuffer);
 
     for (int k = 0; k < (numCells / 2); ++k) {
       for (int i = 0 + k; i < fogCells.size() - k; ++i) {
@@ -37,55 +45,60 @@ namespace Fog_Of_War {
         }
       }
     }
-  }
 
-  bool setFogOfWar = false;
-  void Render(entt::registry &zone, entt::entity &entity, Component::Camera &camera) {
-    if (!setFogOfWar) {
-      setFogOfWar = true;
-      Set();
-    }
     float sightRange = cellSize + lightRadius;
 
-    auto position = zone.get<Component::Position>(entity);
-    float x = position.x - ((float) sightRange * (float) numCells / 2.0f);
-    float y = position.y - ((float) sightRange * (float) numCells / 2.0f);
+    //    auto position = zone.get<Component::Position>(entity);
+    //    float x = position.x - ((float) sightRange * (float) numCells * 0.5f);
+    //    float y = position.y - ((float) sightRange * (float) numCells * 0.5f);
 
     for (int i = 0; i < numCells; i++) {
       for (int j = 0; j < numCells; j++) {
         SDL_FRect renderRect;
-        renderRect.x = (float) x + ((float) i * sightRange) - camera.screen.x;
-        renderRect.y = (float) y + ((float) j * sightRange) - camera.screen.y;
+        renderRect.x = ((float) i * sightRange);
+        renderRect.y = ((float) j * sightRange);
         renderRect.w = (float) sightRange;
         renderRect.h = (float) sightRange;
 
         //linear
-        Uint8 gradient = (128.0f / ((float) numCells / 2.0f));
+        Uint8 gradient = (128.0f / ((float) numCells * 0.5f));
         Uint8 darkness = 127 + (gradient * fogCells[i][j]);
 
         if (darkness > maxDarkness) darkness = maxDarkness;
         if (darkness < minDarkness) darkness = minDarkness;
 
         SDL_Color color = {0, 0, 0, darkness};
-        SDL_SetTextureAlphaMod(texture, darkness);
-        Graphics::Render_FRect(texture, color, nullptr, &renderRect);
 
-        if (i == 0 && j == 0) {
-          //top
-          Render_Void((float) i, (float) j, camera.screen.w, (float) renderRect.y);
-          //left
-          Render_Void((float) i, (float) renderRect.y, renderRect.x, (float) numCells * (float) sightRange);
-        }
-        if (i == 0 && j == numCells - 1) {
-          //bottom
-          Render_Void((float) i, (float) renderRect.y + sightRange, (float) camera.screen.w, camera.screen.h - (float) renderRect.y + sightRange);
-        }
-        if (i == numCells - 1 && j == 0) {
-          //right
-          Render_Void((float) renderRect.x + sightRange, (float) renderRect.y, renderRect.x, (float) numCells * (float) sightRange);
-        }
+        SDL_SetTextureAlphaMod(texture, darkness);
+        //render to texture
+        Graphics::Render_FRect(texture, color, nullptr, &renderRect);
       }
     }
+    SDL_SetRenderTarget(Graphics::renderer, nullptr);
+  }
+
+
+  bool setFogOfWar = false;
+  void Render(Component::Camera &camera) {
+    if (!setFogOfWar) {
+      setFogOfWar = true;
+      Set();
+    }
+    float d = (float) numCells * ((float) cellSize + (float) lightRadius);
+    float x = (camera.screen.w * 0.5f) - (d * 0.5f);
+    float y = (camera.screen.h * 0.5f) - (d * 0.5f);
+
+    SDL_FRect rect = {x, y, d, d};
+
+    SDL_RenderCopyF(Graphics::renderer, fogScreenBuffer, nullptr, &rect);
+    //top
+    Render_Void(0.0f, 0.0f, camera.screen.w, ((camera.screen.h * 0.5f) - (d * 0.5f)));
+    //left
+    Render_Void(0.0f, (camera.screen.h * 0.5f) - (d * 0.5f), (camera.screen.w - d) * 0.5f, d);
+    //bottom
+    Render_Void(0.0f, y + d, camera.screen.w, camera.screen.h - (y + d));
+    //right
+    Render_Void(x + d, y, camera.screen.w - (y + d), d);
   }
 
 

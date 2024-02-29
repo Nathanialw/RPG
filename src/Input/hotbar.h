@@ -175,14 +175,16 @@ namespace Hotbar {
   }
 
   int Sight_Increase(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    Fog_Of_War::setFogOfWar = false;
     Fog_Of_War::lightRadius++;
     if (Fog_Of_War::lightRadius >= 15) Fog_Of_War::lightRadius = 15;
     return 0;
   }
 
   int Sight_Decrease(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    Fog_Of_War::setFogOfWar = false;
     Fog_Of_War::lightRadius--;
-    if (Fog_Of_War::lightRadius <= 0) Fog_Of_War::lightRadius = 0;
+    if (Fog_Of_War::lightRadius <= 1) Fog_Of_War::lightRadius = 1;
     return 0;
   }
 

@@ -1,7 +1,7 @@
 target_sources(RPG
         PUBLIC
         World/map.h
-        Procedural_Generation/procedural_generator.h
+        Procedural_Generation/number_generator.h
         World/scene.h
         World/world.h
         World/world_grid.h

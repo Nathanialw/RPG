@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Maps/Procedural_Generation/procedural_generator.h"
+#include "Maps/Procedural_Generation/number_generator.h"
 #include "Maps/World/cave.h"
 #include "Objects/Collision/collision.h"
 #include "Objects/Social/social_control.h"

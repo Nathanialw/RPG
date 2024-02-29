@@ -13,7 +13,7 @@
 #include <iostream>
 //#include "game_objects.h"
 //#include "graphics.h"
-#include "Maps/Procedural_Generation/procedural_generator.h"
+#include "Maps/Procedural_Generation/number_generator.h"
 //#include <map>
 
 namespace Maps {

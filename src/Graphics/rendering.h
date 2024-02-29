@@ -414,7 +414,7 @@ namespace Rendering {
       Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
                                                  //            RenderLine(zone, camera);
                                                  //      Pathing::Draw(camera);
-      Fog_Of_War::Render(zone, entity, camera);
+      Fog_Of_War::Render(camera);
       Items::Show_Ground_Items(zone, camera);
       Items::Unit_Name_On_Mouseover(zone, camera);
       Social_Control::Show_Dialogue(zone, camera);
