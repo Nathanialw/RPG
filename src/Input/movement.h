@@ -53,16 +53,16 @@ namespace Movement {
       }
 
       if (velocity.magnitude.x != 0 || velocity.magnitude.y != 0) {
-        if (fabs(velocity.magnitude.x) < 0.1) { velocity.magnitude.x = 0; };//clamp rounding errors
-        if (fabs(velocity.magnitude.y) < 0.1) { velocity.magnitude.y = 0; };
+        if (fabs(velocity.magnitude.x) < 0.01) { velocity.magnitude.x = 0; };//clamp rounding errors
+        if (fabs(velocity.magnitude.y) < 0.01) { velocity.magnitude.y = 0; };
         velocity.angle = atan2f(velocity.magnitude.x, velocity.magnitude.y);
         angleY = atan2f(velocity.magnitude.y, velocity.magnitude.x);
         float velocityX = sinf(velocity.angle) * velocity.speed;
         float velocityY = sinf(angleY) * velocity.speed;
         auto &body = view.get<Component::Body>(entity).body;
 
-        velocity.dX = velocityX * 500000.0f;// * (float) Timer::timeStep;
-        velocity.dY = velocityY * 500000.0f;// * (float) Timer::timeStep;
+        velocity.dX = velocityX * 1000000.0f * (float) Timer::timeStep;
+        velocity.dY = velocityY * 1000000.0f * (float) Timer::timeStep;
 
         b2Vec2 impulse = {velocity.dX, velocity.dY};
         body->ApplyLinearImpulse(impulse, body->GetWorldCenter(), true);
