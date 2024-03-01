@@ -144,6 +144,10 @@ namespace Event_Handler {
           }
           return;
         }
+        //      drop spell
+        else if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
+          Action_Bar::Clear_Spell_On_Mouse(zone);
+        }
         //        items
         else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::item || Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
