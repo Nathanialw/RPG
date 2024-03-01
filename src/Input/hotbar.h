@@ -1,4 +1,5 @@
 #pragma once
+#include "Audio/effects.h"
 #include "Fire/fire.h"
 #include "Fog_Of_War/fog_of_war.h"
 #include "Maps/World/cave.h"
@@ -177,6 +178,7 @@ namespace Hotbar {
   int Sight_Increase(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Fog_Of_War::setFogOfWar = false;
     Fog_Of_War::lightRadius++;
+    Effects::Play();
     if (Fog_Of_War::lightRadius >= 15) Fog_Of_War::lightRadius = 15;
     return 0;
   }
@@ -184,6 +186,7 @@ namespace Hotbar {
   int Sight_Decrease(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
     Fog_Of_War::setFogOfWar = false;
     Fog_Of_War::lightRadius--;
+    Effects::Play();
     if (Fog_Of_War::lightRadius <= 1) Fog_Of_War::lightRadius = 1;
     return 0;
   }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:19e4fbaf0832fbb35c55eb2e72dead82:a7c2f49ce5c6e0f3c05e2b317fe00da3:66fe109d603663fc7121530518a4cf67$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="labyrinth.png" width="7710" height="514">
+    <sprite n="labyrinth0_0" x="1" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_1" x="515" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_2" x="1029" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_3" x="1543" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_4" x="2057" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_5" x="2571" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_6" x="3085" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_7" x="3599" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_8" x="4113" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_9" x="4627" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_10" x="5141" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_11" x="5655" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_12" x="6169" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_13" x="6683" y="1" w="512" h="512"/>
+    <sprite n="labyrinth0_14" x="7197" y="1" w="512" h="512"/>
+</TextureAtlas>

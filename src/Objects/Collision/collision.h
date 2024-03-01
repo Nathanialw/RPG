@@ -260,6 +260,7 @@ namespace Collision {
     collision_Timestep += Timer::timeStep;
     int j = 0;
     while (collision_Timestep >= timeStep) {
+      if (j >= 10) break;
       collision_Timestep -= timeStep;
       world->Step(timeStep, velocityIterations, positionIterations);
 
@@ -277,9 +278,9 @@ namespace Collision {
         i++;
         body = body->GetNext();
       }
-      world->ClearForces();
       j++;
     }
+    world->ClearForces();
   }
 
   void Save_Line_Segment(entt::registry &zone, const entt::entity &item, std::string name) {

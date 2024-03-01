@@ -31,9 +31,11 @@ void Frame_Increment(entt::registry &zone, entt::entity &entity, Component::Scal
   if (action.frameTime >= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed) {
     action.frameTime -= sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].frameSpeed;
     //            sheetData.frameTime = 0;
-    if (action.frameState == Action_Component::start) {
+    if (action.frameState == Action_Component::start || action.frameState == Action_Component::hit)
       action.frameState = Action_Component::mid;
-    }
+
+    if (action.frame == sheetData.sheetData->at(sheetData.sheet_name).actionFrameData[action.state].NumFrames / 2)
+      action.frameState = Action_Component::hit;
 
     ///reset frame count if over
     if (sheetData.unity) {

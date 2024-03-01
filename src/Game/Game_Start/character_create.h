@@ -1,4 +1,6 @@
 #pragma once
+#include "Audio/init.h"
+#include "Audio/music.h"
 #include "SDL2/SDL.h"
 #include "SDL_FontCache/SDL_FontCache.h"
 #include "base_structs.h"
@@ -456,6 +458,9 @@ namespace Character_Create {
   }
 
   Character_Options::Customization Customize(Character_Options::Customization &options) {
+    Sound::Init();
+    Music::Play("assets/music/cave.ogg");
+
     Character_Options::Load_Start_Character_Images();
     std::vector<Menu> menus;
 

@@ -182,6 +182,7 @@ namespace Action_Component {
   enum Action_Progress {
     start,
     mid,
+    hit,
     last
   };
 

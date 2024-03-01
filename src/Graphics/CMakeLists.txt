@@ -8,7 +8,7 @@ target_sources(RPG
         XML_Parsers/sprite_parser.h
         sprite_sheets.h
         sprites.h
-        spritesheet_structs.h
+        XML_Parsers/spritesheet_structs.h
         XML_Parsers/texture_packer.h
         XML_Parsers/texture_packer_item.h
         blood.h

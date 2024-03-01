@@ -169,6 +169,9 @@ namespace Splash_Screen {
             case SDLK_RETURN:
               //return whichever is highlight and use arrow to move the highlighted up and down
               return 0;
+            case SDLK_RETURN2:
+              //return whichever is highlight and use arrow to move the highlighted up and down
+              return 0;
           }
           break;
         }

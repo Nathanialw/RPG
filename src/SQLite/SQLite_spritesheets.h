@@ -1,12 +1,12 @@
 #pragma once
+#include "Graphics/XML_Parsers/spritesheet_structs.h"
 #include "db.h"
-#include <vector>
+#include "rendering_components.h"
 #include <SDL2/SDL.h>
-#include <string>
 #include <iostream>
 #include <map>
-#include "spritesheet_structs.h"
-#include "rendering_components.h"
+#include <string>
+#include <vector>
 
 
 namespace SQLite_Spritesheets {
@@ -30,17 +30,17 @@ namespace SQLite_Spritesheets {
     std::string sheet_type = "default";
     /// initial values already set in component.h
     Rendering_Components::Frame_Data_Packer isStatic;
-    Rendering_Components::Frame_Data_Packer idle = { 9999, 0, 0, i };
+    Rendering_Components::Frame_Data_Packer idle = {9999, 0, 0, i};
     Rendering_Components::Frame_Data_Packer walk;
     Rendering_Components::Frame_Data_Packer run;
-    Rendering_Components::Frame_Data_Packer attack = { 9999, 0, 0, i };
-    Rendering_Components::Frame_Data_Packer attack2 = { 9999, 0, 0, i };
-    Rendering_Components::Frame_Data_Packer cast = { 9999, 0, 0, i };
-    Rendering_Components::Frame_Data_Packer struck = { 9999, 0, 0, i };
-    Rendering_Components::Frame_Data_Packer block = { 9999, 0, 0, i };
-    Rendering_Components::Frame_Data_Packer evade = { 9999, 0, 0, i };
+    Rendering_Components::Frame_Data_Packer attack = {9999, 0, 0, i};
+    Rendering_Components::Frame_Data_Packer attack2 = {9999, 0, 0, i};
+    Rendering_Components::Frame_Data_Packer cast = {9999, 0, 0, i};
+    Rendering_Components::Frame_Data_Packer struck = {9999, 0, 0, i};
+    Rendering_Components::Frame_Data_Packer block = {9999, 0, 0, i};
+    Rendering_Components::Frame_Data_Packer evade = {9999, 0, 0, i};
     Rendering_Components::Frame_Data_Packer stunned;
-    Rendering_Components::Frame_Data_Packer dying = { 9999, 0, 0, i };
+    Rendering_Components::Frame_Data_Packer dying = {9999, 0, 0, i};
     Rendering_Components::Frame_Data_Packer corpse;
     Rendering_Components::Frame_Data_Packer low_hp;
     Rendering_Components::Frame_Data_Packer resting;
@@ -168,7 +168,7 @@ namespace SQLite_Spritesheets {
       sheetType = sqlite3_column_text(stmt, 5);
       data.time_between_frames = sqlite3_column_int(stmt, 6);
       const char *s = (const char *) sheetType;
-      data.sheet_type = std::string(reinterpret_cast< const char *> (s));
+      data.sheet_type = std::string(reinterpret_cast<const char *>(s));
     }
   }
 
@@ -178,7 +178,7 @@ namespace SQLite_Spritesheets {
     return sheetData;
   }
 
-  std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare>* Populate_Flare_SpriteSheet(std::string &name, Sheet_Data_Flare &data, SDL_Texture* texture) {
+  std::unordered_map<std::string, Rendering_Components::Sheet_Data_Flare> *Populate_Flare_SpriteSheet(std::string &name, Sheet_Data_Flare &data, SDL_Texture *texture) {
     if (Flare_Spritesheets[name].texture == NULL) {
       //            Flare_Spritesheets[name].color = Graphics::Set_Random_Color();
       Flare_Spritesheets[name].texture = texture;
@@ -204,8 +204,7 @@ namespace SQLite_Spritesheets {
       Flare_Spritesheets[name].actionFrameData[Action_Component::summoned] = data.summoned;
       Flare_Spritesheets[name].actionFrameData[Action_Component::walk] = data.walk;
       return &Flare_Spritesheets;
-    }
-    else {
+    } else {
       return &Flare_Spritesheets;
     }
   }
@@ -234,4 +233,4 @@ namespace SQLite_Spritesheets {
     return sheetData;
   }
 
-}
+}// namespace SQLite_Spritesheets

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Graphics/XML_Parsers/spritesheet_structs.h"
 #include "Maps/World/world.h"
 #include "action_components.h"
 #include "blood.h"
@@ -9,7 +10,6 @@
 #include "graphics.h"
 #include "item_components.h"
 #include "rendering_components.h"
-#include "spritesheet_structs.h"
 #include "utilities.h"
 #include <cstdlib>
 

@@ -1,8 +1,8 @@
 #pragma once
 
+#include "Audio/effects.h"
 #include "action_components.h"
 #include "combat_graphics.h"
-#include "combat_sounds.h"
 #include "components.h"
 #include "damage_text.h"
 #include "movement_components.h"
@@ -98,6 +98,8 @@ namespace Combat_Control {
     } else if (targetAction.state == Action_Component::idle) {
       Action_Component::Set_State(targetAction, Action_Component::combatIdle);
     }
+
+    Effects::Play();
   }
 
   void Attack_Target(entt::registry &zone) {
@@ -107,7 +109,7 @@ namespace Combat_Control {
       ///possibly not necessary
       if (action.state == Action_Component::attack || action.state == Action_Component::attackPolearm || action.state == Action_Component::ranged) {
         ///ensures it attacks at the end of the last frame of the attack
-        if (action.frameState == Action_Component::last) {
+        if (action.frameState == Action_Component::Action_Progress::hit) {
           //executes a point and click attack
           auto &target_ID = view.get<Component::Attacking>(entity).target_ID;
           auto &meleeDamage = view.get<Component::Melee_Damage>(entity);

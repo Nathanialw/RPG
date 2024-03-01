@@ -1,8 +1,5 @@
 #pragma once
 
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_ttf.h>
-//#include "Joystick.h"
 #include "Game/Game_Start/create_character_entity.h"
 #include "Graphics/Rendering/rendering.h"
 #include "Graphics/XML_Parsers/texture_packer.h"
@@ -27,6 +24,8 @@
 #include "squad_control.h"
 #include "ui_frames.h"
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_ttf.h>
+
 
 namespace Init {
 
@@ -113,7 +112,7 @@ namespace Init {
 
   Game Init_World(Game &game, int &state) {
     Clear_Events();
-    Video::Run_Audio(World::world[state].music.c_str());
+    Music::Play(World::world[state].music.c_str());
     return game;
   }
 

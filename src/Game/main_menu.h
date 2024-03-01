@@ -24,7 +24,7 @@ namespace Main_Menu {
     if (!options.success) {
       return options;
     };
-
+    
     Character_Create::Customize(options);
     return options;
   }
