@@ -10,8 +10,8 @@
 #include "init.h"
 #include "interface.h"
 //#include "map.h"
+#include "Graphics/Rendering/rendering.h"
 #include "movement.h"
-#include "rendering.h"
 #include "sounds.h"
 #include "spells.h"
 //#include "squad_control.h"
@@ -26,22 +26,22 @@
 
 namespace Game_Loop {
 
-
   void Game_State() {
     if (!Graphics::running) {
       World::gamestate = World::GameState::exit;
     }
   }
 
-
   int Game_Loop(entt::registry &zone, int &state) {
-    A_Star::Init();
     World::currentZone = {state, state};
     while (state != 0) {
       Game_State();
       //Squad_Control::Create_And_Fill_New_Squad(zone);
       //Test_Units::Create_Formation(zone);
+
+      //ideally this would call on init and set all indexes with an object as an obstacle and only update by the object that gets moved
       A_Star::Update(zone);
+
       Event_Handler::Update_User_Input(zone, state);
       Create_Character_Entity::Update_Items(zone, state);
       Player_Control::Move_To_Atack_Routine(zone, state);
@@ -84,7 +84,6 @@ namespace Game_Loop {
     Timer::startPerf = SDL_GetPerformanceCounter();
 
     state = Game_Loop(zone, state);
-
 
     return state;
     //

@@ -292,7 +292,7 @@ namespace Maps {
         if (i < 0 || j < 0) {
           continue;
         } else {
-          if (i > World_Data::REGION_SIZE || j > World_Data::REGION_SIZE) {
+          if (i >= World_Data::REGION_SIZE || j >= World_Data::REGION_SIZE) {
             continue;
           } else {
             // generate tile type

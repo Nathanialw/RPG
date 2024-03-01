@@ -2,8 +2,8 @@ target_sources(RPG
         PUBLIC
         combat_graphics.h
         graphics.h
-        rendering.h
-        rendering_components.h
+        Rendering/rendering.h
+        ../Components/rendering_components.h
         shadow_casting.h
         XML_Parsers/sprite_parser.h
         sprite_sheets.h
@@ -12,7 +12,7 @@ target_sources(RPG
         XML_Parsers/texture_packer.h
         XML_Parsers/texture_packer_item.h
         blood.h
-        portaits.h
+        portraits.h
         icons.h
 )
 

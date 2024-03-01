@@ -151,6 +151,13 @@ namespace Graphics {
     SDL_SetTextureColorMod(texture, color.r, color.g, color.b);
     SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
   }
+  void Render_FRect(SDL_Texture *texture, const SDL_Rect *sourceRect, SDL_FRect *targetRect) {
+    SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
+  }
+
+  void Render_FRect(SDL_Texture *texture, SDL_FRect *targetRect) {
+    SDL_RenderCopyF(renderer, texture, nullptr, targetRect);
+  }
 
   Surface_Data Load_Text_Texture(std::string text, SDL_Color fontColor) {
     SDL_Surface *surface = TTF_RenderText_Blended(font, text.c_str(), fontColor);//convert font to Surface

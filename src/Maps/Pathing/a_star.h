@@ -8,13 +8,13 @@ namespace A_Star {
   struct sNode {
     bool bObstacle = false;
     bool bVisited = false;
-    float fGlobalGoal;
-    float fLocalGoal;
+    float fGlobalGoal{};
+    float fLocalGoal{};
     //position
-    int x;
-    int y;
+    int x{};
+    int y{};
     std::vector<sNode *> vecNeighbours;
-    sNode *parent;
+    sNode *parent{};
   };
 
   int scale = 8;
@@ -47,7 +47,6 @@ namespace A_Star {
             nodes[(int(y / nNodeSize) * nMapWidth) + int(x / nNodeSize)].bObstacle = true;
             y += nNodeSize;
           }
-          //          nodes[(int(y / nNodeSize) * nMapWidth) + int(x / nNodeSize)].bObstacle = true;
           x += nNodeSize;
           y = rect.y;
         }
@@ -223,27 +222,21 @@ namespace A_Star {
         rect = Utilities::World_To_ScreenF(rect, camera.screen);
 
         if (nodes[y * nMapWidth + x].bVisited) {
-          SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 255, 155);
-          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+          Graphics::Render_FRect(Graphics::itemBorderMagic, &rect);
         }
 
         else if (&nodes[y * nMapWidth + x] == nodeStart) {
-          SDL_SetRenderDrawColor(Graphics::renderer, 0, 255, 0, 155);
-          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+          Graphics::Render_FRect(Graphics::itemBorderCommon, &rect);
         }
 
         else if (&nodes[y * nMapWidth + x] == nodeEnd) {
-          SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 0, 155);
-          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+          Graphics::Render_FRect(Graphics::itemBorderEite, &rect);
         }
 
         else if (nodes[y * nMapWidth + x].bObstacle) {
-          SDL_SetRenderDrawColor(Graphics::renderer, 255, 0, 255, 255);
-          SDL_RenderDrawRectF(Graphics::renderer, &rect);
+          Graphics::Render_FRect(Graphics::itemBorderRare, &rect);
         }
       }
-
-    SDL_SetRenderDrawColor(Graphics::renderer, 255, 255, 255, 155);
 
     // Draw Path by starting ath the end, and following the parent node trail
     // back to the start - the start node will not have a parent path to follow

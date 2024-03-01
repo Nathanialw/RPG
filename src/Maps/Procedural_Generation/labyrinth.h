@@ -40,7 +40,7 @@ namespace Labyrinth {
     int x = Procedural_Generation::Random_Int(state, m_nMazeWidth, seed);
     int y = Procedural_Generation::Random_Int(state, m_nMazeHeight, seed);
 
-    m_stack.push(std::make_pair(x, y));
+    m_stack.emplace(x, y);
     m_maze[y * m_nMazeWidth + x] = CELL_VISITED;
     m_nVisitedCells = 1;
 
@@ -85,25 +85,25 @@ namespace Labyrinth {
           case 0:// North
             m_maze[offset(0, -1)] |= CELL_VISITED | CELL_PATH_S;
             m_maze[offset(0, 0)] |= CELL_PATH_N;
-            m_stack.push(std::make_pair((m_stack.top().first + 0), (m_stack.top().second - 1)));
+            m_stack.emplace((m_stack.top().first + 0), (m_stack.top().second - 1));
             break;
 
           case 1:// East
             m_maze[offset(+1, 0)] |= CELL_VISITED | CELL_PATH_W;
             m_maze[offset(0, 0)] |= CELL_PATH_E;
-            m_stack.push(std::make_pair((m_stack.top().first + 1), (m_stack.top().second + 0)));
+            m_stack.emplace((m_stack.top().first + 1), (m_stack.top().second + 0));
             break;
 
           case 2:// South
             m_maze[offset(0, +1)] |= CELL_VISITED | CELL_PATH_N;
             m_maze[offset(0, 0)] |= CELL_PATH_S;
-            m_stack.push(std::make_pair((m_stack.top().first + 0), (m_stack.top().second + 1)));
+            m_stack.emplace((m_stack.top().first + 0), (m_stack.top().second + 1));
             break;
 
           case 3:// West
             m_maze[offset(-1, 0)] |= CELL_VISITED | CELL_PATH_E;
             m_maze[offset(0, 0)] |= CELL_PATH_W;
-            m_stack.push(std::make_pair((m_stack.top().first - 1), (m_stack.top().second + 0)));
+            m_stack.emplace((m_stack.top().first - 1), (m_stack.top().second + 0));
             break;
         }
 

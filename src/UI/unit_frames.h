@@ -4,7 +4,7 @@
 #include "components.h"
 #include "entt/entt.hpp"
 #include "graphics.h"
-#include "portaits.h"
+#include "portraits.h"
 #include <array>
 #include <string>
 
@@ -61,7 +61,7 @@ namespace Unit_Frames {
     if (frame.health.text != healthText || frame.health.textTexture == NULL) {
       SDL_DestroyTexture(frame.health.textTexture);
       frame.health.textTexture = NULL;
-      frame.health.healthFrameWidth = (float)health.currentHealth / (float)health.maxHealth;
+      frame.health.healthFrameWidth = (float) health.currentHealth / (float) health.maxHealth;
       Populate_Frame(frame.health, healthText, {200, 200, 200});
       frame.health.backgroundTexture = Graphics::tooltipBackground;
     }
@@ -90,7 +90,7 @@ namespace Unit_Frames {
     //health foreground
     frame.health.healthFrame = frame.health.frame;
     frame.health.healthFrame.w = frame.health.frame.w * frame.health.healthFrameWidth;
-    int red = 150 * ( 1 - frame.health.healthFrameWidth);
+    int red = 150 * (1 - frame.health.healthFrameWidth);
     int green = 150 * frame.health.healthFrameWidth;
     SDL_SetRenderDrawColor(Graphics::renderer, red, green, 0, 255);
     SDL_RenderFillRectF(Graphics::renderer, &frame.health.healthFrame);
@@ -101,7 +101,7 @@ namespace Unit_Frames {
     //name
     SDL_RenderCopyF(Graphics::renderer, frame.name.textTexture, NULL, &frame.name.textFrame);
     //img
-    Portraits::Render_Portait(frame.health.backgroundTexture, frame.img.texture, frame.gear, frame.img.frame);
+    Portraits::Render_Portrait(frame.health.backgroundTexture, frame.img.texture, frame.gear, frame.img.frame);
   }
 
   void Init_Frames() {

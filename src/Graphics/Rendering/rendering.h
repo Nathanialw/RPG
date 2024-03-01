@@ -2,6 +2,7 @@
 
 #include "Fog_Of_War/fog_of_war.h"
 #include "Maps/Pathing/a_star.h"
+#include "Maps/World/map.h"
 #include "Maps/World/world_grid.h"
 #include "camera.h"
 #include "entt/entt.hpp"

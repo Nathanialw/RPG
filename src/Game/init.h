@@ -4,6 +4,7 @@
 #include <SDL2/SDL_ttf.h>
 //#include "Joystick.h"
 #include "Game/Game_Start/create_character_entity.h"
+#include "Graphics/Rendering/rendering.h"
 #include "Graphics/XML_Parsers/texture_packer.h"
 #include "Maps/World/map.h"
 #include "Maps/World/world.h"
@@ -22,7 +23,6 @@
 #include "main_menu.h"
 #include "menu.h"
 #include "movement.h"
-#include "rendering.h"
 #include "spells.h"
 #include "squad_control.h"
 #include "ui_frames.h"
@@ -94,9 +94,9 @@ namespace Init {
     } else {
       Recreate_Player(zone, state);
     }
-    World_Update::Init_Tiles_Array(state);
     Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
     Maps::Init_Caves(zone, state, World::world[state].cave);
+    World_Update::Init_Tiles_Array(zone, state);
     Quad_Tree::Fill_Quad_Tree(zone, state);
   };
 
@@ -112,7 +112,6 @@ namespace Init {
   }
 
   Game Init_World(Game &game, int &state) {
-
     Clear_Events();
     Video::Run_Audio(World::world[state].music.c_str());
     return game;
@@ -137,7 +136,7 @@ namespace Init {
   }
 
   void Reload_Zone(entt::registry &zone, int &state) {
-    World_Update::Init_Tiles_Array(state);
+    World_Update::Init_Tiles_Array(zone, state);
     Game game;
     Recreate_Player(zone, state);
     Init_World(game, state);

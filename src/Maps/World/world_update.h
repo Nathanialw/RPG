@@ -1,4 +1,5 @@
 #pragma once
+#include "Pathing/pathing_map.h"
 #include "Procedural_Generation/labyrinth.h"
 #include "Procedural_Generation/simplex_noise.h"
 #include "components.h"
@@ -22,11 +23,16 @@ namespace World_Update {
     }
   }
 
-  void Init_Tiles_Array(int state) {
+  void Init_Tiles_Array(entt::registry &zone, int state) {
     Simplex_Noise::Init(World_Data::REGION_SIZE, World_Data::REGION_SIZE);
     Simplex_Noise::Generate_Map(World_Data::REGION_SIZE, World_Data::REGION_SIZE);
     Labyrinth::Init(state);
     Labyrinth::Generate_Map();
+    A_Star::Init();
+    //    A_Star::Update(zone);
+    if (World::world[state].tileset == "labyrinth") {
+      Pathing_Map::Labyrinth(Labyrinth::labyrinth);
+    }
 
     for (int i = 0; i < World_Data::REGION_SIZE; ++i) {
       for (int j = 0; j < World_Data::REGION_SIZE; ++j) {

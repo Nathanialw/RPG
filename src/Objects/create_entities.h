@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Graphics/Rendering/rendering_functions.h"
 #include "Graphics/XML_Parsers/texture_packer.h"
 #include "Maps/Procedural_Generation/number_generator.h"
 #include "Maps/World/cave.h"
@@ -7,7 +8,6 @@
 #include "Objects/Social/social_control.h"
 #include "Objects/Stats/character_data.h"
 #include "Objects/Stats/entity_data.h"
-#include "Rendering_Components/rendering_functions.h"
 #include "SQLite_spritesheets.h"
 #include "SQLite_unit_data.h"
 #include "action_components.h"
