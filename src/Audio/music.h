@@ -24,8 +24,8 @@ namespace Music {
 
   void Play(std::string music) {
     if (music == "assets/music/nature.ogg")
-      Mix_PlayMusic(nature, 1);
+      Mix_PlayMusic(nature, -1);
     else
-      Mix_PlayMusic(cave, 1);
+      Mix_PlayMusic(cave, -1);
   }
 }// namespace Music
