@@ -1,6 +1,6 @@
 #pragma once
+#include "Input/mouse_control.h"
 #include "spells.h"
-#include "mouse_control.h"
 
 namespace Earth {
 
@@ -34,4 +34,4 @@ namespace Earth {
     return 0;
   }
 
-}// namespace Fire
+}// namespace Earth

@@ -1,7 +1,7 @@
 #pragma once
+#include "Input/mouse_control.h"
 #include "Maps/World/world.h"
 #include "Maps/World/world_update.h"
-#include "mouse_control.h"
 
 namespace A_Star {
 

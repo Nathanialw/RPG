@@ -1,7 +1,7 @@
 #pragma once
 
+#include "Input/camera.h"
 #include "Maps/World/scene.h"
-#include "camera.h"
 #include "debug_components.h"
 
 using namespace Scene;

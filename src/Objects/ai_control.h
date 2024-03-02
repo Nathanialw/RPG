@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Input/mouse_control.h"
 #include "Maps/Pathing/a_star.h"
 #include "Maps/World/world.h"
 #include "Movement/movement_functions.h"
@@ -7,7 +8,6 @@
 #include "ai_components.h"
 #include "components.h"
 #include "entity_control.h"
-#include "mouse_control.h"
 #include "quad_tree.h"
 #include "timer.h"
 

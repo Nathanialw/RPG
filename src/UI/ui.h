@@ -1,13 +1,13 @@
 #pragma once
+#include "Input/camera.h"
+#include "Input/mouse_data.h"
 #include "Maps/World/world.h"
-#include "camera.h"
 #include "components.h"
 #include "entt/entt.hpp"
 #include "item_components.h"
-#include "mouse_data.h"
 
-namespace UI {
 
+namespace Bag_UI {
   SDL_Rect charui = {0, 0, 554, 1080};
   SDL_FRect defaultScreenPosition = {100.0f, 100.0f, 554.0f, 1080.0f};
   SDL_FRect Character_UI = {};
@@ -16,122 +16,106 @@ namespace UI {
   //  struct Bag {
   //    std::vector<std::vector<entt::entity>> UI_bagSlots(int);
   //  };
+  namespace {
+    std::vector<entt::entity> emptyBagSlot(World_Data::numZones);
+    f2 bagoffset = {32.0f, 544.0f};
+    f2 numOfSlots = {8.0f, 4.0f};
+    int iTotalSlots = (int) numOfSlots.x * (int) numOfSlots.y;
+    float iBagSlotPixelSize = 64.0f;
+    SDL_FRect bagRect = {defaultScreenPosition.x + bagoffset.x, defaultScreenPosition.y + bagoffset.y, numOfSlots.x *iBagSlotPixelSize, numOfSlots.y *iBagSlotPixelSize};
+    SDL_FRect screenBag = {};
+  }// namespace
 
-  namespace Bag_UI {
-    namespace {
-      std::vector<entt::entity> emptyBagSlot(World_Data::numZones);
-      f2 bagoffset = {32.0f, 544.0f};
-      f2 numOfSlots = {8.0f, 4.0f};
-      int iTotalSlots = (int) numOfSlots.x * (int) numOfSlots.y;
-      float iBagSlotPixelSize = 64.0f;
-      SDL_FRect bagRect = {defaultScreenPosition.x + bagoffset.x, defaultScreenPosition.y + bagoffset.y, numOfSlots.x *iBagSlotPixelSize, numOfSlots.y *iBagSlotPixelSize};
-      SDL_FRect screenBag = {};
-    }// namespace
-
-    void Place_Item_In_Bag(entt::registry &zone, entt::entity &entity, int &state, int &slotNum) {
-      entt::entity mouseItem = Mouse::mouseData.mouseItem;
-      if (Mouse ::Set_Cursor_As_Cursor(zone)) {
-        zone.get<Component::Bag>(entity).bag.at(slotNum) = mouseItem;
-        zone.emplace_or_replace<Component::Inventory>(mouseItem);
-      }
+  void Place_Item_In_Bag(entt::registry &zone, entt::entity &entity, int &state, int &slotNum) {
+    entt::entity mouseItem = Mouse::mouseData.mouseItem;
+    if (Mouse ::Set_Cursor_As_Cursor(zone)) {
+      zone.get<Component::Bag>(entity).bag.at(slotNum) = mouseItem;
+      zone.emplace_or_replace<Component::Inventory>(mouseItem);
     }
+  }
 
-    void Remove_Item_From_Bag(entt::registry &zone, const entt::entity &player, const int &state, const int &slotNum) {
-      auto &bag = zone.get<Component::Bag>(player).bag;
-      if (Mouse::Set_Cursor_As_Entity(zone, bag.at(slotNum), Component::Icon_Type::item))
-        bag.at(slotNum) = emptyBagSlot[state];
+  void Remove_Item_From_Bag(entt::registry &zone, const entt::entity &player, const int &state, const int &slotNum) {
+    auto &bag = zone.get<Component::Bag>(player).bag;
+    if (Mouse::Set_Cursor_As_Entity(zone, bag.at(slotNum), Component::Icon_Type::item))
+      bag.at(slotNum) = emptyBagSlot[state];
+  }
+
+  void Bag_Item_And_Swap_With_Mouse(entt::registry &zone, int &state, entt::entity &playerID, int &slotNum) {
+    auto &bag = zone.get<Component::Bag>(playerID).bag;
+    auto fromMouse = Mouse::Swap_Entity_On_Cursor_With_Entity(zone, bag[slotNum], Component::Icon_Type::item);
+    if (fromMouse.exists) {
+      zone.remove<Component::Inventory>(bag[slotNum]);
+      bag[slotNum] = fromMouse.entity_ID;
+      zone.emplace_or_replace<Component::Inventory>(fromMouse.entity_ID);
     }
+  }
 
-    void Bag_Item_And_Swap_With_Mouse(entt::registry &zone, int &state, entt::entity &playerID, int &slotNum) {
-      auto &bag = zone.get<Component::Bag>(playerID).bag;
-      auto fromMouse = Mouse::Swap_Entity_On_Cursor_With_Entity(zone, bag[slotNum], Component::Icon_Type::item);
-      if (fromMouse.exists) {
-        zone.remove<Component::Inventory>(bag[slotNum]);
-        bag[slotNum] = fromMouse.entity_ID;
-        zone.emplace_or_replace<Component::Inventory>(fromMouse.entity_ID);
-      }
+  void Create_Bag_UI(entt::registry &zone, entt::entity &entity, int &state) {
+    auto &bag = zone.emplace_or_replace<Component::Bag>(entity).bag;
+    for (int i = 0; i < (iTotalSlots); i++) {
+      bag.at(i) = emptyBagSlot[state];
     }
+  }
 
-    void Create_Bag_UI(entt::registry &zone, entt::entity &entity, int &state) {
-      auto &bag = zone.emplace_or_replace<Component::Bag>(entity).bag;
-      for (int i = 0; i < (iTotalSlots); i++) {
-        bag.at(i) = emptyBagSlot[state];
-      }
+  void Close_Bag() {
+    if (bToggleCharacterUI) {
+      bToggleCharacterUI = false;
     }
+  }
 
-    void Close_Bag() {
-      if (bToggleCharacterUI) {
-        bToggleCharacterUI = false;
-      }
+  void Toggle_Bag() {
+    if (!bToggleCharacterUI) {
+      bToggleCharacterUI = true;
+    } else {
+      bToggleCharacterUI = false;
     }
+  }
 
-    void Toggle_Bag() {
-      if (!bToggleCharacterUI) {
-        bToggleCharacterUI = true;
-      } else {
-        bToggleCharacterUI = false;
-      }
-    }
-
-    //check if the Mouse point is in the rect and which one
-    int Get_Bag_Slot(entt::registry &zone, SDL_FPoint &screenCursor, Component::Camera &camera) {
-      SDL_FRect slotRect = {};
-      slotRect.w = iBagSlotPixelSize;
-      slotRect.h = iBagSlotPixelSize;
-      int i;
-      int j;
-      int slot = 0;
-      for (i = 0; i < numOfSlots.x; i++) {
-        slotRect.x = (i * iBagSlotPixelSize) + bagRect.x;
-        for (j = 0; j < numOfSlots.y; j++) {
-          slotRect.y = (j * iBagSlotPixelSize) + bagRect.y;
-          SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-          if (Utilities::bPoint_RectIntersect(screenCursor, scaledSlot)) {
-            return slot;
-          }
-          if (j < (numOfSlots.y - 1)) {
-            slot++;
-          }
-        }
+  //check if the Mouse point is in the rect and which one
+  int Get_Bag_Slot(entt::registry &zone, SDL_FPoint &screenCursor, Component::Camera &camera) {
+    SDL_FRect slotRect = {};
+    slotRect.w = iBagSlotPixelSize;
+    slotRect.h = iBagSlotPixelSize;
+    int i;
+    int j;
+    int slot = 0;
+    for (i = 0; i < numOfSlots.x; i++) {
+      slotRect.x = (i * iBagSlotPixelSize) + bagRect.x;
+      for (j = 0; j < numOfSlots.y; j++) {
+        slotRect.y = (j * iBagSlotPixelSize) + bagRect.y;
         SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
         if (Utilities::bPoint_RectIntersect(screenCursor, scaledSlot)) {
           return slot;
         }
-        if (i < (numOfSlots.x - 1)) {
+        if (j < (numOfSlots.y - 1)) {
           slot++;
         }
       }
-      return 0;
+      SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+      if (Utilities::bPoint_RectIntersect(screenCursor, scaledSlot)) {
+        return slot;
+      }
+      if (i < (numOfSlots.x - 1)) {
+        slot++;
+      }
     }
+    return 0;
+  }
 
-    //check if the Mouse point is in the rect and which one
-    void Render_Bag_Slot(entt::registry &zone, entt::entity &entity, int &state, SDL_Renderer *renderer, Component::Camera &camera) {
-      auto &bag = zone.get<Component::Bag>(entity).bag;
+  //check if the Mouse point is in the rect and which one
+  void Render_Bag_Slot(entt::registry &zone, entt::entity &entity, int &state, SDL_Renderer *renderer, Component::Camera &camera) {
+    auto &bag = zone.get<Component::Bag>(entity).bag;
 
-      SDL_FRect slotRect = {};
-      slotRect.w = iBagSlotPixelSize;
-      slotRect.h = iBagSlotPixelSize;
-      float i;
-      float j;
-      int slot = 0;
-      for (i = 0; i < numOfSlots.x; i++) {
-        slotRect.x = (i * iBagSlotPixelSize) + bagRect.x;
-        for (j = 0; j < numOfSlots.y; j++) {
-          slotRect.y = (j * iBagSlotPixelSize) + bagRect.y;
-          auto &icon = zone.get<Component::Icon>(bag.at(slot));
-          /*could be injected instead if it was a class object method*/
-          SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-          SDL_SetTextureAlphaMod(icon.pBackground, 255);
-          SDL_SetTextureAlphaMod(icon.pTexture, 255);
-          SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
-          SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
-          SDL_RenderCopyF(renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
-          SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
-          SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
-          if (j < (numOfSlots.y - 1)) {
-            slot++;
-          }
-        }
+    SDL_FRect slotRect = {};
+    slotRect.w = iBagSlotPixelSize;
+    slotRect.h = iBagSlotPixelSize;
+    float i;
+    float j;
+    int slot = 0;
+    for (i = 0; i < numOfSlots.x; i++) {
+      slotRect.x = (i * iBagSlotPixelSize) + bagRect.x;
+      for (j = 0; j < numOfSlots.y; j++) {
+        slotRect.y = (j * iBagSlotPixelSize) + bagRect.y;
         auto &icon = zone.get<Component::Icon>(bag.at(slot));
         /*could be injected instead if it was a class object method*/
         SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
@@ -142,238 +126,253 @@ namespace UI {
         SDL_RenderCopyF(renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
         SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
         SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
-        if (i < (numOfSlots.x - 1)) {
+        if (j < (numOfSlots.y - 1)) {
           slot++;
         }
       }
+      auto &icon = zone.get<Component::Icon>(bag.at(slot));
+      /*could be injected instead if it was a class object method*/
+      SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+      SDL_SetTextureAlphaMod(icon.pBackground, 255);
+      SDL_SetTextureAlphaMod(icon.pTexture, 255);
+      SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
+      SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
+      SDL_RenderCopyF(renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
+      SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
+      SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
+      if (i < (numOfSlots.x - 1)) {
+        slot++;
+      }
     }
+  }
 
-    bool Is_Cursor_Inside_Bag_Area(entt::registry &zone, Component::Camera &camera, SDL_FPoint &screenCursor) {
-      return Utilities::bPoint_RectIntersect(screenCursor, screenBag);
-    }
+  bool Is_Cursor_Inside_Bag_Area(entt::registry &zone, Component::Camera &camera, SDL_FPoint &screenCursor) {
+    return Utilities::bPoint_RectIntersect(screenCursor, screenBag);
+  }
 
-    void Interact_With_Bag(entt::registry &zone, entt::entity &entity, int &state, Component::Camera &camera) {
-      auto &bag = zone.get<Component::Bag>(entity).bag;
+  void Interact_With_Bag(entt::registry &zone, entt::entity &entity, int &state, Component::Camera &camera) {
+    auto &bag = zone.get<Component::Bag>(entity).bag;
 
-      if (Mouse::bRect_inside_Cursor(Character_UI)) {
-        int slotNum = Get_Bag_Slot(zone, Mouse::screenMousePoint, camera);
+    if (Mouse::bRect_inside_Cursor(Character_UI)) {
+      int slotNum = Get_Bag_Slot(zone, Mouse::screenMousePoint, camera);
 
-        if (Is_Cursor_Inside_Bag_Area(zone, camera, Mouse::screenMousePoint)) {
-          if (Mouse_Struct::mouseData.itemCurrentlyHeld) {
-            if (bag[slotNum] == emptyBagSlot[state]) {
-              Place_Item_In_Bag(zone, entity, state, slotNum);
-            } else {
-              Bag_Item_And_Swap_With_Mouse(zone, state, entity, slotNum);
-            }
-          } else if (bag.at(slotNum) != emptyBagSlot[state]) {
-            Remove_Item_From_Bag(zone, entity, state, slotNum);
+      if (Is_Cursor_Inside_Bag_Area(zone, camera, Mouse::screenMousePoint)) {
+        if (Mouse_Struct::mouseData.itemCurrentlyHeld) {
+          if (bag[slotNum] == emptyBagSlot[state]) {
+            Place_Item_In_Bag(zone, entity, state, slotNum);
+          } else {
+            Bag_Item_And_Swap_With_Mouse(zone, state, entity, slotNum);
           }
+        } else if (bag.at(slotNum) != emptyBagSlot[state]) {
+          Remove_Item_From_Bag(zone, entity, state, slotNum);
         }
       }
     }
-  }// namespace Bag_UI
+  }
+}// namespace Bag_UI
 
-  namespace Equipment_UI {
-    namespace {
-      f2 equipmentOffsetColumn1 = {32.0f, 32.0f};
-      f2 equipmentOffsetColumn2 = {452.0f, 32.0f};
-      //      float iEquipmentSlotPixelSize = 81.0f;
-      float iEquipmentSlotPixelSize = 40.5f;
-      // 452 in the x
-      // 10 between in the y
-      SDL_FRect screenEquipment = {defaultScreenPosition.x, defaultScreenPosition.y, 490.0f, 1080.0f};
+namespace Equipment_UI {
+  using namespace Bag_UI;
 
-      std::map<Item_Component::Item_Type, SDL_FRect> equippedItemsRect{
-          {Item_Component::Item_Type::helm, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::amulet, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::shoulders, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+  namespace {
+    f2 equipmentOffsetColumn1 = {32.0f, 32.0f};
+    f2 equipmentOffsetColumn2 = {452.0f, 32.0f};
+    //      float iEquipmentSlotPixelSize = 81.0f;
+    float iEquipmentSlotPixelSize = 40.5f;
+    // 452 in the x
+    // 10 between in the y
+    SDL_FRect screenEquipment = {defaultScreenPosition.x, defaultScreenPosition.y, 490.0f, 1080.0f};
 
-          //          {Item_Component::Item_Type::SIZE, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+    std::map<Item_Component::Item_Type, SDL_FRect> equippedItemsRect{
+        {Item_Component::Item_Type::helm, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::amulet, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::shoulders, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 
-          {Item_Component::Item_Type::chest, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::mainhand, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::quiver, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::gloves, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::belt, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::legs, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::boots, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::offhand, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        //          {Item_Component::Item_Type::SIZE, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 
-          {Item_Component::Item_Type::clothes, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::wrist, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::kilt, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::face, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::hood, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::crown, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::shins, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::back, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::ring0, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::ring1, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::jewelry0, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-          {Item_Component::Item_Type::jewelry1, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}}};
-      //            Item_Component::Item_Type::ranged, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 800.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-    }// namespace
+        {Item_Component::Item_Type::chest, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::mainhand, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::quiver, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::gloves, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::belt, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::legs, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::boots, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::offhand, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 
-    void Sheath_Item(entt::registry &zone, int &state, entt::entity &item, bool &mouseHasItem, const Item_Component::Item_Type &itemType, entt::entity &player) {
-      //set shield on back
-      //change weapong to bow or staff
+        {Item_Component::Item_Type::clothes, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::wrist, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::kilt, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::face, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::hood, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::crown, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::shins, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::back, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::ring0, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::ring1, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::jewelry0, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+        {Item_Component::Item_Type::jewelry1, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}}};
+    //            Item_Component::Item_Type::ranged, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 800.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+  }// namespace
+
+  void Sheath_Item(entt::registry &zone, int &state, entt::entity &item, bool &mouseHasItem, const Item_Component::Item_Type &itemType, entt::entity &player) {
+    //set shield on back
+    //change weapong to bow or staff
+  }
+
+  void Unequip_Item(entt::registry &zone, int &state, const Item_Component::Item_Type &itemType, entt::entity &player) {
+    //get item in slot
+    auto &equipment = zone.get<Item_Component::Equipment>(player);
+    entt::entity item = equipment.equippedItems[itemType];
+    if (Mouse::Set_Cursor_As_Entity(zone, item, Component::Icon_Type::item)) {
+      //clear item from rendering on player
+      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType].texture = NULL;
+      //clear equip slot
+      equipment.equippedItems[itemType] = Item_Component::emptyEquipSlot[state];
+      //set to mouse
+    };
+  }
+
+  bool Check_Mouse_Is_item(entt::registry &zone) {
+    if (Mouse_Struct::mouseData.type == Component::Icon_Type::item || Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
+      return true;
     }
+    return false;
+  }
 
-    void Unequip_Item(entt::registry &zone, int &state, const Item_Component::Item_Type &itemType, entt::entity &player) {
-      //get item in slot
-      auto &equipment = zone.get<Item_Component::Equipment>(player);
-      entt::entity item = equipment.equippedItems[itemType];
-      if (Mouse::Set_Cursor_As_Entity(zone, item, Component::Icon_Type::item)) {
-        //clear item from rendering on player
-        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType].texture = NULL;
-        //clear equip slot
-        equipment.equippedItems[itemType] = Item_Component::emptyEquipSlot[state];
-        //set to mouse
-      };
-    }
-
-    bool Check_Mouse_Is_item(entt::registry &zone) {
-      if (Mouse_Struct::mouseData.type == Component::Icon_Type::item || Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
-        return true;
-      }
-      return false;
-    }
-
-    void Equip_Item(entt::registry &zone, Item_Component::Item_Type &itemType, entt::entity &player) {
-      if (Check_Mouse_Is_item(zone)) {
-        if (Mouse_Struct::mouseData.type == Component::Icon_Type::item) {
-          auto &equipment = zone.get<Item_Component::Equipment>(player);
-
-          equipment.equippedItems[itemType] = Mouse_Struct::mouseData.mouseItem;
-          Mouse::Set_Cursor_As_Cursor(zone);
-
-          zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(equipment.equippedItems[itemType]);
-          if (itemType == Item_Component::Item_Type::mainhand) zone.get<Action_Component::Action>(player).weaponType = zone.get<Item_Component::Weapon_Type>(equipment.equippedItems[itemType]);
-        }
-      }
-    }
-
-    void Equip_Item_And_Swap_With_Mouse(entt::registry &zone, Item_Component::Item_Type &itemType, entt::entity &player) {
-      if (Check_Mouse_Is_item(zone)) {
+  void Equip_Item(entt::registry &zone, Item_Component::Item_Type &itemType, entt::entity &player) {
+    if (Check_Mouse_Is_item(zone)) {
+      if (Mouse_Struct::mouseData.type == Component::Icon_Type::item) {
         auto &equipment = zone.get<Item_Component::Equipment>(player);
-        auto ItemInSlot = Mouse::Swap_Entity_On_Cursor_With_Entity(zone, equipment.equippedItems[itemType], Component::Icon_Type::item);
 
-        if (zone.any_of<Component::Inventory>(ItemInSlot.entity_ID)) zone.remove<Component::Inventory>(ItemInSlot.entity_ID);
-        if (itemType == Item_Component::Item_Type::mainhand) { zone.get<Action_Component::Action>(player).weaponType = zone.get<Item_Component::Weapon_Type>(ItemInSlot.entity_ID); }
-        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(ItemInSlot.entity_ID);
+        equipment.equippedItems[itemType] = Mouse_Struct::mouseData.mouseItem;
+        Mouse::Set_Cursor_As_Cursor(zone);
+
+        zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(equipment.equippedItems[itemType]);
+        if (itemType == Item_Component::Item_Type::mainhand) zone.get<Action_Component::Action>(player).weaponType = zone.get<Item_Component::Weapon_Type>(equipment.equippedItems[itemType]);
       }
     }
+  }
 
-    bool Mouse_Inside_Equipment_Screen(entt::registry &zone, Component::Camera &camera, SDL_FPoint &screenCursor) {
-      return Utilities::bPoint_RectIntersect(screenCursor, screenEquipment);
+  void Equip_Item_And_Swap_With_Mouse(entt::registry &zone, Item_Component::Item_Type &itemType, entt::entity &player) {
+    if (Check_Mouse_Is_item(zone)) {
+      auto &equipment = zone.get<Item_Component::Equipment>(player);
+      auto ItemInSlot = Mouse::Swap_Entity_On_Cursor_With_Entity(zone, equipment.equippedItems[itemType], Component::Icon_Type::item);
+
+      if (zone.any_of<Component::Inventory>(ItemInSlot.entity_ID)) zone.remove<Component::Inventory>(ItemInSlot.entity_ID);
+      if (itemType == Item_Component::Item_Type::mainhand) { zone.get<Action_Component::Action>(player).weaponType = zone.get<Item_Component::Weapon_Type>(ItemInSlot.entity_ID); }
+      zone.get<Rendering_Components::Unit_Frame_Portrait>(player).gear[(int) itemType] = zone.get<Rendering_Components::Portrait>(ItemInSlot.entity_ID);
     }
+  }
 
-    bool Interact_With_Equipment(entt::registry &zone, int &state, Component::Camera &camera, entt::entity &player) {
-      /*could be injected instead*/
-      if (Check_Mouse_Is_item(zone)) {
-        if (Mouse_Inside_Equipment_Screen(zone, camera, Mouse::screenMousePoint)) {
-          //check which item type with a search of where the mouse and the rects of the equip slots
-          auto &equipment = zone.get<Item_Component::Equipment>(player);
-          if (Mouse::mouseData.itemCurrentlyHeld) {
-            auto itemType = zone.get<Item_Component::Item_Type>(Mouse::mouseData.mouseItem);
+  bool Mouse_Inside_Equipment_Screen(entt::registry &zone, Component::Camera &camera, SDL_FPoint &screenCursor) {
+    return Utilities::bPoint_RectIntersect(screenCursor, screenEquipment);
+  }
 
-            SDL_FRect slotRect = equippedItemsRect[itemType];
-            SDL_FRect scaledSlot;
-            bool inside;
-            if (itemType == Item_Component::Item_Type::ring) {
-              slotRect = equippedItemsRect[Item_Component::Item_Type::ring0];
+  bool Interact_With_Equipment(entt::registry &zone, int &state, Component::Camera &camera, entt::entity &player) {
+    /*could be injected instead*/
+    if (Check_Mouse_Is_item(zone)) {
+      if (Mouse_Inside_Equipment_Screen(zone, camera, Mouse::screenMousePoint)) {
+        //check which item type with a search of where the mouse and the rects of the equip slots
+        auto &equipment = zone.get<Item_Component::Equipment>(player);
+        if (Mouse::mouseData.itemCurrentlyHeld) {
+          auto itemType = zone.get<Item_Component::Item_Type>(Mouse::mouseData.mouseItem);
+
+          SDL_FRect slotRect = equippedItemsRect[itemType];
+          SDL_FRect scaledSlot;
+          bool inside;
+          if (itemType == Item_Component::Item_Type::ring) {
+            slotRect = equippedItemsRect[Item_Component::Item_Type::ring0];
+            scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+            inside = Mouse::bRect_inside_Cursor(scaledSlot);
+            itemType = Item_Component::Item_Type::ring0;
+            if (!inside) {
+              slotRect = equippedItemsRect[Item_Component::Item_Type::ring1];
               scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
               inside = Mouse::bRect_inside_Cursor(scaledSlot);
-              itemType = Item_Component::Item_Type::ring0;
-              if (!inside) {
-                slotRect = equippedItemsRect[Item_Component::Item_Type::ring1];
-                scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-                inside = Mouse::bRect_inside_Cursor(scaledSlot);
-                itemType = Item_Component::Item_Type::ring1;
-              }
-            } else if (itemType == Item_Component::Item_Type::jewelry) {
-              slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry0];
-              scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-              inside = Mouse::bRect_inside_Cursor(scaledSlot);
-              itemType = Item_Component::Item_Type::jewelry0;
-              if (!inside) {
-                slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry1];
-                scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-                inside = Mouse::bRect_inside_Cursor(scaledSlot);
-                itemType = Item_Component::Item_Type::jewelry1;
-              }
+              itemType = Item_Component::Item_Type::ring1;
             }
-
-            else {
+          } else if (itemType == Item_Component::Item_Type::jewelry) {
+            slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry0];
+            scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+            inside = Mouse::bRect_inside_Cursor(scaledSlot);
+            itemType = Item_Component::Item_Type::jewelry0;
+            if (!inside) {
+              slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry1];
               scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
               inside = Mouse::bRect_inside_Cursor(scaledSlot);
-            }
-
-            if (inside) {
-              if (equipment.equippedItems[itemType] == Item_Component::emptyEquipSlot[state]) {
-                Equip_Item(zone, itemType, player);
-                return true;
-              } else {
-                Equip_Item_And_Swap_With_Mouse(zone, itemType, player);
-                return true;
-              }
+              itemType = Item_Component::Item_Type::jewelry1;
             }
           }
 
           else {
-            for (auto &itemSlot: equippedItemsRect) {
-              SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(itemSlot.second, camera);
-              if (Mouse::bRect_inside_Cursor(scaledSlot)) {
-                if (equipment.equippedItems[itemSlot.first] != Item_Component::emptyEquipSlot[state]) {
-                  Unequip_Item(zone, state, itemSlot.first, player);
-                  return true;
-                }
+            scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+            inside = Mouse::bRect_inside_Cursor(scaledSlot);
+          }
+
+          if (inside) {
+            if (equipment.equippedItems[itemType] == Item_Component::emptyEquipSlot[state]) {
+              Equip_Item(zone, itemType, player);
+              return true;
+            } else {
+              Equip_Item_And_Swap_With_Mouse(zone, itemType, player);
+              return true;
+            }
+          }
+        }
+
+        else {
+          for (auto &itemSlot: equippedItemsRect) {
+            SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(itemSlot.second, camera);
+            if (Mouse::bRect_inside_Cursor(scaledSlot)) {
+              if (equipment.equippedItems[itemSlot.first] != Item_Component::emptyEquipSlot[state]) {
+                Unequip_Item(zone, state, itemSlot.first, player);
+                return true;
               }
             }
           }
         }
       }
-      return false;
     }
+    return false;
+  }
 
-    entt::entity Get_Equip_Slot(entt::registry &zone, int &state, Component::Camera &camera) {
-      auto view = zone.view<Component::Input, Item_Component::Equipment>();
-      for (auto player: view) {
-        auto &equipment = view.get<Item_Component::Equipment>(player);
-        for (auto &item: equippedItemsRect) {
-          SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(item.second, camera);
-          if (Mouse::bRect_inside_Cursor(scaledSlot)) {
-            return equipment.equippedItems[item.first];
-          }
-        }
-      }
-      return Item_Component::emptyEquipSlot[state];
-    }
-
-    void Render_Equipment_Slot(entt::registry &zone, int &state, SDL_Renderer *renderer, Component::Camera &camera, entt::entity &player) {
-      auto &equipment = zone.get<Item_Component::Equipment>(player);
-      for (auto slot: equipment.equippedItems) {
-        if (zone.any_of<Component::Icon>(slot.second)) {
-          auto &icon = zone.get<Component::Icon>(slot.second);
-          SDL_FRect slotRect = equippedItemsRect[slot.first];
-
-          SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-          SDL_SetTextureAlphaMod(icon.pBackground, 255);
-          SDL_SetTextureAlphaMod(icon.pTexture, 255);
-          SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
-          SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
-          SDL_RenderCopyF(renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
-          SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
-          SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
+  entt::entity Get_Equip_Slot(entt::registry &zone, int &state, Component::Camera &camera) {
+    auto view = zone.view<Component::Input, Item_Component::Equipment>();
+    for (auto player: view) {
+      auto &equipment = view.get<Item_Component::Equipment>(player);
+      for (auto &item: equippedItemsRect) {
+        SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(item.second, camera);
+        if (Mouse::bRect_inside_Cursor(scaledSlot)) {
+          return equipment.equippedItems[item.first];
         }
       }
     }
+    return Item_Component::emptyEquipSlot[state];
+  }
 
-    void Update_Equipment_Position(Component::Camera &camera) {
-      SDL_FRect equipment = {defaultScreenPosition.x + 28, defaultScreenPosition.y + 28, 506, 450};
-      screenEquipment = Camera_Control::Convert_FRect_To_Scale(equipment, camera);
+  void Render_Equipment_Slot(entt::registry &zone, int &state, SDL_Renderer *renderer, Component::Camera &camera, entt::entity &player) {
+    auto &equipment = zone.get<Item_Component::Equipment>(player);
+    for (auto slot: equipment.equippedItems) {
+      if (zone.any_of<Component::Icon>(slot.second)) {
+        auto &icon = zone.get<Component::Icon>(slot.second);
+        SDL_FRect slotRect = equippedItemsRect[slot.first];
+
+        SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+        SDL_SetTextureAlphaMod(icon.pBackground, 255);
+        SDL_SetTextureAlphaMod(icon.pTexture, 255);
+        SDL_SetTextureAlphaMod(icon.pIconRarityBorder, 255);
+        SDL_SetTextureAlphaMod(icon.pIconBorder, 255);
+        SDL_RenderCopyF(renderer, icon.pBackground, &icon.clipIcon, &scaledSlot);
+        SDL_RenderCopyF(renderer, icon.pTexture, &icon.clipSprite, &scaledSlot);
+        SDL_RenderCopyF(renderer, icon.pIconRarityBorder, &icon.clipIcon, &scaledSlot);
+      }
     }
-  }// namespace Equipment_UI
+  }
+
+  void Update_Equipment_Position(Component::Camera &camera) {
+    SDL_FRect equipment = {defaultScreenPosition.x + 28, defaultScreenPosition.y + 28, 506, 450};
+    screenEquipment = Camera_Control::Convert_FRect_To_Scale(equipment, camera);
+  }
 
   bool Swap_Weapon(entt::registry &zone, int &state, entt::entity &player, Item_Component::Item_Type &type, Item_Component::Equipment &equipment, entt::entity &itemInSlot, std::array<entt::entity, 32> &bag, int &slotNum) {
     if (type == Item_Component::Item_Type::mainhand) {
@@ -574,4 +573,4 @@ namespace UI {
     }
     return false;
   }
-}// namespace UI
+}// namespace Equipment_UI

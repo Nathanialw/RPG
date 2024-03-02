@@ -149,10 +149,10 @@ namespace Event_Handler {
           Action_Bar::Clear_Spell_On_Mouse(zone);
         }
         //        items
-        else if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
+        else if (Bag_UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(Bag_UI::Character_UI)) {
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::item || Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
-            UI::Bag_UI::Interact_With_Bag(zone, player_ID, state, camera);
-            if (UI::Equipment_UI::Interact_With_Equipment(zone, state, camera, player_ID)) {
+            Bag_UI::Interact_With_Bag(zone, player_ID, state, camera);
+            if (Equipment_UI::Interact_With_Equipment(zone, state, camera, player_ID)) {
               //updates character stats
               zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
             }
@@ -180,15 +180,15 @@ namespace Event_Handler {
           }
           //          items
           User_Mouse_Input::Selection_Box(zone);//if units are currently selected
-          UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
+          Equipment_UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
           //          spells
           Action_Bar::Clear_Spell_On_Mouse(zone);
         }
       } else if (Events::event.button.button == SDL_BUTTON_RIGHT) {
-        if (UI::bToggleCharacterUI) {
+        if (Bag_UI::bToggleCharacterUI) {
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::item || Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
-            if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
-              if (UI::Swap_Item_In_Bag_For_Equipped(zone, state, Mouse::screenMousePoint, camera, player_ID)) {
+            if (Mouse::bRect_inside_Cursor(Bag_UI::Character_UI)) {
+              if (Equipment_UI::Swap_Item_In_Bag_For_Equipped(zone, state, Mouse::screenMousePoint, camera, player_ID)) {
                 zone.emplace_or_replace<Item_Component::Item_Equip>(player_ID);
                 return;
               }
@@ -230,7 +230,7 @@ namespace Event_Handler {
             Mouse::Set_Cursor_As_Cursor(zone);
             Mouse::Set_Cursor_As_Entity(zone, mouseEntity, Component::Icon_Type::building);
           } else if (Mouse_Struct::mouseData.type == Component::Icon_Type::item) {
-            UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
+            Equipment_UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
           }
         }
       }
@@ -239,7 +239,7 @@ namespace Event_Handler {
     if (Events::event.key.type == SDL_MOUSEBUTTONUP) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
         if (Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
-          if (UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(UI::Character_UI)) {
+          if (Bag_UI::bToggleCharacterUI && Mouse::bRect_inside_Cursor(Bag_UI::Character_UI)) {
             return;
           } else if (UI_Spellbook::Check_Spellbook(camera)) {
             return;

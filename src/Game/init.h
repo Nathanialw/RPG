@@ -86,7 +86,7 @@ namespace Init {
     Collision::init_Collison(state);
     Item_Component::emptyEquipSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
     Graphics::defaultIcon[state] = Graphics::Create_Icon_Entity(zone, Graphics::default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
-    UI::Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
+    Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
     Mouse::Init_mouse(zone);
     if (Create_Entities::startup) {
       Create_Character_Entity::Init_Player(zone, state, playerOptions);

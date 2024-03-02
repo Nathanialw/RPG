@@ -1,5 +1,5 @@
 #pragma once
-#include "mouse_control.h"
+#include "Input/mouse_control.h"
 #include "spells.h"
 
 namespace Might {

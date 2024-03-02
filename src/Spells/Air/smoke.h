@@ -1,6 +1,6 @@
 #pragma once
+#include "Input/mouse_control.h"
 #include "spells.h"
-#include "mouse_control.h"
 
 namespace Air {
   struct Cast_Data {
@@ -30,4 +30,4 @@ namespace Air {
     }
     return 0;
   }
-}// namespace Fire
+}// namespace Air

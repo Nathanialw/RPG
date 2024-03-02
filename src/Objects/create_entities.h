@@ -277,7 +277,7 @@ namespace Create_Entities {
       // if this is the first run make these, otherwise copy them
       else if (startup) {
         startup = false;
-        UI::Bag_UI::Create_Bag_UI(zone, entity, state);
+        Bag_UI::Create_Bag_UI(zone, entity, state);
         zone.emplace_or_replace<Social_Component::Race>(entity, Social_Control::Get_Race(data.race));
         auto raceData = Social_Control::Get_Race_Relationsips(data.race);
         auto &relationships = zone.emplace_or_replace<Social_Component::Relationships>(entity);

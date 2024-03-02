@@ -1,10 +1,10 @@
 #pragma once
 
+#include "Input/mouse_control.h"
 #include "Maps/World/world.h"
 #include "Objects/Social/social_control.h"
 #include "components.h"
 #include "graphics.h"
-#include "mouse_control.h"
 #include "player_control.h"
 #include "utilities.h"
 

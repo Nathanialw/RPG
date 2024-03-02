@@ -1,7 +1,7 @@
 #pragma once
+#include "Input/mouse_control.h"
+#include "Input/mouse_data.h"
 #include "graphics.h"
-#include "mouse_control.h"
-#include "mouse_data.h"
 #include "sinister_strike.h"
 #include "spell_data.h"
 #include "ui_elements.h"

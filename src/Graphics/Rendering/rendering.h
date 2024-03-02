@@ -1,15 +1,15 @@
 #pragma once
 
 #include "Fog_Of_War/fog_of_war.h"
+#include "Input/camera.h"
+#include "Input/pause.h"
 #include "Maps/Pathing/a_star.h"
 #include "Maps/World/map.h"
 #include "Maps/World/world_grid.h"
-#include "camera.h"
 #include "entt/entt.hpp"
 #include "fog.h"
 #include "frame_rendering.h"
 #include "graphics.h"
-#include "pause.h"
 #include "render_iso_tiles.h"
 #include "rendering_components.h"
 #include "timer.h"
@@ -135,16 +135,16 @@ namespace Rendering {
 
       Action_Bar::Render_Action_Bar(zone, state, camera);
 
-      if (UI::bToggleCharacterUI) {
+      if (Bag_UI::bToggleCharacterUI) {
         //render UI
-        UI::Character_UI = Camera_Control::Convert_FRect_To_Scale(UI::defaultScreenPosition, camera);
-        Graphics::Render_FRect(Graphics::itsmars_Inventory, {255, 255, 255}, &UI::charui, &UI::Character_UI);
+        Bag_UI::Character_UI = Camera_Control::Convert_FRect_To_Scale(Bag_UI::defaultScreenPosition, camera);
+        Graphics::Render_FRect(Graphics::itsmars_Inventory, {255, 255, 255}, &Bag_UI::charui, &Bag_UI::Character_UI);
         //reder equipment slots
-        UI::Equipment_UI::Update_Equipment_Position(camera);
-        UI::Equipment_UI::Render_Equipment_Slot(zone, state, renderer, camera, player_ID);
+        Equipment_UI::Update_Equipment_Position(camera);
+        Equipment_UI::Render_Equipment_Slot(zone, state, renderer, camera, player_ID);
         //render Items in bag
-        UI::Bag_UI::screenBag = Camera_Control::Convert_FRect_To_Scale(UI::Bag_UI::bagRect, camera);
-        UI::Bag_UI::Render_Bag_Slot(zone, player_ID, state, renderer, camera);
+        Bag_UI::screenBag = Camera_Control::Convert_FRect_To_Scale(Bag_UI::bagRect, camera);
+        Bag_UI::Render_Bag_Slot(zone, player_ID, state, renderer, camera);
       }
     }
   }

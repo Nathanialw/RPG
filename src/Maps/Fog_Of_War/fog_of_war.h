@@ -1,7 +1,7 @@
 #pragma once
+#include "Input/camera.h"
 #include "SDL2/SDL.h"
 #include "array"
-#include "camera.h"
 #include "components.h"
 #include "entt/entt.hpp"
 

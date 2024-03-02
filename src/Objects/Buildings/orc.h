@@ -1,6 +1,6 @@
 #pragma once
+#include "Input/mouse_control.h"
 #include "create_entities.h"
-#include "mouse_control.h"
 
 namespace Orc {
 

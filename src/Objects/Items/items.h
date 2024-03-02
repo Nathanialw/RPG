@@ -1,16 +1,16 @@
 #pragma once
 
 #include "Graphics/XML_Parsers/texture_packer_item.h"
+#include "Input/camera.h"
+#include "Input/mouse_control.h"
 #include "Maps/World/world.h"
 #include "SQLite_item_data.h"
 #include "SQLite_spritesheets.h"
 #include "building_components.h"
-#include "camera.h"
 #include "components.h"
 #include "graphics.h"
 #include "icons.h"
 #include "item_components.h"
-#include "mouse_control.h"
 #include "quad_tree.h"
 #include "utilities.h"
 #include <vector>

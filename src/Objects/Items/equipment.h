@@ -1,12 +1,12 @@
 #pragma once
 
+#include "Input/mouse_control.h"
+#include "base_structs.h"
 #include "components.h"
 #include "graphics.h"
 #include "ui.h"
-#include "base_structs.h"
 #include "utilities.h"
 #include <SDL2/SDL_rect.h>
-#include "mouse_control.h"
 
 using namespace UI;
 
@@ -19,11 +19,11 @@ namespace Equipment {
     int iTotalSlots = numOfSlots.x * numOfSlots.y;
     int iBagSlotPixelSize = 80;
 
-    SDL_Rect equipment = {(int) (defaultScreenPosition.x + Bag_UI::bagoffset.x), (int) (defaultScreenPosition.y + Bag_UI::bagoffset.y), numOfSlots.x * iBagSlotPixelSize, numOfSlots.y * iBagSlotPixelSize};
+    SDL_Rect equipment = {(int) (defaultScreenPosition.x + Bag_UI::bagoffset.x), (int) (defaultScreenPosition.y + Bag_UI::bagoffset.y), numOfSlots.x *iBagSlotPixelSize, numOfSlots.y *iBagSlotPixelSize};
     SDL_Rect screenEquipment = {};
 
     std::vector<entt::entity> UI_bagSlots(iTotalSlots);
-  }
+  }// namespace
 
   void Equip_Item(entt::registry &zone, entt::entity &item, bool &mouseHasItem, int &slotNum) {
     if (zone.get<Component::On_Mouse>(item).type == Component::Icon_Type::item) {
@@ -141,4 +141,4 @@ namespace Equipment {
   void Init_Equipment() {
     Create_Bag_UI();
   }
-}
+}// namespace Equipment

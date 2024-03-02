@@ -1,12 +1,12 @@
 #pragma once
 
+#include "Input/camera.h"
+#include "Input/mouse_control.h"
 #include "Objects/Social/social_control.h"
-#include "camera.h"
 #include "components.h"
 #include "debug_components.h"
 #include "debug_system.h"
 #include "graphics.h"
-#include "mouse_control.h"
 #include "ui_frames.h"
 #include "ui_resources.h"
 #include "ui_unit_control.hpp"

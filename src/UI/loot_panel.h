@@ -1,5 +1,5 @@
+#include "Input/mouse_control.h"
 #include "graphics.h"
-#include "mouse_control.h"
 #include "tooltips.h"
 
 namespace Loot_Panel {
@@ -41,7 +41,7 @@ namespace Loot_Panel {
     for (auto entity: view) {
       auto &bag = zone.get<Component::Bag>(entity).bag;
       for (auto &slot: bag) {
-        if (slot == UI::Bag_UI::emptyBagSlot[state]) {
+        if (slot == Bag_UI::emptyBagSlot[state]) {
           slot = lootPanel.items->at(i);
           lootPanel.items->erase(lootPanel.items->begin() + i);
           zone.emplace_or_replace<Item_Component::Item_Pickup>(slot);
@@ -65,8 +65,8 @@ namespace Loot_Panel {
           SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(panel, camera);
           if (Mouse::bRect_inside_Cursor(scaledSlot)) {
             //bag is open
-            if (UI::bToggleCharacterUI) {
-              UI::Pick_Up_Item_To_Mouse(zone, lootPanel.items->at(i), Mouse::mouseData.itemCurrentlyHeld);
+            if (Bag_UI::bToggleCharacterUI) {
+              Equipment_UI::Pick_Up_Item_To_Mouse(zone, lootPanel.items->at(i), Mouse::mouseData.itemCurrentlyHeld);
               //remove item from loot
               lootPanel.items->erase(lootPanel.items->begin() + i);
               return true;

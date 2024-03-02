@@ -12,8 +12,8 @@ namespace Character_Stats {
   SDL_FRect statsSheetOffsetRect = {160.0f, 64.0f, 240.0f, 384.0f};
 
   SDL_FRect screenCharacterStats = {
-      UI::defaultScreenPosition.x + statsSheetOffsetRect.x,
-      UI::defaultScreenPosition.y + statsSheetOffsetRect.y,
+      Bag_UI::defaultScreenPosition.x + statsSheetOffsetRect.x,
+      Bag_UI::defaultScreenPosition.y + statsSheetOffsetRect.y,
       statsSheetOffsetRect.w, statsSheetOffsetRect.h};
 
   Graphics::Surface_Data Create_Text_Box(std::string &string, SDL_Color &rarity, SDL_Rect &textBox) {
@@ -183,9 +183,9 @@ namespace Character_Stats {
   }
 
   void Render_Character_Stats(Component::Camera &camera) {
-    if (UI::bToggleCharacterUI) {
+    if (Bag_UI::bToggleCharacterUI) {
 
-      SDL_FRect statsBox = {UI::defaultScreenPosition.x + statsSheetOffsetRect.x, UI::defaultScreenPosition.y + statsSheetOffsetRect.y, statsSheetOffsetRect.w, statsSheetOffsetRect.h};
+      SDL_FRect statsBox = {Bag_UI::defaultScreenPosition.x + statsSheetOffsetRect.x, Bag_UI::defaultScreenPosition.y + statsSheetOffsetRect.y, statsSheetOffsetRect.w, statsSheetOffsetRect.h};
       SDL_FRect statBox = Camera_Control::Convert_FRect_To_Scale(statsBox, camera);
       SDL_Color black = {0, 0, 0, 255};
 

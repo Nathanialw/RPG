@@ -75,7 +75,7 @@ namespace Hotbar {
   }
 
   int Bag_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-    UI::Bag_UI::Toggle_Bag();
+    Bag_UI::Toggle_Bag();
     return 0;
   }
 
@@ -90,11 +90,11 @@ namespace Hotbar {
       zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseData.mouseItem);
       Mouse::Set_Cursor_As_Cursor(zone);
       return 0;
-    } else if (UI_Spellbook::spellbook.b_isOpen || UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || UI_Frames::topFrame.open || !view.empty()) {
+    } else if (UI_Spellbook::spellbook.b_isOpen || Bag_UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || UI_Frames::topFrame.open || !view.empty()) {
       Mouse::bLeft_Mouse_Pressed = false;
       zone.clear<Component::Selected>();
       Loot_Panel::Close();
-      UI::bToggleCharacterUI = false;
+      Bag_UI::bToggleCharacterUI = false;
       UI_Spellbook::spellbook.b_isOpen = false;
       UI_Info::spellbook.b_isOpen = false;
       Game_Menu_Control::Close();

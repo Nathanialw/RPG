@@ -72,13 +72,13 @@ namespace Load {
   }
 
   void Copy_Inventory(entt::registry &OldZone, entt::registry &newZone, int oldState, int &newState, entt::entity oldEntity, entt::entity &newEntity) {
-    UI::Bag_UI::Create_Bag_UI(newZone, newEntity, newState);
+    Bag_UI::Create_Bag_UI(newZone, newEntity, newState);
     auto &oldBag = OldZone.get<Component::Bag>(oldEntity).bag;
     auto &newBag = newZone.get<Component::Bag>(newEntity).bag;
 
     for (int i = 0; i < oldBag.size(); ++i) {
       //if it is an item and not an empty slot
-      if (oldBag[i] != UI::Bag_UI::emptyBagSlot[oldState]) {
+      if (oldBag[i] != Bag_UI::emptyBagSlot[oldState]) {
         newBag[i] = Copy_item(OldZone, newZone, oldBag[i]);
         OldZone.destroy(oldBag[i]);
       }

@@ -1,8 +1,8 @@
 #pragma once
+#include "Input/hotbar_structs.h"
 #include "Maps/World/world.h"
 #include "entt/entt.hpp"
 #include "graphics.h"
-#include "hotbar_structs.h"
 #include "item_components.h"
 #include "ui_elements.h"
 #include "ui_spellbook.h"

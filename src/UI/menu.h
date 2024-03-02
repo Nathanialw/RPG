@@ -1,13 +1,13 @@
 #pragma once
 
+#include "Input/camera.h"
+#include "Input/mouse_control.h"
+#include "Input/pause.h"
 #include "SDL2/SDL.h"
 #include "SDL_FontCache/SDL_FontCache.h"
 #include "base_structs.h"
-#include "camera.h"
 #include "events.h"
 #include "menu_options.h"
-#include "mouse_control.h"
-#include "pause.h"
 #include "ui_actionbar.h"
 #include "ui_elements.h"
 #include "ui_spellbook.h"
@@ -143,7 +143,7 @@ namespace Menu {
   }
 
   int Show_Menu(Menu &menus, entt::registry &zone, int &state, Component::Camera &camera) {
-//    Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu(camera) : Render_Menu_FC(camera);
+    //    Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu(camera) : Render_Menu_FC(camera);
     Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu_FC(camera) : Render_Menu(camera);
 
     while (SDL_PollEvent(&Events::event)) {

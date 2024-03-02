@@ -121,17 +121,17 @@ namespace Tooltip {
   }
 
   void Show_Item_Tooltip(entt::registry &zone, entt::entity &entity, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
-    if (UI::bToggleCharacterUI) {
-      if (Mouse::bRect_inside_Cursor(UI::Character_UI)) {
+    if (Bag_UI::bToggleCharacterUI) {
+      if (Mouse::bRect_inside_Cursor(Bag_UI::Character_UI)) {
         entt::entity item = Item_Component::emptyEquipSlot[state];
-        if (UI::Bag_UI::Is_Cursor_Inside_Bag_Area(zone, camera, mousePoint)) {//if mouse is over the bag area
-          int mouseoverSlot = UI::Bag_UI::Get_Bag_Slot(zone, mousePoint, camera);
+        if (Bag_UI::Is_Cursor_Inside_Bag_Area(zone, camera, mousePoint)) {//if mouse is over the bag area
+          int mouseoverSlot = Bag_UI::Get_Bag_Slot(zone, mousePoint, camera);
           auto &bag = zone.get<Component::Bag>(entity).bag;
           item = bag[mouseoverSlot];
-        } else if (UI::Equipment_UI::Mouse_Inside_Equipment_Screen(zone, camera, mousePoint)) {// if mouse is over the equip area
-          item = UI::Equipment_UI::Get_Equip_Slot(zone, state, camera);
+        } else if (Equipment_UI::Mouse_Inside_Equipment_Screen(zone, camera, mousePoint)) {// if mouse is over the equip area
+          item = Equipment_UI::Get_Equip_Slot(zone, state, camera);
         }
-        if (item != UI::Bag_UI::emptyBagSlot[state] && item != Item_Component::emptyEquipSlot[state]) {
+        if (item != Bag_UI::emptyBagSlot[state] && item != Item_Component::emptyEquipSlot[state]) {
           Tooltip::Render_Tooltip(zone, item, state, mousePoint, camera);
         }
       }
