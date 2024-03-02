@@ -3,8 +3,8 @@
 
 namespace Simplex_Noise {
   // 2D noise variables
-  std::array<float, 32 * 32> fNoiseSeedArray2D;
-  std::array<float, 32 * 32> fPerlinNoiseArray2D;
+  std::array<float, World_Data::REGION_SIZE * World_Data::REGION_SIZE> fNoiseSeedArray2D;
+  std::array<float, World_Data::REGION_SIZE * World_Data::REGION_SIZE> fPerlinNoiseArray2D;
 
   // 1D noise variables
   float *fNoiseSeedArray1D = nullptr;
@@ -55,7 +55,7 @@ namespace Simplex_Noise {
     }
   }
 
-  void PerlinNoise2D(int nWidth, int nHeight, std::array<float, 32 * 32> fSeed, int nOctaves, float fBias, std::array<float, 32 * 32> &fOutput) {
+  void PerlinNoise2D(int nWidth, int nHeight, std::array<float, World_Data::REGION_SIZE * World_Data::REGION_SIZE> fSeed, int nOctaves, float fBias, std::array<float, World_Data::REGION_SIZE * World_Data::REGION_SIZE> &fOutput) {
     // Used 1D Perlin Noise
     for (int x = 0; x < nWidth; x++)
       for (int y = 0; y < nHeight; y++) {

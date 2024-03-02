@@ -129,6 +129,7 @@ namespace Graphics {
   SDL_Texture *spellbook;
 
   SDL_Texture *tooltipBackground;
+  SDL_Texture *checkmark;
   SDL_Texture *fogOfWar;
 
   void Render_Rect(SDL_Texture *pTexture, SDL_Rect &clipSprite, SDL_Rect &scaledSlot) {
@@ -386,6 +387,7 @@ namespace Graphics {
     //    fogOfWar = createTexture("assets/sprites/fog_of_war/blackFog.png");
     fogOfWar = createTexture("assets/sprites/UI/tooltips/fogOfWar.png");
     tooltipBackground = createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png");
+    checkmark = createTexture("assets/sprites/UI/Inventory/29.png");
     spellbook = createTexture("assets/sprites/UI/spellbook/spellbook.png");
 
     default_icon = createTexture("assets/sprites/default.jpg");

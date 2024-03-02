@@ -1,4 +1,5 @@
 #pragma once
+#include "Debug/debug_components.h"
 #include "Input/mouse_control.h"
 #include "Maps/World/world.h"
 #include "Maps/World/world_update.h"
@@ -100,7 +101,9 @@ namespace A_Star {
     // Reset Navigation Graph - default all node states
     nodeStart = &nodes[(int(position.y / nNodeSize) * nMapWidth) + int(position.x / nNodeSize)];
     nodeEnd = &nodes[(int(target.y / nNodeSize) * nMapWidth) + int(target.x / nNodeSize)];
-    //    if (nodeEnd->bObstacle) return false;
+
+    int numCellsToCheck;
+    (nodeEnd->bObstacle) ? numCellsToCheck = 20 : numCellsToCheck = 10000;
 
     for (int x = 0; x < nMapWidth; x++)
       for (int y = 0; y < nMapHeight; y++) {
@@ -139,7 +142,7 @@ namespace A_Star {
     while (!listNotTestedNodes.empty() && nodeCurrent != nodeEnd)// Find absolutely shortest path // && nodeCurrent != nodeEnd)
     {
       i++;
-      if (i > 1000) return false;
+      if (i > numCellsToCheck) return false;
       // Sort Untested nodes by global goal, so lowest is first
       listNotTestedNodes.sort([](const sNode *lhs, const sNode *rhs) { return lhs->fGlobalGoal < rhs->fGlobalGoal; });
 
@@ -211,48 +214,50 @@ namespace A_Star {
     //      }
 
     // Draw Nodes on top
-    for (int x = 0; x < nMapWidth; x++)
-      for (int y = 0; y < nMapHeight; y++) {
+    if (Debug::settings[Debug::Settings::showPathing]) {
+      for (int x = 0; x < nMapWidth; x++)
+        for (int y = 0; y < nMapHeight; y++) {
 
-        SDL_FRect rect = {
-            (float) (x * nNodeSize) + nNodeBorder,
-            (float) (y * nNodeSize) + nNodeBorder,
-            (float) nNodeSize - (nNodeBorder * 2.0f),
-            (float) nNodeSize - (nNodeBorder * 2.0f)};
-        rect = Utilities::World_To_ScreenF(rect, camera.screen);
+          SDL_FRect rect = {
+              (float) (x * nNodeSize) + nNodeBorder,
+              (float) (y * nNodeSize) + nNodeBorder,
+              (float) nNodeSize - (nNodeBorder * 2.0f),
+              (float) nNodeSize - (nNodeBorder * 2.0f)};
+          rect = Utilities::World_To_ScreenF(rect, camera.screen);
 
-        if (nodes[y * nMapWidth + x].bVisited) {
-          Graphics::Render_FRect(Graphics::itemBorderMagic, &rect);
+          if (nodes[y * nMapWidth + x].bVisited) {
+            Graphics::Render_FRect(Graphics::itemBorderMagic, &rect);
+          }
+
+          else if (&nodes[y * nMapWidth + x] == nodeStart) {
+            Graphics::Render_FRect(Graphics::itemBorderCommon, &rect);
+          }
+
+          else if (&nodes[y * nMapWidth + x] == nodeEnd) {
+            Graphics::Render_FRect(Graphics::itemBorderEite, &rect);
+          }
+
+          else if (nodes[y * nMapWidth + x].bObstacle) {
+            Graphics::Render_FRect(Graphics::itemBorderRare, &rect);
+          }
         }
 
-        else if (&nodes[y * nMapWidth + x] == nodeStart) {
-          Graphics::Render_FRect(Graphics::itemBorderCommon, &rect);
+      // Draw Path by starting ath the end, and following the parent node trail
+      // back to the start - the start node will not have a parent path to follow
+      if (nodeEnd != nullptr) {
+        sNode *p = nodeEnd;
+        while (p->parent != nullptr) {
+          SDL_SetRenderDrawColor(Graphics::renderer, 0, 125, 125, 255);
+          SDL_RenderDrawLineF(
+              Graphics::renderer,
+              (p->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+              (p->y * nNodeSize + nNodeSize / 2) - camera.screen.y,
+              (p->parent->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+              (p->parent->y * nNodeSize + nNodeSize / 2) - camera.screen.y);
+
+          // Set next node to this node's parent
+          p = p->parent;
         }
-
-        else if (&nodes[y * nMapWidth + x] == nodeEnd) {
-          Graphics::Render_FRect(Graphics::itemBorderEite, &rect);
-        }
-
-        else if (nodes[y * nMapWidth + x].bObstacle) {
-          Graphics::Render_FRect(Graphics::itemBorderRare, &rect);
-        }
-      }
-
-    // Draw Path by starting ath the end, and following the parent node trail
-    // back to the start - the start node will not have a parent path to follow
-    if (nodeEnd != nullptr) {
-      sNode *p = nodeEnd;
-      while (p->parent != nullptr) {
-        SDL_SetRenderDrawColor(Graphics::renderer, 0, 125, 125, 255);
-        SDL_RenderDrawLineF(
-            Graphics::renderer,
-            (p->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
-            (p->y * nNodeSize + nNodeSize / 2) - camera.screen.y,
-            (p->parent->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
-            (p->parent->y * nNodeSize + nNodeSize / 2) - camera.screen.y);
-
-        // Set next node to this node's parent
-        p = p->parent;
       }
     }
 

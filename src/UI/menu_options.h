@@ -1,11 +1,13 @@
 #pragma once
 
 #include "SDL2/SDL.h"
+#include "Video/video.h"
+//#include "ui.h"
+#include "ui_actionbar.h"
+#include "ui_elements.h"
+#include "ui_spellbook.h"
 #include "utilities.h"
 #include <map>
-#include "ui.h"
-#include "ui_elements.h"
-#include "Video/video.h"
 
 namespace Menu_Options {
 
@@ -20,9 +22,8 @@ namespace Menu_Options {
   struct Menu_Options_Frame {
     UI::Image_Frame backgroundFrame;
     std::array<Option_Frame, Debug::Settings::SIZE> List;
-    std::array<const char *, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Font Render FC", "Volume"};
-  };
-  Menu_Options_Frame Options;
+    std::array<const char *, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Font Render FC", "Volume", "Show Pathing"};
+  } Options;
 
 
   void Update_Position() {
@@ -58,14 +59,17 @@ namespace Menu_Options {
     Video::Update_Volume();
     Update_Position();
     SDL_FRect renderOptions = UI::Update_Scale(camera.scale, Options.backgroundFrame.frame);
-    SDL_RenderCopyF(Graphics::renderer, Options.backgroundFrame.texture, NULL, &renderOptions);
+    SDL_RenderCopyF(Graphics::renderer, Options.backgroundFrame.texture, nullptr, &renderOptions);
 
+    int i = 0;
     for (auto &option: Options.List) {
       SDL_FRect text = UI::Update_Scale(camera.scale, option.text.textFrame);
-      SDL_RenderCopyF(Graphics::renderer, option.text.textTexture, NULL, &text);
+      SDL_RenderCopyF(Graphics::renderer, option.text.textTexture, nullptr, &text);
 
       option.checkBox.frame = UI::Update_Scale(camera.scale, option.checkBox.defaultFrame);
-      SDL_RenderCopyF(Graphics::renderer, option.checkBox.texture, NULL, &option.checkBox.frame);
+      SDL_RenderCopyF(Graphics::renderer, option.checkBox.texture, nullptr, &option.checkBox.frame);
+      (Debug::settings[i]) ? option.checkBox.texture = Graphics::checkmark : option.checkBox.texture = Graphics::tooltipBackground;
+      i++;
     }
 
     while (SDL_PollEvent(&Events::event) != 0) {
@@ -73,6 +77,8 @@ namespace Menu_Options {
         case SDL_WINDOWEVENT: {
           if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
             //            recenter camera on player
+            UI_Spellbook::Update_Position();
+            Action_Bar::Update_Position(Action_Bar::actionBar.actionBar.actionBarFrame);
             Load_Options();
           }
         }

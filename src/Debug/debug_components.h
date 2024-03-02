@@ -33,12 +33,14 @@ namespace Debug {
     lockFramerate,
     fontRenderFC,
     volume,
+    showPathing,
     SIZE
   };
 
   std::array<bool, Settings::SIZE> settings;
   std::array<unsigned long int, Settings::SIZE> settingsValue;
-  std::array<std::string, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Font Render FC", "Volume"};
+  // change labels on line 23 of menu_options.h as well
+  std::array<std::string, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Font Render FC", "Volume", "Show Pathing"};
 
   void Load_Settings() {
     for (auto &i: settings) {

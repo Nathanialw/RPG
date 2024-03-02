@@ -38,9 +38,8 @@ namespace Menu {
     Uint8 spacing = Mouse::cursorRadius * 2;
     std::array<Button, 6> buttons;
     int i = -1;
-  };
-
-  Menu menu;
+    bool showOptions = false;
+  } menu;
 
   //    need the attricute otherwise it WILL be optimized out
   void Build_Menu(Menu &menus) {
@@ -144,7 +143,8 @@ namespace Menu {
 
   int Show_Menu(Menu &menus, entt::registry &zone, int &state, Component::Camera &camera) {
     //    Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu(camera) : Render_Menu_FC(camera);
-    Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu_FC(camera) : Render_Menu(camera);
+    //    Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu_FC(camera) : Render_Menu(camera);
+    Render_Menu(camera);
 
     while (SDL_PollEvent(&Events::event)) {
       switch (Events::event.type) {
@@ -188,6 +188,7 @@ namespace Menu {
     return menu.buttons.size() + 1;
   }
 
+
   bool Render_Menu(entt::registry &zone, int &state, Component::Camera &camera) {
     //pause with no inout
     if (toggleMenu) {
@@ -210,7 +211,15 @@ namespace Menu {
           return true;
         }
         case 4: {
+          if (!menu.showOptions) {
+            menu.showOptions = true;
+            Menu_Options::Load_Options();
+          }
           menu.i = Menu_Options::Show_Menu_Options(camera);
+          if (menu.i == -1) {
+            menu.showOptions = false;
+            Build_Menu(menu);
+          }
           break;
         }
         case 5: {
