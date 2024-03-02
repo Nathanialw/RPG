@@ -8,6 +8,7 @@
 #include "entity_control.h"
 #include "mouse_control.h"
 #include "movement_components.h"
+#include "raycast.h"
 #include "timer.h"
 #include "utilities.h"
 
@@ -135,10 +136,31 @@ namespace Movement {
           Utilities::Log("Mouse_Move_To() setting state to walk");
           Action_Component::Set_State(action, Action_Component::walk);
         }
+
         zone.remove<Component::Pickup_Item>(entity);
 
-        v.magnitude.x = v.speed * (mov.fX_Destination - position.x);
-        v.magnitude.y = v.speed * (mov.fY_Destination - position.y);
+        if (Ray_Cast::Line_Of_Sight()) {
+          v.magnitude.x = v.speed * (mov.fX_Destination - position.x);
+          v.magnitude.y = v.speed * (mov.fY_Destination - position.y);
+        } else {
+          auto pathing = zone.emplace_or_replace<Component::Pathing>(entity);
+          Component::Position destination = {mov.fX_Destination, mov.fY_Destination};
+          A_Star::Solve_AStar(position, destination, pathing.path);
+
+          if (pathing.path.empty()) {
+            Utilities::Log("In target Node, moving directly");
+            v.magnitude.x = v.speed * (mov.fX_Destination - position.x);
+            v.magnitude.y = v.speed * (mov.fY_Destination - position.y);
+            return;
+          }
+
+
+          float x = (pathing.path[pathing.path.size() - 1].x * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
+          float y = (pathing.path[pathing.path.size() - 1].y * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
+
+          v.magnitude.x = v.speed * (x - position.x);
+          v.magnitude.y = v.speed * (y - position.y);
+        }
       }
     }
   }

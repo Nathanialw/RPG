@@ -15,4 +15,15 @@ namespace Sound {
     Music::Init();
     Effects::Init();
   }
+
+  void Update_Volume() {
+    if (Debug::settings[Debug::Settings::volume]) {
+      Mix_Volume(-1, 64);
+      Mix_VolumeMusic(64);
+      //      Mix_VolumeChunk(Mix_Chunk *chunk, int volume);
+    } else {
+      Mix_Volume(-1, 0);
+      Mix_VolumeMusic(0);
+    }
+  }
 }// namespace Sound

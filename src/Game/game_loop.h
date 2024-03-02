@@ -19,6 +19,7 @@
 //#include "ui_gameloop_function_times.h"
 //#include "unit_positions.h"
 //#include "unit_status.h"
+#include "Audio/init.h"
 #include "Maps/Pathing/a_star.h"
 #include "quad_tree.h"
 #include "update_spells.h"
@@ -38,7 +39,7 @@ namespace Game_Loop {
       Game_State();
       //Squad_Control::Create_And_Fill_New_Squad(zone);
       //Test_Units::Create_Formation(zone);
-
+      Sound::Update_Volume();
       //ideally this would call on init and set all indexes with an object as an obstacle and only update by the object that gets moved
       A_Star::Update(zone);
 

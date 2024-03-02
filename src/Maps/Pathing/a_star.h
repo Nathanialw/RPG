@@ -96,7 +96,7 @@ namespace A_Star {
     return true;
   }
 
-  bool Solve_AStar(Component::Position &position, Component::Position &target, std::vector<f2> &path) {
+  bool Solve_AStar(const Component::Position &position, const Component::Position &target, std::vector<f2> &path) {
     // Reset Navigation Graph - default all node states
     nodeStart = &nodes[(int(position.y / nNodeSize) * nMapWidth) + int(position.x / nNodeSize)];
     nodeEnd = &nodes[(int(target.y / nNodeSize) * nMapWidth) + int(target.x / nNodeSize)];
@@ -139,7 +139,7 @@ namespace A_Star {
     while (!listNotTestedNodes.empty() && nodeCurrent != nodeEnd)// Find absolutely shortest path // && nodeCurrent != nodeEnd)
     {
       i++;
-      if (i > 200) return false;
+      if (i > 1000) return false;
       // Sort Untested nodes by global goal, so lowest is first
       listNotTestedNodes.sort([](const sNode *lhs, const sNode *rhs) { return lhs->fGlobalGoal < rhs->fGlobalGoal; });
 
