@@ -330,7 +330,9 @@ namespace Maps {
             SDL_Texture *texture = World::world[state].tileTextures[0];
 
             if (Texture_Data::Packer_Textures.contains(World::world[state].tileset)) {
-              auto clipRect = Texture_Data::Packer_Textures[World::world[state].tileset].frameList[World_Data::tilesEntities[0][i][j].tileTexture].clip;
+              auto clipRect = Texture_Data::Packer_Textures[World::world[state].tileset].frameList[Texture_Data::Packer_Textures[World::world[state].tileset].frameList.size() - 1].clip;
+              SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
+              clipRect = Texture_Data::Packer_Textures[World::world[state].tileset].frameList[World_Data::tilesEntities[0][i][j].tileTexture].clip;
               SDL_RenderCopyF(Graphics::renderer, texture, &clipRect, &renderRect);
             } else {
               SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &renderRect);
