@@ -211,7 +211,6 @@ namespace Event_Handler {
           if (Mouse_Struct::mouseData.type != Component::Icon_Type::spell) {
             Loot_Panel::Close();
             if (Input_Control::Check_For_Mouse_Target(zone, state, Items::showGroundItems, player_ID, playerPosition)) {
-              Mouse::bRight_Mouse_Pressed = false;//otherwise mouse move will override attack move
             } else if (!Mouse::bRight_Mouse_Pressed) {
               User_Mouse_Input::Update_Move_Command_Box();
               // if not selection units
@@ -233,6 +232,7 @@ namespace Event_Handler {
             Equipment_UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
           }
         }
+        Mouse::bRight_Mouse_Pressed = true;
       }
     }
 

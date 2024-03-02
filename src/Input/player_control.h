@@ -12,6 +12,7 @@
 #include "ui.h"
 
 namespace Player_Control {
+
   void Move_To(entt::registry &zone, entt::entity &entity, Player_Component::Target_Data targetData) {
     zone.remove<Component::Mouse_Move>(entity);
     zone.emplace_or_replace<Component::Moving>(entity);
@@ -79,9 +80,28 @@ namespace Player_Control {
       }
       Utilities::Log("Attack()");
       Clear_Moving(zone, entity, velocity, zone.get<Action_Component::Action>(entity), Action_Component::Action_State::combatIdle);
+      zone.emplace_or_replace<Player_Component::Attack_Click_Hold>(entity, targetData, targetPosition, velocity, position, meleeRange);
       return true;
     }
     return false;
+  }
+
+  void Click_Attacking_Routine(entt::registry &zone) {
+    auto view = zone.view<Player_Component::Attack_Click_Hold, Action_Component::Action>();
+    for (auto entity: view) {
+      if (!Mouse::bRight_Mouse_Pressed)
+        zone.remove<Player_Component::Attack_Click_Hold>(entity);
+      auto action = view.get<Action_Component::Action>(entity);
+      if (action.frameState == Action_Component::last) {
+        auto a = view.get<Player_Component::Attack_Click_Hold>(entity);
+        if (zone.get<Component::Alive>(a.targetData.ID).bIsAlive) {
+          if (!Attack(zone, entity, a.targetData, a.targetPosition, a.velocity, a.position, a.meleeRange))
+            zone.remove<Player_Component::Attack_Click_Hold>(entity);
+        } else {
+          zone.remove<Player_Component::Attack_Click_Hold>(entity);
+        }
+      }
+    }
   }
 
   void Interact_With_Object(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &targetPosition) {
@@ -235,6 +255,7 @@ namespace Player_Control {
   }
 
   void Move_To_Atack_Routine(entt::registry &zone, int &state) {
+    Click_Attacking_Routine(zone);
     Mouse_Move_To_Item(zone, state);
     Mouse_To_Target(zone, state);
   }
