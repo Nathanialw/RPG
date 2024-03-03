@@ -34,7 +34,7 @@
 namespace Event_Handler {
 
   /*I will make a component that will be pased to this funtion tree so the functions can do work on the position value of an entity "<velocity> <player_controllable>" */
-  const Uint8 *keyboardstate = SDL_GetKeyboardState(NULL);
+  const Uint8 *keyboardstate = SDL_GetKeyboardState(nullptr);
 
   std::vector<SDL_Keycode> keys;
 
@@ -276,6 +276,7 @@ namespace Event_Handler {
           if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
             //            recenter camera on player
             UI_Spellbook::Update_Position();
+            UI_Info::Update_Position();
             Action_Bar::Update_Position(Action_Bar::actionBar.actionBar.actionBarFrame);
             Menu::Build_Menu(Menu::menu);
             break;

@@ -21,6 +21,8 @@ namespace A_Star {
   int scale = 8;
 
   sNode *nodes = nullptr;
+  //  std::array<sNode, World_Data::REGION_SIZE * World_Data::REGION_SIZE> nodes;
+
   int nMapWidth = World_Data::REGION_SIZE * scale;
   int nMapHeight = World_Data::REGION_SIZE * scale;
 
@@ -56,7 +58,9 @@ namespace A_Star {
   }
 
   bool Init() {
-    nodes = new sNode[nMapWidth * nMapHeight];
+    if (!nodes)
+      nodes = new sNode[nMapWidth * nMapHeight];
+
 
     for (int x = 0; x < nMapWidth; x++) {
       for (int y = 0; y < nMapHeight; y++) {
@@ -103,7 +107,7 @@ namespace A_Star {
     nodeEnd = &nodes[(int(target.y / nNodeSize) * nMapWidth) + int(target.x / nNodeSize)];
 
     int numCellsToCheck;
-    (nodeEnd->bObstacle) ? numCellsToCheck = 20 : numCellsToCheck = 10000;
+    (nodeEnd->bObstacle) ? numCellsToCheck = 2 : numCellsToCheck = 100;
 
     for (int x = 0; x < nMapWidth; x++)
       for (int y = 0; y < nMapHeight; y++) {
@@ -142,7 +146,15 @@ namespace A_Star {
     while (!listNotTestedNodes.empty() && nodeCurrent != nodeEnd)// Find absolutely shortest path // && nodeCurrent != nodeEnd)
     {
       i++;
-      if (i > numCellsToCheck) return false;
+      if (i > numCellsToCheck) {
+        sNode *k = nodeCurrent;
+        while (k != nodeStart) {
+          path.push_back({(float) k->x, (float) k->y});
+          k = k->parent;
+          if (k == nullptr) return false;
+        }
+        return false;
+      }
       // Sort Untested nodes by global goal, so lowest is first
       listNotTestedNodes.sort([](const sNode *lhs, const sNode *rhs) { return lhs->fGlobalGoal < rhs->fGlobalGoal; });
 

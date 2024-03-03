@@ -106,7 +106,7 @@ namespace Item_Component {
   }
 
 
-  std::string Get_Item_Type_String(Item_Type &db_type) {
+  std::string Get_Item_Type_String(const Item_Type &db_type) {
     if (db_type == Item_Type::back) {
       return "back";
     } else if (db_type == Item_Type::mainhand) {
@@ -260,32 +260,33 @@ namespace Item_Component {
     auto &equipment = zone.emplace_or_replace<Equipment>(entity);
     equipment.type = itemType;
     //    std::cout << "equipment slot entity: " << (int)emptyEquipSlot[state] << std::endl;
-    equipment.equippedItems = {{Item_Type::amulet, emptyEquipSlot[state]},
-                               {Item_Type::back, emptyEquipSlot[state]},
-                               {Item_Type::face, emptyEquipSlot[state]},
-                               {Item_Type::belt, emptyEquipSlot[state]},
-                               {Item_Type::wrist, emptyEquipSlot[state]},
-                               {Item_Type::boots, emptyEquipSlot[state]},
-                               {Item_Type::dirt, emptyEquipSlot[state]},
-                               {Item_Type::hood, emptyEquipSlot[state]},
-                               {Item_Type::quiver, emptyEquipSlot[state]},
-                               {Item_Type::helm, emptyEquipSlot[state]},
-                               {Item_Type::legs, emptyEquipSlot[state]},
-                               {Item_Type::kilt, emptyEquipSlot[state]},
-                               {Item_Type::gloves, emptyEquipSlot[state]},
-                               {Item_Type::clothes, emptyEquipSlot[state]},
-                               {Item_Type::chest, emptyEquipSlot[state]},
-                               {Item_Type::hair, emptyEquipSlot[state]},
-                               {Item_Type::crown, emptyEquipSlot[state]},
-                               {Item_Type::ring0, emptyEquipSlot[state]},
-                               {Item_Type::ring1, emptyEquipSlot[state]},
-                               {Item_Type::shins, emptyEquipSlot[state]},
-                               {Item_Type::shoulders, emptyEquipSlot[state]},
-                               {Item_Type::jewelry0, emptyEquipSlot[state]},
-                               {Item_Type::jewelry1, emptyEquipSlot[state]},
-                               {Item_Type::ranged, emptyEquipSlot[state]},
-                               {Item_Type::offhand, emptyEquipSlot[state]},
-                               {Item_Type::mainhand, emptyEquipSlot[state]}};
+    equipment.equippedItems = {
+        //        {Item_Type::face, emptyEquipSlot[state]},
+        //        {Item_Type::wrist, emptyEquipSlot[state]},
+        //        {Item_Type::hood, emptyEquipSlot[state]},
+        //        {Item_Type::quiver, emptyEquipSlot[state]},
+        //        {Item_Type::shins, emptyEquipSlot[state]},
+        //        {Item_Type::ranged, emptyEquipSlot[state]},
+        //        {Item_Type::dirt, emptyEquipSlot[state]},
+        {Item_Type::amulet, emptyEquipSlot[state]},
+        {Item_Type::back, emptyEquipSlot[state]},
+        {Item_Type::belt, emptyEquipSlot[state]},
+        {Item_Type::boots, emptyEquipSlot[state]},
+        {Item_Type::helm, emptyEquipSlot[state]},
+        {Item_Type::legs, emptyEquipSlot[state]},
+        {Item_Type::kilt, emptyEquipSlot[state]},
+        {Item_Type::gloves, emptyEquipSlot[state]},
+        {Item_Type::clothes, emptyEquipSlot[state]},
+        {Item_Type::chest, emptyEquipSlot[state]},
+        {Item_Type::hair, emptyEquipSlot[state]},
+        {Item_Type::crown, emptyEquipSlot[state]},
+        {Item_Type::ring0, emptyEquipSlot[state]},
+        {Item_Type::ring1, emptyEquipSlot[state]},
+        {Item_Type::shoulders, emptyEquipSlot[state]},
+        {Item_Type::jewelry0, emptyEquipSlot[state]},
+        {Item_Type::jewelry1, emptyEquipSlot[state]},
+        {Item_Type::offhand, emptyEquipSlot[state]},
+        {Item_Type::mainhand, emptyEquipSlot[state]}};
     //    for (auto item :equipment.equippedItems) {
     //      Utilities::Log((int)item.second);
     //    }

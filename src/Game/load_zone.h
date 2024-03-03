@@ -60,12 +60,15 @@ namespace Load {
       auto &newEquipment = newZone.get<Item_Component::Equipment>(newUnit);
       auto &bodyFrame = newZone.get<Rendering_Components::Body_Frame>(newUnit);
       auto &unitPortraitFrame = newZone.get<Rendering_Components::Unit_Frame_Portrait>(newUnit);
-      for (auto oldItem: equipment.equippedItems) {
-        if (oldItem.second != Item_Component::emptyEquipSlot[previousState]) {
+      for (const auto &oldItem: equipment.equippedItems) {
+        if (oldItem.second != Item_Component::emptyEquipSlot[previousState] && OldZone.any_of<Item_Component::Name>(oldItem.second)) {
+          Utilities::Log(OldZone.get<Item_Component::Name>(oldItem.second).name);
           newEquipment.equippedItems[oldItem.first] = Copy_item(OldZone, newZone, oldItem.second);
           //          lags the game out, not sure why yet
           //          Get_Bust_Textures(newZone, state, newEquipment.equippedItems[oldItem.first], static_cast<Item_Component::Item_Type>(newEquipment.equippedItems[oldItem.first]), bodyFrame, unitPortraitFrame);
           OldZone.destroy(oldItem.second);
+        } else {
+          Utilities::Log(Item_Component::Get_Item_Type_String(oldItem.first) + " emptyEquipSlot: " + std::to_string((int) oldItem.first));
         }
       }
     }
@@ -79,8 +82,13 @@ namespace Load {
     for (int i = 0; i < oldBag.size(); ++i) {
       //if it is an item and not an empty slot
       if (oldBag[i] != Bag_UI::emptyBagSlot[oldState]) {
-        newBag[i] = Copy_item(OldZone, newZone, oldBag[i]);
-        OldZone.destroy(oldBag[i]);
+        if (OldZone.any_of<Item_Component::Name>(oldBag[i])) {
+          Utilities::Log(OldZone.get<Item_Component::Name>(oldBag[i]).name);
+          newBag[i] = Copy_item(OldZone, newZone, oldBag[i]);
+          OldZone.destroy(oldBag[i]);
+        } else {
+          Utilities::Log("item not copied ID: " + std::to_string((int) newBag[i]) + "  default slot is ID: " + std::to_string((int) Bag_UI::emptyBagSlot[oldState]));
+        }
       }
     }
   }

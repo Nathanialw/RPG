@@ -44,8 +44,12 @@ namespace AI {
           return;
         }
 
-        float x = (pathing.path[pathing.path.size() - 1].x * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
-        float y = (pathing.path[pathing.path.size() - 1].y * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
+        int cell = 1;
+        if (pathing.path.size() > 1)
+          cell = 2;
+
+        float x = (pathing.path[pathing.path.size() - cell].x * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
+        float y = (pathing.path[pathing.path.size() - cell].y * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
 
         Entity_Control::Move_Order(zone, entity_ID, x, y);
       }

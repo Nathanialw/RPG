@@ -14,8 +14,7 @@ namespace UI_Info {
     SDL_Texture *rightPage = NULL;
     int currentTab = 0;
     entt::entity spell;
-  };
-  Unit_Info spellbook;
+  } spellbook;
 
   void Info_Toggle() {
     if (spellbook.b_isOpen) {
@@ -72,4 +71,4 @@ namespace UI_Info {
       Draw_Pages(camera, spellbook.panelRect);
     }
   }
-}// namespace Info
+}// namespace UI_Info
