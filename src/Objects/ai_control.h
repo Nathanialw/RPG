@@ -35,23 +35,8 @@ namespace AI {
         zone.remove<Component::Pathing>(entity_ID);
         Entity_Control::Melee_Attack(zone, entity_ID, target_ID, targetPosition);
       } else {
-        auto pathing = zone.emplace_or_replace<Component::Pathing>(entity_ID);
-        A_Star::Solve_AStar(entityPosition, targetPosition, pathing.path);
-
-        if (pathing.path.empty()) {
-          Utilities::Log("In target Node, moving directly");
-          Entity_Control::Move_Order(zone, entity_ID, targetPosition.x, targetPosition.y);
-          return;
-        }
-
-        int cell = 1;
-        if (pathing.path.size() > 1)
-          cell = 2;
-
-        float x = (pathing.path[pathing.path.size() - cell].x * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
-        float y = (pathing.path[pathing.path.size() - cell].y * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
-
-        Entity_Control::Move_Order(zone, entity_ID, x, y);
+        auto moveTo = A_Star::Move_To(zone, entity_ID, entityPosition, targetPosition);
+        Entity_Control::Move_Order(zone, entity_ID, moveTo.x, moveTo.y);
       }
     }
     //else move to cursor

@@ -105,8 +105,6 @@ namespace Player_Control {
   }
 
   void Interact_With_Object(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &targetPosition) {
-    Utilities::Log("interacting with object");
-
     if (!zone.any_of<Component::Loot>(target_ID)) {
       //populate loot drops
       auto &loot = zone.emplace_or_replace<Component::Loot>(target_ID);
@@ -118,10 +116,12 @@ namespace Player_Control {
           loot.items.emplace_back(item.item);
         }
       }
+      Loot_Panel::Set_Loot(loot);
+    } else {
+      auto &loot = zone.get<Component::Loot>(target_ID);
+      //push the drops of the unit into the loot window
+      Loot_Panel::Set_Loot(loot);
     }
-    auto &loot = zone.get<Component::Loot>(target_ID);
-    //push the drops of the unit into the loot window
-    Loot_Panel::Set_Loot(loot);
   }
 
   void Drop_Item(entt::registry &zone, entt::entity &entity_ID, entt::entity &target_ID, Component::Position &targetPosition) {
@@ -173,16 +173,19 @@ namespace Player_Control {
   void Mouse_Move_To_Item(entt::registry &zone, int &state) {//calculates unit direction after you give them a "Mouse_Move" component with destination coordinates
     auto view = zone.view<Component::Position, Component::Velocity, Component::Pickup_Item, Action_Component::Action, Component::Moving>();
     for (auto entity: view) {
-      const auto &x = view.get<Component::Position>(entity);
-      const auto &y = view.get<Component::Position>(entity);
+      const auto &position = view.get<Component::Position>(entity);
       auto &action = view.get<Action_Component::Action>(entity);
       auto &v = view.get<Component::Velocity>(entity);
-      auto &mov = view.get<Component::Pickup_Item>(entity);
-      //      Utilities::Log("Mouse_Move_To_Item() setting state to walk");
+      auto &destination = view.get<Component::Pickup_Item>(entity);
+
       Action_Component::Set_State(action, Action_Component::walk);
-      v.magnitude.x = v.speed * (mov.x - x.x);
-      v.magnitude.y = v.speed * (mov.y - y.y);
-      if (Check_If_Arrived(x.x, y.y, mov.x, mov.y)) {
+
+      auto moveTo = A_Star::Move_To(zone, entity, position, {destination.x, destination.y});
+      Entity_Control::Move_Order(zone, entity, moveTo.x, moveTo.y);
+
+      v.magnitude.x = v.speed * (moveTo.x - position.x);
+      v.magnitude.y = v.speed * (moveTo.y - position.y);
+      if (Check_If_Arrived(position.x, position.y, destination.x, destination.y)) {
         if (action.state == Action_Component::Action_State::walk) {
           v.magnitude.x = 0.0f;
           v.magnitude.y = 0.0f;
@@ -190,7 +193,7 @@ namespace Player_Control {
           zone.remove<Component::Moving>(entity);
         }
         //pickup Item
-        Equipment_UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, entity, state, mov, Mouse::mouseData.itemCurrentlyHeld);
+        Equipment_UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, entity, state, destination, Mouse::mouseData.itemCurrentlyHeld);
         zone.remove<Component::Pickup_Item>(entity);
       }
     }
@@ -205,8 +208,12 @@ namespace Player_Control {
         Utilities::Log("Move_To_Target() setting state to walk");
         Action_Component::Set_State(action, Action_Component::walk);
       }
-      velocity.magnitude.x = velocity.speed * (targetPosition.x - position.x);
-      velocity.magnitude.y = velocity.speed * (targetPosition.y - position.y);
+
+      auto moveTo = A_Star::Move_To(zone, entity, position, {targetPosition.x, targetPosition.y});
+      Entity_Control::Move_Order(zone, entity, moveTo.x, moveTo.y);
+
+      velocity.magnitude.x = velocity.speed * (moveTo.x - position.x);
+      velocity.magnitude.y = velocity.speed * (moveTo.y - position.y);
     }
   }
 
@@ -245,6 +252,8 @@ namespace Player_Control {
           break;
         case Component::Entity_Type::spell:
           break;
+        case Component::Entity_Type::tile:
+          break;
         case Component::Entity_Type::SIZE:
           break;
       }
@@ -254,7 +263,7 @@ namespace Player_Control {
     }
   }
 
-  void Move_To_Atack_Routine(entt::registry &zone, int &state) {
+  void moveToAttackRoutine(entt::registry &zone, int &state) {
     Click_Attacking_Routine(zone);
     Mouse_Move_To_Item(zone, state);
     Mouse_To_Target(zone, state);

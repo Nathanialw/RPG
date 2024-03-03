@@ -10,9 +10,7 @@ namespace Loot_Panel {
     bool open = false;
     SDL_FRect interactPanel = {0, 0, 64.0f, 64.0f};
     SDL_FRect panel = {0, 0, 64.0f, 64.0f};
-  };
-
-  Loot_Panel lootPanel;
+  } lootPanel;
 
   void Open() {
   }
@@ -117,7 +115,7 @@ namespace Loot_Panel {
 
     if (lootPanel.items) {
       SDL_FRect scaledBackground = panel;
-      scaledBackground.h = lootPanel.items->size() * lootPanel.lootPanelSize;
+      scaledBackground.h = (float) lootPanel.items->size() * lootPanel.lootPanelSize;
       scaledBackground = Camera_Control::Convert_FRect_To_Scale(scaledBackground, camera);
 
       lootPanel.interactPanel = scaledBackground;

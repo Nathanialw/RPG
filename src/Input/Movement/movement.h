@@ -23,8 +23,12 @@ namespace Movement {
   using namespace Movement_Functions;
 
   void Mouse_Moving(entt::registry &zone) {// maybe change to move and attack?
-    auto view = zone.view<Component::Input>(entt::exclude<Player_Component::Attack_Click_Hold>);
+    auto view = zone.view<Component::Input, Action_Component::Action>(entt::exclude<Player_Component::Attack_Click_Hold>);
+
     for (auto player_ID: view) {
+      auto action = view.get<Action_Component::Action>(player_ID).state;
+      if (action == Action_Component::kneel)
+        continue;
       if (Mouse::bRight_Mouse_Pressed) {
         if (SDL_GetMouseState(NULL, NULL) != SDL_BUTTON(SDL_BUTTON_RIGHT) && !Hotbar::autoRun) {
           Mouse::bRight_Mouse_Pressed = false;

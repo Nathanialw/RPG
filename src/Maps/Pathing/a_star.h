@@ -18,7 +18,7 @@ namespace A_Star {
     sNode *parent{};
   };
 
-  int scale = 8;
+  int scale = 16;
 
   sNode *nodes = nullptr;
   //  std::array<sNode, World_Data::REGION_SIZE * World_Data::REGION_SIZE> nodes;
@@ -274,6 +274,25 @@ namespace A_Star {
     }
 
     return true;
+  }
+
+  f2 Move_To(entt::registry &zone, const entt::entity &entity_ID, const Component::Position &entityPosition, const Component::Position &targetPosition) {
+    auto pathing = zone.emplace_or_replace<Component::Pathing>(entity_ID);
+    A_Star::Solve_AStar(entityPosition, targetPosition, pathing.path);
+
+    if (pathing.path.empty()) {
+      Utilities::Log("In target Node, moving directly");
+      return {targetPosition.x, targetPosition.y};
+    }
+
+    int cell = 1;
+    if (pathing.path.size() > 1)
+      cell = 2;
+
+    float x = (pathing.path[pathing.path.size() - cell].x * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
+    float y = (pathing.path[pathing.path.size() - cell].y * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
+
+    return {x, y};
   }
 
   void Draw_Paths(entt::registry &zone, Component::Camera &camera) {

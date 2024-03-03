@@ -11,8 +11,8 @@
 #include "interface.h"
 //#include "map.h"
 #include "Graphics/Rendering/rendering.h"
+#include "Input/Movement/movement.h"
 #include "effects.h"
-#include "movement.h"
 #include "spells.h"
 //#include "squad_control.h"
 #include "Graphics/XML_Parsers/texture_packer.h"
@@ -45,7 +45,7 @@ namespace Game_Loop {
 
       Event_Handler::Update_User_Input(zone, state);
       Create_Character_Entity::Update_Items(zone, state);
-      Player_Control::Move_To_Atack_Routine(zone, state);
+      Player_Control::moveToAttackRoutine(zone, state);
       AI::Update_AI(zone, state);
       Update_Spells::Update_Spells(zone, state);
       Combat_Control::Update_Attacks(zone, state);
