@@ -42,19 +42,13 @@ namespace Create_Entities {
   Mouse_Struct::Entity_ID_Direction Create_Render_Tile_Object(entt::registry &zone, int state, int x, int y, const std::string &templateName) {
     //    Entity_Loader::Building_Data data = Entity_Loader::Get_Tile_Data(templateName);
     auto entity = zone.create();
-
     zone.emplace_or_replace<Component::Position>(entity, (float) x * 512.0f, (float) y * 512.0f);
-    auto offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, 256.0f, -256.0f);
+    auto offset = zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, 0.0f, 0.0f);
 
     //    Collision::Save_Line_Segment(zone, entity, templateName);
     //    zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w / 2.0f), (y - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f), (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, false);
-
     if (Collision_Component::polygonColliders.contains(templateName)) {
-      //only use this interaction rect if the building doesn't have an interior
-      zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::tile);
-      zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offset, 0.0f, (float) x * 512.0f, (float) y * 512.0f, "polygon", 0.0f);
-      //      Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius);
-
+      zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offset, 0.0f, (((float) x * 512.0f) + 256.0f), (((float) y * 512.0f) + 256.0f), "polygon", 0.0f);
       return {entity, templateName};
     }
   }
@@ -85,12 +79,7 @@ namespace Create_Entities {
       Rendering::Sheet_Data frameData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
 
       zone.emplace_or_replace<Component::Position>(entity, x, y);
-      Rendering_Components::Offsets offsets = {};
-      if (frameData.frameData.sheetData) {
-        offsets = Rendering::Set_Offset(zone, entity, data.collider_type, data.x_offset, data.y_offset, frameData.frame);
-      } else {
-        offsets = Rendering::Set_Offset(zone, entity, data.collider_type, data.x_offset, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, frameData.frame);
-      }
+      Rendering_Components::Offsets offsets = Rendering::Set_Offset(zone, entity, data.collider_type, data.x_offset, data.y_offset, frameData.frame);
       zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, offsets.offset);
 
       if (!data.interior.empty()) {
@@ -123,7 +112,7 @@ namespace Create_Entities {
       } else {
         //only use this interaction rect if the building doesn't have an interior
         zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-        zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offsets.colliderOffset, data.radius, x, y, data.collider_type, 0.0f);
+        zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offsets.offset, data.radius, x, y, data.collider_type, 0.0f);
         Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius);
       }
 

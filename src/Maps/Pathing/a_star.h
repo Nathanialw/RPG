@@ -207,8 +207,8 @@ namespace A_Star {
   bool Draw(entt::registry &zone, Component::Camera &camera) {
 
     if (Debug::settings[Debug::Settings::showPathing]) {
-      for (int x = 0; x < nMapWidth; x++)
-        for (int y = 0; y < nMapHeight; y++) {
+      for (int x = (int) camera.screen.x / World_Data::REGION_SIZE; x < (camera.screen.x + camera.screen.w) / World_Data::REGION_SIZE; x++)
+        for (int y = (int) camera.screen.y / World_Data::REGION_SIZE; y < (camera.screen.y + camera.screen.h) / World_Data::REGION_SIZE; y++) {
 
           SDL_FRect rect = {
               (float) (x * nNodeSize) + nNodeBorder,

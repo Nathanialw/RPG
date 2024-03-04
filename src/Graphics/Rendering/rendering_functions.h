@@ -76,7 +76,7 @@ namespace Rendering {
       offset = {xOffset, yOffset / 2.0f};
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "polygon") {
-      offset = {((float) xOffset), (float) yOffset / 2.0f};
+      offset = {((float) xOffset), (float) yOffset};
       zone.emplace_or_replace<Component::Direction>(entity, Component::Direction::W);
     } else if (colliderType == "round") {
       offset = {xOffset, yOffset};

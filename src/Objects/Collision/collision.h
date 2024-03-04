@@ -227,11 +227,11 @@ namespace Collision {
       auto &position = zone.get<Component::Position>(entity);
       auto &offset = zone.get<Rendering_Components::Sprite_Offset>(entity);
 
-      position.y += (colliderData.placementOffset - colliderData.offset.y);
-      offset.y += (colliderData.placementOffset - colliderData.offset.y);
+      //      position.y += (colliderData.placementOffset - colliderData.offset.y);
+      //      offset.y += (colliderData.placementOffset - colliderData.offset.y);
 
-      colliderData.position.x += colliderData.offset.x;
-      colliderData.position.y -= colliderData.offset.y;
+      //      colliderData.position.x += colliderData.offset.x;
+      //      colliderData.position.y -= colliderData.offset.y;
       b2Body *body;
       if (zone.any_of<Component::Body>(entity)) {
         body = zone.get<Component::Body>(entity).body;

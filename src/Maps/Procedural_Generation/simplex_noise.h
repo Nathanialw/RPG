@@ -10,24 +10,22 @@ namespace Simplex_Noise {
   float *fNoiseSeedArray1D = nullptr;
   float *fPerlinNoiseArray1D = nullptr;
 
-
   int nOctaveCount = 6;
   float fScalingBias = 2.0f;
 
-
   // width and height of the array containing the map
-  bool Init(int mapW, int maph) {
-    //rand will probably need to be replaced with a procedural initial random array
-    for (int i = 0; i < mapW * maph; i++) fNoiseSeedArray2D[i] = (float) rand() / (float) RAND_MAX;
+  bool Init(int w, int h) {
+    Procedural_Components::Seed seed;
+    seed.seed = Procedural_Generation::Create_Initial_Seed(w, h);
+    for (int i = 0; i < w * h; i++)
+      fNoiseSeedArray2D[i] = Procedural_Generation::Random_float(0, RAND_MAX, seed) / (float) RAND_MAX;
 
-    fNoiseSeedArray1D = new float[mapW];
-    fPerlinNoiseArray1D = new float[mapW];
-    //rand will probably need to be replaced with a procedural initial random array
-    for (int i = 0; i < mapW; i++) fNoiseSeedArray1D[i] = (float) rand() / (float) RAND_MAX;
+    //    fNoiseSeedArray1D = new float[mapW];
+    //    fPerlinNoiseArray1D = new float[mapW];
+    //    for (int i = 0; i < mapW; i++) fNoiseSeedArray1D[i] = Procedural_Generation::Random_float(0.0, RAND_MAX, seed);
 
     return true;
   }
-
 
   void PerlinNoise1D(int nCount, float *fSeed, int nOctaves, float fBias, float *fOutput) {
     // Used 1D Perlin Noise
