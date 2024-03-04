@@ -126,11 +126,9 @@ namespace Event_Handler {
           return;
         }
         //  debug frame
-        else if (UI_Debug::Mouse_Inside_Window(camera)) {
-          if (UI_Debug::open) {
-            UI_Debug::Update_Values(zone, camera);
-            return;
-          }
+        else if (UI_Debug::Mouse_Inside_Window(camera) && UI_Debug::open) {
+          UI_Debug::Update_Values(zone, camera);
+          return;
         }
         //      drop spell
         else if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {

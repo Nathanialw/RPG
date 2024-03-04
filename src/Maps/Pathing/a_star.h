@@ -18,13 +18,11 @@ namespace A_Star {
     sNode *parent{};
   };
 
-  int scale = 16;
+  const int scale = 16;
+  const int nMapWidth = World_Data::REGION_SIZE * scale;
+  const int nMapHeight = World_Data::REGION_SIZE * scale;
 
-  sNode *nodes = nullptr;
-  //  std::array<sNode, World_Data::REGION_SIZE * World_Data::REGION_SIZE> nodes;
-
-  int nMapWidth = World_Data::REGION_SIZE * scale;
-  int nMapHeight = World_Data::REGION_SIZE * scale;
+  std::array<sNode, nMapWidth * nMapHeight> nodes;
 
   sNode *nodeStart = nullptr;
   sNode *nodeEnd = nullptr;
@@ -58,10 +56,6 @@ namespace A_Star {
   }
 
   bool Init() {
-    if (!nodes)
-      nodes = new sNode[nMapWidth * nMapHeight];
-
-
     for (int x = 0; x < nMapWidth; x++) {
       for (int y = 0; y < nMapHeight; y++) {
         nodes[y * nMapWidth + x].x = x;
@@ -69,6 +63,7 @@ namespace A_Star {
         nodes[y * nMapWidth + x].bObstacle = false;
         nodes[y * nMapWidth + x].parent = nullptr;
         nodes[y * nMapWidth + x].bVisited = false;
+        nodes[y * nMapWidth + x].vecNeighbours.clear();
       }
     }
 

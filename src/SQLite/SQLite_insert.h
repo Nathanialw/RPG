@@ -1,3 +1,4 @@
+#pragma once
 #include "db.h"
 #include "sqlite/sqlite3.h"
 #include <cstdio>

@@ -59,9 +59,9 @@ namespace UI_Debug {
     statBox.y += 20.0f / camera.scale.y;
     FC_DrawScaleRightColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "offsets");
     statBox.x += 60.0f / camera.scale.y;//45.0f // 325.0f //
-    FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "revert");
+    FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "");
     statBox.x += 110.0f / camera.scale.y;
-    FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "write");
+    FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "");
 
     SDL_FRect textRectF = Utilities::SDL_Rect_To_SDL_FRect(textRect);
     if (Mouse::bRect_inside_Cursor(textRectF)) {
@@ -81,6 +81,7 @@ namespace UI_Debug {
   bool Update_Values(entt::registry &zone, Component::Camera &camera) {
     auto view = zone.view<Component::Selected, Component::Name, Rendering_Components::Sprite_Offset>();
     for (auto entity: view) {
+      auto &name = view.get<Component::Name>(entity);
       auto &offset = view.get<Rendering_Components::Sprite_Offset>(entity);
       SDL_FRect draw = UI::Update_Scale(camera.scale, spellbook.panelRect);
       float a = 15.0f / camera.scale.x;
@@ -98,33 +99,33 @@ namespace UI_Debug {
       button = {draw.x + c, draw.y + c, b, a};//up
       if (Mouse::bRect_inside_Cursor(button)) {
         offset.y++;
+        SQLite_Insert::Update_Offset(name.first, offset.x, offset.y);
         return true;
       }
       button = {draw.x + c, draw.y + f, b, a};// down
       if (Mouse::bRect_inside_Cursor(button)) {
         offset.y--;
+        SQLite_Insert::Update_Offset(name.first, offset.x, offset.y);
         return true;
       }
       button = {draw.x + e, draw.y + d, a, b};// left
       if (Mouse::bRect_inside_Cursor(button)) {
         offset.x++;
+        SQLite_Insert::Update_Offset(name.first, offset.x, offset.y);
         return true;
       }
       button = {draw.x + g, draw.y + d, a, b};// right
       if (Mouse::bRect_inside_Cursor(button)) {
         offset.x--;
-        return true;
-      }
-      button = {draw.x + h, draw.y + d, j, a};// revert
-      if (Mouse::bRect_inside_Cursor(button)) {
-        Utilities::Log("inside revert");
-        return true;
-      }
-      button = {draw.x + i, draw.y + d, j, a};// write to DB
-      if (Mouse::bRect_inside_Cursor(button)) {
-        auto &name = view.get<Component::Name>(entity);
         SQLite_Insert::Update_Offset(name.first, offset.x, offset.y);
-        Utilities::Log("inside write");
+        return true;
+      }
+      button = {draw.x + h, draw.y + d, j, a};//
+      if (Mouse::bRect_inside_Cursor(button)) {
+        return true;
+      }
+      button = {draw.x + i, draw.y + d, j, a};//
+      if (Mouse::bRect_inside_Cursor(button)) {
         return true;
       }
     }
