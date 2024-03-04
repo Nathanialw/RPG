@@ -226,12 +226,14 @@ namespace Collision {
       auto collider = Collision_Component::polygonColliders.at(colliderData.name).colliders;
       auto &position = zone.get<Component::Position>(entity);
       auto &offset = zone.get<Rendering_Components::Sprite_Offset>(entity);
+      auto &type = zone.get<Component::Entity_Type>(entity);
 
-      //      position.y += (colliderData.placementOffset - colliderData.offset.y);
+      if (type != Component::Entity_Type::portal || type != Component::Entity_Type::object)
+        position.y += (colliderData.placementOffset - colliderData.offset.y);
       //      offset.y += (colliderData.placementOffset - colliderData.offset.y);
 
-      //      colliderData.position.x += colliderData.offset.x;
-      //      colliderData.position.y -= colliderData.offset.y;
+      //            colliderData.position.x += colliderData.offset.x;
+      //            colliderData.position.y += colliderData.offset.y;
       b2Body *body;
       if (zone.any_of<Component::Body>(entity)) {
         body = zone.get<Component::Body>(entity).body;
@@ -303,7 +305,7 @@ namespace Collision {
       }
     }
   }
-
+  
   void Collision_Routine(entt::registry &zone, int &state) {
     Update_Collision(zone, state);
   };

@@ -1,4 +1,5 @@
 #pragma once
+#include "Collision/collision_load.h"
 #include "Graphics/XML_Parsers/sprite_parser.h"
 #include "Graphics/XML_Parsers/texture_packer.h"
 #include "Objects/Collision/collision.h"
@@ -75,7 +76,8 @@ namespace Scene {
   void Init_Zone() {
     Map::Build_Map(Map::terrain);
     Map::Build_Map(Map::map);
-    Entity_Loader::init_db();
+    db::Init();
+    Collision::Load();
     Character_Data::Get_Names_From_DB();
   }
 }// namespace Scene

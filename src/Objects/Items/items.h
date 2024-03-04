@@ -617,7 +617,7 @@ namespace Items {
           rect.x = mouseX - (rect.w / 2.0f);
           rect.y = mouseY - (rect.h / 2.0f);
           auto &placeable = zone.get<Building_Component::Placement>(item);
-          for (auto polygon: placeable.polygons) {
+          for (const auto &polygon: placeable.polygons) {
             Building_Component::Polygon treePolygon;
             for (auto vec: polygon) {
               treePolygon.push_back({mouseX + vec.x, mouseY + vec.y});

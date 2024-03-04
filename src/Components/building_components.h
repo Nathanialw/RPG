@@ -17,6 +17,7 @@ namespace Building_Component {
   struct Placement {
     std::vector<Polygon> polygons;
     std::vector<Circle> circles;
+    Rendering_Components::Sprite_Offset offset;
     bool obstructed = false;
   };
 

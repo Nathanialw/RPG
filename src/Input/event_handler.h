@@ -96,6 +96,8 @@ namespace Event_Handler {
   }
 
   void Mouse_Input(entt::registry &zone, int &state, entt::entity &player_ID, Component::Position &playerPosition, Component::Camera &camera) {
+    /*MOUSE LEFT BUTTON*/
+
     if (Events::event.key.type == SDL_MOUSEBUTTONDOWN) {
       if (Events::event.button.button == SDL_BUTTON_LEFT) {
         if (Game_Menu_Control::Check_Menu_Button(zone, state)) {
@@ -146,23 +148,8 @@ namespace Event_Handler {
         } else {
           //buildings
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
-            auto &placeable = zone.get<Building_Component::Placement>(Mouse::mouseData.mouseItem);
-            Utilities::Log(placeable.polygons.size());
-            if (!placeable.obstructed) {
-              zone.remove<Building_Component::Placement>(Mouse::mouseData.mouseItem);
-              auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(Mouse::mouseData.mouseItem);
-              sprite.color = {200, 200, 200, SDL_ALPHA_OPAQUE};
-              sprite.blendType = Rendering_Components::normal;
-              //set building
-              zone.get<Collision_Component::Collider_Data>(Mouse::mouseData.mouseItem).position = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};
-              if (Create_Entities::Create_Object(zone, state, Mouse::mouseData.mouseItem)) {
-                Mouse::Set_Cursor_As_Cursor(zone);
-                return;
-              };
-            } else {
-              Utilities::Log("building cannot be placed, something is in the way");
-              return;
-            }
+            Build::Place_Building(zone, state);
+            return;
           }
           //          items
           User_Mouse_Input::Selection_Box(zone);//if units are currently selected
@@ -170,7 +157,11 @@ namespace Event_Handler {
           //          spells
           Action_Bar::Clear_Spell_On_Mouse(zone);
         }
-      } else if (Events::event.button.button == SDL_BUTTON_RIGHT) {
+      }
+
+      /*MOUSE RIGHT BUTTON*/
+
+      else if (Events::event.button.button == SDL_BUTTON_RIGHT) {
         if (Bag_UI::bToggleCharacterUI) {
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::item || Mouse_Struct::mouseData.type == Component::Icon_Type::none) {
             if (Mouse::bRect_inside_Cursor(Bag_UI::Character_UI)) {
@@ -205,15 +196,7 @@ namespace Event_Handler {
         } else {
           //set building
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
-            //destroy the previous mouse entity
-            zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseData.mouseItem);
-            //go into the db and get all with the icon name of the same,
-            std::string name = Entity_Loader::Increment_Direction(Mouse_Struct::mouseData.name, Mouse_Struct::mouseData.direction);
-            // plug it into Create_Render_Object()
-            int xmlIndex = -1;
-            auto mouseEntity = Create_Entities::Create_Render_Object(zone, state, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse, name, xmlIndex);
-            Mouse::Set_Cursor_As_Cursor(zone);
-            Mouse::Set_Cursor_As_Entity(zone, mouseEntity, Component::Icon_Type::building);
+            Build::Rotate_Building(zone, state);
           } else if (Mouse_Struct::mouseData.type == Component::Icon_Type::item) {
             Equipment_UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
           }

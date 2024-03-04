@@ -139,7 +139,8 @@ namespace User_Mouse_Input {
       auto &interaction = soldier_view.get<Component::Interaction_Rect>(soldier);
       auto &type = soldier_view.get<Component::Entity_Type>(soldier);
       if (Mouse::Mouse_Selection_Box(interaction.rect) || Mouse::bRect_inside_World_Cursor(interaction.rect)) {
-        if (soldier == player_ID || type == Component::Entity_Type::building) {
+        //        if (soldier == player_ID || type == Component::Entity_Type::building) {
+        if (soldier == player_ID) {
           //                    prevent from selecting player
           continue;
         }

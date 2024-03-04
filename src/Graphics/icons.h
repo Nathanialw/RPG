@@ -62,10 +62,6 @@ namespace Icons {
   }
 
   void Load() {
-    Texture_Packer::TexturePacker_Import_Collision("assets/sprites/buildings/medieval/collision/interiors.xml", Collision_Component::polygonColliders);
-    Texture_Packer::TexturePacker_Import_Collision("assets/sprites/buildings/medieval/collision/cave_entrances.xml", Collision_Component::polygonColliders);
-    Texture_Packer::TexturePacker_Import_Collision("assets/sprites/buildings/medieval/collision/labyrinth0.xml", Collision_Component::polygonColliders);
-    Texture_Packer::TexturePacker_Import_Collision("assets/sprites/buildings/medieval/collision/labyrinth0_objects.xml", Collision_Component::polygonColliders);
     Load_Icons(iconClipRects, "assets/sprites/xml/icons/icons.xml");
     Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/Viking Pack/icons.xml");
     Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/medieval/buildings.xml");

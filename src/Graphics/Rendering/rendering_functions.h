@@ -96,6 +96,6 @@ namespace Rendering {
       zone.emplace_or_replace<Rendering_Components::Foreground>(entity);
     }
     // if object is a  background sprite DO NOT set Direction component
-    return {offset, {fabs(((float) frame.clip.w / 2.0f) - offset.x), (float) frame.clip.h / 2.0f}};
+    return {offset, {fabs(((float) frame.clip.w / 2.0f) - offset.x), (float) frame.clip.h / 2.0f}, {xOffset, yOffset}};
   }
 }// namespace Rendering

@@ -189,6 +189,20 @@ namespace Hotbar {
     return 0;
   }
 
+  int Destroy_Entity(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    auto view = zone.view<Component::Selected>();
+    for (auto &entityID: view) {
+      zone.emplace_or_replace<Component::Destroyed>(entityID);
+    }
+
+    return 0;
+  }
+
+  int Place_Building(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    Build::Place_Building(zone, state);
+    return 0;
+  }
+
   void Init_Hotbar() {
     Hotbar_Structs::keybinds = {
         {SDLK_1, Action_Bar::actionBar.actionBar.spell[0].cast},
@@ -220,6 +234,9 @@ namespace Hotbar {
         {SDLK_COMMA, Previous_Page},
         {SDLK_UP, Sight_Increase},
         {SDLK_DOWN, Sight_Decrease},
+        {SDLK_DELETE, Destroy_Entity},
+        {SDLK_RETURN, Place_Building},
+        {SDLK_RETURN2, Place_Building},
     };
   }
 

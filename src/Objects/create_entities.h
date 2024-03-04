@@ -54,11 +54,12 @@ namespace Create_Entities {
   }
 
   bool Create_Tile_Object(entt::registry &zone, int state, entt::entity &entity) {
+    zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::tile);
+
     auto colliderData = zone.get<Collision_Component::Collider_Data>(entity);
+    zone.emplace_or_replace<Component::Radius>(entity, colliderData.radius);
     zone.remove<Collision_Component::Collider_Data>(entity);
     Collision::Attach_Components(zone, state, entity, colliderData);
-
-    zone.emplace_or_replace<Component::Radius>(entity, colliderData.radius);
     return true;
   }
 
@@ -103,16 +104,19 @@ namespace Create_Entities {
         if (Collision_Component::polygonColliders.contains(data.interior)) {
           Building_Component::Polygon treePolygon;
           for (auto polygon: Collision_Component::polygonColliders.at(data.interior).placementBox.pointVecs) {
-            treePolygon.push_back({polygon.x + offsets.colliderOffset.x, polygon.y - offsets.colliderOffset.y});
+            //            treePolygon.push_back({polygon.x + offsets.colliderOffset.x, polygon.y - offsets.colliderOffset.y});
+            treePolygon.push_back({polygon.x, polygon.y});
           }
           std::vector<Building_Component::Polygon> polygons;
           polygons.emplace_back(treePolygon);
-          zone.emplace_or_replace<Building_Component::Placement>(entity, polygons);
+          auto &placement = zone.emplace_or_replace<Building_Component::Placement>(entity, polygons);
+          placement.offset = offsets.placementOffset;
         }
       } else {
         //only use this interaction rect if the building doesn't have an interior
         zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
-        zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offsets.offset, data.radius, x, y, data.collider_type, 0.0f);
+        zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offsets.colliderOffset, data.radius, x, y, data.collider_type, 0.0f);
+        Collision::Save_Line_Segment(zone, entity, templateName);
         Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius);
       }
 

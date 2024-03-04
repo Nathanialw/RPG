@@ -12,6 +12,18 @@ namespace db {
     std::string bodyPath = "";
   };
 
+  void Init() {
+    const char *db_filepath = "Data/db/data.db";
+    int error = sqlite3_open(db_filepath, &db::db);
+    if (error) {
+      //if error then display error and close connection
+      std::cout << "DB Open Error: " << sqlite3_errmsg(db::db) << std::endl;
+      sqlite3_close(db::db);
+    } else {
+      std::cout << "Opened Database Successfully!" << std::endl;
+    }
+  }
+
   std::string Append_Quotes(const std::string &string) {
     return "'" + string + "'";
   }
@@ -31,6 +43,15 @@ namespace db {
       return "";
     }
     return std::string(reinterpret_cast<const char *>(e));
+  }
+
+  std::string Get_String(const unsigned char *text) {
+    const char *s;
+    s = (const char *) text;
+    if (s != NULL) {
+      return std::string(reinterpret_cast<const char *>(s));
+    }
+    return "";
   }
 
   bool Get_bool(std::string column, int value) {

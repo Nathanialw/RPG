@@ -3,7 +3,7 @@
 <bodydef version="1.0">
     <bodies numBodies="120">
 
-        <body name="Altar1_3" dynamic="true" numFixtures="1">
+        <body name="Altar1_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -33,9 +33,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-84.5000" y="31.5000" />
+
+                    <vertex x="20.5000" y="-40.5000" />
+
+                    <vertex x="72.5000" y="-4.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Altar1_4" dynamic="true" numFixtures="1">
+        <body name="Altar1_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -65,9 +91,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-84.5000" y="-16.5000" />
+
+                    <vertex x="-20.5000" y="-40.5000" />
+
+                    <vertex x="74.5000" y="39.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Barrel3_3" dynamic="true" numFixtures="1">
+        <body name="Barrel3_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -97,9 +149,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-30.5000" y="6.5000" />
+
+                    <vertex x="-0.5000" y="-6.5000" />
+
+                    <vertex x="31.5000" y="17.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Barrel3_4" dynamic="true" numFixtures="1">
+        <body name="Barrel3_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -129,9 +207,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="1.5000" y="-6.0000" />
+
+                    <vertex x="26.5000" y="6.0000" />
+
+                    <vertex x="-30.5000" y="18.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Barrel7_3" dynamic="true" numFixtures="1">
+        <body name="Barrel7_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -161,9 +265,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-25.5000" y="3.0000" />
+
+                    <vertex x="-4.5000" y="-13.0000" />
+
+                    <vertex x="25.5000" y="14.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Barrel7_4" dynamic="true" numFixtures="1">
+        <body name="Barrel7_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -193,9 +323,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-25.5000" y="17.0000" />
+
+                    <vertex x="6.5000" y="-10.0000" />
+
+                    <vertex x="23.5000" y="0.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Casket1_3" dynamic="true" numFixtures="1">
+        <body name="Casket1_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -225,9 +381,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-73.0000" y="33.0000" />
+
+                    <vertex x="14.0000" y="-34.0000" />
+
+                    <vertex x="69.0000" y="-6.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Casket1_4" dynamic="true" numFixtures="1">
+        <body name="Casket1_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -257,9 +439,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-73.0000" y="-5.5000" />
+
+                    <vertex x="-18.0000" y="-32.5000" />
+
+                    <vertex x="69.0000" y="35.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest1_5" dynamic="true" numFixtures="1">
+        <body name="Chest1_5" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -289,9 +497,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-26.5000" y="17.0000" />
+
+                    <vertex x="2.5000" y="-5.0000" />
+
+                    <vertex x="22.5000" y="8.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest1_6" dynamic="true" numFixtures="1">
+        <body name="Chest1_6" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -321,9 +555,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-27.5000" y="8.0000" />
+
+                    <vertex x="-1.5000" y="-5.0000" />
+
+                    <vertex x="23.5000" y="17.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest1_7" dynamic="true" numFixtures="1">
+        <body name="Chest1_7" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -353,9 +613,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-26.5000" y="8.0000" />
+
+                    <vertex x="-4.5000" y="-5.0000" />
+
+                    <vertex x="24.5000" y="16.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest1_8" dynamic="true" numFixtures="1">
+        <body name="Chest1_8" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -385,9 +671,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-26.5000" y="16.0000" />
+
+                    <vertex x="-1.5000" y="-3.0000" />
+
+                    <vertex x="22.5000" y="9.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest2_5" dynamic="true" numFixtures="1">
+        <body name="Chest2_5" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -404,7 +716,7 @@
 
                 <polygon numVertexes="4">
 
-                    <vertex x="-26.0000" y="-10.5000" />
+                    <vertex x="-18.0000" y="-8.5000" />
 
                     <vertex x="34.0000" y="32.5000" />
 
@@ -417,9 +729,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-41.0000" y="1.5000" />
+
+                    <vertex x="-11.0000" y="-7.5000" />
+
+                    <vertex x="33.0000" y="32.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest2_6" dynamic="true" numFixtures="1">
+        <body name="Chest2_6" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -449,9 +787,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-41.0000" y="34.0000" />
+
+                    <vertex x="9.0000" y="-8.0000" />
+
+                    <vertex x="34.0000" y="2.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest2_7" dynamic="true" numFixtures="1">
+        <body name="Chest2_7" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -481,9 +845,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-40.0000" y="33.0000" />
+
+                    <vertex x="13.0000" y="-10.0000" />
+
+                    <vertex x="34.0000" y="1.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest2_8" dynamic="true" numFixtures="1">
+        <body name="Chest2_8" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -513,9 +903,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-41.0000" y="2.0000" />
+
+                    <vertex x="-20.0000" y="-10.0000" />
+
+                    <vertex x="34.0000" y="33.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest3_5" dynamic="true" numFixtures="1">
+        <body name="Chest3_5" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -545,9 +961,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-36.0000" y="3.5000" />
+
+                    <vertex x="-10.0000" y="-13.5000" />
+
+                    <vertex x="32.0000" y="19.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest3_6" dynamic="true" numFixtures="1">
+        <body name="Chest3_6" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -577,9 +1019,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-36.5000" y="18.5000" />
+
+                    <vertex x="3.5000" y="-12.5000" />
+
+                    <vertex x="31.5000" y="2.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest3_7" dynamic="true" numFixtures="1">
+        <body name="Chest3_7" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -609,9 +1077,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-34.5000" y="18.5000" />
+
+                    <vertex x="4.5000" y="-13.5000" />
+
+                    <vertex x="31.5000" y="3.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest3_8" dynamic="true" numFixtures="1">
+        <body name="Chest3_8" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -641,9 +1135,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-36.0000" y="2.5000" />
+
+                    <vertex x="-6.0000" y="-11.5000" />
+
+                    <vertex x="33.0000" y="19.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest4_5" dynamic="true" numFixtures="1">
+        <body name="Chest4_5" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -673,9 +1193,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-32.0000" y="2.0000" />
+
+                    <vertex x="-5.0000" y="-11.0000" />
+
+                    <vertex x="30.0000" y="15.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest4_6" dynamic="true" numFixtures="1">
+        <body name="Chest4_6" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -705,9 +1251,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-33.5000" y="16.5000" />
+
+                    <vertex x="-1.5000" y="-11.5000" />
+
+                    <vertex x="28.5000" y="0.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest4_7" dynamic="true" numFixtures="1">
+        <body name="Chest4_7" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -737,9 +1309,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-31.5000" y="15.0000" />
+
+                    <vertex x="2.5000" y="-12.0000" />
+
+                    <vertex x="28.5000" y="2.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest4_8" dynamic="true" numFixtures="1">
+        <body name="Chest4_8" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -769,9 +1367,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-32.5000" y="2.0000" />
+
+                    <vertex x="-6.5000" y="-11.0000" />
+
+                    <vertex x="29.5000" y="17.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_149" dynamic="true" numFixtures="1">
+        <body name="Chest_149" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -801,9 +1425,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-39.0000" y="19.0000" />
+
+                    <vertex x="-5.0000" y="-11.0000" />
+
+                    <vertex x="32.0000" y="7.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_150" dynamic="true" numFixtures="1">
+        <body name="Chest_150" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -833,9 +1483,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-38.5000" y="7.0000" />
+
+                    <vertex x="-4.5000" y="-11.0000" />
+
+                    <vertex x="31.5000" y="19.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_151" dynamic="true" numFixtures="1">
+        <body name="Chest_151" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -865,9 +1541,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-39.0000" y="7.0000" />
+
+                    <vertex x="-5.0000" y="-10.0000" />
+
+                    <vertex x="32.0000" y="18.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_152" dynamic="true" numFixtures="1">
+        <body name="Chest_152" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -897,9 +1599,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-38.5000" y="17.0000" />
+
+                    <vertex x="-1.5000" y="-10.0000" />
+
+                    <vertex x="32.5000" y="8.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_157" dynamic="true" numFixtures="1">
+        <body name="Chest_157" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -929,9 +1657,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-39.5000" y="22.0000" />
+
+                    <vertex x="-4.5000" y="-5.0000" />
+
+                    <vertex x="31.5000" y="11.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_158" dynamic="true" numFixtures="1">
+        <body name="Chest_158" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -961,9 +1715,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-38.0000" y="11.0000" />
+
+                    <vertex x="-1.0000" y="-5.0000" />
+
+                    <vertex x="32.0000" y="22.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_159" dynamic="true" numFixtures="1">
+        <body name="Chest_159" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -993,9 +1773,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-37.0000" y="13.5000" />
+
+                    <vertex x="-5.0000" y="-4.5000" />
+
+                    <vertex x="32.0000" y="24.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_160" dynamic="true" numFixtures="1">
+        <body name="Chest_160" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1025,9 +1831,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-38.0000" y="23.0000" />
+
+                    <vertex x="-3.0000" y="-5.0000" />
+
+                    <vertex x="32.0000" y="13.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_165" dynamic="true" numFixtures="1">
+        <body name="Chest_165" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1057,9 +1889,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-35.5000" y="34.0000" />
+
+                    <vertex x="1.5000" y="3.0000" />
+
+                    <vertex x="35.5000" y="22.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_166" dynamic="true" numFixtures="1">
+        <body name="Chest_166" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1089,9 +1947,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-44.5000" y="22.0000" />
+
+                    <vertex x="-11.5000" y="3.0000" />
+
+                    <vertex x="24.5000" y="33.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_167" dynamic="true" numFixtures="1">
+        <body name="Chest_167" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1121,9 +2005,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-35.0000" y="9.5000" />
+
+                    <vertex x="-2.0000" y="-7.5000" />
+
+                    <vertex x="37.0000" y="21.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_168" dynamic="true" numFixtures="1">
+        <body name="Chest_168" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1153,9 +2063,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-45.0000" y="20.5000" />
+
+                    <vertex x="-9.0000" y="-8.5000" />
+
+                    <vertex x="26.0000" y="8.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Coffer1_5" dynamic="true" numFixtures="1">
+        <body name="Coffer1_5" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1185,94 +2121,24 @@
 
             </fixture>
 
-        </body>
-
-        <body name="Coffer1_6" dynamic="true" numFixtures="1">
-
             <fixture
                 density="2"
                 friction="0"
                 restitution="0"
                 filter_categoryBits="1"
-                filter_groupIndex="0"
+                filter_groupIndex="2"
                 filter_maskBits="65535"
-                isSensor="false"
+                isSensor="true"
                 type="POLYGON"
                 numPolygons="1"
                 >
 
 
-                <polygon numVertexes="4">
+                <polygon numVertexes="3">
 
-                    <vertex x="-17.0000" y="-13.0000" />
+                    <vertex x="-64.0000" y="31.0000" />
 
-                    <vertex x="47.0000" y="32.0000" />
-
-                    <vertex x="4.0000" y="63.0000" />
-
-                    <vertex x="-63.0000" y="17.0000" />
-
-                </polygon>
-
-
-            </fixture>
-
-        </body>
-
-        <body name="Coffer1_7" dynamic="true" numFixtures="1">
-
-            <fixture
-                density="2"
-                friction="0"
-                restitution="0"
-                filter_categoryBits="1"
-                filter_groupIndex="0"
-                filter_maskBits="65535"
-                isSensor="false"
-                type="POLYGON"
-                numPolygons="1"
-                >
-
-
-                <polygon numVertexes="4">
-
-                    <vertex x="-17.0000" y="-13.0000" />
-
-                    <vertex x="47.0000" y="32.0000" />
-
-                    <vertex x="4.0000" y="63.0000" />
-
-                    <vertex x="-63.0000" y="17.0000" />
-
-                </polygon>
-
-
-            </fixture>
-
-        </body>
-
-        <body name="Coffer1_8" dynamic="true" numFixtures="1">
-
-            <fixture
-                density="2"
-                friction="0"
-                restitution="0"
-                filter_categoryBits="1"
-                filter_groupIndex="0"
-                filter_maskBits="65535"
-                isSensor="false"
-                type="POLYGON"
-                numPolygons="1"
-                >
-
-
-                <polygon numVertexes="4">
-
-                    <vertex x="-20.0000" y="62.0000" />
-
-                    <vertex x="-63.0000" y="31.0000" />
-
-                    <vertex x="1.0000" y="-14.0000" />
+                    <vertex x="-15.0000" y="-8.0000" />
 
                     <vertex x="47.0000" y="16.0000" />
 
@@ -1283,7 +2149,181 @@
 
         </body>
 
-        <body name="Table1_5" dynamic="true" numFixtures="1">
+        <body name="Coffer1_6" dynamic="false" numFixtures="2">
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="-17.0000" y="-13.0000" />
+
+                    <vertex x="47.0000" y="32.0000" />
+
+                    <vertex x="4.0000" y="63.0000" />
+
+                    <vertex x="-63.0000" y="17.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-62.0000" y="17.0000" />
+
+                    <vertex x="-13.0000" y="-13.0000" />
+
+                    <vertex x="48.0000" y="32.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+        </body>
+
+        <body name="Coffer1_7" dynamic="false" numFixtures="2">
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="4.0000" y="63.0000" />
+
+                    <vertex x="-63.0000" y="17.0000" />
+
+                    <vertex x="-20.0000" y="-11.0000" />
+
+                    <vertex x="47.0000" y="32.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-63.0000" y="17.0000" />
+
+                    <vertex x="-14.0000" y="-11.0000" />
+
+                    <vertex x="48.0000" y="32.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+        </body>
+
+        <body name="Coffer1_8" dynamic="false" numFixtures="2">
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="4">
+
+                    <vertex x="3.0000" y="-12.0000" />
+
+                    <vertex x="47.0000" y="16.0000" />
+
+                    <vertex x="-20.0000" y="62.0000" />
+
+                    <vertex x="-63.0000" y="31.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-62.0000" y="31.0000" />
+
+                    <vertex x="-2.0000" y="-12.0000" />
+
+                    <vertex x="48.0000" y="16.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+        </body>
+
+        <body name="Table1_5" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1313,9 +2353,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-71.0000" y="48.0000" />
+
+                    <vertex x="21.0000" y="-21.0000" />
+
+                    <vertex x="58.0000" y="-2.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table1_6" dynamic="true" numFixtures="1">
+        <body name="Table1_6" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1345,9 +2411,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-70.5000" y="-2.0000" />
+
+                    <vertex x="-37.5000" y="-21.0000" />
+
+                    <vertex x="58.5000" y="49.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table1_7" dynamic="true" numFixtures="1">
+        <body name="Table1_7" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1377,9 +2469,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-69.5000" y="-2.0000" />
+
+                    <vertex x="-36.5000" y="-22.0000" />
+
+                    <vertex x="58.5000" y="49.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table1_8" dynamic="true" numFixtures="1">
+        <body name="Table1_8" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1409,9 +2527,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-69.5000" y="48.0000" />
+
+                    <vertex x="22.5000" y="-20.0000" />
+
+                    <vertex x="58.5000" y="-3.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table2_3" dynamic="true" numFixtures="1">
+        <body name="Table2_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1441,9 +2585,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-70.5000" y="50.0000" />
+
+                    <vertex x="23.5000" y="-21.0000" />
+
+                    <vertex x="57.5000" y="-2.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table2_4" dynamic="true" numFixtures="1">
+        <body name="Table2_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1473,9 +2643,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-71.0000" y="-2.5000" />
+
+                    <vertex x="-39.0000" y="-21.5000" />
+
+                    <vertex x="58.0000" y="48.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table3_3" dynamic="true" numFixtures="1">
+        <body name="Table3_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1505,9 +2701,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-55.0000" y="2.5000" />
+
+                    <vertex x="-9.0000" y="-24.5000" />
+
+                    <vertex x="51.0000" y="21.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table3_4" dynamic="true" numFixtures="1">
+        <body name="Table3_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1537,9 +2759,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-55.5000" y="22.0000" />
+
+                    <vertex x="5.5000" y="-24.0000" />
+
+                    <vertex x="52.5000" y="2.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table4_3" dynamic="true" numFixtures="1">
+        <body name="Table4_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1560,7 +2808,7 @@
 
                     <vertex x="-54.0000" y="8.5000" />
 
-                    <vertex x="-22.0000" y="-9.5000" />
+                    <vertex x="-25.0000" y="-10.5000" />
 
                     <vertex x="42.0000" y="33.5000" />
 
@@ -1569,9 +2817,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-52.0000" y="8.5000" />
+
+                    <vertex x="-22.0000" y="-10.5000" />
+
+                    <vertex x="42.0000" y="34.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table4_4" dynamic="true" numFixtures="1">
+        <body name="Table4_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1601,9 +2875,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-53.0000" y="32.5000" />
+
+                    <vertex x="7.0000" y="-9.5000" />
+
+                    <vertex x="44.0000" y="8.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table6_3" dynamic="true" numFixtures="1">
+        <body name="Table6_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1633,9 +2933,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-111.0000" y="-21.5000" />
+
+                    <vertex x="-54.0000" y="-56.5000" />
+
+                    <vertex x="101.0000" y="58.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table6_4" dynamic="true" numFixtures="1">
+        <body name="Table6_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1665,9 +2991,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-111.0000" y="58.5000" />
+
+                    <vertex x="43.0000" y="-56.5000" />
+
+                    <vertex x="102.0000" y="-21.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table7_3" dynamic="true" numFixtures="1">
+        <body name="Table7_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1697,9 +3049,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-89.5000" y="38.0000" />
+
+                    <vertex x="5.5000" y="-34.0000" />
+
+                    <vertex x="73.5000" y="4.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table7_4" dynamic="true" numFixtures="1">
+        <body name="Table7_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1729,9 +3107,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-91.0000" y="4.0000" />
+
+                    <vertex x="-22.0000" y="-34.0000" />
+
+                    <vertex x="78.0000" y="40.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Tomb2_3" dynamic="true" numFixtures="1">
+        <body name="Tomb2_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1761,9 +3165,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-88.0000" y="52.0000" />
+
+                    <vertex x="19.0000" y="-27.0000" />
+
+                    <vertex x="80.0000" y="7.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Tomb2_4" dynamic="true" numFixtures="1">
+        <body name="Tomb2_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1793,9 +3223,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-87.5000" y="7.5000" />
+
+                    <vertex x="-32.5000" y="-26.5000" />
+
+                    <vertex x="78.5000" y="51.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="TortureDevice1_5" dynamic="true" numFixtures="1">
+        <body name="TortureDevice1_5" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1825,9 +3281,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-79.0000" y="58.0000" />
+
+                    <vertex x="45.0000" y="-39.0000" />
+
+                    <vertex x="83.0000" y="-20.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="TortureDevice1_6" dynamic="true" numFixtures="1">
+        <body name="TortureDevice1_6" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1844,11 +3326,37 @@
 
                 <polygon numVertexes="4">
 
+                    <vertex x="-47.0000" y="-40.0000" />
+
+                    <vertex x="82.0000" y="57.0000" />
+
                     <vertex x="49.0000" y="81.0000" />
 
-                    <vertex x="-80.0000" y="-20.0000" />
+                    <vertex x="-83.0000" y="-15.0000" />
 
-                    <vertex x="-47.0000" y="-40.0000" />
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-83.0000" y="-14.0000" />
+
+                    <vertex x="-43.0000" y="-39.0000" />
 
                     <vertex x="82.0000" y="57.0000" />
 
@@ -1859,7 +3367,7 @@
 
         </body>
 
-        <body name="TortureDevice1_7" dynamic="true" numFixtures="1">
+        <body name="TortureDevice1_7" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1878,7 +3386,7 @@
 
                     <vertex x="10.0000" y="69.5000" />
 
-                    <vertex x="-97.0000" y="-10.5000" />
+                    <vertex x="-95.0000" y="-7.5000" />
 
                     <vertex x="-64.0000" y="-30.5000" />
 
@@ -1889,9 +3397,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-96.0000" y="-6.5000" />
+
+                    <vertex x="-62.0000" y="-30.5000" />
+
+                    <vertex x="46.0000" y="45.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="TortureDevice1_8" dynamic="true" numFixtures="1">
+        <body name="TortureDevice1_8" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1921,9 +3455,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-82.0000" y="65.5000" />
+
+                    <vertex x="43.0000" y="-31.5000" />
+
+                    <vertex x="79.0000" y="-11.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Altar1_1" dynamic="true" numFixtures="1">
+        <body name="Altar1_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1953,9 +3513,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-83.5000" y="6.0000" />
+
+                    <vertex x="-2.5000" y="-12.0000" />
+
+                    <vertex x="77.5000" y="7.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Altar1_2" dynamic="true" numFixtures="1">
+        <body name="Altar1_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -1985,9 +3571,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-46.0000" y="67.5000" />
+
+                    <vertex x="1.0000" y="43.5000" />
+
+                    <vertex x="40.0000" y="67.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Casket1_1" dynamic="true" numFixtures="1">
+        <body name="Casket1_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2017,9 +3629,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-74.5000" y="34.0000" />
+
+                    <vertex x="-6.5000" y="-11.0000" />
+
+                    <vertex x="68.5000" y="35.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Casket1_2" dynamic="true" numFixtures="1">
+        <body name="Casket1_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2049,9 +3687,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-33.0000" y="63.5000" />
+
+                    <vertex x="-4.0000" y="-35.5000" />
+
+                    <vertex x="30.0000" y="63.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest1_1" dynamic="true" numFixtures="1">
+        <body name="Chest1_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2081,9 +3745,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-25.5000" y="20.0000" />
+
+                    <vertex x="-3.5000" y="13.0000" />
+
+                    <vertex x="19.5000" y="20.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest1_2" dynamic="true" numFixtures="1">
+        <body name="Chest1_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2113,9 +3803,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-16.5000" y="28.0000" />
+
+                    <vertex x="-2.5000" y="22.0000" />
+
+                    <vertex x="11.5000" y="28.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest1_3" dynamic="true" numFixtures="1">
+        <body name="Chest1_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2145,9 +3861,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-24.5000" y="20.0000" />
+
+                    <vertex x="-2.5000" y="13.0000" />
+
+                    <vertex x="17.5000" y="20.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest1_4" dynamic="true" numFixtures="1">
+        <body name="Chest1_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2177,9 +3919,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-17.0000" y="28.0000" />
+
+                    <vertex x="-3.0000" y="16.0000" />
+
+                    <vertex x="12.0000" y="28.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest2_1" dynamic="true" numFixtures="1">
+        <body name="Chest2_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2209,9 +3977,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-15.5000" y="50.0000" />
+
+                    <vertex x="-2.5000" y="41.0000" />
+
+                    <vertex x="8.5000" y="50.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest2_2" dynamic="true" numFixtures="1">
+        <body name="Chest2_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2241,9 +4035,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-47.0000" y="23.5000" />
+
+                    <vertex x="-5.0000" y="11.5000" />
+
+                    <vertex x="38.0000" y="22.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest2_3" dynamic="true" numFixtures="1">
+        <body name="Chest2_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2273,9 +4093,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-13.5000" y="48.5000" />
+
+                    <vertex x="-2.5000" y="37.5000" />
+
+                    <vertex x="9.5000" y="48.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest2_4" dynamic="true" numFixtures="1">
+        <body name="Chest2_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2305,9 +4151,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-48.0000" y="23.0000" />
+
+                    <vertex x="-4.0000" y="13.0000" />
+
+                    <vertex x="35.0000" y="23.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest3_1" dynamic="true" numFixtures="1">
+        <body name="Chest3_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2324,13 +4196,39 @@
 
                 <polygon numVertexes="4">
 
+                    <vertex x="14.0000" y="-9.0000" />
+
                     <vertex x="14.0000" y="36.0000" />
 
                     <vertex x="-17.0000" y="36.0000" />
 
                     <vertex x="-17.0000" y="-9.0000" />
 
-                    <vertex x="14.0000" y="-18.0000" />
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-17.0000" y="35.0000" />
+
+                    <vertex x="-3.0000" y="23.0000" />
+
+                    <vertex x="14.0000" y="35.0000" />
 
                 </polygon>
 
@@ -2339,7 +4237,7 @@
 
         </body>
 
-        <body name="Chest3_2" dynamic="true" numFixtures="1">
+        <body name="Chest3_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2369,9 +4267,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-36.0000" y="21.0000" />
+
+                    <vertex x="-2.0000" y="7.0000" />
+
+                    <vertex x="31.0000" y="21.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest3_3" dynamic="true" numFixtures="1">
+        <body name="Chest3_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2388,11 +4312,37 @@
 
                 <polygon numVertexes="4">
 
+                    <vertex x="14.5000" y="-5.0000" />
+
+                    <vertex x="14.5000" y="36.0000" />
+
                     <vertex x="-17.5000" y="36.0000" />
 
-                    <vertex x="-17.5000" y="-17.0000" />
+                    <vertex x="-17.5000" y="-5.0000" />
 
-                    <vertex x="13.5000" y="-5.0000" />
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-16.5000" y="37.0000" />
+
+                    <vertex x="-1.5000" y="23.0000" />
 
                     <vertex x="14.5000" y="36.0000" />
 
@@ -2403,7 +4353,7 @@
 
         </body>
 
-        <body name="Chest3_4" dynamic="true" numFixtures="1">
+        <body name="Chest3_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2433,9 +4383,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-35.0000" y="20.0000" />
+
+                    <vertex x="-3.0000" y="13.0000" />
+
+                    <vertex x="31.0000" y="20.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest4_1" dynamic="true" numFixtures="1">
+        <body name="Chest4_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2465,9 +4441,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-15.0000" y="31.0000" />
+
+                    <vertex x="0.0000" y="17.0000" />
+
+                    <vertex x="13.0000" y="31.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest4_2" dynamic="true" numFixtures="1">
+        <body name="Chest4_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2497,9 +4499,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-31.0000" y="17.0000" />
+
+                    <vertex x="-4.0000" y="10.0000" />
+
+                    <vertex x="25.0000" y="17.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest4_3" dynamic="true" numFixtures="1">
+        <body name="Chest4_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2529,9 +4557,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-16.0000" y="31.0000" />
+
+                    <vertex x="-2.0000" y="22.0000" />
+
+                    <vertex x="13.0000" y="31.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest4_4" dynamic="true" numFixtures="1">
+        <body name="Chest4_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2561,9 +4615,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-30.5000" y="17.0000" />
+
+                    <vertex x="-2.5000" y="9.0000" />
+
+                    <vertex x="26.5000" y="17.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_145" dynamic="true" numFixtures="1">
+        <body name="Chest_145" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2593,9 +4673,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-34.0000" y="24.0000" />
+
+                    <vertex x="-4.0000" y="14.0000" />
+
+                    <vertex x="29.0000" y="24.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_146" dynamic="true" numFixtures="1">
+        <body name="Chest_146" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2625,9 +4731,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-22.0000" y="35.0000" />
+
+                    <vertex x="-4.0000" y="22.0000" />
+
+                    <vertex x="15.0000" y="35.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_147" dynamic="true" numFixtures="1">
+        <body name="Chest_147" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2657,9 +4789,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-33.0000" y="25.5000" />
+
+                    <vertex x="-5.0000" y="13.5000" />
+
+                    <vertex x="29.0000" y="25.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_148" dynamic="true" numFixtures="1">
+        <body name="Chest_148" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2689,9 +4847,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-22.0000" y="34.0000" />
+
+                    <vertex x="-2.0000" y="25.0000" />
+
+                    <vertex x="16.0000" y="34.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_153" dynamic="true" numFixtures="1">
+        <body name="Chest_153" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2721,9 +4905,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-37.0000" y="27.0000" />
+
+                    <vertex x="-5.0000" y="18.0000" />
+
+                    <vertex x="26.0000" y="27.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_154" dynamic="true" numFixtures="1">
+        <body name="Chest_154" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2753,9 +4963,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-22.5000" y="43.5000" />
+
+                    <vertex x="-1.5000" y="33.5000" />
+
+                    <vertex x="15.5000" y="43.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_155" dynamic="true" numFixtures="1">
+        <body name="Chest_155" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2785,9 +5021,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-37.0000" y="31.5000" />
+
+                    <vertex x="-4.0000" y="22.5000" />
+
+                    <vertex x="26.0000" y="31.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_156" dynamic="true" numFixtures="1">
+        <body name="Chest_156" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2817,9 +5079,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-22.0000" y="44.5000" />
+
+                    <vertex x="-2.0000" y="30.5000" />
+
+                    <vertex x="15.0000" y="44.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_161" dynamic="true" numFixtures="1">
+        <body name="Chest_161" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2849,9 +5137,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-38.0000" y="40.5000" />
+
+                    <vertex x="-5.0000" y="28.5000" />
+
+                    <vertex x="25.0000" y="40.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_162" dynamic="true" numFixtures="1">
+        <body name="Chest_162" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2881,9 +5195,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-19.0000" y="46.0000" />
+
+                    <vertex x="0.0000" y="35.0000" />
+
+                    <vertex x="19.0000" y="46.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_163" dynamic="true" numFixtures="1">
+        <body name="Chest_163" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2913,9 +5253,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-38.0000" y="27.0000" />
+
+                    <vertex x="-7.0000" y="18.0000" />
+
+                    <vertex x="26.0000" y="27.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Chest_164" dynamic="true" numFixtures="1">
+        <body name="Chest_164" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2945,9 +5311,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-29.5000" y="47.5000" />
+
+                    <vertex x="-11.5000" y="40.5000" />
+
+                    <vertex x="8.5000" y="47.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Coffer1_1" dynamic="true" numFixtures="1">
+        <body name="Coffer1_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -2977,9 +5369,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-55.5000" y="45.0000" />
+
+                    <vertex x="-6.5000" y="29.0000" />
+
+                    <vertex x="39.5000" y="44.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Coffer1_2" dynamic="true" numFixtures="1">
+        <body name="Coffer1_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3009,9 +5427,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-39.5000" y="55.5000" />
+
+                    <vertex x="-5.5000" y="44.5000" />
+
+                    <vertex x="23.5000" y="55.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Coffer1_3" dynamic="true" numFixtures="1">
+        <body name="Coffer1_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3041,9 +5485,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-54.5000" y="45.0000" />
+
+                    <vertex x="-7.5000" y="34.0000" />
+
+                    <vertex x="39.5000" y="45.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Coffer1_4" dynamic="true" numFixtures="1">
+        <body name="Coffer1_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3073,9 +5543,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-39.5000" y="56.5000" />
+
+                    <vertex x="-6.5000" y="44.5000" />
+
+                    <vertex x="24.5000" y="56.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Crate8_1" dynamic="true" numFixtures="1">
+        <body name="Crate8_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3098,7 +5594,33 @@
 
                     <vertex x="-27.0000" y="20.5000" />
 
-                    <vertex x="-27.0000" y="-2.5000" />
+                    <vertex x="-27.0000" y="-1.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-28.0000" y="20.5000" />
+
+                    <vertex x="-3.0000" y="11.5000" />
+
+                    <vertex x="24.0000" y="20.5000" />
 
                 </polygon>
 
@@ -3107,7 +5629,7 @@
 
         </body>
 
-        <body name="Crate8_2" dynamic="true" numFixtures="1">
+        <body name="Crate8_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3137,9 +5659,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-18.0000" y="28.0000" />
+
+                    <vertex x="-4.0000" y="20.0000" />
+
+                    <vertex x="14.0000" y="28.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Crate8_3" dynamic="true" numFixtures="1">
+        <body name="Crate8_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3169,9 +5717,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-30.0000" y="14.0000" />
+
+                    <vertex x="0.0000" y="-11.0000" />
+
+                    <vertex x="27.0000" y="6.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Crate8_4" dynamic="true" numFixtures="1">
+        <body name="Crate8_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3201,9 +5775,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-32.0000" y="6.0000" />
+
+                    <vertex x="-4.0000" y="-11.0000" />
+
+                    <vertex x="28.0000" y="14.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table1_1" dynamic="true" numFixtures="1">
+        <body name="Table1_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3233,9 +5833,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-81.5000" y="38.0000" />
+
+                    <vertex x="-1.5000" y="22.0000" />
+
+                    <vertex x="70.5000" y="37.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table1_2" dynamic="true" numFixtures="1">
+        <body name="Table1_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3265,9 +5891,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-31.0000" y="72.5000" />
+
+                    <vertex x="-6.0000" y="58.5000" />
+
+                    <vertex x="18.0000" y="72.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table1_3" dynamic="true" numFixtures="1">
+        <body name="Table1_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3297,9 +5949,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-82.0000" y="37.0000" />
+
+                    <vertex x="3.0000" y="22.0000" />
+
+                    <vertex x="72.0000" y="37.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table1_4" dynamic="true" numFixtures="1">
+        <body name="Table1_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3329,9 +6007,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-30.5000" y="72.0000" />
+
+                    <vertex x="-7.5000" y="57.0000" />
+
+                    <vertex x="18.5000" y="71.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table2_1" dynamic="true" numFixtures="1">
+        <body name="Table2_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3361,9 +6065,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-81.0000" y="36.5000" />
+
+                    <vertex x="-1.0000" y="20.5000" />
+
+                    <vertex x="70.0000" y="36.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table2_2" dynamic="true" numFixtures="1">
+        <body name="Table2_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3393,9 +6123,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-29.0000" y="71.0000" />
+
+                    <vertex x="-4.0000" y="61.0000" />
+
+                    <vertex x="21.0000" y="71.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table3_1" dynamic="true" numFixtures="1">
+        <body name="Table3_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3425,9 +6181,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-33.5000" y="43.5000" />
+
+                    <vertex x="2.5000" y="30.5000" />
+
+                    <vertex x="29.5000" y="43.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table3_2" dynamic="true" numFixtures="1">
+        <body name="Table3_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3457,9 +6239,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-53.5000" y="31.0000" />
+
+                    <vertex x="1.5000" y="20.0000" />
+
+                    <vertex x="48.5000" y="31.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table4_1" dynamic="true" numFixtures="1">
+        <body name="Table4_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3489,9 +6297,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-29.5000" y="53.5000" />
+
+                    <vertex x="-4.5000" y="45.5000" />
+
+                    <vertex x="17.5000" y="53.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table4_2" dynamic="true" numFixtures="1">
+        <body name="Table4_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3521,9 +6355,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-56.5000" y="34.5000" />
+
+                    <vertex x="-6.5000" y="21.5000" />
+
+                    <vertex x="43.5000" y="34.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table6_1" dynamic="true" numFixtures="1">
+        <body name="Table6_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3553,9 +6413,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-40.0000" y="99.0000" />
+
+                    <vertex x="-2.0000" y="86.0000" />
+
+                    <vertex x="33.0000" y="99.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table6_2" dynamic="true" numFixtures="1">
+        <body name="Table6_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3585,9 +6471,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-124.5000" y="42.5000" />
+
+                    <vertex x="-1.5000" y="26.5000" />
+
+                    <vertex x="116.5000" y="42.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table7_1" dynamic="true" numFixtures="1">
+        <body name="Table7_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3617,9 +6529,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-98.5000" y="48.0000" />
+
+                    <vertex x="5.5000" y="29.0000" />
+
+                    <vertex x="89.5000" y="48.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Table7_2" dynamic="true" numFixtures="1">
+        <body name="Table7_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3649,9 +6587,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-49.5000" y="78.0000" />
+
+                    <vertex x="-7.5000" y="68.0000" />
+
+                    <vertex x="39.5000" y="78.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Tomb2_1" dynamic="true" numFixtures="1">
+        <body name="Tomb2_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3681,9 +6645,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-86.5000" y="57.0000" />
+
+                    <vertex x="-4.5000" y="42.0000" />
+
+                    <vertex x="72.5000" y="56.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="Tomb2_2" dynamic="true" numFixtures="1">
+        <body name="Tomb2_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3713,9 +6703,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-43.0000" y="86.5000" />
+
+                    <vertex x="-6.0000" y="77.5000" />
+
+                    <vertex x="31.0000" y="86.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="TortureDevice1_1" dynamic="true" numFixtures="1">
+        <body name="TortureDevice1_1" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3745,9 +6761,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-97.5000" y="41.5000" />
+
+                    <vertex x="5.5000" y="27.5000" />
+
+                    <vertex x="100.5000" y="41.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="TortureDevice1_2" dynamic="true" numFixtures="1">
+        <body name="TortureDevice1_2" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3777,9 +6819,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-37.0000" y="70.0000" />
+
+                    <vertex x="-12.0000" y="57.0000" />
+
+                    <vertex x="13.0000" y="70.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="TortureDevice1_3" dynamic="true" numFixtures="1">
+        <body name="TortureDevice1_3" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3809,9 +6877,35 @@
 
             </fixture>
 
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-114.0000" y="49.0000" />
+
+                    <vertex x="-13.0000" y="38.0000" />
+
+                    <vertex x="82.0000" y="49.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
         </body>
 
-        <body name="TortureDevice1_4" dynamic="true" numFixtures="1">
+        <body name="TortureDevice1_4" dynamic="false" numFixtures="2">
 
             <fixture
                 density="2"
@@ -3835,6 +6929,32 @@
                     <vertex x="-26.5000" y="95.5000" />
 
                     <vertex x="-26.5000" y="-49.5000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="2"
+                filter_maskBits="65535"
+                isSensor="true"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-26.5000" y="96.5000" />
+
+                    <vertex x="-3.5000" y="83.5000" />
+
+                    <vertex x="24.5000" y="96.5000" />
 
                 </polygon>
 

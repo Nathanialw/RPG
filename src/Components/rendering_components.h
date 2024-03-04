@@ -21,6 +21,7 @@ namespace Rendering_Components {
   struct Offsets {
     Rendering_Components::Sprite_Offset offset;
     Rendering_Components::Sprite_Offset colliderOffset;
+    Rendering_Components::Sprite_Offset placementOffset;
   };
 
   struct Sprite_Sheet_Data {

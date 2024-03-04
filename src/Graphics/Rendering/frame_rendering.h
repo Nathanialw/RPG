@@ -33,8 +33,8 @@ SDL_FRect Position_For_Render(std::unordered_map<std::string, Rendering_Componen
 SDL_FRect Position_Image_For_Render(std::unordered_map<std::string, Rendering_Components::Image_Data> *imageData, std::string &name, Component::Position &position, Component::Camera &camera, Component::Scale &scale, Rendering_Components::Sprite_Offset &offset, SDL_Rect &clipRect, SDL_FRect &renderRect, Component::Interaction_Rect &interactionRect) {
   clipRect = {0, 0, imageData->at(name).w, imageData->at(name).h};
   renderRect = Utilities::Scale_Rect(clipRect, scale.scale);
-  renderRect.x = -offset.x + position.x;
-  renderRect.y = -offset.y + position.y;
+  renderRect.x = position.x - offset.x;
+  renderRect.y = position.y - offset.y;
   interactionRect.rect = renderRect;
   renderRect.x -= camera.screen.x;
   renderRect.y -= camera.screen.y;

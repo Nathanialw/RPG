@@ -33,17 +33,6 @@ namespace Entity_Loader {
     bool hexDir;
   };
 
-  void init_db() {
-    const char *db_filepath = "Data/db/data.db";
-    int error = sqlite3_open(db_filepath, &db::db);
-    if (error) {
-      //if error then display error and close connection
-      std::cout << "DB Open Error: " << sqlite3_errmsg(db::db) << std::endl;
-      sqlite3_close(db::db);
-    } else {
-      std::cout << "Opened Database Successfully!" << std::endl;
-    }
-  }
 
   Data parse_data(std::string name) {// needs to search for  a specific row that I can input in the arguments
     //check if the name exists??
@@ -553,15 +542,6 @@ namespace Entity_Loader {
     std::string img;
   };
 
-  std::string Get_String(const unsigned char *text) {
-    const char *s;
-    s = (const char *) text;
-    if (s != NULL) {
-      return std::string(reinterpret_cast<const char *>(s));
-    }
-    return "";
-  }
-
   Building_Data Get_Building_Data(std::string &name) {// needs to search for  a specific row that I can input in the arguments
     //check if the name exists??
     std::string unit_name = db::Append_Quotes(name);
@@ -576,28 +556,28 @@ namespace Entity_Loader {
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       text = sqlite3_column_text(stmt, 0);
-      data.collider_type = Get_String(text);
+      data.collider_type = db::Get_String(text);
 
       data.radius = (float) sqlite3_column_double(stmt, 1);
       data.x_offset = (float) sqlite3_column_double(stmt, 2);
       data.y_offset = (float) sqlite3_column_double(stmt, 3);
 
       text = sqlite3_column_text(stmt, 4);
-      data.sprite_layout = Get_String(text);
+      data.sprite_layout = db::Get_String(text);
 
       text = sqlite3_column_text(stmt, 5);
-      data.xml = Get_String(text);
+      data.xml = db::Get_String(text);
 
       text = sqlite3_column_text(stmt, 6);
-      data.img = Get_String(text);
+      data.img = db::Get_String(text);
 
       text = sqlite3_column_text(stmt, 7);
-      data.race = Get_String(text);
+      data.race = db::Get_String(text);
 
       data.whole_sprite = sqlite3_column_int(stmt, 8);
 
       text = sqlite3_column_text(stmt, 9);
-      data.interior = Get_String(text);
+      data.interior = db::Get_String(text);
 
       data.direction = sqlite3_column_int(stmt, 10);
     }
@@ -623,10 +603,10 @@ namespace Entity_Loader {
       data.y_collision_offset = (float) sqlite3_column_double(stmt, 3);
 
       text = sqlite3_column_text(stmt, 4);
-      data.xml = Get_String(text);
+      data.xml = db::Get_String(text);
 
       text = sqlite3_column_text(stmt, 5);
-      data.img = Get_String(text);
+      data.img = db::Get_String(text);
     }
     return data;
   }
@@ -645,7 +625,7 @@ namespace Entity_Loader {
 
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       const unsigned char *text = sqlite3_column_text(stmt, 0);
-      buildingName = Get_String(text);
+      buildingName = db::Get_String(text);
     }
     return buildingName;
   }
@@ -670,7 +650,7 @@ namespace Entity_Loader {
 
     while (sqlite3_step(stmt) != SQLITE_DONE) {
       text = sqlite3_column_text(stmt, 0);
-      buildingName = Get_String(text);
+      buildingName = db::Get_String(text);
 
       directions.emplace_back(buildingName);
     }
