@@ -1,10 +1,9 @@
 #pragma once
 
 #include "db.h"
-#include "stdio.h"
 #include <SDL2/SDL.h>
+#include <cstring>
 #include <iostream>
-#include <string.h>
 #include <string>
 #include <vector>
 

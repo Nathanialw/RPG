@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:e9c432ae221ea97e7ec184f5c9672cf2:eafcda78aaced499607335243c28a7ae:8fd09b9ff06dc09b98fadc26b5155ea2$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="labyrinth0_props.png" width="255" height="1259">
+    <sprite n="Bedroll1_1" x="118" y="971" w="47" h="18"/>
+    <sprite n="Bedroll1_2" x="237" y="495" w="17" h="40"/>
+    <sprite n="Bedroll1_3" x="186" y="1078" w="41" h="35"/>
+    <sprite n="Bedroll1_4" x="202" y="564" w="40" h="33"/>
+    <sprite n="Bone1_1" x="163" y="1164" w="24" h="23"/>
+    <sprite n="Bone1_2" x="166" y="1189" w="23" h="23"/>
+    <sprite n="Bone1_3" x="228" y="898" w="24" h="21"/>
+    <sprite n="Bone1_4" x="166" y="1214" w="23" h="21"/>
+    <sprite n="Bone1_5" x="227" y="1173" w="25" h="20"/>
+    <sprite n="Bone1_6" x="168" y="941" w="20" h="23"/>
+    <sprite n="Bone1_7" x="233" y="1236" w="19" h="22"/>
+    <sprite n="Bone1_8" x="193" y="940" w="25" h="17"/>
+    <sprite n="Bone2_1" x="102" y="1229" w="29" h="25"/>
+    <sprite n="Bone2_2" x="133" y="1223" w="29" h="23"/>
+    <sprite n="Bone2_3" x="74" y="1133" w="30" h="22"/>
+    <sprite n="Bone2_4" x="185" y="1126" w="29" h="23"/>
+    <sprite n="Bone2_5" x="244" y="231" w="10" h="28"/>
+    <sprite n="Bone2_6" x="19" y="1245" w="36" h="10"/>
+    <sprite n="Bone2_7" x="133" y="1248" w="35" h="10"/>
+    <sprite n="Bone2_8" x="214" y="1160" w="11" h="27"/>
+    <sprite n="Bone3_1" x="170" y="1237" w="27" h="21"/>
+    <sprite n="Bone3_2" x="228" y="837" w="26" h="20"/>
+    <sprite n="Bone3_3" x="228" y="791" w="26" h="21"/>
+    <sprite n="Bone3_4" x="228" y="814" w="26" h="21"/>
+    <sprite n="Bone3_5" x="245" y="176" w="9" h="25"/>
+    <sprite n="Bone3_6" x="186" y="1115" w="33" h="9"/>
+    <sprite n="Bone3_7" x="207" y="286" w="33" h="8"/>
+    <sprite n="Bone3_8" x="244" y="261" w="10" h="26"/>
+    <sprite n="Bone4_1" x="233" y="1116" w="21" h="17"/>
+    <sprite n="Bone4_2" x="96" y="1054" w="21" h="18"/>
+    <sprite n="Bone4_3" x="233" y="1135" w="21" h="17"/>
+    <sprite n="Bone4_4" x="233" y="1154" w="21" h="17"/>
+    <sprite n="Bone4_5" x="199" y="1237" w="8" h="21"/>
+    <sprite n="Bone4_6" x="190" y="959" w="26" h="7"/>
+    <sprite n="Bone4_7" x="185" y="1151" w="27" h="8"/>
+    <sprite n="Bone4_8" x="244" y="564" w="8" h="20"/>
+    <sprite n="Bone5_1" x="168" y="966" w="15" h="14"/>
+    <sprite n="Bone5_2" x="185" y="968" w="15" h="14"/>
+    <sprite n="Bone5_3" x="202" y="968" w="14" h="14"/>
+    <sprite n="Bone5_4" x="218" y="971" w="15" h="14"/>
+    <sprite n="Bone5_5" x="193" y="1002" w="13" h="16"/>
+    <sprite n="Bone5_6" x="1" y="1245" w="16" h="13"/>
+    <sprite n="Bone5_7" x="227" y="1220" w="16" h="14"/>
+    <sprite n="Bone5_8" x="209" y="987" w="14" h="14"/>
+    <sprite n="Candelabra1_1" x="229" y="1078" w="25" h="36"/>
+    <sprite n="Candelabra1_2" x="228" y="859" w="18" h="37"/>
+    <sprite n="Candelabra1_3" x="169" y="878" w="22" h="36"/>
+    <sprite n="Candelabra1_4" x="164" y="811" w="23" h="36"/>
+    <sprite n="Candles1_1" x="134" y="878" w="33" h="41"/>
+    <sprite n="Candles1_2" x="189" y="717" w="33" h="35"/>
+    <sprite n="Candles1_3" x="224" y="723" w="29" h="29"/>
+    <sprite n="Candles1_4" x="189" y="754" w="37" h="33"/>
+    <sprite n="Candles1_5" x="158" y="770" w="29" h="39"/>
+    <sprite n="Candles1_6" x="189" y="599" w="37" h="38"/>
+    <sprite n="Candles1_7" x="95" y="1164" w="32" h="32"/>
+    <sprite n="Candles1_8" x="193" y="887" w="33" h="29"/>
+    <sprite n="EvilSkull1_1" x="193" y="984" w="14" h="16"/>
+    <sprite n="EvilSkull1_2" x="219" y="921" w="16" h="14"/>
+    <sprite n="EvilSkull1_3" x="193" y="1020" w="14" h="15"/>
+    <sprite n="EvilSkull1_4" x="139" y="770" w="16" h="15"/>
+    <sprite n="EvilSkull1_5" x="216" y="1126" w="15" h="15"/>
+    <sprite n="EvilSkull1_6" x="216" y="1143" w="15" h="15"/>
+    <sprite n="EvilSkull1_7" x="220" y="937" w="15" h="15"/>
+    <sprite n="EvilSkull1_8" x="220" y="954" w="15" h="15"/>
+    <sprite n="EvilSkull2_1" x="193" y="918" w="24" h="20"/>
+    <sprite n="EvilSkull2_2" x="206" y="1210" w="19" h="24"/>
+    <sprite n="EvilSkull2_3" x="189" y="1161" w="23" h="22"/>
+    <sprite n="EvilSkull2_4" x="237" y="1026" w="17" h="22"/>
+    <sprite n="EvilSkull2_5" x="209" y="1236" w="22" h="22"/>
+    <sprite n="EvilSkull2_6" x="191" y="1185" w="21" h="23"/>
+    <sprite n="EvilSkull2_7" x="227" y="1195" w="22" h="23"/>
+    <sprite n="EvilSkull2_8" x="169" y="916" w="22" h="23"/>
+    <sprite n="HangingCandle1_1" x="226" y="682" w="27" h="39"/>
+    <sprite n="HangingCandle1_2" x="99" y="878" w="33" h="36"/>
+    <sprite n="HangingCandle1_3" x="189" y="680" w="35" h="35"/>
+    <sprite n="HangingCandle1_4" x="202" y="523" w="33" h="39"/>
+    <sprite n="HangingCandle1_5" x="189" y="639" w="35" h="39"/>
+    <sprite n="Rocks1_1" x="99" y="1198" w="29" h="29"/>
+    <sprite n="Rocks1_2" x="130" y="1196" w="34" h="25"/>
+    <sprite n="Rocks1_3" x="164" y="849" w="29" h="27"/>
+    <sprite n="Rocks1_4" x="66" y="1234" w="34" h="24"/>
+    <sprite n="Rocks1_5" x="189" y="789" w="37" h="29"/>
+    <sprite n="Rocks1_6" x="129" y="1164" w="32" h="30"/>
+    <sprite n="Rocks1_7" x="185" y="493" w="31" h="28"/>
+    <sprite n="Rocks1_8" x="189" y="820" w="37" h="26"/>
+    <sprite n="Rocks_1" x="1" y="995" w="93" h="77" oX="3" oY="13" oW="96" oH="96"/>
+    <sprite n="Rocks_2" x="1" y="823" w="96" h="91" oX="0" oY="5" oW="96" oH="96"/>
+    <sprite n="Roots1_1" x="1" y="1074" w="71" h="84"/>
+    <sprite n="Roots1_2" x="86" y="712" w="51" h="73"/>
+    <sprite n="Roots1_3" x="121" y="991" w="70" h="44"/>
+    <sprite n="Roots1_4" x="185" y="415" w="51" h="76"/>
+    <sprite n="Roots1_5" x="1" y="1160" w="63" h="83"/>
+    <sprite n="Roots1_6" x="118" y="380" w="65" h="78"/>
+    <sprite n="Roots1_7" x="118" y="460" w="65" h="61"/>
+    <sprite n="Roots1_8" x="99" y="823" w="63" h="53"/>
+    <sprite n="Roots2_1" x="1" y="626" w="114" h="84"/>
+    <sprite n="Roots2_2" x="185" y="296" w="69" h="117"/>
+    <sprite n="Roots2_3" x="1" y="916" w="115" h="77"/>
+    <sprite n="Roots2_4" x="117" y="593" w="70" h="65"/>
+    <sprite n="Roots2_5" x="1" y="513" w="114" h="111"/>
+    <sprite n="Roots2_6" x="117" y="523" w="83" h="68"/>
+    <sprite n="Roots2_7" x="1" y="712" w="83" h="109"/>
+    <sprite n="Roots2_8" x="121" y="1037" w="114" h="39"/>
+    <sprite n="Roots3_1" x="207" y="1" w="41" h="65"/>
+    <sprite n="Roots3_2" x="106" y="1078" w="78" h="43"/>
+    <sprite n="Roots3_3" x="207" y="123" w="40" h="51"/>
+    <sprite n="Roots3_4" x="106" y="1123" w="77" h="39"/>
+    <sprite n="Roots3_5" x="139" y="707" w="48" h="61"/>
+    <sprite n="Roots3_6" x="117" y="660" w="70" h="45"/>
+    <sprite n="Roots3_7" x="86" y="787" w="70" h="34"/>
+    <sprite n="Roots3_8" x="118" y="921" w="48" h="48"/>
+    <sprite n="Rug1_1" x="1" y="380" w="115" h="131"/>
+    <sprite n="Rug1_2" x="1" y="296" w="182" h="82"/>
+    <sprite n="Rug1_3" x="1" y="1" w="204" h="146"/>
+    <sprite n="Rug1_4" x="1" y="149" w="204" h="145"/>
+    <sprite n="WallCandles1_1" x="195" y="848" w="31" h="37"/>
+    <sprite n="WallCandles1_2" x="238" y="415" w="16" h="38"/>
+    <sprite n="WallCandles1_3" x="66" y="1198" w="31" h="34"/>
+    <sprite n="WallCandles1_4" x="238" y="455" w="16" h="38"/>
+    <sprite n="WallCandles1_5" x="226" y="640" w="27" h="40"/>
+    <sprite n="WallCandles1_6" x="228" y="599" w="26" h="39"/>
+    <sprite n="WallCandles1_7" x="66" y="1160" w="27" h="36"/>
+    <sprite n="WallCandles1_8" x="228" y="754" w="26" h="35"/>
+    <sprite n="WallChandelier1_1" x="207" y="68" w="45" h="53"/>
+    <sprite n="WallChandelier1_2" x="96" y="995" w="23" h="57"/>
+    <sprite n="WallChandelier1_3" x="74" y="1074" w="30" h="57"/>
+    <sprite n="WallChandelier1_4" x="207" y="176" w="36" h="53"/>
+    <sprite n="WallChandelier1_5" x="207" y="231" w="35" h="53"/>
+    <sprite n="WallLamp1_1" x="237" y="1050" w="13" h="26"/>
+    <sprite n="WallLamp1_2" x="237" y="948" w="17" h="24"/>
+    <sprite n="WallLamp1_3" x="191" y="1210" w="13" h="25"/>
+    <sprite n="WallLamp1_4" x="237" y="974" w="17" h="24"/>
+    <sprite n="WallLamp1_5" x="237" y="537" w="17" h="25"/>
+    <sprite n="WallLamp1_6" x="218" y="493" w="17" h="25"/>
+    <sprite n="WallLamp1_7" x="237" y="1000" w="17" h="24"/>
+    <sprite n="WallLamp1_8" x="237" y="921" w="17" h="25"/>
+</TextureAtlas>

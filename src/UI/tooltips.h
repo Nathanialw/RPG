@@ -104,18 +104,20 @@ namespace Tooltip {
     }
     //render tooltip background
     SDL_FRect tooltipBackground;
-    if (Debug::settings[Debug::Settings::fontRenderFC]) {
-      tooltipBackground = {mousePoint.x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 2))};
-    } else {
-      float x = mousePoint.x - (tooltip.tooltipWidth / 2.0f);
-      tooltipBackground = {x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 2))};
-    }
+    //    if (Debug::settings[Debug::Settings::fontRenderFC]) {
+    //      tooltipBackground = {mousePoint.x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 2))};
+    //    } else {
+    float x = mousePoint.x - (tooltip.tooltipWidth / 2.0f);
+    tooltipBackground = {x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 2))};
+    //    }
 
     Render_Tooltip_Background(tooltipBackground, camera);
     //render item stats
     float charHeight = tooltip.charHeight;
     for (auto row: renderArray) {
-      Debug::settings[Debug::Settings::fontRenderFC] ? Render_tooltip_0(row, tooltip.tooltipWidth) : Render_Tooltip_FC(camera, row.renderRect, charHeight, row.color, row.text);
+      //      Debug::settings[Debug::Settings::fontRenderFC] ?
+      //                                                     Render_tooltip_0(row, tooltip.tooltipWidth) :
+      Render_Tooltip_FC(camera, row.renderRect, charHeight, row.color, row.text);
       SDL_DestroyTexture(row.spriteData.pTexture);
     }
   }

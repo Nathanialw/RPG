@@ -203,8 +203,8 @@ namespace Maps {
         seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
         int numObjects = Procedural_Generation::Random_Int(0, 100, seed);
         if (numObjects < 5) {
-          float x = Procedural_Generation::Random_float(0, (int) World::size.width, seed);
-          float y = Procedural_Generation::Random_float(0, (int) World::size.height, seed);
+          float x = Procedural_Generation::Random_float(33, (int) World::size.width - 64, seed);
+          float y = Procedural_Generation::Random_float(33, (int) World::size.height - 64, seed);
 
           int n = Procedural_Generation::Random_Int(0, units.size(), seed);
           db::Unit_Data data = Game_Objects_Lists::units[unitType][n];
@@ -278,6 +278,42 @@ namespace Maps {
     }
   }
 
+  void Generate_Labyrinth_Objects(entt::registry &zone, int &state, SDL_FRect rect, std::string &tileSet, World_Data::Tile &tile) {
+    Procedural_Components::Seed seed;
+    seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
+
+    // the number of objects(trees and rocks) should be retrieved from an array created by simplex noise in order to create a proper forest
+    // later, more trees = forest, more rocks = forest edge
+    //    int numObjects = Procedural_Generation::Random_Int(0, 8, seed);
+    int numObjects = World_Data::maxObjectsPerTile;
+
+    //calculate room type
+
+    //query db to get object lists
+
+    //calculate what kind of objects
+    ///wall mounted ie. torches
+    ///freestanding ie. chests, tables
+    //set the object against the wall we need to know its radius to offset it from the wall
+
+    for (int k = 0; k < numObjects; k++) {
+
+
+      float x = Procedural_Generation::Random_float(33, (int) World::size.width - 65, seed);
+      float y = Procedural_Generation::Random_float(33, (int) World::size.height - 65, seed);
+
+      float i = rect.x / World::size.width;
+      float j = rect.y / World::size.height;
+      if (Game_Objects_Lists::tilesets[tileSet].empty()) { return; }
+      int xmlIndex = Procedural_Generation::Random_Int(0, (int) Game_Objects_Lists::tilesets[tileSet].size(), seed);
+      std::string objectName = Game_Objects_Lists::tilesets[tileSet][xmlIndex];
+
+      if (i != 0) {
+        tile.objects[k].entity = (Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex));
+      }
+    }
+  }
+
 
   //render tiles and instantiate the objects on the tiles
   void Render(entt::registry &zone, int &state, Component::Camera &camera) {
@@ -309,10 +345,12 @@ namespace Maps {
 
 
             if (!World_Data::tilesEntities[0][i][j].created) {
-              Generate_Trees(zone, state, rect, World::world[state].tileset, World_Data::tilesEntities[0][i][j]);
               if (Texture_Data::Packer_Textures.contains(World::world[state].tileset)) {
+                Generate_Labyrinth_Objects(zone, state, rect, World::world[state].tileset, World_Data::tilesEntities[0][i][j]);
                 World_Data::tilesEntities[0][i][j].tileObject = (Create_Entities::Create_Tile(zone, state, i, j, "labyrinth0_" + std::to_string(World_Data::tilesEntities[0][i][j].tileTexture)));
                 World_Data::tilesEntities[0][i][j].isTileObject = true;
+              } else {
+                Generate_Trees(zone, state, rect, World::world[state].tileset, World_Data::tilesEntities[0][i][j]);
               }
               World_Data::tilesEntities[0][i][j].created = true;
             }

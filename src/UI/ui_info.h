@@ -5,7 +5,7 @@ namespace UI_Info {
     std::vector<std::string> traits = {"fair", "hard"};
     std::vector<std::string> description = {"this is flavour text", "this is more flavour text"};
     bool b_isOpen = false;
-    SDL_FRect panelRect;
+    SDL_FRect panelRect{};
     SDL_Rect backgroundFrame = {0, 0, 1137, 700};
     SDL_Texture *background = NULL;
     SDL_Rect leftPageFrame = {0, 0, 1137, 700};
@@ -13,8 +13,9 @@ namespace UI_Info {
     SDL_Rect rightPageFrame = {0, 0, 1137, 700};
     SDL_Texture *rightPage = NULL;
     int currentTab = 0;
-    entt::entity spell;
-  } spellbook;
+    entt::entity spell{};
+  };
+  Unit_Info spellbook;
 
   void Info_Toggle() {
     if (spellbook.b_isOpen) {

@@ -1,25 +1,4 @@
 #pragma once
-//#include "action_components.h"
-//#include "ai_control.h"
-//#include "components.h"
-//#include "death_spells.h"
-//#include "events.h"
-//#include "game_menu.h"
-//#include "hotbar.h"
-//#include "input_control.h"
-//#include "interface.h"
-//#include "items.h"
-//#include "menu.h"
-//#include "movement.h"
-//#include "pause.h"
-//#include "sinister_strike.h"
-//#include "skills.h"
-//#include "spells.h"
-//#include "timer.h"
-#include "ui.h"
-//#include "unit_control.h"
-//#include "utilities.h"
-//#include <SDL2/SDL.h>
 #include "Items/items.h"
 #include "Maps/Pathing/a_star.h"
 #include "building_components.h"
@@ -30,6 +9,8 @@
 #include "input_control.h"
 #include "interface.h"
 #include "quad_tree.h"
+#include "ui.h"
+#include "ui_debug.h"
 
 namespace Event_Handler {
 
@@ -143,6 +124,13 @@ namespace Event_Handler {
             //check for button on spellbook
           }
           return;
+        }
+        //  debug frame
+        else if (UI_Debug::Mouse_Inside_Window(camera)) {
+          if (UI_Debug::open) {
+            UI_Debug::Update_Values(zone, camera);
+            return;
+          }
         }
         //      drop spell
         else if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
@@ -277,6 +265,7 @@ namespace Event_Handler {
             //            recenter camera on player
             UI_Spellbook::Update_Position();
             UI_Info::Update_Position();
+            UI_Debug::Update_Position();
             Action_Bar::Update_Position(Action_Bar::actionBar.actionBar.actionBarFrame);
             Menu::Build_Menu(Menu::menu);
             break;

@@ -107,7 +107,7 @@ namespace A_Star {
     nodeEnd = &nodes[(int(target.y / nNodeSize) * nMapWidth) + int(target.x / nNodeSize)];
 
     int numCellsToCheck;
-    (nodeEnd->bObstacle) ? numCellsToCheck = 2 : numCellsToCheck = 100;
+    (nodeEnd->bObstacle) ? numCellsToCheck = 3 : numCellsToCheck = 255;
 
     for (int x = 0; x < nMapWidth; x++)
       for (int y = 0; y < nMapHeight; y++) {
@@ -145,16 +145,17 @@ namespace A_Star {
     int i = 0;
     while (!listNotTestedNodes.empty() && nodeCurrent != nodeEnd)// Find absolutely shortest path // && nodeCurrent != nodeEnd)
     {
-      i++;
       if (i > numCellsToCheck) {
         sNode *k = nodeCurrent;
         while (k != nodeStart) {
-          path.push_back({(float) k->x, (float) k->y});
+          f2 cell = {(float) k->x, (float) k->y};
+          path.emplace_back(cell);
           k = k->parent;
           if (k == nullptr) return false;
         }
         return false;
       }
+      i++;
       // Sort Untested nodes by global goal, so lowest is first
       listNotTestedNodes.sort([](const sNode *lhs, const sNode *rhs) { return lhs->fGlobalGoal < rhs->fGlobalGoal; });
 
@@ -208,24 +209,8 @@ namespace A_Star {
     return true;
   }
 
-  bool Draw(Component::Camera &camera) {
+  bool Draw(entt::registry &zone, Component::Camera &camera) {
 
-    // Draw Connections First - lines from this nodes position to its
-    // connected neighbour node positions
-    //    Fill(0, 0, camera.screen.w, camera.screen.h, L' ');
-    //    for (int x = 0; x < nMapWidth; x++)
-    //      for (int y = 0; y < nMapHeight; y++) {
-    //        for (auto n: nodes[y * nMapWidth + x].vecNeighbours) {
-    //          SDL_RenderDrawLineF(
-    //              Graphics::renderer,
-    //              (x * nNodeSize + nNodeSize / 2) - camera.screen.x,
-    //              (y * nNodeSize + nNodeSize / 2) - camera.screen.y,
-    //              (n->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
-    //              (n->y * nNodeSize + nNodeSize / 2) - camera.screen.y);
-    //        }
-    //      }
-
-    // Draw Nodes on top
     if (Debug::settings[Debug::Settings::showPathing]) {
       for (int x = 0; x < nMapWidth; x++)
         for (int y = 0; y < nMapHeight; y++) {
@@ -254,25 +239,40 @@ namespace A_Star {
           }
         }
 
-      // Draw Path by starting ath the end, and following the parent node trail
-      // back to the start - the start node will not have a parent path to follow
-      if (nodeEnd != nullptr) {
-        sNode *p = nodeEnd;
-        while (p->parent != nullptr) {
-          SDL_SetRenderDrawColor(Graphics::renderer, 0, 125, 125, 255);
-          SDL_RenderDrawLineF(
-              Graphics::renderer,
-              (p->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
-              (p->y * nNodeSize + nNodeSize / 2) - camera.screen.y,
-              (p->parent->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
-              (p->parent->y * nNodeSize + nNodeSize / 2) - camera.screen.y);
-
-          // Set next node to this node's parent
-          p = p->parent;
+      auto view = zone.view<Component::Pathing>();
+      for (auto entity: view) {
+        auto &pathing = view.get<Component::Pathing>(entity).path;
+        if (pathing.size() > 2) {
+          for (int i = 0; i < pathing.size() - 1; ++i) {
+            SDL_SetRenderDrawColor(Graphics::renderer, 0, 125, 125, 255);
+            SDL_RenderDrawLineF(
+                Graphics::renderer,
+                (pathing[i].x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+                (pathing[i].y * nNodeSize + nNodeSize / 2) - camera.screen.y,
+                (pathing[i + 1].x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+                (pathing[i + 1].y * nNodeSize + nNodeSize / 2) - camera.screen.y);
+          }
         }
       }
-    }
 
+      // Draw Path by starting ath the end, and following the parent node trail
+      // back to the start - the start node will not have a parent path to follow
+      //      if (nodeEnd != nullptr) {
+      //        sNode *p = nodeEnd;
+      //        while (p->parent != nullptr) {
+      //          SDL_SetRenderDrawColor(Graphics::renderer, 0, 125, 125, 255);
+      //          SDL_RenderDrawLineF(
+      //              Graphics::renderer,
+      //              (p->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+      //              (p->y * nNodeSize + nNodeSize / 2) - camera.screen.y,
+      //              (p->parent->x * nNodeSize + nNodeSize / 2) - camera.screen.x,
+      //              (p->parent->y * nNodeSize + nNodeSize / 2) - camera.screen.y);
+      //
+      //          // Set next node to this node's parent
+      //          p = p->parent;
+      //        }
+      //      }
+    }
     return true;
   }
 
@@ -280,14 +280,14 @@ namespace A_Star {
     auto pathing = zone.emplace_or_replace<Component::Pathing>(entity_ID);
     A_Star::Solve_AStar(entityPosition, targetPosition, pathing.path);
 
-    if (pathing.path.empty()) {
+    if (pathing.path.empty() || pathing.path.size() <= 1) {
       Utilities::Log("In target Node, moving directly");
       return {targetPosition.x, targetPosition.y};
     }
+    //    int cell = 1;
+    //    if (pathing.path.size() > 1)
 
-    int cell = 1;
-    if (pathing.path.size() > 1)
-      cell = 2;
+    int cell = 2;
 
     float x = (pathing.path[pathing.path.size() - cell].x * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);
     float y = (pathing.path[pathing.path.size() - cell].y * A_Star::nNodeSize) + (A_Star::nNodeSize / 2.0f);

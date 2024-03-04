@@ -12,8 +12,16 @@ namespace db {
     std::string bodyPath = "";
   };
 
-  std::string Append_Quotes(std::string &string) {
+  std::string Append_Quotes(const std::string &string) {
     return "'" + string + "'";
+  }
+
+  std::string Append_Quotes(const int &num) {
+    return "'" + std::to_string(num) + "'";
+  }
+
+  std::string Append_Quotes(const float &num) {
+    return "'" + std::to_string(num) + "'";
   }
 
   std::string Convert_Char(std::string column, const unsigned char *e) {

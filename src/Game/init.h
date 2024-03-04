@@ -22,10 +22,10 @@
 #include "menu.h"
 #include "spells.h"
 #include "squad_control.h"
+#include "ui_debug.h"
 #include "ui_frames.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
-
 
 namespace Init {
 
@@ -65,6 +65,7 @@ namespace Init {
   void Init_Data() {
     Graphics::Load_Textures();
     UI_Info::Update_Position();
+    UI_Debug::Update_Position();
     Icons::Load();
     UI_Spellbook::Init_UI();
     Action_Bar::Create_Action_Bar();

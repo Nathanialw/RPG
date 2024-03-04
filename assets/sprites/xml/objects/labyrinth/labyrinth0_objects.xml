@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:546f1dde81a4fbcb5f0610d352ac9c79:329e9e3c199e53e17627101977a5f211:fa306cc8cf98860ebbce371273b9a2a8$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="labyrinth0_objects.png" width="10949" height="256">
+    <sprite n="Altar1_1" x="4792" y="156" w="179" h="94"/>
+    <sprite n="Altar1_2" x="4870" y="1" w="98" h="151"/>
+    <sprite n="Altar1_3" x="5853" y="1" w="171" h="145"/>
+    <sprite n="Altar1_4" x="6026" y="1" w="171" h="145"/>
+    <sprite n="Bag1_1" x="9768" y="65" w="44" h="47"/>
+    <sprite n="Bag1_2" x="9744" y="178" w="38" h="56"/>
+    <sprite n="Bag1_3" x="9888" y="171" w="44" h="54"/>
+    <sprite n="Bag1_4" x="9870" y="1" w="37" h="55"/>
+    <sprite n="Bag1_5" x="9400" y="67" w="41" h="49"/>
+    <sprite n="Bag1_6" x="9607" y="66" w="41" h="48"/>
+    <sprite n="Bag1_7" x="9307" y="194" w="40" h="56"/>
+    <sprite n="Bag1_8" x="9827" y="1" w="41" h="55"/>
+    <sprite n="Bag2_1" x="705" y="198" w="41" h="57"/>
+    <sprite n="Bag2_2" x="8933" y="81" w="56" h="38"/>
+    <sprite n="Bag2_3" x="10289" y="95" w="42" h="45"/>
+    <sprite n="Bag2_4" x="8872" y="81" w="59" h="38"/>
+    <sprite n="Bag2_5" x="8880" y="202" w="56" h="52"/>
+    <sprite n="Bag2_6" x="8727" y="202" w="57" h="53"/>
+    <sprite n="Bag2_7" x="10280" y="48" w="54" h="45"/>
+    <sprite n="Bag2_8" x="10279" y="1" w="58" h="45"/>
+    <sprite n="Barrel1_1" x="9508" y="1" w="51" h="64"/>
+    <sprite n="Barrel1_2" x="9454" y="1" w="52" h="64"/>
+    <sprite n="Barrel1_3" x="2835" y="185" w="51" h="65"/>
+    <sprite n="Barrel1_4" x="3038" y="184" w="51" h="65"/>
+    <sprite n="Barrel2_1" x="9201" y="120" w="62" h="73"/>
+    <sprite n="Barrel2_2" x="9177" y="1" w="62" h="73"/>
+    <sprite n="Barrel2_3" x="9241" y="1" w="62" h="73"/>
+    <sprite n="Barrel2_4" x="9265" y="119" w="62" h="73"/>
+    <sprite n="Barrel3" x="9536" y="183" w="55" h="63"/>
+    <sprite n="Barrel3_1" x="3472" y="181" w="58" h="74"/>
+    <sprite n="Barrel3_2" x="201" y="199" w="71" h="56"/>
+    <sprite n="Barrel3_3" x="2888" y="184" w="79" h="71"/>
+    <sprite n="Barrel3_4" x="9305" y="1" w="79" h="72"/>
+    <sprite n="Barrel5_1" x="9089" y="201" w="45" h="54"/>
+    <sprite n="Barrel5_2" x="8786" y="202" w="45" h="53"/>
+    <sprite n="Barrel5_3" x="9858" y="58" w="45" h="54"/>
+    <sprite n="Barrel5_4" x="8833" y="202" w="45" h="53"/>
+    <sprite n="Barrel6_1" x="2029" y="194" w="49" h="61"/>
+    <sprite n="Barrel6_2" x="2080" y="194" w="49" h="61"/>
+    <sprite n="Barrel6_3" x="2131" y="194" w="49" h="61"/>
+    <sprite n="Barrel6_4" x="2182" y="194" w="49" h="61"/>
+    <sprite n="Barrel7_1" x="9698" y="179" w="44" h="62"/>
+    <sprite n="Barrel7_2" x="10309" y="142" w="62" h="44"/>
+    <sprite n="Barrel7_3" x="1451" y="197" w="65" h="58"/>
+    <sprite n="Barrel7_4" x="1518" y="197" w="65" h="58"/>
+    <sprite n="BoneStack1_1" x="8522" y="219" w="35" h="36"/>
+    <sprite n="BoneStack1_2" x="10816" y="173" w="37" h="41"/>
+    <sprite n="BoneStack1_3" x="10055" y="217" w="36" h="38"/>
+    <sprite n="BoneStack1_4" x="8446" y="219" w="36" h="36"/>
+    <sprite n="BoneStack1_5" x="10850" y="1" w="42" h="41"/>
+    <sprite n="BoneStack1_6" x="8401" y="219" w="43" h="36"/>
+    <sprite n="BoneStack1_7" x="10894" y="1" w="42" h="41"/>
+    <sprite n="BoneStack1_8" x="8991" y="81" w="43" h="38"/>
+    <sprite n="BoneStack2_1" x="10820" y="130" w="34" h="41"/>
+    <sprite n="BoneStack2_2" x="10625" y="1" w="28" h="44"/>
+    <sprite n="BoneStack2_3" x="10915" y="86" w="33" h="37"/>
+    <sprite n="BoneStack2_4" x="10891" y="169" w="31" h="37"/>
+    <sprite n="BoneStack2_5" x="10591" y="1" w="32" h="44"/>
+    <sprite n="BoneStack2_6" x="8770" y="81" w="36" h="39"/>
+    <sprite n="BoneStack2_7" x="10855" y="173" w="34" h="40"/>
+    <sprite n="BoneStack2_8" x="10894" y="125" w="31" h="37"/>
+    <sprite n="BoneStack3_1" x="9164" y="80" w="39" h="38"/>
+    <sprite n="BoneStack3_2" x="10843" y="87" w="33" h="41"/>
+    <sprite n="BoneStack3_3" x="10014" y="217" w="39" h="38"/>
+    <sprite n="BoneStack3_4" x="10890" y="215" w="33" h="40"/>
+    <sprite n="BoneStack3_5" x="8808" y="81" w="31" h="39"/>
+    <sprite n="BoneStack3_6" x="8484" y="219" w="36" h="36"/>
+    <sprite n="BoneStack3_7" x="10856" y="130" w="36" h="37"/>
+    <sprite n="BoneStack3_8" x="8841" y="81" w="29" h="39"/>
+    <sprite n="Brazier1_1" x="8594" y="1" w="51" h="89"/>
+    <sprite n="Brazier1_2" x="8634" y="124" w="51" h="89"/>
+    <sprite n="Casket1_1" x="4238" y="167" w="155" h="80"/>
+    <sprite n="Casket1_2" x="7847" y="1" w="76" h="135"/>
+    <sprite n="Casket1_3" x="7925" y="1" w="154" h="134"/>
+    <sprite n="Casket1_4" x="7691" y="1" w="154" h="135"/>
+    <sprite n="Chest1_1" x="1" y="209" w="59" h="46"/>
+    <sprite n="Chest1_2" x="9744" y="114" w="41" h="62"/>
+    <sprite n="Chest1_3" x="62" y="209" w="59" h="46"/>
+    <sprite n="Chest1_4" x="9785" y="1" w="40" h="62"/>
+    <sprite n="Chest1_5" x="9614" y="116" w="63" h="62"/>
+    <sprite n="Chest1_6" x="9670" y="1" w="63" h="62"/>
+    <sprite n="Chest1_7" x="9633" y="180" w="63" h="62"/>
+    <sprite n="Chest1_8" x="9679" y="115" w="63" h="62"/>
+    <sprite n="Chest2_1" x="6740" y="143" w="47" h="104"/>
+    <sprite n="Chest2_2" x="9784" y="178" w="102" h="55"/>
+    <sprite n="Chest2_3" x="6858" y="143" w="45" h="103"/>
+    <sprite n="Chest2_4" x="8985" y="201" w="102" h="54"/>
+    <sprite n="Chest2_5" x="7177" y="143" w="92" h="91"/>
+    <sprite n="Chest2_6" x="4479" y="163" w="92" h="92"/>
+    <sprite n="Chest2_7" x="4573" y="163" w="92" h="92"/>
+    <sprite n="Chest2_8" x="7083" y="143" w="92" h="92"/>
+    <sprite n="Chest3_1" x="9155" y="120" w="44" h="76"/>
+    <sprite n="Chest3_2" x="9443" y="67" w="80" h="48"/>
+    <sprite n="Chest3_3" x="9108" y="120" w="45" h="76"/>
+    <sprite n="Chest3_4" x="9525" y="67" w="80" h="48"/>
+    <sprite n="Chest3_5" x="3249" y="182" w="76" h="73"/>
+    <sprite n="Chest3_6" x="3091" y="182" w="77" h="73"/>
+    <sprite n="Chest3_7" x="3170" y="182" w="77" h="73"/>
+    <sprite n="Chest3_8" x="3327" y="182" w="76" h="73"/>
+    <sprite n="Chest4_1" x="2757" y="185" w="38" h="68"/>
+    <sprite n="Chest4_2" x="10864" y="44" w="68" h="40"/>
+    <sprite n="Chest4_3" x="2797" y="185" w="36" h="68"/>
+    <sprite n="Chest4_4" x="8656" y="215" w="69" h="40"/>
+    <sprite n="Chest4_5" x="9398" y="118" w="66" h="64"/>
+    <sprite n="Chest4_6" x="9561" y="1" w="67" h="63"/>
+    <sprite n="Chest4_7" x="9329" y="119" w="67" h="64"/>
+    <sprite n="Chest4_8" x="9349" y="185" w="67" h="64"/>
+    <sprite n="Chest_145" x="123" y="199" w="76" h="56"/>
+    <sprite n="Chest_146" x="3532" y="181" w="50" h="74"/>
+    <sprite n="Chest_147" x="530" y="198" w="76" h="57"/>
+    <sprite n="Chest_148" x="3584" y="181" w="50" h="74"/>
+    <sprite n="Chest_149" x="8858" y="122" w="82" h="78"/>
+    <sprite n="Chest_150" x="8942" y="121" w="81" h="78"/>
+    <sprite n="Chest_151" x="8923" y="1" w="82" h="78"/>
+    <sprite n="Chest_152" x="9025" y="121" w="81" h="78"/>
+    <sprite n="Chest_153" x="1777" y="195" w="82" h="60"/>
+    <sprite n="Chest_154" x="7032" y="143" w="49" h="93"/>
+    <sprite n="Chest_155" x="2673" y="185" w="82" h="69"/>
+    <sprite n="Chest_156" x="6980" y="143" w="50" h="93"/>
+    <sprite n="Chest_157" x="3841" y="169" w="81" h="86"/>
+    <sprite n="Chest_158" x="3757" y="169" w="82" h="86"/>
+    <sprite n="Chest_159" x="7671" y="141" w="80" h="91"/>
+    <sprite n="Chest_160" x="4395" y="165" w="82" h="90"/>
+    <sprite n="Chest_161" x="4152" y="167" w="84" h="87"/>
+    <sprite n="Chest_162" x="4734" y="156" w="56" h="98"/>
+    <sprite n="Chest_163" x="1365" y="197" w="84" h="58"/>
+    <sprite n="Chest_164" x="4667" y="156" w="65" h="99"/>
+    <sprite n="Chest_165" x="5990" y="148" w="87" h="106"/>
+    <sprite n="Chest_166" x="5893" y="148" w="95" h="106"/>
+    <sprite n="Chest_167" x="4064" y="169" w="86" h="81"/>
+    <sprite n="Chest_168" x="3968" y="169" w="94" h="81"/>
+    <sprite n="Coffer1_1" x="5651" y="149" w="119" h="106"/>
+    <sprite n="Coffer1_2" x="8081" y="1" w="87" h="129"/>
+    <sprite n="Coffer1_3" x="5772" y="149" w="119" h="106"/>
+    <sprite n="Coffer1_4" x="8170" y="1" w="87" h="129"/>
+    <sprite n="Coffer1_5" x="7423" y="1" w="132" h="138"/>
+    <sprite n="Coffer1_6" x="6995" y="1" w="132" h="140"/>
+    <sprite n="Coffer1_7" x="7129" y="1" w="132" h="140"/>
+    <sprite n="Coffer1_8" x="7557" y="1" w="132" h="138"/>
+    <sprite n="Crate1_1" x="9814" y="65" w="42" h="47"/>
+    <sprite n="Crate1_2" x="10235" y="1" w="42" h="47"/>
+    <sprite n="Crate1_3" x="9787" y="114" w="53" h="55"/>
+    <sprite n="Crate1_4" x="9842" y="114" w="53" h="55"/>
+    <sprite n="Crate5_1" x="10231" y="54" w="47" h="51"/>
+    <sprite n="Crate5_2" x="8938" y="202" w="45" h="52"/>
+    <sprite n="Crate5_3" x="1905" y="194" w="60" h="61"/>
+    <sprite n="Crate5_4" x="1967" y="194" w="60" h="61"/>
+    <sprite n="Crate8_1" x="9650" y="66" w="60" h="47"/>
+    <sprite n="Crate8_2" x="1861" y="195" w="42" h="60"/>
+    <sprite n="Crate8_3" x="9418" y="184" w="66" h="64"/>
+    <sprite n="Crate8_4" x="9386" y="1" w="66" h="64"/>
+    <sprite n="EbonSkulls1_1" x="8536" y="92" w="39" h="31"/>
+    <sprite n="EbonSkulls1_2" x="10878" y="86" w="35" h="37"/>
+    <sprite n="EbonSkulls1_3" x="8577" y="92" w="38" h="30"/>
+    <sprite n="EbonSkulls1_4" x="8423" y="92" w="35" h="34"/>
+    <sprite n="EbonSkulls1_5" x="8380" y="92" w="41" h="34"/>
+    <sprite n="EbonSkulls1_6" x="8337" y="92" w="41" h="35"/>
+    <sprite n="EbonSkulls1_7" x="9036" y="80" w="42" h="38"/>
+    <sprite n="EbonSkulls1_8" x="10846" y="216" w="42" h="37"/>
+    <sprite n="Ore_1a" x="10561" y="231" w="32" h="24" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="Ore_1b" x="9897" y="114" w="64" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_1c" x="9205" y="76" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_1d" x="274" y="199" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_1e" x="10333" y="95" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_2a" x="9954" y="220" w="26" h="26" oX="4" oY="5" oW="32" oH="32"/>
+    <sprite n="Ore_2b" x="9905" y="58" w="64" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_2c" x="9270" y="76" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_2d" x="338" y="199" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_2e" x="10336" y="48" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_3a" x="10309" y="188" w="30" h="22" oX="2" oY="8" oW="32" oH="32"/>
+    <sprite n="Ore_3b" x="9909" y="1" w="64" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_3c" x="9335" y="75" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_3d" x="402" y="199" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_3e" x="10339" y="1" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_4a" x="10595" y="231" w="28" h="24" oX="3" oY="6" oW="32" oH="32"/>
+    <sprite n="Ore_4b" x="9934" y="167" w="64" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_4c" x="10093" y="213" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_4d" x="466" y="199" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_4e" x="10369" y="188" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_5a" x="10495" y="232" w="31" h="23" oX="1" oY="7" oW="32" oH="32"/>
+    <sprite n="Ore_5b" x="9971" y="54" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_5c" x="10158" y="213" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_5d" x="789" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_5e" x="10373" y="141" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_6a" x="9888" y="227" w="30" h="27" oX="2" oY="4" oW="32" oH="32"/>
+    <sprite n="Ore_6b" x="9975" y="1" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_6c" x="10223" y="213" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_6d" x="853" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_6e" x="10396" y="94" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_7a" x="6935" y="238" w="30" h="16" oX="2" oY="10" oW="32" oH="32"/>
+    <sprite n="Ore_7b" x="10000" y="164" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_7c" x="10655" y="1" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_7d" x="917" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_7e" x="10399" y="47" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_8a" x="7671" y="234" w="30" h="20" oX="2" oY="10" oW="32" oH="32"/>
+    <sprite n="Ore_8b" x="10029" y="107" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_8c" x="10621" y="185" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_8d" x="981" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_8e" x="10402" y="1" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_9a" x="10528" y="232" w="31" h="23" oX="1" oY="7" oW="32" oH="32"/>
+    <sprite n="Ore_9b" x="10036" y="54" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_9c" x="10625" y="139" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_9d" x="1045" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_9e" x="10432" y="187" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_10a" x="8559" y="219" w="31" h="29" oX="1" oY="3" oW="32" oH="32"/>
+    <sprite n="Ore_10b" x="10040" y="1" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_10c" x="10648" y="92" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_10d" x="1109" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_10e" x="10436" y="140" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_11a" x="6905" y="238" w="28" h="17" oX="2" oY="9" oW="32" oH="32"/>
+    <sprite n="Ore_11b" x="10065" y="160" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_11c" x="10669" y="44" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_11d" x="1173" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_11e" x="10459" y="93" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_12a" x="9920" y="227" w="32" h="26" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="Ore_12b" x="10094" y="107" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_12c" x="10720" y="1" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_12d" x="1237" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_12e" x="10462" y="47" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_13a" x="8737" y="92" w="31" h="27" oX="1" oY="5" oW="32" oH="32"/>
+    <sprite n="Ore_13b" x="10101" y="54" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_13c" x="10686" y="182" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_13d" x="1301" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_13e" x="10465" y="1" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_14a" x="8592" y="219" w="30" h="29" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="Ore_14b" x="10105" y="1" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_14c" x="10690" y="135" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_14d" x="1585" y="197" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_14e" x="10495" y="186" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_15a" x="8647" y="92" w="30" h="28" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="Ore_15b" x="10130" y="160" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_15c" x="10713" y="87" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_15d" x="1649" y="197" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_15e" x="10499" y="139" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_16a" x="8679" y="92" w="28" h="28" oX="3" oY="4" oW="32" oH="32"/>
+    <sprite n="Ore_16b" x="10159" y="107" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_16c" x="10734" y="44" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_16d" x="1713" y="197" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_16e" x="10522" y="93" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_17a" x="8709" y="92" w="26" h="28" oX="3" oY="4" oW="32" oH="32"/>
+    <sprite n="Ore_17b" x="10166" y="54" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_17c" x="10785" y="1" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_17d" x="2233" y="194" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_17e" x="10525" y="47" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_18a" x="9982" y="220" w="30" h="25" oX="2" oY="6" oW="32" oH="32"/>
+    <sprite n="Ore_18b" x="10170" y="1" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_18c" x="10751" y="178" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_18d" x="2297" y="194" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_18e" x="10528" y="1" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_19a" x="8624" y="219" w="30" h="29" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="Ore_19b" x="10195" y="160" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_19c" x="10755" y="130" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_19d" x="2361" y="194" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_19e" x="10558" y="185" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_20a" x="8617" y="92" w="28" h="30" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="Ore_20b" x="10224" y="107" w="63" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_20c" x="10778" y="87" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_20d" x="9136" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_20e" x="10562" y="139" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Ore_21a" x="8460" y="92" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="Ore_21b" x="9963" y="111" w="64" h="51" oX="0" oY="11" oW="64" oH="64"/>
+    <sprite n="Ore_21c" x="10799" y="44" w="63" h="41" oX="1" oY="15" oW="64" oH="64"/>
+    <sprite n="Ore_21d" x="9200" y="198" w="62" h="56" oX="1" oY="4" oW="64" oH="64"/>
+    <sprite n="Ore_21e" x="10585" y="93" w="61" h="44" oX="3" oY="13" oW="64" oH="64"/>
+    <sprite n="Stalagmite_1" x="8264" y="129" w="60" h="126" oX="1" oY="2" oW="64" oH="128"/>
+    <sprite n="Stalagmite_2" x="7753" y="138" w="88" h="116" oX="0" oY="9" oW="96" oH="128"/>
+    <sprite n="Stalagmite_3" x="9712" y="65" w="54" h="47" oX="9" oY="12" oW="64" oH="64"/>
+    <sprite n="Stalagmite_4" x="3924" y="169" w="42" h="82" oX="10" oY="14" oW="64" oH="96"/>
+    <sprite n="Stalagmite_5" x="10260" y="160" w="47" h="50" oX="8" oY="14" oW="64" oH="64"/>
+    <sprite n="Stalagmite_6" x="9735" y="1" w="48" h="62" oX="15" oY="0" oW="64" oH="64"/>
+    <sprite n="Stalagmite_7" x="748" y="198" w="39" h="57" oX="12" oY="5" oW="64" oH="64"/>
+    <sprite n="Stalagmite_8" x="9264" y="195" w="41" h="56" oX="14" oY="7" oW="64" oH="64"/>
+    <sprite n="Stalagmite_9" x="3609" y="1" w="123" h="177" oX="5" oY="7" oW="128" oH="192"/>
+    <sprite n="Stalagmite_10" x="1724" y="1" w="96" h="192"/>
+    <sprite n="Stalagmite_11" x="1822" y="1" w="80" h="192"/>
+    <sprite n="Stool1_1" x="8493" y="92" w="41" h="31"/>
+    <sprite n="Stool1_2" x="10816" y="216" w="28" h="38"/>
+    <sprite n="Stool1_3" x="9080" y="80" w="40" h="38"/>
+    <sprite n="Stool1_4" x="9122" y="80" w="40" h="38"/>
+    <sprite n="Stool2_1" x="657" y="198" w="46" h="57"/>
+    <sprite n="Stool2_2" x="9630" y="1" w="38" h="63"/>
+    <sprite n="Stool2_3" x="608" y="198" w="47" h="57"/>
+    <sprite n="Stool2_4" x="9593" y="182" w="38" h="63"/>
+    <sprite n="Stool2_5" x="9516" y="117" w="47" h="64"/>
+    <sprite n="Stool2_6" x="9565" y="117" w="47" h="63"/>
+    <sprite n="Stool2_7" x="9466" y="117" w="48" h="64"/>
+    <sprite n="Stool2_8" x="9486" y="183" w="48" h="64"/>
+    <sprite n="Stool3_1" x="10329" y="212" w="38" h="43"/>
+    <sprite n="Stool3_2" x="10588" y="47" w="39" h="44"/>
+    <sprite n="Stool3_3" x="10288" y="212" w="39" h="43"/>
+    <sprite n="Stool3_4" x="10629" y="47" w="38" h="43"/>
+    <sprite n="Table1_1" x="8687" y="122" w="169" h="78"/>
+    <sprite n="Table1_2" x="5109" y="1" w="68" h="149"/>
+    <sprite n="Table1_3" x="8753" y="1" w="168" h="78"/>
+    <sprite n="Table1_4" x="4970" y="1" w="69" h="150"/>
+    <sprite n="Table1_5" x="6199" y="1" w="158" h="140"/>
+    <sprite n="Table1_6" x="6359" y="1" w="157" h="140"/>
+    <sprite n="Table1_7" x="6518" y="1" w="157" h="140"/>
+    <sprite n="Table1_8" x="6677" y="1" w="157" h="140"/>
+    <sprite n="Table2_1" x="9007" y="1" w="168" h="77"/>
+    <sprite n="Table2_2" x="5041" y="1" w="66" h="150"/>
+    <sprite n="Table2_3" x="6836" y="1" w="157" h="140"/>
+    <sprite n="Table2_4" x="7263" y="1" w="158" h="139"/>
+    <sprite n="Table3_1" x="6905" y="143" w="73" h="93"/>
+    <sprite n="Table3_2" x="2490" y="188" w="113" h="66"/>
+    <sprite n="Table3_3" x="4973" y="153" w="126" h="101"/>
+    <sprite n="Table3_4" x="5101" y="153" w="125" h="100"/>
+    <sprite n="Table4_1" x="7604" y="141" w="65" h="113"/>
+    <sprite n="Table4_2" x="3636" y="180" w="119" h="75"/>
+    <sprite n="Table4_3" x="7271" y="142" w="122" h="113"/>
+    <sprite n="Table4_4" x="7395" y="142" w="120" h="113"/>
+    <sprite n="Table6_1" x="1" y="1" w="90" h="206"/>
+    <sprite n="Table6_2" x="8337" y="1" w="255" h="89"/>
+    <sprite n="Table6_3" x="1904" y="1" w="236" h="191"/>
+    <sprite n="Table6_4" x="2142" y="1" w="236" h="191"/>
+    <sprite n="Table7_1" x="6079" y="148" w="205" h="104"/>
+    <sprite n="Table7_2" x="4359" y="1" w="107" h="162"/>
+    <sprite n="Table7_3" x="3942" y="1" w="205" h="166"/>
+    <sprite n="Table7_4" x="3734" y="1" w="206" h="166"/>
+    <sprite n="Table10_1" x="2605" y="188" w="66" h="66"/>
+    <sprite n="Table10_2" x="2425" y="188" w="63" h="67"/>
+    <sprite n="Table10_3" x="2969" y="184" w="67" h="71"/>
+    <sprite n="Table10_4" x="3405" y="181" w="65" h="74"/>
+    <sprite n="Tomb2_1" x="7932" y="137" w="177" h="118"/>
+    <sprite n="Tomb2_2" x="3245" y="1" w="90" h="179"/>
+    <sprite n="Tomb2_3" x="3337" y="1" w="178" h="178"/>
+    <sprite n="Tomb2_4" x="3066" y="1" w="177" h="179"/>
+    <sprite n="TorchLamp1_1" x="8647" y="1" w="51" h="89"/>
+    <sprite n="TorchLamp1_2" x="8700" y="1" w="51" h="89"/>
+    <sprite n="TortureDevice1_1" x="8401" y="128" w="231" h="89"/>
+    <sprite n="TortureDevice1_2" x="3517" y="1" w="90" h="178"/>
+    <sprite n="TortureDevice1_3" x="5415" y="150" w="234" h="104"/>
+    <sprite n="TortureDevice1_4" x="1247" y="1" w="91" h="195"/>
+    <sprite n="TortureDevice1_5" x="4468" y="1" w="188" h="160"/>
+    <sprite n="TortureDevice1_6" x="4149" y="1" w="208" h="164"/>
+    <sprite n="TortureDevice1_7" x="4658" y="1" w="210" h="153"/>
+    <sprite n="TortureDevice1_8" x="2876" y="1" w="188" h="181"/>
+    <sprite n="TortureDevice2_1" x="5228" y="150" w="68" h="105"/>
+    <sprite n="TortureDevice2_2" x="5358" y="150" w="55" h="105"/>
+    <sprite n="TortureDevice2_3" x="6789" y="143" w="67" h="103"/>
+    <sprite n="TortureDevice2_4" x="5298" y="150" w="58" h="105"/>
+    <sprite n="TortureDevice2_5" x="6529" y="143" w="69" h="108"/>
+    <sprite n="TortureDevice2_6" x="6600" y="143" w="68" h="108"/>
+    <sprite n="TortureDevice2_7" x="6377" y="143" w="68" h="109"/>
+    <sprite n="TortureDevice2_8" x="6670" y="143" w="68" h="108"/>
+    <sprite n="TortureDevice3_1" x="8326" y="129" w="73" h="125"/>
+    <sprite n="TortureDevice3_2" x="6447" y="143" w="80" h="108"/>
+    <sprite n="TortureDevice3_3" x="8189" y="132" w="73" h="115"/>
+    <sprite n="TortureDevice3_4" x="7843" y="138" w="87" h="115"/>
+    <sprite n="TortureDevice3_5" x="8111" y="132" w="76" h="120"/>
+    <sprite n="TortureDevice3_6" x="7517" y="141" w="85" h="113"/>
+    <sprite n="TortureDevice3_7" x="6286" y="143" w="89" h="111"/>
+    <sprite n="TortureDevice3_8" x="8259" y="1" w="76" h="126"/>
+</TextureAtlas>

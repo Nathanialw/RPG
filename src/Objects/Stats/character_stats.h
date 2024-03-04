@@ -194,7 +194,7 @@ namespace Character_Stats {
       float charWidth = (10.0f / camera.scale.x);
 
       for (auto &stat: Item_Component::statData) {
-        Debug::settings[Debug::Settings::fontRenderFC] ? Render_Stat(statBox, charHeight, charWidth, currentRow, black, stat) : Render_Stat_FC(camera, statBox, charHeight, charWidth, black, stat);
+        Render_Stat_FC(camera, statBox, charHeight, charWidth, black, stat);
       }
     }
   }

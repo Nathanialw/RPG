@@ -14,6 +14,7 @@
 #include "rendering_components.h"
 #include "timer.h"
 #include "tooltips.h"
+#include "ui_debug.h"
 #include "ui_resources.h"
 #include "utilities.h"
 #include <SDL2/SDL.h>
@@ -414,7 +415,7 @@ namespace Rendering {
       Render_Map(zone, state, camera);
       Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
                                                  //            RenderLine(zone, camera);
-      A_Star::Draw(camera);
+      A_Star::Draw(zone, camera);
       Fog_Of_War::Render(camera);
       Items::Show_Ground_Items(zone, camera);
       Items::Unit_Name_On_Mouseover(zone, camera);
@@ -428,6 +429,7 @@ namespace Rendering {
       Items::Update_Mouse_Slot_Position(zone, state, Mouse::mouseData.mouseItem, Mouse::mouseData.itemCurrentlyHeld, Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse);
       Damage_Text::Show_Damage(zone, camera);
       UI_Spellbook::Draw_Spellbook(camera);
+      UI_Debug::Draw(zone, camera);
       UI_Info::Draw_Attributes(camera);
       Pause::Pause_Control(camera);
       if (!Menu::Render_Menu(zone, state, camera)) {

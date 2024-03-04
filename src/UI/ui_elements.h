@@ -39,6 +39,54 @@ namespace UI {
     return rect;
   }
 
+  SDL_FRect Top_Rect(SDL_Rect clip) {
+    int w;
+    int h;
+    SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
+    SDL_FRect rect;
+    rect.x = (w / 2.0f) - (clip.w / 2.0f);
+    rect.y = (0.0f);
+    rect.w = clip.w;
+    rect.h = clip.h;
+    return rect;
+  }
+
+  SDL_FRect Left_Rect(SDL_Rect clip) {
+    int w;
+    int h;
+    SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
+    SDL_FRect rect;
+    rect.x = 0.0f;
+    rect.y = (h / 2.0f) - (clip.h / 2.0f);
+    rect.w = clip.w;
+    rect.h = clip.h;
+    return rect;
+  }
+
+  SDL_FRect Right_Rect(SDL_Rect clip) {
+    int w;
+    int h;
+    SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
+    SDL_FRect rect;
+    rect.x = w - clip.w;
+    rect.y = (h / 2.0f) - (clip.h / 2.0f);
+    rect.w = clip.w;
+    rect.h = clip.h;
+    return rect;
+  }
+
+  SDL_FRect Bottom_Rect(SDL_Rect clip) {
+    int w;
+    int h;
+    SDL_GetRendererOutputSize(Graphics::renderer, &w, &h);
+    SDL_FRect rect;
+    rect.x = (w / 2.0f) - (clip.w / 2.0f);
+    rect.y = h - clip.h;
+    rect.w = clip.w;
+    rect.h = clip.h;
+    return rect;
+  }
+
   SDL_FRect Center_Rect_In_frame(SDL_FRect rect, SDL_FRect parentRect) {
     rect.x = parentRect.x + (parentRect.w / 2.0f) - (rect.w / 2.0f);
     rect.y = parentRect.y + (parentRect.h / 2.0f) - (rect.h / 2.0f);

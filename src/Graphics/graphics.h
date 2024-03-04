@@ -127,6 +127,7 @@ namespace Graphics {
   SDL_Texture *itemBorderEite;
   SDL_Texture *armorSpriteSheet;
   SDL_Texture *spellbook;
+  SDL_Texture *debug_window;
 
   SDL_Texture *tooltipBackground;
   SDL_Texture *checkmark;
@@ -158,6 +159,10 @@ namespace Graphics {
 
   void Render_FRect(SDL_Texture *texture, SDL_FRect *targetRect) {
     SDL_RenderCopyF(renderer, texture, nullptr, targetRect);
+  }
+
+  void Render_FRect(SDL_FRect targetRect) {
+    SDL_RenderDrawRectF(renderer, &targetRect);
   }
 
   Surface_Data Load_Text_Texture(std::string text, SDL_Color fontColor) {
@@ -389,6 +394,7 @@ namespace Graphics {
     tooltipBackground = createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png");
     checkmark = createTexture("assets/sprites/UI/Inventory/29.png");
     spellbook = createTexture("assets/sprites/UI/spellbook/spellbook.png");
+    debug_window = createTexture("assets/sprites/UI/debug/debug_frame.png");
 
     default_icon = createTexture("assets/sprites/default.jpg");
   }
