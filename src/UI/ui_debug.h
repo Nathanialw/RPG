@@ -23,6 +23,19 @@ namespace UI_Debug {
     Rendering_Components::Sprite_Offset offset;
   };
 
+  struct {
+    bool colliders = false;
+    float increment = 1;
+
+    std::string table = "building_exteriors";
+
+    std::string x = "x_offset";
+    std::string collider_x = "x_collider_offset";
+
+    std::string y = "y_offset";
+    std::string collider_y = "y_collider_offset";
+  } values;
+
   void Update_Position() {
     spellbook.panelRect = UI::Left_Rect(spellbook.backgroundFrame);
     spellbook.background = Graphics::debug_window;
@@ -41,8 +54,6 @@ namespace UI_Debug {
     return {name, offset};
   }
 
-  SDL_FRect buttons[2];
-
   void Draw_Frame(Component::Camera &camera, SDL_FRect &draw, const Data &data) {
     float xSpacing = 32.0f;
     float ySpacing = 32.0f;
@@ -59,10 +70,17 @@ namespace UI_Debug {
     statBox.y += 20.0f / camera.scale.y;
     FC_DrawScaleRightColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "offsets");
     statBox.x += 60.0f / camera.scale.y;//45.0f // 325.0f //
-    FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "by 1 or 10");
+    if (values.increment == 1) {
+      FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "1");
+    } else {
+      FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "10");
+    }
     statBox.x += 110.0f / camera.scale.y;
-    FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "colliders");
-
+    if (values.colliders)
+      FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "Both");
+    else {
+      FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, color, "Sprite");
+    }
     SDL_FRect textRectF = Utilities::SDL_Rect_To_SDL_FRect(textRect);
     if (Mouse::bRect_inside_Cursor(textRectF)) {
       //      SDL_FPoint mousePoint = {Mouse::iXMouse, Mouse::iYMouse};
@@ -78,23 +96,6 @@ namespace UI_Debug {
     }
   }
 
-  float increment = 1;
-  struct {
-    bool colliders = false;
-    std::string table = "building_exteriors";
-    std::string x;
-    std::string y;
-
-    void Update() {
-      if (colliders) {
-        x = "x_collider_offset";
-        y = "y_collider_offset";
-      } else {
-        x = "x_offset";
-        y = "y_offset";
-      }
-    }
-  } values;
 
   bool Update_Values(entt::registry &zone, Component::Camera &camera) {
     auto view = zone.view<Component::Selected, Component::Name, Rendering_Components::Sprite_Offset>();
@@ -114,35 +115,49 @@ namespace UI_Debug {
       float j = 110.0f / camera.scale.x;
       SDL_FRect button;
 
-      values.Update();
-
       button = {draw.x + c, draw.y + c, b, a};//up
       if (Mouse::bRect_inside_Cursor(button)) {
-        if (!values.colliders) offset.y += increment;
-        SQLite_Insert::Update_DB(values.table, values.y, name.first, offset.y);
+        offset.y += values.increment;
+        SQLite_Insert::Update_DB(values.table, values.y, name.first, values.increment);
+        if (values.colliders) {
+          SQLite_Insert::Update_DB(values.table, values.collider_y, name.first, -values.increment);
+          Collision::Update_Offset_Y(name.first, values.increment);
+        }
         return true;
       }
       button = {draw.x + c, draw.y + f, b, a};// down
       if (Mouse::bRect_inside_Cursor(button)) {
-        if (!values.colliders) offset.y -= increment;
-        SQLite_Insert::Update_DB(values.table, values.y, name.first, offset.y);
+        offset.y += -values.increment;
+        SQLite_Insert::Update_DB(values.table, values.y, name.first, -values.increment);
+        if (values.colliders) {
+          SQLite_Insert::Update_DB(values.table, values.collider_y, name.first, values.increment);
+          Collision::Update_Offset_Y(name.first, -values.increment);
+        }
         return true;
       }
       button = {draw.x + e, draw.y + d, a, b};// left
       if (Mouse::bRect_inside_Cursor(button)) {
-        if (!values.colliders) offset.x += increment;
-        SQLite_Insert::Update_DB(values.table, values.x, name.first, offset.x);
+        offset.x += values.increment;
+        SQLite_Insert::Update_DB(values.table, values.x, name.first, values.increment);
+        if (values.colliders) {
+          SQLite_Insert::Update_DB(values.table, values.collider_x, name.first, values.increment);
+          Collision::Update_Offset_X(name.first, values.increment);
+        }
         return true;
       }
       button = {draw.x + g, draw.y + d, a, b};// right
       if (Mouse::bRect_inside_Cursor(button)) {
-        if (!values.colliders) offset.x -= increment;
-        SQLite_Insert::Update_DB(values.table, values.x, name.first, offset.x);
+        offset.x += -values.increment;
+        SQLite_Insert::Update_DB(values.table, values.x, name.first, -values.increment);
+        if (values.colliders) {
+          SQLite_Insert::Update_DB(values.table, values.collider_x, name.first, -values.increment);
+          Collision::Update_Offset_X(name.first, -values.increment);
+        }
         return true;
       }
       button = {draw.x + h, draw.y + d, j, a};//
       if (Mouse::bRect_inside_Cursor(button)) {
-        (increment == 1) ? increment = 10 : increment = 1;
+        (values.increment == 1) ? values.increment = 10 : values.increment = 1;
         return true;
       }
       button = {draw.x + i, draw.y + d, j, a};//

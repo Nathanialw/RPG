@@ -67,7 +67,7 @@ namespace Sort {
       };
     }
 
-    if (!lhs.lineSegment.empty()) {
+    else if (!lhs.lineSegment.empty()) {
       for (auto line: lhs.lineSegment) {
         g.emplace_back(ComparePointAndLine(rhs.point, line));
       }
@@ -78,7 +78,7 @@ namespace Sort {
       };
     }
 
-    if (!rhs.lineSegment.empty()) {
+    else if (!rhs.lineSegment.empty()) {
       for (auto line: rhs.lineSegment) {
         g.emplace_back(ComparePointAndLine(lhs.point, line));
       }
@@ -89,18 +89,16 @@ namespace Sort {
       };
     }
 
-    if (lhs.point.y < rhs.point.y) {
+    else if (lhs.point.y < rhs.point.y) {
       if (!lhs.inside) {
         return 1;
       } else if (rhs.inside) {
         return 1;
       }
     }
-
     return 0;
   }
 
-  float SortIt = 0;
   void Sort_Positions(entt::registry &zone) {
     //    Utilities::Log("Call Sort Function");
     zone.sort<Component::Renderable>([&](const Component::Renderable &lhs, const Component::Renderable &rhs) {

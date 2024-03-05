@@ -340,7 +340,7 @@ namespace Rendering {
       if (!Menu::Render_Menu(zone, state, camera)) {
         return false;
       }
-      Sort::RenderLines();
+      //      Sort::RenderLines();
       //Mouse
       Interface::Foreground(zone, state, camera);
       //on top of mouse
