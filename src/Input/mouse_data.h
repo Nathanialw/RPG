@@ -9,14 +9,14 @@ namespace Mouse_Struct {
     int direction;
   };
 
-  struct Mouse_Data {
+  struct {
     entt::entity mouseItem{};
     entt::entity cursor_ID{};
-    int index;
+    int index{};
     Spell_Data::Skill_Tree tree;
     Component::Icon_Type type = Component::Icon_Type::none;
     std::string name;
-    int direction;
+    int direction{};
     bool itemCurrentlyHeld = false;
   } mouseData;
 }// namespace Mouse_Struct

@@ -32,6 +32,7 @@ namespace Mouse {
 
   void Init_mouse(entt::registry &zone) {
     mouseData.cursor_ID = Graphics::Create_Icon_Entity(zone, Graphics::cursor_0, nullptr, Component::Icon_Type::none);
+    Mouse::mouseData.mouseItem = Mouse::mouseData.cursor_ID;
   }
 
   bool Set_Cursor_As_Cursor(entt::registry &zone) {

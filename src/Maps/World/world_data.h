@@ -7,7 +7,7 @@ namespace World_Data {
     entt::entity entity;
   };
 
-  const int maxObjectsPerTile = 5;
+  const int maxObjectsPerTile = 20;
 
   struct Tile {
     std::array<object, maxObjectsPerTile> objects{};

@@ -67,7 +67,7 @@ namespace Sort {
       };
     }
 
-    else if (!lhs.lineSegment.empty()) {
+    if (!lhs.lineSegment.empty()) {
       for (auto line: lhs.lineSegment) {
         g.emplace_back(ComparePointAndLine(rhs.point, line));
       }
@@ -78,7 +78,7 @@ namespace Sort {
       };
     }
 
-    else if (!rhs.lineSegment.empty()) {
+    if (!rhs.lineSegment.empty()) {
       for (auto line: rhs.lineSegment) {
         g.emplace_back(ComparePointAndLine(lhs.point, line));
       }
@@ -89,7 +89,7 @@ namespace Sort {
       };
     }
 
-    else if (lhs.point.y < rhs.point.y) {
+    if (lhs.point.y < rhs.point.y) {
       if (!lhs.inside) {
         return 1;
       } else if (rhs.inside) {
@@ -100,8 +100,14 @@ namespace Sort {
   }
 
   void Sort_Positions(entt::registry &zone) {
-    //    Utilities::Log("Call Sort Function");
+    auto view = zone.view<Component::Renderable>();
+
+    auto size = view.size();
+    Utilities::Log("number of checks" + std::to_string(size));
+    int i = 0;
     zone.sort<Component::Renderable>([&](const Component::Renderable &lhs, const Component::Renderable &rhs) {
+      Utilities::Log(i);
+      i++;
       return Sort(lhs, rhs);
     });
   }
