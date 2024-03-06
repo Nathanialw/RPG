@@ -1,6 +1,7 @@
 #pragma once
 #include "Items/items.h"
 #include "Maps/Pathing/a_star.h"
+#include "UI/Debug_Panel/ui_debug.h"
 #include "building_components.h"
 #include "create_entities.h"
 #include "game_menu.h"
@@ -10,7 +11,6 @@
 #include "interface.h"
 #include "quad_tree.h"
 #include "ui.h"
-#include "ui_debug.h"
 
 namespace Event_Handler {
 

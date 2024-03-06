@@ -116,22 +116,22 @@ namespace Mouse {
   bool FRect_inside_Cursor(SDL_FRect &rect) {
     SDL_FRect cursor = {0.0f, 0.0f, 0.0f, 0.0f};
     cursor = {iXWorld_Mouse, iYWorld_Mouse, cursorRadius, cursorRadius};
-    return Utilities::bFRect_Intersect(cursor, rect);
+    return Utilities::Rect_Intersect(cursor, rect);
   }
 
   bool FRect_inside_Screen_Cursor(SDL_FRect &rect) {
     SDL_FRect cursor = {iXMouse, iYMouse, cursorRadius, cursorRadius};
-    return Utilities::bFRect_Intersect(cursor, rect);
+    return Utilities::Rect_Intersect(cursor, rect);
   }
 
   bool bRect_inside_Cursor(SDL_FRect &rect) {
     SDL_FRect cursor = {iXMouse, iYMouse, cursorRadius, cursorRadius};
-    return Utilities::bFRect_Intersect(cursor, rect);
+    return Utilities::Rect_Intersect(cursor, rect);
   }
 
   bool bRect_inside_World_Cursor(SDL_FRect &rect) {
     SDL_FRect cursor = {iXWorld_Mouse, iYWorld_Mouse, cursorRadius, cursorRadius};
-    return Utilities::bFRect_Intersect(cursor, rect);
+    return Utilities::Rect_Intersect(cursor, rect);
   }
 
   bool Point_Inside_Cursor(float targetX, float targetY) {

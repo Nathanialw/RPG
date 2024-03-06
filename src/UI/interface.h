@@ -216,7 +216,7 @@ namespace Interface {
         //SDL_FRect debug;
 
 
-        if (Utilities::bFRect_Intersect(screen, terrain.sCollide_Box)) {// checks terrain for visibility like grass and such
+        if (Utilities::Rect_Intersect(screen, terrain.sCollide_Box)) {// checks terrain for visibility like grass and such
           for (int i = 0; i < Map::size; i++) {
             if (gridDepth == 0) {
               SDL_FRect o = terrain.sCollide_Box;
@@ -224,7 +224,7 @@ namespace Interface {
               o.y -= offset.y;
               SDL_RenderDrawRectF(Graphics::renderer, &o);
             }
-            if (Utilities::bFRect_Intersect(screen, terrain.nodes[i].sCollide_Box)) {
+            if (Utilities::Rect_Intersect(screen, terrain.nodes[i].sCollide_Box)) {
               for (int j = 0; j < Map::size; j++) {
                 if (gridDepth == 1) {
                   SDL_FRect o = terrain.nodes[i].sCollide_Box;
@@ -232,9 +232,9 @@ namespace Interface {
                   o.y -= offset.y;
                   SDL_RenderDrawRectF(Graphics::renderer, &o);
                 }
-                if (Utilities::bFRect_Intersect(screen, terrain.nodes[i].nodes[j].sCollide_Box)) {
+                if (Utilities::Rect_Intersect(screen, terrain.nodes[i].nodes[j].sCollide_Box)) {
                   for (int k = 0; k < Map::size; k++) {
-                    if (Utilities::bFRect_Intersect(screen, terrain.nodes[i].nodes[j].nodes[k].sCollide_Box)) {
+                    if (Utilities::Rect_Intersect(screen, terrain.nodes[i].nodes[j].nodes[k].sCollide_Box)) {
                       for (int l = 0; l < Map::size; l++) {
                         if (gridDepth == 2) {
                           SDL_FRect o = terrain.nodes[i].nodes[j].nodes[k].sCollide_Box;
@@ -242,7 +242,7 @@ namespace Interface {
                           o.y -= offset.y;
                           SDL_RenderDrawRectF(Graphics::renderer, &o);
                         }
-                        if (Utilities::bFRect_Intersect(screen, terrain.nodes[i].nodes[j].nodes[k].cells[l].sCollide_Box)) {
+                        if (Utilities::Rect_Intersect(screen, terrain.nodes[i].nodes[j].nodes[k].cells[l].sCollide_Box)) {
                           for (int a = 0; a < terrain.nodes[i].nodes[j].nodes[k].cells[l].entities.size(); a++) {
                             if (gridDepth == 3) {
                               SDL_FRect o = terrain.nodes[i].nodes[j].nodes[k].cells[l].sCollide_Box;

@@ -6,6 +6,7 @@
 #include "Maps/Pathing/a_star.h"
 #include "Maps/World/map.h"
 #include "Maps/World/world_grid.h"
+#include "UI/Debug_Panel/ui_debug.h"
 #include "entt/entt.hpp"
 #include "fog.h"
 #include "frame_rendering.h"
@@ -15,7 +16,6 @@
 #include "sort.h"
 #include "timer.h"
 #include "tooltips.h"
-#include "ui_debug.h"
 #include "ui_resources.h"
 #include "utilities.h"
 #include <SDL2/SDL.h>

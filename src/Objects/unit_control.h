@@ -202,7 +202,7 @@ namespace User_Mouse_Input {
     for (auto soldier: soldier_view) {
       auto &interaction = soldier_view.get<Component::Interaction_Rect>(soldier);
 
-      if (Utilities::bFRect_Intersect(rect, interaction.rect)) {
+      if (Utilities::Rect_Intersect(rect, interaction.rect)) {
         if (soldier == player_ID) {
           //                    prevent from selecting player
           continue;

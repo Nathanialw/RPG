@@ -48,7 +48,9 @@ namespace Utilities {
     return sqrtf((length * length) + (width * width));
   }
 
-  bool bFRect_Intersect(const SDL_FRect &entity, const SDL_FRect &target) {
+  bool Rect_Intersect(const SDL_FRect &entity, const SDL_FRect &target) {
+    if (SDL_FRectEmpty(&entity) || SDL_FRectEmpty(&target))
+      return false;
     if ((entity.y <= target.y + target.h) &&
         (entity.x <= target.x + target.w) &&
         (entity.y + entity.h >= target.y) &&
@@ -58,7 +60,33 @@ namespace Utilities {
     return false;
   };
 
-  bool bRect_Intersect(const SDL_Rect &entity, const SDL_Rect &target) {
+  bool Rect_Intersect(const SDL_Rect &entity, const SDL_Rect &target) {
+    if (SDL_RectEmpty(&entity) || SDL_RectEmpty(&target))
+      return false;
+    if ((entity.y <= target.y + target.h) &&
+        (entity.x <= target.x + target.w) &&
+        (entity.y + entity.h >= target.y) &&
+        (entity.x + entity.w >= target.x)) {
+      return true;
+    }
+    return false;
+  };
+
+  bool Rect_Intersect(const SDL_FRect &entity, const SDL_Rect &target) {
+    if (SDL_FRectEmpty(&entity) || SDL_RectEmpty(&target))
+      return false;
+    if ((entity.y <= target.y + target.h) &&
+        (entity.x <= target.x + target.w) &&
+        (entity.y + entity.h >= target.y) &&
+        (entity.x + entity.w >= target.x)) {
+      return true;
+    }
+    return false;
+  };
+
+  bool Rect_Intersect(const SDL_Rect &entity, const SDL_FRect &target) {
+    if (SDL_RectEmpty(&entity) || SDL_FRectEmpty(&target))
+      return false;
     if ((entity.y <= target.y + target.h) &&
         (entity.x <= target.x + target.w) &&
         (entity.y + entity.h >= target.y) &&
@@ -138,7 +166,7 @@ namespace Utilities {
 
   SDL_Point Check_Collision_Rects(const SDL_Rect &rect1, const SDL_Rect &rect2) {
 
-    if (Utilities::bRect_Intersect(rect1, rect2)) {
+    if (Utilities::Rect_Intersect(rect1, rect2)) {
       SDL_Point returnRect = {};
       int xOverlap = rect1.x - rect2.x;
       int yOverlap = rect1.y - rect2.y;

@@ -28,7 +28,7 @@ namespace Input_Control {
 
     SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
 
-    if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
+    if (Utilities::Rect_Intersect(unitRect, itemRect)) {
       ///pick up Item
       Component::Pickup_Item itemData = {item_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
       Equipment_UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::mouseData.itemCurrentlyHeld);
@@ -108,7 +108,7 @@ namespace Input_Control {
             SDL_FRect unitRect = Utilities::Get_FRect_From_Point_Radius(radius, playerPosition.x, playerPosition.y);
             SDL_FRect itemRect = Utilities::Get_FRect_From_Point_Radius(targetRadius.fRadius, targetPosition.x, targetPosition.y);
             ///if player is next to the item
-            if (Utilities::bFRect_Intersect(unitRect, itemRect)) {
+            if (Utilities::Rect_Intersect(unitRect, itemRect)) {
               ///pick up Item
               Component::Pickup_Item itemData = {targetData.entity_ID, targetPosition.x, targetPosition.y, targetRadius.fRadius};
               Equipment_UI::Pick_Up_Item_To_Mouse_Or_Bag(zone, player_ID, state, itemData, Mouse::mouseData.itemCurrentlyHeld);

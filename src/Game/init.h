@@ -12,6 +12,7 @@
 #include "Objects/Movement/unit_positions.h"
 #include "Objects/Stats/character_stats.h"
 #include "Objects/Stats/unit_status.h"
+#include "UI/Debug_Panel/ui_debug.h"
 #include "ai_control.h"
 #include "debug_system.h"
 #include "event_handler.h"
@@ -22,7 +23,6 @@
 #include "menu.h"
 #include "spells.h"
 #include "squad_control.h"
-#include "ui_debug.h"
 #include "ui_frames.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>

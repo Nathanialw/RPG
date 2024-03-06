@@ -215,7 +215,7 @@ namespace Quad_Tree {
     for (std::_List_iterator object_it = quadTrees[state].begin(); object_it != quadTrees[state].end(); ++object_it) {
       auto &entity = object_it->item;
       if (!Debug::settings[Debug::Settings::UpdateQuadTreeDebug]) {
-        if (zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
+        if (zone.valid(entity.entity_ID) && zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
           auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
           entity.rect = interactRect.rect;
           quadTrees[state].relocate(object_it, entity.rect);
@@ -223,7 +223,7 @@ namespace Quad_Tree {
 
         //need to have an actual rect with an offset of the position and a rect the size of the entity
       } else {
-        if (zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
+        if (zone.valid(entity.entity_ID) && zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
           auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
           //need to have an actual rect with an offset of the position and a rect the size of the entity
           entity.rect = interactRect.rect;
@@ -350,7 +350,7 @@ namespace Quad_Tree {
 
   Entity_Data Entity_vs_QuadTree_Collision(entt::registry &zone, SDL_FRect &entityRect, int &state) {
     for (const auto &object: quadTrees[state].search(entityRect)) {
-      if (Utilities::bFRect_Intersect(entityRect, object->item.rect)) {
+      if (Utilities::Rect_Intersect(entityRect, object->item.rect)) {
         return {true, object->item.entity_ID};
       } else {
         continue;

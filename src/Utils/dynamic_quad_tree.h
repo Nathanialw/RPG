@@ -100,7 +100,7 @@ namespace Dynamic_Quad_Tree {
       //First, check for the items belonging to this area, add them to the list
       // If there is a overlap
       for (auto &p: m_pItems) {
-        if (Utilities::bFRect_Intersect(rArea, p.first)) {
+        if (Utilities::Rect_Intersect(rArea, p.first)) {
           listItems.push_back(p.second);
         }
       }
@@ -115,7 +115,7 @@ namespace Dynamic_Quad_Tree {
             m_pChild[i]->items(listItems);
           }
           //if child overlaps with search area then checks need to be made
-          else if (Utilities::bFRect_Intersect(rArea, m_rChild[i])) {
+          else if (Utilities::Rect_Intersect(rArea, m_rChild[i])) {
             m_pChild[i]->search(rArea, listItems);
           }
         }

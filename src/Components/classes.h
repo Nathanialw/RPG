@@ -118,15 +118,15 @@ namespace Map {
   }
 
   void Place_Rect_On_Grid_Once(SDL_FRect &point, Map::Node3 &map, entt::entity &entity) {//inserts unit into every node withing its collider
-    if (Utilities::bFRect_Intersect(point, map.sCollide_Box)) {
+    if (Utilities::Rect_Intersect(point, map.sCollide_Box)) {
       for (int i = 0; i < size; i++) {
-        if (Utilities::bFRect_Intersect(point, map.nodes[i].sCollide_Box)) {
+        if (Utilities::Rect_Intersect(point, map.nodes[i].sCollide_Box)) {
           for (int j = 0; j < size; j++) {
-            if (Utilities::bFRect_Intersect(point, map.nodes[i].nodes[j].sCollide_Box)) {
+            if (Utilities::Rect_Intersect(point, map.nodes[i].nodes[j].sCollide_Box)) {
               for (int k = 0; k < size; k++) {
-                if (Utilities::bFRect_Intersect(point, map.nodes[i].nodes[j].nodes[k].sCollide_Box)) {
+                if (Utilities::Rect_Intersect(point, map.nodes[i].nodes[j].nodes[k].sCollide_Box)) {
                   for (int l = 0; l < size; l++) {
-                    if (Utilities::bFRect_Intersect(point, map.nodes[i].nodes[j].nodes[k].cells[l].sCollide_Box)) {
+                    if (Utilities::Rect_Intersect(point, map.nodes[i].nodes[j].nodes[k].cells[l].sCollide_Box)) {
                       map.nodes[i].nodes[j].nodes[k].cells[l].entities.push_back(entity);
                       return;//ensures the entity is only placed in one square
                     }
@@ -141,15 +141,15 @@ namespace Map {
   }
 
   void Place_Rect_On_Grid(SDL_FRect &point, Map::Node3 &map, entt::entity &entity) {//inserts unit into every node withing its collider
-    if (Utilities::bFRect_Intersect(point, map.sCollide_Box)) {
+    if (Utilities::Rect_Intersect(point, map.sCollide_Box)) {
       for (int i = 0; i < size; i++) {
-        if (Utilities::bFRect_Intersect(point, map.nodes[i].sCollide_Box)) {
+        if (Utilities::Rect_Intersect(point, map.nodes[i].sCollide_Box)) {
           for (int j = 0; j < size; j++) {
-            if (Utilities::bFRect_Intersect(point, map.nodes[i].nodes[j].sCollide_Box)) {
+            if (Utilities::Rect_Intersect(point, map.nodes[i].nodes[j].sCollide_Box)) {
               for (int k = 0; k < size; k++) {
-                if (Utilities::bFRect_Intersect(point, map.nodes[i].nodes[j].nodes[k].sCollide_Box)) {
+                if (Utilities::Rect_Intersect(point, map.nodes[i].nodes[j].nodes[k].sCollide_Box)) {
                   for (int l = 0; l < size; l++) {
-                    if (Utilities::bFRect_Intersect(point, map.nodes[i].nodes[j].nodes[k].cells[l].sCollide_Box)) {
+                    if (Utilities::Rect_Intersect(point, map.nodes[i].nodes[j].nodes[k].cells[l].sCollide_Box)) {
                       map.nodes[i].nodes[j].nodes[k].cells[l].entities.push_back(entity);
                       //return; //ensures the entity is only placed in one square
                     }
