@@ -64,5 +64,6 @@ namespace SQLite_Object_Retrieve {
       auto text = sqlite3_column_text(stmt0, 0);
       return db::Get_String(text);
     }
+    return "";
   }
 }// namespace SQLite_Object_Retrieve

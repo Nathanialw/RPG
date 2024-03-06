@@ -1,4 +1,4 @@
-#include "Procedural_Generation/labyrinth.h"
+#include "Maps/Procedural_Generation/Labyrinth/labyrinth.h"
 #include "a_star.h"
 
 namespace Pathing_Map {

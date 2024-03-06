@@ -196,7 +196,8 @@ namespace Event_Handler {
         } else {
           //set building
           if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
-            Build::Rotate_Building(zone, state);
+            if (Build::Rotate_Building(zone, state))
+              return;
           } else if (Mouse_Struct::mouseData.type == Component::Icon_Type::item) {
             Equipment_UI::Drop_Item_If_On_Mouse(zone, camera, Mouse::mouseData.itemCurrentlyHeld);
           }

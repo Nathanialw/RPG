@@ -1,5 +1,4 @@
 #pragma once
-
 #include <array>
 #include <map>
 #include <string>
@@ -7,6 +6,7 @@
 #include <vector>
 
 #include "Objects/Social/social_control.h"
+#include "SQLite_load_tileset.h"
 #include "SQLite_unit_data.h"
 #include "components.h"
 #include "game_objects.h"
@@ -82,19 +82,19 @@ namespace Load_Object_List {
   using namespace Social_Component;
   using namespace Component;
 
-  std::vector<std::string> Get_Buildings(Social_Component::Race race, Component::Entity_Type type, Component::Buildings buildingType) {
+  std::vector<std::string> Get_Buildings(const Social_Component::Race &race, const Component::Entity_Type &type, const Component::Buildings &buildingType) {
     return gameObjects[(int) type][(int) race][(int) buildingType];
   };
 
-  std::vector<std::string> Get_Props(Social_Component::Race race, Component::Entity_Type type, Component::Props propType) {
+  std::vector<std::string> Get_Props(const Social_Component::Race &race, const Component::Entity_Type &type, const Component::Props &propType) {
     return gameObjects[(int) type][(int) race][(int) propType];
   };
 
-  std::vector<std::string> Get_Units(Social_Component::Race race, Component::Entity_Type type, Component::Units unitType) {
+  std::vector<std::string> Get_Units(const Social_Component::Race &race, const Component::Entity_Type &type, const Component::Units &unitType) {
     return gameObjects[(int) type][(int) race][(int) unitType];
   };
 
-  void Load_Tileset(const std::string tileset) {
+  void Load_Tileset(const std::string &tileset) {
     std::string xmlPath = Entity_Loader::Get_Tileset_Path(tileset);
 
     tinyxml2::XMLDocument spriteSheetData;
@@ -106,11 +106,14 @@ namespace Load_Object_List {
     std::vector<std::string> tilesetVec;
     tilesetVec.reserve(200);
 
+    int i = 0;
     while (pSpriteElement != nullptr) {
       ///get frame data for each state
       std::string n = pSpriteElement->Attribute("n");
       tilesetVec.emplace_back(n);
       pSpriteElement = pSpriteElement->NextSiblingElement("sprite");
+      Game_Objects_Lists::tilesetObjectIndexes[tileset][n] = i;
+      i++;
     }
     tilesetVec.shrink_to_fit();
     Game_Objects_Lists::tilesets[tileset] = tilesetVec;
@@ -124,6 +127,7 @@ namespace Load_Object_List {
     Load_Tileset("hell");
     Load_Tileset("cave_entrances");
     Load_Tileset("labyrinth");
+    SQLite_Load_Tileset::Load("labyrinth");
 
 
     Game_Objects_Lists::tilesets["buildings_orc"] = Entity_Loader::Get_Names_Of_SubType("orc", "building", "house");

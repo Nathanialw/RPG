@@ -1,6 +1,6 @@
 #pragma once
+#include "Maps/Procedural_Generation/Labyrinth/labyrinth.h"
 #include "Pathing/pathing_map.h"
-#include "Procedural_Generation/labyrinth.h"
 #include "Procedural_Generation/simplex_noise.h"
 #include "components.h"
 #include "entt/entt.hpp"

@@ -15,6 +15,7 @@
 //#include "graphics.h"
 #include "Maps/Procedural_Generation/number_generator.h"
 //#include <map>
+#include "Procedural_Generation//Labyrinth/treasure_room.h"
 
 namespace Maps {
 
@@ -279,13 +280,13 @@ namespace Maps {
   }
 
   void Generate_Labyrinth_Objects(entt::registry &zone, int &state, SDL_FRect rect, std::string &tileSet, World_Data::Tile &tile) {
-    Procedural_Components::Seed seed;
-    seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
+    //    Procedural_Components::Seed seed;
+    //    seed.seed = Procedural_Generation::Create_Initial_Seed(rect.x, rect.y);
 
     // the number of objects(trees and rocks) should be retrieved from an array created by simplex noise in order to create a proper forest
     // later, more trees = forest, more rocks = forest edge
     //    int numObjects = Procedural_Generation::Random_Int(0, 8, seed);
-    int numObjects = World_Data::maxObjectsPerTile;
+    //    int numObjects = World_Data::maxObjectsPerTile;
 
     //calculate room type
 
@@ -296,21 +297,32 @@ namespace Maps {
     ///freestanding ie. chests, tables
     //set the object against the wall we need to know its radius to offset it from the wall
 
-    for (int k = 0; k < numObjects; k++) {
+    //    for (int k = 0; k < numObjects; k++) {
+    //
+    //
+    //          float x = Procedural_Generation::Random_float(33, (int) World::size.width - 65, seed);
+    //          float y = Procedural_Generation::Random_float(33, (int) World::size.height - 65, seed);
+
+    //      float i = rect.x / World::size.width;
+    //      float j = rect.y / World::size.height;
+    //      if (Game_Objects_Lists::tilesets[tileSet].empty()) { return; }
+    //      int xmlIndex = Procedural_Generation::Random_Int(0, (int) Game_Objects_Lists::tilesets[tileSet].size(), seed);
+    //    std::string objectName = Game_Objects_Lists::tilesets[tileSet][xmlIndex];
+
+    int k = 0;
+    float i = rect.x / World::size.width;
+    float j = rect.y / World::size.height;
+    float x = World::size.width / 2.0f;
+    float y = World::size.height / 2.0f;
+
+    std::string objectName = Room::Populate(tileSet, tile.tileTexture, i, j);
+    if (objectName.empty()) return;
+
+    int xmlIndex = Game_Objects_Lists::tilesetObjectIndexes[tileSet][objectName];
 
 
-      float x = Procedural_Generation::Random_float(33, (int) World::size.width - 65, seed);
-      float y = Procedural_Generation::Random_float(33, (int) World::size.height - 65, seed);
-
-      float i = rect.x / World::size.width;
-      float j = rect.y / World::size.height;
-      if (Game_Objects_Lists::tilesets[tileSet].empty()) { return; }
-      int xmlIndex = Procedural_Generation::Random_Int(0, (int) Game_Objects_Lists::tilesets[tileSet].size(), seed);
-      std::string objectName = Game_Objects_Lists::tilesets[tileSet][xmlIndex];
-
-      if (i != 0) {
-        tile.objects[k].entity = (Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex));
-      }
+    if (i != 0) {
+      tile.objects[k].entity = (Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex));
     }
   }
 

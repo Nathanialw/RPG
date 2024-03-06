@@ -100,14 +100,7 @@ namespace Sort {
   }
 
   void Sort_Positions(entt::registry &zone) {
-    auto view = zone.view<Component::Renderable>();
-
-    auto size = view.size();
-    Utilities::Log("number of checks" + std::to_string(size));
-    int i = 0;
-    zone.sort<Component::Renderable>([&](const Component::Renderable &lhs, const Component::Renderable &rhs) {
-      Utilities::Log(i);
-      i++;
+    zone.sort<Component::Renderable>([](const Component::Renderable &lhs, const Component::Renderable &rhs) {
       return Sort(lhs, rhs);
     });
   }
