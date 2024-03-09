@@ -49,8 +49,6 @@ namespace Utilities {
   }
 
   bool Rect_Intersect(const SDL_FRect &entity, const SDL_FRect &target) {
-    if (SDL_FRectEmpty(&entity) || SDL_FRectEmpty(&target))
-      return false;
     if ((entity.y <= target.y + target.h) &&
         (entity.x <= target.x + target.w) &&
         (entity.y + entity.h >= target.y) &&
@@ -61,8 +59,6 @@ namespace Utilities {
   };
 
   bool Rect_Intersect(const SDL_Rect &entity, const SDL_Rect &target) {
-    if (SDL_RectEmpty(&entity) || SDL_RectEmpty(&target))
-      return false;
     if ((entity.y <= target.y + target.h) &&
         (entity.x <= target.x + target.w) &&
         (entity.y + entity.h >= target.y) &&
@@ -73,8 +69,6 @@ namespace Utilities {
   };
 
   bool Rect_Intersect(const SDL_FRect &entity, const SDL_Rect &target) {
-    if (SDL_FRectEmpty(&entity) || SDL_RectEmpty(&target))
-      return false;
     if ((entity.y <= target.y + target.h) &&
         (entity.x <= target.x + target.w) &&
         (entity.y + entity.h >= target.y) &&
@@ -85,8 +79,6 @@ namespace Utilities {
   };
 
   bool Rect_Intersect(const SDL_Rect &entity, const SDL_FRect &target) {
-    if (SDL_RectEmpty(&entity) || SDL_FRectEmpty(&target))
-      return false;
     if ((entity.y <= target.y + target.h) &&
         (entity.x <= target.x + target.w) &&
         (entity.y + entity.h >= target.y) &&

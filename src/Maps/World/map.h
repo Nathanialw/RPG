@@ -273,7 +273,8 @@ namespace Maps {
       int xmlIndex = Procedural_Generation::Random_Int(0, (int) Game_Objects_Lists::tilesets[tileSet].size(), seed);
       std::string objectName = Game_Objects_Lists::tilesets[tileSet][xmlIndex];
 
-      if (i != 0) {
+      //will crash if it tries to insert objects onto the quad tree at the bottom edge of the map
+      if (j < World_Data::REGION_SIZE - 1) {
         tile.objects[k].entity = (Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex));
       }
     }

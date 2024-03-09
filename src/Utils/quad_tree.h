@@ -210,24 +210,28 @@ namespace Quad_Tree {
     //    updateQuadTreePosition += Timer::timeStep;
     //    if (updateQuadTreePosition >= 50.0f) {
     //      updateQuadTreePosition -= 50.0f;
+
+
     auto view = zone.view<Component::Interaction_Rect, Component::In_Object_Tree>();
     //    Utilities::Log(Item_Component::emptyEquipSlot.size());
     for (std::_List_iterator object_it = quadTrees[state].begin(); object_it != quadTrees[state].end(); ++object_it) {
       auto &entity = object_it->item;
       if (!Debug::settings[Debug::Settings::UpdateQuadTreeDebug]) {
-        if (zone.valid(entity.entity_ID) && zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
+        if (zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
           auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
           entity.rect = interactRect.rect;
           quadTrees[state].relocate(object_it, entity.rect);
+          break;
         }
 
         //need to have an actual rect with an offset of the position and a rect the size of the entity
       } else {
-        if (zone.valid(entity.entity_ID) && zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
+        if (zone.any_of<Component::Interaction_Rect>(entity.entity_ID)) {
           auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
           //need to have an actual rect with an offset of the position and a rect the size of the entity
           entity.rect = interactRect.rect;
           quadTrees[state].relocate(object_it, entity.rect);
+          break;
         } else {
           Utilities::Log("entity is in tree but orphaned");
         }
