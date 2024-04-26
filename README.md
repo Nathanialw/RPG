@@ -1,17 +1,7 @@
+Explore a procedurally generated open world
 
-TODO:
+![cave3](https://github.com/Nathanialw/RPG/assets/52517284/3e88c17e-85b5-42de-9506-001b6862af1e)
 
-### Character selection screen
-    Species
-    Gender
-    Class
-### Buildings
-    Create Buildings
-        Crafting
-        Recruitment
-### Basic Spells
-    First row spells
-### Caves
-    Single level "hole in the ground"
-### Interaction with environment objects
-    Pick berry bushes
+Delve into dungeons to kill monsters and take their loot
+
+![cave1](https://github.com/Nathanialw/RPG/assets/52517284/f5e9c38a-0c3e-47e8-9006-6bf6dec8d94f)
