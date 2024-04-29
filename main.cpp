@@ -6,7 +6,6 @@
 
 
 int main(int argc, char *argv[]) {
-
   srand((unsigned int) time(NULL));
 
   Init::Loaded loaded;

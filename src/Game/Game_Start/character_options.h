@@ -216,8 +216,8 @@ namespace Character_Options {
 
   struct Customization {
     bool success = true;
-    Sex sex = Sex::male;
-    Species species = Species::euro;
+    Sex sex = Sex::female;
+    Species species = Species::dwarf;
     int horns = 0;
     int beard = 0;
     int hairStyle = 0;

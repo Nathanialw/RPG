@@ -7,12 +7,6 @@ namespace Ray_Cast {
     return true;
   }
 
-  /*
-YouTube:	https://www.youtube.com/javidx9
-https://www.youtube.com/javidx9extra
-GitHub:		https://www.github.com/onelonecoder
-*/
-
   f2 vPlayer = {0.0f, 0.0f};
   i2 vMapSize = {32, 30};
   i2 vCellSize = {16, 16};
@@ -96,38 +90,6 @@ GitHub:		https://www.github.com/onelonecoder
     if (bTileFound) {
       //      vIntersection = vRayStart + vRayDir * fDistance;
     }
-
-
-    //    Clear(olc::BLACK);
-    //
-    //    // Draw Map
-    //    for (int y = 0; y < vMapSize.y; y++) {
-    //      for (int x = 0; x < vMapSize.x; x++) {
-    //        int cell = vecMap[y * vMapSize.x + x];
-    //        if (cell == 1)
-    //          FillRect(i2(x, y) * vCellSize, vCellSize, olc::BLUE);
-    //
-    //        // Draw Cell border
-    //        DrawRect(i2(x, y) * vCellSize, vCellSize, olc::DARK_GREY);
-    //      }
-    //    }
-    //
-    //    // Draw ray between player and mouse if left mouse button held
-    //    if (GetMouse(0).bHeld) {
-    //      DrawLine(vPlayer * vCellSize, vMouse, olc::WHITE, 0xF0F0F0F0);
-    //
-    //      if (bTileFound) {
-    //        DrawCircle(vIntersection * vCellSize, 4.0f, olc::YELLOW);
-    //      }
-    //    }
-    //
-    //    // Draw Player
-    //    FillCircle(vPlayer * vCellSize, 4.0f, olc::RED);
-    //
-    //    // Draw Mouse
-    //    FillCircle(vMouse, 4.0f, olc::GREEN);
-    //    return true;
-    //  }
   };
 
 }// namespace Ray_Cast

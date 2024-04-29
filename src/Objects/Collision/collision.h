@@ -11,7 +11,7 @@ namespace Collision {
   //  std::map<World::GameState, b2World*> world;
   std::vector<b2World *> collisionList(World_Data::numZones);
 
-  const float timeStep = 1.0f / 5.0f;
+  const float timeStep = 1.0f / 60.0f;
   const float M2P = 60.0f;
   const float P2M = 1.0f / M2P;
   int32 velocityIterations = 1;
@@ -305,7 +305,7 @@ namespace Collision {
       }
     }
   }
-  
+
   void Collision_Routine(entt::registry &zone, int &state) {
     Update_Collision(zone, state);
   };
