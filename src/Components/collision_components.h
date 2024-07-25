@@ -36,7 +36,7 @@ namespace Collision_Component {
   };
 
   struct Placement_Box {
-    u_int8_t groupIndex = 1;
+    uint8_t groupIndex = 1;
     bool isSensor = false;
     std::vector<tmx::Vector2<float>> pointVecs = {};
   };

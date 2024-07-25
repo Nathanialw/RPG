@@ -74,7 +74,7 @@ namespace Debug_System {
   }
 
   void Update_Settings(entt::registry &zone) {
-    Debug::settingsValue[Debug::EntityCount] = zone.capacity();
+    // Debug::settingsValue[Debug::EntityCount] = zone.capacity();
     Debug::settingsValue[Debug::RenderComponent] = zone.view<Component::Renderable>().size();
     Debug::settingsValue[Debug::TreeSize] = zone.view<Component::Interaction_Rect>().size();
   }

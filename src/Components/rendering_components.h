@@ -38,9 +38,9 @@ namespace Rendering_Components {
   };
 
   struct Color {
-    u_int8_t r;
-    u_int8_t g;
-    u_int8_t b;
+    uint8_t r;
+    uint8_t g;
+    uint8_t b;
   };
 
   struct Portrait {
