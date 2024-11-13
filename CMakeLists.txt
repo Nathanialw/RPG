@@ -37,5 +37,7 @@ elseif(WIN32)
     #endif()
 endif()
 
+#set_property(TARGET YourExecutable PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
+
 # Set the working directory for the executable
 #set_target_properties(RPG PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
