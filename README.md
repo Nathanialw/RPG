@@ -1,3 +1,9 @@
+sudo apt install sdl2-dev
+sudo apt install libsdl2-image-dev
+sudo apt install libsdl2-ttf-dev
+sudo apt install libsdl2-mixer-dev
+sudo apt install theora    
+
 Explore a procedurally generated open world
 
 ![cave3](https://github.com/Nathanialw/RPG/assets/52517284/3e88c17e-85b5-42de-9506-001b6862af1e)
