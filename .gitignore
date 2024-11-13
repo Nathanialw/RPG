@@ -15,6 +15,7 @@ debug
 release
 .vs
 out
+out/*
 bin
 sprites/PVG_guides
 cmake-build-relwithdebinfo
