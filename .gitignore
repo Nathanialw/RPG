@@ -26,3 +26,5 @@ RPG.cbp
 /.cmake/
 #*
 build.ninja
+/out/
+/.vs/
