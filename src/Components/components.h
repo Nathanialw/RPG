@@ -279,19 +279,19 @@ namespace Component {
   };
 
   enum class Units {
-    SIZE
+    SIZE = 1
   };
 
   enum class Foliage {
-    SIZE
+    SIZE = 1
   };
 
   enum class Spells {
-    SIZE
+    SIZE = 1
   };
 
   enum class Items {
-    SIZE
+    SIZE = 1
   };
 
   enum class Objects {

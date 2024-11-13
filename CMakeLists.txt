@@ -1,48 +1,41 @@
-# the name of the target operating system
-#set(CMAKE_SYSTEM_NAME Windows)
-
 cmake_minimum_required(VERSION 3.22)
 project(RPG)
 
-#link_directories(/usr/x86_64-w64-mingw32/lib)
-link_directories(lib)
+set(CMAKE_VERBOSE_MAKEFILE ON)
+
+if(UNIX)
+    link_directories(lib)
+elseif (WIN32)
+    link_directories(${CMAKE_SOURCE_DIR}/libwin)
+endif()
 
 set(CMAKE_CXX_STANDARD 20)
-set(ARCH amd64)
-
-#set (CMAKE_CXX_COMPILER "/usr/bin/clang++")
-set (CMAKE_CXX_FLAGS "-Wno-deprecated")
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std = c++11")
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0")
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wa,-mbig-obj")
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include_directories(include)
-#include_directories(includewin)
+if(WIN32)
+    include_directories(${CMAKE_SOURCE_DIR}/includewin)
+endif()
 
-include_directories(src)
+include_directories(${CMAKE_SOURCE_DIR}/src)
 
-#add_library(srcDir "")
-#add_subdirectory(src)
+add_executable(RPG ${CMAKE_SOURCE_DIR}/main.cpp ${CMAKE_SOURCE_DIR}/include/sqlite/sqlite3.c ${CMAKE_SOURCE_DIR}/include/tinyxml/tinyxml2.cpp ${CMAKE_SOURCE_DIR}/include/SDL_FontCache/SDL_FontCache.c)
+add_subdirectory(${CMAKE_SOURCE_DIR}/src)
 
-#sqlite3.c tinyxml2.cpp SDL_FontCache.c
-add_executable(RPG main.cpp include/sqlite/sqlite3.c include/tinyxml/tinyxml2.cpp include/SDL_FontCache/SDL_FontCache.c)
-#target_sources(font SDL_FontCache.h)
-add_subdirectory(src)
+if (UNIX)
+    target_link_libraries(RPG -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer libbox2d.a libtmxlite.so -ltheoradec -ltheora -lvorbis -logg)
+    set_target_properties(RPG PROPERTIES COMPILE_FLAGS "-m64" LINK_FLAGS "-m64")
+elseif(WIN32)
+    target_link_libraries(RPG SDL2 SDL2_image SDL2_ttf SDL2_mixer theora vorbis ogg box2d tmxlite)
+    target_compile_definitions(RPG PRIVATE SDL_MAIN_HANDLED)
+    target_compile_options(RPG PRIVATE /bigobj)
+    target_compile_definitions(RPG PRIVATE _ITERATOR_DEBUG_LEVEL=0)
 
-#for the glang compiler to see c++ std lib       -stdlib=libc++ -lc++
-#target_link_libraries(RPG)
-target_link_libraries(RPG -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer libbox2d.a libtmxlite.so -ltheoradec -ltheora -lvorbis -logg)
+    #if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    #    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MDd")
+    #else()
+    #    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MD")
+    #endif()
+endif()
 
-set_target_properties(RPG PROPERTIES COMPILE_FLAGS "-m64" LINK_FLAGS "-m64")
-
-
-#
-## adjust the default behavior of the FIND_XXX() commands:
-## search programs in the host environment
-#set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
-#
-## search headers and libraries in the target environment
-#set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
-#set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+# Set the working directory for the executable
+#set_target_properties(RPG PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})

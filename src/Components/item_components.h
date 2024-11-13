@@ -3,6 +3,7 @@
 #include "entt/entt.hpp"
 #include <SDL2/SDL.h>
 #include <map>
+#include <string>
 
 namespace Item_Component {
 

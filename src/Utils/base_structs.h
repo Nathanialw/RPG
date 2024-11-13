@@ -1,4 +1,5 @@
 #pragma once
+#include <cmath>
 
 struct i2 {
   int x;

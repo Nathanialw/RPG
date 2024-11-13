@@ -24,7 +24,7 @@ namespace Ray_Cast {
     f2 vMouseCell;
     vMouseCell.x = vMouse.x / vCellSize.x;
     vMouseCell.y = vMouse.y / vCellSize.y;
-    i2 vCell = {(int) vMouseCell.x, (int) vMouseCell.y};// implicit cast to integer, rounds down
+    i2 vCell = {(int) vMouseCell.x, (int) vMouseCell.y};// cast to integer rounds down
 
 
     // DDA Algorithm ==============================================
@@ -90,6 +90,7 @@ namespace Ray_Cast {
     if (bTileFound) {
       //      vIntersection = vRayStart + vRayDir * fDistance;
     }
+    return false;
   };
 
 }// namespace Ray_Cast
