@@ -13,9 +13,9 @@ CMakeFiles
 .cache
 debug
 release
-.vs
-out
-out/*
+/.vs/
+/out
+/out/*
 bin
 sprites/PVG_guides
 cmake-build-relwithdebinfo
