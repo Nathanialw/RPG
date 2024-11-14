@@ -1,8 +1,16 @@
-sudo apt install sdl2-dev
-sudo apt install libsdl2-image-dev
-sudo apt install libsdl2-ttf-dev
-sudo apt install libsdl2-mixer-dev
-sudo apt install theora    
+**Linux:**
+
+sudo apt install -y sdl2-dev\
+sudo apt install -y libsdl2-image-dev\
+sudo apt install -y libsdl2-ttf-dev\
+sudo apt install -y libsdl2-mixer-dev\
+sudo apt install -y libtheora-dev    
+
+**Windows:**
+
+Libs included.
+
+**Game:**
 
 Explore a procedurally generated open world
 
