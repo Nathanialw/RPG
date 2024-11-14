@@ -30,3 +30,4 @@ build.ninja
 /.vs/
 /reading/
 /.cache
+.cache/clangd/index
