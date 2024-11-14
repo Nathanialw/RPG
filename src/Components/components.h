@@ -468,7 +468,8 @@ namespace Component {
   struct Melee_Damage {
     int minDamage = 0;
     int maxDamage = 0;
-    int critChance;
+    int critChance = 5;
+    int weaponType = 0;
   };
 
   struct Melee_Range {

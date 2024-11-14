@@ -99,7 +99,8 @@ namespace Combat_Control {
       Action_Component::Set_State(targetAction, Action_Component::combatIdle);
     }
 
-    Effects::Play();
+    //get weapon type
+    Effects::Play(meleeDamage.weaponType);
   }
 
   void Attack_Target(entt::registry &zone) {

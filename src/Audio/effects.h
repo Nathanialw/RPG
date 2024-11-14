@@ -1,36 +1,35 @@
 #pragma once
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_mixer.h"
+#include "array"
 
 namespace Effects {
-
-  struct Sounds {
-    Mix_Chunk *chunk;
+  enum WeaponType {
+    axe,
+    SIZE
   };
 
-  std::vector<Sounds> chunks;
+  std::array<std::vector<Mix_Chunk*>, SIZE> weaponSounds;
 
-  void Init() {
-    //Load sound effects
-    Sounds sound{};
-    sound.chunk = Mix_LoadWAV("assets/sounds/Sound Library/_Combined Clips (Battle)/Axe/OnFlesh/AxeOnFlesh_0.wav");
-    chunks.emplace_back(sound);
-    sound.chunk = Mix_LoadWAV("assets/sounds/Sound Library/_Combined Clips (Battle)/Axe/OnFlesh/AxeOnFlesh_1.wav");
-    chunks.emplace_back(sound);
-    sound.chunk = Mix_LoadWAV("assets/sounds/Sound Library/_Combined Clips (Battle)/Axe/OnFlesh/AxeOnFlesh_2.wav");
-    chunks.emplace_back(sound);
-    sound.chunk = Mix_LoadWAV("assets/sounds/Sound Library/_Combined Clips (Battle)/Axe/OnFlesh/AxeOnFlesh_3.wav");
-    chunks.emplace_back(sound);
-    sound.chunk = Mix_LoadWAV("assets/sounds/Sound Library/_Combined Clips (Battle)/Axe/OnFlesh/AxeOnFlesh_4.wav");
-    chunks.emplace_back(sound);
-
-    if (sound.chunk == nullptr) {
-      printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-    }
+  Mix_Chunk* Load_Sound(const char* path) {
+      auto sound = Mix_LoadWAV(path);
+      if (sound == nullptr) {
+          printf("Failed to load sound effect! SDL_mixer Error: %s\n", Mix_GetError());
+          return nullptr; //should return a default sound
+      }
+      return sound;
   }
 
-  void Play() {
-    Mix_PlayChannel(-1, chunks[rand() % chunks.size()].chunk, 0);
+  void Init() {
+      weaponSounds[axe].emplace_back(Load_Sound("assets/sounds/Sound Library/Battle 1/Axe/Axe On Flesh/Flesh/Axe_On_Flesh_Flesh_1.wav"));
+      weaponSounds[axe].emplace_back(Load_Sound("assets/sounds/Sound Library/Battle 1/Axe/Axe On Flesh/Flesh/Axe_On_Flesh_Flesh_2.wav"));
+      weaponSounds[axe].emplace_back(Load_Sound("assets/sounds/Sound Library/Battle 1/Axe/Axe On Flesh/Flesh/Axe_On_Flesh_Flesh_3.wav"));
+      weaponSounds[axe].emplace_back(Load_Sound("assets/sounds/Sound Library/Battle 1/Axe/Axe On Flesh/Flesh/Axe_On_Flesh_Flesh_4.wav"));
+      weaponSounds[axe].emplace_back(Load_Sound("assets/sounds/Sound Library/Battle 1/Axe/Axe On Flesh/Flesh/Axe_On_Flesh_Flesh_5.wav"));
+  }
+
+  void Play(const int weaponType) {
+    Mix_PlayChannel(-1, weaponSounds[weaponType][rand() % weaponSounds[weaponType].size()], 0);
   }
 
 
