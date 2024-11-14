@@ -135,7 +135,7 @@ namespace Quad_Tree {
           }
         }
         zone.remove<Component::Remove_From_Object_Tree>(entity);
-        zone.remove<Component::In_Object_Tree>(entity);
+//        zone.remove<Component::In_Object_Tree>(entity);
       }
     }
     zone.compact<>();
@@ -221,7 +221,6 @@ namespace Quad_Tree {
           auto &interactRect = view.get<Component::Interaction_Rect>(entity.entity_ID);
           entity.rect = interactRect.rect;
           quadTrees[state].relocate(object_it, entity.rect);
-          break;
         }
 
         //need to have an actual rect with an offset of the position and a rect the size of the entity
@@ -231,13 +230,11 @@ namespace Quad_Tree {
           //need to have an actual rect with an offset of the position and a rect the size of the entity
           entity.rect = interactRect.rect;
           quadTrees[state].relocate(object_it, entity.rect);
-          break;
         } else {
           Utilities::Log("entity is in tree but orphaned");
         }
       }
     }
-    //    }
   }
 
   void Draw_Tree_Object_Rects(entt::registry &zone, int &state) {
@@ -253,7 +250,7 @@ namespace Quad_Tree {
           SDL_FRect screenRect = object->item.rect;
           screenRect.x -= camera.screen.x;
           screenRect.y -= camera.screen.y;
-          SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderMagic, NULL, &screenRect);
+          SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderRare, NULL, &screenRect);
         }
         //        std::cout << "nodes: " << nodes << std::endl;
       }
