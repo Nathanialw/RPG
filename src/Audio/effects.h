@@ -15,7 +15,7 @@ namespace Effects {
       auto sound = Mix_LoadWAV(path);
       if (sound == nullptr) {
           printf("Failed to load sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-          return nullptr; //should return a default sound
+          return nullptr; //should return a default sound that signifies an obvious error
       }
       return sound;
   }
