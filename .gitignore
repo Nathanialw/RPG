@@ -29,3 +29,4 @@ build.ninja
 /out/
 /.vs/
 /reading/
+/.cache
