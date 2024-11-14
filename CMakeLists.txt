@@ -4,39 +4,22 @@ project(RPG)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_CXX_STANDARD 20)
 
-if(UNIX)
-    link_directories(lib/unix)
-elseif (WIN32)
-    link_directories(${CMAKE_SOURCE_DIR}/lib/win)
-endif()
-
 include_directories(include/all)
-if(WIN32)
-    include_directories(${CMAKE_SOURCE_DIR}/include/win)
-endif()
-
-include_directories(${CMAKE_SOURCE_DIR}/src)
-
-add_executable(RPG ${CMAKE_SOURCE_DIR}/main.cpp ${CMAKE_SOURCE_DIR}/include/all/sqlite/sqlite3.c ${CMAKE_SOURCE_DIR}/include/all/tinyxml/tinyxml2.cpp ${CMAKE_SOURCE_DIR}/include/all/SDL_FontCache/SDL_FontCache.c)
-add_subdirectory(${CMAKE_SOURCE_DIR}/src)
+include_directories(src)
 
 if (UNIX)
+    link_directories(lib/unix)
+    add_executable(RPG src/main.cpp include/all/sqlite/sqlite3.c include/all/tinyxml/tinyxml2.cpp include/all/SDL_FontCache/SDL_FontCache.c)
     target_link_libraries(RPG -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer libbox2d.a libtmxlite.so -ltheoradec -ltheora -lvorbis -logg)
     set_target_properties(RPG PROPERTIES COMPILE_FLAGS "-m64" LINK_FLAGS "-m64")
 elseif(WIN32)
-    target_link_libraries(RPG SDL2 SDL2_image SDL2_ttf SDL2_mixer theora vorbis ogg box2d tmxlite)
+    link_directories(lib/win)
+    include_directories(include/win)
+    add_executable(RPG src/main.cpp include/all/sqlite/sqlite3.c include/all/tinyxml/tinyxml2.cpp include/all/SDL_FontCache/SDL_FontCache.c)
+    target_link_libraries(RPG SDL2 SDL2main SDL2_image SDL2_ttf SDL2_mixer theora vorbis ogg box2d tmxlite)
     target_compile_definitions(RPG PRIVATE SDL_MAIN_HANDLED)
     target_compile_options(RPG PRIVATE /bigobj)
     target_compile_definitions(RPG PRIVATE _ITERATOR_DEBUG_LEVEL=0)
-
-    #if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-    #    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MDd")
-    #else()
-    #    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MD")
-    #endif()
 endif()
 
-#set_property(TARGET YourExecutable PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
-
-# Set the working directory for the executable
-#set_target_properties(RPG PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+add_subdirectory(src)

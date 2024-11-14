@@ -31,3 +31,7 @@ build.ninja
 /reading/
 /.cache
 /.cache/clangd/index
+.gitignore
+.clang-format
+.clang-tidy
+compile_commands.json
