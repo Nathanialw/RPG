@@ -24,11 +24,11 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_mixer.h>                             /* Mix_Chunk only */
-#include <SDL2/SDL_thread.h>
-#include <theora/theoradec.h>
-#include <vorbis/codec.h>
+#include "SDL2/SDL_mixer.h"                             /* Mix_Chunk only */
+#include "SDL2/SDL.h"
+#include "SDL2/SDL_thread.h"
+#include "theora/theoradec.h"
+#include "vorbis/codec.h"
 
 /* using circular buffer must be thread safe, because there's only one producer and one consumer,
  * and head and tail are only changed by the producer and consumer respectively but never both */

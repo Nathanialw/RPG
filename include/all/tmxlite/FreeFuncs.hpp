@@ -51,9 +51,9 @@ René Nyffenegger rene.nyffenegger@adp-gmbh.ch
 
 #pragma once
 
-#include <tmxlite/detail/Android.hpp>
-#include <tmxlite/detail/Log.hpp>
-#include <tmxlite/Types.hpp>
+#include "unix/tmxlite/detail/Android.hpp"
+#include "unix/tmxlite/detail/Log.hpp"
+#include "Types.hpp"
 
 #include <string>
 #include <sstream>

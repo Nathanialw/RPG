@@ -2,23 +2,22 @@ cmake_minimum_required(VERSION 3.22)
 project(RPG)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-
-if(UNIX)
-    link_directories(lib)
-elseif (WIN32)
-    link_directories(${CMAKE_SOURCE_DIR}/libwin)
-endif()
-
 set(CMAKE_CXX_STANDARD 20)
 
-include_directories(include)
+if(UNIX)
+    link_directories(lib/unix)
+elseif (WIN32)
+    link_directories(${CMAKE_SOURCE_DIR}/lib/win)
+endif()
+
+include_directories(include/all)
 if(WIN32)
-    include_directories(${CMAKE_SOURCE_DIR}/includewin)
+    include_directories(${CMAKE_SOURCE_DIR}/include/win)
 endif()
 
 include_directories(${CMAKE_SOURCE_DIR}/src)
 
-add_executable(RPG ${CMAKE_SOURCE_DIR}/main.cpp ${CMAKE_SOURCE_DIR}/include/sqlite/sqlite3.c ${CMAKE_SOURCE_DIR}/include/tinyxml/tinyxml2.cpp ${CMAKE_SOURCE_DIR}/include/SDL_FontCache/SDL_FontCache.c)
+add_executable(RPG ${CMAKE_SOURCE_DIR}/main.cpp ${CMAKE_SOURCE_DIR}/include/all/sqlite/sqlite3.c ${CMAKE_SOURCE_DIR}/include/all/tinyxml/tinyxml2.cpp ${CMAKE_SOURCE_DIR}/include/all/SDL_FontCache/SDL_FontCache.c)
 add_subdirectory(${CMAKE_SOURCE_DIR}/src)
 
 if (UNIX)
