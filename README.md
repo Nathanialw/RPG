@@ -1,6 +1,6 @@
 **Linux:**
 
-sudo apt install -y sdl2-dev\
+sudo apt install -y libsdl2-dev\
 sudo apt install -y libsdl2-image-dev\
 sudo apt install -y libsdl2-ttf-dev\
 sudo apt install -y libsdl2-mixer-dev\
