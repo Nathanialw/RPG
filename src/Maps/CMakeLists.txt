@@ -6,6 +6,7 @@ target_sources(RPG
         World/world.h
         World/world_grid.h
         World/cave.h
+        World/town.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

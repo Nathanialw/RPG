@@ -7,6 +7,7 @@
 #include "Maps/World/map.h"
 #include "Maps/World/world.h"
 #include "Maps/World/world_update.h"
+#include "Maps/World/town.h"
 #include "Objects/Collision/collision.h"
 #include "Objects/Collision/formation_collisions.h"
 #include "Objects/Movement/unit_positions.h"
@@ -90,13 +91,13 @@ namespace Init {
         Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
         Mouse::Init_mouse(zone);
         if (Create_Entities::startup) {
-//            Town::Init(zone, state);
             Create_Character_Entity::Init_Player(zone, state, playerOptions);
         } else {
             Recreate_Player(zone, state);
         }
         Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
         Maps::Init_Caves(zone, state, World::world[state].cave);
+        Town::  Init(zone, state);
         World_Update::Init_Tiles_Array(zone, state);
         Quad_Tree::Fill_Quad_Tree(zone, state);
     };
