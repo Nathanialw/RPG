@@ -1,4 +1,4 @@
 #pragma once
 namespace Settings {
-  float cameraScale = 1.0f;
+    float cameraScale = 2.0f;
 }

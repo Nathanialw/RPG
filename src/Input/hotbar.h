@@ -166,10 +166,6 @@ namespace Hotbar {
         return 0;
     }
 
-    int PLACEHOLDER(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-        return 0;
-    }
-
     int Zoom_In(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
         Interface::Update_Zoom(zone, 1);
         return 0;
@@ -208,6 +204,10 @@ namespace Hotbar {
         return 0;
     }
 
+    int PLACEHOLDER(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        return 0;
+    }
+
     void Init_Hotbar() {
         Hotbar_Structs::keybinds = {
                 {SDLK_1,            Action_Bar::actionBar.actionBar.spell[0].cast},
@@ -225,8 +225,8 @@ namespace Hotbar {
                 {SDLK_i,            Info_Toggle},
                 {SDLK_b,            Bag_Toggle},
                 {SDLK_p,            Pause_Toggle},
-                {SDLK_LEFTBRACKET,  Mouse_On},
-                {SDLK_RIGHTBRACKET, Mouse_Off},
+                {SDLK_LEFTBRACKET,      Mouse_On},
+                {SDLK_RIGHTBRACKET,   Mouse_Off},
                 {SDLK_MINUS,        Zoom_Out},
                 {SDLK_EQUALS,       Zoom_In},
                 {SDLK_l,            Toggle_Spellbook},

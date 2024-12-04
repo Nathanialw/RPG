@@ -115,7 +115,7 @@ namespace Init {
 
     Game Init_World(Game &game, int &state) {
         Clear_Events();
-        Music::Play(World::world[state].music.c_str());
+        Music::Play(World::world[state].music);
         return game;
     }
 

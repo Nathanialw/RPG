@@ -227,13 +227,13 @@ namespace Component {
     };
 
     struct Selected {
-        SDL_Texture *texture;
-        SDL_Rect clip;
-        int numFrames;
-        int currentFrame;
-        float frameLength;
-        float currentFrameTime;
-        int targetIndex;
+        SDL_Texture *texture{};
+        SDL_Rect clip{};
+        int numFrames{};
+        int currentFrame{};
+        float frameLength{};
+        float currentFrameTime{};
+        int targetIndex{};
         bool selected = false;
     };
 

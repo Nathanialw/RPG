@@ -99,13 +99,17 @@ namespace Create_Entities {
                 zone.emplace<Collision_Component::Collider_Data>(entity, data.interior, offsets.colliderOffset, data.radius, x, y, data.collider_type, ((float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f));
                 Collision::Save_Line_Segment(zone, entity, templateName);
 
-                zone.emplace_or_replace<Component::Interaction_Rect>(entity, (x - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w / 2.0f), (y - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f),
-                                                                     (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w, (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h, false);
+                zone.emplace_or_replace<Component::Interaction_Rect>(
+                        entity,
+                        (x - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w / 2.0f),
+                        (y - (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h / 2.0f),
+                        (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).w,
+                        (float) frameData.frameData.imageData->at(frameData.frameData.sheet_name).h,
+                        false);
 
                 if (Collision_Component::polygonColliders.contains(data.interior)) {
                     Building_Component::Polygon treePolygon;
                     for (auto polygon: Collision_Component::polygonColliders.at(data.interior).placementBox.pointVecs) {
-                        //            treePolygon.push_back({polygon.x + offsets.colliderOffset.x, polygon.y - offsets.colliderOffset.y});
                         treePolygon.push_back({polygon.x, polygon.y});
                     }
                     std::vector<Building_Component::Polygon> polygons;

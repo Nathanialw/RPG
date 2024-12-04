@@ -101,6 +101,8 @@ namespace AI {
                     }
                 }
             }
+            //TODO: there is a bug, when you command a unit to move with pathing, it will pauses for a moment at each node
+
             if (!found && zone.any_of<Component::Location>(unit_ID)) {
                 auto spawnPosition = zone.get<Component::Location>(unit_ID).current;
                 if (!Movement_Functions::Check_If_Arrived(unitPosition, spawnPosition)) {

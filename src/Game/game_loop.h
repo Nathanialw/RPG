@@ -5,20 +5,14 @@
 #include "ai_control.h"
 #include "debug_system.h"
 #include "event_handler.h"
-//#include "formation_collisions.h"
 #include "graphics.h"
 #include "init.h"
 #include "interface.h"
-//#include "map.h"
 #include "Graphics/Rendering/rendering.h"
 #include "Input/Movement/movement.h"
 #include "effects.h"
 #include "spells.h"
-//#include "squad_control.h"
 #include "Graphics/XML_Parsers/texture_packer.h"
-//#include "ui_gameloop_function_times.h"
-//#include "unit_positions.h"
-//#include "unit_status.h"
 #include "Audio/init.h"
 #include "Maps/Pathing/a_star.h"
 #include "quad_tree.h"
@@ -83,6 +77,7 @@ namespace Game_Loop {
   bool Game_Running(entt::registry &zone, int &state) {
     Game_State();
     Timer::startPerf = SDL_GetPerformanceCounter();
+    Interface::Update_Zoom(zone, -1);
 
     state = Game_Loop(zone, state);
 
