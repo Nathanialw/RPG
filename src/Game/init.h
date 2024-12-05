@@ -97,7 +97,7 @@ namespace Init {
         }
         Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
         Maps::Init_Caves(zone, state, World::world[state].cave);
-        Town::  Init(zone, state);
+        Town::Init(zone, state);
         World_Update::Init_Tiles_Array(zone, state);
         Quad_Tree::Fill_Quad_Tree(zone, state);
     };

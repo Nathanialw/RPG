@@ -12,7 +12,7 @@
 #include "hotbar_structs.h"
 #include "interface.h"
 #include "map"
-#include "sinister_strike.h"
+#include "Spells/Warrior/sinister_strike.h"
 #include "string"
 #include "ui.h"
 #include "ui_actionbar.h"

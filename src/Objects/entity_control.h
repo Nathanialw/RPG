@@ -47,11 +47,13 @@ namespace Entity_Control {
         float width = entityPosition.y - targetPosition.y;
 
         if (((length * length) + (width * width)) <= ((range + targetRadius.fRadius) * (range + targetRadius.fRadius))) {
+            std::cout << "Target in range" << std::endl;
             //float range = Utilities::Get_Hypotenuse(length, width);
             //if (range <= (meleeRange.meleeRange + targetRadius.fRadius)) {
             return true;
             //}
         }
+        std::cout << "Target out of range" << std::endl;
         return false;
     }
 }

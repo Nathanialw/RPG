@@ -1,7 +1,8 @@
 target_sources(RPG
         PUBLIC
-        instant_attack.h
-        sinister_strike.h
+        Warrior/auto_attack.h
+        Warrior/instant_attack.h
+        Warrior/sinister_strike.h
         death_spells.h
         spells.h
         skills.h

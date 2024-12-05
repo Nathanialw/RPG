@@ -4,7 +4,7 @@
 #include "SDL2/SDL.h"
 
 int main(int argc, char* argv[]) {
-    srand((unsigned int) time(NULL));
+    srand((unsigned int) time(nullptr));
 
     Init::Loaded loaded;
 
@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
             Init::Reload_Zone(World::world[loaded.instance].zone, loaded.instance);
         }
         // Clear and reset data
-        SDL_RenderSetScale(Graphics::renderer, 1.0f, 1.0f);
+        SDL_RenderSetScale(Graphics::renderer, Settings::cameraScale, Settings::cameraScale);
         World::Mouse_Hover_Entities.clear();
 
         if (Game_Loop::Game_Running(World::world[loaded.instance].zone, loaded.instance) == 0) {

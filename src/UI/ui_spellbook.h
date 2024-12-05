@@ -2,7 +2,7 @@
 #include "Input/mouse_control.h"
 #include "Input/mouse_data.h"
 #include "graphics.h"
-#include "sinister_strike.h"
+#include "Spells/Warrior/sinister_strike.h"
 #include "spell_data.h"
 #include "ui_elements.h"
 
@@ -20,6 +20,7 @@
 #include "Nature/nature.h"
 #include "lightning/lightning.h"
 #include "lightning/lightningball.h"
+#include "Warrior/auto_attack.h"
 
 namespace UI_Spellbook {
 
@@ -48,11 +49,6 @@ namespace UI_Spellbook {
   }
 
   int PLACEHOLDER(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-    return 0;
-  }
-
-  int Sinister_Strike(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-    Sinister_Strike::Instant_Attack(zone, entity);
     return 0;
   }
 
@@ -122,9 +118,9 @@ namespace UI_Spellbook {
     spellbook.Skill_Trees[Spell_Data::earth][10] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::earth][11] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
 
-    spellbook.Skill_Trees[Spell_Data::warrior][0] = Spell_Data::Spell(Graphics::sinisterstrike, Sinister_Strike);
+    spellbook.Skill_Trees[Spell_Data::warrior][0] = Spell_Data::Spell(Graphics::sinisterstrike, Sinister_Strike::Sinister_Strike);
     spellbook.Skill_Trees[Spell_Data::warrior][1] = Spell_Data::Spell(Graphics::redArrow, Shoot_Arrow::Cast_Spell);
-    spellbook.Skill_Trees[Spell_Data::warrior][2] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
+    spellbook.Skill_Trees[Spell_Data::warrior][2] = Spell_Data::Spell(Graphics::sinisterstrike, Warrior::Auto_Attack);
     spellbook.Skill_Trees[Spell_Data::warrior][3] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::warrior][4] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);
     spellbook.Skill_Trees[Spell_Data::warrior][5] = Spell_Data::Spell(Graphics::default_icon, PLACEHOLDER);

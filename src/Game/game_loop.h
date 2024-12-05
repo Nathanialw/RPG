@@ -77,7 +77,6 @@ namespace Game_Loop {
   bool Game_Running(entt::registry &zone, int &state) {
     Game_State();
     Timer::startPerf = SDL_GetPerformanceCounter();
-    Interface::Update_Zoom(zone, -1);
 
     state = Game_Loop(zone, state);
 
