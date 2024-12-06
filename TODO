@@ -1,0 +1,25 @@
+
+ADD
+
+- update player stats - mana/faith
+- update items with new affixes and suffixes
+- generate props on tiles
+- display enemy stats when selected
+- minimap
+
+- lighting
+- player line of sight
+
+- add shrines
+- BSP map generation
+- water/acid/lava
+- shop UI when selecting a merchant
+- add more enemies
+- add humans as playable
+
+FIX
+
+- fix pathing when commanding a unit
+- fix AWSD movement when auto attacking
+- fix units flickering when inside building
+- fix alignment of interior and exterior of buildings

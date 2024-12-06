@@ -240,8 +240,12 @@ namespace Maps {
 		}
 	}
 
-	//spawn caves onto the map that never despawn
+	//spawn caves	 onto the map that never despawn
 	void Init_Caves(entt::registry &zone, int &state, std::string &tileSet) {
+		if (state != 2)
+			return;
+		std::cout << "Init_Caves: " << state << std::endl;
+
 		Procedural_Components::Seed seed;
 		int xmlIndex = 0;
 		std::string objectName;

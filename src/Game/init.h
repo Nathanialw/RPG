@@ -89,11 +89,10 @@ namespace Init {
         Graphics::defaultIcon[state] = Graphics::Create_Icon_Entity(zone, Graphics::default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
         Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
         Mouse::Init_mouse(zone);
-        if (Create_Entities::startup) {
+        if (Create_Entities::startup)
             Create_Character_Entity::Init_Player(zone, state, playerOptions);
-        } else {
+        else
             Recreate_Player(zone, state);
-        }
 		World_Update::Init_Tiles_Array(zone, state);
 		Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
 		Maps::Init_Caves(zone, state, World::world[state].cave);
@@ -148,9 +147,8 @@ namespace Init {
         World::world[state].loaded = true;
         if (Create_Entities::startup) {
             options = Character_Create();
-            if (!options.success) {
+            if (!options.success)
                 return game;
-            }
         }
         Create_Game_entities(zone, state, tilesetName, options);
         Init_World(game, state);
