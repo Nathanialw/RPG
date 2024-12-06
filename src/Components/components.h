@@ -593,6 +593,9 @@ namespace Component {
     struct Followers {
         std::vector<entt::entity> followers;
     };
+
+    struct  Interactable {
+    };
 }// namespace Component
 
 

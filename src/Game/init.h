@@ -36,7 +36,6 @@ namespace Init {
         bool success = false;
         Menu::Menu menu;
         int instanceCount = 0;
-        bool overworld = false;
         bool cave = false;
 
         void incrementInstance() {
@@ -95,10 +94,10 @@ namespace Init {
         } else {
             Recreate_Player(zone, state);
         }
-        Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
-        Maps::Init_Caves(zone, state, World::world[state].cave);
-        Town::Init(zone, state);
-        World_Update::Init_Tiles_Array(zone, state);
+		World_Update::Init_Tiles_Array(zone, state);
+		Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
+		Maps::Init_Caves(zone, state, World::world[state].cave);
+		Town::Init(zone, state);
         Quad_Tree::Fill_Quad_Tree(zone, state);
     };
 

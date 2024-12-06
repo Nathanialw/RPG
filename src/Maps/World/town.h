@@ -41,7 +41,6 @@ namespace Town {
         if (state == 2) {
             std::cout << "Town Init" << std::endl;
 
-            //Create_Entities::Create_Entity(zone, state, 1660, 8924, data, true, summon, unitIndex);
             Component::Unit_Index unitIndex = {"demons", 0};
 
             Social_Component::Summon summon;
@@ -54,7 +53,7 @@ namespace Town {
             Create_Entities::Create_Entity(zone, state, 2350, 9860, data, false, summon, unitIndex); //merchant
 
             Building(zone, state, 500, 8550, "Medieval RTP Building Exteriors Building1_1"); //player house
-            Building(zone, state, 2200, 8750, "Medieval RTP Building Exteriors Building1_6"); //peaseant house
+            Building(zone, state, 2200, 8750, "Medieval RTP Building Exteriors Building1_6"); //peasant house
             Building(zone, state, 2400, 9500, "Medieval RTP Building Exteriors Building1_6"); //merchant house
         }
         else {

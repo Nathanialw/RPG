@@ -6,48 +6,48 @@
 
 namespace Debug {
 
-  //  unsigned long int numEntities;
-  //  unsigned long int numRendered;
-  //  unsigned long int interactionRects;
-  //  unsigned long int renderChecks;
-  //  unsigned long int entityCount;
-  //  unsigned long int renderChecks;
-  //  unsigned long int collisionChecks;
-  //  unsigned long int renderComponent;
-  //  unsigned long int UpdateQuadTreeDebug;
-  //  unsigned long int treeSize;
-  //  bool showPosition = false;
+	//  unsigned long int numEntities;
+	//  unsigned long int numRendered;
+	//  unsigned long int interactionRects;
+	//  unsigned long int renderChecks;
+	//  unsigned long int entityCount;
+	//  unsigned long int renderChecks;
+	//  unsigned long int collisionChecks;
+	//  unsigned long int renderComponent;
+	//  unsigned long int UpdateQuadTreeDebug;
+	//  unsigned long int treeSize;
+	//  bool showPosition = false;
 
-  enum Settings {
-    Framerate = 0,
-    NumRendered,
-    InteractionRects,
-    EntityCount,
-    RenderChecks,
-    CollisionChecks,
-    RenderComponent,
-    UpdateQuadTreeDebug,
-    TreeSize,
-    entityPositions,
-    loopTimers,
-    lockFramerate,
-    debugFrame,
-    volume,
-    showPathing,
-    SIZE
-  };
+	enum Settings {
+		Framerate = 0,
+		NumRendered,
+		InteractionRects,
+		EntityCount,
+		RenderChecks,
+		CollisionChecks,
+		RenderComponent,
+		UpdateQuadTreeDebug,
+		TreeSize,
+		entityPositions,
+		loopTimers,
+		lockFramerate,
+		debugFrame,
+		volume,
+		showPathing,
+		SIZE
+	};
 
-  std::array<bool, Settings::SIZE> settings;
-  std::array<unsigned long int, Settings::SIZE> settingsValue;
-  // change labels on line 23 of menu_options.h as well
-  std::array<std::string, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Debug Frame", "Volume", "Show Pathing"};
+	std::array<bool, Settings::SIZE> settings;
+	std::array<unsigned long int, Settings::SIZE> settingsValue;
+	// change labels on line 23 of menu_options.h as well
+	std::array<std::string, Debug::Settings::SIZE> labels = {"Framerate", "Num Rendered", "Interaction Rects", "entity count", "Render Checks", "Collision Checks", "Num w/ Render Components", "Update Quad Tree Debug", "Quad Tree Size", "Entity Positions", "Loop Timers", "Lock Framerate", "Debug Frame", "Volume", "Show Pathing"};
 
-  void Load_Settings() {
-    for (auto &i: settings) {
-      i = false;
-    }
-  };
+	void Load_Settings() {
+		for (auto &i: settings) {
+			i = false;
+		}
+	};
 
-  struct DEBUG_Position {
-  };
+	struct DEBUG_Position {
+	};
 }// namespace Debug
