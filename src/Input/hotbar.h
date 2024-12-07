@@ -2,7 +2,7 @@
 
 #include "Audio/effects.h"
 #include "Fire/fire.h"
-#include "Fog_Of_War/fog_of_war.h"
+#include "Lighting//lighting.h"
 #include "Maps/World/cave.h"
 #include "SDL2/SDL.h"
 #include "UI/ui_info.h"
@@ -48,9 +48,7 @@ namespace Hotbar {
 
     int functionDivideByTwo(int a) { return a / 2; }
 
-    ssSpells Fire_Spells[] = {function,
-                              functionTimesTwo,
-                              functionDivideByTwo};
+    ssSpells Fire_Spells[] = {function, functionTimesTwo, functionDivideByTwo};
 
     void Call_Functions() {
         for (int i = 0; i < 3; ++i) {
@@ -177,16 +175,12 @@ namespace Hotbar {
     }
 
     int Sight_Increase(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-        Fog_Of_War::setFogOfWar = false;
-        Fog_Of_War::lightRadius++;
-        if (Fog_Of_War::lightRadius >= 15) Fog_Of_War::lightRadius = 15;
+		Lighting::Sight_Increase(zone);
         return 0;
     }
 
     int Sight_Decrease(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-        Fog_Of_War::setFogOfWar = false;
-        Fog_Of_War::lightRadius--;
-        if (Fog_Of_War::lightRadius <= 1) Fog_Of_War::lightRadius = 1;
+		Lighting::Sight_Decrease(zone);
         return 0;
     }
 

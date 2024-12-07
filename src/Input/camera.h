@@ -38,6 +38,13 @@ namespace Camera_Control {
     return screenRect;
   }
 
+	Component::Position Convert_Position_To_Screen_Coods(Component::Camera &camera, Component::Position position) {
+		Component::Position screenPosition = {};
+		screenPosition.x = position.x - camera.screen.x;
+		screenPosition.y = position.y - camera.screen.y;
+		return screenPosition;
+	}
+
   SDL_Rect Convert_Rect_To_Scale(SDL_Rect &rect, Component::Camera &camera) {
 
     SDL_FRect fRenderToScreen = {

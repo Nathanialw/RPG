@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Fog_Of_War/fog_of_war.h"
+#include "Lighting/lighting.h"
 #include "Input/camera.h"
 #include "Input/pause.h"
 #include "Maps/Pathing/a_star.h"
@@ -317,7 +317,7 @@ namespace Rendering {
 			Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
 			//            RenderLine(zone, camera);
 			A_Star::Draw(zone, camera);
-			Fog_Of_War::Render(camera);
+			Lighting::Render(zone, camera);
 			Items::Show_Ground_Items(zone, camera);
 			Items::Unit_Name_On_Mouseover(zone, camera);
 			Social_Control::Show_Dialogue(zone, camera);

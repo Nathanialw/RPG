@@ -272,6 +272,7 @@ namespace Create_Entities {
 					Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
 					zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
 				}
+				zone.emplace_or_replace<Component::Light_Radius>(entity, 5);
 			}
 				// if this is the first run make these, otherwise copy them
 			else if (startup) {
@@ -313,6 +314,7 @@ namespace Create_Entities {
 				zone.emplace_or_replace<Component::Target_Range>(entity, 2000.0f * data.scale, position.x - (2000.0f / 2.0f * data.scale), position.y - (2000.0f / 2.0f * data.scale), 2000.0f * data.scale, 2000.0f * data.scale);
 				auto &full_name = zone.emplace_or_replace<Component::Name>(entity);
 				Character_Data::Get_Name(full_name);
+				zone.emplace_or_replace<Component::Light_Radius>(entity, 15);
 			} else {
 				zone.emplace_or_replace<Component::Sight_Range>(entity, data.sight_radius * data.scale, position.x - (data.sight_radius / 2.0f * data.scale), position.y - (data.sight_radius / 2.0f * data.scale), data.sight_radius * data.scale, data.sight_radius * data.scale);
 			}

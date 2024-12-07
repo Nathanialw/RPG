@@ -578,6 +578,10 @@ namespace Component {
         float radius;
     };
 
+	struct Light_Radius {
+		int lightRadius;
+	};
+
     struct Scrolling_Damage_Text {
         SDL_FPoint position;
         std::string damageText;
