@@ -20,6 +20,7 @@
 #include "utilities.h"
 #include <SDL2/SDL.h>
 #include <vector>
+#include "ui_target_info.h"
 
 namespace Rendering {
 
@@ -341,6 +342,7 @@ namespace Rendering {
 			Interface::Foreground(zone, state, camera);
 			//on top of mouse
 			Tooltip::Show_Item_Tooltip(zone, entity, state, mouse, camera);
+			Target_Info::Show_Target_Info(zone, state, mouse, camera);
 			Render_Mouse_Item(zone, camera);
 			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
 			if (Items::showGroundItems) {//****//search quad tree instead

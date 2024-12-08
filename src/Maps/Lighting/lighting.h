@@ -94,7 +94,7 @@ namespace Lighting {
 			return;
 		}
 
-		Uint32* dst = (Uint32*)pixels;
+		auto* dst = (Uint32*)pixels;
 		std::copy(fogOfWarPixels.begin(), fogOfWarPixels.end(), dst);
 
 		SDL_UnlockTexture(texture);
