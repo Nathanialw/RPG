@@ -25,7 +25,7 @@ namespace Component {
     };
 
     struct Interaction_Rect {
-        SDL_FRect rect;
+        SDL_FRect rect{};
         bool tall = false;
     };
 
@@ -105,10 +105,10 @@ namespace Component {
     };
 
     struct Velocity {
-        float dX, dY;
-        f2 magnitude;
-        float speed;
-        float angle;
+        float dX{}, dY{};
+        f2 magnitude{};
+        float speed{};
+        float angle{};
         bool hexDir = false;
     };
 
@@ -538,14 +538,14 @@ namespace Component {
     struct Bag {
         //    std::vector<entt::entity> bag;
         f2 numOfSlots = {8.0f, 4.0f};
-        std::array<entt::entity, 32> bag;
+        std::array<entt::entity, 32> bag{};
     };
 
     struct Icon {
-        SDL_Texture *pBackground = NULL;
-        SDL_Texture *pTexture = NULL;
-        SDL_Texture *pIconRarityBorder = NULL;
-        SDL_Texture *pIconBorder = NULL;
+        SDL_Texture *pBackground = nullptr;
+        SDL_Texture *pTexture = nullptr;
+        SDL_Texture *pIconRarityBorder = nullptr;
+        SDL_Texture *pIconBorder = nullptr;
         SDL_Rect clipSprite = {};
         SDL_Rect clipIcon = {};
         f2 renderRectSize = {};

@@ -333,6 +333,7 @@ namespace Rendering {
 			UI_Spellbook::Draw_Spellbook(camera);
 			UI_Debug::Draw(zone, camera);
 			UI_Info::Draw_Attributes(camera);
+            Minimap::Render(zone, state, camera);
 			Pause::Pause_Control(camera);
 			if (!Menu::Render_Menu(zone, state, camera)) {
 				return false;
@@ -344,8 +345,9 @@ namespace Rendering {
 			Tooltip::Show_Item_Tooltip(zone, entity, state, mouse, camera);
 			Target_Info::Show_Target_Info(zone, state, mouse, camera);
 			Render_Mouse_Item(zone, camera);
+
 			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
-			if (Items::showGroundItems) {//****//search quad tree instead
+            if (Items::showGroundItems) {//****//search quad tree instead
 				auto view = zone.view<Ground_Item, Component::Renderable>();
 				for (auto item: view) {
 					auto &box = zone.get<Ground_Item>(item);

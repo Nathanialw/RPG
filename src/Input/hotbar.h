@@ -16,6 +16,7 @@
 #include "string"
 #include "ui.h"
 #include "ui_actionbar.h"
+#include "ui_minimap.h"
 /*
  * make an array of functions for everything that can go onto the hotbar, ie skills
  *
@@ -198,6 +199,12 @@ namespace Hotbar {
         return 0;
     }
 
+    int Minimap_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        Minimap::Toggle();
+        return 0;
+    }
+
+
     int PLACEHOLDER(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
         return 0;
     }
@@ -217,6 +224,7 @@ namespace Hotbar {
                 {SDLK_e,            					PLACEHOLDER},
                 {SDLK_r,            					PLACEHOLDER},
                 {SDLK_f,            					PLACEHOLDER},
+                {SDLK_m,                            Minimap_Toggle},
                 {SDLK_TAB,          				Tab_Target},
                 {SDLK_ESCAPE,       			Menu_Toggle},
                 {SDLK_r,            					Auto_Run},

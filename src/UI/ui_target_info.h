@@ -25,6 +25,11 @@ namespace Target_Info {
     }
 
     void Render_Info(entt::registry &zone, entt::entity &item, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
+        if (!zone.all_of<Component::Alive>(item))
+            return;
+        if (!zone.get<Component::Alive>(item).bIsAlive)
+            return;
+
         auto &name = zone.get<Component::Name>(item).first;
 
         std::string attack = "5";
