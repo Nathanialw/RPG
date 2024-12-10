@@ -242,16 +242,46 @@ namespace Maps {
 
     //spawn caves	 onto the map that never despawn
     void Init_Caves(entt::registry &zone, int &state, std::string &tileSet) {
-        if (state != 2)
+
+        //cave
+        if (state == 2) {
+            std::cout << "Init_Caves: " << state << std::endl;
+
+            Procedural_Components::Seed seed;
+            int xmlIndex = 0;
+            std::string objectName;
+
+            int numTiles = World_Data::REGION_SIZE * World_Data::REGION_SIZE;
+            int avgPerRegion = 1;
+
+            for (int i = 0; i < World_Data::REGION_SIZE; ++i) {
+                for (int j = 0; j < World_Data::REGION_SIZE; ++j) {
+                    seed.seed = Procedural_Generation::Create_Initial_Seed(i, j);
+                    int numObjects = Procedural_Generation::Random_Int(0, numTiles, seed);
+                    if (numObjects < avgPerRegion) {
+                        float x = Procedural_Generation::Random_float(0, (int) World::size.width, seed);
+                        float y = Procedural_Generation::Random_float(0, (int) World::size.height, seed);
+
+                        if (Game_Objects_Lists::tilesets[tileSet].empty())
+                            return;
+
+                        xmlIndex = Procedural_Generation::Random_Int(0, (int) Game_Objects_Lists::tilesets[tileSet].size(), seed);
+                        objectName = Game_Objects_Lists::tilesets[tileSet][xmlIndex];
+
+                        Create_Entities::PVG_Building(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, i, j, objectName, xmlIndex);
+                    }
+                }
+            }
             return;
-        std::cout << "Init_Caves: " << state << std::endl;
+        }
+
+        //portal
+        std::cout << "Init_Caves: " << state << " Portals" << std::endl;
 
         Procedural_Components::Seed seed;
-        int xmlIndex = 0;
-        std::string objectName;
 
         int numTiles = World_Data::REGION_SIZE * World_Data::REGION_SIZE;
-        int avgPerRegion = 1;
+        int avgPerRegion = 2;
 
         for (int i = 0; i < World_Data::REGION_SIZE; ++i) {
             for (int j = 0; j < World_Data::REGION_SIZE; ++j) {
@@ -261,13 +291,18 @@ namespace Maps {
                     float x = Procedural_Generation::Random_float(0, (int) World::size.width, seed);
                     float y = Procedural_Generation::Random_float(0, (int) World::size.height, seed);
 
-                    if (Game_Objects_Lists::tilesets[tileSet].empty())
-                        return;
+                    SDL_FRect rect;
+                    rect.x = i * World::size.width + (World::size.width / 2.0f);
+                    rect.y = j * World::size.height + (World::size.width / 2.0f);
 
-                    xmlIndex = Procedural_Generation::Random_Int(0, (int) Game_Objects_Lists::tilesets[tileSet].size(), seed);
-                    objectName = Game_Objects_Lists::tilesets[tileSet][xmlIndex];
+                    std::string objectName = Room::Create_Portal(World::world[state].tileset, World_Data::tilesEntities[0][i][j].tileTexture, i, j);
+                    std::cout << "Creating portal object: " << objectName << std::endl;
+                    if (objectName.empty())
+                        continue;
 
-                    Create_Entities::PVG_Building(zone, state, (i * World::size.width) + x, (j * World::size.height) + y, i, j, objectName, xmlIndex);
+                    int xmlIndex = Game_Objects_Lists::tilesetObjectIndexes[World::world[state].tileset][objectName];
+
+                    Create_Entities::PVG_Building(zone, state, rect.x + x, rect.y + y, i, j, objectName, xmlIndex);
                 }
             }
         }

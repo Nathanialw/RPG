@@ -4,10 +4,7 @@ ADD
 - update player stats - mana/faith
 - update items with new affixes and suffixes
 - generate props on tiles
-- display enemy stats when selected
-- minimap
 
-- lighting
 - player line of sight
 
 - add shrines

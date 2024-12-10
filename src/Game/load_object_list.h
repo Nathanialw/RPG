@@ -132,6 +132,7 @@ namespace Load_Object_List {
         Load_Tileset("hell");
         Load_Tileset("cave_entrances");
         Load_Tileset("labyrinth");
+//        Load_Tileset("portals");
         SQLite_Load_Tileset::Load("labyrinth");
 
 

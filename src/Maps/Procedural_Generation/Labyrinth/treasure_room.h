@@ -5,6 +5,12 @@
 
 namespace Room {
 
+    std::string Create_Portal(const std::string &tileset, const int &tileType, const int &x, const int &y) {
+        Procedural_Components::Seed seed;
+        seed.seed = Procedural_Generation::Create_Initial_Seed(x, y);
+        return Game_Objects_Lists::tilesetObjects[tileset]["chest"]["Chest1"][1];
+    }
+
 	std::string Populate_Objects(const std::string &tileset, const int &tileType, const int &x, const int &y) {
 		Procedural_Components::Seed seed;
 		seed.seed = Procedural_Generation::Create_Initial_Seed(x, y);

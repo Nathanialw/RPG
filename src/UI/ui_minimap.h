@@ -107,6 +107,9 @@ namespace Minimap {
             }
 
             if (view.get<Component::Entity_Type>(entity) == Component::Entity_Type::item) {
+                if (!zone.any_of<Item_Component::Ground_Item>(entity))
+                    continue;
+
                 auto &position = view.get<Component::Position>(entity);
                 Component::Position miniMapPosition{};
                 miniMapPosition.x = minimapRect.x + (position.x / tileSize) * cellSize;

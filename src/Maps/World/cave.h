@@ -9,7 +9,8 @@ namespace Cave {
     bool Set_As_Cave(entt::registry &zone, entt::entity &entity, std::string &templateName) {
         if (templateName == "CaveEntrance1" ||
             templateName == "CaveEntrance2" ||
-            templateName == "CaveEntrance3") {
+            templateName == "CaveEntrance3" ||
+            templateName == "Chest1_2") {
 
             World::increment_Zone();
             auto &dungeon = zone.emplace_or_replace<Component::Dungeon>(entity);

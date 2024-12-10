@@ -148,6 +148,7 @@ namespace Create_Entities {
 		return true;
 	}
 
+    //no animations
 	entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex) {
 		entt::entity entity = Create_Entities::Create_Render_Object(zone, state, x, y, templateName, xmlIndex).entity;
 		if (!Cave::Set_As_Cave(zone, entity, templateName)) {
