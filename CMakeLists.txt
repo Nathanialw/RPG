@@ -19,7 +19,8 @@ elseif(WIN32)
             src/Spells/Warrior/auto_attack.h
             src/Maps/Fog_Of_War/fog_of_war.h
             src/UI/ui_target_info.h
-            src/UI/ui_minimap.h)
+            src/UI/ui_minimap.h
+            src/Maps/Lighting/line_of_sight.h)
     target_link_libraries(RPG SDL2 SDL2main SDL2_image SDL2_ttf SDL2_mixer theora vorbis ogg box2d tmxlite)
     target_compile_definitions(RPG PRIVATE SDL_MAIN_HANDLED)
     target_compile_options(RPG PRIVATE /bigobj)

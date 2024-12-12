@@ -17,6 +17,6 @@ ADD
 FIX
 
 - fix pathing when commanding a unit
-- fix AWSD movement when auto attacking
+- fix WASD movement when auto attacking
 - fix units flickering when inside building
 - fix alignment of interior and exterior of buildings

@@ -88,6 +88,20 @@ namespace Utilities {
     return false;
   };
 
+  SDL_FRect Get_Rect_Intersect(const SDL_FRect &entity, const SDL_FRect &target) {
+    SDL_FRect rect = {0, 0, 0, 0};
+    if ((entity.y <= target.y + target.h) &&
+        (entity.x <= target.x + target.w) &&
+        (entity.y + entity.h >= target.y) &&
+        (entity.x + entity.w >= target.x)) {
+        rect.x = (entity.x > target.x) ? entity.x : target.x;
+        rect.y = (entity.y > target.y) ? entity.y : target.y;
+        rect.w = (entity.x + entity.w < target.x + target.w) ? entity.x + entity.w - rect.x : target.x + target.w - rect.x;
+        rect.h = (entity.y + entity.h < target.y + target.h) ? entity.y + entity.h - rect.y : target.y + target.h - rect.y;
+    }
+    return rect;
+  }
+
   bool bFPoint_FRectIntersect(const SDL_FPoint &p, const SDL_FRect &r) {
     return ((p.x >= r.x) && (p.x < (r.x + r.w)) && (p.y >= r.y) && (p.y < (r.y + r.h))) ? SDL_TRUE : SDL_FALSE;
   };
@@ -95,6 +109,11 @@ namespace Utilities {
   bool bPoint_RectIntersect(const SDL_FPoint &p, const SDL_FRect &r) {
     return ((p.x >= r.x) && (p.x < (r.x + r.w)) && (p.y >= r.y) && (p.y < (r.y + r.h))) ? SDL_TRUE : SDL_FALSE;
   };
+
+    bool bPoint_RectIntersect(const float &x, const float &y, const SDL_FRect &r) {
+    return ((x >= r.x) && (x < (r.x + r.w)) && (y >= r.y) && (y < (r.y + r.h))) ? SDL_TRUE : SDL_FALSE;
+    }
+
 
   SDL_Rect SDL_FRect_To_SDL_Rect(const SDL_FRect &a) {
     SDL_Rect b = {};

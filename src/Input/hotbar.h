@@ -176,12 +176,12 @@ namespace Hotbar {
     }
 
     int Sight_Increase(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-		Lighting::Sight_Increase(zone);
+		Lighting::Sight_Update(zone, 1);
         return 0;
     }
 
     int Sight_Decrease(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-		Lighting::Sight_Decrease(zone);
+		Lighting::Sight_Update(zone, -1);
         return 0;
     }
 
@@ -204,6 +204,25 @@ namespace Hotbar {
         return 0;
     }
 
+    int Decrease_Low(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        Line_Of_Sight::Update_Close(-5);
+        return 0;
+    }
+
+    int Increase_Low(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        Line_Of_Sight::Update_Close(5);
+        return 0;
+    }
+
+    int Decrease_High(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        Line_Of_Sight::Update_Far(-5);
+        return 0;
+    }
+
+    int Increase_High(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        Line_Of_Sight::Update_Far(5);
+        return 0;
+    }
 
     int PLACEHOLDER(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
         return 0;
@@ -211,26 +230,26 @@ namespace Hotbar {
 
     void Init_Hotbar() {
         Hotbar_Structs::keybinds = {
-                {SDLK_1,            					Action_Bar::actionBar.actionBar.spell[0].cast},
-                {SDLK_2,            					Action_Bar::actionBar.actionBar.spell[1].cast},
-                {SDLK_3,            					Action_Bar::actionBar.actionBar.spell[2].cast},
-                {SDLK_4,            					Action_Bar::actionBar.actionBar.spell[3].cast},
-                {SDLK_5,            					Action_Bar::actionBar.actionBar.spell[5].cast},
-                {SDLK_6,            					Action_Bar::actionBar.actionBar.spell[6].cast},
-                {SDLK_7,            					Action_Bar::actionBar.actionBar.spell[7].cast},
-                {SDLK_8,            					Action_Bar::actionBar.actionBar.spell[8].cast},
-                {SDLK_9,            					Action_Bar::actionBar.actionBar.spell[9].cast},
-                {SDLK_q, 							PLACEHOLDER},
-                {SDLK_e,            					PLACEHOLDER},
-                {SDLK_r,            					PLACEHOLDER},
-                {SDLK_f,            					PLACEHOLDER},
-                {SDLK_m,                            Minimap_Toggle},
-                {SDLK_TAB,          				Tab_Target},
+                {SDLK_1,            				Action_Bar::actionBar.actionBar.spell[0].cast},
+                {SDLK_2,            				Action_Bar::actionBar.actionBar.spell[1].cast},
+                {SDLK_3,            				Action_Bar::actionBar.actionBar.spell[2].cast},
+                {SDLK_4,            				Action_Bar::actionBar.actionBar.spell[3].cast},
+                {SDLK_5,            				Action_Bar::actionBar.actionBar.spell[5].cast},
+                {SDLK_6,            				Action_Bar::actionBar.actionBar.spell[6].cast},
+                {SDLK_7,            				Action_Bar::actionBar.actionBar.spell[7].cast},
+                {SDLK_8,            				Action_Bar::actionBar.actionBar.spell[8].cast},
+                {SDLK_9,            				Action_Bar::actionBar.actionBar.spell[9].cast},
+                {SDLK_F1, 				Decrease_Low},
+                {SDLK_F2,            		    Increase_Low},
+                {SDLK_F3,            		Decrease_High},
+                {SDLK_F4,            	Increase_High},
+                {SDLK_m,                          Minimap_Toggle},
+                {SDLK_TAB,          			Tab_Target},
                 {SDLK_ESCAPE,       			Menu_Toggle},
-                {SDLK_r,            					Auto_Run},
-                {SDLK_i,            					Info_Toggle},
-                {SDLK_b,            					Bag_Toggle},
-                {SDLK_p,            					Pause_Toggle},
+                {SDLK_r,            				Auto_Run},
+                {SDLK_i,            				Info_Toggle},
+                {SDLK_b,            				Bag_Toggle},
+                {SDLK_p,            				Pause_Toggle},
                 {SDLK_LEFTBRACKET,      Mouse_On},
                 {SDLK_RIGHTBRACKET,   	Mouse_Off},
                 {SDLK_MINUS,        			Zoom_Out},

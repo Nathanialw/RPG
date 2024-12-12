@@ -32,6 +32,7 @@ namespace Entity_Loader {
     int whole_sprite = 1;
     bool hexDir;
     int interactable = 0;
+    int light_radius = 0;
   };
 
 
@@ -41,7 +42,7 @@ namespace Entity_Loader {
     Data values;
     sqlite3_stmt *stmt;
     char buf[400];
-    const char *jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, equip_type, race, temp_type_name, whole_sprite, hexa_directional, interactable FROM unit_data WHERE name = ";
+    const char *jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, equip_type, race, temp_type_name, whole_sprite, hexa_directional, interactable, light_radius FROM unit_data WHERE name = ";
     strcpy(buf, jj);
     strcat(buf, unit_name.c_str());
     sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -73,6 +74,7 @@ namespace Entity_Loader {
       values.whole_sprite = sqlite3_column_double(stmt, 18);
       values.hexDir = sqlite3_column_int(stmt, 19);
       values.interactable = sqlite3_column_int(stmt, 20);
+      values.light_radius = sqlite3_column_int(stmt, 21);
 
       //std::cout << "data: " << name << std::endl;
     }

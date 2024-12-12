@@ -8,6 +8,8 @@ target_sources(RPG
         World/cave.h
         World/town.h
         Fog_Of_War/fog_of_war.h
+        Lighting/lighting.h
+        Lighting/line_of_sight.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

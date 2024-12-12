@@ -58,7 +58,7 @@ namespace Create_Entities {
 
 		auto colliderData = zone.get<Collision_Component::Collider_Data>(entity);
 		zone.emplace_or_replace<Component::Radius>(entity, colliderData.radius);
-		zone.remove<Collision_Component::Collider_Data>(entity);
+//		zone.remove<Collision_Component::Collider_Data>(entity);
 		Collision::Attach_Components(zone, state, entity, colliderData);
 		return true;
 	}
@@ -136,7 +136,7 @@ namespace Create_Entities {
 
 	bool Create_Object(entt::registry &zone, int state, entt::entity &entity) {
 		auto colliderData = zone.get<Collision_Component::Collider_Data>(entity);
-		zone.remove<Collision_Component::Collider_Data>(entity);
+//		zone.remove<Collision_Component::Collider_Data>(entity);
 		Collision::Attach_Components(zone, state, entity, colliderData);
 
 		zone.emplace_or_replace<Component::Radius>(entity, colliderData.radius);
@@ -273,7 +273,8 @@ namespace Create_Entities {
 					Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
 					zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
 				}
-				zone.emplace_or_replace<Component::Light_Radius>(entity, 5);
+                if (data.light_radius > 0)
+                    zone.emplace_or_replace<Component::Light_Radius>(entity, data.light_radius);
 			}
 				// if this is the first run make these, otherwise copy them
 			else if (startup) {

@@ -158,9 +158,9 @@ namespace Rendering {
 			DisplayRect.x = Mouse::iXMouse - (DisplayRect.w / 2.0f);
 			DisplayRect.y = Mouse::iYMouse - (DisplayRect.h / 2.0f);
 			//std::cout << "x: " << DisplayRect.x << " y: " << DisplayRect.y << " w: " << DisplayRect.w << " h: " << DisplayRect.h << std::endl;
-			SDL_RenderCopyF(Graphics::renderer, icon.pBackground, NULL, &DisplayRect);
-			SDL_RenderCopyF(Graphics::renderer, icon.pTexture, NULL, &DisplayRect);
-			SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, NULL, &DisplayRect);
+			SDL_RenderCopyF(Graphics::renderer, icon.pBackground, nullptr, &DisplayRect);
+			SDL_RenderCopyF(Graphics::renderer, icon.pTexture, nullptr, &DisplayRect);
+			SDL_RenderCopyF(Graphics::renderer, icon.pIconBorder, nullptr, &DisplayRect);
 		}
 	}
 
@@ -292,8 +292,6 @@ namespace Rendering {
 	}
 
 	void Render_Map(entt::registry &zone, int &state, Component::Camera &camera) {
-		SDL_RenderClear(Graphics::renderer);
-
 		Maps::Render(zone, state, camera);
 		Display_Background_Objects(zone, camera);
 		//   need a render dead render routine so the foreground objects are on top
@@ -311,12 +309,13 @@ namespace Rendering {
 		auto camera_view = zone.view<Component::Camera>();
 		for (auto entity: camera_view) {
 			auto &camera = camera_view.get<Component::Camera>(entity);
-			//			SDL_RenderClear(Graphics::renderer);
 			Add_Remove_Renderable_Component(zone, state, camera);
 			Sort::Sort_Positions(zone);
+
+            SDL_RenderClear(Graphics::renderer);
+
 			Render_Map(zone, state, camera);
 			Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
-			//            RenderLine(zone, camera);
 			A_Star::Draw(zone, camera);
 			Lighting::Render(zone, camera);
 			Items::Show_Ground_Items(zone, camera);
