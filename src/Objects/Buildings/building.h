@@ -20,7 +20,7 @@ namespace Build {
                 zone.remove<Building_Component::Placement>(Mouse::mouseData.mouseItem);
 
                 auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(Mouse::mouseData.mouseItem);
-                sprite.color = {200, 200, 200, SDL_ALPHA_OPAQUE};
+                sprite.color = Color::gray;
                 sprite.blendType = Rendering_Components::normal;
                 //set building
                 zone.get<Collision_Component::Collider_Data>(Mouse::mouseData.mouseItem).position = {Mouse::iXWorld_Mouse, Mouse::iYWorld_Mouse};

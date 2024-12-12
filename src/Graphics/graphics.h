@@ -141,14 +141,6 @@ namespace Graphics {
         SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);
     }
 
-    static SDL_Color Set_Random_Color() {
-        SDL_Color color;
-        color.r = rand() % 254 + 1;
-        color.g = rand() % 254 + 1;
-        color.b = rand() % 254 + 1;
-        return color;
-    }
-
     void Render_FRect(SDL_Texture *texture, SDL_Color color, const SDL_Rect *sourceRect, SDL_FRect *targetRect) {
         SDL_SetTextureColorMod(texture, color.r, color.g, color.b);
         SDL_RenderCopyF(renderer, texture, sourceRect, targetRect);

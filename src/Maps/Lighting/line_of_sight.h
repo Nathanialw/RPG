@@ -10,8 +10,8 @@
 #include "Collision/collision.h"
 
 namespace Line_Of_Sight {
-    Uint8 close = 50;
-    Uint8 far = 15;
+    Uint8 close = 45;
+    Uint8 far = 0;
 
     void Update_Close(int value) {
         close += value;
@@ -35,10 +35,12 @@ namespace Line_Of_Sight {
             auto screenPosition = Camera_Control::Convert_Position_To_Screen_Coods(camera, player_view.get<Component::Position>(player));
             auto lightStr = player_view.get<Component::Light_Radius>(player).lightRadius;
 
-            SDL_FRect visionRect = {screenPosition.x - ((lightStr * (lightRadiusF * 0.75f)) * 0.5f),
-                                    screenPosition.y - ((lightStr * (lightRadiusF * 0.5f)) * 0.5f),
-                                    lightStr * (lightRadiusF * 0.75f),
-                                    lightStr * (lightRadiusF * 0.5f)};
+            SDL_FRect visionRect = {
+                    screenPosition.x - ((lightStr * (lightRadiusF * 0.75f)) * 0.5f),
+                    screenPosition.y - ((lightStr * (lightRadiusF * 0.5f)) * 0.5f),
+                    lightStr * (lightRadiusF * 0.75f),
+                    lightStr * (lightRadiusF * 0.5f)
+            };
 
             SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_BLEND);
             {
@@ -108,7 +110,7 @@ namespace Line_Of_Sight {
 
                             if (Utilities::Rect_Intersect(visionRect, rect)) {
                                 SDL_FRect overlapRect = Utilities::Get_Rect_Intersect(visionRect, rect);
-                                SDL_SetRenderDrawColor(Graphics::renderer, 0, 50, 155, 100);
+                                Color::Set_Render_Draw_Color(Graphics::renderer, Color::teal, 100);
                                 SDL_RenderFillRectF(Graphics::renderer, &overlapRect);
                             }
                         }
@@ -116,7 +118,7 @@ namespace Line_Of_Sight {
                 }
             }
 
-            SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 255, 100);
+            Color::Set_Render_Draw_Color(Graphics::renderer, Color::blue, 100);
             {
                 SDL_SetRenderTarget(Graphics::renderer, texture);
                 auto view = zone.view<Component::Position, Component::Radius, Component::Renderable>(entt::exclude<Component::Input>);
@@ -130,7 +132,7 @@ namespace Line_Of_Sight {
                     Component::Position distance = {screenPosition.x - screenTargetPosition.x, screenPosition.y - screenTargetPosition.y};
                     Component::Position perpendicular = {-distance.y, distance.x};
 
-                    // Normalize the perpendicular vector
+                    //perpendicular
                     float length = sqrt(perpendicular.x * perpendicular.x + perpendicular.y * perpendicular.y);
                     perpendicular.x = (perpendicular.x / length) * radius;
                     perpendicular.y = (perpendicular.y / length) * radius;
@@ -140,7 +142,7 @@ namespace Line_Of_Sight {
                             {screenTargetPosition.x - perpendicular.x, screenTargetPosition.y - perpendicular.y},
                     };
 
-                    // Function to calculate intersection with the rectangle
+                    //calculate intersection with the rectangle
                     auto extendToEdge = [](Component::Position start, Component::Position end, SDL_FRect rect) -> Component::Position {
                         float t1 = (rect.x - start.x) / (end.x - start.x);
                         float t2 = (rect.x + rect.w - start.x) / (end.x - start.x);
@@ -158,22 +160,19 @@ namespace Line_Of_Sight {
                         return {start.x + t * (end.x - start.x), start.y + t * (end.y - start.y)};
                     };
 
-                    // Extend the lines to the edges of the visionRect
+                    //extend the lines to the edges of the visionRect
                     points.first = extendToEdge(screenPosition, points.first, visionRect);
                     points.second = extendToEdge(screenPosition, points.second, visionRect);
 
-                    // Extend the lines to the edges of the visionRect
+                    //extend the lines to the edges of the visionRect
                     points.first = extendToEdge(screenPosition, points.first, visionRect);
                     points.second = extendToEdge(screenPosition, points.second, visionRect);
 
-                    SDL_Vertex triangle[3];
-                    SDL_Color color0 = {0, 0, 0, close};
-                    SDL_Color color1 = {0, 0, 0, far};
-                    SDL_Color color2 = {0, 0, 0, far};
-
-                    triangle[0] = {screenTargetPosition.x, screenTargetPosition.y, color0};
-                    triangle[1] = {points.first.x, points.first.y, color1};
-                    triangle[2] = {points.second.x, points.second.y, color2};
+                    SDL_Vertex triangle[3] = {
+                            {screenTargetPosition.x, screenTargetPosition.y, Color::Set_Color_With_Alpha(Color::black, close)},
+                            {points.first.x,         points.first.y,         Color::Set_Color_With_Alpha(Color::black, far)},
+                            {points.second.x,        points.second.y,        Color::Set_Color_With_Alpha(Color::black, far)},
+                    };
 
                     SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_BLEND);
                     if (SDL_RenderGeometry(Graphics::renderer, nullptr, triangle, 3, nullptr, 0) != 0)
@@ -184,7 +183,7 @@ namespace Line_Of_Sight {
                 }
 
                 SDL_SetRenderTarget(Graphics::renderer, nullptr);
-                SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 255);
+                Color::Set_Render_Draw_Color(Graphics::renderer);
             };
         }
     }

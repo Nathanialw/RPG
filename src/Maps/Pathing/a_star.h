@@ -234,7 +234,7 @@ namespace A_Star {
                 auto &pathing = view.get<Component::Pathing>(entity).path;
                 if (pathing.size() > 2) {
                     for (int i = 0; i < pathing.size() - 1; ++i) {
-                        SDL_SetRenderDrawColor(Graphics::renderer, 0, 125, 125, 255);
+                        Color::Set_Render_Draw_Color(Graphics::renderer, Color::cyan);
                         SDL_RenderDrawLineF(
                                 Graphics::renderer,
                                 (pathing[i].x * nNodeSize + nNodeSize / 2) - camera.screen.x,

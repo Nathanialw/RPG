@@ -62,7 +62,7 @@ namespace Unit_Frames {
             SDL_DestroyTexture(frame.health.textTexture);
             frame.health.textTexture = NULL;
             frame.health.healthFrameWidth = (float) health.currentHealth / (float) health.maxHealth;
-            Populate_Frame(frame.health, healthText, {200, 200, 200});
+            Populate_Frame(frame.health, healthText, Color::gray);
             frame.health.backgroundTexture = Graphics::tooltipBackground;
         }
         Update_Frame_Text(scale, frame.health, frame.health.text, 20.0f);
@@ -77,7 +77,7 @@ namespace Unit_Frames {
             SDL_DestroyTexture(frame.name.textTexture);
             frame.name.textTexture = NULL;
             frame.name.backgroundTexture = Graphics::tooltipBackground;
-            Populate_Frame(frame.name, name, {255, 155, 155});
+            Populate_Frame(frame.name, name, Color::orange);
         }
         Update_Frame_Text(scale, frame.name, frame.name.text, 20.0f);
     }
@@ -90,9 +90,7 @@ namespace Unit_Frames {
         //health foreground
         frame.health.healthFrame = frame.health.frame;
         frame.health.healthFrame.w = frame.health.frame.w * frame.health.healthFrameWidth;
-        int red = 150 * (1 - frame.health.healthFrameWidth);
-        int green = 150 * frame.health.healthFrameWidth;
-        SDL_SetRenderDrawColor(Graphics::renderer, red, green, 0, 255);
+        Color::Set_Health_Color(Graphics::renderer, frame.health.healthFrameWidth);
         SDL_RenderFillRectF(Graphics::renderer, &frame.health.healthFrame);
         //health
         SDL_RenderCopyF(Graphics::renderer, frame.health.textTexture, NULL, &frame.health.textFrame);

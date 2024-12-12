@@ -12,7 +12,7 @@ namespace Lighting {
     float lightRadiusF = 64.0f;
     Uint8 maxDarkness = 250;
     Uint8 minDarkness = 100;
-    SDL_Texture *lightRadiusTexture[35];
+    SDL_Texture *lightRadiusTexture[34];
     SDL_Texture *texture;
     SDL_Texture *base;
     std::vector<Uint32> fogOfWarPixels;
@@ -23,7 +23,7 @@ namespace Lighting {
         std::for_each(zone.view<Component::Light_Radius, Component::Input>().begin(), zone.view<Component::Light_Radius, Component::Input>().end(), [&](const auto &player) {
             auto &lightRadius = zone.get<Component::Light_Radius>(player).lightRadius;
             lightRadius += value;
-            if (lightRadius >= 35)
+            if (lightRadius >= 36)
                 lightRadius = 35;
             if (lightRadius <= 5)
                 lightRadius = 5;

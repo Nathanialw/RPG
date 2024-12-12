@@ -68,7 +68,7 @@ namespace Event_Handler {
 			if (zone.valid(entity)) {
 				if (zone.any_of<Rendering_Components::Sprite_Sheet_Info>(entity)) {
 					//revert color
-					zone.get<Rendering_Components::Sprite_Sheet_Info>(entity).color = {200, 200, 200};
+					zone.get<Rendering_Components::Sprite_Sheet_Info>(entity).color = Color::gray;
 				} else {
 					Utilities::Log("Mouse_Hover() entity may not exist");
 					continue;
@@ -85,7 +85,7 @@ namespace Event_Handler {
 		//change target SDL_Render slightly for render
 		if (zone.all_of<Rendering_Components::Sprite_Sheet_Info, Component::Interactable>(targetData.entity_ID)) {
 			auto &ff = zone.get<Rendering_Components::Sprite_Sheet_Info>(targetData.entity_ID);
-			ff.color = {255, 255, 255};
+			ff.color = Color::white;
 			World::Mouse_Hover_Entities.emplace_back(targetData.entity_ID);
 			//recolour pointer
 			zone.get<Component::Icon>(Mouse::mouseData.mouseItem).pBackground = Graphics::cursor_1;

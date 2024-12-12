@@ -4,6 +4,7 @@
 #include "item_components.h"
 #include "vector"
 #include <map>
+#include "colors.h"
 
 namespace Rendering_Components {
 
@@ -37,20 +38,14 @@ namespace Rendering_Components {
     int frameSpeed = 75;
   };
 
-  struct Color {
-    uint8_t r;
-    uint8_t g;
-    uint8_t b;
-  };
-
   struct Portrait {
     SDL_Texture *texture = nullptr;
-    SDL_Color color = {255, 255, 255};
+    SDL_Color color = Color::white;
   };
 
   struct Body {
     SDL_Texture *texture = nullptr;
-    SDL_Color color = {255, 255, 255};
+    SDL_Color color = Color::white;
   };
 
   struct Unit_Frame_Portrait {
@@ -83,7 +78,7 @@ namespace Rendering_Components {
 
   struct Sheet_Data_Flare {
     SDL_Texture *texture = nullptr;//texture
-    SDL_Color color = {255, 255, 255};
+    SDL_Color color = Color::white;
     int sheetWidth = 0;
     int spriteWidth = 0;
     int spriteHeight = 0;
@@ -105,7 +100,7 @@ namespace Rendering_Components {
     std::unordered_map<std::string, Sheet_Data> *ItemSheetData = nullptr;
     //name is the index into the map that stores the data
     std::string name = "empty";
-    SDL_Color color = {255, 255, 255};
+    SDL_Color color = Color::white;
     uint16_t FrameIndex = 0;
     entt::entity itemID;
     float frameTime = 0.0f;
@@ -121,7 +116,7 @@ namespace Rendering_Components {
     std::unordered_map<std::string, Sheet_Data> *ItemSheetData = nullptr;
     //name is the index into the map that stores the data
     std::string name = "empty";
-    SDL_Color color = {255, 255, 255};
+    SDL_Color color = Color::white;
     int FrameIndex = 0;
     entt::entity itemID;
   };
@@ -158,7 +153,7 @@ namespace Rendering_Components {
 
     std::unordered_map<std::string, Sheet_Data> *mount = nullptr;
     std::string mount_name = "unmounted";
-    SDL_Color color = {200, 200, 200};
+    SDL_Color color = Color::gray;
     //        Equip_Slot_Data equipmentSheets[30];
     ///possible replacement for a string map is to store the name of the sprite sheet in a map and match it to a unique index, save that index and make the sheetData and vector, access the vector with the index
     uint16_t frameIndex = 0;

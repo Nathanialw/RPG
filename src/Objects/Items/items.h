@@ -14,6 +14,7 @@
 #include "quad_tree.h"
 #include "utilities.h"
 #include <vector>
+#include "colors.h"
 
 using namespace Item_Component;
 
@@ -112,14 +113,6 @@ namespace Items {
     Utilities::Log("Generate_Armor_Type() fallthrough error");
     //defult return if it finds nothing
     return Armor_Type::cloth;
-  }
-
-  Rendering_Components::Color Set_Random_Color() {
-    Rendering_Components::Color color = {};
-    color.r = rand() % 254 + 1;
-    color.g = rand() % 254 + 1;
-    color.b = rand() % 254 + 1;
-    return color;
   }
 
   std::string Create_Weapon(entt::registry &zone, entt::entity &item, Rarity &rarity, Item_Component::Unit_Equip_Type &equip_type, Item_Component::Item item_name, SDL_Color color) {
@@ -377,7 +370,7 @@ namespace Items {
     Item_Stats itemStats = Generate_Item_Stats(rarity);
 
     Item_Component::Item item_name;
-    SDL_Color color = {255, 255, 255};
+    SDL_Color color = Color::white;
 
     //    int type = rand() % 3 + 0;
     //    Utilities::Log(type);
@@ -443,7 +436,7 @@ namespace Items {
     auto item_ID = zone.create();
 
     Item_Component::Item item_name;
-    SDL_Color color = {255, 255, 255};
+    SDL_Color color = Color::white;
     std::string itemName;
 
     int type = rand() % 3;
@@ -568,10 +561,10 @@ namespace Items {
   void Hightlight_Item_Under_Cursor(SDL_FRect &itemRect) {
     if (Mouse::bRect_inside_Cursor(itemRect)) {//if cursor in inside item text box
       //then change the background color of that box to another shade
-      SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 155, 155);
+        Color::Set_Render_Draw_Color(Graphics::renderer, Color::darkBlue, 155);
     } else {
       //set beackground of textbox to black
-      SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, 255);
+      Color::Set_Render_Draw_Color(Graphics::renderer, Color::black);
     }
   }
 
@@ -648,9 +641,9 @@ namespace Items {
           auto &sprite = zone.get<Rendering_Components::Sprite_Sheet_Info>(item);
           sprite.blendType = Rendering_Components::ghost;
           if (placeable.obstructed) {
-            sprite.color = {255, 0, 0, 50};
+            sprite.color = Color::Set_Color_With_Alpha(Color::red, 50);
           } else {
-            sprite.color = {200, 200, 200, 50};
+            sprite.color = Color::Set_Color_With_Alpha(Color::gray, 50);
           }
         }
 
@@ -752,10 +745,10 @@ namespace Items {
     SQLite_Item_Data::Load_Item_Names();
 
     rarityColor = {
-        {Rarity::common, {255, 255, 255, 200}},
-        {Rarity::magic, {51, 153, 255, 255}},
-        {Rarity::rare, {255, 128, 0, 255}},
-        {Rarity::unique, {255, 20, 20, 255}},
+        {Rarity::common, Color::white},
+        {Rarity::magic, Color::blueMagical},
+        {Rarity::rare, Color::yellowMagical},
+        {Rarity::unique, Color::redMagical},
     };
 
     rarityBorder = {

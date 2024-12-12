@@ -345,7 +345,7 @@ namespace Rendering {
 			Target_Info::Show_Target_Info(zone, state, mouse, camera);
 			Render_Mouse_Item(zone, camera);
 
-			SDL_SetRenderDrawColor(Graphics::renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
+            Color::Set_Render_Draw_Color(Graphics::renderer, Color::white);
             if (Items::showGroundItems) {//****//search quad tree instead
 				auto view = zone.view<Ground_Item, Component::Renderable>();
 				for (auto item: view) {
