@@ -5,8 +5,6 @@ ADD
 - update items with new affixes and suffixes
 - generate props on tiles
 
-- player line of sight
-
 - add shrines
 - BSP map generation
 - water/acid/lava

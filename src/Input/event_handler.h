@@ -88,12 +88,12 @@ namespace Event_Handler {
 			ff.color = Color::white;
 			World::Mouse_Hover_Entities.emplace_back(targetData.entity_ID);
 			//recolour pointer
-			zone.get<Component::Icon>(Mouse::mouseData.mouseItem).pBackground = Graphics::cursor_1;
+			zone.get<Component::Icon>(Mouse::mouseData.mouseItem).pBackground = Texture::cursor_1;
 			return;
 		}
 		// add component to keep track maybe
 		//recolour pointer
-		zone.get<Component::Icon>(Mouse::mouseData.mouseItem).pBackground = Graphics::cursor_0;
+		zone.get<Component::Icon>(Mouse::mouseData.mouseItem).pBackground = Texture::cursor_0;
 	}
 
 	void Mouse_Input(entt::registry &zone, int &state, entt::entity &player_ID, Component::Position &playerPosition, Component::Camera &camera) {

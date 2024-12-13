@@ -27,14 +27,10 @@ namespace Character_Create {
 
   void Background_Image() {
     SDL_RenderClear(Graphics::renderer);
-    SDL_RenderCopyF(Graphics::renderer, Graphics::charCreateBackground, NULL, NULL);
+    SDL_RenderCopyF(Graphics::renderer, Texture::charCreateBackground, NULL, NULL);
 
     // background based on species
   }
-
-  SDL_Color colors[3] = {{255, 255, 255},
-                         {255, 0, 0},
-                         {55, 55, 55}};
 
   enum state {
     unselected,
@@ -86,7 +82,7 @@ namespace Character_Create {
     SDL_Rect srcRect = {0, 0, 32, 32};
     SDL_FRect d = {Mouse::iXMouse, Mouse::iYMouse, 32.0f, 32.0f};
 
-    SDL_RenderCopyF(Graphics::renderer, Graphics::cursor_0, &srcRect, &d);
+    SDL_RenderCopyF(Graphics::renderer, Texture::cursor_0, &srcRect, &d);
     SDL_RenderPresent(Graphics::renderer);
   }
 
@@ -156,17 +152,17 @@ namespace Character_Create {
           if (i == 0 || i == 2) {
             menus.buttons[i].backgroundTexture = Graphics::default_icon;
             menus.buttons[i].text = labels[i];
-            menus.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], colors[0]);
+            menus.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], Color::white);
             menus.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menus.buttons[i].textSurface);
             menus.buttons[i].button = true;
           } else {
             menus.buttons[i].text = labels[i];
-            menus.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], colors[0]);
+            menus.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], Color::white);
             menus.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menus.buttons[i].textSurface);
           }
         } else {
           menus.buttons[i].text = labels[i];
-          menus.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], colors[0]);
+          menus.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], Color::white);
           menus.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menus.buttons[i].textSurface);
         }
       } else {
@@ -198,18 +194,18 @@ namespace Character_Create {
         if (menu.buttons[i].selected == unselected) {
           menu.buttons[i].selected = selected;
           SDL_FreeSurface(menu.buttons[i].textSurface);
-          menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[1]);
+          menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, Color::red);
           menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
         }
       } else if (menu.buttons[i].selected == selected) {
         menu.buttons[i].selected = unselected;
         SDL_FreeSurface(menu.buttons[i].textSurface);
-        menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[0]);
+        menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, Color::white);
         menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
       } else if (menu.buttons[i].selected == disable) {
         menu.buttons[i].selected = is_disabled;
         SDL_FreeSurface(menu.buttons[i].textSurface);
-        menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[2]);
+        menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, Color::grayLight);
         menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
       }
 

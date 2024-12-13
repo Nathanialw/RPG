@@ -219,13 +219,13 @@ namespace A_Star {
                     rect = Utilities::World_To_ScreenF(rect, camera.screen);
 
                     if (nodes[y * nMapWidth + x].bVisited) {
-                        Graphics::Render_FRect(Graphics::itemBorderMagic, &rect);
+                        Graphics::Render_FRect(Texture::itemBorderMagic, &rect);
                     } else if (&nodes[y * nMapWidth + x] == nodeStart) {
-                        Graphics::Render_FRect(Graphics::itemBorderCommon, &rect);
+                        Graphics::Render_FRect(Texture::itemBorderCommon, &rect);
                     } else if (&nodes[y * nMapWidth + x] == nodeEnd) {
-                        Graphics::Render_FRect(Graphics::itemBorderEite, &rect);
+                        Graphics::Render_FRect(Texture::itemBorderEite, &rect);
                     } else if (nodes[y * nMapWidth + x].bObstacle) {
-                        Graphics::Render_FRect(Graphics::itemBorderRare, &rect);
+                        Graphics::Render_FRect(Texture::itemBorderRare, &rect);
                     }
                 }
 

@@ -80,7 +80,7 @@ namespace Minimap {
                 miniMapPosition.y = minimapRect.y + (position.y / tileSize) * cellSize;
                 SDL_FRect renderRect = {miniMapPosition.x - (objectSize * 0.5f), miniMapPosition.y - (objectSize * 0.5f), objectSize, objectSize};
 
-                SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderCommon, nullptr, &renderRect);
+                SDL_RenderCopyF(Graphics::renderer, Texture::itemBorderCommon, nullptr, &renderRect);
                 continue;
             }
 
@@ -91,7 +91,7 @@ namespace Minimap {
                 miniMapPosition.y = minimapRect.y + (position.y / tileSize) * cellSize;
                 SDL_FRect renderRect = {miniMapPosition.x - (objectSize * 0.5f), miniMapPosition.y - (objectSize * 0.5f), objectSize, objectSize};
 
-                SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderRare, nullptr, &renderRect);
+                SDL_RenderCopyF(Graphics::renderer, Texture::itemBorderRare, nullptr, &renderRect);
                 continue;
             }
 
@@ -102,7 +102,7 @@ namespace Minimap {
                 miniMapPosition.y = minimapRect.y + (position.y / tileSize) * cellSize;
                 SDL_FRect renderRect = {miniMapPosition.x - (objectSize * 0.5f), miniMapPosition.y - (objectSize * 0.5f), objectSize, objectSize};
 
-                SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderRare, nullptr, &renderRect);
+                SDL_RenderCopyF(Graphics::renderer, Texture::itemBorderRare, nullptr, &renderRect);
                 continue;
             }
 
@@ -116,7 +116,7 @@ namespace Minimap {
                 miniMapPosition.y = minimapRect.y + (position.y / tileSize) * cellSize;
                 SDL_FRect renderRect = {miniMapPosition.x - (objectSize * 0.5f), miniMapPosition.y - (objectSize * 0.5f), objectSize, objectSize};
 
-                SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderRare, nullptr, &renderRect);
+                SDL_RenderCopyF(Graphics::renderer, Texture::itemBorderRare, nullptr, &renderRect);
                 continue;
             }
         }
@@ -140,9 +140,9 @@ namespace Minimap {
                 playerRect = renderRect;
                 continue;
             }
-            SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderEite, nullptr, &renderRect);
+            SDL_RenderCopyF(Graphics::renderer, Texture::itemBorderEite, nullptr, &renderRect);
         }
-        SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderMagic, nullptr, &playerRect);
+        SDL_RenderCopyF(Graphics::renderer, Texture::itemBorderMagic, nullptr, &playerRect);
     }
 
     void Render(entt::registry &zone, int state, Component::Camera &camera) {

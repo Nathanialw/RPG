@@ -39,13 +39,13 @@ namespace Action_Bar {
     }
 
     void Create_Action_Bar() {
-        actionBar.defaultSlot = Spell_Data::Spell(Graphics::emptyBagIcon, PLACEHOLDER);
+        actionBar.defaultSlot = Spell_Data::Spell(Texture::emptyBagIcon, PLACEHOLDER);
         for (int i = 0; i < actionBar.actionBar.spell.size(); i++) {
             actionBar.actionBar.spell[i] = actionBar.defaultSlot;
         }
         Update_Position(actionBar.actionBar.actionBarFrame);
-        actionBar.actionBar.spell[0] = Spell_Data::Spell(Graphics::cursor_1, Warrior::Auto_Attack) ;
-        actionBar.actionBar.spell[1] =  Spell_Data::Spell(Graphics::sinisterstrike, Sinister_Strike::Sinister_Strike);
+        actionBar.actionBar.spell[0] = Spell_Data::Spell(Texture::cursor_1, Warrior::Auto_Attack) ;
+        actionBar.actionBar.spell[1] =  Spell_Data::Spell(Texture::sinisterstrike, Sinister_Strike::Sinister_Strike);
         actionBar.actionBar.hotkey[0] = SDLK_1;
         actionBar.actionBar.hotkey[1] = SDLK_2;
         actionBar.actionBar.hotkey[2] = SDLK_3;

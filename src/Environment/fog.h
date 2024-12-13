@@ -32,7 +32,7 @@ namespace Fog {
         while (renderRect.x < camera.screen.w) {
             while (renderRect.y < camera.screen.h) {
                 if (renderRect.x > -camera.screen.w && renderRect.y > -camera.screen.h) {
-                    SDL_RenderCopyF(Graphics::renderer, Graphics::fog, nullptr, &renderRect);
+                    SDL_RenderCopyF(Graphics::renderer, Texture::fog, nullptr, &renderRect);
                     //          i++;
                 }
                 renderRect.y += renderRect.h;

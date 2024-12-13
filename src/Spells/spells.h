@@ -10,6 +10,7 @@
 #include "movement_components.h"
 #include "quad_tree.h"
 #include "spell_components.h"
+#include "textures.h"
 
 namespace Spells {
 
@@ -257,7 +258,7 @@ namespace Spells {
     auto explosion = zone.create();
     zone.emplace_or_replace<Component::Position>(explosion, x, y);
     zone.emplace_or_replace<Component::Sprite_Frames>(explosion, 63, 0, 0, 0);
-    zone.emplace_or_replace<Component::Texture>(explosion, Graphics::fireball_explosion_0, 0, 0, 128, 128);
+    zone.emplace_or_replace<Component::Texture>(explosion, Texture::fireball_explosion_0, 0, 0, 128, 128);
     zone.emplace_or_replace<Component::Frame_Delay>(explosion, 16.0f, 0.0f);
     zone.emplace_or_replace<Component::Explosion>(explosion, 0, 0, 0.0f, 0.0f, 128.0f, 128.0f, 64.0f, 100.0f);
   }

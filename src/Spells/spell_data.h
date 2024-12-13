@@ -4,6 +4,7 @@
 #include "components.h"
 #include "item_components.h"
 #include "spell_components.h"
+#include "textures.h"
 
 namespace Spell_Data {
 
@@ -45,10 +46,10 @@ namespace Spell_Data {
         }
 
         Spell(SDL_Texture *texture) {
-            icon.pBackground = Graphics::emptyBagIcon;
+            icon.pBackground = Texture::emptyBagIcon;
             icon.pTexture = texture;
             icon.pIconRarityBorder = Item_Component::rarityBorder[Item_Component::Rarity::common];
-            icon.pIconBorder = Graphics::bagSlotBorder;
+            icon.pIconBorder = Texture::bagSlotBorder;
             icon.clipSprite = {0, 0, 256, 256};
             icon.clipIcon = {0, 0, 256, 256};
             icon.renderRectSize = {64.0f, 64.0f};
@@ -62,10 +63,10 @@ namespace Spell_Data {
         }
 
         Spell(SDL_Texture *texture, Spells::castSpell spell) {
-            icon.pBackground = Graphics::emptyBagIcon;
+            icon.pBackground = Texture::emptyBagIcon;
             icon.pTexture = texture;
             icon.pIconRarityBorder = Item_Component::rarityBorder[Item_Component::Rarity::common];
-            icon.pIconBorder = Graphics::bagSlotBorder;
+            icon.pIconBorder = Texture::bagSlotBorder;
             icon.clipSprite = {0, 0, 256, 256};
             icon.clipIcon = {0, 0, 256, 256};
             icon.renderRectSize = {64.0f, 64.0f};

@@ -63,7 +63,7 @@ namespace Init {
     }
 
     void Init_Data() {
-        Graphics::Load_Textures();
+        Texture::Load_Textures();
         UI_Info::Update_Position();
         UI_Debug::Update_Position();
         Icons::Load();
@@ -85,18 +85,18 @@ namespace Init {
     void Create_Game_entities(entt::registry &zone, int &state, std::string &tilesetName, Character_Options::Customization &playerOptions) {
         Maps::Generate_Region(state, tilesetName);
         Collision::init_Collison(state);
-        Item_Component::emptyEquipSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
-        Graphics::defaultIcon[state] = Graphics::Create_Icon_Entity(zone, Graphics::default_icon, Graphics::bagSlotBorder, Component::Icon_Type::item);
-        Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Graphics::emptyBagIcon, Graphics::emptyBagIcon, Component::Icon_Type::item);
+        Item_Component::emptyEquipSlot[state] = Graphics::Create_Icon_Entity(zone, Texture::emptyBagIcon, Texture::emptyBagIcon, Component::Icon_Type::item);
+        Graphics::defaultIcon[state] = Graphics::Create_Icon_Entity(zone, Graphics::default_icon, Texture::bagSlotBorder, Component::Icon_Type::item);
+        Bag_UI::emptyBagSlot[state] = Graphics::Create_Icon_Entity(zone, Texture::emptyBagIcon, Texture::emptyBagIcon, Component::Icon_Type::item);
         Mouse::Init_mouse(zone);
         if (Create_Entities::startup)
             Create_Character_Entity::Init_Player(zone, state, playerOptions);
         else
             Recreate_Player(zone, state);
-		World_Update::Init_Tiles_Array(zone, state);
-		Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
-		Maps::Init_Caves(zone, state, World::world[state].cave);
-		Town::Init(zone, state);
+        World_Update::Init_Tiles_Array(zone, state);
+        Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
+        Maps::Init_Caves(zone, state, World::world[state].cave);
+        Town::Init(zone, state);
         Quad_Tree::Fill_Quad_Tree(zone, state);
     };
 

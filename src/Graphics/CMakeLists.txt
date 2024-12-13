@@ -15,6 +15,7 @@ target_sources(RPG
         portraits.h
         icons.h
         colors.h
+        textures.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

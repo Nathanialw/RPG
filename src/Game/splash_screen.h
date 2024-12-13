@@ -94,7 +94,7 @@ namespace Splash_Screen {
         SDL_Rect srcRect = {0, 0, 32, 32};
         SDL_FRect d = {Mouse::iXMouse, Mouse::iYMouse, 32.0f, 32.0f};
 
-        SDL_RenderCopyF(Graphics::renderer, Graphics::cursor_0, &srcRect, &d);
+        SDL_RenderCopyF(Graphics::renderer, Texture::cursor_0, &srcRect, &d);
     }
 
     void Build_Menu(Menu &menu, float x, float y) {

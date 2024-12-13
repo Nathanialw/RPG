@@ -80,7 +80,7 @@ namespace UI_Frames {
         for (const auto &house: houses) {
             building.name = house;
             building.icon.clipSprite = Icons::buildingIconClipRects[building.name].clipRect;
-            building.icon.pTexture = Graphics::medievelBuildingIcons;
+            building.icon.pTexture = Texture::medievelBuildingIcons;
             building.build = Build;
             topFrame.buttons[Menu_Tab::build].objects.emplace_back(building);
         }
@@ -109,7 +109,7 @@ namespace UI_Frames {
 
         float xPos = topFrame.background.frame.x;
         for (int i = 0; i < tabs.size(); i++) {
-            topFrame.buttons[i].button.backgroundTexture = Graphics::tooltipBackground;
+            topFrame.buttons[i].button.backgroundTexture = Texture::tooltipBackground;
             topFrame.buttons[i].button.frame = {
                     xPos,
                     topFrame.background.frame.y,

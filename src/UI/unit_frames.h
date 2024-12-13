@@ -63,7 +63,7 @@ namespace Unit_Frames {
             frame.health.textTexture = NULL;
             frame.health.healthFrameWidth = (float) health.currentHealth / (float) health.maxHealth;
             Populate_Frame(frame.health, healthText, Color::gray);
-            frame.health.backgroundTexture = Graphics::tooltipBackground;
+            frame.health.backgroundTexture = Texture::tooltipBackground;
         }
         Update_Frame_Text(scale, frame.health, frame.health.text, 20.0f);
 
@@ -76,7 +76,7 @@ namespace Unit_Frames {
         if (frame.name.text != name || frame.name.textTexture == NULL) {
             SDL_DestroyTexture(frame.name.textTexture);
             frame.name.textTexture = NULL;
-            frame.name.backgroundTexture = Graphics::tooltipBackground;
+            frame.name.backgroundTexture = Texture::tooltipBackground;
             Populate_Frame(frame.name, name, Color::orange);
         }
         Update_Frame_Text(scale, frame.name, frame.name.text, 20.0f);

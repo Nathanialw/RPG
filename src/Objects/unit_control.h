@@ -161,7 +161,7 @@ namespace User_Mouse_Input {
             for (auto unit: selected) {
                 auto &selectedComponent = zone.emplace_or_replace<Component::Selected>(unit);
 
-                selectedComponent.texture = Graphics::selector32;
+                selectedComponent.texture = Texture::selector32;
                 selectedComponent.clip = {0, 0, 32, 32};
                 selectedComponent.numFrames = 8;
                 selectedComponent.currentFrame = 0;
@@ -171,7 +171,7 @@ namespace User_Mouse_Input {
         } else if (!selectedEnemy.empty()) {
             auto &selectedComponent = zone.emplace_or_replace<Component::Selected>(selectedEnemy.at(0));
 
-            selectedComponent.texture = Graphics::selector32;
+            selectedComponent.texture = Texture::selector32;
             selectedComponent.clip = {0, 0, 32, 32};
             selectedComponent.numFrames = 8;
             selectedComponent.currentFrame = 0;
@@ -223,7 +223,7 @@ namespace User_Mouse_Input {
                         if (!selectedEnemy.empty()) {
                             auto &selectedComponent = zone.emplace_or_replace<Component::Selected>(selectedEnemy.at(0));
 
-                            selectedComponent.texture = Graphics::selector32;
+                            selectedComponent.texture = Texture::selector32;
                             selectedComponent.clip = {0, 0, 32, 32};
                             selectedComponent.numFrames = 8;
                             selectedComponent.currentFrame = 0;

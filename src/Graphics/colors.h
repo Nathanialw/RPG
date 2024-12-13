@@ -2,8 +2,8 @@
 // Created by desktop on 12/12/24.
 //
 #pragma once
-#include "SDL2/SDL.h"
 
+#include "SDL2/SDL.h"
 
 namespace Color {
 
@@ -13,8 +13,9 @@ namespace Color {
     SDL_Color green = {0, 255, 0, 255};
 
     SDL_Color gray = {200, 200, 200, 255};
+    SDL_Color grayLight = {55, 55, 55, 255};
     SDL_Color cyan = {0, 125, 125, 255};
-    SDL_Color teal ={0, 50, 155, 255};
+    SDL_Color teal = {0, 50, 155, 255};
     SDL_Color orange = {255, 155, 255};
     SDL_Color darkBlue = {0, 0, 155, 255};
     SDL_Color blue = {0, 0, 255, 100};

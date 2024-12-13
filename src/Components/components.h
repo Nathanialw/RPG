@@ -32,6 +32,11 @@ namespace Component {
     struct Unit {
     };
 
+    struct XP {
+        int level = 1;
+        int xp = 0;
+    };
+
     struct Body {
         b2Body *body;
     };

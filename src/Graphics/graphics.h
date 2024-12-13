@@ -23,6 +23,8 @@ namespace Graphics {
     SDL_FRect Screen;
     TTF_Font *font;
     FC_Font *fcFont = FC_CreateFont();
+    SDL_Texture *default_icon;
+
 
     std::vector<entt::entity> defaultIcon(World_Data::numZones);
 
@@ -60,78 +62,7 @@ namespace Graphics {
     std::array<SDL_Texture *, numberOfTextures> UITextures;
     //    std::map<std::string, SDL_Texture*> itemTextures;
 
-    SDL_Texture *fireball_explosion_0;
-    SDL_Texture *fireball_icon;
-    SDL_Texture *death1;
-    SDL_Texture *death2;
-    SDL_Texture *death3;
-    SDL_Texture *death4;
-    SDL_Texture *death5;
-    SDL_Texture *death6;
-    SDL_Texture *death7;
-    SDL_Texture *death8;
-    SDL_Texture *healself;
-    SDL_Texture *healother;
-    SDL_Texture *sinisterstrike;
-    SDL_Texture *lightningstrike;
-    SDL_Texture *lightningball;
-    SDL_Texture *chargedbolt;
-    SDL_Texture *leafspell;
-    SDL_Texture *swirlingsmoke;
-    SDL_Texture *icebolt;
-    SDL_Texture *fire_1b_40;
-    SDL_Texture *warp_effect;
-    SDL_Texture *barrier000;
-    SDL_Texture *BBLBubbleEllipseYellow;
-    SDL_Texture *magic_flame;
-    SDL_Texture *Snowflake1;
-    SDL_Texture *Snowflake2;
 
-    SDL_Texture *arrow;
-    SDL_Texture *bow;
-    SDL_Texture *arrowsFlying;
-    SDL_Texture *redArrow;
-    SDL_Texture *blueArrow;
-    SDL_Texture *greenArrow;
-
-    SDL_Texture *rainofFire;
-    SDL_Texture *firebolt;
-    SDL_Texture *thunderstorm;
-    SDL_Texture *blizzard;
-    SDL_Texture *summonGhost;
-    SDL_Texture *summonDemon;
-    SDL_Texture *reanimate;
-    SDL_Texture *raiseZombie;
-    SDL_Texture *raiseSkeleton;
-
-    SDL_Texture *itsmars_Inventory;
-    SDL_Texture *cursor_0;
-    SDL_Texture *cursor_1;
-    SDL_Texture *selector32;
-    SDL_Texture *weapons_icons;
-    SDL_Texture *default_icon;
-    SDL_Texture *emptyBagIcon;
-
-    SDL_Texture *charCreateBackground;
-    SDL_Texture *window_glow;
-    SDL_Texture *fog;
-
-    SDL_Texture *icons;
-    SDL_Texture *vikingBuildingIcons;
-    SDL_Texture *medievelBuildingIcons;
-
-    SDL_Texture *bagSlotBorder;
-    SDL_Texture *itemBorderCommon;
-    SDL_Texture *itemBorderMagic;
-    SDL_Texture *itemBorderRare;
-    SDL_Texture *itemBorderEite;
-    SDL_Texture *armorSpriteSheet;
-    SDL_Texture *spellbook;
-    SDL_Texture *debug_window;
-
-    SDL_Texture *tooltipBackground;
-    SDL_Texture *checkmark;
-    SDL_Texture *fogOfWar;
 
     void Render_Rect(SDL_Texture *pTexture, SDL_Rect &clipSprite, SDL_Rect &scaledSlot) {
         SDL_RenderCopy(renderer, pTexture, &clipSprite, &scaledSlot);
@@ -308,89 +239,7 @@ namespace Graphics {
         //to render it jsut needs access to the texture array and the unitID
     }
 
-    static void Load_Textures() {
-        Create_Font();
-        fireball_explosion_0 = createTexture("assets/sprites/spells/fire/explosions/fireball_explosion_0.png");
-        fireball_icon = createTexture("assets/sprites/UI/icons/spell_icons/fire/Fantasy Game Skills Icon 1 - Magic - Fire Ball level 1.jpg");
-        death1 = createTexture("assets/sprites/UI/icons/Dark Magic/01.png");
-        death2 = createTexture("assets/sprites/UI/icons/Dark Magic/02.png");
-        death3 = createTexture("assets/sprites/UI/icons/Dark Magic/03.png");
-        death4 = createTexture("assets/sprites/UI/icons/Dark Magic/04.png");
-        death5 = createTexture("assets/sprites/UI/icons/Dark Magic/05.png");
-        death6 = createTexture("assets/sprites/UI/icons/Dark Magic/06.png");
-        death7 = createTexture("assets/sprites/UI/icons/Dark Magic/07.png");
-        death8 = createTexture("assets/sprites/UI/icons/Dark Magic/08.png");
 
-        sinisterstrike = createTexture("assets/sprites/UI/icons/misc_icons/old Ancient Beast icons/blood hack.jpg");
-        healself = createTexture("assets/sprites/UI/icons/spells/leaf-jade-2.png");
-        healother = createTexture("assets/sprites/UI/icons/spells/leaf-orange-2.png");
-        lightningstrike = createTexture("assets/sprites/spells/lightning/fx1_blue_topEffect/spell_bluetop_1_1.png");
-        lightningball = createTexture("assets/sprites/spells/lightning/fx8_lighteningBall/lighteningball_1_20_1.png");
-        chargedbolt = createTexture("assets/sprites/spells/lightning/chargedbolt/chargedbolt-0.png");
-        leafspell = createTexture("assets/sprites/spells/nature/leafspell/0026.png");
-        swirlingsmoke = createTexture("assets/sprites/spells/air/swirlingsmoke/0000.png");
-        icebolt = createTexture("assets/sprites/UI/icons/spell_icons/ice/Fantasy Game Skills Icon 1 - Magic - Ice Lance level 1.jpg");
-        fire_1b_40 = createTexture("assets/sprites/spells/fire/fire/fire_1b_40_1.png");
-        warp_effect = createTexture("assets/sprites/spells/arcane/warp_effect-sheet/warp_effect-sheet-3.png");
-        barrier000 = createTexture("assets/sprites/spells/arcane/warp_effect-sheet-4.png");
-        BBLBubbleEllipseYellow = createTexture("assets/sprites/spells/holy/BBLBubbleEllipseYellow.png");
-        magic_flame = createTexture("assets/sprites/spells/holy/BBLBubbleEllipseYellow.png");
-        Snowflake1 = createTexture("assets/sprites/spells/frost/hjm_frost_bolt/frames/hjm_frost_bolt01.png");
-        Snowflake2 = createTexture("assets/sprites/spells/frost/hjm-snow_flake/frames/hjm-snow_flake_003.png");
-
-        arrow = createTexture("assets/sprites/spells/archery/arrow.png");
-
-        bow = createTexture("assets/sprites/UI/icons/misc_icons/Icons/10.png");
-        arrowsFlying = createTexture("assets/sprites/UI/icons/misc_icons/Icons/85.png");
-        redArrow = createTexture("assets/sprites/UI/icons/misc_icons/Icons/95.png");
-        blueArrow = createTexture("assets/sprites/UI/icons/misc_icons/Icons/96.png");
-        greenArrow = createTexture("assets/sprites/UI/icons/misc_icons/Icons/97.png");
-
-        rainofFire = createTexture("assets/sprites/UI/icons/misc_icons/modif/firestream.png");
-        thunderstorm = createTexture("assets/sprites/UI/icons/misc_icons/attack_icons/thunder-1.png");
-        blizzard = createTexture("assets/sprites/UI/icons/misc_icons/attack_icons/blizzard-3.png");
-        summonGhost = createTexture("assets/sprites/UI/icons/misc_icons/painterly-spell-icons-4/wind-grasp-eerie-3.png");
-        summonDemon = createTexture("assets/sprites/UI/icons/misc_icons/painterly-spell-icons-3/horror-red-3.png");
-        reanimate = createTexture("assets/sprites/UI/icons/misc_icons/painterly-spell-icons-3/horror-red-1.png");
-        raiseZombie = createTexture("assets/sprites/UI/icons/misc_icons/old Ancient Beast icons/monster.png");
-        raiseSkeleton = createTexture("assets/sprites/UI/icons/Dark Magic/08.png");
-        firebolt = createTexture("assets/sprites/UI/icons/spell_icons/fire/Fantasy Game Skills Icon 1 - Magic - Fire Ball level 3.jpg");
-
-        charCreateBackground = createTexture("assets/sprites/UI/backgrounds/Background_47.png");
-        window_glow = createTexture("assets/sprites/UI/window_glow.png");
-        fog = createTexture("assets/sprites/UI/mist/fog_0.png");
-
-        icons = createTexture("assets/sprites/icons/icons.png");
-        vikingBuildingIcons = createTexture("assets/sprites/buildings/viking/icons.png");
-        medievelBuildingIcons = createTexture("assets/sprites/buildings/medieval/buildings.png");
-
-        weapons_icons = createTexture("assets/sprites/items/weaponIcons32x32_png_Transparent/weapon_icons_32_transparent.png");
-        itsmars_Inventory = createTexture("assets/sprites/UI/itsmars_Inventory.png");
-        cursor_0 = createTexture("assets/sprites/UI/cursors/cursor.png");
-        //    cursor_1 = createTexture("assets/sprites/UI/cursors/cursor_outline_blue.png");
-        //    cursor_1 = createTexture("assets/sprites/UI/cursors/cursor_outline_red.png");
-        cursor_1 = createTexture("assets/sprites/UI/cursors/cursor_shiny.png");
-        selector32 = createTexture("assets/sprites/UI/selector/selector32.png");
-
-        emptyBagIcon = createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png");// currently NULL
-        bagSlotBorder = createTexture("assets/sprites/UI/icon_borders/frame-0-grey.png");
-
-        itemBorderCommon = createTexture("assets/sprites/UI/icon_borders/frame-0-grey.png");
-        itemBorderMagic = createTexture("assets/sprites/UI/icon_borders/frame-0-blue.png");
-        itemBorderRare = createTexture("assets/sprites/UI/icon_borders/frame-0-orange.png");
-        itemBorderEite = createTexture("assets/sprites/UI/icon_borders/frame-0-red.png");
-
-        armorSpriteSheet = createTexture("assets/sprites/items/flare_armor_transparent.png");
-
-        //    fogOfWar = createTexture("assets/sprites/fog_of_war/blackFog.png");
-        fogOfWar = createTexture("assets/sprites/UI/tooltips/fogOfWar.png");
-        tooltipBackground = createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png");
-        checkmark = createTexture("assets/sprites/UI/Inventory/29.png");
-        spellbook = createTexture("assets/sprites/UI/spellbook/spellbook.png");
-        debug_window = createTexture("assets/sprites/UI/debug/debug_frame.png");
-
-        default_icon = createTexture("assets/sprites/default.jpg");
-    }
 
     void createGraphicsContext() {
         window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, resolution.w, resolution.h, SDL_WINDOW_FULLSCREEN_DESKTOP);
@@ -398,6 +247,7 @@ namespace Graphics {
         //locks to 60 fps
         //    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC | SDL_RENDERER_TARGETTEXTURE);
         SDL_SetHint(SDL_HINT_RENDER_BATCHING, "1");
+        default_icon = createTexture("assets/sprites/default.jpg");
     }
 
     void closeContext() {

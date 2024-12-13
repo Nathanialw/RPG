@@ -115,7 +115,7 @@ namespace Loot_Panel {
 			scaledBackground = Camera_Control::Convert_FRect_To_Scale(scaledBackground, camera);
 
 			lootPanel.interactPanel = scaledBackground;
-			SDL_RenderCopyF(Graphics::renderer, Graphics::tooltipBackground, nullptr, &scaledBackground);
+			SDL_RenderCopyF(Graphics::renderer, Texture::tooltipBackground, nullptr, &scaledBackground);
 
 			for (auto &item: *lootPanel.items) {
 				auto &icon = zone.get<Component::Icon>(item);

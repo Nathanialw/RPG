@@ -251,7 +251,7 @@ namespace Quad_Tree {
 					SDL_FRect screenRect = object->item.rect;
 					screenRect.x -= camera.screen.x;
 					screenRect.y -= camera.screen.y;
-					SDL_RenderCopyF(Graphics::renderer, Graphics::itemBorderRare, NULL, &screenRect);
+					SDL_RenderCopyF(Graphics::renderer, Texture::itemBorderRare, NULL, &screenRect);
 				}
 				//        std::cout << "nodes: " << nodes << std::endl;
 			}

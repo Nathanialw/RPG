@@ -51,7 +51,7 @@ namespace Tooltip {
         tooltipBackground.w += (tooltipBorder * 2.0f);
         tooltipBackground.h += (tooltipBorder * 2.0f);
 
-        Graphics::Render_FRect(Graphics::tooltipBackground, Color::white, &sourceRect, &tooltipBackground);
+        Graphics::Render_FRect(Texture::tooltipBackground, Color::white, &sourceRect, &tooltipBackground);
     }
 
     void Render_Tooltip_FC(Component::Camera &camera, SDL_FRect &statBox, float &charHeight, SDL_Color color, std::string &text) {

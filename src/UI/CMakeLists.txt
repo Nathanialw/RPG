@@ -15,6 +15,7 @@ target_sources(RPG
         game_menu.h
         ui_target_info.h
         ui_minimap.h
+        ui_XP.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})
