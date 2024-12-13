@@ -10,12 +10,16 @@ namespace Color {
     SDL_Color white = {255, 255, 255, 255};
     SDL_Color black = {0, 0, 0, 255};
     SDL_Color red = {255, 0, 0, 255};
+    SDL_Color green = {0, 255, 0, 255};
+
     SDL_Color gray = {200, 200, 200, 255};
     SDL_Color cyan = {0, 125, 125, 255};
     SDL_Color teal ={0, 50, 155, 255};
     SDL_Color orange = {255, 155, 255};
     SDL_Color darkBlue = {0, 0, 155, 255};
     SDL_Color blue = {0, 0, 255, 100};
+    SDL_Color magenta = {255, 0, 255, 255};
+
 
     SDL_Color redMagical = {255, 20, 20, 255};
     SDL_Color blueMagical = {51, 153, 255, 255};
