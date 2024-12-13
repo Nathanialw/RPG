@@ -17,15 +17,14 @@ namespace Lighting {
         REVSUBTRACT = 4
     };
 
-
     float lightRadiusF = 64.0f;
     Uint8 maxDarkness = 250;
     Uint8 minDarkness = 100;
     SDL_Texture *lightRadiusTextureBase[36];
     SDL_Texture *lightRadiusTexture[36];
+    SDL_Texture *lightRadiusTextureLoS[36];
     SDL_Texture *texture;
     SDL_Texture *base;
-    std::vector<Uint32> fogOfWarPixels;
     bool setFogOfWar = false;
 
     //value positive for increase, negative for decrease
@@ -110,49 +109,46 @@ namespace Lighting {
         if (lightRadiusTextureBase[lightStr])
             return;
 
-//        std::vector<Uint32> lightRadiusPixels(width * height);
-
         lightRadiusTextureBase[lightStr] = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING, width, height);
-        Set_BlendMode(lightRadiusTextureBase[lightStr]);
-
-//        for (int i = 0; i < height; i++) {
-//            for (int j = 0; j < width; j++) {
-//                int index = i * width + j;
-//
-//                Uint8 darkness;
-//                float dx = (j - (width * 0.5f)) / (lightStr * 0.75f);
-//                float dy = (i - (height * 0.5f)) / (lightStr * 0.5f);
-//                float distance = (dx * dx) + (dy * dy);
-//
-//                if (distance <= 1.0f)
-//                    lightRadiusPixels[index] = (minDarkness << 24);
-//                else if (distance > (lightRadiusF * 0.5f) * (lightRadiusF * 0.5f))
-//                    lightRadiusPixels[index] = (maxDarkness << 24);
-//                else {
-//                    darkness = (Uint8) (minDarkness + (sqrt(distance) * (maxDarkness - minDarkness) / (lightRadiusF * 0.5f)));
-//                    color = darkness << 24;
-//                    lightRadiusPixels[index] = color;
-//                }
-//            }
-//        }
-
-
-//        std::cout << "Creating texture for light radius: " << lightRadiusPixels.size() << " " << lightStr << std::endl;
 
         int32 color = (maxDarkness << 24) | (0 << 16) | (0 << 8) | 0;
-        std::vector<Uint32> visionPixels(width * height, color);
-        for (auto &pixel: visionPixels)
-            pixel = color;
-        visionPixels.shrink_to_fit();
+        std::vector<Uint32> lightRadiusPixels(width * height, color);
 
-        Create_Texture(visionPixels, lightRadiusTextureBase[lightStr]);
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                int index = i * width + j;
+
+                Uint8 darkness;
+                float dx = (j - (width * 0.5f)) / (lightStr * 0.75f);
+                float dy = (i - (height * 0.5f)) / (lightStr * 0.5f);
+                float distance = (dx * dx) + (dy * dy);
+
+                if (distance <= 1.0f)
+                    lightRadiusPixels[index] = (minDarkness << 24);
+                else if (distance > (lightRadiusF * 0.5f) * (lightRadiusF * 0.5f))
+                    lightRadiusPixels[index] = (maxDarkness << 24);
+                else {
+                    darkness = (Uint8) (minDarkness + (sqrt(distance) * (maxDarkness - minDarkness) / (lightRadiusF * 0.5f)));
+                    color = darkness << 24;
+                    lightRadiusPixels[index] = color;
+                }
+            }
+        }
+
+        std::cout << "Creating texture for light radius: " << lightRadiusPixels.size() << " " << lightStr << std::endl;
+        Create_Texture(lightRadiusPixels, lightRadiusTextureBase[lightStr]);
+
+
+        lightRadiusTextureLoS[lightStr] = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING, width, height);
+        color = (maxDarkness << 24) | (0 << 16) | (0 << 8) | 0;
+        std::vector<Uint32> lightRadiusTextureLoSPixels(width * height, color);
+        Create_Texture(lightRadiusTextureLoSPixels, lightRadiusTextureLoS[lightStr]);
     }
 
     void Init(Component::Camera &camera) {
         if (!setFogOfWar) {
             if (base)
                 SDL_DestroyTexture(base);
-
             base = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING, camera.screen.w, camera.screen.h);
 
             if (!base) {
@@ -161,12 +157,8 @@ namespace Lighting {
             }
 
             Uint32 color = (maxDarkness << 24) | (0 << 16) | (0 << 8) | 0;
-            fogOfWarPixels.resize(camera.screen.w * camera.screen.h, color);
-            for (auto &pixel: fogOfWarPixels)
-                pixel = color;
-            fogOfWarPixels.shrink_to_fit();
+            std::vector<Uint32> fogOfWarPixels(camera.screen.w * camera.screen.h, color);
             setFogOfWar = true;
-
             Create_Texture(fogOfWarPixels, base);
         }
     }
@@ -183,21 +175,8 @@ namespace Lighting {
         SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &rect);
     }
 
-    void Get_Emitters(entt::registry &zone, Component::Camera &camera) {
-        if (texture)
-            SDL_DestroyTexture(texture);
-
-        texture = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_TARGET, camera.screen.w, camera.screen.h);
-        if (!texture) {
-            std::cerr << "Failed to create texture: " << SDL_GetError() << std::endl;
-            return;
-        }
-        SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
-        SDL_SetRenderTarget(Graphics::renderer, texture);
-        SDL_RenderCopyF(Graphics::renderer, base, nullptr, nullptr);
-        Set_BlendMode(texture);
-
-        auto view = zone.view<Component::Position, Component::Light_Radius, Component::Renderable, Component::Input>();
+    void Draw_Lights(entt::registry &zone, Component::Camera &camera) {
+        auto view = zone.view<Component::Position, Component::Light_Radius, Component::Renderable>();
         for (auto entity: view) {
             auto light = view.get<Component::Light_Radius>(entity);
             auto position = view.get<Component::Position>(entity);
@@ -208,25 +187,67 @@ namespace Lighting {
             SDL_SetRenderTarget(Graphics::renderer, lightRadiusTexture[light.lightRadius]);
             SDL_RenderCopyF(Graphics::renderer, lightRadiusTextureBase[light.lightRadius], nullptr, nullptr);
 
-
-            SDL_SetRenderDrawBlendMode(Graphics::renderer, SDL_BLENDMODE_BLEND);
-            Line_Of_Sight::Draw(zone, camera, lightRadiusF, lightRadiusTexture[light.lightRadius]);
-
-//            SDL_SetRenderTarget(Graphics::renderer, nullptr);
-//            SDL_FRect rect = {0, 0, camera.screen.w, camera.screen.h};
-//            SDL_RenderCopyF(Graphics::renderer, lightRadiusTexture[light.lightRadius], nullptr, &rect);
-
-            Set_BlendMode(lightRadiusTexture[light.lightRadius], BlendMode::REVSUBTRACT);
-            Set_BlendMode(texture, BlendMode::REVSUBTRACT);
+            Set_BlendMode(lightRadiusTexture[light.lightRadius], BlendMode::MIN);
+            Set_BlendMode(texture, BlendMode::MIN);
             Draw_Light_Radius(screenPosition.x, screenPosition.y, light.lightRadius, lightRadiusTexture[light.lightRadius]);
         }
+    }
 
+    void Draw_LOS(entt::registry &zone, Component::Camera &camera) {
+        auto view = zone.view<Component::Position, Component::Light_Radius, Component::Renderable, Component::Input>();
+        for (auto entity: view) {
+            auto light = view.get<Component::Light_Radius>(entity);
+            auto position = view.get<Component::Position>(entity);
+            auto screenPosition = Camera_Control::Convert_Position_To_Screen_Coods(camera, position);
+
+            int width = camera.screen.w;
+            int height = camera.screen.h;
+            SDL_FRect visionRect = {0, 0, camera.screen.w, camera.screen.h};
+
+            SDL_Texture *LoSTexture = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_TARGET, width, height);
+            SDL_SetRenderTarget(Graphics::renderer, LoSTexture);
+            SDL_RenderCopyF(Graphics::renderer, lightRadiusTextureLoS[light.lightRadius], nullptr, nullptr);
+
+            SDL_BlendMode LblendMode;
+            LblendMode = SDL_ComposeCustomBlendMode(
+                    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_REV_SUBTRACT,
+                    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_REV_SUBTRACT);
+
+            SDL_SetRenderDrawBlendMode(Graphics::renderer, LblendMode);
+            SDL_SetRenderTarget(Graphics::renderer, LoSTexture);
+            Line_Of_Sight::Draw(zone, camera, lightRadiusF, light.lightRadius, screenPosition, visionRect);
+
+            SDL_SetRenderTarget(Graphics::renderer, texture);
+            Set_BlendMode(LoSTexture, BlendMode::MAX);
+            SDL_RenderCopyF(Graphics::renderer, LoSTexture, nullptr, nullptr);
+
+            SDL_DestroyTexture(LoSTexture);
+        }
         SDL_SetRenderTarget(Graphics::renderer, nullptr);
     }
 
-    void Render(entt::registry &zone, Component::Camera &camera) {
+    void Clear_Display_Texture(Component::Camera &camera) {
         Init(camera);
-        Get_Emitters(zone, camera);
+
+        if (texture)
+            SDL_DestroyTexture(texture);
+
+        texture = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_TARGET, camera.screen.w, camera.screen.h);
+        if (!texture) {
+            std::cerr << "Lighting::Clear_Display_Texture() Failed to create texture: " << SDL_GetError() << std::endl;
+            return;
+        }
+
+        SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
+        SDL_SetRenderTarget(Graphics::renderer, texture);
+        SDL_RenderCopyF(Graphics::renderer, base, nullptr, nullptr);
+        Set_BlendMode(texture);
+    }
+
+    void Render(entt::registry &zone, Component::Camera &camera) {
+        Clear_Display_Texture(camera);
+        Draw_Lights(zone, camera);
+        Draw_LOS(zone, camera);
         Display(camera);
     }
 

@@ -11,7 +11,7 @@
 #include "shadows.h"
 
 namespace Line_Of_Sight {
-    Uint8 close = 150;
+    Uint8 close = 250;
     Uint8 far = 0;
 
     void Update_Close(int value) {
@@ -83,19 +83,12 @@ namespace Line_Of_Sight {
 
         //draw edges of collision polygons
         Color::Set_Render_Draw_Color(Graphics::renderer, Color::red, 100);
-        for (int i = 0; i < pointVec.size() - 1; i++) {
+        for (int i = 0; i < pointVec.size(); i++)
             SDL_RenderDrawLineF(Graphics::renderer,
                                 screenTargetPosition.x + pointVec[i].x,
                                 screenTargetPosition.y + pointVec[i].y,
-                                screenTargetPosition.x + pointVec[i + 1].x,
-                                screenTargetPosition.y + pointVec[i + 1].y);
-        }
-        SDL_RenderDrawLineF(Graphics::renderer,
-                            screenTargetPosition.x + pointVec[0].x,
-                            screenTargetPosition.y + pointVec[0].y,
-                            screenTargetPosition.x + pointVec[pointVec.size() - 1].x,
-                            screenTargetPosition.y + pointVec[pointVec.size() - 1].y);
-
+                                screenTargetPosition.x + pointVec[(i + 1) % pointVec.size()].x,
+                                screenTargetPosition.y + pointVec[(i + 1) % pointVec.size()].y);
 
         //draw lines from player to vertices
         Color::Set_Render_Draw_Color(Graphics::renderer, Color::green, 100);
@@ -118,115 +111,65 @@ namespace Line_Of_Sight {
     }
 
 
-    void Draw(entt::registry &zone, Component::Camera &camera, float lightRadiusF, SDL_Texture *texture) {
-        auto player_view = zone.view<Component::Position, Component::Renderable, Component::Light_Radius>();
-        for (auto player: player_view) {
-            auto screenPosition = Camera_Control::Convert_Position_To_Screen_Coods(camera, player_view.get<Component::Position>(player));
-            auto lightStr = player_view.get<Component::Light_Radius>(player).lightRadius;
+    void Draw(entt::registry &zone, Component::Camera &camera, float lightRadiusF, float lightStr, Component::Position screenPosition, SDL_FRect visionRect) {
+        std::vector<Shadows::sEdge> vecEdges;
 
-            SDL_FRect visionRect = {
-                    screenPosition.x - ((lightStr * (lightRadiusF * 0.75f)) * 0.5f),
-                    screenPosition.y - ((lightStr * (lightRadiusF * 0.5f)) * 0.5f),
-                    lightStr * (lightRadiusF * 0.75f),
-                    lightStr * (lightRadiusF * 0.5f)
-            };
+        //top
+        vecEdges.push_back({visionRect.x, visionRect.y, visionRect.x + visionRect.w, visionRect.y});
+        //right
+        vecEdges.push_back({visionRect.x + visionRect.w, visionRect.y, visionRect.x + visionRect.w, visionRect.y + visionRect.h});
+        //bottom
+        vecEdges.push_back({visionRect.x + visionRect.w, visionRect.y + visionRect.h, visionRect.x, visionRect.y + visionRect.h});
+        //left
+        vecEdges.push_back({visionRect.x, visionRect.y + visionRect.h, visionRect.x, visionRect.y});
 
-            auto view = zone.view<Component::Position, Component::Radius, Collision_Component::Collider_Data, Component::Entity_Type>();
-
-            Shadows::vecEdges.clear();
-
-            //each vertice of the visionRect
-
-            //top
-            Shadows::vecEdges.push_back({visionRect.x, visionRect.y, visionRect.x + visionRect.w, visionRect.y});
-            //right
-            Shadows::vecEdges.push_back({visionRect.x + visionRect.w, visionRect.y, visionRect.x + visionRect.w, visionRect.y + visionRect.h});
-            //bottom
-            Shadows::vecEdges.push_back({visionRect.x + visionRect.w, visionRect.y + visionRect.h, visionRect.x, visionRect.y + visionRect.h});
-            //left
-            Shadows::vecEdges.push_back({visionRect.x, visionRect.y + visionRect.h, visionRect.x, visionRect.y});
-
-            for (auto entity: view) {
-                if (view.get<Component::Entity_Type>(entity) != Component::Entity_Type::tile)
-                    continue;
-
-                //if the tile does not intersect with the screen
-                auto tilePosition = view.get<Component::Position>(entity);
-                Component::Position screenTargetPosition = Camera_Control::Convert_Position_To_Screen_Coods(camera, tilePosition);
-                SDL_FRect tileBB = {screenTargetPosition.x, screenTargetPosition.y, 512.0f, 512.0f};
-                if (!Utilities::Rect_Intersect(visionRect, tileBB))
-                    continue;
-
-                screenTargetPosition.x += 256.0f;
-                screenTargetPosition.y += 256.0f;
-
-                auto &colliderData = view.get<Collision_Component::Collider_Data>(entity);
-                auto &coll = Collision_Component::polygonColliders.at(colliderData.name).colliders;
-
-//                for (auto &pointVec: coll.pointVecs) {
-//                    Draw_Edges(pointVec, screenPosition, screenTargetPosition, camera);
-//                    Draw_Shapes(pointVec, visionRect, screenTargetPosition);
-//                }
-
-                for (auto &pointVec: coll.pointVecs) {
-                    for (int i = 0; i < pointVec.size() - 1; i++) {
-                        Shadows::vecEdges.push_back({
-                                                            screenTargetPosition.x + pointVec[i].x,
-                                                            screenTargetPosition.y + pointVec[i].y,
-                                                            screenTargetPosition.x + pointVec[(i + 1)].x,
-                                                            screenTargetPosition.y + pointVec[(i + 1)].y}
-                        );
-                    }
-                    Shadows::vecEdges.push_back({
-                                                        screenTargetPosition.x + pointVec[0].x,
-                                                        screenTargetPosition.y + pointVec[0].y,
-                                                        screenTargetPosition.x + pointVec[pointVec.size() - 1].x,
-                                                        screenTargetPosition.y + pointVec[pointVec.size() - 1].y}
-                    );
-                }
-            }
-
-            Shadows::CalculateVisibilityPolygon(screenPosition.x, screenPosition.y, 2000);
-
-            if (Shadows::vecVisibilityPolygonPoints.empty())
+        auto view = zone.view<Component::Position, Collision_Component::Collider_Data, Component::Entity_Type>();
+        for (auto entity: view) {
+            if (view.get<Component::Entity_Type>(entity) != Component::Entity_Type::tile)
                 continue;
 
-            for (int i = 0; i < Shadows::vecVisibilityPolygonPoints.size() - 1; i++) {
-                auto x1 = get<1>(Shadows::vecVisibilityPolygonPoints[i]);
-                auto y1 = get<2>(Shadows::vecVisibilityPolygonPoints[i]);
-                auto x2 = get<1>(Shadows::vecVisibilityPolygonPoints[(i + 1)]);
-                auto y2 = get<2>(Shadows::vecVisibilityPolygonPoints[(i + 1)]);
+            //if the tile does not intersect with the screen
+            auto tilePosition = view.get<Component::Position>(entity);
+            Component::Position screenTargetPosition = Camera_Control::Convert_Position_To_Screen_Coods(camera, tilePosition);
+            SDL_FRect tileBB = {screenTargetPosition.x, screenTargetPosition.y, 512.0f, 512.0f};
 
-                SDL_Vertex triangle[3] = {
-                        {screenPosition.x - visionRect.x, screenPosition.y - visionRect.y, Color::Set_Color_With_Alpha(Color::black, close)},
-                        {x1 - visionRect.x,               y1 - visionRect.y,               Color::Set_Color_With_Alpha(Color::black,far)},
-                        {x2 - visionRect.x,               y2 - visionRect.y,               Color::Set_Color_With_Alpha(Color::black,far)}
-                };
+            if (!Utilities::Rect_Intersect(visionRect, tileBB))
+                continue;
 
-                if (SDL_RenderGeometry(Graphics::renderer, nullptr, triangle, 3, nullptr, 0) != 0)
-                    std::cerr << "Failed to render geometry: " << SDL_GetError() << std::endl;
-            }
-            auto x1 = get<1>(Shadows::vecVisibilityPolygonPoints[0]);
-            auto y1 = get<2>(Shadows::vecVisibilityPolygonPoints[0]);
-            auto x2 = get<1>(Shadows::vecVisibilityPolygonPoints[(Shadows::vecVisibilityPolygonPoints.size() - 1)]);
-            auto y2 = get<2>(Shadows::vecVisibilityPolygonPoints[(Shadows::vecVisibilityPolygonPoints.size() - 1)]);
+            screenTargetPosition.x += 256.0f;
+            screenTargetPosition.y += 256.0f;
+
+            auto &colliderData = view.get<Collision_Component::Collider_Data>(entity);
+            auto &coll = Collision_Component::polygonColliders.at(colliderData.name).colliders;
+
+            for (auto &pointVec: coll.pointVecs)
+                for (int i = 0; i < pointVec.size(); i++)
+                    vecEdges.push_back({
+                                               screenTargetPosition.x + pointVec[i].x,
+                                               screenTargetPosition.y + pointVec[i].y,
+                                               screenTargetPosition.x + pointVec[(i + 1) % pointVec.size()].x,
+                                               screenTargetPosition.y + pointVec[(i + 1) % pointVec.size()].y});
+        }
+
+        Shadows::CalculateVisibilityPolygon(vecEdges, screenPosition.x, screenPosition.y, lightStr * (lightRadiusF * 0.5f));
+
+        if (Shadows::vecVisibilityPolygonPoints.empty())
+            return;
+
+        for (int i = 0; i < Shadows::vecVisibilityPolygonPoints.size(); i++) {
+            auto x1 = get<1>(Shadows::vecVisibilityPolygonPoints[i]);
+            auto y1 = get<2>(Shadows::vecVisibilityPolygonPoints[i]);
+            auto x2 = get<1>(Shadows::vecVisibilityPolygonPoints[(i + 1) % Shadows::vecVisibilityPolygonPoints.size()]);
+            auto y2 = get<2>(Shadows::vecVisibilityPolygonPoints[(i + 1) % Shadows::vecVisibilityPolygonPoints.size()]);
+
             SDL_Vertex triangle[3] = {
                     {screenPosition.x - visionRect.x, screenPosition.y - visionRect.y, Color::Set_Color_With_Alpha(Color::black, close)},
-                    {x1 - visionRect.x,               y1 - visionRect.y,               Color::Set_Color_With_Alpha(Color::black,far)},
-                    {x2 - visionRect.x,               y2 - visionRect.y,               Color::Set_Color_With_Alpha(Color::black,far)}
+                    {x1 - visionRect.x,               y1 - visionRect.y,               Color::Set_Color_With_Alpha(Color::black, close)},
+                    {x2 - visionRect.x,               y2 - visionRect.y,               Color::Set_Color_With_Alpha(Color::black, close)}
             };
 
             if (SDL_RenderGeometry(Graphics::renderer, nullptr, triangle, 3, nullptr, 0) != 0)
                 std::cerr << "Failed to render geometry: " << SDL_GetError() << std::endl;
-
-//            Color::Set_Render_Draw_Color(Graphics::renderer, Color::red, 100);
-//            for (int i = 0; i < Shadows::vecEdges.size(); i++) {
-//                SDL_RenderDrawLineF(Graphics::renderer,
-//                                    Shadows::vecEdges[i].sx,
-//                                    Shadows::vecEdges[i].sy,
-//                                    Shadows::vecEdges[i].ex,
-//                                    Shadows::vecEdges[i].ey);
-//            }
         }
     }
 

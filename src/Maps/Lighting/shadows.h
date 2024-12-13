@@ -16,11 +16,13 @@ namespace Shadows {
         float sx, sy, ex, ey;
     };
 
-    std::vector<sEdge> vecEdges;
+    //can use this to stored edges instead of building them each frame
+//    std::vector<sEdge> vecEdges;
+
     std::vector<std::tuple<float, float, float>> vecVisibilityPolygonPoints;
 
 
-    void CalculateVisibilityPolygon(float ox, float oy, float radius) {
+    void CalculateVisibilityPolygon(std::vector<sEdge> vecEdges, float ox, float oy, float radius) {
         // Get rid of existing polygon
         vecVisibilityPolygonPoints.clear();
 
