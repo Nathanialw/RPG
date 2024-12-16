@@ -32,6 +32,22 @@ namespace Component {
     struct Unit {
     };
 
+    struct Religion {
+        std::string religion = "Pantosian";
+        int faith = 0;
+    };
+
+    struct Skills {
+        int unspent = 0;
+    };
+
+    struct Stats {
+        int unspent = 0;
+        int strength = 30;
+        int dexterity = 30;
+        int intelligence = 30;
+    };
+
     struct XP {
         int level = 1;
         int xp = 0;
@@ -46,10 +62,17 @@ namespace Component {
         int index;
     };
 
+    struct Object_Name {
+        std::string objectName;
+    };
+
     struct Name {
         std::string first;
         std::string last;
         std::string nickname;
+        std::string race = "Human";
+        std::string sex = "Male";
+        std::string Class = "Scholar";
     };
 
     struct Tile_Index {
@@ -84,6 +107,25 @@ namespace Component {
     struct Health {
         int currentHealth = 0;
         int maxHealth = 0;
+    };
+
+    struct Mana {
+        int current = 0;
+        int max = 0;
+    };
+
+    struct Gold {
+        int gold;
+        int gems;
+    };
+
+    struct Dungeon_Level {
+        int level;
+    };
+
+    struct Time_On_Map {
+        int current;
+        int max;
     };
 
     struct Alive {

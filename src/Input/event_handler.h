@@ -247,7 +247,7 @@ namespace Event_Handler {
 					if (Events::event.window.event == SDL_WINDOWEVENT_RESIZED) {
 						//            recenter camera on player
 						UI_Spellbook::Update_Position();
-						UI_Info::Update_Position();
+						UI_Stats::Update_Position();
 						UI_Debug::Update_Position();
 						Action_Bar::Update_Position(Action_Bar::actionBar.actionBar.actionBarFrame);
 						Menu::Build_Menu(Menu::menu);

@@ -42,7 +42,6 @@ namespace Tooltip {
     }
 
     void Render_Tooltip_Background(SDL_FRect &tooltipBox, Component::Camera &camera) {
-        SDL_Rect sourceRect = {0, 0, 48, 48};
         SDL_FRect tooltipBackground = tooltipBox;
 
         float tooltipBorder = 5.0f / camera.scale.y;
@@ -51,7 +50,7 @@ namespace Tooltip {
         tooltipBackground.w += (tooltipBorder * 2.0f);
         tooltipBackground.h += (tooltipBorder * 2.0f);
 
-        Graphics::Render_FRect(Texture::tooltipBackground, Color::white, &sourceRect, &tooltipBackground);
+        Graphics::Render_FRect(Texture::tooltipBackground, Color::white, nullptr, &tooltipBackground);
     }
 
     void Render_Tooltip_FC(Component::Camera &camera, SDL_FRect &statBox, float &charHeight, SDL_Color color, std::string &text) {
@@ -61,7 +60,7 @@ namespace Tooltip {
         statBox.y += charHeight;
     }
 
-    void Render_Tooltip(entt::registry &zone, entt::entity &item, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
+    void Render_Item_Tooltip(entt::registry &zone, entt::entity &item, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
         auto &name = zone.get<Item_Component::Name>(item).name;
         auto &stats = zone.get<Item_Component::Item_Stats>(item).stats;
         auto &rarity = zone.get<Item_Component::Rarity>(item);
@@ -127,7 +126,7 @@ namespace Tooltip {
                     item = Equipment_UI::Get_Equip_Slot(zone, state, camera);
                 }
                 if (item != Bag_UI::emptyBagSlot[state] && item != Item_Component::emptyEquipSlot[state]) {
-                    Tooltip::Render_Tooltip(zone, item, state, mousePoint, camera);
+                    Tooltip::Render_Item_Tooltip(zone, item, state, mousePoint, camera);
                 }
             }
         }

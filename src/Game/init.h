@@ -64,7 +64,7 @@ namespace Init {
 
     void Init_Data() {
         Texture::Load_Textures();
-        UI_Info::Update_Position();
+        UI_Stats::Update_Position();
         UI_Debug::Update_Position();
         Icons::Load();
         UI_Spellbook::Init_UI();

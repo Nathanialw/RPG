@@ -5,7 +5,7 @@
 #include "Lighting//lighting.h"
 #include "Maps/World/cave.h"
 #include "SDL2/SDL.h"
-#include "UI/ui_info.h"
+#include "UI/ui_stats.h"
 #include "ai_control.h"
 #include "array"
 #include "components.h"
@@ -83,7 +83,7 @@ namespace Hotbar {
     }
 
     int Info_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-        UI_Info::Info_Toggle();
+        UI_Stats::Info_Toggle();
         return 0;
     }
 
@@ -93,13 +93,13 @@ namespace Hotbar {
             zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseData.mouseItem);
             Mouse::Set_Cursor_As_Cursor(zone);
             return 0;
-        } else if (UI_Spellbook::spellbook.b_isOpen || Bag_UI::bToggleCharacterUI || UI_Info::spellbook.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || UI_Frames::topFrame.open || !view.empty()) {
+        } else if (UI_Spellbook::spellbook.b_isOpen || Bag_UI::bToggleCharacterUI || UI_Stats::tab.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || UI_Frames::topFrame.open || !view.empty()) {
             Mouse::bLeft_Mouse_Pressed = false;
             zone.clear<Component::Selected>();
             Loot_Panel::Close();
             Bag_UI::bToggleCharacterUI = false;
             UI_Spellbook::spellbook.b_isOpen = false;
-            UI_Info::spellbook.b_isOpen = false;
+            UI_Stats::tab.b_isOpen = false;
             Game_Menu_Control::Close();
             return 0;
         }

@@ -331,7 +331,7 @@ namespace Rendering {
             Damage_Text::Show_Damage(zone, camera);
             UI_Spellbook::Draw_Spellbook(camera);
             UI_Debug::Draw(zone, camera);
-            UI_Info::Draw_Attributes(camera);
+            UI_Stats::Draw_Attributes(zone, camera);
             Minimap::Render(zone, state, camera);
             Pause::Pause_Control(camera);
             if (!Menu::Render_Menu(zone, state, camera)) {

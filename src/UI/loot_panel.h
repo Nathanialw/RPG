@@ -137,7 +137,7 @@ namespace Loot_Panel {
 				SDL_FRect scaledSlot = Camera_Control::Convert_FRect_To_Scale(panel, camera);
 				if (Mouse::bRect_inside_Cursor(scaledSlot)) {
 					SDL_FPoint mouse = {Mouse::iXMouse, Mouse::iYMouse};
-					Tooltip::Render_Tooltip(zone, item, state, mouse, camera);
+                    Tooltip::Render_Item_Tooltip(zone, item, state, mouse, camera);
 				}
 				panel.y += lootPanel.lootPanelSize;
 			}

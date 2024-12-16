@@ -142,7 +142,7 @@ namespace Create_Entities {
 		zone.emplace_or_replace<Component::Radius>(entity, colliderData.radius);
 		zone.emplace_or_replace<Component::Alive>(entity, true);
 		zone.emplace_or_replace<Rendering_Components::Unit_Frame_Portrait>(entity);
-		zone.emplace_or_replace<Component::Health>(entity, 100, 100);
+		zone.emplace_or_replace<Component::Health>(entity, 10, 10);
 
 		//check db if interactable and add component if true
 		return true;
@@ -236,11 +236,11 @@ namespace Create_Entities {
 
 	void Create_Entity(entt::registry &zone, int &state, float x, float y, db::Unit_Data &imgPaths, bool player, Social_Component::Summon summon, Component::Unit_Index &unitIndex) {
 		auto entity = zone.create();
-		Entity_Loader::Data data;
-		data = Entity_Loader::parse_data(imgPaths.name);
+		auto data = Entity_Loader::parse_data(imgPaths.name);
 		if (data.hexDir) {
 			Utilities::Log(data.hexDir);
 		}
+        zone.emplace_or_replace<Component::Object_Name>(entity, imgPaths.name);
 		Rendering_Components::Blend_Type blendType = Set_Texture_Components(zone, entity, imgPaths, data.equip_type, data.hexDir);
 		Component::Position position = Add_Shared_Components(zone, entity, x, y, data, unitIndex);
 
@@ -291,7 +291,7 @@ namespace Create_Entities {
 					Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
 					zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
 				}
-				zone.emplace_or_replace<Component::Health>(entity, (int) (data.health * data.scale), (int) (data.health * data.scale));
+                zone.emplace_or_replace<Component::Health>(entity, (int) (data.health * data.scale), (int) (data.health * data.scale));
 			} else {
 				Load::Copy_Player(zone, World::world[World::world[state].previousZoneIndex].zone, state, World::world[state].previousZoneIndex, entity);
 			}
@@ -307,8 +307,15 @@ namespace Create_Entities {
 				zone.emplace_or_replace<Component::Interactable>(entity);
 			}
 
-
 			if (player) {
+                zone.emplace_or_replace<Component::Stats>(entity);
+                zone.emplace_or_replace<Component::Religion>(entity);
+                zone.emplace_or_replace<Component::XP>(entity);
+                zone.emplace_or_replace<Component::Mana>(entity);
+                zone.emplace_or_replace<Component::Gold>(entity);
+                zone.emplace_or_replace<Component::Dungeon_Level>(entity);
+                zone.emplace_or_replace<Component::Time_On_Map>(entity);
+
 				Component::Add_Input_Component(zone, velocity, entity);
 				SDL_DisplayMode dm;
 				SDL_GetWindowDisplayMode(Graphics::window, &dm);
