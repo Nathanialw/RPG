@@ -205,9 +205,9 @@ namespace Character_Options {
     genderImages[(int) Sex::male].beardStyles.emplace_back(nullptr);
 
     genderImages[(int) Sex::male].horns.emplace_back(nullptr);
-    for (int i = 0; i < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns].size(); ++i) {
-      genderImages[(int) Sex::male].horns.emplace_back(Graphics::createTexture(("assets/" + SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns][i].body_pngPath).c_str()));
-    }
+//    for (int i = 0; i < SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns].size(); ++i) {
+//      genderImages[(int) Sex::male].horns.emplace_back(Graphics::createTexture(("assets/" + SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns][i].body_pngPath).c_str()));
+//    }
 
     //    genderImages[(int) Sex::male].weapon = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Male[0]).body_pngPath).c_str());
     //    genderImages[(int) Sex::male].chest = Graphics::createTexture(("assets/" + SQLite_Item_Data::Load_Specific_Item(Gear_Male[1]).body_pngPath).c_str());
@@ -233,9 +233,9 @@ namespace Character_Options {
 
   Item_Component::Item Get_Horn_Name(Character_Options::Customization &options) {
     if (options.sex == Sex::male) {
-      if (options.horns) {
-        return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns][0];
-      }
+//      if (options.horns) {
+//        return SQLite_Item_Data::Items[Item_Component::Unit_Equip_Type::classes_male][Item_Component::Item_Type::horns][0];
+//      }
     }
     return {"none", "none", "none"};
   }

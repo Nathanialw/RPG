@@ -64,6 +64,7 @@ namespace Texture {
     SDL_Texture *fog;
 
     SDL_Texture *icons;
+    SDL_Texture *cox_icons;
     SDL_Texture *vikingBuildingIcons;
     SDL_Texture *medievelBuildingIcons;
 
@@ -133,6 +134,7 @@ namespace Texture {
         fog = Graphics::createTexture("assets/sprites/UI/mist/fog_0.png");
 
         icons = Graphics::createTexture("assets/sprites/icons/icons.png");
+        cox_icons = Graphics::createTexture("assets/sprites/icons/cox_icons.png");
         vikingBuildingIcons = Graphics::createTexture("assets/sprites/buildings/viking/icons.png");
         medievelBuildingIcons = Graphics::createTexture("assets/sprites/buildings/medieval/buildings.png");
 

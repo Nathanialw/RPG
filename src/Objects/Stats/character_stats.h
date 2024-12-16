@@ -69,12 +69,16 @@ namespace Character_Stats {
   }
 
   void Update_Unit_Stats(entt::registry &zone, int &state) {
-    auto view = zone.view<Item_Component::Item_Equip, Component::Melee_Damage, Component::Attack_Speed, Component::Health, Item_Component::Equipment>();
+    auto view = zone.view<Component::Object_Name, Item_Component::Item_Equip, Component::Melee_Damage, Component::Attack_Speed, Component::Health, Item_Component::Equipment>();
     for (auto entity: view) {
       auto &damage = view.get<Component::Melee_Damage>(entity);
+      auto &objectName = view.get<Component::Object_Name>(entity).objectName;
       auto &attackSpeed = view.get<Component::Attack_Speed>(entity);
       auto &health = view.get<Component::Health>(entity);
       auto &equipment = view.get<Item_Component::Equipment>(entity);
+
+        auto data = Entity_Loader::parse_data(objectName);
+
 
       // set character stats to base values
       for (auto &stat: Item_Component::statData) {
@@ -124,7 +128,7 @@ namespace Character_Stats {
           case Item_Component::Stat::spellDamage:
             break;
           case Item_Component::Stat::health:
-            health.maxHealth = stat.second;
+            health.maxHealth = data.health + stat.second;
             break;
           case Item_Component::Stat::piety:
             break;
@@ -200,12 +204,15 @@ namespace Character_Stats {
   }
 
   void Init_Player_Stats(entt::registry &zone, int &state) {// run funtion on item equip or unequip
-    auto view = zone.view<Component::Input, Component::Melee_Damage, Component::Health, Component::Attack_Speed, Item_Component::Equipment>();
+    auto view = zone.view<Component::Input, Component::Object_Name, Component::Melee_Damage, Component::Health, Component::Attack_Speed, Item_Component::Equipment>();
     for (auto entity: view) {
       auto &damage = view.get<Component::Melee_Damage>(entity);
       auto &health = view.get<Component::Health>(entity);
       auto &attackSpeed = view.get<Component::Attack_Speed>(entity);
       auto &equipment = view.get<Item_Component::Equipment>(entity);
+      auto &objectName = view.get<Component::Object_Name>(entity).objectName;
+
+        auto data = Entity_Loader::parse_data(objectName);
 
       // set charcter stats to base values
       for (auto &stat: Item_Component::statData) {
@@ -230,7 +237,7 @@ namespace Character_Stats {
             damage.maxDamage = stat.second;
             break;
           case Item_Component::Stat::health:
-            health.maxHealth = stat.second;
+            health.maxHealth = data.health + stat.second;
             break;
           case Item_Component::Stat::attackSpeed:
             attackSpeed.period = stat.second;

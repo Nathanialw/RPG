@@ -184,34 +184,35 @@ namespace Equipment_UI {
     SDL_FRect screenEquipment = {defaultScreenPosition.x, defaultScreenPosition.y, 490.0f, 1080.0f};
 
     std::map<Item_Component::Item_Type, SDL_FRect> equippedItemsRect{
-        {Item_Component::Item_Type::helm, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::amulet, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::shoulders, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::helm,     {defaultScreenPosition.x + equipmentOffsetColumn1.x,                           defaultScreenPosition.y + equipmentOffsetColumn1.y,                                            iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::amulet,   {defaultScreenPosition.x + equipmentOffsetColumn1.x,                           defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f,        iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::shoulders, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 
-        //          {Item_Component::Item_Type::SIZE, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            //          {Item_Component::Item_Type::SIZE, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 
-        {Item_Component::Item_Type::chest, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::mainhand, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::quiver, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::gloves, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::belt, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::legs, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::boots, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::offhand, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::chest,    {defaultScreenPosition.x + equipmentOffsetColumn1.x,                           defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::mainhand, {defaultScreenPosition.x + equipmentOffsetColumn1.x,                           defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::quiver, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::gloves,   {defaultScreenPosition.x + equipmentOffsetColumn2.x,                           defaultScreenPosition.y + equipmentOffsetColumn2.y,                                            iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::belt, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::legs,     {defaultScreenPosition.x + equipmentOffsetColumn2.x,                           defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::boots,    {defaultScreenPosition.x + equipmentOffsetColumn2.x,                           defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::offhand,  {defaultScreenPosition.x + equipmentOffsetColumn2.x,                           defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
 
-        {Item_Component::Item_Type::clothes, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::wrist, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::kilt, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::face, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::hood, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::crown, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::shins, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::back, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::ring0, {defaultScreenPosition.x + equipmentOffsetColumn1.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::ring1, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::jewelry0, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
-        {Item_Component::Item_Type::jewelry1, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}}};
-    //            Item_Component::Item_Type::ranged, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 800.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::clothes, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::wrist, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::kilt, {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn1.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::face, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::hood, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize) + 10.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::crown, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 2.0f) + 20.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::shins, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 3.0f) + 30.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::back, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 40.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::ring0,    {defaultScreenPosition.x + equipmentOffsetColumn1.x,                           defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+            {Item_Component::Item_Type::ring1,    {defaultScreenPosition.x + equipmentOffsetColumn1.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::jewelry0, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+//        {Item_Component::Item_Type::jewelry1, {defaultScreenPosition.x + equipmentOffsetColumn2.x + iEquipmentSlotPixelSize, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 5.0f) + 50.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}}};
+            //            Item_Component::Item_Type::ranged, {defaultScreenPosition.x + equipmentOffsetColumn2.x, defaultScreenPosition.y + equipmentOffsetColumn2.y + (iEquipmentSlotPixelSize * 4.0f) + 800.0f, iEquipmentSlotPixelSize, iEquipmentSlotPixelSize}},
+    };
   }// namespace
 
   void Sheath_Item(entt::registry &zone, int &state, entt::entity &item, bool &mouseHasItem, const Item_Component::Item_Type &itemType, entt::entity &player) {
@@ -291,17 +292,18 @@ namespace Equipment_UI {
               inside = Mouse::bRect_inside_Cursor(scaledSlot);
               itemType = Item_Component::Item_Type::ring1;
             }
-          } else if (itemType == Item_Component::Item_Type::jewelry) {
-            slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry0];
-            scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-            inside = Mouse::bRect_inside_Cursor(scaledSlot);
-            itemType = Item_Component::Item_Type::jewelry0;
-            if (!inside) {
-              slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry1];
-              scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
-              inside = Mouse::bRect_inside_Cursor(scaledSlot);
-              itemType = Item_Component::Item_Type::jewelry1;
-            }
+//          }
+//          else if (itemType == Item_Component::Item_Type::jewelry) {
+//            slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry0];
+//            scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+//            inside = Mouse::bRect_inside_Cursor(scaledSlot);
+//            itemType = Item_Component::Item_Type::jewelry0;
+//            if (!inside) {
+//              slotRect = equippedItemsRect[Item_Component::Item_Type::jewelry1];
+//              scaledSlot = Camera_Control::Convert_FRect_To_Scale(slotRect, camera);
+//              inside = Mouse::bRect_inside_Cursor(scaledSlot);
+//              itemType = Item_Component::Item_Type::jewelry1;
+//            }
           }
 
           else {
@@ -415,26 +417,26 @@ namespace Equipment_UI {
       return true;
     }
 
-    if (type == Item_Component::Item_Type::jewelry) {
-      entt::entity equippedItem = equipment.equippedItems[Item_Component::Item_Type::jewelry0];
-      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
-        equipment.equippedItems[Item_Component::Item_Type::jewelry0] = itemInSlot;
-        bag[slotNum] = Bag_UI::emptyBagSlot[state];
-        return true;
-      }
-      //check if ring slot 2 is open if it is place it in
-      equippedItem = equipment.equippedItems[Item_Component::Item_Type::jewelry1];
-      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
-        equipment.equippedItems[Item_Component::Item_Type::jewelry1] = itemInSlot;
-        bag[slotNum] = Bag_UI::emptyBagSlot[state];
-        return true;
-      }
-      //if neither is open swap ring slot 1
-      equippedItem = equipment.equippedItems[Item_Component::Item_Type::jewelry0];
-      equipment.equippedItems[Item_Component::Item_Type::jewelry0] = itemInSlot;
-      bag[slotNum] = equippedItem;
-      return true;
-    }
+//    if (type == Item_Component::Item_Type::jewelry) {
+//      entt::entity equippedItem = equipment.equippedItems[Item_Component::Item_Type::jewelry0];
+//      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
+//        equipment.equippedItems[Item_Component::Item_Type::jewelry0] = itemInSlot;
+//        bag[slotNum] = Bag_UI::emptyBagSlot[state];
+//        return true;
+//      }
+//      //check if ring slot 2 is open if it is place it in
+//      equippedItem = equipment.equippedItems[Item_Component::Item_Type::jewelry1];
+//      if (equippedItem == Item_Component::emptyEquipSlot[state]) {
+//        equipment.equippedItems[Item_Component::Item_Type::jewelry1] = itemInSlot;
+//        bag[slotNum] = Bag_UI::emptyBagSlot[state];
+//        return true;
+//      }
+//      //if neither is open swap ring slot 1
+//      equippedItem = equipment.equippedItems[Item_Component::Item_Type::jewelry0];
+//      equipment.equippedItems[Item_Component::Item_Type::jewelry0] = itemInSlot;
+//      bag[slotNum] = equippedItem;
+//      return true;
+//    }
     return false;
   }
 

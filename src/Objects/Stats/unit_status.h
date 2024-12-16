@@ -101,5 +101,6 @@ namespace Unit_Status {
     Update_Health(zone, state);
     Death_Control::isDead(zone, state);
     Death_Control::Dead_Entity_Routine(zone, state);
+    XP::Update(zone, state);
   }
 }// namespace Unit_Status

@@ -395,7 +395,7 @@ namespace Items {
         //    }
 
         Item_Type itemType = Item_Type::hair;
-        while (itemType == Item_Type::hair || itemType == Item_Type::facialHair || itemType == Item_Type::dirt || itemType == Item_Type::horns || itemType == Item_Type::ring0 || itemType == Item_Type::ring1 || itemType == Item_Type::jewelry0 || itemType == Item_Type::jewelry1) {
+        while (itemType == Item_Type::hair || itemType == Item_Type::facialHair || itemType == Item_Type::ring0 || itemType == Item_Type::ring1) {
             itemType = Item_Type(rand() % (int) Item_Type::SIZE + 0);
         }
 
@@ -768,7 +768,7 @@ namespace Items {
                 //{Item_Type::shoulders, 2},
                 //{Item_Type::belt, 6},
                 {Item_Type::hair,    5},
-                {Item_Type::kilt,    6},
+//                {Item_Type::kilt,    6},
                 {Item_Type::offhand, 7}};
 
         armorTypes = {
@@ -810,7 +810,7 @@ namespace Items {
                 {Item_Component::Item_Type::legs,   "legs"},
                 {Item_Component::Item_Type::boots,  "boots"},
                 {Item_Component::Item_Type::hair,   "hair"},
-                {Item_Component::Item_Type::kilt,   "kilt"},
+//                {Item_Component::Item_Type::kilt,   "kilt"},
         };
 
         weaponMaterialName = {
@@ -832,11 +832,11 @@ namespace Items {
         };
 
         baseStatData = {
-                {Item_Component::Stat::health,      100},
-                {Item_Component::Stat::damage,      2},
-                {Item_Component::Stat::spellDamage, 1},
-                {Item_Component::Stat::armor,       100},
-                {Item_Component::Stat::piety,       10},
+                {Item_Component::Stat::health,      0},
+                {Item_Component::Stat::damage,      1},
+                {Item_Component::Stat::spellDamage, 0},
+                {Item_Component::Stat::armor,       0},
+                {Item_Component::Stat::piety,       0},
                 {Item_Component::Stat::attackSpeed, 500},
         };
 

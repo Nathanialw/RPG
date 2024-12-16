@@ -21,6 +21,7 @@ namespace Icons {
     SDL_Rect clipRect = {};
     Offset offset = {};
   };
+
   std::unordered_map<std::string, Icon_Clip> iconClipRects;
   std::unordered_map<std::string, Icon_Clip> buildingIconClipRects;
 
@@ -63,6 +64,7 @@ namespace Icons {
 
   void Load() {
     Load_Icons(iconClipRects, "assets/sprites/xml/icons/icons.xml");
+    Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_icons.xml");
     Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/Viking Pack/icons.xml");
     Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/medieval/buildings.xml");
   }

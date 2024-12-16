@@ -234,11 +234,11 @@ namespace Utilities {
   }
 
   int Get_Random_Number(const int min, const int max) {
-    if (min == 0) {
+    if ((max - min) == 0) {
       std::cout << "function Utilities::Get_Random_Number() min range 0, divide by zero error" << std::endl;
-      //			return 0;
+      return min;
     }
-    return rand() % max + min;
+    return (rand() % (max - min)) + min;
   }
 
   bool PolygonOverlap_SAT(std::vector<f2> &r1, std::vector<f2> &r2) {

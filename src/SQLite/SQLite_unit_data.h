@@ -35,6 +35,27 @@ namespace Entity_Loader {
     int light_radius = 0;
   };
 
+    int Get_Unit_Data_By_Column(std::string name, std::string column) {// needs to search for  a specific row that I can input in the arguments
+        //check if the name exists??
+        std::string unit_name = db::Append_Quotes(name);
+        std::string unit_column = db::Append_Quotes(column);
+        int value;
+
+        sqlite3_stmt *stmt;
+        char buf[100];
+        const char* jj = "SELECT ";
+        const char * dd = " FROM unit_data WHERE name = ";
+        strcpy(buf, jj);
+        strcat(buf, column.c_str());
+        strcat(buf, dd);
+        strcat(buf, unit_name.c_str());
+        sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
+
+        while (sqlite3_step(stmt) != SQLITE_DONE) {
+            value = sqlite3_column_int(stmt, 0);
+        }
+        return value;
+    }
 
   Data parse_data(std::string name) {// needs to search for  a specific row that I can input in the arguments
     //check if the name exists??

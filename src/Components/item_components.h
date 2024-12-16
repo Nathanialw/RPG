@@ -9,79 +9,79 @@ namespace Item_Component {
 
   //    item 0 renders first 29 last
   enum class Item_Type {
-    clothes,
-    shins,
+//    clothes,
+//    shins,
     legs,
     boots,
-    kilt,
-    wrist,
+//    kilt,
+//    wrist,
     chest,
-    belt,
+//    belt,
     gloves,
     //
     mainhand,
     offhand,
     ranged,
     //
-    back,
+//    back,
     facialHair,
-    face,
-    shoulders,
+//    face,
+//    shoulders,
     hair,
     helm,
-    hood,
-    crown,
+//    hood,
+//    crown,
     //non-rendering items
-    horns,
-    quiver,
-    dirt,
+//    horns,
+//    quiver,
+//    dirt,
     ring,
     ring0,
     ring1,
     amulet,
-    jewelry,
-    jewelry0,
-    jewelry1,
+//    jewelry,
+//    jewelry0,
+//    jewelry1,
     SIZE
   };
 
   Item_Type Get_Item_Type(std::string &db_type) {
-    if (db_type == "back") {
-      return Item_Type::back;
-    } else if (db_type == "quiver") {
-      return Item_Type::quiver;
-    } else if (db_type == "mainhand") {
+//    if (db_type == "back") {
+//      return Item_Type::back;
+//    } else if (db_type == "quiver") {
+//      return Item_Type::quiver;
+    if (db_type == "mainhand") {
       return Item_Type::mainhand;
     } else if (db_type == "amulet") {
       return Item_Type::amulet;
-    } else if (db_type == "face") {
-      return Item_Type::face;
+//    } else if (db_type == "face") {
+//      return Item_Type::face;
     } else if (db_type == "facialHair") {
       return Item_Type::facialHair;
-    } else if (db_type == "belt") {
-      return Item_Type::belt;
+//    } else if (db_type == "belt") {
+//      return Item_Type::belt;
     } else if (db_type == "boots") {
       return Item_Type::boots;
     } else if (db_type == "ranged") {
       return Item_Type::ranged;
     } else if (db_type == "chest") {
       return Item_Type::chest;
-    } else if (db_type == "clothes") {
-      return Item_Type::clothes;
-    } else if (db_type == "crown") {
-      return Item_Type::crown;
-    } else if (db_type == "dirt") {
-      return Item_Type::dirt;
+//    } else if (db_type == "clothes") {
+//      return Item_Type::clothes;
+//    } else if (db_type == "crown") {
+//      return Item_Type::crown;
+//    } else if (db_type == "dirt") {
+//      return Item_Type::dirt;
     } else if (db_type == "gloves") {
       return Item_Type::gloves;
     } else if (db_type == "hair") {
       return Item_Type::hair;
     } else if (db_type == "helm") {
       return Item_Type::helm;
-    } else if (db_type == "hood") {
-      return Item_Type::hood;
-    } else if (db_type == "kilt") {
-      return Item_Type::kilt;
+//    } else if (db_type == "hood") {
+//      return Item_Type::hood;
+//    } else if (db_type == "kilt") {
+//      return Item_Type::kilt;
     } else if (db_type == "legs") {
       return Item_Type::legs;
     } else if (db_type == "ring") {
@@ -90,16 +90,16 @@ namespace Item_Component {
       return Item_Type::offhand;
     } else if (db_type == "shield") {
       return Item_Type::offhand;
-    } else if (db_type == "shins") {
-      return Item_Type::shins;
-    } else if (db_type == "shoulders") {
-      return Item_Type::shoulders;
-    } else if (db_type == "wrist") {
-      return Item_Type::wrist;
-    } else if (db_type == "jewelry") {
-      return Item_Type::jewelry;
-    } else if (db_type == "horns") {
-      return Item_Type::horns;
+//    } else if (db_type == "shins") {
+//      return Item_Type::shins;
+//    } else if (db_type == "shoulders") {
+//      return Item_Type::shoulders;
+//    } else if (db_type == "wrist") {
+//      return Item_Type::wrist;
+//    } else if (db_type == "jewelry") {
+//      return Item_Type::jewelry;
+//    } else if (db_type == "horns") {
+//      return Item_Type::horns;
     } else {
       Utilities::Log("Get_Item_Type(std::string &db_type) " + db_type + " passthrough error");
       return Item_Type::mainhand;
@@ -108,31 +108,31 @@ namespace Item_Component {
 
 
   std::string Get_Item_Type_String(const Item_Type &db_type) {
-    if (db_type == Item_Type::back) {
-      return "back";
-    } else if (db_type == Item_Type::mainhand) {
+//    if (db_type == Item_Type::back) {
+//      return "back";
+    if (db_type == Item_Type::mainhand) {
       return "mainhand";
-    } else if (db_type == Item_Type::quiver) {
-      return "quiver";
+//    } else if (db_type == Item_Type::quiver) {
+//      return "quiver";
     } else if (db_type == Item_Type::amulet) {
       return "amulet";
-    } else if (db_type == Item_Type::face) {
-      return "face";
+//    } else if (db_type == Item_Type::face) {
+//      return "face";
     } else if (db_type == Item_Type::facialHair) {
       return "facialHair";
-    } else if (db_type == Item_Type::belt) {
-      return "belt";
+//    } else if (db_type == Item_Type::belt) {
+//      return "belt";
     } else if (db_type == Item_Type::boots) {
       return "boots";
     } else if (db_type == Item_Type::ranged) {
       return "ranged";
     } else if (db_type == Item_Type::chest) {
       return "chest";
-    } else if (db_type == Item_Type::clothes) {
-      return "clothes";
-    } else if (db_type == Item_Type::crown) {
-      return "crown";
-    } else if (db_type == Item_Type::dirt) {
+//    } else if (db_type == Item_Type::clothes) {
+//      return "clothes";
+//    } else if (db_type == Item_Type::crown) {
+//      return "crown";
+//    } else if (db_type == Item_Type::dirt) {
       return "dirt";
     } else if (db_type == Item_Type::gloves) {
       return "gloves";
@@ -140,26 +140,26 @@ namespace Item_Component {
       return "hair";
     } else if (db_type == Item_Type::helm) {
       return "helm";
-    } else if (db_type == Item_Type::hood) {
-      return "hood";
-    } else if (db_type == Item_Type::kilt) {
-      return "kilt";
+//    } else if (db_type == Item_Type::hood) {
+//      return "hood";
+//    } else if (db_type == Item_Type::kilt) {
+//      return "kilt";
     } else if (db_type == Item_Type::legs) {
       return "legs";
     } else if (db_type == Item_Type::ring) {
       return "ring";
     } else if (db_type == Item_Type::offhand) {
       return "offhand";
-    } else if (db_type == Item_Type::shins) {
-      return "shins";
-    } else if (db_type == Item_Type::shoulders) {
-      return "shoulders";
-    } else if (db_type == Item_Type::wrist) {
-      return "wrist";
-    } else if (db_type == Item_Type::jewelry) {
-      return "jewelry";
-    } else if (db_type == Item_Type::horns) {
-      return "horns";
+//    } else if (db_type == Item_Type::shins) {
+//      return "shins";
+//    } else if (db_type == Item_Type::shoulders) {
+//      return "shoulders";
+//    } else if (db_type == Item_Type::wrist) {
+//      return "wrist";
+//    } else if (db_type == Item_Type::jewelry) {
+//      return "jewelry";
+//    } else if (db_type == Item_Type::horns) {
+//      return "horns";
     } else {
       Utilities::Log("Get_Item_Type(std::string &db_type) " + std::to_string((int) db_type) + " passthrough error");
       return "mainhand";
@@ -270,22 +270,22 @@ namespace Item_Component {
         //        {Item_Type::ranged, emptyEquipSlot[state]},
         //        {Item_Type::dirt, emptyEquipSlot[state]},
         {Item_Type::amulet, emptyEquipSlot[state]},
-        {Item_Type::back, emptyEquipSlot[state]},
-        {Item_Type::belt, emptyEquipSlot[state]},
+//        {Item_Type::back, emptyEquipSlot[state]},
+//        {Item_Type::belt, emptyEquipSlot[state]},
         {Item_Type::boots, emptyEquipSlot[state]},
         {Item_Type::helm, emptyEquipSlot[state]},
         {Item_Type::legs, emptyEquipSlot[state]},
-        {Item_Type::kilt, emptyEquipSlot[state]},
+//        {Item_Type::kilt, emptyEquipSlot[state]},
         {Item_Type::gloves, emptyEquipSlot[state]},
-        {Item_Type::clothes, emptyEquipSlot[state]},
+//        {Item_Type::clothes, emptyEquipSlot[state]},
         {Item_Type::chest, emptyEquipSlot[state]},
         {Item_Type::hair, emptyEquipSlot[state]},
-        {Item_Type::crown, emptyEquipSlot[state]},
+//        {Item_Type::crown, emptyEquipSlot[state]},
         {Item_Type::ring0, emptyEquipSlot[state]},
         {Item_Type::ring1, emptyEquipSlot[state]},
-        {Item_Type::shoulders, emptyEquipSlot[state]},
-        {Item_Type::jewelry0, emptyEquipSlot[state]},
-        {Item_Type::jewelry1, emptyEquipSlot[state]},
+//        {Item_Type::shoulders, emptyEquipSlot[state]},
+//        {Item_Type::jewelry0, emptyEquipSlot[state]},
+//        {Item_Type::jewelry1, emptyEquipSlot[state]},
         {Item_Type::offhand, emptyEquipSlot[state]},
         {Item_Type::mainhand, emptyEquipSlot[state]}};
     //    for (auto item :equipment.equippedItems) {
@@ -345,7 +345,6 @@ namespace Item_Component {
   //
   //  "clothes"
   //  "mask"
-  //
   //
   //  "shield"
   //  "quiver"

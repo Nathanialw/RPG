@@ -42,6 +42,12 @@ namespace Death_Control {
 							for (auto player_ID: view) {
 								auto &equip_type = view.get<Item_Component::Equipment>(player_ID).type;
 								Items::Create_And_Drop_Item(zone, position, direction, equip_type);
+
+
+                                auto &name = zone.get<Component::Object_Name>(entity).objectName;
+                                auto xpValue = Entity_Loader::Get_Unit_Data_By_Column(name, "XP_value");
+								auto &xp = zone.get<Component::XP>(player_ID);
+                                xp.xp += xpValue;
 							}
 						}
 					}

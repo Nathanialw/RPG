@@ -79,11 +79,11 @@ namespace Create_Character_Entity {
             equipment.equippedItems[Item_Type::facialHair] = item;
             Load::Get_Bust_Textures(zone, state, item, Item_Type::facialHair, bodyFrame, unitPortraitFrame);
 
-            if (horns.hasTexture) {
-                item = Items::Create_And_Equip_Cosmetic(zone, state, position, Item_Type::horns, equipment.type, horns, Character_Options::Color[0]);
-                equipment.equippedItems[Item_Type::horns] = item;
-                Load::Get_Bust_Textures(zone, state, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
-            }
+//            if (horns.hasTexture) {
+//                item = Items::Create_And_Equip_Cosmetic(zone, state, position, Item_Type::horns, equipment.type, horns, Character_Options::Color[0]);
+//                equipment.equippedItems[Item_Type::horns] = item;
+//                Load::Get_Bust_Textures(zone, state, item, Item_Type::horns, bodyFrame, unitPortraitFrame);
+//            }
 
             zone.emplace_or_replace<Item_Component::Item_Equip>(unit);
         }

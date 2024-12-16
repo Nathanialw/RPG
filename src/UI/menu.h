@@ -20,8 +20,8 @@ namespace Menu {
     i2 w, h;
   };
 
-  SDL_Color colors[2] = {{255, 255, 255},
-                         {255, 0, 0}};
+//  SDL_Color colors[2] = {{255, 255, 255},
+//                         {255, 0, 0}};
 
   struct Button {
     SDL_FRect size;
@@ -55,12 +55,12 @@ namespace Menu {
 
   void Create_Menu(Menu &menus) {
     Menu tempMenu;
-    std::vector<const char *> labels = {"Continue", "New Game", "Save", "Load", "Options", "Exit"};
+    std::vector<const char *> labels = {"Continue", "New Game", "Save", "Options", "Debug",  "Exit"};
 
     for (int i = 0; i < labels.size(); i++) {
       Button button;
       button.text = labels[i];
-      button.textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], colors[0]);
+      button.textSurface = TTF_RenderText_Solid(Graphics::font, labels[i], Color::white);
       button.textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, button.textSurface);
       tempMenu.buttons[i] = button;
     }
@@ -98,19 +98,19 @@ namespace Menu {
     for (int i = 0; i < menu.buttons.size(); i++) {
       menu.buttons[i].scaledSize = UI::Update_Scale(camera.scale, menu.buttons[i].size);
 
-      SDL_Color color = colors[0];
+      SDL_Color color = Color::white;
       FC_Scale scale = {1.0f / camera.scale.x, 1.0f / camera.scale.y};
 
       if (Mouse::FRect_inside_Screen_Cursor(menu.buttons[i].scaledSize)) {
         if (!menu.buttons[i].selected) {
           menu.buttons[i].selected = 1;
-          color = colors[1];
+          color = Color::red;
         }
 
       } else {
         if (menu.buttons[i].selected) {
           menu.buttons[i].selected = 0;
-          color = colors[0];
+          color = Color::white;
         }
       }
       FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, menu.buttons[i].size.x, menu.buttons[i].size.y, scale, color, menu.buttons[i].text);
@@ -125,7 +125,7 @@ namespace Menu {
         if (!menu.buttons[i].selected) {
           menu.buttons[i].selected = 1;
           SDL_FreeSurface(menu.buttons[i].textSurface);
-          menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[1]);
+          menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, Color::red);
           menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
         }
 
@@ -133,7 +133,7 @@ namespace Menu {
         if (menu.buttons[i].selected) {
           menu.buttons[i].selected = 0;
           SDL_FreeSurface(menu.buttons[i].textSurface);
-          menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, colors[0]);
+          menu.buttons[i].textSurface = TTF_RenderText_Solid(Graphics::font, menu.buttons[i].text, Color::white);
           menu.buttons[i].textTexture = SDL_CreateTextureFromSurface(Graphics::renderer, menu.buttons[i].textSurface);
         }
       }
