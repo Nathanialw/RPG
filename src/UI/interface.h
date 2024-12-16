@@ -12,6 +12,7 @@
 #include "ui_unit_control.hpp"
 #include "unit_frames.h"
 #include <SDL2/SDL.h>
+#include "ui_toolbar.h"
 
 namespace Interface {
 
@@ -21,6 +22,11 @@ namespace Interface {
         Graphics::Surface_Data mouseY;
         int gridDepth = -1;
     }// namespace
+
+    void Update(f2 x) {
+        UI_toolbar::Update(x);
+
+    }
 
     void Update_Zoom(entt::registry &zone, const int zoom) {
         auto view = zone.view<Component::Camera>();
@@ -35,6 +41,7 @@ namespace Interface {
                     x.y = 2.0f;
                 }
                 SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
+                Update(x);
             }
             //      if (e.wheel.y < 0) {
             if (zoom < 0) {
@@ -45,6 +52,7 @@ namespace Interface {
                     //          x.y = 0.75f;
                 }
                 SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
+                Update(x);
             }
         }
     }
@@ -300,7 +308,8 @@ namespace Interface {
         Display_Selected(zone);
     }
 
-    void Init_UI(f2 scale) {
+    void Init() {
+        Update({2,2});
         // UI_Resources::Init_Frames ();
         // Unit_Frames::Init_Frames();
         //    UI_Frames::Init_Frames();

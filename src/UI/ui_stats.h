@@ -69,8 +69,8 @@ namespace UI_Stats {
             stats[1][6] = {"Strength:", std::to_string(playerStats.strength), "Your strength represents your character's raw physical power and musculature.  You may carry a maximum amount of gold pieces equal to your Strength.  Armour and Melee Weapons have minimum Strength requirement to use.  To learn Basic/Advanced/Expert Warrior skills you need a Strength of 30/60/90, respectively.  On a successful melee hit, you have a %% chance equal to your Strength/3 of doing bonus damage from 1 to your Strength/10.  Strength is also used when interacting with certain squares, like Heavy Door, Open Pits and Great Webs."};
             stats[1][7] = {"Dexterity:", std::to_string(playerStats.dexterity), "Dexterity is a measure of your character's agility and reflexes.  It is used to determine your character's chance to hit in combat, and to avoid being hit.  Dexterity is also used when interacting with certain squares, like Traps, Secret Doors and Locks."};
             stats[1][8] = {"Intelligence:", std::to_string(playerStats.intelligence), "Intelligence is a measure of your character's mental acuity and knowledge.  It is used to determine your character's chance to learn spells, and to avoid being hit.  Intelligence is also used when interacting with certain squares, like Traps, Secret Doors and Locks."};
-            stats[1][9] = {"Health:", std::to_string(health.currentHealth) + "/" + std::to_string(health.maxHealth), "Your character's health"};
-            stats[1][10] = {"Spell Points:", std::to_string(mana.current) + "/" + std::to_string(mana.max), "Your character's spell points"};
+            stats[1][9] = {"Health:", std::to_string(health.currentHealth) + "/" + std::to_string(health.maxHealth), "Your health score represents your character's endurance and pain tolerance.  The number to the left of the slash is your current Health;  if this reaches zero or less, you die.  The number to the right of the slash shows your maximum Health; your Health can never raise above this.  To learn Basic/Advanced/Expert General Skills you need a Health of 30/60/90, respectively."};
+            stats[1][10] = {"Spell Points:", std::to_string(mana.current) + "/" + std::to_string(mana.max), "Your Spell Points represent your character's reserves of magical power.  The number to the left  of the slash is your current Spell Points, while the number to the right shows your maximum Spell Points.  With each new map entered, your Spell Points are restored to full.  Your Max Points are determined by your an interaction between your Intelligence, Thaumaturgy Skill level and Dungeon Level.  You cannot cast a Spell with a greater cost than your current Spell Points, and the cost of each Spell cast is deducted from your current Spell Points."};
             stats[1][11] = {"Faith:", std::to_string(religion.faith), "Your character's faith"};
             stats[1][12] = {"Gold:", std::to_string(gold.gold) + "/" + std::to_string(playerStats.strength), "Your character's gold"};
             stats[1][13] = {"Gems:", std::to_string(gold.gems), "Your character's gems"};
@@ -158,7 +158,7 @@ namespace UI_Stats {
         }
     }
 
-    void Draw_Text_Line(Component::Camera &camera, SDL_FRect &statBox, int currentTab, int j, SDL_FRect &defaultStatBox, Placement placement = Placement::first) {
+    void Draw_Text_Line(Component::Camera &camera, SDL_FRect &statBox, int currentTab, int j, SDL_FRect &defaultStatBox, Placement placement) {
         if (placement == Placement::nextLine)
             Next_Line(camera, statBox, defaultStatBox);
         if (placement == Placement::adjacent)
@@ -184,14 +184,16 @@ namespace UI_Stats {
     void Draw_Icons() {
         for (auto &icon : icons) {
             if (Mouse::bRect_inside_Cursor(icon)) {
-                SDL_Rect highLightClip = Icons::iconClipRects["warriorskillsbuttonoff"].clipRect;
+                SDL_Rect highLightClip = Icons::iconClipRects["goldindicator"].clipRect;
+                SDL_SetTextureAlphaMod(Texture::cox_icons, 100);
                 SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &highLightClip, &icon);
+                SDL_SetTextureAlphaMod(Texture::cox_icons, 255);
                 return;
             }
         }
     }
 
-    void Draw_Attibutes(Component::Camera &camera, SDL_FRect &statBox, int currentTab, int j, SDL_FRect &defaultStatBox, Placement placement = Placement::adjacent) {
+    void Draw_Attibutes(Component::Camera &camera, SDL_FRect &statBox, int currentTab, int j, SDL_FRect &defaultStatBox, Placement placement) {
         if (!attributesToSpend)
             return;
 
@@ -208,7 +210,7 @@ namespace UI_Stats {
         SDL_FRect statBox = Camera_Control::Convert_FRect_To_Scale(renderRect, camera);
         SDL_FRect defaultStatBox = statBox;
 
-        Draw_Text_Line(camera, statBox, currentTab, 0, defaultStatBox);
+        Draw_Text_Line(camera, statBox, currentTab, 0, defaultStatBox, Placement::first);
         Next_Line(camera, statBox, defaultStatBox);
         Draw_Text_Line(camera, statBox, currentTab, 1, defaultStatBox, Placement::nextLine);
         Draw_Text_Line(camera, statBox, currentTab, 2, defaultStatBox, Placement::adjacent);
@@ -253,7 +255,9 @@ namespace UI_Stats {
         Draw_Tooltip(camera, currentTab);
     }
 
-    void Draw_Pages(Component::Camera &camera, SDL_FRect &draw) {
+    void Draw_Pages(Component::Camera &camera) {
+        SDL_FRect draw = UI::Update_Scale(camera.scale, tab.panelRect);
+        SDL_RenderCopyF(Graphics::renderer, tab.background, &tab.backgroundFrame, &draw);
 //        Draw_Stats_Page(camera, draw, tab.currentTab);
         SDL_FRect page2 = tab.panelRect;
         page2.w /= 2;
@@ -264,9 +268,7 @@ namespace UI_Stats {
     void Draw_Attributes(entt::registry &zone, Component::Camera &camera) {
         if (tab.b_isOpen) {
             Update(zone);
-            SDL_FRect draw = UI::Update_Scale(camera.scale, tab.panelRect);
-            SDL_RenderCopyF(Graphics::renderer, tab.background, &tab.backgroundFrame, &draw);
-            Draw_Pages(camera, tab.panelRect);
+            Draw_Pages(camera);
         }
     }
 

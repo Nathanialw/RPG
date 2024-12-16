@@ -1,0 +1,2317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:bc9085d858aa842f5dc76750b605c7b3:c522755a3eed5e0283698121c2ca3e94:33bcd64eb842114f2e06d388d71f4e98$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="cox_map_tiles/cox_map_tiles.png" width="506" height="4287">
+    <sprite n="abyssalportal1" x="35" y="1" w="32" h="32"/>
+    <sprite n="abyssalportal2" x="1" y="75" w="32" h="32"/>
+    <sprite n="abyssalportal3" x="35" y="35" w="32" h="32"/>
+    <sprite n="abyssalportal4" x="69" y="1" w="32" h="32"/>
+    <sprite n="abyssalportal5" x="1" y="109" w="32" h="32"/>
+    <sprite n="abyssalportal6" x="35" y="69" w="32" h="32"/>
+    <sprite n="abyssalportal7" x="69" y="35" w="32" h="32"/>
+    <sprite n="abyssalportal8" x="103" y="1" w="32" h="32"/>
+    <sprite n="acid1a" x="477" y="1369" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid1b" x="477" y="1403" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid1c" x="477" y="1437" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid1d" x="477" y="1471" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid1e" x="477" y="1505" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid1f" x="477" y="1539" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid1g" x="477" y="1573" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid1h" x="477" y="1607" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid2a" x="443" y="2071" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid2b" x="409" y="2072" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid2c" x="375" y="2073" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid2d" x="443" y="2100" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid2e" x="409" y="2101" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid2f" x="443" y="2129" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid2g" x="374" y="2168" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid2h" x="442" y="2191" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid3a" x="102" y="2935" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="acid3b" x="134" y="2937" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="acid3c" x="67" y="3956" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="acid3d" x="67" y="3989" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="acid3e" x="67" y="4022" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="acid3f" x="67" y="4055" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="acid3g" x="67" y="4088" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="acid3h" x="67" y="4121" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="acid4a" x="341" y="2142" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid4b" x="171" y="2313" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid4c" x="35" y="2549" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid4d" x="171" y="2345" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid4e" x="171" y="2377" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid4f" x="168" y="2601" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid4g" x="101" y="3034" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid4h" x="101" y="3066" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid5a" x="67" y="4154" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid5b" x="67" y="4187" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid5c" x="67" y="4220" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid5d" x="67" y="4253" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid5e" x="102" y="2968" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid5f" x="134" y="2970" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid5g" x="166" y="2964" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid5h" x="101" y="3098" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid6a" x="134" y="3071" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid6b" x="101" y="3165" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid6c" x="99" y="4049" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid6d" x="99" y="4081" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid6e" x="99" y="4113" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid6f" x="99" y="4145" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid6g" x="99" y="4177" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid6h" x="99" y="4209" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid7a" x="1" y="143" w="32" h="32"/>
+    <sprite n="acid7b" x="35" y="103" w="32" h="32"/>
+    <sprite n="acid7c" x="69" y="69" w="32" h="32"/>
+    <sprite n="acid7d" x="103" y="35" w="32" h="32"/>
+    <sprite n="acid7e" x="137" y="1" w="32" h="32"/>
+    <sprite n="acid7f" x="1" y="177" w="32" h="32"/>
+    <sprite n="acid7g" x="35" y="137" w="32" h="32"/>
+    <sprite n="acid7h" x="69" y="103" w="32" h="32"/>
+    <sprite n="acid8a" x="408" y="2196" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid8b" x="442" y="2220" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid8c" x="68" y="2545" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid8d" x="34" y="2647" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid8e" x="68" y="2643" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid8f" x="34" y="2679" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid8g" x="68" y="2675" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid8h" x="34" y="2711" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid9a" x="1" y="2960" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid9b" x="1" y="2994" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid9c" x="1" y="3028" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid9d" x="1" y="3062" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid9e" x="1" y="3096" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid9f" x="1" y="3130" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid9g" x="1" y="3164" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid9h" x="1" y="3198" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid10a" x="68" y="2707" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid10b" x="34" y="2743" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid10c" x="68" y="2739" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid10d" x="34" y="2775" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid10e" x="68" y="2771" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid10f" x="34" y="2807" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid10g" x="68" y="2803" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid10h" x="34" y="2839" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acid11a" x="1" y="3232" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid11b" x="1" y="3266" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid11c" x="1" y="3300" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid11d" x="1" y="3334" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid11e" x="1" y="3368" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid11f" x="1" y="3402" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid11g" x="1" y="3436" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid11h" x="1" y="3470" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="acid12a" x="103" y="69" w="32" h="32"/>
+    <sprite n="acid12b" x="137" y="35" w="32" h="32"/>
+    <sprite n="acid12c" x="171" y="1" w="32" h="32"/>
+    <sprite n="acid12d" x="1" y="211" w="32" h="32"/>
+    <sprite n="acid12e" x="35" y="171" w="32" h="32"/>
+    <sprite n="acid12f" x="69" y="137" w="32" h="32"/>
+    <sprite n="acid12g" x="103" y="103" w="32" h="32"/>
+    <sprite n="acid12h" x="137" y="69" w="32" h="32"/>
+    <sprite n="acid13a" x="201" y="2602" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid13b" x="229" y="2670" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid13c" x="233" y="2805" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid13d" x="233" y="2838" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid13e" x="257" y="2670" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid13f" x="265" y="2905" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid13g" x="297" y="2481" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid13h" x="297" y="2514" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="acid14a" x="134" y="3229" w="31" h="26" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid14b" x="133" y="4037" w="31" h="26" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid14c" x="166" y="2997" w="31" h="26" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid14d" x="167" y="3125" w="31" h="26" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid14e" x="167" y="3385" w="31" h="26" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid14f" x="200" y="2703" w="31" h="26" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid14g" x="199" y="2997" w="31" h="26" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid14h" x="232" y="2905" w="31" h="26" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="acid15a" x="477" y="2049" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="acid15b" x="477" y="2082" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="acid15c" x="477" y="2115" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="acid15d" x="447" y="2312" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="acid15e" x="427" y="2467" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="acid15f" x="427" y="2500" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="acid15g" x="285" y="2704" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="acid15h" x="293" y="2905" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="acid16a" x="232" y="2998" w="31" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid16b" x="265" y="3126" w="31" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid16c" x="298" y="3228" w="31" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid16d" x="332" y="2581" w="31" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid16e" x="358" y="2938" w="31" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid16f" x="355" y="3135" w="31" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid16g" x="355" y="3164" w="31" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acid16h" x="399" y="2640" w="31" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="acidaugmenter1" x="272" y="2176" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="acidaugmenter2" x="296" y="2175" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="acidaugmenter3" x="296" y="2209" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="acidaugmenter4" x="201" y="2568" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="acidaugmenter5" x="225" y="2568" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="acidaugmenter6" x="229" y="2602" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="acidaugmenter7" x="229" y="2636" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNEpatcha" x="354" y="2208" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNEpatchb" x="422" y="2262" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNEpatchc" x="416" y="3696" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNEpatchd" x="227" y="4265" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNEpatche" x="370" y="4035" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNEpatchf" x="474" y="4052" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNEpatchg" x="297" y="4098" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNEpatchh" x="317" y="4098" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNWpatcha" x="488" y="3100" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNWpatchb" x="488" y="3119" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNWpatchc" x="488" y="3138" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNWpatchd" x="488" y="3157" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNWpatche" x="314" y="4079" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNWpatchf" x="442" y="4066" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNWpatchg" x="327" y="4159" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acidNWpatchh" x="352" y="4080" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="acidSEpatcha" x="371" y="4080" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSEpatchb" x="390" y="4073" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSEpatchc" x="390" y="4092" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSEpatchd" x="409" y="4079" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSEpatche" x="409" y="4098" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSEpatchf" x="428" y="4088" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSEpatchg" x="428" y="4107" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSEpatchh" x="298" y="4183" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSWpatcha" x="298" y="4202" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSWpatchb" x="292" y="4221" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSWpatchc" x="317" y="4179" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSWpatchd" x="317" y="4198" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSWpatche" x="336" y="4178" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSWpatchf" x="336" y="4197" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSWpatchg" x="311" y="4221" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="acidSWpatchh" x="447" y="4090" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="acidvapour1" x="171" y="35" w="32" h="32"/>
+    <sprite n="acidvapour2" x="205" y="1" w="32" h="32"/>
+    <sprite n="acidvapour3" x="1" y="245" w="32" h="32"/>
+    <sprite n="acidvapour4" x="35" y="205" w="32" h="32"/>
+    <sprite n="acidvapour5" x="69" y="171" w="32" h="32"/>
+    <sprite n="acidvapour6" x="103" y="137" w="32" h="32"/>
+    <sprite n="acidvapour7" x="137" y="103" w="32" h="32"/>
+    <sprite n="acidvapour8" x="171" y="69" w="32" h="32"/>
+    <sprite n="adventurerscorpse" x="202" y="2536" w="29" h="30" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="airshaft" x="205" y="35" w="32" h="32"/>
+    <sprite n="albonianshrine1" x="233" y="2703" w="26" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="allumanshrine1" x="297" y="2277" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="altar1" x="137" y="2344" w="32" h="18" oX="0" oY="2" oW="32" oH="20"/>
+    <sprite n="altar2" x="103" y="2345" w="32" h="20"/>
+    <sprite n="altar3" x="137" y="2364" w="32" h="20"/>
+    <sprite n="altar4" x="136" y="2514" w="32" h="19" oX="0" oY="1" oW="32" oH="20"/>
+    <sprite n="altar5" x="68" y="2963" w="32" h="19" oX="0" oY="1" oW="32" oH="20"/>
+    <sprite n="altar6" x="100" y="3229" w="32" h="18" oX="0" oY="2" oW="32" oH="20"/>
+    <sprite n="altar7" x="320" y="2205" w="32" h="18" oX="0" oY="2" oW="32" oH="20"/>
+    <sprite n="altar8" x="320" y="2225" w="32" h="18" oX="0" oY="2" oW="32" oH="20"/>
+    <sprite n="altarofdarkdesire" x="239" y="1" w="32" h="32"/>
+    <sprite n="ancientrunes" x="68" y="2835" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="animalcarcassfilledpit" x="200" y="3121" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="animalcorpse" x="354" y="2228" w="32" h="20" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="antimagicaura" x="1" y="279" w="32" h="32"/>
+    <sprite n="antimagicglyph" x="233" y="2536" w="27" h="30" oX="5" oY="2" oW="32" oH="32"/>
+    <sprite n="apollothenianshrine1" x="366" y="3257" w="19" h="31" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="apothecarycabinet1" x="476" y="2158" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="apothecarytable" x="35" y="239" w="32" h="32"/>
+    <sprite n="aputhanshrine1" x="422" y="2282" w="20" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="archway1" x="69" y="205" w="32" h="32"/>
+    <sprite n="archway2" x="103" y="171" w="32" h="32"/>
+    <sprite n="archway3" x="137" y="137" w="32" h="32"/>
+    <sprite n="archway4" x="171" y="103" w="32" h="32"/>
+    <sprite n="archway5" x="205" y="69" w="32" h="32"/>
+    <sprite n="archway6" x="239" y="35" w="32" h="32"/>
+    <sprite n="archway7" x="273" y="1" w="32" h="32"/>
+    <sprite n="archway8" x="1" y="313" w="32" h="32"/>
+    <sprite n="armamentlocker1" x="233" y="2737" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="ballista" x="34" y="2935" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="balnethianshrine1" x="422" y="2316" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="baloraasinianshrine1" x="35" y="273" w="32" h="32"/>
+    <sprite n="banquettable" x="133" y="3103" w="32" h="26" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="barithisunianshrine1" x="233" y="2771" w="26" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="barreddoor" x="69" y="239" w="32" h="32"/>
+    <sprite n="barricade" x="331" y="3226" w="23" h="29" oX="4" oY="3" oW="32" oH="32"/>
+    <sprite n="batuvaxianshrine1" x="103" y="205" w="32" h="32"/>
+    <sprite n="beachedderelict" x="137" y="171" w="32" h="32"/>
+    <sprite n="beanstalk" x="249" y="2568" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="bed" x="388" y="2228" w="32" h="24" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="beehive" x="253" y="2602" w="19" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="bell" x="297" y="2311" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="BFlagstone1" x="171" y="137" w="32" h="32"/>
+    <sprite n="BFlagstone2" x="205" y="103" w="32" h="32"/>
+    <sprite n="BFlagstone3" x="239" y="69" w="32" h="32"/>
+    <sprite n="BFlagstone4" x="273" y="35" w="32" h="32"/>
+    <sprite n="BFlagstone5" x="307" y="1" w="32" h="32"/>
+    <sprite n="BFlagstone6" x="1" y="347" w="32" h="32"/>
+    <sprite n="BFlagstone7" x="35" y="307" w="32" h="32"/>
+    <sprite n="BFlagstone8" x="69" y="273" w="32" h="32"/>
+    <sprite n="BFlagstone9" x="103" y="239" w="32" h="32"/>
+    <sprite n="BFlagstone10" x="137" y="205" w="32" h="32"/>
+    <sprite n="BFlagstoneOpenDoor" x="352" y="3479" w="16" h="29" oX="8" oY="3" oW="32" oH="32"/>
+    <sprite n="BFlagstoneOpenHeavy" x="253" y="2636" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="BFlagstoneOpenSecret" x="427" y="2533" w="27" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="bloodywarning" x="99" y="4273" w="32" h="13" oX="0" oY="11" oW="32" oH="32"/>
+    <sprite n="boobytrap1" x="165" y="4259" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="bookcabinet" x="297" y="2345" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="bore" x="442" y="2252" w="32" h="26" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="bore2" x="199" y="2824" w="32" h="25" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="bore3" x="354" y="2250" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="bore4" x="354" y="2250" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="bottomlesspit" x="265" y="2276" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="bourgatishrine1" x="477" y="1" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="bragothianshrine1" x="261" y="2703" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="bramble1" x="171" y="171" w="32" h="32"/>
+    <sprite n="bramble2" x="205" y="137" w="32" h="32"/>
+    <sprite n="bramble3" x="239" y="103" w="32" h="32"/>
+    <sprite n="bramble4" x="273" y="69" w="32" h="32"/>
+    <sprite n="bramble5" x="307" y="35" w="32" h="32"/>
+    <sprite n="bramble6" x="341" y="1" w="32" h="32"/>
+    <sprite n="bramble7" x="1" y="381" w="32" h="32"/>
+    <sprite n="bramble8" x="35" y="341" w="32" h="32"/>
+    <sprite n="bramble9" x="69" y="307" w="32" h="32"/>
+    <sprite n="bramble10" x="103" y="273" w="32" h="32"/>
+    <sprite n="brassgong" x="137" y="239" w="32" h="32"/>
+    <sprite n="brazier1" x="297" y="2379" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="brazier2" x="297" y="2413" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="brazier3" x="297" y="2447" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="brazier4" x="261" y="2737" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="brazier5" x="261" y="2771" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="brazier6" x="261" y="2873" w="26" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="brazier7" x="261" y="2805" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="BrickFloor1" x="171" y="205" w="32" h="32"/>
+    <sprite n="BrickFloor2" x="205" y="171" w="32" h="32"/>
+    <sprite n="BrickFloor3" x="239" y="137" w="32" h="32"/>
+    <sprite n="BrickFloor4" x="273" y="103" w="32" h="32"/>
+    <sprite n="BrickFloor5" x="307" y="69" w="32" h="32"/>
+    <sprite n="BrickFloor6" x="341" y="35" w="32" h="32"/>
+    <sprite n="BrickFloor7" x="375" y="1" w="32" h="32"/>
+    <sprite n="BrickFloor8" x="1" y="415" w="32" h="32"/>
+    <sprite n="BrickFloor9" x="35" y="375" w="32" h="32"/>
+    <sprite n="BrickFloor10" x="69" y="341" w="32" h="32"/>
+    <sprite n="BrickFloorOpenDoor" x="454" y="3540" w="16" h="29" oX="8" oY="3" oW="32" oH="32"/>
+    <sprite n="BrickFloorOpenHeavy" x="273" y="2568" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="BrickFloorOpenSecret" x="314" y="2738" w="27" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="bridgehoriz" x="103" y="307" w="32" h="32"/>
+    <sprite n="bridgevert" x="137" y="273" w="32" h="32"/>
+    <sprite n="brokenbeanstalk" x="267" y="3468" w="26" h="22" oX="0" oY="10" oW="32" oH="32"/>
+    <sprite n="brokenbore" x="199" y="3249" w="31" h="25" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="brokencorruptedshrine" x="1" y="1" w="32" h="35"/>
+    <sprite n="brokendragonboat" x="171" y="239" w="32" h="32"/>
+    <sprite n="brokenelaboratepulleysystem" x="34" y="2871" w="32" h="30"/>
+    <sprite n="brokengraystonemonolith" x="325" y="2467" w="32" h="22" oX="0" oY="10" oW="32" oH="32"/>
+    <sprite n="brokenminecart" x="205" y="205" w="32" h="32"/>
+    <sprite n="brokenraft" x="391" y="3074" w="23" h="29" oX="6" oY="2" oW="32" oH="32"/>
+    <sprite n="brokenropebridgehoriz" x="388" y="2254" w="32" h="26" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="brokenropebridgevert" x="261" y="2839" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="brokenropeladder" x="357" y="2636" w="11" h="32" oX="10" oY="0" oW="32" oH="32"/>
+    <sprite n="brokenrowboat" x="239" y="171" w="32" h="32"/>
+    <sprite n="brokensandscouredmonolith" x="388" y="2282" w="32" h="25" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="brokenshamecage" x="273" y="137" w="32" h="32"/>
+    <sprite n="brokentargetdummy" x="393" y="2437" w="30" h="28" oX="1" oY="4" oW="32" oH="32"/>
+    <sprite n="brokentrolltotem" x="297" y="3100" w="27" h="24" oX="0" oY="8" oW="32" oH="32"/>
+    <sprite n="bubble" x="307" y="103" w="32" h="32"/>
+    <sprite n="bubblingcreekbed1" x="233" y="2309" w="30" h="30" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="bubblingcreekbed2" x="416" y="3208" w="23" h="27" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="bubblingcreekbed3" x="476" y="2419" w="29" h="27" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="bubblingcreekbed4" x="274" y="2602" w="24" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="bubblingcreekbed5" x="427" y="2566" w="27" h="23" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="bubblingcreekbed6" x="327" y="3772" w="21" h="27" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="bubblingcreekbed7" x="295" y="2938" w="27" h="26" oX="2" oY="2" oW="32" oH="32"/>
+    <sprite n="bubblingcreekbed8" x="362" y="3829" w="22" h="26" oX="4" oY="3" oW="32" oH="32"/>
+    <sprite n="buriedobject" x="278" y="2636" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="cage" x="341" y="69" w="32" h="32"/>
+    <sprite n="cauldron1" x="477" y="35" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="cauldron2" x="1" y="3504" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="cauldron3" x="1" y="3538" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="cauldron4" x="1" y="3572" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="cauldron5" x="477" y="69" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="cauldron6" x="1" y="3606" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="cauldron7" x="1" y="3640" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="cauldron8" x="477" y="103" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="cavecolumns1" x="375" y="35" w="32" h="32"/>
+    <sprite n="cavecolumns2" x="409" y="1" w="32" h="32"/>
+    <sprite n="cavecolumns3" x="1" y="449" w="32" h="32"/>
+    <sprite n="cavecolumns4" x="35" y="409" w="32" h="32"/>
+    <sprite n="cavecolumns5" x="69" y="375" w="32" h="32"/>
+    <sprite n="cavecolumns6" x="103" y="341" w="32" h="32"/>
+    <sprite n="cavecolumns7" x="137" y="307" w="32" h="32"/>
+    <sprite n="cavecolumns8" x="171" y="273" w="32" h="32"/>
+    <sprite n="cavecolumns9" x="205" y="239" w="32" h="32"/>
+    <sprite n="cavecolumns10" x="239" y="205" w="32" h="32"/>
+    <sprite n="cavein1" x="359" y="2467" w="32" h="23" oX="0" oY="9" oW="32" oH="32"/>
+    <sprite n="chainedeye1" x="477" y="1641" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="chainedeye2" x="477" y="1675" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="chainedeye3" x="477" y="850" w="28" h="30" oX="2" oY="2" oW="32" oH="32"/>
+    <sprite n="chainedeye4" x="427" y="2591" w="27" h="29" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="chainedeye5" x="356" y="3226" w="27" h="29" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="chainedeye6" x="289" y="2873" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="chainedeye7" x="322" y="2905" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="chainedeye8" x="296" y="2966" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="chasmedgee" x="476" y="2192" w="29" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="chasmedgen" x="170" y="2505" w="32" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="chasmedges" x="133" y="3257" w="32" h="29" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="chasmedgew" x="476" y="2226" w="29" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="chasmfloor1" x="273" y="171" w="32" h="32"/>
+    <sprite n="chasmfloorgentle" x="264" y="3215" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="chasmwalle" x="360" y="2704" w="9" h="32" oX="23" oY="0" oW="32" oH="32"/>
+    <sprite n="chasmwalln" x="33" y="4277" w="32" h="9" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="chasmwallne" x="328" y="4065" w="9" h="9" oX="23" oY="0" oW="32" oH="32"/>
+    <sprite n="chasmwallnw" x="411" y="4117" w="9" h="9" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="chasmwalls" x="456" y="2564" w="32" h="9" oX="0" oY="23" oW="32" oH="32"/>
+    <sprite n="chasmwallse" x="456" y="4242" w="9" h="9" oX="23" oY="23" oW="32" oH="32"/>
+    <sprite n="chasmwallsw" x="475" y="4223" w="9" h="9" oX="0" oY="23" oW="32" oH="32"/>
+    <sprite n="chasmwallw" x="426" y="2669" w="9" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="CheckerFloor1" x="307" y="137" w="32" h="32"/>
+    <sprite n="CheckerFloor2" x="341" y="103" w="32" h="32"/>
+    <sprite n="CheckerFloor3" x="375" y="69" w="32" h="32"/>
+    <sprite n="CheckerFloor4" x="409" y="35" w="32" h="32"/>
+    <sprite n="CheckerFloor5" x="443" y="1" w="32" h="32"/>
+    <sprite n="CheckerFloor6" x="1" y="483" w="32" h="32"/>
+    <sprite n="CheckerFloor7" x="35" y="443" w="32" h="32"/>
+    <sprite n="CheckerFloor8" x="69" y="409" w="32" h="32"/>
+    <sprite n="CheckerFloor9" x="103" y="375" w="32" h="32"/>
+    <sprite n="CheckerFloor10" x="137" y="341" w="32" h="32"/>
+    <sprite n="CheckerFloorOpenDoor" x="372" y="3918" w="16" h="29" oX="8" oY="3" oW="32" oH="32"/>
+    <sprite n="CheckerFloorOpenHeavy" x="285" y="2670" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="CheckerFloorOpenSecret" x="326" y="3094" w="27" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="chenethianshrine1" x="351" y="3544" w="20" h="29" oX="6" oY="3" oW="32" oH="32"/>
+    <sprite n="chest1" x="267" y="3443" w="26" h="23" oX="3" oY="4" oW="32" oH="32"/>
+    <sprite n="clayoven" x="1" y="2387" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="clayurns" x="393" y="2467" w="32" h="24" oX="0" oY="8" oW="32" oH="32"/>
+    <sprite n="clearedbramble" x="171" y="307" w="32" h="32"/>
+    <sprite n="clearedwallofcorpses" x="263" y="2938" w="30" h="26" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="closedabyssalportal" x="205" y="273" w="32" h="32"/>
+    <sprite n="closedark" x="354" y="2279" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="closeddeadsidegate" x="239" y="239" w="32" h="32"/>
+    <sprite n="closedtoothycave" x="273" y="205" w="32" h="32"/>
+    <sprite n="clutteredshelves" x="198" y="2977" w="32" h="18" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="coatofarms" x="307" y="171" w="32" h="32"/>
+    <sprite n="CobblestoneFloor1" x="341" y="137" w="32" h="32"/>
+    <sprite n="CobblestoneFloor2" x="375" y="103" w="32" h="32"/>
+    <sprite n="CobblestoneFloor3" x="409" y="69" w="32" h="32"/>
+    <sprite n="CobblestoneFloor4" x="443" y="35" w="32" h="32"/>
+    <sprite n="CobblestoneFloor5" x="1" y="517" w="32" h="32"/>
+    <sprite n="CobblestoneFloor6" x="35" y="477" w="32" h="32"/>
+    <sprite n="CobblestoneFloor7" x="69" y="443" w="32" h="32"/>
+    <sprite n="CobblestoneFloor8" x="103" y="409" w="32" h="32"/>
+    <sprite n="CobblestoneFloor9" x="137" y="375" w="32" h="32"/>
+    <sprite n="CobblestoneFloor10" x="171" y="341" w="32" h="32"/>
+    <sprite n="CobblestoneFloorOpenDoor" x="372" y="3949" w="16" h="29" oX="8" oY="1" oW="32" oH="32"/>
+    <sprite n="CobblestoneFloorOpenHeavy" x="289" y="2737" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="CobblestoneFloorOpenSecret" x="326" y="3127" w="27" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="coffin1" x="456" y="2575" w="32" h="19" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="coldaugmenter1" x="297" y="2243" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="coldaugmenter2" x="306" y="2636" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="coldaugmenter3" x="310" y="2670" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="coldaugmenter4" x="314" y="2704" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="coldaugmenter5" x="343" y="2806" w="21" h="31" oX="5" oY="1" oW="32" oH="32"/>
+    <sprite n="coldaugmenter6" x="337" y="2704" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="coldaugmenter7" x="343" y="2738" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="coldaugmenter8" x="343" y="2772" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="consecratedgrave" x="205" y="307" w="32" h="32"/>
+    <sprite n="cookingfire1" x="68" y="2867" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="cookingfire2" x="34" y="2903" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="cookingfire3" x="68" y="2899" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="cookingfire4" x="68" y="2931" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="cookingfire5" x="33" y="2965" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="cookingfire6" x="33" y="2997" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="cookingfire7" x="35" y="2347" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="corpsebomb" x="239" y="273" w="32" h="32"/>
+    <sprite n="corpsefilledpit" x="265" y="2308" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="corruptedshrine" x="1" y="38" w="32" h="35"/>
+    <sprite n="crackedbell" x="289" y="2771" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="crate" x="69" y="2313" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="crumblingfloor" x="273" y="239" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall1" x="307" y="205" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall2" x="341" y="171" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall3" x="375" y="137" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall4" x="409" y="103" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall5" x="443" y="69" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall6" x="1" y="551" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall7" x="35" y="511" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall8" x="69" y="477" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall9" x="103" y="443" w="32" h="32"/>
+    <sprite n="CrumblyBlockWall10" x="137" y="409" w="32" h="32"/>
+    <sprite n="crystalball" x="399" y="2578" w="26" h="29" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="culttemple1" x="33" y="3029" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="culttemple2" x="33" y="3061" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="culttemple3" x="33" y="3093" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="culttemple4" x="33" y="3125" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="culttemple5" x="33" y="3157" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="culttemple6" x="33" y="3189" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="culttemple7" x="33" y="3221" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="culttemple8" x="33" y="3253" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="curepotion1" x="351" y="2905" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="curtain" x="333" y="2670" w="23" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="curtainajar" x="289" y="2805" w="26" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="dais" x="325" y="2491" w="32" h="25" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="dallerithianshrine1" x="490" y="2505" w="15" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="darkestdepths" x="134" y="3003" w="29" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="darkspiral" x="171" y="375" w="32" h="32"/>
+    <sprite n="deadsidegate1" x="205" y="341" w="32" h="32"/>
+    <sprite n="deadsidegate2" x="239" y="307" w="32" h="32"/>
+    <sprite n="deadsidegate3" x="273" y="273" w="32" h="32"/>
+    <sprite n="deadsidegate4" x="307" y="239" w="32" h="32"/>
+    <sprite n="decomissionedthrone" x="377" y="2905" w="25" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="deepmud" x="472" y="3564" w="21" h="24" oX="6" oY="5" oW="32" oH="32"/>
+    <sprite n="deepopenpit" x="233" y="2341" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="defunctstonecircle" x="341" y="205" w="32" h="32"/>
+    <sprite n="densefoliage" x="375" y="171" w="32" h="32"/>
+    <sprite n="denudedplant" x="409" y="137" w="32" h="32"/>
+    <sprite n="desecratedtemple" x="33" y="3285" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="desk" x="325" y="2437" w="32" h="28" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="destroyedantimagicglyph" x="103" y="2279" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="destroyedglyphofdeath" x="137" y="2245" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="destroyedglyphofgoodness" x="359" y="2492" w="32" h="25" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="destroyedglyphofgreedwarding" x="171" y="2211" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="destroyedglyphofruination" x="443" y="103" w="32" h="32"/>
+    <sprite n="destroyedglyphofspellerasure" x="295" y="3526" w="26" h="24" oX="2" oY="4" oW="32" oH="32"/>
+    <sprite n="destroyedglyphofundeath" x="387" y="3291" w="25" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="detectedmagicitem1" x="1" y="585" w="32" h="32"/>
+    <sprite n="detectedmagicitem2" x="35" y="545" w="32" h="32"/>
+    <sprite n="detectedmagicitem3" x="69" y="511" w="32" h="32"/>
+    <sprite n="detectedmagicitem4" x="103" y="477" w="32" h="32"/>
+    <sprite n="detectedmagicitem5" x="137" y="443" w="32" h="32"/>
+    <sprite n="detectedmagicitem6" x="171" y="409" w="32" h="32"/>
+    <sprite n="detectedmagicitem7" x="205" y="375" w="32" h="32"/>
+    <sprite n="detectedmagicitem8" x="239" y="341" w="32" h="32"/>
+    <sprite n="dexteritypotion1" x="465" y="2736" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="digsite" x="273" y="307" w="32" h="32"/>
+    <sprite n="dinosaureggs" x="307" y="273" w="32" h="32"/>
+    <sprite n="discardeditems" x="463" y="2850" w="14" h="17" oX="17" oY="15" oW="32" oH="32"/>
+    <sprite n="dist1e" x="341" y="239" w="32" h="32"/>
+    <sprite n="dist1n" x="375" y="205" w="32" h="32"/>
+    <sprite n="dist1ne" x="409" y="171" w="32" h="32"/>
+    <sprite n="dist1nw" x="443" y="137" w="32" h="32"/>
+    <sprite n="dist1s" x="1" y="619" w="32" h="32"/>
+    <sprite n="dist1se" x="35" y="579" w="32" h="32"/>
+    <sprite n="dist1sw" x="69" y="545" w="32" h="32"/>
+    <sprite n="dist1w" x="103" y="511" w="32" h="32"/>
+    <sprite n="dist2" x="137" y="477" w="32" h="32"/>
+    <sprite n="dist2e" x="171" y="443" w="32" h="32"/>
+    <sprite n="dist2n" x="205" y="409" w="32" h="32"/>
+    <sprite n="dist2ne" x="239" y="375" w="32" h="32"/>
+    <sprite n="dist2nw" x="273" y="341" w="32" h="32"/>
+    <sprite n="dist2s" x="307" y="307" w="32" h="32"/>
+    <sprite n="dist2se" x="341" y="273" w="32" h="32"/>
+    <sprite n="dist2sw" x="375" y="239" w="32" h="32"/>
+    <sprite n="dist2w" x="409" y="205" w="32" h="32"/>
+    <sprite n="dist3" x="443" y="171" w="32" h="32"/>
+    <sprite n="dist3e" x="1" y="653" w="32" h="32"/>
+    <sprite n="dist3n" x="35" y="613" w="32" h="32"/>
+    <sprite n="dist3ne" x="69" y="579" w="32" h="32"/>
+    <sprite n="dist3nw" x="103" y="545" w="32" h="32"/>
+    <sprite n="dist3s" x="137" y="511" w="32" h="32"/>
+    <sprite n="dist3se" x="171" y="477" w="32" h="32"/>
+    <sprite n="dist3sw" x="205" y="443" w="32" h="32"/>
+    <sprite n="dist3w" x="239" y="409" w="32" h="32"/>
+    <sprite n="dist4" x="273" y="375" w="32" h="32"/>
+    <sprite n="dist4e" x="307" y="341" w="32" h="32"/>
+    <sprite n="dist4n" x="341" y="307" w="32" h="32"/>
+    <sprite n="dist4ne" x="375" y="273" w="32" h="32"/>
+    <sprite n="dist4nw" x="409" y="239" w="32" h="32"/>
+    <sprite n="dist4s" x="443" y="205" w="32" h="32"/>
+    <sprite n="dist4se" x="1" y="687" w="32" h="32"/>
+    <sprite n="dist4sw" x="35" y="647" w="32" h="32"/>
+    <sprite n="dist4w" x="69" y="613" w="32" h="32"/>
+    <sprite n="dist5" x="103" y="579" w="32" h="32"/>
+    <sprite n="dist5e" x="137" y="545" w="32" h="32"/>
+    <sprite n="dist5n" x="171" y="511" w="32" h="32"/>
+    <sprite n="dist5ne" x="205" y="477" w="32" h="32"/>
+    <sprite n="dist5nw" x="239" y="443" w="32" h="32"/>
+    <sprite n="dist5s" x="273" y="409" w="32" h="32"/>
+    <sprite n="dist5se" x="307" y="375" w="32" h="32"/>
+    <sprite n="dist5sw" x="341" y="341" w="32" h="32"/>
+    <sprite n="dist5w" x="375" y="307" w="32" h="32"/>
+    <sprite n="door1" x="350" y="3575" w="22" h="31" oX="5" oY="1" oW="32" oH="32"/>
+    <sprite n="doorajar" x="497" y="3498" w="6" h="28" oX="8" oY="4" oW="32" oH="32"/>
+    <sprite n="dorallanshrine1" x="409" y="273" w="32" h="32"/>
+    <sprite n="dousedacidaugmenter" x="401" y="3747" w="22" h="21" oX="4" oY="11" oW="32" oH="32"/>
+    <sprite n="dousedcoldaugmenter" x="484" y="3826" w="21" h="19" oX="5" oY="13" oW="32" oH="32"/>
+    <sprite n="dousedflameaugmenter" x="133" y="3288" w="32" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="dousedlightningaugmenter" x="477" y="1251" w="28" h="22" oX="2" oY="10" oW="32" oH="32"/>
+    <sprite n="dousedmagicaugmenter" x="357" y="3084" w="32" h="19" oX="0" oY="13" oW="32" oH="32"/>
+    <sprite n="dousedphysicalaugmenter" x="295" y="3552" w="26" h="20" oX="3" oY="12" oW="32" oH="32"/>
+    <sprite n="dousedpoisonaugmenter" x="477" y="1201" w="28" h="23" oX="2" oY="9" oW="32" oH="32"/>
+    <sprite n="DQS" x="232" y="3244" w="32" h="19" oX="0" oY="9" oW="32" oH="32"/>
+    <sprite n="dragonboat" x="298" y="3257" w="32" h="22" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="dragoneggs" x="443" y="239" w="32" h="32"/>
+    <sprite n="dragonpentacle" x="1" y="721" w="32" h="32"/>
+    <sprite n="drawbridgehoriz" x="358" y="2670" w="10" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="drawbridgevert" x="199" y="3471" w="32" h="10" oX="0" oY="22" oW="32" oH="32"/>
+    <sprite n="driedwellofblood" x="359" y="2437" w="32" h="28" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="dwarventemple1" x="33" y="3317" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="dwarventemple2" x="33" y="3349" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="dwarventemple3" x="33" y="3381" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="dwarventemple4" x="33" y="3413" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="dwarventemple5" x="33" y="3445" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="dwarventemple6" x="33" y="3477" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="dwarventemple7" x="33" y="3509" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="dwarventemple8" x="33" y="3541" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="elaboratepulleysystem1" x="33" y="3573" w="32" h="30"/>
+    <sprite n="elaboratepulleysystem2" x="33" y="3605" w="32" h="30"/>
+    <sprite n="elaboratepulleysystem3" x="33" y="3637" w="32" h="30"/>
+    <sprite n="elaboratepulleysystem4" x="33" y="3669" w="32" h="30"/>
+    <sprite n="elaboratepulleysystem5" x="33" y="3701" w="32" h="30"/>
+    <sprite n="elaboratepulleysystem6" x="33" y="3733" w="32" h="30"/>
+    <sprite n="elaboratepulleysystem7" x="33" y="3765" w="32" h="30"/>
+    <sprite n="elaboratepulleysystem8" x="33" y="3797" w="32" h="30"/>
+    <sprite n="elevator" x="477" y="137" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="elshanethianshrine1" x="345" y="2839" w="21" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="emptyaltar1" x="233" y="3468" w="32" h="16" oX="0" oY="4" oW="32" oH="20"/>
+    <sprite n="emptyapothecarytable" x="35" y="681" w="32" h="32"/>
+    <sprite n="emptyarchway1" x="69" y="647" w="32" h="32"/>
+    <sprite n="emptybanquettable" x="393" y="2493" w="32" h="25" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="emptycoffin1" x="298" y="2577" w="32" h="23" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="emptydarkspiral" x="103" y="613" w="32" h="32"/>
+    <sprite n="emptydesk" x="231" y="3027" w="32" h="28" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="emptydinosaureggs" x="137" y="579" w="32" h="32"/>
+    <sprite n="emptydragoneggs" x="171" y="545" w="32" h="32"/>
+    <sprite n="emptyidol1" x="455" y="2379" w="19" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="emptykoboldeggs" x="205" y="511" w="32" h="32"/>
+    <sprite n="emptyliquorbarrel" x="294" y="3772" w="31" h="25" oX="1" oY="7" oW="32" oH="32"/>
+    <sprite n="emptymanacles" x="432" y="2656" w="23" h="11" oX="4" oY="2" oW="32" oH="32"/>
+    <sprite n="emptynet" x="239" y="477" w="32" h="32"/>
+    <sprite n="emptyshelves" x="261" y="3548" w="32" h="18" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="emptystonesarcophagus" x="198" y="3363" w="32" h="20" oX="0" oY="9" oW="32" oH="32"/>
+    <sprite n="emptyweaponrack" x="273" y="443" w="32" h="32"/>
+    <sprite n="examinedcoatofarms" x="307" y="409" w="32" h="32"/>
+    <sprite n="examinedmosaic" x="341" y="375" w="32" h="32"/>
+    <sprite n="examinedtapestry" x="317" y="2771" w="24" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="exploredgarbageheap" x="422" y="2350" w="32" h="21" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="exploredsunkenruin" x="375" y="341" w="32" h="32"/>
+    <sprite n="extinguishedcookingfire" x="425" y="2437" w="29" h="28" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="extinguishedstandingtorch" x="447" y="3744" w="12" h="24" oX="10" oY="7" oW="32" oH="32"/>
+    <sprite n="extinguishedwallcandles" x="262" y="2554" w="32" h="12" oX="0" oY="12" oW="32" oH="32"/>
+    <sprite n="extinguishedwalllantern" x="485" y="3799" w="20" h="25" oX="7" oY="1" oW="32" oH="32"/>
+    <sprite n="extinguishedwalltorch" x="495" y="3578" w="10" h="17" oX="11" oY="5" oW="32" oH="32"/>
+    <sprite n="fadeeast" x="427" y="2703" w="17" h="32" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="fadenorth" x="204" y="2517" w="32" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fadenortheast" x="466" y="4090" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="fadenorthwest" x="447" y="4109" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fadepartialne" x="409" y="307" w="32" h="32"/>
+    <sprite n="fadepartialnw" x="443" y="273" w="32" h="32"/>
+    <sprite n="fadepartialse" x="1" y="755" w="32" h="32"/>
+    <sprite n="fadepartialsw" x="35" y="715" w="32" h="32"/>
+    <sprite n="fadeslopeeall" x="366" y="2738" w="9" h="32" oX="23" oY="0" oW="32" oH="32"/>
+    <sprite n="fadeslopeen" x="354" y="2174" w="18" h="32" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="fadeslopees" x="422" y="2228" w="18" h="32" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="fadeslopenall" x="399" y="3495" w="32" h="9" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fadeslopene" x="377" y="2793" w="32" h="18" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fadeslopenw" x="411" y="2793" w="32" h="18" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fadeslopesall" x="198" y="3795" w="32" h="9" oX="0" oY="23" oW="32" oH="32"/>
+    <sprite n="fadeslopese" x="445" y="2796" w="32" h="18" oX="0" oY="14" oW="32" oH="32"/>
+    <sprite n="fadeslopesw" x="413" y="3237" w="32" h="18" oX="0" oY="14" oW="32" oH="32"/>
+    <sprite n="fadeslopewall" x="366" y="2772" w="9" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fadeslopewn" x="456" y="2345" w="18" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fadeslopews" x="456" y="2437" w="18" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fadesouth" x="464" y="3213" w="32" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="fadesoutheast" x="466" y="4109" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="fadesouthwest" x="485" y="4090" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="fadewest" x="446" y="2703" w="17" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fehratianshrine1" x="317" y="2805" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="feighmorianshrine1" x="238" y="2501" w="25" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="ferrydock" x="205" y="2177" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fiberianshrine1" x="1" y="3674" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="fire1" x="410" y="3668" w="21" h="26" oX="6" oY="3" oW="32" oH="32"/>
+    <sprite n="fire2" x="378" y="3742" w="21" h="26" oX="6" oY="3" oW="32" oH="32"/>
+    <sprite n="fire3" x="379" y="3770" w="21" h="26" oX="6" oY="3" oW="32" oH="32"/>
+    <sprite n="fire4" x="386" y="3829" w="22" h="26" oX="5" oY="3" oW="32" oH="32"/>
+    <sprite n="fire5" x="362" y="3392" w="23" h="26" oX="6" oY="3" oW="32" oH="32"/>
+    <sprite n="fire6" x="387" y="3857" w="21" h="26" oX="6" oY="3" oW="32" oH="32"/>
+    <sprite n="fire7" x="462" y="3798" w="21" h="25" oX="6" oY="4" oW="32" oH="32"/>
+    <sprite n="fireplace1" x="69" y="681" w="32" h="32"/>
+    <sprite n="fireplace2" x="103" y="647" w="32" h="32"/>
+    <sprite n="fireplace3" x="137" y="613" w="32" h="32"/>
+    <sprite n="fireplace4" x="171" y="579" w="32" h="32"/>
+    <sprite n="fireplace5" x="205" y="545" w="32" h="32"/>
+    <sprite n="fireplace6" x="239" y="511" w="32" h="32"/>
+    <sprite n="fireplace7" x="273" y="477" w="32" h="32"/>
+    <sprite n="fissure" x="307" y="443" w="32" h="32"/>
+    <sprite n="fivriaskanshrine1" x="289" y="2839" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="Flagstone1" x="341" y="409" w="32" h="32"/>
+    <sprite n="Flagstone2" x="375" y="375" w="32" h="32"/>
+    <sprite n="Flagstone3" x="409" y="341" w="32" h="32"/>
+    <sprite n="Flagstone4" x="443" y="307" w="32" h="32"/>
+    <sprite n="Flagstone5" x="1" y="789" w="32" h="32"/>
+    <sprite n="Flagstone6" x="35" y="749" w="32" h="32"/>
+    <sprite n="Flagstone7" x="69" y="715" w="32" h="32"/>
+    <sprite n="Flagstone8" x="103" y="681" w="32" h="32"/>
+    <sprite n="Flagstone9" x="137" y="647" w="32" h="32"/>
+    <sprite n="Flagstone10" x="171" y="613" w="32" h="32"/>
+    <sprite n="FlagstoneOpenDoor" x="354" y="3987" w="16" h="29" oX="8" oY="1" oW="32" oH="32"/>
+    <sprite n="FlagstoneOpenHeavy" x="437" y="2669" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="FlagstoneOpenSecret" x="326" y="3160" w="27" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="flameaugmenter1" x="205" y="579" w="32" h="32"/>
+    <sprite n="flameaugmenter2" x="239" y="545" w="32" h="32"/>
+    <sprite n="flameaugmenter3" x="273" y="511" w="32" h="32"/>
+    <sprite n="flameaugmenter4" x="307" y="477" w="32" h="32"/>
+    <sprite n="flameaugmenter5" x="341" y="443" w="32" h="32"/>
+    <sprite n="flameaugmenter6" x="375" y="409" w="32" h="32"/>
+    <sprite n="flameaugmenter7" x="409" y="375" w="32" h="32"/>
+    <sprite n="flies1" x="388" y="3885" w="24" h="26" oX="6" oY="4" oW="32" oH="32"/>
+    <sprite n="flies2" x="388" y="3171" w="26" h="24" oX="4" oY="4" oW="32" oH="32"/>
+    <sprite n="flies3" x="477" y="1275" w="28" h="22" oX="2" oY="5" oW="32" oH="32"/>
+    <sprite n="flies4" x="477" y="975" w="28" h="28" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="flies5" x="391" y="2309" w="29" h="30" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="flies6" x="463" y="3114" w="23" h="29" oX="5" oY="2" oW="32" oH="32"/>
+    <sprite n="flies7" x="259" y="4012" w="24" h="27" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="flies8" x="455" y="3619" w="23" h="25" oX="5" oY="5" oW="32" oH="32"/>
+    <sprite n="floor1" x="443" y="341" w="32" h="32"/>
+    <sprite n="floor2" x="1" y="823" w="32" h="32"/>
+    <sprite n="floor3" x="35" y="783" w="32" h="32"/>
+    <sprite n="floor4" x="69" y="749" w="32" h="32"/>
+    <sprite n="floor5" x="103" y="715" w="32" h="32"/>
+    <sprite n="floor6" x="137" y="681" w="32" h="32"/>
+    <sprite n="floor7" x="171" y="647" w="32" h="32"/>
+    <sprite n="floor8" x="205" y="613" w="32" h="32"/>
+    <sprite n="floor9" x="239" y="579" w="32" h="32"/>
+    <sprite n="floor10" x="273" y="545" w="32" h="32"/>
+    <sprite n="floorOpenDoor" x="372" y="3980" w="16" h="29" oX="8" oY="3" oW="32" oH="32"/>
+    <sprite n="floorOpenHeavy" x="362" y="3290" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="floorOpenSecret" x="326" y="3193" w="27" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="fluorescentcrystal1" x="476" y="2477" w="29" h="26" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="fluorescentcrystal2" x="477" y="1148" w="28" h="25" oX="3" oY="6" oW="32" oH="32"/>
+    <sprite n="fluorescentcrystal3" x="477" y="1035" w="28" h="27" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="fluorescentcrystal4" x="477" y="1064" w="28" h="26" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fluorescentcrystal5" x="322" y="3742" w="25" h="28" oX="5" oY="1" oW="32" oH="32"/>
+    <sprite n="foliage" x="307" y="511" w="32" h="32"/>
+    <sprite n="footprintsmud" x="488" y="3058" w="17" h="19" oX="7" oY="6" oW="32" oH="32"/>
+    <sprite n="forcefield1" x="341" y="477" w="32" h="32"/>
+    <sprite n="forcefield2" x="375" y="443" w="32" h="32"/>
+    <sprite n="forcefield3" x="409" y="409" w="32" h="32"/>
+    <sprite n="forcefield4" x="443" y="375" w="32" h="32"/>
+    <sprite n="forcefield5" x="1" y="857" w="32" h="32"/>
+    <sprite n="forcefield6" x="35" y="817" w="32" h="32"/>
+    <sprite n="forcefield7" x="69" y="783" w="32" h="32"/>
+    <sprite n="forcefield8" x="103" y="749" w="32" h="32"/>
+    <sprite n="forge1" x="137" y="715" w="32" h="32"/>
+    <sprite n="forge2" x="171" y="681" w="32" h="32"/>
+    <sprite n="forge3" x="205" y="647" w="32" h="32"/>
+    <sprite n="forge4" x="231" y="3057" w="32" h="28" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="forge5" x="456" y="2505" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="forge6" x="325" y="2518" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="forge7" x="133" y="3319" w="32" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="forge8" x="239" y="2143" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fountain1" x="273" y="2109" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fountain2" x="307" y="2075" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fountain3" x="341" y="2041" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fountain4" x="375" y="2007" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fountain5" x="409" y="1973" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fountain6" x="443" y="1939" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fountain7" x="1" y="2420" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fountain8" x="35" y="2380" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fourposterbed" x="69" y="2346" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="fracturedwall" x="239" y="613" w="32" h="32"/>
+    <sprite n="friendlytrap" x="273" y="579" w="32" h="32"/>
+    <sprite n="frigidwater1" x="415" y="3386" w="26" h="24" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="frigidwater2" x="444" y="3863" w="23" h="25" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="frigidwater3" x="294" y="4079" w="18" h="17" oX="8" oY="7" oW="32" oH="32"/>
+    <sprite n="frigidwater4" x="399" y="2609" w="26" h="29" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="frigidwater5" x="480" y="3653" w="24" h="21" oX="2" oY="6" oW="32" oH="32"/>
+    <sprite n="frigidwaterpit" x="265" y="2340" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="frozencascade" x="477" y="1709" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="frozencascadew" x="359" y="2519" w="32" h="27" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="fullnet" x="307" y="545" w="32" h="32"/>
+    <sprite n="fumarole1" x="393" y="2520" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="fumarole2" x="393" y="2549" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="fumarole3" x="456" y="2596" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="fumarole4" x="357" y="2997" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="fumarole5" x="357" y="3026" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="fumarole6" x="231" y="3087" w="32" h="28" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="fumarole7" x="33" y="3829" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="fumarole8" x="103" y="2312" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="fumarole9" x="341" y="511" w="32" h="32"/>
+    <sprite n="fumarole10" x="375" y="477" w="32" h="32"/>
+    <sprite n="garbageheap1" x="332" y="3257" w="32" h="25" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="garbageheap2" x="328" y="3342" w="32" h="25" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="garbageheap3" x="324" y="2938" w="32" h="26" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="garbageheap4" x="264" y="3155" w="32" h="28" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="garbageheap5" x="264" y="3185" w="32" h="28" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="garbageheap6" x="328" y="3369" w="32" h="25" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="garbageheap7" x="260" y="3764" w="32" h="23" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="garbageheap8" x="445" y="2769" w="32" h="25" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="gems1" x="409" y="443" w="32" h="32"/>
+    <sprite n="glyphofdeath" x="137" y="2278" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="glyphofgoodness" x="400" y="2813" w="32" h="25" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="glyphofgreedwarding" x="295" y="3463" w="26" h="28" oX="4" oY="3" oW="32" oH="32"/>
+    <sprite n="glyphofruination" x="443" y="409" w="32" h="32"/>
+    <sprite n="glyphofspellerasure" x="472" y="3913" w="24" h="24" oX="4" oY="3" oW="32" oH="32"/>
+    <sprite n="glyphofundeath" x="387" y="3324" w="25" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="gnomishrepairmachine1" x="1" y="891" w="32" h="32"/>
+    <sprite n="gnomishrepairmachine2" x="35" y="851" w="32" h="32"/>
+    <sprite n="goldicon" x="358" y="3420" w="27" h="22" oX="3" oY="8" oW="32" oH="32"/>
+    <sprite n="goldveins" x="69" y="817" w="32" h="32"/>
+    <sprite n="golemassembly" x="349" y="3742" w="27" h="28" oX="2" oY="2" oW="32" oH="32"/>
+    <sprite n="gratee" x="237" y="4046" w="21" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="graten" x="477" y="1323" w="28" h="21" oX="2" oY="11" oW="32" oH="32"/>
+    <sprite n="grates" x="477" y="1346" w="28" h="21" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="gratew" x="400" y="3638" w="21" h="28" oX="11" oY="2" oW="32" oH="32"/>
+    <sprite n="grave" x="103" y="783" w="32" h="32"/>
+    <sprite n="GrayBlockWall1" x="137" y="749" w="32" h="32"/>
+    <sprite n="GrayBlockWall2" x="171" y="715" w="32" h="32"/>
+    <sprite n="GrayBlockWall3" x="205" y="681" w="32" h="32"/>
+    <sprite n="GrayBlockWall4" x="239" y="647" w="32" h="32"/>
+    <sprite n="GrayBlockWall5" x="273" y="613" w="32" h="32"/>
+    <sprite n="GrayBlockWall6" x="307" y="579" w="32" h="32"/>
+    <sprite n="GrayBlockWall7" x="341" y="545" w="32" h="32"/>
+    <sprite n="GrayBlockWall8" x="375" y="511" w="32" h="32"/>
+    <sprite n="GrayBlockWall9" x="409" y="477" w="32" h="32"/>
+    <sprite n="GrayBlockWall10" x="443" y="443" w="32" h="32"/>
+    <sprite n="graystonemonolith" x="1" y="925" w="32" h="32"/>
+    <sprite n="grease" x="35" y="885" w="32" h="32"/>
+    <sprite n="greenflamebrazier1" x="297" y="2998" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="greenflamebrazier2" x="297" y="3032" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="greenflamebrazier3" x="297" y="3066" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="greenflamebrazier4" x="298" y="3126" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="greenflamebrazier5" x="298" y="3160" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="greenflamebrazier6" x="318" y="2873" w="26" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="greenflamebrazier7" x="298" y="3194" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="GreenTile1" x="69" y="851" w="32" h="32"/>
+    <sprite n="GreenTile2" x="103" y="817" w="32" h="32"/>
+    <sprite n="GreenTile3" x="137" y="783" w="32" h="32"/>
+    <sprite n="GreenTile4" x="171" y="749" w="32" h="32"/>
+    <sprite n="GreenTile5" x="205" y="715" w="32" h="32"/>
+    <sprite n="GreenTile6" x="239" y="681" w="32" h="32"/>
+    <sprite n="GreenTile7" x="273" y="647" w="32" h="32"/>
+    <sprite n="GreenTile8" x="307" y="613" w="32" h="32"/>
+    <sprite n="GreenTile9" x="341" y="579" w="32" h="32"/>
+    <sprite n="GreenTile10" x="375" y="545" w="32" h="32"/>
+    <sprite n="GreenTileOpenDoor" x="219" y="4052" w="16" h="29" oX="8" oY="3" oW="32" oH="32"/>
+    <sprite n="GreenTileOpenHeavy" x="362" y="3324" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="GreenTileOpenSecret" x="355" y="3193" w="27" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="grogorianshrine1" x="300" y="2602" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="hangingbody1" x="391" y="2938" w="12" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="hangingbody2" x="352" y="3445" w="11" h="32" oX="9" oY="0" oW="32" oH="32"/>
+    <sprite n="hangingbody3" x="456" y="3506" w="10" h="32" oX="11" oY="0" oW="32" oH="32"/>
+    <sprite n="hangingbody4" x="391" y="2972" w="12" h="32" oX="11" oY="0" oW="32" oH="32"/>
+    <sprite n="hangingbody5" x="391" y="3006" w="13" h="32" oX="11" oY="0" oW="32" oH="32"/>
+    <sprite n="healthpotion1" x="349" y="3608" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="heavydoor1" x="317" y="2839" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="heavydoorajar" x="468" y="2816" w="9" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="heavystonecoffer" x="133" y="3350" w="32" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="heavystonesarcophagus" x="456" y="2534" w="32" h="28" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="highlightedsquare" x="409" y="511" w="32" h="32"/>
+    <sprite n="hive1" x="1" y="3708" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="hive2" x="171" y="2245" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="hive3" x="443" y="477" w="32" h="32"/>
+    <sprite n="hive4" x="1" y="3742" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="hole" x="233" y="2373" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="hornanshrine1" x="101" y="3131" w="29" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="hotcoalseast" x="456" y="2471" w="18" h="32" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="hotcoalsfull" x="1" y="959" w="32" h="32"/>
+    <sprite n="hotcoalsisolated" x="35" y="919" w="32" h="32"/>
+    <sprite n="hotcoalsnorth" x="324" y="3425" w="32" h="18" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="hotcoalssouth" x="229" y="3873" w="32" h="18" oX="0" oY="14" oW="32" oH="32"/>
+    <sprite n="hotcoalswest" x="133" y="3381" w="32" h="29" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="hotspring1" x="69" y="885" w="32" h="32"/>
+    <sprite n="hotspring2" x="103" y="851" w="32" h="32"/>
+    <sprite n="hotspring3" x="137" y="817" w="32" h="32"/>
+    <sprite n="hotspring4" x="171" y="783" w="32" h="32"/>
+    <sprite n="hotspring5" x="205" y="749" w="32" h="32"/>
+    <sprite n="hotspring6" x="239" y="715" w="32" h="32"/>
+    <sprite n="hotspring7" x="273" y="681" w="32" h="32"/>
+    <sprite n="hotspring8" x="307" y="647" w="32" h="32"/>
+    <sprite n="HugeBlockWall1" x="341" y="613" w="32" h="32"/>
+    <sprite n="HugeBlockWall2" x="375" y="579" w="32" h="32"/>
+    <sprite n="HugeBlockWall3" x="409" y="545" w="32" h="32"/>
+    <sprite n="HugeBlockWall4" x="443" y="511" w="32" h="32"/>
+    <sprite n="HugeBlockWall5" x="1" y="993" w="32" h="32"/>
+    <sprite n="HugeBlockWall6" x="35" y="953" w="32" h="32"/>
+    <sprite n="HugeBlockWall7" x="69" y="919" w="32" h="32"/>
+    <sprite n="HugeBlockWall8" x="103" y="885" w="32" h="32"/>
+    <sprite n="HugeBlockWall9" x="137" y="851" w="32" h="32"/>
+    <sprite n="HugeBlockWall10" x="171" y="817" w="32" h="32"/>
+    <sprite n="ice" x="205" y="783" w="32" h="32"/>
+    <sprite n="ice1" x="477" y="1743" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="ice2" x="357" y="3055" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="ice3" x="134" y="3163" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="ice4" x="99" y="4241" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="ice5" x="134" y="3196" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="ice6" x="133" y="3412" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="ice7" x="239" y="749" w="32" h="32"/>
+    <sprite n="ice8" x="33" y="3861" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="ice9" x="1" y="3776" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="ice10" x="33" y="3893" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="ice11" x="1" y="3810" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="ice12" x="273" y="715" w="32" h="32"/>
+    <sprite n="ice13" x="232" y="3722" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="ice14" x="200" y="3385" w="31" h="26" oX="1" oY="3" oW="32" oH="32"/>
+    <sprite n="ice15" x="370" y="2636" w="27" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="ice16" x="265" y="2500" w="30" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="iceNEpatch" x="300" y="4125" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="iceNWpatch" x="485" y="4109" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="iceSEpatch" x="345" y="4099" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="iceSWpatch" x="364" y="4099" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="icetoeast" x="220" y="4256" w="5" h="25" oX="27" oY="3" oW="32" oH="32"/>
+    <sprite n="icetonorth" x="477" y="2148" w="26" h="5" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="icetosouth" x="474" y="4044" w="24" h="6" oX="5" oY="26" oW="32" oH="32"/>
+    <sprite n="icetowest" x="498" y="3913" w="6" h="24" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="icewall1" x="265" y="2528" w="30" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="icewall2" x="266" y="3244" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="icewall3" x="384" y="3197" w="30" h="27" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="icewall4" x="430" y="2868" w="30" h="27" oX="1" oY="4" oW="32" oH="32"/>
+    <sprite n="icewall5" x="355" y="3105" w="31" h="28" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="icewall6" x="132" y="4065" w="32" h="29" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="icewall7" x="133" y="3444" w="31" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="icewall8" x="133" y="3476" w="30" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="icewall9" x="239" y="2176" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="icewall10" x="307" y="681" w="32" h="32"/>
+    <sprite n="idol1" x="391" y="3040" w="19" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="illusorywallglow" x="341" y="647" w="32" h="32"/>
+    <sprite n="insectswarm1" x="390" y="3913" w="24" h="26" oX="6" oY="4" oW="32" oH="32"/>
+    <sprite n="insectswarm2" x="387" y="3390" w="26" h="24" oX="4" oY="4" oW="32" oH="32"/>
+    <sprite n="insectswarm3" x="477" y="1299" w="28" h="22" oX="2" oY="5" oW="32" oH="32"/>
+    <sprite n="insectswarm4" x="477" y="1005" w="28" h="28" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="insectswarm5" x="391" y="2341" w="29" h="30" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="insectswarm6" x="362" y="3857" w="23" h="29" oX="5" oY="2" oW="32" oH="32"/>
+    <sprite n="insectswarm7" x="260" y="4041" w="24" h="27" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="insectswarm8" x="272" y="4098" w="23" h="25" oX="5" oY="5" oW="32" oH="32"/>
+    <sprite n="ironbars" x="375" y="613" w="32" h="32"/>
+    <sprite n="irongate1" x="477" y="817" w="28" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="irongate2" x="477" y="171" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="irongate3" x="477" y="205" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="irongate4" x="477" y="239" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="ironwall" x="409" y="579" w="32" h="32"/>
+    <sprite n="irretrievableweaponinstone" x="443" y="545" w="32" h="32"/>
+    <sprite n="jammedlock" x="491" y="2709" w="14" h="19" oX="9" oY="7" oW="32" oH="32"/>
+    <sprite n="jewellerycase" x="273" y="2142" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="junkpile" x="1" y="1027" w="32" h="32"/>
+    <sprite n="koboldeggs" x="35" y="987" w="32" h="32"/>
+    <sprite n="ladder1" x="493" y="2903" w="12" h="32" oX="11" oY="0" oW="32" oH="32"/>
+    <sprite n="lair1" x="69" y="953" w="32" h="32"/>
+    <sprite n="lair2" x="103" y="919" w="32" h="32"/>
+    <sprite n="lair3" x="137" y="885" w="32" h="32"/>
+    <sprite n="lair4" x="171" y="851" w="32" h="32"/>
+    <sprite n="langkleyanshrine1" x="412" y="3038" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="largechest1" x="132" y="4096" w="32" h="29" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="largeemptyidol1" x="1" y="3844" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="largefire1" x="329" y="2636" w="26" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="largefire2" x="370" y="2669" w="26" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="largefire3" x="371" y="2703" w="26" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="largefire4" x="477" y="273" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="largefire5" x="477" y="307" w="28" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="largefire6" x="398" y="2669" w="26" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="largefire7" x="232" y="3755" w="26" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="largeidol1" x="1" y="3878" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="largeopenchest1" x="205" y="817" w="32" h="32"/>
+    <sprite n="largepentagram1" x="239" y="783" w="32" h="32"/>
+    <sprite n="lastavianshrine1" x="477" y="1777" w="27" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava1a" x="477" y="1811" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava1b" x="477" y="1845" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava1c" x="477" y="1879" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava1d" x="477" y="1913" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava1e" x="477" y="1947" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava1f" x="477" y="1981" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava1g" x="477" y="2015" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava1h" x="200" y="2635" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava2a" x="456" y="2625" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava2b" x="198" y="3276" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava2c" x="232" y="3265" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava2d" x="198" y="3305" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava2e" x="232" y="3294" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava2f" x="198" y="3334" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava2g" x="232" y="3323" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava2h" x="232" y="3352" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava3a" x="133" y="3509" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lava3b" x="133" y="3542" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lava3c" x="133" y="3575" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lava3d" x="133" y="3608" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lava3e" x="133" y="3641" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lava3f" x="133" y="3674" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lava3g" x="133" y="3707" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lava3h" x="133" y="3740" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lava4a" x="132" y="4127" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava4b" x="132" y="4159" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava4c" x="132" y="4191" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava4d" x="132" y="4223" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava4e" x="165" y="3025" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava4f" x="166" y="3153" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava4g" x="166" y="3185" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava4h" x="166" y="3413" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava5a" x="133" y="3773" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava5b" x="133" y="3806" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava5c" x="133" y="3839" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava5d" x="133" y="3872" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava5e" x="133" y="3905" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava5f" x="133" y="3938" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava5g" x="133" y="3971" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava5h" x="133" y="4004" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava6a" x="166" y="3445" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="lava6b" x="165" y="3477" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="lava6c" x="165" y="3509" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="lava6d" x="165" y="3541" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="lava6e" x="165" y="3573" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="lava6f" x="165" y="3605" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="lava6g" x="165" y="3637" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="lava6h" x="165" y="3669" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="lava7a" x="273" y="749" w="32" h="32"/>
+    <sprite n="lava7b" x="307" y="715" w="32" h="32"/>
+    <sprite n="lava7c" x="341" y="681" w="32" h="32"/>
+    <sprite n="lava7d" x="375" y="647" w="32" h="32"/>
+    <sprite n="lava7e" x="409" y="613" w="32" h="32"/>
+    <sprite n="lava7f" x="443" y="579" w="32" h="32"/>
+    <sprite n="lava7g" x="1" y="1061" w="32" h="32"/>
+    <sprite n="lava7h" x="35" y="1021" w="32" h="32"/>
+    <sprite n="lava8a" x="33" y="3925" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava8b" x="33" y="3957" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava8c" x="33" y="3989" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava8d" x="33" y="4021" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava8e" x="33" y="4053" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava8f" x="33" y="4085" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava8g" x="33" y="4117" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava8h" x="33" y="4149" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava9a" x="1" y="3912" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava9b" x="1" y="3946" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava9c" x="1" y="3980" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava9d" x="1" y="4014" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava9e" x="1" y="4048" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava9f" x="1" y="4082" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava9g" x="1" y="4116" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava9h" x="1" y="4150" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava10a" x="33" y="4181" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava10b" x="33" y="4213" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava10c" x="33" y="4245" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava10d" x="102" y="2367" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava10e" x="102" y="2399" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava10f" x="102" y="2431" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava10g" x="102" y="2463" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava10h" x="102" y="2495" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lava11a" x="1" y="4184" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava11b" x="1" y="4218" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava11c" x="1" y="4252" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava11d" x="102" y="2527" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava11e" x="102" y="2561" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava11f" x="102" y="2595" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava11g" x="102" y="2629" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava11h" x="102" y="2663" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lava12a" x="69" y="987" w="32" h="32"/>
+    <sprite n="lava12b" x="103" y="953" w="32" h="32"/>
+    <sprite n="lava12c" x="137" y="919" w="32" h="32"/>
+    <sprite n="lava12d" x="171" y="885" w="32" h="32"/>
+    <sprite n="lava12e" x="205" y="851" w="32" h="32"/>
+    <sprite n="lava12f" x="239" y="817" w="32" h="32"/>
+    <sprite n="lava12g" x="273" y="783" w="32" h="32"/>
+    <sprite n="lava12h" x="307" y="749" w="32" h="32"/>
+    <sprite n="lava13a" x="295" y="3493" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava13b" x="294" y="3574" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava13c" x="294" y="3607" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava13d" x="294" y="3640" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava13e" x="294" y="3673" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava13f" x="294" y="3706" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava13g" x="294" y="3739" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava13h" x="479" y="2770" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lava14a" x="365" y="2608" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava14b" x="198" y="3599" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava14c" x="198" y="3627" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava14d" x="198" y="3655" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava14e" x="198" y="3683" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava14f" x="198" y="3711" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava14g" x="198" y="3739" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava14h" x="198" y="3767" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava15a" x="346" y="2873" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="lava15b" x="375" y="2873" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="lava15c" x="430" y="2897" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="lava15d" x="459" y="2952" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="lava15e" x="459" y="2984" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="lava15f" x="459" y="3016" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="lava15g" x="414" y="3257" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="lava15h" x="414" y="3289" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="lava16a" x="443" y="3258" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava16b" x="475" y="3266" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava16c" x="443" y="3287" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava16d" x="475" y="3295" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava16e" x="443" y="3316" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava16f" x="475" y="3324" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava16g" x="443" y="3345" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lava16h" x="475" y="3353" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lavaNEpatcha" x="285" y="4246" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNEpatchb" x="304" y="4240" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNEpatchc" x="323" y="4240" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNEpatchd" x="304" y="4259" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNEpatche" x="323" y="4259" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNEpatchf" x="285" y="4265" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNEpatchg" x="335" y="4118" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNEpatchh" x="354" y="4118" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNWpatcha" x="373" y="4118" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNWpatchb" x="335" y="4137" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNWpatchc" x="354" y="4137" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNWpatchd" x="373" y="4137" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNWpatche" x="346" y="4156" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNWpatchf" x="365" y="4156" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNWpatchg" x="355" y="4175" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lavaNWpatchh" x="355" y="4194" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lavapit" x="265" y="2372" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="lavaSEpatcha" x="374" y="4175" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSEpatchb" x="374" y="4194" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSEpatchc" x="384" y="4156" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSEpatchd" x="393" y="4175" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSEpatche" x="393" y="4194" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSEpatchf" x="355" y="4213" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSEpatchg" x="374" y="4213" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSEpatchh" x="393" y="4213" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSWpatcha" x="336" y="4216" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSWpatchb" x="342" y="4235" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSWpatchc" x="342" y="4254" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSWpatchd" x="361" y="4232" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSWpatche" x="361" y="4251" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSWpatchf" x="380" y="4232" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSWpatchg" x="380" y="4251" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="lavaSWpatchh" x="399" y="4232" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="LeafyWall1" x="341" y="715" w="32" h="32"/>
+    <sprite n="LeafyWall2" x="375" y="681" w="32" h="32"/>
+    <sprite n="LeafyWall3" x="409" y="647" w="32" h="32"/>
+    <sprite n="LeafyWall4" x="443" y="613" w="32" h="32"/>
+    <sprite n="LeafyWall5" x="1" y="1095" w="32" h="32"/>
+    <sprite n="LeafyWall6" x="35" y="1055" w="32" h="32"/>
+    <sprite n="LeafyWall7" x="69" y="1021" w="32" h="32"/>
+    <sprite n="LeafyWall8" x="103" y="987" w="32" h="32"/>
+    <sprite n="LeafyWall9" x="137" y="953" w="32" h="32"/>
+    <sprite n="LeafyWall10" x="171" y="919" w="32" h="32"/>
+    <sprite n="legendaryland1" x="205" y="885" w="32" h="32"/>
+    <sprite n="legendaryland2" x="239" y="851" w="32" h="32"/>
+    <sprite n="legendaryland3" x="273" y="817" w="32" h="32"/>
+    <sprite n="legendaryland4" x="307" y="783" w="32" h="32"/>
+    <sprite n="lembanarianshrine1" x="477" y="341" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lever1" x="399" y="2703" w="26" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="lever2" x="102" y="2697" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lightfoliage" x="307" y="2108" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lightningaugmenter1" x="477" y="375" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningaugmenter2" x="477" y="409" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningaugmenter3" x="477" y="443" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningaugmenter4" x="477" y="477" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningaugmenter5" x="477" y="511" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningaugmenter6" x="477" y="545" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningaugmenter7" x="477" y="579" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldgenerator" x="490" y="2539" w="15" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldhoriz1" x="434" y="2816" w="32" h="23" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldhoriz2" x="328" y="2610" w="32" h="24" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="lightningfieldhoriz3" x="320" y="2174" w="32" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="lightningfieldhoriz4" x="136" y="2386" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldhoriz5" x="294" y="3829" w="32" h="16" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="lightningfieldhoriz6" x="328" y="3829" w="32" h="21" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lightningfieldhoriz7" x="199" y="3413" w="32" h="27" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lightningfieldhoriz8" x="199" y="3442" w="32" h="27" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="lightningfieldvert1" x="362" y="3358" w="23" h="32" oX="9" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldvert2" x="465" y="2702" w="24" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldvert3" x="134" y="3037" w="29" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldvert4" x="102" y="2731" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldvert5" x="416" y="3072" w="16" h="32" oX="9" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldvert6" x="416" y="3106" w="21" h="32" oX="9" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldvert7" x="200" y="2669" w="27" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="lightningfieldvert8" x="232" y="2871" w="27" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="liquorbarrel" x="232" y="3117" w="31" h="29" oX="1" oY="3" oW="32" oH="32"/>
+    <sprite n="litmarblepedestal" x="341" y="749" w="32" h="32"/>
+    <sprite n="litsepulchre" x="375" y="715" w="32" h="32"/>
+    <sprite n="lock" x="491" y="2730" w="14" h="18" oX="9" oY="7" oW="32" oH="32"/>
+    <sprite n="lootedcorpse" x="199" y="4256" w="19" h="30" oX="8" oY="1" oW="32" oH="32"/>
+    <sprite n="lootedderelict" x="409" y="681" w="32" h="32"/>
+    <sprite n="luminescentmushrooms1" x="233" y="3381" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="luminescentmushrooms2" x="429" y="2841" w="32" h="25" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="luminescentmushrooms3" x="443" y="647" w="32" h="32"/>
+    <sprite n="luminescentmushrooms4" x="1" y="1129" w="32" h="32"/>
+    <sprite n="luminescentmushrooms5" x="414" y="3321" w="27" h="30" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lushplant" x="35" y="1089" w="32" h="32"/>
+    <sprite n="magepotion1" x="348" y="3709" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="magicaugmenter1" x="69" y="1055" w="32" h="32"/>
+    <sprite n="magicaugmenter2" x="103" y="1021" w="32" h="32"/>
+    <sprite n="magicaugmenter3" x="137" y="987" w="32" h="32"/>
+    <sprite n="magicaugmenter4" x="171" y="953" w="32" h="32"/>
+    <sprite n="magicaugmenter5" x="205" y="919" w="32" h="32"/>
+    <sprite n="magicaugmenter6" x="239" y="885" w="32" h="32"/>
+    <sprite n="magicaugmenter7" x="273" y="851" w="32" h="32"/>
+    <sprite n="magicianstrunk" x="298" y="2547" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="magicmouth1" x="260" y="3841" w="32" h="20" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="magicmouth2" x="224" y="3944" w="32" h="22" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="magicmouth3" x="366" y="2813" w="32" h="24" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="magicmouth4" x="359" y="2548" w="32" h="28" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="makeshiftdoor1" x="382" y="3637" w="16" h="29" oX="8" oY="3" oW="32" oH="32"/>
+    <sprite n="makeshiftdooropen" x="424" y="4053" w="22" h="4" oX="5" oY="28" oW="32" oH="32"/>
+    <sprite n="malevianshrine1" x="332" y="2547" w="25" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="manacledprisoner1" x="404" y="2868" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="manacledprisoner2" x="404" y="2902" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="manacledprisoner3" x="405" y="2936" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="marblepedestal" x="455" y="2413" w="19" h="22" oX="7" oY="9" oW="32" oH="32"/>
+    <sprite n="meatlocker" x="307" y="817" w="32" h="32"/>
+    <sprite n="mehrotianshrine1" x="102" y="2765" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="melgrimsteleportingtrunk" x="385" y="3226" w="26" h="29" oX="2" oY="2" oW="32" oH="32"/>
+    <sprite n="memorytree1" x="341" y="783" w="32" h="32"/>
+    <sprite n="memorytree2" x="341" y="2074" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="messageinabottle1" x="337" y="4098" w="6" h="14" oX="13" oY="9" oW="32" oH="32"/>
+    <sprite n="messageinabottle2" x="465" y="3477" w="8" h="12" oX="12" oY="9" oW="32" oH="32"/>
+    <sprite n="messageinabottle3" x="380" y="4068" w="6" h="9" oX="13" oY="13" oW="32" oH="32"/>
+    <sprite n="messageinabottle4" x="433" y="3468" w="8" h="7" oX="12" oY="14" oW="32" oH="32"/>
+    <sprite n="miasma1" x="375" y="749" w="32" h="32"/>
+    <sprite n="miasma2" x="409" y="715" w="32" h="32"/>
+    <sprite n="miasma3" x="443" y="681" w="32" h="32"/>
+    <sprite n="miasma4" x="1" y="1163" w="32" h="32"/>
+    <sprite n="miasma5" x="35" y="1123" w="32" h="32"/>
+    <sprite n="miasma6" x="69" y="1089" w="32" h="32"/>
+    <sprite n="miasma7" x="103" y="1055" w="32" h="32"/>
+    <sprite n="miasma8" x="137" y="1021" w="32" h="32"/>
+    <sprite n="minecartn" x="362" y="3888" w="24" h="28" oX="4" oY="2" oW="32" oH="32"/>
+    <sprite n="minecartnw" x="171" y="987" w="32" h="32"/>
+    <sprite n="minecarts" x="233" y="4016" w="24" h="28" oX="4" oY="2" oW="32" oH="32"/>
+    <sprite n="minecartsw" x="205" y="953" w="32" h="32"/>
+    <sprite n="minecartw" x="477" y="1175" w="28" h="24" oX="2" oY="4" oW="32" oH="32"/>
+    <sprite n="minecartwn" x="239" y="919" w="32" h="32"/>
+    <sprite n="minecartws" x="273" y="885" w="32" h="32"/>
+    <sprite n="mineentrancee" x="307" y="851" w="32" h="32"/>
+    <sprite n="mineentrancen" x="341" y="817" w="32" h="32"/>
+    <sprite n="mineentrances" x="375" y="783" w="32" h="32"/>
+    <sprite n="mineentrancew" x="409" y="749" w="32" h="32"/>
+    <sprite n="minetrackn" x="443" y="715" w="32" h="32"/>
+    <sprite n="minetracknw" x="1" y="1197" w="32" h="32"/>
+    <sprite n="minetracksw" x="35" y="1157" w="32" h="32"/>
+    <sprite n="minetrackw" x="69" y="1123" w="32" h="32"/>
+    <sprite n="minetrackwn" x="103" y="1089" w="32" h="32"/>
+    <sprite n="minetrackws" x="137" y="1055" w="32" h="32"/>
+    <sprite n="mirror1" x="490" y="3176" w="13" h="32" oX="9" oY="0" oW="32" oH="32"/>
+    <sprite n="mist1" x="171" y="1021" w="32" h="32"/>
+    <sprite n="mist2" x="205" y="987" w="32" h="32"/>
+    <sprite n="mist3" x="239" y="953" w="32" h="32"/>
+    <sprite n="mist4" x="273" y="919" w="32" h="32"/>
+    <sprite n="mist5" x="307" y="885" w="32" h="32"/>
+    <sprite n="mist6" x="341" y="851" w="32" h="32"/>
+    <sprite n="mist7" x="375" y="817" w="32" h="32"/>
+    <sprite n="mist8" x="409" y="783" w="32" h="32"/>
+    <sprite n="mosaic" x="443" y="749" w="32" h="32"/>
+    <sprite n="mud" x="1" y="1231" w="32" h="32"/>
+    <sprite n="mud1" x="204" y="2211" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="mud2" x="233" y="3410" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="mud3" x="133" y="4255" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="mud4" x="165" y="3701" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="mud5" x="167" y="3217" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="mud6" x="165" y="3733" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="mud7" x="35" y="1191" w="32" h="32"/>
+    <sprite n="mud8" x="136" y="2418" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="mud9" x="102" y="2799" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="mud10" x="136" y="2450" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="mud11" x="102" y="2833" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="mud12" x="69" y="1157" w="32" h="32"/>
+    <sprite n="mud13" x="479" y="2803" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="mud14" x="295" y="3368" w="31" h="26" oX="1" oY="3" oW="32" oH="32"/>
+    <sprite n="mud15" x="462" y="2669" w="27" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="mud16" x="443" y="3374" w="30" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="mudNEpatch" x="422" y="4059" w="18" h="18" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="mudNWpatch" x="399" y="4251" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="mudSEpatch" x="392" y="4117" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="mudSWpatch" x="392" y="4136" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="murkycave" x="103" y="1123" w="32" h="32"/>
+    <sprite n="mushroompatch" x="137" y="1089" w="32" h="32"/>
+    <sprite n="mutantlab" x="171" y="1055" w="32" h="32"/>
+    <sprite n="mysteriouscupboard" x="432" y="2622" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="mysterybox" x="102" y="2867" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="nailithianshrine1" x="205" y="1021" w="32" h="32"/>
+    <sprite n="narrowanimalcarcassfilledpit" x="415" y="3412" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowbottomlesspit" x="387" y="3416" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowcorpsefilledpit" x="415" y="3440" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowdeepopenpit" x="232" y="3788" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowfrigidwaterpit" x="322" y="3801" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowhole" x="326" y="3948" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowlavapit" x="326" y="3976" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrownetpit" x="326" y="4004" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenacidpit1" x="382" y="3668" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenacidpit2" x="390" y="3941" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenacidpit3" x="390" y="3969" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenacidpit4" x="402" y="3770" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenacidpit5" x="390" y="3997" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenacidpit6" x="390" y="4025" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenacidpit7" x="424" y="3591" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenacidpit8" x="452" y="3591" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenicepit" x="452" y="3646" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenpit1" x="433" y="3716" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenpoisonspikedpit" x="414" y="3885" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopensnakepit1" x="416" y="3913" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopensnakepit2" x="418" y="3941" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopensnakepit3" x="418" y="3969" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopensnakepit4" x="418" y="3997" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopensnakepit5" x="418" y="4025" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopensnakepit6" x="430" y="3770" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopensnakepit7" x="434" y="3798" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopensnakepit8" x="435" y="3826" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowopenspikedpit" x="461" y="3742" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowshallowopenpit" x="458" y="3770" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="narrowwaterpit" x="444" y="3911" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="netpit" x="233" y="2405" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="noweaponinstone" x="294" y="3847" w="32" h="21" oX="0" oY="11" oW="32" oH="32"/>
+    <sprite n="objecticon" x="239" y="987" w="32" h="32"/>
+    <sprite n="oblarishrine1" x="167" y="3057" w="29" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="ominousstandingstones" x="273" y="953" w="32" h="32"/>
+    <sprite n="onyxaltar" x="224" y="3968" w="32" h="22" oX="0" oY="8" oW="32" oH="32"/>
+    <sprite n="openacidpit1" x="265" y="2404" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openacidpit2" x="233" y="2437" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openacidpit3" x="265" y="2436" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openacidpit4" x="233" y="2469" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openacidpit5" x="265" y="2468" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openacidpit6" x="391" y="2373" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openacidpit7" x="391" y="2405" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openacidpit8" x="444" y="2280" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openapothecarycabinet" x="167" y="3091" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="openark" x="365" y="2578" w="32" h="28" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="openarmamentlocker" x="266" y="3273" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="openbarreddoor" x="307" y="919" w="32" h="32"/>
+    <sprite n="openbookcabinet" x="266" y="3307" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="opencage" x="341" y="885" w="32" h="32"/>
+    <sprite n="openchest1" x="446" y="3939" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="opencrate" x="375" y="851" w="32" h="32"/>
+    <sprite n="openicepit" x="232" y="2966" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openjewellerycase" x="375" y="2040" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="openmagicianstrunk" x="136" y="2482" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="openmeatlocker" x="409" y="817" w="32" h="32"/>
+    <sprite n="openmysteriouscupboard" x="416" y="3140" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="openpit1" x="232" y="3148" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openpoisonspikedpit" x="232" y="3180" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="opensecretcompartment" x="493" y="2937" w="12" h="7" oX="10" oY="8" oW="32" oH="32"/>
+    <sprite n="opensnakepit1" x="232" y="3212" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="opensnakepit2" x="264" y="2966" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="opensnakepit3" x="265" y="2998" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="opensnakepit4" x="265" y="3030" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="opensnakepit5" x="265" y="3062" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="opensnakepit6" x="265" y="3094" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="opensnakepit7" x="423" y="2373" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="opensnakepit8" x="423" y="2405" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openspikedpit" x="325" y="2966" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="openstonecoffer" x="374" y="2197" w="32" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="openstonesarcophagus" x="328" y="3852" w="32" h="20" oX="0" oY="9" oW="32" oH="32"/>
+    <sprite n="opentrophycase" x="477" y="613" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="openvault" x="102" y="2901" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="openwickerbasket" x="477" y="1226" w="28" h="23" oX="4" oY="9" oW="32" oH="32"/>
+    <sprite n="openwizardchest" x="447" y="3232" w="32" h="24" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="pagthionicshrine1" x="439" y="3096" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="pantosianshrine1" x="440" y="3130" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="papers" x="443" y="3402" w="30" h="25" oX="1" oY="3" oW="32" oH="32"/>
+    <sprite n="paralyzinggas1" x="443" y="783" w="32" h="32"/>
+    <sprite n="paralyzinggas2" x="1" y="1265" w="32" h="32"/>
+    <sprite n="paralyzinggas3" x="35" y="1225" w="32" h="32"/>
+    <sprite n="paralyzinggas4" x="69" y="1191" w="32" h="32"/>
+    <sprite n="paralyzinggas5" x="103" y="1157" w="32" h="32"/>
+    <sprite n="paralyzinggas6" x="137" y="1123" w="32" h="32"/>
+    <sprite n="paralyzinggas7" x="171" y="1089" w="32" h="32"/>
+    <sprite n="paralyzinggas8" x="205" y="1055" w="32" h="32"/>
+    <sprite n="PebblyFloor1" x="239" y="1021" w="32" h="32"/>
+    <sprite n="PebblyFloor2" x="273" y="987" w="32" h="32"/>
+    <sprite n="PebblyFloor3" x="307" y="953" w="32" h="32"/>
+    <sprite n="PebblyFloor4" x="341" y="919" w="32" h="32"/>
+    <sprite n="PebblyFloor5" x="375" y="885" w="32" h="32"/>
+    <sprite n="PebblyFloor6" x="409" y="851" w="32" h="32"/>
+    <sprite n="PebblyFloor7" x="443" y="817" w="32" h="32"/>
+    <sprite n="PebblyFloor8" x="1" y="1299" w="32" h="32"/>
+    <sprite n="PebblyFloor9" x="35" y="1259" w="32" h="32"/>
+    <sprite n="PebblyFloor10" x="69" y="1225" w="32" h="32"/>
+    <sprite n="PebblyFloorOpenDoor" x="401" y="3716" w="16" h="29" oX="8" oY="3" oW="32" oH="32"/>
+    <sprite n="PebblyFloorOpenHeavy" x="406" y="3004" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="PebblyFloorOpenSecret" x="295" y="3396" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="pendulum1" x="134" y="2535" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="pendulum2" x="409" y="2006" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="pendulum3" x="103" y="1191" w="32" h="32"/>
+    <sprite n="pendulum4" x="443" y="1972" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="pendulum5" x="137" y="1157" w="32" h="32"/>
+    <sprite n="pendulum6" x="1" y="2453" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="pendulum7" x="134" y="2567" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="pentagram1" x="446" y="3967" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="phlaunisianshrine1" x="441" y="3164" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="physicalaugmenter1" x="266" y="3341" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="physicalaugmenter2" x="267" y="3375" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="physicalaugmenter3" x="388" y="3105" w="26" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="physicalaugmenter4" x="267" y="3409" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="physicalaugmenter5" x="388" y="3138" w="26" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="physicalaugmenter6" x="387" y="3357" w="26" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="physicalaugmenter7" x="479" y="2836" w="26" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="physicalaugmenter8" x="431" y="2929" w="26" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="pileofgold" x="233" y="3439" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="pittrap1" x="171" y="1123" w="32" h="32"/>
+    <sprite n="PlasterWall1" x="205" y="1089" w="32" h="32"/>
+    <sprite n="PlasterWall2" x="239" y="1055" w="32" h="32"/>
+    <sprite n="PlasterWall3" x="273" y="1021" w="32" h="32"/>
+    <sprite n="PlasterWall4" x="307" y="987" w="32" h="32"/>
+    <sprite n="PlasterWall5" x="341" y="953" w="32" h="32"/>
+    <sprite n="PlasterWall6" x="375" y="919" w="32" h="32"/>
+    <sprite n="PlasterWall7" x="409" y="885" w="32" h="32"/>
+    <sprite n="PlasterWall8" x="443" y="851" w="32" h="32"/>
+    <sprite n="PlasterWall9" x="1" y="1333" w="32" h="32"/>
+    <sprite n="PlasterWall10" x="35" y="1293" w="32" h="32"/>
+    <sprite n="platinumicon" x="134" y="2599" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="platinumvein" x="69" y="1259" w="32" h="32"/>
+    <sprite n="plunderedunderwatertower" x="476" y="2448" w="29" h="27" oX="3" oY="5" oW="32" oH="32"/>
+    <sprite n="plunderedunderwatertreasure" x="446" y="3995" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="poisonaugmenter1" x="477" y="647" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="poisonaugmenter2" x="477" y="882" w="28" h="29" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="poisonaugmenter3" x="477" y="681" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="poisonaugmenter4" x="477" y="715" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="poisonaugmenter5" x="477" y="913" w="28" h="29" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="poisonaugmenter6" x="477" y="944" w="28" h="29" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="poisongas1a" x="103" y="1225" w="32" h="32"/>
+    <sprite n="poisongas1b" x="137" y="1191" w="32" h="32"/>
+    <sprite n="poisongas1c" x="171" y="1157" w="32" h="32"/>
+    <sprite n="poisongas1d" x="205" y="1123" w="32" h="32"/>
+    <sprite n="poisongas1e" x="239" y="1089" w="32" h="32"/>
+    <sprite n="poisongas1f" x="273" y="1055" w="32" h="32"/>
+    <sprite n="poisongas1g" x="35" y="2413" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas1h" x="134" y="2631" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas2a" x="307" y="1021" w="32" h="32"/>
+    <sprite n="poisongas2b" x="341" y="987" w="32" h="32"/>
+    <sprite n="poisongas2c" x="375" y="953" w="32" h="32"/>
+    <sprite n="poisongas2d" x="409" y="919" w="32" h="32"/>
+    <sprite n="poisongas2e" x="443" y="885" w="32" h="32"/>
+    <sprite n="poisongas2f" x="1" y="1367" w="32" h="32"/>
+    <sprite n="poisongas2g" x="137" y="2311" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas2h" x="170" y="2409" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="poisongas3a" x="35" y="1327" w="32" h="32"/>
+    <sprite n="poisongas3b" x="69" y="1293" w="32" h="32"/>
+    <sprite n="poisongas3c" x="103" y="1259" w="32" h="32"/>
+    <sprite n="poisongas3d" x="137" y="1225" w="32" h="32"/>
+    <sprite n="poisongas3e" x="171" y="1191" w="32" h="32"/>
+    <sprite n="poisongas3f" x="205" y="1157" w="32" h="32"/>
+    <sprite n="poisongas3g" x="239" y="1123" w="32" h="32"/>
+    <sprite n="poisongas3h" x="273" y="1089" w="32" h="32"/>
+    <sprite n="poisongas4a" x="307" y="1055" w="32" h="32"/>
+    <sprite n="poisongas4b" x="341" y="1021" w="32" h="32"/>
+    <sprite n="poisongas4c" x="375" y="987" w="32" h="32"/>
+    <sprite n="poisongas4d" x="409" y="953" w="32" h="32"/>
+    <sprite n="poisongas4e" x="443" y="919" w="32" h="32"/>
+    <sprite n="poisongas4f" x="443" y="953" w="32" h="32"/>
+    <sprite n="poisongas4g" x="1" y="1401" w="32" h="32"/>
+    <sprite n="poisongas4h" x="35" y="1361" w="32" h="32"/>
+    <sprite n="poisongas5a" x="69" y="1327" w="32" h="32"/>
+    <sprite n="poisongas5b" x="103" y="1293" w="32" h="32"/>
+    <sprite n="poisongas5c" x="137" y="1259" w="32" h="32"/>
+    <sprite n="poisongas5d" x="171" y="1225" w="32" h="32"/>
+    <sprite n="poisongas5e" x="205" y="1191" w="32" h="32"/>
+    <sprite n="poisongas5f" x="239" y="1157" w="32" h="32"/>
+    <sprite n="poisongas5g" x="273" y="1123" w="32" h="32"/>
+    <sprite n="poisongas5h" x="307" y="1089" w="32" h="32"/>
+    <sprite n="poisongas6a" x="341" y="1055" w="32" h="32"/>
+    <sprite n="poisongas6b" x="375" y="1021" w="32" h="32"/>
+    <sprite n="poisongas6c" x="409" y="987" w="32" h="32"/>
+    <sprite n="poisongas6d" x="443" y="987" w="32" h="32"/>
+    <sprite n="poisongas6e" x="1" y="1435" w="32" h="32"/>
+    <sprite n="poisongas6f" x="35" y="1395" w="32" h="32"/>
+    <sprite n="poisongas6g" x="69" y="1361" w="32" h="32"/>
+    <sprite n="poisongas6h" x="103" y="1327" w="32" h="32"/>
+    <sprite n="poisongas7a" x="137" y="1293" w="32" h="32"/>
+    <sprite n="poisongas7b" x="171" y="1259" w="32" h="32"/>
+    <sprite n="poisongas7c" x="205" y="1225" w="32" h="32"/>
+    <sprite n="poisongas7d" x="239" y="1191" w="32" h="32"/>
+    <sprite n="poisongas7e" x="273" y="1157" w="32" h="32"/>
+    <sprite n="poisongas7f" x="307" y="1123" w="32" h="32"/>
+    <sprite n="poisongas7g" x="341" y="1089" w="32" h="32"/>
+    <sprite n="poisongas7h" x="375" y="1055" w="32" h="32"/>
+    <sprite n="poisongas8a" x="409" y="1021" w="32" h="32"/>
+    <sprite n="poisongas8b" x="443" y="1021" w="32" h="32"/>
+    <sprite n="poisongas8c" x="1" y="1469" w="32" h="32"/>
+    <sprite n="poisongas8d" x="35" y="1429" w="32" h="32"/>
+    <sprite n="poisongas8e" x="69" y="1395" w="32" h="32"/>
+    <sprite n="poisongas8f" x="103" y="1361" w="32" h="32"/>
+    <sprite n="poisongas8g" x="307" y="2141" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="poisongas8h" x="137" y="1327" w="32" h="32"/>
+    <sprite n="poisongas9a" x="171" y="1293" w="32" h="32"/>
+    <sprite n="poisongas9b" x="205" y="1259" w="32" h="32"/>
+    <sprite n="poisongas9c" x="239" y="1225" w="32" h="32"/>
+    <sprite n="poisongas9d" x="273" y="1191" w="32" h="32"/>
+    <sprite n="poisongas9e" x="307" y="1157" w="32" h="32"/>
+    <sprite n="poisongas9f" x="341" y="1123" w="32" h="32"/>
+    <sprite n="poisongas9g" x="171" y="2279" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas9h" x="375" y="1089" w="32" h="32"/>
+    <sprite n="poisongas10a" x="409" y="1055" w="32" h="32"/>
+    <sprite n="poisongas10b" x="443" y="1055" w="32" h="32"/>
+    <sprite n="poisongas10c" x="1" y="1503" w="32" h="32"/>
+    <sprite n="poisongas10d" x="35" y="1463" w="32" h="32"/>
+    <sprite n="poisongas10e" x="69" y="1429" w="32" h="32"/>
+    <sprite n="poisongas10f" x="103" y="1395" w="32" h="32"/>
+    <sprite n="poisongas10g" x="409" y="2039" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas10h" x="137" y="1361" w="32" h="32"/>
+    <sprite n="poisongas11a" x="171" y="1327" w="32" h="32"/>
+    <sprite n="poisongas11b" x="205" y="1293" w="32" h="32"/>
+    <sprite n="poisongas11c" x="239" y="1259" w="32" h="32"/>
+    <sprite n="poisongas11d" x="273" y="1225" w="32" h="32"/>
+    <sprite n="poisongas11e" x="307" y="1191" w="32" h="32"/>
+    <sprite n="poisongas11f" x="341" y="1157" w="32" h="32"/>
+    <sprite n="poisongas11g" x="341" y="2108" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas11h" x="375" y="1123" w="32" h="32"/>
+    <sprite n="poisongas12a" x="409" y="1089" w="32" h="32"/>
+    <sprite n="poisongas12b" x="443" y="2005" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas12c" x="170" y="2441" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="poisongas12d" x="443" y="1089" w="32" h="32"/>
+    <sprite n="poisongas12e" x="1" y="1537" w="32" h="32"/>
+    <sprite n="poisongas12f" x="35" y="1497" w="32" h="32"/>
+    <sprite n="poisongas12g" x="69" y="1463" w="32" h="32"/>
+    <sprite n="poisongas12h" x="1" y="2486" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas13a" x="443" y="2038" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas13b" x="103" y="1429" w="32" h="32"/>
+    <sprite n="poisongas13c" x="137" y="1395" w="32" h="32"/>
+    <sprite n="poisongas13d" x="170" y="2473" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas13e" x="1" y="2519" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas13f" x="168" y="2536" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas13g" x="69" y="2380" w="31" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas13h" x="134" y="2665" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas14a" x="35" y="2447" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas14b" x="171" y="1361" w="32" h="32"/>
+    <sprite n="poisongas14c" x="205" y="1327" w="32" h="32"/>
+    <sprite n="poisongas14d" x="134" y="2699" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas14e" x="1" y="2552" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas14f" x="134" y="2733" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas14g" x="168" y="2568" w="31" h="31" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas14h" x="166" y="2633" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="poisongas15a" x="68" y="2413" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="poisongas15b" x="239" y="1293" w="32" h="32"/>
+    <sprite n="poisongas15c" x="273" y="1259" w="32" h="32"/>
+    <sprite n="poisongas15d" x="166" y="2665" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="poisongas15e" x="68" y="2446" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="poisongas15f" x="166" y="2697" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="poisongas15g" x="166" y="2729" w="31" h="31" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="poisongas15h" x="134" y="2767" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas16a" x="35" y="2481" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas16b" x="307" y="1225" w="32" h="32"/>
+    <sprite n="poisongas16c" x="341" y="1191" w="32" h="32"/>
+    <sprite n="poisongas16d" x="134" y="2801" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas16e" x="1" y="2586" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas16f" x="134" y="2835" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongas16g" x="166" y="2762" w="31" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="poisongas16h" x="67" y="2984" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="poisongasNEpatch" x="488" y="3590" w="5" h="5" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNEpatchb" x="493" y="2946" w="6" h="4" oX="26" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNEpatchc" x="319" y="4026" w="5" h="4" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNEpatchd" x="261" y="3486" w="4" h="4" oX="28" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNEpatche" x="409" y="4073" w="5" h="4" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNEpatchf" x="383" y="4099" w="5" h="5" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNEpatchg" x="374" y="3709" w="6" h="5" oX="26" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNEpatchh" x="383" y="4106" w="5" h="5" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNWpatch" x="289" y="4240" w="5" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNWpatchb" x="296" y="4240" w="5" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNWpatchc" x="286" y="3952" w="4" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNWpatchd" x="494" y="4066" w="5" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNWpatche" x="390" y="4111" w="5" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNWpatchf" x="339" y="4065" w="5" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNWpatchg" x="366" y="2806" w="6" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasNWpatchh" x="339" y="4072" w="5" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="poisongasSEpatch" x="397" y="4111" w="5" h="4" oX="27" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSEpatchb" x="260" y="4070" w="4" h="4" oX="28" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSEpatchc" x="266" y="4098" w="4" h="4" oX="28" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSEpatchd" x="304" y="4278" w="5" h="4" oX="27" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSEpatche" x="501" y="2946" w="4" h="4" oX="28" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSEpatchf" x="495" y="4072" w="5" h="4" oX="27" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSEpatchg" x="480" y="3590" w="6" h="5" oX="26" oY="27" oW="32" oH="32"/>
+    <sprite n="poisongasSEpatchh" x="456" y="4260" w="5" h="4" oX="27" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSWpatch" x="493" y="4223" w="5" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSWpatchb" x="469" y="3885" w="5" h="3" oX="0" oY="29" oW="32" oH="32"/>
+    <sprite n="poisongasSWpatchc" x="416" y="4073" w="4" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSWpatchd" x="500" y="4223" w="5" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="poisongasSWpatche" x="442" y="4059" w="4" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="poisongasSWpatchf" x="500" y="4044" w="5" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="poisongasSWpatchg" x="465" y="3491" w="6" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="poisongasSWpatchh" x="311" y="4278" w="5" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="poisonpotion1" x="373" y="3538" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="polybolos" x="375" y="1157" w="32" h="32"/>
+    <sprite n="pool1" x="167" y="3352" w="29" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="pool2" x="166" y="4028" w="29" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="pool3" x="166" y="4061" w="29" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="pool4" x="166" y="4094" w="29" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="pool5" x="476" y="2260" w="29" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="pool6" x="265" y="2210" w="29" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="pool7" x="323" y="2276" w="29" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="pool8" x="476" y="2293" w="29" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="portcullisclosed" x="409" y="1123" w="32" h="32"/>
+    <sprite n="portcullisopen" x="1" y="1571" w="32" h="32"/>
+    <sprite n="prismaticwater1" x="372" y="4011" w="16" h="22" oX="4" oY="4" oW="32" oH="32"/>
+    <sprite n="prismaticwater2" x="423" y="3638" w="13" h="28" oX="12" oY="1" oW="32" oH="32"/>
+    <sprite n="prismaticwater3" x="425" y="3747" w="20" h="21" oX="3" oY="9" oW="32" oH="32"/>
+    <sprite n="prismaticwater4" x="488" y="2983" w="17" h="23" oX="6" oY="3" oW="32" oH="32"/>
+    <sprite n="prismaticwater5" x="491" y="2661" w="14" h="23" oX="9" oY="3" oW="32" oH="32"/>
+    <sprite n="prismaticwater6" x="491" y="2633" w="14" h="26" oX="9" oY="3" oW="32" oH="32"/>
+    <sprite n="prismaticwater7" x="488" y="3079" w="17" h="19" oX="3" oY="4" oW="32" oH="32"/>
+    <sprite n="prismaticwater8" x="333" y="4080" w="17" h="16" oX="9" oY="12" oW="32" oH="32"/>
+    <sprite n="QS" x="263" y="3887" w="29" h="15" oX="1" oY="9" oW="32" oH="32"/>
+    <sprite n="raft" x="230" y="4244" w="19" h="19" oX="7" oY="6" oW="32" oH="32"/>
+    <sprite n="rallaishanshrine1" x="354" y="3919" w="16" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="rapids1a" x="351" y="3510" w="19" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="rapids1b" x="441" y="3198" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="rapids1c" x="445" y="2737" w="18" h="30" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="rapids1d" x="197" y="4086" w="19" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="rapids1e" x="401" y="3604" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="rapids1f" x="472" y="3530" w="21" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="rapids1g" x="488" y="2952" w="17" h="29" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="rapids1h" x="197" y="4052" w="20" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="rapids2a" x="294" y="3870" w="32" h="19" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="rapids2b" x="328" y="3874" w="32" h="21" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="rapids2c" x="443" y="3429" w="30" h="18" oX="2" oY="8" oW="32" oH="32"/>
+    <sprite n="rapids2d" x="294" y="3891" w="32" h="19" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="rapids2e" x="292" y="3912" w="32" h="21" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="rapids2f" x="292" y="3935" w="32" h="21" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="rapids2g" x="424" y="3619" w="29" h="17" oX="3" oY="8" oW="32" oH="32"/>
+    <sprite n="rapids2h" x="328" y="3897" w="32" h="20" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="ratswarm1" x="199" y="2731" w="32" h="29" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="ratswarm2" x="476" y="2389" w="29" h="28" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="ratswarm3" x="325" y="2998" w="30" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="ratswarm4" x="294" y="3281" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="ratswarm5" x="35" y="2515" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="ratswarm6" x="35" y="1531" w="32" h="32"/>
+    <sprite n="ratswarm7" x="67" y="3016" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="ratswarm8" x="199" y="2762" w="32" h="29" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="rechargestation1" x="295" y="3429" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="RedBrickWall1" x="69" y="1497" w="32" h="32"/>
+    <sprite n="RedBrickWall2" x="103" y="1463" w="32" h="32"/>
+    <sprite n="RedBrickWall3" x="137" y="1429" w="32" h="32"/>
+    <sprite n="RedBrickWall4" x="171" y="1395" w="32" h="32"/>
+    <sprite n="RedBrickWall5" x="205" y="1361" w="32" h="32"/>
+    <sprite n="RedBrickWall6" x="239" y="1327" w="32" h="32"/>
+    <sprite n="RedBrickWall7" x="273" y="1293" w="32" h="32"/>
+    <sprite n="RedBrickWall8" x="307" y="1259" w="32" h="32"/>
+    <sprite n="RedBrickWall9" x="341" y="1225" w="32" h="32"/>
+    <sprite n="RedBrickWall10" x="375" y="1191" w="32" h="32"/>
+    <sprite n="redquestionmark" x="491" y="2686" w="14" h="21" oX="10" oY="7" oW="32" oH="32"/>
+    <sprite n="restorationpotion1" x="374" y="3571" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="RockFloor1" x="409" y="1157" w="32" h="32"/>
+    <sprite n="RockFloor2" x="443" y="1123" w="32" h="32"/>
+    <sprite n="RockFloor3" x="1" y="1605" w="32" h="32"/>
+    <sprite n="RockFloor4" x="35" y="1565" w="32" h="32"/>
+    <sprite n="RockFloor5" x="69" y="1531" w="32" h="32"/>
+    <sprite n="RockFloor6" x="103" y="1497" w="32" h="32"/>
+    <sprite n="RockFloor7" x="137" y="1463" w="32" h="32"/>
+    <sprite n="RockFloor8" x="171" y="1429" w="32" h="32"/>
+    <sprite n="RockFloor9" x="205" y="1395" w="32" h="32"/>
+    <sprite n="RockFloor10" x="239" y="1361" w="32" h="32"/>
+    <sprite n="RockFloorOpenDoor" x="384" y="3798" w="16" h="29" oX="8" oY="3" oW="32" oH="32"/>
+    <sprite n="RockFloorOpenHeavy" x="416" y="3174" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="RockFloorOpenSecret" x="232" y="3486" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="RockWall1" x="273" y="1327" w="32" h="32"/>
+    <sprite n="RockWall2" x="307" y="1293" w="32" h="32"/>
+    <sprite n="RockWall3" x="341" y="1259" w="32" h="32"/>
+    <sprite n="RockWall4" x="375" y="1225" w="32" h="32"/>
+    <sprite n="RockWall5" x="409" y="1191" w="32" h="32"/>
+    <sprite n="RockWall6" x="443" y="1157" w="32" h="32"/>
+    <sprite n="RockWall7" x="443" y="1191" w="32" h="32"/>
+    <sprite n="RockWall8" x="1" y="1639" w="32" h="32"/>
+    <sprite n="RockWall9" x="35" y="1599" w="32" h="32"/>
+    <sprite n="RockWall10" x="69" y="1565" w="32" h="32"/>
+    <sprite n="ropebridgehoriz" x="260" y="3789" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="ropebridgevert" x="405" y="2970" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="ropeladder" x="220" y="4018" w="11" h="32" oX="10" oY="0" oW="32" oH="32"/>
+    <sprite n="RoughBlockWall1" x="103" y="1531" w="32" h="32"/>
+    <sprite n="RoughBlockWall2" x="137" y="1497" w="32" h="32"/>
+    <sprite n="RoughBlockWall3" x="171" y="1463" w="32" h="32"/>
+    <sprite n="RoughBlockWall4" x="205" y="1429" w="32" h="32"/>
+    <sprite n="RoughBlockWall5" x="239" y="1395" w="32" h="32"/>
+    <sprite n="RoughBlockWall6" x="273" y="1361" w="32" h="32"/>
+    <sprite n="RoughBlockWall7" x="307" y="1327" w="32" h="32"/>
+    <sprite n="RoughBlockWall8" x="341" y="1293" w="32" h="32"/>
+    <sprite n="RoughBlockWall9" x="375" y="1259" w="32" h="32"/>
+    <sprite n="RoughBlockWall10" x="409" y="1225" w="32" h="32"/>
+    <sprite n="roughedgee1" x="374" y="3641" w="6" h="32" oX="26" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgee2" x="313" y="3981" w="5" h="32" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgee3" x="374" y="3675" w="6" h="32" oX="26" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgee4" x="218" y="4086" w="5" h="32" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgee5" x="218" y="4120" w="5" h="32" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgee6" x="217" y="4222" w="5" h="32" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgee7" x="499" y="3710" w="6" h="32" oX="26" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgee8" x="225" y="4083" w="5" h="32" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgee9" x="320" y="3958" w="4" h="32" oX="28" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgee10" x="320" y="3992" w="4" h="32" oX="28" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen1" x="469" y="3877" w="32" h="6" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen2" x="390" y="4053" w="32" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen3" x="320" y="4050" w="32" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen4" x="354" y="4055" w="32" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen5" x="354" y="4062" w="32" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen6" x="388" y="4059" w="32" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen7" x="286" y="4057" w="32" h="6" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen8" x="388" y="4066" w="32" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen9" x="435" y="3854" w="32" h="7" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgen10" x="461" y="4072" w="32" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedges1" x="461" y="4078" w="32" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="roughedges2" x="461" y="4084" w="32" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="roughedges3" x="294" y="4065" w="32" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="roughedges4" x="346" y="4068" w="32" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="roughedges5" x="294" y="4072" w="32" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="roughedges6" x="320" y="4057" w="32" h="6" oX="0" oY="26" oW="32" oH="32"/>
+    <sprite n="roughedges7" x="346" y="4074" w="32" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="roughedges8" x="297" y="4118" w="32" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="roughedges9" x="300" y="4145" w="32" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="roughedges10" x="300" y="4152" w="32" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="roughedgew1" x="225" y="4117" w="5" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgew2" x="217" y="4154" w="6" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgew3" x="501" y="3676" w="4" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgew4" x="232" y="4083" w="4" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgew5" x="294" y="4125" w="4" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgew6" x="217" y="4188" w="6" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgew7" x="225" y="4151" w="5" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgew8" x="292" y="4187" w="4" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgew9" x="225" y="4185" w="5" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="roughedgew10" x="224" y="4222" w="4" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="RoughWoodFloor1" x="443" y="1225" w="32" h="32"/>
+    <sprite n="RoughWoodFloor2" x="1" y="1673" w="32" h="32"/>
+    <sprite n="RoughWoodFloor3" x="35" y="1633" w="32" h="32"/>
+    <sprite n="RoughWoodFloor4" x="69" y="1599" w="32" h="32"/>
+    <sprite n="RoughWoodFloor5" x="103" y="1565" w="32" h="32"/>
+    <sprite n="RoughWoodFloor6" x="137" y="1531" w="32" h="32"/>
+    <sprite n="RoughWoodFloor7" x="171" y="1497" w="32" h="32"/>
+    <sprite n="RoughWoodFloor8" x="205" y="1463" w="32" h="32"/>
+    <sprite n="RoughWoodFloor9" x="239" y="1429" w="32" h="32"/>
+    <sprite n="RoughWoodFloor10" x="273" y="1395" w="32" h="32"/>
+    <sprite n="RoughWoodFloorOpenDoor" x="402" y="3798" w="16" h="29" oX="8" oY="3" oW="32" oH="32"/>
+    <sprite n="RoughWoodFloorOpenHeavy" x="434" y="3028" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="RoughWoodFloorOpenSecret" x="232" y="3519" w="27" h="31" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="rowboat" x="307" y="1361" w="32" h="32"/>
+    <sprite n="rubble1" x="341" y="1327" w="32" h="32"/>
+    <sprite n="rubble2" x="375" y="1293" w="32" h="32"/>
+    <sprite n="rubble3" x="409" y="1259" w="32" h="32"/>
+    <sprite n="rubble4" x="1" y="1707" w="32" h="32"/>
+    <sprite n="rubble5" x="35" y="1667" w="32" h="32"/>
+    <sprite n="rusteddoor1" x="232" y="3552" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="rusteddoorajar" x="496" y="2869" w="9" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="sacrificialblock" x="294" y="3310" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="sacrificialpit" x="69" y="1633" w="32" h="32"/>
+    <sprite n="sacrificialstone1" x="103" y="1599" w="32" h="32"/>
+    <sprite n="sacrificialstone2" x="137" y="1565" w="32" h="32"/>
+    <sprite n="sacrificialstone3" x="171" y="1531" w="32" h="32"/>
+    <sprite n="sacrificialstone4" x="205" y="1497" w="32" h="32"/>
+    <sprite n="sacrificialstoneempty" x="239" y="1463" w="32" h="32"/>
+    <sprite n="sampledmushroompatch" x="273" y="1429" w="32" h="32"/>
+    <sprite n="sandeast" x="197" y="4154" w="18" h="32" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="sandfull" x="307" y="1395" w="32" h="32"/>
+    <sprite n="sandisolated" x="341" y="1361" w="32" h="32"/>
+    <sprite n="sandnorth" x="382" y="3696" w="32" h="18" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="sandscouredmonolith" x="375" y="1327" w="32" h="32"/>
+    <sprite n="sandsouth" x="438" y="3571" w="32" h="18" oX="0" oY="14" oW="32" oH="32"/>
+    <sprite n="sandwest" x="409" y="1293" w="32" h="32"/>
+    <sprite n="sealeddarkestdepths" x="486" y="3770" w="19" h="27" oX="7" oY="1" oW="32" oH="32"/>
+    <sprite n="sealedmurkycave" x="443" y="1259" w="32" h="32"/>
+    <sprite n="searchedjunkpile" x="443" y="1293" w="32" h="32"/>
+    <sprite n="secretcompartment" x="428" y="4079" w="12" h="7" oX="10" oY="8" oW="32" oH="32"/>
+    <sprite n="secretcompartmentglow" x="232" y="4205" w="24" h="12" oX="3" oY="7" oW="32" oH="32"/>
+    <sprite n="secretdoor1" x="323" y="3445" w="27" h="30" oX="2" oY="2" oW="32" oH="32"/>
+    <sprite n="secretdoorglow" x="1" y="1741" w="32" h="32"/>
+    <sprite n="sekolanshrine1" x="1" y="2620" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="sepulchre" x="436" y="3696" w="32" h="18" oX="0" oY="14" oW="32" oH="32"/>
+    <sprite n="sewerentrance1" x="443" y="3449" w="30" h="26" oX="1" oY="3" oW="32" oH="32"/>
+    <sprite n="sewerentrance2" x="365" y="3444" w="31" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="sewerentrance3" x="261" y="3492" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="sewerentrance4" x="261" y="3520" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="shackles" x="35" y="1701" w="32" h="32"/>
+    <sprite n="shadowyalcove" x="134" y="2869" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="shallowopenpit" x="325" y="3030" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="shamecage" x="69" y="1667" w="32" h="32"/>
+    <sprite n="shatteredcrystalball" x="442" y="3890" w="32" h="19" oX="0" oY="13" oW="32" oH="32"/>
+    <sprite n="shatteredmirror1" x="232" y="3586" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="shatteredurns" x="238" y="4104" w="32" h="19" oX="0" oY="13" oW="32" oH="32"/>
+    <sprite n="shoxianshrine1" x="232" y="3620" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="silvericon" x="470" y="3696" w="27" h="22" oX="3" oY="8" oW="32" oH="32"/>
+    <sprite n="silvervein" x="260" y="4125" w="32" h="19" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="silverweb1" x="103" y="1633" w="32" h="32"/>
+    <sprite n="silverweb2" x="137" y="1599" w="32" h="32"/>
+    <sprite n="silverweb3" x="171" y="1565" w="32" h="32"/>
+    <sprite n="sleepgas1" x="205" y="1531" w="32" h="32"/>
+    <sprite n="sleepgas2" x="239" y="1497" w="32" h="32"/>
+    <sprite n="sleepgas3" x="273" y="1463" w="32" h="32"/>
+    <sprite n="sleepgas4" x="307" y="1429" w="32" h="32"/>
+    <sprite n="sleepgas5" x="341" y="1395" w="32" h="32"/>
+    <sprite n="sleepgas6" x="375" y="1361" w="32" h="32"/>
+    <sprite n="sleepgas7" x="409" y="1327" w="32" h="32"/>
+    <sprite n="sleepgas8" x="1" y="1775" w="32" h="32"/>
+    <sprite n="sleepingdragon1" x="459" y="2925" w="32" h="25" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="sleepingdragon2" x="399" y="3468" w="32" h="25" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="sleepingdragon3" x="260" y="3568" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="sleepingdragon4" x="260" y="3596" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="SlimeRockWall1" x="35" y="1735" w="32" h="32"/>
+    <sprite n="SlimeRockWall2" x="69" y="1701" w="32" h="32"/>
+    <sprite n="SlimeRockWall3" x="103" y="1667" w="32" h="32"/>
+    <sprite n="SlimeRockWall4" x="137" y="1633" w="32" h="32"/>
+    <sprite n="SlimeRockWall5" x="171" y="1599" w="32" h="32"/>
+    <sprite n="SlimeRockWall6" x="205" y="1565" w="32" h="32"/>
+    <sprite n="SlimeRockWall7" x="239" y="1531" w="32" h="32"/>
+    <sprite n="SlimeRockWall8" x="273" y="1497" w="32" h="32"/>
+    <sprite n="SlimeRockWall9" x="307" y="1463" w="32" h="32"/>
+    <sprite n="SlimeRockWall10" x="341" y="1429" w="32" h="32"/>
+    <sprite n="sludgeeast" x="197" y="4188" w="18" h="32" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="sludgefull" x="375" y="1395" w="32" h="32"/>
+    <sprite n="sludgeisolated" x="409" y="1361" w="32" h="32"/>
+    <sprite n="sludgenorth" x="467" y="3676" w="32" h="18" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="sludgesouth" x="260" y="4167" w="32" h="18" oX="0" oY="14" oW="32" oH="32"/>
+    <sprite n="sludgewest" x="68" y="2479" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smallemptyidol1" x="488" y="3008" w="17" h="23" oX="8" oY="9" oW="32" oH="32"/>
+    <sprite n="smallfire1" x="423" y="3571" w="13" h="18" oX="10" oY="7" oW="32" oH="32"/>
+    <sprite n="smallfire2" x="320" y="4125" w="13" h="18" oX="10" oY="7" oW="32" oH="32"/>
+    <sprite n="smallfire3" x="491" y="2750" w="14" h="18" oX="9" oY="7" oW="32" oH="32"/>
+    <sprite n="smallfire4" x="490" y="2573" w="15" h="18" oX="8" oY="7" oW="32" oH="32"/>
+    <sprite n="smallfire5" x="490" y="2593" w="15" h="18" oX="10" oY="7" oW="32" oH="32"/>
+    <sprite n="smallfire6" x="490" y="2613" w="15" h="18" oX="9" oY="7" oW="32" oH="32"/>
+    <sprite n="smallfire7" x="354" y="4018" w="14" h="18" oX="10" oY="7" oW="32" oH="32"/>
+    <sprite n="smallidol1" x="488" y="3033" w="17" h="23" oX="8" oY="9" oW="32" oH="32"/>
+    <sprite n="smallpentagram1" x="307" y="4159" w="18" h="18" oX="7" oY="7" oW="32" oH="32"/>
+    <sprite n="smashedfluorescentcrystal" x="165" y="3765" w="31" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="smashedhive" x="224" y="3992" w="32" h="22" oX="0" oY="10" oW="32" oH="32"/>
+    <sprite n="smashedmutantlab" x="457" y="2654" w="32" h="13" oX="0" oY="19" oW="32" oH="32"/>
+    <sprite n="smoke1a" x="443" y="1327" w="32" h="32"/>
+    <sprite n="smoke1b" x="443" y="1361" w="32" h="32"/>
+    <sprite n="smoke1c" x="1" y="1809" w="32" h="32"/>
+    <sprite n="smoke1d" x="35" y="1769" w="32" h="32"/>
+    <sprite n="smoke1e" x="69" y="1735" w="32" h="32"/>
+    <sprite n="smoke1f" x="103" y="1701" w="32" h="32"/>
+    <sprite n="smoke1g" x="1" y="2654" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke1h" x="134" y="2903" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke2a" x="137" y="1667" w="32" h="32"/>
+    <sprite n="smoke2b" x="171" y="1633" w="32" h="32"/>
+    <sprite n="smoke2c" x="205" y="1599" w="32" h="32"/>
+    <sprite n="smoke2d" x="239" y="1565" w="32" h="32"/>
+    <sprite n="smoke2e" x="273" y="1531" w="32" h="32"/>
+    <sprite n="smoke2f" x="307" y="1497" w="32" h="32"/>
+    <sprite n="smoke2g" x="68" y="2512" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke2h" x="67" y="3048" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="smoke3a" x="341" y="1463" w="32" h="32"/>
+    <sprite n="smoke3b" x="375" y="1429" w="32" h="32"/>
+    <sprite n="smoke3c" x="409" y="1395" w="32" h="32"/>
+    <sprite n="smoke3d" x="1" y="1843" w="32" h="32"/>
+    <sprite n="smoke3e" x="35" y="1803" w="32" h="32"/>
+    <sprite n="smoke3f" x="69" y="1769" w="32" h="32"/>
+    <sprite n="smoke3g" x="103" y="1735" w="32" h="32"/>
+    <sprite n="smoke3h" x="137" y="1701" w="32" h="32"/>
+    <sprite n="smoke4a" x="171" y="1667" w="32" h="32"/>
+    <sprite n="smoke4b" x="205" y="1633" w="32" h="32"/>
+    <sprite n="smoke4c" x="239" y="1599" w="32" h="32"/>
+    <sprite n="smoke4d" x="273" y="1565" w="32" h="32"/>
+    <sprite n="smoke4e" x="307" y="1531" w="32" h="32"/>
+    <sprite n="smoke4f" x="341" y="1497" w="32" h="32"/>
+    <sprite n="smoke4g" x="375" y="1463" w="32" h="32"/>
+    <sprite n="smoke4h" x="409" y="1429" w="32" h="32"/>
+    <sprite n="smoke5a" x="443" y="1395" w="32" h="32"/>
+    <sprite n="smoke5b" x="1" y="1877" w="32" h="32"/>
+    <sprite n="smoke5c" x="35" y="1837" w="32" h="32"/>
+    <sprite n="smoke5d" x="69" y="1803" w="32" h="32"/>
+    <sprite n="smoke5e" x="103" y="1769" w="32" h="32"/>
+    <sprite n="smoke5f" x="137" y="1735" w="32" h="32"/>
+    <sprite n="smoke5g" x="171" y="1701" w="32" h="32"/>
+    <sprite n="smoke5h" x="205" y="1667" w="32" h="32"/>
+    <sprite n="smoke6a" x="239" y="1633" w="32" h="32"/>
+    <sprite n="smoke6b" x="273" y="1599" w="32" h="32"/>
+    <sprite n="smoke6c" x="307" y="1565" w="32" h="32"/>
+    <sprite n="smoke6d" x="341" y="1531" w="32" h="32"/>
+    <sprite n="smoke6e" x="375" y="1497" w="32" h="32"/>
+    <sprite n="smoke6f" x="409" y="1463" w="32" h="32"/>
+    <sprite n="smoke6g" x="443" y="1429" w="32" h="32"/>
+    <sprite n="smoke6h" x="1" y="1911" w="32" h="32"/>
+    <sprite n="smoke7a" x="35" y="1871" w="32" h="32"/>
+    <sprite n="smoke7b" x="69" y="1837" w="32" h="32"/>
+    <sprite n="smoke7c" x="103" y="1803" w="32" h="32"/>
+    <sprite n="smoke7d" x="137" y="1769" w="32" h="32"/>
+    <sprite n="smoke7e" x="171" y="1735" w="32" h="32"/>
+    <sprite n="smoke7f" x="205" y="1701" w="32" h="32"/>
+    <sprite n="smoke7g" x="239" y="1667" w="32" h="32"/>
+    <sprite n="smoke7h" x="273" y="1633" w="32" h="32"/>
+    <sprite n="smoke8a" x="307" y="1599" w="32" h="32"/>
+    <sprite n="smoke8b" x="341" y="1565" w="32" h="32"/>
+    <sprite n="smoke8c" x="375" y="1531" w="32" h="32"/>
+    <sprite n="smoke8d" x="409" y="1497" w="32" h="32"/>
+    <sprite n="smoke8e" x="443" y="1463" w="32" h="32"/>
+    <sprite n="smoke8f" x="1" y="1945" w="32" h="32"/>
+    <sprite n="smoke8g" x="374" y="2102" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="smoke8h" x="35" y="1905" w="32" h="32"/>
+    <sprite n="smoke9a" x="69" y="1871" w="32" h="32"/>
+    <sprite n="smoke9b" x="103" y="1837" w="32" h="32"/>
+    <sprite n="smoke9c" x="137" y="1803" w="32" h="32"/>
+    <sprite n="smoke9d" x="171" y="1769" w="32" h="32"/>
+    <sprite n="smoke9e" x="205" y="1735" w="32" h="32"/>
+    <sprite n="smoke9f" x="239" y="1701" w="32" h="32"/>
+    <sprite n="smoke9g" x="1" y="2688" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke9h" x="273" y="1667" w="32" h="32"/>
+    <sprite n="smoke10a" x="307" y="1633" w="32" h="32"/>
+    <sprite n="smoke10b" x="341" y="1599" w="32" h="32"/>
+    <sprite n="smoke10c" x="375" y="1565" w="32" h="32"/>
+    <sprite n="smoke10d" x="409" y="1531" w="32" h="32"/>
+    <sprite n="smoke10e" x="443" y="1497" w="32" h="32"/>
+    <sprite n="smoke10f" x="1" y="1979" w="32" h="32"/>
+    <sprite n="smoke10g" x="374" y="2135" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke10h" x="35" y="1939" w="32" h="32"/>
+    <sprite n="smoke11a" x="69" y="1905" w="32" h="32"/>
+    <sprite n="smoke11b" x="103" y="1871" w="32" h="32"/>
+    <sprite n="smoke11c" x="137" y="1837" w="32" h="32"/>
+    <sprite n="smoke11d" x="171" y="1803" w="32" h="32"/>
+    <sprite n="smoke11e" x="205" y="1769" w="32" h="32"/>
+    <sprite n="smoke11f" x="239" y="1735" w="32" h="32"/>
+    <sprite n="smoke11g" x="1" y="2722" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke11h" x="273" y="1701" w="32" h="32"/>
+    <sprite n="smoke12a" x="307" y="1667" w="32" h="32"/>
+    <sprite n="smoke12b" x="408" y="2130" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke12c" x="67" y="3080" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="smoke12d" x="341" y="1633" w="32" h="32"/>
+    <sprite n="smoke12e" x="375" y="1599" w="32" h="32"/>
+    <sprite n="smoke12f" x="409" y="1565" w="32" h="32"/>
+    <sprite n="smoke12g" x="443" y="1531" w="32" h="32"/>
+    <sprite n="smoke12h" x="408" y="2163" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke13a" x="442" y="2158" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke13b" x="1" y="2013" w="32" h="32"/>
+    <sprite n="smoke13c" x="35" y="1973" w="32" h="32"/>
+    <sprite n="smoke13d" x="67" y="3112" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke13e" x="34" y="2581" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke13f" x="67" y="3144" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke13g" x="166" y="2795" w="31" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke13h" x="166" y="2828" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke14a" x="1" y="2756" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke14b" x="69" y="1939" w="32" h="32"/>
+    <sprite n="smoke14c" x="103" y="1905" w="32" h="32"/>
+    <sprite n="smoke14d" x="166" y="2862" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke14e" x="1" y="2790" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke14f" x="166" y="2896" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke14g" x="67" y="3176" w="31" h="31" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke14h" x="132" y="3131" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="smoke15a" x="68" y="2577" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="smoke15b" x="137" y="1871" w="32" h="32"/>
+    <sprite n="smoke15c" x="171" y="1837" w="32" h="32"/>
+    <sprite n="smoke15d" x="100" y="3197" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="smoke15e" x="34" y="2614" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="smoke15f" x="99" y="3249" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="smoke15g" x="67" y="3209" w="31" h="31" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="smoke15h" x="166" y="2930" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke16a" x="1" y="2824" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke16b" x="205" y="1803" w="32" h="32"/>
+    <sprite n="smoke16c" x="239" y="1769" w="32" h="32"/>
+    <sprite n="smoke16d" x="67" y="3242" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke16e" x="1" y="2858" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke16f" x="67" y="3276" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smoke16g" x="101" y="3001" w="31" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="smoke16h" x="99" y="3281" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="smokeNEpatch" x="456" y="4253" w="5" h="5" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNEpatchb" x="461" y="4066" w="6" h="4" oX="26" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNEpatchc" x="495" y="4078" w="5" h="4" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNEpatchd" x="232" y="4117" w="4" h="4" oX="28" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNEpatche" x="495" y="4084" w="5" h="4" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNEpatchf" x="467" y="4242" w="5" h="5" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNEpatchg" x="411" y="4147" w="6" h="5" oX="26" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNEpatchh" x="475" y="4234" w="5" h="5" oX="27" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNWpatch" x="456" y="4266" w="5" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNWpatchb" x="318" y="4278" w="5" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNWpatchc" x="422" y="4117" w="4" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNWpatchd" x="456" y="4272" w="5" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNWpatche" x="325" y="4278" w="5" h="4" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNWpatchf" x="486" y="4223" w="5" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNWpatchg" x="422" y="4166" w="6" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeNWpatchh" x="498" y="4154" w="5" h="5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeSEpatch" x="332" y="4278" w="5" h="4" oX="27" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSEpatchb" x="431" y="4223" w="4" h="4" oX="28" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSEpatchc" x="257" y="3863" w="4" h="4" oX="28" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSEpatchd" x="489" y="3742" w="5" h="4" oX="27" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSEpatche" x="501" y="4066" w="4" h="4" oX="28" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSEpatchf" x="489" y="3748" w="5" h="4" oX="27" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSEpatchg" x="498" y="4147" w="6" h="5" oX="26" oY="27" oW="32" oH="32"/>
+    <sprite n="smokeSEpatchh" x="489" y="3754" w="5" h="4" oX="27" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSWpatch" x="489" y="3760" w="5" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSWpatchb" x="220" y="4283" w="5" h="3" oX="0" oY="29" oW="32" oH="32"/>
+    <sprite n="smokeSWpatchc" x="330" y="4217" w="4" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSWpatchd" x="342" y="4273" w="5" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="smokeSWpatche" x="475" y="3258" w="4" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="smokeSWpatchf" x="445" y="4280" w="5" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="smokeSWpatchg" x="437" y="4280" w="6" h="5" oX="0" oY="27" oW="32" oH="32"/>
+    <sprite n="smokeSWpatchh" x="349" y="4273" w="5" h="4" oX="0" oY="28" oW="32" oH="32"/>
+    <sprite n="snoweast" x="197" y="4222" w="18" h="32" oX="14" oY="0" oW="32" oH="32"/>
+    <sprite n="snowfull" x="273" y="1735" w="32" h="32"/>
+    <sprite n="snowisolated" x="307" y="1701" w="32" h="32"/>
+    <sprite n="snownorth" x="258" y="4187" w="32" h="18" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="snowsouth" x="258" y="4207" w="32" h="18" oX="0" oY="14" oW="32" oH="32"/>
+    <sprite n="snowwest" x="68" y="2610" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="spentbrassgong" x="341" y="1667" w="32" h="32"/>
+    <sprite n="spentforge1" x="255" y="4227" w="32" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="spiralstairs" x="375" y="1633" w="32" h="32"/>
+    <sprite n="SQS" x="354" y="4038" w="14" h="15" oX="9" oY="9" oW="32" oH="32"/>
+    <sprite n="stainedglasswindowlit" x="409" y="1599" w="32" h="32"/>
+    <sprite n="stainedglasswindowunlit" x="443" y="1565" w="32" h="32"/>
+    <sprite n="stairs" x="1" y="2047" w="32" h="32"/>
+    <sprite n="stalactite1" x="433" y="3674" w="32" h="20" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalactite2" x="260" y="4146" w="32" h="19" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalactite3" x="258" y="3904" w="32" h="22" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalactite4" x="350" y="3804" w="32" h="23" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalactite5" x="251" y="4246" w="32" h="18" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalactite6" x="461" y="3720" w="32" h="20" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalactite7" x="247" y="4266" w="32" h="18" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalactite8" x="285" y="4015" w="32" h="19" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalactite9" x="410" y="3863" w="32" h="20" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalactite10" x="286" y="4036" w="32" h="19" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="stalagmite1" x="35" y="2007" w="32" h="32"/>
+    <sprite n="stalagmite2" x="69" y="1973" w="32" h="32"/>
+    <sprite n="stalagmite3" x="103" y="1939" w="32" h="32"/>
+    <sprite n="stalagmite4" x="137" y="1905" w="32" h="32"/>
+    <sprite n="stalagmite5" x="171" y="1871" w="32" h="32"/>
+    <sprite n="stalagmite6" x="205" y="1837" w="32" h="32"/>
+    <sprite n="stalagmite7" x="239" y="1803" w="32" h="32"/>
+    <sprite n="stalagmite8" x="273" y="1769" w="32" h="32"/>
+    <sprite n="stalagmite9" x="307" y="1735" w="32" h="32"/>
+    <sprite n="stalagmite10" x="341" y="1701" w="32" h="32"/>
+    <sprite n="standingtorch1" x="420" y="3798" w="12" h="29" oX="10" oY="2" oW="32" oH="32"/>
+    <sprite n="standingtorch2" x="421" y="3829" w="12" h="29" oX="10" oY="2" oW="32" oH="32"/>
+    <sprite n="standingtorch3" x="419" y="3716" w="12" h="29" oX="10" oY="2" oW="32" oH="32"/>
+    <sprite n="standingtorch4" x="438" y="3638" w="12" h="29" oX="10" oY="2" oW="32" oH="32"/>
+    <sprite n="steam1" x="375" y="1667" w="32" h="32"/>
+    <sprite n="steam2" x="409" y="1633" w="32" h="32"/>
+    <sprite n="steam3" x="443" y="1599" w="32" h="32"/>
+    <sprite n="steam4" x="443" y="1599" w="32" h="32"/>
+    <sprite n="steam5" x="1" y="2081" w="32" h="32"/>
+    <sprite n="steam6" x="35" y="2041" w="32" h="32"/>
+    <sprite n="steam7" x="69" y="2007" w="32" h="32"/>
+    <sprite n="steam8" x="103" y="1973" w="32" h="32"/>
+    <sprite n="steelantassembly" x="286" y="3958" w="32" h="21" oX="0" oY="11" oW="32" oH="32"/>
+    <sprite n="stench1" x="137" y="1939" w="32" h="32"/>
+    <sprite n="stench2" x="171" y="1905" w="32" h="32"/>
+    <sprite n="stench3" x="205" y="1871" w="32" h="32"/>
+    <sprite n="stench4" x="239" y="1837" w="32" h="32"/>
+    <sprite n="stench5" x="273" y="1803" w="32" h="32"/>
+    <sprite n="stench6" x="307" y="1769" w="32" h="32"/>
+    <sprite n="stench7" x="341" y="1735" w="32" h="32"/>
+    <sprite n="stench8" x="375" y="1701" w="32" h="32"/>
+    <sprite n="stonecircle" x="409" y="1667" w="32" h="32"/>
+    <sprite n="stonecoffer" x="199" y="2793" w="32" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="stonedoor1" x="232" y="3654" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="stonedoorajar" x="410" y="3829" w="9" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="stonegolemassembly" x="229" y="3816" w="29" h="25" oX="1" oY="5" oW="32" oH="32"/>
+    <sprite n="stonesarcophagus" x="260" y="3624" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="strawbedding" x="224" y="3919" w="32" h="23" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="strawcovering" x="443" y="1633" w="32" h="32"/>
+    <sprite n="strengthpotion1" x="375" y="3604" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="submergedcaveentrance" x="1" y="2892" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="submergedmemorial" x="204" y="2245" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="sunkenruin" x="1" y="2115" w="32" h="32"/>
+    <sprite n="talltiowardanshrine1" x="260" y="3652" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="tapestry" x="446" y="4023" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="targetdummy" x="232" y="3688" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="tegravanishrine1" x="67" y="3310" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="telepad1" x="35" y="2075" w="32" h="32"/>
+    <sprite n="temple1" x="99" y="3313" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="temple2" x="99" y="3345" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="temple3" x="99" y="3377" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="temple4" x="99" y="3409" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="temple5" x="99" y="3441" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="temple6" x="99" y="3473" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="temple7" x="99" y="3505" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="temple8" x="99" y="3537" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="thickbeanstalk" x="67" y="3344" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="thickbrokenbeanstalk" x="258" y="3928" w="32" h="22" oX="0" oY="10" oW="32" oH="32"/>
+    <sprite n="thinbeanstalk" x="354" y="3953" w="16" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="thinbrokenbeanstalk" x="463" y="3825" w="19" h="22" oX="4" oY="10" oW="32" oH="32"/>
+    <sprite n="throne" x="400" y="3571" w="21" h="31" oX="6" oY="1" oW="32" oH="32"/>
+    <sprite n="tollsign" x="260" y="3680" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="toothycave1" x="69" y="2041" w="32" h="32"/>
+    <sprite n="toothycave2" x="103" y="2007" w="32" h="32"/>
+    <sprite n="toothycave3" x="137" y="1973" w="32" h="32"/>
+    <sprite n="toothycave4" x="171" y="1939" w="32" h="32"/>
+    <sprite n="toppledominousstandingstones" x="167" y="3250" w="29" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="trampledluminescentmushrooms" x="474" y="3939" w="31" h="19" oX="0" oY="11" oW="32" oH="32"/>
+    <sprite n="trapdoor" x="205" y="1905" w="32" h="32"/>
+    <sprite n="treacherouschasm1" x="469" y="3849" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="treacherouschasm2" x="476" y="3885" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="treacherousmineshaft" x="167" y="3284" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="trebuchet" x="239" y="1871" w="32" h="32"/>
+    <sprite n="trolltotem" x="464" y="3145" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="trophycase" x="477" y="749" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="tunnel1" x="273" y="1837" w="32" h="32"/>
+    <sprite n="underwatertower" x="197" y="4120" w="19" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="underwatertreasure" x="232" y="4153" w="26" h="23" oX="3" oY="4" oW="32" oH="32"/>
+    <sprite n="unknown1" x="307" y="1803" w="32" h="32"/>
+    <sprite n="unknown2" x="341" y="1769" w="32" h="32"/>
+    <sprite n="unknown3" x="375" y="1735" w="32" h="32"/>
+    <sprite n="unknown4" x="409" y="1701" w="32" h="32"/>
+    <sprite n="unknown5" x="443" y="1667" w="32" h="32"/>
+    <sprite n="unknown6" x="1" y="2149" w="32" h="32"/>
+    <sprite n="unknown7" x="35" y="2109" w="32" h="32"/>
+    <sprite n="unknown8" x="69" y="2075" w="32" h="32"/>
+    <sprite n="unknown9" x="103" y="2041" w="32" h="32"/>
+    <sprite n="unknownpotion1" x="399" y="3538" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="unlitbrazier" x="323" y="3542" w="26" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="unlitfireplace" x="137" y="2007" w="32" h="32"/>
+    <sprite n="unloadedballista" x="294" y="3339" w="32" h="27" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="unloadedpolybolos" x="171" y="1973" w="32" h="32"/>
+    <sprite n="unloadedtrebuchet" x="1" y="2926" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="unpoweredgolemassembly" x="448" y="4051" w="24" h="13" oX="2" oY="17" oW="32" oH="32"/>
+    <sprite n="unpredictablemachine1" x="205" y="1939" w="32" h="32"/>
+    <sprite n="unpredictablemachine2" x="239" y="1905" w="32" h="32"/>
+    <sprite n="unseen" x="273" y="1871" w="32" h="32"/>
+    <sprite n="Untitled-4" x="307" y="1837" w="32" h="32"/>
+    <sprite n="vault" x="67" y="3378" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="vestonianshrine1" x="341" y="1803" w="32" h="32"/>
+    <sprite n="vieanshrine1" x="375" y="1769" w="32" h="32"/>
+    <sprite n="visitedsubmergedmemorial" x="263" y="3863" w="29" h="22" oX="3" oY="10" oW="32" oH="32"/>
+    <sprite n="vortex1" x="474" y="3960" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="vortex2" x="167" y="3318" w="29" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="vortex3" x="323" y="3477" w="27" h="30" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="vortex4" x="198" y="2851" w="32" h="29" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="vortex5" x="476" y="2358" w="29" h="29" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="vortex6" x="477" y="783" w="28" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="vortex7" x="476" y="2326" w="29" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="vortex8" x="198" y="2882" w="32" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="Wall1" x="409" y="1735" w="32" h="32"/>
+    <sprite n="Wall2" x="443" y="1701" w="32" h="32"/>
+    <sprite n="Wall3" x="1" y="2183" w="32" h="32"/>
+    <sprite n="Wall4" x="35" y="2143" w="32" h="32"/>
+    <sprite n="Wall5" x="69" y="2109" w="32" h="32"/>
+    <sprite n="Wall6" x="103" y="2075" w="32" h="32"/>
+    <sprite n="Wall7" x="137" y="2041" w="32" h="32"/>
+    <sprite n="Wall8" x="171" y="2007" w="32" h="32"/>
+    <sprite n="Wall9" x="205" y="1973" w="32" h="32"/>
+    <sprite n="Wall10" x="239" y="1939" w="32" h="32"/>
+    <sprite n="wallcandles" x="320" y="4032" w="32" h="16" oX="0" oY="8" oW="32" oH="32"/>
+    <sprite n="walllantern" x="232" y="4178" w="24" h="25" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="wallofcorpses" x="273" y="1905" w="32" h="32"/>
+    <sprite n="walltorch1" x="495" y="3530" w="10" h="22" oX="11" oY="0" oW="32" oH="32"/>
+    <sprite n="walltorch2" x="294" y="4159" w="11" h="22" oX="10" oY="0" oW="32" oH="32"/>
+    <sprite n="walltorch3" x="398" y="3444" w="12" h="22" oX="11" oY="0" oW="32" oH="32"/>
+    <sprite n="walltorch4" x="495" y="3554" w="10" h="22" oX="11" oY="0" oW="32" oH="32"/>
+    <sprite n="ward1" x="307" y="1871" w="32" h="32"/>
+    <sprite n="ward2" x="341" y="1837" w="32" h="32"/>
+    <sprite n="ward3" x="375" y="1803" w="32" h="32"/>
+    <sprite n="ward4" x="409" y="1769" w="32" h="32"/>
+    <sprite n="ward5" x="443" y="1735" w="32" h="32"/>
+    <sprite n="ward6" x="1" y="2217" w="32" h="32"/>
+    <sprite n="ward7" x="35" y="2177" w="32" h="32"/>
+    <sprite n="ward8" x="69" y="2143" w="32" h="32"/>
+    <sprite n="wardrobe1" x="197" y="4018" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="water1a" x="204" y="2279" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water1b" x="204" y="2313" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water1c" x="368" y="2839" w="25" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="water1d" x="387" y="3257" w="25" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="water1e" x="204" y="2347" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water1f" x="204" y="2381" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water1g" x="204" y="2415" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water1h" x="204" y="2449" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water2a" x="328" y="3284" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water2b" x="328" y="3313" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water2c" x="324" y="3396" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water2d" x="198" y="3483" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water2e" x="198" y="3512" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water2f" x="198" y="3541" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water2g" x="260" y="3708" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water2h" x="198" y="3570" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water3a" x="165" y="3797" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="water3b" x="165" y="3830" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="water3c" x="165" y="3863" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="water3d" x="165" y="3896" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="water3e" x="165" y="3929" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="water3f" x="165" y="3962" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="water3g" x="165" y="3995" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="water3h" x="165" y="4127" w="30" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="water4a" x="198" y="2913" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water4b" x="198" y="2945" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water4c" x="198" y="3025" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water4d" x="198" y="3057" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water4e" x="198" y="3089" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water4f" x="199" y="3153" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water4g" x="199" y="3185" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water4h" x="199" y="3217" w="31" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water5a" x="165" y="4160" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water5b" x="165" y="4193" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water5c" x="165" y="4226" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water5d" x="233" y="2210" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water5e" x="231" y="2933" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water5f" x="233" y="2243" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water5g" x="265" y="2243" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water5h" x="233" y="2276" w="30" h="31" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water6a" x="325" y="2309" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="water6b" x="358" y="2309" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="water6c" x="325" y="2341" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="water6d" x="358" y="2341" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="water6e" x="325" y="2373" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="water6f" x="358" y="2373" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="water6g" x="325" y="2405" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="water6h" x="358" y="2405" w="31" h="30" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="water7a" x="103" y="2109" w="32" h="32"/>
+    <sprite n="water7b" x="137" y="2075" w="32" h="32"/>
+    <sprite n="water7c" x="171" y="2041" w="32" h="32"/>
+    <sprite n="water7d" x="205" y="2007" w="32" h="32"/>
+    <sprite n="water7e" x="239" y="1973" w="32" h="32"/>
+    <sprite n="water7f" x="273" y="1939" w="32" h="32"/>
+    <sprite n="water7g" x="307" y="1905" w="32" h="32"/>
+    <sprite n="water7h" x="341" y="1871" w="32" h="32"/>
+    <sprite n="water8a" x="99" y="3569" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water8b" x="99" y="3601" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water8c" x="99" y="3633" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water8d" x="99" y="3665" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water8e" x="99" y="3697" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water8f" x="99" y="3729" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water8g" x="99" y="3761" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water8h" x="99" y="3793" w="32" h="30" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water9a" x="67" y="3412" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water9b" x="67" y="3446" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water9c" x="67" y="3480" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water9d" x="67" y="3514" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water9e" x="67" y="3548" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water9f" x="67" y="3582" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water9g" x="67" y="3616" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water9h" x="67" y="3650" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water10a" x="99" y="3825" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water10b" x="99" y="3857" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water10c" x="99" y="3889" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water10d" x="99" y="3921" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water10e" x="320" y="2245" w="32" h="29" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water10f" x="99" y="3953" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water10g" x="99" y="3985" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water10h" x="99" y="4017" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="water11a" x="67" y="3684" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water11b" x="67" y="3718" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water11c" x="67" y="3752" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water11d" x="67" y="3786" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water11e" x="67" y="3820" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water11f" x="67" y="3854" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water11g" x="67" y="3888" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water11h" x="67" y="3922" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="water12a" x="375" y="1837" w="32" h="32"/>
+    <sprite n="water12b" x="409" y="1803" w="32" h="32"/>
+    <sprite n="water12c" x="443" y="1769" w="32" h="32"/>
+    <sprite n="water12d" x="1" y="2251" w="32" h="32"/>
+    <sprite n="water12e" x="35" y="2211" w="32" h="32"/>
+    <sprite n="water12f" x="69" y="2177" w="32" h="32"/>
+    <sprite n="water12g" x="103" y="2143" w="32" h="32"/>
+    <sprite n="water12h" x="137" y="2109" w="32" h="32"/>
+    <sprite n="water13a" x="431" y="2962" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water13b" x="461" y="3081" w="25" h="31" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="water13c" x="431" y="2995" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water13d" x="460" y="3048" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water13e" x="415" y="3353" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water13f" x="323" y="3509" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water13g" x="322" y="3574" w="26" h="31" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="water13h" x="322" y="3607" w="25" h="31" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="water14a" x="260" y="3736" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water14b" x="377" y="2737" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water14c" x="411" y="2737" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water14d" x="377" y="2765" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water14e" x="411" y="2765" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water14f" x="395" y="2840" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water14g" x="462" y="2869" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water14h" x="459" y="2897" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water15a" x="370" y="3472" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="water15b" x="350" y="3772" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="water15c" x="197" y="3892" w="25" h="30" oX="4" oY="2" oW="32" oH="32"/>
+    <sprite n="water15d" x="197" y="3924" w="25" h="30" oX="4" oY="2" oW="32" oH="32"/>
+    <sprite n="water15e" x="398" y="3506" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="water15f" x="427" y="3506" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="water15g" x="425" y="3538" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="water15h" x="468" y="3498" w="27" h="30" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="water16a" x="475" y="3382" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water16b" x="475" y="3411" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water16c" x="475" y="3440" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water16d" x="475" y="3469" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water16e" x="433" y="3477" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water16f" x="197" y="3806" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="water16g" x="197" y="3864" w="30" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="water16h" x="197" y="3835" w="30" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="waterfalln1a" x="171" y="2075" w="32" h="32"/>
+    <sprite n="waterfalln1b" x="205" y="2041" w="32" h="32"/>
+    <sprite n="waterfalln1c" x="239" y="2007" w="32" h="32"/>
+    <sprite n="waterfalln1d" x="273" y="1973" w="32" h="32"/>
+    <sprite n="waterfalln1e" x="307" y="1939" w="32" h="32"/>
+    <sprite n="waterfalln1f" x="341" y="1905" w="32" h="32"/>
+    <sprite n="waterfalln1g" x="375" y="1871" w="32" h="32"/>
+    <sprite n="waterfalln1h" x="409" y="1837" w="32" h="32"/>
+    <sprite n="waterfallw1a" x="443" y="1803" w="32" h="32"/>
+    <sprite n="waterfallw1b" x="1" y="2285" w="32" h="32"/>
+    <sprite n="waterfallw1c" x="35" y="2245" w="32" h="32"/>
+    <sprite n="waterfallw1d" x="69" y="2211" w="32" h="32"/>
+    <sprite n="waterfallw1e" x="103" y="2177" w="32" h="32"/>
+    <sprite n="waterfallw1f" x="137" y="2143" w="32" h="32"/>
+    <sprite n="waterfallw1g" x="171" y="2109" w="32" h="32"/>
+    <sprite n="waterfallw1h" x="205" y="2075" w="32" h="32"/>
+    <sprite n="waterNEpatcha" x="403" y="4155" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNEpatchb" x="412" y="4174" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNEpatchc" x="412" y="4193" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNEpatchd" x="412" y="4212" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNEpatche" x="418" y="4231" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNEpatchf" x="418" y="4250" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNEpatchg" x="418" y="4269" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNEpatchh" x="411" y="4128" w="17" h="17" oX="15" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNWpatcha" x="430" y="4128" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNWpatchb" x="449" y="4128" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNWpatchc" x="468" y="4128" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNWpatchd" x="487" y="4128" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNWpatche" x="422" y="4147" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNWpatchf" x="441" y="4147" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNWpatchg" x="460" y="4147" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="waterNWpatchh" x="479" y="4147" w="17" h="17" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="waterpit" x="325" y="3062" w="30" h="30" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="waterSEpatcha" x="431" y="4166" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSEpatchb" x="431" y="4185" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSEpatchc" x="450" y="4166" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSEpatchd" x="431" y="4204" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSEpatche" x="450" y="4185" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSEpatchf" x="469" y="4166" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSEpatchg" x="488" y="4166" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSEpatchh" x="450" y="4204" w="17" h="17" oX="15" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSWpatcha" x="469" y="4185" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSWpatchb" x="488" y="4185" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSWpatchc" x="469" y="4204" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSWpatchd" x="488" y="4204" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSWpatche" x="437" y="4223" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSWpatchf" x="437" y="4242" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSWpatchg" x="456" y="4223" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="waterSWpatchh" x="437" y="4261" w="17" h="17" oX="0" oY="15" oW="32" oH="32"/>
+    <sprite n="weaponinstone" x="239" y="2041" w="32" h="32"/>
+    <sprite n="weaponrack" x="273" y="2007" w="32" h="32"/>
+    <sprite n="web1" x="307" y="1973" w="32" h="32"/>
+    <sprite n="web2" x="341" y="1939" w="32" h="32"/>
+    <sprite n="web3" x="375" y="1905" w="32" h="32"/>
+    <sprite n="webspiders1" x="197" y="3956" w="25" h="29" oX="3" oY="1" oW="32" oH="32"/>
+    <sprite n="webspiders2" x="197" y="3987" w="25" h="29" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="webspiders3" x="286" y="3981" w="25" h="28" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="webspiders4" x="294" y="3799" w="26" h="28" oX="1" oY="4" oW="32" oH="32"/>
+    <sprite n="webspiders5" x="229" y="3843" w="26" h="28" oX="1" oY="4" oW="32" oH="32"/>
+    <sprite n="webspiders6" x="480" y="3597" w="25" h="26" oX="1" oY="5" oW="32" oH="32"/>
+    <sprite n="webspiders7" x="480" y="3625" w="25" h="26" oX="1" oY="5" oW="32" oH="32"/>
+    <sprite n="webspiders8" x="374" y="3716" w="25" h="24" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="well" x="260" y="3815" w="32" h="24" oX="0" oY="8" oW="32" oH="32"/>
+    <sprite n="wellofblood" x="357" y="2967" w="32" h="28" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="wheeloffortune1" x="434" y="3062" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="wheeloffortune2" x="464" y="3179" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="wheeloffortune3" x="481" y="3232" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="wheeloffortune4" x="322" y="3640" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="wheeloffortune5" x="322" y="3674" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="wheeloffortune6" x="322" y="3708" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="wheeloffortune7" x="372" y="3504" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="wheeloffortune8" x="348" y="3641" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="whirlpool1" x="474" y="3988" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="whirlpool2" x="258" y="3952" w="26" h="28" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="whirlpool3" x="474" y="4016" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="whirlpool4" x="477" y="1092" w="28" h="26" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="whirlpool5" x="238" y="4076" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="whirlpool6" x="258" y="3982" w="26" h="28" oX="3" oY="2" oW="32" oH="32"/>
+    <sprite n="whirlpool7" x="266" y="4070" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+    <sprite n="whirlpool8" x="477" y="1120" w="28" h="26" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="wickerbasket" x="230" y="4219" w="23" h="23" oX="4" oY="9" oW="32" oH="32"/>
+    <sprite n="wideanimalcarcassfilledpit" x="409" y="1871" w="32" h="32"/>
+    <sprite n="widebottomlesspit1" x="443" y="1837" w="32" h="32"/>
+    <sprite n="widecorpsefilledpit" x="1" y="2319" w="32" h="32"/>
+    <sprite n="widedeepopenpit" x="35" y="2279" w="32" h="32"/>
+    <sprite n="widefrigidwaterpit" x="69" y="2245" w="32" h="32"/>
+    <sprite n="widehole" x="103" y="2211" w="32" h="32"/>
+    <sprite n="widelavapit" x="137" y="2177" w="32" h="32"/>
+    <sprite n="widenetpit" x="171" y="2143" w="32" h="32"/>
+    <sprite n="wideopenacidpit1" x="205" y="2109" w="32" h="32"/>
+    <sprite n="wideopenacidpit2" x="239" y="2075" w="32" h="32"/>
+    <sprite n="wideopenacidpit3" x="273" y="2041" w="32" h="32"/>
+    <sprite n="wideopenacidpit4" x="307" y="2007" w="32" h="32"/>
+    <sprite n="wideopenacidpit5" x="341" y="1973" w="32" h="32"/>
+    <sprite n="wideopenacidpit6" x="375" y="1939" w="32" h="32"/>
+    <sprite n="wideopenacidpit7" x="409" y="1905" w="32" h="32"/>
+    <sprite n="wideopenacidpit8" x="443" y="1871" w="32" h="32"/>
+    <sprite n="wideopenicepit" x="1" y="2353" w="32" h="32"/>
+    <sprite n="wideopenpit1" x="35" y="2313" w="32" h="32"/>
+    <sprite n="wideopenpoisonspikedpit" x="69" y="2279" w="32" h="32"/>
+    <sprite n="wideopensnakepit1" x="103" y="2245" w="32" h="32"/>
+    <sprite n="wideopensnakepit2" x="137" y="2211" w="32" h="32"/>
+    <sprite n="wideopensnakepit3" x="171" y="2177" w="32" h="32"/>
+    <sprite n="wideopensnakepit4" x="205" y="2143" w="32" h="32"/>
+    <sprite n="wideopensnakepit5" x="239" y="2109" w="32" h="32"/>
+    <sprite n="wideopensnakepit6" x="273" y="2075" w="32" h="32"/>
+    <sprite n="wideopensnakepit7" x="307" y="2041" w="32" h="32"/>
+    <sprite n="wideopensnakepit8" x="341" y="2007" w="32" h="32"/>
+    <sprite n="wideopenspikedpit" x="375" y="1973" w="32" h="32"/>
+    <sprite n="wideshallowopenpit" x="409" y="1939" w="32" h="32"/>
+    <sprite n="widewaterpit" x="443" y="1905" w="32" h="32"/>
+    <sprite n="window" x="494" y="4052" w="11" h="12" oX="10" oY="10" oW="32" oH="32"/>
+    <sprite n="wizardchest" x="224" y="3893" w="32" h="24" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="xegexianshrine1" x="348" y="3675" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="xramicshrine1" x="204" y="2483" w="27" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="yoricksdimensionhoppingtrunk" x="326" y="3919" w="26" h="27" oX="2" oY="3" oW="32" oH="32"/>
+    <sprite n="zoneofhatred" x="232" y="4125" w="26" h="26" oX="3" oY="3" oW="32" oH="32"/>
+</TextureAtlas>

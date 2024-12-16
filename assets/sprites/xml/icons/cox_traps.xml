@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:61bd392b8c1145794e1019f6529a584f:055feab42836e4198660fd7c2bb3e132:a7caf12c745aeb4a7784434ce2b6797b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="cox_traps/cox_traps.png" width="238" height="446">
+    <sprite n="acidfloodtrap" x="1" y="1" w="32" h="32"/>
+    <sprite n="acidsplashtrap" x="35" y="1" w="32" h="32"/>
+    <sprite n="acidvapourtrap" x="69" y="1" w="32" h="32"/>
+    <sprite n="alarmtrap" x="103" y="1" w="32" h="32"/>
+    <sprite n="ancienttrap" x="137" y="1" w="32" h="32"/>
+    <sprite n="arrowtrap" x="171" y="1" w="32" h="32"/>
+    <sprite n="astraltrap" x="205" y="1" w="32" h="32"/>
+    <sprite n="baloraasinscurse" x="1" y="35" w="32" h="32"/>
+    <sprite n="basilisksnare" x="35" y="35" w="32" h="32"/>
+    <sprite n="bladetrap" x="69" y="35" w="32" h="32"/>
+    <sprite n="blindinglighttrap" x="103" y="35" w="32" h="32"/>
+    <sprite n="bloodyx" x="171" y="409" w="36" h="36"/>
+    <sprite n="bouldertrap" x="137" y="35" w="32" h="32"/>
+    <sprite n="boxofwaspstrap" x="171" y="35" w="32" h="32"/>
+    <sprite n="brambletrap" x="205" y="35" w="32" h="32"/>
+    <sprite n="bubbletrap" x="1" y="69" w="32" h="32"/>
+    <sprite n="burningoiltrap" x="35" y="69" w="32" h="32"/>
+    <sprite n="cavein" x="69" y="69" w="32" h="32"/>
+    <sprite n="ceilingblocktrap" x="103" y="69" w="32" h="32"/>
+    <sprite n="chemicalspraytrap" x="137" y="69" w="32" h="32"/>
+    <sprite n="contactpoisontrap" x="171" y="69" w="32" h="32"/>
+    <sprite n="crashingwallstrap" x="205" y="69" w="32" h="32"/>
+    <sprite n="crumblingfloortrap" x="1" y="103" w="32" h="32"/>
+    <sprite n="curseofpaintrap" x="35" y="103" w="32" h="32"/>
+    <sprite n="cursetrap" x="69" y="103" w="32" h="32"/>
+    <sprite n="daggertrap" x="103" y="103" w="32" h="32"/>
+    <sprite n="diseasetrap" x="137" y="103" w="32" h="32"/>
+    <sprite n="doublespeartrap" x="171" y="103" w="32" h="32"/>
+    <sprite n="erasuretrap" x="205" y="103" w="32" h="32"/>
+    <sprite n="explosivetrap" x="1" y="137" w="32" h="32"/>
+    <sprite n="fallingcaltrops" x="35" y="137" w="32" h="32"/>
+    <sprite n="fallingstones" x="69" y="137" w="32" h="32"/>
+    <sprite n="fireballtrap" x="103" y="137" w="32" h="32"/>
+    <sprite n="flametrap" x="137" y="137" w="32" h="32"/>
+    <sprite n="floodtrap" x="171" y="137" w="32" h="32"/>
+    <sprite n="freezetrap" x="205" y="137" w="32" h="32"/>
+    <sprite n="greasetrap" x="1" y="171" w="32" h="32"/>
+    <sprite n="hextrap" x="35" y="171" w="32" h="32"/>
+    <sprite n="hiddenscorpiontrap" x="69" y="171" w="32" h="32"/>
+    <sprite n="hugebladetrap" x="103" y="171" w="32" h="32"/>
+    <sprite n="islandtrap" x="137" y="171" w="32" h="32"/>
+    <sprite n="javelintrap" x="171" y="171" w="32" h="32"/>
+    <sprite n="jettingfrosttrap" x="205" y="171" w="32" h="32"/>
+    <sprite n="jinxtrap" x="1" y="205" w="32" h="32"/>
+    <sprite n="largebladetrap" x="35" y="205" w="32" h="32"/>
+    <sprite n="lavatrap" x="69" y="205" w="32" h="32"/>
+    <sprite n="lightningtrap" x="103" y="205" w="32" h="32"/>
+    <sprite n="loweringceilingtrap" x="137" y="205" w="32" h="32"/>
+    <sprite n="magicdrainingbeamtrap" x="171" y="205" w="32" h="32"/>
+    <sprite n="massivebladetrap" x="205" y="205" w="32" h="32"/>
+    <sprite n="mindwarp" x="1" y="239" w="32" h="32"/>
+    <sprite n="multiplevinesnarestrap" x="35" y="239" w="32" h="32"/>
+    <sprite n="nettrap" x="69" y="239" w="32" h="32"/>
+    <sprite n="oldbloodyx" x="103" y="239" w="32" h="32"/>
+    <sprite n="paralysistrap" x="137" y="239" w="32" h="32"/>
+    <sprite n="paralyzinggastrap" x="171" y="239" w="32" h="32"/>
+    <sprite n="pendulumtrap" x="205" y="239" w="32" h="32"/>
+    <sprite n="pittrap" x="1" y="273" w="32" h="32"/>
+    <sprite n="poisondarttrap" x="35" y="273" w="32" h="32"/>
+    <sprite n="poisongastrap" x="69" y="273" w="32" h="32"/>
+    <sprite n="poisonneedletrap" x="103" y="273" w="32" h="32"/>
+    <sprite n="poormansfate" x="137" y="273" w="32" h="32"/>
+    <sprite n="quadruplecrossbowtrap" x="171" y="273" w="32" h="32"/>
+    <sprite n="quadrupledarttrap" x="205" y="273" w="32" h="32"/>
+    <sprite n="ropesnare" x="1" y="307" w="32" h="32"/>
+    <sprite n="rusttrap" x="35" y="307" w="32" h="32"/>
+    <sprite n="rustyspiketrap" x="69" y="307" w="32" h="32"/>
+    <sprite n="sandtrap" x="103" y="307" w="32" h="32"/>
+    <sprite n="shocktrap" x="137" y="307" w="32" h="32"/>
+    <sprite n="sixarrowtrap" x="171" y="307" w="32" h="32"/>
+    <sprite n="slammingwalltrap" x="205" y="307" w="32" h="32"/>
+    <sprite n="sleepinggastrap" x="1" y="341" w="32" h="32"/>
+    <sprite n="slidetrap" x="35" y="341" w="32" h="32"/>
+    <sprite n="smallbladetrap" x="69" y="341" w="32" h="32"/>
+    <sprite n="smoketrap" x="103" y="341" w="32" h="32"/>
+    <sprite n="speartrap" x="137" y="341" w="32" h="32"/>
+    <sprite n="spelldraintrap" x="171" y="341" w="32" h="32"/>
+    <sprite n="spikedloweringceilingtrap" x="205" y="341" w="32" h="32"/>
+    <sprite n="spikedspringboardtrap" x="1" y="375" w="32" h="32"/>
+    <sprite n="steambursttrap" x="35" y="375" w="32" h="32"/>
+    <sprite n="stenchcloudtrap" x="69" y="375" w="32" h="32"/>
+    <sprite n="stonestompingfoottrap" x="103" y="375" w="32" h="32"/>
+    <sprite n="summoningtrap" x="137" y="375" w="32" h="32"/>
+    <sprite n="teleporttrap" x="171" y="375" w="32" h="32"/>
+    <sprite n="thiefsdemise" x="205" y="375" w="32" h="32"/>
+    <sprite n="triplespeartrap" x="1" y="409" w="32" h="32"/>
+    <sprite n="twistertrap" x="35" y="409" w="32" h="32"/>
+    <sprite n="ungodlybladetrap" x="69" y="409" w="32" h="32"/>
+    <sprite n="webtrap" x="103" y="409" w="32" h="32"/>
+    <sprite n="withertrap" x="137" y="409" w="32" h="32"/>
+</TextureAtlas>

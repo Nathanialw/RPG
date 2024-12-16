@@ -21,6 +21,7 @@
 #include <SDL2/SDL.h>
 #include <vector>
 #include "ui_target_info.h"
+#include "ui_toolbar.h"
 
 namespace Rendering {
 
@@ -36,6 +37,8 @@ namespace Rendering {
         for (auto player_ID: view) {
 
             Action_Bar::Render_Action_Bar(zone, state, camera);
+            UI_toolbar::Render();
+            Event_Handler::Icon_Highlight(zone, state, camera);
 
             if (Bag_UI::bToggleCharacterUI) {
                 //render UI

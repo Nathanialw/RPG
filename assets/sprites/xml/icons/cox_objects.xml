@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:47ecf3f4552ac70de6a6b8f62381b1fc:84b53b3fa7323b9407f7e74e37b4fb84:cf6aaccffc5aca827eb4ade6b858397c$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="cox_objects/cox_objects.png" width="506" height="2009">
+    <sprite n="adze" x="35" y="39" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="aegis" x="1" y="75" w="32" h="32"/>
+    <sprite n="albinodeerpelt" x="1" y="1979" w="32" h="29" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="ale" x="235" y="1327" w="21" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="alembic" x="75" y="1" w="32" h="32"/>
+    <sprite n="allumancarddeck" x="284" y="1289" w="32" h="25" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="allumanholysymbol" x="1" y="109" w="32" h="32"/>
+    <sprite n="allumansongsphere" x="109" y="1" w="32" h="32"/>
+    <sprite n="alpargatas" x="282" y="1316" w="32" h="15" oX="0" oY="8" oW="32" oH="32"/>
+    <sprite n="amentum" x="1" y="143" w="32" h="32"/>
+    <sprite n="ancienttombcarving" x="233" y="1361" w="26" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="animalskinhood" x="237" y="1293" w="25" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="antiquemusicalinstrument" x="143" y="1" w="32" h="32"/>
+    <sprite n="antivenom" x="483" y="1" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="apple" x="69" y="1463" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="arcanecrystal" x="477" y="171" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="archersaxe" x="1" y="177" w="32" h="32"/>
+    <sprite n="archmageskull" x="477" y="205" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="armet" x="177" y="1" w="32" h="32"/>
+    <sprite n="armourpiercingarrows" x="1" y="211" w="32" h="32"/>
+    <sprite n="aspis" x="211" y="1" w="32" h="32"/>
+    <sprite n="atgeir" x="1" y="245" w="32" h="32"/>
+    <sprite n="atlatl" x="245" y="1" w="32" h="32"/>
+    <sprite n="attunementcase" x="1" y="279" w="32" h="32"/>
+    <sprite n="awlpike" x="279" y="1" w="32" h="32"/>
+    <sprite n="axe" x="1" y="313" w="32" h="32"/>
+    <sprite n="backpack" x="313" y="1" w="32" h="32"/>
+    <sprite n="backsword" x="1" y="347" w="32" h="32"/>
+    <sprite n="bagofholding" x="347" y="1" w="32" h="32"/>
+    <sprite n="bagoftricks" x="1" y="381" w="32" h="32"/>
+    <sprite n="bagofwinds" x="381" y="1" w="32" h="32"/>
+    <sprite n="baloraasinianholysymbol" x="1" y="415" w="32" h="32"/>
+    <sprite n="balterionmeteorite" x="415" y="1" w="32" h="32"/>
+    <sprite n="bandage" x="1" y="449" w="32" h="32"/>
+    <sprite n="bandedgauntlets" x="449" y="1" w="32" h="32"/>
+    <sprite n="bandedmailarmour" x="1" y="483" w="32" h="32"/>
+    <sprite n="bandedmailgreaves" x="102" y="1428" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="bannerofpelan" x="1" y="517" w="32" h="32"/>
+    <sprite n="barbute" x="477" y="239" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="bardiche" x="1" y="551" w="32" h="32"/>
+    <sprite n="barrelshield" x="1" y="585" w="32" h="32"/>
+    <sprite n="basketshield" x="35" y="1977" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="bastardsword" x="1" y="619" w="32" h="32"/>
+    <sprite n="batteringram" x="1" y="653" w="32" h="32"/>
+    <sprite n="battleaxe" x="1" y="687" w="32" h="32"/>
+    <sprite n="battlepick" x="1" y="721" w="32" h="32"/>
+    <sprite n="beardedaxe" x="374" y="1123" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="bearskinvest" x="35" y="73" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="becdecorbin" x="1" y="755" w="32" h="32"/>
+    <sprite n="bedroll" x="318" y="1291" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="beer" x="258" y="1327" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="beltaanasbluestone" x="1" y="789" w="32" h="32"/>
+    <sprite n="beltpouch" x="1" y="823" w="32" h="32"/>
+    <sprite n="bentpipe" x="1" y="857" w="32" h="32"/>
+    <sprite n="birdheadedthrowingknife" x="1" y="891" w="32" h="32"/>
+    <sprite n="black square" x="1" y="1" w="36" h="36"/>
+    <sprite n="blackberries" x="1" y="925" w="32" h="32"/>
+    <sprite n="blackenedastrolabe" x="1" y="959" w="32" h="32"/>
+    <sprite n="blackjack" x="1" y="993" w="32" h="32"/>
+    <sprite n="blade" x="1" y="1027" w="32" h="32"/>
+    <sprite n="bloodlacquer" x="264" y="1293" w="16" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="bloodstonenecklace" x="265" y="1258" w="17" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="blowgun" x="1" y="1061" w="32" h="32"/>
+    <sprite n="blunderbuss" x="1" y="1095" w="32" h="32"/>
+    <sprite n="boiledleatherarmour" x="261" y="1361" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="boiledleathergloves" x="239" y="1191" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="boiledleathergreaves" x="318" y="1257" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="bola" x="1" y="1129" w="32" h="32"/>
+    <sprite n="boneflute" x="1" y="1163" w="32" h="32"/>
+    <sprite n="bonemoonshell" x="1" y="1197" w="32" h="32"/>
+    <sprite n="bonescrollcase" x="1" y="1231" w="32" h="32"/>
+    <sprite n="bookofartifactlore" x="316" y="1317" w="32" h="27" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="bookofdarkpacts" x="1" y="1265" w="32" h="32"/>
+    <sprite n="bookofdoom" x="1" y="1299" w="32" h="32"/>
+    <sprite n="bookoflegends" x="1" y="1333" w="32" h="32"/>
+    <sprite n="bookofriddles" x="35" y="107" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="bookofsummoning" x="1" y="1367" w="32" h="32"/>
+    <sprite n="bookofthedead" x="169" y="1361" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="bookofthegods" x="233" y="1395" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="boomerang" x="317" y="1412" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="bootsofelvishkind" x="1" y="1401" w="32" h="32"/>
+    <sprite n="bootsofjumping" x="1" y="1435" w="32" h="32"/>
+    <sprite n="bootsofspeed" x="1" y="1469" w="32" h="32"/>
+    <sprite n="botromssalve" x="35" y="141" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="bottleimp" x="261" y="1395" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="bottomlessbackpack" x="203" y="1327" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="boxofsibbaniancoinage" x="281" y="1333" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="brandistock" x="1" y="1503" w="32" h="32"/>
+    <sprite n="brasshelmet" x="69" y="1497" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="bread" x="351" y="1412" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="breathingmask" x="1" y="1537" w="32" h="32"/>
+    <sprite n="brevalianwitchshat" x="1" y="1571" w="32" h="32"/>
+    <sprite n="brick" x="1" y="1605" w="32" h="32"/>
+    <sprite n="brigandinearmour" x="238" y="1259" w="25" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="brigandineboots" x="349" y="1378" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="brigandinegauntlets" x="477" y="273" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="brigandinegreaves" x="477" y="307" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="broadaxe" x="1" y="1639" w="32" h="32"/>
+    <sprite n="broadsword" x="1" y="1673" w="32" h="32"/>
+    <sprite n="brocadegown" x="477" y="341" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="brokenbottle" x="1" y="1707" w="32" h="32"/>
+    <sprite n="brokenpendulumblade" x="1" y="1741" w="32" h="32"/>
+    <sprite n="bronzeorb" x="1" y="1775" w="32" h="32"/>
+    <sprite n="bronzetorque" x="443" y="1020" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="broochofadaptivebreathing" x="134" y="1428" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="broochofshielding" x="201" y="1361" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="bubblehorn" x="1" y="1809" w="32" h="32"/>
+    <sprite n="bullova" x="1" y="1843" w="32" h="32"/>
+    <sprite n="burgonet" x="1" y="1877" w="32" h="32"/>
+    <sprite n="cabbage" x="1" y="1911" w="32" h="32"/>
+    <sprite n="cacheofancientmanuscripts" x="1" y="1945" w="32" h="32"/>
+    <sprite n="caltrops" x="35" y="175" w="32" h="32"/>
+    <sprite n="candelabra" x="350" y="1317" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="candeliere" x="35" y="209" w="32" h="32"/>
+    <sprite n="candle" x="495" y="1623" w="10" h="24" oX="11" oY="8" oW="32" oH="32"/>
+    <sprite n="candleofinvocation" x="35" y="243" w="32" h="32"/>
+    <sprite n="candlesnuffer" x="35" y="277" w="32" h="32"/>
+    <sprite n="canvasgloves" x="35" y="311" w="32" h="32"/>
+    <sprite n="canvasofrealization" x="476" y="35" w="29" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="canvastrousers" x="377" y="1378" w="16" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="carpentersaxe" x="35" y="345" w="32" h="32"/>
+    <sprite n="carrot" x="477" y="375" w="28" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="carvingknife" x="136" y="1395" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="catoninetails" x="35" y="379" w="32" h="32"/>
+    <sprite n="cattleskewer" x="35" y="413" w="32" h="32"/>
+    <sprite n="cementdust" x="442" y="1048" w="32" h="20" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="cervelliere" x="385" y="1480" w="31" h="18" oX="1" oY="5" oW="32" oH="32"/>
+    <sprite n="chainmailarmour" x="35" y="447" w="32" h="32"/>
+    <sprite n="chainmailboots" x="35" y="481" w="32" h="32"/>
+    <sprite n="chainmailcoif" x="273" y="1157" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="chainmailgauntlets" x="385" y="1412" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="chainmailleggings" x="101" y="1463" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="chainwhip" x="413" y="1190" w="25" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="chakram" x="35" y="515" w="32" h="32"/>
+    <sprite n="chariotofblood" x="474" y="1156" w="31" h="27" oX="1" oY="4" oW="32" oH="32"/>
+    <sprite n="charmofoblar" x="385" y="1446" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="chemicalresistantgloves" x="477" y="409" w="28" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="cherries" x="204" y="1395" w="27" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="chimesofhunger" x="419" y="1496" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="chimesofopening" x="419" y="1530" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="chitinplating" x="35" y="549" w="32" h="32"/>
+    <sprite n="chopper" x="101" y="1497" w="19" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="chui" x="35" y="583" w="32" h="32"/>
+    <sprite n="cider" x="69" y="1531" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="circularblade" x="35" y="617" w="32" h="32"/>
+    <sprite n="clava" x="35" y="651" w="32" h="32"/>
+    <sprite n="claymore" x="35" y="685" w="32" h="32"/>
+    <sprite n="cleaver" x="69" y="1565" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="cloakofcamouflage" x="413" y="1258" w="26" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="cloakofprotection" x="35" y="719" w="32" h="32"/>
+    <sprite n="cloakofshadows" x="35" y="753" w="32" h="32"/>
+    <sprite n="clotharmour" x="69" y="1599" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="clotharmwrapping" x="441" y="1070" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="clothcap" x="35" y="787" w="32" h="32"/>
+    <sprite n="club" x="35" y="821" w="32" h="32"/>
+    <sprite n="coconut" x="317" y="1438" w="32" h="24" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="codexofdivinewonders" x="477" y="443" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="coilofrope" x="35" y="855" w="32" h="32"/>
+    <sprite n="coldtamarancoffee" x="440" y="1128" w="32" h="27" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="coldvorduviantea" x="351" y="1440" w="32" h="25" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="compass" x="384" y="1236" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="compositebow" x="307" y="1123" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="compoundbow" x="307" y="1191" w="30" h="31" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="confoundingrobe" x="341" y="1089" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="cookedbeef" x="35" y="889" w="32" h="32"/>
+    <sprite n="cookedboar" x="170" y="1395" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="cookedfish" x="35" y="923" w="32" h="32"/>
+    <sprite n="cookedgoose" x="35" y="957" w="32" h="32"/>
+    <sprite n="cookedmanflesh" x="35" y="991" w="32" h="32"/>
+    <sprite n="cookedmutton" x="35" y="1025" w="32" h="32"/>
+    <sprite n="cookedmysterymeat" x="192" y="1429" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="cookedpheasant" x="226" y="1429" w="32" h="28"/>
+    <sprite n="cookedrabbit" x="35" y="1059" w="32" h="32"/>
+    <sprite n="cookedvenison" x="35" y="1093" w="32" h="32"/>
+    <sprite n="cookingpot" x="35" y="1127" w="32" h="32"/>
+    <sprite n="coppermask" x="375" y="1055" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="corruptastrolabe" x="409" y="1021" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="corseque" x="35" y="1161" w="32" h="32"/>
+    <sprite n="cowl" x="35" y="1195" w="32" h="32"/>
+    <sprite n="crackedhalo" x="408" y="1123" w="30" h="31" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="crackedportalstone" x="35" y="1229" w="32" h="32"/>
+    <sprite n="crateofimportedtobacco" x="158" y="1459" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="crossbow" x="35" y="1263" w="32" h="32"/>
+    <sprite n="crossbowpistol" x="443" y="987" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="crownofbalance" x="260" y="1429" w="32" h="28" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="crownofcommand" x="192" y="1459" w="32" h="26" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="crownofconfusion" x="226" y="1459" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="crownofmotherhood" x="317" y="1496" w="32" h="24" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="crystaleggofjewelaccumulation" x="477" y="477" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="crystethiangrimoire" x="476" y="69" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="crystethianimpossicube" x="69" y="1633" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="crystethianpuzzlebox" x="35" y="1297" w="32" h="32"/>
+    <sprite n="crystethianseal" x="284" y="1257" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="cudgel" x="35" y="1331" w="32" h="32"/>
+    <sprite n="cupoftsentsunvie" x="413" y="1292" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="cutlass" x="316" y="1346" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="dagger" x="35" y="1365" w="32" h="32"/>
+    <sprite n="dallerithianmedallion" x="35" y="1399" w="32" h="32"/>
+    <sprite n="dart" x="477" y="511" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="deadlyscarab" x="477" y="545" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="deertrap" x="260" y="1459" w="32" h="28" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="delicategoldchain" x="476" y="103" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="demongem" x="35" y="1433" w="32" h="32"/>
+    <sprite n="demonicessence" x="35" y="1467" w="32" h="32"/>
+    <sprite n="demonstone" x="35" y="1501" w="32" h="32"/>
+    <sprite n="demonthishat" x="35" y="1535" w="32" h="32"/>
+    <sprite n="devilsalt" x="35" y="1569" w="32" h="32"/>
+    <sprite n="diademofrulership" x="374" y="1155" w="32" h="21" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="dirk" x="306" y="1224" w="31" h="31" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="disarmingtools" x="440" y="1096" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="disguise" x="413" y="1326" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="disintegrationsphere" x="158" y="1427" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="displacercloak" x="101" y="1531" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="distilledpathogen" x="477" y="579" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="divinewritofbattle" x="35" y="1603" w="32" h="32"/>
+    <sprite n="dorallanholysymbol" x="101" y="1565" w="24" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="dory" x="35" y="1637" w="32" h="32"/>
+    <sprite n="doublecrossbow" x="35" y="1671" w="32" h="32"/>
+    <sprite n="doubleheadedaxe" x="35" y="1705" w="32" h="32"/>
+    <sprite n="dragonblood" x="243" y="1931" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="dragonclawnecklace" x="35" y="1739" w="32" h="32"/>
+    <sprite n="dragoncrown" x="477" y="613" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="dragonfruit" x="35" y="1773" w="32" h="32"/>
+    <sprite n="dragonscalearmour" x="35" y="1807" w="32" h="32"/>
+    <sprite n="dragonscaleboots" x="477" y="647" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="dragonscalegauntlets" x="35" y="1841" w="32" h="32"/>
+    <sprite n="dragonscalegreaves" x="69" y="1667" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="dragonscalehelmet" x="384" y="1270" w="27" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="dragonscaleshield" x="413" y="1360" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="dragonstone" x="35" y="1875" w="32" h="32"/>
+    <sprite n="dragontears" x="129" y="1666" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="dragonteeth" x="35" y="1909" w="32" h="32"/>
+    <sprite n="dreadhorn" x="69" y="1395" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="dualprongeddagger" x="317" y="1464" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="duellingpistol" x="35" y="1943" w="32" h="32"/>
+    <sprite n="dwarvengrog" x="68" y="35" w="32" h="32"/>
+    <sprite n="dwarvenmap" x="68" y="69" w="32" h="32"/>
+    <sprite n="dwarvenmusicbox" x="102" y="35" w="32" h="32"/>
+    <sprite n="dwarvenstatue" x="101" y="1599" w="24" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="earthpassagekeystone" x="68" y="103" w="32" h="32"/>
+    <sprite n="echinacea" x="102" y="69" w="32" h="32"/>
+    <sprite n="elderberrywine" x="287" y="1921" w="14" h="32" oX="9" oY="0" oW="32" oH="32"/>
+    <sprite n="eldritchclaystatuette" x="477" y="681" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="eldritchmarblestatuette" x="136" y="35" w="32" h="32"/>
+    <sprite n="eldritchstonestatuette" x="477" y="715" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="electrumarmband" x="340" y="1156" w="32" h="22" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="elvencloak" x="103" y="1361" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="emptybucket" x="69" y="1701" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="enchantedarrows" x="253" y="1849" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="enchantedbeltpouch" x="69" y="1735" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="enchantedlantern" x="294" y="1429" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="enchantedmanacles" x="68" y="137" w="32" h="32"/>
+    <sprite n="enchantedscrollcase" x="102" y="103" w="32" h="32"/>
+    <sprite n="endlessbucketofwater" x="137" y="1327" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="energizingheadpiece" x="384" y="1304" w="27" h="31" oX="2" oY="1" oW="32" oH="32"/>
+    <sprite n="energycrystal" x="136" y="69" w="32" h="32"/>
+    <sprite n="enormouspinktopaz" x="170" y="35" w="32" h="32"/>
+    <sprite n="enthrallingmask" x="351" y="1467" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="epee" x="102" y="137" w="32" h="32"/>
+    <sprite n="epsilon" x="136" y="103" w="32" h="32"/>
+    <sprite n="estoc" x="170" y="69" w="32" h="32"/>
+    <sprite n="eternalcandle" x="204" y="35" w="32" h="32"/>
+    <sprite n="everywhereshard" x="136" y="137" w="32" h="32"/>
+    <sprite n="eyeoftheelderdragon" x="170" y="103" w="32" h="32"/>
+    <sprite n="eyeslothelm" x="171" y="1293" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="fabergeheart" x="69" y="1769" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="falchion" x="205" y="1259" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="falx" x="204" y="69" w="32" h="32"/>
+    <sprite n="famedpainting" x="238" y="35" w="32" h="32"/>
+    <sprite n="fanaxe" x="170" y="137" w="32" h="32"/>
+    <sprite n="fateshard" x="413" y="1394" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="fauchard" x="204" y="103" w="32" h="32"/>
+    <sprite n="favourofapollothene" x="238" y="69" w="32" h="32"/>
+    <sprite n="fayharp" x="272" y="35" w="32" h="32"/>
+    <sprite n="featheredhat" x="351" y="1497" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="feathersofafallenangel" x="204" y="137" w="32" h="32"/>
+    <sprite n="feighmorianholysymbol" x="413" y="1428" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="fellingaxe" x="238" y="103" w="32" h="32"/>
+    <sprite n="feltgloves" x="272" y="69" w="32" h="32"/>
+    <sprite n="fig" x="306" y="35" w="32" h="32"/>
+    <sprite n="finepaintedtapestry" x="238" y="137" w="32" h="32"/>
+    <sprite n="finetunic" x="69" y="1803" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="fingerlessgloves" x="272" y="103" w="32" h="32"/>
+    <sprite n="firehorn" x="306" y="69" w="32" h="32"/>
+    <sprite n="firstlegionsarcophaguslid" x="101" y="1633" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="fishingline" x="340" y="35" w="32" h="32"/>
+    <sprite n="fistsizeddiamond" x="385" y="1500" w="32" h="29" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="fivriaskanholysymbol" x="272" y="137" w="32" h="32"/>
+    <sprite n="flail" x="440" y="1189" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="flangedmace" x="306" y="103" w="32" h="32"/>
+    <sprite n="flaskofacid" x="101" y="1667" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="flaskofburningoil" x="395" y="1371" w="16" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="flaskofpoison" x="340" y="69" w="32" h="32"/>
+    <sprite n="flatchett" x="374" y="35" w="32" h="32"/>
+    <sprite n="flaxseed" x="306" y="137" w="32" h="32"/>
+    <sprite n="flintlockpistol" x="340" y="103" w="32" h="32"/>
+    <sprite n="flintlockrifle" x="374" y="69" w="32" h="32"/>
+    <sprite n="flyingbroom" x="408" y="35" w="32" h="32"/>
+    <sprite n="flyingcarpet" x="340" y="137" w="32" h="32"/>
+    <sprite n="flyssa" x="374" y="103" w="32" h="32"/>
+    <sprite n="footmanslance" x="408" y="69" w="32" h="32"/>
+    <sprite n="footwraps" x="474" y="1185" w="31" h="20" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="forestaxe" x="442" y="35" w="32" h="32"/>
+    <sprite n="forestbill" x="374" y="137" w="32" h="32"/>
+    <sprite n="froe" x="374" y="1178" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="furarmour" x="69" y="1837" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="furcap" x="408" y="103" w="32" h="32"/>
+    <sprite n="furleggings" x="395" y="1925" w="17" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="furredboots" x="101" y="1701" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="furredgloves" x="442" y="69" w="32" h="32"/>
+    <sprite n="galea" x="408" y="137" w="32" h="32"/>
+    <sprite n="gardenrake" x="442" y="103" w="32" h="32"/>
+    <sprite n="garrotte" x="442" y="137" w="32" h="32"/>
+    <sprite n="gata" x="69" y="171" w="32" h="32"/>
+    <sprite n="gauntletsofswimming" x="69" y="205" w="32" h="32"/>
+    <sprite n="gemencrustedtrollskull" x="103" y="171" w="32" h="32"/>
+    <sprite n="gemoflocking" x="69" y="239" w="32" h="32"/>
+    <sprite n="gemofpower" x="103" y="205" w="32" h="32"/>
+    <sprite n="gemoftrueseeing" x="137" y="171" w="32" h="32"/>
+    <sprite n="gemstuddedholybook" x="69" y="273" w="32" h="32"/>
+    <sprite n="giantbeaverpelt" x="103" y="239" w="32" h="32"/>
+    <sprite n="giantruby" x="440" y="1218" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="gianttrophy" x="137" y="205" w="32" h="32"/>
+    <sprite n="gingerbread" x="339" y="1180" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="gingko" x="171" y="171" w="32" h="32"/>
+    <sprite n="gladius" x="239" y="1224" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="glaive" x="69" y="307" w="32" h="32"/>
+    <sprite n="globeofswirlingflame" x="69" y="1871" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="gloveofexpertise" x="127" y="1530" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="gloveofpassage" x="127" y="1564" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="gloveofviolence" x="476" y="137" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="glowingcube" x="103" y="273" w="32" h="32"/>
+    <sprite n="gnomishexplosives" x="339" y="1212" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="gnomishtickets" x="137" y="239" w="32" h="32"/>
+    <sprite n="goatskullheaddress" x="171" y="205" w="32" h="32"/>
+    <sprite n="goblinexplosives" x="127" y="1598" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="goblinfetish" x="205" y="171" w="32" h="32"/>
+    <sprite n="goldbondedivorysceptre" x="490" y="1691" w="15" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="goldbucklesetwithpearls" x="440" y="1157" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="goldcollarset" x="219" y="1589" w="32" h="29" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="goldearring" x="294" y="1463" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="goldenapple" x="69" y="341" w="32" h="32"/>
+    <sprite n="goldenastrolabe" x="69" y="1905" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="goldenbutterflyfigurine" x="69" y="1939" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="goldeneggofwealth" x="103" y="307" w="32" h="32"/>
+    <sprite n="goldenkey" x="137" y="273" w="32" h="32"/>
+    <sprite n="goldenskull" x="477" y="749" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="goldenstatue" x="411" y="1799" w="12" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="goldenurn" x="285" y="1361" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="goldidol" x="253" y="1883" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="goldleafcrown" x="373" y="1204" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="goldmask" x="219" y="1907" w="32" h="22" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="goldpan" x="219" y="1620" w="32" h="29" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="goldring" x="127" y="1632" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="golemassemblymanual" x="171" y="239" w="32" h="32"/>
+    <sprite n="gossamershroud" x="306" y="1157" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="gothicplatemailarmour" x="69" y="1973" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="gourd" x="477" y="783" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="grapes" x="101" y="1735" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="grapplinghook" x="205" y="205" w="32" h="32"/>
+    <sprite n="greataxe" x="239" y="171" w="32" h="32"/>
+    <sprite n="greathelm" x="477" y="817" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="greatpick" x="69" y="375" w="32" h="32"/>
+    <sprite n="greatsword" x="103" y="341" w="32" h="32"/>
+    <sprite n="greenstoneclub" x="137" y="307" w="32" h="32"/>
+    <sprite n="grog" x="287" y="1955" w="14" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="guisarme" x="171" y="273" w="32" h="32"/>
+    <sprite n="haftedaxe" x="205" y="239" w="32" h="32"/>
+    <sprite n="halberd" x="239" y="205" w="32" h="32"/>
+    <sprite n="hammer" x="273" y="171" w="32" h="32"/>
+    <sprite n="hammerandnails" x="69" y="409" w="32" h="32"/>
+    <sprite n="handaxe" x="273" y="1191" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="handcannon" x="103" y="375" w="32" h="32"/>
+    <sprite n="handcrankedpowerflail" x="137" y="341" w="32" h="32"/>
+    <sprite n="handmirror" x="386" y="1857" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="handofglory" x="171" y="307" w="32" h="32"/>
+    <sprite n="handwraps" x="219" y="1719" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="hasta" x="205" y="273" w="32" h="32"/>
+    <sprite n="hatchet" x="239" y="239" w="32" h="32"/>
+    <sprite n="headdressoftelepathy" x="285" y="1395" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="healthtotem" x="273" y="205" w="32" h="32"/>
+    <sprite n="heatershield" x="307" y="171" w="32" h="32"/>
+    <sprite n="heatresistantboots" x="69" y="443" w="32" h="32"/>
+    <sprite n="heavycrossbow" x="103" y="409" w="32" h="32"/>
+    <sprite n="heavyhorselance" x="137" y="375" w="32" h="32"/>
+    <sprite n="heavyknobbedclub" x="171" y="341" w="32" h="32"/>
+    <sprite n="heavysilverbuckle" x="205" y="307" w="32" h="32"/>
+    <sprite n="heavysilverchaincollar" x="239" y="273" w="32" h="32"/>
+    <sprite n="heavystick" x="317" y="1378" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="helmet" x="283" y="1497" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="hematitetalisman" x="273" y="239" w="32" h="32"/>
+    <sprite n="hidearmour" x="307" y="205" w="32" h="32"/>
+    <sprite n="hideboots" x="475" y="1089" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="hidegloves" x="341" y="171" w="32" h="32"/>
+    <sprite n="hidehelm" x="69" y="477" w="32" h="32"/>
+    <sprite n="hideleggings" x="384" y="1891" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="highhardleatherboots" x="129" y="1700" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="highpoweramulet" x="476" y="1055" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="highpoweramulet2" x="477" y="851" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="highpoweramulet3" x="384" y="1337" w="27" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="highpoweramulet4" x="434" y="1896" w="14" h="32" oX="9" oY="0" oW="32" oH="32"/>
+    <sprite n="highpoweramulet5" x="101" y="1769" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="highpoweramulet6" x="490" y="1895" w="14" h="32" oX="9" oY="0" oW="32" oH="32"/>
+    <sprite n="highpoweramulet7" x="408" y="1156" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="highpoweramulet8" x="477" y="885" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="highpoweramulet9" x="103" y="443" w="32" h="32"/>
+    <sprite n="highpoweramulet10" x="129" y="1734" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="highpowerring" x="137" y="409" w="32" h="32"/>
+    <sprite n="highpowerring2" x="473" y="1247" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="highpowerring3" x="340" y="1244" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="highpowerring4" x="283" y="1523" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="highpowerring5" x="351" y="1527" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="highpowerring6" x="171" y="375" w="32" h="32"/>
+    <sprite n="highpowerring7" x="383" y="1617" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="highpowerring8" x="205" y="341" w="32" h="32"/>
+    <sprite n="highpowerring9" x="239" y="307" w="32" h="32"/>
+    <sprite n="highpowerring10" x="273" y="273" w="32" h="32"/>
+    <sprite n="highpowerscroll" x="473" y="1279" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="highsoftleatherboots" x="373" y="1925" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="hoe" x="307" y="239" w="32" h="32"/>
+    <sprite n="holywater" x="416" y="1564" w="23" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="honeycomb" x="341" y="205" w="32" h="32"/>
+    <sprite n="hooksword" x="375" y="171" w="32" h="32"/>
+    <sprite n="hornanholysymbol" x="69" y="511" w="32" h="32"/>
+    <sprite n="hornofcalling" x="103" y="477" w="32" h="32"/>
+    <sprite n="hornofcollapse" x="137" y="443" w="32" h="32"/>
+    <sprite n="hornofdeafening" x="171" y="409" w="32" h="32"/>
+    <sprite n="hornoffehrat" x="205" y="375" w="32" h="32"/>
+    <sprite n="hornofplenty" x="239" y="341" w="32" h="32"/>
+    <sprite n="hottamarancoffee" x="273" y="307" w="32" h="32"/>
+    <sprite n="hotvorduviantea" x="307" y="273" w="32" h="32"/>
+    <sprite n="hsingsingtoxin" x="265" y="1955" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="hugesackofdiamonds" x="341" y="239" w="32" h="32"/>
+    <sprite n="hugesapphire" x="385" y="1531" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="huntersaxe" x="375" y="205" w="32" h="32"/>
+    <sprite n="hurlbat" x="409" y="171" w="32" h="32"/>
+    <sprite n="icecrystalfinery" x="280" y="1553" w="32" h="28" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="icecrystalpowder" x="69" y="545" w="32" h="32"/>
+    <sprite n="icepick" x="103" y="511" w="32" h="32"/>
+    <sprite n="igneouscloak" x="137" y="477" w="32" h="32"/>
+    <sprite n="incantationsforspecialoccasions" x="171" y="443" w="32" h="32"/>
+    <sprite n="incense" x="392" y="1669" w="23" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="incenseofmeditation" x="394" y="1959" w="19" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="indulgence" x="474" y="1207" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="infernallamp" x="205" y="409" w="32" h="32"/>
+    <sprite n="infinitespellbook" x="239" y="375" w="32" h="32"/>
+    <sprite n="inquisitorscrosier" x="273" y="341" w="32" h="32"/>
+    <sprite n="inspirationalwritings" x="348" y="1555" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="ironboots" x="477" y="919" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="irongauntlets" x="307" y="307" w="32" h="32"/>
+    <sprite n="irongreaves" x="418" y="1684" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="ivoryball" x="341" y="273" w="32" h="32"/>
+    <sprite n="ivorydie" x="375" y="239" w="32" h="32"/>
+    <sprite n="ivorydragonmask" x="425" y="1794" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="ivoryfigurine" x="409" y="205" w="32" h="32"/>
+    <sprite n="jackalopefoot" x="443" y="171" w="32" h="32"/>
+    <sprite n="jackolantern" x="69" y="579" w="32" h="32"/>
+    <sprite n="jadefigurine" x="413" y="1224" w="25" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="jadegamingpiece" x="418" y="1718" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="jaggedrock" x="103" y="545" w="32" h="32"/>
+    <sprite n="jasperseal" x="137" y="511" w="32" h="32"/>
+    <sprite n="javelin" x="340" y="1123" w="32" h="31"/>
+    <sprite n="jetnecklace" x="171" y="477" w="32" h="32"/>
+    <sprite n="jewelofglitteringwealth" x="205" y="443" w="32" h="32"/>
+    <sprite n="jewelweed" x="239" y="409" w="32" h="32"/>
+    <sprite n="jugofhessianperfume" x="273" y="375" w="32" h="32"/>
+    <sprite n="jugofinfinitepotions" x="101" y="1803" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="juryriggedalarm" x="307" y="341" w="32" h="32"/>
+    <sprite n="kalkanshield" x="341" y="307" w="32" h="32"/>
+    <sprite n="kanabo" x="375" y="273" w="32" h="32"/>
+    <sprite n="kaskara" x="409" y="239" w="32" h="32"/>
+    <sprite n="katar" x="443" y="205" w="32" h="32"/>
+    <sprite n="kestros" x="69" y="613" w="32" h="32"/>
+    <sprite n="kettlehat" x="281" y="1643" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="khanjar" x="103" y="579" w="32" h="32"/>
+    <sprite n="khopesh" x="137" y="545" w="32" h="32"/>
+    <sprite n="kilij" x="171" y="511" w="32" h="32"/>
+    <sprite n="kindling" x="205" y="477" w="32" h="32"/>
+    <sprite n="kingstone" x="239" y="443" w="32" h="32"/>
+    <sprite n="kiteshield" x="101" y="1837" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="knife" x="314" y="1553" w="32" h="28" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="knout" x="273" y="409" w="32" h="32"/>
+    <sprite n="knuckledusters" x="307" y="375" w="32" h="32"/>
+    <sprite n="kusarigama" x="341" y="341" w="32" h="32"/>
+    <sprite n="labrys" x="375" y="307" w="32" h="32"/>
+    <sprite n="lamellararmour" x="409" y="273" w="32" h="32"/>
+    <sprite n="lamellarboots" x="443" y="239" w="32" h="32"/>
+    <sprite n="lamellargauntlets" x="352" y="1278" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="lamellargreaves" x="477" y="953" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lampoil" x="101" y="1871" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lantern" x="101" y="1905" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="largeanimalpelt" x="69" y="647" w="32" h="32"/>
+    <sprite n="largeemerald" x="103" y="613" w="32" h="32"/>
+    <sprite n="largesack" x="137" y="579" w="32" h="32"/>
+    <sprite n="largesilverbowl" x="315" y="1643" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="largeskeletonkey" x="171" y="545" w="32" h="32"/>
+    <sprite n="lasso" x="205" y="511" w="32" h="32"/>
+    <sprite n="lastavianholysymbol" x="239" y="477" w="32" h="32"/>
+    <sprite n="lavender" x="101" y="1939" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="leatherarmour" x="122" y="1496" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="leathercap" x="473" y="1311" w="32" h="30" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="leathergloves" x="477" y="987" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="leathergreaves" x="101" y="1973" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="leeks" x="273" y="443" w="32" h="32"/>
+    <sprite n="legendarycauldron" x="307" y="409" w="32" h="32"/>
+    <sprite n="lensofruneclarity" x="341" y="375" w="32" h="32"/>
+    <sprite n="lightcrossbow" x="374" y="1089" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="lighthorselance" x="375" y="341" w="32" h="32"/>
+    <sprite n="lightplatedboots" x="129" y="1768" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="linengloves" x="409" y="307" w="32" h="32"/>
+    <sprite n="linenhosiery" x="281" y="1583" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="litcandelabra" x="129" y="1802" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="litcandle" x="372" y="1244" w="10" h="32" oX="11" oY="0" oW="32" oH="32"/>
+    <sprite n="lithearmband" x="441" y="1247" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="litlantern" x="253" y="1585" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="littorch" x="408" y="1055" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="lochaber" x="443" y="273" w="32" h="32"/>
+    <sprite n="lockpick" x="69" y="681" w="32" h="32"/>
+    <sprite n="longbow" x="1" y="39" w="32" h="34"/>
+    <sprite n="longclubstaffspear" x="103" y="647" w="32" h="32"/>
+    <sprite n="longoar" x="137" y="613" w="32" h="32"/>
+    <sprite n="longseax" x="39" y="1" w="34" h="32"/>
+    <sprite n="longsharpenedstick" x="171" y="579" w="32" h="32"/>
+    <sprite n="longsword" x="205" y="545" w="32" h="32"/>
+    <sprite n="lowhardleatherboots" x="315" y="1583" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet" x="442" y="1689" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet2" x="253" y="1718" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet3" x="159" y="1861" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet4" x="477" y="1021" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet5" x="219" y="1555" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet6" x="487" y="1793" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet7" x="441" y="1281" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet8" x="487" y="1827" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet9" x="430" y="1862" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpoweramulet10" x="158" y="1793" w="25" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpowerring" x="239" y="511" w="32" h="32"/>
+    <sprite n="lowpowerring2" x="273" y="477" w="32" h="32"/>
+    <sprite n="lowpowerring3" x="159" y="1895" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpowerring4" x="279" y="1771" w="32" h="18" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="lowpowerring5" x="307" y="443" w="32" h="32"/>
+    <sprite n="lowpowerring6" x="253" y="1619" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpowerring7" x="473" y="1343" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lowpowerring8" x="157" y="1759" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpowerring9" x="341" y="409" w="32" h="32"/>
+    <sprite n="lowpowerring10" x="441" y="1315" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="lowpowerscroll" x="349" y="1583" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="lowsoftleatherboots" x="473" y="1375" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="lucernehammer" x="375" y="375" w="32" h="32"/>
+    <sprite n="luckstone" x="409" y="341" w="32" h="32"/>
+    <sprite n="mace" x="443" y="307" w="32" h="32"/>
+    <sprite n="maceax" x="69" y="715" w="32" h="32"/>
+    <sprite n="machete" x="69" y="1429" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="macuahuitl" x="103" y="681" w="32" h="32"/>
+    <sprite n="magicbeans" x="137" y="647" w="32" h="32"/>
+    <sprite n="magicfigurine" x="418" y="1462" w="21" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="magiclockpicks" x="171" y="613" w="32" h="32"/>
+    <sprite n="magicmaps" x="205" y="579" w="32" h="32"/>
+    <sprite n="magicmeadpitcher" x="158" y="1827" w="25" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="magicsatchel" x="239" y="545" w="32" h="32"/>
+    <sprite n="magictorch" x="327" y="1925" w="21" h="32" oX="10" oY="0" oW="32" oH="32"/>
+    <sprite n="magimechanicalborebox" x="273" y="511" w="32" h="32"/>
+    <sprite n="maingauche" x="307" y="477" w="32" h="32"/>
+    <sprite n="makeshiftbow" x="341" y="443" w="32" h="32"/>
+    <sprite n="malachiteward" x="375" y="409" w="32" h="32"/>
+    <sprite n="malevianholysymbol" x="409" y="375" w="32" h="32"/>
+    <sprite n="mallet" x="443" y="341" w="32" h="32"/>
+    <sprite n="mambele" x="69" y="749" w="32" h="32"/>
+    <sprite n="mameluke" x="103" y="715" w="32" h="32"/>
+    <sprite n="mammenaxe" x="245" y="1752" w="32" h="27" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="mancatcher" x="137" y="681" w="32" h="32"/>
+    <sprite n="mandolin" x="171" y="647" w="32" h="32"/>
+    <sprite n="mango" x="185" y="1685" w="32" h="29" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="map" x="205" y="613" w="32" h="32"/>
+    <sprite n="maskofdeception" x="159" y="1929" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="maskofmadness" x="159" y="1963" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="massivechunkofamber" x="102" y="1395" w="32" h="31" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="maul" x="239" y="579" w="32" h="32"/>
+    <sprite n="mead" x="359" y="1823" w="16" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="medallionofdemoncontact" x="273" y="545" w="32" h="32"/>
+    <sprite n="mediumhorselance" x="307" y="511" w="32" h="32"/>
+    <sprite n="metalbookcomponent" x="341" y="477" w="32" h="32"/>
+    <sprite n="meteorhammer" x="375" y="443" w="32" h="32"/>
+    <sprite n="mezcal" x="435" y="1930" w="14" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet" x="442" y="1723" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet2" x="129" y="1836" w="27" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet3" x="414" y="1896" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet4" x="450" y="1895" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet5" x="237" y="1965" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet6" x="465" y="1793" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet7" x="392" y="1703" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet8" x="279" y="1737" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet9" x="441" y="1349" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="midpoweramulet10" x="447" y="1791" w="16" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="midpowerring" x="382" y="1561" w="32" h="20" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="midpowerring2" x="473" y="1407" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="midpowerring3" x="409" y="409" w="32" h="32"/>
+    <sprite n="midpowerring4" x="443" y="375" w="32" h="32"/>
+    <sprite n="midpowerring5" x="69" y="783" w="32" h="32"/>
+    <sprite n="midpowerring6" x="103" y="749" w="32" h="32"/>
+    <sprite n="midpowerring7" x="473" y="1439" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="midpowerring8" x="466" y="1691" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="midpowerring9" x="137" y="715" w="32" h="32"/>
+    <sprite n="midpowerring10" x="171" y="681" w="32" h="32"/>
+    <sprite n="midpowerscroll" x="205" y="647" w="32" h="32"/>
+    <sprite n="midsizedanimalpelt" x="239" y="613" w="32" h="32"/>
+    <sprite n="mighttotem" x="441" y="1383" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="mightybelt" x="313" y="1771" w="32" h="20" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="militaryfork" x="474" y="1123" w="31" h="31" oX="1" oY="1" oW="32" oH="32"/>
+    <sprite n="mirrorofdarkduplication" x="441" y="1417" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="mirrorofdestruction" x="273" y="579" w="32" h="32"/>
+    <sprite n="mirroroflocation" x="307" y="545" w="32" h="32"/>
+    <sprite n="mithrilarmour" x="129" y="1870" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="mithrilboots" x="341" y="511" w="32" h="32"/>
+    <sprite n="mithrilgauntlets" x="375" y="477" w="32" h="32"/>
+    <sprite n="mithrilgreaves" x="358" y="1891" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="mnemonicenhancer" x="409" y="443" w="32" h="32"/>
+    <sprite n="moonshine" x="469" y="1657" w="23" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="moralcompass" x="443" y="409" w="32" h="32"/>
+    <sprite n="morningstar" x="441" y="1451" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="mosspaddedboots" x="129" y="1904" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="multiheadedflail" x="69" y="817" w="32" h="32"/>
+    <sprite n="murkerianpipeweed" x="349" y="1643" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="mysticpanbalance" x="103" y="783" w="32" h="32"/>
+    <sprite n="mythiccarvedbraceletset" x="137" y="749" w="32" h="32"/>
+    <sprite n="nasalhelm" x="171" y="715" w="32" h="32"/>
+    <sprite n="nautilusmask" x="205" y="681" w="32" h="32"/>
+    <sprite n="net" x="239" y="647" w="32" h="32"/>
+    <sprite n="nimcha" x="273" y="613" w="32" h="32"/>
+    <sprite n="nurtureddinosauregg" x="129" y="1938" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="nurtureddragonegg" x="308" y="1669" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="oathbladeofsalnash" x="441" y="1485" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="oiloffieryburning" x="441" y="1519" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="oilofsharpening" x="308" y="1703" w="26" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="oilofspatialcompression" x="391" y="1737" w="25" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="ono" x="307" y="579" w="32" h="32"/>
+    <sprite n="onyxsceptre" x="341" y="545" w="32" h="32"/>
+    <sprite n="orbofknowledge" x="331" y="1891" w="25" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="orichalcuminlaidsaddle" x="375" y="511" w="32" h="32"/>
+    <sprite n="otherworldlygauntlet" x="466" y="1725" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="othitlosstairwish" x="409" y="477" w="32" h="32"/>
+    <sprite n="paddedarmour" x="443" y="443" w="32" h="32"/>
+    <sprite n="paddedgloves" x="69" y="851" w="32" h="32"/>
+    <sprite n="paddedtrousers" x="470" y="1895" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="paddlestaff" x="103" y="817" w="32" h="32"/>
+    <sprite n="padlock" x="307" y="1737" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="pagandrum" x="137" y="783" w="32" h="32"/>
+    <sprite n="palantirofhardreality" x="441" y="1553" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="pantosianbookofwhisperedsecrets" x="336" y="1669" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="pantosianholysymbol" x="121" y="1462" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="paperbookcomponent" x="281" y="1613" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="paperhat" x="383" y="1643" w="32" h="24" oX="0" oY="4" oW="32" oH="32"/>
+    <sprite n="parmashield" x="171" y="749" w="32" h="32"/>
+    <sprite n="parsnip" x="205" y="715" w="32" h="32"/>
+    <sprite n="partisan" x="239" y="681" w="32" h="32"/>
+    <sprite n="passionfruit" x="273" y="647" w="32" h="32"/>
+    <sprite n="patchworktrousers" x="417" y="1616" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="pavise" x="418" y="1752" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="pear" x="359" y="1857" w="25" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="pearlofpower" x="307" y="613" w="32" h="32"/>
+    <sprite n="pearlofwisdom" x="341" y="579" w="32" h="32"/>
+    <sprite n="pearlring" x="375" y="545" w="32" h="32"/>
+    <sprite n="pearlstuddedcrossbeltset" x="409" y="511" w="32" h="32"/>
+    <sprite n="peasantaxe" x="443" y="477" w="32" h="32"/>
+    <sprite n="pebble" x="69" y="885" w="32" h="32"/>
+    <sprite n="perfectsibbaniancarpet" x="103" y="851" w="32" h="32"/>
+    <sprite n="periaptofelementalresistance" x="129" y="1972" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="pheasanttrap" x="315" y="1613" w="32" h="28" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="philosophersstone" x="153" y="1487" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="phylacteryoffaithfulness" x="415" y="1930" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="pickaxe" x="473" y="1471" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="pike" x="137" y="817" w="32" h="32"/>
+    <sprite n="pilgrimstoken" x="171" y="783" w="32" h="32"/>
+    <sprite n="pilum" x="205" y="749" w="32" h="32"/>
+    <sprite n="pinkcoralcarving" x="239" y="715" w="32" h="32"/>
+    <sprite n="pitchfork" x="273" y="681" w="32" h="32"/>
+    <sprite n="pixiedust" x="307" y="647" w="32" h="32"/>
+    <sprite n="platemailarmour" x="155" y="1691" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="platinumchoker" x="265" y="1989" w="32" h="19" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="platinumcoronet" x="413" y="1598" w="32" h="16" oX="0" oY="8" oW="32" oH="32"/>
+    <sprite n="plum" x="473" y="1503" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="plumbata" x="341" y="613" w="32" h="32"/>
+    <sprite n="poleaxe" x="375" y="579" w="32" h="32"/>
+    <sprite n="polisheddragonskull" x="185" y="1716" w="32" h="29" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="polishedhalo" x="326" y="1959" w="32" h="18" oX="0" oY="6" oW="32" oH="32"/>
+    <sprite n="pomegranate" x="409" y="545" w="32" h="32"/>
+    <sprite n="port" x="447" y="1825" w="16" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="portablewell" x="155" y="1725" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="potionofheatimmunity" x="185" y="1977" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="potionofpoisonimmunity" x="211" y="1977" w="24" h="31" oX="4" oY="1" oW="32" oH="32"/>
+    <sprite n="poulaines" x="154" y="1657" w="29" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="prayerbeads" x="443" y="511" w="32" h="32"/>
+    <sprite n="primrose" x="69" y="919" w="32" h="32"/>
+    <sprite n="psionicforeheadjewel" x="442" y="1757" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="quarterstaff" x="103" y="885" w="32" h="32"/>
+    <sprite n="quillofdivinedesign" x="137" y="851" w="32" h="32"/>
+    <sprite n="quiltedarmour" x="219" y="1685" w="28" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="quiltedgloves" x="171" y="817" w="32" h="32"/>
+    <sprite n="quiltedtrousers" x="466" y="1759" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="quinnsbook" x="205" y="783" w="32" h="32"/>
+    <sprite n="rabbitsnare" x="239" y="749" w="32" h="32"/>
+    <sprite n="raggedbreeches" x="415" y="1964" w="16" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="ranseur" x="273" y="715" w="32" h="32"/>
+    <sprite n="rapier" x="307" y="681" w="32" h="32"/>
+    <sprite n="rarebook" x="341" y="647" w="32" h="32"/>
+    <sprite n="rawhunkofamethyst" x="375" y="613" w="32" h="32"/>
+    <sprite n="recliningmoonblade" x="409" y="579" w="32" h="32"/>
+    <sprite n="recurvebow" x="443" y="545" w="32" h="32"/>
+    <sprite n="redclaw" x="249" y="1653" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="repairstone" x="425" y="1828" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="repeatingcrossbow" x="69" y="953" w="32" h="32"/>
+    <sprite n="rextoothdart" x="103" y="919" w="32" h="32"/>
+    <sprite n="rextoothlance" x="137" y="885" w="32" h="32"/>
+    <sprite n="rhomphia" x="171" y="851" w="32" h="32"/>
+    <sprite n="riftegg" x="205" y="817" w="32" h="32"/>
+    <sprite n="ringmailarmour" x="185" y="1487" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="ringmailboots" x="383" y="1583" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="ringmailgauntlets" x="185" y="1747" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="ringmailleggings" x="465" y="1827" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="robeofusefulitems" x="336" y="1703" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="robewithdecorativetrim" x="215" y="1747" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="rockcrystalstatuette" x="217" y="1487" w="30" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="rod" x="239" y="783" w="32" h="32"/>
+    <sprite n="rondache" x="273" y="749" w="32" h="32"/>
+    <sprite n="ropeofclimbing" x="219" y="1879" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="rotgut" x="490" y="1725" w="15" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="rum" x="490" y="1759" w="15" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="rustyscalpel" x="307" y="715" w="32" h="32"/>
+    <sprite n="sabatons" x="350" y="1351" w="32" h="25" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="sackofshinyrocks" x="341" y="681" w="32" h="32"/>
+    <sprite n="sackofstones" x="335" y="1737" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="sacramentalwine" x="375" y="647" w="32" h="32"/>
+    <sprite n="sacredbone" x="409" y="613" w="32" h="32"/>
+    <sprite n="sagaris" x="443" y="579" w="32" h="32"/>
+    <sprite n="sallet" x="473" y="1535" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="sandals" x="69" y="987" w="32" h="32"/>
+    <sprite n="sandstonetablet" x="136" y="1361" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="satchel" x="103" y="953" w="32" h="32"/>
+    <sprite n="sawtoothedflatchett" x="137" y="919" w="32" h="32"/>
+    <sprite n="scalemailarmour" x="171" y="885" w="32" h="32"/>
+    <sprite n="scalemailboots" x="185" y="1781" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="scalemailgauntlets" x="205" y="851" w="32" h="32"/>
+    <sprite n="scalemailgreaves" x="417" y="1650" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="scarabofprotection" x="239" y="817" w="32" h="32"/>
+    <sprite n="scarleteggofmadness" x="273" y="783" w="32" h="32"/>
+    <sprite n="sceptre" x="307" y="749" w="32" h="32"/>
+    <sprite n="sceptreofresurrection" x="341" y="715" w="32" h="32"/>
+    <sprite n="scimitar" x="153" y="1521" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="scraps" x="249" y="1489" w="32" h="29" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="scryingmirror" x="364" y="1669" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="scutumshield" x="364" y="1703" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="scythe" x="170" y="1327" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="seedofdefense" x="375" y="681" w="32" h="32"/>
+    <sprite n="selfreplicatingcoin" x="409" y="647" w="32" h="32"/>
+    <sprite n="sentinelseeds" x="443" y="613" w="32" h="32"/>
+    <sprite n="serpentinedagger" x="69" y="1021" w="32" h="32"/>
+    <sprite n="serpentstick" x="103" y="987" w="32" h="32"/>
+    <sprite n="setofplatinumdisks" x="137" y="953" w="32" h="32"/>
+    <sprite n="sewerportal" x="171" y="919" w="32" h="32"/>
+    <sprite n="sextantofwayfinding" x="205" y="885" w="32" h="32"/>
+    <sprite n="shamansmask" x="204" y="1293" w="31" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="shamshir" x="239" y="851" w="32" h="32"/>
+    <sprite n="sharktoothclub" x="273" y="817" w="32" h="32"/>
+    <sprite n="sheepskinjerkin" x="215" y="1781" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="shepherdsaxe" x="307" y="783" w="32" h="32"/>
+    <sprite n="shield" x="341" y="749" w="32" h="32"/>
+    <sprite n="shillellagh" x="375" y="715" w="32" h="32"/>
+    <sprite n="shinyblackeggofdeath" x="409" y="681" w="32" h="32"/>
+    <sprite n="shortbow" x="443" y="647" w="32" h="32"/>
+    <sprite n="shortsword" x="69" y="1055" w="32" h="32"/>
+    <sprite n="shovel" x="103" y="1021" w="32" h="32"/>
+    <sprite n="sica" x="137" y="987" w="32" h="32"/>
+    <sprite n="sickle" x="275" y="1791" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="sigilofdamget" x="171" y="953" w="32" h="32"/>
+    <sprite n="signetring" x="347" y="1771" w="32" h="22" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="silkdress" x="245" y="1781" w="28" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="silvercarafe" x="363" y="1737" w="26" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="silverchalice" x="408" y="1862" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="silvercombset" x="275" y="1819" w="26" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="silvergong" x="205" y="919" w="32" h="32"/>
+    <sprite n="silvermirror" x="185" y="1815" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="silverplatter" x="239" y="885" w="32" h="32"/>
+    <sprite n="silvertweezers" x="273" y="851" w="32" h="32"/>
+    <sprite n="sjambok" x="307" y="817" w="32" h="32"/>
+    <sprite n="sledgehammer" x="341" y="783" w="32" h="32"/>
+    <sprite n="sling" x="375" y="749" w="32" h="32"/>
+    <sprite n="slungshot" x="409" y="715" w="32" h="32"/>
+    <sprite n="smallanimalpelt" x="185" y="1521" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="smallaxe" x="443" y="681" w="32" h="32"/>
+    <sprite n="smallsack" x="249" y="1520" w="32" h="29" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="smallskeletonkey" x="360" y="1959" w="32" h="18" oX="0" oY="7" oW="32" oH="32"/>
+    <sprite n="smallsteelshield" x="69" y="1089" w="32" h="32"/>
+    <sprite n="smallwoodenshield" x="103" y="1055" w="32" h="32"/>
+    <sprite n="smithinghammer" x="137" y="1021" w="32" h="32"/>
+    <sprite n="smokebombs" x="491" y="1929" w="14" h="32" oX="9" oY="0" oW="32" oH="32"/>
+    <sprite n="smokeclimberssalve" x="171" y="987" w="32" h="32"/>
+    <sprite n="snareropesoftheeldertrolls" x="205" y="953" w="32" h="32"/>
+    <sprite n="snowshoes" x="185" y="1909" w="27" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="solariumglobe" x="239" y="919" w="32" h="32"/>
+    <sprite n="soulguidelantern" x="273" y="885" w="32" h="32"/>
+    <sprite n="sovnya" x="307" y="851" w="32" h="32"/>
+    <sprite n="spangenhelm" x="217" y="1521" w="30" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="spatha" x="341" y="817" w="32" h="32"/>
+    <sprite n="spear" x="375" y="783" w="32" h="32"/>
+    <sprite n="spellbook1" x="409" y="749" w="32" h="32"/>
+    <sprite n="spellstone" x="443" y="715" w="32" h="32"/>
+    <sprite n="spentcandelabra" x="326" y="1979" w="26" h="23" oX="3" oY="9" oW="32" oH="32"/>
+    <sprite n="spentcandle" x="415" y="1786" w="25" h="6" oX="3" oY="26" oW="32" oH="32"/>
+    <sprite n="spentincense" x="303" y="1957" w="21" h="30" oX="4" oY="2" oW="32" oH="32"/>
+    <sprite n="spentlantern" x="275" y="1853" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="spenttorch" x="249" y="1687" w="28" h="29" oX="4" oY="3" oW="32" oH="32"/>
+    <sprite n="spidercrown" x="69" y="1123" w="32" h="32"/>
+    <sprite n="spikedchain" x="103" y="1089" w="32" h="32"/>
+    <sprite n="spikedclub" x="137" y="1055" w="32" h="32"/>
+    <sprite n="spiritoil" x="450" y="1861" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="spiritweave" x="171" y="1021" w="32" h="32"/>
+    <sprite n="splintmailarmour" x="215" y="1815" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="splintmailgauntlets" x="205" y="987" w="32" h="32"/>
+    <sprite n="splintmailgreaves" x="275" y="1887" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="spontoon" x="239" y="953" w="32" h="32"/>
+    <sprite n="squareheadaxe" x="273" y="919" w="32" h="32"/>
+    <sprite n="staff" x="307" y="885" w="32" h="32"/>
+    <sprite n="staffsling" x="341" y="851" w="32" h="32"/>
+    <sprite n="stainedglassartwork" x="375" y="817" w="32" h="32"/>
+    <sprite n="starburstmedallion" x="409" y="783" w="32" h="32"/>
+    <sprite n="steelboots" x="185" y="1943" w="27" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="steelbuckler" x="443" y="749" w="32" h="32"/>
+    <sprite n="steelgauntlets" x="69" y="1157" w="32" h="32"/>
+    <sprite n="steelgreaves" x="153" y="1555" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="steelhook" x="103" y="1123" w="32" h="32"/>
+    <sprite n="sthighpowerscroll" x="473" y="1567" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="stingrayspear" x="137" y="1089" w="32" h="32"/>
+    <sprite n="stlowpowerscroll" x="349" y="1613" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="stmidpowerscroll" x="171" y="1055" w="32" h="32"/>
+    <sprite n="stoneofenhancement" x="205" y="1021" w="32" h="32"/>
+    <sprite n="stoneofstationarypurpose" x="239" y="987" w="32" h="32"/>
+    <sprite n="strawhat" x="381" y="1771" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="strengthstone" x="273" y="953" w="32" h="32"/>
+    <sprite n="studdedleatherarmour" x="307" y="919" w="32" h="32"/>
+    <sprite n="studdedleatherboots" x="447" y="1587" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="studdedleathergauntlets" x="443" y="1621" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="studdedleathergreaves" x="303" y="1821" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="summerchalice" x="303" y="1855" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="sunflowerseeds" x="341" y="885" w="32" h="32"/>
+    <sprite n="svardstav" x="375" y="851" w="32" h="32"/>
+    <sprite n="swifttotem" x="472" y="1861" w="20" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="symboloftheshades" x="185" y="1555" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="szakkanjuice" x="409" y="817" w="32" h="32"/>
+    <sprite n="tabar" x="443" y="783" w="32" h="32"/>
+    <sprite n="tableleg" x="69" y="1191" w="32" h="32"/>
+    <sprite n="tabletop" x="443" y="1655" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="talltiowardanholysymbol" x="103" y="1157" w="32" h="32"/>
+    <sprite n="targe" x="137" y="1123" w="32" h="32"/>
+    <sprite n="tarnishedhalo" x="309" y="1793" w="32" h="26" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="tarotcards" x="171" y="1089" w="32" h="32"/>
+    <sprite n="tartankilt" x="214" y="1931" w="27" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="tatteredloincloth" x="263" y="1921" w="22" h="32" oX="5" oY="0" oW="32" oH="32"/>
+    <sprite n="teakwoodbowl" x="343" y="1795" w="32" h="26" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="tearshardoftheforgottengods" x="433" y="1964" w="16" h="32" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="templarshield" x="153" y="1589" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="tenfootpole" x="205" y="1055" w="32" h="32"/>
+    <sprite n="thickapron" x="239" y="1021" w="32" h="32"/>
+    <sprite n="thighboneclub" x="273" y="987" w="32" h="32"/>
+    <sprite n="thigruffsorb" x="307" y="953" w="32" h="32"/>
+    <sprite n="thimbleofgreed" x="341" y="919" w="32" h="32"/>
+    <sprite n="thorntwine" x="375" y="885" w="32" h="32"/>
+    <sprite n="throwingaxe" x="185" y="1587" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="throwingclub" x="409" y="851" w="32" h="32"/>
+    <sprite n="throwingknife" x="443" y="817" w="32" h="32"/>
+    <sprite n="tinderbox" x="69" y="1225" w="32" h="32"/>
+    <sprite n="tinsheet" x="103" y="1191" w="32" h="32"/>
+    <sprite n="tlacochtli" x="137" y="1157" w="32" h="32"/>
+    <sprite n="tomahawk" x="171" y="1123" w="32" h="32"/>
+    <sprite n="tomato" x="205" y="1089" w="32" h="32"/>
+    <sprite n="tome1" x="303" y="1889" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="torch" x="377" y="1826" w="28" h="29" oX="4" oY="3" oW="32" oH="32"/>
+    <sprite n="tortoiseshell" x="153" y="1623" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="towershield" x="245" y="1815" w="28" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="trapbreakercharm" x="331" y="1823" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="travelingcloak" x="350" y="1925" w="21" h="32" oX="6" oY="0" oW="32" oH="32"/>
+    <sprite n="treasuremap" x="239" y="1055" w="32" h="32"/>
+    <sprite n="trexjawbone" x="272" y="1224" w="32" h="31" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="trident" x="273" y="1021" w="32" h="32"/>
+    <sprite n="truncheon" x="307" y="987" w="32" h="32"/>
+    <sprite n="tulwar" x="341" y="953" w="32" h="32"/>
+    <sprite n="turban" x="375" y="919" w="32" h="32"/>
+    <sprite n="turnshoes" x="409" y="885" w="32" h="32"/>
+    <sprite n="twoheadedflail" x="443" y="851" w="32" h="32"/>
+    <sprite n="uncookedbeef" x="69" y="1259" w="32" h="32"/>
+    <sprite n="uncookedboar" x="103" y="1225" w="32" h="32"/>
+    <sprite n="uncookedfish" x="137" y="1191" w="32" h="32"/>
+    <sprite n="uncookedgoose" x="171" y="1157" w="32" h="32"/>
+    <sprite n="uncookedmanflesh" x="205" y="1123" w="32" h="32"/>
+    <sprite n="uncookedmutton" x="239" y="1089" w="32" h="32"/>
+    <sprite n="uncookedmysterymeat" x="185" y="1849" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="uncookedpheasant" x="219" y="1849" w="32" h="28"/>
+    <sprite n="uncookedrabbit" x="273" y="1055" w="32" h="32"/>
+    <sprite n="uncookedvenison" x="307" y="1021" w="32" h="32"/>
+    <sprite n="unjammingkey" x="341" y="987" w="32" h="32"/>
+    <sprite n="valari" x="375" y="953" w="32" h="32"/>
+    <sprite n="valourousbanner" x="409" y="919" w="32" h="32"/>
+    <sprite n="vel" x="407" y="1089" w="31" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="vestonianforgereplica" x="377" y="1799" w="32" h="25" oX="0" oY="3" oW="32" oH="32"/>
+    <sprite n="vestonianholysymbol" x="443" y="885" w="32" h="32"/>
+    <sprite n="vieanbauble" x="69" y="1293" w="32" h="32"/>
+    <sprite n="vieanholysymbol" x="103" y="1259" w="32" h="32"/>
+    <sprite n="volkoboy" x="137" y="1225" w="32" h="32"/>
+    <sprite n="voodoodoll" x="171" y="1191" w="32" h="32"/>
+    <sprite n="vortexorb" x="205" y="1157" w="32" h="32"/>
+    <sprite n="voulge" x="239" y="1123" w="32" h="32"/>
+    <sprite n="waddy" x="273" y="1089" w="32" h="32"/>
+    <sprite n="walnuts" x="473" y="1599" w="32" h="22" oX="0" oY="5" oW="32" oH="32"/>
+    <sprite n="wand" x="307" y="1055" w="32" h="32"/>
+    <sprite n="waraxe" x="341" y="1021" w="32" h="32"/>
+    <sprite n="warclub" x="375" y="987" w="32" h="32"/>
+    <sprite n="wardingportrait" x="409" y="953" w="32" h="32"/>
+    <sprite n="warhammer" x="443" y="919" w="32" h="32"/>
+    <sprite n="warmattock" x="69" y="1327" w="32" h="32"/>
+    <sprite n="warpick" x="279" y="1669" w="27" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="warscythe" x="103" y="1293" w="32" h="32"/>
+    <sprite n="waterfilledbucket" x="185" y="1651" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="weatheredtunic" x="137" y="1259" w="32" h="32"/>
+    <sprite n="weighteddice" x="185" y="1619" w="32" h="30" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="whetstone" x="171" y="1225" w="32" h="32"/>
+    <sprite n="whip" x="205" y="1191" w="32" h="32"/>
+    <sprite n="whiskey" x="451" y="1929" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="wickershield" x="239" y="1157" w="32" h="32"/>
+    <sprite n="wine" x="249" y="1551" w="29" h="32" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="wingedbootsofspeed" x="317" y="1522" w="32" h="29" oX="0" oY="1" oW="32" oH="32"/>
+    <sprite n="wisdomtotem" x="273" y="1123" w="32" h="32"/>
+    <sprite n="wolfsbane" x="307" y="1089" w="32" h="32"/>
+    <sprite n="wolfteethclub" x="341" y="1055" w="32" h="32"/>
+    <sprite n="woodbookcomponent" x="469" y="1623" w="24" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="woodenbuckler" x="375" y="1021" w="32" h="32"/>
+    <sprite n="woodenclogs" x="409" y="987" w="32" h="32"/>
+    <sprite n="woodenflute" x="443" y="953" w="32" h="32"/>
+    <sprite n="woodenplank" x="69" y="1361" w="32" h="32"/>
+    <sprite n="woolengloves" x="103" y="1327" w="32" h="32"/>
+    <sprite n="woolenscarf" x="303" y="1923" w="22" h="32" oX="4" oY="0" oW="32" oH="32"/>
+    <sprite n="woolentrousers" x="471" y="1929" w="18" h="32" oX="7" oY="0" oW="32" oH="32"/>
+    <sprite n="workmansgloves" x="217" y="1651" w="30" h="32" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="writofbounty" x="279" y="1703" w="27" h="32" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="wyvernjewel" x="331" y="1857" w="26" h="32" oX="3" oY="0" oW="32" oH="32"/>
+    <sprite n="xiphos" x="137" y="1293" w="32" h="32"/>
+    <sprite n="xraygoggles" x="185" y="1879" w="32" h="28" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="yewbow" x="171" y="1259" w="32" h="32"/>
+    <sprite n="zweihander" x="205" y="1225" w="32" h="32"/>
+</TextureAtlas>

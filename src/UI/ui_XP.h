@@ -21,10 +21,6 @@ namespace XP {
     void Level_Up() {
     }
 
-    int Get_Heath_Per_Level() {
-        return 2;
-    }
-
     void Get_XP(entt::registry &zone, int &state) {
         auto view = zone.view<Component::XP, Component::Input, Component::Stats, Component::Health>();
 
@@ -39,7 +35,7 @@ namespace XP {
                 stats.unspent += 10;
 
                 auto &health = view.get<Component::Health>(entity);
-                health.maxHealth += Get_Heath_Per_Level();
+                health.maxHealth += health.growth;
                 health.currentHealth = health.maxHealth;
                 Level_Up();
             }
@@ -47,10 +43,15 @@ namespace XP {
         }
     }
 
-    //level up graphic and sound
     void Render() {
+        //+xp number floating up
+
+        //level up graphic
+
+        //level up sound
 
     }
+
 
     void Update(entt::registry &zone, int &state) {
         Get_XP(zone, state);

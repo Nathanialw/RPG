@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:e5f7074c996c7692919fa035ca0d395b:f315b282e5728b95775263f95d65ffe8:81c3034b2029447cf6e9f1fbafed28cd$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="level_up/level_up.png" width="10784" height="4044">
+    <sprite n="Level Up_00000" x="1" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00001" x="1" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00002" x="1" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00003" x="1" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00004" x="1" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00005" x="1" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00006" x="675" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00007" x="675" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00008" x="675" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00009" x="675" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00010" x="675" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00011" x="675" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00012" x="1349" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00013" x="1349" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00014" x="1349" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00015" x="1349" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00016" x="1349" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00017" x="1349" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00018" x="2023" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00019" x="2023" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00020" x="2023" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00021" x="2023" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00022" x="2023" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00023" x="2023" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00024" x="2697" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00025" x="2697" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00026" x="2697" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00027" x="2697" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00028" x="2697" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00029" x="2697" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00030" x="3371" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00031" x="3371" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00032" x="3371" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00033" x="3371" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00034" x="3371" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00035" x="3371" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00036" x="4045" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00037" x="4045" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00038" x="4045" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00039" x="4045" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00040" x="4045" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00041" x="4045" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00042" x="4719" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00043" x="4719" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00044" x="4719" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00045" x="4719" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00046" x="4719" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00047" x="4719" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00048" x="5393" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00049" x="5393" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00050" x="5393" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00051" x="5393" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00052" x="5393" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00053" x="5393" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00054" x="6067" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00055" x="6067" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00056" x="6067" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00057" x="6067" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00058" x="6067" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00059" x="6067" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00060" x="6741" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00061" x="6741" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00062" x="6741" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00063" x="6741" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00064" x="6741" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00065" x="6741" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00066" x="7415" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00067" x="7415" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00068" x="7415" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00069" x="7415" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00070" x="7415" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00071" x="7415" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00072" x="8089" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00073" x="8089" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00074" x="8089" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00075" x="8089" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00076" x="8089" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00077" x="8089" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00078" x="8763" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00079" x="8763" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00080" x="8763" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00081" x="8763" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00082" x="8763" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00083" x="8763" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00084" x="9437" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00085" x="9437" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00086" x="9437" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00087" x="9437" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00088" x="9437" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00089" x="9437" y="3371" w="672" h="672"/>
+    <sprite n="Level Up_00090" x="10111" y="1" w="672" h="672"/>
+    <sprite n="Level Up_00091" x="10111" y="675" w="672" h="672"/>
+    <sprite n="Level Up_00092" x="10111" y="1349" w="672" h="672"/>
+    <sprite n="Level Up_00093" x="10111" y="2023" w="672" h="672"/>
+    <sprite n="Level Up_00094" x="10111" y="2697" w="672" h="672"/>
+    <sprite n="Level Up_00095" x="10111" y="3371" w="672" h="672"/>
+</TextureAtlas>

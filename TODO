@@ -1,16 +1,47 @@
 
 ADD
+- need a simple sprite looping function for static objects
 
 - update player stats - mana/faith
 - update items with new affixes and suffixes
 - generate props on tiles
 
+- add skills tabs // 3 tabs - 10 each page
+- add spells tabs // 6 tabs - 10 each page - 2 tabs per power level
+
+- add gods relationship tab // 1 tab
+
+- add prayers tab // 1 page
+- add stats tab // 1 page
+
+- add race/class perks stab // 1 page - 12 of them
+
+- add events tab
+
+- move unit frames
+- add buttons to open game tabs
+- add items into DB
+- add monsters into DB
+- add spells into DB
+- add prayers into DB
+
+- add icons to the minimap
+- add to the tileset rooms for generation
+- add procedural room generation
 - add shrines
 - BSP map generation
 - water/acid/lava
-- shop UI when selecting a merchant
-- add more enemies
+- UI when selecting a friendly NPC
 - add humans as playable
+- start on the options menu
+- add a save/load system
+
+- pit traps
+- booby traps
+- terrain destruction to rubble
+
+- add items
+- add enemies
 
 FIX
 

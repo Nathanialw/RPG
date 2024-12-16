@@ -99,7 +99,12 @@ namespace UI {
     return {rect.x / scale.x, rect.y / scale.y, rect.w / scale.x, rect.h / scale.y};
   }
 
-  SDL_FRect Update_Rect_Size(f2 &scale, SDL_FRect &rect) {
+    SDL_FRect Update_Scale(float &x, float &y, SDL_FRect &rect) {
+        return {rect.x / x, rect.y / y, rect.w / x, rect.h / y};
+    }
+
+
+    SDL_FRect Update_Rect_Size(f2 &scale, SDL_FRect &rect) {
     return {rect.x, rect.y, rect.w / scale.x, rect.h / scale.y};
   }
 

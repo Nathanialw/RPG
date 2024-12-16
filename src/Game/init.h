@@ -79,6 +79,7 @@ namespace Init {
         Menu_Options::Load_Options();
         SQLite_Dialogue::Init_Dialogue();
         Create_Character_Entity::Init_Items();
+        Interface::Init();
     }
 
     //only needs to be fired once per zone

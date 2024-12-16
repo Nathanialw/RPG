@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:75f3efb9da36e60e89b5d1efe749cc0e:b825fef51e30bbf484e2d4e0ffe95dfb:a815bddcefb407f2ac736738ae17e6c4$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="cox_skills/cox_skills.png" width="748" height="102">
+    <sprite n="acidresistanceicon" x="1" y="1" w="32" h="32"/>
+    <sprite n="alchemyicon" x="1" y="35" w="32" h="32"/>
+    <sprite n="archeryicon" x="1" y="69" w="32" h="32"/>
+    <sprite n="armoursmithingicon" x="35" y="1" w="32" h="32"/>
+    <sprite n="armouruseicon" x="35" y="35" w="32" h="32"/>
+    <sprite n="assassinationicon" x="35" y="69" w="32" h="32"/>
+    <sprite n="barteringicon" x="69" y="1" w="32" h="32"/>
+    <sprite n="blockingicon" x="69" y="35" w="32" h="32"/>
+    <sprite n="bludgeoningicon" x="69" y="69" w="32" h="32"/>
+    <sprite n="cartographyicon" x="103" y="1" w="32" h="32"/>
+    <sprite n="choppingicon" x="103" y="35" w="32" h="32"/>
+    <sprite n="coldresistanceicon" x="103" y="69" w="32" h="32"/>
+    <sprite n="combaticon" x="137" y="1" w="32" h="32"/>
+    <sprite n="cookingicon" x="137" y="35" w="32" h="32"/>
+    <sprite n="crusadeicon" x="137" y="69" w="32" h="32"/>
+    <sprite n="deathcheatingicon" x="171" y="1" w="32" h="32"/>
+    <sprite n="demonologyicon" x="171" y="35" w="32" h="32"/>
+    <sprite n="disarmingicon" x="171" y="69" w="32" h="32"/>
+    <sprite n="diseaseresistanceicon" x="205" y="1" w="32" h="32"/>
+    <sprite n="dodgeicon" x="205" y="35" w="32" h="32"/>
+    <sprite n="dragonslayingicon" x="205" y="69" w="32" h="32"/>
+    <sprite n="dualwieldingicon" x="239" y="1" w="32" h="32"/>
+    <sprite n="electricalresistanceicon" x="239" y="35" w="32" h="32"/>
+    <sprite n="entomologyicon" x="239" y="69" w="32" h="32"/>
+    <sprite n="fireresistanceicon" x="273" y="1" w="32" h="32"/>
+    <sprite n="fitnessicon" x="273" y="35" w="32" h="32"/>
+    <sprite n="gamblingicon" x="273" y="69" w="32" h="32"/>
+    <sprite n="gemcuttingicon" x="307" y="1" w="32" h="32"/>
+    <sprite n="geographyicon" x="307" y="35" w="32" h="32"/>
+    <sprite n="historyicon" x="307" y="69" w="32" h="32"/>
+    <sprite n="huntingicon" x="341" y="1" w="32" h="32"/>
+    <sprite n="lockpickingicon" x="341" y="35" w="32" h="32"/>
+    <sprite n="magicitemuseicon" x="341" y="69" w="32" h="32"/>
+    <sprite n="magicresistanceicon" x="375" y="1" w="32" h="32"/>
+    <sprite n="memoryicon" x="375" y="35" w="32" h="32"/>
+    <sprite n="miningicon" x="375" y="69" w="32" h="32"/>
+    <sprite n="mutologyicon" x="409" y="1" w="32" h="32"/>
+    <sprite n="necromancyicon" x="409" y="35" w="32" h="32"/>
+    <sprite n="physicalresistanceicon" x="409" y="69" w="32" h="32"/>
+    <sprite n="pietyicon" x="443" y="1" w="32" h="32"/>
+    <sprite n="pitdetectionicon" x="443" y="35" w="32" h="32"/>
+    <sprite n="pocketpickingicon" x="443" y="69" w="32" h="32"/>
+    <sprite n="poisonresistanceicon" x="477" y="1" w="32" h="32"/>
+    <sprite n="repairicon" x="477" y="35" w="32" h="32"/>
+    <sprite n="researchicon" x="477" y="69" w="32" h="32"/>
+    <sprite n="runicloreicon" x="511" y="1" w="32" h="32"/>
+    <sprite n="scavengingicon" x="511" y="35" w="32" h="32"/>
+    <sprite n="selfawarenessicon" x="511" y="69" w="32" h="32"/>
+    <sprite n="spearingicon" x="545" y="1" w="32" h="32"/>
+    <sprite n="spelluseicon" x="545" y="35" w="32" h="32"/>
+    <sprite n="stealthicon" x="545" y="69" w="32" h="32"/>
+    <sprite n="swimmingicon" x="579" y="1" w="32" h="32"/>
+    <sprite n="swordplayicon" x="579" y="35" w="32" h="32"/>
+    <sprite n="thaumaturgyicon" x="579" y="69" w="32" h="32"/>
+    <sprite n="titanologyicon" x="613" y="1" w="32" h="32"/>
+    <sprite n="trapsettingicon" x="613" y="35" w="32" h="32"/>
+    <sprite n="travelingicon" x="613" y="69" w="32" h="32"/>
+    <sprite n="tumblingicon" x="647" y="1" w="32" h="32"/>
+    <sprite n="unarmedfightingicon" x="647" y="35" w="32" h="32"/>
+    <sprite n="violenceicon" x="647" y="69" w="32" h="32"/>
+    <sprite n="wandloreicon" x="681" y="1" w="32" h="32"/>
+    <sprite n="weaponsmithingicon" x="681" y="35" w="32" h="32"/>
+    <sprite n="weaponuseicon" x="681" y="69" w="32" h="32"/>
+    <sprite n="willpowericon" x="715" y="1" w="32" h="32"/>
+</TextureAtlas>

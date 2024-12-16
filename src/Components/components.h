@@ -107,6 +107,7 @@ namespace Component {
     struct Health {
         int currentHealth = 0;
         int maxHealth = 0;
+        int growth = 2;
     };
 
     struct Mana {
@@ -120,7 +121,7 @@ namespace Component {
     };
 
     struct Dungeon_Level {
-        int level;
+        int level = 1;
     };
 
     struct Time_On_Map {

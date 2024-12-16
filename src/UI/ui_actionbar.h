@@ -9,11 +9,8 @@
 #include "ui_spellbook.h"
 
 namespace Action_Bar {
-    struct On_Spellbar {
-    };
 
     struct Spell_Bar {
-        //    std::array<entt::entity, 10> spell;
         std::array<Spell_Data::Spell, 10> spell;
         std::array<SDL_Keycode, 10> hotkey;
         SDL_FRect actionBarFrame = {0.0f, 0, 640.0f, 64.0f};
@@ -23,6 +20,7 @@ namespace Action_Bar {
         Spell_Bar actionBar;
         Spell_Data::Spell defaultSlot;
     };
+
     Action_Bar actionBar;
 
     void Update_Position(SDL_FRect &frameRect) {

@@ -12,6 +12,7 @@
 #include "interface.h"
 #include "quad_tree.h"
 #include "ui.h"
+#include "ui_toolbar.h"
 
 namespace Event_Handler {
 
@@ -61,7 +62,13 @@ namespace Event_Handler {
 		}
 	};
 
-	void Mouse_Hover(entt::registry &zone, int &state) {
+    void Icon_Highlight(entt::registry &zone, int &state, Component::Camera &camera) {
+        if (UI_toolbar::Mouse_inside()) {
+            UI_toolbar::Highlight();
+        }
+    }
+
+	void Mouse_Hover(entt::registry &zone, int &state, Component::Camera &camera) {
 		if (Mouse::mouseData.itemCurrentlyHeld) return;
 
 		for (auto &entity: World::Mouse_Hover_Entities) {
@@ -118,6 +125,13 @@ namespace Event_Handler {
 					}
 					return;
 				}
+                    //      toolbar
+                else if (UI_toolbar::Mouse_inside()) {
+                    if (UI_toolbar::Click_Button()) {
+
+                    }
+                    return;
+                }
 					//      spellbook
 				else if (UI_Spellbook::Check_Spellbook(camera)) {
 					if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
@@ -260,7 +274,7 @@ namespace Event_Handler {
 					auto &input = view.get<Component::Input>(player_ID);
 
 					//          if (Events::event.key.type == SDL_MOUSEMOTION) {
-					Mouse_Hover(zone, state);
+					Mouse_Hover(zone, state, camera);
 					if (Events::event.key.type == SDL_MOUSEWHEEL) {
 						Interface::Update_Zoom(zone, Events::event.wheel.y);
 					} else if (Events::event.key.type == SDL_MOUSEBUTTONDOWN || Events::event.key.type == SDL_MOUSEBUTTONUP) {
