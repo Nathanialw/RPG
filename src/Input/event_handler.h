@@ -64,7 +64,7 @@ namespace Event_Handler {
 
     void Icon_Highlight(entt::registry &zone, int &state, Component::Camera &camera) {
         if (UI_toolbar::Mouse_inside()) {
-            UI_toolbar::Highlight();
+            UI_toolbar::Hover_Highlight();
         }
     }
 

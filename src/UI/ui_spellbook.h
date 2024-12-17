@@ -228,11 +228,13 @@ namespace UI_Spellbook {
             spellbook.b_isOpen = false;
     }
 
-    void Toggle() {
-        if (spellbook.b_isOpen)
+    bool Toggle() {
+        if (spellbook.b_isOpen) {
             spellbook.b_isOpen = false;
-        else
-            spellbook.b_isOpen = true;
+            return false;
+        }
+        spellbook.b_isOpen = true;
+        return true;
     }
 
     bool Get_SpellPage(entt::registry &zone, Component::Camera &camera, SDL_FRect &draw, Spell_Data::Skill_Tree tree) {

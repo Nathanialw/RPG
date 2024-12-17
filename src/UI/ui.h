@@ -63,12 +63,13 @@ namespace Bag_UI {
     }
   }
 
-  void Toggle_Bag() {
+  bool Toggle() {
     if (!bToggleCharacterUI) {
       bToggleCharacterUI = true;
-    } else {
-      bToggleCharacterUI = false;
+        return true;
     }
+      bToggleCharacterUI = false;
+        return false;
   }
 
   //check if the Mouse point is in the rect and which one

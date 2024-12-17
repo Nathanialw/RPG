@@ -51,6 +51,10 @@ namespace Hotbar {
 
     ssSpells Fire_Spells[] = {function, functionTimesTwo, functionDivideByTwo};
 
+    int PLACEHOLDER(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        return 0;
+    }
+
     void Call_Functions() {
         for (int i = 0; i < 3; ++i) {
             std::cout << Fire_Spells[i](8) << std::endl;
@@ -77,16 +81,6 @@ namespace Hotbar {
         return 0;
     }
 
-    int Bag_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-        Bag_UI::Toggle_Bag();
-        return 0;
-    }
-
-    int Info_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-        UI_Stats::Info_Toggle();
-        return 0;
-    }
-
     int Menu_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
         auto view = zone.view<Component::Selected>();
         if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
@@ -101,6 +95,7 @@ namespace Hotbar {
             UI_Spellbook::spellbook.b_isOpen = false;
             UI_Stats::tab.b_isOpen = false;
             Game_Menu_Control::Close();
+            UI_toolbar::Close_All();
             return 0;
         }
         Menu::Toggle();
@@ -127,11 +122,6 @@ namespace Hotbar {
 
     int Mouse_Off(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
         SDL_SetRelativeMouseMode(SDL_TRUE);
-        return 0;
-    }
-
-    int Toggle_Spellbook(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-        UI_Spellbook::Toggle();
         return 0;
     }
 
@@ -199,10 +189,7 @@ namespace Hotbar {
         return 0;
     }
 
-    int Minimap_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-        Minimap::Toggle();
-        return 0;
-    }
+
 
     int Decrease_Low(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
         Line_Of_Sight::Update_Close(-5);
@@ -224,7 +211,73 @@ namespace Hotbar {
         return 0;
     }
 
-    int PLACEHOLDER(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+    int Bag_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::inventory);
+        return 0;
+    }
+
+    int Info_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::character);
+        return 0;
+    }
+
+    int Low_Power_Spells_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::lowpower);
+        return 0;
+    }
+
+    int Mid_Power_Spells_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::midpower);
+        return 0;
+    }
+
+    int High_Power_Spells_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::highpower);
+        return 0;
+    }
+
+    int General_Skills_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::generalskills);
+        return 0;
+    }
+
+    int Mage_Skills_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::mageskills);
+        return 0;
+    }
+
+    int Rogue_Skills_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::rogueskills);
+        return 0;
+    }
+
+    int Warrior_Skills_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::warriorskills);
+        return 0;
+    }
+
+    int Perks_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::perks);
+        return 0;
+    }
+
+    int Attitudes_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::stats);
+        return 0;
+    }
+
+    int Events_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::events);
+        return 0;
+    }
+
+    int Minimap_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::map);
+        return 0;
+    }
+
+    int Prayers_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
+        UI_toolbar::Toggle(UI_toolbar::Buttons::religion);
         return 0;
     }
 
@@ -239,24 +292,40 @@ namespace Hotbar {
                 {SDLK_7,            				Action_Bar::actionBar.actionBar.spell[7].cast},
                 {SDLK_8,            				Action_Bar::actionBar.actionBar.spell[8].cast},
                 {SDLK_9,            				Action_Bar::actionBar.actionBar.spell[9].cast},
-                {SDLK_F1, 				Decrease_Low},
+                {SDLK_F1, 				        Decrease_Low},
                 {SDLK_F2,            		    Increase_Low},
-                {SDLK_F3,            		Decrease_High},
-                {SDLK_F4,            	Increase_High},
-                {SDLK_m,                          Minimap_Toggle},
+                {SDLK_F3,            		        Decrease_High},
+                {SDLK_F4,            	        Increase_High},
                 {SDLK_TAB,          			Tab_Target},
                 {SDLK_ESCAPE,       			Menu_Toggle},
-                {SDLK_r,            				Auto_Run},
-                {SDLK_i,            				Info_Toggle},
-                {SDLK_b,            				Bag_Toggle},
-                {SDLK_p,            				Pause_Toggle},
+//                {SDLK_r,            				Auto_Run},
+//                {SDLK_p,            				Pause_Toggle},
                 {SDLK_LEFTBRACKET,      Mouse_On},
                 {SDLK_RIGHTBRACKET,   	Mouse_Off},
                 {SDLK_MINUS,        			Zoom_Out},
                 {SDLK_EQUALS,       			Zoom_In},
-                {SDLK_l,            					Toggle_Spellbook},
-                {SDLK_k,            					Toggle_AI},
-                {SDLK_o,            					Surface},
+//                {SDLK_k,            					Toggle_AI},
+                {SDLK_SLASH,            					Surface},
+
+                {SDLK_b,            				Bag_Toggle},                //inv
+                {SDLK_i,            				Info_Toggle},               //stats
+
+                {SDLK_l,                            Low_Power_Spells_Toggle},            //low p sp
+                {SDLK_n,            				Mid_Power_Spells_Toggle},           //mid p sp
+                {SDLK_h,            				High_Power_Spells_Toggle},           //high p sp
+
+                {SDLK_g,            				General_Skills_Toggle},           //gen skill
+                {SDLK_e,            				    Mage_Skills_Toggle},           //mage skill
+                {SDLK_r,            				Rogue_Skills_Toggle},           //rogue skill
+                {SDLK_c,            				Warrior_Skills_Toggle},           //combat skill
+
+                {SDLK_k,            				Perks_Toggle},           //racial/class perks
+                {SDLK_t,            				Attitudes_Toggle},           //attitudes
+                {SDLK_v,            				Events_Toggle},           //events
+
+                {SDLK_m,                          Minimap_Toggle},      //map
+                {SDLK_p,            				Prayers_Toggle},           //prayers
+
                 {SDLK_LALT,         				Show_Items},
                 {SDLK_RALT,         				Show_Items},
                 {SDLK_SPACE,        			Jump},

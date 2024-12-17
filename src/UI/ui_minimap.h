@@ -10,11 +10,13 @@ namespace Minimap {
     SDL_FRect minimapRect;
     int currentState;
 
-    void Toggle() {
-        if (mapOpen)
+    bool Toggle() {
+        if (mapOpen) {
             mapOpen = false;
-        else
-            mapOpen = true;
+            return false;
+        }
+        mapOpen = true;
+        return true;
     }
 
     float Update_Minimap_Size(float cameraHeight) {

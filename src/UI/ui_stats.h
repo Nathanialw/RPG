@@ -81,11 +81,13 @@ namespace UI_Stats {
         }
     }
 
-    void Info_Toggle() {
-        if (tab.b_isOpen)
+    bool Toggle() {
+        if (tab.b_isOpen) {
             tab.b_isOpen = false;
-        else
-            tab.b_isOpen = true;
+            return false;
+        }
+        tab.b_isOpen = true;
+        return true;
     }
 
     void Update_Position() {
