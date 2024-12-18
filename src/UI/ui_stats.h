@@ -53,6 +53,8 @@ namespace UI_Stats {
             auto &dungeonLevel = view.get<Component::Dungeon_Level>(entity);
             auto &timeOnMap = view.get<Component::Time_On_Map>(entity);
 
+            //left page unused right now
+
             stats[1][0] = {"", name.first + " " + name.last, "Your character's name"};
             stats[1][1] = {"Race:", name.race, "Your character's race"};
             stats[1][2] = {"Sex:", name.sex, "Your character's sex"};

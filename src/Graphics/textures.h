@@ -65,6 +65,12 @@ namespace Texture {
 
     SDL_Texture *icons;
     SDL_Texture *cox_icons;
+    SDL_Texture *cox_skills;
+    SDL_Texture *cox_spells;
+    SDL_Texture *cox_map_tiles;
+    SDL_Texture *cox_monsters;
+    SDL_Texture *cox_objects;
+    SDL_Texture *cox_traps;
     SDL_Texture *vikingBuildingIcons;
     SDL_Texture *medievelBuildingIcons;
 
@@ -133,8 +139,15 @@ namespace Texture {
         window_glow = Graphics::createTexture("assets/sprites/UI/window_glow.png");
         fog = Graphics::createTexture("assets/sprites/UI/mist/fog_0.png");
 
-        icons = Graphics::createTexture("assets/sprites/icons/icons.png");
         cox_icons = Graphics::createTexture("assets/sprites/icons/cox_icons.png");
+        cox_skills = Graphics::createTexture("assets/sprites/icons/cox_skills.png");
+        cox_spells = Graphics::createTexture("assets/sprites/icons/cox_spells.png");
+        cox_map_tiles = Graphics::createTexture("assets/sprites/icons/cox_map_tiles.png");
+        cox_monsters = Graphics::createTexture("assets/sprites/icons/cox_monsters.png");
+        cox_objects = Graphics::createTexture("assets/sprites/icons/cox_objects.png");
+        cox_traps = Graphics::createTexture("assets/sprites/icons/cox_traps.png");
+
+        icons = Graphics::createTexture("assets/sprites/icons/icons.png");
         vikingBuildingIcons = Graphics::createTexture("assets/sprites/buildings/viking/icons.png");
         medievelBuildingIcons = Graphics::createTexture("assets/sprites/buildings/medieval/buildings.png");
 

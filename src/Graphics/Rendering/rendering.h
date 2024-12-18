@@ -21,7 +21,7 @@
 #include <SDL2/SDL.h>
 #include <vector>
 #include "ui_target_info.h"
-#include "ui_toolbar.h"
+#include "UI/Toolbar/ui_toolbar.h"
 
 namespace Rendering {
 
@@ -38,6 +38,10 @@ namespace Rendering {
 
             Action_Bar::Render_Action_Bar(zone, state, camera);
             UI_toolbar::Render();
+            Skills::General::Render();
+            Skills::Mage::Render();
+            Skills::Rogue::Render();
+            Skills::Warrior::Render();
             Event_Handler::Icon_Highlight(zone, state, camera);
 
             if (Bag_UI::bToggleCharacterUI) {

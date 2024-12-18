@@ -87,7 +87,8 @@ namespace Hotbar {
             zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseData.mouseItem);
             Mouse::Set_Cursor_As_Cursor(zone);
             return 0;
-        } else if (UI_Spellbook::spellbook.b_isOpen || Bag_UI::bToggleCharacterUI || UI_Stats::tab.b_isOpen || Loot_Panel::lootPanel.items || Mouse::bLeft_Mouse_Pressed || UI_Frames::topFrame.open || !view.empty()) {
+        } else {
+            UI_toolbar::Close_All();
             Mouse::bLeft_Mouse_Pressed = false;
             zone.clear<Component::Selected>();
             Loot_Panel::Close();
@@ -95,7 +96,10 @@ namespace Hotbar {
             UI_Spellbook::spellbook.b_isOpen = false;
             UI_Stats::tab.b_isOpen = false;
             Game_Menu_Control::Close();
-            UI_toolbar::Close_All();
+            Skills::General::Close();
+            Skills::Warrior::Close();
+            Skills::Mage::Close();
+            Skills::Rogue::Close();
             return 0;
         }
         Menu::Toggle();

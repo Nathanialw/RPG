@@ -19,6 +19,7 @@
 #include "rendering_components.h"
 #include "settings.h"
 #include "utilities.h"
+#include "skills_Components.h"
 
 namespace Create_Entities {
 
@@ -308,6 +309,7 @@ namespace Create_Entities {
 			}
 
 			if (player) {
+                Skill_Component::Add_Default_Warrior(zone, entity);
                 zone.emplace_or_replace<Component::Stats>(entity);
                 zone.emplace_or_replace<Component::Religion>(entity);
                 zone.emplace_or_replace<Component::XP>(entity);

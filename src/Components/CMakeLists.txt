@@ -7,6 +7,7 @@ target_sources(RPG
         movement_components.h
         building_components.h
         collision_components.h
+        skills_Components.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

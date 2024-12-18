@@ -99,14 +99,6 @@ namespace  Button {
             SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &rect);
         }
 
-        bool Click_Button() {
-            int i = Get_Index(scaledFrame);
-            if (i == -1)
-                return false;
-
-            return highlight.Toggle(action[i](), i);
-        }
-
         bool Mouse_Inside() {
             if (Mouse::bRect_inside_Cursor(scaledFrame))
                 return true;
@@ -114,12 +106,37 @@ namespace  Button {
             return false;
         };
 
-        void Toggle(int i) {
-            highlight.Toggle(action[i](), i);
-        }
 
         void Close_All() {
             highlight.Close_All();
+        }
+
+        void Close_Book(int n) {
+            highlight.Clear_Book();
+
+            for (int i = 0; i < T; ++i) {
+                if (i == n)
+                    continue;
+                if (action[i]())
+                    action[i]();
+            }
+        }
+
+        void Toggle(int i) {
+            if (i != 0  && i != 12)
+                Close_Book((int)i);
+            highlight.Toggle(action[i](), i);
+        }
+
+        bool Click_Button() {
+            int i = Get_Index(scaledFrame);
+            if (i == -1)
+                return false;
+
+            if (i != 0 && i != 12)
+                Close_Book(i);
+
+            return highlight.Toggle(action[i](), i);
         }
     };
 

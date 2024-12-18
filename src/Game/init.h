@@ -79,7 +79,6 @@ namespace Init {
         Menu_Options::Load_Options();
         SQLite_Dialogue::Init_Dialogue();
         Create_Character_Entity::Init_Items();
-        Interface::Init();
     }
 
     //only needs to be fired once per zone
@@ -94,6 +93,7 @@ namespace Init {
             Create_Character_Entity::Init_Player(zone, state, playerOptions);
         else
             Recreate_Player(zone, state);
+        Interface::Init(zone);
         World_Update::Init_Tiles_Array(zone, state);
         Maps::Init_Tile_Objects(zone, state, World::world[state].mobType);
         Maps::Init_Caves(zone, state, World::world[state].cave);

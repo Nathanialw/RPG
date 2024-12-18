@@ -12,7 +12,8 @@
 #include "ui_unit_control.hpp"
 #include "unit_frames.h"
 #include <SDL2/SDL.h>
-#include "ui_toolbar.h"
+#include "UI/Toolbar/ui_toolbar.h"
+
 
 namespace Interface {
 
@@ -23,9 +24,12 @@ namespace Interface {
         int gridDepth = -1;
     }// namespace
 
-    void Update(f2 x) {
+    void Update(entt::registry &zone, f2 x) {
         UI_toolbar::Update(x);
-
+        Skills::General::Update(zone, x);
+        Skills::Mage::Update(zone, x);
+        Skills::Rogue::Update(zone, x);
+        Skills::Warrior::Update(zone, x);
     }
 
     void Update_Zoom(entt::registry &zone, const int zoom) {
@@ -41,7 +45,7 @@ namespace Interface {
                     x.y = 2.0f;
                 }
                 SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
-                Update(x);
+                Update(zone, x);
             }
             //      if (e.wheel.y < 0) {
             if (zoom < 0) {
@@ -52,7 +56,7 @@ namespace Interface {
                     //          x.y = 0.75f;
                 }
                 SDL_RenderSetScale(Graphics::renderer, x.x, x.y);
-                Update(x);
+                Update(zone, x);
             }
         }
     }
@@ -308,8 +312,13 @@ namespace Interface {
         Display_Selected(zone);
     }
 
-    void Init() {
-        Update({2,2});
+    void Init(entt::registry &zone) {
+        auto view = zone.view<Component::Camera>();
+        for (auto camera: view) {
+            auto &cam = view.get<Component::Camera>(camera);
+            Update(zone, cam.scale);
+            return;
+        }
         // UI_Resources::Init_Frames ();
         // Unit_Frames::Init_Frames();
         //    UI_Frames::Init_Frames();

@@ -55,6 +55,16 @@ namespace  Button {
         void Close_All() {
             Clear();
         }
+
+        void Clear_Book() {
+            for (int j = 0; j < size; j++)
+                if (highlight[j]  != 0 && highlight[j] != 12) {
+                    for (int k = j; k < size - 1; k++)
+                        highlight[k] = highlight[k + 1];
+                    size--;
+                    return;
+                }
+        }
     };
 
 

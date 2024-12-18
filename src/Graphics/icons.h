@@ -65,6 +65,12 @@ namespace Icons {
   void Load() {
     Load_Icons(iconClipRects, "assets/sprites/xml/icons/icons.xml");
     Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_icons.xml");
+    Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_skills.xml");
+    Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_spells.xml");
+    Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_map_tiles.xml");
+    Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_monsters.xml");
+    Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_objects.xml");
+    Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_traps.xml");
     Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/Viking Pack/icons.xml");
     Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/medieval/buildings.xml");
   }

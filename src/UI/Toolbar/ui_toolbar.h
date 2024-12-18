@@ -7,6 +7,11 @@
 #include "ui_minimap.h"
 #include "Button_Bar/bar.h"
 #include "UI/ui_spellbook.h"
+#include "Skills/general.h"
+#include "Skills/mage.h"
+#include "Skills/rogue.h"
+#include "Skills/warrior.h"
+
 
 namespace  UI_toolbar {
 
@@ -41,10 +46,10 @@ namespace  UI_toolbar {
                     {"lowpower", UI_Spellbook::Toggle},
                     {"midpower", ACTION_PLACEHOLDER},
                     {"highpower", ACTION_PLACEHOLDER},
-                    {"generalskills", ACTION_PLACEHOLDER},
-                    {"mageskills", ACTION_PLACEHOLDER},
-                    {"rogueskills", ACTION_PLACEHOLDER},
-                    {"warriorskills", ACTION_PLACEHOLDER},
+                    {"generalskills", Skills::General::Toggle},
+                    {"mageskills", Skills::Mage::Toggle},
+                    {"rogueskills", Skills::Rogue::Toggle},
+                    {"warriorskills", Skills::Warrior::Toggle},
                     {"perks", ACTION_PLACEHOLDER},
                     {"stats", ACTION_PLACEHOLDER},
                     {"events", ACTION_PLACEHOLDER},
