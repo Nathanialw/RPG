@@ -14,63 +14,59 @@ namespace Skills {
             std::array<std::pair<int , int>, SIZE> currentSkills = {};
 
             auto view = zone.view<Component::Input, Skill_Component::Skills_Points,
-                    Skill_Component::Armour_Smithing,
-                    Skill_Component::Armour_Use,
-                    Skill_Component::Blocking,
-                    Skill_Component::Bludgeoning,
-                    Skill_Component::Chopping,
-                    Skill_Component::Combat,
-                    Skill_Component::Crusade,
-                    Skill_Component::Disease_Resistance,
-                    Skill_Component::Dragon_Slaying,
-                    Skill_Component::Dual_Wielding,
-                    Skill_Component::Physical_Resistance,
-                    Skill_Component::Repair,
-                    Skill_Component::Spearing,
-                    Skill_Component::Swordplay,
-                    Skill_Component::Titanology,
-                    Skill_Component::Unarmed_Fighting,
-                    Skill_Component::Violence,
-                    Skill_Component::Weapon_Smithing,
-                    Skill_Component::Weapon_Use>();
+                    Skill_Component::Acid_Resistance,
+                    Skill_Component::Archery,
+                    Skill_Component::Assassination,
+                    Skill_Component::Disarming,
+                    Skill_Component::Dodge,
+                    Skill_Component::Entomology,
+                    Skill_Component::Gambling,
+                    Skill_Component::Geography,
+                    Skill_Component::Hunting,
+                    Skill_Component::Lock_Picking,
+                    Skill_Component::Pocket_Picking,
+                    Skill_Component::Poison_Resistance,
+                    Skill_Component::Scavenging,
+                    Skill_Component::Secret_Detection,
+                    Skill_Component::Stealth,
+                    Skill_Component::Trap_Setting,
+                    Skill_Component::Tumbling>();
 
             for (auto entity: view) {
-                auto &armourSmithing = view.get<Skill_Component::Armour_Smithing>(entity);
-                auto &armourUse = view.get<Skill_Component::Armour_Use>(entity);
-                auto &blocking = view.get<Skill_Component::Blocking>(entity);
-                auto &bludgeoning = view.get<Skill_Component::Bludgeoning>(entity);
-                auto &chopping = view.get<Skill_Component::Chopping>(entity);
-                auto &combat = view.get<Skill_Component::Combat>(entity);
-                auto &crusade = view.get<Skill_Component::Crusade>(entity);
-                auto &diseaseResistance = view.get<Skill_Component::Disease_Resistance>(entity);
-                auto &dragonSlaying = view.get<Skill_Component::Dragon_Slaying>(entity);
-                auto &dualWielding = view.get<Skill_Component::Dual_Wielding>(entity);
-                auto &physicalResistance = view.get<Skill_Component::Physical_Resistance>(entity);
-                auto &repair = view.get<Skill_Component::Repair>(entity);
-                auto &spearing = view.get<Skill_Component::Spearing>(entity);
-                auto &swordplay = view.get<Skill_Component::Swordplay>(entity);
-                auto &titanology = view.get<Skill_Component::Titanology>(entity);
-                auto &unarmedFighting = view.get<Skill_Component::Unarmed_Fighting>(entity);
-                auto &violence = view.get<Skill_Component::Violence>(entity);
-                auto &weaponSmithing = view.get<Skill_Component::Weapon_Smithing>(entity);
-                auto &weaponUse = view.get<Skill_Component::Weapon_Use>(entity);
-                currentSkills[0] = {armourSmithing.level, armourSmithing.maxLevel};
-                currentSkills[1] = {armourUse.level, armourUse.maxLevel};
-                currentSkills[2] = {blocking.level, blocking.maxLevel};
-                currentSkills[3] = {bludgeoning.level, bludgeoning.maxLevel};
-                currentSkills[4] = {chopping.level, chopping.maxLevel};
-                currentSkills[5] = {combat.level, combat.maxLevel};
-                currentSkills[6] = {crusade.level, crusade.maxLevel};
-                currentSkills[7] = {diseaseResistance.level, diseaseResistance.maxLevel};
-                currentSkills[8] = {dragonSlaying.level, dragonSlaying.maxLevel};
-                currentSkills[9] = {dualWielding.level, dualWielding.maxLevel};
-                currentSkills[10] = {physicalResistance.level, physicalResistance.maxLevel};
-                currentSkills[11] = {repair.level, repair.maxLevel};
-                currentSkills[12] = {spearing.level, spearing.maxLevel};
-                currentSkills[13] = {swordplay.level, swordplay.maxLevel};
-                currentSkills[14] = {titanology.level, titanology.maxLevel};
-                currentSkills[15] = {unarmedFighting.level, unarmedFighting.maxLevel};
-                currentSkills[16] = {violence.level, violence.maxLevel};
+                auto &Acid_Resistance = view.get<Skill_Component::Acid_Resistance>(entity);
+                auto &Archery = view.get<Skill_Component::Archery>(entity);
+                auto &Assassination = view.get<Skill_Component::Assassination>(entity);
+                auto &Disarming = view.get<Skill_Component::Disarming>(entity);
+                auto &Dodge = view.get<Skill_Component::Dodge>(entity);
+                auto &Entomology = view.get<Skill_Component::Entomology>(entity);
+                auto &Gambling = view.get<Skill_Component::Gambling>(entity);
+                auto &Geography = view.get<Skill_Component::Geography>(entity);
+                auto &Hunting = view.get<Skill_Component::Hunting>(entity);
+                auto &Lock_Picking = view.get<Skill_Component::Lock_Picking>(entity);
+                auto &Pocket_Picking = view.get<Skill_Component::Pocket_Picking>(entity);
+                auto &Poison_Resistance = view.get<Skill_Component::Poison_Resistance>(entity);
+                auto &Scavenging = view.get<Skill_Component::Scavenging>(entity);
+                auto &Secret_Detection = view.get<Skill_Component::Secret_Detection>(entity);
+                auto &Stealth = view.get<Skill_Component::Stealth>(entity);
+                auto &Trap_Setting = view.get<Skill_Component::Trap_Setting>(entity);
+                auto &Tumbling = view.get<Skill_Component::Tumbling>(entity);
+                currentSkills[0] = {Acid_Resistance.level, Acid_Resistance.maxLevel};
+                currentSkills[1] = {Archery.level, Archery.maxLevel};
+                currentSkills[2] = {Assassination.level, Assassination.maxLevel};
+                currentSkills[3] = {Disarming.level, Disarming.maxLevel};
+                currentSkills[4] = {Dodge.level, Dodge.maxLevel};
+                currentSkills[5] = {Entomology.level, Entomology.maxLevel};
+                currentSkills[6] = {Gambling.level, Gambling.maxLevel};
+                currentSkills[7] = {Geography.level, Geography.maxLevel};
+                currentSkills[8] = {Hunting.level, Hunting.maxLevel};
+                currentSkills[9] = {Lock_Picking.level, Lock_Picking.maxLevel};
+                currentSkills[10] = {Pocket_Picking.level, Pocket_Picking.maxLevel};
+                currentSkills[11] = {Poison_Resistance.level, Poison_Resistance.maxLevel};
+                currentSkills[12] = {Scavenging.level, Scavenging.maxLevel};
+                currentSkills[13] = {Secret_Detection.level, Secret_Detection.maxLevel};
+                currentSkills[14] = {Stealth.level, Stealth.maxLevel};
+                currentSkills[15] = {Trap_Setting.level, Trap_Setting.maxLevel};
+                currentSkills[16] = {Tumbling.level, Tumbling.maxLevel};
             }
             return currentSkills;
         }
@@ -84,43 +80,43 @@ namespace Skills {
         }
 
         std::array<std::string, SIZE> names = {
-                "Armour Smithing",
-                "Armour Use",
-                "Blocking",
-                "Bludgeoning",
-                "Chopping",
-                "Combat",
-                "Crusade",
-                "Disease Resistance",
-                "Dragon Slaying",
-                "Dual Wielding",
-                "Physical Resistance",
-                "Repair",
-                "Spearing",
-                "Swordplay",
-                "Titanology",
-                "Unarmed Fighting",
-                "Violence",
+                "Acid Resistance",
+                "Archery",
+                "Assassination",
+                "Disarming",
+                "Dodge",
+                "Entomology",
+                "Gambling",
+                "Geography",
+                "Hunting",
+                "Lock Picking",
+                "Pocket Picking",
+                "Poison Resistance",
+                "Scavenging",
+                "Secret Detection",
+                "Stealth",
+                "Trap Setting",
+                "Tumbling",
         };
 
         std::array<std::string, SIZE> icons = {
-                "armoursmithingicon",
-                "armouruseicon",
-                "blockingicon",
-                "bludgeoningicon",
-                "choppingicon",
-                "combaticon",
-                "crusadeicon",
-                "diseaseresistanceicon",
-                "dragonslayingicon",
-                "dualwieldingicon",
-                "physicalresistanceicon",
-                "repairicon",
-                "spearingicon",
-                "swordplayicon",
-                "titanologyicon",
-                "unarmedfightingicon",
-                "violenceicon",
+                "acidresistanceicon",
+                "archeryicon",
+                "assassinationicon",
+                "disarmingicon",
+                "dodgeicon",
+                "entomologyicon",
+                "gamblingicon",
+                "geographyicon",
+                "huntingicon",
+                "lockpickingicon",
+                "pocketpickingicon",
+                "poisonresistanceicon",
+                "scavengingicon",
+                "pitdetectionicon",
+                "stealthicon",
+                "trapsettingicon",
+                "tumblingicon",
         };
 
         Skill_Tree<SIZE, Action> rogue = Skill_Tree<SIZE, Action>(names, icons, "Rogue");
@@ -134,8 +130,8 @@ namespace Skills {
             rogue.Draw();
         }
 
-        bool Toggle() {
-            return rogue.Toggle();
+        bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+            return rogue.Toggle(toggleType);
         }
 
         void Close() {

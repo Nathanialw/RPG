@@ -27,9 +27,13 @@ namespace Game_Menu_Control {
     return false;
   }
 
-  void Close() {
-    UI_Frames::topFrame.currentTab = UI_Frames::SIZE;
-    UI_Frames::topFrame.open = false;
+  bool Close() {
+      if (UI_Frames::topFrame.open) {
+          UI_Frames::topFrame.currentTab = UI_Frames::SIZE;
+          UI_Frames::topFrame.open = false;
+          return true;
+      }
+      return false;
   }
 
   bool Check_Menu_Button(entt::registry &zone, int &state) {

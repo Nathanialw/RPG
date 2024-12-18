@@ -3,6 +3,7 @@
 //
 #pragma once
 #include "graphics.h"
+#include "Button_Bar/button.h"
 
 namespace Minimap {
     bool mapOpen = false;
@@ -10,7 +11,19 @@ namespace Minimap {
     SDL_FRect minimapRect;
     int currentState;
 
-    bool Toggle() {
+    bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+        if (toggleType == Toggle_Type::get)
+            return mapOpen;
+
+        if (toggleType == Toggle_Type::on) {
+            mapOpen = true;
+            return true;
+        }
+        if (toggleType == Toggle_Type::off) {
+            mapOpen = false;
+            return false;
+        }
+
         if (mapOpen) {
             mapOpen = false;
             return false;

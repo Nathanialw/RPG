@@ -257,8 +257,8 @@ namespace Skills {
             warrior.Draw();
         }
 
-        bool Toggle() {
-            return warrior.Toggle();
+        bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+            return warrior.Toggle(toggleType);
         }
 
         void Close() {

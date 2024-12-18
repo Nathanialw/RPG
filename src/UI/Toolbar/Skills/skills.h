@@ -37,7 +37,7 @@ namespace  Skills {
     template <size_t T, typename  Action>
     class Skill_Tree {
         //display
-        bool toggle = false;
+        bool isOpen = false;
         SDL_Texture* background = nullptr;
         static constexpr const char* maxLearnableLevel[3] = { "Basic", "Advanced", "Expert" };
 
@@ -92,22 +92,31 @@ namespace  Skills {
             float ySpacing = 7.0f;
             float edge = 3.0f;
 
+            //skill name
+            float x = 175.0f;
+            float y = 75.0f;
+            std::string skillName = name  + " Skills";
+            FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, skillName.c_str());
+
+            y+= 20.0f;
+            std::string cost = "Cost: " + std::to_string(skillPoints.cost);
+            FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, cost.c_str());
+
+            y+= 20.0f;
+            std::string maxTrainable ="Max Trainable Level: ";
+            maxTrainable.append(maxLearnableLevel[skillPoints.maxLevel]);
+            FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, maxTrainable.c_str());
+
+            x = 335.0f;
+            y+= 30.0f;
+            for (int i = 0; i < 3; ++i) {
+                FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, maxLearnableLevel[i]);
+                x+= 70.0f;
+            }
+
+            SDL_FRect renderRect;
+
             for (int i = 0; i < n; i++) {
-                //skill name
-                float x = 175.0f;
-                float y = 75.0f;
-                std::string skillName = name  + " Skills";
-                FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, skillName.c_str());
-
-                y+= 20.0f;
-                std::string cost = "Cost: " + std::to_string(skillPoints.cost);
-                FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, cost.c_str());
-
-                y+= 20.0f;
-                std::string maxTrainable ="Max Trainable Level: ";
-                maxTrainable.append(maxLearnableLevel[skillPoints.maxLevel]);
-                FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, maxTrainable.c_str());
-
                 //icon background
                 skillUpRects[i] = {128.0f - edge, (165.0f - edge)  + (i * (iconSize + ySpacing)), iconSize + (edge * 2.0f), iconSize + (edge * 2.0f)};
                 SDL_Rect clipRect = Icons::iconClipRects["black square"].clipRect;
@@ -124,23 +133,46 @@ namespace  Skills {
                 FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, names[i].c_str());
 
                 //current level / max level
-                x = 450.0f;
-                std::string value = std::to_string(values[i].first) + " / " + std::to_string(values[i].second);
-                FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, value.c_str());
+                float end;
+                renderRect = {335.0f , 165.0f  + (i * (iconSize + ySpacing) + iconSize * 0.25f), (iconSize + ySpacing) * 3.0f, iconSize * 0.5f};
+                end = renderRect.x + renderRect.w;
+                //background
+                clipRect = Icons::iconClipRects["maparch"].clipRect;
+                clipRect.w = clipRect.w * (values[i].second / 3.0f);
+                renderRect.w = renderRect.w * (values[i].second / 3.0f);
+                SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &renderRect);
 
+                for (int j = 0; j < values[i].second; ++j) {
+                    //foreground
+                    if (j < values[i].first) {
+                    renderRect = {335.0f + (j * (iconSize + ySpacing)), 165.0f  + (i * (iconSize+ ySpacing) + iconSize * 0.25), iconSize + ySpacing, iconSize * 0.5f};
+                        clipRect = Icons::iconClipRects["experiencepoints"].clipRect;
+                        SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &renderRect);
+                    }
+                }
                 //increase button
-                if (skillPoints.unspent > 0) {
-//                icons["increasebutton";
+                if ((skillPoints.unspent >= skillPoints.cost) && (values[i].first < values[i].second)) {
+                    //icon
+                    skillUpRects[i] = {end + 10.0f, 165.0f  + (i * (iconSize + ySpacing) + (iconSize * 0.125f)), iconSize * 0.75f, iconSize* 0.75f};
+                    clipRect = Icons::iconClipRects["increasebutton"].clipRect;
+                    SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &skillUpRects[i]);
                 }
             }
 
-            for (int i = n; i < T; i++) {
-                //skill name
-                float x = 700.0f;
-                float y = 100.0f;
-                std::string availableSkillPoints = "Available Skill Points: " + std::to_string(skillPoints.unspent);
-                FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y,  { 1.25f, 1.25f }, Color::black, availableSkillPoints.c_str());
+            //skill name
+            x = 700.0f;
+            y = 115.0f;
+            std::string availableSkillPoints = "Available Skill Points: " + std::to_string(skillPoints.unspent);
+            FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y,  { 1.25f, 1.25f }, Color::black, availableSkillPoints.c_str());
 
+            x = 845.0f;
+            y += 30.0f;
+            for (int i = 0; i < 3; ++i) {
+                FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, maxLearnableLevel[i]);
+                x+= 70.0f;
+            }
+
+            for (int i = n; i < T; i++) {
                 //icon background
                 skillUpRects[i] = {620.0f - edge, (165.0f - edge)  + ((i - n) * (iconSize + ySpacing)), iconSize + (edge * 2.0f), iconSize + (edge * 2.0f)};
                 SDL_Rect clipRect = Icons::iconClipRects["black square"].clipRect;
@@ -156,14 +188,30 @@ namespace  Skills {
                 y = 165.0f + ((i - n) * (iconSize + ySpacing)) + (iconSize * 0.25f);
                 FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, names[i].c_str());
 
-                //current level / max level
-                x = 950.0f;
-                std::string value = std::to_string(values[i].first) + " / " + std::to_string(values[i].second);
-                FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, value.c_str());
+                float end;
+                renderRect = {850.0f , 165.0f  + ((i - n) * (iconSize + ySpacing) + iconSize * 0.25f), (iconSize + ySpacing) * 3.0f, iconSize * 0.5f};
+                end = renderRect.x + renderRect.w;
+                //background
+                clipRect = Icons::iconClipRects["maparch"].clipRect;
+                clipRect.w = clipRect.w * (values[i].second / 3.0f);
+                renderRect.w = renderRect.w * (values[i].second / 3.0f);
+                SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &renderRect);
+
+                for (int j = 0; j < values[i].second; ++j) {
+                    //foreground
+                    if (j < values[i].first) {
+                        renderRect = {850.0f + (j * (iconSize + ySpacing)), 165.0f  + ((i - n) * (iconSize+ ySpacing) + iconSize * 0.25), iconSize + ySpacing, iconSize * 0.5f};
+                        clipRect = Icons::iconClipRects["experiencepoints"].clipRect;
+                        SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &renderRect);
+                    }
+                }
 
                 //increase button
-                if (skillPoints.unspent > 0) {
-//                icons["increasebutton";
+                if ((skillPoints.unspent >= skillPoints.cost) && (values[i].first < values[i].second)) {
+                    //icon
+                    skillUpRects[i] = {end + 10.0f, 165.0f  + ((i - n) * (iconSize + ySpacing) + (iconSize * 0.125f)), iconSize * 0.75f, iconSize* 0.75f};
+                    clipRect = Icons::iconClipRects["increasebutton"].clipRect;
+                    SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &skillUpRects[i]);
                 }
             }
 
@@ -176,7 +224,7 @@ namespace  Skills {
 
         void Draw() {
             //draw texture
-            if (toggle)
+            if (isOpen)
                 SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &scaledFrame);
         }
 
@@ -184,17 +232,29 @@ namespace  Skills {
             return 1;
         }
 
-        bool Toggle() {
-            if (toggle) {
-                toggle = false;
+        bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+            if (toggleType == Toggle_Type::get)
+                return isOpen;
+
+            if (toggleType == Toggle_Type::on) {
+                isOpen = true;
+                return true;
+            }
+            if (toggleType == Toggle_Type::off) {
+                isOpen = false;
                 return false;
             }
-            toggle = true;
+
+            if (isOpen) {
+                isOpen = false;
+                return false;
+            }
+            isOpen = true;
             return true;
         }
 
         void Close() {
-            toggle = false;
+            isOpen = false;
         }
     };
 }

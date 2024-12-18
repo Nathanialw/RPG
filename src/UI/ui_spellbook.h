@@ -228,7 +228,19 @@ namespace UI_Spellbook {
             spellbook.b_isOpen = false;
     }
 
-    bool Toggle() {
+    bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+        if (toggleType == Toggle_Type::get)
+            return spellbook.b_isOpen;
+
+        if (toggleType == Toggle_Type::on) {
+            spellbook.b_isOpen = true;
+            return true;
+        }
+        if (toggleType == Toggle_Type::off) {
+            spellbook.b_isOpen = false;
+            return false;
+        }
+
         if (spellbook.b_isOpen) {
             spellbook.b_isOpen = false;
             return false;

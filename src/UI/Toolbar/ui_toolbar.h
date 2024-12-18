@@ -11,6 +11,7 @@
 #include "Skills/mage.h"
 #include "Skills/rogue.h"
 #include "Skills/warrior.h"
+#include "Button_Bar/button.h"
 
 
 namespace  UI_toolbar {
@@ -33,28 +34,35 @@ namespace  UI_toolbar {
         SIZE
     };
 
-    bool ACTION_PLACEHOLDER() {
+    typedef bool (*Action)(Toggle_Type);
+
+
+    bool PLACEHOLDER(Toggle_Type toggleType) {
+        if (toggleType == Toggle_Type::get)
+            return false;
+        if (toggleType == Toggle_Type::on)
+            return true;
+        if (toggleType == Toggle_Type::off)
+            return false;
         return false;
     }
-
-    typedef bool (*Action)();
 
     Button::Bar<(int)Buttons::SIZE, Action> toolBar = Button::Bar<(int)Buttons::SIZE, Action>({
             {
                     {"inventory", Bag_UI::Toggle},
                     {"character", UI_Stats::Toggle},
                     {"lowpower", UI_Spellbook::Toggle},
-                    {"midpower", ACTION_PLACEHOLDER},
-                    {"highpower", ACTION_PLACEHOLDER},
+                    {"midpower", PLACEHOLDER},
+                    {"highpower", PLACEHOLDER},
                     {"generalskills", Skills::General::Toggle},
                     {"mageskills", Skills::Mage::Toggle},
                     {"rogueskills", Skills::Rogue::Toggle},
                     {"warriorskills", Skills::Warrior::Toggle},
-                    {"perks", ACTION_PLACEHOLDER},
-                    {"stats", ACTION_PLACEHOLDER},
-                    {"events", ACTION_PLACEHOLDER},
+                    {"perks", PLACEHOLDER},
+                    {"stats", PLACEHOLDER},
+                    {"events", PLACEHOLDER},
                     {"map", Minimap::Toggle},
-                    {"religion", ACTION_PLACEHOLDER}
+                    {"religion", PLACEHOLDER}
             }},
             "buttonon",
             "buttonoff",
@@ -85,7 +93,7 @@ namespace  UI_toolbar {
         toolBar.Display();
     }
 
-    void Close_All() {
-        toolBar.Close_All();
+    bool Close_All() {
+        return toolBar.Close_All();
     }
 }

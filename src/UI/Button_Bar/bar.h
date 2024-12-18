@@ -107,25 +107,34 @@ namespace  Button {
         };
 
 
-        void Close_All() {
+        bool Close_All() {
+            bool wasOpen = false;
+
             highlight.Close_All();
+            for (int i = 0; i < T; ++i) {
+                if (action[i](Toggle_Type::get)) {
+                    action[i](Toggle_Type::off);
+                    wasOpen = true;
+                }
+            }
+
+            return wasOpen;
         }
 
         void Close_Book(int n) {
             highlight.Clear_Book();
 
             for (int i = 0; i < T; ++i) {
-                if (i == n)
+                if (i == n || i == 0 || i == 12)
                     continue;
-                if (action[i]())
-                    action[i]();
+                action[i](Toggle_Type::off);
             }
         }
 
         void Toggle(int i) {
             if (i != 0  && i != 12)
                 Close_Book((int)i);
-            highlight.Toggle(action[i](), i);
+            highlight.Toggle(action[i](Toggle_Type::toggle), i);
         }
 
         bool Click_Button() {
@@ -136,7 +145,7 @@ namespace  Button {
             if (i != 0 && i != 12)
                 Close_Book(i);
 
-            return highlight.Toggle(action[i](), i);
+            return highlight.Toggle(action[i](Toggle_Type::toggle), i);
         }
     };
 

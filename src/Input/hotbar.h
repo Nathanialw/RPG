@@ -5,7 +5,7 @@
 #include "Lighting//lighting.h"
 #include "Maps/World/cave.h"
 #include "SDL2/SDL.h"
-#include "UI/ui_stats.h"
+#include "UI/Toolbar/ui_stats.h"
 #include "ai_control.h"
 #include "array"
 #include "components.h"
@@ -17,6 +17,8 @@
 #include "ui.h"
 #include "ui_actionbar.h"
 #include "ui_minimap.h"
+#include "unit_control.h"
+
 /*
  * make an array of functions for everything that can go onto the hotbar, ie skills
  *
@@ -82,25 +84,14 @@ namespace Hotbar {
     }
 
     int Menu_Toggle(entt::registry &zone, int &state, entt::entity &entity, Action_Component::Action &action, int &index, float &x, float &y, std::string objectName) {
-        auto view = zone.view<Component::Selected>();
         if (Mouse_Struct::mouseData.type == Component::Icon_Type::building) {
             zone.emplace_or_replace<Component::Destroyed>(Mouse::mouseData.mouseItem);
             Mouse::Set_Cursor_As_Cursor(zone);
             return 0;
         } else {
-            UI_toolbar::Close_All();
-            Mouse::bLeft_Mouse_Pressed = false;
-            zone.clear<Component::Selected>();
-            Loot_Panel::Close();
-            Bag_UI::bToggleCharacterUI = false;
-            UI_Spellbook::spellbook.b_isOpen = false;
-            UI_Stats::tab.b_isOpen = false;
-            Game_Menu_Control::Close();
-            Skills::General::Close();
-            Skills::Warrior::Close();
-            Skills::Mage::Close();
-            Skills::Rogue::Close();
-            return 0;
+            //if any of the these UI elements are true, return after cloing all of them --- should just wrap this in a descriptive function
+            if (UI_toolbar::Close_All() || Mouse::Cancel_Left_Click() || User_Mouse_Input::Deselect(zone) || Loot_Panel::Close() || Game_Menu_Control::Close())
+                return 0;
         }
         Menu::Toggle();
         return 0;

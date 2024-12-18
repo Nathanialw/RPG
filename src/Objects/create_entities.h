@@ -309,7 +309,7 @@ namespace Create_Entities {
 			}
 
 			if (player) {
-                Skill_Component::Add_Default_Warrior(zone, entity);
+                Skill_Component::Add_Default(zone, entity);
                 zone.emplace_or_replace<Component::Stats>(entity);
                 zone.emplace_or_replace<Component::Religion>(entity);
                 zone.emplace_or_replace<Component::XP>(entity);

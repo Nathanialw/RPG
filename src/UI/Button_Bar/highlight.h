@@ -6,6 +6,8 @@
 #include "array"
 #include "icons.h"
 #include "textures.h"
+#include "Button_Bar/button.h"
+
 
 namespace  Button {
 
@@ -59,8 +61,9 @@ namespace  Button {
         void Clear_Book() {
             for (int j = 0; j < size; j++)
                 if (highlight[j]  != 0 && highlight[j] != 12) {
-                    for (int k = j; k < size - 1; k++)
+                    for (int k = j; k < size - 1; k++) {
                         highlight[k] = highlight[k + 1];
+                    }
                     size--;
                     return;
                 }

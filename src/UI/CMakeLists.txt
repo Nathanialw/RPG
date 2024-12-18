@@ -20,6 +20,7 @@ target_sources(RPG
 
         Button_Bar/highlight.h
         Button_Bar/bar.h
+        Button_Bar/button.h
 
         Toolbar/Skills/skills.h
         Toolbar/Skills/general.h

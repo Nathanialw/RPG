@@ -8,6 +8,7 @@ namespace Loot_Panel {
 		std::vector<entt::entity> *items = nullptr;
 		float lootPanelSize = 64.0f;
 		bool open = false;
+		bool fixLootBoxInPlace = false;
 		SDL_FRect interactPanel = {0, 0, 64.0f, 64.0f};
 		SDL_FRect panel = {0, 0, 64.0f, 64.0f};
 	} lootPanel;
@@ -17,12 +18,19 @@ namespace Loot_Panel {
 
 	void Set_Loot(Component::Loot &lootDrops) {
 		lootPanel.items = &lootDrops.items;
-		lootPanel.open = false;
+		lootPanel.open = true;
+        lootPanel.fixLootBoxInPlace = true;
 	}
 
-	void Close() {
-		lootPanel.items = nullptr;
-		lootPanel.interactPanel = {0.0f, 0.0f, 0.0f, 0.0f};
+	bool Close() {
+        if (lootPanel.open) {
+            lootPanel.items = nullptr;
+            lootPanel.interactPanel = {0.0f, 0.0f, 0.0f, 0.0f};
+            lootPanel.open = false;
+            lootPanel.fixLootBoxInPlace = false;
+            return true;
+        }
+        return false;
 	};
 
 	bool Mouse_Inside_Panel(Component::Camera &camera, int &state) {
@@ -100,17 +108,17 @@ namespace Loot_Panel {
 	}
 
 	void Render_Loot(entt::registry &zone, int &state, Component::Camera &camera) {
-		if (!lootPanel.open) {
-			SDL_FPoint point = {Mouse::iXMouse, Mouse::iYMouse};
-			point = Camera_Control::Revert_FPoint_To_Scale(point, camera);
-			lootPanel.panel = {point.x - (lootPanel.lootPanelSize / 2.0f), point.y - (lootPanel.lootPanelSize / 2.0f), lootPanel.lootPanelSize, lootPanel.lootPanelSize};
-			lootPanel.open = true;
-		}
-		//set panel to the top of the panel
-		SDL_FRect panel = lootPanel.panel;
-
 		if (lootPanel.items) {
-			SDL_FRect scaledBackground = panel;
+            if (lootPanel.fixLootBoxInPlace) {
+                SDL_FPoint point = {Mouse::iXMouse, Mouse::iYMouse};
+                point = Camera_Control::Revert_FPoint_To_Scale(point, camera);
+                lootPanel.panel = {point.x - (lootPanel.lootPanelSize / 2.0f), point.y - (lootPanel.lootPanelSize / 2.0f), lootPanel.lootPanelSize, lootPanel.lootPanelSize};
+                lootPanel.fixLootBoxInPlace = false;
+            }
+            //set panel to the top of the panel
+		    SDL_FRect panel = lootPanel.panel;
+
+            SDL_FRect scaledBackground = panel;
 			scaledBackground.h = (float) lootPanel.items->size() * lootPanel.lootPanelSize;
 			scaledBackground = Camera_Control::Convert_FRect_To_Scale(scaledBackground, camera);
 

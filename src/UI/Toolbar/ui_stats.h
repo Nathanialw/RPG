@@ -1,5 +1,11 @@
 #pragma once
 #include "ui_XP.h"
+#include "textures.h"
+#include "ui_elements.h"
+#include "tooltips.h"
+#include "icons.h"
+#include "mouse_control.h"
+#include "Button_Bar/button.h"
 
 namespace UI_Stats {
     //disease status
@@ -83,7 +89,19 @@ namespace UI_Stats {
         }
     }
 
-    bool Toggle() {
+    bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+        if (toggleType == Toggle_Type::get)
+            return tab.b_isOpen;
+
+        if (toggleType == Toggle_Type::on) {
+            tab.b_isOpen = true;
+            return true;
+        }
+        if (toggleType == Toggle_Type::off) {
+            tab.b_isOpen = false;
+            return false;
+        }
+
         if (tab.b_isOpen) {
             tab.b_isOpen = false;
             return false;

@@ -5,7 +5,7 @@
 #include "components.h"
 #include "entt/entt.hpp"
 #include "item_components.h"
-
+#include "Button_Bar/button.h"
 
 namespace Bag_UI {
   SDL_Rect charui = {0, 0, 554, 1080};
@@ -63,14 +63,26 @@ namespace Bag_UI {
     }
   }
 
-  bool Toggle() {
-    if (!bToggleCharacterUI) {
-      bToggleCharacterUI = true;
+    bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+        if (toggleType == Toggle_Type::get)
+            return bToggleCharacterUI;
+
+        if (toggleType == Toggle_Type::on) {
+            bToggleCharacterUI = true;
+            return true;
+        }
+        if (toggleType == Toggle_Type::off) {
+            bToggleCharacterUI = false;
+            return false;
+        }
+
+        if (bToggleCharacterUI) {
+            bToggleCharacterUI = false;
+            return false;
+        }
+        bToggleCharacterUI = true;
         return true;
     }
-      bToggleCharacterUI = false;
-        return false;
-  }
 
   //check if the Mouse point is in the rect and which one
   int Get_Bag_Slot(entt::registry &zone, SDL_FPoint &screenCursor, Component::Camera &camera) {

@@ -14,59 +14,47 @@ namespace  Skills {
             std::array<std::pair<int , int>, SIZE> currentSkills = {};
 
             auto view = zone.view<Component::Input, Skill_Component::Skills_Points,
-                    Skill_Component::Armour_Smithing,
-                    Skill_Component::Armour_Use,
-                    Skill_Component::Blocking,
-                    Skill_Component::Bludgeoning,
-                    Skill_Component::Chopping,
-                    Skill_Component::Combat,
-                    Skill_Component::Crusade,
-                    Skill_Component::Disease_Resistance,
-                    Skill_Component::Dragon_Slaying,
-                    Skill_Component::Dual_Wielding,
-                    Skill_Component::Physical_Resistance,
-                    Skill_Component::Repair,
-                    Skill_Component::Spearing,
-                    Skill_Component::Swordplay,
-                    Skill_Component::Titanology,
-                    Skill_Component::Unarmed_Fighting,
-                    Skill_Component::Violence,
-                    Skill_Component::Weapon_Smithing,
-                    Skill_Component::Weapon_Use>();
+                    Skill_Component::Alchemy,
+                    Skill_Component::Demonology,
+                    Skill_Component::Heat_Resistance,
+                    Skill_Component::History,
+                    Skill_Component::Magic_Resistance,
+                    Skill_Component::Memory,
+                    Skill_Component::Mutology,
+                    Skill_Component::Necrology,
+                    Skill_Component::Research,
+                    Skill_Component::Runic_Lore,
+                    Skill_Component::Spell_Use,
+                    Skill_Component::Thaumaturgy,
+                    Skill_Component::Wand_Lore>();
 
             for (auto entity: view) {
-                auto &armourSmithing = view.get<Skill_Component::Armour_Smithing>(entity);
-                auto &armourUse = view.get<Skill_Component::Armour_Use>(entity);
-                auto &blocking = view.get<Skill_Component::Blocking>(entity);
-                auto &bludgeoning = view.get<Skill_Component::Bludgeoning>(entity);
-                auto &chopping = view.get<Skill_Component::Chopping>(entity);
-                auto &combat = view.get<Skill_Component::Combat>(entity);
-                auto &crusade = view.get<Skill_Component::Crusade>(entity);
-                auto &diseaseResistance = view.get<Skill_Component::Disease_Resistance>(entity);
-                auto &dragonSlaying = view.get<Skill_Component::Dragon_Slaying>(entity);
-                auto &dualWielding = view.get<Skill_Component::Dual_Wielding>(entity);
-                auto &physicalResistance = view.get<Skill_Component::Physical_Resistance>(entity);
-                auto &repair = view.get<Skill_Component::Repair>(entity);
-                auto &spearing = view.get<Skill_Component::Spearing>(entity);
-                auto &swordplay = view.get<Skill_Component::Swordplay>(entity);
-                auto &titanology = view.get<Skill_Component::Titanology>(entity);
-                auto &unarmedFighting = view.get<Skill_Component::Unarmed_Fighting>(entity);
-                auto &violence = view.get<Skill_Component::Violence>(entity);
-                auto &weaponSmithing = view.get<Skill_Component::Weapon_Smithing>(entity);
-                auto &weaponUse = view.get<Skill_Component::Weapon_Use>(entity);
-                currentSkills[0] = {armourSmithing.level, armourSmithing.maxLevel};
-                currentSkills[1] = {armourUse.level, armourUse.maxLevel};
-                currentSkills[2] = {blocking.level, blocking.maxLevel};
-                currentSkills[3] = {bludgeoning.level, bludgeoning.maxLevel};
-                currentSkills[4] = {chopping.level, chopping.maxLevel};
-                currentSkills[5] = {combat.level, combat.maxLevel};
-                currentSkills[6] = {crusade.level, crusade.maxLevel};
-                currentSkills[7] = {diseaseResistance.level, diseaseResistance.maxLevel};
-                currentSkills[8] = {dragonSlaying.level, dragonSlaying.maxLevel};
-                currentSkills[9] = {dualWielding.level, dualWielding.maxLevel};
-                currentSkills[10] = {physicalResistance.level, physicalResistance.maxLevel};
-                currentSkills[11] = {repair.level, repair.maxLevel};
-                currentSkills[12] = {spearing.level, spearing.maxLevel};
+                auto &Alchemy = view.get<Skill_Component::Alchemy>(entity);
+                auto &Demonology = view.get<Skill_Component::Demonology>(entity);
+                auto &Heat_Resistance = view.get<Skill_Component::Heat_Resistance>(entity);
+                auto &History = view.get<Skill_Component::History>(entity);
+                auto &Magic_Resistance = view.get<Skill_Component::Magic_Resistance>(entity);
+                auto &Memory = view.get<Skill_Component::Memory>(entity);
+                auto &Mutology = view.get<Skill_Component::Mutology>(entity);
+                auto &Necrology = view.get<Skill_Component::Necrology>(entity);
+                auto &Research = view.get<Skill_Component::Research>(entity);
+                auto &Runic_Lore = view.get<Skill_Component::Runic_Lore>(entity);
+                auto &Spell_Use = view.get<Skill_Component::Spell_Use>(entity);
+                auto &Thaumaturgy = view.get<Skill_Component::Thaumaturgy>(entity);
+                auto &Wand_Lore = view.get<Skill_Component::Wand_Lore>(entity);
+                currentSkills[0] = {Alchemy.level, Alchemy.maxLevel};
+                currentSkills[1] = {Demonology.level, Demonology.maxLevel};
+                currentSkills[2] = {Heat_Resistance.level, Heat_Resistance.maxLevel};
+                currentSkills[3] = {History.level, History.maxLevel};
+                currentSkills[4] = {Magic_Resistance.level, Magic_Resistance.maxLevel};
+                currentSkills[5] = {Memory.level, Memory.maxLevel};
+                currentSkills[6] = {Mutology.level, Mutology.maxLevel};
+                currentSkills[7] = {Necrology.level, Necrology.maxLevel};
+                currentSkills[8] = {Research.level, Research.maxLevel};
+                currentSkills[9] = {Runic_Lore.level, Runic_Lore.maxLevel};
+                currentSkills[10] = {Spell_Use.level, Spell_Use.maxLevel};
+                currentSkills[11] = {Thaumaturgy.level, Thaumaturgy.maxLevel};
+                currentSkills[12] = {Wand_Lore.level, Wand_Lore.maxLevel};
             }
             return currentSkills;
         }
@@ -80,35 +68,35 @@ namespace  Skills {
         }
 
         std::array<std::string, SIZE> names = {
-                "Armour Smithing",
-                "Armour Use",
-                "Blocking",
-                "Bludgeoning",
-                "Chopping",
-                "Combat",
-                "Crusade",
-                "Disease Resistance",
-                "Dragon Slaying",
-                "Dual Wielding",
-                "Physical Resistance",
-                "Repair",
-                "Spearing",
+                "Alchemy",
+                "Demonology",
+                "Heat Resistance",
+                "History",
+                "Magic Resistance",
+                "Memory",
+                "Mutology",
+                "Necrology",
+                "Research",
+                "Runic Lore",
+                "Spell Use",
+                "Thaumaturgy",
+                "Wand Lore",
         };
 
         std::array<std::string, SIZE> icons = {
-                "armoursmithingicon",
-                "armouruseicon",
-                "blockingicon",
-                "bludgeoningicon",
-                "choppingicon",
-                "combaticon",
-                "crusadeicon",
-                "diseaseresistanceicon",
-                "dragonslayingicon",
-                "dualwieldingicon",
-                "physicalresistanceicon",
-                "repairicon",
-                "spearingicon",
+                "alchemyicon",
+                "demonologyicon",
+                "fireresistanceicon",
+                "historyicon",
+                "magicresistanceicon",
+                "memoryicon",
+                "mutologyicon",
+                "necromancyicon",
+                "researchicon",
+                "runicloreicon",
+                "spelluseicon",
+                "thaumaturgyicon",
+                "wandloreicon",
         };
 
         Skill_Tree<SIZE, Action> mage = Skill_Tree<SIZE, Action>(names,  icons, "Mage");
@@ -122,8 +110,8 @@ namespace  Skills {
             mage.Draw();
         }
 
-        bool Toggle() {
-            return mage.Toggle();
+        bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+            return mage.Toggle(toggleType);
         }
 
         void Close() {

@@ -241,14 +241,14 @@ namespace Component {
         keyboardControl[SDLK_a].velocity.y = 0.0f;
         keyboardControl[SDLK_d].velocity.x += velocity.speed;
         keyboardControl[SDLK_d].velocity.y = 0.0f;
-        keyboardControl[SDLK_q].velocity.x -= velocity.speed;
-        keyboardControl[SDLK_q].velocity.y -= velocity.speed;
-        keyboardControl[SDLK_e].velocity.x += velocity.speed;
-        keyboardControl[SDLK_e].velocity.y -= velocity.speed;
-        keyboardControl[SDLK_c].velocity.x += velocity.speed;
-        keyboardControl[SDLK_c].velocity.y += velocity.speed;
-        keyboardControl[SDLK_z].velocity.x -= velocity.speed;
-        keyboardControl[SDLK_z].velocity.y += velocity.speed;
+//        keyboardControl[SDLK_q].velocity.x -= velocity.speed;
+//        keyboardControl[SDLK_q].velocity.y -= velocity.speed;
+//        keyboardControl[SDLK_e].velocity.x += velocity.speed;
+//        keyboardControl[SDLK_e].velocity.y -= velocity.speed;
+//        keyboardControl[SDLK_c].velocity.x += velocity.speed;
+//        keyboardControl[SDLK_c].velocity.y += velocity.speed;
+//        keyboardControl[SDLK_z].velocity.x -= velocity.speed;
+//        keyboardControl[SDLK_z].velocity.y += velocity.speed;
 
         auto &input = zone.emplace_or_replace<Input>(entity);
         input.keyboardControl = keyboardControl;

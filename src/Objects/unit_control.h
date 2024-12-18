@@ -242,6 +242,15 @@ namespace User_Mouse_Input {
         return bSelected;
     }
 
+    bool Deselect (entt::registry &zone) {
+        auto view = zone.view<Component::Selected>();
+        if (view.empty()) {
+            return false;
+        }
+        zone.clear<Component::Selected>();
+        return true;
+    }
+
 
     void Select(entt::registry &zone) {
         Select_Platoon(zone);

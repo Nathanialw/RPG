@@ -31,6 +31,14 @@ namespace Mouse {
     float Mouse_Selection_Box_x_Display;
     float Mouse_Selection_Box_y_Display;
 
+    bool Cancel_Left_Click() {
+        if (bLeft_Mouse_Pressed) {
+            bLeft_Mouse_Pressed = false;
+            return true;
+        }
+        return false;
+    }
+
     void Init_mouse(entt::registry &zone) {
         mouseData.cursor_ID = Graphics::Create_Icon_Entity(zone, Texture::cursor_0, nullptr, Component::Icon_Type::none);
         Mouse::mouseData.mouseItem = Mouse::mouseData.cursor_ID;

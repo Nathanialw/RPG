@@ -5,6 +5,7 @@
 
 #include "components.h"
 #include "graphics.h"
+#include "skills_Components.h"
 
 namespace XP {
 
@@ -22,7 +23,7 @@ namespace XP {
     }
 
     void Get_XP(entt::registry &zone, int &state) {
-        auto view = zone.view<Component::XP, Component::Input, Component::Stats, Component::Health>();
+        auto view = zone.view<Component::XP, Component::Input, Component::Stats, Component::Health, Skill_Component::Skills_Points>();
 
         for (auto entity: view) {
             auto &xp = view.get<Component::XP>(entity);
@@ -33,6 +34,15 @@ namespace XP {
 
                 auto &stats = view.get<Component::Stats>(entity);
                 stats.unspent += 10;
+
+                auto &skills = view.get<Skill_Component::Skills_Points>(entity);
+                skills.unspent += 1;
+
+                skills.bankedFromInt += stats.intelligence;
+                while (skills.bankedFromInt > 300) {
+                    skills.unspent += 1;
+                    skills.bankedFromInt -= 300;
+                }
 
                 auto &health = view.get<Component::Health>(entity);
                 health.maxHealth += health.growth;

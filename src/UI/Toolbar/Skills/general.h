@@ -4,6 +4,7 @@
 #pragma once
 #include "skills.h"
 
+
 //passive skills
 namespace  Skills {
     namespace General {
@@ -14,57 +15,53 @@ namespace  Skills {
             std::array<std::pair<int , int>, SIZE> currentSkills = {};
 
             auto view = zone.view<Component::Input, Skill_Component::Skills_Points,
-                    Skill_Component::Armour_Smithing,
-                    Skill_Component::Armour_Use,
-                    Skill_Component::Blocking,
-                    Skill_Component::Bludgeoning,
-                    Skill_Component::Chopping,
-                    Skill_Component::Combat,
-                    Skill_Component::Crusade,
-                    Skill_Component::Disease_Resistance,
-                    Skill_Component::Dragon_Slaying,
-                    Skill_Component::Dual_Wielding,
-                    Skill_Component::Physical_Resistance,
-                    Skill_Component::Repair,
-                    Skill_Component::Spearing,
-                    Skill_Component::Swordplay,
-                    Skill_Component::Titanology,
-                    Skill_Component::Unarmed_Fighting,
-                    Skill_Component::Violence,
-                    Skill_Component::Weapon_Smithing,
-                    Skill_Component::Weapon_Use>();
+                    Skill_Component::Bartering,
+                    Skill_Component::Cartography,
+                    Skill_Component::Cold_Resistance,
+                    Skill_Component::Cooking,
+                    Skill_Component::Death_Cheating,
+                    Skill_Component::Electrical_Resistance,
+                    Skill_Component::Fitness,
+                    Skill_Component::Gemcutting,
+                    Skill_Component::Magic_Item_Use,
+                    Skill_Component::Mining,
+                    Skill_Component::Piety,
+                    Skill_Component::Swimming,
+                    Skill_Component::Self_Awareness,
+                    Skill_Component::Traveling,
+                    Skill_Component::Willpower>();
 
             for (auto entity: view) {
-                auto &armourSmithing = view.get<Skill_Component::Armour_Smithing>(entity);
-                auto &armourUse = view.get<Skill_Component::Armour_Use>(entity);
-                auto &blocking = view.get<Skill_Component::Blocking>(entity);
-                auto &bludgeoning = view.get<Skill_Component::Bludgeoning>(entity);
-                auto &chopping = view.get<Skill_Component::Chopping>(entity);
-                auto &combat = view.get<Skill_Component::Combat>(entity);
-                auto &crusade = view.get<Skill_Component::Crusade>(entity);
-                auto &diseaseResistance = view.get<Skill_Component::Disease_Resistance>(entity);
-                auto &dragonSlaying = view.get<Skill_Component::Dragon_Slaying>(entity);
-                auto &dualWielding = view.get<Skill_Component::Dual_Wielding>(entity);
-                auto &physicalResistance = view.get<Skill_Component::Physical_Resistance>(entity);
-                auto &repair = view.get<Skill_Component::Repair>(entity);
-                auto &spearing = view.get<Skill_Component::Spearing>(entity);
-                auto &swordplay = view.get<Skill_Component::Swordplay>(entity);
-                auto &titanology = view.get<Skill_Component::Titanology>(entity);
-                currentSkills[0] = {armourSmithing.level, armourSmithing.maxLevel};
-                currentSkills[1] = {armourUse.level, armourUse.maxLevel};
-                currentSkills[2] = {blocking.level, blocking.maxLevel};
-                currentSkills[3] = {bludgeoning.level, bludgeoning.maxLevel};
-                currentSkills[4] = {chopping.level, chopping.maxLevel};
-                currentSkills[5] = {combat.level, combat.maxLevel};
-                currentSkills[6] = {crusade.level, crusade.maxLevel};
-                currentSkills[7] = {diseaseResistance.level, diseaseResistance.maxLevel};
-                currentSkills[8] = {dragonSlaying.level, dragonSlaying.maxLevel};
-                currentSkills[9] = {dualWielding.level, dualWielding.maxLevel};
-                currentSkills[10] = {physicalResistance.level, physicalResistance.maxLevel};
-                currentSkills[11] = {repair.level, repair.maxLevel};
-                currentSkills[12] = {spearing.level, spearing.maxLevel};
-                currentSkills[13] = {swordplay.level, swordplay.maxLevel};
-                currentSkills[14] = {titanology.level, titanology.maxLevel};
+                auto &Bartering = view.get<Skill_Component::Bartering>(entity);
+                auto &Cartography = view.get<Skill_Component::Cartography>(entity);
+                auto &Cold_Resistance = view.get<Skill_Component::Cold_Resistance>(entity);
+                auto &Cooking = view.get<Skill_Component::Cooking>(entity);
+                auto &Death_Cheating = view.get<Skill_Component::Death_Cheating>(entity);
+                auto &Electrical_Resistance = view.get<Skill_Component::Electrical_Resistance>(entity);
+                auto &Fitness = view.get<Skill_Component::Fitness>(entity);
+                auto &Gemcutting = view.get<Skill_Component::Gemcutting>(entity);
+                auto &Magic_Item_Use = view.get<Skill_Component::Magic_Item_Use>(entity);
+                auto &Mining = view.get<Skill_Component::Mining>(entity);
+                auto &Piety = view.get<Skill_Component::Piety>(entity);
+                auto &Self_Awareness = view.get<Skill_Component::Self_Awareness>(entity);
+                auto &Swimming = view.get<Skill_Component::Swimming>(entity);
+                auto &Traveling = view.get<Skill_Component::Traveling>(entity);
+                auto &Willpower = view.get<Skill_Component::Willpower>(entity);
+                currentSkills[0] = {Bartering.level, Bartering.maxLevel};
+                currentSkills[1] = {Cartography.level, Cartography.maxLevel};
+                currentSkills[2] = {Cold_Resistance.level, Cold_Resistance.maxLevel};
+                currentSkills[3] = {Cooking.level, Cooking.maxLevel};
+                currentSkills[4] = {Death_Cheating.level, Death_Cheating.maxLevel};
+                currentSkills[5] = {Electrical_Resistance.level, Electrical_Resistance.maxLevel};
+                currentSkills[6] = {Fitness.level, Fitness.maxLevel};
+                currentSkills[7] = {Gemcutting.level, Gemcutting.maxLevel};
+                currentSkills[8] = {Magic_Item_Use.level, Magic_Item_Use.maxLevel};
+                currentSkills[9] = {Mining.level, Mining.maxLevel};
+                currentSkills[10] = {Piety.level, Piety.maxLevel};
+                currentSkills[11] = {Self_Awareness.level, Self_Awareness.maxLevel};
+                currentSkills[12] = {Swimming.level, Swimming.maxLevel};
+                currentSkills[13] = {Traveling.level, Traveling.maxLevel};
+                currentSkills[14] = {Willpower.level, Willpower.maxLevel};
             }
             return currentSkills;
         }
@@ -78,39 +75,39 @@ namespace  Skills {
         }
 
         std::array<std::string, SIZE> names = {
-                "Armour Smithing",
-                "Armour Use",
-                "Blocking",
-                "Bludgeoning",
-                "Chopping",
-                "Combat",
-                "Crusade",
-                "Disease Resistance",
-                "Dragon Slaying",
-                "Dual Wielding",
-                "Physical Resistance",
-                "Repair",
-                "Spearing",
-                "Swordplay",
-                "Titanology",
+                "Bartering",
+                "Cartography",
+                "Cold Resistance",
+                "Cooking",
+                "Death Cheating",
+                "Electrical Resistance",
+                "Fitness",
+                "Gemcutting",
+                "Magic Item Use",
+                "Mining",
+                "Piety",
+                "Self Awareness",
+                "Swimming",
+                "Traveling",
+                "Willpower",
         };
 
         std::array<std::string, SIZE> icons = {
-                "armoursmithingicon",
-                "armouruseicon",
-                "blockingicon",
-                "bludgeoningicon",
-                "choppingicon",
-                "combaticon",
-                "crusadeicon",
-                "diseaseresistanceicon",
-                "dragonslayingicon",
-                "dualwieldingicon",
-                "physicalresistanceicon",
-                "repairicon",
-                "spearingicon",
-                "swordplayicon",
-                "titanologyicon",
+                "barteringicon",
+                "cartographyicon",
+                "coldresistanceicon",
+                "cookingicon",
+                "deathcheatingicon",
+                "electricalresistanceicon",
+                "fitnessicon",
+                "gemcuttingicon",
+                "magicitemuseicon",
+                "miningicon",
+                "pietyicon",
+                "selfawarenessicon",
+                "swimmingicon",
+                "travelingicon",
+                "willpowericon",
         };
 
         Skill_Tree<SIZE, Action> general = Skill_Tree<SIZE, Action>(names, icons, "General");
@@ -124,8 +121,8 @@ namespace  Skills {
             general.Draw();
         }
 
-        bool Toggle() {
-            return general.Toggle();
+        bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+            return general.Toggle(toggleType);
         }
 
         void Close() {
