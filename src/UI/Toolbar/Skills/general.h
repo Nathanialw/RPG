@@ -6,7 +6,7 @@
 
 
 //passive skills
-namespace  Skills {
+namespace  Skill {
     namespace General {
         constexpr int SIZE = 15;
         typedef bool (*Action)();
@@ -116,6 +116,51 @@ namespace  Skills {
         void Update(entt::registry  &zone, f2 scale) {
             general.Update(scale, Get_Skills(zone), Get_Skill_Points(zone));
         }
+
+        void Hover_Highlight() {
+            general.Mouse_Over();
+        }
+
+        bool  Mouse_Inside() {
+            return general.Mouse_Inside();
+        }
+
+        bool Click(entt::registry &zone, entt::entity &entity) {
+            //in Event Manager check for click on skill up button
+            //get index of skill
+            int i = general.Click();
+            if (i == -1)
+                return false;
+
+            auto &skills = zone.get<Skill_Component::Skills_Points>(entity);
+            bool clicked = false;
+
+            if (skills.unspent < skills.generalCost)
+                return false;
+
+            switch (i) {
+                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Bartering>(entity));   break;
+                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Cartography>(entity));    break;
+                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Cold_Resistance>(entity));  break;
+                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::Cooking>(entity));   break;
+                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Death_Cheating>(entity));  break;
+                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Electrical_Resistance>(entity));    break;
+                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Fitness>(entity));   break;
+                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Gemcutting>(entity)); break;
+                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Magic_Item_Use>(entity));    break;
+                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Mining>(entity)); break;
+                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Piety>(entity)); break;
+                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Swimming>(entity));    break;
+                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Self_Awareness>(entity));  break;
+                case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Traveling>(entity)); break;
+                case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Willpower>(entity));    break;
+            }
+
+            if (clicked)
+                skills.unspent -= skills.generalCost;
+
+            return clicked;
+        };
 
         void Render() {
             general.Draw();

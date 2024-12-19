@@ -5,7 +5,7 @@
 #include "skills.h"
 
 //passive skills
-namespace Skills {
+namespace Skill {
     namespace Warrior {
         constexpr int SIZE = 19;
 
@@ -142,115 +142,53 @@ namespace Skills {
             warrior.Update(scale, Get_Skills(zone), Get_Skill_Points(zone));
         }
 
-        template <typename S, typename C>
-        bool Increase_Skill(S &skills, C &component) {
-            if (component.level < component.maxLevel) {
-                component.level++;
-                skills.unspent -= skills.warriorCost;
-                return true;
-            }
-            return false;
+        bool Mouse_Inside() {
+            return warrior.Mouse_Inside();
         }
 
-        void Click(entt::registry &zone) {
+        void Hover_Highlight() {
+            warrior.Mouse_Over();
+        }
+
+        bool Click(entt::registry &zone, entt::entity &entity) {
             //in Event Manager check for click on skill up button
             //get index of skill
-            int i = warrior.Skill_Up();
+            int i = warrior.Click();
             if (i == -1)
-                return;
+                return false;
 
-            auto view = zone.view<Component::Input, Component::Camera, Skill_Component::Skills_Points,
-                    Skill_Component::Armour_Smithing,
-                    Skill_Component::Armour_Use,
-                    Skill_Component::Blocking,
-                    Skill_Component::Bludgeoning,
-                    Skill_Component::Chopping,
-                    Skill_Component::Combat,
-                    Skill_Component::Crusade,
-                    Skill_Component::Disease_Resistance,
-                    Skill_Component::Dragon_Slaying,
-                    Skill_Component::Dual_Wielding,
-                    Skill_Component::Physical_Resistance,
-                    Skill_Component::Repair,
-                    Skill_Component::Spearing,
-                    Skill_Component::Swordplay,
-                    Skill_Component::Titanology,
-                    Skill_Component::Unarmed_Fighting,
-                    Skill_Component::Violence,
-                    Skill_Component::Weapon_Smithing,
-                    Skill_Component::Weapon_Use>();
+            auto &skills = zone.get<Skill_Component::Skills_Points>(entity);
+            bool clicked = false;
 
-            for (auto entity: view) {
-                auto &camera = view.get<Component::Camera>(entity);
-                auto &skills = view.get<Skill_Component::Skills_Points>(entity);
-                bool clicked = false;
+            if (skills.unspent < skills.warriorCost)
+                return false;
 
-                if (skills.unspent <= skills.warriorCost)
-                    return;
-
-                switch (i) {
-                    case 0:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Armour_Smithing>(entity));
-                        break;
-                    case 1:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Armour_Use>(entity));
-                        break;
-                    case 2:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Blocking>(entity));
-                        break;
-                    case 3:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Bludgeoning>(entity));
-                        break;
-                    case 4:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Chopping>(entity));
-                        break;
-                    case 5:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Combat>(entity));
-                        break;
-                    case 6:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Crusade>(entity));
-                        break;
-                    case 7:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Disease_Resistance>(entity));
-                        break;
-                    case 8:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Dragon_Slaying>(entity));
-                        break;
-                    case 9:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Dual_Wielding>(entity));
-                        break;
-                    case 10:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Physical_Resistance>(entity));
-                        break;
-                    case 11:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Repair>(entity));
-                        break;
-                    case 12:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Spearing>(entity));
-                        break;
-                    case 13:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Swordplay>(entity));
-                        break;
-                    case 14:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Titanology>(entity));
-                        break;
-                    case 15:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Unarmed_Fighting>(entity));
-                        break;
-                    case 16:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Violence>(entity));
-                        break;
-                    case 17:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Weapon_Smithing>(entity));
-                        break;
-                    case 18:
-                        clicked = Increase_Skill(skills, view.get<Skill_Component::Weapon_Use>(entity));
-                        break;
-                }
-                if (clicked) {
-                    Update(zone, camera.scale);
-                }
+            switch (i) {
+                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Armour_Smithing>(entity));   break;
+                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Armour_Use>(entity));    break;
+                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Blocking>(entity));  break;
+                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::Bludgeoning>(entity));   break;
+                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Chopping>(entity));  break;
+                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Combat>(entity));    break;
+                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Crusade>(entity));   break;
+                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Disease_Resistance>(entity)); break;
+                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Dragon_Slaying>(entity));    break;
+                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Dual_Wielding>(entity)); break;
+                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Physical_Resistance>(entity)); break;
+                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Repair>(entity));    break;
+                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Spearing>(entity));  break;
+                case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Swordplay>(entity)); break;
+                case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Titanology>(entity));    break;
+                case 15:    clicked = Increase_Skill(zone.get<Skill_Component::Unarmed_Fighting>(entity));  break;
+                case 16:    clicked = Increase_Skill(zone.get<Skill_Component::Violence>(entity));  break;
+                case 17:    clicked = Increase_Skill(zone.get<Skill_Component::Weapon_Smithing>(entity));   break;
+                case 18:    clicked = Increase_Skill(zone.get<Skill_Component::Weapon_Use>(entity));    break;
             }
+
+            if (clicked)
+                skills.unspent -= skills.warriorCost;
+
+            return clicked;
         };
 
         void Render() {

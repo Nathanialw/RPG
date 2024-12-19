@@ -26,10 +26,7 @@ namespace Interface {
 
     void Update(entt::registry &zone, f2 x) {
         UI_toolbar::Update(x);
-        Skills::General::Update(zone, x);
-        Skills::Mage::Update(zone, x);
-        Skills::Rogue::Update(zone, x);
-        Skills::Warrior::Update(zone, x);
+        Skill::Update(zone, x);
     }
 
     void Update_Zoom(entt::registry &zone, const int zoom) {

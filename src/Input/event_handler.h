@@ -13,6 +13,7 @@
 #include "quad_tree.h"
 #include "ui.h"
 #include "UI/Toolbar/ui_toolbar.h"
+#include "skills.h"
 
 namespace Event_Handler {
 
@@ -63,9 +64,8 @@ namespace Event_Handler {
 	};
 
     void Icon_Highlight(entt::registry &zone, int &state, Component::Camera &camera) {
-        if (UI_toolbar::Mouse_inside()) {
-            UI_toolbar::Hover_Highlight();
-        }
+        UI_toolbar::Hover_Highlight();
+        Skill::HighLight();
     }
 
 	void Mouse_Hover(entt::registry &zone, int &state, Component::Camera &camera) {
@@ -127,9 +127,12 @@ namespace Event_Handler {
 				}
                     //      toolbar
                 else if (UI_toolbar::Mouse_inside()) {
-                    if (UI_toolbar::Click_Button()) {
-
-                    }
+                    UI_toolbar::Click_Button();
+                    return;
+                }
+                    // skill tabs
+                else if (Skill::Mouse_Inside()) {
+                    Skill::Click(zone, player_ID);
                     return;
                 }
 					//      spellbook

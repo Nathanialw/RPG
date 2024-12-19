@@ -5,7 +5,7 @@
 #include "skills.h"
 
 //passive skills
-namespace  Skills {
+namespace  Skill {
     namespace Mage {
         constexpr int SIZE = 13;
         typedef bool (*Action)();
@@ -105,6 +105,50 @@ namespace  Skills {
         void Update(entt::registry  &zone, f2 scale) {
             mage.Update(scale, Get_Skills(zone), Get_Skill_Points(zone));
         }
+
+        bool Mouse_Inside() {
+            return mage.Mouse_Inside();
+        }
+
+        void Hover_Highlight() {
+            mage.Mouse_Over();
+        }
+
+        bool Click(entt::registry &zone, entt::entity &entity) {
+            //in Event Manager check for click on skill up button
+            //get index of skill
+            int i = mage.Click();
+            if (i == -1)
+                return false;
+
+            auto &skills = zone.get<Skill_Component::Skills_Points>(entity);
+            bool clicked = false;
+
+            if (skills.unspent < skills.mageCost)
+                return false;
+
+            switch (i) {
+                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Alchemy>(entity));   break;
+                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Demonology>(entity));    break;
+                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Heat_Resistance>(entity));  break;
+                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::History>(entity));   break;
+                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Magic_Resistance>(entity));  break;
+                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Memory>(entity));    break;
+                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Mutology>(entity));   break;
+                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Necrology>(entity)); break;
+                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Research>(entity));    break;
+                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Runic_Lore>(entity)); break;
+                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Spell_Use>(entity)); break;
+                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Thaumaturgy>(entity));    break;
+                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Wand_Lore>(entity));  break;
+            }
+
+            if (clicked)
+                skills.unspent -= skills.mageCost;
+
+            return clicked;
+        };
+
 
         void Render() {
             mage.Draw();

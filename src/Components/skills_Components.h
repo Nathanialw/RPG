@@ -21,7 +21,7 @@ namespace  Skill_Component {
         int warriorMax = 2;
     };
 
-    //Warrior Skills
+    //Warrior Skill
 
     struct Armour_Smithing {
         int level = 0;
@@ -325,7 +325,7 @@ namespace  Skill_Component {
 
     ///////////////////////////////////////
 
-    //Rogue Skills
+    //Rogue Skill
 
     struct Acid_Resistance {
         int level = 0;

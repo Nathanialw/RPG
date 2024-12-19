@@ -15,7 +15,16 @@
 #include "ui_elements.h"
 #include "skills_Components.h"
 
-namespace  Skills {
+namespace  Skill {
+
+    template <typename C>
+    bool Increase_Skill(C &skill) {
+        if (skill.level < skill.maxLevel) {
+            skill.level++;
+            return true;
+        }
+        return false;
+    }
 
     struct Skill_Values {
         int unspent;
@@ -38,6 +47,8 @@ namespace  Skills {
     class Skill_Tree {
         //display
         bool isOpen = false;
+        int hoveredSkill = -1;
+        int hoveredSkillUp = -1;
         SDL_Texture* background = nullptr;
         static constexpr const char* maxLearnableLevel[3] = { "Basic", "Advanced", "Expert" };
 
@@ -66,7 +77,7 @@ namespace  Skills {
             }
         }
 
-        void Update(f2 scale, std::array<std::pair<int , int>, T> values,  Skill_Values skillPoints) { //tuple is {unspent, cost, max level}
+        void Update(f2 scale, std::array<std::pair<int , int>, T> values,  Skill_Values skillPoints) {
             scaledFrame = UI::Center_Rect(Utilities::SDL_FRect_To_SDL_Rect(frame));
             scaledFrame = UI::Update_Scale(scale, scaledFrame);
             FC_Scale FC_scale = {1.0f, 1.0f};
@@ -109,8 +120,8 @@ namespace  Skills {
 
             x = 335.0f;
             y+= 30.0f;
-            for (int i = 0; i < 3; ++i) {
-                FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, maxLearnableLevel[i]);
+            for (auto i : maxLearnableLevel) {
+                FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, i);
                 x+= 70.0f;
             }
 
@@ -157,6 +168,11 @@ namespace  Skills {
                     clipRect = Icons::iconClipRects["increasebutton"].clipRect;
                     SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &skillUpRects[i]);
                 }
+
+                skillUpRects[i] = UI::Update_Scale(scale, skillUpRects[i]);
+
+                SDL_FRect gg = {128.0f - edge - 10.0f, (165.0f - edge)  + (i * (iconSize + ySpacing)), ( end - (128.0f - edge) + 20.0f), iconSize + (edge * 2.0f)};
+                skillHoverRects[i] = UI::Update_Scale(scale, gg);
             }
 
             //skill name
@@ -167,8 +183,8 @@ namespace  Skills {
 
             x = 845.0f;
             y += 30.0f;
-            for (int i = 0; i < 3; ++i) {
-                FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, maxLearnableLevel[i]);
+            for (auto i : maxLearnableLevel) {
+                FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, x, y, FC_scale, Color::black, i);
                 x+= 70.0f;
             }
 
@@ -213,23 +229,83 @@ namespace  Skills {
                     clipRect = Icons::iconClipRects["increasebutton"].clipRect;
                     SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &skillUpRects[i]);
                 }
+
+                skillUpRects[i] = UI::Update_Scale(scale, skillUpRects[i]);
+
+                SDL_FRect gg = {620.0f - edge - 10.0f, (165.0f - edge)  + ((i - n) * (iconSize + ySpacing)), ( end - (620.0f - edge) + 20.0f ), iconSize + (edge * 2.0f)};
+                skillHoverRects[i] = UI::Update_Scale(scale, gg);
             }
 
             SDL_SetRenderTarget(Graphics::renderer, nullptr);
         }
 
+        int Click() {
+            return hoveredSkillUp;
+        }
+
+        void Skill_Hover() {
+            for (int i = 0; i < T; i++) {
+                SDL_FRect rect = skillHoverRects[i];
+                rect.x += scaledFrame.x;
+                rect.y += scaledFrame.y;
+                if (Mouse::FRect_inside_Screen_Cursor(rect)) {
+                    hoveredSkill = i;
+                    return;
+                }
+            }
+            hoveredSkill = -1;
+        }
+
+        void Skill_Up_Hover() {
+            for (int i = 0; i < T; i++) {
+                SDL_FRect rect = skillUpRects[i];
+                rect.x += scaledFrame.x;
+                rect.y += scaledFrame.y;
+                if (Mouse::FRect_inside_Screen_Cursor(rect)) {
+                    hoveredSkillUp = i;
+                    return;
+                }
+            }
+            hoveredSkillUp = -1;
+        }
+
+        bool Mouse_Inside() {
+            return Mouse::FRect_inside_Screen_Cursor(scaledFrame);
+        }
+
         void Mouse_Over() {
-            //draw tooltip
+            if (!isOpen)
+                return;
+
+            if (!Mouse_Inside())
+                return;
+
+            Skill_Hover();
+            Skill_Up_Hover();
         }
 
         void Draw() {
             //draw texture
-            if (isOpen)
+            if (isOpen) {
                 SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &scaledFrame);
-        }
+                if (hoveredSkill != -1) {
+                    SDL_FRect rect = skillHoverRects[hoveredSkill];
+                    rect.x += scaledFrame.x;
+                    rect.y += scaledFrame.y;
+                    SDL_SetRenderDrawColor(Graphics::renderer, 20, 20, 20, 25);
+                    SDL_RenderFillRectF(Graphics::renderer, &rect);
+                    //tooltip
+                }
 
-        int Skill_Up() {
-            return 1;
+                else if (hoveredSkillUp != -1) {
+                    SDL_FRect rect = skillUpRects[hoveredSkillUp];
+                    rect.x += scaledFrame.x;
+                    rect.y += scaledFrame.y;
+                    SDL_SetRenderDrawColor(Graphics::renderer, 30, 10, 10, 25);
+                    SDL_RenderFillRectF(Graphics::renderer, &rect);
+                    //tooltip
+                }
+            }
         }
 
         bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {

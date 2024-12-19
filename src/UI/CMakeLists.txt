@@ -23,13 +23,16 @@ target_sources(RPG
         Button_Bar/button.h
 
         Toolbar/Skills/skills.h
+        Toolbar/Skills/skill.h
         Toolbar/Skills/general.h
         Toolbar/Skills/rogue.h
         Toolbar/Skills/warrior.h
         Toolbar/Skills/mage.h
+
         Toolbar/Spells/high_power.h
         Toolbar/Spells/low_power.h
         Toolbar/Spells/mid_power.h
+
         Toolbar/attitudes.h
         Toolbar/events.h
         Toolbar/religion.h

@@ -90,7 +90,7 @@ namespace Texture {
     static void Load_Textures() {
        Graphics:: Create_Font();
         fireball_explosion_0 = Graphics::createTexture("assets/sprites/spells/fire/explosions/fireball_explosion_0.png");
-        fireball_icon = Graphics::createTexture("assets/sprites/UI/icons/spell_icons/fire/Fantasy Game Skills Icon 1 - Magic - Fire Ball level 1.jpg");
+        fireball_icon = Graphics::createTexture("assets/sprites/UI/icons/spell_icons/fire/Fantasy Game Skill Icon 1 - Magic - Fire Ball level 1.jpg");
         death1 = Graphics::createTexture("assets/sprites/UI/icons/Dark Magic/01.png");
         death2 = Graphics::createTexture("assets/sprites/UI/icons/Dark Magic/02.png");
         death3 = Graphics::createTexture("assets/sprites/UI/icons/Dark Magic/03.png");
@@ -108,7 +108,7 @@ namespace Texture {
         chargedbolt = Graphics::createTexture("assets/sprites/spells/lightning/chargedbolt/chargedbolt-0.png");
         leafspell = Graphics::createTexture("assets/sprites/spells/nature/leafspell/0026.png");
         swirlingsmoke = Graphics::createTexture("assets/sprites/spells/air/swirlingsmoke/0000.png");
-        icebolt = Graphics::createTexture("assets/sprites/UI/icons/spell_icons/ice/Fantasy Game Skills Icon 1 - Magic - Ice Lance level 1.jpg");
+        icebolt = Graphics::createTexture("assets/sprites/UI/icons/spell_icons/ice/Fantasy Game Skill Icon 1 - Magic - Ice Lance level 1.jpg");
         fire_1b_40 = Graphics::createTexture("assets/sprites/spells/fire/fire/fire_1b_40_1.png");
         warp_effect = Graphics::createTexture("assets/sprites/spells/arcane/warp_effect-sheet/warp_effect-sheet-3.png");
         barrier000 = Graphics::createTexture("assets/sprites/spells/arcane/warp_effect-sheet-4.png");
@@ -133,7 +133,7 @@ namespace Texture {
         reanimate = Graphics::createTexture("assets/sprites/UI/icons/misc_icons/painterly-spell-icons-3/horror-red-1.png");
         raiseZombie = Graphics::createTexture("assets/sprites/UI/icons/misc_icons/old Ancient Beast icons/monster.png");
         raiseSkeleton = Graphics::createTexture("assets/sprites/UI/icons/Dark Magic/08.png");
-        firebolt = Graphics::createTexture("assets/sprites/UI/icons/spell_icons/fire/Fantasy Game Skills Icon 1 - Magic - Fire Ball level 3.jpg");
+        firebolt = Graphics::createTexture("assets/sprites/UI/icons/spell_icons/fire/Fantasy Game Skill Icon 1 - Magic - Fire Ball level 3.jpg");
 
         charCreateBackground = Graphics::createTexture("assets/sprites/UI/backgrounds/Background_47.png");
         window_glow = Graphics::createTexture("assets/sprites/UI/window_glow.png");

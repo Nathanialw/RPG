@@ -54,10 +54,10 @@ namespace  UI_toolbar {
                     {"lowpower", UI_Spellbook::Toggle},
                     {"midpower", PLACEHOLDER},
                     {"highpower", PLACEHOLDER},
-                    {"generalskills", Skills::General::Toggle},
-                    {"mageskills", Skills::Mage::Toggle},
-                    {"rogueskills", Skills::Rogue::Toggle},
-                    {"warriorskills", Skills::Warrior::Toggle},
+                    {"generalskills", Skill::General::Toggle},
+                    {"mageskills", Skill::Mage::Toggle},
+                    {"rogueskills", Skill::Rogue::Toggle},
+                    {"warriorskills", Skill::Warrior::Toggle},
                     {"perks", PLACEHOLDER},
                     {"stats", PLACEHOLDER},
                     {"events", PLACEHOLDER},
@@ -86,6 +86,9 @@ namespace  UI_toolbar {
     }
 
     void Hover_Highlight() {
+        if (!UI_toolbar::Mouse_inside())
+            return;
+
         toolBar.Hover_Highlight();
     }
 

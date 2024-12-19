@@ -5,8 +5,9 @@
 #include "skills.h"
 
 //passive skills
-namespace Skills {
+namespace Skill {
     namespace Rogue {
+
         constexpr int SIZE = 17;
         typedef bool (*Action)();
 
@@ -126,6 +127,53 @@ namespace Skills {
             rogue.Update(scale, Get_Skills(zone), Get_Skill_Points(zone));
         }
 
+        bool Mouse_Inside() {
+            rogue.Mouse_Inside();
+        }
+
+        bool Hover_Highlight() {
+            return rogue.Mouse_Inside();
+        }
+
+        bool Click(entt::registry &zone, entt::entity &entity) {
+            //in Event Manager check for click on skill up button
+            //get index of skill
+            int i = rogue.Click();
+            if (i == -1)
+                return false;
+
+            auto &skills = zone.get<Skill_Component::Skills_Points>(entity);
+            bool clicked = false;
+
+            if (skills.unspent < skills.rogueCost)
+                return false;
+
+            switch (i) {
+                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Acid_Resistance>(entity));   break;
+                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Archery>(entity));    break;
+                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Assassination>(entity));  break;
+                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::Disarming>(entity));   break;
+                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Dodge>(entity));  break;
+                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Entomology>(entity));    break;
+                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Gambling>(entity));   break;
+                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Geography>(entity)); break;
+                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Hunting>(entity));    break;
+                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Lock_Picking>(entity)); break;
+                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Pocket_Picking>(entity)); break;
+                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Poison_Resistance>(entity));    break;
+                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Scavenging>(entity));  break;
+                case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Secret_Detection>(entity)); break;
+                case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Stealth>(entity));    break;
+                case 15:    clicked = Increase_Skill(zone.get<Skill_Component::Trap_Setting>(entity));  break;
+                case 16:    clicked = Increase_Skill(zone.get<Skill_Component::Tumbling>(entity));  break;
+            }
+
+            if (clicked)
+                skills.unspent -= skills.rogueCost;
+
+            return clicked;
+        };
+
         void Render() {
             rogue.Draw();
         }
@@ -137,5 +185,7 @@ namespace Skills {
         void Close() {
             rogue.Close();
         }
+
+
     }
 }
