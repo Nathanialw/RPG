@@ -110,7 +110,25 @@ namespace  Skill {
                 "willpowericon",
         };
 
-        Skill_Tree<SIZE, Action> general = Skill_Tree<SIZE, Action>(names, icons, "General");
+        std::array<std::array<std::string, 5>, SIZE> descriptions = {
+                {{" has no effect.", " means Merchants, Smugglers and other friendly NPCs offer 25%% better deals.", " means they offer 50%% better deals, instead.", " means they offer 75%% better deals, instead.", ""},
+                 {" means Maps have no effect.", " means Maps show features except Pit Traps, Secrets, Booby Traps or Cave Ins.", " means Maps show features except Booby Traps or Cave Ins.", " means Maps show everything", "Cartography Skill also effects the details shown by special maps like Dwarven Maps and Treasure Maps."},
+                 {" has no effect.", " lowers damage received from Cold sources by 25%%.", " lowers it by 50%%, instead.", " lowers it by 75%%, instead.", "As a byproduct, Cold Resistance also lowers the likelihood of you becoming Frozen, and the duration you will remain Frozen if you do, by a corresponding percentage.  If an effect can freeze you without first causing Cold damage, your odds of avoiding the effect will correspond to the above percentage and the duration will be reduced by the same precentage."},
+                 {" allows the cooking of any Uncooked meat to 20%% of its maximum potential quality.", " allows the cooking of any Uncooked meat to 40%% of its maximum potential quality.", " allows the cooking of any Uncooked meat to 60%% of its maximum potential quality.", " allows the cooking of any Uncooked meat to 80%% of its maximum potential quality.", ""},
+                 {" has no effect.", " gives you a 25%% chance to avoid insta-kill effects (like those of a Basilisk, T-Rex or Altar).", " gives you a 50%% chance, instead.", " gives you a 75%% chance, instead.", ""},
+                 {" has no effect.", " lowers damage received from Electrical sources by 25%%.", " lowers it by 50%%, instead.", " lowers it by 75%%, instead.", "As a byproduct, Electrical Resistance also lowers the likelihood of you becoming Electrified, and the duration you will remain so if you do, by a corresponding percentage.  If an effect can Electrify you without first causing Electric damage, your odds of avoiding the effect will correspond to the above percentage and the duration will be reduced by the same precentage."},
+                 {" adds 2 to your Max Health with each Character Level you gain.", " adds 2 to 3, instead.", " adds 2 to 4, instead.", " adds 2 to 5, instead.", ""},
+                 {" has no effect.", " increases the value of Gems you find by 50%%.", " doubles the value, instead.", " triples the value, instead.", "It will not affect the value of Gems earned from sales or gambling, or from Transmuting Objects to Gems, though it will affect the value gained from Pocket Picking."},
+                 {" disallows the use of Magic Items or Magic Jewellery.", " allows the use of Low Power Magic Items and Magic Jewellery.", " allows the use of Mid Power Magic Items and Magic Jewellery.", " allows the use of High Power Magic Items and Magic Jewellery.", ""},
+                 {" grants a 25%% chance to mine mineable walls..", " grants a 25%% chance to avert Cave Ins and a 50%% chance to mine mineable walls without triggering a Cave In.", " grants a 50%% chance to avert Cave Ins and a 75%% chance to mine mineable walls without triggering a Cave In", " grants a 75%% chance to avert Cave Ins and a 90%% chance to mine mineable walls without triggering a Cave In", ""},
+                 {" has no effect.", " gives a 33%% chance tof improving divine relationships by 1 extra percentage point, each time they improve.  It also grants a 25%% chance any Prayer isn't destroyed on use.", " gives a 66%% chance of improving divine relationships and a 50%% chance of preserving Prayers.", " gives a 100%% chance of improving divine relationships and a 75%% chance of preserving Prayers.", ""},
+                 {" has no effect.", " gives you a 25%% chance to avoid effects that drain your Strength, Dexterity, Intelligence or Max Health (excluding Lycanthropy).  If it fails to prevent the effect, the amount of points drained will be lowered by 25%%.", " gives you a 50%% chance, and lowers the amount drained by 50%%, instead.", " gives you a 75%% chance, and lowers the amount drained by 75%%, instead.", ""},
+                 {" gives a 25%% chance of avoiding drifting or drowning in Water, and of drifting in Acid or Lava.", " gives a 50%% chance, instead.", " gives a 75%% chance, instead.", " gives a 100%% chance, instead.", ""},
+                 {" allows 10 slots in your Inventory.", " allows 15 slots, instead.", " allows 20 slots, instead.", " allows 25 slots, instead.", ""},
+                 {" has no effect.", "gives you a 25%% chance to avoid effects that drain your Experience or Spell Points (like Wraiths and Archways). If it fails to prevent the effect, the amount of points drained will be lowered by 25%%.", " gives you a 50%% chance, and lowers the amount drained by 50%%, instead.", " gives you a 75%% chance, and lowers the amount drained by 75%%, instead.", ""},}
+        };
+
+        Skill_Tree<SIZE, Action> general = Skill_Tree<SIZE, Action>(names, icons, descriptions, "General");
 
 
         void Update(entt::registry  &zone, f2 scale) {
@@ -154,6 +172,7 @@ namespace  Skill {
                 case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Self_Awareness>(entity));  break;
                 case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Traveling>(entity)); break;
                 case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Willpower>(entity));    break;
+                default:    break;
             }
 
             if (clicked)
@@ -162,8 +181,8 @@ namespace  Skill {
             return clicked;
         };
 
-        void Render() {
-            general.Draw();
+        void Render(f2 scale) {
+            general.Draw(scale);
         }
 
         bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {

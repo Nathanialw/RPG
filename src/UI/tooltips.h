@@ -41,12 +41,16 @@ namespace Tooltip {
         return {tooltip.text, itemName, statNameRect, textColor};
     }
 
-    void Render_Tooltip_Background(SDL_FRect &tooltipBox, Component::Camera &camera) {
+    //only really works rendering to screen
+    void Render_Tooltip_Background(SDL_FRect &tooltipBox, f2 scale, bool above = true) {
         SDL_FRect tooltipBackground = tooltipBox;
 
-        float tooltipBorder = 5.0f / camera.scale.y;
+        if (above)
+            tooltipBackground.y -= tooltipBackground.h;
+
+        float tooltipBorder = 5.0f / scale.y;
         tooltipBackground.x -= tooltipBorder;
-        tooltipBackground.y -= (tooltipBackground.h + tooltipBorder);
+        tooltipBackground.y -= tooltipBorder;
         tooltipBackground.w += (tooltipBorder * 2.0f);
         tooltipBackground.h += (tooltipBorder * 2.0f);
 
@@ -103,7 +107,7 @@ namespace Tooltip {
         tooltipBackground = {x, mousePoint.y, tooltip.tooltipWidth, (tooltip.charHeight * (stats.size() + 2))};
         //    }
 
-        Render_Tooltip_Background(tooltipBackground, camera);
+        Render_Tooltip_Background(tooltipBackground, camera.scale);
         //render item stats
         float charHeight = tooltip.charHeight;
         for (auto row: renderArray) {

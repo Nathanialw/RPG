@@ -155,6 +155,46 @@ namespace Graphics {
         return textures[unitID];
     }
 
+    SDL_Texture* Create_Alpha_Texture() {
+        SDL_Texture* textCanvas = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STREAMING, 2, 2);
+
+        Uint32 color = (0 << 24) | (0 << 16) | (0 << 8) | 0;
+        std::vector<Uint32> canvasPixels(2 * 2, color);
+
+        if (!textCanvas ) {
+            std::cerr << "Invalid texture: texture is null" << std::endl;
+            return nullptr;
+        }
+
+        void *pixels;
+        int pitch;
+        if (SDL_LockTexture(textCanvas , nullptr, &pixels, &pitch) != 0) {
+            std::cerr << "Failed to lock texture: " << SDL_GetError() << std::endl;
+            return nullptr;
+        }
+
+        auto *dst = (Uint32 *) pixels;
+        std::copy(canvasPixels.begin(), canvasPixels.end(), dst);
+
+        SDL_UnlockTexture(textCanvas);
+
+        return textCanvas;
+        //creating a texture with full alpha
+    }
+
+    SDL_Texture* Create_Canvas(int w, int h) {
+        SDL_Texture* textCanvas = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, w, h);
+        SDL_Texture* alpha = Create_Alpha_Texture();
+        SDL_SetRenderTarget(Graphics::renderer, textCanvas);
+        SDL_RenderCopyF(Graphics::renderer, alpha, nullptr, nullptr);
+        SDL_DestroyTexture(alpha);
+        SDL_SetRenderTarget(Graphics::renderer, nullptr);
+        SDL_SetTextureBlendMode(textCanvas, SDL_BLENDMODE_BLEND);
+        return textCanvas;
+        //creating a texture with full alpha
+    }
+
+
     //when creating the game objet
     SDL_Texture *Create_Game_Object(int &unitID, const char *filepath) {
         SDL_Texture *texture;

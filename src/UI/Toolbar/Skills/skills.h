@@ -14,6 +14,8 @@
 #include "Button_Bar/highlight.h"
 #include "ui_elements.h"
 #include "skills_Components.h"
+#include "textures.h"
+#include "Text/text.h"
 
 namespace  Skill {
 
@@ -31,6 +33,22 @@ namespace  Skill {
         int cost;
         int maxLevel;
     };
+
+    enum Tooltip_Line {
+        UNTRAINED,
+        BASIC,
+        ADVANCED,
+        EXPERT,
+        NOTE
+    };
+
+//    struct Description {
+//        std::string untrained;
+//        std::string basic;
+//        std::string advanced;
+//        std::string expert;
+//        std::string note;
+//    };
 
     //render book background
     //cost per skillup
@@ -55,10 +73,13 @@ namespace  Skill {
         SDL_FRect frame = {0, 0, 1137, 700};
         SDL_FRect scaledFrame{};
         SDL_Texture* texture = nullptr;
+        SDL_Texture* tooltipText = nullptr;
+        SDL_Texture* textCanvas = nullptr;
+        SDL_Texture* tooltipBackground= nullptr;
         std::string name;
 
         std::array<std::string, T> names;
-        std::array<std::string, T> descriptions;
+        std::array<std::array<std::string, 5>, T> descriptions;
         std::array<std::string, T> icons;
 
         //for mouseover
@@ -67,13 +88,13 @@ namespace  Skill {
         std::array<SDL_FRect, T> skillUpRects;
 
     public:
-        Skill_Tree(std::array<std::string, T> actions, std::array<std::string, T> iconKeys, std::string skillName) {
+        Skill_Tree(std::array<std::string, T> actions, std::array<std::string, T> iconKeys, std::array<std::array<std::string, 5>, T> descriptionList, std::string skillName) {
             name = std::move(skillName);
 
             for (int i = 0; i < T; i++) {
                 icons[i] = iconKeys[i];
                 names[i] = actions[i];
-                descriptions[i] = actions[i] + std::to_string(i) + " description";
+                descriptions[i] = descriptionList[i];
             }
         }
 
@@ -156,7 +177,7 @@ namespace  Skill {
                 for (int j = 0; j < values[i].second; ++j) {
                     //foreground
                     if (j < values[i].first) {
-                    renderRect = {335.0f + (j * (iconSize + ySpacing)), 165.0f  + (i * (iconSize+ ySpacing) + iconSize * 0.25), iconSize + ySpacing, iconSize * 0.5f};
+                        renderRect = {335.0f + (j * (iconSize + ySpacing)), 165.0f  + (i * (iconSize+ ySpacing) + iconSize * 0.25f), iconSize + ySpacing, iconSize * 0.5f};
                         clipRect = Icons::iconClipRects["experiencepoints"].clipRect;
                         SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &renderRect);
                     }
@@ -216,7 +237,7 @@ namespace  Skill {
                 for (int j = 0; j < values[i].second; ++j) {
                     //foreground
                     if (j < values[i].first) {
-                        renderRect = {850.0f + (j * (iconSize + ySpacing)), 165.0f  + ((i - n) * (iconSize+ ySpacing) + iconSize * 0.25), iconSize + ySpacing, iconSize * 0.5f};
+                        renderRect = {850.0f + (j * (iconSize + ySpacing)), 165.0f  + ((i - n) * (iconSize+ ySpacing) + iconSize * 0.25f), iconSize + ySpacing, iconSize * 0.5f};
                         clipRect = Icons::iconClipRects["experiencepoints"].clipRect;
                         SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &clipRect, &renderRect);
                     }
@@ -284,7 +305,83 @@ namespace  Skill {
             Skill_Up_Hover();
         }
 
-        void Draw() {
+        void Draw_Tooltip(f2 scale, int i) {
+            if (tooltipText) {
+                SDL_DestroyTexture(tooltipText);
+                tooltipText = nullptr;
+            }
+            if (tooltipBackground) {
+                SDL_DestroyTexture(tooltipBackground);
+                tooltipBackground = nullptr;
+            }
+            if (!textCanvas)
+                textCanvas = Graphics::Create_Canvas(10, 10);
+
+            //render text at a hit scale (at least 2x) then render it to a texture, that will make it crisp
+            FC_Scale FC_scale = {scale.x, scale.y};
+
+            //needs to be lage enough to hold all text, then I need to just clip out the portion with the text and render it to the tooltip background texure
+            float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", names[i].c_str());
+            float w = 0.0f;
+            float h = lineHeight;
+            float maxLineWidth = 500.0f;
+            h += lineHeight * 0.25f;
+
+            float textW = FC_GetWidth(Graphics::fcFont, "%s", names[i].c_str());
+            if (w < textW)
+                w = textW;
+
+            std::array<std::string, 5> formattedDesc = {
+                    "Untrained " + names[i] + descriptions[i][UNTRAINED],
+                    "Basic " + names[i] + descriptions[i][BASIC],
+                    "Advanced " + names[i] + descriptions[i][ADVANCED],
+                    "Expert " + names[i] + descriptions[i][EXPERT],
+                    descriptions[i][NOTE]
+            };
+
+            for (int j = 0; j < formattedDesc.size(); j++) {
+                if (formattedDesc[j].empty())
+                    continue;
+
+                auto multiline = Text::Get_Multiline_Rect(formattedDesc[j], maxLineWidth);
+
+                if (w < multiline.x)
+                    w = multiline.x;
+
+                h += multiline.y;
+
+                int size = formattedDesc.size() - 1;
+                if (j == size) {
+                    h += lineHeight;
+                }
+                else {
+                    h += lineHeight * 0.25f;
+                }
+            }
+
+            tooltipText = Graphics::Create_Canvas(w, h);
+            SDL_SetRenderTarget(Graphics::renderer, tooltipText);
+            SDL_RenderCopyF(Graphics::renderer, textCanvas, nullptr, nullptr);
+
+            float left = 20.0f / FC_scale.x;
+            float top = 10.0f / FC_scale.y;
+
+            Text::Texture_Data data = Text::Texture_Data{names[i], formattedDesc, w};
+
+            float padding = 10.0f;
+            tooltipBackground = Graphics::Create_Canvas(w + padding, h + padding);
+            SDL_SetRenderTarget(Graphics::renderer, tooltipBackground);
+            SDL_RenderCopyF(Graphics::renderer, Texture::tooltipBackground, nullptr, nullptr);
+
+            SDL_FRect textRectF = {padding * 0.5f, padding * 0.5f , w, h};
+            SDL_RenderCopyF(Graphics::renderer, tooltipText, nullptr, &textRectF);
+
+            SDL_SetRenderTarget(Graphics::renderer, nullptr);
+            SDL_FRect rect = {Mouse::iXMouse + top, Mouse::iYMouse + left, w / scale.x, h  / scale.y};
+            SDL_RenderCopyF(Graphics::renderer, tooltipBackground, nullptr, &rect);
+        }
+
+        void Draw(f2 scale) {
             //draw texture
             if (isOpen) {
                 SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &scaledFrame);
@@ -294,7 +391,9 @@ namespace  Skill {
                     rect.y += scaledFrame.y;
                     SDL_SetRenderDrawColor(Graphics::renderer, 20, 20, 20, 25);
                     SDL_RenderFillRectF(Graphics::renderer, &rect);
+
                     //tooltip
+                    Draw_Tooltip(scale, hoveredSkill);
                 }
 
                 else if (hoveredSkillUp != -1) {
@@ -303,7 +402,9 @@ namespace  Skill {
                     rect.y += scaledFrame.y;
                     SDL_SetRenderDrawColor(Graphics::renderer, 30, 10, 10, 25);
                     SDL_RenderFillRectF(Graphics::renderer, &rect);
+
                     //tooltip
+                    Draw_Tooltip(scale, hoveredSkillUp);
                 }
             }
         }
@@ -318,11 +419,15 @@ namespace  Skill {
             }
             if (toggleType == Toggle_Type::off) {
                 isOpen = false;
+                hoveredSkillUp = -1;
+                hoveredSkill = -1;
                 return false;
             }
 
             if (isOpen) {
                 isOpen = false;
+                hoveredSkillUp = -1;
+                hoveredSkill = -1;
                 return false;
             }
             isOpen = true;
@@ -330,6 +435,8 @@ namespace  Skill {
         }
 
         void Close() {
+            hoveredSkillUp = -1;
+            hoveredSkill = -1;
             isOpen = false;
         }
     };

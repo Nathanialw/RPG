@@ -36,7 +36,6 @@ namespace  UI_toolbar {
 
     typedef bool (*Action)(Toggle_Type);
 
-
     bool PLACEHOLDER(Toggle_Type toggleType) {
         if (toggleType == Toggle_Type::get)
             return false;
@@ -48,25 +47,25 @@ namespace  UI_toolbar {
     }
 
     Button::Bar<(int)Buttons::SIZE, Action> toolBar = Button::Bar<(int)Buttons::SIZE, Action>({
-            {
-                    {"inventory", Bag_UI::Toggle},
-                    {"character", UI_Stats::Toggle},
-                    {"lowpower", UI_Spellbook::Toggle},
-                    {"midpower", PLACEHOLDER},
-                    {"highpower", PLACEHOLDER},
-                    {"generalskills", Skill::General::Toggle},
-                    {"mageskills", Skill::Mage::Toggle},
-                    {"rogueskills", Skill::Rogue::Toggle},
-                    {"warriorskills", Skill::Warrior::Toggle},
-                    {"perks", PLACEHOLDER},
-                    {"stats", PLACEHOLDER},
-                    {"events", PLACEHOLDER},
-                    {"map", Minimap::Toggle},
-                    {"religion", PLACEHOLDER}
-            }},
-            "buttonon",
-            "buttonoff",
-            32.0f
+        {
+            {"inventory", Bag_UI::Toggle},
+            {"character", UI_Stats::Toggle},
+            {"lowpower", UI_Spellbook::Toggle},
+            {"midpower", PLACEHOLDER},
+            {"highpower", PLACEHOLDER},
+            {"generalskills", Skill::General::Toggle},
+            {"mageskills", Skill::Mage::Toggle},
+            {"rogueskills", Skill::Rogue::Toggle},
+            {"warriorskills", Skill::Warrior::Toggle},
+            {"perks", PLACEHOLDER},
+            {"stats", PLACEHOLDER},
+            {"events", PLACEHOLDER},
+            {"map", Minimap::Toggle},
+            {"religion", PLACEHOLDER}
+        }},
+        "buttonon",
+        "buttonoff",
+        32.0f
     );
 
     void Toggle(Buttons i) {

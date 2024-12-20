@@ -101,7 +101,7 @@ namespace Target_Info {
         SDL_FRect tooltipBackground;
         float x = position.x - (tooltip.tooltipWidth / 2.0f);
         tooltipBackground = {x, position.y, tooltip.tooltipWidth, (tooltip.charHeight * renderArrayIndex)};
-        Tooltip::Render_Tooltip_Background(tooltipBackground, camera);
+        Tooltip::Render_Tooltip_Background(tooltipBackground, camera.scale);
 
         //render item stats
         float charHeight = tooltip.charHeight;

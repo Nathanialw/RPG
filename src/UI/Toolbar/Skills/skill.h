@@ -18,11 +18,11 @@ namespace  Skill {
         General::Update(zone, scale);
     }
 
-    void Render() {
-        General::Render();
-        Mage::Render();
-        Rogue::Render();
-        Warrior::Render();
+    void Render(f2 scale) {
+        General::Render(scale);
+        Mage::Render(scale);
+        Rogue::Render(scale);
+        Warrior::Render(scale);
     }
 
     void HighLight() {

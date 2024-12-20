@@ -6,6 +6,7 @@
 #include "icons.h"
 #include "mouse_control.h"
 #include "Button_Bar/button.h"
+#include "Text/text.h"
 
 namespace UI_Stats {
     //disease status
@@ -78,7 +79,7 @@ namespace UI_Stats {
             stats[1][7] = {"Dexterity:", std::to_string(playerStats.dexterity), "Dexterity is a measure of your character's agility and reflexes.  It is used to determine your character's chance to hit in combat, and to avoid being hit.  Dexterity is also used when interacting with certain squares, like Traps, Secret Doors and Locks."};
             stats[1][8] = {"Intelligence:", std::to_string(playerStats.intelligence), "Intelligence is a measure of your character's mental acuity and knowledge.  It is used to determine your character's chance to learn spells, and to avoid being hit.  Intelligence is also used when interacting with certain squares, like Traps, Secret Doors and Locks."};
             stats[1][9] = {"Health:", std::to_string(health.currentHealth) + "/" + std::to_string(health.maxHealth), "Your health score represents your character's endurance and pain tolerance.  The number to the left of the slash is your current Health;  if this reaches zero or less, you die.  The number to the right of the slash shows your maximum Health; your Health can never raise above this.  To learn Basic/Advanced/Expert General Skill you need a Health of 30/60/90, respectively."};
-            stats[1][10] = {"Spell Points:", std::to_string(mana.current) + "/" + std::to_string(mana.max), "Your Spell Points represent your character's reserves of magical power.  The number to the left  of the slash is your current Spell Points, while the number to the right shows your maximum Spell Points.  With each new map entered, your Spell Points are restored to full.  Your Max Points are determined by your an interaction between your Intelligence, Thaumaturgy Skill level and Dungeon Level.  You cannot cast a Spell with a greater cost than your current Spell Points, and the cost of each Spell cast is deducted from your current Spell Points."};
+            stats[1][10] = {"Spell Points:", std::to_string(mana.current) + "/" + std::to_string(mana.max), "Your Spell Points represent your character's reserves of magical power.  The number to the left of the slash is your current Spell Points, while the number to the right shows your maximum Spell Points.  With each new map entered, your Spell Points are restored to full.  Your Max Points are determined by your an interaction between your Intelligence, Thaumaturgy Skill level and Dungeon Level.  You cannot cast a Spell with a greater cost than your current Spell Points, and the cost of each Spell cast is deducted from your current Spell Points."};
             stats[1][11] = {"Faith:", std::to_string(religion.faith), "Your character's faith"};
             stats[1][12] = {"Gold:", std::to_string(gold.gold) + "/" + std::to_string(playerStats.strength), "Your character's gold"};
             stats[1][13] = {"Gems:", std::to_string(gold.gems), "Your character's gems"};
@@ -141,42 +142,15 @@ namespace UI_Stats {
         icons[j  - 6] = rect;
     }
 
-    void Render_Text_Multiline(Component::Camera &camera,  std::string text, int length = 50) {
-        SDL_FPoint mousePoint = {Mouse::iXMouse, Mouse::iYMouse};
-        Tooltip::Tooltip_Text_Data tooltip = {text, mousePoint};
-        tooltip.charWidth = ((lineHeight * 0.5f) / camera.scale.x);
-        tooltip.charHeight = (lineHeight / camera.scale.y);
-        FC_Scale scale = {1.0f / camera.scale.x, 1.0f / camera.scale.y};
-
-        std::vector<std::string> lines;
-
-        if (tooltip.text.size() < length) {
-            lines.push_back(tooltip.text);
-            length = tooltip.text.size();
-        }
-        else {
-            int charCount = 50;
-            for (size_t i = 0; i < tooltip.text.size(); i += charCount) {
-                auto line = tooltip.text.substr(i, charCount);
-                if (line.substr(line.size() - 1, 1) != " " && i + charCount < tooltip.text.size()) {
-                    auto space = line.find_last_of(" ");
-                    line = line.substr(0, space);
-                    i -= (charCount - space);
-                }
-                lines.push_back(line);
+    void Draw_Icons() {
+        for (auto &icon : icons) {
+            if (Mouse::bRect_inside_Cursor(icon)) {
+                SDL_Rect highLightClip = Icons::iconClipRects["goldindicator"].clipRect;
+                SDL_SetTextureAlphaMod(Texture::cox_icons, 100);
+                SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &highLightClip, &icon);
+                SDL_SetTextureAlphaMod(Texture::cox_icons, 255);
+                return;
             }
-        }
-
-        SDL_FRect tooltipBackground = {
-                mousePoint.x + ((lineHeight * 2.5f) / camera.scale.x),
-                mousePoint.y + tooltip.charHeight,
-                (length * tooltip.charWidth),
-                tooltip.charHeight * lines.size()};
-        Tooltip::Render_Tooltip_Background(tooltipBackground, camera);
-
-        for (const auto &line : lines) {
-            FC_DrawScale_Center(Graphics::fcFont, Graphics::renderer, tooltipBackground.x + (tooltipBackground.w * 0.5f), tooltipBackground.y - tooltipBackground.h, scale, Color::white, line.c_str());
-            tooltipBackground.y += tooltip.charHeight;
         }
     }
 
@@ -185,6 +159,10 @@ namespace UI_Stats {
             Next_Line(camera, statBox, defaultStatBox);
         if (placement == Placement::adjacent)
             Set_Adjacent(camera, statBox);
+
+        float x, y;
+        SDL_RenderGetScale(Graphics::renderer, &x, &y);
+        std::cout << x << " " << y << std::endl;
 
         FC_Scale scale = {1.0f / camera.scale.x, 1.0f / camera.scale.y};
         SDL_Rect textRect = FC_DrawScaleRight(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, stats[currentTab][j].name.c_str());
@@ -198,21 +176,9 @@ namespace UI_Stats {
     void Draw_Tooltip(Component::Camera &camera, int currentTab) {
         for (size_t i = 0; i < textBox.size(); i++)
             if (Mouse::bRect_inside_Cursor(textBox[i]) || Mouse::bRect_inside_Cursor(valueBox[i])) {
-                Render_Text_Multiline(camera, stats[currentTab][i].description, 50);
+                Text::Create_Multiline_Texture(camera.scale, stats[currentTab][i].description, Mouse::iXMouse, Mouse::iYMouse);
                 return;
             }
-    }
-
-    void Draw_Icons() {
-        for (auto &icon : icons) {
-            if (Mouse::bRect_inside_Cursor(icon)) {
-                SDL_Rect highLightClip = Icons::iconClipRects["goldindicator"].clipRect;
-                SDL_SetTextureAlphaMod(Texture::cox_icons, 100);
-                SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &highLightClip, &icon);
-                SDL_SetTextureAlphaMod(Texture::cox_icons, 255);
-                return;
-            }
-        }
     }
 
     void Draw_Attibutes(Component::Camera &camera, SDL_FRect &statBox, int currentTab, int j, SDL_FRect &defaultStatBox, Placement placement) {

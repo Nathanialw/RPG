@@ -16,7 +16,9 @@ target_sources(RPG
         ui_target_info.h
         ui_minimap.h
         ui_XP.h
-        Toolbar/ui_toolbar.h
+        tooltip.h
+
+        Text/text.h
 
         Button_Bar/highlight.h
         Button_Bar/bar.h
@@ -37,6 +39,8 @@ target_sources(RPG
         Toolbar/events.h
         Toolbar/religion.h
         Toolbar/perks.h
+
+        Toolbar/ui_toolbar.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

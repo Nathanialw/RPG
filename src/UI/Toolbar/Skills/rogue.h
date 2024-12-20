@@ -120,8 +120,27 @@ namespace Skill {
                 "tumblingicon",
         };
 
-        Skill_Tree<SIZE, Action> rogue = Skill_Tree<SIZE, Action>(names, icons, "Rogue");
+        std::array<std::array<std::string, 5>, SIZE> descriptions = {
+                {{" has no effect.", " gives a 25%% chance to avoid having Objects melted by Acid, and lowers incoming Acid damage by 25%%.", " raises these resistances to 50%%, instead.", " raises these resistances to 70%%, instead.", ""},
+                 {" has no effect.", " adds 3 to the damage you do while using any Missile Weapon.", " also gives you +35 to hit while using any Missile Weapon", " also adds 25%% to the damage done by any Missile Weapon.", "Archery may also stand in for any Weapon Use when equipping Missile Weapons, so long as your Class can attain an equivalent Weapon Use Skill level."},
+                 {" has no effect.", " gives you +30 to hit vs Persons.", " gives you a bounty of 1 to 10x Dungeon Level in Gold Pieces, with each kill of a Person.", " also halves damage you take from Persons in combat.", ""},
+                 {" has no effect.", " grants a 25%% chance to ignore the effects of any Booby Trap at the moment you spring it.", " grants a 50%% chance, instead.", " grants a 75%% chance, instead.", "It has no effect on Pit Traps of any kind, as they are in a separate class from Booby Traps."},
+                 {" has no effect.", " adds 15 to your Defence.", "adds 30, instead.", "adds 45, instead.", ""},
+                 {" has no effect.", " gives you a +30 to hit vs. Insectoids.", " also grants you a 30%% chance to brew a random Potion, each time you kill an Insectoid.", " also halves damage you take from Insectoids in combat.", ""},
+                 {" gives you a 50%% chance to win when gambling at Wheels of Fortune.", " gives you a 57%% chance, instead.", "gives you a 64%% chance, instead.", " gives you a 71%% chance, instead.", ""},
+                 {" has no effect.", " grants a 15%% chance to find a map each time you enter a new Dungeon Map.", " grants a 30%% chance, instead.", " grants a 45%% chance, instead.", "At least Basic Cartography is required to read any map  you find."},
+                 {" has no effect.", " gives you +30 to hit vs Animals.", " also grants you a 20%% chance to have your Health restored to Max, each time you kill an Animal.", " also halves damage you take from Animals.", ""},
+                 {" has no effect.", " gives a 25%% chance to unlock any locked door or container with each attempt.", " gives a 50%% chance of success, instead.", " gives a 75%% chance of success, instead.", "Failure when trying to pick a lock always leaves a 50%% chance the lock Jammed, which will disallow further attempts at Lock Picking on that door or container."},
+                 {" has no effect.", " gives a 25%% chance to steal from Merchants, Smugglers and other NPCs the first time you meet.", " gives a 50%% chance, instead.", " gives a 75%% chance, instead.", "What or how much you steal will be randomly determined, but will correspond to the type of NPC you're stealing from.  (I.e. Armour from Armour Merchants, Mundane Items from Mundane Item Merchants, etc.)"},
+                 {" leaves a 5%% chance a Poison leaving your system..", " gives a 25%% chance to avoid being Poisoned, lowers incoming Poison damage by 25%% and increases the odds of Poison leaving your system by 3%%.", " gives a 50%% chance to avoid being Poisoned, lowers incoming Poison damage by 50%% and increases the odds of Poison leaving your system by 6%%, instead.", " gives a 75%% chance to avoid being Poisoned, lowers incoming Poison damage by 75%% and increases the odds of Poison leaving your system by 9%%, instead.", ""},
+                 {" has no effect.", "adds 10 Gold Pieces to the amount found whenever you find Gold.", " adds 20 Gold Pieces, instead.", " adds 30 Gold Pieces, instead", "It will not affect the Gold value of other found treasure, like Silver or Gems, nor of that obtained through means that directly conjure Gold magically, though it willl affect Gold obtained through Pocket Picking or collected bounties."},
+                 {" grants a 10%% chance to identify nearby Concealed or Secret Doors/Compartments, Cave Ins or Buried Objects.", " grants a 25%% chance to identify nearby Pit Traps, Concealed or Secret Doors/Compartments, Cave Ins or Buried Objects.", " grants a 50%% chance, instead.", " grants a 75%% chance, instead.", ""},
+                 {" allows most monsters to see you up to 12 squares distant, hear you from 1 to 12 squares distant.", " lowers those ranges by 3 squares.", " lowers those ranges by 6 squares, instead.", " lowers those ranges by 9 squares, instead.", "Stealth has no effect on Genius or Automaton monsters, both of which always know where you are, and will not reduce distance at which you can be seen if you have a light source."},
+                 {" leaves a 50%% chance of successfully setting a Trap with a Trap Kit, without accidentally triggering its effects on yourself.", " leaves a 65%% chance, instead.", " leaves a 85%% chance, instead.", "leaves a 100%% chance, instead.", "Monsters killed by Friendly Traps do not adjust Monster Attitudes."},
+                 {" has no effect.", " lowers damage you take from falling by 25%%.", " lowers it by 50%%, instead.", " lowers it by 75%%, instead.", ""}}
+        };
 
+        Skill_Tree<SIZE, Action> rogue = Skill_Tree<SIZE, Action>(names, icons, descriptions, "Rogue");
 
         void Update(entt::registry  &zone, f2 scale) {
             rogue.Update(scale, Get_Skills(zone), Get_Skill_Points(zone));
@@ -131,8 +150,8 @@ namespace Skill {
             rogue.Mouse_Inside();
         }
 
-        bool Hover_Highlight() {
-            return rogue.Mouse_Inside();
+        void Hover_Highlight() {
+            rogue.Mouse_Over();
         }
 
         bool Click(entt::registry &zone, entt::entity &entity) {
@@ -166,6 +185,7 @@ namespace Skill {
                 case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Stealth>(entity));    break;
                 case 15:    clicked = Increase_Skill(zone.get<Skill_Component::Trap_Setting>(entity));  break;
                 case 16:    clicked = Increase_Skill(zone.get<Skill_Component::Tumbling>(entity));  break;
+                default:    break;
             }
 
             if (clicked)
@@ -174,8 +194,8 @@ namespace Skill {
             return clicked;
         };
 
-        void Render() {
-            rogue.Draw();
+        void Render(f2 scale) {
+            rogue.Draw(scale);
         }
 
         bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
@@ -185,7 +205,5 @@ namespace Skill {
         void Close() {
             rogue.Close();
         }
-
-
     }
 }

@@ -39,7 +39,7 @@ namespace Rendering {
 
             Action_Bar::Render_Action_Bar(zone, state, camera);
             UI_toolbar::Render();
-            Skill::Render();
+            Skill::Render(camera.scale);
             Event_Handler::Icon_Highlight(zone, state, camera);
 
             if (Bag_UI::bToggleCharacterUI) {
