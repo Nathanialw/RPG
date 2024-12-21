@@ -84,10 +84,11 @@ namespace Skill {
         }
 
         Skill_Values Get_Skill_Points(entt::registry &zone) {
-            auto view = zone.view<Component::Input, Skill_Component::Skills_Points>();
+            auto view = zone.view<Component::Input, Skill_Component::Skills_Points, Component::Stats>();
             for (auto entity: view) {
                 auto skillPoints = view.get<Skill_Component::Skills_Points>(entity);
-                return {skillPoints.unspent, skillPoints.warriorCost, skillPoints.warriorMax};
+                auto stats = view.get<Component::Stats>(entity);
+                return {skillPoints.unspent, skillPoints.warriorCost, skillPoints.warriorMax, stats.strength};
             }
         }
 
@@ -186,25 +187,25 @@ namespace Skill {
                 return false;
 
             switch (i) {
-                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Armour_Smithing>(entity));   break;
-                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Armour_Use>(entity));    break;
-                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Blocking>(entity));  break;
-                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::Bludgeoning>(entity));   break;
-                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Chopping>(entity));  break;
-                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Combat>(entity));    break;
-                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Crusade>(entity));   break;
-                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Disease_Resistance>(entity)); break;
-                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Dragon_Slaying>(entity));    break;
-                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Dual_Wielding>(entity)); break;
-                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Physical_Resistance>(entity)); break;
-                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Repair>(entity));    break;
-                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Spearing>(entity));  break;
-                case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Swordplay>(entity)); break;
-                case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Titanology>(entity));    break;
-                case 15:    clicked = Increase_Skill(zone.get<Skill_Component::Unarmed_Fighting>(entity));  break;
-                case 16:    clicked = Increase_Skill(zone.get<Skill_Component::Violence>(entity));  break;
-                case 17:    clicked = Increase_Skill(zone.get<Skill_Component::Weapon_Smithing>(entity));   break;
-                case 18:    clicked = Increase_Skill(zone.get<Skill_Component::Weapon_Use>(entity));    break;
+                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Armour_Smithing>(entity), zone.get<Component::Stats>(entity).strength);   break;
+                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Armour_Use>(entity), zone.get<Component::Stats>(entity).strength);    break;
+                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Blocking>(entity), zone.get<Component::Stats>(entity).strength);  break;
+                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::Bludgeoning>(entity), zone.get<Component::Stats>(entity).strength);   break;
+                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Chopping>(entity), zone.get<Component::Stats>(entity).strength);  break;
+                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Combat>(entity), zone.get<Component::Stats>(entity).strength);    break;
+                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Crusade>(entity), zone.get<Component::Stats>(entity).strength);   break;
+                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Disease_Resistance>(entity), zone.get<Component::Stats>(entity).strength); break;
+                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Dragon_Slaying>(entity), zone.get<Component::Stats>(entity).strength);    break;
+                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Dual_Wielding>(entity), zone.get<Component::Stats>(entity).strength); break;
+                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Physical_Resistance>(entity), zone.get<Component::Stats>(entity).strength); break;
+                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Repair>(entity), zone.get<Component::Stats>(entity).strength);    break;
+                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Spearing>(entity), zone.get<Component::Stats>(entity).strength);  break;
+                case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Swordplay>(entity), zone.get<Component::Stats>(entity).strength); break;
+                case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Titanology>(entity), zone.get<Component::Stats>(entity).strength);    break;
+                case 15:    clicked = Increase_Skill(zone.get<Skill_Component::Unarmed_Fighting>(entity), zone.get<Component::Stats>(entity).strength);  break;
+                case 16:    clicked = Increase_Skill(zone.get<Skill_Component::Violence>(entity), zone.get<Component::Stats>(entity).strength);  break;
+                case 17:    clicked = Increase_Skill(zone.get<Skill_Component::Weapon_Smithing>(entity), zone.get<Component::Stats>(entity).strength);   break;
+                case 18:    clicked = Increase_Skill(zone.get<Skill_Component::Weapon_Use>(entity), zone.get<Component::Stats>(entity).strength);    break;
                 default:    break;
             }
 

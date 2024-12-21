@@ -73,10 +73,11 @@ namespace Skill {
         }
 
         Skill_Values Get_Skill_Points(entt::registry &zone) {
-            auto view = zone.view<Component::Input, Skill_Component::Skills_Points>();
+            auto view = zone.view<Component::Input, Skill_Component::Skills_Points, Component::Stats>();
             for (auto entity: view) {
                 auto skillPoints = view.get<Skill_Component::Skills_Points>(entity);
-                return {skillPoints.unspent, skillPoints.rogueCost, skillPoints.rogueMax};
+                auto stats = view.get<Component::Stats>(entity);
+                return {skillPoints.unspent, skillPoints.rogueCost, skillPoints.rogueMax, stats.dexterity};
             }
         }
 
@@ -168,23 +169,23 @@ namespace Skill {
                 return false;
 
             switch (i) {
-                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Acid_Resistance>(entity));   break;
-                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Archery>(entity));    break;
-                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Assassination>(entity));  break;
-                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::Disarming>(entity));   break;
-                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Dodge>(entity));  break;
-                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Entomology>(entity));    break;
-                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Gambling>(entity));   break;
-                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Geography>(entity)); break;
-                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Hunting>(entity));    break;
-                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Lock_Picking>(entity)); break;
-                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Pocket_Picking>(entity)); break;
-                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Poison_Resistance>(entity));    break;
-                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Scavenging>(entity));  break;
-                case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Secret_Detection>(entity)); break;
-                case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Stealth>(entity));    break;
-                case 15:    clicked = Increase_Skill(zone.get<Skill_Component::Trap_Setting>(entity));  break;
-                case 16:    clicked = Increase_Skill(zone.get<Skill_Component::Tumbling>(entity));  break;
+                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Acid_Resistance>(entity), zone.get<Component::Stats>(entity).dexterity);   break;
+                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Archery>(entity), zone.get<Component::Stats>(entity).dexterity);    break;
+                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Assassination>(entity), zone.get<Component::Stats>(entity).dexterity);  break;
+                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::Disarming>(entity), zone.get<Component::Stats>(entity).dexterity);   break;
+                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Dodge>(entity), zone.get<Component::Stats>(entity).dexterity);  break;
+                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Entomology>(entity), zone.get<Component::Stats>(entity).dexterity);    break;
+                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Gambling>(entity), zone.get<Component::Stats>(entity).dexterity);   break;
+                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Geography>(entity), zone.get<Component::Stats>(entity).dexterity); break;
+                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Hunting>(entity), zone.get<Component::Stats>(entity).dexterity);    break;
+                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Lock_Picking>(entity), zone.get<Component::Stats>(entity).dexterity); break;
+                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Pocket_Picking>(entity), zone.get<Component::Stats>(entity).dexterity); break;
+                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Poison_Resistance>(entity), zone.get<Component::Stats>(entity).dexterity);    break;
+                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Scavenging>(entity), zone.get<Component::Stats>(entity).dexterity);  break;
+                case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Secret_Detection>(entity), zone.get<Component::Stats>(entity).dexterity); break;
+                case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Stealth>(entity), zone.get<Component::Stats>(entity).dexterity);    break;
+                case 15:    clicked = Increase_Skill(zone.get<Skill_Component::Trap_Setting>(entity), zone.get<Component::Stats>(entity).dexterity);  break;
+                case 16:    clicked = Increase_Skill(zone.get<Skill_Component::Tumbling>(entity), zone.get<Component::Stats>(entity).dexterity);  break;
                 default:    break;
             }
 

@@ -67,10 +67,11 @@ namespace  Skill {
         }
 
         Skill_Values Get_Skill_Points(entt::registry &zone) {
-            auto view = zone.view<Component::Input, Skill_Component::Skills_Points>();
+            auto view = zone.view<Component::Input, Skill_Component::Skills_Points, Component::Health>();
             for (auto entity: view) {
                 auto skillPoints = view.get<Skill_Component::Skills_Points>(entity);
-                return {skillPoints.unspent, skillPoints.generalCost, skillPoints.generalMax};
+                auto stats = view.get<Component::Health>(entity);
+                return {skillPoints.unspent, skillPoints.generalCost, skillPoints.generalMax, stats.maxHealth};
             }
         }
 
@@ -157,21 +158,21 @@ namespace  Skill {
                 return false;
 
             switch (i) {
-                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Bartering>(entity));   break;
-                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Cartography>(entity));    break;
-                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Cold_Resistance>(entity));  break;
-                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::Cooking>(entity));   break;
-                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Death_Cheating>(entity));  break;
-                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Electrical_Resistance>(entity));    break;
-                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Fitness>(entity));   break;
-                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Gemcutting>(entity)); break;
-                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Magic_Item_Use>(entity));    break;
-                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Mining>(entity)); break;
-                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Piety>(entity)); break;
-                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Swimming>(entity));    break;
-                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Self_Awareness>(entity));  break;
-                case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Traveling>(entity)); break;
-                case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Willpower>(entity));    break;
+                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Bartering>(entity), zone.get<Component::Health>(entity).maxHealth);   break;
+                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Cartography>(entity), zone.get<Component::Health>(entity).maxHealth);    break;
+                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Cold_Resistance>(entity), zone.get<Component::Health>(entity).maxHealth);  break;
+                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::Cooking>(entity), zone.get<Component::Health>(entity).maxHealth);   break;
+                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Death_Cheating>(entity), zone.get<Component::Health>(entity).maxHealth);  break;
+                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Electrical_Resistance>(entity), zone.get<Component::Health>(entity).maxHealth);    break;
+                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Fitness>(entity), zone.get<Component::Health>(entity).maxHealth);   break;
+                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Gemcutting>(entity), zone.get<Component::Health>(entity).maxHealth); break;
+                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Magic_Item_Use>(entity), zone.get<Component::Health>(entity).maxHealth);    break;
+                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Mining>(entity), zone.get<Component::Health>(entity).maxHealth); break;
+                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Piety>(entity), zone.get<Component::Health>(entity).maxHealth); break;
+                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Swimming>(entity), zone.get<Component::Health>(entity).maxHealth);    break;
+                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Self_Awareness>(entity), zone.get<Component::Health>(entity).maxHealth);  break;
+                case 13:    clicked = Increase_Skill(zone.get<Skill_Component::Traveling>(entity), zone.get<Component::Health>(entity).maxHealth); break;
+                case 14:    clicked = Increase_Skill(zone.get<Skill_Component::Willpower>(entity), zone.get<Component::Health>(entity).maxHealth);    break;
                 default:    break;
             }
 

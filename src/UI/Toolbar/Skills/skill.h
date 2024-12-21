@@ -32,13 +32,26 @@ namespace  Skill {
         Warrior::Hover_Highlight();
     }
 
-    void Click(entt::registry &zone, entt::entity &entity) {
-        if (General::Click(zone, entity) || Mage::Click(zone, entity) || Rogue::Click(zone, entity) || Warrior::Click(zone, entity))
-            Update(zone, zone.get<Component::Camera>(entity).scale);
-    }
+    void Click(entt::registry &zone, entt::entity &entity,  int button) {
+        bool clicked = false;
+        switch (button) {
+            case 5:
+                clicked = General::Click(zone, entity);
+                break;
+            case 6:
+                clicked = Mage::Click(zone, entity);
+                break;
+            case 7:
+                clicked = Rogue::Click(zone, entity);
+                break;
+            case 8:
+                clicked = Warrior::Click(zone, entity);
+                break;
+            default:
+                break;
+        }
 
-    bool Mouse_Inside() {
-        if (General::Mouse_Inside() || Mage::Mouse_Inside() || Rogue::Mouse_Inside() || Warrior::Mouse_Inside())
-            return true;
+        if (clicked)
+            Update(zone, zone.get<Component::Camera>(entity).scale);
     }
 }

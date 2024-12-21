@@ -60,10 +60,11 @@ namespace  Skill {
         }
 
         Skill_Values Get_Skill_Points(entt::registry &zone) {
-            auto view = zone.view<Component::Input, Skill_Component::Skills_Points>();
+            auto view = zone.view<Component::Input, Skill_Component::Skills_Points, Component::Stats>();
             for (auto entity: view) {
                 auto skillPoints = view.get<Skill_Component::Skills_Points>(entity);
-                return {skillPoints.unspent, skillPoints.mageCost, skillPoints.mageMax};
+                auto stats = view.get<Component::Stats>(entity);
+                return {skillPoints.unspent, skillPoints.mageCost, skillPoints.mageMax, stats.intelligence};
             }
         }
 
@@ -144,19 +145,19 @@ namespace  Skill {
                 return false;
 
             switch (i) {
-                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Alchemy>(entity));   break;
-                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Demonology>(entity));    break;
-                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Heat_Resistance>(entity));  break;
-                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::History>(entity));   break;
-                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Magic_Resistance>(entity));  break;
-                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Memory>(entity));    break;
-                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Mutology>(entity));   break;
-                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Necrology>(entity)); break;
-                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Research>(entity));    break;
-                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Runic_Lore>(entity)); break;
-                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Spell_Use>(entity)); break;
-                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Thaumaturgy>(entity));    break;
-                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Wand_Lore>(entity));  break;
+                case 0:     clicked = Increase_Skill(zone.get<Skill_Component::Alchemy>(entity), zone.get<Component::Stats>(entity).intelligence);   break;
+                case 1:     clicked = Increase_Skill(zone.get<Skill_Component::Demonology>(entity), zone.get<Component::Stats>(entity).intelligence);    break;
+                case 2:     clicked = Increase_Skill(zone.get<Skill_Component::Heat_Resistance>(entity), zone.get<Component::Stats>(entity).intelligence);  break;
+                case 3:     clicked = Increase_Skill(zone.get<Skill_Component::History>(entity), zone.get<Component::Stats>(entity).intelligence);   break;
+                case 4:     clicked = Increase_Skill(zone.get<Skill_Component::Magic_Resistance>(entity), zone.get<Component::Stats>(entity).intelligence);  break;
+                case 5:     clicked = Increase_Skill(zone.get<Skill_Component::Memory>(entity), zone.get<Component::Stats>(entity).intelligence);    break;
+                case 6:     clicked = Increase_Skill(zone.get<Skill_Component::Mutology>(entity), zone.get<Component::Stats>(entity).intelligence);   break;
+                case 7:     clicked = Increase_Skill(zone.get<Skill_Component::Necrology>(entity), zone.get<Component::Stats>(entity).intelligence); break;
+                case 8:     clicked = Increase_Skill(zone.get<Skill_Component::Research>(entity), zone.get<Component::Stats>(entity).intelligence);    break;
+                case 9:     clicked = Increase_Skill(zone.get<Skill_Component::Runic_Lore>(entity), zone.get<Component::Stats>(entity).intelligence); break;
+                case 10:    clicked = Increase_Skill(zone.get<Skill_Component::Spell_Use>(entity), zone.get<Component::Stats>(entity).intelligence); break;
+                case 11:    clicked = Increase_Skill(zone.get<Skill_Component::Thaumaturgy>(entity), zone.get<Component::Stats>(entity).intelligence);    break;
+                case 12:    clicked = Increase_Skill(zone.get<Skill_Component::Wand_Lore>(entity), zone.get<Component::Stats>(entity).intelligence);  break;
                 default:    break;
             }
 

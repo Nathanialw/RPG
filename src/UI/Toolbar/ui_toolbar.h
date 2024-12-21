@@ -100,4 +100,11 @@ namespace  UI_toolbar {
     bool Close_All() {
         return toolBar.Close_All();
     }
+
+    Buttons Get_Open() {
+        auto i = toolBar.Get_Open();
+        if (i == -1)
+            return Buttons::SIZE;
+        return (Buttons)i;
+    }
 }

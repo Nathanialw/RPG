@@ -127,24 +127,52 @@ namespace Event_Handler {
 				}
                     //      toolbar
                 else if (UI_toolbar::Mouse_inside()) {
-                    UI_toolbar::Click_Button();
+                    if (UI_toolbar::Click_Button()) {
+
+                    }
                     return;
                 }
-                    // skill tabs
-                else if (Skill::Mouse_Inside()) {
-                    Skill::Click(zone, player_ID);
+
+                else if (UI_toolbar::Get_Open() != UI_toolbar::Buttons::SIZE) {
+//                    if (Skill::Mouse_Inside()) {
+
+                        // interact with open panel
+                    auto button = UI_toolbar::Get_Open();
+                    if (button == UI_toolbar::Buttons::inventory) {
+
+                    } else if (button == UI_toolbar::Buttons::character) {
+                        UI_Stats::Click_Icons(zone, player_ID);
+
+                    } else if (button == UI_toolbar::Buttons::lowpower) {
+                        if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
+                            Action_Bar::Clear_Spell_On_Mouse(zone);
+                        }
+                        if (!UI_Spellbook::Get_Spell(zone, camera)) {
+                            //check for button on spellbook
+                        }
+                        return;
+                    } else if (button == UI_toolbar::Buttons::midpower) {
+
+                    } else if (button == UI_toolbar::Buttons::highpower) {
+
+
+                    } else if (button == UI_toolbar::Buttons::generalskills || button == UI_toolbar::Buttons::mageskills || button == UI_toolbar::Buttons::rogueskills || button == UI_toolbar::Buttons::warriorskills) {
+                        Skill::Click(zone, player_ID, (int)button);
+                    } else if (button == UI_toolbar::Buttons::perks) {
+
+                    } else if (button == UI_toolbar::Buttons::map) {
+
+                    } else if (button == UI_toolbar::Buttons::stats) {
+
+                    } else if (button == UI_toolbar::Buttons::events) {
+
+                    } else if (button == UI_toolbar::Buttons::religion) {
+
+                    } else if (button == UI_toolbar::Buttons::menu) {
+
+                    }
                     return;
                 }
-					//      spellbook
-				else if (UI_Spellbook::Check_Spellbook(camera)) {
-					if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
-						Action_Bar::Clear_Spell_On_Mouse(zone);
-					}
-					if (!UI_Spellbook::Get_Spell(zone, camera)) {
-						//check for button on spellbook
-					}
-					return;
-				}
 					//  debug frame
 				else if (UI_Debug::Mouse_Inside_Window(camera) && UI_Debug::open) {
 					UI_Debug::Update_Values(zone, camera);
@@ -256,7 +284,7 @@ namespace Event_Handler {
 
 	void Update_User_Input(entt::registry &zone, int &state) {
 		//        keep function running to maintain input and perform actions during pause
-		if (!Menu::Is_Menu_Open()) {
+		if (!Menu::toggleMenu) {
 			while (SDL_PollEvent(&Events::event) != 0) {
 				//	auto view = zone.view<Component::Velocity, Action_Component::Action, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
 				auto view = zone.view<Action_Component::Action, Component::Position, Component::Input, Component::Camera>();

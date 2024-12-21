@@ -21,10 +21,20 @@
 namespace  Skill {
 
     template <typename C>
-    bool Increase_Skill(C &skill) {
+    bool Increase_Skill(C &skill, int statRequirement) {
         if (skill.level < skill.maxLevel) {
-            skill.level++;
-            return true;
+            if (skill.level == 0 && statRequirement >= 30) {
+                skill.level++;
+                return true;
+            }
+            if (skill.level == 1 && statRequirement >= 60) {
+                skill.level++;
+                return true;
+            }
+            if (skill.level == 2 && statRequirement >= 90) {
+                skill.level++;
+                return true;
+            }
         }
         return false;
     }
@@ -33,6 +43,7 @@ namespace  Skill {
         int unspent;
         int cost;
         int maxLevel;
+        int statRequirement;
     };
 
     enum Tooltip_Line {
@@ -42,25 +53,6 @@ namespace  Skill {
         EXPERT,
         NOTE
     };
-
-//    struct Description {
-//        std::string untrained;
-//        std::string basic;
-//        std::string advanced;
-//        std::string expert;
-//        std::string note;
-//    };
-
-    //render book background
-    //cost per skillup
-    //max level trainable for character
-    //unspent skill points
-
-    //each skill
-    //icon
-    //name
-    //text description
-    //current level / max level
 
     template <size_t T, typename  Action>
     class Skill_Tree {

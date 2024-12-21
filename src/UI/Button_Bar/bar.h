@@ -147,6 +147,14 @@ namespace  Button {
 
             return highlight.Toggle(action[i](Toggle_Type::toggle), i);
         }
+
+        int Get_Open() {
+            for (int i = 0; i < T; ++i) {
+                if (action[i](Toggle_Type::get))
+                    return i;
+            }
+            return -1;
+        }
     };
 
 

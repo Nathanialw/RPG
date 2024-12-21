@@ -143,6 +143,9 @@ namespace UI_Stats {
     }
 
     void Draw_Icons() {
+        if (!attributesToSpend)
+            return;
+
         for (auto &icon : icons) {
             if (Mouse::bRect_inside_Cursor(icon)) {
                 SDL_Rect highLightClip = Icons::iconClipRects["goldindicator"].clipRect;
@@ -150,6 +153,39 @@ namespace UI_Stats {
                 SDL_RenderCopyF(Graphics::renderer, Texture::cox_icons, &highLightClip, &icon);
                 SDL_SetTextureAlphaMod(Texture::cox_icons, 255);
                 return;
+            }
+        }
+    }
+
+    void Click_Icons(entt::registry &zone, entt::entity &player) {
+        if (!attributesToSpend)
+            return;
+
+        for (size_t i = 0; i < icons.size(); i++) {
+            if (Mouse::bRect_inside_Cursor(icons[i])) {
+                auto &unitStats = zone.get<Component::Stats>(player);
+                auto &health = zone.get<Component::Health>(player);
+
+                if (unitStats.unspent > 0) {
+                    unitStats.unspent--;
+                    switch (i) {
+                        case 0:
+                            unitStats.strength++;
+                            return;
+                        case 1:
+                            unitStats.dexterity++;
+                            return;
+                        case 2:
+                            unitStats.intelligence++;
+                            return;
+                        case 3:
+                            health.maxHealth += 1;
+                            health.currentHealth += 1;
+                            return;
+                        default:
+                            return;
+                    }
+                }
             }
         }
     }
