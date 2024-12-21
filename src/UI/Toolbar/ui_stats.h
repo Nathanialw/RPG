@@ -2,7 +2,7 @@
 #include "ui_XP.h"
 #include "textures.h"
 #include "ui_elements.h"
-#include "tooltips.h"
+#include "UI/Tooltips/tooltips.h"
 #include "icons.h"
 #include "mouse_control.h"
 #include "Button_Bar/button.h"

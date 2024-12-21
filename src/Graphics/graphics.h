@@ -21,6 +21,7 @@ namespace Graphics {
     const char *title = "RPG";
     SDL_Window *window;
     SDL_FRect Screen;
+    f2 Scale;
     TTF_Font *font;
     FC_Font *fcFont = FC_CreateFont();
     SDL_Texture *default_icon;

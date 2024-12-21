@@ -15,7 +15,7 @@
 #include "rendering_components.h"
 #include "sort.h"
 #include "timer.h"
-#include "tooltips.h"
+#include "UI/Tooltips/tooltips.h"
 #include "ui_resources.h"
 #include "utilities.h"
 #include <SDL2/SDL.h>

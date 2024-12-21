@@ -8,7 +8,7 @@
 #include "mouse_control.h"
 #include "offsets.h"
 #include "string"
-#include "tooltips.h"
+#include "UI/Tooltips/tooltips.h"
 #include "ui_elements.h"
 #include "vector"
 

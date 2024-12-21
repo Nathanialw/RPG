@@ -10,25 +10,20 @@
 #include "mouse_control.h"
 #include "quad_tree.h"
 #include "utilities.h"
-#include "tooltips.h"
+#include "UI/Tooltips/tooltip.h"
 #include "array"
+#include "Text/text.h"
 
 namespace Target_Info {
-
-    const int rows = 13;
-
-
-    void AddText(std::array<Tooltip::Tooltip_Render_Data, rows> &renderArray, int &renderArrayIndex, Tooltip::Tooltip_Text_Data &tooltip, SDL_Color color, std::string line = " ") {
-        tooltip.text = line;
-        renderArray[renderArrayIndex] = Create_Text(tooltip, color, rows);
-        renderArrayIndex++;
-    }
 
     void Render_Info(entt::registry &zone, entt::entity &item, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {
         if (!zone.all_of<Component::Alive>(item))
             return;
         if (!zone.get<Component::Alive>(item).bIsAlive)
             return;
+
+        constexpr int numLines = 12;
+        constexpr float maxLineWidth = 500.0f;
 
         auto &name = zone.get<Component::Name>(item).first;
 
@@ -45,70 +40,47 @@ namespace Target_Info {
         std::string mana = "50/50";
         std::string XP = "23";
 
-        std::string resistances = "Resistances: fire 12%%, cold 2%%, poison 45%%,";
+        std::array<std::string, numLines> stats  = {
+            name,
+            "ATT: " + attack + " DEF: " + armor + " INT: " + intelligence + " " + level,
+            "DAM: " + damage + " " + damageType + " SPD: " + speed,
+            "HP: " + std::to_string(health.currentHealth) + "/" + std::to_string(health.maxHealth) + " MP: " + mana + " XP: " + XP,
+            "Resistances: fire 12%%, cold 2%%, poison 45%%",
+            "2%% chance to execute, instantly killing on every attack",
+            "7%% chance to poison on hit",
+            "cannot open doors",
+            "insectoid",
+            "melee",
+            "Your odds: 75%% 2-10",
+            "Its odds: 50%% for 3-7",
+        };
 
-        std::string periodicEffects = "2%% chance to execute, instantly killing on every attack";
+        float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", "A");
+        std::array<float, numLines> spacing = {
+                lineHeight * 0.35f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+                lineHeight * 0.15f,
+        };
 
-        std::string onHitEffects = "7%% chance to poison on hit";
+        Tooltips::Properties<numLines> tooltipProperties = {
+                stats,
+                spacing,
+                maxLineWidth,
+                0.0f,
+                0.0f,
+                Tooltips::SCREEN_BOTTOM_RIGHT
+        };
 
-        std::string specialProperties = "cannot open doors";
-
-        std::string type = "insectoid";
-
-        std::string meleeRanged = "melee";
-
-        //mathed out values
-        std::string chanceToHit = "Your odds: 75%% 2-10 ";
-        std::string chanceToBeHitBy = "Its odds: 50%% for 3-7";
-
-
-        SDL_Color rarityColor = Item_Component::rarityColor[Rarity::common];
-
-        std::array<Tooltip::Tooltip_Render_Data, rows> renderArray;
-        int renderArrayIndex = 0;
-
-        //render item name at the top
-        Tooltip::Tooltip_Text_Data tooltip;
-        SDL_FPoint position = {1300.0f, camera.screen.h};
-
-        tooltip.renderPoint = position;
-        tooltip.charWidth = (10.0f / camera.scale.x);
-        tooltip.charHeight = (20.0f / camera.scale.y);
-
-        //set name at the color of it's rarity
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, name);
-
-        auto line = "ATT:" + attack + " DEF" + armor + " INT" + intelligence + " " + level;
-        AddText(renderArray,  renderArrayIndex, tooltip, rarityColor, line);
-
-        line = "DAM: " + damage + " " + damageType + " SPD" + speed;
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, line);
-
-        line = "HP: " + std::to_string(health.currentHealth) + "/" + std::to_string(health.maxHealth) + " MP: " + mana + " XP: " + XP;
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, line);
-
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, resistances);
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, periodicEffects);
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, onHitEffects);
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, specialProperties);
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, type);
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, meleeRanged);
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor);
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, chanceToHit);
-        AddText(renderArray, renderArrayIndex, tooltip, rarityColor, chanceToBeHitBy);
-
-        //render tooltip background
-        SDL_FRect tooltipBackground;
-        float x = position.x - (tooltip.tooltipWidth / 2.0f);
-        tooltipBackground = {x, position.y, tooltip.tooltipWidth, (tooltip.charHeight * renderArrayIndex)};
-        Tooltip::Render_Tooltip_Background(tooltipBackground, camera.scale);
-
-        //render item stats
-        float charHeight = tooltip.charHeight;
-        for (auto row: renderArray) {
-            Tooltip::Render_Tooltip_FC(camera, row.renderRect, charHeight, row.color, row.text);
-            SDL_DestroyTexture(row.spriteData.pTexture);
-        }
+        Tooltips::Create_Tooltip(tooltipProperties);
     }
 
     void Show_Target_Info(entt::registry &zone, int &state, SDL_FPoint &mousePoint, Component::Camera &camera) {

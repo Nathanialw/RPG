@@ -7,7 +7,7 @@
 #include "components.h"
 #include "entt/entt.hpp"
 #include "graphics.h"
-#include "tooltips.h"
+#include "UI/Tooltips/tooltips.h"
 #include "utilities.h"
 
 namespace Unit_Status {

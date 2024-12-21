@@ -1,6 +1,6 @@
 #include "Input/mouse_control.h"
 #include "graphics.h"
-#include "tooltips.h"
+#include "UI/Tooltips/tooltips.h"
 
 namespace Loot_Panel {
 

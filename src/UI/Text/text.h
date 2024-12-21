@@ -7,7 +7,6 @@
 #include "string"
 #include "SDL2/SDL.h"
 #include "graphics.h"
-#include "tooltips.h"
 #include "textures.h"
 
 namespace Text {
@@ -17,6 +16,8 @@ namespace Text {
         FC_Scale scale{};
         SDL_FRect textFrame{};
         float padding{};
+
+        //render text at a hit scale (at least 2x) then render it to a texture, that will make it crisp
         float fc_scale = 2.0f;
 
     public:
@@ -33,10 +34,6 @@ namespace Text {
             scale = {fc_scale, fc_scale};
             textFrame = {0.0f, 0.0f, (w * scale.x) + (padding * 2.0f), (h * scale.y) + (padding * 2.0f)};
             texture = Graphics::Create_Canvas((int)textFrame.w, (int)textFrame.h);
-
-            //save scale
-            float x, y;
-            SDL_RenderGetScale(Graphics::renderer, &x, &y);
 
             //set target
             SDL_SetRenderTarget(Graphics::renderer, texture);
@@ -62,17 +59,15 @@ namespace Text {
         }
 
         //Skill tooltips
-        Texture_Data(const std::string &title, const std::span<std::string> lines, float w) {
-            float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", lines[0].c_str());
+        Texture_Data(const std::span<std::string> lines, const std::span<float> spacing, float w) {
+            float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", "A");
             scale = {1.0f, 1.0f};
+            float g, d;
+            SDL_RenderGetScale(Graphics::renderer, &g, &d);
+
             frame = {0.0f, 0.0f, 0.0f, 0.0f};
 
-            //draw title
-            FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, frame.x, frame.y, scale, Color::white, title.c_str());
-            frame.y += lineHeight;
-            frame.y += lineHeight * 0.25f;
-
-            //draw body
+            //draw lines
             for (int j = 0; j < lines.size(); j++) {
                 if (lines[j].empty())
                     continue;
@@ -95,6 +90,7 @@ namespace Text {
                             int space = lines[j].find_last_of(' ');
                             formattedLine = lines[j].substr(i, space);
                             float lineW =FC_GetWidth(Graphics::fcFont, "%s", formattedLine.c_str());
+
                             while (lineW > w) {
                                 formattedLine = formattedLine.substr(0, formattedLine.size() - 1);
                                 space = formattedLine.find_last_of(' ');
@@ -107,18 +103,12 @@ namespace Text {
                     }
                 }
 
-                int size = lines.size() - 1;
-                if (j == size)  {
-                    frame.y += lineHeight;
-                }
-                else {
-                    frame.y += lineHeight * 0.25f;
-                }
-
                 for (const auto &renderLine: formattedLines) {
                     FC_DrawScaleLeftColor(Graphics::fcFont, Graphics::renderer, frame.x, frame.y, scale, Color::white, renderLine.c_str());
-                    frame.y += lineHeight;
+                    frame.y += (lineHeight);
                 }
+                // add space between lines
+                frame.y += spacing[j];
             }
         }
 
@@ -174,6 +164,28 @@ namespace Text {
         return {w, h};
     }
 
+    f2 Get_Texture_Size(std::span<std::string> lines, std::span<float> spacing, const float maxLineLength = 500.0f) {
+        float w = 0.0f;
+        float h = 0.0f;
+
+        for (int i = 0; i < lines.size(); i++) {
+            if (lines[i].empty())
+                continue;
+
+            auto size = Get_Multiline_Rect(lines[i], maxLineLength);
+
+            if (w < size.x)
+                w = size.x;
+
+            h += size.y;
+
+            if (i < spacing.size() - 1)
+                h += spacing[i];
+        }
+
+        return {w, h};
+    }
+
     //create a multiline text texture
     void Create_Multiline_Texture(f2 scale, const std::string &text, float x, float y, int length = 100) {
         float w = 0.0f;
@@ -210,9 +222,9 @@ namespace Text {
                 textureData.frame.h
         };
 
-//        SDL_RenderCopyF(Graphics::renderer, textureData.texture, nullptr, &tooltipPosition);
-
         tooltipPosition = UI::Update_Scale_Size(scale, tooltipPosition);
         SDL_RenderCopyF(Graphics::renderer, textureData.texture, nullptr, &tooltipPosition);
     }
+
+
 }

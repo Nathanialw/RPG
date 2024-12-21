@@ -18,6 +18,9 @@ namespace Camera_Control {
         camera.screen.h = dm.h / camera.scale.y;
         camera.screen.x = ((position.x) - (camera.screen.w / 2));
         camera.screen.y = ((position.y) - (camera.screen.h / 2));
+
+        Graphics::Screen = camera.screen;
+        Graphics::Scale = camera.scale;
     }
 
     SDL_FRect Maintain_Scale(SDL_FRect &rect, Component::Camera &camera) {

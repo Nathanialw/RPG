@@ -16,6 +16,7 @@
 #include "skills_Components.h"
 #include "textures.h"
 #include "Text/text.h"
+#include "Tooltips/tooltip.h"
 
 namespace  Skill {
 
@@ -306,32 +307,11 @@ namespace  Skill {
         }
 
         void Draw_Tooltip(f2 scale, int i) {
-            if (tooltipText) {
-                SDL_DestroyTexture(tooltipText);
-                tooltipText = nullptr;
-            }
-            if (tooltipBackground) {
-                SDL_DestroyTexture(tooltipBackground);
-                tooltipBackground = nullptr;
-            }
-            if (!textCanvas)
-                textCanvas = Graphics::Create_Canvas(10, 10);
-
-            //render text at a hit scale (at least 2x) then render it to a texture, that will make it crisp
-            FC_Scale FC_scale = {scale.x, scale.y};
-
             //needs to be lage enough to hold all text, then I need to just clip out the portion with the text and render it to the tooltip background texure
-            float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", names[i].c_str());
-            float w = 0.0f;
-            float h = lineHeight;
-            float maxLineWidth = 500.0f;
-            h += lineHeight * 0.25f;
+            constexpr float maxLineWidth = 550.0f;
 
-            float textW = FC_GetWidth(Graphics::fcFont, "%s", names[i].c_str());
-            if (w < textW)
-                w = textW;
-
-            std::array<std::string, 5> formattedDesc = {
+            std::array<std::string, 6> formattedDesc = {
+                    names[i],
                     "Untrained " + names[i] + descriptions[i][UNTRAINED],
                     "Basic " + names[i] + descriptions[i][BASIC],
                     "Advanced " + names[i] + descriptions[i][ADVANCED],
@@ -339,46 +319,26 @@ namespace  Skill {
                     descriptions[i][NOTE]
             };
 
-            for (int j = 0; j < formattedDesc.size(); j++) {
-                if (formattedDesc[j].empty())
-                    continue;
+            float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", names[i].c_str());
+            std::array<float, 6> spacing = {
+                    lineHeight * 0.50f,
+                    lineHeight * 0.25f,
+                    lineHeight * 0.25f,
+                    lineHeight * 0.25f,
+                    lineHeight * 0.50f,
+                    lineHeight * 0.25f,
+            };
 
-                auto multiline = Text::Get_Multiline_Rect(formattedDesc[j], maxLineWidth);
+            Tooltips::Properties<6> tooltipProperties = {
+                    formattedDesc,
+                    spacing,
+                    maxLineWidth,
+                    20.0f,
+                    10.0f,
+                    Tooltips::MOUSE_TOP_RIGHT
+            };
 
-                if (w < multiline.x)
-                    w = multiline.x;
-
-                h += multiline.y;
-
-                int size = formattedDesc.size() - 1;
-                if (j == size) {
-                    h += lineHeight;
-                }
-                else {
-                    h += lineHeight * 0.25f;
-                }
-            }
-
-            tooltipText = Graphics::Create_Canvas(w, h);
-            SDL_SetRenderTarget(Graphics::renderer, tooltipText);
-            SDL_RenderCopyF(Graphics::renderer, textCanvas, nullptr, nullptr);
-
-            float left = 20.0f / FC_scale.x;
-            float top = 10.0f / FC_scale.y;
-
-            Text::Texture_Data data = Text::Texture_Data{names[i], formattedDesc, w};
-
-            float padding = 10.0f;
-            tooltipBackground = Graphics::Create_Canvas(w + padding, h + padding);
-            SDL_SetRenderTarget(Graphics::renderer, tooltipBackground);
-            SDL_RenderCopyF(Graphics::renderer, Texture::tooltipBackground, nullptr, nullptr);
-
-            SDL_FRect textRectF = {padding * 0.5f, padding * 0.5f , w, h};
-            SDL_RenderCopyF(Graphics::renderer, tooltipText, nullptr, &textRectF);
-
-            SDL_SetRenderTarget(Graphics::renderer, nullptr);
-            SDL_FRect rect = {Mouse::iXMouse + top, Mouse::iYMouse + left, w / scale.x, h  / scale.y};
-            SDL_RenderCopyF(Graphics::renderer, tooltipBackground, nullptr, &rect);
+            Tooltips::Create_Tooltip(tooltipProperties);
         }
 
         void Draw(f2 scale) {

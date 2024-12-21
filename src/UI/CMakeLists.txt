@@ -5,7 +5,6 @@ target_sources(RPG
         menu.h
         ui_spellbook.h
         text_box.h
-        tooltips.h
         ui.h
         ui_elements.h
         ui_resources.h
@@ -16,7 +15,9 @@ target_sources(RPG
         ui_target_info.h
         ui_minimap.h
         ui_XP.h
-        tooltip.h
+
+        Tooltips/tooltip.h
+        Tooltips/tooltips.h
 
         Text/text.h
 
