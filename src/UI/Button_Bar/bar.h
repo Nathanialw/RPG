@@ -151,7 +151,8 @@ namespace  Button {
         int Get_Open() {
             for (int i = 0; i < T; ++i) {
                 if (action[i](Toggle_Type::get))
-                    return i;
+		    if (i != 0 && i != 12)
+                    	return i;
             }
             return -1;
         }

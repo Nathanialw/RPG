@@ -292,7 +292,14 @@ namespace Create_Entities {
 		    Item_Component::Emplace_Equipment(zone, state, entity, equip_type);
 		    zone.emplace_or_replace<Rendering_Components::Equipment_Sprites>(entity);
 		}
-		zone.emplace_or_replace<Component::Health>(entity, (int) (data.health * data.scale), (int) (data.health * data.scale));
+		zone.emplace_or_replace<Component::Health>(entity, (int) (data.health * data.scale), (int) (data.health * data.scale), (int) (data.health * data.scale));
+		Skill_Component::Add_Default(zone, entity);
+		zone.emplace_or_replace<Component::Stats>(entity);
+		zone.emplace_or_replace<Component::XP>(entity);
+		zone.emplace_or_replace<Component::Mana>(entity);
+		zone.emplace_or_replace<Component::Religion>(entity);
+		zone.emplace_or_replace<Component::Gold>(entity);
+		zone.emplace_or_replace<Component::Dungeon_Level>(entity, state);
 	    } else {
 		Load::Copy_Player(zone, World::world[World::world[state].previousZoneIndex].zone, state, World::world[state].previousZoneIndex, entity);
 	    }
@@ -309,15 +316,7 @@ namespace Create_Entities {
 	    }
 
 	    if (player) {
-		Skill_Component::Add_Default(zone, entity);
-		zone.emplace_or_replace<Component::Stats>(entity);
-		zone.emplace_or_replace<Component::Religion>(entity);
-		zone.emplace_or_replace<Component::XP>(entity);
-		zone.emplace_or_replace<Component::Mana>(entity);
-		zone.emplace_or_replace<Component::Gold>(entity);
-		zone.emplace_or_replace<Component::Dungeon_Level>(entity);
 		zone.emplace_or_replace<Component::Time_On_Map>(entity);
-
 		Component::Add_Input_Component(zone, velocity, entity);
 		SDL_DisplayMode dm;
 		SDL_GetWindowDisplayMode(Graphics::window, &dm);

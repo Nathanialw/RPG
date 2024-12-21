@@ -44,8 +44,11 @@ namespace Component {
     struct Stats {
         int unspent = 0;
         int strength = 30;
+	int strengthBase = 30;
         int dexterity = 30;
-        int intelligence = 30;
+	int dexterityBase = 30;
+	int intelligence= 30;
+        int intelligenceBase = 30;
     };
 
     struct XP {
@@ -107,6 +110,7 @@ namespace Component {
     struct Health {
         int currentHealth = 0;
         int maxHealth = 0;
+        int base = 0;
         int growth = 2;
     };
 
@@ -125,8 +129,8 @@ namespace Component {
     };
 
     struct Time_On_Map {
-        int current;
-        int max;
+        int current = 0;
+        int max = 0;
     };
 
     struct Alive {

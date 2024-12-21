@@ -27,8 +27,11 @@ namespace Cave {
         World::world[World::currentZone.next].previousZoneIndex = state;
     }
 
-    void Load_Zone(entt::registry &zone, entt::entity &targetID, int &state) {
-        //get the new zone index
+    void Load_Zone(entt::registry &zone, entt::entity &playerID, entt::entity &targetID, int &state) {
+	//assuming only going down
+	zone.get<Component::Dungeon_Level>(playerID).level++;
+
+	//get the new zone index
         auto newZone = zone.get<Component::Dungeon>(targetID);
         //save the old index go back to it later
         World::world[newZone.instance].previousZoneIndex = state;

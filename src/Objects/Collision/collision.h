@@ -22,11 +22,13 @@ namespace Collision {
 
     class MyContactListener : public b2ContactListener {
         void BeginContact(b2Contact *contact) override {
-            Building_Functions::Show_Interior(contact);
+	    if (contact)
+            	Building_Functions::Show_Interior(contact);
         }
 
         void EndContact(b2Contact *contact) override {
-            Building_Functions::Show_Exterior(contact);
+	    if (contact)
+            	Building_Functions::Show_Exterior(contact);
         }
     };
 
@@ -40,18 +42,18 @@ namespace Collision {
         collisionList[state]->SetContactListener(&myContactListenerInstance);
     }
 
-    void close_collision(int &state) {
-        auto world = collisionList[state];
-        if (world) {
-            b2Body *body = world->GetBodyList();
+    void close_collision(const int &state) {
+	auto world = collisionList[state];
+	if (world) {
+	    b2Body *body = world->GetBodyList();
 
-            while (body) {
-                world->DestroyBody(body);
-                body = body->GetNext();
-            }
-            world = nullptr;
-            //      delete world[state];
-        }
+	    while (body) {
+		world->DestroyBody(body);
+		body = body->GetNext();
+	    }
+	    world = nullptr;
+	    //      delete world[state];
+	}
     }
 
     void Create_Static_Body_Rect(entt::registry &zone, const int &state, const entt::entity &entity, const float &x, const float &y, const Collision_Component::aabb aabb) {

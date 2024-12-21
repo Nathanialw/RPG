@@ -114,7 +114,6 @@ namespace Create_Character_Entity {
 
         Component::Unit_Index unitIndex = {"demons", 0};
         Create_Entities::Create_Entity(zone, state, 1660, 8924, data, true, summon, unitIndex);
-	Equip_Units(zone, state, options);
-        Character_Stats::Init_Player_Stats(zone, state);
+        Character_Stats::Update_Unit_Stats(zone, state);
     }
 }// namespace Create_Character_Entity

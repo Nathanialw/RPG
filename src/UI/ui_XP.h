@@ -48,6 +48,7 @@ namespace XP {
 
                 auto &health = view.get<Component::Health>(entity);
                 health.maxHealth += health.growth;
+                health.base += health.growth;
                 health.currentHealth = health.maxHealth;
 
                 Level_Up();

@@ -42,17 +42,17 @@ namespace Target_Info {
 
         std::array<std::string, numLines> stats  = {
             name,
-            "ATT: " + attack + " DEF: " + armor + " INT: " + intelligence + " " + level,
-            "DAM: " + damage + " " + damageType + " SPD: " + speed,
-            "HP: " + std::to_string(health.currentHealth) + "/" + std::to_string(health.maxHealth) + " MP: " + mana + " XP: " + XP,
-            "Resistances: fire 12%%, cold 2%%, poison 45%%",
+            "ATT: " + attack + "      DEF: " + armor + "      INT: " + intelligence + "      " + level,
+            "DAM: " + damage + "      " + damageType + "      SPD: " + speed,
+            "HP: " + std::to_string(health.currentHealth) + "/" + std::to_string(health.maxHealth) + "      MP: " + mana + "      XP: " + XP,
+            "Resistances: fire 12%%,      cold 2%%,      poison 45%%",
             "2%% chance to execute, instantly killing on every attack",
             "7%% chance to poison on hit",
             "cannot open doors",
             "insectoid",
             "melee",
-            "Your odds: 75%% 2-10",
-            "Its odds: 50%% for 3-7",
+            "Your odds      75%%      2-10",
+            "Its odds:      50%%   for   3-7",
         };
 
         float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", "A");

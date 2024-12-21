@@ -171,15 +171,19 @@ namespace UI_Stats {
                     switch (i) {
                         case 0:
                             unitStats.strength++;
+                            unitStats.strengthBase++;
                             return;
                         case 1:
                             unitStats.dexterity++;
+                            unitStats.dexterityBase++;
                             return;
                         case 2:
                             unitStats.intelligence++;
+                            unitStats.intelligenceBase++;
                             return;
                         case 3:
                             health.maxHealth += 1;
+                            health.base += 1;
                             health.currentHealth += 1;
                             return;
                         default:

@@ -206,10 +206,10 @@ namespace Player_Control {
 		//else move to cursor
 	}
 
-	bool Enter_Portal(entt::registry &zone, entt::entity &entity, int &state, Component::Position &position, Component::Position &targetPosition, Component::Velocity &velocity, Player_Component::Target_Data &targetData) {
+	bool Enter_Portal(entt::registry &zone, entt::entity &player_ID, int &state, Component::Position &position, Component::Position &targetPosition, Component::Velocity &velocity, Player_Component::Target_Data &targetData) {
 		if (Entity_Control::Target_In_Range(position, targetData.radius.fRadius, targetPosition, targetData.radius)) {
-			Cave::Load_Zone(zone, targetData.ID, state);
-			Clear_Moving(zone, entity, velocity, zone.get<Action_Component::Action>(entity), Action_Component::Action_State::idle);
+			Cave::Load_Zone(zone, player_ID, targetData.ID, state);
+			Clear_Moving(zone, player_ID, velocity, zone.get<Action_Component::Action>(player_ID), Action_Component::Action_State::idle);
 			return true;
 		}
 		return false;

@@ -125,6 +125,10 @@ namespace Event_Handler {
 		    }
 		    return;
 		}
+		//minimap
+		else if (0) {
+
+		}
 		    //      toolbar
 		else if (UI_toolbar::Mouse_inside()) {
 		    if (UI_toolbar::Click_Button()) {
@@ -136,11 +140,9 @@ namespace Event_Handler {
 
 		    // interact with open panel
 		    auto button = UI_toolbar::Get_Open();
-		    if (button == UI_toolbar::Buttons::inventory) {
 
-		    } else if (button == UI_toolbar::Buttons::character) {
+		    if (button == UI_toolbar::Buttons::character) {
 			UI_Stats::Click_Icons(zone, player_ID);
-
 		    } else if (button == UI_toolbar::Buttons::lowpower) {
 			if (Mouse_Struct::mouseData.type == Component::Icon_Type::spell) {
 			    Action_Bar::Clear_Spell_On_Mouse(zone);
@@ -157,8 +159,6 @@ namespace Event_Handler {
 		    } else if (button == UI_toolbar::Buttons::generalskills || button == UI_toolbar::Buttons::mageskills || button == UI_toolbar::Buttons::rogueskills || button == UI_toolbar::Buttons::warriorskills) {
 			Skill::Click(zone, player_ID, (int) button);
 		    } else if (button == UI_toolbar::Buttons::perks) {
-
-		    } else if (button == UI_toolbar::Buttons::map) {
 
 		    } else if (button == UI_toolbar::Buttons::stats) {
 
