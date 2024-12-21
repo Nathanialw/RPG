@@ -256,7 +256,7 @@ namespace Event_Handler {
 
 	void Update_User_Input(entt::registry &zone, int &state) {
 		//        keep function running to maintain input and perform actions during pause
-		if (!Menu::toggleMenu) {
+		if (!Menu::Is_Menu_Open()) {
 			while (SDL_PollEvent(&Events::event) != 0) {
 				//	auto view = zone.view<Component::Velocity, Action_Component::Action, Component::Position, Component::Melee_Range, Component::Input, Component::Camera>();
 				auto view = zone.view<Action_Component::Action, Component::Position, Component::Input, Component::Camera>();

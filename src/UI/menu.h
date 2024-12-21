@@ -84,14 +84,35 @@ namespace Menu {
 
   bool toggleMenu = false;
 
-  void Toggle() {
-    if (!toggleMenu) {
+  bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+      if (toggleType == Toggle_Type::get)
+          return toggleMenu;
+
+      if (toggleType == Toggle_Type::on) {
+          toggleMenu = true;
+          if (!Pause::paused)
+              Pause::Toggle();
+
+          return true;
+      }
+      if (toggleType == Toggle_Type::off) {
+          if (Pause::paused)
+              Pause::Toggle();
+
+          toggleMenu = false;
+          return false;
+      }
+
+      if (toggleMenu) {
+          toggleMenu = false;
+          Pause::Toggle();
+          return false;
+      }
+
       toggleMenu = true;
-      if (!Pause::paused) { Pause::Toggle(); }
-    } else {
-      toggleMenu = false;
-      Pause::Toggle();
-    }
+      if (!Pause::paused)
+          Pause::Toggle();
+      return true;
   }
 
   void Render_Menu_FC(Component::Camera &camera) {
@@ -141,6 +162,32 @@ namespace Menu {
     }
   }
 
+    bool closeMenu = false;
+
+    bool Close_Menu() {
+        // Simulate key down
+        Events::event.type = SDL_KEYDOWN;
+        Events::event.key.keysym.sym = SDLK_ESCAPE;
+        Events::event.key.state = SDL_PRESSED;
+        SDL_PushEvent(&Events::event);
+
+        // Simulate key up
+        Events::event.type = SDL_KEYUP;
+        Events::event.key.keysym.sym = SDLK_ESCAPE;
+        Events::event.key.state = SDL_RELEASED;
+        SDL_PushEvent(&Events::event);
+        closeMenu = true;
+    }
+
+    bool Is_Menu_Open() {
+        if (toggleMenu && closeMenu) {
+            closeMenu = false;
+            return false;
+        }
+
+        return toggleMenu;
+    }
+
   int Show_Menu(Menu &menus, entt::registry &zone, int &state, Component::Camera &camera) {
     //    Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu(camera) : Render_Menu_FC(camera);
     //    Debug::settings[Debug::Settings::fontRenderFC] ? Render_Menu_FC(camera) : Render_Menu(camera);
@@ -178,8 +225,8 @@ namespace Menu {
 
         case SDL_KEYDOWN: {
           if (Events::event.key.keysym.sym == SDLK_ESCAPE) {
-            Toggle();
-            break;
+                Close_Menu();
+              break;
           }
           break;
         }
@@ -198,8 +245,8 @@ namespace Menu {
       }
       switch (menu.i) {
         case 0: {
-          Toggle();
-          break;
+            Close_Menu();
+            break;
         }
         case 1: {
           return false;

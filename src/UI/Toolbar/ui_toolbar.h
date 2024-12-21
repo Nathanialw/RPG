@@ -31,6 +31,7 @@ namespace  UI_toolbar {
         events,
         map,
         religion,
+        menu,
         SIZE
     };
 
@@ -61,7 +62,8 @@ namespace  UI_toolbar {
             {"stats", PLACEHOLDER},
             {"events", PLACEHOLDER},
             {"map", Minimap::Toggle},
-            {"religion", PLACEHOLDER}
+            {"religion", PLACEHOLDER},
+            {"options", Menu::Toggle}
         }},
         "buttonon",
         "buttonoff",

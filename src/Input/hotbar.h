@@ -93,7 +93,8 @@ namespace Hotbar {
             if (UI_toolbar::Close_All() || Mouse::Cancel_Left_Click() || User_Mouse_Input::Deselect(zone) || Loot_Panel::Close() || Game_Menu_Control::Close())
                 return 0;
         }
-        Menu::Toggle();
+
+        UI_toolbar::Toggle(UI_toolbar::Buttons::menu);
         return 0;
     }
 
