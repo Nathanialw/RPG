@@ -103,7 +103,6 @@ namespace Create_Character_Entity {
         Component::Unit_Index unitIndex = {"demons", 0};
 
         Social_Component::Summon summon;
-        //    Create_Entities::Create_Entity(zone, state, 0, 0, data, true, summon, unitIndex);
         Create_Entities::Create_Entity(zone, state, 1660, 8924, data, true, summon, unitIndex);
         Equip_Units(zone, state, options);
         Character_Stats::Init_Player_Stats(zone, state);
@@ -112,9 +111,10 @@ namespace Create_Character_Entity {
     void Recreate_Player(entt::registry &zone, int &state, Character_Options::Customization &options) {
         db::Unit_Data data = Entity_Loader::Get_Character_Create(Character_Options::Get_Character(options));
         Social_Component::Summon summon;
-        Component::Unit_Index unitIndex = {"demons", 0};
 
+        Component::Unit_Index unitIndex = {"demons", 0};
         Create_Entities::Create_Entity(zone, state, 1660, 8924, data, true, summon, unitIndex);
+	Equip_Units(zone, state, options);
         Character_Stats::Init_Player_Stats(zone, state);
     }
 }// namespace Create_Character_Entity
