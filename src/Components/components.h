@@ -593,6 +593,16 @@ namespace Component {
         std::array<entt::entity, 32> bag{};
     };
 
+    struct Sprite_Icon {
+	std::string name = "";
+	SDL_Texture *texture = nullptr;
+	int maxFrames = 0;
+	int frame = 0;
+	float timer = 0.0f;
+	SDL_Rect clipRect = {};
+	SDL_FRect renderRect = {};
+    };
+
     struct Icon {
         SDL_Texture *pBackground = nullptr;
         SDL_Texture *pTexture = nullptr;

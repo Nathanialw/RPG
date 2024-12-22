@@ -280,7 +280,53 @@ namespace Graphics {
         //to render it jsut needs access to the texture array and the unitID
     }
 
+    enum BlendMode {
+	MIN = 0,
+	SUBTRACT = 1,
+	ADD = 2,
+	MAX = 3,
+	REVSUBTRACT = 4
+    };
 
+    void Set_BlendMode(SDL_Texture *Ltexture, BlendMode blendMode = BlendMode::MIN) {
+	SDL_BlendMode LblendMode;
+
+	if (blendMode == BlendMode::SUBTRACT) {
+	    LblendMode = SDL_ComposeCustomBlendMode(
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_SUBTRACT,
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_SUBTRACT
+	    );
+	}
+	if (blendMode == BlendMode::REVSUBTRACT) {
+	    LblendMode = SDL_ComposeCustomBlendMode(
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_REV_SUBTRACT,
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_REV_SUBTRACT
+	    );
+	}
+	if (blendMode == BlendMode::ADD) {
+	    LblendMode = SDL_ComposeCustomBlendMode(
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_ADD,
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_ADD
+	    );
+	}
+	if (blendMode == BlendMode::MIN) {
+	    LblendMode = SDL_ComposeCustomBlendMode(
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_MINIMUM,
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_MINIMUM
+	    );
+	}
+	if (blendMode == BlendMode::MAX) {
+	    LblendMode = SDL_ComposeCustomBlendMode(
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_MAXIMUM,
+		    SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_MAXIMUM
+	    );
+	}
+
+	if (SDL_SetTextureBlendMode(Ltexture, LblendMode) != 0) {
+	    std::cerr << "Failed to set blend mode: " << SDL_GetError() << std::endl;
+	    return;
+	}
+    }
 
     void createGraphicsContext() {
         window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, resolution.w, resolution.h, SDL_WINDOW_FULLSCREEN_DESKTOP);

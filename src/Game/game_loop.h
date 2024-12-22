@@ -53,9 +53,12 @@ namespace Game_Loop {
 	    Unit_Status::Update_Unit_Status(zone, state);
 	    Update_Game_Loop_Timers(Timer::GameStateValue[Timer::status], Timer::gameLoopTimer);
 
+	    Lighting::Update(zone);
+	    Update_Game_Loop_Timers(Timer::GameStateValue[Timer::lighting], Timer::gameLoopTimer);
+
 	    if (World::currentZone.current == World::currentZone.next) {
 		if (!Rendering::Rendering(zone, state)) {
-		    //restart
+		    // restart/new game
 		    Create_Entities::startup = true;
 		    return 1;
 		}
@@ -65,12 +68,12 @@ namespace Game_Loop {
 	    if (World::currentZone.current != World::currentZone.next)
 		World_Update::Clear_Tiles_Array(zone);
 	    Quad_Tree::Update_Tree_Routine(zone, state);
-
 	    Update_Game_Loop_Timers(Timer::GameStateValue[Timer::update_quad_tree], Timer::gameLoopTimer);
 
 	    Rendering::Present();
-	    Timer::Calculate_Timestep();
 	    Update_Game_Loop_Timers(Timer::GameStateValue[Timer::renderpresent], Timer::gameLoopTimer);
+
+	    Timer::Calculate_Timestep();
 	    if (World::currentZone.current != World::currentZone.next) { return World::currentZone.next; }
 	}
 	return state;
