@@ -491,8 +491,8 @@ namespace Component {
     };
 
     struct Attack_Speed {
-        float period = 0;
-        float counter = 0;
+        float period = 0.0f;
+        float counter = 0.0f;
     };
 
     enum Attack_Type {

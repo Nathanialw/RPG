@@ -17,7 +17,7 @@
 namespace  UI_toolbar {
 
     enum class Buttons {
-        inventory,
+        inventory = 0,
         character,
         lowpower,
         midpower,
@@ -70,7 +70,7 @@ namespace  UI_toolbar {
         32.0f
     );
 
-    void Toggle(Buttons i) {
+    void Toggle(const Buttons i) {
         toolBar.Toggle((int)i);
     }
 

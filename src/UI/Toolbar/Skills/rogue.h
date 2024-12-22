@@ -148,7 +148,7 @@ namespace Skill {
         }
 
         bool Mouse_Inside() {
-            rogue.Mouse_Inside();
+            return rogue.Mouse_Inside();
         }
 
         void Hover_Highlight() {

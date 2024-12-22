@@ -70,7 +70,7 @@ namespace  Button {
             highlight.Display(icon, buttonOn, scaledFrame);
         }
 
-        void Update(f2 scale) {
+        void Update(const f2 &scale) {
             Update_Position(frame);
             scaledFrame = UI::Update_Scale(scale, frame);
 
@@ -121,7 +121,7 @@ namespace  Button {
             return wasOpen;
         }
 
-        void Close_Book(int n) {
+        void Close_Book(const int &n) {
             highlight.Clear_Book();
 
             for (int i = 0; i < T; ++i) {
@@ -131,9 +131,9 @@ namespace  Button {
             }
         }
 
-        void Toggle(int i) {
+        void Toggle(const int &i) {
             if (i != 0  && i != 12)
-                Close_Book((int)i);
+                Close_Book(i);
             highlight.Toggle(action[i](Toggle_Type::toggle), i);
         }
 

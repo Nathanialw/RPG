@@ -66,6 +66,7 @@ namespace Texture {
     SDL_Texture *icons;
     SDL_Texture *cox_icons;
     SDL_Texture *cox_void;
+    SDL_Texture *cox_level_up;
     SDL_Texture *cox_skills;
     SDL_Texture *cox_spells;
     SDL_Texture *cox_map_tiles;
@@ -148,6 +149,7 @@ namespace Texture {
         cox_objects = Graphics::createTexture("assets/sprites/icons/cox_objects.png");
         cox_traps = Graphics::createTexture("assets/sprites/icons/cox_traps.png");
 	cox_void = Graphics::createTexture("assets/sprites/icons/cox_void.png");
+	cox_level_up = Graphics::createTexture("assets/sprites/icons/cox_level_up.png");
 
         icons = Graphics::createTexture("assets/sprites/icons/icons.png");
         vikingBuildingIcons = Graphics::createTexture("assets/sprites/buildings/viking/icons.png");

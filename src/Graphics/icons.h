@@ -72,6 +72,7 @@ namespace Icons {
     Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_objects.xml");
     Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_traps.xml");
     Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_void.xml");
+    Load_Icons(iconClipRects, "assets/sprites/xml/icons/cox_level_up.xml");
     Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/Viking Pack/icons.xml");
     Load_Icons(buildingIconClipRects, "assets/sprites/buildings/xml/medieval/buildings.xml");
   }

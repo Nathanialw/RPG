@@ -2,6 +2,7 @@
 // Created by nathanial on 12/18/24.
 //
 #pragma once
+#include "base_structs.h"
 #include "warrior.h"
 #include "mage.h"
 #include "rogue.h"
@@ -18,7 +19,7 @@ namespace  Skill {
         General::Update(zone, scale);
     }
 
-    void Render(f2 scale) {
+    void Render(const f2 &scale) {
         General::Render(scale);
         Mage::Render(scale);
         Rogue::Render(scale);

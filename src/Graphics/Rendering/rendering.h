@@ -320,12 +320,14 @@ namespace Rendering {
 
 	    SDL_RenderClear(Graphics::renderer);
 
+
 	    COX_Render::Render_Void();
 	    Render_Map(zone, state, camera);
 	    Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
 	    A_Star::Draw(zone, camera);
 	    Lighting::Render(camera);
 	    Items::Show_Ground_Items(zone, camera);
+	    COX_Render::Render_XP();
 	    Items::Unit_Name_On_Mouseover(zone, camera);
 	    Social_Control::Show_Dialogue(zone, camera);
 	    Items::Name_On_Mouseover(zone, camera);

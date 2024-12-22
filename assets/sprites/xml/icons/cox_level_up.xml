@@ -19,7 +19,7 @@ vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
 verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
 triangles  => sprite triangulation, 3 vertex indices per triangle
 -->
-<TextureAtlas imagePath="level_up/level_up.png" width="10784" height="4044">
+<TextureAtlas imagePath="level_up/cox_level_up.png" width="10784" height="4044">
     <sprite n="Level Up_00000" x="1" y="1" w="672" h="672"/>
     <sprite n="Level Up_00001" x="1" y="675" w="672" h="672"/>
     <sprite n="Level Up_00002" x="1" y="1349" w="672" h="672"/>

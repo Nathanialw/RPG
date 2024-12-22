@@ -17,6 +17,7 @@
 #include "textures.h"
 #include "Text/text.h"
 #include "Tooltips/tooltip.h"
+#include "base_structs.h"
 
 namespace  Skill {
 
@@ -57,18 +58,13 @@ namespace  Skill {
     template <size_t T, typename  Action>
     class Skill_Tree {
         //display
-        bool isOpen = false;
-        int hoveredSkill = -1;
-        int hoveredSkillUp = -1;
-        SDL_Texture* background = nullptr;
+        bool isOpen;
+        int hoveredSkill;
+        int hoveredSkillUp;
         static constexpr const char* maxLearnableLevel[3] = { "Basic", "Advanced", "Expert" };
 
-        SDL_FRect frame = {0, 0, 1137, 700};
         SDL_FRect scaledFrame{};
-        SDL_Texture* texture = nullptr;
-        SDL_Texture* tooltipText = nullptr;
-        SDL_Texture* textCanvas = nullptr;
-        SDL_Texture* tooltipBackground= nullptr;
+        SDL_Texture* texture;
         std::string name;
 
         std::array<std::string, T> names;
@@ -76,13 +72,18 @@ namespace  Skill {
         std::array<std::string, T> icons;
 
         //for mouseover
-        float iconSize = 36.0f;
+        float iconSize;
         std::array<SDL_FRect, T> skillHoverRects;
         std::array<SDL_FRect, T> skillUpRects;
 
     public:
         Skill_Tree(std::array<std::string, T> actions, std::array<std::string, T> iconKeys, std::array<std::array<std::string, 5>, T> descriptionList, std::string skillName) {
             name = std::move(skillName);
+	    isOpen = false;
+	    hoveredSkillUp = -1;
+	    hoveredSkill = -1;
+	    texture = nullptr;
+	    iconSize = 36.0f;
 
             for (int i = 0; i < T; i++) {
                 icons[i] = iconKeys[i];
@@ -92,7 +93,8 @@ namespace  Skill {
         }
 
         void Update(f2 scale, std::array<std::pair<int , int>, T> values,  Skill_Values skillPoints) {
-            scaledFrame = UI::Center_Rect(Utilities::SDL_FRect_To_SDL_Rect(frame));
+	    SDL_Rect frame = {0, 0, 1137, 700};
+            scaledFrame = UI::Center_Rect(frame);
             scaledFrame = UI::Update_Scale(scale, scaledFrame);
             FC_Scale FC_scale = {1.0f, 1.0f};
 
@@ -101,12 +103,10 @@ namespace  Skill {
                 SDL_DestroyTexture(texture);
                 texture = nullptr;
             }
-            if (!background)
-                background = Texture::spellbook;
 
             texture = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, frame.w, frame.h);
             SDL_SetRenderTarget(Graphics::renderer, texture);
-            SDL_RenderCopyF(Graphics::renderer, background, nullptr, nullptr);
+            SDL_RenderCopyF(Graphics::renderer, Texture::spellbook, nullptr, nullptr);
 
             //Skill class name
             //cost per skill up
@@ -257,6 +257,7 @@ namespace  Skill {
             return hoveredSkillUp;
         }
 
+    private:
         void Skill_Hover() {
             for (int i = 0; i < T; i++) {
                 SDL_FRect rect = skillHoverRects[i];
@@ -283,25 +284,8 @@ namespace  Skill {
             hoveredSkillUp = -1;
         }
 
-        bool Mouse_Inside() {
-            return Mouse::FRect_inside_Screen_Cursor(scaledFrame);
-        }
-
-        void Mouse_Over() {
-            if (!isOpen)
-                return;
-
-            if (!Mouse_Inside())
-                return;
-
-            Skill_Hover();
-            Skill_Up_Hover();
-        }
-
-        void Draw_Tooltip(f2 scale, int i) {
-            //needs to be lage enough to hold all text, then I need to just clip out the portion with the text and render it to the tooltip background texure
-            constexpr float maxLineWidth = 550.0f;
-
+	//needs to be lage enough to hold all text, then I need to just clip out the portion with the text and render it to the tooltip background texure
+	void Draw_Tooltip(f2 scale, int i) {
             std::array<std::string, 6> formattedDesc = {
                     names[i],
                     "Untrained " + names[i] + descriptions[i][UNTRAINED],
@@ -311,7 +295,7 @@ namespace  Skill {
                     descriptions[i][NOTE]
             };
 
-            float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", names[i].c_str());
+            float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", "A");
             std::array<float, 6> spacing = {
                     lineHeight * 0.50f,
                     lineHeight * 0.25f,
@@ -324,7 +308,7 @@ namespace  Skill {
             Tooltips::Properties<6> tooltipProperties = {
                     formattedDesc,
                     spacing,
-                    maxLineWidth,
+		    550.0f,
                     20.0f,
                     10.0f,
                     Tooltips::MOUSE_TOP_RIGHT
@@ -333,11 +317,30 @@ namespace  Skill {
             Tooltips::Create_Tooltip(tooltipProperties);
         }
 
-        void Draw(f2 scale) {
+    public:
+	bool Mouse_Inside() {
+	    return Mouse::FRect_inside_Screen_Cursor(scaledFrame);
+	}
+
+	void Mouse_Over() {
+	    if (!isOpen)
+		return;
+
+	    if (!Mouse_Inside())
+		return;
+
+	    Skill_Hover();
+	    Skill_Up_Hover();
+	}
+
+	SDL_Texture* Draw(f2 scale) {
             //draw texture
             if (isOpen) {
+		//render frame
                 SDL_RenderCopyF(Graphics::renderer, texture, nullptr, &scaledFrame);
-                if (hoveredSkill != -1) {
+
+		//highlight hovered skill
+		if (hoveredSkill >= 0 && hoveredSkill < T) {
                     SDL_FRect rect = skillHoverRects[hoveredSkill];
                     rect.x += scaledFrame.x;
                     rect.y += scaledFrame.y;
@@ -347,8 +350,8 @@ namespace  Skill {
                     //tooltip
                     Draw_Tooltip(scale, hoveredSkill);
                 }
-
-                else if (hoveredSkillUp != -1) {
+		//highlight hovered skill up button
+		else if (hoveredSkillUp >= 0 && hoveredSkillUp < T) {
                     SDL_FRect rect = skillUpRects[hoveredSkillUp];
                     rect.x += scaledFrame.x;
                     rect.y += scaledFrame.y;
@@ -359,9 +362,10 @@ namespace  Skill {
                     Draw_Tooltip(scale, hoveredSkillUp);
                 }
             }
+	    return texture;
         }
 
-        bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+	bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
             if (toggleType == Toggle_Type::get)
                 return isOpen;
 

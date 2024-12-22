@@ -7,6 +7,7 @@
 #include "graphics.h"
 #include "skills_Components.h"
 #include "Toolbar/Skills/skill.h"
+#include "Rendering/cox_rendering.h"
 
 namespace XP {
 
@@ -17,10 +18,6 @@ namespace XP {
         for (int i = 0; i < level - 1; i++)
             xp += (xp * 0.1);
         return xp;
-    }
-
-
-    void Level_Up() {
     }
 
     void Get_XP(entt::registry &zone, int &state) {
@@ -51,9 +48,10 @@ namespace XP {
                 health.base += health.growth;
                 health.currentHealth = health.maxHealth;
 
-                Level_Up();
                 auto &camera = view.get<Component::Camera>(entity);
                 Skill::Update(zone, camera.scale);
+
+		COX_Render::levelUpGraphic.Set_Active();
             }
         }
     }

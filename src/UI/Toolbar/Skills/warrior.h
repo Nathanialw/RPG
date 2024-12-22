@@ -2,6 +2,7 @@
 // Created by nathanial on 12/17/24.
 //
 #pragma once
+#include "base_structs.h"
 #include "skills.h"
 
 //passive skills
@@ -10,7 +11,6 @@ namespace Skill {
         constexpr int SIZE = 19;
 
         typedef bool (*Action)();
-
 
         bool PLACEHOLDER() {
             return false;
@@ -160,7 +160,6 @@ namespace Skill {
 
         Skill_Tree <SIZE, Action> warrior = Skill_Tree<SIZE, Action>(names, icons, descriptions, "Warrior");
 
-
         void Update(entt::registry &zone, f2 scale) {
             warrior.Update(scale, Get_Skills(zone), Get_Skill_Points(zone));
         }
@@ -215,11 +214,11 @@ namespace Skill {
             return clicked;
         };
 
-        void Render(f2 scale) {
+        void Render(const f2 &scale) {
             warrior.Draw(scale);
         }
 
-        bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
+        bool Toggle(const Toggle_Type toggleType = Toggle_Type::toggle) {
             return warrior.Toggle(toggleType);
         }
 

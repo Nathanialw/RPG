@@ -17,8 +17,10 @@ elseif(WIN32)
     add_executable(RPG src/main.cpp include/all/sqlite/sqlite3.c include/all/tinyxml/tinyxml2.cpp include/all/SDL_FontCache/SDL_FontCache.c)
     target_link_libraries(RPG SDL2 SDL2main SDL2_image SDL2_ttf SDL2_mixer theora vorbis ogg box2d tmxlite)
     target_compile_definitions(RPG PRIVATE SDL_MAIN_HANDLED)
-    target_compile_options(RPG PRIVATE /bigobj)
-    target_compile_definitions(RPG PRIVATE _ITERATOR_DEBUG_LEVEL=0)
+
+    # MSVC specific settings
+#    target_compile_options(RPG PRIVATE /bigobj)
+#    target_compile_definitions(RPG PRIVATE _ITERATOR_DEBUG_LEVEL=0)
 endif()
 
 add_subdirectory(src)

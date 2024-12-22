@@ -34,7 +34,7 @@ namespace Combat_Control {
       auto &action = view.get<Action_Component::Action>(entity);
       ///ensures it attacks at the end of the last frame of the attack
       /// if current attackSpeed >= attackSpeed value then subtract the attackSpeed value from the current attackSpeed counter
-      if (action.state != Action_Component::attack && action.state != Action_Component::struck && action.state != Action_Component::block && attackSpeed.counter <= 0) {
+      if (action.state != Action_Component::attack && action.state != Action_Component::struck && action.state != Action_Component::block && attackSpeed.counter <= 0.0f) {
         zone.emplace_or_replace<Component::In_Combat>(entity, true);
         auto &direction = view.get<Component::Direction>(entity);
         auto &velocity = view.get<Component::Velocity>(entity);
@@ -198,7 +198,7 @@ namespace Combat_Control {
     auto view = zone.view<Component::Attack_Speed, Component::Renderable>();
     for (auto entity: view) {
       auto &attackSpeed = view.get<Component::Attack_Speed>(entity);
-      if (attackSpeed.counter >= 0) {
+      if (attackSpeed.counter >= 0.0f) {
         attackSpeed.counter -= Timer::timeStep;
       }
     }

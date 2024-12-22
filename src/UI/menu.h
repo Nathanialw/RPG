@@ -158,15 +158,6 @@ namespace Menu {
 
     bool closeMenu = false;
 
-    bool Close_Menu() {
-	// Simulate key down
-	Events::event.type = SDL_KEYDOWN;
-	Events::event.key.keysym.sym = SDLK_ESCAPE;
-	Events::event.key.state = SDL_PRESSED;
-	SDL_PushEvent(&Events::event);
-	closeMenu = true;
-    }
-
     bool Is_Menu_Open() {
 	if (closeMenu) {
 	    closeMenu = false;
