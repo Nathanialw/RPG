@@ -97,7 +97,7 @@ namespace Load {
 
     void Copy_Stats(entt::registry &newZone, entt::registry &oldZone, entt::entity newEntity, entt::entity oldEntity) {
 	newZone.emplace_or_replace<Component::Stats>(newEntity) = oldZone.get<Component::Stats>(oldEntity);
-	newZone.emplace_or_replace<Component::XP>(newEntity) = oldZone.get<Component::XP>(oldEntity);
+	newZone.emplace_or_replace<Component::Level>(newEntity) = oldZone.get<Component::Level>(oldEntity);
 	newZone.emplace_or_replace<Component::Mana>(newEntity) = oldZone.get<Component::Mana>(oldEntity);
 	newZone.emplace_or_replace<Component::Religion>(newEntity) = oldZone.get<Component::Religion>(oldEntity);
 	newZone.emplace_or_replace<Component::Gold>(newEntity) = oldZone.get<Component::Gold>(oldEntity);

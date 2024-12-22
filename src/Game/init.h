@@ -67,7 +67,8 @@ namespace Init {
         UI_Stats::Update_Position();
         UI_Debug::Update_Position();
         Icons::Load();
-        UI_Spellbook::Init_UI();
+	COX_Render::Init();
+	UI_Spellbook::Init_UI();
         Action_Bar::Create_Action_Bar();
         Hotbar::Init_Hotbar();
         Scene::Init_Zone();

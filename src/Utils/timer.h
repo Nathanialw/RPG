@@ -37,8 +37,7 @@ namespace Timer {
     struct Game_Loop_Timer {
 	Uint64 startPerf = 0;
 	Uint64 endPerf = 0;
-    };
-    Game_Loop_Timer gameLoopTimer;
+    } gameLoopTimer;
 
     void Update_Game_Loop_Timers(float &stateTime, Game_Loop_Timer &timer) {
 	timer.endPerf = SDL_GetPerformanceCounter();
@@ -73,37 +72,18 @@ namespace Timer {
 	float gg = (float) sstateTime / (float) dd;
 	timeStep = gg * 1000.0f;
 	startPerf = endPerf;
+
 	if (lockFramerate) {
 	    if (timeStep < 16.66f) {
 		Uint32 nn = floor(16.66f - timeStep);
 		SDL_Delay(nn);
-		timeStep = nn + timeStep;
 	    }
 	}
+
 	Calculate_FPS();
 
 	if (pause) {
 	    timeStep = 0;
 	}
     }
-
-    class Frame_Timer {
-	float fTime_between;
-	float fCounter_MS;
-
-    public:
-	Frame_Timer(float frequency) {
-	    fTime_between = frequency;
-	    fCounter_MS = 0.0f;
-	}
-
-	bool Calc() {//controls how often collision calculates
-	    fCounter_MS -= Timer::timeStep;
-	    if (fCounter_MS <= 0.0f) {
-		fCounter_MS = fTime_between;//every this many milliseconds
-		return true;
-	    } else
-		return false;
-	}
-    };
 }// namespace Timer

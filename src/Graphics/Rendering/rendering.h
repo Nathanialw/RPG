@@ -318,16 +318,14 @@ namespace Rendering {
 	    Add_Remove_Renderable_Component(zone, state, camera);
 	    Sort::Sort_Positions(zone);
 
-	    SDL_RenderClear(Graphics::renderer);
 
-
-	    COX_Render::Render_Void();
+	    COX_Render::voidGraphic.Render();
 	    Render_Map(zone, state, camera);
 	    Remove_Entities_From_Registry(zone, state);// cannot be done before clearing the entities from the quad tree
 	    A_Star::Draw(zone, camera);
 	    Lighting::Render(camera);
 	    Items::Show_Ground_Items(zone, camera);
-	    COX_Render::Render_XP();
+	    COX_Render::levelUpGraphic.Render();
 	    Items::Unit_Name_On_Mouseover(zone, camera);
 	    Social_Control::Show_Dialogue(zone, camera);
 	    Items::Name_On_Mouseover(zone, camera);
@@ -367,5 +365,7 @@ namespace Rendering {
 
     void Present() {
 	SDL_RenderPresent(Graphics::renderer);
+	SDL_RenderClear(Graphics::renderer);
+
     }
 }// namespace Rendering

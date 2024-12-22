@@ -1,7 +1,5 @@
 
 ADD
-- need a simple sprite looping function for static objects
-
 - update player stats - mana/faith
 - update items with new affixes and suffixes
 - generate props on tiles
@@ -12,13 +10,12 @@ ADD
 
 - add prayers tab // 1 page
 - add stats tab // 1 page
+    - add visual bars for stats
 
 - add race/class perks stab // 1 page - 12 of them
 
 - add events tab
 
-- move unit frames
-- add buttons to open game tabs
 - add items into DB
 - add monsters into DB
 - add spells into DB
@@ -30,6 +27,7 @@ ADD
 - add shrines
 - BSP map generation
 - water/acid/lava
+    - add swimming animation
 - UI when selecting a friendly NPC
 - add humans as playable
 - start on the options menu

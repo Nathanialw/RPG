@@ -295,7 +295,7 @@ namespace Create_Entities {
 		    zone.emplace_or_replace<Component::Health>(entity, (int) (data.health * data.scale), (int) (data.health * data.scale), (int) (data.health * data.scale));
 		    Skill_Component::Add_Default(zone, entity);
 		    zone.emplace_or_replace<Component::Stats>(entity);
-		    zone.emplace_or_replace<Component::XP>(entity);
+		    zone.emplace_or_replace<Component::Level>(entity);
 		    zone.emplace_or_replace<Component::Mana>(entity);
 		    zone.emplace_or_replace<Component::Religion>(entity);
 		    zone.emplace_or_replace<Component::Gold>(entity);

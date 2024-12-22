@@ -21,10 +21,10 @@ namespace XP {
     }
 
     void Get_XP(entt::registry &zone, int &state) {
-        auto view = zone.view<Component::XP, Component::Input, Component::Stats, Component::Health, Skill_Component::Skills_Points, Component::Camera>();
+        auto view = zone.view<Component::Level, Component::Input, Component::Stats, Component::Health, Skill_Component::Skills_Points, Component::Camera>();
 
         for (auto entity: view) {
-            auto &xp = view.get<Component::XP>(entity);
+            auto &xp = view.get<Component::Level>(entity);
 
             if (xp.xp >= Get_Level(xp.level)) {
                 xp.xp = xp.xp  - Get_Level(xp.level);

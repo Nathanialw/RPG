@@ -48,14 +48,14 @@ namespace UI_Stats {
     float lineHeight = 20.0f;
 
     void Update(entt::registry &zone) {
-        auto view = zone.view<Component::Input, Component::Name, Component::Stats, Component::Religion, Component::Health, Component::Mana, Component::XP, Component::Gold, Component::Dungeon_Level, Component::Time_On_Map>();
+        auto view = zone.view<Component::Input, Component::Name, Component::Stats, Component::Religion, Component::Health, Component::Mana, Component::Level, Component::Gold, Component::Dungeon_Level, Component::Time_On_Map>();
         for (auto entity: view) {
             auto &name = view.get<Component::Name>(entity);
             auto &playerStats = view.get<Component::Stats>(entity);
             auto &religion = view.get<Component::Religion>(entity);
             auto &health = view.get<Component::Health>(entity);
             auto &mana = view.get<Component::Mana>(entity);
-            auto &xp = view.get<Component::XP>(entity);
+            auto &xp = view.get<Component::Level>(entity);
             auto &gold = view.get<Component::Gold>(entity);
             auto &dungeonLevel = view.get<Component::Dungeon_Level>(entity);
             auto &timeOnMap = view.get<Component::Time_On_Map>(entity);

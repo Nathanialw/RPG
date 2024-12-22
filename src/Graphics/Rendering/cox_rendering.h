@@ -2,6 +2,7 @@
 // Created by nathanial on 12/21/24.
 //
 #pragma once
+
 #include <utility>
 
 #include "icons.h"
@@ -11,70 +12,76 @@
 
 namespace COX_Render {
 
-    std::string Append_Zero(int n) {
+    std::string Prepend_Zero(int n) {
 	if (n < 10)
 	    return "0" + std::to_string(n);
+
 	return std::to_string(n);
     }
 
-    //for multi-frame icons/map sprites
-   struct Graphic {
-       bool active = false;
-       bool norepeat = false;
-       int voidFrame = 0;
-       float voidRender = 0.0f;
+    class Graphic {
+	bool noRepeat = false;
+	int frame = 0;
+	int numFrames = 0;
+	float voidRender = 0.0f;
+	std::string name;
+	bool active = false;
+	SDL_Texture* texture = nullptr;
 
-       void Set_Active() {
-	   active = true;
-       }
+    public:
+	Graphic() = default;
+	Graphic(std::string name, SDL_Texture* texture, bool active, bool noRepeat, int numFrames) : name(std::move(name)), texture(texture), active(active), noRepeat(noRepeat), numFrames(numFrames) {
+	    	//
+	}
 
-       std::string Update(std::string name) {
-	   voidRender += Timer::timeStep;
-	   if (voidRender >= 40.0f) {
-	       voidRender -= 40.0f;
+    private:
+	std::string Update_Frame() {
+	    voidRender += Timer::timeStep;
+	    if (voidRender >= 40.0f) {
+		voidRender -= 40.0f;
 
-	       voidFrame++;
-	   }
+		frame++;
+	    }
 
-	   name += Append_Zero(voidFrame);
+	    std::string nameStr = name + Prepend_Zero(frame);
 
-	   if (voidFrame > 95) {
-	       voidFrame = 0;
-	       if (norepeat)
-		   active = false;
-	   }
-	   return name;
-       }
-   };
+	    if (frame > numFrames) {
+		frame = 0;
+		if (noRepeat)
+		    active = false;
+	    }
+	    return nameStr;
+	}
 
-   Graphic voidGraphic = Graphic{true, false, 0, 0.0f};
-   Graphic levelUpGraphic = Graphic{false, true, 0, 0.0f};
+    public:
+	void Set_Active() {
+	    active = true;
+	}
 
-   void Render_Void() {
-       if (!voidGraphic.active)
-	   return;
+	void Render(SDL_FRect renderRect = {0.0f, 0.0f, Graphics::Screen.w, Graphics::Screen.h}) {
+	    if (!active)
+		return;
 
-       std::string nameStr = voidGraphic.Update("etheralvoid_000");
-       SDL_Rect iconClip = Icons::iconClipRects[nameStr].clipRect;
-       SDL_FRect rect = {0.0f, 0.0f, Graphics::Screen.w, Graphics::Screen.h};
+	    std::string nameStr = Update_Frame();
+	    SDL_Rect iconClip = Icons::iconClipRects[nameStr].clipRect;
 
-       SDL_RenderCopyF(Graphics::renderer, Texture::cox_void, &iconClip, &rect);
-   }
+	    SDL_RenderCopyF(Graphics::renderer, texture, &iconClip, &renderRect);
+	}
+    };
 
-    void Render_XP() {
-	if (!levelUpGraphic.active)
-	    return;
+    Graphic voidGraphic{};
+    Graphic levelUpGraphic{};
 
-	std::string nameStr = levelUpGraphic.Update("Level Up_000");
-	SDL_Rect iconClip = Icons::iconClipRects[nameStr].clipRect;
-	SDL_FRect rect = {0.0f, 0.0f, Graphics::Screen.w, Graphics::Screen.h};
 
-	SDL_RenderCopyF(Graphics::renderer, Texture::cox_level_up, &iconClip, &rect);
+    void Init() {
+	voidGraphic = Graphic("etheralvoid_000", Texture::cox_void, true, false, 95);
+	levelUpGraphic = Graphic("Level Up_000", Texture::cox_level_up, false, true, 95);
     }
+
 
     void Update_Sprite(Component::Sprite_Icon &spriteIcon) {
 	if (!spriteIcon.texture)
-		std::cout << "No texture for " << spriteIcon.name << std::endl;
+	    std::cout << "No texture for " << spriteIcon.name << std::endl;
 
 	//cycle through the frames
 	spriteIcon.timer += Timer::timeStep;
