@@ -593,7 +593,7 @@ namespace Component {
     };
 
     struct Sprite_Icon {
-	std::string name = "";
+	std::string name;
 	SDL_Texture *texture = nullptr;
 	int maxFrames = 0;
 	int frame = 0;

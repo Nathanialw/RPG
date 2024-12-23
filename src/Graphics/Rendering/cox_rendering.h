@@ -79,9 +79,14 @@ namespace COX_Render {
     }
 
 
-    void Update_Sprite(Component::Sprite_Icon &spriteIcon) {
+    void Update_Sprite_Frame(Component::Sprite_Icon &spriteIcon) {
 	if (!spriteIcon.texture)
 	    std::cout << "No texture for " << spriteIcon.name << std::endl;
+
+	if (spriteIcon.maxFrames == 1) {
+	    spriteIcon.clipRect = Icons::iconClipRects[spriteIcon.name].clipRect;
+	    return;
+	}
 
 	//cycle through the frames
 	spriteIcon.timer += Timer::timeStep;
@@ -97,4 +102,15 @@ namespace COX_Render {
 	spriteIcon.clipRect = Icons::iconClipRects[spriteIcon.name + std::to_string(spriteIcon.frame)].clipRect;
     }
 
+    void Update_Icon_Frames(entt::registry &zone) {
+
+	auto view = zone.view<Component::Position, Component::Sprite_Icon>();
+	for (auto entity: view) {
+	    auto &spriteIcon = view.get<Component::Sprite_Icon>(entity);
+
+	    Update_Sprite_Frame(spriteIcon);
+	}
+
+    }
 }
+

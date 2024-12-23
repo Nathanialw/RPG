@@ -318,6 +318,8 @@ namespace Rendering {
 	    Add_Remove_Renderable_Component(zone, state, camera);
 	    Sort::Sort_Positions(zone);
 
+	    //doesn't render, just updates the current frame
+	    COX_Render::Update_Icon_Frames(zone);
 
 	    COX_Render::voidGraphic.Render();
 	    Render_Map(zone, state, camera);

@@ -123,6 +123,9 @@ namespace Create_Entities {
 		    Emplace_Interaction_Rect_Building(zone, entity, data, x, y, data.radius);
 		}
 
+		if (data.icon_sprite != "none")
+			zone.emplace_or_replace<Component::Sprite_Icon>(entity, data.icon_sprite, Texture::cox_map_tiles, data.icon_num_frames);
+
 		zone.emplace_or_replace<Component::Is_Inside>(entity);
 		zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
 		Social_Control::Entity(zone, entity, data.race);

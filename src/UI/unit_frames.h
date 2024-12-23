@@ -59,28 +59,25 @@ namespace Unit_Frames {
 
 	//only update if changed
 	std::string healthText = std::to_string(health.currentHealth) + " / " + std::to_string(health.maxHealth);
-	if (frame.health.text != healthText || frame.health.textTexture == NULL) {
+	if (frame.health.text != healthText || !frame.health.textTexture) {
 	    SDL_DestroyTexture(frame.health.textTexture);
-	    frame.health.textTexture = NULL;
+	    frame.health.textTexture = nullptr;
 	    frame.health.healthFrameWidth = (float) health.currentHealth / (float) health.maxHealth;
 	    Populate_Frame(frame.health, healthText, Color::gray);
 	    frame.health.backgroundTexture = Texture::tooltipBackground;
 	}
 	Update_Frame_Text(scale, frame.health, frame.health.text, 20.0f);
 
-	COX_Render::Update_Sprite(spriteIcon);
-//        if (frame.img.texture != portrait.texture || frame.img.texture == NULL) {
-//            frame.img.texture = portrait.texture;
-//        }
-	if (frame.img.texture != spriteIcon.texture || spriteIcon.texture == NULL) {
+
+	if (frame.img.texture != spriteIcon.texture || spriteIcon.texture == nullptr) {
 	    frame.img.texture = spriteIcon.texture;
 	}
 	frame.img.clipRect = spriteIcon.clipRect;
 
 	std::string name = fullName.first + " " + fullName.last;
-	if (frame.name.text != name || frame.name.textTexture == NULL) {
+	if (frame.name.text != name || frame.name.textTexture == nullptr) {
 	    SDL_DestroyTexture(frame.name.textTexture);
-	    frame.name.textTexture = NULL;
+	    frame.name.textTexture = nullptr;
 	    frame.name.backgroundTexture = Texture::tooltipBackground;
 	    Populate_Frame(frame.name, name, Color::orange);
 	}
@@ -89,27 +86,27 @@ namespace Unit_Frames {
 
     void Render_Target_Frame(UI_Frame &frame) {
 	//background
-	SDL_RenderCopyF(Graphics::renderer, frame.background.texture, NULL, &frame.background.frame);
+	SDL_RenderCopyF(Graphics::renderer, frame.background.texture, nullptr, &frame.background.frame);
 	//health background
-	SDL_RenderCopyF(Graphics::renderer, frame.health.backgroundTexture, NULL, &frame.health.frame);
+	SDL_RenderCopyF(Graphics::renderer, frame.health.backgroundTexture, nullptr, &frame.health.frame);
 	//health foreground
 	frame.health.healthFrame = frame.health.frame;
 	frame.health.healthFrame.w = frame.health.frame.w * frame.health.healthFrameWidth;
 	Color::Set_Health_Color(Graphics::renderer, frame.health.healthFrameWidth);
 	SDL_RenderFillRectF(Graphics::renderer, &frame.health.healthFrame);
 	//health
-	SDL_RenderCopyF(Graphics::renderer, frame.health.textTexture, NULL, &frame.health.textFrame);
+	SDL_RenderCopyF(Graphics::renderer, frame.health.textTexture, nullptr, &frame.health.textFrame);
 	//name background
-	SDL_RenderCopyF(Graphics::renderer, frame.name.backgroundTexture, NULL, &frame.name.frame);
+	SDL_RenderCopyF(Graphics::renderer, frame.name.backgroundTexture, nullptr, &frame.name.frame);
 	//name
-	SDL_RenderCopyF(Graphics::renderer, frame.name.textTexture, NULL, &frame.name.textFrame);
+	SDL_RenderCopyF(Graphics::renderer, frame.name.textTexture, nullptr, &frame.name.textFrame);
 	//img
 	SDL_RenderCopyF(Graphics::renderer, frame.img.texture, &frame.img.clipRect, &frame.img.frame);
     }
 
     void Init_Frames(Component::Camera &camera) {
 	SDL_FRect position = {32.0f, 256.0f, 256.0f, 64.0f};
-	targetFrame.frame  = { (Graphics::Screen.w * 0.5f) + (position.x / camera.scale.x), Graphics::Screen.h - (position.y / camera.scale.y), position.w / camera.scale.x, position.h / camera.scale.y};
+	targetFrame.frame = {(Graphics::Screen.w * 0.5f) + (position.x / camera.scale.x), Graphics::Screen.h - (position.y / camera.scale.y), position.w / camera.scale.x, position.h / camera.scale.y};
     }
 
     void Show_Frames(entt::registry &zone, Component::Camera &camera) {
@@ -118,13 +115,14 @@ namespace Unit_Frames {
 	    Build_Target_Frames();
 	}
 
-	for (auto &i: targets) {
+	for (auto &i: targets)
 	    i.selected = false;
-	}
 
 	auto view = zone.view<Component::Selected, Component::Name, Component::Health, Rendering_Components::Unit_Frame_Portrait, Component::Sprite_Icon>();
+
 	for (auto entity: view) {
 	    auto [selected, fullName, health, portrait, spriteIcon] = view.get(entity);
+
 	    //place in new unit
 	    if (!selected.selected) {
 		for (int i = 0; i < targets.size(); i++) {
@@ -136,6 +134,7 @@ namespace Unit_Frames {
 		    };
 		}
 	    }
+
 	    targets[selected.targetIndex].selected = true;
 	    Update_Frame_Data(camera.scale, fullName, health, targets[selected.targetIndex], portrait, spriteIcon);
 	    Render_Target_Frame(targets[selected.targetIndex]);
