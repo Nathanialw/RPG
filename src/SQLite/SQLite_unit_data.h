@@ -34,6 +34,7 @@ namespace Entity_Loader {
 	int interactable = 0;
 	int light_radius = 0;
 	std::string icon_sprite = "cryptkeeper";
+	std::string icon_dead = "cryptkeeper";
 	int icon_num_frames = 4;
     };
 
@@ -65,7 +66,7 @@ namespace Entity_Loader {
 	Data values;
 	sqlite3_stmt *stmt;
 	char buf[400];
-	const char *jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, equip_type, race, temp_type_name, whole_sprite, hexa_directional, interactable, light_radius, icon_sprite, num_icon_frames FROM unit_data WHERE name = ";
+	const char *jj = "SELECT radius, speed, mass, health, damage_min, damage_max, melee_range, attack_speed, sight_radius, scale, body_type, interact_r, interact_h, x_offset, y_offset, equip_type, race, temp_type_name, whole_sprite, hexa_directional, interactable, light_radius, icon_sprite, num_icon_frames, icon_dead FROM unit_data WHERE name = ";
 	strcpy(buf, jj);
 	strcat(buf, unit_name.c_str());
 	sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -94,6 +95,7 @@ namespace Entity_Loader {
 	    values.light_radius = sqlite3_column_int(stmt, 21);
 	    values.icon_sprite = std::string(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 22)));
 	    values.icon_num_frames = sqlite3_column_int(stmt, 23);
+	    values.icon_dead = std::string(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 24)));
 	    //std::cout << "data: " << name << std::endl;
 	}
 	return values;
@@ -544,6 +546,7 @@ namespace Entity_Loader {
 	std::string interior;
 	int direction;
 	std::string icon_sprite;
+	std::string icon_dead;
 	int icon_num_frames;
     };
 
@@ -564,7 +567,7 @@ namespace Entity_Loader {
 
 	sqlite3_stmt *stmt;
 	char buf[300];
-	const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite, interior, direction, icon_sprite,  icon_num_frames FROM building_exteriors WHERE name = ";
+	const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite, interior, direction, icon_sprite,  icon_num_frames, icon_dead FROM building_exteriors WHERE name = ";
 	strcpy(buf, jj);
 	strcat(buf, unit_name.c_str());
 	sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -599,6 +602,9 @@ namespace Entity_Loader {
 	    data.icon_sprite = db::Get_String(text);
 
 	    data.icon_num_frames = sqlite3_column_int(stmt, 12);
+
+	    text = sqlite3_column_text(stmt, 13);
+	    data.icon_dead = db::Get_String(text);
 	}
 	return data;
     }

@@ -302,7 +302,7 @@ namespace  Skill {
                     lineHeight * 0.25f,
                     lineHeight * 0.25f,
                     lineHeight * 0.50f,
-                    lineHeight * 0.25f,
+                    lineHeight * 0.0f,
             };
 
             Tooltips::Properties<6> tooltipProperties = {

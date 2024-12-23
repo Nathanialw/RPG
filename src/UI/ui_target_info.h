@@ -68,7 +68,7 @@ namespace Target_Info {
                 lineHeight * 0.15f,
                 lineHeight * 0.15f,
                 lineHeight * 0.15f,
-                lineHeight * 0.15f,
+                0.0f,
         };
 
         Tooltips::Properties<numLines> tooltipProperties = {

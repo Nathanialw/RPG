@@ -124,7 +124,7 @@ namespace Create_Entities {
 		}
 
 		if (data.icon_sprite != "none")
-			zone.emplace_or_replace<Component::Sprite_Icon>(entity, data.icon_sprite, Texture::cox_map_tiles, data.icon_num_frames);
+			zone.emplace_or_replace<Component::Sprite_Icon>(entity, data.icon_sprite, data.icon_dead, Texture::cox_map_tiles, data.icon_num_frames);
 
 		zone.emplace_or_replace<Component::Is_Inside>(entity);
 		zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::isStatic);
@@ -259,7 +259,7 @@ namespace Create_Entities {
 		zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
 		zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::attack2);
 		zone.emplace_or_replace<Component::Is_Inside>(entity);
-		zone.emplace_or_replace<Component::Sprite_Icon>(entity, data.icon_sprite, Texture::cox_units, data.icon_num_frames);
+		zone.emplace_or_replace<Component::Sprite_Icon>(entity, data.icon_sprite, data.icon_dead, Texture::cox_units, data.icon_num_frames);
 
 		auto &velocity = zone.emplace_or_replace<Component::Velocity>(entity, 0.0f, 0.0f, 0.0f, 0.0f, data.speed * data.scale, 0.0f, data.hexDir);
 

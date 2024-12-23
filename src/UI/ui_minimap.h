@@ -12,6 +12,9 @@ namespace Minimap {
     SDL_FRect minimapRect;
     int currentState;
 
+    bool hovered;
+    entt::entity selectedEntity;
+
     bool Toggle(Toggle_Type toggleType = Toggle_Type::toggle) {
 	if (toggleType == Toggle_Type::get)
 	    return mapOpen;
@@ -39,7 +42,7 @@ namespace Minimap {
 	return minimapHeight;
     }
 
-    void Draw_Map(int state, float minimapHeight) {
+    void Draw_Map(int state, float cellSize) {
 	if (currentState != state) {
 	    if (minimapTexture) {
 		SDL_DestroyTexture(minimapTexture);
@@ -51,9 +54,8 @@ namespace Minimap {
 	    SDL_RenderCopyF(Graphics::renderer, minimapTexture, nullptr, &minimapRect);
 	} else {
 	    currentState = state;
-	    auto cellSize = minimapHeight / World_Data::REGION_SIZE;
 	    //settarget texutre
-	    minimapTexture = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, (int) minimapHeight, (int) minimapHeight);
+	    minimapTexture = SDL_CreateTexture(Graphics::renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, (int) (cellSize * World_Data::REGION_SIZE), (int) (cellSize * World_Data::REGION_SIZE));
 	    SDL_SetRenderTarget(Graphics::renderer, minimapTexture);
 
 	    for (int i = 0; i < World_Data::REGION_SIZE; i++) {
@@ -95,10 +97,9 @@ namespace Minimap {
 	return Utilities::Center_Rect(scaledRect);
     }
 
-    void Draw_Object(entt::registry &zone, float minimapHeight) {
-	auto cellSize = minimapHeight / World_Data::REGION_SIZE;
-
+    void Draw_Object(entt::registry &zone, float cellSize) {
 	auto view = zone.view<Component::Position, Component::Sprite_Icon>(entt::exclude<Component::Unit>);
+
 	for (auto entity: view) {
 
 	    auto spriteIcon = view.get<Component::Sprite_Icon>(entity);
@@ -106,13 +107,16 @@ namespace Minimap {
 
 	    SDL_FRect renderRect = Get_Render_Rect(cellSize, position);
 
+	    if (!hovered && Mouse::FRect_inside_Screen_Cursor(renderRect)) {
+		hovered = true;
+		selectedEntity = entity;
+	    }
+
 	    SDL_RenderCopyF(Graphics::renderer, spriteIcon.texture, &spriteIcon.clipRect, &renderRect);
 	}
     }
 
-    void Draw_Units(entt::registry &zone, float minimapHeight) {
-	auto cellSize = minimapHeight / World_Data::REGION_SIZE;
-
+    void Draw_Units(entt::registry &zone, float cellSize) {
 	auto view = zone.view<Component::Position, Component::Unit, Component::Sprite_Icon>();
 
 	Component::Sprite_Icon player;
@@ -123,6 +127,11 @@ namespace Minimap {
 	    auto &position = view.get<Component::Position>(entity);
 
 	    SDL_FRect renderRect = Get_Render_Rect(cellSize, position);
+
+	    if (!hovered && Mouse::FRect_inside_Screen_Cursor(renderRect)) {
+		hovered = true;
+		selectedEntity = entity;
+	    }
 
 	    if (zone.any_of<Component::Input>(entity)) {
 		player = spriteIcon;
@@ -137,12 +146,42 @@ namespace Minimap {
 	SDL_RenderCopyF(Graphics::renderer, player.texture, &player.clipRect, &playerRect);
     }
 
+    void Draw_Tooltip(entt::registry &zone) {
+	if (hovered) {
+	    auto name = zone.get<Component::Name>(selectedEntity).first;
+
+	    std::array<std::string, 6> formattedDesc = {
+		    name,
+	    };
+
+	    float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", "A");
+	    std::array<float, 6> spacing = {
+		    lineHeight * 0.0f,
+	    };
+
+	    Tooltips::Properties<6> tooltipProperties = {
+		    formattedDesc,
+		    spacing,
+		    550.0f,
+		    20.0f,
+		    10.0f,
+		    Tooltips::MOUSE_TOP_RIGHT
+	    };
+
+	    Tooltips::Create_Tooltip(tooltipProperties);
+	}
+    }
+
     void Render(entt::registry &zone, int state, Component::Camera &camera) {
 	if (mapOpen) {
-	    auto minimapHeight = Update_Minimap_Size(camera.screen.h);
-	    Draw_Map(state, minimapHeight);
-	    Draw_Object(zone, minimapHeight);
-	    Draw_Units(zone, minimapHeight);
+	    auto cellSize = (Update_Minimap_Size(camera.screen.h) / World_Data::REGION_SIZE);
+
+	    hovered = false;
+	    Draw_Map(state, cellSize);
+	    //Draw_Terrain_Objects
+	    Draw_Object(zone, cellSize);
+	    Draw_Units(zone, cellSize);
+	    Draw_Tooltip(zone);
 	}
     }
 }
