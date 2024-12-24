@@ -12,6 +12,8 @@
 #include "Skills/rogue.h"
 #include "Skills/warrior.h"
 #include "Button_Bar/button.h"
+#include "ui_stats.h"
+#include "menu.h"
 
 
 namespace  UI_toolbar {

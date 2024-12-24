@@ -34,14 +34,16 @@ namespace UI_Stats {
         entt::entity spell{};
     };
 
+    constexpr  int maxLines = 8;
     struct asdaa {
         std::string name;
         std::string value;
-        std::string description;
+        std::array<std::string, maxLines> description;
     };
 
     Tab_Info tab;
-    std::array<std::array<asdaa, 18>, 2> stats;
+
+    std::array<std::array<asdaa, 18>, maxLines> stats;
     std::array<SDL_FRect, 18> textBox;
     std::array<SDL_FRect, 18> valueBox;
     std::array<SDL_FRect, 4> icons;
@@ -62,31 +64,31 @@ namespace UI_Stats {
 
             //left page unused right now
 
-            stats[1][0] = {"", name.first + " " + name.last, "Your character's name"};
-            stats[1][1] = {"Race:", name.race, "Your character's race"};
-            stats[1][2] = {"Sex:", name.sex, "Your character's sex"};
-            stats[1][3] = {"Class:", name.Class, "Your character's class"};
-            stats[1][4] = {"Religion:", religion.religion, "Your character's religion"};
+            stats[1][0] = {"", name.first + " " + name.last, {"Name", "Your character's name is chosen at the start of the game.", "It may be recorded in the high score list at the end of the game."}};
+            stats[1][1] = {"Race:", name.race, {"Race", "Your character's Race helps determine starting Attributes, Skills. Abilities and Deficiencies, and what Perks you receive.", "Humans start with:", "Strength: 30, Dexterity 30, Intelligence 30, Max Health 30.", "They also start with 1 bonus Skill Point.", "They gain 0.2 bonus Skill Points with each Character Level."}};
+            stats[1][2] = {"Sex:", name.sex, {"Sex", "Your character's Sex helps determine starting Attributes, and has a minor impact on gameplay.", "Human females tend to be weaker and slightly smarter than their male counterparts.  They start with Strength -5, Intelligence +5."}};
+            stats[1][3] = {"Class:", name.Class, {"Class", "Your character's class helps determine starting Attributes, Skills, Abilities and Deficiencies, and what Perks you receive.", "Scholar's start with Intelligence +20, Dexterity -10, Strength -10 and 2 extra levels of History.", "Mage and General Skills cost 1 Skill Point.", "Rogue Skills cost 2 Skill Points.", "Warrior Skills cost 3 Skill Points.", "They may never gain Advanced Armour Use.", "They gain 10 Intelligence each time they read A Tome."}};
+            stats[1][4] = {"Religion:", religion.religion, {"Religion", "Your character's Religion impacts access to Miracles and sets in Place strictures by which the player can gain or lose Faith Points.  Your standing can also improve or weaken with each deity according to the actions you take, regardless of what Religion you belong to.  For details on Miracles and your personal deity, open the Religion tab.  For details on your relationship with all gods, and the actions of which they approve and disapprove, open the Stats tab."}};
 
             if (playerStats.unspent > 0) {
                 attributesToSpend = true;
-                stats[1][5] = {"Attribute Points:", std::to_string(playerStats.unspent), "The number of attribute points you have to spend"};
+                stats[1][5] = {"Attribute Points:", std::to_string(playerStats.unspent), {"Attribute Points", "Attribute Points are typically gained on achieving a new Character Level, though there are other means.", "Each Attribute Point may be spent to raise your Strength, Dexterity, Intelligence or Maximum Health by 1 Point, by clicking the red and white increase symbol that appears next to each stat when you have more than zero Attribute Points."}};
             }
             else
                 attributesToSpend = false;
 
-            stats[1][6] = {"Strength:", std::to_string(playerStats.strength), "Your strength represents your character's raw physical power and musculature.  You may carry a maximum amount of gold pieces equal to your Strength.  Armour and Melee Weapons have minimum Strength requirement to use.  To learn Basic/Advanced/Expert Warrior skills you need a Strength of 30/60/90, respectively.  On a successful melee hit, you have a %% chance equal to your Strength/3 of doing bonus damage from 1 to your Strength/10.  Strength is also used when interacting with certain squares, like Heavy Door, Open Pits and Great Webs."};
-            stats[1][7] = {"Dexterity:", std::to_string(playerStats.dexterity), "Dexterity is a measure of your character's agility and reflexes.  It is used to determine your character's chance to hit in combat, and to avoid being hit.  Dexterity is also used when interacting with certain squares, like Traps, Secret Doors and Locks."};
-            stats[1][8] = {"Intelligence:", std::to_string(playerStats.intelligence), "Intelligence is a measure of your character's mental acuity and knowledge.  It is used to determine your character's chance to learn spells, and to avoid being hit.  Intelligence is also used when interacting with certain squares, like Traps, Secret Doors and Locks."};
-            stats[1][9] = {"Health:", std::to_string(health.currentHealth) + "/" + std::to_string(health.maxHealth), "Your health score represents your character's endurance and pain tolerance.  The number to the left of the slash is your current Health;  if this reaches zero or less, you die.  The number to the right of the slash shows your maximum Health; your Health can never raise above this.  To learn Basic/Advanced/Expert General Skill you need a Health of 30/60/90, respectively."};
-            stats[1][10] = {"Spell Points:", std::to_string(mana.current) + "/" + std::to_string(mana.max), "Your Spell Points represent your character's reserves of magical power.  The number to the left of the slash is your current Spell Points, while the number to the right shows your maximum Spell Points.  With each new map entered, your Spell Points are restored to full.  Your Max Points are determined by your an interaction between your Intelligence, Thaumaturgy Skill level and Dungeon Level.  You cannot cast a Spell with a greater cost than your current Spell Points, and the cost of each Spell cast is deducted from your current Spell Points."};
-            stats[1][11] = {"Faith:", std::to_string(religion.faith), "Your character's faith"};
-            stats[1][12] = {"Gold:", std::to_string(gold.gold) + "/" + std::to_string(playerStats.strength), "Your character's gold"};
-            stats[1][13] = {"Gems:", std::to_string(gold.gems), "Your character's gems"};
-            stats[1][14] = {"Experience:", std::to_string(xp.xp) + "/" + std::to_string(XP::Get_Level(xp.level)), "Your character's experience"};
-            stats[1][15] = {"Character Level:", std::to_string(xp.level), "Your character's level"};
-            stats[1][16] = {"Dungeon Level:", std::to_string(dungeonLevel.level), "Your character's dungeon level"};
-            stats[1][17] = {"Time on Map:", std::to_string(timeOnMap.current), "Your character's time on the map"};
+            stats[1][6] = {"Strength:", std::to_string(playerStats.strength), {"Strength", "Your Strength represents your character's raw physical power and musculature.",  "You may carry a maximum amount of gold pieces equal to your Strength.", "Armour and Melee Weapons have minimum Strength requirement to use.", "To learn Basic/Advanced/Expert Warrior skills you need a Strength of 30/60/90, respectively.", "On a successful melee hit, you have a %% chance equal to your Strength/3 of doing bonus damage from 1 to your Strength/10.", "Strength is also used when interacting with certain squares, like Heavy Door, Open Pits and Great Webs."}};
+            stats[1][7] = {"Dexterity:", std::to_string(playerStats.dexterity), {"Dexterity", "Your Dexterity represents your character's nimbleness and speed.", "Your base percent chance to hit in combat is equal to your Dexterity, though this is modified by other factors like your Weapon and the monster's Defence rating.", "Missile Weapons have minimum Dexterity ratings to use.", "To learn Basic/Advanced/Expert Rogue Skills you need a Dexterity of 30/60/90, respectively.", "Dexterity is also used when interacting with certain squares, like Pendulum Blades and Mine Carts."}};
+            stats[1][8] = {"Intelligence:", std::to_string(playerStats.intelligence), {"Intelligence", "Your Intelligence score  represents your character's education and cunning.", "Each Spell has a minimum Intelligence required to use it, regardless of the spell's cost and your Spell Points.", "Spell Points are determined based on your Intelligence, Thaumaturgy Skill and Dungeon Level.", "With each Character Level achieved you gain bonus Skill Points equal to your Intelligence/300 *with fractions held for future levels.)", "To learn Basic/Advanced/Expert Mage Skills you need an Intelligence of 30/60/90, respectively.","Intelligence is also used when interacting with certain squares, like Riddles, Secret Doors and certain monsters, like Sphinxes."}};
+            stats[1][9] = {"Health:", std::to_string(health.currentHealth) + "/" + std::to_string(health.maxHealth), {"Health", "Your Health score represents your character's endurance and pain tolerance." , "The number to the left of the slash is your current Health; if this reaches zero or less, you die.  The number to the right of the slash shows your maximum Health; your Health can never raise above this.", "To learn Basic/Advanced/Expert General Skill you need a Health of 30/60/90, respectively."}};
+            stats[1][10] = {"Spell Points:", std::to_string(mana.current) + "/" + std::to_string(mana.max), {"Spell Points", "Your Spell Points represent your character's reserves of magical power.", "The number to the left of the slash is your current Spell Points, while the number to the right shows your maximum Spell Points.", "With each new map entered, your Spell Points are restored to full.", "Your Max Points are determined by your an interaction between your Intelligence, Thaumaturgy Skill level and Dungeon Level.", "You cannot cast a Spell with a greater cost than your current Spell Points, and the cost of each Spell cast is deducted from your current Spell Points."}};
+            stats[1][11] = {"Faith:", std::to_string(religion.faith), {"Faith", "Your Faith score represents how much favour you've earned from your god.", "Fath Points are earned by performing actions your god prefers, and are lost either through expenditure or by performing actions of which your god disapproves.", "You cannot cast a Miracle with a greater cost than your current Faith Points, and the cost of each Miracle cast is deducted from your current Faith Points."}};
+            stats[1][12] = {"Gold:", std::to_string(gold.gold) + "/" + std::to_string(playerStats.strength), {"Gold", "Gold in conjuction with Gems (collectively known as Treasure) represents the monetary resources at your disposal.", "The number to the left of the slash is the amount of Gold you're carrying, while the number to the right is the maximum amount of Gold you can carry.", "You may typically carry no more Gold than your Strength, though there are certain circumstances that can modify this.", "Treasure is traded at Temples for Experience and is sometimes used to purchase Items, Spells or to pay for services."}};
+            stats[1][13] = {"Gems:", std::to_string(gold.gems), {"Gems", "Gems, in conjunction with Gold (collectively known as Treasure) represents the monetary resources at your disposal.", "Unlike Gold there is no maximum to the value of Gems you may carry.", "Treasure is traded at Temples for Experience and is sometimes used to purchase Items, Spells or to pay for services."}};
+            stats[1][14] = {"Experience:", std::to_string(xp.xp) + "/" + std::to_string(XP::Get_Level(xp.level)), {"Experience", "Your character's Experience determines when he/she advances to the next Character Level", "Gaining a Character Level grants you points to put toward your Strength, Dexterity, Intelligence or Maximum Health.", "You also gain at least 2 more points of Maximum Health and your Health is then restored to Maximum", "You also gain at least 1 Skill Point and a Perk.", "Each Character Level gained raises the Experience required to reach the next level by 10%%.", "Experience is gained by killing monsters, bringing Treasure to Temples and other, less common ways."}};
+            stats[1][15] = {"Character Level:", std::to_string(xp.level), {"Character Level", "Your character's level is a rough indication of how powerful he/she is.", "Gaining a Character Level grants you points to put toward your Strength, Dexterity, Intelligence or Maximum Health.", "You additionally gain at least 2 more Points to your Maximum Health and your Health is then restored to Maximum.", "You also gain at least 1 Skill Point and a Perk.", "Each Character Level gained raises the Experience required for the next one by 10%%."}};
+            stats[1][16] = {"Dungeon Level:", std::to_string(dungeonLevel.level), {"Dungeon Level", "This indicates how close you are to your goal; Xaskazien resides on Dungeon Level 30.", "If you occupy a Lair, Legendary Land or other special map type, its name will also be displayed on the Dungeon Level line, and you may query it for more details about the map you occupy."}};
+            stats[1][17] = {"Time on Map:", std::to_string(timeOnMap.current), {"Turns On This Map", "This shows you how many turns you've spent on the current map.  The warning to  leave the map usually appears somewhere between turn 900 and turn 1200.  After the warning appears, each turn you remain on the map will leave a 1%% chance of a decidedly negative Event occurring.  If you've managed to uncover the turn on which the warning will occur, you will also see that listed, to the right of the slash."}};
         }
     }
 
@@ -216,14 +218,51 @@ namespace UI_Stats {
     void Draw_Tooltip(Component::Camera &camera, int currentTab) {
         for (size_t i = 0; i < textBox.size(); i++)
             if (Mouse::bRect_inside_Cursor(textBox[i]) || Mouse::bRect_inside_Cursor(valueBox[i])) {
-                Text::Create_Multiline_Texture(camera.scale, stats[currentTab][i].description, Mouse::iXMouse, Mouse::iYMouse);
+
+		std::array<std::string, maxLines> formattedDesc = {
+			stats[currentTab][i].description[0],
+			stats[currentTab][i].description[1],
+			stats[currentTab][i].description[2],
+			stats[currentTab][i].description[3],
+			stats[currentTab][i].description[4],
+			stats[currentTab][i].description[5],
+			stats[currentTab][i].description[6],
+			stats[currentTab][i].description[7],
+		};
+
+		float lineHeight = FC_GetHeight(Graphics::fcFont, "%s", "A");
+		std::array<float, maxLines> spacing = {
+			lineHeight * 0.50f,
+			lineHeight * 0.25f,
+			lineHeight * 0.25f,
+			lineHeight * 0.25f,
+			lineHeight * 0.25f,
+			lineHeight * 0.25f,
+			lineHeight * 0.0f,
+		};
+
+		Tooltips::Properties<maxLines> tooltipProperties = {
+			formattedDesc,
+			spacing,
+			550.0f,
+			20.0f,
+			10.0f,
+			Tooltips::MOUSE_TOP_RIGHT
+		};
+
+		Tooltips::Create_Tooltip(tooltipProperties);
+
+//                Text::Create_Multiline_Texture(camera.scale, stats[currentTab][i].description, Mouse::iXMouse, Mouse::iYMouse);
                 return;
             }
     }
 
     void Draw_Attibutes(Component::Camera &camera, SDL_FRect &statBox, int currentTab, int j, SDL_FRect &defaultStatBox, Placement placement) {
-        if (!attributesToSpend)
+        if (!attributesToSpend) {
+	    textBox[j] = {};
+	    valueBox[j] = {};
             return;
+	}
 
         Set_Adjacent(camera, statBox);
         SDL_FRect asd = statBox;
@@ -247,10 +286,9 @@ namespace UI_Stats {
         Next_Line(camera, statBox, defaultStatBox);
         Next_Line(camera, statBox, defaultStatBox);
 
-        if (attributesToSpend)
-            Draw_Attibutes(camera, statBox, currentTab, 5, defaultStatBox, Placement::adjacent);
+	Draw_Attibutes(camera, statBox, currentTab, 5, defaultStatBox, Placement::adjacent);
 
-        Draw_Text_Line(camera, statBox, currentTab, 6, defaultStatBox, Placement::nextLine);
+	Draw_Text_Line(camera, statBox, currentTab, 6, defaultStatBox, Placement::nextLine);
         Draw_Icon(camera, statBox, currentTab, 6, defaultStatBox, Placement::adjacent);
         Draw_Text_Line(camera, statBox, currentTab, 7, defaultStatBox, Placement::nextLine);
         Draw_Icon(camera, statBox, currentTab, 7, defaultStatBox, Placement::adjacent);

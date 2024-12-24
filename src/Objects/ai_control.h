@@ -73,6 +73,8 @@ namespace AI {
                             SDL_FPoint targetPoint = {targetPosition.x, targetPosition.y};
 
                             if (Utilities::bFPoint_FRectIntersect(targetPoint, sightBox)) {
+				//TODO: cast a ray to check if there is line of sight, if not, return UNLESS they are in sound range AND the path is short OR the unit has a special ability to see through walls
+
                                 found = true;
                                 zone.emplace_or_replace<Component::In_Combat>(unit_ID);
                                 zone.emplace_or_replace<Component::In_Combat>(target);

@@ -298,7 +298,7 @@ namespace Skill_Component {
     };
 
     struct History {
-	int level = 0;
+	int level = 2;
 	int maxLevel = 3;
     };
 

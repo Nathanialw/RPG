@@ -10,6 +10,7 @@
 #include "player_components.h"
 #include "timer.h"
 #include "ui.h"
+#include "Shop/shop.h"
 
 namespace Player_Control {
 
@@ -74,13 +75,15 @@ namespace Player_Control {
 	if (Entity_Control::Target_In_Range(position, meleeRange.meleeRange, targetPosition, targetData.radius)) {
 	    if (Social_Control::Check_Relationship(zone, entity, targetData.ID)) {
 		Entity_Control::Melee_Attack(zone, entity, targetData.ID, targetPosition);
+	    	Utilities::Log("Attack()");
+	    	zone.emplace_or_replace<Player_Component::Attack_Click_Hold>(entity, targetData, targetPosition, velocity, position, meleeRange);
+	    	Clear_Moving(zone, entity, velocity, zone.get<Action_Component::Action>(entity), Action_Component::Action_State::combatIdle);
 	    } else {
 		Social_Control::Greet(zone, entity, targetData.ID);
 		//interaction, like shop or whatever
+		Skill::Shop::Toggle();
+		Clear_Moving(zone, entity, velocity, zone.get<Action_Component::Action>(entity), Action_Component::Action_State::talk);
 	    }
-	    Utilities::Log("Attack()");
-	    Clear_Moving(zone, entity, velocity, zone.get<Action_Component::Action>(entity), Action_Component::Action_State::combatIdle);
-	    zone.emplace_or_replace<Player_Component::Attack_Click_Hold>(entity, targetData, targetPosition, velocity, position, meleeRange);
 	    return true;
 	}
 	return false;
@@ -173,6 +176,7 @@ namespace Player_Control {
 	    }
 	    zone.get<Component::Sprite_Icon>(target_ID).Dead();
 
+	    //TODO: add other object cases
 	    //assumes this is a chest of some sort
 	    Loot_Panel::Set_Loot(loot);
 	    zone.remove<Component::Interactable>(target_ID);

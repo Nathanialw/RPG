@@ -42,6 +42,8 @@ target_sources(RPG
         Toolbar/perks.h
 
         Toolbar/ui_toolbar.h
+
+        Shop/shop.h
 )
 
 target_include_directories(RPG PUBLIC ${CMAKE_CURRENT_LIST_DIR})

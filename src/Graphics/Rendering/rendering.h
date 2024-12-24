@@ -24,6 +24,7 @@
 #include "UI/Toolbar/ui_toolbar.h"
 #include "skills.h"
 #include "Rendering/cox_rendering.h"
+#include "Shop/shop.h"
 
 namespace Rendering {
 
@@ -341,6 +342,7 @@ namespace Rendering {
 	    UI_Debug::Draw(zone, camera);
 	    UI_Stats::Draw_Attributes(zone, camera);
 	    Minimap::Render(zone, state, camera);
+//	    Shop::Render(camera.scale);
 	    Pause::Pause_Control(camera);
 	    if (!Menu::Render_Menu(zone, state, camera)) {
 		return false;

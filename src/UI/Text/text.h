@@ -189,7 +189,7 @@ namespace Text {
     //create a multiline text texture
     void Create_Multiline_Texture(f2 scale, const std::string &text, float x, float y, int length = 100) {
         float w = 0.0f;
-        float h = FC_GetHeight(Graphics::fcFont, "%s", text.c_str());
+        float h = FC_GetHeight(Graphics::fcFont, "%s", "A");
 
         std::vector<std::string> lines;
 
