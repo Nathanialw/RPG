@@ -408,6 +408,13 @@ namespace Item_Component {
     int max;
   };
 
+  struct  Condition {
+    int percent;
+  };
+
+  struct Size {
+    int numSlots;
+  };
 
   struct statRange {
     int min;

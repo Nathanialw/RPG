@@ -83,11 +83,7 @@ namespace Death_Control {
 		zone.remove<Component::Body>(entity);
 		//        auto rect = zone.get<Component::Interaction_Rect>(entity).rect;
 
-		// TODO: update icon to dead icon, set frame to 1
-		zone.get<Component::Sprite_Icon>(entity).Dead();
-//		icon.name = icon.dead;
-//		icon.frame = 1;
-//		icon.maxFrames = 1;
+		zone.get<Component::Sprite_Icon>(entity).Dead(zone.get<Rendering_Components::Used_Graphics>(entity).usedIcon);
 
 		//        zone.emplace_or_replace<Component::Remove_From_Object_Tree>(entity, rect);
 		alive = false;

@@ -594,15 +594,14 @@ namespace Component {
 
     struct Sprite_Icon {
 	std::string name;
-	std::string dead;
 	SDL_Texture *texture = nullptr;
 	int maxFrames = 0;
 	int frame = 0;
 	float timer = 0.0f;
 	SDL_Rect clipRect = {};
 
-	void Dead() {
-	    name = dead;
+	void Dead(const std::string &deadIconStr) {
+	    name = deadIconStr;
 	    frame = 1;
 	    maxFrames = 1;
 	}

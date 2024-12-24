@@ -10,7 +10,7 @@ namespace Cave {
         if (templateName == "CaveEntrance1" ||
             templateName == "CaveEntrance2" ||
             templateName == "CaveEntrance3" ||
-            templateName == "Chest1_2") {
+            templateName == "Ore_15a") {
 
             World::increment_Zone();
             auto &dungeon = zone.emplace_or_replace<Component::Dungeon>(entity);

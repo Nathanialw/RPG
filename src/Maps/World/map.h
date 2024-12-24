@@ -218,7 +218,7 @@ namespace Maps {
                 }
 
                 //Create interactable objects
-                if (World_Data::tilesEntities[0][i][j].tileTexture == 0) { //if the tile is a treasure room
+                if (World_Data::tilesEntities[0][i][j].tileTexture == 0 || World_Data::tilesEntities[0][i][j].tileTexture == 1) { //if the tile is a treasure room
                     int x = i;
                     int y = j;
 
