@@ -178,7 +178,7 @@ namespace Texture {
         tooltipBackground = Graphics::createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png");
         checkmark = Graphics::createTexture("assets/sprites/UI/Inventory/29.png");
         spellbook = Graphics::createTexture("assets/sprites/UI/spellbook/spellbook.png");
-        debug_window = Graphics::createTexture("assets/sprites/UI/debug/debug_frame.png");
+        debug_window = Graphics::createTexture("assets/sprites/UI/tooltips/tooltipBackground2.png");
 
         default_icon = Graphics::createTexture("assets/sprites/default.jpg");
     }

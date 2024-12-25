@@ -11,6 +11,7 @@
 #include "timer.h"
 #include "ui.h"
 #include "Shop/shop.h"
+#include "Items/items.h"
 
 namespace Player_Control {
 
@@ -54,11 +55,9 @@ namespace Player_Control {
 	    auto &input = zone.get<Component::Input>(entity);
 	    auto &velocity = zone.get<Component::Velocity>(entity);
 
-	    for (auto const &[key, value]: input.keyboardControl) {
-		if (value.pressed) {
+	    for (auto const &[key, value]: input.keyboardControl)
+		if (value.pressed)
 		    Update_Keyboard_Movement(zone, entity, velocity, input, key);
-		}
-	    }
 	}
     }
 
@@ -133,9 +132,9 @@ namespace Player_Control {
 	for (auto entity: view) {
 	    zone.remove<Player_Component::Attack_Click_Hold>(entity);
 
-	    if (zone.view<Component::Selected>().empty()) {
+	    if (zone.view<Component::Selected>().empty())
 		return;
-	    }
+
 	    std::cout << "Auto_Attacking_Routine()" << std::endl;
 
 	    auto action = view.get<Action_Component::Action>(entity);

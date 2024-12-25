@@ -71,6 +71,10 @@ namespace Rendering {
 	return {sprite, sprite.sheetData->at(sheetName).frameList[xmlIndex]};
     }
 
+    void Get_Dynamic_Sprite() {
+
+    }
+
     Rendering_Components::Offsets Set_Offset(entt::registry &zone, const entt::entity &entity, const std::string colliderType, const float xOffset, const float yOffset, const Rendering_Components::Sprite_Sheet_Data &frame) {
 	Rendering_Components::Sprite_Offset offset = {};
 	if (colliderType == "rect") {

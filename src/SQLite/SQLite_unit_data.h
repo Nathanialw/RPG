@@ -550,6 +550,8 @@ namespace Entity_Loader {
 	int icon_num_frames;
 	std::string used;
 	int light_radius = 0;
+	std::string sheet_type;
+	std::string subtype;
     };
 
     struct Interior_Building_Data {
@@ -569,7 +571,7 @@ namespace Entity_Loader {
 
 	sqlite3_stmt *stmt;
 	char buf[300];
-	const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite, interior, direction, icon_sprite,  icon_num_frames, icon_dead, used, light_radius FROM building_exteriors WHERE name = ";
+	const char *jj = "SELECT collider_type, radius, x_offset, y_offset, sprite_layout, xml, img, race, whole_sprite, interior, direction, icon_sprite,  icon_num_frames, icon_dead, used, light_radius, sheet_type, subtype FROM building_exteriors WHERE name = ";
 	strcpy(buf, jj);
 	strcat(buf, unit_name.c_str());
 	sqlite3_prepare_v2(db::db, buf, -1, &stmt, 0);
@@ -612,6 +614,12 @@ namespace Entity_Loader {
 	    data.used = db::Get_String(text);
 
 	    data.light_radius = sqlite3_column_int(stmt, 15);
+
+	    text = sqlite3_column_text(stmt, 16);
+	    data.sheet_type = db::Get_String(text);
+
+	    text = sqlite3_column_text(stmt, 17);
+	    data.subtype = db::Get_String(text);
 	}
 	return data;
     }

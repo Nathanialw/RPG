@@ -73,16 +73,42 @@ namespace Create_Entities {
 	    Entity_Loader::Building_Data data = Entity_Loader::Get_Building_Data(templateName);
 	    auto entity = zone.create();
 
+	    Rendering_Components::Offsets offsets{};
+	    Rendering::Sheet_Data frameData;
+
 	    if (data.sprite_layout == "PVG") {
-		///get texture data
-		Rendering::Sheet_Data frameData = Rendering::Set_Rend(zone, entity, templateName,  xmlIndex, data.img, data.xml);
-		zone.emplace_or_replace<Rendering_Components::Used_Graphics>(entity, Game_Objects_Lists::tilesetObjectIndexes[World::world[state].tileset][data.used], data.icon_dead);
+		zone.emplace_or_replace<Component::Position>(entity, x, y);
 		if (data.light_radius > 0)
 		    zone.emplace_or_replace<Component::Light_Radius>(entity, data.light_radius);
 
-		zone.emplace_or_replace<Component::Position>(entity, x, y);
-		Rendering_Components::Offsets offsets = Rendering::Set_Offset(zone, entity, data.collider_type, data.x_offset, data.y_offset, frameData.frame);
-		zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, offsets.offset);
+		///get texture data
+		if (data.sheet_type == "packer_linear") {
+		    int unit_ID = Entity_Data::Check_For_Template_ID(templateName);
+		    Graphics::Create_Game_Object(unit_ID, data.img.c_str());
+		    SDL_SetTextureBlendMode(Graphics::unitTextures[unit_ID], SDL_BlendMode::SDL_BLENDMODE_ADD);
+
+		    //for grid sprite
+		    std::unordered_map<std::string, Rendering_Components::Sheet_Data> *packerframeData = nullptr;
+		    packerframeData = Texture_Packer::TexturePacker_Import_Linear(templateName, data.xml, Graphics::unitTextures[unit_ID]);
+		    auto &sprite = zone.emplace_or_replace<Rendering_Components::Sprite_Sheet_Info>(entity);
+
+
+		    sprite.sheetData = packerframeData;
+		    sprite.sheet_name = templateName;
+		    sprite.type = data.sheet_type;
+
+		    offsets = Rendering::Set_Offset(zone, entity, data.collider_type, data.x_offset, data.y_offset, sprite.sheetData->at(templateName).frameList[xmlIndex]);
+		    zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, offsets.offset);
+
+		}
+		else {
+		    frameData = Rendering::Set_Rend(zone, entity, templateName, xmlIndex, data.img, data.xml);
+		    zone.emplace_or_replace<Rendering_Components::Used_Graphics>(entity, Game_Objects_Lists::tilesetObjectIndexes[World::world[state].tileset][data.used], data.icon_dead);
+
+		    offsets = Rendering::Set_Offset(zone, entity, data.collider_type, data.x_offset, data.y_offset, frameData.frame);
+		    zone.emplace_or_replace<Rendering_Components::Sprite_Offset>(entity, offsets.offset);
+		}
+
 
 		if (!data.interior.empty()) {
 		    //interior sprite needs to be centered on the exterior sprite fot them to line up
@@ -118,7 +144,8 @@ namespace Create_Entities {
 			auto &placement = zone.emplace_or_replace<Building_Component::Placement>(entity, polygons);
 			placement.offset = offsets.placementOffset;
 		    }
-		} else {
+		}
+		else {
 		    //only use this interaction rect if the building doesn't have an interior
 		    zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::object);
 		    zone.emplace<Collision_Component::Collider_Data>(entity, templateName, offsets.colliderOffset, data.radius, x, y, data.collider_type, 0.0f);
@@ -135,6 +162,8 @@ namespace Create_Entities {
 		zone.emplace_or_replace<Component::Scale>(entity, 1.0f);
 		zone.emplace_or_replace<Component::Name>(entity, templateName);
 	    }
+
+	    Cave::Set_As_Cave(zone, entity, data.subtype);
 	    return {entity, templateName, data.direction};
 	}
 
@@ -155,11 +184,10 @@ namespace Create_Entities {
 	//no animations
 	entt::entity PVG_Building(entt::registry &zone, int state, float x, float y, float i, float j, std::string &templateName, int xmlIndex) {
 	    entt::entity entity = Create_Entities::Create_Render_Object(zone, state, x, y, templateName, xmlIndex).entity;
-	    if (!Cave::Set_As_Cave(zone, entity, templateName)) {
-		///used for object generation like blood so it isn't added to a tile index
-		if (i != x && j != y)
-		    zone.emplace_or_replace<Component::Tile_Index>(entity, (int) i, (int) j);
-	    }
+	    ///used for object generation like blood so it isn't added to a tile index
+	    if (i != x && j != y)
+		zone.emplace_or_replace<Component::Tile_Index>(entity, (int) i, (int) j);
+
 	    Create_Entities::Create_Object(zone, state, entity);
 	    return entity;
 	}
@@ -167,6 +195,7 @@ namespace Create_Entities {
 	Rendering_Components::Blend_Type Set_Texture_Components(entt::registry &zone, entt::entity &entity, db::Unit_Data &imgPaths, const std::string &unity, const bool &hexDir) {
 	    int unit_ID = 0;
 	    unit_ID = Entity_Data::Check_For_Template_ID(imgPaths.name);
+
 	    Graphics::Texture texture = {};
 
 	    imgPaths.imgPath = "assets/" + imgPaths.imgPath;
@@ -258,7 +287,7 @@ namespace Create_Entities {
 		Add_Melee(zone, entity, data);
 
 		//    needs to be copied for zone changes
-		zone.emplace_or_replace<Rendering_Components::Buff_Sprites>(entity);
+		zone.emplace_or_replace<Rendering_Components::Static_Sprite_Animation>(entity);
 		zone.emplace_or_replace<Component::Entity_Type>(entity, Component::Entity_Type::unit);
 		zone.emplace_or_replace<Action_Component::Action>(entity, Action_Component::attack2);
 		zone.emplace_or_replace<Component::Is_Inside>(entity);

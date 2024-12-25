@@ -55,7 +55,7 @@ void Render_Equipment(Rendering_Components::Equipment_Sprites &equipment, Compon
     }
 }
 
-void Render_Buffs(entt::registry &zone, entt::entity &entity, Rendering_Components::Buff_Sprites &buffs, Component::Scale &scale, Component::Camera &camera, Component::Position &position, Component::Renderable &renderable, Rendering_Components::Sprite_Offset &spriteOffset) {
+void Render_Buffs(entt::registry &zone, entt::entity &entity, Rendering_Components::Static_Sprite_Animation &buffs, Component::Scale &scale, Component::Camera &camera, Component::Position &position, Component::Renderable &renderable, Rendering_Components::Sprite_Offset &spriteOffset) {
     SDL_Rect clipRect;
     for (auto &item: buffs.sheet) {
 	if (item.ItemSheetData) {
@@ -127,7 +127,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
     auto view1 = zone.view<Component::Renderable, Action_Component::Action, Component::Position, Rendering_Components::Sprite_Sheet_Info, Component::Direction, Rendering_Components::Sprite_Offset, Component::Scale, Component::Entity_Type>();
     auto view = zone.view<Component::Renderable, Rendering_Components::Equipment_Sprites>();
     auto mounts = zone.view<Component::Renderable, Rendering_Components::Mount_Sprite>();
-    auto buffs = zone.view<Component::Renderable, Rendering_Components::Buff_Sprites>();
+    auto buffs = zone.view<Component::Renderable, Rendering_Components::Static_Sprite_Animation>();
     auto interiors = zone.view<Component::Renderable, Rendering_Components::Interior_Sheet_Info>();
 
     Debug::settingsValue[Debug::NumRendered] = view1.size_hint();
@@ -165,7 +165,7 @@ void Animation_Frame(entt::registry &zone, Component::Camera &camera) {//state
 	    } else {
 
 		//        if (buffs.contains(entity)) {
-		//          auto &buffSprites = buffs.get<Rendering_Components::Buff_Sprites>(entity);
+		//          auto &buffSprites = buffs.get<Rendering_Components::Static_Sprite_Animation>(entity);
 		//          Render_Buffs(zone, entity, buffSprites, scale, camera, position, renderable, spriteOffset);
 		//        }
 

@@ -289,14 +289,14 @@ namespace Hotbar {
                 {SDLK_8,            				Action_Bar::actionBar.actionBar.spell[8].cast},
                 {SDLK_9,            				Action_Bar::actionBar.actionBar.spell[9].cast},
                 {SDLK_F1, 				        Decrease_Low},
-                {SDLK_F2,            		    Increase_Low},
-                {SDLK_F3,            		        Decrease_High},
-                {SDLK_F4,            	        Increase_High},
+                {SDLK_F2,            		    	Increase_Low},
+                {SDLK_F3,            		        	Decrease_High},
+                {SDLK_F4,            	        	Increase_High},
                 {SDLK_TAB,          			Tab_Target},
                 {SDLK_ESCAPE,       			Menu_Toggle},
 //                {SDLK_r,            				Auto_Run},
 //                {SDLK_p,            				Pause_Toggle},
-                {SDLK_LEFTBRACKET,      Mouse_On},
+                {SDLK_LEFTBRACKET,      	Mouse_On},
                 {SDLK_RIGHTBRACKET,   	Mouse_Off},
                 {SDLK_MINUS,        			Zoom_Out},
                 {SDLK_EQUALS,       			Zoom_In},
@@ -306,7 +306,7 @@ namespace Hotbar {
                 {SDLK_b,            				Bag_Toggle},                //inv
                 {SDLK_i,            				Info_Toggle},               //stats
 
-                {SDLK_l,                            Low_Power_Spells_Toggle},            //low p sp
+                {SDLK_l,                           		Low_Power_Spells_Toggle},            //low p sp
                 {SDLK_n,            				Mid_Power_Spells_Toggle},           //mid p sp
                 {SDLK_h,            				High_Power_Spells_Toggle},           //high p sp
 
@@ -319,19 +319,19 @@ namespace Hotbar {
                 {SDLK_t,            				Attitudes_Toggle},           //attitudes
                 {SDLK_v,            				Events_Toggle},           //events
 
-                {SDLK_m,                          Minimap_Toggle},      //map
+                {SDLK_m,                          		Minimap_Toggle},      //map
                 {SDLK_p,            				Prayers_Toggle},           //prayers
 
-                {SDLK_LALT,         				Show_Items},
-                {SDLK_RALT,         				Show_Items},
+	    {SDLK_LALT,         				Show_Items},
+	    {SDLK_RALT,         				Show_Items},
                 {SDLK_SPACE,        			Jump},
                 {SDLK_PERIOD,       			Next_Page},
                 {SDLK_COMMA,        			Previous_Page},
-                {SDLK_UP,           				Sight_Increase},
+	    {SDLK_UP,           				Sight_Increase},
                 {SDLK_DOWN,         			Sight_Decrease},
                 {SDLK_DELETE,       			Destroy_Entity},
                 {SDLK_RETURN,       			Place_Building},
-                {SDLK_RETURN2,				Place_Building},
+	    {SDLK_RETURN2,				Place_Building},
         };
     }
 

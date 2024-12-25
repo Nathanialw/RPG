@@ -97,7 +97,7 @@ namespace Rendering_Components {
 	std::string front_name = "default";
     };
 
-    struct Buff_Sprite_Data {
+    struct Static_Sprite_Animation_Data {
 	std::unordered_map<std::string, Sheet_Data> *ItemSheetData = nullptr;
 	//name is the index into the map that stores the data
 	std::string name = "empty";
@@ -108,9 +108,9 @@ namespace Rendering_Components {
 	Sprite_Offset offset = {0.0f, 0.0f};
     };
 
-    struct Buff_Sprites {
-	std::unordered_map<std::string, Buff_Sprite_Data> buffs;
-	std::vector<Buff_Sprite_Data> sheet;
+    struct Static_Sprite_Animation {
+	std::unordered_map<std::string, Static_Sprite_Animation_Data> buffs;
+	std::vector<Static_Sprite_Animation_Data> sheet;
     };
 
     struct Equip_Slot_Data {

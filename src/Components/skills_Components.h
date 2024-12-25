@@ -525,4 +525,12 @@ namespace Skill_Component {
 	Copy_Mage_Skills(newZone, oldZone, newEntity, oldEntity);
 	Copy_Rogue_Skills(newZone, oldZone, newEntity, oldEntity);
     }
+
+
+
+
+    struct Lightning_Resist {
+	std::array<entt::entity, 9> srcEntity;
+	std::array<uint8_t , 9> value;
+    };
 }

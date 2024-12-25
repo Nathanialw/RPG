@@ -6,12 +6,8 @@
 
 namespace Cave {
 
-    bool Set_As_Cave(entt::registry &zone, entt::entity &entity, std::string &templateName) {
-        if (templateName == "CaveEntrance1" ||
-            templateName == "CaveEntrance2" ||
-            templateName == "CaveEntrance3" ||
-            templateName == "Ore_15a") {
-
+    bool Set_As_Cave(entt::registry &zone, entt::entity &entity, std::string &type) {
+        if (type == "portal") {
             World::increment_Zone();
             auto &dungeon = zone.emplace_or_replace<Component::Dungeon>(entity);
             dungeon.instance = World::Zone_Count;

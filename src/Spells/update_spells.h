@@ -113,7 +113,7 @@ namespace Update_Spells {
   }
 
   void Might(entt::registry &zone, int &state) {
-    auto view = zone.view<Component::Might, Component::Position, Component::Direction, Component::Alive, Component::Entity_Type, Rendering_Components::Buff_Sprites>();
+    auto view = zone.view<Component::Might, Component::Position, Component::Direction, Component::Alive, Component::Entity_Type, Rendering_Components::Static_Sprite_Animation>();
     for (auto caster_ID: view) {
       auto &casting = view.get<Component::Might>(caster_ID);
       casting.count -= Timer::timeStep;
@@ -136,7 +136,7 @@ namespace Update_Spells {
                 if (1) {
                   auto &targetPosition = view.get<Component::Position>(entity);
                   auto &direction = view.get<Component::Direction>(entity);
-                  auto &sprites = view.get<Rendering_Components::Buff_Sprites>(entity);
+                  auto &sprites = view.get<Rendering_Components::Static_Sprite_Animation>(entity);
 
                   for (auto &buff: sprites.sheet) {
                     if (buff.FrameIndex >= buff.ItemSheetData->at(buff.name).actionFrameData[Action_Component::walk].NumFrames) {

@@ -9,7 +9,12 @@ namespace Room {
 	Procedural_Components::Seed seed;
 	seed.seed = Procedural_Generation::Create_Initial_Seed(x, y);
 //        return Game_Objects_Lists::tilesetObjects[tileset]["chest"][1];
-	return "Stalagmite_1";
+	int MAX_OBJECTS = Game_Objects_Lists::tilesetObjects[tileset]["portal"].size();
+	int randomObject = Procedural_Generation::Random_Int(0, MAX_OBJECTS, seed);
+
+
+	//      return Game_Objects_Lists::tilesetObjects[tileset]["chest"][randomObject][direction];
+	return Game_Objects_Lists::tilesetObjects[tileset]["portal"][randomObject];
     }
 
     std::string Populate_Objects(const std::string &tileset, const int &tileType, const int &x, const int &y) {

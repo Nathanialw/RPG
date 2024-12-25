@@ -202,10 +202,6 @@ namespace UI_Stats {
         if (placement == Placement::adjacent)
             Set_Adjacent(camera, statBox);
 
-        float x, y;
-        SDL_RenderGetScale(Graphics::renderer, &x, &y);
-        std::cout << x << " " << y << std::endl;
-
         FC_Scale scale = {1.0f / camera.scale.x, 1.0f / camera.scale.y};
         SDL_Rect textRect = FC_DrawScaleRight(Graphics::fcFont, Graphics::renderer, statBox.x, statBox.y, scale, stats[currentTab][j].name.c_str());
         textBox[j] = Utilities::SDL_Rect_To_SDL_FRect(textRect);
@@ -245,8 +241,8 @@ namespace UI_Stats {
 			formattedDesc,
 			spacing,
 			550.0f,
-			20.0f,
-			10.0f,
+			1.0f,
+			1.0f,
 			Tooltips::MOUSE_TOP_RIGHT
 		};
 
